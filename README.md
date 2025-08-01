@@ -2,7 +2,7 @@
 
 # Patient Participation Group Talking Points - Appointment System Concerns
 
-I’d like to discuss a problem with the appointment system at New Bank Health Centre that’s making it hard for patients to get care. When a doctor can’t reach a patient by phone, their request is deleted, and they have to resubmit it the next day. This puts access to care out of patients’ control for reasons like work, poor signal, or just missing a call. It’s frustrating, unfair, leads to patient-blaming instead of helpful outcomes, and I think it can be improved.
+I’d like to discuss a problem with the appointment system at New Bank Health Centre that’s making it unnecessarily hard to get care. If a doctor can’t reach a patient by phone, the request is deleted outright, and they have to resubmit it the next day from scratch. This strips patients of control over their access to care for reasons like work, poor signal, or just missing a call. It’s frustrating, unfair, leads to patient-blaming instead of helpful outcomes, and I think it can be improved.
 
 ## Key Points to Raise
 
@@ -33,7 +33,7 @@ I’d like to discuss a problem with the appointment system at New Bank Health C
 
 ## Solutions to Suggest
 
-- **Don’t Delete Requests**: Keep them open for a set period (e.g., 48 hours), you don't have to make multiple call attempts, we understand there are time pressures, but the patient should at least be able to reschedule (or even better escalate to non-phone path).
+- **Don’t Delete Requests**: Keep them open for a set period (e.g., 48 hours), you don’t have to make multiple call attempts—we get time is tight—but patients should at least be able to reschedule (or even better escalate to non-phone path).
 - **Schedule Call Windows**: Let patients pick a time range for callbacks to fit their lives.
 - **Notify Patients**: Send a text or email if a request is closed (which ideally it wouldn't be), with clear next steps.
 - **Offer Alternatives**: Add phone or in-person booking for those who can’t use the online form.
@@ -48,7 +48,7 @@ Can we agree to review this policy and propose changes? It’s about making care
 - **Two-strikes deletion policy** - missed calls = deleted requests
 - **No same-day resubmission** - must wait until next day
 - **Misleading terminology** - "missed appointments" for unscheduled calls
-- **Tiny text fields** for lengthy medical information 
+- **Tiny text fields** insufficient space for entering detailed medical information
 - **Poor notifications** - requests deleted without warning
 
 ## **IMPACT ON PATIENTS**
@@ -77,7 +77,7 @@ Can we agree to review this policy and propose changes? It’s about making care
 4. **NHS Counter Fraud Authority** (if intentional misrepresentation suspected)
 
 ## **PROPOSED SOLUTIONS**
-- **No Deletion** The patient didn't magically get better, they asked for your help, and you deleted them, in many cases with a shirty victim-blaming message.
+- **No Deletion** The patient didn’t magically recover. They reached out for help, and you deleted their request—sometimes with a dismissive, blame-shifting response.
 - **Alternative booking methods** (phone/in-person)
 - **Scheduled callback windows** instead of all-day waiting
 - **Flexible missed call policy** - allow same-day resubmission
