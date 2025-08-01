@@ -1,0 +1,552 @@
+{
+  "businessName": "New Bank Health Centre",
+  "address": "339 Stockport Rd, Longsight, Manchester M12 4JE, United Kingdom",
+  "averageRating": 2,
+  "totalReviews": 146,
+  "parsedReviews": 68,
+  "reviews": [
+    {
+      "reviewer": "Siji Njondimakkal",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "a year ago",
+      "text": "Thank you for your 5 star review.  We appreciate you taking the time and we are pleased that you think New Bank Health Centre is a good GP practice.Kind regardsDebra"
+    },
+    {
+      "reviewer": "chowdary TDP",
+      "reviewerInfo": "7 reviews·2 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "a year ago",
+      "text": "Hello, if there is something I can help and look into for you, please get in touch via our feedback form on the website https://newbank.nhs.uk/form/feedback/Best wishesDebra RamsdalePatient Complaints Officer"
+    },
+    {
+      "reviewer": "Phillip Mcmulkin",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "a year ago",
+      "text": "Hello Phillip,If there is something that you would like me to look into for you, please contact us via our website feedback form https://newbank.nhs.uk/form/feedback/ Due to patient confidentiality, I cannot discuss any complaints you may have on here as it is a public forum.Please get in touch if I can help.RegardsDebra RamsdalePatient Complaints Officer"
+    },
+    {
+      "reviewer": "Youcef Mariem",
+      "reviewerInfo": "3 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "a year ago",
+      "text": "Hi Youcef,  I am sorry hear to that you are not happy with the service at GP practice.  We value feedback from our patients so that we can try and improve our services.  If you want to raise a specific issue you have, I will look into for you.  Please contact us via the online forms on our website. Regards Debra RamsdalePatient Complaints Officer"
+    },
+    {
+      "reviewer": "Al Raza",
+      "reviewerInfo": "5 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "a year ago",
+      "text": "Hello Al. Thank you for your review.Here at New Bank Health Centre, we do operate a telephone triage system, where each patient will receive a telephone call. If the patient does not pick up on the first call, our policy is that the clinician will try them again no earlier than ten minutes later. If the patient still does not pick up, they will be asked to re-book an appointment for the following day. Whilst we understand your frustration, our practice has hundreds of patients who need our help each and every day, and we are not able to continuously call patients until they pick up. The only other circumstance that we allow our team to put the phone down on a patient is if they are being verbally abusive or aggressive. If none of these scenarios fit with your experience please do let me know by filling out a feedback form on our website and I will happily look into this for you.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "George Norrell",
+      "reviewerInfo": "13 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "Edited a year ago",
+      "text": "Hello George. Thank you for your review, we appreciate any reviews we receive whether they be positive or negative.We do understand that not all patients have internet access. That is why we have policies in place to offer further support to those who are digitally excluded, like taking appointment requests over the telephone etc. We appreciate that we do function a little bit differently here at New Bank Health Centre by operating a telephone triage system. This telephone triage system means that all patients will receive a phone call first, and if it is deemed necessary by the doctor, they will then be offered a face-to-face appointment at the practice. Although this way of working may not be preferable for all patients, we have often found that it is successful and allows patients to get the treatment they need from the comfort of their own home. If you have not been brought in to see the doctor in the surgery, this will have meant that they felt they could get a diagnosis of your medical problems and give you the treatment you need through the phone conversation.If you feel like you can no longer be a patient at our practice we do understand. To find a new GP practice, simply visit the NHS website. There you can search for a GP surgery using your postcode.Kind Regards Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Fazel rabi Rustamkhel",
+      "reviewerInfo": "1 review·1 photo",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "a year ago",
+      "text": "Hello Fazel, Thank you for taking the time to post your review.  We appreciate any feedback we receive whether that be positive or negative as it helps us to improve the service we offer to patients.  Due to the nature of your review, I am unable to comment specifically on the issues you raise.  This is because doing so may breach your patient confidentiality.  If you would like me to look into this issue further for you, please submit a feedback on the website here:  https://www.newbank.nhs.uk/navigator/feedback/ Kind regardsDebra, Complaints Officer"
+    },
+    {
+      "reviewer": "Syed Joshim",
+      "reviewerInfo": "6 reviews",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "a year ago",
+      "text": "Hi Syed, Thank you so much for leaving such a lovely review for the staff at the practice. It is always good to hear that you and your family are happy with the practice and the staff. I will be sure to pass on your lovely comments.Best wishesDebra - Patient Complaints Officer"
+    },
+    {
+      "reviewer": "Waseem Bashir",
+      "reviewerInfo": "4 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "a year ago",
+      "text": "Hi Waseem, I am sorry that your are unhappy with the service you have received from New Bank Health Centre. Due to the this platform being public, I cannot discuss issues relating to your health in detail on here. If you would like me to investigate things further, please contact me via our feedback form on our website.Many thanksDebra - Patient Complaints Officer"
+    },
+    {
+      "reviewer": "Hamdah Al Raisi",
+      "reviewerInfo": "Local Guide·14 reviews·13 photos",
+      "rating": 1,
+      "dateString": "2 months ago",
+      "text": "(this||self).cVrhhd=function(b,e,q,a,h,k){if((b=document.getElementById(b))&&(b.offsetWidth!==0||b.offsetHeight!==0)){var l=b.querySelector(\"div\"),m=l.querySelector(\"div\"),c=0,g=Math.max(l.scrollWidth-l.offsetWidth,0);if(e>0){var n=m.children;c=n[e].offsetLeft-n[0].offsetLeft;if(a){for(var p=c=0;p<e;++p)c+=n[p].offsetWidth;c=Math.min(g,c)}}c+=q;e=Math.min(a?g-c:c,g);l.scrollLeft=a&&k?c:a&&h?-c:e;var d=b.getElementsByTagName(\"g-left-button\")[0],f=b.getElementsByTagName(\"g-right-button\")[0];d&&f&&(h= RegExp(\"\\\\btHT0l\\\\b\"),k=RegExp(\"\\\\bpQXcHc\\\\b\"),d.className=d.className.replace(h,\"\"),f.className=f.className.replace(h,\"\"),d.className=e===0?\"pQXcHc \"+d.className:d.className.replace(k,\"\"),f.className=e===g?\"pQXcHc \"+f.className:f.className.replace(k,\"\"),d.className.indexOf(\"SL0Gp\")>=0&&e===0&&e===g&&(m.style.paddingLeft=\"0px\",m.style.paddingRight=\"0px\",d.style.display=\"none\",f.style.display=\"none\",b.style.paddingLeft=a?\"0px\":\"48px\",b.style.paddingRight=a?\"48px\":\"0px\",b.style.textAlign=a?\"left\":\"right\",(a=document.getElementById(\"fade_forward\"))&&(a.style.display=\"none\"),(a=document.getElementById(\"fade_reverse\"))&&(a.style.display=\"none\")),setTimeout(function(){d.className+=\" tHT0l\";f.className+=\" tHT0l\"},50))}};}).call(this);(function(){var id='sjsuid_59';var index= 0 ;var offset= 0 ;var is_rtl= false ;var is_gecko= false ;var is_edge= false ;var init='cVrhhd';window[init](id,index,offset,is_rtl,is_gecko,is_edge);})();🙏_",
+      "reactions": "❤️🙏7"
+    },
+    {
+      "reviewer": "Ahmed Ali",
+      "reviewerInfo": "3 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "Edited 3 months ago",
+      "text": "Hello Ahmed. Thank you for your review. We believe it's important to listen to patients so we can improve the way we care for people. We do always try to provide the best service possible to patients, we're sorry if you feel you did not receive that. If you would like me to look further into your experience for you, please fill out a feedback form on our website https://bit.ly/38MfVvS. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Rohail Kiani",
+      "reviewerInfo": "Local Guide·5 reviews·104 photos",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "7 months ago",
+      "text": "Hi Rohail,Great to hear you are pleased with the service at the practice, our staff really appreciate the time that people take to let us know when we are doing things well, as well as when its not so good.Many thanksDebraPatient Complaints Officer"
+    },
+    {
+      "reviewer": "Caitlin Foy",
+      "reviewerInfo": "3 reviews·6 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "7 months ago",
+      "text": "Hi Caitlin, I'm sorry to read that you are not happy with the service at the practice. If you would like me to investigate specific issues for you, please contact me via our feedback form https://newbank.nhs.uk/form/feedback/ which comes directly to me. I work at different sites which is why its easier to contact me this way. I hope I can help.Best wishesDebraPatient Complaints Officer"
+    },
+    {
+      "reviewer": "Usman Khalid",
+      "reviewerInfo": "Local Guide·10 reviews·2 photos",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "8 months ago",
+      "text": "👍😊"
+    },
+    {
+      "reviewer": "Paul Jepson",
+      "reviewerInfo": "Local Guide·151 reviews·62 photos",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "8 months ago",
+      "text": "I think you are all brilliant too and a wonderful part of the Better Health MCR PCN team.DebsPatient Complaints (and compliments!) Officer"
+    },
+    {
+      "reviewer": "Anda Katkovska",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "9 months ago",
+      "text": "👍😊"
+    },
+    {
+      "reviewer": "Sara Haile",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "9 months ago",
+      "text": "Hi SaraThat is so good to hear. We are pleased to hear you are happy with the service that you receive. I will pass on your lovely comments to Alex and Sharon.Best wishesDebraPatient Complaints Officer"
+    },
+    {
+      "reviewer": "Mohammed Ahmed",
+      "reviewerInfo": "10 reviews·2 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "9 months ago",
+      "text": "Hi Mohammed, thank you for taking the time to leave a review. I am sorry to read that you are unhappy with the service that you receive from the practice. If there is something you would like to investigate further, please complete a feedback form via website and I will look into it for you.Best wishesDebraPatient Complaints Officer"
+    },
+    {
+      "reviewer": "dominic wedgwood",
+      "reviewerInfo": "Local Guide·14 reviews·8 photos",
+      "isOwner": true,
+      "rating": 4,
+      "dateString": "10 months ago",
+      "text": "Hi DominicThat is so good to hear. We are pleased to hear you are happy with the service that you receive from our brilliant staff. If you want to discuss other means of contacting us (but the e-forms are the most efficient and timely way) then please speak with a member of reception when you are next the practice.Best wishesDebraPatient Complaints Officer"
+    },
+    {
+      "reviewer": "Godwin Jimmy",
+      "reviewerInfo": "Local Guide·14 reviews·7 photos",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "11 months ago",
+      "text": "Thank you for taking the time to leave such a positive review. It is much appreciated.Best wishesDebra - Patient Complaints Officer"
+    },
+    {
+      "reviewer": "Safin Mahdi",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "11 months ago",
+      "text": "Hi Safin,Thank you so much for taking the time to leave a review. It is much appreciated.Best WishesDebra - Patient Complaints Officer"
+    },
+    {
+      "reviewer": "ARSLAN KHAN",
+      "reviewerInfo": "Local Guide·250 reviews·13 photos",
+      "isOwner": true,
+      "rating": 4,
+      "dateString": "2 years ago",
+      "text": "Hello Arslan. Thank you very much for your rating, we're so glad you're happy with the service you receive from us at New Bank Health Centre.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Leigh Leigh",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Leigh Leigh. Thank you for taking the time to post your review. We’re always looking for feedback on how we can improve our services to make sure we offer the highest standard of care to patients. If you would like to help us do that, please fill out a feedback form on our website? Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "einass Yousif",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Einass. Thank you for your review. We're sad to hear you feel our service is very bad. We're passionate about helping our community with their health so it is disappointing that you don't feel we're reaching that goal. We're always happy to take patient feedback on board. If you're looking to help us make improvements, the best way to do that is to join our Patient Participation Group. They are a group of people who are patients of the surgery and want to help it work as well as it can for patients, doctors and staff. They get together to bring different ideas to the surgery to help us treat patients better or to improve what we do in some way. If you would like to join our Patient Participation Group, fill out this form: https://bit.ly/3DJEGIZKind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Nuna",
+      "reviewerInfo": "6 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Gull. Thank you for your review. We appreciate any reviews we get whether they be positive or negative as they help us to improve the service we offer to patients.We appreciate that some patients do not like to use our online system, however, it is the quickest and easiest way for patients to request an appointment. If you aren't able to fill in a form online, our reception team will help you do that, just place a call to the practice.We understand that having your regular GP can be upsetting. If you would like to change your GP practice, you can find a new one that is close to you through the NHS website. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Anila Farooq",
+      "reviewerInfo": "4 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Anila. Thank you for your review, we appreciate any feedback we receive whether that be positive or negative as it helps us to improve our service.It’s a shame that you feel we’re a pathetic surgery and that doctors don’t even bother to call you and ask the issue. Here at New Bank Health Centre, we operate a telephone triage system. This telephone triage system means that all patients will receive a phone call first, and if it is deemed necessary by the doctor, they will then be offered a face-to-face appointment at the practice. We also allow our clinicians to contact patients via the online forms they submit, however, this should only be for simple problems and anything more complex should receive a phone call. If you did not receive any form of communication, it will either be because something went wrong or there were no appointments left for the day. If you would like me to look into this further for you, please fill in a feedback form on our website. You can find it here: https://bit.ly/3nKUoOJKind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Shan Bar",
+      "reviewerInfo": "6 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Shan. Thank you for your review. We appreciate any feedback we receive, whether that be positive or negative, as it helps us to improve the service we offer to patients.I'm sorry to hear that you feel like we're the worst surgery with the worst staff. Unfortunately, as your review doesn't contain many details I can't offer you an explanation on your circumstances. However, if you would like me to look into anything further for you, please fill in our feedback form with as much detail as possible. You can find the form here: https://bit.ly/3zQERQDKind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Jordan Ollerenshaw",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Jordan. Thank you for your review, I’m saddened to hear that you feel we’re the worst doctors in Longsight and that our staff don’t care at all. Please let me reassure you that is not the case, and although you may not see it, our team constantly go above and beyond behind the scenes to try and make improvements for patients. This includes extending opening hours at a sister site so more patients are able to be seen each day, introducing new services like a full wellbeing team, physio team and in-house pharmacists that most practices don’t have, and having a same day service so patients don’t have to wait weeks to be seen.  It's a shame you have decided to leave our practice, but I am glad that you feel you’re getting better care elsewhere.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Rubel Miah",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Rubel. Thank you for your review. We appreciate any reviews we receive, whether they be positive or negative.We believe that childhood immunisations are really important, and are the best way to protect your baby from serious diseases. The last thing we would want is for the process to book your child's vaccines to be difficult, so we are sorry that is what you experienced. We're always looking to make improvements and want to make these kind of situations better for parents. To help us do that, please would you let me know the details of your experience by filling in a feedback form here: https://bit.ly/3YomcWb.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Carole Dixon",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Carole, thank you for your review. I’m saddened to hear that you feel members of our team discriminate against your mental health and that our receptionists hold our doctors to ransom.We care greatly about patients mental health and believe that looking after mental health is just as important and looking after physical health. That’s why our staff members are trained in mental health, and we also have dedicated mental health practitioners and a full wellbeing team in place to help patients.Regarding our receptionists, we can assure you that they do not hold our doctors to ransom. Our reception team are highly trained to deal with and triage patient requests, so they are passed over to the correct clinician or staff member. This in turn makes sure that the request is dealt with appropriately, and that each medical professional has all the information they need before the appointment so they can spend all the time in the consultation helping them. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Hafsa Bakari",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Hafsa. Thank you for your review. I apologise I am only just responding to you on here, but please let me reassure you that I have been looking into this issue for you.As mentioned within our call, I am unable to provide a full response on here. This is because this is a public platform and could potentially breach your patient confidentiality.I have nearly finished my investigation and will be back in touch very soon.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Michaela Berankova",
+      "reviewerInfo": "Local Guide·42 reviews·80 photos",
+      "isOwner": true,
+      "rating": 2,
+      "dateString": "2 years ago",
+      "text": "Hi Michaela, thank you for your review. I'm sorry you feel you're being ignored when you submit an online form using our website. We have a policy that any forms to request an appointment should be responded to within 1 working day - other forms may have a slightly longer response rate but we do always aim to get back to you in a timely manner.If you would like me look into the forms you've submitted for yourself and your children, please do fill in a feedback form here: https://bit.ly/3C1zU9rKind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Pargat sandhawalia",
+      "reviewerInfo": "Local Guide·15 reviews·2 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Pargat. Thank you for your review. We’re sorry to hear about the miscommunication you had recently with our practice.We understand that we do function a little bit differently here at New Bank Health Centre by operating a telephone triage system. This telephone triage system means that all patients will receive a phone call first, and if it is deemed necessary by the doctor, they will then be offered a face-to-face appointment at the practice. Although this way of working may not be preferable for all patients, we have often found that it is successful and allows patients to get the treatment they need from the comfort of their own home. Having a telephone consultation first should have been communicated with you when you were given an appointment. If it wasn’t then we do apologise.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Elena Her",
+      "reviewerInfo": "9 reviews",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "2 years ago",
+      "text": "Hello Lna. Thank you very much for your review . We're so glad to hear that you feel we're the best GP practice in Manchester and that you're always assisted by our staff members. We believe in trying to give patients quality service as quickly as possible and it's great that's what you've received. I have passed on your review to our team, I'm sure they will all really appreciate it.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Amina Sheik mohaddin",
+      "reviewerInfo": "7 reviews·8 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Amina, I’m sorry to hear that your experience with our practice has not been great and you feel that our surgery should be shut down.Here at New Bank Health Centre, we operate a telephone triage policy. That means that every patient will get a telephone consultation first, and if it is deemed necessary by the doctor, they will then be offered a face-to-face appointment at the practice. Although this way of working may not be preferable for all patients, we have often found that it is successful and allows patients to get the treatment they need from the comfort of their own home. If you or your son have not been brought in to see the doctor in the surgery, this will have meant that they felt they could get a diagnosis of your medical problems and give you the treatment you need through the phone conversation. This is a nationally accepted way of working that many other practices in the UK use.We offer in-person blood test appointments at the practice every working day of the week. The only time we would offer appointments for patients at a different practice, would be if a patient isn’t able to attend during normal surgery hours, or if the next appointment that was available was in our Enhanced Access hours (6-8pm Monday – Friday and 9am-5pm on Saturdays at The Robert Darbishire Practice) so I am afraid I have to disagree with your point that we always send patients to other practices.I am however very concerned about your son not being able to get his vaccinations and would like to look into this further for you. If you would like me to do that, please fill in a feedback form on our website. You can find it here: https://bit.ly/3nKUoOJKind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Satvinder Singh",
+      "reviewerInfo": "Local Guide·12 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Satvinder, thank you for your review. We’re saddened to hear you feel we’re a terrible GP Practice and that our staff “don’t want to work.” Please let me assure you that’s not the case.I apologise for taking a bit more time than usual to respond to your review. I did want to take a look into what happened so I can offer further information for you. I can completely understand your frustration about being passed over to pharmacy and not being given a GP appointment. However, we are obliged to use the Community Pharmacy Consultation Scheme (CPCS) mentioned in your review. The Community Pharmacy Consultation Scheme is a new national service to facilitate patients having a same day appointment for minor illnesses, or to get an urgent supply of a repeat medication. The service is designed to help alleviate pressure on GP appointments and emergency departments and so more people are able to get treatment quickly. I understand you may feel that the doctors here at New Bank Health Centre are avoiding patients, but please let me reassure you that is not the case. This is a scheme that has been put in place by the Government, and we have been instructed to use it by both the Government and NHS Greater Manchester Integrated Care, our governing body.Only specific pharmacies are involved in this scheme. This is why when you contacted Cohen’s pharmacy they said they were not responsible and when you visited them, they charged you for medication. Unfortunately, due to this being a public forum, I’m unable to give more details as it would breach confidentiality rules.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "F Rashid",
+      "reviewerInfo": "5 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Farah, thank you for your review. I'm sorry to hear that you feel we're an awful GP practice, and were struggling yesterday to get treatment from one of our doctors.Usually, we would only direct patients to use the services of a walk-in centre or NHS 111 if we did not have any appointments left and a patient felt like they needed to be seen that day. If they could wait, we would usually ask them to contact us the following day to book an appointment.I haven't been able to look into this for you as I can't find you under the name used on your review in our system. I would like to investigate this further to find out what happened yesterday and to see what went wrong. If you would like me to do that, please fill in a feedback form here: https://bit.ly/3AMLAvwKind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Videl Powell",
+      "reviewerInfo": "Local Guide·8 reviews·1 photo",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "2 years ago",
+      "text": "Hello Videl. Thank you for your review, we appreciate any feedback we receive whether it be positive or negative.We're saddened to hear that you feel our team are rude and unhelpful, and that they aren't aware of how to treat patients with mental health problems. We're always working to improve the service we offer patients from staff members to ensure that they feel fully supported with all aspects of their health, including their mental health, and are in the process of developing further training for the team.Our intention is not to make anyone feel unheard or dismissed, and is instead to offer a caring and compassionate service. I would like to take a look into this issue for you, and to get to the bottom of what has happened in regards to your care. If you would like me to do that, please do fill in a feedback form on our website.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Jayne Atkinson",
+      "reviewerInfo": "Local Guide·33 reviews·15 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "Edited 2 years ago",
+      "text": "Hi Jayne, thank you for your review. I'm sorry to hear you had a negative experience with us here at New Bank Health Centre.We do encourage patients who are able to use the internet to visit our website to fill in an online form. However, if a patient is unable to do so, we will fill in the form for them over the phone. Our reception team aren't able to book appointments and the online forms get assigned to the appropriate clinician. Unfortunately, our appointments are booked incredibly quickly, usually within the first few hours of the day, so if patients submit forms later on in the afternoon, it is unlikely we will be able to give them an appointment. We are a same day service and are unable to book appointments in advance.I’m afraid due to confidentiality laws, I am unable to respond on here to specific parts of your complaint. To do so would breach your medical confidentiality. If you would like me to look further into this incident for you, please do fill in a feedback form. You can the feedback form on our website here: https://bit.ly/3PAm4jeWe thank you for your feedback on our website. We are continually making improvements to make it easier for patients to use. If you are unable to remember your password, you should be able to reset your password using a link that will be located in one of our emails.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Najeeb Khan",
+      "reviewerInfo": "3 reviews",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "3 years ago",
+      "text": "Hi Najeeb,Thank you for your review. We always work hard to provide a safe and welcoming environment and that we offer the best service possible to patients. I'm so glad that you feel happy with our practice and have been kind enough to leave a 5 star review. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Maria lopes",
+      "reviewerInfo": "7 reviews·2 photos",
+      "isOwner": true,
+      "rating": 2,
+      "dateString": "3 years ago",
+      "text": "Hi Maria,Thank you for your review. We appreciate any feedback we receive whether it be positive or negative. We'd love to hear your point of view on our surgery and why you felt that 2 stars was the best rating to give us. If you would like to give us a bit more detail please do fill in a feedback form here: https://bit.ly/3rDHr8A. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "John Apetri",
+      "reviewerInfo": "10 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello John. We're sorry you feel that you have had the worst experience here with us at New Bank Health Centre. We often direct patients to our website as it holds a huge amount of information that patients can access from the comfort of their own home and at a time that suits them. We of course do help those who are unable to go on the website when they give us a call. I will pass your feedback onto the team for review. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "A B",
+      "reviewerInfo": "Local Guide·52 reviews·17 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello, thank you for your review. We're sorry you feel that you've had a bad experience here with us at New Bank Health Centre. If you would like to offer feedback so we can improve our services, please fill out a feedback form on our website here: https://bit.ly/3bp2bbs. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "shincy jojo",
+      "reviewerInfo": "4 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Shincy, thank you for your review. We appreciate any feedback we get from patients as it helps us to improve the services we offer. We're sorry you felt you'd received bad service and that the staff were rude. We do always try to go above and beyond for patients, and give them a great experience when they need us. If you would like me to take a look further into this for you, please fill out a feedback form on our website here: https://bit.ly/32QEGYk. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Mianbali Khan",
+      "reviewerInfo": "3 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Mianbali. Thank you for your review. We appreciate any feedback we receive whether it be positive or negative as it helps us to improve the service we offer to you. We're sorry you feel you have to be close to death to get an appointment with us, and that you need to try every day for a month to get seen. We do offer appointments on a first come first served basis as we find that is the fairest way. Unfortunately, we have seen an increase in appointment requests which may make it more difficult to get an appointment. I have passed your feedback onto our executive team to see if there are measures that can be put in place to make it easier to get an appointment with us. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Sana Mahdavi",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hi Sana, thank you for your review. We're sorry to hear that your skin problems have got worse. Making sure that patients are happy and healthy is our number one goal. If you feel this has not been the case and would like me to take a further look into the care you received, please fill out a feedback form here https://bit.ly/3jb9QPq. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "SAAD ULLAH",
+      "reviewerInfo": "2 reviews·12 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hi Saad, Thank you for your review. We're sad to hear you believe that we are the worst GP Practice you have ever seen in the UK. We do work extremely hard to provide the best level of care to patients, and always have the health and wellbeing of patients at the forefront of our minds. If you would like to give us more detail on why you experience with us has been poor, please do fill out a feedback form on our website here: https://bit.ly/3DqwSKs. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Adnaan Abbas",
+      "reviewerInfo": "10 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Adnaan. Thank you for your review, we appreciate any feedback we receive whether that be positive or negative as it allows us to improve the service we offer to patients. It's a shame you feel that our staff members are rude, disgusting, untrained and incompetent. Our team are trained up to the highest standard and will always help in any way can, as long as your request is something that can be facilitated. If you'd like me to take a look into a particular incident that's happened, please do fill in a feedback form here: https://bit.ly/3yN8b9s. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Ali",
+      "reviewerInfo": "4 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Ali. We're sorry to hear that you've had a negative experience with us here at New Bank Health Centre, and that you still haven't had your urine test results despite completing it in May. I'd be happy to take a look into what happened with your test and why the results took such a long time to come back. If you would like me to do that, please fill in a feedback form here: https://bit.ly/3yN8b9s. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "ghassan 1978LL",
+      "reviewerInfo": "6 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello. We're sorry that you feel New Bank Health Centre is the worst GP in the UK and that the staff there are rude. We do always try our best to provide the best service and the highest level of care to patients that we possibly can.We appreciate that being prescribed the wrong medicine can be frustrating, we do hope that you have now managed to get the correct prescription.Unfortunately, the NHS is very stretched at the moment, and there are a lot of patients in the community that need our care. Because of this we do have strict appointment times we need to stick to and running over those appointment times would cause delays for other patients. If your appointment lasted the full duration, this may have been why Dr Singh did not have time to answer your questions. If that was not the case, and you would like me to look further into your recent experiences with us, please do let me know by filling out a feedback form here: https://bit.ly/3Fof8AeKind Regards,Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "abdul llah",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Abdul,We're sorry you feel that you've had a bad experience here with us at New Bank Health Centre. If you would like to offer feedback so we can improve our services, please fill out a feedback form on our website here: https://bit.ly/3bp2bbs. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Lukasz Buczko",
+      "reviewerInfo": "9 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "Edited 3 years ago",
+      "text": "Hello Lukasz. Thank you for your review. We're sad that you feel you have had a bad experience with us here at New Bank Health Centre. Our reception team are trained to triage patient requests so they can make sure you get the correct help you need. We understand it may be frustrating to let them know your problem, but giving them this information will help them to assign your query to the right clinician or to deal with your issue efficiently. No requests that patients submit should be ignored, however, there are circumstances where a GP does not need to be involved. If you feel like a mistake was make in your case and you would like me to look into this further for you, please fill out a feedback form here: https://bit.ly/3bp2bbs.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Mariah Ashfaq",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hi Mariah, thank you for your review. We do always try our best to register new patients as possible and the time this takes is very much dependent on how many other registrations we have at that time. We're sorry that your husbands registration took months and that you felt you could not get an appointment for him. If you would like me to take a further look into what happened here, please fill out a feedback form here: https://bit.ly/34NVS1A. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Imran Hussain",
+      "reviewerInfo": "3 reviews·1 photo",
+      "isOwner": true,
+      "rating": 5,
+      "dateString": "3 years ago",
+      "text": "Good morning Imran. Thank you very much for your wonderful review. We're so glad that you feel all of our team are helpful and that you have had a good experience with us here at New Bank Health Centre. I have passed your comments on to all of the team here and they are very thankful for your lovely feedback. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Mylinh Nguyen",
+      "reviewerInfo": "4 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hi Mylinh, thank you for your review. We care greatly about the health and wellbeing of patients and always strive to ensure it's easy for patients to gain access to health care. I am extremely concerned  about your recent experience as it does not match with the standard we hold ourselves to and would like to investigate this incident further. If you would be happy for me to do that, please do fill in a feedback form here: https://bit.ly/3ONXfPu. If you would prefer, you are able to contact the practice and inform them you would like to speak with me. I can then arrange to call you about your experience. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Abdul Hadi",
+      "reviewerInfo": "6 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Abdul,We're saddened you feel we are the worst GP practice in the country. We always strive to provide the highest level of care and service to patients and are disappointed to hear that you have not received that. I would really like to take a look into the incident you described in your review. if you would like me to investigate further, please do fill out a feedback form here: https://bit.ly/3rDHr8A.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Abz G",
+      "reviewerInfo": "Local Guide·24 reviews·31 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "Edited 3 years ago",
+      "text": "Hello Abz, thank you for your review. When it comes to the telephone, it is a first come first served system and unfortunately, we cannot control how many people call the surgery and how long the wait will be on the phone. Our team strive to get through the calls as quickly as possible, but sometimes the wait for patients will still be longer than everyone would like.It's a shame you feel that your tax money is being used for useless clinics and doctors. We feel we're a vital asset within the community and always help patients the best way we can and as quickly as we can. We try to accommodate everyone and give every patient who needs it an appointment, but we do have a limit that is very often reached from early in the morning - this includes emergency appointments. With that being said, I would be happy to take a look into this situation for you, and to get to the bottom of exactly what was said and why you weren't given an appointment that day. If you would like me to do that, please do fill in a feedback form here: https://bit.ly/3yN8b9s. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Moe Yafai",
+      "reviewerInfo": "1 review",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "3 years ago",
+      "text": "Hello Moe. Thank you for your review. I'm sorry to hear you feel we are unprofessional. We feel patients should have control of their health and do encourage patients to manage their own care; this includes chasing your test results and submitting your own repeat prescriptions. We find this gives our doctors and nurses more time to see or speak to patients and to help them when they're feeling unwell. I am very concerned about your statement that we systematically discriminate you because of your disability. We pride ourselves on treating every patient equally so I would really like to investigate this point further. If you would be happy for me to take a look into your case, please submit a feedback form here https://bit.ly/3NdiJ6P. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Deborah Ferreira",
+      "reviewerInfo": "Local Guide·77 reviews·137 photos",
+      "isOwner": true,
+      "rating": 4,
+      "dateString": "4 years ago",
+      "text": "Thanks for the review Deborah!"
+    },
+    {
+      "reviewer": "Evelin Mate",
+      "reviewerInfo": "2 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "4 years ago",
+      "text": "Hi Evelin I'm really sorry for the problems you have recently encountered. If you'd like to contact me via the website or by writing to me at the practice I'll do my best to try to resolve your problem. Apologies for the late response to your review this is due to some technical issues. Kind regards Colin"
+    },
+    {
+      "reviewer": "shalaw k",
+      "reviewerInfo": "4 reviews·10 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "4 years ago",
+      "text": "Hi Shalaw. We’re sorry you feel that the service we offer in New Bank Health Centre is very poor. So we can gain a better understanding of what happened in your recent experience with us, can you please fill out a feedback form on our website here (https://bit.ly/3xYlGB2) with more details?Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "wheresemma walley",
+      "reviewerInfo": "3 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "4 years ago",
+      "text": "Hi Emma, thank you for taking the time to post your review.We’re always looking for feedback on how we can improve our services to make sure we offer the highest standard of care to patients. So we can do that, please can you let me know about your recent bad experience filling out a feedback form on our website here https://bit.ly/3xYlGB2?Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Saher",
+      "reviewerInfo": "Local Guide·25 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "Edited 4 years ago",
+      "text": "Hi Saher I'm sorry to read you've had some problems. Please feel free to get in touch with us via the practice website and I will try to deal with your specific issue. Thank you for your feedback we will use it to try to improve our service to patients."
+    },
+    {
+      "reviewer": "adnan arshad",
+      "reviewerInfo": "Local Guide·11 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "4 years ago",
+      "text": "Hi Adnan. Thank you for your review. We're sorry that you feel like our website is complicated to use and that our team here at Newbank Health Centre are unprofessional and untrained. We are in the process of reviewing our websites to try and make them easier for patients to use, so we will bare your feedback in mind. We always strive to provide the highest level of service to patients. If you feel this has not happened in your recent experience, please do let us know by filling out our feedback form here: https://bit.ly/2VjkfPM. Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Mohammad Ijaz",
+      "reviewerInfo": "Local Guide·30 reviews·18 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "4 years ago",
+      "text": "Hi Mohammad I'm sorry to read you've had some problems. Please feel free to get in touch with us via the practice website. I will be intouch with you via letter shortly. Thank you for your feedback we will use it to try to improve our service to patients."
+    },
+    {
+      "reviewer": "Chenoor Abdulla",
+      "reviewerInfo": "Local Guide·3 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "4 years ago",
+      "text": "Hi Chenor, thank you for taking the time to post your review.I’m sorry you feel like you struggle to get in touch with us. We do try to make sure we’re prompt when patients contact us either through our website or over the telephone.We do prescribe many medications here at New Bank Health Centre, although there are some medicines that do need to be prescribed through a consultant at a hospital. When we feel that a patients problem needs further investigation, we will refer them to a specialist to ensure they get the proper care they need. I appreciate this can be a longer process, although it is to make sure that the treatment they receive is appropriate for them.If you would like me to look into this problem further, please fill out a feedback form on the website here: https://bit.ly/3xYlGB2.Kind Regards, Lauren, Engagement & Communications Officer"
+    },
+    {
+      "reviewer": "Nadeem Ahmed",
+      "reviewerInfo": "5 reviews",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "5 years ago",
+      "text": "Hi Nadeem I'm sorry that you had a bad experience during your recent visit. If there's anything specific that you want me to address then please do get in touch and I will do my best to make things better. We are always looking to improve our service so it is important that you raise any issues so we can try to sort them out. Get in touch via the practice if I can help. Just ask for the complaints manager. Many thanks"
+    },
+    {
+      "reviewer": "ADEEL MAHMOOD",
+      "reviewerInfo": "Local Guide·39 reviews·6 photos",
+      "isOwner": true,
+      "rating": 1,
+      "dateString": "5 years ago",
+      "text": "Hi Adeel I'm really sorry for the problems you have recently encountered. If you'd like to contact me via the website or by writing to me at the practice I'll do my best to try to resolve your problem. Apologies for the late response to your review this is due to some technical issues. Kind regards Colin Rhodes Complaints Officer"
+    }
+  ]
+}

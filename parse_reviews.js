@@ -66,24 +66,10 @@ function parseReviews(textContent) {
             continue;
         }
         
-        // Skip owner responses
-        if (line === 'New Bank Health Centre (owner)') {
-            i++;
-            // Skip all owner response content until we find the next reviewer
-            while (i < reviewLines.length) {
-                const nextLine = reviewLines[i];
-                if (isLikelyReviewerName(nextLine, reviewLines, i)) {
-                    break;
-                }
-                i++;
-            }
-            continue;
-        }
-        
-        // Check if this is likely a reviewer name
-        if (isLikelyReviewerName(line, reviewLines, i)) {
+        // Check if this is likely a reviewer name or owner response
+        if (isLikelyReviewerName(line, reviewLines, i) || line === 'New Bank Health Centre (owner)') {
             const review = parseReviewBlock(reviewLines, i);
-            if (review && review.text.trim()) {
+            if (review && (review.text.trim() || review.isOwner)) {
                 reviews.push(review);
             }
             i = review ? review.nextIndex : i + 1;
@@ -92,7 +78,7 @@ function parseReviews(textContent) {
         }
     }
     
-    // Sort by date (newest first)
+    // Sort by date (newest first), but keep owner responses near their related reviews
     reviews.sort((a, b) => {
         if (!a.date && !b.date) return 0;
         if (!a.date) return 1;
@@ -106,83 +92,83 @@ function parseReviews(textContent) {
 function isLikelyReviewerName(line, allLines, currentIndex) {
     if (!line || line.trim() === '') return false;
     if (/^[❤️🙏]/.test(line)) return false;
-    if (line.includes('ago') && !line.includes(' ')) return false;
-    if (line.includes('Local Guide')) return false;
-    if (line === 'New') return false;
-    if (/^\d+$/.test(line)) return false;
-    if (line.includes('Photo')) return false;
-    if (line.startsWith('Edited')) return false;
-    if (line === 'New Bank Health Centre (owner)') return false;
+    if (line === 'New Bank Health Centre (owner)') return false; // Handle separately
     
-    // Skip metadata patterns that aren't actual names
-    if (/^\d+\s+reviews?$/i.test(line)) return false; // "6 reviews", "1 review"
-    if (/^\d+\s+reviews?·\d+\s+photos?$/i.test(line)) return false; // "6 reviews·2 photos"
-    if (line.includes('reviews') && !line.includes('Local Guide')) return false;
-    if (line.includes('photos') && !line.includes('Local Guide')) return false;
-    if (line.startsWith('Rating:')) return false;
-    
-    // Check if it's likely a reviewer name by looking at context
-    // Reviewer names are usually followed by Local Guide info, date, or review text
+    // Be much more liberal - look for context patterns
     const nextLine = allLines[currentIndex + 1];
     const lineAfterNext = allLines[currentIndex + 2];
+    const lineAfterThat = allLines[currentIndex + 3];
     
-    // If next line is Local Guide info, this is likely a reviewer name
+    // If next line is Local Guide info, this is definitely a reviewer name
     if (nextLine && nextLine.includes('Local Guide·')) return true;
     
-    // If this line looks like a person's name (not too long, reasonable format)
-    // and doesn't contain review-related keywords
-    if (line.length < 50 && !line.includes('…More') && !line.startsWith('Rating:')) {
+    // If followed by review count pattern
+    if (nextLine && /^\d+\s+reviews?(\s*·.*)?$/i.test(nextLine)) return true;
+    
+    // If followed by date pattern
+    if (nextLine && (nextLine.includes('ago') || nextLine === 'New' || nextLine.startsWith('Edited'))) return true;
+    
+    // If second line after is a date
+    if (lineAfterNext && (lineAfterNext.includes('ago') || lineAfterNext === 'New' || lineAfterNext.startsWith('Edited'))) return true;
+    
+    // If third line after is a date (sometimes there's review count, then local guide, then date)
+    if (lineAfterThat && (lineAfterThat.includes('ago') || lineAfterThat === 'New' || lineAfterThat.startsWith('Edited'))) return true;
+    
+    // Look for name patterns - be very inclusive
+    if (isPersonNamePattern(line)) {
+        return true;
+    }
+    
+    // If it's not obviously metadata and looks like it could be a name or username
+    if (!line.includes('Photo') && 
+        !line.startsWith('Rating:') && 
+        !/^[❤️🙏]+\d*$/.test(line) &&
+        !line.match(/^\d+$/) &&
+        line.length > 1 && line.length < 100) {
         
-        // Check if followed by review metadata pattern
-        if (nextLine && (/^\d+\s+reviews?/i.test(nextLine) || nextLine.includes('Local Guide'))) {
-            return true;
+        // Look ahead to see if this could start a review block
+        let hasReviewContent = false;
+        for (let j = currentIndex + 1; j < Math.min(currentIndex + 6, allLines.length); j++) {
+            const lookAhead = allLines[j];
+            if (lookAhead && lookAhead.length > 20 && !lookAhead.includes('Photo')) {
+                hasReviewContent = true;
+                break;
+            }
         }
         
-        // Check if followed by date
-        if (nextLine && (nextLine.includes('ago') || nextLine === 'New')) {
-            return true;
-        }
-        
-        // Or if followed by another line that looks like a date
-        if (lineAfterNext && (lineAfterNext.includes('ago') || lineAfterNext === 'New')) {
-            return true;
-        }
-        
-        // Additional check: if it looks like a person's name (contains typical name patterns)
-        if (isPersonNamePattern(line)) {
-            return true;
-        }
+        if (hasReviewContent) return true;
     }
     
     return false;
 }
 
 function isPersonNamePattern(text) {
-    // Simple heuristics for person names:
-    // - Contains spaces (first name + last name)
-    // - Starts with capital letter
-    // - Doesn't contain numbers unless it's a username pattern
-    // - Reasonable length
-    
-    if (text.length > 50) return false;
+    // Be very liberal with name detection
+    if (!text || text.length < 2 || text.length > 100) return false;
     if (text.includes('…More')) return false;
     if (text.startsWith('Rating:')) return false;
-    if (/reviews?|photos?/i.test(text) && !text.includes('Local Guide')) return false;
+    if (text.includes('Photo')) return false;
+    if (/^[❤️🙏]+\d*$/.test(text)) return false;
+    if (text.match(/^\d+$/)) return false;
     
-    // If it has spaces and starts with capital letter, likely a name
-    if (/^[A-Z]/.test(text) && text.includes(' ')) {
-        return true;
-    }
+    // Skip obvious metadata
+    if (/^\d+\s+reviews?(\s*·.*)?$/i.test(text)) return false;
+    if (text.includes('Local Guide·')) return false;
+    if (text.includes('ago') && text.split(' ').length < 3) return false;
+    if (text === 'New') return false;
+    if (text.startsWith('Edited')) return false;
     
-    // Single word names (like usernames) starting with capital
-    if (/^[A-Z][a-zA-Z0-9_]*$/.test(text) && text.length > 2) {
-        return true;
-    }
+    // If it has reasonable name characteristics
+    if (/^[A-Z]/.test(text)) return true; // Starts with capital
+    if (text.includes(' ') && text.split(' ').length <= 5) return true; // Has spaces but not too many words
+    if (/^[a-zA-Z0-9_\- ]+$/.test(text) && text.length > 2) return true; // Alphanumeric with reasonable chars
     
     return false;
 }
 
 function parseReviewBlock(lines, startIndex) {
+    const isOwner = lines[startIndex] === 'New Bank Health Centre (owner)';
+    
     const review = {
         reviewer: lines[startIndex],
         localGuideInfo: '',
@@ -191,12 +177,12 @@ function parseReviewBlock(lines, startIndex) {
         text: '',
         reactions: '',
         isNew: false,
+        isOwner: isOwner,
         nextIndex: startIndex + 1
     };
     
     let i = startIndex + 1;
     let foundDate = false;
-    let textStarted = false;
     
     while (i < lines.length) {
         const line = lines[i];
@@ -206,13 +192,17 @@ function parseReviewBlock(lines, startIndex) {
             continue;
         }
         
-        // Stop if we hit another reviewer or owner response
-        if (isLikelyReviewerName(line, lines, i) || line === 'New Bank Health Centre (owner)') {
+        // Stop if we hit another reviewer or owner response (but be more permissive)
+        if ((isLikelyReviewerName(line, lines, i) || line === 'New Bank Health Centre (owner)') && i > startIndex + 1) {
             break;
         }
         
         // Local Guide info
         if (line.includes('Local Guide·') && !review.localGuideInfo) {
+            review.localGuideInfo = line;
+        }
+        // Review count info (like "1 review", "6 reviews")
+        else if (/^\d+\s+reviews?(\s*·.*)?$/i.test(line) && !review.localGuideInfo) {
             review.localGuideInfo = line;
         }
         // Date info
@@ -230,14 +220,16 @@ function parseReviewBlock(lines, startIndex) {
             }
             foundDate = true;
         }
-        // Reactions
-        else if (/^[❤️🙏]\d+/.test(line)) {
-            review.reactions = line;
+        // Reactions (emojis with numbers)
+        else if (/^[❤️🙏]\d+/.test(line) || /^[❤️🙏]+\d+$/.test(line)) {
+            if (review.reactions) {
+                review.reactions += ' ' + line;
+            } else {
+                review.reactions = line;
+            }
         }
-        // Skip photo references and standalone numbers
-        else if (!line.includes('Photo') && !line.match(/^\d+$/) && line !== 'New') {
-            // This is likely review text
-            textStarted = true;
+        // Everything else goes into text - be very inclusive
+        else if (line && line !== 'New') {
             if (review.text) {
                 review.text += ' ' + line;
             } else {
@@ -252,10 +244,76 @@ function parseReviewBlock(lines, startIndex) {
     return review;
 }
 
+function cleanObject(obj) {
+    const cleaned = {};
+    for (const [key, value] of Object.entries(obj)) {
+        if (value !== null && value !== undefined && value !== '' && value !== false) {
+            if (Array.isArray(value)) {
+                const cleanedArray = value.map(item => 
+                    typeof item === 'object' ? cleanObject(item) : item
+                ).filter(item => item !== null && item !== undefined && item !== '');
+                if (cleanedArray.length > 0) {
+                    cleaned[key] = cleanedArray;
+                }
+            } else if (typeof value === 'object') {
+                const cleanedNested = cleanObject(value);
+                if (Object.keys(cleanedNested).length > 0) {
+                    cleaned[key] = cleanedNested;
+                }
+            } else {
+                cleaned[key] = value;
+            }
+        }
+    }
+    return cleaned;
+}
+
+function generatePlaintext(reviews) {
+    let plaintext = '';
+    
+    for (let i = 0; i < reviews.length; i++) {
+        const review = reviews[i];
+        plaintext += `\n${'='.repeat(80)}\n`;
+        plaintext += `Review #${i + 1}\n`;
+        plaintext += `${'='.repeat(80)}\n`;
+        
+        if (review.isOwner) {
+            plaintext += `🏢 OWNER RESPONSE\n`;
+        } else {
+            plaintext += `👤 Reviewer: ${review.reviewer}\n`;
+        }
+        
+        if (review.localGuideInfo) {
+            plaintext += `📋 ${review.localGuideInfo}\n`;
+        }
+        
+        if (review.dateString) {
+            plaintext += `📅 Date: ${review.dateString}\n`;
+        }
+        
+        if (review.isNew) {
+            plaintext += `🆕 NEW REVIEW\n`;
+        }
+        
+        if (review.text) {
+            plaintext += `\n💬 Review:\n${review.text}\n`;
+        }
+        
+        if (review.reactions) {
+            plaintext += `\n👍 Reactions: ${review.reactions}\n`;
+        }
+        
+        plaintext += '\n';
+    }
+    
+    return plaintext;
+}
+
 function main() {
     try {
         const inputFile = 'raw-reviews/New Bank Health Centre-reviews.txt';
-        const outputFile = 'parsed-reviews.json';
+        const jsonOutputFile = 'parsed-reviews.json';
+        const txtOutputFile = 'parsed-reviews.txt';
         
         if (!fs.existsSync(inputFile)) {
             console.error(`Input file not found: ${inputFile}`);
@@ -265,28 +323,48 @@ function main() {
         const textContent = fs.readFileSync(inputFile, 'utf-8');
         const reviews = parseReviews(textContent);
         
-        const result = {
+        // Clean reviews to remove falsy properties
+        const cleanedReviews = reviews.map(review => cleanObject(review));
+        
+        const result = cleanObject({
             businessName: 'New Bank Health Centre',
             address: '339 Stockport Rd, Longsight, Manchester M12 4JE, United Kingdom',
             averageRating: 2.0,
             totalReviews: 146,
-            parsedReviews: reviews.length,
-            reviews: reviews
-        };
+            parsedReviews: cleanedReviews.length,
+            reviews: cleanedReviews
+        });
         
-        fs.writeFileSync(outputFile, JSON.stringify(result, null, 2));
+        // Write JSON output
+        fs.writeFileSync(jsonOutputFile, JSON.stringify(result, null, 2));
         
-        console.log(`\n✅ Successfully parsed ${reviews.length} reviews`);
-        console.log(`📁 Output saved to: ${outputFile}`);
+        // Write plaintext output
+        const plaintextContent = `NEW BANK HEALTH CENTRE - GOOGLE REVIEWS
+${'='.repeat(80)}
+📍 Address: ${result.address}
+⭐ Average Rating: ${result.averageRating}/5
+📊 Total Reviews: ${result.totalReviews}
+📈 Parsed Reviews: ${result.parsedReviews}
+${'='.repeat(80)}
+
+${generatePlaintext(cleanedReviews)}`;
+        
+        fs.writeFileSync(txtOutputFile, plaintextContent);
+        
+        console.log(`\n✅ Successfully parsed ${cleanedReviews.length} reviews`);
+        console.log(`📁 JSON output: ${jsonOutputFile}`);
+        console.log(`📄 Text output: ${txtOutputFile}`);
         
         // Show some stats
-        const withDates = reviews.filter(r => r.date).length;
-        const withReactions = reviews.filter(r => r.reactions).length;
-        const newReviews = reviews.filter(r => r.isNew).length;
+        const withDates = cleanedReviews.filter(r => r.date).length;
+        const withReactions = cleanedReviews.filter(r => r.reactions).length;
+        const newReviews = cleanedReviews.filter(r => r.isNew).length;
+        const ownerResponses = cleanedReviews.filter(r => r.isOwner).length;
         
-        console.log(`Reviews with dates: ${withDates}`);
-        console.log(`Reviews with reactions: ${withReactions}`);
-        console.log(`New reviews: ${newReviews}`);
+        console.log(`📅 Reviews with dates: ${withDates}`);
+        console.log(`👍 Reviews with reactions: ${withReactions}`);
+        console.log(`🆕 New reviews: ${newReviews}`);
+        console.log(`🏢 Owner responses: ${ownerResponses}`);
         
     } catch (error) {
         console.error('Error parsing reviews:', error.message);
