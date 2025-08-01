@@ -38,8 +38,9 @@ I’d like to discuss a problem with the appointment system at New Bank Health C
    - Patients should at least be able to reschedule (or even better escalate to non-phone path).
 - **Schedule Call Windows**: Let patients pick a time range for callbacks to fit their lives.
 - **Offer Alternatives**: Add phone or in-person booking for those who can’t use the online form. Your patient survey suggests 40% of people are not making it through your system for even a first appointment.
-- **Notify Patients**: Send a text or email if a request is closed (which ideally it wouldn't be), with clear next steps. Likewise for support messages, which just black hole currently.
+- **Notify Patients Reliably**: Send a text or email if a request is closed (which ideally it wouldn't be), with clear next steps. Likewise for support messages, which just black hole currently.
 - **Have Some Empathy/Humanity**: People come to the doctor rarely, when they need help most... Most people are not as tech savvy as you, and certainly do not have comfortable devices for filling out long relatively complex forms multiple times or every day. When the receptionist treats people badly because it's technically their own fault, it just drives them further away from your help.
+- **Don't make doctors phone everyone**: A simple live-holding system where the Doctors review and queues requests, but a staff member makes the calls, and queues them into the Doctor as needed would improve the process on both ends, with more flexibility and efficiency for everyone involved, with very little change to your actual tech, if tech is the limiter here.
 
 
 ## **CORE ISSUES**
