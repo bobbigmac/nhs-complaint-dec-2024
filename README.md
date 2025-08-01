@@ -1,5 +1,9 @@
 # GP Practice Complaint: Digital Access Issues - December 2024
 
+## TODO
+
+- Need to parse and group reviews
+
 ## **CORE ISSUES**
 - **Digital-only booking system** - no phone/in-person options
 - **Unscheduled callbacks** - patients wait all day with no timeframe
