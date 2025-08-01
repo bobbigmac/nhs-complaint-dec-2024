@@ -1,8 +1,46 @@
 # GP Practice Complaint: Digital Access Issues - December 2024
 
-## TODO
+# Patient Participation Group Talking Points - Appointment System Concerns
 
-- Need to parse and group reviews
+I’d like to discuss a problem with the appointment system at New Bank Health Centre that’s making it hard for patients to get care. When a doctor can’t reach a patient by phone, their request is deleted, and they have to resubmit it the next day. This puts access to care out of patients’ control for reasons like work, poor signal, or just missing a call. It’s frustrating, unfair, leads to patient-blaming instead of helpful outcomes, and I think it can be improved.
+
+## Key Points to Raise
+
+1. **Unpredictable Availability**
+
+   - Patients can’t wait by the phone all day for an unscheduled call. Jobs, family, or technical issues (e.g., no signal) mean missing a call isn’t their fault.
+   - **NHS Link**: NHS guidelines say appointments should be reasonable and consider patients’ circumstances.
+
+2. **Deleted Requests Create Barriers**
+
+   - Deleting requests after missed calls forces patients into a daily resubmission loop, delaying care with no guarantee of success.
+   - **NHS Link**: The NHS Constitution calls for equitable access to care, but this system penalizes patients unfairly.
+
+3. **No Notification Worsens the Problem**
+
+   - Patients aren’t told when their request is deleted (I wasn't for 3 of the 4), leaving them confused and wasting time checking manually.
+   - **NHS Link**: NHS England stresses clear communication from the first contact—patients deserve to know their request status.
+
+4. **Vulnerable Patients Suffer Most**
+
+   - Elderly or disabled patients may struggle with the online form or being available for calls, risking exclusion from care.
+   - **NHS Link**: NHS accessibility rules require alternative methods for those who can’t use digital systems.
+
+5. **Misleading "Missed Appointment" Label**
+
+   - Calling an unscheduled call a "missed appointment" isn’t accurate and might inflate statistics, affecting trust and policies like charging for no-shows.
+   - **NHS Link**: Accurate appointment data is vital per NHS guidance—mislabeling distorts this.
+
+## Solutions to Suggest
+
+- **Don’t Delete Requests**: Keep them open for a set period (e.g., 48 hours), you don't have to make multiple call attempts, we understand there are time pressures, but the patient should at least be able to reschedule (or even better escalate to non-phone path).
+- **Schedule Call Windows**: Let patients pick a time range for callbacks to fit their lives.
+- **Notify Patients**: Send a text or email if a request is closed (which ideally it wouldn't be), with clear next steps.
+- **Offer Alternatives**: Add phone or in-person booking for those who can’t use the online form.
+
+## Closing Question
+
+Can we agree to review this policy and propose changes? It’s about making care accessible and fair for everyone, not just managing demand. How can the PPG support this?
 
 ## **CORE ISSUES**
 - **Digital-only booking system** - no phone/in-person options
