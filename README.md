@@ -1,6 +1,6 @@
-# GP Practice Complaint: Digital Access Issues - December 2024
+# GP Practice Complaint: Digital Access Issues - December 2024 / August 2025
 
-# Patient Participation Group Talking Points - Appointment System Concerns
+## Patient Participation Group Talking Points - Appointment System Concerns
 
 I’d like to discuss a problem with the appointment system at New Bank Health Centre that’s making it unnecessarily hard to get care. If a doctor can’t reach a patient by phone, the request is deleted outright, and they have to resubmit it the next day from scratch. This strips patients of control over their access to care for reasons like work, poor signal, or just missing a call. It’s frustrating, unfair, leads to patient-blaming instead of helpful outcomes, and I think it can be improved.
 
@@ -16,20 +16,20 @@ I’d like to discuss a problem with the appointment system at New Bank Health C
    - Deleting requests after missed calls forces patients into a daily resubmission loop, delaying care with no guarantee of success.
    - **NHS Link**: The NHS Constitution calls for equitable access to care, but this system penalizes patients unfairly.
 
-3. **No Notification Worsens the Problem**
-
-   - Patients aren’t told when their request is deleted (I wasn't for 3 of the 4), leaving them confused and wasting time checking manually.
-   - **NHS Link**: NHS England stresses clear communication from the first contact—patients deserve to know their request status.
-
-4. **Vulnerable Patients Suffer Most**
+3. **Vulnerable Patients Suffer Most**
 
    - Elderly or disabled patients may struggle with the online form or being available for calls, risking exclusion from care.
    - **NHS Link**: NHS accessibility rules require alternative methods for those who can’t use digital systems.
 
-5. **Misleading "Missed Appointment" Label**
+4. **Misleading "Missed Appointment" Label**
 
    - Calling an unscheduled call a "missed appointment" isn’t accurate and might inflate statistics, affecting trust and policies like charging for no-shows.
    - **NHS Link**: Accurate appointment data is vital per NHS guidance—mislabeling distorts this.
+
+5. **No Notification Worsens the Problem**
+
+   - Patients aren’t told when their request is deleted (I wasn't for 3 of the 4), leaving them confused and wasting time checking manually.
+   - **NHS Link**: NHS England stresses clear communication from the first contact—patients deserve to know their request status.
 
 ## Solutions to Suggest
 
