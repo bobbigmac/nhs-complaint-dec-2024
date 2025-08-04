@@ -28,7 +28,7 @@ I’d like to discuss a problem with the appointment system at New Bank Health C
 
 5. **No Notification Worsens the Problem**
 
-   - Patients aren’t told when their request is deleted (I wasn't for 3 of the 4), leaving them confused and wasting time checking manually.
+   - Patients aren’t always told when their request is deleted (I wasn't for 3 of the 4), leaving them confused and wasting time checking manually.
    - **NHS Link**: NHS England stresses clear communication from the first contact—patients deserve to know their request status.
 
 ## Solutions to Suggest
@@ -50,7 +50,7 @@ I’d like to discuss a problem with the appointment system at New Bank Health C
 - **No same-day resubmission** - must wait until next day
 - **Misleading terminology** - "missed appointments" for unscheduled calls
 - **Tiny text fields** insufficient space for entering detailed medical information
-- **Poor notifications** - requests deleted without warning
+- **Poor notifications** - requests deleted without notification
 
 ## **IMPACT ON PATIENTS**
 - **Vulnerable groups excluded** (elderly, disabled, digitally excluded)
@@ -89,4 +89,4 @@ I’d like to discuss a problem with the appointment system at New Bank Health C
 - **Systemic issue** - the doctors might be great, but some patients don't get the chance to find out
 - **Potential fraud** - inflated missed appointment statistics
 - **Public interest** - worth investigating across Manchester practices
-- **Journalistic angle** - could escalate to Manchester Mill/Post
+- **Journalistic angle** - could escalate to Manchester Mill/Press
