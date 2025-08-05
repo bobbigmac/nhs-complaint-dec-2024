@@ -13,14 +13,14 @@ The document provided is a detailed report on patient satisfaction with the New 
        - 18% are neutral, which may also suggest dissatisfaction.
      - **Comparison:** This is better than the national average (47% do not find it easy), but 39% is still a substantial barrier.
    - **Website Contact:**
-     - **Failure Rate:** 27% do not find it easy to contact the practice via the website (73% find it easy).
+     - **Failure Rate:** 27% do not find it easy to contact the practice via the website.
      - **Breakdown:** 
        - 10% find it fairly difficult.
        - 8% find it very difficult.
        - 9% are neutral.
      - **Comparison:** Outperforms the national average (49% do not find it easy), yet 27% still struggle.
    - **NHS App Contact:**
-     - **Failure Rate:** 40% do not find it easy to contact the practice using the NHS App (60% find it easy).
+     - **Failure Rate:** 40% do not find it easy to contact the practice using the NHS App.
      - **Breakdown:** 
        - 10% find it fairly difficult.
        - 18% find it very difficult.
@@ -47,7 +47,7 @@ The document provided is a detailed report on patient satisfaction with the New 
 
 4. **Limited Choice in Appointments**
    - **Failure Rate:** 
-     - 34% were not offered a choice of time or day (66% were offered this choice).
+     - 34% were not offered a choice of time or day.
      - 89% were not offered a choice of location (11% were offered this choice).
    - **Comparison:** 
      - Time/day choice is better than the national average (46% not offered).
