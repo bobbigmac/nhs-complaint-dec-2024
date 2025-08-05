@@ -1,8 +1,6 @@
-### Evaluation of GP Practice Failures in Service Accessibility
+### New Bank Health Centre Patient Survey Summary
 
-The document provided is a detailed report on patient satisfaction with a GP practice, focusing on metrics such as ease of contact, appointment experiences, and overall satisfaction. While it emphasizes success percentages, this evaluation inverts those figures to highlight the practice's failures, particularly in making it hard for people to access services in the first place. A significant concern is that the survey likely excludes the 40% of patients who are "driven away" by initial barriers, meaning the true extent of accessibility issues may be understated. Below, we assess the key areas where the practice is failing, with a focus on access barriers.
-
----
+The document provided is a detailed report on patient satisfaction with the New Bank Health Centre GP practice, focusing on metrics such as ease of contact, appointment experiences, and overall satisfaction. 
 
 #### Key Failure Areas Impacting Access
 
@@ -75,28 +73,27 @@ The document provided is a detailed report on patient satisfaction with a GP pra
    - **Comparison:** Worse than the national average (25% do not rate it as good).
    - **Impact:** Nearly a third of patients being dissatisfied reflects the cumulative effect of accessibility and service issues, likely reducing trust and willingness to seek care.
 
----
-
 #### Critical Oversight: The 40% Driven Away
-The survey only includes patients who have successfully contacted or had appointments with the practice, excluding those who couldn’t get through or gave up due to initial barriers. This methodological flaw means the reported failure rates (e.g., 39% for phone, 40% for NHS App) likely underestimate the true extent of access problems. The "40% of people they’re driving away" are not measured, suggesting that the practice’s accessibility failures could be significantly worse than the data indicates. These unrepresented patients are likely the most affected by the practice’s shortcomings in contact methods and responsiveness.
 
----
+The survey only includes patients who have successfully contacted or had appointments with the practice, excluding those who couldn’t get through or gave up due to initial barriers. This methodological flaw means the reported failure rates (e.g., 39% for phone, 40% for NHS App) likely underestimate the true extent of access problems. 
+
+The people they’re driving away are not measured, suggesting that the practice’s accessibility failures could be significantly worse than the data indicates (running local numbers suggests a range 800-1200 patients affected). These unrepresented patients are likely the most affected by the practice’s shortcomings in contact methods and responsiveness.
 
 #### Comparison to Local and National Averages
+
 While the practice often performs better than local (ICS) and national averages, this does not mitigate the absolute scale of its failures:
 - **Phone Contact:** 39% vs. 47% nationally (still a large group struggling).
 - **Website Contact:** 27% vs. 49% nationally (still over a quarter failing).
 - **NHS App Contact:** 40% vs. 51% nationally (still two-fifths facing issues).
 Better-than-average performance does not excuse the fact that substantial minorities are unable to access services easily. The focus on relative success masks the real-world impact on patients.
 
----
-
 #### Later Stages vs. Initial Access
+
 The data shows higher satisfaction in later stages (e.g., 74%-87% for appointment quality metrics like listening and care), with failure rates ranging from 13% to 30%. This suggests that once patients overcome initial barriers, their experience improves. However, the critical failure lies in getting to that stage:
-- **Contrast:** 39%-40% fail to contact the practice easily, but only 13%-30% report poor appointment experiences.
 - **Implication:** The practice is losing people at the entry point, and the survey’s focus on later-stage satisfaction obscures the significant drop-off before care is received.
 
----
-
 ### Conclusion
-The GP practice is failing a substantial portion of its patients in accessing services, with 39% struggling to contact by phone, 27% via the website, and 40% via the NHS App. Additional barriers include 34% not getting a choice of appointment time/day, 89% not getting a location choice, and 35% facing long wait times. The 39% lacking support for long-term conditions and 31% dissatisfied overall further highlight systemic issues. Most critically, the survey excludes the 40% of patients potentially driven away by these initial hurdles, meaning the true failure rate is likely higher. While the practice outperforms some averages, its absolute failure rates reveal significant accessibility barriers that prevent many from receiving care. To address this, the practice must prioritize improving contact methods, clarity, and flexibility to ensure all patients can access services effectively.
+
+The GP practice is failing a substantial portion of its patients in accessing services, with 39% struggling to contact by phone, 27% via the website, and 40% via the NHS App. Additional barriers include 34% not getting a choice of appointment time/day, 89% not getting a location choice, and 35% facing long wait times. The 39% lacking support for long-term conditions and 31% dissatisfied overall further highlight systemic issues. 
+
+Most critically, the survey excludes the 40% of patients potentially driven away by these initial hurdles, meaning the true failure rate is likely higher. While the practice outperforms some averages, its absolute failure rates reveal significant accessibility barriers that prevent many from receiving care. To address this, the practice must prioritize improving contact methods, clarity, and flexibility to ensure all patients can access services effectively.
