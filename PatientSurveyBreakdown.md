@@ -6,7 +6,7 @@ The document provided is a detailed report on patient satisfaction with the New 
 
 1. **Difficulty in Contacting the Practice**
    - **Phone Contact:**
-     - **Failure Rate:** 39% of patients do not find it easy to get through to the practice by phone (61% find it easy).
+     - **Failure Rate:** 39% of patients do not find it easy to get through to the practice by phone.
      - **Breakdown:** 
        - 10% find it fairly difficult.
        - 12% find it very difficult.
