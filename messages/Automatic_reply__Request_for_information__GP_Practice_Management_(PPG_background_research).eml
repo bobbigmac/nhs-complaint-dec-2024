@@ -1,0 +1,253 @@
+Return-Path: <>
+Authentication-Results:  kundenserver.de; dkim=pass header.i=@nhs.net
+Received: from LO2P265CU024.outbound.protection.outlook.com ([52.102.164.22])
+ by mx.kundenserver.de (mxeue103 [217.72.192.67]) with ESMTPS (Nemesis) id
+ 1Mvtpp-1uYcNH1gsJ-00x4U3 for <admin@bobbigmac.com>; Tue, 26 Aug 2025 02:09:48
+ +0200
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=QFUXJwZsbpJ5pjX2MQU4vGAp6MWShLXGiPh3JXx0RyGJWqVo4FLr9qMal5cab5/oIbJJPe7i0cbgaXQE2NOGNfvnyTOIWtvUNzLoYQpHRZKfM7NIZA8bGCmW/LPXeiTMeRlMPGlqeNnNiVd+QnzIKgyMAN1XROr5x7KR6amsqHvgL3rNUxu0VID+mwjutg4h9rc+ezgkm04MPeSvdqZnvGy+yEL2uPLM3bAMDNNZeknS3T9VydNpiZP0EpyD2rsxWS+2u2j4YMikf9f+GgW56yGRTC2K1Bvy40ssPB6azS7c8tXOCsJdLteuGP7b3zEF35Eys6EDMzVzmx/QZxZUCg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=U6yK18WvYdDraCq902CVg97nWsDZMpT24MCYhO7oAuY=;
+ b=ZsgqOTJvN/TWZyoSu7xIe9GIDvXD2tFALBoEAjnfPbvOhGZpBIUHS7WVOOXBqRyDjzdqFXqaRfGJWD/o47YW0vtNjrB9wEA1CImcnjtyEuZmgPHVH/tLbLvX4DprA0zZZUyJ8dvjDc5F0rSWZ1MlovE0UyQPYiltqoVxBfdVFx8UMClKtqySnnFprDddUGHbN2VQzD0kNEbSlLHhEFZq6rAKdKZeBr4usEoSuJ1w7+xuG2cwFa8+DCWrIR4P95NWusMxufcKywyP7+A5+zUlx9hIfnlzUMLKlys5L5jGYvEeZQ/fuE45QRnfVhYOR3dcz7qygvXxRgoYVNaor8p3jg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=nhs.net; dkim=pass header.d=nhs.net; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nhs.net; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=U6yK18WvYdDraCq902CVg97nWsDZMpT24MCYhO7oAuY=;
+ b=Lb0w30uSXEc/fVH5wRzVhWbaLHG3EvblJq4ULQX1s/QCrZlaNSWxRmvnFxuOCRkOTAAHFYEY/Wu/Y7JltIdCBnS80qmd5rheynlFtix4KHsnksqR80OBiEkOCr97KGArJnLJBKc8jIIes+l42dEULc46SpymO8VSOeOugt+8RsP488Mz81q3tdgWEy2SwWR2mzjKoCpIbWJDEOmie7okHK9MAIdYOa7N1OnHLeLGamKIsQQ0ZUgSxrwMK5cjY2Uj2k7hwfepLm+enlskPqEVzwBztUrwyyorMcGS7YL5oqBTmNWTn1cdgTcr222VjHtuJfEZCb4p2Ank2BsiG/UOLg==
+Received: from LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:29c::11)
+ by LO2P265MB3422.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:19c::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9052.21; Tue, 26 Aug
+ 2025 00:09:47 +0000
+Received: from LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM ([::1]) by
+ LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM ([fe80::fa39:bacc:1611:f258%7]) with
+ Microsoft SMTP Server id 15.20.9052.019; Tue, 26 Aug 2025 00:09:47 +0000
+From: "FEEDBACK (GTD HEALTHCARE - 8G750)" <gtd.feedback@nhs.net>
+To: "Robert (Bob) Davies" <admin@bobbigmac.com>
+Subject: Automatic reply: Request for information: GP Practice Management (PPG
+ background research)
+Thread-Topic: Request for information: GP Practice Management (PPG background
+ research)
+Thread-Index: AQHcFh27nHuSQJof+kWB/i7MqgQUMLR0DzuU
+Date: Tue, 26 Aug 2025 00:09:47 +0000
+Message-ID:
+ <78c908ec242c46bf970f1df512d85555@LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM>
+References: <781589698.105798.1756166983060@email.ionos.co.uk>
+In-Reply-To: <781589698.105798.1756166983060@email.ionos.co.uk>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: gtd.feedback@nhs.net
+X-MS-TNEF-Correlator:
+x-ms-exchange-parent-message-id:
+ <781589698.105798.1756166983060@email.ionos.co.uk>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: LO4P265MB5995:EE_|LO2P265MB3422:EE_
+x-ms-office365-filtering-correlation-id: fbb4820d-d89c-4025-be3f-08dde434de1d
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|50650200027|10070799003|1800799024|376014|366016|19092799006|8096899003|80100003;
+x-microsoft-antispam-message-info:
+ =?us-ascii?Q?HN55IRXtTf46pc6G6S71fiEgUb2TcRNamezUU54BFcyVWARKtcIwLcECP2+j?=
+ =?us-ascii?Q?Fl6pVl/OPf6FBtDelAFcTzCZaE6r9uCAgIc+zMrWJ1NV/XsvebFqtscbB9X7?=
+ =?us-ascii?Q?WE95cw3b4vYFmnWo+2n1Z0X/6Sajeqgpi5DUxkyqr5Hyfm9QR8slpbNI9T37?=
+ =?us-ascii?Q?MbVlmACmyRqSvJ6N3YB9C6tlwtcBWgX/LyhxxzrAqfyR0FHQIc9xciO5ZBWR?=
+ =?us-ascii?Q?G1SyU4eR+EQIPZP3+ZEdwWiqmlWu72li1LeB7CbMRZnmKu9OsC6KtnmPNaXO?=
+ =?us-ascii?Q?iGqsuqkjOH0ZVTquiRjt/Nc1k0qPcCAW0hEd3eLWr6BPpKYkVV4WKDILq3WG?=
+ =?us-ascii?Q?mQkYcust9KPsmT7VLmUG0Fdl8ByiEjo05vOJ1pjytyHdI9BewEv7Fs2ESERM?=
+ =?us-ascii?Q?+k1Pr+KBa3GOCzlR+zpdXMZdxPC70NYo1T9TVhPaX0uFFKmq6QhzseVk91dS?=
+ =?us-ascii?Q?HRg/H5Jymy/gw55DL4sNxr+lFIjtITEj1qWd+3E5SljZlXXAy+ilFlcMo3Fj?=
+ =?us-ascii?Q?LLYZnlaLgGRPHmX1eaZk895BZiee6P6av/dxvOpNDuQcKhW/m5VSbOMqLi79?=
+ =?us-ascii?Q?8y7ZxYc7s42OFpRvkM5zvbrNdCRtNzptIzEmdsiMHEI+8L58Ut9N6pvvxJqp?=
+ =?us-ascii?Q?XXs0B9U41hgcM5PbMHJhhjQUYsOP6PRnaOUS+xYcHY4juaha1NWi8Q28oa17?=
+ =?us-ascii?Q?IP0W7j5BFmRlJxzLnHWthKGkZ2O8rH9SNT3YlxvXuYbo8azio3unKf4WO1ZQ?=
+ =?us-ascii?Q?hoadbKVfxCh9PWTy2/RtiX68PhhRju3/3Jqcu+2sPQ/7kij0rnr6WzHhPrVl?=
+ =?us-ascii?Q?llntmft5sueMFAUiGS9oedLj6oOeA/5XfqGjlMbwm+bqZhTUazGXeP8ZUlPH?=
+ =?us-ascii?Q?OAGvCj+pGtHcX/wk5w0q0EZSyuoQprX8yEfVuBfmhMd60UXlGnsAmN7kutx3?=
+ =?us-ascii?Q?BQKZdW9QtggnHCnt9jbQS9uwKjMkWYeiucerwqObfwTJkFkLaUd/4VZ5el++?=
+ =?us-ascii?Q?uuq34HFGJgYYJd4agw7q+F38qCUBCQ6lUc94X9uUx0ePcYi+6YjXzK/F0dG7?=
+ =?us-ascii?Q?t05arMx3lSyCQWYLDodPvfPUFUTpYV4L9Dx76Eownbu9R6GAiNxKC3qEHkrm?=
+ =?us-ascii?Q?Q7zVoj9NktGDCgNlVOYHWBvDRrkcLMJeP603vJEa48ntLa0+uShQ4v4QXY9v?=
+ =?us-ascii?Q?1c+mDyZI84CzS0ZTiueN7Bd7K1xI26UkLqgxc1PdXz0H7hIj3eBl/80ZT2eQ?=
+ =?us-ascii?Q?WimyLPZmvdX9sxafw2ZL5iaLqvB4D9xfsFuSMTrYQ78SZq5q6mgM0pCiYbpg?=
+ =?us-ascii?Q?JcLQi+QZCnbeS6CkWYXygJs2LGU/2ocFwDYC2eOaT81wVUw60chKsF+01THB?=
+ =?us-ascii?Q?sKiwyc8+ApKvDLb9xAZbM846e3KvqeD4qSPQkw6uP+dvU7+/f5YBC5QweHRZ?=
+ =?us-ascii?Q?AKf3nOr2q8w=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(10070799003)(1800799024)(376014)(366016)(19092799006)(8096899003)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ RWpkqjVLKatFSqm2d/jDE1wNvjA8vC0eZ0Ak4igL2BqFsmn5I4Mpi7LExCm5uVeYXj76akEMNJJAlYZ3bQ+rL2zb/6utr7A8Jsi36i8t5cDmzfPEqd0yF/O9fZuT4OEDQwxoNJ5DjrzXkxBoaPG1/KmUqpPW3z56jX0PvN9X5BpEwiOk5Djkd2gZvrAHlxS0uxxBsGIT2PpDZu3eyCoeGLsdBuEivS4TbKcU32ihpPk3FMZr+jc37N+2214nEs46SREy1nlLUeBtzqcOsPiWIq7758W2ihU+tH3+a2lv8m8w7SMTwHxUTecGgi8Glkp/
+Content-Type: multipart/alternative;
+	boundary="_000_78c908ec242c46bf970f1df512d85555LO4P265MB5995GBRP265PRO_"
+MIME-Version: 1.0
+X-OriginatorOrg: nhs.net
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: fbb4820d-d89c-4025-be3f-08dde434de1d
+X-MS-Exchange-CrossTenant-originalarrivaltime: 26 Aug 2025 00:09:47.2186
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 37c354b2-85b0-47f5-b222-07b48d774ee3
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LO2P265MB3422
+Envelope-To: <admin@bobbigmac.com>
+X-Spam-Flag: NO
+UI-InboundReport: notjunk:1;M01:P0:LerLL3+eU7U=;ZBEgn+xEQJ7R37ntVefJCb0Y+bE5
+ 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
+ TQw==
+
+--_000_78c908ec242c46bf970f1df512d85555LO4P265MB5995GBRP265PRO_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for your email.  Please note that this email address is only moni=
+tored during normal working hours and at set points during the day.  During=
+ normal office hours you can ring gtd healthcare head office on 0161 337 22=
+54.
+
+Please note If you are emailing because you or someone you know is feeling =
+unwell, please ring either your own GP or dial 111 as we are not able to de=
+al with medical queries via email.
+
+
+***************************************************************************=
+*********** ******************************
+
+This message may contain confidential information. If you are not the inten=
+ded recipient please:
+i) inform the sender that you have received the message in error before del=
+eting it; and
+ii) do not disclose, copy or distribute information in this e-mail or take =
+any action in relation to its content (to do so is strictly prohibited and =
+may be unlawful).
+Thank you for your co-operation.
+
+NHS.net Connect is the secure email, collaboration and directory service av=
+ailable for all NHS staff in England. NHS.net Connect is approved for excha=
+nging patient data and other sensitive information with NHS.net Connect and=
+ other accredited email services.
+
+For more information and to find out how you can switch visit Joining NHS.n=
+et Connect - NHS.net Connect Support<https://support.nhs.net/article-catego=
+ries/joining-nhsmail/>
+
+
+--_000_78c908ec242c46bf970f1df512d85555LO4P265MB5995GBRP265PRO_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0)">
+Thank you for your email. &nbsp;Please note that this email address is only=
+ monitored during normal working hours and at set points during the day. &n=
+bsp;During normal office hours you can ring gtd healthcare head office on 0=
+161 337 2254.
+<div><br>
+</div>
+Please note If you are emailing because you or someone you know is feeling =
+unwell, please ring either your own GP or dial 111 as we are not able to de=
+al with medical queries via email.<br>
+</div>
+<br>
+<font face=3D"Courier New" color=3D"Black" size=3D"2"><br>
+***************************************************************************=
+*********** ******************************<br>
+<br>
+This message may contain confidential information. If you are not the inten=
+ded recipient please:<br>
+i) inform the sender that you have received the message in error before del=
+eting it; and
+<br>
+ii) do not disclose, copy or distribute information in this e-mail or take =
+any action in relation to its content (to do so is strictly prohibited and =
+may be unlawful).
+<br>
+Thank you for your co-operation.<br>
+<br>
+NHS.net Connect is the secure email, collaboration and directory service av=
+ailable for all NHS staff in England. NHS.net Connect is approved for excha=
+nging patient data and other sensitive information with NHS.net Connect and=
+ other accredited email services.<br>
+<br>
+For more information and to find out how you can switch visit <a href=3D"ht=
+tps://support.nhs.net/article-categories/joining-nhsmail/">
+Joining NHS.net Connect &#8211; NHS.net Connect Support</a><br>
+<br>
+</font>
+</body>
+</html>
+
+--_000_78c908ec242c46bf970f1df512d85555LO4P265MB5995GBRP265PRO_--

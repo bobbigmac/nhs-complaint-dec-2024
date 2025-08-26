@@ -1,0 +1,249 @@
+Return-Path: <admin@bobbigmac.com>
+Authentication-Results:  kundenserver.de; dkim=pass header.i=admin@bobbigmac.com
+Received: from mout.kundenserver.de ([212.227.126.133]) by mx.kundenserver.de
+ (mxeue102 [217.72.192.67]) with ESMTPS (Nemesis) id 1MUmHP-1uzfOw2y6D-00LOsA
+ for <admin@bobbigmac.com>; Tue, 26 Aug 2025 02:09:43 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=bobbigmac.com;
+	s=s1-ionos; t=1756166983; x=1756771783; i=admin@bobbigmac.com;
+	bh=9J9yD8kObxQDzPmO1ADCVd+xFnvq8OFxZGD3PUz9zHw=;
+	h=X-UI-Sender-Class:Date:From:To:Cc:Message-ID:Subject:
+	 MIME-Version:Content-Type:Content-Transfer-Encoding:cc:
+	 content-transfer-encoding:content-type:date:from:message-id:
+	 mime-version:reply-to:subject:to;
+	b=nUHLOkXzJHQqXwhvz+49xUNL1+j1E53PaetPmvM88X76Z/EhB5vySjCDr3E8xPrC
+	 AFIW4eCcGAeZwQAiPE/tCFAC0QSPrskGk6GstOB1ZPHhhvgbj5NxBqQLVQ8MiHlvd
+	 4nbcB/kK1Cli9NUX6GwAD8HhD90wg+hzGvFV4EzhqsY5wmp1/5y9KrHjfK5tSLPsc
+	 UULIG1V2t2UGCvmWAj4A1Bvqw0NnpS2xzKao+xq8UMOl92vdI0wz3mYE0+I+cEUaf
+	 LLSXIeFCAN7NFrEN8DXca73wyet34k5u1E/FoXLpRLJK7B8mIByfAgvRx2muX4wvd
+	 X8ilAqncy9Gd9XoxvQ==
+X-UI-Sender-Class: 55c96926-9e95-11ee-ae09-1f7a4046a0f6
+Received: from
+ open-xchange-core-mw-default-4.open-xchange-core-mw-hazelcast-headless.open-xchange.svc.cluster.local
+ ([10.73.155.26]) by mrelayeu.kundenserver.de (mreue010 [172.19.35.3]) with
+ ESMTPSA (Nemesis) id 1MmDVA-1u8Woh1gvo-00f4sz; Tue, 26 Aug 2025 02:09:43
+ +0200
+Date: Tue, 26 Aug 2025 01:09:42 +0100 (BST)
+From: "Robert (Bob) Davies" <admin@bobbigmac.com>
+To: "gtd.feedback@nhs.net" <gtd.feedback@nhs.net>
+Cc: "communications.gtd@nhs.net" <communications.gtd@nhs.net>,
+	"gtd.corporateaffairs@nhs.net" <gtd.corporateaffairs@nhs.net>,
+	"admin@bobbigmac.com" <admin@bobbigmac.com>
+Message-ID: <781589698.105798.1756166983060@email.ionos.co.uk>
+Subject: Request for information: GP Practice Management (PPG background
+ research)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Priority: 3
+Importance: Normal
+X-Mailer: Open-Xchange Mailer v8.38.83
+X-Originating-Client: open-xchange-appsuite
+X-Provags-ID: V03:K1:5F1KFYu++cmejjkQHQVtEodp3nLgBKSnT00t/inF6wAUTphzt0P
+ L2VZ8p0rDHNgCKCMSuKJEAMs1aGfoxdZQXWWvIGSq7OQfYadxwLfPbrc8NCIUAm19XZBVqS
+ z6mhQTwpKnYVTI3dofCuG2ZBnWByLmdkrhA5NezcnNzwi0c9aKuwiTlvdSiVYxyY4FJrFIH
+ xIjzdlsOgNywMsn7ZRnbg==
+X-Spam-Flag: NO
+UI-OutboundReport: notjunk:1;M01:P0:ptYqXNh8nKg=;8XIhQNL2maZmxNKa1sIiI18xG6m
+ 2HRvWzh6HciqZCbvWLycbBOaofNKczXLFJEtXbm5ng61Dfh31sTcQkS8UI4ePiTod3e0CbwTD
+ cbVA4lVYLdTm+pqFIE1eZ50+ypfLjKTrFGOFgC1q+ZRcoSzAA9R4n2eoF7GOnINyjS6qvQBnS
+ K/cR7ox1SEC2+a2OgNffzpLMQ8YDIrUjjtgs3yqXqsr5PDo411NTp38fJ5eol5fE8jVEfGiMq
+ bGPRYb1iOwlqX89ixcd3KMsp5gDT6SVQ3+S1oFWLrqNGl6zgE9tszdQCc4AJsjSn2tEBgV4fD
+ 56q2+yAEpMHp5hhZZw/ZrAFPN46z3OZubp5ytJRtsZPeHLBWEerhH0xjagzmxXV6Yt915f0/7
+ /vnxfS1jD3dAUXVsaCl4kspS83vUQ/neZu6dZJqtzZ9KQHdrJoD7ULfbTijWqXZjjZSuHA/g1
+ HNtKAc2xeAtGamFRZqCR3ezQKrTrDH+v+jsL+rOQCCefq5GK4E7jdb5AYxFl2L/4C311+b86K
+ B385gD5YieK7SFTXY3HXWPYUJYlx5WjaeNbOKY16sY+deDhcQ3rVVxK5NKfmE6apS4XlcLAlI
+ +OF4ZiarT4l+hAhMGV8QZYSPluwp8b4t3WoL5qsHvdmtWygjWtwWi38sGnH7rAo1I8iFCm/Q4
+ m1ie0DGl21Er+cVpQYrxGgV+abOt/VNLGJQStY2XkKs/RmJtL/SZj3bz8Y8+VsuiiOkYBznxO
+ fOZuS4V5xEba9ScRAuEFBXlruOJS3O5qrxuWVU2qCcDoT0BZ70WAGKFXqSDsHckRhoChKZtqq
+ j1lczXROQtvXlC8/bFaWC2vG6CnhbmqjdRs1CgrWcVUlH7AqRYNF+IwENqk3k/YAu+hTEFxAj
+ qwii9UmUq6Mi2zFT6O961E77MuhNe5BJo/dNu5X6cwrBPJTAi+2hwv04Itq35BUJ396VKhQH5
+ VE/3JwbkadbGe9Lf0QVt2tAZdLKKW/LqL2kZkaiL9rIlScaneWflVIFvo3jD0xwLW/XgZvLnr
+ P/jiywXtZdsbOqW0xp7EpiX6mJlmn005eJCEAmeZeDrOZBAW5mRxNA7bi9cE+oG9H+ysAMdf0
+ 3MLUM1CaLQg1Mp9nFyCkcsGepvu2nSshacd2di215mUzS2pD7MUDy/TMJlkGTh/Ty4bStycgH
+ 9e0FGYneX76VOGOkTpTsywFt3XzTJVN1hBVvR35FtNytFnTpjmDFdzuZuuOK7U3NTvdqHF7n7
+ A6jztMzUxe3W82a1HiQ/FThf/3F7cm/npaebCOR4xVUtjgOdc0xz7cs1N20jlEWAf/uasogaN
+ nTvZetkf0E7h/tssIiBN04ZRJd9RCtm7IGrTR/hhbHNhQySkeL01OJnKXfsFZyVRhQPublFlj
+ fOfOD0/PZnSsWYGkPb4Lt7/eSJrmH/IYtjjKoYhg1agXB56mLum1m4V8/exauNfVgWJ5ZeMhB
+ GDkQT616mCwGyBr8f7rg2vyXHKhFdQkWoPdAF7C9XO4Ha4ZGVzvWbShH0DqmCWj+nvUbrdXbw
+ p9C19/v5TcgZxB1/GYPIZ2RHrM37vT60LnQgxTWGdLsOsnHSvmrkA3C/BGD1xxC9X/2pOahao
+ 07Oqv0sM/g5b6l9A/mUb0n/yedYCHI0
+Envelope-To: <admin@bobbigmac.com>
+X-Spam-Flag: NO
+UI-InboundReport: notjunk:1;M01:P0:iRKigoMVa3Q=;hVtHEJbDboiUeRyGyEiY6FTmxX/6
+ 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
+
+<!doctype html>
+<html>
+ <head>
+  <meta charset=3D"UTF-8">
+ </head>
+ <body>
+  <div class=3D"default-style">
+   <div>
+    <div>
+     Hello,
+    </div>
+    <br>
+    <div>
+     As a patient and member of the PPG at New Bank Health Centre, I=E2=80=
+=99m preparing for our next meeting on September 10th and would like to cla=
+rify some background information about GTD Healthcare=E2=80=99s management =
+of GP practices. Could you please confirm the following:
+    </div>
+    <br>
+    <div>
+     1. Management Tenure
+    </div>
+    <div>
+     &nbsp; &nbsp;=E2=80=93 The dates (year and month, if available) when G=
+TD Healthcare formally assumed responsibility for each of your GP practices=
+ (e.g. New Bank Health Centre transferred April 2025).
+    </div>
+    <br>
+    <div>
+     2. Continuity of Staff
+    </div>
+    <div>
+     &nbsp; &nbsp;=E2=80=93 At each practice handover, whether core adminis=
+trative/reception staff remained in post, or if significant staffing change=
+s were made at the time.
+    </div>
+    <br>
+    <div>
+     3. Patient Feedback Handling
+    </div>
+    <div>
+     &nbsp; &nbsp;=E2=80=93 Whether GTD has an internal process for collect=
+ing and reviewing online patient feedback (e.g. Google reviews, NHS website=
+ feedback), and if/how this is used in practice improvement.
+    </div>
+    <br>
+    <div>
+     4. Practice Performance Transparency
+    </div>
+    <div>
+     &nbsp; &nbsp;=E2=80=93 Whether GTD routinely shares patient satisfacti=
+on data (beyond CQC reports) with patients or the public, and if so where t=
+his can be accessed.&nbsp;
+    </div>
+    <div>
+     &nbsp; &nbsp;=E2=80=93 I found your one-page flyer titled =E2=80=9CYou=
+ said, we did (May 19)=E2=80=9D (link in footnotes). It appears to date fro=
+m before 2022 at least (according to the PDF metadata), but it wasn=E2=80=
+=99t explicitly dated, and I haven=E2=80=99t been able to find any more rec=
+ent reports in this style. Could you confirm whether updated versions exist=
+, and the timescale that content related to?
+    </div>
+    <br>
+    <div>
+     5. Patient Access Standards
+    </div>
+    <div>
+     &nbsp; &nbsp;=E2=80=93 Does GTD have a standard policy or minimum expe=
+ctation for patient access (e.g. typical wait time targets for routine or u=
+rgent appointments), and is this applied across all your GP practices?
+    </div>
+    <br>
+    <div>
+     A short reply covering the above points would be very helpful. It does=
+n=E2=80=99t need to be exhaustive if some information is sensitive or hard =
+to collate; I=E2=80=99m simply hoping to fill in some background gaps ahead=
+ of the PPG meeting.
+    </div>
+    <br>
+    <div>
+     Thank you for your time.
+    </div>
+    <br>
+    <div>
+     Kind regards,
+    </div>
+    <div>
+     Robert (Bob) Davies
+    </div>
+    <div>
+     Patient and member of PPG at New Bank Health Centre
+    </div>
+    <br>
+    <div>
+     Footnotes
+    </div>
+    <div>
+     Flyer link for reference: https://www.gtdhealthcare.co.uk/application/=
+files/5517/4107/9706/You_said_we_did_poster_-_May_19.pdf
+    </div>
+    <br>
+    <div>
+     * Sent to:
+    </div>
+    <div>
+     &nbsp; to: [gtd.feedback@nhs.net](mailto:gtd.feedback@nhs.net) (listed=
+ as general enquiries)
+    </div>
+    <div>
+     &nbsp; cc: [communications.gtd@nhs.net](mailto:communications.gtd@nhs.=
+net) (fallback)
+    </div>
+    <div>
+     &nbsp; cc: [gtd.corporateaffairs@nhs.net](mailto:gtd.corporateaffairs@=
+nhs.net) (corporate comms)
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
