@@ -45,7 +45,7 @@ A small addition was noticed to the appointment form, it otherwise still has all
 
 &nbsp;
 
-- How many failed calls are doctors making each day? How much time is being wasted on missed calls vs how much is being saved by this approach? How much patient time is being wasted filling in forms, and are repeated form entries leaving doctors with insufficient information to act directly?
+- How many failed calls are doctors making each day? How much time is being wasted on missed calls vs how much is being saved by this approach? How much patient time is being wasted filling in forms, and are repeated form entries with reduced information leaving doctors with insufficient information to act directly?
   - Is this model effective? How do you know?
 
 &nbsp;
