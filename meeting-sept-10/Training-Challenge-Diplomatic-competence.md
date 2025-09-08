@@ -1,5 +1,5 @@
 
-## A Diplomatic Training Challenge: _For Management_
+## A Diplomatic Training Challenge
 
 *(Prepared for meeting on 10 September)* - Robert (Bob) Davies: admin@bobbigmac.com
 
@@ -15,7 +15,7 @@ By the end of this module, managers will be able to:
 - Use plain, accurate language that supports change.”
 
 **Background**
-Recent patient participation meetings have highlighted concerns about staff *incompetence*. When summarised diplomatically as *“training challenges”*, these issues risk being misrepresented and therefore mis-solved.
+A recent patient participation meeting and many (many) practice reviews have highlighted concerns about staff *incompetence*. When summarised diplomatically as *“training challenges”*, these issues risk being misrepresented and therefore mis-solved.
 
 **Case Study**
 
