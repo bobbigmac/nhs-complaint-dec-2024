@@ -80,7 +80,9 @@ This is an important detail that might affect problem-solving approach at the pr
 - **Medication ordering problems** (Joyce Louis) – new NHS app process caused dangerous delays; blood test also cancelled.  
 - **Severe reception staff mistreatment** (Javad Moazami) – ignored, mocked, shouted at, kicked out while in mental health crisis, left in tears, later struck off.  
 - **General dysfunction** (Klaudia Kania) – called “The Worst GP in Manchester”; rude staff, broken systems, impossible appointment booking, calls for overhaul.  
-- **Lack of compassion** (Maha Elmi, a month ago) – “No time for human been… very disappointed.” 
+- **Lack of compassion** (Maha Elmi, a month ago) – “No time for human been… very disappointed.”
+
+This summary of reviews doesn't even come close to expressing the treatment some patients have been subjected to. See below for details.
 
 ## F. Review Trends (overall)
 
