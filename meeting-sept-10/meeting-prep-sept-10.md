@@ -86,7 +86,7 @@ This is an important detail that might affect problem-solving approach at the pr
 
 - All practices operated by GTD Healthcare (except The Smithy Surgery Hyde at 3.9 stars) **barely rate above 2 stars on average**, with some **below 2 stars**.  
 - I don’t yet have a full set of reviews gathered, as I’m waiting on confirmation of takeover dates. 
-- I will only collate reviews for the correct periods once I have those dates.  
+- I will collate reviews for the correct periods once I have those dates, should they arrive on a reasonable timescale.  
 - However, this **general trend is important to acknowledge** and should be raised in the meeting. 
 - Key question: Does GTD **accept that these low ratings are representative**, and what steps are they taking to improve? 
 
