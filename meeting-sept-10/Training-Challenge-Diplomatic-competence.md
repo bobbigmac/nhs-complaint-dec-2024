@@ -3,6 +3,8 @@
 
 From Patient Complaints to Real Fixes: A Short Worksheet for Managers. This worksheet might stop us reaching for “more training” every time something goes wrong. Think of it as a quick check under the bonnet: what’s actually broken, and what’s just rattling because it’s loose?
 
+Summary (one line): A prompt-led tool to distinguish training needs from system problems and pick measurable actions.
+
 **Learning Objective**
 By the end of this module, managers will be able to:
 
