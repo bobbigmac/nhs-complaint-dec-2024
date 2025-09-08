@@ -39,16 +39,28 @@ A small addition was noticed to the appointment form, it otherwise still has all
 
 - What system/vendor and policy currently drive request deletion after missed calls?
 
+&nbsp;
+
 - Can requests stay open with reschedule options instead of deletion?
 
-- How many failed calls are doctors making each day? How much time is being wasted on missed calls vs how much is being saved by this approach? How much patient time is being wasted filling in forms, and are repeated form entries leaving doctors with insufficient information to act directly? 
-   - Is this model effective? How do you know?
+&nbsp;
+
+- How many failed calls are doctors making each day? How much time is being wasted on missed calls vs how much is being saved by this approach? How much patient time is being wasted filling in forms, and are repeated form entries leaving doctors with insufficient information to act directly?
+  - Is this model effective? How do you know?
+
+&nbsp;
 
 - What alternative access exists for patients with only phone or only email (or neither)?
 
+&nbsp;
+
 - The new NHS 10 Year Plan stresses "Analogue to Digital", but you don't seem to be able to get either right. What is the plan to adopt or integrate with better systems?
 
+&nbsp;
+
 - Would you consider trialling **old-school** "walk-in and make a scheduled appointment to come in and see a doctor" that doesn't require any tech whatsoever, even if it's just for one day a week and mainly focused on running triage in short slots, that can be followed-up on later?
+
+&nbsp;
 
 ## D. Training Challenge
 
