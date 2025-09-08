@@ -1,10 +1,11 @@
-# New Bank Health Centre – PPG Meeting Notes - Robert (Bob) Davies: admin@bobbigmac.com
-*(Prepared for meeting on 10 September)*  
+# New Bank Health Centre – PPG Meeting Notes
+*(Prepared for meeting on 10 September)* - Robert (Bob) Davies: admin@bobbigmac.com
+
 
 ---
 
 ## A. Background Information Request (sent 26 August)   
-**Email to GTD Healthcare – awaiting reply**  
+**I Emailed GTD Healthcare – awaiting reply**  
 - **Management Tenure**: Requested dates when GTD formally assumed responsibility for each practice.  
 - **Continuity of Staff**: Asked whether admin/reception staff were retained or replaced at handover.  
 - **Patient Feedback Handling**: Queried whether GTD reviews online patient feedback (Google, NHS website) and uses it for improvement.  
@@ -13,19 +14,22 @@
 
 ---
 
-## B. Appointment System Issues  
+## B. Appointment System Issues
+
+A small addition was noticed to the appointment form, it otherwise still has all its usual problems.
 
 1. **Conflicting information on “same day” vs “within 1 working day”**  
    - Front page says: *“We offer a same day appointment service …”*  
    - Next page says: *“We will respond within 1 working day during opening times.”*  
    - Next page also says: *“Complete this form before 4pm … It’s ok to complete this form the night before.”*  
-   - **Unclear**: Is it same day or next day? Do you fill in the form the day before, by 4pm, or before 8am (as some older reviews suggest)? Why is there a timelineness component to this at all? Should be simple: 
+   - **Unclear**: Is it same day or next day? Do you fill in the form the day before, by 4pm, or before 8am or by a 'designated time' (as some reviews suggest)? Why is there a timelineness component to this at all? Should be simple: 
     - Submit request (necessary for 'triage' in supposed 'efficiency' push)
     - Get response (text if phone, email if no phone) offering (or even just informing) a date/time, and appointment type (call, video, in-person)
+    - Accept appointment, occurs at agreed time by arranged method.
 
 2. **Appointment request form design**  
    - Fields are repetitive and poorly designed, leading to duplication or lost info:  
-     - “About the problem” (textarea)  
+     - “About the problem” (textarea) 
      - “How long has this been a problem?” (textbox)  
      - “Ideas about the cause” (textarea)  
      - “What are the concerns?” (textarea)  
@@ -38,7 +42,7 @@
 
 ---
 
-## C. Review Evidence (6 Aug – 10 Sept)   
+## C. Recent Reviews (6 Aug – 10 Sept)   
 
 - **Blood test cancellations** (Z) – appointment cancelled *four times*, told to go to MRI, receptionist hung up.  
 - **Patient struck off** (Kenny J) – removed from practice after moving 400m, unable to get scan results.  
@@ -49,8 +53,6 @@
 - **Lack of compassion** (Maha Elmi, a month ago) – “No time for human been… very disappointed.” 
 
 ---
-
-
 
 ## D. Review Trends (overall)  
 
