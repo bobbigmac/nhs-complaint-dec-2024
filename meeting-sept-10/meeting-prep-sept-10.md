@@ -2,7 +2,7 @@
 *(Prepared for meeting on 10 September)* - Robert (Bob) Davies: admin@bobbigmac.com
 
 ## A. Background Information Request (sent 26 August)   
-**I Emailed GTD Healthcare – awaiting reply**  
+**I Emailed GTD Healthcare – useful reply received Sept 10th AM, yet to be integrated**  
 - **Management Tenure**: Requested dates when GTD formally assumed responsibility for each practice.  
 - **Continuity of Staff**: Asked whether admin/reception staff were retained or replaced at handover.  
 - **Patient Feedback Handling**: Queried whether GTD reviews online patient feedback (Google, NHS website) and uses it for improvement.  

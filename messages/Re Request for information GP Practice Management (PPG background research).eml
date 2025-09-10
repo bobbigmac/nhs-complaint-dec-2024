@@ -1,0 +1,1374 @@
+X-Account-Key: account2
+X-UIDL: 0Lbqkj-1uEvsm2d5W-0159mB
+X-Mozilla-Status: 0000
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Return-Path: <warrentuite@nhs.net>
+Authentication-Results:  kundenserver.de; dkim=pass header.i=@nhs.net
+Received: from GBR01-LO4-obe.outbound.protection.outlook.com ([40.107.122.63])
+ by mx.kundenserver.de (mxeue101 [217.72.192.67]) with ESMTPS (Nemesis) id
+ 1M7u1E-1v1FDU1gEE-0094pS for <admin@bobbigmac.com>; Wed, 10 Sep 2025 11:29:30
+ +0200
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=T/C1ELS26r6h9qO23FUv9C5dC7DUjB0+5zZlMlykEAv104QIKPAoXkprdiJWt+utwcrYKzLwIC3VHJneAbJu08HJZiQ4YCNw3cK5mmoWPbbiSC9ZEAuJLEEr9qLBTAl716ENzWLWjb/88Ay+U5syUxVj5Yua2PJ31Wb84exxuorI97CO+D/h41KPGnQvHfDOpHCEwm+SSYWh4FnAtJ07KqsVR7Jb29Yejo39ez9sa98UuzLM0aqfB12LPgS/oHFEWnRi1llWsyvWargOtKgkkGGFz7PCFZzNdRQBfKaTss8dn4fZs+G2/KpcGWBxE0wGa7mCOSheTPZXldVogBD8ag==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=YsoLo8CHi6CngCVGeO7515p7G7HQAhc4f3vmswrvJc4=;
+ b=wNtDN3RHEppDl6byiWatLz4XlymCbRx+ZIgsZqa305ceJMZUgz+siXOu4BfsSGu7vtSsJBD7XivAoop1eOGXTO6hb0/OMbH5B9jfa/v6aMJKQn6oXT3ozYo5bOuSuMZjtJELL3WmUdoSS881HZ3tojrFNSAy+hizQm1rmUk9KiHpwLvUS+SMYGMu8bY1dyGEdvM3JDWIzK2BIoX8ZhoLG+1QHQsMKJv39u7ki1OkSH8hlQPHRDSItJuNGW0jQpugasYE+CDsnMHvlqtNDzBfFCaArh11fqoRxuGym0wj6hkSTJLm3gbXJcMhfbY7UFiQNJ7S4kss6uIZx2QMHMiTAA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=nhs.net; dmarc=pass action=none header.from=nhs.net; dkim=pass
+ header.d=nhs.net; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nhs.net; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=YsoLo8CHi6CngCVGeO7515p7G7HQAhc4f3vmswrvJc4=;
+ b=QGheiplG5Dh2ZqeJMPF2PGUnpNbqlN04Zmqb0b922qWx8iZ4adT/W2a5e8VW6HGU5NgxXbq6ymSXR2CAUZfGQCMIYAmd7L60u28hjT5lHbYfU/qko4oK5gHWIXV2z0jAnx3NgGJq3O9IEySUFuSL1TfTWHu+vostl+s6kEQQHfjKdr3LItzTaA0OgpXEtH20SLwpyumvMfJvJFUUbPc5r9QJ24tu/QXXAhY1NnNfcmIZNgTzEfgM0a5ZdELSuvSu4va4dlPgTXdjpVjJc9xTf/RLQUJmbQ6E/Wfx8+BaOFKC5536KxrMhYTvSzGnAfVHesr7A/yzahuQRWRuH0cUCg==
+Received: from LO2P265MB4629.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:225::10)
+ by CWXP265MB2950.GBRP265.PROD.OUTLOOK.COM (2603:10a6:400:c2::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9094.22; Wed, 10 Sep
+ 2025 09:29:26 +0000
+Received: from LO2P265MB4629.GBRP265.PROD.OUTLOOK.COM
+ ([fe80::96bb:9074:d861:1225]) by LO2P265MB4629.GBRP265.PROD.OUTLOOK.COM
+ ([fe80::96bb:9074:d861:1225%5]) with mapi id 15.20.9094.021; Wed, 10 Sep 2025
+ 09:29:26 +0000
+From: "TUITE, Warren (GTD HEALTHCARE - 8G750)" <warrentuite@nhs.net>
+To: "admin@bobbigmac.com" <admin@bobbigmac.com>
+CC: "SHELMERDINE, Cate (GTD HEALTHCARE - 8G750)" <cate.shelmerdine@nhs.net>,
+	"SEWARDS, Dawn (GTD HEALTHCARE - 8G750)" <dawn.sewards@nhs.net>, "AMIN,
+ Shahzad (NEW BANK HEALTH)" <shahzadamin@nhs.net>, "SCHOFIELD, Katie (GTD
+ HEALTHCARE - 8G750)" <katie.schofield1@nhs.net>
+Subject: Re: Request for information: GP Practice Management (PPG background
+ research)
+Thread-Topic: Request for information: GP Practice Management (PPG background
+ research)
+Thread-Index: AQHcFh27nHuSQJof+kWB/i7MqgQUMLR0ifmTgAAZuUCAACh8tIAXcKan
+Date: Wed, 10 Sep 2025 09:29:25 +0000
+Message-ID:
+ <LO2P265MB46299351DC266584F39814A6BA0EA@LO2P265MB4629.GBRP265.PROD.OUTLOOK.COM>
+References: <781589698.105798.1756166983060@email.ionos.co.uk>
+ <LO4P265MB5995EDACE97571C3BFAFAFDC8E39A@LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM>
+ <CWLP265MB329890E93F5FF9FA27F1549F9139A@CWLP265MB3298.GBRP265.PROD.OUTLOOK.COM>
+ <LO4P265MB5995D3A11EB5811DBDD7AA778E39A@LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM>
+In-Reply-To:
+ <LO4P265MB5995D3A11EB5811DBDD7AA778E39A@LO4P265MB5995.GBRP265.PROD.OUTLOOK.COM>
+Accept-Language: en-GB, en-US
+Content-Language: en-GB
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: LO2P265MB4629:EE_|CWXP265MB2950:EE_
+x-ms-office365-filtering-correlation-id: c8769ad6-98ed-4651-8c16-08ddf04c88c8
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|376014|19092799006|366016|1800799024|38070700021|8096899003|4053099003|13003099007;
+x-microsoft-antispam-message-info:
+ =?Windows-1252?Q?e2zT4Wwg6hGpuTjZmimivS6rnk8DFzOPbRmx1TurDv4dXm3WhnZnOU7a?=
+ =?Windows-1252?Q?0X8Asj1FiPcFrWFSlZLSxrF7UHQdICfQPSJUCqy9JYu5TXGcTR3bc2kP?=
+ =?Windows-1252?Q?XHJmG3KwU4MEdYZEa5skV2qu9xaFzij3NYn3IDflWBFeaMBjDNRP9qL2?=
+ =?Windows-1252?Q?SoeKmSzuyjCLY9rGVYS5AUnRjTEcgQB8qDOUtjwvfubjhIv/aX96Tpks?=
+ =?Windows-1252?Q?hkakLmMHhgDgZLI47C8a1F0NEM1hvxc9xy+yz2e6/oz6qEH0x1AX+yDY?=
+ =?Windows-1252?Q?UibeiB/9RGXekeaw/LNMEN+BVrZ/ArcIXlvVyDZjsWtxPfZOBUspdkxI?=
+ =?Windows-1252?Q?O5I5xbE/B/B7M0E2X3iL7BP8423vqmqLSR0HAH1kYtblucm9jcUSSNr/?=
+ =?Windows-1252?Q?YZkox58M8FKgBBL10OZioYKgqeqvEogj1Yyo8xf46PCB9SDRNDyw8+Zk?=
+ =?Windows-1252?Q?SVbIY5nXGAkOy2alBe+hVvoGNt18hzFtn7RerX7e1t4ZkwV10+EVDMxp?=
+ =?Windows-1252?Q?vU6fOxwbbYCwmnXzhviBUqd3p3tDqc9uTjdFG8LU4Pp1J7vt4PIrlKWm?=
+ =?Windows-1252?Q?3C7ojr9Ocfp+aaR+8NAqzcjL6N6mNXSVTEvxqfLHoymC6gFOpO/HcH6N?=
+ =?Windows-1252?Q?6radBabIl0jPogcPruD7eOvM2l43w5oRh1XxLPzHLlFX+y/z0Tt1Lhgg?=
+ =?Windows-1252?Q?KRpP/BoXruO/c2AXS5Z+CcrDHPn2lIrdFoVZP3XKdHN41xwv/d8IAUvW?=
+ =?Windows-1252?Q?TGSGZyNb0dxQoNMmsY1VwYAF0gMSs6xdtkyekzJObfQZNat0/mAF5u3Z?=
+ =?Windows-1252?Q?Tvjk0egHnvBoW9/fbyR1uNDR2s8z0KZaFkNtmvp4g2O0IYVkUzvsdLna?=
+ =?Windows-1252?Q?CTS7Rr8PH2FPI1NhfSzuiO6PXMxhqR2qQ5ne+iQWPmNq58LPQgF4csy8?=
+ =?Windows-1252?Q?yqLuq3m5IE7IxLdScxqTbK39zJSJ9KCV1jBbL2/DrypfULWmPGMYDtKR?=
+ =?Windows-1252?Q?SrGwgjYgS8KKkvEUrjTOdym7dlVjgP1seW0C6Im+1m3M2iIqN3S00jam?=
+ =?Windows-1252?Q?EYd/yEOvWCOAOzu21uOyf/qIu4qExJe6R5oJ/87+TIj3GSADg9f25UsR?=
+ =?Windows-1252?Q?jTkIlaKN3+ZQ94vsTYgoaN8WsIB2a4CGPD8dLfhq2yedeQUeDdr6FVOn?=
+ =?Windows-1252?Q?+p49cbGl/TLlH4y4GGq5uXnBE4h3MWmiUgpt4J3L0am23s1nJu62TFLG?=
+ =?Windows-1252?Q?hUFQe+kXslz1JHVgvcXrU0dAsY7DB4JlC/E1/SQLNwdKKktwMQy76QOI?=
+ =?Windows-1252?Q?rGeyOSKIEdDi1fq+UQNl9DtK3EGHgOem4jFvrVmuPVnKXlldRscIXmZw?=
+ =?Windows-1252?Q?bnUwk2C2TNFFrJ/9cCr8j/QzTGOsoS99Odulzo24Vz6yfeIchOqc8kSW?=
+ =?Windows-1252?Q?3JiNd3vnlicZ0dzci5shA8SIRRGLZMSoK0gXAsa5TXiu+jp4R6eFo/Y/?=
+ =?Windows-1252?Q?3IS9KKFkvV5sj/WOB7J9YADgss+vGEomxYXsEVE65JJvVjnnvDE=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:LO2P265MB4629.GBRP265.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(376014)(19092799006)(366016)(1800799024)(38070700021)(8096899003)(4053099003)(13003099007);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?ES5Hf7YxieXVvi4EFGUaD9OpYvtUgb9WCc2SBNRFTx8rR7OtdyiRW55D?=
+ =?Windows-1252?Q?SG1w/9DWCFwqPfgSDu6r6H6MyJOtQf7vHuNH77QeEj0Z5q27Ieu+fyx6?=
+ =?Windows-1252?Q?Dk3DvTX9u+4IU4uYE7giiBgv8O0T08GfRffJDUPOiq23JO41pdChyyiM?=
+ =?Windows-1252?Q?zHw6CFpq0Uyp9oi3l15lIRXRTTBWsmW+WWtqzWlBvb0+62cGur31Tdyf?=
+ =?Windows-1252?Q?9s7Vj96unlVkPk64GC8RqWA/TsgDefJM3t73n5aEcSFlbKsx34gPEdip?=
+ =?Windows-1252?Q?3vZE8Ht23Xwdv7JNOn8/2ssDxDD4mhwvRJC7BXeYvLGmeYpk0WeuEj5N?=
+ =?Windows-1252?Q?1pM581apHRqrYX0t2jTLljE2bXsgZ3O9jNJVmbNnGgLQbv72RKIB9HE1?=
+ =?Windows-1252?Q?AaGkvIf27kPtSikLcjsUk098dZfZOESD3Xb32+XpsarcTW3YH4/gRDwr?=
+ =?Windows-1252?Q?hhl4z6trBIn2La2OQ9w/WIGOOpd1r12piCDfc9cbqkSFimJaFcSU3MVc?=
+ =?Windows-1252?Q?ZLDWqjG5c/vEK/iZ+2eOqgB04rYnPJce2+CX9uHwFzOhjh2qPa/M8ITG?=
+ =?Windows-1252?Q?lkHz+nZrqt9rYxB7CZ6fI0qDoF5yTgiYo374XEd5DEnlruTEahzHnvBo?=
+ =?Windows-1252?Q?O/C7r0/sTSjmPF9o6haRy8Zh02kVNx5VAJH5uEB9WJ9uO51KIopYIoEV?=
+ =?Windows-1252?Q?nJ2AOE+m7hPmf95Tcm2NuYf/frSrX3TQetBbLfaca5F4ztIHjnPSLNi2?=
+ =?Windows-1252?Q?wAAQ9QVs2UcfvcKrMhvml3BDo0pRn/QcjJBkfiyKArAr9Bxg/WAg7+11?=
+ =?Windows-1252?Q?1X7Y6oij+jlUy42JjfsS0WGBFh2XNluDUpCXMypnVtH90bxjON6Ta0Kr?=
+ =?Windows-1252?Q?DeeRMRsTinkHXo7kHfU+pAIbg2sJJRIv8jg/WA3nLDMbnvBX7UB44pVo?=
+ =?Windows-1252?Q?VGZGLzCX9zecdnJ5ixiot8DiQLarzdlskbwJedN8jbvTfLPWhuvQqKIp?=
+ =?Windows-1252?Q?QvNCNbU4bn/HARuuNhGwgYwx5aV8/vj5YN2pG1TR/EQKmNLLNtTSxoq1?=
+ =?Windows-1252?Q?sPe5g6TMtSNO/jV0Ga6BqqfYTQsZGw/WnOcKVYP3xpK0p8xahxJQa1kz?=
+ =?Windows-1252?Q?VtfcRahu1qIKxBYxkS+EHd72VWkKJCCE9LR05jG4GvnBQKemskFxrxBV?=
+ =?Windows-1252?Q?MxXYubHh5/u6o7UVG1o27bNovfp8EW89LWR4WqTo4VVnocyRSyK3yr6J?=
+ =?Windows-1252?Q?rCPCMSiG5a9CLeuF7HwCwvG8TyjqbTM6qAdweuACKFu/q6RPN80yXpMo?=
+ =?Windows-1252?Q?uWBvTLeBikYsZnSmEFhbYkl1nWUbLeor8BxCM3TOGQY9hkkmMTPGjcVY?=
+ =?Windows-1252?Q?ggYuLY+FG/vRk9NTCHDfBz2gp2F1kBmIsEYI3e73gWryp8KhX1ASKfff?=
+ =?Windows-1252?Q?7mwuSOrX3uosihmIpgg0kFU7i3tYyC6pmlGuCAPch/gbpWdz+ltzEr2J?=
+ =?Windows-1252?Q?iV8BNP6Y0nv8h7fwNYGOI6Z9KOEunLd7pVAWSgIwfR5AKFi9iJEtDP6i?=
+ =?Windows-1252?Q?ZRiqMbhGKoS7HbuyOKqXxsULuicHOShFLQxYPgGzDKmPW7aQ+v7VflNf?=
+ =?Windows-1252?Q?HCfcwrK/WOe6QcI3NuK8FCZoxCvK6JuKHJjX+GMViLLFjNytSxIvj4M5?=
+ =?Windows-1252?Q?4F57JdbYsAQ=3D?=
+Content-Type: multipart/related;
+	boundary="_004_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-OriginatorOrg: nhs.net
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: LO2P265MB4629.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: c8769ad6-98ed-4651-8c16-08ddf04c88c8
+X-MS-Exchange-CrossTenant-originalarrivaltime: 10 Sep 2025 09:29:25.9129
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 37c354b2-85b0-47f5-b222-07b48d774ee3
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: o7iM3MlF3KMyjQgt5W4/OqBJAvCEhqGetoH590YfZ1HWNo9QJAzQ7Io7sZr1VzXhpAHceTYPH3s0Sh9RRXmY6g==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CWXP265MB2950
+Envelope-To: <admin@bobbigmac.com>
+UI-InboundReport: unknown:2;M01:P0:0irUkOOlYKo=;A/FdC/xbUOmY7VYQblYOWrUqrcJ1
+ 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
+
+--_004_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_
+Content-Type: multipart/alternative;
+	boundary="_000_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_"
+
+--_000_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Bob,
+
+
+Thank you for your email and please let me first apologise for the delayed =
+response due to annual leave but i am pleased to see that this was picked u=
+p and acknowledged in my absence.  We are always supportive of requests for=
+ information about our services as we aim to be as transparent as possible =
+with our patients who are key to ensuring we are providing services as effe=
+ctively as possible.
+
+
+
+I have copied and pasted your questions and provided responses below each o=
+f them in green for ease and to ensure that i don't miss anything and i am =
+also planning on attending the PPG meeting this evening in case there are a=
+ny further questions raised by patients which i will do my very best to ans=
+wer.
+
+
+
+1. Management Tenure
+
+   =96 The dates (year and month, if available) when GTD Healthcare formall=
+y assumed responsibility for each of your GP practices (e.g. New Bank Healt=
+h Centre transferred April 2025).
+
+
+
+gtd healthcare has held a primary care portfolio for many years and has gro=
+wn its portfolio via successful contract awards and approaches made by exis=
+ting partnership practices over the years who were keen to work with the or=
+ganisation to transition their practice.  Obviously throughout the decades =
+there has been multiple contract awards and some losses and even some pract=
+ices which were awarded, lost and then gained again via procurement process=
+es so i am unable to detail exact dates and years for all of our services. =
+ However during the recent procurement process by commissioners we retained=
+ Simpson Medical Practice, City Health Centre but lost Droylsden Road Famil=
+y Practice on 1st April and in addition we secured the contract for Charles=
+town Medical Practice and obviously New Bank.  We have also recently transi=
+tioned one of our practices in Derbyshire to a local provider following col=
+laboration over the last 12 months which happened in July this year.  In th=
+e future, 4 of our 12 practices are non time limited meaning that their con=
+tracts are never up for re-tender with the remaining 8 all on time limiting=
+ contracts which expire at different times at which point the commissioner =
+may choose to extend or re-procure.
+
+
+
+2. Continuity of Staff
+
+   =96 At each practice handover, whether core administrative/reception sta=
+ff remained in post, or if significant staffing changes were made at the ti=
+me.
+
+
+
+When a practice undergoes a change in provider, all transferring staff are =
+fully safeguarded under the Transfer of Undertakings (Protection of Employm=
+ent) Regulations (TUPE). Under TUPE, employees retain their existing contra=
+cts, terms, and benefits and the incoming provider is prohibited from rejec=
+ting eligible staff or imposing contract changes without proper consultatio=
+n and agreement.
+
+
+As part of this TUPE, a consultation process was completed by both the prev=
+ious provider (Better Health Manchester) and the new provider (gtd healthca=
+re). This is to ensure that the new provider is aware of all terms and cond=
+itions which legally must be protected following the transfer, and for the =
+staff members to get an insight into who their new employer will be.
+
+Both the incoming and outgoing provider do see significant risk during and =
+up to the date of transition as staff can resign from the service altogethe=
+r or may secure alternative employment within the existing provider up to m=
+idnight on the date of transfer, something which is typically hard to manag=
+e and can leave the service vulnerable. Particularly as the core service ne=
+eds to remain open and accessible regardless which is always something we t=
+ry to factor in with cross cover availability at short notice from our othe=
+r services.
+
+This is one of the reasons why we do not make any changes to staffing clini=
+cal or operational after the transfer of a practice as the team needs time =
+to settle following any changes outside of our control and also, we see the=
+ team as key to helping us develop any changes they feel the practice needs=
+ to improve the service.  On average, if at all, we do not propose or start=
+ discussions with staff around changes to staffing models until at least 6 =
+months into the service being with us unless there is a significant risk.  =
+In the case of New Bank specifically, staffing issues did occur with the pr=
+actice transferring to us without any clinical or operational management st=
+ructure which only became apparent within around 48 hours before the transf=
+er date.
+
+We also became aware that there were some critical elements missing from th=
+e workload expected of the care coordination team which required significan=
+t investment in capacity and training which caused further complications.  =
+However, we were able to mitigate this within 24 hours utilising cross cove=
+r from teams across the organisation including help with referral processin=
+g and on site experienced operational management which have been retained.
+
+Since then, I am pleased to say we have managed to recruit a replacement op=
+erations manager who started with us 2 weeks ago and are currently consider=
+ing applications for an interim practice manager whilst we advertise for a =
+permanent position following an unsuccessful campaign initially.  We were a=
+lso able to bring in a replacement highly experienced medical lead, who I b=
+elieve you have met who has replaced the previous medical lead from day 1 w=
+ho decided to be retained with the outgoing provider.  We also have a new p=
+harmacist and also a new nurse associate which has positively all taken pla=
+ce within the first 5 months which we feel is an achievement as typically r=
+ecruitment for new staff with notice periods included can take on average 3=
+ months.
+
+
+
+
+3. Patient Feedback Handling
+
+   =96 Whether GTD has an internal process for collecting and reviewing onl=
+ine patient feedback (e.g. Google reviews, NHS website feedback), and if/ho=
+w this is used in practice improvement.
+
+
+
+This would fall within the remit of the practice manager at the site along =
+with support from our head of patient engagement and our head of corporate =
+services.  Obviously with gaps in management since transition due to the is=
+sues mentioned above this has limited capacity to be able to do this but mo=
+ving forward, reviews are monitored on a monthly basis to ensure responses =
+and actions/learning identified.  Google reviews are a little tricky to res=
+pond to due to the access requirements and setup for google which we are on=
+ly just managing to access at our other sites.  This method of feedback is =
+only one element which we use to gauge feedback as we also take actions/fee=
+dback from PPG's, complaint themes and trends and family and friends.
+
+
+
+4. Practice Performance Transparency
+
+   =96 Whether GTD routinely shares patient satisfaction data (beyond CQC r=
+eports) with patients or the public, and if so where this can be accessed.
+
+   =96 I found your one-page flyer titled =93You said, we did (May 19)=94 (=
+link in footnotes). It appears to date from before 2022 at least (according=
+ to the PDF metadata), but it wasn=92t explicitly dated, and I haven=92t be=
+en able to find any more recent reports in this style. Could you confirm wh=
+ether updated versions exist, and the timescale that content related to?
+
+
+
+We would typically share the results of any internal patient surveys with P=
+PGs, there is also the GP patient survey which is in the public domain.  We=
+ have also presented 'you said, we did' posters along the lines you have ad=
+vised at the request of patients and this is something we can certainly loo=
+k to do jointly with the PPG.  Newsletters have also been created previousl=
+y which provides updates to patients on what's happening at the practice.  =
+Again we would be keen to work with the PPG on what you feel would benefit =
+patients regarding this.
+
+
+
+5. Patient Access Standards
+
+   =96 Does GTD have a standard policy or minimum expectation for patient a=
+ccess (e.g. typical wait time targets for routine or urgent appointments), =
+and is this applied across all your GP practices?
+
+
+
+We have recently embarked on a transition with all our practices with the e=
+xception of New Bank and Charlestown (due to limiting the amount of changes=
+ staff have to go through following transition) to incorporate the national=
+ mandate around improving access with the modern GP practice model where eq=
+uitable access exists between the telephone, walk in and online consultatio=
+n requests.  Our practices now all operate an online triage model where pat=
+ients can submit their appointment request via the NHS app, website or via =
+the telephone where a care coordinator will submit this on their behalf whi=
+ch is then triaged by a GP and a response provided to the patient within 48=
+ hours of their request (if urgent, the response is provided that day).  Fo=
+llowing the triage the GP will assign the patient an outcome whether that b=
+e self care advice, pharmacy, optician or a face to face or telephone appoi=
+ntment at the practice or a home visit based on a priority matrix of 1-4 de=
+pending on the clinical prioritisation of their presenting complaint.  A pr=
+iority 1 would be immediate direction to hospital, a priority 2 would be an=
+ appointment within 48 hours, priority 3 would be an appointment within 2-7=
+ days and priority 4 would be an appointment 7-14 days.  Whilst we haven't =
+yet instigated this system change at New Bank, we are aware that a similar =
+triage model exists and when the time comes to consider the change we would=
+ be looking to work with the PPG to understand how this could work best and=
+ consider any issues you may have and would obviously welcome your support =
+around patient engagement communication to ensure any changes are smooth.
+
+I hope the above information helps and as mentions hopefully i will see you=
+ this evening.
+
+
+Thanks
+
+
+
+Warren
+
+
+
+Warren Tuite
+
+
+
+Job title:  Head Of Primary Care
+
+
+
+Email: warrentuite@nhs.net<mailto:warrentuite@nhs.net>
+Mobile: 07818518968
+
+Head Office: New Century House, Progress Way, Off Windmill Lane, Denton, Gr=
+eater Manchester, M34 2GP
+
+
+
+gtd HEALTHCARE | a positive difference, every time
+
+gtdhealthcare.co.uk<http://gtdhealthcare.co.uk/>  |  [cid:198b1134-a455-4b5=
+a-82f3-1a9d22ee8524]   gtdhealthcare<https://twitter.com/gtdhealthcare>
+
+
+
+If you are receiving this email outside of your working hours, please note,=
+ you are not expected to respond.
+
+
+
+This message may contain confidential information. If you are not the inten=
+ded recipient, please inform the sender that you have received the message =
+in error before deleting it. Please do not disclose, copy or distribute inf=
+ormation in this e-mail or take any action in reliance on its contents; to =
+do so is strictly prohibited and may be unlawful.
+
+
+
+________________________________
+From: FEEDBACK (GTD HEALTHCARE - 8G750) <gtd.feedback@nhs.net>
+Sent: Tuesday, August 26, 2025 12:27 PM
+To: TUITE, Warren (GTD HEALTHCARE - 8G750) <warrentuite@nhs.net>; SEWARDS, =
+Dawn (GTD HEALTHCARE - 8G750) <dawn.sewards@nhs.net>; SHELMERDINE, Cate (GT=
+D HEALTHCARE - 8G750) <cate.shelmerdine@nhs.net>
+Subject: Fw: Request for information: GP Practice Management (PPG backgroun=
+d research)
+
+
+
+
+________________________________
+
+From: Robert (Bob) Davies <admin@bobbigmac.com<mailto:admin@bobbigmac.com>>
+
+Sent: 26 August 2025 01:09
+To: FEEDBACK (GTD HEALTHCARE - 8G750) <gtd.feedback@nhs.net<mailto:gtd.feed=
+back@nhs.net>>
+Cc: GTD, Communications (GTD HEALTHCARE - 8G750) <communications.gtd@nhs.ne=
+t<mailto:communications.gtd@nhs.net>>; CORPORATEAFFAIRS (GTD HEALTHCARE - 8=
+G750) <gtd.corporateaffairs@nhs.net<mailto:gtd.corporateaffairs@nhs.net>>; =
+admin@bobbigmac.com<mailto:admin@bobbigmac.com> <admin@bobbigmac.com<mailto=
+:admin@bobbigmac.com>>
+Subject: Request for information: GP Practice Management (PPG background re=
+search)
+
+
+
+Some people who received this message don't often get email from admin@bobb=
+igmac.com<mailto:admin@bobbigmac.com>. Learn why this is important<https://=
+aka.ms/LearnAboutSenderIdentification>
+
+
+
+This message originated from outside of NHSmail. Please do not click links =
+or open attachments unless you recognise the sender and know the content is=
+ safe.
+
+Hello,
+
+
+
+As a patient and member of the PPG at New Bank Health Centre, I=92m prepari=
+ng for our next meeting on September 10th and would like to clarify some ba=
+ckground information about GTD Healthcare=92s management of GP practices. C=
+ould you please confirm the following:
+
+
+
+1. Management Tenure
+
+   =96 The dates (year and month, if available) when GTD Healthcare formall=
+y assumed responsibility for each of your GP practices (e.g. New Bank Healt=
+h Centre transferred April 2025).
+
+
+
+2. Continuity of Staff
+
+   =96 At each practice handover, whether core administrative/reception sta=
+ff remained in post, or if significant staffing changes were made at the ti=
+me.
+
+
+
+3. Patient Feedback Handling
+
+   =96 Whether GTD has an internal process for collecting and reviewing onl=
+ine patient feedback (e.g. Google reviews, NHS website feedback), and if/ho=
+w this is used in practice improvement.
+
+
+
+4. Practice Performance Transparency
+
+   =96 Whether GTD routinely shares patient satisfaction data (beyond CQC r=
+eports) with patients or the public, and if so where this can be accessed.
+
+   =96 I found your one-page flyer titled =93You said, we did (May 19)=94 (=
+link in footnotes). It appears to date from before 2022 at least (according=
+ to the PDF metadata), but it wasn=92t explicitly dated, and I haven=92t be=
+en able to find any more recent reports in this style. Could you confirm wh=
+ether updated versions exist, and the timescale that content related to?
+
+
+
+5. Patient Access Standards
+
+   =96 Does GTD have a standard policy or minimum expectation for patient a=
+ccess (e.g. typical wait time targets for routine or urgent appointments), =
+and is this applied across all your GP practices?
+
+
+
+A short reply covering the above points would be very helpful. It doesn=92t=
+ need to be exhaustive if some information is sensitive or hard to collate;=
+ I=92m simply hoping to fill in some background gaps ahead of the PPG meeti=
+ng.
+
+
+
+Thank you for your time.
+
+
+
+Kind regards,
+
+Robert (Bob) Davies
+
+Patient and member of PPG at New Bank Health Centre
+
+
+
+Footnotes
+
+Flyer link for reference: https://www.gtdhealthcare.co.uk/application/files=
+/5517/4107/9706/You_said_we_did_poster_-_May_19.pdf
+
+
+
+* Sent to:
+
+  to: [gtd.feedback@nhs.net](mailto:gtd.feedback@nhs.net) (listed as genera=
+l enquiries)
+
+  cc: [communications.gtd@nhs.net](mailto:communications.gtd@nhs.net) (fall=
+back)
+
+  cc: [gtd.corporateaffairs@nhs.net](mailto:gtd.corporateaffairs@nhs.net) (=
+corporate comms)
+
+
+***************************************************************************=
+*********** ******************************
+
+This message may contain confidential information. If you are not the inten=
+ded recipient please:
+i) inform the sender that you have received the message in error before del=
+eting it; and
+ii) do not disclose, copy or distribute information in this e-mail or take =
+any action in relation to its content (to do so is strictly prohibited and =
+may be unlawful).
+Thank you for your co-operation.
+
+NHS.net Connect is the secure email, collaboration and directory service av=
+ailable for all NHS staff in England. NHS.net Connect is approved for excha=
+nging patient data and other sensitive information with NHS.net Connect and=
+ other accredited email services.
+
+For more information and to find out how you can switch visit Joining NHS.n=
+et Connect =96 NHS.net Connect Support<https://support.nhs.net/article-cate=
+gories/joining-nhsmail/>
+
+
+--_000_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 10pt; c=
+olor: rgb(0, 0, 0);" class=3D"elementToProof">
+Dear Bob,</div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 10pt; c=
+olor: rgb(0, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: blac=
+k;">Thank you for your email and please let me first apologise for the dela=
+yed response due to annual leave but i am pleased to see that this was pick=
+ed up and acknowledged in my absence.&nbsp;
+ We are always supportive of requests for information about our services as=
+ we aim to be as transparent as possible with our patients who are key to e=
+nsuring we are providing services as effectively as possible.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: blac=
+k;">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: blac=
+k;">I have copied and pasted your questions and provided responses below ea=
+ch of them in green for ease and to ensure that i don't miss anything and i=
+ am also planning on attending the
+ PPG meeting this evening in case there are any further questions raised by=
+ patients which i will do my very best to answer.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: blac=
+k;">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">1. Management Tenure</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp; &nbsp;=96 The dates (year and month, if available) when GTD He=
+althcare formally assumed responsibility for each of your GP practices (e.g=
+. New Bank Health Centre transferred April 2025).</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 12pt; color: rgb(=
+36, 36, 36);">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rg=
+b(12, 136, 42);"><i>gtd healthcare
+</i>has held a primary care portfolio for many years and has grown its port=
+folio via successful contract awards and approaches made by existing partne=
+rship practices over the years who were keen to work with the organisation =
+to transition their practice.&nbsp; Obviously
+ throughout the decades there has been multiple contract awards and some lo=
+sses and even some practices which were awarded, lost and then gained again=
+ via procurement processes so i am unable to detail exact dates and years f=
+or all of our services.&nbsp; However
+ during the recent procurement process by commissioners we retained Simpson=
+ Medical Practice, City Health Centre but lost Droylsden Road Family Practi=
+ce on 1<sup>st</sup>&nbsp;April and in addition we secured the contract for=
+ Charlestown Medical Practice and obviously
+ New Bank.&nbsp; We have also recently transitioned one of our practices in=
+ Derbyshire to a local provider following collaboration over the last 12 mo=
+nths which happened in July this year.&nbsp; In the future, 4 of our 12 pra=
+ctices are non time limited meaning that their
+ contracts are never up for re-tender with the remaining 8 all on time limi=
+ting contracts which expire at different times at which point the commissio=
+ner may choose to extend or re-procure.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">2. Continuity of Staff</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp; &nbsp;=96 At each practice handover, whether core administrati=
+ve/reception staff remained in post, or if significant staffing changes wer=
+e made at the time.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 12pt; color: rgb(=
+36, 36, 36);">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rg=
+b(12, 136, 42);">When a practice undergoes a change in provider, all transf=
+erring staff are fully safeguarded under the Transfer of Undertakings (Prot=
+ection of Employment) Regulations
+ (TUPE). Under TUPE, employees retain their existing contracts, terms, and =
+benefits and the incoming provider is prohibited from rejecting eligible st=
+aff or imposing contract changes without proper consultation and agreement.=
+</span></p>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+As part of this TUPE, a consultation process was completed by both the prev=
+ious provider (Better Health Manchester) and the new provider (gtd healthca=
+re). This is to ensure that the new provider is aware of all terms and cond=
+itions which legally must be protected
+ following the transfer, and for the staff members to get an insight into w=
+ho their new employer will be.</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+Both the incoming and outgoing provider do see significant risk during and =
+up to the date of transition as staff can resign from the service altogethe=
+r or may secure alternative employment within the existing provider up to m=
+idnight on the date of transfer,
+ something which is typically hard to manage and can leave the service vuln=
+erable. Particularly as the core service needs to remain open and accessibl=
+e regardless which is always something we try to factor in with cross cover=
+ availability at short notice from
+ our other services.&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+This is one of the reasons why we do not make any changes to staffing clini=
+cal or operational after the transfer of a practice as the team needs time =
+to settle following any changes outside of our control and also, we see the=
+ team as key to helping us develop
+ any changes they feel the practice needs to improve the service.&nbsp; On =
+average, if at all, we do not propose or start discussions with staff aroun=
+d changes to staffing models until at least 6 months into the service being=
+ with us unless there is a significant
+ risk.&nbsp; In the case of New Bank specifically, staffing issues did occu=
+r with the practice transferring to us without any clinical or operational =
+management structure which only became apparent within around 48 hours befo=
+re the transfer date. &nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+We also became aware that there were some critical elements missing from th=
+e workload expected of the care coordination team which required significan=
+t investment in capacity and training which caused further complications.&n=
+bsp; However, we were able to mitigate
+ this within 24 hours utilising cross cover from teams across the organisat=
+ion including help with referral processing and on site experienced operati=
+onal management which have been retained.&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+&nbsp;</div>
+<div style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rgb=
+(12, 136, 42);" class=3D"elementToProof">
+Since then, I am pleased to say we have managed to recruit a replacement op=
+erations manager who started with us 2 weeks ago and are currently consider=
+ing applications for an interim practice manager whilst we advertise for a =
+permanent position following an
+ unsuccessful campaign initially.&nbsp; We were also able to bring in a rep=
+lacement highly experienced medical lead, who I believe you have met who ha=
+s replaced the previous medical lead from day 1 who decided to be retained =
+with the outgoing provider.&nbsp; We also
+ have a new pharmacist and also a new nurse associate which has positively =
+all taken place within the first 5 months which we feel is an achievement a=
+s typically recruitment for new staff with notice periods included can take=
+ on average 3 months.</div>
+<div style=3D"text-align: left; text-indent: 0px; background-color: rgb(255=
+, 255, 255); margin: 0cm; font-family: Calibri, sans-serif; font-size: 11pt=
+; color: rgb(12, 136, 42);" class=3D"elementToProof">
+<br>
+</div>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">3. Patient Feedback Handling</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp; &nbsp;=96 Whether GTD has an internal process for collecting a=
+nd reviewing online patient feedback (e.g. Google reviews, NHS website feed=
+back), and if/how this is used in practice improvement.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 12pt; color: rgb(=
+36, 36, 36);">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rg=
+b(12, 136, 42);">This would fall within the remit of the practice manager a=
+t the site along with support from our head of patient engagement and our h=
+ead of corporate services.&nbsp; Obviously
+ with gaps in management since transition due to the issues mentioned above=
+ this has limited capacity to be able to do this but moving forward, review=
+s are monitored on a monthly basis to ensure responses and actions/learning=
+ identified.&nbsp; Google reviews are
+ a little tricky to respond to due to the access requirements and setup for=
+ google which we are only just managing to access at our other sites.&nbsp;=
+ This method of feedback is only one element which we use to gauge feedback=
+ as we also take actions/feedback from
+ PPG's, complaint themes and trends and family and friends.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">4. Practice Performance Transparency</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp; &nbsp;=96 Whether GTD routinely shares patient satisfaction da=
+ta (beyond CQC reports) with patients or the public, and if so where this c=
+an be accessed.&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp; &nbsp;=96 I found your one-page flyer titled =93You said, we d=
+id (May 19)=94 (link in footnotes). It appears to date from before 2022 at =
+least (according to the PDF metadata), but it wasn=92t
+ explicitly dated, and I haven=92t been able to find any more recent report=
+s in this style. Could you confirm whether updated versions exist, and the =
+timescale that content related to?</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 12pt; color: rgb(=
+36, 36, 36);">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rg=
+b(12, 136, 42);">We would typically share the results of any internal patie=
+nt surveys with PPGs, there is also the GP patient survey which is in the p=
+ublic domain.&nbsp; We have also presented
+ 'you said, we did' posters along the lines you have advised at the request=
+ of patients and this is something we can certainly look to do jointly with=
+ the PPG.&nbsp; Newsletters have also been created previously which provide=
+s updates to patients on what's happening
+ at the practice.&nbsp; Again we would be keen to work with the PPG on what=
+ you feel would benefit patients regarding this.</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">5. Patient Access Standards</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: bl=
+ack;">&nbsp; &nbsp;=96 Does GTD have a standard policy or minimum expectati=
+on for patient access (e.g. typical wait time targets for routine or urgent=
+ appointments), and is this applied across all
+ your GP practices?</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Aptos, sans-serif; font-size: 12pt; color: rgb(=
+36, 36, 36);">&nbsp;</span></p>
+<p style=3D"text-align: left; text-indent: 0px; background-color: rgb(255, =
+255, 255); margin: 0cm;" class=3D"elementToProof">
+<span style=3D"font-family: Calibri, sans-serif; font-size: 11pt; color: rg=
+b(12, 136, 42);">We have recently embarked on a transition with all our pra=
+ctices with the exception of New Bank and Charlestown (due to limiting the =
+amount of changes staff have to go
+ through following transition) to incorporate the national mandate around i=
+mproving access with the modern GP practice model where equitable access ex=
+ists between the telephone, walk in and online consultation requests.&nbsp;=
+ Our practices now all operate an online
+ triage model where patients can submit their appointment request via the N=
+HS app, website or via the telephone where a care coordinator will submit t=
+his on their behalf which is then triaged by a GP and a response provided t=
+o the patient within 48 hours of
+ their request (if urgent, the response is provided that day).&nbsp; Follow=
+ing the triage the GP will assign the patient an outcome whether that be se=
+lf care advice, pharmacy, optician or a face to face or telephone appointme=
+nt at the practice or a home visit based
+ on a priority matrix of 1-4 depending on the clinical prioritisation of th=
+eir presenting complaint.&nbsp; A priority 1 would be immediate direction t=
+o hospital, a priority 2 would be an appointment within 48 hours, priority =
+3 would be an appointment within 2-7
+ days and priority 4 would be an appointment 7-14 days.&nbsp; Whilst we hav=
+en't yet instigated this system change at New Bank, we are aware that a sim=
+ilar triage model exists and when the time comes to consider the change we =
+would be looking to work with the PPG
+ to understand how this could work best and consider any issues you may hav=
+e and would obviously welcome your support around patient engagement commun=
+ication to ensure any changes are smooth.</span></p>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 10pt; c=
+olor: rgb(0, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(0=
+, 0, 0);" class=3D"elementToProof">
+I hope the above information helps and as mentions hopefully i will see you=
+ this evening.</div>
+<div style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(0=
+, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<div id=3D"Signature">
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+0, 0, 0);">Thanks</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+0, 0, 0);">&nbsp;</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+0, 0, 0);">Warren</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt;">&nbsp;</sp=
+an></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 12.5pt; color: rg=
+b(71, 214, 56);"><b>Warren Tuite</b></span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+71, 214, 56);"><b>&nbsp;</b></span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+71, 214, 56);"><b>Job title:</b>&nbsp;
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt; colo=
+r: rgb(38, 31, 84);">Head Of Primary Care</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+38, 31, 84);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt;">&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+71, 214, 56);"><b>Email:</b>
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt; colo=
+r: rgb(38, 31, 84);"><u><a style=3D"color: rgb(38, 31, 84); margin-top: 0px=
+; margin-bottom: 0px;" href=3D"mailto:warrentuite@nhs.net">warrentuite@nhs.=
+net</a></u></span><span style=3D"font-family: Arial, sans-serif; font-size:=
+ 10pt;"><br>
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt; colo=
+r: rgb(71, 214, 56);"><b>Mobile:</b></span><span style=3D"font-family: Aria=
+l, sans-serif; font-size: 10pt; color: rgb(38, 31, 84);">&nbsp;07818518968<=
+/span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+71, 214, 56);"><b>Head Office:</b>&nbsp;</span><span style=3D"font-family: =
+Arial, sans-serif; font-size: 10pt; color: rgb(38, 31, 84);">New
+ Century House, Progress Way, Off Windmill Lane, Denton, Greater Manchester=
+, M34 2GP</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 9pt;">&nbsp;</spa=
+n></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 17pt; color: rgb(=
+114, 210, 82);"><b><i>g</i></b></span><span style=3D"font-family: Arial, sa=
+ns-serif; font-size: 17pt; color: rgb(42, 173, 151);"><b><i>t</i></b></span=
+><span style=3D"font-family: Arial, sans-serif; font-size: 17pt; color: rgb=
+(94, 83, 191);"><b><i>d</i></b></span><span style=3D"font-family: Arial, sa=
+ns-serif; font-size: 17pt;">
+</span><span style=3D"font-family: Arial, sans-serif; color: rgb(38, 31, 84=
+);"><b>HEALTHCARE</b></span><span style=3D"font-family: Arial, sans-serif; =
+color: rgb(71, 214, 56);">&nbsp;|
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt; colo=
+r: rgb(38, 31, 84);">a positive difference, every time</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 10pt; color: rgb(=
+38, 31, 84);"><u><a style=3D"color: rgb(38, 31, 84); margin-top: 0px; margi=
+n-bottom: 0px;" href=3D"http://gtdhealthcare.co.uk/">gtdhealthcare.co.uk</a=
+></u></span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt;=
+">&nbsp;</span><span style=3D"font-family: Arial, sans-serif; font-size: 10=
+pt; color: rgb(71, 214, 56);">&nbsp;|&nbsp;
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt;"><im=
+g style=3D"width: 0.145in; height: 0.114in; margin-top: 0px; margin-bottom:=
+ 0px;" size=3D"743" height=3D"10" width=3D"13" data-outlook-trace=3D"F:1|T:=
+1" src=3D"cid:198b1134-a455-4b5a-82f3-1a9d22ee8524">&nbsp;
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 10pt; colo=
+r: rgb(38, 31, 84);"><u><a style=3D"color: rgb(38, 31, 84); margin-top: 0px=
+; margin-bottom: 0px;" href=3D"https://twitter.com/gtdhealthcare">gtdhealth=
+care</a></u></span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif;">&nbsp;</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 9pt; color: rgb(3=
+8, 31, 84);"><b>If you are receiving this email outside of your working hou=
+rs, please note, you are not expected
+ to respond.</b></span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 3pt; color: rgb(3=
+8, 31, 84);">&nbsp;</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+<span style=3D"font-family: Arial, sans-serif; font-size: 8pt; color: rgb(3=
+8, 31, 84);">This message may contain confidential information.&nbsp;If you=
+ are not the intended recipient, please inform
+ the sender that you have received the message in error before deleting it.=
+&nbsp;Please do not disclose, copy or distribute information in this e-mail=
+ or take any action in reliance on its contents; to do so is strictly prohi=
+bited and may be unlawful.</span></p>
+<p style=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 12pt;">=
+&nbsp;</p>
+</div>
+<div id=3D"appendonsend"></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>From:</b>&nbsp;FEEDBACK (GTD HEALTHCARE - 8G750) &lt;gtd.feedback@nhs.ne=
+t&gt;<br>
+<b>Sent:</b>&nbsp;Tuesday, August 26, 2025 12:27 PM<br>
+<b>To:</b>&nbsp;TUITE, Warren (GTD HEALTHCARE - 8G750) &lt;warrentuite@nhs.=
+net&gt;; SEWARDS, Dawn (GTD HEALTHCARE - 8G750) &lt;dawn.sewards@nhs.net&gt=
+;; SHELMERDINE, Cate (GTD HEALTHCARE - 8G750) &lt;cate.shelmerdine@nhs.net&=
+gt;<br>
+<b>Subject:</b>&nbsp;Fw: Request for information: GP Practice Management (P=
+PG background research)
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div id=3D"x_Signature">
+<div style=3D"direction: ltr; text-align: left; background-color: rgb(255, =
+255, 255); margin: 0cm 0cm 0.0001pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<p style=3D"direction: ltr; text-align: left; background-color: rgb(255, 25=
+5, 255); margin: 0cm 0cm 0.0001pt;">
+<br>
+</p>
+</div>
+<div id=3D"x_appendonsend"></div>
+<div id=3D"x_divRplyFwdMsg"></div>
+<div style=3D"padding: 3pt 0cm 0cm; border-top: 1pt solid rgb(225, 225, 225=
+);"></div>
+<div id=3D"x_x_Signature"></div>
+<hr style=3D"direction: ltr; margin-right: 0cm; margin-left: 0cm; width: 98=
+%;" align=3D"center">
+<div id=3D"x_x_divRplyFwdMsg">
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;" class=3D"elementToProof">
+<span style=3D"color: black;"><b>From:</b>&nbsp;Robert (Bob) Davies &lt;</s=
+pan><span style=3D"color: blue;"><u><a style=3D"color: blue; margin-top: 0p=
+x; margin-bottom: 0px;" class=3D"x_OWAAutoLink" id=3D"OWA42433469-a06b-e7cb=
+-85cf-1af3d3b4c028" href=3D"mailto:admin@bobbigmac.com">admin@bobbigmac.com=
+</a></u></span><span style=3D"color: black;">&gt;</span></p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+<span style=3D"color: black;"><b>Sent:</b>&nbsp;26 August 2025 01:09<br>
+<b>To:</b>&nbsp;FEEDBACK (GTD HEALTHCARE - 8G750) &lt;</span><span style=3D=
+"color: blue;"><u><a style=3D"color: blue; margin-top: 0px; margin-bottom: =
+0px;" class=3D"x_OWAAutoLink" id=3D"OWAdbca39cf-b256-e22c-9c37-cd92fe069ec7=
+" href=3D"mailto:gtd.feedback@nhs.net">gtd.feedback@nhs.net</a></u></span><=
+span style=3D"color: black;">&gt;<br>
+<b>Cc:</b>&nbsp;GTD, Communications (GTD HEALTHCARE - 8G750) &lt;</span><sp=
+an style=3D"color: blue;"><u><a style=3D"color: blue; margin-top: 0px; marg=
+in-bottom: 0px;" class=3D"x_OWAAutoLink" id=3D"OWAa0990530-98d5-bb4e-7335-7=
+60628a13391" href=3D"mailto:communications.gtd@nhs.net">communications.gtd@=
+nhs.net</a></u></span><span style=3D"color: black;">&gt;;
+ CORPORATEAFFAIRS (GTD HEALTHCARE - 8G750) &lt;</span><span style=3D"color:=
+ blue;"><u><a style=3D"color: blue; margin-top: 0px; margin-bottom: 0px;" c=
+lass=3D"x_OWAAutoLink" id=3D"OWAbdd17a7a-e521-5cab-bd7b-754983e9fa91" href=
+=3D"mailto:gtd.corporateaffairs@nhs.net">gtd.corporateaffairs@nhs.net</a></=
+u></span><span style=3D"color: black;">&gt;;
+</span><span style=3D"color: blue;"><u><a style=3D"color: blue; margin-top:=
+ 0px; margin-bottom: 0px;" class=3D"x_OWAAutoLink" id=3D"OWA2d110368-5b28-b=
+b00-9ef8-2ae8c30c926b" href=3D"mailto:admin@bobbigmac.com">admin@bobbigmac.=
+com</a></u></span><span style=3D"color: black;">&nbsp;&lt;</span><span styl=
+e=3D"color: blue;"><u><a style=3D"color: blue; margin-top: 0px; margin-bott=
+om: 0px;" class=3D"x_OWAAutoLink" id=3D"OWAf5f643fb-6f0e-9f13-6980-f59cb560=
+169b" href=3D"mailto:admin@bobbigmac.com">admin@bobbigmac.com</a></u></span=
+><span style=3D"color: black;">&gt;<br>
+<b>Subject:</b>&nbsp;Request for information: GP Practice Management (PPG b=
+ackground research)</span></p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+</div>
+<table style=3D"direction: ltr; text-indent: revert; line-height: revert; w=
+hite-space: revert; background-color: revert; display: table; margin: rever=
+t; width: 100%; height: revert; table-layout: fixed; color: revert; box-siz=
+ing: border-box; border-collapse: collapse; border-spacing: 0px;" cellpaddi=
+ng=3D"0" cellspacing=3D"0">
+<tbody>
+<tr style=3D"background-color: revert;">
+<td style=3D"direction: ltr; text-indent: revert; line-height: revert; whit=
+e-space: revert; border-width: revert; border-style: revert; border-color: =
+revert; background-color: rgb(166, 166, 166); padding: 2px; word-break: rev=
+ert; color: revert; width: 0px; height: revert;">
+</td>
+<td style=3D"direction: ltr; text-align: left; text-indent: revert; line-he=
+ight: revert; white-space: revert; border-width: revert; border-style: reve=
+rt; border-color: revert; background-color: rgb(234, 234, 234); padding: 15=
+px; word-break: revert; color: rgb(33, 33, 33); width: 100%; height: revert=
+;">
+<p style=3D"direction: ltr; text-align: left; text-indent: revert; line-hei=
+ght: revert; white-space: revert; margin: 0cm; font-family: Calibri, sans-s=
+erif; font-size: 11pt;">
+<span style=3D"letter-spacing: revert; font-family: &quot;Segoe UI&quot;, s=
+ans-serif; color: black;">Some people who received this message don't often=
+ get email from
+</span><span style=3D"letter-spacing: revert; font-family: &quot;Segoe UI&q=
+uot;, sans-serif; color: blue;"><u><a style=3D"color: blue; margin-top: 0px=
+; margin-bottom: 0px;" class=3D"x_OWAAutoLink" id=3D"OWA10413dd1-b003-c0a8-=
+c6f0-2deeae530c5a" href=3D"mailto:admin@bobbigmac.com">admin@bobbigmac.com<=
+/a></u></span><span style=3D"letter-spacing: revert; font-family: &quot;Seg=
+oe UI&quot;, sans-serif; color: black;">.
+</span><span style=3D"letter-spacing: revert; font-family: &quot;Segoe UI&q=
+uot;, sans-serif; color: blue;"><u><a style=3D"color: blue; margin-top: 0px=
+; margin-bottom: 0px;" data-auth=3D"NotApplicable" class=3D"x_OWAAutoLink" =
+id=3D"OWAa457cf0b-083f-430c-e3a0-34c188b9cd8c" href=3D"https://aka.ms/Learn=
+AboutSenderIdentification">Learn
+ why this is important</a></u></span></p>
+</td>
+<td style=3D"direction: ltr; text-align: left; text-indent: revert; line-he=
+ight: revert; white-space: revert; border-width: revert; border-style: reve=
+rt; border-color: revert; background-color: rgb(234, 234, 234); padding: 5p=
+x; word-break: revert; color: rgb(33, 33, 33); width: 75px; height: revert;=
+">
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"direction: ltr; margin-left: 0.45pt; width: 100%; box-sizin=
+g: border-box; border-collapse: collapse; border-spacing: 0px;" cellpadding=
+=3D"0" cellspacing=3D"0">
+<tbody>
+<tr>
+<td style=3D"direction: ltr; background-color: rgb(145, 10, 25); padding: 5=
+.25pt 1.5pt; height: 10.5pt;">
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+<span style=3D"color: white;">&nbsp;</span></p>
+</td>
+<td style=3D"direction: ltr; background-color: rgb(253, 242, 244); padding:=
+ 0cm 3.75pt 0cm 6.25pt; width: 100%; height: 10.5pt;">
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+<span style=3D"font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 9p=
+t; color: rgb(33, 33, 33);">This message originated from outside of NHSmail=
+. Please do not click links or open attachments unless you recognise the se=
+nder and know the content is safe.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Hello,</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+As a patient and member of the PPG at New Bank Health Centre, I=92m prepari=
+ng for our next meeting on September 10th and would like to clarify some ba=
+ckground information about GTD Healthcare=92s management of GP practices. C=
+ould you please confirm the following:</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+1. Management Tenure</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; &nbsp;=96 The dates (year and month, if available) when GTD Healthca=
+re formally assumed responsibility for each of your GP practices (e.g. New =
+Bank Health Centre transferred April 2025).</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+2. Continuity of Staff</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; &nbsp;=96 At each practice handover, whether core administrative/rec=
+eption staff remained in post, or if significant staffing changes were made=
+ at the time.</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+3. Patient Feedback Handling</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; &nbsp;=96 Whether GTD has an internal process for collecting and rev=
+iewing online patient feedback (e.g. Google reviews, NHS website feedback),=
+ and if/how this is used in practice improvement.</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+4. Practice Performance Transparency</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; &nbsp;=96 Whether GTD routinely shares patient satisfaction data (be=
+yond CQC reports) with patients or the public, and if so where this can be =
+accessed.&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; &nbsp;=96 I found your one-page flyer titled =93You said, we did (Ma=
+y 19)=94 (link in footnotes). It appears to date from before 2022 at least =
+(according to the PDF metadata), but it wasn=92t explicitly dated, and I ha=
+ven=92t been able to find any more recent reports in
+ this style. Could you confirm whether updated versions exist, and the time=
+scale that content related to?</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+5. Patient Access Standards</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; &nbsp;=96 Does GTD have a standard policy or minimum expectation for=
+ patient access (e.g. typical wait time targets for routine or urgent appoi=
+ntments), and is this applied across all your GP practices?</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+A short reply covering the above points would be very helpful. It doesn=92t=
+ need to be exhaustive if some information is sensitive or hard to collate;=
+ I=92m simply hoping to fill in some background gaps ahead of the PPG meeti=
+ng.</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Thank you for your time.</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Kind regards,</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Robert (Bob) Davies</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Patient and member of PPG at New Bank Health Centre</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Footnotes</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+Flyer link for reference: <span style=3D"color: blue;"><u><a style=3D"color=
+: blue; margin-top: 0px; margin-bottom: 0px;" data-auth=3D"NotApplicable" o=
+riginalsrc=3D"https://www.gtdhealthcare.co.uk/application/files/5517/4107/9=
+706/You_said_we_did_poster_-_May_19.pdf" class=3D"x_OWAAutoLink" id=3D"OWA8=
+59bd028-1869-1701-ffdc-805c6a4bfaeb" href=3D"https://www.gtdhealthcare.co.u=
+k/application/files/5517/4107/9706/You_said_we_did_poster_-_May_19.pdf">htt=
+ps://www.gtdhealthcare.co.uk/application/files/5517/4107/9706/You_said_we_d=
+id_poster_-_May_19.pdf</a></u></span></p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp;</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+* Sent to:</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; to: [gtd.feedback@nhs.net](<span style=3D"color: blue;"><u><a style=
+=3D"color: blue; margin-top: 0px; margin-bottom: 0px;" class=3D"x_OWAAutoLi=
+nk" id=3D"OWAa79552ef-a1ae-1977-6d44-ae9c55f7b506" href=3D"mailto:gtd.feedb=
+ack@nhs.net">mailto:gtd.feedback@nhs.net</a></u></span>)
+ (listed as general enquiries)</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; cc: [communications.gtd@nhs.net](<span style=3D"color: blue;"><u><a =
+style=3D"color: blue; margin-top: 0px; margin-bottom: 0px;" class=3D"x_OWAA=
+utoLink" id=3D"OWAb6b42249-7ba5-e6a8-8524-b7f3879544bf" href=3D"mailto:comm=
+unications.gtd@nhs.net">mailto:communications.gtd@nhs.net</a></u></span>)
+ (fallback)</p>
+<p style=3D"direction: ltr; margin: 0cm; font-family: Calibri, sans-serif; =
+font-size: 11pt;">
+&nbsp; cc: [gtd.corporateaffairs@nhs.net](<span style=3D"color: blue;"><u><=
+a style=3D"color: blue; margin-top: 0px; margin-bottom: 0px;" class=3D"x_OW=
+AAutoLink" id=3D"OWA0404d761-a8cc-8343-b71e-de12d6688032" href=3D"mailto:gt=
+d.corporateaffairs@nhs.net">mailto:gtd.corporateaffairs@nhs.net</a></u></sp=
+an>)
+ (corporate comms)</p>
+<br>
+<font face=3D"Courier New" color=3D"Black" size=3D"2"><br>
+***************************************************************************=
+*********** ******************************<br>
+<br>
+This message may contain confidential information. If you are not the inten=
+ded recipient please:<br>
+i) inform the sender that you have received the message in error before del=
+eting it; and
+<br>
+ii) do not disclose, copy or distribute information in this e-mail or take =
+any action in relation to its content (to do so is strictly prohibited and =
+may be unlawful).
+<br>
+Thank you for your co-operation.<br>
+<br>
+NHS.net Connect is the secure email, collaboration and directory service av=
+ailable for all NHS staff in England. NHS.net Connect is approved for excha=
+nging patient data and other sensitive information with NHS.net Connect and=
+ other accredited email services.<br>
+<br>
+For more information and to find out how you can switch visit <a href=3D"ht=
+tps://support.nhs.net/article-categories/joining-nhsmail/">
+Joining NHS.net Connect =96 NHS.net Connect Support</a><br>
+<br>
+</font>
+</body>
+</html>
+
+--_000_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_--
+
+--_004_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_
+Content-Type: image/png; name="image.png"
+Content-Description: image.png
+Content-Disposition: inline; filename="image.png"; size=743;
+	creation-date="Wed, 10 Sep 2025 09:27:59 GMT";
+	modification-date="Wed, 10 Sep 2025 09:27:59 GMT"
+Content-ID: <198b1134-a455-4b5a-82f3-1a9d22ee8524>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAYAAABv7tTEAAABYWlDQ1BrQ0dDb2xvclNwYWNlRGlz
+cGxheVAzAAAokWNgYFJJLCjIYWFgYMjNKykKcndSiIiMUmB/yMAOhLwMYgwKicnFBY4BAT5AJQww
+GhV8u8bACKIv64LMOiU1tUm1XsDXYqbw1YuvRJsw1aMArpTU4mQg/QeIU5MLikoYGBhTgGzl8pIC
+ELsDyBYpAjoKyJ4DYqdD2BtA7CQI+whYTUiQM5B9A8hWSM5IBJrB+API1klCEk9HYkPtBQFul8zi
+gpzESoUAYwKuJQOUpFaUgGjn/ILKosz0jBIFR2AopSp45iXr6SgYGRiaMzCAwhyi+nMgOCwZxc4g
+xJrvMzDY7v////9uhJjXfgaGjUCdXDsRYhoWDAyC3AwMJ3YWJBYlgoWYgZgpLY2B4dNyBgbeSAYG
+4QtAPdHFacZGYHlGHicGBtZ7//9/VmNgYJ/MwPB3wv//vxf9//93MVDzHQaGA3kAFSFl7jXH0fsA
+AAFBSURBVCgVfVE9SwNBEH2ztxqLgNgYBRsLWz3xF6SxSCGaH3BgSkGLS2Gpf8DPFJYqiJWcjWCp
+RCy8RpOUNsavLgGbEJPcjrOBk0TUB8ubffMeM+zSaik7obnFO+7FG37AL2U3iWjNysy8T8SPMKgq
+DSwolbjJlxfnejN+ZSlHijZAGLHH1gzaMgpTmpifoWgScEK/kj0xHXPYiKIQrNJi7geh2nlpnuoO
+4WkAeJCuSyDP0Y6X1IrF3+5PdG/lQubyUylDwzbQa5CwnTHYq9laxLJltTsb3DIjD8aHFf6CeNot
+g3PbV12T4XtheZN/wDgozASv1tENbbvBlaEoJ9PufosxOKzXa+txT6+EmbEhnUiRUeOy9Gjc+Gbm
+s2atvnyUvm7Gmk44OimLefJ98wykZFpD3uFduBiBj/emg2JsjvkLUiNuy4qCLzMAAAAASUVORK5C
+YII=
+
+--_004_LO2P265MB46299351DC266584F39814A6BA0EALO2P265MB4629GBRP_--
