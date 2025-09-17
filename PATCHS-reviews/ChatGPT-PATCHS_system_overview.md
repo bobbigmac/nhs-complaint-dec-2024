@@ -528,48 +528,6 @@ Want me to turn this into a one-page PDF with headings and a tiny checklist for 
 #### You:
 ​Find me every mention of PATCHS online right now. Link me to all of them
 
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -645,20 +603,6 @@ Want me to **expand the CSV** with more practice pages (e.g., all in Greater Man
 #### You:
 ​Dr Ben Brown seems like a fucking idiot who doesn't know his system design is bad for patients. How do I speak to him, or get him an actual design review that makes this clear? I am in Manchester
 
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -762,20 +706,6 @@ If you want, I’ll draft a one-page “MadLab brief” you can send today (scop
 ​Not quite. You seem to have misunderstood. Kinda. Hmmm. Let's check something else. 
 Do you have access to the PATCHS configuration or setup guide for a practice to configure their implementation, or is it handled entirely by PATCHS?
 
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -794,61 +724,6 @@ If you want, tell me what you’d like changed (e.g., keep intake always open, r
 
 #### You:
 ​Can you identify other practices in Manchester who have already adopted PATCHS?
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -876,41 +751,6 @@ Want me to expand this to **all practices in your ICB/PCN** using PATCHS (with a
 
 #### You:
 ​Okay good. Can you check recent reviews for each of these practices. Google reviews should be accessible to you for each practice
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -958,84 +798,6 @@ If you want, tell me which two or three to prioritise first; drop the newest 2�
 
 #### You:
 ​You can use birdeye for reviews
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### You:
-​Birdeye scrape Google reviews. If the practice has a Google reviews set, which all you listed do, they have a birdeye proxy page
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -1094,60 +856,6 @@ Yep—there are quite a few already using (or switching to) PATCHS around Manche
  
 Want me to expand this to **all practices in your ICB/PCN** using PATCHS (with a live list you can sort by postcode)? I can pull a bigger set and format it as a quick spreadsheet.
 
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -1211,56 +919,6 @@ If you want, paste the **newest 2–3 reviews** (or screenshots) from any of the
 #### You:
 ​Good. You should be able to scrape the recent reviews from those links and give me a summary. I'm interested mainly in the process of making an appointment, especially mentions if present of their new system. You already have the birdeye links, don't start to search from scratch, use the links.
 
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
-
-
-#### ChatGPT:
-\[Unsupported Content]
 
 
 #### ChatGPT:
@@ -1447,3 +1105,95 @@ Here’s what people **don’t like** about PATCHS, based solely on the Trustpil
   > “no problems getting an appointment… **problems… book an appointment with a nurse 3 weeks in advance**.” citeturn1view2
 
 Those are the recurring negatives that actually appear on the page (amid lots of positive comments). If you want, I can turn these into a one-pager mapping each complaint → what configuration/policy change would fix it.
+
+
+#### You:
+We actually have a PATCHS based review from The Smithy Surgery - Hyde (one of GTD Healthcare's practices, its best-rated one, and this actually has a pretty good reply from the pracitice that doesn't blame the patient). I want to log this is a pretty good outcome, tho clearly still lacking.
+
+Pauline Sweeney
+3 reviews
+
+
+
+
+
+
+
+a month ago
+I completed a form on patches on Friday I didn’t hear anything back so I called the surgery.  I was told by a very young very rude member of staff I would receive a call that afternoon up until 6.30pm .  At 6.15 I contacted the surgery again and a very nice member of staff informed me I wouldn’t get a call that day it will be Monday.  I have just contacted them and was on hold for 55 minutes to yet again go through everything to be told my form isn’t there and they don’t know what’s happened to it as I did get a confirmation received by them.  The young man has now sorted it out for me to get a call tomorrow.  All of this, from me completing the form to be told wrong information then the form to be ‘lost’ plus being on hold for an hour is totally unacceptable.
+
+
+Like
+
+
+Share
+Response from the owner a month ago
+Thank you for your feedback.  We are sorry to hear you are experiencing issues with Patchs when trying to arrange an appointment.   Your comments have been passed on to the practice manager.  If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
+
+
+#### ChatGPT:
+Got it—here’s a clean, ready-to-paste log entry plus what’s good, what’s missing, and tight follow-ups.
+
+# Evidence log (PATCHS) — The Smithy Surgery, Hyde
+
+**Source:** Google review by *Pauline Sweeney* (≈1 month ago) + owner reply\
+**Context:** GTD Healthcare site; PATCHS in use.
+
+**Patient journey (timeline)**
+
+- Fri: Completed PATCHS form; no response.
+- Called: told a callback would come by 18:30.
+- 18:15: called again; told “it will be Monday.”
+- Mon: 55-min phone queue; had to repeat details; told **form not found** despite confirmation.
+- Staff member then arranged a call for the next day.
+
+**Issues observed (tags)**
+
+- 🔁 **Lost/undiscoverable request** after patient confirmation
+- 🕑 **Unscheduled callback** → patient waits entire afternoon
+- 📵 **Inconsistent information** from staff about when contact will happen
+- ☎️ **Excessive phone wait** (55 minutes) + **rework** (repeat full story)
+
+**Practice reply — why it’s better than most**
+
+- ✅ Acknowledges issue without blaming patient
+- ✅ Routes to **practice manager** and **central feedback** (<gtd.feedback@nhs.net>)
+
+**Still missing in the reply**
+
+- ❌ No incident reference / audit trail for the **lost request**
+- ❌ No **service recovery** (e.g., priority callback with a **specific time**)
+- ❌ No **root cause** or prevention steps (why the PATCHS submission wasn’t surfaced)
+- ❌ No commitment to **staff comms standard** (don’t promise same-day unless scheduled)
+
+**PPG position (short)**
+
+- *Classify as:* **Partially positive** response (tone is right), **process failure** unresolved.
+- *Risk:* Repeatable—any patient relying on unscheduled callbacks + fragile PATCHS surfacing can hit the same failure.
+
+---
+
+## Concrete asks to close this gap (policy/config, not “train the patient”)
+
+1. **Exact-time bookings for callbacks** (e.g., 15–20 min slots). No more “by 6:30pm.”
+2. **Never delete/lose**: PATCHS submissions must **persist and be searchable**; if contact fails, the episode stays open and is **rebookable without re-typing**.
+3. **Escalation rule:** If a request goes “missing,” reception raises an **incident ticket** and books a **priority timed slot**, then traces the record.
+4. **Staff script update:** Don’t promise same-day unless you have a slot. Offer the **next exact time** instead.
+5. **Monthly reporting to PPG:** count of (a) “lost/not found” requests, (b) missed/late callbacks, (c) average phone wait, (d) % callbacks with exact times.
+
+---
+
+## Improved owner reply (you can suggest this template)
+
+> Thanks for flagging this—we can see your PATCHS request was not surfaced correctly, which is on us. We’ve logged this as incident **\[#12345]**, booked you a **timed** clinician call for **\[date + time]**, and are investigating why your confirmed submission wasn’t visible to staff. From now on, we’re moving to **timed telephone slots** (not “any time by 6:30pm”), and if we can’t reach you, your request will **stay open** so you can **rebook without re-entering details**. If you’d like to talk it through, please ask for the practice manager and quote the reference above.
+
+---
+
+## Quick questions to take to the practice manager
+
+- How often do PATCHS forms show as **submitted by patients** but aren’t visible to staff? Where’s the **audit**?
+- What % of callbacks are **scheduled to exact times** vs. “sometime today”?
+- What’s the **policy** when a request is “missing”—do we create a **ticket + timed slot** automatically?
+- Can reception **reopen/duplicate** a patient’s prior PATCHS submission (to avoid re-typing)?
+
+Want me to drop this into a neat one-pager for your PPG pack?
