@@ -1197,3 +1197,13 @@ Got it—here’s a clean, ready-to-paste log entry plus what’s good, what’s
 - Can reception **reopen/duplicate** a patient’s prior PATCHS submission (to avoid re-typing)?
 
 Want me to drop this into a neat one-pager for your PPG pack?
+
+---
+
+Another found PATCHS review, from Chorlton Family Practice.
+
+Bryan Fagan
+1 review
+
+4 weeks ago
+The nedical staff are good but it is very very difficult to get any appointment. The old system was poor but at least I could go in and book via reception.. the new PATCHS sytem is worse as I can not get an appointment even if the gp has asked me to book one .. to review blood test results or meds review as there are no ..tabs for these and no navigation help The app is only available for 3 hours a day and if there are no appointments left for that day it does not allow you to book ahead so you have to try again EVERY day...I asked at reception physucally but both staff on desk refused to book me an appointment saying the sxstem doesnt let them...so why have reception staff ? This all makes the practice very inaccessible god knows what I would do if the need was urgent
