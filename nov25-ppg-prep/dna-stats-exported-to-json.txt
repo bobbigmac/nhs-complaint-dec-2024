@@ -1,0 +1,642 @@
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ node deep-compare-dna.js Practice_Level_Crosstab_Aug_25.csv --ods Y02960
+{
+  "target": {
+    "ods": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "supplier": "EMIS",
+    "pcn_code": "U07506",
+    "pcn_name": "ARDWICK AND LONGSIGHT PCN",
+    "subicb_code": "14L",
+    "subicb_name": "NHS Greater Manchester ICB - 14L"
+  },
+  "scope": "subicb",
+  "overall": {
+    "months": [
+      {
+        "month": "01AUG2025",
+        "dna": 144,
+        "total": 2644,
+        "rate": 0.05446293494704992
+      }
+    ],
+    "totals": {
+      "dna": 144,
+      "total": 2644,
+      "rate": 0.05446293494704992
+    },
+    "cohort_vs_scope": {
+      "mean": 0.0702530452196431,
+      "sd": 0.024041233278510994,
+      "z": -0.65679285624282,
+      "percentile": 25
+    },
+    "supplier_only_vs_scope": {
+      "supplier": "EMIS",
+      "mean": 0.06962816008970844,
+      "sd": 0.022426295324408815,
+      "z": -0.6762251599421625,
+      "percentile": 24.68354430379747,
+      "members": 79
+    }
+  },
+  "breakdowns": {
+    "by_hcp_type": [
+      {
+        "hcp_type": "Other Practice staff",
+        "dna": 97,
+        "total": 1156,
+        "rate": 0.08391003460207612
+      },
+      {
+        "hcp_type": "GP",
+        "dna": 47,
+        "total": 1488,
+        "rate": 0.031586021505376344
+      }
+    ],
+    "by_mode": [
+      {
+        "appt_mode": "Home Visit",
+        "dna": 5,
+        "total": 22,
+        "rate": 0.22727272727272727
+      },
+      {
+        "appt_mode": "Face-to-Face",
+        "dna": 91,
+        "total": 1265,
+        "rate": 0.07193675889328063
+      },
+      {
+        "appt_mode": "Telephone",
+        "dna": 48,
+        "total": 1357,
+        "rate": 0.03537214443625645
+      }
+    ],
+    "by_category": [
+      {
+        "national_category": "Patient contact during Care Home Round",
+        "dna": 5,
+        "total": 19,
+        "rate": 0.2631578947368421
+      },
+      {
+        "national_category": "Planned Clinics",
+        "dna": 33,
+        "total": 194,
+        "rate": 0.17010309278350516
+      },
+      {
+        "national_category": "Inconsistent Mapping",
+        "dna": 23,
+        "total": 303,
+        "rate": 0.07590759075907591
+      },
+      {
+        "national_category": "Planned Clinical Procedure",
+        "dna": 26,
+        "total": 438,
+        "rate": 0.0593607305936073
+      },
+      {
+        "national_category": "General Consultation Routine",
+        "dna": 57,
+        "total": 1687,
+        "rate": 0.033787788974510964
+      },
+      {
+        "national_category": "Home Visit",
+        "dna": 0,
+        "total": 3,
+        "rate": 0
+      }
+    ],
+    "time_to_booking": {
+      "buckets": [
+        {
+          "bucket": "2 to 7 Days",
+          "days": null,
+          "dna": 56,
+          "total": 379,
+          "rate": 0.14775725593667546
+        },
+        {
+          "bucket": "Same Day",
+          "days": 0,
+          "dna": 61,
+          "total": 1724,
+          "rate": 0.03538283062645012
+        },
+        {
+          "bucket": "1 Day",
+          "days": 1,
+          "dna": 9,
+          "total": 130,
+          "rate": 0.06923076923076923
+        },
+        {
+          "bucket": "8  to 14 Days",
+          "days": 11,
+          "dna": 11,
+          "total": 242,
+          "rate": 0.045454545454545456
+        },
+        {
+          "bucket": "15  to 21 Days",
+          "days": 18,
+          "dna": 5,
+          "total": 81,
+          "rate": 0.06172839506172839
+        },
+        {
+          "bucket": "22  to 28 Days",
+          "days": 25,
+          "dna": 1,
+          "total": 76,
+          "rate": 0.013157894736842105
+        },
+        {
+          "bucket": "More than 28 Days",
+          "days": 35,
+          "dna": 1,
+          "total": 12,
+          "rate": 0.08333333333333333
+        }
+      ],
+      "weighted_corr_wait_vs_dna": 0.15216999102505874
+    },
+    "per_mode_cohort_compare": [
+      {
+        "mode": "Home Visit",
+        "target": {
+          "dna": 5,
+          "total": 22,
+          "rate": 0.22727272727272727
+        },
+        "cohort": {
+          "members": 74,
+          "mean_rate": 0.04745186114314525,
+          "sd_rate": 0.07445399899226568,
+          "z": 2.415194194582643,
+          "percentile": 95.27027027027027
+        }
+      },
+      {
+        "mode": "Face-to-Face",
+        "target": {
+          "dna": 91,
+          "total": 1265,
+          "rate": 0.07193675889328063
+        },
+        "cohort": {
+          "members": 82,
+          "mean_rate": 0.08738365054113947,
+          "sd_rate": 0.02573262787948479,
+          "z": -0.6002842663486304,
+          "percentile": 28.65853658536585
+        }
+      },
+      {
+        "mode": "Telephone",
+        "target": {
+          "dna": 48,
+          "total": 1357,
+          "rate": 0.03537214443625645
+        },
+        "cohort": {
+          "members": 82,
+          "mean_rate": 0.04764125225845502,
+          "sd_rate": 0.0372606119822597,
+          "z": -0.32927821550649966,
+          "percentile": 38.41463414634146
+        }
+      }
+    ]
+  }
+}
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ node deep-compare-dna.js Practice_Level_Crosstab_Jul_2
+5.csv --ods Y02960
+{
+  "target": {
+    "ods": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "supplier": "EMIS",
+    "pcn_code": "U07506",
+    "pcn_name": "ARDWICK AND LONGSIGHT PCN",
+    "subicb_code": "14L",
+    "subicb_name": "NHS Greater Manchester ICB - 14L"
+  },
+  "scope": "subicb",
+  "overall": {
+    "months": [
+      {
+        "month": "01JUL2025",
+        "dna": 154,
+        "total": 2814,
+        "rate": 0.05472636815920398
+      }
+    ],
+    "totals": {
+      "dna": 154,
+      "total": 2814,
+      "rate": 0.05472636815920398
+    },
+    "cohort_vs_scope": {
+      "mean": 0.07099349134464256,
+      "sd": 0.022857294384185996,
+      "z": -0.711681921404185,
+      "percentile": 26.21951219512195
+    },
+    "supplier_only_vs_scope": {
+      "supplier": "EMIS",
+      "mean": 0.07032982385868823,
+      "sd": 0.021170799371048165,
+      "z": -0.7370272338805752,
+      "percentile": 25.949367088607595,
+      "members": 79
+    }
+  },
+  "breakdowns": {
+    "by_hcp_type": [
+      {
+        "hcp_type": "Other Practice staff",
+        "dna": 81,
+        "total": 1104,
+        "rate": 0.07336956521739131
+      },
+      {
+        "hcp_type": "GP",
+        "dna": 73,
+        "total": 1710,
+        "rate": 0.04269005847953217
+      }
+    ],
+    "by_mode": [
+      {
+        "appt_mode": "Face-to-Face",
+        "dna": 85,
+        "total": 1190,
+        "rate": 0.07142857142857142
+      },
+      {
+        "appt_mode": "Telephone",
+        "dna": 69,
+        "total": 1612,
+        "rate": 0.042803970223325064
+      },
+      {
+        "appt_mode": "Home Visit",
+        "dna": 0,
+        "total": 12,
+        "rate": 0
+      }
+    ],
+    "by_category": [
+      {
+        "national_category": "Planned Clinics",
+        "dna": 20,
+        "total": 142,
+        "rate": 0.14084507042253522
+      },
+      {
+        "national_category": "Planned Clinical Procedure",
+        "dna": 40,
+        "total": 350,
+        "rate": 0.11428571428571428
+      },
+      {
+        "national_category": "Inconsistent Mapping",
+        "dna": 15,
+        "total": 347,
+        "rate": 0.043227665706051875
+      },
+      {
+        "national_category": "General Consultation Routine",
+        "dna": 79,
+        "total": 1963,
+        "rate": 0.040244523688232295
+      },
+      {
+        "national_category": "Home Visit",
+        "dna": 0,
+        "total": 12,
+        "rate": 0
+      }
+    ],
+    "time_to_booking": {
+      "buckets": [
+        {
+          "bucket": "2 to 7 Days",
+          "days": null,
+          "dna": 35,
+          "total": 281,
+          "rate": 0.12455516014234876
+        },
+        {
+          "bucket": "Same Day",
+          "days": 0,
+          "dna": 81,
+          "total": 2036,
+          "rate": 0.039783889980353634
+        },
+        {
+          "bucket": "1 Day",
+          "days": 1,
+          "dna": 8,
+          "total": 94,
+          "rate": 0.0851063829787234
+        },
+        {
+          "bucket": "8  to 14 Days",
+          "days": 11,
+          "dna": 15,
+          "total": 155,
+          "rate": 0.0967741935483871
+        },
+        {
+          "bucket": "15  to 21 Days",
+          "days": 18,
+          "dna": 9,
+          "total": 201,
+          "rate": 0.04477611940298507
+        },
+        {
+          "bucket": "22  to 28 Days",
+          "days": 25,
+          "dna": 2,
+          "total": 31,
+          "rate": 0.06451612903225806
+        },
+        {
+          "bucket": "More than 28 Days",
+          "days": 35,
+          "dna": 4,
+          "total": 16,
+          "rate": 0.25
+        }
+      ],
+      "weighted_corr_wait_vs_dna": 0.5633432221306187
+    },
+    "per_mode_cohort_compare": [
+      {
+        "mode": "Face-to-Face",
+        "target": {
+          "dna": 85,
+          "total": 1190,
+          "rate": 0.07142857142857142
+        },
+        "cohort": {
+          "members": 82,
+          "mean_rate": 0.08738038615328153,
+          "sd_rate": 0.02612183979788235,
+          "z": -0.610669648391431,
+          "percentile": 26.21951219512195
+        }
+      },
+      {
+        "mode": "Telephone",
+        "target": {
+          "dna": 69,
+          "total": 1612,
+          "rate": 0.042803970223325064
+        },
+        "cohort": {
+          "members": 82,
+          "mean_rate": 0.049002955687311264,
+          "sd_rate": 0.039269845220067774,
+          "z": -0.15785612164364682,
+          "percentile": 44.51219512195122
+        }
+      },
+      {
+        "mode": "Home Visit",
+        "target": {
+          "dna": 0,
+          "total": 12,
+          "rate": 0
+        },
+        "cohort": {
+          "members": 73,
+          "mean_rate": 0.03163683331949738,
+          "sd_rate": 0.04967355025040924,
+          "z": -0.636894950330971,
+          "percentile": 23.972602739726025
+        }
+      }
+    ]
+  }
+}
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ node deep-compare-dna.js Practice_Level_Crosstab_Jun_2
+5.csv --ods Y02960
+{
+  "target": {
+    "ods": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "supplier": "EMIS",
+    "pcn_code": "U07506",
+    "pcn_name": "ARDWICK AND LONGSIGHT PCN",
+    "subicb_code": "14L",
+    "subicb_name": "NHS Greater Manchester ICB - 14L"
+  },
+  "scope": "subicb",
+  "overall": {
+    "months": [
+      {
+        "month": "01JUN2025",
+        "dna": 167,
+        "total": 2528,
+        "rate": 0.06606012658227849
+      }
+    ],
+    "totals": {
+      "dna": 167,
+      "total": 2528,
+      "rate": 0.06606012658227849
+    },
+    "cohort_vs_scope": {
+      "mean": 0.07092702308094692,
+      "sd": 0.025108893345689855,
+      "z": -0.19383158117177146,
+      "percentile": 46.95121951219512
+    },
+    "supplier_only_vs_scope": {
+      "supplier": "EMIS",
+      "mean": 0.07006887922248554,
+      "sd": 0.0231024142197244,
+      "z": -0.1735209403692737,
+      "percentile": 47.46835443037975,
+      "members": 79
+    }
+  },
+  "breakdowns": {
+    "by_hcp_type": [
+      {
+        "hcp_type": "Other Practice staff",
+        "dna": 87,
+        "total": 912,
+        "rate": 0.09539473684210527
+      },
+      {
+        "hcp_type": "GP",
+        "dna": 80,
+        "total": 1616,
+        "rate": 0.04950495049504951
+      }
+    ],
+    "by_mode": [
+      {
+        "appt_mode": "Home Visit",
+        "dna": 1,
+        "total": 2,
+        "rate": 0.5
+      },
+      {
+        "appt_mode": "Face-to-Face",
+        "dna": 76,
+        "total": 1044,
+        "rate": 0.07279693486590039
+      },
+      {
+        "appt_mode": "Telephone",
+        "dna": 90,
+        "total": 1482,
+        "rate": 0.06072874493927125
+      }
+    ],
+    "by_category": [
+      {
+        "national_category": "Home Visit",
+        "dna": 1,
+        "total": 2,
+        "rate": 0.5
+      },
+      {
+        "national_category": "Planned Clinics",
+        "dna": 11,
+        "total": 70,
+        "rate": 0.15714285714285714
+      },
+      {
+        "national_category": "Planned Clinical Procedure",
+        "dna": 35,
+        "total": 284,
+        "rate": 0.12323943661971831
+      },
+      {
+        "national_category": "Inconsistent Mapping",
+        "dna": 27,
+        "total": 254,
+        "rate": 0.1062992125984252
+      },
+      {
+        "national_category": "General Consultation Routine",
+        "dna": 93,
+        "total": 1918,
+        "rate": 0.048488008342022944
+      }
+    ],
+    "time_to_booking": {
+      "buckets": [
+        {
+          "bucket": "2 to 7 Days",
+          "days": null,
+          "dna": 21,
+          "total": 130,
+          "rate": 0.16153846153846155
+        },
+        {
+          "bucket": "Same Day",
+          "days": 0,
+          "dna": 89,
+          "total": 1896,
+          "rate": 0.0469409282700422
+        },
+        {
+          "bucket": "1 Day",
+          "days": 1,
+          "dna": 5,
+          "total": 76,
+          "rate": 0.06578947368421052
+        },
+        {
+          "bucket": "8  to 14 Days",
+          "days": 11,
+          "dna": 36,
+          "total": 263,
+          "rate": 0.13688212927756654
+        },
+        {
+          "bucket": "15  to 21 Days",
+          "days": 18,
+          "dna": 12,
+          "total": 127,
+          "rate": 0.09448818897637795
+        },
+        {
+          "bucket": "22  to 28 Days",
+          "days": 25,
+          "dna": 4,
+          "total": 27,
+          "rate": 0.14814814814814814
+        },
+        {
+          "bucket": "More than 28 Days",
+          "days": 35,
+          "dna": 0,
+          "total": 9,
+          "rate": 0
+        }
+      ],
+      "weighted_corr_wait_vs_dna": 0.7678183225268979
+    },
+    "per_mode_cohort_compare": [
+      {
+        "mode": "Home Visit",
+        "target": {
+          "dna": 1,
+          "total": 2,
+          "rate": 0.5
+        },
+        "cohort": {
+          "members": 74,
+          "mean_rate": 0.04085291576328584,
+          "sd_rate": 0.08293055159427598,
+          "z": 5.536525145558121,
+          "percentile": 99.32432432432432
+        }
+      },
+      {
+        "mode": "Face-to-Face",
+        "target": {
+          "dna": 76,
+          "total": 1044,
+          "rate": 0.07279693486590039
+        },
+        "cohort": {
+          "members": 82,
+          "mean_rate": 0.08743297781078685,
+          "sd_rate": 0.028834024497600252,
+          "z": -0.5075962582366733,
+          "percentile": 34.756097560975604
+        }
+      },
+      {
+        "mode": "Telephone",
+        "target": {
+          "dna": 90,
+          "total": 1482,
+          "rate": 0.06072874493927125
+        },
+        "cohort": {
+          "members": 82,
+          "mean_rate": 0.0483942058104007,
+          "sd_rate": 0.03653078108652312,
+          "z": 0.3376478345660392,
+          "percentile": 73.78048780487805
+        }
+      }
+    ]
+  }
+}
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ 

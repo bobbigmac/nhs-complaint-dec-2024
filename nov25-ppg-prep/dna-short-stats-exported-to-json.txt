@@ -1,0 +1,74 @@
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ node compare-dna.js Practice_Level_Crosstab_Aug_25.csv Y02960
+{
+  "target": {
+    "ods": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "sub_icb": "NHS Greater Manchester ICB - 14L",
+    "pcn": "ARDWICK AND LONGSIGHT PCN",
+    "supplier": "EMIS",
+    "total_appointments": 2644,
+    "dna_appointments": 144,
+    "dna_rate": "5.45%"
+  },
+  "cohort": {
+    "scope": "subicb",
+    "members": 82,
+    "rank_by_dna_rate_desc": 62,
+    "percentile_worse": "74.39%",
+    "percentile_better": "24.39%",
+    "ties_same_rate": 1
+  },
+  "estimate": {
+    "cost_mid_30": "£4,320"
+  }
+}
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ node compare-dna.js Practice_Level_Crosstab_Jul_25.csv Y02960
+{
+  "target": {
+    "ods": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "sub_icb": "NHS Greater Manchester ICB - 14L",
+    "pcn": "ARDWICK AND LONGSIGHT PCN",
+    "supplier": "EMIS",
+    "total_appointments": 2814,
+    "dna_appointments": 154,
+    "dna_rate": "5.47%"
+  },
+  "cohort": {
+    "scope": "subicb",
+    "members": 82,
+    "rank_by_dna_rate_desc": 61,
+    "percentile_worse": "73.17%",
+    "percentile_better": "25.61%",
+    "ties_same_rate": 1
+  },
+  "estimate": {
+    "cost_mid_30": "£4,620"
+  }
+}
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ node compare-dna.js Practice_Level_Crosstab_Jun_25.csv
+ Y02960
+{
+  "target": {
+    "ods": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "sub_icb": "NHS Greater Manchester ICB - 14L",
+    "pcn": "ARDWICK AND LONGSIGHT PCN",
+    "supplier": "EMIS",
+    "total_appointments": 2528,
+    "dna_appointments": 167,
+    "dna_rate": "6.61%"
+  },
+  "cohort": {
+    "scope": "subicb",
+    "members": 82,
+    "rank_by_dna_rate_desc": 44,
+    "percentile_worse": "52.44%",
+    "percentile_better": "46.34%",
+    "ties_same_rate": 1
+  },
+  "estimate": {
+    "cost_mid_30": "£5,010"
+  }
+}
+~./p./n./p./Practice_Level_Crosstab_Aug_25(main)$ 

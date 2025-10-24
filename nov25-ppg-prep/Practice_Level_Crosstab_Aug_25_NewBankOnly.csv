@@ -1,0 +1,90 @@
+APPOINTMENT_MONTH_START_DATE,GP_CODE,GP_NAME,SUPPLIER,PCN_CODE,PCN_NAME,SUB_ICB_LOCATION_CODE,SUB_ICB_LOCATION_NAME,HCP_TYPE,APPT_MODE,NATIONAL_CATEGORY,TIME_BETWEEN_BOOK_AND_APPT,COUNT_OF_APPOINTMENTS,APPT_STATUS
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,2 to 7 Days,17,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,1 Day,29,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,More than 28 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Home Visit,Home Visit,Same Day,3,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,22  to 28 Days,16,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,Same Day,10,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,2 to 7 Days,122,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,15  to 21 Days,27,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,1 Day,2,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,General Consultation Routine,1 Day,2,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,General Consultation Routine,Same Day,1,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,Inconsistent Mapping,Same Day,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,General Consultation Routine,1 Day,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,1 Day,5,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,Same Day,8,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,General Consultation Routine,Same Day,7,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,Same Day,38,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,2 to 7 Days,8,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,1 Day,36,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,2 to 7 Days,10,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,Same Day,1123,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,8  to 14 Days,6,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,2 to 7 Days,1,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,1 Day,14,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,Same Day,249,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,Planned Clinics,2 to 7 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,Planned Clinics,2 to 7 Days,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,Planned Clinics,Same Day,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,Same Day,3,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,22  to 28 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,8  to 14 Days,10,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,Same Day,5,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,8  to 14 Days,17,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,8  to 14 Days,2,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,8  to 14 Days,5,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Telephone,General Consultation Routine,2 to 7 Days,1,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,Same Day,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,2 to 7 Days,3,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,Inconsistent Mapping,2 to 7 Days,6,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,Inconsistent Mapping,1 Day,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,GP,Face-to-Face,General Consultation Routine,1 Day,2,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,Inconsistent Mapping,1 Day,16,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,General Consultation Routine,Same Day,9,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,General Consultation Routine,Same Day,96,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,General Consultation Routine,8  to 14 Days,2,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,General Consultation Routine,2 to 7 Days,1,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,General Consultation Routine,2 to 7 Days,8,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,15  to 21 Days,4,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Home Visit,Patient contact during Care Home Round,Same Day,2,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Home Visit,Patient contact during Care Home Round,Same Day,4,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Home Visit,Patient contact during Care Home Round,2 to 7 Days,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Home Visit,Patient contact during Care Home Round,2 to 7 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,Same Day,3,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,More than 28 Days,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,8  to 14 Days,13,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,8  to 14 Days,5,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,22  to 28 Days,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,2 to 7 Days,15,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,2 to 7 Days,61,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,15  to 21 Days,7,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,15  to 21 Days,2,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,1 Day,3,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,15  to 21 Days,4,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,1 Day,17,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,Same Day,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,22  to 28 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,Same Day,22,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,General Consultation Routine,8  to 14 Days,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,More than 28 Days,6,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,More than 28 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Home Visit,Patient contact during Care Home Round,Same Day,11,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,8  to 14 Days,123,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,8  to 14 Days,3,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,8  to 14 Days,39,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,8  to 14 Days,16,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,More than 28 Days,1,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,22  to 28 Days,54,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,15  to 21 Days,1,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,More than 28 Days,2,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,1 Day,2,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Telephone,Inconsistent Mapping,Same Day,10,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,2 to 7 Days,3,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Inconsistent Mapping,15  to 21 Days,5,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,General Consultation Routine,Same Day,78,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,2 to 7 Days,19,DNA
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,22  to 28 Days,3,Unknown
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinics,Same Day,38,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,2 to 7 Days,100,Attended
+01AUG2025,Y02960,NEW BANK HEALTH,EMIS,U07506,ARDWICK AND LONGSIGHT PCN,14L,NHS Greater Manchester ICB - 14L,Other Practice staff,Face-to-Face,Planned Clinical Procedure,15  to 21 Days,31,Unknown
