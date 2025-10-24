@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "target": {
+      "ods": "Y02960",
+      "name": "NEW BANK HEALTH",
+      "supplier": "EMIS",
+      "pcn_code": "U07506",
+      "pcn_name": "ARDWICK AND LONGSIGHT PCN",
+      "subicb_code": "14L",
+      "subicb_name": "NHS Greater Manchester ICB - 14L"
+    },
+    "months": [
+      "01JUN2025",
+      "01JUL2025",
+      "01AUG2025"
+    ]
+  },
+  "tests": {
+    "pre_vs_aug_phone": {
+      "pre": {
+        "dna": 159,
+        "total": 3094,
+        "rate": 0.05138978668390433
+      },
+      "aug": {
+        "dna": 48,
+        "total": 1357,
+        "rate": 0.03537214443625645
+      },
+      "delta_rate": -0.01601764224764788
+    },
+    "placebo_same_day_phone": {
+      "pre": {
+        "dna": 153,
+        "total": 2982,
+        "rate": 0.05130784708249497
+      },
+      "aug": {
+        "dna": 47,
+        "total": 1292,
+        "rate": 0.03637770897832817
+      },
+      "delta_rate": -0.014930138104166803
+    },
+    "control_group_emis_phone_delta": {
+      "members": 78,
+      "target_delta": -0.01601764224764788,
+      "peers_delta_mean": -0.0005175579370185246,
+      "peers_delta_sd": 0.020490854500504273,
+      "target_delta_percentile": 19.230769230769234
+    },
+    "hotspot_2to7_days": {
+      "planned_clinics": {
+        "pre": {
+          "dna": 7,
+          "total": 55,
+          "rate": 0.12727272727272726
+        },
+        "aug": {
+          "dna": 16,
+          "total": 78,
+          "rate": 0.20512820512820512
+        },
+        "delta_rate": 0.07785547785547786
+      },
+      "planned_procedure": {
+        "pre": {
+          "dna": 36,
+          "total": 221,
+          "rate": 0.16289592760180996
+        },
+        "aug": {
+          "dna": 19,
+          "total": 122,
+          "rate": 0.1557377049180328
+        },
+        "delta_rate": -0.007158222683777166
+      }
+    }
+  },
+  "extras": {
+    "monthly_phone_series": [
+      {
+        "month": "01JUN2025",
+        "dna": 90,
+        "total": 1482,
+        "rate": 0.06072874493927125
+      },
+      {
+        "month": "01JUL2025",
+        "dna": 69,
+        "total": 1612,
+        "rate": 0.042803970223325064
+      },
+      {
+        "month": "01AUG2025",
+        "dna": 48,
+        "total": 1357,
+        "rate": 0.03537214443625645
+      }
+    ],
+    "phone_waittime_correlation_by_month": [
+      {
+        "month": "01JUN2025",
+        "corr": 0.2132777694039307
+      },
+      {
+        "month": "01JUL2025",
+        "corr": -0.42752458761569356
+      },
+      {
+        "month": "01AUG2025",
+        "corr": -0.907658122380167
+      }
+    ],
+    "three_month_totals": {
+      "all": {
+        "dna": 465,
+        "total": 7986,
+        "rate": 0.058226897069872274
+      },
+      "phone": {
+        "dna": 207,
+        "total": 4451,
+        "rate": 0.046506403055493147
+      },
+      "face_to_face": {
+        "dna": 252,
+        "total": 3499,
+        "rate": 0.07202057730780223
+      },
+      "gp": {
+        "dna": 200,
+        "total": 4814,
+        "rate": 0.04154549231408392
+      },
+      "other_staff": {
+        "dna": 265,
+        "total": 3172,
+        "rate": 0.08354350567465321
+      }
+    }
+  },
+  "post_september_if_present": null
+}
