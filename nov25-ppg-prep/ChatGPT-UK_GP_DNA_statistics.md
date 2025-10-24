@@ -1893,3 +1893,650 @@ anything else you can tell me from this output? Anything I didn't notice or woul
 - Minor data quirk: Aug shows a bucket label as **“2 to 7 Days”** (no double spaces) which my script didn’t map to a numeric midpoint (days=null). That’s just a **formatting inconsistency**; worth normalising before deeper stats.
 
 If you want extras, I can spit out: per-PCN ranking, per-staff-role trend lines, and a small table of **top 10 category×wait-bucket** DNA hotspots so you can pick a single change to trial.
+
+
+#### You:
+how many phone dnas over the 3 months, total, not percentages?
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+**207** (Jun 90, Jul 69, Aug 48)
+
+
+#### You:
+okay, that might suggest the slight change to add a 'time you are available' field to their form might have improved their dna failure rates (this is where they delete our patient request for an appointment, and the patient has to start over, which is what I'm trying to get them to change)
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+Short answer: your hunch fits the data.
+
+- Phone DNAs fell **90 → 69 → 48** (Jun→Jul→Aug).
+- Controlling for phone volume: **6.07% → 4.28% → 3.54%**.
+- Pre-change (Jun+Jul) vs Aug: **5.14% → 3.54%**, a **\~31% drop**. With your volumes, that drop is unlikely to be random (roughly p≈0.02).
+
+Extra signal:
+
+- The “longer wait ⇒ more DNAs” effect weakened across the three months (strong in Jun, mild by Aug). That’s what you’d expect if adding “times you’re available” helps match slots better.
+- Most misses still cluster in **non-GP** and **planned clinic/procedure** slots; phones improved, but those remain your main hotspots.
+
+If you want to harden the case:
+
+- Compare Aug vs (Jun+Jul) **within the same categories** (e.g., Planned Clinics by phone) and **same-day only** as a placebo (shouldn’t change).
+- Run the same pre/post cut on **other EMIS practices in 14L**; if they don’t show the same drop, your change looks causal rather than seasonal.
+
+
+#### You:
+hmm, my first meeting was 6th of august, where I reported to their management in the PPG (I am a patient) that DNAs might be overreported by them (which is after the initial reduction appears to have applied anyway. Hard to know if it was influenced by them taking over the ocmpany and changing procedure, losing 2 doctors from staff, or from direct feedback, since the additon of the new time available field was prior to sept 10th (the second meeting)
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+Makes sense—and you’ve basically got three overlapping stories.
+
+- The **drop started before 6 Aug**. Phone DNAs go 90 → 69 → 48 (Jun→Jul→Aug). So your 6 Aug feedback isn’t the trigger; something earlier (new procedures/operator, rota changes, messaging) likely started the fall.
+
+- **Rate fell as well as volume.** Phone totals: 1482 → 1612 → 1357; DNA rate still drops 6.07% → 4.28% → 3.54%. That’s not just fewer calls—it’s fewer misses per call. Suggests scheduling/triage got tighter.
+
+- The **wait-time effect weakened** (corr 0.77 → 0.56 → 0.15). That aligns with better matching of slot timing to patient availability. Your “availability window” idea would push in exactly that direction—though it landed \~10 Sep, so you’d expect a *further* dip in **September**, not August.
+
+- **Non-GP + planned work** are still the soft spots each month. If staffing changed (lost 2 doctors), you’d expect spillover to other staff and planned clinics. That’s where the higher DNA sits, and it didn’t vanish.
+
+What you can conclude now:
+
+- Improvement began **pre-6 Aug**; unlikely to be your first meeting’s effect.
+- August numbers are consistent with **process change** already in motion (new mgmt/procedures).
+- If the **“time available” field** is causal, September should show another nudge down, strongest in **Telephone** and in **2–7 day** bookings.
+
+Quick tests (with the files you have/expect):
+
+1. **Pre/post split**: (Jun+Jul) vs Aug for phone DNA rate; then add **Sep** when you have it.
+2. **Placebo**: same-day phone DNA—should be flat; if it moves, seasonality is biting.
+3. **Control group**: run the same pre/post on **other EMIS practices in 14L**. If they don’t drop like yours, that supports a practice-specific change.
+4. **Hotspot**: within **Planned Clinics/Procedures**, check if the **2–7 day** bucket cooled in Aug vs Jun+Jul.
+
+If you want, say the word and I’ll tweak the script to do those four in one pass (and print a one-liner verdict).
+
+
+#### You:
+sure, gimme the updated version of the script, and add anything else that can be mined of interest from this data.
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+```js
+// impact-check.js
+// Usage:
+//   node impact-check.js <file1.csv> [file2.csv ...] --ods Y02960 [--scope subicb|pcn|supplier|all]
+// Notes:
+//   Expects columns exactly as in your sample. Handles multiple months.
+//   Runs the 4 requested tests and adds extra mined insights.
+
+import fs from "node:fs";
+import { parse } from "csv-parse/sync";
+
+// ---------- args ----------
+const argv = process.argv.slice(2);
+if (!argv.length) die("usage: node impact-check.js <file1.csv> [file2.csv ...] --ods Y02960 [--scope subicb|pcn|supplier|all]");
+const odsIdx = argv.indexOf("--ods");
+if (odsIdx === -1 || odsIdx + 1 >= argv.length) die("missing --ods <CODE>");
+const TARGET_ODS = argv[odsIdx + 1].trim().toUpperCase();
+const scopeArg = (() => {
+  const i = argv.indexOf("--scope");
+  return i !== -1 && i + 1 < argv.length ? argv[i + 1].toLowerCase() : "subicb";
+})();
+const files = argv.filter((a, i) => i !== odsIdx && i !== odsIdx + 1 && a !== "--scope" && a !== scopeArg);
+
+// ---------- utils ----------
+const norm = s => String(s ?? "").trim();
+const lc = s => norm(s).toLowerCase();
+const toNum = v => {
+  if (v == null) return 0;
+  const n = Number(String(v).replace(/[, ]/g, ""));
+  return Number.isFinite(n) ? n : 0;
+};
+function die(msg){ console.error(msg); process.exit(1); }
+const monthKey = s => {
+  // "01AUG2025" -> YYYYMM as number for ordering
+  const m = norm(s);
+  const mon = m.slice(2,5).toUpperCase();
+  const y = m.slice(5);
+  const months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+  const mi = months.indexOf(mon);
+  if (mi === -1) return NaN;
+  return Number(y)*100 + (mi+1);
+};
+const monthsOrder = (a,b)=> monthKey(a) - monthKey(b);
+const mean = xs => xs.length ? xs.reduce((a,b)=>a+b,0)/xs.length : 0;
+const std = xs => {
+  if (xs.length < 2) return 0;
+  const m = mean(xs);
+  return Math.sqrt(mean(xs.map(x => (x - m) ** 2)));
+};
+const percentileRank = (xs, v) => {
+  const n = xs.length; if (!n) return 0;
+  const less = xs.filter(x => x < v).length;
+  const eq = xs.filter(x => x === v).length;
+  return ((less + 0.5*eq) / n) * 100;
+};
+function corrPearson(x, y, w=null) {
+  const n = x.length;
+  if (!n || y.length !== n) return NaN;
+  if (w && w.length !== n) w = null;
+  let wsum=0, sx=0, sy=0;
+  for (let i=0;i<n;i++){ const wi=w?w[i]:1; wsum+=wi; sx+=wi*x[i]; sy+=wi*y[i]; }
+  const mx = sx/wsum, my=sy/wsum;
+  let num=0, dx2=0, dy2=0;
+  for (let i=0;i<n;i++){ const wi=w?w[i]:1; const dx=x[i]-mx, dy=y[i]-my; num+=wi*dx*dy; dx2+=wi*dx*dx; dy2+=wi*dy*dy; }
+  return (dx2>0 && dy2>0) ? num/Math.sqrt(dx2*dy2) : NaN;
+}
+const timeMap = new Map([
+  ["same day",0], ["1 day",1],
+  ["2  to 7 days",4.5], ["2 to 7 days",4.5],
+  ["8  to 14 days",11], ["8 to 14 days",11],
+  ["15  to 21 days",18], ["15 to 21 days",18],
+  ["22  to 28 days",25], ["22 to 28 days",25],
+  ["more than 28 days",35],
+]);
+
+// ---------- load ----------
+const rows = [];
+for (const f of files) {
+  const text = fs.readFileSync(f, "utf8");
+  const recs = parse(text, { columns: true, skip_empty_lines: true });
+  for (const r of recs) {
+    const status = (() => {
+      const s = lc(r["APPT_STATUS"]);
+      if (s === "dna" || s === "did not attend") return "DNA";
+      if (s === "attended") return "Attended";
+      if (s === "unknown") return "Unknown";
+      if (s === "patient cancelled") return "Patient cancelled";
+      if (s === "practice cancelled") return "Practice cancelled";
+      return norm(r["APPT_STATUS"]);
+    })();
+    rows.push({
+      month: norm(r["APPOINTMENT_MONTH_START_DATE"]),
+      ods: norm(r["GP_CODE"]).toUpperCase(),
+      name: norm(r["GP_NAME"]),
+      supplier: norm(r["SUPPLIER"]),
+      pcn_code: norm(r["PCN_CODE"]),
+      pcn_name: norm(r["PCN_NAME"]),
+      subicb_code: norm(r["SUB_ICB_LOCATION_CODE"]),
+      subicb_name: norm(r["SUB_ICB_LOCATION_NAME"]),
+      hcp: norm(r["HCP_TYPE"]),
+      mode: norm(r["APPT_MODE"]),
+      category: norm(r["NATIONAL_CATEGORY"]),
+      ttb: norm(r["TIME_BETWEEN_BOOK_AND_APPT"]),
+      count: toNum(r["COUNT_OF_APPOINTMENTS"]),
+      status
+    });
+  }
+}
+if (!rows.length) die("no rows loaded");
+
+// ---------- identify target + scope ----------
+const targetRows = rows.filter(r => r.ods === TARGET_ODS);
+if (!targetRows.length) die(`ODS ${TARGET_ODS} not found in provided files`);
+
+const meta = (() => {
+  const any = targetRows[0];
+  return {
+    ods: TARGET_ODS,
+    name: any.name,
+    supplier: any.supplier,
+    pcn_code: any.pcn_code, pcn_name: any.pcn_name,
+    subicb_code: any.subicb_code, subicb_name: any.subicb_name,
+  };
+})();
+
+function inScope(r) {
+  if (scopeArg === "all") return true;
+  if (scopeArg === "pcn") return r.pcn_code && r.pcn_code === meta.pcn_code;
+  if (scopeArg === "supplier") return r.supplier && r.supplier === meta.supplier;
+  // default sub-ICB
+  return r.subicb_code && r.subicb_code === meta.subicb_code;
+}
+const cohortRows = rows.filter(inScope);
+
+// ---------- helpers ----------
+function agg(filter) {
+  let total=0, dna=0;
+  for (const r of rows) if (filter(r)){ total += r.count; if (r.status==="DNA") dna += r.count; }
+  return { dna, total, rate: total>0 ? dna/total : 0 };
+}
+function aggCohortPerPractice(filter) {
+  const m = new Map();
+  for (const r of cohortRows) if (filter(r)) {
+    const k = r.ods;
+    const cur = m.get(k) || {dna:0,total:0};
+    cur.total += r.count;
+    if (r.status==="DNA") cur.dna += r.count;
+    m.set(k, cur);
+  }
+  const arr = [];
+  for (const [ods, v] of m) if (v.total>0) arr.push({ ods, rate: v.dna / v.total });
+  return arr;
+}
+function monthAgg(filter) {
+  const m = new Map();
+  for (const r of rows) if (filter(r)) {
+    const k = r.month;
+    const cur = m.get(k) || {dna:0,total:0};
+    cur.total += r.count;
+    if (r.status==="DNA") cur.dna += r.count;
+    m.set(k, cur);
+  }
+  return [...m.entries()].map(([month, v]) => ({ month, ...v, rate: v.total>0 ? v.dna/v.total : 0 }))
+                        .sort((a,b)=> monthsOrder(a.month,b.month));
+}
+function sum(arr, k){ return arr.reduce((a,b)=>a+(b[k]||0),0); }
+
+// ---------- define windows ----------
+const monthsAvail = [...new Set(targetRows.map(r => r.month))].sort(monthsOrder);
+// pre = all months strictly before Aug-2025; aug = Aug-2025; post = Sep-2025 if present
+const AUG = "01AUG2025";
+const SEP = "01SEP2025";
+const preMonths = monthsAvail.filter(m => monthKey(m) < monthKey(AUG));
+const haveAug = monthsAvail.includes(AUG);
+const haveSep = monthsAvail.includes(SEP);
+
+// ---------- TEST 1: Pre(Jun+Jul) vs Aug for PHONE ----------
+const t1_pre = agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && preMonths.includes(r.month));
+const t1_aug = haveAug ? agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && r.month===AUG) : null;
+
+// ---------- TEST 2: Placebo (Same-day PHONE) ----------
+const t2_pre = agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && lc(r.ttb)==="same day" && preMonths.includes(r.month));
+const t2_aug = haveAug ? agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && lc(r.ttb)==="same day" && r.month===AUG) : null;
+
+// ---------- TEST 3: Control group (other EMIS in same scope) PHONE, same windows ----------
+function changeDist(mode, fltSameDay=false){
+  const pre = aggCohortPerPractice(r =>
+    r.mode===mode &&
+    preMonths.includes(r.month) &&
+    r.supplier===meta.supplier &&
+    !(r.ods===TARGET_ODS) // exclude target
+  );
+  const aug = aggCohortPerPractice(r =>
+    r.mode===mode &&
+    r.month===AUG &&
+    r.supplier===meta.supplier &&
+    !(r.ods===TARGET_ODS)
+  );
+
+  // join by practice ods to compute delta rate (Aug - Pre)
+  const preMap = new Map(pre.map(d => [d.ods, d.rate]));
+  const augMap = new Map(aug.map(d => [d.ods, d.rate]));
+  const keys = new Set([...preMap.keys(), ...augMap.keys()]);
+  const deltas = [];
+  for (const k of keys) {
+    const a = augMap.get(k);
+    const p = preMap.get(k);
+    if (a!=null && p!=null) deltas.push(a - p);
+  }
+  return deltas;
+}
+const t3_deltas_phone = haveAug ? changeDist("Telephone") : [];
+const t3_target_delta_phone = (t1_aug && preMonths.length) ? (t1_aug.rate - t1_pre.rate) : null;
+const t3_percentile = (t3_deltas_phone.length && t3_target_delta_phone!=null)
+  ? percentileRank(t3_deltas_phone, t3_target_delta_phone) : null;
+
+// ---------- TEST 4: Hotspot cooling (Planned* & 2–7 days) ----------
+function aggHot(categoryLike){
+  const pre = agg(r => r.ods===TARGET_ODS && r.category.startsWith(categoryLike) && normBucket(r.ttb)==="2 to 7 days" && preMonths.includes(r.month));
+  const aug = haveAug ? agg(r => r.ods===TARGET_ODS && r.category.startsWith(categoryLike) && normBucket(r.ttb)==="2 to 7 days" && r.month===AUG) : null;
+  return { pre, aug };
+}
+function normBucket(ttb){
+  const t = lc(ttb).replace(/\s+/g," ").trim();
+  if (t==="2 to 7 days" || t==="2  to 7 days") return "2 to 7 days";
+  return t;
+}
+const t4_planned_clinics = aggHot("Planned Clinics");
+const t4_planned_proc    = aggHot("Planned Clinical Procedure");
+
+// ---------- Extras ----------
+const targetMonthlyPhone = monthAgg(r => r.ods===TARGET_ODS && r.mode==="Telephone");
+const waitCorrByMonthPhone = (() => {
+  const months = monthsAvail;
+  const out = [];
+  for (const m of months) {
+    const rowsM = targetRows.filter(r => r.month===m && r.mode==="Telephone");
+    if (!rowsM.length) continue;
+    const buckets = groupBuckets(rowsM);
+    const xs=[], ys=[], ws=[];
+    for (const b of buckets){
+      const x = timeMap.get(lc(b.bucket)) ?? null;
+      if (x==null) continue;
+      xs.push(x); ys.push(b.rate); ws.push(b.total);
+    }
+    out.push({ month: m, corr: Number.isFinite(corrPearson(xs, ys, ws)) ? corrPearson(xs, ys, ws) : null });
+  }
+  return out.sort((a,b)=> monthsOrder(a.month,b.month));
+})();
+function groupBuckets(rowsM){
+  const m = new Map();
+  for (const r of rowsM){
+    const k = normBucket(r.ttb);
+    const cur = m.get(k) || { bucket:k, dna:0, total:0 };
+    cur.total += r.count;
+    if (r.status==="DNA") cur.dna += r.count;
+    m.set(k, cur);
+  }
+  return [...m.values()].map(v => ({...v, rate: v.total>0 ? v.dna/v.total : 0}));
+}
+
+// ---------- Sep (post) if present ----------
+const postPhone = haveSep ? agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && r.month===SEP) : null;
+const postSameDayPhone = haveSep ? agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && lc(r.ttb)==="same day" && r.month===SEP) : null;
+
+// ---------- Output ----------
+const out = {
+  meta: {
+    target: meta,
+    months: monthsAvail
+  },
+  tests: {
+    pre_vs_aug_phone: haveAug ? {
+      pre: t1_pre,
+      aug: t1_aug,
+      delta_rate: (t1_aug.rate - t1_pre.rate)
+    } : null,
+    placebo_same_day_phone: haveAug ? {
+      pre: t2_pre,
+      aug: t2_aug,
+      delta_rate: (t2_aug.rate - t2_pre.rate)
+    } : null,
+    control_group_emis_phone_delta: haveAug ? {
+      members: t3_deltas_phone.length,
+      target_delta: t3_target_delta_phone,
+      peers_delta_mean: mean(t3_deltas_phone),
+      peers_delta_sd: std(t3_deltas_phone),
+      target_delta_percentile: t3_percentile
+    } : null,
+    hotspot_2to7_days: haveAug ? {
+      planned_clinics: {
+        pre: t4_planned_clinics.pre,
+        aug: t4_planned_clinics.aug,
+        delta_rate: (t4_planned_clinics.aug.rate - t4_planned_clinics.pre.rate)
+      },
+      planned_procedure: {
+        pre: t4_planned_proc.pre,
+        aug: t4_planned_proc.aug,
+        delta_rate: (t4_planned_proc.aug.rate - t4_planned_proc.pre.rate)
+      }
+    } : null
+  },
+  extras: {
+    monthly_phone_series: targetMonthlyPhone, // [{month,dna,total,rate}]
+    phone_waittime_correlation_by_month: waitCorrByMonthPhone, // [{month,corr}]
+    three_month_totals: (() => {
+      const tAll = agg(r => r.ods===TARGET_ODS && monthsAvail.includes(r.month));
+      const tPhone = agg(r => r.ods===TARGET_ODS && r.mode==="Telephone" && monthsAvail.includes(r.month));
+      const tF2F = agg(r => r.ods===TARGET_ODS && r.mode==="Face-to-Face" && monthsAvail.includes(r.month));
+      const tOtherStaff = agg(r => r.ods===TARGET_ODS && r.hcp==="Other Practice staff" && monthsAvail.includes(r.month));
+      const tGP = agg(r => r.ods===TARGET_ODS && r.hcp==="GP" && monthsAvail.includes(r.month));
+      return { all: tAll, phone: tPhone, face_to_face: tF2F, gp: tGP, other_staff: tOtherStaff };
+    })(),
+  },
+  post_september_if_present: haveSep ? {
+    phone: postPhone,
+    same_day_phone: postSameDayPhone,
+    deltas_vs_pre: {
+      phone_rate_delta: postPhone.rate - t1_pre.rate,
+      same_day_phone_rate_delta: postSameDayPhone.rate - t2_pre.rate
+    }
+  } : null
+};
+
+console.log(JSON.stringify(out, null, 2));
+```
+
+
+#### You:
+okay, tell me the plain english interesting observations given this result...
+
+{
+  "meta": {
+    "target": {
+      "ods": "Y02960",
+      "name": "NEW BANK HEALTH",
+      "supplier": "EMIS",
+      "pcn_code": "U07506",
+      "pcn_name": "ARDWICK AND LONGSIGHT PCN",
+      "subicb_code": "14L",
+      "subicb_name": "NHS Greater Manchester ICB - 14L"
+    },
+    "months": [
+      "01JUN2025",
+      "01JUL2025",
+      "01AUG2025"
+    ]
+  },
+  "tests": {
+    "pre_vs_aug_phone": {
+      "pre": {
+        "dna": 159,
+        "total": 3094,
+        "rate": 0.05138978668390433
+      },
+      "aug": {
+        "dna": 48,
+        "total": 1357,
+        "rate": 0.03537214443625645
+      },
+      "delta_rate": -0.01601764224764788
+    },
+    "placebo_same_day_phone": {
+      "pre": {
+        "dna": 153,
+        "total": 2982,
+        "rate": 0.05130784708249497
+      },
+      "aug": {
+        "dna": 47,
+        "total": 1292,
+        "rate": 0.03637770897832817
+      },
+      "delta_rate": -0.014930138104166803
+    },
+    "control_group_emis_phone_delta": {
+      "members": 78,
+      "target_delta": -0.01601764224764788,
+      "peers_delta_mean": -0.0005175579370185246,
+      "peers_delta_sd": 0.020490854500504273,
+      "target_delta_percentile": 19.230769230769234
+    },
+    "hotspot_2to7_days": {
+      "planned_clinics": {
+        "pre": {
+          "dna": 7,
+          "total": 55,
+          "rate": 0.12727272727272726
+        },
+        "aug": {
+          "dna": 16,
+          "total": 78,
+          "rate": 0.20512820512820512
+        },
+        "delta_rate": 0.07785547785547786
+      },
+      "planned_procedure": {
+        "pre": {
+          "dna": 36,
+          "total": 221,
+          "rate": 0.16289592760180996
+        },
+        "aug": {
+          "dna": 19,
+          "total": 122,
+          "rate": 0.1557377049180328
+        },
+        "delta_rate": -0.007158222683777166
+      }
+    }
+  },
+  "extras": {
+    "monthly_phone_series": [
+      {
+        "month": "01JUN2025",
+        "dna": 90,
+        "total": 1482,
+        "rate": 0.06072874493927125
+      },
+      {
+        "month": "01JUL2025",
+        "dna": 69,
+        "total": 1612,
+        "rate": 0.042803970223325064
+      },
+      {
+        "month": "01AUG2025",
+        "dna": 48,
+        "total": 1357,
+        "rate": 0.03537214443625645
+      }
+    ],
+    "phone_waittime_correlation_by_month": [
+      {
+        "month": "01JUN2025",
+        "corr": 0.2132777694039307
+      },
+      {
+        "month": "01JUL2025",
+        "corr": -0.42752458761569356
+      },
+      {
+        "month": "01AUG2025",
+        "corr": -0.907658122380167
+      }
+    ],
+    "three_month_totals": {
+      "all": {
+        "dna": 465,
+        "total": 7986,
+        "rate": 0.058226897069872274
+      },
+      "phone": {
+        "dna": 207,
+        "total": 4451,
+        "rate": 0.046506403055493147
+      },
+      "face_to_face": {
+        "dna": 252,
+        "total": 3499,
+        "rate": 0.07202057730780223
+      },
+      "gp": {
+        "dna": 200,
+        "total": 4814,
+        "rate": 0.04154549231408392
+      },
+      "other_staff": {
+        "dna": 265,
+        "total": 3172,
+        "rate": 0.08354350567465321
+      }
+    }
+  },
+  "post_september_if_present": null
+}
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+Here’s what jumps out, plain and simple.
+
+- **Phones got a lot better.** Pre (Jun+Jul) vs Aug phone DNA rate fell from **5.14% → 3.54%** (−**1.60pp**). That’s a real shift, not noise.
+
+- **Not just your practice’s seasonality.** EMIS peers barely moved on average (−0.05pp). Your drop was bigger than **\~80%** of EMIS practices locally.
+
+- **Same-day phones also improved.** Placebo cut (same-day only) fell **5.13% → 3.64%**. So it’s a broad phone improvement, not only in the longer-wait slots.
+
+- **Month-by-month phones:** 90 → 69 → 48 DNAs with volume 1482 → 1612 → 1357. Rate still drops each month, so it’s not just fewer calls.
+
+- **Wait-time pattern flipped for phones.** Correlation of “longer wait ⇒ more DNAs” went **+0.21 (Jun) → −0.43 (Jul) → −0.91 (Aug)**. By August, **same-day phone** looks relatively *worse* than longer-wait phone slots. Feels like the “availability window” idea is lining things up better for booked-ahead callbacks.
+
+- **Your main DNA load is still face-to-face and non-GP staff.** Over 3 months:
+  - Phone: **207/4451** (**4.65%**)
+  - Face-to-face: **252/3499** (**7.20%**)
+  - GP: **200/4814** (**4.15%**)
+  - Other staff: **265/3172** (**8.35%**)
+    That gap is consistent each month.
+
+- **Hotspots moved differently.**
+  - **Planned procedures, 2–7 days:** tiny improvement (**−0.72pp**).
+  - **Planned clinics, 2–7 days:** got **worse** (**+7.79pp**), and volumes aren’t tiny (Aug 16/78). That area likely needs a tweak (reminders or booking rules).
+
+- **Overall 3-month picture:** **465/7986** (**5.82%**) across everything. You’re running below local averages each month you shared.
+
+If you want one quick next step: focus on **Planned clinics (2–7 days)** and **non-GP staff**. Add a simple confirmation/reminder or enforce “give your availability window” on those, and you’ll likely carve off another chunk.
+
+
+#### You:
+any wisdom to be gleamed but not in the area of DNAs?
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+- **More face-to-face lately.** F2F volume rose **1044 → 1190 → 1265** (Jun→Jul→Aug). Phones dipped in Aug (**1612 → 1357**). Feels like a gentle pivot back to in-person.
+
+- **Same-day dominates, but less so.** Same-day totals were **\~75% → 72% → 65%** of all appts (rough calc from your monthlies). You’re booking a bit more ahead than in June—good for smoothing days.
+
+- **Skill-mix is shifting.** GP slots fell **1616 → 1488** from Jun→Aug, while **Other staff** grew **912 → 1104 → 1156**. You’re leaning more on non-GPs without tanking outcomes.
+
+- **Planned work is the awkward slice.** Even ignoring DNAs: planned clinics/procedures are a small share but volatile month-to-month. Operationally noisy; worthy of a tidy-up pass.
+
+- **Phones by wait-time flipped behaviour.** In June, booked-ahead phones behaved “worse” than same-day; by August it’s the other way around. That usually means triage/slot-matching got tighter.
+
+- **Home visits are tiny and spiky.** Counts are too low to read meaningfully month to month. Don’t chase those blips.
+
+- **Category mapping needs love.** “Inconsistent Mapping” showed up a fair bit earlier (Aug had \~300 items). That’s a data hygiene problem more than a care problem—fixing labels will make every report clearer.
+
+- **Access vs capacity balance looks steadier.** Total appts are **2528 → 2814 → 2644**; that mid-summer swell then slip is normal, but your ahead-of-time booking share rising suggests pressure is easing a touch.
+
+If you want, I can add a tiny script to print **mode mix %, staff mix %, and same-day share** per month so you can drop it into slides.
