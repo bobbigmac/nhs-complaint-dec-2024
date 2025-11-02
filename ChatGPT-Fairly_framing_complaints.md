@@ -93,3 +93,27 @@ Love this framing. Here are practical, non-jargony things to keep in your head (
 - “I’m not asking for heroics—just default settings that don’t punish people for working hours or bad days. Can we agree on *no dead ends*, *predictable replies*, and *fewer restarts* as the bar we hold ourselves to?”
 
 If you want, I can turn this into a one-pager you can read out at the PPG or a slide with the litmus tests and story snippets—plain English, no metrics.
+
+
+#### You:
+Notes time (just restate for confirmation, don't significantly expand upon notes), I'll review this chat in full later...
+It's important to note that guy's right "everyone does this" is kinda true, but mainly because they're SO far out of what actual expectations patients have today (it's not the 90s, it's NOT okay for your website to go down when your office is closed, it's not okay to expect people to wait all day for a call, it's not okay to ask them to start over or fill in many redundant fields in complex forms, it's just not okay). Like my nan used to say "if your friends put your hand in the fire, would you do it too?", we need to recognise that even if they'd like to change, there are a LOT of layers of qualification preventing anyone from doing better because building good software is a different skill than getting software through the validation/processes into the NHS. It's not a software problem, it's a process problem.
+
+Another note, the management company (GTD Healthcare) might have more success taking our gathered trustpilot negative (1 and 2 star) reviews of the PATCHS product, along with feedback from patients, along with the ("39% of patient survey had a hard time getting an appointment" issue) and their own feedback to PATCHS to improve their product. It's definitely easier than building a new product and trying to get that into NHS systems. 
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+\[Unsupported Content]
+
+
+#### ChatGPT:
+Got it—here are your notes restated, no extras:
+
+- “Everyone does this” isn’t a defense. Expectations are modern now (it’s not the 90s): it’s **not OK** for the website to shut when the office shuts, to make people wait all day for a call, to force restarts, or to use long/redundant forms. As your nan said: *if your friends put your hand in the fire, would you do it too?*
+
+- Even willing teams are blocked by layers of qualification/validation. Building good software ≠ getting software through NHS processes. This is primarily a **process problem**, not just a software problem.
+
+- For GTD Healthcare: collect **1–2★ Trustpilot reviews of PATCHS**, patient feedback, the **“39% struggled to get an appointment”** survey stat, plus internal feedback, and take that bundle to PATCHS to drive product improvements. This is likely **easier than building a new product** and pushing it through NHS integration.
