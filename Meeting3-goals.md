@@ -31,8 +31,13 @@ Switching to always-on intake, predictable/accessible comms, and fewer restarts 
 
 ## Notes
 
-- The NHS 'goals' (only online during office hours, no/minimal digital/phone-less access) are absolutely rock-bottom standards compared to the real world (Can you name one other industry whose website goes offline when their office is shut?). 
-	- Healthcare/GP systems should be _better_ than other areas, more accessible, more human, not worse.
-	- The NHS app as login would be fine, but it says it needs some other logins (been unable to test, as it's always been down or out of hours)
+- The NHS 'goals' (only online during office hours, poor access minimums) are absolutely rock-bottom standards compared to the real world (Can you name one other industry whose website goes offline when their office is shut?). 
+	- Healthcare/GP systems should be _better_ than other areas, more accessible, more human-friendly, not worse, systemic failure is a pattern everyone has to choose to break.
+	- The NHS app as login would be fine, but it says it needs some other logins
+		- Confusing, can't you just give me a link to the form? Several paths with long explanations.
+		- Have been unable to test further, as it's always been down/offline or out of hours/offline.
+	- Not a 'training' problem. The process is poor. 
+		- I'm a programmer and system designer, confident and highly competent computer user, and just can't access it because it's offline, and still confusing. 
+		- There are understandable/fair technical reasons... bad infrastructure, overly complex system controls, blind metrics, poor integration, lack of proper use case analytics during specification, and barely (if any) input from a professional designer (either at New Bank, GTD or PATCHS), competing priorities, legacy systems.
 - Noticed New Bank recruiting for a receptionist on Indeed. Pretty low salary (~22k, barely living wage, with a lot of responsibilities). Any chance of paying more to get someone good at it, someone who cares about patients?
 	- Are support systems in place to help reception help patients? Do they have enough autonomy to handle simple issues? Do they have enough power to respond to issues dynamically, or are they stuck filling in the same bad forms as patients?
