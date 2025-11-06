@@ -10,8 +10,8 @@
 * **Unscheduled calls:** patients wait all day; a missed call = start over.
 	* Missed, unscheduled calls must not nuke the request.
 * **Redundant/complex forms + multiple logins:** high friction and drop-offs; “NHS Login” complexity makes it worse.
-* **No live portal/progress:** people can’t see status, can’t re-read a call, don’t know what happens next.
-* **Corporate/generic wording:** unclear routes, multiple branches, no rationale; the path forward gets harder, not clearer.
+* **No message portal/progress:** people can’t see status, can’t re-read a call, don’t know what happens next.
+* **Confusing process/wording:** unclear routes, multiple branches, no rationale; the path forward gets harder, not clearer.
 * **Reality vs metrics:** appointment numbers look “fine” (slight improvement june-august), but reviews and complaints still don't agree with the numbers.
 
 > **Example:** Works 7–7, form is always closed. Tries on a phone browser from work, misses a triage call (they're working, duh), told to start again, site is down. By Friday they give up, get sicker. Most don’t bother to leave a review—because “nothing changes.”
@@ -28,7 +28,7 @@
 * **Always a way to start** (24/7 for non-urgent/admin).
 * **Predictable next step** (clear acknowledgements and timeframes).
 * **Fewer restarts** (don’t make people repeat themselves).
-* **Don’t count missed, unscheduled calls as DNAs**. That’s a system failure, not a patient failure.
+* **Don’t count missed, unscheduled calls as DNAs**. [ongoing] That’s a system failure, not a patient failure.
 	- I checked the "Appointments in General Practice" monthly data
 		- Shows 1 in 18 (~6%) appointments are missed.
 		- Phone DNAs fell 90 → 69 → 48 (Jun→Jul→Aug).
