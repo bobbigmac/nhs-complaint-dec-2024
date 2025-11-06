@@ -4,13 +4,17 @@
 ## Why we’re here (human impact)
 
 * **After-hours blackout:** the website shuts when the office shuts → shift workers/carers are locked out entirely *(PATCHS should already have an option to stay online)*.
+	- This is a configuration choice already available to you.
+	- PATCHS lets practices keep an admin/non-urgent route open 24/7.
+	- Such an obvious error, _somebody_ on your team **should** have prevented this simple mistake.
 * **Unscheduled calls:** patients wait all day; a missed call = start over.
+	* Missed, unscheduled calls must not nuke the request.
 * **Redundant/complex forms + multiple logins:** high friction and drop-offs; “NHS Login” complexity makes it worse.
 * **No live portal/progress:** people can’t see status, can’t re-read a call, don’t know what happens next.
 * **Corporate/generic wording:** unclear routes, multiple branches, no rationale; the path forward gets harder, not clearer.
-* **Reality vs metrics:** appointment numbers look “fine” (slight improvement), but reviews and complaints say the opposite.
+* **Reality vs metrics:** appointment numbers look “fine” (slight improvement june-august), but reviews and complaints still don't agree with the numbers.
 
-> **Example:** Works 7–7, form is always closed. Tries on a phone at work, misses a midday triage call, told to start again. By Friday they give up, get sicker. Most don’t bother to leave a review—because “nothing changes.”
+> **Example:** Works 7–7, form is always closed. Tries on a phone browser from work, misses a triage call (they're working, duh), told to start again, site is down. By Friday they give up, get sicker. Most don’t bother to leave a review—because “nothing changes.”
 
 ## Scope of problem
 
@@ -24,6 +28,15 @@
 * **Always a way to start** (24/7 for non-urgent/admin).
 * **Predictable next step** (clear acknowledgements and timeframes).
 * **Fewer restarts** (don’t make people repeat themselves).
+* **Don’t count missed, unscheduled calls as DNAs**. That’s a system failure, not a patient failure.
+	- I checked the "Appointments in General Practice" monthly data
+		- Shows 1 in 18 (~6%) appointments are missed.
+		- Phone DNAs fell 90 → 69 → 48 (Jun→Jul→Aug).
+		- Controlling for phone volume: 6.07% → 4.28% → 3.54%.
+	- The reduction (~halving) in phone DNAs suggest reduced recording of missed calls as official DNAs, but how much time is being lost to unreported missed unscheduled calls each day? 
+	- If those requests are deleted, how are lost/dropped/closed requests filed? 
+	- Where are unsatisfied appointment/triage requests going now? 
+		- Closed and forgotten? Does anyone look at closed appointment request starts that didn't result in an appointment?
 
 **Bottom line:** This isn’t just software—it’s process. Today’s defaults create avoidable harm. 
 
