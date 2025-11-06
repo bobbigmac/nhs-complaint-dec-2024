@@ -31,7 +31,8 @@ Switching to always-on intake, predictable/accessible comms, and fewer restarts 
 
 ## Notes
 
-- The NHS 'goals' (only online during office hours, poor access minimums) are absolutely rock-bottom standards compared to the real world (Can you name one other industry whose website goes offline when their office is shut?). 
+- The NHS 'goals' (only online during office hours, poor access minimums) are absolutely rock-bottom standards compared to the real world
+	- Can you name one other industry whose website goes offline when their office is shut? 
 	- Healthcare/GP systems should be _better_ than other areas, more accessible, more human-friendly, not worse, systemic failure is a pattern everyone has to choose to break.
 	- The NHS app as login would be fine, but it says it needs some other logins
 		- Confusing, can't you just give me a link to the form? Several paths with long explanations.
