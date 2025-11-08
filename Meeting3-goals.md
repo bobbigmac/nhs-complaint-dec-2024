@@ -14,33 +14,34 @@
 * **Confusing process/wording:** unclear routes, multiple branches, no rationale; the path forward gets harder, not clearer.
 * **Reality vs metrics:** appointment numbers look “fine” (slight improvement june-august), but reviews and complaints still don't agree with the numbers.
 
-> **Example:** Works 7–7, form is always closed. Tries on a phone browser from work, misses a triage call (they're working, duh), told to start again, site is down. By Friday they give up, get sicker. Most don’t bother to leave a review—because “nothing changes.”
+> **Example:** Works 8–6, form is always closed. Tries on a phone browser from work, struggles through complex forms, misses a triage call (they're working), told to start again, site is down. By Friday they give up, get sicker. Most don’t bother to leave a review—because “nothing changes.”
 
 ## Scope of problem
 
 * **Patient survey:** 39% said it’s hard to get an appointment.
 	- Survey undercounts harm. Missing the people driven away at the front door. Real access failure is likely worse.
-* **Public feedback:** Hundreds of 1–2★ Trustpilot complaints on PATCHS calling out downtime, confusion, restarts, bad process choices, repeating cycles of simple/avoidable errors. Google reviews on GTD practices already seeing bad reviews for new system.
+* **Public feedback:** Hundreds of 1–2★ Trustpilot complaints on PATCHS calling out downtime, confusion, restarts, bad process choices, repeating cycles of simple/avoidable errors. 
+	- Google reviews on GTD practices already seeing bad reviews for new system.
 * **Spot checks:** intake always **offline out of hours**; **error pages in hours** → the service feels unreliable.
 
 ## Bare minimum expectation
 
-* **Always a way to start** (24/7 for non-urgent/admin).
-* **Predictable next step** (clear acknowledgements and timeframes).
+* **Always a way to start** 24/7 for non-urgent/admin. 
+	- Websites enable non-synchronous comms, don't waste it.
 * **Fewer restarts** (don’t make people repeat themselves).
 * **Don’t count missed, unscheduled calls as DNAs**. [ongoing] That’s a system failure, not a patient failure.
 	- I checked the "Appointments in General Practice" monthly data
 		- Shows 1 in 18 (~6%) appointments are missed.
 		- Phone DNAs fell 90 → 69 → 48 (Jun→Jul→Aug).
 		- Controlling for phone volume: 6.07% → 4.28% → 3.54%.
-	- The reduction (~halving) in phone DNAs suggest reduced recording of missed calls as official DNAs, but how much time is being lost to unreported missed unscheduled calls each day? 
+	- The reduction (~halving) in phone DNAs suggest reduced recording of missed calls as official DNAs, but how much time IS lost to unreported missed unscheduled calls each day? 
 	- If those requests are deleted, how are lost/dropped/closed requests filed? 
 	- Where are unsatisfied appointment/triage requests going now? 
 		- Closed and forgotten? Does anyone look at closed appointment request starts that didn't result in an appointment?
 
-**Bottom line:** This isn’t just software—it’s process. Today’s defaults create avoidable harm. 
+**Bottom line:** This isn’t just software—it’s process. Simple barriers creating avoidable harm. 
 
-Switching to always-on intake, predictable/accessible comms, and fewer restarts is the minimum bar patients can feel.
+Switching to always-on intake, and fewer restarts is the minimum bar patients can feel.
 
 ## Notes
 
@@ -57,6 +58,7 @@ Switching to always-on intake, predictable/accessible comms, and fewer restarts 
 		- Confusing, can't you just give me a link to the form? Several paths with long explanations.
 		- Have been unable to test further, as it's always been down/offline or out of hours/offline.
 	- Not a 'training' problem. The process is poor. 
+		- See PATCHS trustpilot reviews, very clear issues
 		- I'm a programmer and system designer, confident and highly competent computer user, and just can't access it because it's offline, and still confusing, as all 3 paths dead-end. 
 			- If a developer working for me shipped this, they wouldn't be working for me in future. 
 		- There are understandable/fair technical reasons... bad infrastructure, overly complex system controls, blind metrics, poor integration, lack of proper use case analytics during specification, and barely (if any) input from a professional designer (either at New Bank, GTD or PATCHS), competing priorities, legacy systems.
