@@ -64,3 +64,17 @@ Switching to always-on intake, and fewer restarts is the minimum bar patients ca
 		- I'm a programmer and system designer, confident and highly competent computer user, and just can't access it because it's offline, and still confusing, as all 3 paths dead-end. 
 			- If a developer working for me shipped this, they wouldn't be working for me in future. 
 		- There are understandable/fair technical reasons... bad infrastructure, overly complex system controls, blind metrics, poor integration, lack of proper use case analytics during specification, and barely (if any) input from a professional designer (either at New Bank, GTD or PATCHS), competing priorities, legacy systems.
+
+## Case restated for clarity
+
+We’re asking for these today...
+
+* **24/7 start-of-care route** for non-urgent/admin (form stays open; queue if busy).
+* **Phoneless access** to continue a request (SMS/email/portal reply; written by default if patient asks).
+* **“Just book me” option** for routine problems (self-book slots + reception/desk-booking for people who can’t/won’t use phones).
+* **No restarts** after a missed unscheduled call (or other closing state); keep the same thread alive, or allow reopening.
+* **Reception civility** as a standard, not luck.
+
+### Escalation
+
+The practice already worsened access by switching to a form that is offline out of hours, and riddled with design problems, while claiming 'success', demonstrating a lack of competence, so this will be escalated to Manchester City Council’s Health Scrutiny Committee, copying NHS Greater Manchester Integrated Care Board (Primary Care), then Healthwatch Manchester for public reporting, and—if needed—raise it at the Greater Manchester Joint Health Scrutiny committee and with the Care Quality Commission.
