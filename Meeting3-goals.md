@@ -77,4 +77,4 @@ We’re asking for these today...
 
 ### Escalation
 
-The practice already worsened access by switching to a form that is offline out of hours, and riddled with design problems, while claiming 'success', demonstrating a lack of competence, so this will be escalated to Manchester City Council’s Health Scrutiny Committee, copying NHS Greater Manchester Integrated Care Board (Primary Care), then Healthwatch Manchester for public reporting, and—if needed—raise it at the Greater Manchester Joint Health Scrutiny committee and with the Care Quality Commission.
+The practice already worsened access by switching to a form that is offline out of hours, and riddled with well documented design problems, demonstrating a lack of competence, so this issue will be escalated to Manchester City Council’s Health Scrutiny Committee, copying NHS Greater Manchester Integrated Care Board (Primary Care), then Healthwatch Manchester for public reporting, and—if needed—raise it at the Greater Manchester Joint Health Scrutiny committee and with the Care Quality Commission.
