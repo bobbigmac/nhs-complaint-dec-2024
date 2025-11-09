@@ -147,12 +147,95 @@ a {
   border-left: 2px solid rgba(0, 0, 0, 0.25);
 }
 
+.summary-card {
+  column-span: all;
+  width: 100%;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  background: #ffffff;
+}
+
+.summary-list {
+  margin: 0.25rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.summary-rows {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.3rem;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 6px;
+  background: #f7f8fb;
+}
+
+.summary-name {
+  font-size: 0.9rem;
+  color: #0f141a;
+}
+
+.summary-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.2ch;
+  height: 1.25rem;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  background: #111820;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.summary-note {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: #5d6470;
+}
+
+.summary-grid {
+  column-width: 320px;
+  column-gap: 1rem;
+  width: 100%;
+}
+
+.summary-box {
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  background: #fafbfd;
+  margin: 0 0 1rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.summary-box > h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  color: #0f141a;
+}
+
 @media (max-width: 640px) {
   #app {
     padding: 1.25rem 1rem 2rem;
   }
 
   .reviews-grid {
+    column-width: auto;
+    column-count: 1;
+  }
+
+  .summary-grid {
     column-width: auto;
     column-count: 1;
   }
@@ -186,13 +269,34 @@ a {
     column-gap: 0.2in;
     column-count: 2;
   }
+
+  .summary-card {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .summary-grid {
+    column-width: auto;
+    column-count: 2;
+    column-gap: 0.2in;
+  }
+
+  .summary-box {
+    background: #fff;
+    margin-bottom: 0.2in;
+  }
 }
 
 @media print and (orientation: landscape) {
   .reviews-grid {
     column-width: auto;
     column-gap: 0.2in;
-    column-count: 4;
+    column-count: 3;
+  }
+  .summary-grid {
+    column-width: auto;
+    column-count: 3;
+    column-gap: 0.2in;
   }
 }
 
@@ -201,6 +305,11 @@ a {
     column-width: auto;
     column-gap: 0.2in;
     column-count: 3;
+  }
+  .summary-grid {
+    column-width: auto;
+    column-gap: 0.2in;
+    column-count: 2;
   }
 }
 
