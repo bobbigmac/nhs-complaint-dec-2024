@@ -1,0 +1,206 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f6f8fa;
+  color: #1f2328;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 2.5rem 1.75rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.75rem, 1.8vw + 1.4rem, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f141a;
+}
+
+.reviews-grid {
+  column-width: 320px;
+  column-gap: 0.5rem;
+  width: 100%;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(31, 35, 40, 0.08);
+  box-shadow: 0 20px 35px -24px rgba(15, 20, 26, 0.32);
+  padding: 1rem;
+  gap: 0.2rem;
+  margin: 0 0 0.5rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.review-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
+}
+
+.review-card__author {
+  font-size: 1rem;
+  font-weight: 650;
+  color: #0f141a;
+}
+
+.review-card__source {
+  font-size: 0.75rem;
+  color: #5d6470;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.review-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  color: #3f4651;
+}
+
+.review-card__rating {
+  font-family: 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #f59f00;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.4rem;
+}
+
+.review-card__meta-text {
+  color: #616a75;
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.review-card__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111820;
+}
+
+.review-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  color: #212730;
+}
+
+.review-card__content p {
+  margin: 0;
+}
+
+.review-card[data-source*='Google'] {
+  border-color: rgba(66, 133, 244, 0.16);
+}
+
+.review-card[data-rating^='1'] {
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.review-card[data-rating^='2'] {
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 640px) {
+  #app {
+    padding: 1.25rem 1rem 2rem;
+  }
+
+  .reviews-grid {
+    column-width: auto;
+    column-count: 1;
+  }
+}
+
+@media print {
+  :root {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  #app {
+    padding: 0.2in;
+  }
+
+  .page-title {
+    margin-bottom: 0.75rem;
+  }
+
+
+  .review-card {
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 0.2in;
+  }
+
+  .reviews-grid {
+    column-width: auto;
+    column-gap: 0.2in;
+    column-count: 2;
+  }
+}
+
+@media print and (orientation: landscape) {
+  .reviews-grid {
+    column-width: auto;
+    column-gap: 0.2in;
+    column-count: 4;
+  }
+}
+
+@media print and (orientation: portrait) {
+  .reviews-grid {
+    column-width: auto;
+    column-gap: 0.2in;
+    column-count: 3;
+  }
+}
+

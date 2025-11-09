@@ -1,0 +1,661 @@
+export const trustpilotReviewsText = `
+gill yardley
+GB
+•
+8 reviews
+29 Oct 2025
+Rated 3 out of 5 stars
+I need to talk to a doctor
+I need to talk to a doctor
+
+
+Useful
+
+Share
+
+
+Amir Komarizadeh Asl
+GB
+•
+4 reviews
+28 Oct 2025
+Rated 3 out of 5 stars
+They didn't give me a letter to home…
+They didn't give me a letter to home office to let me invite my family due to my regular panic attacks
+
+
+Useful
+
+Share
+
+PT
+GB
+•
+5 reviews
+24 Oct 2025
+Rated 2 out of 5 stars
+Unfortunately used by my GP practice…
+Unfortunately used by my GP practice and has been nothing but trouble.
+Using it through the NHS app is a nightmare, you have 2 option to login everytime either "continue with patchs" or "continue to NHS login". It doesn't tell you which to use or the difference either.
+Both often lead you to a login prompt which either rejects known good passwords, says no such account or flatly just shows a blank screen.
+Sometimes (ie VERY occasionally) it allows you through without login prompt at all and sometimes it looks like it going to work only to fail.
+This 3rd party system has no doubt cost GPs and the NHS at large a lot of money by promising the world, only to prove itself a waste of time not fit for purpose.
+
+
+Useful
+
+Share
+
+martin taylor
+GB
+•
+12 reviews
+26 Sept 2025
+Rated 3 out of 5 stars
+Patches is OK
+Patches is OK. Doctors not so much. Marked as urgent. 2 days and still no contact. This surgery wants to look after their current patients, not take on new ones!!!
+
+
+Useful
+
+Share
+
+
+James
+GB
+•
+51 reviews
+8 Aug 2025
+Rated 3 out of 5 stars
+I HAVE BEEN TOLD BY PATCHS THAT I AM NOT REGISTERED…
+I HAVE BEEN TOLD BY PATCHS THAT I AM NOT REGISTERED WITH MY DOCTOR. MY DOCTOR SAYS I AM. IT IS NOT POSSIBLE TO GET PAST PATCHS TO REACH MY DOCTOR ON LINE I CAN ONLY RING MY DOCTOR.WHEN I TRY TO SEND A MESSAGE TO MY DOCTOR VIA PATCHS IT IS NOT SENT AS PATCHS SAY YOU ARE NOT REGISTERED.
+
+
+Useful
+
+Share
+
+
+Geoff Gunby
+GB
+•
+1 review
+2 Jul 2025
+Rated 3 out of 5 stars
+I wanted consultation about a definite…
+I wanted consultation about a definite physical problem but because I said it worried me I was offered treatment for anxiety.
+
+
+Useful
+
+Share
+
+Dave w
+GB
+•
+186 reviews
+4 Jun 2025
+Rated 3 out of 5 stars
+Times you out after thirty minutes
+Times you out after thirty minutes , spent some time trying to enter all my symptoms , so I could get an accurate response , then the session timed out , lost all my entered information
+
+
+Useful
+1
+
+Share
+
+
+Denise Spencer
+GB
+•
+3 reviews
+21 Mar 2025
+Rated 3 out of 5 stars
+Today has been the first time that I…
+Today has been the first time that I have been able to follow the instructions and the pages have actually gone to where are meant to, in the past when trying to write what I need to say, the typing would keep disapearing and it would just get lost somewhere and I would have to re-write it all again, and then wouldn't be able to find a send button to send, so I would end up giving up and not bothering, and now I have had recently had to have my daughter come over to help me do it. otherwise, I would just still be struggling.
+
+
+Useful
+
+Share
+
+David
+GB
+•
+11 reviews
+21 Feb 2025
+Rated 3 out of 5 stars
+PATCHS
+Patches is only as good as the GP practice concerned . It won't help you get a quick reply if the GP practice is struggling!
+
+
+Useful
+
+Share
+
+Bobbo
+GB
+•
+12 reviews
+5 Feb 2025
+Rated 2 out of 5 stars
+Concept = great.... reality = shambolic
+Patchs as a concept is a great system, it is a secure platform where patients can see their ongoing (or resolved) health issues, fill in mental health or other health questionnaires, ask questions to the GP and communicate in writing, allowing time for both parties to respond in their own time...
+
+However, my GP practice has elected to "use it differently to other practices" their words not mine... they immediately close all requests without posting a message or any information on what will happen next, i'm constantly finding myself raising the same health problem over and over and over again, the GP seem unaware of my health issues because the reception staff have total control over the patchs system, it is unfortunately open to abuse for negligent NHS staff and is not being used properly by some GP practices
+
+
+Useful
+
+Share
+
+Steve How
+GB
+•
+1 review
+30 Jan 2025
+Rated 2 out of 5 stars
+Patch only available during the day
+The patch system is not dependent on human interaction. A set of predefined questions are asked for you to respond to Ending with the message that you will be contacted. It is therefore unnecessary for the patch system to only operate during Daytime working hours. The system could operate 24 seven and if it did, it would be far far better. The fact that it doesn’t means that it is almost inaccessible for those that work and do not have access to the system during working hours. I am such a person and I found myself in the unenviable position of ringing my GP practice who Were incapable of making an appointment for me and instead sent me a linked to The patch system overriding the fact that it was closed. What a ridiculous set of circumstances that clearly my GP practice have found necessary all because the patch system is not available 24 seven.
+
+
+Useful
+1
+
+Share
+
+JC
+GB
+•
+19 reviews
+16 Dec 2024
+Rated 2 out of 5 stars
+I believe Patchs to be a deliberate barrier to accessing primary healthcare
+Writing this review on behalf of a family member... Making a new appt for a new problem was reasonably straightforward and the MANY triaging questions made a certain amount of sense and we did get an appointment out of it. But we needed to get in quick at the start of business at 8.00am to catch the service while it was briefly open (before it closes down about 20 minutes after opening) - it took a few attempts over a number of days to get access - it opens at 8.00am and by 8.20am it is closed!
+Simply checking in a few weeks later to make a follow-up on the same problem (as suggested by the GP) similarly took a number of attempts over a number of days as it was only open for business very briefly in the morning on weekdays only. It was also extremely annoying and time consuming having to trawl through all the same questions as if starting from scratch even though I simply wanted to arrange a follow-up as advised by the GP. Patchs describes its mission as being "...to unite and simplify healthcare, making it more accessible to everyone – so that you can get the help you need, when you need it". In reality it seems to be set up primarily to make it as difficult as possible for patients to communicate with their GPs. I do not believe this is the result of incompetence or chance factors. I believe the deliberate and designed purpose of Patchs is to make it difficult for patients to contact health services. Because those services are underfunded and understaffed, Patchs successfully puts up barriers to patients which takes short-term pressure off those services while patients give up in despair and either don't bother (while their health conditions continue and worsen, causing more pain and suffering and more cost to the service in the long term) or they go elsewhere (private healthcare, walk-in centres or A&E).
+
+
+Useful
+1
+
+Share
+
+
+Muriel Cornwell
+GB
+•
+4 reviews
+29 Nov 2024
+Rated 2 out of 5 stars
+Unacceptable wait for response to request for appointment
+I put in a request for an appointment at 9.30am and still haven't had a reply at 12.30. Not good enough. It would have been quicker to phone or go to the surgery- at least you gat an answer straight away!
+
+
+Useful
+1
+
+Share
+
+Joshua J (City of London)
+GB
+•
+3 reviews
+19 Nov 2024
+Rated 2 out of 5 stars
+Patches is a small patch mainly for…
+Patches is a small patch mainly for inbound messaging nothing else. It does not tell you your test results, ongoing test trends which are diagnostic for both patient & doctor, it does not tell you what appointments you have coming, there is no visible interactive messaging, there is no prescriptions list and there’s no way to send your med history to another doc for a second opinion. Yes there are round about ways of doing all this, a clunky patchwork of services in separate silos run by NHS, the surgery appointments book, and patches. It is not a one stop integrated service like MyCharts by EPIC which does everything and proven by doctors and hospitals globally. The comparison is more like a pocket calculator vs Microsoft Excel. If you are a surgery faced with a choice, go with MyCharts, the time and effort saved will pay off.
+
+
+Useful
+
+Share
+
+B-
+GB
+•
+2 reviews
+Updated 18 Sept 2024
+Rated 2 out of 5 stars
+Patches is a better system than we had…
+
+
+Patchs is a better system than we had before.
+Having said that I'm not sure that the message I sent a day ago was read properly and the outcome I was offered may be inappropriate.
+I have now had to contact them again about my problem. Frustrating is putting it mildly.
+As a former GP, this does not inspire confidence, but I know that general practice as a whole is under a massive strain. It’s the "not reading or not understanding" that is so frustrating.
+(Communcations using PATCHS on 17th & 18 Sept' 24
+
+
+Useful
+
+Share
+
+Dave w
+GB
+•
+182 reviews
+28 Feb 2024
+Rated 2 out of 5 stars
+Never available for my gp
+Most of the time I try to use this service it is not available for my gp service, it’s getting as difficult as trying to get a doctors appointment
+
+
+Useful
+
+Share
+
+David Johnson
+GB
+•
+1 review
+28 Feb 2024
+Rated 2 out of 5 stars
+patches
+nothing went wrong but it makes yo anxios you are not going to finnish on time or like otherer times finninsh in allotted tme but still dont get allotted appointment the system should be unlimited responce no how quick you can type
+
+
+Useful
+
+Share
+
+Guest Michael Fox
+GB
+•
+4 reviews
+15 Feb 2024
+Rated 2 out of 5 stars
+Totally useless if you do not have a…
+Totally useless if you do not have a mobile phone. Always requires a security code sent to mobile.
+When you get someone's agreement to use their mobile a security code is given and then you can tick a box stating remember this number. It never does so you have to go through this whole procedure again. A waste of time for those who are elderly with no mobile phone.
+
+
+Useful
+
+Share
+
+Nick Bailey
+GB
+•
+14 reviews
+22 Nov 2023
+Rated 2 out of 5 stars
+Feedback is inadequate as does allow…
+Feedback is inadequate as does allow appropriate comment. Like me today. Request marked COMPLETE- when it was not complete but had been passed on by nurse to doctor. And all the feedback options you offer me is the stars about good it is.
+
+
+Useful
+
+Share
+
+
+
+James
+GB
+•
+50 reviews
+8 Aug 2025
+Rated 3 out of 5 stars
+I HAVE BEEN TOLD BY PATCHS THAT I AM NOT REGISTERED…
+I HAVE BEEN TOLD BY PATCHS THAT I AM NOT REGISTERED WITH MY DOCTOR. MY DOCTOR SAYS I AM. IT IS NOT POSSIBLE TO GET PAST PATCHS TO REACH MY DOCTOR ON LINE I CAN ONLY RING MY DOCTOR.WHEN I TRY TO SEND A MESSAGE TO MY DOCTOR VIA PATCHS IT IS NOT SENT AS PATCHS SAY YOU ARE NOT REGISTERED.
+
+
+Useful
+
+Share
+
+
+Geoff Gunby
+GB
+•
+1 review
+2 Jul 2025
+Rated 3 out of 5 stars
+I wanted consultation about a definite…
+I wanted consultation about a definite physical problem but because I said it worried me I was offered treatment for anxiety.
+
+
+Useful
+
+Share
+
+Dave w
+GB
+•
+182 reviews
+4 Jun 2025
+Rated 3 out of 5 stars
+Times you out after thirty minutes
+Times you out after thirty minutes , spent some time trying to enter all my symptoms , so I could get an accurate response , then the session timed out , lost all my entered information
+
+
+Useful
+1
+
+Share
+
+
+Denise Spencer
+GB
+•
+3 reviews
+21 Mar 2025
+Rated 3 out of 5 stars
+Today has been the first time that I…
+Today has been the first time that I have been able to follow the instructions and the pages have actually gone to where are meant to, in the past when trying to write what I need to say, the typing would keep disapearing and it would just get lost somewhere and I would have to re-write it all again, and then wouldn't be able to find a send button to send, so I would end up giving up and not bothering, and now I have had recently had to have my daughter come over to help me do it. otherwise, I would just still be struggling.
+
+
+Useful
+
+Share
+
+David
+GB
+•
+11 reviews
+21 Feb 2025
+Rated 3 out of 5 stars
+PATCHS
+Patches is only as good as the GP practice concerned . It won't help you get a quick reply if the GP practice is struggling!
+
+
+Useful
+
+Share
+
+wireblues
+GB
+•
+2 reviews
+5 Feb 2025
+Rated 3 out of 5 stars
+The idea of patches is a online concept…
+The idea of patches is a online concept made for users who spend time online. It's not helpful in my opinion as more doctors & medical practice staff would be a far better use of resources than a online app. Patches is just a digital receptionist I myself prefer speaking or communicating with a man or woman not AI
+
+
+Useful
+
+Share
+
+Angie
+GB
+•
+2 reviews
+10 Dec 2024
+Rated 3 out of 5 stars
+contact with GP works well
+I cant say regarding my recent experience its too complicated . But in general for less complex matters . Patchs works well . I have managed to communicate with my GP. via the messaging system and getting repeat prescriptions via the admin messaging is quite easy and helpful
+
+
+Useful
+
+Share
+
+Shak
+GB
+•
+1 review
+Updated 7 Nov 2024
+Rated 3 out of 5 stars
+Poor telephony service
+Great surgery but ring them for advice and support on the phone has been a real disappointment.
+I spent almost 2hrs going around and around on wait in their automated IVR solution. I ended up driving in to chat to the receptionist who just aplogised and said everyone is busy! Focus your efforts on serving your patients with doing the basics right and picking up the phone so tge person calling in feels some sense of reassurance. The patches solution is excellent simple to use and the turn around is very quick. Rant over
+
+
+Useful
+
+Share
+
+Anne
+BE
+•
+2 reviews
+13 Sept 2024
+Rated 3 out of 5 stars
+Geo-block inappropriate for family of UK patients
+It works well but some months ago a block was placed on access from outside the UK and this is not okay in the case of non-UK resident immediate family members of elderly dementia patients who are resident in the UK. My elderly mother cannot make requests for herself, I have to do it, but I am not resident in the UK. The geo-block needs to be more sophisticated so non-UK family can still access it on behalf of UK-resident patients.
+
+
+Useful
+
+Share
+
+anon
+GB
+•
+26 reviews
+25 Jun 2024
+Rated 3 out of 5 stars
+I can’t access Patchs via the app
+I like Patches once I get into it.
+The trouble is having to access it through my medical practice website.
+I have the PATCHS app, but I don’t seem to be able to use it to make a new request. That may be my fault, but if it can be made easier to do via the app, that would be great
+
+
+Useful
+
+Share
+
+See if a website is trustworthy without leaving the page
+
+
+Derek Essen
+GB
+•
+5 reviews
+10 Jun 2024
+Rated 3 out of 5 stars
+Need to modernise
+everything is good but with millions of Apple (Safari) users we cant receive messages back because your system doesn't allow - only Firefox and security problem Google Chrome. Please sort this out
+
+
+Useful
+
+Share
+
+
+
+David Brennan
+GB
+•
+5 reviews
+3 Jun 2024
+Rated 3 out of 5 stars
+Need to be able to add more than one issue
+The idea and process is okay but it would help if I could add more than one condition and not have to do many forms.
+
+
+Useful
+
+Share
+
+SHAILESH BAROT
+GB
+•
+1 review
+16 Apr 2024
+Rated 3 out of 5 stars
+EMAIL REPLY IS PROMPT BUT DO NOT SEE…
+EMAIL REPLY IS PROMPT BUT DO NOT SEE RESULT COMING IN .
+
+
+Useful
+
+Share
+
+Bea K.
+GB
+•
+1 review
+27 Mar 2024
+Rated 3 out of 5 stars
+Good initiative with same lagging system.
+Umm in my opinion it's good thing that I don't have to wait for so long on the call waiting for my turn.
+But at the same time whats the reason of making it when one can't make a request if it reaches it's limit and the time window is same as before to make a request.
+I was trying for days to make an appointment but even at 9.30 patch's requests shows limit reached. How can I type while getting ready for the work at the same time.
+My first experience was good but this time I'm a bit disappointed though my GP practice is good.
+
+
+Useful
+
+Share
+
+
+Amy Hughes
+GB
+•
+1 review
+13 Mar 2024
+Rated 3 out of 5 stars
+Medical services should be more…
+Medical services should be more personal, speaking to patience’s, as the smallest thing could be important. Feels like you’re having to self diagnose.
+
+Also Holes Lane Surgery website page needs tidying up, the journey does not fit the needs of the patience. Too messy, confusing, needs to be made much simpler.
+
+
+Useful
+
+Share
+
+
+
+Amelia Whately-Smith
+GB
+•
+18 reviews
+Updated 23 Feb 2024
+Rated 3 out of 5 stars
+Hi Patchs team
+Hi Patchs team. I am trying to help Eritrean friends of mine who speak Tigranya. They are trying to book a GP appointment using Patchs but without success. They struggle with English and would find it far easier to write in Tigranya. This family are in desperate need of help from the medical profession so all the help you guys can give would be greatly appreciated. There are a lot of Eritrean communities near were I live in London.
+
+
+
+Useful
+
+Share
+
+
+Honest
+GB
+•
+2 reviews
+14 Feb 2024
+Rated 3 out of 5 stars
+Shame for only 1 hour window to fill up the form to get an appoinment
+I like the system and would give 5 stars but as mist of us work in the morning, it is impossible to fill up a request form for an appointment between 8-9am! Should be changed for 7-9 so we, working people who needs help with our health, can book an appointment too! I am suffering with severe pain that isn't an excuse not to go to work in my position, therefore I had to wait for months to get my holiday to be able to book a simple appointment. Shame....
+
+
+Useful
+
+Share
+
+Carol Burgess
+GB
+•
+5 reviews
+8 Feb 2024
+Rated 3 out of 5 stars
+OK, but...
+I was advised that surgeries (for both me and my mum whom I care for) had moved over from eConsult to Patchs. Whilst it is simple to use, I find the 'limit' surgeries put on being able to make requests frustratingly unhelpful compared to eConsult who simply let you complete all the details and someone at the surgery could triage the priority of need.
+
+
+Useful
+1
+
+Share
+
+Fezile
+GB
+•
+25 reviews
+30 Jan 2024
+Rated 3 out of 5 stars
+Not good for the elderly
+The only problem with patches is I have been asked too book an appointment but there is no function here too do it. Its very tricky. Also its not compassionate to a patients needs I find it very impersonal. When I had the whooping cough a few weeks a go I was way too sick to fill out the forms and my husband could not do it. Whilst it's a good little app for us older generation its way too difficult
+
+
+Useful
+
+Share
+
+Pips
+GB
+•
+3 reviews
+23 Jan 2024
+Rated 3 out of 5 stars
+Appointment request times
+I like that I can email my request but when they say that the surgery takes appointments from 8.00am then is closes
+Its appointment at 8.01 am. Not helpful when needing an appointment on the day.
+
+
+Useful
+
+Share
+
+Mr Peat
+GB
+•
+15 reviews
+12 Jan 2024
+Rated 3 out of 5 stars
+I had 7 day BP results to put in a form…
+I had 7 day BP results to put in a form but the system asked why I had not completed it after day 5
+I had 2 days to go
+Also booking appointments is not clear and you get to certain point and it freezes and no guide how sort it out
+May be needs auditing to find issues
+
+
+Useful
+
+Share
+
+Mr Hogarth
+GB
+•
+5 reviews
+3 Nov 2023
+Rated 3 out of 5 stars
+Unanswerable questions
+My PATCHS request went through fine but you then ask how was my experience of the gP. How can I answer this before the the GP has responded to my request?
+And there is no option to skip the question
+
+
+Useful
+1
+
+Share
+
+
+Lamine Mounssi
+GB
+•
+13 reviews
+19 Oct 2023
+Rated 3 out of 5 stars
+The software is good But....
+The software is good, its what happened after that is awful, they always ask you to call the GP so I don't really see the point of this service, at the end of the day you will always be number 50 on the queue to your GP.
+
+
+Useful
+2
+
+Share
+
+
+Kathryn Marshall
+GB
+•
+4 reviews
+18 Oct 2023
+Rated 3 out of 5 stars
+Patchs is simple which is a positive
+Patchs is simple which is a positive, however the generic questions are limiting so you have to really make your answers fit.
+It is good that you can inform the of when the best time to contact you is, which people who work shifts may find helpful, depending on your shift pattern. It would be better if more on the day appointments were available and more telephone operators were on at 8am to limit the time people wait to get an appointment.
+
+
+Useful
+
+Share
+
+`
