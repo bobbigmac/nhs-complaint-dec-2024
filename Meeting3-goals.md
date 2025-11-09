@@ -15,6 +15,8 @@
 * **Reality vs metrics:** appointment numbers look “fine” (slight improvement june-august), but reviews and complaints still don't agree with the numbers.
 
 > **Example:** Works 8–6, form is always closed. Tries on a phone browser from work, struggles through complex forms, misses a triage call (they're working), told to start again, site is down. By Friday they give up, get sicker. Most don’t bother to leave a review—because “nothing changes.”
+	- To _try_ and resolve this (so far I have failed for a year), patient has to take a day off, hope the website is open, submit a request, hope it is actioned today, and hope not to miss the call, so they don't have to start over again next time they have a day off, and have the call result in an appointment today (if time sensitive but not 'an emergency', which would send them to A&E for 12 hours) and/or book another day off for the appointment. 
+	- That's an awful lot of hope for something that should be as simple as making an appointment (even just by phone).
 
 ## Scope of problem
 
