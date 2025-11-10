@@ -1,7 +1,7 @@
 # GP Access, Immigration Blame & Far‑Right Messaging — Evidence Pack
 *(Prepared for meeting on 12 November)* - Robert (Bob) Davies: admin@bobbigmac.com
 
-People — especially tougher‑immigration cohorts — commonly believe immigration makes it harder to get a GP appointment, and far‑right actors amplify that grievance. For delivery, treat belief as the driver: undercut it by making booking a GP appointment simple, fair and easy. 
+People — especially tougher‑immigration cohorts — commonly believe immigration makes it harder to get a GP appointment, and far‑right actors amplify that grievance. For delivery, treat belief as the driver: undercut that attack vector by making booking a GP appointment simple, fair and easy. 
 
 ---
 
