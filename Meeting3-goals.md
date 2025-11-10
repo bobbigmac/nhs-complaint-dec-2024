@@ -1,6 +1,8 @@
 # New Bank Health Centre – Access Issues: Worse Than Ever
 *(Prepared for meeting on 12 November)* - Robert (Bob) Davies: admin@bobbigmac.com
 
+## TODO: Meeting postponed to 26 November
+
 ## Current condition of access issues
 
 * **After-hours blackout:** the website shuts when the office shuts → shift workers/carers are locked out entirely *(PATCHS already has an option to stay online, must be activated)*.
