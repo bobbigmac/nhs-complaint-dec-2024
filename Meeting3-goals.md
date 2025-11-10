@@ -47,6 +47,8 @@
 
 Switching to always-on intake, and fewer restarts is the minimum bar patients can feel.
 
+Ideal interaction for getting an appointment should go "Patient: I'd like to see a doctor please", "Reception: Would you rather use the website, have us phone you for a health chat, or just make an appointment to come in?"
+
 ------------
 
 ## Notes
