@@ -1,65 +1,69 @@
 # New Bank Health Centre – Access Issues: Worse Than Ever
 *(Prepared for meeting on ~~12~~ 26 Nov)* - Robert (Bob) Davies: admin@bobbigmac.com
 
+## Key Concerns
+
+- Website is less usable: offline out of hours and often down in hours (even after 1 Oct).
+- No clear offline way to get an appointment.
+- Phone triage is mandatory and unscheduled; missed calls block care.
+- Reviews are mostly negative (only one positive seen).
+- PATCHS setup and public reviews show recurring problems.
+- Receptionist job ad looks low paid; was it only advertised online?
+
+## Protocol questions
+
+- What happens after this meeting?
+- Who is responsible for change at GTD?
+
 ## Current condition of access issues
 
-* **After-hours blackout:** the website shuts when the office shuts → shift workers/carers are locked out entirely *(PATCHS already has an option to stay online, must be activated)*.
-	- This is a configuration choice already available to you.
-	- PATCHS lets practices keep an admin/non-urgent route open 24/7.
-	- Such an obvious error, _somebody_ on your team **should** have prevented this simple mistake, but I see there's a trend for this decision in practices.
-* **Unscheduled calls:** patients wait all day; a missed call = start over.
-	* Missed, unscheduled calls must not nuke the request.
-* **Redundant/complex forms + multiple logins:** high friction and drop-offs; “NHS Login” complexity makes it worse.
-* **Confusing process/wording:** unclear routes, multiple branches, no rationale; the path forward gets harder, not clearer.
-* **Reality vs metrics:** appointment numbers look “fine” (slight improvement june-august), but reviews and complaints still don't agree with the numbers.
+* **After-hours blackout:** site shuts when the office shuts, so shift workers/carers are locked out. PATCHS already allows 24/7 admin/non-urgent intake; it just needs switching on.
+	- This is a configuration choice you can make now.
+* **Unscheduled calls:** patients wait all day; a missed call forces a restart. Missed unscheduled calls should not erase a request.
+* **Complex forms and logins:** long forms, repeat questions and “NHS Login” steps drive drop-offs.
+* **Confusing routes:** multiple branches and unclear wording; the path gets harder, not clearer.
+* **Reality vs metrics:** appointment counts rose slightly June–Aug, but reviews and complaints say access is still poor.
 
-> **Case:** Works 8–6, form is always closed. Tries on a phone browser from work, struggles through complex forms, misses a triage call (they're working), told to start again, site is down. By Friday they give up, get sicker. Most don't bother to leave a review—because “nothing changes.”
-	> To _try_ and resolve this (so far I have failed for a year), patient has to take a day off, hope the website is open, submit a request, hope it is actioned today, and hope not to miss the call, so they don't have to start over again next time they have a day off, and have the call result in an appointment today (if time sensitive but not 'an emergency', which would send them to A&E for 12 hours) and/or book another day off for the appointment. 
+> **Case:** Works 8–6. Form is closed when they try. They wrestle with a long form on a phone, miss a triage call while working, are told to start again, then the site is down. By Friday they give up and get sicker. These reports appear in GTD reviews, including New Bank.
 
 ## Scope of problem
 
-* **Patient survey:** 39% said it's hard to get an appointment.
-	- Survey undercounts harm. Missing the people driven away at the front door. Real access failure is likely worse.
-	- PATCHS being set to office-hours only, made this even worse.
-* **Public feedback:** Hundreds of 1–2★ Trustpilot complaints on PATCHS calling out downtime, confusion, restarts, bad process choices, repeating cycles of simple/avoidable errors. 
-	- Google reviews on GTD practices already seeing bad reviews for new system.
-* **Spot checks:** intake always **offline out of hours**; **error pages in hours** → the service feels unreliable.
+* **Patient survey:** 39% had difficulties getting an appointment.
+	- Survey undercounts harm; it misses people who gave up at the front door.
+	- PATCHS set to office-hours only makes this worse.
+* **Public feedback:** Hundreds of 1–2★ Trustpilot complaints on PATCHS about downtime, confusion, restarts, avoidable errors.
+	- Google reviews on GTD practices already show bad feedback on the new system.
+* **Spot checks:** intake is offline out of hours; error pages appear in hours. The service feels unreliable.
 
 ------------
 
 ## Bare minimum expectation
 
-* **Always a way to start** 24/7 for non-urgent/admin. 
-	- Websites enable non-synchronous comms, don't waste it.
+* **Always a way to start** 24/7 for non-urgent/admin.
+	- Websites enable non-synchronous comms; use them.
 * **Fewer restarts** (don't make people repeat themselves).
-* **Don't count missed, unscheduled calls as DNAs**. [ongoing] That's a system failure, not a patient failure.
-	- I checked the "Appointments in General Practice" monthly data
-		- Shows **1 in 18 (~6%)** appointments are missed.
+* **Don't count missed, unscheduled calls as DNAs**. That's a system failure, not a patient failure.
+	- "Appointments in General Practice" monthly data shows **1 in 18 (~6%)** appointments are missed.
 		- Phone DNAs fell **90 → 69 → 48** (Jun→Jul→Aug).
-		- Controlling for phone volume: **6.07% → 4.28% → 3.54%**.
-	- The reduction (~halving) in phone DNAs suggest reduced recording of missed calls as official DNAs, but how much time IS lost to unreported missed unscheduled calls each day? 
-	- If those requests are deleted, how are lost/dropped/closed requests filed? 
-	- Where are unsatisfied appointment/triage requests going now? 
-		- Closed and forgotten? Does anyone look at closed appointment request starts that didn't result in an appointment?
+		- Controlling for phone volume: **6% → 4.2% → 3.5%**.
+	- The drop (about half) in phone DNAs suggests fewer missed calls are logged as DNAs, but how much time is lost to unreported missed unscheduled calls each day? How big is the problem?
+	- If those requests are deleted, how are lost/dropped/closed requests filed? If PATCHS replaces the backend, this may have changed.
 
-**Bottom line:** This isn't just software—it's process. Simple barriers creating avoidable harm. 
-
-Switching to always-on intake, and fewer restarts is the minimum bar patients can feel. Ideal interaction for getting an appointment should go something more like "Would you rather use the website, have us phone you for a health chat, or just make an appointment to come in?"
-
-------------
+Switching back to always-on intake and cutting restarts is the bare minimum people will notice. A better flow is “Use the website, get a call, or book to come in?”. Turning admin into a blocker harms patients.
 
 ## Notes
 
-- Noticed New Bank recruiting for a receptionist on Indeed. Pretty low salary (~22k, barely living wage, with a lot of responsibilities). Any chance of paying more to get someone good at it, someone who cares about patients?
-	- Are support systems in place to help reception help patients? 
-	- Do they have enough autonomy to handle simple everyday issues? 
-	- Do they have enough power to respond to issues dynamically, or are they stuck filling in the same bad forms/workflows as patients?
+- New Bank is recruiting a receptionist on Indeed at ~£22k for a high-responsibility role. Can pay be higher to attract and keep good staff?
+	- Do receptionists have tools and freedom to fix simple issues, or are they stuck in the same broken flows? Why are so many people having trouble with more than just the same receptionist?
 
-- The NHS 'goals' (only online during office hours, poor access minimums) are absolutely rock-bottom standards compared to the real world
-	- Can you name one other industry whose website goes offline when their office is shut? 
-	- Healthcare/GP systems should be _better_ than other areas, more accessible, more human-friendly, not worse. 
-	- The NHS app as login would be fine, but it says it needs some other logins
-		- Have been unable to test further, as it's always been down/offline or out of hours/offline.
-	- Not a 'training' problem. The process is poor.  I'm a programmer and system designer, confident and highly competent computer user, and just can't access it because it's offline, and still confusing, as all 3 paths dead-end. 
-		- See PATCHS trustpilot reviews, very clear issues
-		- There are understandable/fair technical reasons... bad infrastructure, overly complex system controls, blind metrics, poor integration, lack of proper use case analytics during specification, and barely (if any) input from a professional designer (either at New Bank, GTD or PATCHS), competing priorities, legacy systems.
+- NHS “goals” of office-hours-only online access are a low bar.
+	- What other sector takes its website offline when the office shuts?
+	- GP access should be more open and human, not less.
+	- NHS App login would be fine, but the site keeps adding other logins and is often down.
+	- This is not a training issue: the process itself is weak. Even a confident digital user can’t get through because it’s offline or dead-ends.
+		- PATCHS Trustpilot reviews show the same problems.
+		- Causes: weak infrastructure, over-complex controls, poor metrics, poor integration, little design input, legacy systems.
+
+## Repository Link
+
+- [https://github.com/bobbigmac/nhs-complaint-dec-2024](https://github.com/bobbigmac/nhs-complaint-dec-2024)
