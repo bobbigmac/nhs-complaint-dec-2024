@@ -1,14 +1,37 @@
-# GP Access & Online Consultation — Evidence Pack
+# GP Access Issues - Evidence Pack
 
-Prepared as a working list of **who else is complaining** about GP access problems linked to online systems and triage.
-
-Sources are grouped by their **primary concern**:
+Prepared as a working list of **Who is complaining** about GP access problems linked to online systems and triage. Sources are grouped by their **primary concern**:
 
 - **A. GP websites / online tools closed out-of-hours or when capacity is reached**  
 - **B. Mandatory phone-only triage or phone bottlenecks blocking access**  
 - **C. Other access issues: digital exclusion, complexity, unsafe / low-standard models, or general access dissatisfaction**  
 
-Each entry lists **organisation, title, short note of the complaint, and URLs**.
+## Who is affected (rough scale)
+
+England. Rates per 1,000 residents/households (approx).
+
+| Group                              | Number          | Rate        | Why it matters                                    |
+|------------------------------------|-----------------|------------:|---------------------------------------------------|
+| All registered patients (England)  | ~56m            | 1000/1000   | Everyone hit by closures, form shut-offs, queues. |
+| Long-term conditions               | ~26m            | ≈460/1000   | Need repeat contact; friction compounds.          |
+| Disabled people                    | ~14m (of ~16m UK)| ≈250/1000  | Need accessible, multi-channel routes.            |
+| Older people (65+)                 | ~11m            | ≈200/1000   | Higher need, lower digital confidence.            |
+| Most deprived 20% areas            | ~11m            | ≈200/1000   | Less digital access, higher illness burden.       |
+| Low/no essential digital skills    | ~10–11m (UK)    | ≈160–180/1000 | Web-only flows exclude many.                    |
+| Offline households                 | ~1.5m (UK)      | ≈50/1000 hh | No web access at all.                             |
+| Limited English proficiency        | ~0.9m (E&W)     | ≈15/1000    | Forms + phone triage much harder to use.          |
+
+## Regional estimates (GTD and New Bank, ~%patients)
+
+| Group                             | ~National | ~GTD (≈70k pts)                          | ~New Bank (≈6500 pts)                     |
+|-----------------------------------|----------:|-----------------------------------------:|------------------------------------------:|
+| Long-term conditions              | 46%       | 58% (~40k patients)                  | 60% (~3,900 patients)                     |
+| Disabled (Equality Act)          | 25%       | 22% (~15k patients)                  | 23% (~1,500 patients)                     |
+| Aged 65+                          | 20%       | 12% (~8k patients)                   | 7% (~500 patients)                        |
+| In most deprived 20% areas        | 20%       | 65% (~45k patients)                  | 80% (~5200 patients)                     |
+| Low / no essential digital skills | 17%       | 20% (~14k patients)                  | 22% (~1400 patients)                     |
+| Offline households              | 5%        | 8% (~5k households)                  | 9% (~600 households)                      |
+| Limited English (poor / none)     | 2%        | 8% (~5k patients)                    | 8% (~500 patients)                        |
 
 ---
 
@@ -321,6 +344,4 @@ These sources aren’t specifically about websites or triage tools, but they sho
 - **Section A** gives you examples where patients and reports explicitly complain about **online GP systems being unavailable out-of-hours or when capacity is reached**.
 - **Section B** lists sources where **phone-only triage / 8am phone bottlenecks** are clearly described as a problem, plus the national contract rules that entrench this model.
 - **Section C** adds the wider context: **digital exclusion, complex or unsafe online tools, councils scrutinising access, and national data on how angry people are about GP access overall**.
-
-You can now edit, reorder, or trim this list for the specific argument you want to make (e.g. focusing only on PATCHS / 24‑hour access, or on the phone triage bottleneck).
 

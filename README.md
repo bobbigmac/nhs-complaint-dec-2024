@@ -1,14 +1,14 @@
 # Digital Access Failures - New Bank Health Centre (NHS GP Practice, Manchester)
 
 This repo documents ongoing concerns about **patient access, digital systems, and front‑door process** at New Bank Health Centre (run by GTD Healthcare).  
-It is public (containing only publicly available data) so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
+It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
 
 ## What’s in this repo (brief)
 
 - **Complaint drafts and meeting prep**
   - `ORIGINAL_COMPLAINT.md` - first long‑form complaint about the appointment system (Dec 2024/Aug 2025).
   - `meeting-ppg-nov26/Meeting3-goals.md` - current preparation for the Nov 2025 PPG meeting on access.
-  - `meetings-notes/` - Documentation for each meeting, and my notes and received handouts.
+  - `meetings-notes/` - Documentation for each meeting, and my prep/issues and received handouts with my notes.
 - **Data and analysis**
   - `PatientSurveyBreakdown.md` - breakdown of GP Patient Survey results for New Bank.
   - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
@@ -25,8 +25,14 @@ The focus throughout is **patient access**, not clinical care quality.
    - The PATCHS entry point on the practice website is **switched off outside office hours**, and on several checks has also been **down during office hours** when attempting to use it.
    - Since 1 October 2024, NHS rules require practices to provide access to online request routes during core hours; routinely switching the system off appears to fall short of that expectation.
    - PATCHS itself supports a **24/7 non‑urgent/admin route** (config option in their guidance), but it is disabled here.
-   - It says "this service closes when we are full", but have not been able to check in office hours, so it may not even meet the current NHS requirement of remaining accessible for admin/non-urgent requests at least during office hours (a low bar).
-   - Position in this repo: **the website should never “shut”** - at minimum, admin/non‑urgent routes should be available 24/7, with clear response timeframes.
+   - It says "this service closes when we are full", but have not been able to check in office hours, so it may not even meet the current NHS requirement of remaining accessible for admin/non-urgent requests at least during office hours (itself, a low bar).
+   - **The website should never “shut”** - at minimum, admin/non‑urgent routes should be available 24/7.
+   - This seems to be a pattern at the moment, with practices claiming "The new requirement to allow patients unlimited online access for non- urgent medical requests, throughout core hours, could make it more likely that we will have no choice but to create hospital-style waiting lists to meet patient need. We do not believe that this is a solution that anyone wants." or "GPs and their teams are under huge pressure – caring for more people with fewer resources."
+        - This is a false dichotomy (and patient-blaming), there's nothing wrong with queues if you're actively working them, and what having an advance queue allows is flexibility (cancellation? bring someone forward... sudden influx? move the booking window).
+        - People are happy to wait for the predictability of 'something' happening, as long as it then does happen. 
+        - People are much less stable if they have no idea whether they can even ask for help today, or if they have to wait till tomorrow to try and fail again.
+        - The internet emables people to handle queues faster than ever, if you design and implement their processes well, instead of falling back to nothing.
+    - It's failure as a feature, not a bug, staff are choosing to outright reject patients before they can even start, then failing to measure the effect because angry reviews don't drive policy.
 
 2. **Digital‑only booking and exclusion**
    - Access is effectively **digital‑only**: no simple “walk in and make an appointment” route and limited scope to book by phone without being sent back online.
@@ -38,7 +44,7 @@ The focus throughout is **patient access**, not clinical care quality.
    - There is **no same‑day resubmission path**, even when the first call was early in the day.
    - Patients are not always notified that their request was deleted and may only discover it by digging through message threads (this might be mitigated by PATCHS but have been unable to check).
    - Unscheduled calls are sometimes labelled as **“missed appointments”**, which is misleading and may distort DNA statistics.
-    - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
+        - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
 
 4. **Reception / front‑door experience**
    - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
@@ -55,13 +61,15 @@ The focus throughout is **patient access**, not clinical care quality.
 
 ### Open questions for further research
 
-- Staff have claimed 'of course reviews are bad' in the PPG, but I don't see why this is an excuse. A LOT of local practices have bad reviews, often for very similar reasons, but there are also a lot of practices with great reviews (including 1 under GTD), so the pattern doesn't hold for ALL practices, but how many does it hold for, and what are their common threads?
+- Staff have claimed "everyone does this" regarding making patients 'start over' (deleting requests for missed calls, or multiple daily submissions/second after deletion on same day). How many practices have systems that delete patient requests? 
+    - PATCHS reviews suggest not it does not solve this.
 
-- Warren has stated "everyone does this" regarding making patients 'start over' (deleting requests for missed calls, or multiple daily submissions/second after deletion on same day). How many practices have systems that are this poorly designed? It's like it's bad on purpose. Does PATCHS solve this?
+- Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG, but I don't see why this is an excuse. A LOT of local practices have bad reviews, often for very similar reasons, but there are also a lot of practices with great reviews (including 1 under GTD), so the pattern doesn't hold for ALL practices, but how many does it hold for, and what are their common threads?
 
-- From a design perspective, the way PATCHS handles limits seems crazy. It's so lazy and hostile to patients, but the PPG isn't really 'systems design and UX' meeting. It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often? Is there anyone in the room who has even the faintest consideration of the patient workflow through their systems? Do they accessibility-test themselves?
+- From a design perspective, the way PATCHS handles limits seems crazy. It's so lazy and hostile to patients, but the PPG isn't really 'systems design and UX' meeting.
+    - It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often? Is there anyone in the room who has even the faintest consideration of the patient workflow through their systems? Do they accessibility-test themselves?
 
-- The language around request types is confusing. I don't know if what I need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent. If I have some pain, is that clinical? Who knows? Where to find out? There's several layers of website, and none of them seem to say the same thing. Why is the tech stack such a mess?
+- The language around request types is confusing. I don't know if what I need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent. If I have some pain, or a meds question, is that clinical? Who knows? Where to find out? There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS infrastructure?
 
 ---
 
@@ -73,7 +81,7 @@ We are currently:
    - Parsing and clustering **1★ and 2★ reviews** to understand themes (access, reception, repeat failures, etc.).
 2. **Comparing across GTD Healthcare practices**
    - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns.
-   - Next step: compare New Bank to **other GTD sites** and to **nearby non‑GTD practices**.
+   - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
 3. **Looking wider**
    - Using national NHS data to see:
      - How common **complex access / phone‑blocking / web‑off** models are.
