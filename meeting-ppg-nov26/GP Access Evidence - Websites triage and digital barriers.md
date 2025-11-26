@@ -35,6 +35,97 @@ England. Rates per 1,000 residents/households (approx).
 
 ---
 
+**Index of evidence sources on GP access problems** 
+
+*Issue codes*:
+
+* **A** – GP websites / online tools closed out-of-hours or when capacity is reached
+* **B** – Mandatory phone-only triage / phone bottlenecks
+* **C** – Other access issues: digital exclusion, complexity, unsafe/low-standard models, broad dissatisfaction
+
+### 1. Local patient groups (Healthwatch etc.)
+
+| Actor / study                                   | Region / scope                      | Type                    | Issues  | Main angle in one line                                                                |
+| ----------------------------------------------- | ----------------------------------- | ----------------------- | ------- | ------------------------------------------------------------------------------------- |
+| Healthwatch Hertfordshire – Online GP services  | Herts & West Essex ICS              | Local Healthwatch study | A, C    | Short online windows / form shut-offs; demand for 24/7 requests with in-hours triage. |
+| Healthwatch Tower Hamlets – PERs & annual       | Tower Hamlets (London)              | Local Healthwatch       | A, C    | High negative feedback on online forms closing when full; digital exclusion.          |
+| Healthwatch Ealing – PERs & annual              | Ealing (London)                     | Local Healthwatch       | A, B, C | Limited online booking windows; 8am call rush; booking and availability mess.         |
+| Healthwatch Wandsworth – Accessing GP practices | Wandsworth & SW London ICS          | Local Healthwatch       | A, C    | GP websites / NHS App journeys confusing; urges benchmarking and simplification.      |
+| Healthwatch Westminster – Primary care access   | Westminster, Brent, K&C (NW London) | Local Healthwatch       | C       | Complex, confusing access routes; calls for mixed online / phone / face-to-face.      |
+| Healthwatch Kent – ANIMA digital front door     | 4 practices in West Kent            | Local Healthwatch eval  | C       | Digital front door shifts demand online but many find ANIMA complex or exclusionary.  |
+| Healthwatch England – Q4 patient experience     | England                             | National Healthwatch    | A, B, C | Synthesises local data on online consultations, phone access and booking failures.    |
+| Healthwatch “in Greater Manchester” outputs     | 10 Greater Manchester localities    | GM Healthwatch network  | B, C    | Joint insight showing GP access (inc. digital) as a consistent system-wide problem.   |
+
+---
+
+### 2. NHS system bodies / programmes
+
+| Actor / study                                       | Region / scope                  | Type                    | Issues | Main angle                                                                             |
+| --------------------------------------------------- | ------------------------------- | ----------------------- | ------ | -------------------------------------------------------------------------------------- |
+| Herts & West Essex ICB – Online GP services work    | Herts & West Essex              | ICB / commissioner      | A, C   | Commissions Healthwatch review of online GP services; recognises new digital barriers. |
+| West Kent Health & Care Partnership – ANIMA rollout | West Kent / Tunbridge Wells PCN | PCN / partnership       | C      | ANIMA used as main “digital front door”; improves waits for some, blocks others.       |
+| SW London ICS – Access insights on GP practices     | SW London                       | ICS                     | A, C   | Publishes Wandsworth access findings as system insight on digital/website issues.      |
+| NHS England – GP Contract 2025/26                   | England                         | National NHS (policy)   | B, A   | Mandates online tools on in core hours (8–6:30); tacitly okays closure outside that.   |
+| NHS England – Primary care patient safety strategy  | England                         | National NHS (strategy) | C      | Sets safety expectations relevant to risky/exclusionary digital triage models.         |
+| DHSC – GP contract comms (“end the 8am scramble”)   | England                         | Govt comms              | B, A   | Publicly frames unlimited core-hours online access as fix for jammed phone lines.      |
+
+---
+
+### 3. Individual practices (policy / config examples)
+
+| Actor / study                                  | Region / scope                                    | Type        | Issues | Main angle                                                                            |
+| ---------------------------------------------- | ------------------------------------------------- | ----------- | ------ | ------------------------------------------------------------------------------------- |
+| Oakwood Lane Medical Practice                  | Leeds                                             | GP practice | A      | Online consultations available only during core hours for non-urgent requests.        |
+| Church Lane Surgery                            | Midlands (practice area)                          | GP practice | A      | Online booking opens early morning and closes once daily capacity is hit.             |
+| The Practice Old Hill                          | Midlands                                          | GP practice | A      | Online consultations open 8–6:30 for routine care; no 24-hour request route.          |
+| St Luke’s Health Centre                        | London/Birmingham-type cluster (template wording) | GP practice | A      | Mirrors “core hours only, capacity-limited” online access wording.                    |
+| Donnington Medical Practice – access explainer | Telford                                           | GP practice | B      | Describes 8:30am phone scramble (hundreds of calls) and consequences of total triage. |
+
+---
+
+### 4. Professional bodies & intermediaries
+
+| Actor / study                                                             | Region / scope     | Type                     | Issues  | Main angle                                                                                                   |
+| ------------------------------------------------------------------------- | ------------------ | ------------------------ | ------- | ------------------------------------------------------------------------------------------------------------ |
+| BMA (GPC England) – contract campaign                                     | England            | Professional association | B, C, A | Warns unlimited core-hours online demand is unsafe; opposes removal of diversions; highlights workload risk. |
+| Local Medical Committees (Somerset, Wessex, Surrey & Sussex, Essex, etc.) | England (regional) | GP reps / legal advisors | B, C    | Guide practices on complying with online-access rules while staying in “safe working” range.                 |
+| King’s Fund – GP contract explainer                                       | England            | Health policy think tank | B, A    | Independent breakdown of contract; clarifies core-hours-only online requirement.                             |
+| NHS Confederation – GP contract brief                                     | England            | Membership body          | B, A    | Summarises new GP access expectations for system leaders.                                                    |
+| HSSIB – online consultation investigation                                 | England            | Patient safety body      | C       | Finds digital consultation tools can cause harm via mis-triage, delays and confusion.                        |
+
+---
+
+### 5. Local democratic scrutiny
+
+| Actor / study                                         | Region / scope                 | Type                             | Issues | Main angle                                                                            |
+| ----------------------------------------------------- | ------------------------------ | -------------------------------- | ------ | ------------------------------------------------------------------------------------- |
+| Stockton-on-Tees ASC & Health Select Committee        | Stockton-on-Tees (Tees Valley) | Council scrutiny                 | C      | Full review of access to GPs and primary care, including booking models and capacity. |
+| Barnet Adults & Health Overview & Scrutiny – GP T&F   | Barnet (London)                | Council scrutiny (task & finish) | C      | Dedicated group on GP access; interrogates appointment systems and ICB approach.      |
+| Manchester City Council – Health Scrutiny (GP access) | Manchester city                | Council scrutiny                 | C      | Considers GP access reports from NHS GM; looks at digital, phone and extended access. |
+
+---
+
+### 6. Public opinion, data & performance
+
+| Actor / study                                                     | Region / scope | Type                     | Issues | Main angle                                                                                      |
+| ----------------------------------------------------------------- | -------------- | ------------------------ | ------ | ----------------------------------------------------------------------------------------------- |
+| GP Patient Survey 2025                                            | England        | Official patient survey  | C      | National stats on ease of access, booking experience and satisfaction with GP services.         |
+| Ipsos polling – NHS priorities / GP access                        | GB             | Public opinion polling   | C      | Shows “easier access to GP appointments” as top public priority for the NHS.                    |
+| Healthwatch-linked polling (via media)                            | England        | Polling / media coverage | C      | Finds strong support for rights to timely GP access (e.g. 24-hour contact expectations).        |
+| Institute for Government – Performance Tracker Local (GP chapter) | England        | Think tank analysis      | C      | Links low satisfaction to workforce & face-to-face capacity; frames access as systemic problem. |
+
+---
+
+### 7. Cross-cutting summary by “interest”
+
+* **Patient voice (local & national):** multiple independent Healthwatch bodies in Hertfordshire, Tower Hamlets, Ealing, Wandsworth, Westminster, Kent, plus Healthwatch England, all flagging digital front doors and booking systems as access barriers (A, B, C).
+* **System implementers:** ICBs/ICSs and PCNs trialling online triage / digital front doors, documenting both gains and new exclusions (Herts & West Essex, West Kent, SW London).
+* **Practices:** named surgeries showing how the new GP contract is realised as core-hours-only and capacity-capped online access, plus practice-level descriptions of phone scrambles (Oakwood Lane, Church Lane, Old Hill, St Luke’s, Donnington).
+* **Policy & safety bodies:** NHS England, DHSC, BMA, LMCs, HSSIB shaping and contesting the low access floor and warning about workload and safety risks.
+* **Democratic oversight & data:** local scrutiny committees, national surveys and polling, and performance trackers all pointing to GP access as a top public grievance and a system under strain (C).
+
+---
+
 ## A. GP websites / online systems closed out-of-hours or when capacity is reached
 
 ### 1. Healthwatch Hertfordshire – Online GP websites & forms shut / limited
