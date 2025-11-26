@@ -28,13 +28,6 @@ The focus throughout is **patient access**, not clinical care quality.
    - Since 1 October 2024, NHS rules require practices to provide access to online request routes during core hours; routinely switching the system off appears to fall short of that expectation.
    - PATCHS itself supports a **24/7 non‑urgent/admin route** (config option in their guidance), but it is disabled here.
    - It says "this service closes when we are full", but have not been able to check in office hours, so it may not even meet the current NHS requirement of remaining accessible for admin/non-urgent requests at least during office hours (itself, a low bar).
-   - **The website should never “shut”** - at minimum, admin/non‑urgent routes should be available 24/7.
-   - This seems to be a pattern at the moment, with practices claiming "The new requirement to allow patients unlimited online access for non- urgent medical requests, throughout core hours, could make it more likely that we will have no choice but to create hospital-style waiting lists to meet patient need. We do not believe that this is a solution that anyone wants." or "GPs and their teams are under huge pressure – caring for more people with fewer resources."
-        - This is a false dichotomy (and patient-blaming), there's nothing wrong with queues if you're actively working them, and what having an advance queue allows is flexibility (cancellation? bring someone forward... sudden influx? move the booking window).
-        - People are happy to wait for the predictability of 'something' happening, as long as it then does happen. 
-        - People are much less stable if they have no idea whether they can even ask for help today, or if they have to wait till tomorrow to try and fail again.
-        - The internet emables people to handle queues faster than ever, if you design and implement their processes well, instead of falling back to nothing.
-    - It's failure as a feature, not a bug, staff are choosing to outright reject patients before they can even start, then failing to measure the effect because angry reviews don't drive policy.
 
 2. **Digital‑only booking and exclusion**
    - Access is effectively **digital‑only**: no simple “walk in and make an appointment” route and limited scope to book by phone without being sent back online.
@@ -43,16 +36,15 @@ The focus throughout is **patient access**, not clinical care quality.
 
 3. **Missed‑call deletion and resubmission loop**
    - If the clinician calls and the patient misses an **unscheduled** call, the **request is deleted** and the patient must start again another day.
-   - There is **no same‑day resubmission path**, even when the first call was early in the day.
+   - There is **no same‑day resubmission**, even when the first call was early in the day.
    - Patients are not always notified that their request was deleted and may only discover it by digging through message threads (this might be mitigated by PATCHS but have been unable to check).
    - Unscheduled calls are sometimes labelled as **“missed appointments”**, which is misleading and may distort DNA statistics.
         - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
 
-4. **Reception / front‑door experience**
+4. **Reception**
    - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
    - 'Rude reception' is a very common complaint, and some reported incidents have been severe.
-   - Once patients get through to a GP or nurse, experiences are often positive; the problem is **getting through the door**.
-    - As a patient, I don't know all the medical classifications or the right words, but when I come to the doctor, I'm being told to piss off to a computer and given a website that doesn't work, when all I need is to make an appoint to speak with a doctor, like a human being, not forced into a funnel that doesn't work often, and doesn't fit even if it did. 
+   - Once patients get through to a GP or nurse, experiences are often positive; the problem is getting through the door. 
 
 5. **Metrics vs reality**
    - Internal appointment metrics can look “fine” or improving, while:
@@ -125,19 +117,25 @@ These are the recurring asks across complaints, meetings, and notes in this repo
   - Nobody expects doctors to reply outside of office hours, but the whole point of a website is to eliminate the concurrency requirement. Time-gating the website is *professionally incompetent*.
 - **Predictable, scheduled contact**
   - Offer **time windows or booked call times** instead of “sometime today”.
-    - PATCHS *might* support this, see FAQ print-outs (meeting-ppg-nov26/PATCHS-support)[meeting-ppg-nov26/PATCHS-support] for Booked Slots admin instructions.
   - Allow patients to **reschedule the same request** without re‑entering everything from scratch. 
-    - PATCHS *might* support this, but it's unclear in the FAQs and I can't test myself because the site is down or offline
+    - PATCHS *might* support these, but it's unclear in the FAQs and I can't test myself because the site is down or offline
 - **Multiple access routes**
   - Ensure there is a **viable non‑digital path** (walk‑in or phone) that does not simply send people back to the website.
   - The receptionist tells people "You have to use the website" (often rudely, with no concept that this might not be a viable solution for the patient)
-    - Previous meetings staff have assured the group that this should not happen, yet it still does. Patients do not want to put undue burdens on staff, but it shouldn't be the responsibility of patients to guard staff from doing their job.
+    - In previous meetings staff have assured the group that this should not happen, yet it still does. Patients do not want to put undue burdens on staff, but it shouldn't be the responsibility of patients to guard staff from doing their job.
 - **Reception support and accountability**
   - Invest in pay, training, and support for reception.
   - Give reception enough **autonomy and tools** to help instead of just defending the system.
-  - Consider bumping the wage to attract skill where it matters most.
+  - Consider bumping the wage to attract skill where it matters most (advertised locally?).
 
-For a deeper, meeting‑oriented version of these, see `Meeting3-goals.md`.
+## Professional whining
+
+This seems to be a pattern at the moment, with practices [claiming](https://www.oakwoodlanemedical.nhs.uk/2025/10/07/availability-of-online-consultations-from-1-october-2025/) things like "The new requirement to allow patients unlimited online access for non- urgent medical requests, throughout core hours, could make it more likely that we will have no choice but to create hospital-style waiting lists to meet patient need. We do not believe that this is a solution that anyone wants." or "GPs and their teams are under huge pressure – caring for more people with fewer resources."
+    - This is patient-blaming (and a false dichotomy), there's nothing wrong with queues if you're actively working them.
+    - People are much less stable if they have no idea whether they can even ask for help today, or if they have to wait till tomorrow to try and fail again.
+    - Falling back to blocking the patient completely is _poor_.
+
+It's failure as a feature, not a bug, staff are choosing to outright reject patients before they can even start, then failing to measure the effect because angry reviews don't drive policy.
 
 ---
 
