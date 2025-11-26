@@ -1,92 +1,141 @@
-# Digital Access Failures – Raised December 2024, Escalated August 2025
+# Digital Access Failures - New Bank Health Centre (NHS GP Practice, Manchester)
 
-## Patient Participation Group Talking Points - Appointment System Concerns
+This repo documents ongoing concerns about **patient access, digital systems, and front‑door process** at New Bank Health Centre (run by GTD Healthcare).  
+It is public (containing only publicly available data) so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
 
-I’d like to discuss a problem with the appointment system at New Bank Health Centre that’s making it unnecessarily hard to get care. If a doctor can’t reach a patient by phone, the request is deleted outright, and they have to resubmit it the next day from scratch. This strips patients of control over their access to care for reasons like work, poor signal, or just missing a call. It’s frustrating, unfair, leads to patient-blaming instead of helpful outcomes, and I think it can be improved.
+## What’s in this repo (brief)
 
-## Key Points to Raise
+- **Complaint drafts and meeting prep**
+  - `ORIGINAL_COMPLAINT.md` - first long‑form complaint about the appointment system (Dec 2024/Aug 2025).
+  - `meeting-ppg-nov26/Meeting3-goals.md` - current preparation for the Nov 2025 PPG meeting on access.
+  - `meetings-notes/` - Documentation for each meeting, and my notes and received handouts.
+- **Data and analysis**
+  - `PatientSurveyBreakdown.md` - breakdown of GP Patient Survey results for New Bank.
+  - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
+  - `healthwatch-reports/` - Healthwatch reports from around the UK sharing these concerns.
 
-1. **Unpredictable Availability**
+The focus throughout is **patient access**, not clinical care quality.
 
-   - Patients can’t wait by the phone all day for an unscheduled call. Jobs, family, or technical issues (e.g., no signal) mean missing a call isn’t their fault.
-   - **NHS Link**: NHS guidelines say appointments should be reasonable and consider patients’ circumstances.
+---
 
-2. **Deleted Requests Create Barriers**
+## Current concerns (Nov 2025 snapshot)
 
-   - Deleting requests after missed calls forces patients into a daily resubmission loop, delaying care with no guarantee of success.
-   - **NHS Link**: The NHS Constitution calls for equitable access to care, but this system penalizes patients unfairly.
+1. **PATCHS website off outside office hours**
+   - New Bank has switched online access from eConsult to **PATCHS**.
+   - The PATCHS entry point on the practice website is **switched off outside office hours**, and on several checks has also been **down during office hours** when attempting to use it.
+   - Since 1 October 2024, NHS rules require practices to provide access to online request routes during core hours; routinely switching the system off appears to fall short of that expectation.
+   - PATCHS itself supports a **24/7 non‑urgent/admin route** (config option in their guidance), but it is disabled here.
+   - It says "this service closes when we are full", but have not been able to check in office hours, so it may not even meet the current NHS requirement of remaining accessible for admin/non-urgent requests at least during office hours (a low bar).
+   - Position in this repo: **the website should never “shut”** - at minimum, admin/non‑urgent routes should be available 24/7, with clear response timeframes.
 
-3. **Vulnerable Patients Suffer Most**
+2. **Digital‑only booking and exclusion**
+   - Access is effectively **digital‑only**: no simple “walk in and make an appointment” route and limited scope to book by phone without being sent back online.
+   - This excludes people without stable internet, devices, availability or confidence with forms, and adds friction even for confident users.
+   - Current system also excludes anyone who can't take a day off for a *chance* at an appointment, anyone who works nights or other weird times, and is directly harmful to the health of the community.
 
-   - Elderly or disabled patients may struggle with the online form or being available for calls, risking exclusion from care.
-   - **NHS Link**: NHS accessibility rules require alternative methods for those who can’t use digital systems.
+3. **Missed‑call deletion and resubmission loop**
+   - If the clinician calls and the patient misses an **unscheduled** call, the **request is deleted** and the patient must start again another day.
+   - There is **no same‑day resubmission path**, even when the first call was early in the day.
+   - Patients are not always notified that their request was deleted and may only discover it by digging through message threads (this might be mitigated by PATCHS but have been unable to check).
+   - Unscheduled calls are sometimes labelled as **“missed appointments”**, which is misleading and may distort DNA statistics.
+    - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
 
-4. **Misleading "Missed Appointment" Label**
+4. **Reception / front‑door experience**
+   - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
+   - 'Rude reception' is a very common complaint, and some reported incidents have been severe.
+   - Once patients get through to a GP or nurse, experiences are often positive; the problem is **getting through the door**.
+    - As a patient, I don't know all the medical classifications or the right words, but when I come to the doctor, I'm being told to piss off to a computer and given a website that doesn't work, when all I need is to make an appoint to speak with a doctor, like a human being, not forced into a funnel that doesn't work often, and doesn't fit even if it did. 
 
-   - Calling an unscheduled call a "missed appointment" isn’t accurate and might inflate statistics, affecting trust and policies like charging for no-shows.
-   - **NHS Link**: Accurate appointment data is vital per NHS guidance—mislabeling distorts this.
+5. **Metrics vs reality**
+   - Internal appointment metrics can look “fine” or improving, while:
+     - GP Patient Survey results still show **39%** finding it hard to get appointments.
+     - Google and PATCHS reviews include **many 1★ complaints** about access, downtime, confusion, and reception.
+        - The practice/GTD should examine these complaints as issues like these are already appearing as reviews on GTD-managed practices (including New Bank).
+   - The concern is that **what is measured** (e.g., completed appointments) hides those who are driven away or give up, because only a small proportion of those then go on to write reviews on any platform (some simply can't, the quietest contingent are those most lost).
 
-5. **No Notification Worsens the Problem**
+### Open questions for further research
 
-   - Patients aren’t always told when their request is deleted (I wasn't for 3 of the 4), leaving them confused and wasting time checking manually.
-   - **NHS Link**: NHS England stresses clear communication from the first contact—patients deserve to know their request status.
+- Staff have claimed 'of course reviews are bad' in the PPG, but I don't see why this is an excuse. A LOT of local practices have bad reviews, often for very similar reasons, but there are also a lot of practices with great reviews (including 1 under GTD), so the pattern doesn't hold for ALL practices, but how many does it hold for, and what are their common threads?
 
-## Solutions to Suggest
+- Warren has stated "everyone does this" regarding making patients 'start over' (deleting requests for missed calls, or multiple daily submissions/second after deletion on same day). How many practices have systems that are this poorly designed? It's like it's bad on purpose. Does PATCHS solve this?
 
-- **Don’t Delete Requests**: Keep appointment requests open for a set period (e.g., 48 hours) even if you rejected it, or ask the patient if they want to close it or reopen tomorrow automatically.
-   - You don’t have to make multiple call attempts—we get time is tight—but 2 calls inside 20 seconds isn't giving patients time to spot a missed call to keep an eye out for another call, so it's no different from 1 call practically.
-   - Patients should at least be able to reschedule (or even better escalate to non-phone path).
-- **Schedule Call Windows**: Let patients pick a time range for callbacks to fit their lives.
-- **Offer Alternatives**: Add phone or in-person booking for those who can’t use the online form. Your patient survey suggests 40% of people are not making it through your system for even a first appointment.
-- **Notify Patients Reliably**: Send a text or email if a request is closed (which ideally it wouldn't be), with clear next steps. Likewise for support messages, which just black hole currently.
-- **Have Some Empathy/Humanity**: People come to the doctor rarely, when they need help most... Most people are not as tech savvy as you, and certainly do not have comfortable devices for filling out long relatively complex forms multiple times or every day. When the receptionist treats people badly because it's technically the patient's own fault, it just drives them further away from your help.
-- **Don't Make Doctors Call People**: A simple live-holding system where the Doctors review and queue requests, but a staff member makes the calls, and queues them into the Doctor as needed, would improve the process on both ends, with more flexibility and efficiency for everyone involved.s
+- From a design perspective, the way PATCHS handles limits seems crazy. It's so lazy and hostile to patients, but the PPG isn't really 'systems design and UX' meeting. It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often? Is there anyone in the room who has even the faintest consideration of the patient workflow through their systems? Do they accessibility-test themselves?
 
+- The language around request types is confusing. I don't know if what I need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent. If I have some pain, is that clinical? Who knows? Where to find out? There's several layers of website, and none of them seem to say the same thing. Why is the tech stack such a mess?
 
-## **CORE ISSUES**
-- **Digital-only booking system** - no phone/in-person options
-- **Unscheduled callbacks** - patients wait all day with no timeframe
-- **Two-strikes deletion policy** - missed calls = deleted requests
-- **No same-day resubmission** - must wait until next day
-- **Misleading terminology** - "missed appointments" for unscheduled calls
-- **Tiny text fields** insufficient space for entering detailed medical information
-- **Poor notifications** - requests deleted without notification
+---
 
-## **IMPACT ON PATIENTS**
-- **Vulnerable groups excluded** (elderly, disabled, digitally excluded)
-- **Patient safety risks** - delays in care access
-- **Mental health impact** - uncertainty and anxiety
-- **Time wasted** - all-day waiting for uncertain outcomes
-- **Statistical misrepresentation** - inflates "missed appointment" figures
+## Review work in progress
 
-## **EVIDENCE FROM REVIEWS**
-- **40+ complaints** about appointment system since 2017
-- **Average rating 1.5/5** for appointment-related complaints
-- **Consistent themes**: long phone waits, confusing digital system, rude staff
-- **Pattern**: Better Health MCR management (post-2017) shows significant decline
+We are currently:
 
-## **NHS POLICY VIOLATIONS**
-- **Patient communication standards** - unclear notifications
-- **Accessibility requirements** - no alternative booking methods
-- **Data accuracy** - mischaracterizing missed calls as appointments
-- **Patient rights** - equitable access not provided
+1. **Summarising New Bank’s own reviews**
+   - Parsing and clustering **1★ and 2★ reviews** to understand themes (access, reception, repeat failures, etc.).
+2. **Comparing across GTD Healthcare practices**
+   - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns.
+   - Next step: compare New Bank to **other GTD sites** and to **nearby non‑GTD practices**.
+3. **Looking wider**
+   - Using national NHS data to see:
+     - How common **complex access / phone‑blocking / web‑off** models are.
+     - How New Bank’s access and DNA patterns compare with regional and national baselines.
+     - Several local/regional Healthwatch groups already reporting upon this, see our evidence report in nov26 meeting.
 
-## **ESCALATION PATH**
-1. **Practice Manager** (direct complaint)
-2. **Healthwatch Manchester** (0300 078 0669)
-3. **NHS England** (0300 311 22 33)
-4. **NHS Counter Fraud Authority** (if intentional misrepresentation suspected)
+The aim is not to “name and shame” a single surgery, but to show where **process and tools are systematically failing patients**.
 
-## **PROPOSED SOLUTIONS**
-- **No Deletion** The patient didn’t magically recover. They reached out for help, and you deleted their request—sometimes with a dismissive, blame-shifting response.
-- **Alternative booking methods** (phone/in-person)
-- **Scheduled callback windows** instead of all-day waiting
-- **Flexible missed call policy** - allow same-day resubmission
-- **Clear notifications** when requests are closed
-- **Accurate terminology** - don't call unscheduled calls "appointments"
+---
 
-## **BROADER IMPLICATIONS**
-- **Systemic issue** - the doctors might be great, but some patients don't get the chance to find out
-- **Potential fraud** - inflated missed appointment statistics
-- **Public interest** - worth investigating across Manchester practices
-- **Journalistic angle** - could escalate to Manchester Mill/Press
+## Original appointment‑system complaint (Dec 2024) - in brief
+
+This section summarises the original complaint that started the project; the full text lives in `ORIGINAL_COMPLAINT.md`.
+
+- **Unpredictable availability**
+  - Patients cannot wait by the phone all day for an unscheduled call. Jobs, caring responsibilities, signal problems, or simply stepping away for 5 minutes mean missed calls are often not the patient’s fault.
+- **Deleted requests create barriers**
+  - Deleting requests after failed calls forces a **daily resubmission loop**, delaying care with no guarantee of success.
+- **Vulnerable patients suffer most**
+  - Elderly, disabled, or digitally excluded patients struggle with long forms, short windows, and phone‑only call‑backs.
+- **Misleading “missed appointment” label**
+  - Labeling unscheduled calls as “missed appointments” inflates DNA statistics and shifts blame to patients. 
+    - (this may have been mitigated by workflow change, awaiting future monthly stats from the practice)
+- **No or poor notification**
+  - Requests can be deleted without clear notification; patients only find out if they proactively check.
+    - (this may have been mitigated by switch to PATCHS, but as of yet have been unable to check because it's always offline)
+
+These themes still apply under PATCHS - in some respects, the move has **made access worse** by turning off 24/7 intake.
+
+---
+
+## Proposed improvements (high level)
+
+These are the recurring asks across complaints, meetings, and notes in this repo:
+
+- **Always‑on intake**
+  - Keep an online route open **24/7** for non‑urgent/admin requests, with clear messaging about when a response will come.
+  - For PATCHS specifically: enable the documented 24‑hour mode by default (and ideally make it the product default, not opt‑in).
+  - Nobody expects doctors to reply outside of office hours, but the whole point of a website is to eliminate the concurrency requirement. Time-gating the website is *professionally incompetent*.
+- **Predictable, scheduled contact**
+  - Offer **time windows or booked call times** instead of “sometime today”.
+    - PATCHS *might* support this, see FAQ print-outs (meeting-ppg-nov26/PATCHS-support)[meeting-ppg-nov26/PATCHS-support] for Booked Slots admin instructions.
+  - Allow patients to **reschedule the same request** without re‑entering everything from scratch. 
+    - PATCHS *might* support this, but it's unclear in the FAQs and I can't test myself because the site is down or offline
+- **Multiple access routes**
+  - Ensure there is a **viable non‑digital path** (walk‑in or phone) that does not simply send people back to the website.
+  - The receptionist tells people "You have to use the website" (often rudely, with no concept that this might not be a viable solution for the patient)
+    - Previous meetings staff have assured the group that this should not happen, yet it still does. Patients do not want to put undue burdens on staff, but it shouldn't be the responsibility of patients to guard staff from doing their job.
+- **Reception support and accountability**
+  - Invest in pay, training, and support for reception.
+  - Give reception enough **autonomy and tools** to help instead of just defending the system.
+  - Consider bumping the wage to attract skill where it matters most.
+
+For a deeper, meeting‑oriented version of these, see `Meeting3-goals.md`.
+
+---
+
+## TODOs / Next Steps / Escalation (for this project)
+
+- [ ] Locate and link the **PATCHS user manual / guidance page** that describes enabling 24/7 admin/non‑urgent mode.
+    - I already found the other pages, but I can't find this one.
+- [ ] Quantify how many GTD practices, and how many local/regional/national practices, **switch their websites/online forms off** outside office hours.
+    - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
+- [ ] Quantify how often “bad reception” appears in reviews across GTD vs local comparators.
+- [ ] Map escalation routes beyond GTD (ICB, NHS England, CQC, ombudsman) specifically for **access and digital exclusion** rather than individual clinical events.
