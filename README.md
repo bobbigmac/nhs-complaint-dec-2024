@@ -130,7 +130,7 @@ These are the recurring asks across complaints, meetings, and notes in this repo
 
 ## Professional whining
 
-This seems to be a pattern at the moment, with practices [claiming](https://www.oakwoodlanemedical.nhs.uk/2025/10/07/availability-of-online-consultations-from-1-october-2025/) things like "The new requirement to allow patients unlimited online access for non- urgent medical requests, throughout core hours, could make it more likely that we will have no choice but to create hospital-style waiting lists to meet patient need. We do not believe that this is a solution that anyone wants." or "GPs and their teams are under huge pressure – caring for more people with fewer resources."
+- This seems to be a pattern at the moment, with practices [claiming](https://www.oakwoodlanemedical.nhs.uk/2025/10/07/availability-of-online-consultations-from-1-october-2025/) things like "The new requirement to allow patients unlimited online access for non- urgent medical requests, throughout core hours, could make it more likely that we will have no choice but to create hospital-style waiting lists to meet patient need. We do not believe that this is a solution that anyone wants." or "GPs and their teams are under huge pressure – caring for more people with fewer resources."
     - This is patient-blaming (and a false dichotomy), there's nothing wrong with queues if you're actively working them.
     - People are much less stable if they have no idea whether they can even ask for help today, or if they have to wait till tomorrow to try and fail again.
     - Falling back to blocking the patient completely is _poor_.
