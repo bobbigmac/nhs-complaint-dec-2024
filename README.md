@@ -67,12 +67,10 @@ The focus throughout is **patient access**, not clinical care quality.
 
 ---
 
-## Review work in progress
+## Ongoing work
 
-We are currently:
-
-1. **Summarising New Bank’s own reviews**
-   - Parsing and clustering **1★ and 2★ reviews** to understand themes (access, reception, repeat failures, etc.).
+1. **Summarised New Bank’s own reviews**
+   - Parsing and clustering **1★ and 2★ reviews** to understand themes (access, reception, repeat failures, etc.)
 2. **Comparing across GTD Healthcare practices**
    - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns.
    - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
