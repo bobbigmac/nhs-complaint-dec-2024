@@ -56,7 +56,7 @@ The focus throughout is **patient access**, not clinical care quality.
 ### Open questions for further research
 
 - Staff have claimed "everyone does this" regarding making patients 'start over' (deleting requests for missed calls, or multiple daily submissions/second after deletion on same day). How many practices have systems that delete patient requests? 
-    - PATCHS reviews suggest not it does not solve this.
+    - PATCHS reviews suggest that it does not solve this.
 
 - Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG, but I don't see why this is an excuse. A LOT of local practices have bad reviews, often for very similar reasons, but there are also a lot of practices with great reviews (including 1 under GTD), so the pattern doesn't hold for ALL practices, but how many does it hold for, and what are their common threads?
 
