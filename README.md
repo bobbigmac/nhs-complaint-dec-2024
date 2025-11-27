@@ -5,6 +5,16 @@ It contains only publicly available data so that the evidence and reasoning are 
 
 [Current meeting files ➔ `meeting-ppg-nov26/`](./meeting-ppg-nov26/)
 
+## Immediate feedback post Nov 26th PPG...
+
+- 2 new doctors and new staff coming soon.
+- Complaints about reception seem to be improving, less reliance on agency staff.
+- The website will be switched to 24hr accessible. 
+  - Doctor has concerns over missing incorrectly logged urgent messages
+  - Needs clear communication out of office hours.
+- Bookable looks pretty great:
+  - See [New Bank Health Centre on Bookable: https://bookable.health/booking/gp-surgery/loc_9a5qmmx644zv](https://bookable.health/booking/gp-surgery/loc_9a5qmmx644zv)
+
 ## What’s in this repo (brief)
 
 - **Complaint drafts and meeting prep**
@@ -17,8 +27,6 @@ It contains only publicly available data so that the evidence and reasoning are 
   - `healthwatch-reports/` - Healthwatch reports from around the UK sharing these concerns.
 
 The focus throughout is **patient access**, not clinical care quality.
-
----
 
 ## Current concerns (Nov 2025 snapshot)
 
