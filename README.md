@@ -22,13 +22,14 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Form has "when should we _not_ contact you" question, but it's pointless if the answer is 'do not phone me, ever', or 'I work nights and sleep days (or cannot use my phone at work, or I don't have a phone), so will not see your phone call'.
   - Staff _really_ need to deal with this, I've brought it up at the PPG several times now. LOTS of people work nights/shifts, or otherwise cannot access their phone in work, and are being actively excluded (no wonder so many 1 star reviews).
   - Asked staff who phoned me (reaching me on the second attempt, with 41 minutes between calls, staring at my phone the entire time, because last time I tried to call back after missing 2 calls, I was told to "ask _really_ nicely and _maybe_ a doctor _would consider_ trying again") if they read my mention that I was probably not accessible via phone and she said "I didn't see that", then scrolled down the page, and confirmed my message was indeed present (she did not say outright, but had clearly not read it), but that...
-  - She cannot make an appointment (or propose/suggest/start an appointment process) via PATCHs without a phone call anyway. 
-  - Request was not deleted, but no response has been made online. Cannot attach further notes, or reactivate the ticket. I 'have' an appointment scheduled, but PATCHS doesn't surface that, or update the ticket.
-  - Request status updated to 'Completed'. Cannot reopen or attach any info. Appointment info is NOT added anywhere in the system. 
+    - She cannot make an appointment (or propose/suggest/start an appointment process) via PATCHs without a phone call anyway. 
+    - Request was not deleted, but no response has been made online. Cannot attach further notes, or reactivate the ticket. I 'have' an appointment scheduled, but PATCHS doesn't surface that, or update the ticket.
+    - Request status updated to 'Completed'. Cannot reopen or attach any info. Appointment info is NOT added anywhere in the system. 
   - Don't know what would happen if I missed that second call again. Can't afford to risk it, I only have one day off and awake in the day.
   - PATCHS UX sucks. 
     - The 'AI' questions are barely coherent, and as repetitive as the old eConsult route, maybe more so.
-    - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem. It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
+    - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem.
+    - It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
 
 ## What’s in this repo (brief)
 
