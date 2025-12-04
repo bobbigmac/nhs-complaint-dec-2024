@@ -60,6 +60,7 @@ The focus throughout is **patient access**, not clinical care quality.
         - Request status updated to 'Completed'. Don't know what would happen if I missed that second call again.
     - PATCHS UX sucks. 
       - The 'AI' questions are barely coherent, and as repetitive as the old eConsult route, maybe more so.
+      - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker).
 
 4. **Reception**
    - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
