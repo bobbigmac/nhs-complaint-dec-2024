@@ -49,7 +49,8 @@ The focus throughout is **patient access**, not clinical care quality.
    - Unscheduled calls are sometimes labelled as **“missed appointments”**, which is misleading and may distort DNA statistics.
         - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
    - Previous improvement of 'suggested callback time' input field, has not been kept in the move to PATCHS. Still cannot request an appointment for anything, still dependent on unscheduled calls, despite stating in message that I cannot receive calls in the day as I work nights.
-    - Request was not deleted, but no actual response I can see.
+    - Request was not deleted, but no response has been made, request/message still open.
+    - PATCHS UX suuuuccks. Its 'AI' questions are barely coherent, and as repetitive as the old eConsult route.
 
 4. **Reception**
    - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
