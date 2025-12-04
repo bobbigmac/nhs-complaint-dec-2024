@@ -48,6 +48,8 @@ The focus throughout is **patient access**, not clinical care quality.
    - Patients are not always notified that their request was deleted and may only discover it by digging through message threads (this might be mitigated by PATCHS but have been unable to check).
    - Unscheduled calls are sometimes labelled as **“missed appointments”**, which is misleading and may distort DNA statistics.
         - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
+   - Previous improvement of 'suggested callback time' input field, has not been kept in the move to PATCHS. Still cannot request an appointment for anything, still dependent on unscheduled calls, despite stating in message that I cannot receive calls in the day as I work nights.
+    - Request was not deleted, but no actual response I can see.
 
 4. **Reception**
    - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
