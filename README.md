@@ -26,8 +26,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Request status updated to 'Completed'. Cannot reopen or attach any info. Appointment info is NOT added anywhere in the system. 
   - Don't know what would happen if I missed that second call again. Can't afford to risk it, I only have one day off and awake in the day.
   - PATCHS UX sucks. 
-  - The 'AI' questions are barely coherent, and as repetitive as the old eConsult route, maybe more so.
-  - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem. It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
+    - The 'AI' questions are barely coherent, and as repetitive as the old eConsult route, maybe more so.
+    - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem. It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
 
 ## What’s in this repo (brief)
 
