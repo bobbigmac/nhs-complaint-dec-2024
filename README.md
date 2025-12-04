@@ -30,7 +30,7 @@ It contains only publicly available data so that the evidence and reasoning are 
     - The 'AI' questions are barely coherent, and as repetitive as the old eConsult route, maybe more so.
     - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem.
     - It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
-    - The entire message/request content is squeezed into a small scrollable box within the webpage, making it hard to read. It also seems to auto-scroll itself to the bottom every few seconds, so you have to find your place again if you're rereading the content.
+    - The entire message/request content is squeezed into a small scrollable box within the webpage, making it hard to read (this is just really lazy web design by PATCHS). It also seems to auto-scroll itself to the bottom every few seconds, so you have to find your place again if you're rereading the content (it also does not display properly in printed form, as it prints the box, and only a little of the contents).
 
 ## What’s in this repo (brief)
 
