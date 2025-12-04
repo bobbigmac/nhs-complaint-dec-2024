@@ -18,6 +18,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 ## Progress on making an appointment - Dec 4th 2025
   - Had a day off, and transient pain, so tried again...
   - Previous improvement of 'suggested callback time' input field, has not been kept in the move to PATCHS. Still cannot request an appointment for anything, still dependent on unscheduled calls, despite stating in message that I cannot receive calls in the day as I work nights.
+  - Form has repetitive questions that barely make any sense.
   - Form has "when should we _not_ contact you" question, but it's pointless if the answer is 'do not phone me, ever', or 'I work nights and sleep days (or cannot use my phone at work, or I don't have a phone), so will not see your phone call'.
   - Staff _really_ need to deal with this, I've brought it up at the PPG several times now. LOTS of people work nights/shifts, or otherwise cannot access their phone in work, and are being actively excluded (no wonder so many 1 star reviews).
   - Asked staff who phoned me (reaching me on the second attempt, with 41 minutes between calls, staring at my phone the entire time, because last time I tried to call back after missing 2 calls, I was told to "ask _really_ nicely and _maybe_ a doctor _would consider_ trying again") if they read my mention that I was probably not accessible via phone and she said "I didn't see that", then scrolled down the page, and confirmed my message was indeed present (she did not say outright, but had clearly not read it), but that...
