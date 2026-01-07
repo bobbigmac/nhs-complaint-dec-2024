@@ -37,6 +37,7 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Tests all came back pretty much normal (was not tested for calprotectin, despite asking for that test), health condition in NHS app was closed on jan 6th, with no follow-up.
     - Basically, patient was not tested for the test that would probably show the problem, then case closed without confirmation from the patient or thorough check about the current status.
     - Process issue or lack of care?
+    - This same issue was raised by another patient in the Nov 26th PPG.
     - From the log, it reads like someone came back after new year and just ticked off whatever tests were on the list, because they clearly didn't read the patient notes about what the tests were looking for.
 
 ## What’s in this repo (brief)
