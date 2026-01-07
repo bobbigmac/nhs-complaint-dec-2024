@@ -34,9 +34,10 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Attended appointment, good discussion, submitted samples for tests ()
     - Specifically asked to test for calprotectin.
   - Didn't have a day where the doctor was open and I would be able to answer an unscheduled call randomly in the day.
-  - Tests all came back pretty much normal (was not tested for calprotecting), health condition in NHS app was closed on jan 6th, with no follow-up. Basically, patient not tested for the test that would probably show the problem, then case closed without confirmation from the patient.
+  - Tests all came back pretty much normal (was not tested for calprotectin, despite asking for that test), health condition in NHS app was closed on jan 6th, with no follow-up.
+    - Basically, patient was not tested for the test that would probably show the problem, then case closed without confirmation from the patient or thorough check about the current status.
     - Process issue or lack of care?
-    - From the log, it reads like someone came back after new year and just ticked off whatever was on the list, because they clearly didn't read the actual patient notes about what the tests were looking for.  
+    - From the log, it reads like someone came back after new year and just ticked off whatever tests were on the list, because they clearly didn't read the patient notes about what the tests were looking for.
 
 ## What’s in this repo (brief)
 
