@@ -39,8 +39,9 @@ It contains only publicly available data so that the evidence and reasoning are 
     - Process issue or lack of care?
     - This same issue was raised by another patient in the Nov 26th PPG.
     - From the log, it reads like someone came back after new year and just ticked off whatever tests were on the list, because they clearly didn't read the patient notes about what the tests were looking for.
-  - Tried to make an appointment at the front desk (Jan 9th), told "You HAVE to do it online" (still), mentioned that Cate had said in the PPG meetings I _should_ be able to make an appointment without going online, and reception said they can do it for me, but I would have to be able to receive an unscheduled call (still), and briefly explained I work nights and sleep days, so cannot receive a call, and was told when she checked my history "there's nothing here about that", and I briefly explained that my case had been closed prematurely.
-    - She took a note to ask Lynne about it on Monday (I'm surprised no manager on-site at 5pm Friday), and said she would text me Monday (won't hold my breath, but she was polite and seemed understanding, an improvement over last time I tried to make an appointment at the front desk).
+  - Tried to make an appointment at the front desk (Jan 9th), told "You HAVE to do it online" (still), mentioned that Cate had said in the PPG meetings I _should_ be able to make an appointment without going online, and reception said they can do it for me, but I would have to be able to receive an unscheduled call (still), and briefly explained I work nights and sleep days, so cannot receive a call, and was told when she checked my history "there's nothing here about that", and I briefly explained that my case had been closed prematurely, but that Dr. Sadiq had told me to make an appointment to see her next time.
+    - She took a note to ask Lynne about it on Monday (I'm a little surprised no manager on-site at 5pm Friday, but I thought Lynne was ops, not 'practice' manager anyway, so maybe still missing a practice manager), and said she would text me Monday.
+    - She was polite and seemed understanding, an improvement over last time I tried to make an appointment at the front desk.
 
 ## What’s in this repo (brief)
 
