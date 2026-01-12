@@ -42,7 +42,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Tried to make an appointment at the front desk (Jan 9th), told "You HAVE to do it online" (still), mentioned that Cate had said in the PPG meetings I _should_ be able to make an appointment without going online, and reception said they can do it for me, but I would have to be able to receive an unscheduled call (still), and briefly explained I work nights and sleep days, so cannot receive a call, and was told when she checked my history "there's nothing here about that", and I briefly explained that my case had been closed prematurely, but that Dr. Sadiq had told me to make an appointment to see her next time.
     - She took a note to ask Lynne about it on Monday (I'm a little surprised no manager on-site at 5pm Friday, but I thought Lynne was ops, not 'practice' manager anyway, so maybe still missing a practice manager), and said she would text me Monday.
     - She was polite and seemed understanding, an improvement over last time I tried to make an appointment at the front desk.
-  - Woke up monday evening to 2 missed calls (so much for that text message).
+  - Woke up monday evening to 2 missed calls (so much for that text message) at 10:44 and 11:33. Obviously missed them because I told the receptionist I would be asleep and she told me she'd send a text message.
+  - Went to front desk, told the receptionist (different one from friday) that they rung me twice, and it should be about making an appointment, but she checked and told me it wasn't on the system, so wouldn't book me an appointment. I told her a short version of the story so far, and she still couldn't make an appointment. I left because this is the edge of my anger. Try treating people with some fucking basic human decency.
 
 ## What’s in this repo (brief)
 
