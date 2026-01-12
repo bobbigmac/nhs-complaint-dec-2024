@@ -34,7 +34,7 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Attended appointment, good discussion, submitted samples for tests ()
     - Specifically asked to test for calprotectin.
   - Didn't have a day where the doctor was open and I would be able to answer an unscheduled call randomly in the day.
-  - Tests all came back pretty much normal (was not tested for calprotectin, despite asking for that test), health condition in NHS app was closed on jan 6th, with no follow-up.
+  - Tests all came back pretty much normal (was not tested for calprotectin, despite asking for that test), health condition in NHS app was closed on jan 6th, with no follow-up. The app doesn't say which doctor flagged the condition I am trying to identify as PAST, but I consider this a massive oversight, as the cause of my condition was not identified, only things that are not the cause. Bad doctoring.
     - Basically, patient was not tested for the test that would probably show the problem, then case closed without confirmation from the patient or thorough check about the current status.
     - Process issue or lack of care?
     - This same issue was raised by another patient in the Nov 26th PPG.
