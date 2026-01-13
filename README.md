@@ -31,6 +31,20 @@ It contains only publicly available data so that the evidence and reasoning are 
     - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem.
     - It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
     - The entire message/request content is squeezed into a small scrollable box within the webpage, making it hard to read (this is just really lazy web design by PATCHS). It also seems to auto-scroll itself to the bottom every few seconds, so you have to find your place again if you're rereading the content (it also does not display properly in printed form, as it prints the box, and only a little of the contents).
+  - Attended appointment, good discussion, submitted samples for tests ()
+    - Specifically asked to test for calprotectin.
+  - Didn't have a day where the doctor was open and I would be able to answer an unscheduled call randomly in the day.
+  - Tests all came back pretty much normal (was not tested for calprotectin, despite asking for that test), health condition in NHS app was closed on jan 6th, with no follow-up. The app doesn't say which doctor flagged the condition I am trying to identify as PAST, but I consider this a massive oversight, as the cause of my condition was not identified, only things that are not the cause. Bad doctoring.
+    - Basically, patient was not tested for the test that would probably show the problem, then case closed without confirmation from the patient or thorough check about the current status.
+    - Process issue or lack of care?
+    - This same issue was raised by another patient in the Nov 26th PPG.
+    - From the log, it reads like someone came back after new year and just ticked off whatever tests were on the list, because they clearly didn't read the patient notes about what the tests were looking for.
+  - Tried to make an appointment at the front desk (Jan 9th), told "You HAVE to do it online" (still), mentioned that Cate had said in the PPG meetings I _should_ be able to make an appointment without going online, and reception said they can do it for me, but I would have to be able to receive an unscheduled call (still), and briefly explained I work nights and sleep days, so cannot receive a call, and was told when she checked my history "there's nothing here about that", and I briefly explained that my case had been closed prematurely, but that Dr. Sadiq had told me to make an appointment to see her next time.
+    - She took a note to ask Lynne about it on Monday (I'm a little surprised no manager on-site at 5pm Friday, but I thought Lynne was ops, not 'practice' manager anyway, so maybe still missing a practice manager), and said she would text me Monday.
+    - She was polite and seemed understanding, an improvement over last time I tried to make an appointment at the front desk.
+  - Woke up monday evening to 2 missed calls (so much for that text message) at 10:44 and 11:33. Obviously missed them because I told the receptionist I would be asleep and she told me she'd send a text message.
+  - Went to front desk, told the receptionist (different one from friday) that they rung me twice, and it should be about making an appointment, but she checked and told me it wasn't on the system, so wouldn't book me an appointment. I told her a short version of the story so far, and she still couldn't make an appointment. I left because this is the edge of my anger.
+    - This practice needs to treat people with some basic human decency. I've lost count of how many times I've been told something that turned out not to be true by staff from this practice.
 
 ## What’s in this repo (brief)
 
