@@ -67,11 +67,10 @@ The focus throughout is **patient access**, not clinical care quality.
 ## Current concerns (Nov 2025 snapshot)
 
 1. **PATCHS website off outside office hours**
-   - New Bank has switched online access from eConsult to **PATCHS**.
-   - The PATCHS entry point on the practice website is **switched off outside office hours**, and on several checks has also been **down during office hours** when attempting to use it.
-   - Since 1 October 2024, NHS rules require practices to provide access to online request routes during core hours; routinely switching the system off appears to fall short of that expectation.
-   - PATCHS itself supports a **24/7 non‑urgent/admin route** (config option in their guidance), but it is disabled here.
-   - It says "this service closes when we are full", but have not been able to check in office hours, so it may not even meet the current NHS requirement of remaining accessible for admin/non-urgent requests at least during office hours (itself, a low bar).
+  - Partially solved, admin requests are now open out of hours (since 14th Jan)
+  - but... Appointments cannot be requested.
+    - This is only enabled when the office is open
+    - Why? It wastes the benefit of a website, which is to avoid synchronous availability requirements.
 
 2. **Digital‑only booking and exclusion**
    - Access is effectively **digital‑only**: no simple “walk in and make an appointment” route and limited scope to book by phone without being sent back online.
@@ -81,14 +80,17 @@ The focus throughout is **patient access**, not clinical care quality.
 3. **Missed‑call deletion and resubmission loop**
    - If the clinician calls and the patient misses an **unscheduled** call, the **request is deleted** and the patient must start again another day.
    - There is **no same‑day resubmission**, even when the first call was early in the day.
+     - TODO: Test this, this might be resolved by moving to PATCHS
    - Patients are not always notified that their request was deleted and may only discover it by digging through message threads (this might be mitigated by PATCHS but have been unable to check).
    - Unscheduled calls are sometimes labelled as **“missed appointments”**, which is misleading and may distort DNA statistics.
         - This practice appears to have been reduced significantly in August's practice stats (halving reported phone DNAs relative to other DNA types)
+        - TODO: Check the reduction continues/holds in future practice stats
 
 4. **Reception**
    - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
    - 'Rude reception' is a very common complaint, and some reported incidents have been severe.
-   - Once patients get through to a GP or nurse, experiences are often positive; the problem is getting through the door. 
+   - Once patients get through to a GP or nurse, experiences are often positive; the problem is getting through the door.
+     - TODO: Slight evidence this is improving, though reception complaints are still present.
 
 5. **Metrics vs reality**
    - Internal appointment metrics can look “fine” or improving, while:
@@ -96,6 +98,9 @@ The focus throughout is **patient access**, not clinical care quality.
      - Google and PATCHS reviews include **many 1★ complaints** about access, downtime, confusion, and reception.
         - The practice/GTD should examine these complaints as issues like these are already appearing as reviews on GTD-managed practices (including New Bank).
    - The concern is that **what is measured** (e.g., completed appointments) hides those who are driven away or give up, because only a small proportion of those then go on to write reviews on any platform (some simply can't, the quietest contingent are those most lost).
+     - TODO: Further work to do on the GP Patient Survey.
+       - I have the full question set, and there are some pretty serious oversights in the question design that subtly patient-blames, or minimises access issues by simply not having a suitable answer, including a couple of questions where the 'no access' option actively hides the stat entirely.
+       - Very low ~10% reply rate on New Bank's Patient Survey, way below national average of ~25%. Why so few replies to the survey? Have people lost hope the practice can improve?
 
 ### Open questions for further research
 
@@ -105,9 +110,9 @@ The focus throughout is **patient access**, not clinical care quality.
 - Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG, but I don't see why this is an excuse. A LOT of local practices have bad reviews, often for very similar reasons, but there are also a lot of practices with great reviews (including 1 under GTD), so the pattern doesn't hold for ALL practices, but how many does it hold for, and what are their common threads?
 
 - From a design perspective, the way PATCHS handles limits seems crazy. It's so lazy and hostile to patients, but the PPG isn't really 'systems design and UX' meeting.
-    - It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often? Is there anyone in the room who has even the faintest consideration of the patient workflow through their systems? Do they accessibility-test themselves?
+    - It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often? Is there anyone in the room who has even the faintest consideration of the patient workflow through their systems? Do they accessibility-test themselves? 'Mystery shop' GTD practices? 
 
-- The language around request types is confusing. I don't know if what I need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent. If I have some pain, or a meds question, is that clinical? Who knows? Where to find out? There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS infrastructure?
+- The language around request types is confusing. I don't know if what I need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent. If I have some pain, or a meds question, is that clinical? Who knows? Where to find out? There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS/practice infrastructure? Maybe better visibility of the organisational model would be useful on the site. It's not clear who is responsible for what.
 
 ---
 
@@ -123,6 +128,9 @@ The focus throughout is **patient access**, not clinical care quality.
      - How common **complex access / phone‑blocking / web‑off** models are.
      - How New Bank’s access and DNA patterns compare with regional and national baselines.
      - Several local/regional Healthwatch groups already reporting upon this, see our evidence report in nov26 meeting.
+     - Fully document issues with the GP Patient Survey questions 'hiding' access issues (not intentionally, just through question design decisions that are probably outcomes of bias
+       - The young/comfortable students writing/setting the questions in Cambridge and Exeter unis may not have the same access issues/limitations as many other patients).
+ 4. Clean up this landing page.
 
 The aim is not to “name and shame” a single surgery, but to show where **process and tools are systematically failing patients**.
 
