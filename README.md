@@ -109,7 +109,6 @@ The focus throughout is **patient access**, not clinical care quality.
 
 5. **Metrics vs reality**
    - Internal appointment metrics can look “fine” or improving, while:
-     - GP Patient Survey results still show **39%** finding it hard to get appointments.
      - Google and PATCHS reviews include **many 1★ complaints** about access, downtime, confusion, and reception.
         - The practice/GTD should examine these complaints as issues like these are already appearing as reviews on GTD-managed practices (including New Bank).
    - The concern is that **what is measured** (e.g., completed appointments) hides those who are driven away or give up, because only a small proportion of those then go on to write reviews on any platform (some simply can't, the quietest contingent are those most lost).
