@@ -63,6 +63,8 @@ It contains only publicly available data so that the evidence and reasoning are 
     - They're failing because the system sucks, but if they don't rely so hard on the system, they _could_ turn those failures into healthy patients.
     - How do legislative requirments have an effect here? 
   - The current patient survey status shows 22% of patients report it being hard to get an appointment (an improvement on last year's 39%, tho I think the question phrasing changed slightly, will need to investigate), tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
+  - On the diagnostic issue, I don't think it quite reaches clinical negligence (it hasn't resulted in the worsening of my condition, yet), but certainly premature diagnostic closure or diagnostic delay (though this is made more severe by the poor quality of access) does seem appropriate. At least one other PPG patient mentioning this suggests it's not uncommon here to close conditions without full investigation or identification of causes.
+    - I _feel_ like staff at this practice think you will just get better if they ignore you and delete you at every opportunity, so you always have to start over with the most inaccessible/inconvenient system design choices possible. 
 
 ## What’s in this repo (brief)
 
