@@ -3,15 +3,14 @@
 This repo documents ongoing concerns about **patient access, digital systems, and front‑door process** at New Bank Health Centre (run by GTD Healthcare).  
 It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
 
-[Current meeting files ➔ `meeting-ppg-nov26/`](./meeting-ppg-nov26/)
-
 ## Immediate feedback post Nov 26th PPG...
+
+[Most recent meeting files ➔ `meeting-ppg-nov26/`](./meeting-ppg-nov26/)
 
 - 2 new doctors and new staff coming soon.
 - Complaints about reception seem to be improving, less reliance on agency staff.
-- The website will be switched to 24hr accessible. 
-  - Doctor has concerns over missing incorrectly logged urgent messages
-  - Needs clear communication out of office hours.
+- The website ~~will be switched~~ has been (Jan 14) to 24hr accessible
+  - for some actions, but not for appointment requests.
 - Bookable looks pretty good (but only works for non-registered patients for some unknown reason):
   - See [New Bank Health Centre on Bookable: https://bookable.health/booking/gp-surgery/loc_9a5qmmx644zv](https://bookable.health/booking/gp-surgery/loc_9a5qmmx644zv)
 
@@ -52,6 +51,10 @@ It contains only publicly available data so that the evidence and reasoning are 
   - This neglects/wastes the simple benefit of a web-based platform is to **decouple doctor availability from patient access**. The mandatory phone call is a decision being made, not an oversight?
   - I want to know who specifically is FORCING a workflow that keeps appointment requests offline outside of office hours, and who is mandating an in-office-hours phone call as a mandatory part of getting an appointed time for any type of meeting.
   - If the rationale is "what if someone accidentally asks about something urgent, and a doctor doesn't see it until morning" seems like something that **could** happen (and is already mitigated by several sentences on every page just to get this far about 'no urgent issues'), being used as justification to continue harm that **is already happening** (alienating/inconveniencing some people outright).
+    - I suspect this is about avoiding a backlog of overnight requests to be processed each morning, which is again, a false economy. Sure, you're avoiding _some_ requests that _could_ have been made in-hours, but you're also locking out quite a lot of people from having any access at all, which just compounds the mandatory unscheduled phone call problem.
+    - I'm curious about the actual numbers on this... How many requests _are_ made overnight if it is accessible? Do any of these missing people turn up if the practice trials it?
+    - It _feels_ like the practice is trying to turn patient care into a production line. I don't think this results in good care. A person is not a Model T Ford, and this practice doesn't have the tech to be Toshiba (famously great mechanisation).
+    - They're failing because the system sucks, but if they don't rely so hard on the system, they _could_ turn those failures into healthy patients.
   - The current patient survey status shows 22% of patients report it being hard to get an appointment, tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
 
 ## What’s in this repo (brief)
