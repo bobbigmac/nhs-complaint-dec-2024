@@ -53,7 +53,7 @@ It contains only publicly available data so that the evidence and reasoning are 
     
 ### Notes
 
-- The workflow/system decision-maker at this practice seems to believe **a doctor MUST be present and online at the moment someone requests an appointment**.
+- The workflow/system decision-maker at this practice seems to believe "**a doctor MUST be present and online at the moment someone requests an appointment**".
   - This neglects/wastes the simple benefit of a web-based platform is to **decouple doctor availability from patient access**. The mandatory phone call is a decision being made, not an oversight?
   - I want to know who specifically is FORCING a workflow that keeps appointment requests offline outside of office hours, and who is mandating an in-office-hours phone call as a mandatory part of getting an appointed time for any type of meeting.
   - If the rationale is "what if someone accidentally asks about something urgent, and a doctor doesn't see it until morning" seems like something that **could** happen (and is already mitigated by several sentences on every page just to get this far about 'no urgent issues'), being used as justification to continue harm that **is already happening** (alienating/inconveniencing some people outright).
@@ -61,6 +61,7 @@ It contains only publicly available data so that the evidence and reasoning are 
     - I'm curious about the actual numbers on this... How many requests _are_ made overnight if it is accessible? Do any of these missing people turn up if the practice trials it?
     - It _feels_ like the practice is trying to turn patient care into a production line. I don't think this results in good care. A person is not a Model T Ford, and this practice doesn't have the tech to be Toshiba (famously great mechanisation).
     - They're failing because the system sucks, but if they don't rely so hard on the system, they _could_ turn those failures into healthy patients.
+    - How do legislative requirments have an effect here? 
   - The current patient survey status shows 22% of patients report it being hard to get an appointment (an improvement on last year's 39%, tho I think the question phrasing changed slightly, will need to investigate), tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
 
 ## What’s in this repo (brief)
