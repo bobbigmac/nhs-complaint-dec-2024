@@ -51,6 +51,8 @@ It contains only publicly available data so that the evidence and reasoning are 
 - The workflow/system decision-maker at this practice seems to believe **a doctor MUST be present and online at the moment someone requests an appointment**.
   - This neglects/wastes the simple benefit of a web-based platform is to **decouple doctor availability from patient access**. The mandatory phone call is a decision being made, not an oversight?
   - I want to know who specifically is FORCING a workflow that keeps appointment requests offline outside of office hours, and who is mandating an in-office-hours phone call as a mandatory part of getting an appointed time for any type of meeting.
+  - If the rationale is "what if someone accidentally asks about something urgent, and a doctor doesn't see it until morning" seems like something that **could** happen (and is already mitigated by several sentences on every page just to get this far about 'no urgent issues'), being used as justification to continue harm that **is already happening** (alienating/inconveniencing some people outright).
+  - The current patient survey status shows 22% of patients report it being hard to get an appointment, tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
 
 ## What’s in this repo (brief)
 
