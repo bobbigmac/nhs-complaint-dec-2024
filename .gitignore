@@ -1,2 +1,5 @@
 node_modules/
 Practice_Level_Crosstab_*.csv
+package-lock.json
+yarn.lock
+package.json
