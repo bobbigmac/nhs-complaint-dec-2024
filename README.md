@@ -45,6 +45,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Woke up monday evening to 2 missed calls (so much for that text message) at 10:44 and 11:33. Obviously missed them because I told the receptionist I would be asleep and she told me she'd send a text message.
   - Went to front desk, told the receptionist (different one from friday) that they rung me twice, and it should be about making an appointment, but she checked and told me it wasn't on the system, so wouldn't book me an appointment. I told her a short version of the story so far, and she still couldn't make an appointment. I left because this is the edge of my anger.
     - This practice needs to treat people with some basic human decency. I've lost count of how many times I've been told something that turned out not to be true by staff from this practice.
+    
+### Notes
 
 - The workflow/system decision-maker at this practice seems to believe **a doctor MUST be present and online at the moment someone requests an appointment**.
   - This neglects/wastes the simple benefit of a web-based platform is to **decouple doctor availability from patient access**. The mandatory phone call is a decision being made, not an oversight?
