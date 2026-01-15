@@ -16,7 +16,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 
 ## Progress on making an appointment - Dec 4th 2025
   - Had a day off, and transient pain, so tried again...
-  - Tried using Bookable.health first, good UI. Gets to the last step, after picking an appointment datetime, then tells me I can't book it because I'm registered at the practice. Nearly moved my registration elsewhere just so I could use Bookable because that actually want I want the process to be.
+  - Tried using Bookable.health first, good UI. Gets to the last step, after picking an appointment datetime, then tells me I can't book it because I'm registered at the practice. Nearly moved my registration elsewhere just so I could use Bookable because that's actually what I want the process to be.
   - Used PATCHS
     - Previous improvement of 'suggested callback time' input field, has not been kept in the move to PATCHS. Still cannot request an appointment for anything, still dependent on unscheduled calls, despite stating in message that I cannot receive calls in the day as I work nights.
     - Form has repetitive questions that barely make any sense (I think they put the 'AI' label on it, but there's no way these questions come from a modern LLM-based system).
