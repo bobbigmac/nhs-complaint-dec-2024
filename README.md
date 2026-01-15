@@ -201,3 +201,4 @@ It's failure as a feature, not a bug, staff are choosing to outright reject pati
     - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
 - [ ] Quantify how often “bad reception” appears in reviews across GTD vs local comparators.
 - [ ] Map escalation routes beyond GTD (ICB, NHS England, CQC, ombudsman) specifically for **access and digital exclusion** rather than individual clinical events.
+  - Escalation is outlined in a markdown doc. Will be revised before action, but that's the general idea.
