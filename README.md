@@ -16,6 +16,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 
 ## Progress on making an appointment - Dec 4th 2025
   - Had a day off, and transient pain, so tried again...
+  - Tried using Bookable.health first, good UI. Gets to the last step, after picking an appointment datetime, then tells me I can't book it because I'm registered at the practice. Nearly moved my registration elsewhere just so I could use Bookable because that actually want I want the process to be.
   - Previous improvement of 'suggested callback time' input field, has not been kept in the move to PATCHS. Still cannot request an appointment for anything, still dependent on unscheduled calls, despite stating in message that I cannot receive calls in the day as I work nights.
   - Form has repetitive questions that barely make any sense.
     - Form has "when should we _not_ contact you" question, but it's pointless if the answer is 'do not phone me, ever', or 'I work nights and sleep days (or cannot use my phone at work, or I don't have a phone), so will not see your phone call'.
