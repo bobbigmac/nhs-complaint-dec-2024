@@ -32,10 +32,12 @@ It contains only publicly available data so that the evidence and reasoning are 
     - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem.
     - It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
     - The entire message/request content is squeezed into a small scrollable box within the webpage, making it hard to read (this is just really lazy web design by PATCHS). It also seems to auto-scroll itself to the bottom every few seconds, so you have to find your place again if you're rereading the content (it also does not display properly in printed form, as it prints the box, and only a little of the contents).
-  - Attended appointment, good discussion, submitted samples for tests ()
+  - Attended appointment, good discussion with doctor, submitted samples for tests
     - Specifically asked to test for calprotectin.
+    - Was told I would be tested for calprotectin, and that we would also have to test for several other things (like celiac, even tho I know I'm not celiac, but there is a reasonable reason).
   - Didn't have a day where the doctor was open and I would be able to answer an unscheduled call randomly in the day.
   - Tests all came back pretty much normal (was not tested for calprotectin, despite asking for that test), health condition in NHS app was closed on jan 6th, with no follow-up. The app doesn't say which doctor flagged the condition I am trying to identify as PAST, but I consider this a massive oversight, as the cause of my condition was not identified, only things that are not the cause. Bad doctoring.
+    - Also was not tested for celiac, so not sure why I was told I would be.
     - Basically, patient was not tested for the test that would probably show the problem, then case closed without confirmation from the patient or thorough check about the current status.
     - Process issue or lack of care?
     - This same issue was raised by another patient in the Nov 26th PPG.
