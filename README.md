@@ -55,7 +55,7 @@ It contains only publicly available data so that the evidence and reasoning are 
     - I'm curious about the actual numbers on this... How many requests _are_ made overnight if it is accessible? Do any of these missing people turn up if the practice trials it?
     - It _feels_ like the practice is trying to turn patient care into a production line. I don't think this results in good care. A person is not a Model T Ford, and this practice doesn't have the tech to be Toshiba (famously great mechanisation).
     - They're failing because the system sucks, but if they don't rely so hard on the system, they _could_ turn those failures into healthy patients.
-  - The current patient survey status shows 22% of patients report it being hard to get an appointment, tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
+  - The current patient survey status shows 22% of patients report it being hard to get an appointment (an improvement on last year's 39%, tho I think the question phrasing changed slightly, will need to investigate), tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
 
 ## What’s in this repo (brief)
 
