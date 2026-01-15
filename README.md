@@ -59,9 +59,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - If the rationale is "what if someone accidentally asks about something urgent, and a doctor doesn't see it until morning" seems like something that **could** happen (and is already mitigated by several sentences on every page just to get this far about 'no urgent issues'), being used as justification to continue harm that **is already happening** (alienating/inconveniencing some people outright).
     - I suspect this is about avoiding a backlog of overnight requests to be processed each morning, which is again, a false economy. Sure, you're avoiding _some_ requests that _could_ have been made in-hours, but you're also locking out quite a lot of people from having any access at all, which just compounds the mandatory unscheduled phone call problem.
     - I'm curious about the actual numbers on this... How many requests _are_ made overnight if it is accessible? Do any of these missing people turn up if the practice trials it?
-    - It _feels_ like the practice is trying to turn patient care into a production line. I don't think this results in good care. A person is not a Model T Ford, and this practice doesn't have the tech to be Toshiba (famously great mechanisation).
-    - They're failing because the system sucks, but if they don't rely so hard on the system, they _could_ turn those failures into healthy patients.
-    - How do legislative requirments have an effect here? 
+    - It _feels_ like the practice is trying to turn patient care into a production line, where each doctor focuses only on part of the process. I don't think this results in good care. A person is not a Model T Ford.
+      - How do legislative requirements have an effect here? 
   - The current patient survey status shows 22% of patients report it being hard to get an appointment (an improvement on last year's 39%, tho I think the question phrasing changed slightly, will need to investigate), tho I think the real number is higher because the patient survey is worded (probably unintentionally) to 'downplay' access issues.
   - On the diagnostic issue, I don't think it quite reaches clinical negligence (it hasn't resulted in the worsening of my condition, yet), but certainly premature diagnostic closure or diagnostic delay (though this is made more severe by the poor quality of access) does seem appropriate. At least one other PPG patient mentioning this suggests it's not uncommon here to close conditions without full investigation or identification of causes.
     - I _feel_ like staff at this practice think you will just get better if they ignore you and delete you at every opportunity, so you always have to start over with the most inaccessible/inconvenient system design choices possible. 
@@ -194,14 +193,14 @@ These are the recurring asks across complaints, meetings, and notes in this repo
   - Give reception enough **autonomy and tools** to help instead of just defending the system.
   - Consider bumping the wage to attract skill where it matters most (advertised locally?).
 
-## Professional whining
+## Sector pattern
 
 - This seems to be a pattern at the moment, with practices [claiming](https://www.oakwoodlanemedical.nhs.uk/2025/10/07/availability-of-online-consultations-from-1-october-2025/) things like "The new requirement to allow patients unlimited online access for non- urgent medical requests, throughout core hours, could make it more likely that we will have no choice but to create hospital-style waiting lists to meet patient need. We do not believe that this is a solution that anyone wants." or "GPs and their teams are under huge pressure – caring for more people with fewer resources."
     - This is patient-blaming (and a false dichotomy), there's nothing wrong with queues if you're actively working them.
     - People are much less stable if they have no idea whether they can even ask for help today, or if they have to wait till tomorrow to try and fail again.
     - Falling back to blocking the patient completely is _poor_.
 
-It's failure as a feature, not a bug, staff are choosing to outright reject patients before they can even start, then failing to measure the effect because angry reviews don't drive policy.
+Staff are choosing to reject patients before they can even start, then failing to measure the effect because angry reviews don't drive policy.
 
 ---
 
