@@ -3,7 +3,12 @@
 This repo documents ongoing concerns about **patient access, digital systems, and front‑door process** at New Bank Health Centre (run by GTD Healthcare).  
 It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
 
-The [Objectives file](./OBJECTIVES.md) is a shorter form of what this is generally about. This main README is overdue some clean-up.
+This main README is overdue some clean-up. 
+
+The [Objectives file](./OBJECTIVES.md) is a clearer form of what this is about. In brief...
+  - Patients are being excluded by the practice requiring a mandatory unscheduled office-hours phone call, forcing them to start over
+  - Patients are being treated as if they are to blame, wherever the practice's flawed 'efficiency' decisions are excluding them in ways that are hard to measure the impact
+  - Some patients are being excluded completely by digital-only process-start requirements
 
 ## Immediate feedback post Nov 26th PPG...
 
