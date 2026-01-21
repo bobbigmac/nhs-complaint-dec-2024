@@ -1,22 +1,28 @@
+# New Bank Health Centre: Access Project
+
 ## What this project is trying to achieve
 
 This repo documents **access failures at New Bank Health Centre (GTD Healthcare)**, and uses that local reality to argue for **safer, fairer “front door” models** in primary care. 
 
-We’re aiming to be practical and evidence-led: we recognise staff and management are under pressure and operating within constraints, but **excluding whole groups is not acceptable**, and “efficiency” that works by pushing cost/risk onto patients is a bad trade (for patients, the practice, and the wider system).
+* A short, evidence-led record of access problems at this GP practice, and what we want changed.
+* We know staff and managers are under pressure. We’re still being clear: blocking any group from care is unfair, and avoidable.
 
----
+What we’re trying to achieve (two main tracks)
 
-## Tier 1: Fix the immediate local access block at New Bank
+1. Fix the immediate local problem (at this practice and for the management company's other practices)
 
-**Goal:** Make it possible for *any* registered patient — including night/shift workers and people with caring/work constraints — to actually access care without having to “wait all day” or gamble on an unscheduled call.
+* Right now, some patients (night/shift workers, carers, people in work, people who can’t take daytime calls) can’t get an appointment. It's not just hard, for some, it's outright impossible.
+* The current “daytime-only / unscheduled call / online-only” path means you can miss the call and get pushed back to the start.
+* We want a usable non-digital route, and a system that doesn’t require answering unknown calls at random times (scheduled windows or clear alternatives). No “start again” loops.
 
-### The specific local failure mode
+2. Use the local case to address the bigger, systemic issue
 
-* **Digital-only / PATCHS-only workflow** with access routed through an online form.
-* **Mandatory daytime, unscheduled callbacks** used as the gate to getting an appointment (and thier outcome).
-* **Missed-call loop / deletion + resubmission**: if you miss calls (for normal life reasons), you can be forced to resubmit from scratch later/tomorrow, which directly excludes people who can’t reliably take daytime calls for many good reasons.
+* Poor “digital-only” choices don’t just inconvenience people: They quietly push some groups out of healthcare.
+* That means people get sicker later, trust drops, and pressure shifts to urgent care.
+* If we escalate, we’ll use this practice as a clear example to argue for fair access standards that work for real life, not ideal users.
+* Accountability and transparency: who owns the policy, what changed, and how we’ll know it actually improved.
 
-### What “success” looks like (local minimum standard)
+### What “success” looks like locally
 
 * A **real non-digital route** for requesting help (walk-in / phone / text / email, not just 'training' as if the patient is too stupid to use a website, regardless of the website being rubbish and inaccessible out of office hours). 
 * Ability to bypass unscheduled calls stage by either text/sms/email or even just the ability to book by **calling** or visiting the practice, not being **called by** the practice
@@ -65,8 +71,8 @@ We’re aiming to be practical and evidence-led: we recognise staff and manageme
 
 ## Tier 3: “Other issues” 
 
-* **Clarity and honesty in patient-facing comms**: inconsistent promises (“same day” vs “within 1 working day”, unclear cutoffs, unclear next steps).
+* **Clarity and honesty in patient-facing comms**: inconsistent promises (“same day” vs “within 1 working day”, unclear cutoffs, unclear next steps). Mostly minor, but this practice can improve simply by renovating the website and reviewing it for repetition/redundancy and out of date or simply wrong information (the process seems to have __drifted__ in reality from what is expected digitally).
 * **Contact-data exclusion**: workflows that require both email + phone, or assume stable devices/connectivity. 
-* **Staff experience vs “training theatre”**: avoid papering over structural problems by calling them “training challenges” without fixing the system that generates the behaviour. 
+* **Staff experience vs “training theatre”**: avoid papering over structural problems by calling them “training challenges” without fixing the system that generates the behaviour. "You said, we did" is only useful if you can pin what you did to real outcomes, not just that you took action, but demonstrating that that action was effective in solving the problem, with receipts.
 * **Transparency + governance**: “what is the policy, who owns it, what changed, and how do you know it improved?”
 * **Evidence tracking**: keep a clean timeline and pack of sources so the conversation stays grounded and non-inflammatory.
