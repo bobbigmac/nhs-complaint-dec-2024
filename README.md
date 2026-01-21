@@ -3,6 +3,8 @@
 This repo documents ongoing concerns about **patient access, digital systems, and front‑door process** at New Bank Health Centre (run by GTD Healthcare).  
 It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
 
+The [Objectives file](./OBJECTIVES.md) is a shorter form of what this is generally about. This main README is overdue some clean-up.
+
 ## Immediate feedback post Nov 26th PPG...
 
 [Most recent meeting files ➔ `meeting-ppg-nov26/`](./meeting-ppg-nov26/)
