@@ -17,7 +17,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 - **Data and analysis**
   - `patient-survey-breakdown/` - breakdown of GP Patient Survey results for New Bank and further research.
   - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
-  - `messages/` - Log of sent and received messages (mostly emails).
+  - `messages/` - Log of sent messages (mostly emails, complaint-related only).
   - `healthwatch-reports/` - Healthwatch reports from around the UK sharing these concerns.
 - [My own experience](#My-patient-experience-with-New-Bank) trying (and failing) to see my doctor, as a patient who works nights (among other issues).
 - [Notes](#Notes) - My notes that don't fit anywhere else.
