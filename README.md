@@ -20,6 +20,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - `messages/` - Log of sent and received messages (mostly emails).
   - `healthwatch-reports/` - Healthwatch reports from around the UK sharing these concerns.
 - [My own experience](#My-patient-experience-with-New-Bank) trying (and failing) to see my doctor, as a patient who works nights (among other issues).
+- [Notes](#Notes) - My notes that don't fit anywhere else.
+- [Ongoing/further Research](#ongoingfurther-research) - What's next.
 
 The focus throughout is **patient access**, not clinical care quality.
 
