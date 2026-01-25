@@ -27,12 +27,6 @@ The focus throughout is **patient access**, not clinical care quality.
 
 ## Main concerns
 
-1. **PATCHS website off outside office hours**
-  - Partially solved, admin requests are now open out of hours (since 14th Jan)
-  - but... Appointments cannot be requested.
-    - This is only enabled when the office is open
-    - Why? It wastes the benefit of a website, which is to avoid synchronous availability needs.
-
 2. **Digital‑only booking and exclusion**
   - Access is effectively **digital‑only**
     - No simple “walk in and make an appointment” route and impossible to book by phone without being sent back online, and still requires unscheduled daytime callback.
@@ -62,6 +56,12 @@ The focus throughout is **patient access**, not clinical care quality.
         - The practice/GTD should examine these complaints as issues like these are already appearing as reviews on GTD-managed practices, including New Bank.
    - The concern is that **what is measured** (e.g., completed appointments) hides those who are driven away or give up, because only a small proportion of those then go on to write reviews on any platform (some simply can't, the quietest contingent are those most lost).
 
+1. **PATCHS website off outside office hours**
+  - Partially solved, admin requests are now open out of hours (since 14th Jan)
+  - but... Appointments cannot be requested.
+    - This is only enabled when the office is open
+    - Why? It wastes the benefit of a website, which is to avoid synchronous availability needs.
+    
 ---
 
 ## My patient experience with New Bank
