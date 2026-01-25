@@ -27,13 +27,13 @@ The focus throughout is **patient access**, not clinical care quality.
 
 ## Main concerns
 
-2. **Digital‑only booking and exclusion**
+1. **Digital‑only booking and exclusion**
   - Access is effectively **digital‑only**
     - No simple “walk in and make an appointment” route and impossible to book by phone without being sent back online, and still requires unscheduled daytime callback.
   - This excludes people without stable internet, devices, availability or confidence with forms, and adds friction even for confident users.
   - Current system also excludes anyone who can't take a day off for a *chance* at an appointment, anyone who works nights or other weird times and many other groups (documented/estimated in the november meeting docs).
 
-3. **Unscheduled missed calls cause deletion/resubmission loop**
+2. **Unscheduled missed calls cause deletion/resubmission loop**
   - Alienates patients
     - If the clinician calls for triage OR the receptionist calls to arrange an appointment, and the patient misses two **unscheduled** calls (typically, but not consistently within less than an hour, with no route to schedule or bypass the call), the **request is closed** and the patient must start again.
       - This __was__ enforced at 1 and only 1 appointment request per day but have not yet re-tested since moving to PATCHs. 
@@ -43,12 +43,18 @@ The focus throughout is **patient access**, not clinical care quality.
         - This practice appears to have been reduced significantly in August's practice stats
         - Phone DNAs reported halved relative to other DNA types from July to August
 
-4. **Reception**
+3. **Reception**
   - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
   - 'Rude reception' is a very common complaint, and some reported incidents have been __severe__, including patients in distress, being laughed at by staff or otherwise driven to leave.
     - Reviews are subjective, but repeated instances of similar types of mistreatment from real Google users suggest a terrible pattern that needs to be fixed.
   - Once patients get through to a GP or nurse, experiences are often (tho not universally) positive...
     - TODO: As of November 2025, slight evidence this is improving, though reception/process complaints still among most common negative reviews.
+
+4. **PATCHS website off outside office hours**
+  - Partially solved, admin requests are now open out of hours (since 14th Jan)
+  - but... Appointments cannot be requested.
+    - This is only enabled when the office is open
+    - Why? It wastes the benefit of a website, which is to avoid synchronous availability needs.
 
 5. **Metrics vs reality**
    - Internal appointment metrics can look “fine” or improving, while:
@@ -56,12 +62,6 @@ The focus throughout is **patient access**, not clinical care quality.
         - The practice/GTD should examine these complaints as issues like these are already appearing as reviews on GTD-managed practices, including New Bank.
    - The concern is that **what is measured** (e.g., completed appointments) hides those who are driven away or give up, because only a small proportion of those then go on to write reviews on any platform (some simply can't, the quietest contingent are those most lost).
 
-1. **PATCHS website off outside office hours**
-  - Partially solved, admin requests are now open out of hours (since 14th Jan)
-  - but... Appointments cannot be requested.
-    - This is only enabled when the office is open
-    - Why? It wastes the benefit of a website, which is to avoid synchronous availability needs.
-    
 ---
 
 ## My patient experience with New Bank
