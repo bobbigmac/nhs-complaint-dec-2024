@@ -49,6 +49,7 @@ The focus throughout is **patient access**, not clinical care quality.
     - Reviews are subjective, but repeated instances of similar types of mistreatment from real Google users suggest a terrible pattern that needs to be fixed.
   - Once patients get through to a GP or nurse, experiences are often (tho not universally) positive...
     - TODO: As of November 2025, slight evidence this is improving, though reception/process complaints still among most common negative reviews.
+  - The automated sliding front door sticks (literally blocking access)
 
 4. **PATCHS website off outside office hours**
   - Partially solved, admin requests are now open out of hours (since 14th Jan)
