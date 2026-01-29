@@ -22,6 +22,11 @@ It contains only publicly available data so that the evidence and reasoning are 
 - [My own experience](#My-patient-experience-with-New-Bank) trying (and failing) to see my doctor, as a patient who works nights (among other issues).
 - [Notes](#Notes) - My notes that don't fit anywhere else.
 - [Ongoing/further Research](#ongoingfurther-research) - What's next.
+- **Useful/interesting reports/evidence packs**
+  - [PATCHS trustpilot reviews for actionable change](./reviews/PATCHS/output%20reports/PATCHS%201-2-3%20Star%20Reviews%20with%20Summary%20Panel%20Landscape.pdf)
+  - [Patient blaming evidence pack](./meeting-ppg-feb4/PatientBlaming-README.md)
+  - [Affected patients estimates and Healthwatch overview](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
+  - [Poor NHS access and the far right](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Immigration%20blame%20and%20far-right.md)
 
 The focus throughout is **patient access**, not clinical care quality.
 
@@ -49,6 +54,7 @@ The focus throughout is **patient access**, not clinical care quality.
     - Reviews are subjective, but repeated instances of similar types of mistreatment from real Google users suggest a terrible pattern that needs to be fixed.
   - Once patients get through to a GP or nurse, experiences are often (tho not universally) positive...
     - TODO: As of November 2025, slight evidence this is improving, though reception/process complaints still among most common negative reviews.
+  - The automated sliding front door sticks (literally blocking access)
 
 4. **PATCHS website off outside office hours**
   - Partially solved, admin requests are now open out of hours (since 14th Jan)
@@ -115,7 +121,8 @@ I have been trying to get an appointment at New Bank since December 2024 (when I
       - How do legislative requirements have an effect here? 
 - The current patient survey status shows 22% of patients report it being hard to get an appointment (an improvement on last year's 39%, tho this isn't quite comparing like to like, as the 39% is the inverse of people who found it easy to contact the practice by phone, and also excludes the "I haven't tried" contingent). I _think_ the real number is higher because the patient survey is worded (unintentionally) to 'downplay' access issues by having some access issues fall through the gaps between available answers.
 - On the diagnostic issue, I don't think it reaches clinical negligence (it hasn't resulted in the worsening of my condition), but certainly premature diagnostic closure or diagnostic delay (though this is made more severe by the poor quality of access) does seem an appropriate label. At least one other PPG patient mentioning this suggests it's not uncommon here to close conditions without full investigation or identification of causes.
-  - I _feel_ like staff at this practice think you will just get better if they ignore you and delete you at every opportunity, so you always have to start over with the most inaccessible/inconvenient system design choices possible. I've lost count of how many times I had to start over. 
+  - I _feel_ like staff at this practice think you will just get better if they ignore you and delete you at every opportunity, so you always have to start over with the most inaccessible/inconvenient system design choices possible. I've lost count of how many times I had to start over.
+- The front door (sliding) sticks, lol. I went to get a test kit one morning at opening time, stood outside the doors for a minute or so, thinking they just hadn't unlocked them yet, but when the receptionist noticed me knocking, she just had to force the doors open. Literally a physical blockage, kinda funny, in a way.
 
 ### Ongoing/further research
 
