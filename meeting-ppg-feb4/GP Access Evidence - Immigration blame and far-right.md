@@ -42,6 +42,7 @@ People — especially tougher‑immigration cohorts — commonly believe immigra
   PDF: [https://www.instituteforgovernment.org.uk/sites/default/files/2025-04/performance-tracker-local-gp-england_2.pdf](https://www.instituteforgovernment.org.uk/sites/default/files/2025-04/performance-tracker-local-gp-england_2.pdf)
   Summary article: [https://www.instituteforgovernment.org.uk/external-publication/ifg-news/patient-satisfaction-gp-services-england-has-collapsed-research-finds](https://www.instituteforgovernment.org.uk/external-publication/ifg-news/patient-satisfaction-gp-services-england-has-collapsed-research-finds)
 * **Healthwatch (May 2024 polling reported May 2024–24):** Strong public demand for clearer, faster GP access and booking guarantees. Source: [https://www.theguardian.com/society/article/2024/may/17/patients-england-want-right-to-see-gps-with-24-hours-enshrined-nhs-survey](https://www.theguardian.com/society/article/2024/may/17/patients-england-want-right-to-see-gps-with-24-hours-enshrined-nhs-survey)
+* **The Doom Loop:** [Doom loop of decline: how struggling high streets fuel far-right sympathies in UK](https://www.theguardian.com/business/2026/jan/29/doom-loop-of-decline-how-struggling-high-streets-fuel-far-right-sympathies-in-uk)
 
 ## Practical implication — fix access to undercut scapegoating
 
