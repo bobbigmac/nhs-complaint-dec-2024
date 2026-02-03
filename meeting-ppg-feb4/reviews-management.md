@@ -5,7 +5,7 @@ To take up control of the google reviews for the practice, you don’t need the 
 
 For a physical-location GP practice, the normal route is to request access/ownership in Google Business Profile, then verify the location.
 
-Use a practice-controlled Google account (not an agency one), then:
+Use a practice-controlled Google account (not an agency or management company one), then:
 
 1. Sign in to a Google account the practice will keep long-term (ideally a shared role mailbox with 2FA).
 
