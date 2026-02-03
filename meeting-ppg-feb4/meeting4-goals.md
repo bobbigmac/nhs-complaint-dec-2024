@@ -56,4 +56,4 @@ Nov 2025 to Jan 2026 has only a handful of new reviews. There are fewer severe f
 - No request is deleted because a patient missed an unscheduled call.
 - Patients can use message/SMS (not just start on web, wait for phone call) for non-urgent coordination, with clear urgent-care signposting.
 
-Repository: [https://github.com/bobbigmac/nhs-complaint-dec-2024](https://github.com/bobbigmac/nhs-complaint-dec-2024)
+The repository is regularly updated: [https://github.com/bobbigmac/nhs-complaint-dec-2024](https://github.com/bobbigmac/nhs-complaint-dec-2024)
