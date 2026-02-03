@@ -14,6 +14,7 @@ It contains only publicly available data so that the evidence and reasoning are 
   - [ORIGINAL_COMPLAINT.md](./ORIGINAL_COMPLAINT.md) - initial long‑form complaint about the appointment system. Dec 2024, updated Aug 2025.
   - [OBJECTIVES.md](./OBJECTIVES.md) - Shorter form summary of issues.
   - [meetings-notes/](./meetings-notes/) - Documentation for each meeting, and my prep/issues and received handouts with my notes.
+  - [meeting4-goals.md](./meeting-ppg-feb4/meeting4-goals.md) - Meeting 4 (Feb 2026) prep
 - **Data and analysis**
   - `patient-survey-breakdown/` - breakdown of GP Patient Survey results for New Bank and further research.
   - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
