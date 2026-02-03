@@ -28,6 +28,7 @@ It contains only publicly available data so that the evidence and reasoning are 
   - [Patient blaming evidence pack](./meeting-ppg-feb4/PatientBlaming-README.md)
   - [Affected patients estimates and Healthwatch overview](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
   - [Poor NHS access and political extremism](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Immigration%20blame%20and%20far-right.md)
+  - [Google reviews management and good response patterns](./meeting-ppg-feb4/reviews-management.md)
 
 The focus throughout is **patient access**, not clinical care quality.
 
