@@ -58,4 +58,4 @@ Nov 2025 to Jan 2026 has only a handful of new reviews. There are fewer severe f
 
 The repository is regularly updated: [https://github.com/bobbigmac/nhs-complaint-dec-2024](https://github.com/bobbigmac/nhs-complaint-dec-2024). 
 
-Personal note: I've been complaining about this for 6 months under GTD Healthcare, with no change on this specific process. Initial escalation next-steps are outlined in the repository, but I'd prefer to see the process fixed at this practice (and reviewed for all GTD practices) than to turn it into yet another Healthwatch letter-writing campaign that helps nobody.
+Personal note: I've been complaining about this for 6 months under GTD Healthcare, with no change on this specific process. Initial escalation next-steps are outlined in the repository, but I'd prefer to see the process fixed at this practice (and reviewed for all GTD practices) than to turn it into yet another Healthwatch letter-writing campaign.
