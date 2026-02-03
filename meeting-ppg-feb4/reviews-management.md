@@ -34,7 +34,7 @@ After access is sorted, lock it down so this doesn’t happen again:
 
 ## How to actually reply to reviews?
 
-Reading reviews is a great way to spot opportunities for the practice to improve, and although reviewers do sometimes get push notifications for official replies to their reviews (so you can reach _some_ lost or excluded patients), replying to reviews is mostly for the next patient reading them, not the one person who wrote them. 
+Reading reviews is a great way to spot opportunities for the practice to improve, and although reviewers do sometimes get push notifications for official replies to their reviews (so you can reach _some_ lost or excluded patients), replying to reviews is as much for the next patient reading them, not just the person who wrote them. 
 
 The job is to show the practice takes feedback seriously, can own mistakes without getting defensive, and has a clear route for putting things right. If you’re reading a negative review and your first impulse is to explain why the patient is wrong, stop. That might feel satisfying for a minute, but it makes the practice look brittle and uninterested in fixing anything.
 
