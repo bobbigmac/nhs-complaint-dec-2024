@@ -7,17 +7,17 @@
 
 > It is currently **impossible** for some people to access appointments, mainly night workers, because of the mandatory office-hours unscheduled call.
 
-This unschedule phone call blocker has to be **circumventable by design**, not handled by special-casing individual patients.
+This blocker has to be **circumventable** by design, not handled by special-casing individual patients.
 
-## B. What has improved
+## B. What has improved since November?
 
-- **Admin requests are now open out of hours** (since **14 Jan 2026**). Good step, but it does not yet solve appointment access.
-- Jan 2026 has only a handful of new reviews. There may be fewer severe flashpoints, but the remaining themes are still clear.
+- **Admin requests on PATCHS are now open out of hours** (since **14 Jan 2026**). 
+  - Good step, but it does not yet solve appointment access.
 
 ## C. Why the call requirement still blocks access
 
 - A mandatory unscheduled call excludes people who cannot pick up in working hours (shift workers, carers, people at work, people without privacy/signal, some disabled patients).
-- The website should allow **submit anytime, handled in-hours** for appointment requests to support patients who struggle to get webaccess in office-hours, or just to reduce procrastination. 
+- The website should allow **submit anytime, handled in-hours** for appointment requests to support patients who struggle to get web access in office-hours, or just to reduce procrastination. 
   - Many people handle 'admin' like healthcare in chunks when they can fit it in around work, and simply preventing them from starting the process at any time, is an access failure.
 - If missed calls trigger closure or a “start again” loop, the process becomes not just inconvenient, but punitive.
 
@@ -33,10 +33,14 @@ This unschedule phone call blocker has to be **circumventable by design**, not h
   - Can this change to 24hr availability?
   - If by design, what problem is it solving and is that more important than making it convenient for patients?
 
-Suggestion: PATCHS doesn't resolve the issue of appointment requests closing if 2 missed unscheduled calls.
-  - Remove/circumvent the blocker OR make requests reopenable
+3. The patient survey has a very low response rate (10%), far below the national average (~25%). Why?
 
-## D. Recent reviews (Jan 2026) — basic themes
+PATCHS doesn't resolve the issue of appointment requests closing if 2 missed unscheduled calls.
+  - Simple quality of life for patients: remove/solve the blocker OR make requests reopenable
+
+## D. Recent reviews
+
+Nov 2025 to Jan 2026 has only a handful of new reviews. There are fewer severe flashpoints than previous months, and might suggest overall improvements, but the remaining issues are still clear.
 
 - **Positive:** one reviewer says appointments have “always been good” for them.
 - **Follow-up gaps:** tests/results not communicated.
