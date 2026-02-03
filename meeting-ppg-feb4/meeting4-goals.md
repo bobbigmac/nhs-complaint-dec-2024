@@ -21,6 +21,9 @@ This blocker has to be **circumventable** by design, not handled by special-casi
   - Many people handle 'admin' like healthcare in chunks when they can fit it in around work, and simply preventing them from starting the process at any time, is an access failure.
 - If missed calls trigger closure or a “start again” loop, the process becomes not just inconvenient, but punitive.
 
+PATCHS doesn't resolve the issue of appointment requests closing if 2 missed unscheduled calls.
+  - Simple quality of life for patients: remove/solve the blocker OR make requests reopenable
+
 **Questions:** 
 
 1. Is the unscheduled call requirement intentional or an oversight?
@@ -34,9 +37,6 @@ This blocker has to be **circumventable** by design, not handled by special-casi
   - If by design, what problem is it solving and is that more important than making it convenient for patients?
 
 3. The patient survey has a very low response rate (10%), far below the national average (~25%). Why?
-
-PATCHS doesn't resolve the issue of appointment requests closing if 2 missed unscheduled calls.
-  - Simple quality of life for patients: remove/solve the blocker OR make requests reopenable
 
 ## D. Recent reviews
 
