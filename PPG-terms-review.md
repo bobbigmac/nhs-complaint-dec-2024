@@ -163,7 +163,7 @@ Governance should protect the group from rare disasters without making the ordin
 
 * Selection bias: heavy onboarding filters out exactly the patients you most need to reach (low time, low confidence, language barriers, disability, unstable housing). You end up with “usual suspects”.
 
-* Power imbalance: the PPG can’t really get mad about problems, they can only explain and describe, because anything except 100% coolheadedness can result in action. Healthcare is emotive.
+* Power imbalance: the PPG can’t really get mad about problems, they can only explain and describe, because only 100% coolheadedness can result in action. Healthcare is emotive, some expectation and tolerance of 'feelings' based input is probably wise.
 
 * Information asymmetry: patients don’t see constraints or data, they only see their own part.
 
