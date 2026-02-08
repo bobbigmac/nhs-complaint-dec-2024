@@ -202,6 +202,7 @@ Governance should protect the group from rare disasters without making the ordin
 * Chairing well isn’t low-effort. Chairing is a high-knowledge and high-skill role. It should be staff, because the focus is on the problems and responsibilities of the practice. The chair makes sure everything is covered, and everyone gets a chance to contribute.
   * staff chair (or co-chair) as default, with a patient “agenda setter” helper if available
   * no elections, no hierarchy theatre; light duties
+  * the chair should not be delivering the practice response, but coordinating input/discussion between patients and the practice rep
   * practice owns minutes + action log (patients can sanity check)
 * Decision-making: don’t vote on “what should the practice do” like it’s a club, otherwise you risk the “tyranny of crowds”. The PPG’s power should be: raise, prioritise, review and escalate if/when it stalls. 
 	* Blocked solutions need workarounds and compromose, not absolutes and confrontations. 
