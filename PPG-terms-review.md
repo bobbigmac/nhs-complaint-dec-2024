@@ -211,6 +211,7 @@ Governance should protect the group from rare disasters without making the ordin
 * Build a “quick fixes” route so the PPG isn’t the only door. Every tiny issue has to wait for a quarterly meeting. 
 * meetings might benefit from a brief 'since the last meeting we did... and we learned...' section
 * an action log would be nice, but please don't overformalise, internal notes between responsible staff to action solutions are probably fine 99% of the time, the practice staff should be able to manage it themselves with whatever tools they prefer. It doesn't need to be outside accessible (although there are some interesting tools for that kind of thing if you did want to 'level up' community support).
+* Integrate PPG outcomes with the practice Newsletter, distribute to PPG members, and printed in the waiting room, with a link to the web version or to signup.
 
 Some access/engagement concerns:
 
