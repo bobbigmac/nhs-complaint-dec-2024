@@ -143,6 +143,18 @@ I have been trying to get an appointment at New Bank since December 2024 (when I
     - If I have some pain, or a meds question, is that clinical? Who knows? Where to find out? 
     - There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS/practice infrastructure? 
     - Maybe better visibility of the organisational model would be useful on the site. It's not clear who is responsible for what.
+  - The categories seem to be emergency (call 999), urgent (a doctor will try and get you in asap) or normal (usually within 3 days)
+
+- PPG Terms & rules, patient burden and what is the objective of the the PPG?
+  - GTD are updating the documentation that patients must agree to operate within, mostly as a personal and legal safety valve
+    - Shares a lot of features with other PPG membership documents from practices around the UK
+    - How effective/performative are PPGs?
+  - What is the recourse for a patient who wants to complain, but doesn't agree to every single term in the documentation? Like what if the 'unknown' (what am I agreeing to keep confidential? what if I don't want to be on a database? what if I don't want to, or can't sit in a meeting with strangers on an irregular schedule?)
+    - Are there still functional feedback/complaint mechanisms? What are they?
+    - PPG results are SLOW (6 months and still no change on even very small issues), for small or transient PPGs, continuity over time is going to be hard as patients become discouraged by no change, or at least by no immediate change.
+    - Without an organising platform or more regular contact, how are patients expected to co-ordinate individual concerns and identify shared problems?
+  - The documents being available for review is good, but most patients are not well versed in legal speech or procedural jargon, especially where language barriers exist, might be better supported with much less legalese, and instead sticking to a one-page (or maybe 2) that keeps a group casual.
+
 
 - Further work to do on the GP Patient Survey
   - The patient survey (national, written by a couple of major universities) has some pretty obvious oversights, that _might_ be unintentionally hiding the scale of some access problems, and subtly patient-blame
