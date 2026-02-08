@@ -60,6 +60,7 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- Continued reduced attendance in february
 	- If there are no staff to listen and act, and no patients to speak, was there even a meeting? 
 	- What is the outcome of 'nobody bothered to turn up?'
+		- Is the lesson 'nobody cares' or 'nobody thinks anything will change'?
 
 ---
 
