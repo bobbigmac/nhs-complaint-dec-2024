@@ -73,6 +73,8 @@ TL;DR: PPG asks a lot, promises little; risk of process-theatre; staff habituate
 
 ## The ask...
 
+TODO: Shorten this
+
 A PPG works if it leads to visible changes. So the terms should say what the practice will do with feedback: who owns each issue, what to expect, and some idea of timeline. The PPG can only expect each patient to raise their own issue once, and often not very clearly. If that issue gets lost, that's a failure to care enough to understand that issue, and find a fix for it.
 
 Each meeting should at some point review actions taken since the last meeting, and make sure there’s always a staff person with enough authority to get things done (or a written update if they can’t attend). If regular staff can’t show up or act, someone should still be able to run that meeting and chase issues.
