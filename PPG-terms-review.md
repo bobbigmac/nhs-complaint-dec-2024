@@ -55,6 +55,7 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 		- Any process manual should probably define what internal staff can and should do with patient feedback, so the role of primary PPG person gives them _some_ internal power to hold other staff responsible for contributions to the patient's group.
 		- The existing docs put a lot of responsibility on the patient, very little on staff, and none on expectations for change by the practice.
 	- Reception lacking representation at the PPG might also suggest they're being treated as a significant power, but have no responsibility for their choices or mistakes (common complaints in reviews)
+		- Reception have possibly the most impact on patient experience, they should probably be more directly involved in identifying the causes of complaints and good solutions that work for everyone
 	- The august and september meetings were pretty well attended
 		- Mainly people checking in on their preferred doctors and changes at the practice since new management
 	- The november meeting being moved 2 weeks at the last minute, decimated attendance to 3 regulars and one person who was already in the waiting room, and started late
@@ -293,6 +294,7 @@ England/Wales difference worth knowing (because it changes where “voice” end
 Work to complete on this document:
 
 - You ask for visible tracking, then later warn against overformalising; reconcile that by framing it as “practice keeps internal notes however they like, but publishes a short ‘what we heard / what we did / what’s next’ update each meeting”.
+	- The practice has too many effortful demands already, favour solutions with less overhead and less complexity
 - You’ve got some lines that are true but will get you written off (“corpo/doublespeak”, “general public not entirely reasonable”, “fire up a discord”) — fine as private venting but there are better ways to say these things. 
 - You repeat the same points in three places (quick fixes, suggestions box, drop-in/no pack) - pick one canonical place for each.
 - Worth pulling forward from the later scaffold into the “ask”: what happens when nobody turns up? is a pretty big question. The first time, sure it's rain, but after a year of a threadbare PPG, is that doing anything? 
