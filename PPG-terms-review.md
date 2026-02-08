@@ -4,6 +4,8 @@ This document is in progress. A review of the updated PPG terms documentation, a
 
 ## Key questions 
 
+**New Bank is already in a better position** than the practice was under the previous operator. The presence of any PPG is better than no form of PPG. There are however some questions to ask as the process develops.
+
 - How much admin burden is too much for patients?
 	- Is this affected by deprivation and transience?
 - What is the objective of the PPG?
@@ -17,8 +19,6 @@ This document is in progress. A review of the updated PPG terms documentation, a
 ### Concerns
 
 Stricter and more complex processes exclude by definition.
-
-**New Bank is already in a better position** than the practice was under the previous operator. The presence of any PPG is better than no form of PPG.
 
 - It's worth interrogating the risks and opportunities that come with adding more paperwork to the process and considering some high risks:
 	- A tiny opaque group who don't know each-others complex issues may have diffuse and complex/competing needs and trouble communicating those needs/goals clearly/coherently
