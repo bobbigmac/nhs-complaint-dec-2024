@@ -127,6 +127,7 @@ I have been trying to get an appointment at New Bank since December 2024 (when I
 - On the diagnostic issue, I don't think it reaches clinical negligence (it hasn't resulted in the worsening of my condition), but certainly premature diagnostic closure or diagnostic delay (though this is made more severe by the poor quality of access) does seem an appropriate label. At least one other PPG patient mentioning this suggests it's not uncommon here to close conditions without full investigation or identification of causes.
   - I _feel_ like staff at this practice think you will just get better if they ignore you and delete you at every opportunity, so you always have to start over with the most inaccessible/inconvenient system design choices possible. I've lost count of how many times I had to start over.
 - The front door (sliding) sticks, lol. I went to get a test kit one morning at opening time, stood outside the doors for a minute or so, thinking they just hadn't unlocked them yet, but when the receptionist noticed me knocking, she just had to force the doors open. Literally a physical blockage, kinda funny, in a way.
+  - Front door has been fixed as of Feb 4th meeting
 
 ### Ongoing/further research
 
