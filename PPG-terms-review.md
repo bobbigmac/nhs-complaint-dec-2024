@@ -1,6 +1,6 @@
 # PPG Terms review
 
-This document is in progress. 
+This document is in progress. A lot of it is hypothetical and jargony, will be revised into concrete concerns and questions after further review.
 
 It's a dropbox of thoughts/considerations about the updated (as of Feb 4th) draft PPG terms documentation, and some references and resources looking for typical patterns and results in NHS practices around England and Wales.
 
@@ -13,23 +13,33 @@ It's a dropbox of thoughts/considerations about the updated (as of Feb 4th) draf
 	- If for informing patients, this affects few patients.
 - How well the system should tolerate noncompliance to satisfy access?
 	- Should avoid over-formalising unknowns
+- How maintanable are small/transient PPGs long term?
+- Does formalised low-change process-theatre exclude real complaints/complainants?
 
 ### Concerns
 
 Stricter and more complex processes exclude by definition.
 
-- New Bank is already at a BETTER position than the practice was under the previous operator. 
-	- The presence of any PPG is better than no form of PPG, but... 
-	- It's worth interrogating the risks and opportunities that come with adding more paperwork to the process and...
-	- Accidentally making a tiny opaque group who don't know each-others complex issues, and can't actually change anything meaningful, but that staff feels like they're being seen to have listened to, because some meetings happened.
+**New Bank is already in a better position** than the practice was under the previous operator. The presence of any PPG is better than no form of PPG.
 
-Does formalised low-change process-theatre exclude real complaints/complainants?
+- It's worth interrogating the risks and opportunities that come with adding more paperwork to the process and considering some high risks:
+		- A tiny opaque group who don't know each-others complex issues may have diffuse and complex/competing needs and trouble communicating those needs/goals clearly/coherently
+		- Staff habituated to low-key friction might struggle to convert mixed quality feedback into action
+		- Staff might feels like they've been seen to have listened, because some meetings happened, but with little real change
 
-Is a PPG better than an effective and transparent complaints system with internal responsible fixers?
+Is a PPG better than an effective and transparent complaints system with internal responsible fixers where every complaint has a guaranteed life-cycle?
 
-How maintanable are small/transient PPGs long term?
+A formal terms 'pack' might be better used to back-up the PPG, but without being mandatory reading/agreement for every member. Like a process manual, that can be standardised across all GTD practices 
+- "How to run a PPG that works" internal 'binder'
+	- A 'living' document that is 
+	- Open, readable by anybody
+	- Mostly maintained by engaged staff, but revisable by PPG members
+		- This lets staff update it to react to problems and integrate/share lessons learned
+	- Members agree to a simple one-sheet unless a situation calls for guidance/rules from the binder
+		- Most issues/debates of protocol are rare, don't make it the front door
 
-## Plain English 'chain of thought' overview
+
+## Plain English overview
 
 Staff and patients might have competing objectives in PPGs. Patients don't have much reason to enage with a practice that is operating smoothly, so the most effective function of a PPG may be to identify problems and fix them, while overburdening patients with legalese and protocol discourages engagement, provides reasons for staff to avoid fixing problems and potentially makes it 'look' like staff are listening, without recognising the reasons patients might find PPGs ineffective or even exclusionary because of the 'admin' burden.
 
