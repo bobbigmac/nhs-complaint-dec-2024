@@ -4,6 +4,31 @@ This document is in progress.
 
 It's a dropbox of thoughts/considerations about the updated (as of Feb 4th) draft PPG terms documentation, and some references and resources looking for typical patterns and results in NHS practices around England and Wales.
 
+## Key questions 
+
+- How much admin burden is too much for patients?
+	- Is this affected by deprivation and transience?
+- What is the objective of the PPG?
+	- Improve the practice by changing policy?
+	- If for informing patients, this affects few patients.
+- How well the system should tolerate noncompliance to satisfy access?
+	- Should avoid over-formalising unknowns
+
+### Concerns
+
+Stricter and more complex processes exclude by definition.
+
+- New Bank is already at a BETTER position than the practice was under the previous operator. 
+	- The presence of any PPG is better than no form of PPG, but... 
+	- It's worth interrogating the risks and opportunities that come with adding more paperwork to the process and...
+	- Accidentally making a tiny opaque group who don't know each-others complex issues, and can't actually change anything meaningful, but that staff feels like they're being seen to have listened to, because some meetings happened.
+
+Does formalised low-change process-theatre exclude real complaints/complainants?
+
+Is a PPG better than an effective and transparent complaints system with internal responsible fixers?
+
+How maintanable are small/transient PPGs long term?
+
 ## Plain English 'chain of thought' overview
 
 Staff and patients might have competing objectives in PPGs. Patients don't have much reason to enage with a practice that is operating smoothly, so the most effective function of a PPG may be to identify problems and fix them, while overburdening patients with legalese and protocol discourages engagement, provides reasons for staff to avoid fixing problems and potentially makes it 'look' like staff are listening, without recognising the reasons patients might find PPGs ineffective or even exclusionary because of the 'admin' burden.
