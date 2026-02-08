@@ -1,10 +1,6 @@
 # PPG Terms review
 
-This document is in progress. 
-
-Key questions and concerns offer a clear overview, but from the exploration of ideas, a lot of it is hypothetical and jargony, will be revised into concrete concerns and questions after further review of terms docs.
-
-It's a dropbox of thoughts/considerations about the updated (as of Feb 4th) draft PPG terms documentation, and some references and resources looking for typical patterns and results in NHS practices around England and Wales.
+This document is in progress. A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and management.
 
 ## Key questions 
 
