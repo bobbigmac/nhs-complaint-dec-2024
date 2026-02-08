@@ -16,7 +16,7 @@ This document is in progress. A review of the updated PPG terms documentation, a
 - How maintainable are small/transient/disengaged PPGs long term?
 - Does formalised but low-change process-theatre exclude real complaints/complainants?
 	- Does "I told them they could signup for the PPG" replace or support per-issue/per-patient action?
-	- How to avoid 'personal responsibility' cosplaying that hides systemic failure?
+	- How to avoid 'personal responsibility' cosplay that hides systemic failure?
 
 ### Concerns
 
