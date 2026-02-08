@@ -56,6 +56,7 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 		- The existing docs put a lot of responsibility on the patient, very little on staff, and none on expectations for change by the practice.
 	- Reception lacking representation at the PPG might also suggest they're being treated as a significant power, but have no responsibility for their choices or mistakes (common complaints in reviews)
 		- Reception have possibly the most impact on patient experience, they should probably be more directly involved in identifying the causes of complaints and good solutions that work for everyone
+		- they have the most access/workflow related knowledge, and see more of real patient activity than anybody in management, or any patient
 	- The august and september meetings were pretty well attended
 		- Mainly people checking in on their preferred doctors and changes at the practice since new management
 	- The november meeting being moved 2 weeks at the last minute, decimated attendance to 3 regulars and one person who was already in the waiting room, and started late
