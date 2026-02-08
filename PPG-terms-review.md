@@ -50,6 +50,9 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 - Staff attendance has already declined (7 to 3) over 4 meetings over ~6 months. 
 	- Understandable for a small group that has shed patients too, but a minimum level of engagement expected from staff would improve confidence. 
 	- Even if it's just a single practice rep who can action changes internally with some authority, the meeting schedule needs to be regular, stable, and the change process responsive 
+		- Any process manual should probably define what internal staff can and should do with patient feedback, so the role of primary PPG person gives them _some_ internal power to hold other staff responsible for contributions to the patient's group.
+		- The existing docs put a lot of responsibility on the patient, very little on staff, and none on expectations for change by the practice.
+		- Reception lacking representation at the PPG might also suggest they're being treated as a significant power, but have no responsibility for their choices or mistakes (common complaints in reviews)
 	- The august and september meetings were pretty well attended
 		- Mainly people checking in on their preferred doctors and changes at the practice since new management
 	- The november meeting being moved 2 weeks, at the last minute halved attendance, and started late
