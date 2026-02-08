@@ -30,6 +30,7 @@ It contains only publicly available data so that the evidence and reasoning are 
   - [Affected patients estimates and Healthwatch overview](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
   - [Poor NHS access and political extremism](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Immigration%20blame%20and%20far-right.md)
   - [Google reviews management and good response patterns](./meeting-ppg-feb4/reviews-management.md)
+  - [Reviewing the updated draft PPG terms docs](./PPG-terms-review.md)
 
 The focus throughout is **patient access**, not clinical care quality.
 
