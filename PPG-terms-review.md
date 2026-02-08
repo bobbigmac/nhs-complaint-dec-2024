@@ -78,9 +78,9 @@ If you need a way to deal with bad behaviour, keep it short and fair, and not fr
 
 Make it easy to take part, even for people with messy lives. 
 
-Publish dates well in advance, don’t move meetings at the last minute, and offer more than one way to get an item onto the agenda (paper at reception, short form, phone message, not just email and attendance). 
+Publish dates well in advance, don’t move meetings at the last minute, and offer more than one way to get an item onto the agenda (paper at reception, short form, phone message, not just email and attendance). Right now, nobody beyond the room can see what's in the PPG, so there's no reason to attend, and very little to learn.
 
-Don’t expire people off contact lists just because they missed meetings; it picks the wrong kind of “representative” by filtering for free time and stable routines. Also create a quick route for small fixes so the PPG isn’t the only way to get simple problems sorted, and send short updates after meetings so people who can’t attend still see that something happened. 
+Don’t expire people off contact lists just because they missed meetings; it picks the wrong kind of “representative” by filtering for free time and stable routines. Also create a quick route for small fixes so the PPG isn’t the only way to get simple problems sorted, and send short updates after meetings so people who can’t attend still see that something happened.
 
 If you're telling us the PPG is the main route to change, it HAS to be as accessible as possible, to have a chance at finding those excluded by other access issues or mistakes at the practice.
 
