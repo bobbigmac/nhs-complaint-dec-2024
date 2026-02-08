@@ -61,9 +61,11 @@ Then there’s the “real people have more capacity than they do” error. If y
 
 * go online whenever
 * be available for meetings (5pm is teatime, so no mums, no shop workers, other exclusions)
-* print things
+* be comfortable face to face or with small rooms full of strangers
 * keep a stable phone number/email address
 * understand long documents
+* see and understand competing concerns from other patients
+* maybe print things and form complex arguments
 * keep trying after multiple failures
 * not just switch to another GP
 
