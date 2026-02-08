@@ -73,7 +73,7 @@ TL;DR: PPG asks a lot, promises little; risk of process-theatre; staff habituate
 
 ## The ask...
 
-TODO: Shorten this
+TODO: Shorten this section
 
 A PPG works if it leads to visible changes. So the terms should say what the practice will do with feedback: who owns each issue, what to expect, and some idea of timeline. The PPG can only expect each patient to raise their own issue once, and often not very clearly. If that issue gets lost, that's a failure to care enough to understand that issue, and find a fix for it.
 
