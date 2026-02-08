@@ -70,11 +70,11 @@ TL;DR: PPG asks a lot, promises little; risk of process-theatre; staff habituate
 
 A PPG works if it leads to visible changes. So the terms should say what the practice will do with feedback: who owns each issue, what to expect, and some idea of timeline. The PPG can only expect each patient to raise their own issue once, and often not very clearly. If that issue gets lost, that's a failure to care enough to understand that issue, and find a fix for it.
 
-Start each meeting by closing out last time’s actions before taking new ones, and make sure there’s always a staff person with enough authority to get things done (or a written update if they can’t attend). If staff can’t show up or act, cancel early rather than wasting people’s time. 
+Each meeting should at some point review actions taken since the last meeting, and make sure there’s always a staff person with enough authority to get things done (or a written update if they can’t attend). If regular staff can’t show up or act, someone should still be able to run that meeting and chase issues.
 
-Keep a simple, one-page set of meeting ground rules in plain English (simple to translate a short doc, should you wish to for our non-English speakers), and let people drop in, speak, and submit items without having to “join” or sign a pack first. Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact and the normal complaints route. 
+Keep a simple, one-page set of meeting ground rules in plain language (simple to translate a short stable doc), and let people drop in, speak, and submit items without having to “join” or sign a pack first. Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact to help them fix it personally. 
 
-If you need a way to deal with bad behaviour, keep it short and fair, and not front of the pack (it's accusative), and make it apply to staff as well as patients: be respectful, don’t blame patients for process problems, try to understand issues across the practice/company and recognise that most people engaging with healthcare are not always (or perhaps usually not) in the best frame of mind to handle complex processes and repeated demands. 
+If you need a way to deal with bad behaviour, keep it short and simple, not at the front door (it's accusative and discouraging, when 99% of the time everything is fine), and make it apply to staff as well as patients: be respectful, don’t blame patients for process problems, try to understand issues across the practice/company and recognise that most people engaging with healthcare are not always (or perhaps usually not) in the best frame of mind. 
 
 Make it easy to take part, even for people with messy lives. 
 
@@ -82,7 +82,7 @@ Publish dates well in advance, don’t move meetings at the last minute, and off
 
 Don’t expire people off contact lists just because they missed meetings; it picks the wrong kind of “representative” by filtering for free time and stable routines. Also create a quick route for small fixes so the PPG isn’t the only way to get simple problems sorted, and send short updates after meetings so people who can’t attend still see that something happened.
 
-If you're telling us the PPG is the main route to change, it HAS to be as accessible as possible, to have a chance at finding those excluded by other access issues or mistakes at the practice.
+If the PPG is the main route to change, it HAS to be as accessible as possible, to have a chance at finding those excluded by other access issues or mistakes at the practice. 
 
 ---
 
