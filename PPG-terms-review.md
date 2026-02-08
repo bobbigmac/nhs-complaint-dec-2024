@@ -63,6 +63,8 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- What is the outcome of 'nobody bothered to turn up?'
 		- Is the lesson 'nobody cares' or 'everything is fine' or 'nobody thinks anything will change'?
 		- How to measure 'hope' that the procedure is worth the results?
+	- If patients vanish from the PPG (because there is no incentive beyond practice improvement), how does the PPG expect to know if those people deregistered and went elsewhere (fleeing a sinking ship) rather than became satisfied/hopeless with changes and just stopped asking? 
+		- I'm not sure it's practical to depend on patients to reraise the concerns of other patients, so the workflow has to try and cover that somehow.
 
 TL;DR: PPG asks a lot, promises little; risk of process-theatre; staff habituated to friction; attendance drop; nobody notices or checks
 
