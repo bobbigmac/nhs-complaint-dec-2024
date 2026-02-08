@@ -1,6 +1,6 @@
 # PPG Terms review
 
-This document is in progress. A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and management.
+This document is in progress. A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and operations.
 
 ## Key questions 
 
