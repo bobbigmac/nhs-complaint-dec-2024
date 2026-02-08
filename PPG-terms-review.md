@@ -72,7 +72,9 @@ A PPG only works if it leads to visible changes, otherwise it’s just meetings.
 
 Don’t make paperwork the front door. Keep a simple, one-page set of meeting ground rules in plain English, and let people drop in, speak, and submit items without having to “join” or sign a pack first. Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact and the normal complaints route. If you need a way to deal with bad behaviour, keep it short and fair, and make it apply to staff as well as patients: be respectful, don’t blame patients for process problems, try to understand issues across the practice/company and recognise that most people engaging with healthcare are not always (or usually not) in the best frame of mind to handle complex processes and repeated demands. 
 
-Make it easy to take part, even for people with messy lives. Publish dates well in advance, don’t move meetings at the last minute, and offer more than one way to get an item onto the agenda (paper at reception, short form, phone message, not just email and attendance). Don’t expire people off contact lists just because they missed meetings; it picks the wrong kind of “representative” by filtering for free time and stable routines. Also create a quick route for small fixes so the PPG isn’t the only way to get simple problems sorted, and send short updates after meetings so people who can’t attend still see that something happened. 
+Make it easy to take part, even for people with messy lives. 
+
+Publish dates well in advance, don’t move meetings at the last minute, and offer more than one way to get an item onto the agenda (paper at reception, short form, phone message, not just email and attendance). Don’t expire people off contact lists just because they missed meetings; it picks the wrong kind of “representative” by filtering for free time and stable routines. Also create a quick route for small fixes so the PPG isn’t the only way to get simple problems sorted, and send short updates after meetings so people who can’t attend still see that something happened. 
 
 ---
 
