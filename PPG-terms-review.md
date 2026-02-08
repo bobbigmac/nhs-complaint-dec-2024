@@ -47,6 +47,12 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- People treated with respect and care, tend to return the favour, don't get defensive, don't anger-cycle, and can be helped even if they're not making the most perfect case.
 	- Access should assume good faith, but have tools prepared that can react sensibly to bad faith participants, patients or staff.
 
+- Staff attendance has already declined (7 to 3) over 4 meetings over less than a year. Understandable for a small group that has shed patients too, but a minimum level of engagement expected from staff would improve confidence. Even if it's just a single practice rep who can action changes internally with some authority, the meeting schedule needs to be tight enough, and the change process responsive enough, that the practice has enough responsibility and power to stay engaged. 
+	- The august and september meetings were pretty well attended, mainly people checking in on their preferred doctors and changes at the practice since new management
+	- The november meeting being moved 2 weeks, at the last minute halved attendance, and started late
+	- Continued reduced attendance in february
+- If there are no staff to listen and act, and no patients to speak, was there even a meeting?
+
 ---
 
 ## Exploration of related issues
