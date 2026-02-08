@@ -105,6 +105,41 @@ Governance should protect the group from rare disasters without making the ordin
 
 ---
 
+## Cognitive scaffold
+
+* Selection bias: heavy onboarding filters out exactly the patients you most need (low time, low confidence, language barriers, disability, unstable housing). You end up with “usual suspects” and call it representative.
+
+* Power imbalance: who chairs, who sets the agenda, who writes minutes, who decides what gets actioned. If the practice controls all of that, the PPG can’t really bite.
+
+* Information asymmetry: patients don’t see constraints, data, or decision logs, so “we’ll look into it” becomes unverifiable and trust collapses.
+
+* Action tracking: without a visible backlog/owner/deadline/status, slow change feels like no change. Even tiny fixes need a traceable trail.
+
+* Feedback loop closure: “what we heard / what we did / what we can’t do and why” is the difference between engagement and churn. Most groups miss this.
+
+* Scope creep trap: meetings get eaten by individual-case stories because there isn’t a clean route for personal complaints, and then the group becomes emotionally exhausting and unproductive.
+
+* Confidentiality boundary design: simplest fix is not “make patients sign more”, it’s “don’t discuss anything identifiable”. If the meeting design needs confidentiality, something upstream is broken.
+
+* Alternative participation routes: async input (email, paper drop-box, phone slot, short survey at reception, WhatsApp broadcast list with opt-in, community org partner sessions) so PPG isn’t the only door.
+
+* Accessibility basics: interpreters, plain-English summaries, large print, remote dial-in, predictable schedule, childcare/transport timing, and avoiding 8am/weekday-only assumptions.
+
+* Recruitment/rotation: if you rely on whoever happens to show up, continuity dies. You need a light-touch way to onboard new people and keep representation fresh.
+
+* Safeguarding and retaliation fear: some patients won’t speak candidly if they think it could affect their care. Having a “you won’t be treated differently” statement is nice; having a way to raise concerns anonymously or via a third party is better.
+
+* Data/GDPR clarity: if you’re keeping a member list/database, spell out what’s stored, why, for how long, who can see it, and the opt-out path. Otherwise “database” triggers distrust.
+
+* Staff training angle: the problem isn’t just documents; it’s staff reflexes (defensiveness, proceduralism, patient-blaming). If you don’t address that, the PPG becomes a venting chamber.
+
+* “Success” definition: what does a good PPG change in 3 months? 6 months? If you can’t name outcomes, it turns into a ritual.
+
+* Escalation path: when the practice won’t act, what’s the next step (PCN, ICB, complaints, Healthwatch, MPs, Ombudsman). If you can’t escalate, you’re stuck in performative listening.
+
+
+---
+
 ## Supporting jargon and sources/references/resources
 
 What you’re seeing is the collision between “institutional defensibility” and “getting help while your life is on fire”.
