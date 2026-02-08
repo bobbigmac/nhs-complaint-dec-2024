@@ -182,11 +182,14 @@ Governance should protect the group from rare disasters without making the ordin
   * staff chair (or co-chair) as default, with a patient “agenda setter” helper if available
   * no elections, no hierarchy theatre; light duties
   * practice owns minutes + action log (patients can sanity check)
-* Decision-making: don’t vote on “what should the practice do” like it’s a club. Voting is for internal admin only (meeting times, what to cover next), otherwise you risk the “tyranny of crowds”. The PPG’s power should be: raise, prioritise, demand a tracked response, and escalate when it stalls. Blocked solutions need workarounds and compromose, not absolutes and confrontations.
-* The draft reads like “patients might misbehave” and “staff respond reasonably” by default. Put expectations on staff too: respectful language, no patient-blame, read the submitted info, don’t use process as a weapon, and “if we mess up, we own it”. If there’s a conduct policy, it should apply to everyone in the room.
+* Decision-making: don’t vote on “what should the practice do” like it’s a club, otherwise you risk the “tyranny of crowds”. The PPG’s power should be: raise, prioritise, review and escalate if/when it stalls. 
+	* Blocked solutions need workarounds and compromose, not absolutes and confrontations. 
+	* If patients are so engaged on an issue that you need a vote, it should be handled outside the normal PPG terms, so as to not muddy the waters.
+* The draft reads like “patients might misbehave” and “staff respond reasonably” by default. Put expectations on staff too: respectful language, no patient-blame, read the submitted info, try to understand the personal situations of your patients beyond the immediate, don’t use process as a weapon, and “if we mess up, we own it”. 
+* If there’s a conduct policy, it should apply to everyone in the room.
 * Build a “quick fixes” route so the PPG isn’t the only door. Every tiny issue has to wait for a quarterly meeting. 
 * meetings might benefit from a brief 'since the last meeting we did... and we learned...' section
-* an action log would be nice, but please don't overformalise, internal notes between responsible staff are probably fine 99% of the time, keep a word document or something the practice can manage themselves, it doesn't need to be outside accessible (although there are some interesting tools for that kind of thing if you did want to 'level up' community support).
+* an action log would be nice, but please don't overformalise, internal notes between responsible staff to action solutions are probably fine 99% of the time, the practice staff should be able to manage it themselves with whatever tools they prefer. It doesn't need to be outside accessible (although there are some interesting tools for that kind of thing if you did want to 'level up' community support).
 
 Some access/engagement concerns:
 
