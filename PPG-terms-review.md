@@ -22,6 +22,7 @@ Stricter and more complex processes exclude by definition.
 
 - It's worth interrogating the risks and opportunities that come with adding more paperwork to the process and considering some high risks:
 	- A tiny opaque group who don't know each-others complex issues may have diffuse and complex/competing needs and trouble communicating those needs/goals clearly/coherently
+		- Every patient already has to overcome "is this just my fault?" placed on them by lots of other systems
 	- Staff habituated to low-key friction might struggle to convert mixed quality feedback into action
 	- Staff might feel like they've been seen to have listened, because some meetings happened, but with little real change
 
