@@ -185,18 +185,18 @@ England/Wales difference worth knowing (because it changes where “voice” end
 * [A guide for working together: CQC and patient participation groups](https://www.kingswaymedicalcentre.co.uk/website/A81057/files/20130509_cqc_guide_for_ppgs_final.pdf) ([kingswaymedicalcentre.co.uk][14])
 * [BMA: Patient and public involvement – a toolkit for GPs](https://www.bma.org.uk/media/1938/bma-patient-and-public-involvement-2015.pdf) 
 
-[1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8522557/?utm_source=chatgpt.com "Health care administrative burdens: Centering patient ... - PMC"
-[2]: https://www.wentworthmedical.nhs.uk/practice-information/patient-participation-group-ppg/ppg-terms-of-reference/?utm_source=chatgpt.com "PPG - Terms of Reference"
+[1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8522557/ "Health care administrative burdens: Centering patient ... - PMC"
+[2]: https://www.wentworthmedical.nhs.uk/practice-information/patient-participation-group-ppg/ppg-terms-of-reference/ "PPG - Terms of Reference"
 [3]: https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters/gp-mythbuster-108-involving-and-engaging-patient-population-and-local-communities "GP mythbuster 108: Involving and engaging with the patient population and local communities - Care Quality Commission"
 [4]: https://www.england.nhs.uk/south/wp-content/uploads/sites/6/2016/09/ppg-guidance.pdf "Microsoft Word - 2  Starting a PPG Guidance - Final.docx"
 [5]: https://dhcw.nhs.wales/ig/ig-documents/ig-framework/codeofpractice-pdf/ "untitled"
 [6]: https://pubmed.ncbi.nlm.nih.gov/40953943/ "Coverage and quality of patient participation groups. A mixed-methods analysis of Care Quality Commission reports - PubMed"
-[7]: https://qualitysafety.bmj.com/content/25/8/626?utm_source=chatgpt.com "From tokenism to empowerment: progressing patient and ..."
+[7]: https://qualitysafety.bmj.com/content/25/8/626 "From tokenism to empowerment: progressing patient and ..."
 [8]: https://www.ofcom.org.uk/internet-based-services/technology/barriers-to-household-connectivity "Barriers to Household Connectivity"
 [9]: https://www.kingsfund.org.uk/insight-and-analysis/long-reads/lost-in-system-need-for-better-admin "Lost In The System: The Need For Better NHS Admin | The King's Fund"
 [10]: https://www.healthwatch.co.uk/news/2025-01-27/nhs-complaints-system-lets-people-down-new-research-warns "NHS complaints system lets people down, new research warns"
 [11]: https://www.llaiswales.org/who-are-llais "Who are Llais? | Llais"
-[12]: https://www.legislation.gov.uk/uksi/2015/1879/regulation/20?utm_source=chatgpt.com "The National Health Service (Personal Medical ..."
+[12]: https://www.legislation.gov.uk/uksi/2015/1879/regulation/20 "The National Health Service (Personal Medical ..."
 [13]: https://www.patients-association.org.uk/use-our-toolkit-to-set-up-your-ppg "
 	Use our toolkit to set up your PPG
 "
