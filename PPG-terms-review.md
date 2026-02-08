@@ -56,7 +56,7 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- Reception lacking representation at the PPG might also suggest they're being treated as a significant power, but have no responsibility for their choices or mistakes (common complaints in reviews)
 	- The august and september meetings were pretty well attended
 		- Mainly people checking in on their preferred doctors and changes at the practice since new management
-	- The november meeting being moved 2 weeks, at the last minute halved attendance, and started late
+	- The november meeting being moved 2 weeks at the last minute, decimated attendance to 3 regulars and one person who was already in the waiting room, and started late
 	- Continued reduced attendance in february
 	- If there are no staff to listen and act, and no patients to speak, was there even a meeting? 
 	- What is the outcome of 'nobody bothered to turn up?'
