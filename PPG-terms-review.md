@@ -84,6 +84,8 @@ Publish dates well in advance, don’t move meetings at the last minute, and off
 
 Don’t expire people off contact lists just because they missed meetings; it picks the wrong kind of “representative” by filtering for free time and stable routines. Also create a quick route for small fixes so the PPG isn’t the only way to get simple problems sorted, and send short updates after meetings so people who can’t attend still see that something happened.
 
+Even a simple suggestions box might be helpful (tho only catches patients once they're actually in the practice).
+
 If the PPG is the main route to change, it HAS to be as accessible as possible, to have a chance at finding those excluded by other access issues or mistakes at the practice. 
 
 ---
@@ -159,31 +161,30 @@ Governance should protect the group from rare disasters without making the ordin
 
 ## Cognitive scaffold
 
-* Selection bias: heavy onboarding filters out exactly the patients you most need (low time, low confidence, language barriers, disability, unstable housing). You end up with “usual suspects” and call it representative.
+* Selection bias: heavy onboarding filters out exactly the patients you most need to reach (low time, low confidence, language barriers, disability, unstable housing). You end up with “usual suspects”.
 
-* Power imbalance: who chairs, who sets the agenda, who writes minutes, who decides what gets actioned. If the practice controls all of that, the PPG can’t really bite.
+* Power imbalance: the PPG can’t really get mad about problems, they can only explain and describe, because anything except 100% coolheadedness can result in action. Healthcare is emotive.
 
-* Information asymmetry: patients don’t see constraints, data, or decision logs, so “we’ll look into it” becomes unverifiable and trust collapses.
+* Information asymmetry: patients don’t see constraints or data, they only see their own part.
 
-* Action tracking: without a visible backlog/owner/deadline/status, slow change feels like no change. Even tiny fixes need a traceable trail.
+* Action tracking: without some kind of backlog/owner/deadline/status, slow change feels like no change. Even tiny fixes need a traceable trail, and patients can't be expected to own more than one each.
 
-* Feedback loop closure: “what we heard / what we did / what we can’t do and why” is the difference between engagement and churn. Most groups miss this.
-
-* Scope creep trap: meetings get eaten by individual-case stories because there isn’t a clean route for personal complaints, and then the group becomes emotionally exhausting and unproductive.
+* Scope creep risk: meetings get eaten by individual-case stories because there isn’t a clean route for personal complaints, and then the group becomes emotionally exhausting and unproductive. We've seen windows of this already.
 
 * Confidentiality boundary design: simplest fix is not “make patients sign more”, it’s “don’t discuss anything identifiable”. If the meeting design needs confidentiality, something upstream is broken.
 
 * Alternative participation routes: async input (email, paper drop-box, phone slot, short survey at reception, WhatsApp broadcast list with opt-in, community org partner sessions) so PPG isn’t the only door.
 
-* Accessibility basics: interpreters, plain-English summaries, large print, remote dial-in, predictable schedule, childcare/transport timing, and avoiding 8am/weekday-only assumptions.
+* Accessibility basics: interpreters, plain-English summaries, large print, remote dial-in, predictable schedule, childcare/transport timing, and avoiding 8am/weekday-only assumptions. Every patient engagement needs more infrastructure support, so as the practice improves, better access to the PPG should become available to a wider range of patients. 
 
-* Recruitment/rotation: if you rely on whoever happens to show up, continuity dies. You need a light-touch way to onboard new people and keep representation fresh.
+* Given limited resources, the current shape is understandable, but it could be significantly improved.
+	* you _could_ fire up an all-patients free discord server, for example (or dozens of other tools).
 
-* Safeguarding and retaliation fear: some patients won’t speak candidly if they think it could affect their care. Having a “you won’t be treated differently” statement is nice; having a way to raise concerns anonymously or via a third party is better.
+* Recruitment/rotation: if you rely on whoever happens to show up, continuity dies. You need a light-touch way to onboard new people, keep representation fresh so you catch new problems, and keep those who fell off up to date.
 
-* Data/GDPR clarity: if you’re keeping a member list/database, spell out what’s stored, why, for how long, who can see it, and the opt-out path. Otherwise “database” triggers distrust.
+* Safeguarding and retaliation fear: some patients won’t speak candidly if they think it could affect their care. Having a “you won’t be treated differently” statement is nice; having a way to raise concerns anonymously or via a third party is better. Even a suggestions box might be helpful.
 
-* Staff training angle: the problem isn’t just documents; it’s staff reflexes (defensiveness, proceduralism, patient-blaming). If you don’t address that, the PPG becomes a venting chamber.
+* Staff training angle: the problem isn’t just documents; it’s staff reflexes (defensiveness, proceduralism, patient-blaming). If you don’t address that, the PPG becomes a venting chamber and a list of excuses.
 
 * “Success” definition: what does a good PPG change in 3 months? 6 months? If you can’t name outcomes, it turns into a ritual.
 
