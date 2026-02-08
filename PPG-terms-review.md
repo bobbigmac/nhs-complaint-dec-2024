@@ -45,7 +45,7 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 
 ## Exploration of related issues
 
-The following sections were produced largely by AI, then edited manually, but it's still a pretty unfocussed, bordering on free-association. I've kept it here because many of the concerns raised are valid and do apply here, and the resources near the end are quite useful:
+The following sections were produced largely by AI, then edited manually, but it's still a pretty unfocussed. I've kept it here because many of the concerns raised are valid and do apply here, and the resources near the end are quite useful:
 
 ---
 
