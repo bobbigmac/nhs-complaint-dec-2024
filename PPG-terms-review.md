@@ -286,3 +286,13 @@ England/Wales difference worth knowing (because it changes where “voice” end
 	Use our toolkit to set up your PPG
 "
 [14]: https://www.kingswaymedicalcentre.co.uk/website/A81057/files/20130509_cqc_guide_for_ppgs_final.pdf "A guide for working together CQC and PPGs"
+
+
+## TODOS
+
+Work to complete on this document:
+
+- You ask for visible tracking, then later warn against overformalising; reconcile that by framing it as “practice keeps internal notes however they like, but publishes a short ‘what we heard / what we did / what’s next’ update each meeting”.
+- You’ve got some lines that are true but will get you written off (“corpo/doublespeak”, “general public not entirely reasonable”, “fire up a discord”) — fine as private venting but there are better ways to say these things. 
+- You repeat the same points in three places (quick fixes, suggestions box, drop-in/no pack) - pick one canonical place for each.
+- Worth pulling forward from the later scaffold into the “ask”: what happens when nobody turns up? is a pretty big question. The first time, sure it's rain, but after a year of a threadbare PPG, is that doing anything? 
