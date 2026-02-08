@@ -15,6 +15,7 @@ This document is in progress. A review of the updated PPG terms documentation, a
 	- Should avoid over-formalising unknowns
 - How maintainable are small/transient/disengaged PPGs long term?
 - Does formalised but low-change process-theatre exclude real complaints/complainants?
+	- Does "I told them they could signup for the PPG" replace or support per-issue/per-patient action?
 
 ### Concerns
 
