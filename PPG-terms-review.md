@@ -303,4 +303,5 @@ Work to complete on this document:
 - You repeat the same points in three places (quick fixes, suggestions box, drop-in/no pack) - pick one canonical place for each.
 - Worth pulling forward from the later scaffold into the “ask”: what happens when nobody turns up? is a pretty big question. The first time, sure it's rain, but after a year of a threadbare PPG, is that doing anything? 
 - This document is far too long to expect anyone to read it in full.
-	- Dedupe and remove redundancy, compress points that that then each link to detail in a sub-document, so the issue is initially digestible.
+	- Dedupe and remove redundancy
+	- Compress related points then link each to details in a sub-document, so the issue is initially digestible.
