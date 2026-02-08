@@ -25,9 +25,9 @@ Stricter and more complex processes exclude by definition.
 **New Bank is already in a better position** than the practice was under the previous operator. The presence of any PPG is better than no form of PPG.
 
 - It's worth interrogating the risks and opportunities that come with adding more paperwork to the process and considering some high risks:
-		- A tiny opaque group who don't know each-others complex issues may have diffuse and complex/competing needs and trouble communicating those needs/goals clearly/coherently
-		- Staff habituated to low-key friction might struggle to convert mixed quality feedback into action
-		- Staff might feels like they've been seen to have listened, because some meetings happened, but with little real change
+	- A tiny opaque group who don't know each-others complex issues may have diffuse and complex/competing needs and trouble communicating those needs/goals clearly/coherently
+	- Staff habituated to low-key friction might struggle to convert mixed quality feedback into action
+	- Staff might feels like they've been seen to have listened, because some meetings happened, but with little real change
 
 Is a PPG better than an effective and transparent complaints system with internal responsible fixers where every complaint has a guaranteed life-cycle?
 
