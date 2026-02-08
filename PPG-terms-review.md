@@ -11,8 +11,8 @@ This document is in progress. A review of the updated PPG terms documentation, a
 	- If for informing patients, this affects few patients.
 - How well the system should tolerate noncompliance to satisfy access?
 	- Should avoid over-formalising unknowns
-- How maintanable are small/transient PPGs long term?
-- Does formalised low-change process-theatre exclude real complaints/complainants?
+- How maintainable are small/transient/disengaged PPGs long term?
+- Does formalised but low-change process-theatre exclude real complaints/complainants?
 
 ### Concerns
 
