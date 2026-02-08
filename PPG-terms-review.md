@@ -29,15 +29,18 @@ Stricter and more complex processes exclude by definition.
 
 Is a PPG better than an effective and transparent complaints system with internal responsible fixers where every complaint has a guaranteed life-cycle?
 
+Is the PPG supposed to **replace** or **supplement** dedicated staff problem-solvers? 
+- How to prove effectiveness in an environment of relatively high corpo/doublespeak?
+	- "You said / we did" is only effective if you add "...and here's the proof that it fixed the problem"
+
 A formal terms 'pack' might be better used to back-up the PPG, but without being mandatory reading/agreement for every member. Like a process manual, that can be standardised across all GTD practices 
-- "How to run a PPG that works" internal 'binder'
+- The "How to run a PPG that works" internal 'binder'
 	- A 'living' document that is 
 	- Open, readable by anybody
 	- Mostly maintained by engaged staff, but revisable by PPG members
 		- This lets staff update it to react to problems and integrate/share lessons learned
 	- Members agree to a simple one-sheet unless a situation calls for guidance/rules from the binder
-		- Most issues/debates of protocol are rare, don't make it the front door
-
+		- Most issues of protocol are rare, don't make it the front door
 
 ## Plain English overview
 
