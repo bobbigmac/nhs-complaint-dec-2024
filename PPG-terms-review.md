@@ -41,11 +41,13 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- Members agree to a simple one-sheet unless a situation calls for guidance/rules from the binder
 		- Most issues of protocol are rare, don't make it the front door
 
+---
+
 ## Exploration of related issues
 
-The following sections were produced largely by AI, then edited manually, but it's still a pretty unfocussed, bordering on free-association. I've kept it here because many of the concerns raised are valid and do apply here, and the resources near the end are quite useful:
-
 Staff and patients might have competing objectives in PPGs. Patients don't have much reason to enage with a practice that is operating smoothly, so the most effective function of a PPG may be to identify problems and fix them, while overburdening patients with legalese and protocol discourages engagement, provides reasons for staff to avoid fixing problems and potentially makes it 'look' like staff are listening, without recognising the reasons patients might find PPGs ineffective or even exclusionary because of the 'admin' burden.
+
+---
 
 Staff build processes to protect the organisation. Patients come to get help. When you put a big pile of rules in front of a place that’s meant to listen, it feels like “prove you’re safe before we’ll hear you”. Most people won’t bother, especially if they’re already tired, skint, anxious, busy, or not confident with forms.
 
