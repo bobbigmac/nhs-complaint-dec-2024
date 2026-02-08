@@ -60,7 +60,7 @@ Patients see paperwork as friction. They often don’t know why it exists, or se
 Then there’s the “real people have more capacity than they do” error. If your life is comfortable, it’s easy to assume everyone can:
 
 * go online whenever
-* be available for meetings (5pm is teatime, so no mums, no shop workers, many many excluded)
+* be available for meetings (5pm is teatime, so no mums, no shop workers, other exclusions)
 * print things
 * keep a stable phone number/email address
 * understand long documents
