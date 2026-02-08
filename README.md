@@ -23,6 +23,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 - [My own experience](#My-patient-experience-with-New-Bank) trying (and failing) to see my doctor, as a patient who works nights (among other issues).
 - [Notes](#Notes) - My notes that don't fit anywhere else.
 - [Ongoing/further Research](#ongoingfurther-research) - What's next.
+  - [Reviewing the updated draft PPG terms docs](./PPG-terms-review.md)
 - **Produced reports/evidence packs**
   - [General GP practice stats and scope/environment notes](./meetings-notes/2025-09-10-meeting2/benchmarks-summary-sept-10.md)
   - [PATCHS trustpilot reviews for lots of useful patient input](./reviews/PATCHS/output%20reports/PATCHS%201-2-3%20Star%20Reviews%20with%20Summary%20Panel%20Landscape.pdf)
@@ -30,7 +31,6 @@ It contains only publicly available data so that the evidence and reasoning are 
   - [Affected patients estimates and Healthwatch overview](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
   - [Poor NHS access and political extremism](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Immigration%20blame%20and%20far-right.md)
   - [Google reviews management and good response patterns](./meeting-ppg-feb4/reviews-management.md)
-  - [Reviewing the updated draft PPG terms docs](./PPG-terms-review.md)
 
 The focus throughout is **patient access**, not clinical care quality.
 
