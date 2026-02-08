@@ -180,14 +180,10 @@ If you want one really clean comparison point for your “minor obstructions dis
 
 England/Wales difference worth knowing (because it changes where “voice” ends up): in Wales, Community Health Councils were replaced on 1 April 2023 by Llais, which explicitly has a statutory “citizen voice” role and provides complaints advocacy. So if you’re comparing “what exists” as patient feedback infrastructure, Wales has a stronger single front door for voice than England does (where Healthwatch exists, but the ecosystem is more scattered). [Who are Llais?](https://www.llaiswales.org/who-are-llais), [Welsh Government remit letter for Llais 2023–2026](https://www.gov.wales/sites/default/files/publications/2023-04/citizen-voice-body-llais-term-of-government-remit-letter-2023-2026.pdf), [Aneurin Bevan UHB: Llais replaces CHCs](https://abuhb.nhs.wales/news/news/new-citizen-voice-body-llais-replaces-former-community-health-councils/). ([llaiswales.org][11])
 
-If you want a few anchor docs that are “mainstream enough” to cite in PPG arguments without sounding like you’re freelancing:
-
 * [The National Health Service (Personal Medical Services Agreements) Regulations 2015, reg 20 (patient participation)](https://www.legislation.gov.uk/uksi/2015/1879/regulation/20) ([Legislation.gov.uk][12])
 * [Patients Association: PPG toolkit page](https://www.patients-association.org.uk/use-our-toolkit-to-set-up-your-ppg) ([Patients Association][13])
 * [A guide for working together: CQC and patient participation groups](https://www.kingswaymedicalcentre.co.uk/website/A81057/files/20130509_cqc_guide_for_ppgs_final.pdf) ([kingswaymedicalcentre.co.uk][14])
 * [BMA: Patient and public involvement – a toolkit for GPs](https://www.bma.org.uk/media/1938/bma-patient-and-public-involvement-2015.pdf) 
-
-If you want to turn this into something you can take into a PPG meeting without it turning into vibes-and-theory, the clean proposal is: “we re-scope the PPG so it never handles identifiable info; we replace the paperwork pack with a one-page ground rules sheet; we create a separate, named route for individual issues; and we measure whether attendance and diversity improve after the change.” That’s testable, and it keeps the governance people happy without making participation feel like probation.
 
 [1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8522557/?utm_source=chatgpt.com "Health care administrative burdens: Centering patient ... - PMC"
 [2]: https://www.wentworthmedical.nhs.uk/practice-information/patient-participation-group-ppg/ppg-terms-of-reference/?utm_source=chatgpt.com "PPG - Terms of Reference"
