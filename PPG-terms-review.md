@@ -41,6 +41,8 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- Members agree to a simple one-sheet unless a situation calls for guidance/rules from the binder
 		- Most issues of protocol are rare, don't make it the front door
 
+A lot of 'the general public' are simply 'not entirely reasonable' right now. There are valid reasons for and against that, but they definitely impact how people 'expect' to engage with services. It's entirely understandable that protecting staff and other patients is a high priority, but it has been pretty well demonstrated that avoiding a pattern where negativity is expected, can help prevent that negativity occuring (i.e. people treated with respect and care, tend to return the favour). Access should assume good faith, but have tools prepared that can react sensibly to bad faith participants, patients or staff.
+
 ---
 
 ## Exploration of related issues
