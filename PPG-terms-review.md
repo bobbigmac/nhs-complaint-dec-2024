@@ -31,8 +31,8 @@ Stricter and more complex processes exclude by definition.
 
 Is a PPG better than an effective and transparent complaints system with internal responsible fixers where every complaint has a guaranteed life-cycle?
 
-Is the PPG supposed to **replace** or **supplement** dedicated staff problem-solvers? 
-- How to prove effectiveness in an environment of relatively high corpo/doublespeak?
+- Is the PPG supposed to **replace** or **supplement** dedicated staff problem-solvers? 
+	- How to prove effectiveness in an environment of relatively high corpo/doublespeak?
 	- "You said / we did" is only effective if you add "...and here's the proof that it fixed the problem"
 
 A formal terms 'pack' might be better used to back-up the PPG, but without being mandatory reading/agreement for every member. Like a process manual, that can be standardised across all GTD practices 
@@ -44,7 +44,7 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- Members agree to a simple one-sheet unless a situation calls for guidance/rules from the binder
 		- Most issues of protocol are rare, don't make it the front door
 
-## Plain English overview
+## Exploration of related issues
 
 Staff and patients might have competing objectives in PPGs. Patients don't have much reason to enage with a practice that is operating smoothly, so the most effective function of a PPG may be to identify problems and fix them, while overburdening patients with legalese and protocol discourages engagement, provides reasons for staff to avoid fixing problems and potentially makes it 'look' like staff are listening, without recognising the reasons patients might find PPGs ineffective or even exclusionary because of the 'admin' burden.
 
