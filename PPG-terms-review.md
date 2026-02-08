@@ -72,7 +72,7 @@ A PPG works if it leads to visible changes. So the terms should say what the pra
 
 Start each meeting by closing out last time’s actions before taking new ones, and make sure there’s always a staff person with enough authority to get things done (or a written update if they can’t attend). If staff can’t show up or act, cancel early rather than wasting people’s time. 
 
-Keep a simple, one-page set of meeting ground rules in plain English, and let people drop in, speak, and submit items without having to “join” or sign a pack first. Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact and the normal complaints route. 
+Keep a simple, one-page set of meeting ground rules in plain English (simple to translate a short doc, should you wish to), and let people drop in, speak, and submit items without having to “join” or sign a pack first. Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact and the normal complaints route. 
 
 If you need a way to deal with bad behaviour, keep it short and fair, and not front of the pack (it's accusative), and make it apply to staff as well as patients: be respectful, don’t blame patients for process problems, try to understand issues across the practice/company and recognise that most people engaging with healthcare are not always (or perhaps usually not) in the best frame of mind to handle complex processes and repeated demands. 
 
