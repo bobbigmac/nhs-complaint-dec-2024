@@ -2,8 +2,6 @@
 
 A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and operations.
 
-This document is in progress. 
-
 Its key conclusion is probably that making access harder, makes effective action less likely. A healthy PPG is one that can still fix problems even if every meeting has different participants.
 
 ## Quick map
