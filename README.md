@@ -24,6 +24,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 - [Notes](#Notes) - My notes that don't fit anywhere else.
 - [Ongoing/further Research](#ongoingfurther-research) - What's next.
   - [Reviewing the updated draft PPG terms docs](./PPG-terms-review.md)
+  - [Exclusion questions - Is exclusion a problem here?](./Exclusion-questions.md)
 - **Produced reports/evidence packs**
   - [General GP practice stats and scope/environment notes](./meetings-notes/2025-09-10-meeting2/benchmarks-summary-sept-10.md)
   - [PATCHS trustpilot reviews for lots of useful patient input](./reviews/PATCHS/output%20reports/PATCHS%201-2-3%20Star%20Reviews%20with%20Summary%20Panel%20Landscape.pdf)
