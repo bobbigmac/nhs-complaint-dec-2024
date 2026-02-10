@@ -69,7 +69,9 @@ If the patient mix and the kinds of work you do don’t resemble the local popul
 ### Signals from silence: complaints and churn
 
 * What *is* the complaints process at this practice since the takeover?
-* What complaints are there a lot (if any), and if none why not? What complaints are *not* there because it would seem pointless to complain about if nothing would change? How many complaints does this practice recieve, and how are they usually resolved? 
+* What complaints are there a lot (if any), and if none why not? 
+* What complaints are *not* there because it would seem pointless to complain about if nothing would change? 
+* How many complaints does this practice recieve, and how are they usually resolved? 
 * Simply how long do patients stay registered here? Is that about as long as people typically live in the area?
 
 This is the “people disappear quietly” group: excluded patients often don’t complain, especially where other practices are accessible, they just churn, give up, or reappear later as crisis care. Low complaints __can__ be a red flag.
