@@ -11,6 +11,7 @@ Its key conclusion is probably that making access harder, makes effective action
 - [Potential PPG goals](#the-ask) - ownership, follow-through, drop-in participation, and confidentiality designed out
 - [Access basics, make it easy](#make-it-easy-to-take-part) - predictable dates, multiple routes to contribute, no quiet expiry, better visibility
 - [Democratisation risks](#democratisation-risks) - interference and potential noise, well-meaning but unhelpful
+- [Support info in partner doc](./PPG-terms-support) - ChatGPT impact, how PPGs respond, environmental notes and why staff should run meetings, resources.
 
 
 ## Key questions 
