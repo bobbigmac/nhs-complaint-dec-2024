@@ -17,13 +17,14 @@ Some relatively easy to check systems that might identify these groups. If you c
 
 ### Urgency pressure inside the practice
 
-* Does this practice see more urgent care than they’d expect, or about average for similar practices?
-	* Is this practice quietly overwhelmed by “urgent” care requests, hence the repeated messaging about not using the form for urgent care? How many urgent care requests per registered patient is normal?
-* Are doctors seeing a lot of urgency (massive red flag) where they should be seeing easy-to-fix regular issues?
-* Patients are often guilt-tripped (unintentionally, mostly) into not making appointments for seemingly low-importance issues (not the fault of the practice) and may postpone care if they’re always told the NHS is 'under pressure' (“I don’t want to pressure them, *cough cough*”). 
-	- Do patients say “I know you’re busy but…”, “I don’t want to be a pain but…”, or just seem rushed/anxious in appointments?
-	
-TODO: Still have a little repetition to rewrite out
+* Are doctors seeing more urgency where they should be seeing mundane appointments earlier?
+* Does this practice see more urgent care requests than it should for similar practices?
+	* Is this practice quietly overwhelmed by “urgent” care requests, hence the repeated messaging about not using the form on the website for urgent care? (I'm still not clear on if that's urgent or emergency) 
+	* How many urgent care requests per registered patient is normal?
+* Patients are often guilt-tripped (unintentionally, not the fault of the practice) into not attending for seemingly low-importance issues, and may postpone care since they’re always told the NHS is 'under pressure' 
+	- (“I don’t want to pressure them, *cough cough*”). 
+	- Do patients say “I know you’re busy but…”, “I don’t want to be a pain but…”, or just seem rushed/anxious and eager to please, reluctant to over-explain or share feelings in appointments?
+	- There are several posters/flyers about violence in the practice. How common is that? Why? What happens to those patients who were somehow so deeply aggrieved?
 
 This is the “demand distortion” group: if routine stuff is missing and everything arrives late and hot, your pathway is training people to delay, self-triage badly, or try to sound urgent just to get through the queue they can only imagine has formed ahead of them.
 
