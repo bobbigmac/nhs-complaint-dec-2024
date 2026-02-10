@@ -122,6 +122,8 @@ Even in the best-case scenario (strong, consistent, high quality patient involve
 
 I think this section favours staff control of proceedings, rather than a patient chair. 
 
+I am a reasonable example of this, engaged, but just enough to pay attention, competent but not skilled enough to identify the line between actionable and distraction. If patients can just turn on a firehose of concerns (important and trivial), how can staff resonably respond to that, and separate the issues that do truly matter from noise?
+
 The risks may be for each practice/PPG to decide, and should probably have some coverage in the terms docs that ensure a positive-closing state for issues raised with low value or low coherence (but loud) problems. A recurring warning I suppose "don't overformalise", it risks turning procedure into a wall, or a weapon.
 
 ## Exploration of related issues
