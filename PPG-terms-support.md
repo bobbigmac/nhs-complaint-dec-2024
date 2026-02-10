@@ -12,7 +12,6 @@ Mostly wall of text with some useful information, supports [PPG-terms-review.md]
 - [Staff should probably run meetings](#implementation-notes) - chairing, attendance, action tracking without overformalising, and practice-owned minutes/follow-up.
 - [Access concerns](#accessengagement-concerns) - predictability, multi-channel input, low-tech routes, and default enrolment ideas.
 - [Sources and resources](#supporting-jargon-and-resources) - admin-burden research, regulator guidance, PPG examples, digital exclusion data, and complaints “voice” infrastructure.
-- [Document TODOs](#todos)
 
 
 ### ChatGPT and Noise
