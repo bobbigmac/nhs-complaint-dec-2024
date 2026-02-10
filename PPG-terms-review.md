@@ -96,6 +96,34 @@ If the PPG is the main route to change, it HAS to be as accessible as possible, 
 
 ---
 
+## Democratisation Risks
+
+Even in the best-case scenario (strong, consistent, high quality patient involvement, healthy cycles of feedback and action with staff, greater patient wellbeing, practice growth) a PPG carries some risks worth considering that fall outside the normal practice influences.
+
+- Poltical extremism and intentional interference
+	- Individual practices might/hopefully not see big direct problems, but there is a low-key wave of bureaucratic disruption which might show up in trends across all management company practices.
+	- On trend in the US for the culture war to be fought at the smallest/localest meeting possible, as higher levels become less effective
+- The massive adoption of ChatGPT makes accessing/influencing bureaucracy easier
+	- Mainly (and more effectively) for comfortable socio-economic groups, who can afford access to more knowledgeable/capable models and systems. 
+	- I use it myself and it takes time to learn how to use experience from decades of professional/technical/corpo writing to explore issues thoroughly, and what type of language that similarly professional staff will understand.
+	- Communicate concerns relatively digestibly for the rest of the group is also hard to do well
+		- Not all partipants can be expected to use pre-existing 'meeting' language
+			- Not just tech, but culture massively affects who can even understand why meetings are like this
+		- Some partipants can be well prepared and still be pursuing nonsense
+		- What to do about extensive, but low quality/value feedback? 
+		- Staff shouldn't have to read reams of text (which I know first hand is easy for ChatGPT to produce), that looks like it might have value, but deteriorates into word soup or (you could argue like this document) reaches beyond its scope.
+		- What counts as noise versus constructive signals? 
+	- This affects not just participation, but knowledge. 
+		- ChatGPT and similar tools are genuinely incredible for research (used responsibly)
+		- They are already being used extensively by your patients, systems should probably assume patients (and sometimes staff) are just going to be misinformed in potentially subtle ways.
+			- Some pressure valves might include:
+				- Keeping asks simple, so objectives can be tracked
+				- Keep supporting information on-topic. 
+
+I think this section favours staff control of proceedings, rather than a patient chair. 
+
+The risks may be for each practice/PPG to decide, and should probably have some coverage in the terms docs that ensure a positive-closing state for issues raised with low value or low coherence (but loud) problems. A recurring warning I suppose "don't overformalise", it risks turning procedure into a wall, or a weapon.
+
 ## Exploration of related issues
 
 The following sections were produced largely by AI, then edited manually, but it's still a pretty unfocussed. I've kept it here because many of the concerns raised are valid and do apply here, and the resources near the end are quite useful:
