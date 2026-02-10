@@ -1,19 +1,37 @@
 
 # Patient exclusion at New Bank and GTD
 
-We're exploring how to identify access-based patient exclusion, primarily as a result of a seemingly minor exclusionary step in the practice workflow. 
+Exploring how to check if patients were/are lost, because of a seemingly minor exclusionary step in practice workflow. 
 
-Unscheduled daytime calls, and a digital-only front-door have been a mandatory blocker to appointments for a few years, and included regular closure and deletion of patient-submitted request forms. 
+Unscheduled daytime calls, and a digital-only front-door have been a mandatory blocker to appointments for a few years, and included regular closure or deletion of patient-submitted request forms. 
 
-Admin/management have stated this gap will be fixed/mitigated (currently pending implementation), but should also look into related effects, especially those that drive patients away, or make them choose to get sicker (which is mentioned in several patient reviews). 
+Admin/management have stated this gap will be fixed/mitigated (currently pending implementation), but should check for impacts, especially those that drive patients away, or make them choose to get sicker (which is mentioned in several patient reviews). 
 
-How to identify and reconnect with patients who might/would prefer to be registered/treated here, but simply cannot access care?
+## Quick map
+
+- [Easy staff spot-checks](#easy-staff-spot-checks)
+- [Basic “what can we test?” list](#testable-areas) for easy checks
+- [Urgency pressure might suggest hidden exclusion](#urgency-pressure-inside-the-practice)
+- Check [A&E spillover](#ae-spillover-and-where-did-primary-care-go).
+- [Funnelling and friction is where people fall out](#funnelling-and-friction), missed calls, closures, failed attempts, churn.
+- [Who shows up (and who doesn’t)?](#who-shows-up-who-doesnt-and-whats-missing-in-the-room) to sanity-check whether the patient mix and activity actually resembles the local population.
+- [Signals from silence is about looking for where complaints should be](#signals-from-silence-complaints-and-churn) if complaints are low but you suspect people are simply disappearing, giving up, or registering elsewhere.
 
 ---
 
 ## Testable areas
 
 Some relatively easy to check systems that might identify these groups. If you can answer most of these questions with the answer 'actually, that looks okay' (even with just occasional vibe checks), the scale of the problem might be acceptable. If any one of them raises red flags, you might want to consider expanding access, rather than further formalising it.
+
+### Easy staff spot-checks
+
+Some potential tools for doctors to consider testing exclusion quickly: 
+- “Do I see this same condition a lot for the area?” (some group has easier access)
+- “What conditions did I see/expect a lot at my old practice that I never see here?”
+- “There’s more young/old/struggling/etc patients here” or "I don't think we have many autistic/blind/etc patients" would suggest they can't work with your system.
+- “They’re always asking the same misinformed questions because they all saw the same bad source”
+
+None of these questions prove much alone, and maybe exclusion isn't a critical issue where there is a relatively high 'choice' of practices available (for a debatable value of the word choice), but it's worth smoke-testing who IS at the practice to look for opportunities to reach people who would prefer to be here, but can't make it work with your specific process decisions.
 
 ### Urgency pressure inside the practice
 
@@ -80,14 +98,3 @@ If the patient mix and the kinds of work you do don’t resemble the local popul
 
 This is the “people disappear quietly” group: excluded patients often don’t complain, especially where other practices are accessible, they just churn, give up, or reappear later as crisis care. Low complaints __can__ be a red flag.
 
----
-
-### Quick spot-checks for on-the-ground staff (non-statty)
-
-Some potential tools for doctors to consider testing exclusion quickly: 
-- “Have I seen this same issue a lot today?” (some group has easier access)
-- “What conditions did I see a lot at my old practice that I never see here?”
-- “There’s mainly young patients here”
-- “They’re always asking the same misinformed questions because they all saw the same bad source”
-
-None of these questions prove much alone, and maybe exclusion isn't a critical issue where there is a relatively high 'choice' of practices available (for a debatable value of the word choice), but it's worth smoke-testing who IS at the practice to look for opportunities to reach people who would prefer to be here, but can't make it work with your specific process decisions.

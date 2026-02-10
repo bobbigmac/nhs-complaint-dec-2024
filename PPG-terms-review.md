@@ -2,6 +2,19 @@
 
 This document is in progress. A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and operations.
 
+## Quick map
+
+- [Key questions](#key-questions) what is a PPG supposed to do?, what “success” would look like, and where extra formality starts to quietly exclude the people you most need to hear from.
+- [The ask](#the-ask) is the concrete “what should change in the terms/pack?” section — the short, human version that protects people without turning participation into homework.
+- [Democratisation risks](#democratisation-risks) is the “even with good intentions, this can go sideways” bit: selection bias, process-theatre, and responsibility quietly sliding from staff onto patients.
+- [Exploration of related issues](#exploration-of-related-issues) is the wider context that keeps intruding (access, complaints, staff engagement, and whether patient feedback can realistically turn into action).
+- [How do PPGs usually handle it?](#how-do-ppgs-usually-handle-it) is the practical pattern most groups lean on: keep it about services (not personal cases), keep the rules short, and design confidentiality problems out of the room.
+- [Our vibe/goals](#our-vibegoals) is the gut-check: would a stressed, busy, pissed-off patient still come after reading this, or does it feel like probation?
+- [Cognitive scaffold](#cognitive-scaffold) is the quick mental model for why heavy onboarding creates the wrong membership (and why the “silent” patients you filtered out are often the ones with the sharpest signals).
+- [Implementation Notes](#implementation-notes) is the “ok, what do we actually do next?” section — roles, habits, and small process choices that might make this workable for a small/transient group.
+- [Supporting jargon and sources/references/resources](#supporting-jargon-and-sourcesreferencesresources) is a reference section for terms, links, and background used elsewhere in the doc.
+- [TODOS](#todos) is what’s still open: questions to answer, wording to tighten, and follow-ups to check.
+
 ## Key questions 
 
 **New Bank is already in a better position** than the practice was under the previous operator. The presence of any PPG is better than no form of PPG. There are however some questions to ask as the process develops.
@@ -70,21 +83,27 @@ A formal terms 'pack' might be better used to back-up the PPG, but without being
 	- If patients vanish from the PPG (because there is no incentive beyond practice improvement), how does the PPG expect to know if those people deregistered and went elsewhere (fleeing a sinking ship) rather than became satisfied/hopeless with changes and just stopped asking? 
 		- I'm not sure it's practical to depend on patients to reraise the concerns of other patients, so the workflow has to try and cover that somehow.
 
-TL;DR: PPG asks a lot, promises little; risk of process-theatre; staff habituated to friction; attendance drop; nobody notices or checks
+TL;DR: The PPG terms ask a lot, promises little; risk of process-theatre; staff habituated to friction; attendance drop; nobody notices or checks, no problems get fixed
 
 ## The ask...
 
-TODO: Shorten this section
+A PPG works if it leads to positive changes. So the terms should say not just the meeting protocol, but what the practice will do with feedback: how roles owns issues, what to expect, and some idea of timeline. 
 
-A PPG works if it leads to visible changes. So the terms should say what the practice will do with feedback: who owns each issue, what to expect, and some idea of timeline. The PPG can only expect each patient to raise their own issue once, and often not very clearly. If that issue gets lost, that's a failure to care enough to understand that issue, and find a fix for it.
+The PPG can only expect each patient to raise their own issue once, and often not very clearly. If that issue gets lost, that's a failure point.
 
-Each meeting should at some point review actions taken since the last meeting, and make sure there’s always a staff person with enough authority to get things done (or a written update if they can’t attend). If regular staff can’t show up or act, someone should still be able to run that meeting and chase issues.
+Meetings should at some point review actions taken since the last meeting. Complex logging is probably an uneccesary burden, but staff should be responsible for understanding what is being asked of them, and patients should be able to expect that.
 
-Keep a simple, one-page set of meeting ground rules in plain language (simple to translate a short stable doc), and let people drop in, speak, and submit items without having to “join” or sign a pack first. Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact to help them fix it personally. 
+Practice staff with at least enough authority to action and chase change should be present at any PPG. If regular staff can’t show up or act, someone should still be able to run that meeting and coordinate with the primary as needed.
 
-If you need a way to deal with bad behaviour, keep it short and simple, not at the front door (it's accusative and discouraging, when 99% of the time everything is fine), and make it apply to staff as well as patients: be respectful, don’t blame patients for process problems, try to understand issues across the practice/company and recognise that most people engaging with healthcare are not always (or perhaps usually not) in the best frame of mind. 
+Keep a simple, one-page set of meeting ground rules in plain language (simple to translate a short stable doc), and let people drop in, speak, and submit items without having to “join” or sign a pack first. 
 
-Make it easy to take part, even for people with messy lives. 
+Keep personal and confidential details out of the room by design, and send anyone with an individual case to a named staff contact to help them fix it personally. Patients shouldn't have to sign a confidentiality document to complain to their doctor.
+
+- If you need a way to deal with bad behaviour, keep it short and simple, not a front door blocker. 
+	- It's accusative and discouraging, bordering confrontational, when ~99% of the time everything is fine
+- Make it apply to staff as well as patients: be respectful, don’t blame others, try to understand shared issues, patients have to rely on 'me first' because that's all they see, and recognise that most people engaging with healthcare may not be in the best position to be compliant. 
+
+## Make it easy to take part
 
 Publish dates well in advance, don’t move meetings at the last minute, and offer more than one way to get an item onto the agenda (paper at reception, short form, phone message, not just email and attendance). Right now, nobody beyond the room can see what's in the PPG, so there's no reason to attend, and very little to learn.
 
@@ -103,26 +122,33 @@ Even in the best-case scenario (strong, consistent, high quality patient involve
 - Poltical extremism and intentional interference
 	- Individual practices might/hopefully not see big direct problems, but there is a low-key wave of bureaucratic disruption which might show up in trends across all management company practices.
 	- On trend in the US for the culture war to be fought at the smallest/localest meeting possible, as higher levels become less effective
-- The massive adoption of ChatGPT makes accessing/influencing bureaucracy easier
-	- Mainly (and more effectively) for comfortable socio-economic groups, who can afford access to more knowledgeable/capable models and systems. 
-	- I use it myself and it takes time to learn how to use experience from decades of professional/technical/corpo writing to explore issues thoroughly, and what type of language that similarly professional staff will understand.
-	- Communicate concerns relatively digestibly for the rest of the group is also hard to do well
-		- Not all partipants can be expected to use pre-existing 'meeting' language
-			- Not just tech, but culture massively affects who can even understand why meetings are like this
-		- Some partipants can be well prepared and still be pursuing nonsense
-		- What to do about extensive, but low quality/value feedback? 
-		- Staff shouldn't have to read reams of text (which I know first hand is easy for ChatGPT to produce), that looks like it might have value, but deteriorates into word soup or (you could argue like this document) reaches beyond its scope.
-		- What counts as noise versus constructive signals? 
-	- This affects not just participation, but knowledge. 
-		- ChatGPT and similar tools are genuinely incredible for research (used responsibly)
-		- They are already being used extensively by your patients, systems should probably assume patients (and sometimes staff) are just going to be misinformed in potentially subtle ways.
-			- Some pressure valves might include:
-				- Keeping asks simple, so objectives can be tracked
-				- Keep supporting information on-topic. 
+
+
+### ChatGPT and Noise
+
+The massive adoption of ChatGPT makes accessing/influencing bureaucracy easier
+
+- Mainly (and more effectively) for comfortable socio-economic groups, who can afford access to more knowledgeable/capable models and systems. 
+- I use it myself and it takes time to learn how to use experience from decades of professional/technical/corpo writing to explore issues thoroughly, and what type of language that similarly professional staff will understand.
+- Communicate concerns relatively digestibly for the rest of the group is also hard to do well
+	- Not all partipants can be expected to use pre-existing 'meeting' language
+		- Not just tech, but culture massively affects who can even understand why meetings are like this
+	- Some partipants can be well prepared and still be pursuing nonsense
+	- What to do about extensive, but low quality/value feedback? 
+	- Staff shouldn't have to read reams of text (which I know first hand is easy for ChatGPT to produce), that looks like it might have value, but deteriorates into word soup or (you could argue like this document) reaches beyond its scope.
+	- What counts as noise versus constructive signals? 
+- This affects not just participation, but access to knowledge. 
+	- ChatGPT and similar tools are genuinely incredible for research (used responsibly)
+	- They are already being used extensively by your patients, systems should probably assume patients (and sometimes staff) are just going to be misinformed in potentially subtle ways.
+		- Some pressure valves might include:
+			- Keeping asks simple, so objectives can be tracked
+			- Keep supporting information on-topic. 
 
 I think this section favours staff control of proceedings, rather than a patient chair. 
 
-I am a reasonable example of this, engaged, but just enough to pay attention, competent but not skilled enough to identify the line between actionable and distraction. If patients can just turn on a firehose of concerns (important and trivial), how can staff resonably respond to that, and separate the issues that do truly matter from noise?
+I am a reasonable example of this, engaged, but just enough to pay attention, competent but not skilled enough to identify the line between actionable and potential distraction. 
+
+If patients can just turn on a firehose of concerns (important and trivial), how can staff reasonably respond to that, and separate the issues that do truly matter from noise without wasting time?
 
 The risks may be for each practice/PPG to decide, and should probably have some coverage in the terms docs that ensure a positive-closing state for issues raised with low value or low coherence (but loud) problems. A recurring warning I suppose "don't overformalise", it risks turning procedure into a wall, or a weapon.
 
@@ -187,11 +213,13 @@ I need to look into who should chair this. As a patient, I think that staff shou
 
 4. If management wants “a way to remove someone”, it should be minimal, a warning, request to leave, but it should also be recognised as unlikely. Positive wording should be clear but firm, a little tough, but it definitely should not waffle or patient-blame before meetings have even started.
 
-### Our vibe/goals:
+### Our vibe/goals (repetition):
 
 If you want patients to engage, make it easy to turn up and speak. Don’t make them do admin homework first. Keep confidential information out of the room. Keep the rules short and human. Anything else selects for people with time, confidence, and patience, and you lose the voices you actually need.
 
 Governance should protect the group from rare disasters without making the ordinary experience feel like probation. The test is simple: would a stressed, busy, pissed-off patient still come if they saw this pack? If the answer is “probably not”, the pack is doing harm.
+
+A side effect of encouraging low-engagement patients, is having voices to mitigate/balance non-issues ("it's fine for me" doesn't say change nothing, but does suggest making changes carefully)
 
 ---
 
@@ -250,7 +278,7 @@ Governance should protect the group from rare disasters without making the ordin
 * an action log would be nice, but please don't overformalise, internal notes between responsible staff to action solutions are probably fine 99% of the time, the practice staff should be able to manage it themselves with whatever tools they prefer. It doesn't need to be outside accessible (although there are some interesting tools for that kind of thing if you did want to 'level up' community support).
 * Integrate PPG outcomes with the practice Newsletter, distribute to PPG members, and printed in the waiting room, with a link to the web version or to signup.
 
-Some access/engagement concerns:
+### Access/engagement concerns:
 
 * Accessibility isn’t just “remote option”: it’s predictability + multiple ways in.
   * publish the whole year’s dates, don’t move them last-minute unless unavoidable (we’ve already seen what that does)
@@ -268,7 +296,9 @@ Some access/engagement concerns:
 
 ---
 
-## Supporting jargon and sources/references/resources
+## Supporting jargon and resources
+
+ - TODO: This section can probably be removed, or at least moved to an evidence pack, but has some good points that should be integrated properly.
 
 Inside the org, a terms sheet / confidentiality agreement / code of conduct looks like basic governance: reduce risk, prevent one nightmare scenario, make decision-making legible if something goes wrong. Outside the org, it reads as pre-emptive suspicion: you’re being asked to do homework and accept sanctions before you’ve even been heard. That mismatch is a real part of why people disengage, and it stacks with every other small hurdle (forms, phone queues, “do it online”, gatekeeping scripts). The burden isn’t just time; it’s the learning cost (figuring out what the hell the process is), the compliance cost (doing it), and the psychological cost (feeling like a nuisance / troublemaker). The “administrative burden” literature treats those three costs as a core mechanism by which public services quietly ration access. [Health care administrative burdens: Centering patient experiences](https://pmc.ncbi.nlm.nih.gov/articles/PMC8522557/) ([PMC][1])
 
