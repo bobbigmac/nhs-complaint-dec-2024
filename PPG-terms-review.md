@@ -2,23 +2,24 @@
 
 This document is in progress. A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and operations.
 
+Its key conclusion is probably that making access harder, makes effective action less likely. A healthy PPG is one that can still fix problems even if every meeting has different participants.
+
 ## Quick map
 
-- [What the PPG is for, what success looks like, and trade-offs for “process”.](#key-questions)  
-- [Stricter onboarding can become exclusion, and how a shrinking/fragile group is an early warning sign.](#concerns)  
-- [Changes that might improve the terms](#the-ask) - ownership, follow-through, drop-in participation, and confidentiality designed out
-- [Access basics](#make-it-easy-to-take-part) - predictable dates, multiple routes to contribute, no quiet expiry, and visible post-meeting updates
-- [Wider risks](#democratisation-risks) - small-scale political interference and governance being gamed, and well-meaning but disruptive noise
-- [ChatGPT vs systems](#chatgpt-and-noise) - how ChatGPT-style tools can amplify confidence and volume, widen socio-economic gaps and struggle with noise-versus-signal
+- [What is the PPG for? what does success look like?](#key-questions)  
+- [Stricter onboarding can become exclusion](#concerns) - a shrinking/fragile group is an early warning sign
+- [Potential PPG goals](#the-ask) - ownership, follow-through, drop-in participation, and confidentiality designed out
+- [Access basics, make it easy](#make-it-easy-to-take-part) - predictable dates, multiple routes to contribute, no quiet expiry, better visibility
+- [Democratisation risks](#democratisation-risks) - interference and potential noise, well-meaning but unhelpful
+- [ChatGPT vs systems](#chatgpt-and-noise) - ChatGPT helps access, for some, hurts coherence
 
-- [Related issues](#exploration-of-related-issues) - Paperwork feels normal to staff but reads as gatekeeping/futility to patients with limited capacity.
-	- Getting into rambling wall of text territory, will split to own document on review
-- [How PPGs handle complex issues already](#how-do-ppgs-usually-handle-it)   
+- [Related issues](#exploration-of-related-issues) - Paperwork normal for staff gatekeeping for patients. Mostly waffle, TODO summarise.
+- [How PPGs respond already](#how-do-ppgs-usually-handle-it)   
 - [Spurious thoughts](#cognitive-scaffold) -  selection bias, power imbalance, information asymmetry, scope creep, safeguarding, and escalation paths
-- [Patients may not be best choice to 'run' meetings](#implementation-notes) - chairing, attendance, action tracking without overformalising, and practice-owned minutes/follow-up.
+- [Staff should probably run meetings](#implementation-notes) - chairing, attendance, action tracking without overformalising, and practice-owned minutes/follow-up.
 - [Access concerns](#accessengagement-concerns) - predictability, multi-channel input, low-tech routes, and default enrolment ideas.
-- [Provides the evidence/guidance pack behind the arguments](#supporting-jargon-and-resources) - admin-burden research, regulator guidance, PPG examples, digital exclusion data, and complaints “voice” infrastructure.
-- [TODOs](#todos) - contradictions to reconcile, repetition to remove, tone to soften, and open questions to answer
+- [Sources and resources](#supporting-jargon-and-resources) - admin-burden research, regulator guidance, PPG examples, digital exclusion data, and complaints “voice” infrastructure.
+- [Document TODOs](#todos)
 
 ## Key questions 
 
