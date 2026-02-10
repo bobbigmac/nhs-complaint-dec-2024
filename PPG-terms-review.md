@@ -309,7 +309,9 @@ A side effect of encouraging low-engagement patients, is having voices to mitiga
 
 ## Supporting jargon and resources
 
- - TODO: This section can probably be removed, or at least moved to an evidence pack, but has some good points that should be integrated properly.
+```diff
+- TODO: This section can probably be removed, or at least moved to an evidence pack, but has some good points that should be integrated properly.
+```
 
 Inside the org, a terms sheet / confidentiality agreement / code of conduct looks like basic governance: reduce risk, prevent one nightmare scenario, make decision-making legible if something goes wrong. Outside the org, it reads as pre-emptive suspicion: you’re being asked to do homework and accept sanctions before you’ve even been heard. That mismatch is a real part of why people disengage, and it stacks with every other small hurdle (forms, phone queues, “do it online”, gatekeeping scripts). The burden isn’t just time; it’s the learning cost (figuring out what the hell the process is), the compliance cost (doing it), and the psychological cost (feeling like a nuisance / troublemaker). The “administrative burden” literature treats those three costs as a core mechanism by which public services quietly ration access. [Health care administrative burdens: Centering patient experiences](https://pmc.ncbi.nlm.nih.gov/articles/PMC8522557/) ([PMC][1])
 
