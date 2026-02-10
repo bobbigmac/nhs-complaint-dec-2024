@@ -143,6 +143,7 @@ The massive adoption of ChatGPT makes accessing/influencing bureaucracy easier
 	- What to do about extensive, but low quality/value feedback? 
 	- Staff shouldn't have to read reams of text (which I know first hand is easy for ChatGPT to produce), that looks like it might have value, but deteriorates into word soup or (you could argue like this document) reaches beyond its scope.
 	- What counts as noise versus constructive signals? 
+	- How to avoid 'wild goose' chases? 
 - This affects not just participation, but access to knowledge. 
 	- ChatGPT and similar tools are genuinely incredible for research (used responsibly)
 	- They are already being used extensively by your patients, systems should probably assume patients (and sometimes staff) are just going to be misinformed in potentially subtle ways.
