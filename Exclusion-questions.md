@@ -56,7 +56,7 @@ How many people ask for help and never reach a two-way interaction, plus how muc
 
 ### Who shows up, who doesn’t, and what’s missing in the room
 
-* Is the makeup of the waiting room the same as the people passing outside (who are here anyway)? What about people who aren’t passing outside because they’re somewhere else, working most likely — who are they, and why aren’t they here? Are they 'on the books' at all?
+* Is the makeup of the waiting room the same as the people passing outside (who are here anyway)? What about people who aren’t passing outside because they’re somewhere else... who are they, and why aren’t they here? Are they 'on the books' at all?
 * Are requests for a translator, signer, and further service types around average? If not, where are your deaf or foreign speakers.
 * How are completed types of tests different here to other practices? If you run 30% more (or less) of one type of test than a similar practice, what does that say about who is able to attend? If you never run tests that would be common for your region (lots of students → relatively high sexual health enquiries; young people → mental health issues).
 * The website supports carers having some admin access on behalf of patients, but are carers being lost to missed calls and office-hours-only website too? Are rates of part/full-time-care patients about average, or are carers registering them elsewhere? 
