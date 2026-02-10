@@ -62,7 +62,8 @@ How many people ask for help and never reach a two-way interaction, plus how muc
 * Is the makeup of the waiting room the same as the people passing outside (who are here anyway)? What about people who aren’t passing outside because they’re somewhere else... who are they, and why aren’t they here? Are they 'on the books' at all?
 * Are requests for a translator, signer, and further service types around average? If not, where are your deaf or foreign speakers.
 * How are completed types of tests different here to other practices? If you run 30% more (or less) of one type of test than a similar practice, what does that say about who is able to attend? If you never run tests that would be common for your region (lots of students → relatively high sexual health enquiries; young people → mental health issues).
-* The website supports carers having some admin access on behalf of patients, but are carers being lost to missed calls and office-hours-only website too? Are rates of part/full-time-care patients about average, or are carers registering them elsewhere? 
+* The website supports carers having some admin access on behalf of patients, but are carers being lost to missed calls and office-hours-only appointment requests too? Are rates of part/full-time-care patients about average, or are carers registering them elsewhere? 
+	- Carer submits, patient is called? or is carer called? Is form clear about this?
 * Why is the waiting room never full? [subjective, my own experience] You wouldn’t expect it to be rammed constantly, but occasional backlogs are normal; If it’s almost always empty, it looks “efficient”, but utilisation might show actual throughput.
 
 If the patient mix and the kinds of work you do don’t resemble the local population, there might be a filter. “Empty waiting room” isn’t a win by itself; it can just mean suppressed demand. This is a highly visible practice with a lot of passing foot traffic, with very strong demand. The waiting room should reflect that unless you can prove the system is so efficient that it's just running smoothly.
@@ -74,7 +75,7 @@ If the patient mix and the kinds of work you do don’t resemble the local popul
 * What *is* the complaints process at this practice since the takeover?
 * What complaints are there a lot (if any), and if none why not? 
 * What complaints are *not* there because it would seem pointless to complain about if nothing would change? 
-* How many complaints does this practice recieve, and how are they usually resolved? 
+* How many complaints does this practice receive, and how are they usually resolved? 
 * Simply how long do patients stay registered here? Is that about as long as people typically live in the area?
 
 This is the “people disappear quietly” group: excluded patients often don’t complain, especially where other practices are accessible, they just churn, give up, or reappear later as crisis care. Low complaints __can__ be a red flag.
@@ -89,4 +90,4 @@ Some potential tools for doctors to consider testing exclusion quickly:
 - “There’s mainly young patients here”
 - “They’re always asking the same misinformed questions because they all saw the same bad source”
 
-None of these questions prove much alone, and maybe exlusion isn't a critical issue where there is a relatively high 'choice' of practices available (for a debatable value of the word choice), but it's worth smoke-testing who IS at the practice to look for opportunities to reach people who would prefer to be here, but can't make it work with your specific process decisions.
+None of these questions prove much alone, and maybe exclusion isn't a critical issue where there is a relatively high 'choice' of practices available (for a debatable value of the word choice), but it's worth smoke-testing who IS at the practice to look for opportunities to reach people who would prefer to be here, but can't make it work with your specific process decisions.
