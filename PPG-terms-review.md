@@ -7,7 +7,7 @@ Its key conclusion is probably that making access harder, makes effective action
 ## Quick map
 
 - [What is the PPG for? what does success look like?](#key-questions)  
-- [Stricter onboarding can become exclusion](#concerns) - a shrinking/fragile group is an early warning sign
+- [Concerns about stricter onboarding causing exclusion](#concerns) - a shrinking/fragile group is an early warning sign
 - [Potential PPG goals](#the-ask) - ownership, follow-through, drop-in participation, and confidentiality designed out
 - [Access basics, make it easy](#make-it-easy-to-take-part) - predictable dates, multiple routes to contribute, no quiet expiry, better visibility
 - [Democratisation risks](#democratisation-risks) - interference and potential noise, well-meaning but unhelpful
