@@ -17,7 +17,9 @@ Its key conclusion is probably that making access harder, makes effective action
 
 ## Key questions 
 
-**New Bank is already in a better position** than the practice was under the previous operator. The presence of any PPG is better than no form of PPG. There are however some questions to ask as the process develops.
+**New Bank is already in a better position** than the practice was under the previous operator. 
+
+The presence of any PPG is **probably** better than no form of PPG, but there are questions to ask as the process develops to ensure it promotes positive change, and doesn't hide/block needs behind more, and harder to follow, protocol.
 
 - How much admin burden is too much for patients?
 	- Is this affected by deprivation and transience?
