@@ -1,4 +1,5 @@
 # PPG Terms review
+> Written by Bob Davies for New Bank PPG
 
 A review of the updated PPG terms documentation, and discussion/exploration of PPG objectives and operations.
 
@@ -128,7 +129,3 @@ Even in the best-case scenario (strong, consistent, high quality patient involve
 	- [ChatGPT effects](./PPG-terms-support.md#chatgpt-and-noise) are discussed in the support material
 
 [PPG-terms-support.md contains further exploration](./PPG-terms-support.md), mostly through lists of simple ideas. Contains some useful POVs, but is probably too noisy to keep in the overview.
-
-## TODO:
-
-Some waffley points could be moved to the support doc
