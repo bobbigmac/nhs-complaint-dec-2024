@@ -50,7 +50,7 @@ If these look high, it’s hard to argue the access route is merely “inconveni
 	- Total non-admin form submissions per year divided by patients attended
 	- Might be hard to filter, not sure if "patient needs appointment" is logged distinct from "patient asked for appointment" because of closures/deletions.
 
-This group makes exclusion countable without getting clever: how many people ask for help and never reach a two-way interaction, plus how much repeat-attempt churn the system creates before one appointment actually happens.
+How many people ask for help and never reach a two-way interaction, plus how much repeat-attempt churn the system creates before one appointment actually happens.
 
 ---
 
