@@ -4,16 +4,21 @@ This document is in progress. A review of the updated PPG terms documentation, a
 
 ## Quick map
 
-- [Key questions](#key-questions) what is a PPG supposed to do?, what “success” would look like, and where extra formality starts to quietly exclude the people you most need to hear from.
-- [The ask](#the-ask) is the concrete “what should change in the terms/pack?” section — the short, human version that protects people without turning participation into homework.
-- [Democratisation risks](#democratisation-risks) is the “even with good intentions, this can go sideways” bit: selection bias, process-theatre, and responsibility quietly sliding from staff onto patients.
-- [Exploration of related issues](#exploration-of-related-issues) is the wider context that keeps intruding (access, complaints, staff engagement, and whether patient feedback can realistically turn into action).
-- [How do PPGs usually handle it?](#how-do-ppgs-usually-handle-it) is the practical pattern most groups lean on: keep it about services (not personal cases), keep the rules short, and design confidentiality problems out of the room.
-- [Our vibe/goals](#our-vibegoals) is the gut-check: would a stressed, busy, pissed-off patient still come after reading this, or does it feel like probation?
-- [Cognitive scaffold](#cognitive-scaffold) is the quick mental model for why heavy onboarding creates the wrong membership (and why the “silent” patients you filtered out are often the ones with the sharpest signals).
-- [Implementation Notes](#implementation-notes) is the “ok, what do we actually do next?” section — roles, habits, and small process choices that might make this workable for a small/transient group.
-- [Supporting jargon and sources/references/resources](#supporting-jargon-and-sourcesreferencesresources) is a reference section for terms, links, and background used elsewhere in the doc.
-- [TODOS](#todos) is what’s still open: questions to answer, wording to tighten, and follow-ups to check.
+- [What the PPG is for, what success looks like, and trade-offs for “process”.](#key-questions)  
+- [Stricter onboarding can become exclusion, and how a shrinking/fragile group is an early warning sign.](#concerns)  
+- [Changes that might improve the terms](#the-ask) - ownership, follow-through, drop-in participation, and confidentiality designed out
+- [Access basics](#make-it-easy-to-take-part) - predictable dates, multiple routes to contribute, no quiet expiry, and visible post-meeting updates
+- [Wider risks](#democratisation-risks) - small-scale political interference and governance being gamed, and well-meaning but disruptive noise
+- [ChatGPT vs systems](#chatgpt-and-noise) - how ChatGPT-style tools can amplify confidence and volume, widen socio-economic gaps and struggle with noise-versus-signal
+
+- [Related issues](#exploration-of-related-issues) - Paperwork feels normal to staff but reads as gatekeeping/futility to patients with limited capacity.
+	- Getting into rambling wall of text territory, will split to own document on review
+- [How PPGs handle complex issues already](#how-do-ppgs-usually-handle-it)   
+- [Spurious thoughts](#cognitive-scaffold) -  selection bias, power imbalance, information asymmetry, scope creep, safeguarding, and escalation paths
+- [Patients may not be best choice to 'run' meetings](#implementation-notes) - chairing, attendance, action tracking without overformalising, and practice-owned minutes/follow-up.
+- [Access concerns](#accessengagement-concerns) - predictability, multi-channel input, low-tech routes, and default enrolment ideas.
+- [Provides the evidence/guidance pack behind the arguments](#supporting-jargon-and-resources) - admin-burden research, regulator guidance, PPG examples, digital exclusion data, and complaints “voice” infrastructure.
+- [TODOs](#todos) - contradictions to reconcile, repetition to remove, tone to soften, and open questions to answer
 
 ## Key questions 
 
@@ -154,7 +159,13 @@ The risks may be for each practice/PPG to decide, and should probably have some 
 
 ## Exploration of related issues
 
-The following sections were produced largely by AI, then edited manually, but it's still a pretty unfocussed. I've kept it here because many of the concerns raised are valid and do apply here, and the resources near the end are quite useful:
+<div style="border: 2px solid #c00; background: #fee; padding: 1em; border-radius: 6px; color: #a00;">
+
+**Note:**  
+The following sections were initially drafted with the assistance of AI tools and then revised by hand. While the focus may wander at times, many of the points raised are relevant, and the resources listed toward the end may be particularly helpful.
+
+</div>
+
 
 ---
 
@@ -213,14 +224,6 @@ I need to look into who should chair this. As a patient, I think that staff shou
 
 4. If management wants “a way to remove someone”, it should be minimal, a warning, request to leave, but it should also be recognised as unlikely. Positive wording should be clear but firm, a little tough, but it definitely should not waffle or patient-blame before meetings have even started.
 
-### Our vibe/goals (repetition):
-
-If you want patients to engage, make it easy to turn up and speak. Don’t make them do admin homework first. Keep confidential information out of the room. Keep the rules short and human. Anything else selects for people with time, confidence, and patience, and you lose the voices you actually need.
-
-Governance should protect the group from rare disasters without making the ordinary experience feel like probation. The test is simple: would a stressed, busy, pissed-off patient still come if they saw this pack? If the answer is “probably not”, the pack is doing harm.
-
-A side effect of encouraging low-engagement patients, is having voices to mitigate/balance non-issues ("it's fine for me" doesn't say change nothing, but does suggest making changes carefully)
-
 ---
 
 ## Cognitive scaffold
@@ -277,6 +280,12 @@ A side effect of encouraging low-engagement patients, is having voices to mitiga
 * meetings might benefit from a brief 'since the last meeting we did... and we learned...' section
 * an action log would be nice, but please don't overformalise, internal notes between responsible staff to action solutions are probably fine 99% of the time, the practice staff should be able to manage it themselves with whatever tools they prefer. It doesn't need to be outside accessible (although there are some interesting tools for that kind of thing if you did want to 'level up' community support).
 * Integrate PPG outcomes with the practice Newsletter, distribute to PPG members, and printed in the waiting room, with a link to the web version or to signup.
+
+If you want patients to engage, make it easy to turn up and speak. Don’t make them do admin homework first. Keep confidential information out of the room. Keep the rules short and human. Anything else selects for people with time, confidence, and patience, and you lose the voices you actually need.
+
+Governance should protect the group from rare disasters without making the ordinary experience feel like probation. The test is simple: would a stressed, busy, pissed-off patient still come if they saw this pack? If the answer is “probably not”, the pack is doing harm.
+
+A side effect of encouraging low-engagement patients, is having voices to mitigate/balance non-issues ("it's fine for me" doesn't say change nothing, but does suggest making changes carefully)
 
 ### Access/engagement concerns:
 

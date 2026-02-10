@@ -10,11 +10,11 @@ Admin/management have stated this gap will be fixed/mitigated (currently pending
 ## Quick map
 
 - [Easy staff spot-checks](#easy-staff-spot-checks)
-- [Basic “what can we test?” list](#testable-areas) for easy checks
+- [Basic “what can we probably test?” list](#testable-areas)
 - [Urgency pressure might suggest hidden exclusion](#urgency-pressure-inside-the-practice)
 - Check [A&E spillover](#ae-spillover-and-where-did-primary-care-go).
 - [Funnelling and friction is where people fall out](#funnelling-and-friction), missed calls, closures, failed attempts, churn.
-- [Who shows up (and who doesn’t)?](#who-shows-up-who-doesnt-and-whats-missing-in-the-room) to sanity-check whether the patient mix and activity actually resembles the local population.
+- [Who shows up (and who doesn’t)?](#who-shows-up-who-doesnt) to sanity-check whether the patient mix and activity actually resembles the local population.
 - [Signals from silence is about looking for where complaints should be](#signals-from-silence-complaints-and-churn) if complaints are low but you suspect people are simply disappearing, giving up, or registering elsewhere.
 
 ---
@@ -75,7 +75,7 @@ How many people ask for help and never reach a two-way interaction, plus how muc
 
 ---
 
-### Who shows up, who doesn’t, and what’s missing in the room
+### Who shows up, who doesn’t
 
 * Is the makeup of the waiting room the same as the people passing outside (who are here anyway)? What about people who aren’t passing outside because they’re somewhere else... who are they, and why aren’t they here? Are they 'on the books' at all?
 * Are requests for a translator, signer, and further service types around average? If not, where are your deaf or foreign speakers.
