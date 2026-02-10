@@ -21,6 +21,7 @@ Its key conclusion is probably that making access harder, makes effective action
 
 - How much admin burden is too much for patients?
 	- Is this affected by deprivation and transience?
+	- Could this meeting have been an email?
 - What is the objective of the PPG?
 	- Improve the practice by changing policy?
 	- If for informing patients, this affects few patients.
