@@ -1,6 +1,8 @@
 
 # Patient exclusion at New Bank and GTD
 
+TODO: Still have a little repetition to rewrite out
+
 We're exploring how to identify access-based patient exclusion, primarily as a result of a seemingly minor exclusionary step in the practice workflow. 
 
 Unscheduled daytime calls, and a digital-only front-door have been a mandatory blocker to appointments for a few years, and included regular closure and deletion of patient-submitted request forms. 
