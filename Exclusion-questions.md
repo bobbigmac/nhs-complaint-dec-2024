@@ -1,8 +1,6 @@
 
 # Patient exclusion at New Bank and GTD
 
-TODO: Still have a little repetition to rewrite out
-
 We're exploring how to identify access-based patient exclusion, primarily as a result of a seemingly minor exclusionary step in the practice workflow. 
 
 Unscheduled daytime calls, and a digital-only front-door have been a mandatory blocker to appointments for a few years, and included regular closure and deletion of patient-submitted request forms. 
@@ -24,6 +22,8 @@ Some relatively easy to check systems that might identify these groups. If you c
 * Are doctors seeing a lot of urgency (massive red flag) where they should be seeing easy-to-fix regular issues?
 * Patients are often guilt-tripped (unintentionally, mostly) into not making appointments for seemingly low-importance issues (not the fault of the practice) and may postpone care if they’re always told the NHS is 'under pressure' (“I don’t want to pressure them, *cough cough*”). 
 	- Do patients say “I know you’re busy but…”, “I don’t want to be a pain but…”, or just seem rushed/anxious in appointments?
+	
+TODO: Still have a little repetition to rewrite out
 
 This is the “demand distortion” group: if routine stuff is missing and everything arrives late and hot, your pathway is training people to delay, self-triage badly, or try to sound urgent just to get through the queue they can only imagine has formed ahead of them.
 
