@@ -148,7 +148,7 @@ The massive adoption of ChatGPT makes accessing/influencing bureaucracy easier
 	- ChatGPT and similar tools are genuinely incredible for research (used responsibly)
 	- They are already being used extensively by your patients, systems should probably assume patients (and sometimes staff) are just going to be misinformed in potentially subtle ways.
 		- Some pressure valves might include:
-			- Keeping asks simple, so objectives can be tracked
+			- Keeping tasks simple/portable/self-contained, so objectives can be tracked
 			- Keep supporting information on-topic. 
 
 I think this section favours staff control of proceedings, rather than a patient chair. 
