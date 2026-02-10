@@ -28,7 +28,7 @@ The presence of any PPG is **probably** better than no form of PPG, but there ar
 	- Improve the practice by changing policy?
 	- If for informing patients, this affects few patients.
 - How well the system should tolerate noncompliance to satisfy access?
-	- Should avoid over-formalising unknowns
+	- Should avoid over-formalising unknowns, you can't plan for every outcome
 - How maintainable are small/transient/disengaged PPGs long term?
 - Does formalised but low-change process-theatre exclude real complaints/complainants?
 	- Does "I told them they could signup for the PPG" replace or support per-issue/per-patient action?
