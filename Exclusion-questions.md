@@ -46,7 +46,9 @@ If these look high, it’s hard to argue the access route is merely “inconveni
 	- That could suggest **~49% of attempted appointments fail** 
 		- 2 missed calls lead to closure, except if flagged urgent by the triaging doctor (staff report, unknown mechanism)
 		- Reception do not fully read the submitted text for every person they try to contact, there may be further losses here from dropped urgent requests, is there a check for these?
-* Is “closed without contact” the right name of this metric inside NHS systems? Or what is it called in New Bank/GTD?
+* Is “closed without contact” the right name of this metric inside NHS systems? 
+	- What is it called in New Bank/GTD?
+	- How many requests are second/third attempts by the same patient within 7/14 days?
 * [stats] How many requests do patients submit before seeing a doctor? 
 	- Total non-admin form submissions per year divided by patients attended
 	- Might be hard to filter, not sure if "patient needs appointment" is logged distinct from "patient asked for appointment" because of closures/deletions.
