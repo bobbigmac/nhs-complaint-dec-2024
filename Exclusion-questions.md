@@ -43,7 +43,7 @@ If these look high, it’s hard to argue the access route is merely “inconveni
 
 * What percentage of website submissions that are invited to make an appointment do not result in an appointment?
 	- Practice staff stated “70% of first phone calls are missed” but didn’t state for second phone calls; if it’s also ~70% (because conditions only changed slightly), 
-	- That would suggest **~49% of contact attempts fail**
+	- That could suggest **~49% of attempted appointments fail** 
 		- 2 missed calls lead to closure, except if flagged by the triaging doctor as urgent
 		- Reception do not fully read the submitted text for every person they try to contact, there may be further losses here from dropped urgent requests, is there a check for these?
 * Is “closed without contact” the right name of this metric inside NHS systems? Or what is it called in New Bank/GTD?
