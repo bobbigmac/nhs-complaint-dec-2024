@@ -60,7 +60,7 @@ How many people ask for help and never reach a two-way interaction, plus how muc
 * Are requests for a translator, signer, and further service types around average? If not, where are your deaf or foreign speakers.
 * How are completed types of tests different here to other practices? If you run 30% more (or less) of one type of test than a similar practice, what does that say about who is able to attend? If you never run tests that would be common for your region (lots of students → relatively high sexual health enquiries; young people → mental health issues).
 * The website supports carers having some admin access on behalf of patients, but are carers being lost to missed calls and office-hours-only website too? Are rates of part/full-time-care patients about average, or are carers registering them elsewhere? 
-* Why is the waiting room never full? You wouldn’t expect it to be rammed constantly, but occasional backlogs are normal; If it’s almost always empty, it looks “efficient”, but utilisation might show actual throughput.
+* Why is the waiting room never full? [subjective, my own experience] You wouldn’t expect it to be rammed constantly, but occasional backlogs are normal; If it’s almost always empty, it looks “efficient”, but utilisation might show actual throughput.
 
 If the patient mix and the kinds of work you do don’t resemble the local population, there might be a filter. “Empty waiting room” isn’t a win by itself; it can just mean suppressed demand. This is a highly visible practice with a lot of passing foot traffic, with very strong demand. The waiting room should reflect that unless you can prove the system is so efficient that it's just running smoothly.
 
