@@ -1,6 +1,8 @@
 
 # Patient exclusion at New Bank and GTD
 
+> Is just changing the process enough, or did we lose people already?
+
 Exploring how to check if patients were/are lost, because of a seemingly minor exclusionary step in practice workflow. 
 
 Unscheduled daytime calls, and a digital-only front-door have been a mandatory blocker to appointments for a few years, and included regular closure or deletion of patient-submitted request forms. 
