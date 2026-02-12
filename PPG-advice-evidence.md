@@ -26,54 +26,54 @@ Ineffective PPGs usually do the inverse:
 ## Best practices that maximise engagement, target positive change, and don’t drown everyone in paperwork
 
 * Keep the structure light by default
-  Healthy core group + wider “virtual” cohort. Meet when there’s something worth deciding; do the rest async. [^1][^5][^6]
+  - Healthy core group + wider “virtual” cohort. Meet when there’s something worth deciding; do the rest async. [^1][^5][^6]
 
 * Separate three main lanes and don’t let them blur
-  **Complaints** (formal, individual). **Feedback** (themes, patterns). **Co-design** (working on specific changes, practice/management workflow). [^10][^2]
+  - **Complaints** (formal, individual). **Feedback** (themes, patterns). **Co-design** (working on specific changes, practice/management workflow). [^10][^2]
 
 * Use a single action log as the backbone
-  One page: issue, desired outcome, owner, next step, date, status, constraint. [^6][^3][^7]
+  - One page: issue, desired outcome, owner, next step, date, status, constraint. [^6][^3][^7]
 
 * Make participation cheap
-  ~5 minute surveys, two or three questions, plain language, translated where possible/needed, and a non-digital route. [^5][^7][^16]
+  - ~5 minute surveys, two or three questions, plain language, translated where possible/needed, and a non-digital route. [^5][^7][^16]
 
 * Recruit by asking the right way, in the right places
-  Targeted invites to people who actually hit the workflow (recent callers, online users, carers). Rotate times. Don’t rely on posters/website alone. [^2][^7][^16]
+  - Targeted invites to people who actually hit the workflow (recent callers, online users, carers). Rotate times. Don’t rely on posters/website alone. [^2][^7][^16]
 
 * Don’t pretend the core is representative
-  Say what it is: a small group that helps frame questions, then you consult wider. [^3][^4][^15]
+  - Say what it is: a small group that helps frame questions, then you consult wider. [^3][^4][^15]
 
 * Pick problems that are real and bounded
-  “Fix access” is too big. “Reduce dropped calls at 8am”, “remove a dead-end message tree”, “stop excluding people without smartphones” is workable. [^16][^17][^3]
+  - “Fix access” is too big. “Reduce dropped calls at 8am”, “remove a dead-end message tree”, “stop excluding people without smartphones” is workable. [^16][^17][^3]
 
 * Define “done” for each change
-  A change is done when patients can reliably use it, not when it’s agreed. Build in a lightweight verification step (follow-up pulse, walk-through, spot check). [^3][^11][^6]
+  - A change is done when patients can reliably use it, not when it’s agreed. Build in a lightweight verification step (follow-up pulse, walk-through, spot check). [^3][^11][^6]
 
 * Build in accountability to the parent company when relevant
-  If a management company controls systems, get a named liaison and a decision timetable; otherwise you’re negotiating with a proxy. [^2][^3]
+  - If a management company controls systems, get a named liaison and a decision timetable; otherwise you’re negotiating with a proxy. [^2][^3]
 
 * Publish outcomes where patients actually encounter them
-  Reception screens, SMS link after contact, a short “what changed” update, and a persistent page with the running log. [^2][^6][^1]
+  - Reception screens, SMS link after contact, a short “what changed” update, and a persistent page with the running log. [^2][^6][^1]
 
 * Treat engagement as continuous sampling, not permanent membership
-  You don’t need the same patients forever. You need a steady stream of input from different patient types. [^3][^5][^7]
+  - You don’t need the same patients forever. You need a steady stream of input from different patient types. [^3][^5][^7]
 
 * Use facilitation when the topic is hot or power-skewed
-  Not forever; just when it prevents meetings becoming performative or adversarial, and helps decisions land. [^3][^12]
+  - Not forever; just when it prevents meetings becoming performative or adversarial, and helps decisions land. [^3][^12]
 
 * Be explicit about constraints without hiding behind them
-  If capacity is the constraint, say what trade-off is being made and what’s still possible. Patients can handle reality better than vagueness. [^18][^14][^3]
+  - If capacity is the constraint, say what trade-off is being made and what’s still possible. Patients can handle reality better than vagueness. [^18][^14][^3]
 
 * Protect staff time by narrowing the interface
-  One staff sponsor + one clinician sponsor for clinical/triage topics. Don’t make every GP “attend the PPG”. [^6][^18][^2]
+  - One staff sponsor + one clinician sponsor for clinical/triage topics. Don’t make every GP “attend the PPG”. [^6][^18][^2]
 
 * Rotate issue owners on the patient side
-  People should be able to join for a specific fix, check it shipped, then leave without guilt. [^6][^5][^2]
+  - People should be able to join for a specific fix, check it shipped, then leave without guilt. [^6][^5][^2]
 
 * Measure a few simple things and stop there
-  Use one or two access indicators + patient-reported experience data; don’t build a dashboard empire. [^11][^16][^3]
+  - Use one or two access indicators + patient-reported experience data; don’t build a dashboard empire. [^11][^16][^3]
 
-If your practice can show (1) an action log with owners/dates, (2) wider patient input beyond who turns up, and (3) visible “you said / we did / we can’t” updates, you’re in the zone where this helps without becoming your unpaid second job. [^2][^3][^6]
+If your practice can show (1) an action log with owners/dates and changes, (2) wider patient input beyond who turns up, and (3) visible “you said / we did / we can’t” updates (with evidence the action solved the problem it was supposed to), you’re in the zone where this helps. [^2][^3][^6]
 
 ---
 
