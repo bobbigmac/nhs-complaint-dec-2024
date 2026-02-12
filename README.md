@@ -122,6 +122,7 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 - Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG.
 - Many local practices have bad reviews for similar reasons, but others have strong reviews (including 1 under GTD).
 - If the pattern holds in some places, how common is it, and what are the common drivers?
+- Research suggests more bad reviews than good is normal, but it should be much less negative than current
 
 </details>
 
