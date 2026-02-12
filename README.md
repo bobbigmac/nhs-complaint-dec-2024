@@ -8,6 +8,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Patients are being treated as if they are to blame, wherever the practice's flawed 'efficiency' decisions are excluding them in ways that are hard to measure the impact
   - Some patients are being excluded completely by 'digital-only' process, poor workflow choices and reception stiffness
 
+- Current task is making this document digestible as an overview.
+
 ## What’s in this repository?
 
 - **Complaint details and meeting prep**
@@ -62,11 +64,11 @@ The focus throughout is **patient access**, not clinical care quality.
       - Should be possible to start appointment requests out of hours
 
 5. **Metrics vs reality**
-   - Please investigate lost/excluded patients
-   - No active complaints procedure beyond PPG
+  - Please investigate lost/excluded patients
+  - No active complaints procedure beyond PPG
     - [Contact the practice](https://newbank.nhs.uk/form/contact-the-practice/) shows `Form Unavailable`
 
-6. **Loss of continuity - Diagnostic delay**
+6. **Loss of continuity: Diagnostic delay**
   - When tests come back all green, no follow-up with the patient
   - Compounded by 'hard to start' and 'easy to fail' workflow
     
