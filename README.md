@@ -125,14 +125,6 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 </details>
 
-<details>
-<summary>PATCHS limits and workflow design choices</summary>
-
-- From a design perspective, the way PATCHS handles limits feels unnecessarily restrictive to patients, but the PPG isn't really a 'systems design and UX' meeting.
-- It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often.
-- Do they accessibility-test workflows, or 'mystery shop' GTD practices?
-
-</details>
 
 <details>
 <summary>Unclear request types (clinical vs admin; urgency)</summary>
