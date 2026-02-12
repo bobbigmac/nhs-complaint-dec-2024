@@ -65,10 +65,14 @@ The focus throughout is **patient access**, not clinical care quality.
    - Please investigate lost/excluded patients
    - No active complaints procedure beyond PPG
     - [Contact the practice](https://newbank.nhs.uk/form/contact-the-practice/) shows `Form Unavailable`
+
+6. **Loss of continuity - Diagnostic delay**
+  - When tests come back all green, no follow-up with the patient
+  - Compounded by 'hard to start' and 'easy to fail' workflow
     
 ---
 
-### Main Issues
+### Commentary on Main Issues
 
 Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
