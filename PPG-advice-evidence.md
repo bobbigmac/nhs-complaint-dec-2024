@@ -77,6 +77,8 @@ If your practice can show (1) an action log with owners/dates and changes, (2) w
 
 ---
 
+## Evidence links
+
 [^1]: CQC’s “PPG can be informal / whole-population engagement counts”: [GP mythbuster 108: involving and engaging with the patient population and local communities](https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters/gp-mythbuster-108-involving-and-engaging-patient-population-and-local-communities) + [CQC GP mythbusters index](https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters)
 
 [^2]: Recurring real-world failure modes + what PPGs drift into + visibility gaps + recruitment/representation pain: [Healthwatch Northumberland — Understanding Patient Participation Groups (PDF)](https://healthwatchnorthumberland.co.uk/wp-content/uploads/2020/06/Understanding-PPGs.pdf) + [Healthwatch host summary page](https://nds.healthwatch.co.uk/reports-library/understanding-patient-participation-groups)
@@ -112,77 +114,3 @@ If your practice can show (1) an action log with owners/dates and changes, (2) w
 [^17]: “PPG → specific operational change” example in the wild (small, but real): [PPG Report 2015–16 (appointment system change) (PDF)](https://practice365.co.uk/uploads/sites/2081/2024/10/PPG-Report-2015-16.pdf)
 
 [^18]: Reality of workload constraints + why practices use PPGs to communicate changes (without turning it into endless consultation): [BMA PPGs (safe working) page](https://www.bma.org.uk/advice-and-support/gp-practices/managing-workload/safe-working-in-general-practice/patient-participation-groups-ppgs) + [BMA “daily working contacts” (mentions discussing changes with PPG)](https://www.bma.org.uk/advice-and-support/gp-practices/managing-workload/safe-working-in-general-practice/daily-working-contacts) + [BMA safe working handbook (PDF)](https://www.bma.org.uk/media/a31pbfv1/bma-gp-safe-working-guidance-handbook-england.pdf)
-
-
-## Evidence contents explained
-
-### 1) “Minimum requirement” material: what the system expects a practice to do, at baseline
-
-This stuff is mostly about *patient involvement* being a duty, but it repeatedly says the mechanism can be flexible.
-
-* CQC’s mythbuster on involvement is unusually blunt: the “group” does **not** have to be a formal committee; it can be the full patient list, and practices can collect feedback “in any way” that fits the population (including digital). That’s basically the regulator telling practices: don’t overthink the structure. ([Care Quality Commission][1])
-* The GMS regs are the legal wording behind that idea (establish and maintain a PPG to get views/feedback). Most commentary documents you’ve linked treat this as a “must do something to involve patients”, not “must run monthly meetings forever”. ([Legislation.gov.uk][2])
-* The BMA “safe working” page frames PPGs as a practical buffer: consult them for service changes, use them to communicate constraints, don’t let them become another workload sink. It’s not research, it’s pragmatic tradecraft. ([BMA][3])
-
-### 2) Complaints and redress: separate from PPGs, and much more tightly specified
-
-A lot of people conflate “PPG feedback” with “complaints”. The docs you’ve pulled don’t.
-
-* There’s a straight contractual duty for a practice to run a **complaints procedure** (that’s in the GMS regs). ([Legislation.gov.uk][4])
-* Then there’s the wider NHS complaints law (2009 regs) that spells out mechanics like acknowledgement within a short window, process steps, and handling where multiple bodies are involved. ([Legislation.gov.uk][5])
-* CQC’s complaints mythbuster + Regulation 16 guidance are basically: complaints must be easy to make (verbal or written to any staff member), logged/handled properly, investigated, and not held against the patient. It’s “you must have a functional system”, full stop. ([Care Quality Commission][6])
-* PHSO complaint standards (and their “clarifying the complaint” guide) are process-quality documents: how to define the ask, explain timescales, keep the complainant oriented, and stop it turning into a fog. ([Parliamentary Ombudsman][7])
-* The Parliamentary briefing + AgeUK factsheet are “here’s how the complaints ecosystem actually works” explainers: routes, escalation, remedies, timelines, and practical support/advocacy. ([Parliament Research Briefings][8])
-
-Net effect of this whole group: **PPGs are not the only mandated feedback route** in the material you linked. Complaints are their own obligation with their own legal/regulatory backbone. ([Legislation.gov.uk][4])
-
-### 3) Toolkits, templates, and “how to run a PPG” playbooks
-
-Most of the linked evidence is *operational guidance*, not outcome evaluation. It’s heavy on templates and checklists.
-
-* Big toolkits (Leeds, Notts) are basically: roles, ToR templates, recruitment tactics, meeting formats, agenda structures, action logs, comms plans, inclusivity prompts, and examples of activities that “count” (surveys, newsletters, access projects, website fixes). 
-* Healthwatch Sunderland’s guide is a classic of the genre: do’s/don’ts, meeting design, why meetings fail (usually planning + unclear scope), quarterly cadence suggestions, and appendices full of starter artifacts (first agenda, constitution, ToR, equality monitoring form, “virtual PPG” setup). It explicitly says individual complaints shouldn’t be handled in the meeting. 
-* NHS England South’s Patients Association pack + ToR docx are very “2015 contract” era: step-by-step setup, questions to ask early, and formalities like quorums. (This is where you see the tone that can feel like “run it as a club”, because it’s trying to make volunteer governance legible.) ([NHS England][9])
-* The smaller “PPG handbook” / single-practice “best practice guides” repeat the same moves: keep scope population-level, run surveys, improve comms, recruit for representation, show outcomes back to patients. 
-
-### 4) Research and evaluation: thinner than you’d hope, but there are a few useful angles
-
-This is the part that actually tries to answer “does it work?”, and it’s noticeably smaller than the guidance pile.
-
-* The participatory intervention study (open access on PMC) is about getting patients into *service improvement decision-making* in a structured way (rather than vibes-only discussion). You’ll see methods, participant setup, what changed, and what didn’t. It reads like “PPG-ish done as a designed intervention”. ([PMC][10])
-* The BJGP paper (Boam et al, 2025) is a different kind of evidence: it mines CQC reports to estimate **coverage and quality**, and finds a strong inequality signal (practices in more deprived areas less likely to have a PPG; differences in activities). It’s not proving causal impact on outcomes, but it’s very relevant to “is this mechanism fair / does it widen gaps”. ([researchgate.net][11])
-* Cross (2014) is basically “what happened when policy tried to incentivise patient reference groups / participation via a Directed Enhanced Service”. Expect: representativeness issues, box-ticking risk, variable implementation, and limited evidence of deep influence unless the practice actually takes it seriously. ([repository.derby.ac.uk][12])
-* The administrative burden paper isn’t PPG-specific, but it gives a clean conceptual frame for why your instincts about paperwork are often right: learning costs, compliance costs, psychological costs, unevenly borne by people with fewer resources. It’s a useful lens for judging whether a PPG setup is accidentally rationing voice. ([PMC][13])
-
-### 5) Other “voice” channels: surveys, reviews, public reporting, and access/inequalities material
-
-These docs are the backdrop that PPGs are supposed to plug into (and often don’t).
-
-* GP Patient Survey pages are the official pipeline for large-scale structured feedback; toolkits keep telling PPGs to interpret it and respond with visible actions. ([NHS England][14])
-* Friends and Family Test guidance is about collecting/submitting FFT data (lightweight “would you recommend” + comments), again treated as input a PPG can help interpret. 
-* NHS.uk service reviews + how-to-review pages + the algorithmic transparency record are about public feedback as a channel (and the moderation machinery around it). This is where “poor reviews” live as a system signal, separate from PPG participation. ([nhs.uk][15])
-* Care Opinion is the “narrative feedback to services” model: patient stories, service responses, public thread. Different vibe from PPG meetings, often more accessible. ([Care Opinion][16])
-* The London GP Access Manual + NHS inequalities resource + Healthwatch access report are the “how to design access without harming inclusion” documents: call handling, triage, digital exclusion, translation needs, fair access patterns. This is the material your “workflow decisions left a hole” story maps onto most directly. 
-* NHS Digital “Appointments in General Practice” stats are not about PPGs, but they’re the context practices cite when explaining why access feels broken (demand, capacity, mode mix). ([NHS England Digital][17])
-
-[1]: https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters/gp-mythbuster-108-involving-and-engaging-patient-population-and-local-communities "GP mythbuster 108: Involving and engaging with the patient population and local communities - Care Quality Commission"
-[2]: https://www.legislation.gov.uk/uksi/2015/1862/regulation/26?utm_source=chatgpt.com "The National Health Service (General Medical ..."
-[3]: https://www.bma.org.uk/advice-and-support/gp-practices/managing-workload/safe-working-in-general-practice/patient-participation-groups-ppgs "Patient Participation Groups (PPGs)  - Safe working in general practice - BMA"
-[4]: https://www.legislation.gov.uk/uksi/2015/1862/regulation/79?utm_source=chatgpt.com "Regulation 79"
-[5]: https://www.legislation.gov.uk/uksi/2009/309/regulation/13?utm_source=chatgpt.com "The Local Authority Social Services and National Health ..."
-[6]: https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters/gp-mythbuster-103-complaints-management "GP mythbuster 103: Complaints management - Care Quality Commission"
-[7]: https://www.ombudsman.org.uk/organisations-we-investigate/complaint-standards/nhs-complaint-standards/good-complaint-handling-guides/clarifying-complaint-and-explaining-process?utm_source=chatgpt.com "Clarifying the complaint and explaining the process"
-[8]: https://researchbriefings.files.parliament.uk/documents/CBP-7168/CBP-7168.pdf?utm_source=chatgpt.com "NHS complaints procedures in England."
-[9]: https://www.england.nhs.uk/south/wp-content/uploads/sites/6/2016/09/ppg-guidance.pdf?utm_source=chatgpt.com "Guidance for Starting a Patient Participation Group"
-[10]: https://pmc.ncbi.nlm.nih.gov/articles/PMC11005925/ "
-            Patient influence on general practice service improvement decision making: a participatory research mixed-methods intervention study - PMC
-        "
-[11]: https://www.researchgate.net/publication/395587524_Coverage_and_quality_of_patient_participation_groups_A_mixed-methods_analysis_of_Care_Quality_Commission_reports "(PDF) Coverage and quality of patient participation groups. A mixed-methods analysis of Care Quality Commission reports"
-[12]: https://repository.derby.ac.uk/download/b53bd30826ce26a26e246716730a1b61a12e7fdc9075571e391fce603e73adb8/99336/Cross_2014_Impact_of_Patient_Participation_Direct_Enhanced_Service_on_patient_reference_groups_in_primary_care_published.pdf "04_Pollard_QPC22_4D1 1..9999"
-[13]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8522557/ "
-            Health care administrative burdens: Centering patient experiences - PMC
-        "
-[14]: https://www.england.nhs.uk/statistics/statistical-work-areas/patient-surveys/gp-patient-survey/ "Statistics » GP Patient Survey"
-[15]: https://www.nhs.uk/give-feedback-about-the-nhs-website/find-out-how-to-review-an-nhs-service/ "Find out how to leave a review of an NHS service - NHS"
-[16]: https://www.careopinion.org.uk/ "Care Opinion"
-[17]: https://digital.nhs.uk/data-and-information/publications/statistical/appointments-in-general-practice "Appointments in General Practice - NHS England Digital"
