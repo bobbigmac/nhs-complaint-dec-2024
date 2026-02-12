@@ -19,7 +19,7 @@ Ineffective PPGs usually do the inverse:
 * [ ] They’re a clique: same people, same times, no reach into the wider list. [^15][^2][^7]
 * [ ] They trade in vague commitments with no owners or dates. [^6][^2]
 * [ ] They drift into “nice community stuff” that doesn’t fix core service problems and then call that engagement. [^2][^7]
-* [ ] They depend on heroic volunteers and burn them out. [^12][^2][^7]
+* [ ] They depend on volunteers and burn them out. [^12][^2][^7]
 
 ---
 
