@@ -77,8 +77,6 @@ If your practice can show (1) an action log with owners/dates and changes, (2) w
 
 ---
 
-## Evidence links
-
 [^1]: CQC’s “PPG can be informal / whole-population engagement counts”: [GP mythbuster 108: involving and engaging with the patient population and local communities](https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters/gp-mythbuster-108-involving-and-engaging-patient-population-and-local-communities) + [CQC GP mythbusters index](https://www.cqc.org.uk/guidance-providers/gps/gp-mythbusters)
 
 [^2]: Recurring real-world failure modes + what PPGs drift into + visibility gaps + recruitment/representation pain: [Healthwatch Northumberland — Understanding Patient Participation Groups (PDF)](https://healthwatchnorthumberland.co.uk/wp-content/uploads/2020/06/Understanding-PPGs.pdf) + [Healthwatch host summary page](https://nds.healthwatch.co.uk/reports-library/understanding-patient-participation-groups)
