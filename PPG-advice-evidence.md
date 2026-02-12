@@ -68,7 +68,7 @@ Ineffective PPGs usually do the inverse:
   - One staff sponsor + one clinician sponsor for clinical/triage topics. Don’t make every GP “attend the PPG”. [^6][^18][^2]
 
 * Rotate issue owners on the patient side
-  - People should be able to join for a specific fix, check it shipped, then leave without guilt. [^6][^5][^2]
+  - People should be able/expected to join for a specific fix, check it shipped, then leave. [^6][^5][^2]
 
 * Measure a few simple things and stop there
   - Use one or two access indicators + patient-reported experience data; don’t build a dashboard empire. [^11][^16][^3]
