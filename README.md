@@ -72,18 +72,38 @@ The focus throughout is **patient access**, not clinical care quality.
 
 Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
-- The workflow/system decision-maker at this practice seems to believe "**a doctor MUST be present and online at the moment someone requests an appointment**".
-  - This neglects/wastes the simple benefit of a web-based platform is to **decouple doctor availability from patient access**. The mandatory phone call is a decision being made, not an oversight?
-  - I want to know who specifically is FORCING a workflow that keeps appointment requests offline outside of office hours, and who is mandating an in-office-hours phone call as a mandatory part of getting an appointed time for any type of meeting.
-  - If the rationale is "what if someone accidentally asks about something urgent, and a doctor doesn't see it until morning" seems like something that **could** happen (and is already mitigated by several sentences on every page just to get this far about 'no urgent issues'), being used as justification to continue harm that **is already happening** (alienating/inconveniencing some people outright).
-    - I suspect this is about avoiding a backlog of overnight requests to be processed each morning, which is again, a false economy. Sure, you're avoiding _some_ requests that _could_ have been made in-hours, but you're also locking out quite a lot of people from having any access at all, which just compounds the mandatory unscheduled phone call problem.
-    - I'm curious about the actual numbers on this... How many requests _are_ made overnight if it is accessible? Do any of these missing people turn up if the practice trials it?
-    - It _feels_ like the practice operates patient care as a production line, where each doctor focuses only on part of the process. I don't think this results in good care. ~~A person is not a Model T Ford.~~
-      - Healthcare is a relationship, not a transaction.
-      - How do legislative requirements have an effect here? 
-- The current patient survey status shows 22% of patients report it being hard to get an appointment (an improvement on last year's 39%, tho this isn't quite comparing like to like, as the 39% is the inverse of people who found it easy to contact the practice by phone, and also excludes the "I haven't tried" contingent). I _think_ the real number is higher because the patient survey is worded (unintentionally) to 'downplay' access issues by having some access issues fall through the gaps between available answers.
-- On the diagnostic issue, I don't think it reaches clinical negligence (it hasn't resulted in the worsening of my condition), but certainly premature diagnostic closure or diagnostic delay (though this is made more severe by the poor quality of access) does seem an appropriate label. At least one other PPG patient mentioning this suggests it's not uncommon here to close conditions without full investigation or identification of causes.
-  - I _feel_ like staff at this practice think you will just get better if they ignore you and delete you at every opportunity, so you always have to start over with the most inaccessible/inconvenient system design choices possible. I've lost count of how many times I had to start over.
+<details>
+<summary>Out-of-hours access and mandatory phone steps</summary>
+
+- The workflow assumes "**a doctor MUST be present and online at the moment someone requests an appointment**".
+- Appointment requests remain unavailable outside office hours
+  - The office-hours phone step is still (currently) mandatory to progress.
+- A key benefit of online systems is **decoupling clinician availability from request submission**, with appropriate urgent-care safeguards.
+- Clarify who owns these workflow decisions and what constraints apply (clinical risk, staffing/backlog management, contractual/legislative requirements).
+- Consider measuring overnight demand during a time-limited trial to quantify impact and identify excluded patients.
+
+</details>
+
+<details>
+<summary>Survey metrics may understate access barriers</summary>
+
+- The current patient survey status shows 22% of patients report it being hard to get an appointment.
+- This is an improvement on last year's 39%, though this isn't directly comparable:
+  - the 39% is the inverse of people who found it easy to contact the practice by phone
+  - it also excludes the "I haven't tried" contingent
+- The real number may be higher if the survey wording (unintentionally) allows some access issues to fall between available answers.
+
+</details>
+
+<details>
+<summary>Diagnostic delay / premature closure, compounded by access</summary>
+
+- On the diagnostic issue, I don't think it reaches clinical negligence (it hasn't resulted in the worsening of my condition).
+- Premature diagnostic closure or diagnostic delay (made more severe by poor access) seems a more appropriate label.
+- At least one other PPG patient mentioning this suggests it may not be uncommon to close conditions without full investigation or identification of causes.
+- Operationally, repeated request closure/deletion can force patients to restart, compounding delay.
+
+</details>
 
 ### Ongoing/further research
 
