@@ -26,16 +26,16 @@ Ineffective PPGs usually do the inverse:
 ## Best practices that maximise engagement, target positive change, and don’t drown everyone in paperwork
 
 * Keep the structure light by default
-  Small core group + wider “virtual” cohort. Meet when there’s something worth deciding; do the rest async. [^1][^5][^6]
+  Healthy core group + wider “virtual” cohort. Meet when there’s something worth deciding; do the rest async. [^1][^5][^6]
 
-* Separate three lanes and don’t let them blur
-  **Complaints** (formal, individual). **Feedback** (themes, patterns). **Co-design** (working on a specific change). If staff steer complaints into the PPG, push back. [^10][^2]
+* Separate three main lanes and don’t let them blur
+  **Complaints** (formal, individual). **Feedback** (themes, patterns). **Co-design** (working on specific changes, practice/management workflow). [^10][^2]
 
 * Use a single action log as the backbone
-  One page: issue, desired outcome, owner, next step, date, status, constraint. This replaces most “PPG admin”. [^6][^3][^7]
+  One page: issue, desired outcome, owner, next step, date, status, constraint. [^6][^3][^7]
 
 * Make participation cheap
-  5–10 minute surveys, two or three questions, plain language, translated where needed, and a non-digital route. [^5][^7][^16]
+  ~5 minute surveys, two or three questions, plain language, translated where possible/needed, and a non-digital route. [^5][^7][^16]
 
 * Recruit by asking the right way, in the right places
   Targeted invites to people who actually hit the workflow (recent callers, online users, carers). Rotate times. Don’t rely on posters/website alone. [^2][^7][^16]

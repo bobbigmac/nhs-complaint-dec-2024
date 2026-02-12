@@ -14,7 +14,7 @@ Its key conclusion is probably that making access harder, makes effective action
 - [Democratisation risks](#democratisation-risks) - interference and potential noise, well-meaning but unhelpful input
 - [The Rules about PPGs/Complaints](#the-rules)
 - [Support info in partner doc](./PPG-terms-support.md) - ChatGPT impact, how PPGs respond, environmental notes and why staff should run meetings, resources.
-- [How do good PPGs work?](./PPG-advice.md)
+- [How do good PPGs work?](./PPG-advice-evidence.md)
 
 ## Key questions 
 
