@@ -12,8 +12,9 @@ Its key conclusion is probably that making access harder, makes effective action
 - [Potential PPG goals](#the-ask) - ownership, follow-through, drop-in participation, and confidentiality designed out
 - [Access basics, make it easy](#make-it-easy-to-take-part) - predictable dates, multiple routes to contribute, no quiet expiry, better visibility
 - [Democratisation risks](#democratisation-risks) - interference and potential noise, well-meaning but unhelpful input
+- [The Rules about PPGs/Complaints](#the-rules)
 - [Support info in partner doc](./PPG-terms-support.md) - ChatGPT impact, how PPGs respond, environmental notes and why staff should run meetings, resources.
-
+- [How do good PPGs work?](./PPG-advice.md)
 
 ## Key questions 
 
@@ -132,3 +133,11 @@ Even in the best-case scenario (strong, consistent, high quality patient involve
 	- [ChatGPT effects](./PPG-terms-support.md#chatgpt-and-noise) are discussed in the support material
 
 [PPG-terms-support.md contains further exploration](./PPG-terms-support.md), mostly through lists of simple ideas. Contains some useful POVs, but is probably too noisy to keep in the overview.
+
+
+## The rules
+
+- PPGs are required by GMS Reg 26 and are intended to "obtain the views of patients".
+- They should (with reasonable efforts) be "representative of its registered patients"
+	- GMS Reg 79 mandates collecting and actioning feedback beyond the PPG
+	- HSCA 2008 CQC Reg 16 also mandates a complaints procedure
