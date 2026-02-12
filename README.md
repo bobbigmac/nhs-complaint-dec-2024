@@ -68,7 +68,7 @@ The focus throughout is **patient access**, not clinical care quality.
     
 ---
 
-### Notes
+### Main Issues
 
 Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
