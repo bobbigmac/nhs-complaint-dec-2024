@@ -21,7 +21,7 @@ It contains only publicly available data so that the evidence and reasoning are 
   - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
   - `messages/` - Log of sent messages (mostly emails, complaint-related only).
   - `healthwatch-reports/` - Healthwatch reports from around the UK sharing these concerns.
-- [My own experience](./My-new-bank-experience.md) trying (and failing) to see my doctor, as a patient who works nights (among other issues).
+- [My own experience](./My-new-bank-experience.md) trying (and failing) to see my doctor, as a patient who works nights.
 - [Notes](#Notes) - My notes that don't fit anywhere else.
 - [Ongoing/further Research](#ongoingfurther-research) - What's next.
   - [Reviewing the updated draft PPG terms docs](./PPG-terms-review/PPG-terms-review.md)
