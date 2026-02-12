@@ -55,7 +55,7 @@ The focus throughout is **patient access**, not clinical care quality.
     - Some severe recent reviews, but general tone seems to be improving as reception restaffed. Monitor. 
 
 4. **Can't start appointment process outside office hours**
-  - Partially solved, admin requests are now open out of hours (since 14th Jan)
+  - Partially progress, admin requests are now open out of hours (since 14th Jan)
   - but... Appointments cannot be requested.
     - This is only enabled when the office is open
       - Doctor claims it avoids missing urgent/emergency contacts
