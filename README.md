@@ -14,7 +14,8 @@ It contains only publicly available data so that the evidence and reasoning are 
   - [ORIGINAL_COMPLAINT.md](./ORIGINAL_COMPLAINT.md) - initial long‑form complaint about the appointment system. Dec 2024, updated Aug 2025.
   - [OBJECTIVES.md](./OBJECTIVES.md) - Shorter form summary of issues.
   - [meetings-notes/](./meetings-notes/) - Documentation for each meeting, and my prep/issues and received handouts with my notes.
-  - [meeting4-goals.md](./meeting-ppg-feb4/meeting4-goals.md) - Meeting 4 (Feb 2026) prep
+  - [meeting4-goals.md](./meetings-notes/2026-01-04-meeting4/meeting4-goals.md) - Meeting 4 (Feb 2026) prep
+  - [My Patient Experience at New Bank](./My-new-bank-experience.md)
 - **Data and analysis**
   - `patient-survey-breakdown/` - breakdown of GP Patient Survey results for New Bank and further research.
   - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
@@ -28,10 +29,10 @@ It contains only publicly available data so that the evidence and reasoning are 
 - **Produced reports/evidence packs**
   - [General GP practice stats and scope/environment notes](./meetings-notes/2025-09-10-meeting2/benchmarks-summary-sept-10.md)
   - [PATCHS trustpilot reviews for lots of useful patient input](./reviews/PATCHS/output%20reports/PATCHS%201-2-3%20Star%20Reviews%20with%20Summary%20Panel%20Landscape.pdf)
-  - [Patient blaming evidence pack](./meeting-ppg-feb4/PatientBlaming-README.md)
-  - [Affected patients estimates and Healthwatch overview](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
-  - [Poor NHS access and political extremism](./meeting-ppg-feb4/GP%20Access%20Evidence%20-%20Immigration%20blame%20and%20far-right.md)
-  - [Google reviews management and good response patterns](./meeting-ppg-feb4/reviews-management.md)
+  - [Patient blaming evidence pack](./meetings-notes/2026-01-04-meeting4/PatientBlaming-README.md)
+  - [Affected patients estimates and Healthwatch overview](./meetings-notes/2026-01-04-meeting4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
+  - [Poor NHS access and political extremism](./meetings-notes/2026-01-04-meeting4/GP%20Access%20Evidence%20-%20Immigration%20blame%20and%20far-right.md)
+  - [Google reviews management and good response patterns](./meetings-notes/2026-01-04-meeting4/reviews-management.md)
 
 The focus throughout is **patient access**, not clinical care quality.
 
@@ -39,80 +40,36 @@ The focus throughout is **patient access**, not clinical care quality.
 
 1. **Digital‑only booking and exclusion**
   - Access is effectively **digital‑only**
-    - No simple “walk in and make an appointment” route and impossible to book by phone without being sent back online, and still requires unscheduled daytime callback.
-  - This excludes people without stable internet, devices, availability or confidence with forms, and adds friction even for confident users.
-  - Current system also excludes anyone who can't take a day off for a *chance* at an appointment, anyone who works nights or other weird times and many other groups (documented/estimated in the november meeting docs).
+    - No simple “walk in and make an appointment” route and impossible to book by phone without being sent back online.
+  - Excludes patients without stable internet/devices, no daytime availability, lacking confidence with forms, and adds friction even for confident users.
 
 2. **Unscheduled missed calls cause deletion/resubmission loop**
-  - Alienates patients
-    - If the clinician calls for triage OR the receptionist calls to arrange an appointment, and the patient misses two **unscheduled** calls (typically, but not consistently within less than an hour, with no route to schedule or bypass the call), the **request is closed** and the patient must start again.
-      - This __was__ enforced at 1 and only 1 appointment request per day but have not yet re-tested since moving to PATCHs. 
-      - I have had at least 1 request placed via the old website (the second in the same day, after missing 2 calls) be deleted on the same day, with the explicit reason that it was submitted on the same day.
-    - Notification issues _might_ have been fixed by PATCHs, but should re-test patients are notified correctly (in my own case, I was not in the second case).
-   - Reporting of missed unscheduled calls __were__ sometimes labelled as **“missed appointments”**.
-        - This practice appears to have been reduced significantly in August's practice stats
-        - Phone DNAs reported halved relative to other DNA types from July to August
+  - If the doctor calls for triage OR the receptionist calls to arrange an appointment, and the patient misses two **unscheduled** calls, with no route to schedule or bypass the call, the **request is closed** and the patient must start over.
+    - PPG agreed SMS support will be added as fallback instead of deletion (expected by end of Feb 2026)
+    - This _should_ somewhat mitigate the problem, but could be improved upon with a bookable slot picker (PATCHS supports this)
+  - Current system excludes patients who work nights/shifts and [other groups](./meetings-notes/2026-01-04-meeting4/GP%20Access%20Evidence%20-%20Websites%20triage%20and%20digital%20barriers.md)
 
 3. **Reception**
-  - Reviews over several years describe **rude, dismissive, or blocking behaviour** at reception, especially towards distressed or complex patients.
-  - 'Rude reception' is a very common complaint, and some reported incidents have been __severe__, including patients in distress, being laughed at by staff or otherwise driven to leave.
-    - Reviews are subjective, but repeated instances of similar types of mistreatment from real Google users suggest a terrible pattern that needs to be fixed.
-  - Once patients get through to a GP or nurse, experiences are often (tho not universally) positive...
-    - TODO: As of November 2025, slight evidence this is improving, though reception/process complaints still among most common negative reviews.
-  - The automated sliding front door sticks (literally blocking access)
+  - Reviews describe **rude, dismissive, or blocking behaviour** at reception, especially with distressed/complex patients.
+    - Some severe recent reviews, but general tone seems to be improving as reception restaffed. Monitor. 
 
-4. **PATCHS website off outside office hours**
+4. **Can't start appointment process outside office hours**
   - Partially solved, admin requests are now open out of hours (since 14th Jan)
   - but... Appointments cannot be requested.
     - This is only enabled when the office is open
-    - Why? It wastes the benefit of a website, which is to avoid synchronous availability needs.
+      - Doctor claims it avoids missing urgent/emergency contacts
+      - Should be possible to start appointment requests out of hours
 
 5. **Metrics vs reality**
-   - Investigate lost/excluded patients
+   - Please investigate lost/excluded patients
    - No active complaints procedure beyond PPG
     - [Contact the practice](https://newbank.nhs.uk/form/contact-the-practice/) shows `Form Unavailable`
 
 ---
 
-## My patient experience with New Bank
-
-I have been trying to get an appointment at New Bank since December 2024 (when I registered), but as I work nights the process has been almost impossible (the only doctor's appointment I've had took a year, and I had to take a day off and stay awake 6 hours late waiting on an unscheduled office-hours call for that to be possible). Details below...
-
-  - Had a day off (Dec 4th 2025), and transient pain, so tried again...
-  - Tried using Bookable.health first, good UI. Gets to the last step, after picking an appointment datetime, then tells me I can't book it because I'm registered at the practice. Nearly moved my registration elsewhere just so I could use Bookable because that's actually what I want the process to be.
-  - Used PATCHS
-    - Previous improvement of 'suggested callback time' input field, has not been kept in the move to PATCHS. Still cannot request an appointment for anything, still dependent on unscheduled calls, despite stating in message that I cannot receive calls in the day as I work nights.
-    - Form has repetitive questions that barely make any sense (I think they put the 'AI' label on it, but there's no way these questions come from a modern LLM-based system).
-    - Form has "when should we _not_ contact you" question, but it's pointless if the answer is 'do not phone me, ever', or 'I work nights and sleep days (or cannot use my phone at work, or I don't have a phone), so will not see your phone call'.
-    - Staff _really_ need to deal with this, I've brought it up at the PPG several times now. LOTS of people work nights/shifts, or otherwise cannot access their phone in work, and are being actively excluded (no wonder so many 1 star reviews).
-  - Asked staff who phoned me (reaching me on the second attempt, with 41 minutes between calls, staring at my phone the entire time, because last time I tried to call back after missing 2 calls, I was told to "ask _really_ nicely and _maybe_ a doctor _would consider_ trying again") if they read my mention that I was probably not accessible via phone and she said "I didn't see that", then scrolled down the page, and confirmed my message was indeed present (she did not say outright, but had clearly not read it), but that...
-    - She cannot make an appointment (or propose/suggest/start an appointment process) via PATCHs without a phone call anyway. 
-    - Request was not deleted, but no response has been made online. Cannot attach further notes, or reactivate the ticket. I 'have' an appointment scheduled, but PATCHS doesn't surface that, or update the ticket.
-    - Request status updated to 'Completed'. Cannot reopen or attach any info. Appointment info is NOT added anywhere in the system. 
-  - Don't know what would happen if I missed that second call again. Can't afford to risk it, I only have one day off and awake in the day.
-  - PATCHS UX sucks. 
-    - The 'AI' questions are barely coherent, and as repetitive as the old eConsult route, maybe more so.
-    - PATCHS (or elsewhere on the site) _really_ needs a non-phone-based roundtrip (message/chat/booking slot picker) to solve this problem.
-    - It's ridiculous that I STILL _must_ be able to answer an unscheduled phone call within business hours, to get an appointment.
-    - The entire message/request content is squeezed into a small scrollable box within the webpage, making it hard to read (this is just really lazy web design by PATCHS). It also seems to auto-scroll itself to the bottom every few seconds, so you have to find your place again if you're rereading the content (it also does not display properly in printed form, as it prints the box, and only a little of the contents).
-  - Attended appointment, good discussion with doctor, submitted samples for tests
-  - Didn't have a day where the doctor was open and I would be able to answer an unscheduled call randomly in the day.
-  - Tests all came back pretty much normal ~~(was not tested for calprotectin, despite asking for that test)~~ (rechecked this, it appeared a few days later, but lower in the list, reporting low end of normal), health condition in NHS app was closed on jan 6th, with no follow-up.
-  - The app doesn't say which doctor closed the condition I am trying to get diagnosed, but I consider this an oversight, as the cause of my condition was not identified, only things that are NOT the cause (i.e. I am still sick, but the practice data flagged condition as PAST, pre-mature diagnosis end). 
-    - Case was closed without confirmation from the patient or thorough check about the current status.
-    - Process issue or lack of care?
-    - This same issue was raised by another patient in the Nov 26th PPG.
-      - Likely, the process/workflow encourages closing off conditions, but doesn't recognise if the patient was diagnosed/treated, only that the tests were done.
-    - From the log, it reads like someone came back after new year and just ticked off whatever tests were on the list, because they clearly didn't read the patient notes about what the tests were looking for.
-  - Tried to make an appointment at the front desk (Jan 9th), told "You HAVE to do it online" (still), mentioned that management had said in the PPG meetings I _should_ be able to make an appointment without going online, and reception said they can do it for me, but I would have to be able to receive an unscheduled call (still), and briefly explained I work nights and sleep days, so cannot receive a call, and was told when she checked my history "there's nothing here about that", and I briefly explained that my case had been closed prematurely, but that the doctor had told me to make an appointment to see her next time.
-    - She took a note to ask (the ops manager) about it on Monday and she offered to text me Monday.
-    - She was polite and seemed understanding, an improvement over last time I tried to make an appointment at the front desk.
-  - Woke up monday evening to 2 missed calls (no text message) at 10:44 and 11:33.
-    - Missed them because I told the receptionist I would be asleep and she told me she'd send a text message.
-    - I saw the receptionist write a post-it about sending me a text message, but that turned into regular 2 phone calls, but with no entry created on the system.
-  - Went to front desk, told the receptionist (different one from friday) that they rung me twice, and it should be about making an appointment, but she checked and told me it wasn't on the system, so wouldn't book me an appointment. I told her a short version of the story so far, and she still couldn't make an appointment.
-
 ### Notes
+
+Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 - The workflow/system decision-maker at this practice seems to believe "**a doctor MUST be present and online at the moment someone requests an appointment**".
   - This neglects/wastes the simple benefit of a web-based platform is to **decouple doctor availability from patient access**. The mandatory phone call is a decision being made, not an oversight?
