@@ -23,7 +23,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 - [My own experience](#My-patient-experience-with-New-Bank) trying (and failing) to see my doctor, as a patient who works nights (among other issues).
 - [Notes](#Notes) - My notes that don't fit anywhere else.
 - [Ongoing/further Research](#ongoingfurther-research) - What's next.
-  - [Reviewing the updated draft PPG terms docs](./PPG-terms-review.md)
+  - [Reviewing the updated draft PPG terms docs](./PPG terms review/PPG-terms-review.md)
   - [Exclusion questions - Is exclusion a problem here?](./Exclusion-questions.md)
 - **Produced reports/evidence packs**
   - [General GP practice stats and scope/environment notes](./meetings-notes/2025-09-10-meeting2/benchmarks-summary-sept-10.md)
