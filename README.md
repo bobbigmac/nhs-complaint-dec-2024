@@ -8,8 +8,6 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Patients are being treated as if they are to blame, wherever the practice's flawed 'efficiency' decisions are excluding them in ways that are hard to measure the impact
   - Some patients are being excluded completely by 'digital-only' process, poor workflow choices and reception stiffness
 
-- Current task is making this document digestible as an overview.
-
 ## What’s in this repository?
 
 - **Complaint details and meeting prep**
@@ -193,3 +191,7 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
   - Will be revised before action, but that's the general idea.
 
 The aim is not to “name and shame” a single surgery/company, but to show where **process and tools are systematically failing patients**, especially at New Bank and GTD. Many [Healthwatch groups are tracking these same issues](./meetings-notes/2025-11-26-meeting4/send-to-gtd-team-pre-nov26/GP%20Access%20Issues%20-%20Evidence%20Pack%20-%2026%20Nov%202025%20Bob%20Davies.pdf) all over the country, this is one part of that, and will escalate to Healthwatch Manchester as needed, to encourage them to join the other groups in trying to get these problems fixed everywhere.
+
+### TODOs
+
+- Current task is making this document digestible as an overview.
