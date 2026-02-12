@@ -107,50 +107,90 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 ### Ongoing/further research
 
-- Staff have claimed "everyone does this" regarding making patients 'start over' (deleting requests for missed calls, or multiple daily submissions/second after deletion on same day). How many practices have systems that delete patient requests? 
-    - PATCHS reviews suggest that it does not solve this.
-    - Confirmed myself, 2 missed calls results in no further action, ticket is closed, cannot be reopened.
+<details>
+<summary>Request deletion and forced “start over” workflows [PENDING IMPLEMENTATION]</summary>
 
-- Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG, but I don't see why this is an excuse. A LOT of local practices have bad reviews, often for very similar reasons, but there are also a lot of practices with great reviews (including 1 under GTD), so the pattern doesn't hold for ALL practices, but how many does it hold for, and what are their common threads?
+- Staff have claimed "everyone does this" regarding making patients 'start over' (deleting requests for missed calls, or multiple daily submissions/second after deletion on same day). How many practices have systems that delete patient requests?
+- PATCHS reviews suggest that it does not solve this.
+- Confirmed myself, 2 missed calls results in no further action, ticket is closed, cannot be reopened.
 
-- From a design perspective, the way PATCHS handles limits seems crazy. It's so lazy and hostile to patients, but the PPG isn't really 'systems design and UX' meeting.
-    - It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often? Is there anyone in the room who has even the faintest consideration of the patient workflow through their systems? Do they accessibility-test themselves? 'Mystery shop' GTD practices? 
+</details>
 
-- The language around request types is confusing. 
-  - Many patients don't know if what they need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent. 
-    - If I have some pain, or a meds question, is that clinical? Who knows? Where to find out? 
-    - There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS/practice infrastructure? 
-    - Maybe better visibility of the organisational model would be useful on the site. It's not clear who is responsible for what.
-  - The categories seem to be emergency (call 999), urgent (a doctor will try and get you in asap) or normal (usually within 3 days)
+<details>
+<summary>Review patterns and “everyone has bad reviews”</summary>
+
+- Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG.
+- Many local practices have bad reviews for similar reasons, but others have strong reviews (including 1 under GTD).
+- If the pattern holds in some places, how common is it, and what are the common drivers?
+
+</details>
+
+<details>
+<summary>PATCHS limits and workflow design choices</summary>
+
+- From a design perspective, the way PATCHS handles limits feels unnecessarily restrictive to patients, but the PPG isn't really a 'systems design and UX' meeting.
+- It might be useful to know if/when GTD _do_ discuss these issues, with whom and how often.
+- Do they accessibility-test workflows, or 'mystery shop' GTD practices?
+
+</details>
+
+<details>
+<summary>Unclear request types (clinical vs admin; urgency)</summary>
+
+- The language around request types is confusing.
+- Many patients don't know if what they need to see a doctor about falls under clinical or admin, or what is a non-pressing issue or what's urgent.
+  - If I have some pain, or a meds question, is that clinical? Who knows? Where to find out?
+  - There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS/practice infrastructure?
+  - Maybe better visibility of the organisational model would be useful on the site. It's not clear who is responsible for what.
+- The categories seem to be emergency (call 999), urgent (a doctor will try and get you in asap) or normal (usually within 3 days)
+
+</details>
+
+<details>
+<summary>PPG terms review, patient burden, and complaint routes</summary>
 
 - PPG Terms & rules, patient burden and what is the objective of the the PPG?
-  - GTD are updating the documentation that patients must agree to operate within, mostly as a personal and legal safety valve
-    - Shares a lot of features with other PPG membership documents from practices around the UK
-    - How effective/performative are PPGs?
-  - What is the recourse for a patient who wants to complain, but doesn't agree to every single term in the documentation? Like what if the 'unknown' (what am I agreeing to keep confidential? what if I don't want to be on a database? what if I don't want to, or can't sit in a meeting with strangers on an irregular schedule?)
-    - Are there still functional feedback/complaint mechanisms? What are they?
-    - PPG results are SLOW (6 months and still no change on even very small issues), for small or transient PPGs, continuity over time is going to be hard as patients become discouraged by no change, or at least by no immediate change.
-    - Without an organising platform or more regular contact, how are patients expected to co-ordinate individual concerns and identify shared problems?
-  - The documents being available for review is good, but most patients are not well versed in legal speech or procedural jargon, especially where language barriers exist, might be better supported with much less legalese, and instead sticking to a one-page (or maybe 2) that keeps a group casual.
+- GTD are updating the documentation that patients must agree to operate within, mostly as a personal and legal safety valve
+  - Shares a lot of features with other PPG membership documents from practices around the UK
+  - How effective/performative are PPGs?
+- What is the recourse for a patient who wants to complain, but doesn't agree to every single term in the documentation? Like what if the 'unknown' (what am I agreeing to keep confidential? what if I don't want to be on a database? what if I don't want to, or can't sit in a meeting with strangers on an irregular schedule?)
+  - Are there still functional feedback/complaint mechanisms? What are they?
+  - PPG results are SLOW (6 months and still no change on even very small issues), for small or transient PPGs, continuity over time is going to be hard as patients become discouraged by no change, or at least by no immediate change.
+  - Without an organising platform or more regular contact, how are patients expected to co-ordinate individual concerns and identify shared problems?
+- The documents being available for review is good, but most patients are not well versed in legal speech or procedural jargon, especially where language barriers exist, might be better supported with much less legalese, and instead sticking to a one-page (or maybe 2) that keeps a group casual.
+- See [Reviewing PPG terms docs](./PPG-terms-review/PPG-terms-review.md)
 
+</details>
+
+<details>
+<summary>GP Patient Survey: question design and why is New Bank's reply rate barely 10%?</summary>
 
 - Further work to do on the GP Patient Survey
-  - The patient survey (national, written by a couple of major universities) has some pretty obvious oversights, that _might_ be unintentionally hiding the scale of some access problems, and subtly patient-blame
-    - Framing a lack of options as preferences, and framing systemic failure as personal decisions
-    - The young/comfortable students writing/setting the questions in Cambridge and Exeter unis may not have the same access issues/limitations as many other patients.
-  - I have the full patient survey questions for follow-up
-  - Very low ~10% reply rate on New Bank's Patient Survey, way below national average of ~25%.
-    - Why so few replies to the survey? Have people lost hope the practice can improve?
+- The patient survey (national, written by a couple of major universities) has some pretty obvious oversights, that _might_ be unintentionally hiding the scale of some access problems, and subtly patient-blame
+  - Framing a lack of options as preferences, and framing systemic failure as personal decisions
+  - The young/comfortable students writing/setting the questions in Cambridge and Exeter unis may not have the same access issues/limitations as many other patients.
+- I have the full patient survey questions for follow-up
+- Very low ~10% reply rate on New Bank's Patient Survey, way below national average of ~25%.
+  - Why so few replies to the survey? Have people lost hope the practice can improve?
+
+</details>
+
+<details>
+<summary>Benchmarking vs nearby practices (GTD and non-GTD)</summary>
 
 - Comparing to local/regional practices
-    - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
-    - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns: rudeness/mistreatment, access issues, procedural failings, and a lack of understanding/help from staff.
-    - How common **complex access / phone‑blocking / web‑off** models are.
-    - Quantify how many GTD practices, and how many local/regional/national practices, **switch their websites/online forms off** outside office hours.
-      - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
+  - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
+  - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns: rudeness/mistreatment, access issues, procedural failings, and a lack of understanding/help from staff.
+  - How common **complex access / phone‑blocking / web‑off** models are.
+  - Quantify how many GTD practices, and how many local/regional/national practices, **switch their websites/online forms off** outside office hours.
+    - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
+
+</details>
+
+### Escalation routes beyond GTD
 
 - Map escalation routes beyond GTD (ICB, NHS England, CQC, ombudsman) specifically for **access and digital exclusion** rather than individual clinical events.
-  - Escalation is outlined in [ESCALATION.md](./ESCALATION.md). 
-    - Will be revised before action, but that's the general idea.
+- Escalation is outlined in [ESCALATION.md](./ESCALATION.md).
+  - Will be revised before action, but that's the general idea.
 
 The aim is not to “name and shame” a single surgery/company, but to show where **process and tools are systematically failing patients**, especially at New Bank and GTD. Many [Healthwatch groups are tracking these same issues](./meetings-notes/2025-11-26-meeting4/send-to-gtd-team-pre-nov26/GP%20Access%20Issues%20-%20Evidence%20Pack%20-%2026%20Nov%202025%20Bob%20Davies.pdf) all over the country, this is one part of that, and will escalate to Healthwatch Manchester as needed, to encourage them to join the other groups in trying to get these problems fixed everywhere.
