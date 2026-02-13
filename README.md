@@ -6,7 +6,7 @@ It contains only publicly available data so that the evidence and reasoning are 
 
   - Patients are being excluded by the practice requiring a mandatory unscheduled office-hours phone call, forcing them to start over
   - Patients are being treated as if they are to blame, wherever the practice's flawed 'efficiency' decisions are excluding them in ways that are hard to measure the impact
-  - Some patients are being excluded completely by 'digital-only' process, poor workflow choices and reception stiffness
+  - Some patients are being excluded completely by 'digital-only' process start, poor workflow choices and reception stiffness
 
 ## What’s in this repository?
 
@@ -61,14 +61,19 @@ The focus throughout is **patient access**, not clinical care quality.
       - Doctor claims it avoids missing urgent/emergency contacts
       - Should be possible to start appointment requests out of hours
 
-5. **Metrics vs reality**
+5. **Web-only appointments**
+  - Can't ask for appointment at reception in person, or via phone
+    - Access route that doesn't rely on the website should be added
+
+6. **Metrics vs reality**
   - Please investigate lost/excluded patients
   - No active complaints procedure beyond PPG
     - [Contact the practice](https://newbank.nhs.uk/form/contact-the-practice/) shows `Form Unavailable`
 
-6. **Loss of continuity: Diagnostic delay**
+7. **Loss of continuity: Diagnostic delay**
   - When tests come back all green, no follow-up with the patient
   - Compounded by 'hard to start' and 'easy to fail' workflow
+    - How to improve focus from 'tasks' to patients' real issues?
     
 ---
 
@@ -126,7 +131,7 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 - Staff have claimed 'of course reviews are bad' (as if ALL reviews are bad, because 'nobody writes good reviews') in the PPG.
 - Many local practices have bad reviews for similar reasons, but others have strong reviews (including 1 under GTD).
 - If the pattern holds in some places, how common is it, and what are the common drivers?
-- Research suggests more bad reviews than good is normal, but it should be much less negative than current
+- Research suggests more bad reviews than good is normal, but don't have data for a sensible range, yet
 
 </details>
 
