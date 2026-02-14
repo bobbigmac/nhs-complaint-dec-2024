@@ -63,7 +63,7 @@ The focus throughout is **patient access**, not clinical care quality.
 
 5. **Web-only appointments**
   - Can't ask for appointment at reception in person, or via phone
-    - Access route that doesn't rely on the website should be added
+    - NEED Access route that doesn't rely on the website
 
 6. **Metrics vs reality**
   - Please investigate lost/excluded patients
