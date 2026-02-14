@@ -50,6 +50,16 @@ The focus throughout is **patient access**, not clinical care quality.
     - Adds friction even for confident users
   - NEED Access route that doesn't rely on the website
 
+4. **Can't start appointment process outside office hours**
+  - Partially progress, admin requests are now open out of hours (since 14th Jan)
+  - but... Appointments cannot be requested.
+    - This is only enabled when the office is open
+      - Doctor claims it avoids missing urgent/emergency contacts. Evidence?
+      - [The doctors’ union claims ministers have broken a promise made then to implement “necessary safeguards” before 1 October to ensure that patients only sought non-urgent consultations online.](https://www.theguardian.com/society/2025/sep/29/gps-doctors-england-online-appointment-booking-plan-strike-action-threat)
+        - Must find evidence for these claims
+      - If it's about workload, what else can we change to avoid impacting exclusion?
+      - Should be possible to start appointment requests out of hours
+
 2. **Unscheduled missed calls cause deletion/resubmission loop**
   - If the doctor calls for triage OR the receptionist calls to arrange an appointment, and the patient misses two **unscheduled** calls, with no route to schedule or bypass the call, the **request is closed** and the patient must start over.
     - PPG agreed SMS support will be added as fallback instead of deletion (expected by end of Feb 2026)
@@ -59,13 +69,6 @@ The focus throughout is **patient access**, not clinical care quality.
 3. **Reception**
   - Reviews describe **rude, dismissive, or blocking behaviour** at reception, especially with distressed/complex patients.
     - Some severe recent reviews, but general tone seems to be improving as reception restaffed. Monitor. 
-
-4. **Can't start appointment process outside office hours**
-  - Partially progress, admin requests are now open out of hours (since 14th Jan)
-  - but... Appointments cannot be requested.
-    - This is only enabled when the office is open
-      - Doctor claims it avoids missing urgent/emergency contacts. Evidence?
-      - Should be possible to start appointment requests out of hours
 
 5. **Metrics vs reality**
   - Please investigate lost/excluded patients
