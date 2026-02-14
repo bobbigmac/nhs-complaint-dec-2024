@@ -58,7 +58,7 @@ The focus throughout is **patient access**, not clinical care quality.
   - Partially progress, admin requests are now open out of hours (since 14th Jan)
   - but... Appointments cannot be requested.
     - This is only enabled when the office is open
-      - Doctor claims it avoids missing urgent/emergency contacts
+      - Doctor claims it avoids missing urgent/emergency contacts. Evidence?
       - Should be possible to start appointment requests out of hours
 
 5. **Web-only appointments**
