@@ -57,6 +57,7 @@ The focus throughout is **patient access**, not clinical care quality.
       - Doctor claims it avoids missing urgent/emergency contacts. Evidence?
       - [The doctors’ union claims ministers have broken a promise made then to implement “necessary safeguards” before 1 October to ensure that patients only sought non-urgent consultations online.](https://www.theguardian.com/society/2025/sep/29/gps-doctors-england-online-appointment-booking-plan-strike-action-threat)
         - Must find evidence for these claims
+        - Supposed "barrage of online requests and queries" are patients asking for help, not abstract database entries
       - If it's about workload, what else can we change to avoid impacting exclusion?
       - Should be possible to start appointment requests out of hours
 
