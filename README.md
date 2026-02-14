@@ -39,10 +39,16 @@ The focus throughout is **patient access**, not clinical care quality.
 
 ## Main concerns
 
-1. **Digital‑only booking and exclusion**
-  - Access is effectively **digital‑only**
-    - No simple “walk in and make an appointment” route and impossible to book by phone without being sent back online.
-  - Excludes patients without stable internet/devices, no daytime availability, lacking confidence with forms, and adds friction even for confident users.
+1. **Web-only booking**
+  - Access is **digital‑only**
+    - No simple “walk in and make an appointment” route
+    - Told "You have to go online" every time in reception
+  - Excludes patients with:
+    - No stable internet/devices, old devices (3yr+ phones/tablets, netbooks)
+    - Poor or non-technical, hesistancy/confusion with forms
+    - No daytime availability
+    - Adds friction even for confident users
+  - NEED Access route that doesn't rely on the website
 
 2. **Unscheduled missed calls cause deletion/resubmission loop**
   - If the doctor calls for triage OR the receptionist calls to arrange an appointment, and the patient misses two **unscheduled** calls, with no route to schedule or bypass the call, the **request is closed** and the patient must start over.
@@ -61,21 +67,17 @@ The focus throughout is **patient access**, not clinical care quality.
       - Doctor claims it avoids missing urgent/emergency contacts. Evidence?
       - Should be possible to start appointment requests out of hours
 
-5. **Web-only appointments**
-  - Can't ask for appointment at reception in person, or via phone
-    - NEED Access route that doesn't rely on the website
-
-6. **Metrics vs reality**
+5. **Metrics vs reality**
   - Please investigate lost/excluded patients
   - No active complaints procedure beyond PPG
     - [Contact the practice](https://newbank.nhs.uk/form/contact-the-practice/) shows `Form Unavailable`
 
-7. **Loss of continuity: Diagnostic delay**
+6. **Loss of continuity: Diagnostic delay**
   - When tests come back all green, no follow-up with the patient
   - Compounded by 'hard to start' and 'easy to fail' workflow
     - How to improve focus from 'tasks' to patients' real issues?
 
-8. **Slow change rate from PPG**
+7. **Slow change rate from PPG**
   - Took a year to fix a simple problem
     - Well documented, but not well communicated
     - PATCHs intro delayed addressing phone-blocker
