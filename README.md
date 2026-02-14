@@ -74,6 +74,15 @@ The focus throughout is **patient access**, not clinical care quality.
   - When tests come back all green, no follow-up with the patient
   - Compounded by 'hard to start' and 'easy to fail' workflow
     - How to improve focus from 'tasks' to patients' real issues?
+
+8. **Slow change rate from PPG**
+  - Took a year to fix a simple problem
+    - Well documented, but not well communicated
+    - PATCHs intro delayed addressing phone-blocker
+    - Staff shortage deprioritised change
+    - Long waits between meetings prevented nagging
+  - What is the pattern for actioning change in future?
+    - What is (and who has) the evidence burden?
     
 ---
 
