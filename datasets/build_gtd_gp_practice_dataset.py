@@ -31,6 +31,13 @@ class GTDAnchor:
     nhs_name_hint: str | None = None
 
 
+@dataclass(frozen=True)
+class SupplementalSearchCenter:
+    name: str
+    postcode: str
+    scope_note: str
+
+
 GTD_ANCHORS = [
     GTDAnchor("Ashton GP Service", "https://www.gtdhealthcare.co.uk/ashtongpservice", "OL6 7SR", "Y02586"),
     GTDAnchor("Charlestown Medical Practice", "https://www.gtdhealthcare.co.uk/charlestownmedicalpractice", "M9 7ED", "Y02325", "Charlestown MD"),
@@ -45,6 +52,15 @@ GTD_ANCHORS = [
     GTDAnchor("New Bank Health Centre", "https://www.gtdhealthcare.co.uk/newbankhealthcentre", "M12 4JE", "Y02960", "New Bank Health"),
     GTDAnchor("Simpson Medical Practice", "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice", "M40 9NB", "Y02520"),
     GTDAnchor("The Smithy Surgery", "https://www.gtdhealthcare.co.uk/thesmithysurgery", "SK14 8LJ", "P89602"),
+]
+
+
+SUPPLEMENTAL_SEARCH_CENTERS = [
+    SupplementalSearchCenter("Chorlton supplemental search", "M21 8AU", "Pull in south-west Manchester and Chorlton-side practices"),
+    SupplementalSearchCenter("Wythenshawe supplemental search", "M22 5RX", "Pull in Wythenshawe and airport-side practices"),
+    SupplementalSearchCenter("Baguley supplemental search", "M23 9JH", "Pull in Baguley, Brooklands, Northern Moor and nearby south Manchester practices"),
+    SupplementalSearchCenter("Stretford supplemental search", "M32 0JG", "Pull in Trafford / Stretford / west Manchester practices"),
+    SupplementalSearchCenter("Sale supplemental search", "M33 7ZF", "Pull in Sale-side practices that the GTD anchors miss"),
 ]
 
 
@@ -347,8 +363,20 @@ def resolve_anchor(anchor: GTDAnchor) -> dict[str, Any]:
     }
 
 
+def resolve_supplemental_center(center: SupplementalSearchCenter) -> dict[str, Any]:
+    geo = postcode_lookup(center.postcode)
+    return {
+        "name": center.name,
+        "postcode": center.postcode,
+        "scope_note": center.scope_note,
+        "latitude": float(geo["latitude"]),
+        "longitude": float(geo["longitude"]),
+    }
+
+
 def build_dataset() -> list[dict[str, Any]]:
     resolved_anchors = [resolve_anchor(anchor) for anchor in GTD_ANCHORS]
+    resolved_supplementals = [resolve_supplemental_center(center) for center in SUPPLEMENTAL_SEARCH_CENTERS]
     anchor_codes = {anchor["ods_code"]: anchor for anchor in resolved_anchors}
     practice_index: dict[str, dict[str, Any]] = {}
 
@@ -371,6 +399,30 @@ def build_dataset() -> list[dict[str, Any]]:
             if anchor["gtd_site_name"] not in entry["nearby_to_gtd_anchors"]:
                 entry["nearby_to_gtd_anchors"].append(anchor["gtd_site_name"])
             entry["nearby_anchor_search_distances_miles"][anchor["gtd_site_name"]] = row["distance_miles"]
+            source_centers = entry.setdefault("source_search_centers", [])
+            if anchor["gtd_site_name"] not in source_centers:
+                source_centers.append(anchor["gtd_site_name"])
+
+    for center in resolved_supplementals:
+        search_html = fetch_text(anchor_search_url(center["latitude"], center["longitude"], center["postcode"]))
+        nearby = parse_nhs_search_results(search_html)
+        for row in nearby:
+            entry = practice_index.setdefault(
+                row["profile_url"],
+                {
+                    "initial_profile_url": row["profile_url"],
+                    "search_result_name": row["name"],
+                    "search_result_address": row["address"],
+                    "search_result_phone": row["phone"],
+                    "search_result_ods_code": row["ods_code"],
+                    "nearby_to_gtd_anchors": [],
+                    "nearby_anchor_search_distances_miles": {},
+                    "source_search_centers": [],
+                },
+            )
+            source_centers = entry.setdefault("source_search_centers", [])
+            if center["name"] not in source_centers:
+                source_centers.append(center["name"])
 
     records: list[dict[str, Any]] = []
     total = len(practice_index)
@@ -395,6 +447,8 @@ def build_dataset() -> list[dict[str, Any]]:
             "gtd_site_url": matched_anchor["gtd_url"] if matched_anchor else "",
             "nearby_to_gtd_anchors": ", ".join(sorted(practice["nearby_to_gtd_anchors"])),
             "nearby_anchor_count": len(practice["nearby_to_gtd_anchors"]),
+            "source_search_centers": ", ".join(sorted(practice.get("source_search_centers", []))),
+            "source_search_center_count": len(practice.get("source_search_centers", [])),
         }
         min_distance = None
         if practice["nearby_to_gtd_anchors"]:
@@ -433,6 +487,8 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "gtd_site_url",
         "nearby_to_gtd_anchors",
         "nearby_anchor_count",
+        "source_search_centers",
+        "source_search_center_count",
         "min_distance_to_gtd_anchor_miles",
         "google_review_score",
         "google_review_count",
@@ -472,10 +528,15 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "postcode_geocoder": "https://api.postcodes.io/",
             "google_review_mirror": "https://justvisits.co.uk/",
         },
+        "supplemental_search_centers": [
+            {"name": center.name, "postcode": center.postcode, "scope_note": center.scope_note}
+            for center in SUPPLEMENTAL_SEARCH_CENTERS
+        ],
         "notes": [
             "Google review fields were only filled when an exact or high-confidence Just Visits match was available.",
             "Trustpilot fields were left blank because no reliable per-practice public source was found in this run.",
             "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
+            "Additional south and west Manchester coverage was added with explicit supplemental NHS search centres.",
         ],
     }
     path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -505,6 +566,7 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
+- Supplemental south/west Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M32 0JG, M33 7ZF
 
 Coverage snapshot:
 

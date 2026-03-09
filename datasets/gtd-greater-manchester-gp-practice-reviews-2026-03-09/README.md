@@ -20,13 +20,14 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
+- Supplemental south/west Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M32 0JG, M33 7ZF
 
 Coverage snapshot:
 
-- total rows: 192
+- total rows: 258
 - GTD-managed rows: 13
-- non-GTD nearby rows: 179
-- Google review coverage rows: 8
+- non-GTD nearby rows: 245
+- Google review coverage rows: 12
 
 Caveats:
 
