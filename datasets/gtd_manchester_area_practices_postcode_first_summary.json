@@ -1,0 +1,42 @@
+{
+  "generated_date": "2026-03-09",
+  "scope_note": "Postcode-first generous Manchester-area catchment around GTD-managed GP practices and their surrounding PCN memberships. Coordinates intentionally omitted.",
+  "row_count": 65,
+  "gtd_managed_count": 9,
+  "borough_counts": {
+    "Manchester": 31,
+    "Tameside": 23,
+    "Oldham": 11
+  },
+  "pcn_counts": {
+    "Oldham Central PCN": 11,
+    "Ardwick and Longsight PCN": 9,
+    "Higher Blackley, Harpurhey and Charlestown PCN": 9,
+    "Stalybridge, Dukinfield and Mossley PCN": 9,
+    "Ashton PCN": 8,
+    "Miles Platting, Newton Heath and Moston PCN": 7,
+    "Denton PCN": 6,
+    "Robert Darbishire Practice PCN": 3,
+    "City Centre and Ancoats PCN": 3
+  },
+  "postcode_district_counts": {
+    "M1": 1,
+    "M12": 2,
+    "M13": 6,
+    "M14": 3,
+    "M16": 1,
+    "M34": 3,
+    "M4": 2,
+    "M40": 7,
+    "M43": 3,
+    "M9": 9,
+    "OL1": 6,
+    "OL4": 4,
+    "OL5": 2,
+    "OL6": 5,
+    "OL7": 3,
+    "OL8": 1,
+    "SK15": 5,
+    "SK16": 2
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "generated_date": "2026-03-09",
+  "center": {
+    "name": "New Bank Health Centre",
+    "postcode": "M12 4JE",
+    "latitude": 53.460123323103,
+    "longitude": -2.2043841286073
+  },
+  "requested_area": "within a mile or so of New Bank Health Centre, Longsight",
+  "strict_radius_miles": 1.0,
+  "soft_radius_miles": 1.1,
+  "counts": {
+    "within_1_mile": 9,
+    "within_1_1_miles": 12,
+    "total_rows": 12
+  },
+  "caveats": [
+    "Coordinates are postcode/site-level points suitable for local web mapping, not surveyed parcel centroids.",
+    "Google review fields are only filled where a third-party indexed snippet exposed an estimate; those values are not direct Google Maps verifications.",
+    "CQC and HealthSay/GPPS-style fields were more consistently verifiable than Google review stars in public indexable results."
+  ]
+}

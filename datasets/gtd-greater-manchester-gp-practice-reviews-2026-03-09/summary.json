@@ -1,0 +1,48 @@
+{
+  "generated_date": "2026-03-09",
+  "scope": "All GTD Healthcare GP practice anchors from the GTD Healthcare GP practices page, plus every NHS Find a GP surgery result within 1 mile of each GTD anchor.",
+  "radius_miles": 1.0,
+  "row_count": 78,
+  "gtd_managed_count": 12,
+  "non_gtd_count": 66,
+  "google_review_coverage_count": 1,
+  "trustpilot_coverage_count": 0,
+  "postcode_area_count": 24,
+  "postcode_areas": [
+    "M1",
+    "M12",
+    "M13",
+    "M14",
+    "M18",
+    "M19",
+    "M24",
+    "M3",
+    "M34",
+    "M4",
+    "M40",
+    "M43",
+    "M7",
+    "M9",
+    "OL1",
+    "OL4",
+    "OL5",
+    "OL6",
+    "OL7",
+    "OL8",
+    "OL9",
+    "SK14",
+    "SK15",
+    "SK16"
+  ],
+  "source_urls": {
+    "gtd_gp_practices_page": "https://www.gtdhealthcare.co.uk/patient-services/gp-practices",
+    "nhs_find_a_gp": "https://www.nhs.uk/service-search/find-a-gp",
+    "postcode_geocoder": "https://api.postcodes.io/",
+    "google_review_mirror": "https://justvisits.co.uk/"
+  },
+  "notes": [
+    "Google review fields were only filled when an exact or high-confidence Just Visits match was available.",
+    "Trustpilot fields were left blank because no reliable per-practice public source was found in this run.",
+    "NHS search pages sometimes include results beyond the requested radius, so the dataset additionally filters to 1.0 miles using the result-page distance text."
+  ]
+}

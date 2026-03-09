@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Longsight GP practices near New Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <style>
+    html, body, #map { height: 100%; margin: 0; }
+    .panel {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      padding: 10px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      font: 14px/1.4 system-ui, sans-serif;
+      max-width: 420px;
+    }
+    .panel code { background: #f4f4f4; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="panel">
+    <div><strong>Longsight GP practices near New Bank</strong></div>
+    <div>Centre: New Bank Health Centre (M12 4JE)</div>
+    <div>Blue = within 1.0 mile, orange = 1.0–1.1 miles</div>
+    <div>Serve locally via <code>python -m http.server</code> in this folder.</div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script>
+    const center = [53.460123323103, -2.2043841286073];
+    const map = L.map('map').setView(center, 14);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.circle(center, {
+      radius: 1609.34,
+      color: '#2563eb',
+      fill: false,
+      weight: 2
+    }).addTo(map);
+
+    L.circle(center, {
+      radius: 1770.274,
+      color: '#f59e0b',
+      fill: false,
+      weight: 1,
+      dashArray: '6 6'
+    }).addTo(map);
+
+    L.marker(center).addTo(map).bindPopup('<strong>New Bank Health Centre</strong><br>M12 4JE');
+
+    fetch('longsight_gp_practices_radiusish.geojson')
+      .then(r => r.json())
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          pointToLayer: (feature, latlng) => {
+            const color = feature.properties.within_1_mile ? '#2563eb' : '#f59e0b';
+            return L.circleMarker(latlng, {
+              radius: 7,
+              color,
+              fillColor: color,
+              fillOpacity: 0.9,
+              weight: 1
+            });
+          },
+          onEachFeature: (feature, layer) => {
+            const p = feature.properties;
+            const popup = `
+              <div style="min-width:260px">
+                <strong>${p.practice_name}</strong><br>
+                ${p.site_name}<br>
+                ODS: ${p.ods_code}<br>
+                ${p.address_1}, ${p.locality}, ${p.city}, ${p.postcode}<br>
+                Distance: ${p.distance_miles_from_new_bank} mi<br>
+                CQC: ${p.cqc_overall_rating}<br>
+                HealthSay: ${p.healthsay_score_100}/100<br>
+                GPPS overall/contact: ${p.gpps_overall_experience_pct}% / ${p.gpps_contact_experience_pct}%<br>
+                Google est.: ${p.google_review_score_estimate ?? 'n/a'}${p.google_review_count_estimate ? ' (' + p.google_review_count_estimate + ' reviews)' : ''}
+              </div>
+            `;
+            layer.bindPopup(popup);
+          }
+        }).addTo(map);
+        map.fitBounds(layer.getBounds().pad(0.2));
+      });
+  </script>
+</body>
+</html>

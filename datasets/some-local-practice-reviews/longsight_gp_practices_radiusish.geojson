@@ -1,0 +1,504 @@
+{
+  "type": "FeatureCollection",
+  "name": "longsight_gp_practices_radiusish",
+  "center": {
+    "name": "New Bank Health Centre",
+    "postcode": "M12 4JE",
+    "latitude": 53.460123323103,
+    "longitude": -2.2043841286073
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2043841286073,
+          53.460123323103
+        ]
+      },
+      "properties": {
+        "practice_name": "New Bank Health Centre",
+        "site_name": "New Bank Health Centre",
+        "ods_code": "Y02960",
+        "address_1": "339 Stockport Road",
+        "locality": "Longsight",
+        "city": "Manchester",
+        "postcode": "M12 4JE",
+        "latitude": 53.460123323103,
+        "longitude": -2.2043841286073,
+        "practice_website": "https://newbank.nhs.uk/",
+        "cqc_overall_rating": "Not yet inspected by current provider; inherited Good from previous provider",
+        "cqc_provider_note": "Current provider GoToDoc Limited registered 2025-07-08; CQC page says inherited ratings from previous provider.",
+        "healthsay_score_100": 66,
+        "gpps_overall_experience_pct": 67.0,
+        "gpps_contact_experience_pct": 64.0,
+        "patients_per_gp_fte": 2459,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "Officially NHS-linked GP practice. Google review figure was not reliably verifiable from publicly indexable sources.",
+        "distance_miles_from_new_bank": 0.0,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "New Bank Health Centre (0.0 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2019,
+          53.4576
+        ]
+      },
+      "properties": {
+        "practice_name": "Manchester Integrative Medical Practice",
+        "site_name": "Longsight Health Centre",
+        "ods_code": "P84689",
+        "address_1": "526-528 Stockport Road",
+        "locality": "Longsight",
+        "city": "Manchester",
+        "postcode": "M13 0RR",
+        "latitude": 53.4576,
+        "longitude": -2.2019,
+        "practice_website": "https://www.longsightmedicalpractice.com",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Service location Longsight Health Centre is rated Good by CQC.",
+        "healthsay_score_100": 63,
+        "gpps_overall_experience_pct": 67.0,
+        "gpps_contact_experience_pct": 53.0,
+        "patients_per_gp_fte": 1621,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": 2.2,
+        "google_review_count_estimate": 91.0,
+        "google_review_source": "Birdeye search snippet; not direct Google verification",
+        "google_verified_direct": false,
+        "notes": "Google estimate came from a third-party aggregator snippet, not a directly verifiable Google Maps fetch.",
+        "distance_miles_from_new_bank": 0.202,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "Manchester Integrative Medical Practice (0.202 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.202285,
+          53.456107
+        ]
+      },
+      "properties": {
+        "practice_name": "Dickenson Road Medical Centre",
+        "site_name": "Dickenson Road Medical Centre",
+        "ods_code": "P84026",
+        "address_1": "357-359 Dickenson Road",
+        "locality": "Longsight",
+        "city": "Manchester",
+        "postcode": "M13 0WQ",
+        "latitude": 53.456107,
+        "longitude": -2.202285,
+        "practice_website": "https://www.dickensonroadmc.nhs.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 52,
+        "gpps_overall_experience_pct": 54.6,
+        "gpps_contact_experience_pct": 47.6,
+        "patients_per_gp_fte": 2093,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "Worst HealthSay score among the <=1 mile set in the available indexed data.",
+        "distance_miles_from_new_bank": 0.291,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "Dickenson Road Medical Centre (0.291 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.208542,
+          53.454175
+        ]
+      },
+      "properties": {
+        "practice_name": "Ailsa Craig Medical Centre",
+        "site_name": "Ailsa Craig Medical Centre",
+        "ods_code": "P84009",
+        "address_1": "270 Dickenson Road",
+        "locality": "Longsight",
+        "city": "Manchester",
+        "postcode": "M13 0YL",
+        "latitude": 53.454175,
+        "longitude": -2.208542,
+        "practice_website": "https://www.ailsacraigmedicalpractice.co.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 72,
+        "gpps_overall_experience_pct": 75.9,
+        "gpps_contact_experience_pct": 62.9,
+        "patients_per_gp_fte": 1845,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "",
+        "distance_miles_from_new_bank": 0.445,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "Ailsa Craig Medical Centre (0.445 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.203859,
+          53.467205
+        ]
+      },
+      "properties": {
+        "practice_name": "West Gorton Medical Practice",
+        "site_name": "West Gorton Medical Centre",
+        "ods_code": "P84052",
+        "address_1": "2 Clowes Street",
+        "locality": "West Gorton",
+        "city": "Manchester",
+        "postcode": "M12 5JE",
+        "latitude": 53.467205,
+        "longitude": -2.203859,
+        "practice_website": "https://westgortonmedicalcentre.co.uk/",
+        "cqc_overall_rating": "Outstanding",
+        "cqc_provider_note": "Current CQC profile shows overall Outstanding.",
+        "healthsay_score_100": 100,
+        "gpps_overall_experience_pct": 88.0,
+        "gpps_contact_experience_pct": 74.0,
+        "patients_per_gp_fte": 1004,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "Best overall CQC/HealthSay combination in this radius-filtered set.",
+        "distance_miles_from_new_bank": 0.49,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "West Gorton Medical Practice (0.49 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.218728,
+          53.458264
+        ]
+      },
+      "properties": {
+        "practice_name": "Surrey Lodge Practice",
+        "site_name": "Surrey Lodge Group Practice",
+        "ods_code": "P84023",
+        "address_1": "11 Anson Road",
+        "locality": "Victoria Park",
+        "city": "Manchester",
+        "postcode": "M14 5BY",
+        "latitude": 53.458264,
+        "longitude": -2.218728,
+        "practice_website": "https://surreylodge.co.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 80,
+        "gpps_overall_experience_pct": 78.0,
+        "gpps_contact_experience_pct": 84.0,
+        "patients_per_gp_fte": 1832,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": 2.6,
+        "google_review_count_estimate": 128.0,
+        "google_review_source": "Birdeye search snippet; not direct Google verification",
+        "google_verified_direct": false,
+        "notes": "Google estimate came from a third-party aggregator snippet.",
+        "distance_miles_from_new_bank": 0.604,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "Surrey Lodge Practice (0.604 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.190843,
+          53.453189
+        ]
+      },
+      "properties": {
+        "practice_name": "Parkside Surgery",
+        "site_name": "Parkside Medical Centre",
+        "ods_code": "P84644",
+        "address_1": "187 Northmoor Road",
+        "locality": "Longsight",
+        "city": "Manchester",
+        "postcode": "M12 5RU",
+        "latitude": 53.453189,
+        "longitude": -2.190843,
+        "practice_website": "https://www.parksidemedical.org.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 65,
+        "gpps_overall_experience_pct": 69.0,
+        "gpps_contact_experience_pct": 55.0,
+        "patients_per_gp_fte": 2296,
+        "gpratings_label": "Bad!",
+        "gpratings_count": 79.0,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "GPRatings has 79 patient reviews; no directly verifiable Google Maps score surfaced in indexed results.",
+        "distance_miles_from_new_bank": 0.735,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "Parkside Surgery (0.735 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2228,
+          53.4522
+        ]
+      },
+      "properties": {
+        "practice_name": "Wilmslow Road Surgery",
+        "site_name": "Wilmslow Road Medical Centre",
+        "ods_code": "P84626",
+        "address_1": "156 Wilmslow Road",
+        "locality": "Rusholme",
+        "city": "Manchester",
+        "postcode": "M14 5LQ",
+        "latitude": 53.4522,
+        "longitude": -2.2228,
+        "practice_website": "https://www.wilmslowroadmedicalcentre.co.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 65,
+        "gpps_overall_experience_pct": 66.0,
+        "gpps_contact_experience_pct": 63.0,
+        "patients_per_gp_fte": 2313,
+        "gpratings_label": "No ratings yet",
+        "gpratings_count": 0.0,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "",
+        "distance_miles_from_new_bank": 0.935,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "Wilmslow Road Surgery (0.935 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.226177,
+          53.454626
+        ]
+      },
+      "properties": {
+        "practice_name": "The Robert Darbishire Practice",
+        "site_name": "The Robert Darbishire Practice",
+        "ods_code": "P84072",
+        "address_1": "Rusholme Health Centre, Walmer Street",
+        "locality": "Rusholme",
+        "city": "Manchester",
+        "postcode": "M14 5NP",
+        "latitude": 53.454626,
+        "longitude": -2.226177,
+        "practice_website": "https://rdp.org.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 61,
+        "gpps_overall_experience_pct": 60.0,
+        "gpps_contact_experience_pct": 63.0,
+        "patients_per_gp_fte": 2099,
+        "gpratings_label": "Poor!",
+        "gpratings_count": 79.0,
+        "google_review_score_estimate": 2.5,
+        "google_review_count_estimate": 234.0,
+        "google_review_source": "Yably search snippet; not direct Google verification",
+        "google_verified_direct": false,
+        "notes": "Third-party snippets disagree on total review counts across all sources, but the indexed Google-specific estimate was 2.5/5 from 234 reviews.",
+        "distance_miles_from_new_bank": 0.974,
+        "within_1_mile": true,
+        "within_1_1_miles": true,
+        "radius_bucket": "<=1.0 mile",
+        "nhs_linked_gp": true,
+        "map_label": "The Robert Darbishire Practice (0.974 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.22454,
+          53.469802
+        ]
+      },
+      "properties": {
+        "practice_name": "Ardwick Medical Practice",
+        "site_name": "Ardwick Medical Practice",
+        "ods_code": "P84037",
+        "address_1": "The Vallance Centre, Wadeson Road",
+        "locality": "Chorlton-on-Medlock",
+        "city": "Manchester",
+        "postcode": "M13 9UJ",
+        "latitude": 53.469802,
+        "longitude": -2.22454,
+        "practice_website": "",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile indicates the practice is an inspected CQC-registered GP service.",
+        "healthsay_score_100": 72,
+        "gpps_overall_experience_pct": 76.0,
+        "gpps_contact_experience_pct": 65.0,
+        "patients_per_gp_fte": 1473,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "Just outside 1.0 mile from New Bank, but included because it is within the user's 'mile or so' wording.",
+        "distance_miles_from_new_bank": 1.065,
+        "within_1_mile": false,
+        "within_1_1_miles": true,
+        "radius_bucket": "1.0-1.1 miles",
+        "nhs_linked_gp": true,
+        "map_label": "Ardwick Medical Practice (1.065 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.22454,
+          53.469802
+        ]
+      },
+      "properties": {
+        "practice_name": "Brunswick Medical Practice",
+        "site_name": "Brunswick Medical Practice",
+        "ods_code": "P84611",
+        "address_1": "The Vallance Centre, Wadeson Road",
+        "locality": "Chorlton-on-Medlock",
+        "city": "Manchester",
+        "postcode": "M13 9UJ",
+        "latitude": 53.469802,
+        "longitude": -2.22454,
+        "practice_website": "",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 86,
+        "gpps_overall_experience_pct": 88.0,
+        "gpps_contact_experience_pct": 80.0,
+        "patients_per_gp_fte": 2371,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "Just outside 1.0 mile from New Bank, but included because it is within the user's 'mile or so' wording.",
+        "distance_miles_from_new_bank": 1.065,
+        "within_1_mile": false,
+        "within_1_1_miles": true,
+        "radius_bucket": "1.0-1.1 miles",
+        "nhs_linked_gp": true,
+        "map_label": "Brunswick Medical Practice (1.065 mi)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.22454,
+          53.469802
+        ]
+      },
+      "properties": {
+        "practice_name": "Vallance Medical",
+        "site_name": "Vallance Medical",
+        "ods_code": "P84005",
+        "address_1": "The Vallance Centre, Brunswick Street",
+        "locality": "Chorlton-on-Medlock",
+        "city": "Manchester",
+        "postcode": "M13 9UJ",
+        "latitude": 53.469802,
+        "longitude": -2.22454,
+        "practice_website": "https://www.vallancemedical.nhs.uk/",
+        "cqc_overall_rating": "Good",
+        "cqc_provider_note": "Current CQC profile shows overall Good.",
+        "healthsay_score_100": 78,
+        "gpps_overall_experience_pct": 74.0,
+        "gpps_contact_experience_pct": 88.0,
+        "patients_per_gp_fte": 3363,
+        "gpratings_label": "",
+        "gpratings_count": NaN,
+        "google_review_score_estimate": NaN,
+        "google_review_count_estimate": NaN,
+        "google_review_source": "",
+        "google_verified_direct": false,
+        "notes": "Just outside 1.0 mile from New Bank, but included because it is within the user's 'mile or so' wording.",
+        "distance_miles_from_new_bank": 1.065,
+        "within_1_mile": false,
+        "within_1_1_miles": true,
+        "radius_bucket": "1.0-1.1 miles",
+        "nhs_linked_gp": true,
+        "map_label": "Vallance Medical (1.065 mi)"
+      }
+    }
+  ]
+}

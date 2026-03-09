@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GTD Manchester-area GP practices (postcode-first)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  margin: 24px;
+  color: #111;
+}
+h1 { margin: 0 0 8px; font-size: 24px; }
+p { margin: 0 0 14px; }
+.controls {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 18px 0;
+}
+input, select {
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font: inherit;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 6px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+.tag {
+  display: inline-block;
+  border: 1px solid #d0d0d0;
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.small { color: #555; font-size: 12px; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 18px 0 10px;
+}
+pre {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 10px;
+  overflow: auto;
+}
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  background: white;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>GTD Manchester-area GP practices, postcode-first</h1>
+<p>This is the generous overscoped set around GTD-managed GP anchors in Manchester / Tameside / Oldham. Search by postcode prefix like <code>M1</code>, <code>M9</code>, <code>M40</code>, <code>OL1</code>, <code>SK15</code>.</p>
+
+<div class="grid">
+  <div>
+    <strong>District counts</strong>
+    <pre>postcode_district  count
+               M1      1
+              M12      2
+              M13      6
+              M14      3
+              M16      1
+              M34      3
+               M4      2
+              M40      7
+              M43      3
+               M9      9
+              OL1      6
+              OL4      4
+              OL5      2
+              OL6      5
+              OL7      3
+              OL8      1
+             SK15      5
+             SK16      2</pre>
+  </div>
+  <div>
+    <strong>PCN counts</strong>
+    <pre>borough_group                                       pcn_name  count
+   Manchester                      Ardwick and Longsight PCN      9
+   Manchester                    City Centre and Ancoats PCN      3
+   Manchester Higher Blackley, Harpurhey and Charlestown PCN      9
+   Manchester    Miles Platting, Newton Heath and Moston PCN      7
+   Manchester                 Robert Darbishire Practice PCN      3
+       Oldham                             Oldham Central PCN     11
+     Tameside                                     Ashton PCN      8
+     Tameside                                     Denton PCN      6
+     Tameside        Stalybridge, Dukinfield and Mossley PCN      9</pre>
+  </div>
+</div>
+
+<div class="controls">
+  <input id="q" placeholder="Search practice / postcode / district / street / borough">
+  <select id="borough">
+    <option value="">All borough groups</option>
+  </select>
+  <select id="pcn">
+    <option value="">All PCNs</option>
+  </select>
+  <select id="gtd">
+    <option value="">All practices</option>
+    <option value="true">GTD-managed only</option>
+    <option value="false">Non-GTD only</option>
+  </select>
+</div>
+
+<div class="small" id="count"></div>
+<p>
+  <button id="downloadCsv">Download filtered CSV</button>
+</p>
+
+<table id="tbl">
+  <thead>
+    <tr>
+      <th>Practice</th>
+      <th>Postcode</th>
+      <th>PCN</th>
+      <th>Borough</th>
+      <th>GTD</th>
+      <th>Address/site</th>
+      <th>CQC</th>
+      <th>Google est.</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+const rows = [{"practice_name": "Parkside Surgery", "ods_code": "P84644", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "187 Northmoor Road", "postcode": "M12 5RU", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M12", "search_key": "parkside surgery | ardwick and longsight pcn | 187 northmoor road | m12 5ru | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Manchester Integrative Medical Practice", "ods_code": "P84689", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "526-528 Stockport Road, Longsight", "postcode": "M13 0RR", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M13", "search_key": "manchester integrative medical practice | ardwick and longsight pcn | 526-528 stockport road, longsight | m13 0rr | manchester", "google_review_score_estimate": 2.2, "google_review_count_estimate": 91.0, "google_review_source": "third-party snippet"}, {"practice_name": "Dickenson Road Medical Centre", "ods_code": "P84026", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "357-359 Dickenson Road", "postcode": "M13 0WQ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M13", "search_key": "dickenson road medical centre | ardwick and longsight pcn | 357-359 dickenson road | m13 0wq | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Ailsa Craig Medical Centre", "ods_code": "P84009", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "270 Dickenson Road, Longsight", "postcode": "M13 0YL", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M13", "search_key": "ailsa craig medical centre | ardwick and longsight pcn | 270 dickenson road, longsight | m13 0yl | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Ardwick Medical Practice", "ods_code": "P84037", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "The Vallance Medical Centre, Wadeson Road", "postcode": "M13 9UJ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M13", "search_key": "ardwick medical practice | ardwick and longsight pcn | the vallance medical centre, wadeson road | m13 9uj | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Dr Ngan and Partners (Vallance Medical)", "ods_code": "P84005", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "The Vallance Medical Centre, Wadeson Road", "postcode": "M13 9UJ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M13", "search_key": "dr ngan and partners (vallance medical) | ardwick and longsight pcn | the vallance medical centre, wadeson road | m13 9uj | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Drs Chiu, Koh and Gan", "ods_code": "P84611", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "The Vallance Medical Centre, Wadeson Road", "postcode": "M13 9UJ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M13", "search_key": "drs chiu, koh and gan | ardwick and longsight pcn | the vallance medical centre, wadeson road | m13 9uj | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Surrey Lodge Group Practice", "ods_code": "P84023", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "11 Anson Road", "postcode": "M14 5BY", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M14", "search_key": "surrey lodge group practice | ardwick and longsight pcn | 11 anson road | m14 5by | manchester", "google_review_score_estimate": 2.6, "google_review_count_estimate": 128.0, "google_review_source": "third-party snippet"}, {"practice_name": "Wilmslow Road Surgery", "ods_code": "P84626", "pcn_name": "Ardwick and Longsight PCN", "borough_group": "Manchester", "site_or_address": "156 Wilmslow Road", "postcode": "M14 5LQ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M14", "search_key": "wilmslow road surgery | ardwick and longsight pcn | 156 wilmslow road | m14 5lq | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "City Health Centre", "ods_code": "Y02849", "pcn_name": "City Centre and Ancoats PCN", "borough_group": "Manchester", "site_or_address": "2nd Floor, Boots, 32 Market Street", "postcode": "M1 1PL", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M1", "search_key": "city health centre | city centre and ancoats pcn | 2nd floor, boots, 32 market street | m1 1pl | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Ancoats Urban Village Medical Practice", "ods_code": "P84673", "pcn_name": "City Centre and Ancoats PCN", "borough_group": "Manchester", "site_or_address": "Ancoats Primary Care Centre, Old Mill Street", "postcode": "M4 6EE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M4", "search_key": "ancoats urban village medical practice | city centre and ancoats pcn | ancoats primary care centre, old mill street | m4 6ee | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "New Islington Medical Practice", "ods_code": "P84064", "pcn_name": "City Centre and Ancoats PCN", "borough_group": "Manchester", "site_or_address": "Ancoats Primary Care Centre, Old Mill Street", "postcode": "M4 6EE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M4", "search_key": "new islington medical practice | city centre and ancoats pcn | ancoats primary care centre, old mill street | m4 6ee | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Beacon Medical Centre", "ods_code": "P84033", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "156 Victoria Avenue, Blackley", "postcode": "M9 0FN", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "beacon medical centre | higher blackley, harpurhey and charlestown pcn | 156 victoria avenue, blackley | m9 0fn | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Church View Medical Centre", "ods_code": "P84065", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "1 Church Lane, Harpurhey", "postcode": "M9 4BE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "church view medical centre | higher blackley, harpurhey and charlestown pcn | 1 church lane, harpurhey | m9 4be | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Willowbank Surgery", "ods_code": "P84679", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "1 Willow Bank, Church Lane", "postcode": "M9 4WH", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "willowbank surgery | higher blackley, harpurhey and charlestown pcn | 1 willow bank, church lane | m9 4wh | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Conran Medical Centre", "ods_code": "P84040", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "77 Church Lane, Harpurhey", "postcode": "M9 5BH", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "conran medical centre | higher blackley, harpurhey and charlestown pcn | 77 church lane, harpurhey | m9 5bh | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Fernclough Surgery", "ods_code": "P84605", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "Tavistock Square", "postcode": "M9 5RD", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "fernclough surgery | higher blackley, harpurhey and charlestown pcn | tavistock square | m9 5rd | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "The Avenue Medical Centre", "ods_code": "P84049", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "51-53 Victoria Avenue, Blackley", "postcode": "M9 6BA", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "the avenue medical centre | higher blackley, harpurhey and charlestown pcn | 51-53 victoria avenue, blackley | m9 6ba | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Charlestown Medical Practice", "ods_code": "Y02325", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "Charlestown Road / Charlestown Health Centre", "postcode": "M9 7ED", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Not yet inspected by current provider; inherited Good", "postcode_district": "M9", "search_key": "charlestown medical practice | higher blackley, harpurhey and charlestown pcn | charlestown road / charlestown health centre | m9 7ed | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Dam Head Medical Centre", "ods_code": "P84690", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "1020 Rochdale Road, Blackley", "postcode": "M9 7HD", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "dam head medical centre | higher blackley, harpurhey and charlestown pcn | 1020 rochdale road, blackley | m9 7hd | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Valentine Medical Centre", "ods_code": "P84019", "pcn_name": "Higher Blackley, Harpurhey and Charlestown PCN", "borough_group": "Manchester", "site_or_address": "2 Smethurst Street, Blackley", "postcode": "M9 8PP", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M9", "search_key": "valentine medical centre | higher blackley, harpurhey and charlestown pcn | 2 smethurst street, blackley | m9 8pp | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Droylsden Road Family Practice", "ods_code": "", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "Newton Heath Health Centre, 2 Old Church Street", "postcode": "M40 2JF", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Appears on CQC as GoToDoc-run site; active status should be checked separately", "postcode_district": "M40", "search_key": "droylsden road family practice | miles platting, newton heath and moston pcn | newton heath health centre, 2 old church street | m40 2jf | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Newton Heath Medical Centre", "ods_code": "P84070", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "Newton Heath Health Centre, 2 Old Church Street", "postcode": "M40 2JF", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M40", "search_key": "newton heath medical centre | miles platting, newton heath and moston pcn | newton heath health centre, 2 old church street | m40 2jf | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Hazeldene Medical Centre", "ods_code": "P84067", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "97 Moston Lane East, New Moston", "postcode": "M40 3HD", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M40", "search_key": "hazeldene medical centre | miles platting, newton heath and moston pcn | 97 moston lane east, new moston | m40 3hd | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "St George's Medical Centre", "ods_code": "P84025", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "St Georges Drive, Moston", "postcode": "M40 5HP", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M40", "search_key": "st george's medical centre | miles platting, newton heath and moston pcn | st georges drive, moston | m40 5hp | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Victoria Mill Medical Practice", "ods_code": "", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "10 Lower Vickers Street, Miles Platting", "postcode": "M40 7LH", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M40", "search_key": "victoria mill medical practice | miles platting, newton heath and moston pcn | 10 lower vickers street, miles platting | m40 7lh | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Whitley Road Medical Centre", "ods_code": "P84054", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "1 Whitley Road, Collyhurst", "postcode": "M40 7QH", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M40", "search_key": "whitley road medical centre | miles platting, newton heath and moston pcn | 1 whitley road, collyhurst | m40 7qh | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Simpson Medical Practice", "ods_code": "Y02520", "pcn_name": "Miles Platting, Newton Heath and Moston PCN", "borough_group": "Manchester", "site_or_address": "361 Moston Lane", "postcode": "M40 9NB", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Not yet inspected by current provider; inherited Good", "postcode_district": "M40", "search_key": "simpson medical practice | miles platting, newton heath and moston pcn | 361 moston lane | m40 9nb | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "New Bank Health Centre", "ods_code": "Y02960", "pcn_name": "Robert Darbishire Practice PCN", "borough_group": "Manchester", "site_or_address": "339 Stockport Road", "postcode": "M12 4JE", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Not yet inspected by current provider; inherited Good", "postcode_district": "M12", "search_key": "new bank health centre | robert darbishire practice pcn | 339 stockport road | m12 4je | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "The Robert Darbishire Practice", "ods_code": "P84072", "pcn_name": "Robert Darbishire Practice PCN", "borough_group": "Manchester", "site_or_address": "Rusholme Health Centre, Walmer Street", "postcode": "M14 5NP", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M14", "search_key": "the robert darbishire practice | robert darbishire practice pcn | rusholme health centre, walmer street | m14 5np | manchester", "google_review_score_estimate": 2.5, "google_review_count_estimate": 234.0, "google_review_source": "third-party snippet"}, {"practice_name": "The Whitswood Practice", "ods_code": "P84635", "pcn_name": "Robert Darbishire Practice PCN", "borough_group": "Manchester", "site_or_address": "Alexandra Park Health Centre, 2 Whitswood Close", "postcode": "M16 7AP", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M16", "search_key": "the whitswood practice | robert darbishire practice pcn | alexandra park health centre, 2 whitswood close | m16 7ap | manchester", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Dr Perkins' Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "1st Floor Integrated Care Centre, New Radcliffe Street", "postcode": "OL1 1NL", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL1", "search_key": "dr perkins' practice | oldham central pcn | 1st floor integrated care centre, new radcliffe street | ol1 1nl | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Lindley Medical Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "Ground Floor, Integrated Care Centre, New Radcliffe Street", "postcode": "OL1 1NL", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "OL1", "search_key": "lindley medical practice | oldham central pcn | ground floor, integrated care centre, new radcliffe street | ol1 1nl | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Oldham Family Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "1st Floor Integrated Care Centre, New Radcliffe Street", "postcode": "OL1 1NL", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL1", "search_key": "oldham family practice | oldham central pcn | 1st floor integrated care centre, new radcliffe street | ol1 1nl | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "The Chowdhury Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "Integrated Care Centre, New Radcliffe Street", "postcode": "OL1 1NL", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL1", "search_key": "the chowdhury practice | oldham central pcn | integrated care centre, new radcliffe street | ol1 1nl | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "The Jalal Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "1st Floor Integrated Care Centre, New Radcliffe Street", "postcode": "OL1 1NL", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL1", "search_key": "the jalal practice | oldham central pcn | 1st floor integrated care centre, new radcliffe street | ol1 1nl | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "St Mary's Medical Centre", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "Rock Street", "postcode": "OL1 3UL", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL1", "search_key": "st mary's medical centre | oldham central pcn | rock street | ol1 3ul | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Greenbank Medical Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "Barley Clough Medical Centre, Nugget Street", "postcode": "OL4 1BN", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL4", "search_key": "greenbank medical practice | oldham central pcn | barley clough medical centre, nugget street | ol4 1bn | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Hopwood House Medical Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "Lees Road", "postcode": "OL4 1JN", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL4", "search_key": "hopwood house medical practice | oldham central pcn | lees road | ol4 1jn | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Alexander Group Medical Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "Glodwick Primary Care Centre, 137 Glodwick Road", "postcode": "OL4 1YN", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL4", "search_key": "alexander group medical practice | oldham central pcn | glodwick primary care centre, 137 glodwick road | ol4 1yn | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Glodwick Medical Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "137 Glodwick Road", "postcode": "OL4 1YN", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL4", "search_key": "glodwick medical practice | oldham central pcn | 137 glodwick road | ol4 1yn | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "John Street Medical Practice", "ods_code": "", "pcn_name": "Oldham Central PCN", "borough_group": "Oldham", "site_or_address": "1 John Street", "postcode": "OL8 1DF", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL8", "search_key": "john street medical practice | oldham central pcn | 1 john street | ol8 1df | oldham", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Ashton Medical Group", "ods_code": "P89008", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "Chapel Street", "postcode": "OL6 6EW", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL6", "search_key": "ashton medical group | ashton pcn | chapel street | ol6 6ew | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Albion Medical Practice", "ods_code": "P89003", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "1 Albion Street, Ashton-under-Lyne", "postcode": "OL6 6HF", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL6", "search_key": "albion medical practice | ashton pcn | 1 albion street, ashton-under-lyne | ol6 6hf | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Gordon Street Medical Centre", "ods_code": "P89011", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "171 Mossley Road", "postcode": "OL6 6NE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL6", "search_key": "gordon street medical centre | ashton pcn | 171 mossley road | ol6 6ne | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Ashton GP Service", "ods_code": "Y02586", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "Ashton Primary Care Centre, 193 Old Street", "postcode": "OL6 7SR", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "OL6", "search_key": "ashton gp service | ashton pcn | ashton primary care centre, 193 old street | ol6 7sr | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Stamford House", "ods_code": "P89609", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "2 Princess Street, Ashton-under-Lyne", "postcode": "OL6 9QH", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL6", "search_key": "stamford house | ashton pcn | 2 princess street, ashton-under-lyne | ol6 9qh | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "West End Medical Centre", "ods_code": "P89030", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "98-102 Stockport Road, Ashton-under-Lyne", "postcode": "OL7 0LH", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL7", "search_key": "west end medical centre | ashton pcn | 98-102 stockport road, ashton-under-lyne | ol7 0lh | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "HT Practice", "ods_code": "P89020", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "156 Stockport Road, Ashton-under-Lyne", "postcode": "OL7 0NW", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL7", "search_key": "ht practice | ashton pcn | 156 stockport road, ashton-under-lyne | ol7 0nw | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Waterloo Medical Centre", "ods_code": "P89613", "pcn_name": "Ashton PCN", "borough_group": "Tameside", "site_or_address": "1 Dunkerley Street, Ashton-under-Lyne", "postcode": "OL7 9EJ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL7", "search_key": "waterloo medical centre | ashton pcn | 1 dunkerley street, ashton-under-lyne | ol7 9ej | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Millgate Healthcare Partnership", "ods_code": "P89015", "pcn_name": "Denton PCN", "borough_group": "Tameside", "site_or_address": "Ann Street, Denton", "postcode": "M34 2AJ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M34", "search_key": "millgate healthcare partnership | denton pcn | ann street, denton | m34 2aj | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Denton Medical Practice", "ods_code": "P89018", "pcn_name": "Denton PCN", "borough_group": "Tameside", "site_or_address": "100 Ashton Road, Denton", "postcode": "M34 3JE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M34", "search_key": "denton medical practice | denton pcn | 100 ashton road, denton | m34 3je | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Guide Bridge Medical Practice", "ods_code": "Y02713", "pcn_name": "Denton PCN", "borough_group": "Tameside", "site_or_address": "Guide Lane Clinic, Guide Lane, Audenshaw", "postcode": "M34 5HY", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M34", "search_key": "guide bridge medical practice | denton pcn | guide lane clinic, guide lane, audenshaw | m34 5hy | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Market Street Medical Practice", "ods_code": "P89029", "pcn_name": "Denton PCN", "borough_group": "Tameside", "site_or_address": "76 Market Street, Droylsden", "postcode": "M43 6DE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M43", "search_key": "market street medical practice | denton pcn | 76 market street, droylsden | m43 6de | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Medlock Vale Medical Practice", "ods_code": "P89010", "pcn_name": "Denton PCN", "borough_group": "Tameside", "site_or_address": "58 Ashton Road, Droylsden", "postcode": "M43 7BW", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "M43", "search_key": "medlock vale medical practice | denton pcn | 58 ashton road, droylsden | m43 7bw | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Droylsden Medical Practice", "ods_code": "Y02663", "pcn_name": "Denton PCN", "borough_group": "Tameside", "site_or_address": "1-3 Albion Drive, Droylsden", "postcode": "M43 7NP", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "M43", "search_key": "droylsden medical practice | denton pcn | 1-3 albion drive, droylsden | m43 7np | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Pike Medical Practice", "ods_code": "P89618", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "Market Place, Mossley", "postcode": "OL5 0HE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL5", "search_key": "pike medical practice | stalybridge, dukinfield and mossley pcn | market place, mossley | ol5 0he | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Mossley Medical Practice", "ods_code": "P89612", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "187 Manchester Road, Mossley", "postcode": "OL5 9AB", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "OL5", "search_key": "mossley medical practice | stalybridge, dukinfield and mossley pcn | 187 manchester road, mossley | ol5 9ab | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Grosvenor Medical Centre", "ods_code": "P89026", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "62 Grosvenor Street, Stalybridge", "postcode": "SK15 1RZ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "SK15", "search_key": "grosvenor medical centre | stalybridge, dukinfield and mossley pcn | 62 grosvenor street, stalybridge | sk15 1rz | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Staveleigh Medical Centre", "ods_code": "P89007", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "King Street, Stalybridge", "postcode": "SK15 2AE", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "SK15", "search_key": "staveleigh medical centre | stalybridge, dukinfield and mossley pcn | king street, stalybridge | sk15 2ae | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "St Andrew's House Medical Centre", "ods_code": "P89023", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "2 Waterloo Road, Stalybridge", "postcode": "SK15 2AU", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "SK15", "search_key": "st andrew's house medical centre | stalybridge, dukinfield and mossley pcn | 2 waterloo road, stalybridge | sk15 2au | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Lockside Medical Centre", "ods_code": "P89005", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "85 Huddersfield Road, Stalybridge", "postcode": "SK15 2PT", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "SK15", "search_key": "lockside medical centre | stalybridge, dukinfield and mossley pcn | 85 huddersfield road, stalybridge | sk15 2pt | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Millbrook Medical Practice", "ods_code": "Y02936", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "Hollybank House, Hollybank, Millbrook, Stalybridge", "postcode": "SK15 3BJ", "gtd_managed": true, "inclusion_basis": "GTD-managed anchor", "cqc_overall": "Good", "postcode_district": "SK15", "search_key": "millbrook medical practice | stalybridge, dukinfield and mossley pcn | hollybank house, hollybank, millbrook, stalybridge | sk15 3bj | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "King Street Medical Centre", "ods_code": "P89022", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "96-98 King Street, Dukinfield", "postcode": "SK16 4JZ", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "SK16", "search_key": "king street medical centre | stalybridge, dukinfield and mossley pcn | 96-98 king street, dukinfield | sk16 4jz | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}, {"practice_name": "Town Hall Surgery", "ods_code": "P89025", "pcn_name": "Stalybridge, Dukinfield and Mossley PCN", "borough_group": "Tameside", "site_or_address": "112 King Street, Dukinfield", "postcode": "SK16 4LD", "gtd_managed": false, "inclusion_basis": "Same PCN as GTD-managed anchor", "cqc_overall": "", "postcode_district": "SK16", "search_key": "town hall surgery | stalybridge, dukinfield and mossley pcn | 112 king street, dukinfield | sk16 4ld | tameside", "google_review_score_estimate": NaN, "google_review_count_estimate": NaN, "google_review_source": ""}];
+
+const boroughs = [...new Set(rows.map(r => r.borough_group).filter(Boolean))].sort();
+const pcns = [...new Set(rows.map(r => r.pcn_name).filter(Boolean))].sort();
+
+const boroughSel = document.getElementById("borough");
+const pcnSel = document.getElementById("pcn");
+for (const v of boroughs) {
+  const o = document.createElement("option");
+  o.value = v; o.textContent = v; boroughSel.appendChild(o);
+}
+for (const v of pcns) {
+  const o = document.createElement("option");
+  o.value = v; o.textContent = v; pcnSel.appendChild(o);
+}
+
+function filteredRows() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const borough = boroughSel.value;
+  const pcn = pcnSel.value;
+  const gtd = document.getElementById("gtd").value;
+  return rows.filter(r => {
+    if (q && !r.search_key.includes(q)) return false;
+    if (borough && r.borough_group !== borough) return false;
+    if (pcn && r.pcn_name !== pcn) return false;
+    if (gtd === "true" && !r.gtd_managed) return false;
+    if (gtd === "false" && r.gtd_managed) return false;
+    return true;
+  });
+}
+
+function render() {
+  const tbody = document.querySelector("#tbl tbody");
+  tbody.innerHTML = "";
+  const data = filteredRows();
+  document.getElementById("count").textContent = `${data.length} rows`;
+
+  for (const r of data) {
+    const tr = document.createElement("tr");
+    const google = r.google_review_score_estimate ? `${r.google_review_score_estimate} (${r.google_review_count_estimate})` : "";
+    tr.innerHTML = `
+      <td><div><strong>${r.practice_name}</strong></div><div class="small">${r.ods_code || ""}</div></td>
+      <td><div>${r.postcode}</div><div class="small">${r.postcode_district}</div></td>
+      <td>${r.pcn_name}</td>
+      <td>${r.borough_group}</td>
+      <td>${r.gtd_managed ? '<span class="tag">GTD</span>' : ''}</td>
+      <td>${r.site_or_address || ""}</td>
+      <td>${r.cqc_overall || ""}</td>
+      <td>${google}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+function downloadFilteredCsv() {
+  const data = filteredRows();
+  const cols = Object.keys(rows[0]).filter(c => c !== "search_key");
+  const esc = v => {
+    if (v === null || v === undefined) return "";
+    const s = String(v);
+    return /[",\n]/.test(s) ? '"' + s.replaceAll('"', '""') + '"' : s;
+  };
+  const csv = [cols.join(",")]
+    .concat(data.map(r => cols.map(c => esc(r[c])).join(",")))
+    .join("\n");
+  const blob = new Blob([csv], {type: "text/csv;charset=utf-8;"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "filtered_gtd_manchester_area_practices_postcode_first.csv";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+document.getElementById("q").addEventListener("input", render);
+boroughSel.addEventListener("change", render);
+pcnSel.addEventListener("change", render);
+document.getElementById("gtd").addEventListener("change", render);
+document.getElementById("downloadCsv").addEventListener("click", downloadFilteredCsv);
+render();
+</script>
+</body>
+</html>

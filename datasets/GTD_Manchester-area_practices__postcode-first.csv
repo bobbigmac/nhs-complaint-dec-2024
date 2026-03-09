@@ -1,0 +1,66 @@
+practice_name,postcode,postcode_district,pcn_name,borough_group,gtd_managed
+Parkside Surgery,M12 5RU,M12,Ardwick and Longsight PCN,Manchester,False
+Manchester Integrative Medical Practice,M13 0RR,M13,Ardwick and Longsight PCN,Manchester,False
+Dickenson Road Medical Centre,M13 0WQ,M13,Ardwick and Longsight PCN,Manchester,False
+Ailsa Craig Medical Centre,M13 0YL,M13,Ardwick and Longsight PCN,Manchester,False
+Ardwick Medical Practice,M13 9UJ,M13,Ardwick and Longsight PCN,Manchester,False
+Dr Ngan and Partners (Vallance Medical),M13 9UJ,M13,Ardwick and Longsight PCN,Manchester,False
+"Drs Chiu, Koh and Gan",M13 9UJ,M13,Ardwick and Longsight PCN,Manchester,False
+Surrey Lodge Group Practice,M14 5BY,M14,Ardwick and Longsight PCN,Manchester,False
+Wilmslow Road Surgery,M14 5LQ,M14,Ardwick and Longsight PCN,Manchester,False
+City Health Centre,M1 1PL,M1,City Centre and Ancoats PCN,Manchester,True
+Ancoats Urban Village Medical Practice,M4 6EE,M4,City Centre and Ancoats PCN,Manchester,False
+New Islington Medical Practice,M4 6EE,M4,City Centre and Ancoats PCN,Manchester,False
+Beacon Medical Centre,M9 0FN,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Church View Medical Centre,M9 4BE,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Willowbank Surgery,M9 4WH,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Conran Medical Centre,M9 5BH,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Fernclough Surgery,M9 5RD,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+The Avenue Medical Centre,M9 6BA,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Charlestown Medical Practice,M9 7ED,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,True
+Dam Head Medical Centre,M9 7HD,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Valentine Medical Centre,M9 8PP,M9,"Higher Blackley, Harpurhey and Charlestown PCN",Manchester,False
+Droylsden Road Family Practice,M40 2JF,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,False
+Newton Heath Medical Centre,M40 2JF,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,False
+Hazeldene Medical Centre,M40 3HD,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,False
+St George's Medical Centre,M40 5HP,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,False
+Victoria Mill Medical Practice,M40 7LH,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,False
+Whitley Road Medical Centre,M40 7QH,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,False
+Simpson Medical Practice,M40 9NB,M40,"Miles Platting, Newton Heath and Moston PCN",Manchester,True
+New Bank Health Centre,M12 4JE,M12,Robert Darbishire Practice PCN,Manchester,True
+The Robert Darbishire Practice,M14 5NP,M14,Robert Darbishire Practice PCN,Manchester,False
+The Whitswood Practice,M16 7AP,M16,Robert Darbishire Practice PCN,Manchester,False
+Dr Perkins' Practice,OL1 1NL,OL1,Oldham Central PCN,Oldham,False
+Lindley Medical Practice,OL1 1NL,OL1,Oldham Central PCN,Oldham,True
+Oldham Family Practice,OL1 1NL,OL1,Oldham Central PCN,Oldham,False
+The Chowdhury Practice,OL1 1NL,OL1,Oldham Central PCN,Oldham,False
+The Jalal Practice,OL1 1NL,OL1,Oldham Central PCN,Oldham,False
+St Mary's Medical Centre,OL1 3UL,OL1,Oldham Central PCN,Oldham,False
+Greenbank Medical Practice,OL4 1BN,OL4,Oldham Central PCN,Oldham,False
+Hopwood House Medical Practice,OL4 1JN,OL4,Oldham Central PCN,Oldham,False
+Alexander Group Medical Practice,OL4 1YN,OL4,Oldham Central PCN,Oldham,False
+Glodwick Medical Practice,OL4 1YN,OL4,Oldham Central PCN,Oldham,False
+John Street Medical Practice,OL8 1DF,OL8,Oldham Central PCN,Oldham,False
+Ashton Medical Group,OL6 6EW,OL6,Ashton PCN,Tameside,False
+Albion Medical Practice,OL6 6HF,OL6,Ashton PCN,Tameside,False
+Gordon Street Medical Centre,OL6 6NE,OL6,Ashton PCN,Tameside,False
+Ashton GP Service,OL6 7SR,OL6,Ashton PCN,Tameside,True
+Stamford House,OL6 9QH,OL6,Ashton PCN,Tameside,False
+West End Medical Centre,OL7 0LH,OL7,Ashton PCN,Tameside,False
+HT Practice,OL7 0NW,OL7,Ashton PCN,Tameside,False
+Waterloo Medical Centre,OL7 9EJ,OL7,Ashton PCN,Tameside,False
+Millgate Healthcare Partnership,M34 2AJ,M34,Denton PCN,Tameside,False
+Denton Medical Practice,M34 3JE,M34,Denton PCN,Tameside,False
+Guide Bridge Medical Practice,M34 5HY,M34,Denton PCN,Tameside,True
+Market Street Medical Practice,M43 6DE,M43,Denton PCN,Tameside,False
+Medlock Vale Medical Practice,M43 7BW,M43,Denton PCN,Tameside,False
+Droylsden Medical Practice,M43 7NP,M43,Denton PCN,Tameside,True
+Pike Medical Practice,OL5 0HE,OL5,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+Mossley Medical Practice,OL5 9AB,OL5,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+Grosvenor Medical Centre,SK15 1RZ,SK15,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+Staveleigh Medical Centre,SK15 2AE,SK15,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+St Andrew's House Medical Centre,SK15 2AU,SK15,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+Lockside Medical Centre,SK15 2PT,SK15,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+Millbrook Medical Practice,SK15 3BJ,SK15,"Stalybridge, Dukinfield and Mossley PCN",Tameside,True
+King Street Medical Centre,SK16 4JZ,SK16,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
+Town Hall Surgery,SK16 4LD,SK16,"Stalybridge, Dukinfield and Mossley PCN",Tameside,False
