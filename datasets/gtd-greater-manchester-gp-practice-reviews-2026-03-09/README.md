@@ -5,7 +5,7 @@ Generated on 2026-03-09.
 This folder contains a postcode-and-coordinates dataset for:
 
 - all GTD Healthcare GP practice anchors listed on the GTD Healthcare GP practices page
-- every NHS Find a GP surgery result within 1 mile of each GTD anchor
+- the broader NHS Find a GP result set returned around each GTD anchor
 
 Files:
 
@@ -23,10 +23,10 @@ Source basis:
 
 Coverage snapshot:
 
-- total rows: 78
-- GTD-managed rows: 12
-- non-GTD nearby rows: 66
-- Google review coverage rows: 1
+- total rows: 192
+- GTD-managed rows: 13
+- non-GTD nearby rows: 179
+- Google review coverage rows: 8
 
 Caveats:
 

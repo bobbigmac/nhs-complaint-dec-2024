@@ -552,8 +552,12 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
   --bg: #f6f4ef;
   --ink: #1a1c1a;
   --panel: rgba(255,255,255,0.92);
-  --gtd: #0f6b4f;
-  --other: #b34a28;
+  --missing: #9aa0a6;
+  --low: #c3472f;
+  --midlow: #dc8c23;
+  --midhigh: #d2b529;
+  --high: #4c9a52;
+  --veryhigh: #1c7c54;
 }}
 html, body, #map {{ height: 100%; margin: 0; }}
 body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gradient(circle at top, #fff7e3, var(--bg)); }}
@@ -571,12 +575,62 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
 }}
 .legend h1 {{ margin: 0 0 8px; font-size: 18px; }}
 .legend p {{ margin: 0 0 8px; }}
-.dot {{
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 6px;
+.legend .row {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 7px;
+}}
+.swatch {{
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(0,0,0,0.25);
+  flex: 0 0 auto;
+}}
+.swatch.circle {{ border-radius: 999px; }}
+.swatch.triangle {{
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}}
+.leaflet-marker-icon.marker-icon {{
+  background: transparent;
+  border: 0;
+}}
+.marker-shape {{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font: 700 12px/1 ui-sans-serif, system-ui, sans-serif;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+  border: 1px solid rgba(0,0,0,0.28);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.22);
+}}
+.marker-circle {{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+}}
+.marker-triangle {{
+  width: 42px;
+  height: 36px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}}
+.marker-label {{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}}
+.marker-circle .marker-label {{
+  top: 10px;
+}}
+.marker-triangle .marker-label {{
+  top: 14px;
+  font-size: 11px;
+}}
+.marker-missing .marker-label {{
+  color: #f4f4f4;
 }}
 .leaflet-popup-content a {{ word-break: break-word; }}
 </style>
@@ -585,8 +639,14 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
 <div class="legend">
   <h1>GTD GP Practice Map</h1>
   <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
-  <p><span class="dot" style="background: var(--gtd)"></span>GTD-managed</p>
-  <p><span class="dot" style="background: var(--other)"></span>Nearby non-GTD</p>
+  <div class="row"><span class="swatch triangle" style="background: var(--midhigh)"></span><span>GTD-managed practice</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--midhigh)"></span><span>Non-GTD practice</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--missing)"></span><span>Missing Google rating</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--low)"></span><span>0.0 to 1.9</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--midlow)"></span><span>2.0 to 2.9</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--midhigh)"></span><span>3.0 to 3.9</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--high)"></span><span>4.0 to 4.4</span></div>
+  <div class="row"><span class="swatch circle" style="background: var(--veryhigh)"></span><span>4.5+</span></div>
 </div>
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -598,16 +658,35 @@ L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
   attribution: '&copy; OpenStreetMap contributors'
 }}).addTo(map);
 
+function markerColor(score) {{
+  if (score === '' || score === null || Number.isNaN(Number(score))) return '#9aa0a6';
+  const value = Number(score);
+  if (value < 2) return '#c3472f';
+  if (value < 3) return '#dc8c23';
+  if (value < 4) return '#d2b529';
+  if (value < 4.5) return '#4c9a52';
+  return '#1c7c54';
+}}
+
+function markerLabel(score) {{
+  if (score === '' || score === null || Number.isNaN(Number(score))) return '?';
+  return Number(score).toFixed(1);
+}}
+
 for (const row of rows) {{
-  const color = row.gtd ? '#0f6b4f' : '#b34a28';
-  const marker = L.circleMarker([row.lat, row.lon], {{
-    radius: row.gtd ? 8 : 6,
-    color,
-    fillColor: color,
-    fillOpacity: 0.85,
-    weight: 1
-  }}).addTo(map);
-  const google = row.google_score !== "" ? `<div>Google: ${'{'}row.google_score{'}'} (${ '{' }row.google_count{'}'} reviews)</div>` : '';
+  const color = markerColor(row.google_score);
+  const label = markerLabel(row.google_score);
+  const shapeClass = row.gtd ? 'marker-triangle' : 'marker-circle';
+  const missingClass = label === '?' ? ' marker-missing' : '';
+  const icon = L.divIcon({{
+    className: 'marker-icon',
+    html: `<div class="marker-shape ${'{'}shapeClass{'}'}${'{'}missingClass{'}'}" style="background:${'{'}color{'}'}"><span class="marker-label">${'{'}label{'}'}</span></div>`,
+    iconSize: row.gtd ? [42, 36] : [34, 34],
+    iconAnchor: row.gtd ? [21, 30] : [17, 17],
+    popupAnchor: [0, -14]
+  }});
+  const marker = L.marker([row.lat, row.lon], {{ icon }}).addTo(map);
+  const google = row.google_score !== "" ? `<div>Google: ${'{'}Number(row.google_score).toFixed(1){'}'} (${ '{' }row.google_count{'}'} reviews)</div>` : '<div>Google: ?</div>';
   const gtd = row.gtd_url ? `<div><a href="${'{'}row.gtd_url{'}'}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
   marker.bindPopup(`
     <strong>${'{'}row.name{'}'}</strong><br>
