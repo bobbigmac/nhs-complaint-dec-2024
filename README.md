@@ -49,11 +49,16 @@ The focus throughout is **patient access**, not clinical care quality.
     - No daytime availability
     - Adds friction even for confident users
   - NEED Access route that doesn't rely on the website
+
+1.5. **Apparent lack of understanding about patient complaints**
   - 'Newsletter' issued via sms on March 9th 2026 still very insistent about forced through online:
     - `You are welcome to complete the online request form yourself. If you would rather phone us or visit the practice, a member of our reception team will complete the form on your behalf.`
     - Newsletter contains no news, and isn't a letter, it's basically just a "use the website" help sheet, with lots of complicated and repetitive instructions.
     - Sent the sms with the  wrong link?
       - Couldn't contact the practice online to ask, because the 'contact the practice' displays "form unavailable".
+  - How many patients need to complain about the poor quality website/workflow and bad responses from staff before you stop sending them annotated screenshots like they're simply stupid?
+    - The website sucks so bad, patients are right to not want to deal with it.
+    - My local practice had a better online experience in the late nineties. Why do you think this barely functional mess is acceptable in the modern world?
 
 4. **Can't start appointment process outside office hours**
   - Partially progress, admin requests are now open out of hours (since 14th Jan)
