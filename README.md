@@ -207,7 +207,10 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 <details>
 <summary>Effective use of resources?</summary>
-- [@gtdhealthcare on twitter/x](https://x.com/gtdhealthcare/with_replies) posts every day, sometimes twice, pretty good quality content, but has had 3 likes a 1 retweet on only 2 tweets, and zero replies, in 6 months (as far back as I scrolled before ads for crypto appeared). Views rarely meet 50 views (and almost all of those will be firehose bots), despite 953 'followers' there is almost-zero engagement. Unless that daily content cycle is completely free and automated, maybe those resources would be better spent somewhere useful in the org.
+  
+- [@gtdhealthcare on twitter/x](https://x.com/gtdhealthcare/with_replies) posts every day, sometimes twice, pretty good quality content, but has had 3 likes, 1 retweet on only 2 tweets, and zero replies, in 6 months (as far back as I scrolled before ads for crypto scams and far-right content appeared).
+  - Views rarely top 50 (and almost all of those will be firehose bots, check for an immediate view spike on posting, then no growth after more than a few minutes), despite 953 'followers' there is almost-zero engagement (a follower poll showed mostly several-year dead accounts or obvious scammers, only a few 'real' people accounts).
+  - Unless that daily content cycle is completely free and automated, maybe those resources would be better spent somewhere useful in the org.
 </details>
 
 ### Escalation routes beyond GTD
