@@ -205,6 +205,11 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 </details>
 
+<details>
+<summary>Effective use of resources?</summary>
+- [@gtdhealthcare on twitter/x](https://x.com/gtdhealthcare/with_replies) posts every day, sometimes twice, pretty good quality content, but has had 3 likes a 1 retweet on only 2 tweets, and zero replies, in 6 months (as far back as I scrolled before ads for crypto appeared). Views rarely meet 50 views (and almost all of those will be firehose bots), despite 953 'followers' there is almost-zero engagement. Unless that daily content cycle is completely free and automated, maybe those resources would be better spent somewhere useful in the org.
+</details>
+
 ### Escalation routes beyond GTD
 
 - Map escalation routes beyond GTD (ICB, NHS England, CQC, ombudsman) specifically for **access and digital exclusion** rather than individual clinical events.
