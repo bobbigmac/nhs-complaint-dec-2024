@@ -53,6 +53,7 @@ The focus throughout is **patient access**, not clinical care quality.
     - `You are welcome to complete the online request form yourself. If you would rather phone us or visit the practice, a member of our reception team will complete the form on your behalf.`
     - Newsletter contains no news, and isn't a letter, it's basically just a "use the website" help sheet, with lots of complicated and repetitive instructions.
     - Sent the sms with the  wrong link?
+      - Couldn't contact the practice online to ask, because the 'contact the practice' displays "form unavailable".
 
 4. **Can't start appointment process outside office hours**
   - Partially progress, admin requests are now open out of hours (since 14th Jan)
