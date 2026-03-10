@@ -419,6 +419,12 @@ def main() -> int:
     parser.add_argument("--recent-reviews", type=int, default=10, help="Newest visible review cards to keep per practice; use 0 to keep all currently visible cards")
     parser.add_argument("--headless", action="store_true", help="Run Firefox headlessly")
     parser.add_argument("--profile-copy", type=Path, default=PROFILE_COPY_DIR)
+    parser.add_argument(
+        "--canonical-code",
+        action="append",
+        default=[],
+        help="Only scrape these canonical codes; may be passed multiple times or as comma-separated values",
+    )
     parser.add_argument("--practice-filter", default="", help="Only scrape practices whose names contain this text")
     parser.add_argument("--pause-seconds", type=float, default=2.0, help="Pause between practices")
     parser.add_argument("--pause-jitter-seconds", type=float, default=1.0, help="Random extra pause added between practices")
@@ -431,6 +437,14 @@ def main() -> int:
     source_profile = discover_default_firefox_profile()
     profile_copy = refresh_profile_copy(source_profile, args.profile_copy)
     rows = load_rows(args.input)
+    requested_codes = {
+        part.strip()
+        for value in args.canonical_code
+        for part in str(value).split(",")
+        if part.strip()
+    }
+    if requested_codes:
+        rows = [row for row in rows if row.get("canonical_code", "").strip() in requested_codes]
     if args.only_missing_google:
         rows = [row for row in rows if not row.get("google_review_score")]
     if args.practice_filter:

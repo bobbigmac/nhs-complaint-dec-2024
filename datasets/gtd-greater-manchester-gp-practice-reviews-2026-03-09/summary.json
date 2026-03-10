@@ -5,9 +5,9 @@
   "row_count": 355,
   "gtd_managed_count": 13,
   "non_gtd_count": 342,
-  "google_review_coverage_count": 312,
-  "google_maps_direct_coverage_count": 310,
-  "google_review_text_file_count": 273,
+  "google_review_coverage_count": 322,
+  "google_maps_direct_coverage_count": 320,
+  "google_review_text_file_count": 282,
   "management_company_identified_count": 49,
   "management_company_distinct_count": 13,
   "trustpilot_coverage_count": 0,
@@ -164,6 +164,6 @@
     "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable."
   ],
   "google_maps_total_scanned_count": 355,
-  "google_maps_manual_review_count": 12,
-  "google_maps_flagged_result_count": 45
+  "google_maps_manual_review_count": 3,
+  "google_maps_flagged_result_count": 35
 }
