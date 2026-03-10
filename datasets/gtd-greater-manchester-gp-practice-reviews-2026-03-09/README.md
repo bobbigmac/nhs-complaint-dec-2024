@@ -30,10 +30,10 @@ Coverage snapshot:
 - total rows: 355
 - GTD-managed rows: 13
 - non-GTD nearby rows: 342
-- Google review coverage rows: 81
-- Google Maps direct coverage rows: 72
-- Review text files written: 65
-- Google Maps scans completed: 90
+- Google review coverage rows: 91
+- Google Maps direct coverage rows: 84
+- Review text files written: 75
+- Google Maps scans completed: 102
 - Google Maps manual review queue: 10
 
 Caveats:

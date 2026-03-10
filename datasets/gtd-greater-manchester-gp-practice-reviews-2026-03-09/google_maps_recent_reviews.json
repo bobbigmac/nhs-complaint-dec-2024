@@ -7258,5 +7258,310 @@
     "query_used": "LADYBARN GROUP PRACTICE M20 4SS",
     "title_match_score": 1.0,
     "review_text_file": ""
+  },
+  {
+    "query": "Didsbury Medical Centre - Dr Whitaker M20 6BA",
+    "google_maps_title": "Whitaker Dr M J",
+    "google_maps_url": "https://www.google.com/maps/place/Whitaker+Dr+M+J/@53.4202207,-2.2318113,17z/data=!3m1!4b1!4m6!3m5!1s0x487bb25dbd715e4b:0x9d47a266f2605f05!8m2!3d53.4202207!4d-2.2318113!16s%2Fg%2F1vg_cdqg?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 5.0,
+    "google_review_count": 1,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_rating_only",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Didsbury Medical Centre - Dr Whitaker",
+    "postcode": "M20 6BA",
+    "canonical_code": "P84678",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/didsbury-medical-centre-dr-whitaker/P84678",
+    "query_used": "Didsbury Medical Centre - Dr Whitaker M20 6BA",
+    "title_match_score": 0.5,
+    "review_text_file": ""
+  },
+  {
+    "query": "Wilbraham Surgery M21 0UF",
+    "google_maps_title": "The Wilbraham Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/The+Wilbraham+Surgery/@53.4423786,-2.2711736,17z/data=!4m8!3m7!1s0x487badf057b77983:0x9788f6bea2112ada!8m2!3d53.4423786!4d-2.2711736!9m1!1b1!16s%2Fg%2F1hc0zw9n0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.2,
+    "google_review_count": 48,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Khalid Raza",
+        "relative_date": "Edited a month ago",
+        "star_label": "5 stars",
+        "text": "Best place In Manchester, staff and Doctors do care and go extra mile for you. Many many thanks.",
+        "raw_card_text": "Khalid Raza5 reviewsEdited a month ago Best place In Manchester, staff and Doctors do care and go extra mile for you. Many many thanks.Like Share"
+      },
+      {
+        "author": "Gavin Manchester",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Unwilling to make reasonable adjustments (due to learning disability) despite the Equality Act 2010 and The Autism Act 2009. Not a suitable surgery for neurodivergent adults (ADHD/autism) with long term lifelong mental health conditions or/and learning disability, not unless you have a parent/family friend to speak on your behalf, book and accompany you to appointments. Admin staff not understanding or particularly helpful and hold grudges/make assumptions, no training in autism/learning disability. (Even if the patient is on the NHS Learning Disability Register). On one occasion I had a local authority social worker attend an appointment with me as an advocate and to see the challenges I face accessing lawful care. Complain or raise concerns and get told \u201cgo elsewhere\u201d. Not a particularly modern thinking practice. Very much the \u201cyou don\u2019t look autistic\u201d attitude and \u201cgo for a long walk outdoors\u201d when facing a serious MH relapse/crisis. Seem to have the attitude that anything mental health related means you must see the CMHT only and if not under psychiatric care they won\u2019t help you. They don\u2019t feel the need to update medical records despite communication from medical consultants. No excuse for treating vulnerable patients so ineffectually or cruelly.",
+        "raw_card_text": "Gavin ManchesterLocal Guide \u00b7 36 reviews \u00b7 4 photosa month ago Unwilling to make reasonable adjustments (due to learning disability) despite the Equality Act 2010 and The Autism Act 2009. Not a suitable surgery for neurodivergent adults (ADHD/autism) with long term lifelong mental health conditions or/and learning disability, not unless you have a parent/family friend to speak on your behalf, book and accompany you to appointments. Admin staff not understanding or particularly helpful and hold grudges/make assumptions, no training in autism/learning disability. (Even if the patient is on the NHS Learning Disability Register). On one occasion I had a local authority social worker attend an appointment with me as an advocate and to see the challenges I face accessing lawful care. Complain or raise concerns and get told \u201cgo elsewhere\u201d. Not a particularly modern thinking practice. Very much the \u201cyou don\u2019t look autistic\u201d attitude and \u201cgo for a long walk outdoors\u201d when facing a serious MH relapse/crisis. Seem to have the attitude that anything mental health related means you must see the CMHT only and if not under psychiatric care they won\u2019t help you. They don\u2019t feel the need to update medical records despite communication from medical consultants. No excuse for treating vulnerable patients so ineffectually or cruelly.Like Share"
+      },
+      {
+        "author": "Skala Kamal",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "I\u2019ve been with this surgery for years, and I can\u2019t thank them enough for everything they do. Dr. Wilson is truly an angel\u2014hardworking, passionate, and deeply dedicated to his work. He has made such a difference in my life, especially as I grow older and rely more on medical support. Everyone at the practice is so caring and compassionate. Thank you all for everything you do.",
+        "raw_card_text": "Skala KamalLocal Guide \u00b7 14 reviews \u00b7 2 photos4 months ago I\u2019ve been with this surgery for years, and I can\u2019t thank them enough for everything they do. Dr. Wilson is truly an angel\u2014hardworking, passionate, and deeply dedicated to his work. He has made such a difference in my life, especially as I grow older and rely more on medical support. Everyone at the practice is so caring and compassionate. Thank you all for everything you do.Like Share"
+      },
+      {
+        "author": "Amanda M",
+        "relative_date": "5 months ago",
+        "star_label": "5 stars",
+        "text": "Receptionist very helpful booking me a routine face-to-face GP appointment. GP, Dr Patel, was friendly, professional and sorted out my problem. Very happy with the service.",
+        "raw_card_text": "Amanda M5 reviews5 months ago Receptionist very helpful booking me a routine face-to-face GP appointment. GP, Dr Patel, was friendly, professional and sorted out my problem. Very happy with the service.Like Share"
+      },
+      {
+        "author": "Paul",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Paul8 reviews6 months ago"
+      },
+      {
+        "author": "Katie Carruthers",
+        "relative_date": "10 months ago",
+        "star_label": "1 star",
+        "text": "Absolutely appalling experience with this surgery. You\u2019re expected to call at 8:30am to book an appointment, but now with their new call system instead of being placed in a queue, your call is terminated if staff are busy, meaning you have to redial over and over most days, just to be told to try again tomorrow. No empathy from staff and no alternative solutions.",
+        "raw_card_text": "Katie Carruthers4 reviews10 months ago Absolutely appalling experience with this surgery. You\u2019re expected to call at 8:30am to book an appointment, but now with their new call system instead of being placed in a queue, your call is terminated if staff are busy, meaning you have to redial over and over most days, just to be told to try again tomorrow. No empathy from staff and no alternative solutions.Like Share"
+      },
+      {
+        "author": "Silviya Nitsova",
+        "relative_date": "Edited 11 months ago",
+        "star_label": "1 star",
+        "text": "I needed a same-day appointment but the open surgery was full, so I got redirected to another surgery for an appointment the next day. This was great. I had to leave a swab test for testing with my practice though. The doctor from the other surgery said I\u2019d get the results back in 2 working days. I still haven\u2019t gotten them back (6 working days and counting). I needed to be seen again rather urgently for the same unresolved issue, so I tried setting up a same-day appointment. It is practically impossible to get one. I called at 8.30 (on the spine) on two different days and was told that all receptionists were busy with other calls, so my calls were terminated. This happened 3 times each of the days. On the second day, I was able to get on their 10-caller hold line, being 9th in the queue. I moved up the queue to number 2 when my call was terminated. When I called again, there were no more appointments for the day. The first day I was told there were no more open surgery appointments for the day right away. The telephone booking system is terrible and dated. Will be switching to a different surgery.",
+        "raw_card_text": "Silviya NitsovaLocal Guide \u00b7 25 reviews \u00b7 15 photosEdited 11 months ago I needed a same-day appointment but the open surgery was full, so I got redirected to another surgery for an appointment the next day. This was great. I had to leave a swab test for testing with my practice though. The doctor from the other surgery said I\u2019d get the results back in 2 working days. I still haven\u2019t gotten them back (6 working days and counting). I needed to be seen again rather urgently for the same unresolved issue, so I tried setting up a same-day appointment. It is practically impossible to get one. I called at 8.30 (on the spine) on two different days and was told that all receptionists were busy with other calls, so my calls were terminated. This happened 3 times each of the days. On the second day, I was able to get on their 10-caller hold line, being 9th in the queue. I moved up the queue to number 2 when my call was terminated. When I called again, there were no more appointments for the day. The first day I was told there were no more open surgery appointments for the day right away. The telephone booking system is terrible and dated. Will be switching to a different surgery.Like1 Share"
+      },
+      {
+        "author": "alan daniel",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Excellent team with excellent comms. Very caring and not rushed. I feel privileged to be one of their Patients.",
+        "raw_card_text": "alan daniel9 reviewsa year ago Excellent team with excellent comms. Very caring and not rushed. I feel privileged to be one of their Patients.Like Share"
+      },
+      {
+        "author": "joe barber",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Been with this practice for around 23 years and always felt well looked after. Getting an appointment might be difficult but the doctors have been nothing short of fantastic over the years. Shout out to Dr Wilson in particular.",
+        "raw_card_text": "joe barber3 reviewsa year ago Been with this practice for around 23 years and always felt well looked after. Getting an appointment might be difficult but the doctors have been nothing short of fantastic over the years. Shout out to Dr Wilson in particular.Like1 Share"
+      },
+      {
+        "author": "Kirstie Shearman",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Kirstie Shearman3 reviewsa year ago"
+      }
+    ],
+    "practice_name": "Wilbraham Surgery",
+    "postcode": "M21 0UF",
+    "canonical_code": "P84071",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/wilbraham-surgery/P84071",
+    "query_used": "Wilbraham Surgery M21 0UF",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P84071-wilbraham-surgery.txt"
+  },
+  {
+    "query": "Merseybank Surgery M21 7NN",
+    "google_maps_title": "Merseybank Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Merseybank+Surgery/@53.4228828,-2.2631199,17z/data=!4m8!3m7!1s0x487bad87d3853783:0xdfa9d53f6b030976!8m2!3d53.4228828!4d-2.2631199!9m1!1b1!16s%2Fg%2F1tfzrgf5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.3,
+    "google_review_count": 14,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Emma Wilson",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "I use this service with my in laws frequently. I can say it\u2019s always been a brilliant service! Dr Hotchkies is great and always reassures you. Receptionist are lovely too!",
+        "raw_card_text": "Emma Wilson4 reviews6 months ago I use this service with my in laws frequently. I can say it\u2019s always been a brilliant service! Dr Hotchkies is great and always reassures you. Receptionist are lovely too!Like Share"
+      },
+      {
+        "author": "clare anderson",
+        "relative_date": "8 months ago",
+        "star_label": "5 stars",
+        "text": "An amazing practice. Lovely staff. Been going here almost 30 years \ud83d\ude0a \u2026",
+        "raw_card_text": "clare anderson2 reviews8 months ago An amazing practice. Lovely staff. Been going here almost 30 years \ud83d\ude0a \u2026Like Share"
+      },
+      {
+        "author": "francis raja",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "francis rajaLocal Guide \u00b7 14 reviewsa year ago"
+      },
+      {
+        "author": "Rebecca M",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Rebecca M12 reviewsa year ago"
+      },
+      {
+        "author": "Ebony Sinclair",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Doctors loon, couldn\u2019t thank enough took he\u2019s time explaining everything witch I haven\u2019t had before, definitely recommend him thank you",
+        "raw_card_text": "Ebony SinclairLocal Guide \u00b7 7 reviews \u00b7 105 photosa year ago Doctors loon, couldn\u2019t thank enough took he\u2019s time explaining everything witch I haven\u2019t had before, definitely recommend him thank youLike Share"
+      },
+      {
+        "author": "Ian Worsley",
+        "relative_date": "2 years ago",
+        "star_label": "2 stars",
+        "text": "For many years an excellent family practice. Such a shame that over the past 6 months it's been a shambles. Repeat prescriptions cancelled without notice and impossible to book an appointment. Being left with no medication to manage a chronic condition is unacceptable. Seriously needs an inspection difficult to know what's changed but it's not good enough.",
+        "raw_card_text": "Ian WorsleyLocal Guide \u00b7 13 reviews \u00b7 7 photos2 years ago For many years an excellent family practice. Such a shame that over the past 6 months it's been a shambles. Repeat prescriptions cancelled without notice and impossible to book an appointment. Being left with no medication to manage a chronic condition is unacceptable. Seriously needs an inspection difficult to know what's changed but it's not good enough.Like1 Share"
+      },
+      {
+        "author": "jaf jaf",
+        "relative_date": "3 years ago",
+        "star_label": "5 stars",
+        "text": "Always been good to me",
+        "raw_card_text": "jaf jafLocal Guide \u00b7 43 reviews \u00b7 3 photos3 years ago Always been good to meLike1 Share"
+      },
+      {
+        "author": "Gloria Gilbert",
+        "relative_date": "3 years ago",
+        "star_label": "5 stars",
+        "text": "Five stars for the most miserable service I have received from a surgery. It's very difficult to get appointments, only for the appointments to get cancelled and there\u2019s no one to inform you ahead of time till you get to the surgery.",
+        "raw_card_text": "Gloria Gilbert2 reviews3 years ago Five stars for the most miserable service I have received from a surgery. It's very difficult to get appointments, only for the appointments to get cancelled and there\u2019s no one to inform you ahead of time till you get to the surgery.Like Share"
+      },
+      {
+        "author": "James Musgrove",
+        "relative_date": "3 years ago",
+        "star_label": "1 star",
+        "text": "If I could put zero stars I would. Good luck getting an appointment.....always on hold and then when reception answers the phone the computer has crashed or some other excuse to make you call back. Would they call you back to save getting back in the queue? Not a chance! Can't keep blaming covid for all the problems. Best going to A&E or calling 111. Once they offered an appointment 4 days later, whats the point? Called 111 and they booked me in the same day at the same place. Moving GP asap",
+        "raw_card_text": "James Musgrove10 reviews3 years ago If I could put zero stars I would. Good luck getting an appointment.....always on hold and then when reception answers the phone the computer has crashed or some other excuse to make you call back. Would they call you back to save getting back in the queue? Not a chance! Can't keep blaming covid for all the problems. Best going to A&E or calling 111. Once they offered an appointment 4 days later, whats the point? Called 111 and they booked me in the same day at the same place. Moving GP asapLike2 Share"
+      },
+      {
+        "author": "Mahnaz Seddigh",
+        "relative_date": "Edited 6 years ago",
+        "star_label": "4 stars",
+        "text": "The receptions and Dr.s are doing quite acceptable but you have to wait a long time for your appointment and the time they\u2019re giving you could change for an hour later cause it\u2019s a walking centre!",
+        "raw_card_text": "Mahnaz SeddighLocal Guide \u00b7 18 reviews \u00b7 7 photosEdited 6 years ago The receptions and Dr.s are doing quite acceptable but you have to wait a long time for your appointment and the time they\u2019re giving you could change for an hour later cause it\u2019s a walking centre!Like Share"
+      }
+    ],
+    "practice_name": "Merseybank Surgery",
+    "postcode": "M21 7NN",
+    "canonical_code": "P84066001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/merseybank-surgery/P84066001",
+    "query_used": "Merseybank Surgery M21 7NN",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P84066001-merseybank-surgery.txt"
+  },
+  {
+    "query": "David Medical Centre M21 8HA",
+    "google_maps_title": "David Medical Centre",
+    "google_maps_url": "https://www.google.com/maps/place/David+Medical+Centre/@53.4319609,-2.2687146,17z/data=!4m8!3m7!1s0x487bad8c8d53440f:0x65e795677a82a393!8m2!3d53.4319609!4d-2.2687146!9m1!1b1!16s%2Fg%2F1tgq65tc?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.4,
+    "google_review_count": 80,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Alan Wood",
+        "relative_date": "14 hours ago",
+        "star_label": "1 star",
+        "text": "I rang up at 8.10 am to try and get an appointment was in queue for ages so asked for fone call bk wen I wud reach position 1 2 hrs later still no fone call bk had to ring them again for them just to say aww no appointments left what a joke need to get a grip",
+        "raw_card_text": "Alan Wood1 review14 hours ago New I rang up at 8.10 am to try and get an appointment was in queue for ages so asked for fone call bk wen I wud reach position 1 2 hrs later still no fone call bk had to ring them again for them just to say aww no appointments left what a joke need to get a gripLike Share"
+      },
+      {
+        "author": "khadeeja",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "I recently visited David medical centre, and was very pleased with my experience. Dr Rizvi made sure that I felt my health was prioritised, and everything was very organised and the appointment ran smoothly and on time. Mine and my family\u2019s practise for years, could not recommend it enough",
+        "raw_card_text": "khadeeja4 reviews \u00b7 1 photoa week ago New I recently visited David medical centre, and was very pleased with my experience. Dr Rizvi made sure that I felt my health was prioritised, and everything was very organised and the appointment ran smoothly and on time. Mine and my family\u2019s practise for years, could not recommend it enoughLike Share"
+      },
+      {
+        "author": "Harun",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Very caring doctors and take concerns seriously. I felt listened to and supported. Highly recommend!",
+        "raw_card_text": "Harun1 reviewa month ago Very caring doctors and take concerns seriously. I felt listened to and supported. Highly recommend!Like Share"
+      },
+      {
+        "author": "Syed Mustufain",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I must thank Dr. Reem for providing such an examplary service for my father in law. He is an elderly person who require extra care and recently he was suffering from chest pain. Dr. Reem advised promptly to take him to the hospital and she was in touch with us regularly asking about any changes in the symptoms on a regular basis. Due to this he is discharged and come back home. Thanks for your support.",
+        "raw_card_text": "Syed MustufainLocal Guide \u00b7 14 reviews \u00b7 2 photosa month ago I must thank Dr. Reem for providing such an examplary service for my father in law. He is an elderly person who require extra care and recently he was suffering from chest pain. Dr. Reem advised promptly to take him to the hospital and she was in touch with us regularly asking about any changes in the symptoms on a regular basis. Due to this he is discharged and come back home. Thanks for your support.Like Share"
+      },
+      {
+        "author": "Gabi Neuman",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "I am very pleased with this GP.",
+        "raw_card_text": "Gabi Neuman16 reviews3 months ago I am very pleased with this GP.Like Share"
+      },
+      {
+        "author": "Rachel Dunbar",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Rachel Dunbar7 reviews4 months ago"
+      },
+      {
+        "author": "Marianne Proudfoot",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "Really great practice, you can almost always get a last minute appointment, no long waits and both the doctors and receptionists show warmth and empathy. Have been with the practice for 3 years and keeps getting better and better!",
+        "raw_card_text": "Marianne Proudfoot5 reviews4 months ago Really great practice, you can almost always get a last minute appointment, no long waits and both the doctors and receptionists show warmth and empathy. Have been with the practice for 3 years and keeps getting better and better!Like Share"
+      },
+      {
+        "author": "Steve Warburton",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "Good doctors",
+        "raw_card_text": "Steve WarburtonLocal Guide \u00b7 8 reviews4 months ago Good doctorsLike Share"
+      },
+      {
+        "author": "Sinem Dervish",
+        "relative_date": "a year ago",
+        "star_label": "1 star",
+        "text": "Horrible Staff ! Keep passing over with one to another with the promise on a call back for a prescription of medication referred from the hospital saying they didn\u2019t received the letter than all of a sudden did, but after a 4,5 hours wait and telling that they close at 5 ! And to collect medication on a Monday ? Really unorganised and not helpful!",
+        "raw_card_text": "Sinem Dervish4 reviews \u00b7 1 photoa year ago Horrible Staff ! Keep passing over with one to another with the promise on a call back for a prescription of medication referred from the hospital saying they didn\u2019t received the letter than all of a sudden did, but after a 4,5 hours wait and telling that they close at 5 ! And to collect medication on a Monday ? Really unorganised and not helpful!Like1 Share"
+      },
+      {
+        "author": "Drew",
+        "relative_date": "a year ago",
+        "star_label": "1 star",
+        "text": "Repeatedly confirmed appointments on incorrect date and when show up for appointment it\u2019s always oh sorry my colleague has done it incorrectly. More training needed for reception staff if they struggle to read a calendar.",
+        "raw_card_text": "Drew2 reviewsa year ago Repeatedly confirmed appointments on incorrect date and when show up for appointment it\u2019s always oh sorry my colleague has done it incorrectly. More training needed for reception staff if they struggle to read a calendar.Like1 Share"
+      }
+    ],
+    "practice_name": "David Medical Centre",
+    "postcode": "M21 8HA",
+    "canonical_code": "P84066",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/david-medical-centre/P84066",
+    "query_used": "David Medical Centre M21 8HA",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P84066-david-medical-centre.txt"
   }
 ]
