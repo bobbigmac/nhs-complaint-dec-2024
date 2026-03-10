@@ -95,6 +95,7 @@ def main() -> int:
         batch_size = min(random.randint(args.batch_size_min, args.batch_size_max), len(remaining))
         pause_seconds = random.uniform(args.practice_pause_min, args.practice_pause_max)
         pause_jitter = random.uniform(args.practice_jitter_min, args.practice_jitter_max)
+        random.shuffle(remaining)
         print(f"Batch {batch_number}: scanning {batch_size} practices for target={args.target}, {len(remaining)} remaining before batch")
         print(f"Per-practice pause {pause_seconds:.2f}s + up to {pause_jitter:.2f}s jitter")
 

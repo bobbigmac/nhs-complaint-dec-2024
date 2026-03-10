@@ -13643,27 +13643,98 @@
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y00445001-salford-primary-care-together-eccles-gateway.txt"
   },
   {
-    "query": "1/Monton Medical Practice M30 8AR",
-    "google_maps_title": "1",
-    "google_maps_url": "https://www.google.com/maps/search/1/@53.4616622,-2.195456,14z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": null,
-    "google_review_count": null,
-    "clicked_first_search_result": false,
-    "page_kind": "search",
-    "scan_status": "manual_review_search_result_only",
-    "manual_review_required": true,
+    "query": "Monton Medical Practice M30 8AR",
+    "google_maps_title": "Monton Medical Centre",
+    "google_maps_url": "https://www.google.com/maps/place/Monton+Medical+Centre/@53.4918416,-2.3617292,17z/data=!3m1!5s0x487baed9f815cc63:0xba7a03f8eaa690aa!4m12!1m2!2m1!1sMonton+Medical+Practice+M30+8AR!3m8!1s0x487baeda032e79b1:0x55bd57fe03242aca!8m2!3d53.4918416!4d-2.3569656!9m1!1b1!15sCh9Nb250b24gTWVkaWNhbCBQcmFjdGljZSBNMzAgOEFSkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1jkz4jm0v?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.6,
+    "google_review_count": 300,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
     "retry_recommended": false,
-    "reviews_opened": false,
-    "reviews_sorted_newest": false,
-    "visible_review_cards_collected": 0,
-    "recent_reviews": [],
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Natalie Tidmas",
+        "relative_date": "2 days ago",
+        "star_label": "5 stars",
+        "text": "Dr Rhodes was very attentive. He made eye contact and was very empathetic and listened.. rather than just tapping away not looking. He is a lovely doctor and actually cares",
+        "raw_card_text": "Natalie Tidmas1 review2 days ago New Dr Rhodes was very attentive. He made eye contact and was very empathetic and listened.. rather than just tapping away not looking. He is a lovely doctor and actually caresLike Share"
+      },
+      {
+        "author": "Ondrej O.",
+        "relative_date": "Edited 3 days ago",
+        "star_label": "5 stars",
+        "text": "Gp - Sue was amazing and I have seen her first time and lady at the reception, she is blond, she is always absolute star. Dr Rhodes is always professional and more than helpful.",
+        "raw_card_text": "Ondrej O.9 reviewsEdited 3 days ago Gp - Sue was amazing and I have seen her first time and lady at the reception, she is blond, she is always absolute star. Dr Rhodes is always professional and more than helpful.Like Share"
+      },
+      {
+        "author": "Lauren Kennedy",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Lauren Kennedy3 days ago New"
+      },
+      {
+        "author": "Andrew Mackey",
+        "relative_date": "Edited 3 days ago",
+        "star_label": "5 stars",
+        "text": "Staff are amazing and generally really keen to be helpful.",
+        "raw_card_text": "Andrew Mackey8 reviewsEdited 3 days ago Staff are amazing and generally really keen to be helpful.Like Share"
+      },
+      {
+        "author": "lorraine burns",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "lorraine burns3 days ago New"
+      },
+      {
+        "author": "Dave Robinson",
+        "relative_date": "Edited 3 days ago",
+        "star_label": "5 stars",
+        "text": "Professional and listening sorted out issue went above and beyond",
+        "raw_card_text": "Dave RobinsonLocal Guide \u00b7 52 reviewsEdited 3 days ago Professional and listening sorted out issue went above and beyondLike Share"
+      },
+      {
+        "author": "Mark Bowie",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Mark Bowie3 days ago New"
+      },
+      {
+        "author": "Karen Bradley",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "Very good , and helpful",
+        "raw_card_text": "Karen Bradley3 reviews3 days ago New Very good , and helpfulLike Share"
+      },
+      {
+        "author": "Jimmi Harkishin",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Jimmi Harkishin1 review3 days ago New"
+      },
+      {
+        "author": "Brian Bowes",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Brian Bowes1 reviewa week ago New"
+      }
+    ],
     "practice_name": "1/Monton Medical Practice",
     "postcode": "M30 8AR",
     "canonical_code": "P87620",
     "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/1-monton-medical-practice/P87620",
-    "query_used": "1/Monton Medical Practice M30 8AR",
-    "title_match_score": 0.0,
-    "review_text_file": ""
+    "query_used": "Monton Medical Practice M30 8AR",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87620-1-monton-medical-practice.txt"
   },
   {
     "query": "3/Springfield House Medical Practice M30 8QD",
@@ -17706,27 +17777,98 @@
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y00445003-spct-inclusion-service.txt"
   },
   {
-    "query": "1/Salford Medical Practice M6 5PP",
-    "google_maps_title": "Google Maps",
-    "google_maps_url": "https://accounts.google.com/v3/signin/rejected?continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F1%2F%4053.4616622%2C-2.195456%2C14z%3Fentry%3Dttu%26g_ep%3DEgoyMDI2MDMwNS4wIKXMDSoASAFQAw%253D%253D&dsh=S791197961%3A1773123866845869&ec=GAZAcQ&epd=AVxC5Fcl37mL5Uz-TORB11eAYYIX8yUZI-soodoiOkaISNibcj0KpAbmDw&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en&ifkv=ASfE1-qi0Cdii-KzESy5Ph6rG1fTloWerZFWcAJp_CcSaG0ExaLMxIxn0VTqlLYSHDI3qJLvd7R-6Q&rhlk=le&rrk=46&service=local",
-    "google_rating": null,
-    "google_review_count": null,
+    "query": "Salford Medical Practice M6 5PP",
+    "google_maps_title": "Salford Medical Centre",
+    "google_maps_url": "https://www.google.com/maps/place/Salford+Medical+Centre/@53.4874216,-2.294578,17z/data=!4m8!3m7!1s0x487bae47d4905f0b:0x9808012c0213669a!8m2!3d53.4874216!4d-2.294578!9m1!1b1!16s%2Fg%2F11c6dyfg2r?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.7,
+    "google_review_count": 616,
     "clicked_first_search_result": false,
-    "page_kind": "other",
-    "scan_status": "manual_review_search_result_only",
-    "manual_review_required": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
     "retry_recommended": false,
-    "reviews_opened": false,
-    "reviews_sorted_newest": false,
-    "visible_review_cards_collected": 0,
-    "recent_reviews": [],
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Olesia Saif",
+        "relative_date": "Edited 8 hours ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Olesia Saif7 reviewsEdited 8 hours ago"
+      },
+      {
+        "author": "shamoora malik",
+        "relative_date": "9 hours ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "shamoora malik2 reviews9 hours ago New"
+      },
+      {
+        "author": "julie smyth",
+        "relative_date": "9 hours ago",
+        "star_label": "5 stars",
+        "text": "Extremely happy Kyla listened intently to my discomfort and I believe prescribed the correct medication for my ailment",
+        "raw_card_text": "julie smyth1 review9 hours ago New Extremely happy Kyla listened intently to my discomfort and I believe prescribed the correct medication for my ailmentLike Share"
+      },
+      {
+        "author": "SUSAN QUINN",
+        "relative_date": "Edited 9 hours ago",
+        "star_label": "1 star",
+        "text": "Considering I did not see Kyla as my appointment with was cancelled by my partner last week, because I needed to see a doctor and not a nurse as I have all ready seen a nurse about the same problem, and it was your practice that text me to make this appointment, in future it would help if you read patients notes before sending out these texts that's if you want a good review",
+        "raw_card_text": "SUSAN QUINN3 reviewsEdited 9 hours ago Considering I did not see Kyla as my appointment with was cancelled by my partner last week, because I needed to see a doctor and not a nurse as I have all ready seen a nurse about the same problem, and it was your practice that text me to make this appointment, in future it would help if you read patients notes before sending out these texts that's if you want a good reviewLike Share"
+      },
+      {
+        "author": "Oliver Ritchie",
+        "relative_date": "10 hours ago",
+        "star_label": "5 stars",
+        "text": "Go above and beyond the doctors here",
+        "raw_card_text": "Oliver Ritchie4 reviews10 hours ago New Go above and beyond the doctors hereLike Share"
+      },
+      {
+        "author": "David Lam",
+        "relative_date": "Edited 10 hours ago",
+        "star_label": "5 stars",
+        "text": "Very good",
+        "raw_card_text": "David LamLocal Guide \u00b7 1 review \u00b7 226 photosEdited 10 hours ago New Very goodLike Share"
+      },
+      {
+        "author": "Shane Furey",
+        "relative_date": "Edited 10 hours ago",
+        "star_label": "5 stars",
+        "text": "Amazing doctor \u2764\ufe0f always listens to you very understanding to your needs",
+        "raw_card_text": "Shane FureyLocal Guide \u00b7 25 reviewsEdited 10 hours ago Amazing doctor \u2764\ufe0f always listens to you very understanding to your needsLike Share"
+      },
+      {
+        "author": "Elle Coles",
+        "relative_date": "16 hours ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Elle ColesLocal Guide \u00b7 10 reviews \u00b7 4 photos16 hours ago New"
+      },
+      {
+        "author": "Georgina Dalli",
+        "relative_date": "Edited a day ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Georgina DalliLocal Guide \u00b7 5 reviewsEdited a day ago"
+      },
+      {
+        "author": "Amie Monaghan",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Amie Monaghan1 review3 days ago New"
+      }
+    ],
     "practice_name": "1/Salford Medical Practice",
     "postcode": "M6 5PP",
     "canonical_code": "P87004",
     "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/1-salford-medical-practice/P87004",
-    "query_used": "1/Salford Medical Practice M6 5PP",
-    "title_match_score": 0.0,
-    "review_text_file": ""
+    "query_used": "Salford Medical Practice M6 5PP",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87004-1-salford-medical-practice.txt"
   },
   {
     "query": "Cornerstone Medical Practice M6 5QQ",
@@ -31264,5 +31406,193 @@
     "query_used": "Edenfield Road Surgery OL11 5AQ",
     "title_match_score": 1.0,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86003-edenfield-road-surgery.txt"
+  },
+  {
+    "query": "Norden Surgery OL11 5XE",
+    "google_maps_title": "Edenfield Road Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Edenfield+Road+Surgery/@53.6223652,-2.2269893,14z/data=!4m12!1m2!2m1!1sNorden+Surgery+OL11+5XE!3m8!1s0x487bbbf10d86cd27:0xb8b10fee1ac092c8!8m2!3d53.6223652!4d-2.1888805!9m1!1b1!15sChdOb3JkZW4gU3VyZ2VyeSBPTDExIDVYRVoZIhdub3JkZW4gc3VyZ2VyeSBvbDExIDV4ZZIBDm1lZGljYWxfY2xpbmljmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NGVsUkhkSEpOUlZsM1pGZHpNVlJWZHpSaFJURlJaR3RLTWxWWVl4QULgAQD6AQQIABA9!16s%2Fg%2F1tq8j2yk?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.3,
+    "google_review_count": 228,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Jean Downes",
+        "relative_date": "a week ago",
+        "star_label": "4 stars",
+        "text": "The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided.",
+        "raw_card_text": "Jean Downes1 reviewa week ago New The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided.Like Share Response from the owner 6 hours agoHi Jean, Thank you very much for your positive feedback and we\u2019re really grateful for it. We\u2019re pleased you\u2019ve noticed significant improvements in recent times and are happy with the care you receive. We will share your comment with our practice team. We\u2019re all really grateful for your support. Thank you."
+      },
+      {
+        "author": "Megan Roscoe",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable.",
+        "raw_card_text": "Megan Roscoe6 reviewsa week ago New The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable.Like Share Response from the owner 6 hours agoHi Megan, Thank you very much for your positive feedback and review. We\u2019ve been working very hard to improve our appointments system and access. We\u2019re delighted you\u2019ve found the new system to be really positive. We will share your praise with Dr Alam and the team who will all be grateful for your support. Thank you."
+      },
+      {
+        "author": "Salvatore Melidoni",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "The best service ever. Kind and considerate. Thank you.",
+        "raw_card_text": "Salvatore Melidoni1 review \u00b7 2 photosa week ago New The best service ever. Kind and considerate. Thank you.Like Share Response from the owner 6 hours agoHi Salvatore, Thank you very much for your lovely feedback and support. We will share it with our practice team. It means a lot to us and we\u2019re really grateful. Thank you."
+      },
+      {
+        "author": "Mark Wood",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery.",
+        "raw_card_text": "Mark Wood1 review2 weeks ago New I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery.Like Share Response from the owner 6 hours agoHi Mark, Thank you very much for your wonderful review and support for our whole team. It means a lot to us. We really appreciate it and will share your feedback with our practice team. Thank you."
+      },
+      {
+        "author": "Mark Carnighan - Business Growth Specialist",
+        "relative_date": "2 weeks ago",
+        "star_label": "1 star",
+        "text": "Terrible service - test results show cause and they know you\u2019re in pain,so give you an appointment in 6 weeks and shrug when you question this.A disgrace",
+        "raw_card_text": "Mark Carnighan - Business Growth Specialist6 reviews2 weeks ago New Terrible service - test results show cause and they know you\u2019re in pain,so give you an appointment in 6 weeks and shrug when you question this.A disgraceLike Share Response from the owner a week agoHi Mark, We\u2019re sorry to hear you're disappointed with the service you have received. We hope your issue has been resolved. Please do contact the surgery and ask to speak to our practice manager if you would like further support."
+      },
+      {
+        "author": "ranjo ali",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "It\u2019s amazing feeling, they make me feel important and well looked after",
+        "raw_card_text": "ranjo ali1 review2 weeks ago New It\u2019s amazing feeling, they make me feel important and well looked afterLike Share Response from the owner a week agoHi Ranjo, Thank you very much for your positive feedback. We\u2019re all delighted to see that you have been made to feel important and are well looked after. Thank you."
+      },
+      {
+        "author": "Martine Mooney",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "We saw Dr Alum today and all I can say is WOW!! Very engaging, listened to every concern. He was very patient and very competent. Would highly recommend seeing him. Myself & my family are very grateful.",
+        "raw_card_text": "Martine Mooney2 reviews3 weeks ago New We saw Dr Alum today and all I can say is WOW!! Very engaging, listened to every concern. He was very patient and very competent. Would highly recommend seeing him. Myself & my family are very grateful.Like Share Response from the owner 3 weeks agoHi Martine, Thank you very much for your positive review. We\u2019re really pleased to hear you and your family are really pleased with the care you received from Dr Alam. We will share your support with Dr Alam and our team. Thank you."
+      },
+      {
+        "author": "Lisa Ashton",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "I recently have had really great care from Dr Aslam and Dr Alum. Using patches I have gotten an appointment when needed.",
+        "raw_card_text": "Lisa Ashton8 reviews \u00b7 4 photos3 weeks ago New I recently have had really great care from Dr Aslam and Dr Alum. Using patches I have gotten an appointment when needed.Like Share Response from the owner 3 weeks agoHi Lisa, Thank you very much for your lovely review. We\u2019re really pleased to hear you have had great care from the team at the surgery. Dr Aslam is a lovely GP and we are really grateful to have her as per of our team. We\u2019re pleased you found the appointments system easy to navigate and found Patch\u2019s to be helpful. We will share your review with Dr Alam and the team who will be very grateful. Thank you for your support."
+      },
+      {
+        "author": "Grace Krzempek",
+        "relative_date": "Edited 3 weeks ago",
+        "star_label": "5 stars",
+        "text": "Having used the PATCHS system several times now, I would like to say how quick, easy and efficient the system has been. I would also like to say a big thank you to Siobhan, the lung capacity nurse, who helped me with the tests and made me feel very comfortable by listening to all my concerns. The pharmacist, Imran, who also reassured me that my results required no further attention. Also, to Dr Alam, who explained my test results, and completely reassured me that my health was moving in the right direction. And finally, thank you to all the staff who work at Edenfield Road Surgery. You are doing a fantastic job.",
+        "raw_card_text": "Grace Krzempek2 reviewsEdited 3 weeks ago Having used the PATCHS system several times now, I would like to say how quick, easy and efficient the system has been. I would also like to say a big thank you to Siobhan, the lung capacity nurse, who helped me with the tests and made me feel very comfortable by listening to all my concerns. The pharmacist, Imran, who also reassured me that my results required no further attention. Also, to Dr Alam, who explained my test results, and completely reassured me that my health was moving in the right direction. And finally, thank you to all the staff who work at Edenfield Road Surgery. You are doing a fantastic job.Like1 Share Response from the owner 3 weeks agoHi Grace, Thank you very much for your amazing comments, and supportive review. We really appreciate it and it means a lot to us. Siobhan is indeed a really amazing nurse, kind and considerate and always helpful. Imran really is a fantastic pharmacist and always goes the extra mile. We will share your lovely review with Dr Alam and the whole practice team. We are really grateful for your support. Thank you very much."
+      },
+      {
+        "author": "Dan Eaton",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Great service from the surgery today. Made a request and was contacted straight away. A face to face appointment was issued. Gary Eaton",
+        "raw_card_text": "Dan Eaton5 reviewsa month ago Great service from the surgery today. Made a request and was contacted straight away. A face to face appointment was issued. Gary EatonLike Share Response from the owner 3 weeks agoHi Gary, Thank you very much for your positive review and we\u2019re really pleased to hear about the nice experience you have had. Over the past few months as a team we have worked extremely hard to improve our appointment system and it\u2019s really pleasing to hear about the patient experience improving significantly. Thank you for your support."
+      }
+    ],
+    "practice_name": "Norden Surgery",
+    "postcode": "OL11 5XE",
+    "canonical_code": "P86003002",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/norden-surgery/P86003002",
+    "query_used": "Norden Surgery OL11 5XE",
+    "title_match_score": 0.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86003002-norden-surgery.txt"
+  },
+  {
+    "query": "Ashworth Street Surgery OL12 6RT",
+    "google_maps_title": "Ashworth Street Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Ashworth+Street+Surgery/@53.6195927,-2.1657162,17z/data=!4m8!3m7!1s0x487bb959e0ff159d:0x62bd86fed05344a4!8m2!3d53.6195927!4d-2.1657162!9m1!1b1!16s%2Fg%2F1tfqfbp2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.0,
+    "google_review_count": 144,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Ahmed raza Khan",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Very bad dealing on counter",
+        "raw_card_text": "Ahmed raza Khan10 reviews \u00b7 4 photosa month ago Very bad dealing on counterLike Share"
+      },
+      {
+        "author": "Nusrat Kousar",
+        "relative_date": "a month ago",
+        "star_label": "2 stars",
+        "text": "This surgery never has appointments available online app or at the surgery they changng doctor all the time but never have anyone available I rang two days in a row for appointment the receptionist says nothing left these doctors do nothing the receptionist are all old rude receptionist all confused get new energetic staff who want to work fast with there job.",
+        "raw_card_text": "Nusrat KousarLocal Guide \u00b7 24 reviewsa month ago This surgery never has appointments available online app or at the surgery they changng doctor all the time but never have anyone available I rang two days in a row for appointment the receptionist says nothing left these doctors do nothing the receptionist are all old rude receptionist all confused get new energetic staff who want to work fast with there job.Like Share"
+      },
+      {
+        "author": "Simon Birchall",
+        "relative_date": "Edited a month ago",
+        "star_label": "5 stars",
+        "text": "Used this surgery for 20+ years and always found the staff and doctors to be friendly and helpful.",
+        "raw_card_text": "Simon BirchallLocal Guide \u00b7 267 reviews \u00b7 5,189 photosEdited a month ago Used this surgery for 20+ years and always found the staff and doctors to be friendly and helpful.Like Share"
+      },
+      {
+        "author": "John",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I've been there several times in 2017 and they have some really great people working there.",
+        "raw_card_text": "John3 reviewsa month ago I've been there several times in 2017 and they have some really great people working there.Like Share"
+      },
+      {
+        "author": "Chand Bibi",
+        "relative_date": "Edited 2 months ago",
+        "star_label": "5 stars",
+        "text": "Excellent excellent all the staff",
+        "raw_card_text": "Chand BibiLocal Guide \u00b7 68 reviews \u00b7 28 photosEdited 2 months ago Excellent excellent all the staffLike Share"
+      },
+      {
+        "author": "Patricia Enright",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Patricia EnrightLocal Guide \u00b7 14 reviews \u00b7 3 photos2 months ago"
+      },
+      {
+        "author": "Shelley Hargreaves",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "Breach data protection by giving other practitioners who do not work at the practice access to patient's GP records without their consent. This is a massive breach of GDPR and trust. The practice manager then refuses to investigate unless you give consent for her to discuss you with other agengies - if you refuse to give consent she refuses to investigate your complaint so is almost blackmailing you into giving consent. I have refused to give consent because I refuse to be blackmailed in this way, I also do not want to give consent in case they abuse it. I have letters and emails to prove my review. No idea how many patients are affected by this and I believe other surgeries are also doing the same as Ashworth Street. They clearly think they are above the law.",
+        "raw_card_text": "Shelley Hargreaves11 reviews3 months ago Breach data protection by giving other practitioners who do not work at the practice access to patient's GP records without their consent. This is a massive breach of GDPR and trust. The practice manager then refuses to investigate unless you give consent for her to discuss you with other agengies - if you refuse to give consent she refuses to investigate your complaint so is almost blackmailing you into giving consent. I have refused to give consent because I refuse to be blackmailed in this way, I also do not want to give consent in case they abuse it. I have letters and emails to prove my review. No idea how many patients are affected by this and I believe other surgeries are also doing the same as Ashworth Street. They clearly think they are above the law.Like Share"
+      },
+      {
+        "author": "Omar Asghar",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "This medical center is terrible. I can never get an appointment. They always pretend not to hear when appointments are closed. My son has asthma, and I've tried four times to get an appointment, but there's no way.",
+        "raw_card_text": "Omar Asghar1 review3 months ago This medical center is terrible. I can never get an appointment. They always pretend not to hear when appointments are closed. My son has asthma, and I've tried four times to get an appointment, but there's no way.Like Share"
+      },
+      {
+        "author": "Brian",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Went to see Dr Doyle yesterday he was friendly .helpful and totally professional hes a credit to NHS thanks for an excellent service .it was a pleasure to go to doctor\ud83d\udc4d \u2026",
+        "raw_card_text": "BrianLocal Guide \u00b7 126 reviews \u00b7 193 photos3 months ago Went to see Dr Doyle yesterday he was friendly .helpful and totally professional hes a credit to NHS thanks for an excellent service .it was a pleasure to go to doctor\ud83d\udc4d \u2026Like Share"
+      },
+      {
+        "author": "Mukesh Tanwar",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Mukesh Tanwar4 reviews3 months ago"
+      }
+    ],
+    "practice_name": "Ashworth Street Surgery",
+    "postcode": "OL12 6RT",
+    "canonical_code": "P86006",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/ashworth-street-surgery/P86006",
+    "query_used": "Ashworth Street Surgery OL12 6RT",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86006-ashworth-street-surgery.txt"
   }
 ]

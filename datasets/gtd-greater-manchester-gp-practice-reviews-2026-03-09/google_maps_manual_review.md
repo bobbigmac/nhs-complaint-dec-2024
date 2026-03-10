@@ -1,14 +1,12 @@
 # Google Maps Manual Review Queue
 
-Generated from 33 flagged Google Maps capture records.
+Generated from 31 flagged Google Maps capture records.
 
 ## Manual Review Required
 
 | Practice | Code | Reason | Google title | URL |
 | --- | --- | --- | --- | --- |
 | Cornbrook Medical Practice | P84669 | manual_review_search_result_only | Cornbrook Medical Practice M15 4EA | [link](https://www.google.com/maps/search/Cornbrook+Medical+Practice+M15+4EA/@53.4697361,-2.2494283,16z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
-| 1/Monton Medical Practice | P87620 | manual_review_search_result_only | 1 | [link](https://www.google.com/maps/search/1/@53.4616622,-2.195456,14z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
-| 1/Salford Medical Practice | P87004 | manual_review_search_result_only | Google Maps | [link](https://accounts.google.com/v3/signin/rejected?continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F1%2F%4053.4616622%2C-2.195456%2C14z%3Fentry%3Dttu%26g_ep%3DEgoyMDI2MDMwNS4wIKXMDSoASAFQAw%253D%253D&dsh=S791197961%3A1773123866845869&ec=GAZAcQ&epd=AVxC5Fcl37mL5Uz-TORB11eAYYIX8yUZI-soodoiOkaISNibcj0KpAbmDw&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en&ifkv=ASfE1-qi0Cdii-KzESy5Ph6rG1fTloWerZFWcAJp_CcSaG0ExaLMxIxn0VTqlLYSHDI3qJLvd7R-6Q&rhlk=le&rrk=46&service=local) |
 
 ## Weak Name Match
 

@@ -102,6 +102,14 @@ def normalize_name(value: str) -> str:
     return " ".join(value.split())
 
 
+def query_friendly_name(value: str) -> str:
+    value = (value or "").strip()
+    # NHS branch names sometimes start with numeric prefixes like "1/" or "3/".
+    # Google Maps can collapse these into useless single-character searches.
+    value = re.sub(r"^\d+\s*/\s*", "", value)
+    return " ".join(value.split())
+
+
 def token_set(value: str) -> set[str]:
     return {
         token
@@ -353,7 +361,7 @@ def resolve_query(row: dict[str, str], query_overrides: dict[str, str]) -> str:
     for key in keys:
         if key and key in query_overrides:
             return str(query_overrides[key]).strip()
-    return f"{row['practice_name']} {row['postcode']}".strip()
+    return f"{query_friendly_name(row['practice_name'])} {row['postcode']}".strip()
 
 
 def build_review_text_path(text_dir: Path, canonical_code: str, practice_name: str) -> Path:
