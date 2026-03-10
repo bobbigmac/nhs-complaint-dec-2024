@@ -26,6 +26,7 @@ PROFILE_ROOT = Path.home() / ".mozilla" / "firefox"
 PROFILE_COPY_DIR = BASE_DIR / ".tooling" / "firefox-profile-copy"
 DEFAULT_OUTPUT = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google_maps_recent_reviews.json"
 DEFAULT_TEXT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google-review-texts"
+DEFAULT_QUERY_OVERRIDES = BASE_DIR / "google_maps_query_overrides.json"
 
 
 def discover_default_firefox_profile() -> Path:
@@ -148,11 +149,11 @@ def extract_overall_metrics(driver: webdriver.Firefox) -> tuple[str, float | Non
 
 
 def click_first_search_result(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
-    candidates = driver.find_elements(By.CSS_SELECTOR, 'a[href*="/place/"]')
+    candidates = driver.find_elements(By.CSS_SELECTOR, 'a[href*="/place/"], a.hfpxzc')
     for candidate in candidates:
         href = candidate.get_attribute("href") or ""
-        label = normalize_text(candidate.text)
-        if "/place/" not in href or not label:
+        label = normalize_text(candidate.text or candidate.get_attribute("aria-label") or candidate.get_attribute("title") or "")
+        if "/place/" not in href:
             continue
         driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", candidate)
         time.sleep(0.5)
@@ -167,6 +168,14 @@ def click_first_search_result(driver: webdriver.Firefox, wait: WebDriverWait) ->
         time.sleep(3)
         return True
     return False
+
+
+def google_page_kind(current_url: str) -> str:
+    if "/place/" in current_url:
+        return "place"
+    if "/search/" in current_url:
+        return "search"
+    return "other"
 
 
 def open_reviews_panel(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
@@ -266,10 +275,14 @@ def scrape_place(driver: webdriver.Firefox, query: str, recent_limit: int) -> di
 
     place_title, rating, review_count = extract_overall_metrics(driver)
     clicked_first_result = False
-    if rating is None and "/search/" in driver.current_url:
+    if google_page_kind(driver.current_url) == "search" and rating is None:
         clicked_first_result = click_first_search_result(driver, wait)
         place_title, rating, review_count = extract_overall_metrics(driver)
     reviews_opened = open_reviews_panel(driver, wait)
+    if not reviews_opened and google_page_kind(driver.current_url) == "search":
+        clicked_first_result = click_first_search_result(driver, wait) or clicked_first_result
+        place_title, rating, review_count = extract_overall_metrics(driver)
+        reviews_opened = open_reviews_panel(driver, wait)
     reviews_sorted = False
     recent_reviews: list[dict[str, str]] = []
     if reviews_opened:
@@ -278,12 +291,7 @@ def scrape_place(driver: webdriver.Firefox, query: str, recent_limit: int) -> di
         recent_reviews = extract_recent_reviews(driver, recent_limit)
 
     current_url = driver.current_url
-    if "/place/" in current_url:
-        page_kind = "place"
-    elif "/search/" in current_url:
-        page_kind = "search"
-    else:
-        page_kind = "other"
+    page_kind = google_page_kind(current_url)
 
     manual_review_required = page_kind != "place"
     if manual_review_required:
@@ -328,6 +336,24 @@ def load_existing_results(path: Path) -> list[dict[str, object]]:
     except json.JSONDecodeError:
         return []
     return payload if isinstance(payload, list) else []
+
+
+def load_query_overrides(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload if isinstance(payload, dict) else {}
+
+
+def resolve_query(row: dict[str, str], query_overrides: dict[str, str]) -> str:
+    keys = [
+        row.get("canonical_code", "").strip(),
+        row.get("practice_name", "").strip(),
+    ]
+    for key in keys:
+        if key and key in query_overrides:
+            return str(query_overrides[key]).strip()
+    return f"{row['practice_name']} {row['postcode']}".strip()
 
 
 def build_review_text_path(text_dir: Path, canonical_code: str, practice_name: str) -> Path:
@@ -399,6 +425,7 @@ def main() -> int:
     parser.add_argument("--resume", action="store_true", help="Skip rows already present in the output file")
     parser.add_argument("--only-missing-google", action="store_true", help="Only scrape practices missing a Google score in the input CSV")
     parser.add_argument("--reviews-text-dir", type=Path, default=DEFAULT_TEXT_DIR, help="Directory for one text file per practice with captured visible review text")
+    parser.add_argument("--query-overrides", type=Path, default=DEFAULT_QUERY_OVERRIDES, help="JSON map of canonical_code or practice_name to an alternate Google Maps query")
     args = parser.parse_args()
 
     source_profile = discover_default_firefox_profile()
@@ -411,17 +438,23 @@ def main() -> int:
         rows = [row for row in rows if needle in row["practice_name"].lower()]
 
     existing_results = load_existing_results(args.output)
+    existing_result_indexes = {
+        str(item.get("canonical_code", "")).strip(): index
+        for index, item in enumerate(existing_results)
+        if item.get("canonical_code")
+    }
     existing_codes = {str(item.get("canonical_code", "")) for item in existing_results if item.get("canonical_code")}
     if args.resume:
         rows = [row for row in rows if row.get("canonical_code", "") not in existing_codes]
     rows = rows[: args.limit]
+    query_overrides = load_query_overrides(args.query_overrides)
 
     driver = build_driver(profile_copy, headless=args.headless)
     collected: list[dict[str, object]] = list(existing_results)
     try:
         total = len(rows)
         for index, row in enumerate(rows, start=1):
-            query = f"{row['practice_name']} {row['postcode']}".strip()
+            query = resolve_query(row, query_overrides)
             print(f"[{index}/{total}] {query}")
             try:
                 result = scrape_place(driver, query, args.recent_reviews)
@@ -447,9 +480,15 @@ def main() -> int:
             result["postcode"] = row["postcode"]
             result["canonical_code"] = row["canonical_code"]
             result["nhs_profile_url"] = row["nhs_profile_url"]
+            result["query_used"] = query
             result["title_match_score"] = round(title_similarity(row["practice_name"], str(result.get("google_maps_title", ""))), 3)
             result["review_text_file"] = write_review_text_file(args.reviews_text_dir, result)
-            collected.append(result)
+            existing_index = existing_result_indexes.get(row["canonical_code"], None)
+            if existing_index is None:
+                collected.append(result)
+                existing_result_indexes[row["canonical_code"]] = len(collected) - 1
+            else:
+                collected[existing_index] = result
             args.output.write_text(json.dumps(collected, indent=2), encoding="utf-8")
             pause_for = args.pause_seconds + random.uniform(0.0, max(args.pause_jitter_seconds, 0.0))
             time.sleep(pause_for)
