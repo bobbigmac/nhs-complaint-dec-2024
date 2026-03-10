@@ -1,6 +1,6 @@
 # Google Maps Manual Review Queue
 
-Generated from 38 flagged Google Maps capture records.
+Generated from 42 flagged Google Maps capture records.
 
 ## Manual Review Required
 
@@ -49,3 +49,7 @@ Generated from 38 flagged Google Maps capture records.
 | Dam Head Medical Centre | P84690 | 0.0 | Damhead Medical Centre | [link](https://www.google.com/maps/place/Damhead+Medical+Centre/@53.5262106,-2.2125562,17z/data=!4m8!3m7!1s0x487bb08bcda1f3c7:0x4cf319647b87ffe0!8m2!3d53.5262106!4d-2.2125562!9m1!1b1!16s%2Fg%2F1hc2pcd39?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Perkins Practice | P85608 | 0.333 | Dr B Perkins | [link](https://www.google.com/maps/place/Dr+B+Perkins/@53.5437506,-2.1168654,17z/data=!3m1!5s0x487bb77e3916bf0d:0x93f66a947f64144a!4m8!3m7!1s0x487bb77e730fbffd:0xed4dd7a0833a1a4a!8m2!3d53.5437506!4d-2.1168654!9m1!1b1!16s%2Fg%2F1hc547tb4?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Alexandra Group Med Pract | P85015 | 0.333 | The Alexandra Group Medical Practice | [link](https://www.google.com/maps/place/The+Alexandra+Group+Medical+Practice/@53.5378483,-2.0952743,17z/data=!4m8!3m7!1s0x487bb78f1d7088ad:0xac4782f6fed011e5!8m2!3d53.5378483!4d-2.0952743!9m1!1b1!16s%2Fg%2F1tf57fk0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| HT Practice | P89020 | 0.0 | H T Practice | [link](https://www.google.com/maps/place/H+T+Practice/@53.4781118,-2.1106478,17z/data=!4m8!3m7!1s0x487bb65b8c33a5c3:0x33f9e9c514045460!8m2!3d53.4781118!4d-2.1106478!9m1!1b1!16s%2Fg%2F11b7qdwp2v?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Littletown Family Med Pract | P85605 | 0.25 | Little Town Family Medical Practice | [link](https://www.google.com/maps/place/Little+Town+Family+Medical+Practice/@53.5291775,-2.1344148,17z/data=!4m8!3m7!1s0x487bb741d7c3a51b:0xd09ba6c4ec44a922!8m2!3d53.5291775!4d-2.1344148!9m1!1b1!16s%2Fg%2F1hc28crc_?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Ch Medical Practice | P85011 | 0.0 | C H Medical | [link](https://www.google.com/maps/place/C+H+Medical/@53.5317074,-2.1465969,17z/data=!3m1!5s0x487bb744e445c9e1:0x3d946cf2e638e9a6!4m8!3m7!1s0x487bb75b51b16df1:0xd03df3ef3ed0f389!8m2!3d53.5317074!4d-2.1465969!9m1!1b1!16s%2Fg%2F1hc3lzbtz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Clarendon Medical Centre | P89012 | 0.0 | SK14 2AQ | [link](https://www.google.com/maps/place/Hyde+SK14+2AQ/@53.4526399,-2.0799511,15z/data=!3m1!4b1!4m6!3m5!1s0x487bb5ddee93125f:0x72a3000b9ea4de6!8m2!3d53.4526405!4d-2.0799511!16s%2Fg%2F1tk8n48j?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |

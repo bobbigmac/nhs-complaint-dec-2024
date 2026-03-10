@@ -627,7 +627,33 @@ Caveats:
     path.write_text(readme, encoding="utf-8")
 
 
+def load_gp_patient_survey_index(raw_dir: Path = GP_PATIENT_SURVEY_RAW_DIR) -> dict[str, dict[str, Any]]:
+    if not raw_dir.exists():
+        return {}
+    survey_by_code: dict[str, dict[str, Any]] = {}
+    for survey_file in sorted(raw_dir.glob("*.json")):
+        try:
+            payload = json.loads(survey_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        code = str(payload.get("canonical_code", "")).strip()
+        if code:
+            survey_by_code[code] = payload
+    return survey_by_code
+
+
+def survey_metric(payload: dict[str, Any], question_name: str, field: str = "practice_percent") -> Any:
+    key_questions = payload.get("key_questions", {})
+    if not isinstance(key_questions, dict):
+        return ""
+    question = key_questions.get(question_name, {})
+    if not isinstance(question, dict):
+        return ""
+    return question.get(field, "")
+
+
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
+    survey_by_code = load_gp_patient_survey_index()
     known_management_companies = sorted(
         {
             row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else "")
@@ -635,31 +661,41 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
             if row.get("management_company_name", "") or row["gtd_managed"]
         }
     )
-    markers = [
-        {
-            "name": row["practice_name"],
-            "lat": row["latitude"],
-            "lon": row["longitude"],
-            "postcode": row["postcode"],
-            "gtd": row["gtd_managed"],
-            "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
-            "google_score": row["google_review_score"],
-            "google_count": row["google_review_count"],
-            "google_source_note": row.get("google_review_source_note", ""),
-            "google_text_file": row.get("google_review_text_file", ""),
-            "nhs_url": row["nhs_profile_url"],
-            "gtd_url": row["gtd_site_url"],
-            "nearby": row["nearby_to_gtd_anchors"],
-        }
-        for row in rows
-    ]
+    markers = []
+    for row in rows:
+        survey_payload = survey_by_code.get(str(row["canonical_code"]), {})
+        markers.append(
+            {
+                "code": row["canonical_code"],
+                "name": row["practice_name"],
+                "lat": row["latitude"],
+                "lon": row["longitude"],
+                "postcode": row["postcode"],
+                "gtd": row["gtd_managed"],
+                "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
+                "google_score": row["google_review_score"],
+                "google_count": row["google_review_count"],
+                "google_source_note": row.get("google_review_source_note", ""),
+                "google_text_file": row.get("google_review_text_file", ""),
+                "nhs_url": row["nhs_profile_url"],
+                "gtd_url": row["gtd_site_url"],
+                "nearby": row["nearby_to_gtd_anchors"],
+                "survey_overall_good_percent": survey_metric(survey_payload, "overallexp"),
+                "survey_overall_good_ics_percent": survey_metric(survey_payload, "overallexp", "ics_percent"),
+                "survey_overall_good_national_percent": survey_metric(survey_payload, "overallexp", "national_percent"),
+                "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
+                "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
+                "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+            }
+        )
+
     center_lat = sum(row["latitude"] for row in rows) / len(rows)
     center_lon = sum(row["longitude"] for row in rows) / len(rows)
     map_html = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>GTD Greater Manchester GP Practice Reviews</title>
+<title>GTD Greater Manchester GP Practice Experience</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
@@ -667,37 +703,129 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
   --bg: #f6f4ef;
   --ink: #1a1c1a;
   --panel: rgba(255,255,255,0.92);
+  --panel-strong: rgba(255,255,255,0.98);
   --missing: #9aa0a6;
   --low: #c3472f;
   --midlow: #dc8c23;
   --midhigh: #d2b529;
   --high: #4c9a52;
   --veryhigh: #1c7c54;
+  --line: rgba(26,28,26,0.12);
+  --accent: #0f5e9c;
 }}
-html, body, #map {{ height: 100%; margin: 0; }}
-body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gradient(circle at top, #fff7e3, var(--bg)); }}
-#map {{ height: 100vh; }}
+html, body {{
+  margin: 0;
+}}
+body {{
+  font: 14px/1.4 Georgia, serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top, #fff7e3, var(--bg));
+}}
+.page {{
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: minmax(100vh, 100dvh) auto;
+}}
+.map-stage {{
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+}}
+#map {{
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+}}
 .legend {{
   position: absolute;
   top: 12px;
   left: 12px;
   z-index: 1000;
-  background: var(--panel);
+  background: var(--panel-strong);
   padding: 12px 14px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  max-width: 340px;
+  max-width: 360px;
 }}
-.legend h1 {{ margin: 0 0 8px; font-size: 18px; }}
-.legend p {{ margin: 0 0 8px; }}
-.legend h2 {{ margin: 12px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }}
+.legend h1 {{
+  margin: 0 0 8px;
+  font-size: 18px;
+}}
+.legend p {{
+  margin: 0 0 8px;
+}}
+.legend h2 {{
+  margin: 12px 0 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}}
 .legend .row {{
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 7px;
+  margin: 0;
 }}
-.legend .hint {{ color: rgba(26, 28, 26, 0.72); font-size: 12px; }}
+.legend .hint {{
+  color: rgba(26, 28, 26, 0.72);
+  font-size: 12px;
+}}
+.control-group {{
+  display: grid;
+  gap: 8px;
+}}
+.segmented {{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(15, 94, 156, 0.06);
+}}
+.segmented label {{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}}
+.segmented input {{
+  display: none;
+}}
+.segmented span {{
+  width: 100%;
+  text-align: center;
+  border-radius: 999px;
+  padding: 5px 8px;
+}}
+.segmented input:checked + span {{
+  background: var(--accent);
+  color: #fff;
+}}
+.metric-legend {{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}}
+.metric-legend .row {{
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.82);
+  font-size: 12px;
+}}
+.metric-legend .row.shape-row {{
+  background: rgba(76, 154, 82, 0.1);
+}}
+.metric-note {{
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.35;
+}}
 .manager-list {{
   display: grid;
   gap: 8px;
@@ -729,7 +857,9 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
   border: 1px solid rgba(0,0,0,0.25);
   flex: 0 0 auto;
 }}
-.swatch.circle {{ border-radius: 999px; }}
+.swatch.circle {{
+  border-radius: 999px;
+}}
 .swatch.square {{}}
 .swatch.diamond {{
   transform: rotate(45deg);
@@ -746,6 +876,9 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
 .leaflet-marker-icon.marker-icon {{
   background: transparent;
   border: 0;
+}}
+.leaflet-popup-content {{
+  min-width: 220px;
 }}
 .marker-shape {{
   position: relative;
@@ -818,26 +951,112 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
 .marker-missing .marker-label {{
   color: #f4f4f4;
 }}
-.leaflet-popup-content a {{ word-break: break-word; }}
+.leaflet-popup-content a {{
+  word-break: break-word;
+}}
+.insights {{
+  padding: 18px 18px 26px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}}
+.panel {{
+  background: var(--panel-strong);
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}}
+.panel h2 {{
+  margin: 0 0 8px;
+  font-size: 18px;
+}}
+.panel p {{
+  margin: 0 0 10px;
+}}
+.chart-frame {{
+  width: 100%;
+  overflow-x: auto;
+}}
+#scatterplot {{
+  width: 100%;
+  height: 320px;
+  display: block;
+}}
+.chart-note {{
+  font-size: 12px;
+  color: rgba(26, 28, 26, 0.72);
+}}
+.outlier-list {{
+  display: grid;
+  gap: 8px;
+}}
+.outlier-item {{
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.72);
+}}
+.outlier-item strong {{
+  display: block;
+}}
+.outlier-meta {{
+  font-size: 12px;
+  color: rgba(26, 28, 26, 0.72);
+}}
+@media (max-width: 960px) {{
+  .page {{
+    grid-template-rows: minmax(100vh, 100dvh) auto;
+  }}
+  .insights {{
+    grid-template-columns: 1fr;
+  }}
+  .legend {{
+    right: 12px;
+    max-width: none;
+  }}
+}}
 </style>
 </head>
 <body>
-<div class="legend">
-  <h1>GTD GP Practice Map</h1>
-  <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
-  <div class="row"><span class="swatch triangle" style="background: var(--midhigh)"></span><span>Selected management company shape</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--midhigh)"></span><span>Non-GTD practice</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--missing)"></span><span>Missing Google rating</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--low)"></span><span>0.0 to 1.9</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--midlow)"></span><span>2.0 to 2.9</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--midhigh)"></span><span>3.0 to 3.9</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--high)"></span><span>4.0 to 4.4</span></div>
-  <div class="row"><span class="swatch circle" style="background: var(--veryhigh)"></span><span>4.5+</span></div>
-  <h2>Management</h2>
-  <p class="hint">Select up to 5 management companies. Selected groups get distinct shapes and show their current Google average.</p>
-  <div id="manager-list" class="manager-list"></div>
+<div class="page">
+  <div class="map-stage">
+    <div class="legend">
+      <h1>GTD GP Practice Experience Map</h1>
+      <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
+      <div class="control-group">
+        <h2>Score Source</h2>
+        <div class="segmented">
+          <label><input type="radio" name="score-source" value="google" checked><span>Google</span></label>
+          <label><input type="radio" name="score-source" value="survey"><span>GP Survey</span></label>
+          <label><input type="radio" name="score-source" value="gap"><span>Gap</span></label>
+        </div>
+        <p id="metric-description" class="hint"></p>
+        <div id="metric-legend" class="metric-legend"></div>
+      </div>
+      <h2>Management</h2>
+      <p id="manager-hint" class="hint"></p>
+      <div id="manager-list" class="manager-list"></div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <div class="insights">
+    <section class="panel">
+      <h2>Completion Rate vs Score</h2>
+      <p id="scatter-summary" class="hint"></p>
+      <div class="chart-frame">
+        <svg id="scatterplot" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="scatter-title" role="img">
+          <title id="scatter-title">Survey completion rate against selected score</title>
+        </svg>
+      </div>
+      <p class="chart-note">Y-axis is GP Patient Survey completion rate. X-axis changes with the selected score source.</p>
+    </section>
+    <section class="panel">
+      <h2>Lowest Completion Rates</h2>
+      <p class="hint">Quick check for practices where survey turnout may be too thin to trust at face value.</p>
+      <div id="outlier-list" class="outlier-list"></div>
+    </section>
+  </div>
 </div>
-<div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const rows = {json.dumps(markers)};
@@ -850,20 +1069,162 @@ L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
 }}).addTo(map);
 const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
 const selectedManagementCompanies = new Set(['GTD Healthcare']);
-const maxGoogleReviewCount = Math.max(
-  0,
-  ...rows.map((row) => {{
-    const numeric = Number(row.google_count);
-    return Number.isFinite(numeric) && numeric > 0 ? numeric : 0;
-  }})
-);
+let activeMetric = 'google';
 
-function averageGoogleScore(rowsForCompany) {{
-  const scores = rowsForCompany
-    .map((row) => Number(row.google_score))
-    .filter((value) => Number.isFinite(value));
-  if (!scores.length) return null;
-  return scores.reduce((sum, value) => sum + value, 0) / scores.length;
+const metricConfigs = {{
+  google: {{
+    title: 'Google rating',
+    description: 'Google data here is from this repo\\'s merged review collection.',
+    legendRows: [
+      ['No rating', 'var(--missing)'],
+      ['0.0-1.9', 'var(--low)'],
+      ['2.0-2.9', 'var(--midlow)'],
+      ['3.0-3.9', 'var(--midhigh)'],
+      ['4.0-4.4', 'var(--high)'],
+      ['4.5+', 'var(--veryhigh)']
+    ],
+    value(row) {{
+      const numeric = Number(row.google_score);
+      return Number.isFinite(numeric) ? numeric : null;
+    }},
+    compareValue(_row) {{
+      return null;
+    }},
+    markerLabel(row) {{
+      const value = this.value(row);
+      return value === null ? '?' : value.toFixed(1);
+    }},
+    markerColor(row) {{
+      const value = this.value(row);
+      if (value === null) return '#9aa0a6';
+      if (value < 2) return '#c3472f';
+      if (value < 3) return '#dc8c23';
+      if (value < 4) return '#d2b529';
+      if (value < 4.5) return '#4c9a52';
+      return '#1c7c54';
+    }},
+    scaleCount(row) {{
+      const count = Number(row.google_count);
+      return Number.isFinite(count) && count > 0 ? count : 0;
+    }},
+    averageLabel(value) {{
+      return value === null ? '?' : value.toFixed(2);
+    }},
+    axisLabel: 'Google rating',
+    axisMin: 0,
+    axisMax: 5
+  }},
+  survey: {{
+    title: 'GP survey overall good %',
+    description: 'GP Survey uses the official overall-experience-as-good percentage.',
+    legendRows: [
+      ['No survey score', 'var(--missing)'],
+      ['0-49%', 'var(--low)'],
+      ['50-59%', 'var(--midlow)'],
+      ['60-69%', 'var(--midhigh)'],
+      ['70-79%', 'var(--high)'],
+      ['80%+', 'var(--veryhigh)']
+    ],
+    value(row) {{
+      const numeric = Number(row.survey_overall_good_percent);
+      return Number.isFinite(numeric) ? numeric : null;
+    }},
+    compareValue(row) {{
+      const numeric = Number(row.survey_overall_good_ics_percent);
+      return Number.isFinite(numeric) ? numeric : null;
+    }},
+    markerLabel(row) {{
+      const value = this.value(row);
+      return value === null ? '?' : String(Math.round(value));
+    }},
+    markerColor(row) {{
+      const value = this.value(row);
+      if (value === null) return '#9aa0a6';
+      if (value < 50) return '#c3472f';
+      if (value < 60) return '#dc8c23';
+      if (value < 70) return '#d2b529';
+      if (value < 80) return '#4c9a52';
+      return '#1c7c54';
+    }},
+    scaleCount(row) {{
+      const count = Number(row.survey_sent_back);
+      return Number.isFinite(count) && count > 0 ? count : 0;
+    }},
+    averageLabel(value) {{
+      return value === null ? '?' : `${{value.toFixed(0)}}%`;
+    }},
+    axisLabel: 'GP survey overall-good %',
+    axisMin: 0,
+    axisMax: 100
+  }},
+  gap: {{
+    title: 'Survey/Google gap',
+    description: 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google.',
+    legendRows: [
+      ['Hidden if missing or <1.0', 'var(--missing)'],
+      ['1.0-1.49', 'var(--midhigh)'],
+      ['1.5-1.99', 'var(--midlow)'],
+      ['2.0+ apart', 'var(--low)']
+    ],
+    value(row) {{
+      const google = Number(row.google_score);
+      const survey = Number(row.survey_overall_good_percent);
+      if (!Number.isFinite(google) || !Number.isFinite(survey)) return null;
+      const gap = Math.abs(google - (survey / 20));
+      return gap < 1 ? null : gap;
+    }},
+    compareValue(_row) {{
+      return null;
+    }},
+    markerLabel(row) {{
+      const value = this.value(row);
+      return value === null ? '?' : value.toFixed(1);
+    }},
+    markerColor(row) {{
+      const value = this.value(row);
+      if (value === null) return '#9aa0a6';
+      if (value >= 2.0) return '#c3472f';
+      if (value >= 1.5) return '#dc8c23';
+      if (value >= 1.0) return '#d2b529';
+      if (value >= 0.5) return '#4c9a52';
+      return '#1c7c54';
+    }},
+    scaleCount(row) {{
+      const google = Number(row.google_count);
+      const survey = Number(row.survey_sent_back);
+      const googleValid = Number.isFinite(google) && google > 0;
+      const surveyValid = Number.isFinite(survey) && survey > 0;
+      if (googleValid && surveyValid) return Math.min(google, survey);
+      if (googleValid) return google;
+      if (surveyValid) return survey;
+      return 0;
+    }},
+    averageLabel(value) {{
+      return value === null ? '?' : value.toFixed(2);
+    }},
+    axisLabel: 'Absolute gap between Google and survey-equivalent stars',
+    axisMin: 0,
+    axisMax: 2.5
+  }}
+}};
+
+function numericOrNull(value) {{
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? numeric : null;
+}}
+
+function maxCountForMetric(metricName) {{
+  const metric = metricConfigs[metricName];
+  return Math.max(0, ...rows.map((row) => metric.scaleCount(row)));
+}}
+
+function averageMetric(rowsForCompany, metricName) {{
+  const metric = metricConfigs[metricName];
+  const values = rowsForCompany
+    .map((row) => metric.value(row))
+    .filter((value) => value !== null);
+  if (!values.length) return null;
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
 }}
 
 const managementCompanies = knownManagementCompanies.map((name) => {{
@@ -871,30 +1232,17 @@ const managementCompanies = knownManagementCompanies.map((name) => {{
   return {{
     name,
     count: companyRows.length,
-    averageScore: averageGoogleScore(companyRows)
+    rows: companyRows
   }};
 }});
 
-function markerColor(score) {{
-  if (score === '' || score === null || Number.isNaN(Number(score))) return '#9aa0a6';
-  const value = Number(score);
-  if (value < 2) return '#c3472f';
-  if (value < 3) return '#dc8c23';
-  if (value < 4) return '#d2b529';
-  if (value < 4.5) return '#4c9a52';
-  return '#1c7c54';
-}}
-
-function markerLabel(score) {{
-  if (score === '' || score === null || Number.isNaN(Number(score))) return '?';
-  return Number(score).toFixed(1);
-}}
-
-function reviewScale(reviewCount) {{
-  const count = Number(reviewCount);
+function scaleForRow(row) {{
+  const metric = metricConfigs[activeMetric];
+  const maxCount = maxCountForMetric(activeMetric);
+  const count = metric.scaleCount(row);
   if (!Number.isFinite(count) || count <= 0) return 0.7;
-  if (maxGoogleReviewCount <= 0) return 0.7;
-  const normalized = Math.log1p(count) / Math.log1p(maxGoogleReviewCount);
+  if (maxCount <= 0) return 0.7;
+  const normalized = Math.log1p(count) / Math.log1p(maxCount);
   return 0.5 + (normalized ** 0.7) * 0.7;
 }}
 
@@ -916,20 +1264,40 @@ function baseShapeMetrics(shape) {{
   return {{ width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 }};
 }}
 
+function renderMetricLegend() {{
+  const metric = metricConfigs[activeMetric];
+  document.getElementById('metric-description').textContent = metric.description;
+  document.getElementById('metric-description').className = 'hint metric-note';
+  const legend = document.getElementById('metric-legend');
+  legend.innerHTML = '';
+  const shapeRow = document.createElement('div');
+  shapeRow.className = 'row shape-row';
+  shapeRow.innerHTML = '<span class="swatch triangle" style="background: var(--midhigh)"></span><span>Selected group</span>';
+  legend.appendChild(shapeRow);
+  metric.legendRows.forEach(([label, color]) => {{
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.innerHTML = `<span class="swatch circle" style="background: ${{color}}"></span><span>${{label}}</span>`;
+    legend.appendChild(row);
+  }});
+}}
+
 function renderManagementList() {{
   const container = document.getElementById('manager-list');
   container.innerHTML = '';
   const assignments = shapeAssignment();
+  const metric = metricConfigs[activeMetric];
+  document.getElementById('manager-hint').textContent = `Select up to ${{managementShapePool.length}} management companies. Selected groups get distinct shapes and show their current ${{metric.title.toLowerCase()}} average.`;
   for (const company of managementCompanies) {{
     const checked = selectedManagementCompanies.has(company.name);
     const shape = assignments.get(company.name) || 'circle';
-    const average = company.averageScore === null ? '?' : company.averageScore.toFixed(2);
+    const average = metric.averageLabel(averageMetric(company.rows, activeMetric));
     const row = document.createElement('label');
     row.className = 'manager-option';
     row.innerHTML = `
-      <input type="checkbox" ${'{'}checked ? 'checked' : ''{'}'} data-company="${'{'}company.name{'}'}">
-      <span class="manager-name"><span class="swatch ${'{'}shape{'}'}" style="background:${'{'}checked ? 'var(--midhigh)' : 'var(--missing)'{'}'}; display:inline-block; margin-right:8px;"></span>${'{'}company.name{'}'}</span>
-      <span class="manager-meta">${'{'}average{'}'} avg · ${'{'}company.count{'}'}</span>
+      <input type="checkbox" ${{checked ? 'checked' : ''}} data-company="${{company.name}}">
+      <span class="manager-name"><span class="swatch ${{shape}}" style="background:${{checked ? 'var(--midhigh)' : 'var(--missing)'}}; display:inline-block; margin-right:8px;"></span>${{company.name}}</span>
+      <span class="manager-meta">${{average}} avg · ${{company.count}}</span>
     `;
     row.querySelector('input').addEventListener('change', (event) => {{
       if (event.target.checked) {{
@@ -941,55 +1309,243 @@ function renderManagementList() {{
       }} else {{
         selectedManagementCompanies.delete(company.name);
       }}
-      renderManagementList();
-      renderMarkers();
+      rerenderAll();
     }});
     container.appendChild(row);
   }}
 }}
 
+function formatGoogle(row) {{
+  const value = numericOrNull(row.google_score);
+  if (value === null) return 'Google: ?';
+  const count = numericOrNull(row.google_count);
+  return `Google: ${{value.toFixed(1)}}${{count === null ? '' : ` (${{Math.round(count)}} reviews)`}}`;
+}}
+
+function formatSurvey(row) {{
+  const overall = numericOrNull(row.survey_overall_good_percent);
+  const completion = numericOrNull(row.survey_completion_rate_percent);
+  const sentBack = numericOrNull(row.survey_sent_back);
+  const sentOut = numericOrNull(row.survey_sent_out);
+  if (overall === null && completion === null) return 'GP survey: ?';
+  const parts = [];
+  if (overall !== null) parts.push(`Overall good: ${{Math.round(overall)}}%`);
+  if (completion !== null) parts.push(`Completion: ${{Math.round(completion)}}%`);
+  if (sentBack !== null && sentOut !== null) parts.push(`${{Math.round(sentBack)}}/${{Math.round(sentOut)}} returned`);
+  return `GP survey: ${{parts.join(' · ')}}`;
+}}
+
+function formatGap(row) {{
+  const google = numericOrNull(row.google_score);
+  const surveyPercent = numericOrNull(row.survey_overall_good_percent);
+  if (google === null || surveyPercent === null) return 'Survey/Google gap: ?';
+  const surveyStars = surveyPercent / 20;
+  const gap = Math.abs(google - surveyStars);
+  return `Survey/Google gap: ${{gap.toFixed(2)}} stars · Google ${{google.toFixed(1)}} vs survey-equivalent ${{surveyStars.toFixed(2)}}`;
+}}
+
 function renderMarkers() {{
   markerLayer.clearLayers();
   const assignments = shapeAssignment();
+  const metric = metricConfigs[activeMetric];
   for (const row of rows) {{
-    const color = markerColor(row.google_score);
-    const label = markerLabel(row.google_score);
+    const metricValue = metric.value(row);
+    if (metricValue === null && activeMetric === 'gap') {{
+      continue;
+    }}
+    const color = metric.markerColor(row);
+    const label = metric.markerLabel(row);
     const shapeName = assignments.get(row.management_company) || 'circle';
-    const shapeClass = `marker-${'{'}shapeName{'}'}`;
+    const shapeClass = `marker-${{shapeName}}`;
     const missingClass = label === '?' ? ' marker-missing' : '';
-    const scale = reviewScale(row.google_count);
+    const scale = scaleForRow(row);
     const metrics = baseShapeMetrics(shapeName);
     const fontSize = Math.max(9, Math.min(13, Math.round(10 + scale * 2)));
+    const baseZIndex = assignments.has(row.management_company) ? 1000 : 0;
     const icon = L.divIcon({{
       className: 'marker-icon',
-      html: `<div class="marker-shape ${'{'}shapeClass{'}'}${'{'}missingClass{'}'}" style="background:${'{'}color{'}'}; transform: scale(${'{'}scale.toFixed(3){'}'});"><span class="marker-label" style="font-size:${'{'}fontSize{'}'}px">${'{'}label{'}'}</span></div>`,
+      html: `<div class="marker-shape ${{shapeClass}}${{missingClass}}" style="background:${{color}}; transform: scale(${{scale.toFixed(3)}});"><span class="marker-label" style="font-size:${{fontSize}}px">${{label}}</span></div>`,
       iconSize: [Math.round(metrics.width * scale), Math.round(metrics.height * scale)],
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
       popupAnchor: [0, metrics.popupY]
     }});
-    const marker = L.marker([row.lat, row.lon], {{ icon }});
-    const google = row.google_score !== "" ? `<div>Google: ${'{'}Number(row.google_score).toFixed(1){'}'} (${ '{' }row.google_count{'}'} reviews)</div>` : '<div>Google: ?</div>';
-    const googleSource = row.google_source_note ? `<div>Source: ${'{'}row.google_source_note{'}'}</div>` : '';
-    const googleText = row.google_text_file ? `<div><a href="${'{'}row.google_text_file{'}'}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
-    const management = row.management_company ? `<div>Management: ${'{'}row.management_company{'}'}</div>` : '<div>Management: unknown</div>';
-    const gtd = row.gtd_url ? `<div><a href="${'{'}row.gtd_url{'}'}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
+    const marker = L.marker([row.lat, row.lon], {{ icon, zIndexOffset: baseZIndex }});
+    const google = `<div>${{formatGoogle(row)}}</div>`;
+    const googleSource = row.google_source_note ? `<div>Google source: ${{row.google_source_note}}</div>` : '<div>Google source: repo review dataset</div>';
+    const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
+    const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
+    const survey = `<div>${{formatSurvey(row)}}</div>`;
+    const surveyCompare = numericOrNull(row.survey_overall_good_ics_percent) === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(Number(row.survey_overall_good_ics_percent))}}%</div>`;
+    const gap = `<div>${{formatGap(row)}}</div>`;
+    const gtd = row.gtd_url ? `<div><a href="${{row.gtd_url}}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
     marker.bindPopup(`
-      <strong>${'{'}row.name{'}'}</strong><br>
-      ${'{'}row.postcode{'}'}<br>
-      <div>Near: ${'{'}row.nearby{'}'}</div>
-      ${'{'}management{'}'}
-      ${'{'}google{'}'}
-      ${'{'}googleSource{'}'}
-      ${'{'}googleText{'}'}
-      <div><a href="${'{'}row.nhs_url{'}'}" target="_blank" rel="noreferrer">NHS page</a></div>
-      ${'{'}gtd{'}'}
+      <strong>${{row.name}}</strong><br>
+      ${{row.postcode}}<br>
+      <div>Code: ${{row.code}}</div>
+      <div>Near: ${{row.nearby}}</div>
+      ${{management}}
+      ${{google}}
+      ${{googleSource}}
+      ${{survey}}
+      ${{surveyCompare}}
+      ${{gap}}
+      ${{googleText}}
+      <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
+      ${{gtd}}
     `);
+    marker.on('mouseover', () => marker.setZIndexOffset(baseZIndex + 2000));
+    marker.on('mouseout', () => marker.setZIndexOffset(baseZIndex));
     marker.addTo(markerLayer);
   }}
 }}
 
-renderManagementList();
-renderMarkers();
+function correlation(points) {{
+  if (points.length < 2) return null;
+  const xs = points.map((point) => point.x);
+  const ys = points.map((point) => point.y);
+  const meanX = xs.reduce((sum, value) => sum + value, 0) / xs.length;
+  const meanY = ys.reduce((sum, value) => sum + value, 0) / ys.length;
+  let numerator = 0;
+  let sumSqX = 0;
+  let sumSqY = 0;
+  for (let index = 0; index < points.length; index += 1) {{
+    const dx = xs[index] - meanX;
+    const dy = ys[index] - meanY;
+    numerator += dx * dy;
+    sumSqX += dx * dx;
+    sumSqY += dy * dy;
+  }}
+  if (sumSqX === 0 || sumSqY === 0) return null;
+  return numerator / Math.sqrt(sumSqX * sumSqY);
+}}
+
+function percentile(sortedValues, value) {{
+  if (!sortedValues.length) return null;
+  let lessOrEqual = 0;
+  sortedValues.forEach((candidate) => {{
+    if (candidate <= value) lessOrEqual += 1;
+  }});
+  return (lessOrEqual / sortedValues.length) * 100;
+}}
+
+function renderScatterplot() {{
+  const metric = metricConfigs[activeMetric];
+  const points = rows
+    .map((row) => {{
+      const x = metric.value(row);
+      const y = numericOrNull(row.survey_completion_rate_percent);
+      if (x === null || y === null) return null;
+      return {{ row, x, y }};
+    }})
+    .filter(Boolean);
+  const svg = document.getElementById('scatterplot');
+  const width = 920;
+  const height = 320;
+  const margin = {{ top: 18, right: 18, bottom: 42, left: 52 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const completionMax = Math.max(10, ...points.map((point) => point.y), 50);
+  const xScale = (value) => margin.left + ((value - metric.axisMin) / (metric.axisMax - metric.axisMin)) * plotWidth;
+  const yScale = (value) => margin.top + plotHeight - (value / completionMax) * plotHeight;
+  const gridY = [];
+  for (let tick = 0; tick <= completionMax; tick += 10) {{
+    gridY.push(tick);
+  }}
+  const gridX = activeMetric === 'google'
+    ? [0, 1, 2, 3, 4, 5]
+    : activeMetric === 'survey'
+      ? [0, 20, 40, 60, 80, 100]
+      : [0, 0.5, 1.0, 1.5, 2.0, 2.5];
+  const assignments = shapeAssignment();
+  const pointMarkup = points.map((point) => {{
+    const companyShape = assignments.get(point.row.management_company);
+    const radius = Math.max(4, Math.min(9, scaleForRow(point.row) * 6));
+    const stroke = companyShape ? '#1a1c1a' : 'rgba(26,28,26,0.25)';
+    const label = activeMetric === 'google'
+      ? point.x.toFixed(1)
+      : activeMetric === 'survey'
+        ? `${{Math.round(point.x)}}%`
+        : point.x.toFixed(2);
+    return `
+      <circle cx="${{xScale(point.x).toFixed(2)}}" cy="${{yScale(point.y).toFixed(2)}}" r="${{radius.toFixed(2)}}" fill="${{metric.markerColor(point.row)}}" stroke="${{stroke}}" stroke-width="${{companyShape ? 1.8 : 1}}">
+        <title>${{point.row.name}} · ${{metric.title}}: ${{label}} · Completion: ${{Math.round(point.y)}}%</title>
+      </circle>
+    `;
+  }}).join('');
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{gridY.map((tick) => `
+      <line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" />
+      <text x="${{margin.left - 8}}" y="${{yScale(tick) + 4}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{tick}}%</text>
+    `).join('')}}
+    ${{gridX.map((tick) => `
+      <line x1="${{xScale(tick)}}" y1="${{margin.top}}" x2="${{xScale(tick)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.08)" />
+      <text x="${{xScale(tick)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{activeMetric === 'google' ? tick.toFixed(1) : activeMetric === 'survey' ? `${{tick}}%` : tick.toFixed(1)}}</text>
+    `).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{pointMarkup}}
+    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">${{metric.axisLabel}}</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">GP survey completion rate</text>
+  `;
+  const completionValues = points.map((point) => point.y).sort((left, right) => left - right);
+  const completionMedian = completionValues.length ? completionValues[Math.floor(completionValues.length / 2)] : null;
+  const rValue = correlation(points);
+  const newBank = points.find((point) => point.row.code === 'Y02960');
+  const newBankSummary = !newBank
+    ? ''
+    : ` New Bank Health is at ${{Math.round(newBank.y)}}% completion and sits around the ${{percentile(completionValues, newBank.y).toFixed(0)}}th percentile for completion in this set.`;
+  document.getElementById('scatter-summary').textContent =
+    `${{points.length}} practices have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}.${{newBankSummary}}`;
+}}
+
+function renderOutliers() {{
+  const list = document.getElementById('outlier-list');
+  const metric = metricConfigs[activeMetric];
+  const ranked = rows
+    .map((row) => {{
+      const completion = numericOrNull(row.survey_completion_rate_percent);
+      if (completion === null) return null;
+      const score = metric.value(row);
+      if (activeMetric === 'gap' && score === null) return null;
+      return {{
+        row,
+        completion,
+        score
+      }};
+    }})
+    .filter(Boolean)
+    .sort((left, right) => left.completion - right.completion)
+    .slice(0, 8);
+  list.innerHTML = ranked.map((entry) => {{
+    const scoreLabel = entry.score === null ? '?' : activeMetric === 'google' ? entry.score.toFixed(1) : activeMetric === 'survey' ? `${{Math.round(entry.score)}}%` : entry.score.toFixed(2);
+    const googleLabel = numericOrNull(entry.row.google_score) === null ? 'Google ?' : `Google ${{Number(entry.row.google_score).toFixed(1)}}`;
+    return `
+      <div class="outlier-item">
+        <strong>${{entry.row.name}}</strong>
+        <div class="outlier-meta">${{entry.row.management_company || 'Unknown management'}} · completion ${{Math.round(entry.completion)}}%</div>
+        <div class="outlier-meta">${{metric.title}} ${{scoreLabel}} · ${{googleLabel}}</div>
+      </div>
+    `;
+  }}).join('');
+}}
+
+function rerenderAll() {{
+  renderMetricLegend();
+  renderManagementList();
+  renderMarkers();
+  renderScatterplot();
+  renderOutliers();
+}}
+
+document.querySelectorAll('input[name="score-source"]').forEach((input) => {{
+  input.addEventListener('change', (event) => {{
+    activeMetric = event.target.value;
+    rerenderAll();
+  }});
+}});
+
+rerenderAll();
 </script>
 </body>
 </html>

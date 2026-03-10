@@ -326,6 +326,13 @@ Current collection scope:
 - top-level key-question comparators from the GPPS JSON API for practice, ICS and national
 - no Google-review pipeline changes in the same pass
 
+Current map/UI rule:
+
+- do not invent a GP Patient Survey star score
+- the current survey-side map toggle should use the official `overallexp` measure: patients who "describe their overall experience of this GP practice as good"
+- keep it displayed as a percentage, not converted to a 0-5 star scale
+- if a divergence view is shown, label it as an indicator only: compare Google 0-5 against a simple linear `overallexp / 20` survey equivalent, and never present that derived value as an official NHS score
+
 Examples:
 
 - one provider may appear with `Ltd`, `Limited`, partnership wording, or slightly different punctuation

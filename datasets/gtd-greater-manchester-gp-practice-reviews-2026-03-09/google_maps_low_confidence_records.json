@@ -1887,5 +1887,239 @@
     "query_used": "Alexandra Group Med Pract OL4 1YN",
     "title_match_score": 0.333,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P85015-alexandra-group-med-pract.txt"
+  },
+  {
+    "query": "HT Practice OL7 0NW",
+    "google_maps_title": "H T Practice",
+    "google_maps_url": "https://www.google.com/maps/place/H+T+Practice/@53.4781118,-2.1106478,17z/data=!4m8!3m7!1s0x487bb65b8c33a5c3:0x33f9e9c514045460!8m2!3d53.4781118!4d-2.1106478!9m1!1b1!16s%2Fg%2F11b7qdwp2v?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 1.3,
+    "google_review_count": 25,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Penfold",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Very poor service. They make booking an appointment so difficult, it is almost like they don\u2019t want to see you. You want an appointment you have to ring at 8am. Phone rings constantly then stops. Ring after 8 on a Monday and routine appointments are only released on Thursday after 11am but they are usually for 3 weeks away. Same to see the nurse. Absolute joke\u2026 staff appear to be disinterested and unhelpful. Don\u2019t understand the releasing appointments thing they know what appointments are available, just seems so convoluted it is unreal.",
+        "raw_card_text": "Penfold2 reviewsa month ago Very poor service. They make booking an appointment so difficult, it is almost like they don\u2019t want to see you. You want an appointment you have to ring at 8am. Phone rings constantly then stops. Ring after 8 on a Monday and routine appointments are only released on Thursday after 11am but they are usually for 3 weeks away. Same to see the nurse. Absolute joke\u2026 staff appear to be disinterested and unhelpful. Don\u2019t understand the releasing appointments thing they know what appointments are available, just seems so convoluted it is unreal.Like Share"
+      },
+      {
+        "author": "kevin willis",
+        "relative_date": "7 months ago",
+        "star_label": "1 star",
+        "text": "shocking rude and lazy",
+        "raw_card_text": "kevin willis1 review7 months ago shocking rude and lazyLike Share"
+      },
+      {
+        "author": "Karolina Kosciekniak",
+        "relative_date": "10 months ago",
+        "star_label": "1 star",
+        "text": "",
+        "raw_card_text": "Karolina Kosciekniak2 reviews \u00b7 2 photos10 months ago"
+      },
+      {
+        "author": "Ste Holt",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Ste Holt1 reviewa year ago"
+      },
+      {
+        "author": "Lauren Rowney",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "Went early for an important appointment, sit waiting for 40 minutes with no one coming to see me. I go to reception and ask why its taking so long. Then get told no one is in today to do my appointment. Ring back to the referral who booked my appointment. Get told then put me down as not attending!",
+        "raw_card_text": "Lauren Rowney4 reviews2 years ago Went early for an important appointment, sit waiting for 40 minutes with no one coming to see me. I go to reception and ask why its taking so long. Then get told no one is in today to do my appointment. Ring back to the referral who booked my appointment. Get told then put me down as not attending!Like1 Share"
+      },
+      {
+        "author": "Ali Haider",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "Never answer the phone and when they do the staff is very rude. They got no manners.",
+        "raw_card_text": "Ali Haider10 reviews2 years ago Never answer the phone and when they do the staff is very rude. They got no manners.Like1 Share"
+      },
+      {
+        "author": "Simone Woods",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "Absolutely shocking Drs surgery Rude receptionists, can\u2019t get an appointment if your life depended on it.",
+        "raw_card_text": "Simone Woods1 review2 years ago Absolutely shocking Drs surgery Rude receptionists, can\u2019t get an appointment if your life depended on it.Like Share"
+      },
+      {
+        "author": "Therese Hopwood",
+        "relative_date": "2 years ago",
+        "star_label": "2 stars",
+        "text": "please go back to being in a queue on the phone . at least you had a clue how long you may be waiting ,and could hang up and try again later . this new system of waiting , for an agent , just constantly repeated , and then ringing , and ringing , is far worse",
+        "raw_card_text": "Therese Hopwood3 reviews2 years ago please go back to being in a queue on the phone . at least you had a clue how long you may be waiting ,and could hang up and try again later . this new system of waiting , for an agent , just constantly repeated , and then ringing , and ringing , is far worseLike1 Share"
+      },
+      {
+        "author": "1234sully1",
+        "relative_date": "2 years ago",
+        "star_label": "4 stars",
+        "text": "",
+        "raw_card_text": "1234sully1Local Guide \u00b7 17 reviews2 years ago"
+      },
+      {
+        "author": "A R",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "The world's worst GP ever! Even if you were on your death bed you would not be able to get a same day appointment.",
+        "raw_card_text": "A RLocal Guide \u00b7 47 reviews \u00b7 1 photo2 years ago The world's worst GP ever! Even if you were on your death bed you would not be able to get a same day appointment.Like2 Share"
+      }
+    ],
+    "practice_name": "HT Practice",
+    "postcode": "OL7 0NW",
+    "canonical_code": "P89020",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/ht-practice/P89020",
+    "query_used": "HT Practice OL7 0NW",
+    "title_match_score": 0.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P89020-ht-practice.txt"
+  },
+  {
+    "query": "Littletown Family Med Pract OL8 4LR",
+    "google_maps_title": "Little Town Family Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Little+Town+Family+Medical+Practice/@53.5291775,-2.1344148,17z/data=!4m8!3m7!1s0x487bb741d7c3a51b:0xd09ba6c4ec44a922!8m2!3d53.5291775!4d-2.1344148!9m1!1b1!16s%2Fg%2F1hc28crc_?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.1,
+    "google_review_count": 72,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Aylin Mexmed",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Aylin Mexmed4 reviews2 weeks ago New"
+      },
+      {
+        "author": "Simoni Luba Akther",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Dr Peter Cains is an exceptional doctor. He is always caring, attentive, and truly takes the time to listen. He reassures you without ever making you feel rushed or dismissed, and he explains things in a way that makes you feel comfortable and confident. My entire family prefers seeing Dr Cains, and we always specifically ask for him. He consistently goes above and beyond, and it\u2019s clear he genuinely cares about his patients. We feel very lucky to have him as our doctor.",
+        "raw_card_text": "Simoni Luba Akther1 reviewa month ago Dr Peter Cains is an exceptional doctor. He is always caring, attentive, and truly takes the time to listen. He reassures you without ever making you feel rushed or dismissed, and he explains things in a way that makes you feel comfortable and confident. My entire family prefers seeing Dr Cains, and we always specifically ask for him. He consistently goes above and beyond, and it\u2019s clear he genuinely cares about his patients. We feel very lucky to have him as our doctor.Like Share Response from the owner 3 weeks agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "Susan Hobson",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Absolutely shocking surgery, Don\u2019t have no care for the elderly Make mistakes and then blame patients Pharmacist and pharmacy technicians working there play god. Do not Recommend",
+        "raw_card_text": "Susan Hobson1 reviewa month ago Absolutely shocking surgery, Don\u2019t have no care for the elderly Make mistakes and then blame patients Pharmacist and pharmacy technicians working there play god. Do not RecommendLike Share Response from the owner 3 weeks agoWe apologise that you felt the need to write this review, however if you do wish to discuss this matter further please feel free to contact the GP surgery and ask to speak with our practice manager."
+      },
+      {
+        "author": "Gift Johnson",
+        "relative_date": "2 months ago",
+        "star_label": "4 stars",
+        "text": "I sent in an e-consultation and on the same day, I got an appointment for the same day. I was seen by the practitioner called Sarah, and I have never felt more listened to and understood by a practitioner at this practice. She gave some great advice and explained to me my issues without being dismissive, answering all my questions and even talking about my concerns regarding the near future. Thank you so much Sarah. The receptionist was also kind and welcoming.",
+        "raw_card_text": "Gift Johnson4 reviews2 months ago I sent in an e-consultation and on the same day, I got an appointment for the same day. I was seen by the practitioner called Sarah, and I have never felt more listened to and understood by a practitioner at this practice. She gave some great advice and explained to me my issues without being dismissive, answering all my questions and even talking about my concerns regarding the near future. Thank you so much Sarah. The receptionist was also kind and welcoming.Like Share Response from the owner 3 weeks agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "irfan mahmood",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "A lovely lady called kimbaerley is such a nice kind helpful women always goes beyond expectations helping patients always a pleasure to speak to here",
+        "raw_card_text": "irfan mahmoodLocal Guide \u00b7 100 reviews \u00b7 4 photos2 months ago A lovely lady called kimbaerley is such a nice kind helpful women always goes beyond expectations helping patients always a pleasure to speak to hereLike Share Response from the owner 2 months agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "Marius Ciriblan",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you for your care and nurturing of my little girl and her education.\ud83d\ude07 \u2026",
+        "raw_card_text": "Marius Ciriblan1 review2 months ago Thank you for your care and nurturing of my little girl and her education.\ud83d\ude07 \u2026Like Share Response from the owner 2 months agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "James Hill",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "During all my communication with the staff on behalf of my dad, the staff have been exemplary polite and professional.",
+        "raw_card_text": "James Hill2 reviews2 months ago During all my communication with the staff on behalf of my dad, the staff have been exemplary polite and professional.Like Share Response from the owner 2 months agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "Edward Mallon",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "I was so very happy with the level of care provided, all the receptionists, nurses and doctors at the surgery are always caring and understanding with all they do and always are very polite and friendly. And the overall care provided is of the highest quality.",
+        "raw_card_text": "Edward Mallon1 review2 months ago I was so very happy with the level of care provided, all the receptionists, nurses and doctors at the surgery are always caring and understanding with all they do and always are very polite and friendly. And the overall care provided is of the highest quality.Like Share Response from the owner 2 months agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "Sairee A",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Friendly, helpful and thorough putting us and our newborns at ease in their first checkup and immunisations. Thanks Tracey and Dr Parveen",
+        "raw_card_text": "Sairee A12 reviews3 months ago Friendly, helpful and thorough putting us and our newborns at ease in their first checkup and immunisations. Thanks Tracey and Dr ParveenLike Share Response from the owner 3 months agoThank you so much for your positive feedback"
+      },
+      {
+        "author": "Ali Channa",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "I have never experienced such an unprofessional and shocking service from any GP practice in my life. Little Town Medical Practice is an absolute joke. We booked an appointment and had to wait three weeks just to be seen \u2013 that alone is ridiculous. When I finally arrived for my appointment, I signed in and waited 40\u201350 minutes past the scheduled time. I became impatient because the appointment time had clearly passed. I asked the receptionist, who told me to \u201cwait another 5\u201310 minutes and the doctor will see you soon.\u201d After waiting another 10 minutes, she then told me I needed to come back four hours later at 3:30pm. What a joke. I had children to pick up from school, so attending four hours later was impossible. I asked if I could be booked in for the following week instead, and I was told they had no availability at all for the next two weeks. Completely unacceptable and honestly disgusting. To make matters worse, while I was there another patient was arguing with staff because the doctor refused to see her child despite them having an appointment as well. That alone shows this GP treats multiple patients the same way. This is not the first bad experience either. On previous occasions the staff have been extremely rude. When complaining over the phone in the past, I was told things like: \u201cWhy don\u2019t you change GP?\u201d \u201cWhy don\u2019t you move out of Oldham?\u201d Disgusting attitude. Completely unprofessional. Shows clearly that this GP surgery does not care at all about its patients. Little Town Medical Practice needs serious improvement. People rely on their GP for their health and wellbeing, and this kind of treatment is shameful. I would not recommend this surgery to anyone.",
+        "raw_card_text": "Ali Channa3 reviews \u00b7 2 photos3 months ago I have never experienced such an unprofessional and shocking service from any GP practice in my life. Little Town Medical Practice is an absolute joke. We booked an appointment and had to wait three weeks just to be seen \u2013 that alone is ridiculous. When I finally arrived for my appointment, I signed in and waited 40\u201350 minutes past the scheduled time. I became impatient because the appointment time had clearly passed. I asked the receptionist, who told me to \u201cwait another 5\u201310 minutes and the doctor will see you soon.\u201d After waiting another 10 minutes, she then told me I needed to come back four hours later at 3:30pm. What a joke. I had children to pick up from school, so attending four hours later was impossible. I asked if I could be booked in for the following week instead, and I was told they had no availability at all for the next two weeks. Completely unacceptable and honestly disgusting. To make matters worse, while I was there another patient was arguing with staff because the doctor refused to see her child despite them having an appointment as well. That alone shows this GP treats multiple patients the same way. This is not the first bad experience either. On previous occasions the staff have been extremely rude. When complaining over the phone in the past, I was told things like: \u201cWhy don\u2019t you change GP?\u201d \u201cWhy don\u2019t you move out of Oldham?\u201d Disgusting attitude. Completely unprofessional. Shows clearly that this GP surgery does not care at all about its patients. Little Town Medical Practice needs serious improvement. People rely on their GP for their health and wellbeing, and this kind of treatment is shameful. I would not recommend this surgery to anyone.Like Share Response from the owner 3 months agoWe apologise that you felt the need to write this review, however if you do wish to discuss this matter further please feel free to contact the GP surgery and ask to speak with our practice manager."
+      }
+    ],
+    "practice_name": "Littletown Family Med Pract",
+    "postcode": "OL8 4LR",
+    "canonical_code": "P85605",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/littletown-family-med-pract/P85605",
+    "query_used": "Littletown Family Med Pract OL8 4LR",
+    "title_match_score": 0.25,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P85605-littletown-family-med-pract.txt"
+  },
+  {
+    "query": "Ch Medical Practice OL9 8NH",
+    "google_maps_title": "C H Medical",
+    "google_maps_url": "https://www.google.com/maps/place/C+H+Medical/@53.5317074,-2.1465969,17z/data=!3m1!5s0x487bb744e445c9e1:0x3d946cf2e638e9a6!4m8!3m7!1s0x487bb75b51b16df1:0xd03df3ef3ed0f389!8m2!3d53.5317074!4d-2.1465969!9m1!1b1!16s%2Fg%2F1hc3lzbtz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.1,
+    "google_review_count": 83,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_reviews_opened_no_visible_text",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Ch Medical Practice",
+    "postcode": "OL9 8NH",
+    "canonical_code": "P85011",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/ch-medical-practice/P85011",
+    "query_used": "Ch Medical Practice OL9 8NH",
+    "title_match_score": 0.0,
+    "review_text_file": ""
+  },
+  {
+    "query": "Clarendon Medical Centre SK14 2AQ",
+    "google_maps_title": "SK14 2AQ",
+    "google_maps_url": "https://www.google.com/maps/place/Hyde+SK14+2AQ/@53.4526399,-2.0799511,15z/data=!3m1!4b1!4m6!3m5!1s0x487bb5ddee93125f:0x72a3000b9ea4de6!8m2!3d53.4526405!4d-2.0799511!16s%2Fg%2F1tk8n48j?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.1,
+    "google_review_count": 1849,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_rating_only",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Clarendon Medical Centre",
+    "postcode": "SK14 2AQ",
+    "canonical_code": "P89012",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/clarendon-medical-centre/P89012",
+    "query_used": "Clarendon Medical Centre SK14 2AQ",
+    "title_match_score": 0.0,
+    "review_text_file": ""
   }
 ]
