@@ -610,6 +610,13 @@ Caveats:
 
 
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
+    known_management_companies = sorted(
+        {
+            "GTD Healthcare"
+            for row in rows
+            if row["gtd_managed"]
+        }
+    )
     markers = [
         {
             "name": row["practice_name"],
@@ -617,6 +624,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
             "lon": row["longitude"],
             "postcode": row["postcode"],
             "gtd": row["gtd_managed"],
+            "management_company": "GTD Healthcare" if row["gtd_managed"] else "",
             "google_score": row["google_review_score"],
             "google_count": row["google_review_count"],
             "google_source_note": row.get("google_review_source_note", ""),
@@ -664,11 +672,38 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
 }}
 .legend h1 {{ margin: 0 0 8px; font-size: 18px; }}
 .legend p {{ margin: 0 0 8px; }}
+.legend h2 {{ margin: 12px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }}
 .legend .row {{
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 0 0 7px;
+}}
+.legend .hint {{ color: rgba(26, 28, 26, 0.72); font-size: 12px; }}
+.manager-list {{
+  display: grid;
+  gap: 8px;
+  max-height: 210px;
+  overflow: auto;
+  padding-right: 4px;
+}}
+.manager-option {{
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}}
+.manager-option input {{
+  margin: 0;
+}}
+.manager-name {{
+  min-width: 0;
+}}
+.manager-meta {{
+  color: rgba(26, 28, 26, 0.68);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }}
 .swatch {{
   width: 14px;
@@ -677,8 +712,18 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
   flex: 0 0 auto;
 }}
 .swatch.circle {{ border-radius: 999px; }}
+.swatch.square {{}}
+.swatch.diamond {{
+  transform: rotate(45deg);
+}}
 .swatch.triangle {{
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}}
+.swatch.hexagon {{
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}}
+.swatch.pentagon {{
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
 }}
 .leaflet-marker-icon.marker-icon {{
   background: transparent;
@@ -694,29 +739,63 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
   text-shadow: 0 1px 2px rgba(0,0,0,0.35);
   border: 1px solid rgba(0,0,0,0.28);
   box-shadow: 0 4px 12px rgba(0,0,0,0.22);
+  transform-origin: center center;
 }}
 .marker-circle {{
   width: 34px;
   height: 34px;
   border-radius: 999px;
 }}
+.marker-square {{
+  width: 34px;
+  height: 34px;
+}}
+.marker-diamond {{
+  width: 34px;
+  height: 34px;
+  transform: rotate(45deg);
+}}
 .marker-triangle {{
   width: 42px;
   height: 36px;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}}
+.marker-hexagon {{
+  width: 38px;
+  height: 34px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}}
+.marker-pentagon {{
+  width: 38px;
+  height: 36px;
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
 }}
 .marker-label {{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  pointer-events: none;
 }}
 .marker-circle .marker-label {{
   top: 10px;
 }}
+.marker-square .marker-label {{
+  top: 10px;
+}}
+.marker-diamond .marker-label {{
+  top: 10px;
+  transform: translateX(-50%) rotate(-45deg);
+}}
 .marker-triangle .marker-label {{
   top: 14px;
   font-size: 11px;
+}}
+.marker-hexagon .marker-label {{
+  top: 10px;
+}}
+.marker-pentagon .marker-label {{
+  top: 11px;
 }}
 .marker-missing .marker-label {{
   color: #f4f4f4;
@@ -728,7 +807,7 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
 <div class="legend">
   <h1>GTD GP Practice Map</h1>
   <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
-  <div class="row"><span class="swatch triangle" style="background: var(--midhigh)"></span><span>GTD-managed practice</span></div>
+  <div class="row"><span class="swatch triangle" style="background: var(--midhigh)"></span><span>Selected management company shape</span></div>
   <div class="row"><span class="swatch circle" style="background: var(--midhigh)"></span><span>Non-GTD practice</span></div>
   <div class="row"><span class="swatch circle" style="background: var(--missing)"></span><span>Missing Google rating</span></div>
   <div class="row"><span class="swatch circle" style="background: var(--low)"></span><span>0.0 to 1.9</span></div>
@@ -736,16 +815,47 @@ body {{ font: 14px/1.4 Georgia, serif; color: var(--ink); background: radial-gra
   <div class="row"><span class="swatch circle" style="background: var(--midhigh)"></span><span>3.0 to 3.9</span></div>
   <div class="row"><span class="swatch circle" style="background: var(--high)"></span><span>4.0 to 4.4</span></div>
   <div class="row"><span class="swatch circle" style="background: var(--veryhigh)"></span><span>4.5+</span></div>
+  <h2>Management</h2>
+  <p class="hint">Select up to 5 management companies. Selected groups get distinct shapes and show their current Google average.</p>
+  <div id="manager-list" class="manager-list"></div>
 </div>
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const rows = {json.dumps(markers)};
+const knownManagementCompanies = {json.dumps(known_management_companies)};
 const map = L.map('map').setView([{center_lat:.6f}, {center_lon:.6f}], 11);
+const markerLayer = L.layerGroup().addTo(map);
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
   maxZoom: 18,
   attribution: '&copy; OpenStreetMap contributors'
 }}).addTo(map);
+const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
+const selectedManagementCompanies = new Set(['GTD Healthcare']);
+const maxGoogleReviewCount = Math.max(
+  0,
+  ...rows.map((row) => {{
+    const numeric = Number(row.google_count);
+    return Number.isFinite(numeric) && numeric > 0 ? numeric : 0;
+  }})
+);
+
+function averageGoogleScore(rowsForCompany) {{
+  const scores = rowsForCompany
+    .map((row) => Number(row.google_score))
+    .filter((value) => Number.isFinite(value));
+  if (!scores.length) return null;
+  return scores.reduce((sum, value) => sum + value, 0) / scores.length;
+}}
+
+const managementCompanies = knownManagementCompanies.map((name) => {{
+  const companyRows = rows.filter((row) => row.management_company === name);
+  return {{
+    name,
+    count: companyRows.length,
+    averageScore: averageGoogleScore(companyRows)
+  }};
+}});
 
 function markerColor(score) {{
   if (score === '' || score === null || Number.isNaN(Number(score))) return '#9aa0a6';
@@ -762,34 +872,106 @@ function markerLabel(score) {{
   return Number(score).toFixed(1);
 }}
 
-for (const row of rows) {{
-  const color = markerColor(row.google_score);
-  const label = markerLabel(row.google_score);
-  const shapeClass = row.gtd ? 'marker-triangle' : 'marker-circle';
-  const missingClass = label === '?' ? ' marker-missing' : '';
-  const icon = L.divIcon({{
-    className: 'marker-icon',
-    html: `<div class="marker-shape ${'{'}shapeClass{'}'}${'{'}missingClass{'}'}" style="background:${'{'}color{'}'}"><span class="marker-label">${'{'}label{'}'}</span></div>`,
-    iconSize: row.gtd ? [42, 36] : [34, 34],
-    iconAnchor: row.gtd ? [21, 30] : [17, 17],
-    popupAnchor: [0, -14]
-  }});
-  const marker = L.marker([row.lat, row.lon], {{ icon }}).addTo(map);
-  const google = row.google_score !== "" ? `<div>Google: ${'{'}Number(row.google_score).toFixed(1){'}'} (${ '{' }row.google_count{'}'} reviews)</div>` : '<div>Google: ?</div>';
-  const googleSource = row.google_source_note ? `<div>Source: ${'{'}row.google_source_note{'}'}</div>` : '';
-  const googleText = row.google_text_file ? `<div><a href="${'{'}row.google_text_file{'}'}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
-  const gtd = row.gtd_url ? `<div><a href="${'{'}row.gtd_url{'}'}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
-  marker.bindPopup(`
-    <strong>${'{'}row.name{'}'}</strong><br>
-    ${'{'}row.postcode{'}'}<br>
-    <div>Near: ${'{'}row.nearby{'}'}</div>
-    ${'{'}google{'}'}
-    ${'{'}googleSource{'}'}
-    ${'{'}googleText{'}'}
-    <div><a href="${'{'}row.nhs_url{'}'}" target="_blank" rel="noreferrer">NHS page</a></div>
-    ${'{'}gtd{'}'}
-  `);
+function reviewScale(reviewCount) {{
+  const count = Number(reviewCount);
+  if (!Number.isFinite(count) || count <= 0) return 0.7;
+  if (maxGoogleReviewCount <= 0) return 0.7;
+  const normalized = Math.log1p(count) / Math.log1p(maxGoogleReviewCount);
+  return 0.5 + (normalized ** 0.7) * 0.7;
 }}
+
+function shapeAssignment() {{
+  const selected = managementCompanies
+    .filter((company) => selectedManagementCompanies.has(company.name))
+    .slice(0, managementShapePool.length);
+  const assignments = new Map();
+  selected.forEach((company, index) => assignments.set(company.name, managementShapePool[index]));
+  return assignments;
+}}
+
+function baseShapeMetrics(shape) {{
+  if (shape === 'triangle') return {{ width: 42, height: 36, anchorX: 21, anchorY: 30, popupY: -14 }};
+  if (shape === 'square') return {{ width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 }};
+  if (shape === 'diamond') return {{ width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 }};
+  if (shape === 'hexagon') return {{ width: 38, height: 34, anchorX: 19, anchorY: 17, popupY: -14 }};
+  if (shape === 'pentagon') return {{ width: 38, height: 36, anchorX: 19, anchorY: 18, popupY: -14 }};
+  return {{ width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 }};
+}}
+
+function renderManagementList() {{
+  const container = document.getElementById('manager-list');
+  container.innerHTML = '';
+  const assignments = shapeAssignment();
+  for (const company of managementCompanies) {{
+    const checked = selectedManagementCompanies.has(company.name);
+    const shape = assignments.get(company.name) || 'circle';
+    const average = company.averageScore === null ? '?' : company.averageScore.toFixed(2);
+    const row = document.createElement('label');
+    row.className = 'manager-option';
+    row.innerHTML = `
+      <input type="checkbox" ${'{'}checked ? 'checked' : ''{'}'} data-company="${'{'}company.name{'}'}">
+      <span class="manager-name"><span class="swatch ${'{'}shape{'}'}" style="background:${'{'}checked ? 'var(--midhigh)' : 'var(--missing)'{'}'}; display:inline-block; margin-right:8px;"></span>${'{'}company.name{'}'}</span>
+      <span class="manager-meta">${'{'}average{'}'} avg · ${'{'}company.count{'}'}</span>
+    `;
+    row.querySelector('input').addEventListener('change', (event) => {{
+      if (event.target.checked) {{
+        if (selectedManagementCompanies.size >= managementShapePool.length) {{
+          event.target.checked = false;
+          return;
+        }}
+        selectedManagementCompanies.add(company.name);
+      }} else {{
+        selectedManagementCompanies.delete(company.name);
+      }}
+      renderManagementList();
+      renderMarkers();
+    }});
+    container.appendChild(row);
+  }}
+}}
+
+function renderMarkers() {{
+  markerLayer.clearLayers();
+  const assignments = shapeAssignment();
+  for (const row of rows) {{
+    const color = markerColor(row.google_score);
+    const label = markerLabel(row.google_score);
+    const shapeName = assignments.get(row.management_company) || 'circle';
+    const shapeClass = `marker-${'{'}shapeName{'}'}`;
+    const missingClass = label === '?' ? ' marker-missing' : '';
+    const scale = reviewScale(row.google_count);
+    const metrics = baseShapeMetrics(shapeName);
+    const fontSize = Math.max(9, Math.min(13, Math.round(10 + scale * 2)));
+    const icon = L.divIcon({{
+      className: 'marker-icon',
+      html: `<div class="marker-shape ${'{'}shapeClass{'}'}${'{'}missingClass{'}'}" style="background:${'{'}color{'}'}; transform: scale(${'{'}scale.toFixed(3){'}'});"><span class="marker-label" style="font-size:${'{'}fontSize{'}'}px">${'{'}label{'}'}</span></div>`,
+      iconSize: [Math.round(metrics.width * scale), Math.round(metrics.height * scale)],
+      iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
+      popupAnchor: [0, metrics.popupY]
+    }});
+    const marker = L.marker([row.lat, row.lon], {{ icon }});
+    const google = row.google_score !== "" ? `<div>Google: ${'{'}Number(row.google_score).toFixed(1){'}'} (${ '{' }row.google_count{'}'} reviews)</div>` : '<div>Google: ?</div>';
+    const googleSource = row.google_source_note ? `<div>Source: ${'{'}row.google_source_note{'}'}</div>` : '';
+    const googleText = row.google_text_file ? `<div><a href="${'{'}row.google_text_file{'}'}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
+    const management = row.management_company ? `<div>Management: ${'{'}row.management_company{'}'}</div>` : '<div>Management: unknown</div>';
+    const gtd = row.gtd_url ? `<div><a href="${'{'}row.gtd_url{'}'}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
+    marker.bindPopup(`
+      <strong>${'{'}row.name{'}'}</strong><br>
+      ${'{'}row.postcode{'}'}<br>
+      <div>Near: ${'{'}row.nearby{'}'}</div>
+      ${'{'}management{'}'}
+      ${'{'}google{'}'}
+      ${'{'}googleSource{'}'}
+      ${'{'}googleText{'}'}
+      <div><a href="${'{'}row.nhs_url{'}'}" target="_blank" rel="noreferrer">NHS page</a></div>
+      ${'{'}gtd{'}'}
+    `);
+    marker.addTo(markerLayer);
+  }}
+}}
+
+renderManagementList();
+renderMarkers();
 </script>
 </body>
 </html>
