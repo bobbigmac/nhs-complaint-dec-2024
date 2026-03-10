@@ -63,6 +63,18 @@ def main() -> int:
     parser.add_argument("--batch-wait-min", type=float, default=45.0)
     parser.add_argument("--batch-wait-max", type=float, default=120.0)
     parser.add_argument("--recent-reviews", type=int, default=10)
+    parser.add_argument(
+        "--full-reviews",
+        choices=("none", "gtd", "all"),
+        default="none",
+        help="Optionally scroll the full reviews feed instead of capturing only currently visible review cards.",
+    )
+    parser.add_argument(
+        "--full-review-limit",
+        type=int,
+        default=0,
+        help="Maximum reviews to keep when full-review mode is active; 0 keeps loading until Google stops.",
+    )
     parser.add_argument("--headless", action="store_true")
     parser.add_argument("--max-batches", type=int, default=0, help="Stop after this many batches; 0 means run until complete")
     parser.add_argument(
@@ -117,6 +129,10 @@ def main() -> int:
             f"{pause_jitter:.2f}",
             "--output",
             str(args.google_json),
+            "--full-reviews",
+            args.full_reviews,
+            "--full-review-limit",
+            str(args.full_review_limit),
         ]
         if args.target == "unscanned":
             collect_cmd.append("--resume")

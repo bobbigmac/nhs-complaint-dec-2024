@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
@@ -137,6 +137,16 @@ def parse_reviews_count(label: str) -> int | None:
     return int(match.group(1).replace(",", "")) if match else None
 
 
+def is_truthy(value: object) -> bool:
+    return str(value).strip().lower() in {"1", "true", "yes", "y"}
+
+
+def is_gtd_managed_row(row: dict[str, str]) -> bool:
+    if is_truthy(row.get("gtd_managed", "")):
+        return True
+    return normalize_name(str(row.get("management_company_name", ""))) == "gtd healthcare"
+
+
 def extract_overall_metrics(driver: webdriver.Firefox) -> tuple[str, float | None, int | None]:
     title = driver.title.removesuffix(" - Google Maps").strip()
     rating = None
@@ -188,18 +198,30 @@ def google_page_kind(current_url: str) -> str:
 
 def open_reviews_panel(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
     for button in driver.find_elements(By.CSS_SELECTOR, "button"):
-        label = normalize_text(button.get_attribute("aria-label") or "")
-        text = normalize_text(button.text)
+        try:
+            label = normalize_text(button.get_attribute("aria-label") or "")
+            text = normalize_text(button.text)
+        except StaleElementReferenceException:
+            continue
         if "More reviews" in label or text.startswith("More reviews"):
-            button.click()
-            time.sleep(2)
-            return True
+            try:
+                button.click()
+                time.sleep(2)
+                return True
+            except StaleElementReferenceException:
+                continue
     for button in driver.find_elements(By.CSS_SELECTOR, "button"):
-        label = normalize_text(button.get_attribute("aria-label") or "")
+        try:
+            label = normalize_text(button.get_attribute("aria-label") or "")
+        except StaleElementReferenceException:
+            continue
         if label.startswith("Reviews for "):
-            button.click()
-            time.sleep(2)
-            return True
+            try:
+                button.click()
+                time.sleep(2)
+                return True
+            except StaleElementReferenceException:
+                continue
     try:
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.jftiEf")))
         return True
@@ -209,73 +231,260 @@ def open_reviews_panel(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
 
 def sort_reviews_newest(driver: webdriver.Firefox) -> bool:
     for button in driver.find_elements(By.CSS_SELECTOR, "button"):
-        label = normalize_text(button.get_attribute("aria-label") or "")
-        text = normalize_text(button.text)
+        try:
+            label = normalize_text(button.get_attribute("aria-label") or "")
+            text = normalize_text(button.text)
+        except StaleElementReferenceException:
+            continue
         if "Sort reviews" in label or text == "Sort":
-            button.click()
-            time.sleep(1)
-            break
+            try:
+                button.click()
+                time.sleep(1)
+                break
+            except StaleElementReferenceException:
+                continue
     else:
         return False
 
     for item in driver.find_elements(By.CSS_SELECTOR, '[role="menuitemradio"], [role="menuitem"]'):
-        text = normalize_text(item.text)
+        try:
+            text = normalize_text(item.text)
+        except StaleElementReferenceException:
+            continue
         if text.lower().startswith("newest"):
-            item.click()
-            time.sleep(2)
-            return True
+            try:
+                item.click()
+                time.sleep(2)
+                return True
+            except StaleElementReferenceException:
+                continue
     return False
+
+
+def review_button_label(button) -> str:
+    return normalize_text(
+        button.text
+        or button.get_attribute("aria-label")
+        or button.get_attribute("title")
+        or ""
+    ).lower()
+
+
+def should_expand_review_button(label: str) -> bool:
+    if not label:
+        return False
+    if label in {"more", "full review"}:
+        return True
+    return label.startswith("more ") and "review" in label
+
+
+def click_review_expanders(driver: webdriver.Firefox, cards: list, click_limit: int = 0) -> int:
+    clicks = 0
+    for card in cards:
+        try:
+            buttons = card.find_elements(By.CSS_SELECTOR, "button")
+        except StaleElementReferenceException:
+            continue
+        for button in buttons:
+            label = review_button_label(button)
+            if not should_expand_review_button(label):
+                continue
+            try:
+                driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", button)
+                time.sleep(0.05)
+                driver.execute_script("arguments[0].click();", button)
+                clicks += 1
+                time.sleep(0.15)
+            except Exception:
+                continue
+            if click_limit and clicks >= click_limit:
+                return clicks
+    return clicks
+
+
+def extract_review_from_card(card) -> dict[str, str] | None:
+    try:
+        author = normalize_text(card.find_element(By.CSS_SELECTOR, ".d4r55").get_attribute("textContent") or "")
+    except (NoSuchElementException, StaleElementReferenceException):
+        author = ""
+    try:
+        relative_date = normalize_text(card.find_element(By.CSS_SELECTOR, ".rsqaWe").get_attribute("textContent") or "")
+    except (NoSuchElementException, StaleElementReferenceException):
+        relative_date = ""
+    try:
+        star_label = normalize_text(card.find_element(By.CSS_SELECTOR, ".kvMYJc").get_attribute("aria-label") or "")
+    except (NoSuchElementException, StaleElementReferenceException):
+        star_label = ""
+    review_text = ""
+    for css in [".wiI7pd", ".MyEned"]:
+        try:
+            review_text = normalize_text(card.find_element(By.CSS_SELECTOR, css).get_attribute("textContent") or "")
+        except (NoSuchElementException, StaleElementReferenceException):
+            continue
+        if review_text:
+            break
+    try:
+        raw_card_text = normalize_text(card.get_attribute("textContent") or "")
+    except StaleElementReferenceException:
+        raw_card_text = ""
+    if not any([author, relative_date, star_label, review_text, raw_card_text]):
+        return None
+    return {
+        "author": author,
+        "relative_date": relative_date,
+        "star_label": star_label,
+        "text": review_text,
+        "raw_card_text": raw_card_text,
+    }
+
+
+def review_key(review: dict[str, str]) -> str:
+    fields = [
+        normalize_text(review.get("author", "")),
+        normalize_text(review.get("relative_date", "")),
+        normalize_text(review.get("star_label", "")),
+        normalize_text(review.get("text", "")),
+        normalize_text(review.get("raw_card_text", "")),
+    ]
+    return " | ".join(fields)
 
 
 def extract_recent_reviews(driver: webdriver.Firefox, limit: int) -> list[dict[str, str]]:
     reviews: list[dict[str, str]] = []
     cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
     selected_cards = cards if limit <= 0 else cards[:limit]
+    click_review_expanders(driver, selected_cards)
     for card in selected_cards:
-        for button in card.find_elements(By.CSS_SELECTOR, "button"):
-            button_text = normalize_text(button.text or button.get_attribute("aria-label") or "")
-            if button_text.lower() == "more":
-                try:
-                    driver.execute_script("arguments[0].click();", button)
-                    time.sleep(0.2)
-                except Exception:
-                    pass
-        try:
-            author = normalize_text(card.find_element(By.CSS_SELECTOR, ".d4r55").get_attribute("textContent") or "")
-        except NoSuchElementException:
-            author = ""
-        try:
-            relative_date = normalize_text(card.find_element(By.CSS_SELECTOR, ".rsqaWe").get_attribute("textContent") or "")
-        except NoSuchElementException:
-            relative_date = ""
-        try:
-            star_label = normalize_text(card.find_element(By.CSS_SELECTOR, ".kvMYJc").get_attribute("aria-label") or "")
-        except NoSuchElementException:
-            star_label = ""
-        review_text = ""
-        for css in [".wiI7pd", ".MyEned"]:
-            try:
-                review_text = normalize_text(card.find_element(By.CSS_SELECTOR, css).get_attribute("textContent") or "")
-            except NoSuchElementException:
-                continue
-            if review_text:
-                break
-        raw_card_text = normalize_text(card.get_attribute("textContent") or "")
-        if not any([author, relative_date, star_label, review_text]):
-            continue
-        reviews.append(
-            {
-                "author": author,
-                "relative_date": relative_date,
-                "star_label": star_label,
-                "text": review_text,
-                "raw_card_text": raw_card_text,
-            }
-        )
+        review = extract_review_from_card(card)
+        if review:
+            reviews.append(review)
     return reviews
 
 
-def scrape_place(driver: webdriver.Firefox, query: str, recent_limit: int) -> dict[str, object]:
+def find_reviews_feed(driver: webdriver.Firefox):
+    selectors = [
+        'div[role="feed"]',
+        'div.m6QErb.DxyBCb.kA9KIf.dS8AEf[tabindex="-1"]',
+        'div.m6QErb.DxyBCb.kA9KIf.dS8AEf',
+        'div.m6QErb[tabindex="-1"]',
+        'div.m6QErb',
+        'div.m6QErb[aria-label*="review"]',
+        'div.m6QErb[aria-label*="Review"]',
+    ]
+    for selector in selectors:
+        elements = driver.find_elements(By.CSS_SELECTOR, selector)
+        for element in elements:
+            try:
+                if element.find_elements(By.CSS_SELECTOR, "div.jftiEf"):
+                    return element
+            except StaleElementReferenceException:
+                continue
+    cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
+    if cards:
+        try:
+            return cards[0].find_element(By.XPATH, "./ancestor::div[contains(@class, 'm6QErb')][1]")
+        except NoSuchElementException:
+            return None
+    return None
+
+
+def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = None, force_to_bottom: bool = False) -> tuple[float, float, float]:
+    before_top, before_height, before_client = driver.execute_script(
+        "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
+        feed,
+    )
+    if cards:
+        try:
+            driver.execute_script("arguments[0].scrollIntoView({block: 'end'});", cards[-1])
+            time.sleep(0.2)
+        except Exception:
+            pass
+    driver.execute_script(
+        (
+            "const el = arguments[0];"
+            "el.scrollTop = el.scrollHeight;"
+            if force_to_bottom
+            else
+            "const el = arguments[0];"
+            "el.scrollTop = Math.min(el.scrollHeight, el.scrollTop + Math.max(el.clientHeight * 0.9, 500));"
+        ),
+        feed,
+    )
+    time.sleep(1.2 if force_to_bottom else 1.0)
+    after_top, after_height, after_client = driver.execute_script(
+        "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
+        feed,
+    )
+    return (
+        float(after_top) - float(before_top),
+        float(after_height) - float(before_height),
+        float(after_client),
+    )
+
+
+def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: int | None) -> list[dict[str, str]]:
+    feed = find_reviews_feed(driver)
+    if feed is None:
+        return extract_recent_reviews(driver, limit)
+
+    try:
+        driver.execute_script("arguments[0].scrollTop = 0;", feed)
+        time.sleep(0.5)
+    except Exception:
+        pass
+
+    reviews: list[dict[str, str]] = []
+    seen_keys: set[str] = set()
+    stagnant_rounds = 0
+    end_of_feed_rounds = 0
+    max_rounds = 120
+
+    for _ in range(max_rounds):
+        cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
+        click_review_expanders(driver, cards)
+        new_reviews = 0
+        for card in cards:
+            review = extract_review_from_card(card)
+            if not review:
+                continue
+            key = review_key(review)
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            reviews.append(review)
+            new_reviews += 1
+            if limit > 0 and len(reviews) >= limit:
+                return reviews[:limit]
+        if expected_total and len(reviews) >= expected_total:
+            return reviews[:expected_total]
+
+        scroll_delta, height_delta, _ = scroll_reviews_feed(
+            driver,
+            feed,
+            cards=cards,
+            force_to_bottom=stagnant_rounds >= 2,
+        )
+        if new_reviews == 0:
+            stagnant_rounds += 1
+        else:
+            stagnant_rounds = 0
+        if scroll_delta <= 1 and height_delta <= 1:
+            end_of_feed_rounds += 1
+        else:
+            end_of_feed_rounds = 0
+        if stagnant_rounds >= 4 and end_of_feed_rounds >= 2:
+            break
+
+    return reviews
+
+
+def scrape_place(
+    driver: webdriver.Firefox,
+    query: str,
+    recent_limit: int,
+    full_reviews_requested: bool = False,
+    full_review_limit: int = 0,
+) -> dict[str, object]:
     wait = WebDriverWait(driver, 25)
     driver.get("https://www.google.com/maps/search/" + quote(query))
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[role="main"]')))
@@ -283,7 +492,7 @@ def scrape_place(driver: webdriver.Firefox, query: str, recent_limit: int) -> di
 
     place_title, rating, review_count = extract_overall_metrics(driver)
     clicked_first_result = False
-    if google_page_kind(driver.current_url) == "search" and rating is None:
+    if google_page_kind(driver.current_url) == "search":
         clicked_first_result = click_first_search_result(driver, wait)
         place_title, rating, review_count = extract_overall_metrics(driver)
     reviews_opened = open_reviews_panel(driver, wait)
@@ -293,10 +502,18 @@ def scrape_place(driver: webdriver.Firefox, query: str, recent_limit: int) -> di
         reviews_opened = open_reviews_panel(driver, wait)
     reviews_sorted = False
     recent_reviews: list[dict[str, str]] = []
+    review_collection_mode = "visible_cards"
+    full_reviews_attempted = False
     if reviews_opened:
         reviews_sorted = sort_reviews_newest(driver)
         time.sleep(2)
-        recent_reviews = extract_recent_reviews(driver, recent_limit)
+        if full_reviews_requested:
+            full_reviews_attempted = True
+            recent_reviews = extract_full_reviews(driver, full_review_limit, review_count)
+            if recent_reviews:
+                review_collection_mode = "full_feed"
+        if not recent_reviews:
+            recent_reviews = extract_recent_reviews(driver, recent_limit)
 
     current_url = driver.current_url
     page_kind = google_page_kind(current_url)
@@ -326,6 +543,10 @@ def scrape_place(driver: webdriver.Firefox, query: str, recent_limit: int) -> di
         "retry_recommended": False,
         "reviews_opened": reviews_opened,
         "reviews_sorted_newest": reviews_sorted,
+        "review_collection_mode": review_collection_mode,
+        "full_reviews_requested": full_reviews_requested,
+        "full_reviews_attempted": full_reviews_attempted,
+        "review_cards_collected": len(recent_reviews),
         "visible_review_cards_collected": len(recent_reviews),
         "recent_reviews": recent_reviews,
     }
@@ -410,9 +631,11 @@ def write_review_text_file(text_dir: Path, result: dict[str, object]) -> str:
         f"Google review count: {result.get('google_review_count', '')}",
         f"Google Maps URL: {result.get('google_maps_url', '')}",
         f"Title match score: {result.get('title_match_score', '')}",
+        f"Review collection mode: {result.get('review_collection_mode', '')}",
+        f"Review cards collected: {result.get('review_cards_collected', '')}",
         "",
-        "Recent visible reviews",
-        "====================",
+        "Captured reviews",
+        "================",
         "",
     ]
     output_path.write_text("\n".join(header_lines + review_blocks).strip() + "\n", encoding="utf-8")
@@ -420,7 +643,7 @@ def write_review_text_file(text_dir: Path, result: dict[str, object]) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Collect Google Maps rating and newest review snippets for GP practices.")
+    parser = argparse.ArgumentParser(description="Collect Google Maps ratings plus either visible snippets or a scrolled review feed for GP practices.")
     parser.add_argument("--input", type=Path, default=DEFAULT_DATASET)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--limit", type=int, default=10, help="Maximum number of practices to scrape after filtering and resume handling")
@@ -440,6 +663,18 @@ def main() -> int:
     parser.add_argument("--only-missing-google", action="store_true", help="Only scrape practices missing a Google score in the input CSV")
     parser.add_argument("--reviews-text-dir", type=Path, default=DEFAULT_TEXT_DIR, help="Directory for one text file per practice with captured visible review text")
     parser.add_argument("--query-overrides", type=Path, default=DEFAULT_QUERY_OVERRIDES, help="JSON map of canonical_code or practice_name to an alternate Google Maps query")
+    parser.add_argument(
+        "--full-reviews",
+        choices=("none", "gtd", "all"),
+        default="none",
+        help="Optionally scroll the full Google Maps reviews feed instead of just capturing currently visible cards.",
+    )
+    parser.add_argument(
+        "--full-review-limit",
+        type=int,
+        default=0,
+        help="Maximum reviews to keep when full-review mode is active; 0 keeps scrolling until Google stops loading more cards.",
+    )
     args = parser.parse_args()
 
     source_profile = discover_default_firefox_profile()
@@ -478,8 +713,17 @@ def main() -> int:
         for index, row in enumerate(rows, start=1):
             query = resolve_query(row, query_overrides)
             print(f"[{index}/{total}] {query}")
+            collect_full_reviews = args.full_reviews == "all" or (
+                args.full_reviews == "gtd" and is_gtd_managed_row(row)
+            )
             try:
-                result = scrape_place(driver, query, args.recent_reviews)
+                result = scrape_place(
+                    driver,
+                    query,
+                    args.recent_reviews,
+                    full_reviews_requested=collect_full_reviews,
+                    full_review_limit=args.full_review_limit,
+                )
             except Exception as exc:
                 result = {
                     "query": query,
@@ -494,6 +738,10 @@ def main() -> int:
                     "retry_recommended": True,
                     "reviews_opened": False,
                     "reviews_sorted_newest": False,
+                    "review_collection_mode": "error",
+                    "full_reviews_requested": collect_full_reviews,
+                    "full_reviews_attempted": collect_full_reviews,
+                    "review_cards_collected": 0,
                     "visible_review_cards_collected": 0,
                     "recent_reviews": [],
                     "scan_error": normalize_text(str(exc)),

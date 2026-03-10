@@ -10,7 +10,9 @@ import subprocess
 import sys
 import time
 import zipfile
+from calendar import monthrange
 from dataclasses import dataclass
+from datetime import date, timedelta
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Any
@@ -20,6 +22,7 @@ from urllib.parse import quote, urlencode
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
 GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "gp_patient_survey_raw"
+GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 GP_REGISTERED_PATIENTS_CACHE = BASE_DIR / ".cache" / "gp-reg-pat-prac-all.csv"
 GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
 GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
@@ -764,8 +767,203 @@ def survey_metric(payload: dict[str, Any], question_name: str, field: str = "pra
     return question.get(field, "")
 
 
+def load_google_review_results(path: Path = GOOGLE_REVIEW_RESULTS_JSON) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return payload if isinstance(payload, list) else []
+
+
+def shift_months(source: date, delta_months: int) -> date:
+    month_index = (source.month - 1) + delta_months
+    year = source.year + (month_index // 12)
+    month = (month_index % 12) + 1
+    day = min(source.day, monthrange(year, month)[1])
+    return date(year, month, day)
+
+
+def month_start(value: date) -> date:
+    return value.replace(day=1)
+
+
+def iter_month_starts(start: date, end: date) -> list[date]:
+    months: list[date] = []
+    current = month_start(start)
+    finish = month_start(end)
+    while current <= finish:
+        months.append(current)
+        current = shift_months(current, 1)
+    return months
+
+
+def parse_google_star_label(label: str) -> float | None:
+    match = re.search(r"([0-5])\s+stars?", str(label).strip().lower())
+    if not match:
+        return None
+    return float(match.group(1))
+
+
+def parse_google_relative_review_date(label: str, anchor_date: date) -> date | None:
+    cleaned = str(label or "").strip().lower()
+    cleaned = re.sub(r"^edited\s+", "", cleaned)
+    cleaned = " ".join(cleaned.split())
+    if not cleaned:
+        return None
+    if cleaned == "today":
+        return anchor_date
+    if cleaned == "yesterday":
+        return anchor_date - timedelta(days=1)
+
+    match = re.fullmatch(r"(a|an|\d+)\s+(minute|hour|day|week|month|year)s?\s+ago", cleaned)
+    if not match:
+        return None
+
+    quantity_label, unit = match.groups()
+    quantity = 1 if quantity_label in {"a", "an"} else int(quantity_label)
+    if unit in {"minute", "hour"}:
+        return anchor_date
+    if unit == "day":
+        return anchor_date - timedelta(days=quantity)
+    if unit == "week":
+        return anchor_date - timedelta(weeks=quantity)
+    if unit == "month":
+        return shift_months(anchor_date, -quantity)
+    if unit == "year":
+        return shift_months(anchor_date, -(quantity * 12))
+    return None
+
+
+def build_gtd_google_score_timeseries(
+    rows: list[dict[str, Any]],
+    google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
+) -> dict[str, Any]:
+    anchor_date = date.today()
+    if google_results_path.exists():
+        anchor_date = date.fromtimestamp(google_results_path.stat().st_mtime)
+
+    gtd_rows = [row for row in rows if str(row.get("gtd_managed", "")).strip().lower() == "true"]
+    result_by_code = {
+        str(item.get("canonical_code", "")).strip(): item
+        for item in load_google_review_results(google_results_path)
+        if item.get("canonical_code")
+    }
+
+    month_values_by_practice: dict[str, dict[date, float]] = {}
+    practice_review_counts: dict[str, int] = {}
+    practice_google_counts: dict[str, int | None] = {}
+    parsed_review_total = 0
+    skipped_review_total = 0
+    earliest_month: date | None = None
+
+    for row in gtd_rows:
+        code = str(row.get("canonical_code", "")).strip()
+        result = result_by_code.get(code, {})
+        reviews_payload = result.get("recent_reviews") or []
+        reviews_by_month: dict[date, list[float]] = {}
+
+        for review in reviews_payload:
+            if not isinstance(review, dict):
+                skipped_review_total += 1
+                continue
+            rating = parse_google_star_label(str(review.get("star_label", "")))
+            review_date = parse_google_relative_review_date(str(review.get("relative_date", "")), anchor_date)
+            if rating is None or review_date is None:
+                skipped_review_total += 1
+                continue
+            bucket = month_start(review_date)
+            reviews_by_month.setdefault(bucket, []).append(rating)
+            parsed_review_total += 1
+            if earliest_month is None or bucket < earliest_month:
+                earliest_month = bucket
+
+        practice_review_counts[code] = sum(len(values) for values in reviews_by_month.values())
+        google_review_count = result.get("google_review_count")
+        try:
+            practice_google_counts[code] = int(google_review_count)
+        except (TypeError, ValueError):
+            practice_google_counts[code] = None
+        if not reviews_by_month:
+            continue
+
+        cumulative_total = 0.0
+        cumulative_count = 0
+        cumulative_by_month: dict[date, float] = {}
+        for bucket in sorted(reviews_by_month):
+            values = reviews_by_month[bucket]
+            cumulative_total += sum(values)
+            cumulative_count += len(values)
+            cumulative_by_month[bucket] = round(cumulative_total / cumulative_count, 4)
+        month_values_by_practice[code] = cumulative_by_month
+
+    if earliest_month is None:
+        return {
+            "anchor_date": anchor_date.isoformat(),
+            "months": [],
+            "practice_series": [],
+            "average_series": [],
+            "gtd_practice_count": len(gtd_rows),
+            "practices_with_review_history": 0,
+            "parsed_review_count": 0,
+            "skipped_review_count": skipped_review_total,
+        }
+
+    timeline = iter_month_starts(earliest_month, month_start(anchor_date))
+    practice_series = []
+    for row in gtd_rows:
+        code = str(row.get("canonical_code", "")).strip()
+        cumulative_by_month = month_values_by_practice.get(code)
+        if not cumulative_by_month:
+            continue
+        last_value: float | None = None
+        points: list[float | None] = []
+        for bucket in timeline:
+            if bucket in cumulative_by_month:
+                last_value = cumulative_by_month[bucket]
+            points.append(last_value)
+        practice_series.append(
+            {
+                "code": code,
+                "name": row.get("practice_name", code),
+                "points": points,
+                "parsed_review_count": practice_review_counts.get(code, 0),
+                "google_review_count": practice_google_counts.get(code),
+            }
+        )
+
+    average_series: list[float | None] = []
+    for index in range(len(timeline)):
+        values = [series["points"][index] for series in practice_series if series["points"][index] is not None]
+        average_series.append(round(sum(values) / len(values), 4) if values else None)
+
+    missing_practices = [
+        {
+            "code": str(row.get("canonical_code", "")).strip(),
+            "name": row.get("practice_name", ""),
+            "google_review_count": practice_google_counts.get(str(row.get("canonical_code", "")).strip()),
+        }
+        for row in gtd_rows
+        if str(row.get("canonical_code", "")).strip() not in month_values_by_practice
+    ]
+
+    return {
+        "anchor_date": anchor_date.isoformat(),
+        "months": [bucket.isoformat() for bucket in timeline],
+        "practice_series": practice_series,
+        "average_series": average_series,
+        "gtd_practice_count": len(gtd_rows),
+        "practices_with_review_history": len(practice_series),
+        "parsed_review_count": parsed_review_total,
+        "skipped_review_count": skipped_review_total,
+        "missing_practices": missing_practices,
+    }
+
+
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     survey_by_code = load_gp_patient_survey_index()
+    gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     known_management_companies = sorted(
         {
             row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else "")
@@ -1039,6 +1237,11 @@ body {{
   height: 320px;
   display: block;
 }}
+#gtd-score-trend-chart {{
+  width: 100%;
+  height: 360px;
+  display: block;
+}}
 .chart-note {{
   font-size: 12px;
   color: rgba(26, 28, 26, 0.72);
@@ -1284,6 +1487,16 @@ body {{
       <div id="comparison-grid" class="comparison-grid"></div>
     </section>
     <section class="panel comparison-panel">
+      <h2>GTD Google Score Over Time</h2>
+      <p id="gtd-score-trend-summary" class="hint"></p>
+      <div class="chart-frame">
+        <svg id="gtd-score-trend-chart" viewBox="0 0 920 360" preserveAspectRatio="xMidYMid meet" aria-labelledby="gtd-score-trend-title" role="img">
+          <title id="gtd-score-trend-title">Approximate cumulative Google rating over time for GTD practices</title>
+        </svg>
+      </div>
+      <p class="chart-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. The bold line is the mean practice trajectory. Dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
+    </section>
+    <section class="panel comparison-panel">
       <h2>Completion Rate vs Score</h2>
       <p id="scatter-summary" class="hint"></p>
       <div class="chart-frame">
@@ -1299,6 +1512,7 @@ body {{
 <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js"></script>
 <script>
 const rows = {json.dumps(markers)};
+const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const NEW_BANK_CODE = 'Y02960';
 const LOCAL_RADIUS_MILES = 2.5;
@@ -2252,6 +2466,102 @@ function renderScatterplot() {{
     `${{points.length}} practices have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}.${{newBankSummary}}`;
 }}
 
+function formatMonthLabel(monthIso) {{
+  const value = new Date(`${{monthIso}}T00:00:00`);
+  return value.toLocaleDateString('en-GB', {{ month: 'short', year: 'numeric' }});
+}}
+
+function linePath(points, xScale, yScale) {{
+  let path = '';
+  points.forEach((value, index) => {{
+    if (value === null || !Number.isFinite(value)) return;
+    const command = path ? 'L' : 'M';
+    path += `${{command}}${{xScale(index).toFixed(2)}} ${{yScale(value).toFixed(2)}} `;
+  }});
+  return path.trim();
+}}
+
+function renderGtdScoreTrendChart() {{
+  const svg = document.getElementById('gtd-score-trend-chart');
+  const summary = document.getElementById('gtd-score-trend-summary');
+  const months = gtdGoogleTimeseries.months || [];
+  const practiceSeries = gtdGoogleTimeseries.practice_series || [];
+  const averageSeries = gtdGoogleTimeseries.average_series || [];
+  if (!months.length || !practiceSeries.length) {{
+    svg.innerHTML = '';
+    summary.textContent = `No GTD Google review history is available yet in the current scrape output.`;
+    return;
+  }}
+
+  const width = 920;
+  const height = 360;
+  const margin = {{ top: 18, right: 22, bottom: 56, left: 46 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const xScale = (index) => margin.left + (months.length <= 1 ? plotWidth / 2 : (index / (months.length - 1)) * plotWidth);
+  const yMin = 1;
+  const yMax = 5;
+  const yScale = (value) => margin.top + plotHeight - ((value - yMin) / (yMax - yMin)) * plotHeight;
+  const yTicks = [1, 2, 3, 4, 5];
+  const labelStep = Math.max(1, Math.ceil(months.length / 8));
+  const xTickIndexes = months
+    .map((_month, index) => index)
+    .filter((index) => index % labelStep === 0 || index === months.length - 1);
+  const palette = [
+    '#6c8ebf', '#b67b4d', '#5f9b6b', '#9d6aa8', '#b35656', '#4f8f95', '#8c7a52',
+    '#9070b2', '#4f7f5b', '#bf6f91', '#7d8ab5', '#6d8f43', '#af7b52'
+  ];
+
+  const practicePaths = practiceSeries.map((series, index) => {{
+    const d = linePath(series.points || [], xScale, yScale);
+    if (!d) return '';
+    const color = palette[index % palette.length];
+    const finalPoint = [...(series.points || [])].reverse().find((value) => value !== null && Number.isFinite(value));
+    const finalText = finalPoint === undefined ? '?' : finalPoint.toFixed(2);
+    return `
+      <path d="${{d}}" fill="none" stroke="${{color}}" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4">
+        <title>${{series.name}} · latest reconstructed average ${{finalText}} from ${{series.parsed_review_count || 0}} parsed reviews</title>
+      </path>
+    `;
+  }}).join('');
+
+  const averagePath = linePath(averageSeries, xScale, yScale);
+  const averageFinal = [...averageSeries].reverse().find((value) => value !== null && Number.isFinite(value));
+  const averageFinalIndex = averageSeries.reduce((lastIndex, value, index) => (value !== null && Number.isFinite(value) ? index : lastIndex), -1);
+  const averageMarker = averageFinalIndex >= 0 && averageFinal !== undefined
+    ? `
+      <circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)"></circle>
+      <text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" font-weight="700">GTD mean ${{averageFinal.toFixed(2)}}</text>
+    `
+    : '';
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{yTicks.map((tick) => `
+      <line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" />
+      <text x="${{margin.left - 8}}" y="${{yScale(tick) + 4}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{tick.toFixed(1)}}</text>
+    `).join('')}}
+    ${{xTickIndexes.map((index) => `
+      <line x1="${{xScale(index)}}" y1="${{margin.top}}" x2="${{xScale(index)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.08)" />
+      <text x="${{xScale(index)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{formatMonthLabel(months[index])}}</text>
+    `).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{practicePaths}}
+    <path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
+    ${{averageMarker}}
+    <text x="${{width / 2}}" y="${{height - 10}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Approximate review month</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">Reconstructed cumulative Google rating</text>
+  `;
+
+  const missingPractices = (gtdGoogleTimeseries.missing_practices || []).map((item) => item.name).filter(Boolean);
+  const missingSuffix = missingPractices.length
+    ? ` ${{missingPractices.length}} GTD practice${{missingPractices.length === 1 ? '' : 's'}} still have no usable dated review history in the scrape: ${{missingPractices.join(', ')}}.`
+    : '';
+  summary.textContent =
+    `${{gtdGoogleTimeseries.practices_with_review_history}} of ${{gtdGoogleTimeseries.gtd_practice_count}} GTD practices contribute to this chart, based on ${{gtdGoogleTimeseries.parsed_review_count}} parsed Google review dates and ratings. Thin lines are practice-level reconstructed cumulative averages; the bold line is the mean of available practice trajectories. Relative dates are anchored to the scrape file timestamp ${{gtdGoogleTimeseries.anchor_date}}.${{missingSuffix}}`;
+}}
+
 function rerenderAll() {{
   renderMetricLegend();
   renderManagementList();
@@ -2260,6 +2570,7 @@ function rerenderAll() {{
   if (voronoiShow) {{
     renderVoronoi();
   }}
+  renderGtdScoreTrendChart();
   renderScatterplot();
   renderComparisons();
 }}
