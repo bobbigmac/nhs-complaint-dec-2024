@@ -2,20 +2,22 @@
   "generated_date": "2026-03-09",
   "scope": "All GTD Healthcare GP practice anchors from the GTD Healthcare GP practices page, plus the full NHS Find a GP result set returned for a broad Greater Manchester catchment around each GTD anchor.",
   "radius_miles": 5.0,
-  "row_count": 355,
+  "row_count": 424,
   "gtd_managed_count": 13,
-  "non_gtd_count": 342,
-  "google_review_coverage_count": 326,
-  "google_maps_direct_coverage_count": 324,
-  "google_review_text_file_count": 286,
-  "management_company_identified_count": 49,
-  "management_company_distinct_count": 13,
+  "non_gtd_count": 411,
+  "google_review_coverage_count": 387,
+  "google_maps_direct_coverage_count": 377,
+  "google_review_text_file_count": 332,
+  "management_company_identified_count": 59,
+  "management_company_distinct_count": 16,
   "trustpilot_coverage_count": 0,
-  "postcode_area_count": 73,
+  "postcode_area_count": 81,
   "postcode_areas": [
+    "BL1",
     "BL2",
     "BL3",
     "BL4",
+    "BL6",
     "BL8",
     "BL9",
     "M1",
@@ -60,6 +62,9 @@
     "OL1",
     "OL10",
     "OL11",
+    "OL12",
+    "OL15",
+    "OL16",
     "OL2",
     "OL3",
     "OL4",
@@ -68,14 +73,17 @@
     "OL7",
     "OL8",
     "OL9",
+    "SK1",
     "SK13",
     "SK14",
     "SK15",
     "SK16",
+    "SK2",
     "SK3",
     "SK4",
     "SK5",
     "SK6",
+    "SK7",
     "SK8",
     "SK9",
     "WA1",
@@ -120,6 +128,11 @@
       "scope_note": "Pull in Sale-side practices that the GTD anchors miss"
     },
     {
+      "name": "Bolton central supplemental search",
+      "postcode": "BL1 1RU",
+      "scope_note": "Pull in clearly in-scope Bolton practices missed by the existing M60-side search centres"
+    },
+    {
       "name": "Prestwich supplemental search",
       "postcode": "M25 1BT",
       "scope_note": "Pull in north-west Manchester / Prestwich-side practices inside and just beyond the M60"
@@ -153,17 +166,27 @@
       "name": "Partington supplemental search",
       "postcode": "M31 4FL",
       "scope_note": "Pull in Partington, Carrington and nearby outer-west practices around the M60"
+    },
+    {
+      "name": "Rochdale central supplemental search",
+      "postcode": "OL16 1AE",
+      "scope_note": "Pull in clearly in-scope Rochdale-side practices that sit outside the current west and north-west searches"
+    },
+    {
+      "name": "Stockport central supplemental search",
+      "postcode": "SK1 1HE",
+      "scope_note": "Pull in clearly in-scope Stockport and Reddish-side practices missed by the current Greater Manchester anchors"
     }
   ],
   "notes": [
     "Google review fields were only filled when an exact or high-confidence Just Visits match was available.",
     "Trustpilot fields were left blank because no reliable per-practice public source was found in this run.",
     "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
-    "Additional south, west and north-west Greater Manchester coverage was added with explicit supplemental NHS search centres.",
+    "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
     "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
     "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable."
   ],
-  "google_maps_total_scanned_count": 355,
+  "google_maps_total_scanned_count": 380,
   "google_maps_manual_review_count": 3,
-  "google_maps_flagged_result_count": 31
+  "google_maps_flagged_result_count": 33
 }

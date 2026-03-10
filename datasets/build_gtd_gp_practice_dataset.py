@@ -62,6 +62,7 @@ SUPPLEMENTAL_SEARCH_CENTERS = [
     SupplementalSearchCenter("Baguley supplemental search", "M23 9JH", "Pull in Baguley, Brooklands, Northern Moor and nearby south Manchester practices"),
     SupplementalSearchCenter("Stretford supplemental search", "M32 0JG", "Pull in Trafford / Stretford / west Manchester practices"),
     SupplementalSearchCenter("Sale supplemental search", "M33 7ZF", "Pull in Sale-side practices that the GTD anchors miss"),
+    SupplementalSearchCenter("Bolton central supplemental search", "BL1 1RU", "Pull in clearly in-scope Bolton practices missed by the existing M60-side search centres"),
     SupplementalSearchCenter("Prestwich supplemental search", "M25 1BT", "Pull in north-west Manchester / Prestwich-side practices inside and just beyond the M60"),
     SupplementalSearchCenter("Radcliffe supplemental search", "M26 1LS", "Pull in Radcliffe-side practices around the north-west arc beyond the M60"),
     SupplementalSearchCenter("Swinton supplemental search", "M27 4AA", "Pull in Swinton and Pendlebury-side practices on the north-west / west side of the M60"),
@@ -69,6 +70,8 @@ SUPPLEMENTAL_SEARCH_CENTERS = [
     SupplementalSearchCenter("Whitefield supplemental search", "M45 8WF", "Pull in Whitefield and Bury-south practices around the north-west arc of the M60"),
     SupplementalSearchCenter("Salford Quays supplemental search", "M50 3UB", "Pull in Salford Quays / Ordsall-side practices inside the western side of the M60"),
     SupplementalSearchCenter("Partington supplemental search", "M31 4FL", "Pull in Partington, Carrington and nearby outer-west practices around the M60"),
+    SupplementalSearchCenter("Rochdale central supplemental search", "OL16 1AE", "Pull in clearly in-scope Rochdale-side practices that sit outside the current west and north-west searches"),
+    SupplementalSearchCenter("Stockport central supplemental search", "SK1 1HE", "Pull in clearly in-scope Stockport and Reddish-side practices missed by the current Greater Manchester anchors"),
 ]
 
 
@@ -566,7 +569,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "Google review fields were only filled when an exact or high-confidence Just Visits match was available.",
             "Trustpilot fields were left blank because no reliable per-practice public source was found in this run.",
             "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
-            "Additional south, west and north-west Greater Manchester coverage was added with explicit supplemental NHS search centres.",
+            "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
             "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
             "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
         ],
@@ -950,6 +953,52 @@ body {{
   margin: 0 0 12px;
   font-size: 14px;
   line-height: 1.45;
+}}
+.comparison-summary p {{
+  margin: 0 0 10px;
+}}
+.rank-bar {{
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}}
+.rank-bar-track {{
+  position: relative;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b23322 0%, #d7b74b 50%, #1f7a3f 100%);
+  box-shadow: inset 0 0 0 1px rgba(26, 28, 26, 0.14);
+  overflow: hidden;
+}}
+.rank-bar-marker {{
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid rgba(26, 28, 26, 0.82);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+  transform: translate(-50%, -50%);
+}}
+.rank-bar-labels {{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.35;
+}}
+.rank-bar-labels span {{
+  color: rgba(26, 28, 26, 0.8);
+}}
+.rank-bar-labels strong {{
+  color: #161816;
+}}
+.rank-bar-labels .rank-worse {{
+  text-align: left;
+}}
+.rank-bar-labels .rank-better {{
+  text-align: right;
 }}
 .comparison-metrics {{
   display: grid;
@@ -1699,7 +1748,7 @@ function comparisonCardMarkup(title, kicker, summary, rowsMarkup) {{
     <article class="comparison-card">
       <h3>${{title}}</h3>
       <p class="comparison-kicker">${{kicker}}</p>
-      <p class="comparison-summary">${{summary}}</p>
+      <div class="comparison-summary">${{summary}}</div>
       <div class="comparison-metrics">${{rowsMarkup}}</div>
     </article>
   `;
@@ -1734,6 +1783,32 @@ function deltaToneClass(subjectValue, benchmarkValue, metricName) {{
   return delta < 0 ? 'tone-good' : 'tone-bad';
 }}
 
+function countUnitLabel(count, pluralUnit) {{
+  if (pluralUnit === 'practices') return count === 1 ? 'practice' : 'practices';
+  if (pluralUnit === 'management companies') return count === 1 ? 'management company' : 'management companies';
+  return pluralUnit;
+}}
+
+function rankBarMarkup(countStats, pluralUnit) {{
+  if (!countStats) return '';
+  const better = Number(countStats.better || 0);
+  const worse = Number(countStats.worse || 0);
+  const total = better + worse;
+  if (total <= 0) return '';
+  const position = (better / total) * 100;
+  return `
+    <div class="rank-bar" aria-label="Relative performance bar">
+      <div class="rank-bar-track">
+        <span class="rank-bar-marker" style="left:${{position.toFixed(1)}}%"></span>
+      </div>
+      <div class="rank-bar-labels">
+        <span class="rank-worse">Worse than <strong>${{worse}}</strong> ${{countUnitLabel(worse, pluralUnit)}}</span>
+        <span class="rank-better">Better than <strong>${{better}}</strong> ${{countUnitLabel(better, pluralUnit)}}</span>
+      </div>
+    </div>
+  `;
+}}
+
 function renderComparisons() {{
   const metric = metricConfigs[activeMetric];
   const grid = document.getElementById('comparison-grid');
@@ -1751,14 +1826,12 @@ function renderComparisons() {{
   heading.textContent = `Interactive Benchmarks for ${{metricScope}}`;
   note.textContent = `Current benchmark metric: ${{metricScope}}. The first card follows the most recently clicked practice on the map. Each selected management company gets its own card below. Nearby means other practices within ${{LOCAL_RADIUS_MILES.toFixed(1)}} miles. Company headline better/worse counts are compared with other management companies, not individual practices.`;
   const metricSummary = (label, stats, percentileValue, countNoun, countStats, percentileTarget) => {{
-    if (!stats || stats.subjectValue === null) return `${{label}} does not have enough ${{metric.title.toLowerCase()}} data yet.`;
+    if (!stats || stats.subjectValue === null) return `<p>${{label}} does not have enough ${{metric.title.toLowerCase()}} data yet.</p>`;
     const localPhrase = benchmarkPhrase(stats.subjectValue, stats.localMedian, activeMetric, 'nearby');
     const regionalPhrase = benchmarkPhrase(stats.subjectValue, stats.regionalMedian, activeMetric, 'rest-of-dataset');
     const percentilePhrase = percentileValue === null ? '' : ` It ranks around the ${{Math.round(percentileValue)}}th percentile against ${{percentileTarget}}.`;
-    const countPhrase = !countStats
-      ? ''
-      : ` It is doing better than <strong>${{countStats.better}}</strong> ${{countNoun}} and worse than <strong>${{countStats.worse}}</strong> ${{countNoun}}.`;
-    return `${{label}} is ${{localPhrase}} and ${{regionalPhrase}} on the current benchmark metric, ${{metric.title.toLowerCase()}}.${{percentilePhrase}}${{countPhrase}}`;
+    const rankBar = rankBarMarkup(countStats, countNoun);
+    return `<p>${{label}} is ${{localPhrase}} and ${{regionalPhrase}} on the current benchmark metric, ${{metric.title.toLowerCase()}}.${{percentilePhrase}}</p>${{rankBar}}`;
   }};
 
   const practiceCard = !focusedPractice

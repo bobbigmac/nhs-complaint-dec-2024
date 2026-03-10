@@ -36,6 +36,21 @@ def is_high_confidence(result: dict[str, Any], threshold: float) -> bool:
     return practice_name == google_title or practice_name in google_title or google_title in practice_name
 
 
+def is_weak_confidence(result: dict[str, Any], threshold: float) -> bool:
+    if is_high_confidence(result, threshold):
+        return False
+    if needs_manual_review(result):
+        return False
+    score = result.get("title_match_score")
+    try:
+        numeric_score = float(score)
+    except (TypeError, ValueError):
+        numeric_score = 0.0
+    if numeric_score >= max(0.15, threshold * 0.4):
+        return True
+    return page_kind(result) == "place" and result.get("google_rating") is not None
+
+
 def page_kind(result: dict[str, Any]) -> str:
     explicit = str(result.get("page_kind", "")).strip()
     if explicit:
@@ -95,17 +110,19 @@ def render_manual_review_md(path: Path, manual_review: list[dict[str, Any]], low
     if low_confidence:
         lines.extend(
             [
-                "## Low Confidence Match",
+                "## Weak Name Match",
                 "",
-                "| Practice | Code | Match score | Google title | URL |",
-                "| --- | --- | --- | --- | --- |",
+                "These were merged into the dataset as weak Google matches because the place page looked usable, but the title match was not strong.",
+                "",
+                "| Practice | Code | Match score | Google title | Merged note | URL |",
+                "| --- | --- | --- | --- | --- | --- |",
             ]
         )
         for item in low_confidence:
             url = str(item.get("google_maps_url", "")).strip()
             url_md = f"[link]({url})" if url else ""
             lines.append(
-                f"| {item.get('practice_name', '')} | {item.get('canonical_code', '')} | {item.get('title_match_score', '')} | {item.get('google_maps_title', '')} | {url_md} |"
+                f"| {item.get('practice_name', '')} | {item.get('canonical_code', '')} | {item.get('title_match_score', '')} | {item.get('google_maps_title', '')} | weak name match | {url_md} |"
             )
         lines.append("")
     if not manual_review and not low_confidence:
@@ -155,9 +172,13 @@ def merge_rows(
         if needs_manual_review(result):
             manual_review.append(result)
             continue
-        if not is_high_confidence(result, threshold):
+        high_confidence = is_high_confidence(result, threshold)
+        weak_confidence = is_weak_confidence(result, threshold)
+        if not high_confidence and not weak_confidence:
             low_confidence.append(result)
             continue
+        if weak_confidence:
+            low_confidence.append(result)
 
         row["google_maps_title"] = result.get("google_maps_title", "") or ""
         row["google_maps_match_score"] = result.get("title_match_score", "") or ""
@@ -171,6 +192,8 @@ def merge_rows(
             row["google_review_source_note"] = "Google Maps direct search"
             if result.get("reviews_opened"):
                 row["google_review_source_note"] = "Google Maps direct search with visible recent reviews"
+            if weak_confidence:
+                row["google_review_source_note"] += " (weak name match)"
             row["google_review_source_url"] = result.get("google_maps_url", "") or ""
             direct_rating_count += 1
         merged_count += 1
