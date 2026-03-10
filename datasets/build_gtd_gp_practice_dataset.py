@@ -1003,12 +1003,106 @@ body {{
   font-size: 12px;
   color: rgba(26, 28, 26, 0.72);
 }}
+.comparison-panel {{
+  grid-column: 1 / -1;
+}}
+.comparison-grid {{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}}
+.comparison-card {{
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.72);
+  padding: 12px 14px;
+}}
+.comparison-card h3 {{
+  margin: 0 0 8px;
+  font-size: 17px;
+}}
+.comparison-kicker {{
+  margin: 0 0 10px;
+  color: rgba(26, 28, 26, 0.72);
+  font-size: 12px;
+}}
+.comparison-summary {{
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}}
+.comparison-metrics {{
+  display: grid;
+  gap: 8px;
+}}
+.comparison-row {{
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr 1fr 1.1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-top: 1px solid rgba(26, 28, 26, 0.08);
+}}
+.comparison-row:first-child {{
+  border-top: 0;
+  padding-top: 0;
+}}
+.comparison-label {{
+  font-size: 12px;
+  color: rgba(26, 28, 26, 0.68);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}}
+.comparison-stat strong {{
+  display: block;
+  font-size: 18px;
+}}
+.comparison-stat strong.tone-good {{
+  color: #1f7a3f;
+}}
+.comparison-stat strong.tone-mid {{
+  color: #9d6a00;
+}}
+.comparison-stat strong.tone-bad {{
+  color: #b23322;
+}}
+.comparison-stat strong.tone-missing {{
+  color: #7d838a;
+}}
+.comparison-stat span {{
+  display: block;
+  font-size: 12px;
+  color: rgba(26, 28, 26, 0.68);
+}}
+.comparison-delta {{
+  font-size: 13px;
+  line-height: 1.4;
+}}
+.comparison-delta.tone-good {{
+  color: #1f7a3f;
+}}
+.comparison-delta.tone-mid {{
+  color: #9d6a00;
+}}
+.comparison-delta.tone-bad {{
+  color: #b23322;
+}}
+.comparison-delta.tone-missing {{
+  color: #7d838a;
+}}
 @media (max-width: 960px) {{
   .page {{
     grid-template-rows: minmax(100vh, 100dvh) auto;
   }}
   .insights {{
     grid-template-columns: 1fr;
+  }}
+  .comparison-grid {{
+    grid-template-columns: 1fr;
+  }}
+  .comparison-row {{
+    grid-template-columns: 1fr;
+    gap: 6px;
   }}
   .legend {{
     right: 12px;
@@ -1055,12 +1149,19 @@ body {{
       <p class="hint">Quick check for practices where survey turnout may be too thin to trust at face value.</p>
       <div id="outlier-list" class="outlier-list"></div>
     </section>
+    <section class="panel comparison-panel">
+      <h2>New Bank and GTD Benchmarks</h2>
+      <p id="comparison-note" class="hint"></p>
+      <div id="comparison-grid" class="comparison-grid"></div>
+    </section>
   </div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const rows = {json.dumps(markers)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
+const NEW_BANK_CODE = 'Y02960';
+const LOCAL_RADIUS_MILES = 2.5;
 const map = L.map('map').setView([{center_lat:.6f}, {center_lon:.6f}], 11);
 const markerLayer = L.layerGroup().addTo(map);
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
@@ -1161,15 +1262,19 @@ const metricConfigs = {{
     title: 'Survey/Google gap',
     description: 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google.',
     legendRows: [
-      ['Hidden if missing or <1.0', 'var(--missing)'],
+      ['Hidden if missing, zero-input, or <1.0', 'var(--missing)'],
       ['1.0-1.49', 'var(--midhigh)'],
       ['1.5-1.99', 'var(--midlow)'],
       ['2.0+ apart', 'var(--low)']
     ],
     value(row) {{
       const google = Number(row.google_score);
+      const googleCount = Number(row.google_count);
       const survey = Number(row.survey_overall_good_percent);
+      const surveySentBack = Number(row.survey_sent_back);
       if (!Number.isFinite(google) || !Number.isFinite(survey)) return null;
+      if (!Number.isFinite(googleCount) || googleCount <= 0) return null;
+      if (!Number.isFinite(surveySentBack) || surveySentBack <= 0) return null;
       const gap = Math.abs(google - (survey / 20));
       return gap < 1 ? null : gap;
     }},
@@ -1428,6 +1533,290 @@ function percentile(sortedValues, value) {{
   return (lessOrEqual / sortedValues.length) * 100;
 }}
 
+function mean(values) {{
+  if (!values.length) return null;
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
+}}
+
+function median(values) {{
+  if (!values.length) return null;
+  const sorted = [...values].sort((left, right) => left - right);
+  const middle = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 1) return sorted[middle];
+  return (sorted[middle - 1] + sorted[middle]) / 2;
+}}
+
+function distanceMiles(lat1, lon1, lat2, lon2) {{
+  const toRadians = (degrees) => (degrees * Math.PI) / 180;
+  const earthRadiusMiles = 3958.8;
+  const dLat = toRadians(lat2 - lat1);
+  const dLon = toRadians(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.sin(dLon / 2) ** 2;
+  return 2 * earthRadiusMiles * Math.asin(Math.sqrt(a));
+}}
+
+function metricValues(rowsSubset, metricName, extractor = null) {{
+  const metric = metricConfigs[metricName];
+  return rowsSubset
+    .map((row) => extractor ? extractor(row) : metric.value(row))
+    .filter((value) => value !== null && Number.isFinite(value));
+}}
+
+function formatMetricValue(value, metricName) {{
+  if (value === null) return '?';
+  if (metricName === 'survey') return `${{Math.round(value)}}%`;
+  return value.toFixed(metricName === 'gap' ? 2 : 1);
+}}
+
+function metricToneClass(metricName, value) {{
+  if (value === null) return 'tone-missing';
+  if (metricName === 'google') {{
+    if (value < 3) return 'tone-bad';
+    if (value < 4) return 'tone-mid';
+    return 'tone-good';
+  }}
+  if (metricName === 'survey') {{
+    if (value < 60) return 'tone-bad';
+    if (value < 75) return 'tone-mid';
+    return 'tone-good';
+  }}
+  if (metricName === 'gap') {{
+    if (value >= 2) return 'tone-bad';
+    if (value >= 1.5) return 'tone-mid';
+    return 'tone-good';
+  }}
+  return 'tone-missing';
+}}
+
+function comparisonSense(metricName) {{
+  return metricName === 'gap' ? 'lower' : 'higher';
+}}
+
+function deltaSentence(subjectValue, benchmarkValue, metricName) {{
+  if (subjectValue === null || benchmarkValue === null) return 'insufficient data';
+  const delta = subjectValue - benchmarkValue;
+  if (Math.abs(delta) < (metricName === 'survey' ? 1 : 0.1)) return 'roughly in line';
+  if (comparisonSense(metricName) === 'higher') {{
+    return delta > 0
+      ? `${{formatMetricValue(Math.abs(delta), metricName)}} above`
+      : `${{formatMetricValue(Math.abs(delta), metricName)}} below`;
+  }}
+  return delta < 0
+    ? `${{formatMetricValue(Math.abs(delta), metricName)}} lower gap`
+    : `${{formatMetricValue(Math.abs(delta), metricName)}} higher gap`;
+}}
+
+function benchmarkPhrase(subjectValue, benchmarkValue, metricName, label) {{
+  if (benchmarkValue === null) return `no ${{label}} comparison yet`;
+  const delta = deltaSentence(subjectValue, benchmarkValue, metricName);
+  if (delta === 'roughly in line') return `about the same as the ${{label}} typical score`;
+  if (delta === 'insufficient data') return `not enough data for the ${{label}} comparison`;
+  return `${{delta}} than the ${{label}} typical score`;
+}}
+
+function performancePercentile(values, subjectValue, metricName) {{
+  if (!values.length || subjectValue === null) return null;
+  if (comparisonSense(metricName) === 'higher') {{
+    return percentile(values.slice().sort((left, right) => left - right), subjectValue);
+  }}
+  const reversed = values.map((value) => -value).sort((left, right) => left - right);
+  return percentile(reversed, -subjectValue);
+}}
+
+function benchmarkStats(subjectRows, localRows, regionalRows, metricName, subjectMode) {{
+  const subjectValues = metricValues(subjectRows, metricName);
+  const localValues = metricValues(localRows, metricName);
+  const regionalValues = metricValues(regionalRows, metricName);
+  const completionSubjectValues = metricValues(subjectRows, metricName, (row) => numericOrNull(row.survey_completion_rate_percent));
+  const completionLocalValues = metricValues(localRows, metricName, (row) => numericOrNull(row.survey_completion_rate_percent));
+  const completionRegionalValues = metricValues(regionalRows, metricName, (row) => numericOrNull(row.survey_completion_rate_percent));
+  const subjectValue = subjectMode === 'single'
+    ? (subjectValues.length ? subjectValues[0] : null)
+    : mean(subjectValues);
+  const completionValue = subjectMode === 'single'
+    ? (completionSubjectValues.length ? completionSubjectValues[0] : null)
+    : mean(completionSubjectValues);
+  return {{
+    subjectValue,
+    subjectCount: subjectValues.length,
+    localMedian: median(localValues),
+    localCount: localValues.length,
+    regionalMedian: median(regionalValues),
+    regionalCount: regionalValues.length,
+    regionalPercentile: performancePercentile(regionalValues, subjectValue, metricName),
+    completionValue,
+    completionLocalMedian: median(completionLocalValues),
+    completionLocalCount: completionLocalValues.length,
+    completionRegionalMedian: median(completionRegionalValues),
+    completionRegionalCount: completionRegionalValues.length,
+    completionRegionalPercentile: performancePercentile(completionRegionalValues, completionValue, 'survey')
+  }};
+}}
+
+function comparisonCardMarkup(title, kicker, summary, rowsMarkup) {{
+  return `
+    <article class="comparison-card">
+      <h3>${{title}}</h3>
+      <p class="comparison-kicker">${{kicker}}</p>
+      <p class="comparison-summary">${{summary}}</p>
+      <div class="comparison-metrics">${{rowsMarkup}}</div>
+    </article>
+  `;
+}}
+
+function comparisonRowMarkup(label, subjectLabel, subjectValue, subjectMeta, subjectTone, localLabel, localValue, localMeta, localTone, regionalLabel, regionalValue, regionalMeta, regionalTone, deltaText, deltaTone) {{
+  return `
+    <div class="comparison-row">
+      <div class="comparison-label">${{label}}</div>
+      <div class="comparison-stat">
+        <strong class="${{subjectTone}}">${{subjectValue}}</strong>
+        <span>${{subjectLabel}}${{subjectMeta ? ` · ${{subjectMeta}}` : ''}}</span>
+      </div>
+      <div class="comparison-stat">
+        <strong class="${{localTone}}">${{localValue}}</strong>
+        <span>${{localLabel}}${{localMeta ? ` · ${{localMeta}}` : ''}}</span>
+      </div>
+      <div class="comparison-stat">
+        <strong class="${{regionalTone}}">${{regionalValue}}</strong>
+        <span>${{regionalLabel}}${{regionalMeta ? ` · ${{regionalMeta}}` : ''}}</span>
+      </div>
+      <div class="comparison-delta ${{deltaTone}}">${{deltaText}}</div>
+    </div>
+  `;
+}}
+
+function deltaToneClass(subjectValue, benchmarkValue, metricName) {{
+  if (subjectValue === null || benchmarkValue === null) return 'tone-missing';
+  const delta = subjectValue - benchmarkValue;
+  if (Math.abs(delta) < (metricName === 'survey' ? 1 : 0.1)) return 'tone-mid';
+  if (comparisonSense(metricName) === 'higher') return delta > 0 ? 'tone-good' : 'tone-bad';
+  return delta < 0 ? 'tone-good' : 'tone-bad';
+}}
+
+function renderComparisons() {{
+  const metric = metricConfigs[activeMetric];
+  const grid = document.getElementById('comparison-grid');
+  const note = document.getElementById('comparison-note');
+  const newBank = rows.find((row) => row.code === NEW_BANK_CODE);
+  const gtdRows = rows.filter((row) => row.gtd);
+  const gtdOtherRows = rows.filter((row) => !row.gtd);
+  const newBankLocalRows = !newBank
+    ? []
+    : rows.filter((row) =>
+        row.code !== newBank.code &&
+        distanceMiles(newBank.lat, newBank.lon, row.lat, row.lon) <= LOCAL_RADIUS_MILES
+      );
+  const newBankRegionalRows = !newBank ? [] : rows.filter((row) => row.code !== newBank.code);
+  const gtdLocalRows = gtdOtherRows.filter((row) =>
+    gtdRows.some((gtdRow) => distanceMiles(gtdRow.lat, gtdRow.lon, row.lat, row.lon) <= LOCAL_RADIUS_MILES)
+  );
+  const newBankStats = newBank ? benchmarkStats([newBank], newBankLocalRows, newBankRegionalRows, activeMetric, 'single') : null;
+  const gtdStats = benchmarkStats(gtdRows, gtdLocalRows, gtdOtherRows, activeMetric, 'group');
+  note.textContent = `Nearby means other practices within ${{LOCAL_RADIUS_MILES.toFixed(1)}} miles. For GTD, nearby means non-GTD practices close to a GTD site. Rest of dataset means everyone else here. The comparison uses a typical score for comparison groups, and a simple average across GTD sites with usable data.`;
+  const metricSummary = (label, stats) => {{
+    if (!stats || stats.subjectValue === null) return `${{label}} does not have enough ${{metric.title.toLowerCase()}} data yet.`;
+    const localPhrase = benchmarkPhrase(stats.subjectValue, stats.localMedian, activeMetric, 'nearby');
+    const regionalPhrase = benchmarkPhrase(stats.subjectValue, stats.regionalMedian, activeMetric, 'rest-of-dataset');
+    const percentilePhrase = stats.regionalPercentile === null ? '' : ` It ranks around the ${{Math.round(stats.regionalPercentile)}}th percentile against the rest of the dataset.`;
+    return `${{label}} is ${{localPhrase}} and ${{regionalPhrase}} on ${{metric.title.toLowerCase()}}.${{percentilePhrase}}`;
+  }};
+  const newBankCard = !newBank
+    ? comparisonCardMarkup('New Bank Health', 'Not found in current row set', 'The page could not find the New Bank row in the current dataset build.', '')
+    : comparisonCardMarkup(
+        'New Bank Health',
+        `${{newBank.postcode}} · code ${{newBank.code}}`,
+        metricSummary('New Bank', newBankStats),
+        [
+          comparisonRowMarkup(
+            metric.title,
+            'New Bank',
+            formatMetricValue(newBankStats.subjectValue, activeMetric),
+            newBankStats.subjectCount ? `${{newBankStats.subjectCount}} usable value` : '',
+            metricToneClass(activeMetric, newBankStats.subjectValue),
+            'Nearby typical',
+            formatMetricValue(newBankStats.localMedian, activeMetric),
+            `${{newBankStats.localCount}} peers`,
+            metricToneClass(activeMetric, newBankStats.localMedian),
+            'Rest of dataset typical',
+            formatMetricValue(newBankStats.regionalMedian, activeMetric),
+            `${{newBankStats.regionalCount}} peers`,
+            metricToneClass(activeMetric, newBankStats.regionalMedian),
+            newBankStats.localMedian === null && newBankStats.regionalMedian === null
+              ? 'No comparison available'
+              : `Against nearby: ${{deltaSentence(newBankStats.subjectValue, newBankStats.localMedian, activeMetric)}}. Against the rest: ${{deltaSentence(newBankStats.subjectValue, newBankStats.regionalMedian, activeMetric)}}.`,
+            deltaToneClass(newBankStats.subjectValue, newBankStats.regionalMedian ?? newBankStats.localMedian, activeMetric)
+          ),
+          comparisonRowMarkup(
+            'Survey completion',
+            'New Bank',
+            formatMetricValue(newBankStats.completionValue, 'survey'),
+            '',
+            metricToneClass('survey', newBankStats.completionValue),
+            'Nearby typical',
+            formatMetricValue(newBankStats.completionLocalMedian, 'survey'),
+            `${{newBankStats.completionLocalCount}} peers`,
+            metricToneClass('survey', newBankStats.completionLocalMedian),
+            'Rest of dataset typical',
+            formatMetricValue(newBankStats.completionRegionalMedian, 'survey'),
+            `${{newBankStats.completionRegionalCount}} peers`,
+            metricToneClass('survey', newBankStats.completionRegionalMedian),
+            newBankStats.completionRegionalPercentile === null
+              ? 'Completion comparison unavailable'
+              : `Return rate ranks around the ${{Math.round(newBankStats.completionRegionalPercentile)}}th percentile across the dataset.`,
+            deltaToneClass(newBankStats.completionValue, newBankStats.completionRegionalMedian ?? newBankStats.completionLocalMedian, 'survey')
+          )
+        ].join('')
+      );
+  const gtdCard = comparisonCardMarkup(
+    'GTD Healthcare',
+    `${{gtdRows.length}} GTD-labelled practices in the current dataset`,
+    metricSummary('GTD average', gtdStats),
+    [
+      comparisonRowMarkup(
+        metric.title,
+        'GTD mean',
+        formatMetricValue(gtdStats.subjectValue, activeMetric),
+        `${{gtdStats.subjectCount}} GTD practices with data`,
+        metricToneClass(activeMetric, gtdStats.subjectValue),
+        'Nearby non-GTD typical',
+        formatMetricValue(gtdStats.localMedian, activeMetric),
+        `${{gtdStats.localCount}} peers`,
+        metricToneClass(activeMetric, gtdStats.localMedian),
+        'Rest of dataset typical',
+        formatMetricValue(gtdStats.regionalMedian, activeMetric),
+        `${{gtdStats.regionalCount}} peers`,
+        metricToneClass(activeMetric, gtdStats.regionalMedian),
+        gtdStats.localMedian === null && gtdStats.regionalMedian === null
+          ? 'No comparison available'
+          : `Against nearby non-GTD practices: ${{deltaSentence(gtdStats.subjectValue, gtdStats.localMedian, activeMetric)}}. Against the rest: ${{deltaSentence(gtdStats.subjectValue, gtdStats.regionalMedian, activeMetric)}}.`,
+        deltaToneClass(gtdStats.subjectValue, gtdStats.regionalMedian ?? gtdStats.localMedian, activeMetric)
+      ),
+      comparisonRowMarkup(
+        'Survey completion',
+        'GTD mean',
+        formatMetricValue(gtdStats.completionValue, 'survey'),
+        `${{metricValues(gtdRows, 'survey', (row) => numericOrNull(row.survey_completion_rate_percent)).length}} GTD practices with data`,
+        metricToneClass('survey', gtdStats.completionValue),
+        'Nearby non-GTD typical',
+        formatMetricValue(gtdStats.completionLocalMedian, 'survey'),
+        `${{gtdStats.completionLocalCount}} peers`,
+        metricToneClass('survey', gtdStats.completionLocalMedian),
+        'Rest of dataset typical',
+        formatMetricValue(gtdStats.completionRegionalMedian, 'survey'),
+        `${{gtdStats.completionRegionalCount}} peers`,
+        metricToneClass('survey', gtdStats.completionRegionalMedian),
+        gtdStats.completionRegionalPercentile === null
+          ? 'Completion comparison unavailable'
+          : `Return rate ranks around the ${{Math.round(gtdStats.completionRegionalPercentile)}}th percentile against non-GTD practices.`,
+        deltaToneClass(gtdStats.completionValue, gtdStats.completionRegionalMedian ?? gtdStats.completionLocalMedian, 'survey')
+      )
+    ].join('')
+  );
+  grid.innerHTML = newBankCard + gtdCard;
+}}
+
 function renderScatterplot() {{
   const metric = metricConfigs[activeMetric];
   const points = rows
@@ -1536,6 +1925,7 @@ function rerenderAll() {{
   renderMarkers();
   renderScatterplot();
   renderOutliers();
+  renderComparisons();
 }}
 
 document.querySelectorAll('input[name="score-source"]').forEach((input) => {{

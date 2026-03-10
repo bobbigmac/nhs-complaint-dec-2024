@@ -1,6 +1,6 @@
 # Google Maps Manual Review Queue
 
-Generated from 42 flagged Google Maps capture records.
+Generated from 44 flagged Google Maps capture records.
 
 ## Manual Review Required
 
@@ -53,3 +53,5 @@ Generated from 42 flagged Google Maps capture records.
 | Littletown Family Med Pract | P85605 | 0.25 | Little Town Family Medical Practice | [link](https://www.google.com/maps/place/Little+Town+Family+Medical+Practice/@53.5291775,-2.1344148,17z/data=!4m8!3m7!1s0x487bb741d7c3a51b:0xd09ba6c4ec44a922!8m2!3d53.5291775!4d-2.1344148!9m1!1b1!16s%2Fg%2F1hc28crc_?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Ch Medical Practice | P85011 | 0.0 | C H Medical | [link](https://www.google.com/maps/place/C+H+Medical/@53.5317074,-2.1465969,17z/data=!3m1!5s0x487bb744e445c9e1:0x3d946cf2e638e9a6!4m8!3m7!1s0x487bb75b51b16df1:0xd03df3ef3ed0f389!8m2!3d53.5317074!4d-2.1465969!9m1!1b1!16s%2Fg%2F1hc3lzbtz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Clarendon Medical Centre | P89012 | 0.0 | SK14 2AQ | [link](https://www.google.com/maps/place/Hyde+SK14+2AQ/@53.4526399,-2.0799511,15z/data=!3m1!4b1!4m6!3m5!1s0x487bb5ddee93125f:0x72a3000b9ea4de6!8m2!3d53.4526405!4d-2.0799511!16s%2Fg%2F1tk8n48j?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Eastholme Surgery now incorporated in Heaton Moor | P88026003 | 0.333 | Heaton Moor Medical Group | [link](https://www.google.com/maps/place/Heaton+Moor+Medical+Group/@53.4249397,-2.1845798,17z/data=!3m1!5s0x487bb397f50bd211:0xf2ba7a51e83e5c4b!4m12!1m2!2m1!1sEastholme+Surgery+now+incorporated+in+Heaton+Moor+SK4+4NX!3m8!1s0x487bb397f5acbb97:0x2fef0075ff7c0ebb!8m2!3d53.4249397!4d-2.1800737!9m1!1b1!15sCjlFYXN0aG9sbWUgU3VyZ2VyeSBub3cgaW5jb3Jwb3JhdGVkIGluIEhlYXRvbiBNb29yIFNLNCA0TlhaOyI5ZWFzdGhvbG1lIHN1cmdlcnkgbm93IGluY29ycG9yYXRlZCBpbiBoZWF0b24gbW9vciBzazQgNG54kgEXY29tbXVuaXR5X2hlYWx0aF9jZW50ZXKaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhDYUZGNlRteFZNMXBUVlZWR00wNVdjRFJoTVZKSFZERmtiazFZWXhBQuABAPoBBQjTARBH!16s%2Fg%2F1tdnwg2z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Romiley Health Centre | F8F0J | 0.0 | Chadsfield Medical Practice | [link](https://www.google.com/maps/place/Chadsfield+Medical+Practice/@53.4150159,-2.0944469,17z/data=!4m12!1m2!2m1!1sRomiley+Health+Centre+SK6+4QR!3m8!1s0x487bb507f0714f87:0xd2a45658a76a5969!8m2!3d53.4150159!4d-2.0899408!9m1!1b1!15sCh1Sb21pbGV5IEhlYWx0aCBDZW50cmUgU0s2IDRRUlofIh1yb21pbGV5IGhlYWx0aCBjZW50cmUgc2s2IDRxcpIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSaVp5MUVUbWhuUlJBQuABAPoBBAgAECg!16s%2Fg%2F1hc17fbzq?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
