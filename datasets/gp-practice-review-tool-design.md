@@ -280,6 +280,52 @@ Rules for future dataset enrichments:
 - recompute `management_company_group_size` after every enrichment pass
 - do not overwrite a higher-confidence source with a lower-confidence one
 
+### GP Patient Survey source contract
+
+Keep GP Patient Survey ingestion separate from the live Google review collector.
+
+Current raw source-of-truth directory:
+
+- `gp_patient_survey_raw/`
+
+Current compiled analyst-facing summary:
+
+- `gp_patient_survey_focus.md`
+
+Current collector:
+
+- `collect_gp_patient_survey_markdown.py`
+
+Format rules:
+
+- raw data lives as one JSON file per practice in `gp_patient_survey_raw/`
+- use `canonical_code` plus practice name slug in the filename
+- keep GP Patient Survey `questionName` / `dataColumn` identifiers as the stable keys inside `key_questions`
+- prefer additive schema changes over renaming existing keys
+- `gp_patient_survey_focus.md` is a derived report, not the source-of-truth layer
+
+Fields expected in each record:
+
+- `canonical_code`
+- `practice_name_dataset`
+- `practice_name_gpps`
+- `practice_address`
+- `gpps_url`
+- `ics_code`
+- `surveys_sent_out`
+- `surveys_sent_back`
+- `completion_rate_percent`
+- `fetch_status`
+- `details_level`
+- `active_project`
+- `key_questions`
+
+Current collection scope:
+
+- practice page metadata from `https://www.gp-patient.co.uk/patientexperience/results?code=<code>`
+- top-level key-question comparators from the GPPS JSON API for practice, ICS and national
+- no Google-review pipeline changes in the same pass
+
 Examples:
 
 - one provider may appear with `Ltd`, `Limited`, partnership wording, or slightly different punctuation
