@@ -1780,6 +1780,100 @@
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86619-dr-mb-ghafoor-and-partners.txt"
   },
   {
+    "query": "Norden Surgery OL11 5XE",
+    "google_maps_title": "Edenfield Road Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Edenfield+Road+Surgery/@53.6223652,-2.2269893,14z/data=!4m12!1m2!2m1!1sNorden+Surgery+OL11+5XE!3m8!1s0x487bbbf10d86cd27:0xb8b10fee1ac092c8!8m2!3d53.6223652!4d-2.1888805!9m1!1b1!15sChdOb3JkZW4gU3VyZ2VyeSBPTDExIDVYRVoZIhdub3JkZW4gc3VyZ2VyeSBvbDExIDV4ZZIBDm1lZGljYWxfY2xpbmljmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NGVsUkhkSEpOUlZsM1pGZHpNVlJWZHpSaFJURlJaR3RLTWxWWVl4QULgAQD6AQQIABA9!16s%2Fg%2F1tq8j2yk?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.3,
+    "google_review_count": 228,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Jean Downes",
+        "relative_date": "a week ago",
+        "star_label": "4 stars",
+        "text": "The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided.",
+        "raw_card_text": "Jean Downes1 reviewa week ago New The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided.Like Share Response from the owner 6 hours agoHi Jean, Thank you very much for your positive feedback and we\u2019re really grateful for it. We\u2019re pleased you\u2019ve noticed significant improvements in recent times and are happy with the care you receive. We will share your comment with our practice team. We\u2019re all really grateful for your support. Thank you."
+      },
+      {
+        "author": "Megan Roscoe",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable.",
+        "raw_card_text": "Megan Roscoe6 reviewsa week ago New The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable.Like Share Response from the owner 6 hours agoHi Megan, Thank you very much for your positive feedback and review. We\u2019ve been working very hard to improve our appointments system and access. We\u2019re delighted you\u2019ve found the new system to be really positive. We will share your praise with Dr Alam and the team who will all be grateful for your support. Thank you."
+      },
+      {
+        "author": "Salvatore Melidoni",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "The best service ever. Kind and considerate. Thank you.",
+        "raw_card_text": "Salvatore Melidoni1 review \u00b7 2 photosa week ago New The best service ever. Kind and considerate. Thank you.Like Share Response from the owner 6 hours agoHi Salvatore, Thank you very much for your lovely feedback and support. We will share it with our practice team. It means a lot to us and we\u2019re really grateful. Thank you."
+      },
+      {
+        "author": "Mark Wood",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery.",
+        "raw_card_text": "Mark Wood1 review2 weeks ago New I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery.Like Share Response from the owner 6 hours agoHi Mark, Thank you very much for your wonderful review and support for our whole team. It means a lot to us. We really appreciate it and will share your feedback with our practice team. Thank you."
+      },
+      {
+        "author": "Mark Carnighan - Business Growth Specialist",
+        "relative_date": "2 weeks ago",
+        "star_label": "1 star",
+        "text": "Terrible service - test results show cause and they know you\u2019re in pain,so give you an appointment in 6 weeks and shrug when you question this.A disgrace",
+        "raw_card_text": "Mark Carnighan - Business Growth Specialist6 reviews2 weeks ago New Terrible service - test results show cause and they know you\u2019re in pain,so give you an appointment in 6 weeks and shrug when you question this.A disgraceLike Share Response from the owner a week agoHi Mark, We\u2019re sorry to hear you're disappointed with the service you have received. We hope your issue has been resolved. Please do contact the surgery and ask to speak to our practice manager if you would like further support."
+      },
+      {
+        "author": "ranjo ali",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "It\u2019s amazing feeling, they make me feel important and well looked after",
+        "raw_card_text": "ranjo ali1 review2 weeks ago New It\u2019s amazing feeling, they make me feel important and well looked afterLike Share Response from the owner a week agoHi Ranjo, Thank you very much for your positive feedback. We\u2019re all delighted to see that you have been made to feel important and are well looked after. Thank you."
+      },
+      {
+        "author": "Martine Mooney",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "We saw Dr Alum today and all I can say is WOW!! Very engaging, listened to every concern. He was very patient and very competent. Would highly recommend seeing him. Myself & my family are very grateful.",
+        "raw_card_text": "Martine Mooney2 reviews3 weeks ago New We saw Dr Alum today and all I can say is WOW!! Very engaging, listened to every concern. He was very patient and very competent. Would highly recommend seeing him. Myself & my family are very grateful.Like Share Response from the owner 3 weeks agoHi Martine, Thank you very much for your positive review. We\u2019re really pleased to hear you and your family are really pleased with the care you received from Dr Alam. We will share your support with Dr Alam and our team. Thank you."
+      },
+      {
+        "author": "Lisa Ashton",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "I recently have had really great care from Dr Aslam and Dr Alum. Using patches I have gotten an appointment when needed.",
+        "raw_card_text": "Lisa Ashton8 reviews \u00b7 4 photos3 weeks ago New I recently have had really great care from Dr Aslam and Dr Alum. Using patches I have gotten an appointment when needed.Like Share Response from the owner 3 weeks agoHi Lisa, Thank you very much for your lovely review. We\u2019re really pleased to hear you have had great care from the team at the surgery. Dr Aslam is a lovely GP and we are really grateful to have her as per of our team. We\u2019re pleased you found the appointments system easy to navigate and found Patch\u2019s to be helpful. We will share your review with Dr Alam and the team who will be very grateful. Thank you for your support."
+      },
+      {
+        "author": "Grace Krzempek",
+        "relative_date": "Edited 3 weeks ago",
+        "star_label": "5 stars",
+        "text": "Having used the PATCHS system several times now, I would like to say how quick, easy and efficient the system has been. I would also like to say a big thank you to Siobhan, the lung capacity nurse, who helped me with the tests and made me feel very comfortable by listening to all my concerns. The pharmacist, Imran, who also reassured me that my results required no further attention. Also, to Dr Alam, who explained my test results, and completely reassured me that my health was moving in the right direction. And finally, thank you to all the staff who work at Edenfield Road Surgery. You are doing a fantastic job.",
+        "raw_card_text": "Grace Krzempek2 reviewsEdited 3 weeks ago Having used the PATCHS system several times now, I would like to say how quick, easy and efficient the system has been. I would also like to say a big thank you to Siobhan, the lung capacity nurse, who helped me with the tests and made me feel very comfortable by listening to all my concerns. The pharmacist, Imran, who also reassured me that my results required no further attention. Also, to Dr Alam, who explained my test results, and completely reassured me that my health was moving in the right direction. And finally, thank you to all the staff who work at Edenfield Road Surgery. You are doing a fantastic job.Like1 Share Response from the owner 3 weeks agoHi Grace, Thank you very much for your amazing comments, and supportive review. We really appreciate it and it means a lot to us. Siobhan is indeed a really amazing nurse, kind and considerate and always helpful. Imran really is a fantastic pharmacist and always goes the extra mile. We will share your lovely review with Dr Alam and the whole practice team. We are really grateful for your support. Thank you very much."
+      },
+      {
+        "author": "Dan Eaton",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Great service from the surgery today. Made a request and was contacted straight away. A face to face appointment was issued. Gary Eaton",
+        "raw_card_text": "Dan Eaton5 reviewsa month ago Great service from the surgery today. Made a request and was contacted straight away. A face to face appointment was issued. Gary EatonLike Share Response from the owner 3 weeks agoHi Gary, Thank you very much for your positive review and we\u2019re really pleased to hear about the nice experience you have had. Over the past few months as a team we have worked extremely hard to improve our appointment system and it\u2019s really pleasing to hear about the patient experience improving significantly. Thank you for your support."
+      }
+    ],
+    "practice_name": "Norden Surgery",
+    "postcode": "OL11 5XE",
+    "canonical_code": "P86003002",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/norden-surgery/P86003002",
+    "query_used": "Norden Surgery OL11 5XE",
+    "title_match_score": 0.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86003002-norden-surgery.txt"
+  },
+  {
     "query": "Alexandra Group Med Pract OL4 1YN",
     "google_maps_title": "The Alexandra Group Medical Practice",
     "google_maps_url": "https://www.google.com/maps/place/The+Alexandra+Group+Medical+Practice/@53.5378483,-2.0952743,17z/data=!4m8!3m7!1s0x487bb78f1d7088ad:0xac4782f6fed011e5!8m2!3d53.5378483!4d-2.0952743!9m1!1b1!16s%2Fg%2F1tf57fk0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
@@ -2108,6 +2202,29 @@
     "review_text_file": ""
   },
   {
+    "query": "Bramhall & Shaw Heath Medical Group SK3 8DN",
+    "google_maps_title": "mybabyview",
+    "google_maps_url": "https://www.google.com/maps/place/mybabyview/@53.477222,-2.1877547,13z/data=!4m11!1m2!2m1!1sBramhall+%26+Shaw+Heath+Medical+Group+SK3+8DN!3m7!1s0x487bb1b0da5cc593:0x6ad0e0eea4ba0e78!8m2!3d53.4772219!4d-2.1115374!9m1!1b1!16s%2Fg%2F11khznl7pc?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.2,
+    "google_review_count": 76,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_reviews_opened_no_visible_text",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Bramhall & Shaw Heath Medical Group",
+    "postcode": "SK3 8DN",
+    "canonical_code": "P88016001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/bramhall-and-shaw-heath-medical-group/P88016001",
+    "query_used": "Bramhall & Shaw Heath Medical Group SK3 8DN",
+    "title_match_score": 0.0,
+    "review_text_file": ""
+  },
+  {
     "query": "Eastholme Surgery now incorporated in Heaton Moor SK4 4NX",
     "google_maps_title": "Heaton Moor Medical Group",
     "google_maps_url": "https://www.google.com/maps/place/Heaton+Moor+Medical+Group/@53.4249397,-2.1845798,17z/data=!3m1!5s0x487bb397f50bd211:0xf2ba7a51e83e5c4b!4m12!1m2!2m1!1sEastholme+Surgery+now+incorporated+in+Heaton+Moor+SK4+4NX!3m8!1s0x487bb397f5acbb97:0x2fef0075ff7c0ebb!8m2!3d53.4249397!4d-2.1800737!9m1!1b1!15sCjlFYXN0aG9sbWUgU3VyZ2VyeSBub3cgaW5jb3Jwb3JhdGVkIGluIEhlYXRvbiBNb29yIFNLNCA0TlhaOyI5ZWFzdGhvbG1lIHN1cmdlcnkgbm93IGluY29ycG9yYXRlZCBpbiBoZWF0b24gbW9vciBzazQgNG54kgEXY29tbXVuaXR5X2hlYWx0aF9jZW50ZXKaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhDYUZGNlRteFZNMXBUVlZWR00wNVdjRFJoTVZKSFZERmtiazFZWXhBQuABAPoBBQjTARBH!16s%2Fg%2F1tdnwg2z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
@@ -2294,6 +2411,100 @@
     "query_used": "Romiley Health Centre SK6 4QR",
     "title_match_score": 0.0,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/F8F0J-romiley-health-centre.txt"
+  },
+  {
+    "query": "Bramhall & Shaw Heath Medical Group SK7 3EP",
+    "google_maps_title": "Bramhall Park Medical Centre",
+    "google_maps_url": "https://www.google.com/maps/place/Bramhall+Park+Medical+Centre/@53.3774146,-2.2379772,13z/data=!4m12!1m2!2m1!1sBramhall+%26+Shaw+Heath+Medical+Group+SK7+3EP!3m8!1s0x487bb3522438cd59:0x683c7c527abd7233!8m2!3d53.3774146!4d-2.1617595!9m1!1b1!15sCitCcmFtaGFsbCAmIFNoYXcgSGVhdGggTWVkaWNhbCBHcm91cCBTSzcgM0VQkgEObWVkaWNhbF9jZW50ZXLgAQA!16s%2Fg%2F1tjgp40q?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.4,
+    "google_review_count": 79,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Big V RD",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "James the new receptionist rude as hell. I don\u2019t know who he thinks he is but maybe this sector isn\u2019t for him.",
+        "raw_card_text": "Big V RD13 reviewsa month ago James the new receptionist rude as hell. I don\u2019t know who he thinks he is but maybe this sector isn\u2019t for him.Like Share"
+      },
+      {
+        "author": "Dominic Keefe",
+        "relative_date": "Edited a month ago",
+        "star_label": "1 star",
+        "text": "Some of the doctors here are more thoughtful than others but overall they reflect institutional neglect. I'm dealing with a disabling and frightening chronic condition that has been poorly investigated and diagnosed by the NHS and this health center. Tests have always comeback within their very broad definition of 'normal' and they refuse to apply any further clinical consideration to a patients' actual clinical picture. I asked for my medical records and I still haven't received the requested information three months later. I've complained but received no response. One receptionist a month ago completely ignored me. Then she dealt with me as if it was an inconvenience. The online triage system is now a grim joke. It frequently suspends the option to make an appointment for a week or more, and then every alternative method of contact filters you back to it. The clinic is at the forefront of a modern dysfunctional NHS where compassion disappeared decades ago. The patient comes very last in its considerations and it merely a source of LHA funding. Addendum : I am now discovering that the causes that I suggested for my illness and was laughed out of the surgery with ('Dr' Yazicci actually laughed at them) are indeed the issue and I am now self medicating with considerbale success. The dimissal of my theories by this surgery has cost me years of my life as I didn't act on it. Any attempt to complain to them is water off a duck's back to them. I've since changed surgeries. When I mentioned I was going to this, this one became even less responsive and more dismissive.",
+        "raw_card_text": "Dominic KeefeLocal Guide \u00b7 17 reviewsEdited a month ago Some of the doctors here are more thoughtful than others but overall they reflect institutional neglect. I'm dealing with a disabling and frightening chronic condition that has been poorly investigated and diagnosed by the NHS and this health center. Tests have always comeback within their very broad definition of 'normal' and they refuse to apply any further clinical consideration to a patients' actual clinical picture. I asked for my medical records and I still haven't received the requested information three months later. I've complained but received no response. One receptionist a month ago completely ignored me. Then she dealt with me as if it was an inconvenience. The online triage system is now a grim joke. It frequently suspends the option to make an appointment for a week or more, and then every alternative method of contact filters you back to it. The clinic is at the forefront of a modern dysfunctional NHS where compassion disappeared decades ago. The patient comes very last in its considerations and it merely a source of LHA funding. Addendum : I am now discovering that the causes that I suggested for my illness and was laughed out of the surgery with ('Dr' Yazicci actually laughed at them) are indeed the issue and I am now self medicating with considerbale success. The dimissal of my theories by this surgery has cost me years of my life as I didn't act on it. Any attempt to complain to them is water off a duck's back to them. I've since changed surgeries. When I mentioned I was going to this, this one became even less responsive and more dismissive.Like3 Share"
+      },
+      {
+        "author": "Navin Sethi",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Navin Sethi2 months ago"
+      },
+      {
+        "author": "Dawn Edge",
+        "relative_date": "Edited 3 months ago",
+        "star_label": "1 star",
+        "text": "I used to boast about my GP practice but no longer. Service has declined dramatically in the last 12-18 months. Clinical staff are great when you can see them - 3 week wait for appointment and virtually impossible to get through on telephone. Didn't think it was possible, but service getting worse! No response to 2 triage forms. Cannot get through on phone. Little wonder A&E overwhlemed!",
+        "raw_card_text": "Dawn Edge5 reviewsEdited 3 months ago I used to boast about my GP practice but no longer. Service has declined dramatically in the last 12-18 months. Clinical staff are great when you can see them - 3 week wait for appointment and virtually impossible to get through on telephone. Didn't think it was possible, but service getting worse! No response to 2 triage forms. Cannot get through on phone. Little wonder A&E overwhlemed!Like9 Share"
+      },
+      {
+        "author": "Sue Pattinson",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Filled in triage form and was then phoned to make an appointment. Doctor was lovely and asked me to arrange to go for blood tests. She sent me a link and I selected an appointment the same morning. Lady doing blood tests was very good, no pain, very quick. All done very efficiently, thank you.",
+        "raw_card_text": "Sue PattinsonLocal Guide \u00b7 31 reviews \u00b7 7 photos3 months ago Filled in triage form and was then phoned to make an appointment. Doctor was lovely and asked me to arrange to go for blood tests. She sent me a link and I selected an appointment the same morning. Lady doing blood tests was very good, no pain, very quick. All done very efficiently, thank you.Like Share"
+      },
+      {
+        "author": "Charles Buckley",
+        "relative_date": "3 months ago",
+        "star_label": "2 stars",
+        "text": "The doctors are lovely when you can get an appointment! The receptionists seem to lack empathy and are abrupt. The website is terrible and misleading and needs simplifying to make an appointment. The parking is diabolical with more scruffy, muddy garden than parking spaces.",
+        "raw_card_text": "Charles BuckleyLocal Guide \u00b7 52 reviews \u00b7 21 photos3 months ago The doctors are lovely when you can get an appointment! The receptionists seem to lack empathy and are abrupt. The website is terrible and misleading and needs simplifying to make an appointment. The parking is diabolical with more scruffy, muddy garden than parking spaces.Like Share"
+      },
+      {
+        "author": "First Last",
+        "relative_date": "5 months ago",
+        "star_label": "1 star",
+        "text": "Just had to make a complaint for the first time EVER! I've been waiting MONTHS to get an appointment for plantar fasciitis, and finally had an appointment today, Thurs Sept 18th at 1.30pm. I thought it was at the Bramhall Health Centre close to the centre of Bramhall, and I got there for 1.30pm. Turns out it wasn't, so I have to double back to the very similarly-named Bramhall Park Medical Centre (your texts don't specify the address!) - which is twinned with Shaw Heath, get there for bang on 1.40pm, but I'm only on time to be classed as 'late' and marked down as Did Not Attend. I've rebooked for a couple of weeks from now, but after all this time of waiting, I think this is a DISGUSTING, INTRANSIGENT SYSTEM! Even Michael Douglas in Falling Down only went over 3 minutes at Whammy Burger, but for this, I was late at the precise moment my appointment was cancelled. I did ask if I could still be seen, but Computer Says No. As a result, to say I am ANGRY is an UNDERSTATEMENT! I'll be surprised if anyone cares about this complaint.",
+        "raw_card_text": "First Last2 reviews5 months ago Just had to make a complaint for the first time EVER! I've been waiting MONTHS to get an appointment for plantar fasciitis, and finally had an appointment today, Thurs Sept 18th at 1.30pm. I thought it was at the Bramhall Health Centre close to the centre of Bramhall, and I got there for 1.30pm. Turns out it wasn't, so I have to double back to the very similarly-named Bramhall Park Medical Centre (your texts don't specify the address!) - which is twinned with Shaw Heath, get there for bang on 1.40pm, but I'm only on time to be classed as 'late' and marked down as Did Not Attend. I've rebooked for a couple of weeks from now, but after all this time of waiting, I think this is a DISGUSTING, INTRANSIGENT SYSTEM! Even Michael Douglas in Falling Down only went over 3 minutes at Whammy Burger, but for this, I was late at the precise moment my appointment was cancelled. I did ask if I could still be seen, but Computer Says No. As a result, to say I am ANGRY is an UNDERSTATEMENT! I'll be surprised if anyone cares about this complaint.Like Share"
+      },
+      {
+        "author": "Buket \u00d6zg\u00fcr",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "We have been registered here for 4 years, and especially for children, we are usually able to get appointments on the same day. For adults, appointments may take a bit longer, but overall, things move quickly compared to the rest of the UK. Everyone is very friendly and organized. Although we have experienced occasional issues, we are generally very satisfied. Thank you to the entire team.",
+        "raw_card_text": "Buket \u00d6zg\u00fcr2 reviews7 months ago We have been registered here for 4 years, and especially for children, we are usually able to get appointments on the same day. For adults, appointments may take a bit longer, but overall, things move quickly compared to the rest of the UK. Everyone is very friendly and organized. Although we have experienced occasional issues, we are generally very satisfied. Thank you to the entire team.Like Share"
+      },
+      {
+        "author": "JA Q",
+        "relative_date": "8 months ago",
+        "star_label": "5 stars",
+        "text": "Friendly & efficient service from receptionist Amy as well as from Dr Walker - who was thorough with a caring attitude.",
+        "raw_card_text": "JA Q6 reviews8 months ago Friendly & efficient service from receptionist Amy as well as from Dr Walker - who was thorough with a caring attitude.Like Share"
+      },
+      {
+        "author": "Louise McGarrie",
+        "relative_date": "8 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Louise McGarrie4 reviews8 months ago"
+      }
+    ],
+    "practice_name": "Bramhall & Shaw Heath Medical Group",
+    "postcode": "SK7 3EP",
+    "canonical_code": "P88016",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/bramhall-and-shaw-heath-medical-group/P88016",
+    "query_used": "Bramhall & Shaw Heath Medical Group SK7 3EP",
+    "title_match_score": 0.333,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P88016-bramhall-and-shaw-heath-medical-group.txt"
   },
   {
     "query": "The Quays Grappenhal Surgery WA4 2XT",

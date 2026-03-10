@@ -17,6 +17,7 @@ Files:
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
+- `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
 
 Source basis:
 
@@ -24,6 +25,7 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
+- Registered patients totals: https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026
 - Supplemental broader Greater Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M25 1BT, M26 1LS, M27 4AA, M28 0BQ, M31 4FL, M32 0JG, M33 7ZF, M45 8WF, M50 3UB
 
 Coverage snapshot:
@@ -31,12 +33,13 @@ Coverage snapshot:
 - total rows: 424
 - GTD-managed rows: 13
 - non-GTD nearby rows: 411
-- Google review coverage rows: 389
-- Google Maps direct coverage rows: 379
-- Review text files written: 334
+- Google review coverage rows: 416
+- Google Maps direct coverage rows: 406
+- Review text files written: 360
 - Practices with management company identified: 59
 - Distinct management companies identified: 16
-- Google Maps scans completed: 380
+- Practices with registered patient count: 360
+- Google Maps scans completed: 407
 - Google Maps manual review queue: 1
 
 Caveats:

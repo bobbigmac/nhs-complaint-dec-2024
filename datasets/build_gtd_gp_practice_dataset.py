@@ -9,8 +9,10 @@ import re
 import subprocess
 import sys
 import time
+import zipfile
 from dataclasses import dataclass
 from pathlib import Path
+from tempfile import NamedTemporaryFile
 from typing import Any
 from urllib.parse import quote, urlencode
 
@@ -18,6 +20,9 @@ from urllib.parse import quote, urlencode
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
 GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "gp_patient_survey_raw"
+GP_REGISTERED_PATIENTS_CACHE = BASE_DIR / ".cache" / "gp-reg-pat-prac-all.csv"
+GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
+GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
@@ -119,6 +124,68 @@ def fetch_text(url: str) -> str:
 
 def fetch_json(url: str) -> Any:
     return json.loads(fetch_text(url))
+
+
+def ensure_registered_patients_cache(cache_path: Path = GP_REGISTERED_PATIENTS_CACHE) -> Path:
+    if cache_path.exists():
+        return cache_path
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    with NamedTemporaryFile(suffix=".zip", delete=False, dir=cache_path.parent) as handle:
+        temp_zip_path = Path(handle.name)
+    try:
+        subprocess.run(
+            [
+                "curl",
+                "-LfsS",
+                "--connect-timeout",
+                "15",
+                "--max-time",
+                "120",
+                "--retry",
+                "2",
+                "--retry-delay",
+                "1",
+                "-A",
+                USER_AGENT,
+                GP_REGISTERED_PATIENTS_ZIP_URL,
+                "-o",
+                str(temp_zip_path),
+            ],
+            check=True,
+            capture_output=True,
+            timeout=130,
+        )
+        with zipfile.ZipFile(temp_zip_path) as archive:
+            csv_names = [name for name in archive.namelist() if name.lower().endswith(".csv")]
+            if not csv_names:
+                raise RuntimeError("Registered patients zip did not contain a CSV file")
+            cache_path.write_bytes(archive.read(csv_names[0]))
+    finally:
+        temp_zip_path.unlink(missing_ok=True)
+    return cache_path
+
+
+def load_registered_patient_index(cache_path: Path = GP_REGISTERED_PATIENTS_CACHE) -> dict[str, int]:
+    source_path = ensure_registered_patients_cache(cache_path)
+    patient_counts: dict[str, int] = {}
+    with source_path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            if str(row.get("TYPE", "")).strip() != "GP":
+                continue
+            if str(row.get("SEX", "")).strip() != "ALL":
+                continue
+            if str(row.get("AGE", "")).strip() != "ALL":
+                continue
+            code = str(row.get("CODE", "")).strip()
+            raw_count = str(row.get("NUMBER_OF_PATIENTS", "")).strip()
+            if not code or not raw_count:
+                continue
+            try:
+                patient_counts[code] = int(raw_count)
+            except ValueError:
+                continue
+    return patient_counts
 
 
 def slugify(value: str) -> str:
@@ -388,6 +455,7 @@ def resolve_supplemental_center(center: SupplementalSearchCenter) -> dict[str, A
 def build_dataset() -> list[dict[str, Any]]:
     resolved_anchors = [resolve_anchor(anchor) for anchor in GTD_ANCHORS]
     resolved_supplementals = [resolve_supplemental_center(center) for center in SUPPLEMENTAL_SEARCH_CENTERS]
+    registered_patient_counts = load_registered_patient_index()
     anchor_codes = {anchor["ods_code"]: anchor for anchor in resolved_anchors}
     practice_index: dict[str, dict[str, Any]] = {}
 
@@ -460,6 +528,7 @@ def build_dataset() -> list[dict[str, Any]]:
             "nearby_anchor_count": len(practice["nearby_to_gtd_anchors"]),
             "source_search_centers": ", ".join(sorted(practice.get("source_search_centers", []))),
             "source_search_center_count": len(practice.get("source_search_centers", [])),
+            "registered_patient_count": registered_patient_counts.get(canonical_code, ""),
         }
         record["management_company_name"] = "GTD Healthcare" if matched_anchor else ""
         record["management_company_source"] = "gtd_anchor_match" if matched_anchor else ""
@@ -515,6 +584,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "management_company_confidence",
         "management_company_domain",
         "management_company_group_size",
+        "registered_patient_count",
         "google_review_score",
         "google_review_count",
         "google_review_source_note",
@@ -552,6 +622,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "google_review_text_file_count": sum(1 for row in rows if row.get("google_review_text_file", "")),
         "management_company_identified_count": sum(1 for row in rows if row.get("management_company_name", "")),
         "management_company_distinct_count": len({row.get("management_company_name", "") for row in rows if row.get("management_company_name", "")}),
+        "registered_patient_count_coverage": sum(1 for row in rows if row.get("registered_patient_count", "") != ""),
         "trustpilot_coverage_count": sum(1 for row in rows if row["trustpilot_score"] != ""),
         "postcode_area_count": len(postcodes),
         "postcode_areas": postcodes,
@@ -560,6 +631,8 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "nhs_find_a_gp": "https://www.nhs.uk/service-search/find-a-gp",
             "postcode_geocoder": "https://api.postcodes.io/",
             "google_review_mirror": "https://justvisits.co.uk/",
+            "registered_patients_publication": GP_REGISTERED_PATIENTS_PUBLICATION_URL,
+            "registered_patients_zip": GP_REGISTERED_PATIENTS_ZIP_URL,
         },
         "supplemental_search_centers": [
             {"name": center.name, "postcode": center.postcode, "scope_note": center.scope_note}
@@ -572,6 +645,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
             "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
             "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
+            "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
         ],
     }
     path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -598,6 +672,7 @@ Files:
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
+- `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
 
 Source basis:
 
@@ -605,6 +680,7 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
+- Registered patients totals: https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026
 - Supplemental broader Greater Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M25 1BT, M26 1LS, M27 4AA, M28 0BQ, M31 4FL, M32 0JG, M33 7ZF, M45 8WF, M50 3UB
 
 Coverage snapshot:
@@ -617,6 +693,7 @@ Coverage snapshot:
 - Review text files written: {summary['google_review_text_file_count']}
 - Practices with management company identified: {summary.get('management_company_identified_count', 0)}
 - Distinct management companies identified: {summary.get('management_company_distinct_count', 0)}
+- Practices with registered patient count: {summary.get('registered_patient_count_coverage', 0)}
 - Google Maps scans completed: {summary.get('google_maps_total_scanned_count', 0)}
 - Google Maps manual review queue: {summary.get('google_maps_manual_review_count', 0)}
 
@@ -689,6 +766,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
                 "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
                 "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+                "registered_patient_count": row.get("registered_patient_count", ""),
             }
         )
 
@@ -789,6 +867,9 @@ body {{
   border-radius: 999px;
   overflow: hidden;
   background: rgba(15, 94, 156, 0.06);
+}}
+#size-mode-control {{
+  grid-template-columns: 1fr 1fr;
 }}
 .segmented label {{
   display: flex;
@@ -1149,6 +1230,14 @@ body {{
         <p id="metric-description" class="hint"></p>
         <div id="metric-legend" class="metric-legend"></div>
       </div>
+      <div class="control-group">
+        <h2>Marker Size</h2>
+        <div class="segmented" id="size-mode-control">
+          <label><input type="radio" name="size-source" value="activity" checked><span>Activity</span></label>
+          <label><input type="radio" name="size-source" value="patients"><span>Patients</span></label>
+        </div>
+        <p id="size-description" class="hint"></p>
+      </div>
       <h2>Management</h2>
       <p id="manager-hint" class="hint"></p>
       <div id="manager-list" class="manager-list"></div>
@@ -1188,6 +1277,7 @@ L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
 const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
 const selectedManagementCompanies = new Set(['GTD Healthcare']);
 let activeMetric = 'google';
+let activeSizeMode = 'activity';
 let focusedPracticeCode = NEW_BANK_CODE;
 
 const metricConfigs = {{
@@ -1340,6 +1430,10 @@ function maxCountForMetric(metricName) {{
   return Math.max(0, ...rows.map((row) => metric.scaleCount(row)));
 }}
 
+function maxRegisteredPatientCount() {{
+  return Math.max(0, ...rows.map((row) => numericOrNull(row.registered_patient_count) || 0));
+}}
+
 function averageMetric(rowsForCompany, metricName) {{
   const metric = metricConfigs[metricName];
   const values = rowsForCompany
@@ -1358,7 +1452,7 @@ const managementCompanies = knownManagementCompanies.map((name) => {{
   }};
 }});
 
-function scaleForRow(row) {{
+function activityScaleForRow(row) {{
   const metric = metricConfigs[activeMetric];
   const maxCount = maxCountForMetric(activeMetric);
   const count = metric.scaleCount(row);
@@ -1366,6 +1460,19 @@ function scaleForRow(row) {{
   if (maxCount <= 0) return 0.7;
   const normalized = Math.log1p(count) / Math.log1p(maxCount);
   return 0.5 + (normalized ** 0.7) * 0.7;
+}}
+
+function patientScaleForRow(row) {{
+  const count = numericOrNull(row.registered_patient_count);
+  const maxCount = maxRegisteredPatientCount();
+  if (!Number.isFinite(count) || count <= 0) return 0.7;
+  if (maxCount <= 0) return 0.7;
+  const normalized = Math.log1p(count) / Math.log1p(maxCount);
+  return 0.5 + (normalized ** 0.7) * 0.7;
+}}
+
+function mapScaleForRow(row) {{
+  return activeSizeMode === 'patients' ? patientScaleForRow(row) : activityScaleForRow(row);
 }}
 
 function shapeAssignment() {{
@@ -1391,7 +1498,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   const textColor = missing ? '#f4f4f4' : '#ffffff';
   if (shape === 'triangle') {{
     return `
-      <svg class="marker-svg" width="42" height="36" viewBox="0 0 42 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 42 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="21,1 41,35 1,35" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
         <text x="21" y="24" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
@@ -1399,7 +1506,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   }}
   if (shape === 'square') {{
     return `
-      <svg class="marker-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect x="1" y="1" width="32" height="32" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
         <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
@@ -1407,7 +1514,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   }}
   if (shape === 'diamond') {{
     return `
-      <svg class="marker-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="17,1 33,17 17,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
         <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
@@ -1415,7 +1522,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   }}
   if (shape === 'hexagon') {{
     return `
-      <svg class="marker-svg" width="38" height="34" viewBox="0 0 38 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 38 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="10,1 28,1 37,17 28,33 10,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
         <text x="19" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
@@ -1423,14 +1530,14 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   }}
   if (shape === 'pentagon') {{
     return `
-      <svg class="marker-svg" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 38 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="19,1 37,14 31,35 7,35 1,14" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
         <text x="19" y="20" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
     `;
   }}
   return `
-    <svg class="marker-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle cx="17" cy="17" r="16" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
       <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
     </svg>
@@ -1453,6 +1560,21 @@ function renderMetricLegend() {{
     row.innerHTML = `<span class="swatch circle" style="background: ${{color}}"></span><span>${{label}}</span>`;
     legend.appendChild(row);
   }});
+}}
+
+function renderSizeDescription() {{
+  const el = document.getElementById('size-description');
+  if (activeSizeMode === 'patients') {{
+    el.textContent = 'Marker size follows registered patient count from the NHS monthly GP registered patients totals file.';
+    return;
+  }}
+  const metric = metricConfigs[activeMetric];
+  const activityLabel = activeMetric === 'google'
+    ? 'Google review count'
+    : activeMetric === 'survey'
+      ? 'GP survey returns'
+      : 'the smaller of Google review count and GP survey returns';
+  el.textContent = `Marker size follows ${{activityLabel}} for the current ${{metric.title.toLowerCase()}} view.`;
 }}
 
 function renderManagementList() {{
@@ -1529,7 +1651,7 @@ function renderMarkers() {{
     const color = metric.markerColor(row);
     const label = metric.markerLabel(row);
     const shapeName = assignments.get(row.management_company) || 'circle';
-    const scale = scaleForRow(row);
+    const scale = mapScaleForRow(row);
     const metrics = baseShapeMetrics(shapeName);
     const fontSize = Math.max(9, Math.min(13, Math.round(10 + scale * 2)));
     const baseZIndex = assignments.has(row.management_company) ? 1000 : 0;
@@ -1547,6 +1669,8 @@ function renderMarkers() {{
     const googleSource = row.google_source_note ? `<div>Google source: ${{row.google_source_note}}</div>` : '<div>Google source: repo review dataset</div>';
     const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
     const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
+    const registeredPatients = numericOrNull(row.registered_patient_count);
+    const registeredPatientsLine = `<div>Registered patients: ${{registeredPatients === null ? '?' : registeredPatients.toLocaleString('en-GB')}}</div>`;
     const survey = `<div>${{formatSurvey(row)}}</div>`;
     const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
     const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
@@ -1558,6 +1682,7 @@ function renderMarkers() {{
       <div>Code: ${{row.code}}</div>
       <div>Near: ${{row.nearby}}</div>
       ${{management}}
+      ${{registeredPatientsLine}}
       ${{google}}
       ${{googleSource}}
       ${{survey}}
@@ -1983,7 +2108,7 @@ function renderScatterplot() {{
   const assignments = shapeAssignment();
   const pointMarkup = points.map((point) => {{
     const companyShape = assignments.get(point.row.management_company);
-    const radius = Math.max(4, Math.min(9, scaleForRow(point.row) * 6));
+    const radius = Math.max(4, Math.min(9, activityScaleForRow(point.row) * 6));
     const stroke = companyShape ? '#1a1c1a' : 'rgba(26,28,26,0.25)';
     const label = activeMetric === 'google'
       ? point.x.toFixed(1)
@@ -2025,6 +2150,7 @@ function renderScatterplot() {{
 
 function rerenderAll() {{
   renderMetricLegend();
+  renderSizeDescription();
   renderManagementList();
   renderMarkers();
   renderScatterplot();
@@ -2034,6 +2160,13 @@ function rerenderAll() {{
 document.querySelectorAll('input[name="score-source"]').forEach((input) => {{
   input.addEventListener('change', (event) => {{
     activeMetric = event.target.value;
+    rerenderAll();
+  }});
+}});
+
+document.querySelectorAll('input[name="size-source"]').forEach((input) => {{
+  input.addEventListener('change', (event) => {{
+    activeSizeMode = event.target.value;
     rerenderAll();
   }});
 }});

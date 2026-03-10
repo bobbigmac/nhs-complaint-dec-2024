@@ -33,7 +33,8 @@
     "google_review_text_file": "google-review-texts/Y02849-city-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15321
   },
   {
     "practice_name": "New Bank Health",
@@ -69,7 +70,8 @@
     "google_review_text_file": "google-review-texts/Y02960-new-bank-health.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6419
   },
   {
     "practice_name": "Guide Bridge Medical Practice",
@@ -105,7 +107,8 @@
     "google_review_text_file": "google-review-texts/Y02713-guide-bridge-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4478
   },
   {
     "practice_name": "Simpson Medical Practice",
@@ -141,7 +144,8 @@
     "google_review_text_file": "google-review-texts/Y02520-simpson-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5375
   },
   {
     "practice_name": "Droylsden Medical Practice",
@@ -177,7 +181,8 @@
     "google_review_text_file": "google-review-texts/Y02663-droylsden-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4388
   },
   {
     "practice_name": "Charlestown MD",
@@ -213,7 +218,8 @@
     "google_review_text_file": "google-review-texts/Y02325-charlestown-md.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5268
   },
   {
     "practice_name": "Lindley House Health Centre",
@@ -249,7 +255,8 @@
     "google_review_text_file": "google-review-texts/Y02875-lindley-house-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4895
   },
   {
     "practice_name": "Mossley Medical Practice",
@@ -285,7 +292,8 @@
     "google_review_text_file": "google-review-texts/P89612-mossley-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2197
   },
   {
     "practice_name": "Gordon Street Medical Centre",
@@ -321,7 +329,8 @@
     "google_review_text_file": "google-review-texts/P89011-gordon-street-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5181
   },
   {
     "practice_name": "Ashton Gp Service",
@@ -357,7 +366,8 @@
     "google_review_text_file": "google-review-texts/Y02586-ashton-gp-service.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5171
   },
   {
     "practice_name": "Hattersley Group Practice",
@@ -393,7 +403,8 @@
     "google_review_text_file": "google-review-texts/P89013-hattersley-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5011
   },
   {
     "practice_name": "The Smithy Surgery",
@@ -429,7 +440,8 @@
     "google_review_text_file": "google-review-texts/P89602-the-smithy-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3747
   },
   {
     "practice_name": "Millbrook Medical Practice",
@@ -465,7 +477,8 @@
     "google_review_text_file": "google-review-texts/Y02936-millbrook-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3505
   },
   {
     "practice_name": "Dr Y Loomba & Partner",
@@ -501,7 +514,8 @@
     "google_review_text_file": "google-review-texts/P82013001-dr-y-loomba-and-partner.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Octagon Medical Centre",
@@ -537,7 +551,8 @@
     "google_review_text_file": "google-review-texts/P82012-octagon-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6254
   },
   {
     "practice_name": "Dr Rizwan and Dr Awan",
@@ -573,7 +588,8 @@
     "google_review_text_file": "google-review-texts/P82022-dr-rizwan-and-dr-awan.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5594
   },
   {
     "practice_name": "Halliwell Surgery 2",
@@ -609,7 +625,8 @@
     "google_review_text_file": "google-review-texts/P82029-halliwell-surgery-2.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3586
   },
   {
     "practice_name": "Halliwell Surgery 3",
@@ -645,7 +662,8 @@
     "google_review_text_file": "google-review-texts/P82626-halliwell-surgery-3.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5173
   },
   {
     "practice_name": "Wyresdale Road Surgery",
@@ -681,7 +699,8 @@
     "google_review_text_file": "google-review-texts/P82634-wyresdale-road-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3995
   },
   {
     "practice_name": "Dalefield Surgery",
@@ -717,7 +736,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7962
   },
   {
     "practice_name": "Bolton General Practice",
@@ -753,7 +773,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7694
   },
   {
     "practice_name": "Heaton Medical Centre",
@@ -789,7 +810,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10727
   },
   {
     "practice_name": "Spring House Surgery",
@@ -825,7 +847,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6457
   },
   {
     "practice_name": "Cornerstone Surgery",
@@ -861,7 +884,8 @@
     "google_review_text_file": "google-review-texts/P82627-cornerstone-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4230
   },
   {
     "practice_name": "Mandalay Medical Centre",
@@ -897,7 +921,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8580
   },
   {
     "practice_name": "Drs Karim & James-Authe",
@@ -933,7 +958,8 @@
     "google_review_text_file": "google-review-texts/P82634001-drs-karim-and-james-authe.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Bolton Community Practice",
@@ -969,7 +995,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16122
   },
   {
     "practice_name": "Burnside Surgery",
@@ -1005,7 +1032,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4423
   },
   {
     "practice_name": "Charlotte Street Surgery",
@@ -1041,7 +1069,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2356
   },
   {
     "practice_name": "Crompton View Surgery",
@@ -1077,7 +1106,8 @@
     "google_review_text_file": "google-review-texts/P82607-crompton-view-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6045
   },
   {
     "practice_name": "The Oaks Family Practice",
@@ -1113,7 +1143,8 @@
     "google_review_text_file": "google-review-texts/P82021-the-oaks-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6964
   },
   {
     "practice_name": "Bradford Street Surgery",
@@ -1149,7 +1180,8 @@
     "google_review_text_file": "google-review-texts/P82033-bradford-street-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 1996
   },
   {
     "practice_name": "Tonge Moor Health Centre",
@@ -1185,7 +1217,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Harwood Medical Centre",
@@ -1221,7 +1254,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12086
   },
   {
     "practice_name": "Tonge Fold Health Centre",
@@ -1257,7 +1291,8 @@
     "google_review_text_file": "google-review-texts/P82011-tonge-fold-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6969
   },
   {
     "practice_name": "The Alastair Ross Medical Practice",
@@ -1293,7 +1328,8 @@
     "google_review_text_file": "google-review-texts/P82018-the-alastair-ross-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7491
   },
   {
     "practice_name": "The Dunstan Partnership",
@@ -1329,7 +1365,8 @@
     "google_review_text_file": "google-review-texts/P82001-the-dunstan-partnership.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10157
   },
   {
     "practice_name": "Little Lever Health Centre & Library",
@@ -1365,7 +1402,8 @@
     "google_review_text_file": "google-review-texts/Y03079003-little-lever-health-centre-and-library.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Little Lever Health Centre 1",
@@ -1401,7 +1439,8 @@
     "google_review_text_file": "google-review-texts/P82020-little-lever-health-centre-1.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4820
   },
   {
     "practice_name": "Little Lever Health Centre 2",
@@ -1437,7 +1476,8 @@
     "google_review_text_file": "google-review-texts/P82036-little-lever-health-centre-2.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2852
   },
   {
     "practice_name": "Spring View Medical Centre",
@@ -1473,7 +1513,8 @@
     "google_review_text_file": "google-review-texts/P82613-spring-view-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5178
   },
   {
     "practice_name": "Southbrook Surgery",
@@ -1509,7 +1550,8 @@
     "google_review_text_file": "google-review-texts/P82009001-southbrook-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Beehive Surgery",
@@ -1545,7 +1587,8 @@
     "google_review_text_file": "google-review-texts/P82616-beehive-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3919
   },
   {
     "practice_name": "Shanti Medical Centre",
@@ -1581,7 +1624,8 @@
     "google_review_text_file": "google-review-texts/P82609-shanti-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6335
   },
   {
     "practice_name": "St Helens Road Practice",
@@ -1617,7 +1661,8 @@
     "google_review_text_file": "google-review-texts/P82009-st-helens-road-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7928
   },
   {
     "practice_name": "Deane Clinic 1",
@@ -1653,7 +1698,8 @@
     "google_review_text_file": "google-review-texts/P82660-deane-clinic-1.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3615
   },
   {
     "practice_name": "Bolton Community Practice CIC - Ladybridge Surgery",
@@ -1689,7 +1735,8 @@
     "google_review_text_file": "google-review-texts/Y03079001-bolton-community-practice-cic-ladybridge-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Deane Medical Centre",
@@ -1725,7 +1772,8 @@
     "google_review_text_file": "google-review-texts/P82030-deane-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4010
   },
   {
     "practice_name": "Deane Surgery",
@@ -1761,7 +1809,8 @@
     "google_review_text_file": "google-review-texts/P82030001-deane-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "3D Medical Centre",
@@ -1797,7 +1846,8 @@
     "google_review_text_file": "google-review-texts/Y00186-3d-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 1663
   },
   {
     "practice_name": "AL Fal Medical Group",
@@ -1833,7 +1883,8 @@
     "google_review_text_file": "google-review-texts/P82640-al-fal-medical-group.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5082
   },
   {
     "practice_name": "Dr S Naseef",
@@ -1869,7 +1920,8 @@
     "google_review_text_file": "google-review-texts/P82629-dr-s-naseef.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2036
   },
   {
     "practice_name": "Olive Family Practice",
@@ -1905,7 +1957,8 @@
     "google_review_text_file": "google-review-texts/Y03366-olive-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5653
   },
   {
     "practice_name": "Pikes Lane 1",
@@ -1941,7 +1994,8 @@
     "google_review_text_file": "google-review-texts/P82002-pikes-lane-1.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7222
   },
   {
     "practice_name": "Orient House Medical Centre",
@@ -1977,7 +2031,8 @@
     "google_review_text_file": "google-review-texts/P82624-orient-house-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3553
   },
   {
     "practice_name": "Bolton Medical Centre",
@@ -2013,7 +2068,8 @@
     "google_review_text_file": "google-review-texts/Y02790-bolton-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7652
   },
   {
     "practice_name": "Great Lever One",
@@ -2049,7 +2105,8 @@
     "google_review_text_file": "google-review-texts/P82633-great-lever-one.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2527
   },
   {
     "practice_name": "The Bolton Family Practice",
@@ -2085,7 +2142,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3964
   },
   {
     "practice_name": "Swan Lane Medical Centre",
@@ -2121,7 +2179,8 @@
     "google_review_text_file": "google-review-texts/P82004-swan-lane-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9727
   },
   {
     "practice_name": "Highfield Surgery",
@@ -2157,7 +2216,8 @@
     "google_review_text_file": "google-review-texts/P82008001-highfield-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Kearsley Medical Centre",
@@ -2193,7 +2253,8 @@
     "google_review_text_file": "google-review-texts/P82007-kearsley-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13287
   },
   {
     "practice_name": "Farnworth Family Practice",
@@ -2229,7 +2290,8 @@
     "google_review_text_file": "google-review-texts/P82652-farnworth-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4365
   },
   {
     "practice_name": "Fig Tree Medical Practice",
@@ -2265,7 +2327,8 @@
     "google_review_text_file": "google-review-texts/P82037-fig-tree-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4863
   },
   {
     "practice_name": "STONEHILL MEDICAL CENTRE",
@@ -2301,7 +2364,8 @@
     "google_review_text_file": "google-review-texts/P82008-stonehill-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14880
   },
   {
     "practice_name": "Bolton Community Practice CIC - The Market Surgery",
@@ -2337,7 +2401,8 @@
     "google_review_text_file": "google-review-texts/Y03079002-bolton-community-practice-cic-the-market-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Woodbank Surgery",
@@ -2373,7 +2438,8 @@
     "google_review_text_file": "google-review-texts/P83017-woodbank-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7012
   },
   {
     "practice_name": "Mile Lane Health Centre",
@@ -2409,7 +2475,8 @@
     "google_review_text_file": "google-review-texts/P83612-mile-lane-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5421
   },
   {
     "practice_name": "Tower Family Healthcare",
@@ -2445,7 +2512,8 @@
     "google_review_text_file": "google-review-texts/P83012-tower-family-healthcare.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 48295
   },
   {
     "practice_name": "Tower Family Healthcare - Greenmount",
@@ -2481,7 +2549,8 @@
     "google_review_text_file": "google-review-texts/P83012002-tower-family-healthcare-greenmount.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Rock Healthcare Limited",
@@ -2517,7 +2586,8 @@
     "google_review_text_file": "google-review-texts/Y02755-rock-healthcare-limited.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9553
   },
   {
     "practice_name": "Tower Family Healthcare Minden",
@@ -2553,7 +2623,8 @@
     "google_review_text_file": "google-review-texts/W4J3Q-tower-family-healthcare-minden.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Peel GPs",
@@ -2589,7 +2660,8 @@
     "google_review_text_file": "google-review-texts/P83021-peel-gps.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9873
   },
   {
     "practice_name": "Ribblesdale Medical Practice",
@@ -2625,7 +2697,8 @@
     "google_review_text_file": "google-review-texts/P83015-ribblesdale-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7442
   },
   {
     "practice_name": "Townside Surgery",
@@ -2661,7 +2734,8 @@
     "google_review_text_file": "google-review-texts/P83005-townside-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4568
   },
   {
     "practice_name": "Knowsley Medical Centre",
@@ -2697,7 +2771,8 @@
     "google_review_text_file": "google-review-texts/P83024-knowsley-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4579
   },
   {
     "practice_name": "Walmersley Road Medical Practice",
@@ -2733,7 +2808,8 @@
     "google_review_text_file": "google-review-texts/P83611-walmersley-road-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4719
   },
   {
     "practice_name": "Huntley Mount Medical Centre",
@@ -2769,7 +2845,8 @@
     "google_review_text_file": "google-review-texts/P83621-huntley-mount-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2878
   },
   {
     "practice_name": "Unsworth Medical Centre",
@@ -2805,7 +2882,8 @@
     "google_review_text_file": "google-review-texts/P83011-unsworth-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7397
   },
   {
     "practice_name": "Blackford House Medical Centre",
@@ -2841,7 +2919,8 @@
     "google_review_text_file": "google-review-texts/P83009-blackford-house-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7591
   },
   {
     "practice_name": "THE Doc's Surgery",
@@ -2877,7 +2956,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14745
   },
   {
     "practice_name": "Lime Square Medical Centre",
@@ -2913,7 +2993,8 @@
     "google_review_text_file": "google-review-texts/P84059-lime-square-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9094
   },
   {
     "practice_name": "Florence House Medical Practice",
@@ -2949,7 +3030,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11033
   },
   {
     "practice_name": "Cornerstone Family Practice",
@@ -2985,7 +3067,8 @@
     "google_review_text_file": "google-review-texts/P84041-cornerstone-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7642
   },
   {
     "practice_name": "Five Oaks Family Practice",
@@ -3021,7 +3104,8 @@
     "google_review_text_file": "google-review-texts/P84004-five-oaks-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8636
   },
   {
     "practice_name": "Dr Khan's Practice",
@@ -3057,7 +3141,8 @@
     "google_review_text_file": "google-review-texts/P84637-dr-khans-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2945
   },
   {
     "practice_name": "Drs Hanif & Bannuru",
@@ -3093,7 +3178,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5920
   },
   {
     "practice_name": "Eastlands Medical Centre",
@@ -3129,7 +3215,8 @@
     "google_review_text_file": "google-review-texts/P84051-eastlands-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5662
   },
   {
     "practice_name": "West Gorton Medical Practice",
@@ -3165,7 +3252,8 @@
     "google_review_text_file": "google-review-texts/P84052-west-gorton-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7681
   },
   {
     "practice_name": "Parkside Surgery",
@@ -3201,7 +3289,8 @@
     "google_review_text_file": "google-review-texts/P84644-parkside-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7230
   },
   {
     "practice_name": "Manchester Integrative Medical Practice",
@@ -3237,7 +3326,8 @@
     "google_review_text_file": "google-review-texts/P84689-manchester-integrative-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14205
   },
   {
     "practice_name": "Dickenson Road Medical Centre",
@@ -3273,7 +3363,8 @@
     "google_review_text_file": "google-review-texts/P84026-dickenson-road-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9751
   },
   {
     "practice_name": "Ailsa Craig Medical Centre",
@@ -3309,7 +3400,8 @@
     "google_review_text_file": "google-review-texts/P84009-ailsa-craig-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11005
   },
   {
     "practice_name": "Ardwick Medical Practice",
@@ -3345,7 +3437,8 @@
     "google_review_text_file": "google-review-texts/P84037-ardwick-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5871
   },
   {
     "practice_name": "Brunswick Medical Practice",
@@ -3381,7 +3474,8 @@
     "google_review_text_file": "google-review-texts/P84611-brunswick-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7589
   },
   {
     "practice_name": "Vallance Medical",
@@ -3417,7 +3511,8 @@
     "google_review_text_file": "google-review-texts/P84005-vallance-medical.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15999
   },
   {
     "practice_name": "Manchester Integrative Medical Practice at Moss Side Health Centre",
@@ -3453,7 +3548,8 @@
     "google_review_text_file": "google-review-texts/V6E6I-manchester-integrative-medical-practice-at-moss-side-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Surrey Lodge Practice",
@@ -3489,7 +3585,8 @@
     "google_review_text_file": "google-review-texts/P84023-surrey-lodge-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9711
   },
   {
     "practice_name": "Wilmslow Road Surgery",
@@ -3525,7 +3622,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5641
   },
   {
     "practice_name": "The Robert Darbishire Practice",
@@ -3561,7 +3659,8 @@
     "google_review_text_file": "google-review-texts/P84072-the-robert-darbishire-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 34920
   },
   {
     "practice_name": "Hawthorn MC",
@@ -3597,7 +3696,8 @@
     "google_review_text_file": "google-review-texts/Y02890-hawthorn-mc.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6507
   },
   {
     "practice_name": "Mauldeth Medical Centre",
@@ -3633,7 +3733,8 @@
     "google_review_text_file": "google-review-texts/P84018-mauldeth-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3792
   },
   {
     "practice_name": "Bodey Medical Centre",
@@ -3669,7 +3770,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16410
   },
   {
     "practice_name": "Fallowfield Medical Centre",
@@ -3705,7 +3807,8 @@
     "google_review_text_file": "google-review-texts/P84639-fallowfield-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3046
   },
   {
     "practice_name": "Cornbrook Medical Practice",
@@ -3741,7 +3844,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 18195
   },
   {
     "practice_name": "The Arch Medical Practice",
@@ -3777,7 +3881,8 @@
     "google_review_text_file": "google-review-texts/P84630-the-arch-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 24647
   },
   {
     "practice_name": "Cornbrook Medical Practice - Boundary Surgery",
@@ -3813,7 +3918,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "North Trafford Group Practice",
@@ -3849,7 +3955,8 @@
     "google_review_text_file": "google-review-texts/P91629001-north-trafford-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Whitswood Practice",
@@ -3885,7 +3992,8 @@
     "google_review_text_file": "google-review-texts/P84635-the-whitswood-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5219
   },
   {
     "practice_name": "The Range Medical Centre",
@@ -3921,7 +4029,8 @@
     "google_review_text_file": "google-review-texts/P84039-the-range-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14480
   },
   {
     "practice_name": "The Alexandra Practice",
@@ -3957,7 +4066,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6106
   },
   {
     "practice_name": "Limelight Health and Wellbeing Hub",
@@ -3993,7 +4103,8 @@
     "google_review_text_file": "google-review-texts/P91020-limelight-health-and-wellbeing-hub.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9233
   },
   {
     "practice_name": "Ashville Surgery",
@@ -4029,7 +4140,8 @@
     "google_review_text_file": "google-review-texts/P84038-ashville-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13665
   },
   {
     "practice_name": "Mount Road Surgery",
@@ -4065,7 +4177,8 @@
     "google_review_text_file": "google-review-texts/P84050-mount-road-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7935
   },
   {
     "practice_name": "Gorton Medical Centre",
@@ -4101,7 +4214,8 @@
     "google_review_text_file": "google-review-texts/P84028-gorton-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10727
   },
   {
     "practice_name": "Kingsway Medical Practice",
@@ -4137,7 +4251,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6162
   },
   {
     "practice_name": "West Point Medical Centre",
@@ -4173,7 +4288,8 @@
     "google_review_text_file": "google-review-texts/P84027-west-point-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8270
   },
   {
     "practice_name": "Ashcroft Surgery",
@@ -4209,7 +4325,8 @@
     "google_review_text_file": "google-review-texts/P84053-ashcroft-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7814
   },
   {
     "practice_name": "Levenshulme Medical Practice",
@@ -4245,7 +4362,8 @@
     "google_review_text_file": "google-review-texts/P84016-levenshulme-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9179
   },
   {
     "practice_name": "Princess Road Surgery",
@@ -4281,7 +4399,8 @@
     "google_review_text_file": "google-review-texts/P84056-princess-road-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4317
   },
   {
     "practice_name": "The Borchardt Medical Centre",
@@ -4317,7 +4436,8 @@
     "google_review_text_file": "google-review-texts/P84010-the-borchardt-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10270
   },
   {
     "practice_name": "Barlow Medical Centre",
@@ -4353,7 +4473,8 @@
     "google_review_text_file": "google-review-texts/P84034-barlow-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16220
   },
   {
     "practice_name": "Withington Medical Practice",
@@ -4389,7 +4510,8 @@
     "google_review_text_file": "google-review-texts/P84665-withington-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5228
   },
   {
     "practice_name": "LADYBARN GROUP PRACTICE",
@@ -4425,7 +4547,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12641
   },
   {
     "practice_name": "Didsbury Medical Centre - Dr Whitaker",
@@ -4461,7 +4584,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15796
   },
   {
     "practice_name": "Wilbraham Surgery",
@@ -4497,7 +4621,8 @@
     "google_review_text_file": "google-review-texts/P84071-wilbraham-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4557
   },
   {
     "practice_name": "Merseybank Surgery",
@@ -4533,7 +4658,8 @@
     "google_review_text_file": "google-review-texts/P84066001-merseybank-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "David Medical Centre",
@@ -4569,7 +4695,8 @@
     "google_review_text_file": "google-review-texts/P84066-david-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7569
   },
   {
     "practice_name": "Corkland Road Medical Practice",
@@ -4605,7 +4732,8 @@
     "google_review_text_file": "google-review-texts/G3K4Y-corkland-road-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Chorlton Family Practice",
@@ -4641,7 +4769,8 @@
     "google_review_text_file": "google-review-texts/P84068-chorlton-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 22115
   },
   {
     "practice_name": "Tregenna Group Practice",
@@ -4677,7 +4806,8 @@
     "google_review_text_file": "google-review-texts/P84048-tregenna-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6913
   },
   {
     "practice_name": "Northenden Group Practice",
@@ -4713,7 +4843,8 @@
     "google_review_text_file": "google-review-texts/P84012-northenden-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8512
   },
   {
     "practice_name": "Cornishway Group Practice",
@@ -4749,7 +4880,8 @@
     "google_review_text_file": "google-review-texts/P84043-cornishway-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9725
   },
   {
     "practice_name": "Peel Hall Medical Centre",
@@ -4785,7 +4917,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9841
   },
   {
     "practice_name": "Benchill Medical Practice",
@@ -4821,7 +4954,8 @@
     "google_review_text_file": "google-review-texts/P84029-benchill-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10549
   },
   {
     "practice_name": "RK Medical Practice",
@@ -4857,7 +4991,8 @@
     "google_review_text_file": "google-review-texts/P84014-rk-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5330
   },
   {
     "practice_name": "Northern Moor Medical Practice",
@@ -4893,7 +5028,8 @@
     "google_review_text_file": "google-review-texts/P84651-northern-moor-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6062
   },
   {
     "practice_name": "Bowland Medical Practice",
@@ -4929,7 +5065,8 @@
     "google_review_text_file": "google-review-texts/P84024-bowland-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8064
   },
   {
     "practice_name": "THE MAPLES MEDICAL CENTRE",
@@ -4965,7 +5102,8 @@
     "google_review_text_file": "google-review-texts/P84021-the-maples-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9182
   },
   {
     "practice_name": "The Park Medical Centre",
@@ -5001,7 +5139,8 @@
     "google_review_text_file": "google-review-texts/P84045-the-park-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5602
   },
   {
     "practice_name": "Brooklands Medical Practice",
@@ -5037,7 +5176,8 @@
     "google_review_text_file": "google-review-texts/P84061-brooklands-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6109
   },
   {
     "practice_name": "Woodlands Medical Practice",
@@ -5073,7 +5213,8 @@
     "google_review_text_file": "google-review-texts/P84672-woodlands-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3755
   },
   {
     "practice_name": "Alkrington Junction Practice",
@@ -5109,7 +5250,8 @@
     "google_review_text_file": "google-review-texts/P86010001-alkrington-junction-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Junction Surgery",
@@ -5145,7 +5287,8 @@
     "google_review_text_file": "google-review-texts/P86010-the-junction-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8465
   },
   {
     "practice_name": "ROCHDALE ROAD MEDICAL CENTRE",
@@ -5181,7 +5324,8 @@
     "google_review_text_file": "google-review-texts/P86015-rochdale-road-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6083
   },
   {
     "practice_name": "The Hive Health Centre",
@@ -5217,7 +5361,8 @@
     "google_review_text_file": "google-review-texts/Y00726-the-hive-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5660
   },
   {
     "practice_name": "Peterloo Medical Centre",
@@ -5253,7 +5398,8 @@
     "google_review_text_file": "google-review-texts/P86004-peterloo-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9058
   },
   {
     "practice_name": "Middleton Health Centre",
@@ -5289,7 +5435,8 @@
     "google_review_text_file": "google-review-texts/Y02795-middleton-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5340
   },
   {
     "practice_name": "Family Practice",
@@ -5325,7 +5472,8 @@
     "google_review_text_file": "google-review-texts/P86606-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4341
   },
   {
     "practice_name": "Woodside Medical Centre",
@@ -5361,7 +5509,8 @@
     "google_review_text_file": "google-review-texts/P86012-woodside-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8986
   },
   {
     "practice_name": "Windermere Surgery",
@@ -5397,7 +5546,8 @@
     "google_review_text_file": "google-review-texts/P86620-windermere-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2946
   },
   {
     "practice_name": "Durnford Medical Centre",
@@ -5433,7 +5583,8 @@
     "google_review_text_file": "google-review-texts/P86019-durnford-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9872
   },
   {
     "practice_name": "St Gabriel's Medical Centre",
@@ -5469,7 +5620,8 @@
     "google_review_text_file": "google-review-texts/P83025-st-gabriels-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8779
   },
   {
     "practice_name": "Fairfax Group Practice",
@@ -5505,7 +5657,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14279
   },
   {
     "practice_name": "Longfield Medical Practice",
@@ -5541,7 +5694,8 @@
     "google_review_text_file": "google-review-texts/P83623-longfield-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4791
   },
   {
     "practice_name": "Whittaker Lane Med Centre",
@@ -5577,7 +5731,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7500
   },
   {
     "practice_name": "Greyland Medical Centre",
@@ -5613,7 +5768,8 @@
     "google_review_text_file": "google-review-texts/P83027-greyland-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 1821
   },
   {
     "practice_name": "The Birches Medical Centre",
@@ -5649,7 +5805,8 @@
     "google_review_text_file": "google-review-texts/P83609-the-birches-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3913
   },
   {
     "practice_name": "Monarch Medical Centre",
@@ -5685,7 +5842,8 @@
     "google_review_text_file": "google-review-texts/P83010-monarch-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3624
   },
   {
     "practice_name": "RADCLIFFE MEDICAL PRACTICE",
@@ -5721,7 +5879,8 @@
     "google_review_text_file": "google-review-texts/P83007-radcliffe-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11264
   },
   {
     "practice_name": "Red Bank Group Practice",
@@ -5757,7 +5916,8 @@
     "google_review_text_file": "google-review-texts/P83603-red-bank-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9126
   },
   {
     "practice_name": "Rock@Radcliffe",
@@ -5793,7 +5953,8 @@
     "google_review_text_file": "google-review-texts/Y02755001-rock-radcliffe.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Tower Family Healthcare - Spring Lane",
@@ -5829,7 +5990,8 @@
     "google_review_text_file": "google-review-texts/P83012001-tower-family-healthcare-spring-lane.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Sides Medical Practice",
@@ -5865,7 +6027,8 @@
     "google_review_text_file": "google-review-texts/P87016-the-sides-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14005
   },
   {
     "practice_name": "The Poplars Medical Practice",
@@ -5901,7 +6064,8 @@
     "google_review_text_file": "google-review-texts/P87002-the-poplars-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11497
   },
   {
     "practice_name": "The Lakes Medical Practice",
@@ -5937,7 +6101,8 @@
     "google_review_text_file": "google-review-texts/P87025-the-lakes-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10104
   },
   {
     "practice_name": "Silverdale Medical Practice",
@@ -5973,7 +6138,8 @@
     "google_review_text_file": "google-review-texts/P87019-silverdale-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12652
   },
   {
     "practice_name": "Salford Primary Care Together - Little Hulton",
@@ -6009,7 +6175,8 @@
     "google_review_text_file": "google-review-texts/Y00445002-salford-primary-care-together-little-hulton.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Cherry Medical Practice",
@@ -6045,7 +6212,8 @@
     "google_review_text_file": "google-review-texts/P87630-cherry-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3329
   },
   {
     "practice_name": "Dearden Avenue Medical Practice",
@@ -6081,7 +6249,8 @@
     "google_review_text_file": "google-review-texts/P87625-dearden-avenue-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2737
   },
   {
     "practice_name": "Manchester Road East Medical Practice",
@@ -6117,7 +6286,8 @@
     "google_review_text_file": "google-review-texts/P87661-manchester-road-east-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2354
   },
   {
     "practice_name": "Salford Primary Care Together",
@@ -6153,7 +6323,8 @@
     "google_review_text_file": "google-review-texts/Y00445-salford-primary-care-together.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 19137
   },
   {
     "practice_name": "Orchard Medical Practice",
@@ -6189,7 +6360,8 @@
     "google_review_text_file": "google-review-texts/P87627-orchard-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3461
   },
   {
     "practice_name": "Ellenbrook Medical Centre",
@@ -6225,7 +6397,8 @@
     "google_review_text_file": "google-review-texts/P87624-ellenbrook-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5108
   },
   {
     "practice_name": "The Limes Medical Practice",
@@ -6261,7 +6434,8 @@
     "google_review_text_file": "google-review-texts/P87017-the-limes-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4862
   },
   {
     "practice_name": "Walkden Medical Centre",
@@ -6297,7 +6471,8 @@
     "google_review_text_file": "google-review-texts/P87008-walkden-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8864
   },
   {
     "practice_name": "The Gill Medical Practice",
@@ -6333,7 +6508,8 @@
     "google_review_text_file": "google-review-texts/P87028-the-gill-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9953
   },
   {
     "practice_name": "Oakbank Medical Centre",
@@ -6369,7 +6545,8 @@
     "google_review_text_file": "google-review-texts/P87028001-oakbank-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Sivakumar & Partner",
@@ -6405,7 +6582,8 @@
     "google_review_text_file": "google-review-texts/P92020-sivakumar-and-partner.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5012
   },
   {
     "practice_name": "Astley General Practice",
@@ -6441,7 +6619,8 @@
     "google_review_text_file": "google-review-texts/P92637-astley-general-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4221
   },
   {
     "practice_name": "Dr Vardhan's Surgery",
@@ -6477,7 +6656,8 @@
     "google_review_text_file": "google-review-texts/P92646-dr-vardhans-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3585
   },
   {
     "practice_name": "The Surgery, Tyldesley",
@@ -6513,7 +6693,8 @@
     "google_review_text_file": "google-review-texts/P92033-the-surgery-tyldesley.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4790
   },
   {
     "practice_name": "Poplar Street Surgery",
@@ -6549,7 +6730,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5673
   },
   {
     "practice_name": "Elliott Street Surgery",
@@ -6585,7 +6767,8 @@
     "google_review_text_file": "google-review-texts/P92028-elliott-street-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4769
   },
   {
     "practice_name": "Boothstown Medical Centre",
@@ -6621,7 +6804,8 @@
     "google_review_text_file": "google-review-texts/P92605-boothstown-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8011
   },
   {
     "practice_name": "Blackfriars",
@@ -6657,7 +6841,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16198
   },
   {
     "practice_name": "Trinity Medical Centre",
@@ -6693,7 +6878,8 @@
     "google_review_text_file": "google-review-texts/P87634001-trinity-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "St Andrews Medical Centre",
@@ -6729,7 +6915,8 @@
     "google_review_text_file": "google-review-texts/P87020-st-andrews-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15740
   },
   {
     "practice_name": "Salford Primary Care Together - Eccles Gateway",
@@ -6765,7 +6952,8 @@
     "google_review_text_file": "google-review-texts/Y00445001-salford-primary-care-together-eccles-gateway.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "1/Monton Medical Practice",
@@ -6801,7 +6989,8 @@
     "google_review_text_file": "google-review-texts/P87620-1-monton-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9477
   },
   {
     "practice_name": "3/Springfield House Medical Practice",
@@ -6837,7 +7026,8 @@
     "google_review_text_file": "google-review-texts/P87024-3-springfield-house-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11590
   },
   {
     "practice_name": "PARTINGTON FAMILY PRACTICE",
@@ -6873,7 +7063,8 @@
     "google_review_text_file": "google-review-texts/P91026-partington-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6690
   },
   {
     "practice_name": "Partington Central Surgery",
@@ -6909,7 +7100,8 @@
     "google_review_text_file": "google-review-texts/P91019-partington-central-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3858
   },
   {
     "practice_name": "Delamere Medical Practice",
@@ -6945,7 +7137,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14717
   },
   {
     "practice_name": "North Trafford Group Practice",
@@ -6981,7 +7174,8 @@
     "google_review_text_file": "google-review-texts/P91629-north-trafford-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15141
   },
   {
     "practice_name": "Lostock Medical Centre",
@@ -7017,7 +7211,8 @@
     "google_review_text_file": "google-review-texts/P91627-lostock-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8723
   },
   {
     "practice_name": "Boundary House Medical Centre",
@@ -7053,7 +7248,8 @@
     "google_review_text_file": "google-review-texts/P91013-boundary-house-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11251
   },
   {
     "practice_name": "Conway Road Medical Practice",
@@ -7089,7 +7285,8 @@
     "google_review_text_file": "google-review-texts/P91035-conway-road-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13767
   },
   {
     "practice_name": "Firsway Health Centre",
@@ -7125,7 +7322,8 @@
     "google_review_text_file": "google-review-texts/P91021-firsway-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15217
   },
   {
     "practice_name": "BODMIN ROAD HEALTH CENTRE",
@@ -7161,7 +7359,8 @@
     "google_review_text_file": "google-review-texts/P91017-bodmin-road-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8838
   },
   {
     "practice_name": "WASHWAY ROAD MEDICAL CENTRE",
@@ -7197,7 +7396,8 @@
     "google_review_text_file": "google-review-texts/P91014-washway-road-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16197
   },
   {
     "practice_name": "Millgate Healthcare Partnership",
@@ -7233,7 +7433,8 @@
     "google_review_text_file": "google-review-texts/P89015-millgate-healthcare-partnership.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 20983
   },
   {
     "practice_name": "Denton Medical Practice",
@@ -7269,7 +7470,8 @@
     "google_review_text_file": "google-review-texts/P89018-denton-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8574
   },
   {
     "practice_name": "Millgate Healthcare Partnership",
@@ -7305,7 +7507,8 @@
     "google_review_text_file": "google-review-texts/P89015002-millgate-healthcare-partnership.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Haughton Vale Surgery",
@@ -7341,7 +7544,8 @@
     "google_review_text_file": "google-review-texts/P89014002-haughton-vale-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Medlock Medical Practice",
@@ -7377,7 +7581,8 @@
     "google_review_text_file": "google-review-texts/P85610-medlock-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7668
   },
   {
     "practice_name": "Quayside Medical Practice",
@@ -7413,7 +7618,8 @@
     "google_review_text_file": "google-review-texts/P85026-quayside-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15868
   },
   {
     "practice_name": "Cleggs Lane Medical Practice/129",
@@ -7449,7 +7655,8 @@
     "google_review_text_file": "google-review-texts/P87613-cleggs-lane-medical-practice-129.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5097
   },
   {
     "practice_name": "Ancoats Urban Village Medical Practice",
@@ -7485,7 +7692,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14006
   },
   {
     "practice_name": "New Islington Medical Centre",
@@ -7521,7 +7729,8 @@
     "google_review_text_file": "google-review-texts/P84064-new-islington-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12969
   },
   {
     "practice_name": "All Saints Medical Centre",
@@ -7557,7 +7766,8 @@
     "google_review_text_file": "google-review-texts/P84047-all-saints-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5890
   },
   {
     "practice_name": "Droylsden Road Surgery Branch",
@@ -7593,7 +7803,8 @@
     "google_review_text_file": "google-review-texts/P84047001-droylsden-road-surgery-branch.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Newton Heath Medical Centre",
@@ -7629,7 +7840,8 @@
     "google_review_text_file": "google-review-texts/P84070-newton-heath-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8536
   },
   {
     "practice_name": "Hazeldene Medical Centre",
@@ -7665,7 +7877,8 @@
     "google_review_text_file": "google-review-texts/P84067-hazeldene-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8946
   },
   {
     "practice_name": "St George's Medical Centre",
@@ -7701,7 +7914,8 @@
     "google_review_text_file": "google-review-texts/P84025-st-georges-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7569
   },
   {
     "practice_name": "Rochdale Road Surgey",
@@ -7737,7 +7951,8 @@
     "google_review_text_file": "google-review-texts/P84046001-rochdale-road-surgey.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "MP Victoria Mill",
@@ -7773,7 +7988,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4119
   },
   {
     "practice_name": "Whitley Road Medical Centre",
@@ -7809,7 +8025,8 @@
     "google_review_text_file": "google-review-texts/P84054-whitley-road-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6321
   },
   {
     "practice_name": "Flixton Road Medical Centre",
@@ -7845,7 +8062,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11842
   },
   {
     "practice_name": "Primrose Surgery",
@@ -7881,7 +8099,8 @@
     "google_review_text_file": "google-review-texts/P91012-primrose-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7577
   },
   {
     "practice_name": "Davyhulme Medical Centre",
@@ -7917,7 +8136,8 @@
     "google_review_text_file": "google-review-texts/P91009-davyhulme-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10782
   },
   {
     "practice_name": "Urmston Group Practice",
@@ -7953,7 +8173,8 @@
     "google_review_text_file": "google-review-texts/P91006-urmston-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13234
   },
   {
     "practice_name": "Market Street Medical Practice",
@@ -7989,7 +8210,8 @@
     "google_review_text_file": "google-review-texts/P89029-market-street-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7843
   },
   {
     "practice_name": "Medlock Vale Medical Practice",
@@ -8025,7 +8247,8 @@
     "google_review_text_file": "google-review-texts/P89010-medlock-vale-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7573
   },
   {
     "practice_name": "Longfield Lodge",
@@ -8061,7 +8284,8 @@
     "google_review_text_file": "google-review-texts/P87610001-longfield-lodge.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Mosslands Medical Practice",
@@ -8097,7 +8321,8 @@
     "google_review_text_file": "google-review-texts/P87610-the-mosslands-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12573
   },
   {
     "practice_name": "(Irlam) Salford Care Ctrs Medical Practi",
@@ -8133,7 +8358,8 @@
     "google_review_text_file": "google-review-texts/P87657-irlam-salford-care-ctrs-medical-practi.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4385
   },
   {
     "practice_name": "Chapel Group Medical Centre",
@@ -8169,7 +8395,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6154
   },
   {
     "practice_name": "The Elms Medical Centre",
@@ -8205,7 +8432,8 @@
     "google_review_text_file": "google-review-texts/P83608-the-elms-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6368
   },
   {
     "practice_name": "The Uplands Medical Practice",
@@ -8241,7 +8469,8 @@
     "google_review_text_file": "google-review-texts/P83004-the-uplands-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7876
   },
   {
     "practice_name": "Dr KK Chan & Partners",
@@ -8277,7 +8506,8 @@
     "google_review_text_file": "google-review-texts/P92042-dr-kk-chan-and-partners.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9008
   },
   {
     "practice_name": "Ordsall Health Surgery",
@@ -8313,7 +8543,8 @@
     "google_review_text_file": "google-review-texts/P87035-ordsall-health-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11540
   },
   {
     "practice_name": "The Quays Practice",
@@ -8349,7 +8580,8 @@
     "google_review_text_file": "google-review-texts/D5B9D-the-quays-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "University Health Centre",
@@ -8385,7 +8617,8 @@
     "google_review_text_file": "google-review-texts/P87027001-university-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Willows Medical Practice",
@@ -8421,7 +8654,8 @@
     "google_review_text_file": "google-review-texts/P87658-the-willows-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3677
   },
   {
     "practice_name": "Care Homes Medical Practice",
@@ -8457,7 +8691,8 @@
     "google_review_text_file": "google-review-texts/Y02625-care-homes-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 1157
   },
   {
     "practice_name": "Clarendon Surgery",
@@ -8493,7 +8728,8 @@
     "google_review_text_file": "google-review-texts/P87634-clarendon-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11429
   },
   {
     "practice_name": "Pendleton Medical Centre",
@@ -8529,7 +8765,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8754
   },
   {
     "practice_name": "SPCT - Inclusion Service",
@@ -8565,7 +8802,8 @@
     "google_review_text_file": "google-review-texts/Y00445003-spct-inclusion-service.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "1/Salford Medical Practice",
@@ -8601,7 +8839,8 @@
     "google_review_text_file": "google-review-texts/P87004-1-salford-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 15381
   },
   {
     "practice_name": "Cornerstone Medical Practice",
@@ -8637,7 +8876,8 @@
     "google_review_text_file": "google-review-texts/P87639-cornerstone-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4122
   },
   {
     "practice_name": "Langworthy Medical Practice",
@@ -8673,7 +8913,8 @@
     "google_review_text_file": "google-review-texts/P87027-langworthy-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 19036
   },
   {
     "practice_name": "The Energise Healthy Living Centre",
@@ -8709,7 +8950,8 @@
     "google_review_text_file": "google-review-texts/P87654001-the-energise-healthy-living-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Sorrel Bank Medical Practice",
@@ -8745,7 +8987,8 @@
     "google_review_text_file": "google-review-texts/P87040-sorrel-bank-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8428
   },
   {
     "practice_name": "The Height General Practice",
@@ -8781,7 +9024,8 @@
     "google_review_text_file": "google-review-texts/Y02767-the-height-general-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6738
   },
   {
     "practice_name": "Victoria Road Surgery",
@@ -8817,7 +9061,8 @@
     "google_review_text_file": "google-review-texts/P87040001-victoria-road-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Orient Road Medical Practice",
@@ -8853,7 +9098,8 @@
     "google_review_text_file": "google-review-texts/P87032-orient-road-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6441
   },
   {
     "practice_name": "Dr A Chaudhry & Dr I Jeet",
@@ -8889,7 +9135,8 @@
     "google_review_text_file": "google-review-texts/P87654-dr-a-chaudhry-and-dr-i-jeet.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11378
   },
   {
     "practice_name": "Mocha Parade Medical Practice",
@@ -8925,7 +9172,8 @@
     "google_review_text_file": "google-review-texts/P87022-mocha-parade-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2188
   },
   {
     "practice_name": "Willow Tree Health Centre",
@@ -8961,7 +9209,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Newbury Green Medical Practice",
@@ -8997,7 +9246,8 @@
     "google_review_text_file": "google-review-texts/P87026-newbury-green-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 17619
   },
   {
     "practice_name": "Reut Medical Practice",
@@ -9033,7 +9283,8 @@
     "google_review_text_file": "google-review-texts/P87648-reut-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8482
   },
   {
     "practice_name": "New Collegiate Medical Centre",
@@ -9069,7 +9320,8 @@
     "google_review_text_file": "google-review-texts/P84030-new-collegiate-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13444
   },
   {
     "practice_name": "Park View Medical Centre",
@@ -9105,7 +9357,8 @@
     "google_review_text_file": "google-review-texts/P84645-park-view-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6290
   },
   {
     "practice_name": "Crumpsall Medical Practice",
@@ -9141,7 +9394,8 @@
     "google_review_text_file": "google-review-texts/P84684-crumpsall-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6508
   },
   {
     "practice_name": "Cheetham Hill Medical Centre",
@@ -9177,7 +9431,8 @@
     "google_review_text_file": "google-review-texts/P84046-cheetham-hill-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 20667
   },
   {
     "practice_name": "Wellfield Medical Centre",
@@ -9213,7 +9468,8 @@
     "google_review_text_file": "google-review-texts/P84074-wellfield-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11123
   },
   {
     "practice_name": "Beacon Medical Centre",
@@ -9249,7 +9505,8 @@
     "google_review_text_file": "google-review-texts/P84033-beacon-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4493
   },
   {
     "practice_name": "Church View Medical Centre",
@@ -9285,7 +9542,8 @@
     "google_review_text_file": "google-review-texts/P84065-church-view-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4347
   },
   {
     "practice_name": "Willowbank Surgery",
@@ -9321,7 +9579,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2266
   },
   {
     "practice_name": "Conran Medical Centre",
@@ -9357,7 +9616,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7645
   },
   {
     "practice_name": "Fernclough Surgery",
@@ -9393,7 +9653,8 @@
     "google_review_text_file": "google-review-texts/P84605-fernclough-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 1991
   },
   {
     "practice_name": "The Avenue Medical Centre",
@@ -9429,7 +9690,8 @@
     "google_review_text_file": "google-review-texts/P84049-the-avenue-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11544
   },
   {
     "practice_name": "Dam Head Medical Centre",
@@ -9465,7 +9727,8 @@
     "google_review_text_file": "google-review-texts/P84690-dam-head-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2804
   },
   {
     "practice_name": "The Neville Family Centre",
@@ -9501,7 +9764,8 @@
     "google_review_text_file": "google-review-texts/P84663-the-neville-family-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5715
   },
   {
     "practice_name": "Valentine Medical Centre",
@@ -9537,7 +9801,8 @@
     "google_review_text_file": "google-review-texts/P84019-valentine-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10555
   },
   {
     "practice_name": "Jalal Practice",
@@ -9573,7 +9838,8 @@
     "google_review_text_file": "google-review-texts/P85601-jalal-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3041
   },
   {
     "practice_name": "Oldham Family Practice",
@@ -9609,7 +9875,8 @@
     "google_review_text_file": "google-review-texts/P85007-oldham-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3972
   },
   {
     "practice_name": "Perkins Practice",
@@ -9645,7 +9912,8 @@
     "google_review_text_file": "google-review-texts/P85608-perkins-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2462
   },
   {
     "practice_name": "The Chowdhury Practice",
@@ -9681,7 +9949,8 @@
     "google_review_text_file": "google-review-texts/P85003-the-chowdhury-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6027
   },
   {
     "practice_name": "St Mary's Medical Centre",
@@ -9717,7 +9986,8 @@
     "google_review_text_file": "google-review-texts/P85002-st-marys-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6809
   },
   {
     "practice_name": "Moorside Medical Practice",
@@ -9753,7 +10023,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7078
   },
   {
     "practice_name": "Hopwood Medical Centre",
@@ -9789,7 +10060,8 @@
     "google_review_text_file": "google-review-texts/P86023-hopwood-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9729
   },
   {
     "practice_name": "Heywood Health",
@@ -9825,7 +10097,8 @@
     "google_review_text_file": "google-review-texts/P86016-heywood-health.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8596
   },
   {
     "practice_name": "Longford Street Medical Centre",
@@ -9861,7 +10134,8 @@
     "google_review_text_file": "google-review-texts/P86011-longford-street-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8398
   },
   {
     "practice_name": "Birtle View Medical Practice",
@@ -9897,7 +10171,8 @@
     "google_review_text_file": "google-review-texts/Y02718-birtle-view-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4663
   },
   {
     "practice_name": "Heady Hill Surgery",
@@ -9933,7 +10208,8 @@
     "google_review_text_file": "google-review-texts/P86602-heady-hill-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3430
   },
   {
     "practice_name": "Wellfield Health Centre",
@@ -9969,7 +10245,8 @@
     "google_review_text_file": "google-review-texts/P86007-wellfield-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13760
   },
   {
     "practice_name": "Dr A Hamid",
@@ -10005,7 +10282,8 @@
     "google_review_text_file": "google-review-texts/P86614-dr-a-hamid.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4634
   },
   {
     "practice_name": "Dr Gwd Bhima",
@@ -10041,7 +10319,8 @@
     "google_review_text_file": "google-review-texts/P86002-dr-gwd-bhima.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 1857
   },
   {
     "practice_name": "Dr MB Ghafoor & Partners",
@@ -10077,7 +10356,8 @@
     "google_review_text_file": "google-review-texts/P86619-dr-mb-ghafoor-and-partners.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6484
   },
   {
     "practice_name": "The Dale Medical Practice",
@@ -10113,7 +10393,8 @@
     "google_review_text_file": "google-review-texts/P86609-the-dale-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2477
   },
   {
     "practice_name": "Kirkholt Medical Practice",
@@ -10149,7 +10430,8 @@
     "google_review_text_file": "google-review-texts/Y02721-kirkholt-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5161
   },
   {
     "practice_name": "The Medical Centre (The Strand)",
@@ -10185,7 +10467,8 @@
     "google_review_text_file": "google-review-texts/P86606001-the-medical-centre-the-strand.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Castleton Health Centre",
@@ -10221,7 +10504,8 @@
     "google_review_text_file": "google-review-texts/P86009-castleton-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10488
   },
   {
     "practice_name": "Edenfield Road Surgery",
@@ -10257,7 +10541,8 @@
     "google_review_text_file": "google-review-texts/P86003-edenfield-road-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10575
   },
   {
     "practice_name": "Norden Branch Surgery",
@@ -10293,7 +10578,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Norden Surgery",
@@ -10319,17 +10605,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
+    "google_review_score": 3.3,
+    "google_review_count": 228,
+    "google_review_source_url": "https://www.google.com/maps/place/Edenfield+Road+Surgery/@53.6223652,-2.2269893,14z/data=!4m12!1m2!2m1!1sNorden+Surgery+OL11+5XE!3m8!1s0x487bbbf10d86cd27:0xb8b10fee1ac092c8!8m2!3d53.6223652!4d-2.1888805!9m1!1b1!15sChdOb3JkZW4gU3VyZ2VyeSBPTDExIDVYRVoZIhdub3JkZW4gc3VyZ2VyeSBvbDExIDV4ZZIBDm1lZGljYWxfY2xpbmljmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NGVsUkhkSEpOUlZsM1pGZHpNVlJWZHpSaFJURlJaR3RLTWxWWVl4QULgAQD6AQQIABA9!16s%2Fg%2F1tq8j2yk?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews (weak name match)",
+    "google_maps_title": "Edenfield Road Surgery",
     "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86003002-norden-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "HEALEY SURGERY",
@@ -10355,17 +10642,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.0,
+    "google_review_count": 127,
+    "google_review_source_url": "https://www.google.com/maps/place/Healey+Surgery/@53.6335194,-2.1636721,17z/data=!4m8!3m7!1s0x487bbead3adf8087:0xdfd9bf696dc60ae1!8m2!3d53.6335194!4d-2.1636721!9m1!1b1!16s%2Fg%2F1tjbrql0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Healey Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86013-healey-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6028
   },
   {
     "practice_name": "Ashworth Street Surgery",
@@ -10391,17 +10679,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.0,
+    "google_review_count": 144,
+    "google_review_source_url": "https://www.google.com/maps/place/Ashworth+Street+Surgery/@53.6195927,-2.1657162,17z/data=!4m8!3m7!1s0x487bb959e0ff159d:0x62bd86fed05344a4!8m2!3d53.6195927!4d-2.1657162!9m1!1b1!16s%2Fg%2F1tfqfbp2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Ashworth Street Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86006-ashworth-street-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 17069
   },
   {
     "practice_name": "The Dawes Family Practice",
@@ -10427,17 +10716,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.0,
+    "google_review_count": 80,
+    "google_review_source_url": "https://www.google.com/maps/place/Dawes+Family+Practice/@53.6194763,-2.1652867,17z/data=!4m8!3m7!1s0x487bb959e15b0fd7:0x6fbcc0e247cd5592!8m2!3d53.6194763!4d-2.1652867!9m1!1b1!16s%2Fg%2F1tdgzvn8?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Dawes Family Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86026-the-dawes-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7559
   },
   {
     "practice_name": "Whitworth Medical Centre",
@@ -10463,17 +10753,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.9,
+    "google_review_count": 52,
+    "google_review_source_url": "https://www.google.com/maps/place/Whitworth+Medical+Centre/@53.6611162,-2.1733365,17z/data=!4m8!3m7!1s0x487bbe82de18723b:0xacdef44f12cc9bf2!8m2!3d53.6611162!4d-2.1733365!9m1!1b1!16s%2Fg%2F1tptq4wd?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Whitworth Medical Centre",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P81088-whitworth-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6904
   },
   {
     "practice_name": "Mark Street Surgery",
@@ -10499,17 +10790,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.3,
+    "google_review_count": 7,
+    "google_review_source_url": "https://www.google.com/maps/place/Dr+J+A+Rose/@53.624244,-2.1441113,17z/data=!4m17!1m8!3m7!1s0x487bb936189ca4b7:0x6eef1bc9fdc20cba!2sMark+Street+Surgery,+2+Mark+St,+Rochdale+OL12+9BE!3b1!8m2!3d53.624244!4d-2.1441113!16s%2Fg%2F11bw3h91q3!3m7!1s0x487bb936223ef10f:0xe879a6a7ce5ae133!8m2!3d53.6241733!4d-2.1441313!9m1!1b1!16s%2Fg%2F1v3kh1d2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Mark Street Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 7,
+    "google_review_text_file": "google-review-texts/P86008-mark-street-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10416
   },
   {
     "practice_name": "The Village Medical Ctr.",
@@ -10535,17 +10827,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 4.5,
+    "google_review_count": 28,
+    "google_review_source_url": "https://www.google.com/maps/place/The+Village+Medical+Centre/@53.6432509,-2.0960375,17z/data=!4m8!3m7!1s0x487bbf39d8424b1d:0x598e5ab6f1025773!8m2!3d53.6432509!4d-2.0960375!9m1!1b1!16s%2Fg%2F1hc5n__mz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "The Village Medical Centre",
+    "google_maps_match_score": 0.5,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86608-the-village-medical-ctr.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4291
   },
   {
     "practice_name": "Trinity Medical Centre",
@@ -10571,17 +10864,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 4.6,
+    "google_review_count": 29,
+    "google_review_source_url": "https://www.google.com/maps/place/Trinity+Medical+Centre/@53.6421015,-2.0991874,17z/data=!4m8!3m7!1s0x487bbf375a76b08f:0x1df3f9691b705faa!8m2!3d53.6421015!4d-2.0991874!9m1!1b1!16s%2Fg%2F12vsg0bh6?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Trinity Medical Centre",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86624-trinity-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4294
   },
   {
     "practice_name": "Littleborough Group Practice",
@@ -10617,7 +10911,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8590
   },
   {
     "practice_name": "Pennine Surgery",
@@ -10643,17 +10938,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 5.0,
+    "google_review_count": 13,
+    "google_review_source_url": "https://www.google.com/maps/place/Pennine+Surgery/@53.6430113,-2.1057297,18z/data=!4m12!1m2!2m1!1sPennine+Surgery+OL15+8HF!3m8!1s0x487bbf3a87412efb:0x31861d38cbc17094!8m2!3d53.6430113!4d-2.1033479!9m1!1b1!15sChhQZW5uaW5lIFN1cmdlcnkgT0wxNSA4SEaSAQZkb2N0b3LgAQA!16s%2Fg%2F1thmkk1h?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Pennine Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86021-pennine-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3754
   },
   {
     "practice_name": "Yorkshire St Surgery",
@@ -10679,17 +10975,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.5,
+    "google_review_count": 53,
+    "google_review_source_url": "https://www.google.com/maps/place/Yorkshire+Street+Surgery/@53.6204636,-2.1523434,17z/data=!4m8!3m7!1s0x487bb94f6030a831:0x33f16ee432e4933!8m2!3d53.6204636!4d-2.1523434!9m1!1b1!16s%2Fg%2F1tdvp99f?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Yorkshire Street Surgery",
+    "google_maps_match_score": 0.5,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86005-yorkshire-st-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6230
   },
   {
     "practice_name": "Croft Shifa Health Centre",
@@ -10715,17 +11012,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.4,
+    "google_review_count": 135,
+    "google_review_source_url": "https://www.google.com/maps/place/The+Croft+Shifa+Health+Centre/@53.622198,-2.1416851,17z/data=!3m1!5s0x487bb937a8165997:0x6ec69bb54d4d36ea!4m8!3m7!1s0x487bb930dccf2eaf:0x23c61ee396a8663!8m2!3d53.622198!4d-2.1416851!9m1!1b1!16s%2Fg%2F12hn91kqg?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "The Croft Shifa Health Centre",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86014-croft-shifa-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7827
   },
   {
     "practice_name": "Inspire Medical Centre",
@@ -10751,17 +11049,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 1.8,
+    "google_review_count": 42,
+    "google_review_source_url": "https://www.google.com/maps/place/Inspire+Medical+Centre/@53.6222454,-2.141348,17z/data=!3m1!5s0x487bb937a8165997:0xb8a98359c314551d!4m8!3m7!1s0x487bb9372e7edecf:0x154d775b962b4460!8m2!3d53.6222454!4d-2.141348!9m1!1b1!16s%2Fg%2F11bzzzsdx7?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Inspire Medical Centre",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86017-inspire-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4604
   },
   {
     "practice_name": "The Kingsway Practice",
@@ -10787,17 +11086,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.8,
+    "google_review_count": 47,
+    "google_review_source_url": "https://www.google.com/maps/place/The+Kingsway+Practice/@53.6132512,-2.1359856,17z/data=!4m8!3m7!1s0x487bb93dcabe8e05:0x42732d654a67a52!8m2!3d53.6132512!4d-2.1359856!9m1!1b1!16s%2Fg%2F1hc2r12x2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "The Kingsway Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/Y02720-the-kingsway-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4698
   },
   {
     "practice_name": "Milnrow Village Practice",
@@ -10823,17 +11123,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 5.0,
+    "google_review_count": 19,
+    "google_review_source_url": "https://www.google.com/maps/place/Milnrow+Village+Practice/@53.6021768,-2.1025665,17z/data=!4m8!3m7!1s0x487bb90024c5b667:0x4a2aa8346f98c74d!8m2!3d53.6021768!4d-2.1025665!9m1!1b1!16s%2Fg%2F11vwdrg6m0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Milnrow Village Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P86001-milnrow-village-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8229
   },
   {
     "practice_name": "Stonefield Street Surgery",
@@ -10869,7 +11170,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8763
   },
   {
     "practice_name": "Royton Medical Centre",
@@ -10905,7 +11207,8 @@
     "google_review_text_file": "google-review-texts/P85019-royton-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7020
   },
   {
     "practice_name": "The Royton & Crompton Family Practice",
@@ -10941,7 +11244,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 20997
   },
   {
     "practice_name": "Oak Gables Medical Practice",
@@ -10977,7 +11281,8 @@
     "google_review_text_file": "google-review-texts/P85017-oak-gables-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9092
   },
   {
     "practice_name": "Village Medical Practice",
@@ -11013,7 +11318,8 @@
     "google_review_text_file": "google-review-texts/P85614-village-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5103
   },
   {
     "practice_name": "Dr. J Wright & Partners",
@@ -11049,7 +11355,8 @@
     "google_review_text_file": "google-review-texts/P85016001-dr-j-wright-and-partners.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Saddleworth Medical Practice",
@@ -11085,7 +11392,8 @@
     "google_review_text_file": "google-review-texts/P85016-saddleworth-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13978
   },
   {
     "practice_name": "Pennine Medical Centre - Greenfield",
@@ -11121,7 +11429,8 @@
     "google_review_text_file": "google-review-texts/P89006001-pennine-medical-centre-greenfield.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Greenbank Medical Practice",
@@ -11157,7 +11466,8 @@
     "google_review_text_file": "google-review-texts/P85021-greenbank-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9715
   },
   {
     "practice_name": "Hopwood House Medical Practice",
@@ -11193,7 +11503,8 @@
     "google_review_text_file": "google-review-texts/P85014-hopwood-house-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6646
   },
   {
     "practice_name": "Alexandra Group Med Pract",
@@ -11229,7 +11540,8 @@
     "google_review_text_file": "google-review-texts/P85015-alexandra-group-med-pract.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7260
   },
   {
     "practice_name": "Glodwick Medical Practice",
@@ -11265,7 +11577,8 @@
     "google_review_text_file": "google-review-texts/P85622-glodwick-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10874
   },
   {
     "practice_name": "Springfield House",
@@ -11301,7 +11614,8 @@
     "google_review_text_file": "google-review-texts/P85020-springfield-house.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7352
   },
   {
     "practice_name": "Lees Medical Practice",
@@ -11337,7 +11651,8 @@
     "google_review_text_file": "google-review-texts/P85022-lees-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5139
   },
   {
     "practice_name": "Leesbrook Surgery",
@@ -11373,7 +11688,8 @@
     "google_review_text_file": "google-review-texts/P85005-leesbrook-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9411
   },
   {
     "practice_name": "Pike Medical Practice",
@@ -11409,7 +11725,8 @@
     "google_review_text_file": "google-review-texts/P89618-pike-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3184
   },
   {
     "practice_name": "Pennine Medical Centre",
@@ -11445,7 +11762,8 @@
     "google_review_text_file": "google-review-texts/P89006-pennine-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11346
   },
   {
     "practice_name": "Ashton Medical Group",
@@ -11481,7 +11799,8 @@
     "google_review_text_file": "google-review-texts/P89008-ashton-medical-group.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16937
   },
   {
     "practice_name": "Ashton Medical Group - Glebe House",
@@ -11517,7 +11836,8 @@
     "google_review_text_file": "google-review-texts/P89008001-ashton-medical-group-glebe-house.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Albion Medical Practice",
@@ -11553,7 +11873,8 @@
     "google_review_text_file": "google-review-texts/P89003-albion-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9847
   },
   {
     "practice_name": "Stamford House",
@@ -11589,7 +11910,8 @@
     "google_review_text_file": "google-review-texts/P89609-stamford-house.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5023
   },
   {
     "practice_name": "West End Medical Centre",
@@ -11625,7 +11947,8 @@
     "google_review_text_file": "google-review-texts/P89030-west-end-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3898
   },
   {
     "practice_name": "HT Practice",
@@ -11661,7 +11984,8 @@
     "google_review_text_file": "google-review-texts/P89020-ht-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7533
   },
   {
     "practice_name": "Waterloo Medical Centre",
@@ -11697,7 +12021,8 @@
     "google_review_text_file": "google-review-texts/P89613-waterloo-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3742
   },
   {
     "practice_name": "John Street Medical Practice",
@@ -11733,7 +12058,8 @@
     "google_review_text_file": "google-review-texts/Y02827-john-street-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4966
   },
   {
     "practice_name": "Hill Top Surgery",
@@ -11769,7 +12095,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6291
   },
   {
     "practice_name": "Oldham Medical Services",
@@ -11805,7 +12132,8 @@
     "google_review_text_file": "google-review-texts/P85012-oldham-medical-services.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5922
   },
   {
     "practice_name": "Hollinwood Medical Practice",
@@ -11841,7 +12169,8 @@
     "google_review_text_file": "google-review-texts/Y02933-hollinwood-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8851
   },
   {
     "practice_name": "Littletown Family Med Pract",
@@ -11877,7 +12206,8 @@
     "google_review_text_file": "google-review-texts/P85605-littletown-family-med-pract.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7633
   },
   {
     "practice_name": "Chadderton Medical Practice",
@@ -11913,7 +12243,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6369
   },
   {
     "practice_name": "Woodlands Medical Practice",
@@ -11949,7 +12280,8 @@
     "google_review_text_file": "google-review-texts/P85010-woodlands-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14117
   },
   {
     "practice_name": "Kapur Family Care",
@@ -11985,7 +12317,8 @@
     "google_review_text_file": "google-review-texts/P85615-kapur-family-care.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11907
   },
   {
     "practice_name": "MD Family Practice",
@@ -12021,7 +12354,8 @@
     "google_review_text_file": "google-review-texts/P85018-md-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4332
   },
   {
     "practice_name": "Werneth Medical Practice",
@@ -12057,7 +12391,8 @@
     "google_review_text_file": "google-review-texts/P85612-werneth-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4052
   },
   {
     "practice_name": "Ch Medical Practice",
@@ -12093,7 +12428,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12652
   },
   {
     "practice_name": "Vernon Park Surgery",
@@ -12119,17 +12455,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 4.2,
+    "google_review_count": 19,
+    "google_review_source_url": "https://www.google.com/maps/place/Vernon+Park+Surgery/@53.4180053,-2.1434873,17z/data=!4m8!3m7!1s0x487bb47ce8f640a7:0x9d1cf7231197b31!8m2!3d53.4180053!4d-2.1434873!9m1!1b1!16s%2Fg%2F1tdxvks4?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Vernon Park Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88615-vernon-park-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3445
   },
   {
     "practice_name": "Manor Medical Practice",
@@ -12155,17 +12492,18 @@
     "management_company_domain": "manormedical.co.uk",
     "management_company_group_size": 2,
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.8,
+    "google_review_count": 43,
+    "google_review_source_url": "https://www.google.com/maps/place/Manor+Medical+Practice/@53.4036513,-2.1534753,17z/data=!4m8!3m7!1s0x487bb36278e90df9:0xc99f5c956efa12ea!8m2!3d53.4036513!4d-2.1534753!9m1!1b1!16s%2Fg%2F1hc2509qz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Manor Medical Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88003001-manor-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Lambgates Health Centre",
@@ -12201,7 +12539,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7434
   },
   {
     "practice_name": "Manor House Hadfield",
@@ -12237,7 +12576,8 @@
     "google_review_text_file": "google-review-texts/B7I2X-manor-house-hadfield.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Cottage Lane Surgery",
@@ -12273,7 +12613,8 @@
     "google_review_text_file": "google-review-texts/C81615-cottage-lane-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2306
   },
   {
     "practice_name": "Simmondley Medical Practice",
@@ -12309,7 +12650,8 @@
     "google_review_text_file": "google-review-texts/C81640-simmondley-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3690
   },
   {
     "practice_name": "Howard Street Medical Practice",
@@ -12345,7 +12687,8 @@
     "google_review_text_file": "google-review-texts/R3E4A-howard-street-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Manor House Surgery",
@@ -12381,7 +12724,8 @@
     "google_review_text_file": "google-review-texts/C81081-manor-house-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 20166
   },
   {
     "practice_name": "The Brooke Surgery",
@@ -12417,7 +12761,8 @@
     "google_review_text_file": "google-review-texts/P89002-the-brooke-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 20313
   },
   {
     "practice_name": "Haughton Thornley Medical Centres",
@@ -12453,7 +12798,8 @@
     "google_review_text_file": "google-review-texts/P89014-haughton-thornley-medical-centres.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12720
   },
   {
     "practice_name": "Donneybrook Medical Centre",
@@ -12489,7 +12835,8 @@
     "google_review_text_file": "google-review-texts/P89016-donneybrook-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7978
   },
   {
     "practice_name": "Clarendon Medical Centre",
@@ -12525,7 +12872,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6801
   },
   {
     "practice_name": "Awburn House Medical Practice",
@@ -12561,7 +12909,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6187
   },
   {
     "practice_name": "Grosvenor Medical Centre",
@@ -12597,7 +12946,8 @@
     "google_review_text_file": "google-review-texts/P89026-grosvenor-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6289
   },
   {
     "practice_name": "Staveleigh Medical Centre",
@@ -12633,7 +12983,8 @@
     "google_review_text_file": "google-review-texts/P89007-staveleigh-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8127
   },
   {
     "practice_name": "St. Andrew's House Surgery",
@@ -12669,7 +13020,8 @@
     "google_review_text_file": "google-review-texts/P89023-st-andrews-house-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5957
   },
   {
     "practice_name": "Lockside Medical Centre",
@@ -12705,7 +13057,8 @@
     "google_review_text_file": "google-review-texts/P89005-lockside-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8382
   },
   {
     "practice_name": "DUKINFIELD MEDICAL PRACTICE- BIRCH LANE",
@@ -12741,7 +13094,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Dukinfield Medical Practice",
@@ -12777,7 +13131,8 @@
     "google_review_text_file": "google-review-texts/P89021-dukinfield-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11240
   },
   {
     "practice_name": "King Street Medical Centre",
@@ -12813,7 +13168,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3286
   },
   {
     "practice_name": "Town Hall Surgery",
@@ -12849,7 +13205,8 @@
     "google_review_text_file": "google-review-texts/P89025-town-hall-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2837
   },
   {
     "practice_name": "Little Moor Surgery",
@@ -12885,7 +13242,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Manor Medical Practice",
@@ -12911,17 +13269,18 @@
     "management_company_domain": "manormedical.co.uk",
     "management_company_group_size": 2,
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 4.3,
+    "google_review_count": 20,
+    "google_review_source_url": "https://www.google.com/maps/place/Manor+Medical+Practice/@53.3998008,-2.1439467,16z/data=!4m12!1m2!2m1!1sManor+Medical+Practice+SK2+5AR!3m8!1s0x487bb4d72ddc131b:0x40ba94be7b2b2b26!8m2!3d53.4036723!4d-2.1367947!9m1!1b1!15sCh5NYW5vciBNZWRpY2FsIFByYWN0aWNlIFNLMiA1QVJaICIebWFub3IgbWVkaWNhbCBwcmFjdGljZSBzazIgNWFykgEObWVkaWNhbF9jbGluaWOaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUmFkbk0yTVZCM0VBReABAPoBBAggEAw!16s%2Fg%2F1hc3n5dws?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Manor Medical Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88003-manor-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9895
   },
   {
     "practice_name": "Bosden Moor Surgery",
@@ -12947,17 +13306,18 @@
     "management_company_domain": "heatonmoormedicalgroup.co.uk",
     "management_company_group_size": 5,
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 4.8,
+    "google_review_count": 23,
+    "google_review_source_url": "https://www.google.com/maps/place/Bosden+Moor+Surgery/@53.3915656,-2.1069434,17z/data=!4m8!3m7!1s0x487bb4ddb182ae47:0x6620542443c3660e!8m2!3d53.3915656!4d-2.1069434!9m1!1b1!16s%2Fg%2F1hc1ykp11?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Bosden Moor Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88026005-bosden-moor-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Bracondale Medical Centre",
@@ -12983,17 +13343,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 4.2,
+    "google_review_count": 44,
+    "google_review_source_url": "https://www.google.com/maps/place/Bracondale+Medical+Centre/@53.3942728,-2.1471622,17z/data=!4m8!3m7!1s0x487bb49f4791d89d:0xcec3cec8ab5acf57!8m2!3d53.3942728!4d-2.1471622!9m1!1b1!16s%2Fg%2F1hc3m7tp7?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Bracondale Medical Centre",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88031-bracondale-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5838
   },
   {
     "practice_name": "Stockport Medical Group (Lowfield)",
@@ -13029,7 +13390,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Stockport Medical Group (Delamere Practice)",
@@ -13055,17 +13417,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.0,
+    "google_review_count": 64,
+    "google_review_source_url": "https://www.google.com/maps/place/Stockport+Medical+Group+-+Delamere+Practice/@53.3881544,-2.1294489,17z/data=!4m8!3m7!1s0x487bb4bed70276df:0x5571deaba2a146c!8m2!3d53.3881544!4d-2.1294489!9m1!1b1!16s%2Fg%2F11bzsyht9h?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Stockport Medical Group - Delamere Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88632001-stockport-medical-group-delamere-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Caritas General Practice Partnership",
@@ -13101,7 +13464,8 @@
     "google_review_text_file": "google-review-texts/P88013-caritas-general-practice-partnership.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12439
   },
   {
     "practice_name": "Ellesmere Medical Centre",
@@ -13137,7 +13501,8 @@
     "google_review_text_file": "google-review-texts/P88013001-ellesmere-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Bramhall & Shaw Heath Medical Group",
@@ -13163,17 +13528,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
+    "google_review_score": 4.2,
+    "google_review_count": 76,
+    "google_review_source_url": "https://www.google.com/maps/place/mybabyview/@53.477222,-2.1877547,13z/data=!4m11!1m2!2m1!1sBramhall+%26+Shaw+Heath+Medical+Group+SK3+8DN!3m7!1s0x487bb1b0da5cc593:0x6ad0e0eea4ba0e78!8m2!3d53.4772219!4d-2.1115374!9m1!1b1!16s%2Fg%2F11khznl7pc?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews (weak name match)",
+    "google_maps_title": "mybabyview",
     "google_maps_match_score": "",
     "google_recent_reviews_captured": "",
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Cale Green Surgery",
@@ -13199,17 +13565,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.7,
+    "google_review_count": 22,
+    "google_review_source_url": "https://www.google.com/maps/place/Cale+Green+Surgery/@53.3971571,-2.1583251,17z/data=!4m8!3m7!1s0x487bb36143fb49af:0x2c23f7c2a292949e!8m2!3d53.3971571!4d-2.1583251!9m1!1b1!16s%2Fg%2F1thvgh49?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Cale Green Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/U6I7T-cale-green-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Adswood Road Surgery",
@@ -13245,7 +13612,8 @@
     "google_review_text_file": "google-review-texts/P88026006-adswood-road-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Stockport Medical Group",
@@ -13281,7 +13649,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 18170
   },
   {
     "practice_name": "Heaton Norris Medical Practice",
@@ -13307,17 +13676,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.8,
+    "google_review_count": 84,
+    "google_review_source_url": "https://www.google.com/maps/place/Heaton+Norris+Medical+Practice/@53.4165728,-2.1675536,17z/data=!4m8!3m7!1s0x487bb39d27dd1947:0x49015511b060cf16!8m2!3d53.4165728!4d-2.1675536!9m1!1b1!16s%2Fg%2F1tkn_bjm?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Heaton Norris Medical Practice",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88011-heaton-norris-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10645
   },
   {
     "practice_name": "Heaton Mersey Med.Pract.",
@@ -13353,7 +13723,8 @@
     "google_review_text_file": "google-review-texts/P88008-heaton-mersey-med-pract.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8573
   },
   {
     "practice_name": "Eastholme Surgery now incorporated in Heaton Moor",
@@ -13389,7 +13760,8 @@
     "google_review_text_file": "google-review-texts/P88026003-eastholme-surgery-now-incorporated-in-heaton-moor.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Heaton Moor Medical Group",
@@ -13415,17 +13787,18 @@
     "management_company_domain": "heatonmoormedicalgroup.co.uk",
     "management_company_group_size": 5,
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.3,
+    "google_review_count": 187,
+    "google_review_source_url": "https://www.google.com/maps/place/Heaton+Moor+Medical+Group/@53.4249397,-2.1800737,17z/data=!3m1!5s0x487bb397f50bd211:0xf2ba7a51e83e5c4b!4m8!3m7!1s0x487bb397f5acbb97:0x2fef0075ff7c0ebb!8m2!3d53.4249397!4d-2.1800737!9m1!1b1!16s%2Fg%2F1tdnwg2z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Heaton Moor Medical Group",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88026-heaton-moor-medical-group.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 54781
   },
   {
     "practice_name": "Park View Group Practice",
@@ -13461,7 +13834,8 @@
     "google_review_text_file": "google-review-texts/P88018-park-view-group-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10288
   },
   {
     "practice_name": "Family Surgery",
@@ -13497,7 +13871,8 @@
     "google_review_text_file": "google-review-texts/P88005-family-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11533
   },
   {
     "practice_name": "The Reddish Family Practices",
@@ -13533,7 +13908,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Brinnington Surgery",
@@ -13569,7 +13945,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9470
   },
   {
     "practice_name": "Alvanley Family Practice",
@@ -13605,7 +13982,8 @@
     "google_review_text_file": "google-review-texts/P88019-alvanley-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5396
   },
   {
     "practice_name": "Archwood Medical Practice",
@@ -13641,7 +14019,8 @@
     "google_review_text_file": "google-review-texts/P88625-archwood-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7729
   },
   {
     "practice_name": "Woodley Village Surgery",
@@ -13677,7 +14056,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3068
   },
   {
     "practice_name": "Bredbury Medical Centre",
@@ -13713,7 +14093,8 @@
     "google_review_text_file": "google-review-texts/P88044-bredbury-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5844
   },
   {
     "practice_name": "Chadsfield Medical Practice",
@@ -13749,7 +14130,8 @@
     "google_review_text_file": "google-review-texts/P88017-chadsfield-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6581
   },
   {
     "practice_name": "Guywood Practice",
@@ -13785,7 +14167,8 @@
     "google_review_text_file": "google-review-texts/M2E0A-guywood-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Romiley Health Centre",
@@ -13821,7 +14204,8 @@
     "google_review_text_file": "google-review-texts/F8F0J-romiley-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Marple Bridge Surgery",
@@ -13857,7 +14241,8 @@
     "google_review_text_file": "google-review-texts/P88002-marple-bridge-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6323
   },
   {
     "practice_name": "Marple Medical Practice",
@@ -13893,7 +14278,8 @@
     "google_review_text_file": "google-review-texts/P88021-marple-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6877
   },
   {
     "practice_name": "Marple Cottage Surgery",
@@ -13929,7 +14315,8 @@
     "google_review_text_file": "google-review-texts/P88006-marple-cottage-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11502
   },
   {
     "practice_name": "Bramhall & Shaw Heath Medical Group",
@@ -13955,17 +14342,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 2.4,
+    "google_review_count": 79,
+    "google_review_source_url": "https://www.google.com/maps/place/Bramhall+Park+Medical+Centre/@53.3774146,-2.2379772,13z/data=!4m12!1m2!2m1!1sBramhall+%26+Shaw+Heath+Medical+Group+SK7+3EP!3m8!1s0x487bb3522438cd59:0x683c7c527abd7233!8m2!3d53.3774146!4d-2.1617595!9m1!1b1!15sCitCcmFtaGFsbCAmIFNoYXcgSGVhdGggTWVkaWNhbCBHcm91cCBTSzcgM0VQkgEObWVkaWNhbF9jZW50ZXLgAQA!16s%2Fg%2F1tjgp40q?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews (weak name match)",
+    "google_maps_title": "Bramhall Park Medical Centre",
+    "google_maps_match_score": 0.333,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88016-bramhall-and-shaw-heath-medical-group.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 13658
   },
   {
     "practice_name": "Springfield Surgery",
@@ -13991,17 +14379,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.2,
+    "google_review_count": 56,
+    "google_review_source_url": "https://www.google.com/maps/place/Springfield+Surgery/@53.3824164,-2.1221791,17z/data=!4m8!3m7!1s0x487bb4c881bd467b:0xa9af2b63e8f5c129!8m2!3d53.3824164!4d-2.1221791!9m1!1b1!16s%2Fg%2F1tjgp414?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Springfield Surgery",
+    "google_maps_match_score": 1.0,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88606-springfield-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5711
   },
   {
     "practice_name": "Beech House Medical Pract",
@@ -14027,17 +14416,18 @@
     "management_company_domain": "",
     "management_company_group_size": "",
     "min_distance_to_gtd_anchor_miles": "",
-    "google_review_score": "",
-    "google_review_count": "",
-    "google_review_source_url": "",
-    "google_review_source_note": "",
-    "google_maps_title": "",
-    "google_maps_match_score": "",
-    "google_recent_reviews_captured": "",
-    "google_review_text_file": "",
+    "google_review_score": 3.3,
+    "google_review_count": 74,
+    "google_review_source_url": "https://www.google.com/maps/place/Beech+House+Medical+Practice+Dr+Salim+%26+Partners/@53.3794701,-2.1229663,17z/data=!4m12!1m2!2m1!1sBeech+House+Medical+Pract+SK7+4QR!3m8!1s0x487bb4ceef3f1b97:0xd4bd6b252a9d009a!8m2!3d53.3794701!4d-2.1182027!9m1!1b1!15sCiRCZWVjaCBIb3VzZSBNZWRpY2FsIFByYWN0aWNlIFNLNyA0UVKSAQZkb2N0b3LgAQA!16s%2Fg%2F1tdrdxzm?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_review_source_note": "Google Maps direct search with visible recent reviews",
+    "google_maps_title": "Beech House Medical Practice Dr Salim & Partners",
+    "google_maps_match_score": 0.4,
+    "google_recent_reviews_captured": 10,
+    "google_review_text_file": "google-review-texts/P88012-beech-house-medical-pract.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7871
   },
   {
     "practice_name": "Dean Lane Medical Centre",
@@ -14073,7 +14463,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Cheadle Medical Practice",
@@ -14109,7 +14500,8 @@
     "google_review_text_file": "google-review-texts/P88020-cheadle-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 11783
   },
   {
     "practice_name": "Adshall Road Medical Prac",
@@ -14145,7 +14537,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 4887
   },
   {
     "practice_name": "Finney Lane Surgery",
@@ -14181,7 +14574,8 @@
     "google_review_text_file": "google-review-texts/P88042-finney-lane-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6954
   },
   {
     "practice_name": "Heald Green Health Centre 2",
@@ -14217,7 +14611,8 @@
     "google_review_text_file": "google-review-texts/P88023-heald-green-health-centre-2.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7541
   },
   {
     "practice_name": "Gatley Medical Centre",
@@ -14253,7 +14648,8 @@
     "google_review_text_file": "google-review-texts/P88024-gatley-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10339
   },
   {
     "practice_name": "The Gatley Surgery",
@@ -14289,7 +14685,8 @@
     "google_review_text_file": "google-review-texts/P84012001-the-gatley-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Cheadle Hulme Medical Group (Bridge House)",
@@ -14325,7 +14722,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Cheadle Hulme Medical Group",
@@ -14361,7 +14759,8 @@
     "google_review_text_file": "google-review-texts/P88007-cheadle-hulme-medical-group.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 14808
   },
   {
     "practice_name": "Hulme Hall Medical Group",
@@ -14397,7 +14796,8 @@
     "google_review_text_file": "google-review-texts/P88025-hulme-hall-medical-group.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10386
   },
   {
     "practice_name": "Handforth Health Centre",
@@ -14433,7 +14833,8 @@
     "google_review_text_file": "google-review-texts/N81070-handforth-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10373
   },
   {
     "practice_name": "Hulme Hall Medical Group Handforth",
@@ -14469,7 +14870,8 @@
     "google_review_text_file": "google-review-texts/P88025001-hulme-hall-medical-group-handforth.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Holes Lane Medical Ltd.",
@@ -14505,7 +14907,8 @@
     "google_review_text_file": "google-review-texts/N81007-holes-lane-medical-ltd.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10088
   },
   {
     "practice_name": "Woolston Surgery",
@@ -14541,7 +14944,8 @@
     "google_review_text_file": "google-review-texts/N81109001-woolston-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Lakeside Surgery",
@@ -14577,7 +14981,8 @@
     "google_review_text_file": "google-review-texts/N81108-the-lakeside-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10827
   },
   {
     "practice_name": "Brookfield Surgery",
@@ -14613,7 +15018,8 @@
     "google_review_text_file": "google-review-texts/N81014-brookfield-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9352
   },
   {
     "practice_name": "Family Surgery",
@@ -14649,7 +15055,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 2292
   },
   {
     "practice_name": "BARRINGTON MEDICAL CENTRE",
@@ -14685,7 +15092,8 @@
     "google_review_text_file": "google-review-texts/P91603-barrington-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7707
   },
   {
     "practice_name": "St Johns Medical Centre",
@@ -14721,7 +15129,8 @@
     "google_review_text_file": "google-review-texts/P91604-st-johns-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 16376
   },
   {
     "practice_name": "ALTRINCHAM MEDICAL PRACTICE",
@@ -14757,7 +15166,8 @@
     "google_review_text_file": "google-review-texts/P91004-altrincham-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 8545
   },
   {
     "practice_name": "WEST TIMPERLEY MEDICAL CENTRE",
@@ -14793,7 +15203,8 @@
     "google_review_text_file": "google-review-texts/P91016-west-timperley-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 9356
   },
   {
     "practice_name": "Riddings Family Health Centre",
@@ -14829,7 +15240,8 @@
     "google_review_text_file": "google-review-texts/P91631-riddings-family-health-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 3730
   },
   {
     "practice_name": "Timperley Health Centre (Westwood)",
@@ -14865,7 +15277,8 @@
     "google_review_text_file": "google-review-texts/P91007-timperley-health-centre-westwood.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6320
   },
   {
     "practice_name": "Village Surgery",
@@ -14901,7 +15314,8 @@
     "google_review_text_file": "google-review-texts/P91623-village-surgery.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7806
   },
   {
     "practice_name": "THE LAKES MEDICAL CENTRE,TIMPERLEY",
@@ -14937,7 +15351,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "Park Medical Practice",
@@ -14973,7 +15388,8 @@
     "google_review_text_file": "google-review-texts/P91003-park-medical-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 7849
   },
   {
     "practice_name": "Shay Lane Medical Centre (Kelman)",
@@ -15009,7 +15425,8 @@
     "google_review_text_file": "google-review-texts/P91008-shay-lane-medical-centre-kelman.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6214
   },
   {
     "practice_name": "Shay Lane Medical Centre (Patel)",
@@ -15045,7 +15462,8 @@
     "google_review_text_file": "google-review-texts/P91011-shay-lane-medical-centre-patel.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 5395
   },
   {
     "practice_name": "Fearnhead Cross Med.Ctr.",
@@ -15081,7 +15499,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12909
   },
   {
     "practice_name": "Padgate Medical Centre",
@@ -15117,7 +15536,8 @@
     "google_review_text_file": "google-review-texts/N81109-padgate-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 6918
   },
   {
     "practice_name": "Culcheth Medical Centre",
@@ -15153,7 +15573,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 12645
   },
   {
     "practice_name": "Birchwood Medical Centre",
@@ -15189,7 +15610,8 @@
     "google_review_text_file": "google-review-texts/N81114-birchwood-medical-centre.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": 10798
   },
   {
     "practice_name": "The Quays Grappenhal Surgery",
@@ -15225,7 +15647,8 @@
     "google_review_text_file": "",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   },
   {
     "practice_name": "The Leigh Family Practice",
@@ -15261,6 +15684,7 @@
     "google_review_text_file": "google-review-texts/Y02322001-the-leigh-family-practice.txt",
     "trustpilot_score": "",
     "trustpilot_review_count": "",
-    "trustpilot_source_url": ""
+    "trustpilot_source_url": "",
+    "registered_patient_count": ""
   }
 ]
