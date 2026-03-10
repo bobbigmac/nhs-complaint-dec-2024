@@ -28,6 +28,10 @@ It contains only publicly available data so that the evidence and reasoning are 
   - [Reviewing the updated draft PPG terms docs](./PPG-terms-review/PPG-terms-review.md)
   - [Exclusion questions - Is exclusion a problem here?](./Exclusion-questions.md)
 - **Produced reports/evidence packs**
+  - **Manchester GP reviews map** — GTD-run practices across Greater Manchester by Google rating; most cluster around ~2★ with similar complaint patterns (access, rudeness, procedural failings). [PDF printoff](./google-vs-patient-survey/GTD%20Greater%20Manchester%20GP%20Practice%20Experience%20-%20Google%20vs%20Patient%20Survey%20Gap.pdf)
+
+  ![Manchester GP reviews map](./manchester-gp-reviews-map.png)
+
   - [General GP practice stats and scope/environment notes](./meetings-notes/2025-09-10-meeting2/benchmarks-summary-sept-10.md)
   - [PATCHS trustpilot reviews for lots of useful patient input](./reviews/PATCHS/output%20reports/PATCHS%201-2-3%20Star%20Reviews%20with%20Summary%20Panel%20Landscape.pdf)
   - [Patient blaming evidence pack](./meetings-notes/2026-01-04-meeting4/PatientBlaming-README.md)
@@ -209,6 +213,7 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 - Comparing to local/regional practices
   - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
   - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns: rudeness/mistreatment, access issues, procedural failings, and a lack of understanding/help from staff.
+  - [PDF printoff: GTD Greater Manchester GP Practice Experience (Google vs Patient Survey)](./google-vs-patient-survey/GTD%20Greater%20Manchester%20GP%20Practice%20Experience%20-%20Google%20vs%20Patient%20Survey%20Gap.pdf)
   - How common **complex access / phone‑blocking / web‑off** models are.
   - Quantify how many GTD practices, and how many local/regional/national practices, **switch their websites/online forms off** outside office hours.
     - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
