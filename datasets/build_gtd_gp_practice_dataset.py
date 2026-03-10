@@ -535,6 +535,11 @@ def build_dataset() -> list[dict[str, Any]]:
         record["management_company_confidence"] = "high" if matched_anchor else ""
         record["management_company_domain"] = "gtdhealthcare.co.uk" if matched_anchor else ""
         record["management_company_group_size"] = ""
+        record["affiliated_group_name"] = ""
+        record["affiliated_group_source"] = ""
+        record["affiliated_group_confidence"] = ""
+        record["affiliated_group_domain"] = ""
+        record["affiliated_group_group_size"] = ""
         min_distance = None
         if practice["nearby_to_gtd_anchors"]:
             distances = []
@@ -584,6 +589,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "management_company_confidence",
         "management_company_domain",
         "management_company_group_size",
+        "affiliated_group_name",
+        "affiliated_group_source",
+        "affiliated_group_confidence",
+        "affiliated_group_domain",
+        "affiliated_group_group_size",
         "registered_patient_count",
         "google_review_score",
         "google_review_count",
@@ -622,6 +632,8 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "google_review_text_file_count": sum(1 for row in rows if row.get("google_review_text_file", "")),
         "management_company_identified_count": sum(1 for row in rows if row.get("management_company_name", "")),
         "management_company_distinct_count": len({row.get("management_company_name", "") for row in rows if row.get("management_company_name", "")}),
+        "affiliated_group_identified_count": sum(1 for row in rows if row.get("affiliated_group_name", "")),
+        "affiliated_group_distinct_count": len({row.get("affiliated_group_name", "") for row in rows if row.get("affiliated_group_name", "")}),
         "registered_patient_count_coverage": sum(1 for row in rows if row.get("registered_patient_count", "") != ""),
         "trustpilot_coverage_count": sum(1 for row in rows if row["trustpilot_score"] != ""),
         "postcode_area_count": len(postcodes),
@@ -645,6 +657,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
             "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
             "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
+            "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
             "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
         ],
     }
@@ -672,6 +685,7 @@ Files:
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
+- `affiliated_group_*` fields in the CSV/JSON: separate network/federation/operator links that should not be treated as the core management company
 - `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
 
 Source basis:
@@ -693,6 +707,8 @@ Coverage snapshot:
 - Review text files written: {summary['google_review_text_file_count']}
 - Practices with management company identified: {summary.get('management_company_identified_count', 0)}
 - Distinct management companies identified: {summary.get('management_company_distinct_count', 0)}
+- Practices with affiliated group identified: {summary.get('affiliated_group_identified_count', 0)}
+- Distinct affiliated groups identified: {summary.get('affiliated_group_distinct_count', 0)}
 - Practices with registered patient count: {summary.get('registered_patient_count_coverage', 0)}
 - Google Maps scans completed: {summary.get('google_maps_total_scanned_count', 0)}
 - Google Maps manual review queue: {summary.get('google_maps_manual_review_count', 0)}
@@ -701,6 +717,7 @@ Caveats:
 
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
 - `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
+- `affiliated_group_*` fields may capture a federation, enhanced-hours operator, or similar network relationship even where the core management company is still blank.
 - Trustpilot fields are blank in this run because a reliable per-practice public source was not found.
 - GTD's Lindley Medical Practice was matched to the NHS profile currently published as `Lindley House Health Centre` at the same Oldham site.
 """
@@ -753,6 +770,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "postcode": row["postcode"],
                 "gtd": row["gtd_managed"],
                 "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
+                "affiliated_group": row.get("affiliated_group_name", ""),
                 "google_score": row["google_review_score"],
                 "google_count": row["google_review_count"],
                 "google_source_note": row.get("google_review_source_note", ""),
@@ -1666,6 +1684,24 @@ function voronoiPoints() {{
   }});
 }}
 
+function voronoiCentroidByCode() {{
+  const points = voronoiPoints();
+  if (!points.length) return new Map();
+  const fc = turf.featureCollection(points);
+  const polygons = turf.voronoi(fc, {{ bbox: dataBbox }});
+  const rowByCode = new Map(rows.map((row) => [row.code, row]));
+  const centroidByCode = new Map();
+  (polygons?.features || []).forEach((feature) => {{
+    const code = feature?.properties?.code;
+    if (code && rowByCode.has(code)) {{
+      const centroid = turf.centroid(feature);
+      const [lon, lat] = centroid.geometry.coordinates;
+      centroidByCode.set(code, [lat, lon]);
+    }}
+  }});
+  return centroidByCode;
+}}
+
 function renderVoronoi() {{
   const points = voronoiPoints();
   if (!points.length) return;
@@ -1771,6 +1807,7 @@ function popupMarkup(row) {{
   const googleSource = row.google_source_note ? `<div>Google source: ${{row.google_source_note}}</div>` : '<div>Google source: repo review dataset</div>';
   const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
   const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
+  const affiliatedGroup = row.affiliated_group ? `<div>Affiliated group: ${{row.affiliated_group}}</div>` : '';
   const registeredPatients = numericOrNull(row.registered_patient_count);
   const registeredPatientsLine = `<div>Registered patients: ${{registeredPatients === null ? '?' : registeredPatients.toLocaleString('en-GB')}}</div>`;
   const survey = `<div>${{formatSurvey(row)}}</div>`;
@@ -1784,6 +1821,7 @@ function popupMarkup(row) {{
     <div>Code: ${{row.code}}</div>
     <div>Near: ${{row.nearby}}</div>
     ${{management}}
+    ${{affiliatedGroup}}
     ${{registeredPatientsLine}}
     ${{google}}
     ${{googleSource}}
@@ -1805,6 +1843,7 @@ function renderMarkers() {{
   markerLayer.clearLayers();
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
+  const centroidByCode = voronoiShow ? voronoiCentroidByCode() : null;
   for (const row of rows) {{
     const metricValue = metric.value(row);
     if (metricValue === null && activeMetric === 'gap') {{
@@ -1826,7 +1865,8 @@ function renderMarkers() {{
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
       popupAnchor: [0, metrics.popupY]
     }});
-    const marker = L.marker([row.lat, row.lon], {{ icon, zIndexOffset: baseZIndex }});
+    const pos = centroidByCode && centroidByCode.has(row.code) ? centroidByCode.get(row.code) : [row.lat, row.lon];
+    const marker = L.marker(pos, {{ icon, zIndexOffset: baseZIndex }});
     marker.bindPopup(popupMarkup(row));
     marker.on('click', () => {{
       focusRow(row);

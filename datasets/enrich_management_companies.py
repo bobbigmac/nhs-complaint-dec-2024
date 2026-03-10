@@ -47,6 +47,21 @@ MANUAL_OVERRIDES: dict[str, tuple[str, str]] = {
     "Y02890": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Hawthorn MC
 }
 
+# Separate from core management. This captures federation, extended-hours, or other
+# network/operator links that may coexist with a different core practice operator.
+MANUAL_AFFILIATED_GROUP_OVERRIDES: dict[str, tuple[str, str, str, str]] = {
+    "P84034": ("South Manchester GP Federation Limited", "cqc_enhanced_access_manual_lookup", "medium", "smgpf.ltd"),
+    "P84043": ("South Manchester GP Federation Limited", "cqc_enhanced_access_manual_lookup", "medium", "smgpf.ltd"),
+    "P84021": ("South Manchester GP Federation Limited", "cqc_enhanced_access_manual_lookup", "medium", "smgpf.ltd"),
+    "P84045": ("South Manchester GP Federation Limited", "cqc_enhanced_access_manual_lookup", "medium", "smgpf.ltd"),
+    "P84004": ("Northern Health GPPO Limited", "cqc_location_manual_lookup", "medium", ""),
+    "P84064": ("Northern Health GPPO Limited", "cqc_location_manual_lookup", "medium", ""),
+    "Y01695": ("Northern Health GPPO Limited", "cqc_location_manual_lookup", "medium", ""),
+    "P84673": ("Northern Health GPPO Limited", "cqc_location_manual_lookup", "medium", ""),
+    "P84009": ("Primary Care Manchester Ltd", "practice_website_link_manual_lookup", "medium", "manchesterpcp.co.uk"),
+    "P84068": ("Primary Care Manchester Ltd", "practice_website_link_manual_lookup", "medium", "manchesterpcp.co.uk"),
+}
+
 
 def load_rows() -> list[dict[str, object]]:
     return json.loads(DATASET_JSON.read_text(encoding="utf-8"))
@@ -202,6 +217,11 @@ def apply_management_enrichment(rows: list[dict[str, object]]) -> list[dict[str,
         row.setdefault("management_company_confidence", "")
         row.setdefault("management_company_domain", "")
         row.setdefault("management_company_group_size", "")
+        row.setdefault("affiliated_group_name", "")
+        row.setdefault("affiliated_group_source", "")
+        row.setdefault("affiliated_group_confidence", "")
+        row.setdefault("affiliated_group_domain", "")
+        row.setdefault("affiliated_group_group_size", "")
 
         if bool(row.get("gtd_managed")):
             row["management_company_name"] = "GTD Healthcare"
@@ -230,10 +250,24 @@ def apply_management_enrichment(rows: list[dict[str, object]]) -> list[dict[str,
             row["management_company_domain"] = domain
             provisional_names.append(manager_name)
 
+        if code in MANUAL_AFFILIATED_GROUP_OVERRIDES:
+            group_name, source, confidence, domain = MANUAL_AFFILIATED_GROUP_OVERRIDES[code]
+            row["affiliated_group_name"] = group_name
+            row["affiliated_group_source"] = source
+            row["affiliated_group_confidence"] = confidence
+            row["affiliated_group_domain"] = domain
+
     name_counts = Counter(provisional_names)
+    affiliated_name_counts = Counter(
+        str(row.get("affiliated_group_name", ""))
+        for row in rows
+        if str(row.get("affiliated_group_name", ""))
+    )
     for row in rows:
         name = str(row.get("management_company_name", ""))
         row["management_company_group_size"] = name_counts.get(name, "") if name else ""
+        affiliated_name = str(row.get("affiliated_group_name", ""))
+        row["affiliated_group_group_size"] = affiliated_name_counts.get(affiliated_name, "") if affiliated_name else ""
     return rows
 
 
@@ -271,7 +305,19 @@ def main() -> int:
     write_all(rows)
     identified = sum(1 for row in rows if row.get("management_company_name"))
     distinct = len({row.get("management_company_name") for row in rows if row.get("management_company_name")})
-    print(json.dumps({"identified_count": identified, "distinct_count": distinct}, indent=2))
+    affiliated_identified = sum(1 for row in rows if row.get("affiliated_group_name"))
+    affiliated_distinct = len({row.get("affiliated_group_name") for row in rows if row.get("affiliated_group_name")})
+    print(
+        json.dumps(
+            {
+                "identified_count": identified,
+                "distinct_count": distinct,
+                "affiliated_identified_count": affiliated_identified,
+                "affiliated_distinct_count": affiliated_distinct,
+            },
+            indent=2,
+        )
+    )
     return 0
 
 

@@ -407,6 +407,22 @@ def summary_markdown(records: list[dict[str, Any]], source_dataset: Path, raw_ou
     return "\n".join(lines)
 
 
+def existing_survey_codes(raw_dir: Path) -> set[str]:
+    """Return ODS codes that already have survey data in raw_output_dir."""
+    if not raw_dir.exists():
+        return set()
+    codes: set[str] = set()
+    for path in raw_dir.glob("*.json"):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        code = str(payload.get("canonical_code", "")).strip()
+        if code and payload.get("fetch_status") == "ok":
+            codes.add(code)
+    return codes
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Collect GP Patient Survey practice data into raw JSON files plus a focused markdown summary.")
     parser.add_argument("--dataset-json", type=Path, default=DATASET_JSON)
@@ -415,9 +431,26 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--pause-min", type=float, default=0.15)
     parser.add_argument("--pause-max", type=float, default=0.35)
+    parser.add_argument(
+        "--missing-only",
+        action="store_true",
+        help="Only fetch for practices that have no survey data in raw_output_dir yet.",
+    )
+    parser.add_argument(
+        "--with-google-only",
+        action="store_true",
+        help="Only fetch for practices that have Google reviews (so we can compare). Use with --missing-only to fill gaps.",
+    )
     args = parser.parse_args()
 
     rows = load_dataset_rows(args.dataset_json)
+    if args.missing_only:
+        existing = existing_survey_codes(args.raw_output_dir)
+        rows = [r for r in rows if str(r.get("canonical_code", "")).strip() not in existing]
+        print(f"[--missing-only] {len(rows)} practices without survey data", file=sys.stderr)
+    if args.with_google_only:
+        rows = [r for r in rows if r.get("google_review_score")]
+        print(f"[--with-google-only] {len(rows)} practices with Google reviews", file=sys.stderr)
     if args.limit > 0:
         rows = rows[: args.limit]
 
