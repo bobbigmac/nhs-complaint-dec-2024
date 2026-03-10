@@ -530,6 +530,11 @@ def build_dataset() -> list[dict[str, Any]]:
             "source_search_center_count": len(practice.get("source_search_centers", [])),
             "registered_patient_count": registered_patient_counts.get(canonical_code, ""),
         }
+        record["registered_patient_count_source"] = "nhs_monthly_direct" if record["registered_patient_count"] != "" else ""
+        record["registered_patient_count_candidate"] = ""
+        record["registered_patient_count_candidate_code"] = ""
+        record["registered_patient_count_candidate_source"] = ""
+        record["registered_patient_count_candidate_confidence"] = ""
         record["management_company_name"] = "GTD Healthcare" if matched_anchor else ""
         record["management_company_source"] = "gtd_anchor_match" if matched_anchor else ""
         record["management_company_confidence"] = "high" if matched_anchor else ""
@@ -595,6 +600,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "affiliated_group_domain",
         "affiliated_group_group_size",
         "registered_patient_count",
+        "registered_patient_count_source",
+        "registered_patient_count_candidate",
+        "registered_patient_count_candidate_code",
+        "registered_patient_count_candidate_source",
+        "registered_patient_count_candidate_confidence",
         "google_review_score",
         "google_review_count",
         "google_review_source_note",
@@ -635,6 +645,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "affiliated_group_identified_count": sum(1 for row in rows if row.get("affiliated_group_name", "")),
         "affiliated_group_distinct_count": len({row.get("affiliated_group_name", "") for row in rows if row.get("affiliated_group_name", "")}),
         "registered_patient_count_coverage": sum(1 for row in rows if row.get("registered_patient_count", "") != ""),
+        "registered_patient_count_candidate_coverage": sum(1 for row in rows if row.get("registered_patient_count_candidate", "") != ""),
         "trustpilot_coverage_count": sum(1 for row in rows if row["trustpilot_score"] != ""),
         "postcode_area_count": len(postcodes),
         "postcode_areas": postcodes,
@@ -659,6 +670,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
             "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
             "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
+            "Registered patient count candidate fields are advisory only and are used for branch/site reconciliation without replacing the direct NHS monthly match.",
         ],
     }
     path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -687,6 +699,7 @@ Files:
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
 - `affiliated_group_*` fields in the CSV/JSON: separate network/federation/operator links that should not be treated as the core management company
 - `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
+- `registered_patient_count_candidate_*` fields: advisory branch/site reconciliation matches where the direct ODS code is absent from the NHS monthly list-size file
 
 Source basis:
 
@@ -710,6 +723,7 @@ Coverage snapshot:
 - Practices with affiliated group identified: {summary.get('affiliated_group_identified_count', 0)}
 - Distinct affiliated groups identified: {summary.get('affiliated_group_distinct_count', 0)}
 - Practices with registered patient count: {summary.get('registered_patient_count_coverage', 0)}
+- Practices with registered patient count candidate: {summary.get('registered_patient_count_candidate_coverage', 0)}
 - Google Maps scans completed: {summary.get('google_maps_total_scanned_count', 0)}
 - Google Maps manual review queue: {summary.get('google_maps_manual_review_count', 0)}
 
@@ -718,6 +732,7 @@ Caveats:
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
 - `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
 - `affiliated_group_*` fields may capture a federation, enhanced-hours operator, or similar network relationship even where the core management company is still blank.
+- `registered_patient_count_candidate_*` fields should be treated as branch/site hints and should not be summed as if they were additional registered patients.
 - Trustpilot fields are blank in this run because a reliable per-practice public source was not found.
 - GTD's Lindley Medical Practice was matched to the NHS profile currently published as `Lindley House Health Centre` at the same Oldham site.
 """
@@ -926,22 +941,6 @@ body {{
 .segmented input:checked + span {{
   background: var(--accent);
   color: #fff;
-}}
-.metric-legend {{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
-}}
-.metric-legend .row {{
-  padding: 4px 8px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(255,255,255,0.82);
-  font-size: 12px;
-}}
-.metric-legend .row.shape-row {{
-  background: rgba(76, 154, 82, 0.1);
 }}
 .metric-note {{
   margin-top: 6px;
@@ -1257,7 +1256,7 @@ body {{
     <div class="legend">
       <h1>GTD GP Practice Experience Map</h1>
       <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
-      <p>{total_registered_patients:,} registered patients across {registered_patient_rows} practices with matched patient-count data.</p>
+      <p>{total_registered_patients:,} registered patients across {registered_patient_rows} practices.</p>
       <div class="control-group">
         <h2>Score Source</h2>
         <div class="segmented">
@@ -1266,18 +1265,11 @@ body {{
           <label><input type="radio" name="score-source" value="gap"><span>Gap</span></label>
         </div>
         <p id="metric-description" class="hint"></p>
-        <div id="metric-legend" class="metric-legend"></div>
       </div>
       <div class="control-group">
-        <h2>Marker Size</h2>
-        <p id="size-description" class="hint"></p>
-      </div>
-      <div class="control-group">
-        <h2>Map Layer</h2>
         <div id="voronoi-control">
-          <label><input type="checkbox" id="voronoi-toggle"><span>Show Voronoi</span></label>
+          <label title="An estimated population/affected-people view. This is a rough vibes layer, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span></label>
         </div>
-        <p id="layer-description" class="hint"></p>
       </div>
       <h2>Management</h2>
       <p id="manager-hint" class="hint"></p>
@@ -1338,14 +1330,6 @@ const metricConfigs = {{
   google: {{
     title: 'Google rating',
     description: 'Google data here is from this repo\\'s merged review collection.',
-    legendRows: [
-      ['No rating', 'var(--missing)'],
-      ['0.0-1.9', 'var(--low)'],
-      ['2.0-2.9', 'var(--midlow)'],
-      ['3.0-3.9', 'var(--midhigh)'],
-      ['4.0-4.4', 'var(--high)'],
-      ['4.5+', 'var(--veryhigh)']
-    ],
     value(row) {{
       return numericOrNull(row.google_score);
     }},
@@ -1379,14 +1363,6 @@ const metricConfigs = {{
   survey: {{
     title: 'GP survey overall good %',
     description: 'GP Survey uses the official overall-experience-as-good percentage.',
-    legendRows: [
-      ['No survey score', 'var(--missing)'],
-      ['0-49%', 'var(--low)'],
-      ['50-59%', 'var(--midlow)'],
-      ['60-69%', 'var(--midhigh)'],
-      ['70-79%', 'var(--high)'],
-      ['80%+', 'var(--veryhigh)']
-    ],
     value(row) {{
       return numericOrNull(row.survey_overall_good_percent);
     }},
@@ -1420,12 +1396,6 @@ const metricConfigs = {{
   gap: {{
     title: 'Survey/Google gap',
     description: 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google.',
-    legendRows: [
-      ['Hidden if missing, zero-input, or <1.0', 'var(--missing)'],
-      ['1.0-1.49', 'var(--midhigh)'],
-      ['1.5-1.99', 'var(--midlow)'],
-      ['2.0+ apart', 'var(--low)']
-    ],
     value(row) {{
       const google = numericOrNull(row.google_score);
       const googleCount = numericOrNull(row.google_count);
@@ -1596,32 +1566,6 @@ function renderMetricLegend() {{
   const metric = metricConfigs[activeMetric];
   document.getElementById('metric-description').textContent = metric.description;
   document.getElementById('metric-description').className = 'hint metric-note';
-  const legend = document.getElementById('metric-legend');
-  legend.innerHTML = '';
-  const shapeRow = document.createElement('div');
-  shapeRow.className = 'row shape-row';
-  shapeRow.innerHTML = '<span class="swatch triangle" style="background: var(--midhigh)"></span><span>Selected group</span>';
-  legend.appendChild(shapeRow);
-  metric.legendRows.forEach(([label, color]) => {{
-    const row = document.createElement('div');
-    row.className = 'row';
-    row.innerHTML = `<span class="swatch circle" style="background: ${{color}}"></span><span>${{label}}</span>`;
-    legend.appendChild(row);
-  }});
-}}
-
-function renderSizeDescription() {{
-  const el = document.getElementById('size-description');
-  el.textContent = 'Marker size follows registered patient count from the NHS monthly GP registered patients totals file.';
-}}
-
-function renderLayerDescription() {{
-  const el = document.getElementById('layer-description');
-  if (voronoiShow) {{
-    el.textContent = 'Voronoi overlay splits the visible map into nearest-practice territory. Cell color follows the current score metric and cell opacity stays fixed.';
-    return;
-  }}
-  el.textContent = 'Markers show point locations, with color from the current score metric and size from registered patient count.';
 }}
 
 function clearOverlayLayers() {{
@@ -2310,8 +2254,6 @@ function renderScatterplot() {{
 
 function rerenderAll() {{
   renderMetricLegend();
-  renderSizeDescription();
-  renderLayerDescription();
   renderManagementList();
   clearOverlayLayers();
   renderMarkers();

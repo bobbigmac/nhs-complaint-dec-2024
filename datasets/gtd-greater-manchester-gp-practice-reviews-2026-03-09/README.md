@@ -19,6 +19,7 @@ Files:
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
 - `affiliated_group_*` fields in the CSV/JSON: separate network/federation/operator links that should not be treated as the core management company
 - `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
+- `registered_patient_count_candidate_*` fields: advisory branch/site reconciliation matches where the direct ODS code is absent from the NHS monthly list-size file
 
 Source basis:
 
@@ -42,13 +43,15 @@ Coverage snapshot:
 - Practices with affiliated group identified: 10
 - Distinct affiliated groups identified: 3
 - Practices with registered patient count: 360
-- Google Maps scans completed: 415
-- Google Maps manual review queue: 1
+- Practices with registered patient count candidate: 60
+- Google Maps scans completed: 0
+- Google Maps manual review queue: 0
 
 Caveats:
 
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
 - `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
 - `affiliated_group_*` fields may capture a federation, enhanced-hours operator, or similar network relationship even where the core management company is still blank.
+- `registered_patient_count_candidate_*` fields should be treated as branch/site hints and should not be summed as if they were additional registered patients.
 - Trustpilot fields are blank in this run because a reliable per-practice public source was not found.
 - GTD's Lindley Medical Practice was matched to the NHS profile currently published as `Lindley House Health Centre` at the same Oldham site.

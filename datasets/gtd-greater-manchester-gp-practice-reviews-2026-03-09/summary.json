@@ -13,6 +13,7 @@
   "affiliated_group_identified_count": 10,
   "affiliated_group_distinct_count": 3,
   "registered_patient_count_coverage": 360,
+  "registered_patient_count_candidate_coverage": 60,
   "trustpilot_coverage_count": 0,
   "postcode_area_count": 81,
   "postcode_areas": [
@@ -191,9 +192,7 @@
     "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
     "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
     "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
-    "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code."
-  ],
-  "google_maps_total_scanned_count": 415,
-  "google_maps_manual_review_count": 1,
-  "google_maps_flagged_result_count": 37
+    "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
+    "Registered patient count candidate fields are advisory only and are used for branch/site reconciliation without replacing the direct NHS monthly match."
+  ]
 }
