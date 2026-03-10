@@ -2309,5 +2309,28 @@
     "query_used": "Romiley Health Centre SK6 4QR",
     "title_match_score": 0.0,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/F8F0J-romiley-health-centre.txt"
+  },
+  {
+    "query": "The Quays Grappenhal Surgery WA4 2XT",
+    "google_maps_title": "Dr K Boyle - The Quays",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+K+Boyle+-+The+Quays/@53.3809557,-2.5443493,17z/data=!3m1!4b1!4m6!3m5!1s0x487b01c1e7d76b5f:0xc86fad52bda77412!8m2!3d53.3809557!4d-2.5443493!16s%2Fg%2F1yh9tzzk4?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.3,
+    "google_review_count": 6,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_rating_only",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "The Quays Grappenhal Surgery",
+    "postcode": "WA4 2XT",
+    "canonical_code": "N81108001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-quays-grappenhal-surgery/N81108001",
+    "query_used": "The Quays Grappenhal Surgery WA4 2XT",
+    "title_match_score": 0.25,
+    "review_text_file": ""
   }
 ]

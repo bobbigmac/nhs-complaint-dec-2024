@@ -1625,6 +1625,20 @@ function performancePercentile(values, subjectValue, metricName) {{
   return percentile(reversed, -subjectValue);
 }}
 
+function performanceCounts(values, subjectValue, metricName) {{
+  if (!values.length || subjectValue === null) return {{ better: 0, worse: 0 }};
+  if (comparisonSense(metricName) === 'higher') {{
+    return {{
+      better: values.filter((value) => subjectValue > value).length,
+      worse: values.filter((value) => subjectValue < value).length
+    }};
+  }}
+  return {{
+    better: values.filter((value) => subjectValue < value).length,
+    worse: values.filter((value) => subjectValue > value).length
+  }};
+}}
+
 function benchmarkStats(subjectRows, localRows, regionalRows, metricName, subjectMode) {{
   const subjectValues = metricValues(subjectRows, metricName);
   const localValues = metricValues(localRows, metricName);
@@ -1646,6 +1660,7 @@ function benchmarkStats(subjectRows, localRows, regionalRows, metricName, subjec
     regionalMedian: median(regionalValues),
     regionalCount: regionalValues.length,
     regionalPercentile: performancePercentile(regionalValues, subjectValue, metricName),
+    regionalPerformanceCounts: performanceCounts(regionalValues, subjectValue, metricName),
     completionValue,
     completionLocalMedian: median(completionLocalValues),
     completionLocalCount: completionLocalValues.length,
@@ -1720,7 +1735,10 @@ function renderComparisons() {{
     const localPhrase = benchmarkPhrase(stats.subjectValue, stats.localMedian, activeMetric, 'nearby');
     const regionalPhrase = benchmarkPhrase(stats.subjectValue, stats.regionalMedian, activeMetric, 'rest-of-dataset');
     const percentilePhrase = stats.regionalPercentile === null ? '' : ` It ranks around the ${{Math.round(stats.regionalPercentile)}}th percentile against the rest of the dataset.`;
-    return `${{label}} is ${{localPhrase}} and ${{regionalPhrase}} on ${{metric.title.toLowerCase()}}.${{percentilePhrase}}`;
+    const countPhrase = !stats.regionalCount
+      ? ''
+      : ` It is doing better than ${{stats.regionalPerformanceCounts.better}} practices and worse than ${{stats.regionalPerformanceCounts.worse}} practices in the rest of this dataset.`;
+    return `${{label}} is ${{localPhrase}} and ${{regionalPhrase}} on ${{metric.title.toLowerCase()}}.${{percentilePhrase}}${{countPhrase}}`;
   }};
   const newBankCard = !newBank
     ? comparisonCardMarkup('New Bank Health', 'Not found in current row set', 'The page could not find the New Bank row in the current dataset build.', '')
