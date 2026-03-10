@@ -31,9 +31,9 @@ Coverage snapshot:
 - total rows: 355
 - GTD-managed rows: 13
 - non-GTD nearby rows: 342
-- Google review coverage rows: 325
-- Google Maps direct coverage rows: 323
-- Review text files written: 285
+- Google review coverage rows: 326
+- Google Maps direct coverage rows: 324
+- Review text files written: 286
 - Practices with management company identified: 49
 - Distinct management companies identified: 13
 - Google Maps scans completed: 355

@@ -1,6 +1,6 @@
 # Google Maps Manual Review Queue
 
-Generated from 32 flagged Google Maps capture records.
+Generated from 31 flagged Google Maps capture records.
 
 ## Manual Review Required
 
@@ -14,8 +14,7 @@ Generated from 32 flagged Google Maps capture records.
 
 | Practice | Code | Match score | Google title | URL |
 | --- | --- | --- | --- | --- |
-| Tonge Fold Health Centre | P82011 | 0.0 | Dr Lowe & Partners | [link](https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOcUxTMUlZVTVCRUFF4AEA-gEECFcQQA!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
-| St Helens Road Practice | P82009 | 0.0 | Garnet Fold Practice | [link](https://www.google.com/maps/place/Garnet+Fold+Practice/@53.5595878,-2.4624774,17z/data=!4m12!1m2!2m1!1sSt+Helens+Road+Practice+BL3+3RR!3m8!1s0x487ba7eab647189d:0xc6a2faab0268f290!8m2!3d53.5595878!4d-2.4577138!9m1!1b1!15sCh9TdCBIZWxlbnMgUm9hZCBQcmFjdGljZSBCTDMgM1JSkgEGZG9jdG9y4AEA!16s%2Fg%2F11bzsx9cc1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Tonge Fold Health Centre | P82011 | 0.0 | Dr Lowe & Partners | [link](https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOb09HRkhaWHBCUlJBQuABAPoBBAhCEC8!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Deane Surgery | P82030001 | 0.0 | Jamie A'Court | [link](https://www.google.com/maps/place/Jamie+A'Court/@53.580816,-2.5166214,15z/data=!4m11!1m2!2m1!1sDeane+Surgery+BL3+5AH!3m7!1s0x487ba7bf6051a4e7:0xd1e3ca5668acfdb1!8m2!3d53.5808164!4d-2.4985966!9m1!1b1!16s%2Fg%2F11xftrxsxt?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | AL Fal Medical Group | P82640 | 0.0 | R Falouji | [link](https://www.google.com/maps/place/R+Falouji/@53.5731346,-2.4455869,17z/data=!4m8!3m7!1s0x487ba7a565b060c3:0xcc3f065789e57670!8m2!3d53.5731346!4d-2.4455869!9m1!1b1!16s%2Fg%2F1tffz15t?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Pikes Lane 1 | P82002 | 0.4 | Dr Mirza and Partners - Pikes Lane Centre | [link](https://www.google.com/maps/place/Dr+Mirza+and+Partners+-+Pikes+Lane+Centre/@53.5731374,-2.4453425,17z/data=!4m8!3m7!1s0x487ba7a56cad36ad:0x88ee6508a670ebe1!8m2!3d53.5731374!4d-2.4453425!9m1!1b1!16s%2Fg%2F1yh9tz9rr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |

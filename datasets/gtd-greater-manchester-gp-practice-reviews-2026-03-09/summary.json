@@ -5,9 +5,9 @@
   "row_count": 355,
   "gtd_managed_count": 13,
   "non_gtd_count": 342,
-  "google_review_coverage_count": 325,
-  "google_maps_direct_coverage_count": 323,
-  "google_review_text_file_count": 285,
+  "google_review_coverage_count": 326,
+  "google_maps_direct_coverage_count": 324,
+  "google_review_text_file_count": 286,
   "management_company_identified_count": 49,
   "management_company_distinct_count": 13,
   "trustpilot_coverage_count": 0,
@@ -165,5 +165,5 @@
   ],
   "google_maps_total_scanned_count": 355,
   "google_maps_manual_review_count": 3,
-  "google_maps_flagged_result_count": 32
+  "google_maps_flagged_result_count": 31
 }

@@ -70,7 +70,7 @@
   {
     "query": "Tonge Fold Health Centre BL2 6DY",
     "google_maps_title": "Dr Lowe & Partners",
-    "google_maps_url": "https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOcUxTMUlZVTVCRUFF4AEA-gEECFcQQA!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOb09HRkhaWHBCUlJBQuABAPoBBAhCEC8!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
     "google_rating": 3.9,
     "google_review_count": 42,
     "clicked_first_search_result": true,
@@ -160,100 +160,6 @@
     "query_used": "Tonge Fold Health Centre BL2 6DY",
     "title_match_score": 0.0,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P82011-tonge-fold-health-centre.txt"
-  },
-  {
-    "query": "St Helens Road Practice BL3 3RR",
-    "google_maps_title": "Garnet Fold Practice",
-    "google_maps_url": "https://www.google.com/maps/place/Garnet+Fold+Practice/@53.5595878,-2.4624774,17z/data=!4m12!1m2!2m1!1sSt+Helens+Road+Practice+BL3+3RR!3m8!1s0x487ba7eab647189d:0xc6a2faab0268f290!8m2!3d53.5595878!4d-2.4577138!9m1!1b1!15sCh9TdCBIZWxlbnMgUm9hZCBQcmFjdGljZSBCTDMgM1JSkgEGZG9jdG9y4AEA!16s%2Fg%2F11bzsx9cc1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 3.2,
-    "google_review_count": 34,
-    "clicked_first_search_result": false,
-    "page_kind": "place",
-    "scan_status": "ok_with_visible_reviews",
-    "manual_review_required": false,
-    "retry_recommended": false,
-    "reviews_opened": true,
-    "reviews_sorted_newest": true,
-    "visible_review_cards_collected": 10,
-    "recent_reviews": [
-      {
-        "author": "sarah brown",
-        "relative_date": "Edited a week ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "sarah brownEdited a week ago"
-      },
-      {
-        "author": "Peter Kearsley",
-        "relative_date": "3 months ago",
-        "star_label": "1 star",
-        "text": "My experience with the Doctors at garnet fold is not good they cannot get my thyroid levels right in over two years according to mr Akram I\u2019m not giving it time for the medication to work I\u2019ve had about 8 or 9 blood test up or down not one have come normal I\u2019m having to got private for the test I really need endocrinology I\u2019ve should have been referred months ago the issues I\u2019ve had have awful suicidal thoughts out of breath feeling such wrenching mood swings I\u2019m not well",
-        "raw_card_text": "Peter Kearsley1 review3 months ago My experience with the Doctors at garnet fold is not good they cannot get my thyroid levels right in over two years according to mr Akram I\u2019m not giving it time for the medication to work I\u2019ve had about 8 or 9 blood test up or down not one have come normal I\u2019m having to got private for the test I really need endocrinology I\u2019ve should have been referred months ago the issues I\u2019ve had have awful suicidal thoughts out of breath feeling such wrenching mood swings I\u2019m not wellLike Share"
-      },
-      {
-        "author": "Ellis Birtles",
-        "relative_date": "3 months ago",
-        "star_label": "1 star",
-        "text": "I have been a patient at this practice for over 10 years and unfortunately the quality of care has declined significantly. I have been suffering with rectal bleeding and recurrent abscesses for several years, and despite repeatedly asking for further investigation, I have consistently been dismissed. Last week I attended the surgery with heavy rectal bleeding. The doctor would not make eye contact, did not offer a chaperone before asking me to lie on the bed with my underwear down, and carried out no proper examination such as pressing on my abdomen. When I tried to explain my symptoms, I was told to leave the room for being \u201crude\u201d, even though I was in distress. No help was given, and I was simply told to book another appointment six days later. Because of this, I contacted 111 who sent me to the hospital within an hour due to the seriousness of my symptoms. This is not the first time I\u2019ve had to go through 111 or A&E because the practice would not help. Over the years, my abscesses have repeatedly been dismissed as \u201cboils\u201d and I have only been given mild antibiotics. I have now finally seen a dermatologist who believes my symptoms may be linked to inflammatory bowel disease, something I have been worried about for years but the practice refused to investigate. The reception staff often come across rushed and unfriendly, and I leave most interactions feeling patronised and unheard. Even when I raised my concerns with the practice manager, I felt dismissed again. All I want is to be listened to and to receive proper care. After years of pain, worry, and being ignored, I can no longer trust this practice with my health.",
-        "raw_card_text": "Ellis Birtles5 reviews \u00b7 1 photo3 months ago I have been a patient at this practice for over 10 years and unfortunately the quality of care has declined significantly. I have been suffering with rectal bleeding and recurrent abscesses for several years, and despite repeatedly asking for further investigation, I have consistently been dismissed. Last week I attended the surgery with heavy rectal bleeding. The doctor would not make eye contact, did not offer a chaperone before asking me to lie on the bed with my underwear down, and carried out no proper examination such as pressing on my abdomen. When I tried to explain my symptoms, I was told to leave the room for being \u201crude\u201d, even though I was in distress. No help was given, and I was simply told to book another appointment six days later. Because of this, I contacted 111 who sent me to the hospital within an hour due to the seriousness of my symptoms. This is not the first time I\u2019ve had to go through 111 or A&E because the practice would not help. Over the years, my abscesses have repeatedly been dismissed as \u201cboils\u201d and I have only been given mild antibiotics. I have now finally seen a dermatologist who believes my symptoms may be linked to inflammatory bowel disease, something I have been worried about for years but the practice refused to investigate. The reception staff often come across rushed and unfriendly, and I leave most interactions feeling patronised and unheard. Even when I raised my concerns with the practice manager, I felt dismissed again. All I want is to be listened to and to receive proper care. After years of pain, worry, and being ignored, I can no longer trust this practice with my health.Like Share"
-      },
-      {
-        "author": "Talib Issa",
-        "relative_date": "4 months ago",
-        "star_label": "2 stars",
-        "text": "Amazing how many calls, texts, emails I get for a stupid flu jab. But for my blood test results I have to phone in they dont call you. My results, I need to speak to the doctor but they cant make appointment I have to fill an online form and they will then call me eventually, but for flu jab, I will get appointment straight away. amazing...",
-        "raw_card_text": "Talib IssaLocal Guide \u00b7 9 reviews \u00b7 12 photos4 months ago Amazing how many calls, texts, emails I get for a stupid flu jab. But for my blood test results I have to phone in they dont call you. My results, I need to speak to the doctor but they cant make appointment I have to fill an online form and they will then call me eventually, but for flu jab, I will get appointment straight away. amazing...Like Share"
-      },
-      {
-        "author": "christopher brooks",
-        "relative_date": "5 months ago",
-        "star_label": "5 stars",
-        "text": "According to the broadcast and print media the NHS is creaking . Well nobody told this fantastic GP practice ! From reception answering the phone to the great team of doctors nurses and health care assistants who have helped me a number of different physical and mental health challenges no words can do justice to the care and support that I have received . I only gave 5 stars because I can\u2019t give 6",
-        "raw_card_text": "christopher brooksLocal Guide \u00b7 29 reviews5 months ago According to the broadcast and print media the NHS is creaking . Well nobody told this fantastic GP practice ! From reception answering the phone to the great team of doctors nurses and health care assistants who have helped me a number of different physical and mental health challenges no words can do justice to the care and support that I have received . I only gave 5 stars because I can\u2019t give 6Like Share"
-      },
-      {
-        "author": "Jean Cummings",
-        "relative_date": "Edited 5 months ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "Jean Cummings3 reviewsEdited 5 months ago"
-      },
-      {
-        "author": "Zahra fatime Raza",
-        "relative_date": "11 months ago",
-        "star_label": "4 stars",
-        "text": "It\u2019s been always a good experience. Every time I get appointment on time and they are really helpful",
-        "raw_card_text": "Zahra fatime Raza3 reviews \u00b7 1 photo11 months ago It\u2019s been always a good experience. Every time I get appointment on time and they are really helpfulLike Share"
-      },
-      {
-        "author": "khalid karwa",
-        "relative_date": "a year ago",
-        "star_label": "5 stars",
-        "text": "Had an appointment this morning for for my sons blood test. This was carried out by Robert who was brilliant, polite and professional. Nice visit to the clinic, thanks.",
-        "raw_card_text": "khalid karwa12 reviews \u00b7 4 photosa year ago Had an appointment this morning for for my sons blood test. This was carried out by Robert who was brilliant, polite and professional. Nice visit to the clinic, thanks.Like Share"
-      },
-      {
-        "author": "Muhammad Idrees",
-        "relative_date": "Edited a year ago",
-        "star_label": "5 stars",
-        "text": "wonderful service by whole team, especially by Doctor Ikram.",
-        "raw_card_text": "Muhammad Idrees8 reviewsEdited a year ago wonderful service by whole team, especially by Doctor Ikram.Like Share"
-      },
-      {
-        "author": "ellie d",
-        "relative_date": "a year ago",
-        "star_label": "1 star",
-        "text": "Disgusting practice. Rude and unhelpful staff. My boyfriend is asthmatic and struggles a lot with his breathing at the best of times, he is suffering with recurrent chest infections with some horrible side effects, today he was given a tele consult, may I add with some difficulty, to then be told by the DOCTOR he will have to call back tomorrow for a f2f appt. I work in a GP surgery myself and understand the reception staff do have to be lenient on what appts they are giving out I really do understand that, but to be told by a doctor in a consult there is nothing they can do over the phone and to call back tomorrow is disgusting. You do not leave an asthmatic patient to just deal with struggling to breathe and tell them to try another day, especially not during a tele consult!! I\u2019ve never heard anything like this practice in my life, my boyfriend and his family have had nothing but difficulty from this practice right from the beginning with the rude reception staff through to the doctors. The list could go on with the things I have seen and heard, these people are putting their health in your hands and you are not doing your job!! I would not recommend this practice, and would suggest going elsewhere!",
-        "raw_card_text": "ellie d2 reviewsa year ago Disgusting practice. Rude and unhelpful staff. My boyfriend is asthmatic and struggles a lot with his breathing at the best of times, he is suffering with recurrent chest infections with some horrible side effects, today he was given a tele consult, may I add with some difficulty, to then be told by the DOCTOR he will have to call back tomorrow for a f2f appt. I work in a GP surgery myself and understand the reception staff do have to be lenient on what appts they are giving out I really do understand that, but to be told by a doctor in a consult there is nothing they can do over the phone and to call back tomorrow is disgusting. You do not leave an asthmatic patient to just deal with struggling to breathe and tell them to try another day, especially not during a tele consult!! I\u2019ve never heard anything like this practice in my life, my boyfriend and his family have had nothing but difficulty from this practice right from the beginning with the rude reception staff through to the doctors. The list could go on with the things I have seen and heard, these people are putting their health in your hands and you are not doing your job!! I would not recommend this practice, and would suggest going elsewhere!Like4 Share"
-      }
-    ],
-    "practice_name": "St Helens Road Practice",
-    "postcode": "BL3 3RR",
-    "canonical_code": "P82009",
-    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/st-helens-road-practice/P82009",
-    "query_used": "St Helens Road Practice BL3 3RR",
-    "title_match_score": 0.0,
-    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P82009-st-helens-road-practice.txt"
   },
   {
     "query": "Deane Surgery BL3 5AH",

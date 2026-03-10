@@ -2844,7 +2844,7 @@
   {
     "query": "Tonge Fold Health Centre BL2 6DY",
     "google_maps_title": "Dr Lowe & Partners",
-    "google_maps_url": "https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOcUxTMUlZVTVCRUFF4AEA-gEECFcQQA!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOb09HRkhaWHBCUlJBQuABAPoBBAhCEC8!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
     "google_rating": 3.9,
     "google_review_count": 42,
     "clicked_first_search_result": true,
@@ -3665,7 +3665,7 @@
   },
   {
     "query": "St Helens Road Practice BL3 3RR",
-    "google_maps_title": "Garnet Fold Practice",
+    "google_maps_title": "St Helens Road Practice BL3 3RR",
     "google_maps_url": "https://www.google.com/maps/place/Garnet+Fold+Practice/@53.5595878,-2.4624774,17z/data=!4m12!1m2!2m1!1sSt+Helens+Road+Practice+BL3+3RR!3m8!1s0x487ba7eab647189d:0xc6a2faab0268f290!8m2!3d53.5595878!4d-2.4577138!9m1!1b1!15sCh9TdCBIZWxlbnMgUm9hZCBQcmFjdGljZSBCTDMgM1JSkgEGZG9jdG9y4AEA!16s%2Fg%2F11bzsx9cc1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
     "google_rating": 3.2,
     "google_review_count": 34,
@@ -3754,7 +3754,7 @@
     "canonical_code": "P82009",
     "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/st-helens-road-practice/P82009",
     "query_used": "St Helens Road Practice BL3 3RR",
-    "title_match_score": 0.0,
+    "title_match_score": 1.0,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P82009-st-helens-road-practice.txt"
   },
   {
