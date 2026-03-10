@@ -61,6 +61,13 @@ SUPPLEMENTAL_SEARCH_CENTERS = [
     SupplementalSearchCenter("Baguley supplemental search", "M23 9JH", "Pull in Baguley, Brooklands, Northern Moor and nearby south Manchester practices"),
     SupplementalSearchCenter("Stretford supplemental search", "M32 0JG", "Pull in Trafford / Stretford / west Manchester practices"),
     SupplementalSearchCenter("Sale supplemental search", "M33 7ZF", "Pull in Sale-side practices that the GTD anchors miss"),
+    SupplementalSearchCenter("Prestwich supplemental search", "M25 1BT", "Pull in north-west Manchester / Prestwich-side practices inside and just beyond the M60"),
+    SupplementalSearchCenter("Radcliffe supplemental search", "M26 1LS", "Pull in Radcliffe-side practices around the north-west arc beyond the M60"),
+    SupplementalSearchCenter("Swinton supplemental search", "M27 4AA", "Pull in Swinton and Pendlebury-side practices on the north-west / west side of the M60"),
+    SupplementalSearchCenter("Little Hulton supplemental search", "M28 0BQ", "Pull in Walkden, Little Hulton and nearby western-edge practices around the M60"),
+    SupplementalSearchCenter("Whitefield supplemental search", "M45 8WF", "Pull in Whitefield and Bury-south practices around the north-west arc of the M60"),
+    SupplementalSearchCenter("Salford Quays supplemental search", "M50 3UB", "Pull in Salford Quays / Ordsall-side practices inside the western side of the M60"),
+    SupplementalSearchCenter("Partington supplemental search", "M31 4FL", "Pull in Partington, Carrington and nearby outer-west practices around the M60"),
 ]
 
 
@@ -462,6 +469,10 @@ def build_dataset() -> list[dict[str, Any]]:
         record["min_distance_to_gtd_anchor_miles"] = round(min_distance, 3) if min_distance is not None else ""
         google = lookup_google_reviews(record["practice_name"], record["street_address"])
         record.update(google)
+        record["google_maps_title"] = ""
+        record["google_maps_match_score"] = ""
+        record["google_recent_reviews_captured"] = ""
+        record["google_review_text_file"] = ""
         record["trustpilot_score"] = ""
         record["trustpilot_review_count"] = ""
         record["trustpilot_source_url"] = ""
@@ -494,6 +505,10 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "google_review_count",
         "google_review_source_note",
         "google_review_source_url",
+        "google_maps_title",
+        "google_maps_match_score",
+        "google_recent_reviews_captured",
+        "google_review_text_file",
         "trustpilot_score",
         "trustpilot_review_count",
         "trustpilot_source_url",
@@ -519,6 +534,8 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "gtd_managed_count": sum(1 for row in rows if row["gtd_managed"]),
         "non_gtd_count": sum(1 for row in rows if not row["gtd_managed"]),
         "google_review_coverage_count": sum(1 for row in rows if row["google_review_score"] != ""),
+        "google_maps_direct_coverage_count": sum(1 for row in rows if "Google Maps direct" in str(row.get("google_review_source_note", ""))),
+        "google_review_text_file_count": sum(1 for row in rows if row.get("google_review_text_file", "")),
         "trustpilot_coverage_count": sum(1 for row in rows if row["trustpilot_score"] != ""),
         "postcode_area_count": len(postcodes),
         "postcode_areas": postcodes,
@@ -536,7 +553,8 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "Google review fields were only filled when an exact or high-confidence Just Visits match was available.",
             "Trustpilot fields were left blank because no reliable per-practice public source was found in this run.",
             "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
-            "Additional south and west Manchester coverage was added with explicit supplemental NHS search centres.",
+            "Additional south, west and north-west Greater Manchester coverage was added with explicit supplemental NHS search centres.",
+            "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
         ],
     }
     path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -559,6 +577,9 @@ Files:
 - `gtd_greater_manchester_gp_practices.json`: JSON export
 - `summary.json`: dataset counts and source notes
 - `map.html`: Leaflet map for local viewing
+- `google_maps_recent_reviews.json`: raw structured Google Maps capture output
+- `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
+- `google-review-texts/`: per-practice text files for any captured visible Google review text
 
 Source basis:
 
@@ -566,7 +587,7 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
-- Supplemental south/west Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M32 0JG, M33 7ZF
+- Supplemental broader Greater Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M25 1BT, M26 1LS, M27 4AA, M28 0BQ, M31 4FL, M32 0JG, M33 7ZF, M45 8WF, M50 3UB
 
 Coverage snapshot:
 
@@ -574,6 +595,10 @@ Coverage snapshot:
 - GTD-managed rows: {summary['gtd_managed_count']}
 - non-GTD nearby rows: {summary['non_gtd_count']}
 - Google review coverage rows: {summary['google_review_coverage_count']}
+- Google Maps direct coverage rows: {summary['google_maps_direct_coverage_count']}
+- Review text files written: {summary['google_review_text_file_count']}
+- Google Maps scans completed: {summary.get('google_maps_total_scanned_count', 0)}
+- Google Maps manual review queue: {summary.get('google_maps_manual_review_count', 0)}
 
 Caveats:
 
@@ -594,6 +619,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
             "gtd": row["gtd_managed"],
             "google_score": row["google_review_score"],
             "google_count": row["google_review_count"],
+            "google_source_note": row.get("google_review_source_note", ""),
+            "google_text_file": row.get("google_review_text_file", ""),
             "nhs_url": row["nhs_profile_url"],
             "gtd_url": row["gtd_site_url"],
             "nearby": row["nearby_to_gtd_anchors"],
@@ -749,12 +776,16 @@ for (const row of rows) {{
   }});
   const marker = L.marker([row.lat, row.lon], {{ icon }}).addTo(map);
   const google = row.google_score !== "" ? `<div>Google: ${'{'}Number(row.google_score).toFixed(1){'}'} (${ '{' }row.google_count{'}'} reviews)</div>` : '<div>Google: ?</div>';
+  const googleSource = row.google_source_note ? `<div>Source: ${'{'}row.google_source_note{'}'}</div>` : '';
+  const googleText = row.google_text_file ? `<div><a href="${'{'}row.google_text_file{'}'}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
   const gtd = row.gtd_url ? `<div><a href="${'{'}row.gtd_url{'}'}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
   marker.bindPopup(`
     <strong>${'{'}row.name{'}'}</strong><br>
     ${'{'}row.postcode{'}'}<br>
     <div>Near: ${'{'}row.nearby{'}'}</div>
     ${'{'}google{'}'}
+    ${'{'}googleSource{'}'}
+    ${'{'}googleText{'}'}
     <div><a href="${'{'}row.nhs_url{'}'}" target="_blank" rel="noreferrer">NHS page</a></div>
     ${'{'}gtd{'}'}
   `);

@@ -13,6 +13,9 @@ Files:
 - `gtd_greater_manchester_gp_practices.json`: JSON export
 - `summary.json`: dataset counts and source notes
 - `map.html`: Leaflet map for local viewing
+- `google_maps_recent_reviews.json`: raw structured Google Maps capture output
+- `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
+- `google-review-texts/`: per-practice text files for any captured visible Google review text
 
 Source basis:
 
@@ -20,14 +23,18 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
-- Supplemental south/west Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M32 0JG, M33 7ZF
+- Supplemental broader Greater Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M25 1BT, M26 1LS, M27 4AA, M28 0BQ, M31 4FL, M32 0JG, M33 7ZF, M45 8WF, M50 3UB
 
 Coverage snapshot:
 
-- total rows: 258
+- total rows: 355
 - GTD-managed rows: 13
-- non-GTD nearby rows: 245
-- Google review coverage rows: 12
+- non-GTD nearby rows: 342
+- Google review coverage rows: 55
+- Google Maps direct coverage rows: 45
+- Review text files written: 41
+- Google Maps scans completed: 63
+- Google Maps manual review queue: 15
 
 Caveats:
 
