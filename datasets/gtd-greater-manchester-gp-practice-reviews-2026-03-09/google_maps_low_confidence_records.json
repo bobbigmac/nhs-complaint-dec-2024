@@ -616,5 +616,193 @@
     "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/hawthorn-mc/Y02890",
     "title_match_score": 0.333,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y02890-hawthorn-mc.txt"
+  },
+  {
+    "query": "Windermere Surgery M24 5WF",
+    "google_maps_title": "Windermere Road Doctors Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Windermere+Road+Doctors+Surgery/@53.5596373,-2.2056504,17z/data=!4m8!3m7!1s0x487bba6600feeb19:0xaa3843413ab37e5b!8m2!3d53.5596373!4d-2.2056504!9m1!1b1!16s%2Fg%2F1tkf0j8l?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.6,
+    "google_review_count": 28,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Leanne",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "LeanneLocal Guide \u00b7 15 reviews \u00b7 9 photosa month ago"
+      },
+      {
+        "author": "Hector Garcia",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Hector GarciaLocal Guide \u00b7 59 reviews \u00b7 3 photos4 months ago"
+      },
+      {
+        "author": "Iziegbe Osahon",
+        "relative_date": "5 months ago",
+        "star_label": "1 star",
+        "text": "They are so rude, they dont have child appointment. They should have after school appointment for children and they are not consistent",
+        "raw_card_text": "Iziegbe Osahon3 reviews5 months ago They are so rude, they dont have child appointment. They should have after school appointment for children and they are not consistentLike Share"
+      },
+      {
+        "author": "Danika Laidlaw",
+        "relative_date": "7 months ago",
+        "star_label": "1 star",
+        "text": "Worse doctors in the world. The receptionist are even worse apart from one. Karen cant do her job, she does the opposite you ask her to do. Dosent know what to do. Even when you speak to mandy the manager she shouts at you. And even sticks up for karen even when she doesnt do her job properly. Their bo regular doctors they are different all the time, so u cant build up a relationship with them. You have go through your history again and again. I seriously wouldnt recommend this.doctors",
+        "raw_card_text": "Danika Laidlaw3 reviews7 months ago Worse doctors in the world. The receptionist are even worse apart from one. Karen cant do her job, she does the opposite you ask her to do. Dosent know what to do. Even when you speak to mandy the manager she shouts at you. And even sticks up for karen even when she doesnt do her job properly. Their bo regular doctors they are different all the time, so u cant build up a relationship with them. You have go through your history again and again. I seriously wouldnt recommend this.doctorsLike Share"
+      },
+      {
+        "author": "Sylvia Finlay",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Sylvia Finlay4 reviewsa year ago"
+      },
+      {
+        "author": "Patrycja",
+        "relative_date": "a year ago",
+        "star_label": "1 star",
+        "text": "Very unfriendly and not nice ladies at the reception. I have a confirmation of the appointment booked with the doctor on the card. When I arrive, the unpleasant lady tells me that I should call on Monday morning to make another appointment. because there is no visit from me. no one cares about my ailments, she didn't even bother to ask what I came for, only if I had a problem, I went to the manager.",
+        "raw_card_text": "Patrycja8 reviews \u00b7 5 photosa year ago Very unfriendly and not nice ladies at the reception. I have a confirmation of the appointment booked with the doctor on the card. When I arrive, the unpleasant lady tells me that I should call on Monday morning to make another appointment. because there is no visit from me. no one cares about my ailments, she didn't even bother to ask what I came for, only if I had a problem, I went to the manager.Like Share"
+      },
+      {
+        "author": "Darrel Bancroft",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "Stay away not the best",
+        "raw_card_text": "Darrel Bancroft2 reviews2 years ago Stay away not the bestLike Share"
+      },
+      {
+        "author": "Marika Sedlak",
+        "relative_date": "2 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Marika Sedlak4 reviews \u00b7 3 photos2 years ago"
+      },
+      {
+        "author": "Muhammad Shahid",
+        "relative_date": "2 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Muhammad Shahid1 review2 years ago"
+      },
+      {
+        "author": "z z",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "",
+        "raw_card_text": "z z1 review2 years ago"
+      }
+    ],
+    "practice_name": "Windermere Surgery",
+    "postcode": "M24 5WF",
+    "canonical_code": "P86620",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/windermere-surgery/P86620",
+    "query_used": "Windermere Surgery M24 5WF",
+    "title_match_score": 0.333,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86620-windermere-surgery.txt"
+  },
+  {
+    "query": "Red Bank Group Practice M26 2SP",
+    "google_maps_title": "Redbank Group Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Redbank+Group+Practice/@53.5606766,-2.3276567,17z/data=!4m12!1m2!2m1!1sRed+Bank+Group+Practice+M26+2SP!3m8!1s0x487ba57516b45a67:0xd1e8f1e50f87dd78!8m2!3d53.5606766!4d-2.3231506!9m1!1b1!15sCh9SZWQgQmFuayBHcm91cCBQcmFjdGljZSBNMjYgMlNQkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc2llwzv?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.6,
+    "google_review_count": 115,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Margaret Bailey-varey",
+        "relative_date": "2 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Margaret Bailey-varey14 reviews2 days ago New"
+      },
+      {
+        "author": "Margaret Liberman",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "I have been with this practice for many years and I have never had reason to complain. Just recently I have been seen a few times by Dr Amir and he has been so kind and helpful.",
+        "raw_card_text": "Margaret Liberman2 reviews3 days ago New I have been with this practice for many years and I have never had reason to complain. Just recently I have been seen a few times by Dr Amir and he has been so kind and helpful.Like Share"
+      },
+      {
+        "author": "Linda bray",
+        "relative_date": "a week ago",
+        "star_label": "1 star",
+        "text": "If you wont an appointment and you work , it is impossible to get one ,",
+        "raw_card_text": "Linda bray2 reviewsa week ago New If you wont an appointment and you work , it is impossible to get one ,Like Share"
+      },
+      {
+        "author": "Alan White",
+        "relative_date": "a month ago",
+        "star_label": "4 stars",
+        "text": "Staff are universally great - friendly, welcoming, and they don't make you feel rushed. AskMyGP could be better as it fills up really quickly, usually by 8am. A separare channel for non-urgent queries and requests would be useful, and would avoid using up AskMyGP capacity unnecesarily.",
+        "raw_card_text": "Alan White7 reviewsa month ago Staff are universally great - friendly, welcoming, and they don't make you feel rushed. AskMyGP could be better as it fills up really quickly, usually by 8am. A separare channel for non-urgent queries and requests would be useful, and would avoid using up AskMyGP capacity unnecesarily.Like Share"
+      },
+      {
+        "author": "Karen DOYLE",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Karen DOYLE4 reviewsa month ago"
+      },
+      {
+        "author": "Liz Mottershead",
+        "relative_date": "2 months ago",
+        "star_label": "1 star",
+        "text": "I would like to know why I can never get an appointment even when urgent and no help from Reception only \"just keep trying \". Terrible",
+        "raw_card_text": "Liz Mottershead13 reviews2 months ago I would like to know why I can never get an appointment even when urgent and no help from Reception only \"just keep trying \". TerribleLike Share"
+      },
+      {
+        "author": "Cheryl Wallis",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Once you know how to use the \u201cask my GP\u201dsystem properly you will have no problem getting assistance for anything. The nurses are always brilliant and the reception team really try their best. Ive had trouble in past booking appointments and being heard but when you know how to use it properly it works well. The doctors are knowledgeable and quick especially Dr Miranda.",
+        "raw_card_text": "Cheryl WallisLocal Guide \u00b7 14 reviews \u00b7 1 photo3 months ago Once you know how to use the \u201cask my GP\u201dsystem properly you will have no problem getting assistance for anything. The nurses are always brilliant and the reception team really try their best. Ive had trouble in past booking appointments and being heard but when you know how to use it properly it works well. The doctors are knowledgeable and quick especially Dr Miranda.Like Share"
+      },
+      {
+        "author": "Me woller",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "I find the \u2018Ask my GP\u2019 system works well, although since it changed recently I find there\u2019s not always enough characters allowed to explain my problem fully . The response has always been good on the same day or the following day and my problem sorted out as fast as possible even when an ultras scan was required .",
+        "raw_card_text": "Me woller4 reviews3 months ago I find the \u2018Ask my GP\u2019 system works well, although since it changed recently I find there\u2019s not always enough characters allowed to explain my problem fully . The response has always been good on the same day or the following day and my problem sorted out as fast as possible even when an ultras scan was required .Like Share"
+      },
+      {
+        "author": "Davi M",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Nice GP, the staff is very helpful and so far I have no complaints, the opposite,.I'm really thankful.",
+        "raw_card_text": "Davi MLocal Guide \u00b7 27 reviews \u00b7 2 photos3 months ago Nice GP, the staff is very helpful and so far I have no complaints, the opposite,.I'm really thankful.Like Share"
+      },
+      {
+        "author": "Zoe-Louise Green",
+        "relative_date": "3 months ago",
+        "star_label": "2 stars",
+        "text": "Ask my GP system is absolutely nightmare I'm only 27 and I'm scared to get ill because it's such a ballache to get an appointment",
+        "raw_card_text": "Zoe-Louise Green6 reviews3 months ago Ask my GP system is absolutely nightmare I'm only 27 and I'm scared to get ill because it's such a ballache to get an appointmentLike Share"
+      }
+    ],
+    "practice_name": "Red Bank Group Practice",
+    "postcode": "M26 2SP",
+    "canonical_code": "P83603",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/red-bank-group-practice/P83603",
+    "query_used": "Red Bank Group Practice M26 2SP",
+    "title_match_score": 0.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P83603-red-bank-group-practice.txt"
   }
 ]

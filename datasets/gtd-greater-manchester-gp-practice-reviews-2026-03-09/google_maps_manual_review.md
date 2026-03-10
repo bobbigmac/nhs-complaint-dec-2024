@@ -1,6 +1,6 @@
 # Google Maps Manual Review Queue
 
-Generated from 18 flagged Google Maps capture records.
+Generated from 20 flagged Google Maps capture records.
 
 ## Manual Review Required
 
@@ -29,3 +29,5 @@ Generated from 18 flagged Google Maps capture records.
 | AL Fal Medical Group | P82640 | 0.0 | R Falouji | [link](https://www.google.com/maps/place/R+Falouji/@53.5731346,-2.4455869,17z/data=!4m8!3m7!1s0x487ba7a565b060c3:0xcc3f065789e57670!8m2!3d53.5731346!4d-2.4455869!9m1!1b1!16s%2Fg%2F1tffz15t?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Pikes Lane 1 | P82002 | 0.4 | Dr Mirza and Partners - Pikes Lane Centre | [link](https://www.google.com/maps/place/Dr+Mirza+and+Partners+-+Pikes+Lane+Centre/@53.5731374,-2.4453425,17z/data=!4m8!3m7!1s0x487ba7a56cad36ad:0x88ee6508a670ebe1!8m2!3d53.5731374!4d-2.4453425!9m1!1b1!16s%2Fg%2F1yh9tz9rr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Hawthorn MC | Y02890 | 0.333 | Hawthorn Medical Centre / Walk In Centre | [link](https://www.google.com/maps/place/Hawthorn+Medical+Centre+%2F+Walk+In+Centre/@53.4423768,-2.2048449,17z/data=!4m8!3m7!1s0x487bb3cc449cad45:0xc40e31b475198d3b!8m2!3d53.4423768!4d-2.2048449!9m1!1b1!16s%2Fg%2F1tf8146r?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Windermere Surgery | P86620 | 0.333 | Windermere Road Doctors Surgery | [link](https://www.google.com/maps/place/Windermere+Road+Doctors+Surgery/@53.5596373,-2.2056504,17z/data=!4m8!3m7!1s0x487bba6600feeb19:0xaa3843413ab37e5b!8m2!3d53.5596373!4d-2.2056504!9m1!1b1!16s%2Fg%2F1tkf0j8l?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Red Bank Group Practice | P83603 | 0.0 | Redbank Group Practice | [link](https://www.google.com/maps/place/Redbank+Group+Practice/@53.5606766,-2.3276567,17z/data=!4m12!1m2!2m1!1sRed+Bank+Group+Practice+M26+2SP!3m8!1s0x487ba57516b45a67:0xd1e8f1e50f87dd78!8m2!3d53.5606766!4d-2.3231506!9m1!1b1!15sCh9SZWQgQmFuayBHcm91cCBQcmFjdGljZSBNMjYgMlNQkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc2llwzv?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |

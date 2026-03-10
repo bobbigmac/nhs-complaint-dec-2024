@@ -16,6 +16,7 @@ Files:
 - `google_maps_recent_reviews.json`: raw structured Google Maps capture output
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
+- `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
 
 Source basis:
 
@@ -30,14 +31,17 @@ Coverage snapshot:
 - total rows: 355
 - GTD-managed rows: 13
 - non-GTD nearby rows: 342
-- Google review coverage rows: 103
-- Google Maps direct coverage rows: 97
-- Review text files written: 87
-- Google Maps scans completed: 115
+- Google review coverage rows: 124
+- Google Maps direct coverage rows: 118
+- Review text files written: 106
+- Practices with management company identified: 49
+- Distinct management companies identified: 13
+- Google Maps scans completed: 138
 - Google Maps manual review queue: 10
 
 Caveats:
 
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
+- `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
 - Trustpilot fields are blank in this run because a reliable per-practice public source was not found.
 - GTD's Lindley Medical Practice was matched to the NHS profile currently published as `Lindley House Health Centre` at the same Oldham site.

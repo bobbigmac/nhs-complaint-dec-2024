@@ -457,6 +457,11 @@ def build_dataset() -> list[dict[str, Any]]:
             "source_search_centers": ", ".join(sorted(practice.get("source_search_centers", []))),
             "source_search_center_count": len(practice.get("source_search_centers", [])),
         }
+        record["management_company_name"] = "GTD Healthcare" if matched_anchor else ""
+        record["management_company_source"] = "gtd_anchor_match" if matched_anchor else ""
+        record["management_company_confidence"] = "high" if matched_anchor else ""
+        record["management_company_domain"] = "gtdhealthcare.co.uk" if matched_anchor else ""
+        record["management_company_group_size"] = ""
         min_distance = None
         if practice["nearby_to_gtd_anchors"]:
             distances = []
@@ -501,6 +506,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "source_search_centers",
         "source_search_center_count",
         "min_distance_to_gtd_anchor_miles",
+        "management_company_name",
+        "management_company_source",
+        "management_company_confidence",
+        "management_company_domain",
+        "management_company_group_size",
         "google_review_score",
         "google_review_count",
         "google_review_source_note",
@@ -536,6 +546,8 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "google_review_coverage_count": sum(1 for row in rows if row["google_review_score"] != ""),
         "google_maps_direct_coverage_count": sum(1 for row in rows if "Google Maps direct" in str(row.get("google_review_source_note", ""))),
         "google_review_text_file_count": sum(1 for row in rows if row.get("google_review_text_file", "")),
+        "management_company_identified_count": sum(1 for row in rows if row.get("management_company_name", "")),
+        "management_company_distinct_count": len({row.get("management_company_name", "") for row in rows if row.get("management_company_name", "")}),
         "trustpilot_coverage_count": sum(1 for row in rows if row["trustpilot_score"] != ""),
         "postcode_area_count": len(postcodes),
         "postcode_areas": postcodes,
@@ -555,6 +567,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
             "Additional south, west and north-west Greater Manchester coverage was added with explicit supplemental NHS search centres.",
             "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
+            "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
         ],
     }
     path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -580,6 +593,7 @@ Files:
 - `google_maps_recent_reviews.json`: raw structured Google Maps capture output
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
+- `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
 
 Source basis:
 
@@ -597,12 +611,15 @@ Coverage snapshot:
 - Google review coverage rows: {summary['google_review_coverage_count']}
 - Google Maps direct coverage rows: {summary['google_maps_direct_coverage_count']}
 - Review text files written: {summary['google_review_text_file_count']}
+- Practices with management company identified: {summary.get('management_company_identified_count', 0)}
+- Distinct management companies identified: {summary.get('management_company_distinct_count', 0)}
 - Google Maps scans completed: {summary.get('google_maps_total_scanned_count', 0)}
 - Google Maps manual review queue: {summary.get('google_maps_manual_review_count', 0)}
 
 Caveats:
 
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
+- `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
 - Trustpilot fields are blank in this run because a reliable per-practice public source was not found.
 - GTD's Lindley Medical Practice was matched to the NHS profile currently published as `Lindley House Health Centre` at the same Oldham site.
 """
@@ -612,9 +629,9 @@ Caveats:
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     known_management_companies = sorted(
         {
-            "GTD Healthcare"
+            row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else "")
             for row in rows
-            if row["gtd_managed"]
+            if row.get("management_company_name", "") or row["gtd_managed"]
         }
     )
     markers = [
@@ -624,7 +641,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
             "lon": row["longitude"],
             "postcode": row["postcode"],
             "gtd": row["gtd_managed"],
-            "management_company": "GTD Healthcare" if row["gtd_managed"] else "",
+            "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
             "google_score": row["google_review_score"],
             "google_count": row["google_review_count"],
             "google_source_note": row.get("google_review_source_note", ""),

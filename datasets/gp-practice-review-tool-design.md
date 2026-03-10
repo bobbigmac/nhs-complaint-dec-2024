@@ -255,6 +255,31 @@ Recommended derived fields:
 - `manager_group_source`
 - `manager_group_confidence`
 
+### Current repo field contract
+
+Until a fuller CQC/ODS pipeline is added, this repo should populate these practice-level fields:
+
+- `management_company_name`
+- `management_company_source`
+- `management_company_confidence`
+- `management_company_domain`
+- `management_company_group_size`
+
+Current conservative precedence:
+
+1. explicit GTD anchor match
+2. shared NHS-listed website domain that clearly identifies a multi-practice group
+3. later CQC/ODS provider mapping
+
+Rules for future dataset enrichments:
+
+- prefer blank over guessed
+- always set `management_company_source`
+- always set `management_company_confidence`
+- if the value comes from the NHS-listed website, keep the domain in `management_company_domain`
+- recompute `management_company_group_size` after every enrichment pass
+- do not overwrite a higher-confidence source with a lower-confidence one
+
 Examples:
 
 - one provider may appear with `Ltd`, `Limited`, partnership wording, or slightly different punctuation
