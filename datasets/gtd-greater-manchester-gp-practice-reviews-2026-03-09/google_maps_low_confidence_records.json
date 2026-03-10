@@ -1793,5 +1793,99 @@
     "query_used": "Perkins Practice OL1 1NL",
     "title_match_score": 0.333,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P85608-perkins-practice.txt"
+  },
+  {
+    "query": "Alexandra Group Med Pract OL4 1YN",
+    "google_maps_title": "The Alexandra Group Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/The+Alexandra+Group+Medical+Practice/@53.5378483,-2.0952743,17z/data=!4m8!3m7!1s0x487bb78f1d7088ad:0xac4782f6fed011e5!8m2!3d53.5378483!4d-2.0952743!9m1!1b1!16s%2Fg%2F1tf57fk0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.5,
+    "google_review_count": 73,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Shahaana Malak",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "I had a really positive experience at Alexandra Practice. Practice Nurse Claire was so kind and helpful throughout my appointment. She really took the time to listen, explained everything clearly, and made me feel completely at ease. I was feeling quite anxious beforehand, but her calm and supportive approach genuinely eased my experience. I felt well looked after and supported the whole time",
+        "raw_card_text": "Shahaana Malak6 reviews \u00b7 3 photos2 weeks ago New I had a really positive experience at Alexandra Practice. Practice Nurse Claire was so kind and helpful throughout my appointment. She really took the time to listen, explained everything clearly, and made me feel completely at ease. I was feeling quite anxious beforehand, but her calm and supportive approach genuinely eased my experience. I felt well looked after and supported the whole timeLike Share"
+      },
+      {
+        "author": "Tainted Justice",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "The ones with 5 stars are getting appointments well done .. In this new triage system where the best story gets an appointment .. the metal health nurse that is there once a week .. prescribes new medication (trazadone) and not check on you for 5 months .. I tried but my story wasn't good enough to get an appointment to see the GP to then ask.. mental health nurse? of course I never got said appointment because once again my story wasn't electrifying enough to warrant an appointment ..",
+        "raw_card_text": "Tainted Justice1 review3 months ago The ones with 5 stars are getting appointments well done .. In this new triage system where the best story gets an appointment .. the metal health nurse that is there once a week .. prescribes new medication (trazadone) and not check on you for 5 months .. I tried but my story wasn't good enough to get an appointment to see the GP to then ask.. mental health nurse? of course I never got said appointment because once again my story wasn't electrifying enough to warrant an appointment ..Like1 Share"
+      },
+      {
+        "author": "Shabz Al",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Every time I come to the practice everyone is always very helpful. Even with the restricted availability they have always tried to be accommodating.",
+        "raw_card_text": "Shabz AlLocal Guide \u00b7 25 reviews \u00b7 1 photo3 months ago Every time I come to the practice everyone is always very helpful. Even with the restricted availability they have always tried to be accommodating.Like Share"
+      },
+      {
+        "author": "Mohammad Iqbal",
+        "relative_date": "4 months ago",
+        "star_label": "2 stars",
+        "text": "",
+        "raw_card_text": "Mohammad Iqbal4 months ago"
+      },
+      {
+        "author": "Sharon Williams",
+        "relative_date": "5 months ago",
+        "star_label": "5 stars",
+        "text": "Visited the practice today saw Claire the nurse who was very friendly and helpful. So easy to talk to absolutely brilliant",
+        "raw_card_text": "Sharon Williams1 review \u00b7 2 photos5 months ago Visited the practice today saw Claire the nurse who was very friendly and helpful. So easy to talk to absolutely brilliantLike Share"
+      },
+      {
+        "author": "Joshua Howard",
+        "relative_date": "6 months ago",
+        "star_label": "1 star",
+        "text": "Was once a great doctors been there for over 25 years. Now it's absolutely terrible, don't waste your time honestly",
+        "raw_card_text": "Joshua Howard5 reviews6 months ago Was once a great doctors been there for over 25 years. Now it's absolutely terrible, don't waste your time honestlyLike Share"
+      },
+      {
+        "author": "Sana M",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Amazing experience. Claire was so friendly and helpful.",
+        "raw_card_text": "Sana M12 reviews \u00b7 5 photos6 months ago Amazing experience. Claire was so friendly and helpful.Like Share"
+      },
+      {
+        "author": "O MUGZ",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "Dr Moghal is the heart and soul of this Surgery. When I have had the need to see her, as always she welcomes me with a warm smile, even when at times they can behind with appointments. Dr Moghal always apologies and asks how I am. She has excellent courteous communication skills but an even better listener. Delivers patient care with a sincere approach.",
+        "raw_card_text": "O MUGZLocal Guide \u00b7 137 reviews \u00b7 65 photos7 months ago Dr Moghal is the heart and soul of this Surgery. When I have had the need to see her, as always she welcomes me with a warm smile, even when at times they can behind with appointments. Dr Moghal always apologies and asks how I am. She has excellent courteous communication skills but an even better listener. Delivers patient care with a sincere approach.Like Share"
+      },
+      {
+        "author": "Barb K",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "I have been with this practice since birth and I was very anxious when the practice changed to the triage system . I can honestly say I had no need to be as the new system works more efficiently than ever. The same goes for my husband too. We always get a speedy response , no hanging in the phone lines for ages to be then told there are no appointments . It\u2019s so much less stress full and that\u2019s got to be a winner for everyone\u2019s health . Hope doctors and reception staff feel this too I can\u2019t thank them enough .",
+        "raw_card_text": "Barb KLocal Guide \u00b7 10 reviews7 months ago I have been with this practice since birth and I was very anxious when the practice changed to the triage system . I can honestly say I had no need to be as the new system works more efficiently than ever. The same goes for my husband too. We always get a speedy response , no hanging in the phone lines for ages to be then told there are no appointments . It\u2019s so much less stress full and that\u2019s got to be a winner for everyone\u2019s health . Hope doctors and reception staff feel this too I can\u2019t thank them enough .Like Share"
+      },
+      {
+        "author": "John Booth",
+        "relative_date": "7 months ago",
+        "star_label": "2 stars",
+        "text": "Nigh on impossible to speaks to someone about a non-urgent issue. The hours it advises you to phone and the opening hours given on the website do not correspond. The NHS app proves equally useless in this regard.",
+        "raw_card_text": "John Booth1 review7 months ago Nigh on impossible to speaks to someone about a non-urgent issue. The hours it advises you to phone and the opening hours given on the website do not correspond. The NHS app proves equally useless in this regard.Like Share"
+      }
+    ],
+    "practice_name": "Alexandra Group Med Pract",
+    "postcode": "OL4 1YN",
+    "canonical_code": "P85015",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/alexandra-group-med-pract/P85015",
+    "query_used": "Alexandra Group Med Pract OL4 1YN",
+    "title_match_score": 0.333,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P85015-alexandra-group-med-pract.txt"
   }
 ]

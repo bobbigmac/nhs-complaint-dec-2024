@@ -17,6 +17,7 @@ from urllib.parse import quote, urlencode
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
+GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "gp_patient_survey_raw"
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
