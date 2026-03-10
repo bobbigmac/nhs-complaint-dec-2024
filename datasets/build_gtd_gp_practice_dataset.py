@@ -871,6 +871,14 @@ body {{
 #size-mode-control {{
   grid-template-columns: 1fr 1fr;
 }}
+#voronoi-control {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}}
+#voronoi-control input {{
+  display: inline-block;
+}}
 .segmented label {{
   display: flex;
   align-items: center;
@@ -966,6 +974,8 @@ body {{
 }}
 .marker-svg {{
   display: block;
+  width: 100%;
+  height: 100%;
   overflow: visible;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.22));
 }}
@@ -1238,6 +1248,13 @@ body {{
         </div>
         <p id="size-description" class="hint"></p>
       </div>
+      <div class="control-group">
+        <h2>Map Layer</h2>
+        <div id="voronoi-control">
+          <label><input type="checkbox" id="voronoi-toggle"><span>Show Voronoi</span></label>
+        </div>
+        <p id="layer-description" class="hint"></p>
+      </div>
       <h2>Management</h2>
       <p id="manager-hint" class="hint"></p>
       <div id="manager-list" class="manager-list"></div>
@@ -1263,13 +1280,26 @@ body {{
   </div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js"></script>
 <script>
 const rows = {json.dumps(markers)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const NEW_BANK_CODE = 'Y02960';
 const LOCAL_RADIUS_MILES = 2.5;
+const dataBbox = (() => {{
+  const lons = rows.map(r => Number(r.lon));
+  const lats = rows.map(r => Number(r.lat));
+  const pad = 0.12;
+  return [
+    Math.min(...lons) - pad,
+    Math.min(...lats) - pad,
+    Math.max(...lons) + pad,
+    Math.max(...lats) + pad
+  ];
+}})();
 const map = L.map('map').setView([{center_lat:.6f}, {center_lon:.6f}], 11);
 const markerLayer = L.layerGroup().addTo(map);
+let voronoiLayer = null;
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
   maxZoom: 18,
   attribution: '&copy; OpenStreetMap contributors'
@@ -1278,6 +1308,7 @@ const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentag
 const selectedManagementCompanies = new Set(['GTD Healthcare']);
 let activeMetric = 'google';
 let activeSizeMode = 'activity';
+let voronoiShow = false;
 let focusedPracticeCode = NEW_BANK_CODE;
 
 const metricConfigs = {{
@@ -1434,6 +1465,20 @@ function maxRegisteredPatientCount() {{
   return Math.max(0, ...rows.map((row) => numericOrNull(row.registered_patient_count) || 0));
 }}
 
+function sizeValueForRow(row) {{
+  if (activeSizeMode === 'patients') {{
+    const count = numericOrNull(row.registered_patient_count);
+    return count !== null && count > 0 ? count : 0;
+  }}
+  const metric = metricConfigs[activeMetric];
+  const count = metric.scaleCount(row);
+  return Number.isFinite(count) && count > 0 ? count : 0;
+}}
+
+function maxSizeValue() {{
+  return Math.max(0, ...rows.map((row) => sizeValueForRow(row)));
+}}
+
 function averageMetric(rowsForCompany, metricName) {{
   const metric = metricConfigs[metricName];
   const values = rowsForCompany
@@ -1473,6 +1518,17 @@ function patientScaleForRow(row) {{
 
 function mapScaleForRow(row) {{
   return activeSizeMode === 'patients' ? patientScaleForRow(row) : activityScaleForRow(row);
+}}
+
+function normalizedSizeWeight(row) {{
+  const value = sizeValueForRow(row);
+  const maxValue = maxSizeValue();
+  if (!Number.isFinite(value) || value <= 0 || maxValue <= 0) return 0;
+  return Math.max(0, Math.min(1, Math.log1p(value) / Math.log1p(maxValue)));
+}}
+
+function mapRowsForOverlays() {{
+  return rows.filter((row) => Number.isFinite(Number(row.lat)) && Number.isFinite(Number(row.lon)));
 }}
 
 function shapeAssignment() {{
@@ -1577,6 +1633,77 @@ function renderSizeDescription() {{
   el.textContent = `Marker size follows ${{activityLabel}} for the current ${{metric.title.toLowerCase()}} view.`;
 }}
 
+function renderLayerDescription() {{
+  const el = document.getElementById('layer-description');
+  if (voronoiShow) {{
+    const weightLabel = activeSizeMode === 'patients' ? 'registered patient count' : 'the current activity count';
+    el.textContent = `Voronoi overlay splits the visible map into nearest-practice territory. Cell color follows the current score metric and opacity follows ${{weightLabel}}.`;
+    return;
+  }}
+  el.textContent = 'Markers show point locations, with color from the current score metric and size from the selected size source.';
+}}
+
+function clearOverlayLayers() {{
+  markerLayer.clearLayers();
+  if (voronoiLayer) {{
+    map.removeLayer(voronoiLayer);
+    voronoiLayer = null;
+  }}
+}}
+
+function voronoiPoints() {{
+  const rowsForMap = mapRowsForOverlays();
+  const duplicateCounts = new Map();
+  return rowsForMap.map((row) => {{
+    const key = `${{Number(row.lat).toFixed(6)}},${{Number(row.lon).toFixed(6)}}`;
+    const duplicateIndex = duplicateCounts.get(key) || 0;
+    duplicateCounts.set(key, duplicateIndex + 1);
+    const angle = duplicateIndex * 2.399963229728653;
+    const offset = duplicateIndex === 0 ? 0 : 0.00018 * Math.ceil(duplicateIndex / 2);
+    const lon = Number(row.lon) + Math.cos(angle) * offset;
+    const lat = Number(row.lat) + Math.sin(angle) * offset;
+    return turf.point([lon, lat], {{ code: row.code }});
+  }});
+}}
+
+function renderVoronoi() {{
+  const points = voronoiPoints();
+  if (!points.length) return;
+  const fc = turf.featureCollection(points);
+  const polygons = turf.voronoi(fc, {{ bbox: dataBbox }});
+  const rowByCode = new Map(rows.map((row) => [row.code, row]));
+  const features = (polygons && polygons.features ? polygons.features : [])
+    .filter((feature) => feature && feature.properties && feature.properties.code && rowByCode.has(feature.properties.code))
+    .map((feature) => {{
+      const row = rowByCode.get(feature.properties.code);
+      feature.properties.popupMarkup = popupMarkup(row);
+      feature.properties.code = row.code;
+      feature.properties.color = metricConfigs[activeMetric].markerColor(row);
+      feature.properties.opacityWeight = normalizedSizeWeight(row);
+      return feature;
+    }});
+  if (!features.length) return;
+  voronoiLayer = L.geoJSON({{ type: 'FeatureCollection', features }}, {{
+    style: (feature) => {{
+      const opacityWeight = Number(feature.properties.opacityWeight || 0);
+      return {{
+        color: 'rgba(26,28,26,0.26)',
+        weight: 1,
+        fillColor: feature.properties.color || '#9aa0a6',
+        fillOpacity: 0.18 + opacityWeight * 0.52
+      }};
+    }},
+    onEachFeature: (feature, layer) => {{
+      const row = rowByCode.get(feature.properties.code);
+      layer.bindPopup(feature.properties.popupMarkup || '');
+      layer.on('click', () => {{
+        if (row) focusRow(row);
+      }});
+    }}
+  }});
+  voronoiLayer.addTo(map);
+}}
+
 function renderManagementList() {{
   const container = document.getElementById('manager-list');
   container.innerHTML = '';
@@ -1639,6 +1766,41 @@ function formatGap(row) {{
   return `Survey/Google gap: ${{gap.toFixed(2)}} stars · Google ${{google.toFixed(1)}} vs survey-equivalent ${{surveyStars.toFixed(2)}}`;
 }}
 
+function popupMarkup(row) {{
+  const google = `<div>${{formatGoogle(row)}}</div>`;
+  const googleSource = row.google_source_note ? `<div>Google source: ${{row.google_source_note}}</div>` : '<div>Google source: repo review dataset</div>';
+  const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
+  const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
+  const registeredPatients = numericOrNull(row.registered_patient_count);
+  const registeredPatientsLine = `<div>Registered patients: ${{registeredPatients === null ? '?' : registeredPatients.toLocaleString('en-GB')}}</div>`;
+  const survey = `<div>${{formatSurvey(row)}}</div>`;
+  const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
+  const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
+  const gap = `<div>${{formatGap(row)}}</div>`;
+  const gtd = row.gtd_url ? `<div><a href="${{row.gtd_url}}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
+  return `
+    <strong>${{row.name}}</strong><br>
+    ${{row.postcode}}<br>
+    <div>Code: ${{row.code}}</div>
+    <div>Near: ${{row.nearby}}</div>
+    ${{management}}
+    ${{registeredPatientsLine}}
+    ${{google}}
+    ${{googleSource}}
+    ${{survey}}
+    ${{surveyCompare}}
+    ${{gap}}
+    ${{googleText}}
+    <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
+    ${{gtd}}
+  `;
+}}
+
+function focusRow(row) {{
+  focusedPracticeCode = row.code;
+  renderComparisons();
+}}
+
 function renderMarkers() {{
   markerLayer.clearLayers();
   const assignments = shapeAssignment();
@@ -1665,36 +1827,9 @@ function renderMarkers() {{
       popupAnchor: [0, metrics.popupY]
     }});
     const marker = L.marker([row.lat, row.lon], {{ icon, zIndexOffset: baseZIndex }});
-    const google = `<div>${{formatGoogle(row)}}</div>`;
-    const googleSource = row.google_source_note ? `<div>Google source: ${{row.google_source_note}}</div>` : '<div>Google source: repo review dataset</div>';
-    const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
-    const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
-    const registeredPatients = numericOrNull(row.registered_patient_count);
-    const registeredPatientsLine = `<div>Registered patients: ${{registeredPatients === null ? '?' : registeredPatients.toLocaleString('en-GB')}}</div>`;
-    const survey = `<div>${{formatSurvey(row)}}</div>`;
-    const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
-    const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
-    const gap = `<div>${{formatGap(row)}}</div>`;
-    const gtd = row.gtd_url ? `<div><a href="${{row.gtd_url}}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
-    marker.bindPopup(`
-      <strong>${{row.name}}</strong><br>
-      ${{row.postcode}}<br>
-      <div>Code: ${{row.code}}</div>
-      <div>Near: ${{row.nearby}}</div>
-      ${{management}}
-      ${{registeredPatientsLine}}
-      ${{google}}
-      ${{googleSource}}
-      ${{survey}}
-      ${{surveyCompare}}
-      ${{gap}}
-      ${{googleText}}
-      <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
-      ${{gtd}}
-    `);
+    marker.bindPopup(popupMarkup(row));
     marker.on('click', () => {{
-      focusedPracticeCode = row.code;
-      renderComparisons();
+      focusRow(row);
     }});
     marker.on('mouseover', () => marker.setZIndexOffset(baseZIndex + 2000));
     marker.on('mouseout', () => marker.setZIndexOffset(baseZIndex));
@@ -2151,8 +2286,13 @@ function renderScatterplot() {{
 function rerenderAll() {{
   renderMetricLegend();
   renderSizeDescription();
+  renderLayerDescription();
   renderManagementList();
+  clearOverlayLayers();
   renderMarkers();
+  if (voronoiShow) {{
+    renderVoronoi();
+  }}
   renderScatterplot();
   renderComparisons();
 }}
@@ -2169,6 +2309,21 @@ document.querySelectorAll('input[name="size-source"]').forEach((input) => {{
     activeSizeMode = event.target.value;
     rerenderAll();
   }});
+}});
+
+document.getElementById('voronoi-toggle').addEventListener('change', (event) => {{
+  voronoiShow = event.target.checked;
+  rerenderAll();
+}});
+
+map.on('moveend', () => {{
+  if (voronoiShow) {{
+    if (voronoiLayer) {{
+      map.removeLayer(voronoiLayer);
+      voronoiLayer = null;
+    }}
+    renderVoronoi();
+  }}
 }});
 
 rerenderAll();

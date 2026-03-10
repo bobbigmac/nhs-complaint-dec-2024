@@ -8,91 +8,91 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02849
 - **Address:** 2Nd FL, 32 Market St, Manchester, Greater Manchester, M1 1PL
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## New Bank Health
 
 - **NHS ODS code:** Y02960
 - **Address:** 339 Stockport Road, Longsight, Manchester, Greater Manchester, M12 4JE
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Guide Bridge Medical Practice
 
 - **NHS ODS code:** Y02713
 - **Address:** Guide Lane, Audenshaw, Manchester, Greater Manchester, M34 5HY
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Simpson Medical Practice
 
 - **NHS ODS code:** Y02520
 - **Address:** 361 Moston Lane, Moston, Manchester, Greater Manchester, M40 9NB
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Droylsden Medical Practice
 
 - **NHS ODS code:** Y02663
 - **Address:** 1-3 Albion Drive, Droylsden, Manchester, Greater Manchester, M43 7NP
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Charlestown MD
 
 - **NHS ODS code:** Y02325
 - **Address:** Charlestown Road, Blackley, Manchester, Greater Manchester, M9 7ED
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Lindley House Health Centre
 
 - **NHS ODS code:** Y02875
 - **Address:** Integrated Care Centre, New Radcliffe Street, Oldham, Lancashire, OL1 1NL
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Mossley Medical Practice
 
 - **NHS ODS code:** P89612
 - **Address:** 187 Manchester Road, Mossley, Ashton-under-Lyne, Lancashire, OL5 9AB
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Gordon Street Medical Centre
 
 - **NHS ODS code:** P89011
 - **Address:** 171 Mossley Road, Ashton-under-Lyne, OL6 6NE
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Ashton Gp Service
 
 - **NHS ODS code:** Y02586
 - **Address:** Ashton Primary Care Centre, 193 Old Street, Ashton Under Lyne, Lancashire, OL6 7SR
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Hattersley Group Practice
 
 - **NHS ODS code:** P89013
 - **Address:** Hattersley Road East, Hattersley Ind Est, Hyde, Cheshire, SK14 3EH
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## The Smithy Surgery
 
 - **NHS ODS code:** P89602
 - **Address:** 4 Market Street, Hollingworth, Hyde, Cheshire, SK14 8LJ
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Millbrook Medical Practice
 
 - **NHS ODS code:** Y02936
 - **Address:** Hollybank, Off Grove Road, Stalybridge, Cheshire, SK15 3BJ
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Dr Y Loomba & Partner
@@ -148,7 +148,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02319
 - **Address:** 2-4 Moor Lane, Bolton, Lancashire, BL1 4TH
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Heaton Medical Centre
@@ -288,7 +288,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P82613
 - **Address:** Mytham Road, Little Lever, Bolton, Lancashire, BL3 1HQ
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Southbrook Surgery
@@ -309,7 +309,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P82609
 - **Address:** 160 St. Helens Road, Bolton, Lancashire, BL3 3PH
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## St Helens Road Practice
@@ -351,7 +351,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y00186
 - **Address:** 200 Deane Road, Bolton, Lancashire, BL3 5DP
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## AL Fal Medical Group
@@ -393,7 +393,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02790
 - **Address:** 21 Rupert Street, Great Lever, Bolton, Lancashire, BL3 6PY
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Great Lever One
@@ -477,14 +477,14 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P83012
 - **Address:** 16 Market Street, Tottington, Bury, BL8 4AD
-- **Management company:** Tower Family Healthcare
+- **Management company:** Tower Family Healthcare (https://www.towerfamilyhealthcare.co.uk/)
 
 
 ## Tower Family Healthcare - Greenmount
 
 - **NHS ODS code:** P83012002
 - **Address:** 9 Brandlesholme Road, Greenmount, Bury, Lancashire, BL8 4DR
-- **Management company:** Tower Family Healthcare
+- **Management company:** Tower Family Healthcare (https://www.towerfamilyhealthcare.co.uk/)
 
 
 ## Rock Healthcare Limited
@@ -498,7 +498,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** W4J3Q
 - **Address:** 22 Derby Way, Bury, BL9 0NJ
-- **Management company:** Tower Family Healthcare
+- **Management company:** Tower Family Healthcare (https://www.towerfamilyhealthcare.co.uk/)
 
 
 ## Peel GPs
@@ -631,7 +631,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P84689
 - **Address:** 526-528 Stockport Road, Longsight, Manchester, Lancashire, M13 0RR
-- **Management company:** Manchester Integrative Medical Practice
+- **Management company:** Manchester Integrative Medical Practice (https://mimp.org.uk/)
 
 
 ## Dickenson Road Medical Centre
@@ -673,7 +673,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** V6E6I
 - **Address:** 20 Monton Street, Manchester, M14 4GP
-- **Management company:** Manchester Integrative Medical Practice
+- **Management company:** Manchester Integrative Medical Practice (https://mimp.org.uk/)
 
 
 ## Surrey Lodge Practice
@@ -701,7 +701,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02890
 - **Address:** Unit K, Fallowfield Shopping Centre, Birchfields Road, Manchester, Greater Manchester, M14 6FS
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Mauldeth Medical Centre
@@ -1030,14 +1030,14 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02795
 - **Address:** The Health Centre Unit F1, Middleton Shopping Centre, Middleton, Manchester, Greater Manchester, M24 4EL
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Family Practice
 
 - **NHS ODS code:** P86606
 - **Address:** 133 Bowness Road, Middleton, Langley, Manchester, Lancashire, M24 4EN
-- **Management company:** The Strand Medical Centre/Family Practice
+- **Management company:** The Strand Medical Centre/Family Practice (https://www.thestrandandfamilypractice.co.uk/)
 
 
 ## Woodside Medical Centre
@@ -1135,7 +1135,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P83012001
 - **Address:** 15-17 Spring Lane, Radcliffe, Manchester, Greater Manchester, M26 2TQ
-- **Management company:** Tower Family Healthcare
+- **Management company:** Tower Family Healthcare (https://www.towerfamilyhealthcare.co.uk/)
 
 
 ## The Sides Medical Practice
@@ -1170,7 +1170,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y00445002
 - **Address:** Little Hulton Health Centre, Haysbrook Avenue, Worsley, Manchester, Greater Manchester, M28 0AY
-- **Management company:** Salford Primary Care Together
+- **Management company:** Salford Primary Care Together (https://spctpractices.co.uk/)
 
 
 ## Cherry Medical Practice
@@ -1198,7 +1198,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y00445
 - **Address:** 4 Longshaw Drive, Worsley, Manchester, M28 0BB
-- **Management company:** Salford Primary Care Together
+- **Management company:** Salford Primary Care Together (https://spctpractices.co.uk/)
 
 
 ## Orchard Medical Practice
@@ -1254,7 +1254,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P92637
 - **Address:** 391A Manchester Road, Astley, Tyldesley, Manchester, Greater Manchester, M29 7BY
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Dr Vardhan's Surgery
@@ -1275,7 +1275,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02321
 - **Address:** Tyldesley Health Centre, Poplar Street, Tyldesley, Manchester, Lancashire, M29 8AX
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Elliott Street Surgery
@@ -1317,7 +1317,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y00445001
 - **Address:** 1St Floor, Eccles Gateway, 28 Barton Lane, Eccles, Manchester, Greater Manchester, M30 0TU
-- **Management company:** Salford Primary Care Together
+- **Management company:** Salford Primary Care Together (https://spctpractices.co.uk/)
 
 
 ## 1/Monton Medical Practice
@@ -1471,7 +1471,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P84047
 - **Address:** Newton Heath Health Centre, 2 Old Church Street, Manchester, M40 2JF
-- **Management company:** GTD Healthcare
+- **Management company:** GTD Healthcare (https://www.gtdhealthcare.co.uk/)
 
 
 ## Droylsden Road Surgery Branch
@@ -1667,7 +1667,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y00445003
 - **Address:** 1 Paddington Close, Salford, Greater Manchester, M6 5PL
-- **Management company:** Salford Primary Care Together
+- **Management company:** Salford Primary Care Together (https://spctpractices.co.uk/)
 
 
 ## 1/Salford Medical Practice
@@ -1709,7 +1709,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02767
 - **Address:** The Surgery, 355 Bolton Road, Salford, Greater Manchester, M6 7NJ
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Victoria Road Surgery
@@ -1926,7 +1926,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02718
 - **Address:** George Street, Heywood, Lancashire, OL10 4PW
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Heady Hill Surgery
@@ -1975,14 +1975,14 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02721
 - **Address:** The Strand, Kirkholt, Rochdale, OL11 2JG
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## The Medical Centre (The Strand)
 
 - **NHS ODS code:** P86606001
 - **Address:** The Strand medical Centre (Bardoc Ltd), The Strand, Kirkholt, Rochdale, Lancashire, OL11 2JG
-- **Management company:** The Strand Medical Centre/Family Practice
+- **Management company:** The Strand Medical Centre/Family Practice (https://www.thestrandandfamilypractice.co.uk/)
 
 
 ## Castleton Health Centre
@@ -2101,7 +2101,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02720
 - **Address:** 285a Kingsway, Rochdale, Lancashire, OL16 4AT
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Milnrow Village Practice
@@ -2143,7 +2143,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P85614
 - **Address:** Shaw Crompton Medical Centre, Westway, Shaw, Oldham, Lancashire, OL2 8BF
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Dr. J Wright & Partners
@@ -2192,7 +2192,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P85622
 - **Address:** Glodwick Primary Care Centre, 137 Glodwick Road, Oldham, OL4 1YN
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Springfield House
@@ -2220,7 +2220,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** P89618
 - **Address:** Market Place, Mossley, Ashton-under-Lyne, Lancashire, OL5 0HE
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 
 
 ## Pennine Medical Centre
@@ -2283,14 +2283,14 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02827
 - **Address:** 1 John Street, Oldham, Lancashire, OL8 1DF
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Hill Top Surgery
 
 - **NHS ODS code:** Y02753
 - **Address:** Hilltop Surgery, Fitton Hill Neighbourhood Centre, Fircroft Road, Oldham, OL8 2QD
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Oldham Medical Services
@@ -2304,7 +2304,7 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02933
 - **Address:** 1 Clive Street, Oldham, Lancashire, OL8 3TR
-- **Management company:** (not identified)
+- **Management company:** Hope Citadel Healthcare (https://hopecitadel.org.uk/)
 
 
 ## Littletown Family Med Pract
@@ -2969,5 +2969,5 @@ Use this list to look up management companies. Each entry includes practice name
 
 - **NHS ODS code:** Y02322001
 - **Address:** 6 The Centre, Richmond Drive, Higher Folds, Leigh, Lancashire, WN7 2XY
-- **Management company:** SSP Health
+- **Management company:** SSP Health (https://www.ssphealth.com/)
 

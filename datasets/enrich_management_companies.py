@@ -28,8 +28,24 @@ KNOWN_DOMAIN_MANAGER_NAMES = {
     "spctpractices.co.uk": ("Salford Primary Care Together", "nhs_website_domain_known_group", "high"),
     "towerfamilyhealthcare.co.uk": ("Tower Family Healthcare", "nhs_website_domain_known_group", "high"),
     "mimp.org.uk": ("Manchester Integrative Medical Practice", "nhs_website_domain_known_group", "high"),
+    "thestrandandfamilypractice.co.uk": ("The Strand Medical Centre/Family Practice", "nhs_website_domain_known_group", "high"),
+    "hopecitadel.org.uk": ("Hope Citadel Healthcare", "nhs_website_domain_known_group", "high"),
 }
 GENERIC_HOST_SUFFIXES = {"nhs.uk", "nhs.net"}
+
+# Manual overrides for practices with practice-specific domains (verified via practice website)
+MANUAL_OVERRIDES: dict[str, tuple[str, str]] = {
+    "Y02753": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Hill Top Surgery
+    "Y02933": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Hollinwood Medical Practice
+    "P85614": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Village Medical Practice
+    "Y02827": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # John Street Medical Practice
+    "P85622": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Glodwick Medical Practice
+    "Y02795": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Middleton Health Centre
+    "Y02720": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # The Kingsway Practice
+    "Y02721": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Kirkholt Medical Practice
+    "Y02718": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Birtle View Medical Practice
+    "Y02890": ("Hope Citadel Healthcare", "hopecitadel.org.uk"),  # Hawthorn MC
+}
 
 
 def load_rows() -> list[dict[str, object]]:
@@ -202,6 +218,16 @@ def apply_management_enrichment(rows: list[dict[str, object]]) -> list[dict[str,
             row["management_company_source"] = source
             row["management_company_confidence"] = confidence
             row["management_company_domain"] = host
+            provisional_names.append(manager_name)
+            continue
+
+        code = str(row.get("canonical_code", ""))
+        if code in MANUAL_OVERRIDES:
+            manager_name, domain = MANUAL_OVERRIDES[code]
+            row["management_company_name"] = manager_name
+            row["management_company_source"] = "manual_lookup"
+            row["management_company_confidence"] = "high"
+            row["management_company_domain"] = domain
             provisional_names.append(manager_name)
 
     name_counts = Counter(provisional_names)

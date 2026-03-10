@@ -33,13 +33,13 @@ Coverage snapshot:
 - total rows: 424
 - GTD-managed rows: 13
 - non-GTD nearby rows: 411
-- Google review coverage rows: 416
-- Google Maps direct coverage rows: 406
-- Review text files written: 360
-- Practices with management company identified: 59
-- Distinct management companies identified: 16
+- Google review coverage rows: 424
+- Google Maps direct coverage rows: 414
+- Review text files written: 368
+- Practices with management company identified: 13
+- Distinct management companies identified: 1
 - Practices with registered patient count: 360
-- Google Maps scans completed: 407
+- Google Maps scans completed: 415
 - Google Maps manual review queue: 1
 
 Caveats:
