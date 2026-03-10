@@ -759,8 +759,17 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
         }
     )
     markers = []
+    total_registered_patients = 0
+    registered_patient_rows = 0
     for row in rows:
         survey_payload = survey_by_code.get(str(row["canonical_code"]), {})
+        registered_patient_count = row.get("registered_patient_count", "")
+        if registered_patient_count not in ("", None):
+            try:
+                total_registered_patients += int(registered_patient_count)
+                registered_patient_rows += 1
+            except (TypeError, ValueError):
+                pass
         markers.append(
             {
                 "code": row["canonical_code"],
@@ -1248,6 +1257,7 @@ body {{
     <div class="legend">
       <h1>GTD GP Practice Experience Map</h1>
       <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
+      <p>{total_registered_patients:,} registered patients across {registered_patient_rows} practices with matched patient-count data.</p>
       <div class="control-group">
         <h2>Score Source</h2>
         <div class="segmented">
