@@ -1260,10 +1260,6 @@ body {{
       </div>
       <div class="control-group">
         <h2>Marker Size</h2>
-        <div class="segmented" id="size-mode-control">
-          <label><input type="radio" name="size-source" value="activity" checked><span>Activity</span></label>
-          <label><input type="radio" name="size-source" value="patients"><span>Patients</span></label>
-        </div>
         <p id="size-description" class="hint"></p>
       </div>
       <div class="control-group">
@@ -1325,7 +1321,6 @@ L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
 const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
 const selectedManagementCompanies = new Set(['GTD Healthcare']);
 let activeMetric = 'google';
-let activeSizeMode = 'activity';
 let voronoiShow = false;
 let focusedPracticeCode = NEW_BANK_CODE;
 
@@ -1474,27 +1469,13 @@ function numericOrNull(value) {{
   return Number.isFinite(numeric) ? numeric : null;
 }}
 
-function maxCountForMetric(metricName) {{
-  const metric = metricConfigs[metricName];
-  return Math.max(0, ...rows.map((row) => metric.scaleCount(row)));
-}}
-
 function maxRegisteredPatientCount() {{
   return Math.max(0, ...rows.map((row) => numericOrNull(row.registered_patient_count) || 0));
 }}
 
 function sizeValueForRow(row) {{
-  if (activeSizeMode === 'patients') {{
-    const count = numericOrNull(row.registered_patient_count);
-    return count !== null && count > 0 ? count : 0;
-  }}
-  const metric = metricConfigs[activeMetric];
-  const count = metric.scaleCount(row);
-  return Number.isFinite(count) && count > 0 ? count : 0;
-}}
-
-function maxSizeValue() {{
-  return Math.max(0, ...rows.map((row) => sizeValueForRow(row)));
+  const count = numericOrNull(row.registered_patient_count);
+  return count !== null && count > 0 ? count : 0;
 }}
 
 function averageMetric(rowsForCompany, metricName) {{
@@ -1515,16 +1496,6 @@ const managementCompanies = knownManagementCompanies.map((name) => {{
   }};
 }});
 
-function activityScaleForRow(row) {{
-  const metric = metricConfigs[activeMetric];
-  const maxCount = maxCountForMetric(activeMetric);
-  const count = metric.scaleCount(row);
-  if (!Number.isFinite(count) || count <= 0) return 0.7;
-  if (maxCount <= 0) return 0.7;
-  const normalized = Math.log1p(count) / Math.log1p(maxCount);
-  return 0.5 + (normalized ** 0.7) * 0.7;
-}}
-
 function patientScaleForRow(row) {{
   const count = numericOrNull(row.registered_patient_count);
   const maxCount = maxRegisteredPatientCount();
@@ -1535,14 +1506,7 @@ function patientScaleForRow(row) {{
 }}
 
 function mapScaleForRow(row) {{
-  return activeSizeMode === 'patients' ? patientScaleForRow(row) : activityScaleForRow(row);
-}}
-
-function normalizedSizeWeight(row) {{
-  const value = sizeValueForRow(row);
-  const maxValue = maxSizeValue();
-  if (!Number.isFinite(value) || value <= 0 || maxValue <= 0) return 0;
-  return Math.max(0, Math.min(1, Math.log1p(value) / Math.log1p(maxValue)));
+  return patientScaleForRow(row);
 }}
 
 function mapRowsForOverlays() {{
@@ -1638,27 +1602,16 @@ function renderMetricLegend() {{
 
 function renderSizeDescription() {{
   const el = document.getElementById('size-description');
-  if (activeSizeMode === 'patients') {{
-    el.textContent = 'Marker size follows registered patient count from the NHS monthly GP registered patients totals file.';
-    return;
-  }}
-  const metric = metricConfigs[activeMetric];
-  const activityLabel = activeMetric === 'google'
-    ? 'Google review count'
-    : activeMetric === 'survey'
-      ? 'GP survey returns'
-      : 'the smaller of Google review count and GP survey returns';
-  el.textContent = `Marker size follows ${{activityLabel}} for the current ${{metric.title.toLowerCase()}} view.`;
+  el.textContent = 'Marker size follows registered patient count from the NHS monthly GP registered patients totals file.';
 }}
 
 function renderLayerDescription() {{
   const el = document.getElementById('layer-description');
   if (voronoiShow) {{
-    const weightLabel = activeSizeMode === 'patients' ? 'registered patient count' : 'the current activity count';
-    el.textContent = `Voronoi overlay splits the visible map into nearest-practice territory. Cell color follows the current score metric and opacity follows ${{weightLabel}}.`;
+    el.textContent = 'Voronoi overlay splits the visible map into nearest-practice territory. Cell color follows the current score metric and cell opacity stays fixed.';
     return;
   }}
-  el.textContent = 'Markers show point locations, with color from the current score metric and size from the selected size source.';
+  el.textContent = 'Markers show point locations, with color from the current score metric and size from registered patient count.';
 }}
 
 function clearOverlayLayers() {{
@@ -1669,10 +1622,33 @@ function clearOverlayLayers() {{
   }}
 }}
 
+function voronoiGhostPoints() {{
+  const [minLon, minLat, maxLon, maxLat] = dataBbox;
+  const width = maxLon - minLon;
+  const height = maxLat - minLat;
+  const lonInset = width * 0.035;
+  const latInset = height * 0.035;
+  const sideSteps = 6;
+  const points = [];
+  let ghostIndex = 0;
+
+  for (let step = 0; step <= sideSteps; step += 1) {{
+    const t = step / sideSteps;
+    const lon = minLon + width * t;
+    const lat = minLat + height * t;
+    points.push(turf.point([lon, minLat + latInset], {{ code: `__ghost_top_${{ghostIndex++}}` }}));
+    points.push(turf.point([lon, maxLat - latInset], {{ code: `__ghost_bottom_${{ghostIndex++}}` }}));
+    points.push(turf.point([minLon + lonInset, lat], {{ code: `__ghost_left_${{ghostIndex++}}` }}));
+    points.push(turf.point([maxLon - lonInset, lat], {{ code: `__ghost_right_${{ghostIndex++}}` }}));
+  }}
+
+  return points;
+}}
+
 function voronoiPoints() {{
   const rowsForMap = mapRowsForOverlays();
   const duplicateCounts = new Map();
-  return rowsForMap.map((row) => {{
+  const realPoints = rowsForMap.map((row) => {{
     const key = `${{Number(row.lat).toFixed(6)}},${{Number(row.lon).toFixed(6)}}`;
     const duplicateIndex = duplicateCounts.get(key) || 0;
     duplicateCounts.set(key, duplicateIndex + 1);
@@ -1682,6 +1658,7 @@ function voronoiPoints() {{
     const lat = Number(row.lat) + Math.sin(angle) * offset;
     return turf.point([lon, lat], {{ code: row.code }});
   }});
+  return realPoints.concat(voronoiGhostPoints());
 }}
 
 function voronoiCentroidByCode() {{
@@ -1715,18 +1692,16 @@ function renderVoronoi() {{
       feature.properties.popupMarkup = popupMarkup(row);
       feature.properties.code = row.code;
       feature.properties.color = metricConfigs[activeMetric].markerColor(row);
-      feature.properties.opacityWeight = normalizedSizeWeight(row);
       return feature;
     }});
   if (!features.length) return;
   voronoiLayer = L.geoJSON({{ type: 'FeatureCollection', features }}, {{
     style: (feature) => {{
-      const opacityWeight = Number(feature.properties.opacityWeight || 0);
       return {{
         color: 'rgba(26,28,26,0.26)',
         weight: 1,
         fillColor: feature.properties.color || '#9aa0a6',
-        fillOpacity: 0.18 + opacityWeight * 0.52
+        fillOpacity: 0.42
       }};
     }},
     onEachFeature: (feature, layer) => {{
@@ -2283,7 +2258,7 @@ function renderScatterplot() {{
   const assignments = shapeAssignment();
   const pointMarkup = points.map((point) => {{
     const companyShape = assignments.get(point.row.management_company);
-    const radius = Math.max(4, Math.min(9, activityScaleForRow(point.row) * 6));
+    const radius = Math.max(4, Math.min(9, patientScaleForRow(point.row) * 6));
     const stroke = companyShape ? '#1a1c1a' : 'rgba(26,28,26,0.25)';
     const label = activeMetric === 'google'
       ? point.x.toFixed(1)
@@ -2340,13 +2315,6 @@ function rerenderAll() {{
 document.querySelectorAll('input[name="score-source"]').forEach((input) => {{
   input.addEventListener('change', (event) => {{
     activeMetric = event.target.value;
-    rerenderAll();
-  }});
-}});
-
-document.querySelectorAll('input[name="size-source"]').forEach((input) => {{
-  input.addEventListener('change', (event) => {{
-    activeSizeMode = event.target.value;
     rerenderAll();
   }});
 }});

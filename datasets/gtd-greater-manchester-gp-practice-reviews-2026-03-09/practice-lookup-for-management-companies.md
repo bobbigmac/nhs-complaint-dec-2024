@@ -590,6 +590,8 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** P84004
 - **Address:** 47 Graham Street, Beswick, Manchester, Greater Manchester, M11 3BB
 - **Management company:** (not identified)
+- **Affiliated group:** Northern Health GPPO Limited
+- **Affiliated group note:** Added from CQC-linked manual lookup. Treated as affiliated/operator evidence, not confirmed core management.
 
 
 ## Dr Khan's Practice
@@ -639,6 +641,8 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** P84026
 - **Address:** 357-359 Dickenson Road, Longsight, Manchester, Greater Manchester, M13 0WQ
 - **Management company:** (not identified)
+- **Affiliated group:** (not identified)
+- **Affiliated group note:** Primary Care Manchester Ltd not added yet. Current practice/site evidence was not strong enough.
 
 
 ## Ailsa Craig Medical Centre
@@ -695,6 +699,8 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** P84072
 - **Address:** Rusholme Health Centre, Walmer Street, Rusholme, Manchester, Lancashire, M14 5NP
 - **Management company:** (not identified)
+- **Affiliated group:** (not identified)
+- **Affiliated group note:** Primary Care Manchester Ltd not added yet. Current practice/site evidence was not strong enough.
 
 
 ## Hawthorn MC
@@ -758,6 +764,8 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** P84635
 - **Address:** 2 Whitswood Close, Manchester, Greater Manchester, M16 7AP
 - **Management company:** (not identified)
+- **Affiliated group:** (not identified)
+- **Affiliated group note:** Primary Care Manchester Ltd not added yet. Current practice/site evidence was not strong enough.
 
 
 ## The Range Medical Centre
@@ -905,6 +913,8 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** P84068
 - **Address:** Chorlton Health Centre, 1 Nicolas Road, Chorlton Cum Hardy, Manchester, Greater Manchester, M21 9NJ
 - **Management company:** (not identified)
+- **Affiliated group:** Primary Care Manchester Ltd (https://manchesterpcp.co.uk/)
+- **Affiliated group note:** Added from practice-site link evidence. Treated as affiliated-group evidence, not confirmed core management.
 
 
 ## Tregenna Group Practice
@@ -1458,6 +1468,8 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** P84673
 - **Address:** Old Mill Street, Manchester, Lancashire, M4 6EE
 - **Management company:** (not identified)
+- **Affiliated group:** Northern Health GPPO Limited
+- **Affiliated group note:** Added from CQC-linked manual lookup. Treated as affiliated/operator evidence, not confirmed core management.
 
 
 ## New Islington Medical Centre
@@ -2970,4 +2982,3 @@ Use this list to look up management companies. Each entry includes practice name
 - **NHS ODS code:** Y02322001
 - **Address:** 6 The Centre, Richmond Drive, Higher Folds, Leigh, Lancashire, WN7 2XY
 - **Management company:** SSP Health (https://www.ssphealth.com/)
-
