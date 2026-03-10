@@ -1259,165 +1259,12 @@
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87024-3-springfield-house-medical-practice.txt"
   },
   {
-    "query": "Droylsden Road Surgery Branch M40 2JF",
-    "google_maps_title": "The Range Medical Centre",
-    "google_maps_url": "https://www.google.com/maps/place/The+Range+Medical+Centre/@53.453033,-2.2751344,15z/data=!4m11!1m2!2m1!1sDroylsden+Road+Surgery+Branch+M40+2JF!3m7!1s0x487bb2017594684f:0x3cb063b053749dfe!8m2!3d53.4530327!4d-2.25711!9m1!1b1!16s%2Fg%2F11b7rxfrs1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 4.6,
-    "google_review_count": 1368,
-    "clicked_first_search_result": true,
-    "page_kind": "place",
-    "scan_status": "ok_with_visible_reviews",
-    "manual_review_required": false,
-    "retry_recommended": false,
-    "reviews_opened": true,
-    "reviews_sorted_newest": true,
-    "visible_review_cards_collected": 10,
-    "recent_reviews": [
-      {
-        "author": "Chan Doris",
-        "relative_date": "Edited a day ago",
-        "star_label": "5 stars",
-        "text": "I have excellent experience when I visited Range Medical. The staff there are very helpful and efficient. Dr Suchit is knowledgeable, professional and thoughtful. He has good understanding and advice for me and referred me to the necessary specialist clinics in needed. Highly recommended!",
-        "raw_card_text": "Chan Doris4 reviews \u00b7 2 photosEdited a day ago I have excellent experience when I visited Range Medical. The staff there are very helpful and efficient. Dr Suchit is knowledgeable, professional and thoughtful. He has good understanding and advice for me and referred me to the necessary specialist clinics in needed. Highly recommended!Like Share Response from the owner 6 months agoThank you for your great feedback. We are happy to hear that you consistently have a good experience and that you find Dr Madden to be knowledgeable and professional."
-      },
-      {
-        "author": "Sana Kashif",
-        "relative_date": "4 days ago",
-        "star_label": "4 stars",
-        "text": "",
-        "raw_card_text": "Sana Kashif4 days ago New"
-      },
-      {
-        "author": "Nyle",
-        "relative_date": "5 days ago",
-        "star_label": "1 star",
-        "text": "6:30 my appointment was as a new patient registered to this doctors only just recently moved to Manchester and my name didn\u2019t get called out till 7:10 I have next experienced a Doctors like this in my life",
-        "raw_card_text": "NyleLocal Guide \u00b7 52 reviews \u00b7 2 photos5 days ago New 6:30 my appointment was as a new patient registered to this doctors only just recently moved to Manchester and my name didn\u2019t get called out till 7:10 I have next experienced a Doctors like this in my lifeLike Share"
-      },
-      {
-        "author": "\u0622\u064a\u0634\u0627\u0646",
-        "relative_date": "5 days ago",
-        "star_label": "5 stars",
-        "text": "It was a beautiful and wonderful experience and all the doctors in this centre are wonderful and helpful in all medical cases Special thanks to Dr. Susan Harrison",
-        "raw_card_text": "\u0622\u064a\u0634\u0627\u06461 review5 days ago New It was a beautiful and wonderful experience and all the doctors in this centre are wonderful and helpful in all medical cases Special thanks to Dr. Susan HarrisonLike Share"
-      },
-      {
-        "author": "Jacqueline Jones",
-        "relative_date": "Edited 6 days ago",
-        "star_label": "5 stars",
-        "text": "Dr Aunet was methodical in her approach. She Listened to what I had to say. Before giving suggestions and recommendations. Gave advice on what to do next if her recommendations do not re-solve the issue. Thank you",
-        "raw_card_text": "Jacqueline Jones2 reviewsEdited 6 days ago Dr Aunet was methodical in her approach. She Listened to what I had to say. Before giving suggestions and recommendations. Gave advice on what to do next if her recommendations do not re-solve the issue. Thank youLike Share Response from the owner 6 months agoThank you for your feedback. We are happy you found the doctor to be methodical and a good listener."
-      },
-      {
-        "author": "gillian mellor",
-        "relative_date": "Edited a week ago",
-        "star_label": "5 stars",
-        "text": "Fab service at the range medical centre, from the receptionist being polite & helpful and the Doctor listening, caring and respectful of my needs.",
-        "raw_card_text": "gillian mellor10 reviewsEdited a week ago Fab service at the range medical centre, from the receptionist being polite & helpful and the Doctor listening, caring and respectful of my needs.Like1 Share Response from the owner 9 months agoThank you for taking the time to leave your feedback. We're so glad to hear you received \"fab service\" at The Range Medical Centre, from both the receptionist and the doctor. We always aim for excellence in every patient interaction."
-      },
-      {
-        "author": "Ahmed Mirza",
-        "relative_date": "a week ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "Ahmed Mirza3 reviewsa week ago New"
-      },
-      {
-        "author": "Hamada Hamada",
-        "relative_date": "a week ago",
-        "star_label": "4 stars",
-        "text": "Good GB and supportive staff",
-        "raw_card_text": "Hamada Hamada8 reviewsa week ago New Good GB and supportive staffLike Share"
-      },
-      {
-        "author": "Luca Gui",
-        "relative_date": "a week ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "Luca Gui2 reviewsa week ago New"
-      },
-      {
-        "author": "Sophia",
-        "relative_date": "Edited a week ago",
-        "star_label": "5 stars",
-        "text": "Another wonderful experience of patient care from staff at The Range. Their professionialism, courtesy, and genuine concern is evident. I am truly grateful for the care provided by the team since moving to their practice. Thank you",
-        "raw_card_text": "Sophia5 reviewsEdited a week ago Another wonderful experience of patient care from staff at The Range. Their professionialism, courtesy, and genuine concern is evident. I am truly grateful for the care provided by the team since moving to their practice. Thank youLike Share Response from the owner 6 months agoThank you for sharing your experience as a new patient. We are happy to hear that you have noticed such a positive difference in patient care and that you are grateful for the service provided by our team."
-      }
-    ],
-    "practice_name": "Droylsden Road Surgery Branch",
-    "postcode": "M40 2JF",
-    "canonical_code": "P84047001",
-    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/droylsden-road-surgery-branch/P84047001",
-    "query_used": "Droylsden Road Surgery Branch M40 2JF",
-    "title_match_score": 0.0,
-    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P84047001-droylsden-road-surgery-branch.txt"
-  },
-  {
-    "query": "Rochdale Road Surgey M40 7GT",
-    "google_maps_title": "The Surgery",
-    "google_maps_url": "https://www.google.com/maps/place/The+Surgery/@53.4926001,-2.2973268,13z/data=!4m12!1m2!2m1!1sRochdale+Road+Surgey+M40+7GT!3m8!1s0x487bb1ae3c6f0f61:0xd8c1d524fe8cd331!8m2!3d53.4926001!4d-2.225229!9m1!1b1!15sCh1Sb2NoZGFsZSBSb2FkIFN1cmdlcnkgTTQwIDdHVJIBBmRvY3RvcuABAA!16s%2Fg%2F1hc764kt8?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 4.2,
-    "google_review_count": 5,
-    "clicked_first_search_result": true,
-    "page_kind": "place",
-    "scan_status": "ok_with_visible_reviews",
-    "manual_review_required": false,
-    "retry_recommended": false,
-    "reviews_opened": true,
-    "reviews_sorted_newest": true,
-    "visible_review_cards_collected": 5,
-    "recent_reviews": [
-      {
-        "author": "Millie Finlayson",
-        "relative_date": "5 years ago",
-        "star_label": "5 stars",
-        "text": "Dr Bokhari and the other team of doctors are excellent they provide the best service for their patients. I have never had any issues with the care I receive especially from Dr Bokhari. He has always taken the time out to listen to any problems I have. Dr Bokhari is the best doctor I have ever had and I will not leave and go anywhere else. Millicent Finlayson",
-        "raw_card_text": "Millie FinlaysonLocal Guide \u00b7 22 reviews5 years ago Dr Bokhari and the other team of doctors are excellent they provide the best service for their patients. I have never had any issues with the care I receive especially from Dr Bokhari. He has always taken the time out to listen to any problems I have. Dr Bokhari is the best doctor I have ever had and I will not leave and go anywhere else. Millicent FinlaysonLike Share"
-      },
-      {
-        "author": "Deborah Onley",
-        "relative_date": "6 years ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "Deborah Onley1 review6 years ago"
-      },
-      {
-        "author": "Edward Fleming",
-        "relative_date": "6 years ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "Edward FlemingLocal Guide \u00b7 24 reviews6 years ago"
-      },
-      {
-        "author": "Hassan Malik",
-        "relative_date": "7 years ago",
-        "star_label": "1 star",
-        "text": "",
-        "raw_card_text": "Hassan MalikLocal Guide \u00b7 16 reviews \u00b7 36 photos7 years ago"
-      },
-      {
-        "author": "Ahmed Ali",
-        "relative_date": "8 years ago",
-        "star_label": "5 stars",
-        "text": "",
-        "raw_card_text": "Ahmed Ali16 reviews8 years ago"
-      }
-    ],
-    "practice_name": "Rochdale Road Surgey",
-    "postcode": "M40 7GT",
-    "canonical_code": "P84046001",
-    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/rochdale-road-surgey/P84046001",
-    "query_used": "Rochdale Road Surgey M40 7GT",
-    "title_match_score": 0.0,
-    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P84046001-rochdale-road-surgey.txt"
-  },
-  {
     "query": "The Uplands Medical Practice M45 8GH",
     "google_maps_title": "Uplands Medical Practice at Whitefield Health Centre",
-    "google_maps_url": "https://www.google.com/maps/place/Uplands+Medical+Practice+at+Whitefield+Health+Centre/@53.548863,-2.2999284,17z/data=!4m12!1m2!2m1!1sThe+Uplands+Medical+Practice+M45+8GH!3m8!1s0x487ba55d920a6ec9:0xdda5ea57eaa34e90!8m2!3d53.548863!4d-2.2954223!9m1!1b1!15sCiRUaGUgVXBsYW5kcyBNZWRpY2FsIFByYWN0aWNlIE00NSA4R0haJiIkdGhlIHVwbGFuZHMgbWVkaWNhbCBwcmFjdGljZSBtNDUgOGdokgEGZG9jdG9ymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0a2RWSlZkek5oUlRsSFdqTktXVkZyZUdsV01FWnlZMjF3U0V4WFl4QULgAQD6AQQIPxBJ!16s%2Fg%2F1tgz9x9p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_maps_url": "https://www.google.com/maps/place/Uplands+Medical+Practice+at+Whitefield+Health+Centre/@53.548863,-2.2954223,17z/data=!4m8!3m7!1s0x487ba55d920a6ec9:0xdda5ea57eaa34e90!8m2!3d53.548863!4d-2.2954223!9m1!1b1!16s%2Fg%2F1tgz9x9p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
     "google_rating": 3.1,
     "google_review_count": 168,
-    "clicked_first_search_result": true,
+    "clicked_first_search_result": false,
     "page_kind": "place",
     "scan_status": "ok_with_visible_reviews",
     "manual_review_required": false,
@@ -1643,29 +1490,6 @@
     "query_used": "The Energise Healthy Living Centre M6 6ES",
     "title_match_score": 0.333,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87654001-the-energise-healthy-living-centre.txt"
-  },
-  {
-    "query": "Dr A Chaudhry & Dr I Jeet M7 1RD",
-    "google_maps_title": "Dr G Chowdhury - Newbury Green Medical Practice",
-    "google_maps_url": "https://www.google.com/maps/place/Dr+G+Chowdhury+-+Newbury+Green+Medical+Practice/@53.5059639,-2.2959253,14z/data=!3m1!5s0x487bb02ecd619243:0xd1edb3eda2413770!4m10!1m2!2m1!1sDr+A+Chaudhry+%26+Dr+I+Jeet+M7+1RD!3m6!1s0x487bb02ec961b859:0x43f27ddef0261458!8m2!3d53.5059639!4d-2.2598764!15sCiBEciBBIENoYXVkaHJ5ICYgRHIgSSBKZWV0IE03IDFSRJIBBmRvY3RvcuABAA!16s%2Fg%2F11frdw2nxr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 1.0,
-    "google_review_count": 1,
-    "clicked_first_search_result": true,
-    "page_kind": "place",
-    "scan_status": "ok_rating_only",
-    "manual_review_required": false,
-    "retry_recommended": false,
-    "reviews_opened": false,
-    "reviews_sorted_newest": false,
-    "visible_review_cards_collected": 0,
-    "recent_reviews": [],
-    "practice_name": "Dr A Chaudhry & Dr I Jeet",
-    "postcode": "M7 1RD",
-    "canonical_code": "P87654",
-    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/dr-a-chaudhry-and-dr-i-jeet/P87654",
-    "query_used": "Dr A Chaudhry & Dr I Jeet M7 1RD",
-    "title_match_score": 0.2,
-    "review_text_file": ""
   },
   {
     "query": "Willowbank Surgery M9 4WH",

@@ -728,26 +728,29 @@ body {{
   grid-template-rows: minmax(100vh, 100dvh) auto;
 }}
 .map-stage {{
-  position: relative;
+  display: grid;
+  grid-template-areas: "legend map";
+  grid-template-columns: 360px minmax(0, 1fr);
   min-height: 100vh;
   min-height: 100dvh;
 }}
 #map {{
+  grid-area: map;
   height: 100vh;
   height: 100dvh;
   min-height: 100vh;
   min-height: 100dvh;
 }}
 .legend {{
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 1000;
+  grid-area: legend;
+  position: relative;
+  z-index: 10;
   background: var(--panel-strong);
   padding: 12px 14px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  max-width: 360px;
+  border-right: 1px solid var(--line);
+  box-shadow: inset -1px 0 0 rgba(26, 28, 26, 0.04);
+  max-width: none;
+  overflow: auto;
 }}
 .legend h1 {{
   margin: 0 0 8px;
@@ -877,79 +880,13 @@ body {{
   background: transparent;
   border: 0;
 }}
+.marker-svg {{
+  display: block;
+  overflow: visible;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.22));
+}}
 .leaflet-popup-content {{
   min-width: 220px;
-}}
-.marker-shape {{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font: 700 12px/1 ui-sans-serif, system-ui, sans-serif;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
-  border: 1px solid rgba(0,0,0,0.28);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.22);
-  transform-origin: center center;
-}}
-.marker-circle {{
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-}}
-.marker-square {{
-  width: 34px;
-  height: 34px;
-}}
-.marker-diamond {{
-  width: 34px;
-  height: 34px;
-  transform: rotate(45deg);
-}}
-.marker-triangle {{
-  width: 42px;
-  height: 36px;
-  clip-path: polygon(50% 0, 0 100%, 100% 100%);
-}}
-.marker-hexagon {{
-  width: 38px;
-  height: 34px;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-}}
-.marker-pentagon {{
-  width: 38px;
-  height: 36px;
-  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
-}}
-.marker-label {{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  pointer-events: none;
-}}
-.marker-circle .marker-label {{
-  top: 10px;
-}}
-.marker-square .marker-label {{
-  top: 10px;
-}}
-.marker-diamond .marker-label {{
-  top: 10px;
-  transform: translateX(-50%) rotate(-45deg);
-}}
-.marker-triangle .marker-label {{
-  top: 14px;
-  font-size: 11px;
-}}
-.marker-hexagon .marker-label {{
-  top: 10px;
-}}
-.marker-pentagon .marker-label {{
-  top: 11px;
-}}
-.marker-missing .marker-label {{
-  color: #f4f4f4;
 }}
 .leaflet-popup-content a {{
   word-break: break-word;
@@ -1077,6 +1014,20 @@ body {{
   .page {{
     grid-template-rows: minmax(100vh, 100dvh) auto;
   }}
+  .map-stage {{
+    grid-template-areas:
+      "map"
+      "legend";
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(62vh, 70dvh) auto;
+    min-height: auto;
+  }}
+  #map {{
+    height: 62vh;
+    height: 62dvh;
+    min-height: 62vh;
+    min-height: 62dvh;
+  }}
   .insights {{
     grid-template-columns: 1fr;
   }}
@@ -1088,8 +1039,47 @@ body {{
     gap: 6px;
   }}
   .legend {{
-    right: 12px;
-    max-width: none;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+    box-shadow: none;
+  }}
+}}
+@media print {{
+  * {{
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }}
+  body {{
+    background: #fff;
+  }}
+  .page {{
+    display: block;
+  }}
+  .map-stage {{
+    grid-template-areas: "legend map";
+    grid-template-columns: 280px minmax(0, 1fr);
+    min-height: auto;
+    break-inside: avoid-page;
+  }}
+  #map {{
+    height: 170mm;
+    min-height: 170mm;
+  }}
+  .legend {{
+    border: 1px solid var(--line);
+    border-right: 0;
+    box-shadow: none;
+  }}
+  .panel {{
+    box-shadow: none;
+    border: 1px solid var(--line);
+    break-inside: avoid-page;
+  }}
+  .leaflet-control-container {{
+    display: none;
+  }}
+  .marker-svg {{
+    filter: none;
   }}
 }}
 </style>
@@ -1347,6 +1337,57 @@ function baseShapeMetrics(shape) {{
   return {{ width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 }};
 }}
 
+function markerSvg(shape, color, label, fontSize, missing) {{
+  const stroke = 'rgba(0,0,0,0.28)';
+  const textColor = missing ? '#f4f4f4' : '#ffffff';
+  if (shape === 'triangle') {{
+    return `
+      <svg class="marker-svg" width="42" height="36" viewBox="0 0 42 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="21,1 41,35 1,35" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <text x="21" y="24" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
+      </svg>
+    `;
+  }}
+  if (shape === 'square') {{
+    return `
+      <svg class="marker-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="1" y="1" width="32" height="32" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
+      </svg>
+    `;
+  }}
+  if (shape === 'diamond') {{
+    return `
+      <svg class="marker-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="17,1 33,17 17,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
+      </svg>
+    `;
+  }}
+  if (shape === 'hexagon') {{
+    return `
+      <svg class="marker-svg" width="38" height="34" viewBox="0 0 38 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="10,1 28,1 37,17 28,33 10,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <text x="19" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
+      </svg>
+    `;
+  }}
+  if (shape === 'pentagon') {{
+    return `
+      <svg class="marker-svg" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="19,1 37,14 31,35 7,35 1,14" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <text x="19" y="20" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
+      </svg>
+    `;
+  }}
+  return `
+    <svg class="marker-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="17" cy="17" r="16" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+      <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
+    </svg>
+  `;
+}}
+
 function renderMetricLegend() {{
   const metric = metricConfigs[activeMetric];
   document.getElementById('metric-description').textContent = metric.description;
@@ -1439,16 +1480,16 @@ function renderMarkers() {{
     const color = metric.markerColor(row);
     const label = metric.markerLabel(row);
     const shapeName = assignments.get(row.management_company) || 'circle';
-    const shapeClass = `marker-${{shapeName}}`;
-    const missingClass = label === '?' ? ' marker-missing' : '';
     const scale = scaleForRow(row);
     const metrics = baseShapeMetrics(shapeName);
     const fontSize = Math.max(9, Math.min(13, Math.round(10 + scale * 2)));
     const baseZIndex = assignments.has(row.management_company) ? 1000 : 0;
+    const scaledWidth = Math.round(metrics.width * scale);
+    const scaledHeight = Math.round(metrics.height * scale);
     const icon = L.divIcon({{
       className: 'marker-icon',
-      html: `<div class="marker-shape ${{shapeClass}}${{missingClass}}" style="background:${{color}}; transform: scale(${{scale.toFixed(3)}});"><span class="marker-label" style="font-size:${{fontSize}}px">${{label}}</span></div>`,
-      iconSize: [Math.round(metrics.width * scale), Math.round(metrics.height * scale)],
+      html: markerSvg(shapeName, color, label, fontSize, label === '?'),
+      iconSize: [scaledWidth, scaledHeight],
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
       popupAnchor: [0, metrics.popupY]
     }});
