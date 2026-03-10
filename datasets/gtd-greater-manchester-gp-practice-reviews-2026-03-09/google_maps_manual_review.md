@@ -1,6 +1,6 @@
 # Google Maps Manual Review Queue
 
-Generated from 29 flagged Google Maps capture records.
+Generated from 34 flagged Google Maps capture records.
 
 ## Manual Review Required
 
@@ -17,6 +17,7 @@ Generated from 29 flagged Google Maps capture records.
 | Cornbrook Medical Practice - Boundary Surgery | P84669001 | manual_review_search_result_only | Cornbrook Medical Practice - Boundary Surgery M15 6PR | [link](https://www.google.com/maps/search/Cornbrook+Medical+Practice+-+Boundary+Surgery+M15+6PR/@53.4670451,-2.2395615,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | North Trafford Group Practice | P91629001 | manual_review_search_result_only | North Trafford Group Practice M16 0LW | [link](https://www.google.com/maps/search/North+Trafford+Group+Practice+M16+0LW/@53.4567548,-2.2871981,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | 1/Monton Medical Practice | P87620 | manual_review_search_result_only | 1 | [link](https://www.google.com/maps/search/1/@53.4616622,-2.195456,14z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| 1/Salford Medical Practice | P87004 | manual_review_search_result_only | 1 | [link](https://www.google.com/maps/search/1/@53.4616622,-2.195456,14z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 
 ## Low Confidence Match
 
@@ -40,3 +41,7 @@ Generated from 29 flagged Google Maps capture records.
 | North Trafford Group Practice | P91629 | 0.0 | The Range Medical Centre | [link](https://www.google.com/maps/place/The+Range+Medical+Centre/@53.453033,-2.2751344,15z/data=!4m11!1m2!2m1!1sNorth+Trafford+Group+Practice+M32+0PA!3m7!1s0x487bb2017594684f:0x3cb063b053749dfe!8m2!3d53.4530327!4d-2.25711!9m1!1b1!16s%2Fg%2F11b7rxfrs1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Droylsden Road Surgery Branch | P84047001 | 0.0 | The Range Medical Centre | [link](https://www.google.com/maps/place/The+Range+Medical+Centre/@53.453033,-2.2751344,15z/data=!4m11!1m2!2m1!1sDroylsden+Road+Surgery+Branch+M40+2JF!3m7!1s0x487bb2017594684f:0x3cb063b053749dfe!8m2!3d53.4530327!4d-2.25711!9m1!1b1!16s%2Fg%2F11b7rxfrs1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
 | Rochdale Road Surgey | P84046001 | 0.0 | The Surgery | [link](https://www.google.com/maps/place/The+Surgery/@53.4926001,-2.2973268,13z/data=!4m12!1m2!2m1!1sRochdale+Road+Surgey+M40+7GT!3m8!1s0x487bb1ae3c6f0f61:0xd8c1d524fe8cd331!8m2!3d53.4926001!4d-2.225229!9m1!1b1!15sCh1Sb2NoZGFsZSBSb2FkIFN1cmdlcnkgTTQwIDdHVJIBBmRvY3RvcuABAA!16s%2Fg%2F1hc764kt8?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| The Uplands Medical Practice | P83004 | 0.333 | Uplands Medical Practice at Whitefield Health Centre | [link](https://www.google.com/maps/place/Uplands+Medical+Practice+at+Whitefield+Health+Centre/@53.548863,-2.2999284,17z/data=!4m12!1m2!2m1!1sThe+Uplands+Medical+Practice+M45+8GH!3m8!1s0x487ba55d920a6ec9:0xdda5ea57eaa34e90!8m2!3d53.548863!4d-2.2954223!9m1!1b1!15sCiRUaGUgVXBsYW5kcyBNZWRpY2FsIFByYWN0aWNlIE00NSA4R0haJiIkdGhlIHVwbGFuZHMgbWVkaWNhbCBwcmFjdGljZSBtNDUgOGdokgEGZG9jdG9ymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0a2RWSlZkek5oUlRsSFdqTktXVkZyZUdsV01FWnlZMjF3U0V4WFl4QULgAQD6AQQIPxBJ!16s%2Fg%2F1tgz9x9p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| SPCT - Inclusion Service | Y00445003 | 0.286 | Salford Inclusion GP Service, Salford Primary Care Together | [link](https://www.google.com/maps/place/Salford+Inclusion+GP+Service,+Salford+Primary+Care+Together/@53.486786,-2.284202,17z/data=!4m8!3m7!1s0x487bae3a1a6c0077:0xf5d3eb586ddb98d5!8m2!3d53.486786!4d-2.284202!9m1!1b1!16s%2Fg%2F11fzf7d5zl?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| The Energise Healthy Living Centre | P87654001 | 0.333 | The Energise Community Centre | [link](https://www.google.com/maps/place/The+Energise+Community+Centre/@53.497673,-2.2837234,17z/data=!3m1!5s0x487bae33399d6915:0xeeec21ebaac8231e!4m8!3m7!1s0x487bae333c0af809:0xeceb23e82ac6131e!8m2!3d53.497673!4d-2.2837234!9m1!1b1!16s%2Fg%2F1q62g5x05?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |
+| Dr A Chaudhry & Dr I Jeet | P87654 | 0.2 | Dr G Chowdhury - Newbury Green Medical Practice | [link](https://www.google.com/maps/place/Dr+G+Chowdhury+-+Newbury+Green+Medical+Practice/@53.5059639,-2.2959253,14z/data=!3m1!5s0x487bb02ecd619243:0xd1edb3eda2413770!4m10!1m2!2m1!1sDr+A+Chaudhry+%26+Dr+I+Jeet+M7+1RD!3m6!1s0x487bb02ec961b859:0x43f27ddef0261458!8m2!3d53.5059639!4d-2.2598764!15sCiBEciBBIENoYXVkaHJ5ICYgRHIgSSBKZWV0IE03IDFSRJIBBmRvY3RvcuABAA!16s%2Fg%2F11frdw2nxr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D) |

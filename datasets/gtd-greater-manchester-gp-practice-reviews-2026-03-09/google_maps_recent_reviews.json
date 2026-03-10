@@ -16137,5 +16137,1628 @@
     "query_used": "The Uplands Medical Practice M45 8GH",
     "title_match_score": 0.333,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P83004-the-uplands-medical-practice.txt"
+  },
+  {
+    "query": "Dr KK Chan & Partners M46 9DE",
+    "google_maps_title": "Dr KK Chan",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+KK+Chan/@53.5241523,-2.4934803,17z/data=!3m1!5s0x487b07f101d98781:0x6eb17248d5cf6d46!4m12!1m2!2m1!1sDr+KK+Chan+%26+Partners+M46+9DE!3m8!1s0x487bb1bf5285af13:0xaede94e6f56325fa!8m2!3d53.5241523!4d-2.4889742!9m1!1b1!15sCh1EciBLSyBDaGFuICYgUGFydG5lcnMgTTQ2IDlERVofIh1kciBrayBjaGFuICYgcGFydG5lcnMgbTQ2IDlkZZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbE5IRm1RbVYzRUFF4AEA-gEFCOACECw!16s%2Fg%2F1q62kbqtm?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.3,
+    "google_review_count": 6,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 6,
+    "recent_reviews": [
+      {
+        "author": "J W",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "The best.",
+        "raw_card_text": "J WLocal Guide \u00b7 16 reviews \u00b7 2 photosa year ago The best.Like Share"
+      },
+      {
+        "author": "Jason Lee",
+        "relative_date": "3 years ago",
+        "star_label": "2 stars",
+        "text": "Though the staff are good abd dr Chan is excellent, gettimg an appointment is near impossible. The phones are jammed and the online appointment service doesn't work either. Really frustrating!",
+        "raw_card_text": "Jason LeeLocal Guide \u00b7 34 reviews \u00b7 1 photo3 years ago Though the staff are good abd dr Chan is excellent, gettimg an appointment is near impossible. The phones are jammed and the online appointment service doesn't work either. Really frustrating!Like Share"
+      },
+      {
+        "author": "big critch",
+        "relative_date": "3 years ago",
+        "star_label": "2 stars",
+        "text": "Not happy at the moment with the online service! Put in request at 7.07a m on a Wednesday morning and get no call back off doctor ! Rang Thursday @ 9.05 to be told should be dealt with that day !! 2 days of no sleep and pain in back and under arm ! Fed up of getting told to use walk in centre and out of hours GO ! Should be able to see your doctor ! What are we paying National Insurance for !! No problem before COVID sane so why still using it as an excuse . Gone rediculous this surgery now",
+        "raw_card_text": "big critch2 reviews3 years ago Not happy at the moment with the online service! Put in request at 7.07a m on a Wednesday morning and get no call back off doctor ! Rang Thursday @ 9.05 to be told should be dealt with that day !! 2 days of no sleep and pain in back and under arm ! Fed up of getting told to use walk in centre and out of hours GO ! Should be able to see your doctor ! What are we paying National Insurance for !! No problem before COVID sane so why still using it as an excuse . Gone rediculous this surgery nowLike1 Share"
+      },
+      {
+        "author": "tina griffin",
+        "relative_date": "5 years ago",
+        "star_label": "5 stars",
+        "text": "Don't know where I would be without the help from receptionist nurses and doctors here. They have been so good with me in a time like we are in now. I want to thank you all from the bottom of my heart for being there for me",
+        "raw_card_text": "tina griffin3 reviews5 years ago Don't know where I would be without the help from receptionist nurses and doctors here. They have been so good with me in a time like we are in now. I want to thank you all from the bottom of my heart for being there for meLike Share"
+      },
+      {
+        "author": "Robert Goddard",
+        "relative_date": "5 years ago",
+        "star_label": "5 stars",
+        "text": "Never a problem v helpfull",
+        "raw_card_text": "Robert GoddardLocal Guide \u00b7 115 reviews \u00b7 27 photos5 years ago Never a problem v helpfullLike Share"
+      },
+      {
+        "author": "Charlotte Painter",
+        "relative_date": "6 years ago",
+        "star_label": "1 star",
+        "text": "",
+        "raw_card_text": "Charlotte Painter20 reviews6 years ago"
+      }
+    ],
+    "practice_name": "Dr KK Chan & Partners",
+    "postcode": "M46 9DE",
+    "canonical_code": "P92042",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/dr-kk-chan-and-partners/P92042",
+    "query_used": "Dr KK Chan & Partners M46 9DE",
+    "title_match_score": 0.75,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P92042-dr-kk-chan-and-partners.txt"
+  },
+  {
+    "query": "Ordsall Health Surgery M5 3PH",
+    "google_maps_title": "Ordsall Health Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Ordsall+Health+Surgery/@53.4741173,-2.2820308,17z/data=!4m8!3m7!1s0x487bae165ff9fdc7:0xb851de257e9d02d9!8m2!3d53.4741173!4d-2.2820308!9m1!1b1!16s%2Fg%2F1pxqbwr9b?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.9,
+    "google_review_count": 130,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Gavin Jones",
+        "relative_date": "6 hours ago",
+        "star_label": "5 stars",
+        "text": "Great doctors practice, was seen 2 mins of arrival",
+        "raw_card_text": "Gavin Jones6 hours ago New Great doctors practice, was seen 2 mins of arrivalLike Share"
+      },
+      {
+        "author": "Caitlin Coyle",
+        "relative_date": "2 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Caitlin Coyle2 reviews2 days ago New"
+      },
+      {
+        "author": "O Tyreman",
+        "relative_date": "2 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "O Tyreman3 reviews2 days ago New"
+      },
+      {
+        "author": "Michelle Grodde",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Michelle Grodde2 photosa week ago New"
+      },
+      {
+        "author": "Christopher Hawke",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "A superb doctor's surgery, always do good at what they do.",
+        "raw_card_text": "Christopher Hawke12 reviews2 weeks ago New A superb doctor's surgery, always do good at what they do.Like Share"
+      },
+      {
+        "author": "Adam Leponis",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "Mr Hassan was very helpful!",
+        "raw_card_text": "Adam Leponis4 reviews2 weeks ago New Mr Hassan was very helpful!Like Share"
+      },
+      {
+        "author": "Wildflowers",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I used the triage system here. It was easy to complete and very effective. Thank you.",
+        "raw_card_text": "Wildflowers1 reviewa month ago I used the triage system here. It was easy to complete and very effective. Thank you.Like Share"
+      },
+      {
+        "author": "Dominic Wales",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Dominic WalesLocal Guide \u00b7 114 reviews \u00b7 17 photosa month ago"
+      },
+      {
+        "author": "Alex T-C",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "easy to sign in, make appointments via website and doctors are nice",
+        "raw_card_text": "Alex T-C4 reviewsa month ago easy to sign in, make appointments via website and doctors are niceLike Share"
+      },
+      {
+        "author": "Richard Arnold",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Really informative and well presented by the Nurse , Thanks",
+        "raw_card_text": "Richard Arnold1 reviewa month ago Really informative and well presented by the Nurse , ThanksLike Share"
+      }
+    ],
+    "practice_name": "Ordsall Health Surgery",
+    "postcode": "M5 3PH",
+    "canonical_code": "P87035",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/ordsall-health-surgery/P87035",
+    "query_used": "Ordsall Health Surgery M5 3PH",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87035-ordsall-health-surgery.txt"
+  },
+  {
+    "query": "The Quays Practice M5 3PH",
+    "google_maps_title": "The Quays Practice",
+    "google_maps_url": "https://www.google.com/maps/place/The+Quays+Practice/@53.4741786,-2.2819158,17z/data=!4m8!3m7!1s0x487baf8088a72ccb:0x3e03bd7692c1e5b!8m2!3d53.4741786!4d-2.2819158!9m1!1b1!16s%2Fg%2F11jp2fjlzr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.7,
+    "google_review_count": 450,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Sabri Musa",
+        "relative_date": "22 hours ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Sabri Musa4 reviews22 hours ago New"
+      },
+      {
+        "author": "Juliana J.",
+        "relative_date": "2 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Juliana J.Local Guide \u00b7 16 reviews \u00b7 41 photos2 days ago New"
+      },
+      {
+        "author": "chebella ___",
+        "relative_date": "3 days ago",
+        "star_label": "1 star",
+        "text": "I would give zero stars if I could. I arrived exactly on time for my eldest daughter\u2019s appointment and ended up waiting 20 minutes without being seen. About 10 minutes after the appointment time, I was told the doctor would be \u201cout in a minute,\u201d but that still didn\u2019t happen. The reception staff were unhelpful and seemed uninterested in resolving the situation. In the end, I had to leave because I needed to collect my other child from nursery. It\u2019s ridiculous that if a patient arrives even 10 minutes late they will not be seen, yet it seems acceptable for a doctor to run 20 minutes late with no explanation or apology. An absolute joke.",
+        "raw_card_text": "chebella ___5 reviews3 days ago New I would give zero stars if I could. I arrived exactly on time for my eldest daughter\u2019s appointment and ended up waiting 20 minutes without being seen. About 10 minutes after the appointment time, I was told the doctor would be \u201cout in a minute,\u201d but that still didn\u2019t happen. The reception staff were unhelpful and seemed uninterested in resolving the situation. In the end, I had to leave because I needed to collect my other child from nursery. It\u2019s ridiculous that if a patient arrives even 10 minutes late they will not be seen, yet it seems acceptable for a doctor to run 20 minutes late with no explanation or apology. An absolute joke.Like Share"
+      },
+      {
+        "author": "Nahid Karami",
+        "relative_date": "Edited 5 days ago",
+        "star_label": "5 stars",
+        "text": "I was very happy with the doctor\u2019s kindness. He listened to me very carefully and helped me a lot. I\u2019m very thankful to him.",
+        "raw_card_text": "Nahid Karami1 reviewEdited 5 days ago I was very happy with the doctor\u2019s kindness. He listened to me very carefully and helped me a lot. I\u2019m very thankful to him.Like Share"
+      },
+      {
+        "author": "thara thomas",
+        "relative_date": "5 days ago",
+        "star_label": "5 stars",
+        "text": "Lesley was lovely. Received very good service.",
+        "raw_card_text": "thara thomas6 reviews5 days ago New Lesley was lovely. Received very good service.Like Share"
+      },
+      {
+        "author": "Kanalia",
+        "relative_date": "Edited 5 days ago",
+        "star_label": "5 stars",
+        "text": "(Translated by Google) The doctor is a truly professional and kind person. (Original version) The doctor is a truly professional and kind person.",
+        "raw_card_text": "KanaliaLocal Guide \u00b7 284 reviews \u00b7 241 photosEdited 5 days ago (Translated by Google) The doctor is a truly professional and kind person. (Original version) The doctor is a truly professional and kind person. Translated by Google \u30fb See original (Polish)Like Share"
+      },
+      {
+        "author": "bill laurukenas",
+        "relative_date": "5 days ago",
+        "star_label": "5 stars",
+        "text": "Yes I was very happy very quick and I felt comfortable talking to the nurse she did an excellent job thank you",
+        "raw_card_text": "bill laurukenas17 reviews \u00b7 4 photos5 days ago New Yes I was very happy very quick and I felt comfortable talking to the nurse she did an excellent job thank youLike Share"
+      },
+      {
+        "author": "Helen Ehilegbu",
+        "relative_date": "5 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Helen Ehilegbu5 days ago New"
+      },
+      {
+        "author": "Angela smith",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Angela smith4 reviews \u00b7 1 photoa week ago New"
+      },
+      {
+        "author": "Mudassar Kazmi",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Mudassar Kazmi5 reviewsa week ago New"
+      }
+    ],
+    "practice_name": "The Quays Practice",
+    "postcode": "M5 3PH",
+    "canonical_code": "D5B9D",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-quays-practice/D5B9D",
+    "query_used": "The Quays Practice M5 3PH",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/D5B9D-the-quays-practice.txt"
+  },
+  {
+    "query": "University Health Centre M5 4WT",
+    "google_maps_title": "University of Salford Health Centre",
+    "google_maps_url": "https://www.google.com/maps/place/University+of+Salford+Health+Centre/@53.4850855,-2.2706575,17z/data=!4m8!3m7!1s0x487baf9c767f5a5d:0x12a5f3819a12314a!8m2!3d53.4850855!4d-2.2706575!9m1!1b1!16s%2Fg%2F11pyc4spy5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.7,
+    "google_review_count": 107,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Rinedi Kokibali",
+        "relative_date": "5 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Rinedi Kokibali4 reviews \u00b7 2 photos5 days ago New"
+      },
+      {
+        "author": "Caol\u00e1n Hanna",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Thank you for your feedback. It's great to know that you had a positive experience with the practice.",
+        "raw_card_text": "Caol\u00e1n Hannaa month ago Response from the owner a month agoThank you for your feedback. It's great to know that you had a positive experience with the practice."
+      },
+      {
+        "author": "Sadieh Ms",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I have had a very positive experience with University Health Centre at Salford. The reception team, nurses, and doctors are always professional, kind, and supportive. They take time to listen and explain everything clearly, which really makes a difference. I always feel respected and well cared for during my visits. Thank you to the whole team for your excellent service and dedication.",
+        "raw_card_text": "Sadieh Ms5 reviews \u00b7 1 photoa month ago I have had a very positive experience with University Health Centre at Salford. The reception team, nurses, and doctors are always professional, kind, and supportive. They take time to listen and explain everything clearly, which really makes a difference. I always feel respected and well cared for during my visits. Thank you to the whole team for your excellent service and dedication.Like Share Response from the owner a month agoThank you for your kind words, Sadieh. It\u2019s great to hear that you\u2019ve had such a positive experience with the team and that you\u2019ve felt listened to, respected, and well supported during your visits. We really value your feedback and appreciate you taking the time to share it."
+      },
+      {
+        "author": "Bozena SS",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "It was the first time in my life that I actually felt listened to by a GP. She gave me time it wasn\u2019t just a quick two-minute appointment. You could really tell she was trying to help. Super friendly, very modern and with a holistic approach. I genuinely hope I can see her again in the future.",
+        "raw_card_text": "Bozena SS2 reviews2 months ago It was the first time in my life that I actually felt listened to by a GP. She gave me time it wasn\u2019t just a quick two-minute appointment. You could really tell she was trying to help. Super friendly, very modern and with a holistic approach. I genuinely hope I can see her again in the future.Like Share Response from the owner 2 months agoThank you for your 5-star review."
+      },
+      {
+        "author": "peace egejuru",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Very supportive and friendly staff",
+        "raw_card_text": "peace egejuru3 reviews3 months ago Very supportive and friendly staffLike Share Response from the owner 3 months agoThank you for your feedback!"
+      },
+      {
+        "author": "Charlotte Smith",
+        "relative_date": "3 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you for your support and for giving us a 5-star rating. It means a lot to our team.",
+        "raw_card_text": "Charlotte Smith2 reviews3 months ago Response from the owner 3 months agoThank you for your support and for giving us a 5-star rating. It means a lot to our team."
+      },
+      {
+        "author": "meg webb",
+        "relative_date": "Edited 5 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you for the 5 stars!",
+        "raw_card_text": "meg webbEdited 5 months ago Response from the owner 8 months agoThank you for the 5 stars!"
+      },
+      {
+        "author": "Ana Santo",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you for your 5-star rating! We\u2019re glad to hear you\u2019re happy with our service.",
+        "raw_card_text": "Ana Santo4 reviews6 months ago Response from the owner 6 months agoThank you for your 5-star rating! We\u2019re glad to hear you\u2019re happy with our service."
+      },
+      {
+        "author": "The Reviewer",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you for your rating! We really appreciate your support!",
+        "raw_card_text": "The ReviewerLocal Guide \u00b7 147 reviews \u00b7 373 photos6 months ago Response from the owner 6 months agoThank you for your rating! We really appreciate your support!"
+      },
+      {
+        "author": "chile Sylvaline",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you for the great rating!",
+        "raw_card_text": "chile Sylvaline6 months ago Response from the owner 6 months agoThank you for the great rating!"
+      }
+    ],
+    "practice_name": "University Health Centre",
+    "postcode": "M5 4WT",
+    "canonical_code": "P87027001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/university-health-centre/P87027001",
+    "query_used": "University Health Centre M5 4WT",
+    "title_match_score": 0.5,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87027001-university-health-centre.txt"
+  },
+  {
+    "query": "The Willows Medical Practice M5 5JR",
+    "google_maps_title": "The Willows Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/The+Willows+Surgery/@53.4854553,-2.3091691,17z/data=!4m8!3m7!1s0x487bae5a4ee7f1c7:0x446f2cc9e9a6a7b3!8m2!3d53.4854553!4d-2.3091691!9m1!1b1!16s%2Fg%2F11b5ph_rkc?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.4,
+    "google_review_count": 65,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Jeanette Taylor",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Joined just under a year ago easy to get an appointment and they always answer the phones quickly. Reception staff really helpful",
+        "raw_card_text": "Jeanette Taylor7 reviewsa month ago Joined just under a year ago easy to get an appointment and they always answer the phones quickly. Reception staff really helpfulLike Share"
+      },
+      {
+        "author": "Katalin Jackson",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "The ladies provided such a lovely care today. I had a minor surgery and they made sure I\u2019m comfortable, well informed and they even fed my medical curiosity. Thank you!",
+        "raw_card_text": "Katalin Jackson14 reviews \u00b7 1 photo4 months ago The ladies provided such a lovely care today. I had a minor surgery and they made sure I\u2019m comfortable, well informed and they even fed my medical curiosity. Thank you!Like Share"
+      },
+      {
+        "author": "T E",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "If you are here for a minor Surgery, don\u2019t be nervous! Lesley and Katie were the absolute best! This is truly the best medical service I have ever received, NHS or private!!! Super friendly, welcoming and professional. Explained all well and put my mind at ease. Truly grateful and appreciative. You can tell when people love what they do, God bless them. Thank you guys \ud83e\udd0d",
+        "raw_card_text": "T E13 reviews4 months ago If you are here for a minor Surgery, don\u2019t be nervous! Lesley and Katie were the absolute best! This is truly the best medical service I have ever received, NHS or private!!! Super friendly, welcoming and professional. Explained all well and put my mind at ease. Truly grateful and appreciative. You can tell when people love what they do, God bless them. Thank you guys \ud83e\udd0dLike Share"
+      },
+      {
+        "author": "Mark Scott (Scotty)",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Not the best place to go as it's for minor surgery, but my experience was great, the staff were polite and friendly, had my surgery and off home I went",
+        "raw_card_text": "Mark Scott (Scotty)Local Guide \u00b7 105 reviews \u00b7 8 photos6 months ago Not the best place to go as it's for minor surgery, but my experience was great, the staff were polite and friendly, had my surgery and off home I wentLike1 Share"
+      },
+      {
+        "author": "Lauren Henry",
+        "relative_date": "9 months ago",
+        "star_label": "1 star",
+        "text": "DO NOT REGISTER WITH THIS DOCTORS As a fellow health care worker I will never use this doctors again. They completely dismay any concerns and are to be told that they don\u2019t keep records of people allergies is quite concerning. I\u2019ve been twice and both times I had to send photos never get a face to face appointment. The way the doctors send messages is beyond unprofessional. It\u2019s a HEALTH CARE PRACTISE with NO CARE !!!!! I\u2019ve been to many doctors in Manchester and greater Manchester and this one is by far the worst I\u2019ve had to deal with. Certainly will not be using this practise anymore and would recommend anyone who has moved to this area to NEVER USE THIS DOCTORS. A formal complaint will be done as this is not the first but second time of just poor service from a health care practice",
+        "raw_card_text": "Lauren Henry3 reviews9 months ago DO NOT REGISTER WITH THIS DOCTORS As a fellow health care worker I will never use this doctors again. They completely dismay any concerns and are to be told that they don\u2019t keep records of people allergies is quite concerning. I\u2019ve been twice and both times I had to send photos never get a face to face appointment. The way the doctors send messages is beyond unprofessional. It\u2019s a HEALTH CARE PRACTISE with NO CARE !!!!! I\u2019ve been to many doctors in Manchester and greater Manchester and this one is by far the worst I\u2019ve had to deal with. Certainly will not be using this practise anymore and would recommend anyone who has moved to this area to NEVER USE THIS DOCTORS. A formal complaint will be done as this is not the first but second time of just poor service from a health care practiceLike1 Share"
+      },
+      {
+        "author": "lilian alali",
+        "relative_date": "10 months ago",
+        "star_label": "5 stars",
+        "text": "amazing staff and atmosphere!! everyone is very lovely and helpful.",
+        "raw_card_text": "lilian alali2 reviews10 months ago amazing staff and atmosphere!! everyone is very lovely and helpful.Like Share"
+      },
+      {
+        "author": "Manju Keshwala",
+        "relative_date": "11 months ago",
+        "star_label": "5 stars",
+        "text": "Front desk lovely lady wear a head scarf not sure of her name always working effectively and promptly Happy to have queries resolved. Very good GP practice all GP are very good in their definitely worth going to",
+        "raw_card_text": "Manju Keshwala1 review11 months ago Front desk lovely lady wear a head scarf not sure of her name always working effectively and promptly Happy to have queries resolved. Very good GP practice all GP are very good in their definitely worth going toLike Share"
+      },
+      {
+        "author": "Mubarik Kalil",
+        "relative_date": "11 months ago",
+        "star_label": "1 star",
+        "text": "Do NOT register with this surgery. By and large they will not take your complaints seriously. I have had abnormal blood tests for over a year and they have not given me a face to face appointment to discuss them despite chasing it up a few times, only had repeat testing, no explanation, no follow up. They will dismiss most of your concerns. They won't take you seriously. Like others have said, there are frequent misdiagnoses and quite frankly I consider them unsafe. I don't remember the last time I had a F2F appointment, everything has been through either phone call or the online triage system. If I could rate them a minus rating I would. Please listen to all the negative reviews here and avoid this place.",
+        "raw_card_text": "Mubarik KalilLocal Guide \u00b7 22 reviews \u00b7 2 photos11 months ago Do NOT register with this surgery. By and large they will not take your complaints seriously. I have had abnormal blood tests for over a year and they have not given me a face to face appointment to discuss them despite chasing it up a few times, only had repeat testing, no explanation, no follow up. They will dismiss most of your concerns. They won't take you seriously. Like others have said, there are frequent misdiagnoses and quite frankly I consider them unsafe. I don't remember the last time I had a F2F appointment, everything has been through either phone call or the online triage system. If I could rate them a minus rating I would. Please listen to all the negative reviews here and avoid this place.Like1 Share"
+      },
+      {
+        "author": "Kelly Douglas",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Best surgery ever.x",
+        "raw_card_text": "Kelly Douglas3 reviewsa year ago Best surgery ever.xLike1 Share"
+      },
+      {
+        "author": "Ilkut Kutlar",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "I've always had a great experience with the people in this surgery! The GPs are very kind, understanding, and take time to really help you. The receptionists are friendly, and I've never had any issues with booking appointments when I needed to. Fantastic surgery overall!!",
+        "raw_card_text": "Ilkut KutlarLocal Guide \u00b7 50 reviews \u00b7 144 photosa year ago I've always had a great experience with the people in this surgery! The GPs are very kind, understanding, and take time to really help you. The receptionists are friendly, and I've never had any issues with booking appointments when I needed to. Fantastic surgery overall!!Like1 Share"
+      }
+    ],
+    "practice_name": "The Willows Medical Practice",
+    "postcode": "M5 5JR",
+    "canonical_code": "P87658",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-willows-medical-practice/P87658",
+    "query_used": "The Willows Medical Practice M5 5JR",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87658-the-willows-medical-practice.txt"
+  },
+  {
+    "query": "Care Homes Medical Practice M6 5FW",
+    "google_maps_title": "Salford Care Homes Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Salford+Care+Homes+Medical+Practice/@53.4905324,-2.2882915,17z/data=!3m1!5s0x487bae3f167132d5:0xed8811d68eee81f9!4m8!3m7!1s0x487bae3d21924a87:0x5f6ea00b48b4a2f!8m2!3d53.4905324!4d-2.2882915!9m1!1b1!16s%2Fg%2F1hc559pbg?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.0,
+    "google_review_count": 14,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 1,
+    "recent_reviews": [
+      {
+        "author": "Cheryl Kershaw",
+        "relative_date": "9 years ago",
+        "star_label": "3 stars",
+        "text": "",
+        "raw_card_text": "Cheryl KershawLocal Guide \u00b7 48 reviews \u00b7 28 photos9 years ago"
+      }
+    ],
+    "practice_name": "Care Homes Medical Practice",
+    "postcode": "M6 5FW",
+    "canonical_code": "Y02625",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/care-homes-medical-practice/Y02625",
+    "query_used": "Care Homes Medical Practice M6 5FW",
+    "title_match_score": 0.667,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y02625-care-homes-medical-practice.txt"
+  },
+  {
+    "query": "Clarendon Surgery M6 5FX",
+    "google_maps_title": "Clarendon Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Clarendon+Surgery/@53.4884407,-2.2847855,17z/data=!3m1!5s0x487bae30ae20136b:0x9237a097d2121257!4m8!3m7!1s0x487bae30aeadadb9:0x4ce7bbf6715e3502!8m2!3d53.4884407!4d-2.2847855!9m1!1b1!16s%2Fg%2F1w2ytfmd?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.8,
+    "google_review_count": 65,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Stojka Ondrej",
+        "relative_date": "a week ago",
+        "star_label": "1 star",
+        "text": "Very insensitive Dr and staff.",
+        "raw_card_text": "Stojka Ondrej2 reviewsa week ago New Very insensitive Dr and staff.Like Share Response from the owner 5 days agoWe have been unable to identify you as a patient at the practice. Please can you contact the practice on 0161 983 0190 so that we can address this with you."
+      },
+      {
+        "author": "vincent dean",
+        "relative_date": "2 months ago",
+        "star_label": "1 star",
+        "text": "As someone with Autism, I don't enjoy Clarendon's surgery as a whole as I never feel like anyone actually cares, even the doctors, I'm just a ticket in a line to receive my pill, I've been trying to get an ADHD diagnosis, I've just completed the form and have spent 20 minutes going through my emails, looking on the website, which is just an organised mess, the contact us, doesn't even look like it has an email address, if I'm a low intelligence person fine, but the fact that your website is difficult to navigate to simply send an email is disgusting, I hope I'm just missing something simple, i can't even call in to book an appointment as it's done online, Clarendons is a prime example of how the NHS just makes it difficult to receive healthcare in the UK",
+        "raw_card_text": "vincent dean8 reviews2 months ago As someone with Autism, I don't enjoy Clarendon's surgery as a whole as I never feel like anyone actually cares, even the doctors, I'm just a ticket in a line to receive my pill, I've been trying to get an ADHD diagnosis, I've just completed the form and have spent 20 minutes going through my emails, looking on the website, which is just an organised mess, the contact us, doesn't even look like it has an email address, if I'm a low intelligence person fine, but the fact that your website is difficult to navigate to simply send an email is disgusting, I hope I'm just missing something simple, i can't even call in to book an appointment as it's done online, Clarendons is a prime example of how the NHS just makes it difficult to receive healthcare in the UKLike Share Response from the owner 2 months agoDear Mr Dean Thank you for taking the time to share your feedback. We are genuinely sorry to hear how frustrating and upsetting your experience has felt. We recognise that navigating healthcare systems can be particularly challenging for patients who are neurodivergent, and feeling unheard or unsupported is never what we want for our patients. We are sorry if our website has been difficult to navigate. Our website is regularly reviewed by Greater Manchester Integrated Care Board (GM ICB) to ensure it meets accessibility standards; however, we understand that \u201caccessible\u201d does not always mean easy to use for everyone. We are currently reviewing alternative website providers to see how we can further improve clarity, navigation, and ease of contact. All our Doctors appointment requests are triaged by a GP to ensure patients are directed to the most appropriate clinician based on clinical need. We encourage patients to use our online consultation forms where possible, as these go directly to the duty doctor and support timely responses. However, online access is not the only option. Patients who are unable to, or prefer not to, submit requests online can telephone the practice, where a receptionist will complete the form on their behalf, or attend the surgery in person to receive support face to face. Please note that our phone lines are extremely busy, and waiting times inevitably increase when reception staff are assisting patients with completing forms, but this support remains available. All triage requests are reviewed and responded to within 24 hours via the contact method chosen by the patient. With regard to ADHD referrals, the specialist service is unable to accept referrals without a completed screening questionnaire being returned, as this is a requirement of the service. There is usually an option to return the completed form via an available link included in the accompanying text message, (valid for five days). We do however, appreciate the difficulty you have described and have taken this feedback on board. Going forward, we will also ensure that a return email address is clearly included within the message to provide an alternative way of responding. If you need further help or would like to discuss your concerns in more detail, our Reception Manager would be happy to assist and can be contacted via the surgery. We also have a dedicated Care Coordinator who can also support patients who need additional help accessing our systems. We also have an active Patient Participation Group (PPG), which meet regularly to share feedback, discuss patient experiences, and explore ways we can improve our services. We would welcome your engagement, and the Reception Manager can provide further information or help you get involved if this is something you would like to pursue. Thank you again for taking the time to share your experience. Your feedback is important to us and helps us continue to improve the care we provide."
+      },
+      {
+        "author": "David Healy",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "A few years ago I went to Clarendon surgery not feeling well the doctor at Clarendon was brilliant he listened and sent me for a blood test within days I was diagnosed with a underactive thyroid I was given the treatment I needed. Now I feel a lot better and Clarendon give me blood test every 6 months to monitor my bloods great service",
+        "raw_card_text": "David Healy2 reviews7 months ago A few years ago I went to Clarendon surgery not feeling well the doctor at Clarendon was brilliant he listened and sent me for a blood test within days I was diagnosed with a underactive thyroid I was given the treatment I needed. Now I feel a lot better and Clarendon give me blood test every 6 months to monitor my bloods great serviceLike Share Response from the owner 7 months agoThanks David, It's always nice to hear when patients have a good experience, we'll be sure to pass it on to the team!"
+      },
+      {
+        "author": "Anna W",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "Consistently great experience. Booking appointments is straightforward, and I\u2019m always treated with respect and courtesy. Thank you to HCA Tracy that did my ECG for your kind and caring approach. Dr Abbas, Dr Rafferty and Dr O'Neil has always been absolutely great to speak to. I do recommend this practice \ud83d\ude4c",
+        "raw_card_text": "Anna W8 reviews \u00b7 15 photos7 months ago Consistently great experience. Booking appointments is straightforward, and I\u2019m always treated with respect and courtesy. Thank you to HCA Tracy that did my ECG for your kind and caring approach. Dr Abbas, Dr Rafferty and Dr O'Neil has always been absolutely great to speak to. I do recommend this practice \ud83d\ude4cLike Share Response from the owner 7 months agoThank you so much Anna for your kind words and recommendation! We\u2019ll pass your lovely feedback on to Tracy, Dr Abbas, Dr Rafferty and Dr O\u2019Neil. \ud83c\udf1f \u2026"
+      },
+      {
+        "author": "Keesha Thomas",
+        "relative_date": "9 months ago",
+        "star_label": "5 stars",
+        "text": "My experience with the nurse was great, she was very friendly. I would encourage women to go for their smear test",
+        "raw_card_text": "Keesha Thomas4 reviews9 months ago My experience with the nurse was great, she was very friendly. I would encourage women to go for their smear testLike Share Response from the owner 9 months agoThank you so much for your kind feedback. We\u2019re really pleased to hear that you had such a positive experience with our nurse. Cervical screening (smear tests) is a really important way to help prevent cervical cancer, and we\u2019re grateful for your encouragement to others. Having a smear test can quite literally save your life, and we\u2019re here to support every woman through the process."
+      },
+      {
+        "author": "andrea moggeridge",
+        "relative_date": "9 months ago",
+        "star_label": "5 stars",
+        "text": "Seen really quickly and listened to what I was saying",
+        "raw_card_text": "andrea moggeridge3 reviews9 months ago Seen really quickly and listened to what I was sayingLike Share Response from the owner 9 months agoThanks Andrea, it's always great to hear when we get things right!"
+      },
+      {
+        "author": "katie o",
+        "relative_date": "10 months ago",
+        "star_label": "5 stars",
+        "text": "Had my first appointment here with Tracey. She was so lovely and really helped calm my nerves, and was able to answer any questions I had which I really appreciated. Thank you so much",
+        "raw_card_text": "katie o4 reviews10 months ago Had my first appointment here with Tracey. She was so lovely and really helped calm my nerves, and was able to answer any questions I had which I really appreciated. Thank you so muchLike Share Response from the owner 7 months agoThank you Katie for your lovely feedback! We\u2019re so glad Tracey was able to put you at ease \u2014 we\u2019ll make sure to share this with her. \ud83c\udf1f \u2026"
+      },
+      {
+        "author": "Ginny Wai",
+        "relative_date": "10 months ago",
+        "star_label": "5 stars",
+        "text": "Everyone is lovely and helpful! Good system in place. Adele has really give me a good explanation on my situation. Highly recommend",
+        "raw_card_text": "Ginny WaiLocal Guide \u00b7 76 reviews \u00b7 260 photos10 months ago Everyone is lovely and helpful! Good system in place. Adele has really give me a good explanation on my situation. Highly recommendLike Share Response from the owner 10 months agoThanks Ginny, we are very grateful to have your support and we will share your feedback to Adele and the team"
+      },
+      {
+        "author": "ryan bennett",
+        "relative_date": "11 months ago",
+        "star_label": "5 stars",
+        "text": "Amazing surgery, the nurse Adele was extremely comforting and helping!!!",
+        "raw_card_text": "ryan bennett1 review11 months ago Amazing surgery, the nurse Adele was extremely comforting and helping!!!Like Share Response from the owner 10 months agoThanks Ryan, we are very proud of our nursing team!"
+      },
+      {
+        "author": "Beo Woof",
+        "relative_date": "11 months ago",
+        "star_label": "5 stars",
+        "text": "Awesome service, quick blood test. No problems treated me well",
+        "raw_card_text": "Beo WoofLocal Guide \u00b7 67 reviews \u00b7 22 photos11 months ago Awesome service, quick blood test. No problems treated me wellLike Share Response from the owner 10 months agoThank you for your feedback, its great to hear when we get it right"
+      }
+    ],
+    "practice_name": "Clarendon Surgery",
+    "postcode": "M6 5FX",
+    "canonical_code": "P87634",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/clarendon-surgery/P87634",
+    "query_used": "Clarendon Surgery M6 5FX",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87634-clarendon-surgery.txt"
+  },
+  {
+    "query": "Pendleton Medical Centre M6 5FX",
+    "google_maps_title": "Pendleton Medical Centre",
+    "google_maps_url": "https://www.google.com/maps/place/Pendleton+Medical+Centre/@53.4883649,-2.2891699,17z/data=!3m1!5s0x487bae30ae20136b:0xd1f02b66cdb600dc!4m12!1m2!2m1!1sPendleton+Medical+Centre+M6+5FX!3m8!1s0x487bae30b2047191:0x87478bef7daf5bd8!8m2!3d53.4883649!4d-2.2846638!9m1!1b1!15sCh9QZW5kbGV0b24gTWVkaWNhbCBDZW50cmUgTTYgNUZYWiEiH3BlbmRsZXRvbiBtZWRpY2FsIGNlbnRyZSBtNiA1ZniSAQ5tZWRpY2FsX2NlbnRlcpoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyNWtNMWRYY0hSVWJrbDZWMjVvYWxGck1VbFJWekZYV2pOQ1dsVXhSUkFC4AEA-gEECCoQQQ!16s%2Fg%2F11b7q50_9r?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.8,
+    "google_review_count": 629,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_reviews_opened_no_visible_text",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Pendleton Medical Centre",
+    "postcode": "M6 5FX",
+    "canonical_code": "P87015",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/pendleton-medical-centre/P87015",
+    "query_used": "Pendleton Medical Centre M6 5FX",
+    "title_match_score": 1.0,
+    "review_text_file": ""
+  },
+  {
+    "query": "SPCT - Inclusion Service M6 5PL",
+    "google_maps_title": "Salford Inclusion GP Service, Salford Primary Care Together",
+    "google_maps_url": "https://www.google.com/maps/place/Salford+Inclusion+GP+Service,+Salford+Primary+Care+Together/@53.486786,-2.284202,17z/data=!4m8!3m7!1s0x487bae3a1a6c0077:0xf5d3eb586ddb98d5!8m2!3d53.486786!4d-2.284202!9m1!1b1!16s%2Fg%2F11fzf7d5zl?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.3,
+    "google_review_count": 3,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 3,
+    "recent_reviews": [
+      {
+        "author": "Robert Lee",
+        "relative_date": "4 years ago",
+        "star_label": "1 star",
+        "text": "Worst gp that I have ever had no care",
+        "raw_card_text": "Robert Lee5 reviews4 years ago Worst gp that I have ever had no careLike1 Share"
+      },
+      {
+        "author": "Siobhan Leigh",
+        "relative_date": "5 years ago",
+        "star_label": "5 stars",
+        "text": "Dr Alex Lincoln and Dr Wan Yung are incredible. Can\u2019t do more for you and really help you.",
+        "raw_card_text": "Siobhan LeighLocal Guide \u00b7 23 reviews \u00b7 14 photos5 years ago Dr Alex Lincoln and Dr Wan Yung are incredible. Can\u2019t do more for you and really help you.Like1 Share"
+      },
+      {
+        "author": "peter hodkinson",
+        "relative_date": "5 years ago",
+        "star_label": "1 star",
+        "text": "",
+        "raw_card_text": "peter hodkinsonLocal Guide \u00b7 79 reviews5 years ago"
+      }
+    ],
+    "practice_name": "SPCT - Inclusion Service",
+    "postcode": "M6 5PL",
+    "canonical_code": "Y00445003",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/spct-inclusion-service/Y00445003",
+    "query_used": "SPCT - Inclusion Service M6 5PL",
+    "title_match_score": 0.286,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y00445003-spct-inclusion-service.txt"
+  },
+  {
+    "query": "1/Salford Medical Practice M6 5PP",
+    "google_maps_title": "1",
+    "google_maps_url": "https://www.google.com/maps/search/1/@53.4616622,-2.195456,14z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": null,
+    "google_review_count": null,
+    "clicked_first_search_result": false,
+    "page_kind": "search",
+    "scan_status": "manual_review_search_result_only",
+    "manual_review_required": true,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "1/Salford Medical Practice",
+    "postcode": "M6 5PP",
+    "canonical_code": "P87004",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/1-salford-medical-practice/P87004",
+    "query_used": "1/Salford Medical Practice M6 5PP",
+    "title_match_score": 0.0,
+    "review_text_file": ""
+  },
+  {
+    "query": "Cornerstone Medical Practice M6 5QQ",
+    "google_maps_title": "Cornerstone Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Cornerstone+Medical+Practice/@53.483692,-2.29434,17z/data=!4m8!3m7!1s0x487bae471ef51419:0x9a9b3d411934ec34!8m2!3d53.483692!4d-2.29434!9m1!1b1!16s%2Fg%2F1hc4s54c1?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.6,
+    "google_review_count": 40,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Lucy",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Lucya month ago"
+      },
+      {
+        "author": "Michael Cam",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Recently registered with this Practice and they went above and beyond!",
+        "raw_card_text": "Michael Cam1 reviewa month ago Recently registered with this Practice and they went above and beyond!Like Share Response from the owner a month agoThank you for your review"
+      },
+      {
+        "author": "Charlotte Jaber",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Worst doctors I have ever been to. They medically gaslight you, asked me if I was in an abusive relationship because my husband attended my appointments, wrote down incorrectly that I had a heart condition that I do NOT have and have only just found that out from my new doctors nearly 2 years after moving practices. Highly recommend you look elsewhere unless you want medical negligence.",
+        "raw_card_text": "Charlotte Jaber6 reviewsa month ago Worst doctors I have ever been to. They medically gaslight you, asked me if I was in an abusive relationship because my husband attended my appointments, wrote down incorrectly that I had a heart condition that I do NOT have and have only just found that out from my new doctors nearly 2 years after moving practices. Highly recommend you look elsewhere unless you want medical negligence.Like Share Response from the owner a month agoSorry to hear your unhappy with our practice please feel to contact the practice manager to discuss further if you want to, can I also confirm you have the correct practice as there are several Cornerstone practice in Manchester."
+      },
+      {
+        "author": "Duncan Clowes",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Medical centre",
+        "raw_card_text": "Duncan ClowesLocal Guide \u00b7 548 reviews \u00b7 320 photosa month ago Medical centreLike Share"
+      },
+      {
+        "author": "Jordan Carey",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "Doctors try and make an appointment with me for months and then when I ring to make an appointment they're saying my address was changed in June and can't offer me an appointment... But for 6 months they can ring an offer me appointments. Having a mental health crisis and she thinks I've got time to re register.",
+        "raw_card_text": "Jordan Carey5 reviews3 months ago Doctors try and make an appointment with me for months and then when I ring to make an appointment they're saying my address was changed in June and can't offer me an appointment... But for 6 months they can ring an offer me appointments. Having a mental health crisis and she thinks I've got time to re register.Like Share Response from the owner 2 months agoSorry about your experience if you contact the surgery we will make you an appointment that's suitable to your availability as you said we have made several attempts to contact you unsuccessfully over the past few months."
+      },
+      {
+        "author": "Tryston Blyth",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Great doctors, they listen and really help me. The receptionists are great as well helping as much bas they can",
+        "raw_card_text": "Tryston Blyth8 reviews6 months ago Great doctors, they listen and really help me. The receptionists are great as well helping as much bas they canLike Share Response from the owner 6 months agothank you for your review"
+      },
+      {
+        "author": "Gabrielle Pamphlett",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "Great practice ,amazing staff the best practice around x",
+        "raw_card_text": "Gabrielle Pamphlett4 reviews6 months ago Great practice ,amazing staff the best practice around xLike Share"
+      },
+      {
+        "author": "Sian J",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "Helpful, very professional and patient-focussed reception team, and doctors that provide a truly excellent standard of care. I feel lucky to have a GP practice that bucks the trend nationally that primary care has become increasingly difficult to access and impersonal. Thank you Cornerstone Medical Practice!",
+        "raw_card_text": "Sian J6 reviews7 months ago Helpful, very professional and patient-focussed reception team, and doctors that provide a truly excellent standard of care. I feel lucky to have a GP practice that bucks the trend nationally that primary care has become increasingly difficult to access and impersonal. Thank you Cornerstone Medical Practice!Like Share"
+      },
+      {
+        "author": "Syed Ali",
+        "relative_date": "a year ago",
+        "star_label": "1 star",
+        "text": "",
+        "raw_card_text": "Syed Ali2 reviewsa year ago"
+      },
+      {
+        "author": "Akira Day",
+        "relative_date": "a year ago",
+        "star_label": "1 star",
+        "text": "Receptionist Phoebe lazy and rude attitude her supervisor Jess stepped in like a hero only to sound even more uneducated, she clearly has NO idea how to supervise or operate a doctors surgery, they're totally unhelpful, unsympathetic, and hung up because they couldn't handle a simple request which was a emergency I cannot wait to remove my father from this practice I don't advise anyone to be putting their loved ones into such a uncaring, unprofessional, lazy and literally scraping the barrel with work type of environment. Disgusted I would change your supervision and see who's at the reception if they're welcoming and helpful because they're certainly aren't. Doctors themselves are lovely but your reception has ruined that.",
+        "raw_card_text": "Akira Day4 reviewsa year ago Receptionist Phoebe lazy and rude attitude her supervisor Jess stepped in like a hero only to sound even more uneducated, she clearly has NO idea how to supervise or operate a doctors surgery, they're totally unhelpful, unsympathetic, and hung up because they couldn't handle a simple request which was a emergency I cannot wait to remove my father from this practice I don't advise anyone to be putting their loved ones into such a uncaring, unprofessional, lazy and literally scraping the barrel with work type of environment. Disgusted I would change your supervision and see who's at the reception if they're welcoming and helpful because they're certainly aren't. Doctors themselves are lovely but your reception has ruined that.Like1 Share Response from the owner a year agoWe are sorry you are unhappy with the service, we have new staff in post and would welcome any feedback. Please email the practice in line with our complaints procedure and we will investigate in due course."
+      }
+    ],
+    "practice_name": "Cornerstone Medical Practice",
+    "postcode": "M6 5QQ",
+    "canonical_code": "P87639",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/cornerstone-medical-practice/P87639",
+    "query_used": "Cornerstone Medical Practice M6 5QQ",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87639-cornerstone-medical-practice.txt"
+  },
+  {
+    "query": "Langworthy Medical Practice M6 5WW",
+    "google_maps_title": "Langworthy Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Langworthy+Medical+Practice/@53.4897736,-2.2947748,17z/data=!4m8!3m7!1s0x487bae4856f2c011:0x174d58fdfde2e035!8m2!3d53.4897736!4d-2.2947748!9m1!1b1!16s%2Fg%2F12hs83qtl?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.1,
+    "google_review_count": 334,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Janice Spindler",
+        "relative_date": "2 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Janice SpindlerLocal Guide \u00b7 24 reviews \u00b7 43 photos2 days ago New"
+      },
+      {
+        "author": "praise emefe",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "praise emefe1 review3 days ago New"
+      },
+      {
+        "author": "Carol Pleasant",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "The doctor I spoke to was absolutely amazing, Dr Ramsden ordered blood tests which came back the same day, the receptionists I spoke were amazing. I saw a nurse who was so nice when taking blood, just absolutely brilliant all round.",
+        "raw_card_text": "Carol Pleasant2 reviews3 days ago New The doctor I spoke to was absolutely amazing, Dr Ramsden ordered blood tests which came back the same day, the receptionists I spoke were amazing. I saw a nurse who was so nice when taking blood, just absolutely brilliant all round.Like Share"
+      },
+      {
+        "author": "Richard Trentham",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Richard Trentham1 review3 days ago New"
+      },
+      {
+        "author": "Brian Helps",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "Great team every one i have seen from dr Addlestone, gill,Anna, dr morris girls behind reception have been helping me over come the passing of my wife . Really helping me in trying to over come my grief which as effected me mentally. Superb medical team and reception staff .",
+        "raw_card_text": "Brian HelpsLocal Guide \u00b7 14 reviews3 days ago New Great team every one i have seen from dr Addlestone, gill,Anna, dr morris girls behind reception have been helping me over come the passing of my wife . Really helping me in trying to over come my grief which as effected me mentally. Superb medical team and reception staff .Like Share"
+      },
+      {
+        "author": "Anthony Brooke",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "I have been a patient at Langworthy Medical Practice for over 30 years and have received great care 95% of that time. Colette on reception is brilliant and always really helpful. All of the doctors and nurses are great, but especially Dr. McPillips.",
+        "raw_card_text": "Anthony Brooke3 reviews3 days ago New I have been a patient at Langworthy Medical Practice for over 30 years and have received great care 95% of that time. Colette on reception is brilliant and always really helpful. All of the doctors and nurses are great, but especially Dr. McPillips.Like Share"
+      },
+      {
+        "author": "Ruth McAuley",
+        "relative_date": "Edited 3 days ago",
+        "star_label": "4 stars",
+        "text": "Dr Addlestone is simply incredible. The patches app has been developed significantly in 4 years and improved significantly. Air filters in the waiting areas are an excellent addition.",
+        "raw_card_text": "Ruth McAuleyLocal Guide \u00b7 108 reviews \u00b7 2 photosEdited 3 days ago Dr Addlestone is simply incredible. The patches app has been developed significantly in 4 years and improved significantly. Air filters in the waiting areas are an excellent addition.Like3 Share"
+      },
+      {
+        "author": "William Goldstraw",
+        "relative_date": "3 days ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "William Goldstraw1 photo3 days ago New"
+      },
+      {
+        "author": "patience dogara",
+        "relative_date": "4 days ago",
+        "star_label": "5 stars",
+        "text": "Really helpful in booking an appointment. Swift service too",
+        "raw_card_text": "patience dogaraLocal Guide \u00b7 13 reviews4 days ago New Really helpful in booking an appointment. Swift service tooLike Share"
+      },
+      {
+        "author": "Hayley Collier",
+        "relative_date": "4 days ago",
+        "star_label": "5 stars",
+        "text": "I\u2019ve just spoken to a lovely receptionist from Langworthy Medical Practice called Colette (hope I\u2019ve spelled that correctly). She was so helpful and really listened to what I was saying when I was trying to make an app for my daughter. She had great customer service, which I really appreciated when I know how busy and demanding her role is. Thank you so much for everything today Colette, keep shining!",
+        "raw_card_text": "Hayley Collier4 reviews4 days ago New I\u2019ve just spoken to a lovely receptionist from Langworthy Medical Practice called Colette (hope I\u2019ve spelled that correctly). She was so helpful and really listened to what I was saying when I was trying to make an app for my daughter. She had great customer service, which I really appreciated when I know how busy and demanding her role is. Thank you so much for everything today Colette, keep shining!Like Share"
+      }
+    ],
+    "practice_name": "Langworthy Medical Practice",
+    "postcode": "M6 5WW",
+    "canonical_code": "P87027",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/langworthy-medical-practice/P87027",
+    "query_used": "Langworthy Medical Practice M6 5WW",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87027-langworthy-medical-practice.txt"
+  },
+  {
+    "query": "The Energise Healthy Living Centre M6 6ES",
+    "google_maps_title": "The Energise Community Centre",
+    "google_maps_url": "https://www.google.com/maps/place/The+Energise+Community+Centre/@53.497673,-2.2837234,17z/data=!3m1!5s0x487bae33399d6915:0xeeec21ebaac8231e!4m8!3m7!1s0x487bae333c0af809:0xeceb23e82ac6131e!8m2!3d53.497673!4d-2.2837234!9m1!1b1!16s%2Fg%2F1q62g5x05?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.9,
+    "google_review_count": 26,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Emmely Doherty",
+        "relative_date": "7 months ago",
+        "star_label": "2 stars",
+        "text": "",
+        "raw_card_text": "Emmely Doherty2 reviews7 months ago"
+      },
+      {
+        "author": "Elaine Farquharson",
+        "relative_date": "2 years ago",
+        "star_label": "4 stars",
+        "text": "",
+        "raw_card_text": "Elaine Farquharson1 review2 years ago"
+      },
+      {
+        "author": "Humairaa Ahmed",
+        "relative_date": "3 years ago",
+        "star_label": "1 star",
+        "text": "Had an appointment today at 11:40 for an ultrasound scan which I had to have a full bladder for. I took a taxi to the place but as the taxi driver went the wrong way, by the time I got through to the centre was 11:43 and I explained to the receptionist that I\u2019ll be 5 minutes. She said that was fine. I arrived at 11:50 and sat in the waiting area waiting for my ultrasound. When I arrived, was only 1 woman I saw go in and come out 10 minutes later. After that it was just me sitting there waiting. Nearly 20 minutes had gone by so I ask the receptionist. She said I am half an hour late and how I said I\u2019ll be 5 minutes and that they won\u2019t see me , even though I walked in passed reception at 11:50 to sit in the waiting area which was by the ultrasound scan room. I explained myself. Then she said okay just continue waiting. 25 minutes later the person at the ultrasound came out for me and explained how I\u2019m too late and she can\u2019t fit me in. Even though I\u2019m the only one there and have been for the past 35 minutes. She said she\u2019s been calling for me. No one called for me at all whilst I was there. Whatever I was telling her wasn\u2019t going through to her at all. So after sitting there for nearly 45 minutes on a full bladder that I\u2019ve had for 2 hours, I got sent home and a phone call after to re arrange. No thanks I would rather not have the scan anymore to find the issue of what\u2019s making me ill rather than dealing with people like this. And bare in mind whilst I was waiting, one woman kept coming in and out of the room \u2018checking around\u2019 but never called my name or spoke to me. Wish I could give this place 0 stars",
+        "raw_card_text": "Humairaa Ahmed5 reviews3 years ago Had an appointment today at 11:40 for an ultrasound scan which I had to have a full bladder for. I took a taxi to the place but as the taxi driver went the wrong way, by the time I got through to the centre was 11:43 and I explained to the receptionist that I\u2019ll be 5 minutes. She said that was fine. I arrived at 11:50 and sat in the waiting area waiting for my ultrasound. When I arrived, was only 1 woman I saw go in and come out 10 minutes later. After that it was just me sitting there waiting. Nearly 20 minutes had gone by so I ask the receptionist. She said I am half an hour late and how I said I\u2019ll be 5 minutes and that they won\u2019t see me , even though I walked in passed reception at 11:50 to sit in the waiting area which was by the ultrasound scan room. I explained myself. Then she said okay just continue waiting. 25 minutes later the person at the ultrasound came out for me and explained how I\u2019m too late and she can\u2019t fit me in. Even though I\u2019m the only one there and have been for the past 35 minutes. She said she\u2019s been calling for me. No one called for me at all whilst I was there. Whatever I was telling her wasn\u2019t going through to her at all. So after sitting there for nearly 45 minutes on a full bladder that I\u2019ve had for 2 hours, I got sent home and a phone call after to re arrange. No thanks I would rather not have the scan anymore to find the issue of what\u2019s making me ill rather than dealing with people like this. And bare in mind whilst I was waiting, one woman kept coming in and out of the room \u2018checking around\u2019 but never called my name or spoke to me. Wish I could give this place 0 starsLike3 Share"
+      },
+      {
+        "author": "Tom M",
+        "relative_date": "4 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Tom MLocal Guide \u00b7 10 reviews \u00b7 32 photos4 years ago"
+      },
+      {
+        "author": "Pawe\u0142 Jurkiewicz",
+        "relative_date": "4 years ago",
+        "star_label": "2 stars",
+        "text": "Don't really care about people. Lack of contact, poor communication, pretty disturbing when it comes to your health. I hope they will change in the future. The only good thing I can say is front desk staff is polite.",
+        "raw_card_text": "Pawe\u0142 JurkiewiczLocal Guide \u00b7 80 reviews \u00b7 44 photos4 years ago Don't really care about people. Lack of contact, poor communication, pretty disturbing when it comes to your health. I hope they will change in the future. The only good thing I can say is front desk staff is polite.Like Share"
+      },
+      {
+        "author": "Paula McGuinness",
+        "relative_date": "6 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Paula McGuinnessLocal Guide \u00b7 41 reviews \u00b7 5 photos6 years ago"
+      },
+      {
+        "author": "ayesha akhtar",
+        "relative_date": "6 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "ayesha akhtarLocal Guide \u00b7 7 reviews6 years ago"
+      },
+      {
+        "author": "farkhanda ali",
+        "relative_date": "6 years ago",
+        "star_label": "4 stars",
+        "text": "",
+        "raw_card_text": "farkhanda aliLocal Guide \u00b7 14 reviews \u00b7 27 photos6 years ago"
+      },
+      {
+        "author": "Paula St-John",
+        "relative_date": "6 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Paula St-John6 reviews \u00b7 1 photo6 years ago"
+      },
+      {
+        "author": "Janet Reygan",
+        "relative_date": "6 years ago",
+        "star_label": "4 stars",
+        "text": "Friendly and welcoming with a good range of therapies",
+        "raw_card_text": "Janet ReyganLocal Guide \u00b7 234 reviews \u00b7 976 photos6 years ago Friendly and welcoming with a good range of therapiesLike Share"
+      }
+    ],
+    "practice_name": "The Energise Healthy Living Centre",
+    "postcode": "M6 6ES",
+    "canonical_code": "P87654001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-energise-healthy-living-centre/P87654001",
+    "query_used": "The Energise Healthy Living Centre M6 6ES",
+    "title_match_score": 0.333,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87654001-the-energise-healthy-living-centre.txt"
+  },
+  {
+    "query": "Sorrel Bank Medical Practice M6 7HL",
+    "google_maps_title": "Sorrel Bank Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Sorrel+Bank+Medical+Practice/@53.492939,-2.2940955,17z/data=!3m1!5s0x487ba41f1d3f9111:0xd9d66f448ca165fc!4m8!3m7!1s0x487bae4a275353b1:0xb06b03d1c10c97b1!8m2!3d53.492939!4d-2.2940955!9m1!1b1!16s%2Fg%2F11c3w183_r?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.2,
+    "google_review_count": 58,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Susan Platt",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Susan Platt1 review3 weeks ago New"
+      },
+      {
+        "author": "sophie butler",
+        "relative_date": "Edited 3 months ago",
+        "star_label": "1 star",
+        "text": "Where to start? Half of the doctors don't listen, are rude, belittling and sexist and will just laugh at your problems or refuse to make referrals even if they can't treat you. If you want names- Dr Lyburn is extremely rude, condescending and just generally vile. Dr Badesha literally laughed at me over my skin problems. All the good doctors like Dr Ash seem to leave the practice. Most of the receptionist staff are extremely rude, then do their best to block you from making complaints. One of them tried to force me to give a personal reason for my visit to the GP and when I refused, I was refused an appointment. I was then gaslit by two reception staff over what happened. But I know for a fact phone calls are recorded so maybe they should start listening back to them if there is any confusion in their minds about what has happened. The practice constantly mess me around with my medication, saying they haven't received emails from my mental health team when they have clearly been sent. I have been left without medication and left on too low of a dose because of this. I will say the nurses are lovely and I don't take issue with any of them but unfortunately this isn't enough for me to stay at Sorrel Bank. Please find a different doctors practice if you are considering registering with this one, it's not worth it. I will be making a huge complaint about my treatment and then moving my whole family to a different GP practice. Edit: you will be able to see that the practice reponded to me suggesting I arrange an appointment with the practice manager. I did this. Practice manager did not bother to respond",
+        "raw_card_text": "sophie butlerLocal Guide \u00b7 15 reviews \u00b7 124 photosEdited 3 months ago Where to start? Half of the doctors don't listen, are rude, belittling and sexist and will just laugh at your problems or refuse to make referrals even if they can't treat you. If you want names- Dr Lyburn is extremely rude, condescending and just generally vile. Dr Badesha literally laughed at me over my skin problems. All the good doctors like Dr Ash seem to leave the practice. Most of the receptionist staff are extremely rude, then do their best to block you from making complaints. One of them tried to force me to give a personal reason for my visit to the GP and when I refused, I was refused an appointment. I was then gaslit by two reception staff over what happened. But I know for a fact phone calls are recorded so maybe they should start listening back to them if there is any confusion in their minds about what has happened. The practice constantly mess me around with my medication, saying they haven't received emails from my mental health team when they have clearly been sent. I have been left without medication and left on too low of a dose because of this. I will say the nurses are lovely and I don't take issue with any of them but unfortunately this isn't enough for me to stay at Sorrel Bank. Please find a different doctors practice if you are considering registering with this one, it's not worth it. I will be making a huge complaint about my treatment and then moving my whole family to a different GP practice. Edit: you will be able to see that the practice reponded to me suggesting I arrange an appointment with the practice manager. I did this. Practice manager did not bother to respondLike Share Response from the owner 4 months agoDear Sophie We are very sorry you feel your care at the surgery has failed your expectations. If you wish to discuss your issues further please book an appointment with the practice manager. Yours faithfully Sorrel Bank Medical Practice"
+      },
+      {
+        "author": "Paul Shovelton",
+        "relative_date": "6 months ago",
+        "star_label": "1 star",
+        "text": "My consultant sent a letter via email and post dated the 16th July having chased and more chasing finally we we might get the results lidded Up your game not acceptable in any way",
+        "raw_card_text": "Paul Shovelton6 reviews6 months ago My consultant sent a letter via email and post dated the 16th July having chased and more chasing finally we we might get the results lidded Up your game not acceptable in any wayLike Share Response from the owner 4 months agoDear Paul, If you still have not received the care you require, please contact the surgery. I believe you still need to make an appointmen with the GP for review. For and on behalf of Sorrel Bank Medical Practice"
+      },
+      {
+        "author": "Stephanie Rogers",
+        "relative_date": "6 months ago",
+        "star_label": "1 star",
+        "text": "I was a patient with this practice for over a year, I didn't have a problem with the gp I saw but found two of the receptionists very rude, one was a gentleman and the other a female who made sure I didn't speak by speaking over me. I feel these receptionists need training in customer service. I have changed gps now and found the receptionist like a breath of fresh air compared to sorrel bank.",
+        "raw_card_text": "Stephanie Rogers1 review6 months ago I was a patient with this practice for over a year, I didn't have a problem with the gp I saw but found two of the receptionists very rude, one was a gentleman and the other a female who made sure I didn't speak by speaking over me. I feel these receptionists need training in customer service. I have changed gps now and found the receptionist like a breath of fresh air compared to sorrel bank.Like Share Response from the owner 6 months agoDear Stephanie, thank you for your feedback. We are sorry to hear about your experience with our reception team and that you felt spoken over and not listened to. This is certainly not the standard of service we aim to provide and your comments will be shared with the team so that we can reflect and improve, with further training onsidered where needed."
+      },
+      {
+        "author": "mike allcock",
+        "relative_date": "9 months ago",
+        "star_label": "1 star",
+        "text": "I phoned over a week ago to get a letter from my doctor and was told I would have to make an appointment for it, one week later and I went to collect the letter to be told by the doctor that he didn't know anything about it or why I had attended. Communication isn't their strong point obviously. I now have to wait until next week for the letter.",
+        "raw_card_text": "mike allcockLocal Guide \u00b7 87 reviews \u00b7 35 photos9 months ago I phoned over a week ago to get a letter from my doctor and was told I would have to make an appointment for it, one week later and I went to collect the letter to be told by the doctor that he didn't know anything about it or why I had attended. Communication isn't their strong point obviously. I now have to wait until next week for the letter.Like Share"
+      },
+      {
+        "author": "Melissa Jayne",
+        "relative_date": "10 months ago",
+        "star_label": "5 stars",
+        "text": "I\u2019m giving 5 stars \u2b50\ufe0f NOT to the actual GP surgery itself as it has MANY issues but to a individual doctor Dr Hafeeez which I have seen a couple of times now and have found him to be very professional, polite, old school, he listened to my complaints with my health and he acted in a professional manner and he seemed to understand my situation in regards to my issues. He made me feel very comfortable and I felt like I was being looked after and dealt with properly and I HAVE NOT felt like that in a very long time within this GO surgery. It has changed a lot since DR FINNEGAN has left unfortunately.",
+        "raw_card_text": "Melissa Jayne2 reviews10 months ago I\u2019m giving 5 stars \u2b50\ufe0f NOT to the actual GP surgery itself as it has MANY issues but to a individual doctor Dr Hafeeez which I have seen a couple of times now and have found him to be very professional, polite, old school, he listened to my complaints with my health and he acted in a professional manner and he seemed to understand my situation in regards to my issues. He made me feel very comfortable and I felt like I was being looked after and dealt with properly and I HAVE NOT felt like that in a very long time within this GO surgery. It has changed a lot since DR FINNEGAN has left unfortunately.Like Share Response from the owner 6 months agoThank you so much for your positive review."
+      },
+      {
+        "author": "Tolu Adetutu",
+        "relative_date": "10 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Tolu AdetutuLocal Guide \u00b7 10 reviews \u00b7 7 photos10 months ago"
+      },
+      {
+        "author": "Kristine 39Miln",
+        "relative_date": "11 months ago",
+        "star_label": "1 star",
+        "text": "Husband went to see Doctor, he notice evey time patient left Dr, room it would take 20min in-between patient for next patient to be called in. My husband assumed the Dr, was catching up on righting his notes. However, when my husband entered the Dr, was righting his notes mid conversation. My husband had melanoma had to get his yearly checkup, and discuss painful trigger thumb and arm which he can't lift & keeps him awake at night struggles to hold & lift everyday items. The Dr preceeded to say he didn't have time to dicuss his two other health problems he was to busy. Even more tasteless when my husband was about to leave the Dr, room the Dr, said his nose shown signs of cancer without examination. It took 2/3 wks for my husband to discuss what happened at the Dr, as he became withdrawn and caused arguments in the household to say I was pissed off is a understatement. My husband doesn't want me to complain knowing Dr, complaints department never takes the patient concern seriously enough not interested in false apologise I've since, in the last week changed practice (Told my husband new this Dr this happened to me every patient at the time of my waiting time said this Dr, was not doing his Job to be blunt Dr is useless) The practice has very much gone down hill since Dr finagan retired. Thus incident happened March 2025",
+        "raw_card_text": "Kristine 39MilnLocal Guide \u00b7 16 reviews \u00b7 3 photos11 months ago Husband went to see Doctor, he notice evey time patient left Dr, room it would take 20min in-between patient for next patient to be called in. My husband assumed the Dr, was catching up on righting his notes. However, when my husband entered the Dr, was righting his notes mid conversation. My husband had melanoma had to get his yearly checkup, and discuss painful trigger thumb and arm which he can't lift & keeps him awake at night struggles to hold & lift everyday items. The Dr preceeded to say he didn't have time to dicuss his two other health problems he was to busy. Even more tasteless when my husband was about to leave the Dr, room the Dr, said his nose shown signs of cancer without examination. It took 2/3 wks for my husband to discuss what happened at the Dr, as he became withdrawn and caused arguments in the household to say I was pissed off is a understatement. My husband doesn't want me to complain knowing Dr, complaints department never takes the patient concern seriously enough not interested in false apologise I've since, in the last week changed practice (Told my husband new this Dr this happened to me every patient at the time of my waiting time said this Dr, was not doing his Job to be blunt Dr is useless) The practice has very much gone down hill since Dr finagan retired. Thus incident happened March 2025Like Share"
+      },
+      {
+        "author": "Constantin Banica",
+        "relative_date": "11 months ago",
+        "star_label": "5 stars",
+        "text": "Daniel was amazing very helpful speaks so many languages and was very funny he save my life he is the best receptionist I have met so far",
+        "raw_card_text": "Constantin Banica3 reviews11 months ago Daniel was amazing very helpful speaks so many languages and was very funny he save my life he is the best receptionist I have met so farLike Share"
+      },
+      {
+        "author": "Jean-Baptiste Hau",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Always been well cared for there, especially considering the horror stories I can hear from other GP practices.",
+        "raw_card_text": "Jean-Baptiste Hau2 reviewsa year ago Always been well cared for there, especially considering the horror stories I can hear from other GP practices.Like Share"
+      }
+    ],
+    "practice_name": "Sorrel Bank Medical Practice",
+    "postcode": "M6 7HL",
+    "canonical_code": "P87040",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/sorrel-bank-medical-practice/P87040",
+    "query_used": "Sorrel Bank Medical Practice M6 7HL",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87040-sorrel-bank-medical-practice.txt"
+  },
+  {
+    "query": "The Height General Practice M6 7NJ",
+    "google_maps_title": "Height General Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Height+General+Practice/@53.5002212,-2.3079331,17z/data=!4m8!3m7!1s0x487bafad0f885727:0xf70d2b383d867!8m2!3d53.5002212!4d-2.3079331!9m1!1b1!16s%2Fg%2F1tf076jg?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.1,
+    "google_review_count": 417,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "naveed arif",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "I have been with them for last 10 years.They are very supportive.Dr.Saeed is one of they best and look after me very well.",
+        "raw_card_text": "naveed arif1 review2 weeks ago New I have been with them for last 10 years.They are very supportive.Dr.Saeed is one of they best and look after me very well.Like Share"
+      },
+      {
+        "author": "Scott West",
+        "relative_date": "Edited a month ago",
+        "star_label": "5 stars",
+        "text": "Excellent support yet again caring Dr's and reception team :\ud83d\ude0a \u2026",
+        "raw_card_text": "Scott West17 reviews \u00b7 3 photosEdited a month ago Excellent support yet again caring Dr's and reception team :\ud83d\ude0a \u2026Like Share Response from the owner a year agoThank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!"
+      },
+      {
+        "author": "Candice Jade",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Got advised off 111 my daughter needed to be seen rang up to be told there was no appointments try again the day after rang again then to be told there is no appointments and they close at half 1 even after me stating it was for a 3 year old had nothing but issues since being here also had a diagnosis that I have signed and date by a dr at emergency department saying I will have this for the rest of life is no being disputed even tho I have handed in the medical evidence would not recommend also 3 year of waiting for adhd assent and other mental health help still not got",
+        "raw_card_text": "Candice Jade3 reviewsa month ago Got advised off 111 my daughter needed to be seen rang up to be told there was no appointments try again the day after rang again then to be told there is no appointments and they close at half 1 even after me stating it was for a 3 year old had nothing but issues since being here also had a diagnosis that I have signed and date by a dr at emergency department saying I will have this for the rest of life is no being disputed even tho I have handed in the medical evidence would not recommend also 3 year of waiting for adhd assent and other mental health help still not gotLike Share"
+      },
+      {
+        "author": "Eve Angel Tom",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "I had a very poor experience with Dr Syed. I was incorrectly advised to have an X-ray, even though it was not appropriate for my back injury. This led to me being sent between GP practices and walk-in centres for two days, as no suitable treatment was offered. Would not advise to go to him at all, better get yourself to Salford A&E straight away (1 Star as 0 isn\u2019t possible)",
+        "raw_card_text": "Eve Angel Tom5 reviews \u00b7 1 photoa month ago I had a very poor experience with Dr Syed. I was incorrectly advised to have an X-ray, even though it was not appropriate for my back injury. This led to me being sent between GP practices and walk-in centres for two days, as no suitable treatment was offered. Would not advise to go to him at all, better get yourself to Salford A&E straight away (1 Star as 0 isn\u2019t possible)Like Share"
+      },
+      {
+        "author": "Roy Hulse",
+        "relative_date": "Edited a month ago",
+        "star_label": "4 stars",
+        "text": "Thank you for your feedback.",
+        "raw_card_text": "Roy Hulse1 reviewEdited a month ago Response from the owner 9 months agoThank you for your feedback."
+      },
+      {
+        "author": "Phil Mundy",
+        "relative_date": "Edited a month ago",
+        "star_label": "4 stars",
+        "text": "Very pleased with very efficient and immediate attention- thank you to all at practice",
+        "raw_card_text": "Phil Mundy1 reviewEdited a month ago Very pleased with very efficient and immediate attention- thank you to all at practiceLike Share"
+      },
+      {
+        "author": "Mel Moran",
+        "relative_date": "Edited a month ago",
+        "star_label": "1 star",
+        "text": "The only real grievance I have with the height practice is the phonelines, last week I waited 2 and a half hours wait for a phone call back off a receptionist, in the end my mum had to run me up to the surgery to make an appointment. Everytime I ring up it's impossible to get through on the phone. Everything else about the surgery I have no complaint wotsoeva. I just think the phonelines need looking at, or maybe more staff employed to answer the phone ?",
+        "raw_card_text": "Mel Moran6 reviewsEdited a month ago The only real grievance I have with the height practice is the phonelines, last week I waited 2 and a half hours wait for a phone call back off a receptionist, in the end my mum had to run me up to the surgery to make an appointment. Everytime I ring up it's impossible to get through on the phone. Everything else about the surgery I have no complaint wotsoeva. I just think the phonelines need looking at, or maybe more staff employed to answer the phone ?Like1 Share Response from the owner 9 months agoDear Mel I can assure you we are looking into this matter this is something we are trying to fix. Thank you for the feedback. Kind Regards Chloe"
+      },
+      {
+        "author": "Grace OYEWOLE",
+        "relative_date": "Edited a month ago",
+        "star_label": "5 stars",
+        "text": "Again pleased with my appointment, ut was on time, the doctor listened to all my concerns, and answered questions i needed clarity on .. thank you Dr Mohamed .",
+        "raw_card_text": "Grace OYEWOLE3 reviewsEdited a month ago Again pleased with my appointment, ut was on time, the doctor listened to all my concerns, and answered questions i needed clarity on .. thank you Dr Mohamed .Like Share"
+      },
+      {
+        "author": "Stacey Smith",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Dr Mohammed is such a lovely person and brilliant doctor. He\u2019s kind, compassionate and genuinely cares.",
+        "raw_card_text": "Stacey Smith2 reviewsa month ago Dr Mohammed is such a lovely person and brilliant doctor. He\u2019s kind, compassionate and genuinely cares.Like Share"
+      },
+      {
+        "author": "Chris Tavner",
+        "relative_date": "Edited a month ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Chris Tavner9 reviews \u00b7 1 photoEdited a month ago"
+      }
+    ],
+    "practice_name": "The Height General Practice",
+    "postcode": "M6 7NJ",
+    "canonical_code": "Y02767",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-height-general-practice/Y02767",
+    "query_used": "The Height General Practice M6 7NJ",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y02767-the-height-general-practice.txt"
+  },
+  {
+    "query": "Victoria Road Surgery M6 8EZ",
+    "google_maps_title": "Victoria Road Surgery",
+    "google_maps_url": "https://www.google.com/maps/place/Victoria+Road+Surgery/@53.4895095,-2.3263186,17z/data=!4m8!3m7!1s0x487baefb945816c5:0xf0be5e35c4ea049b!8m2!3d53.4895095!4d-2.3263186!9m1!1b1!16s%2Fg%2F11bzsz14bd?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.6,
+    "google_review_count": 7,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 7,
+    "recent_reviews": [
+      {
+        "author": "M B",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I had a very good experience at this surgery. The lady doctor who treated me was kind, considerate and nice to talk to.",
+        "raw_card_text": "M B5 reviewsa month ago I had a very good experience at this surgery. The lady doctor who treated me was kind, considerate and nice to talk to.Like Share"
+      },
+      {
+        "author": "ka man Lai",
+        "relative_date": "8 months ago",
+        "star_label": "1 star",
+        "text": "This was my first visit to this GP clinic with my daughter, who was unwell. Unfortunately, the clinic has no parking, and nearby street parking is limited to 30 minutes. We had to park further away and ended up arriving 10 minutes late. Despite explaining the situation, they told us there was a strict 10-minute late policy and refused to see us. I had never heard of this rule before, and it was not communicated clearly beforehand. We were only referred to this clinic because our original GP had no availability, and the experience was extremely disappointing. I felt there was a lack of flexibility and compassion, especially towards a sick child. I would not recommend this clinic to parents or anyone who might require understanding and timely care.",
+        "raw_card_text": "ka man Lai1 review8 months ago This was my first visit to this GP clinic with my daughter, who was unwell. Unfortunately, the clinic has no parking, and nearby street parking is limited to 30 minutes. We had to park further away and ended up arriving 10 minutes late. Despite explaining the situation, they told us there was a strict 10-minute late policy and refused to see us. I had never heard of this rule before, and it was not communicated clearly beforehand. We were only referred to this clinic because our original GP had no availability, and the experience was extremely disappointing. I felt there was a lack of flexibility and compassion, especially towards a sick child. I would not recommend this clinic to parents or anyone who might require understanding and timely care.Like Share"
+      },
+      {
+        "author": "Nagesh Modhvadia",
+        "relative_date": "11 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Nagesh ModhvadiaLocal Guide \u00b7 30 reviews \u00b7 4 photos11 months ago"
+      },
+      {
+        "author": "Chan Kk",
+        "relative_date": "11 months ago",
+        "star_label": "5 stars",
+        "text": "Thank you Dr. H. Z , he is gentle and patient to explain my illness. A good reception lady as well. Thank you all of you!",
+        "raw_card_text": "Chan Kk9 reviews \u00b7 2 photos11 months ago Thank you Dr. H. Z , he is gentle and patient to explain my illness. A good reception lady as well. Thank you all of you!Like Share"
+      },
+      {
+        "author": "Danni Hopwood",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "I\u2019ve been here a few times a lovely surgery doctors are really lovely and the receptionist highly recommend",
+        "raw_card_text": "Danni Hopwood15 reviewsa year ago I\u2019ve been here a few times a lovely surgery doctors are really lovely and the receptionist highly recommendLike Share"
+      },
+      {
+        "author": "Vaishali More",
+        "relative_date": "2 years ago",
+        "star_label": "3 stars",
+        "text": "There is waiting time, but I have really thankful to Ordsall Health Surgery doctors to at least arrangements of argent appointments, through app I log my details and within hours i got appointments. With Victoria road surgery beside that there is overload in surgery due to increasing population in Salford, ordsall.. thanks . NHS really doing part carefully hope everything fall in place and everyone get good care.",
+        "raw_card_text": "Vaishali More5 reviews2 years ago There is waiting time, but I have really thankful to Ordsall Health Surgery doctors to at least arrangements of argent appointments, through app I log my details and within hours i got appointments. With Victoria road surgery beside that there is overload in surgery due to increasing population in Salford, ordsall.. thanks . NHS really doing part carefully hope everything fall in place and everyone get good care.Like1 Share"
+      },
+      {
+        "author": "Emaa",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "I had booked appointment, I was late 6 minutes waiting for the receptionist 3 minutes plus receptionist was checking something on computer for two minutes saying I am too late not going to have visit. I did mention I was late but I was also waiting for the receptionist. NO.. not even asking details if is argent. Heartless place \ud83d\udc4e\ud83c\udffc \u2026",
+        "raw_card_text": "EmaaLocal Guide \u00b7 22 reviews \u00b7 6 photos2 years ago I had booked appointment, I was late 6 minutes waiting for the receptionist 3 minutes plus receptionist was checking something on computer for two minutes saying I am too late not going to have visit. I did mention I was late but I was also waiting for the receptionist. NO.. not even asking details if is argent. Heartless place \ud83d\udc4e\ud83c\udffc \u2026Like Share"
+      }
+    ],
+    "practice_name": "Victoria Road Surgery",
+    "postcode": "M6 8EZ",
+    "canonical_code": "P87040001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/victoria-road-surgery/P87040001",
+    "query_used": "Victoria Road Surgery M6 8EZ",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87040001-victoria-road-surgery.txt"
+  },
+  {
+    "query": "Orient Road Medical Practice M6 8LE",
+    "google_maps_title": "Orient Road Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Orient+Road+Medical+Practice/@53.4942404,-2.324833,17z/data=!4m8!3m7!1s0x487baefe9ce15555:0xdc81b4db78c272af!8m2!3d53.4942404!4d-2.324833!9m1!1b1!16s%2Fg%2F11frdw499p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 4.8,
+    "google_review_count": 48,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Kate",
+        "relative_date": "Edited a week ago",
+        "star_label": "5 stars",
+        "text": "Great care today Seen on the day by Dr Nayaz lovely and caring. Resolved my problem . What a great service. Dr Bolton has also helped solving different problem in the past. Both Drs lovely",
+        "raw_card_text": "Kate1 reviewEdited a week ago Great care today Seen on the day by Dr Nayaz lovely and caring. Resolved my problem . What a great service. Dr Bolton has also helped solving different problem in the past. Both Drs lovelyLike Share"
+      },
+      {
+        "author": "Nadine Sinclair",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "Spoke to Dr Omar. Was patient , caring and amazing at his job. Defiantly recommend this surgery.",
+        "raw_card_text": "Nadine Sinclair4 reviews \u00b7 1 photoa week ago New Spoke to Dr Omar. Was patient , caring and amazing at his job. Defiantly recommend this surgery.Like Share"
+      },
+      {
+        "author": "D_whittzz 0_o",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "Great seeing a nurse/gp I can rely on and feel relaxed around, very informative and great advice and help thanks Jeanette",
+        "raw_card_text": "D_whittzz 0_o4 reviews2 weeks ago New Great seeing a nurse/gp I can rely on and feel relaxed around, very informative and great advice and help thanks JeanetteLike Share"
+      },
+      {
+        "author": "Keith Griffin",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Keith Griffin1 review3 weeks ago New"
+      },
+      {
+        "author": "Mark Almond",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "All the staff at Orient Road are fantastic, they have always gone beyond expectations on helping patients, they're organized, caring, and always follow up on appointments. They are extremely helpful in accommodating appointments that need changing to suit the patient, and prescriptions are always arranged as fast as possible.",
+        "raw_card_text": "Mark Almond8 reviews \u00b7 7 photos3 weeks ago New All the staff at Orient Road are fantastic, they have always gone beyond expectations on helping patients, they're organized, caring, and always follow up on appointments. They are extremely helpful in accommodating appointments that need changing to suit the patient, and prescriptions are always arranged as fast as possible.Like Share"
+      },
+      {
+        "author": "Cheryl Jones",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Cheryl Jones7 reviews \u00b7 1 photo3 weeks ago New"
+      },
+      {
+        "author": "Barry Winstone",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Barry Winstonea month ago"
+      },
+      {
+        "author": "nicole wu",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Dr. Nadia was so gentle and explained everything so thoroughly that my child was very cooperative.",
+        "raw_card_text": "nicole wu3 reviewsa month ago Dr. Nadia was so gentle and explained everything so thoroughly that my child was very cooperative.Like Share"
+      },
+      {
+        "author": "Muna Kizmo",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "The staff at this GP are wonderfully kind and always responsive. Every question was answered with patience, and every need was met promptly. Their caring attitude made a stressful experience much easier. Thank you for the outstanding care.",
+        "raw_card_text": "Muna Kizmo8 reviews \u00b7 3 photosa month ago The staff at this GP are wonderfully kind and always responsive. Every question was answered with patience, and every need was met promptly. Their caring attitude made a stressful experience much easier. Thank you for the outstanding care.Like Share"
+      },
+      {
+        "author": "Shaz shaz",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I first of all need to mention the ladies on reception. They are lovely,helpful and i am always greeted with a smile. The Doctors at this surgery are professional , thorough and always take the time to listen and make me feel comfortable. This surgery gets a big thumbs up from me..thankyou.",
+        "raw_card_text": "Shaz shaz6 reviewsa month ago I first of all need to mention the ladies on reception. They are lovely,helpful and i am always greeted with a smile. The Doctors at this surgery are professional , thorough and always take the time to listen and make me feel comfortable. This surgery gets a big thumbs up from me..thankyou.Like Share"
+      }
+    ],
+    "practice_name": "Orient Road Medical Practice",
+    "postcode": "M6 8LE",
+    "canonical_code": "P87032",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/orient-road-medical-practice/P87032",
+    "query_used": "Orient Road Medical Practice M6 8LE",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87032-orient-road-medical-practice.txt"
+  },
+  {
+    "query": "Dr A Chaudhry & Dr I Jeet M7 1RD",
+    "google_maps_title": "Dr G Chowdhury - Newbury Green Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+G+Chowdhury+-+Newbury+Green+Medical+Practice/@53.5059639,-2.2959253,14z/data=!3m1!5s0x487bb02ecd619243:0xd1edb3eda2413770!4m10!1m2!2m1!1sDr+A+Chaudhry+%26+Dr+I+Jeet+M7+1RD!3m6!1s0x487bb02ec961b859:0x43f27ddef0261458!8m2!3d53.5059639!4d-2.2598764!15sCiBEciBBIENoYXVkaHJ5ICYgRHIgSSBKZWV0IE03IDFSRJIBBmRvY3RvcuABAA!16s%2Fg%2F11frdw2nxr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 1.0,
+    "google_review_count": 1,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_rating_only",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Dr A Chaudhry & Dr I Jeet",
+    "postcode": "M7 1RD",
+    "canonical_code": "P87654",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/dr-a-chaudhry-and-dr-i-jeet/P87654",
+    "query_used": "Dr A Chaudhry & Dr I Jeet M7 1RD",
+    "title_match_score": 0.2,
+    "review_text_file": ""
+  },
+  {
+    "query": "Mocha Parade Medical Practice M7 3SE",
+    "google_maps_title": "Mocha Parade Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Mocha+Parade+Medical+Practice/@53.5029025,-2.2960571,15z/data=!4m12!1m2!2m1!1sMocha+Parade+Medical+Practice+M7+3SE!3m8!1s0x487bb1d6c27c154d:0xc81c37f8f2dc55dc!8m2!3d53.5029025!4d-2.2780327!9m1!1b1!15sCiRNb2NoYSBQYXJhZGUgTWVkaWNhbCBQcmFjdGljZSBNNyAzU0WSARRnZW5lcmFsX3ByYWN0aXRpb25lcuABAA!16s%2Fg%2F1tdb8cz2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.2,
+    "google_review_count": 18,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Sylvia Seddon",
+        "relative_date": "6 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Sylvia SeddonLocal Guide \u00b7 56 reviews6 months ago"
+      },
+      {
+        "author": "Gege Gogo",
+        "relative_date": "9 months ago",
+        "star_label": "5 stars",
+        "text": "\u200fI would like to express my deepest gratitude to Manager Nat for her exceptional and continuous support. From the very beginning, she has shown nothing but kindness, professionalism, and genuine care in every interaction I\u2019ve had with her. \u200fThere were moments when I felt overwhelmed or unsure of what to do, but Nat was always there patient, understanding, and ready to help without hesitation. She made me feel seen and supported not just as a patient, but as a person. Her communication is always clear, compassionate, and respectful, and she handles every concern with remarkable attention and care. \u200fIn addition to Nat, I also want to thank Dr. Jatoy and the entire GP team for being consistently helpful and responsive. Words may not fully capture how thankful I am, but I genuinely wish the whole team continued success because they absolutely deserve it.",
+        "raw_card_text": "Gege Gogo2 reviews9 months ago \u200fI would like to express my deepest gratitude to Manager Nat for her exceptional and continuous support. From the very beginning, she has shown nothing but kindness, professionalism, and genuine care in every interaction I\u2019ve had with her. \u200fThere were moments when I felt overwhelmed or unsure of what to do, but Nat was always there patient, understanding, and ready to help without hesitation. She made me feel seen and supported not just as a patient, but as a person. Her communication is always clear, compassionate, and respectful, and she handles every concern with remarkable attention and care. \u200fIn addition to Nat, I also want to thank Dr. Jatoy and the entire GP team for being consistently helpful and responsive. Words may not fully capture how thankful I am, but I genuinely wish the whole team continued success because they absolutely deserve it.Like Share"
+      },
+      {
+        "author": "Jordan",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Amazing and the fella so helpful and always on hands credit to you pal",
+        "raw_card_text": "Jordan2 reviewsa year ago Amazing and the fella so helpful and always on hands credit to you palLike Share"
+      },
+      {
+        "author": "Harold Johnson",
+        "relative_date": "a year ago",
+        "star_label": "5 stars",
+        "text": "Thank you for your positive feedback on your recent experience at the practice",
+        "raw_card_text": "Harold JohnsonLocal Guidea year ago Response from the owner a year agoThank you for your positive feedback on your recent experience at the practice"
+      },
+      {
+        "author": "fallon Kelly",
+        "relative_date": "2 years ago",
+        "star_label": "5 stars",
+        "text": "Been registered with mocha parade 30 + years, brilliant gp and practice nurses /practitioners, a wonderful team especially lead by the wonderful Natalie, Amy and Jacob, Ash are helpful and nothing too much trouble and Patrick always available if needed - thankyou for everything",
+        "raw_card_text": "fallon KellyLocal Guide \u00b7 41 reviews \u00b7 4 photos2 years ago Been registered with mocha parade 30 + years, brilliant gp and practice nurses /practitioners, a wonderful team especially lead by the wonderful Natalie, Amy and Jacob, Ash are helpful and nothing too much trouble and Patrick always available if needed - thankyou for everythingLike Share Response from the owner 2 years agoThan you so much for your feedback. I am very pleased to hear about your positive experiences at the practice and will pass on your review to the rest of the team."
+      },
+      {
+        "author": "Anon Anon",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "I have been a patient at this surgery and Dr Kassam for many years. I never had any issues before but in the last 6 months it has been terrible service. I order my monthly prescriptions through the chemist as required by the surgery and I repeatedly have medication missed, which is my diabetic insulin! I have to phone monthly to chase this up with the reception team and I get a response that it has not been requested and they will put through now and will take another 48 hours. I am being left without the insulin for a day or 2 and this is becoming a concern. I have raised a concern in the last month and I got attitude from the \u2018assistant manger\u2019 which i find her approach very unprofessional and like she doesn\u2019t want to be bothered. The practice manager is never on site to raise a complaint to and told to put in writing which I have and never got a reply from Patrick neither. I am going to have to transfer out as the care we are receiving is very concerning if I can not get my monthly medication at time when requested in time frame. The Reception team seem to be new and need training on how to request a prescription or get competent staff. This is a shame because for the past many years I have always been cared for and not had many issues as I know mistakes do happen, but this surgery has gone down hill.",
+        "raw_card_text": "Anon Anon1 review2 years ago I have been a patient at this surgery and Dr Kassam for many years. I never had any issues before but in the last 6 months it has been terrible service. I order my monthly prescriptions through the chemist as required by the surgery and I repeatedly have medication missed, which is my diabetic insulin! I have to phone monthly to chase this up with the reception team and I get a response that it has not been requested and they will put through now and will take another 48 hours. I am being left without the insulin for a day or 2 and this is becoming a concern. I have raised a concern in the last month and I got attitude from the \u2018assistant manger\u2019 which i find her approach very unprofessional and like she doesn\u2019t want to be bothered. The practice manager is never on site to raise a complaint to and told to put in writing which I have and never got a reply from Patrick neither. I am going to have to transfer out as the care we are receiving is very concerning if I can not get my monthly medication at time when requested in time frame. The Reception team seem to be new and need training on how to request a prescription or get competent staff. This is a shame because for the past many years I have always been cared for and not had many issues as I know mistakes do happen, but this surgery has gone down hill.Like Share Response from the owner 2 years agoI apologise for the delay in replying to your comments, I am sorry if you feel we have not given you the service you deserve but please contact the Practice to speak to the Practice Manager and will be happy to discuss your concerns whenever is most convenient for you."
+      },
+      {
+        "author": "Jeremiah Agenyi",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "I am disappointed with the level of service I have received from Mocha Parade Medical Practice. I visited their center to get registered when I first arrived in the UK, and they promised to get back to me in a few days. However, I did not hear from them after two weeks, so I reached out to them. They said that they could not find my records and asked me to register again. I did so, but I still did not hear back from them after another two to three weeks. When I contacted them again, they said that my records had been misplaced. I then submitted my records online, but it has been almost three months and I have still not heard back from them. I am concerned about the level of care I will receive if I need medical attention from this practice. I am also disappointed with the lack of communication and the apparent negligence of the staff. I would not recommend this practice to anyone.",
+        "raw_card_text": "Jeremiah AgenyiLocal Guide \u00b7 32 reviews \u00b7 250 photos2 years ago I am disappointed with the level of service I have received from Mocha Parade Medical Practice. I visited their center to get registered when I first arrived in the UK, and they promised to get back to me in a few days. However, I did not hear from them after two weeks, so I reached out to them. They said that they could not find my records and asked me to register again. I did so, but I still did not hear back from them after another two to three weeks. When I contacted them again, they said that my records had been misplaced. I then submitted my records online, but it has been almost three months and I have still not heard back from them. I am concerned about the level of care I will receive if I need medical attention from this practice. I am also disappointed with the lack of communication and the apparent negligence of the staff. I would not recommend this practice to anyone.Like Share"
+      },
+      {
+        "author": "D M",
+        "relative_date": "2 years ago",
+        "star_label": "5 stars",
+        "text": "Having been relatively healthy I had only had minimal contact with my Doctor, Doctor Kassam, for many decades. Then I had an accident and have severe physical injuries. His team kicked in brilliantly. The Doctor is of my era,old! But the team around him are young and completely competent. From receptionist, practice management, pharmacists, Doctors. All polite, friendly, helpful and most importantly, professional. I would implore anyone using this practices wonderful services treat them the same. Of course problems arise and mistakes get made, but keep calm and this team will help find the best solution. I am happy to recommend this surgery to anyone.",
+        "raw_card_text": "D M9 reviews2 years ago Having been relatively healthy I had only had minimal contact with my Doctor, Doctor Kassam, for many decades. Then I had an accident and have severe physical injuries. His team kicked in brilliantly. The Doctor is of my era,old! But the team around him are young and completely competent. From receptionist, practice management, pharmacists, Doctors. All polite, friendly, helpful and most importantly, professional. I would implore anyone using this practices wonderful services treat them the same. Of course problems arise and mistakes get made, but keep calm and this team will help find the best solution. I am happy to recommend this surgery to anyone.Like Share Response from the owner 2 years agoThank you for the positive feedback regarding the care you have received from the practice, your comments will be appreciated by everyone at the practice."
+      },
+      {
+        "author": "Ephriam",
+        "relative_date": "3 years ago",
+        "star_label": "1 star",
+        "text": "Receptionist need to be fired. She has should be in prison with that attitude",
+        "raw_card_text": "Ephriam5 reviews3 years ago Receptionist need to be fired. She has should be in prison with that attitudeLike2 Share"
+      },
+      {
+        "author": "Mia Mess",
+        "relative_date": "3 years ago",
+        "star_label": "1 star",
+        "text": "my auntie went here, not great. wouldn\u2019t recommend",
+        "raw_card_text": "Mia Mess3 reviews \u00b7 1 photo3 years ago my auntie went here, not great. wouldn\u2019t recommendLike1 Share"
+      }
+    ],
+    "practice_name": "Mocha Parade Medical Practice",
+    "postcode": "M7 3SE",
+    "canonical_code": "P87022",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/mocha-parade-medical-practice/P87022",
+    "query_used": "Mocha Parade Medical Practice M7 3SE",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87022-mocha-parade-medical-practice.txt"
+  },
+  {
+    "query": "Willow Tree Health Centre M7 3SE",
+    "google_maps_title": "The Willow Tree Healthy Living Centre",
+    "google_maps_url": "https://www.google.com/maps/place/The+Willow+Tree+Healthy+Living+Centre,+94+Littleton+Rd,+Salford+M7+3SE/@53.5028153,-2.2780897,17z/data=!3m1!4b1!4m6!3m5!1s0x487bafd21564d0eb:0x7812cd607a1f4b80!8m2!3d53.5028153!4d-2.2780897!16s%2Fg%2F11c27fm0xd?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.4,
+    "google_review_count": 77,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_rating_only",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Willow Tree Health Centre",
+    "postcode": "M7 3SE",
+    "canonical_code": "L7V9V",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/willow-tree-health-centre/L7V9V",
+    "query_used": "Willow Tree Health Centre M7 3SE",
+    "title_match_score": 0.5,
+    "review_text_file": ""
+  },
+  {
+    "query": "Newbury Green Medical Practice M7 4NX",
+    "google_maps_title": "Newbury Green Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Newbury+Green+Medical+Practice/@53.5068477,-2.2604675,17z/data=!4m8!3m7!1s0x487bb02dc0797033:0x6f48acb6cdc05365!8m2!3d53.5068477!4d-2.2604675!9m1!1b1!16s%2Fg%2F1yh9vfw1p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.8,
+    "google_review_count": 135,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Joanna S. (Joanna S.)",
+        "relative_date": "2 weeks ago",
+        "star_label": "1 star",
+        "text": "This clinic has too few doctors for the number of patients it registers. They still register people. I have been registered there for about two years and have always had problems accessing doctors. Despite the fact that I have asthma, the reception staff downplay my symptoms. When I call between 8:20 and 8:40, there are no same-day appointments available anymore, and I am offered a visit more than a month later. I am writing this to warn others about this clinic.",
+        "raw_card_text": "Joanna S. (Joanna S.)7 reviews \u00b7 5 photos2 weeks ago New This clinic has too few doctors for the number of patients it registers. They still register people. I have been registered there for about two years and have always had problems accessing doctors. Despite the fact that I have asthma, the reception staff downplay my symptoms. When I call between 8:20 and 8:40, there are no same-day appointments available anymore, and I am offered a visit more than a month later. I am writing this to warn others about this clinic.Like Share"
+      },
+      {
+        "author": "Karolina K",
+        "relative_date": "a month ago",
+        "star_label": "1 star",
+        "text": "Gave them a stool sample, waited for results and I came back and they said they couldn\u2019t check it properly. So now I have to give them another stool sample. Really bad gp, they don\u2019t care , they don\u2019t know how to do their job and they are awful",
+        "raw_card_text": "Karolina K1 reviewa month ago Gave them a stool sample, waited for results and I came back and they said they couldn\u2019t check it properly. So now I have to give them another stool sample. Really bad gp, they don\u2019t care , they don\u2019t know how to do their job and they are awfulLike Share"
+      },
+      {
+        "author": "Gavin Oliver",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I had my first appointment here today with Podiatry. I was looked after by Lisa, she is fantastic. Professional, caring and welcoming. I look forward to meeting the rest of the team in the future.",
+        "raw_card_text": "Gavin OliverLocal Guide \u00b7 47 reviews \u00b7 4 photosa month ago I had my first appointment here today with Podiatry. I was looked after by Lisa, she is fantastic. Professional, caring and welcoming. I look forward to meeting the rest of the team in the future.Like Share"
+      },
+      {
+        "author": "Larayne Binnie",
+        "relative_date": "Edited a month ago",
+        "star_label": "5 stars",
+        "text": "Fantastic care and service. Dr O'Brien provided excellent care and advice .listened to me and was very efficient and had a very caring and patient manner All the reception staff very helpful and friendly",
+        "raw_card_text": "Larayne Binnie6 reviewsEdited a month ago Fantastic care and service. Dr O'Brien provided excellent care and advice .listened to me and was very efficient and had a very caring and patient manner All the reception staff very helpful and friendlyLike Share"
+      },
+      {
+        "author": "Mary Clarke",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "Hi I would like to leave feedback for one of the HCA's/Nurse.(Emma) . I attended with a friend for a appointment with this lady and she was so caring and so professional at her job. Being a nurse myself she deserves an award I must say she is an asset to Newbury Green. Please feel free to use this for your appraisal. You are outstanding at your job, and I cannot thank you enough for the care and compassion that you show towards yourpatients..",
+        "raw_card_text": "Mary Clarke1 review2 months ago Hi I would like to leave feedback for one of the HCA's/Nurse.(Emma) . I attended with a friend for a appointment with this lady and she was so caring and so professional at her job. Being a nurse myself she deserves an award I must say she is an asset to Newbury Green. Please feel free to use this for your appraisal. You are outstanding at your job, and I cannot thank you enough for the care and compassion that you show towards yourpatients..Like Share"
+      },
+      {
+        "author": "Randeep Banger",
+        "relative_date": "2 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Randeep Banger2 months ago"
+      },
+      {
+        "author": "Tommy Ricketts",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "The worst doctors you will every have DO NOT SIGN UP honestly today is the final straw 11:20 is the appointment tell you don't be late get there 10 minutes early what time did i go in 12:23 A WHOLE HOUR of waiting with two kids but the receptionist to be fair to her lovely so 10/10 for her but the practice if you don't want to vaccinate your child or your you. You will get harassed to keep coming because they don\u2019t want there money making scheme to fall through will be changing from this place like I said do not sign up",
+        "raw_card_text": "Tommy Ricketts3 reviews \u00b7 11 photos3 months ago The worst doctors you will every have DO NOT SIGN UP honestly today is the final straw 11:20 is the appointment tell you don't be late get there 10 minutes early what time did i go in 12:23 A WHOLE HOUR of waiting with two kids but the receptionist to be fair to her lovely so 10/10 for her but the practice if you don't want to vaccinate your child or your you. You will get harassed to keep coming because they don\u2019t want there money making scheme to fall through will be changing from this place like I said do not sign upLike Share"
+      },
+      {
+        "author": "Michal Golab",
+        "relative_date": "4 months ago",
+        "star_label": "1 star",
+        "text": "Very rude receptionist. My husband wanted to book an urgent appointment, and he was really unwell. The receptionist said that they didn't accept urgent appointments ever, despite the fact that there was a number for urgent appointments and he was calling that number. She wanted to get rid of him asap and asked him to go to A&E. There was no sympathy, support from her side whatsoever. I asked him to register with my GP where I can ALWAYS get an urgent appointment if I need it.",
+        "raw_card_text": "Michal Golab6 reviews4 months ago Very rude receptionist. My husband wanted to book an urgent appointment, and he was really unwell. The receptionist said that they didn't accept urgent appointments ever, despite the fact that there was a number for urgent appointments and he was calling that number. She wanted to get rid of him asap and asked him to go to A&E. There was no sympathy, support from her side whatsoever. I asked him to register with my GP where I can ALWAYS get an urgent appointment if I need it.Like Share"
+      },
+      {
+        "author": "John Kilby",
+        "relative_date": "4 months ago",
+        "star_label": "5 stars",
+        "text": "Visited today for the first time for a small procedure with a District Nurse. The Doctors Surgery reception staff very politely redirected me to the correct area of the building and I was dealt with in a friendly and caring manner. The Nurse went above and beyond in caring for my needs and the District Nurse Receptionist could not have been more helpful in finding me another appropriate appointment. The building and waiting areas were very clean and tidy and the free Car Park next to the building , which isn't the case at many doctors, was a blessing in the rain, as was the easy to use tablet device to register your vehicle for the parking pass. I wouldn't want to judge some of the previous comments as everyone can have a bad day and ill health can affect perceptions, but I've been to a lot worse Surgeries, this was a pleasure to visit today.",
+        "raw_card_text": "John KilbyLocal Guide \u00b7 17 reviews4 months ago Visited today for the first time for a small procedure with a District Nurse. The Doctors Surgery reception staff very politely redirected me to the correct area of the building and I was dealt with in a friendly and caring manner. The Nurse went above and beyond in caring for my needs and the District Nurse Receptionist could not have been more helpful in finding me another appropriate appointment. The building and waiting areas were very clean and tidy and the free Car Park next to the building , which isn't the case at many doctors, was a blessing in the rain, as was the easy to use tablet device to register your vehicle for the parking pass. I wouldn't want to judge some of the previous comments as everyone can have a bad day and ill health can affect perceptions, but I've been to a lot worse Surgeries, this was a pleasure to visit today.Like Share"
+      },
+      {
+        "author": "A K (Newyork)",
+        "relative_date": "4 months ago",
+        "star_label": "1 star",
+        "text": "Avoid, Avoid, Avoid It's the worst receptionists ever especially Tiguan. Rude with client's and never help. Not showing any responsibility, disrespected me and my wife. If the staff doesn't get changed this GP should close down. I'll advise all friends and family not to register with you and others to leave this GP. ZERO STAR",
+        "raw_card_text": "A K (Newyork)Local Guide \u00b7 6 reviews \u00b7 13 photos4 months ago Avoid, Avoid, Avoid It's the worst receptionists ever especially Tiguan. Rude with client's and never help. Not showing any responsibility, disrespected me and my wife. If the staff doesn't get changed this GP should close down. I'll advise all friends and family not to register with you and others to leave this GP. ZERO STARLike Share"
+      }
+    ],
+    "practice_name": "Newbury Green Medical Practice",
+    "postcode": "M7 4NX",
+    "canonical_code": "P87026",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/newbury-green-medical-practice/P87026",
+    "query_used": "Newbury Green Medical Practice M7 4NX",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87026-newbury-green-medical-practice.txt"
+  },
+  {
+    "query": "Reut Medical Practice M7 4NX",
+    "google_maps_title": "Reut Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Reut+Medical+Practice/@53.5069275,-2.2604345,17z/data=!4m8!3m7!1s0x487bb02ec8c8aa0d:0xfbe9ee609f8f512c!8m2!3d53.5069275!4d-2.2604345!9m1!1b1!16s%2Fg%2F11f613rxpm?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.0,
+    "google_review_count": 11,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Aaron Cohen",
+        "relative_date": "3 months ago",
+        "star_label": "2 stars",
+        "text": "I know there are wider problems with shortages but it's endangering patients how they operate here. And it's designed to simply comply with the burocratic waiting times set by gov. All at patients expense. One lady is very caring a good. But the younger receptionist is rude. At least in the past we had Dr. D there to think outside the box and work with you to get you healthy. Now it's just weak. I really miss Dr. D",
+        "raw_card_text": "Aaron CohenLocal Guide \u00b7 30 reviews \u00b7 7 photos3 months ago I know there are wider problems with shortages but it's endangering patients how they operate here. And it's designed to simply comply with the burocratic waiting times set by gov. All at patients expense. One lady is very caring a good. But the younger receptionist is rude. At least in the past we had Dr. D there to think outside the box and work with you to get you healthy. Now it's just weak. I really miss Dr. DLike Share"
+      },
+      {
+        "author": "Elizabeth X",
+        "relative_date": "3 months ago",
+        "star_label": "1 star",
+        "text": "I am not a patient at REUT but it's in the same building as my medical practice. I had an appointment today in the section where REUT have their receptionist & I couldn't belive how rude & passive their staff are. I was told the ladies name was Praise & honestly I think its crazy how people like her can be hired for customer facing jobs nevermind a GP where there is vulnerable people attending. I approached the desk before & after my appointment and I was met with rudeness & passiveness. It costs nothing to be nice or informative in a place like that and she was none of the above. Praise please do better, treat people better & re evaluate why you work there.",
+        "raw_card_text": "Elizabeth X7 reviews3 months ago I am not a patient at REUT but it's in the same building as my medical practice. I had an appointment today in the section where REUT have their receptionist & I couldn't belive how rude & passive their staff are. I was told the ladies name was Praise & honestly I think its crazy how people like her can be hired for customer facing jobs nevermind a GP where there is vulnerable people attending. I approached the desk before & after my appointment and I was met with rudeness & passiveness. It costs nothing to be nice or informative in a place like that and she was none of the above. Praise please do better, treat people better & re evaluate why you work there.Like Share"
+      },
+      {
+        "author": "Eileene",
+        "relative_date": "7 months ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Eileene7 months ago"
+      },
+      {
+        "author": "Jayme - Education",
+        "relative_date": "a year ago",
+        "star_label": "1 star",
+        "text": "Doctors are clueless here, no clue what they are doing and the receptionists aren\u2019t very reliable.",
+        "raw_card_text": "Jayme - Education1 reviewa year ago Doctors are clueless here, no clue what they are doing and the receptionists aren\u2019t very reliable.Like Share"
+      },
+      {
+        "author": "rose ross",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "I needed to speak to the doctor regarding a lump I had , I finally got a call back from the doctor, and I was asked to come in so they can check my lump which I was very happy about, but because it was on Friday just afew hours before shabbos I was very busy but I Knew that it was important so I went in! I signed in as soon as I got there and waited for 20 minutes before asking the receptionist how long roughly the wait was as I was the only one sitting there in the waiting room. All she did was ignore my question so I asked again and she said she can't tell me so I was left to wait while I was in a massive rush. It would have made it ALOT easier had the receptionist told me roughly how long I will need to wait. I ended up waiting another 20 minutes and saw that no one was calling me so I had to go. I decided that I was going to call the surgery again and speak to the doctor to tell her that I was in a big rush when I came in and had to leave and if we could reschedule the appointment. I was left waiting for very long before the receptionist finally answered my call and said that the doctor has finished for the day and that she can not transfer me over to her. I wondered how the doctor can finish afew hours before the practice closes but I never said anything and hung up! Around 15 minutes later the doctor tried calling me but unfortunately my phone was in silent so I never heard the calls.. I thought the receptionist told me she had finished for the day?? I have no complaints at the doctor they are directed at the receptionist who was very rude and made it extremely difficult for me and has left me now with no appointment and I am very unimpressed and unhappy!",
+        "raw_card_text": "rose ross6 reviews2 years ago I needed to speak to the doctor regarding a lump I had , I finally got a call back from the doctor, and I was asked to come in so they can check my lump which I was very happy about, but because it was on Friday just afew hours before shabbos I was very busy but I Knew that it was important so I went in! I signed in as soon as I got there and waited for 20 minutes before asking the receptionist how long roughly the wait was as I was the only one sitting there in the waiting room. All she did was ignore my question so I asked again and she said she can't tell me so I was left to wait while I was in a massive rush. It would have made it ALOT easier had the receptionist told me roughly how long I will need to wait. I ended up waiting another 20 minutes and saw that no one was calling me so I had to go. I decided that I was going to call the surgery again and speak to the doctor to tell her that I was in a big rush when I came in and had to leave and if we could reschedule the appointment. I was left waiting for very long before the receptionist finally answered my call and said that the doctor has finished for the day and that she can not transfer me over to her. I wondered how the doctor can finish afew hours before the practice closes but I never said anything and hung up! Around 15 minutes later the doctor tried calling me but unfortunately my phone was in silent so I never heard the calls.. I thought the receptionist told me she had finished for the day?? I have no complaints at the doctor they are directed at the receptionist who was very rude and made it extremely difficult for me and has left me now with no appointment and I am very unimpressed and unhappy!Like Share"
+      },
+      {
+        "author": "A D",
+        "relative_date": "Edited 2 years ago",
+        "star_label": "1 star",
+        "text": "Extremely difficult to get and doctors refuse to prescribe medication requested by hospital because of cost. Avoid this surgery.",
+        "raw_card_text": "A D3 reviewsEdited 2 years ago Extremely difficult to get and doctors refuse to prescribe medication requested by hospital because of cost. Avoid this surgery.Like2 Share Response from the owner 3 years agoFirstly very sorry if you are upset, but the difficulty getting appointments is part of a national staff shortage crisis within the entire NHS. Secondly, we GPs are 'gatekeepers' of NHS spending - a big responsibility, and strict guidelines are imposed on us regarding prescribing. Without specific details of this case I can't give a specific answer, but it is not uncommon for a hospital doctor to ask a GP to prescribe a drug that guidelines tell us nt to prescribe. Really this complaint is to the hospital doctor who should have prescribed the drug him/herself! Please could AD contact the practice manager with specific details, - we do have a formal complaints process - then we can look into this properly. Many thanks. Dr Davis"
+      },
+      {
+        "author": "M G",
+        "relative_date": "2 years ago",
+        "star_label": "1 star",
+        "text": "Difficult to book appointments and I have been victim of fatphobia twice. I wouldn\u2019t recommend.",
+        "raw_card_text": "M GLocal Guide \u00b7 85 reviews \u00b7 90 photos2 years ago Difficult to book appointments and I have been victim of fatphobia twice. I wouldn\u2019t recommend.Like1 Share"
+      },
+      {
+        "author": "Awet Gerezghier",
+        "relative_date": "3 years ago",
+        "star_label": "4 stars",
+        "text": "",
+        "raw_card_text": "Awet Gerezghier3 years ago"
+      },
+      {
+        "author": "Jayno Dubya",
+        "relative_date": "3 years ago",
+        "star_label": "1 star",
+        "text": "Absolutely terrible! The doctors there have misdiagnosed me, neglected to send relevant referrals I need and when it comes to my repeat prescriptions they have always delayed it causing me so much pain and inconvenience. Wouldn\u2019t trust them with a crash test dummy, let alone a real person! Avoid at all costs!",
+        "raw_card_text": "Jayno Dubya1 review3 years ago Absolutely terrible! The doctors there have misdiagnosed me, neglected to send relevant referrals I need and when it comes to my repeat prescriptions they have always delayed it causing me so much pain and inconvenience. Wouldn\u2019t trust them with a crash test dummy, let alone a real person! Avoid at all costs!Like5 Share Response from the owner Edited 3 years agoThere is no such patient at this practice - Google need to delete this F A K E - R E V I E W ! Thank you. Dr Davis."
+      },
+      {
+        "author": "glory home",
+        "relative_date": "4 years ago",
+        "star_label": "1 star",
+        "text": "Did you think to sign up? I will summarize for you exactly what is going on there .. well to book an appointment with a doctor you will have to deal with the rules and he is so. 1 You will have to get up early and not too early because to book an appointment with a doctor you will have to call from 8:00 exactly until 8:01 minutes. You're a minute late and you'll have to wait until tomorrow. And so that they do not have too much difficulty then they will let you wait on the phone for 20 minutes to 45 minutes \"no less and no more\". And if you explain to them that you feel very bad or that your baby feels bad then they will tell you using politeness and in a calm and pleasant voice very sorry we can not help you .. Well the doctors are good and nice. The problem is the customer service and especially the head lady who is not willing to move from the chair and is not willing to help you with anything so I tried to ask for a request to sign a very important document which is maybe a minute job and no more at first I need to bring more documents The chair and said she should not sign it I explained to her that she should and she must sign the document so again she turned around in the chair and said she did not want to sign and when I asked again she angrily said she was ready to sign only it would take a few months I will sum it up so I and many others like me are very disappointed with the customer service",
+        "raw_card_text": "glory home1 review4 years ago Did you think to sign up? I will summarize for you exactly what is going on there .. well to book an appointment with a doctor you will have to deal with the rules and he is so. 1 You will have to get up early and not too early because to book an appointment with a doctor you will have to call from 8:00 exactly until 8:01 minutes. You're a minute late and you'll have to wait until tomorrow. And so that they do not have too much difficulty then they will let you wait on the phone for 20 minutes to 45 minutes \"no less and no more\". And if you explain to them that you feel very bad or that your baby feels bad then they will tell you using politeness and in a calm and pleasant voice very sorry we can not help you .. Well the doctors are good and nice. The problem is the customer service and especially the head lady who is not willing to move from the chair and is not willing to help you with anything so I tried to ask for a request to sign a very important document which is maybe a minute job and no more at first I need to bring more documents The chair and said she should not sign it I explained to her that she should and she must sign the document so again she turned around in the chair and said she did not want to sign and when I asked again she angrily said she was ready to sign only it would take a few months I will sum it up so I and many others like me are very disappointed with the customer serviceLike8 Share Response from the owner Edited 3 years agoThere is no such patient at this practice - Google need to delete this F A K E - R E V I E W ! Thank you. Dr Davis"
+      }
+    ],
+    "practice_name": "Reut Medical Practice",
+    "postcode": "M7 4NX",
+    "canonical_code": "P87648",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/reut-medical-practice/P87648",
+    "query_used": "Reut Medical Practice M7 4NX",
+    "title_match_score": 1.0,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87648-reut-medical-practice.txt"
   }
 ]

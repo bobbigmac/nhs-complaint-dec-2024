@@ -223,6 +223,29 @@
     "review_text_file": ""
   },
   {
+    "query": "1/Salford Medical Practice M6 5PP",
+    "google_maps_title": "1",
+    "google_maps_url": "https://www.google.com/maps/search/1/@53.4616622,-2.195456,14z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": null,
+    "google_review_count": null,
+    "clicked_first_search_result": false,
+    "page_kind": "search",
+    "scan_status": "manual_review_search_result_only",
+    "manual_review_required": true,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "1/Salford Medical Practice",
+    "postcode": "M6 5PP",
+    "canonical_code": "P87004",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/1-salford-medical-practice/P87004",
+    "query_used": "1/Salford Medical Practice M6 5PP",
+    "title_match_score": 0.0,
+    "review_text_file": ""
+  },
+  {
     "query": "Tonge Fold Health Centre BL2 6DY",
     "google_maps_title": "Dr Lowe & Partners",
     "google_maps_url": "https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4237006,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOb09HRkhaWHBCUlJBQuABAPoBBAhCEC8!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
@@ -1303,5 +1326,261 @@
     "query_used": "Rochdale Road Surgey M40 7GT",
     "title_match_score": 0.0,
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P84046001-rochdale-road-surgey.txt"
+  },
+  {
+    "query": "The Uplands Medical Practice M45 8GH",
+    "google_maps_title": "Uplands Medical Practice at Whitefield Health Centre",
+    "google_maps_url": "https://www.google.com/maps/place/Uplands+Medical+Practice+at+Whitefield+Health+Centre/@53.548863,-2.2999284,17z/data=!4m12!1m2!2m1!1sThe+Uplands+Medical+Practice+M45+8GH!3m8!1s0x487ba55d920a6ec9:0xdda5ea57eaa34e90!8m2!3d53.548863!4d-2.2954223!9m1!1b1!15sCiRUaGUgVXBsYW5kcyBNZWRpY2FsIFByYWN0aWNlIE00NSA4R0haJiIkdGhlIHVwbGFuZHMgbWVkaWNhbCBwcmFjdGljZSBtNDUgOGdokgEGZG9jdG9ymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0a2RWSlZkek5oUlRsSFdqTktXVkZyZUdsV01FWnlZMjF3U0V4WFl4QULgAQD6AQQIPxBJ!16s%2Fg%2F1tgz9x9p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.1,
+    "google_review_count": 168,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Debbie Cooper",
+        "relative_date": "Edited 6 days ago",
+        "star_label": "5 stars",
+        "text": "James was very professional, helpful and very friendly. He put me at ease as I am quite a nervous patient! Thankyou so much James.",
+        "raw_card_text": "Debbie Cooper7 reviewsEdited 6 days ago New James was very professional, helpful and very friendly. He put me at ease as I am quite a nervous patient! Thankyou so much James.Like Share Response from the owner 6 days agoThank you so much for sharing this. We\u2019re really pleased to hear that James helped you feel at ease, especially as a nervous patient. Feeling comfortable and supported during your appointment is important, and it\u2019s lovely to know his friendly and professional approach made a difference. We\u2019ll be sure to pass your kind words on to him."
+      },
+      {
+        "author": "Tom Watson",
+        "relative_date": "2 weeks ago",
+        "star_label": "4 stars",
+        "text": "James is efficient and straightforward exactly what I prefer from healthcare professionals. Thanks James!",
+        "raw_card_text": "Tom Watson10 reviews2 weeks ago New James is efficient and straightforward exactly what I prefer from healthcare professionals. Thanks James!Like Share Response from the owner 6 days agoThank you for taking the time to leave this, Tom. We\u2019re really pleased to hear that James\u2019 straightforward and efficient approach suited you. Clear, honest communication matters, and it\u2019s great to know you felt well looked after. We\u2019ll make sure your kind words are passed on to him. Thanks again for sharing your feedback."
+      },
+      {
+        "author": "Roadwolf",
+        "relative_date": "Edited 3 weeks ago",
+        "star_label": "1 star",
+        "text": "I made the mistake of thinking things had improved but after this morning it's clear they haven't! The receptionist who eventually took my call was rude, uncaring, very unhelpful and went above and beyond so that I couldn't get an appointment,, it's almost asif they hate their patients! I intend making a formal complaint about this mornings experience, GP should be accessible and I have a genuine medical problem which I will probably now go and visit A&E with as it does require a doctor",
+        "raw_card_text": "RoadwolfLocal Guide \u00b7 79 reviews \u00b7 92 photosEdited 3 weeks ago I made the mistake of thinking things had improved but after this morning it's clear they haven't! The receptionist who eventually took my call was rude, uncaring, very unhelpful and went above and beyond so that I couldn't get an appointment,, it's almost asif they hate their patients! I intend making a formal complaint about this mornings experience, GP should be accessible and I have a genuine medical problem which I will probably now go and visit A&E with as it does require a doctorLike Share Response from the owner 3 weeks agoThank you for your review. We are glad you have noticed improvements in phone access and appointment availability. Your feedback is encouraging and helps us understand what is working well."
+      },
+      {
+        "author": "Shannon Massey",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "I moved over to this GP in September of last year and they have been absolutely brilliant. Dr Anjum has supported me in a professional, non-judgemental way which has led to me having full confidence in his abilities as my GP. Both him and the admin staff are always friendly and happy to help with any queries I may have and are prompt when booking me in for appointments. Thank you to Dr Anjum and the surgery.",
+        "raw_card_text": "Shannon Massey4 reviewsa month ago I moved over to this GP in September of last year and they have been absolutely brilliant. Dr Anjum has supported me in a professional, non-judgemental way which has led to me having full confidence in his abilities as my GP. Both him and the admin staff are always friendly and happy to help with any queries I may have and are prompt when booking me in for appointments. Thank you to Dr Anjum and the surgery.Like Share Response from the owner 3 weeks agoThank you, Shannon, for such thoughtful feedback. We are really pleased to hear that you feel supported and confident in your care with Dr Anjum. Your kind words about our admin team are also appreciated. We will be sure to share your comments with everyone involved. Thank you for choosing The Uplands Medical Practice."
+      },
+      {
+        "author": "Michaela Ekkel",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Very good appointment, very supportive GP",
+        "raw_card_text": "Michaela Ekkel2 reviewsa month ago Very good appointment, very supportive GPLike Share Response from the owner 3 weeks agoThank you for your feedback, Michaela. We are glad to hear your appointment was supportive and positive. Your comments are appreciated and will be shared with the GP involved."
+      },
+      {
+        "author": "Dave worthington",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Hi Have been registered with the uplands practice for over 20 years it can be challenging getting to see the doctor straight away , but overall it\u2019s got some great people doing great things for the community",
+        "raw_card_text": "Dave worthingtonLocal Guide \u00b7 16 reviews \u00b7 41 photosa month ago Hi Have been registered with the uplands practice for over 20 years it can be challenging getting to see the doctor straight away , but overall it\u2019s got some great people doing great things for the communityLike Share Response from the owner 3 weeks agoThank you, Dave, for your long-standing support and for sharing your perspective. We understand the challenges around appointment availability and appreciate your patience. Your recognition of the team and their work in the community means a lot to us and will be shared with staff."
+      },
+      {
+        "author": "Angela Sweeney",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "No issues. Good thorough examination and discussion with the doctor, he was very informative. Happy with the outcome.",
+        "raw_card_text": "Angela Sweeney1 reviewa month ago No issues. Good thorough examination and discussion with the doctor, he was very informative. Happy with the outcome.Like Share Response from the owner a month agoHi Angela Thank you for taking the time to leave a review. We are pleased to hear you felt well informed and supported during your appointment. We will share your feedback with the doctor involved. - Uplands Medical Practice"
+      },
+      {
+        "author": "John Roberts",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "James Butler took my blood samples. He was very efficient and he answered my questions about my previous results in a very clear and reassuring manner. The surgery itself was all clean and tidy and overall I think The Uplands has improved a lot in the last two or three years.",
+        "raw_card_text": "John Roberts8 reviewsa month ago James Butler took my blood samples. He was very efficient and he answered my questions about my previous results in a very clear and reassuring manner. The surgery itself was all clean and tidy and overall I think The Uplands has improved a lot in the last two or three years.Like Share Response from the owner a month agoHi John Thank you for your kind comments. We will pass your feedback on to James. Clear explanations and reassurance matter. It is also good to hear you have noticed improvements at the practice. - Uplands Medical Practice"
+      },
+      {
+        "author": "Doug Politi",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Visited the Uplands today - 21st January 2026 for Bloods at 10.10am with James. I was seen prior to my Appt time and James was his usual friendly and efficient self. Excellent Patient expereince.",
+        "raw_card_text": "Doug PolitiLocal Guide \u00b7 38 reviews \u00b7 1 photoa month ago Visited the Uplands today - 21st January 2026 for Bloods at 10.10am with James. I was seen prior to my Appt time and James was his usual friendly and efficient self. Excellent Patient expereince.Like Share Response from the owner a month agoHi Doug Thank you for your review. We are glad you were seen promptly and had a positive experience with James. We will share your feedback with him and the team. - Uplands Medical Practice"
+      },
+      {
+        "author": "Donna Brain",
+        "relative_date": "a month ago",
+        "star_label": "5 stars",
+        "text": "Had a quick and pleasant appointment with James this morning. Thank you very much",
+        "raw_card_text": "Donna Brain3 reviewsa month ago Had a quick and pleasant appointment with James this morning. Thank you very muchLike Share Response from the owner a month agoHi Donna Thank you for your feedback. We are pleased your appointment was quick and pleasant. We will make sure James sees your comments. - Uplands Medical Practice"
+      }
+    ],
+    "practice_name": "The Uplands Medical Practice",
+    "postcode": "M45 8GH",
+    "canonical_code": "P83004",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-uplands-medical-practice/P83004",
+    "query_used": "The Uplands Medical Practice M45 8GH",
+    "title_match_score": 0.333,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P83004-the-uplands-medical-practice.txt"
+  },
+  {
+    "query": "SPCT - Inclusion Service M6 5PL",
+    "google_maps_title": "Salford Inclusion GP Service, Salford Primary Care Together",
+    "google_maps_url": "https://www.google.com/maps/place/Salford+Inclusion+GP+Service,+Salford+Primary+Care+Together/@53.486786,-2.284202,17z/data=!4m8!3m7!1s0x487bae3a1a6c0077:0xf5d3eb586ddb98d5!8m2!3d53.486786!4d-2.284202!9m1!1b1!16s%2Fg%2F11fzf7d5zl?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 2.3,
+    "google_review_count": 3,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 3,
+    "recent_reviews": [
+      {
+        "author": "Robert Lee",
+        "relative_date": "4 years ago",
+        "star_label": "1 star",
+        "text": "Worst gp that I have ever had no care",
+        "raw_card_text": "Robert Lee5 reviews4 years ago Worst gp that I have ever had no careLike1 Share"
+      },
+      {
+        "author": "Siobhan Leigh",
+        "relative_date": "5 years ago",
+        "star_label": "5 stars",
+        "text": "Dr Alex Lincoln and Dr Wan Yung are incredible. Can\u2019t do more for you and really help you.",
+        "raw_card_text": "Siobhan LeighLocal Guide \u00b7 23 reviews \u00b7 14 photos5 years ago Dr Alex Lincoln and Dr Wan Yung are incredible. Can\u2019t do more for you and really help you.Like1 Share"
+      },
+      {
+        "author": "peter hodkinson",
+        "relative_date": "5 years ago",
+        "star_label": "1 star",
+        "text": "",
+        "raw_card_text": "peter hodkinsonLocal Guide \u00b7 79 reviews5 years ago"
+      }
+    ],
+    "practice_name": "SPCT - Inclusion Service",
+    "postcode": "M6 5PL",
+    "canonical_code": "Y00445003",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/spct-inclusion-service/Y00445003",
+    "query_used": "SPCT - Inclusion Service M6 5PL",
+    "title_match_score": 0.286,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/Y00445003-spct-inclusion-service.txt"
+  },
+  {
+    "query": "The Energise Healthy Living Centre M6 6ES",
+    "google_maps_title": "The Energise Community Centre",
+    "google_maps_url": "https://www.google.com/maps/place/The+Energise+Community+Centre/@53.497673,-2.2837234,17z/data=!3m1!5s0x487bae33399d6915:0xeeec21ebaac8231e!4m8!3m7!1s0x487bae333c0af809:0xeceb23e82ac6131e!8m2!3d53.497673!4d-2.2837234!9m1!1b1!16s%2Fg%2F1q62g5x05?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 3.9,
+    "google_review_count": 26,
+    "clicked_first_search_result": false,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "visible_review_cards_collected": 10,
+    "recent_reviews": [
+      {
+        "author": "Emmely Doherty",
+        "relative_date": "7 months ago",
+        "star_label": "2 stars",
+        "text": "",
+        "raw_card_text": "Emmely Doherty2 reviews7 months ago"
+      },
+      {
+        "author": "Elaine Farquharson",
+        "relative_date": "2 years ago",
+        "star_label": "4 stars",
+        "text": "",
+        "raw_card_text": "Elaine Farquharson1 review2 years ago"
+      },
+      {
+        "author": "Humairaa Ahmed",
+        "relative_date": "3 years ago",
+        "star_label": "1 star",
+        "text": "Had an appointment today at 11:40 for an ultrasound scan which I had to have a full bladder for. I took a taxi to the place but as the taxi driver went the wrong way, by the time I got through to the centre was 11:43 and I explained to the receptionist that I\u2019ll be 5 minutes. She said that was fine. I arrived at 11:50 and sat in the waiting area waiting for my ultrasound. When I arrived, was only 1 woman I saw go in and come out 10 minutes later. After that it was just me sitting there waiting. Nearly 20 minutes had gone by so I ask the receptionist. She said I am half an hour late and how I said I\u2019ll be 5 minutes and that they won\u2019t see me , even though I walked in passed reception at 11:50 to sit in the waiting area which was by the ultrasound scan room. I explained myself. Then she said okay just continue waiting. 25 minutes later the person at the ultrasound came out for me and explained how I\u2019m too late and she can\u2019t fit me in. Even though I\u2019m the only one there and have been for the past 35 minutes. She said she\u2019s been calling for me. No one called for me at all whilst I was there. Whatever I was telling her wasn\u2019t going through to her at all. So after sitting there for nearly 45 minutes on a full bladder that I\u2019ve had for 2 hours, I got sent home and a phone call after to re arrange. No thanks I would rather not have the scan anymore to find the issue of what\u2019s making me ill rather than dealing with people like this. And bare in mind whilst I was waiting, one woman kept coming in and out of the room \u2018checking around\u2019 but never called my name or spoke to me. Wish I could give this place 0 stars",
+        "raw_card_text": "Humairaa Ahmed5 reviews3 years ago Had an appointment today at 11:40 for an ultrasound scan which I had to have a full bladder for. I took a taxi to the place but as the taxi driver went the wrong way, by the time I got through to the centre was 11:43 and I explained to the receptionist that I\u2019ll be 5 minutes. She said that was fine. I arrived at 11:50 and sat in the waiting area waiting for my ultrasound. When I arrived, was only 1 woman I saw go in and come out 10 minutes later. After that it was just me sitting there waiting. Nearly 20 minutes had gone by so I ask the receptionist. She said I am half an hour late and how I said I\u2019ll be 5 minutes and that they won\u2019t see me , even though I walked in passed reception at 11:50 to sit in the waiting area which was by the ultrasound scan room. I explained myself. Then she said okay just continue waiting. 25 minutes later the person at the ultrasound came out for me and explained how I\u2019m too late and she can\u2019t fit me in. Even though I\u2019m the only one there and have been for the past 35 minutes. She said she\u2019s been calling for me. No one called for me at all whilst I was there. Whatever I was telling her wasn\u2019t going through to her at all. So after sitting there for nearly 45 minutes on a full bladder that I\u2019ve had for 2 hours, I got sent home and a phone call after to re arrange. No thanks I would rather not have the scan anymore to find the issue of what\u2019s making me ill rather than dealing with people like this. And bare in mind whilst I was waiting, one woman kept coming in and out of the room \u2018checking around\u2019 but never called my name or spoke to me. Wish I could give this place 0 starsLike3 Share"
+      },
+      {
+        "author": "Tom M",
+        "relative_date": "4 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Tom MLocal Guide \u00b7 10 reviews \u00b7 32 photos4 years ago"
+      },
+      {
+        "author": "Pawe\u0142 Jurkiewicz",
+        "relative_date": "4 years ago",
+        "star_label": "2 stars",
+        "text": "Don't really care about people. Lack of contact, poor communication, pretty disturbing when it comes to your health. I hope they will change in the future. The only good thing I can say is front desk staff is polite.",
+        "raw_card_text": "Pawe\u0142 JurkiewiczLocal Guide \u00b7 80 reviews \u00b7 44 photos4 years ago Don't really care about people. Lack of contact, poor communication, pretty disturbing when it comes to your health. I hope they will change in the future. The only good thing I can say is front desk staff is polite.Like Share"
+      },
+      {
+        "author": "Paula McGuinness",
+        "relative_date": "6 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Paula McGuinnessLocal Guide \u00b7 41 reviews \u00b7 5 photos6 years ago"
+      },
+      {
+        "author": "ayesha akhtar",
+        "relative_date": "6 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "ayesha akhtarLocal Guide \u00b7 7 reviews6 years ago"
+      },
+      {
+        "author": "farkhanda ali",
+        "relative_date": "6 years ago",
+        "star_label": "4 stars",
+        "text": "",
+        "raw_card_text": "farkhanda aliLocal Guide \u00b7 14 reviews \u00b7 27 photos6 years ago"
+      },
+      {
+        "author": "Paula St-John",
+        "relative_date": "6 years ago",
+        "star_label": "5 stars",
+        "text": "",
+        "raw_card_text": "Paula St-John6 reviews \u00b7 1 photo6 years ago"
+      },
+      {
+        "author": "Janet Reygan",
+        "relative_date": "6 years ago",
+        "star_label": "4 stars",
+        "text": "Friendly and welcoming with a good range of therapies",
+        "raw_card_text": "Janet ReyganLocal Guide \u00b7 234 reviews \u00b7 976 photos6 years ago Friendly and welcoming with a good range of therapiesLike Share"
+      }
+    ],
+    "practice_name": "The Energise Healthy Living Centre",
+    "postcode": "M6 6ES",
+    "canonical_code": "P87654001",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-energise-healthy-living-centre/P87654001",
+    "query_used": "The Energise Healthy Living Centre M6 6ES",
+    "title_match_score": 0.333,
+    "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P87654001-the-energise-healthy-living-centre.txt"
+  },
+  {
+    "query": "Dr A Chaudhry & Dr I Jeet M7 1RD",
+    "google_maps_title": "Dr G Chowdhury - Newbury Green Medical Practice",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+G+Chowdhury+-+Newbury+Green+Medical+Practice/@53.5059639,-2.2959253,14z/data=!3m1!5s0x487bb02ecd619243:0xd1edb3eda2413770!4m10!1m2!2m1!1sDr+A+Chaudhry+%26+Dr+I+Jeet+M7+1RD!3m6!1s0x487bb02ec961b859:0x43f27ddef0261458!8m2!3d53.5059639!4d-2.2598764!15sCiBEciBBIENoYXVkaHJ5ICYgRHIgSSBKZWV0IE03IDFSRJIBBmRvY3RvcuABAA!16s%2Fg%2F11frdw2nxr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
+    "google_rating": 1.0,
+    "google_review_count": 1,
+    "clicked_first_search_result": true,
+    "page_kind": "place",
+    "scan_status": "ok_rating_only",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": false,
+    "reviews_sorted_newest": false,
+    "visible_review_cards_collected": 0,
+    "recent_reviews": [],
+    "practice_name": "Dr A Chaudhry & Dr I Jeet",
+    "postcode": "M7 1RD",
+    "canonical_code": "P87654",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/dr-a-chaudhry-and-dr-i-jeet/P87654",
+    "query_used": "Dr A Chaudhry & Dr I Jeet M7 1RD",
+    "title_match_score": 0.2,
+    "review_text_file": ""
   }
 ]
