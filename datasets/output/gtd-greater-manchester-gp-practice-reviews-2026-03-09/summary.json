@@ -5,16 +5,16 @@
   "row_count": 424,
   "gtd_managed_count": 13,
   "non_gtd_count": 411,
-  "google_review_coverage_count": 424,
-  "google_maps_direct_coverage_count": 414,
-  "google_review_text_file_count": 367,
+  "google_review_coverage_count": 32,
+  "google_maps_direct_coverage_count": 0,
+  "google_review_text_file_count": 0,
   "gtd_takeover_date_count": 13,
-  "management_company_identified_count": 69,
-  "management_company_distinct_count": 17,
-  "affiliated_group_identified_count": 10,
-  "affiliated_group_distinct_count": 3,
+  "management_company_identified_count": 13,
+  "management_company_distinct_count": 1,
+  "affiliated_group_identified_count": 0,
+  "affiliated_group_distinct_count": 0,
   "registered_patient_count_coverage": 360,
-  "registered_patient_count_candidate_coverage": 60,
+  "registered_patient_count_candidate_coverage": 0,
   "trustpilot_coverage_count": 0,
   "postcode_area_count": 81,
   "postcode_areas": [
@@ -197,8 +197,5 @@
     "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
     "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
     "Registered patient count candidate fields are advisory only and are used for branch/site reconciliation without replacing the direct NHS monthly match."
-  ],
-  "google_maps_total_scanned_count": 415,
-  "google_maps_manual_review_count": 1,
-  "google_maps_flagged_result_count": 37
+  ]
 }

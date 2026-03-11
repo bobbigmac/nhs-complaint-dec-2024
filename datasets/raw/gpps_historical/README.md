@@ -11,7 +11,7 @@ Official NHS GP Patient Survey practice-level results for building time-series o
 | `GPPS_2024_Practice_data.csv` | 2024 | CSV | [gp-patient.co.uk/downloads/2024/](https://gp-patient.co.uk/downloads/2024/) |
 | `GPPS_2024_Practice_results.xlsx` | 2024 | Excel | Same |
 
-**Note:** 2018–2023 practice-level files are not available at the same direct URLs. Use the [Surveys and Reports](https://www.gp-patient.co.uk/SurveysAndReports) → “Past survey results and materials” section, or the [Analysis Tool](https://gp-patient.co.uk/analysistool) (trend view since 2018), to obtain older years.
+**Note:** 2018–2023 practice-level files are not available at the same direct URLs. Use the [Surveys and Reports](https://www.gp-patient.co.uk/SurveysAndReports) → “Past survey results and materials” section, or the [Analysis Tool](https://gp-patient.co.uk/analysistool) (trend view since 2018), to obtain older years. Download Practice data (CSV) for each year, save as `GPPS_YYYY_Practice_data.csv` in this folder, then run `python datasets/scripts/extract_gpps_gtd_subset.py`.
 
 ## Key columns
 

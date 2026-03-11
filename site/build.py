@@ -21,6 +21,7 @@ DEFAULT_OUT_DIR = SITE_DIR / "dist"
 FILES_DIR_NAME = "files"
 TOOLS_DIR_NAME = "tools"
 TOOL_VIEWER_PATH = f"{TOOLS_DIR_NAME}/markdown-print-viewer.html"
+TOOL_VIEWER_SOURCE = SITE_DIR / "tools" / "markdown-print-viewer.html"
 
 
 ISSUE_SECTIONS: list[dict[str, object]] = [
@@ -390,10 +391,9 @@ def publish_supporting_files(out_dir: Path) -> dict[str, str]:
         shutil.copy2(source, destination)
         published[relative.as_posix()] = site_path
 
-    tool_source = REPO_ROOT / "markdown-print-viewer.html"
     tool_destination = out_dir / TOOL_VIEWER_PATH
     tool_destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(tool_source, tool_destination)
+    shutil.copy2(TOOL_VIEWER_SOURCE, tool_destination)
     return published
 
 

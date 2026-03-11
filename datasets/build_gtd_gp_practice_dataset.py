@@ -1071,11 +1071,20 @@ def build_gtd_google_score_timeseries(
     }
 
 
+def load_gtd_gpps_timeseries() -> dict[str, Any]:
+    """Load GPPS historical subset for GTD practices (from extract script output)."""
+    p = OUTPUT_DIR / "gtd_gpps_timeseries.json"
+    if not p.exists():
+        return {"years": [], "practice_series": [], "average_series": [], "gtd_practice_count": 0, "practices_with_survey_history": 0}
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     rows = apply_gtd_takeover_metadata(rows)
     survey_by_code = load_gp_patient_survey_index()
     survey_branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
+    gtd_survey_timeseries = load_gtd_gpps_timeseries()
     known_management_companies = sorted(
         {
             row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else "")
@@ -1677,8 +1686,8 @@ body {{
       <p id="comparison-note" class="hint"></p>
       <div id="comparison-grid" class="comparison-grid"></div>
     </section>
-    <section class="panel comparison-panel">
-      <h2>GTD Google Score Over Time</h2>
+    <section class="panel comparison-panel" id="gtd-trend-section">
+      <h2 id="gtd-trend-heading">GTD Google Score Over Time</h2>
       <p id="gtd-score-trend-summary" class="hint"></p>
       <div class="trend-chart-layout">
         <div class="chart-frame">
@@ -1688,7 +1697,7 @@ body {{
         </div>
         <div id="gtd-score-trend-legend" class="trend-legend" aria-label="GTD practice legend"></div>
       </div>
-      <p class="chart-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The bold line is the mean practice trajectory. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
+      <p class="chart-note" id="gtd-trend-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The bold line is the mean practice trajectory. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
     </section>
     <section class="panel comparison-panel">
       <h2>Completion Rate vs Score</h2>
@@ -1707,6 +1716,7 @@ body {{
 <script>
 const rows = {json.dumps(markers)};
 const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
+const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const NEW_BANK_CODE = 'Y02960';
 const LOCAL_RADIUS_MILES = 2.5;
@@ -2700,10 +2710,122 @@ function linePath(points, xScale, yScale) {{
   return path.trim();
 }}
 
+function fractionalYearIndex(dateIso, years) {{
+  if (!dateIso || !years.length) return null;
+  const target = new Date(`${{dateIso}}T00:00:00`);
+  if (Number.isNaN(target.getTime())) return null;
+  const targetYear = target.getUTCFullYear();
+  const firstYear = parseInt(years[0], 10);
+  const lastYear = parseInt(years[years.length - 1], 10);
+  if (targetYear < firstYear) return -1;
+  if (targetYear > lastYear) return years.length;
+  const idx = years.indexOf(String(targetYear));
+  return idx >= 0 ? idx : null;
+}}
+
+function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
+  const years = gtdSurveyTimeseries.years || [];
+  const practiceSeries = gtdSurveyTimeseries.practice_series || [];
+  const averageSeries = gtdSurveyTimeseries.average_series || [];
+  if (heading) heading.textContent = 'GTD GP Survey Overall Good % Over Time';
+  if (note) note.textContent = 'Thin lines show each GTD practice\\'s GP Patient Survey overall-experience-as-good percentage by year. Faint dashed vertical lines mark the documented GTD takeover date. The bold line is the mean. Data from gp-patient.co.uk practice-level CSV.';
+  const width = 920;
+  const height = 360;
+  const margin = {{ top: 18, right: 22, bottom: 56, left: 46 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const xScale = (index) => margin.left + (years.length <= 1 ? plotWidth / 2 : (index / Math.max(1, years.length - 1)) * plotWidth);
+  const yMin = 0;
+  const yMax = 100;
+  const yScale = (value) => margin.top + plotHeight - ((value - yMin) / (yMax - yMin)) * plotHeight;
+  const yTicks = [0, 25, 50, 75, 100];
+  const palette = [
+    '#6c8ebf', '#b67b4d', '#5f9b6b', '#9d6aa8', '#b35656', '#4f8f95', '#8c7a52',
+    '#9070b2', '#4f7f5b', '#bf6f91', '#7d8ab5', '#6d8f43', '#af7b52'
+  ];
+  const practiceEntries = practiceSeries.map((series, index) => {{
+    const points = series.points || [];
+    const path = linePath(points, xScale, yScale);
+    const lastIndex = points.reduce((memo, value, pointIndex) => (value !== null && Number.isFinite(value) ? pointIndex : memo), -1);
+    const lastValue = lastIndex >= 0 ? points[lastIndex] : null;
+    const rawTakeoverIndex = fractionalYearIndex(series.takeover_date, years);
+    const takeoverIndex = rawTakeoverIndex === null ? null : Math.max(0, Math.min(years.length - 1, rawTakeoverIndex));
+    return {{ series, color: palette[index % palette.length], path, lastIndex, lastValue, rawTakeoverIndex, takeoverIndex }};
+  }}).filter((entry) => entry.path);
+  const availableCodes = new Set(practiceEntries.map((e) => e.series.code));
+  if (hoveredTrendPracticeCode && !availableCodes.has(hoveredTrendPracticeCode)) hoveredTrendPracticeCode = null;
+  if (pinnedTrendPracticeCode && !availableCodes.has(pinnedTrendPracticeCode)) pinnedTrendPracticeCode = null;
+  const activeCode = hoveredTrendPracticeCode || pinnedTrendPracticeCode;
+  const activeEntry = practiceEntries.find((e) => e.series.code === activeCode) || null;
+  const dimInactive = Boolean(activeEntry);
+  const pathOpacity = (e) => !dimInactive ? 0.46 : e.series.code === activeEntry?.series.code ? 0.96 : 0.12;
+  const markerOpacity = (e) => !dimInactive ? 0.26 : e.series.code === activeEntry?.series.code ? 0.9 : 0.12;
+  const strokeWidth = (e) => e.series.code === activeCode ? 2.8 : 1.35;
+  const pointRadius = (e) => e.series.code === activeCode ? 4.8 : 3.1;
+  const practicePaths = practiceEntries.map((entry) => {{
+    const finalText = entry.lastValue === null ? '?' : Math.round(entry.lastValue) + '%';
+    const titleSuffix = entry.series.takeover_date ? ` Takeover: ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}.` : '';
+    return `<path d="${{entry.path}}" fill="none" stroke="${{entry.color}}" stroke-width="${{strokeWidth(entry)}}" stroke-linecap="round" stroke-linejoin="round" opacity="${{pathOpacity(entry).toFixed(2)}}"><title>${{entry.series.name}} · latest ${{finalText}}${{titleSuffix}}</title></path>`;
+  }}).join('');
+  const endMarkers = practiceEntries.filter((e) => e.lastIndex >= 0 && e.lastValue !== null).map((entry) =>
+    `<circle cx="${{xScale(entry.lastIndex).toFixed(2)}}" cy="${{yScale(entry.lastValue).toFixed(2)}}" r="${{pointRadius(entry).toFixed(2)}}" fill="${{entry.color}}" opacity="${{Math.max(pathOpacity(entry), 0.24).toFixed(2)}}" stroke="rgba(255,255,255,0.92)" stroke-width="${{entry.series.code === activeCode ? '1.8' : '1.1'}}"><title>${{entry.series.name}} latest ${{Math.round(entry.lastValue)}}%</title></circle>`
+  ).join('');
+  const takeoverMarkers = practiceEntries.map((entry) => {{
+    if (entry.takeoverIndex === null) return '';
+    const markerX = xScale(entry.takeoverIndex);
+    return `<line x1="${{markerX.toFixed(2)}}" y1="${{margin.top}}" x2="${{markerX.toFixed(2)}}" y2="${{height - margin.bottom}}" stroke="${{entry.color}}" stroke-width="${{entry.series.code === activeCode ? '2.2' : '1.2'}}" stroke-dasharray="4 4" opacity="${{markerOpacity(entry).toFixed(2)}}"><title>${{entry.series.name}} takeover: ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}</title></line>`;
+  }}).join('');
+  const averagePath = linePath(averageSeries, xScale, yScale);
+  const averageFinal = [...averageSeries].reverse().find((v) => v !== null && Number.isFinite(v));
+  const averageFinalIndex = averageSeries.reduce((memo, v, i) => (v !== null && Number.isFinite(v) ? i : memo), -1);
+  const averageMarker = averageFinalIndex >= 0 && averageFinal !== undefined
+    ? `<circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)" opacity="${{dimInactive ? '0.74' : '1'}}"></circle><text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{Math.round(averageFinal)}}%</text>`
+    : '';
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{yTicks.map((tick) => `<line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" /><text x="${{margin.left - 8}}" y="${{yScale(tick) + 4}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{tick}}%</text>`).join('')}}
+    ${{years.map((y, i) => `<line x1="${{xScale(i)}}" y1="${{margin.top}}" x2="${{xScale(i)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.08)" /><text x="${{xScale(i)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{y}}</text>`).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{takeoverMarkers}}
+    ${{practicePaths}}
+    <path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>
+    ${{averageMarker}}
+    ${{endMarkers}}
+    <text x="${{width / 2}}" y="${{height - 10}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Survey year</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">Overall experience good %</text>
+  `;
+  legend.innerHTML = practiceEntries.map((entry) => {{
+    const latestText = entry.lastValue === null ? 'No data' : `Latest ${{Math.round(entry.lastValue)}}%`;
+    const takeoverText = entry.series.takeover_date ? `Takeover ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}` : 'Takeover date pending';
+    const isActive = entry.series.code === activeCode;
+    return `<button type="button" class="trend-legend-item${{isActive ? ' is-active' : ''}}" data-practice-code="${{entry.series.code}}" aria-pressed="${{isActive}}" title="${{entry.series.name}}. ${{latestText}}. ${{takeoverText}}."><span class="trend-legend-swatch" style="background:${{entry.color}}"></span><span class="trend-legend-body"><span class="trend-legend-name">${{entry.series.name}}</span><span class="trend-legend-meta">${{latestText}} · ${{takeoverText}}</span></span></button>`;
+  }}).join('');
+  legend.querySelectorAll('[data-practice-code]').forEach((button) => {{
+    const code = button.getAttribute('data-practice-code');
+    button.addEventListener('mouseenter', () => {{ hoveredTrendPracticeCode = code; renderGtdScoreTrendChart(); }});
+    button.addEventListener('mouseleave', () => {{ hoveredTrendPracticeCode = null; renderGtdScoreTrendChart(); }});
+    button.addEventListener('focus', () => {{ hoveredTrendPracticeCode = code; renderGtdScoreTrendChart(); }});
+    button.addEventListener('blur', () => {{ hoveredTrendPracticeCode = null; renderGtdScoreTrendChart(); }});
+    button.addEventListener('click', () => {{ pinnedTrendPracticeCode = pinnedTrendPracticeCode === code ? null : code; renderGtdScoreTrendChart(); }});
+  }});
+  const activeSummary = !activeEntry ? ' Hover a practice in the legend to isolate its track.' : ` Highlighted: ${{activeEntry.series.name}}. Latest ${{activeEntry.lastValue === null ? '?' : Math.round(activeEntry.lastValue) + '%'}}.`;
+  summary.textContent = `${{gtdSurveyTimeseries.practices_with_survey_history}} of ${{gtdSurveyTimeseries.gtd_practice_count}} GTD practices, ${{years.length}} survey years. Thin lines are practice-level overall-good %, dashed lines mark GTD takeover.${{activeSummary}}`;
+}}
+
 function renderGtdScoreTrendChart() {{
   const svg = document.getElementById('gtd-score-trend-chart');
   const summary = document.getElementById('gtd-score-trend-summary');
   const legend = document.getElementById('gtd-score-trend-legend');
+  const heading = document.getElementById('gtd-trend-heading');
+  const note = document.getElementById('gtd-trend-note');
+  const useSurvey = activeMetric === 'survey' && gtdSurveyTimeseries.years?.length && gtdSurveyTimeseries.practice_series?.length;
+  if (useSurvey) {{
+    renderGtdSurveyTrendChart(svg, summary, legend, heading, note);
+    return;
+  }}
+  if (heading) heading.textContent = 'GTD Google Score Over Time';
+  if (note) note.textContent = 'Thin lines show each GTD practice\\'s reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The bold line is the mean practice trajectory. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.';
   const months = gtdGoogleTimeseries.months || [];
   const practiceSeries = gtdGoogleTimeseries.practice_series || [];
   const averageSeries = gtdGoogleTimeseries.average_series || [];
@@ -2961,6 +3083,10 @@ def main() -> int:
     write_json(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.json", rows)
     summary = write_summary(OUTPUT_DIR / "summary.json", rows)
     write_readme(OUTPUT_DIR / "README.md", summary)
+    # Build GPPS historical subset for GTD practices (needed for survey-mode chart)
+    extract_script = BASE_DIR / "scripts" / "extract_gpps_gtd_subset.py"
+    if extract_script.exists():
+        subprocess.run([sys.executable, str(extract_script)], check=False, cwd=BASE_DIR)
     write_map(OUTPUT_DIR / "map.html", rows)
     print(f"Wrote {len(rows)} rows to {OUTPUT_DIR}")
     return 0

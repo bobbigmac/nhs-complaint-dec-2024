@@ -1,5 +1,6 @@
 {
   "years": [
+    "2024",
     "2025"
   ],
   "practice_series": [
@@ -7,6 +8,7 @@
       "code": "P89011",
       "name": "Gordon Street Medical Centre",
       "points": [
+        58.56,
         61.09
       ],
       "takeover_date": "2018-04-01",
@@ -16,6 +18,7 @@
       "code": "P89013",
       "name": "Hattersley Group Practice",
       "points": [
+        49.06,
         40.58
       ],
       "takeover_date": "2018-04-01",
@@ -25,6 +28,7 @@
       "code": "P89602",
       "name": "The Smithy Surgery",
       "points": [
+        82.48,
         78.32
       ],
       "takeover_date": "2018-04-01",
@@ -34,6 +38,7 @@
       "code": "P89612",
       "name": "Mossley Medical Practice",
       "points": [
+        74.23,
         82.54
       ],
       "takeover_date": "2018-04-01",
@@ -43,6 +48,7 @@
       "code": "Y02325",
       "name": "Charlestown MD",
       "points": [
+        66.93,
         59.11
       ],
       "takeover_date": "2025-04-01",
@@ -52,6 +58,7 @@
       "code": "Y02520",
       "name": "Simpson Medical Practice",
       "points": [
+        70.05,
         80.39
       ],
       "takeover_date": "2017-10-02",
@@ -61,6 +68,7 @@
       "code": "Y02586",
       "name": "Ashton Gp Service",
       "points": [
+        57.6,
         52.08
       ],
       "takeover_date": "2017-09-01",
@@ -70,6 +78,7 @@
       "code": "Y02663",
       "name": "Droylsden Medical Practice",
       "points": [
+        59.62,
         49.48
       ],
       "takeover_date": "2017-09-01",
@@ -79,6 +88,7 @@
       "code": "Y02713",
       "name": "Guide Bridge Medical Practice",
       "points": [
+        46.97,
         53.44
       ],
       "takeover_date": "2017-09-01",
@@ -88,6 +98,7 @@
       "code": "Y02849",
       "name": "City Health Centre",
       "points": [
+        56.19,
         70.34
       ],
       "takeover_date": "2018-08-29",
@@ -97,6 +108,7 @@
       "code": "Y02875",
       "name": "Lindley House Health Centre",
       "points": [
+        78.34,
         71.74
       ],
       "takeover_date": "2019-10-01",
@@ -106,6 +118,7 @@
       "code": "Y02936",
       "name": "Millbrook Medical Practice",
       "points": [
+        67.55,
         68.88
       ],
       "takeover_date": "2017-09-01",
@@ -115,6 +128,7 @@
       "code": "Y02960",
       "name": "New Bank Health",
       "points": [
+        66.84,
         69.0
       ],
       "takeover_date": "2025-04-01",
@@ -122,6 +136,7 @@
     }
   ],
   "average_series": [
+    64.19,
     64.38
   ],
   "gtd_practice_count": 13,

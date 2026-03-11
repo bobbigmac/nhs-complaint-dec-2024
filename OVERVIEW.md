@@ -17,7 +17,7 @@ These define the narrative, goals, and escalation path.
   
 Supporting / utility:
 - `.gitignore` — standard ignore rules (minimal).
-- `markdown-print-viewer.html` — standalone HTML utility to load a markdown file and print it nicely (handy for creating meeting printouts without a full build step).
+- `site/tools/markdown-print-viewer.html` — standalone HTML utility to load a markdown file and print it nicely (handy for creating meeting printouts without a full build step).
 
 ---
 
