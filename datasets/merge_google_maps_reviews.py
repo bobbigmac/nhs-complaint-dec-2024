@@ -142,6 +142,10 @@ def relative_to_output(path_str: str) -> str:
     try:
         return str(path.relative_to(OUTPUT_DIR))
     except ValueError:
+        parts = path.parts
+        if "google-review-texts" in parts:
+            index = parts.index("google-review-texts")
+            return str(Path(*parts[index:]))
         return str(path)
 
 

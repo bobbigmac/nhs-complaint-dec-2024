@@ -1,0 +1,93 @@
+{
+  "Y02586": {
+    "takeover_date": "2017-09-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "Y02325": {
+    "takeover_date": "2025-04-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure began when Charlestown Medical Practice moved from North Manchester GPPO to GTD Healthcare in the 2025 APMS mobilisation.",
+    "source_label": "Manchester Locality PCCC agenda and papers, 27 March 2025",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2025/03/manchester-locality-pccc-primary-care-commissioning-committee-agenda-and-papers-27-march-2025.pdf"
+  },
+  "Y02849": {
+    "takeover_date": "2018-08-29",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "Y02663": {
+    "takeover_date": "2017-09-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "P89011": {
+    "takeover_date": "2018-04-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the GMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "Y02713": {
+    "takeover_date": "2017-09-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "P89013": {
+    "takeover_date": "2018-04-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the GMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "Y02875": {
+    "takeover_date": "2019-10-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "Y02936": {
+    "takeover_date": "2017-09-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "P89612": {
+    "takeover_date": "2018-04-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the GMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "Y02960": {
+    "takeover_date": "2025-04-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure began when New Bank Health Centre moved from Better Health Manchester to GTD Healthcare in the 2025 APMS mobilisation.",
+    "source_label": "Manchester Locality PCCC agenda and papers, 27 March 2025",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2025/03/manchester-locality-pccc-primary-care-commissioning-committee-agenda-and-papers-27-march-2025.pdf"
+  },
+  "Y02520": {
+    "takeover_date": "2017-10-02",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the APMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  },
+  "P89602": {
+    "takeover_date": "2018-04-01",
+    "date_precision": "day",
+    "note": "Current GTD tenure uses the GMS contract start date listed by NHS Greater Manchester.",
+    "source_label": "NHS GM primary medical contract list (Feb 2024)",
+    "source_url": "https://gmintegratedcare.org.uk/wp-content/uploads/2024/08/nhs-gm-primary-care-core-contracts-combined-database-feb-24.xlsx"
+  }
+}

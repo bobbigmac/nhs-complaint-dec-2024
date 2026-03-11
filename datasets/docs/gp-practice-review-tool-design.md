@@ -25,7 +25,7 @@ The next phase should add:
 
 ## Current map and why overlays are feasible
 
-The current frontend is a generated static Leaflet map in [map.html](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/gtd-greater-manchester-gp-practice-reviews-2026-03-09/map.html). That makes public overlays straightforward.
+The current frontend is a generated static Leaflet map in [map.html](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/map.html). That makes public overlays straightforward.
 
 There are two practical ways to add them:
 
@@ -286,11 +286,11 @@ Keep GP Patient Survey ingestion separate from the live Google review collector.
 
 Current raw source-of-truth directory:
 
-- `gp_patient_survey_raw/`
+- `raw/gp_patient_survey/`
 
 Current compiled analyst-facing summary:
 
-- `gp_patient_survey_focus.md`
+- `docs/gp_patient_survey_focus.md`
 
 Current collector:
 
@@ -298,11 +298,11 @@ Current collector:
 
 Format rules:
 
-- raw data lives as one JSON file per practice in `gp_patient_survey_raw/`
+- raw data lives as one JSON file per practice in `raw/gp_patient_survey/`
 - use `canonical_code` plus practice name slug in the filename
 - keep GP Patient Survey `questionName` / `dataColumn` identifiers as the stable keys inside `key_questions`
 - prefer additive schema changes over renaming existing keys
-- `gp_patient_survey_focus.md` is a derived report, not the source-of-truth layer
+- `docs/gp_patient_survey_focus.md` is a derived report, not the source-of-truth layer
 
 Fields expected in each record:
 

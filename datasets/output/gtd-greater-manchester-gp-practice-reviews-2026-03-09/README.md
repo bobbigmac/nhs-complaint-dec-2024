@@ -16,6 +16,7 @@ Files:
 - `google_maps_recent_reviews.json`: raw structured Google Maps capture output
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
+- `gtd_takeover_*` fields in the CSV/JSON: documented current-tenure GTD takeover dates plus source notes for GTD-managed practices
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
 - `affiliated_group_*` fields in the CSV/JSON: separate network/federation/operator links that should not be treated as the core management company
 - `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
@@ -38,6 +39,7 @@ Coverage snapshot:
 - Google review coverage rows: 424
 - Google Maps direct coverage rows: 414
 - Review text files written: 367
+- GTD takeover dates documented: 13
 - Practices with management company identified: 69
 - Distinct management companies identified: 17
 - Practices with affiliated group identified: 10
@@ -50,6 +52,7 @@ Coverage snapshot:
 Caveats:
 
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
+- `gtd_takeover_*` fields reflect GTD's current-tenure start date for the GTD practices in this bundle and may use month-level precision where only month/year was published.
 - `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
 - `affiliated_group_*` fields may capture a federation, enhanced-hours operator, or similar network relationship even where the core management company is still blank.
 - `registered_patient_count_candidate_*` fields should be treated as branch/site hints and should not be summed as if they were additional registered patients.

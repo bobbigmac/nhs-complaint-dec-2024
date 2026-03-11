@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent
-OUTPUT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
+OUTPUT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
 DEFAULT_INPUT = OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv"
 DEFAULT_GOOGLE_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 DEFAULT_COLLECTOR_PYTHON = BASE_DIR / ".venv-google-reviews" / "bin" / "python"

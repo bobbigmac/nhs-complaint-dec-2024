@@ -21,12 +21,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DEFAULT_DATASET = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "gtd_greater_manchester_gp_practices.csv"
+DEFAULT_DATASET = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "gtd_greater_manchester_gp_practices.csv"
 PROFILE_ROOT = Path.home() / ".mozilla" / "firefox"
 PROFILE_COPY_DIR = BASE_DIR / ".tooling" / "firefox-profile-copy"
-DEFAULT_OUTPUT = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google_maps_recent_reviews.json"
-DEFAULT_TEXT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google-review-texts"
-DEFAULT_QUERY_OVERRIDES = BASE_DIR / "google_maps_query_overrides.json"
+DEFAULT_OUTPUT = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google_maps_recent_reviews.json"
+DEFAULT_TEXT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google-review-texts"
+DEFAULT_QUERY_OVERRIDES = BASE_DIR / "config" / "google_maps_query_overrides.json"
 
 
 def discover_default_firefox_profile() -> Path:

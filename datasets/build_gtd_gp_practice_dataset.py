@@ -20,9 +20,10 @@ from urllib.parse import quote, urlencode
 
 
 BASE_DIR = Path(__file__).resolve().parent
-OUTPUT_DIR = BASE_DIR / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
-GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "gp_patient_survey_raw"
+OUTPUT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
+GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "raw" / "gp_patient_survey"
 GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
+GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
 GP_REGISTERED_PATIENTS_CACHE = BASE_DIR / ".cache" / "gp-reg-pat-prac-all.csv"
 GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
 GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
@@ -127,6 +128,43 @@ def fetch_text(url: str) -> str:
 
 def fetch_json(url: str) -> Any:
     return json.loads(fetch_text(url))
+
+
+def is_truthy(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    return str(value).strip().lower() in {"1", "true", "yes", "y"}
+
+
+def load_gtd_takeover_index(path: Path = GTD_TAKEOVER_METADATA_JSON) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    normalized: dict[str, dict[str, Any]] = {}
+    for code, item in payload.items():
+        if isinstance(item, dict):
+            normalized[str(code).strip()] = item
+    return normalized
+
+
+def apply_gtd_takeover_metadata(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    takeover_index = load_gtd_takeover_index()
+    enriched_rows: list[dict[str, Any]] = []
+    for row in rows:
+        enriched = dict(row)
+        meta = takeover_index.get(str(enriched.get("canonical_code", "")).strip(), {}) if is_truthy(enriched.get("gtd_managed")) else {}
+        enriched["gtd_takeover_date"] = str(meta.get("takeover_date", "")).strip()
+        enriched["gtd_takeover_date_precision"] = str(meta.get("date_precision", "")).strip()
+        enriched["gtd_takeover_note"] = str(meta.get("note", "")).strip()
+        enriched["gtd_takeover_source_label"] = str(meta.get("source_label", "")).strip()
+        enriched["gtd_takeover_source_url"] = str(meta.get("source_url", "")).strip()
+        enriched_rows.append(enriched)
+    return enriched_rows
 
 
 def ensure_registered_patients_cache(cache_path: Path = GP_REGISTERED_PATIENTS_CACHE) -> Path:
@@ -574,6 +612,7 @@ def build_dataset() -> list[dict[str, Any]]:
 
 
 def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
+    rows = apply_gtd_takeover_metadata(rows)
     fields = [
         "practice_name",
         "canonical_code",
@@ -587,6 +626,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "gtd_managed",
         "gtd_site_name",
         "gtd_site_url",
+        "gtd_takeover_date",
+        "gtd_takeover_date_precision",
+        "gtd_takeover_note",
+        "gtd_takeover_source_label",
+        "gtd_takeover_source_url",
         "nearby_to_gtd_anchors",
         "nearby_anchor_count",
         "source_search_centers",
@@ -628,10 +672,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
 
 
 def write_json(path: Path, rows: list[dict[str, Any]]) -> None:
-    path.write_text(json.dumps(rows, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(apply_gtd_takeover_metadata(rows), indent=2), encoding="utf-8")
 
 
 def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
+    rows = apply_gtd_takeover_metadata(rows)
     postcodes = sorted({row["postcode"].split()[0] for row in rows if row["postcode"]})
     summary = {
         "generated_date": "2026-03-09",
@@ -643,6 +688,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
         "google_review_coverage_count": sum(1 for row in rows if row["google_review_score"] != ""),
         "google_maps_direct_coverage_count": sum(1 for row in rows if "Google Maps direct" in str(row.get("google_review_source_note", ""))),
         "google_review_text_file_count": sum(1 for row in rows if row.get("google_review_text_file", "")),
+        "gtd_takeover_date_count": sum(1 for row in rows if row.get("gtd_takeover_date", "")),
         "management_company_identified_count": sum(1 for row in rows if row.get("management_company_name", "")),
         "management_company_distinct_count": len({row.get("management_company_name", "") for row in rows if row.get("management_company_name", "")}),
         "affiliated_group_identified_count": sum(1 for row in rows if row.get("affiliated_group_name", "")),
@@ -659,6 +705,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "google_review_mirror": "https://justvisits.co.uk/",
             "registered_patients_publication": GP_REGISTERED_PATIENTS_PUBLICATION_URL,
             "registered_patients_zip": GP_REGISTERED_PATIENTS_ZIP_URL,
+            "gtd_takeover_dates": str(GTD_TAKEOVER_METADATA_JSON.relative_to(BASE_DIR)),
         },
         "supplemental_search_centers": [
             {"name": center.name, "postcode": center.postcode, "scope_note": center.scope_note}
@@ -670,6 +717,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
             "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
             "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
+            "GTD takeover dates are manually curated from official NHS / commissioner / practice sources and are intended to mark GTD's current-tenure start date for each GTD-managed practice.",
             "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
             "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
             "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
@@ -699,6 +747,7 @@ Files:
 - `google_maps_recent_reviews.json`: raw structured Google Maps capture output
 - `google_maps_manual_review.md`: ambiguous or failed captures queued for manual review
 - `google-review-texts/`: per-practice text files for any captured visible Google review text
+- `gtd_takeover_*` fields in the CSV/JSON: documented current-tenure GTD takeover dates plus source notes for GTD-managed practices
 - `management_company_*` fields in the CSV/JSON: conservative operator identification where supported by the NHS-listed website or GTD source data
 - `affiliated_group_*` fields in the CSV/JSON: separate network/federation/operator links that should not be treated as the core management company
 - `registered_patient_count` in the CSV/JSON: NHS monthly registered patient total matched by ODS code
@@ -721,6 +770,7 @@ Coverage snapshot:
 - Google review coverage rows: {summary['google_review_coverage_count']}
 - Google Maps direct coverage rows: {summary['google_maps_direct_coverage_count']}
 - Review text files written: {summary['google_review_text_file_count']}
+- GTD takeover dates documented: {summary.get('gtd_takeover_date_count', 0)}
 - Practices with management company identified: {summary.get('management_company_identified_count', 0)}
 - Distinct management companies identified: {summary.get('management_company_distinct_count', 0)}
 - Practices with affiliated group identified: {summary.get('affiliated_group_identified_count', 0)}
@@ -733,6 +783,7 @@ Coverage snapshot:
 Caveats:
 
 - Google review fields are partial. They were only populated when a high-confidence public mirror match could be identified.
+- `gtd_takeover_*` fields reflect GTD's current-tenure start date for the GTD practices in this bundle and may use month-level precision where only month/year was published.
 - `management_company_*` fields should remain blank unless the operator is identifiable from GTD source data or a clear NHS-listed website-domain grouping.
 - `affiliated_group_*` fields may capture a federation, enhanced-hours operator, or similar network relationship even where the core management company is still blank.
 - `registered_patient_count_candidate_*` fields should be treated as branch/site hints and should not be summed as if they were additional registered patients.
@@ -840,6 +891,7 @@ def build_gtd_google_score_timeseries(
     rows: list[dict[str, Any]],
     google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
 ) -> dict[str, Any]:
+    rows = apply_gtd_takeover_metadata(rows)
     anchor_date = date.today()
     if google_results_path.exists():
         anchor_date = date.fromtimestamp(google_results_path.stat().st_mtime)
@@ -930,6 +982,11 @@ def build_gtd_google_score_timeseries(
                 "points": points,
                 "parsed_review_count": practice_review_counts.get(code, 0),
                 "google_review_count": practice_google_counts.get(code),
+                "takeover_date": row.get("gtd_takeover_date", ""),
+                "takeover_precision": row.get("gtd_takeover_date_precision", ""),
+                "takeover_note": row.get("gtd_takeover_note", ""),
+                "takeover_source_label": row.get("gtd_takeover_source_label", ""),
+                "takeover_source_url": row.get("gtd_takeover_source_url", ""),
             }
         )
 
@@ -962,6 +1019,7 @@ def build_gtd_google_score_timeseries(
 
 
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
+    rows = apply_gtd_takeover_metadata(rows)
     survey_by_code = load_gp_patient_survey_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     known_management_companies = sorted(
@@ -999,6 +1057,11 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "google_text_file": row.get("google_review_text_file", ""),
                 "nhs_url": row["nhs_profile_url"],
                 "gtd_url": row["gtd_site_url"],
+                "gtd_takeover_date": row.get("gtd_takeover_date", ""),
+                "gtd_takeover_precision": row.get("gtd_takeover_date_precision", ""),
+                "gtd_takeover_note": row.get("gtd_takeover_note", ""),
+                "gtd_takeover_source_label": row.get("gtd_takeover_source_label", ""),
+                "gtd_takeover_source_url": row.get("gtd_takeover_source_url", ""),
                 "nearby": row["nearby_to_gtd_anchors"],
                 "survey_overall_good_percent": survey_metric(survey_payload, "overallexp"),
                 "survey_overall_good_ics_percent": survey_metric(survey_payload, "overallexp", "ics_percent"),
@@ -1232,6 +1295,63 @@ body {{
   width: 100%;
   overflow-x: auto;
 }}
+.trend-chart-layout {{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 14px;
+  align-items: start;
+}}
+.trend-legend {{
+  display: grid;
+  gap: 6px;
+  max-height: 360px;
+  overflow: auto;
+  padding-right: 4px;
+}}
+.trend-legend-item {{
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid rgba(26, 28, 26, 0.12);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.72);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}}
+.trend-legend-item.is-active {{
+  border-color: rgba(15, 94, 156, 0.48);
+  background: rgba(15, 94, 156, 0.09);
+  box-shadow: inset 0 0 0 1px rgba(15, 94, 156, 0.08);
+}}
+.trend-legend-item:hover {{
+  border-color: rgba(26, 28, 26, 0.24);
+}}
+.trend-legend-swatch {{
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  margin-top: 3px;
+}}
+.trend-legend-body {{
+  min-width: 0;
+}}
+.trend-legend-name {{
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+}}
+.trend-legend-meta {{
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: rgba(26, 28, 26, 0.72);
+  line-height: 1.3;
+}}
 #scatterplot {{
   width: 100%;
   height: 320px;
@@ -1403,6 +1523,13 @@ body {{
   .comparison-grid {{
     grid-template-columns: 1fr;
   }}
+  .trend-chart-layout {{
+    grid-template-columns: 1fr;
+  }}
+  .trend-legend {{
+    max-height: none;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }}
   .comparison-row {{
     grid-template-columns: 1fr;
     gap: 6px;
@@ -1443,6 +1570,9 @@ body {{
     box-shadow: none;
     border: 1px solid var(--line);
     break-inside: avoid-page;
+  }}
+  .trend-chart-layout {{
+    grid-template-columns: minmax(0, 1fr) 170px;
   }}
   .leaflet-control-container {{
     display: none;
@@ -1489,12 +1619,15 @@ body {{
     <section class="panel comparison-panel">
       <h2>GTD Google Score Over Time</h2>
       <p id="gtd-score-trend-summary" class="hint"></p>
-      <div class="chart-frame">
-        <svg id="gtd-score-trend-chart" viewBox="0 0 920 360" preserveAspectRatio="xMidYMid meet" aria-labelledby="gtd-score-trend-title" role="img">
-          <title id="gtd-score-trend-title">Approximate cumulative Google rating over time for GTD practices</title>
-        </svg>
+      <div class="trend-chart-layout">
+        <div class="chart-frame">
+          <svg id="gtd-score-trend-chart" viewBox="0 0 920 360" preserveAspectRatio="xMidYMid meet" aria-labelledby="gtd-score-trend-title" role="img">
+            <title id="gtd-score-trend-title">Approximate cumulative Google rating over time for GTD practices</title>
+          </svg>
+        </div>
+        <div id="gtd-score-trend-legend" class="trend-legend" aria-label="GTD practice legend"></div>
       </div>
-      <p class="chart-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. The bold line is the mean practice trajectory. Dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
+      <p class="chart-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The bold line is the mean practice trajectory. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
     </section>
     <section class="panel comparison-panel">
       <h2>Completion Rate vs Score</h2>
@@ -1539,6 +1672,8 @@ const selectedManagementCompanies = new Set(['GTD Healthcare']);
 let activeMetric = 'google';
 let voronoiShow = false;
 let focusedPracticeCode = NEW_BANK_CODE;
+let pinnedTrendPracticeCode = NEW_BANK_CODE;
+let hoveredTrendPracticeCode = null;
 
 const metricConfigs = {{
   google: {{
@@ -1951,6 +2086,12 @@ function popupMarkup(row) {{
   const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
   const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
   const affiliatedGroup = row.affiliated_group ? `<div>Affiliated group: ${{row.affiliated_group}}</div>` : '';
+  const takeoverDate = formatTakeoverDate(row.gtd_takeover_date, row.gtd_takeover_precision);
+  const takeoverLine = takeoverDate ? `<div>GTD takeover: ${{takeoverDate}}</div>` : '';
+  const takeoverNote = row.gtd_takeover_note ? `<div>${{row.gtd_takeover_note}}</div>` : '';
+  const takeoverSource = row.gtd_takeover_source_url
+    ? `<div><a href="${{row.gtd_takeover_source_url}}" target="_blank" rel="noreferrer">${{row.gtd_takeover_source_label || 'Takeover source'}}</a></div>`
+    : '';
   const registeredPatients = numericOrNull(row.registered_patient_count);
   const registeredPatientsLine = `<div>Registered patients: ${{registeredPatients === null ? '?' : registeredPatients.toLocaleString('en-GB')}}</div>`;
   const survey = `<div>${{formatSurvey(row)}}</div>`;
@@ -1965,6 +2106,8 @@ function popupMarkup(row) {{
     <div>Near: ${{row.nearby}}</div>
     ${{management}}
     ${{affiliatedGroup}}
+    ${{takeoverLine}}
+    ${{takeoverNote}}
     ${{registeredPatientsLine}}
     ${{google}}
     ${{googleSource}}
@@ -1974,6 +2117,7 @@ function popupMarkup(row) {{
     ${{googleText}}
     <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
     ${{gtd}}
+    ${{takeoverSource}}
   `;
 }}
 
@@ -2471,6 +2615,16 @@ function formatMonthLabel(monthIso) {{
   return value.toLocaleDateString('en-GB', {{ month: 'short', year: 'numeric' }});
 }}
 
+function formatTakeoverDate(dateIso, precision = '') {{
+  if (!dateIso) return '';
+  const value = new Date(`${{dateIso}}T00:00:00`);
+  if (Number.isNaN(value.getTime())) return dateIso;
+  const options = precision === 'month'
+    ? {{ month: 'long', year: 'numeric' }}
+    : {{ day: 'numeric', month: 'long', year: 'numeric' }};
+  return value.toLocaleDateString('en-GB', options);
+}}
+
 function linePath(points, xScale, yScale) {{
   let path = '';
   points.forEach((value, index) => {{
@@ -2484,11 +2638,13 @@ function linePath(points, xScale, yScale) {{
 function renderGtdScoreTrendChart() {{
   const svg = document.getElementById('gtd-score-trend-chart');
   const summary = document.getElementById('gtd-score-trend-summary');
+  const legend = document.getElementById('gtd-score-trend-legend');
   const months = gtdGoogleTimeseries.months || [];
   const practiceSeries = gtdGoogleTimeseries.practice_series || [];
   const averageSeries = gtdGoogleTimeseries.average_series || [];
   if (!months.length || !practiceSeries.length) {{
     svg.innerHTML = '';
+    legend.innerHTML = '';
     summary.textContent = `No GTD Google review history is available yet in the current scrape output.`;
     return;
   }}
@@ -2511,27 +2667,101 @@ function renderGtdScoreTrendChart() {{
     '#6c8ebf', '#b67b4d', '#5f9b6b', '#9d6aa8', '#b35656', '#4f8f95', '#8c7a52',
     '#9070b2', '#4f7f5b', '#bf6f91', '#7d8ab5', '#6d8f43', '#af7b52'
   ];
-
-  const practicePaths = practiceSeries.map((series, index) => {{
-    const d = linePath(series.points || [], xScale, yScale);
-    if (!d) return '';
-    const color = palette[index % palette.length];
-    const finalPoint = [...(series.points || [])].reverse().find((value) => value !== null && Number.isFinite(value));
-    const finalText = finalPoint === undefined ? '?' : finalPoint.toFixed(2);
+  const fractionalMonthIndex = (dateIso) => {{
+    if (!dateIso) return null;
+    const target = new Date(`${{dateIso}}T00:00:00`);
+    const first = new Date(`${{months[0]}}T00:00:00`);
+    if (Number.isNaN(target.getTime()) || Number.isNaN(first.getTime())) return null;
+    const monthDelta = (target.getUTCFullYear() - first.getUTCFullYear()) * 12 + (target.getUTCMonth() - first.getUTCMonth());
+    const daysInMonth = new Date(Date.UTC(target.getUTCFullYear(), target.getUTCMonth() + 1, 0)).getUTCDate() || 31;
+    const dayFraction = Math.max(0, Math.min(0.999, ((target.getUTCDate() || 1) - 1) / daysInMonth));
+    return monthDelta + dayFraction;
+  }};
+  const practiceEntries = practiceSeries.map((series, index) => {{
+    const points = series.points || [];
+    const lastIndex = points.reduce((memo, value, pointIndex) => (
+      value !== null && Number.isFinite(value) ? pointIndex : memo
+    ), -1);
+    const lastValue = lastIndex >= 0 ? points[lastIndex] : null;
+    const rawTakeoverIndex = fractionalMonthIndex(series.takeover_date);
+    const takeoverIndex = rawTakeoverIndex === null
+      ? null
+      : Math.max(0, Math.min(months.length - 1, rawTakeoverIndex));
+    return {{
+      series,
+      color: palette[index % palette.length],
+      path: linePath(points, xScale, yScale),
+      lastIndex,
+      lastValue,
+      rawTakeoverIndex,
+      takeoverIndex,
+    }};
+  }}).filter((entry) => entry.path);
+  const availableCodes = new Set(practiceEntries.map((entry) => entry.series.code));
+  if (hoveredTrendPracticeCode && !availableCodes.has(hoveredTrendPracticeCode)) {{
+    hoveredTrendPracticeCode = null;
+  }}
+  if (pinnedTrendPracticeCode && !availableCodes.has(pinnedTrendPracticeCode)) {{
+    pinnedTrendPracticeCode = null;
+  }}
+  const activeCode = hoveredTrendPracticeCode || pinnedTrendPracticeCode;
+  const activeEntry = practiceEntries.find((entry) => entry.series.code === activeCode) || null;
+  const dimInactive = Boolean(activeEntry);
+  const pathOpacity = (entry) => !dimInactive ? 0.46 : entry.series.code === activeEntry.series.code ? 0.96 : 0.12;
+  const markerOpacity = (entry) => !dimInactive ? 0.26 : entry.series.code === activeEntry.series.code ? 0.9 : 0.12;
+  const strokeWidth = (entry) => entry.series.code === activeCode ? 2.8 : 1.35;
+  const pointRadius = (entry) => entry.series.code === activeCode ? 4.8 : 3.1;
+  const practicePaths = practiceEntries.map((entry) => {{
+    const finalText = entry.lastValue === null ? '?' : entry.lastValue.toFixed(2);
+    const titleSuffix = entry.series.takeover_date
+      ? ` Takeover: ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}.`
+      : '';
     return `
-      <path d="${{d}}" fill="none" stroke="${{color}}" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4">
-        <title>${{series.name}} · latest reconstructed average ${{finalText}} from ${{series.parsed_review_count || 0}} parsed reviews</title>
+      <path d="${{entry.path}}" fill="none" stroke="${{entry.color}}" stroke-width="${{strokeWidth(entry)}}" stroke-linecap="round" stroke-linejoin="round" opacity="${{pathOpacity(entry).toFixed(2)}}">
+        <title>${{entry.series.name}} · latest reconstructed average ${{finalText}} from ${{entry.series.parsed_review_count || 0}} parsed reviews.${{titleSuffix}}</title>
       </path>
     `;
   }}).join('');
+  const endMarkers = practiceEntries
+    .filter((entry) => entry.lastIndex >= 0 && entry.lastValue !== null)
+    .map((entry) => `
+      <circle cx="${{xScale(entry.lastIndex).toFixed(2)}}" cy="${{yScale(entry.lastValue).toFixed(2)}}" r="${{pointRadius(entry).toFixed(2)}}" fill="${{entry.color}}" opacity="${{Math.max(pathOpacity(entry), 0.24).toFixed(2)}}" stroke="rgba(255,255,255,0.92)" stroke-width="${{entry.series.code === activeCode ? '1.8' : '1.1'}}">
+        <title>${{entry.series.name}} latest reconstructed rating: ${{entry.lastValue.toFixed(2)}}</title>
+      </circle>
+    `).join('');
+  const takeoverMarkers = practiceEntries.map((entry) => {{
+    if (entry.takeoverIndex === null) return '';
+    const markerX = xScale(entry.takeoverIndex);
+    const timingNote = entry.rawTakeoverIndex < 0
+      ? 'Takeover predates the visible review timeline'
+      : entry.rawTakeoverIndex > months.length - 1
+        ? 'Takeover is after the visible review timeline'
+        : 'Takeover within the visible review timeline';
+    return `
+      <line x1="${{markerX.toFixed(2)}}" y1="${{margin.top}}" x2="${{markerX.toFixed(2)}}" y2="${{height - margin.bottom}}" stroke="${{entry.color}}" stroke-width="${{entry.series.code === activeCode ? '2.2' : '1.2'}}" stroke-dasharray="4 4" opacity="${{markerOpacity(entry).toFixed(2)}}">
+        <title>${{entry.series.name}} takeover: ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}. ${{timingNote}}. ${{entry.series.takeover_note || entry.series.takeover_source_label || 'Official GTD takeover source'}}</title>
+      </line>
+    `;
+  }}).join('');
+  const activeTakeoverMarkup = activeEntry && activeEntry.takeoverIndex !== null
+    ? (() => {{
+        const label = `Takeover ${{formatTakeoverDate(activeEntry.series.takeover_date, activeEntry.series.takeover_precision)}}`;
+        const markerX = xScale(activeEntry.takeoverIndex);
+        const labelX = Math.max(margin.left + 78, Math.min(width - margin.right - 78, markerX));
+        return `
+          <rect x="${{(labelX - 78).toFixed(2)}}" y="${{(margin.top + 6).toFixed(2)}}" width="156" height="22" rx="11" fill="rgba(255,255,255,0.90)" stroke="${{activeEntry.color}}" stroke-opacity="0.45"></rect>
+          <text x="${{labelX.toFixed(2)}}" y="${{(margin.top + 21).toFixed(2)}}" text-anchor="middle" font-size="11" font-weight="700" fill="${{activeEntry.color}}">${{label}}</text>
+        `;
+      }})()
+    : '';
 
   const averagePath = linePath(averageSeries, xScale, yScale);
   const averageFinal = [...averageSeries].reverse().find((value) => value !== null && Number.isFinite(value));
   const averageFinalIndex = averageSeries.reduce((lastIndex, value, index) => (value !== null && Number.isFinite(value) ? index : lastIndex), -1);
   const averageMarker = averageFinalIndex >= 0 && averageFinal !== undefined
     ? `
-      <circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)"></circle>
-      <text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" font-weight="700">GTD mean ${{averageFinal.toFixed(2)}}</text>
+      <circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)" opacity="${{dimInactive ? '0.74' : '1'}}"></circle>
+      <text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{averageFinal.toFixed(2)}}</text>
     `
     : '';
 
@@ -2547,19 +2777,73 @@ function renderGtdScoreTrendChart() {{
     `).join('')}}
     <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{takeoverMarkers}}
     ${{practicePaths}}
-    <path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>
     ${{averageMarker}}
+    ${{endMarkers}}
+    ${{activeTakeoverMarkup}}
     <text x="${{width / 2}}" y="${{height - 10}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Approximate review month</text>
     <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">Reconstructed cumulative Google rating</text>
   `;
+  legend.innerHTML = practiceEntries.map((entry) => {{
+    const latestText = entry.lastValue === null ? 'No latest score' : `Latest ${{entry.lastValue.toFixed(2)}}`;
+    const takeoverText = entry.series.takeover_date
+      ? `Takeover ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}`
+      : 'Takeover date pending';
+    const isActive = entry.series.code === activeCode;
+    return `
+      <button
+        type="button"
+        class="trend-legend-item${{isActive ? ' is-active' : ''}}"
+        data-practice-code="${{entry.series.code}}"
+        aria-pressed="${{isActive ? 'true' : 'false'}}"
+        title="${{entry.series.name}}. ${{latestText}}. ${{takeoverText}}."
+      >
+        <span class="trend-legend-swatch" style="background:${{entry.color}}"></span>
+        <span class="trend-legend-body">
+          <span class="trend-legend-name">${{entry.series.name}}</span>
+          <span class="trend-legend-meta">${{latestText}} · ${{takeoverText}}</span>
+        </span>
+      </button>
+    `;
+  }}).join('');
+  legend.querySelectorAll('[data-practice-code]').forEach((button) => {{
+    const code = button.getAttribute('data-practice-code');
+    button.addEventListener('mouseenter', () => {{
+      if (hoveredTrendPracticeCode === code) return;
+      hoveredTrendPracticeCode = code;
+      renderGtdScoreTrendChart();
+    }});
+    button.addEventListener('mouseleave', () => {{
+      if (hoveredTrendPracticeCode !== code) return;
+      hoveredTrendPracticeCode = null;
+      renderGtdScoreTrendChart();
+    }});
+    button.addEventListener('focus', () => {{
+      hoveredTrendPracticeCode = code;
+      renderGtdScoreTrendChart();
+    }});
+    button.addEventListener('blur', () => {{
+      if (hoveredTrendPracticeCode !== code) return;
+      hoveredTrendPracticeCode = null;
+      renderGtdScoreTrendChart();
+    }});
+    button.addEventListener('click', () => {{
+      pinnedTrendPracticeCode = pinnedTrendPracticeCode === code ? null : code;
+      renderGtdScoreTrendChart();
+    }});
+  }});
 
   const missingPractices = (gtdGoogleTimeseries.missing_practices || []).map((item) => item.name).filter(Boolean);
   const missingSuffix = missingPractices.length
     ? ` ${{missingPractices.length}} GTD practice${{missingPractices.length === 1 ? '' : 's'}} still have no usable dated review history in the scrape: ${{missingPractices.join(', ')}}.`
     : '';
+  const activeSummary = !activeEntry
+    ? ' Hover a practice in the side legend to isolate its track and takeover marker, or click to pin it.'
+    : ` Highlighted: ${{activeEntry.series.name}}. Latest reconstructed score is ${{activeEntry.lastValue === null ? '?' : activeEntry.lastValue.toFixed(2)}}${{activeEntry.series.takeover_date ? `, with GTD takeover on ${{formatTakeoverDate(activeEntry.series.takeover_date, activeEntry.series.takeover_precision)}}.` : '.'}}`;
   summary.textContent =
-    `${{gtdGoogleTimeseries.practices_with_review_history}} of ${{gtdGoogleTimeseries.gtd_practice_count}} GTD practices contribute to this chart, based on ${{gtdGoogleTimeseries.parsed_review_count}} parsed Google review dates and ratings. Thin lines are practice-level reconstructed cumulative averages; the bold line is the mean of available practice trajectories. Relative dates are anchored to the scrape file timestamp ${{gtdGoogleTimeseries.anchor_date}}.${{missingSuffix}}`;
+    `${{gtdGoogleTimeseries.practices_with_review_history}} of ${{gtdGoogleTimeseries.gtd_practice_count}} GTD practices contribute to this chart, based on ${{gtdGoogleTimeseries.parsed_review_count}} parsed Google review dates and ratings. Thin lines are practice-level reconstructed cumulative averages, dashed vertical lines mark documented GTD takeover dates, and the bold line is the mean of available practice trajectories. Relative dates are anchored to the scrape file timestamp ${{gtdGoogleTimeseries.anchor_date}}.${{activeSummary}}${{missingSuffix}}`;
 }}
 
 function rerenderAll() {{
@@ -2606,7 +2890,7 @@ rerenderAll();
 
 
 def main() -> int:
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     rows = build_dataset()
     write_csv(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv", rows)
     write_json(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.json", rows)

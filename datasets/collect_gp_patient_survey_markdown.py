@@ -15,9 +15,10 @@ from urllib.request import Request, urlopen
 
 
 BASE_URL = "https://www.gp-patient.co.uk"
-RAW_OUTPUT_DIR = Path("gp_patient_survey_raw")
-SUMMARY_MD = Path("gp_patient_survey_focus.md")
-DATASET_JSON = Path("gtd-greater-manchester-gp-practice-reviews-2026-03-09/gtd_greater_manchester_gp_practices.json")
+BASE_DIR = Path(__file__).resolve().parent
+RAW_OUTPUT_DIR = BASE_DIR / "raw" / "gp_patient_survey"
+SUMMARY_MD = BASE_DIR / "docs" / "gp_patient_survey_focus.md"
+DATASET_JSON = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "gtd_greater_manchester_gp_practices.json"
 USER_AGENT = "Mozilla/5.0 (compatible; Codex GP Patient Survey collector/1.0)"
 ACTIVE_PROJECT = 16
 TOP_LEVEL_ENDPOINTS = {

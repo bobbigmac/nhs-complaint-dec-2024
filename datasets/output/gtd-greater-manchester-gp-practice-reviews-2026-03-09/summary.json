@@ -8,6 +8,7 @@
   "google_review_coverage_count": 424,
   "google_maps_direct_coverage_count": 414,
   "google_review_text_file_count": 367,
+  "gtd_takeover_date_count": 13,
   "management_company_identified_count": 69,
   "management_company_distinct_count": 17,
   "affiliated_group_identified_count": 10,
@@ -105,7 +106,8 @@
     "postcode_geocoder": "https://api.postcodes.io/",
     "google_review_mirror": "https://justvisits.co.uk/",
     "registered_patients_publication": "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026",
-    "registered_patients_zip": "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
+    "registered_patients_zip": "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip",
+    "gtd_takeover_dates": "config/gtd_takeover_dates.json"
   },
   "supplemental_search_centers": [
     {
@@ -190,6 +192,7 @@
     "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
     "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
     "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
+    "GTD takeover dates are manually curated from official NHS / commissioner / practice sources and are intended to mark GTD's current-tenure start date for each GTD-managed practice.",
     "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
     "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
     "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",

@@ -16,8 +16,8 @@ It keeps only the access and satisfaction signals that are most relevant to the 
 ## Run Metadata
 
 - generated_date: `2026-03-10`
-- source_dataset: `gtd-greater-manchester-gp-practice-reviews-2026-03-09/gtd_greater_manchester_gp_practices.json`
-- raw_output_dir: `gp_patient_survey_raw`
+- source_dataset: `output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/gtd_greater_manchester_gp_practices.json`
+- raw_output_dir: `raw/gp_patient_survey`
 - total_records: `67`
 - successful_records: `67`
 - failed_records: `0`
