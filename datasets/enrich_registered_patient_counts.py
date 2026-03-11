@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 
 from build_gtd_gp_practice_dataset import (
     OUTPUT_DIR,
-    ensure_registered_patients_cache,
+    ensure_registered_patients_csv,
     fetch_text,
     write_csv,
     write_json,
@@ -54,7 +54,7 @@ def website_host(url: str) -> str:
 def load_registered_patient_rows() -> tuple[dict[str, int], dict[str, list[dict[str, str]]]]:
     direct_by_code: dict[str, int] = {}
     by_postcode: dict[str, list[dict[str, str]]] = {}
-    with ensure_registered_patients_cache().open(newline="", encoding="utf-8-sig") as handle:
+    with ensure_registered_patients_csv().open(newline="", encoding="utf-8-sig") as handle:
         reader = csv.DictReader(handle)
         for row in reader:
             if row.get("SEX") != "ALL" or row.get("AGE") != "ALL":

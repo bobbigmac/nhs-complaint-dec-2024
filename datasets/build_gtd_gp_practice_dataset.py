@@ -25,7 +25,7 @@ GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "raw" / "gp_patient_survey"
 GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
 GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_branch_parent_codes.json"
-GP_REGISTERED_PATIENTS_CACHE = BASE_DIR / ".cache" / "gp-reg-pat-prac-all.csv"
+GP_REGISTERED_PATIENTS_CSV = BASE_DIR / "raw" / "registered_patients" / "gp-reg-pat-prac-all.csv"
 GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
 GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
 RADIUS_MILES = 5.0
@@ -168,11 +168,11 @@ def apply_gtd_takeover_metadata(rows: list[dict[str, Any]]) -> list[dict[str, An
     return enriched_rows
 
 
-def ensure_registered_patients_cache(cache_path: Path = GP_REGISTERED_PATIENTS_CACHE) -> Path:
-    if cache_path.exists():
-        return cache_path
-    cache_path.parent.mkdir(parents=True, exist_ok=True)
-    with NamedTemporaryFile(suffix=".zip", delete=False, dir=cache_path.parent) as handle:
+def ensure_registered_patients_csv(csv_path: Path = GP_REGISTERED_PATIENTS_CSV) -> Path:
+    if csv_path.exists():
+        return csv_path
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    with NamedTemporaryFile(suffix=".zip", delete=False, dir=csv_path.parent) as handle:
         temp_zip_path = Path(handle.name)
     try:
         subprocess.run(
@@ -201,14 +201,14 @@ def ensure_registered_patients_cache(cache_path: Path = GP_REGISTERED_PATIENTS_C
             csv_names = [name for name in archive.namelist() if name.lower().endswith(".csv")]
             if not csv_names:
                 raise RuntimeError("Registered patients zip did not contain a CSV file")
-            cache_path.write_bytes(archive.read(csv_names[0]))
+            csv_path.write_bytes(archive.read(csv_names[0]))
     finally:
         temp_zip_path.unlink(missing_ok=True)
-    return cache_path
+    return csv_path
 
 
-def load_registered_patient_index(cache_path: Path = GP_REGISTERED_PATIENTS_CACHE) -> dict[str, int]:
-    source_path = ensure_registered_patients_cache(cache_path)
+def load_registered_patient_index(csv_path: Path = GP_REGISTERED_PATIENTS_CSV) -> dict[str, int]:
+    source_path = ensure_registered_patients_csv(csv_path)
     patient_counts: dict[str, int] = {}
     with source_path.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
