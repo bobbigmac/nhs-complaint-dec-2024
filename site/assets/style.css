@@ -198,6 +198,11 @@ a {
   margin-top: 24px;
 }
 
+.page-sections {
+  display: grid;
+  gap: 24px;
+}
+
 .prose-card {
   padding: 30px 32px;
 }
@@ -264,34 +269,155 @@ a {
   line-height: 1.14;
 }
 
-.evidence-grid {
+.evidence-grid,
+.reference-list,
+.resource-stack {
   display: grid;
   gap: 12px;
   margin-top: 18px;
 }
 
-.evidence-card {
+.action-card,
+.doc-card {
   padding: 14px 14px 12px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(31, 29, 27, 0.08);
 }
 
-.evidence-card h3 {
+.action-card h3,
+.doc-card h5 {
   margin: 0;
   font-family: "Avenir Next", "Trebuchet MS", sans-serif;
   font-size: 1rem;
 }
 
-.evidence-card h3 a {
-  color: var(--accent-strong);
-  text-decoration: none;
-}
-
-.evidence-card p {
+.action-card p,
+.doc-card p,
+.section-heading p,
+.issue-summary,
+.issue-work li {
   margin: 8px 0 0;
   font-size: 0.94rem;
   line-height: 1.6;
+  color: var(--muted);
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.link-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 29, 27, 0.12);
+  text-decoration: none;
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.link-pill-primary {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.link-pill-secondary {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+}
+
+.section-heading {
+  padding: 0 6px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.issue-section {
+  display: grid;
+  gap: 18px;
+}
+
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.issue-panel {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.issue-header {
+  display: grid;
+  gap: 8px;
+}
+
+.issue-kicker {
+  margin: 0;
+  font-family: "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.issue-panel h3 {
+  margin: 0;
+  font-size: 1.62rem;
+  line-height: 1.08;
+}
+
+.issue-summary {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.issue-body {
+  display: grid;
+  gap: 18px;
+}
+
+.issue-block {
+  display: grid;
+  gap: 12px;
+}
+
+.issue-block h4 {
+  margin: 0;
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.issue-work {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.issue-work li {
+  margin-top: 0;
 }
 
 .shared-purpose {
@@ -325,6 +451,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .issue-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero h1 {
     max-width: none;
   }
@@ -346,6 +476,11 @@ a {
   .hero-copy,
   .prose-card {
     padding: 24px 20px;
+  }
+
+  .issue-panel {
+    padding: 22px 20px;
+    border-radius: 22px;
   }
 
   .hero-panel,

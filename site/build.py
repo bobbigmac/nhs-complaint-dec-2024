@@ -10,6 +10,7 @@ import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Iterable
+from urllib.parse import quote
 
 
 SITE_DIR = Path(__file__).resolve().parent
@@ -17,6 +18,220 @@ REPO_ROOT = SITE_DIR.parent
 DATASET_OUTPUT_DIR = REPO_ROOT / "datasets" / "output"
 REPORT_GLOB = "gtd-greater-manchester-gp-practice-reviews-*"
 DEFAULT_OUT_DIR = SITE_DIR / "dist"
+FILES_DIR_NAME = "files"
+TOOLS_DIR_NAME = "tools"
+TOOL_VIEWER_PATH = f"{TOOLS_DIR_NAME}/markdown-print-viewer.html"
+
+
+ISSUE_SECTIONS: list[dict[str, object]] = [
+    {
+        "number": "Issue 1",
+        "title": "Digital front door and office-hours gating",
+        "summary": (
+            "Appointment access is still shaped by a rigid digital front door: office-hours gating, "
+            "website closures and routes that are much easier for the system than for the patient."
+        ),
+        "work": [
+            "Tracked the local blockers in meeting packs instead of treating them as one-off bad experiences.",
+            "Built an external evidence pack showing that website shutoffs, capped forms and digital exclusion are wider NHS access problems.",
+            "Kept printable packs ready for meetings so the ask stays focused on always-available intake and a real non-digital fallback.",
+        ],
+        "resources": [
+            {
+                "title": "Meeting 4 goals",
+                "description": "The clearest current statement of the local access ask, the partial progress, and the blockers that remain.",
+                "files": [
+                    {"label": "Markdown", "source": "meetings-notes/2026-01-04-meeting4/meeting4-goals.md"},
+                    {"label": "PDF printoff", "source": "meetings-notes/2026-01-04-meeting4/printoffs/New Bank Health Centre – PPG Meeting 4 Goals.pdf"},
+                ],
+            },
+            {
+                "title": "Wider GP access evidence pack",
+                "description": "Grouped evidence on website shutoffs, phone bottlenecks and digital barriers from outside New Bank.",
+                "files": [
+                    {"label": "Markdown", "source": "meetings-notes/2026-01-04-meeting4/GP Access Evidence - Websites triage and digital barriers.md"},
+                ],
+            },
+            {
+                "title": "Nov 2025 printable access pack",
+                "description": "A meeting-ready PDF pack covering website failures, out-of-hours closure and minimum fixes.",
+                "files": [
+                    {"label": "PDF pack", "source": "meetings-notes/2025-11-26-meeting3/send-to-gtd-team-pre-nov26/GP Access Issues - Evidence Pack - 26 Nov 2025 Bob Davies.pdf"},
+                ],
+            },
+        ],
+    },
+    {
+        "number": "Issue 2",
+        "title": "Restart loops and continuity loss",
+        "summary": (
+            "A missed call, a closed request or a partial follow-up can dump the patient back at the start. "
+            "That turns access friction into delay, churn and lost continuity."
+        ),
+        "work": [
+            "Logged a direct patient timeline showing how unscheduled calls and incomplete follow-up create repeated failure points.",
+            "Framed the problem as hidden exclusion and demand loss, not just inconvenience.",
+            "Kept early and later complaint documents side by side so it is clear what changed and what did not.",
+        ],
+        "resources": [
+            {
+                "title": "Patient experience timeline",
+                "description": "A first-person account of repeated failed attempts, mandatory calls and weak follow-up after tests.",
+                "files": [
+                    {"label": "Markdown", "source": "My-new-bank-experience.md"},
+                ],
+            },
+            {
+                "title": "Exclusion questions",
+                "description": "Checks and metrics for spotting the patients who are lost before they ever show up in the usual data.",
+                "files": [
+                    {"label": "Markdown", "source": "Exclusion-questions.md"},
+                ],
+            },
+            {
+                "title": "Original complaint",
+                "description": "The baseline complaint document from December 2024, updated as the problem continued.",
+                "files": [
+                    {"label": "Markdown", "source": "ORIGINAL_COMPLAINT.md"},
+                ],
+            },
+        ],
+    },
+    {
+        "number": "Issue 3",
+        "title": "Reception pressure, patient blame and review signals",
+        "summary": (
+            "Review patterns point to a front door that can feel rude, dismissive or brittle under pressure. "
+            "The project treats that as a workflow and management signal, not just a tone problem."
+        ),
+        "work": [
+            "Collected and grouped review extracts from New Bank rather than relying on vague anecdotes.",
+            "Wrote a longer note on patient blame, friction-as-rationing and why missed steps should not be treated as moral failure.",
+            "Drafted practical guidance for responding to reviews in a way that supports learning instead of defensiveness.",
+        ],
+        "resources": [
+            {
+                "title": "Patient blame note",
+                "description": "Long-form framing on access friction, patient blame and why the current model sheds the least-resourced patients first.",
+                "files": [
+                    {"label": "Markdown", "source": "meetings-notes/2026-01-04-meeting4/PatientBlaming-README.md"},
+                ],
+            },
+            {
+                "title": "Review extracts",
+                "description": "A working markdown extract of appointment and reception-related Google review themes.",
+                "files": [
+                    {"label": "Markdown", "source": "reviews/parsed-reviews-og-parsed-2yrs.md"},
+                ],
+            },
+            {
+                "title": "PATCHS review printoff",
+                "description": "Printable PDF summary of low-star PATCHS reviews, useful where the workflow problem is broader than one surgery.",
+                "files": [
+                    {"label": "PDF printoff", "source": "reviews/PATCHS/output reports/PATCHS 1-2-3 Star Reviews with Summary Panel Landscape.pdf"},
+                ],
+            },
+            {
+                "title": "Reviews management guide",
+                "description": "A practical note on claiming the Google listing and turning review replies into useful operational work.",
+                "files": [
+                    {"label": "Markdown", "source": "meetings-notes/2026-01-04-meeting4/reviews-management.md"},
+                ],
+            },
+        ],
+    },
+    {
+        "number": "Issue 4",
+        "title": "Benchmarking, survey gaps and portfolio pattern",
+        "summary": (
+            "Single complaints are easy to dismiss. The project compares New Bank with survey results, nearby practices "
+            "and GTD's wider footprint to show the pattern more honestly."
+        ),
+        "work": [
+            "Broke down GP Patient Survey gateway questions and highlighted where the survey likely misses the people who gave up.",
+            "Built quick comparison material for meeting use, including workload context, local comparators and GTD portfolio signals.",
+            "Published a Greater Manchester map bundle so review scores, survey data and takeover context can be read together.",
+        ],
+        "resources": [
+            {
+                "title": "Patient survey breakdown",
+                "description": "A focused reading of the New Bank survey results, especially the gateway failures at the point of contact.",
+                "files": [
+                    {"label": "Markdown", "source": "patient survey breakdown/PatientSurveyBreakdown.md"},
+                ],
+            },
+            {
+                "title": "Benchmarks summary",
+                "description": "A short reference sheet on practice size, workload, access pressures and GTD comparison points.",
+                "files": [
+                    {"label": "Markdown", "source": "meetings-notes/2025-09-10-meeting2/benchmarks-summary-sept-10.md"},
+                    {"label": "PDF printoff", "source": "meetings-notes/2025-09-10-meeting2/nbhc-ppg_meeting-sept-10_benchmarks-summary-bobdavies.pdf"},
+                ],
+            },
+            {
+                "title": "Google vs patient survey gap",
+                "description": "The portfolio-level PDF showing how public review signals and survey results diverge across Greater Manchester.",
+                "files": [
+                    {"label": "PDF analysis", "source": "google-vs-patient-survey/GTD Greater Manchester GP Practice Experience - Google vs Patient Survey Gap.pdf"},
+                ],
+            },
+        ],
+    },
+    {
+        "number": "Issue 5",
+        "title": "Governance, complaint routes and change tracking",
+        "summary": (
+            "Some of the work is evidence-gathering, but some of it is about making sure there is a usable route for "
+            "change, scrutiny and escalation when the local process stalls."
+        ),
+        "work": [
+            "Reviewed the PPG terms as an access problem in their own right, not just an admin detail.",
+            "Mapped escalation routes beyond GTD for access and digital exclusion issues.",
+            "Maintained a repo-level overview so meeting packs, printouts and timelines stay linked together instead of drifting apart.",
+        ],
+        "resources": [
+            {
+                "title": "PPG terms review",
+                "description": "Review of the draft PPG terms and why a harder front door can make patient participation weaker, not stronger.",
+                "files": [
+                    {"label": "Markdown", "source": "PPG-terms-review/PPG-terms-review.md"},
+                    {"label": "PDF printoff", "source": "PPG-terms-review/PPG Terms review - Bob Davies - 2026-feb-10.pdf"},
+                ],
+            },
+            {
+                "title": "Escalation ladder",
+                "description": "Practical routes beyond the practice for access barriers, digital exclusion and contract-management pressure.",
+                "files": [
+                    {"label": "Markdown", "source": "ESCALATION.md"},
+                ],
+            },
+            {
+                "title": "Project overview",
+                "description": "A repo map and chronology showing how the evidence packs, meeting notes and tools fit together.",
+                "files": [
+                    {"label": "Markdown", "source": "OVERVIEW.md"},
+                ],
+            },
+        ],
+    },
+]
+
+REFERENCE_DOCS: list[dict[str, object]] = [
+    {
+        "title": "README",
+        "description": "The wider repo overview and the longer list of packs, notes and supporting material behind this homepage.",
+        "files": [
+            {"label": "Markdown", "source": "README.md"},
+        ],
+    },
+    {
+        "title": "Objectives",
+        "description": "The short statement of aims, success criteria and the two-track strategy behind the project.",
+        "files": [
+            {"label": "Markdown", "source": "OBJECTIVES.md"},
+        ],
+    },
+]
 
 
 def find_latest_report_dir() -> Path:
@@ -141,22 +356,152 @@ def build_stat_cards(summary: dict[str, object]) -> str:
     )
 
 
-def build_evidence_cards(report_dir_name: str) -> str:
-    links = [
-        ("Interactive map", "Explore the latest map, comparison panels, takeover markers and practice popups.", "map/map.html"),
-        ("Summary JSON", "Quick machine-readable snapshot of scope, coverage and counts.", "map/summary.json"),
-        ("Practice CSV", "Flattened dataset for spreadsheet work or offline review.", "map/gtd_greater_manchester_gp_practices.csv"),
-        ("Practice JSON", "Structured dataset for scripting, filtering and reuse.", "map/gtd_greater_manchester_gp_practices.json"),
-        ("Download bundle", f"Zip archive of the full {report_dir_name} report bundle.", f"downloads/{report_dir_name}.zip"),
+def href_for_site_path(site_path: str) -> str:
+    return quote(site_path, safe="/")
+
+
+def markdown_print_href(site_path: str) -> str:
+    return f"{TOOL_VIEWER_PATH}?source={quote('../' + site_path, safe='/')}"
+
+
+def collect_published_sources() -> list[Path]:
+    sources: dict[str, Path] = {}
+    for section in ISSUE_SECTIONS:
+        for resource in section["resources"]:
+            for file_meta in resource["files"]:
+                source = REPO_ROOT / str(file_meta["source"])
+                sources[str(source)] = source
+    for resource in REFERENCE_DOCS:
+        for file_meta in resource["files"]:
+            source = REPO_ROOT / str(file_meta["source"])
+            sources[str(source)] = source
+    return sorted(sources.values(), key=lambda path: path.as_posix())
+
+
+def publish_supporting_files(out_dir: Path) -> dict[str, str]:
+    published: dict[str, str] = {}
+    for source in collect_published_sources():
+        if not source.exists():
+            raise FileNotFoundError(f"Supporting file not found: {source}")
+        relative = source.relative_to(REPO_ROOT)
+        site_path = f"{FILES_DIR_NAME}/{relative.as_posix()}"
+        destination = out_dir / site_path
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)
+        published[relative.as_posix()] = site_path
+
+    tool_source = REPO_ROOT / "markdown-print-viewer.html"
+    tool_destination = out_dir / TOOL_VIEWER_PATH
+    tool_destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(tool_source, tool_destination)
+    return published
+
+
+def build_link_pills(links: Iterable[tuple[str, str, str]]) -> str:
+    return "".join(
+        f'<a class="link-pill link-pill-{html.escape(variant)}" href="{html.escape(href, quote=True)}">{html.escape(label)}</a>'
+        for label, href, variant in links
+    )
+
+
+def build_document_cards(resources: Iterable[dict[str, object]], published_files: dict[str, str]) -> str:
+    cards: list[str] = []
+    for resource in resources:
+        links: list[tuple[str, str, str]] = []
+        for file_meta in resource["files"]:
+            source_key = str(file_meta["source"])
+            site_path = published_files[source_key]
+            links.append((str(file_meta["label"]), href_for_site_path(site_path), "primary"))
+            if site_path.endswith(".md"):
+                links.append(("Print view", markdown_print_href(site_path), "secondary"))
+        cards.append(
+            f"""
+            <article class="doc-card">
+              <h5>{html.escape(str(resource["title"]))}</h5>
+              <p>{html.escape(str(resource["description"]))}</p>
+              <div class="link-row">
+                {build_link_pills(links)}
+              </div>
+            </article>
+            """.strip()
+        )
+    return "\n".join(cards)
+
+
+def build_issue_panels(published_files: dict[str, str]) -> str:
+    panels: list[str] = []
+    for section in ISSUE_SECTIONS:
+        work_items = "".join(f"<li>{html.escape(str(item))}</li>" for item in section["work"])
+        resources_html = build_document_cards(section["resources"], published_files)
+        panels.append(
+            f"""
+            <article class="issue-panel">
+              <div class="issue-header">
+                <p class="issue-kicker">{html.escape(str(section["number"]))}</p>
+                <h3>{html.escape(str(section["title"]))}</h3>
+              </div>
+              <p class="issue-summary">{html.escape(str(section["summary"]))}</p>
+              <div class="issue-body">
+                <section class="issue-block">
+                  <h4>What this work covers</h4>
+                  <ul class="issue-work">
+                    {work_items}
+                  </ul>
+                </section>
+                <section class="issue-block">
+                  <h4>Best supporting documents</h4>
+                  <div class="resource-stack">
+                    {resources_html}
+                  </div>
+                </section>
+              </div>
+            </article>
+            """.strip()
+        )
+    return "\n".join(panels)
+
+
+def build_reference_cards(published_files: dict[str, str]) -> str:
+    return build_document_cards(REFERENCE_DOCS, published_files)
+
+
+def build_action_cards(report_dir_name: str) -> str:
+    cards = [
+        {
+            "title": "Interactive map",
+            "description": "Open the latest Greater Manchester comparison map with review, survey and takeover context.",
+            "links": [("Open map", "map/map.html", "primary")],
+        },
+        {
+            "title": "Latest bundle",
+            "description": "Download the full packaged report bundle for offline review, sharing or archive.",
+            "links": [("Download zip", f"downloads/{report_dir_name}.zip", "primary")],
+        },
+        {
+            "title": "Map bundle notes",
+            "description": "Read the generated README inside the current map bundle if you want the data notes before opening files.",
+            "links": [
+                ("Markdown", "map/README.md", "primary"),
+                ("Print view", markdown_print_href("map/README.md"), "secondary"),
+            ],
+        },
+        {
+            "title": "Markdown print viewer",
+            "description": "Open the bundled utility for printing markdown evidence, or use the per-document Print view links below.",
+            "links": [("Open tool", TOOL_VIEWER_PATH, "primary")],
+        },
     ]
     return "\n".join(
         f"""
-        <article class="evidence-card">
-          <h3><a href="{html.escape(href, quote=True)}">{html.escape(title)}</a></h3>
-          <p>{html.escape(description)}</p>
+        <article class="action-card">
+          <h3>{html.escape(str(card["title"]))}</h3>
+          <p>{html.escape(str(card["description"]))}</p>
+          <div class="link-row">
+            {build_link_pills((label, href, variant) for label, href, variant in card["links"])}
+          </div>
         </article>
         """.strip()
-        for title, description, href in links
+        for card in cards
     )
 
 
@@ -194,17 +539,21 @@ def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> N
     updated_value = summary.get("generated_date") or datetime.now(UTC).date().isoformat()
     home_markdown = (SITE_DIR / "content" / "home.md").read_text(encoding="utf-8")
     body_html = markdown_to_html(home_markdown)
+    published_files = publish_supporting_files(out_dir)
     page_html = replace_tokens(
         template,
         {
-            "PAGE_TITLE": "NHS Access Evidence and Recovery",
+            "PAGE_TITLE": "New Bank Access Evidence",
             "UPDATED_DATE": html.escape(str(updated_value)),
             "REPORT_NAME": html.escape(report_dir_name),
             "MAP_HREF": "map/map.html",
             "DOWNLOAD_HREF": f"downloads/{html.escape(report_dir_name)}.zip",
             "STAT_CARDS": build_stat_cards(summary),
             "BODY_HTML": body_html,
-            "EVIDENCE_CARDS": build_evidence_cards(report_dir_name),
+            "ACTION_CARDS": build_action_cards(report_dir_name),
+            "REFERENCE_CARDS": build_reference_cards(published_files),
+            "ISSUE_PANELS": build_issue_panels(published_files),
+            "PRINT_TOOL_HREF": TOOL_VIEWER_PATH,
         },
     )
     (out_dir / "index.html").write_text(page_html, encoding="utf-8")

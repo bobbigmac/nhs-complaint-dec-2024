@@ -304,6 +304,10 @@
         Tip: open this file in your browser from the repo root, then select
         any markdown file from the same checkout.
       </p>
+      <p>
+        The published site can also open this tool with a markdown file
+        preloaded via a <code>?source=...</code> link.
+      </p>
     </aside>
 
     <main id="contentWrapper">
@@ -395,6 +399,29 @@
         reader.readAsText(file);
       }
 
+      function loadSourceParam() {
+        const params = new URLSearchParams(window.location.search);
+        const source = params.get('source');
+        if (!source) return;
+
+        setStatus('Loading: ' + source + ' …');
+        fetch(source, { credentials: 'same-origin' })
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error('HTTP ' + response.status);
+            }
+            return response.text();
+          })
+          .then(function (text) {
+            const fallbackName = source.split('/').pop() || 'Markdown';
+            renderMarkdown(fallbackName, text);
+          })
+          .catch(function (err) {
+            console.error(err);
+            setStatus('Failed to load markdown from link: ' + (err && err.message ? err.message : 'unknown error'));
+          });
+      }
+
       fileInput.addEventListener('change', function () {
         handleFiles(this.files);
       });
@@ -429,9 +456,10 @@
       printButton.addEventListener('click', function () {
         window.print();
       });
+
+      loadSourceParam();
     })();
   </script>
 </body>
 </html>
-
 

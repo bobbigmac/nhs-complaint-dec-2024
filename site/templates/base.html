@@ -11,10 +11,11 @@
     <header class="hero">
       <div class="hero-copy">
         <p class="eyebrow">NHS access evidence and recovery</p>
-        <h1>The public front page for a project about patient access, pressure and repair.</h1>
+        <h1>Patient access failures at New Bank, grouped into the issues that matter.</h1>
         <p class="standfirst">
-          This site packages the latest evidence bundle from the repo into a cleaner public entry point:
-          a concise overview, a downloadable report bundle, and the current interactive map.
+          This homepage is the public entry point for a much larger repo of complaints, meeting packs,
+          printoffs, survey analysis and map work. It groups that material by issue so new readers can
+          understand the problem without trawling every folder first.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="{{MAP_HREF}}">Open the interactive map</a>
@@ -31,33 +32,49 @@
       </aside>
     </header>
 
-    <main class="content-grid">
-      <article class="prose-card">
-        {{BODY_HTML}}
-      </article>
+    <main class="page-sections">
+      <section class="content-grid">
+        <article class="prose-card">
+          {{BODY_HTML}}
+        </article>
 
-      <aside class="rail">
-        <section class="rail-panel">
-          <p class="panel-label">Evidence bundle</p>
-          <h2>What you can open right now</h2>
-          <div class="evidence-grid">
-            {{EVIDENCE_CARDS}}
-          </div>
-        </section>
+        <aside class="rail">
+          <section class="rail-panel">
+            <p class="panel-label">Core tools</p>
+            <h2>Open the current bundle</h2>
+            <div class="evidence-grid">
+              {{ACTION_CARDS}}
+            </div>
+          </section>
 
-        <section class="rail-panel shared-purpose">
-          <p class="panel-label">Shared purpose</p>
-          <h2>Fix the problems. Bring the numbers up. Recover from the plummet.</h2>
+          <section class="rail-panel">
+            <p class="panel-label">Start here</p>
+            <h2>Orientation documents</h2>
+            <div class="reference-list">
+              {{REFERENCE_CARDS}}
+            </div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="issue-section">
+        <div class="section-heading">
+          <p class="panel-label">Homepage guide</p>
+          <h2>Key issues and the best evidence behind each one</h2>
           <p>
-            The project is strongest when it helps patients, staff, management and scrutiny bodies look at the same evidence and move toward practical improvement.
+            The panels below are curated from the README and meeting packs. They are meant to reduce repetition,
+            keep related work together, and make the strongest documents easy to open.
           </p>
-        </section>
-      </aside>
+        </div>
+        <div class="issue-grid">
+          {{ISSUE_PANELS}}
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <p>Built from repo-local evidence, then packaged for GitHub Pages.</p>
-      <p><a href="{{MAP_HREF}}">Interactive map</a> <span class="sep">/</span> <a href="{{DOWNLOAD_HREF}}">Download bundle</a></p>
+      <p><a href="{{MAP_HREF}}">Interactive map</a> <span class="sep">/</span> <a href="{{DOWNLOAD_HREF}}">Download bundle</a> <span class="sep">/</span> <a href="{{PRINT_TOOL_HREF}}">Markdown print viewer</a></p>
     </footer>
   </div>
 </body>

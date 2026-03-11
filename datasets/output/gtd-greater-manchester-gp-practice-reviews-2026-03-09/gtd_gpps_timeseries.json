@@ -1,0 +1,129 @@
+{
+  "years": [
+    "2025"
+  ],
+  "practice_series": [
+    {
+      "code": "P89011",
+      "name": "Gordon Street Medical Centre",
+      "points": [
+        61.09
+      ],
+      "takeover_date": "2018-04-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "P89013",
+      "name": "Hattersley Group Practice",
+      "points": [
+        40.58
+      ],
+      "takeover_date": "2018-04-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "P89602",
+      "name": "The Smithy Surgery",
+      "points": [
+        78.32
+      ],
+      "takeover_date": "2018-04-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "P89612",
+      "name": "Mossley Medical Practice",
+      "points": [
+        82.54
+      ],
+      "takeover_date": "2018-04-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02325",
+      "name": "Charlestown MD",
+      "points": [
+        59.11
+      ],
+      "takeover_date": "2025-04-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02520",
+      "name": "Simpson Medical Practice",
+      "points": [
+        80.39
+      ],
+      "takeover_date": "2017-10-02",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02586",
+      "name": "Ashton Gp Service",
+      "points": [
+        52.08
+      ],
+      "takeover_date": "2017-09-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02663",
+      "name": "Droylsden Medical Practice",
+      "points": [
+        49.48
+      ],
+      "takeover_date": "2017-09-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02713",
+      "name": "Guide Bridge Medical Practice",
+      "points": [
+        53.44
+      ],
+      "takeover_date": "2017-09-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02849",
+      "name": "City Health Centre",
+      "points": [
+        70.34
+      ],
+      "takeover_date": "2018-08-29",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02875",
+      "name": "Lindley House Health Centre",
+      "points": [
+        71.74
+      ],
+      "takeover_date": "2019-10-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02936",
+      "name": "Millbrook Medical Practice",
+      "points": [
+        68.88
+      ],
+      "takeover_date": "2017-09-01",
+      "takeover_precision": "day"
+    },
+    {
+      "code": "Y02960",
+      "name": "New Bank Health",
+      "points": [
+        69.0
+      ],
+      "takeover_date": "2025-04-01",
+      "takeover_precision": "day"
+    }
+  ],
+  "average_series": [
+    64.38
+  ],
+  "gtd_practice_count": 13,
+  "practices_with_survey_history": 13
+}
