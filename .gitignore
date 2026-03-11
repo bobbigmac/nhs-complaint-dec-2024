@@ -4,3 +4,4 @@ package-lock.json
 yarn.lock
 package.json
 __pycache__
+site/dist/

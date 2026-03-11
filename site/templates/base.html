@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NHS access evidence and recovery</p>
+        <h1>The public front page for a project about patient access, pressure and repair.</h1>
+        <p class="standfirst">
+          This site packages the latest evidence bundle from the repo into a cleaner public entry point:
+          a concise overview, a downloadable report bundle, and the current interactive map.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{MAP_HREF}}">Open the interactive map</a>
+          <a class="button button-secondary" href="{{DOWNLOAD_HREF}}">Download the latest report bundle</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <p class="panel-label">Latest build</p>
+        <h2>{{REPORT_NAME}}</h2>
+        <p class="panel-updated">Dataset updated {{UPDATED_DATE}}</p>
+        <div class="stat-grid">
+          {{STAT_CARDS}}
+        </div>
+      </aside>
+    </header>
+
+    <main class="content-grid">
+      <article class="prose-card">
+        {{BODY_HTML}}
+      </article>
+
+      <aside class="rail">
+        <section class="rail-panel">
+          <p class="panel-label">Evidence bundle</p>
+          <h2>What you can open right now</h2>
+          <div class="evidence-grid">
+            {{EVIDENCE_CARDS}}
+          </div>
+        </section>
+
+        <section class="rail-panel shared-purpose">
+          <p class="panel-label">Shared purpose</p>
+          <h2>Fix the problems. Bring the numbers up. Recover from the plummet.</h2>
+          <p>
+            The project is strongest when it helps patients, staff, management and scrutiny bodies look at the same evidence and move toward practical improvement.
+          </p>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built from repo-local evidence, then packaged for GitHub Pages.</p>
+      <p><a href="{{MAP_HREF}}">Interactive map</a> <span class="sep">/</span> <a href="{{DOWNLOAD_HREF}}">Download bundle</a></p>
+    </footer>
+  </div>
+</body>
+</html>
