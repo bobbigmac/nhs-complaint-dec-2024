@@ -24,6 +24,7 @@ OUTPUT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2
 GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "raw" / "gp_patient_survey"
 GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
+GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_branch_parent_codes.json"
 GP_REGISTERED_PATIENTS_CACHE = BASE_DIR / ".cache" / "gp-reg-pat-prac-all.csv"
 GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
 GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
@@ -808,6 +809,28 @@ def load_gp_patient_survey_index(raw_dir: Path = GP_PATIENT_SURVEY_RAW_DIR) -> d
     return survey_by_code
 
 
+def load_gp_patient_survey_branch_parent_index(
+    path: Path = GP_PATIENT_SURVEY_BRANCH_PARENT_JSON,
+) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    index: dict[str, dict[str, Any]] = {}
+    for code, item in payload.items():
+        if str(code).startswith("_"):
+            continue
+        if isinstance(item, str):
+            index[str(code).strip()] = {"parent_code": item.strip()}
+        elif isinstance(item, dict):
+            index[str(code).strip()] = item
+    return index
+
+
 def survey_metric(payload: dict[str, Any], question_name: str, field: str = "practice_percent") -> Any:
     key_questions = payload.get("key_questions", {})
     if not isinstance(key_questions, dict):
@@ -816,6 +839,36 @@ def survey_metric(payload: dict[str, Any], question_name: str, field: str = "pra
     if not isinstance(question, dict):
         return ""
     return question.get(field, "")
+
+
+def has_usable_gp_patient_survey_data(payload: dict[str, Any]) -> bool:
+    return (
+        survey_metric(payload, "overallexp") not in ("", None)
+        or payload.get("completion_rate_percent", "") not in ("", None)
+    )
+
+
+def resolve_gp_patient_survey_payload(
+    code: str,
+    survey_by_code: dict[str, dict[str, Any]],
+    branch_parent_by_code: dict[str, dict[str, Any]],
+) -> tuple[dict[str, Any], str, str]:
+    direct_payload = survey_by_code.get(code, {})
+    if has_usable_gp_patient_survey_data(direct_payload):
+        return direct_payload, code, ""
+    branch_meta = branch_parent_by_code.get(code, {})
+    parent_code = str(branch_meta.get("parent_code", "")).strip()
+    if not parent_code:
+        return direct_payload, code, ""
+    parent_payload = survey_by_code.get(parent_code, {})
+    if not has_usable_gp_patient_survey_data(parent_payload):
+        return direct_payload, code, ""
+    branch_name = str(branch_meta.get("branch_name_ods", "")).strip()
+    note = f"GP Patient Survey uses parent practice code {parent_code} for this NHS branch surgery"
+    if branch_name:
+        note += f" ({branch_name.title()})"
+    note += "."
+    return parent_payload, parent_code, note
 
 
 def load_google_review_results(path: Path = GOOGLE_REVIEW_RESULTS_JSON) -> list[dict[str, Any]]:
@@ -1021,6 +1074,7 @@ def build_gtd_google_score_timeseries(
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     rows = apply_gtd_takeover_metadata(rows)
     survey_by_code = load_gp_patient_survey_index()
+    survey_branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     known_management_companies = sorted(
         {
@@ -1033,7 +1087,11 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     total_registered_patients = 0
     registered_patient_rows = 0
     for row in rows:
-        survey_payload = survey_by_code.get(str(row["canonical_code"]), {})
+        survey_payload, survey_code_used, survey_resolution_note = resolve_gp_patient_survey_payload(
+            str(row["canonical_code"]),
+            survey_by_code,
+            survey_branch_parent_by_code,
+        )
         registered_patient_count = row.get("registered_patient_count", "")
         if registered_patient_count not in ("", None):
             try:
@@ -1069,6 +1127,9 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
                 "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
                 "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+                "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
+                "gp_patient_survey_code_used": survey_code_used,
+                "gp_patient_survey_resolution_note": survey_resolution_note,
                 "registered_patient_count": row.get("registered_patient_count", ""),
             }
         )
@@ -2097,6 +2158,8 @@ function popupMarkup(row) {{
   const survey = `<div>${{formatSurvey(row)}}</div>`;
   const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
   const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
+  const surveyResolution = row.gp_patient_survey_resolution_note ? `<div>${{row.gp_patient_survey_resolution_note}}</div>` : '';
+  const surveyLink = row.gp_patient_survey_2025_url ? `<div><a href="${{row.gp_patient_survey_2025_url}}" target="_blank" rel="noreferrer">GP Patient Survey page</a></div>` : '';
   const gap = `<div>${{formatGap(row)}}</div>`;
   const gtd = row.gtd_url ? `<div><a href="${{row.gtd_url}}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
   return `
@@ -2113,9 +2176,11 @@ function popupMarkup(row) {{
     ${{googleSource}}
     ${{survey}}
     ${{surveyCompare}}
+    ${{surveyResolution}}
     ${{gap}}
     ${{googleText}}
     <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
+    ${{surveyLink}}
     ${{gtd}}
     ${{takeoverSource}}
   `;
