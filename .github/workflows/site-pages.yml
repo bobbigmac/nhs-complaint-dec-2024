@@ -2,9 +2,10 @@ name: Build and deploy site
 
 on:
   push:
-    # Change this to whichever branch you want to use as the site publish trigger.
+    # This only controls when the workflow runs.
+    # In GitHub Pages settings, the publish source should be "GitHub Actions", not a branch.
     branches:
-      - site
+      - main
   workflow_dispatch: {}
 
 permissions:
