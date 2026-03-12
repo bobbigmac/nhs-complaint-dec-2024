@@ -1,10 +1,6 @@
 # GTD Chronology
 
 > Working log of public facts, repo-local findings, and known gaps around GTD Healthcare, GoToDoc, Our People's Trust, New Bank, and the wider commissioner/provider environment.
->
-> Main synthesis source: `ChatGPT-GTD_Healthcare_Procurement_Inquiry.md`
->
-> Raw normalized link dump preserved separately in `GTD_INQUIRY_LINKS.txt`.
 
 ## How to use this note
 
