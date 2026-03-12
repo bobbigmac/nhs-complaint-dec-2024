@@ -223,6 +223,11 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 ![New Bank and GTD Benchmarks](new-bank-gtd-benchmarks.png)
 
+![GTD Google Rating over time](./meetings-notes/2026-05-06-meeting5/gtd-google-score-over-time.png)
+
+![GTD Patient Survey over time](./meetings-notes/2026-05-06-meeting5/gtd-patient-survey-over-time.png)
+
+
 <details>
 <summary>Effective use of resources?</summary>
   
