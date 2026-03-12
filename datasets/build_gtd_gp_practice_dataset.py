@@ -2191,7 +2191,7 @@ function renderDeprivation() {{
         color: 'rgba(26,28,26,0.18)',
         weight: 0.8,
         fillColor: deprivationFillColor(decile),
-        fillOpacity: 0.34
+        fillOpacity: 0.5
       }};
     }},
     onEachFeature: (feature, layer) => {{
