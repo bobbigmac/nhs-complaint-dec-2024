@@ -1130,7 +1130,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>GTD Greater Manchester GP Practice Experience</title>
+<title>Manchester GPs' Reviews</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
@@ -1165,9 +1165,10 @@ body {{
 .map-stage {{
   display: grid;
   grid-template-areas: "legend map";
-  grid-template-columns: 360px minmax(0, 1fr);
+  grid-template-columns: var(--sidebar-width, 360px) minmax(0, 1fr);
   min-height: 100vh;
   min-height: 100dvh;
+  transition: grid-template-columns 180ms ease;
 }}
 #map {{
   grid-area: map;
@@ -1180,12 +1181,45 @@ body {{
   grid-area: legend;
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background: var(--panel-strong);
   padding: 12px 14px;
   border-right: 1px solid var(--line);
   box-shadow: inset -1px 0 0 rgba(26, 28, 26, 0.04);
   max-width: none;
   overflow: auto;
+}}
+.map-stage.is-collapsed {{
+  --sidebar-width: 82px;
+}}
+.legend-header {{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}}
+.home-link,
+.legend-collapse {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(15, 94, 156, 0.06);
+  color: var(--ink);
+  font: 600 12px/1.2 "Avenir Next", "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}}
+.legend-collapse {{
+  min-width: 34px;
+}}
+.legend-intro {{
+  display: grid;
 }}
 .legend h1 {{
   margin: 0 0 8px;
@@ -1213,6 +1247,14 @@ body {{
 .control-group {{
   display: grid;
   gap: 8px;
+}}
+.management-group {{
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  align-content: start;
+  gap: 0;
 }}
 .segmented {{
   display: grid;
@@ -1250,6 +1292,10 @@ body {{
   display: inline-block;
   margin: 0;
 }}
+.overlay-toggle-icon,
+.segmented-short {{
+  display: none;
+}}
 .segmented label {{
   display: flex;
   align-items: center;
@@ -1279,7 +1325,7 @@ body {{
 .manager-list {{
   display: grid;
   gap: 8px;
-  max-height: 210px;
+  min-height: 0;
   overflow: auto;
   padding-right: 4px;
 }}
@@ -1294,6 +1340,11 @@ body {{
   margin: 0;
 }}
 .manager-name {{
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}}
+.manager-name-text {{
   min-width: 0;
 }}
 .manager-meta {{
@@ -1322,6 +1373,82 @@ body {{
 }}
 .swatch.pentagon {{
   clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}}
+.map-stage.is-collapsed .legend {{
+  padding-inline: 10px;
+}}
+.map-stage.is-collapsed .legend-header {{
+  flex-direction: column;
+  align-items: stretch;
+}}
+.map-stage.is-collapsed .home-link,
+.map-stage.is-collapsed .legend-collapse {{
+  width: 100%;
+  min-width: 0;
+  padding-inline: 0;
+}}
+.map-stage.is-collapsed .home-link-text,
+.map-stage.is-collapsed .legend-intro,
+.map-stage.is-collapsed .control-group h2,
+.map-stage.is-collapsed #metric-description,
+.map-stage.is-collapsed #area-overlay-tip,
+.map-stage.is-collapsed #manager-hint,
+.map-stage.is-collapsed .manager-name-text,
+.map-stage.is-collapsed .manager-meta {{
+  display: none;
+}}
+.map-stage.is-collapsed .home-link::before {{
+  content: "H";
+}}
+.map-stage.is-collapsed .segmented {{
+  grid-template-columns: 1fr;
+  border-radius: 16px;
+}}
+.map-stage.is-collapsed .segmented label {{
+  padding: 0;
+}}
+.map-stage.is-collapsed .segmented span {{
+  display: none;
+}}
+.map-stage.is-collapsed .segmented-short {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 38px;
+  border-radius: 12px;
+  font: 700 12px/1 "Avenir Next", "Trebuchet MS", sans-serif;
+}}
+.map-stage.is-collapsed .segmented input:checked + span + .segmented-short {{
+  background: var(--accent);
+  color: #fff;
+}}
+.map-stage.is-collapsed #area-overlay-control {{
+  grid-template-columns: 1fr;
+}}
+.map-stage.is-collapsed .overlay-toggle-label {{
+  justify-content: center;
+  padding-inline: 0;
+}}
+.map-stage.is-collapsed .overlay-toggle-label > span {{
+  display: none;
+}}
+.map-stage.is-collapsed .overlay-toggle-icon {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 22px;
+  font: 700 12px/1 "Avenir Next", "Trebuchet MS", sans-serif;
+}}
+.map-stage.is-collapsed .manager-option {{
+  grid-template-columns: 18px 1fr;
+}}
+.map-stage.is-collapsed .manager-name {{
+  justify-content: center;
+}}
+.map-stage.is-collapsed .swatch {{
+  margin-right: 0 !important;
 }}
 .leaflet-marker-icon.marker-icon {{
   background: transparent;
@@ -1669,32 +1796,40 @@ body {{
 </style>
 </head>
 <body>
-<div class="page">
+  <div class="page">
   <div class="map-stage">
     <div class="legend">
-      <h1>GTD GP Practice Experience Map</h1>
-      <p>{len(rows)} GP surgery profiles from a broad catchment around GTD anchors.</p>
-      <p>{total_registered_patients:,} registered patients across {registered_patient_rows} practices.</p>
+      <div class="legend-header">
+        <a class="home-link" href="../index.html" title="Back to homepage"><span class="home-link-text">Home</span></a>
+        <button type="button" class="legend-collapse" id="legend-collapse" aria-pressed="false" title="Collapse sidebar"><span>&lsaquo;</span></button>
+      </div>
+      <div class="legend-intro">
+        <h1>Manchester GPs' Reviews</h1>
+        <p>{len(rows)} GP surgery profiles from a broad catchment.</p>
+        <p>{total_registered_patients:,} registered patients across {registered_patient_rows} practices.</p>
+      </div>
       <div class="control-group">
         <h2>Score Source</h2>
         <div class="segmented">
-          <label><input type="radio" name="score-source" value="google" checked><span>Google</span></label>
-          <label><input type="radio" name="score-source" value="survey"><span>GP Survey</span></label>
-          <label><input type="radio" name="score-source" value="gap"><span>Gap</span></label>
+          <label title="Google"><input type="radio" name="score-source" value="google" checked><span>Google</span><span class="segmented-short">G</span></label>
+          <label title="GP Survey"><input type="radio" name="score-source" value="survey"><span>GP Survey</span><span class="segmented-short">S</span></label>
+          <label title="Gap"><input type="radio" name="score-source" value="gap"><span>Gap</span><span class="segmented-short">X</span></label>
         </div>
         <p id="metric-description" class="hint"></p>
       </div>
       <div class="control-group">
         <h2>Area overlays</h2>
         <div id="area-overlay-control">
-          <label id="population-overlay-control" class="overlay-toggle-label" title="An estimated population / affected-people view. This is a rough catchment proxy, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span></label>
-          <label id="deprivation-overlay-control" class="overlay-toggle-label" title="Official 2025 deprivation deciles for the current catchment subset, shown by 2021 LSOA polygon."><input type="checkbox" id="deprivation-toggle"><span>Est. Deprivation</span></label>
+          <label id="population-overlay-control" class="overlay-toggle-label" title="An estimated population / affected-people view. This is a rough catchment proxy, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span><span class="overlay-toggle-icon">P</span></label>
+          <label id="deprivation-overlay-control" class="overlay-toggle-label" title="Official 2025 deprivation deciles for the current catchment subset, shown by 2021 LSOA polygon."><input type="checkbox" id="deprivation-toggle"><span>Deprivation</span><span class="overlay-toggle-icon">D</span></label>
         </div>
         <p id="area-overlay-tip" class="hint"></p>
       </div>
-      <h2>Management</h2>
-      <p id="manager-hint" class="hint"></p>
-      <div id="manager-list" class="manager-list"></div>
+      <div class="management-group">
+        <h2>Management</h2>
+        <p id="manager-hint" class="hint"></p>
+        <div id="manager-list" class="manager-list"></div>
+      </div>
     </div>
     <div id="map"></div>
   </div>
@@ -1743,6 +1878,7 @@ const rowsByCode = new Map(rows.map((row) => [row.code, row]));
 const NEW_BANK_CODE = 'Y02960';
 const TREND_DEFAULT_CONTEXT_CODE = '__gtd_mean_with_new_bank__';
 const LOCAL_RADIUS_MILES = 2.5;
+const SIDEBAR_COLLAPSE_KEY = 'mapSidebarCollapsed';
 const dataBbox = (() => {{
   const lons = rows.map(r => Number(r.lon));
   const lats = rows.map(r => Number(r.lat));
@@ -1769,6 +1905,7 @@ let activeAreaOverlay = null;
 let focusedPracticeCode = NEW_BANK_CODE;
 let pinnedTrendPracticeCode = TREND_DEFAULT_CONTEXT_CODE;
 let hoveredTrendPracticeCode = null;
+let sidebarCollapsed = false;
 
 const metricConfigs = {{
   google: {{
@@ -2021,6 +2158,15 @@ function renderMetricLegend() {{
   document.getElementById('metric-description').className = 'hint metric-note';
 }}
 
+function updateSidebarState() {{
+  const stage = document.querySelector('.map-stage');
+  const button = document.getElementById('legend-collapse');
+  stage.classList.toggle('is-collapsed', sidebarCollapsed);
+  button.setAttribute('aria-pressed', sidebarCollapsed ? 'true' : 'false');
+  button.setAttribute('title', sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
+  button.textContent = sidebarCollapsed ? '>' : '<';
+}}
+
 function clearOverlayLayers() {{
   markerLayer.clearLayers();
   if (voronoiLayer) {{
@@ -2214,9 +2360,10 @@ function renderManagementList() {{
     const average = metric.averageLabel(averageMetric(company.rows, activeMetric));
     const row = document.createElement('label');
     row.className = 'manager-option';
+    row.title = `${{company.name}} · ${{average}} avg · ${{company.count}} practices`;
     row.innerHTML = `
       <input type="checkbox" ${{checked ? 'checked' : ''}} data-company="${{company.name}}">
-      <span class="manager-name"><span class="swatch ${{shape}}" style="background:${{checked ? 'var(--midhigh)' : 'var(--missing)'}}; display:inline-block; margin-right:8px;"></span>${{company.name}}</span>
+      <span class="manager-name"><span class="swatch ${{shape}}" style="background:${{checked ? 'var(--midhigh)' : 'var(--missing)'}}; display:inline-block; margin-right:8px;"></span><span class="manager-name-text">${{company.name}}</span></span>
       <span class="manager-meta">${{average}} avg · ${{company.count}}</span>
     `;
     row.querySelector('input').addEventListener('change', (event) => {{
@@ -3371,6 +3518,15 @@ document.getElementById('deprivation-toggle').addEventListener('change', (event)
   rerenderAll();
 }});
 
+document.getElementById('legend-collapse').addEventListener('click', () => {{
+  sidebarCollapsed = !sidebarCollapsed;
+  updateSidebarState();
+  try {{
+    localStorage.setItem(SIDEBAR_COLLAPSE_KEY, sidebarCollapsed ? '1' : '0');
+  }} catch (_error) {{
+  }}
+}});
+
 map.on('moveend', () => {{
   if (activeAreaOverlay === 'population') {{
     if (voronoiLayer) {{
@@ -3381,6 +3537,12 @@ map.on('moveend', () => {{
   }}
 }});
 
+try {{
+  sidebarCollapsed = localStorage.getItem(SIDEBAR_COLLAPSE_KEY) === '1';
+}} catch (_error) {{
+  sidebarCollapsed = false;
+}}
+updateSidebarState();
 rerenderAll();
 </script>
 </body>
