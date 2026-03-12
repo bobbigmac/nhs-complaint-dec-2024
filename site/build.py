@@ -438,23 +438,26 @@ def build_issue_panels(published_files: dict[str, str]) -> str:
     for section in ISSUE_SECTIONS:
         work_items = "".join(f"<li>{html.escape(str(item))}</li>" for item in section["work"])
         resources_html = build_document_cards(section["resources"], published_files)
+        resource_count = len(section["resources"])
+        resource_label = "document" if resource_count == 1 else "documents"
         panels.append(
             f"""
             <article class="issue-panel">
               <div class="issue-header">
-                <p class="issue-kicker">{html.escape(str(section["number"]))}</p>
+                <div class="issue-topline">
+                  <p class="issue-kicker">{html.escape(str(section["number"]))}</p>
+                  <p class="issue-meta">{resource_count} supporting {resource_label}</p>
+                </div>
                 <h3>{html.escape(str(section["title"]))}</h3>
+                <p class="issue-summary">{html.escape(str(section["summary"]))}</p>
               </div>
-              <p class="issue-summary">{html.escape(str(section["summary"]))}</p>
               <div class="issue-body">
-                <section class="issue-block">
-                  <h4>What this work covers</h4>
+                <section class="issue-block issue-work-block" aria-label="Current work">
                   <ul class="issue-work">
                     {work_items}
                   </ul>
                 </section>
-                <section class="issue-block">
-                  <h4>Best supporting documents</h4>
+                <section class="issue-block issue-resources-block" aria-label="Best supporting documents">
                   <div class="resource-stack">
                     {resources_html}
                   </div>
