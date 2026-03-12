@@ -1680,6 +1680,7 @@ const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const patientCountsByYear = {json.dumps(patient_counts_by_year)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
+const rowsByCode = new Map(rows.map((row) => [row.code, row]));
 const NEW_BANK_CODE = 'Y02960';
 const LOCAL_RADIUS_MILES = 2.5;
 const dataBbox = (() => {{
@@ -2161,6 +2162,13 @@ function popupMarkup(row) {{
 function focusRow(row) {{
   focusedPracticeCode = row.code;
   renderComparisons();
+}}
+
+function focusPracticeByCode(code) {{
+  const row = rowsByCode.get(code);
+  if (row) {{
+    focusRow(row);
+  }}
 }}
 
 function renderMarkers() {{
@@ -2690,7 +2698,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
   const practiceSeries = gtdSurveyTimeseries.practice_series || [];
   const averageSeries = gtdSurveyTimeseries.average_series || [];
   if (heading) heading.textContent = 'GTD GP Survey Overall Good % Over Time';
-  if (note) note.textContent = 'Thin lines show each GTD practice\\'s GP Patient Survey overall-experience-as-good percentage by year. Faint dashed vertical lines mark the documented GTD takeover date. The bold line is the mean. Data from gp-patient.co.uk practice-level CSV.';
+  if (note) note.textContent = 'Thin lines show each GTD practice\\'s GP Patient Survey overall-experience-as-good percentage by year. Faint dashed vertical lines mark the documented GTD takeover date. The bold line is the mean. Click a practice in the legend to select it. When selected, the green dashed line shows that practice\\'s registered-patient trend normalized to the right-hand 0-100 scale. Data from gp-patient.co.uk practice-level CSV.';
   const width = 920;
   const height = 360;
   const margin = {{ top: 18, right: 22, bottom: 56, left: 46 }};
@@ -2790,7 +2798,11 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
     button.addEventListener('mouseleave', () => {{ hoveredTrendPracticeCode = null; renderGtdScoreTrendChart(); }});
     button.addEventListener('focus', () => {{ hoveredTrendPracticeCode = code; renderGtdScoreTrendChart(); }});
     button.addEventListener('blur', () => {{ hoveredTrendPracticeCode = null; renderGtdScoreTrendChart(); }});
-    button.addEventListener('click', () => {{ pinnedTrendPracticeCode = pinnedTrendPracticeCode === code ? null : code; renderGtdScoreTrendChart(); }});
+    button.addEventListener('click', () => {{
+      pinnedTrendPracticeCode = pinnedTrendPracticeCode === code ? null : code;
+      focusPracticeByCode(code);
+      renderGtdScoreTrendChart();
+    }});
   }});
   const activeSummary = !activeEntry ? ' Hover a practice in the legend to isolate its track.' : ` Highlighted: ${{activeEntry.series.name}}. Latest ${{activeEntry.lastValue === null ? '?' : Math.round(activeEntry.lastValue) + '%'}}.${{patientPath ? ' Green dashed: patient count (normalized within practice).' : ''}}`;
   summary.textContent = `${{gtdSurveyTimeseries.practices_with_survey_history}} of ${{gtdSurveyTimeseries.gtd_practice_count}} GTD practices, ${{years.length}} survey years. Thin lines are practice-level overall-good %, dashed lines mark GTD takeover.${{activeSummary}}`;
@@ -2808,7 +2820,7 @@ function renderGtdScoreTrendChart() {{
     return;
   }}
   if (heading) heading.textContent = 'GTD Google Score Over Time';
-  if (note) note.textContent = 'Thin lines show each GTD practice\\'s reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The bold line is the mean practice trajectory. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.';
+  if (note) note.textContent = 'Thin lines show each GTD practice\\'s reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The bold line is the mean practice trajectory. Click a practice in the legend to select it. When selected, the green dashed line shows that practice\\'s registered-patient trend normalized to the right-hand 0-100 scale, and the orange dashed line shows its GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.';
   const months = gtdGoogleTimeseries.months || [];
   const practiceSeries = gtdGoogleTimeseries.practice_series || [];
   const averageSeries = gtdGoogleTimeseries.average_series || [];
@@ -3042,6 +3054,7 @@ function renderGtdScoreTrendChart() {{
     }});
     button.addEventListener('click', () => {{
       pinnedTrendPracticeCode = pinnedTrendPracticeCode === code ? null : code;
+      focusPracticeByCode(code);
       renderGtdScoreTrendChart();
     }});
   }});

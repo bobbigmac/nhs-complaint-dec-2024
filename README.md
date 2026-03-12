@@ -2,6 +2,8 @@
 
 This repo documents ongoing concerns about **patient access, digital systems, and front‑door process** at New Bank Health Centre (run by GTD Healthcare).
 
+For the quickest public overview, start with the homepage: <https://bobdavies.co.uk/nhs-complaint-dec-2024/>
+
 It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access. These issues pre-date GTD's control of New Bank, but have continued since their take-over in April 2025, with only very minor improvements.
 
   - Patients are being excluded by the practice requiring a mandatory unscheduled office-hours phone call, forcing them to start over
