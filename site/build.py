@@ -240,6 +240,104 @@ REFERENCE_DOCS: list[dict[str, object]] = [
             {"label": "Markdown", "source": "OBJECTIVES.md"},
         ],
     },
+    {
+        "title": "Operating environment note",
+        "description": "The source note for the provider, commissioner, alliance and competitor landscape around GTD.",
+        "files": [
+            {"label": "Markdown", "source": OPERATING_ENVIRONMENT_SOURCE},
+        ],
+        "links": [
+            {"label": "Open page", "href": "environment/", "variant": "primary"},
+        ],
+    },
+    {
+        "title": "Management company method",
+        "description": "The short note explaining how the watchlist and operator-profile layer are maintained under datasets.",
+        "files": [
+            {"label": "Markdown", "source": ORG_METHOD_SOURCE},
+        ],
+        "links": [
+            {"label": "Org navigator", "href": "org-navigator/", "variant": "primary"},
+        ],
+    },
+    {
+        "title": "Map notes",
+        "description": "Read the generated README for the current map if you want the data notes before opening it.",
+        "links": [
+            {"label": "Markdown", "href": "map/README.md", "variant": "primary"},
+            {"label": "Print view", "href": f"{TOOL_VIEWER_PATH}?source=../map/README.md", "variant": "secondary"},
+        ],
+    },
+]
+
+VIEW_CARDS: list[dict[str, object]] = [
+    {
+        "title": "Interactive map",
+        "description": "Open the latest Greater Manchester comparison map with review, survey and takeover context.",
+        "links": [("Open map", "map/map.html", "primary")],
+    },
+    {
+        "title": "GTD chronology",
+        "description": "Browse the dated working log that ties procurement, governance, takeover and trend notes together.",
+        "links": [("Open chronology", "chronology/", "primary")],
+        "source": CHRONOLOGY_SOURCE,
+    },
+    {
+        "title": "Operating environment",
+        "description": "Read the role map for commissioners, providers, federations, alliances and public decision-makers around GTD.",
+        "links": [("Open environment", "environment/", "primary")],
+        "source": OPERATING_ENVIRONMENT_SOURCE,
+    },
+    {
+        "title": "Org navigator",
+        "description": "Open the operator-profile view for GTD, peers, previous providers and management-company clusters.",
+        "links": [("Open org navigator", "org-navigator/", "primary")],
+        "source": ORG_NAVIGATOR_SOURCE,
+    },
+]
+
+PAGE_DOCS: list[dict[str, object]] = [
+    {
+        "id": "chronology",
+        "site_dir": "chronology",
+        "title": "GTD Chronology",
+        "kicker": "Context log",
+        "summary": "A browsable dated log of public facts, working inferences and missing records around GTD, New Bank and the wider commissioner-provider environment.",
+        "source": CHRONOLOGY_SOURCE,
+        "extra_sources": [
+            {"label": "Link dump", "source": INQUIRY_LINK_DUMP_SOURCE},
+            {"label": "Inquiry source note", "source": "ChatGPT-GTD_Healthcare_Procurement_Inquiry.md"},
+        ],
+        "related_page_ids": ["environment", "org-navigator"],
+    },
+    {
+        "id": "environment",
+        "site_dir": "environment",
+        "title": "Operating Environment Around GTD",
+        "kicker": "Organisation map",
+        "summary": "A source-of-truth note on who sits around GTD, which organisations collaborate or compete, and which pressures shape the operating model.",
+        "source": OPERATING_ENVIRONMENT_SOURCE,
+        "extra_sources": [
+            {"label": "Operator profiles", "source": ORG_NAVIGATOR_SOURCE},
+            {"label": "Watchlist JSON", "source": ORG_WATCHLIST_SOURCE},
+            {"label": "Enrichment script", "source": "datasets/enrich_management_companies.py"},
+        ],
+        "related_page_ids": ["chronology", "org-navigator"],
+    },
+    {
+        "id": "org-navigator",
+        "site_dir": "org-navigator",
+        "title": "Org Navigator: Known Operators",
+        "kicker": "Industry shape",
+        "summary": "A readable profile view of the management companies, federations, peers and previous providers that keep recurring around GTD.",
+        "source": ORG_NAVIGATOR_SOURCE,
+        "extra_sources": [
+            {"label": "Method note", "source": ORG_METHOD_SOURCE},
+            {"label": "Watchlist JSON", "source": ORG_WATCHLIST_SOURCE},
+            {"label": "Operating environment", "source": OPERATING_ENVIRONMENT_SOURCE},
+        ],
+        "related_page_ids": ["environment", "chronology"],
+    },
 ]
 
 
@@ -258,49 +356,84 @@ def load_summary(report_dir: Path) -> dict[str, object]:
     return json.loads(summary_path.read_text(encoding="utf-8"))
 
 
-def render_inline_markdown(text: str) -> str:
-    escaped = html.escape(text, quote=False)
-    escaped = re.sub(
-        r"`([^`]+)`",
-        lambda match: f"<code>{match.group(1)}</code>",
-        escaped,
-    )
-    escaped = re.sub(
+def render_inline_markdown(text: str, link_resolver: Callable[[str], str] | None = None) -> str:
+    replacements: list[tuple[str, str]] = []
+
+    def stash(fragment: str) -> str:
+        token = f"INLINE_TOKEN_{len(replacements)}"
+        replacements.append((token, fragment))
+        return token
+
+    text = re.sub(
         r"\[([^\]]+)\]\(([^)]+)\)",
-        lambda match: f'<a href="{html.escape(match.group(2), quote=True)}">{match.group(1)}</a>',
-        escaped,
+        lambda match: stash(
+            f'<a href="{html.escape((link_resolver or (lambda href: href))(match.group(2)), quote=True)}">{html.escape(match.group(1))}</a>'
+        ),
+        text,
     )
+    text = re.sub(
+        r"`([^`]+)`",
+        lambda match: stash(f"<code>{html.escape(match.group(1))}</code>"),
+        text,
+    )
+
+    escaped = html.escape(text, quote=False)
     escaped = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", escaped)
     escaped = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", escaped)
+    for token, fragment in replacements:
+        escaped = escaped.replace(token, fragment)
     return escaped
 
 
-def markdown_to_html(markdown_text: str) -> str:
+def slugify_heading(text: str, seen: dict[str, int]) -> str:
+    base = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "section"
+    count = seen.get(base, 0)
+    seen[base] = count + 1
+    return base if count == 0 else f"{base}-{count + 1}"
+
+
+def markdown_to_html(
+    markdown_text: str,
+    *,
+    link_resolver: Callable[[str], str] | None = None,
+    drop_first_h1: bool = False,
+) -> tuple[str, list[tuple[int, str, str]]]:
     blocks: list[str] = []
     paragraph_lines: list[str] = []
     list_items: list[str] = []
+    list_type: str | None = None
+    headings: list[tuple[int, str, str]] = []
+    seen_heading_ids: dict[str, int] = {}
+    skipped_h1 = False
 
     def flush_paragraph() -> None:
         nonlocal paragraph_lines
         if not paragraph_lines:
             return
         text = " ".join(line.strip() for line in paragraph_lines)
-        blocks.append(f"<p>{render_inline_markdown(text)}</p>")
+        blocks.append(f"<p>{render_inline_markdown(text, link_resolver=link_resolver)}</p>")
         paragraph_lines = []
 
     def flush_list() -> None:
-        nonlocal list_items
+        nonlocal list_items, list_type
         if not list_items:
             return
-        items = "".join(f"<li>{render_inline_markdown(item)}</li>" for item in list_items)
-        blocks.append(f"<ul>{items}</ul>")
+        tag = list_type or "ul"
+        items = "".join(f"<li>{render_inline_markdown(item, link_resolver=link_resolver)}</li>" for item in list_items)
+        blocks.append(f"<{tag}>{items}</{tag}>")
         list_items = []
+        list_type = None
 
     for raw_line in markdown_text.splitlines():
         line = raw_line.rstrip()
         stripped = line.strip()
 
         if not stripped:
+            flush_paragraph()
+            flush_list()
+            continue
+
+        if stripped == ">":
             flush_paragraph()
             flush_list()
             continue
@@ -316,25 +449,43 @@ def markdown_to_html(markdown_text: str) -> str:
             flush_paragraph()
             flush_list()
             level = len(heading_match.group(1))
-            blocks.append(f"<h{level}>{render_inline_markdown(heading_match.group(2))}</h{level}>")
+            heading_text = heading_match.group(2).strip()
+            if drop_first_h1 and level == 1 and not skipped_h1:
+                skipped_h1 = True
+                continue
+            anchor = slugify_heading(heading_text, seen_heading_ids)
+            headings.append((level, heading_text, anchor))
+            blocks.append(f'<h{level} id="{anchor}">{render_inline_markdown(heading_text, link_resolver=link_resolver)}</h{level}>')
             continue
 
-        if stripped.startswith("- "):
+        unordered_match = re.match(r"^[-*]\s+(.*)$", stripped)
+        ordered_match = re.match(r"^\d+\.\s+(.*)$", stripped)
+        if unordered_match or ordered_match:
             flush_paragraph()
-            list_items.append(stripped[2:].strip())
+            next_type = "ul" if unordered_match else "ol"
+            if list_type and list_type != next_type:
+                flush_list()
+            list_type = next_type
+            list_items.append((unordered_match or ordered_match).group(1).strip())
+            continue
+
+        if list_items and line.startswith(("  ", "\t")):
+            list_items[-1] = f"{list_items[-1]} {stripped}"
             continue
 
         if stripped.startswith("> "):
             flush_paragraph()
             flush_list()
-            blocks.append(f"<blockquote><p>{render_inline_markdown(stripped[2:].strip())}</p></blockquote>")
+            blocks.append(
+                f"<blockquote><p>{render_inline_markdown(stripped[2:].strip(), link_resolver=link_resolver)}</p></blockquote>"
+            )
             continue
 
         paragraph_lines.append(stripped)
 
     flush_paragraph()
     flush_list()
-    return "\n".join(blocks)
+    return "\n".join(blocks), headings
 
 
 def format_number(value: object) -> str:
@@ -378,17 +529,44 @@ def markdown_print_href(site_path: str) -> str:
     return f"{TOOL_VIEWER_PATH}?source={quote('../' + site_path, safe='/')}"
 
 
+def markdown_print_href_from(current_site_path: str, target_site_path: str) -> str:
+    tool_href = relative_site_href(current_site_path, TOOL_VIEWER_PATH)
+    return f"{tool_href}?source={quote('../' + target_site_path, safe='/')}"
+
+
+def relative_site_href(from_site_path: str, to_site_path: str) -> str:
+    from_dir = posixpath.dirname(from_site_path) or "."
+    return quote(posixpath.relpath(to_site_path, start=from_dir), safe="/#")
+
+
+def resolve_source_path(source: str) -> Path:
+    return (REPO_ROOT / source).resolve()
+
+
+def build_page_lookup() -> dict[Path, dict[str, object]]:
+    return {resolve_source_path(str(spec["source"])): spec for spec in PAGE_DOCS}
+
+
+def iter_page_source_paths() -> Iterable[Path]:
+    for spec in PAGE_DOCS:
+        yield resolve_source_path(str(spec["source"]))
+        for extra_source in spec.get("extra_sources", []):
+            yield resolve_source_path(str(extra_source["source"]))
+
+
 def collect_published_sources() -> list[Path]:
     sources: dict[str, Path] = {}
     for section in ISSUE_SECTIONS:
         for resource in section["resources"]:
             for file_meta in resource["files"]:
-                source = REPO_ROOT / str(file_meta["source"])
+                source = resolve_source_path(str(file_meta["source"]))
                 sources[str(source)] = source
     for resource in REFERENCE_DOCS:
-        for file_meta in resource["files"]:
-            source = REPO_ROOT / str(file_meta["source"])
+        for file_meta in resource.get("files", []):
+            source = resolve_source_path(str(file_meta["source"]))
             sources[str(source)] = source
+    for source in iter_page_source_paths():
+        sources[str(source)] = source
     return sorted(sources.values(), key=lambda path: path.as_posix())
 
 
@@ -421,12 +599,20 @@ def build_document_cards(resources: Iterable[dict[str, object]], published_files
     cards: list[str] = []
     for resource in resources:
         links: list[tuple[str, str, str]] = []
-        for file_meta in resource["files"]:
+        for file_meta in resource.get("files", []):
             source_key = str(file_meta["source"])
             site_path = published_files[source_key]
             links.append((str(file_meta["label"]), href_for_site_path(site_path), "primary"))
             if site_path.endswith(".md"):
                 links.append(("Print view", markdown_print_href(site_path), "secondary"))
+        for link_meta in resource.get("links", []):
+            links.append(
+                (
+                    str(link_meta["label"]),
+                    str(link_meta["href"]),
+                    str(link_meta.get("variant", "secondary")),
+                )
+            )
         cards.append(
             f"""
             <article class="doc-card">
@@ -481,22 +667,23 @@ def build_reference_cards(published_files: dict[str, str]) -> str:
     return build_document_cards(REFERENCE_DOCS, published_files)
 
 
-def build_action_cards(report_dir_name: str) -> str:
-    cards = [
-        {
-            "title": "Interactive map",
-            "description": "Open the latest Greater Manchester comparison map with review, survey and takeover context.",
-            "links": [("Open map", "map/map.html", "primary")],
-        },
-        {
-            "title": "Map notes",
-            "description": "Read the generated README for the current map if you want the data notes before opening it.",
-            "links": [
-                ("Markdown", "map/README.md", "primary"),
-                ("Print view", markdown_print_href("map/README.md"), "secondary"),
-            ],
-        },
-    ]
+def build_action_cards(published_files: dict[str, str]) -> str:
+    cards = []
+    for card in VIEW_CARDS:
+        links = list(card["links"])
+        source = card.get("source")
+        if source:
+            site_path = published_files[str(source)]
+            links.append(("Source", href_for_site_path(site_path), "secondary"))
+            if site_path.endswith(".md"):
+                links.append(("Print view", markdown_print_href(site_path), "secondary"))
+        cards.append(
+            {
+                "title": str(card["title"]),
+                "description": str(card["description"]),
+                "links": links,
+            }
+        )
     return "\n".join(
         f"""
         <article class="action-card">
@@ -511,8 +698,8 @@ def build_action_cards(report_dir_name: str) -> str:
     )
 
 
-def load_template() -> str:
-    return (SITE_DIR / "templates" / "base.html").read_text(encoding="utf-8")
+def load_template(name: str) -> str:
+    return (SITE_DIR / "templates" / name).read_text(encoding="utf-8")
 
 
 def replace_tokens(template: str, values: dict[str, str]) -> str:
@@ -520,6 +707,138 @@ def replace_tokens(template: str, values: dict[str, str]) -> str:
     for key, value in values.items():
         rendered = rendered.replace(f"{{{{{key}}}}}", value)
     return rendered
+
+
+def resolve_markdown_href(
+    href: str,
+    *,
+    source_path: Path,
+    current_site_path: str,
+    published_files: dict[str, str],
+    page_lookup: dict[Path, dict[str, object]],
+) -> str:
+    if href.startswith(("http://", "https://", "mailto:", "#")):
+        return href
+
+    path_part, fragment = href, ""
+    if "#" in href:
+        path_part, fragment = href.split("#", 1)
+
+    candidate = (source_path.parent / path_part).resolve() if path_part else source_path
+    destination: str | None = None
+    page_spec = page_lookup.get(candidate)
+    if page_spec is not None and candidate.suffix == ".md":
+        destination = f'{page_spec["site_dir"]}/index.html'
+    else:
+        try:
+            relative = candidate.relative_to(REPO_ROOT).as_posix()
+        except ValueError:
+            relative = ""
+        destination = published_files.get(relative)
+
+    if destination is None:
+        return href
+
+    resolved = relative_site_href(current_site_path, destination)
+    return f"{resolved}#{quote(fragment)}" if fragment else resolved
+
+
+def build_toc_links(headings: Iterable[tuple[int, str, str]]) -> str:
+    toc_items = [
+        (
+            level,
+            f'<a class="toc-link toc-level-{level}" href="#{html.escape(anchor, quote=True)}">{html.escape(title)}</a>',
+        )
+        for level, title, anchor in headings
+        if level in {2, 3}
+    ]
+    if not toc_items:
+        return '<p class="toc-empty">No section headings found.</p>'
+    return "".join(item for _, item in toc_items)
+
+
+def build_doc_source_links(
+    source_items: Iterable[dict[str, str]],
+    *,
+    current_site_path: str,
+    published_files: dict[str, str],
+) -> str:
+    links: list[tuple[str, str, str]] = []
+    for source_item in source_items:
+        source_key = str(source_item["source"])
+        site_path = published_files[source_key]
+        links.append((str(source_item["label"]), relative_site_href(current_site_path, site_path), "primary"))
+        if site_path.endswith(".md"):
+            links.append((f'{source_item["label"]} print', markdown_print_href_from(current_site_path, site_path), "secondary"))
+    return build_link_pills(links)
+
+
+def build_related_page_links(
+    related_page_ids: Iterable[str],
+    *,
+    current_site_path: str,
+) -> str:
+    page_specs = {str(spec["id"]): spec for spec in PAGE_DOCS}
+    links: list[str] = []
+    for page_id in related_page_ids:
+        spec = page_specs[page_id]
+        href = relative_site_href(current_site_path, f'{spec["site_dir"]}/index.html')
+        links.append(
+            f'<a class="doc-nav-link" href="{html.escape(href, quote=True)}"><strong>{html.escape(str(spec["title"]))}</strong><span>{html.escape(str(spec["summary"]))}</span></a>'
+        )
+    return "".join(links)
+
+
+def write_document_page(
+    out_dir: Path,
+    spec: dict[str, object],
+    *,
+    published_files: dict[str, str],
+    page_lookup: dict[Path, dict[str, object]],
+) -> None:
+    source_path = resolve_source_path(str(spec["source"]))
+    current_site_path = f'{spec["site_dir"]}/index.html'
+    markdown_text = source_path.read_text(encoding="utf-8")
+    body_html, headings = markdown_to_html(
+        markdown_text,
+        link_resolver=lambda href: resolve_markdown_href(
+            href,
+            source_path=source_path,
+            current_site_path=current_site_path,
+            published_files=published_files,
+            page_lookup=page_lookup,
+        ),
+        drop_first_h1=True,
+    )
+    source_items = [{"label": "Source markdown", "source": str(spec["source"])}]
+    source_items.extend(spec.get("extra_sources", []))
+    template = load_template("document.html")
+    page_html = replace_tokens(
+        template,
+        {
+            "PAGE_TITLE": html.escape(str(spec["title"])),
+            "DOC_KICKER": html.escape(str(spec["kicker"])),
+            "DOC_TITLE": html.escape(str(spec["title"])),
+            "DOC_SUMMARY": html.escape(str(spec["summary"])),
+            "DOC_TOC": build_toc_links(headings),
+            "DOC_SOURCE_LINKS": build_doc_source_links(
+                source_items,
+                current_site_path=current_site_path,
+                published_files=published_files,
+            ),
+            "DOC_RELATED_LINKS": build_related_page_links(
+                spec.get("related_page_ids", []),
+                current_site_path=current_site_path,
+            ),
+            "DOC_BODY": body_html,
+            "HOME_HREF": relative_site_href(current_site_path, "index.html"),
+            "MAP_HREF": relative_site_href(current_site_path, "map/map.html"),
+            "PRINT_TOOL_HREF": relative_site_href(current_site_path, TOOL_VIEWER_PATH),
+        },
+    )
+    doc_out_dir = out_dir / str(spec["site_dir"])
+    doc_out_dir.mkdir(parents=True, exist_ok=True)
+    (doc_out_dir / "index.html").write_text(page_html, encoding="utf-8")
 
 
 def zip_directory(source_dir: Path, destination_zip: Path) -> None:
@@ -540,8 +859,7 @@ def copy_static_assets(out_dir: Path) -> None:
 
 
 def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> None:
-    template = load_template()
-    report_dir_name = report_dir.name
+    template = load_template("base.html")
     updated_value = summary.get("generated_date") or datetime.now(UTC).date().isoformat()
     published_files = publish_supporting_files(out_dir)
     page_html = replace_tokens(
@@ -549,17 +867,21 @@ def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> N
         {
             "PAGE_TITLE": "New Bank Access Evidence",
             "UPDATED_DATE": html.escape(str(updated_value)),
-            "REPORT_NAME": html.escape(report_dir_name),
+            "REPORT_NAME": html.escape(report_dir.name),
             "MAP_HREF": "map/map.html",
             "REPO_HREF": "https://github.com/bobbigmac/nhs-complaint-dec-2024",
             "STAT_CARDS": build_stat_cards(summary),
-            "ACTION_CARDS": build_action_cards(report_dir_name),
+            "ACTION_CARDS": build_action_cards(published_files),
             "REFERENCE_CARDS": build_reference_cards(published_files),
             "ISSUE_PANELS": build_issue_panels(published_files),
             "PRINT_TOOL_HREF": TOOL_VIEWER_PATH,
         },
     )
     (out_dir / "index.html").write_text(page_html, encoding="utf-8")
+
+    page_lookup = build_page_lookup()
+    for spec in PAGE_DOCS:
+        write_document_page(out_dir, spec, published_files=published_files, page_lookup=page_lookup)
 
 
 def write_redirect_file(out_dir: Path, target: str) -> None:

@@ -440,7 +440,7 @@ The strongest short-form competitor/context picture from current repo work is:
 
 See also:
 
-- [datasets/management_companies/output/company_watchlist_report.md](./datasets/management_companies/output/company_watchlist_report.md)
+- [datasets/management_companies/output/company_watchlist_report.md](../management_companies/output/company_watchlist_report.md)
 
 ## Pressure map
 
@@ -776,6 +776,6 @@ That should make the operating environment legible without implying a single com
 
 ## Related repo files
 
-- [datasets/management_companies/watchlist.json](./datasets/management_companies/watchlist.json)
-- [datasets/management_companies/output/company_watchlist_report.md](./datasets/management_companies/output/company_watchlist_report.md)
-- [datasets/enrich_management_companies.py](./datasets/enrich_management_companies.py)
+- [datasets/management_companies/watchlist.json](../management_companies/watchlist.json)
+- [datasets/management_companies/output/company_watchlist_report.md](../management_companies/output/company_watchlist_report.md)
+- [datasets/enrich_management_companies.py](../enrich_management_companies.py)

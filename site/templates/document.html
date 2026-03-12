@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="page-shell page-shell-doc">
+    <header class="doc-hero">
+      <div class="hero-copy doc-hero-copy">
+        <p class="eyebrow">{{DOC_KICKER}}</p>
+        <p class="doc-breadcrumb"><a href="{{HOME_HREF}}">Home</a> <span>/</span> <a href="{{MAP_HREF}}">Map</a></p>
+        <h1>{{DOC_TITLE}}</h1>
+        <p class="standfirst">{{DOC_SUMMARY}}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{HOME_HREF}}">Back to homepage</a>
+          <a class="button button-secondary" href="{{MAP_HREF}}">Open map</a>
+        </div>
+      </div>
+      <aside class="hero-panel doc-hero-panel">
+        <p class="panel-label">Source files</p>
+        <div class="doc-pill-stack">
+          {{DOC_SOURCE_LINKS}}
+        </div>
+      </aside>
+    </header>
+
+    <main class="doc-layout">
+      <aside class="doc-sidebar">
+        <section class="rail-panel doc-side-card">
+          <p class="panel-label">On this page</p>
+          <nav class="toc-list" aria-label="Page contents">
+            {{DOC_TOC}}
+          </nav>
+        </section>
+
+        <section class="rail-panel doc-side-card">
+          <p class="panel-label">Related views</p>
+          <div class="doc-nav-list">
+            {{DOC_RELATED_LINKS}}
+          </div>
+        </section>
+      </aside>
+
+      <article class="doc-article">
+        <div class="doc-body">
+          {{DOC_BODY}}
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built from repo-local markdown under datasets and published as static HTML.</p>
+      <p><a href="{{PRINT_TOOL_HREF}}">Markdown print viewer</a></p>
+    </footer>
+  </div>
+</body>
+</html>
