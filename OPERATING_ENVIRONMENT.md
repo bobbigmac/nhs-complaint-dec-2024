@@ -45,6 +45,56 @@ That matters because the pressures are not just "grow revenue" or "beat rivals".
 - standardising services across localities without losing local legitimacy
 - collaborating with peers in one layer while competing with them in another
 
+## Working thesis for the site
+
+This is the current high-level argument the site is trying to make about GTD's operating environment.
+
+Greater Manchester appears to rely on a relatively small network of federations, CICs and social-enterprise-style providers to absorb the awkward, high-friction end of primary care and urgent primary care. GTD looks like one of the main risk absorbers in that network.
+
+At system level, the strongest public incentives appear to be:
+
+- continuity of service
+- mobilisation capacity
+- estate and workforce resilience
+- budget discipline
+- integration with wider urgent-care pathways
+
+Patient-experience signals appear to matter less unless they become impossible to ignore through regulation, politics, contract failure or reputational damage.
+
+Under those conditions, the risk is that a provider can drift toward **organisationally protective front-door design**:
+
+- triage and routing systems that protect scarce capacity
+- contact models that shift effort and persistence onto patients
+- access barriers that look like "managed demand" internally but feel like exclusion externally
+
+The central claim is not just that this makes care harder to get. It is that sustained access friction can:
+
+- exclude some patients from care altogether
+- delay presentation until conditions worsen
+- push people into A&E, urgent treatment or crisis routes
+- cause silent drop-off when patients stop trying
+- deepen inequalities because the hardest-hit patients are often the least able to navigate a difficult front door
+
+That is the core point to keep testing throughout the site: **friction is not neutral**. It is not just inconvenience. In enough volume, it can become a health-harming operating model.
+
+## What still needs to be shown clearly
+
+To make that case well, the site should keep separating different levels of proof:
+
+- **Already visible**
+  difficult front doors, restart loops, reception friction, access complaints, and weak patient-experience response
+- **Strong inference**
+  some of that friction is organisationally useful because it protects throughput, appointments, staffing and budget pressure
+- **What needs careful evidence**
+  the extent to which friction is linked to deterioration, delayed treatment, inappropriate use of emergency care, unregistered drift, or patients simply giving up
+
+The claim is:
+
+- the system appears to reward access control more than patient-experience learning
+- GTD appears to operate within that system as a major pressure-bearing provider
+- under those pressures, its front door can function as a rationing mechanism by friction
+- the likely result is not just dissatisfaction, but exclusion and worsening health for some patients
+
 ## Core GTD-adjacent entities
 
 ### gtd healthcare
@@ -443,6 +493,32 @@ Visible signals:
 
 - Mastercall's CEO message explicitly names workforce as one of its biggest challenges.
 - Many of these organisations market training, workforce development and staff investment as strategic assets.
+
+### Employee-review layer
+
+This layer is **thin and anecdotal**, so it should not be used as if it were a workforce survey. But it is still worth showing because the direction of travel broadly matches the wider pressure picture.
+
+- **GTD Healthcare**
+  Indeed's UK company page was showing an overall **3.0/5** based on **7 reviews**, with **3.3** for work-life balance, **2.8** for pay and benefits, **2.8** for management, **2.8** for job security and advancement, and **3.0** for culture. Recent review headlines included **"unsafe environment"** and a description of an **"overwhelming workload"**, alongside older positive reviews from finance and governance roles.
+
+- **Hope Citadel Healthcare**
+  Indeed's UK page was showing **2.3/5** based on **4 reviews**. The sample is very small, but it includes comments about difficult patient-facing work, weak progression and poor management support.
+
+- **Mastercall Healthcare**
+  Indeed's UK page was showing **3.5/5** based on **2 reviews**. That is also too small to treat as robust, but the tiny sample is somewhat more positive overall, while still raising concerns about pay, shift allocation and management behaviour.
+
+Interpretation:
+
+- this material is too thin to carry a case on its own
+- but it does fit the broader picture of difficult frontline work, uneven support and pressure-heavy service models
+- poor pay or weak support may help explain brittle reception, triage or care-coordination behaviour
+- they do **not** excuse patient harm, exclusion or large-scale access failure
+
+Key sources:
+
+- https://uk.indeed.com/cmp/Gtd-Healthcare/reviews
+- https://uk.indeed.com/cmp/Hope-Citadel-Healthcare/reviews
+- https://uk.indeed.com/cmp/Mastercall-Healthcare/reviews?fcountry=ALL
 
 ### 4. Social-value and legitimacy pressure
 

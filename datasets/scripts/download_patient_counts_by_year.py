@@ -80,9 +80,12 @@ def download_file(url: str, dest: Path) -> bool:
     return True
 
 
-def load_patient_counts_from_csv(path: Path, codes: set[str]) -> dict[str, int]:
-    """Load patient counts for our practices from CSV."""
-    counts = {}
+def load_patient_counts_from_csv(
+    path: Path, codes: set[str]
+) -> tuple[dict[str, int], dict[str, list[dict[str, str]]]]:
+    """Load patient counts and by-postcode index for our practices from CSV."""
+    counts: dict[str, int] = {}
+    by_postcode: dict[str, list[dict[str, str]]] = {}
     with path.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -95,11 +98,17 @@ def load_patient_counts_from_csv(path: Path, codes: set[str]) -> dict[str, int]:
             code = str(row.get("CODE", "")).strip()
             if code not in codes:
                 continue
+            postcode = str(row.get("POSTCODE", "")).strip().upper()
             try:
-                counts[code] = int(row.get("NUMBER_OF_PATIENTS", "0") or "0")
+                count = int(row.get("NUMBER_OF_PATIENTS", "0") or "0")
             except (TypeError, ValueError):
-                pass
-    return counts
+                continue
+            counts[code] = count
+            if postcode:
+                by_postcode.setdefault(postcode, []).append(
+                    {"code": code, "postcode": postcode, "count": str(count)}
+                )
+    return counts, by_postcode
 
 
 def main() -> int:
@@ -136,15 +145,22 @@ def main() -> int:
                 print(f"error: {e}")
                 continue
 
-        counts = load_patient_counts_from_csv(csv_path, codes)
+        counts, _ = load_patient_counts_from_csv(csv_path, codes)
         by_year[year] = counts
         print(f"    -> {len(counts)} practices in our dataset")
 
-    # Build output structure
+    latest_year = max(by_year.keys()) if by_year else None
+    by_postcode: dict[str, list[dict[str, str]]] = {}
+    if latest_year:
+        csv_path = DOWNLOADS_DIR / f"gp-reg-pat-prac-all-{latest_year}.csv"
+        if csv_path.exists():
+            _, by_postcode = load_patient_counts_from_csv(csv_path, codes)
+
     output = {
         "source": "NHS Digital Patients Registered at a GP Practice (January snapshot)",
         "years": sorted(by_year.keys()),
         "by_year": {str(y): by_year[y] for y in sorted(by_year.keys())},
+        "by_postcode": by_postcode,
         "practice_codes": sorted(codes),
         "practice_count": len(codes),
     }

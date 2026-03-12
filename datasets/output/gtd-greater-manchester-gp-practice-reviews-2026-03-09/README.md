@@ -28,7 +28,7 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
-- Registered patients totals: https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026
+- Registered patient counts: pre-parsed patient_counts_by_year.json (run datasets/scripts/download_patient_counts_by_year.py manually)
 - Supplemental broader Greater Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M25 1BT, M26 1LS, M27 4AA, M28 0BQ, M31 4FL, M32 0JG, M33 7ZF, M45 8WF, M50 3UB
 
 Coverage snapshot:
@@ -36,9 +36,9 @@ Coverage snapshot:
 - total rows: 424
 - GTD-managed rows: 13
 - non-GTD nearby rows: 411
-- Google review coverage rows: 32
-- Google Maps direct coverage rows: 0
-- Review text files written: 0
+- Google review coverage rows: 424
+- Google Maps direct coverage rows: 414
+- Review text files written: 367
 - GTD takeover dates documented: 13
 - Practices with management company identified: 69
 - Distinct management companies identified: 17
@@ -46,8 +46,8 @@ Coverage snapshot:
 - Distinct affiliated groups identified: 3
 - Practices with registered patient count: 360
 - Practices with registered patient count candidate: 0
-- Google Maps scans completed: 415
-- Google Maps manual review queue: 1
+- Google Maps scans completed: 0
+- Google Maps manual review queue: 0
 
 Caveats:
 

@@ -342,7 +342,6 @@ def build_stat_cards(summary: dict[str, object]) -> str:
         ("Practices in scope", summary.get("row_count", "?")),
         ("GTD-managed practices", summary.get("gtd_managed_count", "?")),
         ("Google-scored practices", summary.get("google_review_coverage_count", "?")),
-        ("Takeover dates documented", summary.get("gtd_takeover_date_count", "?")),
         ("Registered-patient matches", summary.get("registered_patient_count_coverage", "?")),
         ("Postcode areas covered", summary.get("postcode_area_count", "?")),
     ]
@@ -484,11 +483,6 @@ def build_action_cards(report_dir_name: str) -> str:
                 ("Markdown", "map/README.md", "primary"),
                 ("Print view", markdown_print_href("map/README.md"), "secondary"),
             ],
-        },
-        {
-            "title": "Markdown print viewer",
-            "description": "Open the bundled utility for printing markdown evidence, or use the per-document Print view links below.",
-            "links": [("Open tool", TOOL_VIEWER_PATH, "primary")],
         },
     ]
     return "\n".join(

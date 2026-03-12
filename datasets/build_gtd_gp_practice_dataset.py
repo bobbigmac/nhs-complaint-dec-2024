@@ -25,9 +25,6 @@ GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "raw" / "gp_patient_survey"
 GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
 GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_branch_parent_codes.json"
-GP_REGISTERED_PATIENTS_CSV = BASE_DIR / "raw" / "registered_patients" / "gp-reg-pat-prac-all.csv"
-GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
-GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
 PATIENT_COUNTS_BY_YEAR_JSON = BASE_DIR / "raw" / "registered_patients" / "patient_counts_by_year.json"
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
@@ -169,45 +166,6 @@ def apply_gtd_takeover_metadata(rows: list[dict[str, Any]]) -> list[dict[str, An
     return enriched_rows
 
 
-def ensure_registered_patients_csv(csv_path: Path = GP_REGISTERED_PATIENTS_CSV) -> Path:
-    if csv_path.exists():
-        return csv_path
-    csv_path.parent.mkdir(parents=True, exist_ok=True)
-    with NamedTemporaryFile(suffix=".zip", delete=False, dir=csv_path.parent) as handle:
-        temp_zip_path = Path(handle.name)
-    try:
-        subprocess.run(
-            [
-                "curl",
-                "-LfsS",
-                "--connect-timeout",
-                "15",
-                "--max-time",
-                "120",
-                "--retry",
-                "2",
-                "--retry-delay",
-                "1",
-                "-A",
-                USER_AGENT,
-                GP_REGISTERED_PATIENTS_ZIP_URL,
-                "-o",
-                str(temp_zip_path),
-            ],
-            check=True,
-            capture_output=True,
-            timeout=130,
-        )
-        with zipfile.ZipFile(temp_zip_path) as archive:
-            csv_names = [name for name in archive.namelist() if name.lower().endswith(".csv")]
-            if not csv_names:
-                raise RuntimeError("Registered patients zip did not contain a CSV file")
-            csv_path.write_bytes(archive.read(csv_names[0]))
-    finally:
-        temp_zip_path.unlink(missing_ok=True)
-    return csv_path
-
-
 def load_registered_patient_timeseries(
     path: Path = PATIENT_COUNTS_BY_YEAR_JSON,
 ) -> dict[str, dict[str, int]] | None:
@@ -218,27 +176,16 @@ def load_registered_patient_timeseries(
     return data.get("by_year")
 
 
-def load_registered_patient_index(csv_path: Path = GP_REGISTERED_PATIENTS_CSV) -> dict[str, int]:
-    source_path = ensure_registered_patients_csv(csv_path)
-    patient_counts: dict[str, int] = {}
-    with source_path.open(encoding="utf-8-sig", newline="") as handle:
-        reader = csv.DictReader(handle)
-        for row in reader:
-            if str(row.get("TYPE", "")).strip() != "GP":
-                continue
-            if str(row.get("SEX", "")).strip() != "ALL":
-                continue
-            if str(row.get("AGE", "")).strip() != "ALL":
-                continue
-            code = str(row.get("CODE", "")).strip()
-            raw_count = str(row.get("NUMBER_OF_PATIENTS", "")).strip()
-            if not code or not raw_count:
-                continue
-            try:
-                patient_counts[code] = int(raw_count)
-            except ValueError:
-                continue
-    return patient_counts
+def load_registered_patient_index(path: Path = PATIENT_COUNTS_BY_YEAR_JSON) -> dict[str, int]:
+    """Load current patient counts from pre-parsed patient_counts_by_year.json (latest year)."""
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    by_year = data.get("by_year")
+    if not by_year:
+        return {}
+    latest = max(by_year.keys(), key=int)
+    return dict(by_year[latest])
 
 
 def slugify(value: str) -> str:
@@ -509,12 +456,6 @@ def build_dataset() -> list[dict[str, Any]]:
     resolved_anchors = [resolve_anchor(anchor) for anchor in GTD_ANCHORS]
     resolved_supplementals = [resolve_supplemental_center(center) for center in SUPPLEMENTAL_SEARCH_CENTERS]
     registered_patient_counts = load_registered_patient_index()
-    timeseries = load_registered_patient_timeseries()
-    if timeseries:
-        latest_year = max(timeseries.keys(), key=int)
-        for code, count in timeseries[latest_year].items():
-            if code not in registered_patient_counts:
-                registered_patient_counts[code] = count
     anchor_codes = {anchor["ods_code"]: anchor for anchor in resolved_anchors}
     practice_index: dict[str, dict[str, Any]] = {}
 
@@ -722,9 +663,7 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "nhs_find_a_gp": "https://www.nhs.uk/service-search/find-a-gp",
             "postcode_geocoder": "https://api.postcodes.io/",
             "google_review_mirror": "https://justvisits.co.uk/",
-            "registered_patients_publication": GP_REGISTERED_PATIENTS_PUBLICATION_URL,
-            "registered_patients_zip": GP_REGISTERED_PATIENTS_ZIP_URL,
-            "patient_counts_by_year_json": str(PATIENT_COUNTS_BY_YEAR_JSON.relative_to(BASE_DIR)) if PATIENT_COUNTS_BY_YEAR_JSON.exists() else "",
+            "patient_counts_json": str(PATIENT_COUNTS_BY_YEAR_JSON.relative_to(BASE_DIR)) if PATIENT_COUNTS_BY_YEAR_JSON.exists() else "",
             "gtd_takeover_dates": str(GTD_TAKEOVER_METADATA_JSON.relative_to(BASE_DIR)),
         },
         "patient_counts_by_year_years": sorted(ts.keys(), key=int) if ts else [],
@@ -780,7 +719,7 @@ Source basis:
 - NHS Find a GP search results and profile pages: https://www.nhs.uk/service-search/find-a-gp
 - Postcode geocoding: https://api.postcodes.io/
 - Google review mirror used when exact matches were found: https://justvisits.co.uk/
-- Registered patients totals: https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026
+- Registered patient counts: pre-parsed patient_counts_by_year.json (run datasets/scripts/download_patient_counts_by_year.py manually)
 - Supplemental broader Greater Manchester search centres: M21 8AU, M22 5RX, M23 9JH, M25 1BT, M26 1LS, M27 4AA, M28 0BQ, M31 4FL, M32 0JG, M33 7ZF, M45 8WF, M50 3UB
 
 Coverage snapshot:
@@ -2781,6 +2720,22 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
   const activeCode = hoveredTrendPracticeCode || pinnedTrendPracticeCode;
   const activeEntry = practiceEntries.find((e) => e.series.code === activeCode) || null;
   const dimInactive = Boolean(activeEntry);
+  const patientOverlay = activeEntry ? (() => {{
+    const code = activeEntry.series.code;
+    const patientByYear = patientCountsByYear || {{}};
+    const pts = years.map((y, i) => {{
+      const raw = patientByYear[y]?.[code];
+      return typeof raw === 'number' ? {{ i, raw }} : null;
+    }}).filter(Boolean);
+    if (!pts.length) return null;
+    const vals = pts.map((p) => p.raw);
+    const pMin = Math.min(...vals);
+    const pMax = Math.max(...vals);
+    const norm = (v) => (pMax > pMin ? ((v - pMin) / (pMax - pMin)) * 100 : 0);
+    return pts.map((p) => ({{ i: p.i, v: norm(p.raw), raw: p.raw }}));
+  }})() : null;
+  const patientPoints = patientOverlay ? years.map((_, i) => {{ const p = patientOverlay.find((o) => o.i === i); return p ? p.v : null; }}) : [];
+  const patientPath = patientPoints.length ? linePath(patientPoints, xScale, yScale) : '';
   const pathOpacity = (e) => !dimInactive ? 0.46 : e.series.code === activeEntry?.series.code ? 0.96 : 0.12;
   const markerOpacity = (e) => !dimInactive ? 0.26 : e.series.code === activeEntry?.series.code ? 0.9 : 0.12;
   const strokeWidth = (e) => e.series.code === activeCode ? 2.8 : 1.35;
@@ -2804,6 +2759,10 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
   const averageMarker = averageFinalIndex >= 0 && averageFinal !== undefined
     ? `<circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)" opacity="${{dimInactive ? '0.74' : '1'}}"></circle><text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{Math.round(averageFinal)}}%</text>`
     : '';
+  const surveyPatientOverlay = patientPath ? `
+    <path d="${{patientPath}}" fill="none" stroke="#4c9a52" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" opacity="0.88"></path>
+    ${{patientOverlay.map((p) => `<circle cx="${{xScale(p.i).toFixed(2)}}" cy="${{yScale(p.v).toFixed(2)}}" r="3.5" fill="#4c9a52" opacity="0.9"><title>Patients: ${{p.raw.toLocaleString()}}</title></circle>`).join('')}}
+  ` : '';
   svg.innerHTML = `
     <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
     ${{yTicks.map((tick) => `<line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" /><text x="${{margin.left - 8}}" y="${{yScale(tick) + 4}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{tick}}%</text>`).join('')}}
@@ -2815,6 +2774,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
     <path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>
     ${{averageMarker}}
     ${{endMarkers}}
+    ${{surveyPatientOverlay}}
     <text x="${{width / 2}}" y="${{height - 10}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Survey year</text>
     <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">Overall experience good %</text>
   `;
@@ -2832,7 +2792,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {{
     button.addEventListener('blur', () => {{ hoveredTrendPracticeCode = null; renderGtdScoreTrendChart(); }});
     button.addEventListener('click', () => {{ pinnedTrendPracticeCode = pinnedTrendPracticeCode === code ? null : code; renderGtdScoreTrendChart(); }});
   }});
-  const activeSummary = !activeEntry ? ' Hover a practice in the legend to isolate its track.' : ` Highlighted: ${{activeEntry.series.name}}. Latest ${{activeEntry.lastValue === null ? '?' : Math.round(activeEntry.lastValue) + '%'}}.`;
+  const activeSummary = !activeEntry ? ' Hover a practice in the legend to isolate its track.' : ` Highlighted: ${{activeEntry.series.name}}. Latest ${{activeEntry.lastValue === null ? '?' : Math.round(activeEntry.lastValue) + '%'}}.${{patientPath ? ' Green dashed: patient count (normalized within practice).' : ''}}`;
   summary.textContent = `${{gtdSurveyTimeseries.practices_with_survey_history}} of ${{gtdSurveyTimeseries.gtd_practice_count}} GTD practices, ${{years.length}} survey years. Thin lines are practice-level overall-good %, dashed lines mark GTD takeover.${{activeSummary}}`;
 }}
 
@@ -2917,10 +2877,43 @@ function renderGtdScoreTrendChart() {{
   const activeCode = hoveredTrendPracticeCode || pinnedTrendPracticeCode;
   const activeEntry = practiceEntries.find((entry) => entry.series.code === activeCode) || null;
   const dimInactive = Boolean(activeEntry);
-  const pathOpacity = (entry) => !dimInactive ? 0.46 : entry.series.code === activeEntry.series.code ? 0.96 : 0.12;
-  const markerOpacity = (entry) => !dimInactive ? 0.26 : entry.series.code === activeEntry.series.code ? 0.9 : 0.12;
+
+  const monthIndexForYear = (year) => {{
+    const prefix = `${{year}}-01`;
+    const idx = months.findIndex((m) => String(m).startsWith(prefix));
+    return idx >= 0 ? idx : null;
+  }};
+  const buildOverlaySeries = (code) => {{
+    const overlay = {{ google: null, patient: null, survey: null }};
+    const surveySeries = (gtdSurveyTimeseries.practice_series || []).find((s) => s.code === code);
+    const surveyYears = gtdSurveyTimeseries.years || [];
+    const patientByYear = patientCountsByYear || {{}};
+    const patientYears = Object.keys(patientByYear).filter((y) => patientByYear[y] && typeof patientByYear[y][code] === 'number').sort((a, b) => a - b);
+    const patientValues = patientYears.map((y) => patientByYear[y][code]);
+    const pMin = patientValues.length ? Math.min(...patientValues) : 0;
+    const pMax = patientValues.length ? Math.max(...patientValues) : 1;
+    const normPatient = (v) => (pMax > pMin ? ((v - pMin) / (pMax - pMin)) * 100 : 0);
+    overlay.google = practiceSeries.find((s) => s.code === code)?.points || null;
+    overlay.patient = patientYears.length ? patientYears.map((y) => {{ const i = monthIndexForYear(parseInt(y, 10)); return i !== null ? {{ i, v: normPatient(patientByYear[y][code]), raw: patientByYear[y][code] }} : null; }}).filter(Boolean) : null;
+    overlay.survey = surveySeries && surveyYears.length ? surveyYears.map((y, idx) => {{ const i = monthIndexForYear(parseInt(y, 10)); const v = surveySeries.points?.[idx]; return i !== null && v !== null && Number.isFinite(v) ? {{ i, v, raw: v }} : null; }}).filter(Boolean) : null;
+    return overlay;
+  }};
+  const overlay = activeEntry ? buildOverlaySeries(activeEntry.series.code) : null;
+  const hasOverlay = overlay && (overlay.patient?.length || overlay.survey?.length);
+  const yScaleRight = hasOverlay ? (v) => margin.top + plotHeight - (v / 100) * plotHeight : null;
+  const pathOpacity = (entry) => !dimInactive ? 0.46 : entry.series.code === activeEntry?.series.code ? 0.96 : 0.12;
+  const markerOpacity = (entry) => !dimInactive ? 0.26 : entry.series.code === activeEntry?.series.code ? 0.9 : 0.12;
   const strokeWidth = (entry) => entry.series.code === activeCode ? 2.8 : 1.35;
   const pointRadius = (entry) => entry.series.code === activeCode ? 4.8 : 3.1;
+  const overlayPath = (points, yS) => {{
+    if (!points?.length || !yS) return '';
+    let path = '';
+    points.forEach(({{ i, v }}) => {{
+      const cmd = path ? 'L' : 'M';
+      path += `${{cmd}}${{xScale(i).toFixed(2)}} ${{yS(v).toFixed(2)}} `;
+    }});
+    return path.trim();
+  }};
   const practicePaths = practiceEntries.map((entry) => {{
     const finalText = entry.lastValue === null ? '?' : entry.lastValue.toFixed(2);
     const titleSuffix = entry.series.takeover_date
@@ -2975,6 +2968,12 @@ function renderGtdScoreTrendChart() {{
     `
     : '';
 
+  const overlayMarkup = hasOverlay && yScaleRight ? `
+    ${{overlay.patient?.length ? `<path d="${{overlayPath(overlay.patient, yScaleRight)}}" fill="none" stroke="#4c9a52" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" opacity="0.88"></path>${{overlay.patient.map((p) => `<circle cx="${{xScale(p.i).toFixed(2)}}" cy="${{yScaleRight(p.v).toFixed(2)}}" r="3.5" fill="#4c9a52" opacity="0.9"><title>Patients: ${{p.raw.toLocaleString()}}</title></circle>`).join('')}}` : ''}}
+    ${{overlay.survey?.length ? `<path d="${{overlayPath(overlay.survey, yScaleRight)}}" fill="none" stroke="#b67b4d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 4" opacity="0.88"></path>${{overlay.survey.map((p) => `<circle cx="${{xScale(p.i).toFixed(2)}}" cy="${{yScaleRight(p.v).toFixed(2)}}" r="3.5" fill="#b67b4d" opacity="0.9"><title>Survey good: ${{Math.round(p.raw)}}%</title></circle>`).join('')}}` : ''}}
+    <line x1="${{width - margin.right}}" y1="${{margin.top}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.25)" />
+    ${{[0, 25, 50, 75, 100].map((t) => `<text x="${{width - margin.right + 6}}" y="${{yScaleRight(t) + 4}}" text-anchor="start" font-size="10" fill="rgba(26,28,26,0.6)">${{t}}%</text>`).join('')}}
+  ` : '';
   svg.innerHTML = `
     <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
     ${{yTicks.map((tick) => `
@@ -2993,8 +2992,10 @@ function renderGtdScoreTrendChart() {{
     ${{averageMarker}}
     ${{endMarkers}}
     ${{activeTakeoverMarkup}}
+    ${{overlayMarkup}}
     <text x="${{width / 2}}" y="${{height - 10}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Approximate review month</text>
     <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">Reconstructed cumulative Google rating</text>
+    ${{hasOverlay ? `<text x="${{width - 14}}" y="${{height / 2}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.6)" transform="rotate(90 ${{width - 14}} ${{height / 2}})">Patient count (norm) · Survey %</text>` : ''}}
   `;
   legend.innerHTML = practiceEntries.map((entry) => {{
     const latestText = entry.lastValue === null ? 'No latest score' : `Latest ${{entry.lastValue.toFixed(2)}}`;
@@ -3051,7 +3052,7 @@ function renderGtdScoreTrendChart() {{
     : '';
   const activeSummary = !activeEntry
     ? ' Hover a practice in the side legend to isolate its track and takeover marker, or click to pin it.'
-    : ` Highlighted: ${{activeEntry.series.name}}. Latest reconstructed score is ${{activeEntry.lastValue === null ? '?' : activeEntry.lastValue.toFixed(2)}}${{activeEntry.series.takeover_date ? `, with GTD takeover on ${{formatTakeoverDate(activeEntry.series.takeover_date, activeEntry.series.takeover_precision)}}.` : '.'}}`;
+    : ` Highlighted: ${{activeEntry.series.name}}. Latest reconstructed score is ${{activeEntry.lastValue === null ? '?' : activeEntry.lastValue.toFixed(2)}}${{activeEntry.series.takeover_date ? `, with GTD takeover on ${{formatTakeoverDate(activeEntry.series.takeover_date, activeEntry.series.takeover_precision)}}.` : '.'}}${{hasOverlay ? ' Green dashed: patient count (normalized). Orange dashed: GP Survey good %.' : ''}}`;
   summary.textContent =
     `${{gtdGoogleTimeseries.practices_with_review_history}} of ${{gtdGoogleTimeseries.gtd_practice_count}} GTD practices contribute to this chart, based on ${{gtdGoogleTimeseries.parsed_review_count}} parsed Google review dates and ratings. Thin lines are practice-level reconstructed cumulative averages, dashed vertical lines mark documented GTD takeover dates, and the bold line is the mean of available practice trajectories. Relative dates are anchored to the scrape file timestamp ${{gtdGoogleTimeseries.anchor_date}}.${{activeSummary}}${{missingSuffix}}`;
 }}
@@ -3100,16 +3101,28 @@ rerenderAll();
 
 
 def main() -> int:
+    import argparse
+    parser = argparse.ArgumentParser(description="Build GTD GP practice dataset")
+    parser.add_argument("--fetch", action="store_true", help="Fetch from NHS (manual only); default loads from existing JSON")
+    args = parser.parse_args()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    rows = build_dataset()
+    if args.fetch:
+        rows = build_dataset()
+    else:
+        existing = OUTPUT_DIR / "gtd_greater_manchester_gp_practices.json"
+        if not existing.exists():
+            print(f"Dataset JSON not found: {existing}. Run with --fetch to build from NHS (manual).", file=sys.stderr)
+            return 1
+        rows = json.loads(existing.read_text(encoding="utf-8"))
+
+    if GOOGLE_REVIEW_RESULTS_JSON.exists():
+        from merge_google_maps_reviews import merge_rows
+        rows, _, _ = merge_rows(rows, json.loads(GOOGLE_REVIEW_RESULTS_JSON.read_text(encoding="utf-8")), 0.5)
+
     write_csv(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv", rows)
     write_json(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.json", rows)
     summary = write_summary(OUTPUT_DIR / "summary.json", rows)
     write_readme(OUTPUT_DIR / "README.md", summary)
-    # Build GPPS historical subset for GTD practices (needed for survey-mode chart)
-    import_script = BASE_DIR / "scripts" / "import_gpps_gtd_subset.py"
-    if import_script.exists():
-        subprocess.run([sys.executable, str(import_script)], check=False, cwd=BASE_DIR)
     write_map(OUTPUT_DIR / "map.html", rows)
     print(f"Wrote {len(rows)} rows to {OUTPUT_DIR}")
     return 0

@@ -1,7 +1,13 @@
 node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+.yarn/
 Practice_Level_Crosstab_*.csv
 package-lock.json
 yarn.lock
 package.json
+.vite/
 __pycache__
 site/dist/
+site/.vite-src/
+site/local-dist/

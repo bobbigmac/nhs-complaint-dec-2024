@@ -5,9 +5,9 @@
   "row_count": 424,
   "gtd_managed_count": 13,
   "non_gtd_count": 411,
-  "google_review_coverage_count": 32,
-  "google_maps_direct_coverage_count": 0,
-  "google_review_text_file_count": 0,
+  "google_review_coverage_count": 424,
+  "google_maps_direct_coverage_count": 414,
+  "google_review_text_file_count": 367,
   "gtd_takeover_date_count": 13,
   "management_company_identified_count": 69,
   "management_company_distinct_count": 17,
@@ -105,10 +105,20 @@
     "nhs_find_a_gp": "https://www.nhs.uk/service-search/find-a-gp",
     "postcode_geocoder": "https://api.postcodes.io/",
     "google_review_mirror": "https://justvisits.co.uk/",
-    "registered_patients_publication": "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026",
-    "registered_patients_zip": "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip",
+    "patient_counts_json": "raw/registered_patients/patient_counts_by_year.json",
     "gtd_takeover_dates": "config/gtd_takeover_dates.json"
   },
+  "patient_counts_by_year_years": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
   "supplemental_search_centers": [
     {
       "name": "Chorlton supplemental search",
@@ -197,8 +207,5 @@
     "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
     "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
     "Registered patient count candidate fields are advisory only and are used for branch/site reconciliation without replacing the direct NHS monthly match."
-  ],
-  "google_maps_total_scanned_count": 415,
-  "google_maps_flagged_result_count": 37,
-  "google_maps_manual_review_count": 1
+  ]
 }

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import csv
 import json
 import re
 from collections import Counter
@@ -11,7 +10,7 @@ from urllib.parse import urlparse
 
 from build_gtd_gp_practice_dataset import (
     OUTPUT_DIR,
-    ensure_registered_patients_csv,
+    PATIENT_COUNTS_BY_YEAR_JSON,
     fetch_text,
     write_csv,
     write_json,
@@ -52,23 +51,16 @@ def website_host(url: str) -> str:
 
 
 def load_registered_patient_rows() -> tuple[dict[str, int], dict[str, list[dict[str, str]]]]:
-    direct_by_code: dict[str, int] = {}
-    by_postcode: dict[str, list[dict[str, str]]] = {}
-    with ensure_registered_patients_csv().open(newline="", encoding="utf-8-sig") as handle:
-        reader = csv.DictReader(handle)
-        for row in reader:
-            if row.get("SEX") != "ALL" or row.get("AGE") != "ALL":
-                continue
-            code = str(row.get("CODE", "")).strip().upper()
-            postcode = str(row.get("POSTCODE", "")).strip().upper()
-            count = int(row.get("NUMBER_OF_PATIENTS", "0") or "0")
-            if not code:
-                continue
-            direct_by_code[code] = count
-            if postcode:
-                by_postcode.setdefault(postcode, []).append(
-                    {"code": code, "postcode": postcode, "count": str(count)}
-                )
+    """Load from pre-parsed patient_counts_by_year.json."""
+    if not PATIENT_COUNTS_BY_YEAR_JSON.exists():
+        return {}, {}
+    data = json.loads(PATIENT_COUNTS_BY_YEAR_JSON.read_text(encoding="utf-8"))
+    by_year = data.get("by_year", {})
+    by_postcode = data.get("by_postcode", {})
+    if not by_year:
+        return {}, by_postcode
+    latest = max(by_year.keys(), key=int)
+    direct_by_code = {k: int(v) for k, v in by_year[latest].items()}
     return direct_by_code, by_postcode
 
 
