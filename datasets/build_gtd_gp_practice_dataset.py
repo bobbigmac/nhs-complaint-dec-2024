@@ -26,6 +26,7 @@ GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
 GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_branch_parent_codes.json"
 PATIENT_COUNTS_BY_YEAR_JSON = BASE_DIR / "raw" / "registered_patients" / "patient_counts_by_year.json"
+DEPRIVATION_SUBSET_GEOJSON = BASE_DIR / "deprivation" / "output" / "catchment_lsoa_imd_2025.geojson"
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
@@ -802,6 +803,12 @@ def load_gp_patient_survey_branch_parent_index(
     return index
 
 
+def load_deprivation_subset_geojson(path: Path = DEPRIVATION_SUBSET_GEOJSON) -> dict[str, Any]:
+    if not path.exists():
+        return {"type": "FeatureCollection", "features": []}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def survey_metric(payload: dict[str, Any], question_name: str, field: str = "practice_percent") -> Any:
     key_questions = payload.get("key_questions", {})
     if not isinstance(key_questions, dict):
@@ -1057,6 +1064,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
     patient_counts_by_year = load_registered_patient_timeseries() or {}
+    deprivation_geojson = load_deprivation_subset_geojson()
     # TODO: Patient flow visualisation – use patient_counts_by_year to show where patients moved between practices over time
     known_management_companies = sorted(
         {
@@ -1217,13 +1225,30 @@ body {{
 #size-mode-control {{
   grid-template-columns: 1fr 1fr;
 }}
-#voronoi-control {{
+#area-overlay-control {{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}}
+.overlay-toggle-label {{
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(15, 94, 156, 0.04);
 }}
-#voronoi-control input {{
+.overlay-toggle-label.is-active {{
+  border-color: rgba(15, 94, 156, 0.28);
+  background: rgba(15, 94, 156, 0.09);
+}}
+.overlay-toggle-label input {{
   display: inline-block;
+  margin: 0;
 }}
 .segmented label {{
   display: flex;
@@ -1660,9 +1685,12 @@ body {{
         <p id="metric-description" class="hint"></p>
       </div>
       <div class="control-group">
-        <div id="voronoi-control">
-          <label title="An estimated population/affected-people view. This is a rough vibes layer, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span></label>
+        <h2>Area overlays</h2>
+        <div id="area-overlay-control">
+          <label id="population-overlay-control" class="overlay-toggle-label" title="An estimated population / affected-people view. This is a rough catchment proxy, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span></label>
+          <label id="deprivation-overlay-control" class="overlay-toggle-label" title="Official 2025 deprivation deciles for the current catchment subset, shown by 2021 LSOA polygon."><input type="checkbox" id="deprivation-toggle"><span>Est. Deprivation</span></label>
         </div>
+        <p id="area-overlay-tip" class="hint"></p>
       </div>
       <h2>Management</h2>
       <p id="manager-hint" class="hint"></p>
@@ -1710,6 +1738,7 @@ const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const patientCountsByYear = {json.dumps(patient_counts_by_year)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
+const deprivationGeojson = {json.dumps(deprivation_geojson, separators=(",", ":"))};
 const rowsByCode = new Map(rows.map((row) => [row.code, row]));
 const NEW_BANK_CODE = 'Y02960';
 const TREND_DEFAULT_CONTEXT_CODE = '__gtd_mean_with_new_bank__';
@@ -1728,6 +1757,7 @@ const dataBbox = (() => {{
 const map = L.map('map').setView([{center_lat:.6f}, {center_lon:.6f}], 11);
 const markerLayer = L.layerGroup().addTo(map);
 let voronoiLayer = null;
+let deprivationLayer = null;
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
   maxZoom: 18,
   attribution: '&copy; OpenStreetMap contributors'
@@ -1735,7 +1765,7 @@ L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
 const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
 const selectedManagementCompanies = new Set(['GTD Healthcare']);
 let activeMetric = 'google';
-let voronoiShow = false;
+let activeAreaOverlay = null;
 let focusedPracticeCode = NEW_BANK_CODE;
 let pinnedTrendPracticeCode = TREND_DEFAULT_CONTEXT_CODE;
 let hoveredTrendPracticeCode = null;
@@ -1997,6 +2027,29 @@ function clearOverlayLayers() {{
     map.removeLayer(voronoiLayer);
     voronoiLayer = null;
   }}
+  if (deprivationLayer) {{
+    map.removeLayer(deprivationLayer);
+    deprivationLayer = null;
+  }}
+}}
+
+function updateAreaOverlayControls() {{
+  const populationChecked = activeAreaOverlay === 'population';
+  const deprivationChecked = activeAreaOverlay === 'deprivation';
+  const populationToggle = document.getElementById('voronoi-toggle');
+  const deprivationToggle = document.getElementById('deprivation-toggle');
+  const tip = document.getElementById('area-overlay-tip');
+  populationToggle.checked = populationChecked;
+  deprivationToggle.checked = deprivationChecked;
+  document.getElementById('population-overlay-control').classList.toggle('is-active', populationChecked);
+  document.getElementById('deprivation-overlay-control').classList.toggle('is-active', deprivationChecked);
+  if (populationChecked) {{
+    tip.textContent = 'Approximate catchment cells built from practice locations and coloured by the active score metric. This is a rough vibes layer, not a real practice-boundary map.';
+  }} else if (deprivationChecked) {{
+    tip.textContent = 'Official 2025 IMD deciles for the current map catchment, shown by small-area LSOA polygon. This is area deprivation, not a practice-performance score.';
+  }} else {{
+    tip.textContent = '';
+  }}
 }}
 
 function voronoiGhostPoints() {{
@@ -2090,6 +2143,63 @@ function renderVoronoi() {{
     }}
   }});
   voronoiLayer.addTo(map);
+  voronoiLayer.bringToBack();
+}}
+
+function deprivationFillColor(decile) {{
+  if (decile === null) return '#9aa0a6';
+  if (decile <= 1) return '#8e1f1b';
+  if (decile <= 2) return '#b93522';
+  if (decile <= 4) return '#d86a1b';
+  if (decile <= 6) return '#d2b529';
+  if (decile <= 8) return '#72a847';
+  return '#1c7c54';
+}}
+
+function deprivationPopupMarkup(properties) {{
+  const decile = numericOrNull(properties.imd_decile);
+  const rank = numericOrNull(properties.imd_rank);
+  const score = numericOrNull(properties.imd_score);
+  const healthDecile = numericOrNull(properties.health_decile);
+  const population = numericOrNull(properties.population_2022);
+  return [
+    `<strong>${{properties.lsoa21nm || properties.lsoa21cd || 'LSOA'}}</strong>`,
+    `<div>IMD 2025 decile: ${{decile === null ? '?' : decile}} / 10 (1 = most deprived)</div>`,
+    `<div>IMD rank: ${{rank === null ? '?' : rank.toLocaleString('en-GB')}}</div>`,
+    `<div>IMD score: ${{score === null ? '?' : score.toFixed(3)}}</div>`,
+    `<div>Health deprivation decile: ${{healthDecile === null ? '?' : healthDecile}} / 10</div>`,
+    `<div>Population (mid-2022): ${{population === null ? '?' : population.toLocaleString('en-GB')}}</div>`,
+  ].join('');
+}}
+
+function renderDeprivation() {{
+  const features = (deprivationGeojson && deprivationGeojson.features ? deprivationGeojson.features : []).map((feature) => {{
+    const nextFeature = {{
+      ...feature,
+      properties: {{
+        ...(feature.properties || {{}}),
+        popupMarkup: deprivationPopupMarkup(feature.properties || {{}})
+      }}
+    }};
+    return nextFeature;
+  }});
+  if (!features.length) return;
+  deprivationLayer = L.geoJSON({{ type: 'FeatureCollection', features }}, {{
+    style: (feature) => {{
+      const decile = numericOrNull(feature?.properties?.imd_decile);
+      return {{
+        color: 'rgba(26,28,26,0.18)',
+        weight: 0.8,
+        fillColor: deprivationFillColor(decile),
+        fillOpacity: 0.34
+      }};
+    }},
+    onEachFeature: (feature, layer) => {{
+      layer.bindPopup(feature?.properties?.popupMarkup || '');
+    }}
+  }});
+  deprivationLayer.addTo(map);
+  deprivationLayer.bringToBack();
 }}
 
 function renderManagementList() {{
@@ -2306,7 +2416,7 @@ function renderMarkers() {{
   markerLayer.clearLayers();
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
-  const centroidByCode = voronoiShow ? voronoiCentroidByCode() : null;
+  const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
   for (const row of rows) {{
     const metricValue = metric.value(row);
     if (metricValue === null && activeMetric === 'gap') {{
@@ -3230,11 +3340,14 @@ function renderGtdScoreTrendChart() {{
 
 function rerenderAll() {{
   renderMetricLegend();
+  updateAreaOverlayControls();
   renderManagementList();
   clearOverlayLayers();
   renderMarkers();
-  if (voronoiShow) {{
+  if (activeAreaOverlay === 'population') {{
     renderVoronoi();
+  }} else if (activeAreaOverlay === 'deprivation') {{
+    renderDeprivation();
   }}
   renderGtdScoreTrendChart();
   renderScatterplot();
@@ -3249,12 +3362,17 @@ document.querySelectorAll('input[name="score-source"]').forEach((input) => {{
 }});
 
 document.getElementById('voronoi-toggle').addEventListener('change', (event) => {{
-  voronoiShow = event.target.checked;
+  activeAreaOverlay = event.target.checked ? 'population' : null;
+  rerenderAll();
+}});
+
+document.getElementById('deprivation-toggle').addEventListener('change', (event) => {{
+  activeAreaOverlay = event.target.checked ? 'deprivation' : null;
   rerenderAll();
 }});
 
 map.on('moveend', () => {{
-  if (voronoiShow) {{
+  if (activeAreaOverlay === 'population') {{
     if (voronoiLayer) {{
       map.removeLayer(voronoiLayer);
       voronoiLayer = null;
