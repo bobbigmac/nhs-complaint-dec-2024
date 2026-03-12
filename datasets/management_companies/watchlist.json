@@ -1,0 +1,82 @@
+{
+  "source_quote": "In the Manchester tender, New Bank had 7 bids, Charlestown 6, Simpson 8, City Health Centre 11; GTD won four Manchester lots, Northern Health GPPO won Victoria Mill, Hope Citadel won Droylsden and Hawthorn, and Rochdale Health Alliance won the Bolton and HMR lots.",
+  "companies": [
+    {
+      "company_name": "Northern Health GPPO Limited",
+      "kind": "tender_competitor",
+      "notes": [
+        "Named in the tender quote as the winner for Victoria Mill.",
+        "In the current dataset this group shows up as an affiliated group, not a core management-company match."
+      ],
+      "tracked_practices": [
+        {
+          "ods_code": "Y01695",
+          "practice_name": "MP Victoria Mill",
+          "reason": "Named directly in the tender quote."
+        }
+      ],
+      "candidate_practices": [
+        {
+          "ods_code": "P84004",
+          "practice_name": "Five Oaks Family Practice",
+          "reason": "Already tagged to Northern Health GPPO as an affiliated group in the current dataset."
+        },
+        {
+          "ods_code": "P84673",
+          "practice_name": "Ancoats Urban Village Medical Practice",
+          "reason": "Already tagged to Northern Health GPPO as an affiliated group in the current dataset."
+        },
+        {
+          "ods_code": "P84064",
+          "practice_name": "New Islington Medical Centre",
+          "reason": "Already tagged to Northern Health GPPO as an affiliated group in the current dataset."
+        }
+      ]
+    },
+    {
+      "company_name": "Hope Citadel Healthcare",
+      "kind": "tender_competitor",
+      "notes": [
+        "Named in the tender quote as the winner for Droylsden and Hawthorn.",
+        "The current dataset already has strong Hope Citadel management-company matches for Hawthorn and a larger Oldham/Rochdale cluster."
+      ],
+      "tracked_practices": [
+        {
+          "ods_code": "Y02890",
+          "practice_name": "Hawthorn MC",
+          "reason": "Named directly in the tender quote via Hawthorn."
+        },
+        {
+          "ods_code": "Y02663",
+          "practice_name": "Droylsden Medical Practice",
+          "reason": "Droylsden is named in the tender quote, but the current dataset marks this practice as GTD-managed."
+        }
+      ]
+    },
+    {
+      "company_name": "Rochdale Health Alliance",
+      "kind": "tender_competitor",
+      "notes": [
+        "Named in the tender quote as the winner for the Bolton and HMR lots.",
+        "No exact company-name match is currently present in the enriched dataset output, so this remains a live investigation item."
+      ],
+      "tracked_practices": [
+        {
+          "practice_name": "Bolton lot - exact practices unresolved",
+          "reason": "Lot winner is named in the quote, but the exact practice list still needs pinning down."
+        },
+        {
+          "practice_name": "HMR lot - exact practices unresolved",
+          "reason": "Lot winner is named in the quote, but the exact practice list still needs pinning down."
+        }
+      ],
+      "candidate_practices": [
+        {
+          "ods_code": "Y03079",
+          "practice_name": "Bolton Community Practice",
+          "reason": "In-catchment Bolton multi-site provider worth checking against the quoted Bolton lot."
+        }
+      ]
+    }
+  ]
+}

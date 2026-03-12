@@ -1,0 +1,67 @@
+[
+  {
+    "code": "P89011",
+    "name": "GORDON STREET MEDICAL CENTRE",
+    "overall_good_percent": 93.3
+  },
+  {
+    "code": "P89013",
+    "name": "HATTERSLEY GROUP PRACTICE",
+    "overall_good_percent": 65.61
+  },
+  {
+    "code": "P89602",
+    "name": "THE SMITHY SURGERY",
+    "overall_good_percent": 95.48
+  },
+  {
+    "code": "P89612",
+    "name": "MOSSLEY MEDICAL PRACTICE",
+    "overall_good_percent": 93.65
+  },
+  {
+    "code": "Y02325",
+    "name": "CHARLESTOWN MD",
+    "overall_good_percent": 76.76
+  },
+  {
+    "code": "Y02520",
+    "name": "SIMPSON  MEDICAL PRACTICE",
+    "overall_good_percent": 82.36
+  },
+  {
+    "code": "Y02586",
+    "name": "ASHTON GP SERVICE",
+    "overall_good_percent": 79.6
+  },
+  {
+    "code": "Y02663",
+    "name": "DROYLSDEN MEDICAL PRACTICE",
+    "overall_good_percent": 74.5
+  },
+  {
+    "code": "Y02713",
+    "name": "GUIDE BRIDGE MEDICAL PRACTICE",
+    "overall_good_percent": 96.63
+  },
+  {
+    "code": "Y02849",
+    "name": "CITY CENTRE HEALTH CENTRE",
+    "overall_good_percent": 80.5
+  },
+  {
+    "code": "Y02875",
+    "name": "LINDLEY HOUSE HEALTH CENTRE",
+    "overall_good_percent": 86.61
+  },
+  {
+    "code": "Y02936",
+    "name": "MILLBROOK MEDICAL PRACTICE",
+    "overall_good_percent": 86.1
+  },
+  {
+    "code": "Y02960",
+    "name": "NEW BANK HEALTH",
+    "overall_good_percent": 83.82
+  }
+]

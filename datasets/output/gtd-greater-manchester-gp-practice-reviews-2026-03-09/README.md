@@ -40,14 +40,14 @@ Coverage snapshot:
 - Google Maps direct coverage rows: 0
 - Review text files written: 0
 - GTD takeover dates documented: 13
-- Practices with management company identified: 13
-- Distinct management companies identified: 1
-- Practices with affiliated group identified: 0
-- Distinct affiliated groups identified: 0
+- Practices with management company identified: 69
+- Distinct management companies identified: 17
+- Practices with affiliated group identified: 10
+- Distinct affiliated groups identified: 3
 - Practices with registered patient count: 360
 - Practices with registered patient count candidate: 0
-- Google Maps scans completed: 0
-- Google Maps manual review queue: 0
+- Google Maps scans completed: 415
+- Google Maps manual review queue: 1
 
 Caveats:
 

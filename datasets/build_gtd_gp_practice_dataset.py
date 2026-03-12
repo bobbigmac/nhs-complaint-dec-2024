@@ -28,6 +28,7 @@ GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_
 GP_REGISTERED_PATIENTS_CSV = BASE_DIR / "raw" / "registered_patients" / "gp-reg-pat-prac-all.csv"
 GP_REGISTERED_PATIENTS_PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice/february-2026"
 GP_REGISTERED_PATIENTS_ZIP_URL = "https://files.digital.nhs.uk/BE/05436A/gp-reg-pat-prac-all.zip"
+PATIENT_COUNTS_BY_YEAR_JSON = BASE_DIR / "raw" / "registered_patients" / "patient_counts_by_year.json"
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
@@ -205,6 +206,16 @@ def ensure_registered_patients_csv(csv_path: Path = GP_REGISTERED_PATIENTS_CSV) 
     finally:
         temp_zip_path.unlink(missing_ok=True)
     return csv_path
+
+
+def load_registered_patient_timeseries(
+    path: Path = PATIENT_COUNTS_BY_YEAR_JSON,
+) -> dict[str, dict[str, int]] | None:
+    """Load per-year patient counts for dataset practices. Run datasets/scripts/download_patient_counts_by_year.py to generate."""
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("by_year")
 
 
 def load_registered_patient_index(csv_path: Path = GP_REGISTERED_PATIENTS_CSV) -> dict[str, int]:
@@ -498,6 +509,12 @@ def build_dataset() -> list[dict[str, Any]]:
     resolved_anchors = [resolve_anchor(anchor) for anchor in GTD_ANCHORS]
     resolved_supplementals = [resolve_supplemental_center(center) for center in SUPPLEMENTAL_SEARCH_CENTERS]
     registered_patient_counts = load_registered_patient_index()
+    timeseries = load_registered_patient_timeseries()
+    if timeseries:
+        latest_year = max(timeseries.keys(), key=int)
+        for code, count in timeseries[latest_year].items():
+            if code not in registered_patient_counts:
+                registered_patient_counts[code] = count
     anchor_codes = {anchor["ods_code"]: anchor for anchor in resolved_anchors}
     practice_index: dict[str, dict[str, Any]] = {}
 
@@ -679,6 +696,7 @@ def write_json(path: Path, rows: list[dict[str, Any]]) -> None:
 def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
     rows = apply_gtd_takeover_metadata(rows)
     postcodes = sorted({row["postcode"].split()[0] for row in rows if row["postcode"]})
+    ts = load_registered_patient_timeseries()
     summary = {
         "generated_date": "2026-03-09",
         "scope": "All GTD Healthcare GP practice anchors from the GTD Healthcare GP practices page, plus the full NHS Find a GP result set returned for a broad Greater Manchester catchment around each GTD anchor.",
@@ -706,8 +724,10 @@ def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
             "google_review_mirror": "https://justvisits.co.uk/",
             "registered_patients_publication": GP_REGISTERED_PATIENTS_PUBLICATION_URL,
             "registered_patients_zip": GP_REGISTERED_PATIENTS_ZIP_URL,
+            "patient_counts_by_year_json": str(PATIENT_COUNTS_BY_YEAR_JSON.relative_to(BASE_DIR)) if PATIENT_COUNTS_BY_YEAR_JSON.exists() else "",
             "gtd_takeover_dates": str(GTD_TAKEOVER_METADATA_JSON.relative_to(BASE_DIR)),
         },
+        "patient_counts_by_year_years": sorted(ts.keys(), key=int) if ts else [],
         "supplemental_search_centers": [
             {"name": center.name, "postcode": center.postcode, "scope_note": center.scope_note}
             for center in SUPPLEMENTAL_SEARCH_CENTERS
@@ -1085,6 +1105,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     survey_branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
+    patient_counts_by_year = load_registered_patient_timeseries() or {}
+    # TODO: Patient flow visualisation – use patient_counts_by_year to show where patients moved between practices over time
     known_management_companies = sorted(
         {
             row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else "")
@@ -1717,6 +1739,7 @@ body {{
 const rows = {json.dumps(markers)};
 const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
+const patientCountsByYear = {json.dumps(patient_counts_by_year)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const NEW_BANK_CODE = 'Y02960';
 const LOCAL_RADIUS_MILES = 2.5;
@@ -3084,9 +3107,9 @@ def main() -> int:
     summary = write_summary(OUTPUT_DIR / "summary.json", rows)
     write_readme(OUTPUT_DIR / "README.md", summary)
     # Build GPPS historical subset for GTD practices (needed for survey-mode chart)
-    extract_script = BASE_DIR / "scripts" / "extract_gpps_gtd_subset.py"
-    if extract_script.exists():
-        subprocess.run([sys.executable, str(extract_script)], check=False, cwd=BASE_DIR)
+    import_script = BASE_DIR / "scripts" / "import_gpps_gtd_subset.py"
+    if import_script.exists():
+        subprocess.run([sys.executable, str(import_script)], check=False, cwd=BASE_DIR)
     write_map(OUTPUT_DIR / "map.html", rows)
     print(f"Wrote {len(rows)} rows to {OUTPUT_DIR}")
     return 0

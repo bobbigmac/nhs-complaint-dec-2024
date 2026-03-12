@@ -1,0 +1,801 @@
+{
+  "source_quote": "In the Manchester tender, New Bank had 7 bids, Charlestown 6, Simpson 8, City Health Centre 11; GTD won four Manchester lots, Northern Health GPPO won Victoria Mill, Hope Citadel won Droylsden and Hawthorn, and Rochdale Health Alliance won the Bolton and HMR lots.",
+  "dataset_path": "datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/gtd_greater_manchester_gp_practices.json",
+  "dataset_row_count": 424,
+  "watch_companies": [
+    {
+      "company_name": "Northern Health GPPO Limited",
+      "kind": "tender_competitor",
+      "notes": [
+        "Named in the tender quote as the winner for Victoria Mill.",
+        "In the current dataset this group shows up as an affiliated group, not a core management-company match."
+      ],
+      "management_match_count": 0,
+      "affiliated_match_count": 4,
+      "management_matches": [],
+      "affiliated_matches": [
+        {
+          "ods_code": "P84004",
+          "practice_name": "Five Oaks Family Practice",
+          "postcode": "M11 3BB",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.fiveoaksfamilypractice.co.uk"
+        },
+        {
+          "ods_code": "P84673",
+          "practice_name": "Ancoats Urban Village Medical Practice",
+          "postcode": "M4 6EE",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.uvmp.co.uk/"
+        },
+        {
+          "ods_code": "P84064",
+          "practice_name": "New Islington Medical Centre",
+          "postcode": "M4 6EE",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.nismp.co.uk/"
+        },
+        {
+          "ods_code": "Y01695",
+          "practice_name": "MP Victoria Mill",
+          "postcode": "M40 7LH",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.victoriamillmedicalpractice.co.uk"
+        }
+      ],
+      "tracked_results": [
+        {
+          "tracked": {
+            "ods_code": "Y01695",
+            "practice_name": "MP Victoria Mill",
+            "reason": "Named directly in the tender quote."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "Y01695",
+            "practice_name": "MP Victoria Mill",
+            "postcode": "M40 7LH",
+            "management_company_name": "",
+            "management_company_source": "",
+            "affiliated_group_name": "Northern Health GPPO Limited",
+            "affiliated_group_source": "cqc_location_manual_lookup",
+            "website_url": "http://www.victoriamillmedicalpractice.co.uk"
+          }
+        }
+      ],
+      "candidate_results": [
+        {
+          "candidate": {
+            "ods_code": "P84004",
+            "practice_name": "Five Oaks Family Practice",
+            "reason": "Already tagged to Northern Health GPPO as an affiliated group in the current dataset."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "P84004",
+            "practice_name": "Five Oaks Family Practice",
+            "postcode": "M11 3BB",
+            "management_company_name": "",
+            "management_company_source": "",
+            "affiliated_group_name": "Northern Health GPPO Limited",
+            "affiliated_group_source": "cqc_location_manual_lookup",
+            "website_url": "http://www.fiveoaksfamilypractice.co.uk"
+          }
+        },
+        {
+          "candidate": {
+            "ods_code": "P84673",
+            "practice_name": "Ancoats Urban Village Medical Practice",
+            "reason": "Already tagged to Northern Health GPPO as an affiliated group in the current dataset."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "P84673",
+            "practice_name": "Ancoats Urban Village Medical Practice",
+            "postcode": "M4 6EE",
+            "management_company_name": "",
+            "management_company_source": "",
+            "affiliated_group_name": "Northern Health GPPO Limited",
+            "affiliated_group_source": "cqc_location_manual_lookup",
+            "website_url": "http://www.uvmp.co.uk/"
+          }
+        },
+        {
+          "candidate": {
+            "ods_code": "P84064",
+            "practice_name": "New Islington Medical Centre",
+            "reason": "Already tagged to Northern Health GPPO as an affiliated group in the current dataset."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "P84064",
+            "practice_name": "New Islington Medical Centre",
+            "postcode": "M4 6EE",
+            "management_company_name": "",
+            "management_company_source": "",
+            "affiliated_group_name": "Northern Health GPPO Limited",
+            "affiliated_group_source": "cqc_location_manual_lookup",
+            "website_url": "http://www.nismp.co.uk/"
+          }
+        }
+      ]
+    },
+    {
+      "company_name": "Hope Citadel Healthcare",
+      "kind": "tender_competitor",
+      "notes": [
+        "Named in the tender quote as the winner for Droylsden and Hawthorn.",
+        "The current dataset already has strong Hope Citadel management-company matches for Hawthorn and a larger Oldham/Rochdale cluster."
+      ],
+      "management_match_count": 10,
+      "affiliated_match_count": 0,
+      "management_matches": [
+        {
+          "ods_code": "Y02890",
+          "practice_name": "Hawthorn MC",
+          "postcode": "M14 6FS",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.hawthornmedicalcentre.org.uk"
+        },
+        {
+          "ods_code": "Y02795",
+          "practice_name": "Middleton Health Centre",
+          "postcode": "M24 4EL",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.middletonhealthcentre.org.uk"
+        },
+        {
+          "ods_code": "Y02718",
+          "practice_name": "Birtle View Medical Practice",
+          "postcode": "OL10 4PW",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://birtleviewmedicalpractice.org.uk"
+        },
+        {
+          "ods_code": "Y02721",
+          "practice_name": "Kirkholt Medical Practice",
+          "postcode": "OL11 2JG",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://kirkholtmedicalpractice.org.uk"
+        },
+        {
+          "ods_code": "Y02720",
+          "practice_name": "The Kingsway Practice",
+          "postcode": "OL16 4AT",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://thekingswaypractice.org.uk"
+        },
+        {
+          "ods_code": "P85614",
+          "practice_name": "Village Medical Practice",
+          "postcode": "OL2 8BF",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://villagemedicalpractice.org.uk/"
+        },
+        {
+          "ods_code": "P85622",
+          "practice_name": "Glodwick Medical Practice",
+          "postcode": "OL4 1YN",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://glodwickmedicalpractice.org.uk"
+        },
+        {
+          "ods_code": "Y02827",
+          "practice_name": "John Street Medical Practice",
+          "postcode": "OL8 1DF",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://johnstreetmedicalpractice.org.uk/"
+        },
+        {
+          "ods_code": "Y02753",
+          "practice_name": "Hill Top Surgery",
+          "postcode": "OL8 2QD",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.hilltopsurgery.org.uk"
+        },
+        {
+          "ods_code": "Y02933",
+          "practice_name": "Hollinwood Medical Practice",
+          "postcode": "OL8 3TR",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.hollinwoodpractice.org.uk"
+        }
+      ],
+      "affiliated_matches": [],
+      "tracked_results": [
+        {
+          "tracked": {
+            "ods_code": "Y02890",
+            "practice_name": "Hawthorn MC",
+            "reason": "Named directly in the tender quote via Hawthorn."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "Y02890",
+            "practice_name": "Hawthorn MC",
+            "postcode": "M14 6FS",
+            "management_company_name": "Hope Citadel Healthcare",
+            "management_company_source": "manual_lookup",
+            "affiliated_group_name": "",
+            "affiliated_group_source": "",
+            "website_url": "http://www.hawthornmedicalcentre.org.uk"
+          }
+        },
+        {
+          "tracked": {
+            "ods_code": "Y02663",
+            "practice_name": "Droylsden Medical Practice",
+            "reason": "Droylsden is named in the tender quote, but the current dataset marks this practice as GTD-managed."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "Y02663",
+            "practice_name": "Droylsden Medical Practice",
+            "postcode": "M43 7NP",
+            "management_company_name": "GTD Healthcare",
+            "management_company_source": "gtd_anchor_match",
+            "affiliated_group_name": "",
+            "affiliated_group_source": "",
+            "website_url": "https://www.gtdhealthcare.co.uk/droylsdenmedicalpractice"
+          }
+        }
+      ],
+      "candidate_results": []
+    },
+    {
+      "company_name": "Rochdale Health Alliance",
+      "kind": "tender_competitor",
+      "notes": [
+        "Named in the tender quote as the winner for the Bolton and HMR lots.",
+        "No exact company-name match is currently present in the enriched dataset output, so this remains a live investigation item."
+      ],
+      "management_match_count": 0,
+      "affiliated_match_count": 0,
+      "management_matches": [],
+      "affiliated_matches": [],
+      "tracked_results": [
+        {
+          "tracked": {
+            "practice_name": "Bolton lot - exact practices unresolved",
+            "reason": "Lot winner is named in the quote, but the exact practice list still needs pinning down."
+          },
+          "found_in_dataset": false,
+          "dataset_row": null
+        },
+        {
+          "tracked": {
+            "practice_name": "HMR lot - exact practices unresolved",
+            "reason": "Lot winner is named in the quote, but the exact practice list still needs pinning down."
+          },
+          "found_in_dataset": false,
+          "dataset_row": null
+        }
+      ],
+      "candidate_results": [
+        {
+          "candidate": {
+            "ods_code": "Y03079",
+            "practice_name": "Bolton Community Practice",
+            "reason": "In-catchment Bolton multi-site provider worth checking against the quoted Bolton lot."
+          },
+          "found_in_dataset": true,
+          "dataset_row": {
+            "ods_code": "Y03079",
+            "practice_name": "Bolton Community Practice",
+            "postcode": "BL1 8TT",
+            "management_company_name": "",
+            "management_company_source": "",
+            "affiliated_group_name": "",
+            "affiliated_group_source": "",
+            "website_url": "https://www.boltoncommunitypractice.nhs.uk/"
+          }
+        }
+      ]
+    }
+  ],
+  "auto_management_groups": [
+    {
+      "name": "SSP Health",
+      "field": "management_company_name",
+      "count": 10,
+      "matches": [
+        {
+          "ods_code": "Y02319",
+          "practice_name": "Bolton General Practice",
+          "postcode": "BL1 4TH",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com"
+        },
+        {
+          "ods_code": "P82613",
+          "practice_name": "Spring View Medical Centre",
+          "postcode": "BL3 1HQ",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com/our-practices/spring-view-medical-centre"
+        },
+        {
+          "ods_code": "P82609",
+          "practice_name": "Shanti Medical Centre",
+          "postcode": "BL3 3PH",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.ssphealth.com"
+        },
+        {
+          "ods_code": "Y00186",
+          "practice_name": "3D Medical Centre",
+          "postcode": "BL3 5DP",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com/our-practices/3d-medical-centre"
+        },
+        {
+          "ods_code": "Y02790",
+          "practice_name": "Bolton Medical Centre",
+          "postcode": "BL3 6PY",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com"
+        },
+        {
+          "ods_code": "P92637",
+          "practice_name": "Astley General Practice",
+          "postcode": "M29 7BY",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com/our-practices/astley-general-practice"
+        },
+        {
+          "ods_code": "Y02321",
+          "practice_name": "Poplar Street Surgery",
+          "postcode": "M29 8AX",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com/our-practices/poplar-street-surgery"
+        },
+        {
+          "ods_code": "Y02767",
+          "practice_name": "The Height General Practice",
+          "postcode": "M6 7NJ",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.ssphealth.com"
+        },
+        {
+          "ods_code": "P89618",
+          "practice_name": "Pike Medical Practice",
+          "postcode": "OL5 0HE",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com/our-practices/the-pike-practice"
+        },
+        {
+          "ods_code": "Y02322001",
+          "practice_name": "The Leigh Family Practice",
+          "postcode": "WN7 2XY",
+          "management_company_name": "SSP Health",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.ssphealth.com/our-practices/higher-folds-medical-centre"
+        }
+      ]
+    },
+    {
+      "name": "Hope Citadel Healthcare",
+      "field": "management_company_name",
+      "count": 10,
+      "matches": [
+        {
+          "ods_code": "Y02890",
+          "practice_name": "Hawthorn MC",
+          "postcode": "M14 6FS",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.hawthornmedicalcentre.org.uk"
+        },
+        {
+          "ods_code": "Y02795",
+          "practice_name": "Middleton Health Centre",
+          "postcode": "M24 4EL",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.middletonhealthcentre.org.uk"
+        },
+        {
+          "ods_code": "Y02718",
+          "practice_name": "Birtle View Medical Practice",
+          "postcode": "OL10 4PW",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://birtleviewmedicalpractice.org.uk"
+        },
+        {
+          "ods_code": "Y02721",
+          "practice_name": "Kirkholt Medical Practice",
+          "postcode": "OL11 2JG",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://kirkholtmedicalpractice.org.uk"
+        },
+        {
+          "ods_code": "Y02720",
+          "practice_name": "The Kingsway Practice",
+          "postcode": "OL16 4AT",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://thekingswaypractice.org.uk"
+        },
+        {
+          "ods_code": "P85614",
+          "practice_name": "Village Medical Practice",
+          "postcode": "OL2 8BF",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://villagemedicalpractice.org.uk/"
+        },
+        {
+          "ods_code": "P85622",
+          "practice_name": "Glodwick Medical Practice",
+          "postcode": "OL4 1YN",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://glodwickmedicalpractice.org.uk"
+        },
+        {
+          "ods_code": "Y02827",
+          "practice_name": "John Street Medical Practice",
+          "postcode": "OL8 1DF",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://johnstreetmedicalpractice.org.uk/"
+        },
+        {
+          "ods_code": "Y02753",
+          "practice_name": "Hill Top Surgery",
+          "postcode": "OL8 2QD",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.hilltopsurgery.org.uk"
+        },
+        {
+          "ods_code": "Y02933",
+          "practice_name": "Hollinwood Medical Practice",
+          "postcode": "OL8 3TR",
+          "management_company_name": "Hope Citadel Healthcare",
+          "management_company_source": "manual_lookup",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.hollinwoodpractice.org.uk"
+        }
+      ]
+    },
+    {
+      "name": "HMMG",
+      "field": "management_company_name",
+      "count": 5,
+      "matches": [
+        {
+          "ods_code": "P88026004",
+          "practice_name": "Little Moor Surgery",
+          "postcode": "SK2 5AR",
+          "management_company_name": "HMMG",
+          "management_company_source": "nhs_website_domain_shared",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.heatonmoormedicalgroup.co.uk/"
+        },
+        {
+          "ods_code": "P88026005",
+          "practice_name": "Bosden Moor Surgery",
+          "postcode": "SK2 5JL",
+          "management_company_name": "HMMG",
+          "management_company_source": "nhs_website_domain_shared",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.heatonmoormedicalgroup.co.uk/"
+        },
+        {
+          "ods_code": "P88026006",
+          "practice_name": "Adswood Road Surgery",
+          "postcode": "SK3 8PN",
+          "management_company_name": "HMMG",
+          "management_company_source": "nhs_website_domain_shared",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.heatonmoormedicalgroup.co.uk/"
+        },
+        {
+          "ods_code": "P88026",
+          "practice_name": "Heaton Moor Medical Group",
+          "postcode": "SK4 4NX",
+          "management_company_name": "HMMG",
+          "management_company_source": "nhs_website_domain_shared",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.heatonmoormedicalgroup.co.uk/"
+        },
+        {
+          "ods_code": "P88026002",
+          "practice_name": "Dean Lane Medical Centre",
+          "postcode": "SK7 6EJ",
+          "management_company_name": "HMMG",
+          "management_company_source": "nhs_website_domain_shared",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://www.heatonmoormedicalgroup.co.uk/"
+        }
+      ]
+    },
+    {
+      "name": "Tower Family Healthcare",
+      "field": "management_company_name",
+      "count": 4,
+      "matches": [
+        {
+          "ods_code": "P83012",
+          "practice_name": "Tower Family Healthcare",
+          "postcode": "BL8 4AD",
+          "management_company_name": "Tower Family Healthcare",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://towerfamilyhealthcare.co.uk/"
+        },
+        {
+          "ods_code": "P83012002",
+          "practice_name": "Tower Family Healthcare - Greenmount",
+          "postcode": "BL8 4DR",
+          "management_company_name": "Tower Family Healthcare",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://towerfamilyhealthcare.co.uk/"
+        },
+        {
+          "ods_code": "W4J3Q",
+          "practice_name": "Tower Family Healthcare Minden",
+          "postcode": "BL9 0NJ",
+          "management_company_name": "Tower Family Healthcare",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://towerfamilyhealthcare.co.uk/"
+        },
+        {
+          "ods_code": "P83012001",
+          "practice_name": "Tower Family Healthcare - Spring Lane",
+          "postcode": "M26 2TQ",
+          "management_company_name": "Tower Family Healthcare",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "https://towerfamilyhealthcare.co.uk/"
+        }
+      ]
+    },
+    {
+      "name": "Salford Primary Care Together",
+      "field": "management_company_name",
+      "count": 4,
+      "matches": [
+        {
+          "ods_code": "Y00445002",
+          "practice_name": "Salford Primary Care Together - Little Hulton",
+          "postcode": "M28 0AY",
+          "management_company_name": "Salford Primary Care Together",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.spctpractices.co.uk/"
+        },
+        {
+          "ods_code": "Y00445",
+          "practice_name": "Salford Primary Care Together",
+          "postcode": "M28 0BB",
+          "management_company_name": "Salford Primary Care Together",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.spctpractices.co.uk/"
+        },
+        {
+          "ods_code": "Y00445001",
+          "practice_name": "Salford Primary Care Together - Eccles Gateway",
+          "postcode": "M30 0TU",
+          "management_company_name": "Salford Primary Care Together",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.spctpractices.co.uk/"
+        },
+        {
+          "ods_code": "Y00445003",
+          "practice_name": "SPCT - Inclusion Service",
+          "postcode": "M6 5PL",
+          "management_company_name": "Salford Primary Care Together",
+          "management_company_source": "nhs_website_domain_known_group",
+          "affiliated_group_name": "",
+          "affiliated_group_source": "",
+          "website_url": "http://www.spctpractices.co.uk/"
+        }
+      ]
+    }
+  ],
+  "auto_affiliated_groups": [
+    {
+      "name": "Northern Health GPPO Limited",
+      "field": "affiliated_group_name",
+      "count": 4,
+      "matches": [
+        {
+          "ods_code": "P84004",
+          "practice_name": "Five Oaks Family Practice",
+          "postcode": "M11 3BB",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.fiveoaksfamilypractice.co.uk"
+        },
+        {
+          "ods_code": "P84673",
+          "practice_name": "Ancoats Urban Village Medical Practice",
+          "postcode": "M4 6EE",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.uvmp.co.uk/"
+        },
+        {
+          "ods_code": "P84064",
+          "practice_name": "New Islington Medical Centre",
+          "postcode": "M4 6EE",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.nismp.co.uk/"
+        },
+        {
+          "ods_code": "Y01695",
+          "practice_name": "MP Victoria Mill",
+          "postcode": "M40 7LH",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "Northern Health GPPO Limited",
+          "affiliated_group_source": "cqc_location_manual_lookup",
+          "website_url": "http://www.victoriamillmedicalpractice.co.uk"
+        }
+      ]
+    },
+    {
+      "name": "South Manchester GP Federation Limited",
+      "field": "affiliated_group_name",
+      "count": 4,
+      "matches": [
+        {
+          "ods_code": "P84034",
+          "practice_name": "Barlow Medical Centre",
+          "postcode": "M20 2RN",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "South Manchester GP Federation Limited",
+          "affiliated_group_source": "cqc_enhanced_access_manual_lookup",
+          "website_url": "https://www.barlowmed.com"
+        },
+        {
+          "ods_code": "P84043",
+          "practice_name": "Cornishway Group Practice",
+          "postcode": "M22 5RX",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "South Manchester GP Federation Limited",
+          "affiliated_group_source": "cqc_enhanced_access_manual_lookup",
+          "website_url": "http://www.cornishwaygp.co.uk/"
+        },
+        {
+          "ods_code": "P84021",
+          "practice_name": "THE MAPLES MEDICAL CENTRE",
+          "postcode": "M23 2SY",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "South Manchester GP Federation Limited",
+          "affiliated_group_source": "cqc_enhanced_access_manual_lookup",
+          "website_url": "https://themaplesmc.co.uk"
+        },
+        {
+          "ods_code": "P84045",
+          "practice_name": "The Park Medical Centre",
+          "postcode": "M23 9AB",
+          "management_company_name": "",
+          "management_company_source": "",
+          "affiliated_group_name": "South Manchester GP Federation Limited",
+          "affiliated_group_source": "cqc_enhanced_access_manual_lookup",
+          "website_url": "https://www.parkmedicalcentrewythenshawe.nhs.uk"
+        }
+      ]
+    }
+  ]
+}
