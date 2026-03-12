@@ -95,6 +95,52 @@ The claim is:
 - under those pressures, its front door can function as a rationing mechanism by friction
 - the likely result is not just dissatisfaction, but exclusion and worsening health for some patients
 
+## Contract and decision environment
+
+These points belong on the operating-environment page because they explain what kind of work GTD is being awarded, how those decisions are made, and which public bodies sit around the provider layer.
+
+### APMS is a commissioned service contract, not an acquisition
+
+- The Manchester APMS awards are public **contract values paid by the authority to the provider over the contract term**, not prices paid by GTD to "buy" a practice.
+- In the 2024/25 Manchester procurement, APMS contracts were publicly described as **10-year contracts from 1 April 2025 with an optional 5-year extension**.
+- Public papers and the inquiry trail suggest New Bank was an **existing APMS site being re-procured**, not a one-off emergency rescue or a corporate purchase.
+
+Key sources:
+
+- https://www.find-tender.service.gov.uk/Notice/038847-2024
+- https://www.find-tender.service.gov.uk/Notice/038847-2024/PDF
+- https://gmintegratedcare.org.uk/wp-content/uploads/2025/03/manchester-locality-pccc-primary-care-commissioning-committee-agenda-and-papers-27-march-2025.pdf
+
+### Public decision chain around the Manchester APMS procurement
+
+- The public record points to a layered decision structure:
+  - **NHS Greater Manchester ICB** as contracting authority
+  - **NECS** as procurement support / process machinery
+  - **GM PCCC** as the approval committee for award-stage decisions
+  - **locality teams / Manchester Locality Primary Care Team / LMT** handling mobilisation and transition
+- That matters because "who decided?" is not the same question as "who runs the practice now?"
+- It also means missing records may sit in different places: procurement files, committee approvals, locality transition papers, or contract-management packs.
+
+Key sources:
+
+- https://gmintegratedcare.org.uk/wp-content/uploads/2024/12/gm-pccc-part-1-merged-papers-pack-091224.pdf
+- https://gmintegratedcare.org.uk/wp-content/uploads/2025/03/manchester-locality-pccc-primary-care-commissioning-committee-agenda-and-papers-27-march-2025.pdf
+- https://gmintegratedcare.org.uk/wp-content/uploads/2025/05/20250522-manchester-primary-care-commissioning-committee.pdf
+
+### SAS is a useful signal about the kind of risk-bearing work GTD gets asked to hold
+
+- Public commissioner papers show GTD was used for **Special Allocation Scheme (SAS)** work in Manchester and Stockport.
+- SAS is not ordinary practice work; it is a **security-sensitive, continuity-heavy, hard-to-mobilise service** with a shallow provider market.
+- That helps explain why commissioners may keep returning to a provider despite weak patient-facing reputation signals: the visible public logic is often **continuity, secure premises, provider willingness, and budget fit**, not public satisfaction scores.
+- It also shows GTD is not infinitely flexible: Manchester papers record GTD seeking a **c23% uplift** to continue SAS, after which the contract moved to **Northern Health GPPO**.
+
+Key sources:
+
+- https://gmintegratedcare.org.uk/wp-content/uploads/2024/05/stockport-primary-care-commissioning-committee-17-july-2024-combined-papers.pdf
+- https://gmintegratedcare.org.uk/wp-content/uploads/2024/05/stockport-primary-care-commissioning-committee-18-september-2024-combined-papers.pdf
+- https://gmintegratedcare.org.uk/wp-content/uploads/2025/03/manchester-locality-pccc-primary-care-commissioning-committee-agenda-and-papers-27-march-2025.pdf
+- https://gmintegratedcare.org.uk/wp-content/uploads/2025/05/20250522-manchester-primary-care-commissioning-committee.pdf
+
 ## Core GTD-adjacent entities
 
 ### gtd healthcare
@@ -102,21 +148,45 @@ The claim is:
 - Publicly describes itself as a **not-for-profit, values-led organisation** with a **social enterprise ethos**.
 - Says **Our People's Trust** is the **single shareholder** of gtd healthcare Ltd.
 - Chief executive publicly listed as **David Beckett**.
+- Publicly presents itself as more than a group of surgeries:
+  - GP practices
+  - urgent care
+  - a **24/7 clinical and non-clinical co-ordination / call-handling layer**
+  - referral-gateway / triage services
+- Publicly exposes formal governance and operating machinery relevant to access questions:
+  - **Patient Safety Incident Response Framework**
+  - **patient safety partners**
+  - a **central complaints route**
+  - a documented **Employee Connect Council** route into the trust/governance structure
+- Inquiry material also points to a public/internal access-redesign playbook via GTD's 2024 quality-improvement poster pack, including a **Guide Bridge digital front door** rollout using comms plans, SOPs, escalation routes, staffing assumptions and dashboards.
 
 Key sources:
 
 - https://www.gtdhealthcare.co.uk/about-us
 - https://www.gtdhealthcare.co.uk/about-us/our-peoples-trust
 - https://www.gtdhealthcare.co.uk/about-us/leadership-team
+- https://www.gtdhealthcare.co.uk/corporate
+- https://www.gtdhealthcare.co.uk/corporate/referral-gateway-clinical-triage-service
+- https://www.gtdhealthcare.co.uk/corporate/patient-safety-incident-response-framework
+- https://www.gtdhealthcare.co.uk/patient-safety-partner
+- https://www.gtdhealthcare.co.uk/about-us/our-peoples-trust/employee-connect-council
+- https://www.gtd2023.frank-digital.co.uk/application/files/9516/7282/9742/Comments_compliments_and_complaints_-_Digital_-_proof_8.pdf
+- https://www.gtdhealthcare.co.uk/download_file/view/60081/228
 
 ### Our People's Trust
 
 - Publicly described by GTD as the **single shareholder** of gtd healthcare Ltd.
 - GTD says employed staff are stakeholders in the trust and that the trust board has a voice on the GTD board.
+- The inquiry trail also suggests the public governance shell is more visible than the public decision record:
+  - GTD describes a trust board and an Employee Connect Council
+  - but public minutes / board packs explaining 2024-25 growth decisions are not obvious
+  - Companies House filings indicate the trust has filed **dormant accounts**, which is worth noting when trying to understand where governance is visible and where it is not
 
-Key source:
+Key sources:
 
 - https://www.gtdhealthcare.co.uk/about-us/our-peoples-trust
+- https://www.gtdhealthcare.co.uk/about-us/our-peoples-trust/employee-connect-council
+- https://find-and-update.company-information.service.gov.uk/company/12971299/filing-history
 
 ### Manchester Primary Care Partnership (MPCP)
 

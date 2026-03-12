@@ -85,7 +85,13 @@ def build_company_entry(company: dict[str, Any], rows: list[dict[str, Any]]) -> 
     return {
         "company_name": company_name,
         "kind": str(company.get("kind", "")),
+        "summary": str(company.get("summary", "")),
+        "legal_shape": str(company.get("legal_shape", "")),
+        "relationship_to_gtd": str(company.get("relationship_to_gtd", "")),
+        "why_it_matters": str(company.get("why_it_matters", "")),
+        "source_strength": str(company.get("source_strength", "")),
         "notes": [str(item) for item in company.get("notes", [])],
+        "key_sources": [str(item) for item in company.get("key_sources", [])],
         "management_match_count": len(management_matches),
         "affiliated_match_count": len(affiliated_matches),
         "management_matches": management_matches,
@@ -116,11 +122,13 @@ def build_auto_groups(rows: list[dict[str, Any]], field: str, minimum_size: int 
 def build_report() -> dict[str, Any]:
     watchlist = load_watchlist()
     rows = load_rows()
+    profiles = [build_company_entry(company, rows) for company in watchlist.get("profiles", [])]
     companies = [build_company_entry(company, rows) for company in watchlist.get("companies", [])]
     return {
         "source_quote": str(watchlist.get("source_quote", "")),
         "dataset_path": str(DATASET_JSON.relative_to(BASE_DIR.parent.parent)),
         "dataset_row_count": len(rows),
+        "profiles": profiles,
         "watch_companies": companies,
         "auto_management_groups": build_auto_groups(rows, "management_company_name"),
         "auto_affiliated_groups": build_auto_groups(rows, "affiliated_group_name"),
@@ -144,6 +152,76 @@ def role_summary(row: dict[str, Any]) -> str:
     return f"management=`{management}`; affiliated=`{affiliated}`"
 
 
+def render_company_profile(lines: list[str], company: dict[str, Any]) -> None:
+    lines.append(f"### {company['company_name']}")
+    lines.append("")
+    lines.append(f"- Kind: `{company['kind']}`")
+    if company["source_strength"]:
+        lines.append(f"- Source strength: `{company['source_strength']}`")
+    lines.append(f"- Direct management matches in current dataset: **{company['management_match_count']}**")
+    lines.append(f"- Affiliated-group matches in current dataset: **{company['affiliated_match_count']}**")
+    if company["summary"]:
+        lines.append(f"- Summary: {company['summary']}")
+    if company["legal_shape"]:
+        lines.append(f"- Legal / organisational shape: {company['legal_shape']}")
+    if company["relationship_to_gtd"]:
+        lines.append(f"- Relationship to GTD: {company['relationship_to_gtd']}")
+    if company["why_it_matters"]:
+        lines.append(f"- Why it matters: {company['why_it_matters']}")
+    for note in company["notes"]:
+        lines.append(f"- Note: {note}")
+    lines.append("")
+
+    if company["management_matches"]:
+        lines.append("Direct management-company examples in current dataset:")
+        lines.extend(render_match_lines(company["management_matches"][:8], "management_company_name"))
+        if len(company["management_matches"]) > 8:
+            lines.append(f"- ... plus **{len(company['management_matches']) - 8}** more direct matches")
+        lines.append("")
+
+    if company["affiliated_matches"]:
+        lines.append("Affiliated-group examples in current dataset:")
+        lines.extend(render_match_lines(company["affiliated_matches"][:8], "affiliated_group_name"))
+        if len(company["affiliated_matches"]) > 8:
+            lines.append(f"- ... plus **{len(company['affiliated_matches']) - 8}** more affiliated-group matches")
+        lines.append("")
+
+    if company["tracked_results"]:
+        lines.append("Tracked practice checks:")
+        for item in company["tracked_results"]:
+            tracked = item["tracked"]
+            label = tracked.get("ods_code") or tracked.get("practice_name")
+            if item["found_in_dataset"]:
+                row = item["dataset_row"]
+                lines.append(
+                    f"- `{label}` found as {row['practice_name']} ({row['postcode']}) - {role_summary(row)}"
+                )
+            else:
+                lines.append(f"- `{label}` not found in the current catchment dataset.")
+        lines.append("")
+
+    if company["candidate_results"]:
+        lines.append("Candidate investigation rows:")
+        for item in company["candidate_results"]:
+            candidate = item["candidate"]
+            label = candidate.get("ods_code") or candidate.get("practice_name")
+            reason = candidate.get("reason", "")
+            if item["found_in_dataset"]:
+                row = item["dataset_row"]
+                lines.append(
+                    f"- `{label}` found as {row['practice_name']} ({row['postcode']}); {role_summary(row)}; reason: {reason}"
+                )
+            else:
+                lines.append(f"- `{label}` not found; reason: {reason}")
+        lines.append("")
+
+    if company["key_sources"]:
+        lines.append("Key sources:")
+        for source in company["key_sources"]:
+            lines.append(f"- {source}")
+        lines.append("")
+
+
 def render_report(report: dict[str, Any]) -> str:
     lines = [
         "# Management company watchlist report",
@@ -154,58 +232,22 @@ def render_report(report: dict[str, Any]) -> str:
         "",
         f"Rows in current dataset: **{report['dataset_row_count']}**",
         "",
-        "## Tender watchlist",
+        "## Known operator profiles",
         "",
     ]
 
+    for company in report["profiles"]:
+        render_company_profile(lines, company)
+
+    lines.extend(
+        [
+            "## Tender watchlist",
+            "",
+        ]
+    )
+
     for company in report["watch_companies"]:
-        lines.append(f"### {company['company_name']}")
-        lines.append("")
-        lines.append(f"- Kind: `{company['kind']}`")
-        lines.append(f"- Direct management matches in current dataset: **{company['management_match_count']}**")
-        lines.append(f"- Affiliated-group matches in current dataset: **{company['affiliated_match_count']}**")
-        for note in company["notes"]:
-            lines.append(f"- Note: {note}")
-        lines.append("")
-
-        if company["management_matches"]:
-            lines.append("Direct management-company matches:")
-            lines.extend(render_match_lines(company["management_matches"], "management_company_name"))
-            lines.append("")
-
-        if company["affiliated_matches"]:
-            lines.append("Affiliated-group matches:")
-            lines.extend(render_match_lines(company["affiliated_matches"], "affiliated_group_name"))
-            lines.append("")
-
-        if company["tracked_results"]:
-            lines.append("Tracked practice checks:")
-            for item in company["tracked_results"]:
-                tracked = item["tracked"]
-                label = tracked.get("ods_code") or tracked.get("practice_name")
-                if item["found_in_dataset"]:
-                    row = item["dataset_row"]
-                    lines.append(
-                        f"- `{label}` found as {row['practice_name']} ({row['postcode']}) - {role_summary(row)}"
-                    )
-                else:
-                    lines.append(f"- `{label}` not found in the current catchment dataset.")
-            lines.append("")
-
-        if company["candidate_results"]:
-            lines.append("Candidate investigation rows:")
-            for item in company["candidate_results"]:
-                candidate = item["candidate"]
-                label = candidate.get("ods_code") or candidate.get("practice_name")
-                reason = candidate.get("reason", "")
-                if item["found_in_dataset"]:
-                    row = item["dataset_row"]
-                    lines.append(
-                        f"- `{label}` found as {row['practice_name']} ({row['postcode']}); {role_summary(row)}; reason: {reason}"
-                    )
-                else:
-                    lines.append(f"- `{label}` not found; reason: {reason}")
-            lines.append("")
+        render_company_profile(lines, company)
 
     lines.extend(
         [

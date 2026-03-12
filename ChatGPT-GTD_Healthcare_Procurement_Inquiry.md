@@ -5113,3 +5113,29 @@ The two biggest seams, for me, are the **Guide Bridge access poster** and the **
 3. Hattersley’s improvement appears to have come from basic governance and access fixes, while its later decline was tied more to management churn, staffing gaps and weak safety/governance than to patients suddenly thinking care staff were uncaring.
 
 4. The Leslie Swindells case points to a serious role-design and triage failure at Hattersley, and GTD’s response shows it later changed escalation prompts, staff induction, appointment restrictions and triage design there.
+
+the patient satisfaction survey took a roughly 15% dip post-pandemic, recovered a couple of percent into 2024, but has stabilised basically 12-13% below a hypothetical counter-line without the hit. That's our "high exclusion risk" group indicator, and there may be a related dip in survery response returns to map a linked loss of interest. The google reviews were already dipping a lot a couple of years before the pandemic, so the fall just continues. 
+Thought for 1m 27s
+
+Yes, that looks like the right split.
+
+The GP survey line looks like a real step-down around 2022, not just noise. GTD’s mean sits in the high 70s before that, drops to about 60, then only claws back to roughly 64 by 2025. So the post-pandemic damage looks partly persistent: not “bad year, then recovery”, more “system got worse, then settled at a worse level.”
+
+The Google line is a different story. That decline starts well before the pandemic. It’s already falling hard by 2016–2018, gets down into the mid-2s by around 2020, and then just keeps grinding lower. So I wouldn’t describe Google as “pandemic damage” at all. It looks more like a longer-running deterioration in day-to-day patient experience, with the pandemic sitting in the middle of it rather than causing it.
+
+That combination is interesting because it suggests two layers of failure:
+
+Google looks like the slow-burn public signal that patients were already getting pissed off for years.
+GP Survey looks like a later structural break, where something about access / system design / post-pandemic operating model pushed a much broader dissatisfaction step-change.
+
+That fits your repo’s theory pretty well. The pre-pandemic Google slide says the rot likely started earlier with ordinary access friction, continuity problems, admin failures, phone queues, triage annoyance, reception barriers, that kind of thing. The survey cliff around 2022 suggests a second hit, more like a changed front door: digital triage, callbacks, less predictable access, more buffering between patient and clinician, more defensive flow control.
+
+On the response-rate point: yes, that is worth mapping next. If “overall good” falls and response rate falls at the same time, that is a nasty pattern. Not because it proves exclusion directly, but because it suggests the people getting worn down by the system may also be the people least likely to keep engaging with surveys. So the visible dissatisfaction may actually be the cleaner, more engaged remainder, while the more excluded chunk just disappears from the measurement.
+
+So in plain terms, the read I’d take is:
+
+GTD’s Google reputation was already rotting before covid.
+Then post-covid operating changes seem to have knocked a further ~12–15 points off reported overall experience.
+And if survey returns also sagged, that may mean the measured fall understates the real one.
+
+The next chart you want is dead simple: put GP Survey overall good %, survey response/completion %, and Google score on the same time axis for GTD mean and maybe 3–4 named practices. If the response line also dips after 2021 and stays low, that gives you a much stronger “disengagement / exclusion” story than satisfaction alone.
