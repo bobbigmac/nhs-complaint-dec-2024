@@ -151,7 +151,7 @@ ISSUE_SECTIONS: list[dict[str, object]] = [
         "work": [
             "Broke down GP Patient Survey gateway questions and highlighted where the survey likely misses the people who gave up.",
             "Built quick comparison material for meeting use, including workload context, local comparators and GTD portfolio signals.",
-            "Published a Greater Manchester map bundle so review scores, survey data and takeover context can be read together.",
+            "Published a Greater Manchester comparison map so review scores, survey data and takeover context can be read together.",
         ],
         "resources": [
             {
@@ -478,13 +478,8 @@ def build_action_cards(report_dir_name: str) -> str:
             "links": [("Open map", "map/map.html", "primary")],
         },
         {
-            "title": "Latest bundle",
-            "description": "Download the full packaged report bundle for offline review, sharing or archive.",
-            "links": [("Download zip", f"downloads/{report_dir_name}.zip", "primary")],
-        },
-        {
-            "title": "Map bundle notes",
-            "description": "Read the generated README inside the current map bundle if you want the data notes before opening files.",
+            "title": "Map notes",
+            "description": "Read the generated README for the current map if you want the data notes before opening it.",
             "links": [
                 ("Markdown", "map/README.md", "primary"),
                 ("Print view", markdown_print_href("map/README.md"), "secondary"),
@@ -537,8 +532,6 @@ def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> N
     template = load_template()
     report_dir_name = report_dir.name
     updated_value = summary.get("generated_date") or datetime.now(UTC).date().isoformat()
-    home_markdown = (SITE_DIR / "content" / "home.md").read_text(encoding="utf-8")
-    body_html = markdown_to_html(home_markdown)
     published_files = publish_supporting_files(out_dir)
     page_html = replace_tokens(
         template,
@@ -547,9 +540,8 @@ def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> N
             "UPDATED_DATE": html.escape(str(updated_value)),
             "REPORT_NAME": html.escape(report_dir_name),
             "MAP_HREF": "map/map.html",
-            "DOWNLOAD_HREF": f"downloads/{html.escape(report_dir_name)}.zip",
+            "REPO_HREF": "https://github.com/bobbigmac/nhs-complaint-dec-2024",
             "STAT_CARDS": build_stat_cards(summary),
-            "BODY_HTML": body_html,
             "ACTION_CARDS": build_action_cards(report_dir_name),
             "REFERENCE_CARDS": build_reference_cards(published_files),
             "ISSUE_PANELS": build_issue_panels(published_files),
@@ -601,7 +593,7 @@ def build_site(out_dir: Path) -> Path:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Build the project landing page and package the latest map bundle.")
+    parser = argparse.ArgumentParser(description="Build the project landing page and publish the latest map output.")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR, help="Output directory for the generated static site.")
     return parser.parse_args()
 

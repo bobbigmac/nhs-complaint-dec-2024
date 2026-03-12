@@ -262,6 +262,23 @@ body {
 .trend-legend-body {
   min-width: 0;
 }
+.trend-overlay-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 10px 0 0;
+}
+.trend-overlay-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: rgba(26, 28, 26, 0.78);
+}
+.trend-overlay-swatch {
+  width: 26px;
+  border-top: 3px dashed var(--swatch-color, currentColor);
+}
 .trend-legend-name {
   display: block;
   font-size: 12px;
@@ -547,10 +564,11 @@ body {
           <svg id="gtd-score-trend-chart" viewBox="0 0 920 360" preserveAspectRatio="xMidYMid meet" aria-labelledby="gtd-score-trend-title" role="img">
             <title id="gtd-score-trend-title">Approximate cumulative Google rating over time for GTD practices</title>
           </svg>
+          <div id="gtd-score-trend-overlay-legend" class="trend-overlay-legend" aria-label="Trend overlay legend"></div>
         </div>
         <div id="gtd-score-trend-legend" class="trend-legend" aria-label="GTD practice legend"></div>
       </div>
-      <p class="chart-note" id="gtd-trend-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The first legend entry restores the default GTD mean plus New Bank view; when a named practice is pinned, the GTD mean is hidden. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
+      <p class="chart-note" id="gtd-trend-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
     </section>
     <section class="panel comparison-panel">
       <h2>Completion Rate vs Score</h2>
@@ -1143,11 +1161,25 @@ function bindTrendLegendInteractions(legend) {
         : pinnedTrendPracticeCode === code
           ? TREND_DEFAULT_CONTEXT_CODE
           : code;
+      hoveredTrendPracticeCode = null;
       pinnedTrendPracticeCode = nextCode;
       focusPracticeByCode(nextCode === TREND_DEFAULT_CONTEXT_CODE ? NEW_BANK_CODE : nextCode);
       renderGtdScoreTrendChart();
     });
   });
+}
+
+function renderTrendOverlayLegend(container, items) {
+  if (!container) return;
+  const activeItems = (items || []).filter((item) => item && item.label);
+  container.innerHTML = activeItems.length
+    ? activeItems.map((item) => `
+        <span class="trend-overlay-key">
+          <span class="trend-overlay-swatch" style="--swatch-color:${item.color}"></span>
+          <span>${item.label}</span>
+        </span>
+      `).join('')
+    : '';
 }
 
 function renderMarkers() {
@@ -1672,12 +1704,12 @@ function fractionalYearIndex(dateIso, years) {
   return idx >= 0 ? idx : null;
 }
 
-function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {
+function renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading, note) {
   const years = gtdSurveyTimeseries.years || [];
   const practiceSeries = gtdSurveyTimeseries.practice_series || [];
   const averageSeries = gtdSurveyTimeseries.average_series || [];
   if (heading) heading.textContent = 'GTD GP Survey Overall Good % Over Time';
-  if (note) note.textContent = 'Thin lines show each GTD practice\'s GP Patient Survey overall-experience-as-good percentage by year. Faint dashed vertical lines mark the documented GTD takeover date. The first legend entry restores the default GTD mean plus New Bank view; when a named practice is pinned, the GTD mean is hidden. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels. Data from gp-patient.co.uk practice-level CSV.';
+  if (note) note.textContent = 'Thin lines show each GTD practice\'s GP Patient Survey overall-experience-as-good percentage by year. Faint dashed vertical lines mark the documented GTD takeover date. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels. Data from gp-patient.co.uk practice-level CSV.';
   const width = 920;
   const height = 360;
   const margin = { top: 18, right: 22, bottom: 56, left: 46 };
@@ -1711,8 +1743,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {
     ? defaultEntry
     : practiceEntries.find((e) => e.series.code === activeCode) || null;
   const emphasisCode = displayEntry?.series.code || null;
-  const hasPinnedSpecificPractice = Boolean(pinnedTrendPracticeCode) && pinnedTrendPracticeCode !== TREND_DEFAULT_CONTEXT_CODE && availableCodes.has(pinnedTrendPracticeCode);
-  const showAverage = !hasPinnedSpecificPractice;
+  const showAverage = isMeanContext;
   const dimInactive = Boolean(displayEntry);
   const patientOverlay = displayEntry
     ? years
@@ -1783,6 +1814,9 @@ function renderGtdSurveyTrendChart(svg, summary, legend, heading, note) {
   })
   ].join('');
   bindTrendLegendInteractions(legend);
+  renderTrendOverlayLegend(overlayLegend, patientPath ? [
+    { color: '#4c9a52', label: 'Patients vs GTD avg (%)' },
+  ] : []);
   const overlaySummary = patientPath ? ' Green dashed: registered patients as a share of the GTD yearly average, with raw patient counts left in the point labels.' : '';
   const activeSummary = !displayEntry
     ? ' Hover a practice in the legend to isolate its track.'
@@ -1796,21 +1830,23 @@ function renderGtdScoreTrendChart() {
   const svg = document.getElementById('gtd-score-trend-chart');
   const summary = document.getElementById('gtd-score-trend-summary');
   const legend = document.getElementById('gtd-score-trend-legend');
+  const overlayLegend = document.getElementById('gtd-score-trend-overlay-legend');
   const heading = document.getElementById('gtd-trend-heading');
   const note = document.getElementById('gtd-trend-note');
   const useSurvey = activeMetric === 'survey' && gtdSurveyTimeseries.years?.length && gtdSurveyTimeseries.practice_series?.length;
   if (useSurvey) {
-    renderGtdSurveyTrendChart(svg, summary, legend, heading, note);
+    renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading, note);
     return;
   }
   if (heading) heading.textContent = 'GTD Google Score Over Time';
-  if (note) note.textContent = 'Thin lines show each GTD practice\'s reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. The first legend entry restores the default GTD mean plus New Bank view; when a named practice is pinned, the GTD mean is hidden. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.';
+  if (note) note.textContent = 'Thin lines show each GTD practice\'s reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.';
   const months = gtdGoogleTimeseries.months || [];
   const practiceSeries = gtdGoogleTimeseries.practice_series || [];
   const averageSeries = gtdGoogleTimeseries.average_series || [];
   if (!months.length || !practiceSeries.length) {
     svg.innerHTML = '';
     legend.innerHTML = '';
+    renderTrendOverlayLegend(overlayLegend, []);
     summary.textContent = `No GTD Google review history is available yet in the current scrape output.`;
     return;
   }
@@ -1877,8 +1913,7 @@ function renderGtdScoreTrendChart() {
     ? defaultEntry
     : practiceEntries.find((entry) => entry.series.code === activeCode) || null;
   const emphasisCode = activeEntry?.series.code || null;
-  const hasPinnedSpecificPractice = Boolean(pinnedTrendPracticeCode) && pinnedTrendPracticeCode !== TREND_DEFAULT_CONTEXT_CODE && availableCodes.has(pinnedTrendPracticeCode);
-  const showAverage = !hasPinnedSpecificPractice;
+  const showAverage = isMeanContext;
   const dimInactive = Boolean(activeEntry);
 
   const monthIndexForYear = (year) => {
@@ -2052,6 +2087,10 @@ function renderGtdScoreTrendChart() {
   })
   ].join('');
   bindTrendLegendInteractions(legend);
+  renderTrendOverlayLegend(overlayLegend, hasOverlay ? [
+    ...(overlay.patient?.length ? [{ color: '#4c9a52', label: 'Patients vs GTD avg (%)' }] : []),
+    ...(overlay.survey?.length ? [{ color: '#b67b4d', label: 'GP Survey good %' }] : []),
+  ] : []);
 
   const missingPractices = (gtdGoogleTimeseries.missing_practices || []).map((item) => item.name).filter(Boolean);
   const missingSuffix = missingPractices.length

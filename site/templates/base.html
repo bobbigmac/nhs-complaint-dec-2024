@@ -11,15 +11,16 @@
     <header class="hero">
       <div class="hero-copy">
         <p class="eyebrow">NHS access evidence and recovery</p>
-        <h1>Patient access failures at New Bank, grouped into the issues that matter.</h1>
+        <h1>New Bank &amp; GTD Access</h1>
         <p class="standfirst">
-          This homepage is the public entry point for a much larger repo of complaints, meeting packs,
-          printoffs, survey analysis and map work. It groups that material by issue so new readers can
-          understand the problem without trawling every folder first.
+          This page brings together the main access problems at New Bank under GTD, along with the
+          complaints, meeting packs, printoffs, survey analysis and map work that support them, so
+          readers can see the issues, the evidence, and the objective of the work without digging
+          through the whole repo first.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="{{MAP_HREF}}">Open the interactive map</a>
-          <a class="button button-secondary" href="{{DOWNLOAD_HREF}}">Download the latest report bundle</a>
+          <a class="button button-secondary" href="{{REPO_HREF}}">GitHub Repo</a>
         </div>
       </div>
       <aside class="hero-panel">
@@ -33,28 +34,22 @@
     </header>
 
     <main class="page-sections">
-      <section class="content-grid">
-        <article class="prose-card">
-          {{BODY_HTML}}
-        </article>
+      <section class="rail-grid">
+        <section class="rail-panel">
+          <p class="panel-label">Core tools</p>
+          <h2>Open the current map</h2>
+          <div class="evidence-grid">
+            {{ACTION_CARDS}}
+          </div>
+        </section>
 
-        <aside class="rail">
-          <section class="rail-panel">
-            <p class="panel-label">Core tools</p>
-            <h2>Open the current bundle</h2>
-            <div class="evidence-grid">
-              {{ACTION_CARDS}}
-            </div>
-          </section>
-
-          <section class="rail-panel">
-            <p class="panel-label">Start here</p>
-            <h2>Orientation documents</h2>
-            <div class="reference-list">
-              {{REFERENCE_CARDS}}
-            </div>
-          </section>
-        </aside>
+        <section class="rail-panel">
+          <p class="panel-label">Start here</p>
+          <h2>Orientation documents</h2>
+          <div class="reference-list">
+            {{REFERENCE_CARDS}}
+          </div>
+        </section>
       </section>
 
       <section class="issue-section">
@@ -74,7 +69,7 @@
 
     <footer class="site-footer">
       <p>Built from repo-local evidence, then packaged for GitHub Pages.</p>
-      <p><a href="{{MAP_HREF}}">Interactive map</a> <span class="sep">/</span> <a href="{{DOWNLOAD_HREF}}">Download bundle</a> <span class="sep">/</span> <a href="{{PRINT_TOOL_HREF}}">Markdown print viewer</a></p>
+      <p><a href="{{MAP_HREF}}">Interactive map</a> <span class="sep">/</span> <a href="{{PRINT_TOOL_HREF}}">Markdown print viewer</a></p>
     </footer>
   </div>
 </body>

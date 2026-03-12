@@ -628,6 +628,10 @@ Visible signals:
 - MPCP explicitly frames Manchester-wide work around deprivation, inequalities and equitable access.
 - SPCT explicitly frames part of its role around reducing health inequalities.
 
+#### TODO: Deprivation index on map
+
+See [the deprivation index data](https://www.gov.uk/government/statistics/english-indices-of-deprivation-2025) and integrate to our map region. Not sure how to display relative effects, and measure whether review scores correlate more closely to patient survey or to deprivation (essentially "are people angry at the practice, or just angry about being poor?"). This might be strenth-tested by also asking if non-healthcare related businesses have similar patterns in deprived regions.
+
 ### 7. Regulatory and reputation pressure
 
 CQC ratings, patient feedback, alliance credibility and commissioner trust all matter.
