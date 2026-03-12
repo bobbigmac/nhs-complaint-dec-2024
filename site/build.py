@@ -4,24 +4,32 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import posixpath
 import re
 import shutil
 import zipfile
 from datetime import UTC, datetime
-from pathlib import Path
-from typing import Iterable
+from pathlib import Path, PurePosixPath
+from typing import Callable, Iterable
 from urllib.parse import quote
 
 
 SITE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SITE_DIR.parent
 DATASET_OUTPUT_DIR = REPO_ROOT / "datasets" / "output"
+CONTEXT_DIR = REPO_ROOT / "datasets" / "context"
 REPORT_GLOB = "gtd-greater-manchester-gp-practice-reviews-*"
 DEFAULT_OUT_DIR = SITE_DIR / "dist"
 FILES_DIR_NAME = "files"
 TOOLS_DIR_NAME = "tools"
 TOOL_VIEWER_PATH = f"{TOOLS_DIR_NAME}/markdown-print-viewer.html"
 TOOL_VIEWER_SOURCE = SITE_DIR / "tools" / "markdown-print-viewer.html"
+CHRONOLOGY_SOURCE = "datasets/context/GTD_CHRONOLOGY.md"
+OPERATING_ENVIRONMENT_SOURCE = "datasets/context/OPERATING_ENVIRONMENT.md"
+INQUIRY_LINK_DUMP_SOURCE = "datasets/context/GTD_INQUIRY_LINKS.txt"
+ORG_NAVIGATOR_SOURCE = "datasets/management_companies/output/company_watchlist_report.md"
+ORG_METHOD_SOURCE = "datasets/management_companies/management-companies.md"
+ORG_WATCHLIST_SOURCE = "datasets/management_companies/watchlist.json"
 
 
 ISSUE_SECTIONS: list[dict[str, object]] = [
