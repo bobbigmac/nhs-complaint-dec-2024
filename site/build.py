@@ -306,7 +306,6 @@ PAGE_DOCS: list[dict[str, object]] = [
         "source": CHRONOLOGY_SOURCE,
         "extra_sources": [
             {"label": "Link dump", "source": INQUIRY_LINK_DUMP_SOURCE},
-            {"label": "Inquiry source note", "source": "ChatGPT-GTD_Healthcare_Procurement_Inquiry.md"},
         ],
         "related_page_ids": ["environment", "org-navigator"],
     },
