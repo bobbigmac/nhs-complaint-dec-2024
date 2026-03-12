@@ -337,22 +337,28 @@ def format_number(value: object) -> str:
     return str(value)
 
 
+def format_stat_value(value: object, approximate: bool = False) -> str:
+    formatted = format_number(value)
+    return f"~{formatted}" if approximate and formatted != "?" else formatted
+
+
 def build_stat_cards(summary: dict[str, object]) -> str:
     cards = [
-        ("Practices in scope", summary.get("row_count", "?")),
-        ("GTD-managed practices", summary.get("gtd_managed_count", "?")),
-        ("Google-scored practices", summary.get("google_review_coverage_count", "?")),
-        ("Registered-patient matches", summary.get("registered_patient_count_coverage", "?")),
-        ("Postcode areas covered", summary.get("postcode_area_count", "?")),
+        ("Practices in scope", summary.get("row_count", "?"), False),
+        ("GTD-managed practices", summary.get("gtd_managed_count", "?"), False),
+        ("Google-scored practices", summary.get("google_review_coverage_count", "?"), False),
+        ("Patients in scope", summary.get("registered_patient_count_total_in_scope", "?"), True),
+        ("Patients with GTD", summary.get("registered_patient_count_total_gtd", "?"), True),
+        ("Postcode areas covered", summary.get("postcode_area_count", "?"), False),
     ]
     return "\n".join(
         f"""
         <article class="stat-card">
-          <span class="stat-value">{format_number(value)}</span>
+          <span class="stat-value">{format_stat_value(value, approximate)}</span>
           <span class="stat-label">{html.escape(label)}</span>
         </article>
         """.strip()
-        for label, value in cards
+        for label, value, approximate in cards
     )
 
 
