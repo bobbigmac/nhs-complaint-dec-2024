@@ -1,0 +1,352 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "P87015",
+    "practice_name": "Pendleton Medical Centre",
+    "display_name": "Pendleton Medical Centre",
+    "website_url": "https://pendletonmedicalcentre.nhs.uk/",
+    "website_identity": "standalone practice domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/pendleton-medical-centre/P87015",
+    "telephone": "0161 983 0410",
+    "postcode": "M6 5FX",
+    "registered_patient_count": 8754,
+    "google_review_score": 4.8,
+    "google_review_count": 629
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "practice-specific exploratory review using NHS profile confirmation plus interactive browser-style navigation through the homepage, appointments, online-services, prescriptions, admin, and complaints routes",
+    "website_confirmation": "The NHS profile for P87015 points to pendletonmedicalcentre.nhs.uk, which resolves to a live standalone public practice site."
+  },
+  "headline": "Pendleton Medical Centre presents one of the clearest digital front doors seen so far. It uses a standalone Silicon Practice site with a large online-forms hub, clearly separates no-account local forms from NHS account or myGP tasks, gives response-time promises on several routes, and exposes direct online forms for urgent medical help, nurse or healthcare assistant appointments, prescriptions, fit notes, test results, admin contact and feedback.",
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "WordPress with NHS UK frontend theme and Silicon Practice form layer",
+        "evidence": [
+          "The live site runs on the standalone pendletonmedicalcentre.nhs.uk domain.",
+          "The HTML exposes WordPress, nhsuk frontend theme assets, Silicon Practice plugin assets, and a footer credit of © Silicon Practice."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "No-account request layer",
+        "platform": "Local Silicon Practice online forms",
+        "evidence": [
+          "The site exposes a broad online-forms hub for appointments, sick notes, test results, contact, reception questions, referrals, feedback and health reviews.",
+          "The managing-your-health-online page explicitly says patients do not need an account to use these website forms."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Account-linked services",
+        "platform": "NHS account and myGP",
+        "evidence": [
+          "The site directs patients to NHS account or myGP for ordering repeat prescriptions, viewing test results, accessing records and checking or cancelling appointments.",
+          "The nurse or healthcare assistant form also mentions booking blood tests directly through the NHS App or myGP."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "urgent medical help",
+      "label": "Appointments page from homepage navigation",
+      "steps_from_home": 1,
+      "url": "https://pendletonmedicalcentre.nhs.uk/appointments/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "urgent medical help",
+      "label": "Urgent medical-help explainer from appointments page",
+      "steps_from_home": 2,
+      "url": "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/get-help-for-any-health-problem/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "urgent medical help",
+      "label": "Urgent medical-help form",
+      "steps_from_home": 3,
+      "url": "https://pendletonmedicalcentre.nhs.uk/form/get-help-for-any-health-problem/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine nurse or healthcare assistant appointment",
+      "label": "Routine nurse or HCA form",
+      "steps_from_home": 3,
+      "url": "https://pendletonmedicalcentre.nhs.uk/form/request-an-appointment-with-a-nurse-or-hca/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "online admin and service requests",
+      "label": "Online forms hub",
+      "steps_from_home": 3,
+      "url": "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Repeat prescription request form",
+      "steps_from_home": 3,
+      "url": "https://pendletonmedicalcentre.nhs.uk/form/request-a-repeat-prescription/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Feedback and complaints page from homepage navigation",
+      "steps_from_home": 1,
+      "url": "https://pendletonmedicalcentre.nhs.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "browser-like HTTP fetch with desktop user agent against key top-level routes",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://pendletonmedicalcentre.nhs.uk/",
+        "final_url": "https://pendletonmedicalcentre.nhs.uk/",
+        "status": "live",
+        "title": "Pendleton Medical Centre – NHS GP Surgery in Salford",
+        "load_ms": 220.2
+      },
+      {
+        "label": "appointments",
+        "url": "https://pendletonmedicalcentre.nhs.uk/appointments/",
+        "final_url": "https://pendletonmedicalcentre.nhs.uk/appointments/",
+        "status": "live",
+        "title": "Appointments – Pendleton Medical Centre",
+        "load_ms": 138.4
+      },
+      {
+        "label": "urgent_form_intro",
+        "url": "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/get-help-for-any-health-problem/",
+        "final_url": "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/get-help-for-any-health-problem/",
+        "status": "live",
+        "title": "Get help for any health problem – Pendleton Medical Centre",
+        "load_ms": 262.3
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://pendletonmedicalcentre.nhs.uk/prescriptions/",
+        "final_url": "https://pendletonmedicalcentre.nhs.uk/prescriptions/",
+        "status": "live",
+        "title": "Prescriptions – Pendleton Medical Centre",
+        "load_ms": 147.1
+      },
+      {
+        "label": "complaints",
+        "url": "https://pendletonmedicalcentre.nhs.uk/surgery-information/feedback-and-complaints/",
+        "final_url": "https://pendletonmedicalcentre.nhs.uk/surgery-information/feedback-and-complaints/",
+        "status": "live",
+        "title": "Feedback and complaints – Pendleton Medical Centre",
+        "load_ms": 158.6
+      },
+      {
+        "label": "online_forms_hub",
+        "url": "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/",
+        "final_url": "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/",
+        "status": "live",
+        "title": "Online forms – Pendleton Medical Centre",
+        "load_ms": 161.1
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://pendletonmedicalcentre.nhs.uk/form/get-help-for-any-health-problem/",
+      "steps_from_home": 3,
+      "user_visible_interactions": 3,
+      "observed_workflow": [
+        "Homepage to Appointments is one click.",
+        "Appointments links to the get-help explainer for urgent appointments today or tomorrow.",
+        "The appointments page says online requests will be responded to within 24 hours.",
+        "The live form asks for the problem, timing, preferred help mode, urgency, SMS consent and whether a specific staff member is preferred."
+      ],
+      "initial_inputs_observed": [
+        "Please tell us about the problem",
+        "How long has this been a problem?",
+        "What are the concerns?",
+        "How would you like us to deal with the problem?",
+        "How quickly do you think the problem needs to be dealt with?",
+        "Text message consent for appointment times"
+      ],
+      "friction": [
+        "The route is digital and live, but patients still pass through an explainer page before the actual form.",
+        "The terms say the practice will not deal with the problem while the practice is closed, so visible out-of-hours access may not mean active handling."
+      ]
+    },
+    {
+      "task": "routine nurse or healthcare assistant appointment",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://pendletonmedicalcentre.nhs.uk/form/request-an-appointment-with-a-nurse-or-hca/",
+      "steps_from_home": 3,
+      "user_visible_interactions": 3,
+      "observed_workflow": [
+        "The appointments page says patients can use a nurse or healthcare assistant appointment request form for routine help.",
+        "The explainer promises a response within 4 working hours during opening times.",
+        "The live form offers specific appointment categories such as flu vaccine, blood test, cervical screening, asthma review and other."
+      ],
+      "initial_inputs_observed": [
+        "Appointment required",
+        "Preferred date and preferred time for vaccination where relevant",
+        "Whether the patient knows when the appointment is due",
+        "Availability over the next three weeks",
+        "Email-check confirmation for secure messages"
+      ],
+      "friction": [
+        "This is a strong structured route for nurse and HCA work, but the appointments page still leaves routine GP appointments more phone-dependent.",
+        "Patients must interpret whether their need belongs in the urgent medical-help form, the nurse or HCA route, or a phone call."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://pendletonmedicalcentre.nhs.uk/form/request-a-repeat-prescription/",
+      "steps_from_home": 3,
+      "user_visible_interactions": 3,
+      "observed_workflow": [
+        "The prescriptions page clearly separates NHS account, myGP and a local repeat-prescription form.",
+        "The site says prescriptions are usually ready after 2 working days.",
+        "The live form asks for medication item description, strength, quantity and an acknowledgement that the patient has nominated a pharmacy."
+      ],
+      "initial_inputs_observed": [
+        "Medication item description",
+        "Strength",
+        "Quantity",
+        "Additional comments",
+        "Confirmation that a pharmacy has been nominated"
+      ],
+      "friction": [
+        "The route is clear, but there are multiple parallel prescription channels and patients still need to understand nomination rules.",
+        "Patients may need a separate nominate-a-pharmacy form if they have not already set that up."
+      ]
+    },
+    {
+      "task": "admin query",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://pendletonmedicalcentre.nhs.uk/form/contact-the-practice/",
+      "steps_from_home": 5,
+      "user_visible_interactions": 5,
+      "observed_workflow": [
+        "The contact page points patients to Start using online services.",
+        "The managing-your-health-online page says no account is needed for website forms and links to the online-forms hub.",
+        "The hub exposes separate routes for Contact the practice, Ask the practice a question, Ask reception a question, fit notes, test results, referral questions and change-of-details requests.",
+        "The live Contact the practice form warns not to use it for clinical enquiries and says replies may take up to 2 working days."
+      ],
+      "initial_inputs_observed": [
+        "Named GP if known",
+        "Message",
+        "Confirmation that the enquiry is not urgent"
+      ],
+      "friction": [
+        "This is a rich admin layer, but it is buried deeper than appointments or prescriptions.",
+        "Patients have to choose between several similarly named admin routes before reaching a live form."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://pendletonmedicalcentre.nhs.uk/surgery-information/feedback-and-complaints/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The complaints page is directly reachable from the homepage navigation.",
+        "It offers separate routes for a feedback form, Friends and Family Test, NHS website review and phone feedback.",
+        "It also includes a formal complaints section with the practice postal address and a 12-month complaints window."
+      ],
+      "friction": [
+        "Formal complaints still depend on writing to the practice rather than a dedicated complaints form.",
+        "The complaints wording is more formal and process-heavy than the rest of the site."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "urgent medical help",
+      "start_url": "https://pendletonmedicalcentre.nhs.uk/",
+      "visible_next_step": "Appointments -> Get help for any health problem -> Start now and confirm you have none of these",
+      "expected_destination": "https://pendletonmedicalcentre.nhs.uk/form/get-help-for-any-health-problem/"
+    },
+    {
+      "task": "routine nurse or healthcare assistant appointment",
+      "start_url": "https://pendletonmedicalcentre.nhs.uk/",
+      "visible_next_step": "Appointments -> Request an appointment with a nurse or healthcare assistant -> Start now and confirm you have none of these",
+      "expected_destination": "https://pendletonmedicalcentre.nhs.uk/form/request-an-appointment-with-a-nurse-or-hca/"
+    },
+    {
+      "task": "repeat prescription",
+      "start_url": "https://pendletonmedicalcentre.nhs.uk/",
+      "visible_next_step": "Prescriptions -> repeat prescriptions request -> Start now",
+      "expected_destination": "https://pendletonmedicalcentre.nhs.uk/form/request-a-repeat-prescription/"
+    },
+    {
+      "task": "admin query",
+      "start_url": "https://pendletonmedicalcentre.nhs.uk/",
+      "visible_next_step": "Contact us -> Start using online services -> Contact us online -> Contact the practice -> Start now",
+      "expected_destination": "https://pendletonmedicalcentre.nhs.uk/form/contact-the-practice/"
+    },
+    {
+      "task": "complaint",
+      "start_url": "https://pendletonmedicalcentre.nhs.uk/",
+      "visible_next_step": "Feedback and complaints",
+      "expected_destination": "https://pendletonmedicalcentre.nhs.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "buried_admin_routes",
+      "details": "The site has a strong no-account admin form layer, but it is tucked behind Contact us -> managing your health online -> online forms rather than surfaced directly from the homepage."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "routine_gp_access_still_phone_leaning",
+      "details": "The appointments page gives a clear online route for urgent medical help and for nurse or healthcare assistant work, but routine GP appointments in advance are still framed mainly around calling the practice."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "visible_out_of_hours_but_response_bound_to_opening_times",
+      "details": "Several forms are reachable out of hours, but response promises and at least one medical-help term explicitly bind handling to opening times or the practice being open."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "Pendleton is a genuinely stronger digital-access case than the GTD practices reviewed so far because it offers more task-specific routes, clearer separation of account and no-account workflows, and less supplier confusion.",
+      "The site still expects patients to make choices between multiple routes, but it explains those choices better than the messier mixed-platform sites."
+    ],
+    "needs_follow_up": [
+      "Check whether the forms remain submittable out of hours or only render while deferring action until opening time.",
+      "Check whether similar standalone Silicon Practice sites in the wider pool expose the same deep online-forms hub pattern."
+    ]
+  },
+  "source_pages": [
+    "https://www.nhs.uk/services/gp-surgery/pendleton-medical-centre/P87015",
+    "https://pendletonmedicalcentre.nhs.uk/",
+    "https://pendletonmedicalcentre.nhs.uk/appointments/",
+    "https://pendletonmedicalcentre.nhs.uk/prescriptions/",
+    "https://pendletonmedicalcentre.nhs.uk/contact-us/",
+    "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/",
+    "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/",
+    "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/get-help-for-any-health-problem/",
+    "https://pendletonmedicalcentre.nhs.uk/form/get-help-for-any-health-problem/",
+    "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/request-an-appointment-with-a-nurse-or-healthcare-assistant/",
+    "https://pendletonmedicalcentre.nhs.uk/form/request-an-appointment-with-a-nurse-or-hca/",
+    "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/contact-the-practice/",
+    "https://pendletonmedicalcentre.nhs.uk/form/contact-the-practice/",
+    "https://pendletonmedicalcentre.nhs.uk/services/managing-your-health-online/online-forms/repeat-prescription-request/",
+    "https://pendletonmedicalcentre.nhs.uk/form/request-a-repeat-prescription/",
+    "https://pendletonmedicalcentre.nhs.uk/surgery-information/feedback-and-complaints/"
+  ]
+}

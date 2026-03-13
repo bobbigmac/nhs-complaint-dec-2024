@@ -1,0 +1,297 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "Y02936",
+    "practice_name": "Millbrook Medical Practice",
+    "display_name": "Millbrook Medical Centre",
+    "website_url": "https://www.millbrookmedicalcentre.nhs.uk/",
+    "website_identity": "standalone practice domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/millbrook-medical-practice/Y02936",
+    "telephone": "0151 546 2480",
+    "postcode": "L32 9PF",
+    "registered_patient_count": 3505,
+    "google_review_score": 2.7,
+    "google_review_count": 39
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "practice-specific exploratory review of the live public site, checking homepage, appointments, prescriptions, online services, practice information and contact content from the point of view of a logged-out patient",
+    "website_confirmation": "The live standalone millbrookmedicalcentre.nhs.uk domain presents itself as the patient-facing practice site and differs materially from the GTD microsites."
+  },
+  "headline": "Millbrook Medical Centre is the messiest digital-front-door case in the GTD set. The homepage exposes generic cards for RapidHealth, PATCHS, Accurx, Klinik, SystmConnect and Engage all at once, but the appointments and contact pages actually funnel routine appointments and admin queries into Accurx Triage. Urgent appointments are phone or in-person from 8am for same-day acute problems only, and the site still has a formal complaints pack buried in the wider practice-information section rather than in the main contact flow.",
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "Standalone nhs.uk practice site with Practice365 elements",
+        "evidence": [
+          "The public site runs on the standalone millbrookmedicalcentre.nhs.uk domain.",
+          "The site links to practice365.co.uk accessibility and document-hosting URLs."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Actionable online request platform surfaced in appointment workflow",
+        "platform": "Accurx Triage",
+        "evidence": [
+          "The appointments page links Book a Routine Appointment and Make an Admin Query to https://florey.accurx.com/p/N83032, which resolves to the Accurx Patient Portal.",
+          "The contact page's Contact us Online link also goes to the same Accurx route."
+        ]
+      },
+      {
+        "status": "stale_or_conflicting",
+        "label": "Homepage supplier collage",
+        "platform": "RapidHealth, PATCHS, Accurx, Klinik, SystmConnect and Engage",
+        "evidence": [
+          "The homepage exposes multiple generic vendor cards for non-urgent online contact rather than one clear current route.",
+          "These cards do not line up cleanly with the appointments page, which points patients into Accurx."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Prescription access platforms",
+        "platform": "NHS App, Patient Access, NHS Online Login and paper slip",
+        "evidence": [
+          "The prescriptions page exposes NHS App, Patient Access and NHS Online Login.",
+          "It also says patients can request medication by repeat slip or on paper by dropping it into the box at reception."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine appointment",
+      "label": "Appointments page from homepage navigation",
+      "steps_from_home": 1,
+      "url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/appointments/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine appointment or admin query",
+      "label": "Accurx route from appointments page",
+      "steps_from_home": 2,
+      "url": "https://accurx.nhs.uk/patient-initiated/n83032"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Prescriptions page",
+      "steps_from_home": 1,
+      "url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/prescriptions/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "online services overview",
+      "label": "Online Services page",
+      "steps_from_home": 1,
+      "url": "https://www.millbrookmedicalcentre.nhs.uk/online-services/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Practice information page containing complaints documents",
+      "steps_from_home": 1,
+      "url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "simple live HTTP fetch timing of the routes used during review; this is a lightweight availability check, not a full browser performance test",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://www.millbrookmedicalcentre.nhs.uk/",
+        "final_url": "https://www.millbrookmedicalcentre.nhs.uk/",
+        "status": "live",
+        "title": "Millbrook Medical Centre - Committed to providing first class primary care.",
+        "load_ms": 2334.9
+      },
+      {
+        "label": "appointments",
+        "url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/appointments/",
+        "final_url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/appointments/",
+        "status": "live",
+        "title": "Appointments - Millbrook Medical Centre",
+        "load_ms": 22227.0
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/prescriptions/",
+        "final_url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/prescriptions/",
+        "status": "live",
+        "title": "Prescriptions - Millbrook Medical Centre",
+        "load_ms": 148.7
+      },
+      {
+        "label": "contact",
+        "url": "https://www.millbrookmedicalcentre.nhs.uk/contact/",
+        "final_url": "https://www.millbrookmedicalcentre.nhs.uk/contact/",
+        "status": "live",
+        "title": "Contact - Millbrook Medical Centre",
+        "load_ms": 2229.1
+      },
+      {
+        "label": "online_services",
+        "url": "https://www.millbrookmedicalcentre.nhs.uk/online-services/",
+        "final_url": "https://www.millbrookmedicalcentre.nhs.uk/online-services/",
+        "status": "live",
+        "title": "Online Services - Millbrook Medical Centre",
+        "load_ms": 135.0
+      },
+      {
+        "label": "accurx",
+        "url": "https://florey.accurx.com/p/N83032",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/n83032",
+        "status": "live",
+        "title": "Contact us about your request - Accurx Patient Portal",
+        "load_ms": 188.0
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/appointments/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The appointments page says urgent appointments are only for acute problems that need to be seen the same day.",
+        "It says patients must either attend the practice in person from 8am on the day or call 0151 546 2480 from 8am on the day.",
+        "Any ongoing problems are pushed into the pre-bookable route instead."
+      ],
+      "friction": [
+        "Urgent same-day help is not offered through the online consultation route in this pass.",
+        "The patient must start at 8am and use phone or in-person contact for urgent same-day care."
+      ]
+    },
+    {
+      "task": "routine medical request or appointment",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/n83032",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "Homepage to Appointments is one click, then Book a Routine Appointment opens the Accurx route.",
+        "The appointments page says Accurx Triage is for routine non-urgent problems and does not require the NHS App or Patient Access.",
+        "It says the practice will contact the patient within 24 to 48 working hours to offer an appointment within 2 weeks."
+      ],
+      "friction": [
+        "The homepage advertises several different supplier names, but the appointments workflow actually resolves to Accurx.",
+        "The route is conceptually messy because the homepage and the task pages do not tell the same platform story."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/prescriptions/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The prescriptions page exposes NHS App, Patient Access and NHS Online Login.",
+        "It also says patients can request medication by repeat slip or on paper by dropping it into the box at reception.",
+        "Medication queries are linked through the same Accurx route used for routine appointment booking."
+      ],
+      "friction": [
+        "Prescription access is spread across several systems and offline fallback methods rather than one clear route."
+      ]
+    },
+    {
+      "task": "admin query",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/n83032",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "The appointments page links Make an Admin Query to the same Accurx route as routine appointments.",
+        "The contact page's Contact us Online link also goes to the same Accurx route.",
+        "The contact page says the practice email address should not be used for appointments, medical advice, cancelling appointments or medication queries."
+      ],
+      "friction": [
+        "The site forces admin messaging into Accurx while the homepage simultaneously advertises several other online-contact suppliers."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage mainly surfaces Friends and Family feedback and an NHS leave-a-review link.",
+        "The formal complaints materials are instead buried in the wider Practice Information page as downloadable complaint leaflet, form and policy documents.",
+        "The complaints policy text says complaints should usually be made within 12 months, acknowledged within 3 working days, and aimed to be resolved within 6 months."
+      ],
+      "friction": [
+        "Formal complaints are not surfaced prominently in the main contact flow.",
+        "The patient has to find and download documents rather than being guided to one obvious complaints route."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "routine appointment",
+      "start_url": "https://www.millbrookmedicalcentre.nhs.uk/",
+      "visible_next_step": "Appointments, then Book a Routine Appointment",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/n83032"
+    },
+    {
+      "task": "admin query",
+      "start_url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/appointments/",
+      "visible_next_step": "Make an Admin Query",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/n83032"
+    },
+    {
+      "task": "complaint",
+      "start_url": "https://www.millbrookmedicalcentre.nhs.uk/practice-information/",
+      "visible_next_step": "Complaints Procedure Information Leaflet or Complaints Form",
+      "expected_destination": "https://practice365.co.uk/uploads/sites/1489/2026/01/Patient-Complaint-Leaflet.doc"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "homepage_platform_overload",
+      "details": "The homepage advertises RapidHealth, PATCHS, Accurx, Klinik, SystmConnect and Engage all at once even though the actionable appointment workflow points to Accurx."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "slow_appointments_page",
+      "details": "The simple live fetch timing for the appointments page was much slower than the other pages used in this review."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "complaints_route_buried",
+      "details": "Formal complaints materials were found in downloadable documents under Practice Information rather than in the main contact flow."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "Millbrook is the most confusing front door in the GTD set reviewed so far because the homepage broadcasts many supplier names while the actionable workflow mainly uses Accurx.",
+      "The main patient burden here is not just which supplier is used, but the sheer amount of overlapping or generic digital-access messaging."
+    ],
+    "needs_follow_up": [
+      "Check whether the generic homepage cards for PATCHS, RapidHealth, Klinik, SystmConnect and Engage are intentional live routes or just leftover content modules.",
+      "Open the Accurx route in a real browser session to inspect the first input burden.",
+      "Check whether a more direct formal complaints page exists elsewhere on the site."
+    ]
+  },
+  "source_pages": [
+    "https://www.millbrookmedicalcentre.nhs.uk/",
+    "https://www.millbrookmedicalcentre.nhs.uk/practice-information/appointments/",
+    "https://www.millbrookmedicalcentre.nhs.uk/practice-information/prescriptions/",
+    "https://www.millbrookmedicalcentre.nhs.uk/online-services/",
+    "https://www.millbrookmedicalcentre.nhs.uk/contact/",
+    "https://www.millbrookmedicalcentre.nhs.uk/practice-information/",
+    "https://florey.accurx.com/p/N83032",
+    "https://www.nhs.uk/services/gp-surgery/millbrook-medical-practice/Y02936"
+  ]
+}

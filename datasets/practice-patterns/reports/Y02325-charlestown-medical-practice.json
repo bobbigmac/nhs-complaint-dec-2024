@@ -1,0 +1,283 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "Y02325",
+    "practice_name": "Charlestown MD",
+    "display_name": "Charlestown Medical Practice",
+    "website_url": "https://charlestownmedicalpractice.co.uk/",
+    "website_identity": "standalone practice domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/charlestown-md/Y02325",
+    "telephone": "0161 241 5309",
+    "postcode": "M9 7ED",
+    "registered_patient_count": 5268,
+    "google_review_score": 1.9,
+    "google_review_count": 109
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "practice-specific exploratory review of the live public site, checking homepage, appointments, prescriptions, services, contact and complaints content from the point of view of a logged-out patient",
+    "website_confirmation": "The NHS profile points to the standalone charlestownmedicalpractice.co.uk domain and the live site clearly presents itself as Charlestown Medical Practice."
+  },
+  "headline": "Charlestown Medical Practice is a standalone WordPress and Silicon Practice style site in transition. The homepage announces new management from 16 September 2025 and says all requests made by phone, in person or online will go through PATCHS, but the appointments page still contains older NHS App wording that mentions continuing to the Accurx system. Prescriptions are split across NHS account, Patient Access, PATCHS and paper-slip routes, and the complaints page is a fuller formal policy page than most GTD microsites expose.",
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "Standalone WordPress practice site with Silicon Practice style NHS theme",
+        "evidence": [
+          "The public site runs on the standalone charlestownmedicalpractice.co.uk domain.",
+          "The footer and page structure match the Silicon Practice style seen on other standalone NHS practice sites."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Current promoted request platform",
+        "platform": "PATCHS",
+        "evidence": [
+          "The homepage says that from 16 September 2025 all requests made by phone, in person or online will go through PATCHS Health.",
+          "The appointments page links directly to https://patchs.ai/practice/charlestownmedicalpractice."
+        ]
+      },
+      {
+        "status": "stale_or_conflicting",
+        "label": "Older app-mediated wording still on the site",
+        "platform": "Accurx wording inside the NHS App path",
+        "evidence": [
+          "The appointments page still includes older wording telling NHS App users to continue to the Accurx system before the newer direct PATCHS route."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Other patient-access platforms still visible",
+        "platform": "Patient Access and NHS App",
+        "evidence": [
+          "The prescriptions page still links both Patient Access and the NHS App or NHS account.",
+          "These are live alongside the newer PATCHS story."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine medical request",
+      "label": "Appointments page from homepage navigation",
+      "steps_from_home": 1,
+      "url": "https://charlestownmedicalpractice.co.uk/appointments/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine medical request",
+      "label": "Direct PATCHS route from appointments page",
+      "steps_from_home": 2,
+      "url": "https://patchs.ai/practice/charlestownmedicalpractice"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Prescriptions page",
+      "steps_from_home": 1,
+      "url": "https://charlestownmedicalpractice.co.uk/prescriptions/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "admin query",
+      "label": "Services page",
+      "steps_from_home": 1,
+      "url": "https://charlestownmedicalpractice.co.uk/services/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Feedback and complaints page",
+      "steps_from_home": 1,
+      "url": "https://charlestownmedicalpractice.co.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "simple live HTTP fetch timing of the routes used during review; this is a lightweight availability check, not a full browser performance test",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://charlestownmedicalpractice.co.uk/",
+        "final_url": "https://charlestownmedicalpractice.co.uk/",
+        "status": "live",
+        "title": "Charlestown Medical Practice – NHS GP Surgery in Manchester",
+        "load_ms": 212.8
+      },
+      {
+        "label": "appointments",
+        "url": "https://charlestownmedicalpractice.co.uk/appointments/",
+        "final_url": "https://charlestownmedicalpractice.co.uk/appointments/",
+        "status": "live",
+        "title": "Appointments – Charlestown Medical Practice",
+        "load_ms": 163.5
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://charlestownmedicalpractice.co.uk/prescriptions/",
+        "final_url": "https://charlestownmedicalpractice.co.uk/prescriptions/",
+        "status": "live",
+        "title": "Prescriptions – Charlestown Medical Practice",
+        "load_ms": 151.2
+      },
+      {
+        "label": "contact",
+        "url": "https://charlestownmedicalpractice.co.uk/contact-us/",
+        "final_url": "https://charlestownmedicalpractice.co.uk/contact-us/",
+        "status": "live",
+        "title": "Contact us – Charlestown Medical Practice",
+        "load_ms": 155.5
+      },
+      {
+        "label": "services",
+        "url": "https://charlestownmedicalpractice.co.uk/services/",
+        "final_url": "https://charlestownmedicalpractice.co.uk/services/",
+        "status": "live",
+        "title": "Services – Charlestown Medical Practice",
+        "load_ms": 154.8
+      },
+      {
+        "label": "patchs",
+        "url": "https://patchs.ai/practice/charlestownmedicalpractice",
+        "final_url": "https://patchs.ai/practice/charlestownmedicalpractice",
+        "status": "live",
+        "title": "PATCHS",
+        "load_ms": 89.0
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://charlestownmedicalpractice.co.uk/appointments/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage transition banner says all requests by phone, in person or online now go through PATCHS.",
+        "The appointments page still offers NHS App wording, direct PATCHS use and phone contact.",
+        "The appointments page says the patient may then be offered phone, face-to-face, video, text or email contact."
+      ],
+      "friction": [
+        "The coexistence of new PATCHS messaging and older Accurx wording makes the route harder to trust."
+      ]
+    },
+    {
+      "task": "routine medical request or appointment",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://patchs.ai/practice/charlestownmedicalpractice",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "Homepage to Appointments is one click, then the direct PATCHS route is another click.",
+        "The appointments page says the patient should select contact my GP practice, continue with PATCHS Health, then log in or create an account.",
+        "The homepage banner says patients would receive a text message with a registration link before go-live."
+      ],
+      "gating_or_preconditions": [
+        "The appointments route explicitly mentions account creation or login."
+      ],
+      "friction": [
+        "Supplier overlap on the same appointments page increases cognitive load during the transition."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://charlestownmedicalpractice.co.uk/prescriptions/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The prescriptions page says the easiest routes are NHS account and Patient Access.",
+        "It also says the patient can use PATCHS or bring a paper slip to the surgery.",
+        "The page says repeat prescriptions are not taken over the phone or by email and are usually ready after 2 working days."
+      ],
+      "friction": [
+        "Prescription access is fragmented across several platforms and paper fallback rather than one single front door."
+      ]
+    },
+    {
+      "task": "admin query",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://charlestownmedicalpractice.co.uk/services/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The services page exposes direct task pages such as sick notes and test results.",
+        "The homepage also says all requests now go through PATCHS, implying these services sit inside a broader transition rather than a clean single model."
+      ],
+      "friction": [
+        "The site keeps both direct service pages and the wider PATCHS transition story alive at the same time."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://charlestownmedicalpractice.co.uk/surgery-information/feedback-and-complaints/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The site has a dedicated Feedback and complaints page rather than burying complaints only in the contact page.",
+        "It says most problems should be raised quickly with the person concerned first, but formal complaints can then be made in writing, by phone, or by visiting the surgery.",
+        "The page says complaints should normally be made within 12 months."
+      ],
+      "friction": [
+        "The complaints wording still leans on written complaints and a fairly formal process."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "routine medical request",
+      "start_url": "https://charlestownmedicalpractice.co.uk/",
+      "visible_next_step": "Appointments, then online form",
+      "expected_destination": "https://patchs.ai/practice/charlestownmedicalpractice"
+    },
+    {
+      "task": "complaint",
+      "start_url": "https://charlestownmedicalpractice.co.uk/",
+      "visible_next_step": "Feedback and complaints",
+      "expected_destination": "https://charlestownmedicalpractice.co.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "conflicting_platform_guidance",
+      "details": "The homepage and appointments page promote PATCHS, but the appointments page still contains older NHS App wording that mentions continuing to the Accurx system."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "fragmented_prescription_routes",
+      "details": "The prescriptions page keeps NHS account, Patient Access, PATCHS and paper-slip routes alive at the same time."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "Charlestown is still in transition rather than having a clean single access pattern.",
+      "Its complaints route is more explicit than most GTD microsites, but the main patient burden is overlapping systems rather than complaints discoverability."
+    ],
+    "needs_follow_up": [
+      "Check the direct PATCHS route in a real browser session to see exactly what the first registration prompts are.",
+      "Check whether the direct service pages for sick notes and test results now feed into PATCHS or still act as separate local paths."
+    ]
+  },
+  "source_pages": [
+    "https://charlestownmedicalpractice.co.uk/",
+    "https://charlestownmedicalpractice.co.uk/appointments/",
+    "https://charlestownmedicalpractice.co.uk/prescriptions/",
+    "https://charlestownmedicalpractice.co.uk/services/",
+    "https://charlestownmedicalpractice.co.uk/contact-us/",
+    "https://charlestownmedicalpractice.co.uk/surgery-information/feedback-and-complaints/",
+    "https://patchs.ai/practice/charlestownmedicalpractice",
+    "https://www.nhs.uk/services/gp-surgery/charlestown-md/Y02325"
+  ]
+}

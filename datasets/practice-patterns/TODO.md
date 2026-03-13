@@ -19,24 +19,24 @@ Ranking basis for the wider-pool queue:
 ## GTD Queue
 
 - [x] `Y02586` Ashton Gp Service
-- [ ] `Y02325` Charlestown MD
-- [ ] `Y02849` City Health Centre
-- [ ] `Y02663` Droylsden Medical Practice
+- [x] `Y02325` Charlestown MD
+- [x] `Y02849` City Health Centre
+- [x] `Y02663` Droylsden Medical Practice
 - [x] `P89011` Gordon Street Medical Centre
 - [x] `Y02713` Guide Bridge Medical Practice
 - [x] `P89013` Hattersley Group Practice
-- [ ] `Y02875` Lindley House Health Centre
-- [ ] `Y02936` Millbrook Medical Practice
+- [x] `Y02875` Lindley House Health Centre
+- [x] `Y02936` Millbrook Medical Practice
 - [x] `P89612` Mossley Medical Practice
 - [x] `Y02960` New Bank Health
-- [ ] `Y02520` Simpson Medical Practice
+- [x] `Y02520` Simpson Medical Practice
 - [x] `P89602` The Smithy Surgery
 
 ## Wider Pool Bottom 20
 
 - [x] `P82013001` Dr Y Loomba & Partner
-- [ ] `P89020` HT Practice
-- [ ] `Y02755001` Rock@Radcliffe
+- [x] `P89020` HT Practice
+- [x] `Y02755001` Rock@Radcliffe
 - [ ] `G3K4Y` Corkland Road Medical Practice
 - [ ] `P85612` Werneth Medical Practice
 - [ ] `P84047001` Droylsden Road Surgery Branch
@@ -60,9 +60,9 @@ Ranking basis for the wider-pool queue:
 - [x] `P86001` Milnrow Village Practice
 - [x] `P86021` Pennine Surgery
 - [x] `P88044` Bredbury Medical Centre
-- [ ] `P87015` Pendleton Medical Centre
-- [ ] `P84689` Manchester Integrative Medical Practice
-- [ ] `V6E6I` Manchester Integrative Medical Practice at Moss Side Health Centre
+- [x] `P87015` Pendleton Medical Centre
+- [x] `P84689` Manchester Integrative Medical Practice
+- [x] `V6E6I` Manchester Integrative Medical Practice at Moss Side Health Centre
 - [ ] `P84683` THE Doc's Surgery
 - [ ] `P92637` Astley General Practice
 - [ ] `P87032` Orient Road Medical Practice

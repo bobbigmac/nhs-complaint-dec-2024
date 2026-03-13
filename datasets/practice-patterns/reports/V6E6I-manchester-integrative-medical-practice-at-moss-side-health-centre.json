@@ -1,0 +1,209 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "V6E6I",
+    "practice_name": "Manchester Integrative Medical Practice at Moss Side Health Centre",
+    "display_name": "Manchester Integrative Medical Practice at Moss Side Health Centre",
+    "website_url": "https://mimp.org.uk/",
+    "website_identity": "exact shared site and path with P84689",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/manchester-integrative-medical-practice-at-moss-side-health-centre/V6E6I",
+    "telephone": "0161 226 7615",
+    "postcode": "M14 4GP",
+    "registered_patient_count": null,
+    "google_review_score": 4.8,
+    "google_review_count": 550
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "identity-specific review of an exact shared patient-facing site, using the Moss Side NHS profile, the shared mimp.org.uk website, and the shared Accurx routes exposed on that site",
+    "website_confirmation": "The NHS profile for V6E6I points to mimp.org.uk, the same live site used by P84689."
+  },
+  "headline": "The Moss Side identity uses the exact same public website as P84689, but the digital routing is not truly branch-neutral. The shared site lists both Longsight and Moss Side opening times, the complaints page phone number matches Moss Side, but the main online request links still route patients into Accurx using the P84689 code and the Longsight phone number.",
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Shared public website stack",
+        "platform": "WordPress with NHS UK frontend theme and Silicon Practice plugins",
+        "evidence": [
+          "The V6E6I NHS profile points to the same mimp.org.uk site as P84689.",
+          "The site itself presents both Longsight Health Centre and Moss Side Health Centre opening information."
+        ]
+      },
+      {
+        "status": "live_but_shared",
+        "label": "Main digital request platform",
+        "platform": "Accurx using the P84689 organisation code",
+        "evidence": [
+          "The shared site's appointments and prescriptions links use Accurx routes keyed to P84689, not V6E6I.",
+          "The contact card on the shared contact page foregrounds the Longsight phone number 0161 256 4488."
+        ]
+      },
+      {
+        "status": "live_but_location_split",
+        "label": "Complaints handling",
+        "platform": "Shared website page with Moss Side-specific complaint contact details",
+        "evidence": [
+          "The complaints page instructs patients to phone Mandy Bruder on 0161 226 7615 or write to Moss Side Health Centre.",
+          "That phone number matches the Moss Side NHS identity rather than the Longsight one."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine care or admin request",
+      "label": "Shared-site Accurx routine-care link",
+      "steps_from_home": 1,
+      "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "urgent same-day help",
+      "label": "Shared-site urgent Accurx triage link",
+      "steps_from_home": 2,
+      "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Shared complaints page with Moss Side details",
+      "steps_from_home": 1,
+      "url": "https://mimp.org.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "shared-site runtime checks reused because V6E6I and P84689 expose the same patient-facing site and Accurx endpoints",
+    "checks": [
+      {
+        "label": "shared_homepage",
+        "url": "https://mimp.org.uk/",
+        "final_url": "https://mimp.org.uk/",
+        "status": "live",
+        "title": "Manchester Integrative Medical Practice – NHS GP Surgery in Manchester",
+        "load_ms": 190.1
+      },
+      {
+        "label": "shared_contact_page",
+        "url": "https://mimp.org.uk/contact-us/",
+        "final_url": "https://mimp.org.uk/contact-us/",
+        "status": "live",
+        "title": "Contact us – Manchester Integrative Medical Practice",
+        "load_ms": 153.8
+      },
+      {
+        "label": "shared_complaints_page",
+        "url": "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+        "final_url": "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+        "status": "live",
+        "title": "Feedback and complaints – Manchester Integrative Medical Practice",
+        "load_ms": 153.2
+      },
+      {
+        "label": "shared_accurx_routine",
+        "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+        "status": "live",
+        "title": "See other available options - Accurx Patient Portal",
+        "load_ms": 131.5
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "The shared site sends urgent requests into an Accurx route keyed to P84689 rather than a Moss Side-specific code.",
+        "The route is visible out of hours but suspended in the same way as the P84689 flow."
+      ],
+      "friction": [
+        "The shared digital front door does not clearly preserve the Moss Side identity in the actual online route.",
+        "A Moss Side patient may encounter Longsight-coded or group-wide routing before reaching help."
+      ]
+    },
+    {
+      "task": "routine medical request or admin request",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The shared homepage advertises a single online service for routine, medication and admin requests.",
+        "That shared route is keyed to P84689 and currently suspended out of hours."
+      ],
+      "friction": [
+        "The site is easy to navigate, but the branch identity is blurred at the point of digital request.",
+        "The contact page's main telephone card also favors the Longsight number."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The shared complaints page offers formal complaints by phone or writing to Moss Side Health Centre.",
+        "The complaints manager phone number on the page matches the Moss Side NHS profile telephone."
+      ],
+      "friction": [
+        "The complaints route is more Moss Side-specific than the core request platform.",
+        "That creates a split where complaints look local but the main access platform looks shared and Longsight-led."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "shared routine-care route",
+      "start_url": "https://mimp.org.uk/",
+      "visible_next_step": "Homepage online service link for non-urgent requests",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care"
+    },
+    {
+      "task": "shared complaints route",
+      "start_url": "https://mimp.org.uk/",
+      "visible_next_step": "Feedback and complaints",
+      "expected_destination": "https://mimp.org.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "shared_site_shared_code_mismatch",
+      "details": "The exact shared patient-facing site for Moss Side uses Accurx routes keyed to P84689 rather than a Moss Side-specific code."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "identity_split_across_routes",
+      "details": "The shared contact and Accurx routes foreground Longsight details, while the complaints page and NHS profile foreground Moss Side details."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "This is not a separate digital pattern so much as a second NHS identity living on the same digital front door.",
+      "Patients may not care about the internal identity split if the service works well, but it matters for later automation and branch-level analysis."
+    ],
+    "needs_follow_up": [
+      "Check whether the in-hours Accurx flow ever makes the Moss Side identity visible later in the journey.",
+      "Check whether booking, callback or SMS messages generated from the shared route differ by physical site."
+    ]
+  },
+  "source_pages": [
+    "https://www.nhs.uk/services/gp-surgery/manchester-integrative-medical-practice-at-moss-side-health-centre/V6E6I",
+    "https://mimp.org.uk/",
+    "https://mimp.org.uk/contact-us/",
+    "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+    "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+    "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request"
+  ]
+}
