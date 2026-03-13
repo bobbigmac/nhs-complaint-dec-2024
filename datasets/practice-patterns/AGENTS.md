@@ -39,6 +39,7 @@ This folder is a manual evidence dump about how GP practices actually handle acc
 ## Review Heuristics
 
 - start by confirming the patient-facing website via NHS profile plus a quick search cross-check
+- do a fresh exploratory pass for every practice unless the live patient-facing site is literally the same site and path as one already reviewed
 - use a real browser session and explore the site interactively, choosing the next step based on what the page shows
 - read homepage, appointments, online services, prescriptions, contact, and complaints or feedback pages
 - check source or headers for platform clues, but trust live patient instructions over hidden tech traces
@@ -61,6 +62,8 @@ Each practice report should function as a rough pattern file:
 
 This does not need to be exhaustive.
 It does need to be useful.
+Similarity between two practices is not enough to skip the pass.
+Only exact shared patient-facing sites should be treated as one pattern with several practice identities.
 
 ## Good Signals
 

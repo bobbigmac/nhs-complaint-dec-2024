@@ -22,6 +22,7 @@ The primary output is a per-practice pattern file: a rough operational spec of h
 ## Working approach
 
 - treat each practice as an interactive manual investigation in a real browser
+- do not skip the exploratory pass for a practice just because another practice appears similar; only collapse cases when the live patient-facing site is literally the same site and path
 - drive the browser task-by-task as a patient would, rather than relying on a one-off crawl to decide what matters
 - separate what is live now from what the site merely claims
 - distinguish a standalone practice domain from a shared management-company host that is being used as a patient microsite
@@ -40,6 +41,8 @@ Break the work down like this:
 3. Test the current task battery from the point of view of a logged-out patient.
 4. Record what the site says it offers, what routes are actually reachable, and where the patient hits friction.
 5. Capture a rough replayable log or mini-spec of the useful paths discovered, so future non-LLM runners can attempt the same checks.
+
+Even when several sites share a supplier, theme, or management company, treat each practice as separate evidence unless the patient-facing site is truly identical.
 
 The replay log is secondary.
 Its job is not to replace judgement.

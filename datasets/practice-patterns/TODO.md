@@ -18,19 +18,19 @@ Ranking basis for the wider-pool queue:
 
 ## GTD Queue
 
-- [ ] `Y02586` Ashton Gp Service
+- [x] `Y02586` Ashton Gp Service
 - [ ] `Y02325` Charlestown MD
 - [ ] `Y02849` City Health Centre
 - [ ] `Y02663` Droylsden Medical Practice
-- [ ] `P89011` Gordon Street Medical Centre
-- [ ] `Y02713` Guide Bridge Medical Practice
-- [ ] `P89013` Hattersley Group Practice
+- [x] `P89011` Gordon Street Medical Centre
+- [x] `Y02713` Guide Bridge Medical Practice
+- [x] `P89013` Hattersley Group Practice
 - [ ] `Y02875` Lindley House Health Centre
 - [ ] `Y02936` Millbrook Medical Practice
-- [ ] `P89612` Mossley Medical Practice
+- [x] `P89612` Mossley Medical Practice
 - [x] `Y02960` New Bank Health
 - [ ] `Y02520` Simpson Medical Practice
-- [ ] `P89602` The Smithy Surgery
+- [x] `P89602` The Smithy Surgery
 
 ## Wider Pool Bottom 20
 

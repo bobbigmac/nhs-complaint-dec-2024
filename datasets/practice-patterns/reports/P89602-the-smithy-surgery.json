@@ -1,0 +1,286 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "P89602",
+    "practice_name": "The Smithy Surgery",
+    "display_name": "The Smithy Surgery",
+    "website_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+    "website_identity": "shared GTD patient microsite on the gtdhealthcare.co.uk domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-smithy-surgery/P89602",
+    "telephone": "01457 767 123",
+    "postcode": "SK14 8LJ",
+    "registered_patient_count": 3747,
+    "google_review_score": 4.0,
+    "google_review_count": 23
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "practice-specific exploratory review of the live public site, checking homepage, appointments, online request information, prescriptions, contact and complaints content from the point of view of a logged-out patient",
+    "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present The Smithy Surgery as the patient-facing site."
+  },
+  "headline": "The Smithy Surgery uses the same GTD and PATCHS pattern as several other sites in this batch, but its own live pages still matter. The homepage carries an Android text-message warning, the site presents a direct PATCHS route, the online-request page contains wrong-practice links back to Ashton GP Service, the prescriptions page still offers email ordering, and complaints handling is embedded in the contact page with local and central GTD contacts.",
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "GTD-managed practice microsite",
+        "evidence": [
+          "The public site lives on a practice-specific path under gtdhealthcare.co.uk.",
+          "The homepage explicitly says the partnership is managed by gtd GMS on behalf of the partners and NHS."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Primary request platform",
+        "platform": "PATCHS",
+        "evidence": [
+          "The homepage exposes a direct CTA to https://patchs.ai/practice/thesmithy.",
+          "The appointments and online-request-form pages both describe PATCHS as the core intake route."
+        ]
+      },
+      {
+        "status": "stale_or_conflicting",
+        "label": "Broken internal navigation on the explainer page",
+        "platform": "Practice microsite content template",
+        "evidence": [
+          "The online-request-form page links Appointments, Prescriptions and other core nav items to Ashton GP Service URLs rather than Smithy URLs."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine medical request",
+      "label": "Direct PATCHS link from homepage",
+      "steps_from_home": 1,
+      "url": "https://patchs.ai/practice/thesmithy"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "urgent or routine appointment guidance",
+      "label": "Appointments page from homepage navigation",
+      "steps_from_home": 1,
+      "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "admin query or triage explainer",
+      "label": "PATCHS explainer page",
+      "steps_from_home": 1,
+      "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/online-request-form"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Prescriptions page",
+      "steps_from_home": 1,
+      "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Contact page containing complaints details",
+      "steps_from_home": 1,
+      "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "simple live HTTP fetch timing of the routes used during review; this is a lightweight availability check, not a full browser performance test",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+        "final_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+        "status": "live",
+        "title": "The Smithy Surgery :: gtd healthcare",
+        "load_ms": 402.0
+      },
+      {
+        "label": "appointments",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+        "final_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+        "status": "live",
+        "title": "Appointments :: gtd healthcare",
+        "load_ms": 364.5
+      },
+      {
+        "label": "request_info",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/online-request-form",
+        "final_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/online-request-form",
+        "status": "live",
+        "title": "Online request form :: gtd healthcare",
+        "load_ms": 409.3
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions",
+        "final_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions",
+        "status": "live",
+        "title": "Prescriptions :: gtd healthcare",
+        "load_ms": 414.4
+      },
+      {
+        "label": "contact",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us",
+        "final_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us",
+        "status": "live",
+        "title": "Contact us :: gtd healthcare",
+        "load_ms": 407.4
+      },
+      {
+        "label": "patchs",
+        "url": "https://patchs.ai/practice/thesmithy",
+        "final_url": "https://patchs.ai/practice/thesmithy",
+        "status": "live",
+        "title": "PATCHS",
+        "load_ms": 56.8
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The appointments page says all requests go through PATCHS whether the patient starts online, by phone or in person.",
+        "When the practice is closed the page sends patients to NHS 111 online or 111 by phone, and tells housebound patients to phone before 10am for home visits.",
+        "The site also repeats a warning that some Android users may miss practice text messages because they may land in spam or junk SMS."
+      ],
+      "friction": [
+        "Urgent help still depends on the patient distinguishing between PATCHS triage, phone contact and NHS 111.",
+        "The repeated missed-text warning weakens confidence that callbacks or messaging will arrive cleanly."
+      ]
+    },
+    {
+      "task": "routine medical request or appointment",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://patchs.ai/practice/thesmithy",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage exposes a direct PATCHS CTA.",
+        "The appointments page also offers NHS App, PATCHS directly, or phone.",
+        "The appointments instructions say the patient may need to log in or create an account."
+      ],
+      "gating_or_preconditions": [
+        "PATCHS account creation or login is presented as part of the online route."
+      ],
+      "friction": [
+        "The broken Ashton links on the explainer page create avoidable doubt about whether the site is maintained carefully."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The prescriptions page says the easiest route is an NHS account.",
+        "The page also still offers email ordering via gmicb-tameside.thesmithysurgery@nhs.net.",
+        "It says prescriptions can usually be collected from the pharmacy three or five working days after ordering."
+      ],
+      "friction": [
+        "The coexistence of NHS account and email ordering makes the prescription route less standardised than the core medical-request route."
+      ]
+    },
+    {
+      "task": "admin query",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.gtdhealthcare.co.uk/thesmithysurgery/online-request-form",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The PATCHS explainer page says the system handles sick notes, test results and administrative queries.",
+        "It says all requests made via the form, in person or by phone go through PATCHS.",
+        "It says administrative queries such as fit notes, repeat prescriptions and test results can be submitted 24/7 and the patient will then be contacted within 48 hours."
+      ],
+      "friction": [
+        "The explainer page is undercut by wrong-practice navigation links to Ashton."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The contact page contains a dedicated complaints and feedback section.",
+        "It gives practice-manager contact details and a central GTD complaints team contact.",
+        "The page also links to a comments, compliments and complaints leaflet."
+      ],
+      "friction": [
+        "Complaints are handled from the contact page rather than a clearly separate complaints page."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "routine medical request",
+      "start_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+      "visible_next_step": "Click here to access the online request form.",
+      "expected_destination": "https://patchs.ai/practice/thesmithy"
+    },
+    {
+      "task": "admin query",
+      "start_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+      "visible_next_step": "Click here to find out more about Patchs Health.",
+      "expected_destination": "https://www.gtdhealthcare.co.uk/thesmithysurgery/online-request-form"
+    },
+    {
+      "task": "complaint",
+      "start_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+      "visible_next_step": "Contact us",
+      "expected_destination": "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "wrong_practice_cross_links",
+      "details": "The online-request-form page links key navigation items such as Appointments and Prescriptions to Ashton GP Service URLs rather than Smithy URLs."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "message_delivery_warning",
+      "details": "Multiple pages carry a warning that some Android users may miss text messages because they may be treated as spam or junk SMS."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "mixed_prescription_channels",
+      "details": "The prescriptions page still offers email ordering alongside the NHS account route."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "The Smithy appears to use the same operational model as other GTD plus PATCHS sites, but it is not cleanly maintained because the wrong-practice links are still present.",
+      "Its stronger Google score does not map to a clearly better website pattern on this pass; the live routes still carry several of the same issues seen elsewhere."
+    ],
+    "needs_follow_up": [
+      "Check in a real browser how visible the Ashton cross-links are during ordinary navigation.",
+      "Check whether the Android missed-text warning lines up with what patients report about callbacks and reminders."
+    ]
+  },
+  "source_pages": [
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/online-request-form",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us",
+    "https://patchs.ai/practice/thesmithy",
+    "https://www.nhs.uk/services/gp-surgery/the-smithy-surgery/P89602"
+  ]
+}

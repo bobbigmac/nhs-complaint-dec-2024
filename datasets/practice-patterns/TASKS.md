@@ -46,6 +46,9 @@ For each practice:
 5. Record the first actionable point, first obvious block, and first visible input burden.
 6. Save only the paths and issues that seem useful for future reruns.
 
+Do not skip this pass just because another practice looked similar.
+Only reuse a prior pattern wholesale if the live patient-facing site is literally the same shared site.
+
 ## Common Failure Modes
 
 - supplier overlap that forces the patient to guess
