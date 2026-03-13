@@ -7,11 +7,13 @@ This folder is a manual evidence dump about how GP practices actually handle acc
 - map the patient-facing front door for each practice
 - record the platforms actually exposed to patients, even when there are several
 - capture friction, dead ends, stale routes, complaints handling, and the overall feel of the site without laundering guesswork into hard data
+- build a rough per-practice pattern file that future automation can use as a starting spec
 
 ## What Counts As Good Evidence
 
 - a live public page that clearly tells patients what to do
 - a direct route that resolves to a working platform such as `patchs.ai`, `accurx.nhs.uk`, `askmygp`, `patientaccess`, or a local form route
+- a route found by manually driving the browser through the same clicks a patient would use
 - source-code or response-header clues that identify the site stack
 - NHS profile URLs and search results used to confirm the real patient-facing website
 - repo evidence such as GP Patient Survey JSON and captured Google review text, used as supporting context rather than proof of a workflow
@@ -37,12 +39,28 @@ This folder is a manual evidence dump about how GP practices actually handle acc
 ## Review Heuristics
 
 - start by confirming the patient-facing website via NHS profile plus a quick search cross-check
+- use a real browser session and explore the site interactively, choosing the next step based on what the page shows
 - read homepage, appointments, online services, prescriptions, contact, and complaints or feedback pages
 - check source or headers for platform clues, but trust live patient instructions over hidden tech traces
-- when needed, use Firefox with a copied local profile to walk the site more like a real user and measure load times or click depth
+- use Firefox with a copied local profile when browser behavior matters or the site is hostile to simpler fetches
+- treat any scripted browser walk as a logging aid or replay aid, not the primary reviewer
 - record multiple platforms when the site genuinely exposes several
 - separate direct digital routes from staff-assisted handling like phone triage or receptionist booking
 - treat contradictions, stale pages, and mixed suppliers as findings, not noise
+
+## Pattern Files
+
+Each practice report should function as a rough pattern file:
+
+- what site the patient actually lands on
+- what recurring tasks the site appears to support
+- what routes were discovered manually
+- what the patient is asked for first
+- what breaks, conflicts, redirects, or appears gated
+- what future automation should try to replay
+
+This does not need to be exhaustive.
+It does need to be useful.
 
 ## Good Signals
 
@@ -69,6 +87,55 @@ This folder is a manual evidence dump about how GP practices actually handle acc
 - compare practice scores to the ICS benchmark, not just raw percentages
 - small reviewed samples are exploratory only; avoid making supplier-wide claims too early
 - platform alone is unlikely to explain performance; workflow, wording, and route design matter too
+
+## Task Battery
+
+These are the recurring patient tasks worth testing manually:
+
+- urgent same-day help
+- routine GP appointment or medical query
+- repeat prescription request
+- admin query such as fit note, update details, or test-result follow-up
+- complaint or formal negative feedback
+
+For each task, try to answer:
+
+- can a logged-out patient find the route from the homepage or obvious nav?
+- how many user-visible steps does it take to reach the first actionable page?
+- is the route live out of hours, visibly closed, or only explained in office-hours language?
+- does the route require registration, login, NHS App setup, or another precondition before a normal user can proceed?
+- what initial inputs are requested before submission, without actually submitting anything?
+- does the task stay online, or does it quickly dump the user back to phone or reception?
+- what rough replay steps would let a non-LLM runner attempt this same check later?
+
+## Patient Profiles
+
+The same site may feel different depending on the starting point. Keep these simple profiles in mind:
+
+- a normal logged-out patient who just lands on the homepage
+- a patient comfortable with digital tools but not already logged in anywhere
+- a patient who can browse but may not understand NHS platform jargon
+- a patient trying out of hours when the route may be visible but not actually open
+
+## What To Log
+
+- `discovered_at` for important routes, blocks, and failures
+- route status now: live, visibly closed, stale, broken, or account-gated
+- first form fields or first required choices, without submitting
+- step count from homepage to the first actionable task page
+- cognitive burden: whether the user has to interpret jargon, choose between overlapping suppliers, or guess which route applies
+- manual burden: clicks, repeated data entry, registration walls, callback dependence, or forced phone fallback
+- replay hints: start URL, the visible link or page used next, and the expected destination or gate
+- dates of encountered issues and dates of discovered useful paths
+
+## Automation Role
+
+Future automation should mostly reuse what the manual review already discovered.
+
+- the human review decides what matters on the site
+- the saved replay hints help later runners attempt the same checks headlessly
+- those later runners will fail often, and that is acceptable
+- the stored pattern file is both a research note and a bootstrap spec for later testing
 
 ## Update Discipline
 

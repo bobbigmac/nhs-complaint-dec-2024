@@ -8,6 +8,7 @@ import tempfile
 import time
 from collections import deque
 from configparser import ConfigParser
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin, urlparse
@@ -81,6 +82,7 @@ def make_driver(profile_path: Path, headless: bool, timeout_seconds: int) -> web
     options = Options()
     options.binary_location = shutil.which("firefox") or "/usr/bin/firefox"
     options.profile = str(profile_path)
+    options.page_load_strategy = "eager"
     options.set_preference("browser.startup.page", 0)
     options.set_preference("browser.sessionstore.resume_from_crash", False)
     options.set_preference("browser.sessionstore.resume_session_once", False)
@@ -142,6 +144,22 @@ def extract_links(driver: webdriver.Firefox, current_url: str, base_netloc: str)
     return links
 
 
+def iso_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def summarize_discovered_paths(page_url: str, links: list[dict[str, str]], discovered_at: str) -> list[dict[str, str]]:
+    return [
+        {
+            "href": link["href"],
+            "text": link["text"],
+            "discovered_from_url": page_url,
+            "discovered_at": discovered_at,
+        }
+        for link in links[:50]
+    ]
+
+
 def score_text(text: str, keywords: list[str]) -> int:
     lowered = text.lower()
     return sum(1 for keyword in keywords if keyword in lowered)
@@ -163,6 +181,7 @@ def crawl_site(
         if url in visited:
             continue
         start = time.perf_counter()
+        encountered_at = iso_now()
         error = None
         try:
             driver.get(url)
@@ -183,9 +202,10 @@ def crawl_site(
             "title": title,
             "depth": depth,
             "path": path,
+            "encountered_at": encountered_at,
             "load_ms": load_ms,
             "error": error,
-            "links": links[:50],
+            "links": summarize_discovered_paths(current_url, links, encountered_at),
         }
 
         if depth >= max_depth or error:
@@ -240,12 +260,86 @@ def find_target_routes(crawl: dict[str, Any]) -> dict[str, Any]:
                 "steps_from_home": winner.get("depth"),
                 "final_url": winner.get("url"),
                 "title": winner.get("title"),
+                "encountered_at": winner.get("encountered_at"),
                 "load_ms": winner.get("load_ms"),
                 "path": winner.get("path"),
+                "replay": build_replay_steps(crawl.get("start_url", ""), winner),
             }
         else:
-            routes[target_name] = {"status": "not_found"}
+            routes[target_name] = {
+                "status": "not_found",
+                "replay": {
+                    "check_id": target_name,
+                    "start_url": crawl.get("start_url", ""),
+                    "actions": [
+                        {
+                            "action": "goto",
+                            "url": crawl.get("start_url", ""),
+                        }
+                    ],
+                    "expected": {
+                        "kind": "discover_target_route",
+                        "keywords": keywords,
+                    },
+                },
+            }
     return routes
+
+
+def build_replay_steps(start_url: str, winner: dict[str, Any]) -> dict[str, Any]:
+    actions: list[dict[str, Any]] = [{"action": "goto", "url": start_url}]
+    for step in winner.get("path", []):
+        actions.append(
+            {
+                "action": "click_link",
+                "href": step.get("href"),
+                "text": step.get("text"),
+            }
+        )
+    return {
+        "check_id": slug_from_url_or_title(winner.get("url", ""), winner.get("title", "")),
+        "start_url": start_url,
+        "actions": actions,
+        "expected": {
+            "kind": "final_url",
+            "url": winner.get("url"),
+            "title": winner.get("title"),
+        },
+    }
+
+
+def slug_from_url_or_title(url: str, title: str) -> str:
+    basis = title or url
+    cleaned = "".join(ch.lower() if ch.isalnum() else "-" for ch in basis)
+    while "--" in cleaned:
+        cleaned = cleaned.replace("--", "-")
+    return cleaned.strip("-") or "route-check"
+
+
+def collect_issues(crawl: dict[str, Any]) -> list[dict[str, Any]]:
+    issues: list[dict[str, Any]] = []
+    for page in crawl.get("pages", []):
+        if page.get("error"):
+            issues.append(
+                {
+                    "issue_type": "navigation_error",
+                    "encountered_at": page.get("encountered_at"),
+                    "url": page.get("url"),
+                    "depth": page.get("depth"),
+                    "details": page.get("error"),
+                }
+            )
+        if page.get("depth") == 0 and not page.get("links"):
+            issues.append(
+                {
+                    "issue_type": "homepage_exposed_no_internal_links",
+                    "encountered_at": page.get("encountered_at"),
+                    "url": page.get("url"),
+                    "depth": page.get("depth"),
+                    "details": "No internal links were captured from the homepage during this browser walk.",
+                }
+            )
+    return issues
 
 
 def main() -> None:
@@ -263,6 +357,7 @@ def main() -> None:
     copied_profile = copy_profile(source_profile)
 
     payload: dict[str, Any] = {
+        "generated_at": iso_now(),
         "url": args.url,
         "source_profile": str(source_profile),
         "copied_profile": str(copied_profile),
@@ -277,6 +372,7 @@ def main() -> None:
         crawl = crawl_site(driver, args.url, args.max_depth, args.max_pages, args.timeout_seconds)
         payload["crawl"] = crawl
         payload["target_routes"] = find_target_routes(crawl)
+        payload["issues"] = collect_issues(crawl)
     finally:
         if driver is not None:
             driver.quit()
