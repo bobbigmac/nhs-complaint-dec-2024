@@ -19,6 +19,17 @@
     "website_confirmation": "The NHS profile for V6E6I points to mimp.org.uk, the same live site used by P84689."
   },
   "headline": "The Moss Side identity uses the exact same public website as P84689, but the digital routing is not truly branch-neutral. The shared site lists both Longsight and Moss Side opening times, the complaints page phone number matches Moss Side, but the main online request links still route patients into Accurx using the P84689 code and the Longsight phone number.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 2,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 2,
+    "overall_patient_usability": 2,
+    "summary": "The shared website exposes useful routes, but branch identity drift and complaints-code mismatch make the journey feel only partly practice-specific."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

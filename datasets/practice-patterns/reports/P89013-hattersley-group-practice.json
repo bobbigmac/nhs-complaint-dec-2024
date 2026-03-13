@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present Hattersley Group Practice as the patient-facing site."
   },
   "headline": "Hattersley Group Practice uses the same GTD and PATCHS pattern as other Tameside GTD sites, but it also shows signs of template drift. The homepage presents a direct PATCHS route, the online-request page says all phone, in-person and online requests go through PATCHS with a 48-hour callback expectation, the contact page embeds complaints contacts and a recurring third-Thursday closure notice, and the PATCHS explainer page still contains wrong-practice links back to Ashton.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 3,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 2,
+    "summary": "Usable enough at first glance, but template drift and recurring closure complexity weaken confidence."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

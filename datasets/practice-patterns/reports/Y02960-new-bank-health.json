@@ -19,6 +19,17 @@
     "manual_browser_mode": "headful Firefox using a disposable copy of the local profile"
   },
   "headline": "New Bank still looks like a transition case, but the patient-task picture is now clearer. The homepage says all requests go through PATCHS from 1 October 2025, the appointments page still tells NHS App users to continue to the Accurx system, local Silicon Practice forms still render on the practice domain, and repeat-prescription and other admin routes remain available as separate local forms.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 2,
+    "digital_task_coverage": 4,
+    "journey_ease": 2,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 2,
+    "summary": "There is plenty of digital surface area, but the transition-state overlap between PATCHS, Accurx and legacy forms makes the experience hard to trust."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

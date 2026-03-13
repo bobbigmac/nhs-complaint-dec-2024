@@ -19,6 +19,17 @@
     "website_confirmation": "The NHS profile for P87015 points to pendletonmedicalcentre.nhs.uk, which resolves to a live standalone public practice site."
   },
   "headline": "Pendleton Medical Centre presents one of the clearest digital front doors seen so far. It uses a standalone Silicon Practice site with a large online-forms hub, clearly separates no-account local forms from NHS account or myGP tasks, gives response-time promises on several routes, and exposes direct online forms for urgent medical help, nurse or healthcare assistant appointments, prescriptions, fit notes, test results, admin contact and feedback.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 4,
+    "digital_task_coverage": 5,
+    "journey_ease": 3,
+    "trust_and_maintenance": 4,
+    "complaints_and_fallbacks": 4,
+    "overall_patient_usability": 4,
+    "summary": "One of the strongest digital-access cases reviewed so far, though some useful routes are buried and routine GP access still leans on the phone."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

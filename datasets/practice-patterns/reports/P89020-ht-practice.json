@@ -19,6 +19,17 @@
     "website_confirmation": "The NHS profile for P89020 and search results both point to htpractice.co.uk, where the live site brands itself as The Highlands Surgery while the NHS profile names the organisation HT Practice."
   },
   "headline": "HT Practice uses a standalone site that looks old-fashioned but relatively explicit. It does not present a modern online-consultation platform for appointments on the public pages checked here. Instead it says routine advance appointments are released every Thursday after 2pm, same-day urgent appointments require calling at 8am, repeat prescriptions can be requested by email, post or Patient Access, and complaints go to a dedicated practice complaints email or the integrated care board.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 3,
+    "digital_task_coverage": 2,
+    "journey_ease": 2,
+    "trust_and_maintenance": 3,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 2,
+    "summary": "The site is explicit rather than chaotic, but the actual access model is phone-heavy, timetable-bound and light on digital convenience."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

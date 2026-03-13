@@ -319,6 +319,7 @@ VIEW_CARDS: list[dict[str, object]] = [
     {
         "title": "Practice patterns",
         "description": "Open the reviewed practice cohort ranking with expandable per-practice website, task and issue overviews.",
+        "disabled": True,
         "links": [("Open rankings", f"{PRACTICE_PATTERNS_SITE_DIR}/", "primary")],
     },
 ]
@@ -708,13 +709,15 @@ def build_action_cards(published_files: dict[str, str]) -> str:
                 "title": str(card["title"]),
                 "description": str(card["description"]),
                 "links": links,
+                "disabled": bool(card.get("disabled")),
             }
         )
     return "\n".join(
         f"""
-        <article class="action-card">
+        <article class="action-card{' action-card-disabled' if card.get('disabled') else ''}">
           <h3>{html.escape(str(card["title"]))}</h3>
           <p>{html.escape(str(card["description"]))}</p>
+          {"<p class=\"action-status\">Experimental view, currently low-confidence.</p>" if card.get("disabled") else ""}
           <div class="link-row">
             {build_link_pills((label, href, variant) for label, href, variant in card["links"])}
           </div>

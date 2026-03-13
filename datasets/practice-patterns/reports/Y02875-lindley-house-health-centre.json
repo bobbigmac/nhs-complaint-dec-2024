@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present Lindley Medical Practice as the patient-facing site."
   },
   "headline": "Lindley House Health Centre uses the same GTD plus PATCHS model as several peers, but its own details still matter. The site carries an Android text-message warning, routes routine and urgent use into PATCHS, the explainer page says all routes go through PATCHS with a 48-hour callback expectation and 24/7 admin submission, the same page contains wrong-practice Ashton links, and the prescriptions and complaints pages still depend on old-style local email contacts.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 3,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 3,
+    "summary": "Broadly usable in the same way as other GTD microsites, but dragged down by maintenance errors and mixed signals."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

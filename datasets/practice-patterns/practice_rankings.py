@@ -24,6 +24,13 @@ def survey_metric_percent(row: dict[str, Any], metric_name: str) -> float | None
     return float(value)
 
 
+def subjective_score(report: dict[str, Any], metric_name: str) -> float | None:
+    value = (report.get("subjective_scores") or {}).get(metric_name)
+    if value is None:
+        return None
+    return float(value)
+
+
 def report_relative_link(row: dict[str, Any]) -> str:
     report_path = Path(str(row.get("report_path", "")))
     return f"../reports/{report_path.name}"
@@ -112,10 +119,64 @@ RANK_SIGNAL_DEFINITIONS: list[dict[str, Any]] = [
         "format": lambda value: f"{value:.1f} / 5",
     },
     {
+        "key": "front_door_clarity",
+        "label": "Subjective front-door clarity",
+        "weight": 2.0,
+        "include_in_relative_score": True,
+        "higher_is_better": True,
+        "extract": lambda row, report: subjective_score(report, "front_door_clarity"),
+        "format": lambda value: f"{int(value)} / 5",
+    },
+    {
+        "key": "digital_task_coverage",
+        "label": "Subjective digital task coverage",
+        "weight": 1.5,
+        "include_in_relative_score": True,
+        "higher_is_better": True,
+        "extract": lambda row, report: subjective_score(report, "digital_task_coverage"),
+        "format": lambda value: f"{int(value)} / 5",
+    },
+    {
+        "key": "journey_ease",
+        "label": "Subjective journey ease",
+        "weight": 2.0,
+        "include_in_relative_score": True,
+        "higher_is_better": True,
+        "extract": lambda row, report: subjective_score(report, "journey_ease"),
+        "format": lambda value: f"{int(value)} / 5",
+    },
+    {
+        "key": "trust_and_maintenance",
+        "label": "Subjective trust and maintenance",
+        "weight": 1.5,
+        "include_in_relative_score": True,
+        "higher_is_better": True,
+        "extract": lambda row, report: subjective_score(report, "trust_and_maintenance"),
+        "format": lambda value: f"{int(value)} / 5",
+    },
+    {
+        "key": "complaints_and_fallbacks",
+        "label": "Subjective complaints and fallbacks",
+        "weight": 1.0,
+        "include_in_relative_score": True,
+        "higher_is_better": True,
+        "extract": lambda row, report: subjective_score(report, "complaints_and_fallbacks"),
+        "format": lambda value: f"{int(value)} / 5",
+    },
+    {
+        "key": "overall_patient_usability",
+        "label": "Subjective overall patient usability",
+        "weight": 2.5,
+        "include_in_relative_score": True,
+        "higher_is_better": True,
+        "extract": lambda row, report: subjective_score(report, "overall_patient_usability"),
+        "format": lambda value: f"{int(value)} / 5",
+    },
+    {
         "key": "avg_user_visible_interactions",
         "label": "Average clicks to first actionable page",
         "weight": 1.5,
-        "include_in_relative_score": True,
+        "include_in_relative_score": False,
         "higher_is_better": False,
         "extract": lambda row, report: average_user_visible_interactions(report),
         "format": lambda value: f"{value:.2f}",
@@ -124,7 +185,7 @@ RANK_SIGNAL_DEFINITIONS: list[dict[str, Any]] = [
         "key": "avg_friction_points",
         "label": "Average friction notes per task",
         "weight": 1.5,
-        "include_in_relative_score": True,
+        "include_in_relative_score": False,
         "higher_is_better": False,
         "extract": lambda row, report: average_friction_points(report),
         "format": lambda value: f"{value:.2f}",
@@ -133,7 +194,7 @@ RANK_SIGNAL_DEFINITIONS: list[dict[str, Any]] = [
         "key": "encountered_issue_count",
         "label": "Encountered issues recorded",
         "weight": 1.5,
-        "include_in_relative_score": True,
+        "include_in_relative_score": False,
         "higher_is_better": False,
         "extract": lambda row, report: float(encountered_issue_count(report)),
         "format": lambda value: f"{int(value)}",
@@ -142,10 +203,44 @@ RANK_SIGNAL_DEFINITIONS: list[dict[str, Any]] = [
         "key": "stale_or_conflicting_stack_count",
         "label": "Stale or conflicting stack signals",
         "weight": 1.0,
-        "include_in_relative_score": True,
+        "include_in_relative_score": False,
         "higher_is_better": False,
         "extract": lambda row, report: float(stale_or_conflicting_stack_count(report)),
         "format": lambda value: f"{int(value)}",
+    },
+]
+
+
+SUBJECTIVE_SCORE_FIELDS: list[dict[str, str]] = [
+    {
+        "key": "front_door_clarity",
+        "label": "Front-door clarity",
+        "description": "How obvious the main digital entry route feels to a patient.",
+    },
+    {
+        "key": "digital_task_coverage",
+        "label": "Task coverage",
+        "description": "How many common jobs have a usable digital route.",
+    },
+    {
+        "key": "journey_ease",
+        "label": "Journey ease",
+        "description": "How much friction the patient hits before reaching action.",
+    },
+    {
+        "key": "trust_and_maintenance",
+        "label": "Trust and maintenance",
+        "description": "How coherent, current, and trustworthy the public site feels.",
+    },
+    {
+        "key": "complaints_and_fallbacks",
+        "label": "Complaints and fallbacks",
+        "description": "How legible the complaint route and offline fallbacks are.",
+    },
+    {
+        "key": "overall_patient_usability",
+        "label": "Overall usability",
+        "description": "Overall judgement of the website experience as a patient.",
     },
 ]
 
@@ -197,6 +292,20 @@ def format_runtime(value: float | None) -> str:
 
 def json_script(value: Any) -> str:
     return html.escape(json.dumps(value, indent=2))
+
+
+def build_svg_line_path(points: list[tuple[float, float] | None]) -> str:
+    commands: list[str] = []
+    open_segment = False
+    for point in points:
+        if point is None:
+            open_segment = False
+            continue
+        x, y = point
+        command = "L" if open_segment else "M"
+        commands.append(f"{command} {x:.1f} {y:.1f}")
+        open_segment = True
+    return " ".join(commands)
 
 
 def practice_brief(practice: dict[str, Any]) -> dict[str, Any]:
@@ -256,6 +365,7 @@ def build_relative_rankings(rows: list[dict[str, Any]], reports_by_ods: dict[str
                 "report_path": row.get("report_path"),
                 "report_link": report_relative_link(row),
                 "survey_metrics": (row.get("survey") or {}).get("metrics") or {},
+                "subjective_scores": report.get("subjective_scores") or {},
                 "raw_signals": raw_signals,
                 "report_signals": {
                     "avg_user_visible_interactions": average_user_visible_interactions(report),
@@ -341,7 +451,7 @@ def build_relative_rankings(rows: list[dict[str, Any]], reports_by_ods: dict[str
         "practice_count": len(practices),
         "methodology": {
             "kind": "report-only weighted percentile blend",
-            "summary": "Default ordering is based only on report-derived website-usage signals: lower click burden, lower friction burden, fewer logged issues, and fewer stale or conflicting stack signals. GP Patient Survey and Google scores are shown beside that ordering as comparison columns, not as inputs to the rank itself.",
+            "summary": "Default ordering is based on the subjective report scores now stored in each practice JSON: front-door clarity, digital task coverage, journey ease, trust and maintenance, complaints and fallbacks, and overall patient usability. GP Patient Survey, Google scores, click counts and issue counts are shown beside that ordering as comparison columns, not as inputs to the rank itself.",
             "signals": [
                 {
                     "key": definition["key"],
@@ -371,10 +481,152 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
             + "</ol>"
         )
 
+    practices = rankings["practices"]
+
+    def render_comparison_chart() -> str:
+        if not practices:
+            return ""
+
+        width = 1180
+        height = 360
+        left = 66
+        right = 24
+        top = 26
+        bottom = 48
+        plot_width = width - left - right
+        plot_height = height - top - bottom
+        denominator = max(len(practices) - 1, 1)
+
+        def x_for_index(index: int) -> float:
+            return left + (plot_width * index / denominator)
+
+        def y_for_percent(value: float) -> float:
+            return top + plot_height - ((max(0.0, min(100.0, value)) / 100.0) * plot_height)
+
+        series_definitions = [
+            {
+                "key": "google",
+                "label": "Google review x20",
+                "stroke": "#7c402a",
+                "value": lambda practice: (
+                    float(practice["google_review_score"]) * 20.0
+                    if practice.get("google_review_score") is not None
+                    else None
+                ),
+            },
+            {
+                "key": "overall",
+                "label": "GPPS overall",
+                "stroke": "#0e5a46",
+                "value": lambda practice: (
+                    float((((practice.get("survey_metrics") or {}).get("overall_good") or {}).get("practice_percent")))
+                    if (((practice.get("survey_metrics") or {}).get("overall_good") or {}).get("practice_percent")) is not None
+                    else None
+                ),
+            },
+            {
+                "key": "website",
+                "label": "GPPS website",
+                "stroke": "#355c7d",
+                "value": lambda practice: (
+                    float((((practice.get("survey_metrics") or {}).get("website_easy") or {}).get("practice_percent")))
+                    if (((practice.get("survey_metrics") or {}).get("website_easy") or {}).get("practice_percent")) is not None
+                    else None
+                ),
+            },
+        ]
+
+        grid_lines = "".join(
+            (
+                f'<line x1="{left}" y1="{y_for_percent(value):.1f}" x2="{width - right}" y2="{y_for_percent(value):.1f}" class="chart-grid" />'
+                f'<text x="{left - 10}" y="{y_for_percent(value) + 4:.1f}" text-anchor="end" class="chart-axis-label">{value}</text>'
+            )
+            for value in (0, 25, 50, 75, 100)
+        )
+
+        x_ticks = [0]
+        if len(practices) > 2:
+            x_ticks.append(len(practices) // 2)
+        if len(practices) > 1:
+            x_ticks.append(len(practices) - 1)
+        x_ticks = sorted(set(x_ticks))
+        x_labels = "".join(
+            (
+                f'<line x1="{x_for_index(index):.1f}" y1="{height - bottom}" x2="{x_for_index(index):.1f}" y2="{height - bottom + 6}" class="chart-axis" />'
+                f'<text x="{x_for_index(index):.1f}" y="{height - bottom + 22}" text-anchor="middle" class="chart-axis-label">#{index + 1}</text>'
+            )
+            for index in x_ticks
+        )
+
+        series_paths: list[str] = []
+        point_groups: list[str] = []
+        legend_items: list[str] = []
+
+        for series in series_definitions:
+            points: list[tuple[float, float] | None] = []
+            for index, practice in enumerate(practices):
+                value = series["value"](practice)
+                if value is None:
+                    points.append(None)
+                    continue
+                points.append((x_for_index(index), y_for_percent(float(value))))
+
+            path = build_svg_line_path(points)
+            if path:
+                series_paths.append(
+                    f'<path d="{path}" fill="none" stroke="{series["stroke"]}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />'
+                )
+
+            point_markup = []
+            for index, practice in enumerate(practices):
+                value = series["value"](practice)
+                if value is None:
+                    continue
+                raw_display = (
+                    f'{float(practice["google_review_score"]):.1f} / 5'
+                    if series["key"] == "google"
+                    else f"{float(value):.1f}%"
+                )
+                point_markup.append(
+                    f'<circle cx="{x_for_index(index):.1f}" cy="{y_for_percent(float(value)):.1f}" r="4.5" fill="{series["stroke"]}" class="chart-point">'
+                    f"<title>{html.escape(str(practice['practice_name']))} · rank #{practice['relative_rank']} · {series['label']}: {raw_display}</title>"
+                    "</circle>"
+                )
+            point_groups.append("".join(point_markup))
+
+            legend_items.append(
+                "<li>"
+                f'<span class="legend-swatch" style="background:{series["stroke"]};"></span>'
+                f"{html.escape(series['label'])}"
+                "</li>"
+            )
+
+        return (
+            '<section class="chart-shell">'
+            '<div class="chart-copy">'
+            "<h2>Comparison Chart</h2>"
+            "<p>The x-axis follows the default report-usability order. The three lines show whether Google review score, GP Patient Survey overall, and GP Patient Survey website ease broadly rise and fall with that report-led ordering.</p>"
+            "</div>"
+            '<div class="chart-wrap">'
+            f'<svg viewBox="0 0 {width} {height}" role="img" aria-label="Comparison chart of report order versus Google review score, GP Patient Survey overall, and GP Patient Survey website ease.">'
+            f"{grid_lines}"
+            f'<line x1="{left}" y1="{top}" x2="{left}" y2="{height - bottom}" class="chart-axis" />'
+            f'<line x1="{left}" y1="{height - bottom}" x2="{width - right}" y2="{height - bottom}" class="chart-axis" />'
+            f"{x_labels}"
+            f"{''.join(series_paths)}"
+            f"{''.join(point_groups)}"
+            f'<text x="{left}" y="{top - 8}" class="chart-axis-title">comparison score</text>'
+            f'<text x="{width - right}" y="{height - 12}" text-anchor="end" class="chart-axis-title">report usability order</text>'
+            "</svg>"
+            "</div>"
+            f'<ul class="chart-legend">{"".join(legend_items)}</ul>'
+            "</section>"
+        )
+
     header_tooltips = {
         "rank": "Composite cohort position across the reviewed practice set. Click to sort.",
         "practice": "Practice name and site identity summary. Click to sort alphabetically.",
-        "score": "Weighted report-only website usability score derived from the auto-report signals. Higher is better. Click to sort.",
+        "score": "Weighted report-only website usability score derived from the subjective report scoring fields. Higher is better. Click to sort.",
         "overall": "GP Patient Survey overall experience score for the practice. Click to sort.",
         "website": "GP Patient Survey website-contact ease score for the practice. Click to sort.",
         "clicks": "Average visible interactions from homepage to first actionable page across checked tasks. Lower is better. Click to sort.",
@@ -384,7 +636,7 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
     }
 
     practice_rows: list[str] = []
-    for practice in rankings["practices"]:
+    for practice in practices:
         ods_code = practice["ods_code"]
         detail_id = f"detail-{ods_code}"
         platforms = ", ".join(practice.get("request_platforms") or []) or "mixed / unclear"
@@ -439,6 +691,17 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
             )
             for signal in practice["signal_scores"]
         )
+        subjective_scores = practice.get("subjective_scores", {}) or {}
+        subjective_items = "".join(
+            (
+                "<div class=\"subjective-metric\">"
+                f"<div class=\"subjective-label\" title=\"{html.escape(field['description'], quote=True)}\">{html.escape(field['label'])}</div>"
+                f"<div class=\"subjective-value\">{html.escape(str(subjective_scores.get(field['key']) or '-'))}<span>/5</span></div>"
+                "</div>"
+            )
+            for field in SUBJECTIVE_SCORE_FIELDS
+        )
+        subjective_scored_on = html.escape(str(subjective_scores.get("scored_on") or "-"))
 
         practice_rows.append(
             "<tr "
@@ -470,8 +733,15 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
             "<section class=\"detail-card\">"
             "<h3>Relative Standing</h3>"
             f"<p><strong>#{practice['relative_rank']} of {practice['relative_rank_out_of']}</strong> on the composite relative score.</p>"
+            f"<p class=\"compact\">Judgement summary: {html.escape(str(practice.get('subjective_scores', {}).get('summary') or '-'))}</p>"
             f"<p class=\"compact\">Strengths: {html.escape('; '.join(practice['strengths']) or '-')}</p>"
             f"<p class=\"compact\">Cautions: {html.escape('; '.join(practice['cautions']) or '-')}</p>"
+            "</section>"
+            "<section class=\"detail-card\">"
+            "<h3>Subjective Scorecard</h3>"
+            "<p class=\"compact\">These are the six judgement fields added directly to the source report and used to drive the default report usability ordering.</p>"
+            f"<div class=\"subjective-grid\">{subjective_items}</div>"
+            f"<p class=\"compact meta\">Scored on {subjective_scored_on} using a 1-5 scale where higher is better.</p>"
             "</section>"
             "<section class=\"detail-card\">"
             "<h3>Source Signals</h3>"
@@ -620,6 +890,13 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
       font-size: 1.8rem;
     }}
 
+    .summary-card.summary-card-plain p {{
+      font-size: 1rem;
+      line-height: 1.6;
+      font-family: var(--serif);
+      color: var(--ink);
+    }}
+
     .summary-list {{
       margin: 0;
       padding-left: 18px;
@@ -647,6 +924,126 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
 
     .summary-card .small p:last-child {{
       margin-bottom: 0;
+    }}
+
+    .chart-shell {{
+      margin-bottom: 28px;
+      padding: 22px;
+      border-radius: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 44px rgba(36, 38, 31, 0.08);
+    }}
+
+    .chart-copy {{
+      max-width: 860px;
+      margin-bottom: 14px;
+    }}
+
+    .chart-copy h2 {{
+      margin: 0 0 8px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }}
+
+    .chart-copy p {{
+      margin: 0;
+      line-height: 1.6;
+      color: var(--muted);
+    }}
+
+    .chart-wrap {{
+      overflow-x: auto;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(246, 239, 229, 0.9));
+      border: 1px solid rgba(29, 36, 40, 0.08);
+      padding: 10px;
+    }}
+
+    .chart-wrap svg {{
+      width: 100%;
+      min-width: 900px;
+      height: auto;
+      display: block;
+    }}
+
+    .chart-grid {{
+      stroke: rgba(29, 36, 40, 0.1);
+      stroke-dasharray: 4 6;
+    }}
+
+    .chart-axis {{
+      stroke: rgba(29, 36, 40, 0.22);
+      stroke-width: 1.2;
+    }}
+
+    .chart-axis-label,
+    .chart-axis-title {{
+      fill: var(--muted);
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }}
+
+    .chart-point {{
+      transition: transform 140ms ease;
+    }}
+
+    .chart-point:hover {{
+      transform: scale(1.18);
+    }}
+
+    .chart-legend {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 20px;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }}
+
+    .chart-legend li {{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }}
+
+    .legend-swatch {{
+      display: inline-block;
+      width: 18px;
+      height: 3px;
+      border-radius: 999px;
+    }}
+
+    .warning-bar {{
+      margin: 0 0 28px;
+      padding: 16px 20px;
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(235, 135, 59, 0.92), rgba(201, 92, 34, 0.94));
+      color: #fff8f1;
+      box-shadow: 0 18px 44px rgba(146, 74, 29, 0.2);
+    }}
+
+    .warning-bar p {{
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.65;
+    }}
+
+    .warning-bar strong {{
+      font-family: var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.82rem;
     }}
 
     .caveat-card {{
@@ -843,6 +1240,48 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
       color: var(--muted);
     }}
 
+    .subjective-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 12px 0;
+    }}
+
+    .subjective-metric {{
+      padding: 14px;
+      border-radius: 14px;
+      background:
+        linear-gradient(180deg, rgba(14, 90, 70, 0.1), rgba(255, 255, 255, 0.8)),
+        rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(14, 90, 70, 0.14);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    }}
+
+    .subjective-label {{
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.76rem;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }}
+
+    .subjective-value {{
+      font-family: var(--mono);
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      font-size: 1.45rem;
+      color: var(--accent);
+    }}
+
+    .subjective-value span {{
+      margin-left: 4px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }}
+
     .compact {{
       margin: 0 0 8px;
       line-height: 1.55;
@@ -933,12 +1372,18 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
       <article class="summary-card">
         <h2>Coverage</h2>
         <p>{rankings["practice_count"]}</p>
-        <div class="small">Reviewed practices in this cohort.</div>
+        <div class="small">
+          <p>Reviewed practices in this cohort.</p>
+          <p><strong>Conclusion:</strong> A technically poor website <em>doesn't guarantee</em> bad reviews or bad survey results, at least not to the degree we could measure it here.</p>
+        </div>
       </article>
-      <article class="summary-card">
+      <article class="summary-card summary-card-plain">
         <h2>Method</h2>
         <p>Report-only ranking</p>
-        <div class="small">{html.escape(rankings["methodology"]["summary"])}</div>
+        <div class="small">
+          <p>{html.escape(rankings["methodology"]["summary"])}</p>
+          <p>The default order is driven by six subjective report fields: front-door clarity, task coverage, journey ease, trust and maintenance, complaints and fallbacks, and overall patient usability.</p>
+        </div>
       </article>
       <article class="summary-card">
         <h2>Top Five</h2>
@@ -951,6 +1396,10 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
         <div class="small">Current cohort tail positions, not an absolute quality judgement.</div>
       </article>
     </section>
+    <section class="warning-bar">
+      <p><strong>Measurement limits</strong> Lack of clarity is probably down to our measurement method being unable to effectively copy real user behaviour because of captchas, redirects and basic limits of what an LLM can convert into meaningful signals. We will try revisiting this in future.</p>
+    </section>
+    {render_comparison_chart()}
     <section class="table-shell">
       <div class="table-wrap">
         <table>
@@ -991,7 +1440,12 @@ def render_relative_rankings_html(rankings: dict[str, Any]) -> str:
               <strong>LLM caveat</strong>
               The issue counts and friction notes are not a clean ground-truth audit. The model may have picked issues that fit an apparent pattern instead of measuring how many issues actually exist on each real website.
             </div>
+            <div class="caveat-note">
+              <strong>Likely next use</strong>
+              The fuller per-practice review payloads may still let us compare recurring issue types across practices more usefully than this simple ranking can.
+            </div>
           </div>
+          <p>The current read is that basic website quality or reliability alone, whether pages load fast enough or whether the route technically works, is probably not the main driver here. What may matter more is the design choice layer: whether the route is clear, coherent, and actually effective for patients once they arrive.</p>
           <p>Use this only for this specific process. It should not be trusted as a general ranking, a causal claim, or a reliable count of real website problems outside this experimental workflow.</p>
         </div>
       </article>

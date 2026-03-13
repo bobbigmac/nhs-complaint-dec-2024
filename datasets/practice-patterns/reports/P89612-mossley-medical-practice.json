@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present Mossley Medical Practice as the patient-facing site."
   },
   "headline": "Mossley Medical Practice follows the same GTD and PATCHS pattern as the other microsites reviewed here, but it still has its own quirks. The site carries an Android text-message warning, the homepage exposes a direct PATCHS route, the PATCHS explainer page contains wrong-practice links back to Ashton, and the prescriptions page is stricter than some peers because it says repeat prescriptions are not taken over the phone or by email.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 3,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 3,
+    "summary": "The main route is understandable, but the site still feels template-driven and brittle, with stricter gating on some tasks than peers."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

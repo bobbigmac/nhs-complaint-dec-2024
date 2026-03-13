@@ -19,6 +19,17 @@
     "website_confirmation": "The NHS profile for P84689 points to mimp.org.uk, which resolves to a live standalone practice site."
   },
   "headline": "Manchester Integrative Medical Practice has a clear, modern but tightly gated access model. The public site is a Silicon Practice WordPress build on a standalone domain, while most real patient requests go through Accurx. Routine care, urgent medical requests and repeat prescriptions are all routed into Accurx, and the portal explicitly suspends normal online handling out of hours rather than pretending the route is fully open.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 4,
+    "digital_task_coverage": 4,
+    "journey_ease": 3,
+    "trust_and_maintenance": 4,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 4,
+    "summary": "Clear and modern, but the digital front door is tightly time-gated and the shared-site setup adds some location ambiguity."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

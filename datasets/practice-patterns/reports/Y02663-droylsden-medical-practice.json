@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present Droylsden Medical Practice as the patient-facing site."
   },
   "headline": "Droylsden Medical Practice uses the familiar GTD plus PATCHS structure, but its live details still matter. The site carries an Android text-message warning, the appointments page says the PATCHS route opens Monday to Friday from 7:30am, the explainer page says all routes go through PATCHS with a 48-hour callback expectation and 24/7 admin submission, and the explainer page also contains wrong-practice links back to Ashton.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 2,
+    "digital_task_coverage": 3,
+    "journey_ease": 2,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 2,
+    "summary": "The basic route exists, but warnings, mixed channels and maintenance faults make the user journey feel more brittle than clear."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

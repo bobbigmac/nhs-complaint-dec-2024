@@ -19,6 +19,17 @@
     "website_confirmation": "The NHS profile points to the standalone charlestownmedicalpractice.co.uk domain and the live site clearly presents itself as Charlestown Medical Practice."
   },
   "headline": "Charlestown Medical Practice is a standalone WordPress and Silicon Practice style site in transition. The homepage announces new management from 16 September 2025 and says all requests made by phone, in person or online will go through PATCHS, but the appointments page still contains older NHS App wording that mentions continuing to the Accurx system. Prescriptions are split across NHS account, Patient Access, PATCHS and paper-slip routes, and the complaints page is a fuller formal policy page than most GTD microsites expose.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 2,
+    "digital_task_coverage": 3,
+    "journey_ease": 2,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 2,
+    "summary": "There are still several live routes, but transition-state messaging and fragmented handling make the overall front door feel uncertain."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

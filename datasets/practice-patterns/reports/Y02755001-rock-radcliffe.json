@@ -19,6 +19,17 @@
     "website_confirmation": "The NHS profile points to the Rock domain, but the current live Rock site behaves like a shared organisational site rather than a Radcliffe-specific front door."
   },
   "headline": "Rock@Radcliffe currently has one of the messiest front doors reviewed so far. The NHS identity still points to the shared Rock site, but that site appears Bury and Moorgate-focused, not Radcliffe-focused. It mixes Accurx and askmyGP on the same public pages, the main live digital routes are keyed to the parent code Y02755 rather than the Radcliffe branch code Y02755001, and a live site page says the Radcliffe surgery has relocated to Moorgate Primary Care Centre.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 1,
+    "digital_task_coverage": 2,
+    "journey_ease": 2,
+    "trust_and_maintenance": 1,
+    "complaints_and_fallbacks": 1,
+    "overall_patient_usability": 1,
+    "summary": "One of the weakest front doors in the set: identity drift, conflicting platforms and stale complaints content undermine almost every route."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

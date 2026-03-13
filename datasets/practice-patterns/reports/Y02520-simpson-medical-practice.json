@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present Simpson Medical Practice as the patient-facing site."
   },
   "headline": "Simpson Medical Practice uses the same GTD plus PATCHS structure as several peers, but its own patient path still has notable maintenance issues. The homepage exposes a direct PATCHS route, the explainer page says all phone, in-person and online requests go through PATCHS with a 48-hour callback expectation and 24/7 admin submission, and that same explainer page still contains wrong-practice Ashton links.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 3,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 3,
+    "summary": "A fairly standard GTD plus PATCHS route that still suffers from obvious maintenance faults and some split handling."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

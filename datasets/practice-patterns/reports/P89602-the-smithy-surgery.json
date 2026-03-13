@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present The Smithy Surgery as the patient-facing site."
   },
   "headline": "The Smithy Surgery uses the same GTD and PATCHS pattern as several other sites in this batch, but its own live pages still matter. The homepage carries an Android text-message warning, the site presents a direct PATCHS route, the online-request page contains wrong-practice links back to Ashton GP Service, the prescriptions page still offers email ordering, and complaints handling is embedded in the contact page with local and central GTD contacts.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 3,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 3,
+    "summary": "The patient route is workable, but repeated maintenance issues and mixed channels stop it feeling properly clean or dependable."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

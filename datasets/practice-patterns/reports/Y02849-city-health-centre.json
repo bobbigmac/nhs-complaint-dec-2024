@@ -19,6 +19,17 @@
     "website_confirmation": "The practice-specific GTD microsite matches the NHS profile route naming and the live pages consistently present City Health Centre as the patient-facing site."
   },
   "headline": "City Health Centre is the clear GTD outlier in this batch because it routes patients into Accurx rather than PATCHS. The appointments page pushes a direct Accurx form, urgent health-problem requests are only open online from 7:30am to 12pm and can close earlier at high demand, routine and admin requests stay open until 6:30pm, and the prescriptions page still permits email contact.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 4,
+    "digital_task_coverage": 3,
+    "journey_ease": 3,
+    "trust_and_maintenance": 3,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 3,
+    "summary": "The Accurx-led route is clearer than most GTD peers, but urgent-window limits and mixed prescription handling stop it feeling consistently strong."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

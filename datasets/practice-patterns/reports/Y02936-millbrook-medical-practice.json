@@ -19,6 +19,17 @@
     "website_confirmation": "The live standalone millbrookmedicalcentre.nhs.uk domain presents itself as the patient-facing practice site and differs materially from the GTD microsites."
   },
   "headline": "Millbrook Medical Centre is the messiest digital-front-door case in the GTD set. The homepage exposes generic cards for RapidHealth, PATCHS, Accurx, Klinik, SystmConnect and Engage all at once, but the appointments and contact pages actually funnel routine appointments and admin queries into Accurx Triage. Urgent appointments are phone or in-person from 8am for same-day acute problems only, and the site still has a formal complaints pack buried in the wider practice-information section rather than in the main contact flow.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 1,
+    "digital_task_coverage": 3,
+    "journey_ease": 2,
+    "trust_and_maintenance": 1,
+    "complaints_and_fallbacks": 2,
+    "overall_patient_usability": 1,
+    "summary": "The site exposes several live routes, but the supplier collage and buried complaints handling make it one of the least coherent experiences reviewed."
+  },
   "website_stack": {
     "observed_on": "2026-03-13",
     "items": [

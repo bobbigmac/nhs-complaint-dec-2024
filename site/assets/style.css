@@ -242,6 +242,16 @@ a {
   border: 1px solid rgba(31, 29, 27, 0.08);
 }
 
+.action-card-disabled {
+  background: rgba(123, 127, 132, 0.16);
+  border-color: rgba(76, 81, 88, 0.22);
+  filter: grayscale(0.55);
+}
+
+.action-card-disabled .link-pill {
+  opacity: 0.72;
+}
+
 .action-card h3,
 .doc-card h5 {
   margin: 0;
@@ -258,6 +268,14 @@ a {
   font-size: 0.94rem;
   line-height: 1.6;
   color: var(--muted);
+}
+
+.action-status {
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .link-row {
