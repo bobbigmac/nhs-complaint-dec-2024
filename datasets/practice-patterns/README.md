@@ -66,6 +66,7 @@ Useful extra sections:
 - `replay_hints`
 - `form_entry_observations`
 - `out_of_hours_checks`
+- `basic_runtime_checks`
 
 Useful status language:
 

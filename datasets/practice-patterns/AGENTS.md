@@ -121,6 +121,7 @@ The same site may feel different depending on the starting point. Keep these sim
 
 - `discovered_at` for important routes, blocks, and failures
 - route status now: live, visibly closed, stale, broken, or account-gated
+- basic runtime checks for a few top-level routes such as homepage, appointments, prescriptions, complaints, and the main online request route
 - first form fields or first required choices, without submitting
 - step count from homepage to the first actionable task page
 - cognitive burden: whether the user has to interpret jargon, choose between overlapping suppliers, or guess which route applies
@@ -132,8 +133,9 @@ The same site may feel different depending on the starting point. Keep these sim
 
 Future automation should mostly reuse what the manual review already discovered.
 
-- the human review decides what matters on the site
+- the manual review decides what matters on the site
 - the saved replay hints help later runners attempt the same checks headlessly
+- simple runtime probes can also compare whether the top-level routes still load at all
 - those later runners will fail often, and that is acceptable
 - the stored pattern file is both a research note and a bootstrap spec for later testing
 

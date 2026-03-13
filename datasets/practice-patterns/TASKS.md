@@ -26,12 +26,14 @@ Any replayable script or browser log is a secondary output that should preserve 
 - route found or not found
 - date and time encountered
 - steps from homepage to first actionable page
+- user-visible interactions or clicks to first actionable page
 - whether the route is open, closed, hidden, or redirected
 - whether login, registration, NHS App setup, or a supplier account is required
 - what first inputs are demanded before submission
 - whether the route appears to be clinical triage, admin messaging, feedback only, or a dead end
 - whether the site pushes the user back to phone or reception
 - what future replay steps would probably reproduce this check
+- a few basic load timings or timeout results for the top-level routes you actually used
 
 ## Exploration Order
 

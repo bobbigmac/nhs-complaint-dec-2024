@@ -104,6 +104,60 @@
       "url": "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/"
     }
   ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "headless Firefox top-level route probe using a copied local profile",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://newbank.nhs.uk/",
+        "final_url": "https://newbank.nhs.uk/",
+        "status": "live",
+        "title": "New Bank Health Centre – NHS GP Surgery in Manchester",
+        "load_ms": 798.9
+      },
+      {
+        "label": "appointments",
+        "url": "https://newbank.nhs.uk/appointments/",
+        "final_url": "https://newbank.nhs.uk/appointments/",
+        "status": "live",
+        "title": "Appointments – New Bank Health Centre",
+        "load_ms": 404.9
+      },
+      {
+        "label": "legacy_medical_help",
+        "url": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
+        "final_url": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
+        "status": "live",
+        "title": "Get help for any health problem – New Bank Health Centre",
+        "load_ms": 477.3
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://newbank.nhs.uk/prescriptions/",
+        "final_url": "https://newbank.nhs.uk/prescriptions/",
+        "status": "live",
+        "title": "Prescriptions – New Bank Health Centre",
+        "load_ms": 316.0
+      },
+      {
+        "label": "complaints",
+        "url": "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/",
+        "final_url": "https://newbank.nhs.uk/surgery-information/policies/feedback-and-complaints/",
+        "status": "live",
+        "title": "Feedback and complaints – New Bank Health Centre",
+        "load_ms": 365.1
+      },
+      {
+        "label": "patchs",
+        "url": "https://patchs.ai/newbankmedicalpractice/login?",
+        "final_url": "https://patchs.ai/newbankmedicalpractice/login?",
+        "status": "live",
+        "title": "PATCHS",
+        "load_ms": 1460.7
+      }
+    ]
+  },
   "task_checks": [
     {
       "task": "urgent same-day help",
@@ -111,6 +165,7 @@
       "route_found": true,
       "first_actionable_page": "https://newbank.nhs.uk/appointments/",
       "steps_from_home": 1,
+      "user_visible_interactions": 1,
       "observed_workflow": [
         "The appointments page says all requests go through PATCHS.",
         "It also says phone requests remain possible and that home visits should be phoned in before 10am.",
@@ -127,6 +182,7 @@
       "route_found": true,
       "first_actionable_page": "https://patchs.ai/newbankmedicalpractice/login?",
       "steps_from_home": 2,
+      "user_visible_interactions": 2,
       "observed_workflow": [
         "Homepage to Appointments is one click.",
         "Appointments to the direct PATCHS route is another click.",
@@ -147,6 +203,7 @@
       "route_found": true,
       "first_actionable_page": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
       "steps_from_home": 2,
+      "user_visible_interactions": 2,
       "initial_inputs_observed": [
         "Who are you completing this form for?",
         "First name",
@@ -169,6 +226,7 @@
       "route_found": true,
       "first_actionable_page": "https://newbank.nhs.uk/prescriptions/",
       "steps_from_home": 1,
+      "user_visible_interactions": 1,
       "observed_workflow": [
         "The prescriptions page says the easiest route is the NHS account or NHS App.",
         "It also exposes local forms for repeat-prescription requests, prescription questions and pharmacy nomination.",
@@ -185,6 +243,7 @@
       "route_found": true,
       "first_actionable_page": "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/",
       "steps_from_home": 1,
+      "user_visible_interactions": 1,
       "observed_workflow": [
         "The homepage exposes Feedback and complaints directly.",
         "The page title is Feedback and complaints and it shows a Complaints procedure heading."
