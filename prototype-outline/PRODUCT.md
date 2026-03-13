@@ -16,6 +16,9 @@
 * Outbound and follow-up through the national messaging service.
 * Proxy support is essential and currently transitional: local practice-managed proxy now, national proxy later.
 
+
+Features: Support voice notes for patients not confident (or not wanting to be a burden) with a live phone call, that is transcribed automatically for the record and to be read, and can use a similar approach for the reverse, to said patients spoken voice notes based on written GP/staff inputs, voiced automatically for a preferred phone response (patients can even pick a voice). Maybe automatic translation too.
+
 ### 3. Platform maturity / stability
 
 * National identity and messaging layers are the future-facing, relatively durable parts.
