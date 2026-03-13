@@ -1,0 +1,131 @@
+{
+  "report_version": "0.2",
+  "practice": {
+    "ods_code": "Y02849",
+    "practice_name": "City Health Centre",
+    "website_url": "https://www.gtdhealthcare.co.uk/cityhealthcentre",
+    "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/city-health-centre/Y02849",
+    "telephone": "0161 839 6227",
+    "postcode": "M1 1PL",
+    "registered_patient_count": 15321,
+    "google_review_score": 4.5,
+    "google_review_count": 11
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual review of live practice pages with NHS profile and search-result cross-checks"
+  },
+  "headline": "City Health Centre looks like a cleaner GTD-managed site: the website platform is GTD's Concrete CMS stack and the live online request route presented to patients is Accurx, with different availability windows for urgent/medical versus routine/admin use of the same form.",
+  "current_picture": {
+    "live_stack": [
+      {
+        "label": "Patient-facing website stack",
+        "status": "live",
+        "platform": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+        "evidence": [
+          "The page exposes a concrete5 - 8.5.1 generator tag.",
+          "The whole site lives under gtdhealthcare.co.uk/cityhealthcentre.",
+          "Search and NHS-profile checks did not surface a separate live practice domain; this GTD URL appears to be the patient-facing microsite."
+        ]
+      },
+      {
+        "label": "Current online request platform",
+        "status": "live",
+        "platform": "Accurx",
+        "evidence": [
+          "The appointments page links directly to https://accurx.nhs.uk/patient-initiated/y02849.",
+          "The same Accurx route is presented for both health problems and routine/admin requests."
+        ]
+      }
+    ],
+    "current_routes": [
+      {
+        "label": "Accurx request form for health problems",
+        "status": "live",
+        "kind": "online consultation / request intake",
+        "url": "https://accurx.nhs.uk/patient-initiated/y02849",
+        "notes": [
+          "The site says this route is available Monday to Friday from 7:30am to 12pm for health problems and may close earlier at high demand.",
+          "The page says all such requests are reviewed by a GP the same working day."
+        ]
+      },
+      {
+        "label": "Accurx request form for routine/admin requests",
+        "status": "live",
+        "kind": "online consultation / admin intake",
+        "url": "https://accurx.nhs.uk/patient-initiated/y02849",
+        "notes": [
+          "The same Accurx route is also described as available Monday to Friday, 7:30am to 6:30pm for routine care and admin requests.",
+          "The site says those requests are usually reviewed within one to two working days."
+        ]
+      },
+      {
+        "label": "Phone route",
+        "status": "claimed_by_website",
+        "kind": "practice contact / intake",
+        "url": "https://www.gtdhealthcare.co.uk/cityhealthcentre/appointments",
+        "notes": [
+          "The appointments page says patients can call 0161 839 6227 as an alternative to the online form.",
+          "Do not over-read this as a separate booking platform."
+        ]
+      },
+      {
+        "label": "Cancellation routes",
+        "status": "live",
+        "kind": "appointment management",
+        "url": "https://www.gtdhealthcare.co.uk/cityhealthcentre/appointments",
+        "notes": [
+          "The site says patients can cancel via NHS account, by phone, or by visiting reception."
+        ]
+      },
+      {
+        "label": "Prescriptions",
+        "status": "live",
+        "kind": "repeat medication route",
+        "url": "https://www.gtdhealthcare.co.uk/cityhealthcentre/prescriptions",
+        "notes": [
+          "The prescriptions page points patients to their NHS account or to the practice email address gmicb-mh.cityhealthcentre@nhs.net."
+        ]
+      }
+    ],
+    "complaints_and_feedback": {
+      "headline": "Complaints information is present and more current than New Bank's site.",
+      "items": [
+        {
+          "label": "Complaints via contact-us page",
+          "status": "live",
+          "url": "https://www.gtdhealthcare.co.uk/cityhealthcentre/contact-us",
+          "notes": [
+            "The contact page says patients should raise concerns with the practice manager first or contact the complaints team directly.",
+            "It lists practice and GTD complaints contact details, including gtd.feedback@nhs.net."
+          ]
+        }
+      ]
+    },
+    "stale_or_conflicting_signals": [
+      {
+        "label": "No standalone complaints page where the URL suggests one might exist",
+        "status": "broken_or_suspect",
+        "notes": [
+          "A guessed complaints-and-compliments page path returns 404; the complaints route is embedded in contact-us instead."
+        ]
+      }
+    ]
+  },
+  "analyst_notes": {
+    "probably_true": [
+      "Accurx is the current patient-facing request platform here.",
+      "This site distinguishes clinical/urgent-style demand from routine/admin demand more clearly than New Bank."
+    ],
+    "needs_follow_up": [
+      "Whether the same Accurx form branches internally for health-problem versus admin use, or whether the distinction is only in the website instructions."
+    ]
+  },
+  "source_pages": [
+    "https://www.gtdhealthcare.co.uk/cityhealthcentre",
+    "https://www.gtdhealthcare.co.uk/cityhealthcentre/appointments",
+    "https://www.gtdhealthcare.co.uk/cityhealthcentre/prescriptions",
+    "https://www.gtdhealthcare.co.uk/cityhealthcentre/contact-us"
+  ]
+}

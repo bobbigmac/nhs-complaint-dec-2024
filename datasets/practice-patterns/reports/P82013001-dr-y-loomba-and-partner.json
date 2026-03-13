@@ -1,0 +1,96 @@
+{
+  "report_version": "0.2",
+  "practice": {
+    "ods_code": "P82013001",
+    "practice_name": "Dr Y Loomba and Partner",
+    "website_url": "https://www.drloombabolton.nhs.uk",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/dr-y-loomba-and-partner/P82013001",
+    "telephone": "01204 462660",
+    "postcode": "BL1 1SQ",
+    "registered_patient_count": null,
+    "google_review_score": 1.0,
+    "google_review_count": 10
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual review of the published website URL, basic host behaviour, and a quick follow-up search/NHS-profile cross-check for alternate domains"
+  },
+  "headline": "The published website URL for Dr Y Loomba and Partner is effectively broken as a patient-facing site. The host serves an Apache placeholder page rather than a usable practice website, so this practice currently looks like a 'no usable digital front door visible at the published URL' case.",
+  "current_picture": {
+    "live_stack": [
+      {
+        "label": "Published website endpoint",
+        "status": "broken_or_suspect",
+        "platform": "Apache placeholder page",
+        "evidence": [
+          "Fetching the published website URL returns a generic It works! Apache httpd page.",
+          "Accessing the www hostname also triggers hostname/certificate mismatch issues during normal verification."
+        ]
+      }
+    ],
+    "current_routes": [
+      {
+        "label": "Published website URL",
+        "status": "broken_or_suspect",
+        "kind": "public website",
+        "url": "https://www.drloombabolton.nhs.uk",
+        "notes": [
+          "No live appointment, prescription, complaints or online-service routes could be investigated from the published URL because it does not expose an actual practice site."
+        ]
+      },
+      {
+        "label": "Alternate-domain follow-up",
+        "status": "broken_or_suspect",
+        "kind": "search / listing cross-check",
+        "url": "https://www.nhs.uk/services/gp-surgery/dr-y-loomba-and-partner/P82013001",
+        "notes": [
+          "A quick search/NHS-profile cross-check did not surface a clearly live replacement practice website during this pass.",
+          "That means the main signal here is still a broken published domain, not just a server rejecting one request pattern."
+        ]
+      }
+    ],
+    "complaints_and_feedback": {
+      "headline": "No usable complaints route was available from the published website URL during this pass.",
+      "items": [
+        {
+          "label": "Website-level complaints route",
+          "status": "broken_or_suspect",
+          "url": "https://www.drloombabolton.nhs.uk",
+          "notes": [
+            "No practice complaints page or contact structure could be reviewed because the host serves only a placeholder page."
+          ]
+        }
+      ]
+    },
+    "stale_or_conflicting_signals": [
+      {
+        "label": "Certificate and host mismatch",
+        "status": "broken_or_suspect",
+        "notes": [
+          "Normal HTTPS verification for the published www hostname fails because the certificate does not match that hostname."
+        ]
+      },
+      {
+        "label": "Placeholder instead of practice website",
+        "status": "broken_or_suspect",
+        "notes": [
+          "The public URL appears to point to a misconfigured or abandoned web host rather than an active practice site."
+        ]
+      }
+    ]
+  },
+  "analyst_notes": {
+    "probably_true": [
+      "The published website URL is not currently functioning as a practice website.",
+      "No clearly live replacement website was identified during a quick search follow-up."
+    ],
+    "needs_follow_up": [
+      "Whether the practice now uses a different live domain that is not reflected in the current listing data.",
+      "Whether patients are being pushed primarily toward phone and NHS profile contact because the website is broken."
+    ]
+  },
+  "source_pages": [
+    "https://www.drloombabolton.nhs.uk",
+    "https://www.nhs.uk/services/gp-surgery/dr-y-loomba-and-partner/P82013001"
+  ]
+}

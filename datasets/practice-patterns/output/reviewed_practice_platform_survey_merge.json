@@ -1,0 +1,2791 @@
+{
+  "generated_at": "2026-03-13",
+  "reviewed_report_count": 15,
+  "reviewed_with_survey_count": 15,
+  "metrics_considered": [
+    "overall_good",
+    "contact_good",
+    "phone_easy",
+    "website_easy",
+    "app_easy",
+    "needs_met"
+  ],
+  "rows": [
+    {
+      "ods_code": "P82013001",
+      "practice_name": "Dr Y Loomba and Partner",
+      "report_path": "datasets/practice-patterns/reports/P82013001-dr-y-loomba-and-partner.json",
+      "website_url": "https://www.drloombabolton.nhs.uk",
+      "website_stack": null,
+      "website_identity": null,
+      "request_platforms": [],
+      "derived_tags": [],
+      "google_review_score": 1.0,
+      "google_review_count": 10,
+      "survey": {
+        "completion_rate_percent": null,
+        "surveys_sent_out": null,
+        "surveys_sent_back": null,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 53,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "website_easy": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 51,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "app_easy": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 49,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "contact_good": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 70,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "overall_good": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 75,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "needs_met": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 90,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "next_step_known": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 83,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "next_step_known_2d": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 93,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "choice_time_day": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 54,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          },
+          "wait_right": {
+            "practice_percent": null,
+            "ics_percent": null,
+            "national_percent": 67,
+            "practice_base": null,
+            "question_text": "",
+            "practice_minus_ics": null
+          }
+        }
+      },
+      "headline": "The published website URL for Dr Y Loomba and Partner is effectively broken as a patient-facing site. The host serves an Apache placeholder page rather than a usable practice website, so this practice currently looks like a 'no usable digital front door visible at the published URL' case."
+    },
+    {
+      "ods_code": "P86001",
+      "practice_name": "Milnrow Village Practice",
+      "report_path": "datasets/practice-patterns/reports/P86001-milnrow-village-practice.json",
+      "website_url": "https://www.milnrowvillagepractice.nhs.uk",
+      "website_stack": "My Surgery Website",
+      "website_identity": null,
+      "request_platforms": [
+        "patchs",
+        "patient_access"
+      ],
+      "derived_tags": [
+        "access:limited_scope_patchs",
+        "access:phone_first",
+        "request_platform:patchs",
+        "request_platform:patient_access",
+        "website_platform:my_surgery_website"
+      ],
+      "google_review_score": 5.0,
+      "google_review_count": 19,
+      "survey": {
+        "completion_rate_percent": 31,
+        "surveys_sent_out": 368,
+        "surveys_sent_back": 113,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 92,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 84,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": 35
+          },
+          "website_easy": {
+            "practice_percent": 79,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 23,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": 25
+          },
+          "app_easy": {
+            "practice_percent": 86,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 35,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": 34
+          },
+          "contact_good": {
+            "practice_percent": 92,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 86,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": 20
+          },
+          "overall_good": {
+            "practice_percent": 97,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 88,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": 20
+          },
+          "needs_met": {
+            "practice_percent": 96,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 86,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": 6
+          },
+          "next_step_known": {
+            "practice_percent": 92,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 85,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": 9
+          },
+          "next_step_known_2d": {
+            "practice_percent": 99,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 77,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": 6
+          },
+          "choice_time_day": {
+            "practice_percent": 93,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 69,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": 35
+          },
+          "wait_right": {
+            "practice_percent": 92,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 80,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": 24
+          }
+        }
+      },
+      "headline": "Milnrow Village Practice looks like a My Surgery Website build with PATCHS as a clearly signposted digital route, but only for non-urgent and routine requests. The appointments page also says all appointments will be by phone first, which makes the overall access model more phone-led than the GTD PATCHS sites."
+    },
+    {
+      "ods_code": "P89011",
+      "practice_name": "Gordon Street Medical Centre",
+      "report_path": "datasets/practice-patterns/reports/P89011-gordon-street-medical-centre.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/gordonstreetmedicalcentre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "accurx",
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:accurx",
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 1.5,
+      "google_review_count": 86,
+      "survey": {
+        "completion_rate_percent": 22,
+        "surveys_sent_out": 517,
+        "surveys_sent_back": 113,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 33,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 48,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -24
+          },
+          "website_easy": {
+            "practice_percent": 26,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 29,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -28
+          },
+          "app_easy": {
+            "practice_percent": 31,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 28,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -21
+          },
+          "contact_good": {
+            "practice_percent": 47,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 53,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -25
+          },
+          "overall_good": {
+            "practice_percent": 61,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 53,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -16
+          },
+          "needs_met": {
+            "practice_percent": 90,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 51,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": 0
+          },
+          "next_step_known": {
+            "practice_percent": 68,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 49,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -15
+          },
+          "next_step_known_2d": {
+            "practice_percent": 86,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 32,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -7
+          },
+          "choice_time_day": {
+            "practice_percent": 34,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 36,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -24
+          },
+          "wait_right": {
+            "practice_percent": 49,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 45,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -19
+          }
+        }
+      },
+      "headline": "Gordon Street looks like a GTD Concrete CMS site with PATCHS as the current online consultation front door. Unlike New Bank, the NHS App instructions also point to PATCHS rather than Accurx, but the page still overstates phone/in-person as if they were separate access systems."
+    },
+    {
+      "ods_code": "P89013",
+      "practice_name": "Hattersley Group Practice",
+      "report_path": "datasets/practice-patterns/reports/P89013-hattersley-group-practice.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/hattersleygrouppractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 2.1,
+      "google_review_count": 72,
+      "survey": {
+        "completion_rate_percent": 22,
+        "surveys_sent_out": 531,
+        "surveys_sent_back": 117,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 22,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 51,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -35
+          },
+          "website_easy": {
+            "practice_percent": 41,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 37,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -13
+          },
+          "app_easy": {
+            "practice_percent": 40,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 33,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -12
+          },
+          "contact_good": {
+            "practice_percent": 37,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 51,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -35
+          },
+          "overall_good": {
+            "practice_percent": 41,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 51,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -36
+          },
+          "needs_met": {
+            "practice_percent": 69,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 49,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -21
+          },
+          "next_step_known": {
+            "practice_percent": 58,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 48,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -25
+          },
+          "next_step_known_2d": {
+            "practice_percent": 78,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 24,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -15
+          },
+          "choice_time_day": {
+            "practice_percent": 34,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 41,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -24
+          },
+          "wait_right": {
+            "practice_percent": 40,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 47,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -28
+          }
+        }
+      },
+      "headline": "Hattersley Group Practice presents as a standard GTD Concrete CMS microsite with PATCHS as the current digital front door for patient requests. The page language is cleaner than the WordPress sites but still overstates phone as if it were a separate route."
+    },
+    {
+      "ods_code": "P89602",
+      "practice_name": "The Smithy Surgery",
+      "report_path": "datasets/practice-patterns/reports/P89602-the-smithy-surgery.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 4.0,
+      "google_review_count": 23,
+      "survey": {
+        "completion_rate_percent": 30,
+        "surveys_sent_out": 364,
+        "surveys_sent_back": 109,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 65,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 42,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": 8
+          },
+          "website_easy": {
+            "practice_percent": 21,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 11,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -33
+          },
+          "app_easy": {
+            "practice_percent": 64,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 14,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": 12
+          },
+          "contact_good": {
+            "practice_percent": 70,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 44,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -2
+          },
+          "overall_good": {
+            "practice_percent": 78,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 44,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": 1
+          },
+          "needs_met": {
+            "practice_percent": 94,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 43,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": 4
+          },
+          "next_step_known": {
+            "practice_percent": 86,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 42,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": 3
+          },
+          "next_step_known_2d": {
+            "practice_percent": 94,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 33,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": 1
+          },
+          "choice_time_day": {
+            "practice_percent": 61,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 31,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": 3
+          },
+          "wait_right": {
+            "practice_percent": 62,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 41,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -6
+          }
+        }
+      },
+      "headline": "The Smithy Surgery looks like one of the clearer GTD Concrete CMS plus PATCHS microsites. The appointments page explicitly says the online form is available Monday to Friday from 7:30am until 6:30pm, which is more explicit than several of the other GTD sites."
+    },
+    {
+      "ods_code": "P89612",
+      "practice_name": "Mossley Medical Practice",
+      "report_path": "datasets/practice-patterns/reports/P89612-mossley-medical-practice.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/mossleymedicalpractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 3.7,
+      "google_review_count": 16,
+      "survey": {
+        "completion_rate_percent": 22,
+        "surveys_sent_out": 423,
+        "surveys_sent_back": 95,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 69,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 22,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": 12
+          },
+          "website_easy": {
+            "practice_percent": 54,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 8,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": 0
+          },
+          "app_easy": {
+            "practice_percent": 65,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 9,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": 13
+          },
+          "contact_good": {
+            "practice_percent": 71,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 24,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -1
+          },
+          "overall_good": {
+            "practice_percent": 83,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 25,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": 6
+          },
+          "needs_met": {
+            "practice_percent": 95,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 23,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": 5
+          },
+          "next_step_known": {
+            "practice_percent": 94,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 23,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": 11
+          },
+          "next_step_known_2d": {
+            "practice_percent": 89,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 22,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -4
+          },
+          "choice_time_day": {
+            "practice_percent": 64,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 20,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": 6
+          },
+          "wait_right": {
+            "practice_percent": 58,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 22,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -10
+          }
+        }
+      },
+      "headline": "Mossley looks like the same GTD Concrete CMS plus PATCHS pattern as Millbrook, including the stricter prescription wording that says repeat requests should not be handled over the phone or by email."
+    },
+    {
+      "ods_code": "Y02325",
+      "practice_name": "Charlestown Medical Practice",
+      "report_path": "datasets/practice-patterns/reports/Y02325-charlestown-medical-practice.json",
+      "website_url": "https://charlestownmedicalpractice.co.uk/",
+      "website_stack": "WordPress with NHS UK theme and Silicon Practice elements",
+      "website_identity": "standalone practice domain",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "patient_access",
+        "silicon_forms"
+      ],
+      "derived_tags": [
+        "request_platform:accurx",
+        "request_platform:patchs",
+        "request_platform:patient_access",
+        "request_platform:silicon_forms",
+        "website_identity:standalone_domain",
+        "website_platform:wordpress"
+      ],
+      "google_review_score": 1.9,
+      "google_review_count": 109,
+      "survey": {
+        "completion_rate_percent": 17,
+        "surveys_sent_out": 621,
+        "surveys_sent_back": 106,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 41,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 48,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -16
+          },
+          "website_easy": {
+            "practice_percent": 52,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 25,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -2
+          },
+          "app_easy": {
+            "practice_percent": 47,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 23,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -5
+          },
+          "contact_good": {
+            "practice_percent": 50,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 47,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -22
+          },
+          "overall_good": {
+            "practice_percent": 59,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 51,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -18
+          },
+          "needs_met": {
+            "practice_percent": 75,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 46,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -15
+          },
+          "next_step_known": {
+            "practice_percent": 72,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 43,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -11
+          },
+          "next_step_known_2d": {
+            "practice_percent": 89,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 28,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -4
+          },
+          "choice_time_day": {
+            "practice_percent": 49,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 35,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -9
+          },
+          "wait_right": {
+            "practice_percent": 53,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 42,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -15
+          }
+        }
+      },
+      "headline": "Charlestown looks like a messier transition case than the standard GTD microsites. The public site is a WordPress and Silicon Practice build, the direct request form points to PATCHS, but the NHS App wording still says continue to the Accurx system, and prescriptions still mention Patient Access."
+    },
+    {
+      "ods_code": "Y02520",
+      "practice_name": "Simpson Medical Practice",
+      "report_path": "datasets/practice-patterns/reports/Y02520-simpson-medical-practice.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 1.8,
+      "google_review_count": 104,
+      "survey": {
+        "completion_rate_percent": 16,
+        "surveys_sent_out": 463,
+        "surveys_sent_back": 76,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 53,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 51,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -4
+          },
+          "website_easy": {
+            "practice_percent": 52,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 38,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -2
+          },
+          "app_easy": {
+            "practice_percent": 51,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 36,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -1
+          },
+          "contact_good": {
+            "practice_percent": 74,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 54,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": 2
+          },
+          "overall_good": {
+            "practice_percent": 80,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 54,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": 3
+          },
+          "needs_met": {
+            "practice_percent": 84,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 51,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -6
+          },
+          "next_step_known": {
+            "practice_percent": 76,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 51,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -7
+          },
+          "next_step_known_2d": {
+            "practice_percent": 87,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 33,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -6
+          },
+          "choice_time_day": {
+            "practice_percent": 58,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 38,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": 0
+          },
+          "wait_right": {
+            "practice_percent": 69,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 47,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": 1
+          }
+        }
+      },
+      "headline": "Simpson Medical Practice looks like another standard GTD Concrete CMS microsite with PATCHS as the live request platform. The public page is cleaner than New Bank or Charlestown in that the NHS App instructions also point to PATCHS."
+    },
+    {
+      "ods_code": "Y02586",
+      "practice_name": "Ashton GP Service",
+      "report_path": "datasets/practice-patterns/reports/Y02586-ashton-gp-service.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/ashtongpservice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 1.8,
+      "google_review_count": 91,
+      "survey": {
+        "completion_rate_percent": 15,
+        "surveys_sent_out": 569,
+        "surveys_sent_back": 88,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 33,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 45,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -24
+          },
+          "website_easy": {
+            "practice_percent": 43,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 29,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -11
+          },
+          "app_easy": {
+            "practice_percent": 45,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 25,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -7
+          },
+          "contact_good": {
+            "practice_percent": 57,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 46,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -15
+          },
+          "overall_good": {
+            "practice_percent": 52,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 47,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -25
+          },
+          "needs_met": {
+            "practice_percent": 68,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 43,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -22
+          },
+          "next_step_known": {
+            "practice_percent": 62,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 42,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -21
+          },
+          "next_step_known_2d": {
+            "practice_percent": 76,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 20,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -17
+          },
+          "choice_time_day": {
+            "practice_percent": 28,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 29,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -30
+          },
+          "wait_right": {
+            "practice_percent": 53,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 39,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -15
+          }
+        }
+      },
+      "headline": "Ashton GP Service presents a standard GTD Concrete CMS microsite with PATCHS as the live online request platform. The appointments page still frames NHS App, PATCHS and phone as three ways in, but the underlying request workflow appears to be PATCHS-led rather than three separate booking systems."
+    },
+    {
+      "ods_code": "Y02663",
+      "practice_name": "Droylsden Medical Practice",
+      "report_path": "datasets/practice-patterns/reports/Y02663-droylsden-medical-practice.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/droylsdenmedicalpractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 1.8,
+      "google_review_count": 85,
+      "survey": {
+        "completion_rate_percent": 18,
+        "surveys_sent_out": 550,
+        "surveys_sent_back": 100,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 30,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 42,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -27
+          },
+          "website_easy": {
+            "practice_percent": 29,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 21,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -25
+          },
+          "app_easy": {
+            "practice_percent": 39,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 26,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -13
+          },
+          "contact_good": {
+            "practice_percent": 48,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 43,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -24
+          },
+          "overall_good": {
+            "practice_percent": 49,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 43,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -28
+          },
+          "needs_met": {
+            "practice_percent": 77,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 43,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -13
+          },
+          "next_step_known": {
+            "practice_percent": 61,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 37,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -22
+          },
+          "next_step_known_2d": {
+            "practice_percent": 99,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 20,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": 6
+          },
+          "choice_time_day": {
+            "practice_percent": 31,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 31,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -27
+          },
+          "wait_right": {
+            "practice_percent": 53,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 39,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -15
+          }
+        }
+      },
+      "headline": "Droylsden Medical Practice looks like another GTD Concrete CMS plus PATCHS site, but the appointments page is a bit sloppier than some: it explicitly says the form is available Monday to Friday from 7:30am, without making the cut-off nearly as clear as Guide Bridge or The Smithy."
+    },
+    {
+      "ods_code": "Y02713",
+      "practice_name": "Guide Bridge Medical Practice",
+      "report_path": "datasets/practice-patterns/reports/Y02713-guide-bridge-medical-practice.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/guidebridgemedicalpractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 1.8,
+      "google_review_count": 116,
+      "survey": {
+        "completion_rate_percent": 23,
+        "surveys_sent_out": 531,
+        "surveys_sent_back": 122,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 37,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 47,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -20
+          },
+          "website_easy": {
+            "practice_percent": 42,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 32,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -12
+          },
+          "app_easy": {
+            "practice_percent": 39,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 28,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -13
+          },
+          "contact_good": {
+            "practice_percent": 50,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 48,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -22
+          },
+          "overall_good": {
+            "practice_percent": 53,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 49,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -24
+          },
+          "needs_met": {
+            "practice_percent": 84,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 46,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -6
+          },
+          "next_step_known": {
+            "practice_percent": 68,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 44,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -15
+          },
+          "next_step_known_2d": {
+            "practice_percent": 84,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 29,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -9
+          },
+          "choice_time_day": {
+            "practice_percent": 32,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 35,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -26
+          },
+          "wait_right": {
+            "practice_percent": 40,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 44,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -28
+          }
+        }
+      },
+      "headline": "Guide Bridge looks like a standard GTD Concrete CMS plus PATCHS setup, but with a clearer request window than some of the other GTD sites: the online request form is explicitly said to be available Monday to Friday from 7:30am until 4pm."
+    },
+    {
+      "ods_code": "Y02849",
+      "practice_name": "City Health Centre",
+      "report_path": "datasets/practice-patterns/reports/Y02849-city-health-centre.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/cityhealthcentre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "accurx"
+      ],
+      "derived_tags": [
+        "request_platform:accurx",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 4.5,
+      "google_review_count": 11,
+      "survey": {
+        "completion_rate_percent": 9,
+        "surveys_sent_out": 957,
+        "surveys_sent_back": 85,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 44,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 159,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -13
+          },
+          "website_easy": {
+            "practice_percent": 56,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 145,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": 2
+          },
+          "app_easy": {
+            "practice_percent": 36,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 104,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -16
+          },
+          "contact_good": {
+            "practice_percent": 67,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 162,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -5
+          },
+          "overall_good": {
+            "practice_percent": 70,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 174,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -7
+          },
+          "needs_met": {
+            "practice_percent": 78,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 143,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -12
+          },
+          "next_step_known": {
+            "practice_percent": 75,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 153,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -8
+          },
+          "next_step_known_2d": {
+            "practice_percent": 84,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 93,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -9
+          },
+          "choice_time_day": {
+            "practice_percent": 60,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 122,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": 2
+          },
+          "wait_right": {
+            "practice_percent": 65,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 141,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -3
+          }
+        }
+      },
+      "headline": "City Health Centre looks like a cleaner GTD-managed site: the website platform is GTD's Concrete CMS stack and the live online request route presented to patients is Accurx, with different availability windows for urgent/medical versus routine/admin use of the same form."
+    },
+    {
+      "ods_code": "Y02875",
+      "practice_name": "Lindley House Health Centre",
+      "report_path": "datasets/practice-patterns/reports/Y02875-lindley-house-health-centre.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/lindleymedicalpractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 2.1,
+      "google_review_count": 66,
+      "survey": {
+        "completion_rate_percent": 18,
+        "surveys_sent_out": 722,
+        "surveys_sent_back": 129,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 48,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 50,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -9
+          },
+          "website_easy": {
+            "practice_percent": 45,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 28,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -9
+          },
+          "app_easy": {
+            "practice_percent": 53,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 29,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": 1
+          },
+          "contact_good": {
+            "practice_percent": 63,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 50,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -9
+          },
+          "overall_good": {
+            "practice_percent": 72,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 52,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -5
+          },
+          "needs_met": {
+            "practice_percent": 87,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 45,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -3
+          },
+          "next_step_known": {
+            "practice_percent": 71,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 48,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -12
+          },
+          "next_step_known_2d": {
+            "practice_percent": 99,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 28,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": 6
+          },
+          "choice_time_day": {
+            "practice_percent": 52,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 34,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -6
+          },
+          "wait_right": {
+            "practice_percent": 71,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 43,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": 3
+          }
+        }
+      },
+      "headline": "Lindley House Health Centre is served by a GTD microsite branded as Lindley Medical Practice. The public stack is GTD Concrete CMS and the current request platform exposed to patients is PATCHS."
+    },
+    {
+      "ods_code": "Y02936",
+      "practice_name": "Millbrook Medical Practice",
+      "report_path": "datasets/practice-patterns/reports/Y02936-millbrook-medical-practice.json",
+      "website_url": "https://www.gtdhealthcare.co.uk/millbrookmedicalpractice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+      "request_platforms": [
+        "patchs"
+      ],
+      "derived_tags": [
+        "request_platform:patchs",
+        "website_identity:shared_host_microsite",
+        "website_platform:concrete_cms"
+      ],
+      "google_review_score": 2.7,
+      "google_review_count": 39,
+      "survey": {
+        "completion_rate_percent": 20,
+        "surveys_sent_out": 565,
+        "surveys_sent_back": 111,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 54,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 36,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": -3
+          },
+          "website_easy": {
+            "practice_percent": 29,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 13,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": -25
+          },
+          "app_easy": {
+            "practice_percent": 41,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 15,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": -11
+          },
+          "contact_good": {
+            "practice_percent": 58,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 36,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -14
+          },
+          "overall_good": {
+            "practice_percent": 69,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 36,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -8
+          },
+          "needs_met": {
+            "practice_percent": 86,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 36,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -4
+          },
+          "next_step_known": {
+            "practice_percent": 73,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 33,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -10
+          },
+          "next_step_known_2d": {
+            "practice_percent": 91,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 22,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -2
+          },
+          "choice_time_day": {
+            "practice_percent": 50,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 28,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": -8
+          },
+          "wait_right": {
+            "practice_percent": 42,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 35,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -26
+          }
+        }
+      },
+      "headline": "Millbrook looks like a standard GTD Concrete CMS plus PATCHS site for appointments, but its prescriptions page is more restrictive than many of the others: it explicitly says repeat prescription requests are handled through NHS account or the online request form, not by phone or email."
+    },
+    {
+      "ods_code": "Y02960",
+      "practice_name": "New Bank Health",
+      "report_path": "datasets/practice-patterns/reports/Y02960-new-bank-health.json",
+      "website_url": "https://www.newbank.nhs.uk/",
+      "website_stack": "WordPress with nhsuk-frontend-theme and Silicon Practice plugins",
+      "website_identity": "standalone practice domain",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "silicon_forms"
+      ],
+      "derived_tags": [
+        "request_platform:accurx",
+        "request_platform:patchs",
+        "request_platform:silicon_forms",
+        "website_identity:standalone_domain",
+        "website_platform:wordpress"
+      ],
+      "google_review_score": 1.9,
+      "google_review_count": 163,
+      "survey": {
+        "completion_rate_percent": 10,
+        "surveys_sent_out": 942,
+        "surveys_sent_back": 98,
+        "metrics": {
+          "phone_easy": {
+            "practice_percent": 61,
+            "ics_percent": 57,
+            "national_percent": 53,
+            "practice_base": 62,
+            "question_text": "find it easy to get through to this GP practice by phone",
+            "practice_minus_ics": 4
+          },
+          "website_easy": {
+            "practice_percent": 73,
+            "ics_percent": 54,
+            "national_percent": 51,
+            "practice_base": 61,
+            "question_text": "find it easy to contact this GP practice using their website",
+            "practice_minus_ics": 19
+          },
+          "app_easy": {
+            "practice_percent": 60,
+            "ics_percent": 52,
+            "national_percent": 49,
+            "practice_base": 47,
+            "question_text": "find it easy to contact this GP practice using the NHS App",
+            "practice_minus_ics": 8
+          },
+          "contact_good": {
+            "practice_percent": 66,
+            "ics_percent": 72,
+            "national_percent": 70,
+            "practice_base": 65,
+            "question_text": "describe their experience of contacting their GP practice as good",
+            "practice_minus_ics": -6
+          },
+          "overall_good": {
+            "practice_percent": 69,
+            "ics_percent": 77,
+            "national_percent": 75,
+            "practice_base": 66,
+            "question_text": "describe their overall experience of this GP practice as good",
+            "practice_minus_ics": -8
+          },
+          "needs_met": {
+            "practice_percent": 82,
+            "ics_percent": 90,
+            "national_percent": 90,
+            "practice_base": 55,
+            "question_text": "felt their needs were met during their last general practice appointment",
+            "practice_minus_ics": -8
+          },
+          "next_step_known": {
+            "practice_percent": 75,
+            "ics_percent": 83,
+            "national_percent": 83,
+            "practice_base": 62,
+            "question_text": "knew what the next step would be after contacting their GP practice",
+            "practice_minus_ics": -8
+          },
+          "next_step_known_2d": {
+            "practice_percent": 85,
+            "ics_percent": 93,
+            "national_percent": 93,
+            "practice_base": 42,
+            "question_text": "knew what the next step would be within two days of contacting their GP practice",
+            "practice_minus_ics": -8
+          },
+          "choice_time_day": {
+            "practice_percent": 66,
+            "ics_percent": 58,
+            "national_percent": 54,
+            "practice_base": 46,
+            "question_text": "were offered a choice of time or day when they last tried to make a general practice appointment",
+            "practice_minus_ics": 8
+          },
+          "wait_right": {
+            "practice_percent": 65,
+            "ics_percent": 68,
+            "national_percent": 67,
+            "practice_base": 52,
+            "question_text": "felt they waited about the right amount of time for their last general practice appointment",
+            "practice_minus_ics": -3
+          }
+        }
+      },
+      "headline": "New Bank's intended appointment front door appears to be PATCHS, but the live site still exposes Silicon Practice forms and Accurx wording. The safer reading is not 'contradictory' in the abstract; it is a multi-layered transition with live legacy routes, current PATCHS messaging, and stale complaints content."
+    }
+  ],
+  "flag_summaries": [
+    {
+      "flag": "request_platform:patchs",
+      "label": "PATCHS present",
+      "count_with_flag": 13,
+      "count_without_flag": 2,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 66.4,
+          "without_flag_avg": 70.0,
+          "difference": -3.6,
+          "with_flag_vs_ics_avg": -10.6
+        },
+        "contact_good": {
+          "with_flag_avg": 60.2,
+          "without_flag_avg": 67.0,
+          "difference": -6.8,
+          "with_flag_vs_ics_avg": -11.8
+        },
+        "phone_easy": {
+          "with_flag_avg": 49.1,
+          "without_flag_avg": 44.0,
+          "difference": 5.1,
+          "with_flag_vs_ics_avg": -7.9
+        },
+        "website_easy": {
+          "with_flag_avg": 45.1,
+          "without_flag_avg": 56.0,
+          "difference": -10.9,
+          "with_flag_vs_ics_avg": -8.9
+        },
+        "app_easy": {
+          "with_flag_avg": 50.8,
+          "without_flag_avg": 36.0,
+          "difference": 14.8,
+          "with_flag_vs_ics_avg": -1.2
+        },
+        "needs_met": {
+          "with_flag_avg": 83.6,
+          "without_flag_avg": 78.0,
+          "difference": 5.6,
+          "with_flag_vs_ics_avg": -6.4
+        }
+      },
+      "members": [
+        "P86001",
+        "P89011",
+        "P89013",
+        "P89602",
+        "P89612",
+        "Y02325",
+        "Y02520",
+        "Y02586",
+        "Y02663",
+        "Y02713",
+        "Y02875",
+        "Y02936",
+        "Y02960"
+      ]
+    },
+    {
+      "flag": "website_platform:concrete_cms",
+      "label": "Concrete CMS / concrete5 public site",
+      "count_with_flag": 11,
+      "count_without_flag": 4,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 64.4,
+          "without_flag_avg": 75.0,
+          "difference": -10.6,
+          "with_flag_vs_ics_avg": -12.6
+        },
+        "contact_good": {
+          "with_flag_avg": 58.4,
+          "without_flag_avg": 69.3,
+          "difference": -10.9,
+          "with_flag_vs_ics_avg": -13.6
+        },
+        "phone_easy": {
+          "with_flag_avg": 44.4,
+          "without_flag_avg": 64.7,
+          "difference": -20.3,
+          "with_flag_vs_ics_avg": -12.6
+        },
+        "website_easy": {
+          "with_flag_avg": 39.8,
+          "without_flag_avg": 68.0,
+          "difference": -28.2,
+          "with_flag_vs_ics_avg": -14.2
+        },
+        "app_easy": {
+          "with_flag_avg": 45.8,
+          "without_flag_avg": 64.3,
+          "difference": -18.5,
+          "with_flag_vs_ics_avg": -6.2
+        },
+        "needs_met": {
+          "with_flag_avg": 82.9,
+          "without_flag_avg": 84.3,
+          "difference": -1.4,
+          "with_flag_vs_ics_avg": -7.1
+        }
+      },
+      "members": [
+        "P89011",
+        "P89013",
+        "P89602",
+        "P89612",
+        "Y02520",
+        "Y02586",
+        "Y02663",
+        "Y02713",
+        "Y02849",
+        "Y02875",
+        "Y02936"
+      ]
+    },
+    {
+      "flag": "website_identity:shared_host_microsite",
+      "label": "Shared-host patient microsite",
+      "count_with_flag": 11,
+      "count_without_flag": 4,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 64.4,
+          "without_flag_avg": 75.0,
+          "difference": -10.6,
+          "with_flag_vs_ics_avg": -12.6
+        },
+        "contact_good": {
+          "with_flag_avg": 58.4,
+          "without_flag_avg": 69.3,
+          "difference": -10.9,
+          "with_flag_vs_ics_avg": -13.6
+        },
+        "phone_easy": {
+          "with_flag_avg": 44.4,
+          "without_flag_avg": 64.7,
+          "difference": -20.3,
+          "with_flag_vs_ics_avg": -12.6
+        },
+        "website_easy": {
+          "with_flag_avg": 39.8,
+          "without_flag_avg": 68.0,
+          "difference": -28.2,
+          "with_flag_vs_ics_avg": -14.2
+        },
+        "app_easy": {
+          "with_flag_avg": 45.8,
+          "without_flag_avg": 64.3,
+          "difference": -18.5,
+          "with_flag_vs_ics_avg": -6.2
+        },
+        "needs_met": {
+          "with_flag_avg": 82.9,
+          "without_flag_avg": 84.3,
+          "difference": -1.4,
+          "with_flag_vs_ics_avg": -7.1
+        }
+      },
+      "members": [
+        "P89011",
+        "P89013",
+        "P89602",
+        "P89612",
+        "Y02520",
+        "Y02586",
+        "Y02663",
+        "Y02713",
+        "Y02849",
+        "Y02875",
+        "Y02936"
+      ]
+    },
+    {
+      "flag": "request_platform:accurx",
+      "label": "Accurx present",
+      "count_with_flag": 4,
+      "count_without_flag": 11,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 64.8,
+          "without_flag_avg": 67.4,
+          "difference": -2.6,
+          "with_flag_vs_ics_avg": -12.2
+        },
+        "contact_good": {
+          "with_flag_avg": 57.5,
+          "without_flag_avg": 62.0,
+          "difference": -4.5,
+          "with_flag_vs_ics_avg": -14.5
+        },
+        "phone_easy": {
+          "with_flag_avg": 44.8,
+          "without_flag_avg": 50.3,
+          "difference": -5.5,
+          "with_flag_vs_ics_avg": -12.2
+        },
+        "website_easy": {
+          "with_flag_avg": 51.8,
+          "without_flag_avg": 43.5,
+          "difference": 8.3,
+          "with_flag_vs_ics_avg": -2.2
+        },
+        "app_easy": {
+          "with_flag_avg": 43.5,
+          "without_flag_avg": 52.3,
+          "difference": -8.8,
+          "with_flag_vs_ics_avg": -8.5
+        },
+        "needs_met": {
+          "with_flag_avg": 81.2,
+          "without_flag_avg": 84.0,
+          "difference": -2.8,
+          "with_flag_vs_ics_avg": -8.8
+        }
+      },
+      "members": [
+        "P89011",
+        "Y02325",
+        "Y02849",
+        "Y02960"
+      ]
+    },
+    {
+      "flag": "request_platform:patient_access",
+      "label": "Patient Access / EMIS Access present",
+      "count_with_flag": 2,
+      "count_without_flag": 13,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 78.0,
+          "without_flag_avg": 64.8,
+          "difference": 13.2,
+          "with_flag_vs_ics_avg": 1.0
+        },
+        "contact_good": {
+          "with_flag_avg": 71.0,
+          "without_flag_avg": 59.0,
+          "difference": 12.0,
+          "with_flag_vs_ics_avg": -1.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 66.5,
+          "without_flag_avg": 45.8,
+          "difference": 20.7,
+          "with_flag_vs_ics_avg": 9.5
+        },
+        "website_easy": {
+          "with_flag_avg": 65.5,
+          "without_flag_avg": 42.6,
+          "difference": 22.9,
+          "with_flag_vs_ics_avg": 11.5
+        },
+        "app_easy": {
+          "with_flag_avg": 66.5,
+          "without_flag_avg": 47.0,
+          "difference": 19.5,
+          "with_flag_vs_ics_avg": 14.5
+        },
+        "needs_met": {
+          "with_flag_avg": 85.5,
+          "without_flag_avg": 82.8,
+          "difference": 2.7,
+          "with_flag_vs_ics_avg": -4.5
+        }
+      },
+      "members": [
+        "P86001",
+        "Y02325"
+      ]
+    },
+    {
+      "flag": "website_platform:wordpress",
+      "label": "WordPress public site",
+      "count_with_flag": 2,
+      "count_without_flag": 13,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 64.0,
+          "without_flag_avg": 67.1,
+          "difference": -3.1,
+          "with_flag_vs_ics_avg": -13.0
+        },
+        "contact_good": {
+          "with_flag_avg": 58.0,
+          "without_flag_avg": 61.2,
+          "difference": -3.2,
+          "with_flag_vs_ics_avg": -14.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 51.0,
+          "without_flag_avg": 48.3,
+          "difference": 2.7,
+          "with_flag_vs_ics_avg": -6.0
+        },
+        "website_easy": {
+          "with_flag_avg": 62.5,
+          "without_flag_avg": 43.1,
+          "difference": 19.4,
+          "with_flag_vs_ics_avg": 8.5
+        },
+        "app_easy": {
+          "with_flag_avg": 53.5,
+          "without_flag_avg": 49.2,
+          "difference": 4.3,
+          "with_flag_vs_ics_avg": 1.5
+        },
+        "needs_met": {
+          "with_flag_avg": 78.5,
+          "without_flag_avg": 84.0,
+          "difference": -5.5,
+          "with_flag_vs_ics_avg": -11.5
+        }
+      },
+      "members": [
+        "Y02325",
+        "Y02960"
+      ]
+    },
+    {
+      "flag": "request_platform:silicon_forms",
+      "label": "Silicon Practice hosted forms present",
+      "count_with_flag": 2,
+      "count_without_flag": 13,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 64.0,
+          "without_flag_avg": 67.1,
+          "difference": -3.1,
+          "with_flag_vs_ics_avg": -13.0
+        },
+        "contact_good": {
+          "with_flag_avg": 58.0,
+          "without_flag_avg": 61.2,
+          "difference": -3.2,
+          "with_flag_vs_ics_avg": -14.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 51.0,
+          "without_flag_avg": 48.3,
+          "difference": 2.7,
+          "with_flag_vs_ics_avg": -6.0
+        },
+        "website_easy": {
+          "with_flag_avg": 62.5,
+          "without_flag_avg": 43.1,
+          "difference": 19.4,
+          "with_flag_vs_ics_avg": 8.5
+        },
+        "app_easy": {
+          "with_flag_avg": 53.5,
+          "without_flag_avg": 49.2,
+          "difference": 4.3,
+          "with_flag_vs_ics_avg": 1.5
+        },
+        "needs_met": {
+          "with_flag_avg": 78.5,
+          "without_flag_avg": 84.0,
+          "difference": -5.5,
+          "with_flag_vs_ics_avg": -11.5
+        }
+      },
+      "members": [
+        "Y02325",
+        "Y02960"
+      ]
+    },
+    {
+      "flag": "website_identity:standalone_domain",
+      "label": "Standalone practice domain",
+      "count_with_flag": 2,
+      "count_without_flag": 13,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 64.0,
+          "without_flag_avg": 67.1,
+          "difference": -3.1,
+          "with_flag_vs_ics_avg": -13.0
+        },
+        "contact_good": {
+          "with_flag_avg": 58.0,
+          "without_flag_avg": 61.2,
+          "difference": -3.2,
+          "with_flag_vs_ics_avg": -14.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 51.0,
+          "without_flag_avg": 48.3,
+          "difference": 2.7,
+          "with_flag_vs_ics_avg": -6.0
+        },
+        "website_easy": {
+          "with_flag_avg": 62.5,
+          "without_flag_avg": 43.1,
+          "difference": 19.4,
+          "with_flag_vs_ics_avg": 8.5
+        },
+        "app_easy": {
+          "with_flag_avg": 53.5,
+          "without_flag_avg": 49.2,
+          "difference": 4.3,
+          "with_flag_vs_ics_avg": 1.5
+        },
+        "needs_met": {
+          "with_flag_avg": 78.5,
+          "without_flag_avg": 84.0,
+          "difference": -5.5,
+          "with_flag_vs_ics_avg": -11.5
+        }
+      },
+      "members": [
+        "Y02325",
+        "Y02960"
+      ]
+    },
+    {
+      "flag": "website_platform:my_surgery_website",
+      "label": "My Surgery Website public site",
+      "count_with_flag": 1,
+      "count_without_flag": 14,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 97.0,
+          "without_flag_avg": 64.3,
+          "difference": 32.7,
+          "with_flag_vs_ics_avg": 20.0
+        },
+        "contact_good": {
+          "with_flag_avg": 92.0,
+          "without_flag_avg": 58.3,
+          "difference": 33.7,
+          "with_flag_vs_ics_avg": 20.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 92.0,
+          "without_flag_avg": 45.4,
+          "difference": 46.6,
+          "with_flag_vs_ics_avg": 35.0
+        },
+        "website_easy": {
+          "with_flag_avg": 79.0,
+          "without_flag_avg": 43.3,
+          "difference": 35.7,
+          "with_flag_vs_ics_avg": 25.0
+        },
+        "app_easy": {
+          "with_flag_avg": 86.0,
+          "without_flag_avg": 47.0,
+          "difference": 39.0,
+          "with_flag_vs_ics_avg": 34.0
+        },
+        "needs_met": {
+          "with_flag_avg": 96.0,
+          "without_flag_avg": 82.2,
+          "difference": 13.8,
+          "with_flag_vs_ics_avg": 6.0
+        }
+      },
+      "members": [
+        "P86001"
+      ]
+    },
+    {
+      "flag": "access:phone_first",
+      "label": "Phone-first appointments wording",
+      "count_with_flag": 1,
+      "count_without_flag": 14,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 97.0,
+          "without_flag_avg": 64.3,
+          "difference": 32.7,
+          "with_flag_vs_ics_avg": 20.0
+        },
+        "contact_good": {
+          "with_flag_avg": 92.0,
+          "without_flag_avg": 58.3,
+          "difference": 33.7,
+          "with_flag_vs_ics_avg": 20.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 92.0,
+          "without_flag_avg": 45.4,
+          "difference": 46.6,
+          "with_flag_vs_ics_avg": 35.0
+        },
+        "website_easy": {
+          "with_flag_avg": 79.0,
+          "without_flag_avg": 43.3,
+          "difference": 35.7,
+          "with_flag_vs_ics_avg": 25.0
+        },
+        "app_easy": {
+          "with_flag_avg": 86.0,
+          "without_flag_avg": 47.0,
+          "difference": 39.0,
+          "with_flag_vs_ics_avg": 34.0
+        },
+        "needs_met": {
+          "with_flag_avg": 96.0,
+          "without_flag_avg": 82.2,
+          "difference": 13.8,
+          "with_flag_vs_ics_avg": 6.0
+        }
+      },
+      "members": [
+        "P86001"
+      ]
+    },
+    {
+      "flag": "access:limited_scope_patchs",
+      "label": "PATCHS described as limited-scope, not full front door",
+      "count_with_flag": 1,
+      "count_without_flag": 14,
+      "metrics": {
+        "overall_good": {
+          "with_flag_avg": 97.0,
+          "without_flag_avg": 64.3,
+          "difference": 32.7,
+          "with_flag_vs_ics_avg": 20.0
+        },
+        "contact_good": {
+          "with_flag_avg": 92.0,
+          "without_flag_avg": 58.3,
+          "difference": 33.7,
+          "with_flag_vs_ics_avg": 20.0
+        },
+        "phone_easy": {
+          "with_flag_avg": 92.0,
+          "without_flag_avg": 45.4,
+          "difference": 46.6,
+          "with_flag_vs_ics_avg": 35.0
+        },
+        "website_easy": {
+          "with_flag_avg": 79.0,
+          "without_flag_avg": 43.3,
+          "difference": 35.7,
+          "with_flag_vs_ics_avg": 25.0
+        },
+        "app_easy": {
+          "with_flag_avg": 86.0,
+          "without_flag_avg": 47.0,
+          "difference": 39.0,
+          "with_flag_vs_ics_avg": 34.0
+        },
+        "needs_met": {
+          "with_flag_avg": 96.0,
+          "without_flag_avg": 82.2,
+          "difference": 13.8,
+          "with_flag_vs_ics_avg": 6.0
+        }
+      },
+      "members": [
+        "P86001"
+      ]
+    }
+  ],
+  "website_stack_groups": [
+    {
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "count": 11,
+      "members": [
+        "P89011",
+        "P89013",
+        "P89602",
+        "P89612",
+        "Y02520",
+        "Y02586",
+        "Y02663",
+        "Y02713",
+        "Y02849",
+        "Y02875",
+        "Y02936"
+      ],
+      "google_review_score_avg": 2.5,
+      "metrics": {
+        "overall_good": {
+          "avg": 64.4,
+          "avg_vs_ics": -12.6
+        },
+        "contact_good": {
+          "avg": 58.4,
+          "avg_vs_ics": -13.6
+        },
+        "phone_easy": {
+          "avg": 44.4,
+          "avg_vs_ics": -12.6
+        },
+        "website_easy": {
+          "avg": 39.8,
+          "avg_vs_ics": -14.2
+        },
+        "app_easy": {
+          "avg": 45.8,
+          "avg_vs_ics": -6.2
+        },
+        "needs_met": {
+          "avg": 82.9,
+          "avg_vs_ics": -7.1
+        }
+      }
+    },
+    {
+      "website_stack": "My Surgery Website",
+      "count": 1,
+      "members": [
+        "P86001"
+      ],
+      "google_review_score_avg": 5.0,
+      "metrics": {
+        "overall_good": {
+          "avg": 97.0,
+          "avg_vs_ics": 20.0
+        },
+        "contact_good": {
+          "avg": 92.0,
+          "avg_vs_ics": 20.0
+        },
+        "phone_easy": {
+          "avg": 92.0,
+          "avg_vs_ics": 35.0
+        },
+        "website_easy": {
+          "avg": 79.0,
+          "avg_vs_ics": 25.0
+        },
+        "app_easy": {
+          "avg": 86.0,
+          "avg_vs_ics": 34.0
+        },
+        "needs_met": {
+          "avg": 96.0,
+          "avg_vs_ics": 6.0
+        }
+      }
+    },
+    {
+      "website_stack": "WordPress with nhsuk-frontend-theme and Silicon Practice plugins",
+      "count": 1,
+      "members": [
+        "Y02960"
+      ],
+      "google_review_score_avg": 1.9,
+      "metrics": {
+        "overall_good": {
+          "avg": 69.0,
+          "avg_vs_ics": -8.0
+        },
+        "contact_good": {
+          "avg": 66.0,
+          "avg_vs_ics": -6.0
+        },
+        "phone_easy": {
+          "avg": 61.0,
+          "avg_vs_ics": 4.0
+        },
+        "website_easy": {
+          "avg": 73.0,
+          "avg_vs_ics": 19.0
+        },
+        "app_easy": {
+          "avg": 60.0,
+          "avg_vs_ics": 8.0
+        },
+        "needs_met": {
+          "avg": 82.0,
+          "avg_vs_ics": -8.0
+        }
+      }
+    },
+    {
+      "website_stack": "WordPress with NHS UK theme and Silicon Practice elements",
+      "count": 1,
+      "members": [
+        "Y02325"
+      ],
+      "google_review_score_avg": 1.9,
+      "metrics": {
+        "overall_good": {
+          "avg": 59.0,
+          "avg_vs_ics": -18.0
+        },
+        "contact_good": {
+          "avg": 50.0,
+          "avg_vs_ics": -22.0
+        },
+        "phone_easy": {
+          "avg": 41.0,
+          "avg_vs_ics": -16.0
+        },
+        "website_easy": {
+          "avg": 52.0,
+          "avg_vs_ics": -2.0
+        },
+        "app_easy": {
+          "avg": 47.0,
+          "avg_vs_ics": -5.0
+        },
+        "needs_met": {
+          "avg": 75.0,
+          "avg_vs_ics": -15.0
+        }
+      }
+    }
+  ],
+  "top_by_overall_good": [
+    {
+      "ods_code": "P86001",
+      "practice_name": "Milnrow Village Practice",
+      "website_stack": "My Surgery Website",
+      "request_platforms": [
+        "patchs",
+        "patient_access"
+      ],
+      "metric_percent": 97,
+      "metric_vs_ics": 20,
+      "google_review_score": 5.0
+    },
+    {
+      "ods_code": "P89612",
+      "practice_name": "Mossley Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 83,
+      "metric_vs_ics": 6,
+      "google_review_score": 3.7
+    },
+    {
+      "ods_code": "Y02520",
+      "practice_name": "Simpson Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 80,
+      "metric_vs_ics": 3,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "P89602",
+      "practice_name": "The Smithy Surgery",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 78,
+      "metric_vs_ics": 1,
+      "google_review_score": 4.0
+    },
+    {
+      "ods_code": "Y02875",
+      "practice_name": "Lindley House Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 72,
+      "metric_vs_ics": -5,
+      "google_review_score": 2.1
+    },
+    {
+      "ods_code": "Y02849",
+      "practice_name": "City Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "accurx"
+      ],
+      "metric_percent": 70,
+      "metric_vs_ics": -7,
+      "google_review_score": 4.5
+    },
+    {
+      "ods_code": "Y02936",
+      "practice_name": "Millbrook Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 69,
+      "metric_vs_ics": -8,
+      "google_review_score": 2.7
+    },
+    {
+      "ods_code": "Y02960",
+      "practice_name": "New Bank Health",
+      "website_stack": "WordPress with nhsuk-frontend-theme and Silicon Practice plugins",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "silicon_forms"
+      ],
+      "metric_percent": 69,
+      "metric_vs_ics": -8,
+      "google_review_score": 1.9
+    },
+    {
+      "ods_code": "P89011",
+      "practice_name": "Gordon Street Medical Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "accurx",
+        "patchs"
+      ],
+      "metric_percent": 61,
+      "metric_vs_ics": -16,
+      "google_review_score": 1.5
+    },
+    {
+      "ods_code": "Y02325",
+      "practice_name": "Charlestown Medical Practice",
+      "website_stack": "WordPress with NHS UK theme and Silicon Practice elements",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "patient_access",
+        "silicon_forms"
+      ],
+      "metric_percent": 59,
+      "metric_vs_ics": -18,
+      "google_review_score": 1.9
+    }
+  ],
+  "bottom_by_overall_good": [
+    {
+      "ods_code": "P89013",
+      "practice_name": "Hattersley Group Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 41,
+      "metric_vs_ics": -36,
+      "google_review_score": 2.1
+    },
+    {
+      "ods_code": "Y02663",
+      "practice_name": "Droylsden Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 49,
+      "metric_vs_ics": -28,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02586",
+      "practice_name": "Ashton GP Service",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 52,
+      "metric_vs_ics": -25,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02713",
+      "practice_name": "Guide Bridge Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 53,
+      "metric_vs_ics": -24,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02325",
+      "practice_name": "Charlestown Medical Practice",
+      "website_stack": "WordPress with NHS UK theme and Silicon Practice elements",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "patient_access",
+        "silicon_forms"
+      ],
+      "metric_percent": 59,
+      "metric_vs_ics": -18,
+      "google_review_score": 1.9
+    },
+    {
+      "ods_code": "P89011",
+      "practice_name": "Gordon Street Medical Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "accurx",
+        "patchs"
+      ],
+      "metric_percent": 61,
+      "metric_vs_ics": -16,
+      "google_review_score": 1.5
+    },
+    {
+      "ods_code": "Y02936",
+      "practice_name": "Millbrook Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 69,
+      "metric_vs_ics": -8,
+      "google_review_score": 2.7
+    },
+    {
+      "ods_code": "Y02960",
+      "practice_name": "New Bank Health",
+      "website_stack": "WordPress with nhsuk-frontend-theme and Silicon Practice plugins",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "silicon_forms"
+      ],
+      "metric_percent": 69,
+      "metric_vs_ics": -8,
+      "google_review_score": 1.9
+    },
+    {
+      "ods_code": "Y02849",
+      "practice_name": "City Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "accurx"
+      ],
+      "metric_percent": 70,
+      "metric_vs_ics": -7,
+      "google_review_score": 4.5
+    },
+    {
+      "ods_code": "Y02875",
+      "practice_name": "Lindley House Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 72,
+      "metric_vs_ics": -5,
+      "google_review_score": 2.1
+    }
+  ],
+  "top_by_website_easy": [
+    {
+      "ods_code": "P86001",
+      "practice_name": "Milnrow Village Practice",
+      "website_stack": "My Surgery Website",
+      "request_platforms": [
+        "patchs",
+        "patient_access"
+      ],
+      "metric_percent": 79,
+      "metric_vs_ics": 25,
+      "google_review_score": 5.0
+    },
+    {
+      "ods_code": "Y02960",
+      "practice_name": "New Bank Health",
+      "website_stack": "WordPress with nhsuk-frontend-theme and Silicon Practice plugins",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "silicon_forms"
+      ],
+      "metric_percent": 73,
+      "metric_vs_ics": 19,
+      "google_review_score": 1.9
+    },
+    {
+      "ods_code": "Y02849",
+      "practice_name": "City Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "accurx"
+      ],
+      "metric_percent": 56,
+      "metric_vs_ics": 2,
+      "google_review_score": 4.5
+    },
+    {
+      "ods_code": "P89612",
+      "practice_name": "Mossley Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 54,
+      "metric_vs_ics": 0,
+      "google_review_score": 3.7
+    },
+    {
+      "ods_code": "Y02325",
+      "practice_name": "Charlestown Medical Practice",
+      "website_stack": "WordPress with NHS UK theme and Silicon Practice elements",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "patient_access",
+        "silicon_forms"
+      ],
+      "metric_percent": 52,
+      "metric_vs_ics": -2,
+      "google_review_score": 1.9
+    },
+    {
+      "ods_code": "Y02520",
+      "practice_name": "Simpson Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 52,
+      "metric_vs_ics": -2,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02875",
+      "practice_name": "Lindley House Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 45,
+      "metric_vs_ics": -9,
+      "google_review_score": 2.1
+    },
+    {
+      "ods_code": "Y02586",
+      "practice_name": "Ashton GP Service",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 43,
+      "metric_vs_ics": -11,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02713",
+      "practice_name": "Guide Bridge Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 42,
+      "metric_vs_ics": -12,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "P89013",
+      "practice_name": "Hattersley Group Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 41,
+      "metric_vs_ics": -13,
+      "google_review_score": 2.1
+    }
+  ],
+  "bottom_by_website_easy": [
+    {
+      "ods_code": "P89602",
+      "practice_name": "The Smithy Surgery",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 21,
+      "metric_vs_ics": -33,
+      "google_review_score": 4.0
+    },
+    {
+      "ods_code": "P89011",
+      "practice_name": "Gordon Street Medical Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "accurx",
+        "patchs"
+      ],
+      "metric_percent": 26,
+      "metric_vs_ics": -28,
+      "google_review_score": 1.5
+    },
+    {
+      "ods_code": "Y02663",
+      "practice_name": "Droylsden Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 29,
+      "metric_vs_ics": -25,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02936",
+      "practice_name": "Millbrook Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 29,
+      "metric_vs_ics": -25,
+      "google_review_score": 2.7
+    },
+    {
+      "ods_code": "P89013",
+      "practice_name": "Hattersley Group Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 41,
+      "metric_vs_ics": -13,
+      "google_review_score": 2.1
+    },
+    {
+      "ods_code": "Y02713",
+      "practice_name": "Guide Bridge Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 42,
+      "metric_vs_ics": -12,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02586",
+      "practice_name": "Ashton GP Service",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 43,
+      "metric_vs_ics": -11,
+      "google_review_score": 1.8
+    },
+    {
+      "ods_code": "Y02875",
+      "practice_name": "Lindley House Health Centre",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 45,
+      "metric_vs_ics": -9,
+      "google_review_score": 2.1
+    },
+    {
+      "ods_code": "Y02325",
+      "practice_name": "Charlestown Medical Practice",
+      "website_stack": "WordPress with NHS UK theme and Silicon Practice elements",
+      "request_platforms": [
+        "accurx",
+        "patchs",
+        "patient_access",
+        "silicon_forms"
+      ],
+      "metric_percent": 52,
+      "metric_vs_ics": -2,
+      "google_review_score": 1.9
+    },
+    {
+      "ods_code": "Y02520",
+      "practice_name": "Simpson Medical Practice",
+      "website_stack": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+      "request_platforms": [
+        "patchs"
+      ],
+      "metric_percent": 52,
+      "metric_vs_ics": -2,
+      "google_review_score": 1.8
+    }
+  ]
+}

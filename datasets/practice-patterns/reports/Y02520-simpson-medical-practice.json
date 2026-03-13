@@ -1,0 +1,121 @@
+{
+  "report_version": "0.2",
+  "practice": {
+    "ods_code": "Y02520",
+    "practice_name": "Simpson Medical Practice",
+    "website_url": "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice",
+    "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/simpson-medical-practice/Y02520",
+    "telephone": "0161 203 5550",
+    "postcode": "M40 9NB",
+    "registered_patient_count": 5375,
+    "google_review_score": 1.8,
+    "google_review_count": 104
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual review of live practice pages with NHS profile and search-result cross-checks"
+  },
+  "headline": "Simpson Medical Practice looks like another standard GTD Concrete CMS microsite with PATCHS as the live request platform. The public page is cleaner than New Bank or Charlestown in that the NHS App instructions also point to PATCHS.",
+  "current_picture": {
+    "live_stack": [
+      {
+        "label": "Patient-facing website stack",
+        "status": "live",
+        "platform": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+        "evidence": [
+          "The page exposes a concrete5 generator tag.",
+          "The site lives under gtdhealthcare.co.uk/simpsonmedicalpractice.",
+          "Search and NHS-profile checks did not surface a separate live practice domain; this GTD URL appears to be the patient-facing microsite."
+        ]
+      },
+      {
+        "label": "Current online request platform",
+        "status": "live",
+        "platform": "PATCHS",
+        "evidence": [
+          "The appointments page links to https://patchs.ai/practice/simpsonmedicalpractice.",
+          "The page tells NHS App users to continue to Patchs Health."
+        ]
+      }
+    ],
+    "current_routes": [
+      {
+        "label": "PATCHS direct route",
+        "status": "live",
+        "kind": "online consultation / request intake",
+        "url": "https://patchs.ai/practice/simpsonmedicalpractice",
+        "notes": [
+          "The appointments page presents PATCHS as the online request form for appointments.",
+          "The surrounding copy says a GP reviews the submitted information and decides what happens next."
+        ]
+      },
+      {
+        "label": "NHS App route",
+        "status": "claimed_by_website",
+        "kind": "app-mediated request route",
+        "url": "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/appointments",
+        "notes": [
+          "The page tells NHS App users to continue to Patchs Health."
+        ]
+      },
+      {
+        "label": "Phone route",
+        "status": "claimed_by_website",
+        "kind": "staff-assisted intake, not a distinct digital platform",
+        "url": "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/appointments",
+        "notes": [
+          "The site lists calling the practice as another way to request an appointment.",
+          "That sits alongside PATCHS rather than clearly replacing it."
+        ]
+      },
+      {
+        "label": "Prescriptions",
+        "status": "live",
+        "kind": "repeat medication route",
+        "url": "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/prescriptions",
+        "notes": [
+          "The prescriptions page points patients to their NHS account and also mentions the practice email address gmicb-mh.simpson@nhs.net."
+        ]
+      }
+    ],
+    "complaints_and_feedback": {
+      "headline": "Complaints information is embedded in the contact-us page.",
+      "items": [
+        {
+          "label": "Complaints via contact-us page",
+          "status": "live",
+          "url": "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/contact-us",
+          "notes": [
+            "The page says patients should raise concerns with the practice manager first or contact the complaints team directly.",
+            "It lists GTD complaints contact details including gtd.feedback@nhs.net."
+          ]
+        }
+      ]
+    },
+    "stale_or_conflicting_signals": [
+      {
+        "label": "Phone wording overstates independence",
+        "status": "broken_or_suspect",
+        "notes": [
+          "The page still reads as if phone were a separate appointment route, even though PATCHS is the clearer digital front door."
+        ]
+      }
+    ]
+  },
+  "analyst_notes": {
+    "probably_true": [
+      "PATCHS is the current patient-facing request platform here.",
+      "The NHS App wording is consistent with the main online route rather than pointing to an older supplier."
+    ],
+    "needs_follow_up": [
+      "Whether Simpson has any distinct admin-only request lane beyond the public PATCHS and prescription routes."
+    ]
+  },
+  "source_pages": [
+    "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice",
+    "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/appointments",
+    "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/prescriptions",
+    "https://www.gtdhealthcare.co.uk/simpsonmedicalpractice/contact-us"
+  ]
+}

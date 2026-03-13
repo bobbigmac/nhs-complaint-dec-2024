@@ -1,0 +1,112 @@
+{
+  "report_version": "0.2",
+  "practice": {
+    "ods_code": "P89602",
+    "practice_name": "The Smithy Surgery",
+    "website_url": "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+    "website_identity": "patient-facing practice microsite hosted on the GTD domain; no separate live public practice domain found during this pass",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-smithy-surgery/P89602",
+    "telephone": "01457 767 123",
+    "postcode": "SK14 8LJ",
+    "registered_patient_count": 3747,
+    "google_review_score": 4.0,
+    "google_review_count": 23
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual review of live practice pages with NHS profile and search-result cross-checks"
+  },
+  "headline": "The Smithy Surgery looks like one of the clearer GTD Concrete CMS plus PATCHS microsites. The appointments page explicitly says the online form is available Monday to Friday from 7:30am until 6:30pm, which is more explicit than several of the other GTD sites.",
+  "current_picture": {
+    "live_stack": [
+      {
+        "label": "Patient-facing website stack",
+        "status": "live",
+        "platform": "GTD-hosted practice microsite on concrete5 / Concrete CMS",
+        "evidence": [
+          "The page exposes a concrete5 generator tag.",
+          "The site lives under gtdhealthcare.co.uk/thesmithysurgery.",
+          "Search and NHS-profile checks did not surface a separate live practice domain; this GTD URL appears to be the patient-facing microsite."
+        ]
+      },
+      {
+        "label": "Current online request platform",
+        "status": "live",
+        "platform": "PATCHS",
+        "evidence": [
+          "The appointments page links to https://patchs.ai/practice/thesmithy.",
+          "The page tells NHS App users to continue to Patchs Health."
+        ]
+      }
+    ],
+    "current_routes": [
+      {
+        "label": "PATCHS direct route",
+        "status": "live",
+        "kind": "online consultation / request intake",
+        "url": "https://patchs.ai/practice/thesmithy",
+        "notes": [
+          "The appointments page presents PATCHS as the online request form for appointments.",
+          "The page says the form is available Monday to Friday from 7:30am until 6:30pm."
+        ]
+      },
+      {
+        "label": "NHS App route",
+        "status": "claimed_by_website",
+        "kind": "app-mediated request route",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+        "notes": [
+          "The page tells NHS App users to continue to Patchs Health."
+        ]
+      },
+      {
+        "label": "Phone route",
+        "status": "claimed_by_website",
+        "kind": "staff-assisted intake, not a distinct digital platform",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+        "notes": [
+          "The page lists calling the practice as another way to request an appointment."
+        ]
+      },
+      {
+        "label": "Prescriptions",
+        "status": "live",
+        "kind": "repeat medication route",
+        "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions",
+        "notes": [
+          "The prescriptions page points patients to their NHS account and also mentions the practice email address gmicb-tameside.thesmithysurgery@nhs.net."
+        ]
+      }
+    ],
+    "complaints_and_feedback": {
+      "headline": "Complaints information is embedded in the contact-us page.",
+      "items": [
+        {
+          "label": "Complaints via contact-us page",
+          "status": "live",
+          "url": "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us",
+          "notes": [
+            "The page says patients should raise concerns with the practice manager first or contact the complaints team directly.",
+            "It lists GTD complaints contact details including gtd.feedback@nhs.net."
+          ]
+        }
+      ]
+    },
+    "stale_or_conflicting_signals": []
+  },
+  "analyst_notes": {
+    "probably_true": [
+      "PATCHS is the current patient-facing request platform here.",
+      "The Smithy exposes one of the clearest public PATCHS availability windows in the GTD batch."
+    ],
+    "needs_follow_up": [
+      "Whether the long published request window really remains open right through to 6:30pm in live PATCHS configuration."
+    ]
+  },
+  "source_pages": [
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/appointments",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/prescriptions",
+    "https://www.gtdhealthcare.co.uk/thesmithysurgery/contact-us"
+  ]
+}

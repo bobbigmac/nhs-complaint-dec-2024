@@ -1,0 +1,147 @@
+{
+  "report_version": "0.2",
+  "practice": {
+    "ods_code": "Y02325",
+    "practice_name": "Charlestown Medical Practice",
+    "website_url": "https://charlestownmedicalpractice.co.uk/",
+    "website_identity": "standalone practice domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/charlestown-medical-practice/Y02325",
+    "telephone": "0161 241 5309",
+    "postcode": "M9 7ED",
+    "registered_patient_count": 5268,
+    "google_review_score": 1.9,
+    "google_review_count": 109
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual review of the live website with NHS profile and search-result cross-checks"
+  },
+  "headline": "Charlestown looks like a messier transition case than the standard GTD microsites. The public site is a WordPress and Silicon Practice build, the direct request form points to PATCHS, but the NHS App wording still says continue to the Accurx system, and prescriptions still mention Patient Access.",
+  "current_picture": {
+    "live_stack": [
+      {
+        "label": "Public website stack",
+        "status": "live",
+        "platform": "WordPress with NHS UK theme and Silicon Practice elements",
+        "evidence": [
+          "The site exposes WordPress and wp-content assets.",
+          "The page source carries Silicon Practice markers."
+        ]
+      },
+      {
+        "label": "Direct online request platform",
+        "status": "live",
+        "platform": "PATCHS",
+        "evidence": [
+          "The appointments page links to https://patchs.ai/practice/charlestownmedicalpractice.",
+          "The page presents PATCHS as the direct online request form."
+        ]
+      },
+      {
+        "label": "NHS App wording still visible on the site",
+        "status": "claimed_by_website",
+        "platform": "Accurx",
+        "evidence": [
+          "The appointments page tells NHS App users to continue to the accurx system."
+        ]
+      },
+      {
+        "label": "Prescription-side legacy platform",
+        "status": "claimed_by_website",
+        "platform": "Patient Access",
+        "evidence": [
+          "The prescriptions page says repeat prescriptions can be ordered using the GP online system: Patient Access."
+        ]
+      }
+    ],
+    "current_routes": [
+      {
+        "label": "PATCHS direct route",
+        "status": "live",
+        "kind": "online consultation / request intake",
+        "url": "https://patchs.ai/practice/charlestownmedicalpractice",
+        "notes": [
+          "The appointments page presents PATCHS as the direct online request form.",
+          "The page also says appointment outcomes may be by phone, face to face, video call, text or email."
+        ]
+      },
+      {
+        "label": "NHS App route",
+        "status": "claimed_by_website",
+        "kind": "app-mediated request route",
+        "url": "https://charlestownmedicalpractice.co.uk/appointments/",
+        "notes": [
+          "The NHS App instructions still say continue to the accurx system.",
+          "Treat that as website wording rather than a fully trusted statement of the current stack."
+        ]
+      },
+      {
+        "label": "Phone route",
+        "status": "claimed_by_website",
+        "kind": "staff-assisted intake, not a distinct digital platform",
+        "url": "https://charlestownmedicalpractice.co.uk/appointments/",
+        "notes": [
+          "The page lists phoning the practice as another way to request an appointment."
+        ]
+      },
+      {
+        "label": "Prescriptions",
+        "status": "live",
+        "kind": "repeat medication route",
+        "url": "https://charlestownmedicalpractice.co.uk/prescriptions/",
+        "notes": [
+          "The prescriptions page points patients to NHS account and Patient Access.",
+          "It says repeat requests are not taken over the phone or email.",
+          "It also says nominated pharmacy changes can be handled at the surgery or online via PATCHS."
+        ]
+      }
+    ],
+    "complaints_and_feedback": {
+      "headline": "Charlestown has a live dedicated complaints page, but it reads like a generic complaints procedure rather than the clearer GTD contact-us model used on the concrete microsites.",
+      "items": [
+        {
+          "label": "Dedicated complaints page",
+          "status": "live",
+          "url": "https://charlestownmedicalpractice.co.uk/surgery-information/feedback-and-complaints/",
+          "notes": [
+            "The page gives a generic complaints procedure and says patients can phone the practice or visit the surgery to raise issues.",
+            "No GTD complaints-team contact details were obvious during this pass."
+          ]
+        }
+      ]
+    },
+    "stale_or_conflicting_signals": [
+      {
+        "label": "PATCHS vs Accurx wording",
+        "status": "broken_or_suspect",
+        "notes": [
+          "The direct online request route is PATCHS, but the NHS App instructions still point to Accurx."
+        ]
+      },
+      {
+        "label": "Multiple prescription-era systems remain visible",
+        "status": "broken_or_suspect",
+        "notes": [
+          "The prescriptions page still mentions Patient Access while also referencing PATCHS for nominated pharmacy changes."
+        ]
+      }
+    ]
+  },
+  "analyst_notes": {
+    "probably_true": [
+      "PATCHS is probably the current direct patient request platform.",
+      "Charlestown is still exposing more legacy and mixed-system language than the standard GTD microsites."
+    ],
+    "needs_follow_up": [
+      "Whether the NHS App genuinely still hands Charlestown requests to Accurx or whether that wording is just stale.",
+      "Whether Patient Access is still operational for repeat prescriptions here or simply left in the copy."
+    ]
+  },
+  "source_pages": [
+    "https://charlestownmedicalpractice.co.uk/",
+    "https://charlestownmedicalpractice.co.uk/appointments/",
+    "https://charlestownmedicalpractice.co.uk/prescriptions/",
+    "https://charlestownmedicalpractice.co.uk/contact-us/",
+    "https://charlestownmedicalpractice.co.uk/surgery-information/feedback-and-complaints/"
+  ]
+}

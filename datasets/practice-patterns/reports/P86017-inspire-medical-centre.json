@@ -1,0 +1,190 @@
+{
+  "report_version": "0.2",
+  "practice": {
+    "ods_code": "P86017",
+    "practice_name": "Inspire Medical Centre",
+    "website_url": "https://www.inspiremedicalcentre.co.uk/",
+    "website_identity": "standalone practice domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/inspire-medical-centre/P86017",
+    "telephone": "01706 664160",
+    "postcode": "OL16 2UY",
+    "registered_patient_count": 4604,
+    "google_review_score": 1.8,
+    "google_review_count": 42
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual review of the live website with NHS profile and selected repo evidence"
+  },
+  "headline": "Inspire Medical Centre uses the same broad supplier pattern as Pennine, but the patient experience it advertises feels much harsher. The site is another My Surgery Website build with PATCHS for routine requests and NHS App for basic services, yet urgent access is heavily phone-led, complaints are buried behind a feedback detour, and the overall copy carries more friction and more punitive signals.",
+  "current_picture": {
+    "live_stack": [
+      {
+        "label": "Public website stack",
+        "status": "live",
+        "platform": "My Surgery Website",
+        "evidence": [
+          "The site structure and cookie behavior match My Surgery Website.",
+          "It lives on a standalone practice domain rather than a shared host."
+        ]
+      },
+      {
+        "label": "Current online request platform for routine access",
+        "status": "live",
+        "platform": "PATCHS",
+        "evidence": [
+          "The appointments and online-services pages link to https://patchs.ai/practice/inspiremedical/.",
+          "The site frames PATCHS as the route for routine or advanced appointment requests rather than the whole front door."
+        ]
+      },
+      {
+        "label": "App route",
+        "status": "claimed_by_website",
+        "platform": "NHS App",
+        "evidence": [
+          "The homepage promotes NHS App for appointments and repeat prescriptions.",
+          "The site treats NHS App as a standard route but not as the main triage system."
+        ]
+      }
+    ],
+    "current_routes": [
+      {
+        "label": "Urgent appointment route",
+        "status": "claimed_by_website",
+        "kind": "same-day phone-led triage",
+        "url": "https://www.inspiremedicalcentre.co.uk/appointments",
+        "notes": [
+          "Urgent appointments are said to be booked on the day by phone from 8am.",
+          "The page also says patients can phone or visit reception for same-day help."
+        ]
+      },
+      {
+        "label": "Routine appointment route",
+        "status": "live",
+        "kind": "PATCHS-led routine request intake",
+        "url": "https://patchs.ai/practice/inspiremedical/",
+        "notes": [
+          "Routine and advanced appointments are routed online through PATCHS.",
+          "The appointments page says these become telephone or face-to-face appointments if booked."
+        ]
+      },
+      {
+        "label": "Prescriptions",
+        "status": "live",
+        "kind": "repeat medication routes",
+        "url": "https://www.inspiremedicalcentre.co.uk/prescriptions",
+        "notes": [
+          "The page offers NHS App, pharmacy ordering, and PATCHS-related online routes.",
+          "It explicitly says repeat prescription requests are not taken over the telephone.",
+          "It says collection from reception should only happen between 5:30pm and 6:30pm if patients still choose to collect there."
+        ]
+      },
+      {
+        "label": "Appointment outcomes described by the site",
+        "status": "claimed_by_website",
+        "kind": "post-triage contact mode",
+        "url": "https://www.inspiremedicalcentre.co.uk/appointments",
+        "notes": [
+          "The site says patients may be seen by phone, face-to-face, video call, text or email."
+        ]
+      }
+    ],
+    "complaints_and_feedback": {
+      "headline": "The visible complaints route is weaker than the access route and is partly buried behind feedback language.",
+      "items": [
+        {
+          "label": "Feedback and complaints page",
+          "status": "live",
+          "url": "https://www.inspiremedicalcentre.co.uk/feedback--complaints",
+          "notes": [
+            "The main page leans on feedback and Friends and Family content.",
+            "It does not present a clear complaints procedure on the surface."
+          ]
+        },
+        {
+          "label": "Leave feedback page complaint guidance",
+          "status": "live",
+          "url": "https://www.inspiremedicalcentre.co.uk/leave-feedback",
+          "notes": [
+            "The page says official complaints cannot be dealt with via the suggestions form.",
+            "Patients are then told to telephone the practice and speak to the practice manager."
+          ]
+        }
+      ]
+    },
+    "stale_or_conflicting_signals": [
+      {
+        "label": "PATCHS is present but not sufficient on its own",
+        "status": "claimed_by_website",
+        "notes": [
+          "PATCHS exists, but urgent and same-day access still looks dominated by phone and reception.",
+          "That makes Inspire a useful counterexample to any simple claim that PATCHS itself produces better access."
+        ]
+      },
+      {
+        "label": "Punitive missed-appointment wording",
+        "status": "live",
+        "notes": [
+          "The appointments page warns that persistent failure to attend appointments will result in removal from the practice list."
+        ]
+      }
+    ]
+  },
+  "repo_signals": {
+    "gpps_2025_26": {
+      "headline": "Inspire is weak across almost every access measure.",
+      "metrics": [
+        {
+          "label": "overall_good",
+          "practice_percent": 52,
+          "ics_percent": 77
+        },
+        {
+          "label": "contact_good",
+          "practice_percent": 45,
+          "ics_percent": 72
+        },
+        {
+          "label": "phone_easy",
+          "practice_percent": 38,
+          "ics_percent": 57
+        },
+        {
+          "label": "website_easy",
+          "practice_percent": 29,
+          "ics_percent": 54
+        },
+        {
+          "label": "app_easy",
+          "practice_percent": 31,
+          "ics_percent": 52
+        }
+      ]
+    },
+    "google_review_texts": {
+      "headline": "The captured review sample is dominated by complaints about waiting times, failed appointment access and rude reception handling.",
+      "notes": [
+        "Recent one-star reviews repeatedly describe long waits, inability to get appointments and poor reception behavior.",
+        "That lines up more with the phone-led urgent workflow than with the presence of PATCHS."
+      ]
+    }
+  },
+  "analyst_notes": {
+    "probably_true": [
+      "Inspire is a strong example of why platform name alone is not enough; the same supplier mix can coexist with much worse public experience.",
+      "The site reads as more restrictive and more punitive than Pennine even though they share My Surgery Website and PATCHS."
+    ],
+    "needs_follow_up": [
+      "Whether PATCHS is used only for routine requests or more broadly than the public copy implies.",
+      "Whether complaints can be raised in writing anywhere obvious on the public site rather than only by phone to the manager."
+    ]
+  },
+  "source_pages": [
+    "https://www.inspiremedicalcentre.co.uk/",
+    "https://www.inspiremedicalcentre.co.uk/online-services",
+    "https://www.inspiremedicalcentre.co.uk/appointments",
+    "https://www.inspiremedicalcentre.co.uk/prescriptions",
+    "https://www.inspiremedicalcentre.co.uk/feedback--complaints",
+    "https://www.inspiremedicalcentre.co.uk/leave-feedback"
+  ]
+}
