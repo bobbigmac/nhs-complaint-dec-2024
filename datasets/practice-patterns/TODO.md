@@ -37,7 +37,7 @@ Ranking basis for the wider-pool queue:
 - [x] `P82013001` Dr Y Loomba & Partner
 - [x] `P89020` HT Practice
 - [x] `Y02755001` Rock@Radcliffe
-- [ ] `G3K4Y` Corkland Road Medical Practice
+- [x] `G3K4Y` Corkland Road Medical Practice
 - [ ] `P85612` Werneth Medical Practice
 - [ ] `P84047001` Droylsden Road Surgery Branch
 - [x] `Y02755` Rock Healthcare Limited

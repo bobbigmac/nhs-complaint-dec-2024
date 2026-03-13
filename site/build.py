@@ -7,6 +7,8 @@ import json
 import posixpath
 import re
 import shutil
+import subprocess
+import sys
 import zipfile
 from datetime import UTC, datetime
 from pathlib import Path, PurePosixPath
@@ -30,6 +32,14 @@ INQUIRY_LINK_DUMP_SOURCE = "datasets/context/GTD_INQUIRY_LINKS.txt"
 ORG_NAVIGATOR_SOURCE = "datasets/management_companies/output/company_watchlist_report.md"
 ORG_METHOD_SOURCE = "datasets/management_companies/management-companies.md"
 ORG_WATCHLIST_SOURCE = "datasets/management_companies/watchlist.json"
+PRACTICE_PATTERNS_DIR = REPO_ROOT / "datasets" / "practice-patterns"
+PRACTICE_PATTERNS_BUILD_SCRIPT = PRACTICE_PATTERNS_DIR / "build_platform_survey_snapshot.py"
+PRACTICE_PATTERNS_OUTPUT_DIR = PRACTICE_PATTERNS_DIR / "output"
+PRACTICE_PATTERNS_REPORTS_DIR = PRACTICE_PATTERNS_DIR / "reports"
+PRACTICE_PATTERNS_SITE_DIR = "practice-patterns"
+PRACTICE_PATTERNS_RANKINGS_HREF = (
+    f"{PRACTICE_PATTERNS_SITE_DIR}/output/reviewed_practice_relative_rankings.html"
+)
 
 
 ISSUE_SECTIONS: list[dict[str, object]] = [
@@ -184,6 +194,18 @@ ISSUE_SECTIONS: list[dict[str, object]] = [
                     {"label": "PDF analysis", "source": "google-vs-patient-survey/GTD Greater Manchester GP Practice Experience - Google vs Patient Survey Gap.pdf"},
                 ],
             },
+            {
+                "title": "Practice patterns relative rankings",
+                "description": "Interactive cohort view of the reviewed practice-pattern reports, with expandable per-practice task and issue summaries.",
+                "links": [
+                    {"label": "Open rankings", "href": f"{PRACTICE_PATTERNS_SITE_DIR}/", "variant": "primary"},
+                    {
+                        "label": "Merged JSON",
+                        "href": f"{PRACTICE_PATTERNS_SITE_DIR}/output/reviewed_practice_platform_survey_merge.json",
+                        "variant": "secondary",
+                    },
+                ],
+            },
         ],
     },
     {
@@ -293,6 +315,11 @@ VIEW_CARDS: list[dict[str, object]] = [
         "description": "Open the operator-profile view for GTD, peers, previous providers and management-company clusters.",
         "links": [("Open org navigator", "org-navigator/", "primary")],
         "source": ORG_NAVIGATOR_SOURCE,
+    },
+    {
+        "title": "Practice patterns",
+        "description": "Open the reviewed practice cohort ranking with expandable per-practice website, task and issue overviews.",
+        "links": [("Open rankings", f"{PRACTICE_PATTERNS_SITE_DIR}/", "primary")],
     },
 ]
 
@@ -557,7 +584,7 @@ def collect_published_sources() -> list[Path]:
     sources: dict[str, Path] = {}
     for section in ISSUE_SECTIONS:
         for resource in section["resources"]:
-            for file_meta in resource["files"]:
+            for file_meta in resource.get("files", []):
                 source = resolve_source_path(str(file_meta["source"]))
                 sources[str(source)] = source
     for resource in REFERENCE_DOCS:
@@ -857,6 +884,21 @@ def copy_static_assets(out_dir: Path) -> None:
     shutil.copytree(assets_src, assets_dst)
 
 
+def build_practice_patterns() -> None:
+    subprocess.run(
+        [sys.executable, str(PRACTICE_PATTERNS_BUILD_SCRIPT)],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+
+
+def publish_practice_patterns(out_dir: Path) -> None:
+    site_root = out_dir / PRACTICE_PATTERNS_SITE_DIR
+    shutil.copytree(PRACTICE_PATTERNS_OUTPUT_DIR, site_root / "output")
+    shutil.copytree(PRACTICE_PATTERNS_REPORTS_DIR, site_root / "reports")
+    write_redirect_file(site_root, "output/reviewed_practice_relative_rankings.html")
+
+
 def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> None:
     template = load_template("base.html")
     updated_value = summary.get("generated_date") or datetime.now(UTC).date().isoformat()
@@ -905,6 +947,7 @@ def write_redirect_file(out_dir: Path, target: str) -> None:
 def build_site(out_dir: Path) -> Path:
     report_dir = find_latest_report_dir()
     summary = load_summary(report_dir)
+    build_practice_patterns()
 
     if out_dir.exists():
         shutil.rmtree(out_dir)
@@ -912,6 +955,7 @@ def build_site(out_dir: Path) -> Path:
 
     copy_static_assets(out_dir)
     write_page(out_dir, report_dir, summary)
+    publish_practice_patterns(out_dir)
 
     map_out_dir = out_dir / "map"
     shutil.copytree(report_dir, map_out_dir)

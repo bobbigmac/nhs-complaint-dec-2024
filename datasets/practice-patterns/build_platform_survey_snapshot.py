@@ -4,8 +4,11 @@ from __future__ import annotations
 import json
 import statistics
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
 from typing import Any
+
+from practice_rankings import build_relative_rankings, render_relative_rankings_html
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -14,6 +17,8 @@ RAW_GPPS_DIR = BASE_DIR.parent / "raw" / "gp_patient_survey"
 OUTPUT_DIR = BASE_DIR / "output"
 MERGED_JSON = OUTPUT_DIR / "reviewed_practice_platform_survey_merge.json"
 SUMMARY_MD = OUTPUT_DIR / "reviewed_practice_platform_survey_summary.md"
+RANKINGS_HTML = OUTPUT_DIR / "reviewed_practice_relative_rankings.html"
+GENERATED_AT = date.today().isoformat()
 
 SURVEY_KEYS = {
     "phone_easy": "LocalGpServicesPhone",
@@ -138,8 +143,8 @@ def derive_tags(report: dict[str, Any]) -> dict[str, Any]:
     text = "\n".join(collect_text_fragments(report)).lower()
     practice = report.get("practice", {})
     website_identity = str(practice.get("website_identity", "")).lower()
-    current_picture = report.get("current_picture", {})
-    live_stack = current_picture.get("live_stack", [])
+    website_stack_section = report.get("website_stack", {})
+    live_stack = website_stack_section.get("items", [])
 
     website_stack = None
     for item in live_stack:
@@ -147,6 +152,8 @@ def derive_tags(report: dict[str, Any]) -> dict[str, Any]:
         if "website stack" in label:
             website_stack = item.get("platform")
             break
+    if website_stack is None and live_stack:
+        website_stack = live_stack[0].get("platform")
 
     website_stack_text = str(website_stack or "").lower()
 
@@ -193,8 +200,9 @@ def derive_tags(report: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def build_row(report_path: Path) -> dict[str, Any]:
-    report = load_json(report_path)
+def build_row(report_path: Path, report: dict[str, Any] | None = None) -> dict[str, Any]:
+    if report is None:
+        report = load_json(report_path)
     practice = report.get("practice", {})
     ods_code = str(practice.get("ods_code", "")).strip()
     survey_path = survey_path_for_code(ods_code)
@@ -329,7 +337,7 @@ def rank_rows(rows: list[dict[str, Any]], metric_name: str, descending: bool = T
 def build_summary_payload(rows: list[dict[str, Any]]) -> dict[str, Any]:
     rows_with_survey = [row for row in rows if row.get("survey")]
     return {
-        "generated_at": "2026-03-13",
+        "generated_at": GENERATED_AT,
         "reviewed_report_count": len(rows),
         "reviewed_with_survey_count": len(rows_with_survey),
         "metrics_considered": METRICS_FOR_GROUPS,
@@ -363,6 +371,7 @@ def render_markdown(summary: dict[str, Any]) -> str:
     lines.append(f"- reviewed reports: `{summary['reviewed_report_count']}`")
     lines.append(f"- reviewed reports with GPPS data: `{summary['reviewed_with_survey_count']}`")
     lines.append(f"- generated_at: `{summary['generated_at']}`")
+    lines.append(f"- interactive relative rankings: `{RANKINGS_HTML.name}`")
     lines.append("")
     lines.append("## Website Stack Groups")
     lines.append("")
@@ -444,12 +453,21 @@ def render_markdown(summary: dict[str, Any]) -> str:
 
 def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    rows = [build_row(path) for path in sorted(REPORTS_DIR.glob("*.json"))]
+    reports_by_ods: dict[str, dict[str, Any]] = {}
+    rows: list[dict[str, Any]] = []
+    for path in sorted(REPORTS_DIR.glob("*.json")):
+        report = load_json(path)
+        row = build_row(path, report)
+        reports_by_ods[row["ods_code"]] = report
+        rows.append(row)
     summary = build_summary_payload(rows)
+    summary["relative_rankings"] = build_relative_rankings(rows, reports_by_ods, GENERATED_AT)
     MERGED_JSON.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     SUMMARY_MD.write_text(render_markdown(summary), encoding="utf-8")
+    RANKINGS_HTML.write_text(render_relative_rankings_html(summary["relative_rankings"]), encoding="utf-8")
     print(f"Wrote {MERGED_JSON}")
     print(f"Wrote {SUMMARY_MD}")
+    print(f"Wrote {RANKINGS_HTML}")
 
 
 if __name__ == "__main__":

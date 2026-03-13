@@ -2,6 +2,18 @@
 
 This folder is a manual evidence dump about how GP practices actually handle access through their public websites.
 
+## Essential Pre-Review Steps
+
+Before starting any practice review, complete these steps. Do not skip them.
+
+1. **Copy the local Firefox profile** into a disposable directory (e.g. `datasets/.tooling/firefox-profile-copy`). Use the same pattern as `datasets/collect_google_maps_reviews.py`: read `~/.mozilla/firefox/profiles.ini`, find the default profile, `shutil.copytree` it, excluding lock files and minidumps.
+2. **Launch Firefox with that profile copy** (headful, not headless). The profile copy ensures:
+   - Google and other sites treat the session as a real user; captchas and bot blocks are much less likely.
+   - Cookies and history from normal use reduce the chance of "sorry" pages or verification prompts.
+3. **Use that Firefox session** as the primary review instrument. Do not use a fresh/empty browser profile or a Chromium-based automation tool as the main source for search or site traversal.
+
+If the profile copy step is skipped, search will often hit captchas and the patient experience will not be accurately observed.
+
 ## Purpose
 
 - map the patient-facing front door for each practice

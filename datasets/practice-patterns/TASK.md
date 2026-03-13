@@ -17,6 +17,16 @@ You are trying to understand the patient-facing routes, platforms, burdens, cont
 Work on one practice only.
 Finish that practice's report before moving on.
 
+## Essential Pre-Review Steps
+
+Before starting, complete these steps (see AGENTS.md for detail):
+
+1. Copy the local Firefox profile into a disposable directory.
+2. Launch Firefox with that profile copy (headful).
+3. Use that Firefox session as the primary review instrument.
+
+Skipping the profile copy leads to captchas on Google and other sites, distorting the patient experience.
+
 ## Core Rules
 
 - Use interactive Firefox as the primary instrument.
@@ -119,6 +129,7 @@ Pay attention to:
 - whether the site bundles admin and clinical tasks in one route
 - whether the patient must guess between PATCHS, Accurx, askmyGP, NHS App, local forms, phone, or reception
 - whether the wording feels clear, jargon-heavy, punitive, or stale
+- cookie/consent popups or viewport blockers (count when encountered; minimal note, not a critique)
 
 ## Report Output
 
@@ -139,6 +150,7 @@ The fields do not need to be identical every time, but the report should usually
 - `encountered_issues`
 - `analyst_notes`
 - `source_pages`
+- `cookie_popups_encountered` (optional; from crawl when available)
 
 Useful principles for the JSON:
 

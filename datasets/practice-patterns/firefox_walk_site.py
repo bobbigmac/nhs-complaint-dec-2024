@@ -120,6 +120,25 @@ def normalize_url(base_url: str, href: str) -> str | None:
     return absolute
 
 
+def detect_cookie_popup(driver: webdriver.Firefox) -> bool:
+    """Heuristic: likely cookie/consent banner visible. Minimal check, not exhaustive."""
+    try:
+        return driver.execute_script(
+            """
+            var sel = '[id*="cookie"],[class*="cookie"],[class*="consent"],[class*="gdpr"],[class*="banner"]';
+            var els = document.querySelectorAll(sel);
+            var body = (document.body && document.body.innerText) ? document.body.innerText.toLowerCase() : '';
+            for (var i = 0; i < els.length; i++) {
+                var t = ((els[i].innerText || els[i].textContent) || '').toLowerCase();
+                if ((t.indexOf('accept') >= 0 || t.indexOf('reject') >= 0) && (t.indexOf('cookie') >= 0 || t.length < 500)) return true;
+            }
+            return body.indexOf('accept analytics cookies') >= 0 || body.indexOf('reject analytics cookies') >= 0;
+            """
+        )
+    except Exception:
+        return False
+
+
 def extract_links(driver: webdriver.Firefox, current_url: str, base_netloc: str) -> list[dict[str, str]]:
     raw_links: list[dict[str, Any]] = driver.execute_script(
         """
@@ -183,12 +202,14 @@ def crawl_site(
         start = time.perf_counter()
         encountered_at = iso_now()
         error = None
+        cookie_popup = False
         try:
             driver.get(url)
             wait_until_ready(driver, timeout_seconds)
             title = driver.title
             current_url = driver.current_url
             load_ms = round((time.perf_counter() - start) * 1000, 1)
+            cookie_popup = detect_cookie_popup(driver)
             links = extract_links(driver, current_url, base_netloc)
         except (TimeoutException, WebDriverException) as exc:
             title = ""
@@ -205,6 +226,7 @@ def crawl_site(
             "encountered_at": encountered_at,
             "load_ms": load_ms,
             "error": error,
+            "cookie_popup": cookie_popup,
             "links": summarize_discovered_paths(current_url, links, encountered_at),
         }
 
@@ -381,9 +403,12 @@ def main() -> None:
     text = json.dumps(payload, indent=2)
     if args.output:
         Path(args.output).write_text(text, encoding="utf-8")
+        pages = payload.get("crawl", {}).get("pages", [])
+        cookie_count = sum(1 for p in pages if p.get("cookie_popup"))
         summary = {
             "output": args.output,
-            "visited_pages": len(payload.get("crawl", {}).get("pages", [])),
+            "visited_pages": len(pages),
+            "cookie_popups_encountered": cookie_count,
             "target_routes": payload.get("target_routes", {}),
         }
         print(json.dumps(summary, indent=2))
