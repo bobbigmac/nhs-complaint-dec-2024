@@ -1592,6 +1592,14 @@ body {{
   background: rgba(255,255,255,0.72);
   padding: 12px 14px;
 }}
+.comparison-card.is-baseline {{
+  border-color: rgba(15, 94, 156, 0.28);
+  background: rgba(240, 247, 255, 0.9);
+}}
+.comparison-card.is-selected {{
+  border-color: rgba(178, 83, 34, 0.24);
+  background: rgba(255, 249, 242, 0.92);
+}}
 .comparison-card h3 {{
   margin: 0 0 8px;
   font-size: 17px;
@@ -1671,8 +1679,7 @@ body {{
 .comparison-label {{
   font-size: 12px;
   color: rgba(26, 28, 26, 0.68);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font-weight: 700;
 }}
 .comparison-stat strong {{
   display: block;
@@ -1876,6 +1883,7 @@ const knownManagementCompanies = {json.dumps(known_management_companies)};
 const deprivationGeojson = {json.dumps(deprivation_geojson, separators=(",", ":"))};
 const rowsByCode = new Map(rows.map((row) => [row.code, row]));
 const NEW_BANK_CODE = 'Y02960';
+const BASELINE_MANAGEMENT_COMPANY = 'GTD Healthcare';
 const TREND_DEFAULT_CONTEXT_CODE = '__gtd_mean_with_new_bank__';
 const LOCAL_RADIUS_MILES = 2.5;
 const SIDEBAR_COLLAPSE_KEY = 'mapSidebarCollapsed';
@@ -1899,7 +1907,7 @@ L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
   attribution: '&copy; OpenStreetMap contributors'
 }}).addTo(map);
 const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
-const selectedManagementCompanies = new Set(['GTD Healthcare']);
+const selectedManagementCompanies = new Set([BASELINE_MANAGEMENT_COMPANY]);
 let activeMetric = 'google';
 let activeAreaOverlay = null;
 let focusedPracticeCode = NEW_BANK_CODE;
@@ -2353,19 +2361,26 @@ function renderManagementList() {{
   container.innerHTML = '';
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
-  document.getElementById('manager-hint').textContent = `Select up to ${{managementShapePool.length}} management companies. Selected groups get distinct shapes and show their current ${{metric.title.toLowerCase()}} average.`;
+  document.getElementById('manager-hint').textContent = `GTD stays on as the baseline. Add up to ${{managementShapePool.length - 1}} more management companies to compare their average ${{metric.title.toLowerCase()}} with GTD.`;
   for (const company of managementCompanies) {{
     const checked = selectedManagementCompanies.has(company.name);
+    const isBaselineCompany = company.name === BASELINE_MANAGEMENT_COMPANY;
     const shape = assignments.get(company.name) || 'circle';
     const average = metric.averageLabel(averageMetric(company.rows, activeMetric));
     const row = document.createElement('label');
     row.className = 'manager-option';
-    row.title = `${{company.name}} · ${{average}} avg · ${{company.count}} practices`;
+    row.title = isBaselineCompany
+      ? `${{company.name}} · baseline company · ${{average}} avg · ${{company.count}} practices`
+      : `${{company.name}} · ${{average}} avg · ${{company.count}} practices`;
     row.innerHTML = `
-      <input type="checkbox" ${{checked ? 'checked' : ''}} data-company="${{company.name}}">
+      <input type="checkbox" ${{checked ? 'checked' : ''}} ${{isBaselineCompany ? 'disabled' : ''}} data-company="${{company.name}}">
       <span class="manager-name"><span class="swatch ${{shape}}" style="background:${{checked ? 'var(--midhigh)' : 'var(--missing)'}}; display:inline-block; margin-right:8px;"></span><span class="manager-name-text">${{company.name}}</span></span>
       <span class="manager-meta">${{average}} avg · ${{company.count}}</span>
     `;
+    if (isBaselineCompany) {{
+      container.appendChild(row);
+      continue;
+    }}
     row.querySelector('input').addEventListener('change', (event) => {{
       if (event.target.checked) {{
         if (selectedManagementCompanies.size >= managementShapePool.length) {{
@@ -2763,9 +2778,10 @@ function benchmarkStats(subjectRows, localRows, regionalRows, metricName, subjec
   }};
 }}
 
-function comparisonCardMarkup(title, kicker, summary, rowsMarkup) {{
+function comparisonCardMarkup(title, kicker, summary, rowsMarkup, variant = '') {{
+  const cardClass = ['comparison-card', variant].filter(Boolean).join(' ');
   return `
-    <article class="comparison-card">
+    <article class="${{cardClass}}">
       <h3>${{title}}</h3>
       <p class="comparison-kicker">${{kicker}}</p>
       <div class="comparison-summary">${{summary}}</div>
@@ -2809,6 +2825,20 @@ function countUnitLabel(count, pluralUnit) {{
   return pluralUnit;
 }}
 
+function metricScopeLabel(metricName) {{
+  if (metricName === 'google') return 'Google rating';
+  if (metricName === 'survey') return 'patient survey overall good %';
+  return 'survey/Google gap';
+}}
+
+function nearbyLabelForMode(subjectMode) {{
+  return subjectMode === 'group' ? 'nearby non-company average' : 'nearby average';
+}}
+
+function widerLabel() {{
+  return 'the wider map average';
+}}
+
 function rankBarMarkup(countStats, pluralUnit) {{
   if (!countStats) return '';
   const better = Number(countStats.better || 0);
@@ -2829,147 +2859,200 @@ function rankBarMarkup(countStats, pluralUnit) {{
   `;
 }}
 
-function renderComparisons() {{
+function practiceComparisonCard(row, title, kicker, variant = '') {{
   const metric = metricConfigs[activeMetric];
+  const localRows = rows.filter((candidate) =>
+    candidate.code !== row.code &&
+    distanceMiles(row.lat, row.lon, candidate.lat, candidate.lon) <= LOCAL_RADIUS_MILES
+  );
+  const regionalRows = rows.filter((candidate) => candidate.code !== row.code);
+  const stats = benchmarkStats([row], localRows, regionalRows, activeMetric, 'single');
+  const summary = stats.subjectValue === null
+    ? `<p>${{title}} does not have enough ${{metric.title.toLowerCase()}} data yet.</p>`
+    : (() => {{
+        const localPhrase = benchmarkPhrase(stats.subjectValue, stats.localMedian, activeMetric, nearbyLabelForMode('single'));
+        const regionalPhrase = benchmarkPhrase(stats.subjectValue, stats.regionalMedian, activeMetric, widerLabel());
+        const percentilePhrase = stats.regionalPercentile === null
+          ? ''
+          : ` It sits around the ${{Math.round(stats.regionalPercentile)}}th percentile on this map.`;
+        return `<p>On ${{metricScopeLabel(activeMetric)}}, ${{title}} is ${{localPhrase}} and ${{regionalPhrase}}.${{percentilePhrase}}</p>${{rankBarMarkup(stats.regionalPerformanceCounts, 'practices')}}`;
+      }})();
+  return comparisonCardMarkup(
+    title,
+    kicker,
+    summary,
+    [
+      comparisonRowMarkup(
+        'Current score',
+        'This practice',
+        formatMetricValue(stats.subjectValue, activeMetric),
+        stats.subjectCount ? `${{stats.subjectCount}} usable value` : '',
+        metricToneClass(activeMetric, stats.subjectValue),
+        'Nearby average',
+        formatMetricValue(stats.localMedian, activeMetric),
+        `${{stats.localCount}} peers`,
+        metricToneClass(activeMetric, stats.localMedian),
+        'Wider map average',
+        formatMetricValue(stats.regionalMedian, activeMetric),
+        `${{stats.regionalCount}} peers`,
+        metricToneClass(activeMetric, stats.regionalMedian),
+        stats.localMedian === null && stats.regionalMedian === null
+          ? 'No comparison available yet'
+          : `Nearby: ${{deltaSentence(stats.subjectValue, stats.localMedian, activeMetric)}}. Wider map: ${{deltaSentence(stats.subjectValue, stats.regionalMedian, activeMetric)}}.`,
+        deltaToneClass(stats.subjectValue, stats.regionalMedian ?? stats.localMedian, activeMetric)
+      ),
+      comparisonRowMarkup(
+        'Survey reply rate',
+        'This practice',
+        formatMetricValue(stats.completionValue, 'survey'),
+        '',
+        metricToneClass('survey', stats.completionValue),
+        'Nearby average',
+        formatMetricValue(stats.completionLocalMedian, 'survey'),
+        `${{stats.completionLocalCount}} peers`,
+        metricToneClass('survey', stats.completionLocalMedian),
+        'Wider map average',
+        formatMetricValue(stats.completionRegionalMedian, 'survey'),
+        `${{stats.completionRegionalCount}} peers`,
+        metricToneClass('survey', stats.completionRegionalMedian),
+        stats.completionRegionalPercentile === null
+          ? 'Reply-rate comparison unavailable'
+          : `Reply rate sits around the ${{Math.round(stats.completionRegionalPercentile)}}th percentile on this map.`,
+        deltaToneClass(stats.completionValue, stats.completionRegionalMedian ?? stats.completionLocalMedian, 'survey')
+      )
+    ].join(''),
+    variant
+  );
+}}
+
+function managementCompanyComparisonCard(company, title, kicker, variant = '') {{
+  const metric = metricConfigs[activeMetric];
+  const companyRows = company.rows;
+  const companyOtherRows = rows.filter((row) => row.management_company !== company.name);
+  const companyLocalRows = companyOtherRows.filter((row) =>
+    companyRows.some((companyRow) => distanceMiles(companyRow.lat, companyRow.lon, row.lat, row.lon) <= LOCAL_RADIUS_MILES)
+  );
+  const stats = benchmarkStats(companyRows, companyLocalRows, companyOtherRows, activeMetric, 'group');
+  const otherManagementCompanyValues = managementCompanies
+    .filter((candidate) => candidate.name !== company.name)
+    .map((candidate) => averageMetric(candidate.rows, activeMetric))
+    .filter((value) => value !== null);
+  const companyManagementPercentile = performancePercentile(otherManagementCompanyValues, stats.subjectValue, activeMetric);
+  const companyManagementCounts = performanceCounts(otherManagementCompanyValues, stats.subjectValue, activeMetric);
+  const summary = stats.subjectValue === null
+    ? `<p>${{title}} does not have enough ${{metric.title.toLowerCase()}} data yet.</p>`
+    : (() => {{
+        const localPhrase = benchmarkPhrase(stats.subjectValue, stats.localMedian, activeMetric, nearbyLabelForMode('group'));
+        const regionalPhrase = benchmarkPhrase(stats.subjectValue, stats.regionalMedian, activeMetric, widerLabel());
+        const percentilePhrase = companyManagementPercentile === null
+          ? ''
+          : ` It sits around the ${{Math.round(companyManagementPercentile)}}th percentile against the other management companies on this map.`;
+        return `<p>On ${{metricScopeLabel(activeMetric)}}, ${{title}} is ${{localPhrase}} and ${{regionalPhrase}}.${{percentilePhrase}}</p>${{rankBarMarkup(companyManagementCounts, 'management companies')}}`;
+      }})();
+  return comparisonCardMarkup(
+    title,
+    kicker,
+    summary,
+    [
+      comparisonRowMarkup(
+        'Current average',
+        'Company average',
+        formatMetricValue(stats.subjectValue, activeMetric),
+        `${{stats.subjectCount}} practices with data`,
+        metricToneClass(activeMetric, stats.subjectValue),
+        'Nearby others',
+        formatMetricValue(stats.localMedian, activeMetric),
+        `${{stats.localCount}} peers`,
+        metricToneClass(activeMetric, stats.localMedian),
+        'Wider map average',
+        formatMetricValue(stats.regionalMedian, activeMetric),
+        `${{stats.regionalCount}} peers`,
+        metricToneClass(activeMetric, stats.regionalMedian),
+        stats.localMedian === null && stats.regionalMedian === null
+          ? 'No comparison available yet'
+          : `Nearby others: ${{deltaSentence(stats.subjectValue, stats.localMedian, activeMetric)}}. Wider map: ${{deltaSentence(stats.subjectValue, stats.regionalMedian, activeMetric)}}.`,
+        deltaToneClass(stats.subjectValue, stats.regionalMedian ?? stats.localMedian, activeMetric)
+      ),
+      comparisonRowMarkup(
+        'Survey reply rate',
+        'Company average',
+        formatMetricValue(stats.completionValue, 'survey'),
+        `${{metricValues(companyRows, 'survey', (row) => numericOrNull(row.survey_completion_rate_percent)).length}} practices with data`,
+        metricToneClass('survey', stats.completionValue),
+        'Nearby others',
+        formatMetricValue(stats.completionLocalMedian, 'survey'),
+        `${{stats.completionLocalCount}} peers`,
+        metricToneClass('survey', stats.completionLocalMedian),
+        'Wider map average',
+        formatMetricValue(stats.completionRegionalMedian, 'survey'),
+        `${{stats.completionRegionalCount}} peers`,
+        metricToneClass('survey', stats.completionRegionalMedian),
+        stats.completionRegionalPercentile === null
+          ? 'Reply-rate comparison unavailable'
+          : `Reply rate sits around the ${{Math.round(stats.completionRegionalPercentile)}}th percentile on this map.`,
+        deltaToneClass(stats.completionValue, stats.completionRegionalMedian ?? stats.completionLocalMedian, 'survey')
+      )
+    ].join(''),
+    variant
+  );
+}}
+
+function renderComparisons() {{
   const grid = document.getElementById('comparison-grid');
   const note = document.getElementById('comparison-note');
   const heading = document.getElementById('comparison-heading');
-  const focusedPractice = rows.find((row) => row.code === focusedPracticeCode)
-    || rows.find((row) => row.code === NEW_BANK_CODE)
-    || rows[0];
-  const selectedCompanies = managementCompanies.filter((company) => selectedManagementCompanies.has(company.name));
-  const metricScope = activeMetric === 'google'
-    ? 'Google rating'
-    : activeMetric === 'survey'
-      ? 'GP Patient Survey overall-good %'
-      : 'Survey/Google gap indicator';
-  heading.textContent = `Interactive Benchmarks for ${{metricScope}}`;
-  note.textContent = `Current benchmark metric: ${{metricScope}}. The first card follows the most recently clicked practice on the map. Each selected management company gets its own card below. Nearby means other practices within ${{LOCAL_RADIUS_MILES.toFixed(1)}} miles. Company headline better/worse counts are compared with other management companies, not individual practices.`;
-  const metricSummary = (label, stats, percentileValue, countNoun, countStats, percentileTarget) => {{
-    if (!stats || stats.subjectValue === null) return `<p>${{label}} does not have enough ${{metric.title.toLowerCase()}} data yet.</p>`;
-    const localPhrase = benchmarkPhrase(stats.subjectValue, stats.localMedian, activeMetric, 'nearby');
-    const regionalPhrase = benchmarkPhrase(stats.subjectValue, stats.regionalMedian, activeMetric, 'rest-of-dataset');
-    const percentilePhrase = percentileValue === null ? '' : ` It ranks around the ${{Math.round(percentileValue)}}th percentile against ${{percentileTarget}}.`;
-    const rankBar = rankBarMarkup(countStats, countNoun);
-    return `<p>${{label}} is ${{localPhrase}} and ${{regionalPhrase}} on the current benchmark metric, ${{metric.title.toLowerCase()}}.${{percentilePhrase}}</p>${{rankBar}}`;
-  }};
+  const baselinePractice = rows.find((row) => row.code === NEW_BANK_CODE) || rows[0];
+  const focusedPractice = rows.find((row) => row.code === focusedPracticeCode) || baselinePractice;
+  const baselineCompany = managementCompanies.find((company) => company.name === BASELINE_MANAGEMENT_COMPANY) || null;
+  const selectedCompanies = managementCompanies.filter((company) =>
+    selectedManagementCompanies.has(company.name) && company.name !== BASELINE_MANAGEMENT_COMPANY
+  );
+  heading.textContent = `Quick comparisons: ${{metricScopeLabel(activeMetric)}}`;
+  note.textContent = `New Bank and GTD always stay visible here. Click a practice on the map to compare it with New Bank. Use the management tickboxes to compare other companies with GTD. “Nearby” means within ${{LOCAL_RADIUS_MILES.toFixed(1)}} miles.`;
 
-  const practiceCard = !focusedPractice
-    ? comparisonCardMarkup('Practice benchmark', 'No focused practice', 'Click a practice on the map to benchmark it here.', '')
-    : (() => {{
-        const localRows = rows.filter((row) =>
-          row.code !== focusedPractice.code &&
-          distanceMiles(focusedPractice.lat, focusedPractice.lon, row.lat, row.lon) <= LOCAL_RADIUS_MILES
-        );
-        const regionalRows = rows.filter((row) => row.code !== focusedPractice.code);
-        const practiceStats = benchmarkStats([focusedPractice], localRows, regionalRows, activeMetric, 'single');
-        return comparisonCardMarkup(
-          focusedPractice.name,
-          `Focused practice · ${{focusedPractice.postcode}} · code ${{focusedPractice.code}}`,
-          metricSummary(focusedPractice.name, practiceStats, practiceStats.regionalPercentile, 'practices', practiceStats.regionalPerformanceCounts, 'the rest of the dataset'),
-          [
-            comparisonRowMarkup(
-              metric.title,
-              focusedPractice.name,
-              formatMetricValue(practiceStats.subjectValue, activeMetric),
-              practiceStats.subjectCount ? `${{practiceStats.subjectCount}} usable value` : '',
-              metricToneClass(activeMetric, practiceStats.subjectValue),
-              'Nearby typical',
-              formatMetricValue(practiceStats.localMedian, activeMetric),
-              `${{practiceStats.localCount}} peers`,
-              metricToneClass(activeMetric, practiceStats.localMedian),
-              'Rest of dataset typical',
-              formatMetricValue(practiceStats.regionalMedian, activeMetric),
-              `${{practiceStats.regionalCount}} peers`,
-              metricToneClass(activeMetric, practiceStats.regionalMedian),
-              practiceStats.localMedian === null && practiceStats.regionalMedian === null
-                ? 'No comparison available'
-                : `Against nearby: ${{deltaSentence(practiceStats.subjectValue, practiceStats.localMedian, activeMetric)}}. Against the rest: ${{deltaSentence(practiceStats.subjectValue, practiceStats.regionalMedian, activeMetric)}}.`,
-              deltaToneClass(practiceStats.subjectValue, practiceStats.regionalMedian ?? practiceStats.localMedian, activeMetric)
-            ),
-            comparisonRowMarkup(
-              'Survey completion',
-              focusedPractice.name,
-              formatMetricValue(practiceStats.completionValue, 'survey'),
-              '',
-              metricToneClass('survey', practiceStats.completionValue),
-              'Nearby typical',
-              formatMetricValue(practiceStats.completionLocalMedian, 'survey'),
-              `${{practiceStats.completionLocalCount}} peers`,
-              metricToneClass('survey', practiceStats.completionLocalMedian),
-              'Rest of dataset typical',
-              formatMetricValue(practiceStats.completionRegionalMedian, 'survey'),
-              `${{practiceStats.completionRegionalCount}} peers`,
-              metricToneClass('survey', practiceStats.completionRegionalMedian),
-              practiceStats.completionRegionalPercentile === null
-                ? 'Completion comparison unavailable'
-                : `Return rate ranks around the ${{Math.round(practiceStats.completionRegionalPercentile)}}th percentile across the dataset.`,
-              deltaToneClass(practiceStats.completionValue, practiceStats.completionRegionalMedian ?? practiceStats.completionLocalMedian, 'survey')
-            )
-          ].join('')
-        );
-      }})();
+  const cards = [
+    practiceComparisonCard(
+      baselinePractice,
+      baselinePractice.name,
+      `Baseline practice${{baselinePractice.postcode ? ` · ${{baselinePractice.postcode}}` : ''}}`,
+      'is-baseline'
+    )
+  ];
 
-  const companyCards = selectedCompanies.map((company) => {{
-    const companyRows = company.rows;
-    const companyOtherRows = rows.filter((row) => row.management_company !== company.name);
-    const companyLocalRows = companyOtherRows.filter((row) =>
-      companyRows.some((companyRow) => distanceMiles(companyRow.lat, companyRow.lon, row.lat, row.lon) <= LOCAL_RADIUS_MILES)
+  if (focusedPractice && focusedPractice.code !== baselinePractice.code) {{
+    cards.push(
+      practiceComparisonCard(
+        focusedPractice,
+        focusedPractice.name,
+        `Selected practice${{focusedPractice.postcode ? ` · ${{focusedPractice.postcode}}` : ''}}`,
+        'is-selected'
+      )
     );
-    const companyStats = benchmarkStats(companyRows, companyLocalRows, companyOtherRows, activeMetric, 'group');
-    const otherManagementCompanyValues = managementCompanies
-      .filter((candidate) => candidate.name !== company.name)
-      .map((candidate) => averageMetric(candidate.rows, activeMetric))
-      .filter((value) => value !== null);
-    const companyManagementPercentile = performancePercentile(otherManagementCompanyValues, companyStats.subjectValue, activeMetric);
-    const companyManagementCounts = performanceCounts(otherManagementCompanyValues, companyStats.subjectValue, activeMetric);
-    return comparisonCardMarkup(
-      company.name,
-      `${{company.count}} practices in the current dataset`,
-      metricSummary(`${{company.name}} average`, companyStats, companyManagementPercentile, 'management companies', companyManagementCounts, 'other management companies in this dataset'),
-      [
-        comparisonRowMarkup(
-          metric.title,
-          `${{company.name}} mean`,
-          formatMetricValue(companyStats.subjectValue, activeMetric),
-          `${{companyStats.subjectCount}} practices with data`,
-          metricToneClass(activeMetric, companyStats.subjectValue),
-          'Nearby non-company typical',
-          formatMetricValue(companyStats.localMedian, activeMetric),
-          `${{companyStats.localCount}} peers`,
-          metricToneClass(activeMetric, companyStats.localMedian),
-          'Rest of dataset typical',
-          formatMetricValue(companyStats.regionalMedian, activeMetric),
-          `${{companyStats.regionalCount}} peers`,
-          metricToneClass(activeMetric, companyStats.regionalMedian),
-          companyStats.localMedian === null && companyStats.regionalMedian === null
-            ? 'No comparison available'
-            : `Against nearby non-company practices: ${{deltaSentence(companyStats.subjectValue, companyStats.localMedian, activeMetric)}}. Against the rest: ${{deltaSentence(companyStats.subjectValue, companyStats.regionalMedian, activeMetric)}}.`,
-          deltaToneClass(companyStats.subjectValue, companyStats.regionalMedian ?? companyStats.localMedian, activeMetric)
-        ),
-        comparisonRowMarkup(
-          'Survey completion',
-          `${{company.name}} mean`,
-          formatMetricValue(companyStats.completionValue, 'survey'),
-          `${{metricValues(companyRows, 'survey', (row) => numericOrNull(row.survey_completion_rate_percent)).length}} practices with data`,
-          metricToneClass('survey', companyStats.completionValue),
-          'Nearby non-company typical',
-          formatMetricValue(companyStats.completionLocalMedian, 'survey'),
-          `${{companyStats.completionLocalCount}} peers`,
-          metricToneClass('survey', companyStats.completionLocalMedian),
-          'Rest of dataset typical',
-          formatMetricValue(companyStats.completionRegionalMedian, 'survey'),
-          `${{companyStats.completionRegionalCount}} peers`,
-          metricToneClass('survey', companyStats.completionRegionalMedian),
-          companyStats.completionRegionalPercentile === null
-            ? 'Completion comparison unavailable'
-            : `Return rate ranks around the ${{Math.round(companyStats.completionRegionalPercentile)}}th percentile across the dataset.`,
-          deltaToneClass(companyStats.completionValue, companyStats.completionRegionalMedian ?? companyStats.completionLocalMedian, 'survey')
-        )
-      ].join('')
+  }}
+
+  if (baselineCompany) {{
+    cards.push(
+      managementCompanyComparisonCard(
+        baselineCompany,
+        baselineCompany.name,
+        `Baseline management company · ${{baselineCompany.count}} practices`,
+        'is-baseline'
+      )
+    );
+  }}
+
+  selectedCompanies.forEach((company) => {{
+    cards.push(
+      managementCompanyComparisonCard(
+        company,
+        company.name,
+        `Selected management company · ${{company.count}} practices`,
+        'is-selected'
+      )
     );
   }});
-  grid.innerHTML = [practiceCard, ...companyCards].join('');
+
+  grid.innerHTML = cards.join('');
 }}
 
 function renderScatterplot() {{
