@@ -137,6 +137,18 @@ body {
 .tldr-heading { margin: 0 0 10px; font-size: 16px; font-weight: 600; color: var(--accent); }
 .tldr-content p { margin: 0 0 12px; }
 .tldr-content p:last-child { margin-bottom: 0; }
+.tldr-browse-hint { margin-top: 14px !important; }
+.tldr-toggle-summaries-btn {
+  padding: 6px 12px;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.tldr-toggle-summaries-btn:hover { filter: brightness(1.1); }
 .practice-header {
   display: flex;
   align-items: baseline;
@@ -241,6 +253,11 @@ body {
   .summary-report .distribution-bar .bar-rating-4 { background: repeating-linear-gradient(90deg, var(--high) 0, var(--high) 2px, transparent 2px, transparent 6px) !important; }
   .summary-report .distribution-bar .bar-rating-5 { background: repeating-linear-gradient(90deg, var(--veryhigh) 0, var(--veryhigh) 2px, transparent 2px, transparent 6px) !important; }
   .summary-report .distribution-bar .bar-rating-0 { background: repeating-linear-gradient(90deg, var(--missing) 0, var(--missing) 2px, transparent 2px, transparent 6px) !important; }
+  .summary-report .distribution-bar,
+  .summary-report .distribution-bar span {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }
 .summary-report .cited-reviews-details { margin-top: 16px; font-size: 13px; }
 .summary-report .cited-reviews-details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
@@ -705,11 +722,20 @@ body {
       <p>Across reviews of GTD-managed practices, the main pattern is cumulative failure rather than one isolated complaint. Reviewers describe practices that are hard to reach, hard to navigate, and often hard to rely on once contact is made. Problems with access, front-desk handling, admin follow-through, referrals, medicines, tests, and continuity tend to stack together, so frustration is often described not as delay alone but as a service that feels obstructive, fragmented, and unreliable.</p>
       <p>Some themes carry particular weight. Front-desk interactions are a major source of distrust because reviewers often feel blocked, dismissed, or embarrassed at the very point they are trying to enter care. Admin and referral problems matter because they appear to distort care after contact, with patients describing lost paperwork, missed follow-up, and having to coordinate the system themselves. Medicines, tests, and parts of clinical care push the concern further, because the reviews there are often about risk as much as inconvenience.</p>
       <p>The positive reviews do not really overturn that picture. They mostly praise individual staff for kindness, reassurance, listening, and professionalism, rather than suggesting the wider systems work consistently well. So the overall impression from the reviews is that GTD practices do still generate gratitude at the level of individual encounters, but the dominant reputation is of services where weak systems repeatedly wear down confidence, continuity, and, in some cases, safety.</p>
+      ${isConsolidatedSummary
+        ? `<p class="tldr-browse-hint"><button type="button" class="tldr-toggle-summaries-btn">Toggle Summaries off</button> to browse individual reviews</p>`
+        : `<p class="tldr-browse-hint"><button type="button" class="tldr-toggle-summaries-btn">Toggle Summaries on</button> to browse summaries</p>`}
     </div>`;
     tldr.innerHTML = isConsolidatedSummary
       ? tldrContent
       : `<details class="tldr-details"><summary>TL;DR</summary>${tldrContent}</details>`;
     content.appendChild(tldr);
+    const tldrBtn = tldr.querySelector(".tldr-toggle-summaries-btn");
+    if (tldrBtn) tldrBtn.addEventListener("click", () => {
+      document.getElementById("show-summaries").checked = !isConsolidatedSummary;
+      updateHashFromControls();
+      render();
+    });
 
     const effectiveSortMode = groupMode === "consolidated" ? "date" : sortMode;
     const containerClass = "treemap-container";
