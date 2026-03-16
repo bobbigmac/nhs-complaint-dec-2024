@@ -11510,7 +11510,8 @@
       "canonical_code": "P84023",
       "_index": 134,
       "estimated_year": 2025,
-      "estimated_months_ago": 5
+      "estimated_months_ago": 5,
+      "is_practice_reply": true
     },
     {
       "author": "Lauren Victoria",
@@ -12458,7 +12459,8 @@
       "canonical_code": "P82613",
       "_index": 213,
       "estimated_year": 2026,
-      "estimated_months_ago": 2
+      "estimated_months_ago": 2,
+      "is_practice_reply": true
     },
     {
       "author": "Lesley Matthews",
@@ -12482,7 +12484,8 @@
       "canonical_code": "P82613",
       "_index": 215,
       "estimated_year": 2026,
-      "estimated_months_ago": 3
+      "estimated_months_ago": 3,
+      "is_practice_reply": true
     },
     {
       "author": "Doreen Shaw",
@@ -12842,7 +12845,8 @@
       "canonical_code": "P82609",
       "_index": 245,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "GM Dressco",
@@ -12854,7 +12858,8 @@
       "canonical_code": "P82609",
       "_index": 246,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "sarah brown",
@@ -13322,7 +13327,8 @@
       "canonical_code": "Y00186",
       "_index": 285,
       "estimated_year": 2025,
-      "estimated_months_ago": 11
+      "estimated_months_ago": 11,
+      "is_practice_reply": true
     },
     {
       "author": "Slah Din",
@@ -13334,7 +13340,8 @@
       "canonical_code": "Y00186",
       "_index": 286,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Matthew Gowens (Matt)",
@@ -13850,7 +13857,8 @@
       "canonical_code": "Y02790",
       "_index": 329,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Tabinda Siddique",
@@ -16670,7 +16678,8 @@
       "canonical_code": "P91629001",
       "_index": 564,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "Elemer Farkas",
@@ -16790,7 +16799,8 @@
       "canonical_code": "P84635",
       "_index": 574,
       "estimated_year": 2025,
-      "estimated_months_ago": 4
+      "estimated_months_ago": 4,
+      "is_practice_reply": true
     },
     {
       "author": "Wahid Shahrani",
@@ -17534,7 +17544,8 @@
       "canonical_code": "P84027",
       "_index": 636,
       "estimated_year": 2025,
-      "estimated_months_ago": 4
+      "estimated_months_ago": 4,
+      "is_practice_reply": true
     },
     {
       "author": "Nawab Rana Imran",
@@ -19934,7 +19945,8 @@
       "canonical_code": "P84061",
       "_index": 836,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Diana Bowden",
@@ -20402,7 +20414,8 @@
       "canonical_code": "P86010",
       "_index": 875,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Sarah Robinson",
@@ -20870,7 +20883,8 @@
       "canonical_code": "Y02795",
       "_index": 914,
       "estimated_year": 2025,
-      "estimated_months_ago": 5
+      "estimated_months_ago": 5,
+      "is_practice_reply": true
     },
     {
       "author": "Joe Stringer",
@@ -24950,7 +24964,8 @@
       "canonical_code": "P87020",
       "_index": 1254,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "Stephen Nicholls",
@@ -24998,7 +25013,8 @@
       "canonical_code": "P87020",
       "_index": 1258,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "Kay Hoey",
@@ -25634,7 +25650,8 @@
       "canonical_code": "P91629",
       "_index": 1311,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "sindy li",
@@ -25658,7 +25675,8 @@
       "canonical_code": "P91629",
       "_index": 1313,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Janet Amos",
@@ -25694,7 +25712,8 @@
       "canonical_code": "P91629",
       "_index": 1316,
       "estimated_year": 2026,
-      "estimated_months_ago": 2
+      "estimated_months_ago": 2,
+      "is_practice_reply": true
     },
     {
       "author": "Ruth",
@@ -26018,7 +26037,8 @@
       "canonical_code": "P91035",
       "_index": 1343,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Jiten Mistry",
@@ -27386,7 +27406,8 @@
       "canonical_code": "P84064",
       "_index": 1457,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "K. N",
@@ -28574,7 +28595,8 @@
       "canonical_code": "P89029",
       "_index": 1556,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Dorcas Bekoe",
@@ -28586,7 +28608,8 @@
       "canonical_code": "P89029",
       "_index": 1557,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "L Rostami",
@@ -28634,7 +28657,8 @@
       "canonical_code": "P89029",
       "_index": 1561,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "Stacey Cullen",
@@ -32294,7 +32318,8 @@
       "canonical_code": "P84605",
       "_index": 1866,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Hassan Esmail",
@@ -35510,7 +35535,8 @@
       "canonical_code": "P89618",
       "_index": 2134,
       "estimated_year": 2025,
-      "estimated_months_ago": 8
+      "estimated_months_ago": 8,
+      "is_practice_reply": true
     },
     {
       "author": "Lisa Burrows",
@@ -37634,7 +37660,8 @@
       "canonical_code": "R3E4A",
       "_index": 2311,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Stephen Brady",
@@ -38174,7 +38201,8 @@
       "canonical_code": "P89016",
       "_index": 2356,
       "estimated_year": 2025,
-      "estimated_months_ago": 7
+      "estimated_months_ago": 7,
+      "is_practice_reply": true
     },
     {
       "author": "Ify Onyek",
@@ -38570,7 +38598,8 @@
       "canonical_code": "P89005",
       "_index": 2389,
       "estimated_year": 2026,
-      "estimated_months_ago": 2
+      "estimated_months_ago": 2,
+      "is_practice_reply": true
     },
     {
       "author": "M D03n5",
@@ -38582,7 +38611,8 @@
       "canonical_code": "P89005",
       "_index": 2390,
       "estimated_year": 2026,
-      "estimated_months_ago": 2
+      "estimated_months_ago": 2,
+      "is_practice_reply": true
     },
     {
       "author": "Olivia Madison",
@@ -40118,7 +40148,8 @@
       "canonical_code": "P88017",
       "_index": 2518,
       "estimated_year": 2025,
-      "estimated_months_ago": 6
+      "estimated_months_ago": 6,
+      "is_practice_reply": true
     },
     {
       "author": "Jackie H",
@@ -40142,7 +40173,8 @@
       "canonical_code": "P88017",
       "_index": 2520,
       "estimated_year": 2025,
-      "estimated_months_ago": 7
+      "estimated_months_ago": 7,
+      "is_practice_reply": true
     },
     {
       "author": "Mal Carr",
@@ -40670,7 +40702,8 @@
       "canonical_code": "P88020",
       "_index": 2564,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "Waqas Butt",
@@ -43082,7 +43115,8 @@
       "canonical_code": "N81109",
       "_index": 2765,
       "estimated_year": 2026,
-      "estimated_months_ago": 0
+      "estimated_months_ago": 0,
+      "is_practice_reply": true
     },
     {
       "author": "Teresa Moran",
@@ -43706,7 +43740,8 @@
       "canonical_code": "P82627",
       "_index": 2817,
       "estimated_year": null,
-      "estimated_months_ago": null
+      "estimated_months_ago": null,
+      "is_practice_reply": true
     },
     {
       "author": "richhawks1",

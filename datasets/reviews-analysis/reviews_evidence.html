@@ -135,7 +135,6 @@ body {
 }
 .practice-header h2 { margin: 0; font-size: 16px; font-weight: 600; }
 .practice-meta { font-size: 13px; color: var(--ink-muted); }
-.bucket-col-header,
 .treemap-block-header {
   position: relative;
 }
@@ -155,36 +154,6 @@ body {
 }
 .header-preview-overlay.visible {
   display: block;
-}
-.buckets-table {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 8px 18px;
-  align-items: start;
-}
-.bucket-col {
-  min-width: 0;
-}
-.bucket-col-header {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  margin-bottom: 6px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  color: #fff;
-}
-.bucket-col-header.avg-1 { background: var(--low); }
-.bucket-col-header.avg-2 { background: var(--midlow); }
-.bucket-col-header.avg-3 { background: var(--midhigh); }
-.bucket-col-header.avg-4 { background: var(--high); }
-.bucket-col-header.avg-5 { background: var(--veryhigh); }
-.bucket-col-header.avg-0 { background: var(--missing); }
-.squares-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
 }
 .review-square {
   width: 34px;
@@ -377,14 +346,10 @@ body {
         <option value="score-high">Score (best first)</option>
       </select>
       <label class="checkbox-label"><input type="checkbox" id="exclude-non-gtd" title="Hide reviews from before GTD takeover (under previous management)"> Exclude Non-GTD</label>
+      <label class="checkbox-label"><input type="checkbox" id="hide-practice-replies" checked title="Hide practice staff replies (misparsed as patient reviews)"> Hide practice replies</label>
       <span id="stat-filter" style="display:none;"><span class="filter-badge">Filtered</span></span>
     </div>
     <div class="controls-row controls-row-toggles">
-      <label>View:</label>
-      <div class="view-toggle" role="group" aria-label="View mode">
-        <button type="button" class="view-toggle-btn" data-view="squares">Squares</button>
-        <button type="button" class="view-toggle-btn active" data-view="treemap">Treemap</button>
-      </div>
       <label>Group:</label>
       <div class="view-toggle" role="group" aria-label="Grouping">
         <button type="button" class="view-toggle-btn active" data-group="practice">By practice</button>
@@ -395,7 +360,7 @@ body {
         <button type="button" class="view-toggle-btn active" data-theme="operational">Operational</button>
         <button type="button" class="view-toggle-btn" data-theme="cluster">Cluster evidence</button>
       </div>
-      <label class="checkbox-label"><input type="checkbox" id="show-in-all-categories" title="Show each review as a square in every category it touches"> Show in all categories</label>
+      <span id="show-in-all-categories-wrap"><label class="checkbox-label"><input type="checkbox" id="show-in-all-categories" title="Show each review as a square in every category it touches"> Show in all categories</label></span>
     </div>
   </div>
 
@@ -532,7 +497,9 @@ body {
   function render() {
     hidePopover();
     const themeMode = document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn.active")?.dataset.theme || "operational";
-    const multiCategory = document.getElementById("show-in-all-categories")?.checked ?? false;
+    const multiCategory = themeMode === "operational" && (document.getElementById("show-in-all-categories")?.checked ?? false);
+    const wrap = document.getElementById("show-in-all-categories-wrap");
+    if (wrap) wrap.style.display = themeMode === "cluster" ? "none" : "";
     const bucketLabels = getBucketLabels(data);
     const operationalLabels = getOperationalLabels(data);
     const bucketOrder = getBucketOrder(data, bucketLabels);
@@ -542,11 +509,16 @@ body {
     const groupBy = themeMode === "operational" ? (reviews, ord) => groupByOperational(reviews, ord, multiCategory) : groupByBucket;
     const timespan = document.getElementById("timespan-filter").value;
     const sortMode = document.getElementById("sort-mode").value;
-    const viewMode = document.querySelector("[aria-label='View mode'] .view-toggle-btn.active")?.dataset.view || "treemap";
     const groupMode = document.querySelector("[aria-label='Grouping'] .view-toggle-btn.active")?.dataset.group || "practice";
-    const practices = timespan ? filterByTimespan(data.practices, timespan) : data.practices;
-    const acrossRaw = data.recent_reviews_across_manchester || [];
-    const across = timespan ? filterAcrossByTimespan(acrossRaw, timespan) : acrossRaw;
+    const hidePracticeReplies = document.getElementById("hide-practice-replies")?.checked ?? true;
+    let practices = timespan ? filterByTimespan(data.practices, timespan) : data.practices;
+    let acrossRaw = data.recent_reviews_across_manchester || [];
+    let across = timespan ? filterAcrossByTimespan(acrossRaw, timespan) : acrossRaw;
+    if (hidePracticeReplies) {
+      const excludePracticeReply = r => !r.is_practice_reply;
+      practices = practices.map(p => ({ ...p, reviews: p.reviews.filter(excludePracticeReply) })).filter(p => p.reviews.length > 0);
+      across = across.filter(excludePracticeReply);
+    }
     const sortedAcross = sortReviews(across, sortMode);
 
     let allSections;
@@ -597,12 +569,13 @@ body {
 
     document.getElementById("stat-practices").textContent = allSections.length;
     document.getElementById("stat-reviews").textContent = totalReviews;
-    document.getElementById("stat-filter").style.display = (timespan || excludeNonGtd) ? "inline" : "none";
+    document.getElementById("stat-filter").style.display = (timespan || excludeNonGtd || hidePracticeReplies) ? "inline" : "none";
 
     const content = document.getElementById("content");
     content.innerHTML = "";
 
     const effectiveSortMode = groupMode === "consolidated" ? "date" : sortMode;
+    const containerClass = "treemap-container";
     for (const practice of allSections) {
       const takeoverDate = practice.gtd_takeover_date || "";
       const sorted = sortReviews(practice.reviews, effectiveSortMode);
@@ -643,7 +616,6 @@ body {
                 : isNonGtd && inclusionReason
                   ? `<div class="practice-inclusion-note">Included due to ${inclusionReason} reviews</div>`
                   : "";
-      const containerClass = viewMode === "treemap" ? "treemap-container" : "buckets-table";
       section.innerHTML = `
         <div>
           <div class="practice-header">
@@ -657,60 +629,31 @@ body {
 
       const container = section.querySelector(`.${containerClass}`);
 
-      if (viewMode === "treemap") {
-        for (const { bucket, reviews } of bucketGroups) {
-          const block = document.createElement("div");
-          block.className = `treemap-block bucket-${bucket}`;
-          const avg = avgScore(reviews);
-          const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-          block.innerHTML = `<div class="treemap-block-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="treemap-block-body"></div>`;
-          const blockHeader = block.querySelector(".treemap-block-header");
-          blockHeader.dataset.original = blockHeader.querySelector(".header-label").textContent;
-          const body = block.querySelector(".treemap-block-body");
-          for (const r of reviews) {
-            const sq = document.createElement("span");
-            sq.className = "review-square rating-" + (r.rating_stars || 0);
-            const rTakeover = r._source_takeover || takeoverDate;
-            if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
-            sq.textContent = r.rating_stars || "?";
-            const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
-            sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
-            sq.dataset.practice = practice.canonical_code;
-            sq.dataset.index = String(r._index);
-            sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
-            sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
-            sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
-            body.appendChild(sq);
-          }
-          container.appendChild(block);
+      for (const { bucket, reviews } of bucketGroups) {
+        const block = document.createElement("div");
+        block.className = `treemap-block bucket-${bucket}`;
+        const avg = avgScore(reviews);
+        const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
+        block.innerHTML = `<div class="treemap-block-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="treemap-block-body"></div>`;
+        const blockHeader = block.querySelector(".treemap-block-header");
+        blockHeader.dataset.original = blockHeader.querySelector(".header-label").textContent;
+        const body = block.querySelector(".treemap-block-body");
+        for (const r of reviews) {
+          const sq = document.createElement("span");
+          sq.className = "review-square rating-" + (r.rating_stars || 0);
+          const rTakeover = r._source_takeover || takeoverDate;
+          if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
+          sq.textContent = r.rating_stars || "?";
+          const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
+          sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
+          sq.dataset.practice = practice.canonical_code;
+          sq.dataset.index = String(r._index);
+          sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
+          sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
+          sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
+          body.appendChild(sq);
         }
-      } else {
-        for (const { bucket, reviews } of bucketGroups) {
-          const col = document.createElement("div");
-          col.className = "bucket-col";
-          const avg = avgScore(reviews);
-          const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-          col.innerHTML = `<div class="bucket-col-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="squares-row"></div>`;
-          const colHeader = col.querySelector(".bucket-col-header");
-          colHeader.dataset.original = colHeader.querySelector(".header-label").textContent;
-          const squaresDiv = col.querySelector(".squares-row");
-          for (const r of reviews) {
-            const sq = document.createElement("span");
-            sq.className = "review-square rating-" + (r.rating_stars || 0);
-            const rTakeover = r._source_takeover || takeoverDate;
-            if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
-            sq.textContent = r.rating_stars || "?";
-            const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
-            sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
-            sq.dataset.practice = practice.canonical_code;
-            sq.dataset.index = String(r._index);
-            sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
-            sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
-            sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
-            squaresDiv.appendChild(sq);
-          }
-          container.appendChild(col);
-        }
+        container.appendChild(block);
       }
       content.appendChild(section);
     }
@@ -769,8 +712,8 @@ body {
   }
 
   function setHeaderPreview(sq, review, show) {
-    const panel = sq.closest(".treemap-block") || sq.closest(".bucket-col");
-    const header = panel?.querySelector(".treemap-block-header, .bucket-col-header");
+    const panel = sq.closest(".treemap-block");
+    const header = panel?.querySelector(".treemap-block-header");
     const overlay = header?.querySelector(".header-preview-overlay");
     if (!header || !overlay) return;
     if (show && review) {
@@ -794,6 +737,7 @@ body {
   document.getElementById("timespan-filter").addEventListener("change", render);
   document.getElementById("sort-mode").addEventListener("change", render);
   document.getElementById("exclude-non-gtd").addEventListener("change", render);
+  document.getElementById("hide-practice-replies").addEventListener("change", render);
   document.getElementById("show-in-all-categories").addEventListener("change", render);
   document.querySelectorAll(".view-toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {

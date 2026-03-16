@@ -80,10 +80,14 @@ def sentiment_from_rating(stars: int) -> str:
 
 def build_classifier(input_path: Path, output_path: Path) -> dict[str, Any]:
     """Build graph classifier and write review_classifications.json."""
-    from sklearn.feature_extraction.text import TfidfVectorizer
-    from sklearn.metrics.pairwise import cosine_similarity
-    from sklearn.cluster import DBSCAN
-    import numpy as np
+    try:
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        from sklearn.metrics.pairwise import cosine_similarity
+        from sklearn.cluster import DBSCAN
+        import numpy as np
+    except ImportError:
+        print("scikit-learn is required. Install with: pip install scikit-learn", file=sys.stderr)
+        raise SystemExit(1)
 
     data = json.loads(input_path.read_text(encoding="utf-8"))
     reviews = flatten_reviews(data)

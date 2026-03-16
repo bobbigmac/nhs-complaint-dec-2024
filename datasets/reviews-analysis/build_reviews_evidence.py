@@ -22,6 +22,7 @@ REPORT_GLOB = "gtd-greater-manchester-gp-practice-reviews-*"
 OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 CLASSIFIER_GRAPH = Path(__file__).resolve().parent / "build_classifier_graph.py"
 OPERATIONAL_TAXONOMY = Path(__file__).resolve().parent / "operational_taxonomy.json"
+PRACTICE_REPLIES_JSON = Path(__file__).resolve().parent / "practice_replies.json"
 
 
 def find_latest_report_dir() -> Path:
@@ -150,6 +151,39 @@ def normalize_review_text(text: str) -> str:
         return ""
     lines = [line.strip() for line in text.splitlines() if line.strip()]
     return "\n".join(lines)
+
+
+def _is_practice_reply(review: dict[str, Any], code: str, entries: list[dict[str, Any]]) -> bool:
+    """True if review matches any practice_replies entry (canonical_code, author, text_start)."""
+    author = (review.get("author") or "").strip()
+    text = (review.get("text") or "").strip()
+    for e in entries:
+        if str(e.get("canonical_code", "")) != str(code):
+            continue
+        if (e.get("author") or "").strip().lower() != author.lower():
+            continue
+        text_start = (e.get("text_start") or "").strip()
+        if text_start and not text.startswith(text_start):
+            continue
+        return True
+    return False
+
+
+def _apply_practice_reply_flags(
+    practices: list[dict[str, Any]],
+    recent_reviews: list[dict[str, Any]],
+    entries: list[dict[str, Any]],
+) -> None:
+    """Set is_practice_reply=True on reviews that match the reference file."""
+    for p in practices:
+        code = str(p.get("canonical_code", ""))
+        for r in p.get("reviews") or []:
+            if _is_practice_reply(r, code, entries):
+                r["is_practice_reply"] = True
+    for r in recent_reviews:
+        code = str(r.get("canonical_code", ""))
+        if _is_practice_reply(r, code, entries):
+            r["is_practice_reply"] = True
 
 
 def _parse_months_ago(date_raw: str) -> int | None:
@@ -398,6 +432,12 @@ def main() -> int:
         for i, r in enumerate(recent_reviews_across):
             r["_index"] = i
 
+    # Tag practice replies from reference file (no heuristics)
+    practice_reply_entries: list[dict[str, Any]] = []
+    if PRACTICE_REPLIES_JSON.exists():
+        practice_reply_entries = json.loads(PRACTICE_REPLIES_JSON.read_text(encoding="utf-8")).get("practice_replies", [])
+    _apply_practice_reply_flags(practices_with_reviews, recent_reviews_across, practice_reply_entries)
+
     # Run classifier
     input_data = {
         "practices": practices_with_reviews,
@@ -420,7 +460,6 @@ def main() -> int:
     if result.returncode != 0:
         if classifier_output.exists():
             print("Graph classifier failed (scikit-learn required); using committed fallback", file=sys.stderr)
-            print(result.stderr, file=sys.stderr)
         else:
             print("Graph classifier failed:", result.stderr, file=sys.stderr)
             print("Install scikit-learn and run on a dev machine, then commit output/review_classifications.json", file=sys.stderr)

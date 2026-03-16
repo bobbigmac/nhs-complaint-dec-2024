@@ -23796,6 +23796,7 @@
       "_index": 134,
       "estimated_year": 2025,
       "estimated_months_ago": 5,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -25634,6 +25635,7 @@
       "_index": 213,
       "estimated_year": 2026,
       "estimated_months_ago": 2,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -25682,6 +25684,7 @@
       "_index": 215,
       "estimated_year": 2026,
       "estimated_months_ago": 3,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -26368,6 +26371,7 @@
       "_index": 245,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -26391,6 +26395,7 @@
       "_index": 246,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -27302,6 +27307,7 @@
       "_index": 285,
       "estimated_year": 2025,
       "estimated_months_ago": 11,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -27325,6 +27331,7 @@
       "_index": 286,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -28315,6 +28322,7 @@
       "_index": 329,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -33756,6 +33764,7 @@
       "_index": 564,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c67",
       "buckets": [
         "c67"
@@ -33985,6 +33994,7 @@
       "_index": 574,
       "estimated_year": 2025,
       "estimated_months_ago": 4,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -35426,6 +35436,7 @@
       "_index": 636,
       "estimated_year": 2025,
       "estimated_months_ago": 4,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -40034,6 +40045,7 @@
       "_index": 836,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -40952,6 +40964,7 @@
       "_index": 875,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -41846,6 +41859,7 @@
       "_index": 914,
       "estimated_year": 2025,
       "estimated_months_ago": 5,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -49740,6 +49754,7 @@
       "_index": 1254,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -49831,6 +49846,7 @@
       "_index": 1258,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -51032,6 +51048,7 @@
       "_index": 1311,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c67",
       "buckets": [
         "c67"
@@ -51080,6 +51097,7 @@
       "_index": 1313,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c67",
       "buckets": [
         "c67"
@@ -51149,6 +51167,7 @@
       "_index": 1316,
       "estimated_year": 2026,
       "estimated_months_ago": 2,
+      "is_practice_reply": true,
       "primary_bucket": "c67",
       "buckets": [
         "c67"
@@ -51781,6 +51800,7 @@
       "_index": 1343,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -54415,6 +54435,7 @@
       "_index": 1457,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -56690,6 +56711,7 @@
       "_index": 1556,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -56712,6 +56734,7 @@
       "_index": 1557,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -56802,6 +56825,7 @@
       "_index": 1561,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -63782,6 +63806,7 @@
       "_index": 1866,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -69994,6 +70019,7 @@
       "_index": 2134,
       "estimated_year": 2025,
       "estimated_months_ago": 8,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -74076,6 +74102,7 @@
       "_index": 2311,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -75112,6 +75139,7 @@
       "_index": 2356,
       "estimated_year": 2025,
       "estimated_months_ago": 7,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -75858,6 +75886,7 @@
       "_index": 2389,
       "estimated_year": 2026,
       "estimated_months_ago": 2,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -75880,6 +75909,7 @@
       "_index": 2390,
       "estimated_year": 2026,
       "estimated_months_ago": 2,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -78831,6 +78861,7 @@
       "_index": 2518,
       "estimated_year": 2025,
       "estimated_months_ago": 6,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -78876,6 +78907,7 @@
       "_index": 2520,
       "estimated_year": 2025,
       "estimated_months_ago": 7,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -79881,6 +79913,7 @@
       "_index": 2564,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -84513,6 +84546,7 @@
       "_index": 2765,
       "estimated_year": 2026,
       "estimated_months_ago": 0,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"
@@ -85699,6 +85733,7 @@
       "_index": 2817,
       "estimated_year": null,
       "estimated_months_ago": null,
+      "is_practice_reply": true,
       "primary_bucket": "c0",
       "buckets": [
         "c0"

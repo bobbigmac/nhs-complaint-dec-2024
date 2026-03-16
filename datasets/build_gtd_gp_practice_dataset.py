@@ -849,6 +849,9 @@ def resolve_gp_patient_survey_payload(
     return parent_payload, parent_code, note
 
 
+# TODO: Detect and explicitly store/report practice replies (staff responses misparsed as patient reviews)
+# as not really reviews. Use a reference file (e.g. datasets/reviews-analysis/practice_replies.json)
+# to flag known cases; exclude from scores and counts; surface in reports.
 def load_google_review_results(path: Path = GOOGLE_REVIEW_RESULTS_JSON) -> list[dict[str, Any]]:
     if not path.exists():
         return []
