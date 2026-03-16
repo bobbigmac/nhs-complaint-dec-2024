@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reviews Evidence – Extended Practice Reviews</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+  --bg: #fff;
+  --ink: #1a1a1a;
+  --ink-muted: #444;
+  --panel: #f8f9fa;
+  --border: #d0d4d8;
+  --missing: #8a8f94;
+  --low: #b83d28;
+  --midlow: #c97a1a;
+  --midhigh: #b89b1a;
+  --high: #2d8a4a;
+  --veryhigh: #1a6b3a;
+  --accent: #0a5a8a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.header h1 { margin: 0; font-size: 20px; font-weight: 700; }
+.header p { margin: 4px 0 0; font-size: 14px; color: var(--ink-muted); }
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--ink);
+  font: 600 13px/1.2 sans-serif;
+  text-decoration: none;
+}
+.home-link:hover { background: #eef0f2; }
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.controls label { font-weight: 600; }
+.controls select {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--bg);
+}
+.filter-badge {
+  padding: 4px 10px;
+  background: rgba(184, 61, 40, 0.12);
+  color: var(--low);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.view-toggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.view-toggle-btn {
+  padding: 6px 12px;
+  border: none;
+  background: var(--bg);
+  color: var(--ink-muted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.view-toggle-btn:hover { color: var(--ink); background: var(--panel); }
+.view-toggle-btn.active { background: var(--accent); color: #fff; }
+.view-toggle-btn + .view-toggle-btn { border-left: 1px solid var(--border); }
+.practice-section {
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.practice-section.non-gtd {
+  background: #f0f4f8;
+  border-color: #b8c4d0;
+}
+.practice-section.non-gtd.inclusion-positive {
+  border-left: 4px solid var(--high);
+}
+.practice-section.non-gtd.inclusion-negative {
+  border-left: 4px solid var(--low);
+}
+.practice-inclusion-note {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-muted);
+  margin-top: 4px;
+}
+.practice-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.practice-header h2 { margin: 0; font-size: 16px; font-weight: 600; }
+.practice-meta { font-size: 13px; color: var(--ink-muted); }
+.buckets-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px 18px;
+  align-items: start;
+}
+.bucket-col {
+  min-width: 0;
+}
+.bucket-col-header {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+.bucket-col-header.avg-1 { background: var(--low); }
+.bucket-col-header.avg-2 { background: var(--midlow); }
+.bucket-col-header.avg-3 { background: var(--midhigh); }
+.bucket-col-header.avg-4 { background: var(--high); }
+.bucket-col-header.avg-5 { background: var(--veryhigh); }
+.bucket-col-header.avg-0 { background: var(--missing); }
+.squares-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.review-square {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+}
+.review-square:hover {
+  transform: scale(1.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.review-square.selected {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.review-square.pre-takeover { opacity: 0.5; }
+.review-square.rating-1 { background: var(--low); color: #fff; }
+.review-square.rating-2 { background: var(--midlow); color: #fff; }
+.review-square.rating-3 { background: var(--midhigh); color: #1a1a1a; }
+.review-square.rating-4 { background: var(--high); color: #fff; }
+.review-square.rating-5 { background: var(--veryhigh); color: #fff; }
+.review-square.rating-0 { background: var(--missing); color: #fff; }
+.review-popover {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  min-width: 280px;
+  max-width: 420px;
+  max-height: 70vh;
+  padding: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.review-popover.visible { display: block; }
+.review-popover.positioning { opacity: 0; }
+.review-popover-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.review-popover-header .meta { color: var(--ink-muted); }
+.review-popover-close {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.review-popover-close:hover { background: var(--border); color: var(--ink); }
+.review-popover-body {
+  padding: 12px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.review-popover-body .detail-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.review-popover-footer {
+  padding: 8px 12px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+.review-popover-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: transparent;
+}
+.review-popover-backdrop.visible { display: block; }
+.practice-section.across-manchester {
+  margin-top: 24px;
+  border-top: 2px solid var(--border);
+  padding-top: 20px;
+}
+.practice-section.across-manchester .practice-inclusion-note {
+  color: var(--accent);
+  font-style: normal;
+}
+.classifier-warning {
+  margin: 16px 0;
+  padding: 12px 16px;
+  background: rgba(184, 61, 40, 0.08);
+  border-left: 4px solid var(--low);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.classifier-warning strong { color: var(--low); }
+
+/* Treemap view – blocks sized by content only */
+.treemap-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.treemap-block {
+  flex: 0 0 auto;
+  width: fit-content;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+.treemap-block-header {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #fff;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.treemap-block-body {
+  padding: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.treemap-block .review-square {
+  width: 18px;
+  height: 18px;
+  font-size: 9px;
+}
+.treemap-block-header.avg-1 { background: var(--low); }
+.treemap-block-header.avg-2 { background: var(--midlow); }
+.treemap-block-header.avg-3 { background: var(--midhigh); }
+.treemap-block-header.avg-4 { background: var(--high); }
+.treemap-block-header.avg-5 { background: var(--veryhigh); }
+.treemap-block-header.avg-0 { background: var(--missing); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <div>
+      <h1>Reviews Evidence</h1>
+      <p>Extended (full-feed) reviews from practices with complete review collection</p>
+    </div>
+    <a class="home-link" href="../index.html">← Home</a>
+  </header>
+
+  <div class="controls">
+    <span><strong id="stat-practices">0</strong> practices · <strong id="stat-reviews">0</strong> reviews</span>
+    <label>Timespan:</label>
+    <select id="timespan-filter">
+      <option value="">All years</option>
+      <option value="5">Last 5 years</option>
+      <option value="3">Last 3 years</option>
+      <option value="2">Last 2 years</option>
+      <option value="1">Last 1 year</option>
+    </select>
+    <label>Sort squares:</label>
+    <select id="sort-mode">
+      <option value="date">Date (newest first)</option>
+      <option value="score-low">Score (worst first)</option>
+      <option value="score-high">Score (best first)</option>
+    </select>
+    <label>View:</label>
+    <div class="view-toggle" role="group" aria-label="View mode">
+      <button type="button" class="view-toggle-btn" data-view="squares">Squares</button>
+      <button type="button" class="view-toggle-btn active" data-view="treemap">Treemap</button>
+    </div>
+    <span id="stat-filter" style="display:none;"><span class="filter-badge">Filtered</span></span>
+  </div>
+
+  <main id="content"></main>
+</div>
+
+<div id="review-popover-backdrop" class="review-popover-backdrop"></div>
+<div id="review-popover" class="review-popover">
+  <div class="review-popover-header">
+    <span class="meta" id="review-popover-meta"></span>
+    <button type="button" class="review-popover-close" id="review-popover-close" aria-label="Close">×</button>
+  </div>
+  <div class="review-popover-body" id="review-popover-body"></div>
+  <div class="review-popover-footer" id="review-popover-footer"></div>
+</div>
+
+<script>
+(function() {
+  const BUCKET_LABELS = {
+    reception: "Reception",
+    appointments: "Appointments",
+    prescriptions: "Prescriptions",
+    referrals: "Referrals",
+    continuity: "Continuity",
+    staff: "Staff",
+    digital: "Digital",
+    results: "Results",
+    waiting_room: "Waiting",
+    positive: "Positive",
+    uncategorised: "Other"
+  };
+  const BUCKET_ORDER = ["reception", "appointments", "prescriptions", "referrals", "continuity", "staff", "digital", "results", "waiting_room", "positive", "uncategorised"];
+
+  let data = null;
+
+  function isPreTakeover(review, takeoverDate) {
+    if (!takeoverDate) return false;
+    const y = review.estimated_year;
+    if (y == null) return false;
+    return y < parseInt(takeoverDate.slice(0, 4), 10);
+  }
+
+  function filterByTimespan(practices, yearsBack) {
+    if (!yearsBack) return practices;
+    const n = parseInt(yearsBack, 10);
+    const cutoffYear = (data.generated_date ? parseInt(data.generated_date.slice(0, 4), 10) : new Date().getFullYear()) - n;
+    return practices.map(p => ({
+      ...p,
+      reviews: p.reviews.filter(r => r.estimated_year != null && r.estimated_year >= cutoffYear)
+    })).filter(p => p.reviews.length > 0);
+  }
+
+  function sortReviews(reviews, mode) {
+    const arr = [...reviews];
+    if (mode === "date") {
+      arr.sort((a, b) => {
+        const ma = a.estimated_months_ago ?? 9999;
+        const mb = b.estimated_months_ago ?? 9999;
+        return ma - mb;
+      });
+    } else if (mode === "score-low") {
+      arr.sort((a, b) => (a.rating_stars || 0) - (b.rating_stars || 0));
+    } else if (mode === "score-high") {
+      arr.sort((a, b) => (b.rating_stars || 0) - (a.rating_stars || 0));
+    }
+    return arr;
+  }
+
+  function groupByBucket(reviews) {
+    const groups = {};
+    for (const r of reviews) {
+      const b = r.primary_bucket || "uncategorised";
+      if (!groups[b]) groups[b] = [];
+      groups[b].push(r);
+    }
+    return BUCKET_ORDER.filter(b => groups[b]).map(b => ({ bucket: b, reviews: groups[b] }));
+  }
+
+  function avgScore(reviews) {
+    const withRating = reviews.filter(r => (r.rating_stars || 0) > 0);
+    if (withRating.length === 0) return null;
+    const sum = withRating.reduce((n, r) => n + (r.rating_stars || 0), 0);
+    return Math.round(sum / withRating.length * 10) / 10;
+  }
+
+  function formatAvg(avg) {
+    return avg != null ? avg.toFixed(1) : "—";
+  }
+
+  function filterAcrossByTimespan(across, yearsBack) {
+    if (!yearsBack || !across) return across || [];
+    const n = parseInt(yearsBack, 10);
+    const cutoffYear = (data.generated_date ? parseInt(data.generated_date.slice(0, 4), 10) : new Date().getFullYear()) - n;
+    return across.filter(r => r.estimated_year != null && r.estimated_year >= cutoffYear);
+  }
+
+  function render() {
+    hidePopover();
+    const timespan = document.getElementById("timespan-filter").value;
+    const sortMode = document.getElementById("sort-mode").value;
+    const viewMode = document.querySelector(".view-toggle-btn.active")?.dataset.view || "treemap";
+    const practices = timespan ? filterByTimespan(data.practices, timespan) : data.practices;
+    const acrossRaw = data.recent_reviews_across_manchester || [];
+    const across = timespan ? filterAcrossByTimespan(acrossRaw, timespan) : acrossRaw;
+    const sortedAcross = sortReviews(across, sortMode);
+    const acrossPractice = sortedAcross.length > 0 ? {
+      canonical_code: "_across",
+      practice_name: "Recent Reviews across Manchester",
+      gtd_managed: false,
+      gtd_takeover_date: "",
+      review_count: sortedAcross.length,
+      reviews: sortedAcross,
+      inclusion_reason: null,
+    } : null;
+    const allSections = acrossPractice ? [...practices, acrossPractice] : practices;
+    const totalReviews = allSections.reduce((n, p) => n + p.reviews.length, 0);
+
+    document.getElementById("stat-practices").textContent = allSections.length;
+    document.getElementById("stat-reviews").textContent = totalReviews;
+    document.getElementById("stat-filter").style.display = timespan ? "inline" : "none";
+
+    const content = document.getElementById("content");
+    content.innerHTML = "";
+
+    for (const practice of allSections) {
+      const takeoverDate = practice.gtd_takeover_date || "";
+      const sorted = sortReviews(practice.reviews, sortMode);
+      const bucketGroups = groupByBucket(sorted);
+      const isAcross = practice.canonical_code === "_across";
+      const isNonGtd = !practice.gtd_managed && !isAcross;
+      const inclusionReason = practice.inclusion_reason || "";
+
+      if (isAcross) {
+        const warning = document.createElement("div");
+        warning.className = "classifier-warning";
+        warning.innerHTML = "<strong>Classifier note:</strong> The theme classifier is crude and needs work. Treating &lsquo;positive&rsquo; as its own category tends to pull warm/positive language out of other categories (e.g. reception, appointments). The classifier should be rewritten with more solid, stable rules.";
+        content.appendChild(warning);
+      }
+      const section = document.createElement("section");
+      section.className = "practice-section";
+      if (isAcross) section.classList.add("across-manchester");
+      else if (isNonGtd) {
+        section.classList.add("non-gtd");
+        if (inclusionReason === "positive") section.classList.add("inclusion-positive");
+        if (inclusionReason === "negative") section.classList.add("inclusion-negative");
+      }
+      const gtdLabel = practice.gtd_managed ? " (GTD)" : "";
+      const inclusionNote = isAcross
+        ? `<div class="practice-inclusion-note">Regional sanity check – all other practices aggregated</div>`
+        : isNonGtd && inclusionReason
+          ? `<div class="practice-inclusion-note">Included due to ${inclusionReason} reviews</div>`
+          : "";
+      const containerClass = viewMode === "treemap" ? "treemap-container" : "buckets-table";
+      section.innerHTML = `
+        <div>
+          <div class="practice-header">
+            <h2>${escapeHtml(practice.practice_name)}${gtdLabel}</h2>
+            <span class="practice-meta">${practice.canonical_code === "_across" ? "—" : practice.canonical_code} · ${practice.review_count} reviews${takeoverDate ? " · GTD from " + takeoverDate : ""}</span>
+          </div>
+          ${inclusionNote}
+          <div class="${containerClass}"></div>
+        </div>
+      `;
+
+      const container = section.querySelector(`.${containerClass}`);
+
+      if (viewMode === "treemap") {
+        for (const { bucket, reviews } of bucketGroups) {
+          const block = document.createElement("div");
+          block.className = `treemap-block bucket-${bucket}`;
+          const avg = avgScore(reviews);
+          const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
+          block.innerHTML = `<div class="treemap-block-header ${avgClass}">${BUCKET_LABELS[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="treemap-block-body"></div>`;
+          const body = block.querySelector(".treemap-block-body");
+          for (const r of reviews) {
+            const sq = document.createElement("span");
+            sq.className = "review-square rating-" + (r.rating_stars || 0);
+            if (isPreTakeover(r, takeoverDate)) sq.classList.add("pre-takeover");
+            sq.textContent = r.rating_stars || "?";
+            const titlePrefix = isAcross && r.practice_name ? `${r.practice_name}: ` : "";
+            sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
+            sq.dataset.practice = practice.canonical_code;
+            sq.dataset.index = String(r._index);
+            sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
+            body.appendChild(sq);
+          }
+          container.appendChild(block);
+        }
+      } else {
+        for (const { bucket, reviews } of bucketGroups) {
+          const col = document.createElement("div");
+          col.className = "bucket-col";
+          const avg = avgScore(reviews);
+          const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
+          col.innerHTML = `<div class="bucket-col-header ${avgClass}">${BUCKET_LABELS[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="squares-row"></div>`;
+          const squaresDiv = col.querySelector(".squares-row");
+          for (const r of reviews) {
+            const sq = document.createElement("span");
+            sq.className = "review-square rating-" + (r.rating_stars || 0);
+            if (isPreTakeover(r, takeoverDate)) sq.classList.add("pre-takeover");
+            sq.textContent = r.rating_stars || "?";
+            const titlePrefix = isAcross && r.practice_name ? `${r.practice_name}: ` : "";
+            sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
+            sq.dataset.practice = practice.canonical_code;
+            sq.dataset.index = String(r._index);
+            sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
+            squaresDiv.appendChild(sq);
+          }
+          container.appendChild(col);
+        }
+      }
+      content.appendChild(section);
+    }
+  }
+
+  function normalizeReviewText(text) {
+    if (!text || typeof text !== "string") return "";
+    return text.trim()
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter((line) => line.length > 0)
+      .join("\n");
+  }
+
+  function showDetail(practice, review, anchorEl) {
+    const takeoverDate = practice.gtd_takeover_date || "";
+    const preTakeover = isPreTakeover(review, takeoverDate);
+    const text = normalizeReviewText(review.text || "") || "(no text)";
+    const practiceLabel = practice.canonical_code === "_across"
+      ? `${escapeHtml(review.practice_name || "")} (${escapeHtml(review.canonical_code || "")})`
+      : escapeHtml(practice.practice_name);
+    const metaStr = `<strong>${practiceLabel}</strong> · ${escapeHtml(review.author || "")} · ${escapeHtml(review.rating_label || "")} · ${escapeHtml(review.date_raw || "")}${preTakeover ? " (pre-GTD)" : ""}`;
+    const bucketsStr = (review.buckets || []).map(b => BUCKET_LABELS[b] || b).join(" · ");
+
+    document.getElementById("review-popover-meta").innerHTML = metaStr;
+    document.getElementById("review-popover-body").innerHTML = `<div class="detail-text">${escapeHtml(text)}</div>`;
+    document.getElementById("review-popover-footer").textContent = bucketsStr || "—";
+
+    const popover = document.getElementById("review-popover");
+    const backdrop = document.getElementById("review-popover-backdrop");
+    popover.classList.add("visible", "positioning");
+    backdrop.classList.add("visible");
+    const rect = anchorEl.getBoundingClientRect();
+    const pad = 8;
+    const pr = popover.getBoundingClientRect();
+    let left = rect.right + pad;
+    let top = rect.top;
+    if (left + pr.width > window.innerWidth - pad) left = rect.left - pr.width - pad;
+    if (left < pad) left = pad;
+    if (top + pr.height > window.innerHeight - pad) top = Math.max(pad, window.innerHeight - pr.height - pad);
+    if (top < pad) top = pad;
+    popover.style.left = left + "px";
+    popover.style.top = top + "px";
+    popover.classList.remove("positioning");
+  }
+
+  function hidePopover() {
+    document.getElementById("review-popover").classList.remove("visible");
+    document.getElementById("review-popover-backdrop").classList.remove("visible");
+  }
+
+  function escapeHtml(s) {
+    const div = document.createElement("div");
+    div.textContent = s;
+    return div.innerHTML;
+  }
+  function escapeAttr(s) {
+    return String(s).replace(/"/g, "&quot;");
+  }
+
+  document.getElementById("timespan-filter").addEventListener("change", render);
+  document.getElementById("sort-mode").addEventListener("change", render);
+  document.querySelectorAll(".view-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".view-toggle-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      render();
+    });
+  });
+  document.getElementById("review-popover-close").addEventListener("click", hidePopover);
+  document.getElementById("review-popover-backdrop").addEventListener("click", hidePopover);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") hidePopover(); });
+
+  async function load() {
+    const res = await fetch("raw_reviews_extended.json");
+    if (!res.ok) throw new Error("Failed to load data");
+    data = await res.json();
+    render();
+  }
+
+  load().catch(e => {
+    document.getElementById("content").innerHTML = "<p style='color:var(--low)'>" + escapeHtml(e.message) + "</p>";
+  });
+})();
+</script>
+</body>
+</html>

@@ -40,6 +40,9 @@ PRACTICE_PATTERNS_SITE_DIR = "practice-patterns"
 PRACTICE_PATTERNS_RANKINGS_HREF = (
     f"{PRACTICE_PATTERNS_SITE_DIR}/output/reviewed_practice_relative_rankings.html"
 )
+REVIEWS_ANALYSIS_DIR = REPO_ROOT / "datasets" / "reviews-analysis"
+REVIEWS_ANALYSIS_BUILD_SCRIPT = REVIEWS_ANALYSIS_DIR / "build_reviews_evidence.py"
+REVIEWS_EVIDENCE_SITE_DIR = "reviews-evidence"
 
 
 ISSUE_SECTIONS: list[dict[str, object]] = [
@@ -297,6 +300,12 @@ VIEW_CARDS: list[dict[str, object]] = [
         "title": "Interactive map",
         "description": "Open the latest Greater Manchester comparison map with review, survey and takeover context.",
         "links": [("Open map", "map/map.html", "primary")],
+    },
+    {
+        "id": "reviews-evidence",
+        "title": "Reviews evidence",
+        "description": "Explore extended (full-feed) reviews from practices with complete review collection, classified by theme.",
+        "links": [("Open evidence", f"{REVIEWS_EVIDENCE_SITE_DIR}/", "primary")],
     },
     {
         "title": "GTD chronology",
@@ -694,9 +703,12 @@ def build_reference_cards(published_files: dict[str, str]) -> str:
     return build_document_cards(REFERENCE_DOCS, published_files)
 
 
-def build_action_cards(published_files: dict[str, str]) -> str:
+def build_action_cards(published_files: dict[str, str], *, skip_ids: frozenset[str] | None = None) -> str:
+    skip_ids = skip_ids or frozenset()
     cards = []
     for card in VIEW_CARDS:
+        if card.get("id") in skip_ids:
+            continue
         links = list(card["links"])
         source = card.get("source")
         if source:
@@ -717,7 +729,7 @@ def build_action_cards(published_files: dict[str, str]) -> str:
         <article class="action-card{' action-card-disabled' if card.get('disabled') else ''}">
           <h3>{html.escape(str(card["title"]))}</h3>
           <p>{html.escape(str(card["description"]))}</p>
-          {"<p class=\"action-status\">Experimental view, currently low-confidence.</p>" if card.get("disabled") else ""}
+          {"<p class=\"action-status\">Experimental.</p>" if card.get("disabled") else ""}
           <div class="link-row">
             {build_link_pills((label, href, variant) for label, href, variant in card["links"])}
           </div>
@@ -895,6 +907,25 @@ def build_practice_patterns() -> None:
     )
 
 
+def build_reviews_evidence() -> None:
+    subprocess.run(
+        [sys.executable, str(REVIEWS_ANALYSIS_BUILD_SCRIPT)],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+
+
+def publish_reviews_evidence(out_dir: Path) -> None:
+    site_root = out_dir / REVIEWS_EVIDENCE_SITE_DIR
+    site_root.mkdir(parents=True, exist_ok=True)
+    output_dir = REVIEWS_ANALYSIS_DIR / "output"
+    if (output_dir / "raw_reviews_extended.json").exists():
+        shutil.copy2(output_dir / "raw_reviews_extended.json", site_root / "raw_reviews_extended.json")
+    html_source = REVIEWS_ANALYSIS_DIR / "reviews_evidence.html"
+    if html_source.exists():
+        shutil.copy2(html_source, site_root / "index.html")
+
+
 def publish_practice_patterns(out_dir: Path) -> None:
     site_root = out_dir / PRACTICE_PATTERNS_SITE_DIR
     shutil.copytree(PRACTICE_PATTERNS_OUTPUT_DIR, site_root / "output")
@@ -902,10 +933,17 @@ def publish_practice_patterns(out_dir: Path) -> None:
     write_redirect_file(site_root, "output/reviewed_practice_relative_rankings.html")
 
 
-def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> None:
+def write_page(
+    out_dir: Path,
+    report_dir: Path,
+    summary: dict[str, object],
+    *,
+    skip_reviews_evidence: bool = False,
+) -> None:
     template = load_template("base.html")
     updated_value = summary.get("generated_date") or datetime.now(UTC).date().isoformat()
     published_files = publish_supporting_files(out_dir)
+    skip_ids = frozenset({"reviews-evidence"}) if skip_reviews_evidence else frozenset()
     page_html = replace_tokens(
         template,
         {
@@ -915,7 +953,7 @@ def write_page(out_dir: Path, report_dir: Path, summary: dict[str, object]) -> N
             "MAP_HREF": "map/map.html",
             "REPO_HREF": "https://github.com/bobbigmac/nhs-complaint-dec-2024",
             "STAT_CARDS": build_stat_cards(summary),
-            "ACTION_CARDS": build_action_cards(published_files),
+            "ACTION_CARDS": build_action_cards(published_files, skip_ids=skip_ids),
             "REFERENCE_CARDS": build_reference_cards(published_files),
             "ISSUE_PANELS": build_issue_panels(published_files),
             "PRINT_TOOL_HREF": TOOL_VIEWER_PATH,
@@ -947,18 +985,22 @@ def write_redirect_file(out_dir: Path, target: str) -> None:
     )
 
 
-def build_site(out_dir: Path) -> Path:
+def build_site(out_dir: Path, *, skip_reviews_evidence: bool = False) -> Path:
     report_dir = find_latest_report_dir()
     summary = load_summary(report_dir)
     build_practice_patterns()
+    if not skip_reviews_evidence:
+        build_reviews_evidence()
 
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     copy_static_assets(out_dir)
-    write_page(out_dir, report_dir, summary)
+    write_page(out_dir, report_dir, summary, skip_reviews_evidence=skip_reviews_evidence)
     publish_practice_patterns(out_dir)
+    if not skip_reviews_evidence:
+        publish_reviews_evidence(out_dir)
 
     map_out_dir = out_dir / "map"
     shutil.copytree(report_dir, map_out_dir)
@@ -974,12 +1016,17 @@ def build_site(out_dir: Path) -> Path:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build the project landing page and publish the latest map output.")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR, help="Output directory for the generated static site.")
+    parser.add_argument(
+        "--skip-reviews-evidence",
+        action="store_true",
+        help="Skip building and publishing the reviews evidence page.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    build_site(args.out)
+    build_site(args.out, skip_reviews_evidence=args.skip_reviews_evidence)
     print(args.out)
     return 0
 
