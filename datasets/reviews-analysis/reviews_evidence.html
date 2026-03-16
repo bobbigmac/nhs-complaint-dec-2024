@@ -352,6 +352,11 @@ body {
       <button type="button" class="view-toggle-btn" data-view="squares">Squares</button>
       <button type="button" class="view-toggle-btn active" data-view="treemap">Treemap</button>
     </div>
+    <label>Group:</label>
+    <div class="view-toggle" role="group" aria-label="Grouping">
+      <button type="button" class="view-toggle-btn active" data-group="practice">By practice</button>
+      <button type="button" class="view-toggle-btn" data-group="consolidated">Consolidated</button>
+    </div>
     <span id="stat-filter" style="display:none;"><span class="filter-badge">Filtered</span></span>
   </div>
 
@@ -452,21 +457,45 @@ body {
     hidePopover();
     const timespan = document.getElementById("timespan-filter").value;
     const sortMode = document.getElementById("sort-mode").value;
-    const viewMode = document.querySelector(".view-toggle-btn.active")?.dataset.view || "treemap";
+    const viewMode = document.querySelector("[aria-label='View mode'] .view-toggle-btn.active")?.dataset.view || "treemap";
+    const groupMode = document.querySelector("[aria-label='Grouping'] .view-toggle-btn.active")?.dataset.group || "practice";
     const practices = timespan ? filterByTimespan(data.practices, timespan) : data.practices;
     const acrossRaw = data.recent_reviews_across_manchester || [];
     const across = timespan ? filterAcrossByTimespan(acrossRaw, timespan) : acrossRaw;
     const sortedAcross = sortReviews(across, sortMode);
-    const acrossPractice = sortedAcross.length > 0 ? {
-      canonical_code: "_across",
-      practice_name: "Recent Reviews across Manchester",
-      gtd_managed: false,
-      gtd_takeover_date: "",
-      review_count: sortedAcross.length,
-      reviews: sortedAcross,
-      inclusion_reason: null,
-    } : null;
-    const allSections = acrossPractice ? [...practices, acrossPractice] : practices;
+
+    let allSections;
+    if (groupMode === "consolidated") {
+      const gtdPractices = practices.filter(p => p.gtd_managed);
+      const otherGood = practices.filter(p => !p.gtd_managed && p.inclusion_reason === "positive");
+      const otherPoor = practices.filter(p => !p.gtd_managed && p.inclusion_reason === "negative");
+      const mergeWithSource = (list, name, code, gtd = false) => {
+        const reviews = [];
+        for (const p of list) {
+          for (const r of p.reviews) {
+            reviews.push({ ...r, practice_name: p.practice_name, canonical_code: p.canonical_code, _source_takeover: p.gtd_takeover_date || "" });
+          }
+        }
+        return reviews.length ? { canonical_code: code, practice_name: name, gtd_managed: gtd, gtd_takeover_date: "", review_count: reviews.length, reviews, inclusion_reason: null } : null;
+      };
+      allSections = [
+        mergeWithSource(gtdPractices, "GTD practices", "_gtd", true),
+        mergeWithSource(otherGood, "Other fully reviewed (good)", "_other_good"),
+        mergeWithSource(otherPoor, "Other fully reviewed (poor)", "_other_poor"),
+        sortedAcross.length ? { canonical_code: "_recents_only", practice_name: "Other recents only", gtd_managed: false, gtd_takeover_date: "", review_count: sortedAcross.length, reviews: sortedAcross, inclusion_reason: null } : null,
+      ].filter(Boolean);
+    } else {
+      const acrossPractice = sortedAcross.length > 0 ? {
+        canonical_code: "_across",
+        practice_name: "Recent Reviews across Manchester",
+        gtd_managed: false,
+        gtd_takeover_date: "",
+        review_count: sortedAcross.length,
+        reviews: sortedAcross,
+        inclusion_reason: null,
+      } : null;
+      allSections = acrossPractice ? [...practices, acrossPractice] : practices;
+    }
     const totalReviews = allSections.reduce((n, p) => n + p.reviews.length, 0);
 
     document.getElementById("stat-practices").textContent = allSections.length;
@@ -476,11 +505,13 @@ body {
     const content = document.getElementById("content");
     content.innerHTML = "";
 
+    const effectiveSortMode = groupMode === "consolidated" ? "date" : sortMode;
     for (const practice of allSections) {
       const takeoverDate = practice.gtd_takeover_date || "";
-      const sorted = sortReviews(practice.reviews, sortMode);
+      const sorted = sortReviews(practice.reviews, effectiveSortMode);
       const bucketGroups = groupByBucket(sorted);
-      const isAcross = practice.canonical_code === "_across";
+      const isAcross = practice.canonical_code === "_across" || practice.canonical_code === "_recents_only";
+      const isConsolidated = ["_gtd", "_other_good", "_other_poor", "_across", "_recents_only"].includes(practice.canonical_code);
       const isNonGtd = !practice.gtd_managed && !isAcross;
       const inclusionReason = practice.inclusion_reason || "";
 
@@ -492,24 +523,35 @@ body {
       }
       const section = document.createElement("section");
       section.className = "practice-section";
-      if (isAcross) section.classList.add("across-manchester");
+      if (practice.canonical_code === "_recents_only") section.classList.add("across-manchester");
+      else if (practice.canonical_code === "_other_good") section.classList.add("non-gtd", "inclusion-positive");
+      else if (practice.canonical_code === "_other_poor") section.classList.add("non-gtd", "inclusion-negative");
+      else if (isAcross) section.classList.add("across-manchester");
       else if (isNonGtd) {
         section.classList.add("non-gtd");
         if (inclusionReason === "positive") section.classList.add("inclusion-positive");
         if (inclusionReason === "negative") section.classList.add("inclusion-negative");
       }
       const gtdLabel = practice.gtd_managed ? " (GTD)" : "";
-      const inclusionNote = isAcross
+      const inclusionNote = practice.canonical_code === "_recents_only"
         ? `<div class="practice-inclusion-note">Regional sanity check – all other practices aggregated</div>`
-        : isNonGtd && inclusionReason
-          ? `<div class="practice-inclusion-note">Included due to ${inclusionReason} reviews</div>`
-          : "";
+        : practice.canonical_code === "_gtd"
+          ? `<div class="practice-inclusion-note">All GTD-managed practices combined</div>`
+          : practice.canonical_code === "_other_good"
+            ? `<div class="practice-inclusion-note">Non-GTD practices with full reviews, included by positive reviews</div>`
+            : practice.canonical_code === "_other_poor"
+              ? `<div class="practice-inclusion-note">Non-GTD practices with full reviews, included by negative reviews</div>`
+              : isAcross
+                ? `<div class="practice-inclusion-note">Regional sanity check – all other practices aggregated</div>`
+                : isNonGtd && inclusionReason
+                  ? `<div class="practice-inclusion-note">Included due to ${inclusionReason} reviews</div>`
+                  : "";
       const containerClass = viewMode === "treemap" ? "treemap-container" : "buckets-table";
       section.innerHTML = `
         <div>
           <div class="practice-header">
             <h2>${escapeHtml(practice.practice_name)}${gtdLabel}</h2>
-            <span class="practice-meta">${practice.canonical_code === "_across" ? "—" : practice.canonical_code} · ${practice.review_count} reviews${takeoverDate ? " · GTD from " + takeoverDate : ""}</span>
+            <span class="practice-meta">${["_across", "_gtd", "_other_good", "_other_poor", "_recents_only"].includes(practice.canonical_code) ? "—" : practice.canonical_code} · ${practice.review_count} reviews${takeoverDate ? " · GTD from " + takeoverDate : ""}</span>
           </div>
           ${inclusionNote}
           <div class="${containerClass}"></div>
@@ -529,9 +571,10 @@ body {
           for (const r of reviews) {
             const sq = document.createElement("span");
             sq.className = "review-square rating-" + (r.rating_stars || 0);
-            if (isPreTakeover(r, takeoverDate)) sq.classList.add("pre-takeover");
+            const rTakeover = r._source_takeover || takeoverDate;
+            if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
             sq.textContent = r.rating_stars || "?";
-            const titlePrefix = isAcross && r.practice_name ? `${r.practice_name}: ` : "";
+            const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
             sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
             sq.dataset.practice = practice.canonical_code;
             sq.dataset.index = String(r._index);
@@ -551,9 +594,10 @@ body {
           for (const r of reviews) {
             const sq = document.createElement("span");
             sq.className = "review-square rating-" + (r.rating_stars || 0);
-            if (isPreTakeover(r, takeoverDate)) sq.classList.add("pre-takeover");
+            const rTakeover = r._source_takeover || takeoverDate;
+            if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
             sq.textContent = r.rating_stars || "?";
-            const titlePrefix = isAcross && r.practice_name ? `${r.practice_name}: ` : "";
+            const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
             sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
             sq.dataset.practice = practice.canonical_code;
             sq.dataset.index = String(r._index);
@@ -577,11 +621,11 @@ body {
   }
 
   function showDetail(practice, review, anchorEl) {
-    const takeoverDate = practice.gtd_takeover_date || "";
+    const takeoverDate = review._source_takeover || practice.gtd_takeover_date || "";
     const preTakeover = isPreTakeover(review, takeoverDate);
     const text = normalizeReviewText(review.text || "") || "(no text)";
-    const practiceLabel = practice.canonical_code === "_across"
-      ? `${escapeHtml(review.practice_name || "")} (${escapeHtml(review.canonical_code || "")})`
+    const practiceLabel = ["_across", "_gtd", "_other_good", "_other_poor", "_recents_only"].includes(practice.canonical_code) && review.practice_name
+      ? `${escapeHtml(review.practice_name)} (${escapeHtml(review.canonical_code || "")})`
       : escapeHtml(practice.practice_name);
     const metaStr = `<strong>${practiceLabel}</strong> · ${escapeHtml(review.author || "")} · ${escapeHtml(review.rating_label || "")} · ${escapeHtml(review.date_raw || "")}${preTakeover ? " (pre-GTD)" : ""}`;
     const bucketsStr = (review.buckets || []).map(b => BUCKET_LABELS[b] || b).join(" · ");
@@ -626,7 +670,8 @@ body {
   document.getElementById("sort-mode").addEventListener("change", render);
   document.querySelectorAll(".view-toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".view-toggle-btn").forEach(b => b.classList.remove("active"));
+      const group = btn.closest("[role='group']");
+      if (group) group.querySelectorAll(".view-toggle-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       render();
     });

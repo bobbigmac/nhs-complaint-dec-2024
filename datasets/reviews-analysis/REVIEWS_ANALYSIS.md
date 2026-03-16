@@ -46,6 +46,7 @@ Treat this as a peer to the map page: a wide-reaching tool, properly integrated 
 - [x] **Display by class/type/kind** – Grouped by `primary_bucket`; full text in expand panel.
 - [x] **Recent Reviews across Manchester** – Table below practice sections showing reviews from non-extended practices (from `google_maps_recent_reviews.json`). Each row shows practice name, code, rating, date, theme, and text preview; click to expand full text. Respects timespan and sort filters.
 - [x] **Treemap view** – Toggle between Squares (column layout) and Treemap. Treemap shows each bucket/theme as a proportional block with coloured header; blocks are sized by review count; squares remain clickable for popover.
+- [x] **Grouping toggle** – Switch between "By practice" (per-practice + others) and "Consolidated" (4 panels: GTD practices, other fully reviewed good, other fully reviewed poor, other recents-only). Lets GTD compare all its issues at once against good/poor spot-samples and regional vibes.
 
 ### Future / Deferred
 
