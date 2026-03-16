@@ -732,9 +732,7 @@ body {
     content.appendChild(tldr);
     const tldrBtn = tldr.querySelector(".tldr-toggle-summaries-btn");
     if (tldrBtn) tldrBtn.addEventListener("click", () => {
-      document.getElementById("show-summaries").checked = !isConsolidatedSummary;
-      updateHashFromControls();
-      render();
+      location.hash = isConsolidatedSummary ? "#consolidated-reviews" : "#consolidated-summaries";
     });
 
     const effectiveSortMode = groupMode === "consolidated" ? "date" : sortMode;
