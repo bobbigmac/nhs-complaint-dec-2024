@@ -1,0 +1,28 @@
+{
+  "min_text_len": 20,
+  "min_df": 2,
+  "max_df": 0.90,
+  "dbscan_eps": 0.70,
+  "dbscan_min_samples": 2,
+  "soft_assignment_min_sim": 0.12,
+  "fallback_min_sim": 0.08,
+  "fallback_min_text": 5,
+  "watch_words": [
+    "appointment",
+    "reception",
+    "prescription",
+    "referral",
+    "phone",
+    "wait",
+    "rude",
+    "results"
+  ],
+  "warn_words": [
+    "disgrace",
+    "shambles",
+    "worst",
+    "pathetic",
+    "useless",
+    "avoid"
+  ]
+}

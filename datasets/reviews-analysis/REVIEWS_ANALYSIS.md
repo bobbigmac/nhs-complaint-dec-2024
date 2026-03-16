@@ -29,12 +29,12 @@ Treat this as a peer to the map page: a wide-reaching tool, properly integrated 
 
 ### Classifier & Summariser
 
-- [x] **Lite-NLP classifier (heuristics)** – `classifier.js` with keyword-based buckets: reception, appointments, prescriptions, referrals, continuity, staff, digital, results, waiting_room, positive.
+- [x] **Graph-based classifier** – `build_classifier_graph.py` builds a similarity graph from review texts (TF-IDF + cosine similarity), clusters without predefined keywords, derives labels from top terms. See `CLASSIFIER_MODEL.md`.
 - [x] **Special-case overrides** – `classifier_overrides.json` keyed by `{canonical_code}:{reviewIndex}`.
-- [x] **Classifier in JavaScript** – Runs in Node at build time; same logic available for browser (filtering uses precomputed buckets).
+- [x] **Classifier at build time** – Python script runs at build; output merged into `raw_reviews_extended.json` with `cluster_labels`; browser uses precomputed `primary_bucket` and `buckets`.
 - [ ] **Keyword/phrase summary table** – Cross-practice theme aggregation; deferred for exploration phase.
 
-**Classifier limitations (needs work):** The current classifier is very crude. A major problem is that making "positive" its own category tends to suck the warm/positive energy out of other categories (e.g. a review praising reception gets bucketed as "positive" instead of "reception"). The classifier should be rewritten with more solid, stable rules.
+**Classifier:** Graph-based model (see `CLASSIFIER_MODEL.md`). No predefined keywords; clusters emerge from text similarity. Requires `scikit-learn`; when unavailable, uses committed `output/review_classifications.json`.
 
 ### Evidence Page UI
 
@@ -79,11 +79,12 @@ Treat this as a peer to the map page: a wide-reaching tool, properly integrated 
 datasets/reviews-analysis/
 ├── REVIEWS_ANALYSIS.md          # This file
 ├── build_reviews_evidence.py    # Orchestrates: parse txt, call classifier, emit JSON
-├── classifier.js                # Shared classifier + summariser (Node + browser)
+├── build_classifier_graph.py   # Graph-based classifier (Python)
+├── classifier.js               # Legacy heuristic (kept for reference)
 ├── classifier_overrides.json    # Optional LLM-tweakable overrides
 ├── output/
-│   ├── raw_reviews_extended.json   # Compiled reviews for extended-review practices
-│   └── reviews_evidence_summary.json  # Precomputed keyword/theme summary 
+│   ├── raw_reviews_extended.json   # Compiled reviews + merged classifications
+│   └── review_classifications.json  # Graph classifier output (cluster_labels, classifications) 
 └── (evidence page HTML/JS, or in site/? Should go into the build like all our other pages, linked via a homepage panel)
 ```
 
@@ -91,7 +92,7 @@ datasets/reviews-analysis/
 
 ## Data Flow
 
-1. **Build time:** `build_reviews_evidence.py` reads report dir, identifies practices with `full_feed`, parses `.txt` files, aggregates recent reviews from `google_maps_recent_reviews.json` for all non-extended practices into `recent_reviews_across_manchester`, runs `classifier.js` (Node) on both `practices` and `recent_reviews_across_manchester`, optionally applies overrides, writes `raw_reviews_extended.json`.
+1. **Build time:** `build_reviews_evidence.py` reads report dir, identifies practices with `full_feed`, parses `.txt` files, aggregates recent reviews from `google_maps_recent_reviews.json` into `recent_reviews_across_manchester`, runs `build_classifier_graph.py` to produce `review_classifications.json`, merges classifications into each review, writes `raw_reviews_extended.json` with `cluster_labels`.
 2. **Site build:** Copies `raw_reviews_extended.json` and evidence page assets into site output (e.g. `reviews-evidence/`).
 3. **Runtime:** Evidence page loads JSON, renders practice squares + panel, applies year filter and GTD greying; below that, renders "Recent Reviews across Manchester" table with reviews from non-extended practices (same timespan/sort filters).
 

@@ -20,7 +20,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DATASET_OUTPUT_DIR = REPO_ROOT / "datasets" / "output"
 REPORT_GLOB = "gtd-greater-manchester-gp-practice-reviews-*"
 OUTPUT_DIR = Path(__file__).resolve().parent / "output"
-CLASSIFIER_JS = Path(__file__).resolve().parent / "classifier.js"
+CLASSIFIER_GRAPH = Path(__file__).resolve().parent / "build_classifier_graph.py"
 
 
 def find_latest_report_dir() -> Path:
@@ -99,18 +99,48 @@ def parse_reviews_from_txt(content: str, *, require_full_feed: bool = True) -> l
             if star_m:
                 stars = int(star_m.group(1))
 
+            raw_text = "\n".join(text_parts)
+            stripped = strip_metadata_from_review_text(raw_text, author, date_str)
             reviews.append({
                 "author": author,
                 "date_raw": date_str,
                 "rating_stars": stars,
                 "rating_label": rating_str,
-                "text": normalize_review_text("\n".join(text_parts)),
+                "text": normalize_review_text(stripped),
             })
             i = j
         else:
             i += 1
 
     return reviews
+
+
+def strip_metadata_from_review_text(text: str, author: str, date_raw: str) -> str:
+    """Remove metadata spillage (author, review count, date, New) from text.
+    When the scraped body is the card byline instead of real review content,
+    strip known patterns from the start so we don't treat metadata as review text.
+    Only strips prefix to avoid removing phrases like '2 reviews' from real content."""
+    if not text or not isinstance(text, str):
+        return ""
+    t = text.strip()
+    if not t:
+        return ""
+    # Build prefix pattern: author? + (Local Guide)? + (N reviews · N photos?)? + (N|a) (weeks?|...) ago + New?
+    # Allow "photosa" (no space before "a" in "a month ago")
+    prefix_parts: list[str] = []
+    if author:
+        prefix_parts.append(re.escape(author))
+    prefix_parts.append(
+        r"(?:Local\s+Guide\s*(?:\·\s*)?)?"
+        r"(?:\d+\s*reviews?\s*(?:\·\s*\d+\s*photos?\s*a?)?\s*)?"
+        r"(?:\d+\s*(?:weeks?|months?|years?|days?)\s+ago|a?\s*(?:week|month|year|day)s?\s+ago)\s*"
+    )
+    prefix_parts.append(r"(?:New\s*)?")
+    prefix_re = re.compile(r"^\s*" + "".join(prefix_parts), re.I)
+    t = prefix_re.sub("", t)
+    t = re.sub(r"^\s*(?:Local\s+Guide\s*|Edited\s+)+", "", t, flags=re.I)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t if len(t) > 2 else ""
 
 
 def normalize_review_text(text: str) -> str:
@@ -284,12 +314,16 @@ def main() -> int:
                 if star_m:
                     stars = int(star_m.group(1))
                 date_raw = rev.get("relative_date", "")
+                raw_text = rev.get("text") or ""
+                stripped = strip_metadata_from_review_text(
+                    raw_text, rev.get("author", ""), date_raw
+                )
                 recent_reviews_across.append({
                     "author": rev.get("author", ""),
                     "date_raw": date_raw,
                     "rating_stars": stars,
                     "rating_label": rev.get("star_label", ""),
-                    "text": normalize_review_text(rev.get("text") or ""),
+                    "text": normalize_review_text(stripped),
                     "practice_name": practice_name,
                     "canonical_code": code,
                     "_index": len(recent_reviews_across),
@@ -307,34 +341,53 @@ def main() -> int:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     classifier_input.write_text(json.dumps(input_data, indent=2), encoding="utf-8")
 
-    overrides_path = Path(__file__).resolve().parent / "classifier_overrides.json"
-    overrides = {}
-    if overrides_path.exists():
-        overrides = json.loads(overrides_path.read_text(encoding="utf-8"))
-
-    try:
-        result = subprocess.run(
-            [
-                "node",
-                str(CLASSIFIER_JS),
-                str(classifier_input),
-                json.dumps(overrides),
-            ],
-            capture_output=True,
-            text=True,
-            cwd=REPO_ROOT,
-            timeout=60,
-        )
-        if result.returncode != 0:
-            print("Classifier failed:", result.stderr, file=sys.stderr)
+    # Run graph-based classifier (requires scikit-learn)
+    classifier_output = OUTPUT_DIR / "review_classifications.json"
+    result = subprocess.run(
+        [sys.executable, str(CLASSIFIER_GRAPH), "--input", str(classifier_input), "--output", str(classifier_output)],
+        capture_output=True,
+        text=True,
+        cwd=REPO_ROOT,
+        timeout=120,
+    )
+    if result.returncode != 0:
+        if classifier_output.exists():
+            print("Graph classifier failed (scikit-learn required); using committed fallback", file=sys.stderr)
+            print(result.stderr, file=sys.stderr)
+        else:
+            print("Graph classifier failed:", result.stderr, file=sys.stderr)
+            print("Install scikit-learn and run on a dev machine, then commit output/review_classifications.json", file=sys.stderr)
             return 1
-        classified = json.loads(result.stdout)
-    except FileNotFoundError:
-        print("Node not found; skipping classifier, outputting unclassified", file=sys.stderr)
-        classified = input_data
+    try:
+        classifications_data = json.loads(classifier_output.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
         print("Classifier output invalid JSON:", e, file=sys.stderr)
-        classified = input_data
+        return 1
+
+    cls_map = classifications_data.get("classifications", {})
+    cluster_labels = classifications_data.get("cluster_labels", {"uncategorised": "Other"})
+
+    def apply_classification(review: dict[str, Any], practice_code: str, idx: int) -> None:
+        rid = f"{practice_code}:{idx}"
+        c = cls_map.get(rid, {})
+        review["primary_bucket"] = c.get("primary_bucket", "uncategorised")
+        review["buckets"] = c.get("buckets", ["uncategorised"])
+
+    for practice in input_data["practices"]:
+        code = str(practice.get("canonical_code", ""))
+        for i, r in enumerate(practice.get("reviews") or []):
+            apply_classification(r, code, r.get("_index", i))
+
+    for i, r in enumerate(input_data.get("recent_reviews_across_manchester") or []):
+        rid = f"_across:{r.get('_index', i)}"
+        c = cls_map.get(rid, {})
+        r["primary_bucket"] = c.get("primary_bucket", "uncategorised")
+        r["buckets"] = c.get("buckets", ["uncategorised"])
+
+    classified = {
+        **input_data,
+        "cluster_labels": cluster_labels,
+    }
 
     out_path = OUTPUT_DIR / "raw_reviews_extended.json"
     out_path.write_text(json.dumps(classified, indent=2), encoding="utf-8")

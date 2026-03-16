@@ -375,20 +375,26 @@ body {
 
 <script>
 (function() {
-  const BUCKET_LABELS = {
-    reception: "Reception",
-    appointments: "Appointments",
-    prescriptions: "Prescriptions",
-    referrals: "Referrals",
-    continuity: "Continuity",
-    staff: "Staff",
-    digital: "Digital",
-    results: "Results",
-    waiting_room: "Waiting",
-    positive: "Positive",
-    uncategorised: "Other"
-  };
-  const BUCKET_ORDER = ["reception", "appointments", "prescriptions", "referrals", "continuity", "staff", "digital", "results", "waiting_room", "positive", "uncategorised"];
+  function getBucketLabels(data) {
+    return data?.cluster_labels || {
+      reception: "Reception", appointments: "Appointments", prescriptions: "Prescriptions",
+      referrals: "Referrals", continuity: "Continuity", staff: "Staff", digital: "Digital",
+      results: "Results", waiting_room: "Waiting", positive: "Positive", uncategorised: "Other"
+    };
+  }
+  function getBucketOrder(data, labels) {
+    const keys = Object.keys(labels).filter(k => k !== "uncategorised");
+    keys.sort((a, b) => {
+      if (a.startsWith("c") && b.startsWith("c")) {
+        const na = parseInt(a.slice(1), 10) || 0;
+        const nb = parseInt(b.slice(1), 10) || 0;
+        return na - nb;
+      }
+      return String(a).localeCompare(b);
+    });
+    keys.push("uncategorised");
+    return keys;
+  }
 
   let data = null;
 
@@ -425,14 +431,14 @@ body {
     return arr;
   }
 
-  function groupByBucket(reviews) {
+  function groupByBucket(reviews, bucketOrder) {
     const groups = {};
     for (const r of reviews) {
       const b = r.primary_bucket || "uncategorised";
       if (!groups[b]) groups[b] = [];
       groups[b].push(r);
     }
-    return BUCKET_ORDER.filter(b => groups[b]).map(b => ({ bucket: b, reviews: groups[b] }));
+    return (bucketOrder || Object.keys(groups)).filter(b => groups[b]).map(b => ({ bucket: b, reviews: groups[b] }));
   }
 
   function avgScore(reviews) {
@@ -455,6 +461,8 @@ body {
 
   function render() {
     hidePopover();
+    const bucketLabels = getBucketLabels(data);
+    const bucketOrder = getBucketOrder(data, bucketLabels);
     const timespan = document.getElementById("timespan-filter").value;
     const sortMode = document.getElementById("sort-mode").value;
     const viewMode = document.querySelector("[aria-label='View mode'] .view-toggle-btn.active")?.dataset.view || "treemap";
@@ -509,7 +517,7 @@ body {
     for (const practice of allSections) {
       const takeoverDate = practice.gtd_takeover_date || "";
       const sorted = sortReviews(practice.reviews, effectiveSortMode);
-      const bucketGroups = groupByBucket(sorted);
+      const bucketGroups = groupByBucket(sorted, bucketOrder);
       const isAcross = practice.canonical_code === "_across" || practice.canonical_code === "_recents_only";
       const isConsolidated = ["_gtd", "_other_good", "_other_poor", "_across", "_recents_only"].includes(practice.canonical_code);
       const isNonGtd = !practice.gtd_managed && !isAcross;
@@ -518,7 +526,7 @@ body {
       if (isAcross) {
         const warning = document.createElement("div");
         warning.className = "classifier-warning";
-        warning.innerHTML = "<strong>Classifier note:</strong> The theme classifier is crude and needs work. Treating &lsquo;positive&rsquo; as its own category tends to pull warm/positive language out of other categories (e.g. reception, appointments). The classifier should be rewritten with more solid, stable rules.";
+        warning.innerHTML = "<strong>Theme clusters:</strong> Derived from text similarity (graph model). Cluster labels are generated from top terms; no predefined keywords.";
         content.appendChild(warning);
       }
       const section = document.createElement("section");
@@ -566,7 +574,7 @@ body {
           block.className = `treemap-block bucket-${bucket}`;
           const avg = avgScore(reviews);
           const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-          block.innerHTML = `<div class="treemap-block-header ${avgClass}">${BUCKET_LABELS[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="treemap-block-body"></div>`;
+          block.innerHTML = `<div class="treemap-block-header ${avgClass}">${bucketLabels[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="treemap-block-body"></div>`;
           const body = block.querySelector(".treemap-block-body");
           for (const r of reviews) {
             const sq = document.createElement("span");
@@ -589,7 +597,7 @@ body {
           col.className = "bucket-col";
           const avg = avgScore(reviews);
           const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-          col.innerHTML = `<div class="bucket-col-header ${avgClass}">${BUCKET_LABELS[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="squares-row"></div>`;
+          col.innerHTML = `<div class="bucket-col-header ${avgClass}">${bucketLabels[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="squares-row"></div>`;
           const squaresDiv = col.querySelector(".squares-row");
           for (const r of reviews) {
             const sq = document.createElement("span");
@@ -621,6 +629,7 @@ body {
   }
 
   function showDetail(practice, review, anchorEl) {
+    const bucketLabels = getBucketLabels(data);
     const takeoverDate = review._source_takeover || practice.gtd_takeover_date || "";
     const preTakeover = isPreTakeover(review, takeoverDate);
     const text = normalizeReviewText(review.text || "") || "(no text)";
@@ -628,7 +637,7 @@ body {
       ? `${escapeHtml(review.practice_name)} (${escapeHtml(review.canonical_code || "")})`
       : escapeHtml(practice.practice_name);
     const metaStr = `<strong>${practiceLabel}</strong> · ${escapeHtml(review.author || "")} · ${escapeHtml(review.rating_label || "")} · ${escapeHtml(review.date_raw || "")}${preTakeover ? " (pre-GTD)" : ""}`;
-    const bucketsStr = (review.buckets || []).map(b => BUCKET_LABELS[b] || b).join(" · ");
+    const bucketsStr = (review.buckets || []).map(b => bucketLabels[b] || b).join(" · ");
 
     document.getElementById("review-popover-meta").innerHTML = metaStr;
     document.getElementById("review-popover-body").innerHTML = `<div class="detail-text">${escapeHtml(text)}</div>`;
