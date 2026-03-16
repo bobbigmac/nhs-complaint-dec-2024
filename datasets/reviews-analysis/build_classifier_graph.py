@@ -176,6 +176,55 @@ def build_classifier(input_path: Path, output_path: Path) -> dict[str, Any]:
                 rid = ids[valid[vi]]
                 id_to_cluster[rid] = best_cid
 
+    # Merge small clusters into nearest neighbor until each has at least min_cluster_size.
+    # Allows "absolutely disgusting" and "absolute disgrace" to bucket together when close in vector space.
+    min_cluster_size = config.get("min_cluster_size", 5)
+    merge_similarity_threshold = config.get("merge_similarity_threshold", 0.35)
+    if min_cluster_size > 1 and merge_similarity_threshold > 0:
+        max_merges = 200
+        for _ in range(max_merges):
+            cid_to_valid_indices: dict[str, list[int]] = {}
+            for vi, lab in enumerate(labels):
+                if lab >= 0:
+                    cid = id_to_cluster.get(ids[valid[vi]], f"c{lab}")
+                    cid_to_valid_indices.setdefault(cid, []).append(vi)
+            small = [c for c, m in cid_to_valid_indices.items() if len(m) < min_cluster_size]
+            if not small:
+                break
+            centroids_arr = {
+                cid: X_valid[members].toarray().mean(axis=0)
+                for cid, members in cid_to_valid_indices.items()
+            }
+            merged_any = False
+            for cid in small:
+                cent = centroids_arr.get(cid)
+                if cent is None:
+                    continue
+                best_target = None
+                best_sim = merge_similarity_threshold
+                for other, ocent in centroids_arr.items():
+                    if other == cid:
+                        continue
+                    s = float(np.dot(cent, ocent) / (np.linalg.norm(cent) * np.linalg.norm(ocent) + 1e-9))
+                    if s >= best_sim:
+                        take = (
+                            best_target is None
+                            or s > best_sim
+                            or len(cid_to_valid_indices.get(other, []))
+                            > len(cid_to_valid_indices.get(best_target, []))
+                        )
+                        if take:
+                            best_sim = s
+                            best_target = other
+                if best_target:
+                    for rid in ids:
+                        if id_to_cluster.get(rid) == cid:
+                            id_to_cluster[rid] = best_target
+                    merged_any = True
+                    break
+            if not merged_any:
+                break
+
     cluster_terms: dict[str, list[tuple[str, float]]] = {}
     for vi, lab in enumerate(labels):
         if lab == -1:
@@ -271,10 +320,51 @@ def build_classifier(input_path: Path, output_path: Path) -> dict[str, Any]:
             "sentiment": sentiment_from_rating(stars),
         }
 
+    # Operational rollup: map graph cluster labels to staff-facing taxonomy
+    default_bucket = config.get("default_bucket", "uncategorised")
+    rollup_rules = config.get("cluster_rollup_rules", [])
+    primary_rules = [r for r in rollup_rules if not r.get("fallback_only")]
+    fallback_rules = [r for r in rollup_rules if r.get("fallback_only")]
+    rid_to_stars = {rid: stars for rid, _text, stars in reviews}
+    if rollup_rules:
+        for rid, c in classifications.items():
+            cid = c.get("cluster_id", "uncategorised")
+            label = cluster_labels.get(cid, "").lower()
+            stars = rid_to_stars.get(rid, 0)
+            best = None
+            best_conf = 0.0
+            for rule in primary_rules:
+                keywords = [k.lower() for k in rule.get("when_cluster_label_matches_any", [])]
+                if any(kw in label for kw in keywords):
+                    conf = float(rule.get("confidence", 0.5))
+                    if conf > best_conf:
+                        best_conf = conf
+                        best = rule
+            if not best and fallback_rules:
+                for rule in fallback_rules:
+                    if rule.get("operational_category") == "positive_feedback" and stars <= 2:
+                        continue
+                    keywords = [k.lower() for k in rule.get("when_cluster_label_matches_any", [])]
+                    if any(kw in label for kw in keywords):
+                        conf = float(rule.get("confidence", 0.5))
+                        if conf > best_conf:
+                            best_conf = conf
+                            best = rule
+            if best:
+                c["operational_category"] = best.get("operational_category", default_bucket)
+                c["subcategory"] = best.get("subcategory", "")
+                c["operational_confidence"] = best_conf
+            else:
+                c["operational_category"] = default_bucket
+                c["subcategory"] = ""
+                c["operational_confidence"] = 0.0
+
+    taxonomy_version = config.get("taxonomy_version", "")
     out = {
         "meta": {
             "generated_date": data.get("generated_date", ""),
             "model": "graph",
+            "taxonomy_version": taxonomy_version,
             "cluster_count": len([v for v in set(id_to_cluster.values()) if v != "uncategorised"]),
         },
         "cluster_labels": cluster_labels,

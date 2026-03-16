@@ -21,6 +21,7 @@ DATASET_OUTPUT_DIR = REPO_ROOT / "datasets" / "output"
 REPORT_GLOB = "gtd-greater-manchester-gp-practice-reviews-*"
 OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 CLASSIFIER_GRAPH = Path(__file__).resolve().parent / "build_classifier_graph.py"
+OPERATIONAL_TAXONOMY = Path(__file__).resolve().parent / "operational_taxonomy.json"
 
 
 def find_latest_report_dir() -> Path:
@@ -170,6 +171,67 @@ def _parse_months_ago(date_raw: str) -> int | None:
     return None
 
 
+def _review_dedup_key(r: dict[str, Any]) -> tuple[str, str, str]:
+    """Stable key for deduplication: (author, date_raw, text_prefix)."""
+    author = (r.get("author") or "").strip()
+    date_raw = (r.get("date_raw") or r.get("relative_date") or "").strip()
+    text = (r.get("text") or "").strip()[:300]
+    return (author, date_raw, text)
+
+
+def _author_date_key(r: dict[str, Any]) -> tuple[str, str]:
+    author = (r.get("author") or "").strip()
+    date_raw = (r.get("date_raw") or r.get("relative_date") or "").strip()
+    return (author, date_raw)
+
+
+def _text_matches_for_dedup(text_a: str, text_b: str) -> bool:
+    """True if both texts refer to the same review (equal, prefix, or truncated with …)."""
+    a, b = text_a.strip(), text_b.strip()
+    if a == b:
+        return True
+    if a.startswith(b) or b.startswith(a):
+        return True
+    # Truncated form ends with …; full form starts with the content before …
+    if a.endswith("…") and b.startswith(a[:-1].rstrip()):
+        return True
+    if b.endswith("…") and a.startswith(b[:-1].rstrip()):
+        return True
+    return False
+
+
+def dedupe_reviews(reviews: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Remove duplicates. When one text is a prefix of another (same author+date), keep the longer."""
+    groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
+    for r in reviews:
+        k = _author_date_key(r)
+        groups.setdefault(k, []).append(r)
+
+    out: list[dict[str, Any]] = []
+    for group in groups.values():
+        sorted_group = sorted(group, key=lambda r: len((r.get("text") or "").strip()), reverse=True)
+        kept: list[dict[str, Any]] = []
+        for r in sorted_group:
+            text = (r.get("text") or "").strip()
+            if any(_text_matches_for_dedup((k.get("text") or "").strip(), text) for k in kept):
+                continue
+            kept.append(r)
+        out.extend(kept)
+    return out
+
+
+def _is_duplicate_of(r: dict[str, Any], others: list[dict[str, Any]]) -> bool:
+    """True if r is same review as any in others (same author+date, one text prefix of other)."""
+    key = _author_date_key(r)
+    text = (r.get("text") or "").strip()
+    for o in others:
+        if _author_date_key(o) != key:
+            continue
+        if _text_matches_for_dedup(text, (o.get("text") or "").strip()):
+            return True
+    return False
+
+
 def estimate_review_year(date_raw: str, reference_date: str = "2026-03-16") -> int | None:
     """Estimate approximate year from relative date like '2 months ago', 'Edited a year ago'."""
     months_ago = _parse_months_ago(date_raw)
@@ -223,7 +285,7 @@ def main() -> int:
         gtd_managed = bool(practice.get("gtd_managed", False))
         gtd_takeover_date = practice.get("gtd_takeover_date") or ""
 
-        reviews = parse_reviews_from_txt(content)
+        reviews = dedupe_reviews(parse_reviews_from_txt(content))
         for i, r in enumerate(reviews):
             r["_index"] = i
             r["estimated_year"] = estimate_review_year(r["date_raw"], generated_date)
@@ -268,7 +330,7 @@ def main() -> int:
         if not txt_path.exists():
             continue
         content = txt_path.read_text(encoding="utf-8")
-        reviews = parse_reviews_from_txt(content, require_full_feed=False)
+        reviews = dedupe_reviews(parse_reviews_from_txt(content, require_full_feed=False))
         if not reviews:
             continue
         for i, r in enumerate(reviews):
@@ -330,6 +392,11 @@ def main() -> int:
                     "estimated_year": estimate_review_year(date_raw, generated_date),
                     "estimated_months_ago": _parse_months_ago(date_raw),
                 })
+        recent_reviews_across = dedupe_reviews(recent_reviews_across)
+        all_practice_reviews = [r for p in practices_with_reviews for r in p.get("reviews", [])]
+        recent_reviews_across = [r for r in recent_reviews_across if not _is_duplicate_of(r, all_practice_reviews)]
+        for i, r in enumerate(recent_reviews_across):
+            r["_index"] = i
 
     # Run classifier
     input_data = {
@@ -366,12 +433,17 @@ def main() -> int:
 
     cls_map = classifications_data.get("classifications", {})
     cluster_labels = classifications_data.get("cluster_labels", {"uncategorised": "Other"})
+    meta = classifications_data.get("meta", {})
+    taxonomy_version = meta.get("taxonomy_version", "")
 
     def apply_classification(review: dict[str, Any], practice_code: str, idx: int) -> None:
         rid = f"{practice_code}:{idx}"
         c = cls_map.get(rid, {})
         review["primary_bucket"] = c.get("primary_bucket", "uncategorised")
         review["buckets"] = c.get("buckets", ["uncategorised"])
+        review["operational_category"] = c.get("operational_category", "uncategorised")
+        review["subcategory"] = c.get("subcategory", "")
+        review["operational_confidence"] = c.get("operational_confidence", 0.0)
 
     for practice in input_data["practices"]:
         code = str(practice.get("canonical_code", ""))
@@ -383,10 +455,19 @@ def main() -> int:
         c = cls_map.get(rid, {})
         r["primary_bucket"] = c.get("primary_bucket", "uncategorised")
         r["buckets"] = c.get("buckets", ["uncategorised"])
+        r["operational_category"] = c.get("operational_category", "uncategorised")
+        r["subcategory"] = c.get("subcategory", "")
+        r["operational_confidence"] = c.get("operational_confidence", 0.0)
+
+    operational_taxonomy: dict[str, Any] = {}
+    if OPERATIONAL_TAXONOMY.exists():
+        operational_taxonomy = json.loads(OPERATIONAL_TAXONOMY.read_text(encoding="utf-8"))
 
     classified = {
         **input_data,
         "cluster_labels": cluster_labels,
+        "taxonomy_version": taxonomy_version,
+        "operational_taxonomy": operational_taxonomy,
     }
 
     out_path = OUTPUT_DIR / "raw_reviews_extended.json"
