@@ -233,6 +233,15 @@ body {
 .summary-report .summary-stats .distribution-bar { display: flex; height: 26px; overflow: hidden; background: var(--border); }
 .summary-report .summary-stats .distribution-bar span { flex-shrink: 0; min-width: 2px; }
 .summary-report .summary-stats .distribution-bar span[title] { cursor: help; }
+@media print {
+  .summary-report .distribution-bar span { background: transparent !important; }
+  .summary-report .distribution-bar .bar-rating-1 { background: repeating-linear-gradient(90deg, var(--low) 0, var(--low) 2px, transparent 2px, transparent 6px) !important; }
+  .summary-report .distribution-bar .bar-rating-2 { background: repeating-linear-gradient(90deg, var(--midlow) 0, var(--midlow) 2px, transparent 2px, transparent 6px) !important; }
+  .summary-report .distribution-bar .bar-rating-3 { background: repeating-linear-gradient(90deg, var(--midhigh) 0, var(--midhigh) 2px, transparent 2px, transparent 6px) !important; }
+  .summary-report .distribution-bar .bar-rating-4 { background: repeating-linear-gradient(90deg, var(--high) 0, var(--high) 2px, transparent 2px, transparent 6px) !important; }
+  .summary-report .distribution-bar .bar-rating-5 { background: repeating-linear-gradient(90deg, var(--veryhigh) 0, var(--veryhigh) 2px, transparent 2px, transparent 6px) !important; }
+  .summary-report .distribution-bar .bar-rating-0 { background: repeating-linear-gradient(90deg, var(--missing) 0, var(--missing) 2px, transparent 2px, transparent 6px) !important; }
+}
 .summary-report .cited-reviews-details { margin-top: 16px; font-size: 13px; }
 .summary-report .cited-reviews-details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
 .summary-report .cited-reviews-details .footnotes { padding-top: 12px; border-top: 1px solid var(--border); font-size: 12px; color: var(--ink-muted); }
@@ -561,7 +570,7 @@ body {
       if (n === 0) continue;
       const pct = total ? (100 * n / total).toFixed(1) : 0;
       const label = s === 0 ? "?" : s + "★";
-      barHtml += `<span style="flex: ${n} 1 0; background: ${colors[s]}" title="${label}: ${n} (${pct}%)"></span>`;
+      barHtml += `<span class="bar-rating-${s}" style="flex: ${n} 1 0; background: ${colors[s]}" title="${label}: ${n} (${pct}%)"></span>`;
     }
     return `<div class="summary-stats"><div class="stats-count">${total} reviews</div><div class="distribution-bar">${barHtml || '<span style="flex:1;background:var(--border)"></span>'}</div></div>`;
   }
