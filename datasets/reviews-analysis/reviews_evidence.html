@@ -127,6 +127,11 @@ body {
   color: var(--ink-muted);
   margin-top: 4px;
 }
+.tldr-section { border-left: 4px solid var(--accent); }
+.tldr-content { padding: 12px 14px; font-size: 14px; line-height: 1.6; }
+.tldr-heading { margin: 0 0 10px; font-size: 16px; font-weight: 600; color: var(--accent); }
+.tldr-content p { margin: 0 0 12px; }
+.tldr-content p:last-child { margin-bottom: 0; }
 .practice-header {
   display: flex;
   align-items: baseline;
@@ -728,6 +733,20 @@ body {
       }
       content.appendChild(section);
     }
+    if (groupMode === "consolidated") {
+      const tldr = document.createElement("section");
+      tldr.className = "practice-section tldr-section";
+      tldr.innerHTML = `
+        <div class="tldr-content">
+          <h2 class="tldr-heading">TL;DR</h2>
+          <p>Across reviews of GTD-managed practices, the main pattern is cumulative failure rather than one isolated complaint. Reviewers describe practices that are hard to reach, hard to navigate, and often hard to rely on once contact is made. Problems with access, front-desk handling, admin follow-through, referrals, medicines, tests, and continuity tend to stack together, so frustration is often described not as delay alone but as a service that feels obstructive, fragmented, and unreliable.</p>
+          <p>Some themes carry particular weight. Front-desk interactions are a major source of distrust because reviewers often feel blocked, dismissed, or embarrassed at the very point they are trying to enter care. Admin and referral problems matter because they appear to distort care after contact, with patients describing lost paperwork, missed follow-up, and having to coordinate the system themselves. Medicines, tests, and parts of clinical care push the concern further, because the reviews there are often about risk as much as inconvenience.</p>
+          <p>The positive reviews do not really overturn that picture. They mostly praise individual staff for kindness, reassurance, listening, and professionalism, rather than suggesting the wider systems work consistently well. So the overall impression from the reviews is that GTD practices do still generate gratitude at the level of individual encounters, but the dominant reputation is of services where weak systems repeatedly wear down confidence, continuity, and, in some cases, safety.</p>
+        </div>
+      `;
+      const first = content.firstElementChild;
+      if (first) first.after(tldr); else content.appendChild(tldr);
+    }
   }
 
   function normalizeReviewText(text) {
@@ -805,20 +824,63 @@ body {
     return String(s).replace(/"/g, "&quot;");
   }
 
+  function applyHashToControls() {
+    const h = (location.hash || "").slice(1).toLowerCase();
+    if (!h) return;
+    const parts = h.split("-");
+    if (parts.includes("consolidated")) {
+      document.querySelector("[aria-label='Grouping'] .view-toggle-btn[data-group='consolidated']")?.classList.add("active");
+      document.querySelector("[aria-label='Grouping'] .view-toggle-btn[data-group='practice']")?.classList.remove("active");
+    } else if (parts.includes("practice")) {
+      document.querySelector("[aria-label='Grouping'] .view-toggle-btn[data-group='practice']")?.classList.add("active");
+      document.querySelector("[aria-label='Grouping'] .view-toggle-btn[data-group='consolidated']")?.classList.remove("active");
+    }
+    if (parts.includes("cluster")) {
+      document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn[data-theme='cluster']")?.classList.add("active");
+      document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn[data-theme='operational']")?.classList.remove("active");
+    } else if (parts.includes("operational") || parts.includes("consolidated")) {
+      document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn[data-theme='operational']")?.classList.add("active");
+      document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn[data-theme='cluster']")?.classList.remove("active");
+    }
+    if (parts.includes("summaries") || (parts.includes("consolidated") && !parts.includes("reviews"))) {
+      const cb = document.getElementById("show-summaries");
+      if (cb) cb.checked = true;
+    } else if (parts.includes("reviews")) {
+      const cb = document.getElementById("show-summaries");
+      if (cb) cb.checked = false;
+    }
+  }
+
+  function updateHashFromControls() {
+    const group = document.querySelector("[aria-label='Grouping'] .view-toggle-btn.active")?.dataset.group || "practice";
+    const theme = document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn.active")?.dataset.theme || "operational";
+    const summaries = document.getElementById("show-summaries")?.checked ?? true;
+    let h = group === "consolidated" ? "consolidated" : "practice";
+    if (group === "consolidated" && theme === "operational") {
+      h += summaries ? "-summaries" : "-reviews";
+    } else if (theme === "cluster") {
+      h += "-cluster";
+    }
+    const newHash = "#" + h;
+    if (location.hash !== newHash) location.hash = newHash;
+  }
+
   document.getElementById("timespan-filter").addEventListener("change", render);
   document.getElementById("sort-mode").addEventListener("change", render);
   document.getElementById("exclude-non-gtd").addEventListener("change", render);
   document.getElementById("hide-practice-replies").addEventListener("change", render);
   document.getElementById("show-in-all-categories").addEventListener("change", render);
-  document.getElementById("show-summaries")?.addEventListener("change", render);
+  document.getElementById("show-summaries")?.addEventListener("change", () => { updateHashFromControls(); render(); });
   document.querySelectorAll(".view-toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const group = btn.closest("[role='group']");
       if (group) group.querySelectorAll(".view-toggle-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
+      updateHashFromControls();
       render();
     });
   });
+  window.addEventListener("hashchange", () => { applyHashToControls(); if (data) render(); });
   document.getElementById("review-popover-close").addEventListener("click", hidePopover);
   document.getElementById("review-popover-backdrop").addEventListener("click", hidePopover);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") hidePopover(); });
@@ -830,6 +892,7 @@ body {
   });
 
   async function load() {
+    applyHashToControls();
     const res = await fetch("raw_reviews_extended.json");
     if (!res.ok) throw new Error("Failed to load data");
     data = await res.json();
