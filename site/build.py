@@ -915,12 +915,36 @@ def build_reviews_evidence() -> None:
     )
 
 
+def build_gtd_summaries_json() -> dict[str, object]:
+    """Read GTD summary MD files, convert to HTML. Plugin: optional summaries for consolidated view."""
+    summaries_dir = REVIEWS_ANALYSIS_DIR / "gtd_summaries"
+    if not summaries_dir.exists():
+        return {"summaries": {}, "manifest": []}
+    summaries: dict[str, str] = {}
+    for md_path in sorted(summaries_dir.glob("*.md")):
+        slug = md_path.stem
+        text = md_path.read_text(encoding="utf-8")
+        html, _ = markdown_to_html(text, drop_first_h1=False)
+        summaries[slug] = html
+    manifest: list[dict[str, object]] = []
+    manifest_path = summaries_dir / "manifest.json"
+    if manifest_path.exists():
+        data = json.loads(manifest_path.read_text(encoding="utf-8"))
+        manifest = list(data.get("entries", []))
+    return {"summaries": summaries, "manifest": manifest}
+
+
 def publish_reviews_evidence(out_dir: Path) -> None:
     site_root = out_dir / REVIEWS_EVIDENCE_SITE_DIR
     site_root.mkdir(parents=True, exist_ok=True)
     output_dir = REVIEWS_ANALYSIS_DIR / "output"
     if (output_dir / "raw_reviews_extended.json").exists():
         shutil.copy2(output_dir / "raw_reviews_extended.json", site_root / "raw_reviews_extended.json")
+    summaries_data = build_gtd_summaries_json()
+    if summaries_data.get("summaries"):
+        (site_root / "gtd_summaries.json").write_text(
+            json.dumps(summaries_data, indent=2), encoding="utf-8"
+        )
     html_source = REVIEWS_ANALYSIS_DIR / "reviews_evidence.html"
     if html_source.exists():
         shutil.copy2(html_source, site_root / "index.html")

@@ -183,6 +183,17 @@ body {
 .review-square.rating-4 { background: var(--high); color: #fff; }
 .review-square.rating-5 { background: var(--veryhigh); color: #fff; }
 .review-square.rating-0 { background: var(--missing); color: #fff; }
+.summary-report {
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.summary-report h2, .summary-report h3 { margin: 12px 0 6px; font-size: 15px; }
+.summary-report h2:first-child, .summary-report h3:first-child { margin-top: 0; }
+.summary-report p { margin: 0 0 8px; }
+.summary-report ul { margin: 4px 0 12px; padding-left: 20px; }
+.summary-report blockquote { margin: 8px 0; padding-left: 12px; border-left: 3px solid var(--border); color: var(--ink-muted); }
 .review-popover {
   display: none;
   position: fixed;
@@ -361,6 +372,7 @@ body {
         <button type="button" class="view-toggle-btn" data-theme="cluster">Cluster evidence</button>
       </div>
       <span id="show-in-all-categories-wrap"><label class="checkbox-label"><input type="checkbox" id="show-in-all-categories" title="Show each review as a square in every category it touches"> Show in all categories</label></span>
+      <span id="summaries-wrap"><label class="checkbox-label"><input type="checkbox" id="show-summaries" checked title="Show formal report summaries instead of review squares (GTD consolidated operational only)"> Summaries</label></span>
     </div>
   </div>
 
@@ -420,6 +432,7 @@ body {
   }
 
   let data = null;
+  let summariesData = null;
 
   function isPreTakeover(review, takeoverDate) {
     if (!takeoverDate) return false;
@@ -498,8 +511,11 @@ body {
     hidePopover();
     const themeMode = document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn.active")?.dataset.theme || "operational";
     const multiCategory = themeMode === "operational" && (document.getElementById("show-in-all-categories")?.checked ?? false);
+    const groupMode = document.querySelector("[aria-label='Grouping'] .view-toggle-btn.active")?.dataset.group || "practice";
     const wrap = document.getElementById("show-in-all-categories-wrap");
     if (wrap) wrap.style.display = themeMode === "cluster" ? "none" : "";
+    const summariesWrap = document.getElementById("summaries-wrap");
+    if (summariesWrap) summariesWrap.style.display = (groupMode === "consolidated" && themeMode === "operational") ? "" : "none";
     const bucketLabels = getBucketLabels(data);
     const operationalLabels = getOperationalLabels(data);
     const bucketOrder = getBucketOrder(data, bucketLabels);
@@ -509,7 +525,6 @@ body {
     const groupBy = themeMode === "operational" ? (reviews, ord) => groupByOperational(reviews, ord, multiCategory) : groupByBucket;
     const timespan = document.getElementById("timespan-filter").value;
     const sortMode = document.getElementById("sort-mode").value;
-    const groupMode = document.querySelector("[aria-label='Grouping'] .view-toggle-btn.active")?.dataset.group || "practice";
     const hidePracticeReplies = document.getElementById("hide-practice-replies")?.checked ?? true;
     let practices = timespan ? filterByTimespan(data.practices, timespan) : data.practices;
     let acrossRaw = data.recent_reviews_across_manchester || [];
@@ -628,6 +643,8 @@ body {
       `;
 
       const container = section.querySelector(`.${containerClass}`);
+      const showSummaries = document.getElementById("show-summaries")?.checked ?? true;
+      const useSummary = isConsolidated && practice.canonical_code === "_gtd" && showSummaries && summariesData?.summaries;
 
       for (const { bucket, reviews } of bucketGroups) {
         const block = document.createElement("div");
@@ -638,20 +655,25 @@ body {
         const blockHeader = block.querySelector(".treemap-block-header");
         blockHeader.dataset.original = blockHeader.querySelector(".header-label").textContent;
         const body = block.querySelector(".treemap-block-body");
-        for (const r of reviews) {
-          const sq = document.createElement("span");
-          sq.className = "review-square rating-" + (r.rating_stars || 0);
-          const rTakeover = r._source_takeover || takeoverDate;
-          if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
-          sq.textContent = r.rating_stars || "?";
-          const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
-          sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
-          sq.dataset.practice = practice.canonical_code;
-          sq.dataset.index = String(r._index);
-          sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
-          sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
-          sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
-          body.appendChild(sq);
+        const summaryHtml = useSummary && summariesData.summaries[bucket];
+        if (summaryHtml) {
+          body.innerHTML = `<div class="summary-report">${summaryHtml}</div>`;
+        } else {
+          for (const r of reviews) {
+            const sq = document.createElement("span");
+            sq.className = "review-square rating-" + (r.rating_stars || 0);
+            const rTakeover = r._source_takeover || takeoverDate;
+            if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
+            sq.textContent = r.rating_stars || "?";
+            const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
+            sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
+            sq.dataset.practice = practice.canonical_code;
+            sq.dataset.index = String(r._index);
+            sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
+            sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
+            sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
+            body.appendChild(sq);
+          }
         }
         container.appendChild(block);
       }
@@ -739,6 +761,7 @@ body {
   document.getElementById("exclude-non-gtd").addEventListener("change", render);
   document.getElementById("hide-practice-replies").addEventListener("change", render);
   document.getElementById("show-in-all-categories").addEventListener("change", render);
+  document.getElementById("show-summaries")?.addEventListener("change", render);
   document.querySelectorAll(".view-toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const group = btn.closest("[role='group']");
@@ -755,6 +778,10 @@ body {
     const res = await fetch("raw_reviews_extended.json");
     if (!res.ok) throw new Error("Failed to load data");
     data = await res.json();
+    try {
+      const sRes = await fetch("gtd_summaries.json");
+      if (sRes.ok) summariesData = await sRes.json();
+    } catch (_) { /* summaries optional */ }
     render();
   }
 

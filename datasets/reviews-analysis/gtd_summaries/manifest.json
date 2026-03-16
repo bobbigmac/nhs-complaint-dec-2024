@@ -1,0 +1,60 @@
+{
+  "slugs": [
+    "access",
+    "front_desk",
+    "clinical_care",
+    "admin_and_referrals",
+    "medicines_and_tests",
+    "on_site_experience",
+    "management_and_change",
+    "positive_feedback",
+    "uncategorised"
+  ],
+  "entries": [
+    {
+      "slug": "access",
+      "label": "Access",
+      "review_count": 417
+    },
+    {
+      "slug": "front_desk",
+      "label": "Reception and front desk",
+      "review_count": 311
+    },
+    {
+      "slug": "clinical_care",
+      "label": "Clinical care",
+      "review_count": 379
+    },
+    {
+      "slug": "admin_and_referrals",
+      "label": "Admin and referrals",
+      "review_count": 127
+    },
+    {
+      "slug": "medicines_and_tests",
+      "label": "Medicines and tests",
+      "review_count": 122
+    },
+    {
+      "slug": "on_site_experience",
+      "label": "On-site experience",
+      "review_count": 25
+    },
+    {
+      "slug": "management_and_change",
+      "label": "Management and system change",
+      "review_count": 51
+    },
+    {
+      "slug": "positive_feedback",
+      "label": "Positive feedback",
+      "review_count": 86
+    },
+    {
+      "slug": "uncategorised",
+      "label": "Other",
+      "review_count": 144
+    }
+  ]
+}
