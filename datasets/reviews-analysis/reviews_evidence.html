@@ -223,6 +223,8 @@ body {
 .summary-report .fnref:hover { text-decoration: underline; }
 .summary-report .summary-stats { margin-bottom: 14px; font-size: 13px; }
 .summary-report .summary-stats .stats-count { font-weight: 600; color: var(--ink-muted); margin-bottom: 6px; }
+.summary-report .category-report { font-size: 13px; color: var(--ink-muted); margin-top: 10px; }
+.treemap-block.compact-overview .treemap-block-body { padding: 6px; }
 .summary-report .summary-stats .distribution-bar { display: flex; height: 26px; overflow: hidden; background: var(--border); }
 .summary-report .summary-stats .distribution-bar span { flex-shrink: 0; min-width: 2px; }
 .summary-report .summary-stats .distribution-bar span[title] { cursor: help; }
@@ -557,6 +559,26 @@ body {
     return `<div class="summary-stats"><div class="stats-count">${total} reviews</div><div class="distribution-bar">${barHtml || '<span style="flex:1;background:var(--border)"></span>'}</div></div>`;
   }
 
+  function buildCategoryReport(reviews, operationalLabels) {
+    const catCounts = {};
+    for (const r of reviews) {
+      const cats = r.operational_categories || [r.operational_category || "uncategorised"];
+      for (const c of cats) {
+        const key = (c || "uncategorised").trim();
+        catCounts[key] = (catCounts[key] || 0) + 1;
+      }
+    }
+    const total = reviews.length;
+    if (total === 0) return "";
+    const sorted = Object.entries(catCounts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+    const items = sorted.map(([k, n]) => {
+      const pct = (100 * n / total).toFixed(0);
+      const label = operationalLabels[k] || k;
+      return `${label} ${pct}%`;
+    });
+    return `<div class="category-report"><strong>By theme:</strong> ${items.join(" · ")}</div>`;
+  }
+
   function filterAcrossByTimespan(across, yearsBack) {
     if (!yearsBack || !across) return across || [];
     const n = parseInt(yearsBack, 10);
@@ -697,39 +719,50 @@ body {
       const container = section.querySelector(`.${containerClass}`);
       const showSummaries = document.getElementById("show-summaries")?.checked ?? true;
       const useSummary = isConsolidated && practice.canonical_code === "_gtd" && showSummaries && summariesData?.summaries;
+      const useCompactOverview = isConsolidated && showSummaries && ["_other_good", "_other_poor", "_recents_only"].includes(practice.canonical_code);
 
-      for (const { bucket, reviews } of bucketGroups) {
+      if (useCompactOverview) {
         const block = document.createElement("div");
-        block.className = `treemap-block bucket-${bucket}`;
-        const avg = avgScore(reviews);
-        const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-        block.innerHTML = `<div class="treemap-block-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="treemap-block-body"></div>`;
-        const blockHeader = block.querySelector(".treemap-block-header");
-        blockHeader.dataset.original = blockHeader.querySelector(".header-label").textContent;
-        const body = block.querySelector(".treemap-block-body");
-        const summaryHtml = useSummary && summariesData.summaries[bucket];
-        if (summaryHtml) {
-          block.classList.add("has-summary");
-          const statsHtml = buildSummaryStats(reviews);
-          body.innerHTML = `<div class="summary-report">${statsHtml}${summaryHtml}</div>`;
-        } else {
-          for (const r of reviews) {
-            const sq = document.createElement("span");
-            sq.className = "review-square rating-" + (r.rating_stars || 0);
-            const rTakeover = r._source_takeover || takeoverDate;
-            if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
-            sq.textContent = r.rating_stars || "?";
-            const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
-            sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
-            sq.dataset.practice = practice.canonical_code;
-            sq.dataset.index = String(r._index);
-            sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
-            sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
-            sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
-            body.appendChild(sq);
-          }
-        }
+        block.className = "treemap-block compact-overview";
+        block.classList.add("has-summary");
+        const statsHtml = buildSummaryStats(practice.reviews);
+        const categoryHtml = buildCategoryReport(practice.reviews, operationalLabels);
+        block.innerHTML = `<div class="treemap-block-body"><div class="summary-report">${statsHtml}${categoryHtml}</div></div>`;
         container.appendChild(block);
+      } else {
+        for (const { bucket, reviews } of bucketGroups) {
+          const block = document.createElement("div");
+          block.className = `treemap-block bucket-${bucket}`;
+          const avg = avgScore(reviews);
+          const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
+          block.innerHTML = `<div class="treemap-block-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="treemap-block-body"></div>`;
+          const blockHeader = block.querySelector(".treemap-block-header");
+          blockHeader.dataset.original = blockHeader.querySelector(".header-label").textContent;
+          const body = block.querySelector(".treemap-block-body");
+          const summaryHtml = useSummary && summariesData.summaries[bucket];
+          if (summaryHtml) {
+            block.classList.add("has-summary");
+            const statsHtml = buildSummaryStats(reviews);
+            body.innerHTML = `<div class="summary-report">${statsHtml}${summaryHtml}</div>`;
+          } else {
+            for (const r of reviews) {
+              const sq = document.createElement("span");
+              sq.className = "review-square rating-" + (r.rating_stars || 0);
+              const rTakeover = r._source_takeover || takeoverDate;
+              if (isPreTakeover(r, rTakeover)) sq.classList.add("pre-takeover");
+              sq.textContent = r.rating_stars || "?";
+              const titlePrefix = isConsolidated && r.practice_name ? `${r.practice_name}: ` : "";
+              sq.title = `${titlePrefix}${r.rating_label || ""} – ${(r.text || "").slice(0, 50)}…`;
+              sq.dataset.practice = practice.canonical_code;
+              sq.dataset.index = String(r._index);
+              sq.addEventListener("click", (e) => showDetail(practice, r, e.currentTarget));
+              sq.addEventListener("mouseenter", () => setHeaderPreview(sq, r, true));
+              sq.addEventListener("mouseleave", () => setHeaderPreview(sq, null, false));
+              body.appendChild(sq);
+            }
+          }
+          container.appendChild(block);
+        }
       }
       content.appendChild(section);
     }
