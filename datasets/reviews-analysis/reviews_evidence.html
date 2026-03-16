@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Reviews Evidence – Extended Practice Reviews</title>
+<title>Reviews Browser – Extended Practice Reviews</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root {
@@ -71,6 +71,8 @@ body {
 .controls label { font-weight: 600; }
 .controls .checkbox-label { font-weight: 500; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
 .controls .checkbox-label input { cursor: pointer; }
+.controls .forced-by-summaries { opacity: 0.6; }
+.controls .forced-by-summaries .checkbox-label { cursor: default; }
 .controls select {
   padding: 6px 10px;
   border: 1px solid var(--border);
@@ -127,7 +129,10 @@ body {
   color: var(--ink-muted);
   margin-top: 4px;
 }
+#tldr-container { margin-bottom: 12px; }
 .tldr-section { border-left: 4px solid var(--accent); }
+.tldr-details { font-size: 14px; }
+.tldr-details summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 8px 0; }
 .tldr-content { padding: 12px 14px; font-size: 14px; line-height: 1.6; }
 .tldr-heading { margin: 0 0 10px; font-size: 16px; font-weight: 600; color: var(--accent); }
 .tldr-content p { margin: 0 0 12px; }
@@ -373,11 +378,13 @@ body {
 <div class="page">
   <header class="header">
     <div>
-      <h1>Reviews Evidence</h1>
+      <h1>Reviews Browser</h1>
       <p>Extended (full-feed) reviews from practices with complete review collection</p>
     </div>
     <a class="home-link" href="../index.html">← Home</a>
   </header>
+
+  <div id="tldr-container"></div>
 
   <div class="controls">
     <div class="controls-row controls-row-stats">
@@ -403,15 +410,15 @@ body {
     <div class="controls-row controls-row-toggles">
       <label>Group:</label>
       <div class="view-toggle" role="group" aria-label="Grouping">
-        <button type="button" class="view-toggle-btn active" data-group="practice">By practice</button>
-        <button type="button" class="view-toggle-btn" data-group="consolidated">Consolidated</button>
+        <button type="button" class="view-toggle-btn" data-group="practice">By practice</button>
+        <button type="button" class="view-toggle-btn active" data-group="consolidated">Consolidated</button>
       </div>
       <label>Theme by:</label>
       <div class="view-toggle" role="group" aria-label="Theme grouping">
         <button type="button" class="view-toggle-btn active" data-theme="operational">Operational</button>
-        <button type="button" class="view-toggle-btn" data-theme="cluster">Cluster evidence</button>
+        <button type="button" class="view-toggle-btn" data-theme="cluster">Clusters</button>
       </div>
-      <span id="show-in-all-categories-wrap"><label class="checkbox-label"><input type="checkbox" id="show-in-all-categories" title="Show each review as a square in every category it touches"> Show in all categories</label></span>
+      <span id="show-in-all-categories-wrap"><label class="checkbox-label"><input type="checkbox" id="show-in-all-categories" title="Show each review as a square in every category it touches (required for summaries)"> Show in all categories</label></span>
       <span id="summaries-wrap"><label class="checkbox-label"><input type="checkbox" id="show-summaries" checked title="Show formal report summaries instead of review squares (GTD consolidated operational only)"> Summaries</label></span>
     </div>
   </div>
@@ -589,10 +596,23 @@ body {
   function render() {
     hidePopover();
     const themeMode = document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn.active")?.dataset.theme || "operational";
-    const multiCategory = themeMode === "operational" && (document.getElementById("show-in-all-categories")?.checked ?? false);
     const groupMode = document.querySelector("[aria-label='Grouping'] .view-toggle-btn.active")?.dataset.group || "practice";
+    const showSummaries = document.getElementById("show-summaries")?.checked ?? true;
+    const summariesForcesMulti = showSummaries && groupMode === "consolidated" && themeMode === "operational";
+    const multiCategory = themeMode === "operational" && (summariesForcesMulti || (document.getElementById("show-in-all-categories")?.checked ?? false));
     const wrap = document.getElementById("show-in-all-categories-wrap");
+    const showInAllCb = document.getElementById("show-in-all-categories");
     if (wrap) wrap.style.display = themeMode === "cluster" ? "none" : "";
+    if (showInAllCb) {
+      if (summariesForcesMulti) {
+        showInAllCb.checked = true;
+        showInAllCb.disabled = true;
+        wrap.classList.add("forced-by-summaries");
+      } else {
+        showInAllCb.disabled = false;
+        wrap.classList.remove("forced-by-summaries");
+      }
+    }
     const summariesWrap = document.getElementById("summaries-wrap");
     if (summariesWrap) summariesWrap.style.display = (groupMode === "consolidated" && themeMode === "operational") ? "" : "none";
     const bucketLabels = getBucketLabels(data);
@@ -633,7 +653,7 @@ body {
         mergeWithSource(gtdPractices, "GTD practices", "_gtd", true),
         mergeWithSource(otherGood, "Other fully reviewed (good)", "_other_good"),
         mergeWithSource(otherPoor, "Other fully reviewed (poor)", "_other_poor"),
-        sortedAcross.length ? { canonical_code: "_recents_only", practice_name: "Other recents only", gtd_managed: false, gtd_takeover_date: "", review_count: sortedAcross.length, reviews: sortedAcross, inclusion_reason: null } : null,
+        sortedAcross.length ? { canonical_code: "_recents_only", practice_name: "Manchester Region GPs", gtd_managed: false, gtd_takeover_date: "", review_count: sortedAcross.length, reviews: sortedAcross, inclusion_reason: null } : null,
       ].filter(Boolean);
     } else {
       const acrossPractice = sortedAcross.length > 0 ? {
@@ -667,6 +687,20 @@ body {
 
     const content = document.getElementById("content");
     content.innerHTML = "";
+
+    const isConsolidatedSummary = groupMode === "consolidated" && showSummaries && themeMode === "operational";
+    const tldr = document.createElement("section");
+    tldr.className = "practice-section tldr-section";
+    const tldrContent = `<div class="tldr-content">
+      <h2 class="tldr-heading">TL;DR</h2>
+      <p>Across reviews of GTD-managed practices, the main pattern is cumulative failure rather than one isolated complaint. Reviewers describe practices that are hard to reach, hard to navigate, and often hard to rely on once contact is made. Problems with access, front-desk handling, admin follow-through, referrals, medicines, tests, and continuity tend to stack together, so frustration is often described not as delay alone but as a service that feels obstructive, fragmented, and unreliable.</p>
+      <p>Some themes carry particular weight. Front-desk interactions are a major source of distrust because reviewers often feel blocked, dismissed, or embarrassed at the very point they are trying to enter care. Admin and referral problems matter because they appear to distort care after contact, with patients describing lost paperwork, missed follow-up, and having to coordinate the system themselves. Medicines, tests, and parts of clinical care push the concern further, because the reviews there are often about risk as much as inconvenience.</p>
+      <p>The positive reviews do not really overturn that picture. They mostly praise individual staff for kindness, reassurance, listening, and professionalism, rather than suggesting the wider systems work consistently well. So the overall impression from the reviews is that GTD practices do still generate gratitude at the level of individual encounters, but the dominant reputation is of services where weak systems repeatedly wear down confidence, continuity, and, in some cases, safety.</p>
+    </div>`;
+    tldr.innerHTML = isConsolidatedSummary
+      ? tldrContent
+      : `<details class="tldr-details"><summary>TL;DR</summary>${tldrContent}</details>`;
+    content.appendChild(tldr);
 
     const effectiveSortMode = groupMode === "consolidated" ? "date" : sortMode;
     const containerClass = "treemap-container";
@@ -717,7 +751,6 @@ body {
       `;
 
       const container = section.querySelector(`.${containerClass}`);
-      const showSummaries = document.getElementById("show-summaries")?.checked ?? true;
       const useSummary = isConsolidated && practice.canonical_code === "_gtd" && showSummaries && summariesData?.summaries;
       const useCompactOverview = isConsolidated && showSummaries && ["_other_good", "_other_poor", "_recents_only"].includes(practice.canonical_code);
 
@@ -765,20 +798,6 @@ body {
         }
       }
       content.appendChild(section);
-    }
-    if (groupMode === "consolidated") {
-      const tldr = document.createElement("section");
-      tldr.className = "practice-section tldr-section";
-      tldr.innerHTML = `
-        <div class="tldr-content">
-          <h2 class="tldr-heading">TL;DR</h2>
-          <p>Across reviews of GTD-managed practices, the main pattern is cumulative failure rather than one isolated complaint. Reviewers describe practices that are hard to reach, hard to navigate, and often hard to rely on once contact is made. Problems with access, front-desk handling, admin follow-through, referrals, medicines, tests, and continuity tend to stack together, so frustration is often described not as delay alone but as a service that feels obstructive, fragmented, and unreliable.</p>
-          <p>Some themes carry particular weight. Front-desk interactions are a major source of distrust because reviewers often feel blocked, dismissed, or embarrassed at the very point they are trying to enter care. Admin and referral problems matter because they appear to distort care after contact, with patients describing lost paperwork, missed follow-up, and having to coordinate the system themselves. Medicines, tests, and parts of clinical care push the concern further, because the reviews there are often about risk as much as inconvenience.</p>
-          <p>The positive reviews do not really overturn that picture. They mostly praise individual staff for kindness, reassurance, listening, and professionalism, rather than suggesting the wider systems work consistently well. So the overall impression from the reviews is that GTD practices do still generate gratitude at the level of individual encounters, but the dominant reputation is of services where weak systems repeatedly wear down confidence, continuity, and, in some cases, safety.</p>
-        </div>
-      `;
-      const first = content.firstElementChild;
-      if (first) first.after(tldr); else content.appendChild(tldr);
     }
   }
 
@@ -858,8 +877,8 @@ body {
   }
 
   function applyHashToControls() {
-    const h = (location.hash || "").slice(1).toLowerCase();
-    if (!h) return;
+    let h = (location.hash || "").slice(1).toLowerCase();
+    if (!h) h = "consolidated-summaries";
     const parts = h.split("-");
     if (parts.includes("consolidated")) {
       document.querySelector("[aria-label='Grouping'] .view-toggle-btn[data-group='consolidated']")?.classList.add("active");

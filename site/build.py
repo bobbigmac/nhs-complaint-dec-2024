@@ -303,9 +303,9 @@ VIEW_CARDS: list[dict[str, object]] = [
     },
     {
         "id": "reviews-evidence",
-        "title": "Reviews evidence",
+        "title": "Reviews browser",
         "description": "Explore extended (full-feed) reviews from practices with complete review collection, classified by theme.",
-        "links": [("Open evidence", f"{REVIEWS_EVIDENCE_SITE_DIR}/", "primary")],
+        "links": [("Browse reviews", f"{REVIEWS_EVIDENCE_SITE_DIR}/", "primary")],
     },
     {
         "title": "GTD chronology",
@@ -1129,7 +1129,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--skip-reviews-evidence",
         action="store_true",
-        help="Skip building and publishing the reviews evidence page.",
+        help="Skip building and publishing the reviews browser page.",
     )
     return parser.parse_args()
 
