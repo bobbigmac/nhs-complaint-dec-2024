@@ -194,6 +194,37 @@ body {
 .summary-report p { margin: 0 0 8px; }
 .summary-report ul { margin: 4px 0 12px; padding-left: 20px; }
 .summary-report blockquote { margin: 8px 0; padding-left: 12px; border-left: 3px solid var(--border); color: var(--ink-muted); }
+.summary-report .claim-tooltip { position: relative; cursor: help; border-bottom: 1px dotted var(--accent); }
+.summary-report .claim-tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin-bottom: 4px;
+  max-width: 360px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  white-space: normal;
+  z-index: 100;
+  pointer-events: none;
+}
+.summary-report .fnref { font-size: 0.75em; vertical-align: super; text-decoration: none; color: var(--accent); cursor: help; }
+.summary-report .fnref:hover { text-decoration: underline; }
+.summary-report .summary-stats { margin-bottom: 14px; font-size: 13px; }
+.summary-report .summary-stats .stats-count { font-weight: 600; color: var(--ink-muted); margin-bottom: 6px; }
+.summary-report .summary-stats .distribution-bar { display: flex; height: 26px; overflow: hidden; background: var(--border); }
+.summary-report .summary-stats .distribution-bar span { flex-shrink: 0; min-width: 2px; }
+.summary-report .summary-stats .distribution-bar span[title] { cursor: help; }
+.summary-report .cited-reviews-details { margin-top: 16px; font-size: 13px; }
+.summary-report .cited-reviews-details summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.summary-report .cited-reviews-details .footnotes { padding-top: 12px; border-top: 1px solid var(--border); font-size: 12px; color: var(--ink-muted); }
+.summary-report .footnotes .footnote { margin-bottom: 6px; }
 .review-popover {
   display: none;
   position: fixed;
@@ -298,6 +329,8 @@ body {
   background: var(--bg);
   overflow: hidden;
 }
+.treemap-block.has-summary { overflow: visible; }
+.treemap-block.has-summary .treemap-block-body { overflow: visible; }
 .treemap-block-header {
   padding: 6px 10px;
   font-size: 12px;
@@ -500,6 +533,25 @@ body {
     return avg != null ? avg.toFixed(1) : "—";
   }
 
+  function buildSummaryStats(reviews) {
+    const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 0: 0 };
+    for (const r of reviews) {
+      const s = parseInt(r.rating_stars, 10);
+      counts[s >= 1 && s <= 5 ? s : 0]++;
+    }
+    const total = reviews.length;
+    const colors = { 1: "var(--low)", 2: "var(--midlow)", 3: "var(--midhigh)", 4: "var(--high)", 5: "var(--veryhigh)", 0: "var(--missing)" };
+    let barHtml = "";
+    for (const s of [1, 2, 3, 4, 5, 0]) {
+      const n = counts[s];
+      if (n === 0) continue;
+      const pct = total ? (100 * n / total).toFixed(1) : 0;
+      const label = s === 0 ? "?" : s + "★";
+      barHtml += `<span style="flex: ${n} 1 0; background: ${colors[s]}" title="${label}: ${n} (${pct}%)"></span>`;
+    }
+    return `<div class="summary-stats"><div class="stats-count">${total} reviews</div><div class="distribution-bar">${barHtml || '<span style="flex:1;background:var(--border)"></span>'}</div></div>`;
+  }
+
   function filterAcrossByTimespan(across, yearsBack) {
     if (!yearsBack || !across) return across || [];
     const n = parseInt(yearsBack, 10);
@@ -600,12 +652,7 @@ body {
       const isNonGtd = !practice.gtd_managed && !isAcross;
       const inclusionReason = practice.inclusion_reason || "";
 
-      if (isAcross) {
-        const warning = document.createElement("div");
-        warning.className = "classifier-warning";
-        warning.innerHTML = "<strong>Theme clusters:</strong> Derived from text similarity (graph model). Cluster labels are generated from top terms; no predefined keywords.";
-        content.appendChild(warning);
-      }
+
       const section = document.createElement("section");
       section.className = "practice-section";
       if (practice.canonical_code === "_recents_only") section.classList.add("across-manchester");
@@ -657,7 +704,9 @@ body {
         const body = block.querySelector(".treemap-block-body");
         const summaryHtml = useSummary && summariesData.summaries[bucket];
         if (summaryHtml) {
-          body.innerHTML = `<div class="summary-report">${summaryHtml}</div>`;
+          block.classList.add("has-summary");
+          const statsHtml = buildSummaryStats(reviews);
+          body.innerHTML = `<div class="summary-report">${statsHtml}${summaryHtml}</div>`;
         } else {
           for (const r of reviews) {
             const sq = document.createElement("span");
@@ -773,6 +822,12 @@ body {
   document.getElementById("review-popover-close").addEventListener("click", hidePopover);
   document.getElementById("review-popover-backdrop").addEventListener("click", hidePopover);
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") hidePopover(); });
+  document.addEventListener("toggle", (e) => {
+    const d = e.target;
+    if (d.matches?.("details.cited-reviews-details")) {
+      d.querySelector("summary").textContent = d.open ? "Hide Cited Reviews" : "Show Cited Reviews";
+    }
+  });
 
   async function load() {
     const res = await fetch("raw_reviews_extended.json");

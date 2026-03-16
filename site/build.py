@@ -392,13 +392,70 @@ def load_summary(report_dir: Path) -> dict[str, object]:
     return json.loads(summary_path.read_text(encoding="utf-8"))
 
 
-def render_inline_markdown(text: str, link_resolver: Callable[[str], str] | None = None) -> str:
+def _replace_footnotes_with_claim_tooltips(
+    text: str,
+    footnote_refs: dict[str, str],
+    stash: Callable[[str], str],
+) -> str:
+    """Replace [^N] with claim-tooltip span (preceding text, up to 3 words or until prev footnote) + sup."""
+    matches = list(re.finditer(r"\[\^(\d+)\]", text))
+    if not matches:
+        return text
+    # Compute all replacements (start, end, new_text) from original text
+    replacements: list[tuple[int, int, str]] = []
+    for m in matches:
+        n = m.group(1)
+        content = footnote_refs.get(n, "")
+        end_pos = m.start()
+        prev_end = 0
+        for other in matches:
+            if other.end() <= end_pos:
+                prev_end = other.end()
+        preceding = text[prev_end:end_pos]
+        words = re.findall(r"\w+(?:'\w+)?", preceding)
+        n_words = min(3, len(words))
+        claim_words = words[-n_words:] if n_words else []
+        if not claim_words:
+            span_start = end_pos
+            actual_span = ""
+        else:
+            span_text = " ".join(claim_words)
+            idx = preceding.rfind(span_text)
+            if idx >= 0:
+                actual_span = preceding[idx:]
+                span_start = prev_end + idx
+            else:
+                span_start = end_pos
+                actual_span = ""
+        if actual_span:
+            new_html = stash(
+                f'<span class="claim-tooltip" data-tooltip="{html.escape(content, quote=True)}">{html.escape(actual_span)}</span><sup><a href="#fn-{n}" id="fnref-{n}" class="fnref">{n}</a></sup>'
+            )
+        else:
+            new_html = stash(
+                f'<sup><a href="#fn-{n}" id="fnref-{n}" class="fnref" title="{html.escape(content, quote=True)}">{n}</a></sup>'
+            )
+        replacements.append((span_start, m.end(), new_html))
+    # Apply right-to-left so positions stay valid
+    for start, end, new_html in reversed(replacements):
+        text = text[:start] + new_html + text[end:]
+    return text
+
+
+def render_inline_markdown(
+    text: str,
+    link_resolver: Callable[[str], str] | None = None,
+    footnote_refs: dict[str, str] | None = None,
+) -> str:
     replacements: list[tuple[str, str]] = []
 
     def stash(fragment: str) -> str:
         token = f"INLINE_TOKEN_{len(replacements)}"
         replacements.append((token, fragment))
         return token
+
+    if footnote_refs:
+        text = _replace_footnotes_with_claim_tooltips(text, footnote_refs, stash)
 
     text = re.sub(
         r"\[([^\]]+)\]\(([^)]+)\)",
@@ -421,6 +478,19 @@ def render_inline_markdown(text: str, link_resolver: Callable[[str], str] | None
     return escaped
 
 
+def extract_footnotes(markdown_text: str) -> tuple[str, dict[str, str]]:
+    """Extract [^N]: definitions, return (body without those lines, {N: content})."""
+    lines: list[str] = []
+    refs: dict[str, str] = {}
+    for line in markdown_text.splitlines():
+        m = re.match(r"^\s*\[\^(\d+)\]:\s*(.*)$", line)
+        if m:
+            refs[m.group(1)] = m.group(2).strip()
+            continue
+        lines.append(line)
+    return "\n".join(lines), refs
+
+
 def slugify_heading(text: str, seen: dict[str, int]) -> str:
     base = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-") or "section"
     count = seen.get(base, 0)
@@ -433,6 +503,7 @@ def markdown_to_html(
     *,
     link_resolver: Callable[[str], str] | None = None,
     drop_first_h1: bool = False,
+    footnote_refs: dict[str, str] | None = None,
 ) -> tuple[str, list[tuple[int, str, str]]]:
     blocks: list[str] = []
     paragraph_lines: list[str] = []
@@ -442,12 +513,15 @@ def markdown_to_html(
     seen_heading_ids: dict[str, int] = {}
     skipped_h1 = False
 
+    def render(text: str) -> str:
+        return render_inline_markdown(text, link_resolver=link_resolver, footnote_refs=footnote_refs)
+
     def flush_paragraph() -> None:
         nonlocal paragraph_lines
         if not paragraph_lines:
             return
         text = " ".join(line.strip() for line in paragraph_lines)
-        blocks.append(f"<p>{render_inline_markdown(text, link_resolver=link_resolver)}</p>")
+        blocks.append(f"<p>{render(text)}</p>")
         paragraph_lines = []
 
     def flush_list() -> None:
@@ -455,7 +529,7 @@ def markdown_to_html(
         if not list_items:
             return
         tag = list_type or "ul"
-        items = "".join(f"<li>{render_inline_markdown(item, link_resolver=link_resolver)}</li>" for item in list_items)
+        items = "".join(f"<li>{render(item)}</li>" for item in list_items)
         blocks.append(f"<{tag}>{items}</{tag}>")
         list_items = []
         list_type = None
@@ -491,7 +565,7 @@ def markdown_to_html(
                 continue
             anchor = slugify_heading(heading_text, seen_heading_ids)
             headings.append((level, heading_text, anchor))
-            blocks.append(f'<h{level} id="{anchor}">{render_inline_markdown(heading_text, link_resolver=link_resolver)}</h{level}>')
+            blocks.append(f'<h{level} id="{anchor}">{render(heading_text)}</h{level}>')
             continue
 
         unordered_match = re.match(r"^[-*]\s+(.*)$", stripped)
@@ -512,9 +586,7 @@ def markdown_to_html(
         if stripped.startswith("> "):
             flush_paragraph()
             flush_list()
-            blocks.append(
-                f"<blockquote><p>{render_inline_markdown(stripped[2:].strip(), link_resolver=link_resolver)}</p></blockquote>"
-            )
+            blocks.append(f"<blockquote><p>{render(stripped[2:].strip())}</p></blockquote>")
             continue
 
         paragraph_lines.append(stripped)
@@ -918,19 +990,34 @@ def build_reviews_evidence() -> None:
 def build_gtd_summaries_json() -> dict[str, object]:
     """Read GTD summary MD files, convert to HTML. Plugin: optional summaries for consolidated view."""
     summaries_dir = REVIEWS_ANALYSIS_DIR / "gtd_summaries"
-    if not summaries_dir.exists():
-        return {"summaries": {}, "manifest": []}
-    summaries: dict[str, str] = {}
-    for md_path in sorted(summaries_dir.glob("*.md")):
-        slug = md_path.stem
-        text = md_path.read_text(encoding="utf-8")
-        html, _ = markdown_to_html(text, drop_first_h1=False)
-        summaries[slug] = html
     manifest: list[dict[str, object]] = []
     manifest_path = summaries_dir / "manifest.json"
-    if manifest_path.exists():
+    tax_path = REVIEWS_ANALYSIS_DIR / "operational_taxonomy.json"
+    if summaries_dir.exists() and manifest_path.exists():
         data = json.loads(manifest_path.read_text(encoding="utf-8"))
         manifest = list(data.get("entries", []))
+    expected_slugs = [m["slug"] for m in manifest] if manifest else []
+    if not expected_slugs and tax_path.exists():
+        tax = json.loads(tax_path.read_text(encoding="utf-8"))
+        for c in tax.get("top_level_categories") or []:
+            if c.get("id"):
+                expected_slugs.append(c["id"])
+    summaries: dict[str, str] = {}
+    for slug in expected_slugs:
+        md_path = (summaries_dir / f"{slug}.md") if summaries_dir else None
+        if md_path and md_path.exists():
+            text = md_path.read_text(encoding="utf-8")
+            body, footnote_refs = extract_footnotes(text)
+            body_html, _ = markdown_to_html(body, drop_first_h1=False, footnote_refs=footnote_refs or None)
+            if footnote_refs:
+                fn_section = '<details class="cited-reviews-details"><summary>Show Cited Reviews</summary><section class="footnotes" aria-label="Footnotes">'
+                for n in sorted(footnote_refs.keys(), key=int):
+                    fn_section += f'<div class="footnote" id="fn-{n}"><sup>{n}</sup> {html.escape(footnote_refs[n])}</div>'
+                fn_section += "</section></details>"
+                body_html = body_html + fn_section
+            summaries[slug] = body_html
+        else:
+            summaries[slug] = f"no {slug}.md found for summary"
     return {"summaries": summaries, "manifest": manifest}
 
 
@@ -941,10 +1028,9 @@ def publish_reviews_evidence(out_dir: Path) -> None:
     if (output_dir / "raw_reviews_extended.json").exists():
         shutil.copy2(output_dir / "raw_reviews_extended.json", site_root / "raw_reviews_extended.json")
     summaries_data = build_gtd_summaries_json()
-    if summaries_data.get("summaries"):
-        (site_root / "gtd_summaries.json").write_text(
-            json.dumps(summaries_data, indent=2), encoding="utf-8"
-        )
+    (site_root / "gtd_summaries.json").write_text(
+        json.dumps(summaries_data, indent=2), encoding="utf-8"
+    )
     html_source = REVIEWS_ANALYSIS_DIR / "reviews_evidence.html"
     if html_source.exists():
         shutil.copy2(html_source, site_root / "index.html")

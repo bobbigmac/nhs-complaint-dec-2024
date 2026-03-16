@@ -1,23 +1,81 @@
-## Admin and referrals
+## Administration, referrals, records, and follow-through
 
-**150 reviews** in this category. 83% are 1-star.
+This file is not mainly about the difficulty of getting through the door; the earlier report already covers that.[^1] What stands out here is what happens after contact: paperwork goes missing,[^2] referrals are not sent or are sent wrongly,[^3] prescriptions are delayed or mishandled,[^4] appointments and tests are cancelled or mis-recorded,[^5] and patients are forced to do the chasing, clarifying, and repair work themselves.[^6]
 
-### Summary
+Document handling looks repeatedly unreliable.[^7] Hospital letters are described as lost even after being handed in physically and resent by photo,[^8] change-of-prescription letters are said to disappear from the system,[^9] forms for insurance, proof of address, and other routine admin are described as taking weeks or months for work patients see as a five-minute job,[^10] and records transfers are described as slow enough to disrupt care or external processes.[^11]
 
-**Referrals** (41%) dominate: referrals not sent, lost, or delayed for months; patients having to chase repeatedly; being told referrals were "sent again" with no explanation. **Telephone** (22%) and **digital access** (11%) appear as routes patients use to chase admin. **Repeat prescriptions** (10%) and **complaints and follow-up** (2%) round out the picture.
+Referral handling is one of the strongest themes in this file.[^12] Reviews describe referrals that were promised but never followed up,[^13] referrals written so inaccurately that the receiving service refused or altered the appointment,[^14] referrals sent to the wrong clinician,[^15] referrals delayed by months,[^16] and patients being told to chase hospital departments themselves for work they believed the practice should complete.[^17]
 
-Reviews describe admin as "terrible," "not doing their job," and making an already struggling NHS "even more long." Some note the practice "used to be good" but has gone downhill. A small number of 4–5 star reviews praise specific staff or the e-form system despite the admin frustrations.
+The source also contains repeated claims that internal admin failure directly alters clinical care.[^18] Reviews describe staff having the wrong patient open on screen,[^19] patients being told they were pregnant when they were not,[^20] blood results being relayed incorrectly,[^21] reception staff giving what patients understood as clinical decisions or triage outcomes,[^22] and non-clinical staff blocking, redirecting, or narrowing care in ways patients considered unsafe.[^23]
 
-### Prevalence by subcategory
+Prescription handling is not just slow here; it is disorderly.[^24] Reviews describe repeat requests going missing,[^25] scripts arriving on the twenty-eighth day month after month,[^26] weekly prescriptions failing weekly,[^27] wrong medication being issued repeatedly,[^28] long-term medicines being altered or stopped without clear communication,[^29] and patients being left without essential medication for days, weeks, or even months while trying to get basic corrections made.[^30]
 
-- **Referrals**: 62 (41%)
-- **Documents and letters**: 2 (1%)
-- **Complaints and follow-up**: 2 (1%)
+Appointments, tests, and callbacks are presented as administratively fragile.[^31] Reviews describe telephone reviews being cancelled minutes before they were due,[^32] immunisation clinics repeatedly cancelled the day before,[^33] blood tests cancelled more than once because the nurse was not available,[^34] scans cancelled with little notice and never rearranged,[^35] booked appointments apparently disappearing or being entered with the wrong date,[^36] and promised follow-up calls simply not happening.[^37]
 
-### Rating distribution
+Another pattern here is duplication, repetition, and circular process.[^38] Patients describe filling in the same form multiple times,[^39] being told to submit another PATCHS request instead of having the issue resolved,[^40] being asked to book a GP appointment purely so the GP can re-refer them back to a nurse for tests already requested elsewhere,[^41] and being bounced between GP, hospital, orthopaedics, consultants’ secretaries, 111, and walk-in services because nobody takes ownership of the next action.[^42]
 
-- 5★: 10 (7%)
-- 4★: 6 (4%)
-- 3★: 6 (4%)
-- 2★: 3 (2%)
-- 1★: 125 (83%)
+Complaint handling is itself part of the problem.[^43] Reviews describe requests for managers being blocked,[^44] feedback forms producing no response,[^45] complaints promised but not acknowledged,[^46] formal letters requested for appeals or escalation not arriving,[^47] and patients concluding that the practical effect of the system is to make challenge, correction, and accountability harder than they should be.[^48]
+
+There are also explicit confidentiality and records-governance concerns that go beyond ordinary rudeness.[^49] Reviews describe someone else’s personal information being posted out to the wrong patient,[^50] staff reading another patient’s records over the phone,[^51] private medical discussions taking place in open or inappropriate settings,[^52] and staff being accused of mishandling, delaying, or failing to update records in ways that affect both trust and care.[^53]
+
+The cumulative complaint is that administration is not a background problem here.[^54] In these reviews it is the thing that distorts care pathways,[^55] delays treatment,[^56] breaks continuity,[^57] creates avoidable extra appointments across the NHS,[^58] and leaves patients feeling that basic clerical competence cannot be relied on even before the clinical question is reached.[^59]
+
+[^1]: The earlier `access_footnoted.md` already covers phones, 8am booking pressure, and general appointment scarcity in detail. In this file those themes recur, but the denser pattern is downstream admin failure: “they lose important documents like referrals”; “referral not sent”; “wrong medication prescribed”; “formal complaint”; “private patient information has been sent out to the wrong patients.”
+[^2]: Hattersley Group Practice, `referrals`: “they lost a important letter from hospital”; “Another letter ie change of prescription… lost it”; “A prescription handed in… lost it”; New Bank Health, `referrals`: “Referrals are not sent so you have to chase them after waiting for months.”
+[^3]: Gordon Street Medical Centre, `referrals`: “what the nurse had written in the referral? Was completely incorrect!”; Guide Bridge Medical Practice, `referrals`: “referral not sent delaying things by at least 3 months”; New Bank Health, `referrals`: “Despite being promised a referral for surgery in November 2023, I have yet to receive any follow-up.”
+[^4]: Simpson Medical Practice, `referrals`: “when I order a prescription it will take up to the 28th day”; Gordon Street Medical Centre, `repeat_prescriptions`: “wrong medication prescribed 3 times in a row”; Droylsden Medical Practice, `referrals`: “Had to go 4 months now with no medication.”
+[^5]: Charlestown MD, `digital_access`: “immunisation appointment… cancel every time the day before”; New Bank Health, `referrals`: “ECG appointment… ‘They haven't booked enough time for your appointment’”; Guide Bridge Medical Practice, `appointment_cancellation`: “A scan being cancelled with less than 12 hours notice.”
+[^6]: Hattersley Group Practice, `referrals`: “you can do the admin yourself and chase it all up yourself and resend the letters that they lose”; New Bank Health, `referrals`: “you have to chase them after waiting for months”; Charlestown MD, `referrals`: “I had to go back into the surgery to explain everything again.”
+[^7]: Hattersley Group Practice, `referrals`: “Nothing gets put onto the system that you give them”; Simpson Medical Practice, `referrals`: “poor communication”; Lindley House Health Centre, `referrals`: “filled in the same form three times.”
+[^8]: Hattersley Group Practice, `referrals`: “they lost a important letter from hospital”; “I had to resend the letter… even after being given the physical letter and a photo.”
+[^9]: Hattersley Group Practice, `referrals`: “change of prescription handed to reception… lost it.”
+[^10]: Simpson Medical Practice, `referrals`: “nearly 3 months to complete life insurance form”; Lindley House Health Centre, `referrals`: “proof of address… waiting over 7 weeks”; “why are they unable to complete a 5-minute job.”
+[^11]: Simpson Medical Practice, `referrals`: “it took them months to send over my medical records”; Guide Bridge Medical Practice, `reception_conduct`: “took over a month just to get them sent.”
+[^12]: New Bank Health, `referrals`: “promised a referral for surgery”; Guide Bridge Medical Practice, `referrals`: “referral not sent”; Gordon Street Medical Centre, `referrals`: “the referral? Was completely incorrect!”
+[^13]: New Bank Health, `referrals`: “promised a referral for surgery in November 2023, I have yet to receive any follow-up.”
+[^14]: Gordon Street Medical Centre, `referrals`: “what the nurse had written in the referral? Was completely incorrect”; Charlestown MD, `referrals`: “my GP needed to make the referral request… Now I’ve been told I need another GP appointment.”
+[^15]: New Bank Health, `referrals`: “referral letters to a specific Doctor… all letters are being sent to another Doctor.”
+[^16]: Guide Bridge Medical Practice, `referrals`: “referral not sent delaying things by at least 3 months”; Droylsden Medical Practice, `referrals`: “9 weeks ago… He promised me that a letter would be sent to the hospital”; “Almost two weeks later… the letter still hasn't been sent.”
+[^17]: New Bank Health, `referrals`: “automated responses directing me to contact the orthopedic department myself”; Charlestown MD, `referrals`: “I called my consultant’s secretary who confirmed I was right — my GP needed to make the referral request.”
+[^18]: Gordon Street Medical Centre, `referrals`: “wrong patient on the screen”; Guide Bridge Medical Practice, `referrals`: “she makes clinical decisions”; Simpson Medical Practice, `digital_access`: “Non-clinical reception staff should not act as if they are GPs.”
+[^19]: Gordon Street Medical Centre, `referrals`: “She had the wrong patient on the screen!!”
+[^20]: Gordon Street Medical Centre, `referrals`: “they were reducing one of my medications due to me being 12 weeks pregnant!!! I wasn't pregnant at all.”
+[^21]: Guide Bridge Medical Practice, `referrals`: “there was a problem with my sons blood results”; “The nurse reassured me and said his bloods had been put as no action”; Mossley Medical Practice, `telephone_access`: “reading out others patients records to me over the phone.”
+[^22]: Simpson Medical Practice, `digital_access`: “a receptionist unjustly canceled an appointment”; “she does not consult a GP”; Guide Bridge Medical Practice, `referrals`: “she told me I would have to wait 2 weeks for a nurse to action this.”
+[^23]: Charlestown MD, `referrals`: “they weren’t sure if they could do it and would ‘write to them’”; Gordon Street Medical Centre, `referrals`: “Was refused a blood test to check for heart disease by Receptionist even though a doctor's asked me to.”
+[^24]: Gordon Street Medical Centre, `repeat_prescriptions`: “wrong medication prescribed 3 times in a row”; Ashton Gp Service, `repeat_prescriptions`: “only once has it been correct and ready for collection”; Simpson Medical Practice, `referrals`: “up to the 28th day.”
+[^25]: Hattersley Group Practice, `referrals`: “A prescription handed in… lost it”; New Bank Health, `referrals`: “collect the same prescription from the chemist 3 TIMES because they can't seem to find the request.”
+[^26]: Simpson Medical Practice, `referrals`: “4 Months… up to the 28th day to get it sent to the Chemists.”
+[^27]: Gordon Street Medical Centre, `referrals`: “Been put on weekly prescriptions and every week without fail I have had some kind of issue!!”
+[^28]: Gordon Street Medical Centre, `repeat_prescriptions`: “wrong medication prescribed 3 times in a row(!)”; Guide Bridge Medical Practice, `referrals`: “incorrect medication prescribed.”
+[^29]: Ashton Gp Service, `referrals`: “cancelling my repeat prescription”; Guide Bridge Medical Practice, `repeat_prescriptions`: “the doctor has decided to stop my request”; Droylsden Medical Practice, `referrals`: “seems like they alter your prescription without authorisation.”
+[^30]: Gordon Street Medical Centre, `repeat_prescriptions`: “After a month of struggle I was again at point 0 with no meds”; Gordon Street Medical Centre, `repeat_prescriptions`: “leave you without anticonvulsant medication for 5 days”; Droylsden Medical Practice, `referrals`: “4 months now with no medication.”
+[^31]: Charlestown MD, `digital_access`: “cancel every time the day before”; New Bank Health, `referrals`: “blood test is cancelled today”; Ashton Gp Service, `referrals`: “they would ring 10 mins before the appointment and cancel it.”
+[^32]: Ashton Gp Service, `referrals`: “ring 10 mins before the appointment and cancel it”; Charlestown MD, `repeat_prescriptions`: “15mins before the appointment that it will be via the phone.”
+[^33]: Charlestown MD, `digital_access`: “immunisation appointment to be cancel every time the day before.”
+[^34]: New Bank Health, `referrals`: “nurse is not coming”; “nurse is not coming today as well.”
+[^35]: Guide Bridge Medical Practice, `appointment_cancellation`: “A scan being cancelled with less than 12 hours notice and this was never rearranged.”
+[^36]: Guide Bridge Medical Practice, `telephone_access`: “arrive to the appointment to be told I’m booked in for September”; Charlestown MD, `telephone_access`: “my appointment could not be found in their system at all.”
+[^37]: Hattersley Group Practice, `telephone_access`: “reassured a dr would call 2 days later… no phone call received”; New Bank Health, `repeat_prescriptions`: “doctor would ‘definitely’ call me back that same day… I didn’t receive a single call.”
+[^38]: Lindley House Health Centre, `referrals`: “filled in the same form three times”; Droylsden Medical Practice, `repeat_prescriptions`: “complete another PATCHS form”; Lindley House Health Centre, `digital_access`: “needed a routine app with the gp… then be referred back to the nurse.”
+[^39]: Lindley House Health Centre, `referrals`: “already filled in the same form three times”; New Bank Health, `telephone_access`: “do another online form again.”
+[^40]: Droylsden Medical Practice, `repeat_prescriptions`: “Every enquiry… is met with the same obstructive response: complete another PATCHS form.”
+[^41]: Lindley House Health Centre, `digital_access`: “needed a routine app with the gp to decide… then be referred back to the nurse.”
+[^42]: New Bank Health, `referrals`: “contact the orthopedic department myself”; Gordon Street Medical Centre, `referrals`: “go to the walk-in centre at Tameside Hospital”; Guide Bridge Medical Practice, `telephone_access`: “I’ve rang the GP… they advised ring 111, I ring 111 who advise speak to the GP.”
+[^43]: New Bank Health, `complaints_and_follow_up`: “No response”; New Bank Health, `telephone_access`: “still waiting to hear back”; Simpson Medical Practice, `reception_conduct`: “Raising a complaint.”
+[^44]: Lindley House Health Centre, `reception_conduct`: “refused to allow me to speak to her or his manager or anyone else.”
+[^45]: New Bank Health, `telephone_access`: “filled in a feedback form and am still waiting to hear back”; New Bank Health, `complaints_and_follow_up`: “No response.”
+[^46]: The file contains repeated complaint language without closure: “I will be making a formal complaint”; “I intend to escalate this issue further”; “I will be reporting this place now”; “I put a complain… nobody has been in touch since then.”
+[^47]: New Bank Health, `telephone_access`: “asked for a formal letter… but still haven't recieved the letter.”
+[^48]: New Bank Health, `telephone_access`: “the only way was to fill in a form”; “maybe because they know they can ignore your form!”; Lindley House Health Centre, `reception_conduct`: “refused to allow me to speak to… manager.”
+[^49]: Guide Bridge Medical Practice, `digital_access`: “private patient information has been sent out to the wrong patients”; Mossley Medical Practice, `telephone_access`: “reading out others patients records to me”; Droylsden Medical Practice, `referrals`: “standing on the street next to other people.”
+[^50]: Guide Bridge Medical Practice, `appointment_cancellation`: “Being sent someone elses personal information in the post”; Guide Bridge Medical Practice, `digital_access`: “private patient information has been sent out to the wrong patients.”
+[^51]: Mossley Medical Practice, `telephone_access`: “reading out others patients records to me over the phone.”
+[^52]: Droylsden Medical Practice, `referrals`: “made to discuss what my appointment was for… whilst standing on the street next to other people”; Charlestown MD, `waiting_room_and_delays`: “perform examinations in the baby changing room which is also a waiting room.”
+[^53]: Ashton Gp Service, `telephone_access`: “mess around with your personnal details”; “NOT UPDATING PEOPLES MEDICAL RECORDS”; Simpson Medical Practice, `referrals`: “it took them months to send over my medical records.”
+[^54]: New Bank Health, `referrals`: “The admin is terrible. Not doing their job.”
+[^55]: Lindley House Health Centre, `digital_access`: “The practice couldn't do this, said i needed a routine app with the gp”; Charlestown MD, `referrals`: “another GP appointment just to have an examination that should have been done the first time.”
+[^56]: Guide Bridge Medical Practice, `referrals`: “delaying things by at least 3 months”; New Bank Health, `referrals`: “have yet to receive any follow-up.”
+[^57]: Ashton Gp Service, `continuity_of_care`: “all doctors are locums”; Gordon Street Medical Centre, `continuity_of_care`: “No personal service. No continuity of care.”
+[^58]: Lindley House Health Centre, `digital_access`: “that would be 5 appointments”; “5 mornings off work”; “straining the NHS”; Gordon Street Medical Centre, `referrals`: “go to the walk-in centre at Tameside Hospital.”
+[^59]: Hattersley Group Practice, `referrals`: “take photos on your phone of all letters”; Gordon Street Medical Centre, `repeat_prescriptions`: “After a month of struggle”; New Bank Health, `referrals`: “People have serious issues and they expect you to just sit back and wait.”

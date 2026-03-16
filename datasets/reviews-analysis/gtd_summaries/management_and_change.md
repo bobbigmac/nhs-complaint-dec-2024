@@ -1,22 +1,70 @@
-## Management and system change
+## Management and change
 
-**59 reviews** in this category. 81% are 1-star.
+This file is about failure being attributed to how practices are run, not just to day-to-day pressure.[^1] Reviewers repeatedly say standards worsened after a takeover, a permanent contract, a management change, or the introduction of a new system.[^2]
 
-### Summary
+The strongest thread is that change is experienced as disruption without protection for existing patients.[^3] People describe booked appointments not being migrated onto replacement systems,[^4] long-standing routes to contact being withdrawn,[^5] working arrangements changing without notice,[^6] and new digital processes arriving before they reliably worked.[^7]
 
-Reviews mention new management, system changes, and staff turnover. Common themes: **telephone access** (34%), **repeat prescriptions** (15%), and **reception conduct** (15%)—suggesting that change has not yet resolved core problems. Some hoped "new management could change the old system" but found things worse. **System change** (3%) explicitly references new setup, rollout confusion, or process redesign.
+Several reviews say management change did not just fail to fix old problems but actively made them worse.[^8] Patients describe previously simple prescription requests becoming slower and riskier after migration to new apps or identity checks,[^9] online appointment systems becoming narrower or time-limited,[^10] and formerly available options like walk-in, phone, weekend, or baby-priority access being reduced or scrapped.[^11]
 
-A few 5-star reviews note that PATCHS or the new system works well for them, or that the practice has improved. The majority remain negative about how change has been managed.
+This file adds a clearer picture of botched transition management.[^12] Reviewers describe old appointments being dumped rather than transferred,[^13] patients being told to start again in the usual 8am scramble,[^14] immunisation clinics or nurse sessions being repeatedly cancelled under new arrangements,[^15] and administrative promises about forms, callbacks, or medication reviews collapsing during the handover period.[^16]
 
-### Prevalence by subcategory
+A distinct complaint here is that practices appear to measure success by clearing systems rather than resolving care.[^17] One reviewer describes a PATCHS request being marked complete without diagnosis, treatment, or a usable onward booking.[^18] Others describe requests formally processed but not actually actioned, such as rejected repeats, undelivered referral letters, or unresolved admin forms.[^19]
 
-- **System change**: 2 (3%)
-- **Capacity and staffing**: (see taxonomy)
+Leadership itself is a direct target in this file.[^20] Reviews call managers invisible,[^21] unavailable,[^22] unwilling to intervene,[^23] or responsible for allowing poor staff behaviour and broken systems to continue for months or years.[^24] Where change is mentioned explicitly, patients often say new management promised improvement but left the same practical failures in place.[^25]
 
-### Rating distribution
+Another theme is strategic confusion.[^26] Reviewers describe conflicting instructions across phone lines, websites, text messages, and reception,[^27] being told to use systems that were closed, inaccessible, or not configured for registered patients,[^28] and being moved between GP, pharmacist, physiotherapy, walk-in, 111, or hospital pathways without clear clinical ownership.[^29]
 
-- 5★: 2 (3%)
-- 4★: 2 (3%)
-- 3★: 4 (7%)
-- 2★: 3 (5%)
-- 1★: 48 (81%)
+This file also adds stronger evidence that management decisions are narrowing the definition of service.[^30] Patients say requests are being channelled into fixed digital windows,[^31] sick notes and admin requests are being time-limited like appointments,[^32] non-doctor staff are increasingly substituted for requested GP review,[^33] and routine matters are redesigned around practice convenience rather than patient use.[^34]
+
+A repeated point is that these are not described as isolated bad interactions.[^35] Reviewers explicitly compare the current service with how the same practice worked before,[^36] say decline has taken place over several years,[^37] and link the drop in standards to concrete managerial choices such as changing contracts, removing clinics, replacing systems, or failing to supervise staff.[^38]
+
+There is also a more explicit accountability problem here than in the earlier files.[^39] Patients describe complaints, feedback forms, and escalation routes that produce no answer,[^40] requests for formal letters being ignored,[^41] and managers appearing easier to mention in reviews than to reach in practice.[^42] Some reviewers move straight from failed complaint routes to changing surgery or escalating outside the practice.[^43]
+
+Where this file adds something genuinely new is in the pattern of organisational self-disruption.[^44] The complaint is not only that access is hard, admin is messy, or reception is rude, all of which appear elsewhere.[^45] It is that restructures, system swaps, and management interventions are repeatedly described as the thing that turned strain into dysfunction, because the practice changed its processes without preserving continuity, clarity, or responsibility.[^46]
+
+[^1]: Ashton Gp Service, `system_change`: “management need sacking”; New Bank Health, `telephone_access`: “awful management. This practice desperately needs a complete overhaul.”
+[^2]: Lindley House Health Centre, `telephone_access`: “Once they received the patients votes to continue running surgery on a permanent basis they scrapped weekend appointments and just went downhill from there”; New Bank Health, `repeat_prescriptions`: “I'm extremely disappointed with the recent changes at this GP surgery”; New Bank Health, `continuity_of_care`: “After leaving a previous 1 star review… a new management company took over in April.”
+[^3]: Gordon Street Medical Centre, `telephone_access`: “Patients who had appointments booked are not being transferred onto a new system”; Charlestown MD, `telephone_access`: “They introduced a so-called ‘new system’”; New Bank Health, `appointment_booking`: “This new system is absolute rubish and sooo confusing.”
+[^4]: Gordon Street Medical Centre, `telephone_access`: “Patients who had appointments booked are not being transferred onto a new system.”
+[^5]: Charlestown MD, `telephone_access`: “they allowed walk-in appointments before 8 a.m., but this was later cancelled. Phone appointments were also available before, and then cancelled as well.”
+[^6]: Charlestown MD, `telephone_access`: “my appointment was deleted and rebooked without me being notified AGAIN”; Lindley House Health Centre, `telephone_access`: “they reduced priority appointments for babies from 5 apps to 1 a day.”
+[^7]: New Bank Health, `appointment_booking`: “Cant register and book appointment”; New Bank Health, `repeat_prescriptions`: “now it's linked to the NHS app, which requires identity verification”; Charlestown MD, `telephone_access`: “I should make an online phone request instead… this system is only open between 7 a.m. and 11 a.m.”
+[^8]: Lindley House Health Centre, `telephone_access`: “it has gone downhill from there”; New Bank Health, `digital_access`: “since Dr h Ali not there get very very bad”; New Bank Health, `system_change`: “It's very badly .I will change it .”
+[^9]: New Bank Health, `repeat_prescriptions`: “It was previously simple to order through the pharmacy app, but now it's linked to the NHS app”; “This puts me at risk of running out of essential medication”; New Bank Health, `repeat_prescriptions`: “they have now even time-limited sending admin requests and sick notes as well.”
+[^10]: Charlestown MD, `telephone_access`: “this system is only open between 7 a.m. and 11 a.m.”; New Bank Health, `repeat_prescriptions`: “They are open from 8am to hardly 10am or 11am.”
+[^11]: Lindley House Health Centre, `telephone_access`: “reduced priority appointments for babies from 5 apps to 1 a day”; “they scrapped weekend appointments”; Charlestown MD, `telephone_access`: “walk-in appointments… cancelled”; “Phone appointments were also available before, and then cancelled as well.”
+[^12]: Gordon Street Medical Centre, `telephone_access`: “dumped and told to ring the surgery next week”; Ashton Gp Service, `referrals`: “they would ring 10 mins before the appointment and cancel it”; Charlestown MD, `digital_access`: “the nurse always cancels her clinic day.”
+[^13]: Gordon Street Medical Centre, `telephone_access`: “the patients already booked should be migrated over, not abandoned.”
+[^14]: Gordon Street Medical Centre, `telephone_access`: “told to ring the surgery next week in the usual 8am lottery.”
+[^15]: Charlestown MD, `digital_access`: “so many weeks in advance just for the immunisation appointment to be cancel every time the day before”; Charlestown MD, `telephone_access`: “her appointments kept getting cancelled.”
+[^16]: Ashton Gp Service, `referrals`: “over 2 months just trying to make a medication review appointment”; “they would ring 10 mins before the appointment and cancel it”; New Bank Health, `telephone_access`: “I have filled in a feedback form and am still waiting to hear back.”
+[^17]: Ashton Gp Service, `repeat_prescriptions`: “this new system is now being used to clear any backlogs but you do not receive any care”; “My request is now showing on the system as completed but I have no idea what is wrong.”
+[^18]: Ashton Gp Service, `repeat_prescriptions`: “no diagnosis and no care”; “completed but I have no idea what is wrong or what I should do.”
+[^19]: New Bank Health, `repeat_prescriptions`: “they still keep rejecting it”; New Bank Health, `referrals`: “been waiting over a month for a referral letter”; New Bank Health, `telephone_access`: “fill in a feedback form… but nothing.”
+[^20]: Ashton Gp Service, `system_change`: “management need sacking”; Charlestown MD, `digital_access`: “I think there’s a lack of management and training”; New Bank Health, `telephone_access`: “Terrible experience, awful management.”
+[^21]: New Bank Health, `telephone_access`: “I tried calling again to ask for the manager Sharon”; “still waiting to hear back from Andrew Gee or Lauren, but nothing.”
+[^22]: Guide Bridge Medical Practice, `telephone_access`: “I wanted to speak to a manager… she responded with ‘send an email’”; New Bank Health, `referrals`: “doesn’t let me speak with the practice manager.”
+[^23]: Lindley House Health Centre, `reception_conduct`: “refused to allow me to speak to her or his manager or anyone else”; New Bank Health, `telephone_access`: “the only way was to fill in a form.”
+[^24]: Lindley House Health Centre, `reception_conduct`: “she has bad receptionist and apologises for them”; New Bank Health, `telephone_access`: “the behaviour is appalling”; Hattersley Group Practice, `reception_conduct`: “Management seriously needs to address these issues.”
+[^25]: New Bank Health, `continuity_of_care`: “we've been assured they're working on it”; “should be moving to a new system”; New Bank Health, `continuity_of_care`: “there is still no new practice manager.”
+[^26]: Charlestown MD, `telephone_access`: “told that it was not possible and that I should make an online phone request instead”; New Bank Health, `telephone_access`: “passed between phone lines, broken websites, and conflicting instructions.”
+[^27]: Gordon Street Medical Centre, `referrals`: “Told to access on line, by text, with no clear instructions on how?”; New Bank Health, `telephone_access`: “when I called I was told the only way was to fill in a form”; website said otherwise.
+[^28]: New Bank Health, `continuity_of_care`: “Bookable… doesn't work for existing registered patients”; Charlestown MD, `telephone_access`: “this system is only open between 7 a.m. and 11 a.m.”
+[^29]: Ashton Gp Service, `repeat_prescriptions`: “the Doctor wants you to see a Physio but sorry no appointments”; New Bank Health, `telephone_access`: “appeal a decision”; Charlestown MD, `telephone_access`: “other GP practices… simply referred me back to my local GP.”
+[^30]: New Bank Health, `repeat_prescriptions`: “time-limited sending admin requests and sick notes as well”; Ashton Gp Service, `repeat_prescriptions`: “my last two appointments have not been a Doctor even though I requested a Doctor.”
+[^31]: New Bank Health, `repeat_prescriptions`: “They are open from 8am to hardly 10am or 11am”; Charlestown MD, `telephone_access`: “only open between 7 a.m. and 11 a.m.”
+[^32]: New Bank Health, `repeat_prescriptions`: “time-limited sending admin requests and sick notes as well.”
+[^33]: Ashton Gp Service, `repeat_prescriptions`: “my last two appointments have not been a Doctor even though I requested a Doctor”; “some one who is not a Doctor is just as good as a Doctor.”
+[^34]: Lindley House Health Centre, `telephone_access`: “0 flexibility offered”; New Bank Health, `repeat_prescriptions`: “Who makes them think that we are available during those times when someone is sick or at work or commuting?”
+[^35]: Lindley House Health Centre, `telephone_access`: “over the last 3 years”; Droylsden Medical Practice, `referrals`: “the last four years has been horrendous”; Charlestown MD, `telephone_access`: “Every single time I try to see a doctor.”
+[^36]: Lindley House Health Centre, `telephone_access`: “When they first opened… they were brilliant”; “used to be really thorough”; New Bank Health, `repeat_prescriptions`: “It was previously simple to order through the pharmacy app.”
+[^37]: Lindley House Health Centre, `telephone_access`: “3 years of going from bad to worse”; Hattersley Group Practice, `reception_conduct`: “gone completely downhill”; Guide Bridge Medical Practice, `telephone_access`: “3 difficult years spent with them.”
+[^38]: Lindley House Health Centre, `telephone_access`: “scrapped weekend appointments”; Gordon Street Medical Centre, `telephone_access`: “not being transferred onto a new system”; New Bank Health, `repeat_prescriptions`: “linked to the NHS app”; New Bank Health, `continuity_of_care`: “moving to a new digital system on 1st of October.”
+[^39]: New Bank Health, `telephone_access`: “still waiting to hear back”; “asked for a formal letter… but still haven't recieved the letter”; Guide Bridge Medical Practice, `telephone_access`: “practice manager… has also failed to respond.”
+[^40]: New Bank Health, `telephone_access`: “fill in a feedback form… but nothing”; Guide Bridge Medical Practice, `telephone_access`: “send an email”; New Bank Health, `referrals`: “doesn’t let me speak with the practice manager.”
+[^41]: New Bank Health, `telephone_access`: “I've asked for a formal letter… but still haven't recieved the letter.”
+[^42]: New Bank Health, `telephone_access`: “better luck getting Lauren to reply back to this post than my feedback form”; Lindley House Health Centre, `reception_conduct`: “I have had to talk to her on numerous occasions.”
+[^43]: Gordon Street Medical Centre, `appointment_booking`: “I changed practice overnight”; Lindley House Health Centre, `telephone_access`: “I will be changing GP”; New Bank Health, `repeat_prescriptions`: “I will be reporting this GP to Health Ombudsman, NHS and MP.”
+[^44]: Gordon Street Medical Centre, `telephone_access`: “Having transferred many patients into new systems over the years”; “should be migrated over, not abandoned”; Ashton Gp Service, `repeat_prescriptions`: “used to clear any backlogs”; New Bank Health, `repeat_prescriptions`: “recent changes… deeply concerning.”
+[^45]: Gordon Street Medical Centre, `appointment_booking`: “impossible to get an appointment”; Hattersley Group Practice, `referrals`: “Nothing gets put onto the system that you give them”; Droylsden Medical Practice, `reception_conduct`: “Practice manager is vile.”
+[^46]: Gordon Street Medical Centre, `telephone_access`: “dumped”; Charlestown MD, `telephone_access`: “new system”; Lindley House Health Centre, `telephone_access`: “scrapped weekend appointments”; New Bank Health, `repeat_prescriptions`: “linked to the NHS app”; Ashton Gp Service, `repeat_prescriptions`: “completed” with “no diagnosis and no care.”
