@@ -311,7 +311,10 @@ def build_classifier(input_path: Path, output_path: Path) -> dict[str, Any]:
                     break
 
     classifications: dict[str, dict[str, Any]] = {}
-    for rid, text, stars in reviews:
+    rid_to_text: dict[str, str] = {rid: _clean_messy_text(text) for rid, text, _ in reviews}
+    rid_to_stars: dict[str, int] = {rid: stars for rid, _text, stars in reviews}
+
+    for rid, _text, stars in reviews:
         cid = id_to_cluster.get(rid, "uncategorised")
         classifications[rid] = {
             "cluster_id": cid,
@@ -320,44 +323,85 @@ def build_classifier(input_path: Path, output_path: Path) -> dict[str, Any]:
             "sentiment": sentiment_from_rating(stars),
         }
 
-    # Operational rollup: map graph cluster labels to staff-facing taxonomy
+    # Operational rollup: prioritise claim-based (review text) over cluster-label matching
     default_bucket = config.get("default_bucket", "uncategorised")
     rollup_rules = config.get("cluster_rollup_rules", [])
     primary_rules = [r for r in rollup_rules if not r.get("fallback_only")]
     fallback_rules = [r for r in rollup_rules if r.get("fallback_only")]
-    rid_to_stars = {rid: stars for rid, _text, stars in reviews}
+
+    def _rules_matching_text(text: str, rules: list, stars: int = 0) -> list[tuple[dict, float]]:
+        """Return (rule, confidence) for each rule whose keywords match text."""
+        text_lower = text.lower()
+        out: list[tuple[dict, float]] = []
+        for rule in rules:
+            if rule.get("operational_category") == "positive_feedback" and stars <= 2:
+                continue
+            keywords = [k.lower() for k in rule.get("when_cluster_label_matches_any", [])]
+            if any(kw in text_lower for kw in keywords):
+                conf = float(rule.get("confidence", 0.5))
+                out.append((rule, conf))
+        return out
+
     if rollup_rules:
         for rid, c in classifications.items():
             cid = c.get("cluster_id", "uncategorised")
             label = cluster_labels.get(cid, "").lower()
             stars = rid_to_stars.get(rid, 0)
-            best = None
-            best_conf = 0.0
+            text_clean = rid_to_text.get(rid, "")
+
+            # Claim-based: match rules against review text (prioritised over cluster)
+            text_matches = _rules_matching_text(text_clean, primary_rules, stars)
+            if not text_matches:
+                text_matches = _rules_matching_text(text_clean, fallback_rules, stars)
+
+            # Cluster-based fallback
+            cluster_best = None
+            cluster_conf = 0.0
             for rule in primary_rules:
                 keywords = [k.lower() for k in rule.get("when_cluster_label_matches_any", [])]
                 if any(kw in label for kw in keywords):
                     conf = float(rule.get("confidence", 0.5))
-                    if conf > best_conf:
-                        best_conf = conf
-                        best = rule
-            if not best and fallback_rules:
+                    if conf > cluster_conf:
+                        cluster_conf = conf
+                        cluster_best = rule
+            if not cluster_best and fallback_rules:
                 for rule in fallback_rules:
                     if rule.get("operational_category") == "positive_feedback" and stars <= 2:
                         continue
                     keywords = [k.lower() for k in rule.get("when_cluster_label_matches_any", [])]
                     if any(kw in label for kw in keywords):
                         conf = float(rule.get("confidence", 0.5))
-                        if conf > best_conf:
-                            best_conf = conf
-                            best = rule
-            if best:
-                c["operational_category"] = best.get("operational_category", default_bucket)
-                c["subcategory"] = best.get("subcategory", "")
+                        if conf > cluster_conf:
+                            cluster_conf = conf
+                            cluster_best = rule
+
+            # Primary: claim-based wins if any text match; else cluster-based
+            all_text_matches = _rules_matching_text(text_clean, primary_rules + fallback_rules, stars)
+            operational_categories: list[str] = []
+            seen_cats: set[str] = set()
+            for rule, _ in sorted(all_text_matches, key=lambda x: -x[1]):
+                cat = rule.get("operational_category", "")
+                if cat and cat not in seen_cats:
+                    operational_categories.append(cat)
+                    seen_cats.add(cat)
+
+            if text_matches:
+                best_rule, best_conf = max(text_matches, key=lambda x: x[1])
+                c["operational_category"] = best_rule.get("operational_category", default_bucket)
+                c["subcategory"] = best_rule.get("subcategory", "")
                 c["operational_confidence"] = best_conf
+            elif cluster_best:
+                c["operational_category"] = cluster_best.get("operational_category", default_bucket)
+                c["subcategory"] = cluster_best.get("subcategory", "")
+                c["operational_confidence"] = cluster_conf
+                if c["operational_category"] not in seen_cats:
+                    operational_categories.insert(0, c["operational_category"])
             else:
                 c["operational_category"] = default_bucket
                 c["subcategory"] = ""
                 c["operational_confidence"] = 0.0
+
+            c["operational_categories"] = operational_categories if operational_categories else [c.get("operational_category", default_bucket)]
 
     taxonomy_version = config.get("taxonomy_version", "")
     out = {

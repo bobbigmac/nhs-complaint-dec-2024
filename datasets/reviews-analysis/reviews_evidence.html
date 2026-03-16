@@ -135,13 +135,26 @@ body {
 }
 .practice-header h2 { margin: 0; font-size: 16px; font-weight: 600; }
 .practice-meta { font-size: 13px; color: var(--ink-muted); }
-.bucket-col-header.hover-preview,
-.treemap-block-header.hover-preview {
+.bucket-col-header,
+.treemap-block-header {
+  position: relative;
+}
+.header-preview-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  padding: inherit;
+  border-radius: inherit;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-width: 0;
-  max-width: 320px;
+  background: inherit;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+.header-preview-overlay.visible {
+  display: block;
 }
 .buckets-table {
   display: grid;
@@ -382,6 +395,7 @@ body {
         <button type="button" class="view-toggle-btn active" data-theme="operational">Operational</button>
         <button type="button" class="view-toggle-btn" data-theme="cluster">Cluster evidence</button>
       </div>
+      <label class="checkbox-label"><input type="checkbox" id="show-in-all-categories" title="Show each review as a square in every category it touches"> Show in all categories</label>
     </div>
   </div>
 
@@ -484,12 +498,15 @@ body {
     }
     return (bucketOrder || Object.keys(groups)).filter(b => groups[b]).map(b => ({ bucket: b, reviews: groups[b] }));
   }
-  function groupByOperational(reviews, order) {
+  function groupByOperational(reviews, order, multiCategory) {
     const groups = {};
     for (const r of reviews) {
-      const b = r.operational_category || "uncategorised";
-      if (!groups[b]) groups[b] = [];
-      groups[b].push(r);
+      const cats = multiCategory ? (r.operational_categories || [r.operational_category || "uncategorised"]) : [r.operational_category || "uncategorised"];
+      for (const b of cats) {
+        const key = b || "uncategorised";
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(r);
+      }
     }
     return (order || Object.keys(groups)).filter(b => groups[b]).map(b => ({ bucket: b, reviews: groups[b] }));
   }
@@ -515,13 +532,14 @@ body {
   function render() {
     hidePopover();
     const themeMode = document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn.active")?.dataset.theme || "operational";
+    const multiCategory = document.getElementById("show-in-all-categories")?.checked ?? false;
     const bucketLabels = getBucketLabels(data);
     const operationalLabels = getOperationalLabels(data);
     const bucketOrder = getBucketOrder(data, bucketLabels);
     const operationalOrder = getOperationalOrder(data);
     const labels = themeMode === "operational" ? operationalLabels : bucketLabels;
     const order = themeMode === "operational" ? operationalOrder : bucketOrder;
-    const groupBy = themeMode === "operational" ? groupByOperational : groupByBucket;
+    const groupBy = themeMode === "operational" ? (reviews, ord) => groupByOperational(reviews, ord, multiCategory) : groupByBucket;
     const timespan = document.getElementById("timespan-filter").value;
     const sortMode = document.getElementById("sort-mode").value;
     const viewMode = document.querySelector("[aria-label='View mode'] .view-toggle-btn.active")?.dataset.view || "treemap";
@@ -645,9 +663,9 @@ body {
           block.className = `treemap-block bucket-${bucket}`;
           const avg = avgScore(reviews);
           const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-          block.innerHTML = `<div class="treemap-block-header ${avgClass}">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="treemap-block-body"></div>`;
+          block.innerHTML = `<div class="treemap-block-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="treemap-block-body"></div>`;
           const blockHeader = block.querySelector(".treemap-block-header");
-          blockHeader.dataset.original = blockHeader.textContent;
+          blockHeader.dataset.original = blockHeader.querySelector(".header-label").textContent;
           const body = block.querySelector(".treemap-block-body");
           for (const r of reviews) {
             const sq = document.createElement("span");
@@ -672,9 +690,9 @@ body {
           col.className = "bucket-col";
           const avg = avgScore(reviews);
           const avgClass = avg != null ? "avg-" + Math.round(avg) : "avg-0";
-          col.innerHTML = `<div class="bucket-col-header ${avgClass}">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</div><div class="squares-row"></div>`;
+          col.innerHTML = `<div class="bucket-col-header ${avgClass}"><span class="header-label">${labels[bucket] || bucket} · ${formatAvg(avg)} avg</span><span class="header-preview-overlay"></span></div><div class="squares-row"></div>`;
           const colHeader = col.querySelector(".bucket-col-header");
-          colHeader.dataset.original = colHeader.textContent;
+          colHeader.dataset.original = colHeader.querySelector(".header-label").textContent;
           const squaresDiv = col.querySelector(".squares-row");
           for (const r of reviews) {
             const sq = document.createElement("span");
@@ -753,15 +771,14 @@ body {
   function setHeaderPreview(sq, review, show) {
     const panel = sq.closest(".treemap-block") || sq.closest(".bucket-col");
     const header = panel?.querySelector(".treemap-block-header, .bucket-col-header");
-    if (!header) return;
+    const overlay = header?.querySelector(".header-preview-overlay");
+    if (!header || !overlay) return;
     if (show && review) {
-      const author = review.author || "?";
-      const text = (review.text || "").trim().slice(0, 100);
-      header.textContent = `${author} – ${text}${text.length >= 100 ? "…" : ""}`;
-      header.classList.add("hover-preview");
+      overlay.textContent = (review.text || "").trim();
+      overlay.classList.add("visible");
     } else {
-      header.textContent = header.dataset.original || "";
-      header.classList.remove("hover-preview");
+      overlay.textContent = "";
+      overlay.classList.remove("visible");
     }
   }
 
@@ -777,6 +794,7 @@ body {
   document.getElementById("timespan-filter").addEventListener("change", render);
   document.getElementById("sort-mode").addEventListener("change", render);
   document.getElementById("exclude-non-gtd").addEventListener("change", render);
+  document.getElementById("show-in-all-categories").addEventListener("change", render);
   document.querySelectorAll(".view-toggle-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const group = btn.closest("[role='group']");

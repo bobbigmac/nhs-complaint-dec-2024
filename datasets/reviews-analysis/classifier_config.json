@@ -12,10 +12,10 @@
   "fallback_min_text": 5,
   "default_bucket": "uncategorised",
   "cluster_rollup_rules": [
-    { "when_cluster_label_matches_any": ["phone", "hold", "ring", "get through"], "operational_category": "access", "subcategory": "telephone_access", "confidence": 0.85 },
+    { "when_cluster_label_matches_any": ["phone", "hold", "ring", "get through", "engaged", "dial"], "operational_category": "access", "subcategory": "telephone_access", "confidence": 0.9 },
     { "when_cluster_label_matches_any": ["cancelled", "cancellation"], "operational_category": "access", "subcategory": "appointment_cancellation", "confidence": 0.9 },
     { "when_cluster_label_matches_any": ["online", "website", "patchs", "form", "digital", "bookable"], "operational_category": "access", "subcategory": "digital_access", "confidence": 0.9 },
-    { "when_cluster_label_matches_any": ["appointment", "booking", "phone", "access"], "operational_category": "access", "subcategory": "appointment_booking", "confidence": 0.8 },
+    { "when_cluster_label_matches_any": ["appointment", "booking", "booked", "phone", "access", "fully booked", "try again"], "operational_category": "access", "subcategory": "appointment_booking", "confidence": 0.85 },
     { "when_cluster_label_matches_any": ["reception", "rude", "condescending", "unprofessional"], "operational_category": "front_desk", "subcategory": "reception_conduct", "confidence": 0.9 },
     { "when_cluster_label_matches_any": ["confidentiality", "front desk", "check in", "told"], "operational_category": "front_desk", "subcategory": "reception_process", "confidence": 0.7 },
     { "when_cluster_label_matches_any": ["same gp", "same doctor", "usual gp", "locum", "continuity"], "operational_category": "clinical_care", "subcategory": "continuity_of_care", "confidence": 0.95 },

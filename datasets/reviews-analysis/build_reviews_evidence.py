@@ -442,6 +442,7 @@ def main() -> int:
         review["primary_bucket"] = c.get("primary_bucket", "uncategorised")
         review["buckets"] = c.get("buckets", ["uncategorised"])
         review["operational_category"] = c.get("operational_category", "uncategorised")
+        review["operational_categories"] = c.get("operational_categories", [c.get("operational_category", "uncategorised")])
         review["subcategory"] = c.get("subcategory", "")
         review["operational_confidence"] = c.get("operational_confidence", 0.0)
 
@@ -456,6 +457,7 @@ def main() -> int:
         r["primary_bucket"] = c.get("primary_bucket", "uncategorised")
         r["buckets"] = c.get("buckets", ["uncategorised"])
         r["operational_category"] = c.get("operational_category", "uncategorised")
+        r["operational_categories"] = c.get("operational_categories", [c.get("operational_category", "uncategorised")])
         r["subcategory"] = c.get("subcategory", "")
         r["operational_confidence"] = c.get("operational_confidence", 0.0)
 
