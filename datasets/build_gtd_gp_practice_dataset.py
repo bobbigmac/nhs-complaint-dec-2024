@@ -2983,6 +2983,9 @@ function renderMarkers() {{
     if (metricValue === null && activeMetric === 'gap') {{
       continue;
     }}
+    if (activeMetric === 'gap' && activeGapMode === 'normalized' && metricValue > 0) {{
+      continue;
+    }}
     const color = metric.markerColor(row);
     const label = metric.markerLabel(row);
     const shapeName = assignments.get(row.management_company) || 'circle';
