@@ -27,6 +27,8 @@ GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
 GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_branch_parent_codes.json"
 PATIENT_COUNTS_BY_YEAR_JSON = BASE_DIR / "raw" / "registered_patients" / "patient_counts_by_year.json"
 DEPRIVATION_SUBSET_GEOJSON = BASE_DIR / "deprivation" / "output" / "catchment_lsoa_imd_2025.geojson"
+
+from deprivation.practice_deprivation_lookup import write_practice_deprivation_lookup
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
@@ -1068,6 +1070,9 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
     patient_counts_by_year = load_registered_patient_timeseries() or {}
     deprivation_geojson = load_deprivation_subset_geojson()
+    # Build a simple per-practice deprivation lookup JSON alongside the map
+    practice_deprivation_lookup_path = path.parent / "practice_deprivation_lookup.json"
+    practice_deprivation = write_practice_deprivation_lookup(practice_deprivation_lookup_path, rows)
     # TODO: Patient flow visualisation – use patient_counts_by_year to show where patients moved between practices over time
     known_management_companies = sorted(
         {
@@ -1873,6 +1878,16 @@ body {{
       </div>
       <p class="chart-note">Y-axis is GP Patient Survey completion rate. X-axis changes with the selected score source.</p>
     </section>
+    <section class="panel comparison-panel">
+      <h2>Score vs Deprivation</h2>
+      <p id="deprivation-summary" class="hint"></p>
+      <div class="chart-frame">
+        <svg id="deprivation-chart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="deprivation-title" role="img">
+          <title id="deprivation-title">Selected score against area deprivation decile</title>
+        </svg>
+      </div>
+      <p class="chart-note">X-axis is IMD 2025 decile (1 = most deprived). Y-axis changes with the selected score source, including the signed survey/Google gap.</p>
+    </section>
   </div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -1884,6 +1899,7 @@ const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const patientCountsByYear = {json.dumps(patient_counts_by_year)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const deprivationGeojson = {json.dumps(deprivation_geojson, separators=(",", ":"))};
+const practiceDeprivationLookup = {json.dumps(practice_deprivation, separators=(",", ":"))};
 const rowsByCode = new Map(rows.map((row) => [row.code, row]));
 const NEW_BANK_CODE = 'Y02960';
 const BASELINE_MANAGEMENT_COMPANY = 'GTD Healthcare';
@@ -1987,7 +2003,7 @@ const metricConfigs = {{
   }},
   gap: {{
     title: 'Survey/Google gap',
-    description: 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google.',
+    description: 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google; positive means Google is higher than the survey-equivalent score, negative means lower.',
     value(row) {{
       const google = numericOrNull(row.google_score);
       const googleCount = numericOrNull(row.google_count);
@@ -1996,8 +2012,9 @@ const metricConfigs = {{
       if (google === null || survey === null) return null;
       if (googleCount === null || googleCount <= 0) return null;
       if (surveySentBack === null || surveySentBack <= 0) return null;
-      const gap = Math.abs(google - (survey / 20));
-      return gap < 1 ? null : gap;
+      const surveyStars = survey / 20;
+      const gap = google - surveyStars;
+      return Math.abs(gap) < 1 ? null : gap;
     }},
     compareValue(_row) {{
       return null;
@@ -2009,11 +2026,11 @@ const metricConfigs = {{
     markerColor(row) {{
       const value = this.value(row);
       if (value === null) return '#9aa0a6';
-      if (value >= 2.0) return '#c3472f';
-      if (value >= 1.5) return '#dc8c23';
-      if (value >= 1.0) return '#d2b529';
-      if (value >= 0.5) return '#4c9a52';
-      return '#1c7c54';
+      if (value >= 1.0) return '#1c7c54';        // Google much higher than survey (better than recorded)
+      if (value >= 0.5) return '#4c9a52';        // Google somewhat higher than survey
+      if (value > -0.5) return '#d2b529';        // Rough alignment
+      if (value > -1.0) return '#dc8c23';        // Google somewhat worse than survey
+      return '#c3472f';                          // Google much worse than survey (worse than recorded)
     }},
     scaleCount(row) {{
       const google = numericOrNull(row.google_count);
@@ -2028,8 +2045,8 @@ const metricConfigs = {{
     averageLabel(value) {{
       return value === null ? '?' : value.toFixed(2);
     }},
-    axisLabel: 'Absolute gap between Google and survey-equivalent stars',
-    axisMin: 0,
+    axisLabel: 'Google minus survey-equivalent stars (positive = Google higher)',
+    axisMin: -2.5,
     axisMax: 2.5
   }}
 }};
@@ -2425,8 +2442,13 @@ function formatGap(row) {{
   const surveyPercent = numericOrNull(row.survey_overall_good_percent);
   if (google === null || surveyPercent === null) return 'Survey/Google gap: ?';
   const surveyStars = surveyPercent / 20;
-  const gap = Math.abs(google - surveyStars);
-  return `Survey/Google gap: ${{gap.toFixed(2)}} stars · Google ${{google.toFixed(1)}} vs survey-equivalent ${{surveyStars.toFixed(2)}}`;
+  const gap = google - surveyStars;
+  const magnitude = Math.abs(gap);
+  if (magnitude < 0.01) {{
+    return `Survey/Google gap: aligned · Google ${{google.toFixed(1)}} vs survey-equivalent ${{surveyStars.toFixed(2)}}`;
+  }}
+  const direction = gap > 0 ? 'higher' : 'lower';
+  return `Survey/Google gap: ${{magnitude.toFixed(2)}} stars (${{direction}}) · Google ${{google.toFixed(1)}} vs survey-equivalent ${{surveyStars.toFixed(2)}}`;
 }}
 
 function popupMarkup(row) {{
@@ -2694,15 +2716,15 @@ function metricToneClass(metricName, value) {{
     return 'tone-good';
   }}
   if (metricName === 'gap') {{
-    if (value >= 2) return 'tone-bad';
-    if (value >= 1.5) return 'tone-mid';
+    if (value <= -1) return 'tone-bad';
+    if (value <= -0.5) return 'tone-mid';
     return 'tone-good';
   }}
   return 'tone-missing';
 }}
 
 function comparisonSense(metricName) {{
-  return metricName === 'gap' ? 'lower' : 'higher';
+  return metricName === 'gap' ? 'higher' : 'higher';
 }}
 
 function deltaSentence(subjectValue, benchmarkValue, metricName) {{
@@ -3060,12 +3082,36 @@ function renderComparisons() {{
 
 function renderScatterplot() {{
   const metric = metricConfigs[activeMetric];
+  const scatterAxis = (() => {{
+    if (activeMetric !== 'gap') {{
+      return {{ min: metric.axisMin, max: metric.axisMax, label: metric.axisLabel, ticks: null }};
+    }}
+    // For this chart only, show gap magnitude on a 0..max scale so positive/negative gaps share the axis.
+    return {{
+      min: 0,
+      max: Math.max(0.5, metric.axisMax),
+      label: 'Survey/Google gap magnitude (abs, stars)',
+      ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5],
+    }};
+  }})();
   const points = rows
     .map((row) => {{
-      const x = metric.value(row);
+      const signed = activeMetric === 'gap'
+        ? (() => {{
+          const google = numericOrNull(row.google_score);
+          const googleCount = numericOrNull(row.google_count);
+          const survey = numericOrNull(row.survey_overall_good_percent);
+          const surveySentBack = numericOrNull(row.survey_sent_back);
+          if (google === null || survey === null) return null;
+          if (googleCount === null || googleCount <= 0) return null;
+          if (surveySentBack === null || surveySentBack <= 0) return null;
+          return google - (survey / 20);
+        }})()
+        : metric.value(row);
+      const x = signed === null ? null : (activeMetric === 'gap' ? Math.abs(signed) : signed);
       const y = numericOrNull(row.survey_completion_rate_percent);
       if (x === null || y === null) return null;
-      return {{ row, x, y }};
+      return {{ row, x, y, signed }};
     }})
     .filter(Boolean);
   const svg = document.getElementById('scatterplot');
@@ -3075,17 +3121,19 @@ function renderScatterplot() {{
   const plotWidth = width - margin.left - margin.right;
   const plotHeight = height - margin.top - margin.bottom;
   const completionMax = Math.max(10, ...points.map((point) => point.y), 50);
-  const xScale = (value) => margin.left + ((value - metric.axisMin) / (metric.axisMax - metric.axisMin)) * plotWidth;
+  const xScale = (value) => margin.left + ((value - scatterAxis.min) / (scatterAxis.max - scatterAxis.min)) * plotWidth;
   const yScale = (value) => margin.top + plotHeight - (value / completionMax) * plotHeight;
   const gridY = [];
   for (let tick = 0; tick <= completionMax; tick += 10) {{
     gridY.push(tick);
   }}
-  const gridX = activeMetric === 'google'
-    ? [0, 1, 2, 3, 4, 5]
-    : activeMetric === 'survey'
-      ? [0, 20, 40, 60, 80, 100]
-      : [0, 0.5, 1.0, 1.5, 2.0, 2.5];
+  const gridX = scatterAxis.ticks || (
+    activeMetric === 'google'
+      ? [0, 1, 2, 3, 4, 5]
+      : activeMetric === 'survey'
+        ? [0, 20, 40, 60, 80, 100]
+        : [0, 0.5, 1.0, 1.5, 2.0, 2.5]
+  );
   const assignments = shapeAssignment();
   const pointMarkup = points.map((point) => {{
     const companyShape = assignments.get(point.row.management_company);
@@ -3095,7 +3143,9 @@ function renderScatterplot() {{
       ? point.x.toFixed(1)
       : activeMetric === 'survey'
         ? `${{Math.round(point.x)}}%`
-        : point.x.toFixed(2);
+        : activeMetric === 'gap'
+          ? `${{point.signed >= 0 ? '+' : ''}}${{point.signed.toFixed(2)}} (|${{point.x.toFixed(2)}}|)`
+          : point.x.toFixed(2);
     return `
       <circle cx="${{xScale(point.x).toFixed(2)}}" cy="${{yScale(point.y).toFixed(2)}}" r="${{radius.toFixed(2)}}" fill="${{metric.markerColor(point.row)}}" stroke="${{stroke}}" stroke-width="${{companyShape ? 1.8 : 1}}">
         <title>${{point.row.name}} · ${{metric.title}}: ${{label}} · Completion: ${{Math.round(point.y)}}%</title>
@@ -3115,7 +3165,7 @@ function renderScatterplot() {{
     <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     ${{pointMarkup}}
-    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">${{metric.axisLabel}}</text>
+    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">${{scatterAxis.label}}</text>
     <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">GP survey completion rate</text>
   `;
   const completionValues = points.map((point) => point.y).sort((left, right) => left - right);
@@ -3127,6 +3177,173 @@ function renderScatterplot() {{
     : ` New Bank Health is at ${{Math.round(newBank.y)}}% completion and sits around the ${{percentile(completionValues, newBank.y).toFixed(0)}}th percentile for completion in this set.`;
   document.getElementById('scatter-summary').textContent =
     `${{points.length}} practices have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}.${{newBankSummary}}`;
+}}
+
+function renderDeprivationChart() {{
+  const metric = metricConfigs[activeMetric];
+  const svg = document.getElementById('deprivation-chart');
+  if (!svg) return;
+
+  const points = rows
+    .map((row) => {{
+      const dep = practiceDeprivationLookup[row.code];
+      if (!dep) return null;
+      const x = dep.imd_decile;
+      const y = activeMetric === 'gap'
+        ? (() => {{
+          const google = numericOrNull(row.google_score);
+          const googleCount = numericOrNull(row.google_count);
+          const survey = numericOrNull(row.survey_overall_good_percent);
+          const surveySentBack = numericOrNull(row.survey_sent_back);
+          if (google === null || survey === null) return null;
+          if (googleCount === null || googleCount <= 0) return null;
+          if (surveySentBack === null || surveySentBack <= 0) return null;
+          return google - (survey / 20);
+        }})()
+        : metric.value(row);
+      if (x === null || x === undefined || y === null) return null;
+      return {{ row, x, y }};
+    }})
+    .filter(Boolean);
+
+  const width = 920;
+  const height = 320;
+  const margin = {{ top: 18, right: 18, bottom: 42, left: 52 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+
+  const xMin = 1;
+  const xMax = 10;
+  const yMin = metric.axisMin;
+  const yMax = metric.axisMax;
+
+  const xBins = xMax - xMin + 1;
+  const xCenter = (decile) => margin.left + ((decile - xMin + 0.5) / xBins) * plotWidth;
+  const xBoundary = (boundaryIndex) => margin.left + (boundaryIndex / xBins) * plotWidth;
+  const yScale = (value) => margin.top + plotHeight - ((value - yMin) / (yMax - yMin)) * plotHeight;
+
+  const gridX = [];
+  for (let tick = xMin; tick <= xMax; tick += 1) {{
+    gridX.push(tick);
+  }}
+
+  const bucketCount = activeMetric === 'survey' ? 10 : 8;
+  const gridY = [];
+  const bucketHeight = (yMax - yMin) / bucketCount;
+  for (let index = 0; index <= bucketCount; index += 1) {{
+    gridY.push(yMin + bucketHeight * index);
+  }}
+
+  // Group points into (decile, value bucket) cells
+  const cells = new Map();
+  points.forEach((point) => {{
+    const decile = Math.max(xMin, Math.min(xMax, Math.round(point.x)));
+    const clampedY = Math.max(yMin, Math.min(yMax, point.y));
+    const bucketIndex = Math.min(
+      bucketCount - 1,
+      Math.max(0, Math.floor(((clampedY - yMin) / (yMax - yMin)) * bucketCount))
+    );
+    const key = `${{decile}}-${{bucketIndex}}`;
+    if (!cells.has(key)) cells.set(key, []);
+    cells.get(key).push(point);
+  }});
+
+  const assignments = shapeAssignment();
+  const cellMarkup = [];
+  const cellWidth = plotWidth / (xMax - xMin + 1);
+  const cellInnerWidth = cellWidth * 0.92;
+  const yPixelBucketHeight = plotHeight / bucketCount;
+  const cellInnerHeight = yPixelBucketHeight * 0.92;
+
+  // Fixed square size across the chart: pick the largest size that still fits the densest cell.
+  const maxCellCount = Math.max(0, ...Array.from(cells.values(), (cellPoints) => cellPoints.length));
+  function bestSquareSizeForCount(count) {{
+    if (!count) return 0;
+    let best = 0;
+    for (let cols = 1; cols <= count; cols += 1) {{
+      const rows = Math.ceil(count / cols);
+      const size = Math.min(cellInnerWidth / cols, cellInnerHeight / rows);
+      if (size > best) best = size;
+    }}
+    return best;
+  }}
+  const minSquareSize = 2.8;
+  const maxSquareSize = 14;
+  const fixedSquareSize = Math.max(minSquareSize, Math.min(maxSquareSize, bestSquareSizeForCount(maxCellCount)));
+
+  cells.forEach((cellPoints, key) => {{
+    const [decileStr, bucketStr] = key.split('-');
+    const decile = Number(decileStr);
+    const bucketIndex = Number(bucketStr);
+    const centerX = xCenter(decile);
+    const bucketYMin = yMin + bucketHeight * bucketIndex;
+    const bucketYMax = bucketYMin + bucketHeight;
+    const centerYValue = (bucketYMin + bucketYMax) / 2;
+    const centerY = yScale(centerYValue);
+
+    const count = cellPoints.length;
+    const cols = Math.ceil(Math.sqrt(count));
+    const rows = Math.ceil(count / cols);
+    const totalWidth = cols * fixedSquareSize;
+    const totalHeight = rows * fixedSquareSize;
+    const startX = centerX - totalWidth / 2 + fixedSquareSize / 2;
+    const startY = centerY - totalHeight / 2 + fixedSquareSize / 2;
+
+    cellPoints.forEach((point, index) => {{
+      const col = index % cols;
+      const row = Math.floor(index / cols);
+      const cx = startX + col * fixedSquareSize;
+      const cy = startY + row * fixedSquareSize;
+      const companyShape = assignments.get(point.row.management_company);
+      const stroke = companyShape ? '#1a1c1a' : 'rgba(26,28,26,0.25)';
+      const label = activeMetric === 'google'
+        ? point.y.toFixed(1)
+        : activeMetric === 'survey'
+          ? `${{Math.round(point.y)}}%`
+          : point.y.toFixed(2);
+      cellMarkup.push(`
+        <rect x="${{(cx - fixedSquareSize / 2).toFixed(2)}}" y="${{(cy - fixedSquareSize / 2).toFixed(2)}}" width="${{fixedSquareSize.toFixed(2)}}" height="${{fixedSquareSize.toFixed(2)}}" rx="1.2" fill="${{metric.markerColor(point.row)}}" stroke="${{stroke}}" stroke-width="${{companyShape ? 1 : 0.5}}">
+          <title>${{point.row.name}} · ${{metric.title}}: ${{label}} · IMD decile: ${{decile}}</title>
+        </rect>
+      `);
+    }});
+  }});
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{gridY.map((tick) => `
+      <line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" />
+    `).join('')}}
+    ${{Array.from({{ length: xBins + 1 }}, (_, idx) => idx).map((boundaryIndex) => `
+      <line x1="${{xBoundary(boundaryIndex)}}" y1="${{margin.top}}" x2="${{xBoundary(boundaryIndex)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.08)" />
+    `).join('')}}
+    ${{Array.from({{ length: bucketCount }}, (_, idx) => idx).map((bucketIndex) => {{
+      const bucketMid = yMin + bucketHeight * (bucketIndex + 0.5);
+      const label = activeMetric === 'survey'
+        ? `${{Math.round(bucketMid)}}%`
+        : bucketMid.toFixed(activeMetric === 'gap' ? 2 : 1);
+      return `
+        <text x="${{margin.left - 8}}" y="${{(yScale(bucketMid) + 4).toFixed(2)}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{label}}</text>
+      `;
+    }}).join('')}}
+    ${{gridX.map((tick) => `
+      <text x="${{xCenter(tick)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{tick}}</text>
+    `).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{cellMarkup.join('')}}
+    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">IMD 2025 decile (1 = most deprived)</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">${{metric.axisLabel}}</text>
+  `;
+
+  const depValues = points.map((point) => point.x).sort((l, r) => l - r);
+  const yValues = points.map((point) => point.y).sort((l, r) => l - r);
+  const depMedian = depValues.length ? depValues[Math.floor(depValues.length / 2)] : null;
+  const yMedian = yValues.length ? yValues[Math.floor(yValues.length / 2)] : null;
+  const rValue = correlation(points.map((p) => ({{ x: p.x, y: p.y }})));
+
+  document.getElementById('deprivation-summary').textContent =
+    `${{points.length}} practices have both a usable ${{metric.title.toLowerCase()}} value and mapped IMD 2025 decile. Median decile is ${{depMedian === null ? '?' : depMedian}} and median ${{metric.title.toLowerCase()}} is ${{yMedian === null ? '?' : (activeMetric === 'survey' ? `${{Math.round(yMedian)}}%` : yMedian.toFixed(activeMetric === 'gap' ? 2 : 1))}}. Pearson r for score vs decile is ${{rValue === null ? '?' : rValue.toFixed(2)}}.`;
 }}
 
 function formatMonthLabel(monthIso) {{
@@ -3584,6 +3801,7 @@ function rerenderAll() {{
   }}
   renderGtdScoreTrendChart();
   renderScatterplot();
+  renderDeprivationChart();
   renderComparisons();
 }}
 
@@ -3602,6 +3820,15 @@ document.getElementById('voronoi-toggle').addEventListener('change', (event) => 
 document.getElementById('deprivation-toggle').addEventListener('change', (event) => {{
   activeAreaOverlay = event.target.checked ? 'deprivation' : null;
   rerenderAll();
+}});
+
+let resizeTimer = null;
+window.addEventListener('resize', () => {{
+  if (resizeTimer) clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {{
+    renderScatterplot();
+    renderDeprivationChart();
+  }}, 120);
 }});
 
 document.getElementById('legend-collapse').addEventListener('click', () => {{
