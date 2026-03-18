@@ -1699,6 +1699,29 @@ function correlation(points) {
   return numerator / Math.sqrt(sumSqX * sumSqY);
 }
 
+function clamp01(value) {
+  return Math.max(0, Math.min(1, value));
+}
+
+function normalizedCounts(counts) {
+  const safe = (counts || []).map((value) => Number(value) || 0);
+  const total = safe.reduce((sum, value) => sum + value, 0);
+  if (total <= 0) return safe.map(() => 0);
+  return safe.map((value) => value / total);
+}
+
+function jensenShannonDivergence(leftCounts, rightCounts) {
+  const left = normalizedCounts(leftCounts);
+  const right = normalizedCounts(rightCounts);
+  if (!left.length || left.length !== right.length) return 0;
+  const midpoint = left.map((value, index) => (value + right[index]) / 2);
+  const kl = (source, target) => source.reduce((sum, value, index) => {
+    if (value <= 0 || target[index] <= 0) return sum;
+    return sum + (value * Math.log2(value / target[index]));
+  }, 0);
+  return (kl(left, midpoint) + kl(right, midpoint)) / 2;
+}
+
 function percentile(sortedValues, value) {
   if (!sortedValues.length) return null;
   let lessOrEqual = 0;
@@ -2280,6 +2303,9 @@ function renderDeprivationChart() {
 
   // Group points into (decile, value bucket) cells
   const cells = new Map();
+  const overallBucketCounts = Array.from({ length: bucketCount }, () => 0);
+  const columnBucketCounts = new Map(gridX.map((decile) => [decile, Array.from({ length: bucketCount }, () => 0)]));
+  const columnPointMap = new Map(gridX.map((decile) => [decile, []]));
   points.forEach((point) => {
     const decile = Math.max(xMin, Math.min(xMax, Math.round(point.x)));
     const clampedY = Math.max(yMin, Math.min(yMax, point.y));
@@ -2290,6 +2316,9 @@ function renderDeprivationChart() {
     const key = `${decile}-${bucketIndex}`;
     if (!cells.has(key)) cells.set(key, []);
     cells.get(key).push(point);
+    overallBucketCounts[bucketIndex] += 1;
+    columnBucketCounts.get(decile)[bucketIndex] += 1;
+    columnPointMap.get(decile).push(point);
   });
 
   const assignments = shapeAssignment();
@@ -2314,6 +2343,7 @@ function renderDeprivationChart() {
   const minSquareSize = 2.8;
   const maxSquareSize = 14;
   const fixedSquareSize = Math.max(minSquareSize, Math.min(maxSquareSize, bestSquareSizeForCount(maxCellCount)));
+  const overallMeanValue = mean(points.map((point) => point.y));
 
   function bestCellLayout(count) {
     if (!count) return { cols: 1, rows: 1 };
@@ -2339,6 +2369,45 @@ function renderDeprivationChart() {
     const cols = Math.ceil(Math.sqrt(count));
     return { cols, rows: Math.ceil(count / cols) };
   }
+
+  const distributionMarkup = gridX.map((decile) => {
+    const columnPoints = columnPointMap.get(decile) || [];
+    const counts = columnBucketCounts.get(decile) || Array.from({ length: bucketCount }, () => 0);
+    const columnMean = columnPoints.length ? mean(columnPoints.map((point) => point.y)) : null;
+    const shift = columnMean === null || overallMeanValue === null ? 0 : columnMean - overallMeanValue;
+    const jsd = columnPoints.length ? jensenShannonDivergence(counts, overallBucketCounts) : 0;
+    const shiftScale = Math.max(0.0001, (yMax - yMin) / 4);
+    const shiftStrength = clamp01(Math.abs(shift) / shiftScale);
+    const diffStrength = clamp01(jsd / 0.35);
+    const alpha = columnPoints.length ? (0.03 + (diffStrength * 0.14)) : 0.02;
+    const bandAlpha = columnPoints.length ? (0.12 + (diffStrength * 0.22)) : 0.05;
+    const isNeutral = shiftStrength < 0.12;
+    const fill = isNeutral
+      ? `rgba(120, 128, 138, ${alpha.toFixed(3)})`
+      : shift >= 0
+        ? `rgba(28, 124, 84, ${(alpha + shiftStrength * 0.05).toFixed(3)})`
+        : `rgba(195, 71, 47, ${(alpha + shiftStrength * 0.05).toFixed(3)})`;
+    const bandFill = isNeutral
+      ? `rgba(120, 128, 138, ${bandAlpha.toFixed(3)})`
+      : shift >= 0
+        ? `rgba(28, 124, 84, ${(bandAlpha + shiftStrength * 0.08).toFixed(3)})`
+        : `rgba(195, 71, 47, ${(bandAlpha + shiftStrength * 0.08).toFixed(3)})`;
+    const x0 = xBoundary(decile - xMin);
+    const x1 = xBoundary(decile - xMin + 1);
+    const title = !columnPoints.length
+      ? `IMD decile ${decile}: no practices with usable data`
+      : `IMD decile ${decile}: distribution is ${isNeutral ? 'similar to' : shift >= 0 ? 'better than' : 'worse than'} the overall pattern. Jensen-Shannon divergence ${jsd.toFixed(2)}.`;
+    return `
+      <g>
+        <rect x="${x0.toFixed(2)}" y="${margin.top.toFixed(2)}" width="${(x1 - x0).toFixed(2)}" height="${plotHeight.toFixed(2)}" fill="${fill}">
+          <title>${title}</title>
+        </rect>
+        <rect x="${(x0 + 1).toFixed(2)}" y="${margin.top.toFixed(2)}" width="${Math.max(0, x1 - x0 - 2).toFixed(2)}" height="7" rx="3.5" fill="${bandFill}">
+          <title>${title}</title>
+        </rect>
+      </g>
+    `;
+  }).join('');
 
   cells.forEach((cellPoints, key) => {
     const [decileStr, bucketStr] = key.split('-');
@@ -2379,6 +2448,7 @@ function renderDeprivationChart() {
 
   svg.innerHTML = `
     <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
+    ${distributionMarkup}
     ${gridY.map((tick) => `
       <line x1="${margin.left}" y1="${yScale(tick)}" x2="${width - margin.right}" y2="${yScale(tick)}" stroke="rgba(26,28,26,0.10)" />
     `).join('')}
@@ -2409,9 +2479,20 @@ function renderDeprivationChart() {
   const depMedian = depValues.length ? depValues[Math.floor(depValues.length / 2)] : null;
   const yMedian = yValues.length ? yValues[Math.floor(yValues.length / 2)] : null;
   const rValue = correlation(points.map((p) => ({ x: p.x, y: p.y })));
+  const strongestDecile = gridX
+    .map((decile) => {
+      const counts = columnBucketCounts.get(decile) || [];
+      const pointCount = (columnPointMap.get(decile) || []).length;
+      return {
+        decile,
+        pointCount,
+        jsd: pointCount ? jensenShannonDivergence(counts, overallBucketCounts) : 0,
+      };
+    })
+    .sort((left, right) => right.jsd - left.jsd)[0];
 
   document.getElementById('deprivation-summary').textContent =
-    `${points.length} practices have both a usable ${metric.title.toLowerCase()} value and mapped IMD 2025 decile. Median decile is ${depMedian === null ? '?' : depMedian} and median ${metric.title.toLowerCase()} is ${yMedian === null ? '?' : (activeMetric === 'survey' ? `${Math.round(yMedian)}%` : yMedian.toFixed(activeMetric === 'gap' ? 2 : 1))}. Pearson r for score vs decile is ${rValue === null ? '?' : rValue.toFixed(2)}.`;
+    `${points.length} practices have both a usable ${metric.title.toLowerCase()} value and mapped IMD 2025 decile. Median decile is ${depMedian === null ? '?' : depMedian} and median ${metric.title.toLowerCase()} is ${yMedian === null ? '?' : (activeMetric === 'survey' ? `${Math.round(yMedian)}%` : yMedian.toFixed(activeMetric === 'gap' ? 2 : 1))}. Pearson r for score vs decile is ${rValue === null ? '?' : rValue.toFixed(2)}. Column tint shows whether each decile skews better (green), worse (red), or similar (grey) versus the overall distribution, with stronger colour meaning a more different distribution. Strongest departure is decile ${strongestDecile && strongestDecile.pointCount ? strongestDecile.decile : '?'}.`;
 }
 
 function formatMonthLabel(monthIso) {
