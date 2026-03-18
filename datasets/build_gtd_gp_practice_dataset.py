@@ -1160,7 +1160,7 @@ html, body {{
   margin: 0;
 }}
 body {{
-  font: 14px/1.4 Georgia, serif;
+  font: 18px/1.4 Georgia, serif;
   color: var(--ink);
   background: radial-gradient(circle at top, #fff7e3, var(--bg));
 }}
@@ -1891,12 +1891,12 @@ body {{
           <label title="Gap"><input type="radio" name="score-source" value="gap"><span>Gap</span><span class="segmented-short">X</span></label>
         </div>
         <div id="gap-mode-control" class="gap-mode-control" hidden>
-          <label class="overlay-toggle-label check-toggle" title="Normalise gap by cohort z-scores so Google and survey are compared on a shared relative scale.">
+          <label class="overlay-toggle-label check-toggle" title="Normalise the raw Google-vs-survey gap by the cohort spread, so the page shows how unusual each practice's gap is relative to this map.">
             <input type="checkbox" id="normalize-gap-toggle" checked>
             <span>Normalise gap</span>
             <span class="check-toggle-mark">✓</span>
           </label>
-          <p id="gap-mode-note" class="hint gap-mode-note">Compares Google and survey as z-scores across this map cohort, rather than direct stars-vs-percent conversion.</p>
+          <p id="gap-mode-note" class="hint gap-mode-note">Converts the raw Google-vs-survey gap into a cohort z-score, showing how unusual each practice's gap is on this map.</p>
         </div>
         <p id="metric-description" class="hint"></p>
       </div>
@@ -1956,6 +1956,14 @@ body {{
         </svg>
       </div>
       <p class="chart-note">X-axis is IMD 2025 decile (1 = most deprived). Y-axis changes with the selected score source, including the signed survey/Google gap.</p>
+    </section>
+    <section class="panel comparison-panel">
+      <h2>Conclusions</h2>
+      <p>This page suggests GTD is the weakest-performing management group in this catchment, with New Bank sitting at or near the bottom even within the deprived groups it belongs to. On both public reviews and GP Patient Survey measures, GTD has too many poor-performing practices relative to the wider sample.</p>
+      <p>The Google-versus-survey gap matters because GTD practices often show a larger mismatch than typical surgeries, while survey return rates are low enough to leave room for hidden dissatisfaction. New Bank looks off-curve rather than merely unlucky within the normal local range.</p>
+      <p>The deprivation views also point to a real but limited dataset-wide lean: more deprived areas do tend to have somewhat worse review and survey distributions. That said, this page does not suggest that the whole NHS only fails poorer areas or that poor areas only contain poor-quality practices (it's surprisingly a little more evenly distributed than I expected). Wider regional or national sampling could test how much of that lean is structural versus local.</p>
+      <p>The practical conclusion is local rather than fatalistic. National context matters, but the strongest actionable result here is that GTD, and especially New Bank, are performing worse than most of the sample even after allowing for deprivation.</p>
+      <p>Change across GTD is both plausible and necessary, and in more deprived areas the benefit of improvement is larger because easy access matters most where health need is greatest.</p>
     </section>
   </div>
 </div>
@@ -2150,13 +2158,10 @@ function gapInputs(row) {{
 
 const gapNormalisationStats = (() => {{
   const inputs = rows.map((row) => gapInputs(row)).filter(Boolean);
-  const googleValues = inputs.map((entry) => entry.google);
-  const surveyStarValues = inputs.map((entry) => entry.surveyStars);
+  const rawGapValues = inputs.map((entry) => entry.google - entry.surveyStars);
   return {{
-    googleMean: mean(googleValues),
-    googleStd: standardDeviation(googleValues),
-    surveyStarMean: mean(surveyStarValues),
-    surveyStarStd: standardDeviation(surveyStarValues),
+    rawGapMean: mean(rawGapValues),
+    rawGapStd: standardDeviation(rawGapValues),
   }};
 }})();
 
@@ -2170,12 +2175,10 @@ function absoluteGapValue(row, suppressSmall = true) {{
 function normalizedGapValue(row, suppressSmall = true) {{
   const inputs = gapInputs(row);
   if (!inputs) return null;
-  const googleStd = gapNormalisationStats.googleStd;
-  const surveyStarStd = gapNormalisationStats.surveyStarStd;
-  if (!googleStd || !surveyStarStd) return null;
-  const googleZ = (inputs.google - gapNormalisationStats.googleMean) / googleStd;
-  const surveyZ = (inputs.surveyStars - gapNormalisationStats.surveyStarMean) / surveyStarStd;
-  const gap = googleZ - surveyZ;
+  const rawGapStd = gapNormalisationStats.rawGapStd;
+  if (!rawGapStd) return null;
+  const rawGap = inputs.google - inputs.surveyStars;
+  const gap = (rawGap - gapNormalisationStats.rawGapMean) / rawGapStd;
   return suppressSmall && Math.abs(gap) < 1 ? null : gap;
 }}
 
@@ -2207,18 +2210,17 @@ function gapAxisInfo() {{
     ticks.push(Number(tick.toFixed(2)));
   }}
   return {{
-    label: 'Google minus survey z-score (positive = Google higher)',
+    label: 'Normalised Google-minus-survey gap (z-score, positive = Google higher)',
     min: -roundedMax,
     max: roundedMax,
-    magnitudeLabel: 'Survey/Google gap magnitude (abs, z-score diff)',
+    magnitudeLabel: 'Survey/Google gap magnitude (abs, normalised z-score)',
     magnitudeTicks: ticks,
   }};
 }}
 
 function gapDescription() {{
   if (activeGapMode === 'normalized') {{
-    //'Normalised mode: Google stars and survey-equivalent stars are each converted to z-scores across this map cohort, then compared. Positive means Google is higher than the survey signal after cohort normalisation.';
-    return '';
+    return 'Normalised mode: the raw Google-minus-survey gap is converted to a cohort z-score, so positive means Google is higher than survey by more than is typical on this map.';
   }}
   return 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google; positive means Google is higher than the survey-equivalent score, negative means lower.';
 }}
@@ -2358,7 +2360,7 @@ function renderMetricLegend() {{
   normalizeToggle.checked = activeGapMode === 'normalized';
   gapModeControl.querySelector('label').classList.toggle('is-active', gapModeActive && activeGapMode === 'normalized');
   gapModeNote.textContent = activeGapMode === 'normalized'
-    ? 'Compares Google and survey as z-scores across this map cohort, rather than direct stars-vs-percent conversion.'
+    ? 'Converts the raw Google-vs-survey gap into a cohort z-score, showing how unusual each practice\\'s gap is on this map.'
     : 'Compares Google stars directly with survey-equivalent stars (survey overall-good % mapped to 0-5).';
 }}
 
@@ -2620,12 +2622,12 @@ function formatGap(row) {{
   const magnitude = Math.abs(gap);
   if (magnitude < 0.01) {{
     return activeGapMode === 'normalized'
-      ? `Survey/Google gap: aligned in z-score terms · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
+      ? `Survey/Google gap: typical for this cohort · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
       : `Survey/Google gap: aligned · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`;
   }}
   const direction = gap > 0 ? 'higher' : 'lower';
   return activeGapMode === 'normalized'
-    ? `Survey/Google gap: ${{magnitude.toFixed(2)}} z-score diff (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
+    ? `Survey/Google gap: ${{magnitude.toFixed(2)}} normalised-gap z-score (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
     : `Survey/Google gap: ${{magnitude.toFixed(2)}} stars (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`;
 }}
 
