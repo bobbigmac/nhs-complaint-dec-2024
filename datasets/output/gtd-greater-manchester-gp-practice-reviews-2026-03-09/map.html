@@ -2315,6 +2315,31 @@ function renderDeprivationChart() {
   const maxSquareSize = 14;
   const fixedSquareSize = Math.max(minSquareSize, Math.min(maxSquareSize, bestSquareSizeForCount(maxCellCount)));
 
+  function bestCellLayout(count) {
+    if (!count) return { cols: 1, rows: 1 };
+    const targetAspect = cellInnerWidth / cellInnerHeight;
+    let bestLayout = null;
+    let bestScore = Infinity;
+    for (let cols = 1; cols <= count; cols += 1) {
+      const rows = Math.ceil(count / cols);
+      const totalWidth = cols * fixedSquareSize;
+      const totalHeight = rows * fixedSquareSize;
+      if (totalWidth > cellInnerWidth + 0.001 || totalHeight > cellInnerHeight + 0.001) continue;
+      const aspect = cols / rows;
+      const aspectPenalty = Math.abs(aspect - targetAspect);
+      const widthSlack = (cellInnerWidth - totalWidth) / cellInnerWidth;
+      const heightSlack = (cellInnerHeight - totalHeight) / cellInnerHeight;
+      const score = aspectPenalty + (widthSlack * 0.08) + (heightSlack * 0.03);
+      if (score < bestScore || (Math.abs(score - bestScore) < 0.0001 && bestLayout && cols > bestLayout.cols)) {
+        bestScore = score;
+        bestLayout = { cols, rows };
+      }
+    }
+    if (bestLayout) return bestLayout;
+    const cols = Math.ceil(Math.sqrt(count));
+    return { cols, rows: Math.ceil(count / cols) };
+  }
+
   cells.forEach((cellPoints, key) => {
     const [decileStr, bucketStr] = key.split('-');
     const decile = Number(decileStr);
@@ -2326,8 +2351,7 @@ function renderDeprivationChart() {
     const centerY = yScale(centerYValue);
 
     const count = cellPoints.length;
-    const cols = Math.ceil(Math.sqrt(count));
-    const rows = Math.ceil(count / cols);
+    const { cols, rows } = bestCellLayout(count);
     const totalWidth = cols * fixedSquareSize;
     const totalHeight = rows * fixedSquareSize;
     const startX = centerX - totalWidth / 2 + fixedSquareSize / 2;
