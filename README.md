@@ -219,6 +219,8 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 </details>
 
+This maps the practices where there is a large difference between google reviews and patient survey's overall good%, i.e. where the patient survey doesn't represent the real experiences of patients, over deprivation.
+
 ![Manchester reviews-vs-survey gap by deprivation](manchester-gp-reviews-survey-gap-by-deprivation.png)
 
 See also: [Manchester GPs reviews map](https://bobdavies.co.uk/nhs-complaint-dec-2024/map/map.html)
