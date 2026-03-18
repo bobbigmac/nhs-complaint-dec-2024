@@ -1062,6 +1062,62 @@ def load_gtd_gpps_timeseries() -> dict[str, Any]:
     return json.loads(p.read_text(encoding="utf-8"))
 
 
+def build_patient_change_analysis(
+    markers: list[dict[str, Any]],
+    patient_counts_by_year: dict[str, dict[str, int]],
+) -> dict[str, Any]:
+    dataset_average_by_year: dict[str, float | None] = {}
+    for year, counts in (patient_counts_by_year or {}).items():
+        values = []
+        for value in (counts or {}).values():
+            try:
+                numeric = int(value)
+            except (TypeError, ValueError):
+                continue
+            if numeric > 0:
+                values.append(numeric)
+        dataset_average_by_year[year] = (sum(values) / len(values)) if values else None
+
+    years = sorted((patient_counts_by_year or {}).keys(), key=int)
+    practice_series: list[dict[str, Any]] = []
+    for marker in markers:
+        code = str(marker.get("code", "")).strip()
+        if not code:
+            continue
+        points: list[int | None] = []
+        for year in years:
+            try:
+                value = int((patient_counts_by_year.get(year) or {}).get(code))
+            except (TypeError, ValueError, AttributeError):
+                value = None
+            points.append(value if value and value > 0 else None)
+        if sum(1 for value in points if value is not None) < 2:
+            continue
+        practice_series.append(
+            {
+                "code": code,
+                "name": marker.get("name", code),
+                "management_company": marker.get("management_company", ""),
+                "gtd": bool(marker.get("gtd")),
+                "registered_patient_count": marker.get("registered_patient_count"),
+                "points": points,
+            }
+        )
+
+    average_series: list[float | None] = []
+    for year in years:
+        value = dataset_average_by_year.get(year)
+        average_series.append(round(value, 3) if value is not None else None)
+
+    return {
+        "years": years,
+        "dataset_average_by_year": dataset_average_by_year,
+        "practice_count": len(practice_series),
+        "practice_series": practice_series,
+        "average_series": average_series,
+    }
+
+
 def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     rows = apply_gtd_takeover_metadata(rows)
     survey_by_code = load_gp_patient_survey_index()
@@ -1131,6 +1187,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "registered_patient_count": row.get("registered_patient_count", ""),
             }
         )
+
+    patient_change_analysis = build_patient_change_analysis(markers, patient_counts_by_year)
 
     center_lat = sum(row["latitude"] for row in rows) / len(rows)
     center_lon = sum(row["longitude"] for row in rows) / len(rows)
@@ -1648,6 +1706,62 @@ body {{
 .comparison-panel {{
   grid-column: 1 / -1;
 }}
+.player-controls {{
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 10px;
+}}
+.player-button {{
+  min-width: 78px;
+}}
+.player-scrubber {{
+  width: 100%;
+  accent-color: var(--accent);
+}}
+.player-year-label {{
+  min-width: 72px;
+  text-align: right;
+  font: 600 12px/1.2 "Avenir Next", "Trebuchet MS", sans-serif;
+  color: rgba(26, 28, 26, 0.78);
+}}
+.treemap-mode-control {{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}}
+.treemap-mode-control .check-toggle {{
+  display: inline-flex;
+  width: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  gap: 10px;
+}}
+.treemap-mode-control .check-toggle > span:first-of-type {{
+  flex: 0 1 auto;
+}}
+.panel-heading-row {{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 8px;
+}}
+.panel-heading-row h2 {{
+  margin: 0;
+}}
+#patient-treemap-chart {{
+  width: 100%;
+  height: 420px;
+  display: block;
+}}
+#patient-total-chart {{
+  width: 100%;
+  height: 92px;
+  display: block;
+  margin-top: 8px;
+}}
 .comparison-grid {{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1820,6 +1934,14 @@ body {{
     grid-template-columns: 1fr;
     gap: 6px;
   }}
+  .treemap-mode-control .check-toggle {{
+    width: 100%;
+    justify-content: space-between;
+  }}
+  .panel-heading-row {{
+    flex-direction: column;
+    align-items: stretch;
+  }}
   .legend {{
     border-right: 0;
     border-top: 1px solid var(--line);
@@ -1958,10 +2080,48 @@ body {{
       <p class="chart-note">X-axis is IMD 2025 decile (1 = most deprived). Y-axis changes with the selected score source, including the signed survey/Google gap.</p>
     </section>
     <section class="panel comparison-panel">
+      <h2 id="patient-change-heading">Registered Patients Over Time</h2>
+      <p id="patient-change-summary" class="hint"></p>
+      <div class="chart-frame">
+        <svg id="patient-change-chart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="patient-change-title" role="img">
+          <title id="patient-change-title">Registered patients over time, coloured by current selected score</title>
+        </svg>
+      </div>
+      <p class="chart-note">X-axis is year. Y-axis is registered patients. Thin lines show practice list-size trajectories, coloured by the current selected score; the dashed grey line is the Manchester-wide average practice count for each year.</p>
+    </section>
+    <section class="panel comparison-panel">
+      <div class="panel-heading-row">
+        <h2 id="patient-treemap-heading">Patient Count Treemap</h2>
+        <div class="treemap-mode-control">
+          <label class="overlay-toggle-label check-toggle" title="Flatten whole-dataset growth so the treemap shows how each practice's share of the Manchester patient pool changes over time, rather than absolute patient-count growth.">
+            <input type="checkbox" id="normalize-patient-change-toggle">
+            <span>Flatten Global</span>
+            <span class="check-toggle-mark">✓</span>
+          </label>
+        </div>
+      </div>
+      <p id="patient-treemap-summary" class="hint"></p>
+      <div class="player-controls">
+        <button type="button" id="patient-treemap-play" class="legend-collapse player-button" aria-pressed="false">Play</button>
+        <input type="range" id="patient-treemap-year" class="player-scrubber" min="0" max="0" step="1" value="0" aria-label="Treemap year">
+        <div id="patient-treemap-year-label" class="player-year-label">Year</div>
+      </div>
+      <div class="chart-frame">
+        <svg id="patient-treemap-chart" viewBox="0 0 920 420" preserveAspectRatio="xMidYMid meet" aria-labelledby="patient-treemap-title" role="img">
+          <title id="patient-treemap-title">Patient count treemap by management group and current selected score</title>
+        </svg>
+        <svg id="patient-total-chart" viewBox="0 0 920 92" preserveAspectRatio="xMidYMid meet" aria-labelledby="patient-total-title" role="img">
+          <title id="patient-total-title">Total registered patients across the full dataset over time</title>
+        </svg>
+      </div>
+      <p class="chart-note">This uses a fixed-scale grouped strip-treemap rather than re-squarifying each frame, so practice blocks mostly grow and shrink in place. Block area is registered patients in the chosen year, on the same patient-to-pixel scale for all years; colour and score label use the currently selected metric. Independent / other is split into Google review-score bands so better and worse destinations can be compared. The small strip-chart below shows the whole-dataset registered-patient total over the same years.</p>
+    </section>
+    <section class="panel comparison-panel">
       <h2>Conclusions</h2>
       <p>This page suggests GTD is the weakest-performing management group in this catchment, with New Bank sitting at or near the bottom even within the deprived groups it belongs to. On both public reviews and GP Patient Survey measures, GTD has too many poor-performing practices relative to the wider sample.</p>
       <p>The Google-versus-survey gap matters because GTD practices often show a larger mismatch than typical surgeries, while survey return rates are low enough to leave room for hidden dissatisfaction. New Bank looks off-curve rather than merely unlucky within the normal local range.</p>
       <p>The deprivation views also point to a real but limited dataset-wide lean: more deprived areas do tend to have somewhat worse review and survey distributions. That said, this page does not suggest that the whole NHS only fails poorer areas or that poor areas only contain poor-quality practices (it's surprisingly a little more evenly distributed than I expected). Wider regional or national sampling could test how much of that lean is structural versus local.</p>
+      <p>The practices sampled here also saw total registered patients rise by about 514,762 between 2018 and 2026, roughly 20.5% growth across the period. That is a significant resource-pressure context in its own right, so this overall pattern suggests a region that in many places responded surprisingly well to new demand, especially through years of reduced funding: some practices did not just maintain patient-facing scores, but improved them.</p>
       <p>The practical conclusion is local rather than fatalistic. National context matters, but the strongest actionable result here is that GTD, and especially New Bank, are performing worse than most of the sample even after allowing for deprivation.</p>
       <p>Change across GTD is both plausible and necessary, and in more deprived areas the benefit of improvement is larger because easy access matters most where health need is greatest.</p>
     </section>
@@ -1974,6 +2134,7 @@ const rows = {json.dumps(markers)};
 const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const patientCountsByYear = {json.dumps(patient_counts_by_year)};
+const patientChangeAnalysis = {json.dumps(patient_change_analysis)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const deprivationGeojson = {json.dumps(deprivation_geojson, separators=(",", ":"))};
 const practiceDeprivationLookup = {json.dumps(practice_deprivation, separators=(",", ":"))};
@@ -2011,6 +2172,10 @@ let focusedPracticeCode = NEW_BANK_CODE;
 let pinnedTrendPracticeCode = TREND_DEFAULT_CONTEXT_CODE;
 let hoveredTrendPracticeCode = null;
 let sidebarCollapsed = false;
+let patientTreemapYearIndex = null;
+let patientTreemapPlaying = false;
+let patientTreemapTimer = null;
+let patientTreemapNormalizeForChange = true;
 
 const metricConfigs = {{
   google: {{
@@ -2906,6 +3071,55 @@ function formatMetricValue(value, metricName) {{
   return value.toFixed(metricName === 'gap' ? 2 : 1);
 }}
 
+function currentMetricValueForRow(row, options = {{}}) {{
+  if (!row) return null;
+  if (activeMetric === 'gap') {{
+    return gapValue(row, {{ suppressSmall: options.suppressSmall === true }});
+  }}
+  return metricConfigs[activeMetric].value(row);
+}}
+
+function colorForCurrentMetric(row, options = {{}}) {{
+  if (!row) return '#9aa0a6';
+  if (activeMetric !== 'gap') return metricConfigs[activeMetric].markerColor(row);
+  const value = gapValue(row, {{ suppressSmall: options.suppressSmall === true }});
+  if (value === null) return '#9aa0a6';
+  if (activeGapMode === 'normalized') {{
+    if (value >= 0.75) return '#1c7c54';
+    if (value >= 0.25) return '#4c9a52';
+    if (value > -0.25) return '#d2b529';
+    if (value > -0.75) return '#dc8c23';
+    return '#c3472f';
+  }}
+  if (value >= 1.0) return '#1c7c54';
+  if (value >= 0.5) return '#4c9a52';
+  if (value > -0.5) return '#d2b529';
+  if (value > -1.0) return '#dc8c23';
+  return '#c3472f';
+}}
+
+function compactMetricValue(value, metricName) {{
+  if (value === null) return '?';
+  if (metricName === 'survey') return `${{Math.round(value)}}%`;
+  if (metricName === 'google') return value.toFixed(1);
+  return activeGapMode === 'normalized'
+    ? `${{value >= 0 ? '+' : ''}}${{value.toFixed(1)}}z`
+    : `${{value >= 0 ? '+' : ''}}${{value.toFixed(1)}}`;
+}}
+
+function compactPatientCount(value) {{
+  if (!Number.isFinite(value)) return '?';
+  if (value >= 100000) return `${{Math.round(value / 1000)}}k`;
+  if (value >= 10000) return `${{(value / 1000).toFixed(1)}}k`;
+  return Math.round(value).toLocaleString('en-GB');
+}}
+
+function ellipsize(text, maxChars) {{
+  if (!text) return '';
+  if (text.length <= maxChars) return text;
+  return maxChars <= 3 ? text.slice(0, maxChars) : `${{text.slice(0, Math.max(0, maxChars - 3))}}...`;
+}}
+
 function metricToneClass(metricName, value) {{
   if (value === null) return 'tone-missing';
   if (metricName === 'google') {{
@@ -3644,6 +3858,548 @@ function renderDeprivationChart() {{
     `${{points.length}} practices have both a usable ${{metric.title.toLowerCase()}} value and mapped IMD 2025 decile. Median decile is ${{depMedian === null ? '?' : depMedian}} and median ${{metric.title.toLowerCase()}} is ${{yMedian === null ? '?' : (activeMetric === 'survey' ? `${{Math.round(yMedian)}}%` : yMedian.toFixed(activeMetric === 'gap' ? 2 : 1))}}. Pearson r for score vs decile is ${{rValue === null ? '?' : rValue.toFixed(2)}}. Column tint shows whether each decile skews better (green), worse (red), or similar (grey) versus the overall distribution, with stronger colour meaning a more different distribution. Strongest departure is decile ${{strongestDecile && strongestDecile.pointCount ? strongestDecile.decile : '?'}}.`;
 }}
 
+function renderPatientChangeChart() {{
+  const svg = document.getElementById('patient-change-chart');
+  const summary = document.getElementById('patient-change-summary');
+  const heading = document.getElementById('patient-change-heading');
+  if (!svg || !summary || !heading) return;
+  heading.textContent = `Registered Patients Over Time - Coloured by ${{metricDisplayLabel(activeMetric)}}`;
+
+  const years = patientChangeAnalysis?.years || [];
+  const series = (patientChangeAnalysis?.practice_series || []).filter((entry) =>
+    (entry.points || []).filter((value) => value !== null && Number.isFinite(Number(value))).length >= 2
+  );
+  if (!years.length || !series.length) {{
+    svg.innerHTML = '';
+    summary.textContent = 'No practices currently have enough multi-year registered patient counts to plot.';
+    return;
+  }}
+
+  const width = 920;
+  const height = 320;
+  const margin = {{ top: 18, right: 18, bottom: 42, left: 56 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const xScale = (index) => margin.left + (years.length <= 1 ? plotWidth / 2 : (index / Math.max(1, years.length - 1)) * plotWidth);
+  const xTickIndexes = years.map((_, index) => index);
+
+  function bucketInfo(value) {{
+    if (value === null || !Number.isFinite(value)) return null;
+    if (activeMetric === 'google') {{
+      const bucketValue = Math.round(value * 2) / 2;
+      return {{ key: bucketValue.toFixed(1), label: bucketValue.toFixed(1), value: bucketValue }};
+    }}
+    if (activeMetric === 'survey') {{
+      const bucketValue = Math.round(value / 10) * 10;
+      return {{ key: String(bucketValue), label: `${{bucketValue}}%`, value: bucketValue }};
+    }}
+    if (activeGapMode === 'normalized') {{
+      const bucketValue = Math.round(value);
+      return {{ key: `${{bucketValue}}z`, label: `${{bucketValue > 0 ? '+' : ''}}${{bucketValue}}z`, value: bucketValue }};
+    }}
+    const bucketValue = Math.round(value * 2) / 2;
+    return {{ key: bucketValue.toFixed(1), label: `${{bucketValue > 0 ? '+' : ''}}${{bucketValue.toFixed(1)}}`, value: bucketValue }};
+  }}
+
+  const bucketMap = new Map();
+  series.forEach((entry) => {{
+    const row = rowsByCode.get(entry.code) || null;
+    const currentValue = currentMetricValueForRow(row, {{ suppressSmall: false }});
+    const bucket = bucketInfo(currentValue);
+    if (!bucket) return;
+    if (!bucketMap.has(bucket.key)) {{
+      bucketMap.set(bucket.key, {{ ...bucket, series: [] }});
+    }}
+    bucketMap.get(bucket.key).series.push(entry);
+  }});
+
+  const sortedBuckets = Array.from(bucketMap.values()).sort((left, right) => left.value - right.value);
+  const overallSeriesRaw = patientChangeAnalysis?.average_series || [];
+  const flattenGlobal = patientTreemapNormalizeForChange;
+  const bucketLineEntries = sortedBuckets.map((bucket) => {{
+    const averagePointsRaw = years.map((_, index) => {{
+      const values = bucket.series
+        .map((entry) => entry.points?.[index])
+        .filter((value) => value !== null && Number.isFinite(Number(value)))
+        .map(Number);
+      return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : null;
+    }});
+    const averagePoints = averagePointsRaw.map((value, index) => {{
+      if (value === null || !Number.isFinite(Number(value))) return null;
+      if (!flattenGlobal) return value;
+      const meanValue = Number(overallSeriesRaw[index]);
+      if (!Number.isFinite(meanValue) || meanValue <= 0) return null;
+      return ((value / meanValue) - 1) * 100;
+    }});
+    const representative = bucket.series
+      .map((entry) => rowsByCode.get(entry.code))
+      .find(Boolean);
+    const color = representative ? colorForCurrentMetric(representative, {{ suppressSmall: false }}) : '#9aa0a6';
+    const lastIndex = averagePoints.reduce((acc, value, index) => (value !== null && Number.isFinite(value) ? index : acc), -1);
+    const lastValue = lastIndex >= 0 ? averagePoints[lastIndex] : null;
+    return {{
+      averagePoints,
+      color,
+      label: `${{bucket.label}} · n=${{bucket.series.length}}`,
+      lastIndex,
+      lastValue,
+    }};
+  }}).filter((entry) => entry.averagePoints.some((value) => value !== null && Number.isFinite(value)));
+
+  const overallSeries = flattenGlobal
+    ? overallSeriesRaw.map((value) => (value !== null && Number.isFinite(Number(value)) ? 0 : null))
+    : overallSeriesRaw;
+
+  const displayedValues = [
+    ...overallSeries.filter((value) => value !== null && Number.isFinite(Number(value))).map(Number),
+    ...bucketLineEntries.flatMap((entry) => entry.averagePoints.filter((value) => value !== null && Number.isFinite(Number(value))).map(Number)),
+  ].sort((a, b) => a - b);
+  let yMin = 0;
+  let yMax = 1000;
+  const yTicks = [];
+  if (flattenGlobal) {{
+    const maxAbs = displayedValues.length ? Math.max(...displayedValues.map((value) => Math.abs(value))) : 10;
+    const roundedAbs = Math.max(10, Math.ceil(maxAbs / 5) * 5);
+    yMin = -roundedAbs;
+    yMax = roundedAbs;
+    const yStep = roundedAbs <= 20 ? 5 : roundedAbs <= 50 ? 10 : 20;
+    for (let tick = yMin; tick <= yMax + 0.001; tick += yStep) {{
+      yTicks.push(Number(tick.toFixed(2)));
+    }}
+  }} else {{
+    const scopedMax = displayedValues.length ? displayedValues[displayedValues.length - 1] : 0;
+    yMax = Math.max(1000, Math.ceil((scopedMax || 1000) / 1000) * 1000);
+    const yStep = yMax <= 5000 ? 1000 : yMax <= 15000 ? 2500 : 5000;
+    for (let tick = 0; tick <= yMax; tick += yStep) {{
+      yTicks.push(tick);
+    }}
+  }}
+  const yScale = (value) => {{
+    const clamped = Math.min(yMax, Math.max(yMin, value));
+    return margin.top + plotHeight - ((clamped - yMin) / Math.max(1, (yMax - yMin))) * plotHeight;
+  }};
+
+  const bucketLines = bucketLineEntries.map((entry) => {{
+    const path = linePath(entry.averagePoints, xScale, yScale);
+    if (!path) return '';
+    return `
+      <path d="${{path}}" fill="none" stroke="${{entry.color}}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      ${{entry.lastValue === null ? '' : `<circle cx="${{xScale(entry.lastIndex).toFixed(2)}}" cy="${{yScale(entry.lastValue).toFixed(2)}}" r="4.2" fill="${{entry.color}}"></circle>
+      <text x="${{Math.min(width - margin.right, xScale(entry.lastIndex) + 8).toFixed(2)}}" y="${{(yScale(entry.lastValue) - 7).toFixed(2)}}" font-size="10.5" font-weight="700" fill="${{entry.color}}">${{entry.label}}</text>`}}
+    `;
+  }}).join('');
+
+  const overallPath = linePath(overallSeries, xScale, yScale);
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{yTicks.map((tick) => `
+      <line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="${{flattenGlobal && tick === 0 ? 'rgba(26,28,26,0.28)' : 'rgba(26,28,26,0.10)'}}" />
+      <text x="${{margin.left - 8}}" y="${{yScale(tick) + 4}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{flattenGlobal ? `${{tick > 0 ? '+' : ''}}${{tick.toFixed(0)}}%` : tick.toLocaleString('en-GB')}}</text>
+    `).join('')}}
+    ${{xTickIndexes.map((index) => `
+      <line x1="${{xScale(index)}}" y1="${{margin.top}}" x2="${{xScale(index)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.08)" />
+      <text x="${{xScale(index)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{years[index]}}</text>
+    `).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{overallPath ? `<path d="${{overallPath}}" fill="none" stroke="rgba(26,28,26,0.55)" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round" stroke-linejoin="round"></path>` : ''}}
+    ${{bucketLines}}
+    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Year</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">${{flattenGlobal ? 'Variance from Manchester mean practice count (%)' : 'Registered patients'}}</text>
+  `;
+
+  const newBank = series.find((entry) => entry.code === NEW_BANK_CODE);
+  const newBankStart = newBank ? newBank.points.find((value) => value !== null) : null;
+  const newBankEnd = newBank ? [...newBank.points].reverse().find((value) => value !== null) : null;
+  const newBankSummary = !newBank || newBankStart === null || newBankEnd === null
+    ? ''
+    : flattenGlobal
+      ? (() => {{
+          const startMean = Number(overallSeriesRaw[newBank.points.findIndex((value) => value !== null)]);
+          const endMean = Number(overallSeriesRaw[newBank.points.length - 1 - [...newBank.points].reverse().findIndex((value) => value !== null)]);
+          const startDelta = Number.isFinite(startMean) && startMean > 0 ? ((Number(newBankStart) / startMean) - 1) * 100 : null;
+          const endDelta = Number.isFinite(endMean) && endMean > 0 ? ((Number(newBankEnd) / endMean) - 1) * 100 : null;
+          return ` New Bank shifts from ${{startDelta === null ? '?' : `${{startDelta > 0 ? '+' : ''}}${{startDelta.toFixed(1)}}%`}} to ${{endDelta === null ? '?' : `${{endDelta > 0 ? '+' : ''}}${{endDelta.toFixed(1)}}%`}} versus the Manchester mean practice count.`;
+        }})()
+      : ` New Bank runs from ${{Number(newBankStart).toLocaleString('en-GB')}} to ${{Number(newBankEnd).toLocaleString('en-GB')}} patients across the available series.`;
+  summary.textContent =
+    `${{series.length}} practices have multi-year patient-count histories in this chart. Coloured lines show the average trajectory for each current ${{metricDisplayLabel(activeMetric).toLowerCase()}} band, and the dashed grey line is the Manchester average practice count for each year.${{flattenGlobal ? ' With Flatten Global on, the y-axis shows deviation from that yearly Manchester mean, so the chart shows which score bands are gaining or losing relative share rather than absolute patient volume.' : ' The y-axis is scoped to those displayed averages rather than every individual practice line.'}}${{newBankSummary}}`;
+}}
+
+function stopPatientTreemapPlayback() {{
+  if (patientTreemapTimer) {{
+    clearInterval(patientTreemapTimer);
+    patientTreemapTimer = null;
+  }}
+  patientTreemapPlaying = false;
+}}
+
+function startPatientTreemapPlayback() {{
+  const years = patientChangeAnalysis?.years || [];
+  if (years.length < 2) return;
+  if (patientTreemapYearIndex === null || patientTreemapYearIndex >= years.length - 1) {{
+    patientTreemapYearIndex = 0;
+  }}
+  stopPatientTreemapPlayback();
+  patientTreemapPlaying = true;
+  patientTreemapTimer = setInterval(() => {{
+    patientTreemapYearIndex = ((patientTreemapYearIndex ?? 0) + 1) % years.length;
+    renderPatientTreemap();
+  }}, 1100);
+}}
+
+function renderPatientTotalChart(years, activeYearIndex) {{
+  const svg = document.getElementById('patient-total-chart');
+  if (!svg) return;
+  if (!years.length) {{
+    svg.innerHTML = '';
+    return;
+  }}
+  const totals = years.map((year) => {{
+    const counts = patientCountsByYear?.[year] || {{}};
+    return Object.values(counts).reduce((sum, value) => {{
+      const numeric = numericOrNull(value);
+      return numeric !== null && numeric > 0 ? sum + numeric : sum;
+    }}, 0);
+  }});
+  const usableTotals = totals.filter((value) => Number.isFinite(value) && value > 0);
+  if (!usableTotals.length) {{
+    svg.innerHTML = '';
+    return;
+  }}
+
+  const width = 920;
+  const height = 92;
+  const margin = {{ top: 8, right: 12, bottom: 22, left: 12 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const minTotal = Math.min(...usableTotals);
+  const maxTotal = Math.max(...usableTotals);
+  const paddedMin = minTotal * 0.99;
+  const paddedMax = maxTotal * 1.01;
+  const yRange = Math.max(1, paddedMax - paddedMin);
+  const xScale = (index) => margin.left + (years.length <= 1 ? plotWidth / 2 : (index / Math.max(1, years.length - 1)) * plotWidth);
+  const yScale = (value) => margin.top + plotHeight - ((value - paddedMin) / yRange) * plotHeight;
+  const path = totals.map((value, index) => `${{index === 0 ? 'M' : 'L'}}${{xScale(index).toFixed(2)}} ${{yScale(value).toFixed(2)}}`).join(' ');
+  const activeTotal = totals[activeYearIndex];
+  const firstTotal = totals[0];
+  const lastTotal = totals[totals.length - 1];
+  const changePct = firstTotal > 0 ? ((lastTotal / firstTotal) - 1) * 100 : null;
+  const labelStep = Math.max(1, Math.ceil(years.length / 6));
+  const tickIndexes = years
+    .map((_year, index) => index)
+    .filter((index) => index % labelStep === 0 || index === years.length - 1);
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    <rect x="${{margin.left}}" y="${{margin.top}}" width="${{plotWidth}}" height="${{plotHeight}}" fill="rgba(26,28,26,0.03)" rx="6"></rect>
+    <path d="${{path}} L${{xScale(years.length - 1).toFixed(2)}} ${{(margin.top + plotHeight).toFixed(2)}} L${{xScale(0).toFixed(2)}} ${{(margin.top + plotHeight).toFixed(2)}} Z" fill="rgba(15,94,156,0.10)"></path>
+    <path d="${{path}}" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    ${{tickIndexes.map((index) => `
+      <text x="${{xScale(index).toFixed(2)}}" y="${{height - 6}}" text-anchor="middle" font-size="10.5" fill="rgba(26,28,26,0.68)">${{years[index]}}</text>
+    `).join('')}}
+    <circle cx="${{xScale(activeYearIndex).toFixed(2)}}" cy="${{yScale(activeTotal).toFixed(2)}}" r="4.2" fill="var(--accent)" stroke="white" stroke-width="1.2"></circle>
+    <text x="${{Math.min(width - margin.right, xScale(activeYearIndex) + 8).toFixed(2)}}" y="${{Math.max(18, yScale(activeTotal) - 8).toFixed(2)}}" font-size="11" font-weight="700" fill="var(--accent)">${{years[activeYearIndex]}} · ${{activeTotal.toLocaleString('en-GB')}}</text>
+    <text x="${{margin.left + 6}}" y="${{margin.top + 14}}" font-size="10.5" fill="rgba(26,28,26,0.72)">Whole dataset total: ${{firstTotal.toLocaleString('en-GB')}} -> ${{lastTotal.toLocaleString('en-GB')}} (${{changePct === null ? '?' : `${{changePct >= 0 ? '+' : ''}}${{changePct.toFixed(1)}}%`}})</text>
+  `;
+}}
+
+function renderPatientTreemap() {{
+  const svg = document.getElementById('patient-treemap-chart');
+  const summary = document.getElementById('patient-treemap-summary');
+  const heading = document.getElementById('patient-treemap-heading');
+  const playButton = document.getElementById('patient-treemap-play');
+  const slider = document.getElementById('patient-treemap-year');
+  const yearLabel = document.getElementById('patient-treemap-year-label');
+  const normalizeToggle = document.getElementById('normalize-patient-change-toggle');
+  if (!svg || !summary || !heading || !playButton || !slider || !yearLabel || !normalizeToggle) return;
+
+  const years = patientChangeAnalysis?.years || [];
+  const sourceSeries = (patientChangeAnalysis?.practice_series || []).filter((entry) =>
+    (entry.points || []).some((value) => value !== null && Number.isFinite(Number(value)) && Number(value) > 0)
+  );
+  if (!years.length || !sourceSeries.length) {{
+    svg.innerHTML = '';
+    renderPatientTotalChart([], 0);
+    summary.textContent = 'No patient-count treemap data is available.';
+    playButton.textContent = 'Play';
+    yearLabel.textContent = 'Year';
+    return;
+  }}
+
+  if (patientTreemapYearIndex === null || patientTreemapYearIndex >= years.length) {{
+    patientTreemapYearIndex = years.length - 1;
+  }}
+  const latestIndex = years.length - 1;
+  const yearIndex = Math.max(0, Math.min(years.length - 1, patientTreemapYearIndex));
+  const year = years[yearIndex];
+  slider.max = String(Math.max(0, years.length - 1));
+  slider.value = String(yearIndex);
+  playButton.textContent = patientTreemapPlaying ? 'Pause' : 'Play';
+  playButton.setAttribute('aria-pressed', patientTreemapPlaying ? 'true' : 'false');
+  yearLabel.textContent = year;
+  normalizeToggle.checked = patientTreemapNormalizeForChange;
+  heading.textContent = `Patient Count Treemap - Coloured by ${{metricDisplayLabel(activeMetric)}}`;
+
+  const yearTotals = years.map((yearKey) => {{
+    const counts = patientCountsByYear?.[yearKey] || {{}};
+    return Object.values(counts).reduce((sum, value) => {{
+      const numeric = numericOrNull(value);
+      return numeric !== null && numeric > 0 ? sum + numeric : sum;
+    }}, 0);
+  }});
+  const referenceTotal = yearTotals[latestIndex] || yearTotals[yearIndex] || 0;
+  const scaledValueForYear = (rawValue, index) => {{
+    const absolute = Math.max(0, Number(rawValue || 0));
+    if (!patientTreemapNormalizeForChange) return absolute;
+    const total = yearTotals[index] || 0;
+    if (!(absolute > 0) || !(total > 0) || !(referenceTotal > 0)) return 0;
+    return (absolute / total) * referenceTotal;
+  }};
+
+  function googleReviewBandInfo(row) {{
+    const google = numericOrNull(row?.google_score);
+    if (google === null) return {{ key: 'unknown', label: 'review unknown', shortLabel: 'Ind ?' , order: 4 }};
+    if (google < 3) return {{ key: 'lt3', label: 'review <3.0', shortLabel: 'Ind <3.0', order: 0 }};
+    if (google < 4) return {{ key: '3to4', label: 'review 3.0-3.9', shortLabel: 'Ind 3-3.9', order: 1 }};
+    if (google < 4.5) return {{ key: '4to45', label: 'review 4.0-4.4', shortLabel: 'Ind 4-4.4', order: 2 }};
+    return {{ key: 'gte45', label: 'review 4.5+', shortLabel: 'Ind 4.5+', order: 3 }};
+  }}
+
+  const latestTotalsByNamedGroup = new Map();
+  sourceSeries.forEach((entry) => {{
+    const row = rowsByCode.get(entry.code) || null;
+    const rawGroup = entry.management_company || row?.management_company || '';
+    if (!rawGroup) return;
+    const latestValue = scaledValueForYear(entry.points?.[latestIndex], latestIndex);
+    latestTotalsByNamedGroup.set(rawGroup, (latestTotalsByNamedGroup.get(rawGroup) || 0) + latestValue);
+  }});
+
+  const sortedNamedGroups = Array.from(latestTotalsByNamedGroup.entries())
+    .sort((left, right) => {{
+      if (left[0] === BASELINE_MANAGEMENT_COMPANY) return -1;
+      if (right[0] === BASELINE_MANAGEMENT_COMPANY) return 1;
+      return right[1] - left[1];
+    }})
+    .map(([name]) => name);
+  const retainedNamedGroups = new Set([
+    ...sortedNamedGroups.filter((name) => name === BASELINE_MANAGEMENT_COMPANY),
+    ...sortedNamedGroups.filter((name) => name !== BASELINE_MANAGEMENT_COMPANY).slice(0, 4),
+  ]);
+
+  const grouped = new Map();
+  sourceSeries.forEach((entry) => {{
+    const row = rowsByCode.get(entry.code) || null;
+    const rawGroup = entry.management_company || row?.management_company || '';
+    const band = googleReviewBandInfo(row);
+    const display = rawGroup && retainedNamedGroups.has(rawGroup)
+      ? {{
+          key: `named:${{rawGroup}}`,
+          name: rawGroup,
+          shortLabel: rawGroup,
+          sortBucket: rawGroup === BASELINE_MANAGEMENT_COMPANY ? 0 : 1,
+          sortValue: -(latestTotalsByNamedGroup.get(rawGroup) || 0),
+        }}
+      : {{
+          key: `independent:${{band.key}}`,
+          name: `Independent / other · ${{band.label}}`,
+          shortLabel: band.shortLabel,
+          sortBucket: 2,
+          sortValue: band.order,
+        }};
+    if (!grouped.has(display.key)) {{
+      grouped.set(display.key, {{ ...display, series: [] }});
+    }}
+    grouped.get(display.key).series.push(entry);
+  }});
+
+  const groups = Array.from(grouped.values())
+    .map((group) => {{
+      const orderedSeries = [...group.series].sort((left, right) => {{
+        const leftLatest = scaledValueForYear(left.points?.[latestIndex], latestIndex);
+        const rightLatest = scaledValueForYear(right.points?.[latestIndex], latestIndex);
+        if (rightLatest !== leftLatest) return rightLatest - leftLatest;
+        return String(left.name || '').localeCompare(String(right.name || ''));
+      }});
+      const totalsByYear = years.map((_year, index) =>
+        orderedSeries.reduce((sum, entry) => sum + scaledValueForYear(entry.points?.[index], index), 0)
+      );
+      const peakTotal = Math.max(0, ...totalsByYear);
+      const currentTotal = totalsByYear[yearIndex] || 0;
+      return {{
+        ...group,
+        series: orderedSeries,
+        totalsByYear,
+        peakTotal,
+        currentTotal,
+      }};
+    }})
+    .filter((group) => group.peakTotal > 0)
+    .sort((left, right) => (
+      left.sortBucket - right.sortBucket ||
+      left.sortValue - right.sortValue ||
+      right.peakTotal - left.peakTotal ||
+      left.name.localeCompare(right.name)
+    ));
+
+  if (!groups.length) {{
+    svg.innerHTML = '';
+    renderPatientTotalChart(years, yearIndex);
+    summary.textContent = `No practices have a registered-patient value for ${{year}}.`;
+    return;
+  }}
+
+  const width = 920;
+  const height = 420;
+  const margin = {{ top: 6, right: 6, bottom: 6, left: 6 }};
+  const groupGap = 6;
+  const headerHeight = 22;
+  const innerPad = 2;
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const stackHeight = plotHeight - headerHeight - innerPad;
+  const totalPeakPatients = groups.reduce((sum, group) => sum + group.peakTotal, 0);
+  const pixelsPerPatient = totalPeakPatients > 0
+    ? ((plotWidth - (groupGap * Math.max(0, groups.length - 1))) * stackHeight) / totalPeakPatients
+    : 0;
+  const patientsPerPixel = pixelsPerPatient > 0 ? 1 / pixelsPerPatient : null;
+
+  function layoutAreaRects(entries, x, y, width, height, total) {{
+    if (!entries.length || total <= 0 || width <= 0 || height <= 0) return [];
+    if (entries.length === 1) {{
+      return [{{ entry: entries[0], x, y, width, height }}];
+    }}
+    const horizontalSplit = width >= height;
+    let splitIndex = 1;
+    let firstTotal = scaledValueForYear(entries[0].points?.[yearIndex], yearIndex);
+    while (splitIndex < entries.length - 1 && firstTotal < total / 2) {{
+      splitIndex += 1;
+      firstTotal += scaledValueForYear(entries[splitIndex - 1].points?.[yearIndex], yearIndex);
+    }}
+    const secondTotal = Math.max(0, total - firstTotal);
+    const firstEntries = entries.slice(0, splitIndex);
+    const secondEntries = entries.slice(splitIndex);
+    if (!secondEntries.length || secondTotal <= 0) {{
+      return [{{ entry: entries[0], x, y, width, height }}];
+    }}
+    if (horizontalSplit) {{
+      const firstWidth = width * (firstTotal / total);
+      return [
+        ...layoutAreaRects(firstEntries, x, y, firstWidth, height, firstTotal),
+        ...layoutAreaRects(secondEntries, x + firstWidth, y, width - firstWidth, height, secondTotal),
+      ];
+    }}
+    const firstHeight = height * (firstTotal / total);
+    return [
+      ...layoutAreaRects(firstEntries, x, y, width, firstHeight, firstTotal),
+      ...layoutAreaRects(secondEntries, x, y + firstHeight, width, height - firstHeight, secondTotal),
+    ];
+  }}
+
+  let cursorX = margin.left;
+  const groupMarkup = groups.map((group) => {{
+    const groupWidth = group.peakTotal > 0 && pixelsPerPatient > 0
+      ? (group.peakTotal * pixelsPerPatient) / stackHeight
+      : 0;
+    const x = cursorX;
+    cursorX += groupWidth + groupGap;
+    const usedHeight = group.peakTotal > 0 ? stackHeight * (group.currentTotal / group.peakTotal) : 0;
+    const headerTitle = `${{group.name}} · ${{group.currentTotal.toLocaleString('en-GB')}} patients in ${{year}} · peak ${{group.peakTotal.toLocaleString('en-GB')}} across ${{group.series.length}} practices`;
+    const headerText = groupWidth > 96
+      ? `${{ellipsize(group.shortLabel, Math.max(8, Math.floor((groupWidth - 18) / 7)))}} · ${{compactPatientCount(group.currentTotal)}}`
+      : '';
+    let cursorY = margin.top + headerHeight + innerPad;
+    const visibleSeries = group.series.filter((entry) => Number(entry.points?.[yearIndex] || 0) > 0);
+    const rectFrames = group.sortBucket === 2
+      ? layoutAreaRects(
+          visibleSeries,
+          x + innerPad,
+          margin.top + headerHeight + innerPad,
+          Math.max(0, groupWidth - innerPad * 2),
+          Math.max(0, usedHeight),
+          group.currentTotal
+        )
+      : visibleSeries.map((entry, index) => {{
+          const patientCount = scaledValueForYear(entry.points?.[yearIndex], yearIndex);
+          const remainingHeight = (margin.top + headerHeight + innerPad + usedHeight) - cursorY;
+          const rectHeight = index === visibleSeries.length - 1
+            ? remainingHeight
+            : Math.max(1.5, usedHeight * (patientCount / group.currentTotal));
+          const y = cursorY;
+          cursorY += rectHeight;
+          return {{
+            entry,
+            x: x + innerPad,
+            y,
+            width: Math.max(0, groupWidth - innerPad * 2),
+            height: Math.max(0, rectHeight),
+          }};
+        }});
+    const rectMarkup = rectFrames.map((frame) => {{
+      const entry = frame.entry;
+      const row = rowsByCode.get(entry.code) || null;
+      const rawPatientCount = Math.max(0, Number(entry.points?.[yearIndex] || 0));
+      const patientCount = scaledValueForYear(rawPatientCount, yearIndex);
+      const fill = colorForCurrentMetric(row, {{ suppressSmall: false }});
+      const metricValue = currentMetricValueForRow(row, {{ suppressSmall: false }});
+      const badge = patientTreemapNormalizeForChange
+        ? `${{compactMetricValue(metricValue, activeMetric)}} / ${{(yearTotals[yearIndex] > 0 ? ((rawPatientCount / yearTotals[yearIndex]) * 100) : 0).toFixed(1)}}%`
+        : `${{compactMetricValue(metricValue, activeMetric)}} / ${{compactPatientCount(patientCount)}}`;
+      const rectWidth = Math.max(0, frame.width);
+      const rectHeight = Math.max(0, frame.height);
+      const textPad = Math.max(3, Math.min(7, Math.floor(Math.min(rectWidth, rectHeight) * 0.08)));
+      const nameFontSize = Math.max(7.5, Math.min(11, Math.min(rectWidth / 10.5, rectHeight / 3.1)));
+      const badgeFontSize = Math.max(6.8, Math.min(10.5, Math.min(rectWidth / 9.5, rectHeight / 3.4)));
+      const textWidthChars = Math.max(5, Math.floor((rectWidth - (textPad * 2)) / Math.max(5.6, badgeFontSize * 0.58)));
+      const showName = rectWidth >= 70 && rectHeight >= 24;
+      const showBadge = rectWidth >= 38 && rectHeight >= 12;
+      const nameText = ellipsize(entry.name || entry.code, textWidthChars);
+      const strokeWidth = row?.gtd ? 1.2 : 0.8;
+      const title = patientTreemapNormalizeForChange
+        ? `${{entry.name}} · ${{group.name}} · ${{year}} patients: ${{rawPatientCount.toLocaleString('en-GB')}} (${{yearTotals[yearIndex] > 0 ? ((rawPatientCount / yearTotals[yearIndex]) * 100).toFixed(2) : '0.00'}}% of dataset, scaled to constant pool) · Current ${{metricScopeLabel(activeMetric)}}: ${{compactMetricValue(metricValue, activeMetric)}}`
+        : `${{entry.name}} · ${{group.name}} · ${{year}} patients: ${{patientCount.toLocaleString('en-GB')}} · Current ${{metricScopeLabel(activeMetric)}}: ${{compactMetricValue(metricValue, activeMetric)}}`;
+      const nameY = frame.y + textPad + nameFontSize;
+      const badgeY = frame.y + textPad + (showName ? nameFontSize + Math.max(2, badgeFontSize * 1.15) : badgeFontSize);
+      return `
+        <g>
+          <rect x="${{frame.x.toFixed(2)}}" y="${{frame.y.toFixed(2)}}" width="${{rectWidth.toFixed(2)}}" height="${{Math.max(0, rectHeight - 1).toFixed(2)}}" rx="2.5" fill="${{fill}}" stroke="rgba(26,28,26,0.28)" stroke-width="${{strokeWidth}}">
+            <title>${{title}}</title>
+          </rect>
+          ${{showName ? `<text x="${{(frame.x + textPad).toFixed(2)}}" y="${{nameY.toFixed(2)}}" font-size="${{nameFontSize.toFixed(1)}}" font-weight="700" fill="rgba(255,255,255,0.94)">${{nameText}}</text>` : ''}}
+          ${{showBadge ? `<text x="${{(frame.x + textPad).toFixed(2)}}" y="${{badgeY.toFixed(2)}}" font-size="${{badgeFontSize.toFixed(1)}}" fill="rgba(255,255,255,0.94)">${{ellipsize(badge, Math.max(5, textWidthChars + (showName ? 0 : 2)))}}</text>` : ''}}
+        </g>
+      `;
+    }}).join('');
+    return `
+      <g>
+        <rect x="${{x.toFixed(2)}}" y="${{margin.top.toFixed(2)}}" width="${{groupWidth.toFixed(2)}}" height="${{plotHeight.toFixed(2)}}" fill="rgba(26,28,26,0.03)" rx="5"></rect>
+        <rect x="${{x.toFixed(2)}}" y="${{margin.top.toFixed(2)}}" width="${{groupWidth.toFixed(2)}}" height="${{headerHeight.toFixed(2)}}" fill="rgba(26,28,26,0.08)" rx="5"></rect>
+        <rect x="${{(x + innerPad).toFixed(2)}}" y="${{(margin.top + headerHeight + innerPad).toFixed(2)}}" width="${{Math.max(0, groupWidth - innerPad * 2).toFixed(2)}}" height="${{Math.max(0, stackHeight).toFixed(2)}}" fill="rgba(26,28,26,0.025)" rx="3"></rect>
+        ${{headerText ? `<text x="${{(x + 7).toFixed(2)}}" y="${{(margin.top + 14).toFixed(2)}}" font-size="11" font-weight="700" fill="rgba(26,28,26,0.82)">${{headerText}}</text>` : ''}}
+        <title>${{headerTitle}}</title>
+        ${{rectMarkup}}
+      </g>
+    `;
+  }}).join('');
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{groupMarkup}}
+  `;
+  renderPatientTotalChart(years, yearIndex);
+
+  const largestGroup = groups[0] || null;
+  const visiblePracticeCount = groups.reduce((sum, group) => sum + group.series.filter((entry) => Number(entry.points?.[yearIndex] || 0) > 0).length, 0);
+  const largestCurrentGroup = [...groups].sort((left, right) => right.currentTotal - left.currentTotal)[0] || null;
+  const totalFirst = yearTotals[0] || 0;
+  const totalLast = yearTotals[yearTotals.length - 1] || 0;
+  const totalChangePct = totalFirst > 0 ? ((totalLast / totalFirst) - 1) * 100 : null;
+  const referenceYear = years[latestIndex] || year;
+  summary.textContent =
+    `${{visiblePracticeCount}} practices are shown for ${{year}} across ${{groups.length}} treemap columns. Rectangle area uses a fixed scale of ${{patientsPerPixel === null ? '?' : patientsPerPixel.toFixed(2)}} ${{patientTreemapNormalizeForChange ? 'normalised patients' : 'patients'}} per pixel, so the same area basis is used across all years and groups. Named operator columns stay separate, while independent/other practices are split by Google review band. Colour shows current ${{metricDisplayLabel(activeMetric).toLowerCase()}}, and labels use ${{patientTreemapNormalizeForChange ? 'score / dataset share' : 'score / patients'}}. Largest live block this year is ${{largestCurrentGroup ? `${{largestCurrentGroup.name}} with ${{patientTreemapNormalizeForChange ? `${{largestCurrentGroup.currentTotal.toFixed(0)}} normalised patients` : `${{largestCurrentGroup.currentTotal.toLocaleString('en-GB')}} patients`}}` : '?'}}, while the widest reserved column is ${{largestGroup ? `${{largestGroup.name}} at peak ${{patientTreemapNormalizeForChange ? `${{largestGroup.peakTotal.toFixed(0)}} normalised patients` : `${{largestGroup.peakTotal.toLocaleString('en-GB')}}`}}` : '?'}}. Whole-dataset registered patients move from ${{totalFirst.toLocaleString('en-GB')}} to ${{totalLast.toLocaleString('en-GB')}} across this series (${{totalChangePct === null ? '?' : `${{totalChangePct >= 0 ? '+' : ''}}${{totalChangePct.toFixed(1)}}%`}}).${{patientTreemapNormalizeForChange ? ` In this mode each year is rescaled to the ${{referenceYear}} total, so box changes reflect redistribution within the pool rather than overall pool growth.` : ''}}`;
+}}
+
 function formatMonthLabel(monthIso) {{
   const value = new Date(`${{monthIso}}T00:00:00`);
   return value.toLocaleDateString('en-GB', {{ month: 'short', year: 'numeric' }});
@@ -4100,6 +4856,8 @@ function rerenderAll() {{
   renderGtdScoreTrendChart();
   renderScatterplot();
   renderDeprivationChart();
+  renderPatientChangeChart();
+  renderPatientTreemap();
   renderComparisons();
 }}
 
@@ -4132,7 +4890,30 @@ window.addEventListener('resize', () => {{
     updateStickyScoreControl();
     renderScatterplot();
     renderDeprivationChart();
+    renderPatientChangeChart();
+    renderPatientTreemap();
   }}, 120);
+}});
+
+document.getElementById('patient-treemap-play').addEventListener('click', () => {{
+  if (patientTreemapPlaying) {{
+    stopPatientTreemapPlayback();
+  }} else {{
+    startPatientTreemapPlayback();
+  }}
+  renderPatientTreemap();
+}});
+
+document.getElementById('patient-treemap-year').addEventListener('input', (event) => {{
+  stopPatientTreemapPlayback();
+  patientTreemapYearIndex = Number(event.target.value);
+  renderPatientTreemap();
+}});
+
+document.getElementById('normalize-patient-change-toggle').addEventListener('change', (event) => {{
+  patientTreemapNormalizeForChange = event.target.checked;
+  renderPatientChangeChart();
+  renderPatientTreemap();
 }});
 
 const scoreSourceControl = document.getElementById('score-source-control');
