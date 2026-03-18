@@ -1880,8 +1880,8 @@ body {{
       </div>
       <div class="legend-intro">
         <h1>Manchester GPs' Reviews</h1>
-        <p>{len(rows)} GP surgery profiles from a broad catchment.</p>
-        <p>{total_registered_patients:,} registered patients across {registered_patient_rows} practices.</p>
+        <p>{len(rows)} GP surgeries profiled.</p>
+        <p>{total_registered_patients:,} patients across {registered_patient_rows} practices.</p>
       </div>
       <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
