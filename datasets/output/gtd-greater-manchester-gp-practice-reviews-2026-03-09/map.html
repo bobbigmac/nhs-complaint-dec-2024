@@ -755,6 +755,9 @@ body {
   }
 }
 @media print {
+  @page {
+    margin: 8mm;
+  }
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -764,23 +767,38 @@ body {
   }
   .page {
     display: block;
+    min-height: 0;
   }
   .map-stage {
     grid-template-areas: "legend map";
     grid-template-columns: 280px minmax(0, 1fr);
-    min-height: auto;
+    height: 194mm;
+    min-height: 194mm;
+    max-height: 194mm;
     break-inside: avoid-page;
+    break-after: page;
+    page-break-after: always;
+    overflow: hidden;
+    align-items: stretch;
   }
   #map {
-    height: 170mm;
-    min-height: 170mm;
+    height: 194mm;
+    min-height: 194mm;
+    max-height: 194mm;
   }
   .legend {
     border: 1px solid var(--line);
     border-right: 0;
     box-shadow: none;
+    height: 194mm;
+    min-height: 194mm;
+    max-height: 194mm;
+    overflow: hidden;
   }
   #score-source-control.is-fixed { position: static; width: auto; box-shadow: none; }
+  .insights {
+    margin-top: 0;
+  }
   .panel {
     box-shadow: none;
     border: 1px solid var(--line);
