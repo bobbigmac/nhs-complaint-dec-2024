@@ -2106,6 +2106,7 @@ body {{
         </svg>
       </div>
       <p class="chart-note">X-axis is year. Y-axis is registered patients. Thin lines show practice list-size trajectories, coloured by the current selected score; the dashed grey line is the Manchester-wide average practice count for each year.</p>
+      <p id="patient-change-footnote" class="chart-note" hidden></p>
     </section>
     <section class="panel comparison-panel">
       <div class="panel-heading-row">
@@ -3894,7 +3895,8 @@ function renderPatientChangeChart() {{
   const svg = document.getElementById('patient-change-chart');
   const summary = document.getElementById('patient-change-summary');
   const heading = document.getElementById('patient-change-heading');
-  if (!svg || !summary || !heading) return;
+  const footnote = document.getElementById('patient-change-footnote');
+  if (!svg || !summary || !heading || !footnote) return;
   heading.textContent = `Registered Patients Over Time - Coloured by ${{metricDisplayLabel(activeMetric)}}`;
 
   const years = patientChangeAnalysis?.years || [];
@@ -3904,6 +3906,8 @@ function renderPatientChangeChart() {{
   if (!years.length || !series.length) {{
     svg.innerHTML = '';
     summary.textContent = 'No practices currently have enough multi-year registered patient counts to plot.';
+    footnote.hidden = true;
+    footnote.textContent = '';
     return;
   }}
 
@@ -4057,6 +4061,9 @@ function renderPatientChangeChart() {{
       : ` New Bank runs from ${{Number(newBankStart).toLocaleString('en-GB')}} to ${{Number(newBankEnd).toLocaleString('en-GB')}} patients across the available series.`;
   summary.textContent =
     `${{series.length}} practices have multi-year patient-count histories in this chart. Coloured lines show the average trajectory for each current ${{metricDisplayLabel(activeMetric).toLowerCase()}} band, and the dashed grey line is the Manchester average practice count for each year.${{flattenGlobal ? ' With Flatten Global on, the y-axis shows deviation from that yearly Manchester mean, so the chart shows which score bands are gaining or losing relative share rather than absolute patient volume.' : ' The y-axis is scoped to those displayed averages rather than every individual practice line.'}}${{newBankSummary}}`;
+  
+    footnote.hidden = false;
+    footnote.textContent = 'Flattened view footnote: both stronger and weaker score bands show only VERY slight divergence from the mean, with better-rated / better-surveyed practices gaining patients a little faster and worse-performing GPs gaining a little more slowly. That suggests patients ARE moving toward better doctors, but INCREDIBLY slowly. One possible reading is that poor access can still trap patients who need more access, convenience, or support most, while others who have a choice (and know it) are more able to switch. This is however in a context of relative to growth, where population pressure is present, but seemingly not a large driver of experience. This suggests policy drives experience more than population pressure, though further investigation might help here.';
 }}
 
 function stopPatientTreemapPlayback() {{
