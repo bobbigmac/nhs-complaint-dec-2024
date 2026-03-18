@@ -219,7 +219,9 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 </details>
 
-![Manchester GP reviews map](./manchester-gp-reviews-map.png)
+![Manchester reviews-vs-survey gap by deprivation](manchester-gp-reviews-survey-gap-by-deprivation.png)
+
+See also: [Manchester GPs reviews map](https://bobdavies.co.uk/nhs-complaint-dec-2024/map/map.html)
 
 ![New Bank and GTD Benchmarks](new-bank-gtd-benchmarks.png)
 
