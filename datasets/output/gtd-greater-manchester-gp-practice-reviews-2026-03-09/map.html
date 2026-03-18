@@ -2191,9 +2191,12 @@ function renderScatterplot() {
   const svg = document.getElementById('scatterplot');
   const width = 920;
   const height = 320;
-  const margin = { top: 18, right: 18, bottom: 42, left: 52 };
+  const margin = { top: 34, right: 18, bottom: 42, left: 52 };
   const plotWidth = width - margin.left - margin.right;
   const plotHeight = height - margin.top - margin.bottom;
+  const headerBandY = 4;
+  const headerBandHeight = 17;
+  const headerTextY = 16;
   const completionMax = Math.max(10, ...points.map((point) => point.y), 50);
   const xScale = (value) => margin.left + ((value - scatterAxis.min) / (scatterAxis.max - scatterAxis.min)) * plotWidth;
   const yScale = (value) => margin.top + plotHeight - (value / completionMax) * plotHeight;
@@ -2275,9 +2278,12 @@ function renderDeprivationChart() {
 
   const width = 920;
   const height = 320;
-  const margin = { top: 18, right: 18, bottom: 42, left: 52 };
+  const margin = { top: 34, right: 18, bottom: 42, left: 52 };
   const plotWidth = width - margin.left - margin.right;
   const plotHeight = height - margin.top - margin.bottom;
+  const headerBandY = 4;
+  const headerBandHeight = 17;
+  const headerTextY = 16;
 
   const xMin = 1;
   const xMax = 10;
@@ -2379,32 +2385,37 @@ function renderDeprivationChart() {
     const shiftScale = Math.max(0.0001, (yMax - yMin) / 4);
     const shiftStrength = clamp01(Math.abs(shift) / shiftScale);
     const diffStrength = clamp01(jsd / 0.35);
-    const alpha = columnPoints.length ? (0.03 + (diffStrength * 0.14)) : 0.02;
-    const bandAlpha = columnPoints.length ? (0.12 + (diffStrength * 0.22)) : 0.05;
     const isNeutral = shiftStrength < 0.12;
     const fill = isNeutral
-      ? `rgba(120, 128, 138, ${alpha.toFixed(3)})`
+      ? `hsl(215 12% ${(95 - diffStrength * 10).toFixed(1)}%)`
       : shift >= 0
-        ? `rgba(28, 124, 84, ${(alpha + shiftStrength * 0.05).toFixed(3)})`
-        : `rgba(195, 71, 47, ${(alpha + shiftStrength * 0.05).toFixed(3)})`;
+        ? `hsl(151 40% ${(92 - ((diffStrength * 14) + (shiftStrength * 8))).toFixed(1)}%)`
+        : `hsl(12 62% ${(92 - ((diffStrength * 14) + (shiftStrength * 8))).toFixed(1)}%)`;
     const bandFill = isNeutral
-      ? `rgba(120, 128, 138, ${bandAlpha.toFixed(3)})`
+      ? `hsl(215 12% ${(82 - diffStrength * 14).toFixed(1)}%)`
       : shift >= 0
-        ? `rgba(28, 124, 84, ${(bandAlpha + shiftStrength * 0.08).toFixed(3)})`
-        : `rgba(195, 71, 47, ${(bandAlpha + shiftStrength * 0.08).toFixed(3)})`;
+        ? `hsl(151 58% ${(58 - ((diffStrength * 10) + (shiftStrength * 6))).toFixed(1)}%)`
+        : `hsl(12 64% ${(58 - ((diffStrength * 10) + (shiftStrength * 6))).toFixed(1)}%)`;
+    const bandText = isNeutral ? 'rgba(26,28,26,0.82)' : '#ffffff';
     const x0 = xBoundary(decile - xMin);
     const x1 = xBoundary(decile - xMin + 1);
+    const meanLabel = columnMean === null
+      ? 'n/a'
+      : activeMetric === 'survey'
+        ? `${Math.round(columnMean)}%`
+        : columnMean.toFixed(activeMetric === 'gap' ? 2 : 1);
     const title = !columnPoints.length
       ? `IMD decile ${decile}: no practices with usable data`
-      : `IMD decile ${decile}: distribution is ${isNeutral ? 'similar to' : shift >= 0 ? 'better than' : 'worse than'} the overall pattern. Jensen-Shannon divergence ${jsd.toFixed(2)}.`;
+      : `IMD decile ${decile}: mean ${meanLabel}. Distribution is ${isNeutral ? 'similar to' : shift >= 0 ? 'better than' : 'worse than'} the overall pattern. Jensen-Shannon divergence ${jsd.toFixed(2)}.`;
     return `
       <g>
         <rect x="${x0.toFixed(2)}" y="${margin.top.toFixed(2)}" width="${(x1 - x0).toFixed(2)}" height="${plotHeight.toFixed(2)}" fill="${fill}">
           <title>${title}</title>
         </rect>
-        <rect x="${(x0 + 1).toFixed(2)}" y="${margin.top.toFixed(2)}" width="${Math.max(0, x1 - x0 - 2).toFixed(2)}" height="7" rx="3.5" fill="${bandFill}">
+        <rect x="${(x0 + 2).toFixed(2)}" y="${headerBandY.toFixed(2)}" width="${Math.max(0, x1 - x0 - 4).toFixed(2)}" height="${headerBandHeight}" rx="6" fill="${bandFill}">
           <title>${title}</title>
         </rect>
+        <text x="${((x0 + x1) / 2).toFixed(2)}" y="${headerTextY.toFixed(2)}" text-anchor="middle" font-size="10.5" font-weight="700" fill="${bandText}">${meanLabel}</text>
       </g>
     `;
   }).join('');
