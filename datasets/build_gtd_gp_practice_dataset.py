@@ -2171,11 +2171,13 @@ let activeAreaOverlay = null;
 let focusedPracticeCode = NEW_BANK_CODE;
 let pinnedTrendPracticeCode = TREND_DEFAULT_CONTEXT_CODE;
 let hoveredTrendPracticeCode = null;
+let trendLegendHoverSuppressed = false;
 let sidebarCollapsed = false;
 let patientTreemapYearIndex = null;
 let patientTreemapPlaying = false;
 let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
+const GTD_MEAN_COLOR = '#b23322';
 
 const metricConfigs = {{
   google: {{
@@ -2899,33 +2901,42 @@ function bindTrendLegendInteractions(legend) {{
   legend.querySelectorAll('[data-practice-code]').forEach((button) => {{
     const code = button.getAttribute('data-practice-code');
     button.addEventListener('mouseenter', () => {{
+      if (trendLegendHoverSuppressed) return;
       if (hoveredTrendPracticeCode === code) return;
       hoveredTrendPracticeCode = code;
       renderGtdScoreTrendChart();
     }});
     button.addEventListener('mouseleave', () => {{
+      if (trendLegendHoverSuppressed) return;
       if (hoveredTrendPracticeCode !== code) return;
       hoveredTrendPracticeCode = null;
       renderGtdScoreTrendChart();
     }});
     button.addEventListener('focus', () => {{
+      if (trendLegendHoverSuppressed) return;
       hoveredTrendPracticeCode = code;
       renderGtdScoreTrendChart();
     }});
     button.addEventListener('blur', () => {{
+      if (trendLegendHoverSuppressed) return;
       if (hoveredTrendPracticeCode !== code) return;
       hoveredTrendPracticeCode = null;
       renderGtdScoreTrendChart();
     }});
-    button.addEventListener('click', () => {{
-      const nextCode = code === TREND_DEFAULT_CONTEXT_CODE
-        ? TREND_DEFAULT_CONTEXT_CODE
-        : pinnedTrendPracticeCode === code
-          ? TREND_DEFAULT_CONTEXT_CODE
-          : code;
+    button.addEventListener('mousedown', (event) => {{
+      event.preventDefault();
+      const nextCode = code || TREND_DEFAULT_CONTEXT_CODE;
+      trendLegendHoverSuppressed = true;
       hoveredTrendPracticeCode = null;
       pinnedTrendPracticeCode = nextCode;
-      focusPracticeByCode(nextCode === TREND_DEFAULT_CONTEXT_CODE ? NEW_BANK_CODE : nextCode);
+      renderGtdScoreTrendChart();
+    }});
+    button.addEventListener('click', (event) => {{
+      event.preventDefault();
+      const nextCode = code || TREND_DEFAULT_CONTEXT_CODE;
+      trendLegendHoverSuppressed = true;
+      hoveredTrendPracticeCode = null;
+      pinnedTrendPracticeCode = nextCode;
       renderGtdScoreTrendChart();
     }});
   }});
@@ -4513,7 +4524,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading,
   const averageFinal = [...averageSeries].reverse().find((v) => v !== null && Number.isFinite(v));
   const averageFinalIndex = averageSeries.reduce((memo, v, i) => (v !== null && Number.isFinite(v) ? i : memo), -1);
   const averageMarker = showAverage && averageFinalIndex >= 0 && averageFinal !== undefined
-    ? `<circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)" opacity="${{dimInactive ? '0.74' : '1'}}"></circle><text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{Math.round(averageFinal)}}%</text>`
+    ? `<circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="${{GTD_MEAN_COLOR}}" opacity="${{dimInactive ? '0.74' : '1'}}"></circle><text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="${{GTD_MEAN_COLOR}}" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{Math.round(averageFinal)}}%</text>`
     : '';
   const surveyPatientOverlay = patientPath ? `
     <path d="${{patientPath}}" fill="none" stroke="#4c9a52" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" opacity="0.88"></path>
@@ -4529,7 +4540,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading,
     <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     ${{takeoverMarkers}}
     ${{practicePaths}}
-    ${{showAverage ? `<path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>` : ''}}
+    ${{showAverage ? `<path d="${{averagePath}}" fill="none" stroke="${{GTD_MEAN_COLOR}}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>` : ''}}
     ${{averageMarker}}
     ${{endMarkers}}
     ${{surveyPatientOverlay}}
@@ -4539,12 +4550,10 @@ function renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading,
   `;
   const defaultLabel = defaultEntry ? `GTD mean + ${{defaultEntry.series.name}}` : 'GTD mean';
   legend.innerHTML = [
-    `<button type="button" class="trend-legend-item${{isMeanContext ? ' is-active' : ''}}" data-practice-code="${{TREND_DEFAULT_CONTEXT_CODE}}" aria-pressed="${{isMeanContext ? 'true' : 'false'}}" title="${{defaultLabel}}. Default chart view."><span class="trend-legend-swatch" style="background:var(--accent)"></span><span class="trend-legend-body"><span class="trend-legend-name">${{defaultLabel}}</span><span class="trend-legend-meta">Default view · GTD mean stays visible</span></span></button>`,
+    `<button type="button" class="trend-legend-item${{isMeanContext ? ' is-active' : ''}}" data-practice-code="${{TREND_DEFAULT_CONTEXT_CODE}}" aria-pressed="${{isMeanContext ? 'true' : 'false'}}" title="${{defaultLabel}}"><span class="trend-legend-swatch" style="background:${{GTD_MEAN_COLOR}}"></span><span class="trend-legend-body"><span class="trend-legend-name">${{defaultLabel}}</span></span></button>`,
     ...practiceEntries.map((entry) => {{
-    const latestText = entry.lastValue === null ? 'No data' : `Latest ${{Math.round(entry.lastValue)}}%`;
-    const takeoverText = entry.series.takeover_date ? `Takeover ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}` : 'Takeover date pending';
     const isActive = !isMeanContext && entry.series.code === activeCode;
-    return `<button type="button" class="trend-legend-item${{isActive ? ' is-active' : ''}}" data-practice-code="${{entry.series.code}}" aria-pressed="${{isActive}}" title="${{entry.series.name}}. ${{latestText}}. ${{takeoverText}}."><span class="trend-legend-swatch" style="background:${{entry.color}}"></span><span class="trend-legend-body"><span class="trend-legend-name">${{entry.series.name}}</span><span class="trend-legend-meta">${{latestText}} · ${{takeoverText}}</span></span></button>`;
+    return `<button type="button" class="trend-legend-item${{isActive ? ' is-active' : ''}}" data-practice-code="${{entry.series.code}}" aria-pressed="${{isActive}}" title="${{entry.series.name}}"><span class="trend-legend-swatch" style="background:${{entry.color}}"></span><span class="trend-legend-body"><span class="trend-legend-name">${{entry.series.name}}</span></span></button>`;
   }})
   ].join('');
   bindTrendLegendInteractions(legend);
@@ -4553,7 +4562,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading,
   ] : []);
   const overlaySummary = patientPath ? ' Green dashed: registered patients as a share of the GTD yearly average, with raw patient counts left in the point labels.' : '';
   const activeSummary = !displayEntry
-    ? ' Hover a practice in the legend to isolate its track.'
+    ? ' Hover or click a practice in the legend to isolate its track.'
     : isMeanContext
       ? ` Default view shows the GTD mean with ${{displayEntry.series.name}} as the reference track.${{overlaySummary}}`
       : ` Highlighted: ${{displayEntry.series.name}}. Latest ${{displayEntry.lastValue === null ? '?' : Math.round(displayEntry.lastValue) + '%'}}.${{overlaySummary}}`;
@@ -4746,8 +4755,8 @@ function renderGtdScoreTrendChart() {{
   const averageFinalIndex = averageSeries.reduce((lastIndex, value, index) => (value !== null && Number.isFinite(value) ? index : lastIndex), -1);
   const averageMarker = showAverage && averageFinalIndex >= 0 && averageFinal !== undefined
     ? `
-      <circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="var(--accent)" opacity="${{dimInactive ? '0.74' : '1'}}"></circle>
-      <text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="var(--accent)" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{averageFinal.toFixed(2)}}</text>
+      <circle cx="${{xScale(averageFinalIndex).toFixed(2)}}" cy="${{yScale(averageFinal).toFixed(2)}}" r="4.5" fill="${{GTD_MEAN_COLOR}}" opacity="${{dimInactive ? '0.74' : '1'}}"></circle>
+      <text x="${{Math.min(width - margin.right, xScale(averageFinalIndex) + 8).toFixed(2)}}" y="${{(yScale(averageFinal) - 8).toFixed(2)}}" font-size="11" fill="${{GTD_MEAN_COLOR}}" fill-opacity="${{dimInactive ? '0.74' : '1'}}" font-weight="700">GTD mean ${{averageFinal.toFixed(2)}}</text>
     `
     : '';
 
@@ -4771,7 +4780,7 @@ function renderGtdScoreTrendChart() {{
     <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     ${{takeoverMarkers}}
     ${{practicePaths}}
-    ${{showAverage ? `<path d="${{averagePath}}" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>` : ''}}
+    ${{showAverage ? `<path d="${{averagePath}}" fill="none" stroke="${{GTD_MEAN_COLOR}}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="${{dimInactive ? '0.78' : '1'}}"></path>` : ''}}
     ${{averageMarker}}
     ${{endMarkers}}
     ${{activeTakeoverMarkup}}
@@ -4788,20 +4797,15 @@ function renderGtdScoreTrendChart() {{
         class="trend-legend-item${{isMeanContext ? ' is-active' : ''}}"
         data-practice-code="${{TREND_DEFAULT_CONTEXT_CODE}}"
         aria-pressed="${{isMeanContext ? 'true' : 'false'}}"
-        title="${{defaultLabel}}. Default chart view."
+        title="${{defaultLabel}}"
       >
-        <span class="trend-legend-swatch" style="background:var(--accent)"></span>
+        <span class="trend-legend-swatch" style="background:${{GTD_MEAN_COLOR}}"></span>
         <span class="trend-legend-body">
           <span class="trend-legend-name">${{defaultLabel}}</span>
-          <span class="trend-legend-meta">Default view · GTD mean stays visible</span>
         </span>
       </button>
     `,
     ...practiceEntries.map((entry) => {{
-    const latestText = entry.lastValue === null ? 'No latest score' : `Latest ${{entry.lastValue.toFixed(2)}}`;
-    const takeoverText = entry.series.takeover_date
-      ? `Takeover ${{formatTakeoverDate(entry.series.takeover_date, entry.series.takeover_precision)}}`
-      : 'Takeover date pending';
     const isActive = !isMeanContext && entry.series.code === activeCode;
     return `
       <button
@@ -4809,12 +4813,11 @@ function renderGtdScoreTrendChart() {{
         class="trend-legend-item${{isActive ? ' is-active' : ''}}"
         data-practice-code="${{entry.series.code}}"
         aria-pressed="${{isActive ? 'true' : 'false'}}"
-        title="${{entry.series.name}}. ${{latestText}}. ${{takeoverText}}."
+        title="${{entry.series.name}}"
       >
         <span class="trend-legend-swatch" style="background:${{entry.color}}"></span>
         <span class="trend-legend-body">
           <span class="trend-legend-name">${{entry.series.name}}</span>
-          <span class="trend-legend-meta">${{latestText}} · ${{takeoverText}}</span>
         </span>
       </button>
     `;
@@ -4834,7 +4837,7 @@ function renderGtdScoreTrendChart() {{
     ? ' Green dashed: registered patients as a share of the GTD yearly average, with raw patient counts left in the point labels. Orange dashed: GP Survey good %.'
     : '';
   const activeSummary = !activeEntry
-    ? ' Hover a practice in the side legend to isolate its track and takeover marker, or click to pin it.'
+    ? ' Hover or click a practice in the side legend to isolate its track and takeover marker.'
     : isMeanContext
       ? ` Default view shows the GTD mean with ${{activeEntry.series.name}} as the reference track.${{overlaySummary}}`
       : ` Highlighted: ${{activeEntry.series.name}}. Latest reconstructed score is ${{activeEntry.lastValue === null ? '?' : activeEntry.lastValue.toFixed(2)}}${{activeEntry.series.takeover_date ? `, with GTD takeover on ${{formatTakeoverDate(activeEntry.series.takeover_date, activeEntry.series.takeover_precision)}}.` : '.'}}${{overlaySummary}}`;
