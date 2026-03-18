@@ -120,6 +120,32 @@ body {
   display: grid;
   gap: 8px;
 }
+#score-source-control-spacer[hidden] {
+  display: none !important;
+}
+#score-source-control.is-fixed {
+  position: fixed;
+  top: 0;
+  left: var(--sticky-left, 0);
+  width: var(--sticky-width, auto);
+  z-index: 40;
+  background: var(--panel-strong);
+  background: transparent;
+  /*box-shadow: 0 10px 18px -14px rgba(26, 28, 26, 0.42);*/
+}
+#score-source-control.is-fixed h2,
+#score-source-control.is-fixed #metric-description,
+#score-source-control.is-fixed #gap-mode-note {
+  display: none;
+}
+#score-source-control.is-fixed {
+  gap: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#score-source-control.is-fixed .segmented {
+  background: white;
+}
 .management-group {
   flex: 1 1 auto;
   min-height: 0;
@@ -159,6 +185,39 @@ body {
 .overlay-toggle-label.is-active {
   border-color: rgba(15, 94, 156, 0.28);
   background: rgba(15, 94, 156, 0.09);
+}
+.check-toggle {
+  justify-content: space-between;
+}
+.check-toggle input {
+  display: none;
+}
+.check-toggle-mark {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(26,28,26,0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  color: transparent;
+  background: rgba(255,255,255,0.75);
+  flex: 0 0 auto;
+}
+.check-toggle input:checked + span + .check-toggle-mark {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.gap-mode-control[hidden] {
+  display: none !important;
+}
+.gap-mode-note {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.35;
 }
 .overlay-toggle-label input {
   display: inline-block;
@@ -657,6 +716,7 @@ body {
     border-right: 0;
     box-shadow: none;
   }
+  #score-source-control.is-fixed { position: static; width: auto; box-shadow: none; }
   .panel {
     box-shadow: none;
     border: 1px solid var(--line);
@@ -687,15 +747,24 @@ body {
         <p>424 GP surgery profiles from a broad catchment.</p>
         <p>3,021,833 registered patients across 360 practices.</p>
       </div>
-      <div class="control-group">
+      <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
         <div class="segmented">
           <label title="Google"><input type="radio" name="score-source" value="google" checked><span>Google</span><span class="segmented-short">G</span></label>
           <label title="GP Survey"><input type="radio" name="score-source" value="survey"><span>GP Survey</span><span class="segmented-short">S</span></label>
           <label title="Gap"><input type="radio" name="score-source" value="gap"><span>Gap</span><span class="segmented-short">X</span></label>
         </div>
+        <div id="gap-mode-control" class="gap-mode-control" hidden>
+          <label class="overlay-toggle-label check-toggle" title="Normalise gap by cohort z-scores so Google and survey are compared on a shared relative scale.">
+            <input type="checkbox" id="normalize-gap-toggle" checked>
+            <span>Normalise gap</span>
+            <span class="check-toggle-mark">✓</span>
+          </label>
+          <p id="gap-mode-note" class="hint gap-mode-note">Compares Google and survey as z-scores across this map cohort, rather than direct stars-vs-percent conversion.</p>
+        </div>
         <p id="metric-description" class="hint"></p>
       </div>
+      <div id="score-source-control-spacer" hidden aria-hidden="true"></div>
       <div class="control-group">
         <h2>Area overlays</h2>
         <div id="area-overlay-control">
@@ -733,7 +802,7 @@ body {
       <p class="chart-note" id="gtd-trend-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
     </section>
     <section class="panel comparison-panel">
-      <h2>Completion Rate vs Score</h2>
+      <h2 id="scatter-heading">Completion Rate vs Score</h2>
       <p id="scatter-summary" class="hint"></p>
       <div class="chart-frame">
         <svg id="scatterplot" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="scatter-title" role="img">
@@ -743,7 +812,7 @@ body {
       <p class="chart-note">Y-axis is GP Patient Survey completion rate. X-axis changes with the selected score source.</p>
     </section>
     <section class="panel comparison-panel">
-      <h2>Score vs Deprivation</h2>
+      <h2 id="deprivation-heading">Score vs Deprivation</h2>
       <p id="deprivation-summary" class="hint"></p>
       <div class="chart-frame">
         <svg id="deprivation-chart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="deprivation-title" role="img">
@@ -792,6 +861,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentagon'];
 const selectedManagementCompanies = new Set([BASELINE_MANAGEMENT_COMPANY]);
 let activeMetric = 'google';
+let activeGapMode = 'normalized';
 let activeAreaOverlay = null;
 let focusedPracticeCode = NEW_BANK_CODE;
 let pinnedTrendPracticeCode = TREND_DEFAULT_CONTEXT_CODE;
@@ -867,18 +937,8 @@ const metricConfigs = {
   },
   gap: {
     title: 'Survey/Google gap',
-    description: 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google; positive means Google is higher than the survey-equivalent score, negative means lower.',
     value(row) {
-      const google = numericOrNull(row.google_score);
-      const googleCount = numericOrNull(row.google_count);
-      const survey = numericOrNull(row.survey_overall_good_percent);
-      const surveySentBack = numericOrNull(row.survey_sent_back);
-      if (google === null || survey === null) return null;
-      if (googleCount === null || googleCount <= 0) return null;
-      if (surveySentBack === null || surveySentBack <= 0) return null;
-      const surveyStars = survey / 20;
-      const gap = google - surveyStars;
-      return Math.abs(gap) < 1 ? null : gap;
+      return gapValue(row, { suppressSmall: true });
     },
     compareValue(_row) {
       return null;
@@ -890,11 +950,18 @@ const metricConfigs = {
     markerColor(row) {
       const value = this.value(row);
       if (value === null) return '#9aa0a6';
-      if (value >= 1.0) return '#1c7c54';        // Google much higher than survey (better than recorded)
-      if (value >= 0.5) return '#4c9a52';        // Google somewhat higher than survey
-      if (value > -0.5) return '#d2b529';        // Rough alignment
-      if (value > -1.0) return '#dc8c23';        // Google somewhat worse than survey
-      return '#c3472f';                          // Google much worse than survey (worse than recorded)
+      if (activeGapMode === 'normalized') {
+        if (value >= 0.75) return '#1c7c54';
+        if (value >= 0.25) return '#4c9a52';
+        if (value > -0.25) return '#d2b529';
+        if (value > -0.75) return '#dc8c23';
+        return '#c3472f';
+      }
+      if (value >= 1.0) return '#1c7c54';
+      if (value >= 0.5) return '#4c9a52';
+      if (value > -0.5) return '#d2b529';
+      if (value > -1.0) return '#dc8c23';
+      return '#c3472f';
     },
     scaleCount(row) {
       const google = numericOrNull(row.google_count);
@@ -909,7 +976,7 @@ const metricConfigs = {
     averageLabel(value) {
       return value === null ? '?' : value.toFixed(2);
     },
-    axisLabel: 'Google minus survey-equivalent stars (positive = Google higher)',
+    axisLabel: '',
     axisMin: -2.5,
     axisMax: 2.5
   }
@@ -920,6 +987,104 @@ function numericOrNull(value) {
   if (typeof value === 'string' && value.trim() === '') return null;
   const numeric = Number(value);
   return Number.isFinite(numeric) ? numeric : null;
+}
+
+function standardDeviation(values) {
+  if (!values.length) return null;
+  const average = mean(values);
+  if (average === null) return null;
+  const variance = values.reduce((sum, value) => sum + ((value - average) ** 2), 0) / values.length;
+  return variance > 0 ? Math.sqrt(variance) : 0;
+}
+
+function gapInputs(row) {
+  const google = numericOrNull(row.google_score);
+  const googleCount = numericOrNull(row.google_count);
+  const surveyPercent = numericOrNull(row.survey_overall_good_percent);
+  const surveySentBack = numericOrNull(row.survey_sent_back);
+  if (google === null || surveyPercent === null) return null;
+  if (googleCount === null || googleCount <= 0) return null;
+  if (surveySentBack === null || surveySentBack <= 0) return null;
+  return {
+    google,
+    surveyPercent,
+    surveyStars: surveyPercent / 20,
+  };
+}
+
+const gapNormalisationStats = (() => {
+  const inputs = rows.map((row) => gapInputs(row)).filter(Boolean);
+  const googleValues = inputs.map((entry) => entry.google);
+  const surveyStarValues = inputs.map((entry) => entry.surveyStars);
+  return {
+    googleMean: mean(googleValues),
+    googleStd: standardDeviation(googleValues),
+    surveyStarMean: mean(surveyStarValues),
+    surveyStarStd: standardDeviation(surveyStarValues),
+  };
+})();
+
+function absoluteGapValue(row, suppressSmall = true) {
+  const inputs = gapInputs(row);
+  if (!inputs) return null;
+  const gap = inputs.google - inputs.surveyStars;
+  return suppressSmall && Math.abs(gap) < 1 ? null : gap;
+}
+
+function normalizedGapValue(row, suppressSmall = true) {
+  const inputs = gapInputs(row);
+  if (!inputs) return null;
+  const googleStd = gapNormalisationStats.googleStd;
+  const surveyStarStd = gapNormalisationStats.surveyStarStd;
+  if (!googleStd || !surveyStarStd) return null;
+  const googleZ = (inputs.google - gapNormalisationStats.googleMean) / googleStd;
+  const surveyZ = (inputs.surveyStars - gapNormalisationStats.surveyStarMean) / surveyStarStd;
+  const gap = googleZ - surveyZ;
+  return suppressSmall && Math.abs(gap) < 1 ? null : gap;
+}
+
+function gapValue(row, options = {}) {
+  const suppressSmall = options.suppressSmall !== false;
+  return activeGapMode === 'normalized'
+    ? normalizedGapValue(row, suppressSmall)
+    : absoluteGapValue(row, suppressSmall);
+}
+
+function gapAxisInfo() {
+  if (activeGapMode !== 'normalized') {
+    return {
+      label: 'Google minus survey-equivalent stars (positive = Google higher)',
+      min: -2.5,
+      max: 2.5,
+      magnitudeLabel: 'Survey/Google gap magnitude (abs, stars)',
+      magnitudeTicks: [0, 0.5, 1.0, 1.5, 2.0, 2.5],
+    };
+  }
+  const values = rows
+    .map((row) => gapValue(row, { suppressSmall: false }))
+    .filter((value) => value !== null && Number.isFinite(value));
+  const maxAbs = values.length ? Math.max(...values.map((value) => Math.abs(value))) : 1;
+  const roundedMax = Math.max(1, Math.ceil(maxAbs * 2) / 2);
+  const ticks = [];
+  const step = roundedMax <= 2 ? 0.5 : 1;
+  for (let tick = 0; tick <= roundedMax + 0.001; tick += step) {
+    ticks.push(Number(tick.toFixed(2)));
+  }
+  return {
+    label: 'Google minus survey z-score (positive = Google higher)',
+    min: -roundedMax,
+    max: roundedMax,
+    magnitudeLabel: 'Survey/Google gap magnitude (abs, z-score diff)',
+    magnitudeTicks: ticks,
+  };
+}
+
+function gapDescription() {
+  if (activeGapMode === 'normalized') {
+    //'Normalised mode: Google stars and survey-equivalent stars are each converted to z-scores across this map cohort, then compared. Positive means Google is higher than the survey signal after cohort normalisation.';
+    return '';
+  }
+  return 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google; positive means Google is higher than the survey-equivalent score, negative means lower.';
 }
 
 const gtdAveragePatientCountByYear = Object.fromEntries(
@@ -1046,8 +1211,19 @@ function markerSvg(shape, color, label, fontSize, missing) {
 
 function renderMetricLegend() {
   const metric = metricConfigs[activeMetric];
-  document.getElementById('metric-description').textContent = metric.description;
+  document.getElementById('metric-description').textContent =
+    activeMetric === 'gap' ? gapDescription() : metric.description;
   document.getElementById('metric-description').className = 'hint metric-note';
+  const gapModeControl = document.getElementById('gap-mode-control');
+  const normalizeToggle = document.getElementById('normalize-gap-toggle');
+  const gapModeNote = document.getElementById('gap-mode-note');
+  const gapModeActive = activeMetric === 'gap';
+  gapModeControl.hidden = !gapModeActive;
+  normalizeToggle.checked = activeGapMode === 'normalized';
+  gapModeControl.querySelector('label').classList.toggle('is-active', gapModeActive && activeGapMode === 'normalized');
+  gapModeNote.textContent = activeGapMode === 'normalized'
+    ? 'Compares Google and survey as z-scores across this map cohort, rather than direct stars-vs-percent conversion.'
+    : 'Compares Google stars directly with survey-equivalent stars (survey overall-good % mapped to 0-5).';
 }
 
 function updateSidebarState() {
@@ -1302,17 +1478,19 @@ function formatSurvey(row) {
 }
 
 function formatGap(row) {
-  const google = numericOrNull(row.google_score);
-  const surveyPercent = numericOrNull(row.survey_overall_good_percent);
-  if (google === null || surveyPercent === null) return 'Survey/Google gap: ?';
-  const surveyStars = surveyPercent / 20;
-  const gap = google - surveyStars;
+  const inputs = gapInputs(row);
+  const gap = gapValue(row, { suppressSmall: false });
+  if (!inputs || gap === null) return 'Survey/Google gap: ?';
   const magnitude = Math.abs(gap);
   if (magnitude < 0.01) {
-    return `Survey/Google gap: aligned · Google ${google.toFixed(1)} vs survey-equivalent ${surveyStars.toFixed(2)}`;
+    return activeGapMode === 'normalized'
+      ? `Survey/Google gap: aligned in z-score terms · Google ${inputs.google.toFixed(1)} vs survey-equivalent ${inputs.surveyStars.toFixed(2)}`
+      : `Survey/Google gap: aligned · Google ${inputs.google.toFixed(1)} vs survey-equivalent ${inputs.surveyStars.toFixed(2)}`;
   }
   const direction = gap > 0 ? 'higher' : 'lower';
-  return `Survey/Google gap: ${magnitude.toFixed(2)} stars (${direction}) · Google ${google.toFixed(1)} vs survey-equivalent ${surveyStars.toFixed(2)}`;
+  return activeGapMode === 'normalized'
+    ? `Survey/Google gap: ${magnitude.toFixed(2)} z-score diff (${direction}) · Google ${inputs.google.toFixed(1)} vs survey-equivalent ${inputs.surveyStars.toFixed(2)}`
+    : `Survey/Google gap: ${magnitude.toFixed(2)} stars (${direction}) · Google ${inputs.google.toFixed(1)} vs survey-equivalent ${inputs.surveyStars.toFixed(2)}`;
 }
 
 function popupMarkup(row) {
@@ -1580,6 +1758,11 @@ function metricToneClass(metricName, value) {
     return 'tone-good';
   }
   if (metricName === 'gap') {
+    if (activeGapMode === 'normalized') {
+      if (value <= -0.75) return 'tone-bad';
+      if (value <= -0.25) return 'tone-mid';
+      return 'tone-good';
+    }
     if (value <= -1) return 'tone-bad';
     if (value <= -0.5) return 'tone-mid';
     return 'tone-good';
@@ -1637,7 +1820,13 @@ function performanceCounts(values, subjectValue, metricName) {
 }
 
 function benchmarkStats(subjectRows, localRows, regionalRows, metricName, subjectMode) {
-  const subjectValues = metricValues(subjectRows, metricName);
+  const subjectValues = metricValues(
+    subjectRows,
+    metricName,
+    metricName === 'gap' && subjectMode === 'single'
+      ? (row) => gapValue(row, { suppressSmall: false })
+      : null
+  );
   const localValues = metricValues(localRows, metricName);
   const regionalValues = metricValues(regionalRows, metricName);
   const completionSubjectValues = metricValues(subjectRows, metricName, (row) => numericOrNull(row.survey_completion_rate_percent));
@@ -1717,7 +1906,13 @@ function countUnitLabel(count, pluralUnit) {
 function metricScopeLabel(metricName) {
   if (metricName === 'google') return 'Google rating';
   if (metricName === 'survey') return 'patient survey overall good %';
-  return 'survey/Google gap';
+  return activeGapMode === 'normalized' ? 'normalised survey/Google gap' : 'survey/Google gap';
+}
+
+function metricDisplayLabel(metricName) {
+  if (metricName === 'google') return 'Reviews';
+  if (metricName === 'survey') return 'Patient Survey';
+  return activeGapMode === 'normalized' ? 'Normalised Gap' : 'Gap';
 }
 
 function nearbyLabelForMode(subjectMode) {
@@ -1896,7 +2091,7 @@ function renderComparisons() {
   const selectedCompanies = managementCompanies.filter((company) =>
     selectedManagementCompanies.has(company.name) && company.name !== BASELINE_MANAGEMENT_COMPANY
   );
-  heading.textContent = `Quick comparisons: ${metricScopeLabel(activeMetric)}`;
+  heading.textContent = `Quick comparisons - Showing ${metricDisplayLabel(activeMetric)}`;
   note.textContent = `New Bank and GTD always stay visible here. Click a practice on the map to compare it with New Bank. Use the management tickboxes to compare other companies with GTD. “Nearby” means within ${LOCAL_RADIUS_MILES.toFixed(1)} miles.`;
 
   const cards = [
@@ -1946,31 +2141,23 @@ function renderComparisons() {
 
 function renderScatterplot() {
   const metric = metricConfigs[activeMetric];
+  document.getElementById('scatter-heading').textContent = `Completion Rate vs Score - Showing ${metricDisplayLabel(activeMetric)}`;
   const scatterAxis = (() => {
     if (activeMetric !== 'gap') {
       return { min: metric.axisMin, max: metric.axisMax, label: metric.axisLabel, ticks: null };
     }
-    // For this chart only, show gap magnitude on a 0..max scale so positive/negative gaps share the axis.
+    const gapAxis = gapAxisInfo();
     return {
       min: 0,
-      max: Math.max(0.5, metric.axisMax),
-      label: 'Survey/Google gap magnitude (abs, stars)',
-      ticks: [0, 0.5, 1.0, 1.5, 2.0, 2.5],
+      max: Math.max(0.5, gapAxis.max),
+      label: gapAxis.magnitudeLabel,
+      ticks: gapAxis.magnitudeTicks,
     };
   })();
   const points = rows
     .map((row) => {
       const signed = activeMetric === 'gap'
-        ? (() => {
-          const google = numericOrNull(row.google_score);
-          const googleCount = numericOrNull(row.google_count);
-          const survey = numericOrNull(row.survey_overall_good_percent);
-          const surveySentBack = numericOrNull(row.survey_sent_back);
-          if (google === null || survey === null) return null;
-          if (googleCount === null || googleCount <= 0) return null;
-          if (surveySentBack === null || surveySentBack <= 0) return null;
-          return google - (survey / 20);
-        })()
+        ? gapValue(row, { suppressSmall: false })
         : metric.value(row);
       const x = signed === null ? null : (activeMetric === 'gap' ? Math.abs(signed) : signed);
       const y = numericOrNull(row.survey_completion_rate_percent);
@@ -2045,8 +2232,10 @@ function renderScatterplot() {
 
 function renderDeprivationChart() {
   const metric = metricConfigs[activeMetric];
+  document.getElementById('deprivation-heading').textContent = `Score vs Deprivation - Showing ${metricDisplayLabel(activeMetric)}`;
   const svg = document.getElementById('deprivation-chart');
   if (!svg) return;
+  const gapAxis = gapAxisInfo();
 
   const points = rows
     .map((row) => {
@@ -2054,16 +2243,7 @@ function renderDeprivationChart() {
       if (!dep) return null;
       const x = dep.imd_decile;
       const y = activeMetric === 'gap'
-        ? (() => {
-          const google = numericOrNull(row.google_score);
-          const googleCount = numericOrNull(row.google_count);
-          const survey = numericOrNull(row.survey_overall_good_percent);
-          const surveySentBack = numericOrNull(row.survey_sent_back);
-          if (google === null || survey === null) return null;
-          if (googleCount === null || googleCount <= 0) return null;
-          if (surveySentBack === null || surveySentBack <= 0) return null;
-          return google - (survey / 20);
-        })()
+        ? gapValue(row, { suppressSmall: false })
         : metric.value(row);
       if (x === null || x === undefined || y === null) return null;
       return { row, x, y };
@@ -2078,8 +2258,8 @@ function renderDeprivationChart() {
 
   const xMin = 1;
   const xMax = 10;
-  const yMin = metric.axisMin;
-  const yMax = metric.axisMax;
+  const yMin = activeMetric === 'gap' ? gapAxis.min : metric.axisMin;
+  const yMax = activeMetric === 'gap' ? gapAxis.max : metric.axisMax;
 
   const xBins = xMax - xMin + 1;
   const xCenter = (decile) => margin.left + ((decile - xMin + 0.5) / xBins) * plotWidth;
@@ -2197,7 +2377,7 @@ function renderDeprivationChart() {
     <line x1="${margin.left}" y1="${margin.top}" x2="${margin.left}" y2="${height - margin.bottom}" stroke="rgba(26,28,26,0.35)" />
     ${cellMarkup.join('')}
     <text x="${width / 2}" y="${height - 8}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">IMD 2025 decile (1 = most deprived)</text>
-    <text x="14" y="${height / 2}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${height / 2})">${metric.axisLabel}</text>
+    <text x="14" y="${height / 2}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${height / 2})">${activeMetric === 'gap' ? gapAxis.label : metric.axisLabel}</text>
   `;
 
   const depValues = points.map((point) => point.x).sort((l, r) => l - r);
@@ -2252,7 +2432,7 @@ function renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading,
   const years = gtdSurveyTimeseries.years || [];
   const practiceSeries = gtdSurveyTimeseries.practice_series || [];
   const averageSeries = gtdSurveyTimeseries.average_series || [];
-  if (heading) heading.textContent = 'GTD GP Survey Overall Good % Over Time';
+  if (heading) heading.textContent = `GTD Score Over Time - Showing ${metricDisplayLabel(activeMetric)}`;
   if (note) note.textContent = 'Thin lines show each GTD practice\'s GP Patient Survey overall-experience-as-good percentage by year. Faint dashed vertical lines mark the documented GTD takeover date. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels. Data from gp-patient.co.uk practice-level CSV.';
   const width = 920;
   const height = 360;
@@ -2382,7 +2562,7 @@ function renderGtdScoreTrendChart() {
     renderGtdSurveyTrendChart(svg, summary, legend, overlayLegend, heading, note);
     return;
   }
-  if (heading) heading.textContent = 'GTD Google Score Over Time';
+  if (heading) heading.textContent = `GTD Score Over Time - Showing ${metricDisplayLabel(activeMetric)}`;
   if (note) note.textContent = 'Thin lines show each GTD practice\'s reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.';
   const months = gtdGoogleTimeseries.months || [];
   const practiceSeries = gtdGoogleTimeseries.practice_series || [];
@@ -2676,6 +2856,11 @@ document.querySelectorAll('input[name="score-source"]').forEach((input) => {
   });
 });
 
+document.getElementById('normalize-gap-toggle').addEventListener('change', (event) => {
+  activeGapMode = event.target.checked ? 'normalized' : 'absolute';
+  rerenderAll();
+});
+
 document.getElementById('voronoi-toggle').addEventListener('change', (event) => {
   activeAreaOverlay = event.target.checked ? 'population' : null;
   rerenderAll();
@@ -2690,14 +2875,56 @@ let resizeTimer = null;
 window.addEventListener('resize', () => {
   if (resizeTimer) clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
+    updateStickyScoreControl();
     renderScatterplot();
     renderDeprivationChart();
   }, 120);
 });
 
+const scoreSourceControl = document.getElementById('score-source-control');
+const scoreSourceSpacer = document.getElementById('score-source-control-spacer');
+const legendContainer = document.querySelector('.legend');
+
+function updateStickyScoreControl() {
+  if (!scoreSourceControl || !scoreSourceSpacer) return;
+  const isPrint = window.matchMedia && window.matchMedia('print').matches;
+  if (isPrint) {
+    scoreSourceControl.classList.remove('is-fixed');
+    scoreSourceSpacer.hidden = true;
+    scoreSourceSpacer.style.height = '';
+    scoreSourceControl.style.removeProperty('--sticky-left');
+    scoreSourceControl.style.removeProperty('--sticky-width');
+    return;
+  }
+
+  const anchorRect = (scoreSourceControl.classList.contains('is-fixed') ? scoreSourceSpacer : scoreSourceControl).getBoundingClientRect();
+  const rect = scoreSourceControl.getBoundingClientRect();
+  const shouldFix = anchorRect.top < 0;
+
+  if (!shouldFix) {
+    scoreSourceControl.classList.remove('is-fixed');
+    scoreSourceSpacer.hidden = true;
+    scoreSourceSpacer.style.height = '';
+    scoreSourceControl.style.removeProperty('--sticky-left');
+    scoreSourceControl.style.removeProperty('--sticky-width');
+    return;
+  }
+
+  const spacerHeight = scoreSourceControl.offsetHeight;
+  scoreSourceSpacer.hidden = false;
+  scoreSourceSpacer.style.height = `${spacerHeight}px`;
+  scoreSourceControl.style.setProperty('--sticky-left', `${rect.left}px`);
+  scoreSourceControl.style.setProperty('--sticky-width', `${rect.width}px`);
+  scoreSourceControl.classList.add('is-fixed');
+}
+
+window.addEventListener('scroll', updateStickyScoreControl, { passive: true });
+legendContainer?.addEventListener('scroll', updateStickyScoreControl, { passive: true });
+
 document.getElementById('legend-collapse').addEventListener('click', () => {
   sidebarCollapsed = !sidebarCollapsed;
   updateSidebarState();
+  updateStickyScoreControl();
   try {
     localStorage.setItem(SIDEBAR_COLLAPSE_KEY, sidebarCollapsed ? '1' : '0');
   } catch (_error) {
@@ -2721,6 +2948,7 @@ try {
 }
 updateSidebarState();
 rerenderAll();
+updateStickyScoreControl();
 </script>
 </body>
 </html>
