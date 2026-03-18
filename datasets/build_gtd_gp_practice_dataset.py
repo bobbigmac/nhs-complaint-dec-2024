@@ -2114,7 +2114,7 @@ body {{
         <div class="treemap-mode-control">
           <label class="overlay-toggle-label check-toggle" title="Flatten whole-dataset growth so the treemap shows how each practice's share of the Manchester patient pool changes over time, rather than absolute patient-count growth.">
             <input type="checkbox" id="normalize-patient-change-toggle">
-            <span>Flatten Global</span>
+            <span>Flatten for Population</span>
             <span class="check-toggle-mark">✓</span>
           </label>
         </div>
