@@ -4,21 +4,29 @@ Postcode: M9 7ED
 Google Maps title: Charlestown Medical Practice
 Google rating: 1.9
 Google review count: 109
-Google Maps URL: https://www.google.com/maps/place/Charlestown+Medical+Practice/@53.5229151,-2.1910751,17z/data=!4m8!3m7!1s0x487bb1fb94ec04df:0xb09f70b210cc2eaf!8m2!3d53.5229151!4d-2.1910751!9m1!1b1!16s%2Fg%2F11fhz0v371?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Charlestown+Medical+Practice/@53.5229183,-2.1936554,17z/data=!4m8!3m7!1s0x487bb1fb94ec04df:0xb09f70b210cc2eaf!8m2!3d53.5229151!4d-2.1910751!9m1!1b1!16s%2Fg%2F11fhz0v371?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
 Review collection mode: full_feed
-Review cards collected: 106
+Review cards collected: 109
+Owner replies collected: 0
+Raw review responses captured: 11
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y02325-charlestown-md.json
 
 Captured reviews
 ================
 
-Author: Kathy Sherlock
+Author: A E
 Date: 2 weeks ago
+Rating: 1 star
+Never will I go there again whent with lymphatic leukemia cancer only just got told February off the hospital took my bloods don't how many times had to phone them to get results but didn't have made me keep doing Blood test got refused ensure drinks no empthoty off the doctors took them 3 months to get my results didn't even tell me dont go there
+
+Author: Kathy Sherlock
+Date: 3 weeks ago
 Rating: 1 star
 Absolutely rubbish. Reception team is awful. Rude. Unorganised. Never pick up the phone (waiting hours!!!) They lose important documents like referrals and fail to follow through with what is requested. Lack complete empathy and take ages to sort out issues they cause. Constant chasing up needed except they never answer the phone or want to resolve anything!! Keep you hanging in the air. Disgusting. I feel bad for our families.
 
 Author: Jamie
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
 Great staff always professional, friendly and helpful. Big thanks to Michelle on reception
 
@@ -28,17 +36,17 @@ Rating: 1 star
 Ismaeel Hussain5 reviewsa month ago
 
 Author: Sylvia Chan
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 I seriously question the purpose of having a GP like this. Every single time I try to see a doctor, it is extremely, extremely, extremely difficult to get an appointment. In the past, they allowed walk-in appointments before 8 a.m., but this was later cancelled. Phone appointments were also available before, and then cancelled as well. They introduced a so-called “new system”, which I tried to use by filling in all the required information, only to be told that it was not possible and that I should make an online phone request instead. When I called the GP surgery again, I was told that this system is only open between 7 a.m. and 11 a.m. As a result, my illness was delayed for over a month and a half, and up to now I still cannot access my GP properly. I even went to other GP practices, but they simply referred me back to my local GP, which is this one. Thinking back on my past experiences, I honestly cannot recall a single time when I successfully booked an appointment and saw a doctor smoothly. On my very first appointment, I clearly booked a face-to-face consultation, but it was changed to a phone consultation without my consent. Because I was at work and missed the call, my appointment was immediately cancelled. When I later went to the surgery in person, I was told that my appointment could not be found in their system at all. I genuinely do not understand whether this GP surgery is functioning properly on a daily basis. In my opinion, the management and organisation are highly unprofessional and incompetent. Additionally, during a previous consultation, I explained to the doctor that I suspected two possible conditions. I then saw the doctor searching for symptoms on Google during the appointment. This made me seriously question the level of professionalism and medical competence. Overall, this has been a deeply frustrating and disappointing experience.
 
 Author: Sasha Figuerola (Sasudo)
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 Terrible service, -10/10, useless, rude, incompetent, nothing good about it. Should be closed down
 
 Author: J
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 What a joke of a place. Had to attend to a blood test appointment for my young boy and they cancelled my appointment because we didnt apply a numbing cream. They stand that this is mandatory in their policies. Zero empathy for a family that had to book days off from work and travel long distance just to get the appointment cancelled and reschedule. Numbing cream which has zero to none effect and is not mandatory in any other clinic. My little boy has had many blood tests before and never had numbing cream since he was a baby. I understand this is preferred but to make it mandatory and cancel an appointment based on this is relentless and shows no empathy at all. Please avoid this clinic at all cost if you have the chance to.
 
@@ -47,10 +55,10 @@ Date: 3 months ago
 Rating: 1 star
 Useless as hell they don't help at all
 
-Author: RoyceG
+Author: Sam Connolly
 Date: 3 months ago
 Rating: 5 stars
-RoyceG1 review3 months ago
+Sam Connolly1 review3 months ago
 
 Author: Charli Allen
 Date: 4 months ago
@@ -68,19 +76,19 @@ Rating: 5 stars
 This five star review is only because of a receptionist named Fasih, who actually listened to my problem and went beyond to help me. This new patches system is not helpful, it's stressing patients more than ever before but he helped rectify the issue.
 
 Author: Amina Asif
-Date: 7 months ago
+Date: 8 months ago
 Rating: 1 star
 Worst gp with rude dr and receptionist… Thinking about to change Never pick up the calls
 
 Author: Tracy Short
-Date: Edited 8 months ago
+Date: Edited 9 months ago
 Rating: 1 star
 This practice is quite possibly the worst Dr's in Blackley, they have "forgotten" to send off urgent results, they have lost samples, they have gave wrong results, the phones go unanswered every single day, if you walk over there whilst still ringing them they are just sat there ignoring the phone.A family member had important medication stopped and when they try to phone for an appointment there's none left after waiting in a queue for over half an hour, sometimes longer.They lie saying they haven't had medication for a year when in fact you stopped her medication a month ago. You even stopped medication that a neurologist prescribed for her. There is no care whatsoever within this practice, it's hard work trying to get seen by a Dr, it's always a nurse who sometimes can't deal with your illness. I could go on but it's pointless because you don't care. This surgery needs investigating as a matter of urgency because patients are being neglected on a daily basis. Update: just when you think things couldn't get any worse, since it's been recently took over results aren't being looked at for up to 2 weeks, the staff are even ruder than the last ones,you've got no chance of being cared for at this practice so god help you if you have any serious health issues.
 
 Author: Gintaras Valiukonis
-Date: 8 months ago
+Date: 9 months ago
 Rating: 1 star
-Gintaras ValiukonisLocal Guide · 14 reviews8 months ago
+Gintaras ValiukonisLocal Guide · 14 reviews9 months ago
 
 Author: John Biggs
 Date: 9 months ago
@@ -93,9 +101,14 @@ Rating: 1 star
 Horrible horrible service. I’m trying to get appointment for me for very bad back pain. I couldn’t walk I was crying from pain at the reception and this young man smirking at me telling me sorry I can’t do nothing for you -go to farmacy. Few weeks after I’m trying to book appointment in advance sorry we can’t do. On the phone for 39 minutes no one answered, so went to reception they both talking to each other and no one answered. I showed them I’m still on the phone to gp while I’m at the reception. The same young man smirking. Like some one else health it’s not important. I wanted to book appointment for my kids , i can’t there is no appointment. Call at 8am calling and there is no more appointments. I’m taking my kids and myself to private doctors, but why when I pay my taxes every month. Horrible behaviour from reception team!!! I just left this GP practice. I hope non of this reception staff family members will be in need of the doctors and they will be treated like me. Disgrace!!!!
 
 Author: Emuejevoke okoko (Precious)
-Date: 9 months ago
+Date: 10 months ago
 Rating: 5 stars
 Very helpful and respectful staffs, highly recommend...
+
+Author: T Food
+Date: 10 months ago
+Rating: 2 stars
+Not very helpful, keeps booking nurse when you want to see a doctor
 
 Author: Zohreh Rahimi
 Date: 10 months ago
@@ -106,6 +119,11 @@ Author: Joshua Stones
 Date: 11 months ago
 Rating: 1 star
 I needed a emergency appointment and they didn’t see me when I walk into the doors I’ve got epilepsy and on top of that I’ve got a chest infection and I’ve not been able to see
+
+Author: Andrew Makin
+Date: 11 months ago
+Rating: 1 star
+1hrs 15mins for receptionist to answer 2 calls before mine. What do they do??? Then to be told I wasn’t a ‘high priority’. Ridiculous service.
 
 Author: nat David’s2016
 Date: a year ago
@@ -338,14 +356,14 @@ Rating: 1 star
 Actually the worst GP surgery ever. I have a serious medical condition and I can never get a appointment nor get through on the phone. If I could give it 0 stars I would. And the old lady on the reception desk is so rude and un-professional it's unbelievable.
 
 Author: Tasha Witt
-Date: Edited 3 years ago
+Date: Edited 4 years ago
 Rating: 1 star
 I've had nothing but trouble from the day I made my 1st appointment. My little girl didn't have her 1st jabs till she was almost 12weeks old because her appointments kept getting cancelled and I was never told they was cancelled so id turn up at reception to be told my appointment wasn't on the system or they'd changed them to a different day without them telling me!! Twice I made appointments but wasn't told they were over-the-phone appointments. I got there and was turned away. One of the times the receptionist let me sit there for over 20minutes until the doctor rang and was surprised I was waiting for her in the waiting area😡. I left in tears. I was so tired. I think the doctors I've spoken to(never seen one) and the nurses are lovely but the length of time you're left waiting at reception is a joke. U can be stud there 10minutes before they look at u and stop what they're doing. The last appointment i made was for my little girls last vaccinations (meant to at 16 weeks and she now 22weeks). I made it for a Wednesday at 12pm. When I'd not received the reminder message by the Tuesday, I rang to confirm and was told I had no appointment for that day and she was booked in the Tuesday after at a totally different time. I know for a fact that I booked that day and time so I could take my son straight to nursery afterwards. So my appointment was deleted and rebooked without me being notified AGAIN!!! I've been trying all morning to get thru to the surgery today. Still no luck and it's almost afternoon! 18/03/22 still a joke. Finally got thru to speak to someone who has told me "just 1 minutes" about 5 times and then hung up on me. Once my girl has had her last jabs, I'm definitely looking for another doctors. If it wasn't for the nurses being so nice, I would have gone sooner
 
 Author: Adnan Arshad
-Date: 3 years ago
+Date: 4 years ago
 Rating: 1 star
-Adnan Arshad5 reviews3 years ago
+Adnan Arshad5 reviews4 years ago
 
 Author: s l
 Date: 4 years ago

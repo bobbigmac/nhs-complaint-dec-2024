@@ -3,59 +3,120 @@ Canonical code: P89011
 Postcode: OL6 6NE
 Google Maps title: Gordon Street Medical Centre
 Google rating: 1.5
-Google review count: 86
-Google Maps URL: https://www.google.com/maps/place/Gordon+Street+Medical+Centre/@53.4928013,-2.0784198,17z/data=!4m8!3m7!1s0x487bb6370b268007:0xea02af1ba0049521!8m2!3d53.4928013!4d-2.0784198!9m1!1b1!16s%2Fg%2F1jkw6bds6?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 87
+Google Maps URL: https://www.google.com/maps/place/Gordon+Street+Medical+Centre/@53.4928045,-2.0810001,17z/data=!4m8!3m7!1s0x487bb6370b268007:0xea02af1ba0049521!8m2!3d53.4928013!4d-2.0784198!9m1!1b1!16s%2Fg%2F1jkw6bds6?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
 Review collection mode: full_feed
-Review cards collected: 83
+Review cards collected: 87
+Owner replies collected: 20
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P89011-gordon-street-medical-centre.json
 
 Captured reviews
 ================
 
-Author: James Bloor
-Date: 22 hours ago
+Author: Sandra Bradshaw
+Date: 9 hours ago
 Rating: 1 star
-James Bloor22 hours ago New
+Not even worthy of 1 star. Been suffering with an ear infection for weeks because I know it’s pointless trying to get an appointment. Relented Monday thru sheer pain and was sent on a wild goose chase of bein sent to a pharmacist, pharmacist sent me back to Gordon street where the receptionist said she’d resubmit my request to see a doctor. I was then sent a link to book an appointment… no appointments it said so rang receptionist back who then told me to keep trying the link for 4 days after 4 days if I’ve still not managed to get an appointment ring back and they will give me an appointment over the phone!! Fast forward to Wednesday and I’ve been accepted at a new doctor’s surgery, where I’ve had a telephone consultation, been prescribed an antibiotic spray and got a f2f appointment for Friday for a check up. Why is Gordon street accepting new patients when they can’t or won’t look after the patients they’ve already got. Absolute shocking place!! Avoid at all costs!
+
+Author: Chloe Bradshaw
+Date: 2 days ago
+Rating: 1 star
+If I could give this GP surgery zero stars, I would. Booking an appointment is an impossible task. When you finally do speak to someone, they fob you off to walk-in centres or hospitals that are already struggling. The fact it only has a 1.5 rating on Google says it all. Avoid registering at this surgery – it’s diabolical! I left years ago for the same reasons that are listed in these reviews, now nothing is too much trouble at my new GP. AVOID!
+
+Author: James Bloor
+Date: a week ago
+Rating: 1 star
+James Bloora week ago New
 
 Author: Martin Moran
-Date: 3 weeks ago
+Date: a month ago
 Rating: 1 star
 Went for health check left me with pain in my arm popped my blood vessels in my hand using equipment wrong
+Practice response date: 3 weeks ago
+Practice response:
+Hi Martin, We are really sorry to hear that you are unhappy with the practice. Unfortunately we cannot respond to individual concerns here and we would be grateful if you could contact either the practice directly or our patient services team at gtd.feedback@nhs.net or telephone 0161 337 2254 so we can look into this further. Thank you for taking the time to share your feedback. Cate Patient Services Team
 
 Author: Jo Kiernan
 Date: a month ago
 Rating: 1 star
 The staff are lovely but can’t get an appointment for love nor money, and getting your prescription approved is a tad hot and miss too. Looking for a new doctor.
+Practice response date: a week ago
+Practice response:
+Hi Jo, Thank you for taking the time to share your feedback and for your kind comments about our staff. We are sorry to hear that you have experienced difficulties accessing appointments and with your prescription requests. If you would like us to look into the concerns you have raised in more detail, please contact the practice and ask to speak with the Practice Manager, or alternatively contact our Patient Services team via gtd.feedback@nhs.net or 0161 337 2254 who will be happy to assist. Kind regards Jan Patient Services Team
+
+Author: John White
+Date: a month ago
+Rating: 1 star
+My partner recently went in for a medical appointment, after already expressing concern over the way she has been treated in the past and other people experience here. She called minutes after her appointment in tears due to the judgment and unprofessionalism experienced. Not sure what is in the water, but regardless of personal beliefs and differences medical professionals should always be professional. Making faces when discussing someone’s needs is never acceptable, especially when navigating difficult and sensitive topics. Once again disgusting behaviour, should be ashamed to be called practitioners.
+Practice response date: a month ago
+Practice response:
+Hi John, We are very sorry to hear of your partner’s experience with the practice and how upset she was following her consultation. No patient should leave an appointment in this way, particularly when discussing sensitive or personal matters. Whilst we cannot respond to this individual concern here, we do expect all our clinicians to act professionally, respectfully, and without judgment. The behaviour you describe does not reflect this and we take these concerns seriously. We would appreciate the opportunity to look into this further, therefore we would encourage you to either contact the practice manager to discuss these concerns or contact our patient services team either via email at gtd.feedback@nhs.net or telephone on 0161 337 2254. Thank you for bringing this to our attention. Jan Patient Services Team
 
 Author: Mathew Lees
 Date: 3 months ago
 Rating: 1 star
 Made an appointment, doctors had a family emergency. Was sent to a different surgery, was asked to book a blood test at Gordan street. Referral to sleeping specialist in north Manchester hospital. Receptionist told me their are no sleep clinics in the north West on NHS, but she will try and get me in at warrington general. Was refused a blood test to check for heart disease by Receptionist even though a doctor's asked me to. It is hit a miss with the Receptionists. Doctors are great though if you can get an appointment
+Practice response date: 2 months ago
+Practice response:
+Thank you for your feedback. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Ewelina Hartung
 Date: 4 months ago
 Rating: 1 star
 Really bad experience. Sent repeat prescription request via patches and got wrong medication prescribed 3 times in a row(!) I have been assured in person, after I described the issue at reception and informed I have only 1 tablet left, that next prescription will be signed and send immediately. I called in next day afternoon just to be informed they have 48h to send it. So I waited with no medication left. I got a call next day to be informed that my request was refused as I need to see GP for check first. I believe I should be informed about it when send my initial request weeks ago. Nevermind, nearest app was scheduled in a week time. I waited. It is hard to believe, but when I turned in for the appointment it turned out it was contraception app with nurse, and not for the med I requested and she couldn't release my meds, as it could be only done by GP. 🤡 After a month of struggle I was again at point 0 with no meds.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are experiencing isues with your prescription. Your comments will be passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Meg Wood
 Date: 4 months ago
 Rating: 1 star
 Absolute shambles of a practice. Never any appointments available . Went for a blood test last week and I was the only person in the waiting room, but no GP available for appointment. They do not prioritise really sick patients whom should be given priority . You cannot get past the receptionist. When I asked reception to send a message through to GP she said no because GP was busy & no appointments. I said I didn’t necessarily need one I just wanted to relay a message with a query but it’s not possible. I have worked for NHS for 26 years , and in GP practices and never ever found receptionists to rule the surgery . The GP’s there are mainly locums and haven’t a clue what’s going on & the difficult time patients are having.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are experiencing issues when making appointments. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
+
+Author: Kierron Byron
+Date: 6 months ago
+Rating: 1 star
+I am very disappointed with the surgery. There have been multiple mistakes in my notes and results recently, and no one has responded to the patches I raised. Today, I was on call from 17:40pm and was still caller number 1 until closing at 18:00pm, which makes it clear there was no intention of answering before the lines shut. Its just not acceptable really.
+Practice response date: 6 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further or raise your concerns … More
+
+Author: Kierron Byron
+Date: 6 months ago
+Rating: 1 star
+I am very disappointed with the surgery. There have been multiple mistakes in my notes and results recently, and no one has responded to the patches I raised. Today, I was on call from 17:40pm and was still caller number 1 until closing at 18:00pm, which makes it clear there was no intention of answering before the lines shut. Its just not acceptable really.
+Practice response date: 6 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further or raise your concerns regarding the patchs request, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Hazel Tetlow
-Date: Edited 6 months ago
+Date: Edited 7 months ago
 Rating: 1 star
 Absolute joke!!! Been put on weekly prescriptions and every week without fail I have had some kind of issue!! Left without medication for days, rude receptionist (only one,the rest are lovely) seen few weeks ago by the nurse for something that clearly warranted a GP appointment, told I'm on a specific medication (thyroxine) even though I have NEVER been prescribed it!! Nurse continued to argue with me telling me I was wrong, untill I told her to check my details and turned out? She had the wrong patient on the screen!! This has happened before at this practice wherea GP rang me to inform me they were reducing one of my medications due to me being 12 weeks pregnant!!! I wasn't pregnant at all, wrong information AGAIN!! The list goes on and on and on!!! Sent by the nurse for an msk scan.....got there to be told I wouldn't be having no such scan because what the nurse had written in the referral? Was completely incorrect!!!
+Practice response date: 7 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Ernest Hartung
 Date: Edited 7 months ago
 Rating: 1 star
 The worst medical centre. There is always a huge problem to get an appointment to GP. They just say go to walk in centre because no appointments are available. Absolutely can't get help with my abdominal hernia. I have been diagnosed beginning of May. After 2 months still can't get any help from GP. Even after phone consultation with miss Mariah (physician associate) who was very understanding and polite, GP got her report and did absolutely nothing.
+Practice response date: 7 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Aishat Abdulazeez
 Date: 8 months ago
 Rating: 1 star
 I got a text message to book an appointment that my test result have been reviewed and when I called to book an appointment i was given a date for two weeks later just for the doctor to speak with me regarding my test result and meanwhile I am still battling with my health condition and I have to wait for two weeks again for the doctor speak with me two weeks later .
+Practice response date: 8 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the length of time for your appointment. Your feedback has been passed on to the practice manager. If you would like to discuss your concerns further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Christine Round
 Date: 9 months ago
@@ -66,51 +127,78 @@ Author: Arthur Pint
 Date: 10 months ago
 Rating: 1 star
 Diabolical……. Pretend to be engaging by sending all kinds of lazy customer care messages while completely mismanaging actual hands on care……shocking level of attention to detail and almost impossible to get an audience with a doctor (especially one that is acquainted with your health care records.)
+Practice response date: 9 months ago
+Practice response:
+Good Afternoon, Thank you for your feedback. We are sorry to hear you are unhappy with the service received. Your concerns have been raised with the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Ammarah Mir
 Date: 11 months ago
 Rating: 1 star
 One of the most useless practice ever!! They don’t pick up the phone .. I kept on ringing them for almost half an hour. I was “caller number one” & yet waited for like roughly around 20 min and they were not bothered to pick up the phone. #themostrubbishserviceever!!
+Practice response date: 10 months ago
+Practice response:
+Good Morning, Thank you for your feedback. We are sorry to hear you are unhappy with the service received and your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Angela
 Date: Edited 11 months ago
 Rating: 1 star
 Doctors are great! However, even though you constantly ring from surgery opening, it is not guaranteed you'll get through! Then when you eventually get answered an hour later, appointments have all gone! Doesn't matter that you're ill, you can't have one, until next week or wait to go through same process all again over again! The old system was so much better! 4 years on from this review, the surgery has become, not fit for service. I received a text, to make urgent appointment, so I ring, and no appointments available. Ring following morning, as soon as phone lines open, and told I'm 20th in the queue to speak to receptionist. Yeah, right! Not only, have I waited for 2 months for results, I can't get an appointment. I was told at one point, they were delayed, and they would only contact me, if they showed something. I have no faith in any of them, anymore! Even the consultants at the hospital, roll their eyes, at the mention of this surgery, now! It used to be, one of the best. Now it is probably the worst. An update 24th March 2025. Gordon street medical centre is now, no longer taking appointments over the phone or over the reception desk. Told to access on line, by text, with no clear instructions on how? I'm certain there'll be unnecessary deaths, through this total lack of care, and receptionist has put the phone down on me, just for asking her name. My husband has physically approached reception, and has come home with zero help. I will be making official complaint!
+Practice response date: 11 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: S M Harrison
-Date: 11 months ago
+Date: a year ago
 Rating: 1 star
 Appalling treatment of patients. Patients who had appointments booked are not being transferred onto a new system, but dumped and told to ring the surgery next week in the usual 8am lottery. Having transferred many patients into new systems over the years, the patients already booked should be migrated over, not abandoned. Disgraceful.
+Practice response date: 11 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Adam Tomkow
-Date: 11 months ago
+Date: a year ago
 Rating: 1 star
 I have never been able to get an appointment. I get told “why not just go to the walk-in centre at Tameside Hospital” 3 hours waiting at Tameside Hospital for a 30 second chat with the DR, I was told I shouldn’t have come here as I need blood tests. Phoned Gordon Street Medical Centre the day after to be told there’s no appointments and try again tomorrow. Also advised not to go down in person at 8am either. My appointment is “routine” and I am happy to have an appointment in 1 weeks time, 1 months time, 6 months time... What a broken system. Tameside hospital advised me to phone 111 if my local GP doesn’t help. Seems extreme and a waste of peoples time who are dealing with emergencies.
+Practice response date: 11 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Ahad Abdul
-Date: 11 months ago
+Date: a year ago
 Rating: 1 star
-Ahad Abdul1 review11 months ago
+Ahad Abdul1 reviewa year ago
 
 Author: Klaudia Cooney
 Date: a year ago
 Rating: 1 star
 Worse practice by far, cannot ever get an appointment and only thing they ever say is to go to walk in. Managed to get seen once in last 3 years which tells you a lot. Infection in foot and can't walk- go to walk in, chest infection and need antibiotics- go to walk in, pregnant and need to get chest checked out you guessed it- go to walk it. I honestly don't even know why I bother phoning. You can phone bang on 8:00 still be number 40+ in a queue, wait for about hour to be told there is no appointments! Absolutely shocking and all you get asked is why can't you go to walk in ? Because I got advised not to as to not spread and pick up any more germs (high risk pregnancy but who cares the practice certainly does not) Practice is literally 2 min away from my house and I couldn't even tell you what it looks like 🙃
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Danish Mumtaz Mirza
 Date: a year ago
 Rating: 1 star
 I had a very disappointing experience with this surgery. I called to book an appointment for my 3-year-old daughter, and the lady who answered the phone was extremely unprofessional. She was dismissive, impatient, and made me feel as though my concerns were not important. I expect a certain level of courtesy and empathy when dealing with a healthcare provider, especially when it involves children. I understand that surgeries can be busy, but there is no excuse for such poor behavior towards patients or their families. I would not recommend this surgery based on the lack of respect and customer service I received.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Peter Saunders
 Date: a year ago
 Rating: 1 star
 Absolutely shocking but looking at other reviews they clearly don't care. Almost impossible to get an appointment and reception staff that are obstructive and deny the conversations that they have had with you. Was promised a call from the GP at 10 am to discuss test results that had been with him for 2 weeks - apparently that was the earliest that he could spare 5 minutes on the phone - but no surprise the call didn't come. I called in and was told that I would be called before 1pm and even though I was definitely speaking with the person who promised 10am., she denied it. I've wasted hours of time with this practice, taking time off work simply to spend hours trying to make appointments and get results but they don't appreciate that people work.I still dont know whats wrong with me yet they have sent a prescriptionto the pharmacy without me knowing what it is for..the caring profession? Yeh, right. Useless
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: dale garbutt
 Date: a year ago
 Rating: 1 star
 Reception have an awful attitude problem. I’m diabetic and need regular check ups, can never get one and they don’t allow me to book in advance. When I finally get to do my tests the feedback I get is awful. Really poorly trained staff and no specialists since Julie left. Asked for a letter confirming I am fit enough to exercise for my insurance and they told me it will take over a month just to send an email
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Aysha Jamil
 Date: a year ago
@@ -141,6 +229,11 @@ Author: Nadia
 Date: a year ago
 Rating: 1 star
 Read the reviews before signing up to this GP. Absolute shambles can never get an appointment. I wish I could rate them a 0.
+
+Author: Julie Woodward
+Date: a year ago
+Rating: 1 star
+Extremely poor service, over the past 2 years at this Drs. It has gone down hill massively. Constantly short staffed, reception staff are not very helpful and lack training.
 
 Author: Nyxly Nyx
 Date: Edited a year ago
@@ -192,11 +285,6 @@ Date: 2 years ago
 Rating: 1 star
 Never get appointments, just ringing and then they put the phone down when you get though….
 
-Author: Sandra Bradshaw
-Date: 2 years ago
-Rating: 1 star
-Worst doctors surgery I’ve ever had the misfortune of being a part of!! Had a doctors appointment a month ago (11th august)to discuss the results of an ultrasound supposedly been referred for further treatment but who knows if this has even been done because it strike me no one in this shambolic place knows what they are doing!! Had notification 3 weeks ago of a telephone consultation today( 11th September) regarding my ultrasound me thinking it’s the next process of my referral . But no it’s the exact same conversation I had with a doctor A MONTH AGO!! UNBELIEVABLE!! Can’t wait for a transfer to be processed!! Only gets worse this surgery never better. Doesn’t even deserve a 1 star!!
-
 Author: darren lowe
 Date: 2 years ago
 Rating: 1 star
@@ -213,7 +301,7 @@ Rating: 1 star
 Always full, liars!
 
 Author: Hena Hussain
-Date: 2 years ago
+Date: 3 years ago
 Rating: 1 star
 This is the worst medical practice ever!! My husband has had a severe problem for a MONTH. He went to give samples in and they still haven’t got back to him as they claim they have the results but a doctor needs to give them to him. How is a doctor supposed to give it to him when appointments are booked for the next two weeks!!! He’s in severe pain and waiting makes us more anxious it will lead to further problems frown the line .They could at least give the results and put our minds at ease. We’ve been waiting a month for an appointment ringing every morning at 8am and the through tour the day with no availability. It’s utterly a joke. They have no basic concern or care for human beings and should be held accountable !!! Very upset by this service
 
@@ -383,7 +471,7 @@ Rating: 2 stars
 The doctors are very good and friendly. However im not a fan of how the place is run. Struggle To get appointments, mainly due to the same type of people making appointments and abusing the NHS.
 
 Author: BY66NAZ
-Date: 7 years ago
+Date: 8 years ago
 Rating: 1 star
 Dr’s are okay, but receptionists are not okay rude not mannered at all. Should give no stars but I’ll give 1 for Dr
 
@@ -421,8 +509,3 @@ Author: gkawuma1205
 Date: 10 years ago
 Rating: 5 stars
 gkawuma12051 review10 years ago
-
-Author: Garry Newberry
-Date: 11 years ago
-Rating: 1 star
-On 11 March I telephoned 47 times in 45 minutes before I finally got through! Quicker to go to A&E.

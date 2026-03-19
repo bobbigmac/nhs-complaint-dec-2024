@@ -4,10 +4,13 @@ Postcode: SK15 3BJ
 Google Maps title: Millbrook Medical Practice
 Google rating: 2.7
 Google review count: 39
-Google Maps URL: https://www.google.com/maps/place/Millbrook+Medical+Practice/@53.4923116,-2.0343418,17z/data=!4m8!3m7!1s0x487bc9c8b0f4e34b:0xf55c0d88b78c7a9b!8m2!3d53.4923116!4d-2.0343418!9m1!1b1!16s%2Fg%2F11bzsxh62l?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Millbrook+Medical+Practice/@53.4923148,-2.0369221,17z/data=!4m8!3m7!1s0x487bc9c8b0f4e34b:0xf55c0d88b78c7a9b!8m2!3d53.4923116!4d-2.0343418!9m1!1b1!16s%2Fg%2F11bzsxh62l?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
 Review collection mode: full_feed
-Review cards collected: 38
+Review cards collected: 39
+Owner replies collected: 0
+Raw review responses captured: 4
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y02936-millbrook-medical-practice.json
 
 Captured reviews
 ================
@@ -53,7 +56,7 @@ Rating: 5 stars
 Brilliant receptionist, so helpful. Thank you
 
 Author: Rory Darby
-Date: a year ago
+Date: 2 years ago
 Rating: 1 star
 Been registered here since shortly after it opening and have seen a rapid decline in pretty much everything to do with the place. Constantly on hold, being first in the queue for 20 minutes plus and nothing, prescriptions never getting sent and cancellations all the time. Will be glad to be changing surgery 🙏🏻 …
 
@@ -66,6 +69,11 @@ Author: Michael Frimston
 Date: 2 years ago
 Rating: 5 stars
 Always helpful. They constantly send me information for routine checks.
+
+Author: Matt brown
+Date: 2 years ago
+Rating: 5 stars
+Good practice would highly recommend there always there to help !!
 
 Author: Nic F
 Date: 2 years ago
@@ -200,4 +208,4 @@ Mick Ash9 years ago
 Author: Munaf Habeeb
 Date: 9 years ago
 Rating: 5 stars
-Munaf Habeeb3 reviews9 years ago
+Munaf Habeeb4 reviews9 years ago

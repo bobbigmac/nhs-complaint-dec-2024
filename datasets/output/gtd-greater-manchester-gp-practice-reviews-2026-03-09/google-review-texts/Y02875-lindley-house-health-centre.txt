@@ -4,51 +4,75 @@ Postcode: OL1 1NL
 Google Maps title: Lindley Medical Practice
 Google rating: 2.1
 Google review count: 66
-Google Maps URL: https://www.google.com/maps/place/Lindley+Medical+Practice/@53.5437506,-2.1168654,17z/data=!3m1!5s0x487bb77e3916bf0d:0x93f66a947f64144a!4m8!3m7!1s0x487bb77e6d5f7eaf:0x761d2e16913ca806!8m2!3d53.5437506!4d-2.1168654!9m1!1b1!16s%2Fg%2F1x5qsb8f?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Lindley+Medical+Practice/@53.5437538,-2.1194457,17z/data=!3m1!5s0x487bb77e3916bf0d:0x93f66a947f64144a!4m8!3m7!1s0x487bb77e6d5f7eaf:0x761d2e16913ca806!8m2!3d53.5437506!4d-2.1168654!9m1!1b1!16s%2Fg%2F1x5qsb8f?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
 Review collection mode: full_feed
 Review cards collected: 66
+Owner replies collected: 13
+Raw review responses captured: 7
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y02875-lindley-house-health-centre.json
 
 Captured reviews
 ================
 
 Author: Ruth Adeoti (Book of Ruth)
-Date: 2 weeks ago
+Date: 3 weeks ago
 Rating: 1 star
 Bad experience
+Practice response date: a week ago
+Practice response:
+Hi Ruth, We are sorry to hear that you have had a bad experience at the practice. As we are unable to investigate individual concerns through Google reviews, we would encourage you to contact the practice and ask to speak with the Practice Manager, or alternatively contact our Patient Services team via gtd.feedback@nhs.net or 0161 337 2254 so the matter can be looked into further. Kind regards Jan Patient Services Team
 
 Author: Jaysen Blu
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 Nurse Raqia Asif Is One In A Million . The Way She Explains And Gives Advice Is Second To None . She’s Always The Brightest Smile Even On The Coldest Winter Mornings . 10/10 This Lady Is The Pinnacle Of Nursing And Am Thankful She Watches Over Us In Oldham .
+Practice response date: a month ago
+Practice response:
+Thanks for sharing your feedback. It is really lovely to read your kind words and we will pass on your thanks to Nurse Raqia. Claire Patient Service Team
 
 Author: Michael
 Date: 2 months ago
 Rating: 3 stars
 The best part of this practice is the nurses Raqia and Andrea, im a very hard patient to get blood from and Raqia has some amazing skills she manages to get me first time, both if these ladies are full of smiles and are so compassionate and helpful. The Dr's in the other hand not so great there is only 1 that listens sadly i xant remember her name butthe rest honestly dont listen and dismiss most things you say
+Practice response date: a month ago
+Practice response:
+Hi Michael, Thank you for your feedback. It's great to hear you have had such a good experience with the nurses and we will share your comments with them. We are sorry to hear about your concerns with the doctors. This isn’t how we would want patients to feel and we would encourage you to contact either the practice directly and speak to a manager, alternatively contact our patient services team either by email gtd.feedback@nhs.net or telephone on 0161 337 2254, so we can review your individual concerns. Claire Patient Service Team
 
 Author: Hasna Begum
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
 Today my 11 year old had her first blood test. she was extremely scared and got so worked up with tears running down. Miss Raqia Asif was ever so polite, bubbly, kind and professional with excellent communication received my daughter felt brave and positive to take the blood test without the magic cream. Thankyou so much.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your lovely feedback. It's really good to hear you have received great service. I will ensure your comments are passed on to the staff involved in your daughter's care.
 
 Author: Sayek
 Date: 3 months ago
 Rating: 5 stars
 Honestly it’s a great service from FATEMA, Really Appreciate ✊
+Practice response date: 3 months ago
+Practice response:
+Thank you for your lovely feedback. It's really good to hear you have received a great service. We appreciate you taking time to give feedback and value your comments.
 
 Author: Mansor Miah
 Date: 3 months ago
 Rating: 5 stars
 Lindley Medical Practice is well organised blood test center. Punctuality and professionalism are fantastic. Recommended.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your lovely feedback. It's good to hear you have received a great service. We appreciate you taking time to give feedback and value your comments.
 
 Author: Valerie Thompson
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 Raqia has always been very kind, caring and professional during my visits to the practice. Thank you.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your lovely feedback. It's really good to hear you have received great service. We appreciate you taking time to give feedback and value your comments.
 
 Author: Karen Zehlin
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 It always a pleasure to go to this practice. All the staff are friendly and helpful. Just had my flu jab today, but the lovely nurse always has time to make me feel comfortable. Thank you all.
 
@@ -61,31 +85,49 @@ Author: M S
 Date: Edited 5 months ago
 Rating: 2 stars
 Honestly, just a disappointment.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Sirwan Fatah
 Date: 6 months ago
 Rating: 1 star
 This is the worst staff I have ever dealt with. All I needed was a simple proof of address, yet I have been waiting over 7 weeks. I’ve already filled in the same form three times, and today they told me to fill out another one and wait another 4 weeks! I am sure they will never give me a proper answer. The real question is: why are they unable to complete a 5-minute job in almost 7 months?
+Practice response date: 6 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Maurice Lowe
 Date: 8 months ago
 Rating: 1 star
 Went to see nurse about blood pressure I asked if she could get a splinter out of my finger behind the nail. Came back no equipment need A +E for a bloody splinter Lindley medical centre absolutely rubbish terrible place no help what so ever. Anyone who wants to join don't they can't be bothered with to help and I was in pain. Thanks for nothing now I'm left in agony what a terrible thing to do all they think about is their pay not patients welfare
+Practice response date: 8 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your concerns have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Bilal
-Date: 10 months ago
+Date: 11 months ago
 Rating: 5 stars
 Yesterday I saw a doctor named ben Hamida she was absolutely fantastic she reviewed everything about my blood test and took it further and sorted all my medication amazing doctor
+Practice response date: 10 months ago
+Practice response:
+Good Morning, Thank you for your lovely feedback. It's really good to hear you have received a great service. I will certainly share your comments with the doctor.
 
 Author: Amar Aslam
-Date: 11 months ago
+Date: a year ago
 Rating: 1 star
 Took my son in who is 10 years of age.seen Lisa.the nurse for his asthma.she was not a asthma nurse.but was booked in for one. Past 4 days he's been waking in the middle of the night.saying he has difficulty breathing panicing running around crying.he could have a asthma attack. he's under a nurse in Royton wellbeing centre.because of severe asthma.hes on a action plan.the nurse did not give me anything.for him even thought she said his nose and throat is clogged.and was coughing.the coughing makes it difficult breathing.she said if it get worse I should give him 10 puffs and take him to A&E.i told her we are here to avoid.the situation.to go A&E. She di not give me anything.i don't understand.the schools the government everyone does.not care about our children anymore but the first ones to complain about.a single absence.the worst clinic.i am looking for a new clinic for the safety of my.child.
+Practice response date: 11 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: S Miah
 Date: a year ago
 Rating: 1 star
 We called at 8am in the morning for an appointment for my son with Dr Lisa Egerton. My son has eczema but she said to me she can’t prescribe any more, she said i need to buy medicine from the pharmacy. I saw all the other doctors they were all fantastic except for her.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service received. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Gillian Ragg
 Date: a year ago
@@ -243,7 +285,7 @@ Rating: 3 stars
 Raza .s873 reviews4 years ago
 
 Author: abul hussain
-Date: 4 years ago
+Date: 5 years ago
 Rating: 4 stars
 Decent place. Receptionists are okay apart from this one female. All the Doctors/GP’s and Advanced practitioners are great too apart from Dr Benhamida who unfortunately is the lead GP but can’t seem to lead anything.
 
@@ -293,7 +335,7 @@ Rating: 5 stars
 Been with them two years now, dr is very thorough when investigating what is wrong with you, fantastic with my children and their nurse is the best taking blood!
 
 Author: Ahmed Uddin
-Date: 6 years ago
+Date: 7 years ago
 Rating: 1 star
 I’m actually appalled by the appointment system!! The next available appoint is 1 month away, unless it’s an emergency I’ll have to call at 8am. But my appointment isn’t due to an emergency but I’d like to see my doctor without waiting a damn month!! Its awful. I’m looking into changing my gp, I would not recommend this gp practice, if I could give it a zero I certainly would have!!!
 
