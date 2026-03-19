@@ -4,11 +4,16 @@ Postcode: M28 3EZ
 Google Maps title: Oakbank Medical Centre
 Google rating: 3.7
 Google review count: 6
-Google Maps URL: https://www.google.com/maps/place/Oakbank+Medical+Centre/@53.5248523,-2.3986372,17z/data=!4m8!3m7!1s0x487ba9a3cc5eb9b7:0x33c80e1844761989!8m2!3d53.5248523!4d-2.3986372!9m1!1b1!16s%2Fg%2F11v0s34ld7?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Oakbank+Medical+Centre/@53.5248523,-2.4012175,17z/data=!4m8!3m7!1s0x487ba9a3cc5eb9b7:0x33c80e1844761989!8m2!3d53.5248523!4d-2.3986372!9m1!1b1!16s%2Fg%2F11v0s34ld7?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 6
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87028001-oakbank-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Messi Messi
 Date: a month ago

@@ -3,22 +3,37 @@ Canonical code: P92020
 Postcode: M29 7BS
 Google Maps title: Dr Sivakumar & Dr Gude's Surgery
 Google rating: 4.1
-Google review count: 25
-Google Maps URL: https://www.google.com/maps/place/Dr+Sivakumar+%26+Dr+Gude's+Surgery/@53.5008666,-2.456025,17z/data=!4m8!3m7!1s0x487ba834224ac151:0x79eaf3e62296466d!8m2!3d53.5008666!4d-2.456025!9m1!1b1!16s%2Fg%2F1yh9ttxg3?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 26
+Google Maps URL: https://www.google.com/maps/place/Dr+Sivakumar+%26+Dr+Gude's+Surgery/@53.5008666,-2.4586053,17z/data=!4m8!3m7!1s0x487ba834224ac151:0x79eaf3e62296466d!8m2!3d53.5008666!4d-2.456025!9m1!1b1!16s%2Fg%2F1yh9ttxg3?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.333
+Review collection mode: full_feed
+Review cards collected: 26
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P92020-sivakumar-and-partner.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: yvonne rowley
+Date: 3 hours ago
+Rating: 5 stars
+They are excellent!from reception right through to drs!!thank you
 
 Author: Sanaz Mirzaloo
-Date: 9 hours ago
+Date: a week ago
 Rating: 1 star
 Receptionist very rude twice in person, switched to this practice as I moved but the receptionist has no manners and didn’t seem to want to help with anything
 
 Author: Adele Young
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
-Adele Young1 review2 months ago
+Adele Young1 review3 months ago
+
+Author: Sam Peacock
+Date: 8 months ago
+Rating: 5 stars
+A brilliant Drs surgery
 
 Author: VEHICLE SELECT
 Date: a year ago
@@ -59,3 +74,73 @@ Author: Sherene Southern
 Date: 2 years ago
 Rating: 5 stars
 Sherene Southern2 years ago
+
+Author: Elle Stevens
+Date: 3 years ago
+Rating: 5 stars
+Alison Rutger was absolutely wonderful. I am needle and blood phobic and she really put me at ease. Her experience definitely shows. Thankyou Alison
+
+Author: SY Selçuk
+Date: 3 years ago
+Rating: 5 stars
+Dr Ahmad is the most genuinely helpful, supportive and kind doctor I've ever seen.
+
+Author: Laura gilleeney
+Date: 3 years ago
+Rating: 5 stars
+Laura gilleeney3 years ago
+
+Author: Rach Robo
+Date: 3 years ago
+Rating: 5 stars
+Lovely receptionist, go on ask my gp with a couple of hrs called appointment made or medication give, fantastic doctors.
+
+Author: Ashleigh Wilson
+Date: 3 years ago
+Rating: 5 stars
+Fantastic GP surgery. Easy to get through to them and they are great at listening and providing care and support.
+
+Author: Ian Calderbank
+Date: 3 years ago
+Rating: 1 star
+Ian Calderbank4 reviews3 years ago
+
+Author: cushion couture
+Date: 4 years ago
+Rating: 5 stars
+cushion couture10 reviews · 6 photos4 years ago
+
+Author: Geoff Walters
+Date: 4 years ago
+Rating: 5 stars
+I've been at Dr Sivakumar and Dr Gudes surgery for approximately two years now. I must say that this is the best surgery that I have ever been with. All the Doctors, the receptionists and the nurses are all very professional but most of all are friendly and put you at ease. I would recommend them highly.
+
+Author: david roberts
+Date: 6 years ago
+Rating: 1 star
+Very poor doctor. Dr Gude especially doesn’t seem interested in his patients at all.
+
+Author: Mrs W
+Date: 7 years ago
+Rating: 5 stars
+Fantastic Doctors surgery. The best I have been registered at yet. Appointments readily available when you need them.
+
+Author: Lindsay smith
+Date: 7 years ago
+Rating: 5 stars
+Lindsay smithLocal Guide · 32 reviews · 32 photos7 years ago
+
+Author: Dave1815
+Date: 8 years ago
+Rating: 1 star
+Dave18152 reviews8 years ago
+
+Author: maureen purcell
+Date: 8 years ago
+Rating: 5 stars
+maureen purcell3 reviews8 years ago
+
+Author: Chris Lewis
+Date: 11 years ago
+Rating: 2 stars
+Wasn't happy being a patient here. Never got to see the same GP twice, always someone new who didn't know me. Never felt that my care was a priority, don't think I was given the best care or advice. Reception is usually engaged, no option to leave a message, takes many calls to get through. Reception is plastered with notices telling you why you should go elsewhere for medical advice, that make you feel unwelcome for bothering them. Not the most convenient opening hours for working people. Long waits when you have an appointment, give you time to read the notices telling you how important it is to be on time. Website it out of date, advises people to call NHS Direct which closed down months ago.
