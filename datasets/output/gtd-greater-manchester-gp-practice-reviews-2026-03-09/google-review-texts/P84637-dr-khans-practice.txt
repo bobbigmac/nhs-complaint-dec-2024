@@ -4,46 +4,72 @@ Postcode: M11 4EJ
 Google Maps title: Dr Khans Practice
 Google rating: 4.3
 Google review count: 20
-Google Maps URL: https://www.google.com/maps/place/Dr+Khans+Practice/@53.4843751,-2.1841963,17z/data=!4m8!3m7!1s0x487bb13ddf2ba4e9:0xd7ac004e5b4b363b!8m2!3d53.4843751!4d-2.1841963!9m1!1b1!16s%2Fg%2F1xb2d39v?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+Khans+Practice/@53.4843783,-2.1867766,17z/data=!4m8!3m7!1s0x487bb13ddf2ba4e9:0xd7ac004e5b4b363b!8m2!3d53.4843751!4d-2.1841963!9m1!1b1!16s%2Fg%2F1xb2d39v?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 20
+Owner replies collected: 7
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84637-dr-khans-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Christiana Nnadieto
 Date: a month ago
 Rating: 3 stars
 New to the practice, nurse Kiran Nadeem was running late due to an emergency. However, she was professional, pleasant and very much kind ...
+Practice response date: a month ago
+Practice response:
+Thank you so much for your kind feedback. We truly appreciate your understanding regarding the delay, as patient emergencies can occasionally arise. We are delighted to hear that Nurse provided professional, pleasant, and compassionate care—your comments will be shared with her and the team. Thank you for choosing our practice; we look forward to supporting your care in the future.
 
 Author: benna gomes
 Date: a month ago
 Rating: 1 star
-I am very disappointed with the way I was treated by a receptionist at this practice. …
+I am very disappointed with the way I was treated by a receptionist at this practice. I called regarding a prescription for my child, who has a longterm illness, as their medication was running low. During the call, I was unwell and struggling to remember the exact medication name, which is recorded on his medical file. Instead of receiving help, I was spoken to in a dismissive and impatient manner. My concerns about not understanding the prescription process were brushed off with comments such as “we’ve never had any concerns” and “no one has ever complained,” which did nothing to resolve the issue. Most concerning of all, the receptionist ended the call abruptly by hanging up on me. This was not just poor customer service, it was inappropriate given the seriousness of the situation and the vulnerability of patients contacting a GP practice. Parents calling about essential medication for a child with a long-term condition should be treated with basic professionalism and respect. I hope the practice reviews how front-desk staff handle patients, particularly in situations involving chronic illness and medication safety.
+Practice response date: a month ago
+Practice response:
+Thank you for your feedback. We are sorry to hear about your experience and the distress this caused. We aim to treat all patients with courtesy and respect, and we take concerns about communication seriously. Feedback such as this helps us review our processes and staff training to ensure our standards are maintained. Thank you for bringing this to our attention.
 
 Author: Dempsey Me
 Date: 3 months ago
 Rating: 5 stars
 Absolutely the best GP surgery experience ever! The front office team, the nurse, and Dr. Khan are all incredible.
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your wonderful feedback! We’re delighted to hear that our front office team, nurse, and Dr. Khan were able to provide you with such a positive experience. We truly appreciate you taking the time to share your thoughts and look forward to continuing to support your care.
 
 Author: Angel Adesina
 Date: 3 months ago
 Rating: 5 stars
-Best doctor in the whole of the Manchester region, he has immense knowledge and experience (a General practitioner that is also an A&E doctor). I have been with the surgery since I was 14years old & it’s been nothing but a great experience. …
+Best doctor in the whole of the Manchester region, he has immense knowledge and experience (a General practitioner that is also an A&E doctor). I have been with the surgery since I was 14years old & it’s been nothing but a great experience. He always knows what to say and how to treat you. Massive appreciation for Pipir Khan. Thank you team.
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your kind and thoughtful message. Dr. Khan and the entire team are delighted to know that you’ve consistently felt supported, listened to, and well cared for. Your appreciation and encouragement truly motivate us to keep delivering the best care we can. Thank you again for taking the time to share your experience.
 
 Author: Stewart
 Date: 8 months ago
 Rating: 5 stars
-Over the years I have suffered from several serious health issues including Heart failure, Doctor Khan and the entire team have been wonderful, They have definitely helped maximise my Quality of life,, …
+Over the years I have suffered from several serious health issues including Heart failure, Doctor Khan and the entire team have been wonderful, They have definitely helped maximise my Quality of life,, You can tell how much everyone cares,, I consider myself so lucky to have such a wonderful health care support team,
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your kind words and trust in our team. We are truly grateful to be part of your healthcare journey and delighted to know that our care has made a positive difference in your quality of life. Your appreciation means the world to Dr. Khan and all of us.
 
 Author: HANIZ
 Date: 9 months ago
 Rating: 5 stars
 Great surgery. Dr Khan is awesome
+Practice response date: 4 months ago
+Practice response:
+Thank you for your lovely feedback. We are so glad to hear you have had a great experience and that Dr. Khan made a positive impression. Your support means a lot to our team.
 
 Author: Meddi
-Date: 11 months ago
+Date: a year ago
 Rating: 5 stars
 I have moved my house and practice. At Dr khan surgery, they have “Very caring, compassionate doctor who went out of his way to get me treatment. My experience this time was very good and nothing could have been done better”. Specially Dr Pipir Khan, he is the doctor.
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your thoughtful review. We are delighted to hear that you had such a positive experience with Dr. Khan and the team. Providing compassionate, thorough care is always our priority, and your kind words mean a great deal to us.
 
 Author: Fadi PCM
 Date: a year ago
@@ -58,4 +84,54 @@ Excellent practice. From secretary's to nurse's especially Dr Khan...nothing is 
 Author: A S
 Date: a year ago
 Rating: 5 stars
-A S Local Guide · 66 reviews       a year ago
+A SLocal Guide · 66 reviewsa year ago
+
+Author: Tania uguri
+Date: Edited 2 years ago
+Rating: 4 stars
+Tania uguriEdited 2 years ago
+
+Author: Liam Stuckey
+Date: 2 years ago
+Rating: 5 stars
+I've always had a positive experience with Dr. Khan, considering how the NHS has been treated for the last 13 years its a miracle Dr Khan and the staff have managed to keep such a professional and well functioning practice going! Dr. Khan always ensures you are involved in the treatment process, gives solid advice and is clearly a very skilled and compassionate doctor.
+
+Author: Darren Walker
+Date: Edited 2 years ago
+Rating: 1 star
+I have found medical information that Dr khan has put on a report. 19th March 2022. With missing information to cover up scoliosis. Also other doctors have tried to cover up with missing information on diagnosis sheets. I've been miss diagnosed a serious health condition. Scoliosis is just part of it. Dr khan has tried covering it up and I've given the information to parliament. Next is court action along with other Gp doctors trying to kill me. I have proof of that to. Tameside Hospital have tried killing me as well. I can't believe that this doctor has done this to me. I have the x Ray and MRI report that Dr khan looked at. Then missed it completely to cover up a serious health condition. Hyde Brooke Surgery gave naproxen which would of been fatal with crohns, ulster's and Crohn's flair up. . Tameside Hospital gave Gabapentin with COPD and is also fatal. GPS won't let me have tests done. Absolutely disgusting. Got him red handed.
+
+Author: Bill Washington
+Date: 2 years ago
+Rating: 4 stars
+I would recommend this place as a soothing environment for costumers
+
+Author: col caine
+Date: 3 years ago
+Rating: 5 stars
+col caine1 review3 years ago
+
+Author: William Smith
+Date: 3 years ago
+Rating: 5 stars
+Dr Kahn is the best doctor in a 5 mile radius by a long shot. He's understanding caring and compassionate, he always involves you in your care and takes the time to explain everything to you. The secretaries are great, I was recommended this practice by another patient and it was the best move I ever made. I can't speak highly enough of Dr Khan what a great human and being and Doctor. He's an absolute credit to the proffesion and other doctors should learn from him.
+
+Author: Mark Donnelly
+Date: 3 years ago
+Rating: 4 stars
+Receptionist are pretty good 2bf seems to be major issue most places but they are always polite and actually take on board what you are saying... Dr kah and his nurse are great managed to get things done in couple of months that I'd not managed to do in 2 or 3 years at eastlands medical practice thank you
+
+Author: Stewart Wilson
+Date: 4 years ago
+Rating: 5 stars
+Amazing team who have definitely maintained my quality of life during my poor health. Wonderful and caring.
+
+Author: Dai Barfoot
+Date: 6 years ago
+Rating: 5 stars
+Dr.khan excellent Dr. His secartarys and nurse's allso excellent..Dr khan as always got me answers to my problems were salford couldn't. The khan practice help me stop smoking I understand people's frustration when they cant get appointments it's not the Drs fault some people fail allso government cuts. Please believe me Dr piper khan is best practice in there. He will help anyone and does all he can for patients my opinion 110% excellent Dr andpractice
+
+Author: cho Kids
+Date: 7 years ago
+Rating: 3 stars
+Can never get an appointment it’s actually a joke!!! Got to book months in advance joke seiriously. Can never get threw on the phone at Half past then no appointments left place is a joke..

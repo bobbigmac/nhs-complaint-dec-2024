@@ -4,11 +4,16 @@ Postcode: M14 6SQ
 Google Maps title: Mauldeth Medical Centre
 Google rating: 2.8
 Google review count: 39
-Google Maps URL: https://www.google.com/maps/place/Mauldeth+Medical+Centre/@53.4350226,-2.2136878,17z/data=!4m8!3m7!1s0x487bb235f5940d39:0x61f4d47b1e37872d!8m2!3d53.4350226!4d-2.2136878!9m1!1b1!16s%2Fg%2F1pxq5lhq8?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Mauldeth+Medical+Centre/@53.4350258,-2.2162681,17z/data=!4m8!3m7!1s0x487bb235f5940d39:0x61f4d47b1e37872d!8m2!3d53.4350226!4d-2.2136878!9m1!1b1!16s%2Fg%2F1pxq5lhq8?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 39
+Owner replies collected: 0
+Raw review responses captured: 4
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84018-mauldeth-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: S H
 Date: 8 months ago
@@ -59,3 +64,148 @@ Author: Nicolas Berman
 Date: Edited a year ago
 Rating: 1 star
 Awful experience - 6 months of issues. My cousin studying to be a doctor was able to diagnose me better.
+
+Author: Grace Aquah
+Date: a year ago
+Rating: 1 star
+This has been the worse service ever! Whenever I call to book an appointment, it’s always in 3 - 4 weeks time and it’s a telephone appointment. The last one I had, the doctor ended the call on my halfway through my complaints and even the referral he promised, has not been made yet. It’s almost 3 months now. The centre should be looked into and probably more doctors added.
+
+Author: Ahmed Khan
+Date: a year ago
+Rating: 4 stars
+Ahmed Khan8 reviews · 1 photoa year ago
+
+Author: anthony baker
+Date: a year ago
+Rating: 1 star
+My girlfriend who's pregnant been coughing and being sick she finally got an appointments to see the nurse she's gose to her appointment just to be turn away because the nurse doesn't deal with pregnant women I'm not happy first the doctor told her she can't take her 1 year old I was out with my 2 year old at her play group I'm leaving a one star because the service is terrible and they do. Not look after there patients needs I will be changing are doctors after today they are useless they need to be shut down for good
+
+Author: Life with Khans
+Date: 2 years ago
+Rating: 1 star
+Extremely poor service. I had telephone appointment booked for today 5th March 2024. I 100% booked for Today and even booked it in my work diary. However, I called the practice today and the lady in reception said GP is running late by 15 min on calls and will call me shortly. Another 15min go by. I call the practice and the same lady said I don’t have an appointment booked. It’s booked for the 15th March 2024. Its one thing, you people have changed the appointment without confirming with me. However, to clearly lie to me over the phone and make me feel that I got the dates wrong is disgusting. Don’t lie to cover your tracks. Just own up to your mistakes. I’m not sure if I wanna use this practice going forward.
+
+Author: Elise Clark
+Date: 2 years ago
+Rating: 5 stars
+Been with this GPs the whole time I was at university and would recommend. Nurses, doctors and reception staff have always been friendly and professional. Never had too much trouble getting an appointment and felt like my concerns have been listened to and taken seriously.
+
+Author: Hank Bell
+Date: 2 years ago
+Rating: 1 star
+Truly awful GP
+
+Author: tina byrne
+Date: 2 years ago
+Rating: 5 stars
+The reception desk has always tried to help. Sometimes i have had to use walkin centre as appointments are not available. There are 2 doctors and a nurse i fully understand that there is only so many hours in the day and that they cant see everyone. I am not the only person in the world that needs to see a doctor. Thank you to both doctors who have seen my family and to all the reception staff who try to accommodate each booking.
+
+Author: Tim Harvey
+Date: 3 years ago
+Rating: 1 star
+Took 2 weeks to get an appointment about an injury to my knee. Dr didn't even look at it and just advised me to 'rest it' for two weeks and, if it wasn't better by then, call for a referral. I did precisely that 2 weeks later and heard nothing for another 2-and-a-half weeks. I chased again and it turns out I will hear back regarding my referral "by 1 December" (i.e., a month-and-a-half from now and 3 months since sustaining the injury). What a dire state the NHS is in...
+
+Author: Piotr Stelter
+Date: 4 years ago
+Rating: 1 star
+Worst GP ever. I actually consider a formal complain for lack of help,and only what they do is- visit our website etc. Seriously bad place
+
+Author: Lauren Jones
+Date: 4 years ago
+Rating: 5 stars
+Lauren Jones3 reviews4 years ago
+
+Author: Miranda Scott
+Date: Edited 4 years ago
+Rating: 5 stars
+GP is always very patient and has a good attitude, doesn't make me feel like I'm wasting his time which is refreshing! Good experience here
+
+Author: Claire
+Date: 4 years ago
+Rating: 5 stars
+I have been a patient here for 10 years, i see Dr Garson as my main Dr. He has always been wonderful and caring and listens to my problems, something previous practices haven't done. The reception staff are excellent, they all are efficient and provide excellent customer serive. Kerry is an absolute STAR, she met my most recent needs with the best service i could have hoped for, I can't thank her enough. I have seen Dr Locham too from time to time for more minor health concerns and have always been happy with his attitude and feel that he again cares about his patients. I have never been to see either Dr and felt dissapointed with the outcome. Over covid the telephone appointments have always been prompt but i do miss the personal touch that the in person appointments had, I am looking forward to getting back to face to face with them.
+
+Author: Anna Mccartain
+Date: 4 years ago
+Rating: 1 star
+Never met a doctor who cares less for the health of his patients. Doctor Locham is cynical, cold and passive aggressive. Very poor from someone who is supposed to be a 'doctor'.
+
+Author: Pi7on -
+Date: 5 years ago
+Rating: 3 stars
+I was with this medical centre for 4 years whilst I was at uni. The receptionists are great and the nurse is good. In relation to the two doctors there - Dr Garson and Dr Locham - I would say this. First, I used Dr Garson: he seems to be a competent doctor, at least this was the impression I got from a few phone appointments I had with him. However, when I had my first virtual video-appointment (due to Covid-19) he disappointed me for his lack of manners. This is because I had more than one health issue to report/get his advice on, and as soon as I finished the first one and moved to the second, he said: 'now, we will treat this issue, and once this is sorted, you can talk about the others', and when I was trying to explain that they were related, he basically closed down the video-appointment on my face (just like that!). After this, I changed my GP to Dr Locham. However, this GP also has a problem: he rushes you like he needs to catch a train ASAP! This is particularly unpleasant when you are trying to explain a difficult health issue and he interrupts you and makes you feel like you are wasting his time. So, if you have other options and do not fancy being mistreated or rushed through, maybe look elsewhere. Having said that, both seem to be knowledgeable doctors though.
+
+Author: Suzanne Curtin
+Date: 6 years ago
+Rating: 5 stars
+I have been here since i was a child there are two lovely doctors ad all the staff are amazing. The best thing about this doctors is that you get to see the same doctor
+
+Author: Linda Sam
+Date: 6 years ago
+Rating: 1 star
+Dr. Lochman is the worst GP you can have, he doest listen at all, hardly give 1 minute.
+
+Author: Sara F. de Andrade (SabiApril)
+Date: 6 years ago
+Rating: 5 stars
+Dr. Locham is a brilliant and caring GP and anyone who gets to be his patient is lucky, would strongly recommend this medical centre
+
+Author: Grace Wilkinson
+Date: 6 years ago
+Rating: 1 star
+Was with the practice for a year, they helped me with nothing despite dozens of appointments about various serious issues. Both of the doctors interrupts everything makes you feel so rushed, however one at least puts things in motion and refers you to the places you need. Not to mention one of the albeit lovely nurses there messed up my test samples and had to uncomfortably do them again TWICE. Very bad at letting you know results even though they say they will and you always have to chase up.
+
+Author: Patrick Clark
+Date: 7 years ago
+Rating: 1 star
+Patrick ClarkLocal Guide · 20 reviews7 years ago
+
+Author: Magnus Hoe
+Date: 7 years ago
+Rating: 5 stars
+Really good doctors, efficient and caring
+
+Author: Oskar Szubiak
+Date: 7 years ago
+Rating: 1 star
+Oskar SzubiakLocal Guide · 3 reviews7 years ago
+
+Author: dale lewis
+Date: 7 years ago
+Rating: 5 stars
+dale lewisLocal Guide · 77 reviews7 years ago
+
+Author: Melissa
+Date: 7 years ago
+Rating: 1 star
+Always rushed right out the room again, no answers given, they don't listen to what you have to say and no care or support given, make you feel like you are making it up.
+
+Author: Ishita Bobba
+Date: 8 years ago
+Rating: 1 star
+Ishita Bobba8 years ago
+
+Author: A Channel
+Date: 8 years ago
+Rating: 1 star
+Receptionist was remarkably nice. However, when I went to the doctor's he didn't listen to me completely and made me feel rushed and uneasy. I had written down my symptoms in full and instead of letting me explain my situation completely, he would stop me after every point, in which I only reached a few points in my symptoms list, and made me feel like he wanted to get rid of me asap. Didn't measure my blood pressure or check my heart, did not do any comprehensive evaluation to put my mind at ease. He didn't help my situation at all; offering no real advice, support that I wasn't aware of already, or medication to help ease symptoms. Now I'm going to have to go to A&E now because getting a GP appointment within the week is next to impossible and my condition is becoming unbearable in day to day life, all from a wasted and rushed appointment.
+
+Author: Alexa Thompson
+Date: 9 years ago
+Rating: 1 star
+there is literally one doctor there and he works at two surgeries. not his fault the government does suck
+
+Author: I SQ
+Date: 9 years ago
+Rating: 5 stars
+Brilliant and very kind staff and Doctors.
+
+Author: Esther H
+Date: 9 years ago
+Rating: 5 stars
+Esther H3 reviews9 years ago
+
+Author: Jonathan Bevan
+Date: 9 years ago
+Rating: 2 stars
+Not great, the service and nursing staff are good however the facilitates weren't great.

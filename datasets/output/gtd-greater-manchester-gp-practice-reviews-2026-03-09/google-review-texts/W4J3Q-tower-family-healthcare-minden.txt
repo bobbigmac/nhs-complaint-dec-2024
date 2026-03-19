@@ -3,27 +3,42 @@ Canonical code: W4J3Q
 Postcode: BL9 0NJ
 Google Maps title: Tower Family Healthcare Minden
 Google rating: 2.4
-Google review count: 86
-Google Maps URL: https://www.google.com/maps/place/Tower+Family+Healthcare+Minden/@53.5955214,-2.2886213,17z/data=!3m1!5s0x487ba4dab6a203db:0xfd843ad0108008b3!4m8!3m7!1s0x487ba4db27e3b22f:0xc0069b9aaeea9ad3!8m2!3d53.5955214!4d-2.2886213!9m1!1b1!16s%2Fg%2F1tdbkjmr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 87
+Google Maps URL: https://www.google.com/maps/place/Tower+Family+Healthcare+Minden/@53.5955246,-2.2912016,17z/data=!3m1!5s0x487ba4dab6a203db:0xfd843ad0108008b3!4m8!3m7!1s0x487ba4db27e3b22f:0xc0069b9aaeea9ad3!8m2!3d53.5955214!4d-2.2886213!9m1!1b1!16s%2Fg%2F1tdbkjmr?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 87
+Owner replies collected: 0
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/W4J3Q-tower-family-healthcare-minden.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Joyce Dutton
+Date: a week ago
+Rating: 5 stars
+Same day appointment given by polite and efficient receptionist for bith my husband and myself. Saw Vivienne Murphy who I have seen before and been very satisfied with. Very pleased again with both sympathetic professional approach. Add her humour and we came out feeling much relieved. Up to Fairfield for Xray. Again good service. Thankyou all.
+
+Author: Beatrice Gaffney
+Date: 2 weeks ago
+Rating: 5 stars
+Just been to see Dr Chadha at Minden. An excellent doctor who is polite and friendly, with an impressive depth of knowledge. He takes the time to explain everything clearly, listens carefully, and nothing is ever too much trouble. Highly recommended
 
 Author: Zohaib S
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 Poor admin staff (call centre I'm assuming?) I waited 30 minutes for what I thought was a physio appointment - only for me to enter the Dr's office - with no physio in sight!
 
 Author: Karen Unsworth
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 On going issues with my right ear, saw I nurse today and came away with nothing, didn't listen doubt if she had read my notes, an ache below the ear clicking throughout the night very moist in the morning, her advice ibuprofen or paracetamol I can't take either, I asked for otomize? she couldn't give me a prescription can't see an infection yet, it will come going by my history so thanks for nothing.
 
 Author: Don Twyford
-Date: 8 months ago
+Date: 9 months ago
 Rating: 5 stars
-Don TwyfordLocal Guide · 67 reviews · 86 photos8 months ago
+Don TwyfordLocal Guide · 67 reviews · 86 photos9 months ago
 
 Author: quackers gaming
 Date: 10 months ago
@@ -55,7 +70,382 @@ Date: a year ago
 Rating: 1 star
 One of the worst medical facilities you can see in your life. The reception staff is uncooperative. They are not qualified in customer service at all.
 
-Author: Andrew Barber
+Author: Ann Barber
 Date: a year ago
 Rating: 5 stars
 I know it's harder to get appointments these days, but I cannot speak more highly of the way I have been treated at Minden. I made an appointment because I felt under the weather. I was seen, referred to a rapid diagnostic clinic and diagnosed with a form of cancer very quickly. They have been wonderful.all I can say is they are doing what they can with the resources they have. Please put yourself in the staff's position...would you want to be treated as badly as they get treated, it's NOT their fault.
+
+Author: Hugo McKellor
+Date: a year ago
+Rating: 5 stars
+I’m surprised at the bad reviews, I’ve never struggled to reach them or make an appointment ever. The staff warm and welcoming, definitely an asset to this GP practice. I would say this is the best practice in Bury as their care and value is a reflection of their hard work and efforts.
+
+Author: Koko Margo
+Date: a year ago
+Rating: 1 star
+Had to make an emergency telephone appointment, as a face to face would take a month to arrange. Never got the call. Called them twice to confirm I'm still on the nurses call list which they said I was, mind you these confirmation calls took around an hour to get through. Called in the next day, only to have the phone hung up on me. I wasn't even rude, I was literally enquiring why I didn't get the call. I don't know if the operator didn't want to chase it up or if it was an actual accident but when I called back a second later, and I was 62nd in the queue. changing my GP, what's the point of having one if I can't even use it.
+
+Author: Allegra Bosnjak
+Date: a year ago
+Rating: 5 stars
+Had a really great experience this week. The man at the reception (dark hair, not sure of his name) was absolutely brilliant, as well as the nurse I spoke to regarding my travel vaccinations (Lorraine). Thank you!
+
+Author: Hayley Mottershead
+Date: a year ago
+Rating: 5 stars
+Hayley MottersheadLocal Guide · 9 reviews · 2 photosa year ago
+
+Author: Danuta Polomska
+Date: a year ago
+Rating: 1 star
+I can make 0 stars if it possible . Very poor practises , immposible to ring , Im waiting today more than one hour and still missed phone . IM here only for my amazing doctor, everyone else is rubbish
+
+Author: Christine Turner
+Date: 2 years ago
+Rating: 1 star
+Just trying the get in touch and speak to someone gives me stress
+
+Author: Zoe Briscoe
+Date: 2 years ago
+Rating: 1 star
+Been with these drs for a while now, they’re never any help. I have really bad mental health and I’m constantly fighting a loosing battle with them. They constantly shut me down and never help.
+
+Author: ella rose xx
+Date: 2 years ago
+Rating: 1 star
+wish i could rate it 0 the worst doctors i’ve ever known. been in pain everyday for so so long now and it’s impossible to get an appointment. i join the queue for a call back and as soon as i answer the phone gets out down on me, not everyone has time to make an appointment in person so im basically just left to suffer while i pay taxes for this absolutey awful service. its not just me who feels this way either my family and freinds all say the same thing, looking for something me higher up to complain to asap.
+
+Author: David Tranter
+Date: 2 years ago
+Rating: 5 stars
+Excellent service excellent support staff and superb GP The one problem is the misuse of disabled car parking spaces used by M & S shoppers and its a paients only car park , needs policing or barrier with tokens
+
+Author: Bradley Green
+Date: 2 years ago
+Rating: 1 star
+They're constantly signing for posted prescriptions that are not theirs to sign for (i'm not even a minden patient, i'm with rock healthcare, and the post is for the pharmacy, not minden) and then holding them hostage at their reception. To make any progress you either have to stand in the queue at their practice which is always super long, due to one receptionist being on at any given time, and speak to a receptionist who doesn't know anything about anything, or wait on hold in the phone queue for hours and hours and not have your query resolved. Minden, Rock Healthcare and the Pharmacy are all as bad each other but Minden are getting the 1* review because of how inconvenient they have been to my life. I'm just thankful that it wasn't medication that I need to stay alive because I'd probably be dead by now
+
+Author: Vincent Manning
+Date: 2 years ago
+Rating: 2 stars
+Receptionist today useless bit of common sense wouldn't go a miss
+
+Author: Mahtaab Zeb
+Date: 2 years ago
+Rating: 1 star
+Mahtaab Zeb3 reviews2 years ago
+
+Author: Stamina Power
+Date: 2 years ago
+Rating: 1 star
+The employees are uncooperative and deal with aggression, trying to hinder people.
+
+Author: Julie Greenland
+Date: 2 years ago
+Rating: 1 star
+Very poor with mental health. They think by sending you of what antidepressant they arevpromiting solves all. When I asked for a blood test for the menopause they sent me for the wrong one. Ask my gp is a joke as is trying to getva face to face appointment. You can no longer book in advance. Once I have my menopause confirmed I am looking to leave. When I first joined this practice it was great. Its going downhill fast
+
+Author: Shahida Shafi
+Date: 2 years ago
+Rating: 1 star
+This is really bad if your reading this don't use this doctors I have two children and I can't get a appointment it's been 2 years I've joined and never seen a doctor it's really bad the gp app does not let you book and the phone line is engaged it's now 9am
+
+Author: Pop Izzz
+Date: Edited 2 years ago
+Rating: 3 stars
+Doctor Champman realy listend to me & is lovely.i I am grateful and now have hope. Which i have not had for 3 years. All the doctors are nice & try their best for us. The receptionist are lovely and most nurses Not a nice experience by one i felt sunken basicaly. Dont want others to feel the same. Patients need kindness not to feel condescended. Especialy when most people are ill or in pain..
+
+Author: Karen Ambery
+Date: 2 years ago
+Rating: 4 stars
+I would like thank doc c Peterson for his rapid help on 26/4/23,he took my problem seriously and was very efficient, thank-you
+
+Author: adele mckinley
+Date: 3 years ago
+Rating: 5 stars
+Reception very friendly always helpful nurses and doctors go above and beyond to help you
+
+Author: Phillip Evans
+Date: Edited 3 years ago
+Rating: 1 star
+I have been with the Minden practice since February 1999 and recently I have phoned in to see a doctor on on the past 2 occasions in the past 2 months. The 1st time in was in October 2022 and I finally got a call back from a doctor 24 hours later. During this time I had had to call out the on call doctor to see me. The 2nd time in November 2022, I never even got a phone call back to find out why or an appointment. I cannot use ask my GP and I will not, because I feel there is no way the doctor can do a proper diagnoses over a video link. Since the Minden joined the Tower Practice group it has been rapidly going downhill. The receptionists are trying their best, but are being let down by the doctors.
+
+Author: Charlotte Anderson
+Date: 3 years ago
+Rating: 5 stars
+First time attending today, the doctor was wonderful and very attentive to my baby, sat and spoke to her constantly and quickly diagnosed the issue, couldn't fault.
+
+Author: Ashraf Shaaban
+Date: 3 years ago
+Rating: 1 star
+I would like to put zero star, I have never seen employees in this way lazy and uncooperative at all. I asked for a simple document in any center in the world to be issued within minutes. Now I have days and they are extremely indifferent
+
+Author: mark dixon
+Date: 3 years ago
+Rating: 1 star
+I have been waiting for a sick note for nearly 2 weeks. All I got from one of the receptionist was screen shot my request and show it to my employer of proof. The next thing she said was it's all Rishi Sunaks fault. So Priminister if you read this can you write me one out please it will be quicker than Minden. I would give the practice zero points but you have to click on something to start.
+
+Author: Helen Doughty
+Date: 3 years ago
+Rating: 1 star
+This practice is appalling. Despite how urgent your request is, you cannot get a ‘clinician’ to call you back in any less than a week, if at all. They avoid having to see patients. I know I have a bad chest infection and need antibiotics, it’s a simple request, but 3 weeks later I cannot talk to anyone. I need someone to listen to my chest but it’s impossible. Meanwhile I have barely slept for 3 weeks due to excess coughing. I feel like reporting them. I am definitely changing practices as soon as I am well enough.
+
+Author: Stephanie Irwin
+Date: 3 years ago
+Rating: 1 star
+Every 2 months I use the ask my GP service and I never can get on. It states 8 - 11 but it never is. Resulting into me phoning up to be seen to, which will be answered by a member of staff who is always abrupt and rude. Makes me nervous every time I ring up so I choose not too even as a last resort. The staff need a attitude check and the GP service needs to be sorted. I dread it every 2 months
+
+Author: Alex curran
+Date: Edited 3 years ago
+Rating: 1 star
+Got one prescription every month, always put in with pharmacy, never get, told by pharmacy they have not received from doctors, every month this happens, took 7 days and numerous phone calls to get it from doctors, asked for a emergency telephone appointment and was told doctor would ring me, still waiting 10 hours later, closed now for weekend, probably get back to me in 6 months
+
+Author: Judy Mellor
+Date: 3 years ago
+Rating: 1 star
+This doctors surgery is an abomination. You can't get an appt with a doctor if you ring up and Ask My GP is even worse. Have been waiting for 2 weeks now for a "clinician" to reply to my medical request. All I get when I chase it up is, You are on the list and 2 weeks is the norm. Do you have to be dying to see a doctor these days!!!!! NOT HAPPY.
+
+Author: Anthony Wilde
+Date: 3 years ago
+Rating: 3 stars
+It's a doctor's so it's okay if you need some medical assistant.
+
+Author: Carol Howard
+Date: 3 years ago
+Rating: 1 star
+Felt really ill phoned doctor, after going through the fiasco of first phoning Tottington, listening to umpteen messages. It was Friday afternoon, told no appointments, asked what could I do, I felt really ill, told ring 111 (tried that first. Gave up after waiting 30mins for the phone to be answered) use askmygp, also tried that it, was closed,told if I felt it was urgent go to casualty, eventually the pharmacy helped, now I ask my pharmacy for help first, conclusion don't be ill after 11am
+
+Author: holly smethurst
+Date: 3 years ago
+Rating: 1 star
+If you’ve look lower you will see another complain from me and th saga continues! After trying to rearrange an appointment I was told the receptionists don’t have the authority to book appointments I have to rebook the same phone consultation with the doctor for them to rebook the appointment and that would be in 3 weeks time. I have ended up in a and e because my condition has worsened and I now need surgery I wouldn’t have needed had I been seen earlier. I’ve just been back in to book doctors appointment as per a and E advice only to be told I have to book a telephone call with the doctor who will then book an appointment if I need one, despite ghem having the discharge notes from a & e with request from a and e doctor for an appointment. Rachel the office manager is patraonising and I feel sorry for the guys on the desk having to work under this ridiculous policy!
+
+Author: Mick Whelan
+Date: 3 years ago
+Rating: 1 star
+I've been a patient with Minden for nearly 17 year's the last 8 month's have been nothing short of a joke I know the NHS is underpressure ect but making me lose money with work just to sort a prescription for medication that I have been on for over 3 year's not on.
+
+Author: David Thomas
+Date: 3 years ago
+Rating: 5 stars
+I contacted the practice via AskmyGP on Friday 22 April and advised that I was away and could I please have a contact on my return. At 08.05 on Tuesday April 26 Dr Rolland contacted me, asked me some questions and I had an appointment with her at 09.30. I had some bloods taken today 28 April by Mike. I can do no more than thank them both for their efficency and care delivered with such a friendly and comforting attitude.
+
+Author: sarah ellison
+Date: Edited 3 years ago
+Rating: 1 star
+Staff talk to you in a passive aggressive manner, staff lie to cover there own backs, staffs don't send refferals when they're supposed to and swear blind they did, unless they where floating about in cyber space for 5 days who knows. We're seriously looking into finding out how to reporting to these to health governing bodies, just when we think we've turned a corner with them, they once again revert back to their old callous ways. Nothing more than a business this. Each patient is ££.
+
+Author: Jill Budgen
+Date: 4 years ago
+Rating: 1 star
+Been in Extreme pain in shoulder since December been off from work since. Trying to get hold of a sick note is a joke. I requested a sick note over a week ago and eventually got signed off by a gp asking what’s the problem. I need this sick note to get paid. Can’t even see a doctor. The receptionist does my ears in as she speaks loudly that everyone can hear. My mum fell a month ago went to the surgery to see if she could see a doctor same receptionist said no. Mum had appointment with the wound clinic even the nurse rang the surgery, even though the wound clinic is on first floor and minden on 3rd the receptionist said no to the nurse. My mum is her 70s had mini strokes plus had breast cancer. Oh yes also they mess around with my mums prescription for cancer that she has to take every day for 5 years. Mum has missed some days due to them not getting her prescription done in time. I’ve been with minden since moving up here when I was 2 now think it’s time for a change. Please if minden staff read this please quieten down that receptionist. I’ve been accuse of shouting at a receptionist which I was speaking normally, is this how they get rid of patients. Minden use to good now it’s gone done hill since 2018. In 2018 I rang for appointment only be told no appointment. I had to go in for my dads prescription only to find an extremely empty waiting room only me and the male receptionist in the waiting room.
+
+Author: J S
+Date: 4 years ago
+Rating: 1 star
+J SLocal Guide · 107 reviews · 1 photo4 years ago
+
+Author: brenda smith smith
+Date: 4 years ago
+Rating: 3 stars
+Dr Hagney always goes the extra mile, so a big thank you.
+
+Author: CalicoJim1 Outram
+Date: 4 years ago
+Rating: 1 star
+CalicoJim1 Outram5 reviews · 1 photo4 years ago
+
+Author: halcia78
+Date: 4 years ago
+Rating: 1 star
+Worst practice. It's impossible to see a doctor. My daughter has been waiting three weeks for a phone appointment. The Ask my GP app has an empty list of doctors working for two weeks.
+
+Author: Lorraine Jones
+Date: 4 years ago
+Rating: 3 stars
+I used to think this practice was really good but how can someone decide that you will be contacted within 2 weeks when you are in a lot of pain and restricted use. Also not had regular lithium checks that should be every 3 month disappointed in this practice
+
+Author: Alan Tattersall
+Date: 4 years ago
+Rating: 1 star
+Worse practise in Bury, I have been poorly since New Years day contacted practise via ask my doctor been passed from Tottington to Bury had various test including six bloods and six prescriptions and at no time do I get a call with the results, this week I have requested a call from a doctor via the app everyday after receiving a letter to contact Tottington practice last Saturday, three of the requests are still open with no reply. Eventually made a call to Tottington practise and was told not registered there and will need to call Minden ( very rude receptionist) called Minden eventually got through was advised a doctor would call me, it’s now five days later and still no call. Time to change Doctors.
+
+Author: Jordan Lyon
+Date: 4 years ago
+Rating: 1 star
+Extremely rude receptionist named leanne. She just put the phone down on me when I asked for her name. I was only trying to find out were MY medication was as its due today and not been approved by the gp yet AGAIN.
+
+Author: Des Kelly
+Date: 4 years ago
+Rating: 2 stars
+Service, appointment system and the app are a disgrace. I've had to take time off work more than 3 times recently because their systems don't work and you can't get to speak to a real person
+
+Author: kaysha leigh
+Date: 4 years ago
+Rating: 1 star
+Appalling service … ask my gp app closes by 7:45 after days of trying to get an appointment. Finally get through on Thursday after trying from Monday and had to call at 5:50 to remind them I hadn’t had a call back . Then to be met with a rude condescending and and contradicting gp . They are quiet happy to leave people suffering the debilitating effects of fibromyalgia because they know very little about it … here’s an idea learn ! Not one dr knows what the other is doing and there’s no continuous care from the same dr which in turn leads to miss lead information contradictions and a complete lack of understanding and empathy… when you have a gp ask you what they should do it’s clear there is a huge problem . patients aren’t trained in medicine and mores the point can’t think straight because of fibro fog and exhaustion from the lack of any sleep . Repeat Prescriptions of necessary meds have to be chased up And re requested 2 and 3 times as there never signed off or sent to the pharmacy as stated . I’ve been with this practice for almost 40 years and never has it ever been so bad . Complaints here are a waste of time rug and sand spring to mind . Regrettably this time above them is the only option available something has to change the care here is deplorable . There should really be an option of 0 ⭐️
+
+Author: Daniel Pollard
+Date: Edited 4 years ago
+Rating: 1 star
+Daniel Pollard2 reviewsEdited 4 years ago
+
+Author: Katherina Selby
+Date: 4 years ago
+Rating: 1 star
+This surgery used to be decent. Now there's one decent Dr and one decent nurse. Ever since the Ask My GP app was introduced, we can no longer get appointments unless a client is booking that appointment as soon as the app opens at 7am. First they would switch it off at 11am and then slowly they began to switch it off earlier and earlier. Now, it's switched off at 9:30am! Absolutely ridiculous. My daughter had a letter referred to them as a "matter of urgency" by a hospital, yet they waited 2 weeks before they sent it to me and posted it 2nd class. I definitely would not recommend this surgery and would advise you go elsewhere.
+
+Author: Candice Burridge
+Date: 4 years ago
+Rating: 5 stars
+I have been with this practice since I was a little girl. I can't fault it. I won't name my Dr but he is absolutely brilliant. Professional but so down to earth. Even through covid the service is fantastic. I think askmygp is great and I'm pleased to hear it's something the practice is continuing to use. Keep up the excellent work guys. Every single staff member this is to you too.
+
+Author: Claire Grantham
+Date: 4 years ago
+Rating: 5 stars
+My son had treatment for a ingrowing toe nail 20/05/2021, was treated by a nurse called Lorraine I was so impressed by her care that I just had to leave a review. What an absolutely amazing kind , caring polite woman really made my son feel at ease whilist he was having his treatment. Thank you again.
+
+Author: Laura Jones
+Date: 5 years ago
+Rating: 1 star
+Got given the wrong medication from a doctor that had not read my previous notes. Make me very poorly and took me weeks to get off them. Changed doctors now definitely won't be going back there
+
+Author: Lee Green branagan
+Date: 5 years ago
+Rating: 5 stars
+Ive been with minden doctors since 1970 all my life and I could not ask for a better practice yes its hard sometimes to get to see a gp there but ive always been able to get help and advice from minden and if needed to be seen thay have always managed to fit me in.
+
+Author: Steve Hepworth
+Date: 6 years ago
+Rating: 1 star
+I've been with Minden since it was quite a small practice. However, in the last few years it has gone rapidly downhill. It's gone from not being able to get a face to face appointment with a GP you know for a couple of weeks, to not being able to get an appointment with any GP for weeks. Even a telephone appointment is unlikely for over a week! This is in no way a critique on the quality of the GP's who actually work in the practice, as I couldn't properly comment on what they're like as I can very rarely get to see one! It seems that this practice is too big and has too many patients to cope. It does not therefore provide quality healthcare. In fact, it could be argued that you are sometimes effectively without healthcare at this practice.
+
+Author: Sue Williams
+Date: 6 years ago
+Rating: 5 stars
+I called the doctors Friday morning and spoke to the receptionist. She informed me the doctor would ring back within the hour. Ten minutes later Dr. Norman rang sorted a prescription for me to pick up at my nearest Pharmacy. What outstanding service by him and his team.
+
+Author: Elaine Whittle
+Date: 6 years ago
+Rating: 1 star
+Tried all day to speak to receptionist after 15 mins you are cut off. So another day before you can get any advice or antibiotics. As always probably not enough staff
+
+Author: Trevor Davies
+Date: Edited 6 years ago
+Rating: 2 stars
+Not happy with minden after over 20 years so time to move on to another practice for me !
+
+Author: JOHN-CARL MYLREA
+Date: 6 years ago
+Rating: 1 star
+Highly avoid, especially Dr Norman. Far to many patients, takes two months for an appointment and even that ends up being over the phone, he hasn't got a clue, hes just cointing down the days till his next holiday, pathetic doctor and an unorganised practice. Less than a star if possible.
+
+Author: Jay Thornley
+Date: 6 years ago
+Rating: 1 star
+Terrible. End of
+
+Author: barbara ackers
+Date: 6 years ago
+Rating: 4 stars
+It's not often that I need to go to the doctors. I admit I struggled getting in to see a gp when I needed one and felt rushed when I finally got an appointment. The staff at Moorgate, however were great. The receptionist was very friendly and was able to direct me to the appropriate people. The staff in the treatment room on floor one were very helpful and went out of their way to make sure that all my concerns were addressed and Gill and Lorraine (sister) made me feel at ease during examinations. I work for the NHS and all too often find that people just like to focus on negatives and not the positives.
+
+Author: Joanne Green
+Date: Edited 6 years ago
+Rating: 5 stars
+Never had any issues with the service all reception staff have always been helpful. Gemma is so helpful always goes above and beyond to assist with anything. All Drs & Nurses are great. Wouldn't want to be at any other surgery 👍 …
+
+Author: Lauren Saville
+Date: 7 years ago
+Rating: 5 stars
+Fab place I have been a minden patient since the old building and Lorraine Conway is great she always hugs me everytime I see her shes the best
+
+Author: lolanne
+Date: 7 years ago
+Rating: 1 star
+Struggled to get a straight forward fit note!!! someone needs to explain to certain Doctors if the fit note runs out say on the 12th the next one should be made out for the 13th, not the 12th, there is no point being covered twice for the same day, and then you lose a day quite straight forward really. I feel sorry for the receptionists because they get the hassle from mistakes being made behind the scenes, wrong perscriptions, fit notes ect. Also ridiculous not being able to get a appointment for at least 3 weeks that is if you can get through on the phone, yet there are people queuing up to join the surgery and being accepted! doesn't make sense.
+
+Author: Julie
+Date: 7 years ago
+Rating: 4 stars
+JulieLocal Guide · 110 reviews · 47 photos7 years ago
+
+Author: Helen Hinchcliffe
+Date: 7 years ago
+Rating: 1 star
+Appalling service, had to chase my husbands urgent referral up myself as the practice had sat on it for 11 days!! Took 30 mins to get through and was given incorrect information. Would give 0 stars but unable!!!
+
+Author: Bożena Klawińska
+Date: 7 years ago
+Rating: 1 star
+I praised the clinic and doctor of doctor Ade Rotowa myself some time ago.in the last months I had to take a doctor's appointment and shock!I agree with the opinion of others about the people at the reception, disrespectful approach to the patient, busy with themselves, can not provide proper information, etc.I have saved online as always the heart medicine that I have been taking for years and it turned out that the prescription is not at the reception or in the pharmacy and nobody knows what my prescription is, I do not even want to check with the doctor or the doctor I exhibited.I was asking for a spine scan because I have severe pain and I am waiting 3 months and the referral does not have!Now I was with the flu virus, week in a bed with fever 39, pneumonia and gillitis and the English lady doctor said it was a virus and I have to stay in bed, drink honey and lemon, paracetamol and that's all from her.They have more contributions to the NHS than the workers but to treat us and treat them with respect do not have to!!!
+
+Author: Claire Brimelow
+Date: 7 years ago
+Rating: 1 star
+Absouluty the worst ever... the reception staff are the worst they speak to yu like cràp and then are so rude and expect YU to taķe ....the appointments are weeks away and the staff don't give a toss ...
+
+Author: james brownson
+Date: 7 years ago
+Rating: 1 star
+I would put zero stars. You see it on tv all the time "go and see your gp" I nether bother because I can't get appointments for 2 weeks that's if the gp isn't on annual leave, Phone consultation - 10days My Mrs has 2 slipped discs in her spine and is on high meds and can't see the same gp or anybody else in fact. Gp is on annual . Absalute !! disgrace The gp is always on annual leave I hope this goes to the local mp.
+
+Author: David Tomlinson
+Date: 7 years ago
+Rating: 5 stars
+Always had good experiences here!!!
+
+Author: Gemma Goss
+Date: 7 years ago
+Rating: 2 stars
+Receptionist speak to u like you are dirt. Very rude. One tells you one thing and another tells you something completely different about the same prescription. Since they have merged and got bigger the phone service is poor and the quality of service has become really poor. Such a shame as been part of minden for over 30 years
+
+Author: John Graham
+Date: 7 years ago
+Rating: 5 stars
+John GrahamLocal Guide · 6 reviews7 years ago
+
+Author: PAUL BOULGER
+Date: 7 years ago
+Rating: 2 stars
+Doctors and staff don't have the same care and consideration like they use to in the old days I don't blame them they are only human but with mistake after mistake and to many people to look after mistakes will happen. the mistakes seem to be mainly coming from reception staff which shouldn't be given authority to do repeat prescriptions and other doctors duties. I walking into reception last week and one of the staff had there head in her hands I waited for about a minute and said excuse me and she said sorry I feel like giving up at the minute and thinking about quitting the job I thought so this is what the NHS is coming to head in hands giving up. it's not just that some of the mistakes are dangerous messing up medications that people vitally need I understand you need balls, guts and a brain to work in these places but you are being paid for it do the job properly
+
+Author: Sogand Ghorbi
+Date: 8 years ago
+Rating: 5 stars
+Sogand Ghorbi7 reviews8 years ago
+
+Author: Karen Hill
+Date: 8 years ago
+Rating: 1 star
+The only reason I give this practice 1 is because I cannot give it ZERO or a minus figure!!! They are incompetent and the doctors lie to you. I was told by the Dr that my prescription was no longer available and I had to have a new medication - when i went to my pharmacy they told me this was not the case and the only reason I was being moved off one to the other was because it is cheaper!!!!!! Do I not pay National Insurance or for my prescription to be lied to????? Thankfully I moved from the area only to be plagued still by this GP surgery!! My new GP asked for a fax today to be sent over and they said it would be done straight away, so that I can get an emergency prescription - no fax was sent as said that it would be done - it was finally send over at gone 4pm - as a result I have not been able to get my prescription and have gone without medication that I need. I cannot stress the complete disgust i feel at this surgery and nobody could pay me enough to ever go back to it. I would advise all to AVOID at all cost!!!
+
+Author: halle Muh
+Date: 8 years ago
+Rating: 1 star
+Some receptionist staff are incredibly helpful, I personally have not had the best experience with my gp quite a lazy daisy approach in regards to care seems like a rushed fob off service. One lady in particular by the name of Olivia spoken to me in the most passive aggressive manner which is completely unacceptable and I will most certainly following through with a complaint. Karen the practice manager is extremely helpful and genuinely a professional representative of Minden family practice.
+
+Author: Lindsey Sankey
+Date: 9 years ago
+Rating: 5 stars
+Dr Hagney is the best GP I have seen. He explains everything very well and listens to any concerns.
+
+Author: Gem Khan
+Date: 9 years ago
+Rating: 5 stars
+Dr sutcliffe was the best doctor but he left now. You will be missed for sure. Wish u all the best and hope u settled well in Canada
+
+Author: Inoka Perera
+Date: 9 years ago
+Rating: 5 stars
+Dr. Sutcliffe is one of the best doctors we came across. 5 Stars for him while reception should be getting only 2 stars.
+
+Author: Lauren Saville
+Date: 9 years ago
+Rating: 5 stars
+Lauren Saville2 reviews9 years ago
+
+Author: Zohaib Ghous
+Date: 9 years ago
+Rating: 1 star
+Rubbish

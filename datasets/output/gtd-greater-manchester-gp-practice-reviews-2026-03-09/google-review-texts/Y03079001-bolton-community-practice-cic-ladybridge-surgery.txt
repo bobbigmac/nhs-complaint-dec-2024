@@ -4,11 +4,16 @@ Postcode: BL3 4PZ
 Google Maps title: Ladybridge Surgery
 Google rating: 2.6
 Google review count: 23
-Google Maps URL: https://www.google.com/maps/place/Ladybridge+Surgery/@53.5704463,-2.4768118,17z/data=!4m8!3m7!1s0x487ba78f560c4131:0x66074df219afe8c3!8m2!3d53.5704463!4d-2.4768118!9m1!1b1!16s%2Fg%2F1vnrkkr2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Ladybridge+Surgery/@53.5703082,-2.479352,16.42z/data=!4m8!3m7!1s0x487ba78f560c4131:0x66074df219afe8c3!8m2!3d53.5704463!4d-2.4768118!9m1!1b1!16s%2Fg%2F1vnrkkr2?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.25
+Review collection mode: full_feed
+Review cards collected: 23
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y03079001-bolton-community-practice-cic-ladybridge-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: M A
 Date: a month ago
@@ -59,3 +64,68 @@ Author: Merav Marav
 Date: a year ago
 Rating: 1 star
 Very very bad doctors there dej didn’t give my mum for 3 weeks tables what she have to have for life time and now she is in hospital very bad not happy😡😡😡😡😡😡😡😡😡😡😡😡 …
+
+Author: Samuel Barnes
+Date: 2 years ago
+Rating: 1 star
+I had been enrolled with this surgery at-least 6 months before I was removed from their patient list… I was removed because I challenged a GPs decision in relation to a medication change which I didn’t agree with nor was safe practice! This surgery is lead by a poor management team who will cover up mistakes made by their GPs at any cost Most of the Reception team at this particular branch are Abrupt, manipulative and rude. Asides from one individual “imal” She is kind compassionate and understanding. I had the police called on me for simply enquiring about a request I put in writing 3 weeks prior… Patient safety is this surgery's last priority. I would not recommend Bolton Community Practice to a dog let alone a human being especially someone with complex care needs. The 1 star rating is too much for this surgery.
+
+Author: Shirl Benson
+Date: 2 years ago
+Rating: 5 stars
+Sorry to be informed of the sad passing of a wonderful GP Doctor Wright. You will be missed by all who knew you. Condolences to your family friends and colleagues and all who knew you. R.I.P
+
+Author: Muhammad Idrees
+Date: 2 years ago
+Rating: 1 star
+very poor service
+
+Author: Dave
+Date: 2 years ago
+Rating: 5 stars
+Extremely efficient and professional.
+
+Author: Nikita Whamond
+Date: 2 years ago
+Rating: 5 stars
+Staff are always helpful, and try to accommodate busy working life's. Polite and respectful. Sadly over worked, under paid and thousands of patients to deal with. Yet, always try to be kind. We should all remember this.
+
+Author: musa gojar musa gojar
+Date: 2 years ago
+Rating: 1 star
+My daughter was really sick and we were late by 10 minutes as we were trying to find the surgery because we were new to the surgery. We got told to wait and 20-30 minutes passed without us getting any update and then were told to rebook. Reception seemed rude as well.
+
+Author: RobAlexander
+Date: 3 years ago
+Rating: 1 star
+Do yourself a favour and register somewhere else. I've had a terrible time at this practice, I've been misdiagnosed, I've had results that weren't reported to me and it is an impossible task to book an appointment.
+
+Author: M B reviews
+Date: 4 years ago
+Rating: 1 star
+receptionist clearly hates her job. Terrible attitude for patient based environment
+
+Author: michael
+Date: 4 years ago
+Rating: 5 stars
+Had a consultation this morning following sciatic pain. This is not my usual surgery but the locum GP and reception staff were so kind and helpful. I was called again to advise my prescription and sick note were ready to collect. Thanks for being so efficient especially in these difficult times.
+
+Author: Rebecca j b Whittle
+Date: 5 years ago
+Rating: 1 star
+Rebecca j b WhittleLocal Guide · 37 reviews · 2 photos5 years ago
+
+Author: John Balshaw
+Date: 8 years ago
+Rating: 5 stars
+John BalshawLocal Guide · 36 reviews · 107 photos8 years ago
+
+Author: Aaliya Patel
+Date: 8 years ago
+Rating: 5 stars
+Aaliya Patel2 reviews8 years ago
+
+Author: lorraine Hodges
+Date: 10 years ago
+Rating: 5 stars
+Doctors 5 star . I have been with Dr Wright and Dr Parr from the beginning they excellent I could not speak highly enough about them . The system of booking 1 star. Excellent doctors a let down greatly by the booking system . You can ring in on the day at 8 am and by the time you have waited in line all appointments are booked. If you need to speak to the surgery reception you have to go through a general switch board at another location and messages are not always passed on .

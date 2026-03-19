@@ -4,11 +4,16 @@ Postcode: BL9 0SN
 Google Maps title: Townside Surgery
 Google rating: 2.4
 Google review count: 28
-Google Maps URL: https://www.google.com/maps/place/Townside+Surgery/@53.5903174,-2.3037633,17z/data=!3m1!5s0x487ba4dea48eab3d:0x230f0c93685fc58b!4m12!1m2!2m1!1sTownside+Surgery+BL9+0SN!3m8!1s0x487ba4de0a02fe0d:0x54c44a3e332a4dae!8m2!3d53.5903174!4d-2.2989997!9m1!1b1!15sChhUb3duc2lkZSBTdXJnZXJ5IEJMOSAwU05aGiIYdG93bnNpZGUgc3VyZ2VyeSBibDkgMHNukgEPc3VyZ2ljYWxfY2VudGVymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU4yYm5aeFpucDNSUkFC4AEA-gEECAAQMQ!16s%2Fg%2F11bzswv42l?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Townside+Surgery/@53.5902596,-2.3015674,17z/data=!3m1!5s0x487ba4dea48eab3d:0x230f0c93685fc58b!4m12!1m2!2m1!1sTownside+Surgery+BL9+0SN!3m8!1s0x487ba4de0a02fe0d:0x54c44a3e332a4dae!8m2!3d53.5903174!4d-2.2989997!9m1!1b1!15sChhUb3duc2lkZSBTdXJnZXJ5IEJMOSAwU05aGiIYdG93bnNpZGUgc3VyZ2VyeSBibDkgMHNukgEPc3VyZ2ljYWxfY2VudGVymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU4yYm5aeFpucDNSUkFC4AEA-gEECAAQMQ!16s%2Fg%2F11bzswv42l?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 28
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83005-townside-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Marzena Wozniak
 Date: 4 months ago
@@ -16,12 +21,12 @@ Rating: 1 star
 My husband went to the doctor with severe neck pain and numbness in his arm, caused by pressure on a cervical nerve. He asked for a scan or MRI to see what was going on. The doctor just refused to refer him only to physical therapy. The care is hopeless.What are we paying for here??
 
 Author: C D
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
 Subpar practice. If I could give a lower rating I would. Made me feel like a waste of space and NHS money even though, I do pay my taxes like we all do. The woman I unfortunately had an appointment with was very defensive and cut in whilst I was trying to explain my concerns, even though she completely had a preconceived ideation of me and what I was about to tell her - which was wrong. Trying to blame me and other people she works with for a mistake that was made with booking my appointment. Not to mention I have, many times, explicitly stated that my mental health is being affected and no actions have been taken to address this. Not once. I thought the NHS were supposed to take mental health seriously? Things are being missed and this is why, due to the behaviour of staff.. The receptionist I spoke to was lovely but unfortunately can’t say the same for the ‘qualified’ person I had an appointment with, which was ultimately a waste of time and made me feel worse about my situation. If you care about your health and want empathy within your healthcare providers I implore you to go elsewhere. It’s gone terribly downhill.
 
 Author: Rainbow 2526
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 Went to this surgery / clinic for a podiatrist appointment with my mum , the nurse we saw was so rude and not friendly at all , she didn't show any care , I don't think she liked people from an ethnic background because she was reluctant to even come near my mum . I hope the manager reads this and gets rid of those sort of staff members !
 
@@ -59,3 +64,93 @@ Author: Alan Plumpton
 Date: 2 years ago
 Rating: 5 stars
 More than satisfied with the service from all of the staff at Townside. The askmygp system is excellent and always illicit’s a response when used.
+
+Author: Roy Haworth
+Date: 3 years ago
+Rating: 2 stars
+They couldn't even let us know Dr Kyffin had retired. They have failed to prescribe vital Diabetic medication. ON TIME!
+
+Author: Farwa Salman
+Date: 3 years ago
+Rating: 1 star
+Farwa Salman3 reviews · 3 photos3 years ago
+
+Author: Julie Hone
+Date: 3 years ago
+Rating: 5 stars
+Ultra efficient and caring. Always manage to fit you in and make you feel as though you matter.
+
+Author: Judith Dale
+Date: 3 years ago
+Rating: 1 star
+Judith Dale3 reviews3 years ago
+
+Author: j Thorburn
+Date: 3 years ago
+Rating: 1 star
+Absolutely shocking stonewalled me then hung up on me rude ignorant receptionist
+
+Author: Joe Duffy
+Date: 3 years ago
+Rating: 1 star
+You can never get someone on the phone and its always the chemist fault for your mess up with your medication. My medication is for life i need it every day so poor and they just hid behind this covid issue so they can take it easy in the office
+
+Author: MDP
+Date: 4 years ago
+Rating: 1 star
+This is probably the worst gp service in Bury. 2.5 stars does not do it justice. I have received abysmal health care since I've been here past 3 years. Everything you have is played down or not followed up. Receptionists can't even give you the correct numbers for referrals. Avoid this place.
+
+Author: Alex H
+Date: 4 years ago
+Rating: 1 star
+Easily the worst GP surgery I have ever experienced. Can’t get through on the phone and when you do, they tell you (very rudely) to book an appointment via My GP app. When you try this, they close your ticket down without a phone call or any contact. Then, when you ring to tell them what’s happened, they snappily reply with “well there’s no doctors in so that’s why it’s been closed”, and the receptionist begin asking questions they’re not qualified to ask. Basically absolutely useless and negligent. Will be making a formal complaint.
+
+Author: Phil Brooks
+Date: 4 years ago
+Rating: 1 star
+I am absolutely disgusting with your staff and doctors my niece and nephew being told the doctor will ring you back!!!!! NÒT! ONLY TO BE TOLD ITS VIRAL!!!! They have been like this for weeksl
+
+Author: Kelly Hindle
+Date: 4 years ago
+Rating: 1 star
+Rang at 8 10am for appointment for my grandson,its now 16 42 PM and still waiting for doctor to get back.to me. I've rang couple of times during the day to ask when doctor would be ringing receptionist said couldn't give me a time.. Absolutely disgusting service
+
+Author: Danny Smith
+Date: 4 years ago
+Rating: 1 star
+I've never been spoken to like that be4 so so so so rude
+
+Author: ALOMAR -
+Date: 4 years ago
+Rating: 1 star
+I have to go three days for the prescription, the reception , staff are the worst. Ask them for my prescription over the phone and tell me to come for it and ask for it.
+
+Author: Andrijana Keenan
+Date: 4 years ago
+Rating: 5 stars
+Professional and friendly personal. Fast response.
+
+Author: Len Spiggot
+Date: 5 years ago
+Rating: 5 stars
+I find the staff friendly, but I treat them with respect, I find the Doctor's helpful, but I don't suffer from Munchauson's or sick note syndrome.
+
+Author: GRANT PARTINGTON
+Date: 5 years ago
+Rating: 5 stars
+Great Doctors and admin staff,never had a problem in thirty years of using this service.
+
+Author: Sinead Collins
+Date: 5 years ago
+Rating: 1 star
+I was 5 mins late for my appointment when I got there I was told they had gone I was due to have an MRI scan staff weren't very helpful either I'm disgusted 😈😈 …
+
+Author: Hazel Boardman
+Date: 5 years ago
+Rating: 5 stars
+Had my first appointment here this morning as a new patient just moving into the area. What a lovely practice with all the staff being so friendly. 10/10 from today's experience, thank you Leedah :)
+
+Author: Becky Radcliffe
+Date: 5 years ago
+Rating: 1 star
+I find the attitude of certain reception staff to be offhand, unhelpful and dismissive towards patients such as myself. I had quite an unpleasant experience this morning, when trying to enquire about a doctor's appointment.

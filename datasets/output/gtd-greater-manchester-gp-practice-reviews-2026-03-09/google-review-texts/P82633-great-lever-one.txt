@@ -4,11 +4,16 @@ Postcode: BL3 6RN
 Google Maps title: Great Lever Health Centre
 Google rating: 2.9
 Google review count: 84
-Google Maps URL: https://www.google.com/maps/place/Great+Lever+Health+Centre/@53.5655846,-2.4322795,17z/data=!4m8!3m7!1s0x487ba7b52635d4fb:0xdb777c9c2b174d7d!8m2!3d53.5655846!4d-2.4322795!9m1!1b1!16s%2Fg%2F1tfvypw5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Great+Lever+Health+Centre/@53.5657415,-2.4352922,17z/data=!4m8!3m7!1s0x487ba7b52635d4fb:0xdb777c9c2b174d7d!8m2!3d53.5657383!4d-2.4327119!9m1!1b1!16s%2Fg%2F1tfvypw5?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.667
+Review collection mode: full_feed
+Review cards collected: 84
+Owner replies collected: 0
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82633-great-lever-one.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: George Davies
 Date: a month ago
@@ -21,17 +26,17 @@ Rating: 1 star
 Mr Khan is the Worst Dr ever.. so unsympathetic.. OMG his Tine is So demeaning. My mother of 75 went to see him and He was Verg Rude and Abrupt and didn't even give her chance to speak. He needs some Serious communication training please... he needs to respect his Patients....
 
 Author: Jkwon Shakespear
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
 Worst GP ever honestly, you’d have better luck chatting to a brick wall. Don’t even bother ringing the phone might as well be decoration. The staff look like they’ve lost a fight with a smile, and getting an appointment? Forget it. I wouldn’t trust them to prescribe a plaster, never mind paracetamol.
 
 Author: Paul Spedding
-Date: 9 months ago
+Date: 10 months ago
 Rating: 4 stars
-Paul SpeddingLocal Guide · 4 reviews9 months ago
+Paul SpeddingLocal Guide · 4 reviews10 months ago
 
 Author: John Taylor
-Date: 10 months ago
+Date: 11 months ago
 Rating: 5 stars
 COVID vaccination walk in centre
 
@@ -59,3 +64,373 @@ Author: John Noredline
 Date: a year ago
 Rating: 1 star
 Absolutely useless this doctors for years I've tried to get an appointment but the receptionist just make it so difficult .never any help . Please don't waste your time with this surgery.
+
+Author: Kirk Telford
+Date: a year ago
+Rating: 5 stars
+My doctors appointments usually on time
+
+Author: lynne daniels
+Date: a year ago
+Rating: 1 star
+Tried ringing up at 8 in the morning it took over 150 tries and finally got through at 9, only for her to tell us to ring tomorrow morning now, useless and ridiculous
+
+Author: aero
+Date: a year ago
+Rating: 1 star
+There never answer their phone and yet they want you to book an appointment
+
+Author: K Mlo
+Date: a year ago
+Rating: 1 star
+It’s incredibly disappointing to have experienced such a low standard of care from Dr. Nasima Sidda. From the very beginning, it was clear that her bedside manner is virtually non-existent—she made me feel like an inconvenience rather than a patient in need of care. Communication was curt, dismissive, and unprofessional, with little to no empathy shown for my concerns. Worse yet, her lack of medical knowledge is alarming. Multiple critical aspects of my care were either completely missed or mishandled, leading to unnecessary stress and complications. She failed to provide accurate diagnoses and consistently displayed a troubling inability to address my health issues properly. What was most frustrating was her dismissiveness when I raised questions or concerns. Rather than listening or explaining things, she either brushed me off or provided vague, unhelpful answers, leaving me with more confusion than clarity. This is not what anyone expects when they seek medical help, and I strongly urge others to avoid her care if they want competent, compassionate treatment. Dr. Sidda's lack of professionalism and expertise makes her a serious liability to her patients.
+
+Author: chelsea ardis
+Date: a year ago
+Rating: 1 star
+can never get hold of them phone allways off
+
+Author: neo
+Date: a year ago
+Rating: 1 star
+Very rude receptionist no regard for patients at all and in my experience wth her shes not well trained.
+
+Author: Chloe Davies
+Date: a year ago
+Rating: 5 stars
+Chloe DaviesLocal Guide · 39 reviews · 1 photoa year ago
+
+Author: Katarzyna Jaroslawska
+Date: a year ago
+Rating: 5 stars
+Staff at the reception were brilliant. On the 30th of May I got a call from an employer saying they need a bmi signed certificate to prove I’m at a healthy bmi. I tried ringing but it said no one was able to take the call, so I walked in and asked one of the ladies not sure what her name was if I can quickly have my bmi measured as I needed it by the end of the day. She was hesitant as I haven’t booked an appointment but she saw how upset I was and managed to get her colleague to measure me which took literally 1 minute. I couldn’t be happier, If they wouldn’t have helped me I wouldn’t be getting my dream job. The ladies were extremely nice and understanding and even had a laugh with me.
+
+Author: Abbey Ashbarry
+Date: 2 years ago
+Rating: 1 star
+Rang 215 From 8am to be told there is no appointments available because there was 20 people stood outside the surgery at 8am so they take priority. How is that fair for people that work???!!! Why have a doctors line when those in person get priority.
+
+Author: sam morrow
+Date: 2 years ago
+Rating: 5 stars
+Nice people.
+
+Author: Gemma Seddon
+Date: 2 years ago
+Rating: 1 star
+I am one very angry parent 😡never known a doctors any worse than Great lever health centre. Mistreating my 3 month old son and dismissing him. Had so many issues with then but today of all days has just been the worse tried to get an appointment for him and they couldn’t give me one so I booked one myself online on my gp and got one for today which is to talk about is toilet problems get there and it’s for his injections when they have already been booked in prior so why have the booked the appointment for his toilet issues for his injections then the nurse said she would speak to the receptionist to get an appointment for us about that booked in so she came back and said they are going to book you in for tomorrow than partner asked what time and she said you will have to speak to the receptionist about that so we did and she said will have to call up in the morning to get an appointment abustle joke considering they could hear him screaming in pain in the waiting room , then went to the pharmacy to get his formula but they don’t always have it in so asked if they could put an order in for it but they had one in so then went on system and said there’s no perception on here for him this happened numerous of times and which I had asked for a phone call with his doctor to discuss it which I did and he said he will put it on a repeat then I said so will it being on repeat I won’t have to go in and put a request in for it to then receive￼ the prescription to then be able to go and collect it as this is what happened the other times and he said no so why the hell is it not on the system and why do I have to ring up on the Moring of the day I need an appointment to say they are the ones who made the mistake today why then say that when I booked him to be seen today. But you ring up first thing when they open and you don’t get through till tea time your lucky if you can at dinner time but they then say sorry there are no appointments for today then ask for an emergency coz it’s a serious matter and he needs to get seen to urgently and yet they proceed￼ to say they have all been booked in but how can you put a number on emergency appointments they should be going till the time they open to the time they close. ￼they are fully booked joke go there and your either the only one in there or the 3rd person 😂.There are no words for this it’s absolutely shocking my son should be a priority with him being a baby.
+
+Author: humaira ali
+Date: 2 years ago
+Rating: 5 stars
+Went in for a blood test today and the nurse Amy was amazing, I have had blood tests previously where they could not get the blood but she got it done the first time and was very comforting and helped ease my nerves I’m happy that she was the one who did my blood test
+
+Author: Billy Tobin
+Date: 2 years ago
+Rating: 1 star
+IV been suffering from seizers as of recent and have tried to call over 30 times and no one ever answers the phones it's ridiculous also your website doesn't work because I'v left loads of messages asking for the doctor to ring me I would walk down to the doctor's but my mental health isn't great ATM and my anxiety goes mental when I go outside this is poor standards right now and that is what needs to change that simple
+
+Author: J R
+Date: 2 years ago
+Rating: 1 star
+The student nurse at this practise is ruthless when taking blood. My arm bled whilst the needle was in and it ran down my arm she had to wipe my arm after sticking a shabby dressing on, my arm is purple and painful, I’ve never had a bad experience with providing blood samples and I don’t want to experience this again, her bedside manner could certainly be improved The one star is for the helpful girl at reception
+
+Author: Ali
+Date: 3 years ago
+Rating: 1 star
+DR sidda surgery is one of the worst one's in great lever!! you have to ring at 8:00 a.m. and then ring them over 100 times to get through to them!!! only have one phone line. poor management, however, the young lady in the admin team is always good and helpful. the Centre feels dirty and needs cleaning and a fresh coat of paint.
+
+Author: Amanda Wickramarathne
+Date: 3 years ago
+Rating: 1 star
+First time in a health centre in UK and there was an Indian lady passed middle age (receptionist) seated towards right when you enter and and made the whole day miserable. She was shouting at a nurse/Dr in-front of patients and had no idea of how she should speak to colleagues and soon hanged up from a call with a patient, she criticise about the patient. Poor other lady seated next to her and in-front of her has to bear her obnoxious behaviour.
+
+Author: AXA ALTAF
+Date: 3 years ago
+Rating: 1 star
+VERY RUDE STAFF...very unprofessional, kids playing behind the reception, it felt like someone's house, gp seemed uneducated & rude
+
+Author: Khawaja Noman Mehmood
+Date: 3 years ago
+Rating: 1 star
+My wife is pregnant and had severe heartburn issue. I asked doctor appointment over phone and the lady on phone keep saying go and see pharmacist and buy counter products we dont prescribe anything for heartburn eventhough my wife is pregnant and none of pharmacist prescribe her any thing without doctor consent. Such a bad behaviour from receptionist.
+
+Author: Sidat Hani
+Date: 3 years ago
+Rating: 1 star
+Horrible experience. Unhelpful receptionists and extremely rude nurses.
+
+Author: Unused Account
+Date: 3 years ago
+Rating: 1 star
+Unused AccountLocal Guide · 1 review3 years ago
+
+Author: Wozza Lee
+Date: Edited 4 years ago
+Rating: 1 star
+If you already here change go somewhere else, awful place , can never get appointments , gp is always off , useless people that’s also never answer the phone please don’t go here
+
+Author: Maimona Latif
+Date: 4 years ago
+Rating: 1 star
+CAN NEVER GET AN APPOINTMENT. I HAVE TWO SMALL CHILDREN AND EITHER HAVE TO GO A&E OR WAIT TILL 6PM AND GO EMERGENCY DOCS. THAT SAID STAFF ARE HELPFUL AND WHEN YOU CAN SEE A DOCTOR THEY ARE GOOD AND RESOLVE ALL MY ISSUES. BUT THE APPOINTMENT ISSUE IS AN ABSOLUTE SCANDAL!!
+
+Author: J S
+Date: 4 years ago
+Rating: 1 star
+I have been a patient of this surgery for 30 years and have always had exceptional service until the past few years. Since Dr Newgrosh has retired there is a significant lack of care, communication and professionalism. I don’t believe for a moment that this is the fault of the hardworking individuals of the surgery; the receptionists, cleaners and nurses are overworked and under appreciated throughout the borough. The chemists also provide an excellent service. I also don’t blame certain GPs, who take their duty of care seriously. I do, however, believe that there is a serious problem and someone needs to take responsibility for that. As someone with a full-time job, I have to arrange when I will be ill in advance. There is no walk in option and when it is possible to get an appointment (bearing in mind I have to provide evidence of this at work), they are swift and sharp. Almost as if I am inconveniencing the doctor with my paltry ailments. Now, I am not one of those that has a season ticket to the waiting room (I only go when absolutely necessary), however, when I go to the doctors I expect to be gone appropriate time and attention. This is simply not provided here. Dr Newgrosh was a credit to his profession, I only wish his predecessors had the same commitment to their role.
+
+Author: M Adz
+Date: 4 years ago
+Rating: 1 star
+Terrible. Quick to place the blame on parents for failing to mitigate instead of trying to come to some sort of a solution/resolution which acts in the best interest of the patient (in my case, my child) Be wary.
+
+Author: Emma Keaney
+Date: 5 years ago
+Rating: 1 star
+Been at this health centre for nearly 30 years and it is becoming an absolute shambles! Been trying to get my repeat prescription for a week now with no joy and now we have a bank Holiday! Bloody ridiculous
+
+Author: Grace Leach
+Date: 6 years ago
+Rating: 5 stars
+Nurse was very helpful and sympathetic. A lovely person
+
+Author: James Barlow
+Date: 6 years ago
+Rating: 3 stars
+It's OK if you have to visit.
+
+Author: Jaspreet Kaur
+Date: 6 years ago
+Rating: 4 stars
+Good service
+
+Author: Shaun Ward
+Date: 6 years ago
+Rating: 5 stars
+Shaun WardLocal Guide · 38 reviews6 years ago
+
+Author: Steven Roberts
+Date: 6 years ago
+Rating: 3 stars
+Steven Roberts11 reviews6 years ago
+
+Author: stacey louise
+Date: 6 years ago
+Rating: 1 star
+worse health centre around
+
+Author: Jane Lowe
+Date: 6 years ago
+Rating: 3 stars
+Jane LoweLocal Guide · 277 reviews · 464 photos6 years ago
+
+Author: Sarah Heyes
+Date: 6 years ago
+Rating: 4 stars
+Sarah Heyes2 reviews6 years ago
+
+Author: John Jolly (JU5ME)
+Date: 6 years ago
+Rating: 5 stars
+John Jolly (JU5ME)Local Guide · 46 reviews · 22 photos6 years ago
+
+Author: Gina Sedgwick
+Date: 6 years ago
+Rating: 4 stars
+Gina SedgwickLocal Guide · 84 reviews · 45 photos6 years ago
+
+Author: Beth Fidler
+Date: 6 years ago
+Rating: 1 star
+Beth FidlerLocal Guide · 1 review6 years ago
+
+Author: leanne jones
+Date: 6 years ago
+Rating: 5 stars
+leanne jonesLocal Guide · 20 reviews6 years ago
+
+Author: Mohamed N
+Date: 6 years ago
+Rating: 5 stars
+Mohamed NLocal Guide · 73 reviews6 years ago
+
+Author: kamran afzal
+Date: 6 years ago
+Rating: 5 stars
+kamran afzal8 reviews · 1 photo6 years ago
+
+Author: Michelle R
+Date: 6 years ago
+Rating: 3 stars
+Michelle RLocal Guide · 24 reviews6 years ago
+
+Author: Ammar Almadhi
+Date: 6 years ago
+Rating: 5 stars
+Ammar AlmadhiLocal Guide · 5 reviews · 5 photos6 years ago
+
+Author: Bhakti Ram (Babyco)
+Date: 6 years ago
+Rating: 5 stars
+Bhakti Ram (Babyco)Local Guide · 11 reviews · 17 photos6 years ago
+
+Author: Geoffrey Bridge
+Date: 6 years ago
+Rating: 5 stars
+Geoffrey BridgeLocal Guide · 9 reviews6 years ago
+
+Author: Angela
+Date: 6 years ago
+Rating: 2 stars
+Only 2 part time doctors
+
+Author: Ian Young
+Date: 6 years ago
+Rating: 3 stars
+Since Dr Nrwgross retired there is no certainty you will see the same nurse or Dr twice in a row.
+
+Author: Kashif Sherazi
+Date: 6 years ago
+Rating: 5 stars
+Kashif Sherazi2 reviews6 years ago
+
+Author: Albert / Alan Greenman
+Date: 6 years ago
+Rating: 4 stars
+Easy to find nice reception staff
+
+Author: Kamran Khan
+Date: Edited 7 years ago
+Rating: 4 stars
+Family have been registered here as a patients for a few years. Good selection of facilities at the health centre. GPs, A practice nurse, perform blood tests. child development checks Along with regular appointment booking there is the option of calling at 8am to make emergency appointments. There is a large seating area in the reception area. The staff are very friendly and helpful. There is on-site free parking for patients. As an added bonus there is a pharmacy in the same building for your convenience.
+
+Author: Emma Louise c
+Date: 7 years ago
+Rating: 5 stars
+Emma Louise c2 reviews7 years ago
+
+Author: Alan Catlow
+Date: Edited 7 years ago
+Rating: 5 stars
+National Health Centre
+
+Author: Angela kika
+Date: 7 years ago
+Rating: 5 stars
+Its a good a family friendly doctor surgery
+
+Author: SAM NAMm
+Date: 7 years ago
+Rating: 2 stars
+SAM NAMm1 photo7 years ago
+
+Author: Denis Hardman
+Date: 7 years ago
+Rating: 1 star
+Denis Hardman3 reviews7 years ago
+
+Author: Jacqui Baxendale
+Date: Edited 7 years ago
+Rating: 5 stars
+Been going there all my life.
+
+Author: john “Jonnie” ashcroft
+Date: 7 years ago
+Rating: 1 star
+john “Jonnie” ashcroftLocal Guide · 83 reviews · 20 photos7 years ago
+
+Author: Zakariya Musa
+Date: 7 years ago
+Rating: 5 stars
+Zakariya MusaLocal Guide · 30 reviews · 5 photos7 years ago
+
+Author: Martin Lever
+Date: 7 years ago
+Rating: 3 stars
+Martin LeverLocal Guide · 40 reviews7 years ago
+
+Author: Mark
+Date: 7 years ago
+Rating: 5 stars
+Mark6 reviews · 3 photos7 years ago
+
+Author: Atheer Aljnabe
+Date: 7 years ago
+Rating: 5 stars
+Atheer AljnabeLocal Guide · 23 reviews · 3 photos7 years ago
+
+Author: Jacqui Baxendale
+Date: 7 years ago
+Rating: 5 stars
+Jacqui BaxendaleLocal Guide · 35 reviews7 years ago
+
+Author: Pauline Greenhalgh
+Date: 7 years ago
+Rating: 2 stars
+Bad since Dr Newgrosh retired
+
+Author: Sahir Patel
+Date: 7 years ago
+Rating: 5 stars
+Sahir PatelLocal Guide · 12 photos7 years ago
+
+Author: Jackie Sellers
+Date: 7 years ago
+Rating: 5 stars
+People go here when you are ill
+
+Author: Hali Taymuri
+Date: 7 years ago
+Rating: 1 star
+Hali Taymuri12 reviews7 years ago
+
+Author: Tracey Mason
+Date: 7 years ago
+Rating: 1 star
+Paid a visit to the surgery today & it smelled so bad of stale urine, not what you expect when in a doctors waiting room also had an appointment for 10:50am wasn't seen till 11:10am, if i was so late id have been told off. This surgery has gone downhill so much. Time to change doctors i think, they need to have a word with their cleaner!
+
+Author: Rayan Adnan
+Date: 7 years ago
+Rating: 1 star
+Would give it no star if I could... registered and de-registered after one appointment! Rude staff and rude gp! They give you 10 minutes to discuss your problem and if you go over they tell you to come tomorrow and that 10 minutes are included in the wait time too
+
+Author: Aziz Ibraheem
+Date: 7 years ago
+Rating: 1 star
+At the moment I have to say it’s been a horrible experience. We have attended anything at the centre so can't comment on that. However the actual service to get the appointment and continue my daughters speech therapy sessions from the town we have moved from has been a horror and headache. We understand there’s cuts and pay issue but I still haven’t spoken on the phone since to an actual person. Always answer phone messages and leave your details etc etc They’ve called me and after a few rings cut off so I’ve missed the call and they haven’t left any type of message so I’m just assuming it’s them from a google search. It’s possible the hands on service is better but at the moment it’s very disappointing to not be able to call a number and actually speak to someone.
+
+Author: Mandy Fielding
+Date: 8 years ago
+Rating: 5 stars
+Excellent reception staff. Always helpfully and pleasant. The doctor I saw today a new lady doctor was very thorough, kind and very helpful. I left the surgery feeling very happy.
+
+Author: Jamie Taylor
+Date: 8 years ago
+Rating: 5 stars
+Dr Nasaruddin and Daniel very caring. Dami and Diane are lovely receptionist. Dr Loomba very lucky to have good team. Well done to you all.
+
+Author: Manar Serani
+Date: 9 years ago
+Rating: 5 stars
+Manar Serani2 reviews9 years ago
+
+Author: Binu Mathew
+Date: 9 years ago
+Rating: 5 stars
+Binu MathewLocal Guide · 28 reviews · 1 photo9 years ago
+
+Author: Darren Mason
+Date: Edited 9 years ago
+Rating: 4 stars
+Darren Mason12 reviewsEdited 9 years ago
+
+Author: Jim Turner
+Date: 10 years ago
+Rating: 4 stars
+Jim Turner10 years ago
+
+Author: Zaynab Amla
+Date: 11 years ago
+Rating: 2 stars
+Aamera Zaynab

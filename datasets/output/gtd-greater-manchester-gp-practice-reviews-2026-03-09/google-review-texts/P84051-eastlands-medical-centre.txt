@@ -3,47 +3,66 @@ Canonical code: P84051
 Postcode: M11 4EJ
 Google Maps title: Eastlands Medical Practice
 Google rating: 2.2
-Google review count: 62
-Google Maps URL: https://www.google.com/maps/place/Eastlands+Medical+Practice/@53.484324,-2.184172,17z/data=!4m8!3m7!1s0x487bb13dd88bf6a3:0x7d545355945beabf!8m2!3d53.484324!4d-2.184172!9m1!1b1!16s%2Fg%2F1hc0x8m0k?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 63
+Google Maps URL: https://www.google.com/maps/place/Eastlands+Medical+Practice/@53.4843272,-2.1867523,17z/data=!4m8!3m7!1s0x487bb13dd88bf6a3:0x7d545355945beabf!8m2!3d53.484324!4d-2.184172!9m1!1b1!16s%2Fg%2F1hc0x8m0k?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 63
+Owner replies collected: 21
+Raw review responses captured: 7
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84051-eastlands-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Mohammad Hussain Rahimi pakniya
+Date: 5 days ago
+Rating: 5 stars
+Mohammad Hussain Rahimi pakniya2 reviews5 days ago New
 
 Author: A I
-Date: a week ago
+Date: 3 weeks ago
 Rating: 1 star
-A I Local Guide · 33 reviews · 1 photo       a week ago NEW
+A ILocal Guide · 33 reviews · 1 photo3 weeks ago New
 
 Author: Xiangyu Zhao
 Date: 2 months ago
 Rating: 5 stars
-Xiangyu Zhao       2 months ago
+Xiangyu Zhao2 months ago
 
 Author: Ліна Сафрановська
 Date: 3 months ago
 Rating: 1 star
-Today I came to my appointment with my three-month-old baby, which was scheduled for 3:00 pm. Despite having a confirmed appointment time, I had to wait almost 50 minutes while holding my baby. Adult patients were being called in before me, …
+Today I came to my appointment with my three-month-old baby, which was scheduled for 3:00 pm. Despite having a confirmed appointment time, I had to wait almost 50 minutes while holding my baby. Adult patients were being called in before me, and it was completely unclear how the schedule and appointments were being managed. I am very disappointed with the attitude and the overall organisation of the service. Our vaccination appointments have also been rescheduled several times, which creates additional difficulties for us as new parents. I kindly ask you to review the organisation of appointments for patients with young children and ensure that scheduled times are respected, as situations like this cause significant discomfort and concern.
+Practice response date: 3 months ago
+Practice response:
+Thanks for taking the time to leave a review. I am sorry to hear that you had to wait some time for your appointment which had been rearranged a few times. Unfortunately, we have had some unplanned staff absence. We covered it as best we could with locums, however sometimes locums run behind due to being new to a surgery. Whilst this information does not excuse the lateness and rescheduling of your appointment, I am hoping that it has highlighted that sometimes despite doing our best, things can go off plan. I am sorry the situation caused you discomfort and pain. If you would like any more information or would like to discuss it in further, please get in contact with me. Alex - Practice Manager
 
 Author: Rosi Hunter
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
-The irresponsible behaviour and code of conduct has come to the point that now the A&E has urged them to look at my child and make sure that she is ok because yesterday when I called they didn’t take seriously and operator was complete …
+The irresponsible behaviour and code of conduct has come to the point that now the A&E has urged them to look at my child and make sure that she is ok because yesterday when I called they didn’t take seriously and operator was complete nonsense thats why I had to take her to A&E. She had been there all day and night under constant care and they were also disappointed by the eastlands medical practice behaviour and urged me to put a complaint on nhs website so that other people should not suffer. Actions speak louder than words. You can imagine through the reviews and the amount of disappointments. It is not just me. Look into it. Open your eyes please if you have little once try to stay away from this place.
+Practice response date: 4 months ago
+Practice response:
+Hi Rosi, Thank you for sharing your concerns. I am sorry to hear about your experience. Our admin team triage all incoming calls and online consultations. Our policy is that children and other vulnerable patients who require urgent triage are passed to a clinician for on the day review. If you could contact me directly regarding this incident with some more information to enable me to investigate, I would be most grateful. Thanks Alex - Practice Manager
 
 Author: Abigai Rowsendale
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
-The worst GP practice i have known since 2006 in the whole UK. The operator on the phone is useless. First they do not answer the call secondly when they want to answer they just want to be possessive and want to be your …
+The worst GP practice i have known since 2006 in the whole UK. The operator on the phone is useless. First they do not answer the call secondly when they want to answer they just want to be possessive and want to be your boss. Absolute stupidity. I do not believe they have any qualification because people equipped with proper knowledge and training does not speak with that tone of voice and insecurity.
+Practice response date: 4 months ago
+Practice response:
+I am sorry to hear about your recent negative experience. Our admin team are trained to triage incoming calls and online queries to ensure the most appropriate action is taken. I completely understand how this might come across as unhelpful, but I assure you our intention is to support you as best we can. If you would like to contact me directly I can look into this for you. Alex - Practice Manager
 
 Author: Tilly
 Date: 4 months ago
 Rating: 1 star
-I normally abstain from proving negative feedback but this is definitely overdue. I’ve always had no issue with the receptionist team but during today’s call the …
+I normally abstain from proving negative feedback but this is definitely overdue. I’ve always had no issue with the receptionist team but during today’s call the receptionist that answered the phone was rude, impatient and dismissive. Furthermore, some doctors put the wrong information on the ‘NHS app’ and if you challenge that you are welcomed by a receptionist that doesn’t want to be there nor provides the appropriate information. If things don’t get better will probably find another practice. Be mindful when you register here as the patient care sometimes can be lacking .
 
 Author: leah white
 Date: 5 months ago
 Rating: 5 stars
-I cannot praise this surgery enough, the receptionists are amazing, ive experienced some difficult situations with doctors and getting appointments for my autistic daughter, but they go above and beyond here, they actually listen and dont …
+I cannot praise this surgery enough, the receptionists are amazing, ive experienced some difficult situations with doctors and getting appointments for my autistic daughter, but they go above and beyond here, they actually listen and dont just rush u off the phone. When my daughter was poorly and I called at 11am they got me in for 5.30 and was considerate of the fact that she probably wouldn't like to wait due to her autism. They then called me back and said they had had a cancellation and to bring her in at 12. The doctors are lovely and are really good with her as she loves doctors and medical things so they really engage. Not the average surgery and I would highly recommend.
 
 Author: John Smith
 Date: 7 months ago
@@ -56,6 +75,320 @@ Rating: 5 stars
 Accommodating and helpful staffs
 
 Author: Cathy
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
 Great practice, the receptionist are amazing The care I received the doctors are always attentive and took the time to explain everything clearly. I felt listened, respected, and genuinely cared for throughout my entire visit. It’s clear that the whole team works together to ensure patients feel comfortable and well looked after.
+
+Author: Zoe Chalmers
+Date: 8 months ago
+Rating: 1 star
+Absolute disgrace this place, gives phone appointments then don't call at the time given then told it could be any time that day. Why the hell would you give a set time if your not going to call it took 3 weeks to get this appointment and this is not the first time this has happened they just keep changing the time on the NHS app. Some people do have to work and can't hang about on their phone all day.
+
+Author: osman mohammed
+Date: 10 months ago
+Rating: 1 star
+Reception it's very bad service a did an appointment on phone when I reach on my time the appointment is changed different time
+
+Author: Michelle Saidi
+Date: 11 months ago
+Rating: 1 star
+I’m waiting for several surgeries but both Drs and reception stuff could not give a damn when I call to make an appointments. One doctor even said to me “I’m just a GP I don’t know much”. Imagine hearing that when you’re in pain and you’ve gone to an individual you’re supposed to trust. Let’s just say I’m currently talking to a lawyer at the moment.
+
+Author: Chris
+Date: a year ago
+Rating: 5 stars
+They are really good. My only negative is it takes a while to get an appointment but that's because the government are useless and run all.services into the ground. Reception and doctors are great and always help me as much as possible
+
+Author: Miles Rowley
+Date: a year ago
+Rating: 5 stars
+Always been really helpful with me 👍 …
+
+Author: Anne Lawton
+Date: a year ago
+Rating: 5 stars
+Anne Lawtona year ago
+
+Author: Kelly Crompton
+Date: a year ago
+Rating: 4 stars
+The last 2 times I’ve phoned at 9am and got an appointment the same day with Dr Ooman who is very helpful. The new system of being 1st /2nd in queue is a lot better than having to ring back 40 times to get through. The only negative is being asked is it an emergency as I think if it’s an emergency I’d ring 999.
+
+Author: Fadi PCM
+Date: a year ago
+Rating: 1 star
+Rude staff, unfriendly at all, inexperienced and a very poor service, when you go to the practice its not busy and almost empty in many cases, but when try to book an appointment they will give you after weeks, I believe the staff trying to reduce the number of patients so they don’t work more, but to be honest the doctors who are working there are excellent.
+Practice response date: a year ago
+Practice response:
+Good afternoon Fadi, Thank you for taking the time to leave a review of our practice. I would like to firstly assure you that none of our staff are trying to reduce the number of patient appointments. This is not something our administration staff have access to do nor do they have the motive. Unfortunately, the current demand for appointments does not meet capacity. This a problem across the country. The number of appointments we offer per day is in line with national guidance. Whilst our waiting room may have seemed empty during your visit, our GP's have many tasks to carry out throughout the day to ensure our patients get the right care. As well as face to face/telephone consultations, they have lots of administration to carry out such as prescriptions, referrals, communications with other services etc. I am sorry you felt our staff were rude and unfriendly. Please contact me at the practice with some more information and I can investigate this incident. Alex - Practice Manager
+
+Author: Asif Bashir
+Date: a year ago
+Rating: 5 stars
+Thank you for leaving a 5* review for our surgery. All feedback is appreciated and its good to know that our hard work is valued.
+Practice response date: a year ago
+Practice response:
+Thank you for leaving a 5* review for our surgery. All feedback is appreciated and its good to know that our hard work is valued.
+
+Author: Janet Brindley
+Date: a year ago
+Rating: 1 star
+Awful reception staff. Not sure what their purpose is, aside from sitting behind a window and eating, as they can't make appointments, and may as well be replaced by AI, which would probably provide a more human experience.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a review. Whilst its disappointing to receive 1 star, feedback is always appreciated. Our reception team is dedicated and hardworking, performing numerous essential tasks that may not always be visible. They are continuously multitasking and often working on multiple behind-the-scenes activities that contribute significantly to our daily functions. Occasionally, a receptionist may appear to be being difficult when in fact they are just following guidelines/rules set out by the clinical team. It is imperative that those guidelines/rules are followed to ensure that all 5700 of our patients get the best care we can offer. Please do contact me if you would like to discuss this issue in further detail. Alex – Practice Manager
+
+Author: Beatrice Ivy Ndhlovu
+Date: a year ago
+Rating: 1 star
+Some staff is not kind at all
+
+Author: Marie Phelan
+Date: a year ago
+Rating: 5 stars
+Marie Phelana year ago
+
+Author: Natasha Little
+Date: a year ago
+Rating: 5 stars
+I recently changed surgeries as I had such an awful experience at my previous surgery, what a breath of fresh air Eastlands have been , the receptionists are so helpful and accommodating and treat you with respect and dignity, the medical team have been so on the ball with me I am so pleased I changed surgery and that I am being so well looked after
+
+Author: MiR
+Date: a year ago
+Rating: 1 star
+MiRLocal Guide · 18 reviewsa year ago
+
+Author: Geo Lee
+Date: 2 years ago
+Rating: 1 star
+I've been at this surgery most of my life and I've noticed over the last 10 years how the service has went down hill. When was going in the receptionist was always rude but must admit since I said will ring in and record the call they soo changed. I'm wanting help but don't get it
+Practice response date: 2 years ago
+Practice response:
+Good evening, Thank you for taking the time to leave a review. We are always disappointed to receive a negative review of the practice as we try hard to provide the very best service we can given the current high demand in primary care. If you have a particular issue that you would like to discuss, please get in touch and I will do my best to rectify. All of our telephone calls are recorded therefore if your issue relates to a particular incident, I would be happy to investigate and listen to the call. You can call me on 0161 223 9229 or email the practice gmicb-mh.eastlands@nhs.net. Alex Jones - Practice Manager
+
+Author: F -
+Date: Edited 2 years ago
+Rating: 5 stars
+Great team , receptionist are all very helpful and understood my concerns. I needed medical proof and the team helped me out and provided me with the proof that I needed.
+Practice response date: 2 years ago
+Practice response:
+Good evening, Thank you for your 5* review. It is great to hear that our hard work is appreciated.
+
+Author: Bronze Sweet Queen
+Date: 2 years ago
+Rating: 1 star
+I WARN YOU!!!Do not get here!!!Don’t come to this place.Rude staff,rude GP,under managed waiting time,unpleasant place that will make you feel insufferable.
+
+Author: Samuel Osawaru
+Date: 2 years ago
+Rating: 4 stars
+Not bad, but I needed an appointment to visit like most GPs ,I didn't have to wait long.
+
+Author: Ana Vitorino
+Date: 2 years ago
+Rating: 5 stars
+Been a patient at Eastlands for a long time but only now I'm doing a review to praise Sarah ,for helping sorting my prescription.Not very often you find NHS staff going the extra mile to help a patient.Thank you,Sarah!!
+
+Author: Millie Fletcher
+Date: 2 years ago
+Rating: 1 star
+Worst doctors surgery I have been to. No bedside manner at all from both the nurses and doctors. Left me in tears without a care in the world. Would not recommend at all. Avoid
+Practice response date: 2 years ago
+Practice response:
+Good morning Millie, Thank you for taking the time to leave a review. I am sorry you feel this away about our practice. If you would like to get in touch with me to discuss your concerns, I would be more than happy to investigate and hopefully rectify your issues. Alex - Practice Manager
+
+Author: Lisa Jones
+Date: 2 years ago
+Rating: 5 stars
+Thank you for taking the time to leave a review. Your time and feedback are appreciated. Alex - Practice Manager
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a review. Your time and feedback are appreciated. Alex - Practice Manager
+
+Author: Ellie Robinson
+Date: 2 years ago
+Rating: 1 star
+they give out wrong information, you can’t get an appointment they tell you to ring back at 8am and you still can’t be given an appointment, they lie to you, medical negligence and this will be getting taken further
+Practice response date: 2 years ago
+Practice response:
+Good morning Ellie, Thank you for taking the time to leave a review. We strive to provide the very best care for our patients, and it is disheartening to hear you feel this way. The number of appointments we offer our patients here at Eastlands Medical Practice is in line with national guidance however there is working being done nationally to improve patient access. I would ask that you get in touch directly to provide more details about your complaint as this will enable us to investigate further and hopefully offer you some resolution. Alex – Practice Manager
+
+Author: Jaz
+Date: 2 years ago
+Rating: 1 star
+Absolutely shocking. Avoid at all costs. It took them a year to respond to my request on their website. They need to be investigated by the authorities.
+Practice response date: 2 years ago
+Practice response:
+Thank you for getting in touch with your feedback. This is disappointing to read as we respond to all online requests within 72 hours. They are however monitored throughout the day and are usually actioned on the same day. I would kindly ask that you contact us directly with your details to enable us to investigate this issue. Please email gmicb-mh.eastlands@nhs.net or call us on 0161 223 9229. Alex - Practice Manager
+
+Author: Ian Shakeshaft
+Date: Edited 2 years ago
+Rating: 1 star
+Been a patient at this practice for over 30 years, in the past i have always had good service and always found the staff and doctors - friendly, professional and helpful. During and since Covid the service has deteriorated DRAMATICALLY! Covid wasn't my fault, had all my inoculations and followed all the rules - why did the service levels chang??? A lot of people have trouble with modern technology and should not be EXPECTED to 'do things on line'!??? Sadly now trying a new Surgery.
+Practice response date: 2 years ago
+Practice response:
+Good afternoon Ian, Thank you for taking the time to leave a review. I am saddened to read that you feel our service has deteriorated since the Covid 19 pandemic. General practice has changed quite significantly since the pandemic and whilst we do encourage the use of online services, we appreciate that this is not for everyone. Our telephones lines are open between 8am and 6pm Monday to Friday and our practice door is open for those patients who prefer to make an enquiry at the front desk. GP appointments are telephone consultations in the first instance with face to face being offered if required. However, if patients feel a face to face is more suitable then this can be accommodated. Since the pandemic, patient demand has increased considerably and as a neighbourhood, we have worked together to put extra services in place such as extra appointments during the evenings and weekends, video consultations with an external provider, appointments with First Contact Practitioners, Pharmacists and other healthcare professionals. I would be more than happy to hear more about your recent experiences with our practice and I am available if you want to get in touch. Alex Jones - Practice Manager
+
+Author: A T
+Date: 2 years ago
+Rating: 1 star
+VERY POOR STANDARD OF PATIENT CARE: Unbelievable treatment. Waited 6 weeks for appointment Face to Face at surgery.. DR SUSMITA DAS who was incompetent totally.. Arrived 25 mins late for start of appointments with out any apology.. Concern’s many this GP does not or can’t be bothered to do blood/ pressure / diagnostics check as symptoms need to be investigated .To make up her personal time she only gave a 3 minute appointment also .. At the end she could only offer a mental health Cafe we’re you could have a cup of coffee an a bite to eat . Also when ask were this Cafe was ‘Doctor was completely clueless and lacked the knowledge or integrity to give any area this Cafe is at … Very very sad for many vulnerable patients who are getting treated by this particular Doctor DAS. who does not care one bit …
+
+Author: Pauline kerr
+Date: 2 years ago
+Rating: 5 stars
+I totally disagree with the previous bad reviews i have been with this surgery over 35 yrs and had some brilliant caring doctors however in today's culture of all about me me me your never going to please everyone. Keep up the great work as far as I'm concerned
+Practice response date: 2 years ago
+Practice response:
+Hi Pauline, Thank you for taking the time to leave a review Pauline. We appreciate your kind words and I will be sure to pass them on to the team. Alex - Practice Manager
+
+Author: Phone Games
+Date: 2 years ago
+Rating: 1 star
+I’ve been calling for 2 weeks no answer
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a review. I am disappointed to hear that you have been unable to get through to us via the telephone. Unfortunately, without your name I am unable to make contact and help resolve your issue. Our phone lines can be incredibly busy at certain times of the day but I can assure you that we have 2-3 people answering them between 8am and 6pm Monday to Friday. If you struggle getting through on the telephone, you can make contact with us via our website by completing an online consult https://www.online-consult.co.uk/org/eastlands-medical-practice. Alternatively you can email the practice at gmicb-mh.eastlands@nhs.net or download the NHS App which allows you to book appointments with a GP and order repeat prescriptions. Kind regards - Alex Practice Manager
+
+Author: james greenhedge
+Date: 2 years ago
+Rating: 5 stars
+Great practice, receptionists are excellent and will try and help if possible; I have to say considering what the NHS is having to cope with I feel lucky to have my health valued by this practice. Well done all!!
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a review James. It is lovely to hear that you value the work we do. Your positive review will be passed on to the team. Many thanks Alex - Practice Manager
+
+Author: Natttyja
+Date: 2 years ago
+Rating: 5 stars
+Thank you for taking the time to leave a review. We appreciate all feedback received and it is especially nice to get 5*. Many thanks Alex - Practice Manager.
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a review. We appreciate all feedback received and it is especially nice to get 5*. Many thanks Alex - Practice Manager.
+
+Author: James Sheppard
+Date: 3 years ago
+Rating: 1 star
+The practice is dominated by a do nothing & ignore you reception. They mess up my medications routinely, and ignore requests to correct it from myself & pharmacist week after week. You have to lose your rag, dedicate a day to going there and insisting on seeing a doctor for them to stop gaslighting you & sort it out. The appointment policy enforced by rude, obtuse dismissal is: phone every minute from 8.30am for appointment roulette, and if by the time you get through at 9.30 or 10 there isn't an appointment that day, you either wait for 3 weeks, play roulette tomorrow or go to a&e. It doesn't matter if a Dr told you to come back a week later if the agonising pain didn't go, the policy is to overload A&E instead of treating you with respect & empathy.
+Practice response date: 2 years ago
+Practice response:
+Hi James, Thank you for your review of the practice. I am disappointed to learn that you feel this way. As you know, we have recently spoken and the medication issue has now been rectified. Please do not hesitate to get back in touch with me if you feel you have further complaints. As with the medication issue, we can hopefully offer you a resolution. If you don't already use the NHS App, it may be useful to know that you can make appointments, request prescriptions and view your health record via the app. You can also get in touch via the online triage section on our website. Many patients find this to be a useful way of getting in touch with the practice and avoid queuing on the telephone during busy periods. Kind regards Alex Jones Practice Manager
+
+Author: TK Art
+Date: 3 years ago
+Rating: 1 star
+Thank you for taking the time to leave a review. We strive to provide the very best care to all of our patients and we are always disappointed if we see a negative review. If you would like to speak to me regarding your experience, please get in touch either by telephone or via the practice email (gmicb-mh.eastlands@nhs.net). Alex Jones - Practice Manager
+Practice response date: 3 years ago
+Practice response:
+Thank you for taking the time to leave a review. We strive to provide the very best care to all of our patients and we are always disappointed if we see a negative review. If you would like to speak to me regarding your experience, please get in touch either by telephone or via the practice email (gmicb-mh.eastlands@nhs.net). Alex Jones - Practice Manager
+
+Author: Mike
+Date: 3 years ago
+Rating: 1 star
+The receptionists are extremely rude. They don't seem to care much about patients or their job as a whole. Doesn't appear to be any accountability or leadership.
+Practice response date: 3 years ago
+Practice response:
+Good afternoon Mike, Thank you for taking the time to leave a review. I am very sorry to hear you feel our receptionists are rude and that they don't care about patients. It is disappointing to learn you have been made to feel that way. If you would like to speak to me regarding your experience, please get in touch either by telephone or via the practice email (gmicb-mh.eastlands@nhs.net). Alex Jones - Practice Manager
+
+Author: Laura Olchawa
+Date: 3 years ago
+Rating: 1 star
+Do NOT go to Dr Kanakanti!! Here’s some reasons: I come regarding some mental health problems a few years back I was not helped and listened to one bit and told to go on a walk! My young brother during lockdown got very sick with a throat infection to the point he couldn’t breathe and was suffocating himself, she told us to wait for the antibiotics to kick in! She prescribed my 3 WEEK OLD BABY eye drops for conjunctivitis and before giving them to him I read the box and it said DO NOT use for children under 2 YEARS OLD! I confronted her about this and she said this doesn’t matter 😂. I had just phoned in order for her to help my other son with his mental health, how to deal with situations, and to boost his confidence up and she told me he needed a referral from his school headteacher to book an appointment with her! This is ridiculous, he’s been suffering for months and had plenty of teachers tell us to book an appointment but she didn’t want to help him! To top it all off she’s always extremely extremely rude to every member of our family so I guess she does this to everyone! Only person she actually listens to is my father!!!! Absolutely ridiculous this woman should of never become a doctor!!!! Only time that this was a good GP practice was when one of the doctors had someone taking over! These are absolutely shambles, have you in the room for 30 seconds because they clearly cannot be bothered!!! Please save your patience and do not go to this doctors!!!!!!!
+Practice response date: 3 years ago
+Practice response:
+Good afternoon Laura, Thank you for taking the time to leave a review. I can see from your review that you have some issues with our practice. I am unable to discuss the issue about your brother with you however I would be more than happy to discuss the issues about you/your children. Please contact me via telephone or through our practice email (gmicb-mh.eastlands@nhs.net) and we can look into each of your complaints. I would like to assure you that Dr Kanakanti and the rest of our team do our very best to help each of our patients get the best care available. What may seem like an unwillingness to help from your perspective will often be something out of our control. Alex Jones - Practice Manager
+
+Author: Ren Wang
+Date: 3 years ago
+Rating: 1 star
+Ren Wang3 years ago
+
+Author: TinTin
+Date: 3 years ago
+Rating: 1 star
+The most useless and unreliable GP practice I’ve come across. A referral was supposed to be made for my baby for physio by their female doctor Das and it was never put through. Just found out today and I’ve also had to leave them. Useless
+
+Author: Tony Granelli
+Date: 3 years ago
+Rating: 1 star
+Absolute shambles of a place, Crazy thing is, it's a Doctors!!! Can't gain access,locked up like Alcatraz, phone systems won't let you ring in,due to too many customer service messages, seems to be a lack of communication between Doctors and the receptionists get all the flack !,potential danger to life scenarios ! Not Good !
+
+Author: Mark Donnelly
+Date: 3 years ago
+Rating: 1 star
+Would be zero stars if possible.. Honestly the receptionist are dreadful even argue and question you when you have a hospital letter stating you need an appointment asap... Then you finally get passed the receptionist after being made fo feel you are not worthy to see the dr in first and they are shambolic to say the least don't help tell ypu all in your head for over 2 years i quite thid drs and moved to dr hahns he managed to do more in 4 months then these did in 3 years had surgery for what was going on in my head turned my esophagus was working at only 50% it should been the delays permanently letft me struggling to eat
+
+Author: Nicola Greenwood
+Date: 3 years ago
+Rating: 1 star
+Havnt had a problem with the young receptionist. It’s the older ones very rude.if your not happy with your job then leave!!!!
+
+Author: Chris Madden
+Date: Edited 3 years ago
+Rating: 1 star
+It has been nearly 2 years since I last seen the doctors. At what point is this madness going to stop. When will the doctors open again for normal business. Lazy doctors who would rather sit and sign priscriptions offf rather than see there patients and do there JOB! Update. Just spoke to receptionist and she just told me they have been seeing patients during the whole covid thing. So I said great ill book an appointment to see the asthma nurse then. OK so the next telephone appointment will be .."we are not seeing people face to face regarding respiratory problems" I mean can't make this up.
+
+Author: A
+Date: 3 years ago
+Rating: 1 star
+I'd give 0 stars.am in phshycal pain being sick and can't keep anything down and I just got told they can't do anything. I have been so mistreated by them to the point I thought I was having a heart attack because they would put me on the right medication. I just don't know what to do anymore.
+
+Author: Sarah Thomson
+Date: 4 years ago
+Rating: 1 star
+I would give a 0 I have been with this surgery since April 2021. They still don't have my notes from previous GP surgery. I wrote previous surgery down on registration form. 2nd November I rang 111 as I couldn't get appointment. I was diagnosed with a respiratory infection via 111. Letter sent to gp advising I need antibiotics and a brown inhaler as I have asthma. Wasn't prescribed brown inhaler. Rang up surgery to ask why. Got a snotty receptionist saying it wasn't advised when it were. Rang and spoke to doctors yesterday after being admitted to hospital via 111 Sunday morning. I asked them for brown inhaler was refused as they said I don't know you have asthma as we haven't got your notes as yet so therefor didn't look into my medical history with previous surgery when I asked for inhaler 4 weeks ago. I was admitted with shortness of breath wheezing and constant cough due to my asthma.ive had to chase the hospital for the clinical notes that they advised as they're refusing to refer me to Asthma and respiratory clinics until they have all notes!! Nowhere online to make a complaint considering I was told yesterday it's all online.
+
+Author: Dan Weed
+Date: 4 years ago
+Rating: 1 star
+Receptionists are shocking. Rude, incompetent and couldn’t care less
+
+Author: Emma Crawshaw
+Date: 4 years ago
+Rating: 1 star
+Receptionists are rude with bad attitudes
+
+Author: Lauren Whisker
+Date: 4 years ago
+Rating: 1 star
+Lauren Whisker1 review4 years ago
+
+Author: ben carc
+Date: 4 years ago
+Rating: 1 star
+The girls on the phone lines are rude, lazy and bad mannered they have been there for years god knows how! Try awful place to go, terrible culture and work ethic amongst staff.
+
+Author: Michelle Hopton
+Date: 4 years ago
+Rating: 1 star
+Michelle HoptonLocal Guide · 21 reviews · 4 photos4 years ago
+
+Author: Elena
+Date: Edited 5 years ago
+Rating: 5 stars
+We have been with them for over 3 years now, the whole family. Never had problems with getting appointments, always being referred to a specialist when needed and usually spending no more than 15 minutes in the waiting room. Obviously now due to coronavirus restrictions things are difficult but still got referral for blood test. Overall - happy with the service.
+
+Author: Leanne Harvey
+Date: 5 years ago
+Rating: 1 star
+This is the second time in 6 months I've been promised a telephone consultation, waited by the phone for 9 hours to get no contact whatsoever. Been sent a blood bag with no instructions of who to book bloods and told "theres no rush to get them done". Considering it's the same issue I've been trying to get help with for over two years too, let's hope it's nothing sinister eh. Will be looking for an alternative surgery.
+
+Author: Brian Kennerley
+Date: 5 years ago
+Rating: 1 star
+Appauling attitudes from reception staff, no need for such ignorance or arogance. We're all in difficult times but courtesy costs nothing.
+
+Author: Andrew Lees
+Date: 6 years ago
+Rating: 1 star
+Very disappointed, been with this practice for over 30 years (longer than most of the doctors and staff) and now I am deemed to be leaving the "catchment area" I have been told I have to register with another practice (I now live 1.9 miles away from here)
+
+Author: Samer Haggag
+Date: 6 years ago
+Rating: 1 star
+I came to this place a week ago and asked the receptionist to register. She gave me a Form and filled out the required data. She asked me to come after a week to see the doctor.When I came on time, she said I didn't find your name in today's interviews. If you want to meet him again, you should fill in the data again.Is this negligence normal? I do not recommend this place to any one there are neglected staff
+
+Author: Marvin Jackson
+Date: 8 years ago
+Rating: 1 star
+Had to report this surgery to the Care quality Commission been trying to get appointment now for 4 weeks and report female receptionist to greater Manchester police for abusive behaviour. Practice manager needs sacking very patronising obnoxious. My advice the GP need to replace her she told me she could not care less how Ill I am just go to walk in centre . Shocking

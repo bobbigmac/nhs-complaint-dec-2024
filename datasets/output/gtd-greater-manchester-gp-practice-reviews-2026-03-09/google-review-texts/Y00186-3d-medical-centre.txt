@@ -3,59 +3,553 @@ Canonical code: Y00186
 Postcode: BL3 5DP
 Google Maps title: 3D Medical Centre
 Google rating: 4.1
-Google review count: 84
-Google Maps URL: https://www.google.com/maps/place/3D+Medical+Centre/@53.5729651,-2.4437724,17z/data=!4m8!3m7!1s0x487ba7af91d92547:0xc8da144ad517e632!8m2!3d53.5729651!4d-2.4437724!9m1!1b1!16s%2Fg%2F1tycw5_h?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 85
+Google Maps URL: https://www.google.com/maps/place/3D+Medical+Centre/@53.609797,-2.4322447,11.75z/data=!4m8!3m7!1s0x487ba7af91d92547:0xc8da144ad517e632!8m2!3d53.5729651!4d-2.4437724!9m1!1b1!16s%2Fg%2F1tycw5_h?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.0
+Review collection mode: full_feed
+Review cards collected: 85
+Owner replies collected: 38
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y00186-3d-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Alzoss Alzosss
+Date: 18 hours ago
+Rating: 5 stars
+Loved the service, had my bloods took today and the team was fantastic
 
 Author: Qasim London Shah
 Date: 3 months ago
 Rating: 5 stars
 Yazleen best receptionist very helpful and do appreciate her hard work and support the patient in every way possible.
+Practice response date: 2 months ago
+Practice response:
+Dear Qasim, Thank you for your recent positive review! I will share with the wider team. If you would like to discuss further please contact the surgery. Kind regards Georgina Practice Manager 3D Medical Centre
 
 Author: Shaukat Ali
-Date: Edited 5 months ago
+Date: Edited 6 months ago
 Rating: 5 stars
 Very good surgery and service overall, especially receptionist Yasmin handles calls very efficiently and professionaly,very polite,kind and helpful to all patients.Thanks. and keep it up.
+Practice response date: 5 months ago
+Practice response:
+Dear Shaukat Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
 
 Author: Peter Tyson
 Date: Edited 7 months ago
 Rating: 1 star
 Shocking treatment staff are so rude trying to get appointment for emergency and saying a nurse will call me worst surgery in whole UK it should be closed down worstttt
+Practice response date: 9 months ago
+Practice response:
+Dear Peter We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Should you wish to discuss this further please ask to speak with the assistant practice manager Many thanks Practice Manager
 
 Author: Sanjay Savani
 Date: 9 months ago
 Rating: 1 star
 Absolute shambles of a place. Two maternal vaccines cancelled for my wife. No contact just get there and it has been cancelled. No nurse. No real reason. Again cancelled today. For a working person whilst pregnant to get there and take time off work each time to be met with a cancellation of which we were not informed. Some times I wonder NHS is perfect abbreviation for National Hopeless Service! Bunch of incompetent staff and doctors work there. Change your surgery if you want any medical attention. JUST CANCELLED APPOINTMENTS HERE.
+Practice response date: 8 months ago
+Practice response:
+Dear Sanjay, We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Should you wish to discuss this further please ask to speak with the assistant practice manager Many thanks Practice Manager
 
 Author: Sana Ahmad
 Date: 11 months ago
 Rating: 1 star
 Worst GP ever they close the GP whenever they feel like without caring about the patients , even in the opening times
+Practice response date: 10 months ago
+Practice response:
+Dear Sana We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Should you wish to discuss this further please ask to speak with the assistant practice manager Many thanks Practice Manager
 
 Author: Hetal Sangani
 Date: 11 months ago
 Rating: 5 stars
+Hi Hetal Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+Practice response date: 10 months ago
+Practice response:
 Hi Hetal Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
 
 Author: Slah Din
 Date: a year ago
 Rating: 5 stars
 Hi Slah Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+Practice response date: 10 months ago
+Practice response:
+Hi Slah Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
 
 Author: Matthew Gowens (Matt)
 Date: a year ago
 Rating: 1 star
 Lazy Dr, extremely self minded and never listens to patients. You'll get better service from a Henry hoover. Do yourself and you health a favour and get a different GP
+Practice response date: a year ago
+Practice response:
+Dear Matthew, We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Many thanks Vicki Redford Practice Manager
 
 Author: Lu Lawrence
 Date: Edited a year ago
 Rating: 1 star
 Shocking treatment of patients. Was supposed to have a dr call at 8:20am Monday and still no call by 8:52. When I do see a dr they don me off and tell me my bloods are ok without further looking into why I have chronic fatigue and have knee problems for over a decade. Nothing gets looked into properly, they do the bare minimum. If your only a dr for the money then your in the wrong job. Dr khan more like Dr can’t!!
+Practice response date: a year ago
+Practice response:
+Dear Lu We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist … More
+
+Author: Lu Lawrence
+Date: Edited a year ago
+Rating: 1 star
+Shocking treatment of patients. Was supposed to have a dr call at 8:20am Monday and still no call by 8:52. When I do see a dr they don me off and tell me my bloods are ok without further looking into why I have chronic fatigue and have knee problems for over a decade. Nothing gets looked into properly, they do the bare minimum. If your only a dr for the money then your in the wrong job. Dr khan more like Dr can’t!!
+Practice response date: a year ago
+Practice response:
+Dear Lu We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Many thanks Vicki Redford Practice Manager
 
 Author: Alicja Basharyar
 Date: a year ago
 Rating: 1 star
 Absolutely shocking awful GP. I am diagnosed PCOS patient that just needed a referral for a fertility treatment. After moving to Bolton I registered with this GP hoping for the best knowing I would need a referral as a patient that deals with PCOS for years. I came in January to ask for the referral. I was told that it would be send right away. I expected to wait , because everyone knows the state NHS currently is. But after few months of not hearing anything in regards to fertility treatment I started to push more and more to learn what is going on with my referral only to find out that the referral was not sent at all! I found out about in July after 7 months of waiting for the treatment! Finally,my referral was sent out by the end of July. I still didn’t hear anything about appointment for my treatment so I called Royal Bolton that advised me to ask GP for a letter to speed up my referral. So I made telephone consultation with Dr Khan(the same thy told me he would refer me right away back in January)to ask for it. He said he would issue the letter. This consultation took place last Monday. So I came with my husband last Friday to ask what is going on with the letter. I was told it would be done today and I would be able to see it in the app. I kept checking and still nothing! Absolutely shocking! Not to mention in the meantime of all of it back in April I was bleeding and in pain and I was told by Dr Khan that it’s fine and I should wait for fertility appointment as it would be addressed then! I was bleeding for few weeks and in pain! Shocking ! I absolutely do NOT recommend this practice that does NOT meet any standards! I will be leaving them together with my husband.👎👎👎👎
+Practice response date: a year ago
+Practice response:
+Dear Alicja, We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Many thanks Vicki Redford Practice Manager
+
+Author: sana khan
+Date: a year ago
+Rating: 1 star
+I needed an appointment for my 10 year old son urgently, he’s not been eating for the past few weeks. And was told by the receptionist that they were fully booked for the next few weeks and I had no chance of getting an appointment. When I asked again she proceeded to behave rudely and rather aggressive. Absolutely ridiculous there’s no need for a receptionist to act like this.
+Practice response date: a year ago
+Practice response:
+Dear Sana, We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Many thanks Vicki Redford Practice Manager
+
+Author: BLUE ROCKS
+Date: a year ago
+Rating: 1 star
+Out of my regular prescription. Booked phone appointment but nobody called. Than Booked another appointment but again nobody called. When i call them and they said doctor can call anytime during whole day.
+Practice response date: a year ago
+Practice response:
+Dear Blue Many thanks for your feedback. We are sorry that your recent experience has not been a positive one. Please can you contact the surgery on 01204 463246 and ask to speak with the Assistant Practice Manager providing your full details so we can investigate this matter for you. Kind regards Practice Manager
+
+Author: Rim Jhim
+Date: Edited a year ago
+Rating: 5 stars
+Best surgery, doctors are so nice,staff are so cooperative especially rehana.
+Practice response date: 3 years ago
+Practice response:
+Dear Rim Jhim Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Matanaha muliyoxo
+Date: 2 years ago
+Rating: 1 star
+The receptionist I very good it’s the doctors tells you you are okay while you literally sick and if you go to emergency they will tell you how you sick and how it affects you but this doctor here know nothing absolutely nothing I wonder how he become a doctor
+Practice response date: 2 years ago
+Practice response:
+We apologise that the experience you have had with the practice has not been a positive one. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Many thanks Practice Manager 3D Medical Centre
+
+Author: Uzma Maqsood
+Date: 2 years ago
+Rating: 4 stars
+Dear Uzma Thank you so much for taking the time to leave this review! I will be sure to pass your review to the rest of the practice staff! Many Thanks 3D Medical Centre
+Practice response date: a year ago
+Practice response:
+Dear Uzma Thank you so much for taking the time to leave this review! I will be sure to pass your review to the rest of the practice staff! Many Thanks 3D Medical Centre
+
+Author: S S
+Date: 3 years ago
+Rating: 1 star
+Useless staff and gp
+Practice response date: 2 years ago
+Practice response:
+We apologise that the experience you have had with the practice has not been a positive one. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. Many thanks Practice Manager 3D Medical Centre
+
+Author: tibor kotlar
+Date: 3 years ago
+Rating: 5 stars
+Good quality
+Practice response date: 2 years ago
+Practice response:
+Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff! Many thanks Practice Manager 3D Medical Centre
+
+Author: Danish Azhar Iqbal
+Date: 3 years ago
+Rating: 5 stars
+Dear Danish Thank you so much for taking the time to leave this review! I will be sure to pass your review to the rest of the practice staff! Many Thanks Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Danish Thank you so much for taking the time to leave this review! I will be sure to pass your review to the rest of the practice staff! Many Thanks Practice Manager
+
+Author: Ahmed Tanveer
+Date: 3 years ago
+Rating: 5 stars
+Very pleasant experience, nice receptionist and the phelobotomist Done the job professionally
+Practice response date: 2 years ago
+Practice response:
+Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff! Many thanks Practice Manager 3D Medical Centre
+
+Author: Mahmood Choudhry
+Date: 3 years ago
+Rating: 5 stars
+Dear Mahmood Thank you so much for taking the time to leave this review! I will be sure to pass your review to the rest of the practice staff! Many Thanks Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Mahmood Thank you so much for taking the time to leave this review! I will be sure to pass your review to the rest of the practice staff! Many Thanks Practice Manager
+
+Author: Javad KHAN
+Date: 3 years ago
+Rating: 5 stars
+Everything okay
+
+Author: Firoza raheema Patel
+Date: 3 years ago
+Rating: 5 stars
+Very efficient on time
+Practice response date: 3 years ago
+Practice response:
+Dear Firoza Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager
+
+Author: Shak CH
+Date: 3 years ago
+Rating: 5 stars
+Shak CH3 reviews3 years ago
+
+Author: louise kay
+Date: 3 years ago
+Rating: 5 stars
+Very friendly staff - Really put you at ease. Couldn’t recommend highly enough
+
+Author: Abdul Randera
+Date: 3 years ago
+Rating: 1 star
+Feel the service is very poor and you have to beg for them to do something Receptionist are good
+
+Author: marion speak
+Date: 3 years ago
+Rating: 5 stars
+marion speak1 review3 years ago
+
+Author: abdul ghafar
+Date: 3 years ago
+Rating: 5 stars
+its very good staff and doctors properly listen your problem very nice .
+Practice response date: 3 years ago
+Practice response:
+Dear Abdul Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Logan And Jack Boxing
+Date: 3 years ago
+Rating: 5 stars
+Logan And Jack Boxing3 years ago
+
+Author: Juo
+Date: 3 years ago
+Rating: 5 stars
+Juo3 years ago
+
+Author: Logan Hinder
+Date: 3 years ago
+Rating: 5 stars
+Logan Hinder2 photos3 years ago
+
+Author: Leesa Hamer
+Date: 3 years ago
+Rating: 5 stars
+Leesa Hamer3 reviews3 years ago
+
+Author: Sila Solanki
+Date: Edited 3 years ago
+Rating: 5 stars
+Sila SolankiEdited 3 years ago
+
+Author: Dilaver Valli
+Date: 3 years ago
+Rating: 5 stars
+Dilaver Valli3 years ago
+
+Author: Wasay
+Date: 3 years ago
+Rating: 5 stars
+Very good thank you
+
+Author: Nabeel Patel
+Date: 3 years ago
+Rating: 5 stars
+Went for a blood test, didn’t wait long for my appointment nurse was very nice and genuine all around it was good
+Practice response date: 3 years ago
+Practice response:
+Dear Nabeel Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Katie Wilson
+Date: 3 years ago
+Rating: 5 stars
+All staff are great from receptionist's to gp's / nurses. fairly easy to get through on the phone and to get an appointment.
+Practice response date: 3 years ago
+Practice response:
+Dear Katie Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Anas
+Date: 3 years ago
+Rating: 5 stars
+Absolutely brilliant
+
+Author: yas o
+Date: Edited 3 years ago
+Rating: 5 stars
+I have seen a nurse today she was very good and very helpful 😊😊😊😊😊 five stars …
+Practice response date: 3 years ago
+Practice response:
+Dear Yas Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: perse kabod
+Date: 3 years ago
+Rating: 5 stars
+perse kabod3 years ago
+
+Author: MPK & Co.
+Date: 3 years ago
+Rating: 5 stars
+MPK & Co.1 review3 years ago
+
+Author: Sundy Tyne
+Date: 3 years ago
+Rating: 5 stars
+Sundy Tyne3 years ago
+
+Author: MPK Kabod
+Date: 3 years ago
+Rating: 5 stars
+Staff are so caring, always have an amazing experience
+Practice response date: 3 years ago
+Practice response:
+Dear MPK Kabod Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Zeeshan Mazhar
+Date: 3 years ago
+Rating: 5 stars
+Doctor is very nice kind and specially receponist is very nice helpful and very good with patients
+Practice response date: 3 years ago
+Practice response:
+Dear Zeesham Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Chel J
+Date: 3 years ago
+Rating: 5 stars
+Chel J4 reviews3 years ago
+
+Author: Fakhar Zaman
+Date: 3 years ago
+Rating: 5 stars
+Amazing very good communication
+Practice response date: 3 years ago
+Practice response:
+Dear Fakhar Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Fara Hussain
+Date: 3 years ago
+Rating: 5 stars
+Very nice staff & the receptionist Rehana is lovely’ every time she listen and sort out my appointment issues.
+Practice response date: 3 years ago
+Practice response:
+Dear Fara Thank you for your recent positive review I will share with the wider team and Rehana. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Sadia Jabeen
+Date: 3 years ago
+Rating: 5 stars
+Helps all the time and quickly gives an appointment
+Practice response date: 3 years ago
+Practice response:
+Dear Sadia Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Ladislav Lakatos
+Date: 3 years ago
+Rating: 5 stars
+Ladislav Lakatos2 reviews3 years ago
+
+Author: Michael Hagger
+Date: 3 years ago
+Rating: 1 star
+Michael Hagger3 years ago
+
+Author: Zara Duxbury
+Date: 3 years ago
+Rating: 5 stars
+Love this practice. All Dr's I have seen have been fantastic and receptionists are friendly and helpful
+
+Author: Muhammad Ansar
+Date: 3 years ago
+Rating: 5 stars
+Muhammad Ansar1 review3 years ago
+
+Author: Zeishan Hussain
+Date: 3 years ago
+Rating: 5 stars
+Great staff from receptionist to the doctors 👏 …
+Practice response date: 3 years ago
+Practice response:
+Dear Zeishan Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Shaz Khan
+Date: 3 years ago
+Rating: 5 stars
+Rihana was very helpful, With my visit to the 3D medical surgery today. Thank you for Rihana Faizal khan
+Practice response date: 3 years ago
+Practice response:
+Dear Shaz Khan Thank you for your recent positive review I will share with Rehana and the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Amna Ijaz
+Date: 3 years ago
+Rating: 5 stars
+Amna Ijaz3 reviews3 years ago
+
+Author: Hastyar Ali
+Date: 3 years ago
+Rating: 5 stars
+Hastyar Ali3 years ago
+
+Author: Jordan Redford
+Date: 3 years ago
+Rating: 5 stars
+Great practice and friendly receptionists that work there
+
+Author: Ghtht Fyguug
+Date: 3 years ago
+Rating: 5 stars
+Ghtht Fyguug3 years ago
+
+Author: A China
+Date: 3 years ago
+Rating: 1 star
+I just wanted to start off and say this review is nothing against the receptionist which are are providing great level of service and are really nice and polite. My concern is more towards the GP on how he diagnosed my issue using Google search and also advising me that the treatment is no longer covered by NHS. After consulting a private healthcare centre they advised me re booking with a different GP or practice.
+Practice response date: 3 years ago
+Practice response:
+Dear A China We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. I am personally pleased that you have a good service from our reception team The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. May we take this opportunity of thanking you again for bringing your concerns to my attention and may we assure you of our continued service to you at all times. If you would like to discuss further please contact the surgery and ask to speak to the Practice Manager Many thanks Practice Manager 3D Medical Centre
+
+Author: Tahir Ahmad
+Date: 3 years ago
+Rating: 5 stars
+Good informative oppointment
+Practice response date: 3 years ago
+Practice response:
+Dear Tahir Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager V Redford
+
+Author: Fazal Abbas
+Date: 3 years ago
+Rating: 5 stars
+Dear Fazel Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager V Redford
+Practice response date: 3 years ago
+Practice response:
+Dear Fazel Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager V Redford
+
+Author: Shaz Khan
+Date: 3 years ago
+Rating: 1 star
+It's impossible to get appointment with doctors in this surgery. At last got appointment which was after two months but when I got to surgery to see doctor it was already cancelled and even no one informed me abouts cancellation. The receptionist was very rude. I had strok and heart problems but I'm not getting quality treatments and no follow-ups.
+
+Author: victoria omowele
+Date: 3 years ago
+Rating: 5 stars
+Prompt response. Nice and friendly Doctor.
+Practice response date: 3 years ago
+Practice response:
+Dear Victoria Thank you for your recent positive review I will share with the wider team. If you would like to discuss further please contact the surgery Kind regards The Practice Manager 3D Medical Centre
+
+Author: Ali Khan
+Date: 3 years ago
+Rating: 5 stars
+Ali Khan2 reviews3 years ago
+
+Author: Salma Badat
+Date: 3 years ago
+Rating: 5 stars
+Is good all ok seen by aim hca
+
+Author: Ehsan Sarwar
+Date: 3 years ago
+Rating: 4 stars
+Ehsan Sarwar1 review3 years ago
+
+Author: Farooq Ahmed
+Date: 3 years ago
+Rating: 5 stars
+Very kind very good seen by hca today for bloods
+
+Author: Mian Mazhar
+Date: Edited 3 years ago
+Rating: 5 stars
+Good service very good seen by hca helpful
+
+Author: Ahmad Haji star
+Date: 3 years ago
+Rating: 5 stars
+All right is the best seen by hca aimee
+
+Author: Mohammad Afzalbibi
+Date: 3 years ago
+Rating: 5 stars
+Good and kind seen by Aimee hca
+
+Author: Sham Khan
+Date: 3 years ago
+Rating: 3 stars
+Sham Khan3 years ago
+
+Author: Darina Melisova
+Date: 3 years ago
+Rating: 5 stars
+Darina Melisova3 years ago
+
+Author: Mondlane Lima
+Date: Edited 3 years ago
+Rating: 4 stars
+Mondlane Lima4 reviewsEdited 3 years ago
+
+Author: shabbir ahmad
+Date: 3 years ago
+Rating: 5 stars
+Very good Doctor
+
+Author: Fazila Mulla
+Date: 3 years ago
+Rating: 5 stars
+Fazila Mulla4 reviews3 years ago
+
+Author: Adrienn Karolyi
+Date: 3 years ago
+Rating: 5 stars
+My nurse was so kind,and careful
+
+Author: Shama Khan
+Date: 3 years ago
+Rating: 1 star
+Shama Khan3 years ago
+
+Author: R Khan
+Date: 4 years ago
+Rating: 5 stars
+R Khan2 reviews4 years ago
+
+Author: mariyah
+Date: 4 years ago
+Rating: 1 star
+doc Bashir and doctor khan are the worst doctors honestly. best to leave this GP. they just worry patients. could give someone a heart attack. this GP is shambles
+Practice response date: 4 years ago
+Practice response:
+Dear Mariyah, We apologise that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will ultimately assist us to improve the services we deliver. The surgery endeavours to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. May we take this opportunity of thanking you again for bringing your concerns to my attention and may we assure you of our continued service to you at all times. Many thanks 3D Medical Centre
+
+Author: Adel Alfayez
+Date: 5 years ago
+Rating: 1 star
+Could you please provide an email to contact You. Need an urgent communication if you could. I'm from Saudi Arabia …
+
+Author: Adel Alfayez
+Date: 5 years ago
+Rating: 1 star
+Could you please provide an email to contact You. Need an urgent communication if you could. I'm from Saudi Arabia Thanks and awaiting reply ASAP
+
+Author: irfan mohammad
+Date: 5 years ago
+Rating: 4 stars
+irfan mohammad5 years ago
+
+Author: wasif nazir
+Date: 5 years ago
+Rating: 5 stars
+wasif nazir2 reviews · 8 photos5 years ago
+
+Author: Yasmin Begum
+Date: 6 years ago
+Rating: 5 stars
+Very good service

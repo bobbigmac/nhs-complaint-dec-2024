@@ -4,11 +4,16 @@ Postcode: BL3 4LU
 Google Maps title: Deane Clinic
 Google rating: 2.0
 Google review count: 85
-Google Maps URL: https://www.google.com/maps/place/Deane+Clinic/@53.5674818,-2.4648549,17z/data=!4m8!3m7!1s0x487ba79124088d29:0xf048f36164d79c90!8m2!3d53.5674818!4d-2.4648549!9m1!1b1!16s%2Fg%2F1hc67gtvr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Deane+Clinic/@53.567485,-2.4674352,17z/data=!4m8!3m7!1s0x487ba79124088d29:0xf048f36164d79c90!8m2!3d53.5674818!4d-2.4648549!9m1!1b1!16s%2Fg%2F1hc67gtvr?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 85
+Owner replies collected: 0
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82660-deane-clinic-1.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: thuvarakan suthagar
 Date: 3 months ago
@@ -16,17 +21,17 @@ Rating: 5 stars
 Wonderful and generous environment
 
 Author: FallSafeProtection
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 I have been a patient at this practice since 2019. The doctors and nurses have treated me very well. Highly recommend this practice!
 
 Author: S S
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 I honestly believe that Deane Clinic is a brilliant practice. Dr Selvarajan had looked after me very well and the staff are both very kind and friendly to me. I don’t understand why others have put bad reviews. I hope this practice gets the recognition which they deserve!
 
 Author: Neal P. Taylor
-Date: Edited 4 months ago
+Date: Edited 5 months ago
 Rating: 1 star
 UPDATE: Having failed to make a appointment on the phone, spent 3 months talking to the receptionist to get the correct repeat prescription. Still causes anxiety attacks every time I reorder. Still unable to get an appointment, not even sure a doctor works here. Was called in for a health review with the nurse, first appointment of the day, and still 30 minutes late. Bravely have filled in the online appointment request, after doing the automated self triage, 2 weeks and no response. Have started conversations with the Grim Reaper instead, as I am likely to see him before the doctor, even if I live another 45 years. Do yourself a favour and avoid this place, actively seeking a new doctor, but it may be quicker to get qualified myself. ☠️☠️☠️
 
@@ -36,17 +41,17 @@ Rating: 1 star
 The absolute worst clinic, book an appointment they’ll cancel it to fit their cousins or friends in, the doctors never well enough to see the patients. On top that they don’t listen to anything you have to say. Oh and the receptionist is a doctor now . Whilst in an appointment with one of them they called me to ask where I was. Then booked my appointment for midnight. useless bunch of people that get paid too mess patients about all day. Literally wouldn’t recommend this surgery to anyone.
 
 Author: Alexandra Simm
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
 Can't ask for a better doctor. He has been amazing with us over the years he is very patient. And very caring as my husband needs a lot of care
 
 Author: Ibrar hussain Hussain Bibi
-Date: 8 months ago
+Date: 9 months ago
 Rating: 1 star
 No appointments ever, really really bad receptionist this place should be closed down, furthermore the doctors wouldn't know anything or any way to treat you, you'd better treatment anyplace else!!!!
 
 Author: Jayshree
-Date: 8 months ago
+Date: 9 months ago
 Rating: 5 stars
 I have been patient at Deane clinic since 2006, Dr , reception staff and nurses are brilliant they always listen to what I am saying and act promptly to sort my treatment and or give me appropriate self care advice. Thank you
 
@@ -56,6 +61,381 @@ Rating: 1 star
 Worst surgery in the whole world, Dr Salvarajan is never available, I think his wife and son look after the management side. No appointments available. Dr don't want to listen and got too much attitude. I think sooner or later the surgery will close down for poor service.
 
 Author: Urbanite Productions.
-Date: 10 months ago
+Date: 11 months ago
 Rating: 1 star
 Only offer same day appointments and are closed on weekends. What do you do if you work Monday to Friday? Are you supposed to just...die? This clinic is only for unemployed people apparently, what a rediculous system.
+
+Author: Farah Asghar
+Date: 11 months ago
+Rating: 5 stars
+Farah Asghar11 months ago
+
+Author: Haroon Ghorzang
+Date: a year ago
+Rating: 1 star
+The reception has absolutely no respect. They have no manners when they speak. They are not friendly. They always speak with aggression. What terrible people they are.
+
+Author: sajid vaka
+Date: a year ago
+Rating: 5 stars
+I have been a patient at this surgery for decades, brilliant service from Dr silvarajan & the clinical nurses & all the reception staff, keep up the good work 👏 …
+
+Author: Matt P
+Date: a year ago
+Rating: 1 star
+Avoid! The sooner I can get my father to a different GP the better. Would be zero stars if it would allow it
+
+Author: Sathiya Yogarajah
+Date: a year ago
+Rating: 5 stars
+Dr Selvarajan and the rest of the staff have looked after me very well. Thank you for everything.
+
+Author: Rabia Hasan
+Date: a year ago
+Rating: 1 star
+Absolute joke of a surgery, the “new” reception staff are undertrained and underskilled to answer simple questions, the only good asset to the clinic is Saeed!!!
+
+Author: Nazmin patel
+Date: a year ago
+Rating: 1 star
+Nazmin patela year ago
+
+Author: Jorge Chango
+Date: a year ago
+Rating: 1 star
+Jorge Chango2 reviews · 18 photosa year ago
+
+Author: Andrew wallace
+Date: Edited a year ago
+Rating: 5 stars
+The reception staff are very pleasent caring and very understanding and supportive the doctor dr sylvarajan who is very helpful I suffer with a few illnesses dr sylvarajan will see me at short notice or will phone me to arrange medication if im to ill to attend the surgery or if I'm poorly or In need of treatment the surgery is always clean and tidy the reception staff are always polite and will advise and assist me and are eager to help and support everyone...
+
+Author: Zuzana Filova
+Date: 2 years ago
+Rating: 1 star
+Awful. If you manage to get through someone on the phone, you face rood, unhelpful receptionist, appointments system is ridiculous and when u eventually get to see someone its not even GP, but a practitioner thats not really bothered to help. Really bad.
+
+Author: Suzanna Cook
+Date: 2 years ago
+Rating: 1 star
+My husband was coughing up blood. Contacted surgery for appointment with doctor. Could only speak to receptionist. Got call back to say nurse had prescribed antibiotics. She Didn't think a problem. That was in August. Changed surgery. Today 22nd December husband saw consultant after many tests to be diagnosed with stage 4 lung cancer. This surgery is not fit for purpose and we will be suing for lack of care. If you value your health, then find another doctor.
+
+Author: hanna ahmed
+Date: 2 years ago
+Rating: 1 star
+Terrible surgery. I wouldn't recommend this practise to anyone. Receptions and Staff are all really bad at their job. Only one who isn't is Syed. They always give the wrong information, I'm really surprised they haven't been closed down for incompetence.
+
+Author: Darren Bannister
+Date: Edited 2 years ago
+Rating: 5 stars
+Dr m selvarajan very good my thanks to you and reception staff for all your help.
+
+Author: Doodle Fox
+Date: 2 years ago
+Rating: 1 star
+I wouldn't recommend this place to my worst enemy, the receptionists decide if you're sick enough to be seen and god forbid you actually need help that day. I had a severe UTI that left me PARALYZED for a week, and what did Janette say? 'leave it a few days to clear up on its own', when I should've called for an ambulance! Worst doctors office ever. If I could give negative stars I would.
+
+Author: Simon Holt
+Date: Edited 2 years ago
+Rating: 5 stars
+I had absolutely superb service from this top notch clinic. Also from the pharmacy. Couldn’t fault their excellent advice and care. I’m really saddened by the terrible reviews that the clinic has received over the years. They could not have been more helpful to me. Shocked!
+
+Author: Josef Chosse
+Date: Edited 2 years ago
+Rating: 1 star
+I try make appointment, and reception says sorry we don't have space..HOROR this clinic......
+
+Author: Sue Taylor
+Date: 2 years ago
+Rating: 1 star
+Needs new doctor however Sid if amazing
+
+Author: Danny Oldham
+Date: 2 years ago
+Rating: 1 star
+Avoid this doctors waste of time should be closed down just another bunch of people rinsing the nhs
+
+Author: adoll kadi
+Date: Edited 2 years ago
+Rating: 1 star
+adoll kadi3 reviewsEdited 2 years ago
+
+Author: Mevill Eze
+Date: 2 years ago
+Rating: 1 star
+Terrible system and attitude! They do not really care about the patients. As long as their salaries keep coming, they care about nothing else, especially Dr. M. Selvarajan who takes himself as a demigod!
+
+Author: Jason Doherty
+Date: 3 years ago
+Rating: 1 star
+Absolutely disgraceful service. My wife needed to see the doctor urgently, and they said they would ring her back yesterday. No phone call or anything asked to speak to the manager of the place, and the feedback is that she is working from home and we have to put a letter in before she would speak to us. The next stop is possibly looking at taking it legal now. Please, people, don't use this dump. They are not interested in you.
+
+Author: David Nield
+Date: 3 years ago
+Rating: 1 star
+David Nield2 reviews3 years ago
+
+Author: Paris Hayes
+Date: 3 years ago
+Rating: 5 stars
+Julian is great! Friendly guy and nice to chat with!
+
+Author: T H
+Date: 3 years ago
+Rating: 5 stars
+Been with them for years. Always helped me and the whole family.
+
+Author: Ana Tavares
+Date: 3 years ago
+Rating: 3 stars
+Every time i call them,the ladies on reception take too long to pick up the call. For a prescription,i need to go there personally 2 or 3 times.
+
+Author: Erika Sutton
+Date: 3 years ago
+Rating: 1 star
+I have been at this surgery since we moved to Bolton and it’s a complete joke only reason we stayed was because Jannette was fantastic now that she’s retired going to have to find somewhere else to take my family! Been waiting a week for a telephone consultation as your not allowed to be seen anymore until you have a phone consultation first and now I can’t get through as they keep cutting of the call and all I’m trying to find out if I’m still on the list for the phone call I was meant to have Tuesday and I’ve been ringing since this morning it is now 4.30 joke!!!
+
+Author: Adam Appleby
+Date: 3 years ago
+Rating: 1 star
+The car park is absolutely covered in ice. There has been no attempt at clearing the snow from last weekend and because of the lower temperature, the snow has frozen and turned into ice. Great if you're looking for a free ice rink, not so great for disabled people.
+
+Author: Nick Shaw
+Date: 3 years ago
+Rating: 5 stars
+Great place from my point of veiw, the doctors are very good and have time to listern to you, i have had to visit several times this year, the staff from reception to doctors have bin great with me and have helped me on every visit whilst under pressure, keep up the good work .
+
+Author: Nick B
+Date: 3 years ago
+Rating: 1 star
+Shocking service ring up about a text that I’ve received about a blood test so I ring up to see what it’s for an ur passed from pillow to post asked for date of birth twice because the woman I was speaking to was dealing with a patient
+
+Author: Kirsty haslam
+Date: 3 years ago
+Rating: 1 star
+Reception need basic training on how to answer a phone, speak politely and keep their nose out of things which do not concern them!
+
+Author: Saleha Patel
+Date: 4 years ago
+Rating: 1 star
+Absolute embarrassment! Saeed and janette have been amazing since I moved to this surgery but the Dr is always late, doesn’t let you even explain your problem, rude, talks over you and makes the whole process difficult when he is meant to do the complete opposite. I write this the first time after being fobbed off by this dr on numerous occasions! Probably the worst dr I have ever ever come across. Definitely changing surgery!
+
+Author: Chrissie Moulding
+Date: 4 years ago
+Rating: 5 stars
+I moved from the surgery a few years ago to a closer one but have moved back here, I have always found the reception staff very helpful, Jeanette is wonderful and saheed is always friendly and very good at what he does. The pharmacy is very well organised for repeat prescriptions and helpful.
+
+Author: Bazman
+Date: 4 years ago
+Rating: 1 star
+Bazman2 reviews · 1 photo4 years ago
+
+Author: Mariola Anna Nitka
+Date: 4 years ago
+Rating: 1 star
+I waited one week for my sick leave, I do not recommend it. A good time to change clinics.
+
+Author: Becki Wright
+Date: Edited 4 years ago
+Rating: 1 star
+Utter joke at the moment normally don't have an issue but been with 25mins for someone to answer phone. Also suffer from mental health and they don't seem to care its ur a name on a piece of paper made me feel worthless Shaeed and Jeanette are wonderful whenever I see them
+
+Author: Coolboyslim cbs
+Date: 4 years ago
+Rating: 5 stars
+I have to say never had a problem in 15yrs saheed and Jeanette and the receptionist have been awesome. The only issue I have had was postcode lottery on test strips. The wait can be long but I've been a and e and waited much much longer. Yes it's hard to see main doctor but that's high demand and anything the nurses don't know they ask doctor who 9 out of 10 will come check you over just to make sure..
+
+Author: Alison Kusmierek
+Date: 4 years ago
+Rating: 5 stars
+Very helpful receptionists and pharmacy staff always from my experience. Dr Selverajan is an extremely professional Doctor and has time for patients to deal with properly. I have been using their practice for over 10 years now I have seen Saeed and Janette too, also and they have been nothing but super professional. Sometimes there is a wait but that is no different to anywhere in the NHS its what you may expect when we have one of the best healthcare services in the world. Really do not understand why people on google feel the need to put terrible reviews with NOTHING concrete to back it up that is ridiculous, also if I encountered any issues such as what people are saying I would speak to the Doctor about it first. I had one small complaint one time and the Doctor sorted it out immediately. Blaming the clinic for not being able to get an appointment for 3 weeks is hardly their fault when the NHS is drowning with people wanting appointments, if you ring at 8:30am you can get an emergency appointment. I have never had any trouble getting through to them on the phone. People should be taking advice from their doctors as they know far better than most of us! Thank you Deane Clinic
+
+Author: deborah gingell
+Date: 4 years ago
+Rating: 1 star
+Worst clinic ever and very rude receptionists.trying hard to find another Doctors.
+
+Author: Dawood Patel
+Date: 4 years ago
+Rating: 5 stars
+Dawood Patel2 reviews4 years ago
+
+Author: Ophelia Poppi Anderson-Jones
+Date: 4 years ago
+Rating: 1 star
+Ophelia Poppi Anderson-Jones3 reviews4 years ago
+
+Author: xda developers
+Date: 5 years ago
+Rating: 1 star
+Worst GP I ever experienced. The receptionists here (specially Indians) are very rude, disrespectful and even racist. They shout at people & try their best to make things difficult, inconvenient and unpleasant.
+
+Author: Jav
+Date: Edited 5 years ago
+Rating: 1 star
+The worst practice in Bolton. The place is dingy and miserable. Only one doctor so you'll NEVER be able to see him and receptionists are very unhelpful, they don't even pick up the phone sometimes and other times they misinform you. For example I once had a serious issue so I needed to come into the walk in clinic, the lady I spoke to told me to call in the morning at 9am (not before because they can't accept it). Next morning I call in at 9:02am and I'm told it's fully booked and to call earlier. I tried again the next day at about 8:30am and again I was too late... If you ever try and book a regular appointment they try and sway you and say "oh it'll be 2-3 weeks why don't you just come into the walk in?" But then you'll never get an appointment. They never apologise either and sometimes they make it seem like it's your fault for not working around their terrible system. I don't know if they are forced to use this system in place or they prefer it but it is not working. The only good thing about the place is the nurses who you'll end up seeing most of the time if you do manage to see anyone and they are very professional and competent. The doctor is too but you can tell he's overworked and trying to rush through your appointment most of the time, I feel a bit sorry for him but at the same time he needs to get the place in order with some better receptionists and a better system. Perhaps an extra doctor. Needless to say I have left and instantly get a much more reliable and smoother experience at my current GP even with all the COVID situation happening. I delayed writing this review just to see if all GPs were as bad as Deane Clinic and maybe they are all just overworked due to being on the NHS but my new practice has been very smooth and easy since I joined with the nicest staff and best service before and now during the COVID situation. Highly recommend avoiding Deane Clinic.
+
+Author: Ernesta B
+Date: 5 years ago
+Rating: 1 star
+Worst place in U.K.. Receptionist is rude, they have only one doctor who is always late and when I need to book an appointment for my newborn they can’t get me any date because doctor has gone on holiday for a month. When appointment has been booked they call me one day before to change the same appointment several times.
+
+Author: Christmas Noodle
+Date: 5 years ago
+Rating: 1 star
+This clinic has the rudest receptionist in uk i call it clinic from HELL ,, DISASTER !!!death is easier than treatment from this clinic!!
+
+Author: Yusuf Giga
+Date: 5 years ago
+Rating: 1 star
+One star is extremely generous. A terribly run practice, where profits seem to come before patients. Aggressive and overly defensive receptionists (rather than the expected tenacious and 'happy to help'). The GP places several layers between himself and the patients, making it difficult to be seen by him. In order to receive a telephone consultation, you're expected to phone between 08:00-09:00. However, you could be waiting for a call all day. Test samples aren't always interpreted in a timely manner - so you could be waiting for days for a call back, unnecessarily. The practice is rooted towards the bottom of the local GP league tables with good reason. My advice would be to find a practice that is capable of meeting your requirements at times of need. Time and time again, this practice has let me down. One area if hope - Saeed is courteous, caring and highly professional. If only the GP could be half as effective. Despite being in a great location, the practice is an all-round disappointment, based upon my experiences.
+
+Author: Laura Kemp
+Date: 5 years ago
+Rating: 1 star
+Rubbish
+
+Author: Sadiya Patel
+Date: 6 years ago
+Rating: 1 star
+Sadiya Patel1 review6 years ago
+
+Author: Musharaf Khalid
+Date: 6 years ago
+Rating: 1 star
+Absolute embarrassment. This place should be shut down and doctors should be sacked ! Awful service. They never pick up the phone. Rude receptionist. Embarrassing. That’s only word. What a con of a doctors clinic. They couldn’t care less about good service
+
+Author: Pony
+Date: 6 years ago
+Rating: 5 stars
+This doctor to me is caring and honest he shows consideration he has done more for me than any of my other doctors have he got me the help I needed with my issues and u can't fault him Jeannette and Saeed as well the receptionists are polite and helpful need more doctors like salvarajan people just get of his back he does what he can might of spelt his name right but who gives a monkeys he is a lone doctor doing his best
+
+Author: Anjum Khothi
+Date: 6 years ago
+Rating: 1 star
+Anjum Khothi3 reviews · 5 photos6 years ago
+
+Author: tomvic
+Date: 6 years ago
+Rating: 1 star
+Absolutely disgrace! Came in for a ‘walk-in’ one day at 9:55 (‘walk-in’ started at 10:30) and have been told by the receptionist that ‘’walk-in’ is fully booked! Waiting room was empty, just one lady with two kids, and me! Moving to another GP, and putting a formal complaint with NHS.
+
+Author: Nafisa Seth
+Date: 6 years ago
+Rating: 1 star
+Dr silveragen the main Dr is THE WORST DR I have ever had to deal with. He could not even help me with my 8 week baby that cries all the time. He said she is just a fussy baby and all she wants is attention. What dr would say that and not look further into it when I told him she has an issue it's not normal she is in pain I can tell. He sent me away saying nothing is wrong n she is chubby n wants attention. I had to go to A&E to get her seen and she was admitted in hospital dealing with the issue she really had and they were shocked dr silveragin did NOTHING.
+
+Author: Kashif Bashir
+Date: 6 years ago
+Rating: 5 stars
+Kashif Bashir6 reviews6 years ago
+
+Author: Andrew Atkinson
+Date: 7 years ago
+Rating: 1 star
+Just change your doctors like I did that's all I'm going to say
+
+Author: Samira Mohamed
+Date: 7 years ago
+Rating: 5 stars
+Samira MohamedLocal Guide · 33 reviews7 years ago
+
+Author: Andy Holland
+Date: 7 years ago
+Rating: 1 star
+Would rate the surgery a zero if possible, the receptionist was the rudest person I have ever come across, shouting at a college in front of all the patients, was also very rude to me when trying to book in and over the phone, will be making an official complaint about this member of staff to the NHS
+
+Author: sean counsel
+Date: 7 years ago
+Rating: 1 star
+Waist of space takes a life time for them to answer the phones and when you do finally get through and ask for an appointment they tell you it will be 3 to 4 weeks total waist of space
+
+Author: Egle Marciauskaite
+Date: 7 years ago
+Rating: 1 star
+Egle Marciauskaite1 review7 years ago
+
+Author: Yan Jones
+Date: 7 years ago
+Rating: 1 star
+Most dogshit GP surgery I have ever had the misfortune to be registered at. Only way to get an on the day appointment is the walk in clinic for which you have to arrive at 9:45 despite it not starting until 10:30. Minimum 45 minute regardless of how busy they are. This a great experience with small, sick children... Also smells of stale pikey in the waiting room.
+
+Author: Four Jones
+Date: 7 years ago
+Rating: 1 star
+This place is an absolute disgrace none of the staff know what there doing they are all full of excuses on why they can’t do there jobs and when you want to ask why they get extremely rude and aggressive. I phoned up for an appointment they gave me one two weeks later so I waited two weeks and they phoned me to say They had booked me on a bank holiday so I had to wait another two weeks complete waist of taxpayers money this place. honesty stay away from this place it’s the single worst experience I’ve ever had
+
+Author: ash U
+Date: 8 years ago
+Rating: 1 star
+Really poor surgery. Had to move for a simple diagnosis of asthma to a different surgery. The receptionist staff are equally ignorant and rude. My mum had been worn Glynn diagnosed by Dr. Silverajan and got reactions on her face. He still won't diagnose her fragile knees with arthritis whereas other health experts (e.g dermatologist) have assessed her condition and concluded she has pseuritic arthritis. Really unhappy with the clinicians but the nursing staff honestly do try their best. Overall a really poor practise with a lead doctor whose concern is commercial funding (in his pocket) by not referring patients to the extra services. 👎
+
+Author: Holly Smith
+Date: 8 years ago
+Rating: 1 star
+This practice is the most disorganised thing I have come to witness in my whole of life. Because of not being treated correctly by this practice I have had major surgery on my leg and have now lost it above my knee. Also the receptionists are very rude and unhelpful.
+
+Author: Tomek Zeli
+Date: 8 years ago
+Rating: 1 star
+3 useless and very rude receptionists, worst experience ever.
+
+Author: Monika Securum
+Date: 8 years ago
+Rating: 2 stars
+Very long waiting time, even with appointment you need to wait couple hours to be seen. The reception staff is quite often rude, but their clinician nurses are really amazing.
+
+Author: Shivani Patel
+Date: 8 years ago
+Rating: 1 star
+Worst surgery in Bolton. Several times where I have been to see the Dr and I have always been diagnosed with the wrong thing. I once visited Nurse Janet as I had chest pains and she said it was because I had ‘dislocated my shoulder’ ? Don’t think I’d be sat in a surgery with a dislocated shoulder, I’d be sat in A+E. I would rather suffer with an illness than visit this place. I have since moved to another surgery which is miles better.
+
+Author: Ajay Nayyer
+Date: 8 years ago
+Rating: 1 star
+on 8th January I called the clinic to book a appointment with gp. The receptionist asked wich days would suit me I said Monday’s because I’m off work and it’s easier as I do not have to rush back from work for an appointment and with the traffic on the m60 i May be late and miss my slot. The receptionist agreed and gave me an appointment on 22 jan. I accepted this and all was fine until 10am on the 22nd jan, my appointment had to be resecheduled because the nurse had phoned in sick at this stage I was confused and asked why was my appointment with a nurse? When I asked to see a GP. I had been given the answer I don’t know. So she came up with an idea to rearrange my appointment at 7pm on tues night I said no as I’m working till 6.30. Even one star is too generous.
+
+Author: Ashley Wears
+Date: Edited 8 years ago
+Rating: 1 star
+Has got to be the worse Dr's I've been with there's never a Dr to see the Dr him self is under investigation, when you do wanna see a Dr you've got to wait 2 weeks the only nice person in here is Janet and reception staff are nice also as soon as I get a new Dr I will be leaving a complaint with the gmc oh and there still taking on patents
+
+Author: Paul Morgan
+Date: 8 years ago
+Rating: 1 star
+3 weeks for an appointment
+
+Author: Liam Bower
+Date: 8 years ago
+Rating: 1 star
+Absolute joke of a doctors surgery, they run their surgery like people don't work and rely on you just being able to come down and wait for 2 hours in a walk in clinic their appointment system is at least a 2 week wait ..I would avoid this surgery at all costs, Another drain on the NHS Would be interesting to see how many patients are registered here ? The staff are friendly and professional but the place is being run into the ground.
+
+Author: Michael Richards
+Date: 9 years ago
+Rating: 1 star
+Absolutely terrible, everytime I book an appointment I have to sit in the waiting room for at least an hour and a half...what a joke.
+
+Author: Vittoria Murphy
+Date: 9 years ago
+Rating: 1 star
+If I could do a zero I would. Disgusting human beings. Will be making a formal complaint
+
+Author: Umar Matadar
+Date: 9 years ago
+Rating: 1 star
+Never helped me , this is the second time I rang em in a year ,when I told em that I'll pay for my travel vaccines for my son & daughter whose 3 & 1 year old she then told they had them in stock , before then she was lying saying none stock left !
+
+Author: Iram K
+Date: 9 years ago
+Rating: 1 star
+Iram K1 review9 years ago
+
+Author: rose beebee
+Date: 9 years ago
+Rating: 1 star
+rose beebee1 photo9 years ago
+
+Author: Faz P
+Date: 9 years ago
+Rating: 1 star
+Useless

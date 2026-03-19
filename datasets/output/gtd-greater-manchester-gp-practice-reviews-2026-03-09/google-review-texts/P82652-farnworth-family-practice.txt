@@ -4,19 +4,24 @@ Postcode: BL4 9AH
 Google Maps title: Farnworth Health Centre
 Google rating: 3.2
 Google review count: 30
-Google Maps URL: https://www.google.com/maps/place/Farnworth+Health+Centre/@53.546216,-2.4023761,17z/data=!4m12!1m2!2m1!1sFarnworth+Family+Practice+BL4+9AH!3m8!1s0x487ba61b9e431c2f:0xc9076d2eb0fd0003!8m2!3d53.546216!4d-2.39787!9m1!1b1!15sCiFGYXJud29ydGggRmFtaWx5IFByYWN0aWNlIEJMNCA5QUhaIyIhZmFybndvcnRoIGZhbWlseSBwcmFjdGljZSBibDQgOWFokgEObWVkaWNhbF9jbGluaWOaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTndlWFZRVnpkM1JSQULgAQD6AQQIIBBM!16s%2Fg%2F1tg8j8jy?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Farnworth+Health+Centre/@53.5461924,-2.4005294,17z/data=!4m12!1m2!2m1!1sFarnworth+Family+Practice+BL4+9AH!3m8!1s0x487ba61b9e431c2f:0xc9076d2eb0fd0003!8m2!3d53.546216!4d-2.39787!9m1!1b1!15sCiFGYXJud29ydGggRmFtaWx5IFByYWN0aWNlIEJMNCA5QUhaIyIhZmFybndvcnRoIGZhbWlseSBwcmFjdGljZSBibDQgOWFokgEObWVkaWNhbF9jbGluaWOaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTndlWFZRVnpkM1JSQULgAQD6AQQIIBBM!16s%2Fg%2F1tg8j8jy?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
+Review collection mode: full_feed
+Review cards collected: 30
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82652-farnworth-family-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Alana Sawan
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
 If you need referrals or support filling documents they won't assist no matter what. Let alone the attitude some of doctors especially Z. Murad and the practice manager is too arrogant to address any complaint.
 
 Author: Zoe Harper
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 Angela the district nurse here is a testament to the place! We well as the receptionist team so nice and helpful. No waiting times either. Very personable.
 
@@ -41,7 +46,7 @@ Rating: 5 stars
 I just wanted to thank Sangitha for her excellent help! She was so kind and patient in assisting me with my appointment, and her support made everything easier. I really appreciate her care and professionalism
 
 Author: Kelly McGregor
-Date: a year ago
+Date: 2 years ago
 Rating: 3 stars
 My doctor who iv had since achild is amazing,hes doctor bambos.
 
@@ -59,3 +64,103 @@ Author: graham marsh
 Date: 2 years ago
 Rating: 5 stars
 Saw Dr N. Barbara this morning. Always Dr Barua makes time to listen to you and is professional and friendly
+
+Author: Nicola Coote
+Date: 2 years ago
+Rating: 5 stars
+They helped me immensely
+
+Author: Kerry Hatton
+Date: 2 years ago
+Rating: 1 star
+Dirty
+
+Author: freedom
+Date: 2 years ago
+Rating: 5 stars
+Helped me immensely the GPS are great but the girls at the front have really gone out of there way to help me can't tell you how much its appreciated always happy to help 😊 …
+
+Author: Heather Mcglynn
+Date: 3 years ago
+Rating: 1 star
+Worse doctors surgery I've ever had if you want to stay healthy stay away from it needs to be investigated totally unacceptable
+
+Author: Clark Disley
+Date: 3 years ago
+Rating: 5 stars
+Brilliant care
+
+Author: Arooj Javed
+Date: 3 years ago
+Rating: 5 stars
+Had the sweetest experience with Hannah from the podiatry department . Such a lovely lady❤❤
+
+Author: Touqeer ulhaq
+Date: 3 years ago
+Rating: 5 stars
+Touqeer ulhaqLocal Guide · 121 reviews · 23 photos3 years ago
+
+Author: Craig Walker
+Date: 3 years ago
+Rating: 1 star
+Terrible place, takes between 7-10 days to see a doctor. They changed my asthma prescription to a product that doesn’t work & won’t change it back unless I make an appointment to see the doctor.
+
+Author: G Dubs
+Date: 3 years ago
+Rating: 1 star
+The most arrogant, condescending woman in reception at this facility. Practice to avoid.
+
+Author: Steve Little
+Date: 4 years ago
+Rating: 2 stars
+Phone rings and rings, lights are on but no one is at home !!!
+
+Author: Aaron Hazel
+Date: 4 years ago
+Rating: 4 stars
+Aaron HazelLocal Guide · 62 reviews · 28 photos4 years ago
+
+Author: Susan Swindells
+Date: 6 years ago
+Rating: 1 star
+The phones always ringing, no one answers, no communication at all, terrible doctors
+
+Author: can I get 1000 subs without making a video
+Date: 6 years ago
+Rating: 1 star
+can I get 1000 subs without making a video2 reviews · 1 photo6 years ago
+
+Author: alanhobson alanhobson
+Date: 6 years ago
+Rating: 2 stars
+surely in this day and age we can have some sort of communication via e mail with the doctors assistant/secrectary for appointments/results of tests ect. /.......no not a chance , why is this, ???
+
+Author: Bernard Cromarty
+Date: 7 years ago
+Rating: 5 stars
+Podiatry foot fix - top work!!
+
+Author: Max And Raz
+Date: 7 years ago
+Rating: 1 star
+I have tried to attend the walk in centre tonight as the website states 24 hours Saturday and Sunday, this is not correct and needs changing to stop people attending to find the place in complete darkness.
+
+Author: Lindsey Clarke
+Date: 8 years ago
+Rating: 5 stars
+Lindsey Clarke8 years ago
+
+Author: Ilmar Ko
+Date: 9 years ago
+Rating: 5 stars
+Ilmar Ko9 years ago
+
+Author: Gary Longstaff
+Date: 10 years ago
+Rating: 3 stars
+Not sure for all surgeries at the place but Dr Barua's surgery no longer has the walk-in facility....There was a time where you could walk-in in the mornings and the afternoons were appointment based....all that has gone which is a backward step! Last time visited,didn't even know it had all gone to appointment based, and yes the doctor managed to squeeze me in after awaiting several hours, which appreciative of and the Doctor can't do enough for the patients if you get to see him, but many times you don't Ring up Thursday for an appointment..can't get to see the doctor till Tuesday at 5pm!!
+
+Author: Wayne Tomblin
+Date: 13 years ago
+Rating: 5 stars
+Colin has been here forever, lol. He is most polite, hard working, and his staff are alway ready to help.
