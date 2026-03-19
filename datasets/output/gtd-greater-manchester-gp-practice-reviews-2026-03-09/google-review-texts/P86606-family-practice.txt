@@ -4,19 +4,24 @@ Postcode: M24 4EN
 Google Maps title: The Family Practice
 Google rating: 3.5
 Google review count: 15
-Google Maps URL: https://www.google.com/maps/place/The+Family+Practice/@53.5543474,-2.2174558,17z/data=!4m8!3m7!1s0x487bba62c68c9d57:0x8809dd27ad7c4f30!8m2!3d53.5543474!4d-2.2174558!9m1!1b1!16s%2Fg%2F1yh9v051h?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Family+Practice/@53.5545069,-2.1701451,12.43z/data=!4m8!3m7!1s0x487bba62c68c9d57:0x8809dd27ad7c4f30!8m2!3d53.5543474!4d-2.2174558!9m1!1b1!16s%2Fg%2F1yh9v051h?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 15
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86606-family-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Leslie Skinner
-Date: 6 months ago
+Date: 7 months ago
 Rating: 5 stars
-Leslie Skinner6 months ago
+Leslie Skinner7 months ago
 
 Author: Derya Kurbas
-Date: 11 months ago
+Date: a year ago
 Rating: 1 star
 Can you imagine you expect to get treated better by your gp staff as they are health workers but people who work in this gp reception treated you you like a garbage. When ever I call to make an appointment they are so rude to me and seems like they don’t wanna work there . Please please be respectful to the patients this place needs an inspection as staff are so rude to people.
 
@@ -59,3 +64,28 @@ Author: Graham Thubron
 Date: 4 years ago
 Rating: 5 stars
 Very helpful..
+
+Author: Hung Pham
+Date: 4 years ago
+Rating: 5 stars
+Thank you very much to the doctors and nurses here for examining and treating me.
+
+Author: Rain Lau
+Date: 4 years ago
+Rating: 5 stars
+Rain Lau3 reviews · 4 photos4 years ago
+
+Author: Sinead Kenny
+Date: 5 years ago
+Rating: 5 stars
+Sinead Kenny5 years ago
+
+Author: Maroš Horváth
+Date: 6 years ago
+Rating: 5 stars
+Maroš HorváthLocal Guide · 4 reviews · 8 photos6 years ago
+
+Author: jose moron
+Date: 7 years ago
+Rating: 3 stars
+jose moronLocal Guide · 55 reviews · 309 photos7 years ago

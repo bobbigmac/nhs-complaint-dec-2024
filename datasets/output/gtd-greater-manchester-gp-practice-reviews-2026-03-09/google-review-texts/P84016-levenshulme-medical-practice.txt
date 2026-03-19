@@ -3,59 +3,1072 @@ Canonical code: P84016
 Postcode: M19 3BX
 Google Maps title: Levenshulme Medical Practice
 Google rating: 3.4
-Google review count: 183
-Google Maps URL: https://www.google.com/maps/place/Levenshulme+Medical+Practice/@53.4463583,-2.1887399,17z/data=!4m8!3m7!1s0x487bb3c351b11131:0x9c943855a4dc216b!8m2!3d53.4463583!4d-2.1887399!9m1!1b1!16s%2Fg%2F1vysw2gk?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 190
+Google Maps URL: https://www.google.com/maps/place/Levenshulme+Medical+Practice/@53.4463583,-2.1913202,17z/data=!4m8!3m7!1s0x487bb3c351b11131:0x9c943855a4dc216b!8m2!3d53.4463583!4d-2.1887399!9m1!1b1!16s%2Fg%2F1vysw2gk?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 190
+Owner replies collected: 36
+Raw review responses captured: 19
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84016-levenshulme-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: petr andel
+Date: Edited 15 hours ago
+Rating: 5 stars
+Thanks so much for your thoughtful review Petr, we look forward to seeing you again whenever you need us.
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your thoughtful review Petr, we look forward to seeing you again whenever you need us.
+
+Author: Debbie Morrin
+Date: Edited 20 hours ago
+Rating: 5 stars
+Dr Sri is very thorough and very sympathetic to my issues. She gives excellent advice and I find her very supportive.
+
+Author: wlati singh
+Date: 21 hours ago
+Rating: 5 stars
+A very good visit. Did not have to wait for long. All the team were very professional. My GP was very understanding allowing me to make a decision on a potential medication I were unsure of, sending me a link to read and make a decision
+
+Author: Darrell Elliott
+Date: 21 hours ago
+Rating: 4 stars
+Darrell Elliott21 hours ago New
+
+Author: Sobia Mailk
+Date: Edited 4 days ago
+Rating: 5 stars
+Sobia Mailk1 reviewEdited 4 days ago New
+
+Author: Peter
+Date: 5 days ago
+Rating: 5 stars
+Good assessment of problems and discussion of tests and treatment.
+
+Author: Saima
+Date: 6 days ago
+Rating: 5 stars
+staffs were lovely and helpful. Doctor was very calm and polite. listen my problems very patiently and help me. thanks
+
+Author: Katt M
+Date: 6 days ago
+Rating: 5 stars
+Reception is cheery and knowledgeable. The wait was quick, and Dr Hedwat is attentive, actually listens, and has excellent recommendations. The phlebotomist was quick and very nearly painless! The best visits I've had are at this location.
+
+Author: Ghazala
+Date: a week ago
+Rating: 5 stars
+Excellent Dr Daniel McKay brave man and good explanation. I am 100% happy
 
 Author: chiara garau
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
-chiara garau5 reviews · 1 photo3 days ago New
+chiara garau5 reviews · 1 photoa week ago New
 
 Author: W Khalid
-Date: Edited 3 days ago
+Date: Edited a week ago
 Rating: 5 stars
 Excellent service, as usual. I cannot thank the entire team enough. They always go above and beyond to help.Dr Danny (the second) is a credit to your medical practice and his profession. A true gentleman
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, W Khalid. We look forward to seeing you again whenever you need us.
 
 Author: Janet Armstrong
-Date: 4 days ago
+Date: 2 weeks ago
 Rating: 4 stars
-Janet Armstrong4 days ago New
+Janet Armstrong2 weeks ago New
 
 Author: Imran Khan
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 Dr Shahrukh Shiraz listened carefully, answered all my questions, and made me feel at ease throughout my visit. I've never felt more comfortable discussing my health concerns. Highly recommend!”
 
 Author: Corinne Hesry
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 The asthma nurse was extremely helpful and kind. She is a credit to the practise.
 
-Author: Imran Ashiq
+Author: Asad
 Date: 2 weeks ago
+Rating: 5 stars
+Dr Shiraz and Daniel are the best doctors I could ask for. They have helped me so much with both my physical health and my mental health. They always listen, care, and truly support me. I’m very grateful for their kindness, understanding, and dedication to my wellbeing.
+
+Author: Veronika Diamond
+Date: 2 weeks ago
+Rating: 5 stars
+Prompt appointment time. Nurse explained everything and was generally lovely!
+
+Author: Anita Killilea
+Date: 2 weeks ago
+Rating: 5 stars
+I would like to thank Mrs Michelle Butterworth for the outstanding care I received during a routine smear test. While waiting I became unwell , but I was quickly and compassionately look after. Michelle was reassuring, attentive and extremely professional and I felt genuinely cared for. An excellent example of patient care. Thank you Michelle .
+
+Author: Imran Ashiq
+Date: 3 weeks ago
 Rating: 5 stars
 Dr sheraz is a good Doctor he helped me so much through my traumtic experience, he was so kind and listened and understand my healtb problem thank you
 
+Author: Imtiaz bibi
+Date: 3 weeks ago
+Rating: 5 stars
+I have seen Dr sheraz today, I was v pleased with his professional approach. I found him very gentle .I was able to discuss my problems with him .
+
 Author: Samiha A
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
 The doctor is good and his behaviour is great. Very reliable doctor
 
 Author: Hop In Shop In
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
-Hop In Shop In2 reviews2 weeks ago New
+Hop In Shop In2 reviewsa month ago
+
+Author: Mohammed Shafi
+Date: a month ago
+Rating: 4 stars
+Asthma review... went to plan great advice and plan for the future.
+
+Author: hadi mossa
+Date: a month ago
+Rating: 5 stars
+Very good
+
+Author: Jesmin Bubli
+Date: a month ago
+Rating: 5 stars
+dr s shiraz is an amazing doctor
 
 Author: Mozzam Ali
-Date: Edited 3 weeks ago
+Date: Edited a month ago
 Rating: 5 stars
 Amazing recepnist and well qualified doctors and nurses who treat all the patients well and equaliy especially Dr Daniel is outstanding with his profession
 
+Author: Kate Morrissey
+Date: a month ago
+Rating: 5 stars
+Nurse Nicola was extremely warm and patient. She tried to make having a smear test as comfortable as possible. Thanks Nicola for your sensitivity and understanding
+
+Author: Hannah Saul
+Date: a month ago
+Rating: 5 stars
+The nurse I saw was amazing. Really helpful and efficient. Sadly through no fault of her own the practice alloted times are too short for the type of review I needed. This means I have to come back in a couple of weeks to have the rest of the test done. If the appointment times for my specific type of review were slightly longer it would have saved a trip back up to the practice with my young baby. 10/10 for my nurse though, there was just too much that needed to be done and too little time.
+
 Author: Preowned Laptops
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
 Great Receptionists all very competent at there Work Extremely Pleasant and it's makes a hell of difference to be greeted by there smiling faces .. They are all worth there weight in gold Top notch Service everyday of the year.Well done to you all Heath.
+
+Author: Jaz
+Date: Edited a month ago
+Rating: 5 stars
+Fantastic practice where you always get an appointment And lovely friendly helpful sympathetic staff. The doctors are amazing and treat you promptly and efficiently explaining everything along the way .
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Jaz. Our receptionists have a very difficult job, but do their best, and will be very grateful to you for your kind review, as will our medical staff. We look forward to seeing you again whenever you need us.
+
+Author: Kath Thompson
+Date: a month ago
+Rating: 5 stars
+Excellent consultation with Dr Sri, she didn't rush me and was very kind.
+
+Author: Susie Meehan
+Date: a month ago
+Rating: 5 stars
+Excellent professional service
+
+Author: azra aamir
+Date: a month ago
+Rating: 5 stars
+I recently had an appointment with Dr Sharaz and he was really understanding, cooperative and soft spoken and reassured me when I was worried about my health.
+
+Author: Sarena Parveen
+Date: a month ago
+Rating: 5 stars
+Always so informative caring and really listens thank you dr Sri
+
+Author: Damaris Holleran
+Date: a month ago
+Rating: 5 stars
+Always really helpful and informative when I need it
+
+Author: JMD family
+Date: a month ago
+Rating: 5 stars
+Thank you for the Excellent service
+
+Author: anthony molloy
+Date: Edited a month ago
+Rating: 5 stars
+anthony molloyEdited a month ago
+
+Author: Ghulam Mahmood
+Date: 2 months ago
+Rating: 5 stars
+I have seen GP same day and treated my problem.
+
+Author: Khalid Mehmood
+Date: 2 months ago
+Rating: 5 stars
+This has been my practice for over 5 years and I have always been satisfied with all the help and support the gp staff have given as well as Dr.Shiraz who has gone above and beyond in assisting me in my recent changes in health thank you to all the staff at levenshulme medical practice
+
+Author: Carole Roberts
+Date: Edited 2 months ago
+Rating: 5 stars
+I find all the staff professional and welcoming. The receptionists are always willing to help and although it is a very busy surgery which sometimes mean waiting whilst they are dealing with a person face to face or on the phone, they work …
+
+Author: Paul Jebb
+Date: 2 months ago
+Rating: 5 stars
+Paul Jebb2 months ago
+
+Author: Carole Roberts
+Date: Edited 2 months ago
+Rating: 5 stars
+I find all the staff professional and welcoming. The receptionists are always willing to help and although it is a very busy surgery which sometimes mean waiting whilst they are dealing with a person face to face or on the phone, they work really hard. The doctors are friendly, welcoming and very professional. The receptionist Julie is exceptionally good.
+
+Author: Louise Taylor
+Date: 2 months ago
+Rating: 5 stars
+Great doctors and lovely staff. They’ve looked after me very well for many years. I appreciate all of you!
+
+Author: Offaq Qureshi
+Date: 2 months ago
+Rating: 5 stars
+Dr. Shiraz is an excellent doctor, he patiently listens to your concerns and gives best possible solution.
+
+Author: Gary Pearson
+Date: Edited 2 months ago
+Rating: 5 stars
+Over recent years, as I get older, I have increasingly needed to call on the services of this practice. There is always a satisfying and comforting experience at this surgery. The front desk are always caring and patient and trying to help as much as possible. As for the medical staff, they are the best I've experienced. They actually take time and listen and will follow up on your progress. I have to confess to feeling fortunate that I am registered with set of professionals.
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your thoughtful review, Gary, and your comments about your experience at the surgery. Our receptionists have a very difficult job, but do their best, and will be very grateful to you for your kind review, as will our medical staff. We look forward to seeing you again whenever you need us.
+
+Author: Hafeez Tahir
+Date: 2 months ago
+Rating: 5 stars
+Levenshulme Medical Practice has been incredibly supportive, especially during a difficult time in my life. I want to express my heartfelt thanks to my GP, Dr. Sri Satkunam. Her compassion, professionalism, and genuine care have made a real difference in my mental health journey. As I struggling with OCD, depression and suicidal thoughts, she responds promptly, checked in personally, and ensures I am connected with the right support services. Her understanding and dedication give me the confidence to seek help and feel safe. Its staff is also very cooperative and supportive.
+
+Author: Adewale Ade
+Date: 2 months ago
+Rating: 5 stars
+Amazingly well
+
+Author: Isah-Levi Roach
+Date: 3 months ago
+Rating: 5 stars
+Isah-Levi Roach8 reviews3 months ago
+
+Author: Familia
+Date: 3 months ago
+Rating: 5 stars
+Dr Hedwat is amazing. Hes so attentive and caring and goes above and beyond. He honestly cares about his patients holistically.
+
+Author: JMD Family
+Date: Edited 3 months ago
+Rating: 5 stars
+Thank you the very wonderful Dr Daniel Hedwat for the excellent service and support and help always amazing support And a special thank you to juli
+
+Author: Jacqueline Gray
+Date: 3 months ago
+Rating: 5 stars
+I have always had a good experience at this practice and have been registered with them for over 30 years and have been supported with bringing up a family and going through cancer treatment 9 years ago
+
+Author: Momina Awan
+Date: 3 months ago
+Rating: 5 stars
+Momina Awan3 months ago
+
+Author: Divya Mistry
+Date: 3 months ago
+Rating: 5 stars
+Dr. Ben Addlestone has a very calming manner. He was clear about my results and the next steps and explained things in a very helpful manner.
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Divya. Dr. Addlestone really appreciates your words. We look forward to seeing you again whenever you need us.
+
+Author: Topman UK
+Date: 3 months ago
+Rating: 5 stars
+Topman UK6 reviews · 9 photos3 months ago
+
+Author: Nosh Naz
+Date: 3 months ago
+Rating: 5 stars
+Rang reception out of hours to request for an appointment same day Lovely lady Jannet did her best to get me an appointment she was very kind and understanding and got me appointment in other GP
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Nosh. We look forward to seeing you again whenever you need us.
+
+Author: remsha Siddiqui
+Date: 3 months ago
+Rating: 5 stars
+remsha Siddiqui1 review3 months ago
+
+Author: A M
+Date: 3 months ago
+Rating: 1 star
+Rude staff at the reception
+
+Author: Stan Tocek
+Date: 3 months ago
+Rating: 5 stars
+The reception is helpful and willing. The doctors and the entire staff/employees are experts who help!!! Stan
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Stan. We look forward to seeing you again whenever you need us.
+
+Author: Farhan Yousef
+Date: 3 months ago
+Rating: 5 stars
+Farhan Yousef1 review3 months ago
+
+Author: Howard Drake
+Date: 3 months ago
+Rating: 5 stars
+Always positive with Dr Hedwat. Thanks 🙏 …
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Howard. We look forward to seeing you again whenever you need us.
+
+Author: Rosie Kendrew
+Date: 3 months ago
+Rating: 5 stars
+We always receive thorough, kind & compassionate care. Thank you to all the team.
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Rosie. We look forward to seeing you again whenever you need us.
+
+Author: Marie-Angelique Bueler
+Date: 3 months ago
+Rating: 5 stars
+Excellent doctors, very helpful. Patient enough which is really important!!
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Marie-Angelique. We look forward to seeing you again whenever you need us.
+
+Author: IHave NoLifeAtAll
+Date: 4 months ago
+Rating: 3 stars
+They give appointments very late like after a month. I think levenshulme medical practice needs to improve by giving early time appointments to everyone. And give medicines for the small health issues too. Instead of referring them to A&E
+
+Author: Barbara Morrissey
+Date: 4 months ago
+Rating: 5 stars
+Very thorough examination Felt better for seeing doctor Went in on time
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Barbara. We look forward to seeing you again whenever you need us.
+
+Author: zahed md abu
+Date: 4 months ago
+Rating: 5 stars
+zahed md abu1 review4 months ago
+
+Author: Alsa Shaji
+Date: 4 months ago
+Rating: 5 stars
+I have good experience with levensholm medical centre.Thank you for your support
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Alsa. We look forward to seeing you again whenever you need us.
+
+Author: Michelle Shields
+Date: 4 months ago
+Rating: 5 stars
+Michelle Shields2 reviews4 months ago
+
+Author: Maryam Sheikh
+Date: Edited 4 months ago
+Rating: 5 stars
+👍 …
+
+Author: Najaf kazmi
+Date: 4 months ago
+Rating: 1 star
+Not good
+
+Author: David Smith
+Date: 4 months ago
+Rating: 5 stars
+Excellent really helpful when needed it
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, David. We look forward to seeing you again whenever you need us.
+
+Author: Beverley Stephenson
+Date: 4 months ago
+Rating: 5 stars
+Was seen by the doctor earlier than my appointment! Advise was very good and listened to what I had to say! In my opinion I’m very pleased with service!!
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Beverley. We look forward to seeing you again whenever you need us.
+
+Author: Andy Ward
+Date: 4 months ago
+Rating: 5 stars
+Phoned today to get blood test results Got though realy quick and spoke with a lovely plesent lady on reception grwat service and i have peace of mind thanks to this lady knowing her stuff
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Andy. Our receptionists have a very difficult job but do their best and will be very grateful to you for your kind review.
+
+Author: Saeed Ur-Rehman
+Date: 4 months ago
+Rating: 5 stars
+Dr Dickson as usual very humble, nice and amazing
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your thoughtful review, Saeed. We look forward to seeing you again whenever you need us.
+
+Author: Sarah Trieu
+Date: 4 months ago
+Rating: 5 stars
+This review is specifically for the wonderful Dr Ben Addlestone, who was so kind and attentive. He saw me at such short notice and was able to help me after I had been dismissed from A&E without help or improvement. Dr Addlestone was incredible and what every healthcare professional should aspire to be.
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your thoughtful review, Sarah. We look forward to seeing you again whenever you need us.
+
+Author: Ginger GT
+Date: 4 months ago
+Rating: 5 stars
+Dr Addelstone is my goat! Caring, efficient, and has a great mug (cup)!
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your review Ginger GT, we look forward to seeing you again whenever you need us.
+
+Author: susan Twist
+Date: 4 months ago
+Rating: 5 stars
+The receptionist s are always welcoming friendly and patient
+Practice response date: 4 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Susan. Our receptionists have a very difficult job but do their best and will be very grateful to you for your kind review.
+
+Author: Keith Whitmore
+Date: 4 months ago
+Rating: 5 stars
+A good, thorough discussion and agreeing a way ahead for medications.
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your thoughtful review, Keith. We look forward to seeing you again whenever you need us.
+
+Author: nicola grimshaw
+Date: 4 months ago
+Rating: 4 stars
+The dr and staff were lovely. The dr took my concerns seriously and examined me, in a carefull and respectfully way. My only slight complaint was that the disabled toilet and floor was dirty.
+
+Author: Tomas Frederiksen
+Date: 4 months ago
+Rating: 5 stars
+Thanks so much for your review Tomas, we look forward to seeing you again whenever you need us.
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your review Tomas, we look forward to seeing you again whenever you need us.
+
+Author: Shabbir Ahmed
+Date: 4 months ago
+Rating: 5 stars
+The Dr's was great and very helpful.
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your thoughtful review Shabbir, we look forward to seeing you again whenever you need us.
+
+Author: Naeem
+Date: 5 months ago
+Rating: 5 stars
+Thanks so much for your thoughtful review Naeem, we look forward to seeing you again whenever you need us.
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your thoughtful review Naeem, we look forward to seeing you again whenever you need us.
+
+Author: Liam Newell
+Date: 6 months ago
+Rating: 1 star
+This has to be one of the most disorganized doctor’s surgeries I’ve ever dealt with. It can take months just to get through on the phone, often requiring hundreds of calls from 8am, only to finally speak to someone and be told there are no appointments left. The system is completely backwards—doctors not turning up, no proper alternatives offered, and patients left in limbo. It feels as though people’s time and health are not respected here. This level of service is unacceptable and deeply unprofessional.
+Practice response date: Edited 4 months ago
+Practice response:
+Hi Liam, we always try our best to offer appointments to those who need them in order of priority. We also offer multiple ways of booking appointments — through our website, by SMS and phone too.
+
+Author: hiba iqbal
+Date: 6 months ago
+Rating: 5 stars
+Doctors are wonderful specially doctor Daniel Hedwat. He is extremely friendly, supportive, understanding and most importantly a great listener who allows you to explain your problem in detail. He doesn’t rush like some other doctors do as well as explaining conditions and use of medication in detail. We need more doctors like him.
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your thoughtful review, Hiba. We look forward to seeing you again whenever you need us.
+
+Author: Malak Adnan Khan
+Date: 6 months ago
+Rating: 1 star
+The most worst place i have never seen in my hole life very bad experience I have booked an appointment and i wait 2hr and nobody’s have asked me Very very bad experience
+Practice response date: Edited 4 months ago
+Practice response:
+Hi Adnan, we always try our best to offer appointments to those who need them in order of priority. We also offer multiple ways of booking appointments — through our website, by SMS and phone too. We really appreciate it when patients attend their appointments, and attend them on time. This helps to free up appointments for our other patients who badly need them. It also helps to ensure other patients don't have a to wait a long time to see their doctor when they arrive.
+
+Author: Chris Wood
+Date: 7 months ago
+Rating: 5 stars
+It can be really hard to get through first thing but when you speak to a receptionist they have so much empathy and will try to help you the best they can.
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your thoughtful review, Chris. We know that our patients really appreciate the service they get from our receptionists, despite us having a limited number of appointments due to the ongoing jobs crisis. We look forward to seeing you again whenever you need us.
+
+Author: Amy Irvine
+Date: 9 months ago
+Rating: 5 stars
+This is a review specifically for Dr Ben Addlestone. Thank you for being patient centred and empathetic. I found it easy to be honest about the issues I was experiencing. Really appreciate all the help you've given me
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your thoughtful review, Amy. We look forward to seeing you again whenever you need us.
+
+Author: Patricia Carr
+Date: 10 months ago
+Rating: 4 stars
+Thank you so much for your thoughtful review, Patricia. We look forward to seeing you again whenever you need us.
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your thoughtful review, Patricia. We look forward to seeing you again whenever you need us.
+
+Author: Anna
+Date: 10 months ago
+Rating: 4 stars
+Great doctors, but difficult to get an appointment
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your thoughtful review, Anna. We know that our patients really appreciate the service they get from our doctors, despite us having a limited number of appointments due to the ongoing jobs crisis. We look forward to seeing you again whenever you need us.
+
+Author: Chris Shearston
+Date: 11 months ago
+Rating: 1 star
+The staff are very friendly. 8am phone lines open, but only 3 people can be in the queue so your call fails. You call back repeatedly to compete for one of 3 queue slots. Finally you get through and might get given an appointment if you get through early enough. Or you go onto the app, which they say has appointments avalible in 2 weeks but those slots don't show up on the app. You ask if they can book you in over the phone but get told no you need to use the app. Rubbish experience let down by technology - it must be possible to improve these things.
+Practice response date: 4 months ago
+Practice response:
+Thank you for your review, Chris. Since you posted your review, we have looked carefully at our options regarding our telephone provider as well as the other ways that patients can request appointments. We are pleased to be able to tell you that we have signed up with a new phone service provider which should make things smoother when patients contact us by phone. We are also asking more patients to use our online service to request appointments. This should help to free up our phone lines for our most vulnerable and elderly patients who may not be as confident with online booking. Our online booking service has also recently been improved, and we are now able to send links out to patients to book routine appointments up to 12 weeks in advance. We do hope the next time you need us you will find it much easier to see our friendly staff. Thanks again for the feedback.
+
+Author: Mery Nt
+Date: 11 months ago
+Rating: 3 stars
+I think this GP clinic does have space for improvement. Negatives: - Bad first impressions: Unfortunately, not the best impression when you first communicate with the staff about an appointment. Either due to long delay before answering the phone or low interest in helping. - Bad book appointment system: You also get the option to book online but it is limited to time between 8-9am and there are too many steps until getting to book the appointment. - Location: it is not the easiest location to park or to get too due to the business of the roads etc (not the practice fault), but need to plan ahead of time before getting there. Positives: - I do think that if they start improving on their phone communication that will massively change the impression of the practice. - Doctors: they are excellent and super helpful once you get to to discuss with them your issue. Super attentive to detail and look after all areas of concern. - Environment: Overall pretty clean and the reception staff are nice when you ask for help. - Check in: easy check in system on arrival.
+Practice response date: 4 months ago
+Practice response:
+Thank you for your thoughtful review, M. Since you posted your review, we have looked carefully at our options regarding our telephone provider as well as the other ways that patients can request appointments. We are pleased to be able to tell you that our online booking service has recently been improved, and we are now able to send links out to patients to book routine appointments up to 12 weeks in advance. We have also signed up with a new phone service provider which should make things smoother when patients contact us by phone. We are therefore asking more patients to use our online service to request appointments. This should help to free up our phone lines for our most vulnerable and elderly patients who may not be as confident with online booking. On the topic of our location, unfortunately we have no say over the parking policies of the building, as this is managed by NHS Property Services, another organisation entirely. We really appreciate our patients' efforts in getting to the surgery in a timely manner for the start of their appointments. Thank you for your lovely comments about our doctors, environment and check in process. We do hope the next time you need us you will find it much easier to see our helpful staff. Thanks again for the feedback.
+
+Author: Sherehan omer saleh
+Date: 11 months ago
+Rating: 1 star
+Very poor service I'm trying to get an appointment for more than week every time I call they said we are full and you have to come at the GPS 8 at morning to get an appointment
+
+Author: Joda
+Date: 11 months ago
+Rating: 1 star
+Joda11 months ago
+
+Author: Aseela
+Date: a year ago
+Rating: 5 stars
+Dr. Hedwat is an excellent doctor—attentive, considerate, and listens to his patients. He took the time to address my concerns and reassured me throughout my visit, making me feel heard and cared for. I also want to acknowledge Julie the receptionist, who is always kind and welcoming. Her helpfulness deserves recognition.
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your thoughtful review Aseela, we look forward to seeing you again whenever you need us.
+
+Author: Fatima Al kader
+Date: a year ago
+Rating: 5 stars
+My Gp his very Good and his very supportive and professional
+Practice response date: 4 months ago
+Practice response:
+Thanks so much for your thoughtful review Fatima, we look forward to seeing you again whenever you need us.
+
+Author: Abdelaziz Mohammed
+Date: a year ago
+Rating: 1 star
+Abdelaziz Mohammed3 reviewsa year ago
+
+Author: Khadija Bibi
+Date: a year ago
+Rating: 1 star
+why they said you have to come to gp to book an appointment if they suggest us to go to chemist for medication and checkup?…. i go there for booking am appointment and they said you have to come at 8 am and when i go they said go online on our website and book there…i mean are they serious😳so disappointing and also its difficult to wake up with a small baby how could they do that and they did’nt give me prescription for free medication because i did not get a checkup from doctor… like litterally …i was there for checkup.
+
+Author: Lynne Rowe
+Date: a year ago
+Rating: 5 stars
+Lynne RoweLocal Guide · 62 reviews · 1 photoa year ago
+
+Author: G Rauf
+Date: a year ago
+Rating: 1 star
+Very rude receptionist.
+
+Author: Aftab Mirza
+Date: a year ago
+Rating: 1 star
+If I could I would give a 0 and it’s all because of the receptionist fault, been at the GP for all my life and it’s gotten worse throughout the years, they never seem to have appointments at 8 o clock in the morning and today I managed to get through the phone (which is incredible rare) and was told to call 111 or go to the pharmacist? I’m actually baffled and confused at how and why they’re making this judgement call when I need to see my DOCTOR and not the receptionist. They are causing the community in Longsight/levenshulme more pain than care. 111 will say go to ED which is for more urgent patients. Can’t even see a doctor anymore with the NHS, I work for the NHS myself so I know how hard it is, but this is appalling and the GP receptionist is rude and horrible to speak to, they seem to only have the one/two receptionist that have been there for almost 2 decades. Grown old and bitter. This is a joke.
+
+Author: Ken Lowe
+Date: a year ago
+Rating: 3 stars
+Ken Lowea year ago
+
+Author: Junaid Tariq
+Date: a year ago
+Rating: 5 stars
+Dr. Daniel 👍🏼 …
+
+Author: Arif Azad
+Date: a year ago
+Rating: 1 star
+Arif Azad10 reviewsa year ago
+
+Author: its_mmeh
+Date: a year ago
+Rating: 1 star
+The receptionists are awful. They refused to give me an appointment just because my skin issue had been present for over a month, despite me explaining that the pain only started last night. They insisted it wasn't urgent enough. When I called 111, they were just as puzzled as I was. It's clear the receptionists show favoritism—my white friend and her mother always receive polite treatment. It's incredibly frustrating, especially since I’m prone to illness, yet they make it difficult for me to see a doctor. And when I finally do, they treat me rudely. It really feels like they prioritise certain patients over others.
+
+Author: david mitchell
+Date: a year ago
+Rating: 5 stars
+david mitchell1 reviewa year ago
+
+Author: Helen Jones
+Date: a year ago
+Rating: 5 stars
+This review is for Dr. Ben Addelstone, my adult daughter has been under his care for just over eighteen months. When we first came my girl was in a dreadful state and really needed someone to listen to her and help her get a diagnosis. Dr Addelstone was fantastic, he was kind, and got on the case with referrals straight away, made us feel heard and important! Later when her mental health started to take its toll he was open and proactive. We now have a diagnosis and financial support, and without his dedication she would not be in as good a condition as she is today. Even tho she’s not better yet, he’s helped her to have a better quality of life. As a parent who doesn’t live in the same city I am so grateful for his time, understanding and professionalism. This is a doctor who makes people’s lives better. Thank you so much.
+
+Author: Zoryii Baridah
+Date: a year ago
+Rating: 5 stars
+It was a delightful experience with the Levenshulme Gp, most especially when it comes to my kids appointment, they don't joke with it💯🧡 …
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Zoryii. We look forward to seeing you again whenever you need us.
+
+Author: N B
+Date: Edited a year ago
+Rating: 1 star
+Terrible!!! Its been 3 weeks now i have been trying to get an appointment for my 3 year old.Every morning i start calling calling from 8 am-9 am (the time that is given by the lying receptionists to make appointments),this is the 6th time in 3 weeks i have been refused an appointment by the lying specialists(receptionist) first saying one doctor has called in sick then that changed to 2 doctors called in sick, apparently,no more appointments left.The lying receptionists tell me to call between 8 am-9 am but after a long wait i get told no appointments with some ridiculous excuses everytime.The manager is rude aswel as the receptionists they just hang up the phone if they dont like the tone of your voice.The big nurse Jenni ,i think she is an admin as well , she is the most horrible,arrogant rude person i have come across,i dont know how she got the job as a nurse!she criticised me for my health condition right in my face .Also,she doesnt want to give you a choice of whether you could vaccinate your child or not,if you dont listen to her and refuse one vaccine then she will refuse to give other vaccines by saying "its either this or we cant give the others" also,she will say we cant give you another appointment as there is no more appointment available...(are you kidding me there is no appointmentsthrough out the whole year!) THIS PLACE IS A MESS, THERE IS NO CHANCE OF SEEING A DOCTOR OR EVEN GETTING A CALL BACK BECAUSE THE UNPROFESSIONAL RECEPTIONISTS DECIDE NOT TO GIVE YOU AN APPOINTMENT.
+
+Author: Robb Jjack
+Date: a year ago
+Rating: 1 star
+The receptionist are totally NOT helpful when you call and are quick to drop hang up.
+
+Author: Herin Terin
+Date: a year ago
+Rating: 1 star
+The receptionists are extremely rude they hung up the phone on me without even listening and said u have to call at 8 in the morning even though they don’t pick the call.
+
+Author: Alex Fox
+Date: a year ago
+Rating: 5 stars
+I’ve only had positive experiences! The receptionists have been empathetic and managed to get me an urgent appointment. The GP I spoke to was kind, patient and reassuring
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave this kind review, Alex. We look forward to seeing you again whenever you need us.
+
+Author: Yousuf ahmed
+Date: 2 years ago
+Rating: 1 star
+Yousuf ahmed2 years ago
+
+Author: wajiha waheed
+Date: 2 years ago
+Rating: 1 star
+I don’t understand that why they don’t pick up the call never ever always say user busy And when they pick up the call as usual same answer no appointment available don’t know what’s going on😭😭 …
+
+Author: Andreea Rascol
+Date: 2 years ago
+Rating: 1 star
+Worst GP ever. It’s not the first time happening. This morning I’ve been ringing for 40 minutes in a row to get answered but the line is busy nonstop. Over 300 calls and all busy line. It’s absolutely ridiculous
+
+Author: M Shah
+Date: Edited 2 years ago
+Rating: 3 stars
+Good surgery but very disappointed with reception. No respect for privacy and also difficult to find an appointment when you need the most.
+
+Author: Burhan Uddin
+Date: 2 years ago
+Rating: 1 star
+We have waited for an appointment nearly 2 years, and then we were informed by letter that they have discharged us. No message, no call or even send us a letter to inform us about the appointment. Lisa must take some responsibilities the role she took upon and if not then stand down from the position. Many people issued negative reviews, and she still dont think our facts matter. Instead of taking hours of writing letter for discharge, lisa should have found 1 mint to call or message. If your not happy just report to Pals, NHS complaint or revoew, CQC. U can review in here https://www.nhs.uk/services/clinic/levenshulme-health-centre/RXVR4/leave-a-review
+
+Author: Ibrahim Rasul
+Date: 2 years ago
+Rating: 4 stars
+It's very good practice Doctors are very friendly and staff to
+
+Author: Mohammed Saqib Attari
+Date: 2 years ago
+Rating: 5 stars
+Veri good sarvece
+
+Author: Melika Tia
+Date: 2 years ago
+Rating: 1 star
+I was inside the docs and called noone Is on the phone yet I'm in position 4 this is a lie they are obviously just to lazy to answer the phone. This surgery is a joke tbh
+
+Author: fran slater
+Date: 2 years ago
+Rating: 1 star
+Never answer the phone. When they do they don't do what they say they are going to do. Awful service.
+
+Author: Kamal YHAYA
+Date: 2 years ago
+Rating: 1 star
+Very poor reception with a very bad service treating people like in a prison
+
+Author: Jamie Cleaver
+Date: 2 years ago
+Rating: 1 star
+Jamie CleaverLocal Guide · 84 reviews · 32 photos2 years ago
+
+Author: Syed Umar
+Date: 2 years ago
+Rating: 1 star
+Worst staff rude to everyone they just don't want to give appointment even if you call them between 8 to 9 whats the point to open a surgery if you are not even giving any appointments and just asking everyone to go in walk in centre or emergency
+
+Author: Elisabetta Ampong
+Date: 2 years ago
+Rating: 1 star
+I might understand not everyday is a good day but the receptionist are very rude. Didn’t finished my questions she hang off the phone. Very disappointing
+
+Author: Sabi Sabih
+Date: Edited 2 years ago
+Rating: 1 star
+Everytime theres a long waiting time 15minutes or more . i hate this practice. gonna change soon. …
+
+Author: Muhammad Arshad Ashraf
+Date: 2 years ago
+Rating: 5 stars
+Nice and Clean place
+
+Author: Nosh Amji
+Date: 2 years ago
+Rating: 1 star
+Worst surgery rude staff been trying to call since last few days line is always busy as when we go to surgery they put the phone on side so no one can ring
+
+Author: Mehrdad Tabrizi
+Date: Edited 2 years ago
+Rating: 5 stars
+Good medical practice Thank you so much.
+
+Author: Nicola Siddons
+Date: 3 years ago
+Rating: 3 stars
+I have to agree with others here. The receptionists are almost comically rude! Having said that, the two female doctors I see and the nurses have been very …
+
+Author: Hi hi
+Date: 3 years ago
+Rating: 1 star
+Horrible service they never answer the phone. 4 whole hours I tried to book an appointment but its always "busy"
+
+Author: Sabina Atabaeva
+Date: 3 years ago
+Rating: 1 star
+It is Absolutely horrible practice. The stuff are rude. When you call them they have not always the doctors with whom to talk , they can't make an appointments. I am very disappointed in it.
+
+Author: M. Arshad
+Date: 3 years ago
+Rating: 1 star
+I visit three time three different doctor all are unprofessional not pick my problem one of doctor recommend me go privet doctor so ridiculous
+
+Author: Basil Omar
+Date: 3 years ago
+Rating: 1 star
+The government should close this hospital, doctors who have no experience very bad treatment
+
+Author: The Glorious
+Date: 3 years ago
+Rating: 1 star
+Terrible experience with this surgery. Been ringing for over a month. They put phones deliberately on silent so they don't have to answer from 8-9 . Then they do another trick when you ring them after 10am they will tell you oh ring next day for 8-9am. This is all fault of receptionists and no check on them. When visited personally mostly busy gossips and won't help. However they will remember some patients by their faces obviously we know who they are mostly their relatives and friends. All documented now will complain to NHS and everywhere else I could. Zero star stay away from this surgery.🤮
+
+Author: Tracey Black
+Date: 3 years ago
+Rating: 5 stars
+Absolutely the BEST practice EVER. The care, love and respect given to my mum Ann from everyone at the surgery from the wonderful receptionists (Julie) to Adam and the other GP’s. Thank you so much for giving my mum her dignity and respecting her wishes x
+
+Author: Raja Saeed
+Date: 3 years ago
+Rating: 5 stars
+Raja SaeedLocal Guide · 3 reviews · 295 photos3 years ago
+
+Author: Ritaj Lababidi
+Date: 3 years ago
+Rating: 1 star
+The most disgusting receptionists I’ve ever come come across. The most vile service, absolutely rude. Honestly where did they get them from. If I could put 0 starts I would have. They need to be fired. When a person is sick, the last thing they need is disgusting receptionists to deal with.
+
+Author: Manaal Butt
+Date: 3 years ago
+Rating: 1 star
+Manaal Butt3 years ago
+
+Author: jade alicandro
+Date: 3 years ago
+Rating: 1 star
+no duty of care what so ever reported to CQC, PALS and NHS england can only ring at 8am so might aswell ring at 8am only or not at all rang the practice 1200 times between 8am-11:30am today not once answered sent my call history to all the places i’ve made the complaint to so you can’t call me a liar O duty of care end up dead before speaking or seeing a doctor from this place
+
+Author: Sandra L
+Date: 3 years ago
+Rating: 4 stars
+Only doctor I actually helps me and listens to me is DR SHIRAZ, he helped me get counselling and weight loss program in less then a month, thats why I'm giving this GP 4 stars because of DR SHIRAZ. Other then that the appointment system is non existing and they never have appointments, but if you need any appointment ask for DR SHIRAZ he is a good doctor who will help
+
+Author: Zehra Rizvi
+Date: 3 years ago
+Rating: 1 star
+Zehra Rizvi4 reviews3 years ago
+
+Author: Muhammad Zahid
+Date: 3 years ago
+Rating: 1 star
+They does not attend my phone . This gp is the bad gp .
+
+Author: Ali Rizvi
+Date: 3 years ago
+Rating: 1 star
+Ali Rizvi1 review3 years ago
+
+Author: Ahmed
+Date: 4 years ago
+Rating: 3 stars
+No body Pick up your phone when call if by chance your phone awnsered and you want appointment they'll tell you no appointment available call 8am in the morning but moving time busy phone tune. When you go in personal at the Surgery staff keep ignoring you and for repeat prescription they said email us. Waste of time please change your doctor if you can
+
+Author: Abdallah Alshami
+Date: 4 years ago
+Rating: 1 star
+Very bad reception services
+
+Author: Hanieh Gharani
+Date: 4 years ago
+Rating: 1 star
+They never answer phone
+
+Author: Ayesha Shoukat
+Date: 4 years ago
+Rating: 1 star
+They ask to take an appointment through call and never answers it and receive it after 9 and tell that appointment timing is finished pathetic service
+
+Author: farrah malik
+Date: 4 years ago
+Rating: 1 star
+They never answer their phones in the morning, they always say call at 8am and then have their phone busy till 8.40 or longer so nobody can call to make same day appointment, and then advised to go to walk in center as fully booked,whats the point of them if we have to go to walk in center and sit there for hours to see a doctor. Needs to change their staff or the way they work.terrible.
+
+Author: SSO_ PRO
+Date: 4 years ago
+Rating: 2 stars
+You get a mixed bag with the GPs, they are either good and want to help you or they are bad and want to get you out the door as fast as they can without explaining what they're doing. All in all its not a very human experience. I won't be coming back.
+
+Author: Shaza Gh
+Date: 4 years ago
+Rating: 1 star
+Shaza GhLocal Guide · 25 reviews · 21 photos4 years ago
+
+Author: Hajar ATLAS
+Date: 4 years ago
+Rating: 1 star
+Hajar ATLASLocal Guide · 13 reviews · 27 photos4 years ago
+
+Author: Faisal Alrashed
+Date: 4 years ago
+Rating: 2 stars
+This GP need change recipient staff.
+
+Author: Tina Carson
+Date: 4 years ago
+Rating: 4 stars
+The staff are polite and helpfull, this has been a difficult time, during this pandemic the whole world has suffered and the NHS have worked very hard to keep things going yes the phones some times can be difficult to get through.if you had 50 staff answering the phones some one would still be on hold as 100s of calls come thought the system, every day. The staff who work in surgeries do have families too and have to go throught the same procedure to get a doctors appointment so thank you all the staff and doctors and nhs workers for all your support stay safe
+
+Author: Diana Emad
+Date: 4 years ago
+Rating: 1 star
+There is no control over the reception staff, and their treatment of patients over the phone is very rude , and there is no responsibility and kind towards the patient, and they ignore the patient.. They say we will call and they do not …
+
+Author: Munmun asraf nahar
+Date: 4 years ago
+Rating: 1 star
+Very disappointed with the doctor, she shouted with my father and very bad bheaiver and she is not like a doctor becouse doctors don't act like this.
+
+Author: David Paice
+Date: 4 years ago
+Rating: 4 stars
+David Paice4 reviews4 years ago
+
+Author: Colin Ogdon
+Date: 4 years ago
+Rating: 1 star
+It's impossible to be seen. Had blood tests before lockdown and still haven't been able to see a doctor for the results.
+
+Author: Jan Wos
+Date: 4 years ago
+Rating: 5 stars
+Very helpful and caring staff. Have always received brilliant treatment.
+
+Author: Huma khan
+Date: 4 years ago
+Rating: 1 star
+The receptionist is very rude. Hung up straightaway if she can’t hear u tried to book a phone appointment for my mother in law had to wait in the queue for about 15 mins and finally when I got hold of them she hung up on me.
+
+Author: Kiran Mendiratta
+Date: 5 years ago
+Rating: 5 stars
+I have always had excellent service from this practice, any time I ring in, the staff are very helpful, and have accommodated any urgent issues or seeing a GP urgently, so well. I would highly recommend this practice.
+
+Author: Craig Thomas
+Date: 5 years ago
+Rating: 5 stars
+I called for a repeat presecription, they answered on first attempt and the receptionist was friendly and helpful.
+
+Author: Nafi Nakib
+Date: 5 years ago
+Rating: 1 star
+The receptionists cannot get any worse than this. I don’t know how TF they still have a job
+
+Author: June Crawford
+Date: 6 years ago
+Rating: 3 stars
+I have been calling since 8am 30mins still no answer and it opens at 7am ! Concerns about corinovirus imperative advice needed and no ones answering the phone..poor service! call waiting has been activated not good!
+
+Author: Trisan Bhowmick Banik
+Date: 6 years ago
+Rating: 1 star
+Personally I wouldn't even give 1 Star and I think most people including me we have problems with the receptionist that sits there that are very rude, and they don't have manners.
+
+Author: amama aslam
+Date: 6 years ago
+Rating: 5 stars
+amama aslamLocal Guide · 40 reviews · 5 photos6 years ago
+
+Author: Traian Tănase
+Date: 6 years ago
+Rating: 1 star
+I think this the worst GPS in the hole Manchester, I tried to get hold of the for 50 minutes calling the line nonstop and they don’t answer the phone at all. Last time I have spoken to the receptionist she was very rude and the put the down …
+
+Author: Sarah-louise Wilson
+Date: 6 years ago
+Rating: 3 stars
+When i have appointments booked for me they are great but the fact that i can never get hold of them to book appointments my self is ridiculous
+
+Author: Weeewcha Weeewcha
+Date: 6 years ago
+Rating: 5 stars
+Doctor Gib she is the best
+
+Author: Ammar A
+Date: 6 years ago
+Rating: 1 star
+They take the piss i had to wait 1 hour avoid like the plague
+
+Author: Alice Girling
+Date: Edited 7 years ago
+Rating: 1 star
+UPDATE regarding potentially the rudest receptionist I've ever come across! I asked for a fit to work statement and they tried to charge me £20, which is completely and totally illegal (ask the DWP). I am seriously considering taking this further as people like her shouldn't work with vulnerable people. Magically, after being forced to become irate with her, she miraculously managed to book me in next day, after being completely adament they're full up for a month! I later rang to find out her name (Bethan) and she was possibly the single most sarcastic, demeaning and patronising person I have ever had the displeasure of speaking to. I will be following this up with further, private authorities. If you're reading this, Bethan, look into a new career path, perhaps in a warehouse where you don't have to interact with potentially difficult public. I am fortunate in that my mental illness is manageable (with correct help), but for anyone else that phonecall could have been the end of their lives. Other people are iller than myself and it is simply not acceptable to treat them this way. I would get sacked on the spot if i was to speak to anyone the way Bethan spoke to me, and rightly so, and I work in a cafe! Walking into the reception to pick up a registration form, the elderly lady at the left-hand-side desk was extremely rude. She didn't say a word and silently pointed to another desk where nobody was. Turns out the entire reception team was on a lunch break (why they need to take their breaks together I have no idea) and we had to wait 15 minutes to even get a form, regardless of the fact the woman on the other side was sitting there with a face like thunder doing absolutely nothing. Okay so first impressions aside, I needed to make an appointment this week for a doctor to sign a form (urgent for me). Called on Monday, after 20 minutes of 'line busy', a rude lady answered and told us we can't have an appointment because it's 'triage day' on Mondays and Tuesdays. So we protested, and she said she'd get the doctor to call. Obviously, the doctor never called. So we waited until today (Wednesday) to phone up, which was the absolute last day I could get this form signed. Again, 20 minutes of 'line busy' (how about you get more than one phone line? You have enough receptionists sitting around), and another rude lady answered and said the same thing again - it's not urgent (in her 'professional' opinion) and therefore we can't have an appointment until next week. I also have medication that I need to see a doctor to get, and I have now been cold turkey for a month thanks to this practice. It's a repeat prescription, but since they appear to have their own rules, I have to make appointments which, again, takes around a month minimum. How anyone goes about getting seen by a doctor here is anyone's guess. It seems like they only have receptionists and they're all trained to get rid of people. I've seen people saying they're racist, but I wouldn't go there (though there's no smoke without fire). I think they just hate people of all races. I should note, I have worked with the public for 16 years now and have never once even thought about speaking to a customer the way Bethan spoke to me. You may have nasty notes about me on your computer system, and you're welcome to do that, but be a little more professional in your actual interactions with the general public, and realise that people who call the doctors need help, not beration.
+
+Author: Nicky Pepper
+Date: 7 years ago
+Rating: 1 star
+Rude reception. Impossible to get hold of. Attitude is appalling and really makes you feel like a waste of space. Really non caring and non understanding. Only good doctor I’ve had was a temp. I’ve had prescription medication cancelled by GPS I’ve never seen, repeats not be sent off, bloods I never heard back from. Unless you’re absolutely desperate I would suggest signing up at a different practise
+
+Author: Marion Quinn
+Date: 7 years ago
+Rating: 5 stars
+Great service great staff
+
+Author: Marcus Lipton
+Date: 7 years ago
+Rating: 5 stars
+Marcus LiptonLocal Guide · 87 reviews · 1,123 photos7 years ago
+
+Author: Yasser Al jassem
+Date: Edited 7 years ago
+Rating: 1 star
+Very bad! I called them for my disable daughter a 3 year old at 8:17am to book an appointment but she (on the reception) didn't care and she ended the call before I finished my speech and after she said there's no appointment available! that's just because she heard my accent isn't British! Racism! Very sad! No humanity!
+
+Author: Siobhan
+Date: 7 years ago
+Rating: 1 star
+Just rang as I need to register at a doctor. Some rude woman answered and told her colleague "i don't care I am doing my paperwork" maybe she didn't realise she hadnt actually placed me on the hold. Put the phone down on her desk and simply ignored the call. When I rang back I got the engaged tone as she obviously hadnt bothered replacing the receiver.
+
+Author: Asif Junaid
+Date: 7 years ago
+Rating: 5 stars
+Gr8 service specially thanks to community nurse Debbie very polite and cooperative. I been going there for last 6 months for dressing on daily basis I'm very satisfied with service.Thanks
+
+Author: Pervez Khan
+Date: 7 years ago
+Rating: 5 stars
+Pervez Khan4 reviews7 years ago
+
+Author: ALI IMRAN
+Date: 7 years ago
+Rating: 4 stars
+ALI IMRANLocal Guide · 233 reviews · 1,166 photos7 years ago
+
+Author: Votsa Tsa
+Date: 7 years ago
+Rating: 1 star
+I moved to Manchester about a month now, lm a training doctor l went to register at the surgery because its nearest to my house. The receptionist basically lied to me and sent me on a goose chase looking for another surgery on Mount road. I'm still wondering why she did that, l hope it's not because of my skin colour that will be racism if that's the case.
+
+Author: Syed Bukhari
+Date: 8 years ago
+Rating: 5 stars
+Syed BukhariLocal Guide · 61 reviews · 6 photos8 years ago
+
+Author: julian verlaku
+Date: 8 years ago
+Rating: 5 stars
+julian verlaku11 reviews · 4 photos8 years ago
+
+Author: Mark Hamilton
+Date: 8 years ago
+Rating: 5 stars
+This is a most caring, thoughtful and professional Medical Practice. From the unhurried care and attention from the Doctors to the cheerful and efficient welcome from the Ladies at the Reception, the Patient receives the best possible service.
+
+Author: johnroby bvrown
+Date: 8 years ago
+Rating: 4 stars
+johnroby bvrownLocal Guide · 20 reviews8 years ago
+
+Author: Zahra Mukadam
+Date: 8 years ago
+Rating: 1 star
+I'd give it 0 stars if I could. The receptionists are rude and just want to palm you off; they're completely unhelpful and don't know what they're doing. You have to wait 3-4 weeks just to get an appointment. I had to wait 5 weeks for my appointment only to get it cancelled and wait an extra 3 weeks for another appointment. They don't care about your well-being at all, they just want you out as fast as possible or to make sure you don't even come in the first place.
+
+Author: Mavis Samuels
+Date: 8 years ago
+Rating: 1 star
+Dr Ward is arrogant-rude-judgemental-dosent think i am worth wasting practice funding on she will not listen. I had ultra sound on GALLBLADDER KIDNEYS LIVER she says all okay - thats totally false i know cos it took 2 technicians 45 mins to complete same area traced 3 times lady says take care dont rush wgen i get off bed and say gp will get results week to 10 days she never gives you copy of any medical scans exrays reports dr haque always did. Dont trust gp who will not give this info any misreading etc to hide fault documents can get buried anywhere.plus dr ward dosent want me at that practice anymore (i no y even if it one mistake). We disagreed on subject she arrogantly stated look wecan get past this and if you not want be treated here GO GET TREATED ELSEWHERE. this hypocritical oath practice literally are. Maybe i should go CHEADLE PRACTICE STOCKPORT COS ACCORDING TO TRAFF GEN HOSP A&E I AM ALREADY REGISTERD THERE UNDER DR HAQUE.Oh wot tangle web we weave wen 1st we attempt to decieve. Wot done in dark DOES COME OUT in light.
+
+Author: cliff coffey
+Date: 8 years ago
+Rating: 2 stars
+Very slow services, and not a smile to be found
+
+Author: SYNC - YASUO LEAGUE PRO
+Date: 9 years ago
+Rating: 1 star
+levenshulme medical practice the things are very good only thing is this one dr = dr ward is VERY Rude and disrespectful person to patient ive got 3 very young kids when they are ill not well made and emergency appointment she doesn't give medicine and starts to go big mouth with everyone and scares my kids this is very unacceptable especially from your own GP DR ward doesn't take care of patients and doesn't care about patients feelings i don't know how she can have a job like this all the other DR are very kind and helpful shes the only problem
+
+Author: Tanya
+Date: 9 years ago
+Rating: 1 star
+Tanya14 reviews · 2 photos9 years ago
+
+Author: Boogles Samuels
+Date: 9 years ago
+Rating: 1 star
+I have not seen my own GP in over 6/7mths whenever ask for an appointment it's a month or they not got his list and he handling his own appointments apparently he too busy at m/c university training. Then receptionist told my consultant at m.r.I. that I didnt make appt for blood down right lie I couldnt there never was one available. Then jenny Told recep on fone after she says I was here she couldnt stand me cos I waffle on don't she think d as i am I scared of needles. I asked for a letter 9wks ago which I all be paying for £20 and even now I not got it. Beware if the receptionist manager take dislike to you go find another gp cos I am after 15yrs it's time to leave find better medical care seeing different docs it's way of saying we don't want you here
+
+Author: Arman Arya
+Date: 9 years ago
+Rating: 1 star
+Receptionist are rude and unhelpfull. appointments are given after 2 weeks and basically if you are dying if something they will tell you to get to the pharmacy and get yourself some painkillers. WORSE GP PRACTICE that I have seen all my life. After getting my first appointment I certainly looking to change my GP Practice.
+
+Author: Ali Basat
+Date: 9 years ago
+Rating: 3 stars
+Ali Basat1 photo9 years ago
+
+Author: Beruk Tesfay
+Date: 9 years ago
+Rating: 2 stars
+Beruk Tesfay9 years ago

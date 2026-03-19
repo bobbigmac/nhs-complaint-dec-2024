@@ -3,27 +3,47 @@ Canonical code: P83603
 Postcode: M26 2SP
 Google Maps title: Redbank Group Practice
 Google rating: 2.6
-Google review count: 115
-Google Maps URL: https://www.google.com/maps/place/Redbank+Group+Practice/@53.5606766,-2.3279142,17z/data=!4m12!1m2!2m1!1sRed+Bank+Group+Practice+M26+2SP!3m8!1s0x487ba57516b45a67:0xd1e8f1e50f87dd78!8m2!3d53.5606766!4d-2.3231506!9m1!1b1!15sCh9SZWQgQmFuayBHcm91cCBQcmFjdGljZSBNMjYgMlNQkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc2llwzv?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 116
+Google Maps URL: https://www.google.com/maps/place/Redbank+Group+Practice/@53.5603123,-2.3261517,17z/data=!4m12!1m2!2m1!1sRed+Bank+Group+Practice+M26+2SP!3m8!1s0x487ba57516b45a67:0xd1e8f1e50f87dd78!8m2!3d53.5606766!4d-2.3231506!9m1!1b1!15sCh9SZWQgQmFuayBHcm91cCBQcmFjdGljZSBNMjYgMlNQkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc2llwzv?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.0
+Review collection mode: full_feed
+Review cards collected: 116
+Owner replies collected: 0
+Raw review responses captured: 12
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83603-red-bank-group-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: denise ellis
+Date: a week ago
+Rating: 5 stars
+I have never had any problems with my surgery. I am happy to use the ask my gp app, as sometimes I know I dont need to actually go in to the surgery to see a doctor face to face but just need a telephone appointment. When I have needed to go in, I've never failed to get an appointment, sometimes its with the nurse practitioners or the doctors but never had an issue with any of them. They have all been really great with my issues. I find the reception staff very helpful when I've spoken to them too.
 
 Author: Margaret Bailey-varey
-Date: 2 days ago
+Date: a week ago
 Rating: 5 stars
-Margaret Bailey-varey14 reviews2 days ago New
+Margaret Bailey-varey14 reviewsa week ago New
 
 Author: Margaret Liberman
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 I have been with this practice for many years and I have never had reason to complain. Just recently I have been seen a few times by Dr Amir and he has been so kind and helpful.
 
 Author: Linda bray
-Date: a week ago
+Date: 2 weeks ago
 Rating: 1 star
 If you wont an appointment and you work , it is impossible to get one ,
+
+Author: Paul Wright
+Date: a month ago
+Rating: 5 stars
+Very courteous and helpful - I’ve used several times and have not experienced any of the problems reported nationally - this may be the exception. In which case I’m fortunate but that’s how it’s been for me
+
+Author: Gordon R
+Date: Edited a month ago
+Rating: 5 stars
+Attended today for my annual check up. Dealt with by Mel Counsel. Friendly and professional, with an ability to communicate in language that a layman can understand. Explained all the procedures clearly and patiently. I was impressed.
 
 Author: Alan White
 Date: a month ago
@@ -59,3 +79,518 @@ Author: Zoe-Louise Green
 Date: 3 months ago
 Rating: 2 stars
 Ask my GP system is absolutely nightmare I'm only 27 and I'm scared to get ill because it's such a ballache to get an appointment
+
+Author: Georgia Williams
+Date: 4 months ago
+Rating: 1 star
+This doctors is the most worst doctors I have ever signed up to, I have rang them stayed on hold for about 1 hour to tell me that I’m caller number 1 since the start of the call you need to hire more staff clearly don’t have enough staff if you can’t afford to pay staff then close down! DO NOT sign up here there a JOKE🤣🤦🏽‍♀️. I’d highly recommend spring lane doctors Radcliffe 💯.
+
+Author: Donald Binks
+Date: 5 months ago
+Rating: 4 stars
+Donald Binks1 review5 months ago
+
+Author: bev bateson
+Date: 5 months ago
+Rating: 5 stars
+bev bateson1 review5 months ago
+
+Author: Kaz Zeet
+Date: 5 months ago
+Rating: 1 star
+I call them and I was waiting for 45 minutes as a number one in queue and still no answer and this happened every time I call them this doctors is one big joke definitely dont recommended this one star is still to much for them
+
+Author: Andrew Coakley
+Date: 6 months ago
+Rating: 5 stars
+I've always found the staff to be very friendly and helpful. The doctors and nurses always make contact to discuss any natters. The waiting area is kept clean and well set out.
+
+Author: Victoria Bumby (VickieB)
+Date: Edited 6 months ago
+Rating: 5 stars
+All the staff here are amazing, they remember the regular patients and their families which isn't included in your notes. Cannot thank them enough for everything they do. Stand by this. Dr Miranda is awesome
+
+Author: craig millington
+Date: 6 months ago
+Rating: 1 star
+Surgery never answers the phone, it doesn't matter what time of day you call. They are only available to book appointmentsfor around 5-10 mins on askmygp.uk each morning.
+
+Author: Christine Crowther
+Date: 6 months ago
+Rating: 5 stars
+Christine Crowther6 months ago
+
+Author: Gloria Tomlinson
+Date: 6 months ago
+Rating: 5 stars
+Dermotoligist did biology, team send letter back with a possible findings but unsure wasnt sent a appointment for further tests. Still have the symptoms Tried contacting them on many occasions via the number on the letter,was not successful. Gp response was speedy , then I received an appointment with the Dermotoligist team in 6 months.
+
+Author: Lorraine Jackson
+Date: 6 months ago
+Rating: 5 stars
+In 34yrs I've never really had a problem speaking to someone or getting a appointment,staff are always friendly and try to help where they can!
+
+Author: Joann Nicholson
+Date: 6 months ago
+Rating: 5 stars
+On the last few occasions received fantastic service. Used ASK MY GP for advice and get a response same day. On occasion received an appointment that day. The team , from administration to clinical have all been friendly and professional.
+
+Author: charles palmer
+Date: 6 months ago
+Rating: 4 stars
+I find the service i receive very good had a few medical problems all been delt with promptly
+
+Author: amanda Spencer
+Date: 6 months ago
+Rating: 5 stars
+Excellent surgery, very efficient and always willing to help. Been looking after myself and family since 1987. Ask my GP is excellent.
+
+Author: John Rigby
+Date: 6 months ago
+Rating: 4 stars
+I always had very good medical treatment over many years at Redbank GP. I just wish it wasn’t such a problem and a bit of a lottery to make an appointment.
+
+Author: Elsie Rushworth
+Date: 6 months ago
+Rating: 5 stars
+Mainly use the AskMyGP system as difficult to get through directly. This is perfect for my working hours as I can't spend a lot of time trying to get through by phone at work. All dealings with the clinical staff have been fantastic, very approachable, supportive and compassionate. My requests are listened to and dealt with promptly. Thank you Red Bank Practice.
+
+Author: Jean Brockett
+Date: 6 months ago
+Rating: 4 stars
+Reply to my request to speak to someone & got a call from doctor so quick, got appointment next day, no waiting around.
+
+Author: Barbara Dixon
+Date: 7 months ago
+Rating: 1 star
+Barbara Dixon1 review7 months ago
+
+Author: Aqila Mansoor
+Date: 7 months ago
+Rating: 5 stars
+I have very positive experience of my appointments with Redbank Surgery. The wole staff including receptionist are very polite and humble. Doctors are very professional, polite and listen to you with patience. Thanks to all the staff
+
+Author: Joanne Farquhar
+Date: 8 months ago
+Rating: 5 stars
+I messaged on the app for my son and received a call from the Dr very quickly and was offered an appointment by 9.15 didn't have to long before we was seen and sorted
+
+Author: kenneth russell
+Date: 8 months ago
+Rating: 5 stars
+Very friendly staff and dealt with promptly for my request
+
+Author: John Cawley
+Date: 8 months ago
+Rating: 5 stars
+Very attentive and caring.
+
+Author: Helen Fisher
+Date: 8 months ago
+Rating: 4 stars
+Always and promptly answer my queries and health concerns
+
+Author: Janice Winstanley
+Date: 8 months ago
+Rating: 5 stars
+The service & care I receive here is excellent, whoever I deal with, whatever the problem i am treated respectfully, I feel valued & heard.
+
+Author: Barbara Chapman.
+Date: 8 months ago
+Rating: 3 stars
+Ask my GP if don't use at 7 in a morning after approximately 5 mins closed. Phoning is a nightmare. Janice is very Helpful and understanding.
+
+Author: Dawn Lloyd
+Date: 8 months ago
+Rating: 5 stars
+In the last 2wks had to use the Askmygp 3times and had replies within a couple of hours even got down to see the doctor. Staff are friendly, had no problems with receptionists.
+
+Author: Annette Walker
+Date: 8 months ago
+Rating: 1 star
+Doctor finally phoned and was clearly distracted muttering so badly I couldn't even hear him ,I'm in agony feel like just ending My life I'm getting nowhere, it's a complete waste of time, been waiting for weight loss clinic for months, I've a huge hernia causing me a lot of pain aswell then I heard him say just phone reception for an appointment with the nurse up to now I've tried 58 times to get through nothing I give the hell up
+
+Author: Steven
+Date: 10 months ago
+Rating: 1 star
+Steven5 reviews10 months ago
+
+Author: Noreen Kanwal
+Date: 10 months ago
+Rating: 1 star
+Every time call one hour waiting time and in the end no appointment available
+
+Author: Kaz Zeet
+Date: a year ago
+Rating: 1 star
+I have been try to book appointments for a week and just to see my test results because I have a hart condition problem and I'm still can't get to the doctors at this practice I really don't recommend that practice
+
+Author: Sandi Peterson
+Date: a year ago
+Rating: 1 star
+Shambles. Been terrible service since Covid. Can rarely get an appointment and if you do want one u have to get up a crack of dawn to even get a shot of using the askmygp service. I have phoned 35 times this morning, no one answered. I did send a formal complaint months ago, still yet to hear a response from them on how they are going to improve this terrible service.
+
+Author: Mrs Robey
+Date: a year ago
+Rating: 1 star
+I am sad to have to write this post but after several bad experiences I find I have no option, firstly the on line app, I have on many occasion got up early to be on for 7:00 , to find it not available or to say its now closed, trying to get through on the telephone is a feat in itself, on average it takes between 30 to 80 minutes to get through only to be given incorrect information or told there are no appointments and either ring 111 or try again tomorrow. The latest advice is walk into a pharmacy and get advice from them, on both occasions I have been told they should not be sending adults to pharmacists for the reason I had been sent, and that for many things they can only treat children up to the age of 17. The sad thing is there are good medical staff in the practise and without Janice the practise nurse and the other nurses, the whole place would fall down, I have not been able to see an actual gp at the practise for over 2 years. My advice is better training for the receptionist, as they are constantly giving out incorrect information, you CAN not go to emergency numbers when your own gp is open and you will be told to go back to your gp. The phones need to be manned better or the option to get a ring back rather than kept holding on line. People are genuinely suffering and when you are ill you don't want to be passed around, many people don't have transport to go to these sometimes faraway out of hours practise and if your ill having to go out to appointments late at night in the cold to bolton rochdale or Oldham is barbaric. There is a desperate need for change and maybe invite patients in for a forum to get a clear understanding of how it affects individual patients.
+
+Author: Aaron Manley
+Date: a year ago
+Rating: 1 star
+It toke a lot of Courage for me to go to the doctors and I can tell you this know will never step foot in your doctors again didn't look my on my eyes when was their for my metal heath plz stay away from this place right assholes
+
+Author: Grace C
+Date: a year ago
+Rating: 2 stars
+Doctors are great, however getting through to them is impossible. Twice in the last week now I’ve been fobbed off by receptionists who seem to think they can diagnose me themselves. Not to mention they also come across very rude and unhelpful. Needs massive improvement, even if it was just some manners and respect.
+
+Author: Mike Cunliffe
+Date: a year ago
+Rating: 1 star
+Mike Cunliffe2 reviewsa year ago
+
+Author: christina Frain
+Date: a year ago
+Rating: 1 star
+Been on hold for 15 min. Could not get through on the ask my gp app. As it closes 10 min after opening. Gave up.
+
+Author: Andy Poo
+Date: a year ago
+Rating: 1 star
+Shambolic service.
+
+Author: Kei !!
+Date: a year ago
+Rating: 5 stars
+Just been for a smear test . Even though I’ve had many in my years I still feel nervous and worried. Nurse Mel council put me at ease straight away and took my worry away . Made me feel so comfortable. Thankyou
+
+Author: DLA
+Date: a year ago
+Rating: 1 star
+It is impossible to get through to the surgery. I dread calling them because the staff are rude, they ask imposing questions which you don't always want to divulge the reason for calling. The AskMyGP service is never accepting appointments so you choose to call instead and for what can only be described as a "black hole" your call goes unanswered. Tried to call today on both numbers that they have & instead of resting up, I've wasted over an hour of my time. It says it all when you are close to walking into the non emergency practice at Fairfield Hospital. This is a joke & I think after today's experience, I will be looking to change my GP.
+
+Author: Chantelle Rennie
+Date: a year ago
+Rating: 1 star
+ANSWER THE PHONE! Over an hour I was in the queue today and everytime I call! It’s so infuriating as when I’m in the doctors and the phones ringing they still don’t answer, when they finally answer you get through to staff who 100% need extra training on how to speak to people. I am going to change surgery because I’m sick of being spoke to like the sort of the bottom of your shoe every single time I call! I would like a manager to contact me ASAP please as I would like this as a formal complaint
+
+Author: Kim Bowker
+Date: a year ago
+Rating: 3 stars
+Can't fault the care my family and I recieve by Dr's, nurses etc but the receptionist staff don't answer calls, can take over an hour to get through after peak times and can be rude on the phone. There's no practise manager in at the moment so complaints are being ignored. It's a shame as the care I get by professionals is excellent and if improvements was made by the receptionist staff, I'd happily leave a 5* review. I dread having to try get through and then being spoken to like I'm putting them out of their way
+
+Author: Ellie S
+Date: a year ago
+Rating: 1 star
+Absolute joke of a practice. My partner has suffered with gout for over 2 weeks. Rang multiple times to be told ‘we are fully booked up, you’ll have to ring again tomorrow’ and put the phone down! Not asking any questions about my issues. SO RUDE! POOR PRACTICE! Absolutely disgusting, working people get nothing these days it’s a joke!!!!
+
+Author: K New
+Date: a year ago
+Rating: 1 star
+Pick up the phone ! Had a text saying I need to get in touch for a follow up and nobody is answering , I’ve been ringing numerous times for the last three days . And ask my gp is offline within ten mins of it opening at 7am , I was writing a request and it went offline . Why does nobody answering the phone? What are the receptionist actually doing?
+
+Author: Lesley Mahon
+Date: a year ago
+Rating: 1 star
+My members of my family have been with this doctors for over 45 years, they could not say another on how good they were, but now they mix medical records up, the lose medical records ,and don't take responsibility for it the receptionist are rude and assume your on benefit when your not this as gone down hill since they moved the the new build and it know long was a family friendly doctors ,to many at the top screwing the NHS up bring it back to doctors being doctors so sad to see how it's been screw up just for money hungry paper pusher
+
+Author: Lilian Day
+Date: Edited a year ago
+Rating: 5 stars
+The reception staff go above and beyond to help and solve problems. There is one lady that is alway very pleasant and nothing is to much trouble. Thanks again for all the help given.
+
+Author: Ilan Brower
+Date: 2 years ago
+Rating: 1 star
+You might as well be shut. What’s the point of online appointments when you turn off the feature. What’s the point of a phone number when after 1h38 minutes of being on hold you still don’t pick up. Absolutely disgraceful!!
+
+Author: Catherine Miller
+Date: 2 years ago
+Rating: 1 star
+This practice has gone completely down hill. If you have any sort of mental health disorder or invisible disability they simply do not care, or are arrogant. The way this practice has treated my daughter is absolutely disgusting. Multiple times, different members of staff. Whether that be for mental illnesses or physical health issues.
+
+Author: Emma Woodhouse
+Date: 2 years ago
+Rating: 1 star
+If I could give a minus 1000 I would. Never ever able to get an appointment! I have had blood tests and have been sent a text to be told I need to be seen! had issues for months literally can not get an appointment even though they have said I need to be seen, ask my gp never online even at 7am!!!! Yes I am online at 7am!! I Phone speak to rude rude staff who basically tell me to try again at 7am!! Appalling service
+
+Author: Fitmomma.loraine
+Date: 2 years ago
+Rating: 1 star
+have asked numerous times to have a repeat prescription added to the 'app' so I don't have to constantly battle through hold music to order something that should be so easy to do - I have asked on three separate occasions and this has still been ignored. For some reason this has been changed to 'acute' prescriptions when it is for contraception - I have also had a years supply in the past and now I can only order 3 months at a time?!?! I have now been on hold for OVER AN HOUR to do something that should be a click away. This is RIDICULOUS. AskMyGP closes at 8PM because 'it is full for the day' - there is NO WAY of being able to contact these people.
+
+Author: Hamna ali
+Date: 2 years ago
+Rating: 1 star
+I’d give it a zero if i could. I’ve rang over three times in order to simply book an appointment. They don’t pick up the phone. I’ve been in person, they are not that busy so why are they not picking up? Honestly a joke, after being on hold for 15 minutes, the call ends? Like are they hanging up on me? It’s unfortunate that they are my gp, i’d go elsewhere if i could. PS - If you’re reading this, for the love of god, answer my phone call.
+
+Author: Wayne Holden
+Date: Edited 2 years ago
+Rating: 1 star
+If your looking for a GP surgery don't pick this one it's a shocking and really bad surgery not only cant get an appointment the staff are very ignorant and rude your rude to them then you get thrown off the premises. Been told today that I can't have any more prescriptions anymore because it's a controlled drug and it comes from somewhere else. It's because of this surgery I'm on a controlled drug because they over prescribed a painkiller because they didn't know what to do . So know apparently its my own fault a gp told me Joker's this practice. So if your looking for a gp surgery Hopefully people will take people's reviews on board and find another surgery . Also had to ring 111 on Monday morning because I couldn't get an appointment they said I had to be seen within 6hrs so they put me in fir telephone consultation for Tues it was changed to Wednesday because they was over stretched
+
+Author: sharryn taylor
+Date: 2 years ago
+Rating: 1 star
+This practice is like so many others, can't ever see a doctor, lucky if you get a nurse appointment, sick of their excuses, we are entitled to see a doctor!
+
+Author: Don Eckersall
+Date: 2 years ago
+Rating: 1 star
+Pathetic.
+
+Author: Martin Godfrey
+Date: 2 years ago
+Rating: 5 stars
+Booking GP appointments at Redbank is done via the AskMyGP website starting at 7am each morning. By logging a request close to this start time i've never had much of a problem getting an appointment over the last four years since they introduced the website. I tend to ring the surgery outside key times (eg after 10am) when booking blood tests and so on. During the pandemic it took a very long time for the phone to be answered, but response times over the last six months have been much much better. It is true that trying to book an appointment over the phone at 8am can be an issue (AskMyGP is the solution to that), but given the number of patients registered at GP practises these days, if each one had 30 receptionists answering the phone at 8am it would likely not be enough. I'd like to thank all the staff for what they do - I've been a patient at the practise for about 10 years now - and have found them universally very helpful.
+
+Author: Katie S
+Date: 2 years ago
+Rating: 1 star
+I'm trying to get an appointment for my sick baby, only 9 weeks old, and the phone just keeps ringing and ringing. No availability on AskMyGP, either. As I'm writing this, I've been on hold for 48 minutes and counting. Tempted to walk down in person, still on hold probably, and see if I can get help that way.
+
+Author: Darren Sharples
+Date: 2 years ago
+Rating: 1 star
+Worst surgery ever. Can't ever make appointments or speak to anybody. Phones just ring and ring, they say use my gp app but its always off line. How do you make an appointment.
+
+Author: J L
+Date: 2 years ago
+Rating: 1 star
+Walked 2 hours weeks ago with all the forms to register here, spent ages waiting while she was in back. Asked today about vaccinations and a receptionist said you had to pay somewhere else privately £79 each. Rang again today and I'm not even on the system and the vaccines are meant to be free there. They just mess you about tbh
+
+Author: George Triggs
+Date: 2 years ago
+Rating: 1 star
+Never able to get an appointment, they say my gp opens at 7am yet no appointments have been made available and then at 8am the lines are consistently busy and when you get through, “oh we have nothing available “. Got told to call 111 or after 6.30pm for an out of hours GP and all that did was to take me through to 111.
+
+Author: LMS VIDEO
+Date: 2 years ago
+Rating: 5 stars
+If you have an appointment here its quick and easy in and out in no time
+
+Author: Paul Nevin
+Date: 2 years ago
+Rating: 1 star
+You eventually speak to your doctor and you have to phone back to make new appointment but you can never get through
+
+Author: Seánie H
+Date: 2 years ago
+Rating: 1 star
+Useless. Asked to make a telephone consultation. Impossible to get through on phone. When I did finally get through no appointments available. Try again tomorrow….
+
+Author: Carol Barlow
+Date: 2 years ago
+Rating: 1 star
+Answer phone on constantly can’t get through at all even when try phone at 7 in the morning then shut off ask my GP when reached capacity been ringing now for 3 days! Disgraceful! Been loads of times with mum no one in surgery waiting at all ?
+
+Author: Roy Battery
+Date: 2 years ago
+Rating: 1 star
+Awful.
+
+Author: Gulen Abdula
+Date: 3 years ago
+Rating: 1 star
+Absolutely disgraceful, they actually do not provide any kind of service.
+
+Author: Ann Mcveigh
+Date: 3 years ago
+Rating: 5 stars
+Rang the reception just now with a meds issue, a lady called Christine, reception staff sorted my issue out straight away, lovely lady
+
+Author: Melissa Reynolds
+Date: 3 years ago
+Rating: 1 star
+Melissa Reynolds4 reviews3 years ago
+
+Author: Mike Cunliffe
+Date: 3 years ago
+Rating: 1 star
+Absolute shocking receptionist and Doctors. I was requested to record my blood pressure for 1 week and drop off at the surgery as I have suspected high blood pressure. I've contacted the surgery for results and they were as helpful as a chocolate fireguard. Absolute joke of a surgery
+
+Author: Stephanie Kniveton-Jones
+Date: 3 years ago
+Rating: 1 star
+I agree with many people who have left reviews. Myself and my family have been patients since the 80's here. This place should now be ashamed of itself. You can't make an appointment either on the app or by phone. They dont actually care about people and wether they are in pain. Shame on you all.
+
+Author: nat jones
+Date: 3 years ago
+Rating: 1 star
+Shocking service. The gentleman on the desk whose parent is a GP is rude, arrogant and very unhelpful. No doctor who I can contact as it’s always a locum gp. Been in agony for a long time now and won’t provide me with my medication that I’ve been on before and I have asked for. Absolute joke, you only have to look at some of the reviews on here
+
+Author: katie ogden
+Date: 3 years ago
+Rating: 1 star
+katie ogden3 years ago
+
+Author: Abbie
+Date: 3 years ago
+Rating: 1 star
+Customer service is terrible - receptionists are in the wrong job, no care or compassion. Appointment times mean nothing, complete waste of time.
+
+Author: Rebecca Sutcliffe
+Date: 3 years ago
+Rating: 1 star
+This place is getting worse if that is possible. Can't get through to anyone on the phone most of the time and when you eventually do, you've been on hold for so long, that they won't help you. Any appointments are gone for the day and if you want to book in for the following week you can't as there are, again, no appointments. Told to ring again in the morning, but by the time you manage to speak to someone any appointments are gone again, or use Ask My GP which is rarely not 'offline' so that's pointless. The other surgeries in the neighbouring areas are apparently even worse than this so I can't even go elsewhere!
+
+Author: n0talicee (Alice)
+Date: 3 years ago
+Rating: 1 star
+literally absolutely useless and the worst service i’ve ever experienced
+
+Author: Christine Jones
+Date: 3 years ago
+Rating: 2 stars
+Absolutely appalling service. No gp assigned to you anymore so no continuity there. I am fortunate and see the nurse practitioner who is wonderful and very helpful so don’t really have a need to see a gp. However for elderly people they like to see a doctor which seems to be impossible at present. My mother was asked to book a non urgent appointment from her results from hospital out patients and has to do so by phone (she’s 82) so she rang and was told to ring in the morning between 8-8.30 as they are unable to book anyone in for the next 6 days!!!! She did this and just had an answerphone for the whole 30 minutes. Phoned after 11am and was told there was nothing they could do only to try again in the morning. She’s already having problems with depression and this has just added to it.
+
+Author: enyaw006
+Date: 3 years ago
+Rating: 1 star
+Not like me giving a review but this place is horrendous, no organisation at all. Receptionists are ok when you talk to them and the Nurses are good , Doctors i havnt see one in years. Now though after over thirty years with Type1 and very little problems and if i had i can and do sort it myself as its easy to. Recently been having bad problems with passing out and needing Paramedics and hospital. Redbank know and still after over 2 months they havnt referred me to the specialists. All i need is a monitor. Place is near dam useless.
+
+Author: Jak Howcroft
+Date: 3 years ago
+Rating: 1 star
+What a Joke this surgery is where can I start, honestly an absolute shambles staff are rude and not helpful. I took time out of work to wait for a call back which I got told would be within the hour and never got it, they cancelled my appointment the previous week then told me I would have to ring up again and rebook, which you can never get through to them anyway. It is actually a joke that needs to be looked at. I will be going private from now on.
+
+Author: anita taylor
+Date: 3 years ago
+Rating: 1 star
+anita taylor2 reviews3 years ago
+
+Author: Matt Haigh
+Date: Edited 3 years ago
+Rating: 1 star
+Been a patient since the '80s - and my parents before that. Never been spoken to in such a condescending, unhelpful and rude way as by Cath on the phone just now. I appreciate her and all NHS staff must be very busy and under a lot of pressure currently but if she spoke to my customers that way, she wouldn't be in a job for long. And as someone who has worked in the digital sector for a decade or two - I know the difference between a website not working and a website I'm unable to understand. Dreadful service. Audible sighing at questions, sarcastic tone, interruptions of genuine concerns - tell you what docs, find someone to answer the phones who doesn't hate doing it. 👍
+
+Author: Annette Gordon
+Date: 3 years ago
+Rating: 1 star
+Annette GordonLocal Guide · 5 reviews · 49 photos3 years ago
+
+Author: Helen L
+Date: 4 years ago
+Rating: 5 stars
+Went for an ultrasound at Redbank today and it all went very smoothly. It was on time, the facilities were very clean and the standard of care was excellent. The staff were very friendly and kind. Thank you!
+
+Author: Gary Wooff
+Date: 4 years ago
+Rating: 4 stars
+Gary WooffLocal Guide · 63 reviews · 2 photos4 years ago
+
+Author: kyle seal
+Date: 4 years ago
+Rating: 1 star
+They don't answer the phone and if they do there staff are so rude and unhelpful.you should all be ashamed of yourselfs it's a discrace.
+
+Author: Belinda Robinson
+Date: 4 years ago
+Rating: 2 stars
+I have only been with this surgery for 2 months and have had nothing but problems from the start. I will be changing my surgery as soon as possible
+
+Author: Martin Archer
+Date: 4 years ago
+Rating: 5 stars
+First class service, even through the pandemic.
+
+Author: frazer Baxter
+Date: 4 years ago
+Rating: 1 star
+frazer Baxter4 reviews4 years ago
+
+Author: Malcolm Siddall
+Date: 4 years ago
+Rating: 2 stars
+Malcolm Siddall1 photo4 years ago
+
+Author: Bill Carter
+Date: 4 years ago
+Rating: 1 star
+Bill Carter4 years ago
+
+Author: Chris
+Date: Edited 4 years ago
+Rating: 1 star
+Not very Happy, my wife is 60 and had a stroke in Sept 2018 and has had virtually no contact from this doctors. Today she received a letter about a vaccination for covid saying they had tried to contact her. It is the 11th of March, how long has it taken them to send this letter, she received a letter from the NHS two weeks ago, so they really tried to contact her. Anyway we have managed to get a appointment at the Bolton Stadium ourselves. Update I have managed to get in Bealeys at Radcliffe a bit sooner.Chris Hallows.
+
+Author: Max Chandler
+Date: 5 years ago
+Rating: 1 star
+The reception staff are ok but the doctors speak to you like dirt. I have a fully disabled dad i tried to speak to them and they was completely obnoxious. My dad is scared rinf the surgery now. STAY CLEAR.
+
+Author: Gerry Aum
+Date: 5 years ago
+Rating: 4 stars
+There is a great improvement in the staff in recent months. In the past I was reluctant to go there because of unpleasantness and dictatorial attitudes. I found the only one with empathy and support was a receptionist called Sarah. Thank the universe for this improvement ☺
+
+Author: Zafar Chowdhury
+Date: 5 years ago
+Rating: 5 stars
+This review is long overdue. I must say a special THANK YOU to Dr Nattrass for being the superb GP that she is in looking after my terminally ill father. I am GP myself and am very difficult to please normally but i will never forget that one encounter with Dr Nattrass when she saved my Dad's life! She is absolutely an asset to general practice.
+
+Author: sam morrow
+Date: 5 years ago
+Rating: 5 stars
+Really good with nice, helpful staff.
+
+Author: Debbie Goss
+Date: 6 years ago
+Rating: 5 stars
+Great surgery clean and tidy nice receptionists very efficient It can be difficult to get an emergency appointment but most times I’ve been offered a telephone call and told to come in if needed by the doctor Dr Miranda who is my doctor and had been for years is lovely and helped me with my anxiety and panics listens and advises Wouldn’t change this practice
+
+Author: leah cassidy
+Date: 6 years ago
+Rating: 1 star
+Never even bother to get an appointment anymore because unless you ring dead on 8 about 50 times, you won’t get an appointment. Even then, you’re waiting hours for a nurse to ring you back to see if you need an appointment. Been in a few times and feel like my problems get brushed off and don’t feel like the doctors care for the patients.
+
+Author: Alina rose Ellis
+Date: 6 years ago
+Rating: 1 star
+150 phone calls later to get an appointment, booked in for an appointmet at 5pm lucky really because by the time you get threw there ain't ever any appointments left!, For baby to have her immnuastions didn't get seen till 5.30 there a waste of space if you ask me.
+
+Author: Joe Meadowcroft
+Date: 6 years ago
+Rating: 1 star
+Good luck trying to get an appointment at all.
+
+Author: krissie kristabell
+Date: Edited 6 years ago
+Rating: 3 stars
+krissie kristabell8 reviews · 1 photoEdited 6 years ago
+
+Author: manchesterbuyers
+Date: Edited 6 years ago
+Rating: 1 star
+Trying to get a appointment. I suffer from stress, wow.. getting a appointment is so stressful. All you get is, Phone back at 8 am.. Ok, but i work at that time. Phone appointments dont work as i miss them because i sleep in the day and they dont give a pacific time No compassion showed. just a sorry thats how it is.
+
+Author: barbara wells
+Date: 6 years ago
+Rating: 5 stars
+Dr Flascher is oñe of the best doctors I have had
+
+Author: Kerry Bower
+Date: 6 years ago
+Rating: 5 stars
+I cannot thank Andrea, Nancy and Dr Flascher enough for their constant help and support over the last few months; the time they have all spent listening to me when I was stressed and upset and their assistance in sorting appointments out at the drop of a hat have made them superstars. Would rate higher than 5 stars if possible. Many, many thanks
+
+Author: Diesel Dog
+Date: Edited 7 years ago
+Rating: 5 stars
+Ok place but very hard these days to get an appointment
+
+Author: Gemma Moore
+Date: 8 years ago
+Rating: 4 stars
+Gemma MooreLocal Guide · 63 reviews · 11 photos8 years ago
+
+Author: Katie Spiby
+Date: 8 years ago
+Rating: 1 star
+If you see Dr. Flascher I would avoid him if I were you! My dad attended the surgery often, starting in August where my dad suffered pains in his chest. From August to December he seen Dr. Flasher (who isn't his doctor but stands in for him all the time) and over and over he tried to say that my dad had a chest infection and kept giving him various antibiotics. On one occasion when he went in he had seen a nurse who had done his blood and told him he needed to go to the hospital for an X-ray, 24 hours later Dr. Flasher tells my dad OVER THE PHONE he has cancer. My dad was told next month that he had less than 12 months to live, but actually passed away 3 months later. In my opinion Flasher should count his lucky stars my dad didn't take this further with the surgery, as even my dad's doctor said looking at his notes he wasn't happy with the care he received from the surgery. Flasher if you see this I would strongly recommend you should go on further training to look after the patients in your care as I really feel sorry for them!
+
+Author: iain johnstone
+Date: 9 years ago
+Rating: 5 stars
+Best practice I have been with. Never too long to wait and appointments on Saturdays and Sundays too. Rang up today at 09.30 and offered am appointment at 10.00. Couldn't make that one so given one at 11.00.

@@ -4,14 +4,19 @@ Postcode: M23 9RL
 Google Maps title: Woodlands Medical Practice
 Google rating: 3.3
 Google review count: 50
-Google Maps URL: https://www.google.com/maps/place/Woodlands+Medical+Practice/@53.4068386,-2.3114552,17z/data=!4m8!3m7!1s0x487bacfe02deb389:0xf04b1f6cf101e06a!8m2!3d53.4068386!4d-2.3114552!9m1!1b1!16s%2Fg%2F1tfl9621?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Woodlands+Medical+Practice/@53.4068386,-2.3140355,17z/data=!4m8!3m7!1s0x487bacfe02deb389:0xf04b1f6cf101e06a!8m2!3d53.4068386!4d-2.3114552!9m1!1b1!16s%2Fg%2F1tfl9621?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 50
+Owner replies collected: 0
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84672-woodlands-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Jackie Louise
-Date: a week ago
+Date: 3 weeks ago
 Rating: 4 stars
 Friendly drs.some staff lovely
 
@@ -26,12 +31,17 @@ Rating: 5 stars
 Easy registration and quick appointments. The receptionists are all very lovely and helpful.
 
 Author: Rachel Harrop
-Date: Edited 3 months ago
+Date: Edited 4 months ago
 Rating: 4 stars
-Rachel Harrop7 reviewsEdited 3 months ago
+Rachel Harrop7 reviewsEdited 4 months ago
+
+Author: Hina Siraj
+Date: 7 months ago
+Rating: 5 stars
+My experience has been the best till now, all appointments given with no issues , doctors call to discuss blood results , the receptionists all are extremely cooperative, all records are maintained , if I don't get an appointment in the clinic they helped me get an appointment in another clinic for blood work. They have a physiotherapist and she has been very helpful. Till now I have the best experience with them.
 
 Author: Iain Whiteley
-Date: 10 months ago
+Date: 11 months ago
 Rating: 5 stars
 Reception/admin staff are very approachable, friendly and helpful. Was repeatedly seen by Doctor Musgrave over the last month, nothing was too much trouble and was never made to feel anything but cared for. Sadly this Doctor has moved onto a different path in her career but other Doctors I've seen or had phone consultations with have all been friendly, understanding and sorted me out with either referrals, prescriptions or just advice on getting over things like the flu before Christmas. I can't recommend this practice enough.
 
@@ -59,3 +69,198 @@ Author: Nessin Bedryan
 Date: a year ago
 Rating: 1 star
 RUN AWAY OF THIS PRACTICE! Receptionists never help, only raise tasks and after that no one responds. Misdirected, did not receive support as a GP. Did not help me with women heath, even DR does not know that there is emergency gynae unit at Wythenshawe and only it’s needed a call in order to send me on the next day, and it’s not been done 14.06.24. They only say go to A&E that is it. They type on the computer with no help after that. They don’t receive messages/information from hospitals which is confused my health. I had an operation they even ultrasound did not order. Not good practice.
+
+Author: zahda saleem
+Date: a year ago
+Rating: 5 stars
+Didn’t feel rushed Dr was very nice welcoming receptionist staff very friendly
+
+Author: Zari Salman
+Date: a year ago
+Rating: 5 stars
+Very very good i am so satisfied with this gp
+
+Author: Heba Adhami
+Date: a year ago
+Rating: 1 star
+Heba Adhami4 reviewsa year ago
+
+Author: Del “Faz” Forr
+Date: a year ago
+Rating: 5 stars
+Del “Faz” ForrLocal Guide · 185 reviews · 164 photosa year ago
+
+Author: M Adnan
+Date: a year ago
+Rating: 5 stars
+Excellent doctors and friendly staff
+
+Author: Arash Arghamiri
+Date: Edited a year ago
+Rating: 3 stars
+Arash Arghamiri2 reviewsEdited a year ago
+
+Author: cath benson
+Date: a year ago
+Rating: 4 stars
+cath bensonLocal Guide · 65 reviewsa year ago
+
+Author: Anne Moores
+Date: 2 years ago
+Rating: 4 stars
+Anne Moores1 review2 years ago
+
+Author: Noémi Széchely
+Date: 2 years ago
+Rating: 1 star
+Awful, very rude receptionists! Especially one of the old ladies! Going in with a child who had a little accident to see if he needs any further treatment and she was so arrogant saying "this is not a walk in center! ''. The funny thing is that they have 0 tolerance of verbal abuse but it's clearly seen from many more negative reviews that they don't respect their patients! This is also not the first time of bad experiences so definitely will go further to make a complain!
+
+Author: Manny Osei
+Date: 2 years ago
+Rating: 5 stars
+Fantastic staff, very professional and efficient.
+
+Author: Sarah Humphreys
+Date: 2 years ago
+Rating: 1 star
+Made an appointment only for the receptionist to make it for the wrong day ,Also made an appointment for my dog at the vets the same day ,The dog got better treatment, Also ordered medication the same day ,still not received it a week later ,they also refuse to take a sample they requested and asked if a disabled man could take it cause I was at work ,the surgery I'd completely incompetent
+
+Author: Sandra Flynn
+Date: 2 years ago
+Rating: 4 stars
+They try their very best to help and if you need to see a Doctor you do get seen or receive a telephone consultation.
+
+Author: Mickey Nash
+Date: 2 years ago
+Rating: 3 stars
+I was at this medical practice a few days ago having an ultrasound I found the medical staff very professional. when I went up to the reception window . I told them I was here for an ultrasound I was just told to take a seat They did not ask for my Name or DOB I'm not with this practice and was sent by my own doctor In Manchester .
+
+Author: Dave
+Date: 3 years ago
+Rating: 1 star
+This used to be a brilliant doctor whoever in recent years it has gone down hill rapidly and the attitudes of the so called receptionists are absolutely revolting please replace them with people who actually care. Avoid at all cost
+
+Author: Robert
+Date: 3 years ago
+Rating: 5 stars
+They try to find all problems and fix them
+
+Author: Ciara Madders
+Date: 3 years ago
+Rating: 1 star
+Ciara Madders3 years ago
+
+Author: Dennis Nelson
+Date: 3 years ago
+Rating: 1 star
+A basic requirement of a doctors surgery is having a working phone line. They can't even get this right. 3 day so far, unable to contact them as the phone line doesnt work in the morning. Each option gives you "this line is closed"
+
+Author: MAX MAYBURY
+Date: 3 years ago
+Rating: 1 star
+Absolute disgrace with my family gp surgery of 20 years! My sister rang up a few days ago at 8am as followed by procedure trying to get an urgent appointment she explained she had a bad chest, wheezing and short of breath she also has an autoimmune disorder which can mean a common cold could potentially be life threatening. She was then proceeded to be told by a receptionist (no medical qualifications or opinion) that she will not be getting an appointment and was told to go to the pharmacist and try home remedies. Contacted our mother who tried to ring the surgery where she found herself on hold for 45mins as the second caller in the queue she jumped in her car hands free still on hold and as she arrived at the surgery she seen there was no phone ringing and both receptionist sat there chatting away with out a care in the world finally an appointment was made for my poorly sister the following day she was then she told by the doctor at her appointment she needed to go to wythenshawe hospital urgently for an ecg with suspected sepsis which could have been avoided if she got an appointment when she asked. I am appalled with the lack of care and consideration we have been given. THIS WILL BE TAKEN FURTHER DISGRACEFUL.
+
+Author: Maya Peart
+Date: 3 years ago
+Rating: 1 star
+Bad staff and bad management and you wait ages to be seen on the phone and for a appointment do not use this doctor surgery it’s bloody horrible and disgusting and dirty
+
+Author: Oliver Cates
+Date: 3 years ago
+Rating: 4 stars
+Oliver CatesLocal Guide · 17 reviews · 41 photos3 years ago
+
+Author: Jackie Taylor
+Date: 3 years ago
+Rating: 2 stars
+tried to get contact details for a lady I saw at a referral and was refused, now I can't find out anything from that appointment as my own gp didn't keep a record of my appointment. shambles ! 😡 …
+
+Author: Alex Law
+Date: 3 years ago
+Rating: 5 stars
+My partner and I moved to the area last year and Woodlands medical practice has been such a lovely change to our previous GP surgery. The receptionists in particular are so lovely and friendly and genuinely helpful where ever they can be, …
+
+Author: Ashlea Rowe
+Date: 4 years ago
+Rating: 1 star
+Ashlea Rowe5 reviews4 years ago
+
+Author: Alex O'Connor
+Date: 4 years ago
+Rating: 1 star
+Alex O'Connor4 years ago
+
+Author: Amy Jenkinson
+Date: 5 years ago
+Rating: 5 stars
+Amy Jenkinson6 reviews5 years ago
+
+Author: Stevie Willo
+Date: 6 years ago
+Rating: 1 star
+Reception staff not fit for purpose, just stare at you like a rabbit in the headlights thinking you'll just accept a cancalation without warning, With no further appointments. Avoid
+
+Author: Mitala Maria
+Date: 6 years ago
+Rating: 1 star
+Absolutely shocking this place. The worst medical practice in Manchester. If u need to see a female doctor you have to wait for months and when they book you in to see one they get it wrong and book you in with a male doctor anyway.. Even if you have an appointment still have to wait for 40 min.
+
+Author: Kai CB
+Date: 6 years ago
+Rating: 5 stars
+Kai CBLocal Guide · 11 reviews · 2 photos6 years ago
+
+Author: Steven Thompson
+Date: 7 years ago
+Rating: 1 star
+Awful doctors .its gone downhill since dr ma fat left now dr king is leaving .its now a doctors surgery thats not trustworthy .the Drs are incompetant and i feel i have no faith in them especially a lady dr called dr Manny she's rude nasty and eats food whilst consultation .the whole place is run by idiots the reception staff are ridiculously rude never answer the phone .you cannot speak to a doctor and I feel unsafe being at this surgery .I try not to attend and even go to a&e to be seen rather than go here.it was so lovely with Dr ma fat and Dr king .nothing was to much trouble .This surgery is solely for making money and not any care goes into the patients .its cold and very nasty in my opinion .I'm trying to find another Drs as I feel once Dr king leaves this month the patients existing will look for another Dr.its such a shame as I've been with this surgery 30 years .
+
+Author: Alex Law
+Date: 3 years ago
+Rating: 5 stars
+My partner and I moved to the area last year and Woodlands medical practice has been such a lovely change to our previous GP surgery. The receptionists in particular are so lovely and friendly and genuinely helpful where ever they can be, which has not always been our experience elsewhere. The doctors have also been really good - especially in sending referrals efficiently when needed and liaising with specialist healthcare teams. Very LGBTQ+ friendly, and somewhere we would be sad to leave behind if we ever moved out of the area.
+
+Author: Jason King
+Date: 7 years ago
+Rating: 5 stars
+The Care Quality Commision rate this practice as outstanding. I have to agree. Dr Chishti and the reception team are superb, knowledgeable and extremely efficient. I wholeheartedly recommend this practice.
+
+Author: David Livermore
+Date: 7 years ago
+Rating: 1 star
+My partner and my children use this practice it’s absolute shambles how rude and unpleasant the staff are here my son needed his first set of injection weeks ago when we phoned up they couldn’t fit us in until next week saying they had no doctors available this happened for 4 weeks I’m sorry but this is a 8 weeks old baby overdue his injections because u don’t have enough resources and also my daugher we phoned to arrange her an appointment to have her pre school injections and they can’t fit us in until the 6th September a few days before she starts her new school ! Every time we have tried to make apoint ment at this practice there has always been a problem from there END I didn’t even want to give the practice 1* i have Also heard from other patients how awful the inexperienced the staff accually there and how rude to people who complain !!!!!
+
+Author: Kesh Seth
+Date: 7 years ago
+Rating: 5 stars
+This is a great doctors surgery always going the extra mile
+
+Author: Claire Wilson
+Date: 8 years ago
+Rating: 3 stars
+Receptionist is rude and unhelpful, wasn't until I prompted for more info that I was told I didn't need an appointment for my query, as she didn't ask initially that could have been wasted time for me and the doctor and valuable time that another patient might have needed. Dr MaFat is lovely, shame he is no longer working there. Other doctors and nurses I have seen are good also.
+
+Author: Peter Howard
+Date: 8 years ago
+Rating: 4 stars
+Please refer to previous post for Dr ma fat
+
+Author: Sally MC
+Date: 8 years ago
+Rating: 4 stars
+Sally MCLocal Guide · 21 reviews · 202 photos8 years ago
+
+Author: Liam Hall-Gardiner
+Date: 8 years ago
+Rating: 5 stars
+Liam Hall-GardinerLocal Guide · 10 reviews · 13 photos8 years ago
+
+Author: Sarah Reynolds
+Date: 8 years ago
+Rating: 3 stars
+Cosy local doctor's office
+
+Author: Benjamin Higgin
+Date: 9 years ago
+Rating: 5 stars
+Benjamin HigginLocal Guide · 16 reviews · 25 photos9 years ago

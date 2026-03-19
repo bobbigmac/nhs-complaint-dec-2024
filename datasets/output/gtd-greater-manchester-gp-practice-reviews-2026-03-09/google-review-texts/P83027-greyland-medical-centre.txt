@@ -4,11 +4,16 @@ Postcode: M25 1NL
 Google Maps title: Greyland Medical Centre
 Google rating: 3.0
 Google review count: 14
-Google Maps URL: https://www.google.com/maps/place/Greyland+Medical+Centre/@53.5374139,-2.2754538,17z/data=!4m8!3m7!1s0x487baffeb109fdfd:0xfb81a6df174b5e99!8m2!3d53.5374139!4d-2.2754538!9m1!1b1!16s%2Fg%2F1vwlnph2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Greyland+Medical+Centre/@53.5374139,-2.2780341,17z/data=!4m8!3m7!1s0x487baffeb109fdfd:0xfb81a6df174b5e99!8m2!3d53.5374139!4d-2.2754538!9m1!1b1!16s%2Fg%2F1vwlnph2?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 14
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83027-greyland-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Jacob Shapiro
 Date: a month ago
@@ -59,3 +64,23 @@ Author: Robert Hewitt
 Date: 5 years ago
 Rating: 5 stars
 By far the best surgery around. Dr Sherman is the most dedicated Doctor I have come across.
+
+Author: Wendy Okurut
+Date: Edited 7 years ago
+Rating: 5 stars
+Dr Sherman and his great team deliver a service just the way primary care should: with compassion, helpfulness and a smile, and that's everyone from the receptionists, the practice nurse and the man himself. To have a GP who actually KNOWS his patients is a blessing few folk have these days
+
+Author: Sam Brandwood
+Date: 7 years ago
+Rating: 1 star
+Stay well clear of this surgery!! The number of failings of my family are too long to list... absolutely ridiculous!
+
+Author: Rosie Brook
+Date: 7 years ago
+Rating: 5 stars
+I’m shocked by one of the previous reviews as that’s not my experience at all. Dr Sherman is the kindest most considerate doctor that has treated me. Both me and my husband have great respect for him as a GP. Additionally, the practice nurse is a lovely woman and again very kind and considerate. She has done all my baby girl’s jabs over the last year and was so nice to her. I’ve also never struggled with getting an appointment and usually get an appointment the same day if urgent or within a few days normally anyway. Dr Sherman works very hard and never seems to stop. Excellent family practice. I work for the health ombudsman too so I have a good understanding of how the nhs works.
+
+Author: mary rudd
+Date: 7 years ago
+Rating: 5 stars
+Dr Sherman has been my dr for over 25yrs he is a gem and cannot think of anyone taking his place xx his nurse is lovely and receptionists are great xx

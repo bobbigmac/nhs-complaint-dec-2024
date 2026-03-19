@@ -3,42 +3,77 @@ Canonical code: P83007
 Postcode: M26 2SP
 Google Maps title: Radcliffe Medical Practice
 Google rating: 3.6
-Google review count: 149
-Google Maps URL: https://www.google.com/maps/place/Radcliffe+Medical+Practice/@53.5607628,-2.3231403,17z/data=!4m8!3m7!1s0x487ba5757206a1b1:0x5945cf59387b152e!8m2!3d53.5607628!4d-2.3231403!9m1!1b1!16s%2Fg%2F1pxq2tf74?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 154
+Google Maps URL: https://www.google.com/maps/place/Radcliffe+Medical+Practice/@53.5607628,-2.3257206,17z/data=!4m8!3m7!1s0x487ba5757206a1b1:0x5945cf59387b152e!8m2!3d53.5607628!4d-2.3231403!9m1!1b1!16s%2Fg%2F1pxq2tf74?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 154
+Owner replies collected: 0
+Raw review responses captured: 16
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83007-radcliffe-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: STACIE LITHGOW
+Date: 2 hours ago
+Rating: 5 stars
+Was seen on time for pre-arranged appointment. I felt I was listened to and understood.
+
+Author: Luke Matthews
+Date: a day ago
+Rating: 5 stars
+Good parking. Ready disabled access. Two lifts. Very helpful friendly staff. Recommended.
+
+Author: Tracey Darbyshire
+Date: a day ago
+Rating: 5 stars
+Absolutely fabulous. In the past two days I have seen two different doctors and a nurse for bloods. The doctors were both very thorough, and all were very compassionate. Both visits where on the day I phoned for an appointment. Couldn't ask for more, and would highly recommend.
+
+Author: Tayla J
+Date: 6 days ago
+Rating: 5 stars
+Tayla J6 days ago New
+
+Author: Man Cam
+Date: a week ago
+Rating: 1 star
+dont waste your time receptionists think they are Drs when they are not, highly strung and obtuse!
 
 Author: Sean G
-Date: 7 hours ago
+Date: a week ago
 Rating: 5 stars
 amazing caring staff ,,, reception staff are very friendly , the booking staff are fantastic ,,, the doctors are great and dr hayley atkins is so proffesonal and caring ,,,
 
 Author: Lauren Barrett
-Date: 2 days ago
+Date: a week ago
 Rating: 5 stars
 Best place and never had any problems with bookings or the doctors or nurses always helpful and best practice in Radcliffe wave suite
 
 Author: Peter Weibrecht
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 best thing I did to move into this excellent practice one year ago. staff are so friendly and helpful, service 5* ++ all medical practices could learn from this fantastic team and a great team they all are
 
 Author: Jane Whitworth
-Date: Edited 5 days ago
+Date: Edited 2 weeks ago
 Rating: 5 stars
 I have never had problems with Radcliffe Medical Practice. All the staff - doctors, nurses, nurse practitioners and reception are all lovely professional and very helpful. Great also to see them as a training practice - I am always happy to help newbies in their training (probs due to past work employment) and be assessed by them. It is easy to get an appointment and during consultations I have never been fobbed off with several quick referrals for further investigation. Never once have I heard call 111 instead. A few practices could take example from RMP and follow their lead to provide better patient care.
 
 Author: Laura cubitt
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
 Been for an appointment today I was delt with quickly and efficiently many thanks
 
 Author: Paul Barlow
-Date: 3 weeks ago
+Date: a month ago
 Rating: 4 stars
 Sometimes not easy to get an appointment and the NHS app. has limited functionality, which appears to be because certain features are not enabled by the practice. Not withstanding this the doctors and other staff at the practice seem to be friendly and approachable. Moreover Dr Azeer, whom I saw recently, took time to explain and discuss my issue which was very helpful.
+
+Author: Faye Holt
+Date: a month ago
+Rating: 5 stars
+Never had a bad word to say about my doctors, my children have been seen if I ring up at 4 o clock, doctors kindly stay behind to see them, and Micheala is amazing, always reassures you to never feel daft about having to come back even if it’s the day after. All angels
 
 Author: lucy danes
 Date: a month ago
@@ -50,6 +85,11 @@ Date: a month ago
 Rating: 5 stars
 So i had the kyleena coil fitted for the first time. I was extremely nervous and overthinking everything. I am autistic and i also have adhd. That combined with heavy periods is not a good mixture. As soon as i arrived I had Hayley & Lucy to greet me. The whole experience was outstanding. Everything was explained and repeated if I needed. They took their time and constantly checked my obs and Kept me nice and calm. If it wasnt for there patience and compassion i couldn’t have done it. I can’t thank these two ladies enough. You might have just changed my opinion on doctors appointments and not be as anxious x
 
+Author: Mohamed M Bashir
+Date: a month ago
+Rating: 5 stars
+I like this place
+
 Author: Susan Hay
 Date: a month ago
 Rating: 5 stars
@@ -59,3 +99,688 @@ Author: Carla Whelan
 Date: a month ago
 Rating: 5 stars
 Great doctor somebody that finally listend to me and doing more to finding out whats wrong with me and she can actually be botherd with me
+
+Author: Deborah John
+Date: a month ago
+Rating: 5 stars
+The doctor that attended to me was warm and professional. She listened to everything and had a solution. It felt really easy and I felt cared for.
+
+Author: Dana Dementjeva
+Date: a month ago
+Rating: 5 stars
+Very good gp very fast service when needing to go in nice doctors
+
+Author: ADRIAN OCONNELL
+Date: a month ago
+Rating: 5 stars
+Great doctors, always get in when needed
+
+Author: Audrey Benedict
+Date: a month ago
+Rating: 5 stars
+Amazing service
+
+Author: charlotte Hudnott
+Date: a month ago
+Rating: 5 stars
+Great practice, always manage to get an appointment on the day for my young children. Dr Ho in particular has been kind and vigilant with my daughters ongoing care
+
+Author: lynzie baker
+Date: a month ago
+Rating: 5 stars
+Absolutely wonderful service and treatment always 5 stars
+
+Author: Christine Burton
+Date: a month ago
+Rating: 5 stars
+Christine Burtona month ago
+
+Author: Wendy Myatt
+Date: a month ago
+Rating: 4 stars
+Rang up for at 8am this morning for an appointment, got one for 11am the same day , was told I need a blood test and got that done within 10 minutes of seeing the doctor and a referral booked. So quite impressed with the efficiency of doctors , nurse and reception staff.
+
+Author: jade hutchinson
+Date: a month ago
+Rating: 5 stars
+The staff are always kind and the practitioners are fantastic
+
+Author: Ololade Fabiyi
+Date: a month ago
+Rating: 5 stars
+Can’t say how much I love this practice. They have always attended to my needs. They are very helpful, supportive and encouraging. They speak to you in the politest way and you don’t feel awkward or discouraged. Can’t thank the staff enough for what they do.
+
+Author: Amanda Kelly
+Date: a month ago
+Rating: 5 stars
+Amanda Kelly3 reviews · 6 photosa month ago
+
+Author: Pete Sidebottom
+Date: a month ago
+Rating: 4 stars
+Pete Sidebottom6 reviewsa month ago
+
+Author: Anthony Johnson
+Date: 2 months ago
+Rating: 1 star
+Shambolic.tried phoning and put on hold for 2 hrs,ringing on behalf of a bedbound vulnerable patient,,looks like phones down again,4 times in a month,this should not be happening
+
+Author: Andrew Miller
+Date: 2 months ago
+Rating: 2 stars
+Please can we have a telephone number that works the numbers I’ve been sent will not connect with the pain clinic.
+
+Author: Sal Dahouchi
+Date: 2 months ago
+Rating: 5 stars
+Sal Dahouchi1 review2 months ago
+
+Author: Judith Simister
+Date: 2 months ago
+Rating: 5 stars
+In my 55 years I’ve never had any problems with the doctors or nurses at Radcliffe medical practice, 5 * review from me
+
+Author: Sue Hunter
+Date: 2 months ago
+Rating: 5 stars
+Extremely helpful. Asked for an appointment got one immediately. In and out within 10 minutes.
+
+Author: Leah Shelbourn
+Date: 2 months ago
+Rating: 5 stars
+Been at the doctors nearly a year I only see doctor Howarth who has been amazing with my mental health and Dr Atkins for gynaecology and Lucy for bloods and I can not complain at all the staff are so polite and they understand me and have patience with me. I wouldn’t use any other doctors
+
+Author: Wendy Hilton
+Date: 2 months ago
+Rating: 5 stars
+Staff very friendly and helpful
+
+Author: Charlene Hamer
+Date: 2 months ago
+Rating: 5 stars
+Great practice with helpful female and male doctors
+
+Author: YU Nail & Beauty studio
+Date: 2 months ago
+Rating: 5 stars
+YU Nail & Beauty studio6 reviews · 18 photos2 months ago
+
+Author: Bianca Kay
+Date: 2 months ago
+Rating: 4 stars
+Bianca Kay7 reviews2 months ago
+
+Author: Kerry Hall
+Date: 2 months ago
+Rating: 4 stars
+I find the staff really friendly and helpful. However, I get frustrated at the medical team (drs, not senior health practitioners). They do not have enough time to assess you properly, ask you to make a follow up appointment, which is next to impossible as you ring on the day, and not guaranteed the same Dr. Then you have to go over why you are their again, and by the time time they have scanned your notes, times up. You can pre-book of course, but you could be dead by the time you get an appointment with Dr you want. I don't blame the surgery at all, it is a failing of the NHS. Which is a failing of our government. The Drs work incredibly hard. I do worry that diagnosis can be quick and patient dismissed, and follow ups don't happen.
+
+Author: Faisal Abrar
+Date: 2 months ago
+Rating: 4 stars
+Good friendly staff and doctor.
+
+Author: Maureen Brown
+Date: 2 months ago
+Rating: 1 star
+Maureen Brown2 months ago
+
+Author: Abigail Rothwell
+Date: 2 months ago
+Rating: 5 stars
+I've been at this doctors for the last 2 years and only have absolute positives to say. My partner and child also attend and in the last 2 years we've had multitude of different reasons to attend and always been met by kindness from receptionist to all staff and never struggled to get an appointment, usually get one on the day but if not they always try and accommodate for asap appointments regardless. So grateful to have this as our local doctors
+
+Author: kayleigh mellor
+Date: 2 months ago
+Rating: 1 star
+kayleigh mellor1 review2 months ago
+
+Author: Angela Bowdell
+Date: 2 months ago
+Rating: 4 stars
+I phoned the surgery and was given a GP appointment the same day. The doctor was fantastic. She put me at ease and answered all of my concerns. Excellent service by an excellent GP.
+
+Author: Justine Leader
+Date: 2 months ago
+Rating: 4 stars
+Pleasant staff, clean environment. The advance nurse practitioner is especially compassionate and caring
+
+Author: Rachael Fawcett
+Date: 2 months ago
+Rating: 5 stars
+Been our family doctor in many generations of our family and we’ve always received amazing care. Always get an appointment for my children if it’s a last minute phone call in the afternoon. Can’t recommend them enough
+
+Author: Rumi Begum
+Date: 2 months ago
+Rating: 5 stars
+Good
+
+Author: jessica kent
+Date: Edited 3 months ago
+Rating: 1 star
+impossible to get trough to physi department , when trying to find a number rude staff telling me there's nothing they can do , your in the same building you can give me the correct number , absolute joke this doctors so glad I left , I wasn't even ringing for my self but for my grandmother 😡 …
+
+Author: alison Cassidy
+Date: 3 months ago
+Rating: 5 stars
+alison CassidyLocal Guide · 96 reviews3 months ago
+
+Author: Sheikh Dalim Ahmed
+Date: 3 months ago
+Rating: 5 stars
+Sheikh Dalim Ahmed1 review · 1 photo3 months ago
+
+Author: Nathan Crossfield
+Date: 4 months ago
+Rating: 1 star
+Terrible terrible place, serious condition that requires medical attention but can’t get me booked in? Receptionist has a disgusting attitude and needs a reality check
+
+Author: Samantha S
+Date: 4 months ago
+Rating: 1 star
+0 stars if possible. Absolutely terrible building /signage and staff. Had an appointment here. The signage sent me to the wrong place. 30 minutes before I found staff member to tell me I was in the wrong place. Got to the right place and was told had miss my appointment because of terrible signs. I have to now wait another month for an urgent appointment causing more anxiety and worry.
+
+Author: Christine
+Date: 4 months ago
+Rating: 5 stars
+I had occasion to attend the Centre on Tues 28th October at 12 midday for routine Breast Screening. Always dreading this appointment I have to really praise my Nurse JANICE for making my examination so comfortable and totally pain free ! She carried it out swiftly and I suffered no discomfort. Thanku again Janice, excellent examination 🌝
+
+Author: Adedotun ola Ogunbodede
+Date: 4 months ago
+Rating: 5 stars
+Adedotun ola Ogunbodede1 review4 months ago
+
+Author: paul ogun
+Date: 4 months ago
+Rating: 5 stars
+paul ogun4 months ago
+
+Author: Bulveye Maximus
+Date: 5 months ago
+Rating: 5 stars
+Excellent service from Dr Ho as always. very much appreciated thank you
+
+Author: Jack Holt
+Date: 5 months ago
+Rating: 5 stars
+Jack Holt5 months ago
+
+Author: Neil Blackshaw
+Date: 6 months ago
+Rating: 5 stars
+Regularly attend the Radcliffe clinic/medical Centre. Very clean & tidy, and the staff are all very pleasant & professional. The reception staff are always pleasant to deal with. A credit to the NHS. Thank you.
+
+Author: Lucy Tate
+Date: 6 months ago
+Rating: 5 stars
+It's a great doctors ive pretty much always got in and the doctors I will see are absolutely amazing always listen and help and make me feel comfortable to come back and understanding and the nurses are great aswell
+
+Author: Teo XIII
+Date: 6 months ago
+Rating: 1 star
+I called you today,Tuesday 16 September 2025 at 14:50 but it's saying the surgery is closed and our working times is Monday to Friday from 8 morning till 6:30 pm !!!! …
+
+Author: Y Horsfield
+Date: 6 months ago
+Rating: 5 stars
+Absolutely fantastic surgery. Well done to Dr Amir for putting my son at ease and being so understanding. The receptionist was so kind. I’m so glad that my son has signed up with this surgery after the shambles at spring lane surgery who in …
+
+Author: Lisa Percy
+Date: 6 months ago
+Rating: 5 stars
+This doctors Make you feel comfortable to go and see them, but also they listen to what you need and don’t treat you like children I really would say that they’re one of the best doctors I’ve ever been with compared to others
+
+Author: Amanda Fildes
+Date: 6 months ago
+Rating: 5 stars
+Radcliffe medical is one of the best doctors around very helpful and friendly staff would recommend to family and friends
+
+Author: Natalie V
+Date: 6 months ago
+Rating: 5 stars
+Staff is always friendly and helpful and my needs are always met
+
+Author: Mike Szabo
+Date: 6 months ago
+Rating: 5 stars
+Mike SzaboLocal Guide · 16 reviews · 2 photos6 months ago
+
+Author: Lungile N.
+Date: 7 months ago
+Rating: 5 stars
+Lungile N.Local Guide · 2 reviews · 15 photos7 months ago
+
+Author: Vera Kirkby
+Date: 8 months ago
+Rating: 5 stars
+Vera Kirkby8 months ago
+
+Author: Pink Sunflowers
+Date: 8 months ago
+Rating: 1 star
+I had a female asian doctor and she was awful. Incredibly rude and dismissive. I came to see her about my acne telling her I had used benzoyl peroxide cream for a year and it had made my skin 10x worse. After ‘listening’ she prescribed me benzoyl peroxide again. The EXACT product that had made my skin so much worse in the first place. Absolutely awful woman and was by far the most awkward and horrible appointment i have ever had.
+
+Author: قاسم صلال
+Date: 9 months ago
+Rating: 1 star
+I do not advise anyone to register in this clinic. Because he will find nothing but lies and empty promises. He will invite you to an appointment, but no doctor will come to you.
+
+Author: Donia Izadi
+Date: 10 months ago
+Rating: 5 stars
+I am always really nervous about going to a doctors appointment or hospital and the team here at RMP are some of the most friendly, kind, and comforting that I have ever come across. So professional and really care about the people. They have single handedly made me NOT dread appointments. Cannot fault the services here. Thank you to the team from a very nervous (with anything medical) individual!!
+
+Author: Miss Piggy
+Date: 10 months ago
+Rating: 5 stars
+Since moving to this drs a year ago I can't believe the difference it's made the wave suite have helped me so much they are efficient friendly the receptionists are the best ! Thankyou wave suite for all you're help ❤️💋 …
+
+Author: Steven
+Date: 10 months ago
+Rating: 1 star
+Worst place I've ever been in my life, I've been trying to get treatment since September 2024, it's now May 2025. Still no treatment. I've now had several appointments. And I'm now so ill. This place is disgusting. And should not be in business at all. I have to leave. For my own health.
+
+Author: Kadie Buchanan
+Date: 10 months ago
+Rating: 1 star
+The receptionists are incompetent - refused to register my newborn baby when I was 2 weeks postpartum from a c section and my child required treatment and vaccinations resulting in me having to source a new suitable GP whilst attempting to recover and look after a newborn baby. Also refused to register my baby temporarily to receive their treatment. Ive reregistered elsewhere.
+
+Author: Stephan Ladanyi
+Date: 11 months ago
+Rating: 1 star
+Horrible experience 😪 …
+
+Author: Robert Lyne
+Date: a year ago
+Rating: 1 star
+No good anymore, due to moving to bury ,,why spend all that money for us patients now having to travel out of town the council should be ashamed.. so now I'm having to look for a surgery In radcliffe , need to sort the priorities out , and obviously we are not one !!!
+
+Author: Lollie Edgar
+Date: a year ago
+Rating: 5 stars
+Fantastic and attentive staff at this surgery. You do not feel rushed in appointments, you feel safe to talk. From the reception staff right through to the doctors they care about their patients and the community.
+
+Author: I Ahmed
+Date: a year ago
+Rating: 1 star
+Completely disappointed
+
+Author: The Band Revolt
+Date: a year ago
+Rating: 1 star
+Waited 25 mins after appointment time then spoken to very abruptly by a senior practitioner in the Sun Suite . Because of a system error on the computer she wouldn’t even discuss my issue. I left without her knowing what my concern was. Good job it wasn’t a mental health crisis Absolutely disgusting behaviour from someone who is meant to care. You could at least pretend to. My advice is look for another career because you obviously dislike dealing with public.
+
+Author: Lusna 91
+Date: a year ago
+Rating: 1 star
+Came in for a blood test for my little one, we was on time but ended up waiting for an hour to get seen. People who had an appointment after us were seen before us. The nurse realised we had been waiting for a long time and asked the receptionist and had a go at her as she let others go before and should have told the nurse we was waiting which the respetionist never did even when we went and asked beforehand. The nurse was lovely and apologised so many times but the receptionist there are absolutely useless.
+
+Author: paul sefton-stewart
+Date: a year ago
+Rating: 5 stars
+paul sefton-stewartLocal Guide · 17 reviewsa year ago
+
+Author: Simone Grosberg
+Date: Edited a year ago
+Rating: 5 stars
+I moved to the area a few months ago , I have found this to be an excellent dr’s surgery. Always helpful and kind. I’m delighted with the help and care they have shown me. 2 years on from this review and I can’t fault them. Reception , nurses, dr’s . All caring and efficient. In all my 73 years I’ve never had such great medical care. Thank you all.
+
+Author: Richard Openshaw
+Date: a year ago
+Rating: 5 stars
+I only came on to find the closing time for the surgery and was completely shocked to see some of the reviews. I have been with this surgery for a very long time and sadly with some serious illnesses, it has meant many visits and phone calls etc. I am so sorry to disagree with most people's reviews, as my experience has been nothing short of professional, personal and caring. The reception/administrative staff are also in this category. I have no vested interest in the practice, so my opinions are my own and on experience and observing. The one thing I will say, this is Radcliffe Medical Practice within a primary care centre. The staff at the practice only deal with Radcliffe Medical Practice patients and no other practice or department in the building. You wouldn't go to a shopping centre and go to Next for a refund of something you purchased at WH Smith. I have seen lately a lot of people approaching reception staff and asking them to help with other departments within the building, but sadly they cannot help, as they only deal with that practices patients. Some people just don't like that and take it out of them, which is grossly unfair. I take my hat off to Lucy the other morning, as she had two such people and they were so nasty, whilst she was being so pleasant and explaining. Having a bad day, not feeling well? Don't take it out on the staff, they are there for your benefit, not your sounding board. Also, to the gentlemen who came in that morning to and made a right song and dance. He said he had been told by staff to get there for 8am to see if an appointment was available with a certain doctor, "for 8". Don't come in at 8.10 and expect there to be any left and then take it out on the receptionist. You had already told her you were to be there for 8, but you weren't. I know for a fact if you had been there "for" 8, you would have got an appointment. Shame on you.
+
+Author: Rabbee Fazley
+Date: Edited a year ago
+Rating: 1 star
+Excellent experience with majority of the clinicians - can't say the same about the receptionists who can be just unnecessarily rude. Also, sometimes feels like the receptionist staff relish on telling patients how long the waiting lists are - its not something to be proud of, quite the contrary.
+
+Author: Victoria Cabanellas (Vika)
+Date: a year ago
+Rating: 2 stars
+Nurses are lovely and sweet. However, most of the staff could not care less. I had a few appointments, and in one, I asked to have my skin checked, and the doctor looked at me and said, "I don't have time for that. If it doesn't itch it's fine." And the second time around I asked for an appointment to check on a trap nerve that I have on my leg that's insanely painful and the doctor asked me to walk across the room and said: you can walk you are ok go home. Ask to be seen by a nurse, not a doctor
+
+Author: Kat
+Date: a year ago
+Rating: 1 star
+Walk in Sunday appointment.The Doctor I saw whome have not seen before & frankly don't wish to see again was very rude & abrupt to me from the beginning, raising his voice as well as his hand to me & interrupting me whilst I was trying to explain my symptoms etc , I was made to feel very uncomfortable, & did not get to speak much as was stopped at least 2/3 times , wasn't treated with any professionalism ,felt worse coming out than I did going in !
+
+Author: Shar RB
+Date: a year ago
+Rating: 1 star
+Receptionist was not polite and never picked up the call again. Called many times no answer
+
+Author: fiona plummer
+Date: a year ago
+Rating: 5 stars
+Myself and my daughter have just been to see Sarah the nurse and she was fantastic with us. Answered all of our questions professionally whilst putting us at ease. She is a credit to her profession.
+
+Author: Latisha “Tesha” Latisha
+Date: 2 years ago
+Rating: 1 star
+If I could put zero stars I would IVE been back and forth with this medical practice i struggle with a weak immune system so I get really ill from time to time and they haven’t bothered with helping me I’ve just been put on medication and brushed on my way I went to my opticians and he was fuming he said you can see your low on iron and your really poorly how can doctors not see that I told him I know but they just put you on god knows what tablet and send you on your way I also have a breathing condition and had to get my adenoids taken out because I was suffocating in my sleep so when I went to an appointment at the doctors I was asked if I was putting my breathing on and why am I breathing so heavy!!!!!
+
+Author: Mike Garvin
+Date: 2 years ago
+Rating: 5 stars
+On behalf of my elderly mother, we hsve received some sterling assistance from.the ladies who answer the phones at this Surgery this week. This needs flagging up and with much gratitude ! Thsnk you to both
+
+Author: Donna Armstrong
+Date: 2 years ago
+Rating: 5 stars
+Amazing service compared to gps in Salford . Staff are lovely and so helpful never had to wait for an appointment or medication this gp practice has put my faith back in the nhs.
+
+Author: daniel bebb
+Date: 2 years ago
+Rating: 5 stars
+Called and got an appointment within 3 hours on the same day can't fault them.
+
+Author: Andrew Nicholas
+Date: 2 years ago
+Rating: 5 stars
+Andrew NicholasLocal Guide · 119 reviews · 426 photos2 years ago
+
+Author: laura iannucci
+Date: 2 years ago
+Rating: 2 stars
+Tried to book an appointment to request to see a travel nurse to be told I have to come into the surgery to make an appointment. So I wasted a morning travelling to the surgery, having to take annual leave from work, to simply write my …
+
+Author: Vanesa Rodríguez Márquez
+Date: Edited 2 years ago
+Rating: 1 star
+I called the out of hours surgery after calling 111 as they didn't call me as they told me (my 1yo son is having a medicine reaction) and they just say that the surgery is closed and call 111... Why is it called out of hours surgery then?
+
+Author: Alex Dimitriu
+Date: 2 years ago
+Rating: 1 star
+I wish I could give zero stars. Made an appointment via askMyGP portal. Got there 15 minutes before my appointment time and I was told by the receptionist on the ground floor to wait there. After 45min of waiting, I have been told that I am …
+
+Author: Dionne Rigg
+Date: 2 years ago
+Rating: 5 stars
+Dionne RiggLocal Guide · 48 reviews2 years ago
+
+Author: Maddie Wilkinson
+Date: 2 years ago
+Rating: 1 star
+Do yourself a favour and don’t bother with this medical practice. Emergency appointment needed and seriously they couldn’t give a toss. Certainly one receptionist that needs to be reported. I would hope no one treats a family member like she treats them! Shameful
+
+Author: Cat Lan
+Date: 2 years ago
+Rating: 5 stars
+Excellent. Receptionist is super friendly, helpful and efficient.
+
+Author: John Ball
+Date: 2 years ago
+Rating: 5 stars
+Very clean no reception at the front chemist inside .
+
+Author: A Zaf
+Date: 2 years ago
+Rating: 1 star
+I wish I could give 0 stars. These guys are not humans, they don’t have 1% humanity left in them. I booked an out of hour’s appointment for my mother as our surgery was fully booked and when I took my mother to this practise, the doors were locked. I kept calling these guys and no one answered. After pressing almost all the buttons at the front door, someone opened the door. The appointment was for 3:40 and because of this whole process we got in at 3:47 and the doctor just straight up refused to see us. I was like, I was here on time but the doctor just straight up refused. These filthy animals don’t deserve respect at all. How can you be a doctor and not be passionate about your job? Shame on the receptionist and the doctor! No wonder there is so much pressure on the NHS, it’s simply because of doctors like these guys!
+
+Author: Karen Ganz
+Date: 2 years ago
+Rating: 1 star
+I started to phone at 7.55 am,lines didn't open until 8.05am, I was on hold until 8.25 then the line was cut off. So ringing for 30 minute's to be cut off without speaking to anyone. This is normal procedure for this practice.
+
+Author: Hiba
+Date: 2 years ago
+Rating: 1 star
+Hiba2 reviews2 years ago
+
+Author: Anna Gaziova
+Date: 2 years ago
+Rating: 5 stars
+Anna GaziovaLocal Guide · 8 reviews · 10 photos2 years ago
+
+Author: Dbag
+Date: 3 years ago
+Rating: 5 stars
+Good medical centre
+
+Author: Kat
+Date: 3 years ago
+Rating: 5 stars
+Hard to get through but can get an appointment and it's clean. Receptionist s friendly.
+
+Author: Ste Minator
+Date: 3 years ago
+Rating: 1 star
+Be careful with this practice, misdiagnosed my uncle after months of going back and forth.
+
+Author: Lee J
+Date: 3 years ago
+Rating: 5 stars
+Fantastic Doctors, Me and my Fiancee are registered with the Wave Suite Fantastic service, Friendly staff and great doctors 5*.
+
+Author: Ellie Kelsey
+Date: 3 years ago
+Rating: 1 star
+Trying to get through to this place is a JOKE
+
+Author: Carla Barrettx
+Date: 3 years ago
+Rating: 1 star
+I've just finished an email to the ombudsman to complain about this doctors service . Not only is it impossible to get an appointment or even a telephone appointment, they missed all the signs for my partners diagnosis . He had gone to the doctors multiple times explaining his severe abdominal cramp for him to be sent home with paracetamol. After having to spend a week in the hospital to finally be diagnosed with chrones disease . He's now had a reaction to his new medication and I'm finding it impossible to get through to speak with a doctor!!!
+
+Author: Tyson Beerhound
+Date: 3 years ago
+Rating: 1 star
+A shocking service. Urgent prescription needed signing on Thursday and still unsigned on Monday. This was for a blind, vulnerable person and there was no urgency or duty of care at all.
+
+Author: Adnan Al Fadhli
+Date: 3 years ago
+Rating: 5 stars
+When the illness asks you about his company..don’t argue with him or compliment him .
+
+Author: Lucy Howard
+Date: 3 years ago
+Rating: 1 star
+This place is a joke, you can only get an appointment if it's an emergency, if it was an emergency I would go to a&e how the hell am I to know if it is an emergency I'm not a doctor. Can't get on the ask my non existent GP as always down.
+
+Author: Anthony Wilde
+Date: 3 years ago
+Rating: 4 stars
+Good clean medical building,staff helpful and friendly.
+
+Author: Daryle Richardson
+Date: 3 years ago
+Rating: 1 star
+Can't get appointment it is a disgrace of a surgery
+
+Author: Mikey Lambert
+Date: 3 years ago
+Rating: 5 stars
+Mikey LambertLocal Guide · 163 reviews · 183 photos3 years ago
+
+Author: ITZ LINCOLN
+Date: 3 years ago
+Rating: 1 star
+ITZ LINCOLN1 review · 9 photos3 years ago
+
+Author: Darren Hoyles
+Date: 3 years ago
+Rating: 1 star
+Poor service from the doctor who has twice failed to approve my Dad's medication which has meant him getting his medication late. Had to phone them twice to remind them to do it and was spoken to badly by a young receptionist. My Dad is on a lot of medication including tablets for Parkinsons. Not good.
+
+Author: G H
+Date: 4 years ago
+Rating: 1 star
+Patient - "Morning Doctor, I'd like an exemption from a medical treatment that I don't need, which is causing severe heart problems and even death". Doctor - "Can you provide a good reason?"
+
+Author: K!
+Date: 4 years ago
+Rating: 1 star
+Please ring at 8 o'clock in the morning, at 8 is impossible to get trough, please ring tomorrow then.....same story again....no chance to even book a gp call back for a week...ridiculous.
+
+Author: Ukulele Phill
+Date: 4 years ago
+Rating: 4 stars
+Seems pretty good. Not been a patient long but they've been polite, helpful and efficient. One small gripe is that the "on hold" music when you ring up for an appointment is Stairway to Heaven. It just seems wildly inappropriate...
+
+Author: Joe Meadowcroft
+Date: 4 years ago
+Rating: 2 stars
+Like trying to squeeze blood from a stone trying to get an appointment, test results or just to talk to someone.
+
+Author: Gary Wooff
+Date: 4 years ago
+Rating: 5 stars
+Efficient and safe with helpful staff.
+
+Author: John Cockcroft
+Date: 4 years ago
+Rating: 5 stars
+Glad I switched from my old practice as this clinic is excellent. Highly recommended.
+
+Author: Brian Hulme
+Date: 4 years ago
+Rating: 1 star
+As my current dentist has retired I personally visited the Primary Care Centre and enquired of the receptionist about registering at the Primary Care Centre with the NHS dental clinic there. …
+
+Author: Kenny Colwell
+Date: 5 years ago
+Rating: 5 stars
+Helpful and friendly staff Very clean facilities Free parking also
+
+Author: Joanne Sanderson
+Date: 5 years ago
+Rating: 2 stars
+My daughter has had swollen glands & tonsils for 5 months & they make her better. When i asked about going private they wouldnt give me any information & told me I had to find out myself. I couldnt get my little girls blood results as they …
+
+Author: Memunat Balogun
+Date: 5 years ago
+Rating: 5 stars
+Memunat Balogun5 reviews5 years ago
+
+Author: Ian Dunn
+Date: Edited 5 years ago
+Rating: 5 stars
+Ian DunnLocal Guide · 20 reviews · 85 photosEdited 5 years ago
+
+Author: Brian White
+Date: 5 years ago
+Rating: 5 stars
+Brian White1 review5 years ago
+
+Author: John Warren
+Date: 5 years ago
+Rating: 5 stars
+Excellent staff who work here there under a lot of pressure under the circumstances but always have professionalism when you phone them helped me recently well done every one
+
+Author: Alison Valentine
+Date: 6 years ago
+Rating: 1 star
+Absolutely shocking service. I can never get through to book an appointment and when I do they are fully booked for the day. If you pre book its weeks and weeks till an available slot. Same if you want a phone consultation. They do not care how distressed you are or how you feel when you have called 88 times in a morning and then get told no. This is not a isolated incident its every time i want to see my GP.
+
+Author: Mateusz Worona
+Date: 6 years ago
+Rating: 1 star
+Not very good . Had a dermatology appointment where I too strong medication as soon as possible as waiting would leave me with scars . I have a check up appointment 6 weeks later with just one letter after my first one , no reminders . I have missed this appointment as I didn't think about it and my medication hadn't ran out . Now they are making me quit my medication and wait 6 months till my reschedule appointment . Which is crazy
+
+Author: Nathan Miller
+Date: 6 years ago
+Rating: 4 stars
+Nathan Miller6 years ago
+
+Author: Ben Topp
+Date: 6 years ago
+Rating: 3 stars
+Well appointed and modern interior styling. Light, airy and comfortable
+
+Author: Nick Haslam
+Date: 6 years ago
+Rating: 1 star
+This doctors are so unorganised it's painful.. Literally. I'll be changing my medical practice ASAP to one which hopefully have a better ethos and care for their patients.
+
+Author: Alastair Taylor
+Date: 7 years ago
+Rating: 4 stars
+Alastair TaylorLocal Guide · 10 reviews7 years ago
+
+Author: Molly Templeman
+Date: 7 years ago
+Rating: 5 stars
+Molly TemplemanLocal Guide · 18 reviews · 2 photos7 years ago
+
+Author: Vera Kirkby
+Date: 7 years ago
+Rating: 4 stars
+Vera KirkbyLocal Guide · 17 reviews · 17 photos7 years ago
+
+Author: Shehzaad Salim
+Date: 7 years ago
+Rating: 1 star
+Ridiculous service from the dermatology centre. Referred over by my gp at start of November. Was still waiting for an appointment to be made, instead, I recieved a letter yesyerday saying I missed my appointment at the bury dermatology centre and i have been discharged. What Appointment???? Never received an appointment letter, phone call, email, nothing! So I called the number on the letter and the Secretary said they can't do anything and that I will have to go back to my GP. After explaining I'm not happy, she went looking for the booking department number?? Couldn't find that number so gave me a different number to contact which I couldn't get through to. My eczema getting worse was the reason I got referred in the first place and now I am going to have to wait another 5 weeks to get referred plus another appointment with my GP. Not Happy at All!!
+
+Author: Jamie Gledhill
+Date: 7 years ago
+Rating: 1 star
+Don't have a job and try and get an appointment with your doctor... It's just impossible. Awful phone system
+
+Author: Daniel Green
+Date: 7 years ago
+Rating: 5 stars
+Very professional and caring service
+
+Author: Shamraise Safdar
+Date: 7 years ago
+Rating: 1 star
+GP diagnosed vitamin b12 criticaly low. Need immediate vitamin b12 injections. Staff is useless Not giving me urgent nurse appointment for injections. I have breathing problem i cant stand up or walk. I am on edge. They should have mercy in heart for serious patients.
+
+Author: Eden
+Date: 7 years ago
+Rating: 5 stars
+Eden8 reviews7 years ago
+
+Author: Dorota Laskawiec-Sutor
+Date: 8 years ago
+Rating: 1 star
+Make appointment is like a lottery. Even if you calling from 8.00 in the morning doesn’t give you warranty for see your doctor. It’s happen to me 4 times already. So disappointing :(
+
+Author: Steven Donaldson
+Date: 8 years ago
+Rating: 1 star
+Poor management. What a farse
+
+Author: Joe Bird
+Date: 8 years ago
+Rating: 5 stars
+A massive thanks to Julie and Siobhan I can hear ten times better
+
+Author: Maureen Graham
+Date: 8 years ago
+Rating: 5 stars
+Easy to park and FREE. Lovely bright building. Staff friendly and seen quickly. Best NHS place I've been to.
+
+Author: Astro Cat
+Date: 8 years ago
+Rating: 5 stars
+iv called them 50 then they answerd
+
+Author: Zoe Downes
+Date: 8 years ago
+Rating: 5 stars
+Had mammogram this morning excellent service and no bruising thank you Emma
+
+Author: sam morrow
+Date: 8 years ago
+Rating: 4 stars
+Hard to get appointment by phone especially in the morning. Once there always been seen quickly and staff are very good.
+
+Author: Chaj Fernandez
+Date: 9 years ago
+Rating: 3 stars
+Not bad the only thing is try to call them in the morning
+
+Author: Zulu26
+Date: Edited 9 years ago
+Rating: 5 stars
+Really good. Better than uplands medical practice in Whitefield
+
+Author: A Y A D
+Date: 9 years ago
+Rating: 5 stars
+A Y A DLocal Guide · 9 reviews · 7 photos9 years ago

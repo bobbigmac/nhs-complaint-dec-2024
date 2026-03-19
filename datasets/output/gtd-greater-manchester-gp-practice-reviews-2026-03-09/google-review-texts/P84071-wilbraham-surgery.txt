@@ -4,11 +4,16 @@ Postcode: M21 0UF
 Google Maps title: The Wilbraham Surgery
 Google rating: 4.2
 Google review count: 48
-Google Maps URL: https://www.google.com/maps/place/The+Wilbraham+Surgery/@53.4423786,-2.2711736,17z/data=!4m8!3m7!1s0x487badf057b77983:0x9788f6bea2112ada!8m2!3d53.4423786!4d-2.2711736!9m1!1b1!16s%2Fg%2F1hc0zw9n0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Wilbraham+Surgery/@53.4423454,-2.2734452,17z/data=!4m12!1m2!2m1!1sWilbraham+Surgery+M21+0UF!3m8!1s0x487badf057b77983:0x9788f6bea2112ada!8m2!3d53.4423786!4d-2.2711736!9m1!1b1!15sChlXaWxicmFoYW0gU3VyZ2VyeSBNMjEgMFVGkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc0zw9n0?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 48
+Owner replies collected: 0
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84071-wilbraham-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Khalid Raza
 Date: Edited a month ago
@@ -21,7 +26,7 @@ Rating: 1 star
 Unwilling to make reasonable adjustments (due to learning disability) despite the Equality Act 2010 and The Autism Act 2009. Not a suitable surgery for neurodivergent adults (ADHD/autism) with long term lifelong mental health conditions or/and learning disability, not unless you have a parent/family friend to speak on your behalf, book and accompany you to appointments. Admin staff not understanding or particularly helpful and hold grudges/make assumptions, no training in autism/learning disability. (Even if the patient is on the NHS Learning Disability Register). On one occasion I had a local authority social worker attend an appointment with me as an advocate and to see the challenges I face accessing lawful care. Complain or raise concerns and get told “go elsewhere”. Not a particularly modern thinking practice. Very much the “you don’t look autistic” attitude and “go for a long walk outdoors” when facing a serious MH relapse/crisis. Seem to have the attitude that anything mental health related means you must see the CMHT only and if not under psychiatric care they won’t help you. They don’t feel the need to update medical records despite communication from medical consultants. No excuse for treating vulnerable patients so ineffectually or cruelly.
 
 Author: Skala Kamal
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 I’ve been with this surgery for years, and I can’t thank them enough for everything they do. Dr. Wilson is truly an angel—hardworking, passionate, and deeply dedicated to his work. He has made such a difference in my life, especially as I grow older and rely more on medical support. Everyone at the practice is so caring and compassionate. Thank you all for everything you do.
 
@@ -59,3 +64,193 @@ Author: Kirstie Shearman
 Date: a year ago
 Rating: 5 stars
 Kirstie Shearman3 reviewsa year ago
+
+Author: Anne Marie Fogarty
+Date: a year ago
+Rating: 1 star
+A real struggle to get seen am afraid. Or receive a timely response to online triage.
+
+Author: Ruth Conlock
+Date: a year ago
+Rating: 5 stars
+Ruth ConlockLocal Guide · 32 reviews · 24 photosa year ago
+
+Author: Cailen
+Date: 2 years ago
+Rating: 5 stars
+I've found it quite easy to get an appointment. Staff are all great and get back to you quickly.
+
+Author: Chloe Brew
+Date: 2 years ago
+Rating: 5 stars
+Since having my son 18 months ago, I have been a fairly regular visitor of this GP surgery. I have seen a nurse for routine checks and vaccinations, talked to receptionists about booking appointments and had consultations with 3 GPs regarding various (common) illnesses that my son has developed. The care has been consistently excellent. The staff members are kind, professional and helpful and it is hugely appreciated!!
+
+Author: Jade
+Date: Edited 2 years ago
+Rating: 5 stars
+JadeLocal Guide · 25 reviews · 3 photosEdited 2 years ago
+
+Author: S
+Date: 2 years ago
+Rating: 1 star
+AVOID - Impossible to get an appointment, you have to wait weeks. Used to be great but they've changed the same day appointment system so you're just on hold listening to a long message and are then told there's no availability every time, with no online or in person alternative. They've also taken away the evening surgery.
+
+Author: M Garnett
+Date: 2 years ago
+Rating: 5 stars
+The receptionist that dealt with me as a patient today was second to none despite me being in a considerably distressed state. Previous to this another receptionist made me feel that I was looked after and listened to, offering me a GP appointment with the necessary priority. It makes such a difference in one's treatment, when that initial point of contact with the surgery is to such a high standard.
+
+Author: Sophie Paton
+Date: 2 years ago
+Rating: 5 stars
+This is an amazing surgery. Dr Graeme is so kind, and I have always managed to get appointments with him for sound advice for my young son. The reception staff are also wonderful. The best surgery in Chorlton by far!
+
+Author: Sophie Turbefield
+Date: 2 years ago
+Rating: 5 stars
+When I first transferred to the surgery roughly 3 years ago it quickly transpired I needed a fairly major op. Dr Wilson was especially helpful and reassuring and a great comfort at this time. The level of service I have received subsequently from the Doctors, nurses and admin staff has been second to none and I cannot rate this practice highly enough.
+
+Author: kathy morton
+Date: 2 years ago
+Rating: 5 stars
+Brilliant surgery. Fantastic doctors who know their stuff and know and care about their patients, helpful, polite and friendly admin staff and the addition of a pharmacist to support the team is a great idea.
+
+Author: catherine griffiths
+Date: 3 years ago
+Rating: 3 stars
+Sorry to say I think this service has dropped the ball. Very difficult to get doctors appt. and just as difficult for nurse appt. 2 weeks waiting time for blood tests seems along wait. We know covid caused problems but surely our surgeries should be getting back to some level of normalcy.
+
+Author: Meg Cooper
+Date: 3 years ago
+Rating: 5 stars
+Couldn't wish for better service from all the staff at the surgery.
+
+Author: James N.
+Date: 3 years ago
+Rating: 1 star
+NHS website shows this is my nearest surgery but they still seem to think I live outside of their boundary
+
+Author: Alison
+Date: 3 years ago
+Rating: 5 stars
+Thank you for going above and beyond in taking care of my health. Best wishes to the GP surgery.
+
+Author: Jane Stirrup
+Date: 3 years ago
+Rating: 5 stars
+Jane StirrupLocal Guide · 28 reviews3 years ago
+
+Author: Simeon Wood
+Date: 4 years ago
+Rating: 5 stars
+Simeon Wood1 review4 years ago
+
+Author: Damon Murphy
+Date: 4 years ago
+Rating: 1 star
+In four years I’ve never been able to book an appointment with a doctor here. Every time there is a 30 minute wait on the phone before being told only one doctor is in and he’s booked up. More chance of winning the euro millions than getting an appointment.
+
+Author: Dzidze Muruu
+Date: 4 years ago
+Rating: 5 stars
+Dzidze MuruuLocal Guide · 7 reviews · 13 photos4 years ago
+
+Author: Jacqueline Guerrerofef
+Date: 4 years ago
+Rating: 5 stars
+I moved to this specialists as my folks suggested it as felt my old specialists were not listening my dr will be dr Wilson however I have had telephone interviews with other dr im so happy I moved to this medical procedure as they have supported me in a couple of months than my others in years these are exceptionally proficient respectful amenable from the specialists to the receptionists they do an amazing job to help extremely satisfied with this medical procedure
+
+Author: Mena Soliman
+Date: Edited 4 years ago
+Rating: 5 stars
+Best doctor at the surgery, amazing service.
+
+Author: Lotti B
+Date: 4 years ago
+Rating: 1 star
+Lotti B2 reviews4 years ago
+
+Author: A T T
+Date: 4 years ago
+Rating: 5 stars
+Have been at this practice since 1987 ! As many GPs have come and gone we now see dr Wilson and cannot praise our care from him enough! The reception staff also have changed over the years and Michelle the new practice manager has brought about many very good changes As a small practice it is difficult for them but we can’t find anything to criticise especially at this turbulent time . We have to be patient with them as they are with us and understanding!
+
+Author: Rebecca Burnell
+Date: 5 years ago
+Rating: 5 stars
+Having relocated to Manchester I'm truly amazed at the difference in care I've received from Wilbraham surgery compared to the South. Friendly and accessible and they always proactively contact me for any tests required or updates to medication. Everyone told me how good they were, and they are!
+
+Author: Tim Solomans
+Date: 5 years ago
+Rating: 5 stars
+A Caring & professional practice.
+
+Author: Ben Jones
+Date: 5 years ago
+Rating: 5 stars
+Ben Jones5 years ago
+
+Author: Sandra Jeffries
+Date: 5 years ago
+Rating: 5 stars
+Sandra JeffriesLocal Guide · 40 reviews · 8 photos5 years ago
+
+Author: joanne hurst
+Date: 5 years ago
+Rating: 5 stars
+I moved to this doctors as my parents recommended it as felt my old doctors were not listening my dr is dr Wilson but I have had phone consultations with other dr im so glad I did move to this surgery as they have done more for me in a few months than my others in years these are highly professional well mannered polite from the doctors to the receptionists they go above and beyond to help very pleased with this surgery
+
+Author: Loz Hodges
+Date: 6 years ago
+Rating: 5 stars
+I've been going here for a couple of years now and it's a great surgery. I can't rate Dr Wilson highly enough, he really listens and cares about your issues and always goes the extra mile to help. Thank you!
+
+Author: Zubair Ahmad
+Date: 6 years ago
+Rating: 5 stars
+Dr Wilson has been my primary GP for many years. He is consistently excellent, listens, works hard to help me pragmatically with a number of conditions unlike some other doctors I have seen. Highly recommended.
+
+Author: Mr Berry
+Date: 6 years ago
+Rating: 5 stars
+Excellent
+
+Author: Kate Jones
+Date: 6 years ago
+Rating: 5 stars
+Dr Wilson has been my GP for over ten years and I can’t rate him highly enough. I have a chronic health condition so at times have had to see him quite regularly. He’s always been kind and empathic and thorough in his care of both my physical and mental health. Everyone deserves a Dr Wilson :)
+
+Author: Tala
+Date: 7 years ago
+Rating: 1 star
+Never gave me an appointment when I needed to see a Gp, even when I was assessed by 111 service and I was told that I need to be seen by my Gp within 2 hours.
+
+Author: John Overton
+Date: 7 years ago
+Rating: 5 stars
+Wilbraham Surgery has an excellent team working hard to deliver consistently good care and we are looking forward to seeing what the new premises look like once they are finished. Well done to reception for responding to calls in a timely manner and for being flexible when we have needed last minute appointments. Dr McLeod has seen me, my wife and son in the past few months for various reasons and has dealt with us considerately, compassionately and efficiently - thank you.
+
+Author: Ruth W
+Date: 8 years ago
+Rating: 5 stars
+I have contacted the Wilbraham Surgery on a number of occasions with concerns for two elderly friends who are patients of the practice. The response has been prompt and professional on each occasion. Thanks to the staff and doctors.
+
+Author: JR del
+Date: 9 years ago
+Rating: 4 stars
+Friendly (two GP) practice.
+
+Author: Stephen Le Clere
+Date: 9 years ago
+Rating: 4 stars
+Stephen Le ClereLocal Guide · 110 reviews · 200 photos9 years ago
+
+Author: Jessica Stacey
+Date: 9 years ago
+Rating: 5 stars
+Jessica Stacey1 review9 years ago
+
+Author: Tony Thompson
+Date: 13 years ago
+Rating: 5 stars
+Both Doctors are top rate and always very understandind as are all the staff. Would recomed this practice.

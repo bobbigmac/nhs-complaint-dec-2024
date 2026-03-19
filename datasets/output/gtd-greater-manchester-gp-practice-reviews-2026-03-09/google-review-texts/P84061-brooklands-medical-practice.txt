@@ -3,59 +3,592 @@ Canonical code: P84061
 Postcode: M23 9JH
 Google Maps title: Brooklands Medical Practice
 Google rating: 3.4
-Google review count: 80
-Google Maps URL: https://www.google.com/maps/place/Brooklands+Medical+Practice/@53.4010034,-2.3042827,17z/data=!4m8!3m7!1s0x487bad0355075f55:0x4105fa89dd18d070!8m2!3d53.4010034!4d-2.3042827!9m1!1b1!16s%2Fg%2F1td1t_6p?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 82
+Google Maps URL: https://www.google.com/maps/place/Brooklands+Medical+Practice/@53.4010034,-2.306863,17z/data=!4m8!3m7!1s0x487bad0355075f55:0x4105fa89dd18d070!8m2!3d53.4010034!4d-2.3042827!9m1!1b1!16s%2Fg%2F1td1t_6p?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 82
+Owner replies collected: 56
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84061-brooklands-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
-Author: Reena Richard
+Author: Paul Seville
 Date: a week ago
 Rating: 1 star
+My mum came out of hospital a week ago and I've been trying to make an appointment for her to see her doctor as she is on new meds and the hospital has requested a cognitive assessment. A week later still unsuccessful in person, on the phone (my mum is 89) so she doesn't do apps. So called again at 8am this morning 15th in the queue so requested call back it's now 2.15 pm and I'm still waiting! Called again and was told someone will call you? I can't book an appointment to go in tomorrow but again if I call at 8am I'll get an appointment for her. It appears the term service has gone out of NHS. I've just looked at the reviews for your practice it appears in the last 12mths you have 1 review above 1 star! It seems the complaints manager maybe the busiest person at the surgery!!!
+Practice response date: 5 days ago
+Practice response:
+Dear Paul, Thank you for taking the time to leave your feedback. We are sorry to hear about the difficulties you experienced when trying to arrange a follow-up appointment for your mother after her hospital discharge. We recognise how important timely access to care is, particularly for elderly patients who have recently started new medication or require further assessment following a hospital stay. We are sorry that your experience contacting the practice did not meet the standard of service we aim to provide. Like many GP practices across the NHS, we are currently experiencing very high demand for appointments and telephone access, particularly during the early morning period. However, we fully appreciate how frustrating this situation can be and we are continually reviewing our systems to improve access for patients, including those who are unable to use online services. Because we cannot discuss individual patient details publicly, we would encourage you to contact the practice and ask to speak with the Practice Manager so we can review the situation and ensure your mother receives the appropriate follow-up care and appointments as soon as possible. Kind regards Debra - Complaints Manager
+
+Author: Susie Hamilton
+Date: a week ago
+Rating: 5 stars
+I have had reason to contact the surgery twice recently after a fall. On both occasions the appointment request was handled very quickly and the Doctor called that day. I had investigative blood tests and Vicky Health Care Assistant was amazing. Unlike the battered and bruised arms I have previously had she left but a tiny pin prick as evidence blood had even been taken. I can only speak about Doctors Jellyman, Walshe and Ryan but they are all excellent. They listen, are caring and kind and highly professional. The surgery is always very clean and tidy. Thank you.
+Practice response date: 5 days ago
+Practice response:
+Hi Susie, thank you for so much for your lovely comments about the practice and the clinicians. All of the team appreciate the time that our patients take to let them know how pleased they were with the service they received. I will pass your comments on to them. Kind regards Debra - Complaints Manageer
+
+Author: Reena Richard
+Date: 3 weeks ago
+Rating: 1 star
+Hi Reena, If there is something that you would like to specifically feedback to us, please contact the practice and we will gladly look into it. Kind regards Debra - Complaints Manager
+Practice response date: 2 weeks ago
+Practice response:
 Hi Reena, If there is something that you would like to specifically feedback to us, please contact the practice and we will gladly look into it. Kind regards Debra - Complaints Manager
 
 Author: Diana Bowden
 Date: a month ago
 Rating: 1 star
 Used to love this practice, the doctors and staff were brilliant, but many have left now. The new appointment booking system is awful. It's great if you have an urgent requirement for a doctor and don't mind who you see or when, as that is the only option. It is impossible to book a non-urgent appointment, with a specific doctor at a time that suits you. This means if you would like a follow up or review appointment, you have to know what days your doctor works, remember to fill in the form on that morning (before they reach capacity) and hope that the appointment you are given fits in with your schedule. Really not good if you work and/or have a chronic condition.
+Practice response date: a week ago
+Practice response:
+Dear Diana Thank you for taking the time to share your feedback about our appointment system. I’m sorry to hear that you have been frustrated by only being able to access same-day GP appointments and not being able to book ahead. Our practice currently operates a same-day appointment system for most GP appointments. This approach is intended to help ensure that patients with urgent or on-the-day health concerns can be seen as quickly as possible. However, we understand that this system can be inconvenient for patients who need to plan appointments around work or other commitments. If your concern is ongoing or non-urgent, our reception team can discuss alternative options with you. Depending on availability, this may include booking with another clinician such as a nurse, pharmacist, or arranging a telephone consultation where appropriate. We recognise that access to appointments is a common concern and we continually review our systems to ensure we are providing the best possible service within the resources available to us. Your feedback is important and will be shared with the practice management team as part of this ongoing review. If you would like to discuss your experience further or need help arranging an appointment, please contact the practice and a member of the team will be happy to assist you. Thank you again for taking the time to raise this with us. Kind regards Debra - Patient Complaints Manager
 
 Author: Maryam Fatehifar
 Date: a month ago
 Rating: 5 stars
+Thank you!
+Practice response date: a month ago
+Practice response:
 Thank you!
 
 Author: SUSAN HAMPSON
 Date: a month ago
 Rating: 5 stars
 Thank you!
+Practice response date: a month ago
+Practice response:
+Thank you!
 
 Author: Amrit Kaur Swalley
 Date: 2 months ago
 Rating: 1 star
 During my call, I was advised by reception staff that I should take my mother to the dental hospital instead. This advice appeared to be a medical decision, which I found concerning, as reception staff are not clinically qualified to make such determinations. I later spoke with the reception manager, who confirmed that reception staff are permitted to make these decisions. This is unacceptable and raises serious concerns about patient safety and appropriate triage procedures. In addition, I do not feel that my complaint was handled effectively or taken seriously. There was no reassurance, clear explanation, or appropriate escalation of my concerns. I believe further training is required for reception staff, particularly regarding the limits of their role and the importance of not making or influencing medical decisions. As a patient, I expect clinical advice to be given by a qualified healthcare professional. This matter is particularly concerning given the Care Quality Commission (CQC) requirements, which state that patients must be treated safely, appropriately, and with clear clinical oversight. I trust that this issue will be reviewed promptly to ensure patients are not placed at risk in the future. Thank you
+Practice response date: 2 months ago
+Practice response:
+Dear Amrit, Thank you for taking the time to leave your review. If you would like this escalated to me to further investigate the points you raise, please contact the practice and ask to speak with the practice manager. She will then forward your details on to me and we can take it from there. As this a public forum, it is not appropriate that I respond here in detail to the issues you have raised. Kind regards Debra PCN Patient Complaints Manager
 
 Author: Alan Shenton
 Date: 2 months ago
 Rating: 5 stars
 I got a phone call offering me an appointment just a few minutes after doing a self referral on line. I saw a GP I've seen about my issues before, so we were able to continue from when I last saw him without covering old ground. As always, he listened, understood my concerns, and examined me, and I was given fresh appropriate medication. I was very appreciative of the support and the overall service.
+Practice response date: 2 months ago
+Practice response:
+Hi Alan, thank you for taking the time to leave such a lovely review on the practice. We appreciate all reviews, whether good or bad but it is nice to hear of such a positive experience! I will pass your comments on to the team. Kind regards Debra PCN Patient Complaints Manager
 
 Author: Anthony
 Date: 3 months ago
 Rating: 1 star
 I've noticed a number of negative reviews focusing on the reception staff. Although I understand why the practice would publicly defend them, it would be good to have seen a change privately. Alas, no. The worst offender (elderly 'blonde') continues to sit behind the perspex screen and in front of a 'zero tolerance' sign, all the while antagonising patients. The only small crumb of comfort is that she doesn't appear to discriminate. She seems to bait all those who dare interrupt her whispered chats with her colleagues with annoying requests for things like repeat prescriptions or appointments. It's a shame because the doctors are all really helpful.
+Practice response date: 2 months ago
+Practice response:
+Hi Anthony, Thank you for taking the time to leave your review. I’m sorry to hear that you were dissatisfied with the service you received from our reception staff. As our first point of contact, we place great importance on ensuring that all patients receive a warm and welcoming experience when they arrive. As you may be aware, the practice is a relatively new addition to the Better Health MCR Primary Care Network, and we are continuing to work hard to fully integrate our staff and services into the wider organisation. Your feedback is valuable in helping us do this. Please be assured that all our patients should receive the high standard of service that we, as a Primary Care Network, aspire to provide. If you continue to have issues, please do not hesitate to contact us and it can be investigated further. Kind regards Debra PCN Patient Complaints Manager
 
 Author: Bernadette Brown
 Date: 3 months ago
 Rating: 5 stars
 Filled in online request on Thursday morning and got my appointment for about an hour and half later, which I was very impressed with. The doctor that I saw was very nice and very helpful
+Practice response date: 2 months ago
+Practice response:
+Hi Bernadette, Thank you for taking the time to leave such a lovely positive review about the doctor at the practice. It is always great to hear such nice things about our staff. Your comments will be forwarded on to the clinical team. Many thanks Debra PCN Patient Complaints Manager
 
 Author: Eyitayo Olabiwonnu
 Date: 3 months ago
 Rating: 5 stars
 I was warmly welcomed, patently listened to The Doctor interacted very well with me every step of the way. He examined me properly and made his recommendations.
+Practice response date: 2 months ago
+Practice response:
+Hi Eyitayo, Thank you for taking the time to leave such a lovely review about your visit to the practice. It really is appreciated by all the team! I will pass your comments on. Kind regards Debra PCN Patient Complaints Manager
 
 Author: Becky Jade
 Date: 3 months ago
 Rating: 1 star
 Do not use this doctors. All the receptionist are no good. I’ve sat in reception with my boyfriend for half n hour and the way they treat people that walk in to the clinic is disgusting. They also lost my boyfriend’s stool sample and didn’t get back to him until we contacted them. I urge you if you or sick please go somewhere that take there role seriously. Very sad and disappointing.
+Practice response date: 3 months ago
+Practice response:
+Good afternoon Becky, Thank you for your review. We appreciate any reviews we receive, whether they be positive or negative. I’m saddened to hear you feel the receptionists are no good and would encourage other patients to not use the practice. This isn’t the experience we want patients to have. Our reception team works hard to support everyone as warmly and professionally as possible, and we’re sorry if this wasn’t how it felt on this occasion. We want all patients to feel respected and well looked after, and feedback like yours helps us make sure we continue to uphold those standards. I have passed on your feedback to the Practice Manager to address with the team. Kind Regards, Lauren, Engagement & Communications Officer
+
+Author: Brodie Little
+Date: 3 months ago
+Rating: 1 star
+They have the most unpleasant and unwelcoming set off staff on reception, very wicked bunch of ladies. I can’t imagine getting a job in a place to help others but being nasty to patients. I pray none of them have children as I’ve been going here for years and none of them have the ability to show or feel any sort of sympathy or empathy. Wicked little place this is. If you have any health concerns please go elsewhere.
+Practice response date: 2 months ago
+Practice response:
+Hi Brodie, Thank you for taking the time to leave your review. As disappointing as it is to read that your experience has not been good, it is important that patients tell us when we have not delivered the level of service they should rightly expect. If you would like me to investigate matters further, please contact the practice and ask to speak to the practice manager. She will pass your details on to me and I will be in touch with you. Kind regards Debra PCN Patient Complaints Manager
+
+Author: Nathan Wallis
+Date: 4 months ago
+Rating: 1 star
+I’ve been trying to get a travel vaccine appointment for 2 months. My appointments keep getting cancelled with no explanation. I leave the country soon and there’s now no availability before I go. Incredibly frustrating.
+
+Author: G M
+Date: 5 months ago
+Rating: 5 stars
+The clinicians, rececption staff and admin staff were all kind and pateint with me, and made me feel like they wanted to help. The new online form system is good as it lets you write down everything you need to say about the condition you are experiencing. I know some of the reviews are mixed but this was not my experience. Having to book urgent appointments recently through the system has helped md get the answers I needed, and I am very grateful Brooklands Health Practise have experienced GPs who care, as well as compassionate reception staff. Thank you, Brooklands!
+Practice response date: 2 months ago
+Practice response:
+Hi GM, thank you for taking the time to leave such a glowing, positive review about your experiences with the staff at the practice. It is a great boost to all the team to hear that they are appreciated and their care is acknowledged. Thanks again! Debra PCN Patient Complaints Manager
+
+Author: Sophie
+Date: 5 months ago
+Rating: 1 star
+I completed the online form for an appointment, when the doctors called me the receptionist was very rude and had no patience with me. She come across like she just wanted to get rid of me and like my issues were nothing. I had to explain multiple times that the issue I’m having goes away but keeps coming back but she didn’t listen to this. Finally got given an appointment which unfortunately I couldn’t do due to the time so asked if there was another time which then got informed there were no other times. A second later she then offered me a different time even though she informed me there were no other times available. Then when she confirmed the appointment at the end of the call she used the term just going to look at it as if it wasn’t a big deal and was a waste of time. She very quickly then said bye and got off the phone as quickly as she could. This is a shame as I never usually have issues with the practice. This receptionist should not be in this job if she doesn’t know how to care for or deal with people.
+Practice response date: 2 months ago
+Practice response:
+Hi Sophie, Thank you for taking the time to leave your review. As disappointing as it is to read that your experience has not been good, it is important that patients tell us when we have not delivered the level of service they should rightly expect. If you would like me to investigate matters further, please contact the practice and ask to speak to the practice manager. She will pass your details on to me and I will be in touch with you. Kind regards Debra PCN Patient Complaints Manager
+
+Author: Susan Moffat
+Date: 5 months ago
+Rating: 5 stars
+Susan MoffatLocal Guide · 11 reviews5 months ago
+
+Author: S Davenport
+Date: 6 months ago
+Rating: 1 star
+Waited for 27 minutes past the given appointment time then asked the receptionist if there was a delay with appointments, only to snootily be told to wait as she was dealing with another patient... unfortunately people don't have time immemorial to sit around waiting for appointments when they go way beyond the given time so we had to leave as there was no end in sight and the absurdity of prioritising a patient who came in well after we arrived was not lost on me. Lack of organisational skills, a general disrespect for patients' time and an unprofessional tone. Not impressed.
+Practice response date: 2 months ago
+Practice response:
+Hi, Thank you for taking the time to leave your review. As disappointing as it is to read that your experience has not been good, it is important that patients tell us when we have not delivered the level of service they should rightly expect. If you would like me to investigate matters further, please contact the practice and ask to speak to the practice manager. She will pass your details on to me and I will be in touch with you. Kind regards Debra PCN Patient Complaints Manager
+
+Author: tysser hammad
+Date: 6 months ago
+Rating: 1 star
+Very bad with New team I been with them over 20 years the old team was very nice and welcoming people consumers service was very friendly..the new team doctors are good but people work in the reception very bad they classified us as second class British..the neglected us many times and today I make appointments on line and they text me well call you soon .till 6pm I rang them they said pologize for no Contracted me..I do trust them any more ..with even my kids to bring them....I will open case against them I will report to NHS service...
+Practice response date: 2 months ago
+Practice response:
+Hi Tysser, I am sorry to read that you are unhappy with the service you have received in recent months at the practice. Although it is disappointing to read, it is important that we know when patients feel they should have been treated better. If you would like me to investigate things further, please contact the practice and ask for the practice manager. She will forward your details to me and I will be in contact. Kind regards Debra PCN Patient Complaints Manager
+
+Author: Samuel
+Date: 7 months ago
+Rating: 1 star
+Very poor service! While the clinical staff are truly excellent and supportive, I’ve had a disappointing experience with the reception and phone staff. Their communication lacks professionalism and empathy. I strongly suggest customer service training to help improve how they interact with patients—with more courtesy, warmth, and a welcoming attitude. A smile and a kind tone can make a big difference!
+Practice response date: 7 months ago
+Practice response:
+Hello Samuel, Thank you for your review. Whilst we’re pleased you’re satisfied with the service you’ve received from the clinical team, we’re saddened to hear that is not the … More
+
+Author: Samuel
+Date: 7 months ago
+Rating: 1 star
+Very poor service! While the clinical staff are truly excellent and supportive, I’ve had a disappointing experience with the reception and phone staff. Their communication lacks professionalism and empathy. I strongly suggest customer service training to help improve how they interact with patients—with more courtesy, warmth, and a welcoming attitude. A smile and a kind tone can make a big difference!
+Practice response date: 7 months ago
+Practice response:
+Hello Samuel, Thank you for your review. Whilst we’re pleased you’re satisfied with the service you’ve received from the clinical team, we’re saddened to hear that is not the same for the reception team. We agree a smile and a kind tone can make a big difference. Providing a warm and compassionate presence for patients can go a long way to make them feel supported and welcomed. Now that the practice is under new management, we’re in the process of providing customer service training to the team and I hope that your opinion on the receptionists will change soon. Kind Regards, Lauren Engagement & Communications Officer
+
+Author: Oliver Smith
+Date: 7 months ago
+Rating: 1 star
+I wanted to give a 0 star, but there is no option for it. What a pity service! The reception staff is very rude! Not sure, if it is the same lady on the phone when you call the surgery, again so rude and arrogant! This practise used to be a great place prior to Covid. But, now it is a no go zone and try not to call or engage with the practise, unless I have no other choice.
+Practice response date: 7 months ago
+Practice response:
+Hello Oliver, Thank you for your review. We’re saddened to hear that you feel the reception team are rude and arrogant – that is certainly not the impression we want to give. Our reception team work hard to help patients and to provide a welcoming and friendly service, so it’s disappointing that is not the experience you have had. If you have any idea of the name of the member of staff, or if there’s a particular incident you would like us to take a look into, please do let us know. Kind Regards, Lauren Engagement & Communications Officer
+
+Author: Saad Rehman
+Date: 8 months ago
+Rating: 2 stars
+Booking appointments has always been difficult but now with the change in management it seems to be even more convoluted, complete a form first thing in the morning, then wait for a call from the receptionist where you discuss the online form and then you get an appointment with a doctor. Staff are generally very good, the regular GPs are excellent, but practice let down by ineffective systems.
+Practice response date: 7 months ago
+Practice response:
+Hello Saad, Thank you for your review. We appreciate any reviews we receive, whether they be positive or negative, as they allow us to identify improvements. I’m sorry to hear that you’re finding the booking process convoluted. Please let me assure you that is not our intention. With the online form system, you should be able to fill in a form and then a doctor will call you – no call from a receptionist needed. The only time a receptionist will call is to request any information that is missing. You are able to submit a form at any point of the working day, but we do recommend submitting it first thing. This is because we’re now a same-day appointment service, and submitting the form in the morning gives you a better chance of getting an appointment that day. As you know, Brooklands Medical Practice is under the operation of new management. At some point, we will likely be bringing the practice more in line with our booking systems, where you are able to request all sorts of services online! Kind Regards, Lauren Engagement & Communications Officer
+
+Author: Rosemary Mallace Overfiftyfitness
+Date: 9 months ago
+Rating: 1 star
+I never knew it would be so difficult to get a repeat prescription for Omeprazole. It keeps telling me that they are at capacity and so I can't get online to ask for it. It's the computer that says "no". Very frustrating.
+
+Author: A W
+Date: 9 months ago
+Rating: 5 stars
+The practice has been extremely helpful to me over the few years I have been attending. Especially when it comes to mental health, they've been very supportive. Also reception have been helpful when I've rang or been into the practice. I've also requested prescriptions from here, repeat and otherwise, and it's been an easy process. I appreciate it can be a bit frustrating when the appointments are closed for the day when they're at capacity but that's not their fault.
+
+Author: Tarun Kalyani
+Date: 9 months ago
+Rating: 5 stars
+Tarun KalyaniLocal Guide · 12 reviews · 92 photos9 months ago
+
+Author: Michaella Stuart
+Date: 11 months ago
+Rating: 2 stars
+The doctors I have seen have all been lovely and helpful but the same can't be said for the reception staff. 1 in particular is very rude, not helpful whatsoever, very short to talk to and should not be doing the job she is doing. Prescriptions take longer than 48 hours to process, I have had Prescriptions take almost a week and then are only sent in bits. There is 1 receptionist who is very nice and very helpful but its not often you get her on the phone. It's a shame that they let the surgery down massively
+
+Author: D R
+Date: 11 months ago
+Rating: 1 star
+Rarely go to the doctors but when i called today to ask about prescriptions and going about booking an appointment the receptionist told me to go online and book knowing that it had already reached capacity for the day, clearly did not want to do the job and just sent me elsewhere with no help. I went to the nhs app where it told me receptionists were supposed to complete forms on your behalf. When i have been to the doctors in person here the nurses have always been super nice and helpful but the receptionists have a very negative and snarky attitude and were very rude to me today.
+
+Author: Az Mirshafie
+Date: a year ago
+Rating: 5 stars
+Az Mirshafie3 reviewsa year ago
+
+Author: Julie Dawson
+Date: Edited a year ago
+Rating: 1 star
+Doctors are a bit hit & miss, depending on who you get. I have seen a couple recently who are good, but if you are a woman around 50 years old, they want to slap you on HRT & say 'job done'. Nothing else has been considered for almost 2 years in my case. I wanted Patient Access on my phone, so I loaded & set up the app. Was asked on the app for a code from the doctors surgery. Asked the surgery on 3 different occasions, but I was ALWAYS told I didn't need a code. I never got access to that app, so I was FORCED to link it to the NHS app (which I didn't want on my phone). So, I have been strong-armed into putting a second app on my phone by the doctors surgery. Am changing the star rating (was 3, but now I am annoyed again having to write a warning to others about the backdoor way patients are FORCED to load the NHS app, so am downgrading to 2 stars). The NHS forcing people to do things so they can check boxes or get better statistics makes me angry, and it is not a way to fix things. Are we not in a country where we pride ourselves on having a choice? Come on, guys, too many people let stuff go, so people think that nobody cares. Make a small effort, everybody, and things can improve. Am now downgrading again to 1 star. Took a proxy voting form in to reception to ask if the doctor could sign it for my autistic son so he can vote. The whitish blonde haired receptionist immediately suggested to me that I should have taken it to my dentist. She was most unpleasant, unhelpful, and short with me. She should look up the definition of receptionist.
+
+Author: Nimo Therapy
+Date: a year ago
+Rating: 5 stars
+I have been here for about 2 years now. I'm sad that I have to change to go somewhere else. The best gp I have ever had. From reception, doctors and nurses evely one is nice. I can't imagine I have to look for a defrent gp since I had to change my adress. I recommend them 100% Evely I call for my child they made sure he is seen the same day. I'm scared of where I'm gonna go ,as I have relly experience some holible gp at my past.
+Practice response date: a year ago
+Practice response:
+Thanks very much for such a lovely review! We hope you find another great practice when you leave. All the best for your future health!
+
+Author: Mamo Ras
+Date: a year ago
+Rating: 1 star
+Was in the surgery with no 1 around and was scrolling through my tiktok while i was waiting and it wasn’t even that loud.abd the old lady at the reception rudely told me to turn the voice down .. am sure there no policy in place to look at ur phone while waiting …
+Practice response date: a year ago
+Practice response:
+Thanks for your feedback. You are welcome to use your phone while waiting but we ask you to use it on silent or with headphones as a courtesy to others. Our receptionists have to take phone calls about sensitive matters and it is very difficult for them if there is background noise. We often have patients waiting who are very unwell or distressed and they need a calm area to wait. We would be most grateful if you could show consideration and kindness to them.
+
+Author: Laura Brown
+Date: a year ago
+Rating: 5 stars
+Laura BrownLocal Guide · 200 reviews · 888 photosa year ago
+
+Author: Sarah W
+Date: Edited a year ago
+Rating: 1 star
+Due to many recent issues at the practice, my opinion has seriously changed The doctors & nurses are incredible, however the receptionists are so rude, very patronising/disrespectful & unprofessional
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for such a positive and detailed review. We do work very hard to try to do the very best for our patients and we’ll continue to do so, despite the challenges that we face.
+
+Author: Ibrahim Abaji
+Date: a year ago
+Rating: 1 star
+Went the other day to see a doctor regarding a headache and he requested a blood test. On the blood test day, they contacted me that the nurse called sick and the appointment is cancelled. After few days, there are some blood results in my health journal and I have never done any test!! I called them twice and asked to remove these results from my journal because these are not my results and I don’t know whose results are these! They have not removed the results from my journal after 15 days and I don’t think that they will!
+
+Author: Laura Rutter
+Date: a year ago
+Rating: 5 stars
+Cannot thank the doctors, nurses and receptionists enough for what they do for their patients. I’ve never once had a bad experience coming here. They go out of their way to make sure you are taken care of. Thank you for everything.
+Practice response date: a year ago
+Practice response:
+Thanks so much for such a positive review of our practice. It means a lot to the team to receive encouraging feedback in these challenging times.
+
+Author: Kel Meehan
+Date: a year ago
+Rating: 5 stars
+Excellent service from the reception staff, Paula was amazing, accommodating, and very helpful and understand
+Practice response date: a year ago
+Practice response:
+Thanks very much for taking the time to post this positive review.
+
+Author: Theresa Donnellan
+Date: a year ago
+Rating: 1 star
+Phoned up today as been in agony with ear pain for 4 days feeling sick sweating and really unwell but I have to wait another 8 days to be seen as no appointments before then.
+Practice response date: a year ago
+Practice response:
+We are sorry to hear that. Please contact the practice and ask to speak to the practice manager as we cannot respond properly in this forum.
+
+Author: Marta G
+Date: a year ago
+Rating: 5 stars
+This practice is exceptional. I don’t use the services often, but my recent experience makes me feel as though I am the most important patient, and the experience genuinely resembles a private service. When I hear others expressing dissatisfaction with their healthcare providers, I feel very fortunate to have such excellent doctors and nurses! Thank you to everyone at Brooklands Medical Practice- your work is greatly appreciated!
+Practice response date: a year ago
+Practice response:
+Thanks very much for such a wonderful review! It’s greatly appreciated by us all.
+
+Author: Jamie Spruce
+Date: a year ago
+Rating: 5 stars
+I owe this practice a huge amount of gratitude after the way they have helped me and my partner with our first baby. Lovely staff and even better people
+Practice response date: a year ago
+Practice response:
+Thanks very much for taking the time to give us such a positive review. We wish you and your family all the best.
+
+Author: 08
+Date: a year ago
+Rating: 2 stars
+I used to think really highly of this practice but then when my dad got ill year and the doctors barely seeing him face to face,instead just increasing patches over the phone to finding out he had cancer which had already spread from his kidney to bones.the way the doctor delivered the news...il never forgive the lack of care why are telephone apps still in operation for those who are in extreme pain that even morphine isn't touching? Surely this should make the gp think there is something more than just back pain!!!
+
+Author: Tracey Herstell
+Date: a year ago
+Rating: 5 stars
+Receptionist always do the best they can to help and find appointments, gps and nurses really are the best always come away feeling heard .
+Practice response date: a year ago
+Practice response:
+Thanks very much for your kind review. You’re right that we all try hard to help our patients access care when needed. Our clinicians certainly try to listen carefully to our patients’ concerns. It’s extremely busy, but we are trying our best in challenging circumstances.
+
+Author: Kevin wasilewski
+Date: 2 years ago
+Rating: 5 stars
+I have been coming here since I was a kid. All of the people here are amazing and kind and have helped me over the years. Unfortunately I'm moving out of the area soon, but couldn't leave without leaving my 5 stars ❤️ thank you to all at brooklands Medical Practice
+Practice response date: 2 years ago
+Practice response:
+Thanks very much for such a lovely review. We are very sorry you are leaving us but wish you all the best in your new practice. We hope that you will be just as happy there.
+
+Author: shamashan mohe ddin
+Date: Edited 2 years ago
+Rating: 5 stars
+calling in the morning and an appointment been booked for my baby at the same day actually within an hour time. Been waiting a bit extra time as been squeezing us with no appointments available
+Practice response date: 2 years ago
+Practice response:
+I’m sorry you were disappointed by your service today. On checking the records you actually booked the appointment today, not a few weeks ago. You spoke to the receptionist at 1056 this morning. As no appointments were available, the receptionist kindly fitted in your baby at the end of the morning surgery. Unfortunately this did result in a period of waiting. However, you were seen at 1209, a little over one hours after contacting the practice. Your baby was examined thoroughly. We try very hard in difficult circumstances, but I’m sorry you weren’t satisfied.
+
+Author: John Downs
+Date: 2 years ago
+Rating: 4 stars
+Nice
+Practice response date: 2 years ago
+Practice response:
+Many thanks for your positive review!
+
+Author: John Stiven
+Date: 2 years ago
+Rating: 5 stars
+I had appointment with Dr Ann today ,she is so helpful and kind
+Practice response date: 2 years ago
+Practice response:
+Thanks very much for your positive review. It’s much appreciated!
+
+Author: Emma Oldbury
+Date: 2 years ago
+Rating: 5 stars
+Thank-you to an amazing team at Brooklands Medical Practice. Myself and family have had 1st class care for over 50 years. You all work tirelessly for your patients.
+Practice response date: 2 years ago
+Practice response:
+Thanks so much for taking time to write this lovely review. We will share it with all the team.
+
+Author: Miss Lockwood
+Date: 2 years ago
+Rating: 5 stars
+I have been with the practice over 45 years so have seen a few changes like other patients, Dr Harrison is amazing, Dr Symcox and also Dr Evans who has unfortunately now left, but a new lady named Dr Landry is really lovely and very thorough, the nursing team are amazing too. Thank You to all ☺️
+Practice response date: 2 years ago
+Practice response:
+Thanks very much for your very kind comments. We will share them with all the team.
+
+Author: Jules
+Date: 3 years ago
+Rating: 5 stars
+I have been with this surgery for over 50 years and it is marvelous. Everyone is welcoming. Nothing is too much trouble. The receptionists are extremely helpful. I have always been seen promptly when I have needed a GP or Nurse. Keep doing what you are doing . 5 star staff.
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for your very kind words which are much appreciated. We will share this comment with our team.
+
+Author: Lisa Donnelly
+Date: 3 years ago
+Rating: 5 stars
+I just wanted to say receptionist was very nice today help me sort out my appointment after having to change it Thanks Brookland
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for the positive feedback. It’s much appreciated!
+
+Author: Jo Hayes
+Date: 3 years ago
+Rating: 5 stars
+Amazing surgery. Been here for years always friendly polite and professional. Access is great as I use online consult always get a reply within two days. Well done Brooklands keep up the good work
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for your very positive review. It’s much appreciated after a very busy day.
+
+Author: Kevin Bardon
+Date: 3 years ago
+Rating: 1 star
+Been refused medical treatment today Even tho they have helped in the past over this issue but today Dr. Walshe point blank refused me treatment I will be calling up today to speak to Geraldine about this matter Disgusting
+
+Author: Riham Moustafa
+Date: 3 years ago
+Rating: 5 stars
+Riham Moustafa2 reviews3 years ago
+
+Author: L Pres
+Date: 3 years ago
+Rating: 5 stars
+Given all the negativity that is surrounding the NHS at present I feel the practice deserves some recognition for their excellent service. In all the time I have been with this practice I cannot fault them. Their response to appointment & prescription requests is prompt and all members of staff from Receptionist to the Nurses/GP's are friendly and approachable, thanks for going above and beyond to accommodate patients.
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for taking the time to give this detailed and positive feedback. We will share it with the staff as a good morale-booster at a busy time.
+
+Author: Bev Morgan
+Date: 3 years ago
+Rating: 5 stars
+My daughter was very pleased by the standered of care from the receptionist to the dictors her problem has now been solved thank you very much
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for this very positive review. We appreciate it very much.
+
+Author: Kay Hollick
+Date: 3 years ago
+Rating: 1 star
+Reception staff are extremely rude. I have never known a doctors surgery to tell a patient that appointments cannot be booked in advance only on the day!! What an absolutely stupid and absurd policy. Chances of getting an appointment on the day are zero to none so how is anybody supposed to be seen?
+Practice response date: 3 years ago
+Practice response:
+We are very sorry to read this review. It’s not at all the case that appointments can only be booked on the day, so there has been a misunderstanding somewhere. We are having a meeting with the receptionists very soon and will address this issue. Thanks for bringing this to our attention.
+
+Author: DCH.Modder
+Date: 3 years ago
+Rating: 1 star
+Awful practice, reception staff are terribly rude and have no idea what they are doing. No remorse or care at all for the patients and it takes over 3 weeks to get an appointment. Ill be changing my GP now due to the terrible standard this practice is run.
+Practice response date: 3 years ago
+Practice response:
+We're very sorry that you feel this way. Please could you contact our practice manager so we can explore the issues in more detail. We care deeply about our patients and would not want any to feel that they had to change practice.
+
+Author: Pamela Burgess
+Date: 3 years ago
+Rating: 5 stars
+Absolutely amazing practice been here all my life they go above & beyond
+Practice response date: 3 years ago
+Practice response:
+Many thanks for this very positive and encouraging review! We keep trying to do our best despite challenging circumstances.
+
+Author: margaret burrows
+Date: 3 years ago
+Rating: 5 stars
+Always leave relieved and appreciate the warm friendly care I am given
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for this very positive feedback. It’s good to know that we are able to address your concerns so you can leave relieved.
+
+Author: Mitchel “mitchymitchy99” Allen-Moors
+Date: 3 years ago
+Rating: 3 stars
+A great practice, doctor staff are amazing and compassionate, and always eager to help and give the best resources and information. The reason for 3 stars is because of the reception staff, my partner puts of phoning just because the rec. staff are so un-professional, its truly upsetting to see a great service be halted by the few.
+Practice response date: 3 years ago
+Practice response:
+Thanks very much for the detailed feedback which we appreciate. While we are pleased to read your very positive comments about the doctors, we’re sorry that your partner has had some negative experiences. We’d encourage you to contact our practice manager so we can address specific issues in detail.
+
+Author: K
+Date: 4 years ago
+Rating: 1 star
+I have received 24 text messages in total over time pushing for me to get the vaccination and scare mongering about omicron, I cannot block or stop the messages as they're NHS, but this is pure harassment not even PPI companies are this bad.
+
+Author: Jess
+Date: 4 years ago
+Rating: 2 stars
+The doctors are really good and professional, but the receptionists are awfully rude! I need to book my appointments in advance because of my job. I can’t call at 8am to book and I cant have my phone on me while I’m at work to take calls. If I am able to ring at 8 I ask if I can have an appointment past a certain time because that’s when I finish work and they refuse. I get to the point of getting upset on the phone because my health problems are mounting up, but they refuse to help me all because I need to book an appointment in advance. I even tell them I don’t mind waiting a few weeks for an appointment as long as I can get one, but she just tells me that’s not how it works and that’s the end of the call. One receptionist is lovely and understand my problems and will manage to book me appointments around work (even though the other one says it isn’t possible) but because it causes me so much upset dealing with the other receptionist constantly being rude and refusing to help me I have panic attacks at the idea of calling.
+
+Author: Charlotte West
+Date: Edited 4 years ago
+Rating: 3 stars
+Charlotte WestLocal Guide · 240 reviews · 264 photosEdited 4 years ago
+
+Author: Jacqueline Guerrerofef
+Date: 4 years ago
+Rating: 5 stars
+pleasant spot not very a long way from the school close by and stunning staff! Coronavirus safe and consistently urged to ring for arrangements! continuously feel invited here and energetic typically! you can book arrangements from about 8o clock and consistently figure out how to get an appointememt! fabulous assistance!
+
+Author: Niusha Habibollahi
+Date: 4 years ago
+Rating: 5 stars
+Can't thank the two lovely ladies at the reception enough! Sally and Victoria! Absolute angels. I went in with a massive disappointment with my previous GP and explained my situation to the ladies. I needed to change my GP in order to get the right treatment as soon as possible, the two angels completely understood my situation (unlike the previous GP's receptionist which had no sense of sympathy) and they helped me to register straight away and get a quick appointment with a GP. Thank you so much for your sympathy and correct advice. xx
+
+Author: Billy Joul
+Date: 4 years ago
+Rating: 5 stars
+Fantastic practice nothing is ever an issue and the Dr's and staff are brilliant.
+Practice response date: 4 years ago
+Practice response:
+Thanks very much for your very kind review of our practice!
+
+Author: Neill Walker
+Date: 4 years ago
+Rating: 5 stars
+Excellent caring and efficient medical practice. They have looked after me and my family for about 40 years and always do their very best.
+Practice response date: 4 years ago
+Practice response:
+Thanks very much for your very kind review of our practice. We hope to look after you and your family for another 40 years!
+
+Author: Denise Allen
+Date: 5 years ago
+Rating: 5 stars
+Denise Allen1 review5 years ago
+
+Author: Johnny Max
+Date: 5 years ago
+Rating: 5 stars
+Johnny MaxLocal Guide · 37 reviews · 66 photos5 years ago
+
+Author: Alice Percival
+Date: 5 years ago
+Rating: 1 star
+Alice Percival5 years ago
+
+Author: jude
+Date: 5 years ago
+Rating: 5 stars
+nice place not too far from the school nearby and lovely staff! covid safe and always encouraged to ring for appointments! always feel welcomed here and very lively normally! you can book appointments from about 8o clock and always manage to get an appointememt! fantastic service!
+Practice response date: 5 years ago
+Practice response:
+Thanks very much for your very kind review. We're very proud how our staff have coped with the last few challenging months and look forward to the lively times returning!
+
+Author: Vicky Clarke
+Date: 5 years ago
+Rating: 5 stars
+I have been at this practice all my life since 1960's very helpful. Very pleasant doctors and easy to get an appointment.
+Practice response date: 5 years ago
+Practice response:
+Thanks very much for your very kind review. We will share it with our staff. It will give everyone a boost in these challenging Covid times.
+
+Author: Janet Jones
+Date: 6 years ago
+Rating: 5 stars
+Brilliant doctors surgery.
+Practice response date: 6 years ago
+Practice response:
+Thanks very much for posting a positive review of our practice. It's much appreciated.
+
+Author: Anne Flannigan
+Date: 6 years ago
+Rating: 5 stars
+Efficient, professional and pleasant staff who give outstanding service. Would highly recommend this practice
+Practice response date: 6 years ago
+Practice response:
+Many thanks for your kind comments. We work very hard for our patients and aim to be outstanding in everything we do.
+
+Author: Rob Offord
+Date: 6 years ago
+Rating: 5 stars
+I feel the reviews left here are unfair. I've used this surgery since I was at School. I'm 42 now. Never had an issue. Always manage to get an appointment. Doctors and staff are both caring and attentive. Couldn't fault it at all.
+Practice response date: 6 years ago
+Practice response:
+Many thanks for your kind comments. We try very hard to offer an excellent range of appointments, while remaining caring and clinically excellent.
+
+Author: Dave Mac D
+Date: 6 years ago
+Rating: 1 star
+Many thanks for your rating. We would love to hear how you'd like us to improve. Please contact us via our website: https://www.brooklandsmedicalpractice.co.uk/contact1.aspx
+Practice response date: 6 years ago
+Practice response:
+Many thanks for your rating. We would love to hear how you'd like us to improve. Please contact us via our website: https://www.brooklandsmedicalpractice.co.uk/contact1.aspx
+
+Author: Memmon Scape
+Date: 6 years ago
+Rating: 1 star
+Apointments cancled and can't get another for a while, they try but badly organised. Shame as GP are good.
+Practice response date: 6 years ago
+Practice response:
+Many thanks for your comments. We recently had to cancel some appointments as one of the doctors became sick. We'd like to hear more from you as to how we could be better organised. Please contact us via our website: https://www.brooklandsmedicalpractice.co.uk/contact1.aspx
+
+Author: David Mac D
+Date: 6 years ago
+Rating: 1 star
+Wait 3 weeks for an apointment, get it cancled by them less than an hour before. Next apointment available is next year!!! Shambles.
+Practice response date: 6 years ago
+Practice response:
+Many thanks for your comments. We recently had to cancel some appointments at short notice as one of the doctors became sick. We're very sorry for the inconvenience. We'd like to hear more from you as to how we could improve. Please contact us via our website: https://www.brooklandsmedicalpractice.co.uk/contact1.aspx
+
+Author: Andrew Rawson
+Date: 6 years ago
+Rating: 5 stars
+Andrew Rawson5 reviews6 years ago
+
+Author: Sofio Khuroshvili
+Date: 7 years ago
+Rating: 5 stars
+Sofio Khuroshvili2 reviews7 years ago
+
+Author: DARREN PASSMAN
+Date: 7 years ago
+Rating: 5 stars
+DARREN PASSMANLocal Guide · 18 reviews · 2 photos7 years ago
+
+Author: David Evans
+Date: 8 years ago
+Rating: 5 stars
+Brooklands Medical Practice in my experience is the best doctors surgery around....

@@ -3,59 +3,1052 @@ Canonical code: P91020
 Postcode: M16 9NW
 Google Maps title: Limelight Health and Well-being Hub
 Google rating: 2.4
-Google review count: 156
-Google Maps URL: https://www.google.com/maps/place/Limelight+Health+and+Well-being+Hub/@53.4613926,-2.261924,17z/data=!4m8!3m7!1s0x487bb1ff00000001:0x5923e7b57f20f9b6!8m2!3d53.4613926!4d-2.261924!9m1!1b1!16s%2Fg%2F11ggw82x0w?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 159
+Google Maps URL: https://www.google.com/maps/place/Limelight+Health+and+Well-being+Hub/@53.4613926,-2.2645043,17z/data=!4m8!3m7!1s0x487bb1ff00000001:0x5923e7b57f20f9b6!8m2!3d53.4613926!4d-2.261924!9m1!1b1!16s%2Fg%2F11ggw82x0w?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
+Review collection mode: full_feed
+Review cards collected: 159
+Owner replies collected: 81
+Raw review responses captured: 17
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P91020-limelight-health-and-wellbeing-hub.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
-Author: autumn deesch
-Date: 3 days ago
+Author: Annette Mcintosh
+Date: 4 hours ago
 Rating: 5 stars
-Dr. Joe Rylands was so easy to speak to and reassuring! Honestly couldn’t recommend enough
+I was suffering with dietabetic for over ten years but doctor Joe set in and call the hospital and make sure I get help and within a month of getting help I was fine
 
-Author: Liliya Mircheva
-Date: 4 days ago
+Author: Neil Storton
+Date: Edited 14 hours ago
+Rating: 4 stars
+Credit where credits due - improved re phone appts IF you are able to get on app (only ever between 730am and 830am as the days appts get booked up by then) and submit request for appointment - you should get a phone back by a GP the same day. Dr J Rylands is a fantastic doctor and can't recommend enough (if you don't mind waiting for a face to face appointment)
+Practice response date: 4 years ago
+Practice response:
+Dear Neil Thank you for your review – I am sorry to hear that you have been facing difficulties with regards to accessing Services @The Limelight Health& Well-being Hub. Our Aim as a Practice is to resolve access issue concerning our services user. We welcome all feedback from our services users, The data collected helps the practice to improve and develop areas of the practice which may be causing some difficulties to our Services users We take your concerns very seriously and are working to ensure the service delivered by the practice is accessible Monday to Friday within working hours . Thank you very much from the team @ Limelight Health & well-being Hub
+
+Author: Paul Henry
+Date: 6 days ago
 Rating: 5 stars
-I received a Proffesional service: I was listened to and my questions were answered comprehensively. I felt the care and attention about my concerns. Received referals and advise that I was comfortable with. Thank you
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to see that we have met your expectations on this occasion. All the best, Senior Management Team
+Practice response date: 2 days ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to see that we have met your expectations on this occasion. All the best, Senior Management Team
 
-Author: Jessica Overton
-Date: 5 days ago
-Rating: 5 stars
-Recently joined this GP. I've been pleasantly surprised to find a lot more of my requests have been dealt with in person (e.g. mental health reviews) rather than over the phone which seemed to be the default at my previous GP. So far all my requests have been dealt with really promptly, my son with complex health needs was seen the same morning when he was unwell. The clinicians I've met have taken the time to address all of my concerns and seem very genuine in their care. This is a lovely practice.
-
-Author: raman deep
+Author: Jannat Yacoob
 Date: a week ago
 Rating: 5 stars
-Kind and supportive environment
+A huge thank you to Vasima who is the senior administrator at limelight health and wellbeing hub. I have been spiralling with my ADHD yet to be seen by a clinic and she helped me with any questions and the form I had completed. I even missed the call and she sent a msg to ask for her and to call back so that she could resolve my query. I have never had any issues with this practice and I have been with them for years.
+Practice response date: a week ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us such a positive review. We truly appreciate it. We will also share your feedback with the administrator that you have named. We are very happy to hear that both your recent and your ongoing experiences with our practice have been meeting your expectations and the high standards that we set for ourselves. Kind regards Senior Management Team
 
-Author: tipu sultan
+Author: autumn deesch
+Date: a week ago
+Rating: 5 stars
+Dr. Joe Rylands was so easy to speak to and reassuring! Honestly couldn’t recommend enough
+Practice response date: a week ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We truly appreciate it. We will share your feedback with the clinician that you have named. We are very happy to hear that your recent experience with our practice met your expectations and the high standards we set for ourselves. Kind regards Senior Management Team
+
+Author: Liliya Mircheva
+Date: a week ago
+Rating: 5 stars
+I received a Proffesional service: I was listened to and my questions were answered comprehensively. I felt the care and attention about my concerns. Received referals and advise that I was comfortable with. Thank you
+Practice response date: a week ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations of high-quality care. All the best, Senior Management Team
+
+Author: Jessica Overton
 Date: 2 weeks ago
 Rating: 5 stars
+Recently joined this GP. I've been pleasantly surprised to find a lot more of my requests have been dealt with in person (e.g. mental health reviews) rather than over the phone which seemed to be the default at my previous GP. So far all my requests have been dealt with really promptly, my son with complex health needs was seen the same morning when he was unwell. The clinicians I've met have taken the time to address all of my concerns and seem very genuine in their care. This is a lovely practice.
+Practice response date: 2 weeks ago
+Practice response:
+Dear patient First of all, welcome to Limelight Health & Well-being Hub! Thank you very much for taking the time to leave us such a positive review - your comments have been shared with our team. We do try and implement a face-to-face first approach for appointments where possible, and we are happy to hear that we have been able to meet yours and your son's expectations of high-quality care. All the best Management Team
+
+Author: raman deep
+Date: 2 weeks ago
+Rating: 5 stars
+Kind and supportive environment
+Practice response date: 2 weeks ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that our practice environment has met your expectations. All the best, Management Team
+
+Author: Lesley Jemehia
+Date: a month ago
+Rating: 5 stars
+Dr Chandler has helped me get my menopause under control.. a great doctor who listens, and cares.. my life is so much better now.. thank you 🙏🏽 …
+Practice response date: 3 weeks ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We truly appreciate it. We are very happy to hear that your recent experience with our practice met your expectations and the high standards we set for ourselves. We will share your feedback with the clinician that you have named as well. Kind regards Senior Management Team
+
+Author: tipu sultan
+Date: a month ago
+Rating: 5 stars
 Today,on 18 February, I had the privilege to have phone appointment with Ms Fatima regarding my medication and how to improve my health in general.I was amazed the way Fatima interacted with total dedication and professionalism about my on going medical issues.She-listened to my problems and gave clear ,precise solutions.For me it was not just that Fatima was doing her job,infact ,it’s much more than job or duty but I call this as RESPONSIBILITY, which is at a much higher ladder than duty.Keep doing the great work.
+Practice response date: 3 weeks ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We truly … More
+
+Author: tipu sultan
+Date: a month ago
+Rating: 5 stars
+Today,on 18 February, I had the privilege to have phone appointment with Ms Fatima regarding my medication and how to improve my health in general.I was amazed the way Fatima interacted with total dedication and professionalism about my on going medical issues.She-listened to my problems and gave clear ,precise solutions.For me it was not just that Fatima was doing her job,infact ,it’s much more than job or duty but I call this as RESPONSIBILITY, which is at a much higher ladder than duty.Keep doing the great work.
+Practice response date: 3 weeks ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We truly appreciate it. We are very happy to hear that your recent experience with our practice met your expectations and the high standards we set for ourselves. We will share your feedback with the clinician that you have named as well. Kind regards Senior Management Team
+
+Author: monica Severin
+Date: Edited a month ago
+Rating: 5 stars
+Every time I called to solve a problem, my call was treated with compassion, empathy, delicacy, attention and professionalism, I would like to thank all the employees in the GP call center and I would like to especially thank Ms. Silvana, who took my call today. I wish you a good day and congratulations for the patience and attention with which you treat our requests!!
+Practice response date: 4 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
 
 Author: Faminah
 Date: Edited a month ago
 Rating: 4 stars
 I initially wrote a one star review as I got Appalling service by Dr K . This is also not the first occasion this has happened with this specific Dr (infact previously she was one of my favourite GPs especially when it came to children as I felt she was thorough). On this occasion I contacted the gp practice for my son who is under one who had a nose bleed. As a pharmacist I am fully aware of what pharmacy can offer and what knowledge we have and this needed further investigation. Instead of seeing my son she referred the query to pharmacy first for us to only be told this is not an appropriate query for pharmacy first and that my son should be seen by a gp and that this is a red flag. I was completely disheartened by the practice with the constant pushing me to another health care, usually pharmacy or some random resource but my faith has been restored by Sami as a result I have changed my review from a one star to a four star. Sami is an asset to the gp practice, kind and considerate and very polite and professional. I accidentally missed my blood pressure appointment and had the times mixed up and he didn’t make me feel guilty or bad or anything but rather simply booked me in the next day. Thank you Sami!
+Practice response date: 9 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We truly appreciate it. We are very happy to hear that your recent experience with our practice met your expectations and the high standards we set for ourselves. We will share your feedback with the individual team members you have named as well. Kind regards Senior Management Team
 
 Author: Elizabeth Paga
 Date: a month ago
 Rating: 5 stars
 Everyone is so friendly and helpful here. My GP is knowledgeable and caring. I use the portal to request appointments, without issue.
+Practice response date: a month ago
+Practice response:
+Dear patient Thank you for taking the time to leave us such a positive review about our staff and our appointment booking processes. It is very much appreciated. We will pass your comments on to our practice team, and we are very happy to hear that we have met your expectations of providing high quality care. Best wishes, Management Team
 
 Author: Megan Lunney
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 Had my cervical smear test done at limelight on the 17th of Jan 2026. From the moment I entered the room I felt very at ease and calm. Suli ( the nurse practitioner ) was very likeable, friendly and knowledgeable. She explained what the test was for and reassured any of my worries. I was in the room for no longer than 5 minutes and felt very relieved to have got such an important test done. Suli is an absolute credit to limelight and nurses as a whole…. and the way she advocates for women’s health by simply being so reassuring and respectful at a time that many women feel vulnerable is faultless. Please get your smear tests done! Ask for Suli!
+Practice response date: a month ago
+Practice response:
+Dear patient Thank you for taking the time to leave us such a positive review, and particularly one that encourages uptake of this very important test. We hope many of our patients read this and heed your advice to book in for their cervical screening. We will of course pass your comments on to the relevant clinician, and we are very happy to hear that we have met your expectations of providing high quality care. Best wishes, Management Team
 
 Author: Qasim Akram
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 Spoke to a very kind doctor who genuinely cared and supported through illness. She is a credit to Wellbeing Hub and am thankful for her help
+Practice response date: 2 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us such a positive review. It is very much appreciated. We will pass your comments on to our practice team, and we are very happy to hear that we have met your expectations of providing high quality care. Best wishes, Management Team
 
 Author: Afroz A
 Date: 3 months ago
 Rating: 1 star
 Absolutely appalling service – avoid Limelight Health at all costs. I was booked a follow-up telephone consultation three weeks in advance. I stayed in all day from 7am, phone in hand, waiting for the call. Nothing. No call, no missed-call notification, no voicemail. When I rang the surgery, I was told the doctor apparently “called twice and I didn’t answer” – completely untrue. The receptionist refused to investigate, offered no apology, and just said “nothing can be done” and “we’ll just go round in circles”. I now have to start the entire process again and wait weeks more for the appointment I should have had. No accountability, no empathy, and what appears to be a falsified clinical record stating calls were made when they weren’t. Patients are being blamed for the surgery’s failures. Reception staff clearly need urgent training and better systems are needed to stop this kind of thing happening. Deeply unhappy and still without the medical follow-up I need. I do not recommend this practice to anyone.
+Practice response date: 3 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice staff members has fallen short of your expectations. Your health is our utmost priority, so if you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Mohamed Bham
+Date: 3 months ago
+Rating: 5 stars
+I had annual health check at my GP surgery. I arrived & checked in very quickly. My appointment time was 10.30am. Very quickly I was invited to go in nurse Sharon Norbury ACP room. Had a warm welcome by Good Morning. One by one questions about my health were asked with ease & professionally taking in consideration regarding my hearing. All test were conducted again with ease. Overall I was really impressed how my assessment were carried out. Well done Sharon .
+Practice response date: 3 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us such a positive review. We will pass your comments on to the relevant clinician. We are very happy to hear that we have met your expectations of providing high quality care. Best wishes, Management Team
+
+Author: Garfield Thompson
+Date: Edited 4 months ago
+Rating: 5 stars
+Excellent services. Highly professional staff and their digital services actually work.
+Practice response date: 5 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that our staff acted in accordance with your expectations and that the online systems we have in place work well for you. All the best, Management Team
+
+Author: elg ltd
+Date: 4 months ago
+Rating: 1 star
+If you go to the emergency in the morning they will tell you we cant see you unless your dying
+Practice response date: 4 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations. Please note that we are not an emergency room or accident and emergency clinic, so we would strongly advise you access those appropriate services in case of a medical emergency. Your health is our utmost priority, so if you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Sohel Sidat
+Date: 4 months ago
+Rating: 1 star
+Rubbish and and unhelpful people
+Practice response date: 4 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice staff members has fallen short of your expectations. Your health is our utmost priority, so if you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Roselyn Thompson
+Date: 5 months ago
+Rating: 5 stars
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
+Practice response date: 5 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
+
+Author: Ade BAYO
+Date: 6 months ago
+Rating: 5 stars
+Thanks to Dr Tanya. She always explains to details and gives me opportunity to take an informed decision on my health. I appreciate her social approach to my health management. It works better than the medication. Thank you Dr Tanya and thanks to Dr Grant 🙏 …
+Practice response date: 6 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us such a positive review. We will pass your comments on to our medical team. We are very happy to hear that we have met your expectations of providing high quality care. Best wishes, Management Team
+
+Author: M w
+Date: 6 months ago
+Rating: 5 stars
+Very good doctor I appreciate her understanding
+Practice response date: 6 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
+
+Author: Uzma Mukhtar
+Date: 6 months ago
+Rating: 5 stars
+I had the best experience with this GP
+Practice response date: 6 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us such a positive review, your feedback is appreciated. Best wishes, Management Team
+
+Author: Aisha Sheikh
+Date: 7 months ago
+Rating: 5 stars
+Dear patient Thank you for taking the time to leave us a 5-star rating. We are pleased to know that we have met your expectations on this occasion. Best regards Senior Management Team
+Practice response date: 7 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us a 5-star rating. We are pleased to know that we have met your expectations on this occasion. Best regards Senior Management Team
+
+Author: M Jurii
+Date: 8 months ago
+Rating: 5 stars
+Dr. Rylands is a great doctor. He really listens to your concerns, explains things clearly, and takes the time to make sure you feel comfortable and informed. The office staff were also polite, well-organised, and made check-in quick and easy. Highly recommend.
+Practice response date: 7 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are happy to hear that one of our GPs and our front of house team have met your expectations of providing excellent care. We will share your feedback with the staff in question. Kind regards The Management Team
+
+Author: Said Bouc
+Date: 8 months ago
+Rating: 1 star
+The worst gp can ever visit
+Practice response date: 8 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations. Your health is our utmost priority, so if you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Foluso Falade
+Date: 8 months ago
+Rating: 1 star
+absolutely horrible customer service,
+Practice response date: 8 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations. Your health is our utmost priority, so if you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Mairead Golden
+Date: 8 months ago
+Rating: 5 stars
+Lovely nurse
+Practice response date: 8 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are happy to hear that our nursing team have met your expectations of providing excellent care. Kind regards The Management Team
+
+Author: Maurice Baker
+Date: 9 months ago
+Rating: 5 stars
+Very good.
+Practice response date: 9 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are happy to hear that we have met your expectations of providing care. Kind regards The Management Team
+
+Author: Joanne Gordon
+Date: 10 months ago
+Rating: 1 star
+This surgery is the worse surgery in Old Trafford why do I have to wait three weeks for a repeated proscription that can be done on the same day some of the staff need more training in customer service and how to speak to patients and not have patients wait two or three weeks for an appointment or repeated proscription absolutely disgusting surgery.
+Practice response date: 10 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations. We would like to assure you that repeat prescription requests are processed within 2 to 3 working days, and that all requests for appointments are assessed for clinical urgency before a suitable appointment is arranged. Your health is our utmost priority, so if you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: T. B.
+Date: 10 months ago
+Rating: 5 stars
+GPs are dedicated and caring for patients. May need to see different GPs when booking the appointment but this is similar in other places. The surgery deserves a higher rating!
+Practice response date: 10 months ago
+Practice response:
+Dear patient Thank you very much for your kind words and for taking the time to leave us a positive review. We are happy to hear that the service that we have provided has met your expectations. Kind regards Senior Management Team
+
+Author: Rubina Chowdhury
+Date: Edited 10 months ago
+Rating: 5 stars
+I recently had the privilege of seeing Dr Grant. I found her be patient, she attentive, and there was a kindness in her that you don’t often come across. It wasn’t about rushing through the appointment or ticking boxes. It was about seeing the person in front of her and wanting to help, simply because she cared. Good doctors are rare these days. But doctors like Dr Grant, the ones who carry compassion, are something extraordinary. She reminded me that in a world where it’s easy to become hardened, there are still people out there who choose to care. I hope Dr Grant never loses the light she brings to her patients ❤️
+Practice response date: 11 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us a review, we are very happy to hear that we have provided a good quality of service during your recent encounter with our practice. Your positive comments and praise will be passed on to the relevant team member and their managers. All the best, Senior Management Team
+
+Author: Sara Bhatti
+Date: 11 months ago
+Rating: 1 star
+Shit service it’s been a month I’m asking for appointments and they are not giving any appointments I’m sick couldn’t go for work and they didn’t bother . Very bad NHS
+Practice response date: 11 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations, and we would like to assure you that all requests we receive are assessed for clinical urgency and that your health is our utmost priority. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Karen Crouch
+Date: 11 months ago
+Rating: 1 star
+Don't bother with the health and beauty hub round there, you will be very lucky if you get an appointment for the hairdressers!
+
+Author: Mz C
+Date: 11 months ago
+Rating: 5 stars
+Excellent experience with Nurse Sharon Norbury ACP
+Practice response date: 11 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us a review, we are very happy to hear that we have provided a good quality of service during your recent encounter with our practice. Your positive comments and praise will be passed on to the relevant clinician. All the best, Senior Management Team
+
+Author: Muhdin Abdi
+Date: 11 months ago
+Rating: 1 star
+The govermwnt should ahut down this place . The quality is poor. Even when you attend the appointment on time , They ask you to wait and wait and when you complain at the reception , they would just shrugg !
+Practice response date: 11 months ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations. Our clinics are often busy, particularly for urgent appointments, and unfortunately, sometimes this means that our clinicians are running late, which may result in a longer waiting time. We apologise for any inconvenience this may cause, and our Reception team should have made you aware of the short delay at the time. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Debra Dyson
+Date: a year ago
+Rating: 1 star
+I have a spinal injury and requested another prescription for pain relief. What I get is a telephone appointment in 2 weeks time because it’s not on repeat, due to change in tablets to suit me better, It’s an absolute joke. Told to phone 111. They are a waste of time. Wouldn’t even give 1 star but had to to post !
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations, and we would like to assure you that all requests we receive are assessed for clinical urgency and that your health is our utmost priority. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: POPs Chohan
+Date: a year ago
+Rating: 4 stars
+The limelight centre offers A library, opticians, pharmacy, cafeteria. Full health service centre. Well being centre for the aged.
+
+Author: B H
+Date: a year ago
+Rating: 5 stars
+My mum is very happy with her GP , Dr Iqbal. She is polite and very helpful. She listens with empathy and chases things up in a timely manner.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for taking the time to leave us a positive review, it is very much appreciated. We are happy to hear that your recent experience with one of our clinicians has been so positive. Best wishes, Senior Management Team Limelight Health & Well-being Hub
+
+Author: Malcolm Elthorpe
+Date: a year ago
+Rating: 5 stars
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
+Practice response date: 4 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
+
+Author: Lisa Mack
+Date: a year ago
+Rating: 5 stars
+Fantastic centre for the local community with everything under one roof. Also the perfect venue for hiring meeting rooms with an incredibly helpful team on site.
+Practice response date: 4 months ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. We are glad to hear that we have met your expectations on this occasion. All the best, Management Team
+
+Author: gaming with it's deshiedz
+Date: a year ago
+Rating: 1 star
+Pathetic excuse for doctors definitely money laundering, doctors are googling symptoms in appointments to prescribe meds, since I hace attended this surgery not seen the same docotor since ongoing issues for 2 years fobbed off and lied to consistently
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations, and we would like to assure you that patient safety is our utmost priority. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: kavita mandalia
+Date: a year ago
+Rating: 1 star
+Doctors prescribing wrong medication. No appointments even after giving wrong medication putting patient at risk.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for taking the time to leave us feedback. We are sorry to hear that your recent experience with our practice has fallen short of your expectations, and we would like to assure you that patient safety is our utmost priority. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here, and we will then investigate the issues you have raised and respond: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and we are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Nathan Powell
+Date: a year ago
+Rating: 1 star
+Disappointing! Zero interest in patient care. No returned phone calls, no available appointments, or to wait 2-3 weeks waiting times. Doctors and receptionist hang up the phone. Rude receptionist staff laughing at people with medical problems.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are very sorry to hear that your recent experience has been less than satisfactory. We would like to assure you that patient care is our first priority at the practice, across both our clinical and administrative teams. If you would like to make a formal complaint regarding your individual circumstances, to give us an opportunity to look into the matters you raised in detail, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Ruqayyah
+Date: a year ago
+Rating: 1 star
+The most awful doctors in the uk. Stay away. Dr Tanya Beaumont was in a hurry to get me to leave the appointment. She wasn’t listening to my concerns and instead jumped to prescribe me medications that are nowhere relevant to my condition. She even admitted that the NHS don’t look at the root cause of the illness and instead just bandaid the symptoms. I have been contacting limelight for about 8 months and they throw me around, send me to A&E who then send me back, refer me to specialists on a 14 month wait list which also somehow gets cancelled. In all this time my condition has made zero progress. This is the last time i visit this practice. As I am typing this I’ve just received a message from Dr Tanya Beaumont saying she’s prescribed me a different medication that is totally different to what was even spoken about at my appointment this morning! Ridiculous!
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear that your recent experience has been less than satisfactory. We would ask that you refrain from mentioning our colleagues' full names in your reviews, to protect their anonymity. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Keri M. U
+Date: a year ago
+Rating: 1 star
+Please avoid this GP practice. My husband waited over an hour for his scheduled appointment only to be told that the doctor is busy and that his appointment would get rescheduled. This is absolutely insane!
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear that your recent experience has been less than satisfactory. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: X
+Date: Edited a year ago
+Rating: 1 star
+Male Dr could not close door quick enough behind elderly gentleman who struggled to walk. The door was literally on the elderly man’s back! At least allow the patient to leave the room before you push the door behind anyone for christ sake!!!! Surgery not fit for purpose. Incompetent staff/reception/poor management/ continuous mistakes.
+
+Author: EW W
+Date: a year ago
+Rating: 5 stars
+Have been with them for 4 years, just wanted to say, what a positive service they have provided in the time i've been with them, all the staff have been very helpful, i've seen at first hand how poorly treated some of the reception staff have been when they are only trying to do their job
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review, and to express your empathy for our Reception team. We are very happy to hear that you are satisfied with our services. All the best, Senior Management Team Limelight Health & Well-being Hub
+
+Author: Ange T
+Date: a year ago
+Rating: 1 star
+There is not much or any support for dementia patients.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear that your recent experience has been less than satisfactory. Rest assured we strive to provide the best care possible, and we have a care coordinator in post who ensures our dementia patients are regularly reviewed by our GPs, in line with the requirements of our contract. If you would like to make a formal complaint regarding your individual circumstances, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Khalid Shabbir nawab
+Date: a year ago
+Rating: 5 stars
+Dear patient Thank you very much for taking the time to leave us a positive review. All the best, Senior Management Team Limelight Health & Well-being Hub
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a positive review. All the best, Senior Management Team Limelight Health & Well-being Hub
+
+Author: farooq ahmad
+Date: a year ago
+Rating: 1 star
+Not a satisfactory, it's too long time appointment,
+Practice response date: a year ago
+Practice response:
+Dear patient We are sorry to hear that your recent experience with us was less than satisfactory. You can ask to make an appointment through the 'Submit a new request' button on our website: https://limelighthealthhub.nhs.uk/ or by calling us between 08:00 and 18:30 on weekdays. Kind regards Limelight Health & Well-being Hub
+
+Author: Jon Coates
+Date: a year ago
+Rating: 5 stars
+Dear patient Thank you very much for taking the time to leave us a 5-start rating. We endeavour to provide the best service possible for all our patients. Kind regards Senior Management
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you very much for taking the time to leave us a 5-start rating. We endeavour to provide the best service possible for all our patients. Kind regards Senior Management
+
+Author: lily karimi
+Date: a year ago
+Rating: 1 star
+The worst gp ever, they don't even pick up the phone.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear your recent experience has been less than satisfactory. Our phone lines are open from 08:00 to 18:30 Monday to Friday, and you can also submit a medical or administrative query through the 'contact us online' button on our website: https://www.limelighthealthhub.nhs.uk/. Kind regards Limelight Health & Well-being Hub
+
+Author: 808
+Date: a year ago
+Rating: 1 star
+I got surgery 3 months ago, my surgeon sent then a letter telling that what I need prescribed. Only after 3 months I got my prescription due to calling them up and complaining. Absolute shambles this place
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear your recent experience has been less than satisfactory. If you would like to make a formal complaint regarding the situation with your prescription, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: M Ali
+Date: a year ago
+Rating: 1 star
+Is there a option for 0 stars?
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear your recent experience has been less than satisfactory. If you would like to make a formal complaint regarding the situation that has led to your review, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Lorraine Elphick
+Date: a year ago
+Rating: 5 stars
+I appreciated getting my appointment quite quickly and thank to the Dr I saw who was very very nice and helpful and put my mind at rest. Under difficult stressful times this is appreciated.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you very much for taking the time to share feedback regarding your positive experience of our practice. We are happy to hear that our service has met your expectations. Kind regards Limelight Health & Well-being Hub
+
+Author: Josh Y
+Date: a year ago
+Rating: 1 star
+Utterly useless GP.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear your recent experience has been less than satisfactory. If you would like to make a formal complaint regarding the situation that has led to your review, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: zaheer ahmad
+Date: a year ago
+Rating: 1 star
+Worst service. Management never tried to improve. Too long waiting time even your appointment at around 9. Waiting over 40 minutes every time in last few visits. Poor customer service.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear your recent experience has been less than satisfactory. Our phone lines are open from 08:00 to 18:30 Monday to Friday, though they can understandably be busier earlier in the morning. Did you know that you can also submit a medical or administrative query through the 'contact us online' button on our website? You can access this here: https://www.limelighthealthhub.nhs.uk/. Kind regards Limelight Health & Well-being Hub
+
+Author: Rahela Mohamed
+Date: a year ago
+Rating: 1 star
+very very bad practice takes MONTHS to get even an appointment and they always ask you to do it on the website which they never check. do not recommend, save your energy and sign up elsewhere.
+Practice response date: a year ago
+Practice response:
+Dear patient Thank you for your feedback. We are sorry to hear your recent experience has been less than satisfactory. If you would like to make a formal complaint regarding the situation that has led to your review, you can do so in writing, in line with our complaints policy outlined here: https://www.limelighthealthhub.nhs.uk/policies/complaints-process-for-limelight-health-well-being-hub/ We appreciate you taking the time to share your experience and are committed to continuous improvement for our services. Kind regards Limelight Health & Well-being Hub
+
+Author: Vimal Patel
+Date: a year ago
+Rating: 1 star
+They not received a call They not give proper answers, rubbish thing in limelight well being. I gave 0 star but no any option
+
+Author: Kubby Ali
+Date: a year ago
+Rating: 1 star
+This surgery is not very good it is so hard to get a appointment and there ask my GP may as well not be there on three occasions while I have been trying to write the reason I need a appointment it has shut down and it wasn’t even open for three minutes then when I have rang up to try and get a appointment they wouldn’t give me one I was told to try again tomorrow morning. Which if some one was in need off an emergency appointment telling them to wait is not good enough they have to many patients and not enough doctors working at any one time so people have to suffer . It just isn’t good enough or they say somebody will call you back and sometimes it can take up to three days before they call back it really needs to be looked at and addressed it simply isn’t good enough. But nobody seems to care because it’s been like this for over the last few years and the chemist side off it is even worse that I went and signed on at another chemist because they never ever give you all your medication there is always something they haven’t got you would think that they would stock up on things knowing that they are going to need certain medication which is repeated weekly and they don’t communicate with each other the doctor will say your medication is ready to collect. And when you go there they say we haven’t even received it from the doctors which is upstairs and they have computer linked but it’s not on the system you are forever waiting.it really needs Sorting out ASAP.one star from me.
+
+Author: carol burns
+Date: a year ago
+Rating: 1 star
+carol burns1 reviewa year ago
+
+Author: Mike Ledsham
+Date: a year ago
+Rating: 2 stars
+Cafe is alright so I’ll give it an extra star, everything else in there is useless
+
+Author: Liv
+Date: 2 years ago
+Rating: 1 star
+Incredibly slow unreliable service
+
+Author: Shakaira Thorn-Hughes
+Date: 2 years ago
+Rating: 1 star
+This practice is in every way incompetent and not fit for purpose. I’ve had referrals forgotten about and sent 11 months late. Their system for sending requests is extremely flawed as they seem to often be reviewed by clinicians and there is a clear lack of communication as the information relayed by the reception team is often wrong, they don’t offer solutions or helpful advice and this reflects poorly on the few individuals who do go above and beyond.
+
+Author: Soukaina Mazeh
+Date: 2 years ago
+Rating: 5 stars
+Soukaina Mazeh2 reviews2 years ago
+
+Author: Tom Davis
+Date: Edited 2 years ago
+Rating: 1 star
+There are absolutely no instructions on the website about how to sign up to their patient appointment service, Accurx . I don't know how anyone is supposed to use this website successfully. Absolutely terrible. The worst website ever. The phone line says use CRAPACCURX but the website it's not operational. It's LITERALLY the worst GP service or online service, ever. I don't see how they imagine anyone is able to successfully use it
+
+Author: Lisa Cooper
+Date: 2 years ago
+Rating: 1 star
+Lisa Cooper1 review2 years ago
+
+Author: SML D
+Date: Edited 2 years ago
+Rating: 4 stars
+Had to update this as Dr Chandler is exceptional and has made my experience here and the reception team has really improved how they deal with things too.
+
+Author: Arif Timol
+Date: 2 years ago
+Rating: 1 star
+This has got to be the worst surgery ever! They call you, leave a message and then when you try calling back it takes 3 days to get thru to someone. When you do finally speak to someone you get disconnected! When you have an appointment and they have to reschedule for whatever reason, they just cancel the appointment, reschedule for another day and then leave you a message. When you calk them back to say you can't make it they sound shocked and surprised. They think you're sat at home doing nothing. The nurses make assumptions about you and don't actually ask any questions. They just go off on a tangent. Sick to the back teeth with this lot. Bring back Dr Kaur from retirement! It was better ran then.
+
+Author: Daisy Lomax
+Date: 2 years ago
+Rating: 1 star
+This service is oversubscribed which makes it completely inaccessible and impossible to use. i’d recommend using a different service
+
+Author: DSJ MOTO
+Date: 2 years ago
+Rating: 5 stars
+Very happy with the help I've received from this centre! The staff have been great especially in the pharmacy!!!!
+
+Author: Laiba Arshad
+Date: 2 years ago
+Rating: 5 stars
+An amazing surgery, would definetly recommend to register! Very kind and supportive staff.
+
+Author: Ali Hamza Saghir
+Date: 2 years ago
+Rating: 1 star
+They avoid you and refer you to pharmacy for getting worse we call the surgery practice to book an appointment with the doctor but they try there best to avoid you ….
+
+Author: Gillian Appleby
+Date: 2 years ago
+Rating: 5 stars
+Love the cafe in The Limelight Centre food great
+
+Author: Angie McGibbon
+Date: Edited 2 years ago
+Rating: 1 star
+WorstGP ever. I'm trying to move after being moved here because my practice closed. Virtually impossible to get an appointment. Told if you have a smartphone you need to book via the app. So I downloaded the app and logged on. At 10.45am the app appears not to be working and so I call. 20 mins to get thru on the phone to be told no appointments left and I have to log in to the app at 8am the next day. Here we go again 8.15 app crashes takes a long time to get thru on the phone to be told no appointments left again for that day. Even if I could have one it would have to be a telephone appointment not to see a doctor. How hard can it be. I give up. It's too stressful. I was also referred to the menopause clinic in April but have heard nothing. I mentioned this and was told I had to chase the referral myself. Not very helpful as I've no idea who to call to do this. This GP practice does not care about the patients or want to help them. I will have to try and get transferred. UPDATE 2 years later still shocking. After trying for days to get an appointment get asked to attend the surgery, Seen by a medical student who tells me my ear infection is fine and will clear up on its own. Qualified doctor checks, sees a problem and orders a prescription to be sent to pharmacy downstairs. Go to pharmacy they don't have it - say GP not sent it. Back to GP who say they have sent it to a different pharmacy 45 miles away? Told to call other pharmacy and get it sent here. Do so, other pharmacy don't have it they state it was sent to pharmacy here - the one downstairs from the surgery. Two hours of chasing later, pharmacy downstairs from surgery says they will order it but no idea when it's in to keep calling them. I think the surgery and the pharmacy are competing for who can be the most incompetent , jury's out - it's a close call.
+Practice response date: 4 years ago
+Practice response:
+Dear Angie McGibbon Thank you for you review – I am sorry to hear that you have been faced with difficulty when trying to access Services within the Limelight health & well-being Hub. As a Practice our aim is to resolve access issue for our services users - We have taken your concerns very seriously and are making every effort to ensure that our services users are not faced with the difficulties you have encountered whilst trying to access the Practice appointment services . I would be happy to discuss the issues you have raised, if that would be helpful. Please contact the Surgery on 0161 226 7777 and Ask for the Patient Services manager Best regards Patient Services Manager
+
+Author: Jacqui Freeman
+Date: 2 years ago
+Rating: 5 stars
+Saw Dr Beaumont today she was friendly examined me thoroughly.give advice and reminded me of further appointments I needed to have.
+
+Author: Kevin Gallagher
+Date: Edited 2 years ago
+Rating: 1 star
+I had to come back on here and edit this review with a update. In May 23 I went into this surgery to pick a prescription up they couldn't find it anywhere, after me waiting 20 mins, they asked if I could come back tomorrow and it would be ready no waiting at all. Went back the day the prescription wasn't ready, they asked me to take a seat I refused and walked out telling them we will try again tomorrow so back I went the next day it was ready but not signed by a Dr another 5 mins waiting. In August I filled the online form in at 8am to see a Dr I got a text back to go and see the pharmacist at Ayres Rd chemist, I rang the chemist they knew nothing about it. They told my wife I would have a appointment so I went in to Limelight to see what was going on, I now demanded to see the practice manager she came to speak to me I told her my symptoms and i wanted a cream, I asked can you get a Dr to sign a prescription here now and I don't mind waiting NO, was the answers I can get you a appointment in two weeks she said, I explained I'm away out of the country she then told me go to the walk in centre then. But I was in a medical centre willing to wait. I went to Trafford General waited 3 hours but got sorted. Monday 11th September 23 I woke up with breathing difficulties like some thing was stuck in my neck so I was online to Limelight at 8am sharp, got a text we will contact you within two days, next day I got a online questionnaire to fill in, which again I refused I wand a head to head with a Dr not filling forms in, the receptionist with a attitude rang my wife and told her " if he doesn't fill it in in could hold up his process " I still refused then I got a bullish text it said I have till 5pm to fill it or its a cancellation on your request. I went and registered with another GP practice nearby. I rang my new GP Friday got a ring back Saturday and the prescription sent to the chemist straight away. What a difference. I feel sorry for Limelight patients now I'd advise you all get out. It's a hell hole and staff a very rude. .................................... . Shocking service, I went on the Internet to book a appointment with a Dr's due to a RTA on Monday March 13th only to get a message that someone will contact me on Thursday 16th March three days later in agony and pain, now I have to take four days off work yet I was on that Internet 8am sharp. So where has all Monday morning and Evening appointments gone? Shocking service.
+
+Author: Zayna Mastan
+Date: 2 years ago
+Rating: 1 star
+This practise should be shut down and not allowed to operate by law. They are not qualified to run a surgery where people can go when in need to receive the care in order to recover from their illness. They will refer you to the pharmacy …
+
+Author: Sharkie
+Date: 2 years ago
+Rating: 5 stars
+The place and facilities are great, not too crowded either when I go. Sometimes there is a bit of wait but where isn't? The staff, receptionists and GPs have always been kind...there is pharmacy downstairs, but only cash is acceptable which isn't the best but got used to it ... Happy with the place in general as its near me
+
+Author: Firoza Patel
+Date: 2 years ago
+Rating: 1 star
+Dr' s are patronising . Very reluctant to understand ones reason for contacting.Behave like they are doing you a favour . Very reluctant to deal with hospital letters , almost as if they are not confident in themselves . Not quiet sure what …
+
+Author: Sara
+Date: 2 years ago
+Rating: 1 star
+The worst service that I ever had from a gp. I have been waiting 4 weeks for get an urgent appointment and they change it without my consent. The receptionist are rude. I really don’t recommend this gp.
+
+Author: Kevin Grech
+Date: Edited 2 years ago
+Rating: 1 star
+I tried to make an urgent appointment to see Doctor Grant was put on a triage system told them my serious problems of being sick every time I eat or drink and severe stomach pain, no one got back to me. over the weekend I was taken into …
+
+Author: Neil Thurston
+Date: 2 years ago
+Rating: 5 stars
+I have been with these doctors for several years and I have always found them very helpful and professional.
+
+Author: Bethan Cross
+Date: 2 years ago
+Rating: 1 star
+Rude and unhelpful receptionist (same one every time I’ve been) and so hard to be seen to, no matter how urgent you need to go.
+
+Author: Niky Kasi
+Date: 2 years ago
+Rating: 1 star
+It’s extremely hard to get an appointment here. The AskMyGP service sometimes goes offline even 3 minutes after 8:00. It’s horrible. I have been trying to get an appointment for 3 days and while I am completing the questions the system goes off. They should do something with this issue. It’s not normal to have less than 10 minutes window. What type of healthcare system is this? It shows the lack of interest and care the whole NHS has towards the patients.
+
+Author: B B
+Date: 2 years ago
+Rating: 1 star
+They tell you To go to ask my GP but it's anavalble they just make you run around these people should be reported to cqc bad practice
+
+Author: Marlenka A
+Date: Edited 2 years ago
+Rating: 1 star
+It's a bundle of lazy people with any wise about health. I was there a few times all finished with no diagnosis. For them everything is a virus and you should take paracetamol and drink plenty of water. After three attempts to get help from there I finished with acute sinusitis and antibiotics given from private doctor, for I had to pay. I lost three unpaid weeks at work and still not feeling well, because they don't know what is sinusitis. They even didn't involve me to face to face appointment, I heard it's virus and can take a few weeks. Private laryngologist said a few days more without medicines may finish in hospital with sepsis. Another time I was feeling bad because of deficiency of iron and wit D ( prove in private test I paid for), they made test twice and said I'm fine and don't need anything. When I prove with private test results 'doctor' ask me few times do I have depression. He tried persuade me that I have mental problems, because I asked for help. I asked also receptionist for change my name four times, because they made mistake, after two years they didn't change that still...
+
+Author: Angharad Huw
+Date: 2 years ago
+Rating: 4 stars
+Been with this gp for two years now and have been needed appointments around twice a month due to various undiagnosed issues. Quick, same day appointments/ prescriptions every time I submit an AskMyGp request apart from maybe two times in late summer/autumn 2022. I dislike that I’m given a different doctor nearly every time I have an appointment, but all have been very empathetic, friendly, and focused on finding a solution that works for me. I can see that there’s a lot of negative reviews and there are some organisational things like only being able to book appointments at 8am that are annoying to deal with. It’s frustrating when I have to wait for a callback at an unknown time of day, as in my work I’m unable to use my phone, which results in me missing the doctor’s calls. However, the quality of care is excellent. I’ve had many GPs even call or text me after leaving the appointment to supply extra details or give me a more in depth answer to a question I had during the appointment. This is also the case when they chase up hospital referrals for me so that I don’t have to. Overall I’m very happy with the care I receive at Limelight, but there are definitely things that could be done better, namely the booking system.
+
+Author: Denis Ratclife
+Date: 2 years ago
+Rating: 1 star
+Carol the manager very good and helpfull some staff don't know what they are doing (inexperienced)
+
+Author: John Morrison
+Date: 3 years ago
+Rating: 1 star
+Hopeless. I had 24h heart rate and blood pressure (BP) monitors fitted back in October by Trafford General (TG). Limelight said they didn’t get results for BP from TG and texted their phone number for me to pursue! Despite dozens of attempts leaving messages, no human answered phone till finally today! TG are adamant that they sent all results to limelight in November and I should never have been asked to chase them. TG cannot send results to me but must be run through limelight. TG says they have sent again them there again today. So back to start again. This is amongst the most ridiculous of very many faults by limelight and tipped me over to write. Avoid if can.
+
+Author: Jidge Jilani
+Date: 3 years ago
+Rating: 1 star
+THIS PLACE IS AN ABSOLUTE SHAMBLES!!! The doctors receptionists are soo rude its unbelievable . When you call the Drs you call for a reason and the only response you ever get from these guys is - is “call back at 8am tomorrow morning” . To which I reply- “Ive called for some emergency advice / help please as I've been ILL for over a week and I've self medicated , rested , and followed the nhs websites advice”. The response i received - “call 999 then” . To say im flabbergasted is a sheer understatement . They're that bad they make a 0* place look good . ❌👎🏽❌👎🏽❌👎🏽❌👎🏽❌👎🏽❌👎🏽❌👎🏽❌
+
+Author: Rajander Singh
+Date: 3 years ago
+Rating: 3 stars
+Good
+
+Author: hewa hussain
+Date: 3 years ago
+Rating: 1 star
+hewa hussain3 years ago
+
+Author: Haydn Ruffley
+Date: 3 years ago
+Rating: 1 star
+This place is an absolute disgrace I live local to it and my car charging provider have installed a Charging point there that I pay a subscription for. Rang to check I could use it and was told to return the next day when a very rude woman told me I wasn't allowed to. local hub my arse zero sense of community
+
+Author: Summer Kelly
+Date: Edited 3 years ago
+Rating: 5 stars
+I did put a one star on because I feel at first, especially if moving from a different area outside of Manchester, alot of records become lost. The doctors didn't know what was happening with me, so for the first year of being under this gp it was a nightmare as I just assumed everything was there and it was not. However I can't fault them, especially the female doctors. Covid made it very difficult for them, when I did get in and eventually was seen i expressed my anger and frustration with this gp what many others share. They was apologetic but they didn't just say sorry they did something about it. I have been referred to all of the places I needed to be, have many call backs and voicemails these days even when I'm the one who isn't as in contact due to just being so sick. I feel as if I can finally say these doctors do care about me, they've looked in detail about me now, helped me get support with physical and mental health and also supported me with the process of pip and passing evidence over. Again, improvement comes with time. There are still faults but you can see the improvement coming along from covid so well done to the team
+
+Author: ammaar alam
+Date: Edited 3 years ago
+Rating: 1 star
+Im giving one star because Google won't allow me to give anything less. One of the most unhelpful, time-wasting, and uncaring practises out there, especially with the staff that sit at reception. Everytime I call in, I get messed around, told to email, use the app etc which doesn't always work or display the name of the doctor I want to speak to. When I inform the receptionist of this, she just says to try again later as if I've got nothing else to do than spend a whole week trying to book an appointment for a problem that has left me in severe pain. I then ask if she can at least put in a request for repeat medication that I've been on for several years; she again refuses saying I need to use the app. I explain that I've tried but I had several problems last time which left me without medication for a long time as the request wasn't going through for some reason: she says there's nothing she can do. There have been several instances when I've been messed around and been waiting for MONTHS just to get my repeat medication due to the negligence of the receptionists who have either delayed, forgotten or just downright ignored my requests for repeat meds (this was when it had to be given by hand). I've been waiting for MONTHS for hospital appointments which were delayed because they didn't pass on my messages to the doctor; I could go on and on but the reality is you can expect better service at 99p chickenshop takeaway. If you can, AVOID!!
+
+Author: DaleyMovements
+Date: 3 years ago
+Rating: 5 stars
+DaleyMovementsLocal Guide · 67 reviews3 years ago
+
+Author: Sriparna Mody
+Date: 3 years ago
+Rating: 3 stars
+I was not happy with this surgery. Firstly telephone call prescription did not arrive at pharmacy couple of times Once I had to take private consultation with MRI and blood test. It was vit D deficiency and they did all other test not that. I am so unwell today did not get appointment and had to call nhs. Though received call from GP and so increasing rating to 3
+
+Author: Jawad S.
+Date: Edited 3 years ago
+Rating: 1 star
+They encourage you to use the askmygp service to book appointments or calls with GPs however they are often offline even on the service times listed. Easier to wait on A&E rather than trying to get in hold of a gp that might actually physically check you.
+Practice response date: 4 years ago
+Practice response:
+Dear Jawad S, Thank you for you Feedback I am sorry to hear that you have been faced with difficulty when trying to access Services within the Limelight health & well-being Hub. As a Practice our aim is to resolve access issue for our services users - We have taken your concerns very seriously and are making every effort to ensure that our services users are not faced with the difficulties you have encountered whilst trying to access the Practice appointment services . I would be happy to discuss the issues you have raised, if that would be helpful. Please contact the Surgery on 0161 226 7777 and Ask for the Patient Services manager Best regards Patient Services Manager
+
+Author: Subhan A
+Date: 3 years ago
+Rating: 1 star
+No good
+
+Author: Ahmad S
+Date: 3 years ago
+Rating: 1 star
+I wouldn’t recommend registering with this clinic, even if you live next door
+
+Author: Abdul Sattar
+Date: 3 years ago
+Rating: 5 stars
+Five stars only for Nurse Liz's She is wonderful whenever I visited her she welcomed with kindness so polite and professional she even arranged a emergency appointment for my surgery wound dressing and gave me full attention I wish I can gave her more then 5 stars Apart from her GPs a little bit rude and same with reception
+
+Author: basel zarour
+Date: 3 years ago
+Rating: 2 stars
+Nice Place but always noisy ,no quiet place
+
+Author: T J
+Date: 3 years ago
+Rating: 5 stars
+Michelle at the front desk helped me out immediately when I called! Thank you Michelle! You helped me out in ways I can’t even explain that day! Thank you for making the process so easy and seamless!!
+
+Author: Kerri Davies
+Date: 3 years ago
+Rating: 1 star
+Kerri Davies2 reviews3 years ago
+
+Author: Amgad Moktar
+Date: 3 years ago
+Rating: 1 star
+Amgad Moktar2 reviews · 2 photos3 years ago
+
+Author: Saint Christopher Cover
+Date: 3 years ago
+Rating: 1 star
+Will leave a sour taste in your mouth. Really a 0 rated establishment. You are better off going to the clergyman, obeahman or shaman for medical assistance. If you can get help elsewhere please do so. Just one big experiment of junior doctors trialing and erroring, mostly erroring though. AVOID at all cost!!!
+
+Author: Mildred Komane
+Date: 3 years ago
+Rating: 1 star
+Worst GP ever!What's the point of having ask my gp if it's always offline?Clueless receptionists,can't wait to change my gp!!
+
+Author: Val Wood
+Date: 3 years ago
+Rating: 1 star
+Worst ever GP with Unprofessional untrained and rude staff
+
+Author: anna billany
+Date: 3 years ago
+Rating: 1 star
+The most useless GP I’ve ever had, do not care at all about their patients. I’ve had so much bother trying to get in contact with them and the askmyGP service is completely useless. They don’t follow up on anything either. I’ve been struggling really badly and I honestly don’t feel at all supported by them.
+
+Author: Nuala Ryan
+Date: 3 years ago
+Rating: 1 star
+Ask my GP what's the point of having it when it's always offline. I want to ask a simple question without requiring an appointment. I then ring up to be told to ring back at 8am. …
+
+Author: Ijaz Ahmad
+Date: 3 years ago
+Rating: 1 star
+Don’t care about the patient. Impossible to get a appointment. I sent request this morning through askmy GP for video call appointment it went through fine but Patient Co-Ordinator completed the request with out speak to patient received …
+
+Author: usama bharucha
+Date: 3 years ago
+Rating: 1 star
+Can never book an appointment, app is dreadful and never take it over the phone. They clearly have a 1 star rating for a reason.
+
+Author: Nadia Armstrong
+Date: 4 years ago
+Rating: 2 stars
+Absolutely impossible to get an appointment, I’ve tried all week and by a few minutes after 8AM they’ve all gone. Reception staff curt on the phone. Just not a nice experience at all. …
+
+Author: Joshua
+Date: 4 years ago
+Rating: 4 stars
+Always had positive experiences here. The nursing team are very attentive.
+
+Author: Kevin Paddy
+Date: 4 years ago
+Rating: 1 star
+You can never get on the anyone, ask my GP service is always unavailable and when you call they are always booked took me 3 weeks just to get an appointment.
+
+Author: ambrina paul
+Date: 4 years ago
+Rating: 1 star
+Dear Ambrina, Thank you for your Feedback - … More
+Practice response date: 4 years ago
+Practice response:
+Dear Ambrina, Thank you for your Feedback - … More
+
+Author: Wahida Sarwari
+Date: Edited 4 years ago
+Rating: 1 star
+They don’t even deserve a one star, if you are a new patient I wouldn’t recommend this practise as it’s horrible. They don’t care about their patients whenever you call to book an appointment they tell you to call at 8 in the morning. 8 in …
+Practice response date: 4 years ago
+Practice response:
+They don’t even deserve a one star, if you are a new patient I wouldn’t recommend this practise as it’s horrible. They don’t care about their patients whenever you call to book an appointment they tell you to call at 8 in the morning. 8 in … More
+
+Author: Sanaa Ahmed
+Date: 4 years ago
+Rating: 1 star
+Came on askmygp at the given times to put in a request 8am and by the time I was finished writing my request and tried to submit it, it said requests are currently unavailable because they had put the system offline. Can’t even book emergency appointments anymore they have a reception telephone number who aren’t very helpful either because their answer to all appointment queries are you need to do it on ask my gp or just go a&e or walk in centre.
+Practice response date: 4 years ago
+Practice response:
+Dear Sanaa, Thank you for taking the time to share your review, I am sorry that it was not a positive one, and I sincerely regret any disappointment you may have experienced. It is never our intention to make anyone feel this way, please be assured that we take your feedback very seriously and will be looking into what happened during the period when you have been unsuccessful in getting an appointment with one of our Doctors. As a Practice our aim is to resolve access issue for our services users - I would be happy to discuss the Concerns you have raised, if that would be helpful. Please contact the Surgery on 0161 226 7777 and Ask for the Patient Services manager. Best regards Patient Services Manager
+
+Author: Rebecca Neale
+Date: 4 years ago
+Rating: 5 stars
+Doctor Mashal was very understanding and listened to my concerns. It was easy to tell that he cared about what I had to say and that's a really reassuring trait to come across in a Doctor. The AskmyGp system is a little hit-or-miss and you do have to make a request as soon as it goes online at 8am to ensure you get an appointment but I expected that due to business. I would have also preferred to have had a time slot allocated so that I was sitting and waiting for a call all day but other than that, I can't fault the treatment.
+Practice response date: 4 years ago
+Practice response:
+Dear Rebecca, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Ali Almubarky
+Date: 4 years ago
+Rating: 1 star
+I don’t like the GP because all doctors are don’t helpful. Everyday i contact them and they said we call you back soon as possible but they didn’t. Dr Rehana Said I tried to called you many times but she didn’t. She is liar
+
+Author: Maya Kha
+Date: 4 years ago
+Rating: 1 star
+Such a useless place.. I have been transferred to this awful place…never had a chance to be seen by a dr… if It deserves a no star review… NOT RECOMMENDED
+Practice response date: 4 years ago
+Practice response:
+Dear Maya, Thank you for taking the time to share your review, I am sorry that it was not a positive one, and I sincerely regret any disappointment you may have experienced. It is never our intention to make anyone feel this way, please be assured that we take your feedback very seriously and will be looking into what happened during the period when you have been unsuccessful in getting an appointment with one of our Doctors. As a Practice our aim is to resolve access issue for our services users - I would be happy to discuss the Concerns you have raised, if that would be helpful. Please contact the Surgery on 0161 226 7777 and Ask for the Patient Services manager. Best regards Patient Services Manager
+
+Author: Faryal Rauf
+Date: 4 years ago
+Rating: 1 star
+Worst surgery ever. Staff is pathetic, not helpful at all. Online surgery request portal is opened from 7 till 8:30(so called) and I find it close Always. They are so annoying and irritating. Please never go for them. I'm changing my gp too
+Practice response date: 4 years ago
+Practice response:
+Dear Karachi Kitchen Thank you for your Feedbackl I am sorry to hear that you have been facing difficulties with regards to accessing Services @The Limelight Health& Well-being Hub. Our Aim as a Practice is to resolve access issue concerning our services user. We welcome all feedback from our services users, The data collected helps the practice to improve and develop areas of the practice which may be causing some difficulties to our Services users We take your concerns very seriously and are working to ensure the service delivered by the practice is accessible Monday to Friday within working hours. Many Thanks Patient Services manager Limelight Health & Well being Hub
+
+Author: Agne Butenaite
+Date: 4 years ago
+Rating: 2 stars
+Agne Butenaite3 reviews4 years ago
+
+Author: Ocean
+Date: Edited 4 years ago
+Rating: 5 stars
+I had the best service so far, very easy to get a call back from the GP on the same day. I talked with GP three times in 2 months via askmygp app. Received a call back within an hour every time I needed to talk or opinion from the GP. Dr Louise Grant was very sympathetic on the phone and solve my problem straight away. Thanks, Dr. Grant, Again I had the best service from another GP's Dr. Clothier & Male HCA. V Sharma
+Practice response date: 4 years ago
+Practice response:
+Dear Ocean Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Mohammad Omair
+Date: 4 years ago
+Rating: 3 stars
+Dear Mohammed Omair, Thank you for your rating the service. Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+Practice response date: 4 years ago
+Practice response:
+Dear Mohammed Omair, Thank you for your rating the service. Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Solomen Ahmed
+Date: 4 years ago
+Rating: 2 stars
+I like the doctors in limelight, I don't like the management because whenever I tried to book an appointment for my results, I have to use askmygp app online to book. It's always offline in the morning and it's impossible to book a request appointment online. I tried to book in by telephone, but the receptionist are not being that helpful whenever I explained to them about askmygp on limelight website is offline and I'm only asking for my results. I'm not happy with this service and that's why I gave it two stars
+Practice response date: 4 years ago
+Practice response:
+Dear Solomen Ahmed , Thank you for you review I am sorry to hear that you have been faced with difficulty when trying to access Services within the Limelight health & well-being Hub. As a Practice our aim is to resolve access issue for our services users - We have taken your concerns very seriously and are making every effort to ensure that our services users are not faced with the difficulties you have encountered whilst trying to access the Practice appointment services . I would be happy to discuss the issues you have raised, if that would be helpful. Please contact the Surgery on 0161 226 7777 and Ask for the Patient Services manager Best regards Patient Services Manager
+
+Author: Mike Archer
+Date: 4 years ago
+Rating: 1 star
+Mike Archer4 years ago
+
+Author: Mudassar Bhatti
+Date: 4 years ago
+Rating: 1 star
+Mudassar BhattiLocal Guide · 20 reviews · 4 photos4 years ago
+
+Author: wedi okubu
+Date: Edited 4 years ago
+Rating: 1 star
+Dear Wedi Okubu, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, We welcome all feedback from our services users , The data collected helps the practice to improve and develop areas of the practice which may be causing some difficulties to our Services users . Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+Practice response date: 4 years ago
+Practice response:
+Dear Wedi Okubu, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, We welcome all feedback from our services users , The data collected helps the practice to improve and develop areas of the practice which may be causing some difficulties to our Services users . Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Andrei Gabriela Elena
+Date: 4 years ago
+Rating: 1 star
+I try every day to acces ask mygp and is not ok because is off every moment if I call for an appointment tell me to go on ask my gp.I am at this gp because mine was closed and send my medical report here I have big problem whit my back whit my spine and they dont care .I ask for a imr result I made this in May and dont tell me nothing .I think this centre is not good to help seek people
+Practice response date: 4 years ago
+Practice response:
+Dear Miss Andrei, Thank you for you review – I am sorry to hear that you have been faced with difficulty trying to access the Ask My GP. As a Practice our aim is to resolve access issues for our services users - if you are unable to access the services due to it being offline this is because we have reached Capacity for the day and all requests have been fulfilled for the day. In a way of trying to resolve this issue - May I suggest you try accessing the Ask My GP on a Monday - we operate extended hours 07.30 – 18.30 the Ask My GP platform is Live to take request from 7.30am. With regards to your health queries please contact a member of the reception team - where your request for test results can be actioned. Best regards Patient Services Manager
+
+Author: veronika doubková
+Date: 4 years ago
+Rating: 4 stars
+Dear Veronika, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, it is always appreciated good feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+Practice response date: 4 years ago
+Practice response:
+Dear Veronika, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, it is always appreciated good feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: J B
+Date: 4 years ago
+Rating: 1 star
+The friendly and professional receptionsist all seem to be disappearing within months of arrival.. This a bad reflection on obsinate management who are bullying staff. It is becoming a no go zone, find another practice 🤔
+Practice response date: 4 years ago
+Practice response:
+We take bullying very seriously and if you feel a staff member has been bullied I would encourage you or advise the staff member to address this with the management. This is a platform for patient comments to help us improve our service and not for hear say comments when nothing has been officially investigated.
+
+Author: Christopher Cover
+Date: 4 years ago
+Rating: 1 star
+An abject waste of time to use this practice. None of your concerns ever seem to be reslove, ever! Poor communication service, even in the digital age.
+Practice response date: 4 years ago
+Practice response:
+Dear Christopher Cover, Thank you for your review – I am sorry to hear that you have been facing difficulties with regards to accessing Services @The Limelight Health& Well-being Hub. Our Aim as a Practice is to resolve access issue concerning our services user. We welcome all feedback from our services users, The data collected helps the practice to improve and develop areas of the practice which may be causing some difficulties to our Services users We take your concerns very seriously and are working to ensure the service delivered by the practice is accessible Monday to Friday within working hours . Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Tim Bourne
+Date: 4 years ago
+Rating: 2 stars
+Dear Tim Bourne, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+Practice response date: 4 years ago
+Practice response:
+Dear Tim Bourne, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Nora Ryan
+Date: 4 years ago
+Rating: 1 star
+Dear Nora Ryan, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+Practice response date: 4 years ago
+Practice response:
+Dear Nora Ryan, Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Marc Memphis
+Date: 4 years ago
+Rating: 1 star
+This place should either be shut down or have it ran by somebody else. Unfortunately due to me being on a waiting list I can't change GPs. A waiting list that was supposed to be 12months turned to 24months quick. Reception staff are dependably awful and it seems any Dr worth their salt move on pretty quickly. Getting an appt or repeat prescription is never simple, ask my GP doesn't help either. I can quite easily say that being here has exacerbated any issue I've had, physically and mentally. This l place seriously needs to be investigated.
+
+Author: Soze THC
+Date: 4 years ago
+Rating: 1 star
+This place should either be shut down or have it ran by somebody else. Unfortunately due to me being on a waiting list I can't changen GPs. A waiting list that was supposed to be 12months turned to 24months quick. Reception staff are dependably awful and it seems any Dr worth their salt move on pretty quickly. I can quite easily say that being here has exacerbated any issue I've had, physically or mentally. This l place seriously needs to be investigated. I'm constantly having to chase prescriptions which I have been promised have been sorted - this isn't a one off thing unfortunately either. I also find it highly questionable that I couldn't leave a review on the NHS site, seems my 3 functional emails aren't recognised unless it's good news.
+Practice response date: 4 years ago
+Practice response:
+I am sorry to hear about your concerns. I would like the opportunity to investigate and offer you resolutions. Please feel free to contact me at surgery.
+
+Author: Shakeb H
+Date: 4 years ago
+Rating: 1 star
+Very rude and disrespectful staff, every time I visit this place I get treated like a slave or as if I owe any money. I do not know what they think of themselves. unfortunately I am a registered patient at this place because this place is the only place close to me. people who are in the reception on the second floor are just like a robot: they answer to your question with a "Yes" or "No" and then they just walk away from you without solving your problem.
+Practice response date: 4 years ago
+Practice response:
+Dear Ahmad. I am sorry you have had this experience. We aim to offer a high quality customer service and we are sorry you did not receive this. I am happy to discuss this further. Please feel free to contact me at the surgery at your convenience. I would be more than happy to listen to your concerns and look at solutions to eradicate this kind of experience.
+
+Author: Chimwemwe Chirwa
+Date: 5 years ago
+Rating: 1 star
+Chimwemwe Chirwa7 reviews · 3 photos5 years ago
+
+Author: Jacqui Freeman
+Date: 5 years ago
+Rating: 5 stars
+I have used the ask my gp service over the last 6 months and its excellent. You leave a message on ask my gp and a doctor calls you back that day big improvement for the surgery. The doctors are great. The problem before with the telephone line is solved. You can now call and the waiting time to speak to someone is amazing no more frustration. Dr grant is amazing.
+Practice response date: 4 years ago
+Practice response:
+Thank you for your review - Thank you for taking the time to rate the service you have received here at the Limelight Health & well -being Hub, we appreciate all feedback from our services users. Thank you very much from the team @ Limelight Health & well-being Hub Best regards Patient Services Manager
+
+Author: Dawn Bryan
+Date: 6 years ago
+Rating: 1 star
+Poor service, ordered an urgent prescription to be picked up by 5.30pm that day and it hadn't been processed.
+Practice response date: 5 years ago
+Practice response:
+We are sorry you experienced this as we do our utmost to ensure patient medication is received in a timely manner. Other factors may have delayed this request but in order to prescribe safely, a strict protocol needs to be followed. It would be helpful to know why it was requested as urgent so we can address any issues and update our protocols if needed. Happy to discuss further.
+
+Author: Martin Locke
+Date: 6 years ago
+Rating: 1 star
+Forget ever getting an apartment at this GP. You have to call at 8am to get a same day appointment but if you try the phone will ring for a few minutes then they will hang up on you. When you try to call back all you get is an engaged tone, after about 45mins or so you might actually get to speak to someone who will say all same day appointments are gone call back tomorrow or try online. This is complete nonsense because the online service does not offer emergency appointments, this GP is pathetic find somewhere else if you can.
+Practice response date: 5 years ago
+Practice response:
+We are sorry you had this experience but are pleased to inform you that our appointment system and process changed on 3/3/20. We now ask patients to contact via the AskMyGP link on our website. https://www.limelighthealthhub.nhs.uk/. We will contact you back on the same day. From recent patient feedback, this has proved to be a more effective way of accessing our services. Hope these comments are helpful.
+
+Author: Śââďãq otto
+Date: 6 years ago
+Rating: 1 star
+Śââďãq otto6 years ago
+
+Author: Khaleel Mohammed
+Date: 6 years ago
+Rating: 1 star
+This is worst GP I have ever seen in my carrier. Receptionist staff are very arrogant not trained well. Guys if possible try to move to other GP as soon as possible. Because of there trial n error it will damage our health They don't care the patient feeling.
+
+Author: ahmed suleman
+Date: 6 years ago
+Rating: 1 star
+ahmed suleman1 review6 years ago
+
+Author: Ayman Alqassam
+Date: 6 years ago
+Rating: 1 star
+Ayman Alqassam2 reviews6 years ago
+
+Author: m.j c
+Date: 6 years ago
+Rating: 1 star
+Wasted a lot of time today. need a hep b jab and had rung surgery on a previous day to arrange it, no return call as promised. My wife rang surgery again this morning and nurse said could I get there in 5 minutes time for the injection, said that I could get there in a bout 15 minutes as I live about half a mile away .so I got there in 15 minutes, checked in, waited ages to see the nurse only to be told a) that I couldn't have jab due to medication I was on then b) that they have no obligation to give me jab for occupational health purposes. I don't know why I couldn't have been told all this on the phone, surgeries are too quick to talk about patients wasting their time, today clearly, the boot was on the other foot.
+Practice response date: 6 years ago
+Practice response:
+I am sorry that you had a wasted journey and appointment. We did contact you as I can see that you were contacted by our practice nurse one day before your appointment was made. A message was left on your answer phone advising you that we could not give Hep b vaccines for occupational purposes. I am sorry that receptionist booked you an appointment the day after the nurse left the message on your mobile, without checking your notes. This would have saved you wasted time and we could have given that appointment to someone else. All staff have been updated with our Hep B policy. Hep B is only given to patients with renal failure. If Hep B is required for travel purposes then this will incur a private fee. I hope I have responded to your concerns but always happy to answer any further queries you may have.
+
+Author: Pijus Jonusas
+Date: 6 years ago
+Rating: 1 star
+GP appointment waiting times are insanely long. Very difficult to reach by phone. Have been disappointed many times!
+
+Author: Mubean Saba
+Date: 6 years ago
+Rating: 1 star
+Mubean Saba1 review6 years ago
+
+Author: Tipu M
+Date: 6 years ago
+Rating: 1 star
+My wife's appointment with the midwife was at 9:15am and she waited for over 1 hour. Midwife didn't turn up for work and reception didn't have any clues about it either. Sooo disappointed with the midwife
+
+Author: Daniel Doorbar
+Date: 6 years ago
+Rating: 1 star
+Wish I could post a 0. I'm on hold for at least 10 minutes every time I call for an appoint (i've visited them 2 times and i'm only getting an appointment tonight). I went in last Friday as we had arranged an "unregistered patient" appointment since i've been in need for a doctor for a while. I get there for my allocated appointment time and had to wait an hour before being seen. This progresses to her trying to find me on the system and when I said I wasn't registered i got a look from them as if I was stupid for even showing up (poor poor service). We then said we would rearrange for Monday (tonight) to ensure all registration had been completed. Just called to confirm my booking was today and they said my appointment was on Tuesday. When I said that wasn't the case they had the audacity to repeat (the system says this) 3 or 4 times.. only after 10 minutes they change me appointment to today, and this was done with them sighing over the phone as if I've made their life difficult. This is unacceptable even for someone in sales, let alone someone who works for the NHS. I've had to temporarily register to this practice as it's the only one in my area that seems to have the highest rating, and that's still only 2.1 stars out of 5... Extremely disappointed. You're better off going to a walk in centre!
+
+Author: Bismillah98
+Date: 6 years ago
+Rating: 1 star
+What a horrible place, so called GP practice this is! I wish I could give it minus 5 stars!! the receptionists are so uncaring and combative, it’s near impossible to see a GP. What do we pay our taxes for if we can’t even get the care that we need! I hate going to this place!
+
+Author: Artie
+Date: 7 years ago
+Rating: 1 star
+What a ridiculous place! After 4 months I'm still not able to get my repeat prescription, and nobody is calling back even though promised they will. Unable to ever get in touch with the GP - Nobody is picking up the phone (I'm on hold for over 40 minutes now). Bad, bad, bad.
+
+Author: Ouwais Data
+Date: 7 years ago
+Rating: 1 star
+Very bad service, also when your name is displayed there's no beep or a sound to draw your attention towards the screens especially when your distracted by your children, they expect you to glue your eyes on the screen if you miss it the Dr will come out and shout at you why didn't you check the screen it happened when my son turned one. Really not cool and they should think about parents who come with children. Not even child friendly surgery.
+
+Author: Sally Daly
+Date: 7 years ago
+Rating: 1 star
+I've tried to call three times today and had to put down . Now been on hold for 9 min .. Not good enough.

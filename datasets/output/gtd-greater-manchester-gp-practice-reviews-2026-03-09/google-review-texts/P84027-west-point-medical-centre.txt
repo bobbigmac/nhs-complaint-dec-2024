@@ -4,24 +4,43 @@ Postcode: M19 2AF
 Google Maps title: West Point Medical Centre
 Google rating: 3.4
 Google review count: 149
-Google Maps URL: https://www.google.com/maps/place/West+Point+Medical+Centre/@53.445264,-2.1977809,17z/data=!4m8!3m7!1s0x487bb3d01e28e965:0xe41d1d27908c0443!8m2!3d53.445264!4d-2.1977809!9m1!1b1!16s%2Fg%2F1thmdz0g?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/West+Point+Medical+Centre/@53.445264,-2.2003612,17z/data=!4m8!3m7!1s0x487bb3d01e28e965:0xe41d1d27908c0443!8m2!3d53.445264!4d-2.1977809!9m1!1b1!16s%2Fg%2F1thmdz0g?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 149
+Owner replies collected: 100
+Raw review responses captured: 15
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84027-west-point-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Munia kabir razkanya
-Date: Edited 3 days ago
+Date: Edited a week ago
 Rating: 5 stars
 Dr. Aldred is really a humble person.Very satisfied with his treatment and behaviour. And also very happy with Nurse Emma. It's very hard to find my vein for blood. But she never missed any. Such an expert and humble person.
+Practice response date: Edited 5 days ago
+Practice response:
+Dear Munia, Thank you so much for taking the time to leave us a review! We are delighted to hear that you had a positive experience with Dr Aldred. Your kind words mean a lot to our team and help us continue to provide the best care possible. If there's ever anything more we can do for you, please don't hesitate to let us know. Kind regards, Practice Manager
 
 Author: Saf
-Date: 5 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 Dr Enzo Aldred was very polite in his manner and very thorough. He listened closely and patiently to my son’s symptoms and carried out all necessary checks. Then diagnosed his condition and prescribed a treatment plan forthwith. He took his time and we did not feel rushed at all. Came away having had a very positive consultation. Many thanks to Westpoint Surgery.
+Practice response date: 5 days ago
+Practice response:
+Dear Saf, Thank you for your five star review. We are pleased to hear that you had a positive experience with Dr Enzo Aldred. It is important to us that patients feel listened to and receive careful and thorough care. We are glad that you and your son felt comfortable during the consultation and that the appointment was helpful. Your kind feedback will be shared with Dr Aldred and the team. Thank you for taking the time to share your experience with Westpoint Surgery. Yours sincerely, Practice Manager
+
+Author: Aqsa Hussain
+Date: 2 weeks ago
+Rating: 5 stars
+Dr Aldred was absolutely amazing. He listened and was very friendly probably one of the best doctors we have seen at Westpoint
+Practice response date: 5 days ago
+Practice response:
+Dear Aqsa, Thank you so much for your wonderful feedback. We are delighted to hear that Dr Aldred provided such a positive experience and that you felt listened to and well cared for. We will be sure to pass your kind comments on to him, it will mean a lot to know his care and friendliness made such a difference. Thank you for taking the time to share your experience with us. Your sincerely, Practice Manager
 
 Author: Nimra Raja
-Date: 5 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 Dr Aldred is a very nice, kind doctor and helped me out with the health issues I had going on and didn’t make me feel like my health wasn’t taken care of really appreciate his help and hard work. Never disappointed by the service of WPMC☺️
 
@@ -29,33 +48,1014 @@ Author: Gary Osborne
 Date: a month ago
 Rating: 4 stars
 Been a patient here a long time and thankfully rarely have to visit as I am well ! Had to though yesterday to reception to book an appt and it was like a breath of fresh air staff kind polite and efficent and the open office was I could see happy and working together atmospheres mean a lot and this one reassured me . Only reason its not a 5 star is calling for an appt had tried everyday at 8 to be in a long line and not being able to be offered appt thats demand I know but if your working and day appts are hard some later appts might be kept free to support ?
+Practice response date: 5 days ago
+Practice response:
+Dear Gary, Thank you for taking the time to leave such a thoughtful review and for being a patient with us for many years. We're really pleased to hear that your recent visit to reception was a positive experience and that you found our team kind, polite, and efficient. Creating a supportive and welcoming environment for both patients and staff is very important to us, so your comments mean a lot. We also appreciate your feedback regarding the difficulty in getting through by phone and the availability of appointments. We understand how frustrating this can be, especially for patients who are working during the day. Your suggestion about later appointments is very helpful, and we will certainly take this feedback into consideration as we continue to review and improve our appointment system. Thank you again for your continued support and for sharing your experience with us. Yours sincerely, Practice Manager
 
 Author: Enrico Van
 Date: 2 months ago
 Rating: 5 stars
 Friendly staff and the Doctors always has found the solution for my illness or problems so far.. Thank you all!
+Practice response date: 5 days ago
+Practice response:
+Dear Enrico, Thank you so much for your kind words and 5-star review! We’re delighted to hear that you’ve had positive experiences with our friendly team and that our doctors have been able to help with your health concerns. Your feedback means a lot to us and motivates us to continue providing the best care possible. Thank you for your trust and support! Yours sincerely, Practice Manager
 
 Author: Attiqua Afzaal
 Date: 2 months ago
 Rating: 5 stars
 Very helpful and cooperative staff and doctors. Neat and clean GP surgery .
+Practice response date: 2 months ago
+Practice response:
+Dear Attiqua, Thanks for your lovely feedback! We really appreciate your kind words about our staff and doctors, and we are happy to know you find our surgery neat and welcoming. Your sincerely, Practice Manager
 
 Author: mahnoor sohail
-Date: Edited 2 months ago
+Date: Edited 3 months ago
 Rating: 5 stars
 Amazing service from Dr Aldred. Best doctor. Hope to have him again. He listened to be carefully and took appropriate action which I felt like other doctors didn’t. Thank you so much Dr Aldred.
+Practice response date: Edited a year ago
+Practice response:
+Dear Miss Sohail, We take all feedback seriously and are committed to providing excellent care and service. If you have any concerns regarding the service we provided to you, please feel free to raise your concerns through our practice website, and we will address them. Thank you. Practice Manager WPMC
 
 Author: Roots Wellblessed
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
 He showed interest in my problems and listened to me.
+Practice response date: 2 months ago
+Practice response:
+Dear patient, Thank you for your positive review. We are pleased to hear that you felt listened to and supported. Kind regards, Practice Manager
 
 Author: Noor Mohmand
 Date: 3 months ago
 Rating: 1 star
 Very rude and unprofessional receptionist . They have no manners how to speak to their patients. 😭😭😭😭😭😭 …
+Practice response date: 2 months ago
+Practice response:
+Dear Noor Thank you for your feedback. Our staff follow strict professional standards, and we take patient concerns seriously. Please contact the practice directly to address any issues formally and confidentially. Your sincerely, Practice Manager.
+
+Author: Shammi Chy
+Date: 4 months ago
+Rating: 1 star
+I even don’t wanted give one star full stop very rude stuff and long long waiting for appointment 😡😡😡😡😡😡😡😡😡 …
+Practice response date: Edited 2 months ago
+Practice response:
+Dear Chy, Thank you for taking the time to share your concerns. We are sorry you felt let down. We have received a lot of positive feedback recently about our team and the progress we have made, but we do understand that NHS services can experience longer waiting times because of high demand. We are committed to supporting patients as best we can within these pressures. Your feedback will be reviewed so we can continue to improve. Yours sincerely, Maulik shah Practice Manager Practice Manager
 
 Author: Zunaira
 Date: 4 months ago
 Rating: 5 stars
 Thank you for your positive review. We appreciate you taking the time to share your feedback.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+
+Author: K Mc
+Date: 4 months ago
+Rating: 5 stars
+I recently left my previous doctors due to being unhappy with the waiting times and communication. Since moving to West Point medical practice I have had 3 appointments and I’ve been really happy with the service. Easy to make appointments, feel heard by the doctors, and waiting times are reasonable for a busy practice.
+Practice response date: 4 months ago
+Practice response:
+Dear Patient, Thank you for sharing your experience. We are so pleased to hear that you have been happy with the service since joining West Point Medical Practice. It is great to know you have found it easy to make appointments, felt heard by our doctors, and experienced reasonable waiting times. We truly appreciate your feedback and are glad you are feeling well supported. Your sincerely, Maulik Shah Practice Manager
+
+Author: Henna Shafqat
+Date: 5 months ago
+Rating: 5 stars
+Lovely doctor very kind caring and compassionate, great at his job.
+Practice response date: 4 months ago
+Practice response:
+Dear Henna, Thank you for your wonderful feedback. We are delighted to hear that you found the doctor kind, caring, and compassionate. We truly appreciate you taking the time to share your positive experience. Your sincerely, Maulik Shah Practice Manager
+
+Author: Ramsha Ahmed
+Date: 5 months ago
+Rating: 5 stars
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+
+Author: Sam
+Date: Edited 5 months ago
+Rating: 5 stars
+Excellent service, well mannered, very supportive 👏 My hole family is registered with westpoint medical centre from last 20y. Mr & my family members are certainly happy and satisfied with practice 😊. All the doctors are very friendly and caring. They always willing to help and support. They always follow-up with medication 💊 and referrals. Highly recommend this practice to everyone.
+Practice response date: a year ago
+Practice response:
+Dear Sam, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Faiza Rana
+Date: 5 months ago
+Rating: 5 stars
+Very helpful listened to my problems. Checked me with care and patience. I was very happy with her
+Practice response date: 4 months ago
+Practice response:
+Dear Faiza, Thank you for your positive review. We are happy to know you felt well cared for and that your appointment was handled with patience and understanding. Your sincerely, Maulik Shah Practice Manager
+
+Author: Noman Latif
+Date: 5 months ago
+Rating: 5 stars
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+
+Author: Ali
+Date: 6 months ago
+Rating: 1 star
+Some of the reception staff has been really rude to me
+Practice response date: 4 months ago
+Practice response:
+Dear Ali, Thank you for sharing your feedback, and we are very sorry to hear about your experience with our reception team. This is not the standard of service we aim to provide. We appreciate you bringing it to our attention, and we will look into this to ensure it is addressed. Thank you for giving us the opportunity to improve. Your sincerely, Maulik Shah Practice Manager
+
+Author: Emma Ferguson
+Date: 6 months ago
+Rating: 5 stars
+Dr Enzo Aldred was the best GP I’ve met. He was caring, attentive, knowledgeable and pro active. What a breath of fresh air. Unfortunately he is a locum - perhaps the practise could keep him on. Would be foolish not to given how amazing he is!
+Practice response date: 4 months ago
+Practice response:
+Dear Emma, Thank you so much for your wonderful feedback. We are happy to hear that Dr Enzo Aldred provided such a caring and attentive experience. We truly appreciate you taking the time to share your thoughts. Your kind comments will be passed on to Dr Aldred and the team. Your sincerely, Maulik Shah Practice Manager
+
+Author: Charalambos Hambis
+Date: 6 months ago
+Rating: 5 stars
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+
+Author: Qazi Rayyan
+Date: 6 months ago
+Rating: 5 stars
+Dr Enzo Alfred was really nice and helpful
+Practice response date: 4 months ago
+Practice response:
+Dear Qazi, Thank you for your lovely feedback. We are delighted to hear that Dr Enzo Aldred was able to help and provided a positive experience. We truly appreciate you taking the time to share this Your sincerely, Maulik Shah Practice Manager
+
+Author: Shakira Hamid
+Date: 6 months ago
+Rating: 5 stars
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+
+Author: Adele Rattenbury
+Date: 6 months ago
+Rating: 5 stars
+Felt listened to and the Dr made some plans to investigate in a timely thorough manner.
+Practice response date: 4 months ago
+Practice response:
+Dear Adele, Thank you for your kind feedback. We are glad to hear you felt listened to and that the doctor’s plans were helpful. We appreciate you taking the time to share your experience. Your sincerely, Maulik Shah Practice Manager
+
+Author: babar hussain
+Date: Edited 7 months ago
+Rating: 5 stars
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive review. We appreciate you taking the time to share your feedback.
+
+Author: Sana Majid
+Date: 8 months ago
+Rating: 5 stars
+Dr Aldred is very kind and coaprative.
+Practice response date: 8 months ago
+Practice response:
+Dear Sana, Thank you for your thoughtful review. We're pleased to hear that you had a positive experience with Dr. Aldred. Your feedback is greatly appreciated. Your sincerely, Maulik Shah Practice Manager
+
+Author: Edith Smith
+Date: 8 months ago
+Rating: 5 stars
+I had an appointment with Ðr Aldred yesterday and he was extremely helpful, he took the time to listen to my health needs and assessed the issue presented. He displayed adept knowledge in the health advice given and offered further recommendations for other queries that I had. I was very happy with the treatment prescribed, as this is what I had chosen and this enabled me to feel empowered in the overall consultation. I would like to thank Ðr Aldred for his professional and patient centred service!
+Practice response date: 8 months ago
+Practice response:
+Dear Edith, Thank you for your detailed and thoughtful feedback. We are pleased to hear that Dr. Aldred provided a professional, patient-centred consultation and that you felt empowered in your treatment decisions. Your recognition of his attentive approach and clinical knowledge is truly appreciated. Wishing you continued good health. Warm regards, Maulik Shah Practice Manager
+
+Author: Madi parker
+Date: 8 months ago
+Rating: 5 stars
+Very good doctor, good listener and very helpful. Thank you so much
+Practice response date: 8 months ago
+Practice response:
+Dear Madi, Thank you so much for your kind words! We are glad to hear you had a positive experience with our doctors. Your feedback is truly appreciated and will be shared with them. Wishing you all the best! Warm regards, Maulik Shah Practice Manager
+
+Author: IRFAN YOUNAS Butt
+Date: 8 months ago
+Rating: 5 stars
+Dear Irfan, We appreciate your 5-star review – thank you! Kind regards, Maulik Shah Practice Manager
+Practice response date: 8 months ago
+Practice response:
+Dear Irfan, We appreciate your 5-star review – thank you! Kind regards, Maulik Shah Practice Manager
+
+Author: Neelam Hussain
+Date: 8 months ago
+Rating: 5 stars
+Dear Neelam, Thank you for your support and the great rating! … More
+Practice response date: 8 months ago
+Practice response:
+Dear Neelam, Thank you for your support and the great rating! … More
+
+Author: Neelam Hussain
+Date: 8 months ago
+Rating: 5 stars
+Dear Neelam, Thank you for your support and the great rating! Yours sincerely, Maulik Shah Practice Manager
+Practice response date: 8 months ago
+Practice response:
+Dear Neelam, Thank you for your support and the great rating! Yours sincerely, Maulik Shah Practice Manager
+
+Author: Amena Anwar
+Date: 8 months ago
+Rating: 5 stars
+The doctor was very helpful, and listened to what I had to say, would definitely like to see him again, and also recommend him to a friend/ relative
+Practice response date: 8 months ago
+Practice response:
+Dear Amena, Thanks so much for the lovely review! We are really glad to hear you had a great experience with Dr. Alfred. It means a lot to us that you took the time to share your feedback. We will be sure to pass on your kind words to the doctor and the team! Kind regards, Practice Manager
+
+Author: Parnian yusra Haidery
+Date: Edited 8 months ago
+Rating: 1 star
+I’m writing this review after taking my 12-year-old brother to West Point Medical Centre to see Dr Mehra, and I’m extremely disappointed by how we were treated. Our dad is recovering from a heart attack, and our mum has serious mobility issues due to her knees — so I (as his 28-year-old sister) attended the appointment to support him. He was completely comfortable with me being there and explained our family situation clearly, but Dr Mehra refused to accept it. From the moment we arrived, he was cold and dismissive — no greeting, no kindness. He kept repeating that “the law” only allows parents to attend, even though in many situations, a responsible adult family member is acceptable if the child is willing and understands what’s going on. My brother is 12, mature, and wanted me there, but the doctor wouldn’t listen and made everything more stressful. He eventually treated my brother, but with a bad attitude — unfriendly, impatient, and completely lacking empathy. This is not how children especially ones already dealing with family stress should be treated by any doctor. I do not recommend Dr Mehra to anyone looking for respectful or compassionate care. If you want a GP who listens and understands, especially with young patients, I suggest booking with Matt Johnson — a great doctor and a true listener Follow-up to my review: Thank you for your response and for acknowledging my concerns. I fully understand and respect the need for medical professionals to follow guidelines, especially when it comes to treating minors. However my issue was never with the policy itself but with how the situation was handled by Dr Mehra on the day. If specific documentation or parental consent was required this could have been explained in a calm and respectful manner I would have been more than willing to provide what was needed even something as simple as a quick FaceTime call to our parents for verbal confirmation could have resolved the matter smoothly. Instead we were met with a cold dismissive attitude from the very beginning which added unnecessary stress for both me and my 12-year-old brother. I appreciate that Dr Mehra has many years of experience, and I do not question his clinical expertise. However, experience does not excuse a lack of empathy especially when dealing with a child already under emotional pressure due to family circumstances. How a situation is handled is just as important as the outcome, and in this case I truly believe it could have been managed with more understanding and compassion. I am someone who is calm and reasonable, and I would have appreciated a more human, considerate approach. That’s all we were asking for. Thank you again for your time 🙏
+Practice response date: 8 months ago
+Practice response:
+Dear Yusra, Thank you for taking the time to share your feedback. We’re truly sorry to hear about your recent experience at West Point Medical Centre and the distress it caused you and your brother. Your concerns are important to us, and we appreciate you bringing them to our attention. First and foremost, we hope your father is recovering well. We regret that your interaction with Dr Mehra did not meet your expectations for compassionate and respectful care. Our goal is always to provide a warm, professional, and empathetic environment for all patients, particularly children and families under stress. Regarding the matter of accompaniment, our clinicians are required to follow specific medical and legal guidelines when treating minors. As we did not have documentation confirming you as a person with legal responsibility for your brother’s care, we were unable to discuss his medical needs in detail. These protocols are in place to protect patient confidentiality and ensure compliance with regulatory requirements. However, we acknowledge this should have been communicated with greater clarity and sensitivity, and we apologise if it caused any distress. Dr Mehra is a highly experienced GP who has been part of our team for over 15+ years. He brings a broad range of clinical expertise and has earned the trust and appreciation of many of our patients over the years. We are confident in his professional standards and commitment to patient care, though we also take all concerns seriously and review them thoroughly. If you would be open to discussing your experience further, we welcome you to contact our Practice Manager at 0161-248 5100, as we are always striving to improve the quality of care we provide. Kind regards, Maulik Shah Practice Manager West Point Medical Centre
+
+Author: Uzma Amjad
+Date: 9 months ago
+Rating: 5 stars
+My family and I have been using this local pharmacy for many years, and we’ve never had a single issue. The service has always been consistent, reliable, and friendly. The staff are not only approachable and helpful, but also very efficient when it comes to handling prescriptions and deliveries. It’s reassuring to have a pharmacy you can count on one that knows its customers and genuinely cares. We truly appreciate their professionalism and the personal touch they bring. Every place can have hiccups, but generally overall it’s been good.
+Practice response date: 8 months ago
+Practice response:
+Dear Uzma, Thank you so much for your kind words and for taking the time to share your experience. We are delighted to hear that our team has been consistent, reliable, and caring in supporting you and your family. Building trusting relationships with our patients is very important to us, and it’s wonderful to know that you feel well looked after. We truly appreciate your continued trust and look forward to providing you with the best care for many years to come. Warm regards, Maulik Shah Practice Manager
+
+Author: Joe Donelon
+Date: 9 months ago
+Rating: 5 stars
+You can tell Dr Choudry really cares, very personable and easy to talk to.
+Practice response date: 8 months ago
+Practice response:
+Dear Joe, We appreciate your 5-star review – thank you! Warm regards Maulik Shah Practice Manager
+
+Author: Nadeem
+Date: 9 months ago
+Rating: 5 stars
+Dr Brown the best gp. Very helpful and supportive. Would give her 10stars if I could. Matt Johnson also very good
+Practice response date: 8 months ago
+Practice response:
+Dear Nadeem, Thank you for the lovely review! We are so glad Dr. Brown and Matt Johnson were able to support you — we will be sure to pass along your kind words! Kind regards, Maulik Shah Practice Manager
+
+Author: Jackie Powell
+Date: 10 months ago
+Rating: 5 stars
+We really appreciate your 5-star rating! If there’s anything you’d like to share about your experience, we’d love to hear it.
+Practice response date: 8 months ago
+Practice response:
+We really appreciate your 5-star rating! If there’s anything you’d like to share about your experience, we’d love to hear it.
+
+Author: Harris Ali
+Date: 10 months ago
+Rating: 5 stars
+Thank you for the 5-star rating! We're committed to providing excellent care and truly appreciate your support.
+Practice response date: 8 months ago
+Practice response:
+Thank you for the 5-star rating! We're committed to providing excellent care and truly appreciate your support.
+
+Author: Bano Altaf
+Date: 10 months ago
+Rating: 4 stars
+Thank you for the 5-star rating! We appreciate your support.
+Practice response date: 8 months ago
+Practice response:
+Thank you for the 5-star rating! We appreciate your support.
+
+Author: DANISH MAHBUB
+Date: 10 months ago
+Rating: 5 stars
+Thanks so much for the 5-star review! We're glad you had a great experience.
+Practice response date: 8 months ago
+Practice response:
+Thanks so much for the 5-star review! We're glad you had a great experience.
+
+Author: Debz Jessi
+Date: 10 months ago
+Rating: 1 star
+“Change to a different GP practice” Best advice my wife gave me. Been with this surgery for many years. Incompetent moody reception. Incompetent moody disrespectful GP’s. Best advice I can give anyone. Just change your GP practice.
+Practice response date: 10 months ago
+Practice response:
+Hi, Sorry to hear about your experience with your GP practice, but after reviewing our records, I can confirm that you are not currently or previously registered with our practice. I would like to draw your attention to the fact that giving a false review is against the Google review policy. Please do not hesitate to contact us if you are a current or past patient and we will do everything we can to resolve your concerns. Best regards, West Point Medical Centre
+
+Author: geoff howard
+Date: 10 months ago
+Rating: 4 stars
+Diligent, understanding and non-judgemental. Everything was explained clearly and future appointment made appropriately.
+Practice response date: 8 months ago
+Practice response:
+Dear Geoff, Thanks so much for your kind words! We are really happy to hear that you felt well supported and clearly informed during your visit. We will be sure to pass your feedback along to the doctor. Looking forward to seeing you at your next appointment! Best wishes, Maulik Practice Manager
+
+Author: Stewart Brown
+Date: a year ago
+Rating: 5 stars
+1st rate service
+Practice response date: a year ago
+Practice response:
+Dear Mr Brown, Thank you for your positive ratings. Kind regards, Practice Manager
+
+Author: Safa Fazal
+Date: a year ago
+Rating: 1 star
+Ridiculous never have appointments for patients and are never helpful
+Practice response date: 8 months ago
+Practice response:
+Dear Safa, Thank you for your feedback. We are sorry to hear that you have had a frustrating experience with our appointment availability and service. We strive to provide accessible and helpful care to all our patients, and we are genuinely sorry if we fell short in your case. We understand how important timely access to healthcare is and are continuously working to improve our appointment system. If you would be willing, we would appreciate the opportunity to discuss this further and see how we can help. Sincerely, Maulik Shah Practice Manager
+
+Author: Shaxawan Aziz Ali
+Date: a year ago
+Rating: 1 star
+I decided to move from this GP and I wouldn’t recommend it to anyone , Rude and incompetent reception staff, the actual nurses and doctors are good but the reception staff really rude and incompetent even you can’t see a face smile from reception staff , It’s like they were forced to work there , I appreciate the NHS is under stress but the reception needs change
+Practice response date: 8 months ago
+Practice response:
+Dear Aziz Ali, Thank you for your feedback. We are sorry to hear about your experience with our reception team. Your comments have been noted and will be addressed internally. We appreciate your kind words about our clinical staff and wish you the best in the future. Sincerely, Maulik Shah Practice Manager
+
+Author: Bashar Salem
+Date: a year ago
+Rating: 5 stars
+Dear Mr Salem, Thank you for your positive ratings. Kind regards, Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Mr Salem, Thank you for your positive ratings. Kind regards, Practice Manager
+
+Author: Sharaz
+Date: a year ago
+Rating: 1 star
+Rude and incompetent reception staff, the actual nurses and doctors are lovely but the reception staff really need to re-evaluate their lives if their struggling at being a receptionist. I called at the start of december for my full medical records i was told i would recieve it within 28 days, i hadn't received it 40 days later so i rang them to see what the delay could be, the very rude receptionist told me i would recieve within 7 days its been 14 days and still nothing. Really needs closing down or re staffing from ground up.
+Practice response date: a year ago
+Practice response:
+We take all feedback seriously and are committed to providing excellent care and service. However, your review contains inaccuracies and defamatory comments that need to be addressed. Having noticed from the recent phone call, you engaged in inappropriate behaviour towards our staff. Your remarks about her professionalism are unfounded and defamatory. This behaviour is unacceptable and violates our zero-tolerance policy. On 15th January, we followed up and emailed you about the progress of your report. We informed you that it will be with you in the next 7 working days once the secretary is back from her annual leave. We are still within the 28 working days period as, since your original request, we have had 3 bank holidays and 14 days of weekends. We welcome constructive feedback; however, malicious or inaccurate statements do not align with our values of mutual respect and professionalism. If you wish to address your concerns in a respectful and constructive manner, we are open to facilitating a resolution through the appropriate channels. Practice Manager WPMC
+
+Author: Usman jutt
+Date: a year ago
+Rating: 2 stars
+Dear Mr Jutt, Thank you for your ratings. Kind regards, Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Mr Jutt, Thank you for your ratings. Kind regards, Practice Manager
+
+Author: Lexxy “Lexxzy”
+Date: a year ago
+Rating: 5 stars
+A massive thank you to Dr. Emma Brown and the ladies on reception yesterday 08/01/2025. Your effort & support was so appreciated as well as your humour. Thanks again ladies. 😊 Alexandra …
+Practice response date: a year ago
+Practice response:
+Dear Alexandra, Thank you for your honest feedback. Your kind words truly warm our hearts and remind us why we love what we do. I have shared this with Dr Brown and all reception staff members. Please feel free to contact us, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: HC Khan
+Date: a year ago
+Rating: 5 stars
+Dr Askew is a great GP. He really cares for his patients and listens with compassion and without judgement. Thank you.
+Practice response date: a year ago
+Practice response:
+Dear Miss Khan, Thank you for your honest feedback and kind words. I have shared this with Dr Askew and other clinicians. Please feel free to contact us, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Lisa J
+Date: a year ago
+Rating: 4 stars
+I've been a patient at Westpoint Medical for about 5 years, having moved into the area. I haven't really needed to see my GP until recently, following a cancer diagnosis. As a former GP practice manager, I understand exactly how practices operate and Westpoint seems very well run, organised, and efficient. In my experience, I have never had an issue when calling the practice - there has never been a long wait for my call to be answered and the reception staff I have dealt with have been lovely; really polite, professional & very helpful. I've quite often needed same-day access, be it for an impromptu prescription or needing to speak with a doctor, and a quick chat with reception has always resulted in my request being accommodated. My consults with the GPs have been mostly positive so far. I would recommend Westpoint Medical based on my experience to date.
+Practice response date: a year ago
+Practice response:
+Dear Lisa, I appreciate your honest feedback and kind words. It means a lot to us, especially for someone who was a practice manager in a GP surgery and was aware of the pressures and expectations related to this position. Our staff works very hard every single day to improve our service, and receiving acknowledgement such as this will certainly help us to improve the quality of care for all our patients and the community as a whole. Thank you once again for your appreciation, which I have shared with all of the clinical and reception staff. If you require further assistance in the future, please do not hesitate to contact us. Kind regards, Maulik Shah Practice Manager
+
+Author: Amr Abdelaal
+Date: a year ago
+Rating: 1 star
+I decided to move from this GP and I wouldn’t recommend it to anyone. Not only for having uncooperative receptionist. I requested a report with a record for my health and it has been 4 weeks now though they promised after my second call to send it within 72 hours! Waiting time is horrible never been able to manage my plans because it can take up to 40 minutes of delay. My child was having a chest infection and the receptionist who knows better in medicine refused to give us an appointment though we called at 8 am in the morning and let us go for the walk in spending 6 hours of wait!
+Practice response date: a year ago
+Practice response:
+Dear Amr, We are very sorry to hear that you are not satisfied with the services provided and the wait time. In response to your call for your child's appointment, we have referred you to the appropriate service. This is followed by an appointment with GP on the same morning. Patients sometimes feel frustrated. However, some parents are more conscientious about their children's health, and they self-diagnose them without further assistance from surgery staff or advice from clinicians. The outcome in your case is the same as what we informed you in the first place. Please be assured that all of our practice staff have received appropriate training, and that we will continue to provide the highest quality of care to all of our patients. In light of this circumstance, please review your feedback again, as it was written in anger and frustration. Kind regards, Maulik Shah Practice Manager
+
+Author: Mohammed Musa
+Date: a year ago
+Rating: 5 stars
+Very good service
+Practice response date: a year ago
+Practice response:
+Dear Mr Musa, Thank you for your feedback and kind words. I have shared this with all staff. Please feel free to contact us, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Hana Mughal
+Date: Edited a year ago
+Rating: 5 stars
+I have to say all the staff at this practice has always been helpful always been able to get through to the practice, i have never had any issues to get an appointment always able to request the same clinician all the time. Matt Johnson in particular has always taken good care of my health and always an ear to listen very approachable hence why i always see him. I’m one of their regular px’s at the practice.. always able request for repeat prescriptions with no issues. I’ve been with this practice for over 17years and in all honestly it’s the best practice in Manchester. Thank you to the whole team at West Point medical centre 👍🏼👍🏼
+Practice response date: a year ago
+Practice response:
+Dear Hana, Thank you for your feedback and kind words. I have shared this with Matt Johnson and other staff members. It's our aim to provide the highest quality services to all our patients. Please feel free to contact us, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Peet du Plessis
+Date: a year ago
+Rating: 5 stars
+Every time I have seen Matt Johnson he has improved my quality of life in one way or another. He does a fantastic job.
+Practice response date: a year ago
+Practice response:
+Dear Peet, Thank you for your feedback and kind words. I have shared this with Matt Johnson and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: margarita chuter
+Date: a year ago
+Rating: 5 stars
+Quick service and helpful, kind staff
+Practice response date: a year ago
+Practice response:
+Dear Margarita, Thank you for your valuable feedback and kind words. I have shared this with all staff members. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Mohammed Ayaz
+Date: a year ago
+Rating: 5 stars
+Havent been with them long but its always been a great experience with them from the reception to the GPs in particular Dr. Noor Mahdi shout out to her she's a great professional of the field and is really helpful and understanding
+Practice response date: a year ago
+Practice response:
+Dear Mr Ayaz, Thank you for your feedback and kind words. I have shared this with reception staff and other clinicians including Dr Mahdi. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: mohammad khan
+Date: a year ago
+Rating: 1 star
+They are useless at giving appointments. The receptionist tried diagnosing me over the phone :S
+Practice response date: a year ago
+Practice response:
+Dear Mr Khan, I am very sorry to hear about your experience with our practice. It is our practice policy to enquire about the patient's problem so that we can offer an alternative service (in case we are unable to provide same-day appointments, so that you will not have to wait for a long time to receive your treatment). Should you require further assistance in the future, please do not hesitate to contact the practice or myself. Kind regards. Maulik Shah Practice Manager
+
+Author: Garry Pollitt
+Date: a year ago
+Rating: 1 star
+Awful doctors, would never reccomend to anyone After 8 years there and never being able to gwt an appointment, Even when an emergency with my asthma i cha ged to kingsway medical
+Practice response date: a year ago
+Practice response:
+Dear Mr Pollitt, I am very sorry to hear about your experience with our practice. As a result of high demand, we are only able to offer a limited number of appointments per day, and if we are unable to provide the appointment, we always offer an alternative suggestion so that you can obtain the treatment you need. Should you require further assistance in the future, please do not hesitate to contact the practice or myself. Kind regards. Maulik Shah Practice Manager
+
+Author: Sam Crawshaw
+Date: a year ago
+Rating: 5 stars
+During the 24+ years that my family has been registered at West Point Medical Centre, we have collectively been cared for by a team receptionists, practice nurses, physiotherapists, GPs and an advanced practitioner nurse. This is a busy and thriving modern practice in the heart of urban Manchester that represents the very best of community medicine. We have always received careful listening, gentle compassion, sage advice and exemplary treatment.
+Practice response date: a year ago
+Practice response:
+Dear Mr Crawshaw, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Ms. Nurse
+Date: a year ago
+Rating: 5 stars
+Great service rendered by the doctors, nurses and receptionists. 👏🏻👏🏻👏🏻 …
+Practice response date: a year ago
+Practice response:
+Dear Ms Nurse, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: LAYLA BEGUM
+Date: a year ago
+Rating: 5 stars
+I have been a patient here for over 40 yrs and its still a best medical centre with lovely doctors and staff
+Practice response date: a year ago
+Practice response:
+Dear Ms Begum, Thank you so much for your honest review, I will share this will all doctors and staff. Thank you. Kind regards, Maulik Shah Practice Manager
+
+Author: Andy Gardiner
+Date: Edited a year ago
+Rating: 5 stars
+These reviews make interesting reading, but I barely recognise West Point Medical Centre from some of them - perhaps expectations are too high? I can't speak for others, but when I'm poorly, if I very occasionally have to wait a bit to be seen, that's some way down my list of concerns. There are others who are poorly too, wait your turn. He's mentioned a bit here so I'll pick up on that, I've found Dr Hannan to be excellent. The best GP I've seen anywhere by a long way. You get a balance and thoughtful consideration of your symptoms, he goes the extra mile to get you the services you need and gives kind, reasoned advice. He also doesn't tut audibly when you've endlessly Googled your lump/bump/rash/whatever beforehand and think you're now a leading expert.
+Practice response date: 7 years ago
+Practice response:
+Dear Andy Thank you so much for your kind and supportive words. I'm really grateful for you taking the time to write a review based on your experiences of our surgery and the services we provide. Please be assured that I will pass on your kind words to Dr Hannan as I know he too will be extremely pleased to understand that his help is appreciated. I also very much appreciate your suggestions around the external practice signage and I agree wholeheartedly with your views as the signage most definitely appears somewhat tired in its appearance. I am very pleased to advise that West Point Medical Centre is soon to begin a substantial upgrade to our patient facing facilities, due to commence in mid-Octobe 2018. We sincerely hope that our redeveloped facilities, including upgraded external signage, will be welcomed by all of our patient, their relatives and carers. Clearly, there may be some slight inconvenience to patients attending the surgery during the works but we do hope that the improved facilities will be appreciated by patients and visitors to the surgery alike once they are complete. Yours sincerely Rob Stark Practice Manager West Point Medical Centre
+
+Author: Malik Adnan
+Date: a year ago
+Rating: 5 stars
+Dear Adnan, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Adnan, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Mahmood Shaikh
+Date: a year ago
+Rating: 5 stars
+Dear Mr Shaikh, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Mr Shaikh, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Begum Yasmin302
+Date: Edited a year ago
+Rating: 1 star
+Dear Yasmin, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Yasmin, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Jodie Alder
+Date: a year ago
+Rating: 5 stars
+I have been at West Point for a couple of years since moving into the area, and I am by any standard probably a difficult patient to have. I have a number of different conditions and ask a lot of the surgery, and no service is perfect, especially in these very difficult times for the nhs, but I feel very fortunate to be registered here - dr Hannan, dr askew and Matt Johnson in particular are great, and are very human which I think is an underrated quality in health professionals. The reception staff also do amazingly in a very difficult job, they always do their very best to help me, and as someone who is often sat in the waiting room I always hear them treat everyone with kindness and fairness. Thank you West Point.
+Practice response date: a year ago
+Practice response:
+Dear Jodie, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Deeba Farah
+Date: a year ago
+Rating: 1 star
+Very unprofessional. Booked an appointment for my son over the phone and I asked categorically whether the appointment would be at the basement or ground floor, the receptionist goes it will be in the basement. Came to the appointment 10 min early signed in on the online system. Upon checking the notice board the doctor was assigned for downstairs so I went straight downstairs. After waiting 45 min at the basement I came back to the reception again and I was told that the doctor was not downstairs and that she is upstairs. I mean how unprofessional. This happened with my wife as well.
+Practice response date: a year ago
+Practice response:
+Dear Deeba, Please accept my sincere apologies for the inconvenience caused to you. I have removed the signs from the arrival screen as some clinicians are required to change the floor and room for various reasons. We have taken note of your comments and feedback and will make some changes to the room situation as soon as possible. Kind regards, Maulik Shah Practice Manager
+
+Author: Munira Mohiny
+Date: a year ago
+Rating: 5 stars
+We as a family have been patients with this surgery for 15 years and can’t recommend them enough. Especially Matt Johnson really helpful and friendly.
+Practice response date: a year ago
+Practice response:
+Dear Adnan, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Numan ahmad khan
+Date: a year ago
+Rating: 5 stars
+Dear Numan, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+Practice response date: a year ago
+Practice response:
+Dear Numan, Thank you for your feedback. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Robyn Moore
+Date: a year ago
+Rating: 4 stars
+This has been my family doctors since childhood, in recent years I've needed them more than ever and they have been fantastic with me. Especially matt Johnson,he is a really good doctor listens to you very understanding in what your going through would highly recommend.
+Practice response date: a year ago
+Practice response:
+Dear Ms Moore, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Jeffrey Tipton
+Date: a year ago
+Rating: 5 stars
+My wife and I have been patients at this practice for over forty years and, in this time, have seen many excellent doctors and nurses, as well as reception staff.v The NHS is suffering many problems at this time, and all practices are affected by the situation.However, our experience has always been one of being valued and cared for no matter how busy they are. Invariably, when an appointment is genuinely needed, one can be found. All staff, including medical and clerical, are excellent and always ready to help in any way. Being patients at West Point is something we would never change, and we are so glad to have the practice as part of our community.
+Practice response date: a year ago
+Practice response:
+Dear Mr Tipton, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Jeff Tipton
+Date: a year ago
+Rating: 5 stars
+My wife and I have been patients at West Point for over forty years, since we moved into the area. In all that time, we have been seen by by many doctors and medical staff. We can both honestly say that we have always felt fortunate to have a medical practice, not only on our doorstep, but one where we have felt valued, and have experienced a high quality level of care. We are well aware of the problems being suffered by the NHS, at this time, and these have brought about their own problems within the practice. However, every member of staff, both medical or clerical, always endeavour to try and meet patients needs for appointments and information which apply to their needs. We are both in our senior years but I have noticed that the whole spectrum of age groups are considered and catered for, to the highest of standards. We both have no hesitation in awarding West Point Medical Practice the highest of marks for the care that they provide to ourselves and the community in which we live.
+Practice response date: a year ago
+Practice response:
+Dear Mr Tipton, Thank you for your honest feedback and kind words. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Shabz
+Date: a year ago
+Rating: 5 stars
+I have been a patient with West Point for many years. I always have great service the reception staff are always very helpful and friendly. I have always had very good experience once seeing the GP or nurses. Especially Matt Johnson nothing is ever any trouble for him. He has always been very helpful and knowledgeable on all the information. I am very happy to be a patient here at the surgery.
+Practice response date: a year ago
+Practice response:
+Dear Shabz, Thank you for your honest feedback. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Adrian Rhodes
+Date: a year ago
+Rating: 5 stars
+This practice has improved significantly over the past year to eighteen months. I gather there has been a change in practice Partners which may be a factor. The reception staff are much more helpful and affable, the nursing and assistant staff are a pleasure to be with - and the principal practitioners (G.P.’s and Advanced Practitioner) very attentive, respectful and responsive. It seems like morale is much better throughout; it used to be poor. I am impressed - and I speak as someone with a 40 year history of NHS service.
+Practice response date: a year ago
+Practice response:
+Dear Mr Rhodes, Thank you for your honest feedback. I have shared this with reception staff and other clinicians. Please feel free to contact practice or myself, should you need any further assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Samuel Rossiter
+Date: a year ago
+Rating: 1 star
+Not trans friendly - registered with them and the GP refused to coordinate with my trans health care, which is a NHS trans health service by the way, but he would not listen and he would not do anything to help me. They needed bloods and he said travel to town and let them do it because this practice won’t help. Never had a problem with my previous GP. Disappointing and discriminatory - wonder if he’d have the same attitude with a different health condition. Avoid if you are trans - not my GP anymore.
+
+Author: Khurram William
+Date: a year ago
+Rating: 1 star
+I recently had a less than satisfactory experience during a phone call with the reception staff. The call started with "What's the problem?" which set a tone that felt dismissive and unprofessional. Effective communication is key, especially in healthcare settings, and it's important that patients are approached with care and understanding. I suggest training for staff to improve telephone etiquette and patient interaction.
+Practice response date: a year ago
+Practice response:
+Dear Khurram, I am very sorry to hear about your experience with the receptionists at the practice. Could you please contact me at the practice number and provide more information, which will enable me to learn more about the situation and discuss it with the receptionist in question. In order to provide you with the best possible service at all times, it is necessary for me to establish the facts before I can take any action. Await to hear from you soon. Yours sincerely, Maulik Shah Practice Manager
+
+Author: Sobia
+Date: a year ago
+Rating: 4 stars
+Sobia1 reviewa year ago
+
+Author: giggs max
+Date: 2 years ago
+Rating: 1 star
+I had realy bad experience since i have registered with west point medical center, i always came 30 mins early for my appointments but still no calls from doctor on time mostimes an hr late when doctor call my name, i had realy bad experience with dr hanan i have been his patient since 15 years, Not enough doctors available in this surgery,I have been send home by doctor after saying that he can't do anything about my sickness as thier isn't any treatment for it i should go home and eat paracetamol or i need to go to hospital we can't do anything about your sickness if have any emergency. I mean what's the point booking emergency appointment if you are sending me home or to hospital why can't you do anything about it, you're doctor for god sake act like professional. I am changing my gp.
+Practice response date: Edited 2 years ago
+Practice response:
+Dear Max, My sincere apologies for the unpleasant experience you had with the practice. Our policy is that patients should not arrive more than five minutes before their appointment time. I can see from your feedback that you arrived 30 minutes early and counted that as your waiting time. This is not fair when writing your review. Although we have a sufficient number of clinical staff to meet the demand, some patients do not cancel the appointments and do not attend, which results in many appointments being wasted. We have already begun removing these patients from our database. As far as treatment is concerned, each doctor has their own opinion and judgment regarding the patient's condition. If you disagree with their opinion, we suggest you seek a second opinion by visiting a walk-in clinic or hospital. I am sorry to see you leaving, particularly when we are welcoming new patients. Here is some feedback we received from our patients about the services we provide to our patients and our locality. (hard copy available in practice). "The Doctors take their time to listen and explain. Reception staff are friendly and helpful. My children always get on the day appointments and today I also got an on the day appointment" Thank you. Kind regards. Maulik Shah Practice Manager
+
+Author: Aysh Khan
+Date: Edited 2 years ago
+Rating: 1 star
+Useless staff. Useless doctors. Do not help. Don't pay attention. I paid for a doctors letter and he made the wrong letter when I asked to edit the letter but he refused to do that .not recommend extremely disappointment.
+Practice response date: 2 years ago
+Practice response:
+Dear Aisha Khanam, We are sorry to hear about your unpleasant experience with the staff/doctors regarding your private letter. Private letters are written by doctors based on the patient's medical condition and factual information, not based on what the patient would like them to say. There is little we can do to assist you, but rest assured that we will provide you with the best service possible. Thank you. Maulik Shah Practice Manager
+
+Author: Sharon Osborne
+Date: Edited 2 years ago
+Rating: 4 stars
+If your actually working no chance of a appt rang everyday and all appts gone next appt 4th March 24 after explaining had tonsillitis three weeks been to pharmacy who said need to see GP told receptionist that said go walk in explained I am …
+
+Author: Sharon Osborne
+Date: Edited 2 years ago
+Rating: 4 stars
+If your actually working no chance of a appt rang everyday and all appts gone next appt 4th March 24 after explaining had tonsillitis three weeks been to pharmacy who said need to see GP told receptionist that said go walk in explained I am working need an actual appt same old story with this practice so frustrating update After leaving this review received phonecall from from practice manager who listened to my issue and frustration with the appointment system and managed to find me an appointment which was great just feel upset I had to complain to get this action . But am grateful for appointment and GP was very good .
+
+Author: Roxana Allison
+Date: 2 years ago
+Rating: 5 stars
+I had an appointment with nurse Charlene and I want to say that she's an amazing nurse. She was so reassuring and made me feel at ease, I can safely say that she is a very caring human being. Thank you so much for showing so much empathy and explaining things in a very simple way; for taking the time to make sure my concerns were listened to carefully.
+Practice response date: 2 years ago
+Practice response:
+Dear Roxana, Thank you for your feedback. I have shared this with Charlene. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Sumera naveed Shaikh
+Date: Edited 2 years ago
+Rating: 5 stars
+Very friendly staff And cosy warm calm place
+Practice response date: 2 years ago
+Practice response:
+Dear Sumeira, Thank you for your ratings and honest review. It's our aim to provide the highest quality services to all our patients. Please feel free to contact myself should you need any assistance in the future. Kind regards, Maulik Shah Practice Manager
+
+Author: Saif Deeder
+Date: 2 years ago
+Rating: 1 star
+Appointment was booked 4:20 waited over hour to be seen
+Practice response date: 2 years ago
+Practice response:
+Dear Saifur, Thanks for taking the time to provide feedback. Sorry to hear that you are dissatisfied with our service. Clinicians are not always able to adhere to appointment times due to complex and urgent medical problems that arise. We had two complex cases on that particular day that required extra time from the clinician, which resulted in delay in your appointment. If you have any further questions, please do not hesitate to contact me. Kind regards, Maulik Shah Practice Manage
+
+Author: Khan Rahmat
+Date: 2 years ago
+Rating: 1 star
+Bad experience!! Seriously they pick up the calls and then they say we are full and tells u call tomorrow everyday same situation. Am so disappointed.
+Practice response date: 2 years ago
+Practice response:
+Dear Rahmat, Thank you for taking the time to provide feedback. I am sorry to hear that you are dissatisfied with the service we provided. We have a limited number of urgent appointments available daily and due to high demand we may not be able to accommodate everyone on the same day; in this case, we advise patients of other alternative options, in order to allow them to receive urgent treatment without having to wait longer. If you have any further questions, please do not hesitate to contact me. Kind regards, Maulik Shah Practice Manager PS: I could not locate you in our patient list, so can you please contact the practice with your details, so I can assist you.
+
+Author: Khoula Haq
+Date: Edited 2 years ago
+Rating: 4 stars
+Improved service. Staff are more calm and listen. My sick note was ready for collection, it was a Friday, surgery had closed. I got there 2 minutes late, the receptionist knew I was coming and passed me it through the window. Saved mea lot of hassle from employer.
+Practice response date: 2 years ago
+Practice response:
+Dear Ms Haq Thank you for your ratings and honest review. It's our aim to provide the highest quality services to all our patients. Please feel free to contact myself should you need any assistance in the future. Kind regards, Maulik Shah Practice Manager
+
+Author: Dr. Aisha Aljendan
+Date: 2 years ago
+Rating: 5 stars
+I have been with West Point for many years. I am incredibly happy with the services I received from this GP. Specifically with Mr Matt Johnson. I want to express my utmost appreciation for the exceptional care and support I have received from Mr Johnson over the years. Throughout my experience as a patient, Mr Johnson has consistently demonstrated a remarkable level of professionalism and compassion. His expertise and dedication have greatly contributed to my overall well-being, and I am truly grateful for him. He continues to provide exceptional care and expertise to me and my family. I am truly grateful for his dedication. His extensive knowledge and professionalism are truly commendable, and I have complete confidence in his abilities. It is truly difficult to put into words just how much I appreciate his dedication and expertise. Among all the care providers I have encountered, he stands out as the epitome of excellence. I am incredibly grateful and feel extremely fortunate to have him as my healthcare provider. There’s also lots of improvements in the services provided by the GP. I am extremely happy to be a patient here!
+Practice response date: 2 years ago
+Practice response:
+Dear Dr. Aisha, Thank you for your positive feedback. I have shared this with Mr Matt Johnson and other clinicians. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Alex Moran
+Date: 2 years ago
+Rating: 5 stars
+Answers the phones and helps with enquiries. Much better than most GPs
+Practice response date: 2 years ago
+Practice response:
+Dear Alex, Thank you for your positive feedback. I have shared this with our teams and doctors. Please feel free to contact practice or myself, should you need any assistance in future. Kind regards, Maulik Shah Practice Manager
+
+Author: Rich DP
+Date: 2 years ago
+Rating: 5 stars
+Efficient service, staff really friendly. The nurse who did my out of hours blood test was fantastic! Thankyou
+Practice response date: 2 years ago
+Practice response:
+Dear Rich, Thank you for your lovely feedback. I have shared this with our team. Kind regards, Maulik Shah Practice Manager
+
+Author: Raza Shah
+Date: Edited 2 years ago
+Rating: 4 stars
+Update July 2023. Lots of improvements over the last year and easier access to appointment times. Things are starting to go back to the levels pre pandemic. Certain factors of backlogs in the NHS itself do affect some services but I'm pleased to say that I have had no problems in getting appointments for myself or my children lately, especially if you ring up at 8am. Well done to all the staff at West Point and hope to see more improvements in the future such as extra consultant rooms by using upstairs rooms and installing a lift, better air circulation in the basement and employing a few additional GPs Older post below. Updated review above . To blame Covid for not being able to ever get an appointment or see a doctor here is now the norm. Has gone from being a good surgery to the worst for patient care. What is the point if no one can ever get to see a doctor, yet when you visit it's always empty and yet on the phone they will tell you they are fully booked, over run and at breaking point. People in the community are dying, children are suffering and here they like to make excuses not to see anyone at all. It's time they learnt to live with COVID like the rest of the country and not hide behind closed doors . This is my local doctor's surgery. Have been a patient here since it opened over 20 years ago and now as a parent and a patient have suffered neglect of care from them for the past 2 years. Hope things can be turned around here and they can address the issues at hand and improve.
+Practice response date: Edited 2 years ago
+Practice response:
+Dear Raza, Thank you for your feedback and honesty regarding the service level. As I mentioned in another feedback response, we take patients' feedback seriously and are actively working to improve the service. Your feedback has been passed on to the members of the team. Kind regards. Maulik Shah Practice Manager Dear Raza, thank you for taking the time to feedback on your experiences of our surgery, your comments are particularly appreciated. I am, of course, very sorry to hear of your concerns about the availability of appointments and would be very happy to arrange to discuss your concerns further. If you would be kind enough to contact the surgery on 0161 248 5100, I'll be very pleased to arrange to speak with you. I look forward to hearing from you at your convenience. Yours sincerely. Rob Stark, Practice Manager.
+
+Author: paul bibby
+Date: 2 years ago
+Rating: 1 star
+I thankfully do not need to visit the doctors often. When I do need to it seems that you have to ring at 8am to try and get an "emergency" appointment. Otherwise you need to wait three or four weeks. I rang the surgery 3 weeks ago with an ear problem that concerned me. I was given an appoinment date of 15th of June even though I had lost a significant amount of hearing and didnt know if it was infection or something more serious. I explained this and was told to try for the "emergency" appointment. I couldnt get through on 2 consecutive days and I have to go to work ! I resigned myself to waiting for the appointment on the 15th June. Today, 8th June I have received a text message cancelling my appoinment due to unforseen circumstances. No explanation, no alternative appointment times. Disgraceful service and I have will now move from here.
+Practice response date: 2 years ago
+Practice response:
+Dear Paul, I appreciate you taking the time to provide feedback. I am very sorry to hear that you are not satisfied with the service. I have expressed your concerns to the team. Our goal is to improve the quality of service for the benefit of our patients and the community as a whole. I will be happy to address any further concerns you may have Kind regards, Maulik Shah Practice Manager
+
+Author: Gerry Howley
+Date: 2 years ago
+Rating: 5 stars
+I really like WPMC. The receptionists are friendly and helpful and all the nurses and doctors have been listened and talked through options. I love the fact there’s an in house physio. It’s great.
+Practice response date: 2 years ago
+Practice response:
+Dear Gerry, Thank you for your lovely review. I have shared this with our team. Kind regards, Maulik Shah Practice Manager
+
+Author: Irene Donelon (IreneLuna777)
+Date: 2 years ago
+Rating: 5 stars
+Friendly efficient reception and all of the doctors and nurses professional and listen. Can usually get appt on the day. Would recommend
+Practice response date: 2 years ago
+Practice response:
+Dear Irene, Thank you for your positive and encouraging review. I have shared this with our team. Kind regards, Maulik Shah Practice Manager
+
+Author: A B
+Date: 2 years ago
+Rating: 1 star
+Dear AB, I thank you for your ratings. As I cannot see any remarks about why you left a one star, I would appreciate it if you could let me know where there may be a lapse in our service, so we can strive to improve it. Please contact the practice at 0161-248 5100 and ask for myself so I can discuss your concerns with you. Kind regards, Maulik Shah Practice Manager
+Practice response date: 2 years ago
+Practice response:
+Dear AB, I thank you for your ratings. As I cannot see any remarks about why you left a one star, I would appreciate it if you could let me know where there may be a lapse in our service, so we can strive to improve it. Please contact the practice at 0161-248 5100 and ask for myself so I can discuss your concerns with you. Kind regards, Maulik Shah Practice Manager
+
+Author: Mohammed Razaq
+Date: 2 years ago
+Rating: 5 stars
+Best doctors you all ways get a appointment and evening appointments and it’s not easy to deal with public They are doing a good job Thank you at Westpoint surgery
+Practice response date: 2 years ago
+Practice response:
+Dear Mr Razaq, Thank you so much for your kind words. I have shared this with our team. Kind regards, Maulik Shah Practice Manager
+
+Author: Bisma Khan
+Date: 2 years ago
+Rating: 1 star
+They need to get hire the receptionist new one because i call i she told me 15 times I can’t hear like is it joke to them i need the appointment urgently and he just hung up my call . When i tried to call them again they just put that gb is now closed though it 12:07 in afternoon like seriously .
+Practice response date: 2 years ago
+Practice response:
+Dear Bisma, I appreciate you taking the time to provide feedback. Please accept my sincere apologies for your dissatisfaction with the service provided by the reception staff. The team has been informed of your concerns, and I am personally monitoring the situation. Our mission is to improve the quality of service for the benefit of our patients and the community at large. I will be happy to address any further concerns you may have Kind regards, Maulik Shah Practice Manager
+
+Author: Showrov Ahmed
+Date: 3 years ago
+Rating: 1 star
+on their website, there is no email or online contact us form. asked for my report 5 items still have not received it ! Is there any reason why the GP doesn't want to accept emails or online contact ?
+Practice response date: 2 years ago
+Practice response:
+Dear Showrov, Thanks for taking the time to provide feedback. We have the practice's email address in case you need to request any medical services, please contact us at gmicb-mh.westpoint-gp@nhs.net. You can also contact us through our website for a variety of services. Please see the list of all services you can request online. https://www.westpoint-gp.nhs.uk/online-requests/ Please feel free to contact me if you require any further information. Kind regards, Maulik Shah Practice Manager
+
+Author: S!CK
+Date: 3 years ago
+Rating: 2 stars
+open till 8 pm but the phone line closed at 18
+Practice response date: 2 years ago
+Practice response:
+Dear S!CK, Thanks for providing feedback. From Monday through Wednesday, we offer extended hours of service until 20:00. In order to book an appointment for an evening surgery, you must call the surgery before 18:00 as the telephone line closes at 18:00. However, patients who have pre-arranged appointments will be able to visit the surgery until 20:00. Hope this clears your doubts. If you require any further information, please do not hesitate to contact me. Kind regards, Maulik Shah Practice Manager
+
+Author: muhammad ajmal
+Date: 3 years ago
+Rating: 1 star
+Worst surgery
+
+Author: Irfan Ullah
+Date: 3 years ago
+Rating: 1 star
+Don’t give any appointment. They always tell that all week is booked. I tried to book an appointment urgently, they still said that we can’t give Poor service
+
+Author: James Francis-Barrie
+Date: 3 years ago
+Rating: 1 star
+Really poor service - which is a shame. Spent more time waiting on phone lines to then just be hung up on than I have for any other service. When I eventually did get an appointment the receptionists were inattentive. Now struggling to get in contact with the practice again to get information about my results? I appreciate the NHS is under stress but this practice cant seem to meet basic needs?
+
+Author: Umer Raja
+Date: 3 years ago
+Rating: 1 star
+Absolute shambles. Waited 6 months for a referral to be told it has not even been acknowledged. …
+
+Author: Safah Ahmed
+Date: 3 years ago
+Rating: 1 star
+WORST SURGERY EVER!!! Was offered an out of hours app from my own surgery at West Point and as I was very sick I accepted as it was my only option. I have been calling for almost a full day. Phone line rings for 7-10 seconds and cuts off. Absolutely ridiculous!!!
+
+Author: Usman Ullah
+Date: 3 years ago
+Rating: 1 star
+Usman Ullah1 review3 years ago
+
+Author: N H
+Date: 4 years ago
+Rating: 1 star
+Tried to ring for an appointment, unable to get through, line is always busy. This is unacceptable and needs addressing
+
+Author: Zain Saleem.Z
+Date: 4 years ago
+Rating: 5 stars
+Efficient with work, super kind people and they do procedures quickly and they do it in depth.
+
+Author: Assad Mohammed
+Date: 4 years ago
+Rating: 5 stars
+Matt Johnson.. I have been as a patient at this practise for nearly 20 years. I’ve never really felt the need to see a doctor. I always ask for the male nurse called Matt …
+Practice response date: 4 years ago
+Practice response:
+Matt Johnson.. I have been as a patient at this practise for nearly 20 years. I’ve never really felt the need to see a doctor. I always ask for the male nurse called Matt … More
+
+Author: Sheheryar Javed
+Date: 4 years ago
+Rating: 1 star
+Rob, this message is for you You clearly know your phone system is from the 90s and not fit for purpose. you …
+
+Author: Shair Yar
+Date: 4 years ago
+Rating: 1 star
+This is one of the worse Surgery you can think of. I phoned them for my 5 years old son he was vomiting and had fever. They said, we have to do the Covid test first and as soon as you get a your negative results then you can call us back …
+
+Author: Ali Gourley
+Date: 4 years ago
+Rating: 1 star
+Left me without medication before a trip abroad. Closed the surgery unexpectedly with out calling me back regarding the prescription, despite saying they would do so. Consistently very difficult to reach on the phone, and don't have phone queuing system. Unreliable and untrustworthy.
+
+Author: Zulfiqar Ali
+Date: 4 years ago
+Rating: 1 star
+8 year old daughter has been sick and vomiting for couple of days none stop, no any emergency or normal appointments even though she couldn't make to school and not even prescribed anything …
+
+Author: Ralph Kennedy
+Date: 4 years ago
+Rating: 5 stars
+Always friendly and helpful. Very happy to be registered here.
+
+Author: Smart Click
+Date: 4 years ago
+Rating: 2 stars
+Difficult to get appointment, no follow on test and treatment.
+
+Author: Zaraa’s Kitchen
+Date: 4 years ago
+Rating: 1 star
+Absolutely a nightmare to get a appointment 😡 I start phoning in at 8am it’s constantly engaged and by any chance if it does ring no answer. Eventually when someone picks up they are full booked a load of bull???? I’m thinking of changing surgery had enough of this one ☝️ …
+
+Author: Ajus Jose
+Date: 4 years ago
+Rating: 4 stars
+Ajus JoseLocal Guide · 17 reviews · 63 photos4 years ago
+
+Author: Laleh Bakhshi
+Date: 4 years ago
+Rating: 1 star
+I’m so sorry to tell you thanks for poor treatment lose my Bon and gums,my new dentist show one X-ray what happened and said it’s dentist fault…because filling is bigger than teeth …how can do this with people? It’s about beauty and dental …
+
+Author: Robeena Kausar
+Date: 4 years ago
+Rating: 1 star
+I have exzema on my body and i think is due to a food allergy, i have asked the GP to do blood tests on me to see if thats the case but they refused me saying that there are no blood tests for eczema, my little nephew also had eczema and we …
+
+Author: cyma naseem
+Date: 4 years ago
+Rating: 1 star
+Extremely frustrating experience, very good at delaying queries and putting things off, I would say unprofessional.
+
+Author: anthony devlin
+Date: 5 years ago
+Rating: 5 stars
+anthony devlinLocal Guide · 125 reviews · 30 photos5 years ago
+
+Author: Cee Teag
+Date: 5 years ago
+Rating: 5 stars
+It's easy to get an appointment and the receptionists are very helpful and kind.I've been attending over 25 yrs. The nurses are brilliant and so kind.
+
+Author: Mariam Haidar
+Date: 6 years ago
+Rating: 1 star
+The doctors are negligent and careless, they misdiagnosed me twice and resultantly my situation worsened. West Point medical centre simply does not care for your health and I strongly recommend going elsewhere if you have anything worst then a flu. I am appalled and disappointed at the standard.
+
+Author: Hassan Mohamad JAMA
+Date: 6 years ago
+Rating: 1 star
+Hassan Mohamad JAMA7 reviews · 9 photos6 years ago
+
+Author: Walid Hamid
+Date: 6 years ago
+Rating: 1 star
+Walid Hamid6 years ago
+
+Author: Rebecca Moss
+Date: 6 years ago
+Rating: 5 stars
+Some very good doctors, My experience over the last 10 years has been mixed. Although overall I am very happy. I have always got an appointment when needed.
+
+Author: Sally Bond
+Date: 7 years ago
+Rating: 5 stars
+I use this surgery regularly and find the team friendly and helpful. Sometimes I have to wait a little longer for my appointment but I would rather that and the doctor or nurse listen to my concerns about MY health than see a medic who is writing a prescription as I walk through the door. I like to discuss my health concerns and options as I think everyone should. Sometimes through discussion we can find solutions without medication and take some responsibility for our own health. In addition, if some people with minor ailments - who could self treat (ie colds and flu) or go to the pharmicist. - did not take up GP time it would leave more time for other patients. The NHS has limited resources and we ALL need to use it responsibly and understand that it is under pressure and treat ALL the staff with courtesy and respect. If you are not happy go elsewhere or pay for your healthcare.
+Practice response date: 6 years ago
+Practice response:
+Dear Sally, thank you so much for your kind and supportive words about the service, care and treatment provided by West Point Medical Centre. Your feedback is very much appreciated and will be shared with our wider practice team. We try very hard to provide the highest quality primary health care for all of our patients although we sometimes don't achieve the levels to which we aspire. We always try to learn from the not so positive outcomes in order to improve when things don't quite go according to plan. It is quite evident that the pressures on health services seem to increase year on year and we, of course, face similar pressures. We always try to be proactive in trying to effectively manage the increasing demands on our services and have recently recruited an additional, whole-time fully qualified and registered Practice Nurse to our team, in order to add further resilience to to our clinical service delivery. Thank you once again for your positive feedback, please be assured that the details will be shared with our Primary Healthcare Team. Yours sincerely. Rob Stark, Practice Manager.
+
+Author: S S
+Date: 7 years ago
+Rating: 1 star
+Absolutely shocking waiting times. Appointment regularly run over an hour late even to see a nurse who is too busy eating her lunch instead of calling for the next patient. Very unprofessional
+
+Author: Myles MCR
+Date: 7 years ago
+Rating: 5 stars
+Never had a problem with getting an appointment or waiting time! It is a cosy waiting area with friendly staff. I used to attend another local practice and had to go through interrogation just to get an appointment then wait almost an hour past appointed time to be seen.
+Practice response date: 7 years ago
+Practice response:
+Thank you for your post Myles, it's very much appreciated. We try very hard to meet the aspirations of all of our patients although it's clear we don't always succeed on occasions unfortunately. Please be assured that your post will be shared with our wider practice team as we find all feedback, both positive and not so positive, helps us to improve the health services we provide. Yours sincerely. Rob Stark, Practice Manager, West Point Medical Centre.
+
+Author: Vander Flute
+Date: 7 years ago
+Rating: 1 star
+Having to fight to get a type of blood sugar monitor on prescription is appalling. I'm a pregnant type 1 diabetic that was given a Freestyle Libre monitor to help to keep right control of my sugar levels during this high risk pregnancy. My mid wife team have had to send a letter, fax and then call the surgery in order to get this item on prescription, only for it not be placed on repeat after all that contact with the surgery. Good luck trying to get anyone to pick up the phone after 1pm either. Negligent service. Will be transferring GPs.
+
+Author: Shafeel Makeen
+Date: 7 years ago
+Rating: 5 stars
+Amazing service. Have never been disappointed.
+
+Author: D B
+Date: Edited 7 years ago
+Rating: 1 star
+Refuse to take on patients with a mental health diagnosis as they believe them to be more work. Unacceptable. All about the £££
+
+Author: Moriom Bibi
+Date: 7 years ago
+Rating: 1 star
+Moriom Bibi1 review7 years ago
+
+Author: Alison Edwards
+Date: 7 years ago
+Rating: 5 stars
+This surgery is much better than my usual doctors, we were treated really well and the doctor was so helpful with my son.I want to come here from now on.
+Practice response date: 7 years ago
+Practice response:
+Dear Alison. Thank you for your kind words. From the comment you've posted I assume that you attended our surgery by way of the Extended Access service which is operated by the local GP Federation for Central Manchester, Primary Care Manchester. The Extended Access service provides patients with the facility for their own GP surgery to book primary care appointments outside of usual surgery opening hours at a local GP Surgery which acts as a community facility, such as West Point Medical Centre. Please be assured that I will pass on your kind words to to PCM Yours sincerely. Rob Stark Practice Manager West Point Medical Centre.
+
+Author: Jacqui Naughton
+Date: 7 years ago
+Rating: 5 stars
+I changed to this surgery when I moved here, I had been asking my old GP of 44 yrs to look into symptoms for 4 yrs to no avail. I was listened to here. Dr Hannan has been absolutely fantastic, I cannot recommend enough. I have no problem with waiting extra time, I would rather each patient be seen to rather than rushed out the door. The appointments I can generally get, believe me other surgeries it’s not so easy. If you have one experience not up to your exoections please don’t write bad reviews. As I patient elsewhere previously this surgery outshines them. Only write reviews based on your average experience over a period of time. If you do have issues speak to the practice manger extremely helpful.
+Practice response date: 7 years ago
+Practice response:
+Dear Jacqui. Thank you so much for your kind and supportive words, they are very much appreciated. Please also be assured that I will pass on your thoughts directly to Dr Hannan. We do try very hard to provide our patients with the highest quality of services although I also think it's very fair to say that we sometimes don't always achieve what we aim for. When this happens, we always try to learn from where we didn't meet expectations in order to improve what we are able to offer. Once again, thank you so much for your support and kind words, I am very grateful and will share the details with our wider Primary Health Care Team. Yours sincerely Rob Stark Practice Manager West Point Medical Centre
+
+Author: blue apple Printer
+Date: 7 years ago
+Rating: 1 star
+Call to council my appoint have try between 1pm til 3:15 pm today , ! called 16 times in every 5 minutes , no one pick up the phone and i could not leave a voice mail regarding reason of my call . and also there is not email to email them council my appointment by them as i made emergency appointment through my GP , then after disappointing no one there to answering the phone calls i back to my GP and ask them if they could council that appointment been made with them, shame for a medical center 3 hours no one able to answer 1 minutes a phone call for a patient !!!!
+Practice response date: 7 years ago
+Practice response:
+Dear Sir/Madam. I'm really sorry that you have encountered such difficulties when trying to contact our GP Surgery. If you are able to provide us with your mobile telephone number, we are able to send appointment reminders via SMS. This service also allows patients to reply if they wish to cancel any such appointments. In addition, you are able to register for Patient Online Services which provides patients with the ability to securely book and cancel appointments online, order repeat prescriptions online and view your medical record. Please see our website: www.westpoint-gp.nhs.uk for further details. In addition, the email address for patients wishing to contact West Point Medical Centre, is CMCCG.westpoint-gp@nhs.net. Please note that these details are also published on our website. Once again, I'm very sorry that you encountered such difficulties recently although I hope my response provides you with the reassurances you require. Yours faithfully. Rob Stark, Practice Manager.
+
+Author: Ari Salih
+Date: 7 years ago
+Rating: 5 stars
+Ari Salih3 reviews · 2 photos7 years ago
+
+Author: muhammad maqsood
+Date: 8 years ago
+Rating: 1 star
+Waited more than an hour for the prebooked appointment. Very disappointed!
+
+Author: Maryam Javed
+Date: 8 years ago
+Rating: 1 star
+Waited 1 hour 5-6 times since I have moved my surgery to this one. MATT JOHNSON is the only hero as someone else mentioned . . Two ladies from the reception are very rude. Very poor service.
+
+Author: Queen Bee
+Date: 8 years ago
+Rating: 5 stars
+Dr Matt Johnson and Dr Hannan are great
+
+Author: Iqra Nawaz
+Date: 8 years ago
+Rating: 3 stars
+Iqra Nawaz14 reviews · 3 photos8 years ago
+
+Author: Ali
+Date: 8 years ago
+Rating: 4 stars
+AliLocal Guide · 40 reviews · 2 photos8 years ago
+
+Author: Rachel Hughes
+Date: 9 years ago
+Rating: 1 star
+Truly awful prescription service. I am lasting on my last inhaler puffs and have rung up at least 10 times over the last week but it is always 'shut' , rings out or is 'out of order'. Was told to ring between 9-11. Impossible when you have 30 students to teach! Not sure how I will be able to get inhalers now. Frustrating. Moving ASAP to somewhere which understands the idea that people actually work in the day time and cannot get to a phone.
+
+Author: Iffy
+Date: 9 years ago
+Rating: 1 star
+Absolutely POOR service - wouldn't recommend signing up here! Surgery was great when Dr Fox was here 10 years ago, after he retired this place has gone TO THE POTS. RUDE staff, absolutely USELESS manager and doctors probably got their degrees from nursery. DON'T BOTHER!!!!
+
+Author: Sanchari
+Date: 9 years ago
+Rating: 1 star
+SanchariLocal Guide · 78 reviews · 10,953 photos9 years ago
+
+Author: Hilaby
+Date: 9 years ago
+Rating: 1 star
+Appalling ,called up at 8.50 and everything is gone av been trying to see the doctor for 2 weeks now calling i. Every single day .reception staff are so rude make you feel like your dirt .and apparently theres only 1 emergency oppointment per day with the lady doctor .its a disgrace.
+
+Author: Elinor R
+Date: 9 years ago
+Rating: 1 star
+Appallingly poor care when it comes to coordinating with other services and managing prescriptions. I waited an hour to see a doctor to request a prescription, following their refusal to accept an advice letter from my hospital treatment team. The prescription was to be sent to Westpoint Pharmacy, who are excellent...but it never arrived. Just, wasn't sent. I've now been chasing it around with some urgency as I have to travel tomorrow morning--which the doctor was made aware of during my visit. This is just the worst in a series of many, many disappointments and frustrations regarding this practice over the past three years. They make it so much harder to have a chronic illness.
+
+Author: Mani Khan
+Date: 10 years ago
+Rating: 1 star
+doctors and nurses are really caring and friendly,but reception staff is very rude and arrogant.
+
+Author: sarah mayoh
+Date: 10 years ago
+Rating: 5 stars
+sarah mayoh5 reviews10 years ago
+
+Author: berni gallagher
+Date: 10 years ago
+Rating: 5 stars
+I have been with this practice for. 28 years, and whilst I have had the odd moan, on the whole I have to say the staff whether it be Doctors, Nurses or Receptionists have been nothing but caring and professional in my experience. I am in the process of selling my house and will have to change my GP surgery when I move, not something I am looking forward to, as I have such history with everyone at Westpoint Surgery.

@@ -4,14 +4,19 @@ Postcode: M23 1JX
 Google Maps title: Bowland Medical Practice
 Google rating: 3.6
 Google review count: 82
-Google Maps URL: https://www.google.com/maps/place/Bowland+Medical+Practice/@53.3932847,-2.2873297,17z/data=!4m8!3m7!1s0x487bad14df75ce71:0xe18c6b04f2319a9d!8m2!3d53.3932847!4d-2.2873297!9m1!1b1!16s%2Fg%2F1vd75gg5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Bowland+Medical+Practice/@53.3932847,-2.28991,17z/data=!4m8!3m7!1s0x487bad14df75ce71:0xe18c6b04f2319a9d!8m2!3d53.3932847!4d-2.2873297!9m1!1b1!16s%2Fg%2F1vd75gg5?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 82
+Owner replies collected: 1
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84024-bowland-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Lesley Aymes
-Date: 5 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 I recently experienced a tragic death in our family, Ian Hindley was exceptionally compassionate and understanding of the situation I was going through whilst trying to get hold of historic medical records. I cannot praise him enough for his support and empathy during this exceptionally difficult time.
 
@@ -21,22 +26,22 @@ Rating: 4 stars
 I cant give less than 4stars because all the doctors have been great but reception can be very unhelpful. Booked an appointment online today and was given an appointment at 2.36 at the surgery the following day. Txt message to confirm. I've just received a txt message saying it is now a telephone appointment between 1.36 and 2.36. Rang reception too question the change, reception just said I had filled in the template for a telephone appointment. No explanation for the face to face appointment. Reception are always pleasant when I go but o the phone is a different matter.
 
 Author: Jade
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
 Very rude receptionist called Angela. When you’re sick and phoning your GP surgery the last thing you need is Angela on the other end of the phone. It’s giving the surgery a bad name.
 
 Author: Roger Brooks
-Date: 4 months ago
+Date: 5 months ago
 Rating: 4 stars
-Roger Brooks9 reviews4 months ago
+Roger Brooks9 reviews5 months ago
 
 Author: Andrew Ellison Wild Woodsman
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
-Andrew Ellison Wild WoodsmanLocal Guide · 50 reviews · 33 photos4 months ago
+Andrew Ellison Wild WoodsmanLocal Guide · 50 reviews · 33 photos5 months ago
 
 Author: Ruby Ruby
-Date: 4 months ago
+Date: 5 months ago
 Rating: 2 stars
 Doctors are good, Most receptionists are helpful except one called Angela who is abrupt, unsympathetic and has an attitude! Maybe this approach is just with certain patients but as a receptionist you should be professional and have tolerance and treat everyone with the same courtesy.
 
@@ -59,3 +64,366 @@ Author: Mary Buchanan Wilde
 Date: a year ago
 Rating: 5 stars
 Brilliant doctors and all Staff
+
+Author: Chan ming sum
+Date: a year ago
+Rating: 1 star
+called them 8 am sharp... wait on a queue for 30 people, which means the queue didnt really start at 8... then wait 1 hour to be told its full... while my wife can always an apointment even when she called in at 10... questionable behaviour
+
+Author: Paul Tombling
+Date: a year ago
+Rating: 5 stars
+Great and easy
+
+Author: Paul Dyson
+Date: a year ago
+Rating: 3 stars
+Paul DysonLocal Guide · 27 reviewsa year ago
+
+Author: Kevin Nolan
+Date: a year ago
+Rating: 5 stars
+Good experience
+
+Author: Samantha Rigby
+Date: a year ago
+Rating: 5 stars
+Samantha Rigbya year ago
+
+Author: Aswathy Sukumaran
+Date: 2 years ago
+Rating: 1 star
+Aswathy Sukumaran2 years ago
+
+Author: Mark Thorne
+Date: 2 years ago
+Rating: 5 stars
+Good doctors
+
+Author: Stephen Hall
+Date: 2 years ago
+Rating: 5 stars
+Great staff and Service.
+
+Author: Lee Myers
+Date: 2 years ago
+Rating: 5 stars
+Fantastic practice 👌🏻 …
+
+Author: Bobby Woodhouse -Hargreaves
+Date: 2 years ago
+Rating: 5 stars
+Quick and easy
+
+Author: Scott Cauchi
+Date: 2 years ago
+Rating: 5 stars
+Scott CauchiLocal Guide · 5 reviews · 3 photos2 years ago
+
+Author: jill crompton
+Date: 2 years ago
+Rating: 5 stars
+Best drs in Wythenshawe, diagnostic is always spot on. Saved my life and my daughters
+
+Author: Bradley Ward
+Date: 2 years ago
+Rating: 5 stars
+Bradley WardLocal Guide · 21 reviews · 3 photos2 years ago
+
+Author: alan stringer
+Date: 2 years ago
+Rating: 5 stars
+alan stringerLocal Guide · 24 reviews2 years ago
+
+Author: Cfw Dex
+Date: 2 years ago
+Rating: 1 star
+I have tried to get through to this doctors it's been 20 mins and I've redialed 50 times its disgusting
+
+Author: Kellie Keogh
+Date: 2 years ago
+Rating: 5 stars
+Great doctors that really care and listen
+
+Author: amanda greenwood-oldham
+Date: 2 years ago
+Rating: 5 stars
+I've been a patient at the practice for 20+ years and mostly had very positive experience. The most difficult thing is getting through on the phone, but that's the issue with all GPs currently. Telephone appointments are satisfactory and if …
+
+Author: Dot Grindley
+Date: 2 years ago
+Rating: 5 stars
+Just over a year ago I had a bad productive cough. Thought it would go on its own but got worse. Book an online appt with Dr Patel and he rang me several days before the appointed time. Told me to go in. On examining me he told me I was …
+
+Author: matt nolan
+Date: 2 years ago
+Rating: 1 star
+Receptionist are absolutely horrendous every single one of them need sacking! They are so rude and disrespectful let this practice down as all the doctors and nurses are great but them receptionists are horrible they all need to go!!!
+
+Author: Jodcy Sosam John
+Date: 2 years ago
+Rating: 5 stars
+Jodcy Sosam John1 review2 years ago
+
+Author: amanda greenwood-oldham
+Date: 2 years ago
+Rating: 5 stars
+I've been a patient at the practice for 20+ years and mostly had very positive experience. The most difficult thing is getting through on the phone, but that's the issue with all GPs currently. Telephone appointments are satisfactory and if it requires to be seen then they usually try and squeeze you in. I believe this to be an outstanding GP practice. Receptionist included, they are often under a lot of pressure and are trying to fit everybody in, and let's be honest, not everyone that uses the gp or a&e needs to, often a trip to the pharmacy will be sufficient for some but they just don't do that.
+
+Author: Dot Grindley
+Date: 2 years ago
+Rating: 5 stars
+Just over a year ago I had a bad productive cough. Thought it would go on its own but got worse. Book an online appt with Dr Patel and he rang me several days before the appointed time. Told me to go in. On examining me he told me I was very sick and didn't know how I was still standing. Have me a note for Wythenshawe. Also rang Wythenshawe himself. I was admitted with Pneumonia. Was on my intravenous antibiotics 5 days before my actual appointment was booked. Have seen him on a few occasions and so has my husband. He always calls back before the appointed time. I've never found the receptionists anything but courteous either. It really isn't their fault if appointments are booked for the day. That's why unless I feel I need to see someone that day I book a telephone appointment. If the doc feels the need to see me they tell me to call in.
+
+Author: Sharon Marsh
+Date: 2 years ago
+Rating: 5 stars
+Moved to this surgery 2 years ago after struggling to get into previous gp appointments. Never had a problem getting an appointment here, reception staff go out of there way to help, all GPS and nurses helpfull and informative.
+
+Author: Richard Rowe
+Date: 2 years ago
+Rating: 5 stars
+Richard RoweLocal Guide · 34 reviews2 years ago
+
+Author: Wongani Maganga
+Date: Edited 3 years ago
+Rating: 1 star
+Unable to get the correct amount of prescription needed for me to religiously take my tablets. Which is a problem for my busy schedule. Any problems I will be informing my Kidney Doctor during my Renal Transplant Clinic visits. 2023 Update on a week I was off prescription was ordered on Monday in order to sync medication. They lose both sheets as since medication not at the pharmacy and was later told by GP that they got no medication request off me. As Friday rolls on about instead of specific amounts of medication being ordered. They automatically ordered everything which does not include any new medication. Had to go home to get letter as proof of this. Me new medication is due on the following Monday which is needed for gastro problems. They will probably be most likely cause for my Transplant failure and I will be informing Doctor of this problem next conversation we have.
+
+Author: lee mrozek
+Date: 3 years ago
+Rating: 4 stars
+lee mrozekLocal Guide · 30 reviews · 174 photos3 years ago
+
+Author: steve glover
+Date: 3 years ago
+Rating: 1 star
+Unnecessary difficult obnoxious reception staff. 9 times out of 10 you phone this practice. Only to find that most of the reception staff, go out of their way to make life difficult. Talking down to you, like you would expect a short German moustached fella with a bad haircut at a Nuremberg rally, to do. The left arm couldn’t possibly tell you what the right arm is doing. Too many chiefs with a chip on their shoulder.
+
+Author: Vija Np
+Date: 3 years ago
+Rating: 5 stars
+Vija Np6 reviews3 years ago
+
+Author: Nick Bone
+Date: 3 years ago
+Rating: 5 stars
+My little boy is suffering with strep and took a turn for the worse so we contacted the surgery. The receptionist was extremely helpful and offered a same day appointment. I came in with my little boy and the Dr he saw surname Bone on 23 December was absolutely fantastic. She took his glucose levels, followed by a urine sample, checked his weight, checked his stomach and full body for rashes, checked his throat, ears, chest and hydration. He was given a prescription and after taking it was night and day! Thank you
+
+Author: Scott Elliott (scottelliottcomposer)
+Date: 3 years ago
+Rating: 5 stars
+It takes a long time to get through for sure, but I'm afraid that's almost everywhere now. The system is struggling. But once you're through, the reception are helpful, empathetic, and will genuinely offer you whatever they can. The GPs, too, will go out of their way to help you.
+
+Author: Noconsent Cannnaca
+Date: 3 years ago
+Rating: 5 stars
+I was down at a Brownley Road Doctors since a child, but I became so tired of their poor care, service and overall experience I moved to Bowland Medical Practice. I have been registered here for over 9 years, my children also. I praise all of the staff , from reception to the Doctors. As any doctors they can be busy on the phones although the staff work efficiently to get too you. I am always received with compassion and patientce. I have received such excellent care from the staff at bowland medical practice consistently. Lovely practice , great staff ! Treat people how you wish to be treated 🙌
+
+Author: Wendy Amin
+Date: 3 years ago
+Rating: 5 stars
+Called the surgery at 8am last week for an appt, was called back by doctor within a few minutes and was seen by 9 am. Excellent service
+
+Author: Hannah Koussani
+Date: 3 years ago
+Rating: 2 stars
+been with this practice for years and never had a problem but lately it's like you cannot get past reception staff some are OK some others not so...and why should we have to tell them what's wrong with us? excuse me you're not a doctor..rang this morning 45 mins on hold to be cut off...to take 2 and a half hrs to finally get through to be told I wasn't cut off...erm OK why would I lie?! thinking of going elsewhere..shame some of the doctors are amazing..
+
+Author: Vinisha Malhotra
+Date: 3 years ago
+Rating: 1 star
+Worst GP surgery ever...the receptionist is rude and unprofessional! Phone is always busy...impossible to book an appointment! Doctors are good though...but only if you can reach them. Good luck with that.
+
+Author: Maria Silva
+Date: 3 years ago
+Rating: 1 star
+Hi Maria, we are very sorry to hear that you had a 1 star experience with our practice. We always encourage feedback to help us identify areas for improvements. Do get in touch with us and we can look into the matter further. Thanks Bowland Medical Practice
+Practice response date: 3 years ago
+Practice response:
+Hi Maria, we are very sorry to hear that you had a 1 star experience with our practice. We always encourage feedback to help us identify areas for improvements. Do get in touch with us and we can look into the matter further. Thanks Bowland Medical Practice
+
+Author: Rachel Guinnane
+Date: 3 years ago
+Rating: 5 stars
+Fantastic Medical Practice. Fantastic doctors who always do their best for you and very helpful receptionists
+
+Author: Rachel Renshaw
+Date: 4 years ago
+Rating: 5 stars
+Always able to access an appointment when needed and lovely staff
+
+Author: Pounds warehouse
+Date: 4 years ago
+Rating: 1 star
+Very hard to get appointments and lady on reception is so unprofessional and very rude with people. What a nightmare
+
+Author: Chelsea
+Date: 4 years ago
+Rating: 1 star
+Absolutely horrendous practice! Two days to get through to the practice to cancel an appointment. Never send off prescriptions to the pharmacy. I myself so not attend this practice but I support individuals that do and this practice is making a difficult job become a lot more difficult with there ways of practice. The receptionist are very unprofessional and rude. Patents are having to go the A&E due this not being able to get medical advise via a G.P as they don't make appointments for a day that is suitable for individuals and only do day to day appointments at a first come first serve basis. I am absolutely appalled with the way this practice is run.
+
+Author: Lynne Harrison
+Date: 4 years ago
+Rating: 2 stars
+The doctors are nice if you can get to speak to one the reception is a different story the staff are rude when they answer or they just do not answer they hang up its like a merry go round and if your working or not feeling well its terrible to be treated like that they are in the job to help patients
+
+Author: Elaine McGoggy
+Date: 4 years ago
+Rating: 5 stars
+Elaine McGoggy4 years ago
+
+Author: Louise Duncan
+Date: 4 years ago
+Rating: 1 star
+Rude staff, Some Receptionist try to help,however the phone lines are constantly engaged. Appointment made on the day not helpful for those that work.
+
+Author: Maria Sylvester
+Date: 4 years ago
+Rating: 5 stars
+Drs & reception staff have always gone above & beyond for our family. Now they have the phone queue in operation, it's much easier to contact if an emergency appointment is needed. Anything else is online on the NHS app or you can email the reception. During lockdown there was never any issues getting to speak to or see a Dr.
+
+Author: Taxiarhoula Pyromenou
+Date: 4 years ago
+Rating: 1 star
+It's very frustrating and annoying when you try to contact your gp and all the lines are engaged in every single try, for hours and hours. There are a lot of health issues that need to be shorted and that doesnt necessarily means to pay a visit to A&E.
+
+Author: Abderrahim UK
+Date: 4 years ago
+Rating: 1 star
+not helpful at all
+
+Author: Janet Cawley
+Date: 4 years ago
+Rating: 3 stars
+Doctors are great but reception staff never answer phone, tried all day to get my partner an appointment but even I was number 1 in queue they never answered.
+
+Author: Sam Marsh
+Date: 5 years ago
+Rating: 5 stars
+Sam Marsh2 reviews5 years ago
+
+Author: wendy Gibson
+Date: 5 years ago
+Rating: 5 stars
+Been going to bowland Road since i was a child after a break ive been back around 10 years and never had a problem with them Doctors are kind and caring and allways listen and the girls on reception are great considering how much grief they get from people i think they are amazing and ive never had a problem getting an appointment
+
+Author: Tasha Rothwell
+Date: 5 years ago
+Rating: 1 star
+Never pick up the phone! My son has been very poorly and a very bad chest infection tried to ring them to get a Perception him and for nursery because they won’t allow him to have medicine unless it’s from the doctors! Been trying to ring for 5 days always says User busy! Now my son has ended up in hospital. Worse place ever
+
+Author: Dani .Dany
+Date: 5 years ago
+Rating: 1 star
+Can't contact with them, reception is horrible... 3 days in row no one is answering the phone
+
+Author: Yinling Zhao
+Date: 5 years ago
+Rating: 1 star
+Have never been able to talk to the reception, tried at least 30 times, all just short beep and got hang up immediately.
+
+Author: Iain Walsh
+Date: 5 years ago
+Rating: 4 stars
+The doctors are friendly and try their very best to help you with whatever issues you have. Reception is very accommodating and will try and get you an appointment providing you ring early enough.
+
+Author: J
+Date: 5 years ago
+Rating: 3 stars
+Brilliant drs the receptionists let them down by never answering the phone always have to take a trip down there I wouldnt mind im not in the habit of making appointment s every week but ive got a seriouse problem at the moment
+
+Author: Liziwe Fembo
+Date: 5 years ago
+Rating: 5 stars
+The doctors there are amazing, they take the time to listen and they take you seriously on whatever issues you have. This has been my doctor’s surgery for years and I’ve never encounter any problems with them. However, the reception desk to book an appointment or ask for information is an entirely different matter, I called 33 times this morning to ask about my results and I’m still waiting for a call back. That being said, reception staff generally are polite and accommodating when you aren’t waiting for them to answer the morning phone calls.
+
+Author: UmperLumper1968
+Date: 5 years ago
+Rating: 2 stars
+Horrendous new doctors particularly Dr Squib. Comes across very negative and unhelpful continually coming up with excuses to seemingly avoid help ie. Covid, we don't have the money, we don't have resources - over actual patient care
+
+Author: Barbara Morpheus
+Date: 6 years ago
+Rating: 5 stars
+Excellent.
+
+Author: Adam Keam
+Date: 6 years ago
+Rating: 5 stars
+Very friendly staff and doctors, seen quickly and no problem getting an appointment 👍 …
+
+Author: Maria Silva
+Date: 6 years ago
+Rating: 1 star
+Doctor’s are good but if you call the reception they won’t answer you and even you try to book an appointment in person they will say come again tomorrow.. 😡😡😡 …
+
+Author: Healthy Grocers
+Date: 6 years ago
+Rating: 2 stars
+No walk in service. Delayed appointments. Not even a sick note on time. You've to come another day. Call during the day , phone number not responding.
+
+Author: Nathan O'Doherty
+Date: 6 years ago
+Rating: 5 stars
+New to the area and surgery. Very easy to arrange an appointment. Doctor Murphy was prompt, thorough and has a wonderful, sincere bedside manner.
+
+Author: Stephen Williams
+Date: 7 years ago
+Rating: 5 stars
+Every time I have been they are superb, we are extremely fortunate to have an NHS and appreciate being able to access this service
+
+Author: Jane Doherty
+Date: 7 years ago
+Rating: 4 stars
+Jane Doherty5 reviews7 years ago
+
+Author: Lina Abromaityte
+Date: 7 years ago
+Rating: 1 star
+Rude person on the phone had to wait 30min till answers phone disappointed
+
+Author: Ivo carvalho
+Date: 7 years ago
+Rating: 1 star
+Awesome doctors! Really good but... the reception is a disgrace. The ladies that answer the phone they take ages to take the calls and when they do they talk to you in a very rude and arrogant way, plus, they never have a slot for you. They would be better just recording an automatic answer like "Bowland medical practice! Whatever you need, forget it, we don't have a slot for you! Bye."
+
+Author: Making memories
+Date: 8 years ago
+Rating: 1 star
+I have never known a doctors surgery to take so long to pick up the phone! And it's not even at the busiest times that I call. It just rings and rings out. It's always pushing 8-10 mins before the call is answered which is frustrating at the best of times. The layout of the waiting room is awkward and if you are lucky enough to hear your name called, you struggle to find where it was that it came from. Always a lot of fumbling to find it and make it over before the doctor shuts the door thinking you are not there. Surely a better system can be used for this. Especially for those of us who have impaired hearing as it is!
+
+Author: Clare Critchley
+Date: 8 years ago
+Rating: 5 stars
+Not been here very long but fantastic doctors get appoinments straightaway friendly staff
+
+Author: Frank Walsh
+Date: 8 years ago
+Rating: 5 stars
+Frank WalshLocal Guide · 31 reviews8 years ago
+
+Author: Lynnette McDonnell
+Date: 8 years ago
+Rating: 5 stars
+The doctors do not rush you, and actually listen to you.
+
+Author: Janice Briniconbe
+Date: 8 years ago
+Rating: 5 stars
+Janice Briniconbe3 reviews8 years ago
+
+Author: roy vernon
+Date: 8 years ago
+Rating: 5 stars
+Very good practice
+
+Author: Dave Robinson
+Date: 8 years ago
+Rating: 5 stars
+Great GP practice and always had fantastic service from all the Doctors here.
+
+Author: Tobias Ashton (Toby)
+Date: 8 years ago
+Rating: 1 star
+When you actually get through, there are a few lovely doctors, but the hassle of actually GETTING an appointment is thouroughly annoying. Even when a doctor has explicitly told me to get an appointment set up for the next week, I am always refused at the reception. Which means a lot of my follow ups have been late and therefore I've had wonky results. As soon as I'm able, I will be moving GPS, jus because the admin is awkward as hell.

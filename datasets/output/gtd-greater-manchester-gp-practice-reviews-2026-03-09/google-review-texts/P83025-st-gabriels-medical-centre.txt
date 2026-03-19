@@ -4,24 +4,29 @@ Postcode: M25 0HT
 Google Maps title: St Gabriels Medical Centre
 Google rating: 2.6
 Google review count: 77
-Google Maps URL: https://www.google.com/maps/place/St+Gabriels+Medical+Centre/@53.5206893,-2.2652098,17z/data=!4m8!3m7!1s0x487bb01f891ea4b9:0xc9ac76f8a2fb7d2c!8m2!3d53.5206893!4d-2.2652098!9m1!1b1!16s%2Fg%2F1tdvzfm_?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/St+Gabriels+Medical+Centre/@53.5206893,-2.2677901,17z/data=!4m8!3m7!1s0x487bb01f891ea4b9:0xc9ac76f8a2fb7d2c!8m2!3d53.5206893!4d-2.2652098!9m1!1b1!16s%2Fg%2F1tdvzfm_?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 77
+Owner replies collected: 0
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83025-st-gabriels-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: rozi pooya
-Date: a week ago
+Date: 3 weeks ago
 Rating: 5 stars
 Recently had my asthma check at St Gabriel Health Centre in Prestwich Manchester, and I just want to say how grateful I am to Rachel Cowbvra. For the first time, I felt truly listened to and cared for. She was patient, kind, and took the time to explain everything clearly. I did not feel rushed at all. She made me feel comfortable and reassured about my asthma. Thank you for your professionalism, compassion, and genuine care. It really made a difference to me.
 
 Author: Michael Buckley
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
 I had my ears syringed today and was made to feel at ease got some great advice from the nurse about future care my visit was held in a very caring and professional manner thank you so much for my treatment
 
 Author: K Life
-Date: Edited a month ago
+Date: Edited 2 months ago
 Rating: 1 star
 I have been a Patient at the surgery for nearly 30 years . The Surgery now is an absolute Disgrace ! . Nurse Debbi is great also DR Cohen & Dr Hibbert are to brilliant doctors . but the Receptionist & Dr Deacon absolute disgrace to the Surgery . Deacon has no clue what the hell he’s doing . It’s a joke ! . Take my Advice.. Avoid this Surgery at all cost .
 
@@ -59,3 +64,338 @@ Author: Dayo Adesomo Washington
 Date: 8 months ago
 Rating: 1 star
 Dayo Adesomo Washington8 months ago
+
+Author: adam mradamus
+Date: 9 months ago
+Rating: 1 star
+Absolute crap, you'd rather die than get an appointment, there are no doctors working there, they cancel scheduled appointments and claim that the patient canceled
+
+Author: Ron Samuels
+Date: 10 months ago
+Rating: 1 star
+Ron Samuels8 reviews10 months ago
+
+Author: J D
+Date: 10 months ago
+Rating: 1 star
+Still very difficult to see a Dr despite using the online portal and asking to be seen F2F. Most recently my wife had a terribly chesty cough with temperature and headaches for nearly three weeks. We were advised to see pharmacist and have cough mixture. No one checking chest etc. really disappointing but almost expected.
+
+Author: Ezeagba Chisom
+Date: 11 months ago
+Rating: 5 stars
+Ezeagba Chisom2 reviews11 months ago
+
+Author: Ari Steinberger
+Date: 11 months ago
+Rating: 1 star
+Dr. Deacon may have a title, but don’t be fooled—he is anything but a helpful doctor. Under his leadership, this so-called medical practice operates like a bad joke, with his team of clueless cronies openly Googling conditions right in front of desperate patients. But that’s not even the worst of it. When our 11-month-old baby needed urgent care, we were met with days of exhausting arguments just to secure a simple face-to-face appointment. Imagine the sheer negligence—precious time wasted while a helpless infant suffered. My advice? Stay far, far away. Dr. Deacon, Dr. Cohen, and their disgraceful team are nothing short of a danger to public health, in my opinion. If you value your well-being, trust Hatzolah or A&E instead. Your life—or your child’s—may depend on it.
+
+Author: Иван Лихачев
+Date: 11 months ago
+Rating: 1 star
+Terrible.
+
+Author: george wroblewski
+Date: a year ago
+Rating: 1 star
+A consultant told me that he could not operate on my hand at the hospital I attended and he would ask my GP to refer to an NHS hospital that had the right back up for a general anaesthetic. This is my GP's response. Called the clinic to ask why. Receptionist said "please wait and I'll check". She checked and said " you shouldn't be reading that letter, it is addressed to The Doctor - not you."
+
+Author: Molham Khalil
+Date: a year ago
+Rating: 5 stars
+Great, fantastic, friendly, respectful and super experienced staff.
+
+Author: Katarzyna Stachurska
+Date: a year ago
+Rating: 1 star
+It's a big problem to contact a doctor in person. The treatment involves writing a message to the patient on Askmygp
+
+Author: E S E
+Date: a year ago
+Rating: 1 star
+Really poor medical service. They insist over and over on giving you only phone appointments and not face to face. One of my household had a severe tummy ache almost screaming in pain and they wouldn’t book us in person until they spoke to them on the phone. Absolutely ridiculous doctor-patient relationship. It is been four years now since we finished with the pandemic and the panic. The GP didn’t come back to normal yet
+
+Author: Alisha ALI
+Date: a year ago
+Rating: 1 star
+Some doctors are really nice but the care provided is slow. Can’t get appointments since after Covid. Everything is on ask my gp. The only way u can see the doc is if u ask them on ask my gp and then they will reply to u later on and tell u the time they are free. Otherwise u can’t get one. It’s so hard for u to get prescribed something they just tell u to buy it. With other practises they will prescribe it as I know people who go other places. Doctors don’t listen. U have to keep saying it for them to finally listen. For example, finally refer u somwhere etc. they long ur care out. Don’t ask fast. Don’t support at all. I want to move. Compared to other gps it’s not good.
+
+Author: B D
+Date: a year ago
+Rating: 1 star
+Jane the receptionist is incredibly rude, unhelpful and slammed the phone down on me when I hadn’t finished talking. An awful GP practice. And also I don’t think much of Dr Deacon. Will be making a complaint.
+
+Author: stu davis
+Date: a year ago
+Rating: 1 star
+Absolute joke of a practice. Have been registered over 40 years yet when I rang today , ill, they told me am no longer registered. I asked why and receptionist said I must have deregistered myself or moved away. I've done neither.
+
+Author: Andrea Crafton
+Date: a year ago
+Rating: 1 star
+Andrea CraftonLocal Guide · 60 reviews · 28 photosa year ago
+
+Author: Ann Winstanley
+Date: a year ago
+Rating: 5 stars
+Brilliant surgery, with very friendly staff who go above & beyond to help patients. Professional, competent & empathetic.
+
+Author: mark mcginn
+Date: a year ago
+Rating: 5 stars
+Massively improved over the last few years. The askmygp app is a very efficient method of communication and I usually get a reply on the same morning. The use of the new medical assistants has massively improved the speed and organisation of any treatment. I have had no problems with reception who are always polite and business-like.
+
+Author: Toni
+Date: a year ago
+Rating: 1 star
+If I could give 0 stars I would Receptionist are terrible I rang up to sign up... But after I asked if they was taking patient no reply just them slamming the phone down
+
+Author: Mo Kafae
+Date: a year ago
+Rating: 1 star
+Mo KafaeLocal Guide · 11 reviews · 11 photosa year ago
+
+Author: Sharon Shapiro
+Date: 2 years ago
+Rating: 5 stars
+Sharon Shapiro4 reviews2 years ago
+
+Author: Nasreen Ali
+Date: 2 years ago
+Rating: 1 star
+Complete waste of time. Rude receptionists. Could not care less about how serious your issues are just put the phone down and blame you for not listening. Good riddance am now in process of switching gp surgery. Dont know how i put up with them for so long long.
+
+Author: Nadine M
+Date: 2 years ago
+Rating: 1 star
+The receptionists here are incredibly rude and clearly don’t care at all for their patients. This has been highlighted in multiple reviews and yet still they haven’t trained their receptionists to show some empathy. They all have a ‘computer says no’ attitude to healthcare. Each time I have reached out to the GP they have done an appalling job, they never seem to read their notes about the patient and also barely ask any questions related to your medical problem. I will now be placing a formal complaint due to their negligence. My previous GP surgery was much better.
+
+Author: nuvochic
+Date: Edited 2 years ago
+Rating: 1 star
+Nasty rude receptionist
+
+Author: Marlene
+Date: 2 years ago
+Rating: 1 star
+I've never encountered such a sarcastic team before. We need to reintroduce individuals who genuinely care about their patients.
+
+Author: pete canning
+Date: 2 years ago
+Rating: 4 stars
+Difficult to get an appt but that appears to be a national problem and not particularly specific to st Gabriel’s.Have used askmygp….fairly quick response from the dr…..found him professional,a good listener and gave me answers in a clear concise way. …sorry but missed his name…maybe a locum? Have always found the staff and nurses friendly and approachable.
+
+Author: Sadia Khan
+Date: 2 years ago
+Rating: 1 star
+The receptionist and the doctors do not care for their patients at all. I have had the worst experience at this gp and recommend that they be inspected for their service to the public. I have been spoken rudely to by the receptionist which I now know is a common theme at this GP. I do not recommend anyone to ever experience the way I’ve been treated at this place
+
+Author: casper
+Date: 2 years ago
+Rating: 4 stars
+great help
+
+Author: Harvin Arora
+Date: 2 years ago
+Rating: 1 star
+Called them for a GP appointment got told to go on bot chat these went on for 3 days and today I ended up in UTC. Ministry of Health really needs to do an audit on this GP practice less of a GP and more like a pillar to post call centre. I highly do NOT recommend this GP to anyone who requires medical attention
+
+Author: U Revah
+Date: 2 years ago
+Rating: 5 stars
+Great gp! Always get an appointment same day as long as you do it early enough.
+
+Author: Gina Aspin
+Date: 3 years ago
+Rating: 5 stars
+Friendly staff,covid boosters done here.
+
+Author: Sumayya Hajee
+Date: 3 years ago
+Rating: 5 stars
+Couldnt have had a better experience. So professionally done in matter of seconds. put us at ease instantly when we entered. Great sense of humour from them all. 24 hour helpline with instant responses before AND after procedure. All in All, fantastic and would not be visiting any other medical centre other than St Gabriels. Keep up the great work!
+
+Author: Bahareh Mohammadi
+Date: Edited 3 years ago
+Rating: 1 star
+Never can get an appointment in emergency or advance, just need to use askmy GP and explain your issues and the best option that you could get is a phone call by a doctor or referring to Walk In Centre. I am really disappointed and would leave this surgery.
+
+Author: Ewelina Maczka
+Date: Edited 3 years ago
+Rating: 1 star
+Just spoke to one of the receptionist - what an utterly DISGUSTING manners! The receptionist was extremely unhelpful, moody and tried to get rid of me as quickly as possible. TERRIBLE SERVICE! I hope the practice will look into their staff members and provide additional training on customer service!!!!
+
+Author: Ian Epstein
+Date: 3 years ago
+Rating: 1 star
+Lack of communication is appalling. Items are left off repeat prescriptions without any warning or explanation as to why.
+
+Author: Sylvia Hamilton
+Date: 3 years ago
+Rating: 5 stars
+excellent doctors more than satisfied, i would like to make a special comment about the practice nurse Ms Lesley Newall, this person is amazing. a credit to any practice, and her profession. kind, always professional. without doubt goes over and above with everything. I couldn`t praise her highly enough.
+
+Author: Debra Cohen
+Date: 3 years ago
+Rating: 1 star
+Debra Cohen2 reviews3 years ago
+
+Author: Harrison Kauffman
+Date: 3 years ago
+Rating: 5 stars
+Dr Deacon and Staff consistantly helpful and quick to arrange appointment in my experience. Lucky to have an outstanding GP and team who are friendly and great at what they do as well as the convenient pharmacist on site.
+
+Author: Eran Shlomo von Weisl
+Date: 3 years ago
+Rating: 1 star
+Very unhelpful receptionist. I couldn't get urgent medical help. Two days chasing for prescription for acute urgent problems . First day when I called, the receptionist told me to try again a day later via askmygp, she told me they can't help me than and they're already offline for Askmygp. And when I tried Askmygp next morning it was offline again, I called and explained it was urgent, she than said she'll refer it to the GP and I'll have it only a day after. "They are very busy" she said. And it wasn't the first time. You simple can't get Prescription for urgent health condition without going through closed online and few phone calls and than you get it only when the condition really worsening few days later. The doctors are good though. But overall worse place ever. We the patients shouldn't be quite about it. There must be a way to complain.
+
+Author: Mrs. Baddiel
+Date: 3 years ago
+Rating: 1 star
+It is hard to have an appointment by Ask my GP when it is urgent . ( early at 10:00 am) .
+
+Author: Lisa
+Date: 3 years ago
+Rating: 1 star
+Impossible to get an appointment, register any requests or speak with a GP. Reception are unable to take requests or bookings over the phone and you are referred to 'Ask My GP" to put the request in online. However, you need to be able to put the request in by 7.30 am as the online service shuts down and does not take requests either. Hopeless system.
+
+Author: Lexi Library
+Date: 3 years ago
+Rating: 1 star
+Avoid at all costs, these clowns have wrongly diagnosed my wife on multiple occasions, claimed she had an STI, was overreacting etc, most recent misdiagnosis was she went with severe pains in her head behind her eyes, they fobbed her off 3 times saying its nothing, after she changed doctors she found out it was a tumor....so F you, they are negligent to the point of they could genuinely cause someones death
+
+Author: shaya grunfeld
+Date: 4 years ago
+Rating: 1 star
+shaya grunfeldLocal Guide · 13 reviews · 13 photos4 years ago
+
+Author: S R O
+Date: 4 years ago
+Rating: 1 star
+Horrible surgery. Feels like the doctors truly don't care.
+
+Author: S M
+Date: 4 years ago
+Rating: 1 star
+Never get the right prescription. End up getting medicines I didn't order or not enough of one thing or another. One receptionist says one thing and the other one contradicts the other receptionist.
+
+Author: תמר מזרחי
+Date: 4 years ago
+Rating: 1 star
+ask gp' app is always offline and the phones are always engaged
+
+Author: Jonathan Benarroch
+Date: 4 years ago
+Rating: 5 stars
+Dr Deacon... 👌 …
+
+Author: Ailish B
+Date: 4 years ago
+Rating: 5 stars
+Ailish BLocal Guide · 6 reviews4 years ago
+
+Author: Estell Smith
+Date: 4 years ago
+Rating: 2 stars
+Just trying to get antibiotics for urine infection. Not helpful, virtually closed after 3pm. Stuck in pain and cant phone because cant get through.
+
+Author: Adge
+Date: 4 years ago
+Rating: 1 star
+Was a very good practice, but as the 'ask gp' app is always offline and the phones are always engaged, then it may as well not exist.
+
+Author: Tyann Carr
+Date: 4 years ago
+Rating: 4 stars
+Excellent practice with lovely reception staff and and medical staff. I would give 5 * but I am not a massive fan of Askmygp service. It never seems to be available when I log in, leaving me frustrated at not being able to make an appointment 😒 …
+
+Author: Issaac Friedlander
+Date: 4 years ago
+Rating: 1 star
+If I could leave no stars I would. The Doctors here are OK but the receptionists who work here are the rudest and some of the most desensitised people I have ever come across. Stay well clear from this place.
+
+Author: Jabs local guide reviewer
+Date: 5 years ago
+Rating: 4 stars
+Ok
+
+Author: Mehbub Shafi
+Date: 5 years ago
+Rating: 4 stars
+Difficult to get the appointment but when I did, my consultation was with Dr Hibbert who is a very good physician. Explored my concerns in full and made a thorough management plan. I would definitely recommend seeing him.
+
+Author: Tamir Tamir
+Date: 5 years ago
+Rating: 5 stars
+Tamir TamirLocal Guide · 34 reviews · 13 photos5 years ago
+
+Author: Russ Williamson
+Date: 5 years ago
+Rating: 3 stars
+Better if you could actually see a GP.
+
+Author: Tonya Kuz
+Date: 5 years ago
+Rating: 5 stars
+Tonya Kuz2 reviews5 years ago
+
+Author: Gill Woodward
+Date: 5 years ago
+Rating: 5 stars
+We cannot fault the care our father has received from every member of this practice. ... Doctors, nurses and receptionists.
+
+Author: Ben Topp
+Date: 6 years ago
+Rating: 4 stars
+Clean functional pharmacy group practice comfortable eating room with informational videos and audible visual indications when your turn arrives etc.
+
+Author: KK Corleone
+Date: 6 years ago
+Rating: 4 stars
+Never Had A Problem When Coming Here , Staff Are Really Nice And Friendly
+
+Author: George Wroblewski
+Date: 6 years ago
+Rating: 3 stars
+Great practice - doctors and nursing staff, especially Dr. Deacon and Lesley. One serious gripe is about the Blue Badge Disabled bays of which there are two. Today a red Skoda parked in a disabled bay, the lady did not display a badge, locked the car, went to the back staff entrance and entered a code that opened the door. I mentioned this to the lady on reception and she informed me that, although the medical centre had to allocate disabled parking they were free to be used by non blue badge holders??????????. come on people, we were not born yesterday. And yes, I am a blue badge holder.What does Mrs A Stewart D.M., M.Sc (Management) Practice Director have to say? George Wroblewski BSc. Hons.
+
+Author: lea obadia
+Date: 7 years ago
+Rating: 1 star
+lea obadia1 review7 years ago
+
+Author: nada abbas
+Date: 7 years ago
+Rating: 5 stars
+Receptionists very helpful and professional, very good practice, highly recommended
+
+Author: Ivelina Angelova
+Date: 7 years ago
+Rating: 1 star
+Very poorly service! I'm so frustrated from Dr ...
+
+Author: Svetlozar Angelov
+Date: 7 years ago
+Rating: 1 star
+Very bad med center the doctors are discusting not accurate diagnose and every time they say it's fine and it's normal
+
+Author: Matthew Wilkinson
+Date: Edited 7 years ago
+Rating: 3 stars
+Good doctors, with the exception of Doctor cavanagh who feels like he is always in a rush and doesn't really listen to what's being said, which is a shame because we came in with our 3 year old and he didn't really seem to care, will flat out refuse to see him even if I was dying. Reception staff are fantastic, true credit to the place
+
+Author: Faery Designs
+Date: 8 years ago
+Rating: 3 stars
+Three stars for the practice. But I'd like to give FIVE stars to the Nurse, Lesley. She is so knowledgeable and helpful. A credit to the NHS.
+
+Author: belinda patel
+Date: 8 years ago
+Rating: 5 stars
+belinda patel8 years ago
+
+Author: Anna Kelman
+Date: 9 years ago
+Rating: 2 stars
+Very nice reception staff and some lovely nurses and nice GPS. Avoid Dr Wareing if you are a woman. A dreadful and offhanded doctor if ever there was one!

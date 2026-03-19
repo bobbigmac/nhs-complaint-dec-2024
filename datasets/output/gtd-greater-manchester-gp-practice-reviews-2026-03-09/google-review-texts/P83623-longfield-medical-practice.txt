@@ -4,21 +4,41 @@ Postcode: M25 1BT
 Google Maps title: Longfield Medical Practice
 Google rating: 3.3
 Google review count: 54
-Google Maps URL: https://www.google.com/maps/place/Longfield+Medical+Practice/@53.5335586,-2.2839648,17z/data=!4m8!3m7!1s0x487baff08b02887b:0xe0bcce093eb2b0d9!8m2!3d53.5335586!4d-2.2839648!9m1!1b1!16s%2Fg%2F1tmgbzxn?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Longfield+Medical+Practice/@63.3861859,5.5354418,3z/data=!4m8!3m7!1s0x487baff08b02887b:0xe0bcce093eb2b0d9!8m2!3d53.5335586!4d-2.2839648!9m1!1b1!16s%2Fg%2F1tmgbzxn?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 54
+Owner replies collected: 0
+Raw review responses captured: 6
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83623-longfield-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Rachel Curson
+Date: 3 weeks ago
+Rating: 5 stars
+I recently registered here. Receptionists are lovely, friendly and helpful and all the paperwork was done really accurately. The doctor I saw was brilliant, listened to my symptoms and really helped me with advice on my symptoms, medication and referral. Thank you !
+
+Author: Anna Peters
+Date: a month ago
+Rating: 5 stars
+Dr Goolam-Hossen is such a helpful GP and all staff are very caring from the receptionists to practice nurse to health care assistants and other doctors at the practice. It’s very difficult in this current climate to find a good GP practice and this has driven me to write a review to say how good this practice is
+
+Author: Christine Taylor
+Date: a month ago
+Rating: 5 stars
+I had an appointment today was seen on time by Dr sacks, who went above and beyond for me he sat and listened and phoned me back and went through what he had put in place . He is an excellent Dr and cannot recommend highly enough 🙏🏼 …
 
 Author: Roy Rich
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 I had to visit the practice today with my elderly sister .We saw Dr Sacks who we found to the the most caring and helpful doctor you can imagine.I cannot praise him enough
 
 Author: Gareth Netto
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
-Gareth Netto2 months ago
+Gareth Netto3 months ago
 
 Author: Malcolm Freedman
 Date: 6 months ago
@@ -59,3 +79,208 @@ Author: Jake Brubaker
 Date: a year ago
 Rating: 1 star
 quite literally have never been able to make an appointment in 2 years. I have called from 7.59-8.30 every single weekday morning for 3 weeks and got through a handful of times just to be told theres no appointments. No online services actively work, despite claiming they do. MyGP, PATCHS and NHS all say unavailable to book appointments at all times. Avoid.
+
+Author: Christopher Chant
+Date: a year ago
+Rating: 1 star
+Paid for a private medical that’s time pressured, 11 days later still not send the paperwork, unable to speak to my doctor but very happy to take my money
+
+Author: David Twine
+Date: a year ago
+Rating: 5 stars
+The receptionists worked tirelessly to get me a referral from another clinic so that I could get stiches removed. Well done.
+
+Author: Diana Pottage
+Date: a year ago
+Rating: 5 stars
+We had our No.7 covid 19 vaccine the young lady saw to us straight away even though we were early. She was.really lovely and we didn't feel a thing. Excellent service.
+
+Author: Joanne Cain
+Date: 2 years ago
+Rating: 1 star
+Near impossible to get an appointment if you are working. My GP app is a joke, if you do get through by phone the receptionist tells you to go on my GP, round and round in circles
+
+Author: Lynne B.
+Date: 2 years ago
+Rating: 5 stars
+I’ve been a patient since 2012, I have only ever received 5⭐️ treatment, from the resident Doctors, Locums and nurses. The reception staff have always treated me with kindness. Listening to my friends experiences who live in Bolton and Timperley, that are very negative. I am able to confirm that this is the best practice I have attended Thank you! Kind regards Lynne
+
+Author: Stephanie S
+Date: Edited 2 years ago
+Rating: 1 star
+Terrible GP practice, there seems to be no doctors so impossible to get an appointment and they only do telephone consultations. Look for yourself of their website, their times for appointment bookings are 8:00 to 8:06 and its online only, so if like me you have a slower Internet connection, they close before you can book the appointment. If your lucky enough to get one, the GP gives a false email.adress for you to send images of your issue! The emails bounce back with no way to let them know other than to then sit on hold for god knows how long, eventually having them hang up on you so you have to ring all over again. Failing that, try to next morning to get another appointment just to get an email address to send in pictures. It's a joke. The doctor was dismissive and condescending and the reception staff can be rude and obnoxious. I wish I could afford to pay private.
+
+Author: maisie kay
+Date: 2 years ago
+Rating: 1 star
+I used to be happy about going to the doctors and seeing Dr Ralph, since Dr Ralph has left it’s gone downhill. Dr Hossen needs improvement on his person Centred care. The least this practice could do is get someone like Dr Ralph. Will forever miss Dr Ralph
+
+Author: Jane Benson
+Date: 2 years ago
+Rating: 1 star
+Telephone service is down13/6/23 & was yesterday. Unable to make appointments
+
+Author: Yoana Mitova
+Date: 2 years ago
+Rating: 2 stars
+Ask my GP service is barely working, slowly loading or crashing. Open for only for a few minutes every morning. Submitting a request is difficult. When trying to reach the surgery via phone is usually a busy line or you have to wait for your call to be picked up. Sadly it is not going through most of the time. If you do get to be seen by your GP usually it is a good experience.
+
+Author: Glenn Rothschild
+Date: 3 years ago
+Rating: 5 stars
+I've been with the practice for more than 20 years and I've always been treated with kindness and care from both doctors, nurses and the receptionists.
+
+Author: inmaculada bravo
+Date: 3 years ago
+Rating: 5 stars
+Great experience today on my appointment with Sister Krystyna Kelly. She is such a caring, professional and knowledgable woman. She always has the time to listen to you. The reception team also great. Many thanks for all the hard work you all do for us. Excellent!!
+
+Author: Paul (Druid)
+Date: 3 years ago
+Rating: 4 stars
+Didn't wait long for my appointment Be the nurse who administered my jab very professional and friendly a real asset. Reception ladies very helpful.
+
+Author: Pauline Turley
+Date: 3 years ago
+Rating: 1 star
+Been trying get through since middle may for health problems. Can not ask my gp is always offline Can not not order prestcriptions. nobody answer the PHONE.
+
+Author: Jean Cabbin
+Date: 3 years ago
+Rating: 1 star
+Just cannot get through to see a doctor all I get is a phone call and sometimes not even that it's very distressing trying to get through and then when you do reception are so unhelpfull very distressing I've had moor help from a walk in centre in Manchester
+
+Author: Brian
+Date: 4 years ago
+Rating: 3 stars
+The GPs and the clinicians are good, the receptionists are ok. Unfortunately it takes an age to get through to the surgery by phone and the Ask my GP process is terrible.
+
+Author: Nick Buckley
+Date: 4 years ago
+Rating: 5 stars
+Two first rate GP's
+
+Author: Colt Blue
+Date: Edited 4 years ago
+Rating: 1 star
+Great GP & nurses. Exceptional healthcare. Two terrible reception staff who make the experience to receive medical care & prescriptions incredibly difficult, very stressful and hard work. Formal complaints procedure should be put in place & training in customer care & disability awareness implemented.
+
+Author: Alan Holdsworth
+Date: 4 years ago
+Rating: 1 star
+. Doctors are hardly ever there. I've seen the locum more times than my gp. Takes forever to answer the phone and when they do the staff are very abrupt. when questioned about this the reply is that they are very busy. have tried ask My gp but it always crashes. when I questioned staff I get told it must be my fault. if that was the case they shouldn't be very busy . I will be taking my complaints higher as I'm very disappointed. I can't see a doctor but I have seen a nurse twice and my dentist 5 times during lockdown. it's a disgrace.
+
+Author: Samantha Bailey
+Date: 5 years ago
+Rating: 5 stars
+Im so happy with my drs surgery all the staff are brilliant , with communication, chasing you up and reminding you of up coming appointments... There all just brilliant for me feels like we're all a big family
+
+Author: Reptic Venom
+Date: 5 years ago
+Rating: 1 star
+Reception staff unhelpful, rude and abrupt raising their voices down the phone when I rang to try and sort out a prescription. Really bad service would not reccomend to anyone.
+
+Author: Claire Beattie
+Date: 5 years ago
+Rating: 1 star
+Rather rude and abrupt reception staff. Didn't say a word to them and they announced "we can't you in here without an appointment" and shut their little window. I was taken aback so just trotted out, while on shouted "just use the app". I less conflict averse person than me would not have reacted well to this. I did not respond and just left. As I was going down the stairs a blonde nurse told me to hurry up. Really unpleasant exercise.
+
+Author: John Monaghan
+Date: 5 years ago
+Rating: 5 stars
+dr ralph and dr hossan and the practice are best ive come across in all my 57rys
+
+Author: Maureen Bailey
+Date: 5 years ago
+Rating: 5 stars
+Maureen Bailey5 years ago
+
+Author: John Wasilwa
+Date: 5 years ago
+Rating: 5 stars
+John Wasilwa1 review5 years ago
+
+Author: Brenda Platt
+Date: 5 years ago
+Rating: 4 stars
+Good range of services and excellent doctors
+
+Author: carol Tucker
+Date: 5 years ago
+Rating: 5 stars
+Dr Ralph is brilliant, top Doctor. .
+
+Author: marmite 1010
+Date: 5 years ago
+Rating: 1 star
+Practice has introduced an online system to contact them. Doesn’t work with various browsers, doesn’t allow messages to be sent or appointments booked or prescriptions requested. Calling the surgery is pointless because no one answers the phone. Doctors are decent but I have no idea how to actually make an appointment with them - dire!
+
+Author: Pawel Kurczab
+Date: 5 years ago
+Rating: 5 stars
+Dr. Ralph is a doctor with vast knowledge and experience. He has the right approach to the patient. The right man in the right place.
+
+Author: Ben Topp
+Date: 6 years ago
+Rating: 4 stars
+Fairly modern and multi practice from G. P. To chiropody, walk in centre and treatments centre etc. Well equipped and efficient with pleasant surroundings and lots of free parking well served by buses and trams and taxis with shopping and banks close by.
+
+Author: Barbara Griffiths
+Date: 6 years ago
+Rating: 5 stars
+Moved to this area recently, drs and all staff been brilliant...
+
+Author: Samantha Bailey
+Date: 6 years ago
+Rating: 5 stars
+Dr Ralph n Dr Hossan are truly fantastic Dr's iv never been disappointed when I left my appointment. They genuinely care and give you time and appropriate treatment I can honestly say they go the extra mile..
+
+Author: Louise Shaw
+Date: 6 years ago
+Rating: 4 stars
+Louise Shaw2 reviews6 years ago
+
+Author: Jordan Kennedy
+Date: 7 years ago
+Rating: 3 stars
+Clean, could do with an update with their seating in the waiting room and I believe they lack a decent drop off point for people near to the main entrance. Reception staff has always been helpful and welcoming.
+
+Author: H S
+Date: 7 years ago
+Rating: 2 stars
+Appointment system is very bad and needs up dating! Good staff.
+
+Author: stebaz7
+Date: 7 years ago
+Rating: 1 star
+Poor service, they need to get their act together here... waiting time is a joke.👎 …
+
+Author: Alireza Hashempour
+Date: 8 years ago
+Rating: 4 stars
+Alireza Hashempour8 reviews · 1 photo8 years ago
+
+Author: Deborah Rodgers
+Date: 8 years ago
+Rating: 5 stars
+Deborah Rodgers8 years ago
+
+Author: Amy Burrows, Ganley
+Date: 8 years ago
+Rating: 1 star
+Might be an idea to put the practice ID on here difficult to find anywhere.
+
+Author: Rachel (Rach)
+Date: 9 years ago
+Rating: 1 star
+Rachel (Rach)2 reviews · 2 photos9 years ago
+
+Author: Andrew L
+Date: 9 years ago
+Rating: 4 stars
+Good GP practice with other clinics attached e.g. podiatry and holiday injections.
+
+Author: Natasha Price
+Date: 9 years ago
+Rating: 5 stars
+Natasha Price9 years ago

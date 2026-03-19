@@ -4,58 +4,718 @@ Postcode: M27 8HP
 Google Maps title: Silverdale Medical Practice
 Google rating: 2.7
 Google review count: 102
-Google Maps URL: https://www.google.com/maps/place/Silverdale+Medical+Practice/@53.5186918,-2.3315061,17z/data=!4m8!3m7!1s0x487baf0d31099f21:0x8acdc2e60e6df5da!8m2!3d53.5186918!4d-2.3315061!9m1!1b1!16s%2Fg%2F12hqtrzsk?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Silverdale+Medical+Practice/@53.5186918,-2.3340864,17z/data=!4m8!3m7!1s0x487baf0d31099f21:0x8acdc2e60e6df5da!8m2!3d53.5186918!4d-2.3315061!9m1!1b1!16s%2Fg%2F12hqtrzsk?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 102
+Owner replies collected: 65
+Raw review responses captured: 10
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87019-silverdale-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Mohanad Al Shaikh
-Date: 14 hours ago
+Date: a week ago
 Rating: 5 stars
 I Wanted to thank all the amazing people at Silverdale.
+Practice response date: an hour ago
+Practice response:
+Thank you for the great feedback much appreciated.
 
 Author: Gaz W
-Date: Edited 2 weeks ago
+Date: Edited a month ago
 Rating: 1 star
 Lack of compassion. Lack of professionalism. Lack of empathy. Arrogance. Rudeness. Failing of DPA. Ignorance. This all starts at the reception area. The ladies normally treat their patients like dirt. Very unhelpful with a “tough*” kind of attitude. Every other practice seems to work fine and use common sense, not Silverdale. For some reason you can’t book an appt using the My GP app for Silverdale, but other practices... no problem. You can call after 9am at most practices and book an appt for a GP.... not Silverdale. The poor service then trickles down to the GPs. I feel rushed. I feel things are not explained clearly. I feel they are more interested in hitting targets than curing the sick. Of course it all depends on the GP. I feel some GPs don’t listen to your needs, ailments or feelings and make massive assumptions and with any reason can’t wait to fob you off to a physio or hospital. I have been visiting this practice ALL MY LIFE. It has declined steadily and then rapidly. So after ringing up to book an appt with my GP for a later date, I’ve now been told I need to ring at 8am tomorrow.... WHY??? What difference does it make? Not only was I told this, it’s the arrogance and unhelpful attitude from the jumped up receptionist that is making me seriously consider switch GP. I’d you’re not registered with a practice, don’t bother with this one. It’s very amateur from top to bottom and the care no longer exists towards patients. UPDATE: what a mess. They are changing their system now. I’m certain this joke of a practice is making it deliberately hard for patients to speak to someone or make an appt. They even send texts saying “you have an appt on 02/09 at 2pm, this could be a phone or face to face appt, please contact the surgery for clarification on which it is” - WHY NOT TELL US IN THE TEXT?!? My god, this surgery was better in the 80s before we had computers and apps. I don’t think I’ve seen my GP face to face for 5 years. Absolute joke. UPDATE: after being told Curtis the physio is off sick AGAIN, I was asked to call to rebook an appt. Rang up and said I can’t do the rest of today as going to work. The lady said the nurse will be informed and call me to make an alternate appt. I got the call “we have appointments free all day with a GP” she said, I explained that I’d already said I can’t do this. I did however say, I can make a u turn now and come and see you “oh, we are booked up till 10:30” - the lady literally just told me they had a full free day?!? I eventually settled on 12:30 the following day. My text comes through to say my appt is 4:30pm the following day?!? I’m now sat here at 5pm and still not been seen to. This practice is a farce. No doubt I will get the usual reply from the practice manager where she takes no accountability nor responsibility for how dreadful Silverdale has become.
 
-Author: John
+Author: Fatemeh Safshekan
 Date: 2 months ago
 Rating: 1 star
+One of the worst GP
+
+Author: John
+Date: 3 months ago
+Rating: 1 star
 Been with this practice for years it’s a mixed bag and a lot of the time it’s good but in this instance it’s bad. Currently have an infection, went in the other day test showed no infection but symptoms present. Tried to get another appointment for a doctor to call me and tell me I had to go elsewhere to be treated instead of any further tests or questions being asked. When I raised about treatment times of the other service and the infection complicating due to this I was told “just because it might take awhile to be treated doesn’t mean it’s not the right place to go” anyway if the infection does complicate or spread and I get sepsis or any other issues due to the GP refusing treatment against what it says on the NHS website I’ll be sure to file a claim for medical negligence.
+Practice response date: 3 months ago
+Practice response:
+Hi John, Thank you for your review, however if a clinician triaging your request and determines you do not have an infection that needs antibiotics they will not prescribe. Its entirely appropriate for them to refer you to a pharmacy or minor ailment scheme. Antibiotics do not work for viruses where there is no bacterial and prescribing them for patients who do not need them can cause antibiotics to not work when they are needed. Please see the following link https://www.silverdalemedicalpractice.nhs.uk/2025/11/18/world-amr-awareness-week/ If however your condition does deteriorate please contact us again.
 
 Author: Chez Chadwick
 Date: 3 months ago
 Rating: 1 star
 Turned up for an appointment for 3.30pm its now 16.20pm and my son has still not been seen seems to be common issue now doctors turning up late and waiting around forever.
+Practice response date: 3 months ago
+Practice response:
+I am sorry you have had this experience, however sometimes it can be that a clinician has to spend more time with a particular patient which can mean that others are delayed in seeing the clinician. This is obviously not we want as a practice, but I am sure every patient would like to have the time they need with a clinician when unwell.
 
 Author: Ree []Ree0[]
 Date: 5 months ago
 Rating: 1 star
 Trying to get an appointment is like trying to draw blood from a stone ! When you do get lucky enough to actually get through on the phone to speak to someone about arranging an appointment the whole process is ridiculous. You'll receive a telephone call weeks! Later before you can even be seen.. I could understand we once was in a period of COVID but them days has passed long ago! So what is all the long waiting about ??? 10 years ago getting an appointment with a doctor was so much easier, now it's just so much frustrations and most of time in my experience I can never get through on the phone, I'm position number 1 in a qué but I'm still left to wait for over 10 minutes? Ludicrous! Will I ever get an appointment to be seen about certain things which are bothering me.. guess I'll have to relie on calling the NHS line and hopefully somebody can put me in the right direction because this medical practice is a constant strain to try and get any kind of appointment. Looking to find another practice where you can actually get an appointment to be seen by a doctor! Not answering questions on a phone call or use text messaging back n forth.b
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your feedback. We are very sorry to hear about your experience and understand how frustrating it can be when you are unwell and struggling to access an appointment. Please accept our sincere apologies for the inconvenience and distress this has caused. General practice has changed significantly over recent years, and demand for appointments remains extremely high due to ongoing demand on the system and increased patient need. While COVID restrictions have ended, the impact on the NHS has unfortunately continued, which is why some appointments now require assessment first. This helps us ensure that patients are directed to the most appropriate clinician or service as quickly and safely as possible. We appreciate your comments regarding phone access and waiting times. We know this is an area that can be challenging, particularly at peak times, and we are continually reviewing our systems and staffing to improve access and reduce delays. We are genuinely sorry that you feel unable to get the care you need and that this has led you to consider changing practices. This is not the experience we want for our patients. We would encourage you to contact the practice directly and ask to speak with the Practice Manager, who would be happy to look into your concerns in more detail and see how we can support you. Thank you again for your feedback, which we will use to help improve our service.
 
 Author: Mark Cook
-Date: 6 months ago
+Date: 7 months ago
 Rating: 5 stars
 I cannot thank Dr. Tang enough for his persistence in securing a CT scan for my father today. He made over five calls this morning to ensure the scan was scheduled for 3 PM this afternoon. This was crucial, as delaying the scan could have had significant consequences. Thank you, Dr. Tang!
+Practice response date: 6 months ago
+Practice response:
+Dr Tang is a very well respected long-term locum who does work for Silverdale. I will pass on your comments to him. Thank you for your praise for him.
 
 Author: martin Lawrence
 Date: 8 months ago
 Rating: 5 stars
+Thank you for your 5 star review
+Practice response date: 6 months ago
+Practice response:
 Thank you for your 5 star review
 
 Author: Ornrea Lansle
 Date: 8 months ago
 Rating: 1 star
 Possibly the worst doctors I’ve ever been and I’ve lived all over the country so had many doctors the reception staff are rude I feel like they need to have serious think if they really want to do the job the do everytime I ring I just get spoke to and treated like a piece of dirt on the bottom of there shoe it’s always too busy to fit you in but have about 30 rooms WASTE OF SPACE THE LOT OF EM
+Practice response date: 8 months ago
+Practice response:
+Can you please contact me. Andrea Simpson, Practice Manager on gmicb-Sal.silverdalemedicalpractice@nhs.net and let me know what your complaint relates to so I can investigate. I am sorry you feel you have had a negative experience.
 
 Author: Carlene Holton
-Date: 8 months ago
+Date: 9 months ago
 Rating: 5 stars
 Great medical practice, the duty of care is brilliant across the board from reception staff to GP's I am very happy I am a registered patient here. Thank you :)
+Practice response date: 9 months ago
+Practice response:
+Thank you so much for your positive comments. We aim to provide a high quality service to all our patients. It’s great to know when we get things right.
 
 Author: Clare Carpenter
 Date: 10 months ago
 Rating: 5 stars
 I’ve been with the practice for 48 years. I find it really easy to use the online system and I always get a call or text once I’ve submitted my request. The staff are lovely never had any issues
+Practice response date: 10 months ago
+Practice response:
+Thank you for your kind words. I will share with the staff. We want to make it as easy as possible for patients to access our services.
+
+Author: Madhuri M
+Date: a year ago
+Rating: 1 star
+I came to enquire about a appointment update, the lady at reception was so rude and in a commanding voice told me that I need to chase them for updates on appointment. I'm so disappointed.
+Practice response date: a year ago
+Practice response:
+I am sorry to hear you have had a negative experience, please contact us at complaints.silverdalemedicalpractice@nhs.net so we can get more details and investigate what went wrong. Its only when we can identify issues we can improve our service.
+
+Author: Jane Fox
+Date: a year ago
+Rating: 5 stars
+I have been with this surgery since the day it opened and I have always found it to be really good. Reception staff are lovely and always try to help. I love the new system of the online form for any queries and the option to have a call/video consultation instead of an appointment. I have had a number of appointments, of late, with Dr Allis and she is wonderful, answers all questions with explanations, listens to all my concerns and never makes me feel like I need to rush. She is a perfect example of how every family GP should be. Well done & thank you to you all
+Practice response date: a year ago
+Practice response:
+I am glad you have had a positive experience - thank you for sharing.
+
+Author: Susan Kane
+Date: a year ago
+Rating: 1 star
+The service at this practice is very poor. My partner and I struggle to book appointments, now they have moved to an online system and you have only 3 hours to book, using an online service. In a 24 hour society a system is now restricted to 3 hours per day. There is no email address to use for enquiries.
+Practice response date: a year ago
+Practice response:
+Please contact us at complaints.silverdalemedicalpractice@nhs.net and we can look at what went wrong - we do not time our online bookings but we have to limit them to the number of appointments we have available - unfortunately a lot of requests come in early morning which means the system does not take more requests once all appointments have been allocated.
+
+Author: Deborah Simpson
+Date: a year ago
+Rating: 1 star
+Don't know why every time I go to try and book an appointment I get an anxiety attack because I'm not on line it's not right
+Practice response date: a year ago
+Practice response:
+The medical requests are turned on at 8.00am and close at approximately 11.00am. If someone has an urgent medical problem they can ring the reception staff between 8.00am to 6.30pm Monday to Friday. If it is outside that time then you will need to call NHS 111.
+
+Author: kirsty warner
+Date: a year ago
+Rating: 1 star
+I wouldn't if you want care. Let me put it this way the receptionist has just point blank refused an appointment for a 10day old baby because she forgot to put him on the system last week when he was registered there. The argumentative rude disrespectful awfully toned women who puts the rest to shame, likes to gossip in regards to people ailments making this surgery the worst. She told me there's NO DUTY OF CARE FOR A BABY! I will be contacting yhe relevant places necessary as she should NOT be working here. And she better hope the baby doesn't need urgent care because her life isn't as valued as his. I'm so angry this is supposedly a place that helps people but her and her arrogance make it am awful place. Can't get to the doctors whatsoever and if you enter the building she will make you wait until she's finished whatever she's doing excuse she in her words "too busy for people to keep coming to the desk for medication and appointments" and wonders why my anger is present when she didn't register the baby LAST WEEK
+Practice response date: a year ago
+Practice response:
+Babies mother has spoken to the reception staff and baby has been registered with the practice. We would never refuse to see a 10 day old baby because they were not registered. It would be helpful if you could call me Andrea Simpson (Practie Manager) to discuss this in more detail. One of our receptionists has spoken to mum and mum had no concerns and we have since tried to contact her to see if baby needs an appointment and the call has not been answered. I have never encountered a complaint of this nature about one of our reception staff, I would be grateful if you could contact me as this is very unusual for us to receive feedback about one of our staff members.
+
+Author: Joanne Grimes
+Date: a year ago
+Rating: 1 star
+What's going on at Silverdale??? It seems to me like you are discriminating against the elderly patients at your practice. How on earth do you expect them to get online to book appointments? Then say you will help them to fill in the online form if they ring up the surgery but only between 8 - 11. Then keep them waiting ages on the phone before they eventually do get through. Then to top it off, telling them to expect a phone call on Thursday it is now Friday and still no call. So you have to ring back yet again, to now say you can have an appointment for next Thursday. My Mum is 87 and quite frankly it just appalling the way they are treated. Surely, you could come up with a scheme that if you are over say 70 years of age you should just be able to ring up at any time to make an appointment. Do the decent thing Silverdale .... if it wasn't for my mum's generation you wouldn't be where you are today .
+Practice response date: a year ago
+Practice response:
+Joanne can you please ring me, Andrea Simpson (Practice Manager) to discuss this, we have implemented the new clinical triage system to improve access for patients, if we can learn from your experiences and improve the system we would like to. Please get in touch and we will ensure your mum is sorted out. Your mum can telephone the practice for an appointment and our receptionists will log the medical request, clinical triage helps our clinicians prioritise those who need to be seen the same day, every patient receives advice, an appointment or a referral to another service based on their condition. Most patients are very happy with the new system, but if it is not working for some patients we need to know and try to recify things.
+
+Author: BM P
+Date: a year ago
+Rating: 1 star
+I was wrongly diagnosed by one of the doctors who I had to speak with over the phone and prescribed a strong tooth infection drug that I had to pay for despite telling the doctor that my issue was in my jaw and nothing to do with my teeth. Something he realised once he seen me in person! I'm now out of pocket with medication that is of no use to me. Very low quality staff.
+Practice response date: a year ago
+Practice response:
+Please do contact me regarding this, I am the Practice Manager Andrea Simpson, if you contact reception on 0161 983 0940 we can discuss this further. It is always preferable that you let us know when things go wrong so that we can work with you to learn any lessons we need to.
+
+Author: Lorraine Clarke
+Date: a year ago
+Rating: 1 star
+This place is a joke. My mum rang at 8. Was 29th in the queue for then to be told there was no appointments and no telephone appointments. Then to be told she will have to ring back in September 😱. Whats the point in having a GP if you can't even get to see one. Absolutely ridiculous. No wonder the hospitals are run of there feet cause you can't even see a doctor.
+Practice response date: a year ago
+Practice response:
+You will be pleased to hear we are moving to a new total triage system from 2nd September, you can read about it here https://www.silverdalemedicalpractice.nhs.uk/2024/07/11/improving-how-you-contact-silverdale-from-monday-02-september/ We are hoping that this will alleviate our telephone lines being busy and that patients will be prioritised by our clinicians in order of their clinical condition and not when the call is in the queue. Please let me know if I can help further.
+
+Author: Aaron Bash
+Date: a year ago
+Rating: 1 star
+Complete lack of any kind of care, compassion, even basic human empathy. You'd struggle to find a worse doctors, I'm sure there are, perhaps the far reaches of Outer Mongolia, but in terms of England I can't think of a worse experience you'll recieve. Getting to actually talk with a Dr is like getting a one on one with a celebrity A lister. Should you hit all 6 numbers and get to speak with one of the God's within the surgery, they will show you zero care, zero compassion hell zero interest. I'm confident my Jewish ancestry didn't help my case, but this is pretty normal these days. The receptionists as much as they usually take a lot of abuse, in this case are actually friendly and try to be helpful. The office manager though, she thinks she is managing so FTSE 500 company, not an office of 10 people, very self important and not to bright. She would realise this if she ever spent a day working in the real world. She clearly takes great satisfaction from calling people during her sparsely busy day and giving them bad news or telling them what they can and can't do, why anyone would choose this as a profession I'll never know. All in all, if your with them. Then run away fast as you can. If your thinking of joining them please don't.
+Practice response date: a year ago
+Practice response:
+Dear Mr Bash, I am sorry to hear your opinion of our Practice, I do wonder why you have not registered with another practice if you feel we are unable to meet your needs. Sometimes patients needs cannot be met due to clinical … More
+
+Author: Aaron Bash
+Date: a year ago
+Rating: 1 star
+Complete lack of any kind of care, compassion, even basic human empathy. You'd struggle to find a worse doctors, I'm sure there are, perhaps the far reaches of Outer Mongolia, but in terms of England I can't think of a worse experience you'll recieve. Getting to actually talk with a Dr is like getting a one on one with a celebrity A lister. Should you hit all 6 numbers and get to speak with one of the God's within the surgery, they will show you zero care, zero compassion hell zero interest. I'm confident my Jewish ancestry didn't help my case, but this is pretty normal these days. The receptionists as much as they usually take a lot of abuse, in this case are actually friendly and try to be helpful. The office manager though, she thinks she is managing so FTSE 500 company, not an office of 10 people, very self important and not to bright. She would realise this if she ever spent a day working in the real world. She clearly takes great satisfaction from calling people during her sparsely busy day and giving them bad news or telling them what they can and can't do, why anyone would choose this as a profession I'll never know. All in all, if your with them. Then run away fast as you can. If your thinking of joining them please don't.
+Practice response date: a year ago
+Practice response:
+Dear Mr Bash, I am sorry to hear your opinion of our Practice, I do wonder why you have not registered with another practice if you feel we are unable to meet your needs. Sometimes patients needs cannot be met due to clinical considerations, this is not being uncompassionate or a lack of care, sometimes the reason is in the patients best interests. If you wish to discuss your concerns with me, please contact the practice and we can meet to discuss. Andrea Simpson, Practice Manager
+
+Author: Emy PTurner
+Date: a year ago
+Rating: 5 stars
+Emy PTurnerLocal Guide · 6 reviewsa year ago
+
+Author: Taylor Lomas
+Date: a year ago
+Rating: 5 stars
+I attended a bloody test today just after 12pm and I am not sure who my doctor was I want to say her name was Sophie but if I am wrong I was called in for an early blood test today so if possible let the nurse know who took my blood test that she helped me so much while my blood was being taken very polite lovely and a very kind women made my experience at the doctors very calming and reassuring as it was my first time going for a blood test on my own best doctors ever .
+Practice response date: a year ago
+Practice response:
+Thank you for your lovely review, we always like to hear when things go well as well as when things go wrong. We will pass your review onto Sophie.
+
+Author: Iga Kuźnicka (Igaax)
+Date: a year ago
+Rating: 1 star
+Please can you elaborate why you have given the practice a 1 star rating, if you have concerns regarding our service, please let the staff know so that we can at least have the chance to understand.
+Practice response date: a year ago
+Practice response:
+Please can you elaborate why you have given the practice a 1 star rating, if you have concerns regarding our service, please let the staff know so that we can at least have the chance to understand.
+
+Author: Katie Lanata
+Date: a year ago
+Rating: 5 stars
+All the staff at this practice have been nothing but polite and helpful. I’ve always got in for appointments without a problem. Excellent care & service!
+Practice response date: a year ago
+Practice response:
+Thank you so much for your review, we take all comments onboard and try to improve our services. I will pass your comments onto the staff.
+
+Author: Josh Greenwood
+Date: a year ago
+Rating: 5 stars
+Josh GreenwoodLocal Guide · 8 reviewsa year ago
+
+Author: James Kitching
+Date: a year ago
+Rating: 1 star
+Please do yourself a favour and don’t switch to this surgery. 1 month for an appointment with a gp at a minimum. Also told I had to wait to see a gp to get my prescription resubscribed, when my old gp surgery did it in literally a 2 minute phone call, so now I’m left in excruciating pain for a month without access to medication. Worst decision ever to switch.
+Practice response date: a year ago
+Practice response:
+If you have concerns about our service please contact me or my deputies Claire or Jacqui. We do have to prioritise urgent appointments and for routine there may be a longer wait especially if you request a certain clinician. I am sure if the staff realise you are in excruciating pain they would fit you in. Please get in touch and I am sure we can fit you in. We don’t want anyone to be suffering.
+
+Author: Maciej Hanas
+Date: a year ago
+Rating: 1 star
+This place is a waste of taxpayer money, you can’t get anything done in there. So called doctor are only good at reading leaflets and can’t really put a diagnose on their own. I wish that I could put down ZERO ster review.
+Practice response date: a year ago
+Practice response:
+Dear Mr Hanas rather than dismiss the practice and insult the doctors do you not think it would be better to discuss your concerns with us so we can address them? You can always speak to a manager at the practice.
+
+Author: Samantha Holden
+Date: 2 years ago
+Rating: 1 star
+It would be helpful if you could tell us why you have given the practice a 1 star rating so we can address any concerns
+Practice response date: 2 years ago
+Practice response:
+It would be helpful if you could tell us why you have given the practice a 1 star rating so we can address any concerns
+
+Author: Alan Derbyshire
+Date: 2 years ago
+Rating: 5 stars
+Thank you for your review.
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review.
+
+Author: Eric Petela
+Date: 2 years ago
+Rating: 1 star
+It is just about impossible to get a face to face appointment at this practice. You are told to call at 8am. When you do that there are 25 people already on wait. By the time you get through you are told there are no available appointments that day! Doctors “work” just 2 to 3 days per week and only do phone consultations. There are too many assistants whose task it seems is to protect the doctors from actually having to see anyone. Shocking behaviour. Used to be able to ring any time of the day and get to see a doctor either the same day or the following day. When I tentatively enquired today was told it would be April before there were any appointments.
+Practice response date: 2 years ago
+Practice response:
+Dear Mr Patela unfortunately the level of demand for our services outstrips the capacity. Our reception staff are asked to triage calls so that patients with the most urgent conditions are seen first. Some doctors do not work full-time as … More
+
+Author: Eric Petela
+Date: 2 years ago
+Rating: 1 star
+It is just about impossible to get a face to face appointment at this practice. You are told to call at 8am. When you do that there are 25 people already on wait. By the time you get through you are told there are no available appointments that day! Doctors “work” just 2 to 3 days per week and only do phone consultations. There are too many assistants whose task it seems is to protect the doctors from actually having to see anyone. Shocking behaviour. Used to be able to ring any time of the day and get to see a doctor either the same day or the following day. When I tentatively enquired today was told it would be April before there were any appointments.
+Practice response date: 2 years ago
+Practice response:
+Dear Mr Patela unfortunately the level of demand for our services outstrips the capacity. Our reception staff are asked to triage calls so that patients with the most urgent conditions are seen first. Some doctors do not work full-time as in other professions. They are paid for what they do consummate to the hours they work. A day for our GPs is 12 hours so if a GP works 3 days that’s 36 hours. Many of our partners telephone patients first the. Ask patients to attend the surgery should they need to. Many of our patients prefer this. There are also face to face appointments with some of our doctors and nurses. If you wish to speak to me about your experience please do ask for me when you call. Andrea Simpson, Practice Manager
+
+Author: Jeff Hughes
+Date: 2 years ago
+Rating: 1 star
+Due to personal circumstance i had to Ring up today to cancel an appointment for having my bloods done, This was scheduled for next week and was relatively important towards a doctors ongoing diagnosis.was even asked very unprofessionally by the receptionist why i couldnt make the original appointment. I did tell her the reason which to be fair was quite personal. The 3 appointments that the receptionist had to offer did not suit my work pattern her reply " well we have nothing else ." (Must be booked up for months hey ?) What a superb way to treat a patient I understand the NHS is at breaking point but this practice is already broke.very rude reception staff.
+Practice response date: 2 years ago
+Practice response:
+Dear Mr Hughes unfortunately our appointments do get booked up by other patients who also have needs. It might be better to tell the receptionist when you can attend and we see if there is an appointment available. I am sorry you felt the receptionist was rude I will speak to the receptionist team about this. If you wish to speak to me please call me. I do not work on Fridays.
+
+Author: Irene Clayforthlee
+Date: Edited 2 years ago
+Rating: 5 stars
+I have been with this practice for the past at least 15 years and have always found them to be safe and reliable. The staff are polite and helpful and there are some fantastic Doctors there .
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review.
+
+Author: A P
+Date: 2 years ago
+Rating: 5 stars
+Myself & son are at this practice and have been for many years, as you can imagine with a child we’ve had to contact the doctors many times. We have had nothing but great customer service. I have always managed to get an appointment when needed. The ladies on reception are always polite & friendly although clearly extremely busy. A special mention to Doctor Ballin who has been amazing in helping me with an ongoing tricky health condition & the many tests/appointments following a diagnosis. Thank you!
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review. We are always interested in the views of our patients.
+
+Author: Successful Mind
+Date: 2 years ago
+Rating: 5 stars
+Thank you for your 5* review
+Practice response date: 2 years ago
+Practice response:
+Thank you for your 5* review
+
+Author: Dee Dee
+Date: 2 years ago
+Rating: 1 star
+Wish I could give 0 star!! Reception staff manners are awful! Not trying to help at all! Joke!
+Practice response date: 2 years ago
+Practice response:
+I am sorry you have had a negative experience. Please ask to speak to one of the managers. Who are more than happy to hear your concerns.
+
+Author: Fernanda Castro
+Date: 2 years ago
+Rating: 1 star
+Miscommunication, disorganized. My newborn son and I signed up for this medical practice, I delivered the form to reception and they said it would take a maximum of 1 week to get in touch with me. It had been 2 weeks and nothing, I had to be the one to call and when they answered they didn't have mine and my son's form. I mean, they couldn't find it anywhere. I had to pick up two registration form but I delivered them at the beginning of July and it was only at the end of last week that confirmation of my son's registration arrived but not mine. However, indignantly I called the front desk today and they are hung up my call. I've been waiting for 1 month to confirm the registration. A terrible service, I'm currently going to another medical practice to register me and my son, because I don't like this one at all
+Practice response date: 2 years ago
+Practice response:
+Hello Fernanda I am sorry you have had a negative experience. Please can you contact me Andrea Simpson Practice Manager as you are registered at the practice.
+
+Author: Lenny Norton
+Date: 2 years ago
+Rating: 5 stars
+Thank you for your review.
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review.
+
+Author: Bill Moss
+Date: Edited 2 years ago
+Rating: 3 stars
+After being contacted by a doctor yesterday telling me I had an infection in my stomach after having a biopsy. I tried to call I was 28 in the queue. Went to the practice and was told the next available appointment with the doctor who sent me the message was September 25th. Not happy at all.
+Practice response date: Edited 2 years ago
+Practice response:
+Hi Mr Moss, thank you for your comments, the doctor did leave you a prescription which should treat the infection. Please do contact me if you wish to discuss further. Thanks Andrea Simpson
+
+Author: Darren Hayward
+Date: 2 years ago
+Rating: 5 stars
+Thank you for your review.
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review.
+
+Author: Keet Bowe
+Date: 2 years ago
+Rating: 5 stars
+Have to comment on my experience yesterday Friday 09th June, I had developed a chest infection which left my breathing difficult and uncomfortable, called the surgery and asked for a phone consultation, I got a call back within the hour from a very friendly chap called Martin explaining my ailments, Martin organized a very lovely nurse ( sorry forgot her name🙏🏻) to come and see me due to me not being able to travel without discomfort, very fast response and great response from Tim's and parker chemist as well, the treatment has made my breathing 100% better, thank you so much Dr Ahmed and Silverdale medical practice 🙏🏻
+Practice response date: 2 years ago
+Practice response:
+Good to hear. Thank you for your review.
+
+Author: david T
+Date: Edited 2 years ago
+Rating: 5 stars
+What agreat visit as soon as you walk in fantastic smiling friendly reception staff Libby and Rachel what a team impeccable service as always the dentish was very professional her singing have greatly improved her assistant was also tapping in tune with the singing maybe they should form a band as always exceptional service very clean and hygienic very high standards
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review.
+
+Author: Tom Ce
+Date: 2 years ago
+Rating: 1 star
+Impossible to arrange any GP appointment
+Practice response date: 2 years ago
+Practice response:
+Please feel free to discuss this with me. Andrea Simpson Practice Manager.
+
+Author: cath gorst
+Date: 3 years ago
+Rating: 1 star
+Been unable to get any medical help for over two weeks. After phone consultation with a nurse practitioners was given a course of antibiotics told to contact again if did not work. Which I tried to do not knowing at the time she was only part time and when I asked the medical supervisor to see another member of the team as I needed medical help was told to go home and wait till she returned to work this practice is totally unprofessional unprofessional.and
+Practice response date: 2 years ago
+Practice response:
+Can you please contact us so we can rectify any problem rather than leave a review such as this. We are always willing to rectify problems as they arise. You are able to speak and see any of our clinicians and do not have to wait for a specific member of staff.
+
+Author: Clara
+Date: 3 years ago
+Rating: 5 stars
+Can't complain. Moved away now so at another practice but Silverdale was fine whilst living in Swinton. It's impersonal though but that didn't bother me too much as I don't need a lot of care.
+Practice response date: 3 years ago
+Practice response:
+Thanks for your review. I am sorry you felt the practice was impersonal. Wherever possible to try to maintain continuity of care.
+
+Author: Ganesh Gore
+Date: 3 years ago
+Rating: 5 stars
+Staff is very friendly. Never faced issue in booking an appointment.
+Practice response date: 3 years ago
+Practice response:
+Thank you for your review.
+
+Author: Marin Totev
+Date: 3 years ago
+Rating: 4 stars
+Waiting for ages
+Practice response date: 3 years ago
+Practice response:
+So sorry to hear this. Always come to the desk to enquire if you are waiting over 10 minutes.
+
+Author: Katrina Delaney
+Date: 3 years ago
+Rating: 5 stars
+Thank you for your review.
+Practice response date: 3 years ago
+Practice response:
+Thank you for your review.
+
+Author: Hayley Walker
+Date: 3 years ago
+Rating: 5 stars
+We joined the practice just over a year ago and I have some complex health issues and I have never felt more cared about, all the staff are so friendly and polite, the doctors never rush you, would highly recommend! Also Sharon in the pharmacy is always so helpful and friendly.
+Practice response date: 3 years ago
+Practice response:
+Thank you so much for the review. I will pass it onto the team.
+
+Author: Louise Khan
+Date: 3 years ago
+Rating: 2 stars
+Went to pick my dads prescription up today! He rang up early afternoon for it to be signed off by a doctor!l and told it would be ready in the afternoon! I went to collect at 5:00pm, only to hear the ‘back room’ staff slag me off for turning up at 5pm! Sorry but this should have been ready at the chemist by now! I had my rant at the poor receptionist, how rude to speak about patients like this!! And for the patient to hear as well 😡! Can’t fault the chemist at all! Big shout out to Sharon who goes over and above to help everyone out! 🙌🏼
+
+Author: Kayleigh Chadwick
+Date: 3 years ago
+Rating: 5 stars
+Excellent service, even great service during covid, reception are always on hand to help, happy with service been with them since about 7 years won’t change always get advice when need it..
+Practice response date: 3 years ago
+Practice response:
+Thank you for the feedback Kayleigh.
+
+Author: A. Karczmarska
+Date: Edited 3 years ago
+Rating: 3 stars
+A. Karczmarska4 reviewsEdited 3 years ago
+
+Author: Cameron Hickson
+Date: 3 years ago
+Rating: 1 star
+Been ringing for the last two weeks and the rude repressions Carnt be bothered giving me an appointment Changing doctors
+Practice response date: 3 years ago
+Practice response:
+The practice is extremely busy and our reception staff are trying their best to facilitate patient requests. If someone has been rude to you please let me know as this is unacceptable.
+
+Author: john coxon
+Date: 3 years ago
+Rating: 5 stars
+Cannot do enough to help. Doctor or nurse consultant after enquiry.
+Practice response date: 3 years ago
+Practice response:
+Thanks you for the kind review.
+
+Author: Mr S. (Mr S)
+Date: 3 years ago
+Rating: 5 stars
+A very good combined medical practice.
+Practice response date: 3 years ago
+Practice response:
+Thank you for your review. It’s good to know if we get things right for our patients.
+
+Author: Malwina Uk
+Date: 4 years ago
+Rating: 1 star
+Please answer the phone. Try to call in morning and afternoon 2 days. Was caller number one so no busy line but I thing reception staff is to busy for chating and can't pick up the phone.
+Practice response date: 3 years ago
+Practice response:
+We do answer the phones our stats show we are answering phones. The reception staff are very busy on other calls and dealing with online requests. If you experience any further issues regarding getting through on the telephones please let me know. Thanks Andrea Simpson (Practice Manager)
+
+Author: Gareth Churton
+Date: 4 years ago
+Rating: 5 stars
+I found a older lady face down on the pavement, she had suffers a heart attack ,i sent a neighbour to the surgery while i stayed and phoned emergency services, the Doctors at Silverdale were amazing ,they were FANTASTIC
+Practice response date: 4 years ago
+Practice response:
+Thank you for your feedback.
+
+Author: Kim Mcdade
+Date: Edited 4 years ago
+Rating: 5 stars
+Friendly and helpful
+Practice response date: 4 years ago
+Practice response:
+Thank you for your review
+
+Author: Sarah Pendlebury
+Date: 4 years ago
+Rating: 5 stars
+Absolutely fantastic service from the surgery, cannot fault the speed or treatment received for each query made. E.g Telephone call to surgery at 8am, call back by 8.05am asking to attend surgery. Seen by Dr Ballin and back out of the surgery with medication by 9am. Professional and caring practice, thank you!
+Practice response date: 3 years ago
+Practice response:
+Thank you for your review.
+
+Author: Meysam Saifi
+Date: 4 years ago
+Rating: 1 star
+The surgery suppose to open at 8am, trying to call them since 8am till 8.30am still close, call them after 10am they say you need to call between 8 to 9, so tell me how can I make a appointment. Don't answer phones and this is keep happening
+Practice response date: 3 years ago
+Practice response:
+We are most definitely not closed it will be that the phones are very busy. You have the option to request a call back where the system will automatically call you back.
+
+Author: Claire Weedon
+Date: 4 years ago
+Rating: 5 stars
+The receptionists are friendly and accommodating wherever possible and the doctors are fantastic and very thorough. I have never had any issues getting an apt or a call for me or my children and the app is a brilliant addition. Everyone we come into contact with has been nothing but courteous and friendly. Special thanks to Dr Hanley and Dr Ballin who have been fantastic. Thank you!!
+Practice response date: 4 years ago
+Practice response:
+Thank you so much for that lovely review. I will let Dr Ballin and Hanley know of your review.
+
+Author: Carli Bobs
+Date: 4 years ago
+Rating: 5 stars
+I've been with this doctors for over 5 years and resent I've been struggling with many things which they have gone through everything the way you would want them too. I've been referred and seen too within less that two weeks I've had them call me back giving me all the information I can't thank them enough especially DR Hanley she's been amazing.
+Practice response date: 4 years ago
+Practice response:
+Thank you for your kind comments. I will share with Dr Hanley.
+
+Author: BigBadBongo
+Date: 4 years ago
+Rating: 1 star
+Can not even get to see a doctor now days, all telephone consultations and never at the time you book for. They just ring when they feel like it.good luck trying to get any appointment when everyone registered at the practice all have to ring at the same time together which is 8am.
+Practice response date: 4 years ago
+Practice response:
+Unfortunately we are experiencing high demand for telephone consultations. We never deny any patient a face to face appointment, the clinician will speak to the patient and between the patient and clinician determine whether the patient needs to attend for a face-to-face consultation. The reason we do not give a time other than morning or afternoon, is that the GP will prioritise those who are most urgent and bring those who need a face to face appointment up to surgery before ringing the other patients.
+
+Author: Lucy Owen
+Date: 4 years ago
+Rating: 5 stars
+I joined this practice about a year ago when I moved in with my then partner, and ever since then, the service has been prompt, efficient and thoughtful. The receptionists are very organised and they work quickly and well to get you seen, whilst also staying professional. The doctors and nurses are second to none. The services ensure you get everything you need, including prescriptions, so quickly and the doctors and nurses all spend a lot of time taking great care of patients from my experience and those around me. Any negative comments, in my opinion, are miles away from what myself, my friends and my in-laws (who have been there for at least 25 years) have ever experienced. I can't recommend them enough.
+
+Author: Stephen Rowlands
+Date: 4 years ago
+Rating: 1 star
+Absolutely shameful duty of care , as I person being treated for depression and anxiety I found that after I'd advised the practice on 3 occasions of my situation each time being told I had nothing to be concerned about I was struck off the register as I was out of the area , I was currently in the process of moving back and explained this to the practice where had been a patient for 44 years, I now have to find a new practice in the midst of this pandemic, disgusting attitude to people's health. Do not use .
+Practice response date: 4 years ago
+Practice response:
+We only remove patients who do not live in the practice area or those where there has been a breakdown in relationship. I am not aware of your individual case.
+
+Author: Louise Caldwell
+Date: 4 years ago
+Rating: 5 stars
+Cannot fault this medical practice! I'm not a patient but I'm carer for my mum who is. They've always been great and really helpful. I've had an issue of sending her prescription via the wrong method (email) it's easy enough via the Web page but I must have had a blank brain that day .. Had a massive panic when I realised and she had no meds left. They'd done it for me anyway realising I don't usually send in this format and she was due meds. I thought I'd have a nightmare getting her meds today. Receptionist very polite, cheery and helpful. Keep up the good work Silverdale!
+Practice response date: 4 years ago
+Practice response:
+Thank you so much for the lovely review.
+
+Author: Phil P.
+Date: 4 years ago
+Rating: 1 star
+Very rude "practice manager" Andrea Simpson. Doctors, if there are any, only work from home. Forced to discuss your issues over the intercom at the main door, so anyone can hear. Make a complaint and Andrea Simpson tells you to change practice. How professional.
+Practice response date: 4 years ago
+Practice response:
+The practice is working hard to keep up with the demand on our services. Our staff work under very difficult conditions and it is extremely demoralising when patients are abusive to them or accuse hard working GP's of being at home when throughout this pandemic only those at risk have worked remotely and not from the health centre. If patients are clearly not happy with our services, they are able to register with other local good quality practices. We are working as hard as we can to meet the demands even those demands which might be deemed unreasonable.
+
+Author: man noname
+Date: 4 years ago
+Rating: 1 star
+Doctors and nurses seem fine if you get to see them. Receptionists rude unhelpful ignorant
+Practice response date: 4 years ago
+Practice response:
+We are sorry that you found our receptionists rude. The receptionists are only following the instructions of the GPs and unfortunately, we are unable to facilitate every request. The demand within the practice is very high and we ask patients to be understanding at this time.
+
+Author: Toni Yuille
+Date: 4 years ago
+Rating: 5 stars
+Kind & caring doctors & staff
+Practice response date: 4 years ago
+Practice response:
+Thank you thats nice to hear.
+
+Author: Ian Corlett
+Date: 4 years ago
+Rating: 1 star
+Please do not put a 1 review without any context. We are happy for patients to rate us, but it would be good to know what the issues are.
+Practice response date: 4 years ago
+Practice response:
+Please do not put a 1 review without any context. We are happy for patients to rate us, but it would be good to know what the issues are.
+
+Author: Oltjan Coraj
+Date: 5 years ago
+Rating: 2 stars
+Please let us know what the issue is for your review.
+Practice response date: 4 years ago
+Practice response:
+Please let us know what the issue is for your review.
+
+Author: Michelle Hughes
+Date: 5 years ago
+Rating: 1 star
+Not a very well run practice at all
+
+Author: Francesco Formica
+Date: 5 years ago
+Rating: 1 star
+Bad gp they told me come to register and then they said there is no appointment
+
+Author: Elizabeth Daley
+Date: 5 years ago
+Rating: 5 stars
+I cannot thank my doctor at the practice (unfortunately l am unable to put his name on this review), l feel that had it not been for IB l would not have been diagnosed & a quick visit to hospital found l had a DVT. Thank you again for treating me like a human being & looking after me. I owe you a lot.
+
+Author: Mozz Yeehaa
+Date: 5 years ago
+Rating: 1 star
+The nerve damage cause by Laura Fatarse was great
+
+Author: Callum Brook
+Date: 5 years ago
+Rating: 1 star
+If I could give less than one star I would, My mother is a patient here whom Suffers with mental health problems and more recently physical problems too, I have Been chasing up problems to no avail for around 8-12 months and am now struggling to even get an answer to my phone calls. Disgrace of a Medical centre.
+
+Author: Lex Elliott
+Date: 5 years ago
+Rating: 1 star
+Lex Elliott7 reviews5 years ago
+
+Author: Lorraine Byrne
+Date: 5 years ago
+Rating: 5 stars
+Docter balin has treated my husband & my self for many years... What a remarkable man... Friendly listens to your worrys & gets thing sorted... Docter balin rang Monday... Sorted test. blood tests & sent letter to hosp 3.8.20 just had phone call from consultant to arrange scan for my husband in the next week.. NHS brilliant... Thank you so much docter balin & all at silverdale practice amazing team...
+
+Author: Susan Williams
+Date: 5 years ago
+Rating: 5 stars
+I would just like thank all the staff at the Silverdale practice for all there care and attention my 83 year mum as received over the passed 4/6 weeks I would personally like to thank Dr Armed and the Nurses Helen Julie and Maria I understand its difficult time at the moment but your doing an amazing job thank you once again. Sue Williams
+
+Author: Linda Whitworth
+Date: 5 years ago
+Rating: 5 stars
+I have been with sliverdale medical practice since i was born, And i am 61yrs old now & so has all my family. I always received the best medical care anyone could ever wish for & me & my family have had some very serious illnesses, And through the excellent medical staff,Received the treatment we needed & still are. Excellent service from all the team that work tremendously hard for the patients in our community, From the Reception staff Admin Pharmacy & Our Amazing Doctors & Nurses Excellent. And the receptionist will always do all they can to get you appointment's & are always polite & helpful & The Doctors & Nurses has well i have always been treated with upmost dignity & respect. Excellent service. ❤️🙏
+
+Author: darren williams
+Date: 5 years ago
+Rating: 5 stars
+Never had a bad experience with the surgery. Found the doctors, nurses and the reception staff to be helpful and professional every time I've needed anything. Would recommend them to anyone in the area.
+
+Author: T. Mc
+Date: 6 years ago
+Rating: 5 stars
+I can not praise Silverdale Medical Centre enough. Dr. Ballin is so efficient and the epitome of what a Dr should be! He truly goes above and beyond the call of duty, and I can not thank him enough for everything he did for me. Also have to mention the wonderful receptionists Sue and Pete. Nothing is too much for them and you are always greeted with a smile no matter what. They are both a credit to Silverdale Medical.
+
+Author: Matthew Lloyd
+Date: 6 years ago
+Rating: 1 star
+Matthew Lloyd4 reviews · 1 photo6 years ago
+
+Author: David Wild
+Date: 6 years ago
+Rating: 2 stars
+David WildLocal Guide · 12 reviews · 83 photos6 years ago
+
+Author: Jodie Jervis
+Date: 6 years ago
+Rating: 1 star
+Staff are very rude
+
+Author: Mirta 000
+Date: 6 years ago
+Rating: 1 star
+I feel like I'm being played around with because I'm a foreigner. GP practice was perfectly fine while I only needed contraception prescriptions. Recently I found out that I have a bad genetic issue and that I need a lot of care as far as my heart has been concerned and I have been played around ever since. First they didn't want to issue me a referral for an echo-cardiogram. It took for the nearby hospital to tell them that they have to for them to do so. Now the results have came back and I have a copy of them, as thankfully I have requested that. It says that I should be referred to cardiology for further testing. The results are also not very good. Well I was told to arrange a phone appointment by the GP practice. Did so. Waited a week for the appointment to arrive. Nobody called me. Called them to arrange a walk-in appointment. Was told "sorry can't do that" and hung up on. I messaged a private clinic. I will have to pay for the referral that I should get with far less fuss than this.
+
+Author: Chelsie Wright
+Date: 6 years ago
+Rating: 5 stars
+I rang around loads of clinics this morning complaining about struggling to breathe and everyone single one of them couldn't have cared less because I wasn't registered there. Luckily for me I found Silverdale where I explained to the receptionist and she went out of her way to get me on the system as an emergency and was seen too promptly. My Doctor was lovely, friendly and smiling and even though I went in there quite panicky I left feeling comforted and relaxed. I was told that I needed to have a blood test and upon booking at the counter a lovely nurse let us know that she was available to do it there and then if they just booked it in. I left after about 1 hour, a now registered patient there, bloods done, follow up appointment booked and prescription in hand. I think sometimes it's easy to get frustrated at our local practice because they always seem so busy, but at least at Silverdale they care and they try their hardest to help when needed.
+
+Author: Shannan (Sk)
+Date: 6 years ago
+Rating: 1 star
+Shannan (Sk)12 reviews6 years ago
+
+Author: stacey bluer
+Date: 7 years ago
+Rating: 1 star
+One star is too generous, but zero wasn't an option. I've been a patient since birth at this doctors and have left their 'care' at the age of 30. The doctors are at best incompetent, at worst arrogant and dismissive. They have no regard for patient confidentiality and try and fob patients off when appointments are available.
+
+Author: Charles Veitch
+Date: 7 years ago
+Rating: 1 star
+You will NOT be treated with dignity and autonomy at this surgery.
+
+Author: Aj KD
+Date: 7 years ago
+Rating: 1 star
+The sweet tongued rudeness of the receptionists it’s unreal! , with not a ounce of understanding or compassion. It’s disgusting how bad the NHS is getting. I have live all over the UK and Silverdale has to be the worst GP in general I have ever had.
+
+Author: James Gartley
+Date: 7 years ago
+Rating: 5 stars
+Silverdale medical practise Pendlebury. As a patient of Silverdale medical practise you can expect a most reliable,efficient and consistent high level of healthcare service. The doctors ,nurses and staff are outstanding, whilst working in a very demanding environment. I am delighted to be a patient at Silverdale and I would recommend Silverdale , as an outstanding medical practise. mr James Gartley
+
+Author: Agnieszka Kasinska
+Date: 7 years ago
+Rating: 1 star
+Agnieszka Kasinska7 years ago
+
+Author: Tutti milan
+Date: Edited 7 years ago
+Rating: 1 star
+Been with that surgery nearly 2 years and this is the worst one i even been . Poor reception , especially on the mornings definitely they need 2 people . If any of the docs are a bit behind the time , there is no info about that . Last time i waited 45 mins and i just left . Ridiculous to wait 1 hour and if you are late they will send you back for new appointment ! That is so wrong and seems no one taking on board any of the complains anyway !
+
+Author: C.T.E82 82
+Date: 8 years ago
+Rating: 1 star
+This place is a joke, can never get through. It says to call back later if none urgent and if its urgent to replace handset and dial again, Iv heard this message 61 times this morning, how the hell does this system work of there's. It doesn't!!! The worst practice in Manchester. Also if your lucky enough to get through, the receptionist asks what's wrong with you and they take it up on them self to you weather or not it's serious enough for an oppointment and if you say it's private and don't wish to disclose that information to a receptionist, they won't give you an oppointment plus the receptionist are all local to the area and tell there friends about people's conditions!!! That place needs cleaning up, get rid of all the reception and call staff and get all new professional staff in.
+
+Author: Unmanifested Cucumber (Dark-Union)
+Date: 8 years ago
+Rating: 1 star
+I've been with them for 7 years and despite my hopes they never improved. Poorly manned reception, ridiculous wait times and lack of general human care. People playing roles and mostly concerned with paperwork rather than wellbeing.
+
+Author: Vint To Mint frames
+Date: 8 years ago
+Rating: 1 star
+Terrible servise, every time i speak to one of the reception staff, no leighway despite your condition in the end i rang the hospital and the paramedic ended up ringing back the gp surgery for them to take my condition serious and then book me in asap, Dredfull.
+
+Author: lilijana davidson
+Date: 8 years ago
+Rating: 1 star
+Shocking
+
+Author: Anna M
+Date: 8 years ago
+Rating: 1 star
+Anna M8 years ago
+
+Author: Andrew Taylor
+Date: 9 years ago
+Rating: 1 star
+Awful service, closed when i had an appointment, don't reply to e-mails. Basically, the reception staff don't want to know and won't take suggestions on board
+
+Author: Kyle Lewtas
+Date: 9 years ago
+Rating: 1 star
+Shocking Service over the Phones complete ignorance.
