@@ -4,16 +4,21 @@ Postcode: BL2 6DY
 Google Maps title: Dr Lowe & Partners
 Google rating: 3.9
 Google review count: 42
-Google Maps URL: https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4247306,15z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VOb09HRkhaWHBCUlJBQuABAPoBBAhCEC8!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+Lowe+%26+Partners/@53.5790911,-2.4818939,13z/data=!4m12!1m2!2m1!1sTonge+Fold+Health+Centre+BL2+6DY!3m8!1s0x487ba6607ea66225:0xb99c9a317c4209d0!8m2!3d53.5790911!4d-2.4056762!9m1!1b1!15sCiBUb25nZSBGb2xkIEhlYWx0aCBDZW50cmUgQkwyIDZEWVoiIiB0b25nZSBmb2xkIGhlYWx0aCBjZW50cmUgYmwyIDZkeZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOcUxTMUlZVTVCRUFF4AEA-gEECFcQQA!16s%2Fg%2F1hjhbrty5?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.0
+Review collection mode: full_feed
+Review cards collected: 42
+Owner replies collected: 0
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82011-tonge-fold-health-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Margaret
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
-Margaret1 reviewa week ago New
+Margaret1 review2 weeks ago New
 
 Author: Brian Grimshaw
 Date: Edited a month ago
@@ -21,14 +26,19 @@ Rating: 4 stars
 Good family doctors. Dr J Lowe and Dr Falkner have retired (Sadly all good things must end). New doctors are fine Have to phone up early morning 8 to 8.30 to get a phone appointment or emergency appointment can be hit and miss for same day face to face appointment. Like most doctors surgery's no walk in service. May not be able to see or speak to doctor of your choice as there are a number of trainees woking here. Have started an out of hours service but only trainee GPs for minor ailments.
 
 Author: Paul Mirza
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 The best Doctors around
 
 Author: Nicola Henry
-Date: 5 months ago
+Date: 6 months ago
 Rating: 3 stars
 Got a call to say GP needed to do an exam following an ultrasound. GP who I seen kept looking up and down at me from the moment I walked in the room. Body language shocking! Asked me why I was there and why I needed the exam?? Attitude made me feel horrible considering the reason I was there. When I said I think it was all to do with menopause she told me I had to make a new appointment for that which is fair enough if it takes more time. She wouldn’t prescribe me my migraine medication and said needed another appointment for that! I wouldn’t usually leave a bad review if something didn’t really annoy me but I feel the GPs attitude to me from the moment I walked in was absolutely disgusting! Booked yet another appointment with a kinder doctor over the phone who actually listened to me and prescribed correct medication for my needs.The 2nd GP who dealt with my needs was brilliant! Hats off to him! The 1st one I’ll never book an appointment with again!
+
+Author: Elaine Buckley
+Date: 6 months ago
+Rating: 5 stars
+Every doctor i have ever seen have been very good
 
 Author: Tony Barlow
 Date: 6 months ago
@@ -36,9 +46,9 @@ Rating: 1 star
 I've waited over 3 weeks for a phone consultation despite contacting the surgery because I'm in extreme pain and being told that I would have to have a phone consultation first to be assessed. I've even contacted the surgery a second time to see if the appointment could be brought forward only to be told thar there aren't any other appointments available and that I would have to try ringing at 8am each morning to see if I can get one...a bit difficult when I start work at 7am and drive for a living. Finally got to the day of my appointment only to receive a text message saying that the doctor had tried to get through but couldn't. That's a bit strange because I received the text 5 minutes after I had allegedly been called and also rang the surgery straight back at 16:43 who said the doctor called at 16:28 . Amazing isn't it that I can get through to the surgery but the doctor couldn't get in contact with me when I was in the same location...then again it is getting close to home time after a very long day so why try any harder than you have to. I've now got a appointment with the out of hours doctor in two days time...pity I wasn't offered this earlier. The surgery has gone down the pan and doctors are exploiting the phone consultation.
 
 Author: Salve Popanes
-Date: 8 months ago
+Date: 9 months ago
 Rating: 2 stars
-Salve Popanes2 reviews8 months ago
+Salve Popanes2 reviews9 months ago
 
 Author: Carol Turner
 Date: 9 months ago
@@ -59,3 +69,158 @@ Author: steve barlow
 Date: a year ago
 Rating: 5 stars
 steve barlowLocal Guide · 343 reviews · 230 photosa year ago
+
+Author: Maxine Cooper
+Date: a year ago
+Rating: 5 stars
+Calls always answered in a friendly timely way. Very helpful and patient recetionists. Doctors and nurses very supportive and totally patient friendly. Never had a complaint since coming to this practice about 10 years ago.
+
+Author: Ken Royles
+Date: 2 years ago
+Rating: 5 stars
+Ken RoylesLocal Guide · 214 reviews · 118 photos2 years ago
+
+Author: Brian Smith
+Date: 2 years ago
+Rating: 4 stars
+I have been a patient at the surgery for 40years and I am now in my 60s. I have never had any cause to complain in an that time. The Doctor's, Nurses and Receptionists are professional and caring in everything that they do.
+
+Author: Bob Maree
+Date: 2 years ago
+Rating: 1 star
+Bob MareeLocal Guide · 135 reviews2 years ago
+
+Author: Gemma Eccles
+Date: 2 years ago
+Rating: 3 stars
+Well never had problems with the doctors there fab ots the receptionist think they now it all whos requests for the bloods doctor nothing on here well that's what he said anyway I got my appointment. But they should mind thete own business and if you say you need bloods should not be asked anything eles
+
+Author: Julie Allen
+Date: 2 years ago
+Rating: 5 stars
+Lovely Lady doing my Ultrasound today very reassuring.
+
+Author: Ali Abdallah Hassan
+Date: 2 years ago
+Rating: 5 stars
+My lovely GP Thank you every one ther .
+
+Author: David Mills
+Date: 2 years ago
+Rating: 5 stars
+David MillsLocal Guide · 21 reviews · 53 photos2 years ago
+
+Author: Chris Stokes
+Date: 2 years ago
+Rating: 5 stars
+I honestly don't get the poor reviews, I've been here 9 years and cannot fault it other than a cold receptionist at one point who has now left. The doctors are supportive and have helped me many times in the past, there are always some negativity with people but for me 5* and cannot even compare it with the abomination which is Tonge moor health centre and it's absolutely shambolic practice. The GP's are humans and talk to you as a human not just another job task do be sidelined. Thank you for your support all of you, outstanding performance
+
+Author: Roz
+Date: Edited 2 years ago
+Rating: 1 star
+20 years ago Dr Faulkner told me I had IBS without first testing for other causes. Yet on my file it is listed as "suspected IBS" so not formally diagnosed despite being told it was. You cannot diagnose IBS without ruling out other issues. Celiac runs in my family, but it could also be IBD. So been possibly living with either of these untreated for 20 years. Also refused my Right to Choose for ADHD diagnosis (details of which are below, as this was my first reason for the negative review), and had to go private and turns out I do in fact have ADHD. Also failed my Mother in multiple ways, who has now died unexpectedly this year ----- FINAL EDIT: P-UK got in touch personally with Dr Faulkner (only contact they could find) and were ignored. They don't wish to help at all so I'll be switching GP. EDIT: Responded to my letter, basically saying they do not have funding for Bolton, when P-UK have the authority of NHS England that any NHS England patient is eligible for treatment with them under the Right to Choose. I'm now having to follow up. Also, what health centre does not have a way of contacting them online? ----- Really disappointed. Sent a letter to ask to be referred to a specialist (under my Right to Choose) to see if I potentially have ADHD and have had no follow up almost a month later. I'm sure my letter, sent by Signed for Delivery and received, was ignored or thrown away, despite me taking the time to write it and filled in forms which could indicate that I have it and I should be referred. Can't get into the clinic to see someone and ask (though I sent a letter so I'd have some evidence of it). No one has sent a letter or called me. This year has has been extra difficult for me and was hoping I could figure it out so I could get possibly CBT (therapy) to manage it but the clinic do not wish to help. Happy to speak to someone on the phone if they phone me about it, but last time I called about another issue they didn't even know what had happened.
+
+Author: Sonia Forsyth
+Date: 2 years ago
+Rating: 5 stars
+I would like to leave a review for Niaomi the practice nurse. I have been to see her on 3 occasions over the past 2 weeks and each time she has performed my checks, taking bloods and my ecg in the most professional manner. Nothing was too much trouble for her and her friendly reassuring approach made it so much easier to talk about my problems. A real credit to the surgery. Best I've seen. ❤
+
+Author: Katie Brett
+Date: 3 years ago
+Rating: 1 star
+AVOID AVOID AVOID If I could gove zero stars I would, this has taken a while for me to write. Been with the surgery since birth never changed from the area I live in. I had literally just had a baby and within the first week of giving birth contacted the surgery to register him. Not only was I told this wasn't possible due to my area I was then told I was to find another doctor as I was also out the area due to changes within area restrictions. I explained I had just given birth and had been with them myself for over 30 years to which I was told well I'm sure you will find another doctor, I also explained my concerns over my new babies vaccinations and also his health check an my own, I was told we will send all details over but it can take 8 weeks. I was mortified in tears and emotions all over the place to which I was met with a cold non helpful response an one point a laugh, I didn't find this a funny situation at all I was in a vulnerable position and then had to find myself an my newborn baby a doctor. Also my eldest son was registered with this surgery but at no point was it mentioned he had to be removed it made no sense! I Pleaded to stay with the surgery as I felt comfortable with to be met with we have already removed you whilst on the phone I suggest you find somewhere else. Absolutely disgusting. I removed my eldest son from them as I do not want him to have to deal with surgery and reception staff who work within it. I also accept surgeries have to adhere to changes of area etc but I do not accept how it was dealt with and how I left after just having a baby the most vulnerable position a women could be in! I am so glad I found elsewhere who immediately arranged checks for my baby an myself an ensured all vaccinations where taken care of.
+
+Author: Gaynor Van Den Berg
+Date: 3 years ago
+Rating: 5 stars
+Literally cannot fault this place. Been here since I was a child. They've been so supportive, even through Covid. Superb service and my husband and I have always been able to at least talk to someone if we've needed reassurance. We're so grateful.
+
+Author: Sumera Majeed
+Date: 3 years ago
+Rating: 5 stars
+I like this place
+
+Author: Laertis Kyra (Larry)
+Date: 3 years ago
+Rating: 5 stars
+Laertis Kyra (Larry)Local Guide · 73 reviews · 203 photos3 years ago
+
+Author: Helen Tatr
+Date: 3 years ago
+Rating: 5 stars
+I have been with this practice since birth and am now in my 50s with a range of long term health needs. The rest of my family are also registered with the same practice and several of them including my daughter have complex ongoing health needs. We have all always had amazing care and service from all involved in the practice and I would never want to go anywhere else. As with all NHS services there maybe a wait for routine matters but whenever we have needed them or the need has been urgent the practice have always seen us quickly! Well done to everyone involved in the practice keep doing what you are doing as you’re amazing!
+
+Author: John Ashworth
+Date: 3 years ago
+Rating: 5 stars
+Been at this practice for years and I can't praise the doctors and auxiliaries highly enough. Some of the waiting times can be frustrating but not as bad as simple people have told me about theirs.
+
+Author: Diane Grundy
+Date: 3 years ago
+Rating: 5 stars
+Diane GrundyLocal Guide · 48 reviews · 37 photos3 years ago
+
+Author: Heidi Woodbridge
+Date: 3 years ago
+Rating: 5 stars
+Heidi WoodbridgeLocal Guide · 22 reviews3 years ago
+
+Author: Usman Riaz
+Date: 3 years ago
+Rating: 1 star
+Usman RiazLocal Guide · 30 reviews3 years ago
+
+Author: David Bailey
+Date: 3 years ago
+Rating: 1 star
+Not a good surgery for patient with long term health condition receptionsit & doctors are very rough over the phone. I registered my whole family but now thinking to move somewhere else because its so disappointed by treatment.
+
+Author: Alex Taylor
+Date: Edited 4 years ago
+Rating: 4 stars
+Alex TaylorLocal Guide · 2 reviews · 35 photosEdited 4 years ago
+
+Author: Stu Brooks
+Date: 6 years ago
+Rating: 5 stars
+Stu Brooks5 reviews6 years ago
+
+Author: melvyn fearn
+Date: 6 years ago
+Rating: 3 stars
+No comment
+
+Author: mark edge
+Date: 6 years ago
+Rating: 4 stars
+mark edge5 reviews · 1 photo6 years ago
+
+Author: ste penkethman
+Date: 6 years ago
+Rating: 5 stars
+ste penkethman8 reviews6 years ago
+
+Author: Kassem Noureddine
+Date: 6 years ago
+Rating: 5 stars
+All doctors here are excellent. Even after leaving a consultation I was called back up and offered further advice which the doctor forgot to mention during the consultation. Reception staff also friendly and helpful, which is very rare to come across.
+
+Author: Linda Wood
+Date: 6 years ago
+Rating: 5 stars
+Linda Wood6 years ago
+
+Author: Feroza Abbas
+Date: 8 years ago
+Rating: 5 stars
+Feroza Abbas1 photo8 years ago
+
+Author: Jane Mackelvie
+Date: 9 years ago
+Rating: 5 stars
+Excellent service I can always get in to see my doctors and all of them are excellent
+
+Author: Michael Whiting
+Date: 9 years ago
+Rating: 4 stars
+Considering the bad reviews lots doctors practices receive my family can only praise the attention and service we receive from all the doctors and staff at this practice

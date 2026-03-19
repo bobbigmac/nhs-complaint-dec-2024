@@ -3,12 +3,22 @@ Canonical code: P82001
 Postcode: BL2 6NT
 Google Maps title: The Dunstan Partnership
 Google rating: 3.0
-Google review count: 59
-Google Maps URL: https://www.google.com/maps/place/The+Dunstan+Partnership/@53.5824314,-2.384221,17z/data=!3m1!5s0x487ba67e13f48233:0xc6b1a2a9e0acfc45!4m8!3m7!1s0x487ba67e10b0256b:0xf458629668fb4106!8m2!3d53.5824314!4d-2.384221!9m1!1b1!16s%2Fg%2F11c1szftjb?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 60
+Google Maps URL: https://www.google.com/maps/place/The+Dunstan+Partnership/@53.5824346,-2.3868013,17z/data=!3m1!5s0x487ba67e13f48233:0xc6b1a2a9e0acfc45!4m8!3m7!1s0x487ba67e10b0256b:0xf458629668fb4106!8m2!3d53.5824314!4d-2.384221!9m1!1b1!16s%2Fg%2F11c1szftjb?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 60
+Owner replies collected: 0
+Raw review responses captured: 6
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82001-the-dunstan-partnership.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Deborah Bates
+Date: 16 hours ago
+Rating: 5 stars
+I've been with this doctor's for 38 years and for maybe the last 10 years I haven't had a good experience with them, I went today and I saw Dr Whittaker who was great, he listened and went through each of my problems fully, I have seen him a couple of times with my children and he's always been really helpful and friendly, maybe he could train the others because let's face it, us as patients probably want to be at the doctor's less than the doctor themselves and a friendly smile goes a long way. Also you could do with improving the online form it's long winded and difficult to find them repetitive. But a big shout-out to Dr Whittaker, thank you.
 
 Author: Hannah Brooks
 Date: a month ago
@@ -46,7 +56,7 @@ Rating: 1 star
 Got to be one of the worst GP practices in the north west you turn up for your appointment you’ll be waiting 20+ minutes every single time. It takes two weeks to get an appointment because of their ridiculous online form that you have to fill in because you can’t just book a simple GP appointment over the phone. You must fill a survey in and wait for it to be looked at. If you hit traffic and are 10 minutes late your appointment will be cancelled and you won’t be able to get back in for another 2 weeks. Great health care all round! Anyone I speak to about getting into a GP they can’t believe how difficult this partnership is to get into compared to their own. A joke and I would recommend anyone to switch if they could
 
 Author: jacqueline nedu
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 Diabolical service
 
@@ -59,3 +69,248 @@ Author: mik linton
 Date: 4 months ago
 Rating: 2 stars
 Took 10 weeks to reply to a request for my scr from a private clinic in the end I had to go and get a copy and post it myself. Then after waiting 2 months for them to answer a request from the DVLA for my medical records they decided they never received the letter I got a copy of.
+
+Author: carl gaskell
+Date: 6 months ago
+Rating: 5 stars
+Nothing but always good experience, dont normally deal with reception because of the tablets to log in but did today and where nothing but lovely
+
+Author: Jussy Foo
+Date: 8 months ago
+Rating: 3 stars
+Jussy FooLocal Guide · 28 reviews · 20 photos8 months ago
+
+Author: Hina Mistry
+Date: 9 months ago
+Rating: 1 star
+I have edited this review as one of the drs asked me to change it: I am deeply disappointed with the care at this practice. Despite experiencing severe symptoms—including persistent tinnitus and excruciating ear pain—I struggled to secure a timely appointment. On multiple occasions, I was told no slots were available and advised to call 111, only to later receive conflicting information about GP availability. This poor communication delayed my treatment unnecessarily. After resorting to out-of-hours services, I was finally seen within minutes and diagnosed with a middle ear infection, reinforcing concerns about mismanaged scheduling. Some of the GPs at this practice do not seem to take patient concerns seriously, making it difficult to receive necessary referrals. One GP refused to refer me to ENT despite my ongoing symptoms—only for an out-of-hours GP to confirm that an ENT consultation was required to rule out vascular issues. Additionally, my interaction with a staff member, Katie, was unprofessional—she was abrupt, dismissive, and hung up on me without cause. The lack of clarity regarding referrals, particularly with ENT, further highlights ongoing issues with patient care. While I did encounter a helpful receptionist, the overall decline in professionalism and responsiveness at this practice is alarming. I am also concerned that my previous Google review may have been hidden, which raises further questions about transparency and accountability. Patients deserve better communication, respect, and timely medical attention.
+
+Author: Debbie
+Date: a year ago
+Rating: 1 star
+Extremely dismissive and unhelpful reception staff.Computer says no! Zero room for any form of common sense.
+
+Author: kirsty harrison
+Date: a year ago
+Rating: 5 stars
+This GP practice runs efficiently during a time which is very difficult for primary care. Dr Hague is a fantastic doctor who shows knowledge and compassion in equal measures. Thank you
+
+Author: Charlie Sharpy
+Date: a year ago
+Rating: 3 stars
+Generally find the gp practice okay. But recently I have tried to access my record via the app and they refuse to give access unless I attend the practice and fill out paper based forms which isnt how the NHS app tells you to request the access. . They also won't change my name despite being sent evidence. Honestly it's causing me so much anixety
+
+Author: Donna Maurice
+Date: a year ago
+Rating: 1 star
+The worst Dr's ever
+
+Author: Davey Safty Lamp Light Bearer Under the Ground
+Date: a year ago
+Rating: 3 stars
+Generally, a good gp service. Most of the staff are very polite. However it can be a little hit and miss whether you get the generally common rottweiler nhs receptionist who don't know any better. Haa hoo.
+
+Author: iydti ytcgxj
+Date: 2 years ago
+Rating: 5 stars
+Very helpful and professional receptionist and service, thank you!
+
+Author: Jonny Boardman
+Date: Edited 2 years ago
+Rating: 1 star
+How can you be in que position 2 for an hour? I'm sure they ring up themselves and just leave it on so they don't have pick up the phone, shambles of a place
+
+Author: jo Campbell
+Date: 2 years ago
+Rating: 5 stars
+I've found that the staff and doctors here are super helpful, often going much further than they need to to resolve queries.
+
+Author: Mick Doran
+Date: 2 years ago
+Rating: 5 stars
+I am the neice and carer for 2 very elderly relatives with complex needs. I am not a patient at this practice. I am extremely impressed by most of the staff here. Very helpful, considerate and aware of my very difficult situation. Clinical services are always accessed when needed and most of the receptionists are very happy to go the extra mile for me. Thank you.
+
+Author: Jacki Clarkson
+Date: 2 years ago
+Rating: 1 star
+This place is going worse in my opinion, you can't ring anymore to order a repeat prescription... what happens if you can't physically get in.. Ridiculous
+
+Author: Meagan Abedinzad
+Date: 2 years ago
+Rating: 1 star
+Very unhelpful
+
+Author: Steph D
+Date: Edited 2 years ago
+Rating: 1 star
+My daughter had blood tests Tuesday, I was told to phone up Thursday for the results. I phoned Thursday and after a 10 minute wait in a queue I was told the results were in but a doctor hasn’t looked at them yet call back tomorrow. I phoned back Friday, waited 8 minutes in a query and was then cut off, called back again and waited 10 minutes to be told they’ve still not been looked at, so call again Monday. Do Dunstan reimburse the cost of phone calls I wonder!! No service what so ever. Update - Dunstan said they had to refer us to Fairfield for paediatric consult... Fairfield wont see us because we are not a Bury postcode - well done again Dunstan.
+
+Author: Shirley Campbell
+Date: 2 years ago
+Rating: 1 star
+Joanna/Joanne Receptionist put the phone down on me when I mistakenly rang before 2pm for a test result, didnt explain or anything, and I had waited patiently in the queue for 20 mins ….. just downright rude
+
+Author: deborah browne
+Date: 3 years ago
+Rating: 5 stars
+In my opinion one of the best Practices in Bolton. Excellent leadership, professional and friendly service. I have never, in over 20 years of being with this practice, had any issues with the care, and support, me and my family have received. In these challenging and changing times, i just want to say that the Dunstan Partnership are providing a fantastic service. Thank you.
+
+Author: Jermaine Parram
+Date: 3 years ago
+Rating: 1 star
+Trying to get an appointment this morning to be told the phone lines are down and I can't book online there is no email address to contact it's ridiculous
+
+Author: Jenna Milligan
+Date: 3 years ago
+Rating: 5 stars
+Can’t fault this practice, amazing service all the time!
+
+Author: Vicky Wilson
+Date: 3 years ago
+Rating: 5 stars
+Emergency appointment with DR Sprott with a young poorly granddaughter. Very thorough no rush at all even though last minute appointment. Assessed and diagnosed and prescribed accordingly. Had patience and explained symptoms clearly, made a young mum feel she had done the right thing. Honest and trustworthy GP. Thankyou so Much Xx
+
+Author: Marilyn Lundy
+Date: 3 years ago
+Rating: 5 stars
+Only been their patient for 6 weeks respite but they have been very thorough and efficient.
+
+Author: Neil Outram
+Date: 3 years ago
+Rating: 1 star
+Very poor service unable to work the Website to book an appointment unless you want to self diagnose your own problem you call the reception they might as well have automated answer as all they say is go to the website I am trying to see a doctor but very poor service
+
+Author: Lisa Barber
+Date: 3 years ago
+Rating: 1 star
+After ringing today to b told to ring 111 then rang them and was told I will b referred back to doctors then resptionist ring to tell me the chemist will c me and give me antibiotics which was wrong because they can't. Now I'm waiting for the out of hours doctor to ring me has I'm very poorly. I think I'm going to b looking at changing my doctors because this is unacceptable
+
+Author: KrucaFux XD
+Date: 3 years ago
+Rating: 2 stars
+one or two doctors do really care all the rest - typical for paid by being not by efficiency. but the receptionists - this is a new level of NO SERVICE!. over the last two years I have been repeatedly refused the service by receptionists.
+
+Author: Janet Bianchi
+Date: 3 years ago
+Rating: 5 stars
+A first class GP practice. Both my parents, myself and my brother have been patients at this practice. I have been the main carer for my relatives for three very intensive years and have always had first class support from Drs, Fiske, Whittaker, Hague and Sprott. I was always able to speak to a doctor and they would come out if needed (even during the height of the pandemic). Anyone living in the catchment area is very lucky. I am no longer in the local area and my GP practice doesn’t come anywhere near the service from Dunstan Medical Centre.
+
+Author: Rob Entwistle
+Date: 3 years ago
+Rating: 1 star
+The doctors and physios at this partnership are first class... I wish the same could be said for the receptionists who work here, as every time I call up theyre either rude and dismissive on the phone, very unhelpful, or just downright rude and ignorant. That's even of they bother answering the phone and don't cut you off whilst on hold! Also physically arguing with patients over the phone. If you do register her just be prepared for a pretty unfreindly first contact every time...
+
+Author: Jess Every
+Date: 3 years ago
+Rating: 1 star
+Absolutely shocking surgery. Just honestly, fully AVOID!
+
+Author: Phil Boardman
+Date: 3 years ago
+Rating: 5 stars
+Brilliant Doctors that I moved to, I was always given an appointment to see someone quickly and never had cause to complain. A really great practice.
+
+Author: Peter Hamer
+Date: 4 years ago
+Rating: 1 star
+Shocking telephone service - Surgery has the habit of hanging up on you whilst you are in the Q normally when you get to one in the Q. You then have to join the Q at the back again. Staff who are doing this need to be taken to task!
+
+Author: Jimi Ellis
+Date: 4 years ago
+Rating: 1 star
+Assumed i had Covid therefore no treatment! Found some antibiotics and now fine.
+
+Author: Cynthia Taylor
+Date: 4 years ago
+Rating: 5 stars
+I had an appointment today with the Male Advanced Practitioner which was excellent.Thank You for caring and listening.
+
+Author: Wendy Keating
+Date: 4 years ago
+Rating: 5 stars
+Receptionists are always helpful . Doctors or nurses always available in some form for appointments .
+
+Author: robert cosgrove
+Date: 4 years ago
+Rating: 1 star
+pathetic , unhelpfull takes 2 long to get a appointment , website not good , pleanty of excusses , for not seeing patients ,
+
+Author: Julie Bentley
+Date: 4 years ago
+Rating: 5 stars
+Excellent service, Receptionist this morning was every so helpful.
+
+Author: Gaynor Van Den Berg
+Date: 4 years ago
+Rating: 1 star
+Tried to flag up my concerns about their frail 91 year old patient, spoke to rudest receptionist, zero shitz given. Impossible to get past this firewall of misery. Thank god I'm at Tonge Fold.
+
+Author: Denise Whittaker
+Date: 4 years ago
+Rating: 1 star
+Denise Whittaker2 reviews4 years ago
+
+Author: kimsae lorence
+Date: 4 years ago
+Rating: 1 star
+Still trying to get an appointment their online consultation is a nightmare you will wait till you have other choice but to find another way.
+
+Author: Prussian
+Date: 5 years ago
+Rating: 2 stars
+PrussianLocal Guide · 20 reviews · 2 photos5 years ago
+
+Author: Jill Dwyr
+Date: 5 years ago
+Rating: 5 stars
+Lovely practice
+
+Author: Catherine Storey
+Date: 5 years ago
+Rating: 1 star
+I am sitting in a hospital room with my mother whose been diagnosed with the worst case of pneumonia the doctor has seen. She has asked me to write that perhaps if the Doctors, knowing that she suffers from COPD had treated her properly in the first place we would be sat at home making plans for Christmas instead of contemplating end of life care. I would say that if a person phones to say that the three days of antibiotics and steroids haven't worked it doesn't help when asked if it's" urgent to speak to a doctor because you've already spoken to once this week." If it was possible to give less than the 1 star available then I would as I think my Mums lack of treatment shocking!
+
+Author: Mark Fillis
+Date: 5 years ago
+Rating: 3 stars
+Mark FillisLocal Guide · 75 reviews · 59 photos5 years ago
+
+Author: suzie Holt
+Date: 5 years ago
+Rating: 1 star
+Never again will I ever trust the actions of Dr Hauge! Her totally inappropriate and massively wrong accusations have proven her decisions are extremely blown out of all context and proportion, we as a family at this practice can no longer trust in your medical device and we will be moving on elsewhere after the investigation is completed
+
+Author: Steve M
+Date: 6 years ago
+Rating: 5 stars
+This is the best, most positive practice i have been a patient of in 65 years. The reception staff are so cheerful and friendly, the nusing and administative staff are so understanding and helpful. The doctors are true caring family doctors, who have the time, knowledge and expertise to deal with your medical and/or mental needs. The facilities, services and care they provide for their 10,000 patients is first class. There are some patients who simply dont realise what a brilliant family practice they belong to and make demands that are not always possible, practical. The national statistics show that The Dunstan Partnership is one of the leading practices in Bolton by far, with many above ratings by far.
+
+Author: Paranormal Encounters UK
+Date: 6 years ago
+Rating: 5 stars
+Paranormal Encounters UK1 review6 years ago
+
+Author: Tara “TM” Moore
+Date: 6 years ago
+Rating: 5 stars
+Easy to obtain appointments with little to no waiting time. Lovely friendly and helpful doctors who actually listen rather than writing a prescription when you enter the room.
+
+Author: Dark Turker
+Date: 6 years ago
+Rating: 5 stars
+The best practice ever, the doctors are so welcoming, everyone listens, I have always been offered before 8am review when asked, great work all !
+
+Author: Lee Lomax
+Date: 7 years ago
+Rating: 1 star
+If I could give a 0 star I would. I have requested some information from you which is of high importance that I need to supply to my employer as a matter of urgency. Oh Mr Lomax I apologise I will get the doctor to call you back 2 calls later of me phoning them and I'm still awaiting the call from Dr Hague.
+
+Author: Marcus Lipton
+Date: 7 years ago
+Rating: 4 stars
+Marcus LiptonLocal Guide · 87 reviews · 1,123 photos7 years ago
+
+Author: Irene Dawson
+Date: 8 years ago
+Rating: 5 stars
+Both myself and my husband have been with the practice for over thirty years. We cannot express in words how from the girls on the reception to all the doctors and nurses how they have looked after us .

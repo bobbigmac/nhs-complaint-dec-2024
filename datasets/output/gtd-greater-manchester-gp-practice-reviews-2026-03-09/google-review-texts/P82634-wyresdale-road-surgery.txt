@@ -4,11 +4,16 @@ Postcode: BL1 4DN
 Google Maps title: Wyresdale Road Medical Centre
 Google rating: 2.7
 Google review count: 9
-Google Maps URL: https://www.google.com/maps/place/Wyresdale+Road+Medical+Centre/@53.5821373,-2.4565804,17z/data=!4m12!1m2!2m1!1sWyresdale+Road+Surgery+BL1+4DN!3m8!1s0x487ba70a015ed715:0xf7f55703585e1ad5!8m2!3d53.5821373!4d-2.4518168!9m1!1b1!15sCh5XeXJlc2RhbGUgUm9hZCBTdXJnZXJ5IEJMMSA0RE5aICIed3lyZXNkYWxlIHJvYWQgc3VyZ2VyeSBibDEgNGRukgEGZG9jdG9ymgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVEzZGtremRsZDNFQUXgAQD6AQQIThA_!16s%2Fg%2F11j4swt43g?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Wyresdale+Road+Medical+Centre/@53.582136,-2.4544648,17z/data=!4m12!1m2!2m1!1sWyresdale+Road+Surgery+BL1+4DN!3m8!1s0x487ba70a015ed715:0xf7f55703585e1ad5!8m2!3d53.5821373!4d-2.4518168!9m1!1b1!15sCh5XeXJlc2RhbGUgUm9hZCBTdXJnZXJ5IEJMMSA0RE5aICIed3lyZXNkYWxlIHJvYWQgc3VyZ2VyeSBibDEgNGRukgEGZG9jdG9ymgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVEzZGtremRsZDNFQUXgAQD6AQQIThA_!16s%2Fg%2F11j4swt43g?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 9
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82634-wyresdale-road-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Anam Idrees
 Date: Edited 5 months ago
@@ -38,7 +43,7 @@ Receptionist at this surgery thinks they are Dr. Very unfriendly service given b
 Author: Martin Richardson
 Date: 3 years ago
 Rating: 4 stars
-Martin RichardsonLocal Guide · 42 reviews · 12 photos3 years ago
+Martin RichardsonLocal Guide · 43 reviews · 12 photos3 years ago
 
 Author: Shazain Naeem
 Date: 3 years ago

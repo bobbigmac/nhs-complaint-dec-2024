@@ -4,14 +4,19 @@ Postcode: BL3 2DN
 Google Maps title: Southbrook Surgery
 Google rating: 3.4
 Google review count: 12
-Google Maps URL: https://www.google.com/maps/place/Southbrook+Surgery/@53.5609787,-2.4270288,17z/data=!4m8!3m7!1s0x487ba64a09a1c34b:0x19ac1161ad5d314f!8m2!3d53.5609787!4d-2.4270288!9m1!1b1!16s%2Fg%2F1tdkrbnl?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Southbrook+Surgery/@53.5609819,-2.4296091,17z/data=!4m8!3m7!1s0x487ba64a09a1c34b:0x19ac1161ad5d314f!8m2!3d53.5609787!4d-2.4270288!9m1!1b1!16s%2Fg%2F1tdkrbnl?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 12
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82009001-southbrook-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Sandra Shaker
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 I am writing in recognition of what Vicky Stuttard has done. I have visited the surgery more than once for a blood test, but the previous nurse could not get it done due to my very weak veins. Vicky Stuttard managed to take off the blood from the first attempt and did not cause any pain. 👍👍👍👍👍👍👍👍👍👍👍 I am also writing in recognition of what Dr Magid is always doing. Dr Magid is: professional. knowledgeable. courteous. friendly. Dr Magid delivers a good image to Southbrook Surgery. Thanks doctor.... You are fantastic! 👍👍👍👍👍👍👍👍👍👍👍👍👍 I am also writing in recognition of what Dr Fatima has done. During my visit dated 17.01.2026 I have been visited by Dr Fatima who has been professional and reliable. 👍👍👍👍👍👍👍👍👍👍👍👍👍 I also writing in recognition of what the receptionist is always doing, she always welcomes all patients with a lovely smile. 👍👍👍👍👍👍👍👍👍👍👍👍👍 Dear employees of Southbrook Surgery, you all deliver a good image to the clinic and to the NHS. Thanks.
 
@@ -59,3 +64,13 @@ Author: Firojabanu Patel
 Date: 7 years ago
 Rating: 1 star
 They never give a doctor's appointment when you need one and they keep saving money by stopping essential medication for my Dialysis even though my previous GP was happy to provide those medications and have stopped my heartburn medication which is on repeat without notifying me - absolutely terrible especially when you need them most.
+
+Author: Mutayeb Maqbool
+Date: 8 years ago
+Rating: 3 stars
+Mutayeb MaqboolLocal Guide · 3 reviews · 56 photos8 years ago
+
+Author: Anna B (Lise)
+Date: 9 years ago
+Rating: 5 stars
+A brilliant doctors surgery with doctors that really care about their patients. They listen to you and always explain things thoroughly so you never leave the surgery unhappy because they have resolved any questions or worries that you had. The same applies to their other surgery Garnet Fold Practice. ☺☺☺☺☺

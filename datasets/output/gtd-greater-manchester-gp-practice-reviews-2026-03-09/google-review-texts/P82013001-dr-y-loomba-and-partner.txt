@@ -4,11 +4,16 @@ Postcode: BL1 1SQ
 Google Maps title: Dr Y Loomba
 Google rating: 1.0
 Google review count: 10
-Google Maps URL: https://www.google.com/maps/place/Dr+Y+Loomba/@53.5768616,-2.4502215,15z/data=!3m1!5s0x487ba65354346ee9:0x432feea802a5ae60!4m12!1m2!2m1!1sDr+Y+Loomba+%26+Partner+BL1+1SQ!3m8!1s0x487ba654aab392c1:0xa1ddc97f785e306e!8m2!3d53.5768616!4d-2.4311671!9m1!1b1!15sCh1EciBZIExvb21iYSAmIFBhcnRuZXIgQkwxIDFTUZIBB3N1cmdlb27gAQA!16s%2Fg%2F1tj5242g?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+Y+Loomba/@53.5699865,-2.4413698,15z/data=!3m1!5s0x487ba65354346ee9:0x432feea802a5ae60!4m12!1m2!2m1!1sDr+Y+Loomba+%26+Partner+BL1+1SQ!3m8!1s0x487ba654aab392c1:0xa1ddc97f785e306e!8m2!3d53.5768616!4d-2.4311671!9m1!1b1!15sCh1EciBZIExvb21iYSAmIFBhcnRuZXIgQkwxIDFTUZIBB3N1cmdlb27gAQA!16s%2Fg%2F1tj5242g?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.75
+Review collection mode: full_feed
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82013001-dr-y-loomba-and-partner.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Ryan Blower
 Date: 3 years ago
@@ -56,6 +61,6 @@ Rating: 1 star
 Shocking
 
 Author: Nicky Gaskell
-Date: 9 years ago
+Date: 10 years ago
 Rating: 1 star
 Never answer phone unless your not English they never want to give you an appointment

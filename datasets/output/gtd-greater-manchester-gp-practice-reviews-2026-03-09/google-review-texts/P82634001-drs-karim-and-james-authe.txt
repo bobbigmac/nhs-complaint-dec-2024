@@ -4,14 +4,19 @@ Postcode: BL1 8BZ
 Google Maps title: D R S Karim & James-authe
 Google rating: 2.5
 Google review count: 19
-Google Maps URL: https://www.google.com/maps/place/D+R+S+Karim+%26+James-authe/@53.5821237,-2.4710066,15z/data=!4m12!1m2!2m1!1sDrs+Karim+%26+James-Authe+BL1+8BZ!3m8!1s0x487ba70a0672cd73:0x9b4e258f4237e346!8m2!3d53.5821237!4d-2.4519522!9m1!1b1!15sCh9EcnMgS2FyaW0gJiBKYW1lcy1BdXRoZSBCTDEgOEJakgEGZG9jdG9y4AEA!16s%2Fg%2F11cs5p7gzw?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/D+R+S+Karim+%26+James-authe/@53.5821237,-2.490061,14z/data=!4m12!1m2!2m1!1sDrs+Karim+%26+James-Authe+BL1+8BZ!3m8!1s0x487ba70a0672cd73:0x9b4e258f4237e346!8m2!3d53.5821237!4d-2.4519522!9m1!1b1!15sCh9EcnMgS2FyaW0gJiBKYW1lcy1BdXRoZSBCTDEgOEJakgEGZG9jdG9y4AEA!16s%2Fg%2F11cs5p7gzw?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
+Review collection mode: full_feed
+Review cards collected: 19
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82634001-drs-karim-and-james-authe.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Tahmi Chowdhury
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 Worst doctor behaving plus halliwell surgury receptionist. Same day our whole family change gp from there. Happen so many days lady doctor dont want to listen patients problem.
 
@@ -59,3 +64,48 @@ Author: Kirsten Edwards
 Date: 3 years ago
 Rating: 1 star
 Please avoid registering at this GPs at all costs, due to lack of care from the doctors, difficult receptionists and bad practice management.
+
+Author: Salsabeel Sbaa
+Date: 3 years ago
+Rating: 1 star
+probably the worst receptionists i’ve ever experienced. been trying to see a doctor for a whole week and unless you ring at 8am in the morning they don’t want to help you. 8 months pregnant with no help . seriously don’t know what to do anymore .
+
+Author: Funny YT
+Date: 3 years ago
+Rating: 1 star
+Funny YT2 reviews · 1 photo3 years ago
+
+Author: HK Lioness
+Date: 5 years ago
+Rating: 3 stars
+HK LionessLocal Guide · 35 reviews · 142 photos5 years ago
+
+Author: J N
+Date: 6 years ago
+Rating: 5 stars
+J N3 reviews6 years ago
+
+Author: Léana
+Date: 6 years ago
+Rating: 5 stars
+Léana10 reviews · 4 photos6 years ago
+
+Author: Humma Javed
+Date: 7 years ago
+Rating: 5 stars
+Humma Javed10 reviews · 1 photo7 years ago
+
+Author: Elijah Paul
+Date: 7 years ago
+Rating: 5 stars
+Elijah Paul7 years ago
+
+Author: Lisa McNamara
+Date: 8 years ago
+Rating: 5 stars
+Lisa McNamaraLocal Guide · 35 reviews · 36 photos8 years ago
+
+Author: Zahra
+Date: 8 years ago
+Rating: 4 stars
+Zahra8 years ago

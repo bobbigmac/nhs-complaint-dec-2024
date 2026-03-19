@@ -4,11 +4,16 @@ Postcode: BL2 6NT
 Google Maps title: Alastair Ross Medical Practice
 Google rating: 2.6
 Google review count: 60
-Google Maps URL: https://www.google.com/maps/place/Alastair+Ross+Medical+Practice/@53.5823406,-2.3841869,17z/data=!3m1!5s0x487ba67e13f48233:0x482581877ffb2d0c!4m8!3m7!1s0x487ba6f1807f0aa3:0x49cb0221d2231e14!8m2!3d53.5823406!4d-2.3841869!9m1!1b1!16s%2Fg%2F1hc6t56yb?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Alastair+Ross+Medical+Practice/@53.5823438,-2.3867672,17z/data=!3m1!5s0x487ba67e13f48233:0x482581877ffb2d0c!4m8!3m7!1s0x487ba6f1807f0aa3:0x49cb0221d2231e14!8m2!3d53.5823406!4d-2.3841869!9m1!1b1!16s%2Fg%2F1hc6t56yb?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 59
+Owner replies collected: 0
+Raw review responses captured: 6
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82018-the-alastair-ross-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Jane Nicholson
 Date: a month ago
@@ -16,9 +21,14 @@ Rating: 1 star
 My experience is 1 of complete upset.felt like was just a pest.2 different professionals and all really interested in was my 10min was up.10min is this a joke what is happening to health care.If you can't help me send me to someone who can.Also there big difference between being straight forward and being rudely arrogant and dismissive.
 
 Author: Charlotte Sandford
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 Felt incredibly judged. Incredibly unprofessional attitude.
+
+Author: Niki Simpson
+Date: 4 months ago
+Rating: 5 stars
+I recently contacted the he surgery for an acute review. I submitted my online consultation and was called within 20 minutes with the offer of an appointment the next day. The reception staff dealing with me were empathetic and helpful. I was seen the next day and Freda the ANP was a friendly and helpful clinician. I was listened to, reassured and treated efficiently without feeling rushed.
 
 Author: ian burgess
 Date: Edited 5 months ago
@@ -31,7 +41,7 @@ Rating: 5 stars
 talking to the receptionist really restored my faith in politeness. what a guy just for that it deserves a five star rating
 
 Author: Philip Crossley
-Date: Edited 9 months ago
+Date: Edited 10 months ago
 Rating: 3 stars
 Lottery appointment system, You need to call between 8am to 8:30am to win a appointment, but everyone else is also calling at the same time. If your call actually connects during this period, congratulations you have a ticket that gets you a 30% chance of an appointment ( providing they have not all been taken already) , if not try the lottery again the next day. You have 1/5 chance for an appointment if you follow my advice. I have a hack for those needing urgent doctor, use all the phones you can get access to and call them one after another, one will likely get through. Edit: It is possible now to go into the doctors before 8 am to obtain a golden ( yellow ) ticket, which helps you bypass the lottery phone system and be seen the same day. While the lottery system is not ideal, I can see its a way to deal with a already struggling health system and therefore I am rating this place higher for finding a way to deal with a failing system. (+2 stars )
 
@@ -59,3 +69,243 @@ Author: J T
 Date: a year ago
 Rating: 1 star
 Called at 8am by request of the hospital and was told to wait until emergency doctors at 6:30pm but need antibiotics. Very unhappy with this.
+
+Author: Stephen Brierley
+Date: a year ago
+Rating: 2 stars
+Stephen BrierleyLocal Guide · 216 reviews · 15 photosa year ago
+
+Author: Cody Galbraith
+Date: a year ago
+Rating: 1 star
+Waste of space not been able to get through for a week on the number must have changed there phone line or something but no up to date number on Google so most people carnt get a appointment for something they really need
+
+Author: Emma Bracegirdle
+Date: a year ago
+Rating: 5 stars
+The receptionists here are absolutely amazing! They are kind, caring and go above and beyond. Really impressed. Thanks
+
+Author: Stuart Sandford
+Date: 2 years ago
+Rating: 5 stars
+Fantastic reception staff, very polite and will help you with any query you have , I have e had a few GPS and this is by far the best I cannot recommend this service enough the reception staff are really really amazing!!!
+
+Author: Wibble Waffle
+Date: Edited 2 years ago
+Rating: 1 star
+Wibble Waffle3 reviewsEdited 2 years ago
+
+Author: A Khawaja
+Date: 2 years ago
+Rating: 1 star
+A Khawaja2 years ago
+
+Author: Stella Entwistle
+Date: 2 years ago
+Rating: 5 stars
+Absolutely brilliant service the doctors are sympathetic and understanding the receptionists are wonderful kind and caring only one is a bit nasty but she is new there but overall never had any issues
+
+Author: Cheryl Hawkins
+Date: 2 years ago
+Rating: 5 stars
+I can honestly say alister ross has gone above and beyond for me. They have got me in to see a doctor when ive rang.they have sorted my prescriptions out. They have always been polite.
+
+Author: iydti ytcgxj
+Date: 2 years ago
+Rating: 5 stars
+Really appreciate the care this practice provides. Would highly recommend. The patient access app is also very helpful to submit consult requests!
+
+Author: Sophie Reilly
+Date: 3 years ago
+Rating: 2 stars
+Some doctors are nice that’s why i’ve gave 2 but i told one doctor i want to kill myself and she said okay won’t be going to her again got no welfare of your own patients
+
+Author: paul hayes
+Date: 3 years ago
+Rating: 1 star
+impossible to book a appointment
+
+Author: Ghalib K
+Date: Edited 3 years ago
+Rating: 1 star
+Absolutely useless and unhelpful doctor's here, missed an appointment and now they will not see me at all, playing (n) gods, run away from this place if you ask me, if one dr is on holiday the whole surgery is as if close, no one calls me for a week to tell me what's going on with my appointment alone, eventually they refuses to give me an appointment after weeks of waiting just because I miss one then after refusing they did not give me my full list of document back which I gave them weeks ago for the appointment, I mean list is endless, just find another GP is bust.
+
+Author: Codie Galbraith
+Date: 3 years ago
+Rating: 1 star
+Trying to get through 57 times this morning I've rang still nothing
+
+Author: sham saqlain
+Date: 3 years ago
+Rating: 1 star
+Impossible to get appointment. If you call at 8oclock phone is busy, but no chance to get in call queue?
+
+Author: marc
+Date: 3 years ago
+Rating: 1 star
+Impossible to get an appointment they never answer the phone they are still using COVID as an excuse for being lazy dreadful practice went downhill after Dr Ariff left
+
+Author: Je Isherwood
+Date: 3 years ago
+Rating: 5 stars
+Reviewers tend to only comment when things aren't going well. And that's a shame because then people don't get the appreciation for the good stuff they do. Added to that people only tend to remember the bad things people say about them. I'd like to say Thank you for all the hard work you have done and to let you know you are appreciated. And a special shout out (and virtual hug) to Louise as I got the impression she needs one today. But this isn't just for today. THANK YOU 👏
+
+Author: David Isher
+Date: 3 years ago
+Rating: 1 star
+Waste of space, ring up in the morning takes me about 150 times to finally speak to someone for them just to say no appointments left. Don’t bother asking what’s it’s for elderly or a child they just say ring again tomorrow and put the phone down no help at all. The doctors are even worse. NHS we need to scrap telephone appointments go back to face to face appointments.
+
+Author: Barry Owens
+Date: 3 years ago
+Rating: 5 stars
+I had to have a full blood test done, which is never easy for me as my body doesn't like to give anything away for free. However Una Taylor was excellent, in and out in under in 2 minutes and bloods done first time. Thank you for the great service!
+
+Author: Allan Bell
+Date: 4 years ago
+Rating: 1 star
+Very poor. Reception empty. Allowed to make an appointment in 3 days but turned away on arrival after being asked about COVID. Nothing was said while arranging the appointment about my COVID status. I had been negative for a week but they only asked on presenting myself for the prearranged appointment. A gross waste of my time and they knew I was angry
+
+Author: Gary Giles
+Date: 4 years ago
+Rating: 1 star
+Absolutely shocking practice. 2 specialist (bone & neurology) have asked me to go have my bloods done. So i ring Alistair Ross who told me im not allowed to just book a blood test. I have a DEXA scan every 3 years followed by a consultation with my specialists how ever despite my last scan should of been December however as per usual nothing. My bone specialist informed me that i need to contact them straight away if i feel any changes despite this information my doctor's will not book me an appointment because they know better. Iv also had what can only be described as a feeling of a bruise on my left lung for 2 weeks which the receptionists seems to know better and told me dont worry about it. The doctor's who work here are insane
+
+Author: Maryam Seiffouri
+Date: 4 years ago
+Rating: 1 star
+Maryam Seiffouri1 review4 years ago
+
+Author: Chuchu - Cosy
+Date: 4 years ago
+Rating: 1 star
+Chuchu - Cosy3 reviews4 years ago
+
+Author: Matilda Ncube
+Date: 4 years ago
+Rating: 1 star
+Their phones are always continuously engaged in the mornings. When they eventually answer you are told no appointments for the day, ring next day. The same thing will happen again next day. How are we meant to be treated its beyond me.
+
+Author: Wendy Adams
+Date: 4 years ago
+Rating: 1 star
+Worst surgery ever for answering the phone
+
+Author: New Man
+Date: 5 years ago
+Rating: 1 star
+Absolutely disgraceful I called today regarding my son who's just become an adult with autism it seemed that because I was a single parent as a father I was questioned where was the mother is the mother not around and I say to you has that got anything to do with you I am absolutely offended how dare you you I would go as far to say that was discrimination about single male fathers should be ashamed of yourself
+
+Author: Amy Beth
+Date: 5 years ago
+Rating: 5 stars
+I highly recommend Alistair Ross medical practice, as the practice and DR. Chowdhury especially, has always been supportive and helped me with my mental health. Alistair Ross practice is adds warmth and professionalism. I have always been able to get an appointment, and have never had any issues. unfortunately I moved out of the catchment area, and I am finding it very difficult to find a gp practice as supportive as this one.
+
+Author: Paddy Oconnell
+Date: 6 years ago
+Rating: 2 stars
+Paddy Oconnell2 reviews6 years ago
+
+Author: paul emmett
+Date: 6 years ago
+Rating: 1 star
+paul emmett1 review6 years ago
+
+Author: Naomi Dorsett
+Date: 6 years ago
+Rating: 1 star
+If icould id give 0 so unhelpful and arrogant doctors
+
+Author: D B
+Date: 6 years ago
+Rating: 1 star
+Rude and patronising doctors at this surgery
+
+Author: Gemma Dobson
+Date: 6 years ago
+Rating: 5 stars
+Not a clue why all the bad reviews. Been going to this doctors for a while now and experienced no problems. The receptionists and nurses are lovely and very helpful wherever they can. The doctors are all great and have provided me with a solution each time. The place is easy to find and very clean. Highly recommended, best doctors I’ve been to.
+
+Author: Amanda Jarvis
+Date: 6 years ago
+Rating: 5 stars
+Came to see louise today and what a lovely lady made me feel so at ease and actually cared about my wellbeing.
+
+Author: Jean Martin
+Date: 6 years ago
+Rating: 5 stars
+Jean Martin6 years ago
+
+Author: Cherrill Roberts
+Date: 6 years ago
+Rating: 5 stars
+Cherrill Roberts2 reviews6 years ago
+
+Author: Mandana H
+Date: 6 years ago
+Rating: 1 star
+Rubish palace and disgusting Doctors and Recipients as when i try to talked with Gp behalf my ex then Doctor was so Rude and horrible and hanged up my call ...terrible this place
+
+Author: Keely Reid
+Date: 6 years ago
+Rating: 1 star
+Member of my family comes here and was suicidal and got told to stop wasting the drs time we are currently going through a formal complaints system I wouldn't recommend these at all shocking
+
+Author: CoolAmyKid
+Date: 6 years ago
+Rating: 1 star
+CoolAmyKid9 reviews6 years ago
+
+Author: Liam Peake
+Date: 7 years ago
+Rating: 1 star
+Useless I've been ringing since 8 finally get through at 8.17am and get told they have no appointments
+
+Author: Gary James
+Date: 7 years ago
+Rating: 1 star
+Absolutely shocking place to try and get an appointment, so bad I'm surprised they don't answer the phone with "How can I be as little help as possible" Constantly fob you off trying to make appointments elsewhere. Tell you to call at 8 am on the day to book an appointment then you can't get through. The most obstructive receptionists anywhere without doubt. Strange really because if you need to book an appointment when spoken to a Dr there's no problem with him booking it.
+
+Author: Ian Oakes
+Date: 7 years ago
+Rating: 5 stars
+I'm writing a good review for once on this site.a new lady called Kirsty on the reception has been very helpful and honestly gone above and beyond too help me out and get an appointment and a telephone call off the doctor.witch in this place is very unusual thanx again Kirsty for your kindness kind regards Ian oakes
+
+Author: steve hart
+Date: 8 years ago
+Rating: 3 stars
+steve hart5 reviews · 8 photos8 years ago
+
+Author: pa ashcroft
+Date: 8 years ago
+Rating: 5 stars
+All the Doctors are brilliant at this surgery.So are the staff. Can always get an appointment quickly. best Doctors surgery in the district would certainly recommend
+
+Author: madjock82
+Date: 8 years ago
+Rating: 5 stars
+Place to be if you need the doctor.
+
+Author: Peter Mason
+Date: 8 years ago
+Rating: 5 stars
+I have been with this practice for over 12 years, whilst it can be difficult sometimes to get an appointment, you can always turn up on the day and wait. As this is a first come first served system you will have to wait your turn. They operate a card system before they actually open so if you get there at say 07:30 and you're the first person there, pick the card marked 1 and when the practice opens at 09:00, book yourself in you will be seen first, simple! Get there after 09:00 go to the window they will book you in and you wait until your name appears on the wall message, again simple! If the waiting room looks full don't despair, many of those might be waiting for other services like nursing services, flue jabs, or child inoculations etc. If you are a registered patient and you need to speak to your GP but not necessarily see your GP you can ring, ask to speak to them and after a few questions from the staff they will decide if it might be better you attend in person if necessary or if not they will include you on a ring back from your own GP. When your GP either finds time between patients or at the end of the patients in the waiting room, you will receive a call back by your GP, again simple... I don't understand some of the complaints I have seen posted, Yes sometimes the staff could friendlier, but they too are human, with their own problems, and the person before you might have been one of those self centered winging buggers who turn up on the day hoping to jump in front of all those other patients who have appointments . Yes the list might be long, but that's because there are a lot of patients who are HAPPY with the services provided you DUMMY! So stop winging, get there early, pick a card, book yourself in, sit yourself down, and wait like everyone else!!!
+
+Author: Chelsea Cropper
+Date: 8 years ago
+Rating: 5 stars
+Chelsea CropperLocal Guide · 20 reviews · 1 photo8 years ago
+
+Author: reyan tarik
+Date: 8 years ago
+Rating: 1 star
+Never gets appointment. Doctors are least bothered to listen to your problem. Pathetic service. They can improve but dont want to.
+
+Author: Gary Pen
+Date: 9 years ago
+Rating: 4 stars
+Family doctors over 25 years
+
+Author: Ruth Whittaker
+Date: 9 years ago
+Rating: 1 star
+Won't help me find treatment for existing conditions, rude, unhelpful, misdiagnosed a communicable infection - the WORST practice I have ever had to attend.

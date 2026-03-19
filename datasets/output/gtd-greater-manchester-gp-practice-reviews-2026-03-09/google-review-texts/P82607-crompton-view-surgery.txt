@@ -4,16 +4,26 @@ Postcode: BL1 8UP
 Google Maps title: Crompton View Surgery
 Google rating: 5.0
 Google review count: 7
-Google Maps URL: https://www.google.com/maps/place/Crompton+View+Surgery/@53.597528,-2.4151646,17z/data=!3m1!5s0x487ba6eec1e669f1:0xa274eb758a1fde27!4m8!3m7!1s0x487ba6eec1eaaaab:0x6e235eff488da8f!8m2!3d53.597528!4d-2.4151646!9m1!1b1!16s%2Fg%2F11h7s4btv2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Crompton+View+Surgery/@53.5975312,-2.4177449,17z/data=!3m1!5s0x487ba6eec1e669f1:0xa274eb758a1fde27!4m8!3m7!1s0x487ba6eec1eaaaab:0x6e235eff488da8f!8m2!3d53.597528!4d-2.4151646!9m1!1b1!16s%2Fg%2F11h7s4btv2?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 7
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82607-crompton-view-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Mark Allen
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 All great Staff and a great practice manager. All staff including Doctors Nurses, Assistants are all friendly, kind polite, caring and very understanding to the patients needs and will help you in anyway that they can. Treat all of them with the utmost respect.
+
+Author: Victory Oforji
+Date: a month ago
+Rating: 5 stars
+This practice is a breath of fresh air, nice staff, a website that works well, follows through on healthcare Thank you heros
 
 Author: Jason Sargent
 Date: Edited a year ago

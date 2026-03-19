@@ -4,11 +4,16 @@ Postcode: BL1 3RG
 Google Maps title: Dr Rizwan
 Google rating: 3.7
 Google review count: 6
-Google Maps URL: https://www.google.com/maps/place/Dr+Rizwan/@53.5883327,-2.4316914,17z/data=!3m1!5s0x487ba6fdf0a9d785:0xf9ade4b35354a3d1!4m8!3m7!1s0x487ba6fdf524a2d1:0x5cca2c3e9bf9e47a!8m2!3d53.5883327!4d-2.4316914!9m1!1b1!16s%2Fg%2F1yh9twwmr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+Rizwan/@53.5883359,-2.4342717,17z/data=!3m1!5s0x487ba6fdf0a9d785:0xf9ade4b35354a3d1!4m8!3m7!1s0x487ba6fdf524a2d1:0x5cca2c3e9bf9e47a!8m2!3d53.5883327!4d-2.4316914!9m1!1b1!16s%2Fg%2F1yh9twwmr?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.667
+Review collection mode: full_feed
+Review cards collected: 6
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P82022-dr-rizwan-and-dr-awan.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Shahbaz
 Date: 3 months ago
