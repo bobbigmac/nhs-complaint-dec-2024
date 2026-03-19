@@ -10,11 +10,11 @@ import re
 import shutil
 import time
 from pathlib import Path
-from urllib.parse import quote
 
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, TimeoutException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -26,7 +26,148 @@ PROFILE_ROOT = Path.home() / ".mozilla" / "firefox"
 PROFILE_COPY_DIR = BASE_DIR / ".tooling" / "firefox-profile-copy"
 DEFAULT_OUTPUT = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google_maps_recent_reviews.json"
 DEFAULT_TEXT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google-review-texts"
+DEFAULT_RAW_REVIEW_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09" / "google-review-raw"
 DEFAULT_QUERY_OVERRIDES = BASE_DIR / "config" / "google_maps_query_overrides.json"
+RAW_REVIEW_CAPTURE_SCRIPT = r"""
+return (() => {
+  const existing = window.__gmReviewCapture;
+  if (existing && existing.version === 1 && existing.clear && existing.snapshot) {
+    return "already_installed";
+  }
+
+  const capture = window.__gmReviewCapture = existing || {};
+  capture.version = 1;
+  capture.entries = Array.isArray(capture.entries) ? capture.entries : [];
+  capture.sequence = Number.isFinite(capture.sequence) ? capture.sequence : capture.entries.length;
+  capture.maxEntries = 400;
+  capture.matcher = function(url) {
+    return typeof url === "string" && url.indexOf("/maps/rpc/listugcposts") !== -1;
+  };
+  capture.push = function(entry) {
+    if (!entry || !capture.matcher(entry.url || "")) {
+      return;
+    }
+    const normalized = {
+      seq: ++capture.sequence,
+      captured_at_ms: Date.now(),
+      source: entry.source || "",
+      method: entry.method || "",
+      url: entry.url || "",
+      status: Number.isFinite(entry.status) ? entry.status : null,
+      ok: Boolean(entry.ok),
+      content_type: entry.content_type || "",
+      request_body: typeof entry.request_body === "string" ? entry.request_body : "",
+      body: typeof entry.body === "string" ? entry.body : "",
+      error: entry.error || "",
+    };
+    capture.entries.push(normalized);
+    if (capture.entries.length > capture.maxEntries) {
+      capture.entries = capture.entries.slice(-capture.maxEntries);
+    }
+  };
+  capture.clear = function() {
+    capture.entries = [];
+    capture.sequence = 0;
+  };
+  capture.snapshot = function() {
+    return capture.entries.slice();
+  };
+
+  if (!capture.fetchWrapped && typeof window.fetch === "function") {
+    const originalFetch = window.fetch.bind(window);
+    window.fetch = function(resource, init) {
+      const responsePromise = originalFetch(resource, init);
+      let url = "";
+      if (typeof resource === "string") {
+        url = resource;
+      } else if (resource && typeof resource.url === "string") {
+        url = resource.url;
+      }
+      if (capture.matcher(url)) {
+        const method = (init && init.method) || (resource && resource.method) || "GET";
+        const requestBody = init && typeof init.body === "string" ? init.body : "";
+        responsePromise.then((response) => {
+          const contentType = response && response.headers ? (response.headers.get("content-type") || "") : "";
+          response.clone().text().then((bodyText) => {
+            capture.push({
+              source: "fetch",
+              method: method,
+              url: url,
+              status: response.status,
+              ok: response.ok,
+              content_type: contentType,
+              request_body: requestBody,
+              body: bodyText,
+            });
+          }).catch((error) => {
+            capture.push({
+              source: "fetch",
+              method: method,
+              url: url,
+              status: response.status,
+              ok: response.ok,
+              content_type: contentType,
+              request_body: requestBody,
+              error: String(error),
+            });
+          });
+        }).catch((error) => {
+          capture.push({
+            source: "fetch",
+            method: method,
+            url: url,
+            request_body: requestBody,
+            error: String(error),
+          });
+        });
+      }
+      return responsePromise;
+    };
+    capture.fetchWrapped = true;
+  }
+
+  if (!capture.xhrWrapped && window.XMLHttpRequest && window.XMLHttpRequest.prototype) {
+    const originalOpen = window.XMLHttpRequest.prototype.open;
+    const originalSend = window.XMLHttpRequest.prototype.send;
+
+    window.XMLHttpRequest.prototype.open = function(method, url) {
+      this.__gmReviewCaptureMethod = method || "GET";
+      this.__gmReviewCaptureUrl = url || "";
+      return originalOpen.apply(this, arguments);
+    };
+
+    window.XMLHttpRequest.prototype.send = function(body) {
+      const trackedUrl = this.__gmReviewCaptureUrl || "";
+      if (capture.matcher(trackedUrl)) {
+        const trackedMethod = this.__gmReviewCaptureMethod || "GET";
+        const requestBody = typeof body === "string" ? body : "";
+        this.addEventListener("loadend", () => {
+          let responseBody = "";
+          try {
+            responseBody = typeof this.responseText === "string" ? this.responseText : "";
+          } catch (error) {
+            responseBody = "";
+          }
+          capture.push({
+            source: "xhr",
+            method: trackedMethod,
+            url: trackedUrl,
+            status: Number.isFinite(this.status) ? this.status : null,
+            ok: this.status >= 200 && this.status < 400,
+            content_type: this.getResponseHeader("content-type") || "",
+            request_body: requestBody,
+            body: responseBody,
+          });
+        }, { once: true });
+      }
+      return originalSend.apply(this, arguments);
+    };
+    capture.xhrWrapped = true;
+  }
+
+  return "installed";
+})();
+"""
 
 
 def discover_default_firefox_profile() -> Path:
@@ -87,6 +228,10 @@ def build_driver(profile_dir: Path, headless: bool) -> webdriver.Firefox:
     driver = webdriver.Firefox(options=opts)
     driver.set_page_load_timeout(90)
     return driver
+
+
+def build_wait(driver: webdriver.Firefox, timeout_seconds: int = 25) -> WebDriverWait:
+    return WebDriverWait(driver, timeout_seconds)
 
 
 def normalize_text(value: str) -> str:
@@ -164,6 +309,99 @@ def extract_overall_metrics(driver: webdriver.Firefox) -> tuple[str, float | Non
         if rating is not None and review_count is not None:
             break
     return title, rating, review_count
+
+
+def find_search_input(driver: webdriver.Firefox):
+    selectors = [
+        "input#searchboxinput",
+        'input[role="combobox"]',
+        'input[class*="UGojuc"]',
+        'input[aria-label*="Search Google Maps"]',
+        'input[placeholder*="Search Google Maps"]',
+        'input[aria-label*="Search"]',
+        "input",
+    ]
+    for selector in selectors:
+        elements = driver.find_elements(By.CSS_SELECTOR, selector)
+        for element in elements:
+            try:
+                if element.is_displayed():
+                    return element
+            except StaleElementReferenceException:
+                continue
+    return None
+
+
+def current_search_value(driver: webdriver.Firefox) -> str:
+    search_input = find_search_input(driver)
+    if search_input is None:
+        return ""
+    return normalize_text(search_input.get_attribute("value") or "")
+
+
+def ensure_maps_shell(driver: webdriver.Firefox, wait: WebDriverWait) -> None:
+    if "google.com/maps" not in driver.current_url:
+        driver.get("https://www.google.com/maps")
+    wait.until(lambda d: find_search_input(d) is not None)
+    wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+    install_review_network_capture(driver)
+    time.sleep(2)
+
+
+def set_search_query(driver: webdriver.Firefox, search_input, query: str) -> None:
+    driver.execute_script("arguments[0].focus();", search_input)
+    try:
+        search_input.click()
+    except Exception:
+        driver.execute_script("arguments[0].click();", search_input)
+    time.sleep(0.2)
+    search_input.send_keys(Keys.CONTROL, "a")
+    time.sleep(0.1)
+    search_input.send_keys(Keys.BACKSPACE)
+    time.sleep(0.2)
+    driver.execute_script(
+        (
+            "arguments[0].value = '';"
+            "arguments[0].dispatchEvent(new Event('input', {bubbles: true}));"
+            "arguments[0].dispatchEvent(new Event('change', {bubbles: true}));"
+        ),
+        search_input,
+    )
+    time.sleep(0.1)
+    search_input.send_keys(query)
+    time.sleep(0.4)
+
+
+def search_google_maps(driver: webdriver.Firefox, wait: WebDriverWait, query: str) -> None:
+    ensure_maps_shell(driver, wait)
+    previous_url = driver.current_url
+    previous_title = driver.title
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            search_input = wait.until(lambda d: find_search_input(d))
+            set_search_query(driver, search_input, query)
+            search_input.send_keys(Keys.ENTER)
+            wait.until(
+                lambda d: d.current_url != previous_url
+                or d.title != previous_title
+            )
+            wait.until(
+                lambda d: google_page_kind(d.current_url) in {"place", "search"}
+                or current_search_value(d) == normalize_text(query)
+            )
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[role="main"]')))
+            time.sleep(4)
+            return
+        except Exception as exc:
+            last_error = exc
+            if attempt == 2:
+                break
+            driver.get("https://www.google.com/maps")
+            wait.until(lambda d: find_search_input(d) is not None)
+            time.sleep(2)
+    if last_error is not None:
+        raise last_error
 
 
 def click_first_search_result(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
@@ -278,6 +516,61 @@ def should_expand_review_button(label: str) -> bool:
     return label.startswith("more ") and "review" in label
 
 
+def install_review_network_capture(driver: webdriver.Firefox) -> bool:
+    try:
+        driver.execute_script(RAW_REVIEW_CAPTURE_SCRIPT)
+        return True
+    except Exception:
+        return False
+
+
+def clear_review_network_capture(driver: webdriver.Firefox) -> None:
+    try:
+        driver.execute_script(
+            "if (window.__gmReviewCapture && window.__gmReviewCapture.clear) { window.__gmReviewCapture.clear(); }"
+        )
+    except Exception:
+        return
+
+
+def pull_review_network_capture(driver: webdriver.Firefox) -> list[dict[str, object]]:
+    try:
+        payload = driver.execute_script(
+            "if (window.__gmReviewCapture && window.__gmReviewCapture.snapshot) { return window.__gmReviewCapture.snapshot(); } return [];"
+        )
+    except Exception:
+        return []
+    if not isinstance(payload, list):
+        return []
+    entries: list[dict[str, object]] = []
+    seen_entries: set[str] = set()
+    for item in payload:
+        if not isinstance(item, dict):
+            continue
+        url = normalize_text(str(item.get("url", "")))
+        if "/maps/rpc/listugcposts" not in url:
+            continue
+        entry = {
+            "seq": int(item.get("seq", 0) or 0),
+            "captured_at_ms": int(item.get("captured_at_ms", 0) or 0),
+            "source": normalize_text(str(item.get("source", ""))),
+            "method": normalize_text(str(item.get("method", ""))),
+            "url": url,
+            "status": int(item.get("status", 0) or 0),
+            "ok": bool(item.get("ok", False)),
+            "content_type": normalize_text(str(item.get("content_type", ""))),
+            "request_body": str(item.get("request_body", "") or ""),
+            "body": str(item.get("body", "") or ""),
+            "error": normalize_text(str(item.get("error", ""))),
+        }
+        serialized = json.dumps(entry, sort_keys=True, ensure_ascii=False)
+        if serialized in seen_entries:
+            continue
+        seen_entries.add(serialized)
+        entries.append(entry)
+    return entries
+
+
 def click_review_expanders(driver: webdriver.Firefox, cards: list, click_limit: int = 0) -> int:
     clicks = 0
     for card in cards:
@@ -291,10 +584,10 @@ def click_review_expanders(driver: webdriver.Firefox, cards: list, click_limit: 
                 continue
             try:
                 driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", button)
-                time.sleep(0.05)
+                time.sleep(0.03)
                 driver.execute_script("arguments[0].click();", button)
                 clicks += 1
-                time.sleep(0.15)
+                time.sleep(0.08)
             except Exception:
                 continue
             if click_limit and clicks >= click_limit:
@@ -302,7 +595,104 @@ def click_review_expanders(driver: webdriver.Firefox, cards: list, click_limit: 
     return clicks
 
 
-def extract_review_from_card(card) -> dict[str, str] | None:
+def extract_text_candidates(card) -> list[str]:
+    texts: list[str] = []
+    seen: set[str] = set()
+    for css in [".wiI7pd", ".MyEned"]:
+        try:
+            elements = card.find_elements(By.CSS_SELECTOR, css)
+        except StaleElementReferenceException:
+            continue
+        for element in elements:
+            try:
+                text = normalize_text(element.get_attribute("textContent") or "")
+            except StaleElementReferenceException:
+                continue
+            if not text or text in seen:
+                continue
+            seen.add(text)
+            texts.append(text)
+    return texts
+
+
+OWNER_REPLY_DATE_PATTERN = re.compile(
+    r"(?:Edited\s+)?(?:today|yesterday|(?:a|an|\d+)\s+(?:minute|hour|day|week|month|year)s?\s+ago)",
+    flags=re.I,
+)
+
+
+def extract_owner_reply_header(card) -> str:
+    candidates: list[str] = []
+    try:
+        elements = card.find_elements(
+            By.XPATH,
+            ".//*[contains(normalize-space(.), 'Response from the owner')]",
+        )
+    except StaleElementReferenceException:
+        return ""
+    for element in elements:
+        try:
+            text = normalize_text(element.get_attribute("textContent") or element.text or "")
+        except StaleElementReferenceException:
+            continue
+        if "Response from the owner" not in text:
+            continue
+        candidates.append(text)
+    if not candidates:
+        return ""
+    return min(candidates, key=len)
+
+
+def parse_owner_reply_from_raw(raw_card_text: str) -> dict[str, str] | None:
+    raw = normalize_text(raw_card_text)
+    if "Response from the owner" not in raw:
+        return None
+    marker = raw.split("Response from the owner", 1)[1].strip()
+    date_match = OWNER_REPLY_DATE_PATTERN.match(marker)
+    if not date_match:
+        return {
+            "relative_date": "",
+            "text": marker,
+            "raw_text": marker,
+        } if marker else None
+    relative_date = normalize_text(date_match.group(0))
+    reply_text = normalize_text(marker[date_match.end():])
+    if not relative_date and not reply_text:
+        return None
+    return {
+        "relative_date": relative_date,
+        "text": reply_text,
+        "raw_text": marker,
+    }
+
+
+def extract_owner_reply(card, raw_card_text: str, text_candidates: list[str]) -> dict[str, str] | None:
+    header_text = extract_owner_reply_header(card)
+    relative_date = ""
+    if header_text:
+        match = OWNER_REPLY_DATE_PATTERN.search(header_text)
+        if match:
+            relative_date = normalize_text(match.group(0))
+    reply_text = ""
+    if header_text and len(text_candidates) >= 2:
+        reply_text = text_candidates[-1]
+    raw_reply = parse_owner_reply_from_raw(raw_card_text)
+    if raw_reply:
+        if not relative_date:
+            relative_date = raw_reply.get("relative_date", "")
+        if not reply_text:
+            reply_text = raw_reply.get("text", "")
+    reply_text = normalize_text(reply_text)
+    if not relative_date and not reply_text and not raw_reply:
+        return None
+    return {
+        "relative_date": relative_date,
+        "text": reply_text,
+        "raw_text": normalize_text((raw_reply or {}).get("raw_text", "")),
+    }
+
+
+def extract_review_from_card(card) -> dict[str, object] | None:
     try:
         author = normalize_text(card.find_element(By.CSS_SELECTOR, ".d4r55").get_attribute("textContent") or "")
     except (NoSuchElementException, StaleElementReferenceException):
@@ -315,30 +705,33 @@ def extract_review_from_card(card) -> dict[str, str] | None:
         star_label = normalize_text(card.find_element(By.CSS_SELECTOR, ".kvMYJc").get_attribute("aria-label") or "")
     except (NoSuchElementException, StaleElementReferenceException):
         star_label = ""
-    review_text = ""
-    for css in [".wiI7pd", ".MyEned"]:
-        try:
-            review_text = normalize_text(card.find_element(By.CSS_SELECTOR, css).get_attribute("textContent") or "")
-        except (NoSuchElementException, StaleElementReferenceException):
-            continue
-        if review_text:
-            break
     try:
         raw_card_text = normalize_text(card.get_attribute("textContent") or "")
     except StaleElementReferenceException:
         raw_card_text = ""
+    text_candidates = extract_text_candidates(card)
+    owner_reply = extract_owner_reply(card, raw_card_text, text_candidates)
+    review_text = text_candidates[0] if text_candidates else ""
+    if owner_reply and review_text and review_text == owner_reply.get("text", "") and len(text_candidates) >= 2:
+        review_text = next(
+            (candidate for candidate in text_candidates if candidate != owner_reply.get("text", "")),
+            review_text,
+        )
     if not any([author, relative_date, star_label, review_text, raw_card_text]):
         return None
-    return {
+    review: dict[str, object] = {
         "author": author,
         "relative_date": relative_date,
         "star_label": star_label,
         "text": review_text,
         "raw_card_text": raw_card_text,
     }
+    if owner_reply:
+        review["owner_reply"] = owner_reply
+    return review
 
 
-def review_key(review: dict[str, str]) -> str:
+def review_key(review: dict[str, object]) -> str:
     fields = [
         normalize_text(review.get("author", "")),
         normalize_text(review.get("relative_date", "")),
@@ -349,8 +742,8 @@ def review_key(review: dict[str, str]) -> str:
     return " | ".join(fields)
 
 
-def extract_recent_reviews(driver: webdriver.Firefox, limit: int) -> list[dict[str, str]]:
-    reviews: list[dict[str, str]] = []
+def extract_recent_reviews(driver: webdriver.Firefox, limit: int) -> list[dict[str, object]]:
+    reviews: list[dict[str, object]] = []
     cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
     selected_cards = cards if limit <= 0 else cards[:limit]
     click_review_expanders(driver, selected_cards)
@@ -393,10 +786,11 @@ def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = No
         "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
         feed,
     )
+    before_count = len(cards) if cards is not None else len(driver.find_elements(By.CSS_SELECTOR, "div.jftiEf"))
     if cards:
         try:
             driver.execute_script("arguments[0].scrollIntoView({block: 'end'});", cards[-1])
-            time.sleep(0.2)
+            time.sleep(0.08)
         except Exception:
             pass
     driver.execute_script(
@@ -406,11 +800,18 @@ def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = No
             if force_to_bottom
             else
             "const el = arguments[0];"
-            "el.scrollTop = Math.min(el.scrollHeight, el.scrollTop + Math.max(el.clientHeight * 0.9, 500));"
+            "el.scrollTop = Math.min(el.scrollHeight, el.scrollTop + Math.max(el.clientHeight * 1.2, 800));"
         ),
         feed,
     )
-    time.sleep(1.2 if force_to_bottom else 1.0)
+    wait_timeout = 1.1 if force_to_bottom else 0.8
+    try:
+        WebDriverWait(driver, wait_timeout, poll_frequency=0.12).until(
+            lambda d: len(d.find_elements(By.CSS_SELECTOR, "div.jftiEf")) > before_count
+            or d.execute_script("return arguments[0].scrollHeight;", feed) > before_height
+        )
+    except TimeoutException:
+        time.sleep(0.15 if force_to_bottom else 0.08)
     after_top, after_height, after_client = driver.execute_script(
         "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
         feed,
@@ -422,7 +823,7 @@ def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = No
     )
 
 
-def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: int | None) -> list[dict[str, str]]:
+def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: int | None) -> list[dict[str, object]]:
     feed = find_reviews_feed(driver)
     if feed is None:
         return extract_recent_reviews(driver, limit)
@@ -433,15 +834,16 @@ def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: 
     except Exception:
         pass
 
-    reviews: list[dict[str, str]] = []
+    reviews: list[dict[str, object]] = []
     seen_keys: set[str] = set()
     stagnant_rounds = 0
     end_of_feed_rounds = 0
-    max_rounds = 120
+    max_rounds = 90
 
     for _ in range(max_rounds):
         cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
-        click_review_expanders(driver, cards)
+        cards_to_expand = cards if len(cards) <= 24 else cards[-24:]
+        click_review_expanders(driver, cards_to_expand)
         new_reviews = 0
         for card in cards:
             review = extract_review_from_card(card)
@@ -462,7 +864,7 @@ def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: 
             driver,
             feed,
             cards=cards,
-            force_to_bottom=stagnant_rounds >= 2,
+            force_to_bottom=stagnant_rounds >= 1,
         )
         if new_reviews == 0:
             stagnant_rounds += 1
@@ -472,7 +874,7 @@ def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: 
             end_of_feed_rounds += 1
         else:
             end_of_feed_rounds = 0
-        if stagnant_rounds >= 4 and end_of_feed_rounds >= 2:
+        if stagnant_rounds >= 3 and end_of_feed_rounds >= 2:
             break
 
     return reviews
@@ -484,11 +886,10 @@ def scrape_place(
     recent_limit: int,
     full_reviews_requested: bool = False,
     full_review_limit: int = 0,
+    capture_review_network: bool = True,
 ) -> dict[str, object]:
-    wait = WebDriverWait(driver, 25)
-    driver.get("https://www.google.com/maps/search/" + quote(query))
-    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[role="main"]')))
-    time.sleep(4)
+    wait = build_wait(driver, 25)
+    search_google_maps(driver, wait, query)
 
     place_title, rating, review_count = extract_overall_metrics(driver)
     clicked_first_result = False
@@ -501,9 +902,15 @@ def scrape_place(
         place_title, rating, review_count = extract_overall_metrics(driver)
         reviews_opened = open_reviews_panel(driver, wait)
     reviews_sorted = False
-    recent_reviews: list[dict[str, str]] = []
+    recent_reviews: list[dict[str, object]] = []
     review_collection_mode = "visible_cards"
     full_reviews_attempted = False
+    raw_review_capture_enabled = False
+    raw_review_responses: list[dict[str, object]] = []
+    if capture_review_network:
+        raw_review_capture_enabled = install_review_network_capture(driver)
+        if raw_review_capture_enabled:
+            clear_review_network_capture(driver)
     if reviews_opened:
         reviews_sorted = sort_reviews_newest(driver)
         time.sleep(2)
@@ -514,6 +921,8 @@ def scrape_place(
                 review_collection_mode = "full_feed"
         if not recent_reviews:
             recent_reviews = extract_recent_reviews(driver, recent_limit)
+    if raw_review_capture_enabled:
+        raw_review_responses = pull_review_network_capture(driver)
 
     current_url = driver.current_url
     page_kind = google_page_kind(current_url)
@@ -529,6 +938,12 @@ def scrape_place(
         scan_status = "ok_reviews_opened_no_visible_text"
     else:
         scan_status = "ok_rating_only"
+
+    owner_replies_collected = sum(
+        1
+        for review in recent_reviews
+        if isinstance(review, dict) and review.get("owner_reply")
+    )
 
     return {
         "query": query,
@@ -548,6 +963,10 @@ def scrape_place(
         "full_reviews_attempted": full_reviews_attempted,
         "review_cards_collected": len(recent_reviews),
         "visible_review_cards_collected": len(recent_reviews),
+        "owner_replies_collected": owner_replies_collected,
+        "raw_review_capture_enabled": raw_review_capture_enabled,
+        "raw_review_responses_captured": len(raw_review_responses),
+        "raw_review_responses": raw_review_responses,
         "recent_reviews": recent_reviews,
     }
 
@@ -591,6 +1010,38 @@ def build_review_text_path(text_dir: Path, canonical_code: str, practice_name: s
     return text_dir / f"{stem}-{suffix}.txt"
 
 
+def build_raw_review_path(raw_dir: Path, canonical_code: str, practice_name: str) -> Path:
+    stem = canonical_code.strip() or slugify(practice_name) or "unknown-practice"
+    suffix = slugify(practice_name) or "practice"
+    return raw_dir / f"{stem}-{suffix}.json"
+
+
+def write_raw_review_capture_file(raw_dir: Path, result: dict[str, object]) -> str:
+    raw_entries = result.get("raw_review_responses") or []
+    if not raw_entries:
+        return ""
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    output_path = build_raw_review_path(
+        raw_dir,
+        str(result.get("canonical_code", "")),
+        str(result.get("practice_name", "")),
+    )
+    payload = {
+        "practice_name": result.get("practice_name", ""),
+        "canonical_code": result.get("canonical_code", ""),
+        "postcode": result.get("postcode", ""),
+        "query_used": result.get("query_used", result.get("query", "")),
+        "google_maps_title": result.get("google_maps_title", ""),
+        "google_maps_url": result.get("google_maps_url", ""),
+        "google_review_count": result.get("google_review_count", ""),
+        "review_collection_mode": result.get("review_collection_mode", ""),
+        "raw_review_responses_captured": result.get("raw_review_responses_captured", len(raw_entries)),
+        "raw_review_responses": raw_entries,
+    }
+    output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    return str(output_path)
+
+
 def write_review_text_file(text_dir: Path, result: dict[str, object]) -> str:
     reviews = result.get("recent_reviews") or []
     review_blocks: list[str] = []
@@ -611,6 +1062,21 @@ def write_review_text_file(text_dir: Path, result: dict[str, object]) -> str:
             review_blocks.append(text)
         elif raw:
             review_blocks.append(raw)
+        owner_reply = review.get("owner_reply")
+        if isinstance(owner_reply, dict):
+            reply_parts = []
+            if owner_reply.get("relative_date"):
+                reply_parts.append(f"Practice response date: {owner_reply['relative_date']}")
+            if reply_parts:
+                review_blocks.append("\n".join(reply_parts))
+            reply_text = normalize_text(str(owner_reply.get("text", "")))
+            reply_raw = normalize_text(str(owner_reply.get("raw_text", "")))
+            if reply_text:
+                review_blocks.append("Practice response:")
+                review_blocks.append(reply_text)
+            elif reply_raw:
+                review_blocks.append("Practice response:")
+                review_blocks.append(reply_raw)
         review_blocks.append("")
 
     if not review_blocks:
@@ -633,6 +1099,9 @@ def write_review_text_file(text_dir: Path, result: dict[str, object]) -> str:
         f"Title match score: {result.get('title_match_score', '')}",
         f"Review collection mode: {result.get('review_collection_mode', '')}",
         f"Review cards collected: {result.get('review_cards_collected', '')}",
+        f"Owner replies collected: {result.get('owner_replies_collected', '')}",
+        f"Raw review responses captured: {result.get('raw_review_responses_captured', '')}",
+        f"Raw review capture file: {result.get('raw_review_capture_file', '')}",
         "",
         "Captured reviews",
         "================",
@@ -648,7 +1117,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--limit", type=int, default=10, help="Maximum number of practices to scrape after filtering and resume handling")
     parser.add_argument("--recent-reviews", type=int, default=10, help="Newest visible review cards to keep per practice; use 0 to keep all currently visible cards")
-    parser.add_argument("--headless", action="store_true", help="Run Firefox headlessly")
+    parser.add_argument("--headless", action="store_true", help="Run Firefox headlessly (the normal/manual mode is visible Firefox)")
     parser.add_argument("--profile-copy", type=Path, default=PROFILE_COPY_DIR)
     parser.add_argument(
         "--canonical-code",
@@ -662,12 +1131,19 @@ def main() -> int:
     parser.add_argument("--resume", action="store_true", help="Skip rows already present in the output file")
     parser.add_argument("--only-missing-google", action="store_true", help="Only scrape practices missing a Google score in the input CSV")
     parser.add_argument("--reviews-text-dir", type=Path, default=DEFAULT_TEXT_DIR, help="Directory for one text file per practice with captured visible review text")
+    parser.add_argument("--raw-review-dir", type=Path, default=DEFAULT_RAW_REVIEW_DIR, help="Directory for per-practice raw Google Maps review-response dumps captured from the page")
     parser.add_argument("--query-overrides", type=Path, default=DEFAULT_QUERY_OVERRIDES, help="JSON map of canonical_code or practice_name to an alternate Google Maps query")
     parser.add_argument(
+        "--capture-review-network",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Capture raw Google Maps review fetch/XHR responses from the page and dump them per practice.",
+    )
+    parser.add_argument(
         "--full-reviews",
-        choices=("none", "gtd", "all"),
-        default="none",
-        help="Optionally scroll the full Google Maps reviews feed instead of just capturing currently visible cards.",
+        choices=("none", "new", "gtd", "all"),
+        default="new",
+        help="Scroll the full Google Maps reviews feed for newly created records, GTD rows, or all rows instead of only keeping visible cards.",
     )
     parser.add_argument(
         "--full-review-limit",
@@ -709,12 +1185,17 @@ def main() -> int:
     driver = build_driver(profile_copy, headless=args.headless)
     collected: list[dict[str, object]] = list(existing_results)
     try:
+        wait = build_wait(driver, 25)
+        ensure_maps_shell(driver, wait)
         total = len(rows)
         for index, row in enumerate(rows, start=1):
             query = resolve_query(row, query_overrides)
             print(f"[{index}/{total}] {query}")
-            collect_full_reviews = args.full_reviews == "all" or (
-                args.full_reviews == "gtd" and is_gtd_managed_row(row)
+            existing_index = existing_result_indexes.get(row["canonical_code"], None)
+            collect_full_reviews = (
+                args.full_reviews == "all"
+                or (args.full_reviews == "gtd" and is_gtd_managed_row(row))
+                or (args.full_reviews == "new" and existing_index is None)
             )
             try:
                 result = scrape_place(
@@ -723,6 +1204,7 @@ def main() -> int:
                     args.recent_reviews,
                     full_reviews_requested=collect_full_reviews,
                     full_review_limit=args.full_review_limit,
+                    capture_review_network=args.capture_review_network,
                 )
             except Exception as exc:
                 result = {
@@ -743,6 +1225,9 @@ def main() -> int:
                     "full_reviews_attempted": collect_full_reviews,
                     "review_cards_collected": 0,
                     "visible_review_cards_collected": 0,
+                    "raw_review_capture_enabled": False,
+                    "raw_review_responses_captured": 0,
+                    "raw_review_responses": [],
                     "recent_reviews": [],
                     "scan_error": normalize_text(str(exc)),
                 }
@@ -752,8 +1237,10 @@ def main() -> int:
             result["nhs_profile_url"] = row["nhs_profile_url"]
             result["query_used"] = query
             result["title_match_score"] = round(title_similarity(row["practice_name"], str(result.get("google_maps_title", ""))), 3)
+            raw_review_payload = dict(result)
+            result["raw_review_capture_file"] = write_raw_review_capture_file(args.raw_review_dir, raw_review_payload)
+            result.pop("raw_review_responses", None)
             result["review_text_file"] = write_review_text_file(args.reviews_text_dir, result)
-            existing_index = existing_result_indexes.get(row["canonical_code"], None)
             if existing_index is None:
                 collected.append(result)
                 existing_result_indexes[row["canonical_code"]] = len(collected) - 1

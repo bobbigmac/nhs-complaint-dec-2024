@@ -15,6 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
 DEFAULT_INPUT = OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv"
 DEFAULT_GOOGLE_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
+DEFAULT_RAW_REVIEW_DIR = OUTPUT_DIR / "google-review-raw"
 DEFAULT_COLLECTOR_PYTHON = BASE_DIR / ".venv-google-reviews" / "bin" / "python"
 
 
@@ -63,11 +64,18 @@ def main() -> int:
     parser.add_argument("--batch-wait-min", type=float, default=45.0)
     parser.add_argument("--batch-wait-max", type=float, default=120.0)
     parser.add_argument("--recent-reviews", type=int, default=10)
+    parser.add_argument("--raw-review-dir", type=Path, default=DEFAULT_RAW_REVIEW_DIR)
+    parser.add_argument(
+        "--capture-review-network",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Capture raw Google Maps review fetch/XHR responses and dump them per practice.",
+    )
     parser.add_argument(
         "--full-reviews",
-        choices=("none", "gtd", "all"),
-        default="none",
-        help="Optionally scroll the full reviews feed instead of capturing only currently visible review cards.",
+        choices=("none", "new", "gtd", "all"),
+        default="new",
+        help="Scroll the full reviews feed for newly created records, GTD rows, or all rows instead of only capturing visible review cards.",
     )
     parser.add_argument(
         "--full-review-limit",
@@ -75,7 +83,7 @@ def main() -> int:
         default=0,
         help="Maximum reviews to keep when full-review mode is active; 0 keeps loading until Google stops.",
     )
-    parser.add_argument("--headless", action="store_true")
+    parser.add_argument("--headless", action="store_true", help="Run batch collection headlessly; omit this for the normal visible Firefox session")
     parser.add_argument("--max-batches", type=int, default=0, help="Stop after this many batches; 0 means run until complete")
     parser.add_argument(
         "--target",
@@ -123,6 +131,8 @@ def main() -> int:
             str(batch_size),
             "--recent-reviews",
             str(args.recent_reviews),
+            "--raw-review-dir",
+            str(args.raw_review_dir),
             "--pause-seconds",
             f"{pause_seconds:.2f}",
             "--pause-jitter-seconds",
@@ -134,6 +144,8 @@ def main() -> int:
             "--full-review-limit",
             str(args.full_review_limit),
         ]
+        if not args.capture_review_network:
+            collect_cmd.append("--no-capture-review-network")
         if args.target == "unscanned":
             collect_cmd.append("--resume")
         for code in batch_codes:

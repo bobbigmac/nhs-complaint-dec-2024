@@ -4,10 +4,13 @@ Postcode: M40 9NB
 Google Maps title: Simpson Medical Practice
 Google rating: 1.8
 Google review count: 104
-Google Maps URL: https://www.google.com/maps/place/Simpson+Medical+Practice/@53.5140746,-2.1971922,17z/data=!4m8!3m7!1s0x487bb0eef95987b7:0xa81f210c224ba536!8m2!3d53.5140746!4d-2.1971922!9m1!1b1!16s%2Fg%2F1hc1jffvq?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Simpson+Medical+Practice/@53.5140778,-2.1997725,17z/data=!4m8!3m7!1s0x487bb0eef95987b7:0xa81f210c224ba536!8m2!3d53.5140746!4d-2.1971922!9m1!1b1!16s%2Fg%2F1hc1jffvq?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
 Review collection mode: full_feed
 Review cards collected: 104
+Owner replies collected: 6
+Raw review responses captured: 11
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y02520-simpson-medical-practice.json
 
 Captured reviews
 ================
@@ -16,6 +19,9 @@ Author: Ken Kamdy
 Date: 2 months ago
 Rating: 1 star
 A call was initiated to ascertain why an appointment for a mother and child was declined by a GP, providing clinical advice to the service user, and you are not part of the medical team. NHS staff must not unreasonably deny access to services, and patients are entitled to be treated with dignity, receive clear information, and file a formal complaint regarding inadequate care or discourteous conduct. However, a staff member and a receptionist unjustly canceled an appointment, and I have requested the call log. Non-clinical reception staff should not act as if they are GPs; clinical decisions regarding whether a baby or parent requires a review should be made by a qualified health professional (GP, nurse, ANP) following appropriate triage protocols. Professional guidance underscores that healthcare professionals must not unreasonably refuse a patient access to care that addresses their needs and must communicate with kindness and clarity, particularly with vulnerable patients such as parents of very young children. A receptionist informing a practice or service user that she does not consult a GP also provides clinical advice to the service user. Merely asserting that a one-year-old “does not need to see a GP” without a proper clinical evaluation or justification is unlikely to adhere to good practice standards regarding communication and access to care. It is unfortunate that this matter is not being addressed; I intend to escalate this issue further due to the appalling service.
+Practice response date: a month ago
+Practice response:
+Hi Ken, Thank you for taking the time to share this feedback. We are sorry to hear about your experience and understand how worrying it is, particularly when there is a young child involved. We take concerns of this nature very seriously, however we are unable to investigate or discuss individual cases here. We would really like the opportunity to look into this for you, therefore please contact either the practice directly and speak to a manager, alternatively contact our patient services team either by email gtd.feedback@nhs.net or telephone on 0161 337 2254, so we can investigate your concerns in line with our complaints procedure. Thanks Claire Patient Services Team
 
 Author: Angela D
 Date: 2 months ago
@@ -23,19 +29,28 @@ Rating: 1 star
 Angela D1 review2 months ago
 
 Author: marysarah ewemie
-Date: 3 months ago
+Date: 4 months ago
 Rating: 4 stars
 Have had good experience with Simpson medical practice so far. My doctor takes time to explain. The reception desk needs to checked anyways.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your lovely feedback. It's good to hear you have received great service. We appreciate you taking time to give feedback and value your comments.
 
 Author: Fiona Simpson
 Date: 4 months ago
 Rating: 5 stars
 I am always really happy with and satisfied with all interactions with the surgery, and actually recommend it to others. The 2 main doctors and advanced clinician are always very good and are through, listen and take concerns seriously. The patches system is very good and easy to use - myself and spouse have had to use it a few times recently, and we have always then been contacted with an appropriate appointment, if that was face to face, urgent phone, or routine that has always happened quickly. There are some people complaining about lack of appointments etc, I have never found this to be the case. I work in primary care and regularly deal with different GP surgeries, and believe me, simpson medical are one of the better ones!! Perhaps everyone needs to have realistic expectations, and consider that there is high demand for healthcare, which exceeds capacity. The old days of face to face appointments are gone, unless it is necessary this does not happen anymore - often phone calls, including photos etc are often sufficent, and more a more efficient use of staff resources. If a face to face appointment is necessary it will be made whilst anything regarding mental health has always been taking seriously and urgently. I am very happy with being a patient here, and think given the demand they do a good job, and are one of the better surgeries I deal with. Thank you to the staff, I appreciate it
+Practice response date: 3 months ago
+Practice response:
+Thank you for your lovely feedback. It's good to hear you have received great service. We appreciate you taking time to give feedback and value your comments.
 
 Author: Abdulkarim Yuusuf
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
 reception not respected five minutes let they cancel for your appointment
+Practice response date: 4 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Gwenderline Peprah
 Date: 6 months ago
@@ -43,9 +58,12 @@ Rating: 5 stars
 Gwenderline Peprah6 months ago
 
 Author: Be Shans
-Date: 8 months ago
+Date: 9 months ago
 Rating: 1 star
 One star is too many. They treat you badly. They don't respect you. They treat you harshly. If you want to book an appointment, they ask you to book it online. I don't know what they do there.
+Practice response date: 8 months ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you are unhappy with the service you have received. Your comments have been passed on to the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Davide Uchejiafu
 Date: 10 months ago
@@ -53,9 +71,12 @@ Rating: 5 stars
 Davide Uchejiafu2 reviews10 months ago
 
 Author: Saskia Mcbride
-Date: 10 months ago
+Date: 11 months ago
 Rating: 1 star
 Shouldn’t even be a gp they keep on changing my appointments around didn’t even tell me they cancelled my appointment they told me on the day I went their though I live quite far also now I’m having to change gp just not the best of doctors to go to
+Practice response date: 10 months ago
+Practice response:
+Good Morning, Thank you for your feedback. We are sorry to hear you are unhappy with the service received. Your concerns have been raised with the practice manager. If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net.
 
 Author: Abdulkarim Yuusuf
 Date: a year ago
@@ -90,7 +111,7 @@ Used to be a really good practice but recently can't get a face to face appointm
 Author: Patience Eigbokhan
 Date: a year ago
 Rating: 2 stars
-Patience Eigbokhan1 reviewa year ago
+Patience Eigbokhan2 reviewsa year ago
 
 Author: beena bnair
 Date: a year ago
@@ -123,7 +144,7 @@ Rating: 1 star
 Impossible to get an appointment. You call at 8am and they are fully booked. This happens quite frequently.
 
 Author: MrWat3k
-Date: a year ago
+Date: 2 years ago
 Rating: 1 star
 Easy job there. They always send you to walk in centre. After 2 years I never meet my GP. Waste of public money.
 
@@ -187,12 +208,12 @@ Date: 2 years ago
 Rating: 1 star
 Vital institution like this deserves to serve the people better. The receptionists are really not humane enough to handle sensitive positions like this. Health is life and should not be left in the hands of those who doesn't have feelings and mutual respect for their fellow humans.
 
-Author: Benedetta Osafo
+Author: A Google User
 Date: 3 years ago
 Rating: 1 star
 The reception is absolutely horrible! That one star is solely because of the amazing nurses behind the scenes taking care of you but the rest such as appointments and doctors are all DISGUSTING.
 
-Author: Richard Mihok
+Author: RM
 Date: Edited 3 years ago
 Rating: 1 star
 Worst GP, they were good, specially one of the receptionist is soo rude and acts as if they can't hear you even though i heard myself through the phone. My mother needed a urgent appointment when we finally got through receptionist says you can only explain one problem per appointment plus she didn't even make a appointment and ended up on the AnE few days after at the end as it got worse. Don't even get me started on how they treated my brother that has mental conditions it feels like they don't care which is sad to see however the doctors are amazing just the receptionist
@@ -498,12 +519,12 @@ Rating: 1 star
 Disgraceful people , never answer the phone and there's never appointment available
 
 Author: Chantel
-Date: 8 years ago
+Date: 9 years ago
 Rating: 1 star
 This doctors has to be the worst doctors I have ever experienced they never answer the phone iv been sat in the practice and they sit there chin wagging ignoring the phone iv been today and none of my paperwork has been done bare n in mind o work full time and have to take time out to do this now I have to fish work again early to go back next week to get my paperwork they either need more staff and Dr's or the nhs need informing absolutely ridiculous
 
 Author: Elaine Ivell
-Date: 8 years ago
+Date: 9 years ago
 Rating: 1 star
 Rang for appointment said it be in 2wks
 
