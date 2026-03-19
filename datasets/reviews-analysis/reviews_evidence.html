@@ -242,6 +242,13 @@ body {
 .summary-report .summary-stats .stats-count { font-weight: 600; color: var(--ink-muted); margin-bottom: 6px; }
 .summary-report .category-report { font-size: 13px; color: var(--ink-muted); margin-top: 10px; }
 .treemap-block.compact-overview .treemap-block-body { padding: 6px; }
+.regional-overview-report {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+}
 .summary-report .summary-stats .distribution-bar { display: flex; height: 26px; overflow: hidden; background: var(--border); }
 .summary-report .summary-stats .distribution-bar span { flex-shrink: 0; min-width: 2px; }
 .summary-report .summary-stats .distribution-bar span[title] { cursor: help; }
@@ -579,7 +586,11 @@ body {
       const s = parseInt(r.rating_stars, 10);
       counts[s >= 1 && s <= 5 ? s : 0]++;
     }
-    const total = reviews.length;
+    return buildSummaryStatsFromCounts(counts, reviews.length);
+  }
+
+  function buildSummaryStatsFromCounts(countsInput, total) {
+    const counts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 0: 0, ...countsInput };
     const colors = { 1: "var(--low)", 2: "var(--midlow)", 3: "var(--midhigh)", 4: "var(--high)", 5: "var(--veryhigh)", 0: "var(--missing)" };
     let barHtml = "";
     for (const s of [1, 2, 3, 4, 5, 0]) {
@@ -619,6 +630,28 @@ body {
     return across.filter(r => r.estimated_year != null && r.estimated_year >= cutoffYear);
   }
 
+  function filterManchesterRegionOverviewByTimespan(overview, yearsBack) {
+    if (!overview) return null;
+    if (!yearsBack) return overview;
+    const n = parseInt(yearsBack, 10);
+    const cutoffYear = (data.generated_date ? parseInt(data.generated_date.slice(0, 4), 10) : new Date().getFullYear()) - n;
+    const ratingCounts = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+    let reviewCount = 0;
+    for (const [year, counts] of Object.entries(overview.rating_counts_by_year || {})) {
+      if (parseInt(year, 10) < cutoffYear) continue;
+      for (const key of ["0", "1", "2", "3", "4", "5"]) {
+        const value = Number(counts?.[key] || 0);
+        ratingCounts[key] += value;
+        reviewCount += value;
+      }
+    }
+    return {
+      ...overview,
+      review_count: reviewCount,
+      rating_counts: ratingCounts,
+    };
+  }
+
   function render() {
     hidePopover();
     const themeMode = document.querySelector("[aria-label='Theme grouping'] .view-toggle-btn.active")?.dataset.theme || "operational";
@@ -654,6 +687,7 @@ body {
     let practices = timespan ? filterByTimespan(data.practices, timespan) : data.practices;
     let acrossRaw = data.recent_reviews_across_manchester || [];
     let across = timespan ? filterAcrossByTimespan(acrossRaw, timespan) : acrossRaw;
+    const regionalOverview = filterManchesterRegionOverviewByTimespan(data.manchester_region_overview, timespan);
     if (hidePracticeReplies) {
       const excludePracticeReply = r => !r.is_practice_reply;
       practices = practices.map(p => ({ ...p, reviews: p.reviews.filter(excludePracticeReply) })).filter(p => p.reviews.length > 0);
@@ -677,9 +711,9 @@ body {
       };
       allSections = [
         mergeWithSource(gtdPractices, "GTD practices", "_gtd", true),
-        mergeWithSource(otherGood, "Other fully reviewed (good)", "_other_good"),
-        mergeWithSource(otherPoor, "Other fully reviewed (poor)", "_other_poor"),
-        sortedAcross.length ? { canonical_code: "_recents_only", practice_name: "Manchester Region GPs", gtd_managed: false, gtd_takeover_date: "", review_count: sortedAcross.length, reviews: sortedAcross, inclusion_reason: null } : null,
+        mergeWithSource(otherGood, "Top 5 non-GTD practices", "_other_good"),
+        mergeWithSource(otherPoor, "Bottom 5 non-GTD practices", "_other_poor"),
+        regionalOverview?.review_count ? { canonical_code: "_recents_only", practice_name: "Manchester Region GPs", gtd_managed: false, gtd_takeover_date: "", review_count: regionalOverview.review_count, reviews: [], inclusion_reason: null, region_overview: regionalOverview } : null,
       ].filter(Boolean);
     } else {
       const acrossPractice = sortedAcross.length > 0 ? {
@@ -705,7 +739,7 @@ body {
       }).filter(s => s.reviews.length > 0);
     }
 
-    const totalReviews = allSections.reduce((n, p) => n + p.reviews.length, 0);
+    const totalReviews = allSections.reduce((n, p) => n + (p.region_overview ? p.review_count : p.reviews.length), 0);
 
     document.getElementById("stat-practices").textContent = allSections.length;
     document.getElementById("stat-reviews").textContent = totalReviews;
@@ -764,9 +798,9 @@ body {
         : practice.canonical_code === "_gtd"
           ? `<div class="practice-inclusion-note">All GTD-managed practices combined</div>`
           : practice.canonical_code === "_other_good"
-            ? `<div class="practice-inclusion-note">Non-GTD practices with full reviews, included by positive reviews</div>`
+            ? `<div class="practice-inclusion-note">Top 5 non-GTD practices by Google score, using only selected comparator reviews</div>`
             : practice.canonical_code === "_other_poor"
-              ? `<div class="practice-inclusion-note">Non-GTD practices with full reviews, included by negative reviews</div>`
+              ? `<div class="practice-inclusion-note">Bottom 5 non-GTD practices by Google score, using only selected comparator reviews</div>`
               : isAcross
                 ? `<div class="practice-inclusion-note">Regional sanity check – all other practices aggregated</div>`
                 : isNonGtd && inclusionReason
@@ -785,14 +819,24 @@ body {
 
       const container = section.querySelector(`.${containerClass}`);
       const useSummary = isConsolidated && practice.canonical_code === "_gtd" && showSummaries && summariesData?.summaries;
-      const useCompactOverview = isConsolidated && showSummaries && ["_other_good", "_other_poor", "_recents_only"].includes(practice.canonical_code);
+      const useCompactOverview = isConsolidated && (practice.canonical_code === "_recents_only" || (showSummaries && ["_other_good", "_other_poor"].includes(practice.canonical_code)));
 
       if (useCompactOverview) {
+        if (practice.canonical_code === "_recents_only") {
+          const report = document.createElement("div");
+          report.className = "summary-report regional-overview-report";
+          report.innerHTML = buildSummaryStatsFromCounts(practice.region_overview.rating_counts, practice.review_count);
+          container.appendChild(report);
+          content.appendChild(section);
+          continue;
+        }
         const block = document.createElement("div");
         block.className = "treemap-block compact-overview";
         block.classList.add("has-summary");
-        const statsHtml = buildSummaryStats(practice.reviews);
-        const categoryHtml = buildCategoryReport(practice.reviews, operationalLabels);
+        const statsHtml = practice.region_overview
+          ? buildSummaryStatsFromCounts(practice.region_overview.rating_counts, practice.review_count)
+          : buildSummaryStats(practice.reviews);
+        const categoryHtml = practice.region_overview ? "" : buildCategoryReport(practice.reviews, operationalLabels);
         block.innerHTML = `<div class="treemap-block-body"><div class="summary-report">${statsHtml}${categoryHtml}</div></div>`;
         container.appendChild(block);
       } else {

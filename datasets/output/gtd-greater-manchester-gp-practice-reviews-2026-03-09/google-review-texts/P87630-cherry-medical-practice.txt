@@ -3,59 +3,459 @@ Canonical code: P87630
 Postcode: M28 0BB
 Google Maps title: Cherry Medical Practice
 Google rating: 4.1
-Google review count: 55
-Google Maps URL: https://www.google.com/maps/place/Cherry+Medical+Practice/@53.5293645,-2.4216289,17z/data=!4m8!3m7!1s0x487ba887b48fdb23:0x8611d667659f5a42!8m2!3d53.5293645!4d-2.4216289!9m1!1b1!16s%2Fg%2F1q5bll31l?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 56
+Google Maps URL: https://www.google.com/maps/place/Cherry+Medical+Practice/@53.5293645,-2.4242092,17z/data=!4m8!3m7!1s0x487ba887b48fdb23:0x8611d667659f5a42!8m2!3d53.5293645!4d-2.4216289!9m1!1b1!16s%2Fg%2F1q5bll31l?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 56
+Owner replies collected: 55
+Raw review responses captured: 6
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87630-cherry-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Jen Dela
+Date: a day ago
+Rating: 5 stars
+I had a very good experience at my GP practice. The appointment was easy to book, and I was seen on time. Dr.Tandon was kind, attentive, and explained everything clearly. I felt listened to and well cared for. Thank you!😊 …
 
 Author: Rem Smith
-Date: a week ago
+Date: 3 weeks ago
 Rating: 5 stars
 Great gp, Dr Cheema is great, very polite and friendly while also being straight to the point. 10/10 👍🏻 …
+Practice response date: 3 weeks ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback
 
 Author: Gary Tart
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
 Was seen politely at reception Appointment was on time with the doctor, who couldn't be more understanding of condition. In all a very good experience.
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback
 
 Author: luis alarcon
 Date: 5 months ago
 Rating: 5 stars
 I've been seen by Dr Sapna, and she was amazing. She listened to all my concerns regarding my health, and she has helped me to understand my situation and make all the referrals I needed. Thanks, Dr Sapna. I wish to meet you next time.
+Practice response date: 5 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback
 
 Author: Layla Leech
 Date: 5 months ago
 Rating: 5 stars
 Lovely man really tried to help and lisend to me 5 ☆☆☆☆☆
+Practice response date: 5 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback
 
 Author: Влада Кужим
 Date: 6 months ago
 Rating: 1 star
 I came to you because I had an appointment with a doctor and I came the day before the appointment so that the administrators would add an interpreter for me, as it is impossible to do online. I was told that this could not be done. I asked to just have a phone and I would write to the doctor on it (this has already happened once), to which the administrator also said no. I did not understand anything she was saying. I asked to have it written on the phone so that I could understand, but the administrator also refused. I did not know what to do. The only thing the administrator did was cancel my appointment with the doctor, which I had been waiting for for 2 weeks. And gave me the doctor's phone number so that I could call at 8:00. The only question is how should I call the doctor in English to communicate, if I am now asking to provide me with an interpreter for my appointment. The administrators are simply disappointing. This is not the first time that they understand that I have a weak level of English and have a very negative attitude. I came on 08/27/25 at 4:20 PM. Unfortunately, I will change to another clinic, because I can't even make an appointment. (
+Practice response date: 5 months ago
+Practice response:
+Thankyou you for taking the time to leave a google review, we always welcome feedback. The NHS provides interpreters for clinical consultations but not usually for booking appointments or at the reception area Unfortunately, as you came in the day before your appointment to request the use of an interpreter, the appointment booked was a single slot. As the clinic was fully booked, we were unable to cancel any other slots to provide a double appointment at short notice. You were given several options on the day including, an appointment on a different day where we could book the necessary double appointment slot, this was declined. Therefore, you were advised that you could ring for one of our on the day appointments where we would be able to book the necessary double slot. As a result of this review, we have updated the appointment message that is linked to appointment booking to advise patients requiring an interpreter to contact the practice directly. If you would like to discuss this matter further, please feel free to email your details to GMICB-SAL.cherrymedicalpractice@nhs.net Kind Regards Cherry Medical
 
 Author: Roy Blackshaw
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
 I've been with this surgery for many years and have always been looked after by the Doctors Nurses and all staff. Many thanks to Dr cheema for her help and support recently it's much appreciated.
+Practice response date: 7 months ago
+Practice response:
+Thank you very much for the kind feedback, Roy. We appreciate you taking the time to leave it!
 
 Author: May Ka
 Date: 11 months ago
 Rating: 5 stars
 Dr Cheema is the best, I always feel listened and get all information I seek for. Practice staff always helpful:)
+Practice response date: 11 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
 
 Author: Fabiana Couto
-Date: 11 months ago
+Date: a year ago
 Rating: 3 stars
 Good medical care, but the operators on the phone do not listen to the patient's complaints. They hang up without you saying anything and often do not answer the phone at all.
+Practice response date: 11 months ago
+Practice response:
+Dear Patient, I am sorry to hear that you are unhappy with the service. If you wish to discuss this matter further, please feel free to email your details to GMICB-SAL.cherrymedicalpractice@nhs.net Kind Regards Cherry Medical
 
 Author: Daryna Veselova
 Date: a year ago
 Rating: 1 star
 I am bit shocked to what the doctor has told me this morning which what I not expect for a doctor to say in general. My call was made before 8am even though the practice is open from 8am. I don’t mind getting a call in the morning but nobody has made me aware the calls are made in the morning from 7am to what the doctor has stated via telephone today . When I called to make an appointment I have mentioned to the receptionist that I am not sure whether I need a call or a face to face appointment and clearly have stated what my problem is. The doctor called and said that I would need to a face to face appointment to get examined. Which I felt that I have wasted my time because with the pain that I have I could have been seen today and maybe the doctor could see my problem because the pain that I have is not always there. Which means I am not sure when I will get face to face appointment as it’s Thursday today and to get a face to face appointment would be slightly longer (possibly next week) which means I am not sure if I will still be in pain at the time of when I get seen face to face. Also for the doctor to say that even if we do all investigation referrals ect I should expect for the problem not to be solved and that possibly I will be on long term painkiller depending on the specialists will say. Now from the time that I was registered at this doctors, until now I was actually thinking that this practice and doctors are very caring towards their patients, I don’t mean by just solving the problems and providing medicine . But I would definitely except for the doctor to be more caring of how they speak to the patients too , that is part of the care too. I defiantly wasn’t asking Dr Cheema about what I expected or about my expectations were, when I see the specialist . This is not what I expect from the doctor at all. We are all humans a despite I have this is an on going problem and still nothing is found and this is not a blame at the GP. But it s really upsetting and as a person I am very worried about my health, but for the doctor to kind of tell me off about my expectations that I didn’t even ask about is a bit wrong and for the first time I felt that the conversation with the doctor was not caring towards me. The only doctor that I feel that care in this practice is Dr Tandon.
+Practice response date: 11 months ago
+Practice response:
+Dear Patient, I am sorry to hear that you are unhappy with the service. If you wish to discuss this matter further, please feel free to email your details to GMICB-SAL.cherrymedicalpractice@nhs.net Kind Regards Cherry Medical
 
 Author: anthony turner
 Date: a year ago
 Rating: 5 stars
 I've been a patient of Cherry Medical for over 40 years. I require a large prescription each month. The receptionists are patient and helpful as is the nurse and doctors.
+Practice response date: 11 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Linda Emioma
+Date: a year ago
+Rating: 5 stars
+Very grateful for the care that was given to me and the extra help to sort out my condition
+Practice response date: 11 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Lindsay Stott
+Date: a year ago
+Rating: 5 stars
+Rarely have to go to the gp but when I do need to I always manage to get a same day appointment. Always helpful guidance given. Monthly prescriptions always issued on time.
+Practice response date: 11 months ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Mandy Simmons
+Date: Edited a year ago
+Rating: 5 stars
+Today I had a telephone appointment with Dr Tandon and had a fantastic response regarding my illness, so caring and thoughtful. Once again fantastic service by all. Thankyou.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Barbara Toone
+Date: a year ago
+Rating: 5 stars
+The Doctors have all the time to listen to what you are there for. No rushing ,compationate, helpful, talk to you as a person, not a number. Explain to you so you understand and not be confused. Reassuring ,always very pleasant
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Clare Smith
+Date: a year ago
+Rating: 5 stars
+Excellent. The doctors here really care about their patients. The doctors listen and are respectful as well as prepared to discuss various treatment routes. Cherry Medical is the most friendly and approachable surgery I've attended. The doctors and staff care, are knowledgeable and get things done. Highly recommend.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: rachel green
+Date: a year ago
+Rating: 5 stars
+Great surgery, been with them since I was born, Dr's have changed over the years, but still a great service, really personable and friendly. Cannot recommend them enough.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Iyunola Pedro
+Date: a year ago
+Rating: 5 stars
+MY GPs'! I'm always well attended to, my concerns are addressed duly. I'm quite satisfied with quality of care received
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Marta Nieścior-Grzyb
+Date: a year ago
+Rating: 5 stars
+I have been registered with Cherry Medical Practice with my whole family for several years. I am grateful to the doctors for their professional help and support when we have a problem to solve. Thank you very much and I recommend it to everyone with all my heart!
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Veronika
+Date: a year ago
+Rating: 5 stars
+As a long-time patient of the practice, I wanted to take a moment to express my appreciation for the consistently positive and welcoming environment that all staff members, from reception to the nurses and GPs, have maintained over the years. I have been a patient at this practice since 2014 and have never encountered any issues. Even during the challenging times of the COVID-19 pandemic, the practice remained open and continued to assist to the best of its ability. It is unfair for individuals to damage the practice's reputation simply because they are unable to secure an immediate appointment. In my own experience, this issue is prevalent, if not worse, in other healthcare settings. Individuals need to address any concerns they may have directly with the staff at the practice, rather than resorting to negative online reviews. Some individuals don't understand that a single negative review can have a significant impact on a practice's reputation and it can be difficult to recover from such damage. I encourage everyone to communicate openly and constructively resolve any issues, rather than resorting to anonymously criticising the practice online. We should support the positive environment at the practice by addressing concerns directly and fostering open communication rather than hiding behind the keyboards...
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Angela Bowman
+Date: a year ago
+Rating: 5 stars
+I have received exceptional care from Cherry Medical centre particularly from Dr Tandon. I attended the surgery initially on Monday with a woman’s health complaint which required an intimate examination. Respectfully Dr Tandon rebooked my appointment for her Friday clinic of the same week. This allowed for a 30 minute consultation, in which all examinations and discussions took place in a comfortable, non rushed appointment. The focus on myself and women’s health was amazing. Thankyou.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Trevor Sale
+Date: a year ago
+Rating: 5 stars
+Great experience today at Cherry Medical. Got an appointment no issue and Dr Tandon saw me, she went above and beyond for me. Listened to all that was wrong with me and ordered multiple tests to check everything for me, way more than I was expecting. She put me at ease as she always does and then she handed me over to the nurse who was equally fantastic. She noted an issue and kept me at the surgery until I was ok to leave and she took bloods to perfection, no pain, slick as it could be. Truly a great experience and I left knowing exactly what I needed to do and what was wrong with me. Thank you for looking after me so well today and for all the tests truly appreciated
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Temmy Blessed
+Date: a year ago
+Rating: 5 stars
+I would like to provide some positive feedback about my GP practice. My doctor is incredibly lovely and supportive, always taking the time to listen to my concerns and answer any questions I have. Their empathetic approach makes me feel comfortable and valued as a patient. I truly appreciate the care and attention I receive during my visits, which makes a significant difference in my overall health experience. Thank you for the excellent service!
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: megan lindsay
+Date: a year ago
+Rating: 5 stars
+Very welcoming surgery. I have always found the Dr's to be very nice made me feel comfortable and always listened to me and been reassuring. Drs was amazing when both my mum and dad was very poorly and very supportive.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Natasha Willoughby-Dhrif
+Date: a year ago
+Rating: 5 stars
+As always very supportive appointment, Dr Tandon always happy to help even if she doent have the answers there and then. I have been with the practice now for years and all members of staff ie, reception, nurses and GPS there to help and listen. Thank you.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: ShrimPy
+Date: a year ago
+Rating: 2 stars
+The practice have a faulty telephone system. Reception cannot hear callers and hangup immediately. When trying explain that it must be their phones, again hangup rudely. Not a first time, hence my review. I am making tens of calls to many organisations without any line problems. Staff should not aim their frustration onto patients. Terrible.
+Practice response date: a year ago
+Practice response:
+Dear Patient, I am sorry to hear that you have had problems contacting us today. There is no active issue with our phones today. If an issues occurs where possible we will add info to our introduction message. We will always end a call where we have receive no response after we have said Hello several times, this is to free up the phone line so you can attempt to reconnect. If you wish to discuss this matter further please feel free to email your details to GMICB-SAL.cherrymedicalpractice@nhs.net Kind Regards Cherry Medical
+
+Author: Dyl Howard
+Date: a year ago
+Rating: 1 star
+Easily the worst doctors surgery I’ve ever seen in my life. Shocking quality of care from start to finish. Particularly Dr Tandon, total embarrassment of a doctor. Continue your care at Cherry Tree Medical Practice at your own risk.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a review as a practice we appreciate all feedback. We would appreciate if you could email the practice at GMICB-SAL,cherrymedicalpractice@nhs.net the details of the interaction which has led to this review so we can investigate the matter further.
+
+Author: Test and Recognise
+Date: a year ago
+Rating: 1 star
+Would give it a 0 if i could, the Reception is a Joke, Rude and needs an overall evaluation, don’t come here if you want to be treated with respect as a patient.
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a review as a practice we appreciate all feedback. We would appreciate if you could email the practice at GMICB-SAL,cherrymedicalpractice@nhs.net the details of the interaction which has led to this review so we can investigate the matter further.
+
+Author: Lenny Norton
+Date: a year ago
+Rating: 5 stars
+Very helpful and friendly staff
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Damian Cichonski
+Date: a year ago
+Rating: 1 star
+unlucky patient, I will leave reception service with no comment
+Practice response date: a year ago
+Practice response:
+Hi Damian, thank you for the feedback. We can see from your comment that you are unhappy but unfortunately we only register patients living within the practice boundary. Kind Regards Cherry Medical
+
+Author: Michelle Wood
+Date: a year ago
+Rating: 5 stars
+Dr Hussan should be credited for his overall treatment of patients He’s professional, obviously well educated and extremely knowledgeable Thank you for helping me see some light Dr Hussan 👍🙏 Girls on reception very cheery And polite too, thanks again
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Lorna Wilkinson
+Date: 2 years ago
+Rating: 5 stars
+Cherry Medical is absolutely outstanding with the service they provide from reception staff to doctors, rang today hoping to speak with one of the GPS , this was after lunch and the reception staff offered me 3 different times for today this is a brilliant service, not just today but phone calls I receive offering me help with other health services, 👍👍👍👍👍👍👍
+Practice response date: a year ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Kamil Brooklyn
+Date: 2 years ago
+Rating: 5 stars
+Amazing staff who actually care and showing compassion. Wow great work to all! Proper straight forward amazing doctor and lovely reception too who are absolutely helpful and understanding x well done guys for doing amazing job! Thank you!
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: cbr600
+Date: 2 years ago
+Rating: 1 star
+Disgusting doctors and harendous receptionists all bar one named Emma, getting any type off appointment your looking at at least a weak, and before you get the appointment the staff on front (receptionist) want to know what your problem is, what ever happened to doctor patient confidentiality
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to add a google review for the practice, we regularly monitor our google reviews. We are sorry that you feel that the telephone query for booking an appointment has not been dealt with effectively. As the telephone welcome message mentions, staff are asking questions to help the patients book an appointment "Right Person First Time" as per NHS England guidance, and this process is called Care Navigation. It is useful to add a google review but not an anonymous one as we are unable to address the issues raised. We would suggest you please speak to our Reception Manager so we can address your concerns. Team Cherry
+
+Author: Diana Conde
+Date: 2 years ago
+Rating: 5 stars
+I have been attend Cherry Medical Practice for the past 4 years and the only thing I can say is PERFECTION AND excellent HUMAN BEING and all this because one of the best doctors ever meet, Dr Sapnar Tandor which is professional and understanding , thanks for been kind and helpful with me and my family.
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: gaynor evans
+Date: 2 years ago
+Rating: 5 stars
+Easy to get an appointment, polite helpful staff & very good doctors and nurse
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Sandra Ardern
+Date: 2 years ago
+Rating: 5 stars
+Cannot praise this surgery enough. If I could give more stars I would. Dr Cheema has gone above and beyond caring for both my mum and dad. Sadly we lost mum four years ago and Dr Cheema has been a tower of strength and help for dad since. Her patience and understanding for both dad and I has been without question commendable. The staff are polite, professional and no problem is ever too big or small. The telephone manner is impeccable and their caring attitude does not go unrecognised. Thank you all at Cherry Medical. A first class service
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Karl Cross
+Date: 2 years ago
+Rating: 5 stars
+Brilliant doctors, can always get an appointment to suit me, nothing is too much trouble. Dr cheema is one of the best doctors I've had and the nursing and reception staff are so professional and outstanding.
+Practice response date: 2 years ago
+Practice response:
+Thank you for taking the time to leave a google review, we always welcome feedback.
+
+Author: Karen Fleming
+Date: Edited 3 years ago
+Rating: 5 stars
+Reception staff are lovely and Dr Tandon is a fantastic GP. Update ; Having read the negative reviews on here, I wanted to update my review. I'm not sure what people expect from the NHS, but this practice almost always offers same day or within 24 hour care - this is over and above what most surgeries can provide
+Practice response date: 4 years ago
+Practice response:
+Thank you very much for taking the time to leave a review
+
+Author: Stacey Peake
+Date: 3 years ago
+Rating: 5 stars
+Dr cheema is the best doctor iv come across. I was with Salford primary care together and they made me more I'll than good. Dr cheema picked up on an illness and delt with me with great care and I owe my life to this lady.
+Practice response date: 3 years ago
+Practice response:
+Thank you for your lovely and appreciated feedback, Stacey. We are glad to have helped you!
+
+Author: Tony Cruz
+Date: 4 years ago
+Rating: 5 stars
+I have moved from a local GP to this one. While there are the usual wait times of 5 - 10 minutes when calling in the afternoon, I am greeted with the most accommodating staff.
+Practice response date: 4 years ago
+Practice response:
+Many thanks for your kind review, Tony.
+
+Author: Lucy Owens
+Date: 4 years ago
+Rating: 5 stars
+Recently joined Cherry Tree Medical. Honestly can’t fault it. Lovely staff, no issues with being able to book appointments at all. I have booked over the phone and online, experienced quick response from both. Waiting time inside the clinic is also minimal.
+Practice response date: 4 years ago
+Practice response:
+Thank you so much for your feedback, Lucy. Welcome to the practice!
+
+Author: Richard Haynes
+Date: 4 years ago
+Rating: 1 star
+This practice is disgraceful. Not once I have seen one of the doctors face to face since I have registered in this practice. 2 years ago. Hospitals, care homes are back open as usual. We don't have to wear a mask going out to shops, clubs and restaurants and they still only offer rush 5mins telephone appointments. Shame on you all ?DOCTORS? In this practice. Shame on you.
+Practice response date: Edited 2 years ago
+Practice response:
+***UPDATE: Dear Mr Haynes, we have checked our list and you are NOT REGISTERED and have never been registered with Cherry Medical Practice. We believe you have left this review for the wrong surgery! Thank you for taking the time to add the Google review. We would like to respond by adding that the front door of the surgery is open and all services in the Health Centre are seeing patients. We have appointments which are face to face, telephone and online requests all for GPs, practice nurse, Healthcare assistant, mental health practitioners, First Contact Physiotherapists and also the in-house pharmacists. Adding anonymous reviews are wasteful and provide no useful input. You are welcome to attend the surgery and we will listen and address your concerns. We are so confident in the care we provide that we are wondering if this is the surgery you are referring to in the review as patients have been seen all through the lock down and now, we have more than 60% appointments face to face currently. Best wishes Cherry Medical Practice
+
+Author: Ildo puca
+Date: 4 years ago
+Rating: 5 stars
+Absolutely brilliant practice cant do enough for you .. had a full mot today doctor tandon was lovely and was a short notice appointment
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: Cynthia Binkis
+Date: 4 years ago
+Rating: 5 stars
+Very helpful 👍 …
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: robert godley
+Date: 4 years ago
+Rating: 1 star
+phoned today for appointment can get phone call till friday ?????????????????
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to a google review regarding our practice. We are sorry to hear that you feel there was a delay in accessing an appointment. You were booked in for an appointment on Monday unfortunately due to illness the clinician could not attend. You were contacted by the practice via telephone and was offered an appointment on Friday the same week for a non-urgent problem. You were also given the option of being able to ring in on Tuesday at 8am to access an on the day urgent appointment. Following your review one of the GP’s spoke to you and you completely denied adding the review to google. You have been a longstanding patient of the practice and we were surprised and disappointed with the review considering the effort we had gone to resolve the issue. Best Wishes Cherry Medical Practice
+
+Author: Karly Doolan
+Date: 4 years ago
+Rating: 5 stars
+Excellent service & care by Dr Tandon! Appointment same day, in & out in no time & the best care given. Thankyou
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: Aims Wils
+Date: 4 years ago
+Rating: 5 stars
+Always been good to me and have managed to sort out all problems i have had quickly. Even due to covid i was worrying about something and they booked me in straight away to take my bloods and see me. I rang at 8oclock one day and was seen in the same day and sorted out quickly.
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: Tracy Grimshaw
+Date: 4 years ago
+Rating: 5 stars
+My family and I have been with cherry Medical Practice for many years. We have always been treaded very well and always been given all the help we need. I would highly recommend this surgery. Thank you to every member of staff.
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: Colin Barker
+Date: 4 years ago
+Rating: 5 stars
+I'm very happy with the services and care we received for me and my family
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: Ann Bermingham
+Date: 4 years ago
+Rating: 5 stars
+Both my mum and I have been patients at Cherry Medical for many years. During that time we have always been treated with courtesy and respect and the best of care. The reception staff have always been very helpful and given information about various things to the best of their knowledge. I have 100% confidence in both Dr Tandon and Dr Cheema who are very caring and patient as is the practice nurse. My experience of this practice is all positive and I hope to carry on attending for many years to come. Thank you Cherry Medical 👏👏
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: HazknOn60fps
+Date: 4 years ago
+Rating: 1 star
+Appalling. Numerous issues with this doctor's surgery but today is disgusting and they have failed in their duty of care. My 5 year old niece went with a suspected water infection. My sister walked her there crying and in pain. She was passed a sample pot and told to go home. My sister (who had 4 children with her) explained that it was a 40 minute walk back and that her daughter was crying, in pain and desperate for the toilet (due to the water infection) but they refused to let her use the toilet- they wanted her to make her little girl walk 40 mins home (in pain), do the sample at home and then walk the 40 mins back to drop the same off. Fortunately, the library who seemingly have more empathy than the doctor's surgery let her do the sample there. No other doctor's surgery or medical facility are making you pass your own swabs and samples through an inch gap in the window and completely refusing entry for essential medical treatment. I am disgusted.
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to add a google review regarding our practice. We are sorry to hear that you feel the surgery did not offer care to your expectations. I would suggest you contact the Reception Manager or Practice Manager in confidence so we can deal with the issue raised. We would also recommend that if the distance to the surgery is too much for you to travel, it is best registering at a surgery closer to your residence. Best Wishes Cherry Medical Practice
+
+Author: Kevan Adderley
+Date: 5 years ago
+Rating: 1 star
+Just tried to get appointment to speak to the doctor and was messed about by a receptionist that thinks she is above herself , very rude made me explain myself in two phone calls and then told me I could only book at 8 am why have me go through what was wrong with me then tell me that I said I would go instead to hospital and she replied that she would inform the hospital that I had been offered a appointment while still being snooty I informed her that I suffered from amongst other things I had insomnia and would find it difficult to phone at 8am because of this but she didn’t care just replied that other people are in the same position as me. If you are reading this do be advised this is not the first time that I have had the rude treatment and I would advise you to register with a different doctor
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to add a google review regarding our practice. We are sorry to hear that you feel the surgery did not offer care to your expectations. We have listened to the recording of your call as we record all calls for monitoring and training purposes. On the 17/03/2021 you contact the surgery your concern was discussed with a GP and you were advised a follow-up telephone call. You have raised two issues in your review: Firstly, the reception team are advised in all GP surgeries to take a brief overview for the reason for contacting the surgery. This is to help make sure patients are signposted to the appropriate services. Secondly you have expressed your inability to contact the surgery at 8am during Covid times we have had to adapt to increased demand by the patients so all appointments at that time were on the day. So, the reception team advised you to ring in at 8am in the morning any member of your family can make a call to arrange an appointment for you with your permission. Following this you had a consultation with a GP the next day on the 18/03/2021, so this medical condition has been dealt within 24hr of your first contact with the surgery You have been a long-standing patient at the surgery, and we hope you we continue to look after your health. Regards Cherry Medical Practice
+
+Author: Urung Lang
+Date: 5 years ago
+Rating: 1 star
+We registered with this surgery and physically handed in our IDs and Utility Bills for verification to the administrative staff through the window during the lockdown. 3 months after this, I contacted the surgery to find out whether we have registered. And the Surgery Staff told me they have no records of us there! I am so annoyed as they kept on saying they have two surgeries and we have to register with Salford Primary. I knew when we went there, we were directed to the end of the building and to hand our IDs and documents through the window. Not even checking online nor reassured me they will investigate what has happened to our registration. What most alarming was they had misled our IDs which she photocopied. And that's serious error on their part! Data Protection. I was beside myself! And because of that they ended the phone call because the woman said I was shouting. I was trying to get across to them to investigate what has happened. Very unprofessional. Staff needs to be responsible and educated. Even when I sent a written complaint to them, the Manager, Emma replied still insisting they have done nothing wrong. And she threatened me that my telephone conversation and me shouting was recorded. As if I am stupid and ignorant! Very condescending.
+Practice response date: 5 years ago
+Practice response:
+Thank you for taking the time to leave a review. We are sorry to hear you had difficulty in registering with a GP. We have investigated and have not received any online forms from you to register at Cherry Medical Practice. As explained by our Reception Manger there are 2 GP Practices in the building, and it is therefore possible that your documents were given to or taken by a member of staff for the other practice. Two members of the Reception Team spoke to yourself and found it difficult to engage in the conversation. As per the NHS Zero Tolerance policy the Reception Team had to end the conversation. Best wishes The Cherry Team
+
+Author: mike jones
+Date: 8 years ago
+Rating: 4 stars
+Thank you for taking the time to leave a review
+Practice response date: 5 years ago
+Practice response:
+Thank you for taking the time to leave a review
+
+Author: Susan Stabler
+Date: 10 years ago
+Rating: 5 stars
+Thank you for taking the time to leave a review
+Practice response date: 5 years ago
+Practice response:
+Thank you for taking the time to leave a review

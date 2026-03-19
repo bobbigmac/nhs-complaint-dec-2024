@@ -1054,6 +1054,105 @@ def build_gtd_google_score_timeseries(
     }
 
 
+def build_dataset_google_review_yearly_average(
+    rows: list[dict[str, Any]],
+    google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
+) -> dict[str, Any]:
+    anchor_date = date.today()
+    if google_results_path.exists():
+        anchor_date = date.fromtimestamp(google_results_path.stat().st_mtime)
+
+    result_by_code = {
+        str(item.get("canonical_code", "")).strip(): item
+        for item in load_google_review_results(google_results_path)
+        if item.get("canonical_code")
+    }
+
+    year_values_by_practice: dict[str, dict[int, float]] = {}
+    parsed_review_total = 0
+    skipped_review_total = 0
+    earliest_year: int | None = None
+
+    for row in rows:
+        code = str(row.get("canonical_code", "")).strip()
+        if not code:
+            continue
+        result = result_by_code.get(code, {})
+        reviews_payload = result.get("recent_reviews") or []
+        reviews_by_year: dict[int, list[float]] = {}
+
+        for review in reviews_payload:
+            if not isinstance(review, dict):
+                skipped_review_total += 1
+                continue
+            rating = parse_google_star_label(str(review.get("star_label", "")))
+            review_date = parse_google_relative_review_date(str(review.get("relative_date", "")), anchor_date)
+            if rating is None or review_date is None:
+                skipped_review_total += 1
+                continue
+            review_year = review_date.year
+            reviews_by_year.setdefault(review_year, []).append(rating)
+            parsed_review_total += 1
+            if earliest_year is None or review_year < earliest_year:
+                earliest_year = review_year
+
+        if not reviews_by_year:
+            continue
+
+        cumulative_total = 0.0
+        cumulative_count = 0
+        cumulative_by_year: dict[int, float] = {}
+        for review_year in sorted(reviews_by_year):
+            values = reviews_by_year[review_year]
+            cumulative_total += sum(values)
+            cumulative_count += len(values)
+            cumulative_by_year[review_year] = round(cumulative_total / cumulative_count, 4)
+        year_values_by_practice[code] = cumulative_by_year
+
+    if earliest_year is None:
+        return {
+            "anchor_date": anchor_date.isoformat(),
+            "years": [],
+            "average_series": [],
+            "practice_count_series": [],
+            "practices_with_review_history": 0,
+            "parsed_review_count": 0,
+            "skipped_review_count": skipped_review_total,
+        }
+
+    years = list(range(earliest_year, anchor_date.year + 1))
+    practice_points: dict[str, list[float | None]] = {}
+    for code, cumulative_by_year in year_values_by_practice.items():
+        last_value: float | None = None
+        points: list[float | None] = []
+        for year in years:
+            if year in cumulative_by_year:
+                last_value = cumulative_by_year[year]
+            points.append(last_value)
+        practice_points[code] = points
+
+    average_series: list[float | None] = []
+    practice_count_series: list[int] = []
+    for index in range(len(years)):
+        values = [
+            points[index]
+            for points in practice_points.values()
+            if points[index] is not None
+        ]
+        practice_count_series.append(len(values))
+        average_series.append(round(sum(values) / len(values), 4) if values else None)
+
+    return {
+        "anchor_date": anchor_date.isoformat(),
+        "years": [str(year) for year in years],
+        "average_series": average_series,
+        "practice_count_series": practice_count_series,
+        "practices_with_review_history": len(practice_points),
+        "parsed_review_count": parsed_review_total,
+        "skipped_review_count": skipped_review_total,
+    }
+
+
 def load_gtd_gpps_timeseries() -> dict[str, Any]:
     """Load GPPS historical subset for GTD practices (from extract script output)."""
     p = OUTPUT_DIR / "gtd_gpps_timeseries.json"
@@ -1065,6 +1164,7 @@ def load_gtd_gpps_timeseries() -> dict[str, Any]:
 def build_patient_change_analysis(
     markers: list[dict[str, Any]],
     patient_counts_by_year: dict[str, dict[str, int]],
+    dataset_google_review_average: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     dataset_average_by_year: dict[str, float | None] = {}
     for year, counts in (patient_counts_by_year or {}).items():
@@ -1109,12 +1209,38 @@ def build_patient_change_analysis(
         value = dataset_average_by_year.get(year)
         average_series.append(round(value, 3) if value is not None else None)
 
+    review_average_lookup = {
+        str(year): value
+        for year, value in zip(
+            dataset_google_review_average.get("years", []) if dataset_google_review_average else [],
+            dataset_google_review_average.get("average_series", []) if dataset_google_review_average else [],
+            strict=False,
+        )
+    }
+    review_average_practice_count_lookup = {
+        str(year): value
+        for year, value in zip(
+            dataset_google_review_average.get("years", []) if dataset_google_review_average else [],
+            dataset_google_review_average.get("practice_count_series", []) if dataset_google_review_average else [],
+            strict=False,
+        )
+    }
+    dataset_review_average_series = [review_average_lookup.get(str(year)) for year in years]
+    dataset_review_average_practice_counts = [
+        int(review_average_practice_count_lookup.get(str(year)) or 0) for year in years
+    ]
+
     return {
         "years": years,
         "dataset_average_by_year": dataset_average_by_year,
         "practice_count": len(practice_series),
         "practice_series": practice_series,
         "average_series": average_series,
+        "dataset_review_average_series": dataset_review_average_series,
+        "dataset_review_average_practice_counts": dataset_review_average_practice_counts,
+        "dataset_review_practice_history_count": int(
+            (dataset_google_review_average or {}).get("practices_with_review_history", 0)
+        ),
     }
 
 
@@ -1123,6 +1249,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     survey_by_code = load_gp_patient_survey_index()
     survey_branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
+    dataset_google_review_average = build_dataset_google_review_yearly_average(rows)
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
     patient_counts_by_year = load_registered_patient_timeseries() or {}
     deprivation_geojson = load_deprivation_subset_geojson()
@@ -1188,7 +1315,11 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
             }
         )
 
-    patient_change_analysis = build_patient_change_analysis(markers, patient_counts_by_year)
+    patient_change_analysis = build_patient_change_analysis(
+        markers,
+        patient_counts_by_year,
+        dataset_google_review_average,
+    )
 
     center_lat = sum(row["latitude"] for row in rows) / len(rows)
     center_lon = sum(row["longitude"] for row in rows) / len(rows)
@@ -1758,7 +1889,7 @@ body {{
 }}
 #patient-total-chart {{
   width: 100%;
-  height: 92px;
+  height: 118px;
   display: block;
   margin-top: 8px;
 }}
@@ -2129,11 +2260,11 @@ body {{
         <svg id="patient-treemap-chart" viewBox="0 0 920 420" preserveAspectRatio="xMidYMid meet" aria-labelledby="patient-treemap-title" role="img">
           <title id="patient-treemap-title">Patient count treemap by management group and current selected score</title>
         </svg>
-        <svg id="patient-total-chart" viewBox="0 0 920 92" preserveAspectRatio="xMidYMid meet" aria-labelledby="patient-total-title" role="img">
+        <svg id="patient-total-chart" viewBox="0 0 920 118" preserveAspectRatio="xMidYMid meet" aria-labelledby="patient-total-title" role="img">
           <title id="patient-total-title">Total registered patients across the full dataset over time</title>
         </svg>
       </div>
-      <p class="chart-note">This uses a fixed-scale grouped strip-treemap rather than re-squarifying each frame, so practice blocks mostly grow and shrink in place. Block area is registered patients in the chosen year, on the same patient-to-pixel scale for all years; colour and score label use the currently selected metric. Independent / other is split into Google review-score bands so better and worse destinations can be compared. The small strip-chart below shows the whole-dataset registered-patient total over the same years.</p>
+      <p class="chart-note">This uses a fixed-scale grouped strip-treemap rather than re-squarifying each frame, so practice blocks mostly grow and shrink in place. Block area is registered patients in the chosen year, on the same patient-to-pixel scale for all years; colour and score label use the currently selected metric. Independent / other is split into Google review-score bands so better and worse destinations can be compared. The small strip-chart below shows the whole-dataset registered-patient total over the same years, alongside the dataset-wide average Google review score by year. Reviews appear to improve slightly across the Manchester dataset since 2021/2022 despite the rapidly growing population.</p>
     </section>
     <section class="panel comparison-panel">
       <h2>Conclusions</h2>
@@ -3985,7 +4116,6 @@ function renderPatientChangeChart() {{
   const overallSeries = flattenGlobal
     ? overallSeriesRaw.map((value) => (value !== null && Number.isFinite(Number(value)) ? 0 : null))
     : overallSeriesRaw;
-
   const displayedValues = [
     ...overallSeries.filter((value) => value !== null && Number.isFinite(Number(value))).map(Number),
     ...bucketLineEntries.flatMap((entry) => entry.averagePoints.filter((value) => value !== null && Number.isFinite(Number(value))).map(Number)),
@@ -4014,7 +4144,6 @@ function renderPatientChangeChart() {{
     const clamped = Math.min(yMax, Math.max(yMin, value));
     return margin.top + plotHeight - ((clamped - yMin) / Math.max(1, (yMax - yMin))) * plotHeight;
   }};
-
   const bucketLines = bucketLineEntries.map((entry) => {{
     const path = linePath(entry.averagePoints, xScale, yScale);
     if (!path) return '';
@@ -4060,7 +4189,7 @@ function renderPatientChangeChart() {{
         }})()
       : ` New Bank runs from ${{Number(newBankStart).toLocaleString('en-GB')}} to ${{Number(newBankEnd).toLocaleString('en-GB')}} patients across the available series.`;
   summary.textContent =
-    `${{series.length}} practices have multi-year patient-count histories in this chart. Coloured lines show the average trajectory for each current ${{metricDisplayLabel(activeMetric).toLowerCase()}} band, and the dashed grey line is the Manchester average practice count for each year.${{flattenGlobal ? ' With Flatten Global on, the y-axis shows deviation from that yearly Manchester mean, so the chart shows which score bands are gaining or losing relative share rather than absolute patient volume.' : ' The y-axis is scoped to those displayed averages rather than every individual practice line.'}}${{newBankSummary}}`;
+    `${{series.length}} practices have multi-year patient-count histories in this chart. Coloured lines show the average trajectory for each current ${{metricDisplayLabel(activeMetric).toLowerCase()}} band, and the dashed grey line is the Manchester average practice count for each year.${{flattenGlobal ? ' With Flatten Global on, the left y-axis shows deviation from that yearly Manchester mean, so the chart shows which score bands are gaining or losing relative share rather than absolute patient volume.' : ' The left y-axis is scoped to those displayed patient averages rather than every individual practice line.'}}${{newBankSummary}}`;
   
     footnote.hidden = false;
     footnote.textContent = 'Patient growth footnote: both stronger and weaker score bands show only VERY slight divergence from the mean, with better-rated / better-surveyed practices gaining patients a little faster and worse-performing GPs gaining a little more slowly. That suggests patients ARE moving toward better doctors, but INCREDIBLY slowly. One possible reading is that poor access can still trap patients who need more access, convenience, or support most, while others who have a choice (and know it) are more able to switch. This is however in a context of relative to growth, where population pressure is present, but seemingly not a large driver of experience. This suggests policy drives experience more than population pressure, though further investigation might help here.';
@@ -4109,10 +4238,11 @@ function renderPatientTotalChart(years, activeYearIndex) {{
   }}
 
   const width = 920;
-  const height = 92;
-  const margin = {{ top: 8, right: 12, bottom: 22, left: 12 }};
+  const height = 118;
+  const margin = {{ top: 8, right: 12, bottom: 22, left: 54 }};
   const plotWidth = width - margin.left - margin.right;
   const plotHeight = height - margin.top - margin.bottom;
+  const reviewLineColor = '#d26a1b';
   const minTotal = Math.min(...usableTotals);
   const maxTotal = Math.max(...usableTotals);
   const paddedMin = minTotal * 0.99;
@@ -4121,6 +4251,17 @@ function renderPatientTotalChart(years, activeYearIndex) {{
   const xScale = (index) => margin.left + (years.length <= 1 ? plotWidth / 2 : (index / Math.max(1, years.length - 1)) * plotWidth);
   const yScale = (value) => margin.top + plotHeight - ((value - paddedMin) / yRange) * plotHeight;
   const path = totals.map((value, index) => `${{index === 0 ? 'M' : 'L'}}${{xScale(index).toFixed(2)}} ${{yScale(value).toFixed(2)}}`).join(' ');
+  const reviewSeriesRaw = patientChangeAnalysis?.dataset_review_average_series || [];
+  const reviewCounts = patientChangeAnalysis?.dataset_review_average_practice_counts || [];
+  const reviewSeries = years.map((_year, index) => {{
+    const value = reviewSeriesRaw[index];
+    return value !== null && Number.isFinite(Number(value)) ? Number(value) : null;
+  }});
+  const reviewYMin = 1;
+  const reviewYMax = 5;
+  const reviewYScale = (value) => margin.top + plotHeight - ((Math.min(reviewYMax, Math.max(reviewYMin, value)) - reviewYMin) / Math.max(1, (reviewYMax - reviewYMin))) * plotHeight;
+  const reviewPath = linePath(reviewSeries, xScale, reviewYScale);
+  const reviewActiveValue = reviewSeries[activeYearIndex] ?? null;
   const activeTotal = totals[activeYearIndex];
   const firstTotal = totals[0];
   const lastTotal = totals[totals.length - 1];
@@ -4135,12 +4276,20 @@ function renderPatientTotalChart(years, activeYearIndex) {{
     <rect x="${{margin.left}}" y="${{margin.top}}" width="${{plotWidth}}" height="${{plotHeight}}" fill="rgba(26,28,26,0.03)" rx="6"></rect>
     <path d="${{path}} L${{xScale(years.length - 1).toFixed(2)}} ${{(margin.top + plotHeight).toFixed(2)}} L${{xScale(0).toFixed(2)}} ${{(margin.top + plotHeight).toFixed(2)}} Z" fill="rgba(15,94,156,0.10)"></path>
     <path d="${{path}}" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    ${{reviewPath ? `<path d="${{reviewPath}}" fill="none" stroke="${{reviewLineColor}}" stroke-width="2.8" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round"></path>` : ''}}
+    ${{reviewSeries.map((value, index) => value === null ? '' : `<circle cx="${{xScale(index).toFixed(2)}}" cy="${{reviewYScale(value).toFixed(2)}}" r="2.9" fill="${{reviewLineColor}}" stroke="white" stroke-width="0.9"></circle>`).join('')}}
     ${{tickIndexes.map((index) => `
       <text x="${{xScale(index).toFixed(2)}}" y="${{height - 6}}" text-anchor="middle" font-size="10.5" fill="rgba(26,28,26,0.68)">${{years[index]}}</text>
     `).join('')}}
+    ${{[1, 2, 3, 4, 5].map((tick) => `
+      <text x="${{margin.left - 8}}" y="${{reviewYScale(tick) + 4}}" text-anchor="end" font-size="10" font-weight="700" fill="${{reviewLineColor}}">${{tick.toFixed(1)}}</text>
+    `).join('')}}
     <circle cx="${{xScale(activeYearIndex).toFixed(2)}}" cy="${{yScale(activeTotal).toFixed(2)}}" r="4.2" fill="var(--accent)" stroke="white" stroke-width="1.2"></circle>
+    ${{reviewActiveValue === null ? '' : `<circle cx="${{xScale(activeYearIndex).toFixed(2)}}" cy="${{reviewYScale(reviewActiveValue).toFixed(2)}}" r="3.4" fill="${{reviewLineColor}}" stroke="white" stroke-width="1.1"></circle>`}}
     <text x="${{Math.min(width - margin.right, xScale(activeYearIndex) + 8).toFixed(2)}}" y="${{Math.max(18, yScale(activeTotal) - 8).toFixed(2)}}" font-size="11" font-weight="700" fill="var(--accent)">${{years[activeYearIndex]}} · ${{activeTotal.toLocaleString('en-GB')}}</text>
+    ${{reviewActiveValue === null ? '' : `<text x="${{Math.min(width - margin.right - 6, xScale(activeYearIndex) + 8).toFixed(2)}}" y="${{Math.min(height - margin.bottom - 6, reviewYScale(reviewActiveValue) + 14).toFixed(2)}}" font-size="10.5" font-weight="700" fill="${{reviewLineColor}}">${{reviewActiveValue.toFixed(2)}} ★ · n=${{Number(reviewCounts[activeYearIndex] || 0)}}</text>`}}
     <text x="${{margin.left + 6}}" y="${{margin.top + 14}}" font-size="10.5" fill="rgba(26,28,26,0.72)">Whole dataset total: ${{firstTotal.toLocaleString('en-GB')}} -> ${{lastTotal.toLocaleString('en-GB')}} (${{changePct === null ? '?' : `${{changePct >= 0 ? '+' : ''}}${{changePct.toFixed(1)}}%`}})</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="10.5" font-weight="700" fill="${{reviewLineColor}}" transform="rotate(-90 14 ${{height / 2}})">Average Google review score</text>
   `;
 }}
 

@@ -40,6 +40,7 @@ PRACTICE_PATTERNS_SITE_DIR = "practice-patterns"
 PRACTICE_PATTERNS_RANKINGS_HREF = (
     f"{PRACTICE_PATTERNS_SITE_DIR}/output/reviewed_practice_relative_rankings.html"
 )
+DATASET_BUILD_SCRIPT = REPO_ROOT / "datasets" / "build_gtd_gp_practice_dataset.py"
 REVIEWS_ANALYSIS_DIR = REPO_ROOT / "datasets" / "reviews-analysis"
 REVIEWS_ANALYSIS_BUILD_SCRIPT = REVIEWS_ANALYSIS_DIR / "build_reviews_evidence.py"
 REVIEWS_EVIDENCE_SITE_DIR = "reviews-evidence"
@@ -979,6 +980,14 @@ def build_practice_patterns() -> None:
     )
 
 
+def build_dataset_outputs() -> None:
+    subprocess.run(
+        [sys.executable, str(DATASET_BUILD_SCRIPT)],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+
+
 def build_reviews_evidence() -> None:
     subprocess.run(
         [sys.executable, str(REVIEWS_ANALYSIS_BUILD_SCRIPT)],
@@ -1096,6 +1105,7 @@ def write_redirect_file(out_dir: Path, target: str) -> None:
 
 
 def build_site(out_dir: Path, *, skip_reviews_evidence: bool = False) -> Path:
+    build_dataset_outputs()
     report_dir = find_latest_report_dir()
     summary = load_summary(report_dir)
     build_practice_patterns()

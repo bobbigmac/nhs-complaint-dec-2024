@@ -4,11 +4,16 @@ Postcode: M28 0BB
 Google Maps title: Dearden Avenue Medical Practice
 Google rating: 3.3
 Google review count: 18
-Google Maps URL: https://www.google.com/maps/place/Dearden+Avenue+Medical+Practice/@53.5293119,-2.4216572,17z/data=!4m8!3m7!1s0x487ba883f067ac87:0x5eac8d9fd5322551!8m2!3d53.5293119!4d-2.4216572!9m1!1b1!16s%2Fg%2F1tf751rr?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dearden+Avenue+Medical+Practice/@53.5293119,-2.4242375,17z/data=!4m8!3m7!1s0x487ba883f067ac87:0x5eac8d9fd5322551!8m2!3d53.5293119!4d-2.4216572!9m1!1b1!16s%2Fg%2F1tf751rr?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 18
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87625-dearden-avenue-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Shona Smith
 Date: 3 months ago
@@ -59,3 +64,43 @@ Author: M M
 Date: 4 years ago
 Rating: 1 star
 Worst GP in UK, avoid to register here
+
+Author: Nell Mulligan
+Date: 5 years ago
+Rating: 5 stars
+5 stars for Dr Sadiq Absolutely lovely GP and really went above and beyond to help with something I was going in circles with Cant thank you enough
+
+Author: D Ozzlander
+Date: 6 years ago
+Rating: 1 star
+The receptionist is particularly unpleasant to talk to. She is impatient and lacking basic compassion every time I call. She has no problem putting the phone down half way through your sentence. Happened to me today.
+
+Author: Ropah Mae
+Date: 7 years ago
+Rating: 1 star
+Absolutely rubbish the receptionist is rude and should not be working for an NHS practice which surely requires some level of empathy. Do not sign up to this practice.
+
+Author: Justinas “Seth” Pocevicius
+Date: 8 years ago
+Rating: 2 stars
+If you have a choice of surgery, don't pick this one, it's not great.
+
+Author: Daniel Shaw
+Date: 8 years ago
+Rating: 4 stars
+Daniel ShawLocal Guide · 31 reviews · 20 photos8 years ago
+
+Author: Shaine Fisher
+Date: Edited 8 years ago
+Rating: 3 stars
+Shaine FisherLocal Guide · 19 reviews · 172 photosEdited 8 years ago
+
+Author: Mel Doherty
+Date: 9 years ago
+Rating: 1 star
+Mel Doherty7 reviews · 1 photo9 years ago
+
+Author: Tony Howard
+Date: 10 years ago
+Rating: 5 stars
+This is an excellent practice,with good staff and doctors.I have herd many people talk about the problems they have at there practice but me and my family do not have any such problems and are well looked after.We are just going on to the internet for ordering repeat prescriptions and making appointments which will save a lot of time,now thats keeping up with the times!! great service SUSAN and staff keep it up.

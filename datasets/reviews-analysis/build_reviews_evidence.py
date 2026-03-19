@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Build raw-reviews JSON for practices with extended (full_feed) reviews.
+"""Build raw-reviews JSON for GTD extended reviews plus ranked non-GTD comparators.
 
-Reads .txt files from the latest report dir, parses reviews, runs classifier.js,
-and emits raw_reviews_extended.json. Also aggregates recent reviews from
-google_maps_recent_reviews.json for all other practices (small subset per practice)
-into a "Recent Reviews across Manchester" table. Run from repo root.
+Reads .txt files from the latest report dir, parses GTD full-feed reviews, adds
+top/bottom ranked non-GTD comparators, runs classifier.js, and emits
+raw_reviews_extended.json. Run from repo root.
 """
 
 from __future__ import annotations
@@ -23,6 +22,7 @@ OUTPUT_DIR = Path(__file__).resolve().parent / "output"
 CLASSIFIER_GRAPH = Path(__file__).resolve().parent / "build_classifier_graph.py"
 OPERATIONAL_TAXONOMY = Path(__file__).resolve().parent / "operational_taxonomy.json"
 PRACTICE_REPLIES_JSON = Path(__file__).resolve().parent / "practice_replies.json"
+NON_GTD_EXTREME_PRACTICE_LIMIT = 5
 
 
 def find_latest_report_dir() -> Path:
@@ -285,6 +285,110 @@ def extract_canonical_code_from_filename(name: str) -> str:
     return name.split("-")[0] if "-" in name else name.replace(".txt", "")
 
 
+def build_reviews_from_google_result(
+    record: dict[str, Any],
+    generated_date: str,
+) -> list[dict[str, Any]]:
+    reviews: list[dict[str, Any]] = []
+    for rev in record.get("recent_reviews") or []:
+        if not isinstance(rev, dict):
+            continue
+        stars = 0
+        star_m = re.search(r"(\d)\s*star", str(rev.get("star_label", "")), re.I)
+        if star_m:
+            stars = int(star_m.group(1))
+        date_raw = str(rev.get("relative_date", "") or "")
+        stripped = strip_metadata_from_review_text(
+            str(rev.get("text") or ""),
+            str(rev.get("author", "") or ""),
+            date_raw,
+        )
+        reviews.append({
+            "author": rev.get("author", ""),
+            "date_raw": date_raw,
+            "rating_stars": stars,
+            "rating_label": rev.get("star_label", ""),
+            "text": normalize_review_text(stripped),
+        })
+
+    reviews = dedupe_reviews(reviews)
+    for i, r in enumerate(reviews):
+        r["_index"] = i
+        r["estimated_year"] = estimate_review_year(r["date_raw"], generated_date)
+        r["estimated_months_ago"] = _parse_months_ago(r["date_raw"])
+    return reviews
+
+
+def load_practice_reviews(
+    practice: dict[str, Any],
+    report_dir: Path,
+    google_results_by_code: dict[str, dict[str, Any]],
+    generated_date: str,
+) -> list[dict[str, Any]]:
+    txt_rel = str(practice.get("google_review_text_file") or "").strip()
+    if txt_rel:
+        txt_path = report_dir / txt_rel
+        if txt_path.exists():
+            content = txt_path.read_text(encoding="utf-8")
+            reviews = dedupe_reviews(parse_reviews_from_txt(content, require_full_feed=False))
+            if reviews:
+                for i, r in enumerate(reviews):
+                    r["_index"] = i
+                    r["estimated_year"] = estimate_review_year(r["date_raw"], generated_date)
+                    r["estimated_months_ago"] = _parse_months_ago(r["date_raw"])
+                return reviews
+
+    code = str(practice.get("canonical_code", "") or "")
+    record = google_results_by_code.get(code)
+    if not record:
+        return []
+    return build_reviews_from_google_result(record, generated_date)
+
+
+def build_manchester_region_overview(
+    google_results_by_code: dict[str, dict[str, Any]],
+    excluded_codes: set[str],
+    generated_date: str,
+) -> dict[str, Any]:
+    rating_counts = {str(i): 0 for i in range(6)}
+    rating_counts_by_year: dict[str, dict[str, int]] = {}
+    practice_count = 0
+    review_count = 0
+
+    for code, record in google_results_by_code.items():
+        if not code or code in excluded_codes:
+            continue
+
+        practice_has_review = False
+        for rev in record.get("recent_reviews") or []:
+            if not isinstance(rev, dict):
+                continue
+            star_m = re.search(r"(\d)\s*star", str(rev.get("star_label", "")), re.I)
+            stars = int(star_m.group(1)) if star_m else 0
+            stars_key = str(stars if 1 <= stars <= 5 else 0)
+            rating_counts[stars_key] += 1
+            review_count += 1
+            practice_has_review = True
+
+            year = estimate_review_year(str(rev.get("relative_date", "") or ""), generated_date)
+            if year is None:
+                continue
+            year_key = str(year)
+            if year_key not in rating_counts_by_year:
+                rating_counts_by_year[year_key] = {str(i): 0 for i in range(6)}
+            rating_counts_by_year[year_key][stars_key] += 1
+
+        if practice_has_review:
+            practice_count += 1
+
+    return {
+        "practice_count": practice_count,
+        "review_count": review_count,
+        "rating_counts": rating_counts,
+        "rating_counts_by_year": rating_counts_by_year,
+    }
+
+
 def main() -> int:
     report_dir = find_latest_report_dir()
     txt_dir = report_dir / "google-review-texts"
@@ -305,6 +409,15 @@ def main() -> int:
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
         generated_date = str(summary.get("generated_date", generated_date))
 
+    google_json_path = report_dir / "google_maps_recent_reviews.json"
+    google_results_by_code: dict[str, dict[str, Any]] = {}
+    if google_json_path.exists():
+        google_results_by_code = {
+            str(record.get("canonical_code", "")): record
+            for record in json.loads(google_json_path.read_text(encoding="utf-8"))
+            if record.get("canonical_code")
+        }
+
     practices_with_reviews: list[dict[str, Any]] = []
 
     for txt_path in sorted(txt_dir.glob("*.txt")):
@@ -315,8 +428,11 @@ def main() -> int:
 
         code = extract_canonical_code_from_filename(txt_path.name)
         practice = practices_by_code.get(code, {})
-        practice_name = header.get("practice", practice.get("practice_name", txt_path.stem))
         gtd_managed = bool(practice.get("gtd_managed", False))
+        if not gtd_managed:
+            continue
+
+        practice_name = header.get("practice", practice.get("practice_name", txt_path.stem))
         gtd_takeover_date = practice.get("gtd_takeover_date") or ""
 
         reviews = dedupe_reviews(parse_reviews_from_txt(content))
@@ -325,12 +441,6 @@ def main() -> int:
             r["estimated_year"] = estimate_review_year(r["date_raw"], generated_date)
             r["estimated_months_ago"] = _parse_months_ago(r["date_raw"])
 
-        inclusion_reason: str | None = None
-        if not gtd_managed and reviews:
-            ratings = [r.get("rating_stars") for r in reviews if r.get("rating_stars")]
-            avg = sum(ratings) / len(ratings) if ratings else 0
-            inclusion_reason = "positive" if avg >= 4 else "negative"
-
         practices_with_reviews.append({
             "canonical_code": code,
             "practice_name": practice_name,
@@ -338,51 +448,77 @@ def main() -> int:
             "gtd_takeover_date": gtd_takeover_date,
             "review_count": len(reviews),
             "reviews": reviews,
-            "inclusion_reason": inclusion_reason,
+            "inclusion_reason": None,
         })
 
-    # Add 2 worst and 2 best non-GTD practices (by google_review_score) that have review txt files
     included_codes = {p["canonical_code"] for p in practices_with_reviews}
-    non_gtd_with_txt = [
-        p
-        for p in practices_data
-        if not p.get("gtd_managed")
-        and p.get("google_review_text_file")
-        and str(p.get("canonical_code", "")) not in included_codes
-    ]
-    non_gtd_with_txt.sort(key=lambda p: (float(p.get("google_review_score") or 0), str(p.get("canonical_code", ""))))
-    worst_two = non_gtd_with_txt[:2] if len(non_gtd_with_txt) >= 2 else non_gtd_with_txt[:1]
-    best_two = non_gtd_with_txt[-2:] if len(non_gtd_with_txt) >= 2 else non_gtd_with_txt[-1:] if non_gtd_with_txt else []
-    to_add = list({p["canonical_code"]: p for p in worst_two + best_two}.values())
+    non_gtd_ranked: list[dict[str, Any]] = []
+    for practice in practices_data:
+        if practice.get("gtd_managed"):
+            continue
+        code = str(practice.get("canonical_code", "")).strip()
+        if not code or code in included_codes:
+            continue
+        try:
+            score = float(practice.get("google_review_score") or 0)
+        except (TypeError, ValueError):
+            continue
+        if score <= 0:
+            continue
+        if not practice.get("google_review_text_file") and code not in google_results_by_code:
+            continue
+        non_gtd_ranked.append(practice)
+    non_gtd_ranked.sort(
+        key=lambda p: (
+            float(p.get("google_review_score") or 0),
+            str(p.get("canonical_code", "")),
+        )
+    )
 
-    for practice in to_add:
-        code = str(practice.get("canonical_code", ""))
-        txt_rel = practice.get("google_review_text_file", "")
-        if not txt_rel:
-            continue
-        txt_path = report_dir / txt_rel
-        if not txt_path.exists():
-            continue
-        content = txt_path.read_text(encoding="utf-8")
-        reviews = dedupe_reviews(parse_reviews_from_txt(content, require_full_feed=False))
+    selected_non_gtd: list[dict[str, Any]] = []
+    positive_count = 0
+    negative_count = 0
+
+    for practice in non_gtd_ranked:
+        if negative_count >= NON_GTD_EXTREME_PRACTICE_LIMIT:
+            break
+        reviews = load_practice_reviews(practice, report_dir, google_results_by_code, generated_date)
         if not reviews:
             continue
-        for i, r in enumerate(reviews):
-            r["_index"] = i
-            r["estimated_year"] = estimate_review_year(r["date_raw"], generated_date)
-            r["estimated_months_ago"] = _parse_months_ago(r["date_raw"])
-        score = float(practice.get("google_review_score") or 0)
-        inclusion_reason = "positive" if score >= 4 else "negative"
-        practices_with_reviews.append({
+        selected_non_gtd.append({
+            "canonical_code": str(practice.get("canonical_code", "")),
+            "practice_name": practice.get("practice_name", ""),
+            "gtd_managed": False,
+            "gtd_takeover_date": "",
+            "review_count": len(reviews),
+            "reviews": reviews,
+            "inclusion_reason": "negative",
+        })
+        included_codes.add(str(practice.get("canonical_code", "")))
+        negative_count += 1
+
+    for practice in reversed(non_gtd_ranked):
+        if positive_count >= NON_GTD_EXTREME_PRACTICE_LIMIT:
+            break
+        code = str(practice.get("canonical_code", ""))
+        if code in included_codes:
+            continue
+        reviews = load_practice_reviews(practice, report_dir, google_results_by_code, generated_date)
+        if not reviews:
+            continue
+        selected_non_gtd.append({
             "canonical_code": code,
             "practice_name": practice.get("practice_name", ""),
             "gtd_managed": False,
             "gtd_takeover_date": "",
             "review_count": len(reviews),
             "reviews": reviews,
-            "inclusion_reason": inclusion_reason,
+            "inclusion_reason": "positive",
         })
         included_codes.add(code)
+        positive_count += 1
+
+    practices_with_reviews.extend(selected_non_gtd)
 
     def practice_sort_key(p: dict[str, Any]) -> tuple[int, str]:
         code = str(p.get("canonical_code", ""))
@@ -394,43 +530,12 @@ def main() -> int:
 
     practices_with_reviews.sort(key=practice_sort_key)
 
-    # Aggregate recent reviews from google_maps_recent_reviews.json for all other practices
-    google_json_path = report_dir / "google_maps_recent_reviews.json"
     recent_reviews_across: list[dict[str, Any]] = []
-    if google_json_path.exists():
-        google_data = json.loads(google_json_path.read_text(encoding="utf-8"))
-        for record in google_data:
-            code = str(record.get("canonical_code", ""))
-            if not code or code in included_codes:
-                continue
-            practice_name = record.get("practice_name", "")
-            for rev in record.get("recent_reviews") or []:
-                stars = 0
-                star_m = re.search(r"(\d)\s*star", str(rev.get("star_label", "")), re.I)
-                if star_m:
-                    stars = int(star_m.group(1))
-                date_raw = rev.get("relative_date", "")
-                raw_text = rev.get("text") or ""
-                stripped = strip_metadata_from_review_text(
-                    raw_text, rev.get("author", ""), date_raw
-                )
-                recent_reviews_across.append({
-                    "author": rev.get("author", ""),
-                    "date_raw": date_raw,
-                    "rating_stars": stars,
-                    "rating_label": rev.get("star_label", ""),
-                    "text": normalize_review_text(stripped),
-                    "practice_name": practice_name,
-                    "canonical_code": code,
-                    "_index": len(recent_reviews_across),
-                    "estimated_year": estimate_review_year(date_raw, generated_date),
-                    "estimated_months_ago": _parse_months_ago(date_raw),
-                })
-        recent_reviews_across = dedupe_reviews(recent_reviews_across)
-        all_practice_reviews = [r for p in practices_with_reviews for r in p.get("reviews", [])]
-        recent_reviews_across = [r for r in recent_reviews_across if not _is_duplicate_of(r, all_practice_reviews)]
-        for i, r in enumerate(recent_reviews_across):
-            r["_index"] = i
+    manchester_region_overview = build_manchester_region_overview(
+        google_results_by_code,
+        included_codes,
+        generated_date,
+    )
 
     # Tag practice replies from reference file (no heuristics)
     practice_reply_entries: list[dict[str, Any]] = []
@@ -442,6 +547,7 @@ def main() -> int:
     input_data = {
         "practices": practices_with_reviews,
         "recent_reviews_across_manchester": recent_reviews_across,
+        "manchester_region_overview": manchester_region_overview,
         "generated_date": generated_date,
     }
     classifier_input = REPO_ROOT / "datasets" / "reviews-analysis" / "output" / ".classifier_input.json"
