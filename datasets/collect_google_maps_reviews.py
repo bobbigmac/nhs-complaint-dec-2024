@@ -455,28 +455,82 @@ def search_google_maps(driver: webdriver.Firefox, wait: WebDriverWait, query: st
         raise last_error
 
 
-def click_first_search_result(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
-    candidates = driver.find_elements(By.CSS_SELECTOR, 'a[href*="/place/"], a.hfpxzc')
-    for candidate in candidates:
-        href = candidate.get_attribute("href") or ""
-        label = normalize_text(candidate.text or candidate.get_attribute("aria-label") or candidate.get_attribute("title") or "")
+def search_result_match_score(practice_name: str, label: str) -> float:
+    score = title_similarity(practice_name, label)
+    normalized_practice = normalize_name(practice_name)
+    normalized_label = normalize_name(label)
+    if normalized_practice and normalized_practice in normalized_label:
+        score += 0.35
+    return score
+
+
+def collect_search_result_candidates(driver: webdriver.Firefox, practice_name: str) -> list[dict[str, object]]:
+    candidates: list[dict[str, object]] = []
+    seen: set[tuple[str, str]] = set()
+    for element in driver.find_elements(By.CSS_SELECTOR, 'a[href*="/place/"], a.hfpxzc'):
+        try:
+            href = element.get_attribute("href") or ""
+            label = normalize_text(element.text or element.get_attribute("aria-label") or element.get_attribute("title") or "")
+        except StaleElementReferenceException:
+            continue
         if "/place/" not in href:
             continue
-        if is_blocked_place_title(label) or element_or_ancestor_mentions_sponsored(driver, candidate):
+        key = (href, label)
+        if key in seen:
             continue
-        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", candidate)
-        time.sleep(0.5)
-        try:
-            candidate.click()
-        except Exception:
-            driver.execute_script("arguments[0].click();", candidate)
-        try:
-            wait.until(lambda d: "/place/" in d.current_url)
-        except TimeoutException:
-            return False
-        time.sleep(3)
-        return True
-    return False
+        seen.add(key)
+        candidates.append(
+            {
+                "element": element,
+                "href": href,
+                "label": label,
+                "sponsored": element_or_ancestor_mentions_sponsored(driver, element),
+                "blocked_title": is_blocked_place_title(label),
+                "match_score": search_result_match_score(practice_name, label),
+            }
+        )
+    return candidates
+
+
+def click_best_search_result(
+    driver: webdriver.Firefox,
+    wait: WebDriverWait,
+    practice_name: str,
+    minimum_score: float = 0.25,
+) -> tuple[bool, list[dict[str, object]], dict[str, object] | None]:
+    candidates = collect_search_result_candidates(driver, practice_name)
+    eligible = [
+        candidate
+        for candidate in candidates
+        if not candidate["sponsored"] and not candidate["blocked_title"]
+    ]
+    chosen = None
+    if eligible:
+        chosen = max(
+            eligible,
+            key=lambda candidate: (
+                float(candidate["match_score"]),
+                len(normalize_name(str(candidate["label"]))),
+            ),
+        )
+        if float(chosen["match_score"]) < minimum_score:
+            chosen = None
+    if chosen is None:
+        return False, candidates, None
+
+    element = chosen["element"]
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+    time.sleep(0.5)
+    try:
+        element.click()
+    except Exception:
+        driver.execute_script("arguments[0].click();", element)
+    try:
+        wait.until(lambda d: "/place/" in d.current_url)
+    except TimeoutException:
+        return False, candidates, chosen
+    time.sleep(3)
+    return True, candidates, chosen
 
 
 def google_page_kind(current_url: str) -> str:
@@ -695,6 +749,10 @@ OWNER_REPLY_DATE_PATTERN = re.compile(
     flags=re.I,
 )
 
+RELATIVE_YEARS_PATTERN = re.compile(r"(\d+|a|an)\s+year", flags=re.I)
+RELATIVE_MONTHS_PATTERN = re.compile(r"(\d+|a|an)\s+month", flags=re.I)
+RELATIVE_WEEKS_PATTERN = re.compile(r"(\d+|a|an)\s+week", flags=re.I)
+
 
 def extract_owner_reply_header(card) -> str:
     candidates: list[str] = []
@@ -765,6 +823,38 @@ def extract_owner_reply(card, raw_card_text: str, text_candidates: list[str]) ->
         "text": reply_text,
         "raw_text": normalize_text((raw_reply or {}).get("raw_text", "")),
     }
+
+
+def relative_date_age_years(relative_date: str) -> float | None:
+    value = normalize_text(relative_date).lower()
+    if not value:
+        return None
+
+    def parse_amount(match: re.Match[str] | None) -> float | None:
+        if not match:
+            return None
+        token = match.group(1).lower()
+        if token in {"a", "an"}:
+            return 1.0
+        try:
+            return float(token)
+        except ValueError:
+            return None
+
+    years = parse_amount(RELATIVE_YEARS_PATTERN.search(value))
+    if years is not None:
+        return years
+    months = parse_amount(RELATIVE_MONTHS_PATTERN.search(value))
+    if months is not None:
+        return months / 12.0
+    weeks = parse_amount(RELATIVE_WEEKS_PATTERN.search(value))
+    if weeks is not None:
+        return weeks / 52.0
+    if "today" in value or "yesterday" in value:
+        return 0.0
+    if "day" in value:
+        return 0.0
+    return None
 
 
 def extract_review_from_card(card) -> dict[str, object] | None:
@@ -857,10 +947,19 @@ def find_reviews_feed(driver: webdriver.Firefox):
 
 
 def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = None, force_to_bottom: bool = False) -> tuple[float, float, float]:
-    before_top, before_height, before_client = driver.execute_script(
-        "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
-        feed,
-    )
+    try:
+        before_top, before_height, before_client = driver.execute_script(
+            "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
+            feed,
+        )
+    except StaleElementReferenceException:
+        feed = find_reviews_feed(driver)
+        if feed is None:
+            return (0.0, 0.0, 0.0)
+        before_top, before_height, before_client = driver.execute_script(
+            "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
+            feed,
+        )
     before_count = len(cards) if cards is not None else len(driver.find_elements(By.CSS_SELECTOR, "div.jftiEf"))
     if cards:
         try:
@@ -883,14 +982,18 @@ def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = No
     try:
         WebDriverWait(driver, wait_timeout, poll_frequency=0.12).until(
             lambda d: len(d.find_elements(By.CSS_SELECTOR, "div.jftiEf")) > before_count
-            or d.execute_script("return arguments[0].scrollHeight;", feed) > before_height
+            or d.execute_script("return arguments[0].scrollHeight;", find_reviews_feed(d) or feed) > before_height
         )
     except TimeoutException:
         time.sleep(0.15 if force_to_bottom else 0.08)
-    after_top, after_height, after_client = driver.execute_script(
-        "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
-        feed,
-    )
+    current_feed = find_reviews_feed(driver) or feed
+    try:
+        after_top, after_height, after_client = driver.execute_script(
+            "const el = arguments[0]; return [el.scrollTop, el.scrollHeight, el.clientHeight];",
+            current_feed,
+        )
+    except StaleElementReferenceException:
+        return (0.0, 0.0, 0.0)
     return (
         float(after_top) - float(before_top),
         float(after_height) - float(before_height),
@@ -898,10 +1001,14 @@ def scroll_reviews_feed(driver: webdriver.Firefox, feed, cards: list | None = No
     )
 
 
-def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: int | None) -> list[dict[str, object]]:
+def extract_full_reviews(
+    driver: webdriver.Firefox,
+    limit: int,
+    expected_total: int | None,
+) -> tuple[list[dict[str, object]], str, bool]:
     feed = find_reviews_feed(driver)
     if feed is None:
-        return extract_recent_reviews(driver, limit)
+        return extract_recent_reviews(driver, limit), "no_feed_found", False
 
     try:
         driver.execute_script("arguments[0].scrollTop = 0;", feed)
@@ -914,6 +1021,8 @@ def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: 
     stagnant_rounds = 0
     end_of_feed_rounds = 0
     max_rounds = 90
+    large_feed_soft_cap_applied = bool(expected_total and expected_total > 500 and limit <= 0)
+    soft_stop_reason = ""
 
     for _ in range(max_rounds):
         cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
@@ -931,9 +1040,23 @@ def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: 
             reviews.append(review)
             new_reviews += 1
             if limit > 0 and len(reviews) >= limit:
-                return reviews[:limit]
+                return reviews[:limit], "explicit_limit", large_feed_soft_cap_applied
         if expected_total and len(reviews) >= expected_total:
-            return reviews[:expected_total]
+            return reviews[:expected_total], "expected_total_reached", large_feed_soft_cap_applied
+        if large_feed_soft_cap_applied and len(reviews) >= 400:
+            return reviews[:400], "soft_cap_400_reviews", True
+        if large_feed_soft_cap_applied:
+            ages = [
+                age
+                for review in reviews
+                if isinstance(review, dict)
+                for age in [relative_date_age_years(str(review.get("relative_date", "")))]
+                if age is not None
+            ]
+            oldest_age_years = max(ages) if ages else None
+            if oldest_age_years is not None and oldest_age_years >= 5.0:
+                soft_stop_reason = "soft_cap_5_years"
+                break
 
         scroll_delta, height_delta, _ = scroll_reviews_feed(
             driver,
@@ -952,15 +1075,17 @@ def extract_full_reviews(driver: webdriver.Firefox, limit: int, expected_total: 
         if stagnant_rounds >= 3 and end_of_feed_rounds >= 2:
             break
 
-    return reviews
+    return reviews, (soft_stop_reason or "feed_exhausted"), large_feed_soft_cap_applied
 
 
 def scrape_place(
     driver: webdriver.Firefox,
     query: str,
     recent_limit: int,
+    expected_practice_name: str = "",
     full_reviews_requested: bool = False,
     full_review_limit: int = 0,
+    skip_over_review_count: int = 0,
     capture_review_network: bool = True,
 ) -> dict[str, object]:
     wait = build_wait(driver, 25)
@@ -968,46 +1093,103 @@ def scrape_place(
 
     place_title, rating, review_count = extract_overall_metrics(driver)
     clicked_first_result = False
+    search_result_candidates: list[dict[str, object]] = []
+    chosen_search_result: dict[str, object] | None = None
     if google_page_kind(driver.current_url) == "search":
-        clicked_first_result = click_first_search_result(driver, wait)
+        clicked_first_result, search_result_candidates, chosen_search_result = click_best_search_result(
+            driver,
+            wait,
+            expected_practice_name or query,
+        )
         place_title, rating, review_count = extract_overall_metrics(driver)
     blocked_place_match = is_blocked_place_title(place_title)
     sponsored_place_match = page_has_sponsored_marker(driver)
     review_entrypoint_found = reviews_entrypoint_present(driver)
     if blocked_place_match and google_page_kind(driver.current_url) == "search":
-        clicked_first_result = click_first_search_result(driver, wait) or clicked_first_result
+        clicked_again, search_result_candidates, chosen_search_result = click_best_search_result(
+            driver,
+            wait,
+            expected_practice_name or query,
+        )
+        clicked_first_result = clicked_again or clicked_first_result
         place_title, rating, review_count = extract_overall_metrics(driver)
         blocked_place_match = is_blocked_place_title(place_title)
         sponsored_place_match = page_has_sponsored_marker(driver)
         review_entrypoint_found = reviews_entrypoint_present(driver)
+    review_count_skip = bool(
+        skip_over_review_count > 0
+        and isinstance(review_count, int)
+        and review_count > skip_over_review_count
+        and not blocked_place_match
+        and not sponsored_place_match
+    )
     reviews_opened = open_reviews_panel(driver, wait) if review_entrypoint_found else False
-    if not blocked_place_match and not sponsored_place_match and not reviews_opened and google_page_kind(driver.current_url) == "search":
-        clicked_first_result = click_first_search_result(driver, wait) or clicked_first_result
+    if not blocked_place_match and not sponsored_place_match and not review_count_skip and not reviews_opened and google_page_kind(driver.current_url) == "search":
+        clicked_again, search_result_candidates, chosen_search_result = click_best_search_result(
+            driver,
+            wait,
+            expected_practice_name or query,
+        )
+        clicked_first_result = clicked_again or clicked_first_result
         place_title, rating, review_count = extract_overall_metrics(driver)
         blocked_place_match = is_blocked_place_title(place_title)
         sponsored_place_match = page_has_sponsored_marker(driver)
         review_entrypoint_found = reviews_entrypoint_present(driver)
         reviews_opened = open_reviews_panel(driver, wait) if review_entrypoint_found else False
+    chosen_search_result_label = str((chosen_search_result or {}).get("label", ""))
+    chosen_search_result_score = float((chosen_search_result or {}).get("match_score", 0.0) or 0.0)
+    wrong_place_match = (
+        google_page_kind(driver.current_url) == "place"
+        and not blocked_place_match
+        and not sponsored_place_match
+        and not review_entrypoint_found
+        and title_similarity(expected_practice_name or query, place_title) < 0.25
+    ) or (
+        google_page_kind(driver.current_url) == "place"
+        and not blocked_place_match
+        and not sponsored_place_match
+        and title_similarity(expected_practice_name or query, place_title) < 0.25
+        and chosen_search_result_score < 0.25
+    )
+    sponsored_search_results_only = (
+        google_page_kind(driver.current_url) == "search"
+        and not clicked_first_result
+        and bool(search_result_candidates)
+        and all(bool(candidate.get("sponsored")) for candidate in search_result_candidates)
+    )
     reviews_sorted = False
     recent_reviews: list[dict[str, object]] = []
     no_review_panel = google_page_kind(driver.current_url) == "place" and not blocked_place_match and not sponsored_place_match and not review_entrypoint_found
     review_collection_mode = (
         "blocked_place" if blocked_place_match else
-        ("sponsored_place" if sponsored_place_match else ("no_review_panel" if no_review_panel else "visible_cards"))
+        ("review_count_skip" if review_count_skip else (
+            "sponsored_place" if sponsored_place_match else (
+            "sponsored_search_results_only" if sponsored_search_results_only else (
+                "wrong_place_match" if wrong_place_match else (
+                    "no_review_panel" if no_review_panel else "visible_cards"
+                )
+            )
+        )))
     )
     full_reviews_attempted = False
+    full_review_stop_reason = ""
+    full_review_soft_cap_applied = False
     raw_review_capture_enabled = False
     raw_review_responses: list[dict[str, object]] = []
-    if capture_review_network and not blocked_place_match and not sponsored_place_match and not no_review_panel:
+    if capture_review_network and not blocked_place_match and not sponsored_place_match and not no_review_panel and not wrong_place_match and not review_count_skip:
         raw_review_capture_enabled = install_review_network_capture(driver)
         if raw_review_capture_enabled:
             clear_review_network_capture(driver)
-    if reviews_opened and not blocked_place_match and not sponsored_place_match and not no_review_panel:
+    if reviews_opened and not blocked_place_match and not sponsored_place_match and not no_review_panel and not wrong_place_match and not review_count_skip:
         reviews_sorted = sort_reviews_newest(driver)
         time.sleep(2)
         if full_reviews_requested:
             full_reviews_attempted = True
-            recent_reviews = extract_full_reviews(driver, full_review_limit, review_count)
+            recent_reviews, full_review_stop_reason, full_review_soft_cap_applied = extract_full_reviews(
+                driver,
+                full_review_limit,
+                review_count,
+            )
             if recent_reviews:
                 review_collection_mode = "full_feed"
         if not recent_reviews:
@@ -1018,11 +1200,17 @@ def scrape_place(
     current_url = driver.current_url
     page_kind = google_page_kind(current_url)
 
-    manual_review_required = page_kind != "place" or blocked_place_match or sponsored_place_match
+    manual_review_required = page_kind != "place" or blocked_place_match or sponsored_place_match or sponsored_search_results_only or wrong_place_match
     if blocked_place_match:
         scan_status = "blocked_place_match"
+    elif review_count_skip:
+        scan_status = "skipped_review_count_threshold"
     elif sponsored_place_match:
         scan_status = "sponsored_place_match"
+    elif sponsored_search_results_only:
+        scan_status = "sponsored_search_results_only"
+    elif wrong_place_match:
+        scan_status = "wrong_place_match"
     elif no_review_panel:
         scan_status = "ok_no_review_panel"
     elif manual_review_required:
@@ -1049,9 +1237,25 @@ def scrape_place(
         "google_rating": rating,
         "google_review_count": review_count,
         "blocked_place_match": blocked_place_match,
+        "review_count_skip": review_count_skip,
+        "skip_over_review_count": skip_over_review_count,
         "sponsored_place_match": sponsored_place_match,
+        "sponsored_search_results_only": sponsored_search_results_only,
+        "wrong_place_match": wrong_place_match,
         "reviews_entrypoint_found": review_entrypoint_found,
         "clicked_first_search_result": clicked_first_result,
+        "search_results_inspected": [
+            {
+                "label": str(candidate.get("label", "")),
+                "href": str(candidate.get("href", "")),
+                "sponsored": bool(candidate.get("sponsored")),
+                "blocked_title": bool(candidate.get("blocked_title")),
+                "match_score": round(float(candidate.get("match_score", 0.0) or 0.0), 3),
+            }
+            for candidate in search_result_candidates[:8]
+        ],
+        "chosen_search_result_label": chosen_search_result_label,
+        "chosen_search_result_score": round(chosen_search_result_score, 3),
         "page_kind": page_kind,
         "scan_status": scan_status,
         "manual_review_required": manual_review_required,
@@ -1061,6 +1265,8 @@ def scrape_place(
         "review_collection_mode": review_collection_mode,
         "full_reviews_requested": full_reviews_requested,
         "full_reviews_attempted": full_reviews_attempted,
+        "full_review_stop_reason": full_review_stop_reason,
+        "full_review_soft_cap_applied": full_review_soft_cap_applied,
         "review_cards_collected": len(recent_reviews),
         "visible_review_cards_collected": len(recent_reviews),
         "owner_replies_collected": owner_replies_collected,
@@ -1084,6 +1290,39 @@ def load_existing_results(path: Path) -> list[dict[str, object]]:
     except json.JSONDecodeError:
         return []
     return payload if isinstance(payload, list) else []
+
+
+TERMINAL_REVIEW_COLLECTION_MODES = {
+    "full_feed",
+    "no_review_panel",
+    "blocked_place",
+    "sponsored_place",
+    "sponsored_search_results_only",
+    "shared_place_alias",
+    "review_count_skip",
+    "wrong_place_match",
+}
+
+
+def find_shared_place_alias(
+    collected: list[dict[str, object]],
+    canonical_code: str,
+    google_maps_url: str,
+) -> dict[str, object] | None:
+    target_url = normalize_text(google_maps_url)
+    if not target_url:
+        return None
+    for item in collected:
+        other_code = str(item.get("canonical_code", "")).strip()
+        other_mode = str(item.get("review_collection_mode", "")).strip()
+        other_url = normalize_text(str(item.get("google_maps_url", "")))
+        if not other_code or other_code == canonical_code:
+            continue
+        if other_mode not in TERMINAL_REVIEW_COLLECTION_MODES:
+            continue
+        if other_url and other_url == target_url:
+            return item
+    return None
 
 
 def load_query_overrides(path: Path) -> dict[str, str]:
@@ -1251,6 +1490,12 @@ def main() -> int:
         default=0,
         help="Maximum reviews to keep when full-review mode is active; 0 keeps scrolling until Google stops loading more cards.",
     )
+    parser.add_argument(
+        "--skip-over-review-count",
+        type=int,
+        default=0,
+        help="If the matched Google listing reports more than this many reviews, record a terminal skip state instead of opening the review feed. 0 disables the skip.",
+    )
     args = parser.parse_args()
 
     source_profile = discover_default_firefox_profile()
@@ -1302,8 +1547,10 @@ def main() -> int:
                     driver,
                     query,
                     args.recent_reviews,
+                    expected_practice_name=row["practice_name"],
                     full_reviews_requested=collect_full_reviews,
                     full_review_limit=args.full_review_limit,
+                    skip_over_review_count=args.skip_over_review_count,
                     capture_review_network=args.capture_review_network,
                 )
             except Exception as exc:
@@ -1337,6 +1584,19 @@ def main() -> int:
             result["nhs_profile_url"] = row["nhs_profile_url"]
             result["query_used"] = query
             result["title_match_score"] = round(title_similarity(row["practice_name"], str(result.get("google_maps_title", ""))), 3)
+            shared_alias = find_shared_place_alias(
+                collected,
+                row["canonical_code"],
+                str(result.get("google_maps_url", "")),
+            )
+            if shared_alias is not None and str(result.get("review_collection_mode", "")).strip() not in TERMINAL_REVIEW_COLLECTION_MODES:
+                result["review_collection_mode"] = "shared_place_alias"
+                result["scan_status"] = "shared_place_alias"
+                result["manual_review_required"] = False
+                result["retry_recommended"] = False
+                result["shared_place_with_canonical_code"] = shared_alias.get("canonical_code", "")
+                result["shared_place_with_practice_name"] = shared_alias.get("practice_name", "")
+                result["shared_place_with_review_mode"] = shared_alias.get("review_collection_mode", "")
             raw_review_payload = dict(result)
             result["raw_review_capture_file"] = write_raw_review_capture_file(args.raw_review_dir, raw_review_payload)
             result.pop("raw_review_responses", None)
