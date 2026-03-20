@@ -4,11 +4,16 @@ Postcode: WA15 6BP
 Google Maps title: Riddings Family Health Centre
 Google rating: 4.6
 Google review count: 18
-Google Maps URL: https://www.google.com/maps/place/Riddings+Family+Health+Centre/@53.4045079,-2.3312472,17z/data=!4m8!3m7!1s0x487bacf3e8940d23:0xbcc8f802e1bcc72d!8m2!3d53.4045079!4d-2.3312472!9m1!1b1!16s%2Fg%2F11j00s18mk?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Riddings+Family+Health+Centre/@54.4906104,-6.9917463,3z/data=!4m8!3m7!1s0x487bacf3e8940d23:0xbcc8f802e1bcc72d!8m2!3d53.4045079!4d-2.3312472!9m1!1b1!16s%2Fg%2F11j00s18mk?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 18
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P91631-riddings-family-health-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Dennis Phillips
 Date: a month ago
@@ -16,7 +21,7 @@ Rating: 5 stars
 Excellent service by all the Doctors and staff, amazing. So caring and thorough.
 
 Author: Samreen Abid
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 It’s hard to find a good GP practice nowadays, but me and my family were fortunate enough to obtain place at this practice a couple of months ago. Very quick and efficient staff, easy to get appointments on time and, best of all, no parking problems 🤗 All the doctors have very good listening ears too. ⭐ ⭐⭐⭐ ⭐ …
 
@@ -59,3 +64,43 @@ Author: Natalie Sellars
 Date: 2 years ago
 Rating: 5 stars
 Fantastic doctors. Always lovely receptionists and can make appointments very quickly.
+
+Author: Michelle Chen
+Date: 3 years ago
+Rating: 1 star
+Michelle ChenLocal Guide · 3 reviews · 6 photos3 years ago
+
+Author: Steven Blackmore
+Date: 3 years ago
+Rating: 5 stars
+Steven Blackmore1 review3 years ago
+
+Author: ian haigh
+Date: 5 years ago
+Rating: 5 stars
+Brilliant doctors and nurses and all very friendly and accommodating with appointments
+
+Author: John Kyoungmoon Chang
+Date: 5 years ago
+Rating: 5 stars
+We have been visiting the clinic since 2013. All has been perfect for our family. Thank you kind support all the time.
+
+Author: Stephen Ward
+Date: 6 years ago
+Rating: 5 stars
+A very good family GP practice. Friendly and courteous staff, with good access to appointment slots. Can't ask for much more!
+
+Author: Simon Glass
+Date: 6 years ago
+Rating: 5 stars
+Simon GlassLocal Guide · 22 reviews · 2 photos6 years ago
+
+Author: Dee S
+Date: 7 years ago
+Rating: 5 stars
+Empathetic listening doctor.
+
+Author: joanne irwin
+Date: 9 years ago
+Rating: 5 stars
+joanne irwin4 reviews9 years ago

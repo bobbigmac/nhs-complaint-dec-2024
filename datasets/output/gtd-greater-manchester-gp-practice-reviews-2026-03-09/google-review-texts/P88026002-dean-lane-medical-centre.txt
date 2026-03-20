@@ -4,14 +4,19 @@ Postcode: SK7 6EJ
 Google Maps title: Dr T Watson - Dean Lane Surgery
 Google rating: 3.7
 Google review count: 3
-Google Maps URL: https://www.google.com/maps/place/Dr+T+Watson+-+Dean+Lane+Surgery/@53.3681198,-2.1226402,17z/data=!4m8!3m7!1s0x487a4b35bc836f1b:0xe8bb8be5cb6c9fb!8m2!3d53.3681198!4d-2.1226402!9m1!1b1!16s%2Fg%2F11c6yzhhkt?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+T+Watson+-+Dean+Lane+Surgery/@53.368123,-2.1252205,17z/data=!4m8!3m7!1s0x487a4b35bc836f1b:0xe8bb8be5cb6c9fb!8m2!3d53.3681198!4d-2.1226402!9m1!1b1!16s%2Fg%2F11c6yzhhkt?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.4
+Review collection mode: full_feed
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88026002-dean-lane-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Sandeep Tandon
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 I ordered my repeat prescription via the app several days ago. When I attended the pharmacy, I was told the prescription had not been authorised by the doctor. On Thursday, I attended the surgery and was informed by the receptionist that the particular doctor was “not in”. I explained the urgency and asked for the prescription to be pushed through. I was then assured that my medication would be ready to collect from the pharmacy on Saturday morning. Today (Saturday 17/01/26), I attended the pharmacy at 1pm, only to find that it was closed. Both the pharmacy and the GP surgery are now closed. As of today, I have completely run out of my prescribed medication, including Ramipril and Atorvastatin. I have disabilities and suffer from high blood pressure, and being without this medication places my health at risk. I am extremely concerned that the online prescription service is being promoted, yet it is ineffective if prescriptions are not authorised in a timely manner. The system only works if doctors take responsibility for approving patients’ medication. I would like this matter urgently reviewed, an explanation provided as to how this situation was allowed to occur, and assurances that this does not happen again. I also request immediate advice on how I can obtain my medication as soon as possible. I look forward to your prompt response. Yours faithfully, S
 
