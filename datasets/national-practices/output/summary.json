@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-03-20T04:35:25Z",
+  "sources": {
+    "ods_active_prescribing_cost_centres": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?PrimaryRoleId=RO177&Status=Active",
+    "ods_scottish_gp_practices": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?PrimaryRoleId=RO227&Status=Active",
+    "ods_northern_ireland_gp_practices": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?PrimaryRoleId=RO315&Status=Active",
+    "england_patient_counts": "raw/registered_patients/gp-reg-pat-prac-all.csv"
+  },
+  "notes": [
+    "England and Wales are derived from active ODS RO177 organisations, filtered down to those with an active RO76 GP PRACTICE role in the detail record.",
+    "Scotland and Northern Ireland are derived from active ODS role-specific GP practice lists (RO227 and RO315).",
+    "These files are collector-friendly short-form inputs for future Google Maps review lookups, not full-review crawl outputs.",
+    "The combined UK file excludes canonical codes already present in the Greater Manchester dataset."
+  ],
+  "counts": {
+    "england": 6255,
+    "wales": 401,
+    "scotland": 1004,
+    "northern_ireland": 306,
+    "uk_all": 7966,
+    "uk_not_in_current_dataset": 7606,
+    "excluded_existing_codes": 360
+  }
+}
