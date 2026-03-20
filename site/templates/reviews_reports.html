@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="page-shell page-shell-doc page-shell-reports">
+    <header class="doc-hero reports-hero">
+      <div class="hero-copy doc-hero-copy">
+        <p class="eyebrow">Corpus reports</p>
+        <p class="doc-breadcrumb"><a href="{{HOME_HREF}}">Home</a> <span>/</span> <a href="{{MAP_HREF}}">Map</a></p>
+        <h1>{{DOC_TITLE}}</h1>
+        <p class="standfirst">{{DOC_SUMMARY}}</p>
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" id="toggle-all-reports" data-open="false">Expand all reports</button>
+          <button class="button button-secondary" type="button" id="print-reports">Print this page</button>
+        </div>
+      </div>
+      <aside class="hero-panel doc-hero-panel reports-hero-panel">
+        <p class="panel-label">Included here</p>
+        <h2>{{REPORT_COUNT}} reports</h2>
+        <p class="panel-updated">Latest build {{UPDATED_DATE}}</p>
+        <p class="reports-build-note">Bundled from `datasets/reviews-search/output` and rendered into one page for scanning, browsing and print use.</p>
+        <div class="doc-pill-stack">
+          <a class="link-pill link-pill-primary" href="{{HOME_HREF}}">Back to homepage</a>
+          <a class="link-pill link-pill-secondary" href="{{PRINT_TOOL_HREF}}">Markdown print viewer</a>
+        </div>
+      </aside>
+    </header>
+
+    <main class="reports-layout">
+      <section class="doc-article reports-context-block">
+        <div class="doc-body">
+          {{INTRO_HTML}}
+        </div>
+      </section>
+
+      <section class="reports-stack" aria-label="Review reports">
+        {{REPORT_PANELS}}
+      </section>
+
+      <section class="doc-article reports-context-block">
+        <div class="doc-body">
+          {{OUTRO_HTML}}
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built from repo-local markdown reports and published as one static page.</p>
+      <p><a href="{{HOME_HREF}}">Homepage</a> <span class="sep">/</span> <a href="{{MAP_HREF}}">Interactive map</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const panels = Array.from(document.querySelectorAll('[data-report-panel]'));
+      const toggleButton = document.getElementById('toggle-all-reports');
+      const printButton = document.getElementById('print-reports');
+      let printRestore = null;
+
+      function allOpen() {
+        return panels.length > 0 && panels.every((panel) => panel.open);
+      }
+
+      function syncToggle() {
+        if (!toggleButton) return;
+        const expanded = allOpen();
+        toggleButton.dataset.open = expanded ? 'true' : 'false';
+        toggleButton.textContent = expanded ? 'Collapse all reports' : 'Expand all reports';
+      }
+
+      function setAll(open) {
+        panels.forEach((panel) => {
+          panel.open = open;
+        });
+        syncToggle();
+      }
+
+      panels.forEach((panel) => {
+        panel.addEventListener('toggle', syncToggle);
+      });
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', function () {
+          setAll(toggleButton.dataset.open !== 'true');
+        });
+      }
+
+      if (printButton) {
+        printButton.addEventListener('click', function () {
+          window.print();
+        });
+      }
+
+      window.addEventListener('beforeprint', function () {
+        printRestore = panels.map((panel) => panel.open);
+        setAll(true);
+        document.body.classList.add('printing-reports');
+      });
+
+      window.addEventListener('afterprint', function () {
+        if (Array.isArray(printRestore)) {
+          panels.forEach((panel, index) => {
+            panel.open = Boolean(printRestore[index]);
+          });
+        }
+        document.body.classList.remove('printing-reports');
+        syncToggle();
+      });
+
+      syncToggle();
+    }());
+  </script>
+</body>
+</html>

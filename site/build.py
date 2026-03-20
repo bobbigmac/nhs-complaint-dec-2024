@@ -44,6 +44,7 @@ DATASET_BUILD_SCRIPT = REPO_ROOT / "datasets" / "build_gtd_gp_practice_dataset.p
 REVIEWS_ANALYSIS_DIR = REPO_ROOT / "datasets" / "reviews-analysis"
 REVIEWS_ANALYSIS_BUILD_SCRIPT = REVIEWS_ANALYSIS_DIR / "build_reviews_evidence.py"
 REVIEWS_EVIDENCE_SITE_DIR = "reviews-evidence"
+REVIEWS_REPORTS_SITE_DIR = "reviews-reports"
 
 
 ISSUE_SECTIONS: list[dict[str, object]] = [
@@ -309,6 +310,12 @@ VIEW_CARDS: list[dict[str, object]] = [
         "links": [("Browse reviews", f"{REVIEWS_EVIDENCE_SITE_DIR}/", "primary")],
     },
     {
+        "id": "reviews-reports",
+        "title": "Review reports",
+        "description": "Read the corpus reports together on one page, with collapsible panels and an expand-all view for printing.",
+        "links": [("Open reports", f"{REVIEWS_REPORTS_SITE_DIR}/", "primary")],
+    },
+    {
         "title": "GTD chronology",
         "description": "Browse the dated working log that ties procurement, governance, takeover and trend notes together.",
         "links": [("Open chronology", "chronology/", "primary")],
@@ -376,6 +383,57 @@ PAGE_DOCS: list[dict[str, object]] = [
         "related_page_ids": ["environment", "chronology"],
     },
 ]
+
+REVIEWS_REPORT_DOCS: list[dict[str, str]] = [
+    {
+        "slug": "overview",
+        "source": "datasets/reviews-search/output/reviews-corpus-overview-report.md",
+    },
+    {
+        "slug": "access",
+        "source": "datasets/reviews-search/output/access-issues-report.md",
+    },
+    {
+        "slug": "older-vs-recent",
+        "source": "datasets/reviews-search/output/older-vs-recent-complaints-report.md",
+    },
+    {
+        "slug": "staff-and-clinicians",
+        "source": "datasets/reviews-search/output/staff-and-clinician-experience-report.md",
+    },
+    {
+        "slug": "clinical-harm",
+        "source": "datasets/reviews-search/output/clinical-harm-warning-signs-report.md",
+    },
+    {
+        "slug": "practice-responses",
+        "source": "datasets/reviews-search/output/practice-responses-report.md",
+    },
+    {
+        "slug": "digital-experience",
+        "source": "datasets/reviews-search/output/online-web-platform-experience-report.md",
+    },
+    {
+        "slug": "activism",
+        "source": "datasets/reviews-search/output/activism-community-response-report.md",
+    },
+    {
+        "slug": "gtd-ppg",
+        "source": "datasets/reviews-search/output/gtd-managed-practices-ppg-report.md",
+    },
+]
+
+REVIEWS_REPORTS_INTRO = """
+These review reports were written as separate notes so each theme could be explored properly: access, staff, clinical harm, practice responses, digital routes, activism-style reviewing, and the GTD-only slice.
+
+This page turns them into one readable bundle. Each report sits in its own panel with a short summary on the heading line, so readers can scan the set quickly, open only what they need, or expand everything and print it as one long briefing.
+""".strip()
+
+REVIEWS_REPORTS_OUTRO = """
+The reports overlap on purpose. They are different cuts of the same review corpus rather than separate datasets, so the same practice or failure mode may appear in more than one panel.
+
+If you want a reading order, start with the overview, then access, staff, clinical harm, responses, digital routes, activism, and the GTD-only report at the end. If you want a single printable bundle, use `Expand all` first and then print the page.
+""".strip()
 
 
 def find_latest_report_dir() -> Path:
@@ -505,6 +563,7 @@ def markdown_to_html(
     link_resolver: Callable[[str], str] | None = None,
     drop_first_h1: bool = False,
     footnote_refs: dict[str, str] | None = None,
+    heading_id_prefix: str = "",
 ) -> tuple[str, list[tuple[int, str, str]]]:
     blocks: list[str] = []
     paragraph_lines: list[str] = []
@@ -565,6 +624,8 @@ def markdown_to_html(
                 skipped_h1 = True
                 continue
             anchor = slugify_heading(heading_text, seen_heading_ids)
+            if heading_id_prefix:
+                anchor = f"{heading_id_prefix}-{anchor}"
             headings.append((level, heading_text, anchor))
             blocks.append(f'<h{level} id="{anchor}">{render(heading_text)}</h{level}>')
             continue
@@ -675,6 +736,9 @@ def collect_published_sources() -> list[Path]:
             source = resolve_source_path(str(file_meta["source"]))
             sources[str(source)] = source
     for source in iter_page_source_paths():
+        sources[str(source)] = source
+    for report_spec in REVIEWS_REPORT_DOCS:
+        source = resolve_source_path(str(report_spec["source"]))
         sources[str(source)] = source
     return sorted(sources.values(), key=lambda path: path.as_posix())
 
@@ -955,6 +1019,126 @@ def write_document_page(
     (doc_out_dir / "index.html").write_text(page_html, encoding="utf-8")
 
 
+def extract_markdown_title(markdown_text: str, fallback: str) -> str:
+    for raw_line in markdown_text.splitlines():
+        stripped = raw_line.strip()
+        if stripped.startswith("# "):
+            return stripped[2:].strip() or fallback
+    return fallback
+
+
+def extract_intro_paragraph(markdown_text: str) -> str:
+    body, _ = extract_footnotes(markdown_text)
+    paragraph_lines: list[str] = []
+    started = False
+    for raw_line in body.splitlines():
+        stripped = raw_line.strip()
+        if not stripped:
+            if started and paragraph_lines:
+                break
+            continue
+        if stripped.startswith("#"):
+            continue
+        if stripped.startswith(("- ", "* ", "> ", "---")):
+            if paragraph_lines:
+                break
+            continue
+        if re.match(r"^\d+\.\s+", stripped):
+            if paragraph_lines:
+                break
+            continue
+        started = True
+        paragraph_lines.append(stripped)
+    return " ".join(paragraph_lines).strip()
+
+
+def first_sentence(text: str) -> str:
+    cleaned = " ".join(text.split())
+    if not cleaned:
+        return ""
+    match = re.match(r"(.+?[.!?])(?:\s|$)", cleaned)
+    if match:
+        return match.group(1).strip()
+    return cleaned
+
+
+def build_reviews_reports_page(
+    out_dir: Path,
+    *,
+    published_files: dict[str, str],
+    report_name: str,
+    updated_value: str,
+) -> None:
+    template = load_template("reviews_reports.html")
+    intro_html, _ = markdown_to_html(REVIEWS_REPORTS_INTRO)
+    outro_html, _ = markdown_to_html(REVIEWS_REPORTS_OUTRO)
+    panels: list[str] = []
+    for report_spec in REVIEWS_REPORT_DOCS:
+        source_key = str(report_spec["source"])
+        source_path = resolve_source_path(source_key)
+        markdown_text = source_path.read_text(encoding="utf-8")
+        title = extract_markdown_title(markdown_text, fallback=report_spec["slug"].replace("-", " ").title())
+        summary = first_sentence(extract_intro_paragraph(markdown_text)) or "Open this panel to read the full report."
+        body, footnote_refs = extract_footnotes(markdown_text)
+        body_html, _ = markdown_to_html(
+            body,
+            drop_first_h1=True,
+            footnote_refs=footnote_refs or None,
+            heading_id_prefix=str(report_spec["slug"]),
+        )
+        if footnote_refs:
+            footnotes_html = ['<details class="cited-reviews-details"><summary>Show cited reviews</summary><section class="footnotes" aria-label="Cited reviews">']
+            for n in sorted(footnote_refs.keys(), key=int):
+                footnotes_html.append(
+                    f'<div class="footnote" id="{html.escape(str(report_spec["slug"]), quote=True)}-fn-{n}"><sup>{n}</sup> {html.escape(footnote_refs[n])}</div>'
+                )
+            footnotes_html.append("</section></details>")
+            body_html += "".join(footnotes_html)
+        site_path = published_files[source_key]
+        panels.append(
+            f"""
+            <details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">{html.escape(title)}</span>
+                  <span class="report-panel-description">{html.escape(summary)}</span>
+                </span>
+                <span class="report-panel-meta">Open report</span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="{html.escape(relative_site_href(f'{REVIEWS_REPORTS_SITE_DIR}/index.html', site_path), quote=True)}">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="{html.escape(markdown_print_href_from(f'{REVIEWS_REPORTS_SITE_DIR}/index.html', site_path), quote=True)}">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  {body_html}
+                </div>
+              </div>
+            </details>
+            """.strip()
+        )
+    page_html = replace_tokens(
+        template,
+        {
+            "PAGE_TITLE": "Review Reports",
+            "DOC_TITLE": "Consolidated Review Reports",
+            "DOC_SUMMARY": "A single page that bundles the review-analysis notes into collapsible, printable panels.",
+            "UPDATED_DATE": html.escape(updated_value),
+            "REPORT_NAME": html.escape(report_name),
+            "REPORT_COUNT": str(len(REVIEWS_REPORT_DOCS)),
+            "INTRO_HTML": intro_html,
+            "OUTRO_HTML": outro_html,
+            "REPORT_PANELS": "\n".join(panels),
+            "HOME_HREF": relative_site_href(f"{REVIEWS_REPORTS_SITE_DIR}/index.html", "index.html"),
+            "MAP_HREF": relative_site_href(f"{REVIEWS_REPORTS_SITE_DIR}/index.html", "map/map.html"),
+            "PRINT_TOOL_HREF": relative_site_href(f"{REVIEWS_REPORTS_SITE_DIR}/index.html", TOOL_VIEWER_PATH),
+        },
+    )
+    report_out_dir = out_dir / REVIEWS_REPORTS_SITE_DIR
+    report_out_dir.mkdir(parents=True, exist_ok=True)
+    (report_out_dir / "index.html").write_text(page_html, encoding="utf-8")
+
+
 def zip_directory(source_dir: Path, destination_zip: Path) -> None:
     destination_zip.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(destination_zip, "w", compression=zipfile.ZIP_DEFLATED) as archive:
@@ -1083,6 +1267,12 @@ def write_page(
     page_lookup = build_page_lookup()
     for spec in PAGE_DOCS:
         write_document_page(out_dir, spec, published_files=published_files, page_lookup=page_lookup)
+    build_reviews_reports_page(
+        out_dir,
+        published_files=published_files,
+        report_name=report_dir.name,
+        updated_value=str(updated_value),
+    )
 
 
 def write_redirect_file(out_dir: Path, target: str) -> None:
