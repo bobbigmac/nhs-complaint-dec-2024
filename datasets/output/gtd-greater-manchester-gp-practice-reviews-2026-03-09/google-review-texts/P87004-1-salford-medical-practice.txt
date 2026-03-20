@@ -2,60 +2,3288 @@ Practice: 1/Salford Medical Practice
 Canonical code: P87004
 Postcode: M6 5PP
 Google Maps title: Salford Medical Centre
-Google rating: 4.7
-Google review count: 616
-Google Maps URL: https://www.google.com/maps/place/Salford+Medical+Centre/@53.4874216,-2.294578,17z/data=!4m8!3m7!1s0x487bae47d4905f0b:0x9808012c0213669a!8m2!3d53.4874216!4d-2.294578!9m1!1b1!16s%2Fg%2F11c6dyfg2r?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google rating: 4.8
+Google review count: 642
+Google Maps URL: https://www.google.com/maps/place/Salford+Medical+Centre/@53.4874248,-2.2971583,17z/data=!4m8!3m7!1s0x487bae47d4905f0b:0x9808012c0213669a!8m2!3d53.4874216!4d-2.294578!9m1!1b1!16s%2Fg%2F11c6dyfg2r?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 642
+Owner replies collected: 21
+Raw review responses captured: 65
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87004-1-salford-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Dominika Mazur
+Date: 19 hours ago
+Rating: 5 stars
+Leslie was very professional and kind nurse
+
+Author: Oluwayemisi Ogunsola
+Date: 19 hours ago
+Rating: 5 stars
+I was attended too patiently and alquestions answered and all observation was explained
+
+Author: Chan Louisa
+Date: 19 hours ago
+Rating: 5 stars
+This morning March19th, at 8:00am. I went to the Salford Medical Centre to have my blood drawn and I was very happy. Because the nurse helped me drew blood, she was very nice. And the lady at the reception also helped me book my next appointment and she was also a very nice person. I am here to say ‘Thank you’.
+
+Author: Roy Grimes
+Date: Edited 19 hours ago
+Rating: 5 stars
+Doctor Stiles was very helpful.
+
+Author: Nick West
+Date: 20 hours ago
+Rating: 5 stars
+Very impressed, listened to me and acted accordingly.
+
+Author: Carol Walker
+Date: a day ago
+Rating: 5 stars
+Dr Stikes is an extremely nice doctor & very thorough. He always makes me feel so much better.
+
+Author: Lauren Ellis
+Date: Edited a day ago
+Rating: 5 stars
+Lauren Ellis1 reviewEdited a day ago
+
+Author: Wadha Al shumari
+Date: a day ago
+Rating: 5 stars
+Wadha Al shumari1 reviewa day ago New
+
+Author: tony tomy
+Date: a day ago
+Rating: 5 stars
+tony tomy6 reviewsa day ago New
+
+Author: Emma O'neill
+Date: Edited a day ago
+Rating: 5 stars
+Amazing Thankyou so much
+
+Author: Mauricio Guzman
+Date: a day ago
+Rating: 5 stars
+Mauricio Guzman1 reviewa day ago New
+
+Author: Trevor Mills
+Date: a day ago
+Rating: 5 stars
+Trevor Mills2 reviewsa day ago New
+
+Author: Shahzad Saleem
+Date: a day ago
+Rating: 5 stars
+She's not only a great nurse but an amazing human being as well.
+
+Author: Nicky Moore
+Date: 2 days ago
+Rating: 5 stars
+Nicky Moore6 reviews · 1 photo2 days ago New
+
+Author: Nahid Karami
+Date: 2 days ago
+Rating: 5 stars
+Hello, my nurse was extremely kind and patient, and I was happy to be with her.
+
+Author: Lee Cooper
+Date: Edited 2 days ago
+Rating: 5 stars
+Lee Cooper3 reviewsEdited 2 days ago
+
+Author: Adejoke Olawunmi
+Date: 2 days ago
+Rating: 5 stars
+I’m satisfied with my experience at the practice
+
+Author: claudine naylor
+Date: 2 days ago
+Rating: 5 stars
+claudine naylor1 review2 days ago New
+
+Author: zowie jobey
+Date: Edited 3 days ago
+Rating: 5 stars
+zowie jobey1 reviewEdited 3 days ago
+
+Author: Ziya mol
+Date: 3 days ago
+Rating: 5 stars
+Dr.sigh was really amazing..he was good dealing with kids.. tried to understand all the concerns.. this consultation was a good experience..
+
+Author: Abdullah Hamrah
+Date: Edited 3 days ago
+Rating: 5 stars
+The Dr is very nice Porson I like how he's personality
+
+Author: Eric Chang
+Date: 3 days ago
+Rating: 5 stars
+Eric Chang1 review3 days ago New
+
+Author: Norma Parkinson
+Date: Edited 5 days ago
+Rating: 5 stars
+Always happy with visits here, staff welcoming and helpful, as was Lesley this time.
+
+Author: Johnmally Brown
+Date: 6 days ago
+Rating: 5 stars
+Doctor Stiles was attentive and very professional.
+
+Author: Amy Chadwick
+Date: Edited 6 days ago
+Rating: 5 stars
+My appointment with Dr Stiles today was amazing he was so attentive and listened to my every concern and gave me a lot of reassurance in my appointment I couldn’t ask for a better doctor to go to with things I’m struggling with
+
+Author: Stuart Gallacher
+Date: Edited 6 days ago
+Rating: 5 stars
+Friendly, attentive and efficient consultation
+
+Author: Marie Shawcross
+Date: 6 days ago
+Rating: 5 stars
+Brilliant doctor
+
+Author: michael Bolton
+Date: 6 days ago
+Rating: 5 stars
+michael Bolton1 review6 days ago New
+
+Author: zhang jason
+Date: Edited a week ago
+Rating: 5 stars
+Kyla's friendly, helpful and rapid response.
+
+Author: Fili Mulu
+Date: Edited a week ago
+Rating: 5 stars
+Very nice lady
+
+Author: Dorota Michalec
+Date: a week ago
+Rating: 5 stars
+Dorota Michaleca week ago New
+
+Author: Julia Sem
+Date: Edited a week ago
+Rating: 5 stars
+Great place
+
+Author: Marius Costel
+Date: a week ago
+Rating: 1 star
+Marius Costela week ago New
+
+Author: Joyce E
+Date: a week ago
+Rating: 5 stars
+Excellent
+
+Author: Wander Neto
+Date: Edited a week ago
+Rating: 5 stars
+Great consultation..
+
+Author: Steve Clayton
+Date: Edited a week ago
+Rating: 5 stars
+Very good Informative and relaxed
+
+Author: David Lam
+Date: Edited a week ago
+Rating: 5 stars
+Very good
+
+Author: Lynn Johnson
+Date: Edited a week ago
+Rating: 5 stars
+I received a good examination this morning and Sarah made me feel at ease. Thank you.
+
+Author: Margaret Hanneffy
+Date: a week ago
+Rating: 5 stars
+Margaret Hanneffya week ago New
+
+Author: Joanne Robinson
+Date: a week ago
+Rating: 5 stars
+Hi so happy and got seen to so quick happy results
+
+Author: James Kavanagh
+Date: a week ago
+Rating: 5 stars
+James Kavanagh1 reviewa week ago New
+
+Author: Zam Zam
+Date: a week ago
+Rating: 5 stars
+Zam Zam4 reviewsa week ago New
+
+Author: Ian Bolton
+Date: Edited a week ago
+Rating: 5 stars
+Yes,i was very happy with my appointment with kyla.
+
+Author: Josh James
+Date: Edited a week ago
+Rating: 5 stars
+The doctor gave me antibiotics and told me if it carrys on to go and get a xray and gave me a link to go where is nearest to me
+
+Author: Tommy F
+Date: a week ago
+Rating: 5 stars
+Excellent practice, lovely reception staff and lovely clinicians - both appointments I've attended were very speedy, access to the practice is easy, whether online submissions or calling - no delays
+
+Author: M D
+Date: Edited a week ago
+Rating: 4 stars
+A calm place with respectful staff and professional
+
+Author: peyman maroufzade
+Date: Edited a week ago
+Rating: 5 stars
+He is very very very friendly and very kind
+
+Author: Ibrahim Aniki
+Date: a week ago
+Rating: 4 stars
+Ibrahim Anikia week ago New
 
 Author: Olesia Saif
-Date: Edited 8 hours ago
+Date: Edited a week ago
 Rating: 5 stars
-Olesia Saif7 reviewsEdited 8 hours ago
+Olesia Saif7 reviewsEdited a week ago
 
 Author: shamoora malik
-Date: 9 hours ago
+Date: a week ago
 Rating: 5 stars
-shamoora malik2 reviews9 hours ago New
+shamoora malik2 reviewsa week ago New
 
 Author: julie smyth
-Date: 9 hours ago
+Date: a week ago
 Rating: 5 stars
 Extremely happy Kyla listened intently to my discomfort and I believe prescribed the correct medication for my ailment
 
 Author: SUSAN QUINN
-Date: Edited 9 hours ago
+Date: Edited a week ago
 Rating: 1 star
-Considering I did not see Kyla as my appointment with was cancelled by my partner last week, because I needed to see a doctor and not a nurse as I have all ready seen a nurse about the same problem, and it was your practice that text me to make this appointment, in future it would help if you read patients notes before sending out these texts that's if you want a good review
+Considering I did not see Kyla as my appointment with was cancelled by my partner last week, because I needed to see a doctor and not a nurse as I have all ready seen a nurse about the same problem, and it was your practice that text me to …
+Practice response date: a week ago
+Practice response:
+Considering I did not see Kyla as my appointment with was cancelled by my partner last week, because I needed to see a doctor and not a nurse as I have all ready seen a nurse about the same problem, and it was your practice that text me to … More
 
 Author: Oliver Ritchie
-Date: 10 hours ago
+Date: a week ago
 Rating: 5 stars
 Go above and beyond the doctors here
 
-Author: David Lam
-Date: Edited 10 hours ago
-Rating: 5 stars
-Very good
-
 Author: Shane Furey
-Date: Edited 10 hours ago
+Date: Edited a week ago
 Rating: 5 stars
 Amazing doctor ❤️ always listens to you very understanding to your needs
 
 Author: Elle Coles
-Date: 16 hours ago
+Date: a week ago
 Rating: 5 stars
-Elle ColesLocal Guide · 10 reviews · 4 photos16 hours ago New
+Elle ColesLocal Guide · 10 reviews · 4 photosa week ago New
 
 Author: Georgina Dalli
-Date: Edited a day ago
+Date: Edited a week ago
 Rating: 5 stars
-Georgina DalliLocal Guide · 5 reviewsEdited a day ago
+Georgina DalliLocal Guide · 5 reviewsEdited a week ago
 
 Author: Amie Monaghan
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
-Amie Monaghan1 review3 days ago New
+Amie Monaghan1 reviewa week ago New
+
+Author: Rhéma-Faith Briscoe (Rae)
+Date: Edited a week ago
+Rating: 5 stars
+I transferred to this practice last year from another local one after feeling like I wasn’t receiving thorough care. I had initially worried it was just going to be down to the fact Salford is a busy city, and the NHS is underfunded, but Salford Medical Centre and the Quays Practice have completely restored my faith! I feel heard and really cared for. Every single member of staff I’ve encountered has been incredible; from the receptionists, prescribers, doctors and nurses. I’m so grateful to have had such lovely support, particularly from Reema, James, Kyla, Rachel L and Farah, they’ve each been patient, thorough and compassionate. I feel very confident in the hands of these two linked practices. Thank you.
+
+Author: Jordan Hector
+Date: a week ago
+Rating: 5 stars
+Jordan Hector2 reviewsa week ago New
+
+Author: Filomena Rodrigues
+Date: 2 weeks ago
+Rating: 5 stars
+He listens!!!! He does this because he loves to help,to be a doctor. I liked this doctor. Dr James
+
+Author: Mudassar Kazmi
+Date: Edited 2 weeks ago
+Rating: 5 stars
+Mudassar Kazmi5 reviewsEdited 2 weeks ago New
+
+Author: Bernadette Brackenridge
+Date: 2 weeks ago
+Rating: 5 stars
+Yes very happy with my app with Lesley
+
+Author: James Henderson
+Date: 2 weeks ago
+Rating: 5 stars
+James Henderson1 review2 weeks ago New
+
+Author: Alix Rose Marriott
+Date: 2 weeks ago
+Rating: 5 stars
+Alix Rose Marriott4 reviews2 weeks ago New
+
+Author: Maisam Lamsehchi
+Date: 2 weeks ago
+Rating: 5 stars
+Best GP I have used. Thoughtful. Helpful. I felt listened to and the appreciated their help. Best GP in Manchester. Dr Udoewa thank you
+
+Author: Ann Dalli
+Date: 2 weeks ago
+Rating: 5 stars
+Cannot thank dr Singh enough today was so understanding and helpful
+
+Author: Peter Gray
+Date: 2 weeks ago
+Rating: 5 stars
+Peter GrayLocal Guide · 2 reviews · 445 photos2 weeks ago New
+
+Author: Millie Omara
+Date: 2 weeks ago
+Rating: 5 stars
+Millie Omara1 review2 weeks ago New
+
+Author: Irene Bolton
+Date: Edited 2 weeks ago
+Rating: 5 stars
+Telephone appointment with DR Singh today was very good explained what was wrong Sent prescription to chemist to pick up tomorrow always pleased with this DR Very kind & helpful hope he stays for good
+
+Author: David Archer
+Date: Edited 2 weeks ago
+Rating: 5 stars
+Brillaint service
+
+Author: Alex
+Date: 2 weeks ago
+Rating: 5 stars
+Alex2 weeks ago New
+
+Author: Lynn Grundy
+Date: 2 weeks ago
+Rating: 5 stars
+Really improved since Covid. Reception staff polite friendly & helpful. Doctors are understanding, they listen and don’t rush you. I’m really impressed I’ve had excellent experiences and great service. THANK YOU
+
+Author: Angela Cole
+Date: Edited 2 weeks ago
+Rating: 5 stars
+Had a appointment today with kayla ..all good happy patients but with some pain lol
+
+Author: Mahmoud Abdeen
+Date: Edited 3 weeks ago
+Rating: 5 stars
+I was very happy with the experience; the service was excellent, and Dr. deeply for the patient and created a positive atmosphere.
+
+Author: susan Owen
+Date: Edited 3 weeks ago
+Rating: 5 stars
+Dr stiles is a fab doctor he puts you at ease Listens to what you have to say and explains what will be happening . Just so professional.
+
+Author: Andrew Hacker
+Date: 3 weeks ago
+Rating: 4 stars
+This was my first time visiting this surgery since I registered with them in October 2024. The doctor was great. I did find it odd, that the doctor advised I book an appointment for blood tests at reception, but then reception advised to call the following week as they don’t have any appointments, so I will try and book next week.
+
+Author: Jacky Mcfadden
+Date: Edited 3 weeks ago
+Rating: 5 stars
+Kayla has always been professional and supportive.Very Informative and very empathetic. Very knowledgeable and understanding
+
+Author: Kai Chi derek Poon
+Date: 3 weeks ago
+Rating: 5 stars
+I attended an appointment this morning at Salford Medical Centre with Mr. Hassan. I would like to express my sincere appreciation for his excellent service. He was professional, knowledgeable, and very patient in explaining my condition clearly. He also efficiently emailed me the relevant exercise materials after the session, which I found very helpful. In addition, the staff and nurses at the centre were all very friendly, welcoming, and willing to offer assistance and support whenever needed. I am very satisfied with the care I received and would like to commend the team for their outstanding work.
+
+Author: Natalia Serwatka
+Date: 3 weeks ago
+Rating: 5 stars
+Very helpful, and patient. Caring for the patient.
+
+Author: Onyeka Jerry
+Date: 3 weeks ago
+Rating: 5 stars
+Onyeka Jerry3 weeks ago New
+
+Author: Jodie Parry
+Date: Edited 3 weeks ago
+Rating: 5 stars
+I had a bloodtest today with Lesley.Practitioner made me feel at ease and is very professional.
+
+Author: Liviu Marin
+Date: 3 weeks ago
+Rating: 5 stars
+Liviu Marin3 weeks ago New
+
+Author: delia kennedy
+Date: 3 weeks ago
+Rating: 4 stars
+delia kennedy3 weeks ago New
+
+Author: Helen Mallen
+Date: 3 weeks ago
+Rating: 5 stars
+I spoke to Dr Othick today about my elderly aunt who the practice cares for. She was lovely and answered questions and was very helpful. Have to say the care from all the staff has been wonderful over the years but especially over the last year as her health has declined
+
+Author: Mel Jackson
+Date: Edited 3 weeks ago
+Rating: 5 stars
+Could not have been better as always
+
+Author: Jake Andrews
+Date: 3 weeks ago
+Rating: 5 stars
+Jake Andrews1 review3 weeks ago New
+
+Author: Sonia Whittle
+Date: Edited 3 weeks ago
+Rating: 5 stars
+The Doctor is excellent. Very good listener, kind and thoughtful and very thorough
+
+Author: Stephen Holloway
+Date: Edited 3 weeks ago
+Rating: 5 stars
+Today's visit went well , I felt listened to , doctor understood that I need a lower room for my appointments in the future and noted it , my pains were talked about as was my recent scans , very good
+
+Author: Oluyele Williams
+Date: 3 weeks ago
+Rating: 5 stars
+The consultation time was great. I appreciate the doctor's attention to details and willingness to guide on what to do to get the best out of every situation
+
+Author: Hope Gorton
+Date: 3 weeks ago
+Rating: 5 stars
+We felt listened to by Dr Singh - which is the number one thing when it comes to our little boys health! He prescribed us with medicine without hesitation and gave us good advice on how to keep our little boy comfortable while he battled with croup. I would definitely see Dr Singh again.
+
+Author: Nancy Olsen
+Date: 3 weeks ago
+Rating: 5 stars
+The care I received was excellent everything was explained in detail and a way I understood
+
+Author: Michelle Bennett
+Date: 3 weeks ago
+Rating: 5 stars
+Lovely doctor actually feel like she listens to my problems and assures me with everything
+
+Author: michael wallace
+Date: Edited 3 weeks ago
+Rating: 5 stars
+Such a nice doctor
+
+Author: Abby Folapo
+Date: 3 weeks ago
+Rating: 5 stars
+Always a great experience! Never have problem getting an appointment and every staff is Lovely
+
+Author: adelaide vieira
+Date: Edited 3 weeks ago
+Rating: 5 stars
+They have been wonderful. For my experiences always vry kind and very professional. So I have been very happy 😊 …
+
+Author: Stanislav Vavrousek
+Date: Edited 3 weeks ago
+Rating: 5 stars
+Very professional
+
+Author: George Mellor
+Date: 3 weeks ago
+Rating: 5 stars
+George Mellor5 reviews3 weeks ago New
+
+Author: Paulette Anana
+Date: a month ago
+Rating: 5 stars
+Yes he was amazing and very nice
+
+Author: faz baree
+Date: Edited a month ago
+Rating: 5 stars
+One of the best She listens to She advises And she prescribes where possible
+
+Author: Kenneth Wood
+Date: a month ago
+Rating: 5 stars
+Had a very pleasant conversation with Kyla today, a very professional lady who helped me concerning my hospital appointment.
+
+Author: Noelia Silva
+Date: Edited a month ago
+Rating: 5 stars
+Kyla is always very polite and helpful. Thank you
+
+Author: Saul Stan
+Date: a month ago
+Rating: 5 stars
+Saul Stan4 reviews · 4 photosa month ago
+
+Author: Yu Pun Leung
+Date: a month ago
+Rating: 5 stars
+I am happy with the consultation yesterday. The nurse was kind and patient. She explained to me the test details and the test result. Thank you very much.
+
+Author: Jeff
+Date: a month ago
+Rating: 5 stars
+Very good allowed time to explain and given advice needed Call booked for 9an phoned promptly
+
+Author: robert smith
+Date: a month ago
+Rating: 5 stars
+robert smith4 reviewsa month ago
+
+Author: Ken Pollard
+Date: Edited a month ago
+Rating: 5 stars
+Very professional and made you feel at ease and comfortable also and explained everything thank you
+
+Author: Abhisheak Amalraj
+Date: a month ago
+Rating: 5 stars
+Abhisheak Amalraj5 reviews · 1 photoa month ago
+
+Author: Richard Cervenka
+Date: a month ago
+Rating: 5 stars
+Richard Cervenka2 reviewsa month ago
+
+Author: Adam Deacon
+Date: a month ago
+Rating: 5 stars
+Very happy with my consultation today
+
+Author: Yaqoob Sidhu
+Date: Edited a month ago
+Rating: 5 stars
+Very kind to pashent .solve the problem with carefully
+
+Author: isboses katende ssemakula
+Date: a month ago
+Rating: 5 stars
+The service was good
+
+Author: Amy Lincoln
+Date: a month ago
+Rating: 5 stars
+Such an efficient GP surgery. I can’t recommend them enough.
+
+Author: sumajTs sumaj
+Date: Edited a month ago
+Rating: 5 stars
+Dr. Singh was very kind and explained everything in detail.Had a great experiance in there.
+
+Author: Masoud Rad
+Date: a month ago
+Rating: 5 stars
+I’ve been registered with Salford Medical Centre for a few years now, and I can honestly say I’ve been extremely happy with the service I’ve received. …
+
+Author: Marlena K.
+Date: a month ago
+Rating: 5 stars
+The best GP in Manchester ✨
+
+Author: Lucy Wilson
+Date: a month ago
+Rating: 5 stars
+Lucy Wilsona month ago
+
+Author: John Kelly
+Date: Edited a month ago
+Rating: 5 stars
+Top doctor
+
+Author: Magdalena Przybylowska
+Date: Edited a month ago
+Rating: 5 stars
+My phone appointment as well as doctor appointment with Dr Lava were a true example of how healthcare should be delivered. From the very first conversation over the phone, I felt genuinely heard. There was no sense of being rushed or …
+
+Author: Bruce Law
+Date: Edited a month ago
+Rating: 4 stars
+Bruce LawEdited a month ago
+
+Author: Oluseun Aina
+Date: a month ago
+Rating: 5 stars
+Very polite
+
+Author: Steve Thurston
+Date: Edited a month ago
+Rating: 5 stars
+Excellent service saw the Practise nurse on the Tuesday got referred to the hospital 24hrs later , results back all within 72hrs
+
+Author: Akinsola Demilade
+Date: a month ago
+Rating: 5 stars
+Yes I love it
+
+Author: Norman Bedford
+Date: a month ago
+Rating: 5 stars
+Very pleased with the care and attention given to me thank you lesley
+
+Author: B R
+Date: a month ago
+Rating: 5 stars
+Perfect example of what a GP can and should be. I've been coming here for a few years now since I moved to Manchester and the …
+
+Author: Michelle Calderwood
+Date: a month ago
+Rating: 5 stars
+The most friendliest helpful lady ever She is amazing
+
+Author: adge adge
+Date: Edited a month ago
+Rating: 5 stars
+Was seen on time doctor was attentive and understanding.
+
+Author: Kevin Buteba
+Date: a month ago
+Rating: 5 stars
+Excellent service❤️
+
+Author: Reginald Oparah
+Date: Edited a month ago
+Rating: 5 stars
+The Nurse Lesley was really amazing, all was professionally carried out. Thanks
+
+Author: Kathleen Keane
+Date: a month ago
+Rating: 5 stars
+Kathleen Keanea month ago
+
+Author: Nneka Mbakwe
+Date: a month ago
+Rating: 5 stars
+Nneka Mbakwe3 reviewsa month ago
+
+Author: Ioana
+Date: a month ago
+Rating: 5 stars
+Dr Othick listened to me and has done all she could to be taken care of. I am very greatful!
+
+Author: Sharanya Sharu
+Date: a month ago
+Rating: 5 stars
+Sharanya Sharua month ago
+
+Author: Florin-Georgian Grigore
+Date: a month ago
+Rating: 1 star
+Florin-Georgian Grigore1 reviewa month ago
+
+Author: Angelica Patricia
+Date: a month ago
+Rating: 1 star
+Angelica Patriciaa month ago
+
+Author: Ilona Krasinska
+Date: Edited a month ago
+Rating: 5 stars
+I do not recommend Dr. Lava. I have never seen such a bad doctor. She does not listen to me and does not treat me. I feel like she is working there as a punishment. She is very unkind and does not let me get a word in edgewise. Every time I …
+
+Author: Mark Andrews
+Date: Edited a month ago
+Rating: 5 stars
+The medical centre is first class & nothing is too much trouble.. Dr Singh is a superb - caring - knowledgeable doctor & a credit to his profession… All the surgery staff, doctors/ nurse practitioners, staff, & reception staff are always friendly & helpful
+
+Author: Carol Jones
+Date: a month ago
+Rating: 5 stars
+Very good Dr ,i have seen her a few times now , makes you feel very comfortable , wish her the best of luck in her career,
+
+Author: Carron Fogartaig
+Date: Edited a month ago
+Rating: 5 stars
+All staff vvery professional
+
+Author: Paul Holt
+Date: a month ago
+Rating: 5 stars
+Very well executed a male sensitive examination and consultation.
+
+Author: Rosemary
+Date: a month ago
+Rating: 5 stars
+Yes I was vary happy she took the time to listen to what I had to say
+
+Author: Brenda Stephenson
+Date: Edited a month ago
+Rating: 5 stars
+I was really pleased with my appointment today,The Doctor was really good,And I would like to thank the Receptionist for getting me an appointment so quickly,Thank you to you both
+
+Author: Favour Dimkpa
+Date: a month ago
+Rating: 5 stars
+Excellent
+
+Author: Smeu Monica
+Date: a month ago
+Rating: 5 stars
+Smeu Monicaa month ago
+
+Author: Jack Cooke
+Date: a month ago
+Rating: 5 stars
+Jack Cooke1 reviewa month ago
+
+Author: Rohit Raj
+Date: a month ago
+Rating: 5 stars
+Rohit Raj5 reviews · 5 photosa month ago
+
+Author: william nettleton
+Date: a month ago
+Rating: 5 stars
+william nettletona month ago
+
+Author: Victoria Young
+Date: a month ago
+Rating: 5 stars
+Victoria Young4 reviewsa month ago
+
+Author: Anthony Flannery
+Date: a month ago
+Rating: 5 stars
+Anthony Flannerya month ago
+
+Author: Olu Olojede
+Date: a month ago
+Rating: 5 stars
+Olu Olojede2 reviewsa month ago
+
+Author: Zuzanna Bogdanowicz
+Date: a month ago
+Rating: 5 stars
+Zuzanna Bogdanowicz1 reviewa month ago
+
+Author: elliot chase
+Date: a month ago
+Rating: 5 stars
+elliot chase3 reviewsa month ago
+
+Author: anthony coggins
+Date: a month ago
+Rating: 5 stars
+The nurse who i spoke with at the surgery today was extremely helpful and plight .
+
+Author: 和理看天下
+Date: a month ago
+Rating: 5 stars
+和理看天下a month ago
+
+Author: Daria Pietrzyk
+Date: Edited a month ago
+Rating: 5 stars
+I am so thankful to having app with Lesley, she always listening what you saying and providing great service, even she is so busy :) …
+
+Author: Linda Onwudinjo
+Date: Edited a month ago
+Rating: 5 stars
+Very effective am so glad I met with her(Kyla) Thank you so much I appreciate
+
+Author: bill laurukenas
+Date: Edited a month ago
+Rating: 5 stars
+I was very happy with my consultation the doctor made me feel at ease im quite nervous speaking on the phone .the doctor said she will send me the information I needed my the time I put the phone down the message came through very happy thank you
+
+Author: Gabriele Provaroni
+Date: a month ago
+Rating: 5 stars
+They are always quick to respond and helpful. Highly recommended
+
+Author: Lana
+Date: a month ago
+Rating: 5 stars
+LanaLocal Guide · 17 reviews · 6 photosa month ago
+
+Author: Litty Thomas
+Date: a month ago
+Rating: 5 stars
+Litty Thomas2 reviewsa month ago
+
+Author: Linda Riley
+Date: a month ago
+Rating: 5 stars
+Linda Riley1 reviewa month ago
+
+Author: andrew wightman
+Date: a month ago
+Rating: 5 stars
+I moved to this practice a few months ago and so far I have absolutely no complaints! Been very impressed by the care and efficiency of doctor,/nurses and admin staff alike - 5 stars from me!
+
+Author: Ron Evans
+Date: a month ago
+Rating: 5 stars
+Efficient, friendly & a pleasent experience
+
+Author: Denisa Picos
+Date: a month ago
+Rating: 5 stars
+Denisa Picos8 reviewsa month ago
+
+Author: Ben Johnson
+Date: a month ago
+Rating: 5 stars
+Very smooth and to the point, really appreciate the help
+
+Author: Kat Haydock
+Date: a month ago
+Rating: 5 stars
+Kat Haydocka month ago
+
+Author: Tony Daley
+Date: Edited a month ago
+Rating: 5 stars
+Ye very very happy
+
+Author: Dilys Jackson
+Date: a month ago
+Rating: 5 stars
+100% happy with Dr Singh very pleasant and caring doctor.
+
+Author: Abdullahi adeniyi Ajisope
+Date: a month ago
+Rating: 5 stars
+He was so professional and kind
+
+Author: Janet Kennedy
+Date: Edited a month ago
+Rating: 5 stars
+I changed doctors about 10 years ago the best move I’ve ever made it’s so easy to get an appointment and the staff are all amazing I recently seen dr singh what a nice person he was so professional but made you feel at ease and explained everything this practice is getting better and better
+
+Author: Yassin Mohamed
+Date: a month ago
+Rating: 5 stars
+Very satisfied for all Thanks for all 🙏 …
+
+Author: Vershima I Lan
+Date: a month ago
+Rating: 5 stars
+Great experience
+
+Author: Laura Mcgrath
+Date: Edited a month ago
+Rating: 5 stars
+The doc was fantastic, perfect customer support .
+
+Author: Moe El Fassed
+Date: a month ago
+Rating: 5 stars
+Dr. Stiles is the best - I never felt I can rely on any GP before meeting him.
+
+Author: kingsley EBOIGBE
+Date: a month ago
+Rating: 5 stars
+kingsley EBOIGBEa month ago
+
+Author: Miracle Akande
+Date: a month ago
+Rating: 5 stars
+Was great!
+
+Author: William McCarthy
+Date: Edited a month ago
+Rating: 4 stars
+Thank you, I was very happy with my consultation with Dr. Othick which took place on time which was very good and informative 👍 …
+
+Author: Alex Loughrie
+Date: a month ago
+Rating: 5 stars
+The staff are always as helpful as they can be and the medical staff are friendly and efficient always try to help with any concerns you may have
+
+Author: Maximus Barker
+Date: a month ago
+Rating: 5 stars
+Maximus Barker3 reviewsa month ago
+
+Author: Oksana Indyk
+Date: a month ago
+Rating: 5 stars
+Oksana IndykLocal Guide · 19 reviews · 4 photosa month ago
+
+Author: ЛІЛІЯ Ковтунюк
+Date: a month ago
+Rating: 5 stars
+ЛІЛІЯ Ковтунюк3 reviewsa month ago
+
+Author: Kieron Mongan
+Date: a month ago
+Rating: 4 stars
+I had a rewarding experience seeing Doctor Stiles and would hope to again soon.
+
+Author: Volorymyr R
+Date: Edited a month ago
+Rating: 5 stars
+Very good, everything was on time, it was easy to make an appointment
+
+Author: NVD227
+Date: a month ago
+Rating: 5 stars
+NVD2271 reviewa month ago
+
+Author: Jamie Pinkney
+Date: Edited a month ago
+Rating: 5 stars
+Kyla is very nice person who listens and cares she always helps to hightstander the receptionist are very good people as well who will help you with anything you need help with thank you
+
+Author: Ann Wild
+Date: a month ago
+Rating: 5 stars
+Ann Wild2 reviewsa month ago
+
+Author: Steve Russell
+Date: a month ago
+Rating: 5 stars
+very patient and attentive thank you
+
+Author: Charl Heaney
+Date: a month ago
+Rating: 5 stars
+Mr Hassan was brilliant! He asked many questions and got straight to the problem. He was very pleasant and very helpful. Thank you
+
+Author: Daniel Jimenez
+Date: a month ago
+Rating: 5 stars
+Daniel Jimenez3 reviewsa month ago
+
+Author: Frenica Williams
+Date: 2 months ago
+Rating: 5 stars
+Frenica Williams2 reviews · 1 photo2 months ago
+
+Author: Lillianna Patterson
+Date: 2 months ago
+Rating: 5 stars
+Kayla was really friendly and listened to my concerns.
+
+Author: Pauline Kerrane
+Date: Edited 2 months ago
+Rating: 5 stars
+Pauline KerraneEdited 2 months ago
+
+Author: DIANA S
+Date: 2 months ago
+Rating: 5 stars
+DIANA SLocal Guide · 29 reviews · 27 photos2 months ago
+
+Author: Elaine Croden
+Date: Edited 2 months ago
+Rating: 5 stars
+Seen on time and felt like I was given enough time. Lovely bedside manner and explained everything throughly and advise given for future care.(Sohaib Hassan)
+
+Author: ARUORIWO GRACIOUS
+Date: Edited 2 months ago
+Rating: 5 stars
+Nice people 💯 and very professional. …
+
+Author: Charlotte Little
+Date: 2 months ago
+Rating: 5 stars
+Charlotte Little1 review2 months ago
+
+Author: Kathryn Whiteley
+Date: Edited 2 months ago
+Rating: 5 stars
+I had no trouble getting an appointment with the GP I requested, within the week. I was seen on time which was a bonus. The GP was great, she listened to me and I felt they were really understanding. My prescription was then sent straight to the pharmacy.
+
+Author: Iryna Vlasova
+Date: 2 months ago
+Rating: 5 stars
+I am seeing MSK Practitioner, Sohaib Hassan for tendonitis in my foot and arm, as well as ongoing back problems, and I am extremely grateful for his care. He is attentive and consistently provides accurate diagnoses. …
+
+Author: Ben Lucas
+Date: 2 months ago
+Rating: 5 stars
+Ben Lucas2 months ago
+
+Author: Louise Talbot
+Date: Edited 2 months ago
+Rating: 5 stars
+Dr ramazan and his team are great problems with appointments but other than that great practice
+
+Author: Sofia Maria
+Date: 2 months ago
+Rating: 5 stars
+Sofia Maria1 review2 months ago
+
+Author: Nicole Taylor Allen
+Date: Edited 2 months ago
+Rating: 5 stars
+The best doctor’s I’ve ever been at with lovely staff who make you feel very comfortable. They always get in touch quickly when needed and it’s usually easy and fast to get an appointment.
+
+Author: Georgie Vil
+Date: 2 months ago
+Rating: 1 star
+Georgie Vil2 months ago
+
+Author: thara thomas
+Date: 2 months ago
+Rating: 5 stars
+Very dedicated doctor.
+
+Author: Jacob Driscoll
+Date: 2 months ago
+Rating: 4 stars
+Quick and easy, but somtimes it takes longer than expected to get an appointment;even if it could be somthing servere.
+
+Author: IRENE OBIAGELI
+Date: 2 months ago
+Rating: 4 stars
+IRENE OBIAGELI1 review · 2 photos2 months ago
+
+Author: Erickson De Jesus
+Date: Edited 2 months ago
+Rating: 5 stars
+Dr Singh was very helpful and understand my concerns.
+
+Author: Maureen Wallwork
+Date: 2 months ago
+Rating: 5 stars
+Maureen Wallwork1 review2 months ago
+
+Author: Daniel Murphy
+Date: 2 months ago
+Rating: 4 stars
+The staff are extremely polite and helpful, and made me feel comfortable
+
+Author: Steven Grimes
+Date: Edited 2 months ago
+Rating: 5 stars
+So helpful so reassuring make you so at ease THANK YOU 🙏 …
+
+Author: Adaora Orajuba
+Date: 2 months ago
+Rating: 5 stars
+Adaora Orajuba2 months ago
+
+Author: R “PutYouInASock” W
+Date: 2 months ago
+Rating: 5 stars
+R “PutYouInASock” W1 review2 months ago
+
+Author: Anisa Heydarzadeh
+Date: 2 months ago
+Rating: 5 stars
+Anisa Heydarzadeh4 reviews · 1 photo2 months ago
+
+Author: D F
+Date: 2 months ago
+Rating: 1 star
+2 appointments in a week, one was a telephone consultation and second was face to face. Both times had to wait over 30 minutes for the GP with no reason given or updates but if I came 5 minutes late then my appointment would have been cancelled. Take it different rules applies to when they’re late with no apologies at all. I’m late for work now myself.
+
+Author: mahtab avazmohammadi
+Date: 2 months ago
+Rating: 5 stars
+mahtab avazmohammadi3 reviews2 months ago
+
+Author: Anzhela Lavazanyan
+Date: 2 months ago
+Rating: 5 stars
+Dr Stiles excellent communication gives clear explanations, good listening. Dr Stiles You're not just a doctor, but a caring family member; I appreciate you taking the time to understand my concerns. Thank you for your wonderful manner.
+
+Author: Amobichukwu Eke
+Date: 2 months ago
+Rating: 5 stars
+Lesley is an amazing practitioner. I have to cancel my appointment with Quay practice because of her excellent service.
+
+Author: Chiphra Mikiele
+Date: 3 months ago
+Rating: 5 stars
+Very kind and helpful
+
+Author: Ibtisam Aljuboori
+Date: 3 months ago
+Rating: 4 stars
+The doctor was very helpful. I a appreciate that . Thanks for her
+
+Author: Mavis
+Date: 3 months ago
+Rating: 5 stars
+It was a pleasant experience having Dr James Stiles looking after me in Salford Medical Centre. He had a detailed investigation on my problems and provided professional prognosis and referral for me. Also he had a follow up of my blood pressure issues which may only be a temporary one. Overall I highly appreciate the service he provided and was grateful for it.
+
+Author: Timo Temo
+Date: 3 months ago
+Rating: 5 stars
+Timo Temo3 months ago
+
+Author: Sandra D
+Date: 3 months ago
+Rating: 5 stars
+The Dr took time to listen, ask questions and did not rush me. Especially important when it is related to mental health. We discussed treatment options and I felt involved in the decision process regarding the agreed treatment and the options available to me.
+
+Author: Bonnie Fingleton
+Date: Edited 3 months ago
+Rating: 5 stars
+Very happy.
+
+Author: Julia Mura
+Date: 3 months ago
+Rating: 5 stars
+I had a phone consultation with the Dr Salim and was very pleased with the experience. The doctor was attentive, professional, and took the time to listen carefully to my concerns. Everything was explained clearly and in a reassuring way, …
+
+Author: Julian Millidge
+Date: 3 months ago
+Rating: 5 stars
+Great result good outcome
+
+Author: Luís Miguel Esteves Sousa
+Date: 3 months ago
+Rating: 5 stars
+Luís Miguel Esteves Sousa3 months ago
+
+Author: neil mccallum
+Date: Edited 3 months ago
+Rating: 5 stars
+This was a review of my recent treatment for phlebitis. It confirmed for me that although there is still some discoloring, no further medication is needed. I am happy with that.
+
+Author: Gary Rose
+Date: Edited 3 months ago
+Rating: 5 stars
+Very happy as I was seen promptly and prescribed what I needed quickly too
+
+Author: Carol Liu
+Date: 3 months ago
+Rating: 5 stars
+Carol Liu2 reviews3 months ago
+
+Author: Abdoulie Kebbeh
+Date: 3 months ago
+Rating: 5 stars
+Abdoulie Kebbeh1 review3 months ago
+
+Author: Abigael Tolulope Agbaje
+Date: 3 months ago
+Rating: 5 stars
+Abigael Tolulope AgbajeLocal Guide · 11 reviews · 19 photos3 months ago
+
+Author: Stephen Hanlon
+Date: Edited 3 months ago
+Rating: 5 stars
+Very impressed. Thank you
+
+Author: Daniel Palfrey
+Date: 3 months ago
+Rating: 5 stars
+Daniel PalfreyLocal Guide · 9 reviews3 months ago
+
+Author: Ayobami Afolabi
+Date: 3 months ago
+Rating: 5 stars
+Mrs Lesley Greenhalgh was friendly, profemissional and nice when I visited my GP.
+
+Author: ibrahim Alhababi
+Date: 3 months ago
+Rating: 4 stars
+I hope translators will be provided.
+
+Author: matthew neil
+Date: 3 months ago
+Rating: 5 stars
+matthew neil3 months ago
+
+Author: Charmane Gama
+Date: 3 months ago
+Rating: 5 stars
+I'm so grateful to Dr Serena Othick for the excellent care and attention given to my 8 week old baby during their physical exam and to me during my postnatal review. She was thorough, gentle, and made us both feel at ease. The nurse who administered the vaccinations was also very professional and kind.
+
+Author: Louise Mellis
+Date: 3 months ago
+Rating: 5 stars
+New to the surgery, having moved from Hertfordshire. I came with health issues and with trepidation, changing a doctor after 25 years. I had nothing to worry about from reception to every doctor I have seen, the care and response have been exceptional, and I am so relieved to say this is my surgery where I know I will be cared for with kindness and consideration as well as promptly - it is an incredible medical centre
+
+Author: josephine mcdermott
+Date: 3 months ago
+Rating: 5 stars
+I had a telephone conversation with Dr Othick at Salford Medical Practice,as a result of my reqùest for a conversation with my GP about a concern I had that needed my doctors opinion. She responded in a warm and sympathetic manner and gave me confidence in her professional opinion. She clarified my concern and Ileft me feeling very satisfied that I had a way forward. I think that a telephone call was appropriate in this situation and a face to face appointment in person would have been unnecessary.
+
+Author: Charlene Daniels
+Date: Edited 3 months ago
+Rating: 5 stars
+I always appreciate how Megan goes above and beyond for me when i phone she quickly found a suitable appointment for me. She showed genuine concern for my problems and supported me as to which professional would be best to talk to. Megans always friendly and helpful and puts me at ease.
+
+Author: Liudmyla Kozlova
+Date: 3 months ago
+Rating: 5 stars
+Kyla Barry, an experienced nurse, was very kind and attentive to every detail of my illness. I was pleased with my visit with her.
+
+Author: Alexander Rippon
+Date: 3 months ago
+Rating: 5 stars
+Great service
+
+Author: kirsiukee kristina
+Date: 3 months ago
+Rating: 5 stars
+kirsiukee kristina3 reviews3 months ago
+
+Author: Steve at buccscoin
+Date: 3 months ago
+Rating: 4 stars
+Yes got to the bottom of thstevee problem awaiting new drugs i need.
+
+Author: Rovan Ismail
+Date: 3 months ago
+Rating: 1 star
+I wasn’t happy with my consultation today. The medication I asked for was completely different to what I received.
+
+Author: franky stephenson
+Date: 3 months ago
+Rating: 5 stars
+franky stephensonLocal Guide · 73 reviews · 26 photos3 months ago
+
+Author: Neil Boon
+Date: Edited 3 months ago
+Rating: 5 stars
+Lesley was extremly profesional and freindly. Like allthe staff are at salford medical cnter
+
+Author: James Dalli
+Date: Edited 3 months ago
+Rating: 5 stars
+I felt I had enough time to explain issues and was being listened to
+
+Author: Srikanth Cheedey
+Date: Edited 3 months ago
+Rating: 5 stars
+Srikanth Cheedey12 reviewsEdited 3 months ago
+
+Author: Rochelle Povah
+Date: 3 months ago
+Rating: 5 stars
+Rochelle Povah3 months ago
+
+Author: Joanna Smallwood
+Date: 3 months ago
+Rating: 5 stars
+Joanna Smallwood1 review3 months ago
+
+Author: sarah ibidun
+Date: 3 months ago
+Rating: 5 stars
+sarah ibidun3 reviews3 months ago
+
+Author: Wiktoria Stefanska
+Date: 3 months ago
+Rating: 5 stars
+Wiktoria Stefanska5 reviews3 months ago
+
+Author: Ronald Leigh
+Date: 3 months ago
+Rating: 5 stars
+Dr styles was a very good and affable doctor who diagnosed things precisely and gave me good advice and some medication in case I needed it which was a very wise choice.
+
+Author: James Rice
+Date: 3 months ago
+Rating: 5 stars
+Very understanding and a great listener with good advise
+
+Author: Margaret Conduit
+Date: Edited 3 months ago
+Rating: 5 stars
+Appointment prompt very nice and did not rush me.. Told me what happens next. Very enjoyable appointment.
+
+Author: Christine Wood
+Date: 3 months ago
+Rating: 5 stars
+Dr. Listen Ed to me, he was interested and asked question and explained what happens next.
+
+Author: Alice Robinson
+Date: 3 months ago
+Rating: 5 stars
+Efficient, empathetic treatment, I’m still relatively new to the practice but haven’t had any issues with getting an appointment when needed. Would recommend
+
+Author: Chris
+Date: 3 months ago
+Rating: 5 stars
+Chris1 review3 months ago
+
+Author: debo Craig
+Date: 3 months ago
+Rating: 5 stars
+I recently saw doctor Singh and had an excellent experience. He was incredibly detailed, clearly very experienced, and took the time to explain everything in a way that made me feel comfortable and informed. His friendly approach and great sense of humour put me at ease straight away. I highly recommend him!
+
+Author: Lomene Djimeli Yvette
+Date: 3 months ago
+Rating: 5 stars
+Lomene Djimeli Yvette3 months ago
+
+Author: Thomas Redshaw
+Date: Edited 3 months ago
+Rating: 5 stars
+Good friendly staff. Always help you out. Ive been very ill recently and the doctors have been great
+
+Author: Chan Alfred
+Date: 3 months ago
+Rating: 5 stars
+Lesley is a nice and patient lady always hanging with warm smiles. She is well-concern and cares of the patients when listening to their questions. She works very professional in her duties. Alfred Chan
+
+Author: Esam
+Date: 3 months ago
+Rating: 5 stars
+Esam3 months ago
+
+Author: John Cairns
+Date: 3 months ago
+Rating: 5 stars
+John Cairns4 reviews3 months ago
+
+Author: Kong Yannis
+Date: 3 months ago
+Rating: 1 star
+Told them I was having chest pain. The receptionist was just doing her job, so I’m not blaming her. But the doctor (Dr. Lava) rejected my appointment even though I had already informed them I would be about 10 …
+
+Author: Bianca Noel
+Date: 3 months ago
+Rating: 5 stars
+Excellent, friendly and efficient service
+
+Author: Peggy Lam
+Date: 3 months ago
+Rating: 5 stars
+My nurse Lesley Ann is so friendly and patient with me. She made sure to explain everything carefully and made sure I knew what was happening every step of the way! Very professional and lovely experience here!
+
+Author: andreas vitalis
+Date: 3 months ago
+Rating: 5 stars
+Dr Singh is the best GP I have had in the UK. I feel very lucky that I moved to Salford Medical Centre and became his patient. He listens carefully, is patient, empathetic, and always takes the time to understand my concerns. Dr Singh has consistently given clear, confident advice and has helped me navigate several complicated health issues with reassurance and professionalism. I truly appreciate the level of care I receive here. Highly recommended.
+
+Author: Deborah Jones
+Date: Edited 3 months ago
+Rating: 5 stars
+Very happy with my consultation today. Everything was explained to me in a very clear manner that I was able to understand
+
+Author: Craig Sargeant
+Date: 3 months ago
+Rating: 5 stars
+Craig Sargeant3 months ago
+
+Author: Peter Nuttall
+Date: 4 months ago
+Rating: 5 stars
+Excellent
+
+Author: Karen Timmons
+Date: 4 months ago
+Rating: 5 stars
+I was seen within 5 minutes of my appt time. Reception was friendly. Nurse was attentive, friendly and professional. Bloods taken quickly and efficiently.
+
+Author: karen osinibi
+Date: 4 months ago
+Rating: 5 stars
+karen osinibi3 reviews · 16 photos4 months ago
+
+Author: Kalvin mcdonnell
+Date: 4 months ago
+Rating: 5 stars
+Kalvin mcdonnell2 reviews4 months ago
+
+Author: maddie toal
+Date: 4 months ago
+Rating: 5 stars
+Brilliant place. Helping me so much through a difficult time of illness. They have been nothing but extra supportive, extra helpful and extra attentive. From the receptionists, to the nurses, to doctors, I can’t thank enough.
+
+Author: Breyni Jimenez
+Date: 4 months ago
+Rating: 5 stars
+Breyni Jimenez4 months ago
+
+Author: Isabella Johnson-Ewers
+Date: 4 months ago
+Rating: 5 stars
+All the staff are always very helpful and welcoming on the phone and in person. I had seen Dr Singh earlier this week and he was fantastic. It’s always nice when you can tell a Dr enjoys and is equally great at their job and he truly was. Listened, checked out what was needed too and made me feel comfortable in the process. Whilst also offering me alternatives and recommendations for my eczema. Very grateful. And already seen a DRAMATIC difference!
+
+Author: Amanda Jackson-Mallender
+Date: 4 months ago
+Rating: 4 stars
+Very pleasant GP who listened to my symptoms.
+
+Author: Fella Saadi
+Date: 4 months ago
+Rating: 5 stars
+Fella Saadi5 reviews4 months ago
+
+Author: Samantha Hunter
+Date: 4 months ago
+Rating: 5 stars
+Feel like this doctor actually listened to me. For once something is getting done, he was very understanding.
+
+Author: Olivia Parkes
+Date: 4 months ago
+Rating: 5 stars
+Olivia Parkes12 reviews4 months ago
+
+Author: Tom Roberts
+Date: 4 months ago
+Rating: 5 stars
+Yeah more than happy with dr stiles I appreciate everything he’s done! ☺️
+
+Author: sandra ferni
+Date: 4 months ago
+Rating: 5 stars
+sandra ferni3 reviews4 months ago
+
+Author: Ann Palmer
+Date: Edited 4 months ago
+Rating: 5 stars
+Ann Palmer1 reviewEdited 4 months ago
+
+Author: Victoria Mokobia
+Date: 4 months ago
+Rating: 5 stars
+Doctor Singh is the best Doctor I’ve met so far, he doesn’t just listen, he tries as much as possible to help even though my situation seems very complicated. He’s very empathetic and I’m really grateful to him for always being so helpful.
+
+Author: Craig Wood
+Date: 4 months ago
+Rating: 5 stars
+Knowledgeable and friendly and able to set the process going to get me sorted, very happy.
+
+Author: Carol Walker
+Date: 4 months ago
+Rating: 5 stars
+An excellent appointment. Very thorough. GP really approachable, listened to me & very friendly.
+
+Author: Chan Samson
+Date: 4 months ago
+Rating: 5 stars
+Chan Samson2 reviews · 1 photo4 months ago
+
+Author: Tijana Thaqi
+Date: 4 months ago
+Rating: 5 stars
+I want to give a big thank you to Dr. Kyle Barry for helping me out yesterday! Thanks to her, I’m walking again and my foot feels like new. She was professional, kind, and truly went above and beyond. Highly recommend!
+
+Author: Temitope Omobusola
+Date: 4 months ago
+Rating: 5 stars
+Temitope Omobusola1 review4 months ago
+
+Author: Esther Jibril
+Date: 4 months ago
+Rating: 5 stars
+Felt like I was listened to and my concerns were acknowledged
+
+Author: TJ Smyth
+Date: 4 months ago
+Rating: 5 stars
+Great dr
+
+Author: Julie Madden
+Date: 4 months ago
+Rating: 5 stars
+Julie Madden4 months ago
+
+Author: Lucy Mellor
+Date: 4 months ago
+Rating: 5 stars
+Super efficient service!! Receptionist was friendly and helpful and got me sorted with an appointment straight away for the same day, Dr Singh was absolutely brilliant, friendly patient and thorough what an amazing Dr, and nurse Lesley was …
+
+Author: Sufyan Hariff
+Date: 4 months ago
+Rating: 1 star
+Unfortunately I had a very bad experience here today, although it was the doctor rather than the practice itself. I saw Dr Lava, who appeared dismissive about the issue my 1 year old was struggling with, and then proceeded to give false …
+Practice response date: 4 months ago
+Practice response:
+Unfortunately I had a very bad experience here today, although it was the doctor rather than the practice itself. I saw Dr Lava, who appeared dismissive about the issue my 1 year old was struggling with, and then proceeded to give false … More
+
+Author: Sophie Chisholm
+Date: 4 months ago
+Rating: 5 stars
+Very thankful for seeing Dr stiles today, he was very thorough, listened to my worries and concerns, made a plan to move forward and put my mind at ease! …
+
+Author: Adaeze Ezeilo
+Date: Edited 4 months ago
+Rating: 5 stars
+My phone conversation with Dr. Salim was top notch as all My concerns were addressed and all the appropriate actions put in place. Really happy .
+
+Author: Tehana Perera
+Date: 4 months ago
+Rating: 5 stars
+Tehana Perera4 months ago
+
+Author: Laura Swindells
+Date: 5 months ago
+Rating: 5 stars
+James was great. He took the time to listen and explain through my concerns. Thank you, James!
+
+Author: Suribabu Kora
+Date: 5 months ago
+Rating: 5 stars
+I like the way of receiving, listening and answering of questions by Dr James.
+
+Author: Faiza Zahoor
+Date: 5 months ago
+Rating: 5 stars
+Excellent staff and service
+
+Author: Hannah Wilkinson
+Date: 5 months ago
+Rating: 5 stars
+Hannah Wilkinson5 months ago
+
+Author: Armstrong Madrid
+Date: 5 months ago
+Rating: 5 stars
+Armstrong Madrid13 reviews5 months ago
+
+Author: Amanda
+Date: 5 months ago
+Rating: 5 stars
+Lovely GP
+
+Author: Sue Pollard
+Date: Edited 5 months ago
+Rating: 5 stars
+Dr. Singh is a very caring and compassionate doctor and never in a rush to get you out. He had time to listen and gave various suggestions to my problems
+
+Author: Mohammad T
+Date: 5 months ago
+Rating: 5 stars
+One of the best dctrs is dr Singh
+
+Author: Raja Ali
+Date: 5 months ago
+Rating: 5 stars
+Very nice
+
+Author: Robyn Mc
+Date: 5 months ago
+Rating: 5 stars
+Robyn McLocal Guide · 23 reviews · 6 photos5 months ago
+
+Author: Sereice
+Date: 5 months ago
+Rating: 5 stars
+I was am happy with my next day appointment. Nice care.
+
+Author: Abaigeal Cuffwright
+Date: 5 months ago
+Rating: 5 stars
+Amazing service as always! Lesley always goes above and beyond with my treatment! Thank you
+
+Author: Kwasi Danso
+Date: 5 months ago
+Rating: 5 stars
+Kwasi Danso2 reviews · 20 photos5 months ago
+
+Author: Bilkis Owokunle
+Date: 5 months ago
+Rating: 5 stars
+Got same day appointment for my daughter
+
+Author: Aiden Aghili
+Date: 5 months ago
+Rating: 5 stars
+Aiden Aghili5 months ago
+
+Author: Adnan Chughtai
+Date: 5 months ago
+Rating: 5 stars
+Adnan Chughtai3 reviews5 months ago
+
+Author: Regina
+Date: 5 months ago
+Rating: 5 stars
+I recently joined this GP surgery and had my first appointment today. Dr. Stiles was exceptionally professional and compassionate. He listened with great care and made me feel truly heard and supported. I left the appointment feeling very reassured and grateful for the high level of empathy and attention I received.
+
+Author: Damilola Falonipe
+Date: 5 months ago
+Rating: 5 stars
+I was attended to promptly and the staff were awesome
+
+Author: Kay Shaf
+Date: 5 months ago
+Rating: 5 stars
+Kay Shaf1 review5 months ago
+
+Author: Naomi Holleywood
+Date: 6 months ago
+Rating: 5 stars
+Naomi Holleywood6 months ago
+
+Author: Joseph Leung
+Date: Edited 6 months ago
+Rating: 5 stars
+High efficiency!
+
+Author: Naganna Naik
+Date: 6 months ago
+Rating: 5 stars
+Naganna Naik6 months ago
+
+Author: Sakina Jodiyawalla
+Date: 6 months ago
+Rating: 5 stars
+Sakina Jodiyawalla9 reviews · 7 photos6 months ago
+
+Author: fiona Kaye
+Date: 6 months ago
+Rating: 5 stars
+Very accommodating on my request of taking blood from back of hand instead of usual inside elbow, was so appreciated.
+
+Author: Paul Snell
+Date: 6 months ago
+Rating: 2 stars
+Its a shame they just don't listen. I am not able to use a mobile phone at work yet the surgery just say 'We will call you between 0830 and 1130' PLEASE LISTEN!!!!!! So now my mental health and anxiety is through the roof so much I am …
+Practice response date: 6 months ago
+Practice response:
+Its a shame they just don't listen. I am not able to use a mobile phone at work yet the surgery just say 'We will call you between 0830 and 1130' PLEASE LISTEN!!!!!! So now my mental health and anxiety is through the roof so much I am … More
+
+Author: Shanika Russell
+Date: 6 months ago
+Rating: 5 stars
+I had a blood test today with Lesley, she was amazing kind and attentive. One of the best experiences I’ve had at the surgery!
+
+Author: John
+Date: 7 months ago
+Rating: 5 stars
+John7 months ago
+
+Author: Candice Afriyie
+Date: 7 months ago
+Rating: 5 stars
+Lesley is so lovely! Very helpful and amazing at what she does! 🥰 …
+
+Author: Roojistan R
+Date: 7 months ago
+Rating: 5 stars
+Brilliant service, empathetic doctors had a consultation with Dr salim he was lovely
+
+Author: S Royle
+Date: 7 months ago
+Rating: 5 stars
+S Royle2 reviews7 months ago
+
+Author: Dodi Seed
+Date: 7 months ago
+Rating: 5 stars
+Dodi Seed7 reviews7 months ago
+
+Author: Mary Omon
+Date: Edited 7 months ago
+Rating: 5 stars
+He was so patient and explained everything very clearly. Thank you so much
+
+Author: Jake Hulme
+Date: 7 months ago
+Rating: 5 stars
+Overall great experience here. Really good staff, friendly, quick & helpful
+
+Author: Srimathi Vijay
+Date: 7 months ago
+Rating: 5 stars
+Srimathi Vijay4 reviews7 months ago
+
+Author: Manuel Giraldo
+Date: 7 months ago
+Rating: 5 stars
+Phone call was quick and productive.
+
+Author: Gail Sinnott
+Date: 7 months ago
+Rating: 5 stars
+Gail Sinnott7 months ago
+
+Author: samina miyanji
+Date: 7 months ago
+Rating: 5 stars
+Always get great service with this practice. From the ladies in reception to the nurses and doctors. So lucky to have found a lovely doctors surgery in our area. Always get an appointment easily and get taken care of with all my health concerns recently. Would 100% recommend them to others in the area.
+
+Author: Reeve Edwards
+Date: 7 months ago
+Rating: 5 stars
+Only just joined this practice but the doctor has been very good, effective and empathetic listening and clear.
+
+Author: Abbi Richardson
+Date: 8 months ago
+Rating: 5 stars
+Lovely lady, caring and welcoming. Thank you
+
+Author: Reeja Jacob
+Date: 8 months ago
+Rating: 5 stars
+Reeja JacobLocal Guide · 24 reviews · 18 photos8 months ago
+
+Author: Paul Frost
+Date: 8 months ago
+Rating: 5 stars
+Paul Frost6 reviews8 months ago
+
+Author: J D
+Date: Edited 8 months ago
+Rating: 5 stars
+Booked in for blood test at 2pm turned up 10 minutes early, receptionist was very pleasant, Jade came to get me at 2pm exactly and dealt with me extremely well didn't even feel the needle and I have deep veins. very happy from start to finnish
+
+Author: Amy Switzer
+Date: 8 months ago
+Rating: 5 stars
+Amy Switzer2 reviews8 months ago
+
+Author: Vanessa Vieira
+Date: 8 months ago
+Rating: 5 stars
+Vanessa Vieira7 reviews8 months ago
+
+Author: Kingsley Chukwu
+Date: 8 months ago
+Rating: 5 stars
+Kingsley Chukwu8 months ago
+
+Author: Matthew Wake
+Date: 8 months ago
+Rating: 5 stars
+Matthew Wake8 months ago
+
+Author: Mark Morgan
+Date: 9 months ago
+Rating: 5 stars
+Had a diabetes review with lesley, she was relaxed and professional.
+
+Author: Marina Sitohang
+Date: Edited 9 months ago
+Rating: 5 stars
+Nurse Lesley in Salford Medical was amazing. She found my blood vein right away, no stress at all during blood collection . She is very skillful and attentive. Did all the measurements needed to be done promptly and answered all my questions happily. Very satisfied and happy with her care .
+
+Author: Nasir Omodolapo
+Date: Edited 9 months ago
+Rating: 4 stars
+Nasir Omodolapo1 reviewEdited 9 months ago
+
+Author: Zoe Leung
+Date: 9 months ago
+Rating: 2 stars
+One star for the treatment and the doctor- they are doing their job. I have ulcer that not being cured for 4 months and cold sores that getting more severe after the first prescribed treatment. The receptionist told me last week the only available appointment they can give me is 2 weeks later- which means, I have to continuously suffering for 2 more weeks. They said if I want anything earlier, I can call at 8am. Okay, so I called this morning. Waited for 20 minutes to get answered, and they answer that I got is 'You are not anything urgent, so I can only give you an appointment on 19th June.' Then why you said last week I can call at 8am for a same day appointment? If you know the illness that I am suffering now is not anything that will be given a same day appointment, you should not say that last week. This is fooling me. I then became very mentally broken, and I cried and begged the receptionist for an appointment. She then kept saying 'you should go to the pharmacist.' Oh dear, I have done so, and it is the pharmacist told me to go to the GP! Ha, yes. If you are too young, you will have to beg for an appointment (and you don't necessarily get it.) I am not trying to be an hater but I just want to share my experience with the practice. I tried Pendleton Medical Centre but they are just the same. -------------------------------------------------------------------- Amended the review for the service I received after leaving this review. I finally got a same day phone call appointment and got prescribed the medicine. The service provided by the doctor and nurse is actually quite good if you manage to get the appointment. I particularly appreciate the upload photos function plus phone call appointment as it saved a lot of time. Strongly recommend for those who have access to good phone camera and can manage advance technology. The doctor had a 20 minutes talk with me after I left the 1 star review. I was told I should appreciate I got 2 appointments and 1 blood test in 2 weeks time as it is very luxury. Why don't you said this is something that can be treated in a week time but treatment was delayed and my symptoms get worsen because of not being able to get an appointment in time? I was also being recommended to consider going private. Yes, I should. So why should I have my NI contribution every month from my salary? And why should I paid for my immigration health surcharge (approx. £3,000+ 4 years ago and £5,175 now for 5 years).
+Practice response date: 9 months ago
+Practice response:
+Thankyou for your review. Your feedback matters to us. We are sorry to hear of your experience and we will look for any ways we can improve our service to you. We can see we first saw you about your long term problem on the 3rd of June and you had a further appointment on the 13th June (with a blood test in between) and offers of 2 appointments the following week. We are sorry we have not been able to meet your expectations and we will try harder. Thankyou for remaining with the practice despite your difficulties so we may help improve our services to you.
+
+Author: Binu Thaliyan
+Date: 9 months ago
+Rating: 5 stars
+Binu Thaliyan9 months ago
+
+Author: Luminita Carmen Neamu
+Date: 9 months ago
+Rating: 5 stars
+A remarkably attentive, discreet, and dedicated lady who brings real value through her work. People like her never go unnoticed — their contribution raises the standard of the whole team. It’s a true pleasure to have someone like her on board. Her professionalism and grace deserve the highest appreciation.
+
+Author: Anthony Grundy
+Date: 9 months ago
+Rating: 5 stars
+Had blood test and blood pressure and general medical very pleasant lady very pleased with her
+
+Author: Taz Aldis
+Date: 9 months ago
+Rating: 5 stars
+Dr Othick extremely caring, listened to all my concerns and helped me to reach a solution swifty
+
+Author: Helia Zare
+Date: 9 months ago
+Rating: 5 stars
+Helia Zare1 review9 months ago
+
+Author: Asher Khan
+Date: 9 months ago
+Rating: 5 stars
+Dr Stiles is an asset to the surgery. He accommodated me despite the fact that I was late, was extremely courteous and efficient addressing multiple issues despite all of the above. …
+
+Author: Tóth Linett
+Date: 9 months ago
+Rating: 1 star
+Today I called the reception to book an appointment. After waiting on the line for 30 minutes, someone finally answered. Unfortunately, the woman who took the call was extremely dismissive and …
+Practice response date: 9 months ago
+Practice response:
+Today I called the reception to book an appointment. After waiting on the line for 30 minutes, someone finally answered. Unfortunately, the woman who took the call was extremely dismissive and … More
+
+Author: Josh Cornford
+Date: 9 months ago
+Rating: 5 stars
+Leslie was super lovely and helped make me feel really relaxed, even though i was terrified of having my bloods taken. Thank you, Leslie! :)
+
+Author: Oluwatosin Obademi
+Date: Edited 10 months ago
+Rating: 5 stars
+Very friendly and was willing to help
+
+Author: Connie Tiene
+Date: 10 months ago
+Rating: 5 stars
+Connie Tiene3 reviews10 months ago
+
+Author: Niza Chilufya
+Date: 10 months ago
+Rating: 5 stars
+Niza Chilufya3 reviews10 months ago
+
+Author: Sylvia Kofi
+Date: 10 months ago
+Rating: 5 stars
+Sylvia Kofi11 photos10 months ago
+
+Author: thilini herath
+Date: 10 months ago
+Rating: 5 stars
+thilini herath10 months ago
+
+Author: Michelle Mulready
+Date: 10 months ago
+Rating: 5 stars
+Michelle Mulready1 review10 months ago
+
+Author: Hamilton Domingos
+Date: 10 months ago
+Rating: 5 stars
+Hamilton Domingos1 review10 months ago
+
+Author: Moe
+Date: 10 months ago
+Rating: 5 stars
+Moe10 months ago
+
+Author: Emma Mochan
+Date: 10 months ago
+Rating: 5 stars
+Wonderful service courtesy of Dr Salim. Grateful for a thoughtful and clear explanation via telephone appointment.
+
+Author: Jade Thomas
+Date: 10 months ago
+Rating: 5 stars
+Jade Thomas2 reviews · 1 photo10 months ago
+
+Author: Gina Scanlon
+Date: 10 months ago
+Rating: 5 stars
+Gina Scanlon10 months ago
+
+Author: Louise Cassell
+Date: 10 months ago
+Rating: 5 stars
+The lady today went above and beyond for me, she solved problems I've had and put to the side, would like to thank her so much
+
+Author: Harshavardhini Ganesan
+Date: 10 months ago
+Rating: 5 stars
+Harshavardhini Ganesan2 reviews10 months ago
+
+Author: nastaran ariana
+Date: 10 months ago
+Rating: 5 stars
+nastaran ariana7 reviews10 months ago
+
+Author: Bam Elsh
+Date: 10 months ago
+Rating: 5 stars
+Had a blood test today and Lesley met me at the reception once I arrived. She was very easy going and warmly welcoming. Had a thorough consultation collecting medical and family history. She was very supportive and gave me a few tips of advice which I plan to follow.
+
+Author: Jane jones
+Date: 10 months ago
+Rating: 5 stars
+Aww she was lovely
+
+Author: Darren Ogden
+Date: 10 months ago
+Rating: 5 stars
+Darren Ogden8 reviews10 months ago
+
+Author: Mee Overhere
+Date: 11 months ago
+Rating: 5 stars
+I just noticed this is the highest rated Doctors surgury on Google maps.. and I now know why. I'm so happy to have found this surgery and switched over to them several months back. The staff and Doctors here are so hard working and I'm not …
+
+Author: Olasunkanmi Adegbuyi
+Date: 11 months ago
+Rating: 5 stars
+Th service was timely and the doctor attended to me satisfactorily.
+
+Author: Sarah
+Date: 11 months ago
+Rating: 5 stars
+Sarah11 months ago
+
+Author: Jawad Muhammad
+Date: 11 months ago
+Rating: 5 stars
+Jawad Muhammad11 months ago
+
+Author: OMOLARA ABOSEDE OGUNMUYIWA-UBAJEKWE
+Date: 11 months ago
+Rating: 5 stars
+Satisfied
+
+Author: Jessica
+Date: 11 months ago
+Rating: 5 stars
+Dr. Othick was very friendly and professional!
+
+Author: Arshin Kz
+Date: 11 months ago
+Rating: 5 stars
+Arshin Kz11 reviews11 months ago
+
+Author: phoebe foster
+Date: 11 months ago
+Rating: 5 stars
+phoebe foster1 review · 1 photo11 months ago
+
+Author: Gautham Suresh
+Date: 11 months ago
+Rating: 5 stars
+Wesley was great. Everybody working in this site is really nice and helps a lot
+
+Author: Will Hampson
+Date: 11 months ago
+Rating: 5 stars
+Will Hampson2 reviews11 months ago
+
+Author: Perpetual Edosa
+Date: 11 months ago
+Rating: 5 stars
+Perpetual Edosa2 reviews11 months ago
+
+Author: Stephen Fielden
+Date: 11 months ago
+Rating: 5 stars
+Very friendly
+
+Author: Fare Oluyemi
+Date: 11 months ago
+Rating: 4 stars
+Fare Oluyemi11 months ago
+
+Author: Francisca Ossai
+Date: 11 months ago
+Rating: 5 stars
+I'm always happy to speak with Dr. Salim.. He's detailed and patient. I can feel the compassion when he talks and it's nothing close to patronising...Well done!!
+
+Author: mike heavey
+Date: 11 months ago
+Rating: 5 stars
+Superb service, blood taken at first attempt which is rare to happen with me due to difficult to locate veins
+
+Author: Kayleigh G
+Date: 11 months ago
+Rating: 5 stars
+Lesley was brilliant. I told her I tend to pass out when having a blood test and she expertly kept me chatting, made it quick, and then urged me not to rush at all in getting off the bed even though she's a busy lady. Fantastic nurse, deserves a gold star.
+
+Author: Meena Thambabathula
+Date: 11 months ago
+Rating: 5 stars
+I got immediate response from Gp. Thank you
+
+Author: Adam Croucher
+Date: 11 months ago
+Rating: 5 stars
+Kayla, Lesley and receptions staff are amazing. Fast appointments and personable service!!
+
+Author: Catherine Barnes
+Date: 11 months ago
+Rating: 5 stars
+Catherine Barnes1 review11 months ago
+
+Author: Samara Lourenço
+Date: a year ago
+Rating: 5 stars
+Samara Lourençoa year ago
+
+Author: Kristofer Peterovich Ellis-Tatti
+Date: a year ago
+Rating: 5 stars
+Kristofer Peterovich Ellis-Tatti3 reviewsa year ago
+
+Author: Ogunmola Kehinde
+Date: a year ago
+Rating: 5 stars
+The service was awesome 👍 …
+
+Author: R Yates
+Date: a year ago
+Rating: 5 stars
+Very helpful and pleasant service as always. Thank you
+
+Author: brian Emehel
+Date: a year ago
+Rating: 5 stars
+brian Emehela year ago
+
+Author: Chris Lowe
+Date: a year ago
+Rating: 5 stars
+Staff really friendly and helpful as always. Really easy to get an appointment and seen to!
+
+Author: Evan Mansfield
+Date: a year ago
+Rating: 5 stars
+Always a pleasant experience at this surgery. The receptionist team are great, as are the nurses and doctors. The wait times are always short - which is a blessing considering how populated the area is! I had a recent wellbeing catchup, as part of ongoing treatment, with Meg and she was brilliant. Very professional and it was sorted in a matter of minutes! Highly recommend this practice.
+
+Author: Ms V
+Date: a year ago
+Rating: 4 stars
+Ms V2 reviewsa year ago
+
+Author: abbie killen
+Date: a year ago
+Rating: 5 stars
+abbie killen2 reviewsa year ago
+
+Author: Carol Coles
+Date: a year ago
+Rating: 5 stars
+I went for my yearly bloods today. No waiting, lovely nurse , very friendly, felt really at ease. No problems at all.
+
+Author: Pappa Paulies
+Date: a year ago
+Rating: 5 stars
+Excellent
+
+Author: Zenny vee Samputon
+Date: a year ago
+Rating: 5 stars
+I’m happy to about my consultant
+
+Author: Mabel Cozens
+Date: a year ago
+Rating: 5 stars
+Megan was wonderful, she wanted to really get to know what was going on and easily answered any questions I had!
+
+Author: Daniel Jump
+Date: a year ago
+Rating: 5 stars
+Megan was fantastic this morning with my telephone appointment very friendly and easy to talk to. Very efficient.
+
+Author: Gillian saggers
+Date: a year ago
+Rating: 5 stars
+Gillian saggersa year ago
+
+Author: Veronika Valaskova
+Date: a year ago
+Rating: 5 stars
+I saw Dr. Stiles today and would highly recommend him. He was kind, polite and with very logical approach.
+
+Author: Elronique Simmons
+Date: a year ago
+Rating: 5 stars
+My telephone conversation with Dr Salim was great, he was extremely helpful and explains everything so well in detail!
+
+Author: Amir Fouda
+Date: a year ago
+Rating: 5 stars
+She was very nice to me, excellent service
+
+Author: Chuiks Promise Oyibo
+Date: a year ago
+Rating: 5 stars
+Chuiks Promise Oyiboa year ago
+
+Author: Alicja Rypinska
+Date: a year ago
+Rating: 5 stars
+Lovely&helpful Salforf Medical Centre
+
+Author: Pendrose Homes Salford
+Date: a year ago
+Rating: 5 stars
+Lesley was my nurse on the day and she is very warming and a caring individual as she made me feel at ease. The service and care was very professional. Thank you 🙂 …
+
+Author: Olamide Olaleye
+Date: a year ago
+Rating: 4 stars
+Olamide Olaleye11 reviews · 8 photosa year ago
+
+Author: Emily Raper
+Date: a year ago
+Rating: 5 stars
+Emily Raper1 reviewa year ago
+
+Author: Locky bennett
+Date: a year ago
+Rating: 5 stars
+Extremely good doctor, need more like this Doctor Othick
+
+Author: Georgia Hampson
+Date: a year ago
+Rating: 5 stars
+Doctor was very helpful and caring and asked to see me for a follow up to make sure the problem had been resolved.
+
+Author: Nadja Lize
+Date: a year ago
+Rating: 5 stars
+Nadja Lize3 reviewsa year ago
+
+Author: Jason Jones
+Date: a year ago
+Rating: 4 stars
+Jason Jones1 reviewa year ago
+
+Author: Nena Dark
+Date: a year ago
+Rating: 5 stars
+Caring and professional. Very satisfied!
+
+Author: David Dipo
+Date: a year ago
+Rating: 5 stars
+My experience with this GP practice has always been first-class in terms of customer service. The duty of care that Jade demonstrates when handling my tests gives me trust and confidence in the practice's ability to manage my health. There …
+
+Author: man sheung Lau
+Date: a year ago
+Rating: 5 stars
+very efficient, very convenience, all staffs are very friendly.
+
+Author: Johnathon Bradley
+Date: a year ago
+Rating: 5 stars
+Great practice. Very quick in dealing with issues. + A special thank you to Jade who took my blood painlessly!
+
+Author: Arthur Palmer
+Date: Edited a year ago
+Rating: 5 stars
+Arthur PalmerEdited a year ago
+
+Author: Celestina Akaba
+Date: a year ago
+Rating: 5 stars
+very nice stuff
+
+Author: Royce Sheffield (PsychoChef)
+Date: a year ago
+Rating: 5 stars
+Friendly staffs. Comforting experience.
+
+Author: maxine lomas
+Date: Edited a year ago
+Rating: 5 stars
+Dr Jake was very courteous and friendly, he listened to my concerns and gave good advice
+
+Author: Annette
+Date: a year ago
+Rating: 1 star
+Refused to book blood test for me horrible really :/
+
+Author: jordeie Lawson
+Date: a year ago
+Rating: 5 stars
+jordeie Lawson2 reviewsa year ago
+
+Author: Tania Guchu
+Date: a year ago
+Rating: 5 stars
+Tania Guchu2 reviewsa year ago
+
+Author: Kai
+Date: a year ago
+Rating: 5 stars
+It was my first time visiting for an appointment. Dr. Sarah and Lesley were excellent. …
+
+Author: Beatrix Hajdu
+Date: a year ago
+Rating: 5 stars
+Clean practice, friendly staff. I went for a blood test and the nurse was amazing. I havent noticed when the sample was taken. Best experience ever -regarding blood test.
+
+Author: Wesam Ali
+Date: a year ago
+Rating: 5 stars
+Wesam Ali1 reviewa year ago
+
+Author: michael aspden
+Date: a year ago
+Rating: 5 stars
+All went well
+
+Author: Callam Shennan
+Date: a year ago
+Rating: 5 stars
+Jade was great at taking my blood, usually pass out me but barely felt a thing, thanks!
+
+Author: abc def
+Date: a year ago
+Rating: 5 stars
+The staff are very friendly and helpful in answering my questions. The service is also very prompt and efficient.
+
+Author: Jeffery Higgins
+Date: a year ago
+Rating: 5 stars
+A***** customer service and quality of care and attention to detail is the best I’ve seen these are some amazing group of people who are there for your health care
+
+Author: Andrew Byker
+Date: a year ago
+Rating: 5 stars
+Andrew Byker1 reviewa year ago
+
+Author: Husseladeene Raphael
+Date: a year ago
+Rating: 5 stars
+I love the service at this place. They are very quick, and the staff are friendly and helpful.
+
+Author: Bukky Ojo
+Date: a year ago
+Rating: 5 stars
+Bukky Ojo2 reviews · 1 photoa year ago
+
+Author: Walid Dafallah
+Date: a year ago
+Rating: 5 stars
+My visit today was excellent. Very professional reeception staff and nurse. Definately worths 5 stars!
+
+Author: Molly Walsh
+Date: a year ago
+Rating: 5 stars
+Jade did my blood test today and made me feel super comfortable and welcome , I would definitely recommend!
+
+Author: Adam O'Connor
+Date: a year ago
+Rating: 5 stars
+Seen straight away for bloods. Most efficient, painless and quickest blood test I've ever had.
+
+Author: Ali Javaid
+Date: a year ago
+Rating: 5 stars
+Ali Javaid3 reviewsa year ago
+
+Author: MUSICSHOCKWORLD Ale Dema
+Date: Edited a year ago
+Rating: 5 stars
+MUSICSHOCKWORLD Ale DemaEdited a year ago
+
+Author: Tom Bradshaw
+Date: a year ago
+Rating: 5 stars
+Tom Bradshaw4 reviewsa year ago
+
+Author: Antonio Letizia
+Date: Edited a year ago
+Rating: 5 stars
+Great explanation from Dr Salim, very caring and detailed
+
+Author: Luís Augusto
+Date: a year ago
+Rating: 5 stars
+Luís Augustoa year ago
+
+Author: Ellie Robinson
+Date: a year ago
+Rating: 5 stars
+Very professional and efficient staff are friendly and very helpful
+
+Author: Carol Rogers
+Date: a year ago
+Rating: 5 stars
+I was very happy with my telephone appointment today. The Doctor was very informative and reassured me with my concerns.
+
+Author: Cleo Demetriou
+Date: a year ago
+Rating: 5 stars
+Cannot recommend this practice enough. I am not good with blood tests but Jade and Lesley were so so lovely to me and made it a really comfortable experience. They were both so reassuring and patient with me and I felt very at ease with both of them. Thank you so much !
+
+Author: Antonio Cabello
+Date: a year ago
+Rating: 5 stars
+Antonio Cabello2 reviewsa year ago
+
+Author: Sam Munday
+Date: a year ago
+Rating: 5 stars
+Always quick and attentive service
+
+Author: Chantelle Kimpton
+Date: a year ago
+Rating: 5 stars
+Dr Salim has always been friendly and very helpful and today made me feel at ease with the checks I need! Thanks
+
+Author: Gavin Fawcett (Build 76)
+Date: a year ago
+Rating: 5 stars
+Dr Joshi was attentive, courteous and very professional. All of my questions were answered and I was made to feel welcome and very at ease.
+
+Author: Donna Stewart
+Date: a year ago
+Rating: 5 stars
+i went to the nurse today to have my b12 and whilst i was there i had my bloods taken and blood pressure. all went great. the nurse was fantastic and got my bloods first time which is very very rare for me.
+
+Author: Laly
+Date: a year ago
+Rating: 5 stars
+Laly2 reviews · 8 photosa year ago
+
+Author: Sheema Hosseini
+Date: a year ago
+Rating: 5 stars
+Sheema Hosseinia year ago
+
+Author: adeola aderele
+Date: a year ago
+Rating: 5 stars
+adeola aderele2 reviewsa year ago
+
+Author: Rahaul Karavadra
+Date: a year ago
+Rating: 5 stars
+Dr Salim was amazing, he was very good at listening and very understanding. Gave me all the correct knowledge and was very accommodating
+
+Author: Samia Mahmoud
+Date: a year ago
+Rating: 5 stars
+Appointment was quickly made Staff were very helpful All went very smooth and I left the practice happy Thanks
+
+Author: Nija Anna Jacob
+Date: a year ago
+Rating: 5 stars
+Nija Anna Jacob5 reviewsa year ago
+
+Author: N
+Date: Edited a year ago
+Rating: 5 stars
+N9 reviewsEdited a year ago
+
+Author: Christian Ubajekwe
+Date: a year ago
+Rating: 5 stars
+The Doctor Lesley Ann I met today was excellent. I am very very happy to meet her and would like to meet her anytime I have medical appointments again. Every discussion I had with her was superb. …
+
+Author: Maillen B
+Date: Edited a year ago
+Rating: 5 stars
+Excellent welcoming GP and receptionists. They are very patient and caring.
+Practice response date: 3 years ago
+Practice response:
+Thankyou so much for your review it means a lot to us
+
+Author: Georgia Breen
+Date: a year ago
+Rating: 5 stars
+Georgia Breen2 reviewsa year ago
+
+Author: Alan
+Date: a year ago
+Rating: 5 stars
+Well advised,and clearly told what to do.
+
+Author: Paulo McClean
+Date: a year ago
+Rating: 5 stars
+Nurse Leslie was very professional and conducted the consultation professionally.
+
+Author: jasmine langham
+Date: a year ago
+Rating: 5 stars
+went for my blood test today have a phobia of needles but lesley g and lesley f helped me massively to get my bloods done!! such amazing women 💕💕💕 can’t thank you enough!!! both of them deserve the world ⭐️⭐️⭐️⭐️⭐️ …
+
+Author: Toni Brooks
+Date: a year ago
+Rating: 5 stars
+Lesley G was lovely, very helpful and friendly.
+
+Author: Osomade Theophilus
+Date: a year ago
+Rating: 5 stars
+Osomade Theophilusa year ago
+
+Author: pradeep kommu
+Date: a year ago
+Rating: 5 stars
+Very warm, welcoming and friendly!
+
+Author: sara mcgranaghan
+Date: a year ago
+Rating: 5 stars
+I’d just joined this doctors and got telephone appointment same day & was in for my bloods the day after that. Great service and lovely staff thank you!
+
+Author: Divine
+Date: a year ago
+Rating: 5 stars
+Divine1 reviewa year ago
+
+Author: David Yates
+Date: a year ago
+Rating: 4 stars
+David Yates1 reviewa year ago
+
+Author: Adeyanju Pinheiro-Aina
+Date: a year ago
+Rating: 5 stars
+Adeyanju Pinheiro-Aina3 reviewsa year ago
+
+Author: kalonji nicolas
+Date: a year ago
+Rating: 5 stars
+kalonji nicolas3 reviewsa year ago
+
+Author: Patrick Chow
+Date: a year ago
+Rating: 5 stars
+Patrick Chow1 reviewa year ago
+
+Author: Devika T Biju
+Date: a year ago
+Rating: 5 stars
+Devika T Biju1 reviewa year ago
+
+Author: sonia amama
+Date: a year ago
+Rating: 5 stars
+The lady in the lab was very polite and professional
+
+Author: Louise Openshaw
+Date: a year ago
+Rating: 5 stars
+Very kind and understanding receptionist and Doctor, I got a telephone appointment for the next day and that means everything, thank you Salford Medical Centre
+
+Author: maral ghasemi
+Date: a year ago
+Rating: 4 stars
+maral ghasemi1 reviewa year ago
+
+Author: Sandy’s Creations
+Date: a year ago
+Rating: 5 stars
+Sandy’s Creations1 reviewa year ago
+
+Author: Chris Lees
+Date: a year ago
+Rating: 5 stars
+Chris Lees3 reviewsa year ago
+
+Author: Marion Tenpenny
+Date: Edited a year ago
+Rating: 4 stars
+Cant really complain about anything !.they fit me in .on short notice. Thank you .. can never get though on the phone !! Took cardio team 13 mins to get an answer To ask for this appointment
+
+Author: Carla
+Date: a year ago
+Rating: 4 stars
+CarlaLocal Guide · 14 reviews · 1 photoa year ago
+
+Author: Adrian Grace
+Date: a year ago
+Rating: 5 stars
+Very good as always nice staff nothing to much trouble saw Lesley today nice lady and down to earth many thanks adrian
+
+Author: Michael Fraser
+Date: a year ago
+Rating: 5 stars
+Michael Fraser1 reviewa year ago
+
+Author: Stephnie Alikor
+Date: a year ago
+Rating: 5 stars
+Always love my experience, Dr Salim is always very detailed and helpful. Listens and answers when I have questions. Thank you so much.
+
+Author: jichuan yu
+Date: a year ago
+Rating: 5 stars
+Stay with appointment time, nice staff for sure.
+
+Author: Asma Althaher
+Date: a year ago
+Rating: 5 stars
+Asma Althaher2 reviewsa year ago
+
+Author: Matthew Kent-Lloyd
+Date: a year ago
+Rating: 5 stars
+Very helpful, squeezed me in for bloods to save me returning at a later date
+
+Author: Kieran Edwards
+Date: a year ago
+Rating: 5 stars
+Very efficient, very friendly and helpful member of staff
+
+Author: Ania Mhana
+Date: a year ago
+Rating: 5 stars
+Absolutely perfect practice. Everyone is so helpful and kind. Never have any problems with appointments. Really happy that I have chosen them for a GP practice.
+
+Author: Alex Gibbon
+Date: a year ago
+Rating: 5 stars
+Alex Gibbon5 reviewsa year ago
+
+Author: Claudia Lita
+Date: a year ago
+Rating: 5 stars
+Lovely and helpful team,always happy to help
+
+Author: Kamal Kiani
+Date: Edited a year ago
+Rating: 5 stars
+Kamal Kiani2 reviewsEdited a year ago
+
+Author: Liz T
+Date: a year ago
+Rating: 5 stars
+Today was attempt 2 of getting some bloods out of me after the lovely lady I saw on Tuesday couldn't get any (no blame though). The lady I saw today was also lovely, I was seen very quickly, was mostly painless and she got bloods first try!
+
+Author: Aadya Bahl
+Date: a year ago
+Rating: 5 stars
+Lesley was super helpful and my bloods were done in 5 minutes.
+
+Author: sahil parsotam
+Date: a year ago
+Rating: 5 stars
+sahil parsotam3 reviewsa year ago
+
+Author: Dalia Rodriguez
+Date: a year ago
+Rating: 5 stars
+Dalia RodriguezLocal Guide · 3 reviews · 1 photoa year ago
+
+Author: Mei Kuen Choy
+Date: a year ago
+Rating: 5 stars
+Mei Kuen Choya year ago
+
+Author: MABEL
+Date: a year ago
+Rating: 5 stars
+Lesley is very nice and helpful. She cares about the patient very much. Happy to meet her in my medical checkup. Thank you.
+
+Author: olaide fatoke
+Date: a year ago
+Rating: 5 stars
+The service was awesome
+
+Author: Brijesh Nayak
+Date: a year ago
+Rating: 5 stars
+Great experience. Everyone was very friendly and the appointment went smoothly.
+
+Author: Jonathan Floyd
+Date: a year ago
+Rating: 5 stars
+The warmest interaction I have ever had at a surgery
+
+Author: Angel Wong
+Date: a year ago
+Rating: 5 stars
+Angel Wong1 review · 1 photoa year ago
+
+Author: Madeline Cray
+Date: a year ago
+Rating: 5 stars
+Madeline Cray10 reviews · 3 photosa year ago
+
+Author: João Correia
+Date: a year ago
+Rating: 4 stars
+João Correia2 reviewsa year ago
+
+Author: kristina marijic
+Date: a year ago
+Rating: 5 stars
+kristina marijic6 reviews · 2 photosa year ago
+
+Author: Dewan Murshed Ahmed
+Date: a year ago
+Rating: 5 stars
+Dewan Murshed Ahmed3 photosa year ago
+
+Author: Promise Ogboi
+Date: a year ago
+Rating: 5 stars
+Promise Ogboi2 reviewsa year ago
+
+Author: Osim
+Date: a year ago
+Rating: 5 stars
+Great
+
+Author: Aaron Poole
+Date: a year ago
+Rating: 5 stars
+Been with the practice for a few months now. Best GP surgery I’ve been with. Very quick and prompt at providing appointments, and all the doctors and nurses I've spoken to so far have been very knowledgable and caring. Top class service!
+
+Author: Julie Wilson
+Date: a year ago
+Rating: 4 stars
+Nurse was very nice and helpful.
+
+Author: Linda Huntington
+Date: a year ago
+Rating: 5 stars
+Lesser g did my blood test she was fantastic no problem best nurse ever
+
+Author: Shrinidhi
+Date: a year ago
+Rating: 4 stars
+Shrinidhi5 reviewsa year ago
+
+Author: Aurelien Laurent
+Date: a year ago
+Rating: 5 stars
+Aurelien Laurent11 reviews · 1 photoa year ago
+
+Author: Pat Gallagher
+Date: a year ago
+Rating: 5 stars
+Pat Gallaghera year ago
+
+Author: Mory Cisse
+Date: a year ago
+Rating: 5 stars
+I really liked the way you care about your parents. Also appreciate your advice,and as well all the time you give your patients to express about his issues. Thanks
+
+Author: Lydia Asamoah
+Date: a year ago
+Rating: 5 stars
+Lydia Asamoah1 reviewa year ago
+
+Author: Kelsey Hewitt
+Date: a year ago
+Rating: 5 stars
+Dr. Joshi was extremely helpful with lots of advice and maintained a professional level of patience while support me with minor queries as a new patient at the practice. She set up my nearest pharmacy and sent a message with details of its address as opposed to just telling it to me via the phone. An amazing doctor! The practice itself is very supportive, I had a mix up with a text telling me one time but my appointment was in fact at another - this was only a phone consultation so it was not too inconvenient. Upon calling for advice after missing the consultation the receptionist was very helpful and guided me through their processes.
+
+Author: saif ullah
+Date: a year ago
+Rating: 5 stars
+Very professional and prompt reply
+
+Author: Amelia Trujillano
+Date: a year ago
+Rating: 5 stars
+Amelia Trujillano2 reviewsa year ago
+
+Author: Anais Thely
+Date: a year ago
+Rating: 5 stars
+Anais Thely8 reviews · 1 photoa year ago
+
+Author: Ayaa Mohamed
+Date: a year ago
+Rating: 5 stars
+Ayaa Mohameda year ago
+
+Author: Katie Bradbury
+Date: a year ago
+Rating: 5 stars
+Great service! X
+
+Author: Michelle McManus
+Date: a year ago
+Rating: 5 stars
+Lesley Greenhalgh the nurse,makes you feel at ease & talks you through what things she needs to do taking bloods etc from you.Easy to talk to,Gives you advice if needed.A warm Welcoming feeling absolutely brilliant Lesley 👏 …
+
+Author: Anonymous
+Date: a year ago
+Rating: 5 stars
+Lesley was fantastic, really friendly and reassuring. Followed up with me about potential concerns.
+
+Author: Arician Sable
+Date: a year ago
+Rating: 5 stars
+Appointment was a little late but was once in was dealt with speed, care and professionalism. Was happy to listen to my needle concerns and work with me to make it as easy as possible.
+
+Author: Susan Povah
+Date: a year ago
+Rating: 5 stars
+The nurse put me at ease, explained the past results of bloods previously taken which was high for Diebetes, and full information given why the bloods had to be redone due to level of my Diabetes, and Vitamin D requirements. Excellent service given, time taken to reassure me of any issues and concerns that I had regarding this appointment.
+
+Author: Rafal Zejmo
+Date: a year ago
+Rating: 5 stars
+Rafal ZejmoLocal Guide · 11 reviews · 6 photosa year ago
+
+Author: Emily Jaques
+Date: a year ago
+Rating: 5 stars
+Emily Jaques3 reviewsa year ago
+
+Author: Ammar Abakar
+Date: a year ago
+Rating: 5 stars
+The woman I met today was really kind and well-mannered. I appreciate the wonderful service you provided.⭐️⭐️⭐️⭐️⭐️⭐️⭐️
+
+Author: Iman Salah
+Date: a year ago
+Rating: 5 stars
+Easy to get in touch and arrange appointments when needed. All staff are friendly and approachable. Always have a good experience with blood tests with Lesley.
+
+Author: Oliver R
+Date: a year ago
+Rating: 5 stars
+Oliver R2 reviewsa year ago
+
+Author: Tessa Maidman
+Date: a year ago
+Rating: 5 stars
+Lesley was amazing !!! So kind and friendly, and really really helpful! Can’t thank you enough xxx
+
+Author: Stelios Per
+Date: a year ago
+Rating: 5 stars
+Very quick and great friendly service, felt very comfortable
+
+Author: Emily Ongus
+Date: a year ago
+Rating: 5 stars
+Emily Ongusa year ago
+
+Author: Tavis
+Date: a year ago
+Rating: 5 stars
+Great consultation for my blood test, Lesley Ann was very friendly and kind. Thank you
+
+Author: Mohamed Elarabi
+Date: a year ago
+Rating: 5 stars
+Mohamed Elarabi2 reviewsa year ago
+
+Author: Mark Copeland
+Date: a year ago
+Rating: 5 stars
+Excellent service, was seen to very quickly and everything was explained to me and what the next steps would be. 5 stars.
+
+Author: Sophie Keating
+Date: a year ago
+Rating: 5 stars
+Really easy appointment, nurse was lovely and helped me with everything I needed to find out, very short wait time also
+
+Author: Michael Reynolds
+Date: a year ago
+Rating: 5 stars
+Michael Reynoldsa year ago
+
+Author: Ruth McAuley
+Date: Edited a year ago
+Rating: 1 star
+If you want good menopause care then avoid this practice. They Managed to test for every blood test except the one I asked for and when you go in every day for 3. 5 weeks asking for said blood results no one has the brain cells to make enquiries. Jake the Physician associate is arrogant and rude the practice manager did kindly respond to my complaint about Jake however failing to take enough blood and requesting the wrong test is just incompetent The reception staff have zero initiative and didn't even apologise for the mistake. Or try to rebook the blood test they just sat there with a gormless look on their faces.it is completly untrue that results take 4 weeks. The mistake was the person who took my blood requested a thyroid test instead of the correct one. When this was eventually realised I can only assume this was requested as an additional test by which point there was insufficient blood. I am now paying for this privately because of your incompetence. Do not blame the lab when it was your mistake Dr Singh is lovely and thorough however the admin and Lesley who took my blood severely let this practice down
+Practice response date: Edited a year ago
+Practice response:
+Hi Ruth we are sorry to hear of your bad experience. Your feedback is important to us and we have looked into this and relayed your feedback. We are happy to see that despite this you have stayed at the surgery and allowed us to continue your care and glad to see your more recent encounters have been more positive
+
+Author: FATAHI FAMILY
+Date: a year ago
+Rating: 5 stars
+I appreciate and admire the time Kyla (ANP) takes in listening to my concerns and explaining the issues I have, in detail with me. She is very patient, professional and passionate about her job. it truly radiates through her attention and care to her patients.
+
+Author: Isabela Pavan
+Date: a year ago
+Rating: 5 stars
+Amazing Doctor Singh, helped me with my medications! Thank you 😭 …
+
+Author: Chloe Elizabeth
+Date: a year ago
+Rating: 5 stars
+Chloe Elizabeth4 reviews · 2 photosa year ago
+
+Author: holly pike
+Date: a year ago
+Rating: 5 stars
+Quick appointment and doctor Salim was really helpful and answered all my questions.
+
+Author: Dani Gomes
+Date: a year ago
+Rating: 1 star
+Was rushed out after literally a one minute checkup. Practitioner gave us no time to talk about our concerns or understand our history. Just literally wanted to save herself time and not have to deal with the costs of doing anything more than the bare minimum for a child.
+Practice response date: Edited a year ago
+Practice response:
+Sorry to hear of your bad experience. Your feedback is important to us. Please can you advise the name of the patient/ child so we can look into this. You can provide this via direct message Update- hi Dani we cannot find you as a registered patient at the practice. Could you confirm your details with us? We think you may have the wrong practice
+
+Author: Nikkita Grima
+Date: Edited a year ago
+Rating: 5 stars
+Easy phone call appointment, very pleased.
+
+Author: Ken Brough
+Date: a year ago
+Rating: 5 stars
+Good interaction by telephone. I was pleased to be able to understand the issues during a conversation that didn't feel hurried. I am clear on the course of action and the next steps. All good.
+
+Author: Melinda Horn
+Date: a year ago
+Rating: 3 stars
+I went to see the a Doctor today with my mom, I used to go to help to translate for her as she does not speak perfect, and she does not feel comfortable to talk to a Doctor. Today, the Doctor was ready and waited for us with an interpreter …
+Practice response date: a year ago
+Practice response:
+I went to see the a Doctor today with my mom, I used to go to help to translate for her as she does not speak perfect, and she does not feel comfortable to talk to a Doctor. Today, the Doctor was ready and waited for us with an interpreter … More
+
+Author: Rebecca Ade
+Date: a year ago
+Rating: 4 stars
+Rebecca Ade3 reviewsa year ago
+
+Author: arika khan
+Date: a year ago
+Rating: 1 star
+Terrible experience its been 2years and the Dr has not seen my husband on several occasions I contacted the gp but no luck which effected his job.
+Practice response date: Edited a year ago
+Practice response:
+Sorry to hear of your bad experience and thankyou for taking the time to review. Please can you provide your husbands details via the direct message on here and we can look into this and we will arrange the doctor to look into his case … More
+
+Author: Saeedat Raji
+Date: a year ago
+Rating: 5 stars
+Saeedat Raji1 reviewa year ago
+
+Author: Cíntia W
+Date: a year ago
+Rating: 5 stars
+Cíntia Wa year ago
+
+Author: linda edeh
+Date: a year ago
+Rating: 5 stars
+The Doctor was patient and really helped me understand the process. He was also not hesitant to recommend a retest when the results were not clear.
+
+Author: Emily Brown
+Date: a year ago
+Rating: 5 stars
+Great service. Can always get an appointment and doctors really kind.
+
+Author: seamus Burns
+Date: a year ago
+Rating: 5 stars
+seamus Burns2 reviewsa year ago
+
+Author: Pelina Layisi
+Date: Edited a year ago
+Rating: 5 stars
+Pelina LayisiEdited a year ago
+
+Author: Eman Ali
+Date: 2 years ago
+Rating: 5 stars
+I was very good today and I’m glad
+
+Author: Sabina Naciu
+Date: 2 years ago
+Rating: 5 stars
+Thank you, Dr. Salim! As always, I was very pleased with your consultation today.
+
+Author: mk sora
+Date: 2 years ago
+Rating: 5 stars
+mk sora2 years ago
+
+Author: Anabel Y.
+Date: 2 years ago
+Rating: 5 stars
+Anabel Y.8 reviews · 3 photos2 years ago
+
+Author: Emily Borthwick
+Date: 2 years ago
+Rating: 5 stars
+Emily Borthwick6 reviews2 years ago
+
+Author: Eze Henry
+Date: 2 years ago
+Rating: 4 stars
+On my request to see a practical I was quickly given attention. On the other hand, th practitioner was professional and polite why attending to me, this act reassured me and may me calm of the situation.
+
+Author: Krasimir Dimitrov
+Date: 2 years ago
+Rating: 5 stars
+Dr Salim has helped me a lot! He has been extremely supportive and understanding of my situation. Thank you for being there for us.
+
+Author: Adelina Nowak
+Date: 2 years ago
+Rating: 5 stars
+I had an exceptional consultation with Dr. Salim. His compassionate approach and thorough expertise made me feel genuinely cared for. Dr. Salim's understanding, dedication to patient well-being is truly commendable, creating a positive and comforting atmosphere throughout my appointment. I wholeheartedly recommend him for his outstanding care and professionalism. Thank you!
+
+Author: david draw
+Date: Edited 2 years ago
+Rating: 5 stars
+Fantastic Practice, Receptionist are fantastic and so too are the Dr's, APN and the Ladies who take the Bloods. Everyone is so helpful, polite and caring. They have all helped me so much. Best practice I have ever been to.
+
+Author: favaskhan faziludeen
+Date: 2 years ago
+Rating: 5 stars
+favaskhan faziludeen1 review2 years ago
+
+Author: Rusni Begum
+Date: 2 years ago
+Rating: 5 stars
+A huge thank you to the reception team and the doctor who provided me a last minute urgent emergency appointment. Your friendly and empathetic nature made the world of a difference. Now I am better looking back I just wanted to say thank you and I hope you know you are doing an amazing job. Thank you Rusni ⭐️
+
+Author: Beela Azam
+Date: 2 years ago
+Rating: 5 stars
+Dr Salim is a wonderful doctor really nice
+
+Author: somayeh samadigoloje
+Date: 2 years ago
+Rating: 5 stars
+somayeh samadigoloje2 years ago
+
+Author: Jotheshvar Balasubramanian
+Date: 2 years ago
+Rating: 5 stars
+Dr.Salim showed a lot of patience and composure in listening to my medical conditions and provided expertise advise over the phone. Despite having that in-person connect, he was still able to instill confidence and reassurance to the further phases of investigation. Very helpful!!
+
+Author: Rebecca Murray
+Date: 2 years ago
+Rating: 5 stars
+Dr salim was great, listened to my issues I was having and dealt with them accordingly! Great practice, staff are always friendly and the reception are a lovely team!
+
+Author: Jess Shennan
+Date: 2 years ago
+Rating: 5 stars
+I had a great experience with Dr Udoewa! She took great care in listening to my symptoms and has been very attentive to my needs as a patient. I have seen a lot of improvement in my condition since seeing her! 🖤 …
+
+Author: Inesa Butelevičiūtė
+Date: Edited 2 years ago
+Rating: 5 stars
+Always very helpful
+
+Author: Ghulam Ul Hassan Ali
+Date: 2 years ago
+Rating: 5 stars
+Good doctors and polite staff. Accommodated us with multiple same day urgent call & in-person appointments. Parked across the street in club’s parking.
+
+Author: Kanchan Tinaikar
+Date: 2 years ago
+Rating: 5 stars
+Kanchan Tinaikar2 years ago
+
+Author: Aura Cabello
+Date: 2 years ago
+Rating: 5 stars
+Aura Cabello1 review · 4 photos2 years ago
+
+Author: Bianca Vilciu
+Date: 2 years ago
+Rating: 5 stars
+Called as per appointment. Very professional and understanding
+
+Author: Chantelle Marshall
+Date: 2 years ago
+Rating: 5 stars
+Dr Salim was very polite and informative. His advice really helped and made me feel optimistic.
+
+Author: Graham Arnold
+Date: 2 years ago
+Rating: 1 star
+Without a doubt, THE MOST USELESS DOCTOR on the Planet!!! They can't to arsed to do their jobs or listen to patients. Most likely got his education from Ebay
+
+Author: Mirenda
+Date: 2 years ago
+Rating: 5 stars
+This was my first appointment using NHS services. I'm so glad I went here! Got me in before my appointment. Rachel was the sweetest nurse and made my concerns feel heard and soothed.
+
+Author: Mia Wang (Mia)
+Date: 2 years ago
+Rating: 5 stars
+Mia Wang (Mia)4 reviews · 4 photos2 years ago
+
+Author: Freya Bashir
+Date: 2 years ago
+Rating: 1 star
+The nastiest receptionists that have zero compassion or patience for their patients. I could physically hear the other staff in the background laughing at how nasty the woman who answered the phone was being to me. You would like to think the staff would want to help you considering the importance of their role.
+Practice response date: 2 years ago
+Practice response:
+Thankyou for your message and we appreciate you taking the time out to review the practice We have listened to the call and we could not find evidence of what you have said. Please contact us directly and we are happy for us to play the call to you to clarify
+
+Author: Ivy Wan
+Date: Edited 2 years ago
+Rating: 5 stars
+Dr Salim is so patient and nice with clear explanation and thoughtful follow up arrangement for the presenting illness. It means a lot to us!
+
+Author: Susan Bradshaw
+Date: 2 years ago
+Rating: 1 star
+Though been referred for X ray on neck & given pain killer I cannot take during the day! . After doing on line appt. Form 24/4/23 giving details of my issue & attaching a letter of my 30 yrs. Of back problems, which seem to have escalated …
+
+Author: Sefaf Hudug
+Date: 2 years ago
+Rating: 5 stars
+Sefaf Hudug2 years ago
+
+Author: Susan Bradshaw
+Date: 2 years ago
+Rating: 1 star
+Though been referred for X ray on neck & given pain killer I cannot take during the day! . After doing on line appt. Form 24/4/23 giving details of my issue & attaching a letter of my 30 yrs. Of back problems, which seem to have escalated to neck. I explained the searing pain in my collar bone and subsequent pain in upper spine & muscle weakness. I received a response saying I could have appt. On 2/5/23. After speaking with sensible and proactive receptionist named Leah & explaining. My appt. Brought to today. Though I do think it might be re. the unaddressed and un diagnosed back issues. I went to docs. & Explained, I also added that when I tilted back I felt heavy in my back and chest when tried to get up & muscle weakness and Given these symptoms can also indicate heat attacks etc. I thought due to them not doing face to face appointments or my bloods, or these m.o.t nurse sessions for yrs. I may have got a general check up heart, blood pressure etc. But did not. I have also been referred to the multiple skeletal dept. I explained that the last time I went there, I was put on circuit training even though au have not received diagnosis from anyone qualified in backs that was my treatment & had find the money to go to Chiropractor. The inflammation in my back was so bad at this alleged 'treatment', he could not get to the site of the problem to work on it. I feel bad for off loading but will not get paid at work for this week and . I am terrified of going back to physio after my shocking experience & then being discharged. People who have back pain (not ache) will probably know that you CAN get pain in one area due to something being wrong in another. X-raying my spine is not going to address the S.I joint issue probably causing the probs. The G.P says I have to go through this process again. They CAN refer me to a qualified back doctor who will know this but won't. This is a fact as I have checked if I can be referred by a g.p. P.s. Chiroprator: Kyophosis, Lordosis, si joint sticks to another bone that makes up my hip this causes inflammation & muscle spasms in back (physio would have seen this if qualified I assume) blocks the signals to sciatic nerve so refers it through hips and one leg is longer than the other. Also have Arthritis and oestrphytes in lower spine from early 30's. Physio: look at my back, no diagnosis fed back to me and treatment was to be put on circuit training course with stuck bones and inflammation then discharged. I am concerned for my physical future as standing is an issue and v painful. My loss of income etc. No empathy or concern was shown. V clinical. Do not feel like a patient. I rarely contact the g.p. despite people saying I should as it depresses me and makes me feel like all that I suffer with is trivial.
+
+Author: Ggghydh
+Date: 2 years ago
+Rating: 5 stars
+Amazing
+
+Author: Rebecca T
+Date: 2 years ago
+Rating: 1 star
+The doctors are amazing at this practice however the shocking aggressive attitude from the Reception Manager fails to amaze me. I have encountered several incidents whereby certain receptionists are unhelpful and extremely rude over the phone. I have spoken with the Reception Manager and it’s very apparent she leads a very bad example on how to speak with patients. Staff members are there to reassure patients and assist them with their medical needs instead they are extremely confrontational and hostile. I have been given wrong prescriptions on numerous of occasions or been advised my prescription is ready for collection at the Pharmacy when infact it hasn’t even been processed by the Doctor. If you dare to challenge their behaviour they act very defensive and will not take any ownership.
+
+Author: Gemma Leighton
+Date: 2 years ago
+Rating: 5 stars
+Good doctors very professional helpful caring team from doctors to the receptionists.
+
+Author: Irina-Alexandra Radu
+Date: 2 years ago
+Rating: 1 star
+Worst joke ever! No one ever picks up the phone! Position no.1 in the queue and after 33 minutes, no answer. It is appalling, not to mention face to face chats with the secretaries working in there. They make you feel so unimportant. I should have given up their services since two years ago when they have lost one blood sample and taken another one in a wrong day (after they made the calculation), I had to wait another month - sure you can check your registers. Not to mention I had a breast surgery at the end of 2022 and my doctor from Enhance has requested for three times for the GP to send them my records - they were never sent. No one bothered to answer their email or any calls.
+Practice response date: 2 years ago
+Practice response:
+Hi Irina-Alexandra We note you are no longer registered with the practice since the beginning of March. If you were still trying to get hold of us (and not your new GP) please note we have exceptionally high demand after the bank holiday. It may be easier and quicker to contact us via our website if your request is less urgent. Please note if your request is for a health problem please contact your new GP
+
+Author: Julie Mcmanus
+Date: 2 years ago
+Rating: 5 stars
+Dr. Salim was very thorough throughout the telephone appointment.
+
+Author: Jowita zaboros
+Date: 3 years ago
+Rating: 5 stars
+Jowita zaboros4 reviews · 3 photos3 years ago
+
+Author: Susan Millidge
+Date: 3 years ago
+Rating: 5 stars
+Dr Salim was very responsive to my recent episode I find all the staff here helpful and caring I’m so lucky to have these as my doctors they deserve 5 stars ⭐️
+
+Author: Imogen Lowe
+Date: 3 years ago
+Rating: 5 stars
+Imogen Lowe4 reviews · 1 photo3 years ago
+
+Author: House Facelift
+Date: 3 years ago
+Rating: 5 stars
+House FaceliftLocal Guide · 8 reviews · 3 photos3 years ago
+
+Author: Umme Kulsoom
+Date: Edited 3 years ago
+Rating: 3 stars
+It's ok , 👌 …
+
+Author: Victor Fakeye
+Date: 3 years ago
+Rating: 5 stars
+Very great service. Would highly recommend. Dr Salim got in touch with me promptly and clarified things, dealt with my concerns to my satisfaction.
+
+Author: AeeZee 1000
+Date: 3 years ago
+Rating: 5 stars
+AeeZee 10004 reviews3 years ago
+
+Author: Gabriela Szczepanska
+Date: 3 years ago
+Rating: 5 stars
+Dr Salim was kind, helpful and thorough in his explanation of the next steps for my problem. Thank you again for your assistance Dr Salim.
+
+Author: Anna Totterdill
+Date: 3 years ago
+Rating: 5 stars
+Anna TotterdillLocal Guide · 4 reviews · 173 photos3 years ago
+
+Author: eromosele odianosen odia
+Date: 3 years ago
+Rating: 5 stars
+eromosele odianosen odia1 review3 years ago
+
+Author: Mihaela Mimi
+Date: 3 years ago
+Rating: 4 stars
+Mihaela Mimi3 years ago
+
+Author: Elle-Jay Kimpton-Blake
+Date: 3 years ago
+Rating: 5 stars
+Dr Salim has been my doctor for many years now. I’ve got no faults, never had a bad experience. Every appointment I’ve had with him, I’ve always left feeling reassured with my problems resolved. He’s very patient & has a very calm presence. Would highly recommend Dr Salim
+
+Author: Afnan Alharbi
+Date: 3 years ago
+Rating: 5 stars
+Fast response
+
+Author: jennifer green
+Date: 3 years ago
+Rating: 5 stars
+jennifer green3 reviews3 years ago
+
+Author: Rupal Makkerh
+Date: 3 years ago
+Rating: 5 stars
+Staff is really helpful and understanding.
+
+Author: Gloria Giuri
+Date: 3 years ago
+Rating: 5 stars
+I had a call with Dr Salim about some concerns but he has been very reassuring!
+
+Author: Shirley Costello
+Date: 3 years ago
+Rating: 5 stars
+My consultation with paula was excellent she acted very professionally and managed to sort out my reason.for attending. Thank you Mr david costello
+
+Author: Arthur Kay
+Date: 3 years ago
+Rating: 5 stars
+Dr Salim rung, therapeutic conversation. Thank you for your continued support.
+
+Author: Dan Ramsell
+Date: 3 years ago
+Rating: 5 stars
+Online reporting of symptoms 'consult a clinician' works well. Quick appointment times given the current pressures.
+
+Author: Vivien Day
+Date: 3 years ago
+Rating: 5 stars
+Vivien DayLocal Guide · 3 reviews3 years ago
+
+Author: Chun Wing Pang
+Date: 3 years ago
+Rating: 4 stars
+Although it's only e-consultation , by Dr is nice.
+
+Author: Jnaysha Maloney
+Date: 3 years ago
+Rating: 5 stars
+Jnaysha Maloney1 review · 1 photo3 years ago
+
+Author: Sara Fernandes
+Date: 3 years ago
+Rating: 3 stars
+Sara Fernandes3 years ago
+
+Author: Eman El Haji (‫إيمان الحاجي‬‎)
+Date: 3 years ago
+Rating: 5 stars
+Eman El Haji (‫إيمان الحاجي‬‎)3 years ago
+
+Author: Steve Lawler
+Date: 3 years ago
+Rating: 5 stars
+Steve LawlerLocal Guide · 12 reviews · 5 photos3 years ago
+
+Author: Dan Ahern
+Date: 3 years ago
+Rating: 1 star
+Not a great experience. Phone calls take far too long to answer just for general enquiries, and for several enquiries I keep getting connected to the same person who doesn't seem to understand that the NHS has online services, and that their practice online services registration system doesn't work. After a few minutes of trying to clearly explain that I'm aiming to see my medical history, they said they could re-send it but they'd have to 'remake everything', when I said yes please, they sounded annoyed and hung up. I read out the description of what I needed to see verbatim from the NHS website and they still had no clue what I was on about. Disappointing, really. Not a great service.
+
+Author: Mary Ogiorumua
+Date: 3 years ago
+Rating: 5 stars
+Mary Ogiorumua3 years ago
+
+Author: Samantha Martin
+Date: 3 years ago
+Rating: 5 stars
+I spoke with Dr Salim this morning he called me in the Allocated time slot that i was given he listened to everything i had to say with patience and understanding and made a plan with me for moving forward with my care also prescribed some medication which i can collect the same day At this moment in time i am very happy with my GP and the admin/reception team and the care/support that i am getting
+
+Author: Anne-marie McCallion
+Date: 3 years ago
+Rating: 5 stars
+Anne-marie McCallion1 review3 years ago
+
+Author: denilson cohen
+Date: 3 years ago
+Rating: 5 stars
+denilson cohen2 reviews3 years ago
+
+Author: hamco hamco
+Date: 3 years ago
+Rating: 1 star
+I should give this a zero star rating. This GP is terrible. They often make mistakes with my medication dosages and never make changes despite repeated reminders, wasting a lot of my time. The same person kept answering my questions, but they didn't give the same answers, which was very confusing.
+Practice response date: 3 years ago
+Practice response:
+Thank you for your reply and sorry to hear of your issue Please direct message us here or via our website where our pharmacist can look into this for you to make sure this doesn’t happen again
+
+Author: Gawain
+Date: 3 years ago
+Rating: 1 star
+Hi SMCT, Many thanks for such a swift response to my review. I note that in the last 10 years the practise has clearly grown. Bravo, and at what cost? I would expect better service now. Sadly not the case at all. Also, I note your reason for such a long delay in answering calls. Please can I ask your explanation for cancelling my appointment with only 5 minutes notice? (I had to pay for a taxi due to my illness, arrange child care and muster the energy to attend), only to be told your systems had crashed. And this affects you finally seeing me, taking my bloods and weighing me exactly how? Given your obvious ability to grow the practice, perhaps you'd like to remind yourselves exactly how you have been able to do this, and at what cost to me, a humble tax payer? You have my contact details, perhaps actually prove that you care, instead of grandstanding on social media,.. My illness is affecting the wellbeing of 3 perfectly happy and healthy children. Unable to work due to your complete incompetency in understanding an individuals individual needs? I am not a square peg to be put into a round hole, and neither are the rest of your patients whom you have a responsibility to help... I await your response or possibly even telephone call,.. ORIGINAL POST Quite possibly the worst medical practice I have ever had to deal with. Registered with them 10 years ago. Deregistering in 10 minutes if they would answer their phone. Awful staff, and frankly Doctors leave a great deal for their minions to sort, which is always fun for somebody with GOD like syndrome...
+Practice response date: Edited a year ago
+Practice response:
+Thankyou for your review. Your feedback matters to us. We can see your subsequent appointments at the practice have been more positive and we are glad you have chosen to remain at the surgery despite this experience last year. We look forward to continuing to look after your health Best wishes
+
+Author: Steve Norman
+Date: 3 years ago
+Rating: 5 stars
+I've always had a good experience with Salford Medical Centre. They are always quick to get back to any messages. I find the staff there professional, helpful and friendly. Dr. Salim is one of the best GPs I've ever had. Highly recommend this practice. Thanks SMC!
+
+Author: Jai Moran
+Date: 3 years ago
+Rating: 1 star
+No referrals actually made, despite promises from staff. Followed up with the places I’ve supposedly been referred to, only to find out nothing has been sent by the GP. Very disappointing as I’ve now been almost a year without proper diabetes care!
+Practice response date: 3 years ago
+Practice response:
+Hi Jai thanks for your feedback and sorry to hear about your bad experience. Please can you get in contact with us via direct message here so we can look into this for you to find out what’s gone wrong
+
+Author: Mariola Markiewicz
+Date: 3 years ago
+Rating: 1 star
+I wish I could give zero. The worst medical practice I have ever experienced. I have not got help that I needed. After filling in online form with a medical details and explaining a source of pain. Instead of medical consultation with a doctor a got a text message that was not solving my issue at all. I have been referred for a different problem to a specialist and never seen my referral since June. Avoid if possible.
+Practice response date: 3 years ago
+Practice response:
+Thankyou for your review and sorry to hear of your bad experience. We can confirm we replied to your online form with the self referral details to the specialist to deal with your problem. The problem required this specialist to solve the issue. And yes we referred to a specialist in June for a separate problem. Unfortunately the waits to see the specialist are long and out of our control. If you wish to contact us directly to discuss these issues we would be more than happy.
+
+Author: N R
+Date: 3 years ago
+Rating: 1 star
+Fake rating i guess because i fell for them while Registering so far worst worst possible experience i had with them
+Practice response date: 3 years ago
+Practice response:
+So sorry to hear about your experience. Please reach out to us via our website and we can look to put this right. We can assure you none of our ratings are fake. We have many happy patients and we are confident you will be again soon
+
+Author: James Kearslake
+Date: 3 years ago
+Rating: 5 stars
+Honestly one of the best GP's I've ever used 👌 (and I've used many!) I've never had long wait times, for calls or appointments, and the receptionists always get the issue and resolve it with immediacy. I've also never experienced such efficient receptionists in a General Practice. To the contrary, I've experienced many receptionists who act like you're a chore on their phone. Finally, their online messaging platform is brilliant! I cannot recommend this team enough 👌
+Practice response date: 3 years ago
+Practice response:
+Thankyou so much for your review. This means a lot to our team
+
+Author: Nikita Maloney
+Date: 3 years ago
+Rating: 5 stars
+staff are lovely.better than friggin langworthy medical.lol the truth...lovely medical staff at salford medical thankyou
+Practice response date: 3 years ago
+Practice response:
+Thankyou so much for your kind words this means a lot to us
+
+Author: Becca Xooxox
+Date: 4 years ago
+Rating: 5 stars
+I visited the practice today for the first time after recently registering and was amazed how professional and compassionate the staff are at this practice. I would personally like to thank Kat and Nurse Kyla for going above and beyond to help me with my concerns. I felt completely reassured and less anxious after my appointment.
+
+Author: Caxton Ho
+Date: 4 years ago
+Rating: 1 star
+Updated: I did update my number with a direct call with the receptionist last time you cancelled my apointment. I did not receive any call, sms or even a voicemail from your centre today. Previous: My name is Pui Lung Ho. Caxton is my other name. It is so amazing for your speedly reply on google review. And i didn't receive any sms last time when I got canceled, either this time. I had to login myGP APP to see I have got canceled. Previous: i have been waiting for three weeks and got cancelled twice for my phone appointments. Our kids missed the immunization shots and we can't even have a chance to talk to any nurse to get this sorted.
+Practice response date: 4 years ago
+Practice response:
+Hi there sorry to see your review. However we have checked our records and we cannot see you are a registered patient at Salford Medical Centre. We think you may have the wrong practice. Hi thanks for the update with your details. We can see that the nurse tried to call you today at 12.35 with no answer. Is it possible we do not have the correct telephone number for you if you are not receiving the texts also? Please contact us on the website Salfordmedicalcentre.nhs.uk to verify your details
+
+Author: Jayjay Kumar
+Date: 4 years ago
+Rating: 5 stars
+Lovely surgery. Was referred to services I needed very quickly. All the staff are very friendly and professional.
+
+Author: Jacqueline Guerrerofef
+Date: 4 years ago
+Rating: 5 stars
+Little family specialists , with attendants and birthing assistant , huge delay for arrangements as there is just 2 specialists with a great deal of patients yet they are acceptable , medical caretakers are fabulous , cause you to feel calm and are eager to assist and address any inquiries , gathering staff are amenable however gathering needs protection for what it's worth in a little holding up region , generally speaking clean a brilliant , wheelchair access accessible
+
+Author: Claire Baddley
+Date: 4 years ago
+Rating: 5 stars
+Claire BaddleyLocal Guide · 25 reviews · 1 photo4 years ago
+
+Author: Sophie Lomas
+Date: 4 years ago
+Rating: 2 stars
+Having been at this doctors since being a baby, all I can say is that it has gone terribly downhill. A few of the reception staff have a shocking attitude and not very helpful at all, dont listen to what you're calling for and very difficult to get an appointment, despite continuously calling from 8:00am. The only person in there that I can actually give praise to is the lady who took my blood, I think her name is Lesley; professional and friendly woman, a credit to the surgery. I have now moved doctors and hope that they are a sight better than here. Disappointing...
+Practice response date: 4 years ago
+Practice response:
+Hi sorry to hear about your problems and thanks for bringing this to our attention. We can see our current waiting times for appointments across all formats is under 48 hours and you have had 7 appointments in the last 6 months. Your last appointment was 1 working day ago. Unfortunately today you turned up to the surgery having already deregistered as you have moved out of area and we were not able to proceed with your tests as you were no longer a patient at the practice. The lab would not accept these if they come from the wrong practice. We are sorry you travelled to come down for this reason and we thank you for your understanding. We wish you well for the future
+
+Author: Hina Baig
+Date: 5 years ago
+Rating: 5 stars
+Hina Baig2 reviews5 years ago
+
+Author: Charlotte St Paul
+Date: 5 years ago
+Rating: 5 stars
+Charlotte St Paul5 years ago
