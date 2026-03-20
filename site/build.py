@@ -1101,9 +1101,9 @@ def build_reviews_reports_page(
               <summary class="report-panel-summary">
                 <span class="report-panel-copy">
                   <span class="report-panel-title">{html.escape(title)}</span>
-                  <span class="report-panel-description">{html.escape(summary)}</span>
+                  <span class="report-panel-description">{render_inline_markdown(summary)}</span>
                 </span>
-                <span class="report-panel-meta">Open report</span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
               </summary>
               <div class="report-panel-body">
                 <div class="report-panel-actions">

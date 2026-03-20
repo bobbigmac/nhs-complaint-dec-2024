@@ -1,0 +1,305 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "Y02755001",
+    "practice_name": "Rock@Radcliffe",
+    "display_name": "Rock@Radcliffe",
+    "website_url": "https://www.rockhealthcare.nhs.uk/",
+    "website_identity": "shared organisational site",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/rock@radcliffe/Y02755001",
+    "telephone": "0161 447 9820",
+    "postcode": "M26 2SP",
+    "registered_patient_count": null,
+    "google_review_score": 1.5,
+    "google_review_count": 45
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "practice-specific exploratory review using the NHS profile, the current live Rock Healthcare website, site-search cross-checks, and direct follow-up into the linked Accurx and askmyGP routes",
+    "website_confirmation": "The NHS profile points to the Rock domain, but the current live Rock site behaves like a shared organisational site rather than a Radcliffe-specific front door."
+  },
+  "headline": "Rock@Radcliffe currently has one of the messiest front doors reviewed so far. The NHS identity still points to the shared Rock site, but that site appears Bury and Moorgate-focused, not Radcliffe-focused. It mixes Accurx and askmyGP on the same public pages, the main live digital routes are keyed to the parent code Y02755 rather than the Radcliffe branch code Y02755001, and a live site page says the Radcliffe surgery has relocated to Moorgate Primary Care Centre.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 1,
+    "digital_task_coverage": 2,
+    "journey_ease": 2,
+    "trust_and_maintenance": 1,
+    "complaints_and_fallbacks": 1,
+    "overall_patient_usability": 1,
+    "summary": "One of the weakest front doors in the set: identity drift, conflicting platforms and stale complaints content undermine almost every route."
+  },
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "WordPress on GPsurgery.net network theme",
+        "evidence": [
+          "The live site runs on rockhealthcare.nhs.uk with a footer credit of GPsurgery.net.",
+          "The HTML exposes a multisite-style WordPress setup and GPsurgery.net network privacy wording."
+        ]
+      },
+      {
+        "status": "live_but_shared",
+        "label": "Main request platform in site navigation",
+        "platform": "Accurx using Y02755 rather than Y02755001",
+        "evidence": [
+          "The main navigation links Online Appointments to https://accurx.nhs.uk/patient-initiated/Y02755.",
+          "The navigation also links Online Prescriptions to an Accurx repeat-prescription route using Y02755."
+        ]
+      },
+      {
+        "status": "live_but_conflicting",
+        "label": "Secondary request platform still exposed",
+        "platform": "askmyGP using Y02755",
+        "evidence": [
+          "The footer repeats Get Help Now – askmyGP linked to https://my.askmygp.uk/?c=Y02755#/intro.",
+          "That conflicts with the Accurx-first navigation on the same site."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine or medical request",
+      "label": "Homepage Accurx main request route",
+      "steps_from_home": 1,
+      "url": "https://accurx.nhs.uk/patient-initiated/Y02755"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Homepage Accurx repeat-prescription route",
+      "steps_from_home": 1,
+      "url": "https://accurx.nhs.uk/patient-initiated/Y02755/flow/repeat-prescription"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "alternate digital request route",
+      "label": "Footer askmyGP route",
+      "steps_from_home": 1,
+      "url": "https://my.askmygp.uk/?c=Y02755#/intro"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Shared complaints and compliments page",
+      "steps_from_home": 2,
+      "url": "https://www.rockhealthcare.nhs.uk/patient-info/complaints-compliments/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "location / branch context",
+      "label": "Relocation notice page stating Radcliffe move",
+      "steps_from_home": 2,
+      "url": "https://www.rockhealthcare.nhs.uk/relocating-radcliffe-surgery-to-moorgate-primary-care-centre/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "browser-like HTTP fetch with desktop user agent against the shared site and linked request routes",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://www.rockhealthcare.nhs.uk/",
+        "final_url": "https://www.rockhealthcare.nhs.uk/",
+        "status": "live",
+        "title": "Rock Healthcare",
+        "load_ms": 128.5
+      },
+      {
+        "label": "complaints",
+        "url": "https://www.rockhealthcare.nhs.uk/patient-info/complaints-compliments/",
+        "final_url": "https://www.rockhealthcare.nhs.uk/patient-info/complaints-compliments/",
+        "status": "live",
+        "title": "Complaints and compliments – Rock Healthcare",
+        "load_ms": 98.7
+      },
+      {
+        "label": "accurx_main",
+        "url": "https://accurx.nhs.uk/patient-initiated/Y02755",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/Y02755",
+        "status": "live",
+        "title": "Contact us about your request - Accurx Patient Portal",
+        "load_ms": 113.9
+      },
+      {
+        "label": "accurx_repeat_prescription",
+        "url": "https://accurx.nhs.uk/patient-initiated/Y02755/flow/repeat-prescription",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/Y02755/flow/repeat-prescription",
+        "status": "live",
+        "title": "See other available options - Accurx Patient Portal",
+        "load_ms": 94.7
+      },
+      {
+        "label": "askmygp",
+        "url": "https://my.askmygp.uk/?c=Y02755#/intro",
+        "final_url": "https://my.askmygp.uk/?c=Y02755#/intro",
+        "status": "live",
+        "title": "askmyGP",
+        "load_ms": 90.9
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/Y02755",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage directly links Online Appointments to Accurx using the parent code Y02755.",
+        "Accurx metadata shows Rock Healthcare Limited at Moorgate Primary Care Centre, Bury, not the Radcliffe branch address from the NHS profile.",
+        "The Accurx metadata shows urgent medical triage hours only from 08:00 to 10:00, with routine or admin work running longer."
+      ],
+      "friction": [
+        "The digital route is not branch-specific and appears to have drifted away from the Radcliffe identity.",
+        "Urgent digital access has a very short daily window."
+      ]
+    },
+    {
+      "task": "routine medical or admin request",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/Y02755",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The main Accurx landing page stays live out of hours with admin-only behavior enabled.",
+        "Accurx says triage requests submitted during 08:00 to 10:00 get same-day response, while routine or non-urgent queries are answered within two working days.",
+        "The exposed Accurx admin menu includes routes like repeat prescription, fit note, referral follow-up, doctor's letter and other admin request."
+      ],
+      "initial_inputs_observed": [
+        "For the medical route, the first visible question is to describe the health problem.",
+        "For the other admin route, the first visible question is to briefly describe the admin query.",
+        "For doctor's letter requests, the form asks what the letter is for and when it is needed by."
+      ],
+      "friction": [
+        "The route is richer than the public website suggests, but the site itself does a poor job explaining which platform is authoritative.",
+        "Patients can land in Accurx for admin work while still seeing askmyGP elsewhere on the same site."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/Y02755/flow/repeat-prescription",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The site navigation directly links Online Prescriptions to an Accurx repeat-prescription flow.",
+        "Out of hours, the repeat-prescription route stays visible but switches to an out-of-hours alternative-options state."
+      ],
+      "friction": [
+        "Prescription access is clear in navigation but again keyed to Y02755 rather than the Radcliffe branch code.",
+        "The user-visible platform story remains mixed because askmyGP still appears elsewhere."
+      ]
+    },
+    {
+      "task": "alternate digital route still exposed",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://my.askmygp.uk/?c=Y02755#/intro",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The footer still advertises askmyGP as Get Help Now.",
+        "Simple fetches only returned an unsupported-browser page, which suggests a normal browser is needed to judge its live behavior properly."
+      ],
+      "friction": [
+        "The site exposes two competing request platforms without explaining whether one is legacy or secondary.",
+        "This is a major cognitive burden for patients."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://www.rockhealthcare.nhs.uk/patient-info/complaints-compliments/",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "Homepage to Patient Information to Complaints and Compliments reaches a live page.",
+        "The complaints page says to contact the Practice Manager by telephone or in writing.",
+        "The page was last updated on 7 March 2022."
+      ],
+      "friction": [
+        "The complaints page is generic, sparse and stale.",
+        "It does not provide a dedicated complaint form, named contact, email route or fuller escalation guidance."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "main digital request route",
+      "start_url": "https://www.rockhealthcare.nhs.uk/",
+      "visible_next_step": "Online Appointments",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/Y02755"
+    },
+    {
+      "task": "repeat prescription",
+      "start_url": "https://www.rockhealthcare.nhs.uk/",
+      "visible_next_step": "Online Prescriptions",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/Y02755/flow/repeat-prescription"
+    },
+    {
+      "task": "alternate route check",
+      "start_url": "https://www.rockhealthcare.nhs.uk/",
+      "visible_next_step": "Footer Get Help Now – askmyGP",
+      "expected_destination": "https://my.askmygp.uk/?c=Y02755#/intro"
+    },
+    {
+      "task": "complaint",
+      "start_url": "https://www.rockhealthcare.nhs.uk/",
+      "visible_next_step": "Patient Information -> Complaints and Compliments",
+      "expected_destination": "https://www.rockhealthcare.nhs.uk/patient-info/complaints-compliments/"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "branch_identity_drift",
+      "details": "The live Rock site and linked Accurx routes foreground Rock Healthcare Limited at Moorgate Primary Care Centre rather than the Radcliffe branch identity from the NHS profile."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "conflicting_platforms",
+      "details": "The site navigation promotes Accurx while the footer still promotes askmyGP, both using the parent code Y02755."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "stale_sparse_complaints_page",
+      "details": "The complaints page was last updated on 7 March 2022 and only gives generic Practice Manager by phone or in writing instructions."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "relocation_confusion",
+      "details": "A live site page states that the Radcliffe surgery relocated to Moorgate Primary Care Centre on 1 January 2025."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "Rock@Radcliffe is a good example of why the NHS identity and the actual patient front door cannot be treated as the same thing.",
+      "The key problem here is not just low quality or slowness, but a shared site whose live digital routes appear to have partially moved on from the Radcliffe branch identity."
+    ],
+    "needs_follow_up": [
+      "Open the askmyGP route in a fully interactive browser session to see whether it is still usable or effectively residual.",
+      "Check whether the NHS profile for Rock@Radcliffe is itself stale after the move to Moorgate."
+    ]
+  },
+  "source_pages": [
+    "https://www.nhs.uk/services/gp-surgery/rock@radcliffe/Y02755001",
+    "https://www.rockhealthcare.nhs.uk/",
+    "https://www.rockhealthcare.nhs.uk/patient-info/complaints-compliments/",
+    "https://www.rockhealthcare.nhs.uk/relocating-radcliffe-surgery-to-moorgate-primary-care-centre/",
+    "https://accurx.nhs.uk/patient-initiated/Y02755",
+    "https://accurx.nhs.uk/patient-initiated/Y02755/flow/repeat-prescription",
+    "https://my.askmygp.uk/?c=Y02755#/intro"
+  ]
+}

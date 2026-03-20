@@ -1,0 +1,213 @@
+{
+  "generated_date": "2026-03-09",
+  "scope": "All GTD Healthcare GP practice anchors from the GTD Healthcare GP practices page, plus the full NHS Find a GP result set returned for a broad Greater Manchester catchment around each GTD anchor.",
+  "radius_miles": 5.0,
+  "row_count": 424,
+  "gtd_managed_count": 13,
+  "non_gtd_count": 411,
+  "google_review_coverage_count": 417,
+  "google_maps_direct_coverage_count": 417,
+  "google_review_text_file_count": 384,
+  "gtd_takeover_date_count": 13,
+  "management_company_identified_count": 69,
+  "management_company_distinct_count": 17,
+  "affiliated_group_identified_count": 10,
+  "affiliated_group_distinct_count": 3,
+  "registered_patient_count_coverage": 360,
+  "registered_patient_count_total_in_scope": 3021833,
+  "registered_patient_count_total_gtd": 70956,
+  "registered_patient_count_candidate_coverage": 0,
+  "trustpilot_coverage_count": 0,
+  "postcode_area_count": 81,
+  "postcode_areas": [
+    "BL1",
+    "BL2",
+    "BL3",
+    "BL4",
+    "BL6",
+    "BL8",
+    "BL9",
+    "M1",
+    "M11",
+    "M12",
+    "M13",
+    "M14",
+    "M15",
+    "M16",
+    "M18",
+    "M19",
+    "M20",
+    "M21",
+    "M22",
+    "M23",
+    "M24",
+    "M25",
+    "M26",
+    "M27",
+    "M28",
+    "M29",
+    "M3",
+    "M30",
+    "M31",
+    "M32",
+    "M33",
+    "M34",
+    "M35",
+    "M38",
+    "M4",
+    "M40",
+    "M41",
+    "M43",
+    "M44",
+    "M45",
+    "M46",
+    "M5",
+    "M6",
+    "M7",
+    "M8",
+    "M9",
+    "OL1",
+    "OL10",
+    "OL11",
+    "OL12",
+    "OL15",
+    "OL16",
+    "OL2",
+    "OL3",
+    "OL4",
+    "OL5",
+    "OL6",
+    "OL7",
+    "OL8",
+    "OL9",
+    "SK1",
+    "SK13",
+    "SK14",
+    "SK15",
+    "SK16",
+    "SK2",
+    "SK3",
+    "SK4",
+    "SK5",
+    "SK6",
+    "SK7",
+    "SK8",
+    "SK9",
+    "WA1",
+    "WA13",
+    "WA14",
+    "WA15",
+    "WA2",
+    "WA3",
+    "WA4",
+    "WN7"
+  ],
+  "source_urls": {
+    "gtd_gp_practices_page": "https://www.gtdhealthcare.co.uk/patient-services/gp-practices",
+    "nhs_find_a_gp": "https://www.nhs.uk/service-search/find-a-gp",
+    "postcode_geocoder": "https://api.postcodes.io/",
+    "google_review_mirror": "https://justvisits.co.uk/",
+    "patient_counts_json": "raw/registered_patients/patient_counts_by_year.json",
+    "gtd_takeover_dates": "config/gtd_takeover_dates.json"
+  },
+  "patient_counts_by_year_years": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "supplemental_search_centers": [
+    {
+      "name": "Chorlton supplemental search",
+      "postcode": "M21 8AU",
+      "scope_note": "Pull in south-west Manchester and Chorlton-side practices"
+    },
+    {
+      "name": "Wythenshawe supplemental search",
+      "postcode": "M22 5RX",
+      "scope_note": "Pull in Wythenshawe and airport-side practices"
+    },
+    {
+      "name": "Baguley supplemental search",
+      "postcode": "M23 9JH",
+      "scope_note": "Pull in Baguley, Brooklands, Northern Moor and nearby south Manchester practices"
+    },
+    {
+      "name": "Stretford supplemental search",
+      "postcode": "M32 0JG",
+      "scope_note": "Pull in Trafford / Stretford / west Manchester practices"
+    },
+    {
+      "name": "Sale supplemental search",
+      "postcode": "M33 7ZF",
+      "scope_note": "Pull in Sale-side practices that the GTD anchors miss"
+    },
+    {
+      "name": "Bolton central supplemental search",
+      "postcode": "BL1 1RU",
+      "scope_note": "Pull in clearly in-scope Bolton practices missed by the existing M60-side search centres"
+    },
+    {
+      "name": "Prestwich supplemental search",
+      "postcode": "M25 1BT",
+      "scope_note": "Pull in north-west Manchester / Prestwich-side practices inside and just beyond the M60"
+    },
+    {
+      "name": "Radcliffe supplemental search",
+      "postcode": "M26 1LS",
+      "scope_note": "Pull in Radcliffe-side practices around the north-west arc beyond the M60"
+    },
+    {
+      "name": "Swinton supplemental search",
+      "postcode": "M27 4AA",
+      "scope_note": "Pull in Swinton and Pendlebury-side practices on the north-west / west side of the M60"
+    },
+    {
+      "name": "Little Hulton supplemental search",
+      "postcode": "M28 0BQ",
+      "scope_note": "Pull in Walkden, Little Hulton and nearby western-edge practices around the M60"
+    },
+    {
+      "name": "Whitefield supplemental search",
+      "postcode": "M45 8WF",
+      "scope_note": "Pull in Whitefield and Bury-south practices around the north-west arc of the M60"
+    },
+    {
+      "name": "Salford Quays supplemental search",
+      "postcode": "M50 3UB",
+      "scope_note": "Pull in Salford Quays / Ordsall-side practices inside the western side of the M60"
+    },
+    {
+      "name": "Partington supplemental search",
+      "postcode": "M31 4FL",
+      "scope_note": "Pull in Partington, Carrington and nearby outer-west practices around the M60"
+    },
+    {
+      "name": "Rochdale central supplemental search",
+      "postcode": "OL16 1AE",
+      "scope_note": "Pull in clearly in-scope Rochdale-side practices that sit outside the current west and north-west searches"
+    },
+    {
+      "name": "Stockport central supplemental search",
+      "postcode": "SK1 1HE",
+      "scope_note": "Pull in clearly in-scope Stockport and Reddish-side practices missed by the current Greater Manchester anchors"
+    }
+  ],
+  "notes": [
+    "Google review fields were only filled when an exact or high-confidence Just Visits match was available.",
+    "Trustpilot fields were left blank because no reliable per-practice public source was found in this run.",
+    "This run intentionally keeps the broader NHS result set around each GTD anchor instead of trimming aggressively to 1 mile.",
+    "Additional south, west, north-west, Bolton, Rochdale and Stockport coverage was added with explicit supplemental NHS search centres.",
+    "When available, direct Google Maps captures can add a review text file path per practice without embedding the review text in the main CSV.",
+    "GTD takeover dates are manually curated from official NHS / commissioner / practice sources and are intended to mark GTD's current-tenure start date for each GTD-managed practice.",
+    "Management company fields are conservative and should only be filled when the NHS-listed website or GTD anchor match makes the operator identifiable.",
+    "Affiliated group fields are separate from management company fields and are intended for federations, extended-hours operators, or similar network relationships that may coexist with core management.",
+    "Registered patient counts come from the NHS monthly GP registered patients totals file, matched by ODS code.",
+    "Registered patient count candidate fields are advisory only and are used for branch/site reconciliation without replacing the direct NHS monthly match."
+  ]
+}

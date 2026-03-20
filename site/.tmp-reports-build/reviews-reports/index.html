@@ -1,0 +1,1437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Reports</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="page-shell page-shell-doc page-shell-reports">
+    <header class="doc-hero reports-hero">
+      <div class="hero-copy doc-hero-copy">
+        <p class="eyebrow">Corpus reports</p>
+        <p class="doc-breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="../map/map.html">Map</a></p>
+        <h1>Consolidated Review Reports</h1>
+        <p class="standfirst">A single page that bundles the review-analysis notes into collapsible, printable panels.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" id="toggle-all-reports" data-open="false">Expand all reports</button>
+          <button class="button button-secondary" type="button" id="print-reports">Print this page</button>
+        </div>
+      </div>
+      <aside class="hero-panel doc-hero-panel reports-hero-panel">
+        <p class="panel-label">Included here</p>
+        <h2>9 reports</h2>
+        <p class="panel-updated">Latest build 2026-03-09</p>
+        <p class="reports-build-note">Bundled from the review-report markdown output and rendered into one page for scanning, browsing and print use.</p>
+        <div class="doc-pill-stack">
+          <a class="link-pill link-pill-primary" href="../index.html">Back to homepage</a>
+          <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html">Markdown print viewer</a>
+        </div>
+      </aside>
+    </header>
+
+    <main class="reports-layout">
+      <section class="doc-article reports-context-block">
+        <div class="doc-body">
+          <p>These review reports were written as separate notes so each theme could be explored properly: access, staff, clinical harm, practice responses, digital routes, activism-style reviewing, and the GTD-only slice.</p>
+<p>This page turns them into one readable bundle. Each report sits in its own panel with a short summary on the heading line, so readers can scan the set quickly, open only what they need, or expand everything and print it as one long briefing.</p>
+        </div>
+      </section>
+
+      <section class="reports-stack" aria-label="Review reports">
+        <details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">What The Review Corpus Shows</span>
+                  <span class="report-panel-description">This note looks across the whole indexed Google review corpus, not just access.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/reviews-corpus-overview-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/reviews-corpus-overview-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This note looks across the whole indexed Google review corpus, not just access.</p>
+<p>The corpus used here contains <code>16,293</code> plaintext reviews across <code>165</code> practices. It is a local fulltext read of the review text, using the new reviews search tool. It is not a survey and it is not NLP. It is patients speaking in their own words, often about one sharp experience.</p>
+<p>That matters. Google reviews are not representative in the clean statistical way a patient survey tries to be. They are self-selecting, emotional, and uneven. But that is also why they are useful. They show where care breaks down badly enough, or works well enough, that people feel they have to say so in public.</p>
+<h2 id="overview-the-big-shape">The Big Shape</h2>
+<p>The first thing the review corpus shows is how polarised it is.</p>
+<ul><li><code>6,129</code> reviews, <code>37.6%</code>, are <code>1</code> star</li><li><code>475</code> reviews, <code>2.9%</code>, are <code>2</code> stars</li><li><code>365</code> reviews, <code>2.2%</code>, are <code>3</code> stars</li><li><code>928</code> reviews, <code>5.7%</code>, are <code>4</code> stars</li><li><code>8,396</code> reviews, <code>51.5%</code>, are <code>5</code> stars</li></ul>
+<p>So the middle is tiny. Patients mostly do not write like measured survey respondents. They write when they feel badly let down, or when they feel someone really helped them.</p>
+<p>That split is visible at practice level too. <code>157</code> of the <code>165</code> practices in this corpus have both low-star and high-star reviews. So the picture is rarely just "good practice" or "bad practice". A lot of practices look unstable or uneven from the patient side. Some people feel well cared for, while others describe being blocked, ignored, or badly handled.</p>
+<p>The GTD-managed slice is harsher. In that subset, <code>627</code> of <code>830</code> reviews, <code>75.5%</code>, are <code>1</code> or <code>2</code> stars, while only <code>185</code>, <code>22.3%</code>, are <code>4</code> or <code>5</code> stars. That is a much more complaint-heavy pattern than the wider corpus.</p>
+<h2 id="overview-what-patients-mostly-complain-about">What Patients Mostly Complain About</h2>
+<h3 id="overview-access-still-dominates">Access still dominates</h3>
+<p>Access is still the biggest single story in the dataset.</p>
+<p>Using the access basket from the earlier report, <code>5,028</code> reviews, <code>30.9%</code> of the whole corpus, are low-star reviews that hit a main access problem. Broad access language appears in <code>8,680</code> reviews, <code>53.3%</code> of all reviews.</p>
+<p>That means access is not just one topic among many. It is the front door through which many other complaints arrive.</p>
+<p>But it is not the only thing patients are saying.</p>
+<h3 id="overview-staff-attitude-and-respect">Staff attitude and respect</h3>
+<p>One of the clearest non-access themes is how patients talk about the way they are spoken to.</p>
+<p><code>1,765</code> low-star reviews, <code>10.8%</code> of all reviews and <code>26.7%</code> of low-star reviews, hit a staff-attitude bucket with words like <code>rude</code>, <code>attitude</code>, <code>hostile</code>, <code>unhelpful</code>, <code>arrogant</code>, or <code>disrespectful</code>.</p>
+<p>These are not just complaints about politeness. In the review text, tone often comes bundled with power. Patients describe reception or staff behaviour as part of being blocked, doubted, brushed off, or made to feel small.</p>
+<p>Examples:</p>
+<blockquote><p>"Very rude, unprofessional reception staff"</p></blockquote>
+<blockquote><p>Beth Richmond, <code>Mandalay Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"Firstly, the staff receptionist were incredibly rude and unhelpful."</p></blockquote>
+<blockquote><p>Saad farooqi, <code>Kingsway Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"the admin/reception team here are something else, I totally agree with every complaint made against them in the reviews"</p></blockquote>
+<blockquote><p>Hafsa Bakari, <code>New Bank Health</code>, low-star review</p></blockquote>
+<p>This is one of the clearest ways the review corpus goes beyond the patient survey. The survey can ask whether reception was helpful. Reviews show what "not helpful" looks and feels like in practice.</p>
+<h3 id="overview-admin-follow-through-results-referrals-prescriptions">Admin follow-through, results, referrals, prescriptions</h3>
+<p>Another strong theme is not just getting through the door, but what happens after that.</p>
+<p><code>1,071</code> low-star reviews, <code>6.6%</code> of all reviews and <code>16.2%</code> of low-star reviews, mention referrals, results, prescriptions, callbacks, letters, or related admin follow-through problems.</p>
+<p>Patients often describe this as drift, loss, or having to chase. These reviews are less about a single rude moment and more about systems that feel loose, unreliable, or hard to trust.</p>
+<p>Examples:</p>
+<blockquote><p>"did not ring me although waiting blood and scan results"</p></blockquote>
+<blockquote><p>nicola cooper, <code>Dr Y Loomba &amp; Partner</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"lost blood test results ... and I found out 10 month later this referral that gp has suppose sent never was sent"</p></blockquote>
+<blockquote><p>rachel barnes, <code>Droylsden Road Surgery Branch</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"I never knew it would be so difficult to get a repeat prescription for Omeprazole."</p></blockquote>
+<blockquote><p>Rosemary Mallace Overfiftyfitness, <code>Brooklands Medical Practice</code>, <code>1</code> star</p></blockquote>
+<p>This matters for representation because the survey usually slices this into separate neat questions. The reviews show how patients experience it as one thing: not knowing whether the practice will actually carry something through.</p>
+<h3 id="overview-clinical-trust-being-listened-to-and-feeling-safe">Clinical trust, being listened to, and feeling safe</h3>
+<p>A smaller but still important theme is clinical trust.</p>
+<p><code>707</code> low-star reviews, <code>4.3%</code> of all reviews and <code>10.7%</code> of low-star reviews, hit a bucket around diagnosis, medication, treatment, or negligence-type language.</p>
+<p>This is where the stakes feel highest. Patients are not just frustrated. They are saying they do not trust what they were told, what they were prescribed, or whether someone really listened.</p>
+<p>Examples:</p>
+<blockquote><p>"Be careful with this practice, misdiagnosed my uncle after months of going back and forth."</p></blockquote>
+<blockquote><p>Ste Minator, <code>RADCLIFFE MEDICAL PRACTICE</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"misdiagnosed a communicable infection - the WORST practice I have ever had to attend."</p></blockquote>
+<blockquote><p>Ruth Whittaker, <code>The Alastair Ross Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"I've had a terrible time at this practice, I've been misdiagnosed, I've had results that weren't reported to me and it is an impossible task to book an appointment."</p></blockquote>
+<blockquote><p>RobAlexander, <code>Bolton Community Practice CIC - Ladybridge Surgery</code>, <code>1</code> star</p></blockquote>
+<p>The survey does ask some narrow questions about whether a healthcare professional listened or gave enough time. Reviews show what those failures can mean when patients feel the cost of them.</p>
+<h2 id="overview-what-patients-praise">What Patients Praise</h2>
+<p>The positive side of the corpus is also clear, and it is useful because it shows what good care looks like in patient language.</p>
+<h3 id="overview-helpful-caring-listening-clinicians">Helpful, caring, listening clinicians</h3>
+<p><code>4,418</code> high-star reviews, <code>27.1%</code> of all reviews and <code>47.4%</code> of high-star reviews, mention helpful, caring, kind, listening, reassuring, professional, thorough, or compassionate care.</p>
+<p>That is a very strong signal. When patients are happy, they often do not just say "good service". They say someone listened, took them seriously, reassured them, or sorted something properly.</p>
+<p>Examples:</p>
+<blockquote><p>"Extremely helpful and caring doctors. Always feel listened to and well looked after."</p></blockquote>
+<blockquote><p>Tahreem F, <code>Ailsa Craig Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"The doctors are all very helpful and again excel in your treatment I feel safe and listened to at this practice."</p></blockquote>
+<blockquote><p>Mick Edgerley, <code>Deane Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"A very knowledgeable practitioner who listened and was very caring."</p></blockquote>
+<blockquote><p>Helen Smith, <code>The Poplars Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<h3 id="overview-friendly-and-welcoming-front-desk-staff">Friendly and welcoming front desk staff</h3>
+<p><code>2,118</code> high-star reviews, <code>13.0%</code> of all reviews and <code>22.7%</code> of high-star reviews, praise staff as friendly, welcoming, respectful, or lovely.</p>
+<p>That is the mirror image of the low-star reception problem. Reception is not a side issue in either direction. It is one of the biggest ways patients decide whether a practice feels safe, usable, and human.</p>
+<p>Examples:</p>
+<blockquote><p>"Friendly staff on reception and helpful"</p></blockquote>
+<blockquote><p>caroline daniels, <code>RK Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Excellent practice with friendly and helpful reception staff."</p></blockquote>
+<blockquote><p>Matthew Delooze, <code>Bodey Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Staff in reception are super helpful and friendly."</p></blockquote>
+<blockquote><p>River Area, <code>Bolton Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<h3 id="overview-easy-and-quick-access-when-it-works">Easy and quick access when it works</h3>
+<p><code>1,866</code> high-star reviews, <code>11.5%</code> of all reviews and <code>20.0%</code> of high-star reviews, mention access positively with words like <code>easy</code>, <code>quickly</code>, <code>prompt</code>, or appointment-related praise.</p>
+<p>That matters because it shows that patients do notice access when it works well. Good access is not invisible. They often talk about fast answers, easy appointments, and staff getting back to them quickly.</p>
+<p>Examples:</p>
+<blockquote><p>"I've found it quite easy to get an appointment. Staff are all great and get back to you quickly."</p></blockquote>
+<blockquote><p>Cailen, <code>Wilbraham Surgery</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"always answer the phone quickly and it's easy to get an appointment"</p></blockquote>
+<blockquote><p>Sean Doherty, <code>The Birches Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"I've always been so impressed with how quickly I get an appointment/ an Answer."</p></blockquote>
+<blockquote><p>Ellie L, <code>Barlow Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<h2 id="overview-how-patients-write-about-problems">How Patients Write About Problems</h2>
+<p>The reviews do not read like survey responses. They read like people describing what happened to them.</p>
+<p>Some recurring features stand out:</p>
+<h3 id="overview-1-patients-write-in-chains-not-categories">1. Patients write in chains, not categories</h3>
+<p>Survey questions split problems into neat boxes: phone contact, appointment offered, overall experience, healthcare professional listened.</p>
+<p>Reviews do not do that. Patients usually tell a sequence:</p>
+<ol><li>could not get through</li><li>finally got through</li><li>was told nothing was left</li><li>was pushed to go online</li><li>got no response</li><li>felt spoken to badly</li><li>then had to chase results or referrals</li></ol>
+<p>That chain is one of the most important differences between the review corpus and the survey.</p>
+<h3 id="overview-2-the-language-is-plain-and-often-hard-edged">2. The language is plain and often hard-edged</h3>
+<p>Patients do not soften much. Common low-star words include <code>appointment</code>, <code>phone</code>, <code>staff</code>, <code>doctor</code>, <code>told</code>, <code>rude</code>, and <code>receptionist</code>.</p>
+<p>They use simple judgment words:</p>
+<ul><li>rude</li><li>useless</li><li>disgusting</li><li>awful</li><li>unhelpful</li><li>appalling</li><li>disgrace</li></ul>
+<p>That plain language is important. It tells you how people interpret the system, not just what happened in a formal sense.</p>
+<h3 id="overview-3-patients-often-name-the-point-of-failure">3. Patients often name the point of failure</h3>
+<p>They talk about:</p>
+<ul><li>the phone line</li><li>the receptionist</li><li>the form</li><li>the referral</li><li>the repeat prescription</li><li>the specific GP</li></ul>
+<p>That makes the review corpus much more operational than it first looks. It gives clues about where the service feels brittle from the patient side.</p>
+<h3 id="overview-4-positive-reviews-are-just-as-concrete">4. Positive reviews are just as concrete</h3>
+<p>Good reviews are not just "great service". They often say:</p>
+<ul><li>I was listened to</li><li>they got back to me quickly</li><li>reception were welcoming</li><li>the doctor was reassuring</li><li>someone sorted the problem</li></ul>
+<p>So the review corpus is good at showing what patients want, not only what they hate.</p>
+<h2 id="overview-where-reviews-go-beyond-the-patient-survey">Where Reviews Go Beyond The Patient Survey</h2>
+<p>The national patient survey is useful, but its interests are narrow.</p>
+<p>It tends to ask things like:</p>
+<ul><li>was it easy to contact the practice?</li><li>did you know what the next step was?</li><li>were you offered a choice?</li><li>did the healthcare professional listen?</li><li>was your overall experience good?</li></ul>
+<p>Those are useful gateway questions. But the review corpus shows at least five things the survey cannot show well.</p>
+<h3 id="overview-1-reviews-show-the-route-not-just-the-score">1. Reviews show the route, not just the score</h3>
+<p>The survey tells you whether contact felt easy. Reviews tell you how patients tried:</p>
+<ul><li>phone</li><li>online form</li><li>website</li><li>callback</li><li>repeat prescription route</li></ul>
+<p>And they show where that route broke.</p>
+<h3 id="overview-2-reviews-show-emotional-cost">2. Reviews show emotional cost</h3>
+<p>The survey records dissatisfaction. Reviews show humiliation, anger, panic, confusion, exhaustion, and mistrust.</p>
+<p>That matters if the goal is to represent patient need clearly. A system that looks merely "fairly difficult" in survey language can look unbearable in review language.</p>
+<h3 id="overview-3-reviews-show-people-who-may-not-have-made-it-through-the-formal-pathway">3. Reviews show people who may not have made it through the formal pathway</h3>
+<p>This is one of the biggest gaps.</p>
+<p>Survey responses are often shaped by people who got far enough through the system to answer about their contact or appointment experience. Reviews include people describing being blocked at the door, bounced between routes, or giving up after repeated failed attempts.</p>
+<p>That means reviews are especially valuable for seeing exclusion and drop-off.</p>
+<h3 id="overview-4-reviews-join-service-stages-together">4. Reviews join service stages together</h3>
+<p>The survey separates access, appointment quality, support, and overall experience. Reviews show how these interact.</p>
+<p>Patients often describe bad access, rude handling, and weak follow-through as one continuous failure, not three separate ones.</p>
+<h3 id="overview-5-reviews-show-what-good-care-feels-like">5. Reviews show what good care feels like</h3>
+<p>The survey can tell you if people say a professional listened. Reviews tell you what that means in real life:</p>
+<ul><li>not feeling rushed</li><li>being reassured</li><li>being taken seriously</li><li>someone going above and beyond</li><li>a receptionist sorting something instead of deflecting it</li></ul>
+<p>That is useful if the aim is not only to criticise, but to describe what patients are actually asking for.</p>
+<h2 id="overview-what-we-need-to-know-to-represent-patients-better">What We Need To Know To Represent Patients Better</h2>
+<p>If this review corpus is used to speak more clearly for patients than the survey usually can, a few points matter most.</p>
+<h3 id="overview-1-access-is-only-the-start">1. Access is only the start</h3>
+<p>Access is the biggest issue, but patients do not stop there. They also talk about respect, clarity, follow-through, prescriptions, referrals, and whether they trust what they were told.</p>
+<p>So any representation that only says "appointments are hard to get" will miss a lot.</p>
+<h3 id="overview-2-reception-is-not-just-an-admin-layer">2. Reception is not just an admin layer</h3>
+<p>In the reviews, reception is often the face of the practice. It is where patients feel helped, blocked, believed, doubted, respected, or dismissed.</p>
+<p>That makes reception behaviour a patient-need issue, not just a staffing issue.</p>
+<h3 id="overview-3-patients-want-both-kindness-and-competence">3. Patients want both kindness and competence</h3>
+<p>The positive reviews are not only about warmth. They are about people who are kind and actually get things done.</p>
+<p>The negative reviews are not only about delay. They are about delay plus confusion, plus being spoken to badly, plus not trusting that the next step will happen.</p>
+<h3 id="overview-4-mixed-practices-need-closer-reading">4. Mixed practices need closer reading</h3>
+<p>Because most practices have both high and low reviews, the real question is often not "is this place good or bad?" It is:</p>
+<ul><li>who gets through</li><li>who gets stuck</li><li>when does the service work</li><li>where does it break</li><li>which failures keep repeating</li></ul>
+<h3 id="overview-5-the-survey-should-be-read-with-the-reviews-beside-it">5. The survey should be read with the reviews beside it</h3>
+<p>The survey is better for broad comparison.</p>
+<p>The reviews are better for:</p>
+<ul><li>patient language</li><li>repeated front-door failures</li><li>named operational problems</li><li>emotional cost</li><li>the difference between being in the system and being shut out of it</li></ul>
+<p>Taken together, they give a fuller picture than either on its own.</p>
+<h2 id="overview-bottom-line">Bottom Line</h2>
+<p>Across the board, this review corpus says three big things.</p>
+<p>First, the patient experience is sharply polarised. Many people leave very happy. Many others leave very angry. Very few sit in the middle.</p>
+<p>Second, access is the biggest theme, but not the only one. Patients also keep returning to staff attitude, weak follow-through, prescriptions and referrals, and whether they feel listened to and safe.</p>
+<p>Third, the reviews show patient need in a form the survey usually cannot: direct, concrete, event-based, and emotionally clear.</p>
+<p>If the aim is to represent patients more clearly, the review corpus is useful not because it is tidy, but because it is messy in exactly the ways lived experience is messy. It shows the routes patients try, the points where they get stuck, the language they use when they feel shut out, and the language they use when care genuinely works.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">Access Issues In The Review Corpus</span>
+                  <span class="report-panel-description">This note uses the local fulltext review index over <code>16,293</code> plaintext Google reviews.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/access-issues-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/access-issues-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This note uses the local fulltext review index over <code>16,293</code> plaintext Google reviews.</p>
+<p>I counted a review as access-related if it mentions one or more of these main front-door problems:</p>
+<ul><li>getting an appointment</li><li>getting through by phone</li><li>reception blocking or worsening access</li><li>online forms or website routes not working well</li><li>delays with callbacks, results, or referrals</li></ul>
+<p>This is a straight fulltext pass over the review text, not NLP. One review can hit more than one issue, so the issue counts below overlap.</p>
+<h2 id="access-headline">Headline</h2>
+<p>Access is not a small side problem in this corpus.</p>
+<p>A broad pass finds <code>8,680</code> reviews, <code>53.3%</code> of all reviews, using main access language at all.</p>
+<p>If I narrow that to <code>1</code> and <code>2</code> star reviews, <code>5,028</code> reviews, <code>30.9%</code> of all reviews, read as clear access complaints. That is the stronger number for judging how big the problem is, because it strips out a lot of mixed or positive reviews that still mention phones, appointments, or online forms in passing.</p>
+<p>Put simply: about <code>1</code> in <code>3</code> reviews in the whole corpus is a low-rated review that raises a main access problem.</p>
+<h2 id="access-what-patients-mostly-raise">What Patients Mostly Raise</h2>
+<h3 id="access-1-phone-access">1. Phone access</h3>
+<p>Phone access is the biggest single issue in the low-star access set.</p>
+<p><code>2,962</code> low-star reviews, <code>18.2%</code> of all reviews, mention phones, busy lines, long waits, dropped calls, or calls not being answered.</p>
+<p>The same pattern shows up again and again: patients say they start with the phone because that is the route they are told to use, then hit an engaged tone, a long queue, or no answer at all. In many reviews the phone problem is the first failure that then leads to no appointment.</p>
+<p>Practices with especially high low-star phone counts include:</p>
+<ul><li><code>Cheetham Hill Medical Centre</code>: <code>98</code></li><li><code>The Robert Darbishire Practice</code>: <code>69</code></li><li><code>The Arch Medical Practice</code>: <code>63</code></li><li><code>Bolton Medical Centre</code>: <code>61</code></li><li><code>The Bolton Family Practice</code>: <code>61</code></li></ul>
+<p>Examples:</p>
+<blockquote><p>"Never answer the phone"</p></blockquote>
+<blockquote><p>Adam Crawford, <code>Droylsden Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"The surgery opens phone line 8 but the line be engaged till 845 when they answer say sorrry no available appointments left"</p></blockquote>
+<blockquote><p>Saghir Akhtar, <code>Halliwell Surgery 2</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"not once did the staff answer the phone ... your phone lines are constantly busy throughout the whole day"</p></blockquote>
+<blockquote><p>Georgia Mottershead, <code>Peel GPs</code>, <code>1</code> star</p></blockquote>
+<h3 id="access-2-appointment-problems">2. Appointment problems</h3>
+<p>Appointment access is almost as common as phone access.</p>
+<p><code>2,909</code> low-star reviews, <code>17.9%</code> of all reviews, mention appointment problems.</p>
+<p>Patients do not just say appointments are hard to get. They often describe a cycle: try to call, fail to get through, finally get through, then get told there is nothing left. Some reviews talk about waits of weeks. Others say the only choice is to try again the next day and start over.</p>
+<p>Practices with especially high low-star appointment counts include:</p>
+<ul><li><code>Cheetham Hill Medical Centre</code>: <code>72</code></li><li><code>Chorlton Family Practice</code>: <code>71</code></li><li><code>The Arch Medical Practice</code>: <code>64</code></li><li><code>Rock Healthcare Limited</code>: <code>60</code></li><li><code>Dickenson Road Medical Centre</code>: <code>57</code></li></ul>
+<p>Examples:</p>
+<blockquote><p>"Can never get an appointment"</p></blockquote>
+<blockquote><p>David Chatterton, <code>Gordon Street Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"cant get appointment ... still can't get an early appointment, I been given one after one month"</p></blockquote>
+<blockquote><p>Yamato K, <code>Kingsway Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"can't get through on the phone can't get an appointment they say use AskmyGp"</p></blockquote>
+<blockquote><p>Liam, <code>Ashville Surgery</code>, <code>1</code> star</p></blockquote>
+<h3 id="access-3-reception-as-a-barrier">3. Reception as a barrier</h3>
+<p>Reception comes through as a major part of the access problem, not just a manners problem.</p>
+<p><code>2,279</code> low-star reviews, <code>14.0%</code> of all reviews, mention reception or receptionists.</p>
+<p>These reviews often say the front desk feels rude, dismissive, or hard to deal with. More than that, patients often link reception behaviour to being blocked from care. In the review text, reception is where the access system becomes personal.</p>
+<p>Practices with especially high low-star reception counts include:</p>
+<ul><li><code>Hawthorn MC</code>: <code>69</code></li><li><code>Cheetham Hill Medical Centre</code>: <code>51</code></li><li><code>The Robert Darbishire Practice</code>: <code>48</code></li><li><code>Wellfield Medical Centre</code>: <code>47</code></li><li><code>The Arch Medical Practice</code>: <code>45</code></li></ul>
+<p>Examples:</p>
+<blockquote><p>"Very rude, unprofessional reception staff"</p></blockquote>
+<blockquote><p>Beth Richmond, <code>Mandalay Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"Reception staff so rude and unhelpful!!!!"</p></blockquote>
+<blockquote><p>Hayley Ingham, <code>Mandalay Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"extremely rude reception staff"</p></blockquote>
+<blockquote><p>Poopy Rosa, <code>Blackford House Medical Centre</code>, <code>1</code> star</p></blockquote>
+<h3 id="access-4-online-forms-and-website-routes">4. Online forms and website routes</h3>
+<p>Online access is a smaller bucket than phones or appointments, but it is still a real and repeated problem.</p>
+<p><code>706</code> low-star reviews, <code>4.3%</code> of all reviews, mention online forms, websites, PATCHS, eConsult, or being pushed onto a digital route that does not work.</p>
+<p>These reviews often read like patients are being bounced from one route to another. They are told to go online, but the form is shut, there is no reply, or the website route just pushes the same problem into a different queue.</p>
+<p>Practices with especially high low-star online counts include:</p>
+<ul><li><code>The Robert Darbishire Practice</code>: <code>86</code></li><li><code>Chorlton Family Practice</code>: <code>25</code></li><li><code>Kingsway Medical Practice</code>: <code>25</code></li><li><code>The Arch Medical Practice</code>: <code>23</code></li><li><code>New Bank Health</code>: <code>21</code></li></ul>
+<p>Examples:</p>
+<blockquote><p>"Have to fill the forms in now to book an appointment."</p></blockquote>
+<blockquote><p>Vladislav Miasnikov, <code>Heaton Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"ever since they stopped the online forms it is IMPOSSIBLE to get an appointment."</p></blockquote>
+<blockquote><p>suzie sheep, <code>West Gorton Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"Never pick the phone and the website no give access for appointment"</p></blockquote>
+<blockquote><p>mª cristina rodriguez morales, <code>Gorton Medical Centre</code>, <code>1</code> star</p></blockquote>
+<h3 id="access-5-follow-up-results-and-referrals">5. Follow-up, results, and referrals</h3>
+<p>This is the smallest of the five main buckets, but it may be the sharpest in its effect on patients.</p>
+<p><code>532</code> low-star reviews, <code>3.3%</code> of all reviews, mention waiting for results, callbacks, tests, or referrals.</p>
+<p>These reviews are often about being left hanging after the first contact. The patient gets through one barrier, but the next step stalls: no callback, no result, no clear answer on a referral, or a long wait that seems to go nowhere.</p>
+<p>Practices with especially high low-star follow-up counts include:</p>
+<ul><li><code>The Robert Darbishire Practice</code>: <code>19</code></li><li><code>The Arch Medical Practice</code>: <code>17</code></li><li><code>Chorlton Family Practice</code>: <code>14</code></li><li><code>Guide Bridge Medical Practice</code>: <code>14</code></li><li><code>New Bank Health</code>: <code>14</code></li></ul>
+<p>Examples:</p>
+<blockquote><p>"did not ring me although waiting blood and scan results"</p></blockquote>
+<blockquote><p>nicola cooper, <code>Dr Y Loomba &amp; Partner</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"Waited 6 months for a referral to be told it has not even been acknowledged."</p></blockquote>
+<blockquote><p>Umer Raja, <code>West Point Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"they try to convince you by saying referrals are sent again where you have to wait more for a few months."</p></blockquote>
+<blockquote><p>Saif Syed, <code>New Bank Health</code>, low-star review</p></blockquote>
+<h2 id="access-what-the-pattern-looks-like-in-practice">What The Pattern Looks Like In Practice</h2>
+<p>The access complaints are not neatly separated in real life. Patients often describe the same chain:</p>
+<ol><li>they try the phone and cannot get through</li><li>when they do get through, appointments have gone</li><li>they are told to use an online form instead</li><li>the online route does not solve it</li><li>they feel brushed off by reception</li><li>after that, even results, callbacks, or referrals can drift</li></ol>
+<p>That is why the issue counts overlap so much. Patients are not usually talking about one bad moment. They are describing a front door that feels hard to enter, hard to stay in, and hard to trust.</p>
+<h2 id="access-when-access-turns-into-exclusion">When Access Turns Into Exclusion</h2>
+<p>There is a smaller but important set of reviews where the problem is not just "I could not get an appointment". It becomes "I could not get out either".</p>
+<p>These reviews show patients trying to escape a failing access system, being blocked by catchment rules, being told to register elsewhere, or saying they would switch if they realistically could. This is where access trouble starts to look like exclusion.</p>
+<p>The numbers are smaller than the main access buckets, but the pattern is clear enough to matter:</p>
+<ul><li><code>16</code> reviews mention <code>catchment</code></li><li><code>14</code> reviews say <code>register elsewhere</code></li><li><code>67</code> reviews mention <code>changed my GP</code></li></ul>
+<p>Those phrase counts are only rough markers, and they overlap. The value is in what the reviews say next.</p>
+<h3 id="access-1-some-patients-try-to-leave-and-are-blocked">1. Some patients try to leave and are blocked</h3>
+<p>Some reviews describe patients trying to register elsewhere or trying to join a different practice, only to hit another barrier.</p>
+<p>Examples:</p>
+<blockquote><p>"Sadly, I don’t have the option to register elsewhere, otherwise, I would have switched already."</p></blockquote>
+<blockquote><p>Muhammad Naeem, <code>Gorton Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"I tried to register with them but they rejected my registration even though I live in the catchment area"</p></blockquote>
+<blockquote><p>Kasim, <code>Ardwick Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"You’re website has a catchment area enquiry and my address fell within it so I called and got told I wasn’t allowed to join this surgery"</p></blockquote>
+<blockquote><p>Jon Shedwick, <code>Blackford House Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"now I am deemed to be leaving the "catchment area" I have been told I have to register with another practice"</p></blockquote>
+<blockquote><p>Andrew Lees, <code>Eastlands Medical Centre</code>, <code>1</code> star</p></blockquote>
+<p>These reviews matter because they show a patient can know the current practice is not working for them, but still not have a clean route to leave. That helps explain why low switching on the map does not mean people are content.</p>
+<h3 id="access-2-some-patients-do-leave-but-often-only-after-a-lot-of-frustration">2. Some patients do leave, but often only after a lot of frustration</h3>
+<p>There are also reviews where people say they have changed practice, re-registered, or plan to.</p>
+<p>Examples:</p>
+<blockquote><p>"Ive reregistered elsewhere."</p></blockquote>
+<blockquote><p>Kadie Buchanan, <code>RADCLIFFE MEDICAL PRACTICE</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"I have changed practice and so have my family"</p></blockquote>
+<blockquote><p>V Walker, <code>Lime Square Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"I’ve changed doctors as this place is nothing short of a joke."</p></blockquote>
+<blockquote><p>Genuine Bloodshed, <code>Guide Bridge Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"Going to see if I can register elsewhere."</p></blockquote>
+<blockquote><p>Yen Hembrough, <code>Droylsden Road Surgery Branch</code>, <code>1</code> star</p></blockquote>
+<p>The tone here is not casual choice. It is usually exit as a last resort.</p>
+<h3 id="access-3-improvement-after-switching-does-show-up-but-mostly-in-reviews-of-the-new-practice">3. Improvement after switching does show up, but mostly in reviews of the new practice</h3>
+<p>There is some evidence that patients compare a new practice favourably after leaving a worse one. But that evidence usually appears as praise for the new surgery, not as a follow-up posted back on the old surgery’s page.</p>
+<p>Examples:</p>
+<blockquote><p>"Brilliant service thankyou glad I changed doctors."</p></blockquote>
+<blockquote><p>sharon towner, <code>Bolton Community Practice CIC - The Market Surgery</code>, <code>5</code> star</p></blockquote>
+<blockquote><p>"Me and my parner recently changed to Octagon Medical Center ... After literally our first appointment here we’re being helped for things we have been trying for over a year to get help with."</p></blockquote>
+<blockquote><p>BenGiz'93, <code>Octagon Medical Centre</code>, <code>5</code> star</p></blockquote>
+<blockquote><p>"I recently moved to the catchment area of The Range Medical Centre and switched here from my previous surgery. So far, the difference has been night and day."</p></blockquote>
+<blockquote><p>Gethin Dibowski, <code>The Range Medical Centre</code>, <code>5</code> star</p></blockquote>
+<p>That is useful because it suggests some patients do not just complain and disappear. Some are clearly saying the problem was the old access system, because the contrast with the new one feels immediate.</p>
+<h3 id="access-4-follow-up-it-got-worse-reviews-are-rarer-but-they-do-exist">4. Follow-up "it got worse" reviews are rarer, but they do exist</h3>
+<p>Direct follow-up reviews are much rarer than one-off complaints. Most people seem to leave one review and stop there. But a few edited or reflective reviews do show the problem persisting or worsening over time.</p>
+<p>Examples:</p>
+<blockquote><p>"(Edited review from 4 stars in 2018 to 1 star 2023) This place is well over capacity and can not manage."</p></blockquote>
+<blockquote><p>Reny Hardy, <code>Chorlton Family Practice</code>, edited low-star review</p></blockquote>
+<blockquote><p>"Unfortunately the GP changed for worse."</p></blockquote>
+<blockquote><p>E S, <code>Windermere Surgery</code>, edited review</p></blockquote>
+<blockquote><p>"This practice has just got worse and worse as time as gone on."</p></blockquote>
+<blockquote><p>Dorias Lives, <code>Millbrook Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"My cyst pain got worse day by day but I got appointment after 6 months."</p></blockquote>
+<blockquote><p>Ro Se, <code>Ashcroft Surgery</code>, <code>1</code> star</p></blockquote>
+<p>So the answer to "what do patients do next?" is mixed:</p>
+<ul><li>some try to switch and cannot</li><li>some do switch, and the relief shows up in reviews of the new practice</li><li>some stay trapped and say the same problems keep getting worse</li></ul>
+<p>This is one reason access needs to be read as more than a service-quality issue. For some patients it starts to shape where they can go, whether they can leave, and whether a failing surgery becomes something they are effectively stuck with.</p>
+<h2 id="access-gtd-context">GTD Context</h2>
+<p>The same pattern is strong in the GTD-managed slice too.</p>
+<p>Across GTD-managed practices in this indexed set, <code>501</code> out of <code>830</code> reviews, <code>60.4%</code>, are low-star reviews that hit at least one of the main access buckets above.</p>
+<p><code>New Bank Health</code> fits that pattern. <code>77</code> of its <code>138</code> indexed reviews, <code>55.8%</code>, fall into the low-star access set. Within that:</p>
+<ul><li><code>49</code> mention appointment problems</li><li><code>39</code> mention phone access</li><li><code>34</code> mention reception</li><li><code>21</code> mention online routes</li><li><code>14</code> mention follow-up, results, or referrals</li></ul>
+<p>Examples from <code>New Bank Health</code>:</p>
+<blockquote><p>"I had Alex hang up the phone on me ... when I hang up and call straight back with another number she'd answer"</p></blockquote>
+<blockquote><p>Hafsa Bakari, low-star review</p></blockquote>
+<blockquote><p>"the admin/reception team here are something else, I totally agree with every complaint made against them in the reviews"</p></blockquote>
+<blockquote><p>Hafsa Bakari, low-star review</p></blockquote>
+<blockquote><p>"if you have a complaint to fill in a feedback form or alternatively call to book an appointment, but when I called I was told the only way was to fill in a form"</p></blockquote>
+<blockquote><p>Hafsa Bakari, low-star review</p></blockquote>
+<h2 id="access-bottom-line">Bottom Line</h2>
+<p>Access looks like one of the biggest problems in the whole review corpus.</p>
+<p>On a broad mention basis, it shows up in just over half of all reviews. On a stricter complaint basis, it still shows up in nearly a third of the whole corpus.</p>
+<p>The most common problems are:</p>
+<ul><li>phones not being answered, being engaged, or dropping</li><li>appointments being unavailable even after patients get through</li><li>reception staff being described as rude, dismissive, or blocking</li><li>online forms and website routes replacing older routes without working well enough</li><li>weak follow-up on results, callbacks, and referrals</li></ul>
+<p>Read together, the reviews suggest that patients are not mainly saying "I had one bad appointment." They are saying it is hard to get in, hard to get heard, and hard to know what happens next.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">Older Reviews Versus Recent Reviews</span>
+                  <span class="report-panel-description">This note asks a simple question:</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/older-vs-recent-complaints-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/older-vs-recent-complaints-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This note asks a simple question:</p>
+<p>What shows up in older reviews that does not really show up now, and what shows up now that did not used to be a complaint at all?</p>
+<p>I used the indexed Google review corpus and split it into two complaint-heavy windows:</p>
+<ul><li><code>older</code>: reviews estimated to be from <code>2016</code> to <code>2019</code></li><li><code>recent</code>: reviews estimated to be from <code>2022</code> to <code>2026</code></li></ul>
+<p>I left out <code>2020</code> and <code>2021</code> as a transition period.</p>
+<p>To keep this focused on complaints, I mainly looked at <code>1</code> and <code>2</code> star reviews.</p>
+<p>That gives:</p>
+<ul><li><code>796</code> low-star older reviews</li><li><code>4,918</code> low-star recent reviews</li></ul>
+<p>The dates are estimated from Google's relative dates, so they are not exact to the month. But they are good enough to compare pre-pandemic and post-pandemic complaint language.</p>
+<h2 id="older-vs-recent-headline">Headline</h2>
+<p>The main finding is not that old complaints disappeared.</p>
+<p>It is the opposite.</p>
+<p>Most of the core complaints in the older reviews are still here in the recent reviews:</p>
+<ul><li>hard to get an appointment</li><li>phone lines not being answered</li><li>the <code>8am</code> rush</li><li>rude or unhelpful reception</li><li>being sent round in circles</li></ul>
+<p>So there are very few robust older complaint types that literally vanish.</p>
+<p>The stronger shift is on the recent side. Post-pandemic reviews add a new layer of complaints about:</p>
+<ul><li>online forms</li><li>named digital systems like <code>AskMyGP</code>, <code>PATCHS</code>, and the <code>NHS App</code></li><li>triage as a system patients have to get through</li><li>phone or telephone consultations</li><li>trouble getting a face-to-face appointment</li></ul>
+<p>So the old problems mostly stay. The newer problems sit on top of them.</p>
+<h2 id="older-vs-recent-what-did-not-go-away">What Did Not Go Away</h2>
+<p>Some of the most familiar complaints are still common in both periods.</p>
+<p>Examples:</p>
+<ul><li><code>8am</code> race language appears in <code>32</code> older low-star reviews and <code>239</code> recent low-star reviews</li><li>"can't get an appointment" type wording appears in both periods</li><li>"never answer the phone" type wording appears in <code>14</code> older low-star reviews and <code>83</code> recent low-star reviews</li></ul>
+<p>That matters because it means the post-pandemic story is not a clean replacement story. It is not "the old queue vanished and a new digital queue arrived." It is more like the old bottlenecks stayed, then digital bottlenecks were added.</p>
+<h2 id="older-vs-recent-older-complaints-that-fade-rather-than-vanish">Older Complaints That Fade, Rather Than Vanish</h2>
+<p>I could not find many strong older-only complaint families that are truly absent now.</p>
+<p>What I did find is a set of more physical, on-site, pre-digital complaints that feel more at home in the older reviews, even though some still appear later.</p>
+<h3 id="older-vs-recent-1-walk-in-centre-frustration">1. Walk-in centre frustration</h3>
+<p>Walk-in-centre complaints are more visible in the older low-star set than the recent one.</p>
+<ul><li><code>17</code> older low-star reviews, <code>2.1%</code> of older low-star reviews</li><li><code>55</code> recent low-star reviews, <code>1.1%</code> of recent low-star reviews</li></ul>
+<p>This is not gone in recent reviews, but it is less central.</p>
+<p>Older examples:</p>
+<blockquote><p>"Arrived for walk in centre then told to come back at 1pm then when people arrived at 2pm they said they had no more walk in centre appointments."</p></blockquote>
+<blockquote><p>Debra Farricker, <code>Hawthorn MC</code>, <code>7 years ago</code></p></blockquote>
+<blockquote><p>"Waited 3 hours for the walk in centre and still didn't get seen"</p></blockquote>
+<blockquote><p>Mohamed Zifar, <code>Hawthorn MC</code>, <code>9 years ago</code></p></blockquote>
+<p>This older pattern feels tied to a more physical model of access: turn up, wait, hope to be seen, get turned away.</p>
+<h3 id="older-vs-recent-2-waiting-room-and-on-site-delay-complaints">2. Waiting-room and on-site delay complaints</h3>
+<p>Waiting-room complaints are also relatively more common in the older low-star set.</p>
+<ul><li><code>14</code> older low-star reviews, <code>1.8%</code></li><li><code>38</code> recent low-star reviews, <code>0.8%</code></li></ul>
+<p>Again, they do not disappear. But they look less central than the newer digital-route complaints.</p>
+<p>This fits the broader shift in the corpus. Older complaints more often sound like people are already in or near the building. Recent complaints more often happen before patients get that far.</p>
+<h2 id="older-vs-recent-what-is-new-in-recent-reviews">What Is New In Recent Reviews</h2>
+<p>This is where the change is much clearer.</p>
+<h3 id="older-vs-recent-1-named-digital-gateways-are-a-genuinely-recent-complaint-form">1. Named digital gateways are a genuinely recent complaint form</h3>
+<p>These terms do not appear as older low-star complaints in the <code>2016</code> to <code>2019</code> slice:</p>
+<ul><li><code>AskMyGP</code>: <code>0</code> older, <code>32</code> recent</li><li><code>PATCHS</code>: <code>0</code> older, <code>19</code> recent</li><li><code>NHS App</code>: <code>0</code> older, <code>46</code> recent</li><li><code>online form</code>: <code>0</code> older, <code>52</code> recent</li></ul>
+<p>That is the cleanest recent-only shift in the corpus.</p>
+<p>These are not just new words. They point to a different front door.</p>
+<p>Recent examples:</p>
+<blockquote><p>"Elderly mum unable to get an appointment not able to use online form and won’t book an appointment over the phone."</p></blockquote>
+<blockquote><p>Sam Rothwell, <code>Kearsley Medical Centre</code>, <code>a year ago</code></p></blockquote>
+<blockquote><p>"Been on the website to complete the online form every day this week for it to be turned off before 8.40?"</p></blockquote>
+<blockquote><p>Mell Lewis, <code>Cornishway Group Practice</code>, <code>Edited 3 years ago</code></p></blockquote>
+<blockquote><p>"They do not respond to emails, and AskMyGP is always closed."</p></blockquote>
+<blockquote><p>Joey Howard-White, <code>Tower Family Healthcare</code>, <code>2 years ago</code></p></blockquote>
+<blockquote><p>"I rang this morning at 8am and went on the NHS app at the same time for an appointment. No appointments left on the app and 10th in queue on the phone."</p></blockquote>
+<blockquote><p>John 3v16, <code>Alkrington Junction Practice</code>, <code>a year ago</code></p></blockquote>
+<p>The old complaint was often "I cannot get through." The newer complaint is often "every route is shut at once."</p>
+<h3 id="older-vs-recent-2-the-website-and-online-form-gate-becomes-much-more-common">2. The website and online-form gate becomes much more common</h3>
+<p>If I widen out from named systems to the broader digital front door, the shift is large:</p>
+<ul><li><code>8</code> older low-star reviews, <code>1.0%</code> of older low-star reviews</li><li><code>294</code> recent low-star reviews, <code>6.0%</code> of recent low-star reviews</li></ul>
+<p>That is one of the clearest differences between the two periods.</p>
+<p>Patients now complain not just about delay, but about being pushed into a system that:</p>
+<ul><li>fills up early</li><li>gives no answer</li><li>is hard to find</li><li>does not work for older or less digital patients</li><li>can leave them stuck between phone and online routes</li></ul>
+<h3 id="older-vs-recent-3-phone-consultation-and-remote-first-language-are-new-complaint-shapes">3. Phone consultation and remote-first language are new complaint shapes</h3>
+<p>The older reviews barely use this language.</p>
+<ul><li><code>phone or telephone consultation</code>: <code>2</code> older low-star reviews, <code>0.3%</code>; <code>59</code> recent, <code>1.2%</code></li><li><code>triage</code>: <code>2</code> older low-star reviews, <code>0.3%</code>; <code>48</code> recent, <code>1.0%</code></li></ul>
+<p>This is a real change in how patients describe the service.</p>
+<p>Recent examples:</p>
+<blockquote><p>"A month waiting for telephone consultation."</p></blockquote>
+<blockquote><p>Joanna Wnorowska, <code>Swan Lane Medical Centre</code>, <code>3 years ago</code></p></blockquote>
+<blockquote><p>"Asked to make a telephone consultation. Impossible to get through on phone."</p></blockquote>
+<blockquote><p>Seánie H, <code>Red Bank Group Practice</code>, <code>2 years ago</code></p></blockquote>
+<p>This complaint language is different from the older walk-in or front-desk complaint style. It shows patients navigating a system where the first contact is often remote, delayed, or uncertain.</p>
+<h3 id="older-vs-recent-4-face-to-face-appointments-become-a-complaint-topic-in-their-own-right">4. Face-to-face appointments become a complaint topic in their own right</h3>
+<p>This is one of the sharpest recent changes.</p>
+<ul><li><code>4</code> older low-star reviews, <code>0.5%</code></li><li><code>112</code> recent low-star reviews, <code>2.3%</code></li></ul>
+<p>That does not mean older patients did not want face-to-face appointments. It means the complaint language changes. In the recent reviews, patients often talk about face-to-face access itself as a scarce or withheld thing.</p>
+<p>Recent example:</p>
+<blockquote><p>"Very difficult to make an appointment, expected to be in all day for a phone call, difficult to arrange a face to face appointment"</p></blockquote>
+<blockquote><p>john clarke, <code>Barlow Medical Centre</code>, <code>3 years ago</code></p></blockquote>
+<p>That is a more post-pandemic form of frustration. The problem is not only getting help. It is getting help in the form patients think they need.</p>
+<h2 id="older-vs-recent-what-this-means">What This Means</h2>
+<p>The older-versus-recent picture is not a clean swap from one complaint world to another.</p>
+<p>It is more like this:</p>
+<h3 id="older-vs-recent-1-the-old-complaints-stay">1. The old complaints stay</h3>
+<p>Patients still complain about:</p>
+<ul><li>phones</li><li>appointments</li><li>rude reception</li><li>being told to try again tomorrow</li><li>getting stuck in loops</li></ul>
+<p>So the service did not move on from those problems.</p>
+<h3 id="older-vs-recent-2-the-newer-system-adds-extra-points-of-failure">2. The newer system adds extra points of failure</h3>
+<p>Recent reviews add:</p>
+<ul><li>online form closures</li><li>app-based dead ends</li><li>named triage systems</li><li>remote-first contact</li><li>uncertainty about face-to-face care</li></ul>
+<p>So patients are not just facing the old access problems in a modern form. They are often facing more layers than before.</p>
+<h3 id="older-vs-recent-3-the-point-of-failure-moves-further-upstream">3. The point of failure moves further upstream</h3>
+<p>Older complaints more often sound like:</p>
+<ul><li>I turned up</li><li>I waited</li><li>I was told to come back</li><li>I sat there for hours</li></ul>
+<p>Recent complaints more often sound like:</p>
+<ul><li>I filled in the form</li><li>the form was closed</li><li>the app had nothing</li><li>I was waiting for a callback</li><li>I could not get a face-to-face appointment</li></ul>
+<p>That is an important change.</p>
+<p>The struggle now often happens before the patient reaches the room, the desk, or the clinician.</p>
+<h2 id="older-vs-recent-bottom-line">Bottom Line</h2>
+<p>The strongest result here is continuity plus layering.</p>
+<p>There are very few older complaint types that truly disappear from the post-pandemic reviews. The core access complaints are stubborn and long-running.</p>
+<p>What changes in the recent reviews is the route through which patients experience those problems.</p>
+<p>The newer complaint language is much more about:</p>
+<ul><li>digital gatekeeping</li><li>app and form dependency</li><li>remote-first handling</li><li>triage</li><li>the extra step of having to win a face-to-face appointment</li></ul>
+<p>So the post-pandemic review corpus does not read like a new problem replacing an old one.</p>
+<p>It reads like the same old access failures, with a new digital layer added on top.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">How Patients Talk About Staff And Clinicians</span>
+                  <span class="report-panel-description">This note looks at the people who actually handle patient care in the review corpus:</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/staff-and-clinician-experience-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/staff-and-clinician-experience-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This note looks at the people who actually handle patient care in the review corpus:</p>
+<ul><li>reception and admin staff</li><li>nurses</li><li>doctors</li><li>named individuals who are praised repeatedly</li></ul>
+<p>It is based on the indexed Google review corpus of <code>16,293</code> reviews.</p>
+<p>This is not a league table of good and bad staff.</p>
+<p>For the positive side, I do name individuals where patients repeatedly praise them by name in public reviews. That is useful because it shows what patients value when care feels good.</p>
+<p>For the negative side, I do <strong>not</strong> build a list of named staff. I stick to the issues patients describe: what went wrong, what kind of behaviour upset them, and what decisions or mistakes they object to.</p>
+<h2 id="staff-and-clinicians-the-big-picture">The Big Picture</h2>
+<p>Across the corpus, patients do not just review "the practice". They often talk about people.</p>
+<p>That matters because a lot of the patient experience is carried by:</p>
+<ul><li>the receptionist who answers or blocks the call</li><li>the nurse who explains what is happening</li><li>the GP who listens, reassures, or does not</li><li>the admin person who sorts a prescription, referral, or follow-up</li></ul>
+<p>The review language makes this very clear. Patients often judge the whole practice through one or two human encounters.</p>
+<h2 id="staff-and-clinicians-what-patients-praise-most">What Patients Praise Most</h2>
+<h3 id="staff-and-clinicians-1-clinicians-who-listen-explain-and-reassure">1. Clinicians who listen, explain, and reassure</h3>
+<p>This is the strongest positive theme in the whole corpus.</p>
+<p><code>4,418</code> high-star reviews, <code>27.1%</code> of all reviews and <code>47.4%</code> of <code>4</code> and <code>5</code> star reviews, mention helpful, caring, kind, listening, reassuring, professional, thorough, or compassionate care.</p>
+<p>That is a huge signal.</p>
+<p>When patients are really happy, they often do not praise technical medicine in abstract terms. They praise:</p>
+<ul><li>being listened to</li><li>not being rushed</li><li>clear explanations</li><li>feeling safe</li><li>being taken seriously</li></ul>
+<p>Examples:</p>
+<blockquote><p>"Extremely helpful and caring doctors. Always feel listened to and well looked after."</p></blockquote>
+<blockquote><p>Tahreem F, <code>Ailsa Craig Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"The doctors are all very helpful and again excel in your treatment I feel safe and listened to at this practice."</p></blockquote>
+<blockquote><p>Mick Edgerley, <code>Deane Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"A very knowledgeable practitioner who listened and was very caring."</p></blockquote>
+<blockquote><p>Helen Smith, <code>The Poplars Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<h3 id="staff-and-clinicians-2-reception-staff-who-make-things-easier-not-harder">2. Reception staff who make things easier, not harder</h3>
+<p>Patients also praise front-desk staff a lot when they feel welcomed and helped.</p>
+<p><code>2,399</code> high-star reviews, <code>14.7%</code> of all reviews and <code>25.7%</code> of high-star reviews, mention friendly, welcoming, respectful, lovely, or polite staff.</p>
+<p>This matters because it is the mirror image of one of the biggest complaint themes. Reception is not a side issue. In the reviews, it often decides whether patients feel the practice is humane or hostile.</p>
+<p>Examples:</p>
+<blockquote><p>"Friendly staff on reception and helpful"</p></blockquote>
+<blockquote><p>caroline daniels, <code>RK Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Excellent practice with friendly and helpful reception staff."</p></blockquote>
+<blockquote><p>Matthew Delooze, <code>Bodey Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Staff in reception are super helpful and friendly."</p></blockquote>
+<blockquote><p>River Area, <code>Bolton Medical Centre</code>, <code>5</code> stars</p></blockquote>
+<h3 id="staff-and-clinicians-3-staff-who-actively-sort-problems">3. Staff who actively sort problems</h3>
+<p>There is another pattern in the positive reviews that matters a lot.</p>
+<p>Patients especially value people who do something practical:</p>
+<ul><li>get the appointment sorted</li><li>chase the issue</li><li>fix a prescription problem</li><li>call back quickly</li><li>explain the next step clearly</li></ul>
+<p>The warm tone matters, but patients often praise warmth plus action.</p>
+<p>Example:</p>
+<blockquote><p>"Spoke to leanne on reception this afternoon who listen to me and was first class ... answered my concerns and made me feel so much at ease."</p></blockquote>
+<blockquote><p>James Molloy, <code>The Poplars Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<h2 id="staff-and-clinicians-repeatedly-praised-named-individuals">Repeatedly Praised Named Individuals</h2>
+<p>This section is not a ranking. It is a record of where the corpus contains repeated public praise for named individuals.</p>
+<p>I only use the positive side here, and I am cautious about it:</p>
+<ul><li>some names are common surnames across several practices</li><li>some recent reviews include practice-response text, which can inflate name mentions</li><li>so the safest cases are names clearly concentrated in one practice and backed by direct patient praise</li></ul>
+<h3 id="staff-and-clinicians-dr-suchit-the-range-medical-centre">Dr Suchit, <code>The Range Medical Centre</code></h3>
+<p><code>52</code> reviews mention <code>Suchit</code>, with an average rating of <code>4.88</code>. Almost all are positive, and the signal is unusually concentrated.</p>
+<p>What patients praise:</p>
+<ul><li>listening</li><li>being thorough</li><li>being understanding</li><li>not rushing the consultation</li></ul>
+<p>Examples:</p>
+<blockquote><p>"My daughter was seen by Dr Suchit today, he is very understanding, listened to all my concerns and didn't rush for the consultation."</p></blockquote>
+<blockquote><p>Ayesha, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Dr Suchit is knowledgeable, professional and thoughtful."</p></blockquote>
+<blockquote><p>Chan Doris, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Dr Suchit was a very good listener and thorough during my appointment."</p></blockquote>
+<blockquote><p>Milton Mendes, <code>5</code> stars</p></blockquote>
+<h3 id="staff-and-clinicians-dr-arif-the-range-medical-centre">Dr Arif, <code>The Range Medical Centre</code></h3>
+<p><code>41</code> reviews mention <code>Arif</code>, average rating <code>4.71</code>. Again, the praise is concentrated and strong.</p>
+<p>What patients praise:</p>
+<ul><li>being easy to talk to</li><li>friendliness</li><li>attentiveness</li><li>making the patient feel relieved</li></ul>
+<p>Examples:</p>
+<blockquote><p>"Dr Arif was very helpful and attentive!"</p></blockquote>
+<blockquote><p>Anne Wakomo, <code>5</code> stars</p></blockquote>
+<blockquote><p>"I had nice experience with Dr Arif today. She is so nice and friendly. After talking to her, I became relieved."</p></blockquote>
+<blockquote><p>Hannah Deblu, <code>5</code> stars</p></blockquote>
+<h3 id="staff-and-clinicians-dr-pigney-ladybarn-group-practice">Dr Pigney, <code>LADYBARN GROUP PRACTICE</code></h3>
+<p><code>27</code> reviews mention <code>Pigney</code>, average rating <code>4.63</code>.</p>
+<p>What patients praise:</p>
+<ul><li>minor surgery care</li><li>detailed explanations</li><li>making people feel comfortable</li><li>listening well</li></ul>
+<p>Examples:</p>
+<blockquote><p>"The service I have had for my minor surgery is outstanding ... very professional, explains all in great detail and makes me feel as comfortable as possible."</p></blockquote>
+<blockquote><p>Beth Oconnor, <code>5</code> stars</p></blockquote>
+<blockquote><p>"I felt very comfortable talking to her and she really listened, and gave the best advice possible."</p></blockquote>
+<blockquote><p>Anila Mushtaq, <code>5</code> stars</p></blockquote>
+<h3 id="staff-and-clinicians-dr-ibrahim-mainly-harwood-medical-centre">Dr Ibrahim, mainly <code>Harwood Medical Centre</code></h3>
+<p><code>37</code> reviews mention <code>Ibrahim</code>, average rating <code>4.49</code>, with the strongest cluster at <code>Harwood Medical Centre</code>.</p>
+<p>What patients praise:</p>
+<ul><li>compassion</li><li>support</li><li>reassurance</li><li>sticking with patients through longer treatment or recovery</li></ul>
+<p>Examples:</p>
+<blockquote><p>"Dr ibrahim listened to my concerns, was supportive and reactive."</p></blockquote>
+<blockquote><p>Kath Taylor, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Excellent care and compassion shown by Dr Ibrahim."</p></blockquote>
+<blockquote><p>Alastair Bell, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Dr Ibrahim has been so helpful and understanding. He is kind and knowledgable."</p></blockquote>
+<blockquote><p>Sheila Darby, <code>5</code> stars</p></blockquote>
+<h3 id="staff-and-clinicians-named-reception-and-admin-praise">Named reception and admin praise</h3>
+<p>There are fewer strong repeated named admin signals than named doctor signals, but they do exist.</p>
+<p>Examples:</p>
+<blockquote><p>"Just wanted to say a big thank you to Leanne for her help today ... Leanne was very polite, pleasant and helpful."</p></blockquote>
+<blockquote><p>Jackie Turner, <code>The Poplars Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"Leanne has gone the extra mile yet again and managed to get an appointment ... she is always efficient and such a pleasant attitude and patience for everyone."</p></blockquote>
+<blockquote><p>Ann Swift, <code>The Poplars Medical Practice</code>, <code>5</code> stars</p></blockquote>
+<blockquote><p>"the reception team has been incredibly welcoming and helpful, especially Nabila, who always goes above and beyond to assist with any queries."</p></blockquote>
+<blockquote><p>HDS Driving School, <code>The Whitswood Practice</code>, <code>5</code> stars</p></blockquote>
+<p>This is useful because it shows that patients do notice specific front-desk people when they reduce stress instead of adding to it.</p>
+<h2 id="staff-and-clinicians-what-patients-criticise-most">What Patients Criticise Most</h2>
+<h3 id="staff-and-clinicians-1-rude-dismissive-or-hostile-staff-attitude">1. Rude, dismissive, or hostile staff attitude</h3>
+<p>This is one of the strongest complaint themes in the corpus.</p>
+<p><code>1,650</code> low-star reviews, <code>10.1%</code> of all reviews and <code>25.0%</code> of <code>1</code> and <code>2</code> star reviews, hit a clear staff-attitude bucket.</p>
+<p>Patients complain about:</p>
+<ul><li>rude reception</li><li>being spoken over</li><li>impatience</li><li>hostility</li><li>feeling belittled or brushed off</li></ul>
+<p>Examples:</p>
+<blockquote><p>"Reception staff so rude and unhelpful!!!!"</p></blockquote>
+<blockquote><p><code>Mandalay Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"Reception staff very rude and unhelpful"</p></blockquote>
+<blockquote><p><code>Wellfield Medical Centre</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"One of the reception staff is unhelpful and rude, and she is impatient when you have queries."</p></blockquote>
+<blockquote><p><code>Ardwick Medical Practice</code>, <code>1</code> star</p></blockquote>
+<p>This is not just a tone complaint. In a lot of reviews, rude handling is part of being blocked from care.</p>
+<h3 id="staff-and-clinicians-2-not-being-listened-to">2. Not being listened to</h3>
+<p><code>477</code> low-star reviews, <code>2.9%</code> of all reviews and <code>7.2%</code> of low-star reviews, hit a bucket around being ignored, rushed, or not properly heard.</p>
+<p>The numbers here are probably an underestimate, because patients often describe this without using neat keywords.</p>
+<p>What patients object to:</p>
+<ul><li>feeling rushed</li><li>not being believed</li><li>not having concerns properly heard</li><li>poor explanation</li></ul>
+<p>This is one place where the reviews are especially useful. The patient survey asks whether a professional listened. The reviews show what it feels like when patients think they did not.</p>
+<h3 id="staff-and-clinicians-3-clinical-trust-failures">3. Clinical trust failures</h3>
+<p><code>707</code> low-star reviews, <code>4.3%</code> of all reviews and <code>10.7%</code> of low-star reviews, mention diagnosis, prescribing, treatment, or negligence-type language.</p>
+<p>This is the sharpest complaint area in terms of risk and trust.</p>
+<p>Examples:</p>
+<blockquote><p>"Be careful with this practice, misdiagnosed my uncle after months of going back and forth."</p></blockquote>
+<blockquote><p><code>RADCLIFFE MEDICAL PRACTICE</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"misdiagnosed a communicable infection - the WORST practice I have ever had to attend."</p></blockquote>
+<blockquote><p><code>The Alastair Ross Medical Practice</code>, <code>1</code> star</p></blockquote>
+<blockquote><p>"I've had a terrible time at this practice, I've been misdiagnosed, I've had results that weren't reported to me and it is an impossible task to book an appointment."</p></blockquote>
+<blockquote><p><code>Bolton Community Practice CIC - Ladybridge Surgery</code>, <code>1</code> star</p></blockquote>
+<p>Here again, the issue is not just bedside manner. It is whether patients trust the judgment, follow-through, and safety of what happened.</p>
+<h3 id="staff-and-clinicians-4-decisions-and-processes-patients-feel-are-unreasonable">4. Decisions and processes patients feel are unreasonable</h3>
+<p>The negative reviews also point to a set of recurring decisions and handling styles that patients strongly dislike:</p>
+<ul><li>being told to go online when they cannot</li><li>being told to call back tomorrow</li><li>being left waiting for callbacks or results</li><li>difficulty with repeat prescriptions</li><li>feeling the staff member is defending the system instead of solving the problem</li></ul>
+<p>Example:</p>
+<blockquote><p>"I never knew it would be so difficult to get a repeat prescription for Omeprazole."</p></blockquote>
+<blockquote><p><code>Brooklands Medical Practice</code>, <code>1</code> star</p></blockquote>
+<p>This is important because it shows that many complaints are about judgement as much as delay. Patients do not only dislike waiting. They dislike decisions that feel rigid, unfair, or careless.</p>
+<h2 id="staff-and-clinicians-what-good-care-looks-like-in-patient-language">What Good Care Looks Like In Patient Language</h2>
+<p>If you strip the reviews back to what patients seem to want from the people handling their care, the pattern is very plain.</p>
+<p>Patients value staff and clinicians who:</p>
+<ul><li>listen properly</li><li>explain clearly</li><li>do not rush</li><li>are kind without being vague</li><li>solve practical problems</li><li>make people feel safe</li><li>treat them like a person, not an inconvenience</li></ul>
+<p>Patients dislike staff and clinicians who:</p>
+<ul><li>sound rude or defensive</li><li>appear impatient</li><li>do not explain what is happening</li><li>seem not to believe them</li><li>make them chase the same thing repeatedly</li><li>leave them stuck between systems</li></ul>
+<p>That sounds obvious, but the review corpus makes it much more concrete than a survey score does.</p>
+<h2 id="staff-and-clinicians-what-this-means">What This Means</h2>
+<p>There are two big lessons here.</p>
+<h3 id="staff-and-clinicians-1-people-matter-as-much-as-process">1. People matter as much as process</h3>
+<p>The corpus already shows how important access systems are. But inside those systems, patients still experience care through human beings.</p>
+<p>A bad appointment route plus a kind receptionist can still leave someone feeling helped.</p>
+<p>A working appointment route plus a dismissive clinician can still leave someone furious.</p>
+<h3 id="staff-and-clinicians-2-patients-reward-both-kindness-and-competence">2. Patients reward both kindness and competence</h3>
+<p>The strongest positive named praise is not just "nice doctor" praise.</p>
+<p>It is praise for doctors and staff who are:</p>
+<ul><li>kind</li><li>listening</li><li>thorough</li><li>reassuring</li><li>effective</li></ul>
+<p>And the strongest complaints are not just "long wait" complaints.</p>
+<p>They are complaints where delay is mixed with disrespect, weak judgment, poor explanation, or failure to carry something through.</p>
+<h2 id="staff-and-clinicians-bottom-line">Bottom Line</h2>
+<p>Across this corpus, patients do not talk about staff and clinicians in a vague way.</p>
+<p>They are very clear about what good care feels like:</p>
+<ul><li>listened to</li><li>reassured</li><li>helped</li><li>taken seriously</li><li>sorted out</li></ul>
+<p>And they are very clear about what bad care feels like:</p>
+<ul><li>rude</li><li>dismissive</li><li>rushed</li><li>unsafe</li><li>unreliable</li></ul>
+<p>The positive-name signals suggest that some individual clinicians and staff leave a very strong good impression in public reviews. The negative side suggests that when patients are upset, the biggest issue is usually not one bad personality in isolation. It is the mix of tone, judgment, and system handling that makes them feel shut out or badly cared for.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">Clinical Harm Warning Signs In Google Reviews</span>
+                  <span class="report-panel-description">This report looks for reviews that sound like possible clinical harm, not just bad service.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/clinical-harm-warning-signs-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/clinical-harm-warning-signs-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This report looks for reviews that sound like possible clinical harm, not just bad service.</p>
+<p>The aim is not to prove wrongdoing from reviews alone. It is to flag where the review corpus contains warning signs that deserve checking in notes, complaints, SEA work, prescribing audit, and local quality review. This is also an area the national patient survey barely touches. Patients are asked about access, confidence, and experience, but not plainly whether they felt misdiagnosed, got the wrong treatment, became more unwell after contact, or ended up in hospital after being dismissed.</p>
+<h2 id="clinical-harm-what-i-counted">What I counted</h2>
+<p>I took a cautious pass through the indexed review corpus and focused on 1-star and 2-star reviews only.</p>
+<p>I stripped practice-response text where possible, then flagged reviews with one or more of these markers:</p>
+<ul><li>direct mention of misdiagnosis or wrong diagnosis</li><li>direct mention of wrong or unsafe medication</li><li>negligence, dangerous, or unsafe language</li><li>being ignored, dismissed, or not listened to when that was linked to deterioration</li><li>ending up in hospital, A&amp;E, or emergency care in a clinically connected way</li><li>severe outcome terms like sepsis, pneumonia, cancer, meningitis, appendicitis, stroke, heart attack, or "nearly died"</li></ul>
+<p>These categories overlap. A single review can hit more than one.</p>
+<h2 id="clinical-harm-headline-findings">Headline Findings</h2>
+<ul><li><code>420</code> reviews were flagged as clinical harm warning signals.</li><li>That is <code>2.6%</code> of all <code>16,293</code> reviews in the corpus.</li><li>It is <code>6.4%</code> of all <code>6,604</code> low-star reviews.</li><li><code>154</code> low-star reviews used more direct failure language such as misdiagnosis, wrong medication, negligence, danger, or unsafe care.</li><li><code>293</code> low-star reviews described connected outcomes or escalation such as deterioration, hospital care, A&amp;E, or a serious condition. There is overlap between these groups.</li><li><code>125</code> practices had at least one flagged review.</li><li><code>75</code> practices had at least three flagged reviews.</li><li><code>27</code> practices had at least five flagged reviews.</li></ul>
+<p>This is not most reviews. It is still a substantial enough slice to matter, especially because these are not ordinary complaints about phones, queues, or rude reception. These are the reviews where patients say care itself may have gone wrong.</p>
+<h2 id="clinical-harm-extension-reported-harm-to-real-patients">Extension: Reported Harm To Real Patients</h2>
+<p>The first pass above was about warning signs in clinical care. This extension shifts the focus to outcome.</p>
+<p>Here the question is simpler: when reviewers say something went badly wrong, how often do they also say a real person got sicker, waited too long, missed needed care, ended up in hospital, or suffered a serious health consequence?</p>
+<p>Again, these are reported accusations in reviews, not proven findings. But they are still highly important because they describe harm in patient terms rather than service terms.</p>
+<h3 id="clinical-harm-outcome-led-findings">Outcome-Led Findings</h3>
+<ul><li><code>69</code> flagged reviews said care was delayed or postponed in a way the reviewer linked to harm</li><li><code>19</code> flagged reviews explicitly said the patient got worse, deteriorated, or became more unwell</li><li><code>15</code> flagged reviews said treatment, prescribing, or missed treatment actively made the patient more ill</li><li><code>164</code> flagged reviews described hospital, A&amp;E, ambulance, or emergency escalation in clinically connected situations</li><li><code>87</code> flagged reviews mentioned a serious condition, near miss, or life-threatening consequence such as sepsis, pneumonia, appendicitis, cancer, emergency surgery, or "could have died"</li></ul>
+<p>These buckets overlap heavily. The same review may describe delay, then deterioration, then hospital admission.</p>
+<h3 id="clinical-harm-5-delayed-care-that-reviewers-link-to-harm">5. Delayed Care That Reviewers Link To Harm</h3>
+<p>I found <code>69</code> reviews where the complaint was not just "it took too long", but "it took too long and harm followed".</p>
+<p>This is where admin and clinical risk blur together. A missed callback, no antibiotics, weeks waiting for medication, or repeated failure to arrange review may start as a process issue. In the reviews, patients describe that delay as part of the route to becoming more unwell.</p>
+<p>Examples:</p>
+<ul><li><code>Ashville Surgery</code>: one reviewer wrote they had "stress induced heart failure" and were still "waiting a whole month" for prescription or referral follow-up</li><li><code>Barlow Medical Centre</code>: one reviewer described blood pressure of <code>204/110</code>, being told to go to A&amp;E if symptoms worsened, but being given no medication to control it</li><li><code>The Robert Darbishire Practice</code>: reviews repeatedly link missed prescriptions, no follow-up, and late contact to hospital attendance and distress</li><li><code>Cornerstone Family Practice</code>: one reviewer said they waited two weeks for an appointment and then arrived to find "no doctor was around to see me"</li></ul>
+<p>This matters because, from the patient side, harm often does not look like one dramatic mistake. It looks like repeated delay until the person crosses into crisis.</p>
+<h3 id="clinical-harm-6-reviewers-saying-they-got-worse">6. Reviewers Saying They Got Worse</h3>
+<p>I found <code>19</code> reviews that explicitly used worsening language like "got worse", "deteriorated", or the equivalent.</p>
+<p>This is a small count only because I kept it tight. Many other reviews imply worsening without using those exact words.</p>
+<p>Examples:</p>
+<ul><li><code>West Point Medical Centre</code>: "misdiagnosed me twice and resultantly my situation worsened"</li><li><code>Benchill Medical Practice</code>: one parent described a child with a serious eye problem where the surgery was said to show "no urgency" while the condition worsened</li><li><code>Bolton Medical Centre</code>: one reviewer described severe stomach pain, nausea, and inability to walk, then tied the poor response to a worsening situation</li></ul>
+<p>When patients use this kind of language they are no longer just rating the encounter. They are giving their own before-and-after account of health.</p>
+<h3 id="clinical-harm-7-cases-where-reviewers-say-care-or-treatment-made-them-more-ill">7. Cases Where Reviewers Say Care Or Treatment Made Them More Ill</h3>
+<p>I found <code>15</code> reviews where patients directly linked treatment, prescribing, or failure to provide the right treatment with becoming more ill.</p>
+<p>Examples:</p>
+<ul><li><code>Tower Family Healthcare Minden</code>: "Got given the wrong medication ... Make me very poorly and took me weeks to get off them"</li><li><code>The Park Medical Centre</code>: one reviewer said wrong diagnosis and medication led to "multiple ae trips that could have been prevented"</li><li><code>Hawthorn MC</code>: one reviewer described an allergic reaction to medication with swollen lips, ulcers, and redness</li><li><code>Gordon Street Medical Centre</code>: one reviewer said they were given the wrong medication three times in a row despite repeated warning</li></ul>
+<p>This is one of the clearest high-risk themes in the corpus because the reviewer is not only unhappy. They are saying the intervention itself, or the failure to intervene properly, caused bodily harm.</p>
+<h3 id="clinical-harm-8-emergency-escalation-and-near-miss-accounts">8. Emergency Escalation And Near-Miss Accounts</h3>
+<p>The biggest outcome signal is escalation outside the practice. I found <code>164</code> clinically connected hospital or emergency-escalation reviews, plus <code>87</code> reviews mentioning serious conditions or near misses.</p>
+<p>These are the reviews where patients say the situation ended up in A&amp;E, hospital, emergency surgery, sepsis, pneumonia, suspected cancer, appendicitis, or even a near-death account.</p>
+<p>Examples:</p>
+<ul><li><code>Hattersley Group Practice</code>: one reviewer wrote they were "treated like i was hypochondriac, then ended up on life support"</li><li><code>Halliwell Surgery 2</code> and <code>Halliwell Surgery 3</code>: one reviewer said they were denied antibiotics, then hours later were diagnosed in hospital with severe pneumonia and "could of died"</li><li><code>STONEHILL MEDICAL CENTRE</code>: one review said a patient's sepsis was missed and "we nearly lost him"</li><li><code>The Poplars Medical Practice</code>: one reviewer said appendicitis was misdiagnosed as gastritis and they only avoided a worse outcome because they went to A&amp;E anyway</li><li><code>Tregenna Group Practice</code>: one reviewer wrote their father was not tested for prostate cancer despite repeated requests and by the time it was found it was "so advanced he was inoperable"</li></ul>
+<p>This is the part of the corpus that is hardest to dismiss as ordinary frustration. Even allowing for exaggeration in some reviews, the language is repeatedly about danger, emergency rescue, and conditions that patients understood as serious threats to life or long-term health.</p>
+<h2 id="clinical-harm-repeated-outcome-flags-by-practice">Repeated Outcome Flags By Practice</h2>
+<p>If the question is where patient-reported harm sounds most serious, the most useful signal is not one quote but repeated outcome-led reviews.</p>
+<h3 id="clinical-harm-most-repeated-serious-condition-or-near-miss-mentions">Most repeated serious-condition or near-miss mentions</h3>
+<p>| Practice | Serious-condition or near-miss reviews | Share of all reviews | | --- | ---: | ---: | | Northenden Group Practice | 4 | 6.2% | | Cornerstone Family Practice | 3 | 8.3% | | Lime Square Medical Centre | 3 | 6.6% | | The Robert Darbishire Practice | 3 | 5.8% | | Monarch Medical Centre | 2 | 10.3% | | Woodlands Medical Practice | 2 | 8.3% | | Tower Family Healthcare Minden | 2 | 7.8% | | STONEHILL MEDICAL CENTRE | 2 | 5.0% |</p>
+<h3 id="clinical-harm-most-repeated-emergency-escalation-mentions">Most repeated emergency-escalation mentions</h3>
+<p>| Practice | Hospital or emergency-escalation reviews | Share of all reviews | | --- | ---: | ---: | | Florence House Medical Practice | 8 | 8.3% | | Hawthorn MC | 7 | 3.9% | | Droylsden Road Surgery Branch | 6 | 12.7% | | Ashton Gp Service | 6 | 8.7% | | The Robert Darbishire Practice | 5 | 5.8% | | Lindley House Health Centre | 4 | 8.1% | | STONEHILL MEDICAL CENTRE | 4 | 5.0% | | Monarch Medical Centre | 3 | 10.3% |</p>
+<h3 id="clinical-harm-practices-that-recur-across-several-harm-outcome-buckets">Practices that recur across several harm-outcome buckets</h3>
+<p>Some practices show up in several different ways at once:</p>
+<ul><li><code>The Robert Darbishire Practice</code>: repeated emergency escalation, delay-linked harm, and serious-condition mentions</li><li><code>Florence House Medical Practice</code>: a high volume of hospital or A&amp;E escalation, plus delay-linked harm</li><li><code>Lime Square Medical Centre</code>: serious-condition mentions, deterioration language, and broader harm-signal density</li><li><code>Tower Family Healthcare Minden</code>: treatment-linked harm, serious-condition mentions, and delay-linked harm</li><li><code>STONEHILL MEDICAL CENTRE</code>: emergency escalation, serious-condition language, and missed-sepsis reporting</li></ul>
+<p>These are not proof of unsafe care. They are the clearest places in the review corpus where patient-reported outcomes sound severe enough to justify deeper case review.</p>
+<h2 id="clinical-harm-the-main-warning-sign-themes">The Main Warning-Sign Themes</h2>
+<h3 id="clinical-harm-1-misdiagnosis-and-wrong-diagnosis">1. Misdiagnosis And Wrong Diagnosis</h3>
+<p>I found <code>25</code> low-star reviews with direct misdiagnosis or wrong-diagnosis language.</p>
+<p>These reviews are often short and blunt. Patients do not write in clinical language. They write things like "misdiagnosed me twice", "said it was hayfever", or "told me it was anxiety". The pattern is not just that patients disagreed with a doctor. It is that they link the judgment to later deterioration, urgent treatment, or a more serious diagnosis elsewhere.</p>
+<p>Examples:</p>
+<ul><li><code>The Poplars Medical Practice</code>: "a GP misdiagnosed my appendicitis for Gastritis. Thankfully I went to A&amp;E anyway and didnt die"</li><li><code>Five Oaks Family Practice</code>: a parent wrote that a baby was told a serious infection was "a seasonal cold", "turned out to be rsv", and later "hayfever" "turns out she has a bad infection"</li><li><code>Chorlton Family Practice</code>: one reviewer said doctors were "blaming it on anxiety" when they had an enlarged lymph node and should have been sent for further investigation</li><li><code>Tregenna Group Practice</code>: one reviewer wrote their father was not tested for prostate cancer despite "classic symptoms", and when finally tested "he was right"</li></ul>
+<p>This is one of the clearest gaps with patient-survey style questions. Survey tools ask whether patients had confidence in the clinician. They do not ask whether the patient later found out the diagnosis was wrong.</p>
+<h3 id="clinical-harm-2-wrong-medication-wrong-dose-or-unsafe-prescribing">2. Wrong Medication, Wrong Dose, Or Unsafe Prescribing</h3>
+<p>I found <code>14</code> low-star reviews with direct wrong-medication or unsafe-medication language.</p>
+<p>This is a smaller theme than access, but it is a high-risk one. These reviews often describe wrong tablets, wrong dose, somebody else's prescription, or repeat medication being mishandled in a way the patient links to getting worse.</p>
+<p>Examples:</p>
+<ul><li><code>The Park Medical Centre</code>: "constantly giving wrong diagnosis and medication which has lead to multiple ae trips that could have been prevented"</li><li><code>Tower Family Healthcare Minden</code>: "Got given the wrong medication ... Make me very poorly and took me weeks to get off them"</li><li><code>Charlestown MD</code>: one parent wrote their children had been given "wrong medication ... numerous times"</li><li><code>Blackford House Medical Centre</code>: one reviewer said they were prescribed "the wrong dose" for medication they had been on long term</li></ul>
+<p>This is worth treating separately from general prescription delays. Delays are common admin complaints. Wrong dose, wrong medicine, and medication linked to illness are different.</p>
+<h3 id="clinical-harm-3-dismissal-not-being-listened-to-then-getting-worse">3. Dismissal, Not Being Listened To, Then Getting Worse</h3>
+<p>I found <code>82</code> low-star reviews where dismissal language was tied to a harmful outcome or worsening condition.</p>
+<p>This is one of the strongest patterns in the corpus. Patients often say the main problem was not only access, but that once they did get through, they felt waved away, told it was nothing, or pushed elsewhere without real assessment. The bad outcome is often part of the same review.</p>
+<p>Examples:</p>
+<ul><li><code>Monarch Medical Centre</code>: a reviewer wrote a friend was "constantly dismissed with her pain levels" and "if she didn't go private she could have died"</li><li><code>Halliwell Surgery 2</code>: one patient wrote they were told antibiotics were not needed, then went to hospital hours later and were diagnosed with severe pneumonia</li><li><code>Peel Hall Medical Centre</code>: one reviewer said heavy bleeding was treated with pills and "it turned out i was pregnant but losing it"</li><li><code>West Point Medical Centre</code>: one reviewer said they were "misdiagnosed twice" and "resultantly my situation worsened"</li></ul>
+<p>This matters because it gets closer to perceived clinical safety than normal satisfaction questions do. The patient is not just saying "I felt brushed off". They are saying "I felt brushed off and then something bad happened."</p>
+<h3 id="clinical-harm-4-hospital-a-e-or-emergency-escalation-after-gp-contact">4. Hospital, A&amp;E, Or Emergency Escalation After GP Contact</h3>
+<p>I found <code>162</code> low-star reviews with hospital or urgent-escalation language that looked clinically connected, and <code>89</code> with severe outcome or condition terms.</p>
+<p>Some of these reviews are still mixed with access problems, but a repeated pattern shows up where patients say the surgery did not resolve the problem and they ended up in A&amp;E, in hospital, or needing urgent outside care.</p>
+<p>Examples:</p>
+<ul><li><code>Chorlton Family Practice</code>: "Took my 3yr old and they missed an infection and ended up in hospital"</li><li><code>Gorton Medical Centre</code>: "Was treated horrendously and ended up in hospital due to their incompetence"</li><li><code>Corkland Road Medical Practice</code>: one reviewer said they "deteriorated and ended up in a+e" and "basically nearly died"</li><li><code>Fairfax Group Practice</code>: one reviewer wrote "I end up going to ED same day with sepsis"</li><li><code>Woodlands Medical Practice</code>: one reviewer said a relative was sent urgently to hospital with suspected sepsis, which they felt "could have been avoided"</li></ul>
+<p>These reviews do not prove causation. But they are exactly the kind of safety signal a review corpus can surface and a normal access survey will miss.</p>
+<h2 id="clinical-harm-practice-flags-for-checking">Practice Flags For Checking</h2>
+<p>The fairest way to use this material is not to single out one dramatic quote. It is to look for repeated warning-signal reviews across different patients.</p>
+<h3 id="clinical-harm-highest-repeated-counts">Highest repeated counts</h3>
+<p>Among practices with repeated flagged reviews, the highest counts were:</p>
+<p>| Practice | Flagged reviews | Share of all reviews | | --- | ---: | ---: | | The Robert Darbishire Practice | 14 | 5.8% | | Chorlton Family Practice | 12 | 1.3% | | Florence House Medical Practice | 10 | 8.3% | | Hawthorn MC | 10 | 3.9% | | Droylsden Road Surgery Branch | 9 | 12.7% | | Cheetham Hill Medical Centre | 9 | 2.8% | | Lime Square Medical Centre | 8 | 6.6% | | Northenden Group Practice | 8 | 6.2% |</p>
+<h3 id="clinical-harm-highest-concentrations-among-practices-with-at-least-five-flagged-reviews">Highest concentrations among practices with at least five flagged reviews</h3>
+<p>These practices stand out more by concentration than by sheer volume:</p>
+<p>| Practice | Flagged reviews | Share of all reviews | | --- | ---: | ---: | | Droylsden Road Surgery Branch | 9 | 12.7% | | Ashton Gp Service | 6 | 8.7% | | Florence House Medical Practice | 10 | 8.3% | | Cornerstone Family Practice | 6 | 8.3% | | Lindley House Health Centre | 5 | 8.1% | | Tower Family Healthcare Minden | 6 | 7.8% | | Beehive Surgery | 6 | 6.7% | | Lime Square Medical Centre | 8 | 6.6% |</p>
+<p>This should not be read as a league table of unsafe practices. It is a list of where the review corpus gives repeated enough warning signs that a human check is justified.</p>
+<h2 id="clinical-harm-what-makes-these-reviews-different-from-ordinary-complaints">What Makes These Reviews Different From Ordinary Complaints</h2>
+<p>Most bad reviews in the dataset are still about access, rude interactions, repeat prescriptions, or call queues.</p>
+<p>The warning-sign subset feels different in tone and content:</p>
+<ul><li>patients talk about getting worse, not just waiting longer</li><li>patients name specific clinical consequences such as infection, pneumonia, sepsis, appendicitis, heavy bleeding, cancer, or hospital admission</li><li>patients often contrast the GP interaction with what happened later in A&amp;E, hospital, private care, or after seeing another clinician</li><li>some reviews explicitly say a serious condition was missed, that the wrong medication was given, or that a problem was wrongly put down to anxiety</li></ul>
+<p>In other words, these reviews get much closer to the question: did the care help, or did the patient feel less safe after it?</p>
+<h2 id="clinical-harm-what-to-check-next">What To Check Next</h2>
+<p>If the point is early warning rather than blame, the best next checks are:</p>
+<ul><li>review a sample of flagged cases practice by practice, especially where there are repeated signals over time</li><li>separate pure access-to-A&amp;E diversion from cases where the reviewer also describes missed symptoms, wrong treatment, or worsening illness</li><li>audit repeated themes around children, infections, chest pain, heavy bleeding, and medication safety</li><li>review safety-netting language in triage and remote consultations, especially where patients say they were dismissed or told it was anxiety</li><li>compare these signals with complaint files, SEA records, prescribing incidents, and any hospital feedback already held locally</li></ul>
+<h2 id="clinical-harm-bottom-line">Bottom Line</h2>
+<p>The review corpus does contain a meaningful clinical-harm warning-sign layer.</p>
+<p>It is not the dominant story in the data, but it is too large to ignore: <code>420</code> low-star reviews, spread across <code>125</code> practices, with <code>27</code> practices showing at least five such reviews. The sharpest signals are not about courtesy or convenience. They are about patients saying the diagnosis was wrong, the medication was wrong, the problem was brushed off, or the real outcome only became clear once they got sicker or reached hospital.</p>
+<p>That is exactly the kind of thing a patient survey usually does not even ask.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">Practice Responses To Reviews</span>
+                  <span class="report-panel-description">This report looks at how practices reply to Google reviews, and how those replies differ between positive and negative reviews.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/practice-responses-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/practice-responses-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This report looks at how practices reply to Google reviews, and how those replies differ between positive and negative reviews.</p>
+<p>It is based on a rule-based pass over the review text in the local index. I split out review text from <code>Practice response date:</code> and <code>Practice response:</code> where present, then looked at:</p>
+<ul><li>whether a response was attached at all</li><li>whether the original review was positive (<code>4</code> or <code>5</code> star) or negative (<code>1</code> or <code>2</code> star)</li><li>whether the response was mainly thanks, apology, boilerplate signposting, or something more specific</li><li>whether the response used patient-blaming or deflecting language</li><li>whether the response appeared quick or delayed, using the relative review and response dates where those could be roughly compared</li></ul>
+<p>This is not NLP and it is not a perfect legal reading of tone. But it is enough to show the main response patterns in the corpus.</p>
+<h2 id="practice-responses-headline">Headline</h2>
+<p>Practice responses are common, but uneven.</p>
+<ul><li><code>6,568</code> reviews in the corpus include a practice response</li><li>that is <code>40.3%</code> of all <code>16,293</code> reviews</li><li><code>52.0%</code> of positive reviews got a response</li><li>only <code>24.1%</code> of negative reviews got a response</li><li><code>35.3%</code> of <code>3</code> star reviews got a response</li></ul>
+<p>So practices are much more likely to answer praise than criticism.</p>
+<p>That split is one of the clearest findings in the whole response layer.</p>
+<h2 id="practice-responses-what-most-responses-look-like">What Most Responses Look Like</h2>
+<p>The response layer is dominated by thanks and polite formulae, not by detailed public explanations.</p>
+<p>Across all responses, my scan found:</p>
+<ul><li><code>5,459</code> with simple thanks or praise language</li><li><code>1,230</code> with apology language</li><li><code>808</code> with boilerplate signposting like "please contact the surgery", "fill in the form", or "use the website"</li><li>only <code>22</code> with clear public signs of specific action such as "we reviewed", "we changed", "we updated", "we reminded staff", or similar</li><li><code>34</code> with stricter patient-blaming or deflecting markers</li></ul>
+<p>That last number is important. Direct blame is not the main response problem if you define it narrowly. The bigger issue is softer deflection: apology plus signposting, apology plus "contact us privately", apology plus "use the online route", apology plus "high demand".</p>
+<p>So the bad response style is often not openly hostile. It is polite, managerial, and empty.</p>
+<h2 id="practice-responses-positive-reviews-versus-negative-reviews">Positive Reviews Versus Negative Reviews</h2>
+<h3 id="practice-responses-positive-review-responses">Positive review responses</h3>
+<p>Positive review responses are often fast, polite, and high volume.</p>
+<p>Some practices answer almost every positive review:</p>
+<p>| Practice | Positive response rate | Positive reviews responded to | | --- | ---: | ---: | | <code>LADYBARN GROUP PRACTICE</code> | <code>100.0%</code> | <code>265</code> | | <code>The Sides Medical Practice</code> | <code>100.0%</code> | <code>257</code> | | <code>The Arch Medical Practice</code> | <code>100.0%</code> | <code>114</code> | | <code>Cornbrook Medical Practice</code> | <code>100.0%</code>0 | <code>100.0%</code>1 | | <code>100.0%</code>2 | <code>100.0%</code>3 | <code>100.0%</code>4 | | <code>100.0%</code>5 | <code>100.0%</code>6 | <code>100.0%</code>7 | | <code>100.0%</code>8 | <code>100.0%</code>9 | <code>265</code>0 |</p>
+<p>The good side of this is that some practices are clearly present and engaged in public.</p>
+<p>The weak side is that many positive responses are very thin. A lot are just:</p>
+<ul><li>thank you</li><li>glad you had a positive experience</li><li>I will pass this on to the team</li><li>thanks for the 5 stars</li></ul>
+<p>That is not necessarily bad. It is just not very informative.</p>
+<h3 id="practice-responses-negative-review-responses">Negative review responses</h3>
+<p>Negative review responses are much rarer, and much more likely to be defensive or generic.</p>
+<p>Practices with high negative-response coverage include:</p>
+<p>| Practice | Negative response rate | Negative reviews responded to | | --- | ---: | ---: | | <code>The Sides Medical Practice</code> | <code>100.0%</code> | <code>26</code> | | <code>The Arch Medical Practice</code> | <code>100.0%</code> | <code>113</code> | | <code>LADYBARN GROUP PRACTICE</code> | <code>98.0%</code> | <code>97</code> | | <code>The Range Medical Centre</code> | <code>100.0%</code>0 | <code>100.0%</code>1 | | <code>100.0%</code>2 | <code>100.0%</code>3 | <code>100.0%</code>4 | | <code>100.0%</code>5 | <code>100.0%</code>6 | <code>100.0%</code>7 | | <code>100.0%</code>8 | <code>100.0%</code>9 | <code>26</code>0 |</p>
+<p>But high negative-response coverage does not mean high-quality response.</p>
+<p>In practice, the negative review replies usually split into four types:</p>
+<ol><li>apology plus "contact us privately"</li><li>apology plus "use the website/form/front desk"</li><li>apology plus defence of capacity, policy, or process</li><li>rarer, genuinely useful explanation of what changed</li></ol>
+<h2 id="practice-responses-patient-blaming-language">Patient-Blaming Language</h2>
+<p>Direct patient-blaming appears in a minority of responses, but softer blame and deflection appear much more often.</p>
+<p>The strict blame patterns I found were:</p>
+<ul><li><code>16</code> responses using capacity-defence language like high demand, limited appointments, or NHS pressure</li><li><code>7</code> using eligibility or policy language</li><li><code>6</code> referring to lateness, attendance, or appointment behaviour</li><li><code>5</code> pushing the patient back onto the "correct" route or process</li></ul>
+<h3 id="practice-responses-what-patient-blaming-looks-like-here">What patient-blaming looks like here</h3>
+<p>It usually does not read like "this is your fault". It reads more like:</p>
+<ul><li>your problem is the policy</li><li>your problem is the route you used</li><li>your condition was stable so next-day was safe</li><li>you should have used the online form or another route</li><li>we are under pressure like the rest of the NHS</li><li>our records/policy do not support your version</li></ul>
+<p>That still matters, because it shifts the centre of gravity away from the patient’s account and back onto rules, systems, or the patient’s own behaviour.</p>
+<h3 id="practice-responses-examples-of-blame-or-deflection">Examples of blame or deflection</h3>
+<p><code>West Point Medical Centre</code>:</p>
+<blockquote><p>"We have received a lot of positive feedback recently about our team ... NHS services can experience longer waiting times because of high demand."</p></blockquote>
+<p>This is not openly rude, but it clearly weakens the patient complaint by invoking other positive feedback and system pressure.</p>
+<p><code>The Robert Darbishire Practice</code>:</p>
+<blockquote><p>"The fact that your appointment could be scheduled for the next day indicates your condition was stable and it was safe to do so."</p></blockquote>
+<p>This is one of the clearest examples of a response reinterpreting the patient’s urgency rather than engaging with the failure they described.</p>
+<p><code>Dickenson Road Medical Centre</code>:</p>
+<blockquote><p>"if you need to order prescriptions you can order these online or drop the request off in the box in reception then you don’t need to wait in the telephone queue."</p></blockquote>
+<p>This is a common softer move in the corpus: the response turns the complaint back into instructions for the patient.</p>
+<p><code>The Arch Medical Practice</code>:</p>
+<p>Some replies are highly detailed but still contain elements of patient correction, for example laying out why a letter could not be provided, why a sample could not be accepted, or why a certain route was appropriate. These are more substantial than generic replies, but they can still feel defensive.</p>
+<h2 id="practice-responses-boilerplate-and-signposting">Boilerplate And Signposting</h2>
+<p>This is the most common failure mode in negative replies.</p>
+<p>I found <code>808</code> responses with boilerplate signposting language. That includes replies such as:</p>
+<ul><li>"please contact the surgery"</li><li>"speak to the practice manager"</li><li>"use the website"</li><li>"fill in the feedback form"</li><li>"we have a complaints process"</li></ul>
+<p>These replies often sound serious, but they do not answer the public complaint in any real way.</p>
+<h3 id="practice-responses-practices-where-boilerplate-is-especially-strong">Practices where boilerplate is especially strong</h3>
+<p>On the face of the response text, these practices stand out for high-volume but generic negative replies:</p>
+<p>| Practice | Negative responses | Negative boilerplate replies | Bad negative replies | | --- | ---: | ---: | ---: | | <code>Dickenson Road Medical Centre</code> | <code>103</code> | <code>84</code> | <code>84</code> | | <code>Bolton Medical Centre</code> | <code>66</code> | <code>27</code> | <code>27</code> | | <code>The Bolton Family Practice</code> | <code>66</code> | <code>103</code>0 | <code>103</code>1 | | <code>103</code>2 | <code>103</code>3 | <code>103</code>4 | <code>103</code>5 | | <code>103</code>6 | <code>103</code>7 | <code>103</code>8 | <code>103</code>9 | | <code>84</code>0 | <code>84</code>1 | <code>84</code>2 | <code>84</code>3 | | <code>84</code>4 | <code>84</code>5 | <code>84</code>6 | <code>84</code>7 | | <code>84</code>8 | <code>84</code>9 | <code>84</code>0 | <code>84</code>1 |</p>
+<p>What these have in common is not silence. It is response without resolution.</p>
+<h2 id="practice-responses-who-does-better-responses">Who Does Better Responses</h2>
+<p>Truly good negative responses are rare in this corpus. My scan only found <code>9</code> responses across the whole dataset that clearly acknowledged the issue and publicly described a concrete action or improvement without dropping into blame or boilerplate.</p>
+<p>That is tiny.</p>
+<p>The best examples I found were:</p>
+<h3 id="practice-responses-chorlton-family-practice"><code>Chorlton Family Practice</code></h3>
+<p>This practice does not answer most negative reviews, but the better replies it does give are among the more useful in the corpus.</p>
+<p>Examples:</p>
+<blockquote><p>"we have changed our appointment system recently and improved our telephone system"</p></blockquote>
+<blockquote><p>"We have introduced a dedicated online booking window (3 hours in the morning) to manage the high volume of online requests"</p></blockquote>
+<p>That is useful because it tells the public what changed.</p>
+<h3 id="practice-responses-the-sides-medical-practice"><code>The Sides Medical Practice</code></h3>
+<p>This practice replies to everything, and one of its stronger negative responses openly admitted delay and described a process review:</p>
+<blockquote><p>"We have reviewed our processes to ensure clearer communication about flu clinics and appointment scheduling for our elderly patients."</p></blockquote>
+<p>This is the kind of sentence that is too rare across the corpus.</p>
+<h3 id="practice-responses-cherry-medical-practice"><code>Cherry Medical Practice</code></h3>
+<p>Smaller volume, but some signs of clearer action language rather than pure signposting.</p>
+<h3 id="practice-responses-the-arch-medical-practice"><code>The Arch Medical Practice</code></h3>
+<p>This is the most mixed case.</p>
+<p>On the good side, it has some of the longest and most specific responses in the corpus. In its best replies it explains what happened, what signage or systems changed, and what staff were reminded about.</p>
+<p>On the bad side, it also produces long defensive replies that read like a public rebuttal. So it is engaged, but not always well-balanced.</p>
+<h2 id="practice-responses-who-does-worse-responses">Who Does Worse Responses</h2>
+<p>The weaker group is easier to describe.</p>
+<h3 id="practice-responses-prompt-but-generic">Prompt but generic</h3>
+<p>Some practices reply fast, including to negative reviews, but mainly with managerial templates:</p>
+<ul><li><code>Bolton Medical Centre</code></li><li><code>The Bolton Family Practice</code></li><li><code>Guide Bridge Medical Practice</code></li><li><code>Gordon Street Medical Centre</code></li><li><code>Droylsden Medical Practice</code></li></ul>
+<p>The characteristic wording is:</p>
+<ul><li>sorry you felt this way</li><li>please contact the surgery</li><li>speak to the assistant practice manager</li><li>we will investigate if you contact us</li></ul>
+<p>These practices are present, but not very open in public.</p>
+<h3 id="practice-responses-high-volume-but-delayed">High-volume but delayed</h3>
+<p>Some practices answer huge numbers of reviews but seem to do so later:</p>
+<p>| Practice | Approx average response delay | | --- | ---: | | <code>The Birches Medical Centre</code> | <code>14.1</code> months | | <code>Dickenson Road Medical Centre</code> | <code>11.1</code> months | | <code>The Range Medical Centre</code> | <code>8.5</code> months | | <code>LADYBARN GROUP PRACTICE</code> | <code>5.1</code> months | | <code>The Sides Medical Practice</code> | <code>5.0</code> months |</p>
+<p>This delay estimate is rough because it is based on relative date strings, but it is still enough to show a difference between fast-turnaround responders and later catch-up responders.</p>
+<h3 id="practice-responses-defensive-and-patient-correcting">Defensive and patient-correcting</h3>
+<p>These practices stand out more for deflecting or patient-blaming language:</p>
+<ul><li><code>West Point Medical Centre</code></li><li><code>The Robert Darbishire Practice</code></li><li><code>Barlow Medical Centre</code></li><li><code>Eastlands Medical Centre</code></li><li><code>Brooklands Medical Practice</code></li></ul>
+<p>The shared pattern here is not always harsh language. It is a tendency to answer criticism by:</p>
+<ul><li>citing high demand</li><li>invoking policy</li><li>explaining why the practice route was reasonable</li><li>implying the patient should have used another route</li><li>reframing the event as stable, non-urgent, or properly handled</li></ul>
+<h2 id="practice-responses-practices-that-reply-to-praise-more-than-criticism">Practices That Reply To Praise More Than Criticism</h2>
+<p>Some practices show a very large gap between response rates to positive and negative reviews:</p>
+<p>| Practice | Positive response rate | Negative response rate | Gap | | --- | ---: | ---: | ---: | | <code>Middleton Health Centre</code> | <code>85.6%</code> | <code>22.9%</code> | <code>62.7</code> points | | <code>The Park Medical Centre</code> | <code>67.2%</code> | <code>10.6%</code> | <code>56.6</code> points | | <code>Peel Hall Medical Centre</code> | <code>89.1%</code> | <code>85.6%</code>0 | <code>85.6%</code>1 points | | <code>85.6%</code>2 | <code>85.6%</code>3 | <code>85.6%</code>4 | <code>85.6%</code>5 points | | <code>85.6%</code>6 | <code>85.6%</code>7 | <code>85.6%</code>8 | <code>85.6%</code>9 points |</p>
+<p>This kind of gap matters because it suggests some practices are using review replies more as reputation management than as a balanced public conversation.</p>
+<h2 id="practice-responses-characteristics-of-the-better-group">Characteristics Of The Better Group</h2>
+<p>The better responses tend to have these features:</p>
+<ul><li>they reply to negative reviews as well as positive ones</li><li>they say what changed, not just who to contact</li><li>they name a process, system, or communication change</li><li>they do not tell the patient to simply re-enter the same route that already failed</li><li>they do not lean heavily on high demand as the main answer</li><li>they often sound written by a named person, not a template</li></ul>
+<h2 id="practice-responses-characteristics-of-the-worse-group">Characteristics Of The Worse Group</h2>
+<p>The weaker responses tend to have these features:</p>
+<ul><li>very high use of apology-plus-signposting</li><li>lots of "please contact the surgery" with no public substance</li><li>website, form, or complaints-process redirection</li><li>capacity-defence language like "high demand", "limited appointments", or "NHS pressures"</li><li>occasional correction of the patient’s account or public reinterpretation of urgency</li><li>much stronger engagement with praise than with criticism</li></ul>
+<h2 id="practice-responses-bottom-line">Bottom Line</h2>
+<p>The response layer is active, but not especially accountable.</p>
+<p>Practices are much more likely to answer positive reviews than negative ones. Where they do answer criticism, the common pattern is not abuse but polite deflection: apology, private contact, website form, complaints process, or explanation of pressure.</p>
+<p>Direct patient-blaming exists, but the bigger issue is softer blame and route-defence. The public message often becomes: use the correct channel, understand the pressure we are under, contact us privately, and we will look into it.</p>
+<p>Truly useful public responses are rare. The best ones explain what changed. Most do not.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">Online, Website, And Software Platform Experience In The Review Corpus</span>
+                  <span class="report-panel-description">This report looks at the digital front door in the Google review corpus: websites, online forms, apps, and named platforms such as <code>PATCHS</code>, <code>AskMyGP</code>, <code>Accurx</code>, and <code>eConsult</code>.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/online-web-platform-experience-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/online-web-platform-experience-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This report looks at the digital front door in the Google review corpus: websites, online forms, apps, and named platforms such as <code>PATCHS</code>, <code>AskMyGP</code>, <code>Accurx</code>, and <code>eConsult</code>.</p>
+<p>The problem here is that patients often do not know or use the software brand name. They say "the website", "the online form", "the app", or "the system". So this report starts broad and only then narrows to the named tools.</p>
+<p>It uses a rule-based pass over the local indexed corpus and strips practice-response text where possible, so the focus stays on what patients themselves wrote.</p>
+<h2 id="digital-experience-headline">Headline</h2>
+<p>The digital layer is now a real part of the patient experience, not a side issue.</p>
+<ul><li><code>998</code> reviews, <code>6.1%</code> of the whole corpus, mention a website, online route, app, named platform, or a recognisable digital-platform issue</li><li><code>700</code> reviews mention the generic online or website layer</li><li>only <code>162</code> reviews name a platform or app at all</li><li>just <code>35</code> reviews do both</li></ul>
+<p>That means most of the digital experience is not being described by product name. Patients mostly talk about a web route they have to use, not the vendor behind it.</p>
+<h2 id="digital-experience-generic-coverage-first-online-website-the-form">Generic Coverage First: "Online", "Website", "The Form"</h2>
+<p>This generic layer is much bigger than any named platform.</p>
+<p>The broad <code>online / website / online form / online booking / online triage</code> bucket contains:</p>
+<ul><li><code>700</code> reviews total</li><li><code>390</code> negative reviews</li><li><code>286</code> positive reviews</li><li><code>24</code> mixed reviews</li></ul>
+<p>So the digital front door is not uniformly bad. It has a real positive side when it works. But negative experiences still outweigh positive ones.</p>
+<p>Practices with the highest digital-review counts in this generic layer include:</p>
+<p>| Practice | Digital reviews | Share of all reviews | Negative | Positive | | --- | ---: | ---: | ---: | ---: | | <code>Chorlton Family Practice</code> | <code>93</code> | <code>10.4%</code> | <code>20</code> | <code>63</code> | | <code>The Sides Medical Practice</code> | <code>37</code> | <code>13.0%</code> | <code>3</code> | <code>34</code> | | <code>93</code>0 | <code>93</code>1 | <code>93</code>2 | <code>93</code>3 | <code>93</code>4 | | <code>93</code>5 | <code>93</code>6 | <code>93</code>7 | <code>93</code>8 | <code>93</code>9 | | <code>10.4%</code>0 | <code>10.4%</code>1 | <code>10.4%</code>2 | <code>10.4%</code>3 | <code>10.4%</code>4 | | <code>10.4%</code>5 | <code>10.4%</code>6 | <code>10.4%</code>7 | <code>10.4%</code>8 | <code>10.4%</code>9 | | <code>20</code>0 | <code>20</code>1 | <code>20</code>2 | <code>20</code>3 | <code>20</code>4 | | <code>20</code>5 | <code>20</code>6 | <code>20</code>7 | <code>20</code>8 | <code>20</code>9 | | <code>63</code>0 | <code>63</code>1 | <code>63</code>2 | <code>63</code>3 | <code>63</code>4 |</p>
+<p>This already shows the main digital pattern in the corpus: the same kind of online route can be described as quick, modern, and convenient in one practice, and as a hard digital barrier in another.</p>
+<h2 id="digital-experience-named-platforms-visible-but-still-under-named">Named Platforms: Visible, But Still Under-Named</h2>
+<h3 id="digital-experience-patchs"><code>PATCHS</code></h3>
+<p>Explicit <code>PATCHS</code> mentions are present but not huge:</p>
+<ul><li><code>25</code> reviews total</li><li><code>11</code> negative</li><li><code>10</code> positive</li><li><code>4</code> mixed</li></ul>
+<p>The balance is genuinely mixed.</p>
+<p>Good <code>PATCHS</code> examples usually talk about speed:</p>
+<ul><li><code>Northern Moor Medical Practice</code>: "called back within 20 minutes"</li><li><code>Chorlton Family Practice</code>: same-day or fast follow-up</li><li><code>Barlow Medical Centre</code>: a worrying symptom submitted at <code>8am</code>, seen by <code>9.30</code></li></ul>
+<p>Bad <code>PATCHS</code> examples usually talk about visibility, availability, or reliability:</p>
+<ul><li>hard to find or not clearly linked from the practice site</li><li>only available in narrow time windows</li><li>no record of submission</li><li>no response after submission</li><li>being forced onto it after failing by phone or in person</li></ul>
+<p>So <code>PATCHS</code> in the corpus reads less like a universally hated platform than a high-variance one. Where the practice actually processes requests quickly, patients praise it. Where the surrounding system is weak, it becomes another locked gate.</p>
+<h3 id="digital-experience-askmygp"><code>AskMyGP</code></h3>
+<p><code>AskMyGP</code> is the most visible named platform in patient language:</p>
+<ul><li><code>61</code> reviews total</li><li><code>29</code> negative</li><li><code>30</code> positive</li><li><code>2</code> mixed</li></ul>
+<p>Again, it is split almost down the middle.</p>
+<p>Good <code>AskMyGP</code> reviews usually say:</p>
+<ul><li>same-day response</li><li>quick advice</li><li>saved a trip</li><li>easy to use</li></ul>
+<p>The strongest positive cluster is <code>Ashville Surgery</code>, where <code>AskMyGP</code> is mostly described as effective and quick.</p>
+<p>Bad <code>AskMyGP</code> reviews usually say:</p>
+<ul><li>it is always closed</li><li>it fills up too quickly</li><li>the phone message still points to it even when it no longer works</li><li>it is frustrating compared with speaking to a person</li></ul>
+<p>So <code>AskMyGP</code> looks highly practice-dependent. It can feel like a good triage tool when backed by enough staffing and prompt response. It feels much worse where it becomes a shut door or a dead-end.</p>
+<h3 id="digital-experience-econsult"><code>eConsult</code></h3>
+<p><code>eConsult</code> is barely named directly:</p>
+<ul><li><code>9</code> reviews total</li><li><code>5</code> negative</li><li><code>4</code> positive</li></ul>
+<p>But the low explicit count should not be read as low use. It probably means patients experience it as "the online form" rather than as <code>eConsult</code>.</p>
+<p>The split is familiar:</p>
+<ul><li>positive when the form is reviewed quickly and leads to an appointment</li><li>negative when it feels slow, confusing, or absurd for urgent needs</li></ul>
+<p>One of the clearest negative lines is from <code>Pikes Lane 1</code>:</p>
+<blockquote><p>"The econsult forms are a ridiculous request, especially when you need an emergency appointment."</p></blockquote>
+<h3 id="digital-experience-accurx"><code>Accurx</code></h3>
+<p><code>Accurx</code> barely appears by name in patient reviews at all. I only found <code>1</code> clear patient-side mention.</p>
+<p>That does not mean it is absent. It means it is mostly hidden behind practice websites, forms, and links rather than recognised as a patient-facing brand.</p>
+<p>The one explicit patient mention at <code>Limelight Health and Wellbeing Hub</code> is strongly negative and focuses on usability:</p>
+<blockquote><p>"There are absolutely no instructions on the website about how to sign up to their patient appointment service, Accurx."</p></blockquote>
+<p>So <code>Accurx</code> is a good example of the wider problem in this report: software is often visible to practices, but not clearly visible to patients.</p>
+<h3 id="digital-experience-nhs-app"><code>NHS App</code></h3>
+<p>The <code>NHS app</code> is different because patients often do name it:</p>
+<ul><li><code>67</code> reviews total</li><li><code>33</code> negative</li><li><code>30</code> positive</li><li><code>4</code> mixed</li></ul>
+<p>This looks like another genuinely split platform.</p>
+<p>Positive <code>NHS app</code> reviews talk about:</p>
+<ul><li>easy contact</li><li>easy booking</li><li>quick response</li><li>access to records or appointments</li></ul>
+<p>Negative <code>NHS app</code> reviews talk about:</p>
+<ul><li>"no appointments available"</li><li>being pushed into another platform from the app</li><li>paper forms still being required for app-based tasks</li><li>the app existing as a token route rather than a fully working one</li></ul>
+<p>The <code>NHS app</code> therefore often reads less as a complete front door than as a relay point between systems.</p>
+<h2 id="digital-experience-the-main-digital-issue-types">The Main Digital Issue Types</h2>
+<h3 id="digital-experience-1-speed-and-convenience-when-the-system-works">1. Speed And Convenience When The System Works</h3>
+<p>This is the biggest positive theme:</p>
+<ul><li><code>147</code> reviews in the strict speed/convenience bucket</li><li><code>111</code> positive</li><li><code>32</code> negative</li></ul>
+<p>This is the strongest argument in favour of digital routes.</p>
+<p>Patients praise them when they deliver:</p>
+<ul><li>same-day appointments</li><li>callbacks within <code>20-30</code> minutes</li><li>quick triage without repeated phone queues</li><li>ability to submit photos or details clearly</li></ul>
+<p>Examples:</p>
+<ul><li><code>The Sides Medical Practice</code>: "contacted within 30 minutes with a same day appointment"</li><li><code>Chorlton Family Practice</code>: "online form ... same day appointment"</li><li><code>Ashville Surgery</code>: <code>AskMyGP</code> "excellent - someone responds the same day"</li><li><code>The Range Medical Centre</code>: repeated praise for easy same-day or prompt appointments</li></ul>
+<p>The positive digital model in the corpus is clear: the form works, the request goes through, a human responds quickly, and the patient gets seen.</p>
+<h3 id="digital-experience-2-usability-and-instruction-failure">2. Usability And Instruction Failure</h3>
+<p>This is one of the clearest negative themes:</p>
+<ul><li><code>54</code> reviews</li><li><code>39</code> negative</li><li><code>11</code> positive</li></ul>
+<p>Patients often do not complain about the idea of digital care. They complain that the route is badly explained, badly linked, or hard to navigate.</p>
+<p>The common wording is:</p>
+<ul><li>no instructions</li><li>hard to find</li><li>not obvious where to click</li><li>difficult to use</li><li>impossible website</li><li>unable to work the website</li></ul>
+<p>This is especially important because it is not a clinical complaint. It is a design complaint. Patients are describing bad information architecture, weak signposting, and poor discoverability.</p>
+<h3 id="digital-experience-3-closed-forms-narrow-windows-and-digital-queueing">3. Closed Forms, Narrow Windows, And Digital Queueing</h3>
+<p>This is a smaller but sharp theme:</p>
+<ul><li><code>14</code> reviews</li><li><code>13</code> negative</li></ul>
+<p>The digital route often reproduces the old <code>8am</code> rush rather than replacing it.</p>
+<p>Patients describe:</p>
+<ul><li>forms only open for a short morning window</li><li>systems that are already full by <code>8am</code></li><li><code>AskMyGP</code> or <code>PATCHS</code> being closed</li><li>"online" as just a different kind of queue</li></ul>
+<p>So one of the clearest failures is not that software exists, but that it turns scarcity into a software timer.</p>
+<h3 id="digital-experience-4-no-reply-lost-submission-or-silent-failure">4. No Reply, Lost Submission, Or Silent Failure</h3>
+<p>This is not the biggest theme by count, but it is one of the worst by feel:</p>
+<ul><li><code>17</code> reviews</li><li><code>15</code> negative</li></ul>
+<p>These are the reviews where the patient does the right digital thing and then nothing happens.</p>
+<p>Examples include:</p>
+<ul><li>no record of submission</li><li>no response after sending a message</li><li>no callback</li><li>requests disappearing into the system</li></ul>
+<p>This is a key trust issue. A bad website is one thing. A form that appears to work and then silently fails is worse.</p>
+<h3 id="digital-experience-5-triage-burden-ai-and-feeling-asked-to-self-diagnose">5. Triage Burden, AI, And Feeling Asked To Self-Diagnose</h3>
+<p>This bucket is small but very distinct:</p>
+<ul><li><code>7</code> reviews</li><li>all <code>7</code> negative</li></ul>
+<p>The wording here is sharp:</p>
+<ul><li>"left to self diagnose"</li><li>too many questions</li><li>AI asking irrelevant or alarming follow-up questions</li><li>forms feeling inappropriate for urgent need</li></ul>
+<p>The <code>Ashton Gp Service</code> quote about AI triage is one of the clearest examples:</p>
+<blockquote><p>"The AI was asking me follow up questions ... and its advice was to go to A+E"</p></blockquote>
+<p>This is where digital triage moves from inconvenience to distrust. The patient is no longer just annoyed. They feel the software is clinically absurd.</p>
+<h3 id="digital-experience-6-digital-exclusion">6. Digital Exclusion</h3>
+<p>This is a small explicit bucket:</p>
+<ul><li><code>6</code> reviews</li><li><code>5</code> negative</li></ul>
+<p>But it is probably under-stated, because many exclusion complaints are written in indirect language.</p>
+<p>The explicit versions mention:</p>
+<ul><li>older people</li><li>disability</li><li>not being able to use computers or the app</li><li>not everyone being able to follow the digital route</li></ul>
+<p>This matters because some of the strongest digital systems in the corpus still rely on the patient being able to find, understand, and complete the online route.</p>
+<h2 id="digital-experience-what-patients-infer-even-when-they-never-name-the-platform">What Patients Infer Even When They Never Name The Platform</h2>
+<p>Most patients do not say "this is <code>Accurx</code>" or "this is <code>eConsult</code>". They say:</p>
+<ul><li>"the website"</li><li>"the online form"</li><li>"the app"</li><li>"the system"</li><li>"the link"</li></ul>
+<p>That means the real comparison in this corpus is not mainly between vendors. It is between kinds of patient experience.</p>
+<p>The main unnamed experiences are:</p>
+<h3 id="digital-experience-good-unnamed-digital-experience">Good unnamed digital experience</h3>
+<ul><li>request sent quickly</li><li>same-day callback</li><li>same-day appointment</li><li>easier than ringing at <code>8am</code></li><li>clear enough to use without help</li></ul>
+<h3 id="digital-experience-bad-unnamed-digital-experience">Bad unnamed digital experience</h3>
+<ul><li>no instructions</li><li>forced onto a website after the phone fails</li><li>online route only open in a narrow time window</li><li>no response after submitting</li><li>confusing handoff between NHS app, practice site, and a separate platform</li><li>feeling forced to self-triage</li></ul>
+<p>So the practical patient comparison is not <code>PATCHS</code> versus <code>AskMyGP</code> in a neat vendor sense. It is whether the digital route behaves like a quick bridge to care, or like another wall.</p>
+<h2 id="digital-experience-practices-where-the-digital-layer-looks-better">Practices Where The Digital Layer Looks Better</h2>
+<p>The most clearly positive digital clusters in the corpus are:</p>
+<ul><li><code>The Sides Medical Practice</code></li><li><code>Ashville Surgery</code></li><li><code>The Range Medical Centre</code></li><li><code>LADYBARN GROUP PRACTICE</code></li><li>parts of <code>Chorlton Family Practice</code></li></ul>
+<p>What they have in common in the reviews:</p>
+<ul><li>lots of same-day or fast-response stories</li><li>online forms described as easy or efficient</li><li>the digital route appears to be backed by real human follow-through</li><li>patients sometimes compare the practice favourably with previous surgeries</li></ul>
+<p>The key point is not the platform alone. It is that the workflow behind it appears to work.</p>
+<h2 id="digital-experience-practices-where-the-digital-layer-looks-worse">Practices Where The Digital Layer Looks Worse</h2>
+<p>The more negative digital clusters include:</p>
+<ul><li><code>New Bank Health</code></li><li><code>Florence House Medical Practice</code></li><li><code>The Robert Darbishire Practice</code></li><li><code>Northenden Group Practice</code></li><li><code>STONEHILL MEDICAL CENTRE</code></li><li>parts of <code>The Arch Medical Practice</code></li><li><code>Limelight Health and Wellbeing Hub</code> for explicit platform confusion</li></ul>
+<p>What these negative clusters have in common:</p>
+<ul><li>more negative than positive digital mentions</li><li>complaints about the website or form replacing human contact</li><li>confusion about where to go, what link to use, or which system is active</li><li>closed, unavailable, or unresponsive digital routes</li><li>digital routes experienced as another barrier rather than an easier route in</li></ul>
+<h2 id="digital-experience-bottom-line">Bottom Line</h2>
+<p>The online/web layer in this corpus is real, widespread, and mixed.</p>
+<p>The strongest single finding is that patients usually do not name the software. They talk about a generic digital front door. That front door shows up in <code>998</code> reviews, and it is described in two very different ways.</p>
+<p>When it works, patients love it:</p>
+<ul><li>same-day appointments</li><li>quick callbacks</li><li>no need to fight the phone queue</li></ul>
+<p>When it fails, they do not talk like software users. They talk like blocked patients:</p>
+<ul><li>the website does not work</li><li>the form is closed</li><li>there is no response</li><li>they are told to self-diagnose</li><li>one system sends them to another</li><li>nobody is available except the software</li></ul>
+<p>So the real divide here is not vendor versus vendor. It is whether the digital route is actually connected to care, or whether it is just a new way of being shut out.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">Activism, Community Response, And Public-Warning Reviews</span>
+                  <span class="report-panel-description">This is a fringe layer in the corpus, but it is real.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/activism-community-response-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/activism-community-response-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This is a fringe layer in the corpus, but it is real.</p>
+<p>Using a simple text scan for regulator escalation, public-warning language, review-about-review language, professional self-positioning, and community framing, I found <strong>776 reviews out of 16,293</strong> with at least one of those markers: <strong>4.8% of the whole corpus</strong>.</p>
+<p>That broad number includes a lot of simple "avoid this place" warnings. The tighter, more clearly system-facing subset is smaller: <strong>394 reviews</strong> where the writer is doing more than venting, for example by appealing to regulators, speaking about the wider patient body, discussing the review record itself, or writing from an insider or authority position.</p>
+<h2 id="activism-what-this-looks-like">What This Looks Like</h2>
+<p>Most of these reviews are not organised campaigning in any sustained sense. They are usually lone reviewers trying to do one of five things:</p>
+<ul><li>create a public warning for other patients</li><li>turn a bad experience into a formal complaint trail</li><li>recruit outside attention from CQC, PALS, the ombudsman, NHS England or an MP</li><li>speak as more than one isolated patient, using phrases like "local community", "patients deserve", or "not only me"</li><li>answer the existing review culture around a practice, either by backing up the pile-on or pushing back against it</li></ul>
+<p>So yes, there are some obvious "weekend warrior" or activist-style reviews here, but they are scattered and episodic rather than a large organised movement.</p>
+<h2 id="activism-main-patterns">Main Patterns</h2>
+<h3 id="activism-1-public-warning-reviews-are-the-biggest-fringe-pattern">1. Public-warning reviews are the biggest fringe pattern</h3>
+<p>The largest bucket is <strong>426 reviews</strong> with direct warning or mobilisation language. Most are negative and aimed at other patients rather than the practice itself.</p>
+<p>Typical wording:</p>
+<ul><li>"Please stay away from this surgery if you have health concern" Amjad Sharif, <code>Corkland Road Medical Practice</code>, <code>2 years ago</code></li><li>"Poor doctors, I would advice all to deregister" moee 687, <code>Corkland Road Medical Practice</code>, <code>3 years ago</code></li><li>"I strongly advise de-registering" Erandi Samaraweera, <code>Alkrington Junction Practice</code>, <code>2 months ago</code></li></ul>
+<p>This is the most common form of activism-adjacent writing in the corpus: not group organising, but public consumer warning.</p>
+<h3 id="activism-2-explicit-regulator-escalation-exists-and-is-easy-to-spot">2. Explicit regulator escalation exists and is easy to spot</h3>
+<p>There are <strong>154 reviews</strong> with clear regulator or formal-escalation markers. Within that:</p>
+<ul><li><code>CQC</code>: <strong>43</strong> reviews</li><li><code>ombudsman</code>: <strong>14</strong> reviews</li><li><code>PALS</code>: <strong>10</strong> reviews</li><li><code>ICB</code>: <strong>2</strong> reviews</li><li><code>petition</code>: <strong>1</strong> review</li></ul>
+<p>These are some of the clearest examples of people trying to move beyond ordinary reviewing:</p>
+<ul><li>"SUBMIT YOUR REVIEW TO THE CQC, ITS BEEN 5 YEARS SINCE BEEHIVE WAS INSPECTED, WE NEED TO GET THEM SHUT DOWN!" Michael Mckechnie, <code>Beehive Surgery</code>, <code>Edited 2 years ago</code></li><li>"I'll be writing a complaint to the practice manager, the CQC, the NHS, and my MP." Matthew Ritson, <code>Unsworth Medical Centre</code>, <code>3 years ago</code></li><li>"I notified IBC and ICO and will follow up to NHS England and the Ombudsman so hopefully they don't do that to anyone else." Hristo Rankov, <code>Woodbank Surgery</code>, <code>Edited 2 months ago</code></li></ul>
+<p>This is the strongest evidence that some reviewers are trying to build external pressure, not just leave a one-off rant.</p>
+<h3 id="activism-3-some-reviews-are-written-about-the-review-culture-itself">3. Some reviews are written about the review culture itself</h3>
+<p>There are <strong>102 reviews</strong> that refer to "other reviews", "these reviews", "negative reviews", or otherwise treat the Google page as a public record in its own right.</p>
+<p>This splits both ways.</p>
+<p>Solidarity with previous complainants:</p>
+<ul><li>"As mentioned in numerous other reviews the receptionist is extremely rude" S B, <code>New Bank Health</code>, <code>5 years ago</code></li><li>"look at other reviews of this place you will see its not only me who thinks this." s j, <code>Pikes Lane 1</code>, <code>Edited 7 years ago</code></li></ul>
+<p>Counter-public or defence:</p>
+<ul><li>"Just to provide a dissenting voice to the negative reviews" Saw Naw, <code>Charlestown MD</code>, <code>Edited 4 years ago</code></li><li>"I feel the need to write this review due to the many unnecessary unfair reviews." Paul, <code>Little Lever Health Centre 2</code>, <code>6 months ago</code></li></ul>
+<p>This matters because it shows some practices develop a visible review reputation, and later reviewers start writing into that argument rather than just reporting one appointment.</p>
+<h3 id="activism-4-insider-or-authority-positioned-reviews-are-rare-but-real">4. Insider or authority-positioned reviews are rare but real</h3>
+<p>Only <strong>27 reviews</strong> clearly position the writer as a doctor, healthcare professional, GP receptionist elsewhere, or similar.</p>
+<p>Examples:</p>
+<ul><li>"I am writing this review as both a medical doctor and a parent" Erandi Samaraweera, <code>Alkrington Junction Practice</code>, <code>2 months ago</code></li><li>"I work as a GP receptionist elsewhere and I've never seen such incompetence." Declan Daly, <code>Cheetham Hill Medical Centre</code>, <code>a year ago</code></li><li>"As a healthcare professional myself I have first hand witness the distress and anxiety this incompetent surgery team cause my mother." HelloClarice, <code>Rock Healthcare Limited</code>, <code>4 years ago</code></li></ul>
+<p>This is the closest thing in the corpus to a recognisable "formal advocate" voice. It is unusual, but it does recur.</p>
+<h3 id="activism-5-community-framing-exists-but-it-is-small-and-split">5. Community framing exists, but it is small and split</h3>
+<p>There are only <strong>15 reviews</strong> explicitly using the phrase <code>local community</code>, and the tone is mixed rather than one-sided.</p>
+<p>Positive versions:</p>
+<ul><li>"A great service to the local community" T Lau, <code>Fairfax Group Practice</code>, <code>9 years ago</code></li><li>"Fantastic centre for the local community with everything under one roof." Lisa Mack, <code>Limelight Health and Wellbeing Hub</code>, <code>a year ago</code></li></ul>
+<p>Negative versions:</p>
+<ul><li>"Very poor service for the local community, no appointments when needed." danny knight, <code>The Whitswood Practice</code>, <code>9 years ago</code></li><li>"Its clear that the health and well being of the local community is not at all the priority here." Stephen Palmer, <code>Kearsley Medical Centre</code>, <code>5 years ago</code></li></ul>
+<p>There are also small signs of people talking about community communication outside Google itself:</p>
+<ul><li>"many moor complaints on the app nextdoor this app is a community app all local people." David Tranter, <code>Tower Family Healthcare</code>, <code>3 years ago</code></li></ul>
+<p>So the corpus does contain some community-facing language, but not much evidence of durable, structured local organising.</p>
+<h2 id="activism-where-this-shows-up-most">Where This Shows Up Most</h2>
+<p>By raw count, the practices with the most activism-adjacent or public-warning reviews in this scan are:</p>
+<ul><li><code>The Robert Darbishire Practice</code>: 23 flagged reviews</li><li><code>New Bank Health</code>: 20</li><li><code>Hawthorn MC</code>: 20</li><li><code>Cheetham Hill Medical Centre</code>: 19</li><li><code>Beehive Surgery</code>: 17</li><li><code>Limelight Health and Wellbeing Hub</code>: 17</li></ul>
+<p>This does <strong>not</strong> mean all of these have organised campaigns around them. Usually it means repeated public-warning behaviour, repeated references to formal complaints, or reviewers talking to and about each other through the review page.</p>
+<h2 id="activism-bottom-line">Bottom Line</h2>
+<p>The corpus does have a visible fringe of reviewers who are trying to do more than describe their own care. They warn other patients, invoke regulators, compare notes with earlier reviewers, and sometimes write from an insider or campaign-style position.</p>
+<p>But this is still a minority layer. The typical Google review in this dataset is an angry personal account, not a piece of organised activism. The more activist or "chatgpt activist" style is present, recognisable, and worth watching, but it is thinly spread and mostly shows up as <strong>public warning plus escalation</strong>, not as long-running community organisation.</p>
+<h2 id="activism-method-note">Method Note</h2>
+<p>This was a text-pattern scan over the whole indexed review corpus. It looked for:</p>
+<ul><li>regulator and complaint escalation terms</li><li>public-warning or de-registration language</li><li>references to other reviews and the review page as a public record</li><li>self-positioning as a doctor, healthcare worker, or similar authority</li><li>community-facing framing such as <code>local community</code> or broader patient-interest language</li></ul>
+<p>It is a useful way to surface this fringe pattern, but it is intentionally rough. The broad count is best read as <strong>activism-adjacent presence</strong>, not a strict count of formal activists.</p>
+                </div>
+              </div>
+            </details>
+<details class="report-panel" data-report-panel>
+              <summary class="report-panel-summary">
+                <span class="report-panel-copy">
+                  <span class="report-panel-title">GTD-Managed Practices Review Report For PPG Discussion</span>
+                  <span class="report-panel-description">This report is a fresh read of the Google review corpus for <code>GTD</code>-managed practices only.</span>
+                </span>
+                <span class="report-panel-meta" aria-hidden="true"></span>
+              </summary>
+              <div class="report-panel-body">
+                <div class="report-panel-actions">
+                  <a class="link-pill link-pill-secondary" href="../files/datasets/reviews-search/output/gtd-managed-practices-ppg-report.md">Source markdown</a>
+                  <a class="link-pill link-pill-secondary" href="../tools/markdown-print-viewer.html?source=../files/datasets/reviews-search/output/gtd-managed-practices-ppg-report.md">Print source</a>
+                </div>
+                <div class="doc-body report-body">
+                  <p>This report is a fresh read of the Google review corpus for <code>GTD</code>-managed practices only.</p>
+<p>It does not summarise the wider reports. It starts again from the GTD slice alone and asks the same broad questions:</p>
+<ul><li>what patients mainly complain about</li><li>what they say about staff and care</li><li>what happens with digital routes</li><li>where the strongest warning signs of harm appear</li><li>how people talk about trying to leave or being stuck</li><li>how practices respond in public</li><li>what seems to have changed over time</li></ul>
+<p>All examples in this report come from GTD-managed practice reviews only.</p>
+<h2 id="gtd-ppg-the-gtd-slice">The GTD Slice</h2>
+<p>The GTD-managed review set in this index contains <code>830</code> reviews across <code>13</code> practices:</p>
+<ul><li><code>Ashton Gp Service</code></li><li><code>Charlestown MD</code></li><li><code>City Health Centre</code></li><li><code>Droylsden Medical Practice</code></li><li><code>Gordon Street Medical Centre</code></li><li><code>Guide Bridge Medical Practice</code></li><li><code>Hattersley Group Practice</code></li><li><code>Lindley House Health Centre</code></li><li><code>Millbrook Medical Practice</code></li><li><code>Mossley Medical Practice</code></li><li><code>New Bank Health</code></li><li><code>Simpson Medical Practice</code></li><li><code>The Smithy Surgery</code></li></ul>
+<p>The overall rating shape is harsh:</p>
+<ul><li><code>602</code> reviews are <code>1</code> star</li><li><code>25</code> are <code>2</code> star</li><li><code>18</code> are <code>3</code> star</li><li><code>33</code> are <code>4</code> star</li><li><code>152</code> are <code>5</code> star</li></ul>
+<p>That means <code>627</code> reviews, <code>75.5%</code>, are <code>1</code> or <code>2</code> star.</p>
+<p>This is not a balanced-looking slice. It is a strongly complaint-heavy one.</p>
+<h2 id="gtd-ppg-headline">Headline</h2>
+<p>The main GTD story is not one single bad thing. It is a repeated patient feeling that the front door is hard to get through, hard to trust, and often pushes people somewhere else.</p>
+<p>Access dominates the GTD review set, but it does not stop at access. The complaints spill into:</p>
+<ul><li>rude or blocking reception</li><li>missed follow-up and prescription drift</li><li>online systems that feel like another barrier</li><li>feeling dismissed when unwell</li><li>being sent to walk-in centres, hospitals, or <code>A&amp;E</code></li><li>very weak public responses when patients complain</li></ul>
+<p>At the same time, the GTD slice is not completely flat. There are a few clearer positive pockets, especially in <code>City Health Centre</code>, <code>The Smithy Surgery</code>, and parts of <code>Mossley Medical Practice</code>. There are also some positive reviews in more complaint-heavy practices where patients praise a specific doctor, nurse, or receptionist.</p>
+<p>So the picture is not "every GTD practice is identical". It is more that the negative weight is very strong, and it falls on a familiar set of problems.</p>
+<h2 id="gtd-ppg-1-access-is-still-the-core-problem">1. Access Is Still The Core Problem</h2>
+<p>Using a simple fulltext pass over GTD reviews, I found:</p>
+<ul><li><code>366</code> GTD reviews mentioning appointment problems</li><li><code>289</code> mentioning phone access</li><li><code>278</code> mentioning reception</li><li><code>137</code> mentioning follow-up, referrals, results, or prescriptions</li><li><code>71</code> mentioning online or website routes</li></ul>
+<p>If I narrow those to <code>1</code> and <code>2</code> star GTD reviews only:</p>
+<ul><li><code>304</code> low-star GTD reviews mention appointment problems</li><li><code>259</code> mention phone problems</li><li><code>218</code> mention reception</li><li><code>120</code> mention follow-up or referrals</li><li><code>60</code> mention online or website routes</li></ul>
+<p>This is the main GTD pattern. Patients are not usually writing about one isolated bad moment. They are writing about a route into care that feels blocked at several points at once.</p>
+<p>Examples:</p>
+<blockquote><p>"Booking an appointment is an impossible task."</p></blockquote>
+<blockquote><p>Chloe Bradshaw, <code>Gordon Street Medical Centre</code>, <code>2 days ago</code></p></blockquote>
+<blockquote><p>"Every question that you have go online. Avoid"</p></blockquote>
+<blockquote><p>John Apetri, <code>New Bank Health</code>, <code>4 years ago</code></p></blockquote>
+<blockquote><p>"I have never been able to get an appointment in less than a week and usually have to use the walk in centre."</p></blockquote>
+<blockquote><p>Butterfly Effect Transformation, <code>Guide Bridge Medical Practice</code>, <code>8 years ago</code></p></blockquote>
+<blockquote><p>"Worst experience. Weak staff."</p></blockquote>
+<blockquote><p>John Apetri, <code>New Bank Health</code>, <code>4 years ago</code></p></blockquote>
+<p>The GTD access problem is not just high demand in the abstract. In the reviews it is described as a chain:</p>
+<ol><li>the phone is hard to get through on</li><li>appointments are gone</li><li>reception pushes people elsewhere</li><li>the online route is confusing or shut</li><li>follow-up does not land cleanly afterwards</li></ol>
+<h2 id="gtd-ppg-2-reception-and-staff-tone-matter-a-lot">2. Reception And Staff Tone Matter A Lot</h2>
+<p>The GTD slice is full of complaints about being spoken to badly, brushed off, or made to feel like a nuisance.</p>
+<p>I found <code>188</code> GTD reviews mentioning staff-attitude language, <code>177</code> of them in <code>1</code> and <code>2</code> star reviews.</p>
+<p>This is not just a manners issue in the reviews. Patients often describe tone as part of being denied care.</p>
+<p>Examples:</p>
+<blockquote><p>"Reception have an awful attitude problem."</p></blockquote>
+<blockquote><p>dale garbutt, <code>Gordon Street Medical Centre</code>, <code>a year ago</code></p></blockquote>
+<blockquote><p>"the admin/reception team here are something else"</p></blockquote>
+<blockquote><p>Hafsa Bakari, <code>New Bank Health</code>, <code>2 years ago</code></p></blockquote>
+<blockquote><p>"The receptionist is useless and unhelpful."</p></blockquote>
+<blockquote><p>Siem, <code>Simpson Medical Practice</code>, <code>a year ago</code></p></blockquote>
+<blockquote><p>"The receptionists are the worst I have ever experienced."</p></blockquote>
+<blockquote><p>Kirsty M, <code>Hattersley Group Practice</code>, <code>a year ago</code></p></blockquote>
+<p>That said, the GTD reviews also show that patients notice individual staff who make things easier.</p>
+<p>Examples of positive staff experience:</p>
+<blockquote><p>"Thea is an amazing doctor who follows up appointments and makes sure she’s treating problems correctly"</p></blockquote>
+<blockquote><p>Belinda Bayley, <code>Ashton Gp Service</code>, <code>3 years ago</code></p></blockquote>
+<blockquote><p>"Very accessible, I was able to get an appointment quickly. Staff and doctors were friendly and very helpful."</p></blockquote>
+<blockquote><p>Shehab Samaha, <code>City Health Centre</code>, <code>2 months ago</code></p></blockquote>
+<blockquote><p>"Kathryn on reception is always very helpful when I phone"</p></blockquote>
+<blockquote><p>Angels, <code>The Smithy Surgery</code>, <code>Edited 2 years ago</code></p></blockquote>
+<p>So one thing the PPG should keep in mind is that patients are not writing as though every member of staff is the problem. Quite often they separate "the system" from the one or two people who still help them through it.</p>
+<h2 id="gtd-ppg-3-follow-up-prescriptions-results-and-referrals-drift">3. Follow-Up, Prescriptions, Results, And Referrals Drift</h2>
+<p>This is one of the clearest secondary themes after access.</p>
+<p>I found <code>137</code> GTD reviews mentioning follow-up, results, referrals, or prescriptions, including <code>120</code> low-star reviews.</p>
+<p>What patients describe is drift:</p>
+<ul><li>prescriptions not landing</li><li>results not coming back</li><li>referrals being delayed or doubted</li><li>no callback after a promised contact</li></ul>
+<p>Examples:</p>
+<blockquote><p>"Sent repeat prescription request via patches and got wrong medication prescribed 3 times in a row(!)"</p></blockquote>
+<blockquote><p>Ewelina Hartung, <code>Gordon Street Medical Centre</code>, <code>4 months ago</code></p></blockquote>
+<blockquote><p>"There have been multiple mistakes in my notes and results recently, and no one has responded to the patches I raised."</p></blockquote>
+<blockquote><p>Kierron Byron, <code>Gordon Street Medical Centre</code>, <code>6 months ago</code></p></blockquote>
+<blockquote><p>"it took them 3 months to get my results"</p></blockquote>
+<blockquote><p>A E, <code>Charlestown MD</code>, <code>2 weeks ago</code></p></blockquote>
+<blockquote><p>"lost a important letter from hospital and if i'd not chased it up a really important referral to another hospital wouldn't have occurred"</p></blockquote>
+<blockquote><p>Stephen Brewster, <code>Hattersley Group Practice</code>, <code>a year ago</code></p></blockquote>
+<p>In the GTD slice, this follow-through problem is important because it often appears after the patient has already fought through the first access barrier.</p>
+<h2 id="gtd-ppg-4-digital-routes-more-generic-website-complaints-than-named-platforms">4. Digital Routes: More Generic Website Complaints Than Named Platforms</h2>
+<p>The GTD digital picture is surprisingly narrow by name.</p>
+<p>After stripping practice-response text, I found:</p>
+<ul><li><code>49</code> GTD reviews mentioning a generic online or website route</li><li><code>8</code> mentioning <code>PATCHS</code></li><li><code>3</code> mentioning the <code>NHS app</code></li><li>no meaningful patient-side GTD mentions of <code>AskMyGP</code>, <code>Accurx</code>, or <code>eConsult</code></li></ul>
+<p>That means the GTD digital story is mostly not about branded platforms. Patients mainly say:</p>
+<ul><li>the website</li><li>online</li><li>the app</li><li>the system</li><li>the online form</li></ul>
+<p>This matters because the lived experience is not "I dislike vendor X". It is "the only route left to me is a web route that does not work well enough."</p>
+<p>Examples:</p>
+<blockquote><p>"they keep referring go online book online that's the procedure you have to follow"</p></blockquote>
+<blockquote><p>mediawise TM, <code>New Bank Health</code>, <code>4 years ago</code></p></blockquote>
+<blockquote><p>"The Patchs system you have to use to make requests is awful"</p></blockquote>
+<blockquote><p>Mark Gambon, <code>Hattersley Group Practice</code>, <code>3 months ago</code></p></blockquote>
+<blockquote><p>"The online app always says no appointments"</p></blockquote>
+<blockquote><p>Simon Thomas, <code>Hattersley Group Practice</code>, <code>8 months ago</code></p></blockquote>
+<blockquote><p>"The AI was asking me follow up questions ... and it's \"amazing\" advice was to go to A+E"</p></blockquote>
+<blockquote><p>Theodore Morrissey, <code>Ashton Gp Service</code>, <code>10 months ago</code></p></blockquote>
+<p>The GTD-specific digital issue buckets are not huge in raw count, but they are sharp:</p>
+<ul><li><code>5</code> GTD reviews about usability or instruction failure</li><li><code>3</code> about triage burden or self-diagnosis</li><li><code>2</code> about no reply or lost request</li><li><code>1</code> about forms being closed or filled up</li><li><code>1</code> about explicit digital exclusion</li></ul>
+<p>There are also a few positive digital reviews in GTD practices, mostly where online contact leads quickly to a same-day result.</p>
+<p>Examples:</p>
+<blockquote><p>"My appointments are getting way easier when I request online! Quick response when you do online."</p></blockquote>
+<blockquote><p>Naga Manickam, <code>Charlestown MD</code>, <code>Edited 3 years ago</code></p></blockquote>
+<blockquote><p>"The patches system is very good and easy to use"</p></blockquote>
+<blockquote><p>Fiona Simpson, <code>Simpson Medical Practice</code>, <code>4 months ago</code></p></blockquote>
+<p>But in the GTD slice, positive digital stories are clearly outweighed by the feeling that online is replacing access rather than improving it.</p>
+<h2 id="gtd-ppg-5-exclusion-patients-try-to-leave-or-find-they-cannot">5. Exclusion: Patients Try To Leave, Or Find They Cannot</h2>
+<p>The GTD slice also shows what happens after patients lose trust.</p>
+<p>Examples:</p>
+<blockquote><p>"Register elsewhere."</p></blockquote>
+<blockquote><p>Siem, <code>Simpson Medical Practice</code>, <code>a year ago</code></p></blockquote>
+<blockquote><p>"I’ve changed doctors as this place is nothing short of a joke."</p></blockquote>
+<blockquote><p>Genuine Bloodshed, <code>Guide Bridge Medical Practice</code>, <code>2 years ago</code></p></blockquote>
+<blockquote><p>"I was deducted from the practise due to my postcode being out of their catchment area without my knowledge"</p></blockquote>
+<blockquote><p>Hafsa Bakari, <code>New Bank Health</code>, <code>2 years ago</code></p></blockquote>
+<blockquote><p>"there is no option but to register elsewhere"</p></blockquote>
+<blockquote><p>HG, <code>The Smithy Surgery</code>, <code>Edited 4 months ago</code></p></blockquote>
+<p>The main point here is not just that some patients leave. It is that some feel trapped until they can leave, or are moved around by catchment and postcode rules rather than by successful care.</p>
+<h2 id="gtd-ppg-6-clinical-warning-signs-are-present-in-the-gtd-slice">6. Clinical Warning Signs Are Present In The GTD Slice</h2>
+<p>Using the same harm-signal scan as before but only on GTD low-star reviews, I found <code>48</code> flagged GTD reviews with a self-reported clinical warning sign.</p>
+<p>Within those GTD harm-signal reviews:</p>
+<ul><li><code>22</code> mention hospital or urgent escalation</li><li><code>14</code> combine dismissal or not being listened to with a bad outcome</li><li><code>10</code> link delay or postponed care to harm</li><li><code>5</code> mention misdiagnosis or wrong diagnosis</li><li><code>3</code> mention wrong or unsafe medication</li><li><code>3</code> mention a serious condition or near miss</li></ul>
+<p>The GTD practices with the most flagged harm-signal reviews are:</p>
+<p>| Practice | Harm-signal reviews | | --- | ---: | | <code>Ashton Gp Service</code> | <code>6</code> | | <code>Guide Bridge Medical Practice</code> | <code>6</code> | | <code>New Bank Health</code> | <code>6</code> | | <code>Charlestown MD</code> | <code>5</code> | | <code>Droylsden Medical Practice</code> | <code>5</code> | | <code>6</code>0 | <code>6</code>1 | | <code>6</code>2 | <code>6</code>3 |</p>
+<p>Examples:</p>
+<blockquote><p>"I had lost 50% of my blood to an internal bleed"</p></blockquote>
+<blockquote><p>Genuine Bloodshed, <code>Guide Bridge Medical Practice</code>, <code>2 years ago</code></p></blockquote>
+<blockquote><p>"got wrong medication prescribed 3 times in a row"</p></blockquote>
+<blockquote><p>Ewelina Hartung, <code>Gordon Street Medical Centre</code>, <code>4 months ago</code></p></blockquote>
+<blockquote><p>"Please don't go to this GP if you care about yourself."</p></blockquote>
+<blockquote><p>Sana Mahdavi, <code>New Bank Health</code>, <code>4 years ago</code>, after saying wrong medication made her skin problem worse</p></blockquote>
+<blockquote><p>"this practise nearly cost me my life ... then ended up on life support"</p></blockquote>
+<blockquote><p>JACOB TAYLOR, <code>Hattersley Group Practice</code>, <code>7 years ago</code></p></blockquote>
+<blockquote><p>"Never answer phone are rude and have gave wrong medication to my children numerous times"</p></blockquote>
+<blockquote><p>Jack Cunningham, <code>Charlestown MD</code>, <code>6 years ago</code></p></blockquote>
+<p>This is not the biggest GTD theme by volume, but it is too frequent to treat as a handful of outliers.</p>
+<h2 id="gtd-ppg-7-public-practice-responses-in-the-gtd-slice-are-weak">7. Public Practice Responses In The GTD Slice Are Weak</h2>
+<p>The GTD response layer is much thinner and much more standardised than the wider corpus.</p>
+<p>Across GTD reviews:</p>
+<ul><li><code>164</code> of <code>830</code> reviews have a practice response</li><li>that is only <code>19.8%</code> of GTD reviews</li><li>only <code>42</code> positive GTD reviews have responses</li><li><code>116</code> negative GTD reviews have responses</li></ul>
+<p>But the more important part is what those responses actually say.</p>
+<p>In the GTD slice I found:</p>
+<ul><li><code>115</code> responses with boilerplate signposting</li><li><code>109</code> bad negative responses</li><li><code>1</code> response with a clear sign of specific action</li><li><code>0</code> clearly useful negative responses in the stricter sense used in the wider response report</li></ul>
+<p>In plain terms: GTD public responses are mostly apology-plus-redirection.</p>
+<p>Typical wording:</p>
+<blockquote><p>"please either contact the practice directly and ask to speak to the practice manager or contact our patient services team via gtd.feedback@nhs.net"</p></blockquote>
+<p>This wording appears again and again, especially in <code>Gordon Street Medical Centre</code> responses.</p>
+<p>Examples:</p>
+<blockquote><p>"Your comments have been passed on to the practice manager."</p></blockquote>
+<blockquote><p>GTD response to Ewelina Hartung, <code>Gordon Street Medical Centre</code>, <code>4 months ago</code></p></blockquote>
+<blockquote><p>"If you would like to discuss your feedback further, please either contact the practice directly and ask to speak to the practice manager or contact our patient services team"</p></blockquote>
+<blockquote><p>GTD response to Meg Wood, <code>Gordon Street Medical Centre</code>, <code>4 months ago</code></p></blockquote>
+<p>The GTD response pattern matters because it does not publicly tell patients or PPG members what changed. It mainly pushes the patient back into another route.</p>
+<p>By practice, GTD response coverage is uneven:</p>
+<p>| Practice | Response rate | Negative response rate | | --- | ---: | ---: | | <code>The Smithy Surgery</code> | <code>61.9%</code> | <code>75.0%</code> | | <code>Ashton Gp Service</code> | <code>42.0%</code> | <code>36.8%</code> | | <code>Droylsden Medical Practice</code> | <code>41.9%</code> | <code>47.4%</code> | | <code>Gordon Street Medical Centre</code> | <code>61.9%</code>0 | <code>61.9%</code>1 | | <code>61.9%</code>2 | <code>61.9%</code>3 | <code>61.9%</code>4 | | <code>61.9%</code>5 | <code>61.9%</code>6 | <code>61.9%</code>7 | | <code>61.9%</code>8 | <code>61.9%</code>9 | <code>75.0%</code>0 | | <code>75.0%</code>1 | <code>75.0%</code>2 | <code>75.0%</code>3 |</p>
+<p>So the GTD response problem is not only what is said. In some places it is also silence.</p>
+<h2 id="gtd-ppg-8-what-has-changed-over-time-in-gtd-reviews">8. What Has Changed Over Time In GTD Reviews</h2>
+<p>The GTD slice shows the same broad shift as the whole corpus, but in a more concentrated form.</p>
+<p>Among GTD <code>1</code> and <code>2</code> star reviews:</p>
+<ul><li><code>91</code> sit in the older <code>2016-2019</code> window</li><li><code>443</code> sit in the recent <code>2022-2026</code> window</li></ul>
+<p>The main shift is not that older complaints disappear. It is that digital and remote barriers are layered on top of the older problems.</p>
+<p>In the GTD low-star slice:</p>
+<ul><li>digital-language complaints rise from <code>1</code> older review to <code>42</code> recent reviews</li><li>face-to-face complaint language rises from <code>0</code> to <code>9</code></li><li>phone complaint language rises from <code>9</code> to <code>30</code></li><li>walk-in-centre language is present in both periods, from <code>10</code> older to <code>31</code> recent</li></ul>
+<p>Older GTD reviews sound more like this:</p>
+<blockquote><p>"Never got an appointment!!!! Always regarded to Walk-in centre or A&amp;E"</p></blockquote>
+<blockquote><p>Veroca Hlavaca, <code>Simpson Medical Practice</code>, <code>8 years ago</code></p></blockquote>
+<blockquote><p>"It’s very difficult to get an appointment. I’ve ... been to the walk in centre more times, than I’ve seen a doctor at this surgery."</p></blockquote>
+<blockquote><p>Jo w, <code>Droylsden Medical Practice</code>, <code>8 years ago</code></p></blockquote>
+<p>Recent GTD reviews sound more like this:</p>
+<blockquote><p>"go online book online that's the procedure you have to follow"</p></blockquote>
+<blockquote><p>mediawise TM, <code>New Bank Health</code>, <code>4 years ago</code></p></blockquote>
+<blockquote><p>"The online app always says no appointments"</p></blockquote>
+<blockquote><p>Simon Thomas, <code>Hattersley Group Practice</code>, <code>8 months ago</code></p></blockquote>
+<blockquote><p>"actually getting an appointment face to face is near impossible"</p></blockquote>
+<blockquote><p>Nikki Rostron, <code>Simpson Medical Practice</code>, <code>3 years ago</code></p></blockquote>
+<p>So the GTD story over time is not improvement. It is the older access bottlenecks staying in place while the newer digital and triage layers sit on top of them.</p>
+<h2 id="gtd-ppg-9-not-all-gtd-practices-look-the-same">9. Not All GTD Practices Look The Same</h2>
+<p>The complaint-heavy picture is strong, but there are clear exceptions and lighter patches.</p>
+<p>Best-rated GTD practices in this corpus are:</p>
+<p>| Practice | Reviews | Average rating | | --- | ---: | ---: | | <code>City Health Centre</code> | <code>10</code> | <code>4.90</code> | | <code>The Smithy Surgery</code> | <code>21</code> | <code>4.05</code> | | <code>Mossley Medical Practice</code> | <code>13</code> | <code>3.69</code> |</p>
+<p>Examples from the more positive side:</p>
+<blockquote><p>"Most of my queries are addressed on the same day"</p></blockquote>
+<blockquote><p>Rosanna Respecta, <code>City Health Centre</code>, <code>2 months ago</code></p></blockquote>
+<blockquote><p>"I was able to get everything sorted on the day."</p></blockquote>
+<blockquote><p>Shehab Samaha, <code>City Health Centre</code>, <code>2 months ago</code></p></blockquote>
+<blockquote><p>"I moved to this surgery last year, I wish I had done it years ago"</p></blockquote>
+<blockquote><p>Kathleen Ford, <code>The Smithy Surgery</code>, <code>4 years ago</code></p></blockquote>
+<blockquote><p>"Speedy appointments, great communication and generally very personable."</p></blockquote>
+<blockquote><p>Jessica Mcglynn, <code>Mossley Medical Practice</code>, <code>2 years ago</code></p></blockquote>
+<p>There are also partial positives inside otherwise harsh practices:</p>
+<blockquote><p>"Thea is an amazing doctor"</p></blockquote>
+<blockquote><p>Belinda Bayley, <code>Ashton Gp Service</code>, <code>3 years ago</code></p></blockquote>
+<blockquote><p>"Doctors are great!"</p></blockquote>
+<blockquote><p>Angela, <code>Gordon Street Medical Centre</code>, <code>Edited 11 months ago</code>, before describing the rest of the system as failing</p></blockquote>
+<p>This matters for PPG discussion because patients are often distinguishing between individual staff effort and the wider system around them.</p>
+<h2 id="gtd-ppg-10-practice-level-weight-of-complaint">10. Practice-Level Weight Of Complaint</h2>
+<p>By low-star volume, the heaviest GTD complaint load in this corpus falls on:</p>
+<p>| Practice | Low-star reviews | High-star reviews | Total | | --- | ---: | ---: | ---: | | <code>New Bank Health</code> | <code>109</code> | <code>24</code> | <code>138</code> | | <code>Guide Bridge Medical Practice</code> | <code>80</code> | <code>15</code> | <code>96</code> | | <code>Charlestown MD</code> | <code>74</code> | <code>109</code>0 | <code>109</code>1 | | <code>109</code>2 | <code>109</code>3 | <code>109</code>4 | <code>109</code>5 | | <code>109</code>6 | <code>109</code>7 | <code>109</code>8 | <code>109</code>9 | | <code>24</code>0 | <code>24</code>1 | <code>24</code>2 | <code>24</code>3 | | <code>24</code>4 | <code>24</code>5 | <code>24</code>6 | <code>24</code>7 |</p>
+<p>That does not prove these are the worst practices in every real-world sense. But it does show where the strongest public dissatisfaction sits in the GTD review layer.</p>
+<h2 id="gtd-ppg-bottom-line">Bottom Line</h2>
+<p>The GTD-managed slice of the review corpus is dominated by one repeated patient experience:</p>
+<p>patients struggle to get through the front door, feel blocked or worn down by the route in, and often say the system pushes them elsewhere rather than resolving the problem.</p>
+<p>The strongest GTD themes are:</p>
+<ul><li>appointments that feel impossible to get</li><li>phone systems that lead nowhere</li><li>reception behaviour described as obstructive or disrespectful</li><li>weak follow-up on prescriptions, results, and referrals</li><li>online routes that often feel like another barrier rather than an easier way in</li><li>a smaller but serious layer of reviews describing harm, deterioration, or urgent escalation</li><li>very weak public response quality from practices, with heavy use of boilerplate and almost no public evidence of change</li></ul>
+<p>The GTD slice is not wholly negative. Some practices, and some individual staff inside harder-pressed practices, are clearly valued by patients. But the balance of the reviews is not close. The complaint load is heavy, repeated, and unusually concentrated around access, follow-through, trust, and being pushed out of the practice route rather than helped through it.</p>
+<p>For PPG discussion, the practical question is probably not "is there a problem?" The reviews already answer that.</p>
+<p>The practical questions are:</p>
+<ul><li>where is the front door breaking most often</li><li>where are patients being redirected instead of treated</li><li>where are prescriptions, results, and referrals drifting</li><li>where is digital access helping, and where is it just replacing one blocked queue with another</li><li>what public evidence of learning or change can practices actually show back to patients</li></ul>
+                </div>
+              </div>
+            </details>
+      </section>
+
+      <section class="doc-article reports-context-block">
+        <div class="doc-body">
+          <p>The reports overlap on purpose. They are different cuts of the same review corpus rather than separate datasets, so the same practice or failure mode may appear in more than one panel.</p>
+<p>If you want a reading order, start with the overview, then access, staff, clinical harm, responses, digital routes, activism, and the GTD-only report at the end. If you want a single printable bundle, use <code>Expand all</code> first and then print the page.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built from repo-local markdown reports and published as one static page.</p>
+      <p><a href="../index.html">Homepage</a> <span class="sep">/</span> <a href="../map/map.html">Interactive map</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const panels = Array.from(document.querySelectorAll('[data-report-panel]'));
+      const toggleButton = document.getElementById('toggle-all-reports');
+      const printButton = document.getElementById('print-reports');
+      let printRestore = null;
+
+      function allOpen() {
+        return panels.length > 0 && panels.every((panel) => panel.open);
+      }
+
+      function syncToggle() {
+        if (!toggleButton) return;
+        const expanded = allOpen();
+        toggleButton.dataset.open = expanded ? 'true' : 'false';
+        toggleButton.textContent = expanded ? 'Collapse all reports' : 'Expand all reports';
+      }
+
+      function setAll(open) {
+        panels.forEach((panel) => {
+          panel.open = open;
+        });
+        syncToggle();
+      }
+
+      panels.forEach((panel) => {
+        panel.addEventListener('toggle', syncToggle);
+      });
+
+      if (toggleButton) {
+        toggleButton.addEventListener('click', function () {
+          setAll(toggleButton.dataset.open !== 'true');
+        });
+      }
+
+      if (printButton) {
+        printButton.addEventListener('click', function () {
+          window.print();
+        });
+      }
+
+      window.addEventListener('beforeprint', function () {
+        printRestore = panels.map((panel) => panel.open);
+        setAll(true);
+        document.body.classList.add('printing-reports');
+      });
+
+      window.addEventListener('afterprint', function () {
+        if (Array.isArray(printRestore)) {
+          panels.forEach((panel, index) => {
+            panel.open = Boolean(printRestore[index]);
+          });
+        }
+        document.body.classList.remove('printing-reports');
+        syncToggle();
+      });
+
+      syncToggle();
+    }());
+  </script>
+</body>
+</html>

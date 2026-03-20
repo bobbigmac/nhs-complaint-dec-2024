@@ -1,0 +1,305 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "Y02960",
+    "practice_name": "New Bank Health",
+    "display_name": "New Bank Health Centre",
+    "website_url": "https://newbank.nhs.uk/",
+    "website_identity": "standalone practice domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/new-bank-health/Y02960",
+    "telephone": "0161 277 5600",
+    "postcode": "M12 4JE",
+    "registered_patient_count": 6419,
+    "google_review_score": 1.9,
+    "google_review_count": 163
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "manual browser-driven review in Firefox from the homepage as a logged-out patient, with direct follow-up on surfaced routes and form entry pages",
+    "manual_browser_mode": "headful Firefox using a disposable copy of the local profile"
+  },
+  "headline": "New Bank still looks like a transition case, but the patient-task picture is now clearer. The homepage says all requests go through PATCHS from 1 October 2025, the appointments page still tells NHS App users to continue to the Accurx system, local Silicon Practice forms still render on the practice domain, and repeat-prescription and other admin routes remain available as separate local forms.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 2,
+    "digital_task_coverage": 4,
+    "journey_ease": 2,
+    "trust_and_maintenance": 2,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 2,
+    "summary": "There is plenty of digital surface area, but the transition-state overlap between PATCHS, Accurx and legacy forms makes the experience hard to trust."
+  },
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "WordPress with NHS UK theme and Silicon Practice elements",
+        "evidence": [
+          "The public site runs on the standalone newbank.nhs.uk domain.",
+          "Live local form routes still exist under /form/ and /online-forms/."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Current promoted request platform",
+        "platform": "PATCHS",
+        "evidence": [
+          "The homepage and appointments page say that from 1 October 2025 all requests made by phone, in person or online will go through Patchs Health.",
+          "The appointments page links to https://patchs.ai/newbankmedicalpractice/login?."
+        ]
+      },
+      {
+        "status": "stale_or_conflicting",
+        "label": "Older app-mediated wording still on the site",
+        "platform": "Accurx",
+        "evidence": [
+          "The appointments page still tells NHS App users to select continue to the Accurx system.",
+          "That conflicts with the same page's PATCHS-first wording."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Legacy local forms still available",
+        "platform": "Silicon Practice style local forms on the practice domain",
+        "evidence": [
+          "The old medical-help form at /form/get-help-for-any-health-problem/ still renders live.",
+          "The prescriptions page still points to local repeat-prescription, prescription-question and pharmacy-nomination forms."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine medical request",
+      "label": "Appointments page from homepage",
+      "steps_from_home": 1,
+      "url": "https://newbank.nhs.uk/appointments/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine medical request",
+      "label": "Direct PATCHS route from appointments page",
+      "steps_from_home": 2,
+      "url": "https://patchs.ai/newbankmedicalpractice/login?"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine medical request",
+      "label": "Legacy local medical-help form",
+      "steps_from_home": 2,
+      "url": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Prescriptions page from homepage",
+      "steps_from_home": 1,
+      "url": "https://newbank.nhs.uk/prescriptions/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Local repeat-prescription form",
+      "steps_from_home": 2,
+      "url": "https://newbank.nhs.uk/online-forms/repeat-prescription-request/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Complaints page from homepage",
+      "steps_from_home": 1,
+      "url": "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "headless Firefox top-level route probe using a copied local profile",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://newbank.nhs.uk/",
+        "final_url": "https://newbank.nhs.uk/",
+        "status": "live",
+        "title": "New Bank Health Centre – NHS GP Surgery in Manchester",
+        "load_ms": 798.9
+      },
+      {
+        "label": "appointments",
+        "url": "https://newbank.nhs.uk/appointments/",
+        "final_url": "https://newbank.nhs.uk/appointments/",
+        "status": "live",
+        "title": "Appointments – New Bank Health Centre",
+        "load_ms": 404.9
+      },
+      {
+        "label": "legacy_medical_help",
+        "url": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
+        "final_url": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
+        "status": "live",
+        "title": "Get help for any health problem – New Bank Health Centre",
+        "load_ms": 477.3
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://newbank.nhs.uk/prescriptions/",
+        "final_url": "https://newbank.nhs.uk/prescriptions/",
+        "status": "live",
+        "title": "Prescriptions – New Bank Health Centre",
+        "load_ms": 316.0
+      },
+      {
+        "label": "complaints",
+        "url": "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/",
+        "final_url": "https://newbank.nhs.uk/surgery-information/policies/feedback-and-complaints/",
+        "status": "live",
+        "title": "Feedback and complaints – New Bank Health Centre",
+        "load_ms": 365.1
+      },
+      {
+        "label": "patchs",
+        "url": "https://patchs.ai/newbankmedicalpractice/login?",
+        "final_url": "https://patchs.ai/newbankmedicalpractice/login?",
+        "status": "live",
+        "title": "PATCHS",
+        "load_ms": 1460.7
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://newbank.nhs.uk/appointments/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The appointments page says all requests go through PATCHS.",
+        "It also says phone requests remain possible and that home visits should be phoned in before 10am.",
+        "Urgent medical issues outside normal hours are not clearly handled on the appointments page during this pass."
+      ],
+      "friction": [
+        "The page gives mixed supplier instructions by promoting PATCHS while still telling NHS App users to continue to Accurx.",
+        "A patient has to interpret whether urgent same-day help should go to PATCHS, phone, or NHS App."
+      ]
+    },
+    {
+      "task": "routine medical request or appointment",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://patchs.ai/newbankmedicalpractice/login?",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "Homepage to Appointments is one click.",
+        "Appointments to the direct PATCHS route is another click.",
+        "The site says patients should have received a text message with a registration link for PATCHS."
+      ],
+      "gating_or_preconditions": [
+        "Probable registration or login barrier on the PATCHS route.",
+        "The site frames PATCHS account setup as something patients may need before go-live."
+      ],
+      "friction": [
+        "Supplier overlap on the same page increases cognitive load.",
+        "The user has to choose between NHS App wording, PATCHS wording and phone wording."
+      ]
+    },
+    {
+      "task": "legacy medical-help form still exposed",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "initial_inputs_observed": [
+        "Who are you completing this form for?",
+        "First name",
+        "Last name",
+        "Date of birth",
+        "Sex",
+        "Postcode",
+        "Phone number",
+        "Email address",
+        "Please tell us about the problem"
+      ],
+      "friction": [
+        "This is a relatively high first-step data burden before the patient can explain the problem in context.",
+        "The coexistence of this local form with PATCHS muddies which route is current."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://newbank.nhs.uk/prescriptions/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The prescriptions page says the easiest route is the NHS account or NHS App.",
+        "It also exposes local forms for repeat-prescription requests, prescription questions and pharmacy nomination.",
+        "The page says prescriptions are ready after 2 working days unless a doctor needs to see the patient."
+      ],
+      "friction": [
+        "Prescriptions are not fully consolidated into the PATCHS story.",
+        "The page still depends on several separate local forms for different prescription-related tasks."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage exposes Feedback and complaints directly.",
+        "The page title is Feedback and complaints and it shows a Complaints procedure heading."
+      ],
+      "friction": [
+        "The page still sits under the wider transition banner and does not look especially prominent compared with the request-system messaging."
+      ]
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "conflicting_platform_guidance",
+      "details": "Appointments page says all requests go through PATCHS but still tells NHS App users to continue to the Accurx system."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "legacy_route_still_live",
+      "details": "The old local medical-help form remains live on the practice domain despite the site's PATCHS-first transition messaging."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "fragmented_admin_routes",
+      "details": "Prescription-related tasks are split across several separate local forms rather than a single consistent front door."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "New Bank is still in a mixed-transition state rather than having a clean single access pattern.",
+      "The main patient burden is not just multiple suppliers; it is multiple overlapping routes with different implied currentness."
+    ],
+    "needs_follow_up": [
+      "Check the direct PATCHS route out of hours to see whether it stays available, queues the request, or visibly closes.",
+      "Check whether the complaints page content itself is stale beyond its title and heading.",
+      "Test whether the local legacy forms still submit or only render."
+    ]
+  },
+  "source_pages": [
+    "https://newbank.nhs.uk/",
+    "https://newbank.nhs.uk/appointments/",
+    "https://newbank.nhs.uk/form/get-help-for-any-health-problem/",
+    "https://newbank.nhs.uk/prescriptions/",
+    "https://newbank.nhs.uk/surgery-information/feedback-and-complaints/",
+    "https://newbank.nhs.uk/news/patchs/",
+    "https://newbank.nhs.uk/online-forms/",
+    "https://patchs.ai/newbankmedicalpractice/login?"
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "report_version": "0.3",
+  "practice": {
+    "ods_code": "P84689",
+    "practice_name": "Manchester Integrative Medical Practice",
+    "display_name": "Manchester Integrative Medical Practice",
+    "website_url": "https://mimp.org.uk/",
+    "website_identity": "standalone shared-group domain",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/manchester-integrative-medical-practice/P84689",
+    "telephone": "0161 256 4488",
+    "postcode": "M13 0RR",
+    "registered_patient_count": 14205,
+    "google_review_score": 4.8,
+    "google_review_count": 550
+  },
+  "investigation": {
+    "collected_at": "2026-03-13",
+    "method": "practice-specific exploratory review using NHS profile confirmation, live page inspection across homepage, appointments, prescriptions, contact and complaints, plus direct follow-up into the linked Accurx routes",
+    "website_confirmation": "The NHS profile for P84689 points to mimp.org.uk, which resolves to a live standalone practice site."
+  },
+  "headline": "Manchester Integrative Medical Practice has a clear, modern but tightly gated access model. The public site is a Silicon Practice WordPress build on a standalone domain, while most real patient requests go through Accurx. Routine care, urgent medical requests and repeat prescriptions are all routed into Accurx, and the portal explicitly suspends normal online handling out of hours rather than pretending the route is fully open.",
+  "subjective_scores": {
+    "scored_on": "2026-03-13",
+    "scale": "1_to_5_higher_is_better",
+    "front_door_clarity": 4,
+    "digital_task_coverage": 4,
+    "journey_ease": 3,
+    "trust_and_maintenance": 4,
+    "complaints_and_fallbacks": 3,
+    "overall_patient_usability": 4,
+    "summary": "Clear and modern, but the digital front door is tightly time-gated and the shared-site setup adds some location ambiguity."
+  },
+  "website_stack": {
+    "observed_on": "2026-03-13",
+    "items": [
+      {
+        "status": "live",
+        "label": "Public website stack",
+        "platform": "WordPress with NHS UK frontend theme and Silicon Practice plugins",
+        "evidence": [
+          "The live site runs on the standalone mimp.org.uk domain.",
+          "The HTML exposes WordPress, NHS UK frontend theme assets, Silicon Practice form assets and a footer credit of © Silicon Practice."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Primary request platform",
+        "platform": "Accurx",
+        "evidence": [
+          "The homepage and appointments page direct non-urgent medical, medication and administrative requests to Accurx.",
+          "The appointments page also directs urgent or same-day requests to an Accurx online triage form."
+        ]
+      },
+      {
+        "status": "live",
+        "label": "Supporting website forms",
+        "platform": "Local Silicon Practice feedback-style forms",
+        "evidence": [
+          "The complaints page links to a local feedback form and a Friends and Family Test route hosted on the site.",
+          "These look supplemental rather than the main front door."
+        ]
+      }
+    ]
+  },
+  "discovered_paths": [
+    {
+      "discovered_on": "2026-03-13",
+      "task": "routine care or admin request",
+      "label": "Homepage Accurx routine-care link",
+      "steps_from_home": 1,
+      "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "urgent same-day help",
+      "label": "Appointments page urgent triage link",
+      "steps_from_home": 2,
+      "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "repeat prescription",
+      "label": "Prescriptions page repeat-prescription link",
+      "steps_from_home": 2,
+      "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/repeat-prescription"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "contact and opening times",
+      "label": "Contact page",
+      "steps_from_home": 1,
+      "url": "https://mimp.org.uk/contact-us/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "complaint",
+      "label": "Feedback and complaints page",
+      "steps_from_home": 1,
+      "url": "https://mimp.org.uk/surgery-information/feedback-and-complaints/"
+    },
+    {
+      "discovered_on": "2026-03-13",
+      "task": "negative feedback",
+      "label": "Local feedback form intro page",
+      "steps_from_home": 3,
+      "url": "https://mimp.org.uk/services/managing-your-health-online/online-forms/feedback/"
+    }
+  ],
+  "basic_runtime_checks": {
+    "checked_on": "2026-03-13",
+    "method": "browser-like HTTP fetch with desktop user agent against main website and linked request routes",
+    "checks": [
+      {
+        "label": "homepage",
+        "url": "https://mimp.org.uk/",
+        "final_url": "https://mimp.org.uk/",
+        "status": "live",
+        "title": "Manchester Integrative Medical Practice – NHS GP Surgery in Manchester",
+        "load_ms": 190.1
+      },
+      {
+        "label": "appointments",
+        "url": "https://mimp.org.uk/appointments/",
+        "final_url": "https://mimp.org.uk/appointments/",
+        "status": "live",
+        "title": "Appointments – Manchester Integrative Medical Practice",
+        "load_ms": 144.4
+      },
+      {
+        "label": "prescriptions",
+        "url": "https://mimp.org.uk/prescriptions/",
+        "final_url": "https://mimp.org.uk/prescriptions/",
+        "status": "live",
+        "title": "Prescriptions – Manchester Integrative Medical Practice",
+        "load_ms": 151.1
+      },
+      {
+        "label": "complaints",
+        "url": "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+        "final_url": "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+        "status": "live",
+        "title": "Feedback and complaints – Manchester Integrative Medical Practice",
+        "load_ms": 153.2
+      },
+      {
+        "label": "accurx_routine",
+        "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+        "status": "live",
+        "title": "See other available options - Accurx Patient Portal",
+        "load_ms": 131.5
+      },
+      {
+        "label": "accurx_urgent",
+        "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request",
+        "status": "live",
+        "title": "See other available options - Accurx Patient Portal",
+        "load_ms": 101.1
+      },
+      {
+        "label": "accurx_repeat_prescription",
+        "url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/repeat-prescription",
+        "final_url": "https://accurx.nhs.uk/patient-initiated/P84689/flow/repeat-prescription",
+        "status": "live",
+        "title": "See other available options - Accurx Patient Portal",
+        "load_ms": 100.0
+      }
+    ]
+  },
+  "task_checks": [
+    {
+      "task": "urgent same-day help",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "Homepage to Appointments is one click.",
+        "Appointments to the urgent Accurx triage form is another click.",
+        "The appointments page says the urgent online triage form is reviewed by a GP to decide how best to help.",
+        "The Accurx route is currently visible out of hours but suspended, and points patients to NHS 111 or 999 instead."
+      ],
+      "friction": [
+        "The urgent route exists and is explicit, but it is not continuously open.",
+        "Out-of-hours users are met with an availability barrier rather than a form they can complete for later handling."
+      ]
+    },
+    {
+      "task": "routine medical request or admin request",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage directly advertises an online service for non-urgent medical, medication and administrative requests.",
+        "The homepage promises a response within 1 working day.",
+        "The routine Accurx route is also currently suspended out of hours."
+      ],
+      "gating_or_preconditions": [
+        "The portal is time-window gated rather than permanently open.",
+        "The site also offers phone completion of the form on the patient's behalf."
+      ],
+      "friction": [
+        "The core digital route is strong during opening hours, but not permissive out of hours.",
+        "Patients who miss the open window are quickly diverted back to phone or urgent-care advice."
+      ]
+    },
+    {
+      "task": "repeat prescription",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/P84689/flow/repeat-prescription",
+      "steps_from_home": 2,
+      "user_visible_interactions": 2,
+      "observed_workflow": [
+        "Homepage to Prescriptions is one click.",
+        "Prescriptions to the Accurx repeat-prescription request form is another click.",
+        "The prescriptions page also mentions the NHS App and says repeat requests are not taken over the telephone."
+      ],
+      "friction": [
+        "Repeat prescriptions are digital-first and fairly clear.",
+        "The route is still subject to the same out-of-hours suspension behavior visible in Accurx."
+      ]
+    },
+    {
+      "task": "admin query",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The homepage and contact page both push admin requests into the same routine-care Accurx route.",
+        "The contact page separately offers a change-your-contact-details page and shows branch opening times."
+      ],
+      "friction": [
+        "Administrative and routine medical work are bundled together into the same main digital door.",
+        "Patients have to interpret the difference between routine care, prescription questions and complaint or feedback routes."
+      ]
+    },
+    {
+      "task": "complaint or formal negative feedback",
+      "checked_on": "2026-03-13",
+      "route_found": true,
+      "first_actionable_page": "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+      "steps_from_home": 1,
+      "user_visible_interactions": 1,
+      "observed_workflow": [
+        "The site has a clear Feedback and complaints page in the main surgery-information section.",
+        "Feedback is split out to a website feedback form, Friends and Family Test, and Google review route.",
+        "Formal complaints are handled by phone or writing to Mandy Bruder, Complaints Manager at Moss Side Health Centre.",
+        "The page states the normal complaint window is 12 months."
+      ],
+      "friction": [
+        "There is no dedicated online complaints submission route, only a feedback form plus formal phone or post instructions.",
+        "The complaints page is clearer than most, but still process-heavy."
+      ]
+    }
+  ],
+  "replay_hints": [
+    {
+      "task": "routine care or admin request",
+      "start_url": "https://mimp.org.uk/",
+      "visible_next_step": "Homepage online service link for non-urgent medical, medication and administrative requests",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care"
+    },
+    {
+      "task": "urgent same-day help",
+      "start_url": "https://mimp.org.uk/",
+      "visible_next_step": "Appointments -> online triage form",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request"
+    },
+    {
+      "task": "repeat prescription",
+      "start_url": "https://mimp.org.uk/",
+      "visible_next_step": "Prescriptions -> repeat prescriptions request form",
+      "expected_destination": "https://accurx.nhs.uk/patient-initiated/P84689/flow/repeat-prescription"
+    },
+    {
+      "task": "complaint",
+      "start_url": "https://mimp.org.uk/",
+      "visible_next_step": "Feedback and complaints",
+      "expected_destination": "https://mimp.org.uk/surgery-information/feedback-and-complaints/"
+    }
+  ],
+  "encountered_issues": [
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "time_window_gated_digital_front_door",
+      "details": "The main Accurx routes are visible out of hours but currently suspended, with the portal showing alternative options instead of accepting normal requests."
+    },
+    {
+      "encountered_on": "2026-03-13",
+      "issue_type": "shared_site_for_multiple_locations",
+      "details": "The public site covers both Longsight and Moss Side, so some contact and complaints information is location-specific rather than neatly practice-specific."
+    }
+  ],
+  "analyst_notes": {
+    "probably_true": [
+      "This is one of the clearest digital front doors reviewed so far, but it performs that clarity by being quite strict about when the digital route is actually open.",
+      "Its strong public ratings may be linked more to coherent wording and predictable routing than to unusually low friction."
+    ],
+    "needs_follow_up": [
+      "Check the live in-hours Accurx question flow to capture the actual first patient questions when the triage window is open.",
+      "Check whether the linked feedback form materially differs from the formal complaints route in how issues are triaged."
+    ]
+  },
+  "source_pages": [
+    "https://www.nhs.uk/services/gp-surgery/manchester-integrative-medical-practice/P84689",
+    "https://mimp.org.uk/",
+    "https://mimp.org.uk/appointments/",
+    "https://mimp.org.uk/prescriptions/",
+    "https://mimp.org.uk/contact-us/",
+    "https://mimp.org.uk/surgery-information/feedback-and-complaints/",
+    "https://mimp.org.uk/services/managing-your-health-online/online-forms/feedback/",
+    "https://accurx.nhs.uk/patient-initiated/P84689/flow/routine-care",
+    "https://accurx.nhs.uk/patient-initiated/P84689/flow/medical-request",
+    "https://accurx.nhs.uk/patient-initiated/P84689/flow/repeat-prescription"
+  ]
+}
