@@ -4,21 +4,26 @@ Postcode: SK14 1JY
 Google Maps title: Haughton Thornley Medical Centre
 Google rating: 2.6
 Google review count: 78
-Google Maps URL: https://www.google.com/maps/place/Haughton+Thornley+Medical+Centre/@53.4468944,-2.0759453,17z/data=!4m8!3m7!1s0x487bb5e842e35a63:0xfcb521aeaafe17ff!8m2!3d53.4468944!4d-2.0759453!9m1!1b1!16s%2Fg%2F1td4zdf0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Haughton+Thornley+Medical+Centre/@53.4468976,-2.0785256,17z/data=!4m8!3m7!1s0x487bb5e842e35a63:0xfcb521aeaafe17ff!8m2!3d53.4468944!4d-2.0759453!9m1!1b1!16s%2Fg%2F1td4zdf0?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.667
+Review collection mode: full_feed
+Review cards collected: 78
+Owner replies collected: 0
+Raw review responses captured: 8
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P89014-haughton-thornley-medical-centres.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Amy
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
-Amy2 reviewsa month ago
+Amy2 reviews2 months ago
 
 Author: Su Su San
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
-Su Su SanLocal Guide · 177 reviews · 348 photosa month ago
+Su Su SanLocal Guide · 177 reviews · 348 photos2 months ago
 
 Author: Barbara Bardsley
 Date: 3 months ago
@@ -46,7 +51,7 @@ Rating: 1 star
 All i can say this place is going down hill. Just been sat there booked in by the screen as that what you got to do. 20mins later the i was asked i was seeing. Found out its been booked at Haughton Vale by mistake. No other appointments for me until the next day.
 
 Author: R R
-Date: 9 months ago
+Date: 10 months ago
 Rating: 1 star
 I’ve been experiencing kidney pains and expressed 2 days to be seen but kept being sent to the pharmacy who have said they’re not able to treat as it’s gone to my kidney. I have never known the surgery to be this poor and neglect issues that’s been raised twice consistently.
 
@@ -59,3 +64,343 @@ Author: Robert Barayuga
 Date: a year ago
 Rating: 1 star
 Twice this thing happened. I've ordered my medication online and its taking them forever to issue the order to chemist. I phoned just now and I've told them I'm on my last tablet and probably won't have anything to take in maybe a week until the time they issue the order. If something happened to me because of not taking my medication, I'll take them accountable and still they're not bothered. Not very professional, reception and doctors alike. NOT RECOMMENDED.
+
+Author: Sergey Slizovskiy
+Date: a year ago
+Rating: 1 star
+Completely incompetent doctors, who even do not touch the patient to examine properly. Their only aim is to refuse any treatment. One must arrive in a catafalque in order to get any treatment at all. Usual NHS disgrace.
+
+Author: Jane Webster
+Date: a year ago
+Rating: 5 stars
+I am very satisfied with the service I receive from this practice. I have found them to be very responsive and when I have had face-to-face consultations, the Doctor in question has been highly professional, knowledgeable and empathetic. My most recent consultation was yesterday (03.01.25) with Dr Saheb Rehman, who has definitely chosen the right profession. He is an absolute delight to deal with and an excellent clinician. I have read some of the negative reviews on here and I have to say I'm very surprised that people have had poor experiences with the practice. Fortunately that certainly isn't my own experience.
+
+Author: RapidReady Yamaha
+Date: a year ago
+Rating: 1 star
+They don’t answer phone and when they do they send you to a pharmacy to get checked by the pharmacy or try to send you to a walk in centre.
+
+Author: Michael Ajala
+Date: a year ago
+Rating: 1 star
+This is the worst GP have seen in my life, the administrative staff does not care about the patients, this is very wrong, I hope they improve.
+
+Author: carl anderson
+Date: a year ago
+Rating: 1 star
+Iv been wait for 2day to back to
+
+Author: Mr Slippyfist
+Date: a year ago
+Rating: 1 star
+2.7 stars SAYS IT ALL ...THIS SURGERY NEEDS A GOOD AUDIT
+
+Author: veronica green
+Date: a year ago
+Rating: 5 stars
+I would just like to say thank you so much to the Dr that gave me my hip injection this morning he was so good and kind 👏👏 …
+
+Author: Alicia Gardner
+Date: a year ago
+Rating: 1 star
+Genuinely the worst drs I’ve ever been. I’ve been with them for a good few years now. Booking an appointment is ridiculous, twice my appointments have been cancelled without notifications !!!! Absolutely no communication between any of the staff. On another note the muscular skeletal team are not nice or friendly at all! I got told I’m too fat and need to lose a lot of weight which was completely out of order. Ridiculous place I WILL be switching asap.
+
+Author: ian hopkins
+Date: a year ago
+Rating: 5 stars
+Can't praise this doctors surgery enough, filled in a qrx and got a appointment with a doctor within the hour , Fantastic service.
+
+Author: Blue
+Date: a year ago
+Rating: 1 star
+Not only did they barely treat me they dragged their feet the entire time. Every single time I went they dismissed my concerns and didn't listen to me. If you have mental health concerns or have trouble communicating and need someone to listen to what you say, do not go here :)
+
+Author: Asma Begum
+Date: a year ago
+Rating: 3 stars
+Asma Beguma year ago
+
+Author: Adam Arrowsmith
+Date: a year ago
+Rating: 1 star
+Adam ArrowsmithLocal Guide · 25 reviews · 2 photosa year ago
+
+Author: Peaches M
+Date: 2 years ago
+Rating: 1 star
+Receptionist is just miserable. Shouting at a child for playing, but she was fine with another child running around, slapping the fish tank and blocking others from looking at the fish.
+
+Author: Anna Salawila
+Date: 2 years ago
+Rating: 1 star
+Lady doctor is most horrible person. Treat me with no respect. My health condition is getting worse. Avoid this practice
+
+Author: Mike sinister
+Date: 2 years ago
+Rating: 1 star
+An absolute disgrace of a practice, i havent been able to book an appointment with them since may, i havent been able to get my auto immune desease medication for over 3 months due to them withholding them and refusing to book me an appoimtment to discuss this with a medical professional. I havent had my antidepressants in 2 months and im worroid if i try to contact them again theyre going to refuse me. I am currently seeking action against them.
+
+Author: adrian foley
+Date: 2 years ago
+Rating: 1 star
+Was on hold for 2 hours only then to be told sorry we're now on training Pathetic
+
+Author: Matt Zajac
+Date: 2 years ago
+Rating: 5 stars
+Good Experience. Nice and professional doctor!
+
+Author: Katie Cookson
+Date: 2 years ago
+Rating: 4 stars
+The booking system is a little frustrating, however i got my contraceptive implant here. I wish i could remember my nurse, she was so unbelievably amazing, kind and non judgmental. We had a great conversations and a couple laughs.
+
+Author: Paul Graham
+Date: 2 years ago
+Rating: 1 star
+Got a text the other day, that informed me that I have an appointment for today, no information in the text as to what the appointment is for, or who it's with. The secretary told me it was for a blood sample. The phlembotomist calls me into a room and says that I have already given a sample and that this appointment should have been cancelled by the secretary. I told the phlembotomist that I just thought the Dr wanted to repeat the blood test, as he has done many times before. So it was as an unnecessary journey, I could have done without, all because the secretary can't be bothered to do her job. I have hypertension, the doctots who I see here know this, yet I'm being messed about and bounced from pillar to post, this time for no good reason, which is stressful, raising my blood pressure unnecessarily,which is putting my health at further risk.
+
+Author: Genuine Bloodshed
+Date: 2 years ago
+Rating: 1 star
+Dr khungar is a disgrace. He refused to see me in 2020 while working at guide bridge medical practice. He said the risk of Covid was too high to have me in for a blood test and that I was just depressed due to the pandemic. After 8 months …
+
+Author: Genuine Bloodshed
+Date: 2 years ago
+Rating: 1 star
+Dr khungar is a disgrace. He refused to see me in 2020 while working at guide bridge medical practice. He said the risk of Covid was too high to have me in for a blood test and that I was just depressed due to the pandemic. After 8 months of emails back and forth I finally threatened legal action. The next day I was invited for a blood text. Less than 24 hours later I was being contacted by my local hospital saying something is wrong and I need to go in asap. I had lost 50% of my blood to an internal bleed and had to have an emergency blood transfusion. He never apologised but in fact applied for a new role elsewhere with in a week of this happening. I could have easily fallen into a coma and died as I live alone and he knew that. If you have seen him for any reason I advise getting a second opinion.
+
+Author: Natalie Chapman
+Date: 2 years ago
+Rating: 5 stars
+I have been at this GPs for 5 years now after being at a terrible one previously. They go above and beyond every time and are always friendly and empathic. Thank you.
+
+Author: Philippa Mullen
+Date: 2 years ago
+Rating: 4 stars
+Never had an issue getting an appointment, other than when you had to ring at 8am. The online booking system seems to be working well for me and my family. Receptionists have always been polite and on the whole helpful; the nurses who do the bloods are amazing too. I've always been able to get my children in for an appointment whenever needed aswell.
+
+Author: Ruby Begum
+Date: 2 years ago
+Rating: 5 stars
+I took my 5 month old baby for his circumcision here yesterday as it came highly recommended by a family member From start to finish the entire process was faultless . I cant thank the Doctor and staff enough. Riyadh was lovely and made me feel 100% better about the entire process right from the start as I was extremely anxious about it. The after care was explained very well by both Riyadh and Doctor Ahmed. I have nothing but praise for the whole team and I would recommend this surgery to everyone.
+
+Author: প্রিয়া দাশ
+Date: 3 years ago
+Rating: 4 stars
+I want to leave some praise for this practice in figuring out a system that really works - their patient access and way to make appointments at 3pm that will allow you to speak to a doctor within 72 hours is so much better than what used to happen in calling up at 8am and just hoping you were lucky in getting an app. It has reduced so much of the stress, especially if you are a carer who consistently has to be in communication with medical services Dr Hannan and Dr Kunga, alongside their health assistant Riyadh are fantastic and offer patients a really welcoming and caring service. In the face of pressure and demand due to government negligence, they are still trying their best to support patients. I hope that the other doctors at the practice can also match these doctors methods with time The star lost was for reception - they need significantly more training. I have heard countless times them telling myself/other patients they don’t know something when in fact it is their job to know that bit of information and share it. E.g., that yes, you can view your blood results on patient access instead of unhelpfully saying “I don’t know anything about your blood results”. Reception need to be more on the ball, and ready to signpost their patients to information and support.
+
+Author: paul strong
+Date: 3 years ago
+Rating: 1 star
+This medical centre is a absolute shambles. It’s the worst run centre I’ve ever tried dealing with . Whoever they’ve got answering the phones need lessons on talking to people with manners . It’s a absolute joke people like this are working in jobs like this
+
+Author: Arman Hossain
+Date: 3 years ago
+Rating: 1 star
+Takes them soo long to pick up my calls and about 7-8mins for them to pick ip and what if it was urgent? Then what would i have done if they K eep taking this long
+
+Author: Nathalia Noemi Sanchez Chacon
+Date: 3 years ago
+Rating: 1 star
+Terrible service, I have scheduled an appointment with them more than a month in advance, close to the day of the appointment he cancelled it, and I had to call again with a 45-minute wait to have it rescheduled, so that they will reschedule it for me in their closest available space for 2 weeks after the date. My annoyance is the appointment is for an injection that does not take more than 7 min. They really don't care about their patients, the service is really terrible...
+
+Author: Mohammed Ibrahim
+Date: 4 years ago
+Rating: 1 star
+No words can describe this place. Getting a same day appointment with them is almost impossible and when you eventually get through, the "help" you receive is not actually helpful at all. It is absolutely disgusting what they’ve put my spouse through over the years and I'm surprised she hasn't sued them yet! They repeatedly failed to diagnose her with a medical condition and kept fobbing her off for a number of years. Dr Rana would simply say "I don’t think there’s anything wrong" without actually examining her whilst Dr Gutteridge would always advise her to simply lose weight everytime she saw her with any medical issue. Dr Hannan was initially helpful but he soon became "fed up" and would make out the problems were all in her head! Don't even get me started on Dr Ahmed as he would never want to see any patient and would make out all issues are minor when he speaks to you on the phone! This unhelpful approach unfortunately resulted in my spouse suffering from internal bleeding and requiring an emergency operation last year. This near fatal incident could have been easily avoided by them simply performing the necessary checks, like she pleaded them to! In order to make any progress regarding any medical illness, my spouse had to put her foot down and when the doctors reluctantly checked her properly, they always found something wrong and then prescribed her with the necessary treatment. This particular GP practice use to be extremely good and had most of the Asian community attending but it's quite clear that they simply do not care anymore. I’m actually surprised this practice is still open! My spouse has now moved to a different GP practice and she is much happier and gets the medical assistance she requires.
+
+Author: wadey mcr
+Date: 4 years ago
+Rating: 1 star
+Zero stars for this shocking excuse for a Dr's surgery. It's nearly impossible to get somebody on the phone and when you finally do they just fob you off with the old phone back at 8 tomorrow line...iv been trying to get an appointment since October to still no avail.. the fact that we tax payers fund this shocking ponzi scheme of a surgery is disgusting ....iv never had any actual help from these so called Dr's.. and the receptionists are power mad haugton Thornley medical center YOU GIVE THE NHS A BAD NAME!
+
+Author: Paul Hardy
+Date: 4 years ago
+Rating: 5 stars
+Paul Hardy1 review4 years ago
+
+Author: James Carrington
+Date: 4 years ago
+Rating: 1 star
+I have never been able to get myself an appointment as the system does not work. I do not have time to chase doctors yet we all pay for this shocking service. However I do get a message after I see a private gp. Yes I pay a fortune to have my issues dealt with because the practice wont see patients. On the occasions I have been to the surgery with the children when my wife has battled for days to get them an appointment I notice there is nobody there? What do the doctors do all day?
+
+Author: Mosammat Jesmin
+Date: 4 years ago
+Rating: 1 star
+I am really disappointed with this surgery. I tried to make an appointment over the week through online but failed.all the time,it was said that maximum number of the patient already received so try later or ring the gp number.when I rang the surgery they said,please ring next day at 8 am . So I rang 8 am and after waiting 45 minutes waiting ( my queue was 29!),the receptionist told me, there was no appointments for today! You have to go A&E. I was speechless and down about there behaviour!!
+
+Author: Serena Davison
+Date: 4 years ago
+Rating: 1 star
+Recently had a tooth out and ended up with a dry socket, anyone who has suffered with this will know how painful it is, all I wanted from the GP were some painkillers stronger than Paracetamol and Ibuprofen, GP policy is not to see patients with tooth complaints, which I understand, I was actually waiting for a follow-up dental appointment, and just needed pain relief to get me through till then, all I got was a very rude and unhelpful receptionist who had no sympathy even though I pleaded on the phone to speak to a gp, I suffered incredible pain for 3 days, who gives receptionists the right to decide who is worthy of treatment, they aren't qualified to make this decision.
+
+Author: Ma Be
+Date: 4 years ago
+Rating: 1 star
+You're on the phone from 8:20, waiting patiently in a queue for 20 minutes only to find out there are no more appointments for today, and you need to call tomorrow..
+
+Author: Jayne Howard
+Date: 4 years ago
+Rating: 3 stars
+Doctor gutteridge made me feel more poorly but the girls on reception were amazing Doctor Hanan is the best doctor there by far!!!
+
+Author: Mohammed Rahman
+Date: 4 years ago
+Rating: 1 star
+TERRIBLE cannot fault guys on reception but getting an appointment is a joke currently struggle with high BP and stress and Dr Ahmed advising the receptionist that am not urgent and fobbed me off . Avoid this GP practice.
+
+Author: Mashuk Khan
+Date: 4 years ago
+Rating: 1 star
+Dr Guttrage is not fit to practice as this person is dismissive, not compassionate, miss diagnose symptoms when it's obvious as she can't be bothered or she thinks she is too good to get a second opinion. Arrogant comes to mind when I think of her. I have complained to the practice manager on 2 occasions but I believe she is a partner at the surgery so it's brushed under the carpet. I would go as far as saying she is like doctor Shipman. I would like you all to know be careful if you see her and pls do seek a second opinion as long as she is there. I will petition to the medical council to get her license taken off as she is not Fit to treat patients.
+
+Author: Husna Humaira
+Date: 4 years ago
+Rating: 1 star
+Husna Humaira2 reviews · 2 photos4 years ago
+
+Author: Matthew Constable
+Date: 4 years ago
+Rating: 1 star
+Matthew ConstableLocal Guide · 13 reviews4 years ago
+
+Author: Kami Alicja
+Date: 5 years ago
+Rating: 1 star
+I had an appointment with a nurse to see how i am doing on my prescription and to be able to get more as i only had less than a week left of my prescription. The call never happened, i called them and apparently i am not on the system and i am not a part of this surgery. Nothing changed in the week that i called to make the appointment, the receptionist said i have to go to them and fill in a form to re-register and waste my petrol and time on their data issue. Spent my day trying to find a pharmacy that will allow me to buy my medication without a prescription as its unknown how long it would take for me to be on the system again and if maybe this issue would happen again. My advice find a different GP, as im not coming back.
+
+Author: Seonaid Halkyard
+Date: 5 years ago
+Rating: 5 stars
+Seonaid Halkyard2 reviews5 years ago
+
+Author: W MB
+Date: 5 years ago
+Rating: 1 star
+Called monday "call back at 8am if you need an appointment" called Tuesday at 8am "we'll call you back" when I got the call back "you need to come in person let's book you in. Does in 20 mins work for you?" No I'm at work... "ok call back at 8am tomoz and start again". Cant I just book for tomoz now so I can have time to sort cover at work? "Nope". I'm quite accepting of the calling method that's done now because of the pandemic but what logic is there in not booking appointments in advance? They should be ashamed of themselves for this system.
+
+Author: Ahmet güngör
+Date: 6 years ago
+Rating: 5 stars
+Ahmet güngörLocal Guide · 17 reviews · 59 photos6 years ago
+
+Author: Roxanne Manner
+Date: 6 years ago
+Rating: 5 stars
+Lovely staff on the front line. Doctors are superb. Difficult place to work given the political climate.
+
+Author: Rachael Howard
+Date: 6 years ago
+Rating: 5 stars
+I honestly am suprised at the bad reviews I'm in agreement with the appointment system but this is now generally the same for all surgeries it definitely isn't the fault of the surgery its self that blame lies squarely with the NHS less GPs increasing workloads on Doctors & Nurses which in turn is adding to the work load of receptionist who may then be a little more stressed and have little less time to listen to silly complaints and abuse they get as front line workers!!! This surgery has been fantastic all Dr's are great but Dr Hanann is by far the best Doctor I've ever had. I moved here 6 years ago from Ashton under Lyne and he has been amazing contacting me every week to check how I was doing when dealing with a complicated medical issue. I have recently joined the online engage service which is amazing you can choose which Dr to talk to explain your issues and they contact you back within the same day so no waiting on the phone LOVE IT. I put a medical report in and I got a message hours later with an appointment for that day and I couldn't be happier with the service highly appreciated and recommended 👍👍
+
+Author: Zeeshan Gull
+Date: 6 years ago
+Rating: 5 stars
+Zeeshan GullLocal Guide · 14 reviews · 15 photos6 years ago
+
+Author: Paul Graham
+Date: 6 years ago
+Rating: 1 star
+I can never get through on the phone to book an appointment, i have also tried online and the slots are not flexible. As a result my conditions are getting worse. Been with this surgery for over ten years and its shocking how much the appointment system has gone down hill.
+
+Author: Abdul Ali
+Date: 6 years ago
+Rating: 1 star
+this surgery is not fit for purpose, its impossible to get a call back you have better odds on the lottery. The doctors think theyre beter than the rest of us and complaints will earn you a delist.
+
+Author: kayleigh selby
+Date: 6 years ago
+Rating: 5 stars
+I cannot say 1 bad word staff and doctors are brilliant. Dr Hannan by far is the best doctor I've ever dealt with (and I've been at a few different doctor surgeries). He actually cares. I've seen quite a few bad reviews but for me all I've had is positive experiences. I'm suffering with mental health issues right now and this medical centre and the doctors are doing everything to help me. I cannot sing their praises enough
+
+Author: Leon Jones
+Date: 6 years ago
+Rating: 1 star
+Absolutely horrible to deal with no phone consultations available unless you call bang on 8 and then its lucky which makes it hard for a working person. This practice is a shambles and truly horrible to deal with wouldnt recommend to anyone but unfortunately have to stick and deal with this practice
+
+Author: Tom
+Date: 6 years ago
+Rating: 1 star
+Quite possibly the worst appointment system I have ever come across. Yesterday I spent 50 minutes waiting to be spoken to by a receptionist, only to be told there are no appointments left so I will have to ring back up the following day, only go through the same procedure for it to happen again. Having to ring between the hours of 8 and 9am makes it almost impossible to get trough when there are so many patients. Even after you have got through, you have to have a phone consultation before the doctor decides if you should even be coming into the surgery. I have seen a different GP almost every time I’ve been in Thornley house, some of which have been rude and patronising. I have now been forced to change surgery and when calling again yesterday for my NHS number, the receptionist was also rude and was clearly reluctant to provide my details after telling her the purpose of my call. I understand the NHS is under a lot of strain, but they definitely don’t help themselves.
+
+Author: Shanaz Begum
+Date: 7 years ago
+Rating: 4 stars
+Shanaz Begum1 review7 years ago
+
+Author: FSB
+Date: 7 years ago
+Rating: 5 stars
+FSBLocal Guide · 185 reviews · 2 photos7 years ago
+
+Author: katherine cunningham
+Date: 7 years ago
+Rating: 5 stars
+I have only ever been treated quickly and with respect docs go out of there way to be helpful and the link with the chemist and online is great and make a everything so much easier
+
+Author: Jumara1988 Rahman
+Date: 7 years ago
+Rating: 1 star
+They take forever picking up the phone and then when you come to the first of the queue on the telephone they keep you there for at 3-4 minutes. They tell you to call in inconvenient times to get a telephone consultation as some us of work commitments.
+
+Author: Sherree Knowles
+Date: 7 years ago
+Rating: 2 stars
+Some times okay but medical records need update mine know mension of when I want to hospital over 3 weeks ago attempted suicide .
+
+Author: Yuri Gagarin
+Date: 7 years ago
+Rating: 1 star
+unhelpful condescending staff who made it difficult to change doctors from another area. Doctor was rude and treated me like a fool. area its in dirty rubbish everywhere. wont be back
+
+Author: Bodrun Nessa
+Date: 8 years ago
+Rating: 5 stars
+Certain receptionists at the desk come across as very rude and miserable at times and this puts me of contacting the surgery. The treatment of GP is good. I had appointment with trainee gp Julie hsu and she was absolutely lovely. Even contacted me when I missed my appointment to see if I was ok (not always do doctors call) thankyou :)
+
+Author: Simon Lee
+Date: 8 years ago
+Rating: 1 star
+Used to be a great surgery. Has gone really downhill in recent years have to wait weeks for simple bloodtest as Doctors wont do it apparently. The only good thing about this surgery is Dr Gutteridge, shes absolutely brilliant.
+
+Author: Sonya
+Date: 8 years ago
+Rating: 5 stars
+SonyaLocal Guide · 22 reviews · 33 photos8 years ago
+
+Author: Lorraine Dodds
+Date: 8 years ago
+Rating: 3 stars
+Had no problems getting an appointment if an emergency, or information,repeat prescriptions etc,
+
+Author: rochelle littlewood
+Date: 8 years ago
+Rating: 1 star
+Horrendous Dr's, unprofessional, very patronising and very dishonest. Shame really as the reception girls and nurses are great
+
+Author: Becci Allford
+Date: 8 years ago
+Rating: 5 stars
+Always helpful to my family
+
+Author: Jeff Roe
+Date: 8 years ago
+Rating: 5 stars
+Very modern
+
+Author: Zaheer Mirza
+Date: 9 years ago
+Rating: 5 stars
+We tuck our lad to the circumcision clinic here... and I have to say everyone involved the Dr and support staff did a fanatic job... the Dr went through everything before during and after... the whole processes was very professional. Local anesthestic was used and we were allowed to view the procedure... reading up on the the whole thing and finding the right clinic I have to say we were very pleased with the whole experience. Highly recommend.
+
+Author: Easy Homes Mcr Ltd
+Date: 9 years ago
+Rating: 5 stars
+Easy Homes Mcr Ltd1 review9 years ago
+
+Author: Mrs Selima
+Date: 9 years ago
+Rating: 5 stars
+This very good clinic and I give 5 star

@@ -4,11 +4,16 @@ Postcode: WA15 6PH
 Google Maps title: Timperley Health Centre
 Google rating: 4.3
 Google review count: 13
-Google Maps URL: https://www.google.com/maps/place/Timperley+Health+Centre/@53.3971235,-2.3243698,17z/data=!4m8!3m7!1s0x487bacef703361b1:0xe49a1ceef6cda430!8m2!3d53.3971235!4d-2.3243698!9m1!1b1!16s%2Fg%2F11g6vgdd3w?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Timperley+Health+Centre/@53.3971267,-2.3269501,17z/data=!4m8!3m7!1s0x487bacef703361b1:0xe49a1ceef6cda430!8m2!3d53.3971235!4d-2.3243698!9m1!1b1!16s%2Fg%2F11g6vgdd3w?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
+Review collection mode: full_feed
+Review cards collected: 13
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P91007-timperley-health-centre-westwood.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Bobbie-Jo Stockton
 Date: a month ago
@@ -59,3 +64,18 @@ Author: Alexandra Cherouvim
 Date: 3 years ago
 Rating: 1 star
 What a let down to come in an emergency on a Sunday just to find it closed. Google said it was open.
+
+Author: Susan Hallas
+Date: 4 years ago
+Rating: 5 stars
+Went for Flu jab today. Easy to park, safely distanced, friendly and quick.
+
+Author: MARINA WILSON
+Date: Edited 4 years ago
+Rating: 5 stars
+My GPs/Nurses and staff are all good communicators, listen to problems and issues, work with you to find solutions/causes. Usually can arrange telephone/face-to-face (special circumstances at current time} appointments within a short time period. There is a free car park or on-road parking. There are several GP Practices and other clinics at Grove Lane Centre. The waiting area has been adapted for Covid rules, sanitised station at entrance.
+
+Author: Graham
+Date: 7 years ago
+Rating: 5 stars
+Always feel better after a visit to the doctors 👍 …

@@ -4,19 +4,24 @@ Postcode: OL11 3HY
 Google Maps title: Castleton Health Centre
 Google rating: 3.6
 Google review count: 74
-Google Maps URL: https://www.google.com/maps/place/Castleton+Health+Centre/@53.5970211,-2.1831142,17z/data=!4m8!3m7!1s0x487bbbcfe3089d35:0xb8bf12514dbd5364!8m2!3d53.5970211!4d-2.1831142!9m1!1b1!16s%2Fg%2F1tdkrbv3?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Castleton+Health+Centre/@53.5970243,-2.1856945,17z/data=!4m8!3m7!1s0x487bbbcfe3089d35:0xb8bf12514dbd5364!8m2!3d53.5970211!4d-2.1831142!9m1!1b1!16s%2Fg%2F1tdkrbv3?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 74
+Owner replies collected: 0
+Raw review responses captured: 8
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86009-castleton-health-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Omokinwa Oyeleke Tolulope Deborah
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
-Omokinwa Oyeleke Tolulope Deborah2 months ago
+Omokinwa Oyeleke Tolulope Deborah3 months ago
 
 Author: Mark Baron
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
 Dr Chris Marathetis and Dr Uma Marthi couldn't have been more helpful and professional with our treatment. Excellent family doctors.
 
@@ -36,9 +41,9 @@ Rating: 5 stars
 This is the best GP practice I have come across so far
 
 Author: Aasia Jadakara
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
-Aasia Jadakara6 reviews · 3 photos7 months ago
+Aasia Jadakara6 reviews · 3 photos8 months ago
 
 Author: Semah Irshad
 Date: 8 months ago
@@ -56,6 +61,326 @@ Rating: 5 stars
 Excellent service from every member of staff at the practice. Helpful, professional and knowledgeable. Thank you everyone, your help is always much appreciated.
 
 Author: Narin Aziz1234
-Date: 11 months ago
+Date: a year ago
 Rating: 1 star
 the worst gp ever, i do not suggest this gp practice to anyone. rudest staff ever they think they own the world, they never do their job properly they always so ignorant and arrogant and they never help you the way you need.
+
+Author: julie baxter
+Date: Edited a year ago
+Rating: 5 stars
+Arrived 1l hr early got my time wrongand I git shouted in early thank you
+
+Author: Jilli Walker
+Date: a year ago
+Rating: 5 stars
+Excellent practice with helpful, knowledgeable staff. We have been registered with this health centre for 3 years, but due to moving abroad we are now having to leave. The quality of care from this surgery been very very good. Excellent information always available and frequent updates by text messages. Informative, helpful reception staff and amazing nurses. Great GPs and health professionals. Thank you all. 🤗
+
+Author: Maurice Nolan
+Date: a year ago
+Rating: 3 stars
+Maurice Nolan2 reviewsa year ago
+
+Author: Saira Tabassum
+Date: a year ago
+Rating: 5 stars
+Saira Tabassuma year ago
+
+Author: Mark Harrison
+Date: a year ago
+Rating: 1 star
+I wish I could have rated it 0 stars my elderly mother was rushed to AE and they tuck bloods ect when she was discharged got told to ring doctors for results which we did and was told all clear and everything OK two weeks latter back to AE with fluid around her heart suffering heart failure only to find out she was diagnosed 2 weeks earlier with E coli and the doctors should have gave her antibiotics, shame on them not putting there patients first
+
+Author: Syed Ijaz Hussain Shah
+Date: a year ago
+Rating: 5 stars
+Syed Ijaz Hussain Shah2 reviewsa year ago
+
+Author: Tonydoyle Doyle
+Date: a year ago
+Rating: 2 stars
+It's a doctors surgery with the usual behind appointment times
+
+Author: Katrice Berry
+Date: a year ago
+Rating: 1 star
+Very very rude response from the receptionist and has the audacity to think she is a doctor and then to top it off next appointments isn’t until September 14th I have only been with the GP for 3 months .I have rang over 5 times for appointments and get told there isn’t any or it will take over month to get one this is shocking .If anyone thinks about join this GP I would strongly advise you not to . I will be changing to a different GP due to shocking service.
+
+Author: Alicja Kopera
+Date: a year ago
+Rating: 5 stars
+Alicja Kopera2 reviews · 2 photosa year ago
+
+Author: Des Parkinson
+Date: a year ago
+Rating: 5 stars
+Helpful caring staff
+
+Author: Shelby Clancy
+Date: a year ago
+Rating: 1 star
+Absolutely awful place. The receptionists are possibly some of the rudest people I've ever had the displeasure of dealing with and getting an appointment is like trying to find the pot of gold at the end of the rainbow. They have repeatedly messed up my prescriptions, lied to me on the phone and been generally unpleasant to deal with. If it wasn't for the fact I will be moving house in a few months, I'd not still be at this surgery as it is atrocious. A real shame as some of the doctors are fantastic but are being let down by the reception team and the fact that you can never get an appointment to see them.
+
+Author: John Howarth
+Date: a year ago
+Rating: 1 star
+Got up 6 o'clock so I could phone docs at 8oclock 50mins later got through,only to be told couldent get appointment till the next month, so i ask again to make appointment they said phone back 8 oclock in morning, or phone 111. What ever symptons i have would have probably have got better by then or died. What is the point.
+
+Author: Gina Chapman
+Date: 2 years ago
+Rating: 5 stars
+Went in for routine check up. Came out with help and advice that will have a real impact. Needed a couple of appointments which were available and with a reasonable wait. Impressed
+
+Author: Hin Cheung
+Date: 2 years ago
+Rating: 5 stars
+Hin CheungLocal Guide · 59 reviews · 56 photos2 years ago
+
+Author: Nushaba Khan
+Date: 2 years ago
+Rating: 5 stars
+Best Gp Eva had in my life thumps up to them
+
+Author: Andy Thornton
+Date: 2 years ago
+Rating: 5 stars
+Great fat jab service
+
+Author: Farhad Khondaker
+Date: 2 years ago
+Rating: 5 stars
+Excellent service and team! Thank you everyone for being so helpful
+
+Author: Donna Mansell
+Date: 2 years ago
+Rating: 4 stars
+Staff are friendly... But you never get the chance to see a doctor anymore. Go on the ap and that will take 6 weeks for a telephone consultation. Sad but true
+
+Author: Cheryl Almond
+Date: 2 years ago
+Rating: 5 stars
+Extremely good service. Receptionist excellent and lady who did referral letter was also very nice. Since we have been with Castleton health centre every one I have dealt with …
+
+Author: Executive Registrations
+Date: 2 years ago
+Rating: 1 star
+Executive Registrations4 reviews · 2 photos2 years ago
+
+Author: Cheryl Almond
+Date: 2 years ago
+Rating: 5 stars
+Extremely good service. Receptionist excellent and lady who did referral letter was also very nice. Since we have been with Castleton health centre every one I have dealt with have been first class. A huge thanks to all. You are doing an excellent job. Cheryl Almond
+
+Author: mick Golden
+Date: 2 years ago
+Rating: 5 stars
+It's a small friendly Health Centre
+
+Author: Terry O'Brien
+Date: 2 years ago
+Rating: 1 star
+Booked a phone appointment. Told it was from 4pm on wards at 5pm I rang to be told I am on the list to be contacted before 630pm. It is 830pm now and i am still waiting. As a trademan if I did this to them I would be told it is not acceptable. review to o
+
+Author: Steven Kelly
+Date: 2 years ago
+Rating: 5 stars
+Quick friendly and efficient
+
+Author: Angela Nuttall
+Date: 2 years ago
+Rating: 5 stars
+Angela Nuttall1 review2 years ago
+
+Author: Amnah Rana
+Date: 3 years ago
+Rating: 1 star
+The receptionist is absolutely disgusting. Told me her name was Karen. “Careun”. She told me I need to get my “priorities” right in regards to my 5 month old child. Her attitude towards me was appalling, she had no empathy to my situation, even after me telling her how my situation is delicate and it involves police she was abrupt and not helpful at all. Considering this is the receptionist at the doctors telling me to get my “priorities” right is horrific. 5 months post partum my mind is already down a line postnatal depression and this receptionist has made my mental health deteriorate as she thought it was acceptable to tell me what my priorities should be in regards to my 5 month old. My priority was to get her an appointment not be verbally targeted on the phone. I wouldn’t wish anyone to go through what I went through today, unfortunately this is not the first time the receptionists here have been rude. It’s a shame for the doctors who have been there from day one and kept the practice running that the entire health centre’s reputation is going down hill because of these untrained horrifyingly rude receptionists. No matter what the situation, as a health professional they should be trained to a level on how to deal with sensitive situations adequately instead of being rude an abusive in what they say. Speaking of “priorities” the health centres “priority” should be to get new receptionist staff and to train them how to talk appropriately to all patients especially those who have sensitive circumstances.
+
+Author: Dale Connaughton
+Date: 3 years ago
+Rating: 1 star
+Went for bloods today, I usually have them routinely due to the meds I take with having ms. Today I was asked to go for a different reason but thought to kill 2 birds with one stone so not to have 2 separate appointments and do both bloods in one appointment. Unfortunately the nurse refused and I had to listen to a rant from her stating that i shouldn't be having blood regularly because its costs (her) we the NHS too much to ensure my cholesterol and liver are not dieing due to the meds that they put me on...
+
+Author: Hannah Simpson
+Date: 3 years ago
+Rating: 1 star
+Literally THE WORST doctors surgery when it comes to trying to get an appointment. You could be on your death bed but trying to get through the receptionists for an appointment is like trying to unlock a door without a key IT IS IMPOSSIBLE! They are rude, unhelpful, patronising and they hold onto those ‘urgent appointments’ as if they gave birth to them!!! They tell you to ring at 8am, you spend an hour trying to get through and when they finally answer they tell you all appointments are gone and you should have rang sooner however they can offer you one 3 years from now on a Tuesday if you’d like it or you can ring 111 or go and sit up at urgent care for 3 weeks before you get seen instead of just being given one of those appointments the reception staff is staring at on the screen infront of them….RIDICULOUS. The whole place may aswell not exist at this point as it is useless.
+
+Author: minne mano
+Date: 3 years ago
+Rating: 1 star
+rubbish, hostile,rude customer service,refusing to get appointment, medication,cancered funeral coffin bangs the phone on me, without listening to all my words of request, even the plebotomist was hostile and lazy to give me water to drink,and refused to let me lay down the bed.
+
+Author: Galina Gordeleva
+Date: 3 years ago
+Rating: 4 stars
+Galina GordelevaLocal Guide · 18 reviews · 11 photos3 years ago
+
+Author: Waller g
+Date: 3 years ago
+Rating: 5 stars
+Excellent appointment system. The doctors and nurses are most attentive and informative.
+
+Author: SAN & Co
+Date: 3 years ago
+Rating: 5 stars
+Good service available customer service good too
+
+Author: Stephen George
+Date: 3 years ago
+Rating: 5 stars
+I have an elderly 85 father who has a number of health issues. I have over the last 12 months rang the surgery requesting DRs home visits. I cannot commend this surgery from receptionists to DRs highly enough. Each time they have listened and a Dr has visited within hours and spent time with my father. It is reassuring to know that you can ring at almost any time of the day and a health professional can be reached. A star and a big thank you from me !
+
+Author: Jayne Jones
+Date: 3 years ago
+Rating: 5 stars
+Thank you so much to Jody on the reception you have been amazing, when trying to sort prescriptions out for my elderly friend you have been so helpful & caring. Going the extra mile thank you.
+
+Author: Sadie KZ
+Date: 3 years ago
+Rating: 1 star
+I hesitated for weeks to write a review as the clinical staff i.e. nurses and GP's are excellent and no complaints whatsoever (if you can see them - impossible now). However, a few weeks ago I naively attempted to obtain a face to face appt but was met with a hostile receptionist on the phone who parrot fashioned "we are still in a pandemic, there are no face to face appts, only if the GP considers you need to be seen face to face", so naturally I asked her if she was never stepping out of her home to even go to the supermarkets and got the reply "if you wish to make a complaint..." blah de blah. I'm sure the GP's are aware of this wall of resistance put up, and last year when I saw a nurse for blood tests she told me they're not going back to life as before as "older people were clogging up the waiting areas and coming for a chat". Very sad times for a "health service" we pay into. If only there was a patient liaison group or someone you could email to escalate matters to who wont parrot fashion the same stuff as above.
+
+Author: David Papavlk
+Date: 3 years ago
+Rating: 1 star
+If you nead help, no chanc
+
+Author: Amanda Tweedale
+Date: 3 years ago
+Rating: 5 stars
+Just seen Janet the nurse for my bloods taken. Her personality relaxed me the moment I entered, not only am I happy with this she then took my bloods without me feeling a thing. She’s a credit to the surgery.
+
+Author: Henley Bailey
+Date: 3 years ago
+Rating: 5 stars
+Everyone I've interacted with at the health center has been great, friendly and helpful.
+
+Author: Ian Parry
+Date: 4 years ago
+Rating: 5 stars
+Friendly welcoming and very helpful reception staff. On site doctors and nurses who give there all to resolve any issues. The best health centre I have ever been registered with!
+
+Author: Lesley May
+Date: 4 years ago
+Rating: 5 stars
+I have to thank all the staff from receptionist to GP who cared and communicated brilliantly to advise treat my mum this week who was struggling with covid pneumonia our family will always be grateful
+
+Author: Kirsty Clarke-Hood
+Date: 4 years ago
+Rating: 3 stars
+Kirsty Clarke-HoodLocal Guide · 202 reviews · 621 photos4 years ago
+
+Author: GRAHAM RUSHTON
+Date: 4 years ago
+Rating: 5 stars
+Very good staff and helpful to
+
+Author: Jan Ibrahim
+Date: 4 years ago
+Rating: 1 star
+Received text messages to attend flu jab and to confirm a time I am available, after 24hrs and no confirmation from the surgery, my wife phoned to be told we were not registered. No information from the surgery and no contact, my wife was told there was a glitch in the system, I call it incompetence and a distinct lack of care. If I could give it a zero star, I would
+
+Author: Adam Corry
+Date: 4 years ago
+Rating: 1 star
+Adam Corry4 years ago
+
+Author: Pat Porter
+Date: 4 years ago
+Rating: 5 stars
+The care I have always had has been good, but I came July 2021 for diabetic blood test and said I wasn't feeling well. All the tests and care I have had from doctors nurses and receptionist have been first class thank you I have been with this practice since 1981.
+
+Author: Pam Dunne
+Date: 4 years ago
+Rating: 5 stars
+I want to review a lovely nurse,Vicky who was so aware and understanding of our needs because we rarely get such understanding from any where. I was close to tears listening to her take time and thought, explaning every detail. Thankyou
+
+Author: Shirley Harrison
+Date: 4 years ago
+Rating: 5 stars
+Have to commend and thank Elaine for her assistance yesterday in helping my elderly parents who were in need of urgent attention on a Fruday afternoon. She was brilliant, compassionate and empathic, and directed and arranged appropriate care. Thank you so much.
+
+Author: Neil Garbett
+Date: 4 years ago
+Rating: 5 stars
+Neil GarbettLocal Guide · 171 reviews · 201 photos4 years ago
+
+Author: Richard Drake
+Date: 4 years ago
+Rating: 5 stars
+Richard DrakeLocal Guide · 96 reviews · 139 photos4 years ago
+
+Author: Max Volume (Agent 9)
+Date: 5 years ago
+Rating: 5 stars
+Excellent level of care given by my Doctor who always takes time to listen to the details of my condition and talks through the different options open to me.
+
+Author: Gary Robson
+Date: 5 years ago
+Rating: 1 star
+I suffer with Mental health issues, namely Stress and Anxiety, as well as other health issues. I was informed that I should book in for a flu jab by the Health Centre. When I phoned up to try and book a flu jab appointment I was informed that all the current appointment slots had been filled and that I should call again the following week. I phoned back the following week and was told no slots had become available yet and that they should be sorted later that day, as such I should phone the following day. I duly called the next day and was informed that no slots had been made available yet and I should call again the next day. I told the lady that I was not prepared to keep phoning in every day to try and book an appointment for a flu jab as they seemed to be expecting. I told the lady I was happy to be booked in for any appointment at any time and any day. The lady told me they did not have the facilities to do that. I then asked to speak to the Practice Manager to complain about the situation. I was told after being on hold for a minute or two that the Practice Manager was in a meeting and she would call me back as soon as she was out of the meeting, I gave the lady my mobile number. I waited all day, not organising anything else I needed to in case it conflicted with any appointment slot that was offered, but no phone call from the Health centre was forth coming. Very poor service from the Health Centre that should have a better understanding of how this sort of poor customer care can adversly affect people, especially those with existing mental health issues! :-(
+
+Author: Wendy Smith
+Date: 6 years ago
+Rating: 4 stars
+Wendy SmithLocal Guide · 148 reviews · 3 photos6 years ago
+
+Author: Soryia Parker
+Date: 6 years ago
+Rating: 5 stars
+The GPs and nurses are very thorough, caring and professional.
+
+Author: Judith Sands
+Date: 6 years ago
+Rating: 5 stars
+After Many Years we have left the Surgery's catchment area, and as a result had to register elsewhere. We have always been treated with respect and professionalism by all the staff from the the reception staff to the nurses and doctors. We have always believed that everyone there is trying their best. A special mention to Amber on reception who always makes us smile, and to Dr Mamman who has persevered when many would have despaired. Thank You All Judith & Mike Sands
+
+Author: roy costigan
+Date: Edited 7 years ago
+Rating: 1 star
+My 90 year old mother phoned the surgery with severe stomach pains. Because she had phoned after 12 am was told a GP from the surgery would not make a home visit but would make a phone consultation which he did informing her she could phone 999 or wait 4 hours for a Bardoc GP to make a visit. I was under the impression Bardoc was an out of hours service, 2pm is not out of hours. A 90 year old person who is unwell should not have to decide whether they need hospital treatment that is a GP's decision. Most elderly people including my mother will resist going to hospital even if they need to and being made to wait 4 hours when they live 5 minutes from the surgery is nothing short of neglect. Why couldn't a GP from the surgery make a house call after surgery hours? or even in an emergency make a visit within surgery hours? I hold Castleton Health Centre responsible for unnecessary pain my mother has suffered. PS The Bardoc GP arrived at 9.45pm
+
+Author: Susan Duerdin
+Date: 7 years ago
+Rating: 1 star
+Got to the surgery at 8/30 while calling on my phone that wasn't answered,asked at reception for an emergency appointment and the receptionist told me the earliest appointment was 4/30 this seems strange as I was told to ring at 8/30 to get an emergency appointment, how on earth did they fill all the appointments when I was on the phone which was ringing not engaged. I'm really disappointed with the surgery these days, it was never quite as bad as it is now
+
+Author: James Johnson
+Date: 7 years ago
+Rating: 1 star
+Receptionist is extremley rude and impatient. The doctors here need to assess what they chose to do for a living. Help people or let them slowly die!!!! I gave one star because I couldn't give a zero. I hate what the NHS has become. An absolute shambles with no organisation.
+
+Author: What's kooking
+Date: 7 years ago
+Rating: 5 stars
+Got the help needed
+
+Author: Suzannah Bleakley
+Date: 7 years ago
+Rating: 4 stars
+Depends on which Dr you get. Sometimes you really have to push to get them to understand. Most receptionists are lovely.
+
+Author: Michelle Schofield
+Date: 7 years ago
+Rating: 5 stars
+Love this place
+
+Author: Lauren Crossley
+Date: 7 years ago
+Rating: 1 star
+Absolutely not impressed with this surgery. It is basically impossible to get an appointment in any sort of good time, even when a consultant from a hospital has requested specific test results to be discussed promptly. The “receptionists” are RUDE, PATRONISING and quite frankly speaking to them just puts you in a horrendous mood. There is one specific lady who needs some very serious time spent with her on her tone of voice and the way she speaks to people on the phone and her manner in the surgery!! I think there is a lot of work to be done on patient service and the way in which people are treated, we are all humans and deserve to be spoken to and treated with the utmost respect....this most certainly is not happening in his surgery at the moment nor has it been for the last year of which I have been a patient there. One last note...prescriptions are important. Work out a way of getting them correct!!!
+
+Author: Louise Hughes
+Date: 8 years ago
+Rating: 5 stars
+Dr Sam is the most caring compassionate Doctor there. He does not rush you and is worth the wait to see him. He is thorough and you come away feeling like it was worth going in the first place. Shame not all doctors are like him.
+
+Author: Ronald Ģĺasgow
+Date: 9 years ago
+Rating: 5 stars
+The nurses are very helpfull and very pleasant
+
+Author: Cassie Lord
+Date: 11 years ago
+Rating: 1 star
+Absolute joke! I have been ringing the surgery since 8:30 this morning for an emergency appointment it is now 10:15 and still no answer, and this isn't the first time its happened. If your lucky and do get through the reception staff are rude and think they have the right to demand to know what's wrong with you before deciding weather you can have an appointment or not pretty sure they don't have PHD's therefor have no right deciding who gets an appointment and who doesn't. I am now looking for a new surgery as you are likely to have got over your illness or for the less fortunate deteriorated before you get an appointment or they even answer the phone for that matter. I only gave it one star because I had to in reality I would give it non this type of ignorance and badly run surgery is going to cause deaths!

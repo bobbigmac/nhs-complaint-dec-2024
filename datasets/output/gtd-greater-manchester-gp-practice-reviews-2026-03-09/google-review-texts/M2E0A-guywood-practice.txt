@@ -4,11 +4,16 @@ Postcode: SK6 4QR
 Google Maps title: The Guywood Practice - Romiley Health Centre
 Google rating: 4.2
 Google review count: 5
-Google Maps URL: https://www.google.com/maps/place/The+Guywood+Practice+-+Romiley+Health+Centre/@53.4151394,-2.0896788,17z/data=!4m8!3m7!1s0x487bb507f0714f87:0x509ff91e34c688e2!8m2!3d53.4151394!4d-2.0896788!9m1!1b1!16s%2Fg%2F1hc139jfx?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Guywood+Practice+-+Romiley+Health+Centre/@53.4151426,-2.0922591,17z/data=!4m8!3m7!1s0x487bb507f0714f87:0x509ff91e34c688e2!8m2!3d53.4151394!4d-2.0896788!9m1!1b1!16s%2Fg%2F1hc139jfx?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
+Review collection mode: full_feed
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/M2E0A-guywood-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Anne Collier
 Date: a year ago

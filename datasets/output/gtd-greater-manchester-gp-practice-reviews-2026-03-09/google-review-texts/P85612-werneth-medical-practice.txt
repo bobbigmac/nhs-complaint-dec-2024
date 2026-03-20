@@ -4,21 +4,32 @@ Postcode: OL9 7AY
 Google Maps title: Werneth Medical Practice
 Google rating: 1.6
 Google review count: 69
-Google Maps URL: https://www.google.com/maps/place/Werneth+Medical+Practice/@53.5371156,-2.1349713,17z/data=!4m12!1m2!2m1!1sWerneth+Medical+Practice+OL9+7AY!3m8!1s0x487bb76565d31727:0xef5f92ced03b400b!8m2!3d53.5371156!4d-2.1304652!9m1!1b1!15sCiBXZXJuZXRoIE1lZGljYWwgUHJhY3RpY2UgT0w5IDdBWZIBBmRvY3RvcuABAA!16s%2Fg%2F1tfg76nd?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Werneth+Medical+Practice/@53.5372319,-2.1331061,17z/data=!4m12!1m2!2m1!1sWerneth+Medical+Practice+OL9+7AY!3m8!1s0x487bb76565d31727:0xef5f92ced03b400b!8m2!3d53.5371156!4d-2.1304652!9m1!1b1!15sCiBXZXJuZXRoIE1lZGljYWwgUHJhY3RpY2UgT0w5IDdBWZIBBmRvY3RvcuABAA!16s%2Fg%2F1tfg76nd?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 69
+Owner replies collected: 23
+Raw review responses captured: 7
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85612-werneth-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Natasha Rizwan
-Date: Edited 6 days ago
+Date: Edited 2 weeks ago
 Rating: 1 star
 I received a message from the practice asking me to contact them, but it is virtually impossible to reach them. I have called repeatedly throughout the day, and the call either rings out or ends automatically. This isn’t a one-off issue—mornings are no better when you actually need an appointment. It’s now half past one in the afternoon, and still no answer. If patients are expected to respond promptly, the practice needs to be accessible. At this point, it’s genuinely frustrating and unacceptable. What exactly does it take to get through to someone? Thank you for your response. I appreciate the explanation regarding staffing issues and the previous callback problem. However, I would like to clarify that my concern was not about expecting to “get straight through in the morning.” My concern was about repeated attempts throughout the day, including the afternoon, where calls either rang out or disconnected automatically. Being asked to contact the practice and then being unable to do so is understandably frustrating. Patients are not expecting special treatment — simply reasonable accessibility, particularly when prompted to make contact. I hope that moving forward the focus remains on improving accessibility rather than questioning patient expectations. Kind regards,Natasha
+Practice response date: 2 weeks ago
+Practice response:
+Hello Natasha We always ask that feedback is specific, proportionate and measured. Yours is all of these so we thank you for your feedback. Unfortunately WMP has had some long term sickness recently which has affected our reception activities significantly. This may have meant calls were not being answered in our usual timely fashion and for this we apologise. We are over the worst of this now, but it may take a little longer for us to reach full speed. Appointment numbers however have not been affected and we are still operating at full capacity as with all practices in the UK. There was also a problem with the call back function last month which meant some patients were not receiving one as requested. This has now been addressed. With regards to the messaging patients are receiving, we are reviewing our practices to see whether we can give patients the message they need rather than a generic message to contact the practice. Obviously we have to consider confidentiality and the effect the message may have on patients, but it is in everyone's interest to avoid a call if not necessary. Finally, if you do need to call the practice, we advice calling after 4pm as this tends to be our quieter time. It still bemuses us that patients expect to get straight through to the practice in the morning when there are 20 other patients calling for an appointment at the same time. Thanks again for your helpful feedback. Regards WMP
 
 Author: Saasha Fieerce
-Date: 3 weeks ago
+Date: a month ago
 Rating: 1 star
 Don’t even deserve a star, called at 8 am was 8th on the queue ONE HOUR AND THIRTY MINUTES WAITING , horrible practice , should be shut down!
+Practice response date: 2 weeks ago
+Practice response:
+Hello Beyonce, We always ask that feedback is specific, measured and proportionate. Saying we should be shut down because you had to wait longer than you expected on one occasion, (probably because we are busy dealing with other patients) isnt measured or proportionate. Regards WMP
 
 Author: Wendy
 Date: a month ago
@@ -26,9 +37,12 @@ Rating: 5 stars
 Had a great experience today, all very professional.
 
 Author: Koyesh (CaramelPopcorn)
-Date: 2 months ago
+Date: 3 months ago
 Rating: 2 stars
 When I call to book an appointment it is such a rage baiting self hating thing to do at 8:00in the morning because apparently I enjoy torturing myself. I called at 8:00am and was 8th in line. For some reason it took over 30 minutes to not have the phone answered and hung up on and it’s not even the first time. Or when I choose the call back option I won’t even get a phone call. I don’t know if the answering calls are random or what but it’s the worst.
+Practice response date: 2 weeks ago
+Practice response:
+Hello Koyesh, We always ask that feedback is measured, proportionate and specific. Talking about rage baiting, self hating and torture to review a GP practice , isnt any of these and should be reserved for other areas of social media. Regards WMP
 
 Author: Afeez Rehman
 Date: 3 months ago
@@ -39,23 +53,378 @@ Author: irfan khan
 Date: 3 months ago
 Rating: 1 star
 Look at the rating 1.6 I think they deserve 0 rating pathetic service they just waste the time of patients we are trying from last 7 days got same response even trying to call before 8 o clock but they received the call at 8 having full of appointments what kind of system is this 000000000 rating
+Practice response date: 2 weeks ago
+Practice response:
+Hello Irfan Phoning before 8 o clock is probably not wise as the lines open at 8. When they do open, there are probably 20 other patients doing exactly what you are doing, hence why you are held in a queue so we can prioritise those patients who must be seen. We dont make any apologies over the fact we are very busy and all of our appointments are used every day. Perhaps look into the other methods of obtaining an appoint at the practice or at other services and we would be happy to help you. Regards WMP
 
 Author: Sadia Irfan
 Date: 3 months ago
 Rating: 1 star
 I dont think so it deserve one star because they never give us appoint ment when you call 8 in morning line always busy within 10 second you got 17 of que like other countries system receptionest already give appointment to their own patient i really disappoint
+Practice response date: 3 months ago
+Practice response:
+Hello Sadia, I gather you are unhappy with how busy the lines are in the morning. Unfortunately this is a problem with every practice in the UK. Yes we are busy but we are also trying to provide as many high quality appointments as we can in difficult circumstances. The second part of your statement is difficult to decipher. Maybe try to clarify what you mean and email the practice so we can give you a response. Regards WMP
 
 Author: Danyaal Kamran
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
+Dear Danyaal, Thanks for your detailed feedback......?! Regards WMP
+Practice response date: 3 months ago
+Practice response:
 Dear Danyaal, Thanks for your detailed feedback......?! Regards WMP
 
 Author: Imthiyaz Ahmed
-Date: 8 months ago
+Date: 9 months ago
 Rating: 4 stars
 I am slightly disheartened by the number of negative reviews for this GP. However, my experience is mainly positive. It is somewhat hard to get a hold of an appointment that is needed immediately, but that's the case everywhere. At my latest appointment just over a week ago, I called quite a lot of times over the span of 20 mins, but I could get an appointment for later that day at 3:30 pm. My other issue for that appointment is that the receptionist wasn't present, leaving me and another patient who was there prior to me for waiting for him for at least 5 mins while not attending to anyone in particular . For all my appointments over the past year (4 appointments, which is quite a lot for me), doctors and asthma nurse were respectful, professional, well-mannered, understanding, and informative about my conditions. Dr Butt even told me about the Manchester Access Programme, which was very helpful, and I'm currently part of 👍🏽. (I'd also be incredibly grateful if the practice allowed me to do work experience (shadowing) at the practice. However, the last time I checked, the receptionist told me they're not taking anyone 😭.)
+Practice response date: 3 months ago
+Practice response:
+Hello Imthiyaz, Thanks for your comments. Unfortunately this is one of the things you will experience in your future career we are excited to learn you are due to start shortly. That only people who are unhappy tend to give feedback, not the majority who are happy and that feedback tends to be disproportionate. You are are correct in saying that it is difficult to get a GP appointment everywhere. We dont hide that but we try our best to provide as many as we can with high quality staff. Unfortunately, due to workload, we have had to suspend work experience placements. But we are reviewing this position as we do regard it as a responsibility to our community to help potential medical students. Maybe try contacting the practice via email and we will see what we can do, if its still required. All the best! WMP
 
 Author: Jackie Pennington
 Date: a year ago
 Rating: 1 star
 Absolutely Disgusting service Receptionist attitude's are So Rude and have total lack of manners Wish Block LANE SURGERY REMAINED OPEN
+Practice response date: 3 months ago
+Practice response:
+Hello Jackie, We think you've got the wrong practice. We've never had you registered here. Regards WMP
+
+Author: Arfan Ilayas
+Date: a year ago
+Rating: 1 star
+Trying all week for appointment waste of time
+
+Author: Peter Machin
+Date: a year ago
+Rating: 5 stars
+I came today and was seen again by Chloe. She is a lovely person and I wish more GPs could be like her. I have autism and can find doctors appointments quite awkward but she was nice to me the whole time I was in there and I never once felt like she was judging me. I think Chloe deserves some recognition on here because she really is a great GP and an asset to the team.
+
+Author: Alan Burgess
+Date: a year ago
+Rating: 5 stars
+Over the last few weeks have had flu, mmr, covid and rsv jabs, so hopefully I'm well protected. Went today to order prescriptions for myself and my wife and the young lad on reception was very helpful and polite.
+
+Author: Rahena Parveen
+Date: a year ago
+Rating: 1 star
+170+ calls to get my dad who is 83 yes old an appointment ...still trying for weeks. Horrible horrible people they've put the phone out of use!
+Practice response date: a year ago
+Practice response:
+Dear Patient, We ask for feedback to be proportionate, measured and specific. We dont think it is proportionate nor measured, to call practice staff 'horrible, horrible people' and to suggest we have deliberately put our phones out of use. Just because we, along with most practices in the UK, cant provide you with an appointment immediately. Phoning 10, 20 or 170 times will not change the fact that there are a fixed number of lines and staff tending to them, and at certain times too many people also phoning for an appointment like you. Have you tried to book an appointment in advance? Or online? Do try these methods and we are sure you will be able to see someone. But we thank you for your comments in any event. Regards Werneth Medical Practice
+
+Author: r ali786
+Date: a year ago
+Rating: 1 star
+Disgusting staff very rude they act like they working for police
+Practice response date: a year ago
+Practice response:
+Dear Patient, We ask for feedback to be proportionate, measured and specific. We feel your comment is none of these. But most importatnly, it would be helpful if you could provide us with more specifics on your unhappiness and we would be happy to look into the matter further. Best wishes
+
+Author: Maaria Arif
+Date: a year ago
+Rating: 1 star
+I am disgusted in the service that this practice is providing. My mum has been unwell for an extended period of time with various health conditions and this has always been played down and she has always been palmed off! I’ve just found out in a recent appointment, a doctor had a conversation with a student nurse to say she is putting on her symptoms thinking she didn’t speak English. Safe to say, a formal complaint is going in against this practice for negligence and we will be swiftly changing surgery. Avoid at all cost unless you don’t care about your health. This is not a pop at the receptionists because they have been nothing but kind and helpful every time we have been in or in contact.
+Practice response date: a year ago
+Practice response:
+Dear Ms Arif Its clear there is some information you have omitted from your account. So without going into too much detail we will attempt to add some general context. 1. You were informed that in order to raise a complaint on anyone's behalf, you must have their permission. You will understand that without the patient's permission, we must assume it has not been made with their consent or knowledge. 2. Without being present at the appointments, we find it puzzling how you can use terms such as 'palmed off' or 'negligence'? Clearly this is an opinion which we dont share. 3. We do not and have never hosted student nurses at the practice. We do host medical students but our preliminary enquiries have established medical students were not present at any recent appointments. 4. WMP prides itself in having caring, honest, respectful and hard working clinicians. We are confident your account is incorrect or at least there has been misunderstanding of what was discussed, especially if the discussions was not in ones primary language. As you have been informed previously we would be happy to look into the complaint in more detail once the necessary permission have been obtained. Best Wishes
+
+Author: Abdullah Adil
+Date: a year ago
+Rating: 1 star
+Very bad service Very rude receptionist...
+Practice response date: a year ago
+Practice response:
+Hello again Mr Adil! Please see your comment below. Regards
+
+Author: Anonymous
+Date: a year ago
+Rating: 1 star
+If I could give them a zero rating I would receptionist were soo soo rude,had an appointment went on time been waiting on reception for 20 minutes there was no receptionist on the desk after 20 minutes 1 receptionist came serverd 1 lady and went off other 2 receptionist came and were looking to eachother and goes to me you are late for appointment because you took a seat which i didn't and didn't inform us how could i there was no bell or anything we can ring or call she said you can go back or eithr wait, waited for 2 hours without been checked give me the random no to call which wasn't working this is werneth medical practice for you.
+
+Author: Abdullah Adil
+Date: a year ago
+Rating: 1 star
+Shame on you........
+Practice response date: a year ago
+Practice response:
+Dear Mr Adil, Thanks for your comments. We would love to look into your reasons for being unhappy? Clearly we will need more information so please get in touch and we will be happy to investigate. Kind regards
+
+Author: Zahidullah Atif
+Date: a year ago
+Rating: 1 star
+Are there any doctors? No, you will never get an appointment.
+Practice response date: a year ago
+Practice response:
+Dear Mr Atif, I can confirm we do have 3 hard working, diligent and caring Doctors at the practice. As well as other clinicians with a similar ethos. We would ask patients to consider that it may be because of the above that demand for their appointments is so high? Please bear with us and we will be happy to see you. Kind regards
+
+Author: Humaira Ijaz
+Date: a year ago
+Rating: 1 star
+Very bad service very rude receptionist just because I was only 10 minutes late so they just sent me back without checking me and whenever we go on time the usually call us 10-25 minutes late this is 'werneth medical practice'
+
+Author: Zaina Hussain
+Date: 2 years ago
+Rating: 1 star
+don’t bother with the GP’s here at this rate ur best off going private. needed an allergy test referral and she played the whole situation down which led to me not being able to get one. had to send her pictures and a food diary, none of this was added in my referral. didn’t even bother to try and fight my case. lazy. now having to wait for another appointment and another referral because it wasn’t done right the first time.
+
+Author: Louise
+Date: 2 years ago
+Rating: 5 stars
+Pleasant and helpful receptionists. Never had a problem, good surgery 😄 …
+
+Author: Syd M
+Date: 2 years ago
+Rating: 1 star
+Why won’t these people actually give people an appointment to see the doctor, all we get is call at 8 - and then it’s constantly engaged for like 10 mins and then when it rings and they answer they say all appointments are taken, and ask you to try again tomorrow. Absolutely ludicrous and despicable. Close the surgery and re-assign us all to a competent one.
+Practice response date: a year ago
+Practice response:
+Dear Syd M, Thanks for your comments. We always welcome feedback from patients but ask that it is measured, specific and proportionate. We would ask whether it is measured or proportionate to say we are 'despicable' and that the 'surgery needs to be closed', because we are so busy seeing patients? That is the only reason why patients find it difficult to get appointments. We have have massively increased the no of clinicians we have and appointments offered in the past year. Yet due to the demand, it may still be difficult at times to get an appointment immediately. Kind regards
+
+Author: Peter Dransfield
+Date: 2 years ago
+Rating: 4 stars
+Thank you to the district nurses who looked after my dressings after my operation. They carried out their duties with respect and professionalism
+
+Author: Amir Ali
+Date: 2 years ago
+Rating: 1 star
+Amir Ali8 reviews · 3 photos2 years ago
+
+Author: Sheikh Rayhan
+Date: 2 years ago
+Rating: 1 star
+Sheikh Rayhan4 reviews · 2 photos2 years ago
+
+Author: Asy Hussain
+Date: 2 years ago
+Rating: 1 star
+This place needs to be to shut down I’ve been trying to get an appointment with my doctor for over a month now trying on the phone like advised by the receptionist to ring at 8am which I have been doing and it’s always busy and when it does go through the appointments are taken why is this place open if it’s not doing it’s purpose
+
+Author: Pat Murray
+Date: 2 years ago
+Rating: 1 star
+Elderly people have been forgotten with online only appointments, how are they supposed to see the doctor when they're technophobic, it's ridiculous
+Practice response date: 2 years ago
+Practice response:
+Hi Pat, I’m not sure if you’ve posted this on the wrong practices website. Here at Werneth Medical Practice we don’t offer an online triage service only. All of our appointments are bookable online and via the telephone with one of the receptionists. With kind regards, Victoria.
+
+Author: Tariq Rashid
+Date: 2 years ago
+Rating: 1 star
+absolutely disgusting service from the Recepetionists both blatantly lieing to me and then contradicting what they were saying. bunch of Jokes
+
+Author: Saqib Ali
+Date: 2 years ago
+Rating: 1 star
+If I could give Werneth medical practise a 0 star I would. I have never in my life left a review for anything. But in my entire life I have never seen a practise as bad as Werneth medical. The receptionist do not seem to give a ***** about anything. I have a 5 month old baby who is really ill and I rang at 8AM in the morning and they basically said we have an appointment available in 1 month time. No remorse no advice just basically told me to do1
+Practice response date: 2 years ago
+Practice response:
+Hi Mr Ali, I am sorry that you have felt this way. Patient care is held in the highest regard at Werneth. The practice endeavours to prioritise children,please can you contact me at the practice so I can look into this case further. With kind regards, Victoria Williams-Practice Manger
+
+Author: Amna Khan
+Date: 3 years ago
+Rating: 1 star
+Sucha A bad experience with this Surjery would naver recommend !
+
+Author: subs 132
+Date: 3 years ago
+Rating: 1 star
+Impossible to get an appointment. Ive not been able to see a doctor for 3 years now.
+
+Author: Tahir Miah
+Date: 3 years ago
+Rating: 1 star
+Humble request to all this practice is shocking, unable to get an urgent appointment despite making 77 calls in the morning, receptionist very rude and was told move to another practice if not happy. Stay away from this practice at all costs.
+
+Author: Khalid Mahmood
+Date: Edited 3 years ago
+Rating: 1 star
+consistently obstructing healthcare, this practice is your first barrier to health care, and if you get through the numerous barriers, there is more disappointment in the form of dismissal of ailments and bro science, and nothing short of offensive throughout at every stage - unfortunately, this is not the only NHS stop where this attitude is prevailing. With a regulator in a coma, this is expected. I want my taxes back for disservice! the standard response from staff about dissatisfaction is, if you don't like it, go elsewhere. It is no secret that healthcare services are not available at this practice and that this is more of a profiteering service, evidenced by the fact that the DR was available all day to administer flu jabs (as stated by the caller from the practice and stated in the Werneth Medical Practice marketing SMS), flu jabs that are paid out at 'piece rate' to the Practice. I advise everyone read the "dua of the oppressor", the regulator is sold, divine intervention is all you have. **the above review has been appended to in order to reflect experiences over time and assist readers with more context- not deleted and rewritten as 'assumed', by the practice. the practice has resorted to its normal narcissistic and toxic tactics demonising this as 'strange' behaviour, which is typical behaviour you can expect to be subjected to as a patient. This sort of malice is extremely alarming and needs investigating. the Practice consider this review, 'disproportionate', i assume because it doesnt reflect the hard work of staff on functions aimed at generating profits, and using their time trolling through the internet to seek out other reviews in order to dismiss valid concerns. this is further, extremely poor conduct, and very petty, and ineffective. there is no function to reply to a review response, therefore a responses may be added above to address the attitudes at the practice.
+Practice response date: 3 years ago
+Practice response:
+Dear Mr Mahmood. We always welcome feedback from patients. But we always insist that the feedback should be balanced, proportionate and factual. It seems that you have deleted your old review and re written it which we find strange. It also seems from your other reviews that you are intent on labeling all of the organisations you encounter as 'profiteering', 'time wasters' etc, including other NHS organisations, just because they may be too overwhelmingly busy to meet your needs. This is disproportionate. Your comment on the flu jabs was also incorrect. The clinician was available to do flu jabs as well as all of the usual duties on a particular day. The current tidal wave of influenza cases may have been avoided had more people attended on their first invitation. We are sure you would agree hence this comment is not factual. Finally, to compare us to an 'oppressor' is a again strange. The staff at WMP work hard to try and provide the best service we can in extremely difficult circumstances. This is not a balanced comment. We hope the above will provide you with a little food for thought when you next provide feedback.
+
+Author: diya ch
+Date: 3 years ago
+Rating: 1 star
+I am with this practice from march 2021… and until today whatever problem i had, never got an appointment as they are always and always full for that day no matter you started calling them 8 o’clock sharp.. first they keep their phone busy and if you are lucky enough to talk to those rude receptionists you will be told that there’s no appointments left and you may call 111 or go to a&e.. that’s a SHAME If we have to go to a&e or call 111 whats the point for being registered with a GP then and stressing for being in the queue for hours I wish i could give them less than one star as they even don’t deserve one
+
+Author: kiran sahiball1qp
+Date: 3 years ago
+Rating: 1 star
+Absolutely disgusting and appoling surgery. They never answer the calls on time. I called this morning and was waiting for 8 minutes, whilst the phone was ringing. When she finally answered she claimed to be fully booked. It was an appointment for a child under 3 and they are expected to prioritise children under the age of 5. The receptionist are behind rude and the doctors I don't even understand how they still have their jobs they are appoling!
+
+Author: Royla Kouser
+Date: 3 years ago
+Rating: 1 star
+Absolutely no good..I wouldn't join if I hadn't already...no good receptionist at all and getting an appointment is impossible, as they dnt answer the phone and when they do ther are no appointments ( so they say ) which defeats the purpose of a doctor .7 day access service is better.so no need for your own doctor at all anyway.
+Practice response date: 3 years ago
+Practice response:
+Hi Royla, Im so sorry you feel that you have had this experience with the practice. The practice has undergone major changes of recent and I'd be glad to discuss your complaint in further detail and address some of your other areas of concern if you could contact the surgery and ask for myself. Yours sincerely, Victoria Williams-Practice Manager
+
+Author: Ittba Shoaib
+Date: 3 years ago
+Rating: 1 star
+Absolute joke! Started ringing at 8 (as they tell you too) got through at 8:20 for someone to then hang up on me. Started ringing again did not get through till 9:45. So basically I was number 4 and it took them that long to answer 4 phone calls! Was then told ‘how am I supposed to give you an appointment now!’ Receptionist was really rude, explaining how busy they were. So busy they couldn’t answer 4 phone calls! Was put through to the manger who then offered me an appointment for the 17th October which is no use to me. Also, went to change my dads name on the system 3 weeks ago, found out yesterday that they only managed to change his surname and not his first. How hard is it to change someone’s name?!
+Practice response date: 3 years ago
+Practice response:
+Hi Ittba, Thank you for your review. We have raised the issue with the telephone call backlogs 'hanging up' on patients, as you are not the first person to report this. I am hopeful that this is something that we can get resolved with the company who operate our telephone lines. I would like to personally assure you that this has not been done with intention. If you would like to give me a call to discuss your other concerns, I would be grateful so I can investigate this for you. Yours sincerely, Victoria Williams-Practice Manager
+
+Author: C WL
+Date: 3 years ago
+Rating: 1 star
+Wish I could give a negative rating! Ridiculous service, say open at 8am but can't get through to queuing system until 8:30am, keep saying line is busy (even though I called as soon as it hits 8am). And then when managed to get through, no appointments left even though there were only 1/2 people in front of me!
+Practice response date: 3 years ago
+Practice response:
+Hi Thank you for your review. I would like to let you know that over the past few … More
+
+Author: C WL
+Date: 3 years ago
+Rating: 1 star
+Wish I could give a negative rating! Ridiculous service, say open at 8am but can't get through to queuing system until 8:30am, keep saying line is busy (even though I called as soon as it hits 8am). And then when managed to get through, no appointments left even though there were only 1/2 people in front of me!
+Practice response date: 3 years ago
+Practice response:
+Hi Thank you for your review. I would like to let you know that over the past few weeks the practice is now able to offer double the number of appointments as previous. I understand that it is frustrating when trying to make an ' on the day emergency appointment' Please know that you can also always pre book an appointment with a clinician. I am aware there are issues with the telecoms, and we have raised this with the relevant people to try and get this resolved for our patients. We are hopeful that with the above changes and extra emergency appointments that we are now able to offer, that we can alleviate some of your frustrations. If you want to discuss this in further detail, please contact me directly Yours sincerely, Victoria Williams-Practice Manager
+
+Author: Tayebah
+Date: 3 years ago
+Rating: 1 star
+Made an appointment in the morning after waiting for 20 minutes. Told I'd get a telephone appointment (not a problem). Doctor rang but shut the phone after saying hello to me (that was nice of her). I rang back and they told me she'd ring back (she never rang back). Rang them again and she said she'd send a message to the doctor but hadn't received any further info. I rang back only for them to switch the phone off on me and when I ramg again,the receptionist spoke in a very demeaning manner telling me she'll send a message to the doctor and that she'd ring back. Never happened. Wanted to speak to the practice manager but was told she had left but then got passed on to her colleague who asked in a very intimating manner why I wanted to speak to her. Told I'd ring back on Monday to explain to the manager.
+Practice response date: 3 years ago
+Practice response:
+Hi Tayebah, Thank you for your review. I am sorry that you have had this experience with the practice. Please can you contact me directly so that I can investigate this further for you. Yours sincerely, Victoria Williams-Practice Manager
+
+Author: tamanna begum
+Date: 3 years ago
+Rating: 1 star
+One rubbish practice you can never get an appointment wonder why its open
+
+Author: Farah Is haaq
+Date: 3 years ago
+Rating: 1 star
+Absolutly rubbish surgery because it is impossible to get an appointment. You ring for ages dont get through and when you finally do ..you are put in a Que and then get cut off suddenly!
+
+Author: Amina Khan
+Date: Edited 4 years ago
+Rating: 1 star
+Service is horrendous. I don't even know how this practice is still running. Now they also have a queuing system on the phone lines, I have been in position one for half an hour. Something needs to be done, an inspection or something because it's awful. Definitely DO NOT recommend this practice and encourage all to change their GP ASAP. Update I have been threatened by the practice manager to remove this review or I will get removed from the GP practice and I will 'get done for'. So I have amended my review.
+
+Author: Zarina F
+Date: 4 years ago
+Rating: 1 star
+I rang on the phone asking for an emergency appointment the receptionist said not available, then I asked to get booked in on a another day not available and finally asked if I could come in to get appointment will not be allowed that is a bloody joke ring in the morning when the lines are constantly busy!
+
+Author: Hussain Sarder
+Date: 4 years ago
+Rating: 1 star
+Hussain SarderLocal Guide · 37 reviews · 8 photos4 years ago
+
+Author: Uzma 786
+Date: 4 years ago
+Rating: 1 star
+Absolutely appalling!!! Answer phone after 15 minutes and then no appointments available, not even an emergency one for my baby it’s ridiculous!!
+
+Author: Sarfraz Ahmed
+Date: 4 years ago
+Rating: 4 stars
+Wonderful service,friendly staff 💯 …
+
+Author: shaban hussain
+Date: 4 years ago
+Rating: 1 star
+Atrocious service, has been poor for a number of years. You have to wait over 4 weeks for an appointment and on other occasions after making an appointment they say it’s not been booked! Which means you wait another 4 weeks. Communities with high BAME population are always taken advantage off!
+
+Author: Waqar Younas
+Date: 5 years ago
+Rating: 1 star
+Absolute shambles of a practice. Make emergency appointments after waiting for minutes and minutes on end for someone to pick up, only to tell me they made me an emergency appointment, and the doctor did not ring me back! I had to ring back today, and heh guess what! Waiting again for minutes on end! Only to be told no one was aware I had an appointment made!!!I have been in pain for more than a year with the same problem and all they do is throw painkillers at you! Rang reception today all they seem to do is blame each other, nothing gets resolved no wonder it has so many negative reviews! Absolutely poor and disgusting and I am most definitely going to change gps! Never pick their phones up act like they’re busy when they have up to 5 receptionists all working at the same time!!!
+
+Author: attique rehman
+Date: Edited 5 years ago
+Rating: 1 star
+attique rehman2 reviewsEdited 5 years ago
+
+Author: Sara Zaman
+Date: 5 years ago
+Rating: 1 star
+Really disappointed with the evening shift recepsionists behaviour. I had been given an appointment at 6:40 pm when the surgery closes at 6:30 and when I arrived the two rude girls started arguing saying that I should have received a message about the appointments being cancelled (I was not contacted whatsoever) and instead of apologizing for THEIR mistake they kept arguing, and my appointment was cancelled for the second time but no one bothered to let me know. My blood results also got lost and I am still waiting to get them done AGAIN, its been two weeks but the rudeness of the receptionists is what disappointed me the most. Absolutely unprofessional and disorganized.
+
+Author: Maria786akbar Akbar
+Date: 5 years ago
+Rating: 1 star
+Really disappointed with docters apointment systems and receptionist behaviour ,they keep argued and not give my message to docter about my 5 weeks baby girl because of them i went in emergency,i had c section and made apointment today because have ear infection and i wait 4 hours for docter call but docter did not why i called and find out they saida the lady who booked your apointmnt forgot to put on system sorry for that,go to emergency for check up..nothing in this surgery i want to complain about this surgery ,anyone how we can complain?
+
+Author: maryam talat
+Date: 5 years ago
+Rating: 1 star
+Very rude people talking rubbish no give good customer service I think campalan about this medical center today I ring council and campalan
+
+Author: Syed Jawwad Ahmed
+Date: 6 years ago
+Rating: 1 star
+I don’t even wanna give them ratings 0 I am calling them last 1hr 25min and user busy...😡🤬 …
+
+Author: Raj islam
+Date: 6 years ago
+Rating: 1 star
+Wth are they crazy or what whenever I go there to see a doctor they'll say they're booked for rest of the day my sister took off from school and we went there for a check up the receptionist tells me come back tomorrow we can't do anything and there's no bluddy patient inside very rude and full of attitude wake up and put a smile on your face or learn to smile
+
+Author: Sij E
+Date: 6 years ago
+Rating: 1 star
+Very rude and unprofessional staff. Never any appointments available. I don't even know why they are still open.
+
+Author: Rahyan Rashid
+Date: 6 years ago
+Rating: 1 star
+The GP should re-evaluate his career choice if the pressures of the job mean he has a laissez-faire attitude towards patients. If you are an existing patient transfer out and if you are thinking of joining this practice DON'T.
+
+Author: Samina
+Date: 6 years ago
+Rating: 1 star
+Very rude and unprofessional staff. Phone gets answered after a few calls. I have even witnessed staff members chatting to each other and phone is ringing away. I changed my doctor a few years ago, didnt get round to changing my daughter. Will be doing that today. This practice is getting worse.
+
+Author: Ibrahim Bin Awais
+Date: 6 years ago
+Rating: 1 star
+Ibrahim Bin AwaisLocal Guide · 14 reviews · 8 photos6 years ago
+
+Author: Sarah Robinson
+Date: 7 years ago
+Rating: 1 star
+Do Not go to this doctors I don’t know who I spoke to I said to her my skin feels itchy and can I have some precreption she replied No go buy it from tesco asda changing this doctor This doctor did not look at my skin or anything but be rude.This doctor treated this old lady not nice in front me!
+
+Author: zahir miah
+Date: 7 years ago
+Rating: 3 stars
+Receptionist need better training
+
+Author: Amatul Karim
+Date: 7 years ago
+Rating: 5 stars
+Amatul Karim4 reviews7 years ago
+
+Author: Areeba Shabbir
+Date: 8 years ago
+Rating: 1 star
+Areeba Shabbir8 years ago
+
+Author: Haadiya Ali
+Date: 8 years ago
+Rating: 5 stars
+Haadiya Ali2 reviews8 years ago
+
+Author: Mob Ali
+Date: 8 years ago
+Rating: 5 stars
+Mob AliLocal Guide · 29 reviews · 214 photos8 years ago
+
+Author: Kabir Chowdhury
+Date: 9 years ago
+Rating: 4 stars
+Kabir Chowdhury9 years ago
+
+Author: Farah zubair
+Date: 9 years ago
+Rating: 1 star
+Very bad & rude staff with sarcastic attitude. They always misguide you & get into arguments. Especially the nurse who thinks she's a doctor PARVEEN KHAN.

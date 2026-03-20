@@ -4,11 +4,16 @@ Postcode: M6 5PL
 Google Maps title: Salford Inclusion GP Service, Salford Primary Care Together
 Google rating: 2.3
 Google review count: 3
-Google Maps URL: https://www.google.com/maps/place/Salford+Inclusion+GP+Service,+Salford+Primary+Care+Together/@53.486786,-2.284202,17z/data=!4m8!3m7!1s0x487bae3a1a6c0077:0xf5d3eb586ddb98d5!8m2!3d53.486786!4d-2.284202!9m1!1b1!16s%2Fg%2F11fzf7d5zl?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Salford+Inclusion+GP+Service,+Salford+Primary+Care+Together/@53.4867892,-2.2867823,17z/data=!4m8!3m7!1s0x487bae3a1a6c0077:0xf5d3eb586ddb98d5!8m2!3d53.486786!4d-2.284202!9m1!1b1!16s%2Fg%2F11fzf7d5zl?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.286
+Review collection mode: full_feed
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y00445003-spct-inclusion-service.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Robert Lee
 Date: 4 years ago

@@ -4,31 +4,16 @@ Postcode: M44 5DX
 Google Maps title: Longfield Lodge Dental Practice
 Google rating: 4.7
 Google review count: 53
-Google Maps URL: https://www.google.com/maps/place/Longfield+Lodge+Dental+Practice/@53.4202584,-2.4448749,17z/data=!4m8!3m7!1s0x487baa680e75d743:0xab5af8c7f88c03fd!8m2!3d53.4202584!4d-2.4448749!9m1!1b1!16s%2Fg%2F119wqbsf_?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Longfield+Lodge+Dental+Practice/@53.4202616,-2.4474552,17z/data=!4m8!3m7!1s0x487baa680e75d743:0xab5af8c7f88c03fd!8m2!3d53.4202584!4d-2.4448749!9m1!1b1!16s%2Fg%2F119wqbsf_?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.667
+Review collection mode: full_feed
+Review cards collected: 53
+Owner replies collected: 26
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87610001-longfield-lodge.json
 
-Recent visible reviews
-====================
-
-Author: Ali C
-Date: 6 days ago
-Rating: 5 stars
-Ali C4 reviews · 1 photo6 days ago New
-
-Author: John Murphy
-Date: 3 weeks ago
-Rating: 5 stars
-Great practice, very friendly and knowledgeable team. Special mention for Barbara!
-
-Author: Kelly Cross
-Date: Edited a month ago
-Rating: 5 stars
-Exceptional service as always. Gary cares and makes you feel at ease. Would recommend to anybody who has a fear of the dentist.
-
-Author: JadonNg2014
-Date: a month ago
-Rating: 5 stars
-Dentist lady is very nice and lovely made me feel very relax and comfortable
+Captured reviews
+================
 
 Author: Jackie Wade
 Date: 2 months ago
@@ -40,22 +25,335 @@ Date: 3 months ago
 Rating: 5 stars
 Family members were very nervous going in since it has been years they were seen for dental care, we're very grateful the staffs and dentist were so helpful and polite. Big thank you for making the experience less nerve-wracking by being patient with us, it really makes huge difference in people's lives. Amazing team and practice 👏
 
+Author: Kelly Cross
+Date: Edited a month ago
+Rating: 5 stars
+Exceptional service as always. Gary cares and makes you feel at ease. Would recommend to anybody who has a fear of the dentist.
+
 Author: Claire Waddell
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 Brilliant dentist wouldn't go anywhere else friendly polite receptionist, Dentist and dental nurse so reassuring relaxed calm atmosphere thanks for the work you have done.
+
+Author: Danielle Woolley
+Date: a year ago
+Rating: 5 stars
+My first visit to a dentist in 9 years and as far as going to the dentist can be - It was a really good experience. The dentist was running late, but I was asked immediately if that was okay and was I able to wait, which was a refreshing change from not being told anything and clock watching whilst getting frustrated. The reception staff were lovely and polite and the dentist was reassuring, clear in a plan going forward, and talked me through each step of the examination. I've left with my next two appointments booked, one only next week. I would definitely recommend this surgery if you're looking for a dentist.
+
+Author: Krystle Tomkins
+Date: 9 months ago
+Rating: 5 stars
+Gary is by far one of the best!!! My mum had severe anxiety over going to the dentist from years ago and Gary has put her at ease so much that mum even laughs in the chair. She is on her way to getting some confidence back after Gary is slowly managing to get her smile back. ❤️
+
+Author: JadonNg2014
+Date: a month ago
+Rating: 5 stars
+Dentist lady is very nice and lovely made me feel very relax and comfortable
+
+Author: John Murphy
+Date: a month ago
+Rating: 5 stars
+Great practice, very friendly and knowledgeable team. Special mention for Barbara!
+
+Author: Karen Perrin
+Date: a year ago
+Rating: 5 stars
+Having only had a few visits here recently (new dentist for me) I am extremely impressed with the level of fabulous service with a smile from Margaret and Barbara on the front desk. My dentist -Gary is just a beautiful soul and her lovely dental nurses. I was really well looked after , given fantastic treatment and advice, nothing seemed to be too much trouble. These ladies have a wonderful ability to make you feel at ease ( especially as I am a little bit of a nervous person when having treatment) I truly have never been to such a brilliant dentist team. Thank you to everyone for looking after me so well 😊👍
+Practice response date: a year ago
+Practice response:
+Dear Karen, We are delighted to hear that you’ve been happy with your dental treatment and the overall experience at “Longfield Lodge Dental Practice“. Our team would like to thank you for the wonderful review.
+
+Author: Joanne Royle
+Date: a year ago
+Rating: 5 stars
+I have always had nothing but positive experiences when using this practice for both myself and my family. Reception staff are always so friendly and helpful and the dentist and dental nurses really do go the extra mile, they really care about the patients and deliver an outstanding service every time. I feel lucky to be a patient here and would highly recommend to anyone
+Practice response date: a year ago
+Practice response:
+Dear Joanne, thank you for taking the time to give us your feedback. 😊 …
+
+Author: leahanne finch
+Date: 2 years ago
+Rating: 5 stars
+I have been a patient at this dentist for a long time now, but since the new dentist has taken over its become exceptionally better. The staff and the dentist are all wonderful and friendly. After a few treatments recently that I wasn't particularly looking forward too. I was instantly put at ease. Very well looked after and always went at my pace! As far as visiting the dentist goes, it'd always a pleasant experience. Even my kids have no worries/fears with the new dentist. Thank you
+Practice response date: 2 years ago
+Practice response:
+Dear Mrs Finch, Thank you for taking the time to give us your valuable feedback. We are happy to hear that you felt well looked after during your recent visits to Longfield Lodge Dental Practice. Our team works continuously to accommodate our patients’ needs, and your kind words and positive feedback are massively appreciated. Thank you very much! The “Longfield Lodge Dental Practice” Team
+
+Author: Chris
+Date: a year ago
+Rating: 5 stars
+I’ve been coming here for years and couldn’t be happier. The dentist and staff are friendly, professional, and do a fantastic job. Appointments are always easy to book. Highly recommend!
+
+Author: Hannah Ferguson
+Date: 2 years ago
+Rating: 5 stars
+Fantastic experience. The team here are welcoming, friendly, helpful, professional and make you feel at ease throughout your treatment. The dental works I required and the options available to me were clearly explained. Excellent care and I was delighted with the results of my treatment. Would highly recommend the practice and the staff.
+Practice response date: a year ago
+Practice response:
+Dear Hannah, Many thanks for your fantastic feedback. Our team is looking forward to seeing you again
+
+Author: Chris Ross
+Date: a year ago
+Rating: 1 star
+Not happy with Longfield lodge in cadishead. Wouldn't recommend. I have been there for a couple of years and got kicked off because 1 thay rang me and cancelled due to the dentist being off ill or something and when I tryed to rebook in they said I didn't turn up to my last appointment which they cancelled... 2 I had to miss appointment due to my 2 yr old son being rushed in to hospital and just forgot to ring till the next day. I tryed to book another appointment and they said my excuse wasn't good enough. And I am no longer on there list. So definitely wouldn't recommend this dentist.
+
+Author: Joanne Eames
+Date: 2 years ago
+Rating: 5 stars
+Wonderful dental practice, full of experienced, friendly dentist’s. Reception staff are lovely, very helpful and relaxed with a positive attitude. Female dentist was amazing dealing with nervous patients and completed all dental work keeping me relaxed and pain free, great experience!
+Practice response date: 2 years ago
+Practice response:
+Dear Joanne, Thank you for your review. We are happy to hear that you felt relaxed and comfortable during your dental treatment. Your feedback is greatly appreciated! Looking forward to seeing you again. G.Fotiou & T. Doulgeridis Longfield Lodge Dental Practice
+
+Author: Elaine Blackwell
+Date: 2 years ago
+Rating: 5 stars
+The practise here is vastly improved, both dentists are excellent, friendly, communicative and very helpful. Going to the dentist now is a pleasant and positive experience compared to before they took over! Thanks, would highly recommend.
+Practice response date: 2 years ago
+Practice response:
+Dear Mrs Blackwell, Thank you for sharing your positive experience. Our team tries its best to provide our patients with quality dental care in a friendly and relaxed atmosphere and we are happy to hear that our effort is acknowledged and appreciated. We are looking forward to seeing you again. The “Longfield Lodge Dental Practice “ Team
+
+Author: Craig Dennen
+Date: 2 years ago
+Rating: 5 stars
+Really friendly and highly competent dental surgery. I have been coming here for years but the current team are the best yet. Never have to wait long when arriving at the practice and the new dentist explains everything and is very thorough. Impressed that treatment is not pushed on you when not necessary
+Practice response date: 2 years ago
+Practice response:
+Dear Mr Dennen, Thank you very much for sharing your views about the dental care and the overall service you received by our team. We really appreciate it. The “Longfield Lodge Dental Practice” Team
+
+Author: Nikky Davis
+Date: a year ago
+Rating: 5 stars
+Staff are so lovely and welcoming, very relaxed atmosphere, cleanliness 10/10! Very quick to get an appointment and treatment and very happy to finally have a dentist who cares. Thankyou so much to all the staff 😊 …
+Practice response date: a year ago
+Practice response:
+Our team appreciates your kind words. Thank you for the lovely review, Nikki!
+
+Author: Darren Banfield
+Date: 10 months ago
+Rating: 5 stars
+By far the best dentist !! I’ve been coming to this dentist for over 10 years extremely happy very professional friendly staff and the dentist always explains the best options for you … very happy to be at this practice.
+
+Author: Jessica Lee
+Date: 2 years ago
+Rating: 5 stars
+I've attended the practice all my life but the last 12 months it's improved dramatically. The staff are very friendly and accommodating. I used to be quite nervous to visit the dentist but now feel much more at ease.
+Practice response date: 2 years ago
+Practice response:
+Dear Jessica, Many thanks for your review. Our team takes pride in providing excellent care to our patients. We are excited to hear that you don’t feel nervous about your dental treatment any more. Our team is looking forward to seeing you again. G.Fotiou & T. Doulgeridis Longfield Lodge Dental Practice
+
+Author: Peter Yousef
+Date: 2 years ago
+Rating: 5 stars
+The Reception staff are friendly and helpful. The Dentist was amazing and very experienced. She make me fell relaxed and kept checking and making sure I'm ok during the treatment. Thanks you.
+Practice response date: a year ago
+Practice response:
+Dear Peter, Many thanks for your kind words. The “Longfield Lodge Dental Practice” team
+
+Author: craig redmond
+Date: 2 years ago
+Rating: 5 stars
+Excellent. Called in as an emergency and was seen within 90 mins.Was really nervous as had not seen a dentist in years, was made to feel at ease and all went well. Will be going back for regular check ups from now on
+
+Author: NG
+Date: 6 years ago
+Rating: 4 stars
+I've been with this dentist practice for over a year now, and I've never had any issues with them, the receptionist is friendly and helpful, appointments are always on time, and the dentists do a thorough job. The only reason for 4 stars and not 5, is that they switched me from one dentist to another with no reason and without letting me know, but both dentists have been absolutely fine.
+
+Author: christine smith
+Date: 9 years ago
+Rating: 5 stars
+First appointment with these guys today. So Happy. The receptionist was very welcoming and friendly. My dentist was super nice and very approachable. Customer service second to none :-) I am a Very happy Customer. Outstanding
+
+Author: Z Redden
+Date: a year ago
+Rating: 5 stars
+If I could give 10 stars I would this practice is amazing the staff especially gary are so nice and make you feel so comfortable during your treatment would highly recommend this dentist
+Practice response date: a year ago
+Practice response:
+Your feedback means a lot to us. Many thanks from all our team!
+
+Author: Ste Norbury
+Date: Edited 2 years ago
+Rating: 5 stars
+Didnt have a dentist for years and these guys have been nothing but amazing, polite, lovely staff and assistants, the dentist Garyfalia who has treated me a fair few times has been so happy, caring and polite explaining things fully which is amazing for me and the work is fantastic, give me my old smile back. It's just a shame i cant rate them higher than 5 because they are a solid 10
+Practice response date: 2 years ago
+Practice response:
+Dear Mr Norbury, Thank you for the fantastic 5-star review! It’s great to hear that you always feel well looked after by our team. Looking forward to seeing you again. The “Longfield Lodge Dental Practice “ Team
+
+Author: Matthan Flanagan
+Date: 2 years ago
+Rating: 5 stars
+Great dentist. Puts you at ease during the procedure. I had a deep filling done, whole process was completely painless with good communication throughout. I had Garyfalia and Arishe.
+Practice response date: a year ago
+Practice response:
+Dear Matthan, Thank you for taking the time to post such a nice review about your experience at “Longfield Lodge Dental“. Our team is looking forward to seeing you again
+
+Author: kirsty rogers
+Date: 9 months ago
+Rating: 5 stars
+Lovely lady dentist who always puts my fears at ease 😁😁😁 highly recommended …
+
+Author: Christina jones
+Date: 2 years ago
+Rating: 5 stars
+As people know the dentist is not your favorite place to go but i must admit I always have a pleasant experience, always meet with a friendly welcome from reception staff, and what can I say about my wonderful lady dentist we have a great rapport with each other and so much laughter, excellent communication and care taken at all times thank you x
+Practice response date: 2 years ago
+Practice response:
+Dear Mrs Jones, Thank you for taking the time to post your review. Providing excellent care to our patients is our priority and we are pleased to know that your dental treatment has been such a pleasant experience. Looking forward to seeing you again. G.Fotiou & T. Doulgeridis Longfield Lodge Dental Practice
+
+Author: paul green
+Date: 8 months ago
+Rating: 5 stars
+Just had a great service from GaryFalia, went above & beyond & really went out of her way to get me all sorted , a very rare occurrence this day & age👍😁 …
+
+Author: Faye Craven
+Date: a year ago
+Rating: 5 stars
+I can't recommend this place enough. All the staff are fantastic and really go that extra mile. I'm made to feel very welcome and at ease every visit.
+Practice response date: a year ago
+Practice response:
+Dear Faye, Thank you for your feedback! We are happy to hear you feel welcome every time you attend our practice.
+
+Author: Clair Edwards
+Date: 2 years ago
+Rating: 5 stars
+Such nice staff and the dentist who has just taken over the practice is amazing. Can not recommend enough.
+Practice response date: 2 years ago
+Practice response:
+Dear Mrs Edwards, Thank you for taking the time to post such a nice review. Looking forward to seeing you again The “Longfield Lodge Dental Practice” Team
+
+Author: Christopher Meadows
+Date: a year ago
+Rating: 5 stars
+Excellent dentist and receptionists . Always get me an appointment quickly and the dental treatment is brilliant
+Practice response date: a year ago
+Practice response:
+🙏 …
+
+Author: Louanne King
+Date: 8 months ago
+Rating: 5 stars
+Just moved the children here. Excellent first experience even the children liked it
+
+Author: Declan Birkett
+Date: a year ago
+Rating: 5 stars
+Fantastic staff , so supportive with ny anxiety wouldn't go anywhere else
+
+Author: Nice1 H
+Date: 8 years ago
+Rating: 1 star
+Not happy with the treatment and care as my son has now got the fear of a dentist which he didn't have before and also I have alot more to say about this dental practice would not recommend at all
+
+Author: Russell Coupe
+Date: a year ago
+Rating: 5 stars
+Great visit, various options discussed in detail about my troublesome tooth 😔 thank you for the time, very much appreciated 🙂👍🏼 …
+
+Author: Karen Wild
+Date: a year ago
+Rating: 5 stars
+Fantastic service, Gary is brilliant and all the staff are wonderful too!
+
+Author: Jeanette Vincent
+Date: 2 years ago
+Rating: 5 stars
+Excellent service. Reception staff and dentist very good. Thanks
+Practice response date: 2 years ago
+Practice response:
+Dear Mrs Vincent, Thank you for your positive feedback. The “Longfield Lodge Dental Practice” Team
+
+Author: Dave Barcroft
+Date: 3 years ago
+Rating: 4 stars
+Very helpful staff. Reception and Dentists very nice. Good service.
+Practice response date: a year ago
+Practice response:
+🙏 …
+
+Author: Kelly Wong
+Date: a year ago
+Rating: 5 stars
+Very friendly and helpful staff I been served a women call BarBara very friendly.
+Practice response date: a year ago
+Practice response:
+🙏 …
+
+Author: Beth Robinson
+Date: a year ago
+Rating: 5 stars
+Friendly staff/environment. Very good with autistic patients.
+
+Author: graham jarvis
+Date: a year ago
+Rating: 5 stars
+Great service lovely people totally put me at ease thank you
+Practice response date: a year ago
+Practice response:
+🙏 …
+
+Author: Emma Moran
+Date: 2 years ago
+Rating: 5 stars
+Fantastic service. The have been great with my son
+Practice response date: 2 years ago
+Practice response:
+Dear Mrs Moran, Thank you for your nice review. The “Longfield Lodge Dental Practice” Team
+
+Author: Chava Odze
+Date: 10 months ago
+Rating: 5 stars
+Amazing experience so calming
+
+Author: Pat Woolley
+Date: a year ago
+Rating: 5 stars
+Really friendly, excellent advice
+Practice response date: a year ago
+Practice response:
+🙏 …
+
+Author: Gemma Huntington
+Date: 2 years ago
+Rating: 5 stars
+Fabulous and friendly dentist
+Practice response date: 2 years ago
+Practice response:
+Dear Gemma, Thank you for your nice review. G.Fotiou & T. Doulgeridis Longfield Lodge Dental Practice
+
+Author: owen Pritchard
+Date: a year ago
+Rating: 5 stars
+Very friendly staff
+Practice response date: a year ago
+Practice response:
+🙏 …
+
+Author: Jadon Ng
+Date: 9 months ago
+Rating: 5 stars
+Great dentist
+
+Author: Ali C
+Date: 2 weeks ago
+Rating: 5 stars
+Ali C4 reviews · 1 photo2 weeks ago New
 
 Author: Lok Yin Wong
 Date: 6 months ago
 Rating: 5 stars
-Lok Yin WongLocal Guide · 18 reviews · 140 photos6 months ago
+Lok Yin WongLocal Guide · 18 reviews · 145 photos6 months ago
 
-Author: paul green
-Date: 7 months ago
+Author: Marilyn Houghton
+Date: 2 years ago
 Rating: 5 stars
-Just had a great service from GaryFalia, went above & beyond & really went out of her way to get me all sorted , a very rare occurrence this day & age👍😁 …
+🙏 …
+Practice response date: a year ago
+Practice response:
+🙏 …
 
-Author: Louanne King
-Date: 7 months ago
-Rating: 5 stars
-Just moved the children here. Excellent first experience even the children liked it
+Author: Brian Mountford
+Date: 6 years ago
+Rating: 1 star
+Brian Mountford9 reviews6 years ago

@@ -4,11 +4,16 @@ Postcode: SK6 5AA
 Google Maps title: Marple Bridge Surgery
 Google rating: 4.5
 Google review count: 20
-Google Maps URL: https://www.google.com/maps/place/Marple+Bridge+Surgery/@53.4003187,-2.0533175,17z/data=!4m8!3m7!1s0x487bca85cb3d3af1:0x55f6847628feb71f!8m2!3d53.4003187!4d-2.0533175!9m1!1b1!16s%2Fg%2F1tczdg4j?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Marple+Bridge+Surgery/@53.4003219,-2.0558978,17z/data=!4m8!3m7!1s0x487bca85cb3d3af1:0x55f6847628feb71f!8m2!3d53.4003187!4d-2.0533175!9m1!1b1!16s%2Fg%2F1tczdg4j?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 20
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88002-marple-bridge-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Glenne
 Date: a month ago
@@ -59,3 +64,53 @@ Author: Sarah Parry
 Date: 4 years ago
 Rating: 5 stars
 Absolutely amazed by this wonderful surgery. The receptionists are friendly and helpful and each time I’ve needed a late notice appointment I have been seen within the same day. Each GP I have seen has been kind, courteous and professional, I’ve never felt rushed out the door or like I can’t ask a question. This surgery is simply miles better than our previous one and we’re so glad we moved!
+
+Author: Mike Watkins
+Date: 4 years ago
+Rating: 5 stars
+Always very efficient and pleasant. First class service and I can’t fault their procedures.
+
+Author: P P
+Date: 4 years ago
+Rating: 5 stars
+TELEPHONE RECEPTION WERE EXCELLENT.
+
+Author: Terry Lomax
+Date: 5 years ago
+Rating: 5 stars
+Terry Lomax7 reviews5 years ago
+
+Author: Mary Howie
+Date: 5 years ago
+Rating: 5 stars
+These stars are for the excellent organisation and efficiency at the Covid vaccination clinic today in Hazel Grove in which the Marple Bridge surgery participated....the vaccination process was very well organised and injections delivered with great efficiency and expedition. All involved should be congratulated. ..many thanks!
+
+Author: L B
+Date: 5 years ago
+Rating: 1 star
+The Doctors and Nurses are great but the reception staff really let this surgery down. They have messed up my prescription twice now, having it sent to the wrong place, meaning I have gone weeks without the medication and my condition worsening. It's taken a lot of time and effort to track down what's happened to it. The reception staff are patronising and rude on the phone, that's when you eventually get to speak to someone (tip: you need to email them, they NEVER answer). When I was pregnant they also failed to pass on an important message to the midwife. I don't know how they get it so wrong every time.
+
+Author: Jon Ralph
+Date: 5 years ago
+Rating: 5 stars
+Excellent surgery, terrible telephone service
+
+Author: Samantha Halfyard
+Date: 6 years ago
+Rating: 5 stars
+Excellent. Much better than my previous
+
+Author: Mark Spencer
+Date: 7 years ago
+Rating: 5 stars
+Mark Spencer10 reviews7 years ago
+
+Author: Christopher Loh
+Date: 8 years ago
+Rating: 5 stars
+Great surgery. Best in all of Stockport!
+
+Author: J Evans
+Date: 9 years ago
+Rating: 5 stars
+Lovely doctors and receptionists, and just across the road from the pharmacy

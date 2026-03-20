@@ -4,19 +4,24 @@ Postcode: OL11 1DN
 Google Maps title: Dale Medical Practice
 Google rating: 3.3
 Google review count: 23
-Google Maps URL: https://www.google.com/maps/place/Dale+Medical+Practice/@53.6120952,-2.1543924,17z/data=!3m1!5s0x487bb9431ce9bdbd:0x8ee61685585591ad!4m8!3m7!1s0x487bb9431c559049:0x207c4ef307c382fe!8m2!3d53.6120952!4d-2.1543924!9m1!1b1!16s%2Fg%2F11fj9g7rml?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dale+Medical+Practice/@53.6120984,-2.1569727,17z/data=!3m1!5s0x487bb9431ce9bdbd:0x8ee61685585591ad!4m8!3m7!1s0x487bb9431c559049:0x207c4ef307c382fe!8m2!3d53.6120952!4d-2.1543924!9m1!1b1!16s%2Fg%2F11fj9g7rml?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 23
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86609-the-dale-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Nabeel Saroosh
-Date: 2 weeks ago
+Date: 3 weeks ago
 Rating: 5 stars
 Great practice and great doctor sadique
 
 Author: Saba Rehman
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 Avoid this practice if you have kids I'm changing my gp. No one is there to take action against there unprofessional behaviour? Even they are not educated don't know how to deal with patients and there problems they are unable to give you any prescription or advice for a sick child although they always trying to blame you it's your mistake if your child have travel sickness if he is doing vomiting because of cold if he not gaining weight for a year once the first time they prescribed wrong medicine for my 2 years old that is actually for 6+ kids pharmacist surprised to see the prescription and refused to give medication you always feel helpless and depressed when you visit them.
 
@@ -56,6 +61,71 @@ Rating: 5 stars
 Dale medical practice is one in a million. Going above and beyond the call of duty From the care navigators. to the Doctors Especially. Doctors are so understanding and take time to. Listen Thank you so much. Dale Medical
 
 Author: Ömür Kesgin
-Date: Edited 11 months ago
+Date: Edited a year ago
 Rating: 3 stars
-Ömür Kesgin2 reviewsEdited 11 months ago
+Ömür Kesgin2 reviewsEdited a year ago
+
+Author: Fy Mawuli
+Date: a year ago
+Rating: 4 stars
+I am very happy with the gp and all the staff. in fact they supported me when I was difficult for my health care. even today is Saturday but they gave me appointment and the doctor solved the problem for me. keep doing that I am appreciate 🙏 …
+
+Author: Razia Ismail
+Date: a year ago
+Rating: 5 stars
+I had to make an appointment got ring back service due to phone lines being busy. Great staff and the Dr Sadiq was very helpful. Would recommend to friends and family.
+
+Author: aslam jalal
+Date: a year ago
+Rating: 5 stars
+Dr Haroon Sadiq is our family GP, what a wonderful doctor he is... extremely friendly and brilliant service. All the staff at reception are very helpful highly recommended
+
+Author: Adeel S
+Date: a year ago
+Rating: 5 stars
+Excellent GP practice!
+
+Author: Shamazaib 1
+Date: a year ago
+Rating: 5 stars
+Dale medical have a good staff, and specifically dr.Sadiq he is a great person, so happy with him,so friendly, and the nurse also very helpful,friendly.
+
+Author: Aurangzeb Malik
+Date: Edited a year ago
+Rating: 5 stars
+Dale practice is very good very helpful and the staff is very friendly and polite
+
+Author: Aj Aj
+Date: a year ago
+Rating: 1 star
+The is no staff it's took nearly a year for my appointment called several times got a message today called back I said why is it nearly a year for an appointment the receptionist said their is patient waiting even lo ger than this urgently need new management their is so many people suffering.why is their not Anything done ps to sort this shameful organisation the council have done nothing about this.They are very quick and efficient sending council tax reminders and bills.
+
+Author: Fozia Noreen
+Date: a year ago
+Rating: 1 star
+Absolutely shocking service. My husband had an appointment at 11.30 he was literally 2 mins late for his appointment due to parking issues. But when he got there he was made more late by a further 4 kins due to receptionist being on the phone and got told because hes late they cancelled the appointment and he couldnt be seen??? I mean seriously??? What an absolute ridiculous and stupid excuse. Not seeing that a patient is stood there waiting to be seen because you are on the phone and you are delaying their appointment more and accepting that its also a mistake on your side you tell the patient the appointment is cancelled??? 2 mins late for gods sake!!! Ots ridiculous! I can see why this practice is sat at 1.7 rating!!! Its not a shock!
+
+Author: Mark Whiteley
+Date: Edited a year ago
+Rating: 1 star
+Rather than precribe a simple anti biotic for a clear abcess in my mouth this practise would prefer I simply order them online or present at A&E taking up valuable critical space.. No NHS dentists available and GP's that have lost common sense. They would prefer I'm left in acute agony. I just ordered some from amazon for 9 quid. The NHS has utterly fallen apart the only health now is what you pay for. Outcome needed to deal with 3 other health care professionals taking up valuable time and space. Prescribed anmocillian referred to a dental hospital.........not rocket science to reduce need/ service use for people allegedly holding degrees.
+
+Author: Kirsty W
+Date: a year ago
+Rating: 1 star
+TERRIBLE PRACTICE NEEDS SHUTING DOWN, DOCTOR HIMSELF DOESNT CARE ABOUT HIS PATIENTS. NOT BEEN HERE LONG IVE JUST REGISTERED WITH A NEW GP. Dr sadique needs a new job this job isn't for him he's very rude and doesn't care about his patients I will be speaking to PALS and the care commission
+
+Author: Auzmah Shaheen
+Date: 2 years ago
+Rating: 1 star
+Would give them zero. GP staff are rude, no follow up after A&E or after tests. GP doesn’t listen to your needs and they do not stick to appointment times.
+
+Author: Simmy Khan
+Date: 2 years ago
+Rating: 1 star
+Rude staff. You need to replace them. Very unprofessional. Doctors never call for Telephone consultation on the time given by the staff. Waste of time.
+
+Author: WAQAS MANZOOR
+Date: 3 years ago
+Rating: 1 star
+very poor practice avoid especially if you have children. they don't have time to give you time. calling them from last 2 weeks everyday have proof but no luck to get appointment. every day same answer call tomorrow if you don't have enough doctors why taking new patient

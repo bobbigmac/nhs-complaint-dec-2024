@@ -3,59 +3,569 @@ Canonical code: P85614
 Postcode: OL2 8BF
 Google Maps title: The Village Practice
 Google rating: 4.0
-Google review count: 77
-Google Maps URL: https://www.google.com/maps/place/The+Village+Practice/@53.5761186,-2.0950333,17z/data=!4m8!3m7!1s0x487bb844620e647f:0x3ca26924615320c0!8m2!3d53.5761186!4d-2.0950333!9m1!1b1!16s%2Fg%2F1tzlyj47?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 78
+Google Maps URL: https://www.google.com/maps/place/The+Village+Practice/@53.5761218,-2.0976136,17z/data=!4m8!3m7!1s0x487bb844620e647f:0x3ca26924615320c0!8m2!3d53.5761186!4d-2.0950333!9m1!1b1!16s%2Fg%2F1tzlyj47?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 78
+Owner replies collected: 55
+Raw review responses captured: 8
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85614-village-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: blondebombsite
+Date: a day ago
+Rating: 5 stars
+I saw Dr Adam Hindle this morning. He is a lovely man, very professional and caring. I was feeling a little nervous but he really put me at ease. A true Gentleman
 
 Author: Norma Harding
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
 I am a fairly new patient to this practice and compared to my last practice is massively different. Far more efficient and helpful.
+Practice response date: a month ago
+Practice response:
+Thank you for your kind feedback. We’re very pleased to hear that your experience with the practice has been positive and that you have found our team efficient and helpful. We are committed to providing a high standard of care and it is encouraging to know this has been reflected in your experience. We appreciate you taking the time to share your comments.
 
 Author: Demi Ward
-Date: 3 weeks ago
+Date: a month ago
 Rating: 1 star
 I am extremely disappointed with the standard of care I have received from this surgery. The waiting time for an appointment is over a month, which is unacceptable, and every interaction I have had with this practice has been unsatisfactory. At my first appointment, I had recently lost my baby during pregnancy. The doctor showed little concern and what felt like thy continued writing up previous consultations during my appointment. I was issued a sick note and sent on my way .I left the appointment feeling worse than when I arrived. I was later referred for further care however, this referral was not completed for several months because the doctor was reportedly off sick and no alternative arrangements were made. I find this particularly concerning, as I received a message from the receptionist regarding the referral shortly after the initial appointment, yet no action followed. Overall, the lack of compassion, poor communication, and delays in care have been distressing. I would strongly advise anyone who needs medical support to consider a different practice. My experience has been extremely disappointing. I will be changing doctors ASAP .
+Practice response date: a month ago
+Practice response:
+Thank you for your feedback. We are very sorry to read about your experience and recognise how distressing this period must have been for you. We aim to provide compassionate, timely and professional care at all times. We understand concerns were raised regarding a referral, and this matter has been reviewed and addressed. Due to patient confidentiality, we are unable to comment on individual circumstances in a public forum. We would welcome the opportunity to discuss your concerns further — please contact the Practice Manager directly so we can review this with you. We wish you well for the future.
 
 Author: Ja Taylor
 Date: a month ago
 Rating: 5 stars
 Professional treatment. Friendly environment and caring staff.
+Practice response date: a month ago
+Practice response:
+Thank you for your lovely feedback. We’re very pleased to hear that you found the team professional, friendly and caring. Providing a supportive and welcoming environment for our patients is very important to us, so your comments are greatly appreciated. Thank you for taking the time to share your experience.
 
 Author: Kenneth Williamson
 Date: a month ago
 Rating: 5 stars
 Rapid response with regards to helping me with my type 2 diabetes from getting an appointment. With a very skilled nurse who took my bloods and and had epic skills of taking blood withoght. Coseing bruising as well as encouraging appointment. To getting result’s s back in speedy time. Leading. To a follow up appointment with dr witch has now led to additional appointment with nurse all in space of les than a week Thank you for being so responsive in such a short time
+Practice response date: a month ago
+Practice response:
+Thank you for your kind comments. We’re very pleased to hear that you felt supported and that your care was coordinated quickly and efficiently. It’s encouraging to know that the appointments, blood tests and follow-up were arranged promptly and that you felt well looked after by the team. Providing timely care and clear follow-up is very important to us, particularly in the management of long-term conditions such as type 2 diabetes. We appreciate you taking the time to share your experience.
 
 Author: Michael Cashin
-Date: a month ago
-Rating: 5 stars
-Dr Hindle was very thorough and allowed me time to ask questions. I was impressed with the quality of service received.
-
-Author: Graham
 Date: 2 months ago
 Rating: 5 stars
+Dr Hindle was very thorough and allowed me time to ask questions. I was impressed with the quality of service received.
+Practice response date: a month ago
+Practice response:
+Thank you for your positive feedback. We’re delighted to hear that Dr Hindle was thorough and gave you the time you needed to ask questions. Ensuring patients feel listened to and fully informed is very important to us, so it’s wonderful to know you were impressed with the quality of care received. We appreciate you taking the time to share your experience.
+
+Author: Graham
+Date: 3 months ago
+Rating: 5 stars
 Saw Gemma for my asthma was bang on ans speaks her mind which is what I want feeling much better as a result
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with Gemma. Your feedback means a lot, and we'll be sure to pass on your comments.
 
 Author: gill peel
 Date: 4 months ago
 Rating: 5 stars
 Dr Hindle was great, he listened to me. The results were great aswell. Thank you
+Practice response date: 3 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with Dr Hindle. Your feedback means a lot, and we'll be sure to pass on your comments.
 
 Author: Alfie Hadfield
 Date: 4 months ago
 Rating: 1 star
 Truly a waste of space, arrived on time, waited an extra 20 minutes before being seen. As usual never the same doctor, medical notes, not updated. Annoyed left under 2 minutes of consultation. In a word "Shambolic", more awareness training needed .No wonder the NHS, has gone to pot.
+Practice response date: 4 months ago
+Practice response:
+Good afternoon Alfie, we advise patients to arrive 5 minutes before their appointment and the wait time does not include this, unfortunately appointments before had over ran by 15 minutes. You are entitled to request an appointment with a specific doctor, this may mean a longer wait but if you prefer this for continuity of care we can facilitate this. We cannot comment publicly about your consultation times however if you would like to follow this up, please contact the practice directly.
 
 Author: edwina rowbottom
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 Staff all very friendly and helpful as usual.
+Practice response date: 5 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot, and we'll be sure to pass on your comments.
 
 Author: julie pleasance
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 Excellent surgery every time. All ways lovely bunch every time I go there. Staff and GPS.
+Practice response date: 5 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot, and we'll be sure to pass on your comments.
+
+Author: DARREN ASHWORTH
+Date: 6 months ago
+Rating: 5 stars
+Excellent appointment today. The nurse explained the process,performed the task efficiently and how I would receive the results. Many thanks.
+Practice response date: 5 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our nurse in particular. Your feedback means a lot, and we'll be sure to pass on your comments.
+
+Author: Paul Morris
+Date: 6 months ago
+Rating: 5 stars
+Paul Morris6 months ago
+
+Author: David jacques
+Date: 6 months ago
+Rating: 5 stars
+David jacques6 months ago
+
+Author: Karen Riley
+Date: Edited 6 months ago
+Rating: 5 stars
+Gemma was very helpful today , such a lovely lady .
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words. We’re delighted to hear you felt comfortable and well cared for.
+
+Author: Barbara Chew (Babs)
+Date: 6 months ago
+Rating: 5 stars
+People are so quick to call drs and receptionist well I would like to say The village medical practice in shaw are exception the receptionist so friendly and helpful I always get an appointment . The drs are first class go out of their way to assist Well done to all at the practice Many thanks for your care and attention
+Practice response date: 6 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Receptionists in particular. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: Janet Proctor
+Date: Edited 6 months ago
+Rating: 5 stars
+Really nice lady. Totally friendly and made me feel so at ease. So helpful. Thank you Anita 😊 Really helpful and explained all that was happening with my medication. Felt really at ease. Anthony …
+Practice response date: 11 months ago
+Practice response:
+Dear Janet, thank you so much for your review of the practice. We are pleased you are happy with the service.
+
+Author: Jeff Gates
+Date: 6 months ago
+Rating: 5 stars
+Had a very good appointment this morning with Anita who was professional and explained all the details of the test she carried out
+Practice response date: 6 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with Anita. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: Barry Cartwright
+Date: 6 months ago
+Rating: 5 stars
+Thank you so much for your 5-star review. We're delighted to hear you have such a positive experience at our practice.
+Practice response date: 6 months ago
+Practice response:
+Thank you so much for your 5-star review. We're delighted to hear you have such a positive experience at our practice.
+
+Author: Chris Barratt
+Date: 6 months ago
+Rating: 5 stars
+Excellent down to earth old school nurse Appointment on time , really good experience
+Practice response date: 6 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: Kevin Pickering
+Date: 6 months ago
+Rating: 5 stars
+Very informative, Anita explained plenty of things to me, without me feeling like I was bombarded with info. Thank you Anita
+Practice response date: 6 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and especially Anita. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: John Houghton
+Date: Edited 6 months ago
+Rating: 5 stars
+Great service from nurse went beyond and more, thank you for being so understanding and caring....
+Practice response date: 6 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and especially our nurse. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: David Brooks
+Date: 7 months ago
+Rating: 4 stars
+The reception Staff are really friendly and helpful. I struggle a bit cognitively and they are always very patient with me. The doctor I see is fantastic. Very knowledgeable which is reassuring. The only issue that I have is when trying to book an appointment as the calendar only goes two weeks forward. So for instance I get a review in 4 weeks but can't go to reception to organise that. I have to remember to phone in two weeks to get an appointment 2 weeks from then. The nature of my condition makes this very difficult to manage as I forget absolutely everything.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words and review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: George cash
+Date: 7 months ago
+Rating: 5 stars
+I have been at the village surgery now six mths I can honestly say I have had no problem s well mannered staff and very helpful DrAdam has been fantastic and very helpful wish I had moved long time ago thank you for all your help and support.Georgie.
+
+Author: Gary Cleaver
+Date: 7 months ago
+Rating: 5 stars
+Anita is a top Practice Nurse, always helpful and reassuring
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team and Anita in particular. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
+
+Author: Tamara Bradbury
+Date: 7 months ago
+Rating: 5 stars
+Friendly Staff. Always helpful.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your review. We are pleased that you find the staff friendly and helpful.
+
+Author: Katie Edmonds
+Date: 7 months ago
+Rating: 5 stars
+Nurse corrina was amazing! So kind and reassuring xxx
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your lovely review! We're so pleased to hear that Nurse Corina made you feel reassured and well cared for — we'll be sure to pass on your kind words.
+
+Author: adam seddon
+Date: Edited 7 months ago
+Rating: 5 stars
+Anita has been very helpful and supportive. Great asset to the team
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your wonderful feedback! We’re delighted to hear that Anita made you feel at ease and provided such a comfortable experience. We’ll be sure to pass on your kind words to her!
+
+Author: Elaine Livesey
+Date: 8 months ago
+Rating: 5 stars
+I’m always very happy with the high level of service I receive off everyone at the practice, from the lovely receptionists to the very knowledgeable doctors. Today was a medication review with Dr Hindle who is always patient, kind and thorough - bonus points to Dr Hindle for resolving a minor medical problem I’ve been experiencing for quite a while.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words and positive feedback. We’re delighted to hear you consistently receive excellent care from our team. Dr Hindle and the whole practice appreciate your recognition, and we’re glad to have helped resolve your medical concern.
+
+Author: Karen Swain
+Date: 8 months ago
+Rating: 5 stars
+Today's home visit was very helpful and informative. Very good care given to my husband.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words. We're glad to hear the home visit was helpful and that your husband received good care.
+
+Author: Uee Leung
+Date: 8 months ago
+Rating: 1 star
+There is no way to book an appointment, they only accept appointments when you call at 8am or 9 am. I called at moment that when 7:59 just turn to 8, the bookings are already full. They suggested me try another day but everyday is the same situation
+Practice response date: 7 months ago
+Practice response:
+Thank you for your feedback. We’re sorry to hear about the difficulty you experienced when trying to book an appointment. Our appointments are released daily at 8am to ensure fairness for all patients. We understand this can be frustrating, and we are continually exploring ways to improve access, including online booking options. If you need urgent advice or help, please contact the surgery, and we will do our best to assist you.
+
+Author: DARK VENOM
+Date: 8 months ago
+Rating: 5 stars
+Thank you so much for your review
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your review
+
+Author: Elle Royle
+Date: 9 months ago
+Rating: 5 stars
+Reception staff, nurses & doctors are so lovely! Always go above and beyond to help where they can.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words! We’re delighted to hear that our team made such a positive impression. We’re always here to help and support you in any way we can.
+
+Author: David Owen
+Date: 9 months ago
+Rating: 5 stars
+Had an appointment today, very happy with the diagnosis and subsequent treatment.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind feedback. We’re pleased to hear you’re happy with your diagnosis and treatment.
+
+Author: Jim Booth
+Date: 9 months ago
+Rating: 5 stars
+Seen on time and very supportive
+Practice response date: 7 months ago
+Practice response:
+Thank you for your kind feedback. We're pleased to hear you were seen on time and felt supported. Your health and experience are very important to us!
+
+Author: Sonja Hodges
+Date: 9 months ago
+Rating: 5 stars
+Very nice place ppl friendly helpful
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words! We're delighted to hear you found our team friendly and helpful. We’re here to support you whenever you need us.
+
+Author: Andrew Marsh
+Date: 9 months ago
+Rating: 5 stars
+Well, how do I describe my initial appointment, with Dr. Hindle, of The Valley Medical Practice, in Shaw, Oldham? There's only one word - SUPERCALIFRAGILISTIC!!! Absolutely FAB-U-LOUS! (Oh, that's two words). Dr. Hindle is unlike any GPs, under whose healthcare I've previously been. All I can say is that he is extremely good at listening, he notices non-verbal tics and he is just great at suggesting how I can become involved in complementing the medical pathways he's put forward. I'm very pleased to report the Dr. Hindle is my Primary GP, from this day forward.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your wonderful review! We’re delighted to hear about your positive experience with Dr. Hindle. It’s fantastic that you felt truly listened to and supported in your care. We’re proud to have him as part of our team and look forward to continuing to provide you with excellent healthcare.
+
+Author: Carolyn Tipper
+Date: 9 months ago
+Rating: 5 stars
+I saw Dr Hindle for the first time. What a pleasure. Easy to talk to, not rushed, felt listened to and understood. Excellent experience. Got a solution and a plan for improvement.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words. We’re delighted to hear that your appointment with Dr Hindle was a positive experience and that you felt listened to and supported. Your health and wellbeing are very important to us.
+
+Author: Kaz Shaw
+Date: 9 months ago
+Rating: 5 stars
+OMG, I can't rate this practice enough. I've been to a lot of different practices over the years! I have diabetes, high blood pressure etc etc... so probably go regular. I've hated everyone. The receptionist has been rude, doc's not that interested, never been seen on time. But this practice is outstanding. The receptionists have manners, smile, don't carry on talking about their weekend when you're stood there!!! They are brilliant..... the doctor, I've seen the same one each time!!! A miracle in itself!!! But he has an AI recording the conversation, so he turns his chair and listens to what I say.... Brilliant....the nurse is absolutely brilliant, WARM, interested, NOT patronising.... I've never experienced this in a practice before!!! Also, I always got in on time, maybe 3 or 4 mins wait... It's absolutely brilliant....
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your wonderful review! We're truly pleased to hear that you feel well cared for and valued at our practice. Our whole team works hard to provide a warm, respectful, and timely service, so it means a lot to know it’s making a difference for you. We’re here to support you every step of the way with your health, and look forward to continuing your care. Thanks again for your kind words!
+
+Author: Samantha McCabe
+Date: 9 months ago
+Rating: 5 stars
+Dr Hindle has been an amazing support for my family and myself, supporting with everything with a kind, compassionate and calming persona. I honestly can’t thank him enough for taking the time to calm worries and concerns and to explain the rationale behind the medical decisions he makes
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words. We’re delighted to hear that Dr Hindle has been such a supportive and compassionate presence for you and your family. Your feedback means a lot to us.
+
+Author: Lucy Collins
+Date: 10 months ago
+Rating: 5 stars
+I had a very positive experience at this practice and would highly recommend it.
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words! We’re delighted to hear you had a positive experience and truly appreciate your recommendation.
+
+Author: Andrew
+Date: 10 months ago
+Rating: 5 stars
+Reception staff friendly, Corina very polite and knowledgeable
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words! We're delighted to hear that our reception team, especially Corina, provided you with friendly and knowledgeable care.
+
+Author: Daniela E Baltag
+Date: 11 months ago
+Rating: 5 stars
+Thank you so much for your review
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your review
+
+Author: Ste Biram
+Date: 11 months ago
+Rating: 5 stars
+Very friendly professional doctor who was extremely thorough in checking all the symptoms. He explained the treatment path ahead clearly and simply.
+Practice response date: 11 months ago
+Practice response:
+Thank you for taking the time to leave us this review. I will pass this onto the team. These comments are very encouraging to the staff.
+
+Author: Carrie Muir
+Date: 11 months ago
+Rating: 5 stars
+Thank you so much for your review
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your review
+
+Author: Carla Fraternale Harrop
+Date: 11 months ago
+Rating: 5 stars
+Dear Carla, thank you so much for your review of the practice.
+Practice response date: 11 months ago
+Practice response:
+Dear Carla, thank you so much for your review of the practice.
+
+Author: Abigail Ross
+Date: a year ago
+Rating: 5 stars
+Dear Abigail, thank you so much for your review of the practice.
+Practice response date: 11 months ago
+Practice response:
+Dear Abigail, thank you so much for your review of the practice.
+
+Author: Jayne Ashton
+Date: a year ago
+Rating: 5 stars
+Excellent service, zero waiting time
+Practice response date: 11 months ago
+Practice response:
+Dear Jayne, thank you so much for your review of the practice. We are pleased you are happy with the service.
+
+Author: Emma C
+Date: a year ago
+Rating: 5 stars
+Thank you so much for your review
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your review
+
+Author: Lynne Cullen
+Date: a year ago
+Rating: 5 stars
+Well this is the first time I've contacted the practice having just moved into the area. The receptionist was so lovely and couldn't have been more helpful.
+Practice response date: a year ago
+Practice response:
+Thank you for leaving this review Lynne, I am glad to hear that our receptionist was helpful. I will pass this encouraging comment onto the team.
+
+Author: Anita Selby
+Date: a year ago
+Rating: 5 stars
+I was very pleased with my sons asthma review today. Anita had a friendly but professional manner and talked us through how we needed to manage our sons asthma. She explained the various options and where we had been going wrong. We left with a much clearer understanding.
+Practice response date: 11 months ago
+Practice response:
+Dear Anita, thank you so much for your review of the practice. We are pleased you are happy with the service.
+
+Author: Anne Jackson
+Date: a year ago
+Rating: 5 stars
+The practice is amazing. All staff are so nice and do there job. I’ve only moved here 6 months ago and the best doctors surgery I have ever been to. Highly recommended this surgery.
+Practice response date: a year ago
+Practice response:
+Dear Anne, thank you for taking the time to leave this review. I will pass your comments onto the team :-)
+
+Author: Desmond Osaghae
+Date: a year ago
+Rating: 1 star
+Desmond Osaghaea year ago
+
+Author: Camara Hadja
+Date: a year ago
+Rating: 1 star
+I have never ever seen a very bad service as this GP service. Every day I call them for an appointment they always say no appointments. Even it’s urgent. Very bad and disgusting service shame on you
+Practice response date: a year ago
+Practice response:
+Dear Camara, thank you for bringing this to our attention. Our staff should be signposting patients to a service suitable in the event all our appointments have been taken. Can we just check that you are a patient at the Village Practice in Shaw, Oldham as we are struggling to locate your calls. You can email me directly at lisanolan1@nhs.net
+
+Author: Adam Bentley-Whittaker
+Date: a year ago
+Rating: 1 star
+Receptionist very rude and doesn't care about your problems / health.
+Practice response date: a year ago
+Practice response:
+Dear Adam, thank you for your comments of the surgery. We are very sorry that believe the receptionist to have been rude and uncaring. The surgery endeavors to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. If you wish to discuss your concerns further please contact the practice manager or practice supervisor who will be happy to assist.
+
+Author: Karl Durkin
+Date: a year ago
+Rating: 1 star
+Dear Karl, we apologies that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will assist us to improve the services we deliver. The surgery endeavors to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. If you wish to discuss your concerns further please contact the practice manage or practice supervisor who will be happy to assist.
+Practice response date: a year ago
+Practice response:
+Dear Karl, we apologies that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will assist us to improve the services we deliver. The surgery endeavors to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. If you wish to discuss your concerns further please contact the practice manage or practice supervisor who will be happy to assist.
+
+Author: Jill Richardson
+Date: a year ago
+Rating: 3 stars
+I have scored them a 3 purely for staff politeness. However through no fault of the staff the service is rubbish! I have been phoning for 6 months or sp now just to get routine bloods. I get through to a 'care navigator' who the receptionist had never heard of them who told me to ring up on another day either at 8 o'clock for an urgent ( which mine isnt) or after 9.30! The receptionist said there is no 9.30 only 8 for urgent and 9 for regular appts. I have complained and will be writing to the cqc, patient champion and NHS England. I finally got offered to see a pharmacist at another practice, out of hours. Low and behold I can now go for my blood checks. I'm complaining, yes, but not about the staff, imagine how hard it is for them. I am complaining about the whole system. It is failing us and its not always down to the gp practice. If more of us complained to the right people as mentioned above then maybe things would improve. There is no shame in doing this and the gp practice won't treat anyone differently for doing so. I am a nurse and advocate for vulnerable people and patients. I am not alone in trying to solve issues but as they say 'the sum is greater than the parts' come everyone, we can do this! All keep safe, warm and well x
+
+Author: Patricia Heathcote
+Date: a year ago
+Rating: 5 stars
+Recently ‘enrolled’ at The Village Practice as it is close to where I live. I was a little apprehensive as I was well looked after at Royton Health Centre. I had nothing to worry about, all who work there go above and beyond. Thanks for all your help and kindness today x
+Practice response date: a year ago
+Practice response:
+Dear Patricia, Thank you for taking the time to leave this review. I will pass your kind words on to the rest of the practice team ;-)
+
+Author: Ashleigh Reynolds
+Date: a year ago
+Rating: 1 star
+Absolutely the worst doctors I have ever registered with. I told them I am in crisis and in need of anti depressants and their answer is to go to A n E, even after ringing at half past 8 for the appointment. What a way to make someone suffering from ill mental health feel absolutely let down and lost! Disgusting.
+Practice response date: Edited a year ago
+Practice response:
+Dear Ashleigh, we apologies that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will assist us to improve the services we deliver. The surgery endeavors to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. If you wish to discuss your concerns further please contact the practice manager or practice supervisor who will be happy to assist.
+
+Author: georgia Clarke
+Date: 2 years ago
+Rating: 1 star
+This is the worst doctors I’ve ever been too, the staff are cocky on the phone, I’ve been given an appointment time on text for the doctor to ring me so I have waited an extra 30 minutes to ring up and be told the doctor can ring any time of the day and the text with the time is an error! Absolutely ridiculous
+Practice response date: Edited a year ago
+Practice response:
+Dear Georgia, we apologies that the experience you have had with the practice has not been a positive one. We welcome any feedback from patients which will assist us to improve the services we deliver. The surgery endeavors to provide the best possible standard of care to all our patients and we will continue with regular monitoring and review to enable us to constantly improve the services we offer. If you wish to discuss your concerns further please contact the practice manager or practice supervisor who will be happy to assist.
+
+Author: Anna Haupt
+Date: 2 years ago
+Rating: 5 stars
+Thank you so much for your review
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your review
+
+Author: Joshua Hart
+Date: 2 years ago
+Rating: 1 star
+I found out that my test results were for someone else and I had to do it again in the next 2 years
+
+Author: Nicki Starr
+Date: 2 years ago
+Rating: 5 stars
+Nothing but a good experience with the Village. Thank you to all the staff, especially the lovely nurse practitioner. We have been with the Village for over 15 years and nearly anyways had an appointment when needed. Looked after my children well too. Thank you!
+
+Author: Moussa Abdoulaye
+Date: 2 years ago
+Rating: 5 stars
+The staff are respectful, friendly, attentive and I thank them infinitely for their impeccable work in helping our patients. God bless you
+
+Author: Mike scholey
+Date: 3 years ago
+Rating: 1 star
+12 days and still have not got through to make an appointment disgraceful services and rude staff
+
+Author: Callum Smith
+Date: 3 years ago
+Rating: 1 star
+What's the point of telling you and appointment time if it's a long time after that you actually get seen. People are walking out because they have been sat waiting so long....
+
+Author: Anthea Douglas
+Date: 3 years ago
+Rating: 4 stars
+I have found everyone at this practice friendly and helpful,from the receptionists to the practice nurses. Referrals to other sevices have come through in reasonable time.
+
+Author: Paul Matthews
+Date: 3 years ago
+Rating: 4 stars
+Great staff and always welcoming.
+
+Author: Anna Babyk
+Date: 3 years ago
+Rating: 5 stars
+Iv never had any problems everyone is very friendly Drs are good staff are always happy to help
+
+Author: Claire
+Date: 3 years ago
+Rating: 5 stars
+I can't praise this GP practice enough. Every member of staff I have ever spoken to is friendly, patient, empathetic and efficient. They must be under so much pressure, but they never let it show. There have been locum GPs for a while now, but I don't think that affects the quality of care at all.
+
+Author: lucy
+Date: 4 years ago
+Rating: 2 stars
+Didn’t even send my prescription to the pharmacy a week after my appointment, rang to ask why, said they had forgotten. This has happened a few times.
+
+Author: Chris Beverley
+Date: 4 years ago
+Rating: 1 star
+Just phoned up to ask i I could be seen as I have not yet been contacted for my 40 year check, I'm 42 in December, they gave me 17th June. Great I thought, telephone appointment, didn't know you could do bloods and cholesterol that way, need to find new doctors
+
+Author: Ryan Wild
+Date: 5 years ago
+Rating: 1 star
+Ryan Wild3 reviews5 years ago
+
+Author: Natasha Ana
+Date: 5 years ago
+Rating: 1 star
+Do not sign up to this doctors. Constantly new doctors, will not give me medication I need over the weekend so I'm going to be really ill. Horrible they don't care
+
+Author: Elvietqa
+Date: 6 years ago
+Rating: 1 star
+I'll never go there again.
+
+Author: Emma Price
+Date: 8 years ago
+Rating: 1 star
+Absolutely disgusting Drs Left my partner 3weeks before they would issue an appointment he got pneumonia Messed my daughter's asthma medication up an messed mine up
+
+Author: Louie Hamblett
+Date: 8 years ago
+Rating: 3 stars
+Decent Dr's, Nurses and Clinical Practitioners. Receptionists are a little slow to deal with enquiries and prescriptions are also slow to get to the Chemists.
+
+Author: Diane Thomas
+Date: 9 years ago
+Rating: 5 stars
+The doctor has been brilliant with my mum who is 88 can not fault the doctor at all

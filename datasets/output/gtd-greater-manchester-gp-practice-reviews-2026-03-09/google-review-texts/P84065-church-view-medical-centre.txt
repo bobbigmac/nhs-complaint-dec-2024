@@ -3,59 +3,294 @@ Canonical code: P84065
 Postcode: M9 4BE
 Google Maps title: Church View Medical Centre
 Google rating: 4.2
-Google review count: 34
-Google Maps URL: https://www.google.com/maps/place/Church+View+Medical+Centre/@53.512119,-2.2135924,17z/data=!4m8!3m7!1s0x487bb1004dde441b:0x75380141111736c6!8m2!3d53.512119!4d-2.2135924!9m1!1b1!16s%2Fg%2F11m6nd8gpc?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 35
+Google Maps URL: https://www.google.com/maps/place/Church+View+Medical+Centre/@53.5121222,-2.2161727,17z/data=!4m8!3m7!1s0x487bb1004dde441b:0x75380141111736c6!8m2!3d53.512119!4d-2.2135924!9m1!1b1!16s%2Fg%2F11m6nd8gpc?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 35
+Owner replies collected: 35
+Raw review responses captured: 4
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84065-church-view-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Terry Aldred
+Date: 6 days ago
+Rating: 5 stars
+Friendly and professional service
+Practice response date: 6 days ago
+Practice response:
+Thank you Terry, We’re thrilled to know you had such a positive experience.
 
 Author: Joseph Arthur
-Date: 3 days ago
+Date: 2 weeks ago
 Rating: 5 stars
+Thank you, Joseph, for the 5‑star rating! We really appreciate your support and are glad you had a positive experience
+Practice response date: a week ago
+Practice response:
 Thank you, Joseph, for the 5‑star rating! We really appreciate your support and are glad you had a positive experience
 
 Author: Paul Nixon
-Date: 4 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 Very good
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for your 5‑star review! We’re really glad to hear you had a very good experience. If you ever need anything, we’re always here to help.
 
 Author: Joy's Obes
-Date: a week ago
+Date: 2 weeks ago
 Rating: 4 stars
+Thank you, We really appreciate you taking the time to leave us some feedback. Glad to hear things went well overall.
+Practice response date: 2 weeks ago
+Practice response:
 Thank you, We really appreciate you taking the time to leave us some feedback. Glad to hear things went well overall.
 
 Author: Loredana Alina Stroe
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
+Thank you, We really appreciate you taking the time to share your rating. It’s great to hear things went well for you.
+Practice response date: 2 weeks ago
+Practice response:
 Thank you, We really appreciate you taking the time to share your rating. It’s great to hear things went well for you.
 
 Author: Rubens Sertage
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
+Thank you, We’re really glad to hear you had a great experience with us
+Practice response date: 2 weeks ago
+Practice response:
 Thank you, We’re really glad to hear you had a great experience with us
 
 Author: Lee Parker
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 New system for appointments works well IMO.
+Practice response date: 2 weeks ago
+Practice response:
+We’re really pleased to hear that you feel the new appointment system is working well. Just in case you weren’t aware — when you fill out the triage form, you can include your availability. Our triage team can then book appointments in advance if that’s what you prefer, helping us match you to the most convenient slot. Thanks again for your feedback and support :)
 
 Author: Mercy Igbineweka
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
+Thank you, We’re thrilled to know you had such a positive experience.
+Practice response date: 2 weeks ago
+Practice response:
 Thank you, We’re thrilled to know you had such a positive experience.
 
 Author: Ksgopi Gopi
-Date: a week ago
+Date: 2 weeks ago
 Rating: 4 stars
+thank you, We’re really glad to hear you had a positive experience with us.
+Practice response date: 2 weeks ago
+Practice response:
 thank you, We’re really glad to hear you had a positive experience with us.
 
 Author: Chris Donovan
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 I was very happy with the help and advice I received today.thank you very much.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you Chris, for your kind feedback. We’re so pleased to hear that you were happy with the help and advice you received today. Your comments are greatly appreciated and will be shared with the team. If you need anything else, we’re here to support you.
 
 Author: omosede precious
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 Thank you, We really appreciate you taking the time to share your support. We’re glad to know you’ve had a positive experience with us.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you, We really appreciate you taking the time to share your support. We’re glad to know you’ve had a positive experience with us.
+
+Author: Sandra Sullivan
+Date: 2 weeks ago
+Rating: 5 stars
+Seen Dr Nasim to gt all my results she explained them all that i understod
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for the lovely 5‑star review, We’re really glad to hear your appointment with Dr Nasim went well. It’s great to know she was able to go through all your results in a way that felt clear and easy to understand.
+
+Author: Titilope Ashamo
+Date: 2 weeks ago
+Rating: 5 stars
+Best reception service and Nurses are professional and friendly.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for the lovely 5‑star review. We’re really happy to hear you had such a great experience with our reception team and that our nurses made you feel well looked after. Your feedback means a lot to us. If you ever need anything, we’re always here to help :)
+
+Author: Saghir Hassan Hashmi
+Date: 2 weeks ago
+Rating: 4 stars
+We really appreciate you taking the time to leave us this lovely rating, thank you.
+Practice response date: 2 weeks ago
+Practice response:
+We really appreciate you taking the time to leave us this lovely rating, thank you.
+
+Author: Sue Sue
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you for your rating :)
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your rating :)
+
+Author: Howard Riley
+Date: 2 weeks ago
+Rating: 5 stars
+Excellent staff, excellent service.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for the wonderful 5‑star review! We really appreciate your kind words. It’s great to hear you’ve had such a positive experience with both our staff and the service we provide.
+
+Author: Irina Luciana Ene
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you for your 5‑star rating — we really appreciate it :)
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your 5‑star rating — we really appreciate it :)
+
+Author: Shelley Munday
+Date: 2 weeks ago
+Rating: 5 stars
+I have always been treated great by all staff and they are all friendly and helpful
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much, Shelley, for your lovely feedback. We’re really pleased to hear that you’ve always been treated well and have found our staff friendly and helpful. Your kind words mean a great deal to the whole team at Church View Medical Centre. If there’s ever anything more we can do for you, we’re always here to help.
+
+Author: Trudy Finney
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you so much for your 5‑star review. :)
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for your 5‑star review. :)
+
+Author: wilma greene
+Date: 2 weeks ago
+Rating: 4 stars
+I don't like the new system for booking appointments it takes to long filling in the form .and then you have to wait for someone to text you back with an appointment time...
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your feedback. We understand that the new appointment system can feel different and may take some getting used to. The change was introduced as part of a government‑mandated approach to ensure patients are triaged safely and directed to the most appropriate clinician. Once the online form is completed between 8am and 11am, our triage team usually responds very quickly — often within 5 minutes — with an appointment time or further advice. This system helps us manage demand more efficiently and ensures patients who need urgent care are prioritised. We appreciate you taking the time to share your thoughts, and your feedback will be passed on as we continue to improve the service.
+
+Author: Sarah Wainwright
+Date: 2 weeks ago
+Rating: 5 stars
+Receptionist are very professional and friendly the doctors and nurse are all friendly and polite and helpful and supportive too
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for your lovely feedback. We’re delighted to hear that you found our reception team, doctors, and nurses to be professional, friendly, and supportive. Your kind words mean a great deal to everyone at Church View Medical Centre, and we truly appreciate you taking the time to share your experience. If there’s ever anything more we can do for you, we’re always here to help.
+
+Author: maria tahir
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you for your 5‑star rating. We truly appreciate your support — it means a great deal to the whole team at Church View Medical Centre.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your 5‑star rating. We truly appreciate your support — it means a great deal to the whole team at Church View Medical Centre.
+
+Author: Simplisio mubani
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you so much for your 5‑star rating. We really appreciate you taking the time to share your support — it means a lot to the whole team at Church View Medical Centre.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you so much for your 5‑star rating. We really appreciate you taking the time to share your support — it means a lot to the whole team at Church View Medical Centre.
+
+Author: sam k
+Date: 2 weeks ago
+Rating: 5 stars
+A very good experience with church view medical centre. Dedicated staff and so empathetic in operations. Life saver 😁 …
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your rating :) We truly appreciate your kind words — and we’re glad we could be there when you needed us. 😊 …
+
+Author: Edward Kennedy
+Date: 2 weeks ago
+Rating: 5 stars
+Time very quick and friendly
+Practice response date: 2 weeks ago
+Practice response:
+Thank you Edward, for your 5‑star review. We’re really pleased to hear that you found the service quick and friendly. Your feedback is greatly appreciated and will be shared with the team. If you ever need anything in the future, we’re here to help.
+
+Author: Manchester
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you for your rating :)
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your rating :)
+
+Author: Roger Grimahaw
+Date: 2 weeks ago
+Rating: 5 stars
+Thank you for your 5‑star review Roger. We are always happy to help :)
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your 5‑star review Roger. We are always happy to help :)
+
+Author: Nicola G
+Date: 2 weeks ago
+Rating: 1 star
+The reception staff at Church View Medical are consistently rude and dismissive. As a result, I am leaving the practice.
+Practice response date: 2 weeks ago
+Practice response:
+Thank you for your feedback. We are sorry to hear about your experience with our reception team. Please be assured that your complaint is currently being investigated, and we will respond to you directly regarding the concerns you have raised.
+
+Author: m.waqas Latif
+Date: 3 weeks ago
+Rating: 1 star
+Worst GP My daughter got allergic reaction around the ear. First they tried to avoid us and referring us to pharmacist even we have tell them that it’s really bad reaction, however we went to pharmacist he said you need GP Appointment. After that GP gave appointment for next day meanwhile one day was wasted. Eventually doctor checked on Thursday and prescribed some medicine which was never received at pharmacy on that day we tried on next day as well but they haven’t send prescription to pharmacy. We called GP that why you are not sending it to pharmacy, they said we will send it by end of the day today but now pharmacy is closed for two days until Monday and my daughter is suffering just because their negligence
+Practice response date: 3 weeks ago
+Practice response:
+Thank you for your feedback. We are unable to discuss any individual patient or appointment details publicly on Google for confidentiality reasons. If you would like us to look into what happened, don't hesitate to contact the practice directly so we can review the triage process, check whether photos or information were received, and determine whether anything should have been handled differently. We take concerns about delays, prescriptions and communication seriously, and we would welcome the opportunity to investigate this fully and learn from your experience if there are lessons to be learned. Please get in touch with us at your earliest convenience so we can discuss this in more detail.
+
+Author: Kim Dunn
+Date: a month ago
+Rating: 5 stars
+Great team. Informative and accommodating.
+Practice response date: a month ago
+Practice response:
+Thank you very much for your kind feedback. We’re delighted to hear that you found our team informative and accommodating. Your comments are greatly appreciated and will be shared with the team. Thank you for taking the time to leave a review.
+
+Author: Christine JJ
+Date: 2 months ago
+Rating: 1 star
+Very bad place no helpful no care. Only 3min when you see gp as warehouse. My soon was very ill and they say is tired. Very bad .
+Practice response date: 2 months ago
+Practice response:
+dear patient, Thank you for sharing your feedback. We’re truly sorry to hear about your experience and that you felt your concerns were not addressed properly. If you wish, please contact the practice directly so we can discuss your situation in more detail and ensure your concerns are resolved. thank you
+
+Author: Yohan Youmbi
+Date: 3 months ago
+Rating: 1 star
+If I could I would give this GP 0 stars. I contacted the surgery to request a GP appointment so that my younger sister could be prescribed antibiotics. Normally booking by phone is the standard procedure but on this occasion I was told now I had to complete an online form in order to be seen. I filled out the form several times only to be told partway through that we should attend A&E for what simply flu-like symptoms. Not everyone has the time to sit in A&E for hours.Many of us work full time jobs and dont have the luxury to be waiting around doing nothing. I have had multiple negative experiences with this GP practice including situations involving family members who were unjustifiably removed from the patient list. I would not recommend this practice to anyone.
+Practice response date: 3 months ago
+Practice response:
+Dear Yohan, We understand your concerns and appreciate you taking the time to share them. The new online consultation system is a contractual requirement and is designed to improve patient safety. It helps ensure that symptoms are assessed appropriately and directs patients to the most suitable care setting—whether that’s a pharmacy, A&E, or in urgent cases, a 999 call. From your comments, it appears your sister’s symptoms were flagged as requiring A&E attendance. This means they were considered outside the scope of GP management and needed urgent assessment for safety reasons. We strongly advise against completing the form multiple times, as changing or re-entering symptoms can affect the accuracy of the clinical triage. We understand this process can feel inconvenient, but it is in place to prioritize patient safety and ensure timely care.
+
+Author: Rebeca Domenech
+Date: 4 months ago
+Rating: 1 star
+This has to be one of the worst GP clinics in North Manchester. There is absolutely no continuity of care at all. You see a different doctor almost every time, and getting an appointment with the same GP twice is nearly impossible, even when you try to book specifically for the days they’re working. Most of the doctors seem to be locums who come across as disinterested and cold. I’ve had recurring health issues for over two years that still haven’t been properly addressed. The appointment system is also appalling, this morning alone I had to call 11 times before I got through. I started at 8:00 a.m. on the dot, but didn’t get an answer until 8:26, only to be told that the GP who asked me to book a follow up had no appointments left. It’s honestly a joke and deeply concerning that this level of service is considered acceptable??? I can only imagine how many people are missing out on the care they need because of how poorly this practice is run!
+Practice response date: 4 months ago
+Practice response:
+Dear Rebeca, Thank you for your feedback, and we’re sorry to hear about your experience. We understand how important continuity of care and timely access to appointments are, and we appreciate the opportunity to clarify a few points that may help you make the most of our services: The NHS App allows you to view and book appointments with any of our GPs from 8am onwards. All available appointments for all GPs are listed online in real time. If you prefer, you’re welcome to visit the practice in person at 8am to book or attend an appointment. When calling us, please remember there’s no need to wait on hold – you can request a call back, and a member of our team will return your call as soon as possible. Our GPs are not locums – each has been a valued and permanent member of our practice for over three years. While some doctors work on specific days, this flexible scheduling helps us offer a broader range of appointment times to our patients. Thank you again for sharing your feedback — it helps us continue to improve our service for all our patients.
+
+Author: Anthony Pollitt
+Date: 5 months ago
+Rating: 1 star
+Trying to make an appointment to see the GP, really not straightforward. Advised by recorded message to book online, try that it just says no appointments available. Why can't they just bring back the pre covid open surgery when you just turn up 1st thing for an appointment? The system doesn't seem to work.
+Practice response date: 5 months ago
+Practice response:
+Hello Anthony, Thank you for sharing your experience — I’m sorry it’s been frustrating. Demand is very high and we know it can feel like a runaround when online slots show as unavailable. Here’s how to get help and why the system is set up this way: Our lines open at 8am for urgent and routine requests. If it’s clinically urgent, please say so to the care navigator so it can be prioritised. You can come to reception during opening hours. If you struggle with forms/online access, our team can help submit a request on your behalf. Submit a non‑urgent request during core hours (8:00–18:30). When safe capacity is reached for the day, further routine requests are added to a waiting list or advised to try the next day, in line with BMA safe working guidance. Pharmacists can manage a wide range of minor illnesses and, under Pharmacy First, some conditions can be treated without a GP appointment. Evening and weekend GP appointments are available locally via our PCN/federation. Reception can book you into these if appropriate. We explain all access routes, including urgent vs routine pathways and how we prioritise care. I am happy to explain why we can’t return to walk‑in/open surgery: Open surgery creates an “8am queue” at the practice and can lead to unsafe, untriaged queues with long waits. Clinical triage and care navigation let us match patients to the right clinician and timeframe, focusing same‑day capacity on those with the greatest clinical need. GP practices receive limited funding and have to balance high demand with safe staffing. Capping sessions and spreading capacity prevents burnout and helps maintain continuity and quality of care. This approach aligns with BMA safe working guidance and current NHS England access requirements.
+
+Author: Helen Harrernie
+Date: 11 months ago
+Rating: 5 stars
+Hello Helen, Thank you so much for your 5-star review! We're thrilled to know that you had a positive experience with us.
+Practice response date: 11 months ago
+Practice response:
+Hello Helen, Thank you so much for your 5-star review! We're thrilled to know that you had a positive experience with us.

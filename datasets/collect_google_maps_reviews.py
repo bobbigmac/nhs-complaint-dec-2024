@@ -292,6 +292,57 @@ def is_gtd_managed_row(row: dict[str, str]) -> bool:
     return normalize_name(str(row.get("management_company_name", ""))) == "gtd healthcare"
 
 
+BLOCKED_PLACE_TITLES = {
+    normalize_name("The Range Medical Centre"),
+    normalize_name("The Brooke Surgery"),
+}
+
+
+def is_blocked_place_title(title: str) -> bool:
+    return normalize_name(title) in BLOCKED_PLACE_TITLES
+
+
+def element_or_ancestor_mentions_sponsored(driver: webdriver.Firefox, element, max_levels: int = 5) -> bool:
+    try:
+        snippets = driver.execute_script(
+            """
+            const out = [];
+            let node = arguments[0];
+            const maxLevels = arguments[1];
+            for (let i = 0; node && i < maxLevels; i += 1, node = node.parentElement) {
+              out.push([
+                node.textContent || '',
+                node.getAttribute('aria-label') || '',
+                node.getAttribute('title') || '',
+              ].join(' '));
+            }
+            return out;
+            """,
+            element,
+            max_levels,
+        )
+    except Exception:
+        return False
+    for snippet in snippets or []:
+        if "sponsored" in normalize_name(str(snippet)):
+            return True
+    return False
+
+
+def page_has_sponsored_marker(driver: webdriver.Firefox) -> bool:
+    try:
+        candidates = driver.find_elements(By.XPATH, "//*[contains(normalize-space(.), 'Sponsored')]")
+    except Exception:
+        return False
+    for candidate in candidates[:25]:
+        try:
+            if candidate.is_displayed():
+                return True
+        except StaleElementReferenceException:
+            continue
+    return False
+
+
 def extract_overall_metrics(driver: webdriver.Firefox) -> tuple[str, float | None, int | None]:
     title = driver.title.removesuffix(" - Google Maps").strip()
     rating = None
@@ -411,6 +462,8 @@ def click_first_search_result(driver: webdriver.Firefox, wait: WebDriverWait) ->
         label = normalize_text(candidate.text or candidate.get_attribute("aria-label") or candidate.get_attribute("title") or "")
         if "/place/" not in href:
             continue
+        if is_blocked_place_title(label) or element_or_ancestor_mentions_sponsored(driver, candidate):
+            continue
         driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", candidate)
         time.sleep(0.5)
         try:
@@ -434,7 +487,7 @@ def google_page_kind(current_url: str) -> str:
     return "other"
 
 
-def open_reviews_panel(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
+def find_reviews_entrypoint_button(driver: webdriver.Firefox):
     for button in driver.find_elements(By.CSS_SELECTOR, "button"):
         try:
             label = normalize_text(button.get_attribute("aria-label") or "")
@@ -442,26 +495,48 @@ def open_reviews_panel(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
         except StaleElementReferenceException:
             continue
         if "More reviews" in label or text.startswith("More reviews"):
-            try:
-                button.click()
-                time.sleep(2)
-                return True
-            except StaleElementReferenceException:
-                continue
+            return button
     for button in driver.find_elements(By.CSS_SELECTOR, "button"):
         try:
             label = normalize_text(button.get_attribute("aria-label") or "")
         except StaleElementReferenceException:
             continue
         if label.startswith("Reviews for "):
-            try:
-                button.click()
-                time.sleep(2)
-                return True
-            except StaleElementReferenceException:
-                continue
+            return button
+    return None
+
+
+def has_visible_review_cards(driver: webdriver.Firefox) -> bool:
     try:
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.jftiEf")))
+        cards = driver.find_elements(By.CSS_SELECTOR, "div.jftiEf")
+    except Exception:
+        return False
+    for card in cards:
+        try:
+            if card.is_displayed():
+                return True
+        except StaleElementReferenceException:
+            continue
+    return False
+
+
+def reviews_entrypoint_present(driver: webdriver.Firefox) -> bool:
+    return find_reviews_entrypoint_button(driver) is not None or has_visible_review_cards(driver)
+
+
+def open_reviews_panel(driver: webdriver.Firefox, wait: WebDriverWait) -> bool:
+    button = find_reviews_entrypoint_button(driver)
+    if button is not None:
+        try:
+            button.click()
+            time.sleep(2)
+            return True
+        except StaleElementReferenceException:
+            pass
+    if has_visible_review_cards(driver):
+        return True
+    try:
+        WebDriverWait(driver, 2, poll_frequency=0.2).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.jftiEf")))
         return True
     except TimeoutException:
         return False
@@ -896,22 +971,38 @@ def scrape_place(
     if google_page_kind(driver.current_url) == "search":
         clicked_first_result = click_first_search_result(driver, wait)
         place_title, rating, review_count = extract_overall_metrics(driver)
-    reviews_opened = open_reviews_panel(driver, wait)
-    if not reviews_opened and google_page_kind(driver.current_url) == "search":
+    blocked_place_match = is_blocked_place_title(place_title)
+    sponsored_place_match = page_has_sponsored_marker(driver)
+    review_entrypoint_found = reviews_entrypoint_present(driver)
+    if blocked_place_match and google_page_kind(driver.current_url) == "search":
         clicked_first_result = click_first_search_result(driver, wait) or clicked_first_result
         place_title, rating, review_count = extract_overall_metrics(driver)
-        reviews_opened = open_reviews_panel(driver, wait)
+        blocked_place_match = is_blocked_place_title(place_title)
+        sponsored_place_match = page_has_sponsored_marker(driver)
+        review_entrypoint_found = reviews_entrypoint_present(driver)
+    reviews_opened = open_reviews_panel(driver, wait) if review_entrypoint_found else False
+    if not blocked_place_match and not sponsored_place_match and not reviews_opened and google_page_kind(driver.current_url) == "search":
+        clicked_first_result = click_first_search_result(driver, wait) or clicked_first_result
+        place_title, rating, review_count = extract_overall_metrics(driver)
+        blocked_place_match = is_blocked_place_title(place_title)
+        sponsored_place_match = page_has_sponsored_marker(driver)
+        review_entrypoint_found = reviews_entrypoint_present(driver)
+        reviews_opened = open_reviews_panel(driver, wait) if review_entrypoint_found else False
     reviews_sorted = False
     recent_reviews: list[dict[str, object]] = []
-    review_collection_mode = "visible_cards"
+    no_review_panel = google_page_kind(driver.current_url) == "place" and not blocked_place_match and not sponsored_place_match and not review_entrypoint_found
+    review_collection_mode = (
+        "blocked_place" if blocked_place_match else
+        ("sponsored_place" if sponsored_place_match else ("no_review_panel" if no_review_panel else "visible_cards"))
+    )
     full_reviews_attempted = False
     raw_review_capture_enabled = False
     raw_review_responses: list[dict[str, object]] = []
-    if capture_review_network:
+    if capture_review_network and not blocked_place_match and not sponsored_place_match and not no_review_panel:
         raw_review_capture_enabled = install_review_network_capture(driver)
         if raw_review_capture_enabled:
             clear_review_network_capture(driver)
-    if reviews_opened:
+    if reviews_opened and not blocked_place_match and not sponsored_place_match and not no_review_panel:
         reviews_sorted = sort_reviews_newest(driver)
         time.sleep(2)
         if full_reviews_requested:
@@ -927,8 +1018,14 @@ def scrape_place(
     current_url = driver.current_url
     page_kind = google_page_kind(current_url)
 
-    manual_review_required = page_kind != "place"
-    if manual_review_required:
+    manual_review_required = page_kind != "place" or blocked_place_match or sponsored_place_match
+    if blocked_place_match:
+        scan_status = "blocked_place_match"
+    elif sponsored_place_match:
+        scan_status = "sponsored_place_match"
+    elif no_review_panel:
+        scan_status = "ok_no_review_panel"
+    elif manual_review_required:
         scan_status = "manual_review_search_result_only"
     elif rating is None:
         scan_status = "no_rating_found"
@@ -951,6 +1048,9 @@ def scrape_place(
         "google_maps_url": current_url,
         "google_rating": rating,
         "google_review_count": review_count,
+        "blocked_place_match": blocked_place_match,
+        "sponsored_place_match": sponsored_place_match,
+        "reviews_entrypoint_found": review_entrypoint_found,
         "clicked_first_search_result": clicked_first_result,
         "page_kind": page_kind,
         "scan_status": scan_status,

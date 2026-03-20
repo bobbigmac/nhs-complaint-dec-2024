@@ -4,16 +4,31 @@ Postcode: SK7 4QR
 Google Maps title: Beech House Medical Practice Dr Salim & Partners
 Google rating: 3.3
 Google review count: 74
-Google Maps URL: https://www.google.com/maps/place/Beech+House+Medical+Practice+Dr+Salim+%26+Partners/@53.3794701,-2.1229663,17z/data=!4m12!1m2!2m1!1sBeech+House+Medical+Pract+SK7+4QR!3m8!1s0x487bb4ceef3f1b97:0xd4bd6b252a9d009a!8m2!3d53.3794701!4d-2.1182027!9m1!1b1!15sCiRCZWVjaCBIb3VzZSBNZWRpY2FsIFByYWN0aWNlIFNLNyA0UVKSAQZkb2N0b3LgAQA!16s%2Fg%2F1tdrdxzm?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Beech+House+Medical+Practice+Dr+Salim+%26+Partners/@53.3794701,-2.1229663,17z/data=!4m12!1m2!2m1!1sBeech+House+Medical+Pract+SK7+4QR!3m8!1s0x487bb4ceef3f1b97:0xd4bd6b252a9d009a!8m2!3d53.3794701!4d-2.1182027!9m1!1b1!15sCiRCZWVjaCBIb3VzZSBNZWRpY2FsIFByYWN0aWNlIFNLNyA0UVKSAQZkb2N0b3LgAQA!16s%2Fg%2F1tdrdxzm?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.4
+Review collection mode: full_feed
+Review cards collected: 74
+Owner replies collected: 1
+Raw review responses captured: 8
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88012-beech-house-medical-pract.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Dave Brez
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 I have been going to Beech House for over 40 years , things have changed a lot , but the Doctors Nurses and Staff are always 5 ⭐ I cannot thank them enough , The Daily stress they work under must be immense- Thank You 🙏 …
+
+Author: Tbc
+Date: 2 weeks ago
+Rating: 1 star
+Possibly the worst surgery in stockport. The receptionists are absolutely terrible,if you call they tell you to use the online form to book to see a doctor ,like everyone's got the Internet,and if you tell them you haven't got the Internet they basically talk like your lieing to them. So then after a few loud sighs just to make you feel like you've disturbed them from sleep,they say I'll fill out a online form for you but just this once. No! You will fill out a form everytime I need a doctor,they think they can make there own rules up,if i need a doctor you will be getting me one simple as that. These people are the most laziest people I've dealt with in a long time. Then once a online form has been filled out by them reluctantly, they email the doctors sat up stairs to then decide how important the case is and then get back to you with an appointment. If you dont use the Internet and decide to go in to book an appointment, your left giving your name ,date of birth ,address and potentially personal problem details infront of everyone sat in the waiting room ,surely this is a breach or gdpr rules in keeping information private. And in the light of all the fraud that goes on with identity theft, there are helping anyone that might be a criminal sat in the waiting room to put your details into there mobile. It needs sorting out and having a private area to speak and give details without the world knowing your business and personal identity. When you do get to see a doctor its hit and miss ,some are as lazy as the front staff and some are very good and helpful ,there is a female doctor topowski i think is her name ,absolutely great doctor and has time to actually listen to your problems and never rushes you. Some doctors you can tell there just there for the money ,they dont give a toss and want you out as soon as possible. On the plus side the two ladys that do the blood tests are great ,really bubbly people you can talk to them and they listen to you and make you feel happy. They need more down to earth people like the girls that take your blood theres nothing worst than being confronted with someone miserable when your ill and they are always smiling big plus points.There is no free parking for the doctors so you have to pay to be ill ,this isn't really a surgery problem but would be good if they took your registration number and if you were at doctors you could park for free and sort it out with the council ,but thats wishful thinking on my part. All in terrible experience and now I know why there rating is so bad. Avoid if possible, but if your desperate and I'll, you will probably feel worst after you have to deal with these lazy people.
+
+Author: Sam
+Date: a month ago
+Rating: 1 star
+The receptionists are very unhelpful and lack basic human sympathy. The form was not working but the they did not care one bit. On the contrary, the doctors are brilliant and deserve their praise.
 
 Author: Judy Barron
 Date: a month ago
@@ -21,14 +36,14 @@ Rating: 4 stars
 Judy BarronLocal Guide · 237 reviews · 251 photosa month ago
 
 Author: Debz G
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 Generations of our family have been at beech house. Great service from everyone from reception to drs and nurses, to referrals and pharmacists. Very clean building. Majority of doctors are friendly. Great rapport built up with staff over years. I've had a few issues with prescriptions but nothing that hasn't been rectified asap. Overall.service is great from everyone who works there.
 
 Author: Sinead Dempsey
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
-Sinead Dempsey2 months ago
+Sinead Dempsey3 months ago
 
 Author: mw
 Date: Edited 4 months ago
@@ -56,6 +71,319 @@ Rating: 1 star
 Absolute joke, staff are there to fill their faces behind the desk and want me to use online forms I can't access now to get my 3 year old an appointment. Apparently "it doesn't matter if I can do it now, just whenever I get online" maybe I care and want my son seen by a professional, something those answering the phone are not.
 
 Author: Megan Beaumont
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
 Ive been with Beech house for 20 years+ and I can honestly say I've never had a problem. Always get an appointment urgently if required and had family sent to mastercall if they are really busy and there are not any appointments available. The doctors, nurses and admin team are friendly and I think the online form system works really well as a patient.
+
+Author: Christine Burgoyne
+Date: 8 months ago
+Rating: 5 stars
+Brilliant surgery, everyone very kind and helpful. I contacted the surgery on Monday morning with rightsided pain seen straight away, referred to surgical assessment ward in stepping hill as the nurse diagnosed correctly an appendicitis and was in a bed on the ward by 6pm that evening. Came home yesterday and because of the quick treatment prevented it perforating. Would highly recommend this surgery.
+
+Author: Jack Kendall
+Date: 8 months ago
+Rating: 5 stars
+My wife Louise Kendall saw doctor Malik on Monday 23rd June.the doctor gave her a very good examination and did not rush the consultation. The doctor and reception staff were very all very helpful. Louise
+
+Author: Sobia Maqsood
+Date: 8 months ago
+Rating: 5 stars
+Sobia Maqsood8 months ago
+
+Author: Rachel Coope
+Date: a year ago
+Rating: 5 stars
+I have been attending this practice since I was a child and I've always had a positive experience. Receptionists, doctors and nurses are very friendly and make you feel at ease. When I fill in the online form, they always call me back quickly and find me an appointment. I never wait long in the waiting room. Overall, I am happy here and recommend it.
+
+Author: Sports Therapy Physio Rehab
+Date: a year ago
+Rating: 5 stars
+Sports Therapy Physio Rehab1 review · 1 photoa year ago
+
+Author: Michael Harris
+Date: a year ago
+Rating: 5 stars
+Excellent prompt service with the new system of appointments
+
+Author: Keri
+Date: a year ago
+Rating: 5 stars
+I've never been to such an excellent GP. The receptionists are competent, kind and cheerful. The doctors are compassionate and actually listen, then do all they can to resolve your problem. Had a smooth blood test with a lovely lady as well. I'm very glad to have such a good local GP surgery.
+
+Author: Phil Cave
+Date: a year ago
+Rating: 5 stars
+New online system for appointments is so much better. We needed to get my dad in to be checked and I’d assumed I’d have to call at 8am and take my chances. There is a bit of form filling but it’s worth it and easy now we’ve done it once. Dr Salim was great. Very thorough and listened.
+
+Author: Susan Maddox
+Date: a year ago
+Rating: 5 stars
+Phoned appointments at 9.15 am .telephone appointment. Dr rang 9.25am .prescription at 9.45 .Bloody fantastic .great service .thank you x
+
+Author: Nick Ashton
+Date: 2 years ago
+Rating: 5 stars
+You hear so many horror stories about medical practices but after 40 years I’m still pleased with the service here. Things sometimes go wrong but so rarely I can cope with it
+
+Author: Laura Rendina
+Date: 2 years ago
+Rating: 1 star
+I arranged for an afternoon telephone appointment, the receptionist told me the doctor would phone me back and you know what? The doctor never called me back! I waited five hours with my phone in hand for nothing. I tried to ring the receptionist at 18:08 to ask why I still hadn't received my telephone appointment and the receptionist telephone was logged out so I couldn't even contact the receptionist who may or may not have booked it for me. The clinic is supposed to close at 6:30pm and on their website I read that the receptionist phone is on till 6:45pm... Is this how this surgery treats it's patients?
+
+Author: Paul Howard
+Date: 2 years ago
+Rating: 5 stars
+Great practice. Very professional and organized. Managed to fit me in for bloods within 4days last place took 3 weeks.
+
+Author: Lee Kielty
+Date: 2 years ago
+Rating: 1 star
+Contacted the surgery and asked why I hadn’t been contacted by telephone from gp as all appointments had gone but I was classed as emergency. No phone call came and when I spoke to receptionist(Michelle) her manner tone and behaviour was a disgrace she even put the phone down on me. I fully intend to make an official complaint and take this further still haven’t seen a doctor. After 25 years at this surgery I will be leaving. BEECH HOUSE STANDARDS HAVE SLIPPED SO BADLY SINCE ALLAN,RILEY AND CO HAVE LEFT. DISGRACEFULL SHAMBLES
+
+Author: George G
+Date: 2 years ago
+Rating: 5 stars
+Never experienced anything but a quality service from all the staff at the practice. Fully recommended on the strength of my interactions. 👍 …
+
+Author: Deb Z
+Date: 2 years ago
+Rating: 5 stars
+Excellent staff all round. They go above and beyond for you. They will see you or your child asap and try and sort issues over the phone if possible. The doctors are lovely and will put you at ease and they will take time even if it means them going over their allocated time slots.
+
+Author: Katie Davies
+Date: 2 years ago
+Rating: 5 stars
+Katie Davies1 review2 years ago
+
+Author: Jo F
+Date: 2 years ago
+Rating: 5 stars
+Lovely surgery and the staff are always very understanding
+
+Author: Mark Heys
+Date: 3 years ago
+Rating: 5 stars
+Mark HeysLocal Guide · 40 reviews · 22 photos3 years ago
+
+Author: Leah Thackray
+Date: 3 years ago
+Rating: 1 star
+Attitude of the receptionists here is vile. Need to learn some manners. Speak to you like your stupid. When In fact there the stupid ones because half the time they don’t even know what there talking about or even doing.
+
+Author: Pauline Nield
+Date: 3 years ago
+Rating: 5 stars
+First class service today as always from Beech House. We are a three generation family who are very thankful to you all. Happy christmas all of you. X
+
+Author: Sally Hampson
+Date: 3 years ago
+Rating: 5 stars
+Great service
+
+Author: Faheem Ahmed
+Date: 3 years ago
+Rating: 1 star
+Worse ever surgery I had in my entire life, No way you can get an appointment, this surgery is a bad examples of poor NHS condition.
+
+Author: Alyson Finnegan
+Date: 3 years ago
+Rating: 1 star
+I have been a patient for 50 years and have always respected the demands upon doctors and staff. I booked an appointment with wells chemist for my covid booster. Since doing so I developed cold symptoms and wanted some advice. Phoned wells chemist 12 times but despite hanging on phone just cute off. Thought I would consult my surgery and answer phone told me they would only answer emergency calls. I am absolutely appalled as a 72 year old who can I turn to for a simple Conversation without going to 111.beech house you have let me down terribly
+
+Author: Andreea Aldea
+Date: 3 years ago
+Rating: 5 stars
+Andreea Aldea3 years ago
+
+Author: CERVmisc
+Date: 3 years ago
+Rating: 5 stars
+I was previously at Springfield in Hazel Grove who were awful. Misdiagnosis after misdiagnosis leading to grave illness, plus the receptionist’s jobs seemed to be to prevent you seeing a doctor. A story repeated by many Grove residents. However Beech House is the total opposite. I’ve stayed with them for ten years now. Competent GPs and the receptionists are really kind and want to help you. No medical practice is perfect, but this one is the best in the area and has the right attitude, especially when you’re suffering with chronic illness. I feel so much safer there than my previous practice.
+
+Author: Sophie
+Date: 3 years ago
+Rating: 5 stars
+Efficient, resourceful, polite and helpful. My experience of this practice has been in every way positive. THANKYOU
+
+Author: eddie evans
+Date: 3 years ago
+Rating: 1 star
+Phoned for an appointment. Was told I had been deregistered having not been for 5 years. Told I had to reregister in a process that can only be done online and takes 5 days, I could not book an appointment till this was completed. I wasn’t even asked what the problem was, I could have been a vulnerable person with a life threatening illness. Terrible
+
+Author: Daniel M
+Date: 3 years ago
+Rating: 5 stars
+Daniel M10 reviews · 7 photos3 years ago
+
+Author: Aaron 94
+Date: 4 years ago
+Rating: 5 stars
+Dr hull is amazing and the reception staff are very helpful
+
+Author: John Hyde
+Date: Edited 4 years ago
+Rating: 3 stars
+Hazel Grove not Stockport. Was my surgery from moving to Norbury Moor in 1986. They oversaw the births and aftercare of my children, take a keen interest in the person. No restrooms but there is a toilet.
+
+Author: Louise Hatton
+Date: 4 years ago
+Rating: 5 stars
+Excellent service and communication from all of the staff especially throughout the pandemic, the Doctors and nurses go above and beyond everytime my family and I need them
+
+Author: Harry Bell
+Date: 4 years ago
+Rating: 1 star
+Very bad Experience.
+
+Author: Paul Newsome
+Date: 5 years ago
+Rating: 1 star
+This could be the straw that breaks the camels back. Just been to my Chemist to collect my repeat prescription, only yo find out that Beech House has cancelled them! Absolutely fuming. On contacting Beech House, they tell me they have been cancelled because I need to have a review. When I told them this happened two months ago, they said they had been cancelled because the Doctor hadn't signed them off. I then told them the Doctor who did my review signed them whilst I was on the telephone to the Doctor and he then loaded the prescriptions onto the system. She had no answer to this. Again another tale of useless Administration at Beech House.
+
+Author: Sandra Wilkins
+Date: 5 years ago
+Rating: 1 star
+My husband telephoned the medical centre to make an appointment to see a doctor. He was given an appointment for 17th November at 8.25. When he arrived he was told that the appointment didn’t exist and there was no record of him phoning. What is happening at Beech House, who are they employing to just do a basic job like answering the phone!!!!!
+
+Author: Sarah Robinson
+Date: 5 years ago
+Rating: 5 stars
+Sarah Robinson7 reviews5 years ago
+
+Author: Mharab Choudhury
+Date: 5 years ago
+Rating: 5 stars
+Mharab ChoudhuryLocal Guide · 72 reviews · 35 photos5 years ago
+
+Author: Tim Haynes
+Date: 5 years ago
+Rating: 1 star
+I take it that you are not allowed to need a doctor on a Wednesday afternoon or to make an appointment
+
+Author: Best Man Stockport
+Date: 5 years ago
+Rating: 2 stars
+The lady must have thought I asked for an opinion,not an appointment. All I wanted was to make an appointment for an injection that takes two minutes and should have had six months ago! All I got was a grilling for five minutes and some personal advice that was unwanted or needed.Unfortunately a bit of power goes to some people's head.
+
+Author: Susan Morris
+Date: 6 years ago
+Rating: 5 stars
+Susan MorrisLocal Guide · 31 reviews · 1 photo6 years ago
+
+Author: Kazza Ingy
+Date: 6 years ago
+Rating: 1 star
+No suitable appointments on patient access, so tried to ring and book one instead. The phone rang out for 7 mins unanswered, when it was eventually answered, they hung up! Tried again & gave up after it rang out for 6 mins unanswered! Whilst I appreciate that you are a busy practice, to cut me off and leave the telephone unanswered for such a length of time is very unprofessional! It's not even a busy monday morning that I am trying to get through on!
+
+Author: Gareth Preston
+Date: Edited 6 years ago
+Rating: 1 star
+I used to recommend this place, but not any more. I think it's under new ownership / management. The NHS 111 number or the Google Search Engine would give you better medical advice.
+
+Author: Nigel Rudyard (NR)
+Date: 6 years ago
+Rating: 2 stars
+I was with the practice about a decade, and while I’d received good care from Dr Allen (now gone, along with Dr Levy) , I have often found it very hard getting an appointment; the nurse was very good too, but I always got the feeling several of the other doctors weren’t really that bothered about patient health and more concerned with getting through their (admittedly busy) schedules. In the end I ignored fairly serious illnesses because getting an appointment in any reasonable time frame (within a month) was becoming almost impossible.
+
+Author: Maxine Lee
+Date: 6 years ago
+Rating: 1 star
+Left this place a few years ago due to its complete incompetence. Could never get an appointment and then eventually would end up seeing a locum who was less than useless. Don't even get me started on some of the miserable rude receptionists.
+
+Author: R Smith
+Date: 6 years ago
+Rating: 5 stars
+I've been with this surgery over 15 years. It's staff are always helpful and professional. I can always get an appointment, they even offer phone appointments and out of hours appointments now which is brilliant. My doctor has been brilliant with me personally. I've taken information in to show her, asked her numerous questions and she's always taken the time to listen and answer. On top of that she's found me the best possible medication and I feel great. Highly recommend Beech House.
+
+Author: Dee Bailey
+Date: 7 years ago
+Rating: 5 stars
+I felt compelled to write a review after reading the negatives on here. I have always been extremely well looked after by Beech House - the Drs, Nurses & Admin team have always been there when I needed them, which in the last 12 years has, unfortunately, been often. I have had treatment for cancer and depression. Have run out of tablets (my fault) and they have made sure I had a prescription within a day. As long as I ring either at 8am or 1am to get an appointment - I have always got one on the same day. Yes by 8:30 the urgent ones are gone, but I know that and ring at 8 or try again at 1. I have ALWAYS been seen when I needed to. My daughter recently had an extremely high temp & looked very unwell (14) when she returned from school - I rang & they saw her that evening. I'm sure things go wrong - they are busy and only human (although Dr Salim is a hero to me & quite frankly has kept me alive and sane!) and on the very odd occasion, out of the hundreds I have probably contacted them, I have dealt with a blunt or brusque receptionist, but in their defence they have to fend off hundreds of calls from people who should take a paracetamol and go to bed! I would say to anyone checking these reviews, go and check the practice out for yourself - bear in mind that we are far more likely to go online and complain than we are to praise.
+
+Author: Carol Hatton
+Date: 7 years ago
+Rating: 1 star
+I left this surgery a few years ago because of the problems everyone else has mentioned. Today my friend who has TERMINAL LUNG CANCER was told by the receptionist that he doesn't need a sick note while he is having his Chemo . She said can't you carry on working while having your treatment? He has no immunity at the moment. I wanted to cry for him when he told me . Beech House put your house in order and take responsibility for your rude reception staff.
+
+Author: Nick Shaw
+Date: 7 years ago
+Rating: 1 star
+Shambolic, again. I have just spent some considerable time getting to my morning appointment to be told that the appointment did not appear to have been noted on screen. This despite me speaking at length to the receptionist 2 weeks ago and subsequently making this appointment. This is the same practice mind you that rang me a few months ago to discuss my blood and urine test results when I hadn’t had any tests done. They’d put someone else’s information on my record. Your life in their hands eh?! Posted by Janet Shaw
+
+Author: Sarah P
+Date: 7 years ago
+Rating: 1 star
+This surgery is going downhill fast..no communication between Dr's. One Dr says one thing and then you see another on he next visit and they say something completely different....get a grip beech house
+
+Author: Chris Wall
+Date: 7 years ago
+Rating: 1 star
+This surgery is a shambles. My girlfriend has been trying to get an appointment for a chest infection for 3 days now, only to constantly be told "phone back tomorrow/in the afternoon" surely the whole point of a doctors surgery is to actually see patients? We will be transferring to a surgery that actually seems to care about patient health.
+
+Author: Sir Terry John Denton
+Date: 7 years ago
+Rating: 2 stars
+The time is 12.45 and the phone has been ringing for the last ten mins no answer. Wanted to get a prescription wrongly issues replaced. Things are getting better I am told and this may be the case.
+
+Author: Kirsty Coffey
+Date: Edited 7 years ago
+Rating: 5 stars
+Dr Woodword and midwife Julie Jones are so friendly and understanding
+
+Author: Terry Denton
+Date: Edited 8 years ago
+Rating: 3 stars
+The waiting room is rather run down and looks as if the decor was designed in the eighties. The electronics have been out of order for at least 6 months. On my last visit I reported 3 things that I wanted advice on. I was informed that the 10 min allocated to me ended before the doctor had time to advise and I was asked to make another appointment. This system is most unfriendly and time wasting for doctor and patient. I think more money should be found to upgrade the practice and bring in full time doctors and staff. I hope my comments have been fair and will help in bringing the practice into the 21st century.
+
+Author: Cats Paws Pet Grooming
+Date: 8 years ago
+Rating: 2 stars
+Has been my GPs since I was little, never used to have a problem until I developed mental health issues and had to be seen more often. The doctors have no idea what to do with mental health except shove you on tablets that don’t work, and don’t even try to help. The nurse practitioner was rude and made me even more anxious than I was already. The older receptionists are rude and talk down to you (dealt with a younger one once who was nice) but I used to leave crying because of how they spoke to me :( I hated ringing for an appointment because of the rude way they talked, I now have a phobia of doctors receptionists and waiting rooms because of them. I’ve changed GPs now and everyone is lovely, but I’m still terrified of going incase anyone is like the staff at beech house :( I did see a younger female doctor once for a meds review and she was lovely and kind. And the actual nurses are kind, I’ve only ever seen young ones though. Seems the older generation of staff need to learn how to be polite and kind like the younger ones!
+
+Author: James Pettecrew
+Date: 8 years ago
+Rating: 5 stars
+James PettecrewLocal Guide · 73 reviews · 251 photos8 years ago
+
+Author: Stu Haslam
+Date: 8 years ago
+Rating: 1 star
+The reception staff are rude and I am always made to feel stupid and as if I am lying about my issues and reasons why I need to see the doctor, not to mention the treatment I had from the female doctor I saw, Dr salim I think she was horrible and made me feel like she didn't believe that I had anything wrong with me, I've an issue with food and at the moment I am really struggling to put on the weight I need to get healthy again. Her answer was that I should just eat little and often basically to pull myself together when I left I felt so angry and ridiculous that I have put off going to see the doctor since and have ended up with pneumonia as a result
+Practice response date: 7 years ago
+Practice response:
+Sorry to read this, unfortunately I have not received a complaint into the practice. I have however been able to do some preliminary investigations and note you have never seen Dr Salim. In order to be able to have a look into this further it would help if complaints could be given direct to the practice so that we can resolve matters permanently thus ensuring it doesn't happen again. Regards Paula Trow - Practice Manager.
+
+Author: mark kelly
+Date: 8 years ago
+Rating: 1 star
+You have to be diagnosed by the receptionist first and she will ask personal questions in the public waiting room, very condescending and rude. Doctors more worried about patient management than patient care
+
+Author: SHAUNNA DAVENPORT
+Date: 8 years ago
+Rating: 1 star
+I have been at this surgery since I was around six years old, Dr Allan was my family doctor and since he is no longer there it has declined in terms of quality of care, the receptionist staff and ones that answer the phone for appointments are rude and make you feel very uncomfortable, their attitude is disrespectful and unacceptable for people who are trying to book appointments due to ill health and should be retrained in how to speak to another human being. I will be leaving this surgery as soon as possible and advise others to do the same.
+
+Author: Pauline O'donnell
+Date: 9 years ago
+Rating: 5 stars
+Brilliant practice I have always come away feeling confident that my problem has been saved and taken car of....The doctors nurses and medical staff are a awesome team and feel privileged to call them my medical practice...well done to a well run surgery.
+
+Author: Kathryn Hughes
+Date: 9 years ago
+Rating: 4 stars
+Can I just say I have always been able to see a doctor if I have needed to. I have on occasion had to wait, but if you are ill you won't mind. Contrary to what some patients have posted, I have always found the doctor's to be very caring and professional. Dr Williams and Dr Gallagher are a credit to the practice.
+
+Author: freakfire99
+Date: 9 years ago
+Rating: 2 stars
+Near-impossible to get an appointment. Useless
+
+Author: Emily D
+Date: 10 years ago
+Rating: 1 star
+I have been a member of Beech House MP since I was around five years old. I have visited this surgery a number of times throughout the recent years due to a lifelong medical condition. I have never had any trouble and have always been pleased with the level of service I have received. Recently I had an experience with Dr Salim in which I was left feelings extremely disappointed. Her overall attitude was appalling and completely unacceptable. I have not felt this disheartened in a long while. I would have thought that due to the nature of my case she would have shown a little more empathy towards my situation, however this is something she obviously doesn't have much experience in. Due to this bad experience I am now going to look into switching GP's, something which I never thought I would have to do. It is a shame that one person has took it upon herself to tarnish the reputation of a lovely little doctors surgery.
+
+Author: TERRY DENTON
+Date: 10 years ago
+Rating: 2 stars
+Was unable to get through at 8-9 0'clock this morning so at 10 o'clock I was told to ring up again at 1.15 but was warned I may not be able to get through due to everyone wanting to make an appointment for this week will also be calling at that time to make an appointment. This system seems to the layman crazy but for the educated must be a logical solution for a practice with to few staff and to many patients It will be a sad day when Dr Allan retires but the practice must move on into the 20th century.

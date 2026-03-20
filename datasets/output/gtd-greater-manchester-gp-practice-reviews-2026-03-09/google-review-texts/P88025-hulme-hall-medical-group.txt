@@ -4,11 +4,16 @@ Postcode: SK8 6LU
 Google Maps title: Dr A M Shipston - Hulme Hall Medical Group Cheadle Hulme
 Google rating: 3.1
 Google review count: 13
-Google Maps URL: https://www.google.com/maps/place/Dr+A+M+Shipston+-+Hulme+Hall+Medical+Group+Cheadle+Hulme/@53.361567,-2.2034334,15z/data=!4m12!1m2!2m1!1sHulme+Hall+Medical+Group+SK8+6LU!3m8!1s0x487a4cd26ad1f987:0x7a88711442297b92!8m2!3d53.3665075!4d-2.1913517!9m1!1b1!15sCiBIdWxtZSBIYWxsIE1lZGljYWwgR3JvdXAgU0s4IDZMVZIBBmRvY3RvcuABAA!16s%2Fg%2F11bzsz_7yg?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+A+M+Shipston+-+Hulme+Hall+Medical+Group+Cheadle+Hulme/@53.3972037,-2.4069526,12z/data=!4m12!1m2!2m1!1sHulme+Hall+Medical+Group+SK8+6LU!3m8!1s0x487a4cd26ad1f987:0x7a88711442297b92!8m2!3d53.3665075!4d-2.1913517!9m1!1b1!15sCiBIdWxtZSBIYWxsIE1lZGljYWwgR3JvdXAgU0s4IDZMVZIBBmRvY3RvcuABAA!16s%2Fg%2F11bzsz_7yg?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.286
+Review collection mode: full_feed
+Review cards collected: 13
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88025-hulme-hall-medical-group.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Danielle Ashcroft
 Date: a year ago
@@ -53,9 +58,24 @@ Just had a receptionist constantly being condescending and passive aggressive wh
 Author: Tshirt Tie
 Date: 5 years ago
 Rating: 5 stars
-Tshirt TieLocal Guide · 181 reviews · 49 photos5 years ago
+Tshirt TieLocal Guide · 182 reviews · 49 photos5 years ago
 
 Author: Dawn Zowie Cullen
 Date: 6 years ago
 Rating: 4 stars
 Dawn Zowie Cullen2 reviews · 1 photo6 years ago
+
+Author: Margaret Baimbridge
+Date: 6 years ago
+Rating: 5 stars
+Been a patient at this practice since 1989 Wonderful doctors and reception staff - never had any problems
+
+Author: Ellie Bagshaw
+Date: 7 years ago
+Rating: 1 star
+Receptionist is so so rude. Really patronising and argumentative when trying to book an appointment/get help, a shame as the doctors are really good- need to get rid of receptionist!! Can't even answer the phone unless its been ringing for over 2 minutes
+
+Author: f C
+Date: 7 years ago
+Rating: 1 star
+There should be an option to give zero stars. The attitudes of the receptionists (or at least the ones I have had the displeasure of speaking to) are vile. Straight off the bat they are the most unhelpful, argumentative, and antagonising people, I have ever come into contact with. Not to mention the ridiculous wait times on even answering the phone!

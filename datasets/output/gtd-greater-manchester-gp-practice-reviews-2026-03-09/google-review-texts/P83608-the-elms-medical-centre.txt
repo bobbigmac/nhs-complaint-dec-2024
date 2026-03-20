@@ -4,19 +4,24 @@ Postcode: M45 7FD
 Google Maps title: The Elms Medical Centre
 Google rating: 2.9
 Google review count: 91
-Google Maps URL: https://www.google.com/maps/place/The+Elms+Medical+Centre/@53.5532242,-2.2952154,17z/data=!4m8!3m7!1s0x487ba542dda4771d:0xa01abd9c34557e0c!8m2!3d53.5532242!4d-2.2952154!9m1!1b1!16s%2Fg%2F1hc61chrn?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Elms+Medical+Centre/@53.5532274,-2.2977957,17z/data=!4m8!3m7!1s0x487ba542dda4771d:0xa01abd9c34557e0c!8m2!3d53.5532242!4d-2.2952154!9m1!1b1!16s%2Fg%2F1hc61chrn?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 91
+Owner replies collected: 0
+Raw review responses captured: 10
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P83608-the-elms-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Kabita Parajuli
-Date: Edited 2 weeks ago
+Date: Edited a month ago
 Rating: 5 stars
 Reception and staff all genuinely and consistently try to be helpful, and the junior doctors are consistently very helpful and proactive — thank you!!
 
 Author: DAVID STONEFIELD
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
 I am very pleased by the prompt responses to my requests for an appointment. I get face to face and telephone appointments quickly and I am very happy with the attention I receive. I got a call from Dr. Andrew today who gave me good and helpful advice.
 
@@ -31,7 +36,7 @@ Rating: 5 stars
 I would just like the opportunity to highlight the quality service provision at the Elms Medical Practice. I recently attended the practice for a follow up appointment. As always the receptionist is your first point of contact. The two ladies in question were so friendly and offered some of the best customer service I've been offered. The quality of the service provision didn't stop there. I was actually offered a consultation with one of the doctors the following day to talk through my individual situation. The team then put together a plan for me going forward to undertake further blood tests etc. I feel so lucky to have such a special team of first class professionals on hand in Whitefield. Not only offering 5 star customer service but also providing the best medical advice to all their patients. Thank you to all the members of the team.👍😁
 
 Author: dana Ziad
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
 All GPs are good except one called Andrew he is the most annoying and unprofessional I have ever seen, my son has special needs and he can’t stay still he treated him like an animal. Hopefully I will make an official complaint about him !!!
 
@@ -41,21 +46,426 @@ Rating: 5 stars
 I am so pleased with Dr Sarfraz and everybody at THE ELMS they go out of their way to help me and my husband Michael with numerous health problems Thank you
 
 Author: scott phelan
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 Absolute sick of this practice been with them over 10 years been trying to get appointments for over a month now for a major concern in my health keep getting told there’s no appointments this practice does not care about patients at all time to go else where
 
 Author: Christopher Jm
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
 I was able, via the NHS app, to get a next-day, face-to-face appointment with Dr A. Ahmed, whom I saw today regarding a recent letter from my neurologist. I was so impressed with her attentiveness and empathy, and I will be following through on her open-minded advice regarding the best way forward in diagnosing and treating my condition. I think it's important to acknowledge the general progress being made at the Elms Medical Centre. There is a good team in place. I want also to thank the reception staff, who have been supportive and helpful . I'm sure it isn't always an easy job.
 
 Author: Yasin Soltani
-Date: 7 months ago
+Date: 8 months ago
 Rating: 1 star
 I’ve been trying to book an appointment with this GP surgery, but it’s been very frustrating. I waited over 30 minutes on the phone today, and when someone finally answered, they just told me to call back tomorrow — without offering to book an appointment for another day. This is not the first time. Previously, I was told to send an email, even though booking by email isn’t an option. They just keep pushing patients to “call again tomorrow” with no real support or concern. It feels like they don’t care about the patients at all. Very disappointing
 
 Author: Elizabeth Evans
-Date: 8 months ago
+Date: 9 months ago
 Rating: 5 stars
 My family has been with the surgery since it opened in the 80s. Dr Noone expertly navigated the Medical anomalies of my Dad and now Dr Sarfraz and her team are skillfully dealing with these medical quirks I have unfortunately inherited. In 2023 I was very poorly with AF and Heart failure and the medication designed to deal with problematic heart beats actually appear to exacerbate these with me. For the last 18 months Dr Sarfraz and the Elms have patiently and professionally supported me, navigating me through what in my case is a .minefield of problems. They listen to what I say to them and worked with me to bring me back to a place of good health. Huge shout out and thank you
+
+Author: F. F.
+Date: 9 months ago
+Rating: 5 stars
+Im 42 years old and I've been a patient at elms for 13 years along side my husband and 11 year old daughter. I can honestly say I've appreciated every appointment and support my family and I have recieved over these years. I've always felt listened to and I have been respected as a patient knowing my own body. Telephone consultations are easy to book via the app and the other day I phoned the surgery at 8.30am needing a face to face and recieved one the same day in the afternoon. Reception staff are very helpful. I feel really lucky having a great G.P surgery so close to me and my family x
+
+Author: Steven Francis Parkinson
+Date: 11 months ago
+Rating: 5 stars
+Would like to thank the practice staff for their thoroughness and efficiency, especially the practice nurses and nurse practitioner
+
+Author: Tracy Lomas
+Date: a year ago
+Rating: 1 star
+Trying to get an appointment is horrendous...phone in the morning at 8.am I turned up at 8 am and the next available appointment was 10.40 😡 …
+
+Author: Ekaterina Voronova
+Date: a year ago
+Rating: 5 stars
+I would like to express my gratitude to all the staff of The Elms Medical Center for their excellent work and attentive service, but I would especially like to thank Dr. A. Ahmed, who immediately made the correct diagnosis, which was later confirmed, carefully studied the entire medical history and recommendations of colleagues from other countries and prescribed treatment. My health began to recover. Thank you, Dr. Ahmed! The profession of a doctor is a Calling and you are doing it very well!
+
+Author: Zara Shad
+Date: a year ago
+Rating: 5 stars
+All the staff are kind and efficient. Especially Dr. Shmila Serfiraz is a very professional and experienced doctor. :)
+
+Author: Jenny Harrison
+Date: a year ago
+Rating: 5 stars
+My 90 year old mother has always received exceptional treatment at Elms Medical Centre, especially from Dr Sarfraz. The nursing and reception staff are also very pleasant and courteous, going out of their way to be helpful.
+
+Author: Liz
+Date: a year ago
+Rating: 5 stars
+One of the better GP practices I’ve had. The admin staff are great- always help where they can and just a lovely bunch. Easy enough to book appointments and any issues sorted quickly. Clinical staff are fab- especially Tracy and Lauren have been amazing, genuinely interested in their patients wellbeing.
+
+Author: Anastasios Lekkas
+Date: a year ago
+Rating: 4 stars
+Me and my husband were both very lucky to get an appointment with Dr. Sarfar as it's can be difficult to see the main doctor in the practice. I have been with this surgery since inception, Dr Sarfar was extremely pleasant and helped us with our medical conditions. Nothing was too much trouble for her and just to mention the young receptionist lady was very pleasant and made us feel at ease and very comfortable. Also the staff are really understanding as to meet your needs and triage you on how urgent you need medical attention. Mrs Carmel and Anastasios Lekkas
+
+Author: Ava Crinion
+Date: a year ago
+Rating: 5 stars
+The women over the phone was happy to help, I didn’t feel judged over telling her my symptoms. Top professionalism.
+
+Author: Lauren Bee
+Date: a year ago
+Rating: 5 stars
+I am a registered nurse and also a patient of this practice (I do not work at this GP practice). I have found them to be nothing short of exceptional in their standards of care. This has included postpartum care for my newborn, mental health support, physical health management and pain management. I have seen a variety of health professionals including GPs, physicians associates and nursing prescribers all of which are professional, helpful and caring. The reception staff at this practice are very helpful and always do their best to get you the quickest appointment they can. They are never rude and are all really lovely. Very greatful to have such a fabulous NHS GP practice local to me.
+
+Author: Gemma Brooks
+Date: a year ago
+Rating: 5 stars
+Thank you elms medical I no how hard it is to keep everyone happy with limited resources
+
+Author: Sara Bokhari
+Date: 2 years ago
+Rating: 5 stars
+Doctor Sarfraz is very helpful I highly recommend this surgery
+
+Author: Dirk McGurt
+Date: 2 years ago
+Rating: 1 star
+Never appointments even when you ring at 8am on the dot for consecutive days. No wonder accident and emergency is full of non emergencies with a shambles of a practice like this
+
+Author: Gloria Levene
+Date: 2 years ago
+Rating: 5 stars
+Understanding and helpful receptionists, every time I call .Always patient despite doing a very difficult job .The medical team ,doctors and nurses are wonderful .The Elms medical centre is an excellent practice .Recommended.
+
+Author: Daniel Hall
+Date: 2 years ago
+Rating: 1 star
+To begin with, I think it's important to acknowledge how the clinic has improved in recent years. The introduction of an automated call queue process, the arrival of some kind & proficient administrative team members, and some integration …
+
+Author: MaP
+Date: 2 years ago
+Rating: 1 star
+Rang at 8am, was already 12th in the queue somehow. Then I dropped out of the queue somehow and had to re-ring. Finally got a phone appointment because no face to face. Was told I'd get a call before 12pm, no one rang. Because I don't have …
+
+Author: Margaret Robertson
+Date: 2 years ago
+Rating: 5 stars
+The receptionist could not have been more helpful and the doctor was.ill woking from home was wonderful it was like having a examination in front of her.thank you everyone
+
+Author: Simone Dowling
+Date: 2 years ago
+Rating: 5 stars
+Always had excellent service. Reception staff helpful and doctors thorough and professional.
+
+Author: C Williams
+Date: 2 years ago
+Rating: 5 stars
+C Williams3 reviews2 years ago
+
+Author: Irene Bulut
+Date: 2 years ago
+Rating: 5 stars
+Doctors are lovely and receptionist are helpful Speak the people the way you want to be spoken to
+
+Author: Daniel Hall
+Date: 2 years ago
+Rating: 1 star
+To begin with, I think it's important to acknowledge how the clinic has improved in recent years. The introduction of an automated call queue process, the arrival of some kind & proficient administrative team members, and some integration with the app, Patient Access, have been changes for the better. But that being said, improvements from 'abysmal' to just 'very poor' should not be tolerated from our public services. Booking an appointment in advance is impossible, forcing clients to sit in a phone queue to see if there are any same day appointments as the only means of getting an appointment is a disgrace, seeing the same Doctor even in follow up to tests and referrals made by them is not possible (you have to go through the same day lottery), and, whilst some of the administrative team are kind, professional, and helpful, I'm sorry to say that some of them can only be described as vindictive; treating patients with nothing short of contempt. For this clinic to reach the lowest standards of adequacy, an in-depth culture review and improvement plan needs to be implemented, and the process for scheduling appointments needs to be overhauled so that patients have even some choice and flexibility to contact the clinic in a way that suits them. I know it's not always possible, but if you have any other option, choose a different clinic: The Elms Medical Centre is nothing short of disgraceful.
+
+Author: MaP
+Date: 2 years ago
+Rating: 1 star
+Rang at 8am, was already 12th in the queue somehow. Then I dropped out of the queue somehow and had to re-ring. Finally got a phone appointment because no face to face. Was told I'd get a call before 12pm, no one rang. Because I don't have all day to sit by the phone I went out to do jobs and missed a call at 12.45pm. Then I was told I'd have to ring again the next day and repeat the same pointless exercise.
+
+Author: Rachel laura waters
+Date: 2 years ago
+Rating: 1 star
+Absolulte shocking service, can never get through via phone nevermind an appointment, tried to get my child an appointment last minute to be told there's no appointments left and only 1 doctor in, bearing in mind there was only 1 person waiting to be seen. I was then told to go to the walk on centre. What's the point of tlhavimg you gp when they just palm you off to a&e or the walk in centre.
+
+Author: Oliver First
+Date: 2 years ago
+Rating: 2 stars
+Wanted to add these comments to help others. Tried to book a blood test, was told the next available one was maybe 4 weeks away. I knew from previous experience that there was a weekend service at Prestwich for blood tests, so I asked if this was possible. I was told there were appointments available, with only a one week wait. 1. Ask about weekend appointments for bloods to be seen sooner (as you may not be told about them). When I went for my weekend blood test at Fairfax in Prestwich, I was asked if I had brought my labels with. I had not, as nobody had told me I needed to pick up labels from my surgery. I was told that I could therefore not have the blood test. 2. If you go for a weekend blood test at another surgery, make sure to ask for and pick up your labels (or check if they are needed). Seems ridiculous that the NHS is under such pressure and yet an appointment was needlessly wasted. Not sure how much this is a case of Fairfax being unreasonable, or a lack of due care from Elms receptionists. Peace. Oli.
+
+Author: Olivia Smith
+Date: 2 years ago
+Rating: 1 star
+Appalling communication (Did not tell me I had a positive blood test result), rude reception staff, a dangerous clinic.
+
+Author: Jim Raynor
+Date: 2 years ago
+Rating: 2 stars
+I think its unfair to rate this place a 1 star because the doctors and nurses have always been great. Never had any issue with them. However like many of the other low rated reviews the reception staff are an absolute disgrace. Rude and uncaring. If you miss the 7:45 - 8:15 window then, bad luck because you will not be seen. However when you do get through, you are told by reception "no you can have a phone call instead".
+
+Author: Gill 234
+Date: 2 years ago
+Rating: 3 stars
+Gill 2341 review2 years ago
+
+Author: Sole Knight
+Date: 2 years ago
+Rating: 5 stars
+I have been with the Elms for decades now, and seen it go through many changes. The doctors and nurses I have seen have always been excellent and never once let me down. My current GP, Dr Sarfraz, even chased me over the phone for a review to see how I was getting on. First class and thorough. Although there have been one or two instances of poor customer care from receptionist staff in the past, currently they appear to be professional and courteous. It may take time to get appointments/prescriptions, but this is the case in most places now and I am just grateful to have a practice I can trust.
+
+Author: lucy w
+Date: 2 years ago
+Rating: 1 star
+lucy w2 years ago
+
+Author: Attia Kidwai-ali
+Date: 3 years ago
+Rating: 5 stars
+The doctors at this practice are so professional. Doctor sarfraz was so professional and understanding with my issue. She showed empathy and understanding which so important when you feel vulnerable. Thanks
+
+Author: Amira Babiker
+Date: 3 years ago
+Rating: 5 stars
+Amira Babiker3 years ago
+
+Author: Khalid Yassin
+Date: 3 years ago
+Rating: 5 stars
+Very good practice, excellent care
+
+Author: Inspector Gadget
+Date: 3 years ago
+Rating: 5 stars
+Doctors are very good, very thorough and professional. Do tor Sarfaraz is especially kind and helpful when you need it.
+
+Author: Simon Rana
+Date: 3 years ago
+Rating: 5 stars
+Simon RanaLocal Guide · 61 reviews · 20 photos3 years ago
+
+Author: C Patel
+Date: 3 years ago
+Rating: 5 stars
+Very busy surgery doing their absolute best to help as many as possible.. lovely staff, all v helpful!
+
+Author: Diane
+Date: 3 years ago
+Rating: 5 stars
+I would like to thank Dr safrza for all her help
+
+Author: Amos De Roover
+Date: 3 years ago
+Rating: 1 star
+Utterly disgusting Obnoxious unhelpful staff, I think they would rather see me drop than get an appointment or a telephone consulation with the GP - Never see the same GP twice
+
+Author: Wesley Derbyshire
+Date: 3 years ago
+Rating: 5 stars
+So busy all the time but still find the time to look after patients and guide them in the right even when fully booked. Well done team 😊👏🏽👏🏽👏🏽 …
+
+Author: Margarette Walker
+Date: 3 years ago
+Rating: 1 star
+Margarette Walker3 years ago
+
+Author: Tamika Gordon
+Date: 3 years ago
+Rating: 5 stars
+Wonderful surgery always supportive and helpful. Emails responded to quickly and lovely staff and very helpful secretary and caring doctors:)
+
+Author: Rosie Fallows
+Date: Edited 3 years ago
+Rating: 1 star
+Worst surgery i have ever been with. Receptionists are rude and uncaring. The new ask my gp service is disgraceful. As soon as this covid has calmed down I am moving myself and my family to a different practice as I honestly am scared for me and my families health in the future as they do nothing about problems I have been having and dont seem to care in the slightest. New update, now have no maternity service, have had me calling bogus numbers. Now concerned I'm going to receive no prenatal care at all and again no care what so ever from the staff. Place should be demolished, complete waste of nhs money.
+
+Author: Natalie Vanessa
+Date: 3 years ago
+Rating: 1 star
+Natalie Vanessa1 review3 years ago
+
+Author: Declan Stables
+Date: 3 years ago
+Rating: 1 star
+Didn’t let me have my vaccine 4 days early, lost 2 grand because I booked holiday
+
+Author: Ellie Morris
+Date: Edited 3 years ago
+Rating: 1 star
+The doctors and nurses themselves are wonderful, but the receptionists (with the exclusion of a couple) are awful. They act like you’re asking for something that’s such a nuisance, when all you want is to check a prescription. The fact the ask my gp service is only open for 30 minutes in the morning (7:45-8:15) is an absolute joke. Not everyone is awake then, or can’t get online (taking kids to school) if you miss the cut off and try to ring them instead they say they can’t help and to try ask my GP The next day. They say don’t ask for a prescription online, but the sign in reception says don’t ring up for a prescription either. Are we all supposed to walk up to the practice every time we need a prescription? Not exactly reducing the number of people coming in during the pandemic then! The older receptionists have no patience at all and are incredibly abrupt to the point of rudeness. If you don’t like dealing with people you shouldn’t work in a job that requires you to. They seem to think it’s optional to answer the phone? I’ve been sat in there when they’ve ignored call after call, sat there chatting away! this is your job!! Sack the receptionists and get new, seriously. If you want a decent gp, join Radcliffe medical practice. Elms is an absolute joke.
+
+Author: Helen Wright
+Date: 3 years ago
+Rating: 1 star
+Worst gp for miles around, reception staff don’t answer the phones and don’t seem to have a clue how to do there jobs.
+
+Author: Kat
+Date: 3 years ago
+Rating: 1 star
+Apparently receptionists have medical degrees now and can decide who gets to see a doctor. They force you to tell them what's wrong then tell you it's not important. Honestly fuming after speaking with the worst receptionists. This practice used to be for years brilliant with Dr Noone and Dr O'hare and the receptionists were friendly, caring and always helpful. Not anymore. I have just deregistered my whole family after being at this practice my whole life. I just never want to go back and experience the stress of those receptionists ever again. There is only one word for them and one star is too much for them.
+
+Author: Hamnah Ali
+Date: 4 years ago
+Rating: 5 stars
+Hamnah Ali4 years ago
+
+Author: Mahrukh
+Date: 4 years ago
+Rating: 1 star
+They never pick up the phone and it's impossible to get an appointment.
+
+Author: Curtis Ward
+Date: 4 years ago
+Rating: 1 star
+Been with them years and there just getting worst by the minute rang up on 6th of January for a repeat prescription goes in pharmacy last week to pick up for them to say they have had nothing for me since November rang drs today for them to just put it in and there excuse for not putting it in when I rang is because I wasn't due them but ain't had any since November?? Takes them agers to answer the phone and when you go into the drs it self there all sat there talking to 1 and the other. Need a new doctors I think.
+
+Author: Monk's Modern Medieval Cuisine
+Date: 4 years ago
+Rating: 4 stars
+I just wanted to observe, based on my last two telephone calls, that the staff seem to be trying very hard to improve service. The new telephone message is clear, helpful and friendly, and my particular enquiry (which was for a doctor's letter) was handled well. I do think it is better that those folk who feel more comfortable and/or able to use the phone rather than AskMyGp are now given the opportunity to wait for their call to be taken. I know, for example, that my mother-in-law who has dementia would never be able to use AskMyGP. So it's good that you seem to have made this option clearer to patients in the phone message. Credit where credit is due, I think.
+
+Author: Maria Gooding
+Date: 4 years ago
+Rating: 1 star
+I have requested a phone consultation for my daughter i couldnt acess records to see if her consultation had been booked . This was requested yesterday afternoon. Phoning surgery no response.
+
+Author: Natalie B
+Date: 4 years ago
+Rating: 5 stars
+Lovely doctors and nurses at this surgery. Reception could do with some customer service training although they have a tough job. If you don’t want to tell the receptionist what’s wrong with you, just use the app and book your appointment. Let’s face it, they can see your record anyway so what’s the big secret? They don’t need all the details, just the headlines.
+
+Author: Branka Popadic
+Date: 4 years ago
+Rating: 1 star
+Absolute waste of time. The old receptionist`s where lovely and helpful. Get called by a nurse instead of a doctror. Even when you requested specifically to speak to a doctor. You can't see a doctor. And when you get the telephone consultation they rang you at 7 in the evening. Some of the doctors doesn't have a clue what they are doing!
+
+Author: Sarah Martyn
+Date: 4 years ago
+Rating: 4 stars
+I thought the doctors and reception staff were helpful and friendly! I used the askmygp service which was quick and easy to use. I received a phone call the same morning from Sue Goggins who prescribed antibiotics. Sue followed up with another call and gave me advice. She was friendly and helpful!
+
+Author: Rachel Gordon
+Date: 4 years ago
+Rating: 1 star
+The worst doctors in the Borough. Miss diagnose conditions, give wrong medication to people who are allergic to some medicines, never speak to a proper doctor when needed and can't always get seen. Receptionist are usually abrubt and rude and are quick to hang up a call, sometimes you feel like no one listens to you.
+
+Author: Tom Smith
+Date: 4 years ago
+Rating: 1 star
+Shocking service. The doctors are good, but it the receptionist who seem to have done 7 years at medical school who are horrible and rude. If I want to see a doctor book me in. I will tell the doctor why not you! It private, also why can’t you just book the appoint rather than getting me to us app. Isn’t that your job?? If we all use the app you would be out of a job.
+
+Author: Tracey Fleet
+Date: 4 years ago
+Rating: 1 star
+What is the point of askmygp. I requested to speak by telephone with a doctor regarding a new prescription. But the office manager completed my request. It is so infuriating. Why can we not just ring up and speak to someone
+
+Author: carl dawson
+Date: 4 years ago
+Rating: 1 star
+Most unhelpful practice on the planet. You have to jump through hoops to book a telephone appointment and when you do they don’t bother to ring you. Reception lie and lie about you being on the list. Can’t wait to transfer to another
+
+Author: Asmar DR
+Date: 4 years ago
+Rating: 1 star
+The worst gp ever They never answer me when I call. I have liberally been calling them for the past 3 hours continuously and they haven't answered, only of I could give them less than 1 star.
+
+Author: Wednesday Jones
+Date: 4 years ago
+Rating: 1 star
+Disgracefully rude and unhelpful receptionists (especially the one with more tattoos than an E Wing lifer). You tell them what you need; they ignore you. You ask again; they ignore you. Then they treat you like you're a nuisance for wanting them to do their jobs. Absolutely awful people who let the surgery down; although management should be blamed for letting them get away with it and not reading their dreadful reviews. So glad to be moving to another surgery. Avoid at all costs.
+
+Author: Andrew Worrall
+Date: 4 years ago
+Rating: 1 star
+Extremely difficult to contact - I always get told by Elms Medical Centre to use askmyGP however the service times are very limited (early morning only rendering the service useless for people who genuinely are unable to be up at those times) and 99% of the time when I try to use askmyGP at the times it states they are online I still see the offline message making it almost impossible for me to contact.
+
+Author: jade coates
+Date: 4 years ago
+Rating: 1 star
+I think the doctors and nurses are fab and work with alot of compassion but the reception staff there are disgustingly rude! Not only do they talk over you when your trying to explain something but they make it very obvious in there tone of …
+
+Author: jade coates
+Date: 4 years ago
+Rating: 1 star
+I think the doctors and nurses are fab and work with alot of compassion but the reception staff there are disgustingly rude! Not only do they talk over you when your trying to explain something but they make it very obvious in there tone of voice that they are clearly to busy up the backsides of each other to help or even bother with you for that matter id think yourself lucky when they dont answer 👍
+
+Author: Mark Taylor
+Date: Edited 4 years ago
+Rating: 3 stars
+Still waiting for call altho was quite helpfull
+
+Author: Gemma Seddon
+Date: 4 years ago
+Rating: 2 stars
+It's ultra hard to get in contact with the surgery. The online system works but it's complicated and non explanatory. I can't find an email to the reception anywhere on the website,and I was told to email by the staff. Once you're in the doctors are good and the physio service is fantastic. Just so difficult to get in, I often have to go somewhere else for a walk in appointment.
+
+Author: phil wyatt
+Date: 5 years ago
+Rating: 5 stars
+askmygp is excellent service, same day call back from Dr. Really helpful reception staff.
+
+Author: Gillian Cusick
+Date: 5 years ago
+Rating: 4 stars
+I have attended the Elms since Dr O'Hare & Dr Alison Molyneaux first started up the surgery. Most of my serious health care is achieved at NMGH, with my annual diabetic reviews performed over many years with kindness (and professionalism) by Sister Karen Aldritt. Yesterday I used the "Ask My GP"system for the first time, with attached photos of a worrying foot condition. At 9-45am this morning I was contacted by Dr Anwar who told me he was sending a referral today for me to have a doplar test to ascertain the status of the circulation. Of course the timing of any hospital appointment is out of his hands, but I think, for me, the "Ask My GP" system and its resultant prompt action, is well worth any patient trying to use it. Many thanks.
+
+Author: steven lee
+Date: 5 years ago
+Rating: 1 star
+steven lee1 review5 years ago
+
+Author: Dean Swailes
+Date: Edited 5 years ago
+Rating: 1 star
+Every appointment made is a personal defeat for reception team.
+
+Author: Mrs S. O
+Date: 5 years ago
+Rating: 1 star
+Mrs S. O5 years ago
+
+Author: Avi
+Date: 5 years ago
+Rating: 1 star
+Avi5 years ago
+
+Author: Suzy Sue
+Date: 5 years ago
+Rating: 5 stars
+I've been coming to this surgery for about 7 years. I've never had any problems. The staff are lovely considering how busy they are. I always make a conscious effort to be nice to them and I always get kindness in return. They really do …
+
+Author: kevin bentley
+Date: 6 years ago
+Rating: 5 stars
+My appointment for an ultrasound was at 915 . I was seen at 0900 and the 2 practitioner's were really professional and also really friendly
+
+Author: Suzy Sue
+Date: 5 years ago
+Rating: 5 stars
+I've been coming to this surgery for about 7 years. I've never had any problems. The staff are lovely considering how busy they are. I always make a conscious effort to be nice to them and I always get kindness in return. They really do appreciate expression of gratitude from time to time. The doctors change a fair bit and I've rarely seen the same Dr. twice but I think this is just GP culture nowadays. I've never been disappointed in the care I have recieved.
+
+Author: Thomas Williams
+Date: 6 years ago
+Rating: 5 stars
+My wife has recently been treated by Dr Sarfraz and she has found her to be the most helpful and caring GP she has been treated by in many years. Without her prompt action how my wife would be at the moment doesn't bear thinking about. During the follow up appointment she was also very knowledgeable about the treatment my wife had received whilst in hospital. Once again many thanks from Dorothy and Thomas Williams.
+
+Author: michael Landsborough
+Date: 6 years ago
+Rating: 1 star
+Would love someone just to pick up phone
+
+Author: Donna Coleclough
+Date: Edited 6 years ago
+Rating: 1 star
+Bad experience yet again, please note if you want to be treated with kindness, respect & in a professional manner & don’t want your personal health discussed in another persons consultation without your consent then Elms is not the surgery for you if I could have given no stars I would.
+
+Author: Steve Christie
+Date: 6 years ago
+Rating: 1 star
+Currupt been fighting. For my tablets for 2 years sent me suicidal there not ready yet what again and it's not just me this is happening to Angie Bradley
+
+Author: shannon H
+Date: 6 years ago
+Rating: 1 star
+Moved due to my midwife being here the midwife has been great but the doctor side has been disappointed they are very unorganised.
+
+Author: L T
+Date: 6 years ago
+Rating: 1 star
+Utter garbage, never answer the phone and staff are often rude and unhelpful. AVOID!
+
+Author: Beata Dobrzynska
+Date: 6 years ago
+Rating: 2 stars
+problem with making appointments
