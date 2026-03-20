@@ -4,11 +4,16 @@ Postcode: SK6 6AB
 Google Maps title: Marple Medical Practice
 Google rating: 3.8
 Google review count: 44
-Google Maps URL: https://www.google.com/maps/place/Marple+Medical+Practice/@53.3950644,-2.0656476,17z/data=!4m8!3m7!1s0x487bb569db223ff9:0xf9d3d9b2c06718d0!8m2!3d53.3950644!4d-2.0656476!9m1!1b1!16s%2Fg%2F1tfq8sfz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Marple+Medical+Practice/@53.3950676,-2.0682279,17z/data=!4m8!3m7!1s0x487bb569db223ff9:0xf9d3d9b2c06718d0!8m2!3d53.3950644!4d-2.0656476!9m1!1b1!16s%2Fg%2F1tfq8sfz?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 44
+Owner replies collected: 11
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88021-marple-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Andrew Alton
 Date: 2 months ago
@@ -21,7 +26,7 @@ Rating: 5 stars
 Excellent service. I got a same day appointment & a scan booked in for next week, all hugely efficient. We're lucky to have MMP.
 
 Author: Denise Maddox
-Date: 5 months ago
+Date: 6 months ago
 Rating: 5 stars
 I had a face to face appointment today with Perry for abit of physio on my troubled shoulder. Great communication/people's skills, really listened with empathy, exercised in a much needed xray following my concerns. Big thanks to Dr Sunderland also for acknowledgement of my concerns and sorting it.
 
@@ -31,7 +36,7 @@ Rating: 5 stars
 Excellent. Very efficient, for routine things and more serious things too. Doctors and staff are very helpful.
 
 Author: Dani Lou
-Date: Edited 10 months ago
+Date: Edited 11 months ago
 Rating: 5 stars
 There level of care is incredible- being there when I needed a cry, referring me to specialists. I’m fairly new to this practice. At first I wasn’t sure off the best way to contact them, the office manager quickly got in touch with me advising me off several ways including their triage form, which is online, which actually suited me perfectly as I tend to catch up on things at night. Also, very lovely to my children when I required them to be assessed. Nearly always managed to receive a telephone call back or video consultation with the Drs (which I’m quite a camera shy person!), again helping me feel able to communicate my worries, and action taken where needed. Been wonderful - thank you
 
@@ -53,9 +58,212 @@ Receptionist are all really nice. You need to ring at 8am for appointments but c
 Author: Aliya King
 Date: a year ago
 Rating: 2 stars
-Aliya King1 reviewa year ago
+Aliya King2 reviewsa year ago
 
 Author: Maggie Hastings
 Date: a year ago
 Rating: 5 stars
 Easy to book GP appointment online. Offered flu and Covid jabs at the same time as my routine blood test.
+
+Author: Jennifer Eldred
+Date: a year ago
+Rating: 5 stars
+Fabulous doctors always helpful.
+
+Author: Liz Fowle
+Date: 2 years ago
+Rating: 5 stars
+Excellent GP surgery! Always able to get an appointment, sometimes I have to wait a day or two for the GP I need to see but never longer than that. Their excellent attention to their patients meant they saved my son's life with a quick request for a second opinion. They are dealing with a long term issue for myself with compassion and understanding. GPs, nurses and receptionists are all friendly and helpful.
+
+Author: jsadiec @gmail.com
+Date: 2 years ago
+Rating: 5 stars
+Excellent, very helpful, especially Clare and the people to take blood/give injections. Thanks
+
+Author: Colin Stapleton
+Date: 2 years ago
+Rating: 5 stars
+Colin Stapleton2 years ago
+
+Author: Jess Knowles
+Date: 2 years ago
+Rating: 5 stars
+I’ve been a patient at Marple Medical Practice for a number of years and have always found it great; the receptionists in particular are always friendly and helpful. I saw Dr Maryann James this evening and she was absolutely fantastic, warm and genuine and took time to give proper and thorough advice.
+
+Author: Andy Morrell
+Date: 2 years ago
+Rating: 1 star
+Certain receptionist staff really let this place down. It's been the same for the last few years and is a real shame.
+
+Author: s Johnson
+Date: 2 years ago
+Rating: 5 stars
+Really helpful and friendly. Nursing staff are great.
+
+Author: Rachel Craven
+Date: 2 years ago
+Rating: 5 stars
+The best doctors I've ever had! You can't book an appointment in advance (it has to be an 8.30 call on the day) which is slightly frustrating but that seems to be the GP model these days so isn't marple specific. I've had appointments with the nurse and different doctors and they've all really listened, treated me with respect and are taking care of my medical needs. So far, I've always managed to get an appointment on the day too if I get in the phone queue at 8.30 Really impressed and grateful.
+
+Author: Lee Hackland
+Date: 2 years ago
+Rating: 1 star
+Receptionist and doctor was about as incompassionate as they come. Thanks for 2 month wait for something this serious. What an absolute joke.
+
+Author: Amanda Kinsley
+Date: 2 years ago
+Rating: 5 stars
+Massive thank you to Lourdes for helping me chase my results up after being referred elsewhere and not hearing anything for weeks, really appreciate it and thank you for being so kind!
+Practice response date: Edited 2 years ago
+Practice response:
+Thank you Amanda! The lovely feedback is very much appreciated.😊 …
+
+Author: Romana Riley
+Date: 3 years ago
+Rating: 1 star
+Really not happy with this clinic. Its hard to get in touch with them or get an appointment. Then spending an hours in waiting room as well. Phone appointments with 2 to 3h delay. Just ridiculous..I will be looking for different place.
+Practice response date: 3 years ago
+Practice response:
+Dear Romana Really sorry to read of your experience. This does seem a little at odds with feedback that we receive generally. We have to concede that it is busier at present than it has ever been so, sorry if you have had to wait as you have described. If you visit our website https://www.marplemedicalpractice.nhs.uk/ there is a drop down entitled "Struggling to get an appointment" which gives ways to ask for help.We are really surprised about you describing us as difficult to get in touch with us as literally hundreds of people a day do? Happy to have further dialogue (gmicb-sto.marplemedicalpractice@nhs.net) or if you have made your mind up, we wish you well in finding another practice.
+
+Author: Hels Bels (Helsbels)
+Date: 3 years ago
+Rating: 5 stars
+I have bben registered at this practice for 15 years, l have absolutely nothing negative to say. I have recently had a few appointments with the nurse practitioner Maria. I left feeling like a new woman, not a miracle cure, but understood and listened too. Everything Maria said she would do she did. I can't thank you enough.
+Practice response date: 3 years ago
+Practice response:
+Thank you for taking the trouble to feedback - so pleased you are feeling better. Its nice to know that we are making a difference 🤗 …
+
+Author: Anthony Stewart
+Date: 3 years ago
+Rating: 1 star
+Sat ther for over an hour with a swollen leg foot and pain in the knee. The poor girl next to me was panaking being late for work. So I gave her my space and walked out. 20 minutes later she was still sat there waiting. Not good Marple medical. Really not good..
+Practice response date: 3 years ago
+Practice response:
+Dear Mr Stewart We are really sorry for your experience on this occasion. The Clinician did text you an apology & to explain that the delay was down to a medical emergency for the patient who was seen before you. We appreciate it was frustrating for you but unfortunately it was life threatening and therefore unavoidable. She did ask you to contact the surgery to ensure that you were safe and to rebook to make you more comfortable.
+
+Author: TT
+Date: 3 years ago
+Rating: 5 stars
+👍 …
+Practice response date: 3 years ago
+Practice response:
+👍 …
+
+Author: Baby bear
+Date: 3 years ago
+Rating: 5 stars
+This is not the first time I have used the online system at this surgery but it's just brilliant! I sent in an online triage form Monday - non urgent but important issue. Everything was dealt with brilliantly - great communications, very kind Doctor and such a helpful system. My reply was dealt with by text ( as I requested) This is so helpful in these busy times and leaves physical & phone appointments for those who need them. Such an efficient and very caring Practice. Thank you!
+Practice response date: 3 years ago
+Practice response:
+Thank you 😊 Its great to have such nice feedback and we're really pleased that our strategy of expanding the way that you can interact with the practice is proving convenient & helpful 👍 …
+
+Author: D.o.c MC.shuffles Xpress review
+Date: 4 years ago
+Rating: 1 star
+Horrible surgery . Complete disregard for their patients. My son has been waiting for 2 weeks for feedback on a medical condition. The reception Linda is abysmal , she has no clue how to manage people and deal with patients , she's rude and abnoxius beyond belief but it's how inept she is that really irritated me. Reading out notes that clearly stated the doctor wanted an appointment booked and then arguing why she's not booked it or made any efforts to. After disagreeing and talking over me she put the phone down on me with out arranging the appointment she's paid to do ! .what an absolute joke of an employee. Don't gamble peoples well being based on your arrogance Linda ! Putting Linda aside the entire surgery have messed up so.l many times a referral arrnaged in January got dealt with in September due to doctor incompetence.
+
+Author: Fab Tabby
+Date: 4 years ago
+Rating: 5 stars
+Friendly and professional. Prompt appointments given when required.
+
+Author: Karen Drury
+Date: 4 years ago
+Rating: 5 stars
+I've just had my long term medication care transferred over to my GP at Marple Medical Practice and it could not have gone any smoother. It involves blood tests every month and more tablets than I can count every 3 months. I've never had a issue with the prescriptions being done on time and on every occasion when I've had blood taken there has never been any bruising. They know what they are doing. Highly recommended. Thankyou all.
+Practice response date: 3 years ago
+Practice response:
+Thank You 😊 …
+
+Author: Cara G
+Date: 4 years ago
+Rating: 2 stars
+I understand the pressures of covid but the practice is really going steeply downhill. Trying to get prescriptions causes me so much anxiety. Ive had mine 'lost', never issued etc on far too many occassions. One of the receptionists talks to you as if you know the daily running of the practice. We are patients, please dont make assumptions. That said, Ive had mostly good appointments with the Drs & nurses over the years.
+Practice response date: 4 years ago
+Practice response:
+Rather unfair to post on here without having a conversation with the Manager about how you order prescriptions and what is happening? Good to hear that you have had good appointments over the years though!
+
+Author: A mans shed
+Date: 4 years ago
+Rating: 1 star
+This is a not fit for purpose medical center! Been trying for weeks to get bloods done and now they refure me to pushdoc.. pushdoc is a private company founded in 2013 by a private individual.. push doctor will not see me in any form without full access to all my medical records past and future they can then sell your data to the highest bidder.. I will move doctors now
+Practice response date: 3 years ago
+Practice response:
+ALERT: This is not factually correct
+
+Author: Josie Penn
+Date: 5 years ago
+Rating: 5 stars
+When ever I call the practice I get an extremely professional, efficient and friendly service. The doctors especially Dr Hewetson are fantastic at what they do. Thank you.
+
+Author: Ove Alexander
+Date: 5 years ago
+Rating: 4 stars
+Astounded by the comments I read - I have never ever found the representatives of the practice rude or unhelpful. Things haven't always worked the way I wanted but that's a matter of understanding and applying your own mind to the limitations and processes the practice is working under - and for me I'm left feeling you tried your best. Amidst all the negativity - here's a thank you :-))
+Practice response date: 4 years ago
+Practice response:
+Thank You, that is very much appreciated - we all try our best every day. Its easy to leave scathing remarks on here and you are left wondering if it says more about the poster than the practice?
+
+Author: atitheb prasutanond
+Date: 5 years ago
+Rating: 5 stars
+atitheb prasutanond11 photos5 years ago
+
+Author: Janie Dodsworth
+Date: 5 years ago
+Rating: 5 stars
+Excellent practice. Everyone is always so friendly.
+
+Author: Margaret Johnson
+Date: 6 years ago
+Rating: 1 star
+Receptionist at this practice treated me with contempt . The girl with glasses is particularly rude unhelpful and unprofessional. She is very condescending and should remember who pays her wages!
+
+Author: Nicola Martin
+Date: 6 years ago
+Rating: 1 star
+Didn't want to give it one star! Had an appointment today for 15.20 still waiting at 16.00 left without see a doctor in the end Receptionist couldn't tell me how much longer I'd be waiting shocking service!!
+Practice response date: 4 years ago
+Practice response:
+Unfortunately sometimes patients (perhaps in crisis) take much longer than their 10 minute appointment and unfortunately this isn't predictable. Sometimes unfortunately a wait is unavoidable - sorry
+
+Author: Angel Bostock
+Date: 6 years ago
+Rating: 5 stars
+Angel Bostock6 years ago
+
+Author: Isobella Walker
+Date: 6 years ago
+Rating: 1 star
+To me this doctors receptionist and assistant manager are RUDE !!!!!!!!
+
+Author: Karen Lane
+Date: 7 years ago
+Rating: 5 stars
+Karen LaneLocal Guide · 2 reviews7 years ago
+
+Author: Greg Hayward
+Date: 7 years ago
+Rating: 4 stars
+Greg HaywardLocal Guide · 90 reviews · 478 photos7 years ago
+
+Author: kevin bradshaw
+Date: 8 years ago
+Rating: 1 star
+Absolutely terrible. I left the practice when the receptionist tried to prevent my son seeing a doctor whilst he was suffering an asthma attack. I made a commotion which one of the doctors heard. When she saw him she called the hospital and rushed him there immediately. Doctors are great if the receptionists allow you to see them
+
+Author: Catt Gaal
+Date: 9 years ago
+Rating: 5 stars
+Catt Gaal3 reviews9 years ago
+
+Author: wendy baylis
+Date: 9 years ago
+Rating: 5 stars
+I would like to say what a lovely bedside ,understanding and sympathetic manner Nurse Jemma Pinchin had with me on my visit May 13th 2016.I feel she is a big asset to the practice and I left there feeling so much better thank you.
+
+Author: Colin Hughes
+Date: 10 years ago
+Rating: 2 stars
+Colin Hughes4 reviews10 years ago

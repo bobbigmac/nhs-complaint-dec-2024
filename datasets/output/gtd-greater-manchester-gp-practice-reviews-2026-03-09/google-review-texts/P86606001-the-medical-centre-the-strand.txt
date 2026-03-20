@@ -4,14 +4,19 @@ Postcode: OL11 2JG
 Google Maps title: The Strand Medical Centre
 Google rating: 2.9
 Google review count: 19
-Google Maps URL: https://www.google.com/maps/place/The+Strand+Medical+Centre/@53.5951076,-2.1617919,17z/data=!4m12!1m2!2m1!1sThe+Medical+Centre+(The+Strand)+OL11+2JG!3m8!1s0x487bb97a16aa07e7:0xf0c641ae3f321273!8m2!3d53.5951076!4d-2.1572858!9m1!1b1!15sCihUaGUgTWVkaWNhbCBDZW50cmUgKFRoZSBTdHJhbmQpIE9MMTEgMkpHkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc5d52ys?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Strand+Medical+Centre/@53.5951076,-2.1620494,17z/data=!4m12!1m2!2m1!1sThe+Medical+Centre+(The+Strand)+OL11+2JG!3m8!1s0x487bb97a16aa07e7:0xf0c641ae3f321273!8m2!3d53.5951076!4d-2.1572858!9m1!1b1!15sCihUaGUgTWVkaWNhbCBDZW50cmUgKFRoZSBTdHJhbmQpIE9MMTEgMkpHkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1hc5d52ys?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 19
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86606001-the-medical-centre-the-strand.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Grace Royle
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
 Receptionist was rude, interruptive and unclear when giving information, which is unacceptable when attending to service users needs, especially elderly service users. Poor service overall, and when asked about the complaint system I was given the managers name which I then asked for an email and wasn’t given one when I was reassured I would be given one.
 
@@ -21,7 +26,7 @@ Rating: 5 stars
 Duncan White4 months ago
 
 Author: Ian Parry
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 I'm shocked to see poor reviews about receptionists on here. In the short time I've been at the practice the staff have been brilliant. Courteous, accommodating, extremely helpful, and willing to find a way to help.
 
@@ -59,3 +64,48 @@ Author: Joe B
 Date: 2 years ago
 Rating: 1 star
 Terrible service. Receptionist are very rude and love to complicate simple requests. I am very ill but they won’t allow me to book an urgent appointment. You could be dying they wouldn’t care!
+
+Author: scere wehia
+Date: 3 years ago
+Rating: 1 star
+Worst doctors ever..I believe the old Main doctor..Dr Anglin was sacked/garden leave mis diagnosis terrible surgery..not much better now
+
+Author: Vasile Lucian
+Date: 4 years ago
+Rating: 5 stars
+Vasile LucianLocal Guide · 30 reviews · 3 photos4 years ago
+
+Author: Ab
+Date: 4 years ago
+Rating: 1 star
+Very very bad patient dealing service. very rude reception staff. Not happy at all. My wife(pregnant) have an appointment with nurse we was just 2 minutes late because of traffic they said your appointment has been cancelled because YOU are 2 minutes late and nurse had gone, how come nurse gone in just 2 minutes, I believe NHS appointment waiting time in GP,s are 10 minutes. I am not happy at all and seriously thinking to change my surgery.
+
+Author: gavin
+Date: 6 years ago
+Rating: 1 star
+Fuking worst doctors around I av a 1 year old daughter we live in Rochdale an are doctors are on the strand an thts are local one so my girlfriend rang first fing to get my little girl an appointment coz she poorly they told her to cum for 9 she's booked in then when she got there they told her no Ur appointment is in Middleton fuking joke of a doctor's my little girl only 1
+
+Author: Albert White
+Date: 6 years ago
+Rating: 5 stars
+Albert WhiteLocal Guide · 33 reviews · 3 photos6 years ago
+
+Author: Karl Lee
+Date: 7 years ago
+Rating: 1 star
+Repeat prescriptions are never on time reception staff are rude and the doctors don't seem to care.
+
+Author: Aleksandra Svitina
+Date: 8 years ago
+Rating: 1 star
+Wery bad worse surgery i ever seen make apointment then cancel for small babies to take blood dont have needle send to wrong xray scan so rude staff and not helpful use swearing words ignore your results for a months
+
+Author: Davi Garcia
+Date: 8 years ago
+Rating: 5 stars
+The best staff an doctors, they look after our family well.
+
+Author: Lorraine Kershaw
+Date: 8 years ago
+Rating: 5 stars
+Lorraine Kershaw8 reviews8 years ago

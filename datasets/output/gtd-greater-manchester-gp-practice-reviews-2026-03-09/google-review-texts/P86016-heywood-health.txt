@@ -4,19 +4,24 @@ Postcode: OL10 3SD
 Google Maps title: Heywood Health
 Google rating: 3.4
 Google review count: 87
-Google Maps URL: https://www.google.com/maps/place/Heywood+Health/@53.5873208,-2.2390855,17z/data=!4m8!3m7!1s0x487bbb1dbeff4fe5:0x5102f0cf58dfbe3f!8m2!3d53.5873208!4d-2.2390855!9m1!1b1!16s%2Fg%2F1thw1q5t?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Heywood+Health/@53.587324,-2.2416658,17z/data=!4m8!3m7!1s0x487bbb1dbeff4fe5:0x5102f0cf58dfbe3f!8m2!3d53.5873208!4d-2.2390855!9m1!1b1!16s%2Fg%2F1thw1q5t?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 87
+Owner replies collected: 20
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86016-heywood-health.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Blue Waters
-Date: Edited 2 months ago
+Date: Edited 3 months ago
 Rating: 3 stars
 I posted a review few years ago how brillant they was with my daughter However recently I have been having issues getting my prescription and I'm quite shocked how difficult they make getting one especially if it should be on repeat. 3rd time now I've been left without it. Lack of communication when I had no medication for the weekend and they didn't notify me they was able to sort it out. Receptionist can be lovely but you get the odd one who can be rude. If you dont live near the practice because you was at York street before they closed it it's impossible to get medication without a 'paper trail' And I've received a phone call regarding my review and a message on the messenger service.
 
 Author: Mehak Ali
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
 I’ve had a great experience with Heywood Health so far. The staff is friendly, and same-day appointments are easy to get by calling. The online services are also really helpful for non-urgent issues.
 
@@ -31,7 +36,7 @@ Rating: 5 stars
 Every time I have been to this practice the staff and doctors have been professional and friendly
 
 Author: Mos Chike Atamah
-Date: 6 months ago
+Date: 7 months ago
 Rating: 5 stars
 Very good experience, I am satisfied
 
@@ -39,6 +44,9 @@ Author: Ju
 Date: 8 months ago
 Rating: 5 stars
 Reception are amazing, friendly & helpful Thank you Julie 😊 & all the staff!! & the lovely doctor who's so kind caring & compassionate. Big thank you 😊 …
+Practice response date: 8 months ago
+Practice response:
+Thank you so much for your lovely review - I will pass your message onto the team.
 
 Author: STREET LIFE
 Date: 9 months ago
@@ -46,7 +54,7 @@ Rating: 1 star
 Rude doctors
 
 Author: Kathryn Ashworth
-Date: 11 months ago
+Date: a year ago
 Rating: 5 stars
 Contacted surgery by phone today , Leanne receptionist spoke with me regarding a previous hospital appointment I had attended and I was requesting any correspondence the surgery had received. Leanne was very polite , professional and helpful , promptly gave all the information I needed in a promt email. Thank you so much Leanne.
 
@@ -59,3 +67,445 @@ Author: Stephen Headley
 Date: a year ago
 Rating: 5 stars
 Thank You - Heywood Health Since joining Heywood Health Medical Centre last year, I’ve found them to be a breath of fresh air—responsive, understanding, and incredibly helpful. During my sudden and unexpected physical health challenges, I’ve been treated with such compassion and empathy. As an NHS employee myself, it’s heartwarming to receive the same level of care I strive to provide to my own patients. It’s the small things that make a big difference. In a system where it’s easy to feel like just a number, Heywood Health makes you feel genuinely cared for and never too busy to help. Keep up the good work!! Kindest regards, Steve H
+
+Author: Sarah Marie
+Date: a year ago
+Rating: 5 stars
+Called the surgery for some advice, one of the receptionists went through some questions with me and then gave me some information about being treated at the chemist instead of needing a doctors appointment. Didn't need time off work which was great. I also received a text message about how I can use Patchs which enables me to have a conversation with a doctor.
+
+Author: Ava Connell
+Date: a year ago
+Rating: 5 stars
+Wonderful experience with the staff and receptionists. Very helpful with the questions I was asking and their response to give me the right card I needed.
+
+Author: Claire Turner
+Date: a year ago
+Rating: 5 stars
+Claire TurnerLocal Guide · 5 reviewsa year ago
+
+Author: Arturas K.
+Date: Edited a year ago
+Rating: 2 stars
+Arturas K.Local Guide · 10 reviews · 3 photosEdited a year ago
+
+Author: Josimara Suzana
+Date: a year ago
+Rating: 1 star
+Definitely the worse trying to book an appointment for my mum and the line is busy since 8am absolutely ridiculous
+Practice response date: a year ago
+Practice response:
+Hi there – we are currently in the process of installing a new telephone system which has gone live today. If you still need assistance can you please contact via our email address and I will try and sort out for you: gmicb-hmr.heywoodhealth@nhs.net Kind Regards, Pam - Practice Manager
+
+Author: Mr V.
+Date: Edited a year ago
+Rating: 4 stars
+Mr V.Edited a year ago
+
+Author: Sarah Connell
+Date: 2 years ago
+Rating: 5 stars
+Went today with my daughter with concerns after her spinal surgery, pleasent staff and Dr Duffy was lovely, felt reassured and was told any further issues I can get back in touch.
+
+Author: Gintaras Valley
+Date: 2 years ago
+Rating: 5 stars
+Always helpful and respectful
+
+Author: Ada
+Date: 2 years ago
+Rating: 1 star
+It is impossible to get an appointment. I have been on the phone since 8 am as advised and by the time they have answered the phone there were no more appointments left and I rang them over 90 times (this is not the first time as well). Will change GP practice as there is no point to be registered with Heywood Health if you can not get an appointment.
+
+Author: Little Zhyan channel Kurde
+Date: 2 years ago
+Rating: 1 star
+Today i went and they never have service and it was 7 in the morning and kept on asking me why i come here alot its none of there business and dont respect you
+
+Author: Denis Robinson
+Date: Edited 2 years ago
+Rating: 5 stars
+My experience at Heywood Health has been excellent, never had to wait too long for an appointment, they are well organised and very efficient, sometimes the wait to get through on phone can take a while at peak periods, but in general its is very good.
+
+Author: Lisa Clark
+Date: 2 years ago
+Rating: 5 stars
+A very positive visit. Received an appointment same day and Dr Mohammed gave me a thorough check up. He patiently listened to me and I never felt rushed. Thank you.
+
+Author: 8silliw Willis
+Date: 2 years ago
+Rating: 1 star
+Never can get a appointment awful reception service don't rate this surgery at all the receptionist ignore you and are very intrusive on why you need a appointment not thier business !!
+
+Author: Mark Jenkinson
+Date: 2 years ago
+Rating: 5 stars
+I had an appointment today at heywood health the girls on reception could not be more helpful and respectful it was a pleasure
+
+Author: Medina Tun-Nabi
+Date: 2 years ago
+Rating: 5 stars
+Medina Tun-NabiLocal Guide · 40 reviews · 17 photos2 years ago
+
+Author: Louise
+Date: 2 years ago
+Rating: 5 stars
+I came to see the GP as my son was unwell. I was concerned as my son has disabilities and did not think we would be able to be seen and could not envisage a long wait in A&E. The GP was extremely helpful and kind, realised my son was rather unwell and issued a prescription for antibiotics. Very pleased with the prompt advice and service. Thank you.
+
+Author: Dawn McDaid
+Date: Edited 2 years ago
+Rating: 5 stars
+Excellent service from the team at Heywood Health. I recently had a problem with a repeat prescription at my pharmacy and Neil was incredibly helpful and efficient in resolving the problem, so much so, the Pharmacist even complimented him! Also further to a recent hospital visit, the action required in the consultation notes had been implemented before I had even received my copy of the letter! I am not sure who I should be thanking, but I really appreciate the help. Thanks to all.
+Practice response date: 3 years ago
+Practice response:
+Hi Dawn - Thank you for taking the time out to leave a review. Our thoughts and prayers remain with you. If you need anything in the future please don't hesitate to contact us.
+
+Author: Blue Ridley
+Date: Edited 2 years ago
+Rating: 5 stars
+I have changed my review. 3rd March I cannot thank the doctor who saw my daughter enough and her nurse who helped her into the taxi and made sure she was okay. She went to A&E day before we was told stomach bug. Went here and within 10 minutes with the doctor we was told to go to Oldham hospital as he thinks it was her apendix. Within 2 hours she was having her apendix out and unfortunately it had burst. Shes now fully recovered back to my happy healthy and energetic 7 year old Without this doctor I don't know what would of happend. Thank you so much
+Practice response date: 2 years ago
+Practice response:
+Thank you for your review – I was sorry to hear that Blue was so poorly. Thank goodness all has turned out well. I will pass your comments onto the team. Take care. Pam Ilnyckyj Practice Manager
+
+Author: carol whitehead
+Date: 3 years ago
+Rating: 5 stars
+Excellent service from Heywood health this morning. I had a phone appointment now leading to a face to face which I was not expecting. I have been with this surgery over 40 years. I have to mention Julie the receptionist who guided me all the way. I think the questions she asked me needed to be asked to guide me in the right direction. Looks like my surgery are back to normal working. Let's be kind and spare a thought for the Job they all do. Thank you HH.
+
+Author: Michael Connell
+Date: 3 years ago
+Rating: 5 stars
+Fantastic care and the staff are lovely
+
+Author: Beth Rhodes
+Date: 3 years ago
+Rating: 4 stars
+I appreciate being able to message the practice via NHS App for things which aren't urgent. Meaning I don't waste their time and mine time trying to get through on the phone. Would like the option to be able to book in advance appointments like I used to in the past, but these days I think most GPs are the same way - people fighting for same day appointments. I like the easy check-in once you get there by the touch screen.
+
+Author: Prabha Chauhan
+Date: 3 years ago
+Rating: 5 stars
+It was a pleasure to see Dr Ali today and was a pleasant visit
+
+Author: Alison Sharkey
+Date: 3 years ago
+Rating: 5 stars
+Alison Sharkey2 reviews3 years ago
+
+Author: Jema Lou
+Date: 3 years ago
+Rating: 5 stars
+Jema Lou3 years ago
+
+Author: Sarah Connell
+Date: 3 years ago
+Rating: 5 stars
+My family have all recently become new patients at the surgery and the service has been five star plus based on my previous doctors (they were great dont get me wrong) nice and clean waiting area, lovely welcoming at reception from all the receptionist and a friendly smile is the first thing you need when you are feeling poorly. All the staff were absolutely fantastic with helping with my daughters needs, this included receptionists, nurses and the doctor, from reasssurance, hand holding and cuddles thank you all 🌈 Shout out to Julie OD Carmel, Lisa B Julie H, Louise 🌈
+
+Author: thomas Matthew
+Date: 3 years ago
+Rating: 5 stars
+The support I have had in my troubled times it’s greatly appreciated, great service.
+
+Author: andrew smith
+Date: 3 years ago
+Rating: 5 stars
+Friendly caring staff, provide excellent care,. My Gran loved the Dr’s here! Would recommend to anyone.
+
+Author: tom lomax
+Date: 3 years ago
+Rating: 5 stars
+The receptionist (I think her name was Lisa) was very friendly and welcoming. I was seen within 5 minutes of waiting. Very happy with the service!
+
+Author: SH
+Date: 3 years ago
+Rating: 5 stars
+Fantastic care from Julie the nurse who helped my mum by changing her inhalers
+Practice response date: 3 years ago
+Practice response:
+Thank you GH for taking the time to leave a review. I will pass your comments onto our team. Take care
+
+Author: Lisa
+Date: 3 years ago
+Rating: 5 stars
+Great practice, really look after me anytime I need them. Highly recommend.
+Practice response date: 3 years ago
+Practice response:
+Thank you Peggy S for your review. I will pass your comments onto our team its much appreciated. Pam - Practice Manager
+
+Author: Pauline
+Date: 3 years ago
+Rating: 5 stars
+Went on Friday morning 23/12/22 feeling absolutely terrible, all I can say the staff nurses and doctors went above and beyond taking care of me I couldn’t have asked for better. A big Thank you from the bottom of my heart. Pauline
+Practice response date: 3 years ago
+Practice response:
+Hi Pauline - Thank you for your review. We are delighted that we were able to help you. Hope you are feeling better. Take care- Kind Regards Pam - Practice Manager
+
+Author: Neil Flower
+Date: 3 years ago
+Rating: 1 star
+This surgery is a nightmare to try and get through to in the morning for an appointment! Having been with this surgery on two seperate occasions for over 15 years, i have rarely had to use them but unfortunately it hasnt been the best experience when i have needed to. Only last week i called and was put on hold for around 12 minutes to be put through to the wrong department. I called back, using exactly the same number to eventually get through and be told there was no appointments left for the day. I asked for a telephone call from the doctor, one whole week was the next available telephone call from a doctor for me so I called 111 and spoke to a doctor that day. The doctor told me she wanted me to come in and be assessed. I have tried to make an appointment only yesterday morning and after 214 times of trying to get through, on the phone, i was once again told there is no appointments left! This morning i tried through the 'Pach's' online requests, to be told i need to book an appointment to go into surgery to be seen in person. I cant do that now untill tomorrow morning to which i will more than likely be told there is no available appointments at my surgery. I used the online request (Pach's) as i was advised, from the receptionist, of a quicker response back from a doctor. Who told me i needed to make an appointment.
+Practice response date: 3 years ago
+Practice response:
+Hi Neil - thank you for the opportunity of talking through your issues. I recognise your frustrations and hopefully after our discussion we have alleviated some of your concerns. Thank you for understanding how difficult the winter pressures are on the surgery, it is much appreciated. Pam Ilnyckyj Practice Manager (Non-clinical Partner)
+
+Author: Julie
+Date: 3 years ago
+Rating: 5 stars
+Very happy with how i was dealt with by the surgery the reception did all they could to help me and the GPs that i have seen were both been very professional kind and understanding. Thank you
+Practice response date: 3 years ago
+Practice response:
+Thank you Julie for your kind review. Pam - Practice Manager
+
+Author: Julie
+Date: 3 years ago
+Rating: 5 stars
+I developed chest pain whilst in the surgery. I was promptly given an ecg and was seen by the doctor. The care was excellent whilst I waited for an ambulance to take me to hospital the staff were all very reassuring.
+Practice response date: 3 years ago
+Practice response:
+Hi Julie glad you are feeling better and hope this continues. Thank you for your review - its much appreciated - Pam - Practice Manager
+
+Author: olivia young
+Date: 3 years ago
+Rating: 5 stars
+Hello Olivia, thank you for leaving a 5 star review.
+Practice response date: 3 years ago
+Practice response:
+Hello Olivia, thank you for leaving a 5 star review.
+
+Author: Emily
+Date: 3 years ago
+Rating: 5 stars
+All staff are lovely and helpful
+Practice response date: 3 years ago
+Practice response:
+Thank you for your 5 star review
+
+Author: Lisa
+Date: 3 years ago
+Rating: 5 stars
+When I was a patient here I never had a problem. All the staff are very hard-working.
+Practice response date: 3 years ago
+Practice response:
+Dear Lisa - thank you for your lovely review
+
+Author: Chris Chris
+Date: Edited 3 years ago
+Rating: 5 stars
+I have to say the quality of service improved a lot. Doing extra mile when it comes to patients health is something really nice to see
+Practice response date: 3 years ago
+Practice response:
+Dear Yes Man - Thank you for your lovely review - I will certainly pass your comments on to the team. Thank you
+
+Author: Debbie
+Date: 3 years ago
+Rating: 5 stars
+Thank you for your 5 star review
+Practice response date: 3 years ago
+Practice response:
+Thank you for your 5 star review
+
+Author: J
+Date: 3 years ago
+Rating: 5 stars
+Dear J thank you for your 5 start review - Its much appreciated.
+Practice response date: 3 years ago
+Practice response:
+Dear J thank you for your 5 start review - Its much appreciated.
+
+Author: martin norris
+Date: 3 years ago
+Rating: 5 stars
+I’ve had some health issues for the past 18 months & the staff & doctors @ Heywood Health have been fantastic. Both professional & caring. Thank you to you all.
+Practice response date: 3 years ago
+Practice response:
+Hi there thank you so much for your lovely review. It is much appreciated. We all hope you are feeling better. Kind Regards Heywood Health
+
+Author: Emma Rowles
+Date: 3 years ago
+Rating: 5 stars
+Well our gorgeous little 94 year old grandad fell in his front garden right in front of my eyes and I couldn't do a thing to stop him 😪. Massive massive thank you to the staff at Argyle Street Surgey for the empathy and care you showed me and my grandad. A massive thank you to the reception staff I spoke to which must've sounded like a wailing banshee - your care and consideration were paramount at what was a very upsetting time for me and my family. Please send our thanks to all of the staff there, you are appreciated beyond words 💕
+Practice response date: 3 years ago
+Practice response:
+Hi Emma - thank you so much for your review. It has lifted our team greatly and we are happy to help. We hope your Grandad has recovered and If there is anything else you need don't hesitate to contact us. Pam Ilnyckyj Practice Manager
+
+Author: Vicky Jackson
+Date: 3 years ago
+Rating: 5 stars
+Dear Vicky - thank you for your 5 star review - it is much appreciated.
+Practice response date: 3 years ago
+Practice response:
+Dear Vicky - thank you for your 5 star review - it is much appreciated.
+
+Author: Joanne Burton
+Date: Edited 3 years ago
+Rating: 3 stars
+Some of the receptionist are very rude. No empathy what’s so ever. You would think a reassuring attitude would be in the job description with it being a doctors surgery. Obviously not in that doctors. Don’t get me wrong, it’s not all of them. A few of the staff are lovely. Shame they are let down by the awful ones. Seriously thinking about putting a complaint in. *UPDATE* Practice manager rung me the day I put my review on. Credit where credits due, she was absolutely lovely. She listened to what I had to say and was very understanding. I was quick enough to put a bad review on, so it’s only right I put a good one on when it’s very much deserved.
+Practice response date: 3 years ago
+Practice response:
+Dear Joanne, we are really sorry to hear this. Would it be okay if our Practice Manager contacted you to discuss this further?
+
+Author: Philip Mutch
+Date: 4 years ago
+Rating: 1 star
+Came today to have my surgical staples removed, to my horror the doctor I saw tried to remove them with office stationery equipment, then tried with a pair of scissors when he realised that it wasn't working then sent a nurse to the phoenix centre to pick up the correct tool to do the job, im completely horrified about this place it really does need investigating constantly putting people at risk of harm
+
+Author: Donald Ferguson
+Date: 4 years ago
+Rating: 4 stars
+The staff not that helpful but you could put it down to the viras its very hard to.get a doctors appointment I would not recommend this place to others
+
+Author: Tiny Tears
+Date: 4 years ago
+Rating: 5 stars
+I've been a patient at this surgery for 50 years and there has been a lot of changes but the one thing that hasnt changed are the staff who out of their way to help. I've always been able to get an appointment when needed and cant fault the service.
+
+Author: A H
+Date: 4 years ago
+Rating: 4 stars
+Not to busy on this visit. Plenty of space to maintain social distancing, sanitizing station at entrance.
+
+Author: Amir Masood
+Date: 4 years ago
+Rating: 1 star
+Impossible to get an appointment. Rang at 8am to be told no appointments and to book in with an out of hours GP. Advised by the out of hours GP that I require a blood test and now can't book in for a blood test despite ringing at 8am already and just told to ring at 8am again.
+
+Author: Phil Mutch
+Date: 4 years ago
+Rating: 1 star
+Cant even book a blood test. But was told I can collect empty samples and have tests done at hospital. Doesn't serve a purpose to the community may as well close it down.
+
+Author: RIK HESTER
+Date: 4 years ago
+Rating: 1 star
+Literally the worst doctors surgery I,ve experienced in my 60 odd years. I,ve lost count the amount of times they have screwed up when sending prescriptions to local pharmacists
+
+Author: Maria Beswick
+Date: 4 years ago
+Rating: 1 star
+This surgery isnt worthy of any positive review from me. I tried ringing the surgery today from 8am and rang 78 times. Not even possible to go into a telephone queue system.... its just engaged then the call ends meaning you have to redial. When i finally got through at 13.15 !!!! I was advised to ring in the morning at 8am. So annoying and staff unhelpful
+
+Author: Daniel Murdoch
+Date: Edited 4 years ago
+Rating: 3 stars
+Daniel Murdoch10 reviewsEdited 4 years ago
+
+Author: Augustine Ajayi
+Date: 5 years ago
+Rating: 1 star
+This Medical surgery is the worst I have ever experienced.
+
+Author: John Gibbons
+Date: 5 years ago
+Rating: 1 star
+Terrible I'd been waiting outside the front door since 7 .45, door opened at 7 minutes past 8, the receptionist then said can I ask you why your late, it went on like that the receptionist was really short and patronising with me, do they work for the NHS, or the stasi, not very welcoming at all, I'm going to change my doctors as soon as possible Who trained these people?
+
+Author: ethen291
+Date: 5 years ago
+Rating: 1 star
+Absolutely disgusting surgery since some senior authority decided to dictate and join 2 doctors surgery together without any real consultation or correspondence from their original surgery to save money, only to have longer waiting times, rushed unsympathetic & patronising staff and the care non well below par, most credited with the amount of added pressure constrained on them by some not so clever, clerical career minded self obsessed minion, it’s dirty, it smells there is no light in the reception it’s like stepping into the 1970 with the decor, but we should be grateful as they work under the socialist NHS who’s accountable to no one
+
+Author: Anthony Rispin
+Date: 5 years ago
+Rating: 5 stars
+Anthony RispinLocal Guide · 43 reviews · 52 photos5 years ago
+
+Author: Omar
+Date: 6 years ago
+Rating: 5 stars
+OmarLocal Guide · 72 reviews · 125 photos6 years ago
+
+Author: John
+Date: 6 years ago
+Rating: 1 star
+Poor service. Never any appointments, even if you ring at 8am and are first/second in the queue.
+
+Author: Warren paul Taylor
+Date: 6 years ago
+Rating: 1 star
+Worst docs ever, waited over 45 mins after my appointment time, lady in half hour for same doc, was told 10 mins per patient per doc, took me 1 month to get the appointment, 8 people came in after me and the same 8 left before me.
+
+Author: Michelle Riley
+Date: 6 years ago
+Rating: 1 star
+Never no appointments!! I'm ill today not in 3 weeks which is earliest appointment!! Time to move doctors! Never see the same one twice, not like years ago when the family had tbe same doctors 😒 …
+
+Author: joe kelly
+Date: 6 years ago
+Rating: 5 stars
+Theyre always busy , these reviews make it sound like theyre sat polishing theyre nails, the receptionists are constantly answering calls between taking apointments , people complaining about eating disorders .. turn down the odd burger ! …
+
+Author: DJ T
+Date: 6 years ago
+Rating: 1 star
+Very unwilling to help, just want to avoid as much as they can
+
+Author: Shaun White
+Date: 6 years ago
+Rating: 1 star
+2 of us tried to make appointments for days, passed from pillar to post. One of us was treated by a nurse in the surgery and was told to see the GP only to be told at the next desk no appointments available for weeks. York St was brilliant, since the merger Argyle St MC is not fit for purpose and has ceased functioning. Worryingly they do not ask what is wrong with you before refusing help.
+
+Author: Darren Hulme
+Date: 6 years ago
+Rating: 1 star
+Darren Hulme6 years ago
+
+Author: Stuart Buckley
+Date: 6 years ago
+Rating: 1 star
+Hopeless. Gets worse by the day. Can't get appointments. Stupid automated message when you ring and by the time you get through, all available appointments have gone. My wife has been diagnosed with cancer. 2 parts of her much needed medication were lost after they sent the prescription to a chemist we've never used before when there is a chemist 200 yards from the surgery that we always use.
+
+Author: Mark Bardsley
+Date: 6 years ago
+Rating: 1 star
+Last year I had an eye problem and they told me they had sent an eye mail to the eye hospital but when I contacted the hospital they told me they hadn't received anything. Yesterday I hadn't received my medication via Pharmacy4u so I contacted the surgery to find out why? They told me I ordered it to soon but nobody told me so I've now got no medication for a slipped disc. I went to the surgery yesterday and they said they had just done it while I was there. Just contacted Pharmacy4u and they haven't received anything, tried to phone the surgery but the phone is off. Really bad customer service!
+
+Author: Gill Garner
+Date: 6 years ago
+Rating: 1 star
+Worst gp surgery ever. On hold for 15 minutes only to be told no appointments left. Have rang 3 times this week. Need more doctors , more receptionists, more phone lines and more appointments.
+
+Author: erica field
+Date: 7 years ago
+Rating: 4 stars
+erica field1 review7 years ago
+
+Author: NikitaChantelle Downing
+Date: 7 years ago
+Rating: 5 stars
+NikitaChantelle DowningLocal Guide · 27 reviews · 23 photos7 years ago
+
+Author: joe kelly
+Date: 6 years ago
+Rating: 5 stars
+Theyre always busy , these reviews make it sound like theyre sat polishing theyre nails, the receptionists are constantly answering calls between taking apointments , people complaining about eating disorders .. turn down the odd burger ! Sack of crisps .this is what happens when conservatives get in power , they always sort out my prescriptions on time , every time , i rarely go in ; theyre always polite when i have , seems giving 100% isnt good enough for some people
+
+Author: Motoko2ndgig
+Date: 7 years ago
+Rating: 1 star
+Failed to do anything for my eating disorder for fifteen years enough said.
+
+Author: Sigita Bakeliene
+Date: 8 years ago
+Rating: 1 star
+I am very dissatisfied with the service. I do not always get professional help
+
+Author: M P
+Date: 8 years ago
+Rating: 1 star
+I find myself waiting on-hold only to get through and be told there are no appointments left for the day. On the rare occasion you do manage to secure an appointment, you tend to end up with Dr Bunting who is a miserable witch. Do yourself a favour and save your time, ring the out of hours instead because you will only be pointed in that direction by reception anyway.
+
+Author: Veronika Roth
+Date: 8 years ago
+Rating: 1 star
+Horrible !!!impossible to get appoitment in this place ring every day and no answer or finally if someone answer all i get is ring back tomorrow or its not emergency sorry absolutely rubish...
+
+Author: Janeysmurf .x.
+Date: 8 years ago
+Rating: 2 stars
+Almost impossible to get an appointment. Also told to ring first thing in the morning to get a cancellation. Please book 2 weeks in advance if your going to be I'll.
+
+Author: MC13ANY Double Deuce
+Date: 8 years ago
+Rating: 1 star
+MC13ANY Double Deuce8 years ago

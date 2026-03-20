@@ -4,11 +4,16 @@ Postcode: SK13 6NN
 Google Maps title: Simmondley Medical Practice
 Google rating: 3.6
 Google review count: 20
-Google Maps URL: https://www.google.com/maps/place/Simmondley+Medical+Practice/@53.4399906,-1.9691058,17z/data=!4m8!3m7!1s0x487bcbeb33d338e9:0x93ba50f866ff3e60!8m2!3d53.4399906!4d-1.9691058!9m1!1b1!16s%2Fg%2F1tdwdh66?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Simmondley+Medical+Practice/@53.4399938,-1.9716861,17z/data=!4m8!3m7!1s0x487bcbeb33d338e9:0x93ba50f866ff3e60!8m2!3d53.4399906!4d-1.9691058!9m1!1b1!16s%2Fg%2F1tdwdh66?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 20
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/C81640-simmondley-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Mark Ramsden
 Date: 5 months ago
@@ -53,9 +58,59 @@ singersue11Local Guide · 38 reviews · 10 photos2 years ago
 Author: Stephen Gallagher
 Date: 2 years ago
 Rating: 1 star
-Stephen GallagherLocal Guide · 47 reviews · 4 photos2 years ago
+Stephen GallagherLocal Guide · 48 reviews · 4 photos2 years ago
 
 Author: Kai Rochford
 Date: 2 years ago
 Rating: 4 stars
-Kai RochfordLocal Guide · 91 reviews · 222 photos2 years ago
+Kai RochfordLocal Guide · 92 reviews · 222 photos2 years ago
+
+Author: Bernie B
+Date: 3 years ago
+Rating: 1 star
+Cherry pick the patients... Will not accept ppl from Glossop even through practice is in Glossop...
+
+Author: Leigh Jones
+Date: 3 years ago
+Rating: 5 stars
+Efficient staff. Adequate parking.
+
+Author: Kathryn Bates
+Date: 3 years ago
+Rating: 5 stars
+I want to say thank you to Tina. Twice I have phoned for information about hospital correspondence. Each time she has asked if she could ring me back, which she did after finding out all the information I needed and explained everything. Well done Tina
+
+Author: julie clarke
+Date: 4 years ago
+Rating: 1 star
+This surgery used to be brilliant. Over the years it's gone downhill. 40 years I've been with them and went to appointment today to be told I'm out of their area if I get really poorly and need a doctor they wont come out to me. So on the hunt for new one
+
+Author: Daniel Shaw
+Date: 4 years ago
+Rating: 5 stars
+Been coming here since I was a young boy. I'm now 35. No complaints. Friendly staff
+
+Author: Sarah Beswick
+Date: 6 years ago
+Rating: 5 stars
+Cant fault this surgery been here 25+ years would never move all the gps are fab esp dr parikh shes kind understanding and great at her job very lucky to be a patient here
+
+Author: P j M
+Date: 6 years ago
+Rating: 5 stars
+Polite, efficient, helpful and more importantly they look after me very well. I'm sadly one of those who live depends on the uk NHS and my doctors at the practice are key in this. Thank you to all the team
+
+Author: Anonymous Anon
+Date: 7 years ago
+Rating: 1 star
+This surgery has done nothing but go downhill. From being misdiagnosed as a teen and moving away from Glossop, to moving back to this surgery after moving back to Glossop, clearly nothing has improved. Extremely poor communication and organisation, doctors fob you off and think that giving you x4 courses of the same antibiotic at the same dosage is acceptable except the government preaches not to repeatedly take antibiotics and the receptionists share an attitude with the likes of the gestapo. Perhaps a half decent surgery if you do not need regular visits, but if you are quite reliant on your GP, do not even consider.
+
+Author: j b allen
+Date: 9 years ago
+Rating: 5 stars
+I would like to thank the practice for all the care and understanding which I have received over the last 30 years. I have recently relocated, but I know it will be difficult to find a surgery with such helpful and caring staff. When I joined the practice, it was in the smaller surgery with just Dr Bhatt. I remember when I had my first baby he came to the house with a card -which was so thoughtful. But this is the tone and ethos that he, as the only doctor, set. And that has continued.I think too that the fact some of the same staff then are still there now obviously make it a happy work force.....even with all the changes which they have had to embrace. I was concerned that when the surgery expanded, the atmosphere would be lost. But the staff embraced it and it went from strength to strength. I was delighted when Dr Bhatt came out of retirement. I have never encountered a better GP. You are very blessed to have him at the practice. He is an extremely clever doctor who is so hard working and so respectful. I can't thank him enough for all the years he was my GP. I didn't want to leave the practice without saying a big thank you to you all. I will miss you greatly.
+
+Author: deborah Trigg
+Date: 10 years ago
+Rating: 5 stars
+Lovely, friendly, helpful practice. Always accomodating, nothing too much trouble. Particularly Betty & Joan on reception. Thankyou for everything.
