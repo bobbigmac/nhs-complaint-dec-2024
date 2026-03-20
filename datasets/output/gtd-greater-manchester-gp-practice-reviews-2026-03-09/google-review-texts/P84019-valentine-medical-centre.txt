@@ -3,32 +3,42 @@ Canonical code: P84019
 Postcode: M9 8PP
 Google Maps title: Valentine Medical Centre
 Google rating: 3.2
-Google review count: 197
-Google Maps URL: https://www.google.com/maps/place/Valentine+Medical+Centre/@53.5156972,-2.213101,17z/data=!4m8!3m7!1s0x487bb0f673961bb3:0x170f6ae11630a166!8m2!3d53.5156972!4d-2.213101!9m1!1b1!16s%2Fg%2F1tj2bk65?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 196
+Google Maps URL: https://www.google.com/maps/place/Valentine+Medical+Centre/@53.5157004,-2.2156813,17z/data=!4m8!3m7!1s0x487bb0f673961bb3:0x170f6ae11630a166!8m2!3d53.5156972!4d-2.213101!9m1!1b1!16s%2Fg%2F1tj2bk65?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 196
+Owner replies collected: 1
+Raw review responses captured: 20
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84019-valentine-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Jonathan Smith
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 Fabulous practice In a new patient and I can’t say enough good things about all the staff and how well you are treated - thank you
 
-Author: J M
-Date: a week ago
-Rating: 1 star
-The worst experience ever. No appointments available. I rung 5 times this week. Nothing, not even a will to help.
+Author: Beauty Transport Inc
+Date: 3 weeks ago
+Rating: 5 stars
+A very professional office where the doctor is very dedicated and explains everything well in detail! Excellent service from the entire team.
 
 Author: Amy McCall
-Date: 2 weeks ago
+Date: 3 weeks ago
 Rating: 1 star
 Dr's are amazing but the manager on reception is diabolical. Zero empathy. I will be making a formal complaint. As someone who is struggling with mental health, the so called manager put the phone down me and wished me "good luck" offering no help, only attitude whilst questioning my honesty towards my mental health journey. She clearly has no idea how difficult it is to even admit to having such problems before then seeking help. She should not be the manager of a reception in a GP and im interested to see how she manipulates the situation when I make my formal complaint. I feel for the staff below her as the young girl I spoke to was very kind
 
 Author: Stephen Ruane
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
-Stephen Ruane2 reviews3 weeks ago New
+Stephen Ruane2 reviewsa month ago
+
+Author: Aneta Koltunska
+Date: a month ago
+Rating: 5 stars
+I was waiting for a long time to see Dr Blockley as one of the nurse (who was also great)recommended her .Dr Blockley was amazing,very knowledgeable and compassionate . She listens and make you feel like she cares. Thank you again.
 
 Author: Dylan Morgan
 Date: a month ago
@@ -59,3 +69,931 @@ Author: Brenda Lee
 Date: a month ago
 Rating: 2 stars
 Brenda Leea month ago
+
+Author: Julie Burke
+Date: a month ago
+Rating: 5 stars
+Seen Dr Gardner today she was very helpful and answered all my questions.Also the receptionist staff helpful.
+
+Author: nadeem ahmad
+Date: a month ago
+Rating: 5 stars
+Very professional and polite Excellent communication skills
+
+Author: Doug Wilson
+Date: a month ago
+Rating: 5 stars
+Easy to book an appointment and I was seen on time.
+
+Author: Linda Matthews
+Date: a month ago
+Rating: 5 stars
+Excellent care from Donna Flynn at Valentine's medical centre. She listens to concerns with care and sensitivity and applies her expertise with thoughtful intelligence. Thank you.
+
+Author: Amanda Tasker
+Date: a month ago
+Rating: 5 stars
+Pam Griffiths (nurse) is a superstar! Always greets you with a smile and you feel welcome. Whether it's for treatment or advice she seriously is my first point of call. Other than Lynne she is the only one that can get blood out of me too. Nothing is ever too much for her.
+
+Author: bill Beaton
+Date: Edited 2 months ago
+Rating: 5 stars
+This is my Doctor's surgery. I have been a patient there for 16 years and have no bad comments to make about any of the Doctors or the reception staff.
+
+Author: Carol Howarth
+Date: 2 months ago
+Rating: 5 stars
+Highly recommend this GP Practice. I have been registered with them for many years. Recently had tests administered by Lynn Hulme, who is highly professional and puts you at ease.
+
+Author: Mihaela Niculoiu
+Date: 2 months ago
+Rating: 5 stars
+I have seen Doctor Sadiq today, as always she shows professionalism, kindness, understanding and she always take the right actions in regards with investigation, treatment plan. If I could I would give more than 5 stars.
+
+Author: Terry Mungins
+Date: 2 months ago
+Rating: 4 stars
+I found the Surgery to be very much improved. My Doctor was very polite and easy to talk to. My examination was extremely thorough. And the doctor was also able to reassure me and give me some sound advice.
+
+Author: Maura Reilly
+Date: 2 months ago
+Rating: 5 stars
+I had my regular blood test with Lynn and as usual we had a chat and ended up laughing. It is always a pleasure to see Lynn as she is so lovely and professional. I am always treated with respect and am informed of all treatments and results. .
+
+Author: david maguire
+Date: 2 months ago
+Rating: 5 stars
+The reception staff are polite and helpful, Doctor Mahmood thank you for your exceptional care and dedication I am so grateful for your expertise and kindness, your compassion and professionalism are deeply appreciated, thank you for being such an amazing Doctor.
+
+Author: Viv Jay
+Date: 2 months ago
+Rating: 5 stars
+Very well treated by nurse Julie. Listened to and also attentive to my needs. She is a credit to the practice
+
+Author: Brenda Barr
+Date: 2 months ago
+Rating: 5 stars
+Dr Blockley and Dr Gardener are fantastic so thorough knowledgeable kind and caring Donna Flynn the nurse is amazing also the girls on reception are always welcoming and helpful
+
+Author: Gary Roberts
+Date: Edited 2 months ago
+Rating: 5 stars
+Explained my problem in fine detail Was reassuring with his information
+
+Author: Christine JJ
+Date: 2 months ago
+Rating: 5 stars
+This place is amazing. Personal helpful and nice. Finally after 5 years i found an amazing gp. DR. Rebecca Blockley . She is an amazing person. I already have someone who helps and solves my health problems. Thank you from the bottom of my heart Dr. Blockley xxxx
+
+Author: Pauline Ryan
+Date: 2 months ago
+Rating: 5 stars
+Pauline Ryan1 review2 months ago
+
+Author: Anne-Marie Green
+Date: Edited 3 months ago
+Rating: 5 stars
+Lovely reception staff. Kind doctor who listened
+
+Author: Patricia Locke
+Date: 3 months ago
+Rating: 5 stars
+Following a thorough review with the asthma nurse on Friday, I made an appointment with Dr Mahmood who was also very thorough. Having asked the relevant questions, he soon diagnosed my condition and gave me excellent advice and a suitable prescription. Dr Mahmood is a very good doctor which is what I’ve come to expect from Valentine Medical Centre, an excellent doctors’ surgery. Thank you.
+
+Author: Lisa Bell
+Date: 3 months ago
+Rating: 5 stars
+Lisa Bell4 reviews3 months ago
+
+Author: sarah elford
+Date: 3 months ago
+Rating: 5 stars
+Great surgery and great doctors
+
+Author: Grace Bose
+Date: 3 months ago
+Rating: 5 stars
+Caring, friendly, patient, compationate, sympathetic and understanding while still maintaining an aura of professionalism. These are the words to describe all the staff of Valentine Medical Centre. God bless you all.
+
+Author: Emmanuel Ashiadey
+Date: 4 months ago
+Rating: 5 stars
+Valentine Medical Centre is in a million in patient care and follow up. Both paramedical and admin staff are professional and excellent in their interactions with their customers! With Valentine Medical, I know I am in safe hands. Brilliant works keep it up there!!!
+
+Author: Jean Lee
+Date: 4 months ago
+Rating: 5 stars
+Jean Lee2 reviews4 months ago
+
+Author: Gilda Iadi
+Date: 4 months ago
+Rating: 5 stars
+Gilda Iadi8 reviews4 months ago
+
+Author: Hasan Sajid
+Date: 4 months ago
+Rating: 1 star
+Realy bad receptionist rude .. cut you when you try to speak do not care one bit need action against them they can not treat people like this i feel sorry for elderley people imagine how they feel very sad people especially lady named MIA
+
+Author: Anaaya Khan
+Date: 4 months ago
+Rating: 1 star
+The reception staff need investigating very rude behaviour from them they dont care ... either the doctors are telling them to behave like this or theh are genuinely nasty people and hate their job especially lady named mia i have already put complaint in today and will take this further enough is enough with this gp practice eiher fix up or we will gather the locals to protest againt this surgery
+
+Author: Lauren Budgen
+Date: 4 months ago
+Rating: 5 stars
+Lauren Budgen3 reviews · 1 photo4 months ago
+
+Author: Beezle EVP's
+Date: Edited 5 months ago
+Rating: 4 stars
+A big thank you to the staff . Always ready to help . A big thank you 💕 Maria Lally. …
+
+Author: Zara A
+Date: 5 months ago
+Rating: 1 star
+I’m pretty sure this practise closes from 1-2pm for lunch like every other GP but whenever I ring they’re closed at 12.30pm. Why do they close 30 mins before lunch starts? Very poor service if you ask me.
+
+Author: anthony mooney
+Date: 6 months ago
+Rating: 5 stars
+anthony mooney10 reviews6 months ago
+
+Author: Sheila Searson
+Date: 7 months ago
+Rating: 5 stars
+My appointment today was with Dr Sadiq. I found her very understanding. She listened to me and advised me for the best way forward. A n amazing doctor. Relateable and kind.
+
+Author: Rose Gittins
+Date: 7 months ago
+Rating: 5 stars
+My experience at this practice has always been excellent. The reception staff are very helpful and do everything they can to ensure you get a same day appointment, whether face to face or via a phone consultation. Each doctor I have seen has been very professional and taken time to discuss my symptoms and what treatment might be best. In my experience nursing and health care staff have taken time make me feel relaxed when having blood taken or injections. On a scale of 1 to 10 In would give them 10.
+
+Author: Brian Blackwell
+Date: 7 months ago
+Rating: 5 stars
+Brian Blackwell1 review7 months ago
+
+Author: J
+Date: 8 months ago
+Rating: 3 stars
+Unfortunately it is hard to get an appointment here due to so many foreigners. Of all the doctors I have seen here in over 20 years, only 3 have been good. Last one I saw was overweight and seemed like he was just in it for a paycheck. Not caring at all. The nurses are great tho 👍
+
+Author: Adam Kozielec
+Date: 8 months ago
+Rating: 5 stars
+Very nice pleace
+
+Author: collyhurst strumer paul
+Date: 8 months ago
+Rating: 5 stars
+Just seen doctor kajabi ? First class could not have been treated any better 👌 …
+
+Author: Daniela Marina
+Date: 8 months ago
+Rating: 1 star
+How can you call at exactly 8:45am and the queue be already full? And then 15min later you still cannot get through, what kind of service is this? Can’t get an appointment with a serious medical condition
+
+Author: marvin smith
+Date: 9 months ago
+Rating: 1 star
+This is the worst doctors ever and the receptionists hav3 a proper attitude problem there very unhelpful and when your crying out for help they have no empathy whatsoever very clinical in manner or speech abrupt and of no help whatsoever. This surgery is that bad you cant get an appointment for weeks never mind a telephone call I used to dread having to try and book an appointment so decided to go to another GP which is much better and actually care and cater for the patients like it should be stay clear if this surgery it made my depression even more worse 😊
+
+Author: Johanne H
+Date: 9 months ago
+Rating: 5 stars
+I have been a patient for over 40 years at Valentine Medical Centre and always been met with a courteous positive, and swift response from all the staff I have been in contact with. Recently I have had to attend a few appointments and I have to say, the reception and medical staff have been excellent. Their professionalism knowledge and kindness has been exceptional. I would like to thank DR Basnet, DR Gardener and DR Khojani for their medical knowledge and understanding whilst supporting me with my treatment. Thankyou to all the team at Valentine Medical Centre.
+
+Author: Emma Bridge-doyle
+Date: 9 months ago
+Rating: 1 star
+Most reception staff are very attentive and polite. If no appointments still try and help but as for management it is appalling!! I am sure practice manger is a magician as is never there to reply to calls or emails. No communication what so ever.
+
+Author: lee mogridge
+Date: 10 months ago
+Rating: 5 stars
+Been going here for years and the staff and doctors and nurses absolutely brilliant. That’s why the 5 star review
+
+Author: Helen Roberts
+Date: 10 months ago
+Rating: 5 stars
+No 30 in the queue when I rang for an appointment the numbers swiftly went down. Dealt with quickly and efficiently by reception. Given a appointment for today. Doctor was very attentive, listened then examined the area quickly determined the problem and gave solution. A very professional team.
+
+Author: Anthony
+Date: 10 months ago
+Rating: 5 stars
+Was actually good visit today
+
+Author: Lilly Rigby
+Date: 11 months ago
+Rating: 1 star
+My boyfriend feels sick everyday and his stomach has been weird for years and still no help they are lucky to get one star
+
+Author: Kinshow Promotions
+Date: a year ago
+Rating: 1 star
+Kinshow Promotionsa year ago
+
+Author: John Green
+Date: a year ago
+Rating: 1 star
+Wouldn't even give this surgery 1 star. Where do I start receptionist are rude tell you to phone in the morning at 8.45 and by 8.50 they have no appointments. You also are like 50 in the qué before they answer and when. They do they do not have any respect for you. I Needed pain relief as i am in pain waiting for an operation. The Doctors don't even look at your notes and just refuse to give you any medication as I have ran out. Ask why they say you need a medication review And phone back tomorrow when you do they say they got no appointments. This is the worst doctors surgery and I am so glad to be leaving AVOID AT ALL COSTS YOU HAVE BEEN WARNED
+
+Author: Ken Patrick
+Date: a year ago
+Rating: 2 stars
+Valentine's Medical Centre is no longer the reputable GP practice it once was. The inability to secure an appointment with a doctor has been incredibly frustrating. Each time I called, I was informed that all appointments were fully booked and advised to call back the following day, only for the same situation to repeat itself. The receptionists were discourteous, and scheduling an appointment with them has become exceedingly difficult. For these reasons, I have decided to change my GP.
+
+Author: Ryannn
+Date: a year ago
+Rating: 3 stars
+Amazing Staff and Amazing doctors but the way they have to handle appointments is dreadful especially if you work late and are not able to be up by 8:45
+
+Author: Kimberly Gibson
+Date: a year ago
+Rating: 5 stars
+Kimberly Gibson1 review · 1 photoa year ago
+
+Author: Shreen Khorsheed
+Date: a year ago
+Rating: 5 stars
+Shreen Khorsheeda year ago
+
+Author: Belinda Atherton
+Date: a year ago
+Rating: 1 star
+Probably the worst GP procedure ever, opens at 8:45 15 attempts to even get in the call queue waited 15 minutes in the call queue to be told by a very rude receptionist there are no appointments! As a GP receptionist myself I can fully understand the stress of the job when the phone is none stop ect, but the attitude is ridiculous and laughable! They really need to look at there appointment procedure and opening hours cause it is really not accessible to the public
+
+Author: Zarmina Zaman
+Date: a year ago
+Rating: 5 stars
+Want to leave 5 star from Lynsey receptionist was very helpful and listens to our problems and solves it we was told in the morning after we waited 40 mins to ring back the next day but when I called in the afternoon Lynsey sorted it this is what we want someone to help us listen to us not just be rude and put phone down or get told we can’t do anything we feel helpless then thanks Lynsey keep helping people and good things will come back to you
+
+Author: Eileen Cassidy
+Date: a year ago
+Rating: 5 stars
+There is so much negativity around that I wanted to give some positivity for the health service I’ve received. I’ll been pretty poorly for a while, and without Dr Basnet and Alice Richardson I wouldn’t be where I am now. Still not fully there but fingers crossed I’m getting there. Also to the ladies on reception who have been great always take the time to chat even though they are busy.
+
+Author: pete freakes
+Date: Edited a year ago
+Rating: 5 stars
+Only been to this surgery twice I saw Dr Topping he was superb got the FULL MOT and blood test. 5 star treatment👍👍 I can’t fault this surgery. Brilliant …
+
+Author: Frederick Castro
+Date: a year ago
+Rating: 5 stars
+Good day. I hope everyone is well. This comment is to express gratitude to Lisa, who answered my phone a few days ago. Simply because she brightened my day by delivering exceptional care and real concern in response to my inquiry. She made an extra effort to meet the patient's needs. She is highly professional and passionate about what she does, but most importantly, she is incredibly polite and well-mannered, which is what we value most. Thank you so much Lisa for being there for us. Yours sincerely, Mr. Castro
+
+Author: Mick Farrell
+Date: a year ago
+Rating: 1 star
+Mick Farrella year ago
+
+Author: Joan Raftery
+Date: a year ago
+Rating: 5 stars
+Joan Raftery1 reviewa year ago
+
+Author: tomasz krawczyk
+Date: a year ago
+Rating: 1 star
+Valentine medical center has a useless epoitment system that makes no sense. I haven't been able to see a doctor for 5 days because they are fully booked and have no appointments available. From my point of view, patients who cannot get an appointment due to a lack of available appointments should be automatically booked for an appointment the next day, and not referred to walking center regardless of the type of patient's disease and health condition.
+
+Author: Elisabeth
+Date: a year ago
+Rating: 5 stars
+I am very pleased with this surgery. To make appointments is good as it used to be. Excellent doctors, especially dr Sadie.
+
+Author: anthony Tormey
+Date: a year ago
+Rating: 5 stars
+Excellent advice
+
+Author: Shaun
+Date: a year ago
+Rating: 5 stars
+Shaun1 reviewa year ago
+
+Author: Carla Morris
+Date: a year ago
+Rating: 5 stars
+Tuesday and today were great! The GP and Nurse I saw were fabulous
+
+Author: Asma Nawaz
+Date: a year ago
+Rating: 5 stars
+Outstanding
+
+Author: alexandra cutler
+Date: a year ago
+Rating: 5 stars
+Extremely satisfied with the treatment I receive and the care provided.
+
+Author: karl power
+Date: a year ago
+Rating: 5 stars
+Very professional listened carefully and reassured me
+
+Author: Ray Pycroft
+Date: a year ago
+Rating: 5 stars
+I have been a patient at Valentine Medical Centre since it open. I have always been able to get a appointment on the odd times i could not arrange a visit I was always offered a phoned call with a doctor. Over the last weeks i have been treated by Dr Gardner and Dr Sadiq and the care and attention I received was execptional.
+
+Author: Bernadette Norman
+Date: a year ago
+Rating: 5 stars
+Always excellent treatment from the medical staff. Considerate and professional. Making appointments is an issue but isn't it everywhere
+
+Author: June Doran
+Date: a year ago
+Rating: 5 stars
+Got through on phone quickly reception very helpful. Doctors contacted us and came out quickly and were very helpful too.can not fault them thankyou
+
+Author: Rose Brogan
+Date: a year ago
+Rating: 5 stars
+Dr Blockley explained things well and was friendly
+
+Author: Shereen Sinjab
+Date: a year ago
+Rating: 5 stars
+Very easy to get seen by a Dr. They take me seriously and don't mess around with referrals. Never had a bad experience. The best Drs in MCR.
+
+Author: Vicki Whiteley
+Date: a year ago
+Rating: 5 stars
+Vicki Whiteleya year ago
+
+Author: Karolina Rozwarska
+Date: a year ago
+Rating: 5 stars
+Fantastic service
+
+Author: Janet Hartley
+Date: a year ago
+Rating: 5 stars
+I've been a patient at this practice for 43 years and have always been treated with kindness and professionalism. Recently have needed several visits and a referral. I am very happy with all the staff and advice and treatment given. Managed to get a same day appointment on each occasion, so am very pleased that this is my GP practice.
+
+Author: Paula Potter
+Date: a year ago
+Rating: 4 stars
+Paula Potter1 photoa year ago
+
+Author: Chris Connolly
+Date: a year ago
+Rating: 5 stars
+I saw Dr Hargreaves today an excellent Doctor. Very friendly and puts you at ease. Would highly recommend. My family have been with this Practice for many years and I have always managed to get an appointment.
+
+Author: Stephanie monkey
+Date: a year ago
+Rating: 5 stars
+Dr Hargreaves is exceptional. She is thorough, approachable, friendly and trusted. The other GPs and nurses at the practice are also wonderful. An appointment can be arranged on the same day. The patient care is excellent and as a family we are extremely grateful.
+
+Author: Nicola McGreavey
+Date: a year ago
+Rating: 3 stars
+Nicola McGreavey3 reviewsa year ago
+
+Author: ANON N/A
+Date: a year ago
+Rating: 1 star
+The appointment system does not work, and is downright stupid. They state the line opens from 8:45 but every time I call, it tells me to ring back. I finally get in (today anyway) on my 38th attempt calling, at 9:10, told i’m 25th in the queue, finally reach 4th and it cuts. I call back and it doesn’t go through. I have been trying to make an appointment last week and have failed each day. Such a poor system, the person I’m trying to make an appointment for has been suffering for over a week and the only advice given from pharmacies is to call the GP. What is the point when we can’t even receive a service. Disappointed and frustrated. Most likely will end up dead before getting an appointment at this rate.
+
+Author: Filmelement
+Date: 2 years ago
+Rating: 1 star
+Can rarely get an appointment with a 15 minute window from 8.45 to 9 to book in. This creates a lot of stress and anxiety added to whatever other illness you may be calling for. Calling after this time you get advised to go to an over populated A&E.
+
+Author: Michael Teng
+Date: 2 years ago
+Rating: 1 star
+Michael Teng2 years ago
+
+Author: sam smart
+Date: 2 years ago
+Rating: 1 star
+Absolutely useless system, u have basically got to be dead to get an appointment, and trust me it will happen. Phone between the allotted 15min gap.....who gets through to be told phone back later. 26 in the queue...joke service
+
+Author: Stacey Daley
+Date: 2 years ago
+Rating: 1 star
+When trying to contact them, they go through it all, then cut you off instead of answering. No wonder people go to hospital and stress them out.
+
+Author: steven coates
+Date: 2 years ago
+Rating: 2 stars
+There are positives with Valentine and huge negatives. I find it so frustrating ordering from repeat prescriptions - you do this online, it says it has gone through- then you get to pharmacy and suddenly one item has just magically fallen off your repeat prescription despite it being on there for the last 3 years- the arbitrary allowing things on a repeat and randomly with no notice taking things off- is very dangerous and very frustrating.
+
+Author: hazel kay
+Date: 2 years ago
+Rating: 1 star
+Cannot get an appointment. The system becomes overloaded with people having to ring at 8.45, you aren't even put in a queue to speak to reception. The line just goes dead. Went in to make an appointment, told that they don't take appointments face to face and to call up to pre book. Called and told all pre booked appointments are taken and that it was impossible to make one. Asked when they would be adding new appointments and the receptionist said that the manager adds them whenever and they couldn't tell me. This system doesn't work for the public, can only assume it works for the receptionists. They still have the same answer phone message saying that the doctors aren't taking face to face appointments and that it's triarge only. Both dam head medical centre and Victoria Avenue doctors take pre booked appointments. The best they can offer when pushed is to get the doctor to phone you. I work, cannot take calls on the shop floor or when I'm with clients
+
+Author: Danish habib
+Date: 2 years ago
+Rating: 5 stars
+I have nothing but good things to say about this surgery. Good and professional reception staff very quick in answering phone even at busy times. The doctors are a mix of senior and junior doctor. Oveall a good experience uptill now.
+
+Author: Martin John Faulkner
+Date: 2 years ago
+Rating: 3 stars
+Martin John FaulknerLocal Guide · 12 reviews · 8 photos2 years ago
+
+Author: Edgecumbe Vanbeck
+Date: 2 years ago
+Rating: 3 stars
+Like the majority of GP Surgeries : 1). There are too few medical practitioners who are, quite reasonably, unable to work enough hours to satisfactorily cope with too many patients with an increasingly ageing profile. 2). Virtually every administration since 1948 has sought to save money by underfunding the NHS and the 21st century has seen Primary care budgets particularly harshly hit. 3). Like most surgeries it no longer offers an allocated practitioner for patients with chronic issues. That is inherently inefficient. (Obviously acute problems SHOULD be dealt with by the first available practitioner.) 4). Whether through pressure of patient numbers, poor recruitment, underfunding or a combination of the three - the administration is weak. 5). The telephone system itself is inadequate and, given the time it takes to receive a reply, so are the staffing levels ! Calls from the surgery to patients are made using a withheld number which precludes patients from blocking calls from withheld numbers 99% of are nuisance and or scam calls 6). The supposedly interactive IT system for prescription renewal is unfit for purpose. Improvement is required ! The ancillary medical staff - specialist nurses for example - are friendly and as helpful as they can be given their workloads and the restrictions of their job descriptions. Pressure of work seems to have resulted in the GPs themselves being robotic and prone to make mistakes.
+
+Author: Mandy Hobson
+Date: Edited 2 years ago
+Rating: 5 stars
+I have seen Dr Harniesstwice now and he is such a lovely gp . He makes you feel at ease and always very friendly. My main issues are menopause related and he totally gets it and understands. I highly recommend any lady that is suffering out there please see this lovely man and also Dr blockly who I have also seen and gets it .
+
+Author: Rebecca Odonnell
+Date: 2 years ago
+Rating: 1 star
+Impossible to get appointment, no queue just disconnected awful surgery
+
+Author: Kath Wilson
+Date: 2 years ago
+Rating: 2 stars
+Ive tried for wks to get an appointment to be told ring up on the day i cant im on ward every day we cant use our phones and cant wait on phone in que ip to 16 to 20 peopel think matron have summit to say so why canmake an appointment in advsnce i work
+
+Author: steve brunton
+Date: 2 years ago
+Rating: 1 star
+don't open phone line on time friday 2.24pm and still line says closed
+Practice response date: 2 years ago
+Practice response:
+Apologies, today is Good Friday which is a Bank Holiday so the practice is not open. If you need a GP then please call 111 to access the out of hours team.
+
+Author: kevin Dean
+Date: 3 years ago
+Rating: 5 stars
+All the staff including the receptionists nurses and doctors are always so helpful. I am so lucky to be a patient at this medical centre
+
+Author: Mark
+Date: 3 years ago
+Rating: 4 stars
+Mark3 reviews · 2 photos3 years ago
+
+Author: Tyrone Reeves
+Date: Edited 3 years ago
+Rating: 5 stars
+I was seen today by Dr Hargreaves 7/02/23. Apart from my appointment time rang a little late, I am scoring her five for the very good examination also for explaining the meaning of a previous blood test sample result. I were able to follow with ease. In my opinion. Dr Hargreaves went beyond the call of duty and l am great full. Keep up the good work Dr. Hargreaves we need more like you. Please find as requested the photo attached. T. Reeves.
+
+Author: Rachel Mares
+Date: 3 years ago
+Rating: 5 stars
+I’ve had nothing but good treatment from this surgery. I have ongoing medical needs and am able to see the same GP so I get good continuity of care. My GP is fantastic and I feel really lucky to be treated by her.
+
+Author: Benedict Hounslow
+Date: 3 years ago
+Rating: 4 stars
+Benedict Hounslow2 reviews3 years ago
+
+Author: C B
+Date: 3 years ago
+Rating: 5 stars
+I have been with Valentine Medical Centre for nearly 20 years and have never had a problem getting an appointment with the Doctor of my choice. I phone at 8.45am & have never had an issue I think it’s a great phone system as you queue rather than having to keep phoning. My Doctor is Dr Hargreaves who I can put my trust in 100%, Dr Hargreaves has always been very thorough reassuring and kind both with myself & my late mum. The nursing team & reception staff I also find to be exceptional as are the Doctors I have seen in Dr Hargreaves absence. This practice has old fashioned values which is very rare now a-days with excellent patient care.
+
+Author: Bob Henstock
+Date: 3 years ago
+Rating: 5 stars
+Very happy with the service .they are thourogh and profesional .thanks.
+
+Author: Isha Sonie
+Date: 3 years ago
+Rating: 5 stars
+Isha Sonie3 years ago
+
+Author: Blanka Hudecova
+Date: 3 years ago
+Rating: 5 stars
+Thank you,so much for absolutely perfect look afther my self to Dr,Fiona Hargreaves.and staff on the desk for quick contact and servis to do for me ,
+
+Author: carla odonnell
+Date: 3 years ago
+Rating: 5 stars
+Excellent service provided by dr Sadiq she’s is an amazing doctor. Great bedside manner. I’ve been seen by A n E and visited other drs at Valentine hse. They didn’t diagnose me correctly. Dr Sadiq got the Correct diagnosis straight away. So happy I’m feeling so much better. She gives excellent service and advice!!! Couldn’t ask for a better doctor. Thank her so much from me !
+
+Author: To WT
+Date: 3 years ago
+Rating: 1 star
+Told to call at 8:45 for medical appointments, called for an hour just for a bot to say: “Sorry, your call cannot be completed at present, please try again later”. Absolutely ridiculous.
+
+Author: Lauren Connell
+Date: 3 years ago
+Rating: 5 stars
+Lauren Connell3 years ago
+
+Author: Sharon Smith
+Date: 3 years ago
+Rating: 4 stars
+Very good
+
+Author: anne Powell /
+Date: 3 years ago
+Rating: 1 star
+No point in phoning these, you don’t even get has far has in a queue. The phone just turns off on you and it tells you to phone back later. If your life depended on these, you would be in trouble.
+
+Author: Tiffany Ryder
+Date: 3 years ago
+Rating: 1 star
+Same as everyone else. It is an absolute nightmare to get an appointment. You try to call at 8:45 to be told you cannot get through to the operator and to call back later. Then when you FINALLY get through, they put you in a queue only to be told they’re full and to try again tomorrow as you cannot pre book appointments. An absolute disaster.
+
+Author: Gym-Bear
+Date: 3 years ago
+Rating: 1 star
+Receptionists do everything they can to get you out so they don't have to work for you.
+
+Author: trevor cunliffe
+Date: 3 years ago
+Rating: 5 stars
+Been a patient of valentine medical centre for 38 years.The doctors have actually saved my life and that of my parents at two separate occasions. I have no complaints, only praise.Thank you.
+
+Author: Julie Franklin
+Date: 3 years ago
+Rating: 1 star
+Really difficult to get appointments. You have to ring at 8.45. Today I have been on the phone for 20 minutes just to get through to the surgery and there are now 20 people before me on the phone. I have tried previously only to be told once getting through to the receptionist that no appointments are available. The system isn’t fit for purpose.
+
+Author: Marie Rennison
+Date: 3 years ago
+Rating: 1 star
+Can't get appointment, then have to wait for a call back, I have a job so cant always keep my phone on me, this is impossible, then you look on there website for a walk in centre and the one on there website is now a covid centre, some help that was, still in need of medical help.
+
+Author: Samuel Uwadiale
+Date: 3 years ago
+Rating: 1 star
+Horrible customer service And it’s almost impossible to book appointment
+
+Author: Kathryn Brierley
+Date: 3 years ago
+Rating: 5 stars
+Kathryn Brierley3 years ago
+
+Author: Motunrayo Stephanie Adeyemo
+Date: 3 years ago
+Rating: 5 stars
+Wonderful doctors, customer service is fantastic 👏 …
+
+Author: Nitta
+Date: 4 years ago
+Rating: 1 star
+Horrible service
+
+Author: Helen Kay
+Date: 4 years ago
+Rating: 1 star
+Absolute joke never get appointment even tho 5 doctors in x 😡😡 …
+
+Author: stephen brunton
+Date: 4 years ago
+Rating: 1 star
+stephen brunton4 years ago
+
+Author: Benjamin Smith
+Date: 4 years ago
+Rating: 1 star
+To get an appointment, you have to make a complaint to their website and they will get in contact with you. Otherwise it's pretty much redundant phoning them
+
+Author: Natasha R
+Date: 4 years ago
+Rating: 1 star
+Terrible, can never get appointment even though you call between 8.45 - 9am. Most of the time it says sorry cannot be connected. And when you finally do get through, appointments have all gone..then told to call back tomorrow at 8.45 for this to happen again. It's ridiculous you can't book appointments in advance. Let's not forget the rude receptionists who think they are doctors.
+
+Author: Fenton
+Date: 4 years ago
+Rating: 1 star
+Really bad definitely need more staff if all appointments are over the phone been trying to get one at 8:45 for three days
+
+Author: Nulu Nakitto
+Date: 4 years ago
+Rating: 1 star
+It us most difficult to get appointments, even if covid is down now this surgery appointments system is very bad, you can imagine how many people give up and self medicate, yet the illness is diagnosed at early stages
+
+Author: Michael John
+Date: 4 years ago
+Rating: 1 star
+Terrible practice would look for any other gp surgery
+
+Author: S.R
+Date: 4 years ago
+Rating: 1 star
+S.R6 reviews · 11 photos4 years ago
+
+Author: Luanna Kielty
+Date: 4 years ago
+Rating: 5 stars
+Lovely staff, always happy to help. Doctors are always a great help even with this lockdown
+
+Author: Hayley William's
+Date: 4 years ago
+Rating: 1 star
+Absolutely rubbish. You phone up to try to get an appointment and you get put in a que for nearly an hour then when you finally get through there's no appointments left. It's rediclous it happens all the time.
+
+Author: Kirsty Chan
+Date: 4 years ago
+Rating: 1 star
+Total useless, no where to go, can't do anything!!!! Ring at 8:45 it goes to call can not be completed, after 15 times finally got through. In the queue for over 30 minutes then they tell you NO MORE APPOINTMENT!!!! if you need an appointment call again tomorrow 8:45!!! Or walk in center. And for all this for a 90+ years old non English speaking old man. Absolutely hopeless
+
+Author: Ahsan Hussain Bano (muggix)
+Date: 4 years ago
+Rating: 1 star
+very poor service to get an appointment.
+
+Author: lynne daley
+Date: 4 years ago
+Rating: 1 star
+Trying to get an appt here us almost impossible I have been on the phone since 8.45 am to hold and get to 4 in the queue to then just be cut off knowing full well if I phone back there will be no appts left. Has it now become a lottery to get your call answered here. Been at this surgery all my life and it's just becoming impossible.
+
+Author: Darren
+Date: 4 years ago
+Rating: 1 star
+Absolutely useless trying to make an appointment. Can't see a doctor as their still using Covid as an excuse. Meanwhile other practices are open as usual. Receptionist are extremely rude too. A Doctor that works there said said the place has taken a nose dive.
+
+Author: Camilla Da Silva
+Date: 4 years ago
+Rating: 1 star
+Been trying for 2 weeks to book an appointment....ring at the right time at it goes to this call cannot be completed at this time 😑 and when I do get thru its too late for appointments 🙃 …
+
+Author: Immie Rose
+Date: Edited 4 years ago
+Rating: 1 star
+Immie Rose11 reviews · 3 photosEdited 4 years ago
+
+Author: Bilkish Altaf
+Date: 4 years ago
+Rating: 1 star
+I was on the phone to the Surgery on the 09.08.2021 since 8.45am regarding an appointment for a second opinion as the previous doctor I spoke to regarding my daughter's issues was not very helpful and rude. I was the phone for over an hour and got through at 10.04am and then was told that there was no appointments left and the receptionist was rude, arrogant and she cut the phone on me. I mean what type of help is she? I am really appalled by her behaviour and disgusted with her service. She is meant to be working for the NHS and this is how she treats the patients? I just asked if someone can ring me back, I am a single working mother and I took time out of my busy schedule to ring the GP and this is the service I get?
+
+Author: lynn mcdonagh
+Date: Edited 4 years ago
+Rating: 1 star
+Trying to Call Friday & again this morning! Was told to call between 8-9 in the morning for an appointment on Thursday eve. Haven't been able to speak to anyone since. I have called 17 times this morning alone to be hung up on over & over & over again while trying to make appointment.!!! Disgraceful! If this turns out to be as serious as I think, I will be taking alot further!!!
+
+Author: Bo Walsh
+Date: 4 years ago
+Rating: 1 star
+Went in to see my GP in 2015, with a bad shoulder, 3 X rays, 2 ultrasound scans and 2 MRI Scans later, I've still got a bad shoulder, cant train, cant do weights, cant sleep, its the absolute worst GP practice i have ever had the misfortune of signing up with!
+
+Author: Len Smith
+Date: 4 years ago
+Rating: 5 stars
+I am astonished at some of the reviews on this web site. I have been a patient with this practice, in one form or another, for over 70 years and have NEVER had any reason to complain about staff, doctors or nurses, who - in my experience, - are always without fail helpful, curious and a pleasure to contact. Inevitably, during an epidemic and other busy times, it is obvious that patients will have problems contacting the service, common sense tells you that. I have been lucky to have been cared for by Doctors Crockford, Royds Rainsberry, Clegg, Storey, Hargreaves and many others who have kept me alive for nearly 80 years even though I have been on medication for high blood pressure, heart disease for over 52 years. A great practice!
+
+Author: drjonesjnr
+Date: Edited 4 years ago
+Rating: 2 stars
+Unbelievable hard to get an Appointment and the doctors have a lack of empathy
+
+Author: Lauren McManus
+Date: 4 years ago
+Rating: 1 star
+Drs are spot on very good But the reception staff are very rude do not help I just needed a non urgent appointment to speck to a dr about and told need to call the urgent line. If it was not for the great drs and nurses I would change
+
+Author: Steven Shepherd (Stefano)
+Date: 4 years ago
+Rating: 1 star
+Hard to get appointments, hard to get results, Slow reception, who are rude ask questions that's none of there business and they talk like there the doctors. Not happy
+
+Author: Swipzz Tv
+Date: 4 years ago
+Rating: 1 star
+Can't even get an appointment waste of space and tax payers money!
+
+Author: Lee Mitchell
+Date: 4 years ago
+Rating: 1 star
+Lee Mitchell4 years ago
+
+Author: Michael Heywood
+Date: 4 years ago
+Rating: 1 star
+Tried to phone for a medical exemption note due to a bowel condition and was told I need to ring at 8:45. Did this many times and they didn't pick up. I asked if they could arrange a basic telephone appointment and they said they couldn't even do that? This place needs to be shut down. It isn't adequate for a healthcare professional practice
+
+Author: Appeal Grafix
+Date: 4 years ago
+Rating: 1 star
+Disgraceful speak to patients like dirt and insult them. Never answer their phones and when they do they fob you off with lies and tell you to ring back. The absolute worse medical centre ever really don’t know how they are still practicing!
+
+Author: Bluemooner87
+Date: 5 years ago
+Rating: 1 star
+Awful Medical Centre, Been trying to get an appointment now for the last 4 weeks ringing up every single day at 8:45am on the dot. Its either you cant even get through the automated message service without it saying "Sorry your call cannot be completed at present" or when you you finally get through you get greeted by a receptionist saying "No appointments left call back tomorrow" Shocking really and i only give it 1 star as it wouldnt let me post with zero stars
+
+Author: andy moores
+Date: 5 years ago
+Rating: 2 stars
+Some good doc like story and coupe overs but some are well not as helpful
+
+Author: Paul Rocky Jones
+Date: 5 years ago
+Rating: 1 star
+Absolutely disgusting customer service. Receptionist so quick to dismiss your call. Always fully booked...ring back...cant pre book!! Some people work unno and ringing at 8:45 is impossible
+
+Author: The Urban Courtyard Manchester
+Date: 5 years ago
+Rating: 5 stars
+Recommended to all our guests at Hendham house hotel top place just 5minutes away
+
+Author: Rachel Crosby
+Date: 5 years ago
+Rating: 5 stars
+Rachel Crosby5 years ago
+
+Author: Kaveh Soory
+Date: 5 years ago
+Rating: 1 star
+This medical centre is good example of why we should be disappointed in NHS. This medical center is a disaster. I hope someone with more dominance over health services read this note and question them. This is not a single story and it keeps happening every day in Valentines Medical centre. I have been dealing with chronic sciatica pain for the last 20 years. After prescribing the wrong medicine for me I called back with a deeper pain, waited in a que on the phone for nearly one hour. Then the medical centre’s operator said, you got to call back on Monday we have no more appointments for today. I was begging them to give me a five minutes time to talk to a doctor since I am in pain. They were refused to give me an appointment they said to me to call emergency or go to hospital, I said I am unable to walk and she replayed then call the ambulance. I asked the full name of operator but she refused to give me her full name. Her first name was Lisa and she said there is only one lisa here. I felt really bad as a patient, in severe pain begging a member of a medical team and they refused. Then I called 911, and explained everything, the doctor at emergencies said I will contact them and ask them to call you which she did. Now I am typing , I am still in pain , I paid £30 for a prescription which never worked and I am still hoping that someone is going to call me. I have paid my taxes all my life in order to build a secure and respectful society when I get older , rather than being ignored by my own medical centre. I hold valentines Medical Center responsible for the pain and suffer I am taking.
+
+Author: Ann Mcgeown
+Date: 5 years ago
+Rating: 1 star
+The girl on the phone is to quick to say sorry we are fully booked. She should try and listen to what your saying. And she sent me to a completely different place for my needles when it was at the centre
+
+Author: Sam Oso
+Date: 6 years ago
+Rating: 1 star
+Sam Oso6 photos6 years ago
+
+Author: Lino Maurizio Nonelli
+Date: 6 years ago
+Rating: 1 star
+This place is a nightmare, the doctors wouldn't spot my problem, one of them told me I could live with my problem for the rest of my life and I had to almost force him to refer me to the specialist.
+
+Author: emmanuel peter
+Date: 6 years ago
+Rating: 5 stars
+Just want to say a amssive thank to the receptionist.Rang the booking line at 2:30pm and i was suprised i got booked in same day
+
+Author: susan Amadasun
+Date: 6 years ago
+Rating: 1 star
+just cant get appointment when u ring at 8.45 I was 23 in the queue .I'm diabetic and have blood test which took 5 months to get and results aren't good and have 2 text msgs and 2 letters to see my doctor and still cant get in think of changing doctors
+
+Author: Anthony Millward
+Date: 6 years ago
+Rating: 1 star
+Tried three times this morning to make an appointment. The first call was made precisely at 8-45. Each time a recorded message stated lines were not open then the connection was cut. I have been trying to make an appointment for the past two weeks. On one occasion I did manage to get through to a receptionist. Only to be told I could not make what she called a pre arranged appointment until next February. I had asked for any doctor at any time between 9-00am and 4-00pm. Disgraceful service.
+
+Author: Barbara
+Date: 6 years ago
+Rating: 1 star
+Ridiculous... you never gets appointment on less you go outside and queue
+
+Author: Scott Temple
+Date: 6 years ago
+Rating: 4 stars
+Superb doctors and nurses, terrible appointment booking by reception.
+
+Author: Antony Wright
+Date: 6 years ago
+Rating: 1 star
+I have been at this doctors since it opened and in the last few years it's become ridiculous. Like all the reviews mention, you can only get an appointment on the day and if you ring up at 8:45 you're always in a huge queue. I rang yesterday at 8:50 and was number 2 in the queue, only to be told when the receptionist answered that there were no appointments left. What are you meant to do? It's an absolutely ludicrous system. If you are fortunate enough to get an appointment it's a lottery of who you get to see. My doctor of choice is Dr. Storey. He's great. Patient and thorough but I probably get him one in every twenty. Something has to change. Very close to swapping practices now.
+
+Author: dave mclaughlin
+Date: 6 years ago
+Rating: 1 star
+Appalling. Wouldn't let the management team sweep the roads. 40 minutes after the surgery meant to reopen after lunch still not answering but recorded rubbish about closed til 2. Nobody every owns a problem
+
+Author: Zoe Friar
+Date: Edited 6 years ago
+Rating: 1 star
+Appointment booking sysyem/service absolutely appalling.
+
+Author: Linda Ward
+Date: 7 years ago
+Rating: 1 star
+Was told to bring my father who is 91 for 10.30 appt and not to be late as they close at lunchtime on a Wednesday. Got there st 20.20 and a waiting to see for tor at 11.30 .
+
+Author: Darren Metcalfe
+Date: 7 years ago
+Rating: 1 star
+Absolute Shambles of a Surgury - you can never get an appointment, cannot prebook for next day for those of us that work and need to book time off and the receptionists are the rudest ive ever known
+
+Author: Keith Redfern
+Date: 7 years ago
+Rating: 1 star
+Been to book a appointment as requested by Dr storey for end of November as expected receptionist was abrupt and very unhelpful. I asked politely for a appointment but was greated with the reply that they cannot book you onto the system …
+
+Author: Abdulhalim Said
+Date: 7 years ago
+Rating: 1 star
+Awful,very rude receptionist I think they are put under pressure by whoever own the surgery,they will not help and will not even bother touching a keyboard ,whatever you ask,they will tell you they are not allowed to do,You can not prebook …
+
+Author: Donna Barrett
+Date: 7 years ago
+Rating: 1 star
+Appointment booking is ridiculous, it’s fine if you don’t start work till after 9am but if you start work before 8.45am you haven’t got a chance of getting an appointment. Really need to look at online appointment booking system so it is accessible to majority.
+
+Author: Barry Ultimabear14
+Date: 7 years ago
+Rating: 5 stars
+Great doctors and staff. The appointment system isn't hard to understand like people are saying, just make sure to ring at 8:45am. I have always got an appointment on the same day.
+
+Author: Stanislava Klimkova
+Date: 7 years ago
+Rating: 3 stars
+Good location easy to find especially for someone who just coming to register there for first time. Reception is helpful, doctors are great even midwife upstairs is really great I would highly recommend especially Midwife. I have to say …
+
+Author: Gamer GOD
+Date: 7 years ago
+Rating: 1 star
+Super bad appointment systems rude receptionist but good doctors , some of them atleast
+
+Author: Amber Wakefield
+Date: 7 years ago
+Rating: 1 star
+Reading some good reviews on here and I’m thinking, are we even going to the same doctors ?? It’s the worst place I’ve ever been too, appointments are impossible to book, you have to ring at 8:45am on the dot other wise you’re 28th in the que and the doctor you want to see is either fully booked or isn’t in or the doctors is only open half a day, which isn’t great when you’re working! I think the receptionist are just generally rude and don’t make you feel welcome at all, they give you dirty looks if you have to ask them a question like you’re wasting their time, isn’t that their main job role ? To smile and be polite ? ... if you have to come back to see the doctor for a review then you’re lucky if you see the same doctors, other wise you have to explain yourself again and again to the other doctors as to why you’re there, YES they can read from the computer but it’s not the same when you have already plucked up the courage to speak to one doctor (in my case depression/ anxiety) which is hard enough to explain in the first place! The toilets are disgusting, pee all on the seats and floor, I don’t normally turn my nose up but it was ridiculously scruffy and I had to stand in there to do pee samples... to end this on a better note, some of the doctors aren’t great they literally google your symptoms right in front of you BUT I have to say they’re some great doctors that will literally go out of their way to really help you and push for your hospital appointments to hurry up and that’s Dr.Story but he’s like gold dust to get booked in with. So good luck
+
+Author: Rebecca Watson
+Date: 7 years ago
+Rating: 1 star
+Rebecca Watson6 reviews7 years ago
+
+Author: lisa wills
+Date: 8 years ago
+Rating: 2 stars
+Baby clinic starts at 1pm yet they don't call anyone in till 25 past.
+
+Author: Doreen Lloyd
+Date: 8 years ago
+Rating: 5 stars
+I find this practise a very pleasant place to visit. All the staff are friendly and helpful. The Doctors are excellent; Doctor Story my usual GP is exceptional.Lynn the practise nurse is lovely. Appointments are the same as anywhere else; "busy" If you can go and Que in the morning you will be seen the same day.
+
+Author: Ali Heidary
+Date: 8 years ago
+Rating: 3 stars
+Doctor are good but appointment times are bad only the morning at same time as school time.
+
+Author: E. N.
+Date: 8 years ago
+Rating: 1 star
+You can't get any appointments even the emergency ones. Worst part you finally get appointment you can't be late but you sure would be waiting about an hour or more before the doctor finally sees you. Do they don't keep to their own schedule but if your late the doctor won't see either. Compete unorganised timetable. Front desk staff can be rude, not always attentive nor caring, but the nurse and doctor are spot on, real deal if ur lucky to get seen or get appointment firstly. Overall alot needs to be done to improve their services because that I gave them 1 star and that's because of the actual doctors and nurse who are excellent. Everything else is rubbish..! Zero!!!
+
+Author: Jacqueline Brooks
+Date: 8 years ago
+Rating: 3 stars
+The Doctors are fantastic the only problem i find is when you have an appointment you see your doctor they tell you to rebook for 3 weeks then you try to rebook then told sorry no appointment ring on the day , which i have tried for 7 days can't get through engaged all the time , then when you eventually get through no appointments left you have to queue up outside in all weathers at 8 30 to try and get in ridiculous, 4 weeks now since my original appointment still have not managed to get in and see my doctor for follow up. asked the receptionist why as the doctor asked me to make a follow up appointment then " reply he does not know he is fully booked , lot of help to me
+
+Author: Darren Herring
+Date: 8 years ago
+Rating: 5 stars
+Great team. As a surgery... Does what it says on the tin! I'm pleased I chose the surgery! :)
+
+Author: Natalie Broad
+Date: 8 years ago
+Rating: 1 star
+Impossible to get an appointment, no matter how urgent it is needed.
+
+Author: Tony Nuttall
+Date: 8 years ago
+Rating: 5 stars
+Just like to say the Doctors are great but the practice nurse's are better. Donna who always advisees me on my diabetes and is always there if I fall of the cart. Lynn who always has time for me, thank you all
+
+Author: Jimin Infires Suga Kookies (Rap Mon V Jin's Hope)
+Date: 9 years ago
+Rating: 5 stars
+Jimin Infires Suga Kookies (Rap Mon V Jin's Hope)9 years ago
+
+Author: Matt C S
+Date: 9 years ago
+Rating: 1 star
+Worst doctors ever!
+
+Author: Jemma Stocker
+Date: 9 years ago
+Rating: 5 stars
+Dr Storey goes above and beyond to help, i would highly recommend this surgery and especially Dr Storey amazing doctor.
+
+Author: Abdulhalim Said
+Date: 7 years ago
+Rating: 1 star
+Awful,very rude receptionist I think they are put under pressure by whoever own the surgery,they will not help and will not even bother touching a keyboard ,whatever you ask,they will tell you they are not allowed to do,You can not prebook appt even for next month,only to ring in the morning if you want to be seen, they will not print out medication list as they say wasting papers or even to look to tell you what are the name,they will not help to check anything,very judgemental and rude,not all but one I always meet,some issue can be sorted by just task a doctor ,they will not do that and ask you to book appt,wasting appt for people who really need,this surgery has to change as we are not sure what are the receptionist for,I wonder they are new staff every time.
+
+Author: Stanislava Klimkova
+Date: 7 years ago
+Rating: 3 stars
+Good location easy to find especially for someone who just coming to register there for first time. Reception is helpful, doctors are great even midwife upstairs is really great I would highly recommend especially Midwife. I have to say that baby clinic is not organised time to wait until they see your baby is very long even if they give to time of appointment you still wait even more then hour and now imagine situation that you are there with your baby that is poorly even start crying and you have to sit there for more then hour is not that exhausting for parent but for child is more stressful and I saw that babies was there waiting with mothers over hour for appointments and I don’t know how was that possible but other patients that came in they was called for see doctor after 10 minutes and babies and children was in waiting room hours crying I think is wrong plus there was a situation that young mother gone toilet with daughter and basically they was called for appointment and they missed it because they was on toilet and later they got to situation that they had to wait longer because of that. But what you suppose to do if you are that long in waiting room you have to go toilet or you need fresh air . Mixed feelings about valentines......
+
+Author: Lana Dirsyte
+Date: 9 years ago
+Rating: 1 star
+Terrible. Rude staff. Looks unhygienic.
+
+Author: Paula Adams
+Date: 9 years ago
+Rating: 5 stars
+love dr hargreaves dr fallon and dr storey
+
+Author: Michael Hevey
+Date: 9 years ago
+Rating: 5 stars
+Dr Storey, what a amazing man without him i would be lost he has made me realize a hell of a lot and supports you through anything if he can help you he definitely will :)
+
+Author: Dayl Hudson
+Date: 9 years ago
+Rating: 3 stars
+U are seen to pretty fast
