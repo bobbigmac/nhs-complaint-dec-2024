@@ -4,14 +4,19 @@ Postcode: M31 4FL
 Google Maps title: Partington Family Practice Doctors
 Google rating: 2.8
 Google review count: 31
-Google Maps URL: https://www.google.com/maps/place/Partington+Family+Practice+Doctors/@53.4166096,-2.4252738,17z/data=!4m8!3m7!1s0x487baa51ca28259b:0x8da6227a928955a4!8m2!3d53.4166096!4d-2.4252738!9m1!1b1!16s%2Fg%2F1hc6x_xkf?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Partington+Family+Practice+Doctors/@53.4166096,-2.4278541,17z/data=!4m8!3m7!1s0x487baa51ca28259b:0x8da6227a928955a4!8m2!3d53.4166096!4d-2.4252738!9m1!1b1!16s%2Fg%2F1hc6x_xkf?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.667
+Review collection mode: full_feed
+Review cards collected: 31
+Owner replies collected: 11
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P91026-partington-family-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Sue O'Callaghan
-Date: 7 hours ago
+Date: a week ago
 Rating: 5 stars
 I had the best experience I have ever had with a Doctor today. Doctor Saggar was absolutely amazing. I want to thank him for his compassion and understanding. It may have seemed like a trivial issue for him today but he really did save me. Thankyou
 
@@ -19,11 +24,17 @@ Author: Fatima Bendique
 Date: a month ago
 Rating: 1 star
 Receptionists are disgusting. The entire practice including the surgery are absolutely horrific. You may as well just close the place down as they can’t help you with anything
+Practice response date: a month ago
+Practice response:
+We’re very sorry to read that you’ve had a negative experience and that you feel this way. We take feedback about our reception team and the practice as a whole very seriously, as we are committed to providing a respectful and supportive service to all patients. We would like to clarify that this review relates to Partington Family Practice (Drs Deweever, Kinney, Connell and Hider), as we are sometimes confused with a neighbouring surgery. If your experience was with our practice, we would genuinely welcome the opportunity to look into your concerns further. Because we cannot discuss individual situations publicly, we encourage you to contact the practice directly so we can understand what happened and work towards a resolution. Patient feedback helps us improve the care and service we provide.
 
 Author: Michelle El Fazzate
 Date: 11 months ago
 Rating: 1 star
 Absolutely shocking reception team apart from one lady,they are rude and think they are doctors, extremely incompetent and definitely need a lesson in manners, disgusting
+Practice response date: 11 months ago
+Practice response:
+We’re sorry to hear about your experience with our reception team. We strive to provide a welcoming and professional service to all our patients, and it’s disappointing to learn that we didn’t meet your expectations. Your feedback is important to us, and we would appreciate the opportunity to address your concerns. Please could you contact us directly so we can discuss this further and work towards improving our service.
 
 Author: Fishysteve Knight
 Date: a year ago
@@ -34,6 +45,9 @@ Author: Jacob
 Date: a year ago
 Rating: 1 star
 GPs are inconsistent, unprofessional and insensitive. Avoid this practice if you value a GP practice that treats patients well. Receptionists are lovely and overall good at fitting you in but cannot overlook how much the GPs there value you.
+Practice response date: a year ago
+Practice response:
+Dear Jacob I am sorry to hear that your experience with our clinical team has not met your expectations. We take all feedback seriously and would appreciate the opportunity to understand your concerns in more detail. Please feel free to email us at clinical.partingtonfamily@nhs.net, and I will personally look into the matter. Best regards, Hannah Kenyon Practice Manager
 
 Author: lynne chapman
 Date: a year ago
@@ -59,3 +73,132 @@ Author: angelinag Meli
 Date: a year ago
 Rating: 1 star
 I was 1 min late the receptionist was rude it’s the younger girl with Afro hair She was extremely rude made me wait another 20 min knowing no one there I asked her twice to check she wouldn’t .Rude like she’s better then anybody else .
+
+Author: Stina Rätsepp
+Date: a year ago
+Rating: 1 star
+Receptionists absolutely lovely and helpful. Dr Deweever on the other hand has missed the UTI in myself and my 3year old daughter. We both ended up in hospital, just a few months apart, for over a week with a horrible kidney infection due to untreated UTI. They had to put my baby on IV… Maybe worth checking your tests and paying more attention to what the patients are complaining about. please take this more seriously, it’s not ok.
+
+Author: J H
+Date: a year ago
+Rating: 1 star
+Terrible staff, Do not register here you will regret forever. I do not have more words to describe them. Totally unprofessional. DO NOT REGISTER HERE.
+Practice response date: a year ago
+Practice response:
+Hello, I'm really sorry that you have not had a positive experience. Could you email your concerns to: clinical.partingtonfamily@nhs.net and we will investigate what has gone wrong.
+
+Author: M Sz
+Date: 2 years ago
+Rating: 5 stars
+Best experience I've ever had with the doctors ! Everytime I'm booked ,the staff is very kind and helpful ,helped me to find the issue very quick. It really makes my heart smile and bringing hope in humanity back :)
+
+Author: Marie Holland
+Date: 2 years ago
+Rating: 5 stars
+Great GP practice Doctors and staff are brilliant been with them my whole life and so have my children . And after a recent bad time with my son very helpful when needed can not fault them even had video call with my son when he was unable to attend . This really did help as some things are better coming from the GP than from mum . I very much appreciate the extra time and care that was given .
+
+Author: Rain Ndure
+Date: 2 years ago
+Rating: 1 star
+Staff are rude and unhelpful, eager to get off the phone with you
+Practice response date: 2 years ago
+Practice response:
+Hello, we're really sorry you've not had a positive experience with our surgery. Could you contact us at: clinical.partingtonfamily@nhs.net to share what has gone wrong so we can look into it
+
+Author: Carla Chau
+Date: 2 years ago
+Rating: 1 star
+Horrible experience. As a family living in Partington, what a pity that we have no choice as we only have 2 GP in this region. This practice‘s receptionists: always rude and impatient Extremely difficult to book for appointments!! Doctors and nurses: Most of them are very professional and showing understanding, besides the only Male Doctor, he discriminated my family member and ordered his colleague- the receptionist lady not to book us in until we get a notice from A&E said we are suitable for GP appointment , otherwise no appointment will be booked in!! Think wise before come!
+Practice response date: 2 years ago
+Practice response:
+Hello, could I check you are registered with Partington Family Practice (dr Deweever) and not the neighbouring surgery Partington Central? If you are with Dr DeWeever could you kindly email clinical.partingtonfamily@nhs.net your concerns and the Practice Manager will look into this. Thank you
+
+Author: Emily Garner
+Date: 3 years ago
+Rating: 5 stars
+This practice has been a breath of fresh air in comparison to my old surgery! Phones are answered quickly, you can easily get an appointment and requests are dealt with quickly. So happy to have changed to this GP practice!
+
+Author: Margaret Mccoy
+Date: 3 years ago
+Rating: 1 star
+Tried to make an appointment ringing out all the time
+Practice response date: 3 years ago
+Practice response:
+Hello, we are sorry that you have struggled to get through to us. We have been very busy this week but I can assure you that we are answering the phones as quickly as we can. It does feel disheartening to receive a one star review when our reception team work so tirelessly. If you would like to provide further comment/suggestions please email the practice
+
+Author: Keith Chick
+Date: 3 years ago
+Rating: 2 stars
+Waiting times are ridiculous, can't see a doctor and when you do your only allowed to discuss 1 problem, so if you have a couple of problems then your have to make multiple appointments , but be prepared for a very long wait
+Practice response date: 3 years ago
+Practice response:
+We are sorry that you have cause to complain. Our current waiting times for the next routine face-to-face GP appointment is 48 hours, we have plenty of urgent slots available each day. Each appointment is for 10 minutes so realistically only one problem can be consulted during this time. Patients are welcome to book double appointments if they have more than one problem. There are longer waiting times if you are waiting for a specific GP
+
+Author: Cassie Groos
+Date: 3 years ago
+Rating: 5 stars
+Wonderful. Definitely the best GP care I received in years. It's been a long time since I have seen a GP who made me feel listened to and seemed like they really cared. In addition, the desk staff have come across as patient, caring and …
+
+Author: Cassie Groos
+Date: 3 years ago
+Rating: 5 stars
+Wonderful. Definitely the best GP care I received in years. It's been a long time since I have seen a GP who made me feel listened to and seemed like they really cared. In addition, the desk staff have come across as patient, caring and helpful consistently in all communications. SO NICE. I understand a lot of GPs have had a really hard time of it, so are overworked and tired themselves.. so I'm not sure how these guys manage it, but they do. Thank you.
+
+Author: Damian Higgins
+Date: 4 years ago
+Rating: 5 stars
+Damian Higgins1 review4 years ago
+
+Author: pam weber
+Date: 4 years ago
+Rating: 1 star
+Terrible service with zero empathy for service users.
+Practice response date: 4 years ago
+Practice response:
+Hello, I’m really sorry that you’ve not had a positive experience at our practice. Could you email clinical.partingtonfamily@nhs.net your concerns so I can look into this further?
+
+Author: lisa “Snow” X
+Date: 4 years ago
+Rating: 5 stars
+Ten times the professional than their Neighbours practice
+
+Author: Lakes Lomas
+Date: 4 years ago
+Rating: 5 stars
+Great doctors surgery - Dr Farhan has been my doctor all my life. Thank you for all your help and support over the years.
+
+Author: Jane oldam
+Date: 5 years ago
+Rating: 5 stars
+A big shout out to all involved in the vaccination program today , from health care professionals to volunteers. Everyone was extremely professional , kind and efficient. A very positive experience thank you all so much x
+
+Author: samantha hoyle
+Date: 5 years ago
+Rating: 1 star
+Tried to get to see a doctor rang up got through pretty quick extremely surprised I was given the online consultation as a option filled it in waited two Hours for a response,got a text message saying go to a and e already been there last night told To go wythenshawe but it’s too far away thought my doctor/nurse could help me but no fobbed me off per usual wanted help and it’s only five mins away the receptionist are literally a brick wall you have to scale in order to see a doctor extremely disappointed with my “local”doctors
+Practice response date: 5 years ago
+Practice response:
+Hello, we are sorry that you have had a negative experience with our surgery. Unfortunately, we do not have the facilities that A&E have and your symptoms required A&E treatment. We would like to assure you that we do not ‘fob’ patients off, but signpost them to the appropriate service so they can receive the best possible care.
+
+Author: Kiera Xo
+Date: 5 years ago
+Rating: 1 star
+Hello, I am sorry that you feel our practice is 1 star. Could you contact us to provide further feedback to help us better our service? Our email address is available on our website
+Practice response date: 5 years ago
+Practice response:
+Hello, I am sorry that you feel our practice is 1 star. Could you contact us to provide further feedback to help us better our service? Our email address is available on our website
+
+Author: Zombie Slayter
+Date: 5 years ago
+Rating: 1 star
+Appalling is an understatement ... The only reason this review gets one star is because, A. You have to select it and, B. The receptionists are actually really lovely and they are really helpful. I called today regarding a problem that I would like to be tested for, not just for the safety of myself but for the safety of the general public. Due to COVID-19, I am restricted to working from home and upon calling my GP today, one of the receptionist was really nice and logged a telephone consultation for myself. Dr. DeWeever himself called me a few hours later, unfortunately, I didn’t not have my phone to hand because I was in another room of my house hold and my phone was on vibrate, as part of my job is to take customer calls, so unfortunately I didn’t hear my phone go off. Dr. DeWeever left me a message that said “Hi, this is Dr. Weever, you requested a call back and now your not answering your calls”, *Hung up*. Dr. DeWeever did not give me any reassurances to call the surgery back nor what to do going forward. I am sick of the way I am being spoken to by himself and Dr. Farhan on the other side of the practice. I have already registered with a new practice, as I am not taking their ignorance lack of care any longer! It is a real shame back the reception guys are really lovely and caring, and I pray to God these two GP’s treat these guys a lot better than they do their patients, cause it GPs like this the reason that gives the NHS a bad rep. and the NHS goes under appreciated.
+
+Author: Robert Bowker
+Date: 8 years ago
+Rating: 5 stars
+Robert BowkerLocal Guide · 19 reviews · 4 photos8 years ago
+
+Author: Pamela Quinn
+Date: 8 years ago
+Rating: 1 star
+Pamela Quinn8 years ago

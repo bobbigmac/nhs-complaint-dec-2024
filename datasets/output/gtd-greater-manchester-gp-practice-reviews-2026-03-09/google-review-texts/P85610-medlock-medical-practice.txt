@@ -4,11 +4,16 @@ Postcode: M35 0AD
 Google Maps title: Medlock Medical Practice
 Google rating: 3.3
 Google review count: 58
-Google Maps URL: https://www.google.com/maps/place/Medlock+Medical+Practice/@53.5099396,-2.1565231,17z/data=!4m8!3m7!1s0x487bb72c5ae28be7:0x36e45e1bc762e61c!8m2!3d53.5099396!4d-2.1565231!9m1!1b1!16s%2Fg%2F1yh9ttjrj?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Medlock+Medical+Practice/@53.5099396,-2.1591034,17z/data=!4m8!3m7!1s0x487bb72c5ae28be7:0x36e45e1bc762e61c!8m2!3d53.5099396!4d-2.1565231!9m1!1b1!16s%2Fg%2F1yh9ttjrj?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 58
+Owner replies collected: 0
+Raw review responses captured: 6
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85610-medlock-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Andrea Bentley
 Date: a month ago
@@ -16,37 +21,37 @@ Rating: 1 star
 Absolute waste of time. Told yesterday to ring in the morning to make an appointment. Told I would get one. Rang this morning at 8 to be told to do the online link and received appointment for Thursday 7.30pm. Appointment that I need today. A&e it is. Il go and join the rest that can’t ever get an appointment at there go. Absolutely disgusting
 
 Author: Simon Dasnoy
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 Went there a few times and service has always been good
 
 Author: Abigail Awoyeye
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 I had a very distressing experience at Medlock Medical Practice. I arrived on time for my blood test and waited as instructed, while several patients who arrived after me were seen first. After over 20 minutes, I calmly approached reception to ask for reassurance, as I was worried I had been forgotten. I am currently receiving treatment for anxiety and depression. Instead of reassurance, I was spoken to harshly and repeatedly called “rude” in front of other patients. English is not my first language, and I believe there was a misunderstanding, but my attempt to explain was dismissed. I was left feeling humiliated and extremely distressed and broke down in tears during my appointment. I would strongly encourage the practice to provide staff with additional training in compassionate communication, mental health awareness, and supporting patients with language barriers. Healthcare settings should feel safe and supportive, especially for vulnerable patients. Unfortunately, that was not my experience.
 
 Author: Lesley Halliday
-Date: 3 months ago
+Date: 4 months ago
 Rating: 4 stars
 Ive never had a problem getting an appointment be it with a nurse, GP or Pharmacist. All the reception staff are friendly and helpful as are the Management team. Its brilliant to know that its a training practice helping GP's and specialists of the future. I would never hesitate to recommend this practice to a family member or friend. Special thanks to Dr Pardes for continuing to support me and my "issues "
 
 Author: Dot Davison
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 Recently had to deal with a medical emergency which is ongoing. Dr Pardes and Practice Manager have been brilliant and very supportive. Really appreciate their input and all the help and advice given. They get 5 stars from me.
 
 Author: evelyn lorne
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 had a pill review with prav and i got great service 😃 …
 
 Author: Carrol Ashton
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 Honestly can’t fault Medlock, Reception Staff are in the main friendly and helpful (one might have an occasional off day - but don’t we all 🤷‍♀️). Practice Manager very approachable and deals with any small issues swiftly. Dr Pardes is amazing, best GP I have ever had. Saw Dr Arnold today and he was also excellent, took time to explain everything and was very thorough. It’s great to see also that they are training Student Doctors to give same service to future generations. So big thank you to Medlock staff. Would highly recommend.
 
 Author: Louise Gilmartin
-Date: Edited 4 months ago
+Date: Edited 5 months ago
 Rating: 5 stars
 I am a patient at Medlock Medical practice. This past 12 months have been so difficult for me from a medical point of view. Basically I reached 60 and fell apart. For the past few months, I have been treated by Dr Huma Kahlid. I have never had a Dr like her. I feel like I am completely not only listened to but also understood. Dr Khalid has been so amazing, she is truly beautiful inside and out. I actually can’t believe she is going to be leaving us soon. Medlock managers can we not get a petition to keep her with you. From a Woman’s perspective and please don’t take this in anyway than how it is intended, it has been refreshing to have a woman treat me who is so respectful of age and how our body reacts to it. Thank you Dr Khalid so much for your help, understanding and commitment to me as a patient. You will be so missed and a blessing to another practice.
 
@@ -59,3 +64,243 @@ Author: Alex Davison
 Date: Edited 6 months ago
 Rating: 5 stars
 Alex Davison1 reviewEdited 6 months ago
+
+Author: laura woods
+Date: 7 months ago
+Rating: 5 stars
+Had an Amazing experience with my appointment today nothing was too much and made feel listen to then followed back up with call excellent her aizha iftikhar suede she was amazing!
+
+Author: Terry McNamara
+Date: 7 months ago
+Rating: 5 stars
+I have always had a good experience with all the staff at Medlock Medical Practice. However, HCA Rebecca should be singled out as providing an excellent level of care, always taking time to listen, recommending a course of action, providing encouragement, and following through on what she has promised.
+
+Author: Jane Cashinella-Vaughan
+Date: 8 months ago
+Rating: 5 stars
+Excellent caring medical service from Medlock, from receptionist staff to medical staff. Thank you , you are much appreciated..
+
+Author: Louise Waters
+Date: 8 months ago
+Rating: 5 stars
+Our family have been patients here for several years now and haven't had any issues; either getting an appointment or with the treatment offered. I prefer the online access, including ability to send in photos and whilst we've needed to go in for an examination on occasion, I find telephone consultations much easier to fit in around work. My only wish would be for staff to let me know when to expect a call, to ensure I answer first time.
+
+Author: ariyam El shamari
+Date: a year ago
+Rating: 2 stars
+Honestly not that great of a GP. Been so many times about the same issue and they've done nothing but the same thing every time which isn't doing anything. I went a few weeks ago and i was sat in the waiting room for about an hour before I just left because the doctor wasn't even there yet. While I was waiting though the receptionist was telling a patient he has to leave and rebook for being 5 minutes late to his appointment but I was sat in the waiting room for an entire hour and didn't get seen. The whole point of an appointment is to be seen at the set time I have picked. Just because you can't wait for your patients DOESNT mean we can wait for our doctors.
+
+Author: Kate Bebe
+Date: a year ago
+Rating: 1 star
+Very bad surgery, cannot even get an appointment. Since Dr Hossain and Dr Mohanty left this surgery is going downhill. Other GPs not helpful, Avoid this surgery.
+
+Author: Patsy
+Date: a year ago
+Rating: 3 stars
+Very inconsistent experiences with this surgery - some very positive, others not so much. I requested my repeat prescription on the 10th December via the nhs app, only to check last night (17th) to see it’s been rejected by the gp - I didn’t receive any comms to tell me this had happened or why. I’ve just phoned up to be told the gp hasn’t even put a note internally to explain why it has been rejected (great), but that I should have been getting a check every 3 months for this pill so I’m *probably* due that - that’s alarming in itself if true, given I’ve had one, maybe two checks in probably 2 years on this medication but last time a check was due I at least received a text so I knew to book in! If I’d have been told last week that I needed a check up then I could have booked in & had my prescription without throwing my timings off. Now, I’m not going to be seen/receive my prescription in time because of Christmas etc so all of my timings are completely off because they didn’t bother to tell me when the request was rejected or why. The NHS advice also says the checks on this tablet should be 6-12 months, so who knows what is actually true!
+
+Author: Carol ann Murphy
+Date: a year ago
+Rating: 5 stars
+The reception staff were extremely helpful the doctor who saw me Dr Ghaffar was the most caring GP I have seen she examined me and listened to my concerns she was very thorough and very professional. Thank you for caring .
+
+Author: Margaret Fielding
+Date: a year ago
+Rating: 5 stars
+Big thanks to Medlock medical practice. Reception staff are brilliant and really helpful. Particular big thanks to Dr. Gaffer (probably spelt wrong). She has gone above and beyond to help sort out the correct medication for me and has been extremely patient and considerate.Best doctor I have seen for a long time, and I can’t thank her and all the team enough.
+
+Author: Mianbali Khan
+Date: a year ago
+Rating: 1 star
+One of the worst sirgry To make appointment Is very hard i am try from …
+
+Author: Mianbali Khan
+Date: a year ago
+Rating: 1 star
+One of the worst sirgry To make appointment Is very hard i am try from Last one month but still Not possible.
+
+Author: Emma Tabugbo
+Date: 2 years ago
+Rating: 1 star
+Horrible, staff is nice however service is horrible inconsistent, maybe they don’t get paid enough to care about their patients
+
+Author: Alexander Morris
+Date: 2 years ago
+Rating: 5 stars
+Have to say my experience has been amazing. Very polite and helpful never felt I was being an inconvenience. Reception staff were fantastic and generally all staff. Going above and beyond to assist me with a Visa that they really didn't need to. Would always recommend and very happy they are my GP
+
+Author: carmelita de luca
+Date: 2 years ago
+Rating: 5 stars
+Brilliant surgery, never had a problem with them. Staff are lovely.
+
+Author: Neil Artus
+Date: 2 years ago
+Rating: 1 star
+Failsworth group practice renamed. Still can’t get in touch with them. NHS they make it that bad. We’ll all have to start paying for private healthcare.
+
+Author: Bluetooth
+Date: 2 years ago
+Rating: 1 star
+Very pissed at them. The receptionist are clueless as to what an outpatient pink prescription is. One if the receptionist was even so rude to me and threw my prescription back at me when I tried to explain what this was claiming that I was rude first by answering her "no". I have tried for over a week to get my medication. Still not sorted out. Horrible practice. Will have to change my gp. I can't do this any more. Avoid them.
+
+Author: Josh Lee
+Date: 2 years ago
+Rating: 1 star
+Wants shutting down
+
+Author: R.A
+Date: 2 years ago
+Rating: 1 star
+Horrendous. Wasted an hour and 10 minutes in the queue just for them to hang up on me when I got through to them and said hello. All I wanted was to enquire about when my appointment is. Absolute joke.
+
+Author: DGC Channel
+Date: 2 years ago
+Rating: 1 star
+I am a patient of this surgery, you are very lucky to get an appointment. I have been a patient for about 10 years and even before covid it had gone down in quality. They have a eConsult online service that is shut off at random times. Even before the scheduled time of (9am). They keep patients waiting on the phone and when they finally answer they say "Sorry, all appointment today have been taken. Please try again tomorrow" When you do get through, you get a call back from a ciliation saying and I am not joking "We can't guarantee you a face to face appointment every time, because most of our doctors work from home". I personally think 1 star is highly generous. DON'T GO TO THIS DOCTOR!
+
+Author: Helena maria Coyne
+Date: 2 years ago
+Rating: 5 stars
+Just want to say how Amazing this practice is!.. Been with them a short time and they have done so much to make me feel at ease.. 👍🙏🙂 Best move I have made (Thank you all what a good team) …
+
+Author: Sean gateley
+Date: 3 years ago
+Rating: 1 star
+The receptionist staff at the GP surgery are useless. Usually on hold for 30 to 60 minutes (during the middle of the day), you could be call position 1 in the queue for over 20 minutes then they answer and hang up.
+
+Author: Elizabeth Graham
+Date: 3 years ago
+Rating: 5 stars
+Thank you so much .I put a repeat presentation in Monday . And had run out of tablets . But for some unreason when I went to pick them put it wasn’t ready ? I was really upset . Young man on reception was lovely friendly helpful And said he would try he’s best to get my tablets that day but more than likely it be next day . We’ll just incase I sent my fellow round and much to my surprise they would ready . I would like to thank doctor and young lad on reception dealt with the matter well Elong
+
+Author: Isabella Freeman
+Date: 3 years ago
+Rating: 5 stars
+I've only been with this practice since Feb 2022. I can't fault them, very attentive and caring. Reception ladies have all been great and very efficient. I email if I can't get through by phone and they respond well. Dr Haroon Pardes is one of the best doctors I've ever had the pleasure of speaking with and meeting. Very down to earth, caring and easy to speak with. He definitely embraces being human. Really impressed with Medlock. Thanks for everything you've done for me.
+
+Author: Kevin Brown
+Date: 3 years ago
+Rating: 1 star
+I have been on antibiotics for cellulitis after finishing one course of 7 day there was a little change in my condition but required another course I am without antibiotics struggling to get more. Been told I will have to wait for a phone call from one of the doctors if anything happens to my leg because of this I will not be happy.
+
+Author: Jane Cashinella-vaughan
+Date: 3 years ago
+Rating: 5 stars
+Thank you to ALL the staff at Medlock Medical Practice, particularly Dr Scott for his patience & reassurance. Much appreciated..
+
+Author: Lisa Robinson Boland
+Date: Edited 3 years ago
+Rating: 1 star
+2 weeks to chase up having my bloods taken is ridiculous.
+
+Author: ste beach
+Date: 3 years ago
+Rating: 1 star
+Dr Husain !!! You are an absolute disgrace!! My son is 3 years of age and has just recovered from chicken pox .. he now has a chesty cough and tummy pains and you are refusing to see him unless he has a covid test !!!
+
+Author: Melanie Parry
+Date: 3 years ago
+Rating: 5 stars
+Melanie Parry6 reviews3 years ago
+
+Author: Gillian Drinkwater
+Date: 3 years ago
+Rating: 3 stars
+Been trying all day to get through on the phone gets to my turn on both occasions its says sorry we have technical problems one call was at 10am the other was at 6pm both occasions was on for over 30 min if there is a technical issue why are we in a queue I have better things to do with my time I am sick to death of phoning waiting to get to number 1 after being number 5 then being cut off we have covid trying to cancel appointments for tomorrow so what do we do
+
+Author: Asia Mehasi
+Date: 3 years ago
+Rating: 5 stars
+Clean and neat medical practice. I know there can be long waiting times when calling on the phone, but that's the case with most practices in my experience.
+
+Author: Syeda X
+Date: 3 years ago
+Rating: 5 stars
+I’m really happy with the service I receive at my GP. The staff can’t do enough to help and always get me an appointment as soon as possible.
+
+Author: Pretty Lou
+Date: 3 years ago
+Rating: 1 star
+What is going on over here? I need my medication. Can’t get through on the phone. When I tried yesterday, the receptionist picked up and sent me over to music - I didn’t even get to say a word. Requested medication last week and because I couldn’t get through on the phone, sent them an email. Will have to get it from 111 and I’m disabled so pretty much house bound most days. Life is…
+
+Author: Ged B
+Date: 3 years ago
+Rating: 1 star
+Been trying to call since 8am today, phone line is down saying ‘we’re really busy, please call back again’. After trying for 6 hours walked in the practice, not one phone ringing, all the staff eating chocolates. And no the doctor won’t look at your ears. What a way to represent the national health service
+
+Author: Helen Wright
+Date: 4 years ago
+Rating: 1 star
+finally got a GP phone appointment arranged for 12.40 arranged with my boss to be able to take the call, but they decided to call at 12.10 so missed the call and never phoned again. ridiculous getting back to seeing patients in person
+
+Author: Catherine Mannion
+Date: 4 years ago
+Rating: 4 stars
+Had a scan appointment there and as I was waiting Debbie was on reception, she did the job of about 4 people!! Non stop on the phone and dealing with patients on her own,polite friendly and caring to everyone she spoke to.The other staff were off with covid so it was just her but what a professional we all need a Debbie on our receptions 😁😁
+
+Author: Sarah Jones
+Date: 4 years ago
+Rating: 5 stars
+I honestly don't understand the bad reviews I think this doctors practice is excellent. I was in a practice before that was a nightmare and can honestly say I have never had an issue here reception are a breath of fresh air. Don't take mine or anyone else's word for it find out for yourself but I'm sure you'll agree with me
+
+Author: Shannon
+Date: 4 years ago
+Rating: 1 star
+Book to see a doctor and get a pharmacist, Joan from reception is the most ill-mannered member of staff, the rest do their best to meet your needs. Ordered inhalers for my daughter in the past and was given eczema cream instead. Been trying to get a face to face appointment for them to provide the correct care is like getting blood from a stone, I understand covid but that's not an excuse to neglect their duty of care.
+
+Author: Nikel Joe
+Date: 4 years ago
+Rating: 3 stars
+I understand it gets very busy in a surgery and appointments can be scarce, but having a polite receptionist makes a big difference... Please train your staff not to be rude on the phone!
+
+Author: Lindsey White
+Date: 5 years ago
+Rating: 5 stars
+Lindsey White3 reviews5 years ago
+
+Author: karina bailey
+Date: 5 years ago
+Rating: 5 stars
+Don't understand the bad reviews this surgery is amazing always get appointments quickly staff are lovely always go out of their way to help and great doctors I can't recommend this place enough
+
+Author: dawn linney
+Date: 5 years ago
+Rating: 5 stars
+I've been with Dr Hussains practice over 30 years and can honestly not fault him in any way. Kind, courteous, friendly and professional and actually takes the time to listen to you. Very friendly reception staff too.
+
+Author: Gary Smith
+Date: 6 years ago
+Rating: 5 stars
+Debbie on reception is really helpful as is dr Hussain
+
+Author: Can’t See
+Date: 6 years ago
+Rating: 5 stars
+Can’t See6 years ago
+
+Author: azc
+Date: 6 years ago
+Rating: 5 stars
+azc6 years ago
+
+Author: Sayed Ali Attaie
+Date: 6 years ago
+Rating: 1 star
+Lazy staff, registration took a week. Phone line hangs up on you even though I know they weren't busy at 8 o'clock in the morning.
+
+Author: Ji Grace
+Date: 6 years ago
+Rating: 1 star
+Rubbish service! Dont go.
+
+Author: Shazia Idris
+Date: 7 years ago
+Rating: 5 stars
+Wonderful practice, very happy with the care I receive. The staff are very helpful and go the extra mile to help whenever they can, especially Debbie. Shazia Idris
+
+Author: Bernadette Summers
+Date: 8 years ago
+Rating: 1 star
+Went today for my appointment which was clearly stated to be 4.10.. to be told it was 3.50.. and I could come back tomorrow! I'm a severe asthmatic and have a nasty infection. I also suffer with high blood pressure and high cholesterol which hasn't been addressed. Needless to say I will be changing doctors asap! Disgusted.

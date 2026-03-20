@@ -4,58 +4,1642 @@ Postcode: M33 4BR
 Google Maps title: Firsway Health Centre
 Google rating: 4.1
 Google review count: 237
-Google Maps URL: https://www.google.com/maps/place/Firsway+Health+Centre/@53.4215558,-2.3552964,17z/data=!4m8!3m7!1s0x487bac7e54356269:0x2e002794bfb45719!8m2!3d53.4215558!4d-2.3552964!9m1!1b1!16s%2Fg%2F1vd75gg2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Firsway+Health+Centre/@53.4215558,-2.3578767,17z/data=!4m8!3m7!1s0x487bac7e54356269:0x2e002794bfb45719!8m2!3d53.4215558!4d-2.3552964!9m1!1b1!16s%2Fg%2F1vd75gg2?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 237
+Owner replies collected: 148
+Raw review responses captured: 25
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P91021-firsway-health-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: John Hodgson
-Date: 2 hours ago
+Date: a week ago
 Rating: 4 stars
 I wish to acknowledge the excellent care, help and attention which I received today during my appointment consultation. The reception staff are so courteous and efficient, and determined to get satisfaction for each patient - this is obvious by just sitting and observing. My consultation was with Ms. Yara Ahmed, who was most professional and extremely thorough - and with a caring disposition. I was also seen by Dr. Orton, who was helpful in explaining the cause of my problem, and upon giving clear advice on how to deal with it. Thank you.
+Practice response date: a week ago
+Practice response:
+Thank you, John, for your kind review. We’re glad our reception team, Ms. Yara Ahmed, and Dr. Orton provided thorough and reassuring care. We truly appreciate your feedback and are here if you need anything further.
 
 Author: Moiz Mohammed
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
 Staff were very accommodating and helpful towards me and I had a great experience speaking with the doctor.
+Practice response date: a month ago
+Practice response:
+Thank you for your 5‑star review. We appreciate you taking the time to share your positive experience.
 
 Author: Nicola Wilson
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
 I felt compelled to write this review after the help I received at a very difficult time for me from Denise and Jade. Both went above and beyond, speaking to duty doctors, doctors and pharmacists to get me the support I needed. Nothing seemed to be too much trouble. I cannot thank them enough and I don’t think they will know what that help meant to me at that time.
+Practice response date: a month ago
+Practice response:
+Thank you for taking the time to share this, Nicola. We’re very pleased to hear that Denise and Jade were able to support you during such a difficult time and that you felt well looked after. Your kind words are greatly appreciated.
 
 Author: S B
 Date: a month ago
 Rating: 5 stars
 I saw Dr Kaushib Today, he is very professional, and caring, he understood my needs, the whole team, the receptionists the staff, are all fabulous, they work so hard, and are attentive to patients, so id like to give a big, big thankyou, to all of them.
+Practice response date: a month ago
+Practice response:
+Thank you for your feedback, Sandeep. We’re pleased to hear that you’ve had a positive experience with our doctors, nurses, and staff.
 
 Author: Christina RILEY-JOYCE
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 I saw Dr Roberts yesterday. I found her to be very kind, understanding and thorough. She explained everything clearly and respected my wishes. I came away satisfied and reassured.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your feedback, Lyn. We’re glad to hear that everything was all good and appreciate you taking the time to leave a review.
 
 Author: Chloe Dickinson
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 Thank you to Denise, Claire and Stephanie. They took responsibility for my query and resolved it, which took the weight off me. It wasn’t a particularly stressful issue - just sorting out HRT - but it was reassuring to receive the kind of care I would usually give myself. Across each separate interaction, it was clear we were working together towards the same outcome rather than against each other :)
+Practice response date: 2 months ago
+Practice response:
+Thank you for your feedback, Chloe!
 
 Author: Jocy None
-Date: Edited a month ago
+Date: Edited 2 months ago
 Rating: 5 stars
 Thank you to Georgia puke for being very professional, and patient. She did my NHS check today and I'am extremely proud of her work ethic politness and values. Great chat, and she should be valued by her firsway team and her top manager Helen. We need more experienced nursing staff from Australia to come to UK to support the NHS team. Gorgia is very appreciative health care assistant,caring and has great personality of dealing with patiend on the high IQ . Great stuff Thank you Joceline Chebaro Community Relations Advisor for Andrew Gwynne Mp of Denton and Gorton.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your feedback. We’re glad you had a positive experience.
 
 Author: Peter Lea
-Date: a month ago
+Date: 2 months ago
 Rating: 5 stars
 I joined this practice in 2023 having had poor treatment from a previous practice. I suffered a rare illness in 2009 which has left me with many issues. Since joining Firsway, the manner in which I have been dealt with, has been is excellent Any concerns that I have over my health have been more than adequately dealt with I have reasons for hospital visits and again Firsway deal with hospital correspondence immediately and positively. I would totally recommend Firsway Health Centre. They could not have done anything more to help me
+Practice response date: 2 months ago
+Practice response:
+Thank you for taking the time to leave such positive feedback. We’re very pleased to hear that you’ve felt well supported since joining the practice and that your concerns have been addressed effectively. We appreciate your kind recommendation and your comments about our team’s care and communication.
 
 Author: David The Scamp
 Date: 2 months ago
 Rating: 5 stars
 As I am not a regular visitor due to rarely being ill, I can't find enough words to praise all the staff at Firsway Health Centre, particularly Dr Roberts....my wife phoned up this morning(due to working commitments and being unable to access a phone)and managed to get me a booking. All the staff were extremely friendly and Dr Roberts was very helpful and efficient in her diagnosis. She explained everything perfectly and advised the course of treatment to be taken. Thank you so much to everyone at Firsway Health Centre.
+Practice response date: 2 months ago
+Practice response:
+Thank you for your feedback. We’re pleased to hear you had a positive experience.
 
 Author: Marie Walker
 Date: 2 months ago
 Rating: 5 stars
 I am a patient of this Centre and I can wholeheartedly say that all the staff go above and beyond to ensure I am properly cared for and support my needs. The Gp’s are excellent and always thorough with my attendance and take time to listen (not rushed) Thank you to all of you x
+Practice response date: 2 months ago
+Practice response:
+Thank you for your positive feedback!
+
+Author: Peter Taylor
+Date: 3 months ago
+Rating: 5 stars
+I cannot recommend Dr. Grant highly enough. She is everything you could ask for in a GP: incredibly thorough, a fantastic listener. She takes the time to explain everything clearly and ensures you are fully involved in any decisions about your care. ​Even as a busy doctor she never makes you feel rushed. She is a real asset to Firsway Health Centre and I feel very fortunate to be under her care.
+Practice response date: 3 months ago
+Practice response:
+Thank you for the 5 star feedback!
+
+Author: Dariusz Dabrowski
+Date: 3 months ago
+Rating: 5 stars
+minor surgery. assistants and Dr. David van Dellen professionals.Thank you
+Practice response date: 3 months ago
+Practice response:
+Thank you, Dariusz. We’re glad to hear your minor surgery went well and that you felt supported by Dr van Dellen and the team. We appreciate you taking the time to leave a review.
+
+Author: Nicola Lenihan
+Date: 4 months ago
+Rating: 5 stars
+Just had a lovely conversation with Karen on reception who was so friendly and professional. Always find Firsway staff very helpful and a pleasure to speak to and would highly recommend this surgery.
+Practice response date: 4 months ago
+Practice response:
+Thank you for your kind feedback. We’re pleased to hear you were happy with our staff and service.
+
+Author: JR
+Date: Edited 4 months ago
+Rating: 5 stars
+Visited today for a an appointment with a nurse. All my recent appointments have been on time and all staff staff are friendly and helpful so thank you very much. I also visited about a month ago for my flu jab. In and out in a jiffy and the staff and atmosphere was very friendly. Thank you.
+Practice response date: 5 months ago
+Practice response:
+Hi, we are super pleased to hear your feedback. We will make sure we pass the comments onto the staff at Firsway.
+
+Author: Jennifer LY
+Date: Edited 4 months ago
+Rating: 5 stars
+⭐️ I recently experienced an issue with my son’s medication, Polly helped me resolve this, she was efficient in identifying the problem and showed genuine kindness and care throughout. Pollys calm professional approach turned what could have been a stressful situation into a reassuring positive experience. Thank you Polly. ⭐️
+Practice response date: 4 months ago
+Practice response:
+Thank you for your positive review! We are happy to hear you are satisfied with your experience.
+
+Author: Mark Williams
+Date: 4 months ago
+Rating: 5 stars
+5 out of 5 for Bhoomi who works as part of the prescription team. Following a sinus operation bhoomi rang me to ask if I needed the medication in a letter sent from the hospital. She has great customer service skills, is very courteous, asks the right questions about my medication and is polite. Bhoomi sent the prescription through to my chemist. Thank you very much for your help. Mark Williams
+Practice response date: 4 months ago
+Practice response:
+Thank you for your lovely feedback - we are glad we could help!
+
+Author: angela willner
+Date: 5 months ago
+Rating: 5 stars
+I always receive top-notch attention and diligence from reception staff and every doctor I meet. I wanted to say ‘thank you’ for making me feel valued and cared for, especially against a backdrop of huge pressures on the NHS.
+Practice response date: 5 months ago
+Practice response:
+It’s great to know you were satisfied with the service and support provided.
+
+Author: Linda Pearce
+Date: 5 months ago
+Rating: 5 stars
+Honestly can’t fault the doctors and staff, thank you for always being so helpful and efficient:-)
+Practice response date: 5 months ago
+Practice response:
+Thank you, Linda, for your kind feedback. We’re delighted to hear that you find our doctors and staff helpful and efficient.
+
+Author: Sam Ellison
+Date: 5 months ago
+Rating: 4 stars
+General good experience. Relatively easy to book an appointment. Have to be vigilant if you want an on the day appointment but this is as expected
+Practice response date: 5 months ago
+Practice response:
+We’re grateful for your kind words. It’s wonderful to hear that you were satisfied with the service you received
+
+Author: Susan Carlton
+Date: 5 months ago
+Rating: 5 stars
+Flu jab arrangements and execution exceptional.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your feedback. We’re glad to hear that you found the flu jab process exceptionally well organised.
+
+Author: Joseph Bayley
+Date: 5 months ago
+Rating: 5 stars
+Thank you for your feedback.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your feedback.
+
+Author: Mike Page
+Date: 5 months ago
+Rating: 5 stars
+Flu jab session was well organised and with good stewarding that help kept things moving.
+Practice response date: 5 months ago
+Practice response:
+We appreciate your kind words! It's fantastic to hear that you had a positive experience.
+
+Author: Antonio Alles
+Date: 5 months ago
+Rating: 5 stars
+Very efficient on flu jabs in and out and generally very good regards the health centre very helpful.
+Practice response date: 5 months ago
+Practice response:
+We truly appreciate your positive review! It's wonderful to know that you found our service efficient and friendly. Thank you for choosing us!
+
+Author: Louise Haddock
+Date: 5 months ago
+Rating: 5 stars
+Thank you for the excellent rating! We’re here to help whenever you need us.
+Practice response date: 5 months ago
+Practice response:
+Thank you for the excellent rating! We’re here to help whenever you need us.
+
+Author: Glynnis Morris
+Date: 5 months ago
+Rating: 5 stars
+Attended for flu vaccination. Smooth, speedy process from helpful and very pleasant staff
+Practice response date: 5 months ago
+Practice response:
+Thank you for your lovely review! Our team always aims to make every patient feel cared for.
+
+Author: Darren Whitfield
+Date: 5 months ago
+Rating: 5 stars
+Just had my first ever flu jab and from booking to receiving the jab within 24 hours was a seamless amazing service. Generally the practice is well run although I find the booking system frustrating. I wish I could just message/email the practice anytime of day to ask for an appointment. Restrictions on doing this is a shame. With modern day pressure on the NHS I’d say they are a good practice
+Practice response date: 5 months ago
+Practice response:
+We appreciate your feedback! If you would like to discuss this with a member of our team, please contact the practice directly, and we will be happy to help.
+
+Author: andrew turner
+Date: 5 months ago
+Rating: 5 stars
+Friendly staff, very efficient ‘flu vaccine clinic: thank you!
+Practice response date: 5 months ago
+Practice response:
+Your review means a lot to our staff. Thank you for recognising their hard work and dedication.
+
+Author: Peter Jacobs
+Date: 5 months ago
+Rating: 4 stars
+Well-organised large practice that has embraced modernisation, so offers a high standard of service delivery.
+Practice response date: 5 months ago
+Practice response:
+Thanks for your review! We’re glad to know things went well overall. Let us know if there's anything else we could do to improve your experience.
+
+Author: Willie Whyte
+Date: 5 months ago
+Rating: 5 stars
+Went for my flu jab and everything went as good as it could have. I was in at 10am so the staff were still in a happy mood. My only other comment about the appointment was a reminder sent to me telling me how to avoid a DNA. Does every patient know what a DNA is? I doubt it.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your kind words! We’re glad you had a positive experience with our team. If you would like to discuss this with a member of our team, please contact the practice directly and we will be happy to help.
+
+Author: derek marples
+Date: 5 months ago
+Rating: 5 stars
+I have been in this practise for over 70 years formerly meadway and with dr Thompson before Had my flu jab this morning easy and efficient
+Practice response date: 5 months ago
+Practice response:
+We’re so pleased to hear you had a good visit. Thanks for your 70 years of trust and kind review!
+
+Author: Andy Collinson
+Date: 5 months ago
+Rating: 5 stars
+Seamless and painless. Over and done with in about 2 minutes.
+Practice response date: 5 months ago
+Practice response:
+We’re so glad your experience with us was positive — thank you for sharing your thoughts!
+
+Author: David Temperley
+Date: 5 months ago
+Rating: 5 stars
+Really impressed with flu vaccination service. In and out in 2 minutes. Keep up the good work!
+Practice response date: 5 months ago
+Practice response:
+We truly appreciate your feedback. It’s wonderful to know our efforts make a difference.
+
+Author: Yashodhara Deka
+Date: 5 months ago
+Rating: 5 stars
+Firsway surgery has always been great at accommodating appointments for myself and my children when we need it. The service is great and the staff are always helpful. Special mention for Dr. Prabhakaran who has gone above and beyond with my care.
+Practice response date: 5 months ago
+Practice response:
+Your kind words made our day! We’re so happy we could meet your expectations.
+
+Author: Martin Lupton
+Date: 5 months ago
+Rating: 5 stars
+Excellently organised Flu Jabs no waiting - in and out in less than 2 minutes Thank you!
+Practice response date: 5 months ago
+Practice response:
+Thank you for your kind review — we’re so pleased you had a positive experience with our team.
+
+Author: Juliet Purcell
+Date: 5 months ago
+Rating: 5 stars
+Very impressed with Firsway health centre in Sale this morning. Vaccination clinic was really well organised, efficiently done & very friendly & welcoming. All done in no time.
+Practice response date: 5 months ago
+Practice response:
+Thank you for taking the time to share your feedback. We truly value your support and trust.
+
+Author: Faraza Wasti
+Date: 5 months ago
+Rating: 5 stars
+Thank you for your 5-star review — it means so much to everyone at the practice.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your 5-star review — it means so much to everyone at the practice.
+
+Author: kathryn wood
+Date: 5 months ago
+Rating: 5 stars
+Thank you for your 5 stars! We’re grateful to be your healthcare provider and appreciate your kind words.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your 5 stars! We’re grateful to be your healthcare provider and appreciate your kind words.
+
+Author: Robert Purcell
+Date: 5 months ago
+Rating: 5 stars
+Flu jab clinic. Very well organised and efficient. Was in and out in three minutes. Very impressed.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your feedback! We’re always striving to provide the best care possible.
+
+Author: John Wilson
+Date: 5 months ago
+Rating: 5 stars
+Recently attended for flu vaccination. Extremely efficient and rapid process. No hanging around at all.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your feedback. We’re pleased to hear that your flu vaccination was quick and efficiently managed.
+
+Author: Malcolm Howells
+Date: Edited 5 months ago
+Rating: 5 stars
+I have just attended Firsway Health Centre with my wife, to take advantage of the flu and Covid vaccinations available, having first made an appointment as requested. The whole operation from meet/greet and having both the flu and Covid vaccinations administered was completed effortlessly by the coordinated and effective system used this morning. It was a most pleasant, warm and efficient display from a first-class health centre. Please thank everyone involved from the volunteers, administrative, nursing and medical teams for an excellent service. Highly recommended.
+Practice response date: a year ago
+Practice response:
+We're grateful for your kind words! It's great to know our team made a positive impression. Thank you for your continued trust in us!
+
+Author: Jeanne Davies
+Date: 5 months ago
+Rating: 5 stars
+Thank you for the five star review Many Thanks Firsway Health Centre.
+Practice response date: Edited 5 months ago
+Practice response:
+Thank you for the five star review Many Thanks Firsway Health Centre.
+
+Author: Margaret Wilkinson
+Date: 5 months ago
+Rating: 5 stars
+very efficient system for administering flu and RSV jabs,staff are always pleasant and helpful.
+Practice response date: 5 months ago
+Practice response:
+Thank you very much Margaret for your lovely review.
+
+Author: Lance Beaty
+Date: 5 months ago
+Rating: 5 stars
+Brilliant local doctors surgery. Great staff always willing to help.
+Practice response date: 5 months ago
+Practice response:
+Thank you very much Lance for your lovely comments and review.
+
+Author: Ciaran Breen
+Date: Edited 5 months ago
+Rating: 5 stars
+Slick flu jab operation. Car to jab to car in about 60 seconds!
+Practice response date: 5 months ago
+Practice response:
+Great to hear your fabulous feedback! Thank you!
+
+Author: andy price
+Date: 5 months ago
+Rating: 5 stars
+A very quick and efficient flu vaccination today.
+Practice response date: 5 months ago
+Practice response:
+Thank you Andy, appreciate your feedback.
+
+Author: Abina Quigley
+Date: 5 months ago
+Rating: 5 stars
+I have been a patient @ Firsway Health Centre (formally Meadway) since moving to Sale in 1987. The doctors have always been excellent and have provided professional and empathetic care. Today, was no exception administering flu injections. Thank you to the doctors and their staff.
+Practice response date: 5 months ago
+Practice response:
+Wonderful to hear Abina, very nice to read your thoughts and experience with us. Thank you for sending through this review for us to read.
+
+Author: Mahendra Gonsalkorale
+Date: 5 months ago
+Rating: 5 stars
+Very efficiently managed flu vaccination program. Good communication, car parking, signage and friendly vaccination process.
+Practice response date: 5 months ago
+Practice response:
+Thank you for the 5* review today!
+
+Author: David Holmes
+Date: 5 months ago
+Rating: 5 stars
+Went for my flu jab today and it was a very efficiently run operation. Everything was so well organised it was great. Felt sorry for the man on carpark duty, he must have been drowned.
+Practice response date: 5 months ago
+Practice response:
+Thank you David, appreciate the 5* review. Car park attendant did very well for us with plenty of hot drinks 😆 …
+
+Author: Susan Flitcroft
+Date: 5 months ago
+Rating: 5 stars
+Had my flu jab this morning very well organised. The staff were lovely.
+Practice response date: 5 months ago
+Practice response:
+Many thanks for the review and your feedback!
+
+Author: Rochelle Hunt
+Date: 5 months ago
+Rating: 5 stars
+Thank you Rochelle for the 5* review.
+Practice response date: 5 months ago
+Practice response:
+Thank you Rochelle for the 5* review.
+
+Author: Anne Lemon
+Date: 5 months ago
+Rating: 5 stars
+Had my flu jab easy peasy friendly great
+Practice response date: 5 months ago
+Practice response:
+Many Thanks for leaving us a 5* review.
+
+Author: Bacoiu Mihaela
+Date: 5 months ago
+Rating: 5 stars
+Professionalism and promptitude!
+Practice response date: 5 months ago
+Practice response:
+Thank you for feedback and leaving us a review!
+
+Author: Julie Samari
+Date: 5 months ago
+Rating: 5 stars
+Saturday 4th Oct Flu jab this morning. Impressive organisation from being directed in the car park, no waiting, no queues. Straight in to have my jab, staff directing the way …
+Practice response date: 5 months ago
+Practice response:
+Saturday 4th Oct Flu jab this morning. Impressive organisation from being directed in the car park, no waiting, no queues. Straight in to have my jab, staff directing the way … More
+
+Author: Tobias Ashton (Toby)
+Date: 5 months ago
+Rating: 5 stars
+Since moving into the area, firsway have been nothing but supportive and kind, which is a luxury as a trans person.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your review, it’s always great to hear such positive feedback.
+
+Author: Susan Ferguson
+Date: 5 months ago
+Rating: 5 stars
+Flu jab delivered. No fuss, no waiting and met by a friendly team. It might be wiser though, to give a small advice sheet (for potential reactions) with the feedback form.
+Practice response date: 5 months ago
+Practice response:
+Thank you Susan for your review today, we will take your feedback onboard.
+
+Author: Andrea Evans
+Date: 5 months ago
+Rating: 5 stars
+Very efficient and friendly
+Practice response date: 5 months ago
+Practice response:
+We are pleased to hear your lovely feedback, thank you!
+
+Author: David Caulton
+Date: 5 months ago
+Rating: 5 stars
+I have always found all staff and health professionals friendly, helpful and knowledgeable.
+Practice response date: 5 months ago
+Practice response:
+We are grateful for your feedback. Thank you for leaving us a review.
+
+Author: Sue Darlington
+Date: 5 months ago
+Rating: 5 stars
+Thank you leaving us a 5* review!
+Practice response date: 5 months ago
+Practice response:
+Thank you leaving us a 5* review!
+
+Author: Kerry Varley
+Date: 5 months ago
+Rating: 5 stars
+Just been for a flu vaccine.. smooth service .. lovely staff
+Practice response date: 5 months ago
+Practice response:
+Lovely comments to read, thank you for completing a Google review of your experience at Firsway.
+
+Author: emma barclay-watt
+Date: 5 months ago
+Rating: 5 stars
+The reception staff are friendly, professional and helpful. The appointment system is efficient. The care from doctors has been excellent.
+Practice response date: 5 months ago
+Practice response:
+We are pleased to hear this, looking after your health is what we are here for. Many Thanks for the review.
+
+Author: Peter Macfarlane
+Date: 5 months ago
+Rating: 5 stars
+Great flu vaccine service
+Practice response date: 5 months ago
+Practice response:
+Many Thanks for leaving us a 5* review today.
+
+Author: Leigh Clark
+Date: 5 months ago
+Rating: 4 stars
+Very Smooth & friendly service
+Practice response date: 5 months ago
+Practice response:
+Thank you Leigh for your feedback, much appreciated.
+
+Author: pauline clarke
+Date: 5 months ago
+Rating: 5 stars
+Been with Firsway (and Meadway) for 40 yrs. I have been fortunate with the medical staff when I've needed an appt. I have access to MFT app and I use the MyGP app and find both apps easy to use, once familiar with system. I also have my 93yr old mum linked to my MFTapp to manage her appts, test results etc. I find it really easy to switch from me to mum and back again. I also have the NHS app which links to my medical records and can see and track tests results in this too. Having said that when I've needed to follow up on a telehone appt I've had, I've found the practice responsive to my call requests for follow up appt.
+Practice response date: 5 months ago
+Practice response:
+It’s great to hear you had a positive experience with us at Firsway over the last 40 years. Thank you for your review, it's lovely to read.
+
+Author: Gaurav Avasthi
+Date: 5 months ago
+Rating: 5 stars
+Appreciate your 5* review, thank you!
+Practice response date: 5 months ago
+Practice response:
+Appreciate your 5* review, thank you!
+
+Author: Alex Norbury-Morris
+Date: 5 months ago
+Rating: 5 stars
+Very good GP. Highly recommend. Just went for my flu jab. Very quick and set up very well. Staff very friendly!
+Practice response date: 5 months ago
+Practice response:
+Thank you for the lovely message, we are glad to hear you had a positive experience.
+
+Author: Terry Charnock
+Date: 5 months ago
+Rating: 5 stars
+Thank you for the 5* review!!
+Practice response date: 5 months ago
+Practice response:
+Thank you for the 5* review!!
+
+Author: Gillian Adams
+Date: 5 months ago
+Rating: 5 stars
+Just been for my flu injection very organised and efficient all the staff were lovely
+Practice response date: 5 months ago
+Practice response:
+Thank you for taking a moment to share positivity, it means a great deal to us.
+
+Author: Helen Ball
+Date: 5 months ago
+Rating: 5 stars
+There flu injection service is excellent no waiting and seen quickly
+Practice response date: 5 months ago
+Practice response:
+We appreciate your message, thank you.
+
+Author: Barry Pond
+Date: 5 months ago
+Rating: 5 stars
+Thank you Barry for your review today!
+Practice response date: 5 months ago
+Practice response:
+Thank you Barry for your review today!
+
+Author: Carol Pond
+Date: 5 months ago
+Rating: 5 stars
+Thank you Carol for the 5* review!
+Practice response date: 5 months ago
+Practice response:
+Thank you Carol for the 5* review!
+
+Author: Ericcasie
+Date: 5 months ago
+Rating: 5 stars
+Always friendly and helpful. The immunisation today was well organised and we were dealt with efficiently.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your kind feedback! It’s wonderful to know that our team made a difference for a positive experience today.
+
+Author: Jacqueline Gallagher
+Date: 5 months ago
+Rating: 5 stars
+Very helpfall,good service
+Practice response date: 5 months ago
+Practice response:
+Thank you Jaqueline for your 5* positive review today.
+
+Author: Carol Brown
+Date: 5 months ago
+Rating: 5 stars
+I have been a patient at Firsway surgery since it opened. The staff have always been very helpful, dealing with any of my queries efficiently.
+Practice response date: 5 months ago
+Practice response:
+Thank you for your kind words. We are here to support you and appreciate you taking the time to share your experience.
+
+Author: Sarah Walker
+Date: 5 months ago
+Rating: 5 stars
+Very quick and easy to get flu vaccination today
+Practice response date: 5 months ago
+Practice response:
+We appreciate your feedback today! Thank you Sarah.
+
+Author: Karen Lord
+Date: 5 months ago
+Rating: 5 stars
+Went for a flu jab on Saturday morning, very efficient, was in and out in 5 mins.
+Practice response date: 5 months ago
+Practice response:
+Lovely to hear your comments, many thanks for leaving us a review today.
+
+Author: Mark Sellars
+Date: 5 months ago
+Rating: 4 stars
+Thank you for leaving us a review today for your experience at Firsway Health Centre.
+Practice response date: 5 months ago
+Practice response:
+Thank you for leaving us a review today for your experience at Firsway Health Centre.
+
+Author: Claudia Law
+Date: Edited 5 months ago
+Rating: 5 stars
+Excellent health care over many years. Empathetic, diligent doctors, always very thorough. Very good nurses. Very friendly and helpful staff at reception. A big thank you to the whole team. Just had the flu jab. Excellent organisation, it only took 3 minutes. Thank you for looking after our health!
+Practice response date: 5 months ago
+Practice response:
+Thank you for your feedback! We are delighted to hear you had a positive visit, and we look forward to continuing to care for you.
+
+Author: Peter Byrne
+Date: 5 months ago
+Rating: 5 stars
+Flu vaccination visit. Very slick operation.
+Practice response date: 5 months ago
+Practice response:
+Thank you Peter for leaving us wonderful feedback today.
+
+Author: Geoff Marsh
+Date: 5 months ago
+Rating: 5 stars
+Just been for our flu jabs. Wonderfully organised from parking to leaving the centre. Well done to everyone on duty - especially the car park warden in the pouring rain.
+Practice response date: 5 months ago
+Practice response:
+We really appreciate you taking the time to share your experience. Your kind words mean a lot to everyone here at the practice.
+
+Author: Marion Pimblett
+Date: 5 months ago
+Rating: 5 stars
+Very efficient and easy. Very pleased.
+Practice response date: 5 months ago
+Practice response:
+Hi Marion, lovely to hear your feedback. Many Thanks
+
+Author: David Mellor
+Date: 5 months ago
+Rating: 5 stars
+Pleasant friendly staff assisting with flu jabs - awful weather high winds - pleased to get home safely
+Practice response date: 5 months ago
+Practice response:
+Thanks for your lovely review, we really appreciate your support.
+
+Author: Dave Jackson
+Date: 5 months ago
+Rating: 5 stars
+Excellent service this morning for flu jabs, very efficient, in and out in no time at all.
+Practice response date: 5 months ago
+Practice response:
+Fantastic to hear your feedback, many thanks for leaving us the review today.
+
+Author: venkat raman Rajendran
+Date: 5 months ago
+Rating: 5 stars
+Thank you for leaving us a review today! Appreciate this.
+Practice response date: 5 months ago
+Practice response:
+Thank you for leaving us a review today! Appreciate this.
+
+Author: Steven Pimblett
+Date: 5 months ago
+Rating: 5 stars
+Went for a flu vaccine and it was super easy and efficient. Turn up sit down confirm a couple of pieces of information, jabbed and off I went.
+Practice response date: 5 months ago
+Practice response:
+Thank you so much for your feedback! We are delighted to know you had a great visit with us.
+
+Author: John Hamilton
+Date: 5 months ago
+Rating: 5 stars
+Reception staff, nurses and doctors always kind, helpful and supportive, easy to book appointments, same day if necessary. Welcoming environment, convenience of Cohen’s pharmacy attached also with helpful staff.
+Practice response date: 5 months ago
+Practice response:
+Thank you so much for taking the time to leave us a review. We are truly grateful for your feedback and pleased to hear you had a positive experience with our practice.
+
+Author: Mike Buckley
+Date: 5 months ago
+Rating: 5 stars
+Attended the flu clinic. First class service, very well organised, in and out in 2 mins. Staff very helpful and friendly. Very impressive all round
+Practice response date: 5 months ago
+Practice response:
+We are grateful for your kind words and 5* Review. Thank you!
+
+Author: Paul Maskew
+Date: 5 months ago
+Rating: 5 stars
+Just had my winter flu vaccination. Very efficient queuing system and organisation of the appointments at the health centre. Staff very friendly and welcoming.
+Practice response date: 5 months ago
+Practice response:
+You're very welcome, we are glad to hear you had a positive experience. Thank you for your kind words!
+
+Author: jane bancroft
+Date: 5 months ago
+Rating: 5 stars
+Just been for flu jab In and out in under 5 minutes Excellent organisation
+Practice response date: 5 months ago
+Practice response:
+Thank you for taking the time to share your experience. We always aim to provide the best care possible for our patients.
+
+Author: S K
+Date: 5 months ago
+Rating: 5 stars
+Just had an annual flu jab. Very efficient and friendly staff.
+Practice response date: 5 months ago
+Practice response:
+Thank you for the 5*. Appreciate your time taken to leave us a review!
+
+Author: Jean Owen
+Date: 5 months ago
+Rating: 4 stars
+Been with this surgery for years with hardly any problems/issues
+Practice response date: 5 months ago
+Practice response:
+Thank you for your review, we are are glad you are happy with our service.
+
+Author: Will Culver
+Date: 5 months ago
+Rating: 5 stars
+Super efficient flu jab, in and out in a minute
+Practice response date: 5 months ago
+Practice response:
+Thank very much Will for the 5* review.
+
+Author: Jane Farndon
+Date: 5 months ago
+Rating: 5 stars
+Friendly and efficient practice.
+Practice response date: 5 months ago
+Practice response:
+Thank you Jane for the review! Much appreciated.
+
+Author: Helena Mann
+Date: 5 months ago
+Rating: 5 stars
+I have just booked an appointment with a GP a f2f appointment. I have never had to wait long in the telephone queue and I’m mostly caller number one in the queue. I do try and avoid calling first thing or when it is a busy time if non urgent. Each time I speak to a receptionist I find them extremely helpful, pleasant and efficient. The GP’s also are very efficient and very good. If anybody wishes to move to this surgery I would highly recommend them and next door Cohens Pharmacy is an added convenience for prescriptions. Many thanks to you all. HM
+Practice response date: 5 months ago
+Practice response:
+Thank you, Helena, for your kind feedback. We’re glad to hear our reception team and GPs have been helpful and efficient, and that you’ve had a positive experience.
+
+Author: Savitri Dale
+Date: 6 months ago
+Rating: 5 stars
+I recently moved to Sale from Berkshire. Having been with the same GP practice for the last 29 years, I wasn't familiar with the current process of signing on with a new GP. I spoke to the receptionist over the phone and she was very helpful. And the online registration process was easy. Within a couple of working days my registration was complete, I was assigned a GP and the practice set up a telephone appointment with the pharmacist to review my current medication and arrange for my annual blood tests at a local clinic. Although I can't comment on booking an appointment because I haven't needed a face to face appointment with a GP yet, so far I have found the staff that I've spoken to pleasant, helpful and efficient.
+Practice response date: 6 months ago
+Practice response:
+Thank you, Savitri, for your detailed feedback. We’re glad to hear that your registration process went smoothly and that our team has been helpful and efficient.
+
+Author: Pamela Hatch
+Date: 7 months ago
+Rating: 5 stars
+Great service
+Practice response date: 7 months ago
+Practice response:
+Thank you for the great rating!
+
+Author: Colin Sharp
+Date: Edited 7 months ago
+Rating: 5 stars
+Thank you Amy keep up the good work you and all the staff have always been really helpful and professional
+Practice response date: 2 years ago
+Practice response:
+Hi Colin, Thank you for your review of 5*, much appreciated. Kind Regards, Lauren Hinds.
+
+Author: Mark oconnell
+Date: 7 months ago
+Rating: 5 stars
+numder one HEALTH CENTRE.
+Practice response date: 7 months ago
+Practice response:
+Thank you, Mark, for your fantastic feedback.
+
+Author: Grace
+Date: 8 months ago
+Rating: 1 star
+Disgusting service. Admin staff Alison is poor and needs sacking asap or a serious retrain. They have no duty of care to patients. Don’t send your loved ones here. To dismiss a 90 year old and telling her she had, had a fall when she hadn’t is extremely worrying. I have call recordings of Dr Lester laughing about my grandmas problems and Alison’s rudeness on the phone. Happy to make public.
+
+Author: Anatalie
+Date: 9 months ago
+Rating: 5 stars
+Fantastic service recieved over the years. Great GP surgery where you are seen and heard. Thank you!
+Practice response date: 8 months ago
+Practice response:
+Thank you, Anatalie, for your kind words and ongoing support. It's great to hear you've felt seen and heard over the years. Your feedback is really appreciated.
+
+Author: Ansam Basher
+Date: 9 months ago
+Rating: 5 stars
+The staff at this health centre are incredibly professional, kind, and attentive. From the front desk to the medical team, everyone made me feel comfortable and cared for. Appointments are well-organized, and the environment is clean and welcoming. Highly recommend!”
+Practice response date: 9 months ago
+Practice response:
+Thank you, Ansam, for your kind feedback. We're pleased to hear that you felt well cared for and comfortable during your visit. Your comments mean a great deal to the whole team and are very much appreciated.
+
+Author: Toni Casey
+Date: 9 months ago
+Rating: 5 stars
+Appointment process is much improved with the new system, and GPs are very attentive - they genuinely listen and will always find a solution.... they will provide a specialist path forward if needed, too... You also dont get told to 'see if it improves in a few weeks' here 😀 …
+Practice response date: 9 months ago
+Practice response:
+Thanks for your feedback, Toni! We’re glad to hear the new appointment system is working well and that our GPs are providing attentive, helpful care.
+
+Author: michelle Thompson
+Date: 9 months ago
+Rating: 1 star
+I would not even give Firsway any star. There is no communication you will see a different doctor every time, reception I’m sure are fed up with patients complaints. I had cancer and they were the worst for communicating with the consultants. You’ll get a different medical opinion from the many doctors there because it’s unlikely you’ll see the same doctor. It’s become almost frightening of what can happen if you really need them.
+Practice response date: 9 months ago
+Practice response:
+We’re sorry to hear you’ve had a negative experience with the practice, Michelle. We take concerns like yours seriously, particularly around communication and continuity of care. Please consider contacting the practice manager directly so we can look into this further and see how we can improve.
+
+Author: Sarah
+Date: 10 months ago
+Rating: 5 stars
+I wanted to express my appreciation for the support I received from Amy-Lee, a receptionist at the surgery. I called last Tuesday morning while experiencing high anxiety and urgently needing to speak with a GP. Amie-Lee was incredibly compassionate, calm, and understanding during the call. She took the time to listen and reassured me in a way that made a real difference. Thanks to her empathy and efficiency, she was able to arrange a same-day GP call, which I was truly grateful for. In what was a difficult moment for me, her kindness stood out and brought me a sense of relief. Amie-Lee is a real credit to the surgery - thank you again for your care.
+Practice response date: 10 months ago
+Practice response:
+Thank you, Sarah, for sharing such a heartfelt experience. We’re very pleased to hear that Amy-Lee’s compassion and support made a real difference during a difficult time.
+
+Author: Charlotte Townsend
+Date: 10 months ago
+Rating: 5 stars
+I joined this practice about six months ago, and both my partner and I have been extremely pleased with the care we’ve received. The receptionists, doctors, and nurses are all incredibly warm, friendly, and helpful, always taking the time to provide thorough answers to any questions. Appointments are easy to book, and they act quickly when it comes to referrals or addressing health concerns
+Practice response date: 10 months ago
+Practice response:
+Thank you, Charlotte. We're so glad to hear that you and your partner have had such a positive experience since joining the practice.
+
+Author: michaela goodwin
+Date: 10 months ago
+Rating: 5 stars
+Had a very good experience at firsway health centre with my 7 year old son, on the day if our appointment he was seen quickly and Dr Rachel Roberts was reassuring and was fantastic with my son.
+Practice response date: 10 months ago
+Practice response:
+Thank you, Michaela, for sharing your positive experience at Firsway Health Centre. We’re really pleased to hear your son was seen quickly and that Dr Rachel Roberts made the visit reassuring and comfortable for you both. Your kind feedback means a great deal to us.
+
+Author: Scott Henly
+Date: 11 months ago
+Rating: 2 stars
+In 2 and a half years they still havent got a clue on what a repeat prescription is and dont waste time calling either because 4 minuites of robot talking crap just ruined my day
+Practice response date: 11 months ago
+Practice response:
+Thank you for your feedback, Scott. We’re sorry to hear about the frustration you’ve experienced with the repeat prescription process and the phone system. We understand how important it is to get these things right, and we apologise for the inconvenience caused. If you’d like to discuss this further, please don’t hesitate to contact the practice directly.
+
+Author: Lindsey Mulholland
+Date: 11 months ago
+Rating: 1 star
+Terrible experience! The receptionist are awful, they have no empathy whatsoever and do not know how to treat people who are suffering with their mental health. I suffer severely with my mental heath and have been off work due to this, meaning I needed to provide work with a sick note. Without this, will only make my anxiety worse as I’d be worrying about work along with everything else. I was told to call at 8am for an emergency appointment, when I got through, I was told my mental health isn’t an emergency and offered me an appointment 2 weeks away, (i have no medication left either at this point) the girl I spoke to went away for some further advice from her manager, the manager also said that my mental health isn’t an emergency. I ended the call and I thought I’d try the following day again at 8am as they advised. I called back, the receptionist who I spoke to this time was called Helen, she knew exactly who I was as I’d called the day before, which makes me think they had been discussing me after I’d came of the phone the previous day. Her attitude was disgusting, she said “you spoke to my colleague yesterday and we can’t give you an appointment until April as it’s not an emergency”. She didn’t care that I was clearly in a state and very frustrated, to the point she hung up on me. I came off the call and broke down in tears. My mum had to call back, she spoke to another lady who was very helpful, she managed to book me in straight away and the doctor called me not long after. This proves that the appointment could be made and I was clearly lied to. The receptionists need to be trained because they don’t treat you like a human, you’re just a number.
+
+Author: Sabreen Hussain
+Date: a year ago
+Rating: 5 stars
+I would want to take a moment to sincerely thank everyone at the practice, including the GP, the doctors, and the reception staff. I experienced professionalism, kindness, and consideration at every turn. With a consistently kind and welcoming demeanour, the desk staff made communication and scheduling simple. I felt like I was heard since the GP took the time to listen, comprehend, and offer knowledgeable advice. I felt confident in my care since the doctors demonstrated extraordinary skill. I am immensely grateful to each and every one of you for providing such genuine care and attention, which is uncommon. and I’m so appreciative of everything and Dr Rimma Grant and Dr Hannah Rajan you've done for me. many thanks 🙏 Thank you all!
+Practice response date: a year ago
+Practice response:
+Thank you so much for your heartfelt feedback. We’re truly touched by your kind words. It’s wonderful to hear that our team, including Dr Rimma Grant and Dr Hannah Rajan, were able to provide you with the care, attention, and support you deserve. We’re so grateful for your trust and will be sure to pass on your appreciation to everyone involved. Thank you again for taking the time to share your experience!
+
+Author: Chris Mannix
+Date: a year ago
+Rating: 5 stars
+I had a ‘spot’ on my chest which I was concerned about. I was referred to the Hospital and received an appointment on the same day to attend hospital on the following working day. I received the diagnosis immediately at the hospital and received a subsequent appointment to have the spot removed within 9 days. Outstanding care from Firsway Health Centre and the NHS. I am very grateful. Thank you.
+Practice response date: a year ago
+Practice response:
+Thank you for sharing your experience, Chris! We're so pleased to hear you received such prompt and outstanding care. Wishing you all the best! 😊👏 …
+
+Author: Jaime Byrne
+Date: a year ago
+Rating: 5 stars
+I am very happy with the care and treatment I have received at Firsway.
+Practice response date: a year ago
+Practice response:
+Thank you for your kind review! We're so pleased to hear that you're happy with the care and treatment you've received at Firsway. Your feedback means a lot to our team.
+
+Author: Angela Stevens
+Date: a year ago
+Rating: 5 stars
+Firsway Health Centre is a medical practice second to none. The reception staff are kind and courteous and will always try their hardest to accommodate requests for appointments. The GP’s are knowledgeable, understanding and efficient, …
+Practice response date: a year ago
+Practice response:
+Firsway Health Centre is a medical practice second to none. The reception staff are kind and courteous and will always try their hardest to accommodate requests for appointments. The GP’s are knowledgeable, understanding and efficient, … More
+
+Author: Allison Taylor
+Date: a year ago
+Rating: 5 stars
+I have attended Firsway HC for over 16 years. Recently I have had to have various tests and found the doctors friendly and always listen to how I am feeling and try to reassure me
+Practice response date: a year ago
+Practice response:
+Thank you for your wonderful rating! We’re glad to have you as a patient.
+
+Author: Sobia Jamil
+Date: a year ago
+Rating: 1 star
+If you have any feedback on how we can make things even better, we'd love to hear it.
+Practice response date: a year ago
+Practice response:
+If you have any feedback on how we can make things even better, we'd love to hear it.
+
+Author: Phil Green
+Date: a year ago
+Rating: 5 stars
+I have always had help from friendly staff when I have needed it. The doctors, nurses and receptionists are vary pleasant, listening to what you have to say and providing helpful advice.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We appreciate you taking the time to share your experience and will make sure to pass on your kind words to the team.
+
+Author: Mohsen Rezaie-Atagholipour
+Date: a year ago
+Rating: 5 stars
+My family and I just moved here and registered in this centre. Today was our first checking appointments. We were very pleasant by professional team and nurses 😊 …
+Practice response date: a year ago
+Practice response:
+Thank you, It's fantastic to hear that you had a positive experience.
+
+Author: Katie Lodge
+Date: a year ago
+Rating: 5 stars
+I’ve been with the practice for 6 years now and can honestly say I think they are the best in the area. Staff and friendly and courteous, Drs always have time to listen and follow up if necessary. I’ve been registered with other practices …
+Practice response date: Edited a year ago
+Practice response:
+I’ve been with the practice for 6 years now and can honestly say I think they are the best in the area. Staff and friendly and courteous, Drs always have time to listen and follow up if necessary. I’ve been registered with other practices … More
+
+Author: Anne Whittaker
+Date: a year ago
+Rating: 5 stars
+I always see Dr Rachel Roberts, she really listens and goes out of her way to help you, I have never had any issues with this surgery, they are so helpful.
+Practice response date: a year ago
+Practice response:
+Thank you for your kind words and for taking the time to share your experience. We'll be sure to pass on your lovely message to Dr Roberts.
+
+Author: Cynthia Fower
+Date: a year ago
+Rating: 5 stars
+My husband and I went for our flu jabs this morning. The staff were so friendly and the organisation was brilliant. We were also asked if we’d like our Covid jab too, which we accepted( saves us coming back for it next week) All in all ‘ Well done Firsway’
+Practice response date: a year ago
+Practice response:
+We truly appreciate your positive review! It's wonderful to know that you found our service efficient and friendly.
+
+Author: david Hunt
+Date: a year ago
+Rating: 5 stars
+Flu jab, in and out within a minute. Staff delightful and helpful.
+Practice response date: a year ago
+Practice response:
+We’re so glad to hear you had a positive experience, David!
+
+Author: Katie Warburton
+Date: a year ago
+Rating: 2 stars
+Fuming had an appointment this morning 11. 45 got there 11 50 was in a queue bye the time I got to the front on the and spoke to someone it was almost 11 I've been ill for 9 days had to get a taxi for them to. Turn me away saying I'm 15 …
+Practice response date: a year ago
+Practice response:
+Fuming had an appointment this morning 11. 45 got there 11 50 was in a queue bye the time I got to the front on the and spoke to someone it was almost 11 I've been ill for 9 days had to get a taxi for them to. Turn me away saying I'm 15 … More
+
+Author: Jenny Pimblett
+Date: a year ago
+Rating: 5 stars
+Fab practice, from the receptionist who took my call to Dr Breen who saw my daughter today, brilliant, friendly service
+Practice response date: a year ago
+Practice response:
+Thank you for your kind words, Jenny! We're delighted to hear that you had a positive experience with our team, from the reception to Dr Breen. Your feedback means a lot to us, and we're here to provide excellent care for all our patients. We look forward to seeing you again!
+
+Author: Mo Beacham
+Date: a year ago
+Rating: 5 stars
+I have just been for my flue jab. It was a very pleasant experience. The staff worked really well together. I find Firsway to be fantastic in all my health care. The team is amazing. Thank you so much . Maureen Beacham
+Practice response date: a year ago
+Practice response:
+Thank you for your wonderful feedback, Maureen! We’re delighted to hear that your flu jab experience was pleasant and that you find our team at Firsway to be fantastic.
+
+Author: Caroline George
+Date: a year ago
+Rating: 5 stars
+Excellent service today at the health centre
+Practice response date: a year ago
+Practice response:
+Thank you, Caroline, for the 5-star review! We're thrilled to hear you had an excellent experience at the health centre. We're here to provide the best care possible, so please don't hesitate to reach out if you need anything in the future!
+
+Author: JASON YATES
+Date: a year ago
+Rating: 5 stars
+Firsway Health Centre is a shining example of best practice and excellent customer first approach. The staff at all levels are friendly, efficient and will go out of their way to help. I genuinely feel in safe hands and when you are …
+
+Author: Mary Chapman
+Date: a year ago
+Rating: 5 stars
+I had a mirena coil fitted with Dr Lester and Angela and I can honestly say if I could give them 1000 stars I would!! They both made me feel so comfortable, the appointment was quick and relatively painless and I can’t believe I was so …
+Practice response date: a year ago
+Practice response:
+I had a mirena coil fitted with Dr Lester and Angela and I can honestly say if I could give them 1000 stars I would!! They both made me feel so comfortable, the appointment was quick and relatively painless and I can’t believe I was so … More
+
+Author: Marie Holmes
+Date: a year ago
+Rating: 5 stars
+Thank you for your 5-star rating. We appreciate your support and are glad to know you are satisfied with our services. If you have any further feedback or suggestions, please feel free to share.
+Practice response date: a year ago
+Practice response:
+Thank you for your 5-star rating. We appreciate your support and are glad to know you are satisfied with our services. If you have any further feedback or suggestions, please feel free to share.
+
+Author: Yvonne Crosby
+Date: a year ago
+Rating: 5 stars
+I have been a patient at Firsway Heath Centre for over 40 years and I can honestly say I have always experienced 100% professionalism from all the GP’s I have seen. The booking of appointments is straightforward and I have often been seen …
+Practice response date: a year ago
+Practice response:
+I have been a patient at Firsway Heath Centre for over 40 years and I can honestly say I have always experienced 100% professionalism from all the GP’s I have seen. The booking of appointments is straightforward and I have often been seen … More
+
+Author: Paul Hulse
+Date: Edited a year ago
+Rating: 5 stars
+I find that Firsway has incredibly improved to very high standards in all departments. …
+Practice response date: a year ago
+Practice response:
+I find that Firsway has incredibly improved to very high standards in all departments. … More
+
+Author: Hannah Vigors
+Date: a year ago
+Rating: 5 stars
+Quick appointments when necessary. Dr Roberts is brilliant; listens and is pragmatic. Exactly what you what in a doctor
+Practice response date: a year ago
+Practice response:
+Good Afternoon Hannah, Thank you for your review today, I have let Dr Roberts know who was really pleased to hear this. … More
+
+Author: Joshua Taleporos
+Date: a year ago
+Rating: 1 star
+the reception staff are horrible i’ve never experienced such untrained horrible people. if you have mental health problems do not go to this doctors. i think it’s ironic how i leave a 1 star review then suddenly i get a number to contact …
+Practice response date: Edited a year ago
+Practice response:
+the reception staff are horrible i’ve never experienced such untrained horrible people. if you have mental health problems do not go to this doctors. i think it’s ironic how i leave a 1 star review then suddenly i get a number to contact … More
+
+Author: Fran Gudger
+Date: a year ago
+Rating: 5 stars
+The reception staff are amazing. So helpful, and very friendly. Come across as very caring, especially when you consider what they have to put up with. I hope they are appreciated by the GP’s, because they do an amazing job.
+Practice response date: a year ago
+Practice response:
+Good Morning, Thank you for leaving us a 5* review. We will pass this on to all involved. Kind Regards Lauren Hinds, Deputy Practice Manager.
+
+Author: Sim
+Date: a year ago
+Rating: 5 stars
+Reception staff were helpful, when booking my apt. I have experienced the highest standard of person centred care, when I seen the …
+Practice response date: a year ago
+Practice response:
+Reception staff were helpful, when booking my apt. I have experienced the highest standard of person centred care, when I seen the … More
+
+Author: CatLover Sale
+Date: a year ago
+Rating: 5 stars
+Always had amazing support from the drs at Firsway health centre
+Practice response date: a year ago
+Practice response:
+Good Evening, Thank you very much for the 5* review. We have sent this to all staff at Firsway Health Centre. Kind Regards Lauren Hinds, Deputy Practice Manager.
+
+Author: Angela Cox
+Date: a year ago
+Rating: 5 stars
+I had an appointment today for a blood test with practice nurse Frances Kelly. I was a little anxious as normally it is very difficult to take my bloods. Frances was very professional and put me at ease taking my bloods without a problem. …
+Practice response date: a year ago
+Practice response:
+I had an appointment today for a blood test with practice nurse Frances Kelly. I was a little anxious as normally it is very difficult to take my bloods. Frances was very professional and put me at ease taking my bloods without a problem. … More
+
+Author: Steve Heys
+Date: 2 years ago
+Rating: 5 stars
+Great service today from Firsway Health Centre. I was given a same-day face-to-face appointment with Dr Greaves, an outstanding student doctor who was obviously hugely knowledgeable and extremely professional. I was even seen a few minutes early. Excellent all round - thank you!
+Practice response date: 2 years ago
+Practice response:
+Hi Steve, Thank you for your 5* review! We will pass your comments onto Dr Greaves. Kind Regards, Lauren Hinds.
+
+Author: Teresa Gould
+Date: 2 years ago
+Rating: 5 stars
+Saw Dr Roberts for a f2f follow up appointment. I received clear information, very thorough follow up details. She takes time to listen and answer questions and concerns. 5 star service, thank you Dr Roberts
+Practice response date: 2 years ago
+Practice response:
+Good Afternoon Teresa, Thank you for leaving this review. I have informed Dr Roberts of this wonderful review. Kind Regards, Lauren Hinds.
+
+Author: Debby Woods
+Date: 2 years ago
+Rating: 5 stars
+I have been a patient here for about 12 year.The service and care is excellent. Always manage to get an appointment and the GPs take time to listen and ensure you are getting the treatment you need. I would definitely recommend this health centre.
+Practice response date: 2 years ago
+Practice response:
+Good Afternoon Debby, Thank you very much for your feedback, it is very much appreciated. Kind Regards, Lauren Hinds, Deputy Practice Manager.
+
+Author: Paul Hastings
+Date: 2 years ago
+Rating: 5 stars
+Just had my long term review with Angela, she was very professional, put me at ease and explained everything clearly. Great service
+Practice response date: 2 years ago
+Practice response:
+Hi Paul, Thank you for your time in sending us feedback. We have passed this onto Angela as I am sure she will be delighted to read this. Kind Regards, Firsway Health Centre
+
+Author: Danny Yu
+Date: 2 years ago
+Rating: 5 stars
+Definitely five stars for Angela, had my annual review with her, she is lovely and professional. Very helpful.
+Practice response date: 2 years ago
+Practice response:
+Dear Danny, Thank you for your feedback this week. We have passed this onto Angela also. Kind Regards, Firsway Health Centre
+
+Author: Stewart Heywood
+Date: 2 years ago
+Rating: 5 stars
+I had a appointment with Dr Elizabeth Lowe this morning, Dr Lowe informed me she was training as a GP, if this is the calibre of GP's coming through the NHS has no problems. Dr Lowe has a very welcoming manner, she is calm, professional, understanding and very thorough. Dr Lowe is an asset to Firsway Health Centre. and the NHS. I wish Dr Lowe all the best in her career, I'm confident it will be long and successful career. Kind regards and thanks Dr Lowe.
+Practice response date: 2 years ago
+Practice response:
+Dear Stewart, we very much appreciate your comments below and we have passed this onto Dr Lowe. Kind Regards, Firsway Health Centre.
+
+Author: rebecca kennedy
+Date: 2 years ago
+Rating: 5 stars
+I have been a patient here for a number of years. I always manage to get an appointment on the day and I have used the website to book an appointment in advance. I saw a doctor recently who listened to me and i found them to be really thorough and they ensured I got the medical care that I needed.
+Practice response date: 2 years ago
+Practice response:
+Dear Rebecca, Thank you very much for leaving this review it is very much appreciated and we are pleased you are happy with the service we provide. Kind Regards, Firsway Health Centre
+
+Author: Dirk Engelberg
+Date: 2 years ago
+Rating: 1 star
+Poor management/lack of training - our journey today - We called from 8 am today for my son to get an emergency appointment (fever, escalating ear ache, ear infection?) - (8 am) line was not open - we tried every few minutes until line opened & were then in a queue (caller no 4) - we spoke to the receptionist at 8.25/30 am - no emergency appointment available for the whole day - she suggested an appointment for mid next week(?), which did not make sense to us at all! We repeated our request for an appointment today, at least to get some antibiotics or so - (now comes the funny part; lack of information/training) - The receptionist bounced us to visit the A&E walk-in centre @ Alty hospital, which actually closed quite a while ago (we called Alty Hospital before heading down to them to check whether anything had changed) or to visit A&E Trafford General. After the Alty experience, we decided to ring 111 to get info whether we can simply walk-in to TG, which was a good decision; they recommended to have my son first assessed over the phone etc. - we finally got a walk-in appointment @ TG after the assessment. All info we got today from our GP's receptionist seemed to be out of date or not correct at all! So why do I post here now - I am patient at this practice since >13 years but the service has gone from low-quality (trying to avoid referrals), to not calling back (spoke to one of the GP's and he asked for a photo to come back to me with more info; never heard back) - to lack of training/lack of correct information. - yes, it is not a life threatening emergency, but staff should be trained to provide correct information! We are all stretched (work-wise) and have to improvise, but this should not affect the overall quality of the service provided.
+Practice response date: 2 years ago
+Practice response:
+Good Afternoon Dirk, I am so sorry you have felt the need to leave a negative review following your experience today with a member of staff. We have listened to the phone call and would like to discuss this further with you. We will give you a call tomorrow if this is convenient with yourself. Kind Regards, Lauren Hinds, Deputy Practice Manager Firsway Health Centre
+
+Author: Katy
+Date: 2 years ago
+Rating: 5 stars
+I cannot get over how amazing the staff are every time ive needed to get in touch. Highly rate this health ccentre and would definitely recommend!
+
+Author: Rev Jackie Bellfield
+Date: 2 years ago
+Rating: 5 stars
+We are new patients and the professionalism and care received has been excellent, Well done to the whole team - you are a credit to your profession.
+
+Author: Ted Gasiorowski
+Date: 2 years ago
+Rating: 5 stars
+Excellent service. Seen within 24 hours after contacting the practice. Superb medical review - caring, compassionate and gave enough time for a thorough assessment. Thank you so much!
+Practice response date: a year ago
+Practice response:
+Good Afternoon Ted, Many thanks for the review! We are pleased to read this. Kind Regards, Lauren Hinds Deputy Practice Manager
+
+Author: Martha Molyneux
+Date: 2 years ago
+Rating: 5 stars
+Extremely helpful nurse called Angela, who listened carefully and made me feel at ease.
+
+Author: Steven Etchells
+Date: 2 years ago
+Rating: 5 stars
+Angela the practice Nurse is kind and caring and throughly understanding and carried out my annual review with professionalism
+
+Author: Joeley Cawley
+Date: 2 years ago
+Rating: 5 stars
+Always helpful and get a fast appointment for the children when needed
+
+Author: Edmund “Ed” Lindsay
+Date: 2 years ago
+Rating: 5 stars
+Great appointment today with Dr Gallaway , most helpful great listener. Exceptional professional. Many thanks for your time. Also like to include Denise on reception again very professional and welcoming. Thank you Firsway
+
+Author: Kathryn Alcock
+Date: 2 years ago
+Rating: 5 stars
+The reception staff, admin team, Practice manager and GPs have always been very helpful, I’m particularly grateful for their kindness and understanding.
+
+Author: Alfred Martin
+Date: 2 years ago
+Rating: 5 stars
+Absolutely excellent on every level, highly recommend as a very professional family GP prcatice.
+
+Author: Colin Robert
+Date: 2 years ago
+Rating: 5 stars
+Had my vaccination today with nurse Angela. She was fabulous. Also arranged my 2nd jab and my routine bloodiest. A shoutout to Denise on reception who arranged the visit over the phone after all the dates on the portal were not possible. Amazing service all round 👏 😊 …
+
+Author: Lesley Swift
+Date: 2 years ago
+Rating: 5 stars
+Dr Roberts has been amazing during my recent/current medical problems. She is very thorough and caring. Her follow up phone calls have been comprehensive and reassuring.
+
+Author: Jon Valentine
+Date: 2 years ago
+Rating: 5 stars
+Used this place for years.. all good. No complaints.
+
+Author: Anthony Sutcliffe
+Date: 2 years ago
+Rating: 5 stars
+I had a telephone appointment with Doctor Sabesan. The Doctor explained everything in laymen's terms and clearly highlighted the risks versus positives which enabled me to make a well informed decision.
+
+Author: Peter Lea
+Date: 2 years ago
+Rating: 5 stars
+I suffered a complex and rare illness, this has left me with a lot of issues. I changed practices because I was getting no response from a series of different tests. Since joining Firsway, I cannot compliment them enough. The GP that I saw initially progressed all the treatment I needed extremely efficiently, and my health issues are also being monitored with the same.level of efficiency. I find the staff very helpful and accommodating with a caring attitude.
+
+Author: Vicky Armstrong
+Date: 2 years ago
+Rating: 5 stars
+As a family, we have always received excellent medical care from Firsway
+
+Author: Andrew Davenport
+Date: 2 years ago
+Rating: 5 stars
+I have only just joined as I have been dumped by the housing in an area I am unfamiliar with. They are providing me with support so far. Better than Partington Family Practice, whose main gp who was the family doctor, turned on me post separation.
+
+Author: Yvonne Ellis
+Date: 2 years ago
+Rating: 5 stars
+The receptionist was very helpful on the phone, she listened to me, was empathetic and advised me. A same day appointment was deemed appropriate. The Doctor listened to me, examined me, reviewed my medical history. I was advised on options for treatment and to have a future review appointment. I felt safe, reasured and cared for by a fantastic professional team. Thank you Firsway, always there when needed.
+
+Author: Sarah Toone
+Date: 2 years ago
+Rating: 5 stars
+I have been a patient for many years and have always had excellent service from the team. Really efficient staff at reception team and always lovely to chat to. I’ve always been able to get an appointment when needed. Big fan of the self check in desk. Would always recommend this practice.
+
+Author: Sobi Rabbi
+Date: 2 years ago
+Rating: 5 stars
+Really good medical center.staff and doctors are really helping.very good staff.
+
+Author: Ian Dutton
+Date: 2 years ago
+Rating: 5 stars
+First class service from a Health Centre, that is flexible professional and working conscientiously to help it’s patients. In these days of underfunding and fully merited strike action, it is refreshing to find a Health Centre cthat is …
+
+Author: Stuart Slade
+Date: 2 years ago
+Rating: 5 stars
+The recent flu jab was organised brilliantly. Well done. Haven't even had a stiff arm. Generally, over the years, I have received excellent service from this practice. My only criticism is that the online appointment booking system can be difficult to access after a certain time.
+
+Author: Sophie Wallwork
+Date: 2 years ago
+Rating: 4 stars
+The atmosphere was calming, and the people were friendly
+
+Author: Darren Fitzgerald
+Date: 2 years ago
+Rating: 5 stars
+Been a patient at Firsway Health Centre for over 10 years now. I cannot fault the care I have received by all staff who work there. I would definitely recommend this GP surgery.
+
+Author: Stevie Bee
+Date: 2 years ago
+Rating: 1 star
+Wanted to register as a temporary patient for a minor issue Receptionist refused to help me and told me to go to the walkin clinic When I got there they asked if I had an appointment! Again wrong advice from the Receptionist.
+
+Author: Simon Teasdale
+Date: 2 years ago
+Rating: 1 star
+Simon TeasdaleLocal Guide · 27 reviews · 5 photos2 years ago
+
+Author: Dawn Burnell
+Date: Edited 2 years ago
+Rating: 1 star
+Rude, unprofessional and useless. That was just the receptionists. Have made a complaint, doubt they'll do anything about it because Natalie, the practice manager appears to be in a permanent meeting. …
+
+Author: Karen
+Date: 2 years ago
+Rating: 5 stars
+I needed an urgent appointment recently and the receptionist was fantastic. I got an appointment in two hours and an urgent hospital appointment received in 8 days. Please do not slag firsway or the nhs because god forbid you may be in my shoes one day, then you will appreciate the care of Firsway staff and the NHS.
+
+Author: Jean Tomkinson
+Date: 2 years ago
+Rating: 5 stars
+Brilliant health centre. Reception staff, doctors and nurses so kind and helpful. Thank you
+
+Author: Joyce Leaff
+Date: 2 years ago
+Rating: 5 stars
+Would like to thank the staff who helped me on Friday. They were so caring and understanding.
+
+Author: wnn670
+Date: 2 years ago
+Rating: 1 star
+The worst of the worst.
+
+Author: Meki Guner
+Date: 2 years ago
+Rating: 1 star
+I had problem with my heart and I called to book appointment and see what is wrong or is it something serious the receptionist told me only emergency booking and I said give me appointment and I said I think I am in emergency situation …
+
+Author: Dawn kennerley
+Date: 2 years ago
+Rating: 1 star
+Called to see a doctor was told only got telephone appointments which is no good when I have hurt my back need to be seen by a doctor was told no routine appointments available and the receptionist said there is nothing she can do this surgery needs a good shake up
+
+Author: Rania Ali
+Date: 3 years ago
+Rating: 1 star
+This GP service is terrible . My daughter was very very ill. I called at 8am specifying that it's an emergency, I was given an appointment at 9:30 am. Upon arrival with my daughter that could barely walk and a high temperature , I was told …
+
+Author: J O
+Date: 3 years ago
+Rating: 1 star
+Why ER in hospitals overloaded? It is because local clinics are not able to help on people who feel sick. This clinic used to have good comment. But not now-a-day, rigid staffs, not helpful at all, incapable of empathy. I am so disappointed.
+
+Author: Kerry
+Date: 3 years ago
+Rating: 5 stars
+Been quite lucky with firsway as hear other people have nightmares at there GP. Staff very helpful and doctors I've seen are very nice Don't have to wait weeks usually sorted same day. Great place 🙂 Thanks 👍 …
+
+Author: Le Le
+Date: 3 years ago
+Rating: 1 star
+Can never get an appointment. They supposingly will give you a 30 minute slot online booking system to make a telephone or face to face appointment but that never happens because within 2mins of the online system being open its closed …
+
+Author: s C
+Date: Edited 3 years ago
+Rating: 1 star
+Embarrassing place, the managers really need to pull their fingers out and do their job properly, managers have a miserable look on their face. state of you. It makes me feel worse about myself i’d rather watch tutorial on how to better …
+
+Author: Lala karbasian
+Date: 3 years ago
+Rating: 1 star
+Not helpful at all and so disappointing.I am nearly two months calling them regarding some vaccines ,after 2 months they said sorry we don’t do in this clinic
+
+Author: From Bridgewater Campers
+Date: 3 years ago
+Rating: 5 stars
+Although the online booking service can be daunting, today it worked a treat for me. Logged my request at 8 am, contacted by the doctor herself by 8.30, greeted by the friendly receptionist and seeing the wonderful Dr. Sabor by 10.20... Blood tests and hospital appointment arranged. Nothing but friendly, efficient service.
+
+Author: Sara A
+Date: 3 years ago
+Rating: 5 stars
+Very responsive and quick service. Friendly doctors, nurses and receptionists that have dealt with my children health needs and mine in an effective way. On the day appointment, face to face, with a doctor if necessary
+
+Author: Claire Coleena
+Date: 3 years ago
+Rating: 5 stars
+Excellent GP practice. Always helpful staff and GPS and nurses. Made me feel so welcome. …
+
+Author: Mike Fisher
+Date: 3 years ago
+Rating: 1 star
+Rude staff who will not listen.
+
+Author: Stop Datafarming
+Date: 3 years ago
+Rating: 1 star
+Have been a patient at this surgery for 40 years but have rarely needed to see a doctor. When I tried to book an appointment to see a GP I was told they don't book appointments and I'd have to fight with other patients by phone on a daily …
+
+Author: anthony foster
+Date: 3 years ago
+Rating: 5 stars
+Best GPs this side of the world Staff are top notch
+
+Author: Carl Bruce
+Date: 3 years ago
+Rating: 1 star
+This place is like playing the lottery whether or not you get help. Only ever had probably 3 doctors in the 10 years I've been registered actually help. Favourite phrase is usually 'see how you get on'. If you have mental health problems, definitely don't seek help from here you will just feel like topping yourself more.
+
+Author: Dan G
+Date: 3 years ago
+Rating: 1 star
+WORST GP EVER CAN NEVER GET A APPOINTMENT STAFF ARE RUDE
+
+Author: Anny Armstrong
+Date: 3 years ago
+Rating: 5 stars
+Me my husband and my son are all registered with Firsway. The staff are lovely and the doctors are professional. I don’t see why the review here is so low. My son got to see the doctor on the same day even when we phone in at noon. We’d recommend this healthy center.
+
+Author: Numairah Hussain
+Date: 4 years ago
+Rating: 1 star
+I don't like this new system it's a joke that you have to wait to see by the doctors and you don't even have a chance to get see when it could be something serious even though you ring at 8am it says the lines are busy and you can never get …
+
+Author: Lorraine Thomson
+Date: 4 years ago
+Rating: 5 stars
+We've always had a good experience with the surgery. Doctors are lovely and receptionists are very helpful. Never had an issues.
+
+Author: Jayne Mullock
+Date: 4 years ago
+Rating: 1 star
+My daughter was ill, showed all symptoms of tonsillitis. Rang surgery the receptionist was lovely. A junior doctor called, I explained her symptoms and he said he needed to see her. I had to take my daughter out of school and I had to leave …
+
+Author: Katie Lodge
+Date: 4 years ago
+Rating: 5 stars
+We have been at this excellent practice for just over 3 years. I have always managed to get an appointment when I have need one. Reception staff always polite and helpful. They have always been on the ball with test results, calling me if …
+
+Author: Deborah McKenzie
+Date: 4 years ago
+Rating: 5 stars
+I've been a patient at this practice for many years and before that when they were based at Meadway and have always had an excellent experience. One of the features of Ask my GP is that you can check to see when your GP is in. I do like …
+
+Author: Simon Molloy
+Date: 4 years ago
+Rating: 1 star
+Awful. Appointments can only be made through the web site which is never available whenever I try. Staff not very helpful. I think its time to change my GP if I can.
+
+Author: Alexander Marshall
+Date: 4 years ago
+Rating: 4 stars
+We are a family of 5 and have been using Firsway for over 10 years. I've found appointments to be quickly arranged as needed and no difficulty getting seen within appropriate timescales. The doctors and nurses are efficient and friendly. …
+Practice response date: 4 years ago
+Practice response:
+We are a family of 5 and have been using Firsway for over 10 years. I've found appointments to be quickly arranged as needed and no difficulty getting seen within appropriate timescales. The doctors and nurses are efficient and friendly. … More
+
+Author: Farhad Araste
+Date: 4 years ago
+Rating: 1 star
+Rabish call centre and management from 8.30am to 9.00am I was in queue to make GP appointment after connect call staff told me is fully booked call tomorrow every day same thinks they protect self in the box and calling self health …
+Practice response date: 4 years ago
+Practice response:
+Rabish call centre and management from 8.30am to 9.00am I was in queue to make GP appointment after connect call staff told me is fully booked call tomorrow every day same thinks they protect self in the box and calling self health … More
+
+Author: Sandeep Bhopal
+Date: 4 years ago
+Rating: 4 stars
+Very good doctor surgery, staff and doctors are very helpful.
+Practice response date: 4 years ago
+Practice response:
+Thank you for taking the time to submit a positive review. This is most welcome in the current climate and provides the staff with a good morale boost. Many thanks again. Louise Morgan, Assistant Practice Manager.
+
+Author: Dan Kirkham
+Date: 5 years ago
+Rating: 1 star
+Web based booking sytem where you get called back from a physiotherapist instaed of actually seeing a doctor, then you get fobbed off with an email on further attempts. Go somewhere else.
+Practice response date: 5 years ago
+Practice response:
+Dear Mr Kirkham. I’m sorry you are not satisfied with your consultations with the Physio. Please submit another request via Ask My GP and request to speak with a GP, not the physio. Many thanks Firsway Health Centre
+
+Author: Daniel
+Date: 5 years ago
+Rating: 1 star
+this doctors is useless my pregnant partner needed some anti sickness tablets for morning sickness and every time she tryed to speak to a doctor they just said ring back tomorrow this tomorrow was 5 days in a row 🤬 we ended up having to …
+Practice response date: 5 years ago
+Practice response:
+this doctors is useless my pregnant partner needed some anti sickness tablets for morning sickness and every time she tryed to speak to a doctor they just said ring back tomorrow this tomorrow was 5 days in a row 🤬 we ended up having to … More
+
+Author: Maddie McCarthy
+Date: 5 years ago
+Rating: 3 stars
+Meh its ok
+
+Author: Toni Goodwin
+Date: 5 years ago
+Rating: 5 stars
+Staff are always helpful and concerned we are very lucky thank you
+
+Author: Beverley Butcher
+Date: 5 years ago
+Rating: 4 stars
+I have never, in almost 20 years, had a negative experience with the staff at Firsway. I have, however, seen plenty of members of the public shouting and screaming because things don't move fast enough or they can't get what they want.
+
+Author: Dave Tomkinson
+Date: 5 years ago
+Rating: 5 stars
+Doctor and reception staff are very very helpful. Can't fault this practice. Thank you all
+
+Author: Mujtaba Shah
+Date: 6 years ago
+Rating: 1 star
+I have been coming here for several years as my local gp and the service (which wasn’t exceptional by any measure to start with) has deteriorated to appalling over the years. Whilst some of the practitioners may be capable the reception …
+
+Author: Abigail Symmons
+Date: 6 years ago
+Rating: 1 star
+Other half is really ill, getting nowhere with a diagnosis and every time he goes in and needs reassessing in a week or two he cant get an appointment for 4 weeks, its an absolute joke! Every time we go in theres nobody even sat in there.
+
+Author: William Lawton
+Date: 6 years ago
+Rating: 1 star
+3 weeks 2 days to get a GP appointment, absolutely abysmal, the person running this practice needs sacking.
+
+Author: j_ray 19
+Date: 6 years ago
+Rating: 1 star
+My young son woke up in pain...rang to get an appointment. ..answer was none availabile...not even children in pain take any priority...luckily I have a car and was able only after asking what do I do then? To drive him to a walk in centre at trafford general....but what would have happened otherwise? Appalling...
+
+Author: Annie Fletcher
+Date: 6 years ago
+Rating: 4 stars
+Helpful reception staff and always try and fit you in. Good opening times including weekends. I don't know why people complain we are so lucky to have this service.
+
+Author: shaimaa elsadek
+Date: 6 years ago
+Rating: 5 stars
+shaimaa elsadekLocal Guide · 242 reviews · 719 photos6 years ago
+
+Author: Mirela Dedic
+Date: 6 years ago
+Rating: 1 star
+Awful !!! Doctors are okay but the receptionists have a bad attitude!
+
+Author: Richard Hughes
+Date: 7 years ago
+Rating: 1 star
+Very poor organisation cant get in when you need to reception staff seem to be anti patient, Dr's constantly changing, when you do see one they are not really interested, financially led service. find another alternative
+
+Author: Emma Dodd
+Date: 7 years ago
+Rating: 1 star
+Shambles. Rude staff that get everything wrong and a constant stream of different doctors not interested in helping, just packing you off with painkillers as quickly as possible. Sadly can’t give zero stars it would. Thankfully found another practice.
+
+Author: arfaan mohammed
+Date: 7 years ago
+Rating: 3 stars
+arfaan mohammedLocal Guide · 18 reviews · 3 photos7 years ago
+
+Author: Chris Curran
+Date: 7 years ago
+Rating: 5 stars
+Great staff & an excellent booking system, was able to get in straight away when I explained I felt the need was urgent, lady in phone very polite.
+
+Author: Karima Khalaf
+Date: 7 years ago
+Rating: 2 stars
+So disappointed with this practice in the last few years, it definitely went down. Many issues: …
+
+Author: Alistair Gledhill
+Date: 7 years ago
+Rating: 4 stars
+excellent staff who are always pleasant.the doctors and nurses are very good.it is also a training surgery so they may ask if a trainee can sit in on your appointment.the down side of it being a training surgery is that if trainee doctor signs off prescriptions they can't be sent electronically to your chosen pharmacy.otherwise an excellent GP' s.
+
+Author: E W
+Date: 7 years ago
+Rating: 3 stars
+The older receptionist with red hair has previously been exceptionally rude to me - talking loudly about what I was asking about, and making me feel very embarrassed. Went home crying. Think she needs customer service training because she’s very blunt and seems callous. The other receptionists are lovely, though sometimes are unable to help with simple tasks - I called to advise that my partners ostomy supplier has tried to get into contact with them and they need to sort this out, as it is urgent medical supplies he’s waiting on. The lovely receptionist failed to help at all, and my partner has to call himself to repeat what I said. No confidential information was passed, never even asked for his date of birth. The practice has gotten worse in the past year or so, you can’t do anything without going into the practice to speak face to face, which is incredibly inconvenient and not always possible to do.
+
+Author: Emma Audsley
+Date: 7 years ago
+Rating: 1 star
+Emma Audsley4 reviews · 14 photos7 years ago
+
+Author: Mandy Gill
+Date: 7 years ago
+Rating: 1 star
+Absolute joke, 2 weeks for a non urgent appointment! The 1 pharmacist next door is easier to see than the 12 doctors listed on your website!
+
+Author: Karima Khalaf
+Date: 7 years ago
+Rating: 2 stars
+So disappointed with this practice in the last few years, it definitely went down. Many issues: 1/ At the most time when I needed to be seen, I have been denied an appointment when there was at least three appointets available!!! I had an operation, a weelk before, of which I could not sit down, I had a very bad infection which caused the this operation to fail later!, I called for an emergency appointment, the receptionist with the dark, short bony tail hair said there is no appointments that day, out of my disparity I asked of what to do. She told me to go to Altirincham walk in centre, I had to drive to there, sitting on a child swimming tube. On arrival, I was shocked to know they only deal with accidents!! Rang the same receptionist and told her what happen, she said ok you can come now and see a doctor in an hour, although I asked for a lady doctor, I found a very nice gentleman doctor, I said "I asked for a lady doctor" without any hesitation, he offered me a choice between two appointments to see two different lady doctors at the same day!!! 2/ Most of the time I had to go to the practice to make an appointment, can't go through the phone. 3/ Always appointment after at least two weeks. 4/ Out of desperation I asked to join the paieten access servise for on line booking, I filled the form and waited for a year to receive the password, nothing came! 5/ When I had enough I asked to meet the manger and told her all the above, she took my ID and registered me for the patient access servise in five minutes, that was in November 2017. Since then I didn't like to visit the practice, last week I had to make an appointment, again it have to be after two weeks again! I thought to try patients access servise to see if there is any cancellation, I found that we can see appointments after two weeks or more only!!! My two stars only goes for the doctors when and if you see them. I have been with this practice for over twenty years, always know my doctor and had a very friendly good relationship with her, now I don't know my own doctor!
+
+Author: Helen Bedford-Gay
+Date: 7 years ago
+Rating: 1 star
+Poor booking system. Receptionists don't appear to care.
+
+Author: William Gilmore
+Date: 8 years ago
+Rating: 5 stars
+William Gilmore8 years ago
+
+Author: Mohammed Rafeeq
+Date: 8 years ago
+Rating: 3 stars
+The doctors nurse and staff are all fine . no issues with them at all, but the difficulty i face is not being able to get an appointment when needed, there is a big wait list. Also the phoneline have huge waiting queues to get through, may be they need to introduce additional staff to man the lines? Once we get the appointment, service is fine. my 3 stars are for difficulty in getting appointments (waitlist and phone waits)
+
+Author: Debbie Tomkies
+Date: 8 years ago
+Rating: 1 star
+I telephoned this morning (25 jan) for an appointment and was advised that the earliest available appointment was 6 Feb! I was informed that the practice was catching up post-Christmas but this is not the first time this has happened and is very poor. (Incidentally, I have no issues with the doctors or staff who, when you see them, are very good).
+
+Author: Valli Safi
+Date: 8 years ago
+Rating: 1 star
+The old lady at the receptions the is very rude.
+
+Author: Katarzyna Grolewska
+Date: 8 years ago
+Rating: 5 stars
+Well I went when I got the chickenpox I loved it.
+
+Author: Amelia Gudge
+Date: 8 years ago
+Rating: 5 stars
+Amelia GudgeLocal Guide · 36 reviews · 17 photos8 years ago
+
+Author: Ralph Davies
+Date: 8 years ago
+Rating: 5 stars
+always found them very helpful and quick appointment times. some people just like to complain.
+
+Author: Mayo Dedi
+Date: 8 years ago
+Rating: 5 stars
+Big health center and pharmacy in one. Car park is big enough. Always on busy side but not too much.
+
+Author: Phil H
+Date: 8 years ago
+Rating: 1 star
+Good Morning Phil, I am sorry to see you were not happy with Firsway. As there was no feedback left I am unable to comment further. Should you need an issue resolved, please call the surgery on 0161-905-0310 and ask to speak to one of the managers or email us at firswayenquiries@nhs.net Thank you.
+Practice response date: 8 years ago
+Practice response:
+Good Morning Phil, I am sorry to see you were not happy with Firsway. As there was no feedback left I am unable to comment further. Should you need an issue resolved, please call the surgery on 0161-905-0310 and ask to speak to one of the managers or email us at firswayenquiries@nhs.net Thank you.
+
+Author: Alice
+Date: 8 years ago
+Rating: 2 stars
+Reception and doctors are rude, even when phoning me for routine appointments. I've never met doctors with such lack of compassion and understanding.
+Practice response date: 8 years ago
+Practice response:
+Thank you for your feedback. We have regular training for our staff and telephones are recorded. Please contact the surgery and ask to speak with a manager to look into what may have gone wrong. We have many regular positive comments about our Reception staff and our Clinical staff, so we would very like much to hear from you as to what you think could be done better.
+
+Author: Iris Jackson
+Date: 8 years ago
+Rating: 5 stars
+Friendly, helpful, and very nice peoples
+Practice response date: 8 years ago
+Practice response:
+Thank you so much for your positive feedback!
+
+Author: Raed
+Date: 9 years ago
+Rating: 3 stars
+RaedLocal Guide · 239 reviews · 132 photos9 years ago
+
+Author: Ann
+Date: 9 years ago
+Rating: 1 star
+Just tried to call: time 12:30, day Thursday - a recorded message saying "we are closed" This is pretty poor for a doctor's practice should people need help
+
+Author: jessica ella
+Date: 10 years ago
+Rating: 1 star
+Can never get through on the phones and there are only ever emergency appointments available.
+
+Author: Asif Rehman
+Date: 13 years ago
+Rating: 5 stars
+Asif RehmanLocal Guide · 56 reviews13 years ago

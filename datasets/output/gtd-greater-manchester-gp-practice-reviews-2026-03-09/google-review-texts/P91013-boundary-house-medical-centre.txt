@@ -4,14 +4,19 @@ Postcode: M33 2RH
 Google Maps title: Boundary House Medical Centre
 Google rating: 3.6
 Google review count: 69
-Google Maps URL: https://www.google.com/maps/place/Boundary+House+Medical+Centre/@53.4156122,-2.2888331,17z/data=!4m8!3m7!1s0x487badadd83c4f8d:0x8c9988fb53b1b46a!8m2!3d53.4156122!4d-2.2888331!9m1!1b1!16s%2Fg%2F1hc324mpd?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Boundary+House+Medical+Centre/@53.4156122,-2.2914134,17z/data=!4m8!3m7!1s0x487badadd83c4f8d:0x8c9988fb53b1b46a!8m2!3d53.4156122!4d-2.2888331!9m1!1b1!16s%2Fg%2F1hc324mpd?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 69
+Owner replies collected: 0
+Raw review responses captured: 7
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P91013-boundary-house-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Natalie Munyame
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 Always able to get an appointment and all my concerns/issues fully addressed. Dr Allen has been absolutely amazing at supporting me through ongoing health issues. Honestly cant fault any of the team.
 
@@ -34,6 +39,11 @@ Author: PURPLE victorX
 Date: a year ago
 Rating: 1 star
 You can hardly get an appointment with this GP, their staff are rude and have no empathy and I haven't moved house since 2018 and I suddenly now live too far away and they are forcing me to get a new GP for no reason.
+
+Author: Pauline Brannagan
+Date: a year ago
+Rating: 1 star
+You don't get to see a doctor anymore you just get a phone call, don't know why they are building new rooms
 
 Author: john cadwallader (Alneanderth)
 Date: a year ago
@@ -59,3 +69,293 @@ Author: Sandra Frith
 Date: a year ago
 Rating: 5 stars
 I have recently moved back from Spain and asked on the m33s where to go to register to a doctor's and boundary house was mentioned it's not round the corner from where I live but I'm so glad I went there ..they have been so helpful and once I got my head round the GP ask I was sorted. They have looked after me and I have so many ongoing problems and everything has been looked at I can't thank all of the staff and doctors physio that have taken care of me.i was told horror stories about moving back to the UK but I have to say Dr Grundy Dr Evans Dr Bindu and the team have been amazing .Highly recommend this surgery.
+
+Author: Danie Clubb
+Date: a year ago
+Rating: 5 stars
+Danie Clubb11 reviews · 2 photosa year ago
+
+Author: Ghost H
+Date: a year ago
+Rating: 5 stars
+Ghost H2 reviewsa year ago
+
+Author: James Leeming
+Date: a year ago
+Rating: 5 stars
+This medical practice is truly excellent. The booking system is effective, the non-medical staff responsive, you can actually get seen and the doctors are excellent. My family had to join this practice following the closure of another local practice and we have been really pleased with the move.
+
+Author: Azaria Love
+Date: a year ago
+Rating: 5 stars
+I’m quite new to this practice but I am blown away by how good they are. For context, I had something slightly worrying, got in touch at 10am, had an appointment at 12.30 same day (seen on time) was referred urgently, had a call from the hospital the same day and got booked in 1 day later. Maybe my view of the nhs is jaded but I’ll let you decide if that’s quick. Whatever surgeries are getting poor reviews should emailed what this practice does.
+
+Author: Jonathan Goulden
+Date: a year ago
+Rating: 5 stars
+Jonathan Gouldena year ago
+
+Author: Bohdan Bilyk
+Date: 2 years ago
+Rating: 1 star
+Worst experience ever. No way to get an appointment at least a day or two in advance to plan it properly. Had to go rounds in waiting, calling back and explaining the issue again and again. Very unsuportive and cold stuff.
+
+Author: Claire Pickin
+Date: 2 years ago
+Rating: 5 stars
+Excellent care, quick appointment allocated.
+
+Author: Dylan Smethurst
+Date: 2 years ago
+Rating: 1 star
+Dylan Smethurst12 reviews · 2 photos2 years ago
+
+Author: M B
+Date: Edited 2 years ago
+Rating: 1 star
+Really struggle to get a face to face appointment anymore . When I have it’s with someone random that’s covering . Wheres all the regular GP’s? The rare occasion I have managed to get an appointment the waiting room has been empty . Wednesday it’s shut for staff training ! This use to be a very well run surgery I don’t know what’s happened to it . Edit : If I could give zero stars for the aggressive receptionist I would. We are patients not your enemy . How someone could be so rude and sit there Speaking so low and down to patients is beyond me . Wow. (Glasses and curly hair). Why such attutide . What happened to be kind and respectful to one another .
+
+Author: candy lee
+Date: 2 years ago
+Rating: 5 stars
+Excellent all round never had a problem . Personally find repeat prescriptions very quick . All the GP’s and nurses are lovely here and very thorough . can’t fault at all .
+
+Author: Mama C
+Date: 2 years ago
+Rating: 5 stars
+Great clinic, everyone friendly and helpful. Fabulous service.
+
+Author: Sundus Makkiyah
+Date: 2 years ago
+Rating: 1 star
+Sundus Makkiyah4 reviews · 4 photos2 years ago
+
+Author: Marwan Hussein
+Date: 2 years ago
+Rating: 1 star
+Marwan Hussein4 reviews2 years ago
+
+Author: Alex Krischtopan
+Date: 2 years ago
+Rating: 5 stars
+Alex KrischtopanLocal Guide · 2 reviews · 6 photos2 years ago
+
+Author: Carly Sadler
+Date: 3 years ago
+Rating: 5 stars
+Always have a positive experience with the reception staff and especially the doctor I see. Can’t fault them at all when I know they must be so busy. They always manage to get me the type of appointment I need at the time and for that I am very grateful.
+
+Author: Emma Pesetz
+Date: 3 years ago
+Rating: 5 stars
+Hands down the best gp I’ve ever had. Ask my gp works brilliant , they are so efficient so helpful and polite . Best gp there is. Thanks for all the help x
+
+Author: Niki Bell
+Date: 3 years ago
+Rating: 1 star
+Shocking attitude from reception staff: patronising and cold. My family member was forced to call them after My GP was turned off. The receptionist asked them personal questions their health, and forced them to repeat themselves several times while recounting a difficult experience. No kind words - nothing. When the call ended, they burst into tears. I am furious.
+
+Author: Callum Bushell
+Date: 3 years ago
+Rating: 1 star
+Absolutely shocking surgery 0 compassion or understanding, management need sacking and the receptionists need to loose there attitude. Don’t know what there doing and always different information the receptionists need re training, or even better find another job if your not happy in that one! Also like to diagnose patients with cancer then ring back 2 days later and it was a ‘mistake and the bloods were mixed up’ AVOID!
+
+Author: Meep Meepinton
+Date: 3 years ago
+Rating: 5 stars
+Been at this GP since I was a child. They respond very quickly to ask my GP requests, receptionist, nurses, and doctors are friendly and helpful. When I do have to call I get through quickly. I've had many positive experiences and no negative since being here. Very sad that I have to move gps due to moving house but will definitely register again if 8m back in the area
+
+Author: david miller
+Date: 3 years ago
+Rating: 5 stars
+Thanks Dr Aojula! Excellent and kind and fantastic with my daughter!
+
+Author: Kat
+Date: 3 years ago
+Rating: 1 star
+I went to see one of the sisters (J) at the surgery about something very serious and found her 'smirking' the whole way through the appointment, I could not look at her as she made me feel very uncomfortable. How could she be finding something funny when a patient is in front of her, so unprofessional. I will not be seeing either of the sisters at the surgery ever again.
+
+Author: Alice
+Date: 3 years ago
+Rating: 5 stars
+AliceLocal Guide · 44 reviews · 9 photos3 years ago
+
+Author: danielle
+Date: 3 years ago
+Rating: 5 stars
+Brilliant surgery xx
+
+Author: K
+Date: 3 years ago
+Rating: 5 stars
+Excellent all round never had a problem . Was doubtful about ask my GP at first but it’s saved many unnecessary journeys and realised how minor some visits use to be . Personally find repeat prescriptions very quick . All the GP’s and nurses are lovely here and very thorough . can’t fault at all .
+
+Author: Alice Smith
+Date: 3 years ago
+Rating: 5 stars
+Never had a negative experience here, best GP in Manchester I've had so far.
+
+Author: Jean Mahon
+Date: 3 years ago
+Rating: 5 stars
+Have to say the treatment and help from Dr Goga has been first class.
+
+Author: Paola Gallardo
+Date: 3 years ago
+Rating: 5 stars
+Paola GallardoLocal Guide · 17 reviews · 3 photos3 years ago
+
+Author: Saul Walsh
+Date: 3 years ago
+Rating: 1 star
+Pathetic, no answer after 30 minutes to book a simple appointment. This is an embarrassment to the NHS.
+
+Author: chris jones
+Date: 3 years ago
+Rating: 1 star
+Well today my 4 year old daughter got treated like a parasite at this surgery because we didn't want to force my her to have a covid test to go see a doctor. my daughter gets really upset doing them so they said she couldn't come in the surgery if she wont do it she will have to be seen in the car park covid now has the same death rate as flu now and that's on the government site but nobody asked us to do a flu test on her absolutely shocking
+
+Author: S J
+Date: 4 years ago
+Rating: 1 star
+Terrible place. Was trying to make an appointment for my two year old and it’s impossible to see a doctor. Spent my entire morning ringing, waiting for call backs, ringing… They just want to look at pictures online. What happened to face to face??? Especially for a two year old with lumps/rash.
+
+Author: Helen Vesty
+Date: 4 years ago
+Rating: 5 stars
+The very best GPs surgery! Can't thank them all enough for looking after our whole family for 20 years now...never let us down. Excellent GPs, advice, care and professionalism. Sincere thanks.
+
+Author: jean mahon
+Date: 4 years ago
+Rating: 1 star
+The ordering of prescriptions is getting ridiculous, my husband has COPD and relies on his medication, the Pharmacy puts the script through with 4 items 10 days ago, 2 arrived, put in another request 3 days ago as meds running out, still not arrived. Rang surgery and spoke to a very nice lady, it had not been done. Not good enough.
+
+Author: Paul H (MancunianRed70)
+Date: Edited 4 years ago
+Rating: 2 stars
+Don't particularly appreciate being asked by reception why I want to see a doctor. It's none of their business they are not trained doctors. Getting prescriptions is getting increasingly difficult. They blame pharmacy and the pharmacy blame the doctors. As for getting appointments you'd be quicker dying. I understand they are under the cosh right now but manners and courtesy cost nothing. Never have ever witnessed such an unprofessional practice. They are here to serve the community,you try disagreeing with them. I reported them to the N.H.S. for the treatment we received. I will in future treat them how they treat us. All our calls have been recorded.
+
+Author: Kelly Louise
+Date: 5 years ago
+Rating: 2 stars
+Just moved to this surgery after a house move. Not happy with how long it takes to get a prescription. I really needed it , put request in Friday morning 7am and its now Monday 16.35 and keep getting told everyone is very busy. So am i and trying to fit in picking it up!
+
+Author: Lucy Alexandra
+Date: 5 years ago
+Rating: 1 star
+Since February I have been struggling with asthma like symptoms, which are getting worse, I just want to get an appointment and be physically seen by someone, so I can get a diagnosis, but it seems impossible to do.
+
+Author: Viv Evans
+Date: 5 years ago
+Rating: 5 stars
+Very clean and orderly. Felt safe. Friendly nurse.
+
+Author: Pokemon master
+Date: 6 years ago
+Rating: 5 stars
+Pokemon master10 reviews · 1 photo6 years ago
+
+Author: Joe Gempton
+Date: 6 years ago
+Rating: 5 stars
+Joe GemptonLocal Guide · 64 reviews · 20 photos6 years ago
+
+Author: Rola Salama
+Date: 6 years ago
+Rating: 1 star
+Rola Salama11 reviews6 years ago
+
+Author: Lynda Hilditch
+Date: 6 years ago
+Rating: 5 stars
+I have never been so well looked after .
+
+Author: Diane Heaps
+Date: 6 years ago
+Rating: 1 star
+Have waited 13 min to speak to someone about legal guardian ship of family member and none answered the fone although I was number 1 in the question.
+
+Author: Sharon Chapman
+Date: 6 years ago
+Rating: 5 stars
+I'm loving this new on line system!!. Really easy for those who are computer literate however, if you dont use online services you need to phone up. Theres a long msg and for those who are elderly it is quite difficult to understand what yo do.
+
+Author: warren taylor
+Date: 6 years ago
+Rating: 3 stars
+Was I'll, asthma nurse said I didn't have asthma ,I I have had all my life, I said the hospital diagnosis was COPD/asthma, which she construed as being rude....Dr gray stated I was rude to the nurse for correcting the diagnosis...
+
+Author: bhavesh ghodasara
+Date: 6 years ago
+Rating: 5 stars
+bhavesh ghodasaraLocal Guide · 45 reviews · 82 photos6 years ago
+
+Author: katie senior
+Date: 6 years ago
+Rating: 2 stars
+The receptionists who served us today could of given me a better service as I felt they were quiet rude and obnoxious. However, doctors were very helpful.
+
+Author: Jane Fernie
+Date: 6 years ago
+Rating: 5 stars
+Very helpful and service oriented. I got an emergency appointment when there weren’t any just now.
+
+Author: M Jerath
+Date: 6 years ago
+Rating: 5 stars
+Best surgery!!! All doctors are very supportive and excellent with their treatment.
+
+Author: Elena Claudia Ianos
+Date: 6 years ago
+Rating: 1 star
+Just went for some blood test not long ago and I was very shocked that ANTT ( aseptic non touch technique) did not appy at all. What about infection prevention??? How do you prevent infections if the nurse(health care support worker) doesn't clean the skin and not washing hands ???
+
+Author: Sean Regan
+Date: 7 years ago
+Rating: 5 stars
+Sean ReganLocal Guide · 35 reviews · 229 photos7 years ago
+
+Author: Adam Lyon
+Date: 7 years ago
+Rating: 5 stars
+Great place with good parking and friendly staff. Went in at 2pm doubled over with a bad back and left walking upright after less than an hour. Would highly recommend.
+
+Author: Jamal Abush
+Date: 8 years ago
+Rating: 5 stars
+Excellent practice. If my family have ever needed an appointment the same day the practice has always accommodated. The doctors and staff are friendly approachable and caring. Clearly well organised practice. Very impressed
+
+Author: Grant Morgan
+Date: 8 years ago
+Rating: 5 stars
+Grant MorganLocal Guide · 9 reviews8 years ago
+
+Author: Arthur Darby
+Date: 8 years ago
+Rating: 5 stars
+Good for appointment times. Friendly staff.
+
+Author: Raj K
+Date: 9 years ago
+Rating: 5 stars
+Saturday service is good
+
+Author: Debbie Meek
+Date: 9 years ago
+Rating: 5 stars
+The compassion and understanding is amazing you feel listened to and Dr Gray is an Amazing Docter .
+
+Author: Anne Read
+Date: 9 years ago
+Rating: 2 stars
+Its ok... I ask them before if I am due for smear test, after booking me an appointment and taking a half day off it is just for me to find out that I am not due yet! They need to train their staff i think
+
+Author: William Roddy
+Date: 10 years ago
+Rating: 1 star
+William Roddy10 years ago
+
+Author: helen angel
+Date: 11 years ago
+Rating: 4 stars
+such lovely dr but getting appointment is out rageous I have mental heath issues and get told have wait till next week whats this all bout nhs cut backs

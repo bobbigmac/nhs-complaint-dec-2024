@@ -3,15 +3,25 @@ Canonical code: P85026
 Postcode: M35 0AD
 Google Maps title: Quayside Medical Practice
 Google rating: 2.4
-Google review count: 119
-Google Maps URL: https://www.google.com/maps/place/Quayside+Medical+Practice/@53.5099549,-2.1570397,17z/data=!4m8!3m7!1s0x487bb72c5ae28be7:0x90cdade812e0d7e6!8m2!3d53.5099549!4d-2.1570397!9m1!1b1!16s%2Fg%2F1yh9t_dbj?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 120
+Google Maps URL: https://www.google.com/maps/place/Quayside+Medical+Practice/@53.5099549,-2.15962,17z/data=!4m8!3m7!1s0x487bb72c5ae28be7:0x90cdade812e0d7e6!8m2!3d53.5099549!4d-2.1570397!9m1!1b1!16s%2Fg%2F1yh9t_dbj?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 120
+Owner replies collected: 10
+Raw review responses captured: 12
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85026-quayside-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Mianbali Khan
+Date: a week ago
+Rating: 4 stars
+Mianbali Khana week ago New
 
 Author: Dawn McGuire
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
 Made an appointment for 3.10pm yesterday (12th November 2025) arrived at 2.55pm in plenty of time which i always do. Spoke to the receptionist (not sure of her name) she advised me of what waiting room to go to. Half hour after my appointment. I'm still sitting there, watching people come in after me and being seen before me. I didn't want to leave the waiting are as I was on my own, just in case my name was called. 2 hours later (to which I think another patient may have informed the reception desk) I was still there. She asked me to the desk. To my knowledge I was booked in She told me I had been put down as a non attendee. Apologised, then said they had been having problems with the computer system. To which I said obviously not, its the person inputting/working the computer. As I had seen approximately 7-10 people arrive after me and go in before me. So to me that's not a computer error, its a human error. She said I would have to come back tomorrow. I said absolutely not as I work early mornings, and could the doctor see me now as he finishes his shift at 5pm (it was 4.50pm) absolute sham. Luckily, for them to basically save face, I imagine. The doctor said he would see me.
 
@@ -31,19 +41,28 @@ Rating: 5 stars
 Wendy Roach10 months ago
 
 Author: Lauren Andrew
-Date: 10 months ago
+Date: 11 months ago
 Rating: 1 star
 I booked in my daughters 3 year immunidations with reception as i was aware they are due them at 3 years. Baring in mind the receptionist asked for my daughters DOB. Turned up today aftrr taking a day off work to be told sorry your daughtrr is a month early and we cannot administer the injections today and you will need to make another appt for a months time. This is unnacceptable for a GP practise
+Practice response date: 11 months ago
+Practice response:
+Please make sure children are at the correct age before you book immunisations as nurses can not administer early. 3 year vaccinations are 3 years and 4 months not 3 years. We will review with reception staff who booked but we ask patients do also check. Here is a helpful link, https://www.nhs.uk/vaccinations/nhs-vaccinations-and-when-to-have-them/
 
 Author: Rose Cooper
-Date: 10 months ago
+Date: 11 months ago
 Rating: 1 star
 Still accepting new patients but I’m waiting in a queue above 30 people with no appointments
+Practice response date: 11 months ago
+Practice response:
+Lots of appointments available. Not sure how you determined no appointments… With regards to new patients, all practices HAVE to accept new patients as per rules unless special permission from NHS England in exceptional circumstances. Many thanks
 
 Author: Rory
 Date: 11 months ago
 Rating: 5 stars
 Good staff
+Practice response date: 11 months ago
+Practice response:
+Thank you Rory
 
 Author: Tracy Beard
 Date: 11 months ago
@@ -56,6 +75,572 @@ Rating: 1 star
 I would give less for the stress and anxiety the surgery caused me, but it doesn't seem to let me. If you need care, there is no point going here. The reception staff are lovely however the doctors, nurse practitioner don't seem to care whatsoever ever. In January after a visit to the GP I was given incorrect medication. After the issue was no better I went back, I was told by the GP the 1st GP was wrong. They gave me different medication. After 2 days and getting worse. I presented yo A&E and was kept on for 5nights. Being told each step of the way the GP was wrong. I should have been referred to podiatry on the first visit. The second I should have been sent to hospital... If I followed their guidance any further, I could have lost toes/feet. After hospital admission, I was sensitive to the medication so rang the GP to change it. They advised that technically I don't need medication anymore as I have had a course. Without even seeing me. But I did. That was my treatment plan from my discharge from hospital. This surgery completely exasperate medical conditions unnecessarily. It's almost like doctors don't care anymore.
 
 Author: Jordan
-Date: 11 months ago
+Date: a year ago
 Rating: 5 stars
 My recent experience using the messaging service online was excellent. A very effective way of getting help and advice about a recent medical concern, in the same way I would do if booking an appointment. As I felt my medical problem did not require a face-face appointment and more so that I needed some advice in how to deal with the issue myself. The care and response from Dr Wilshere was nothing short of excellent and he really took the time to help me with clear and concise advice, additionally preparing a prescription. My medical problem is now alleviated! This surgery has been nothing short of excellent over the years to both myself and my family members. Thank you so much to all the staff for all the hard work, support and care. It is greatly appreciated!
+
+Author: Stacey Switzer
+Date: a year ago
+Rating: 5 stars
+Amazing service 👏 Marcel and the girls on the desk were brilliant …
+
+Author: Sheela Vora
+Date: Edited a year ago
+Rating: 1 star
+Absolutely dreadful surgery and the monologue of errors that they passive with sorry. Patience are just seen as cash cows. No accountability why gp surgeries are allowed to run like this is beyond me, and what is comical is on their Facebook account they only share good feedback. Why would they be proud of a review score of 2.3. If you look at their Facebook, they only share good reviews, and they are begging for more. No, you are getting no more money. Sort your house in order. Getting more money is not the answer. I am absolutely greed
+
+Author: Michael Dzineku
+Date: a year ago
+Rating: 1 star
+The contact centre is terrible and never interested in attending to anyone.. There is never a time they have a sloth for a patient. I have called them up to 5 times just to get an appointment with my GP and all I could get is ( no sloths available) IT IS RIDICULOUS!!!
+Practice response date: a year ago
+Practice response:
+You need to ring at 8am weekdays. We have had left over appointments all week until mid-morning and we are accommodating record levels of appointments with over 95% of patients getting an on the day appointment. You can also use the online service which you have not tried. I note you have had an appointment already so assume you managed that time. Please ring at 8am weekdays and you can also contact NHS 111. Best wishes
+
+Author: Quentin Crooks
+Date: a year ago
+Rating: 5 stars
+This practice is absolutely superb. During a time of bereavement they have gone out of their way to help me and it's so appreciated. Using the online service is fast and efficient as are the receptionists and the doctors don't rush with their patients, so for me personally, I've got nothing but praise and thanks for Quayside Medical Practice, during one of the hardest times in my life, they're being utterly professional.........5 stars from me
+
+Author: JO Headifen
+Date: a year ago
+Rating: 1 star
+At over 30 weeks pregnant, I developed a persistent and irritating cough that worsened when lying down. With no other symptoms, I made an appointment at Quayside Medical Practice for medical advice. The practitioner (not a doctor) diagnosed it as reflux and prescribed Gaviscon. Unfortunately, there were no available appointments with a doctor either that day or for several weeks. However, after several days of taking the medication, my cough worsened to the point where I couldn’t sleep or eat. My throat became increasingly painful, and the cough became uncontrollable. I returned to the clinic and was seen by the same practitioner, as there were still no appointments with a doctor. During this appointment, I was in tears, explaining how difficult it was to manage daily life due to the constant coughing and pain. The practitioner advised me to stay strong and continue taking the Gaviscon and painkillers. Despite this, my condition continued to deteriorate. Eventually, the pain in my throat and lungs, along with the uncontrollable cough, became unbearable. I went to A&E, where an X-ray revealed a chest infection, and I was prescribed antibiotics. Despite completing the first course of antibiotics, my symptoms worsened, with severe pain around my lung and ongoing coughing. I had to return to A&E for further treatment, where I was given a higher dose of antibiotics and morphine for the intense pain (as other painkillers were ineffective), which was caused by a rib fracture from the persistent coughing. After completing the second course of antibiotics, my symptoms finally began to improve. Looking back, I feel that my concerns were not properly addressed by the practitioner at Quayside Medical Practice. Despite being heavily pregnant, I was not seen by a GP, and my symptoms were dismissed, leading to significant delays in receiving the proper treatment. This experience has taught me the importance of seeking care at A&E for serious symptoms, rather than relying solely on the advice of a clinic. The entire ordeal was traumatic, disrupted my family routine, and led to a prolonged recovery.
+
+Author: Rich Jones
+Date: a year ago
+Rating: 5 stars
+My job means that I would struggle to make an on the day appointment to see the GP. The messaging service has not only been a really effective way of communicating with GPs at the surgery about a health concern, but the response has been as careful and care filled as I would get if I was in person. I can’t rate this practice high enough in general, but I have been particularly appreciative of the extra mile 2 of the partners have gone over the last couple of weeks. High praise is well deserved.
+
+Author: William Young
+Date: a year ago
+Rating: 1 star
+The staff don't seem to care at all, I was told that my appointment is in a month's time despite the fact the app told me it's for today and I've had a call earlier in the week telling me this as well, explained it was urgent and was met with complete indifference. Find somewhere else
+Practice response date: a year ago
+Practice response:
+We have listened to the call and you were booked in for next next month and there was never an appointment for today with us. You were also happy with this appointment during the call so it’s unclear why you are making these claims. The manager has now spoken to you. Best wishes
+
+Author: Philip
+Date: a year ago
+Rating: 1 star
+The hours on their phone system aren't even correct, trying to call the secretaries about a referral I've been waiting months for and they don't answer the phone, I would ring where I was referred to but had no confirmation after they sent a text because they're too scared to pick up a telephone and speak to you. Can't sit on hold all day while I'm at work. Terrible service ran by people who don't care. When they do bother to answer the phone they act like they're doing you a favour. If an actual business ran themselves in the same way they'd be out of business within 6 months. Shambles.
+Practice response date: a year ago
+Practice response:
+Our secretary was not available due to personal reasons apologies. We do care and your generic statements are unfounded and unfair to all the staff working so hard in difficult times. You can also contacted us online so no need to even ring us. Please visit our website. Best wishes
+
+Author: Kieran Mcavoy
+Date: a year ago
+Rating: 1 star
+Why say open at 7:30 if it clearly doesn’t 🤷‍♂️ …
+Practice response date: a year ago
+Practice response:
+We are open from 7:30am on Mondays and tuesdays. From 7am on Thursdays and from 8am on Wednesday and Friday. All details are on our website. Best wishes
+
+Author: G Qualters
+Date: a year ago
+Rating: 1 star
+I’ve had my appointment cancelled again, they just send you a text message and tell you to contact them , when you phone I’m always in a big queue, it would be better customer service if they called you with another appointment , very frustrating try re arrange another appointment
+
+Author: Gary Laing
+Date: a year ago
+Rating: 5 stars
+Gary Laing2 reviewsa year ago
+
+Author: We're going on an adventure
+Date: a year ago
+Rating: 5 stars
+We're going on an adventureLocal Guide · 255 reviews · 2,232 photosa year ago
+
+Author: Jamie Hesford
+Date: a year ago
+Rating: 1 star
+Pathetic! On two occasions I received automated appointments for injections for my daughter. Both times I turned up I was told they were sent in error and weren't due.
+
+Author: Alan Thomas
+Date: a year ago
+Rating: 2 stars
+im 74 this week and have serious heart disease and i tried to get an appointment to see my doctor (dr crutchley ) i wanted to have a talk with him about my medication . i went in person to the centre and was told there was no chance of my booking an appointment with him at any time and was told i hadnt seen him for over 3 years, which shows how often i try to see a doctor . i was toild if i want an appointment with him i must phone every day to get one !!! pretty poor show for one who doesnt come every other week ...
+
+Author: Darren Burgess
+Date: a year ago
+Rating: 5 stars
+Got through on phone within 5 mins. An immediate appointment with pleasant receptionist and a thorough consultation. I couldn’t fault today. Excellent job.
+
+Author: joe cassidy
+Date: Edited a year ago
+Rating: 1 star
+After the practice manager assured me things would get better they are only getting worse. Same old unable to get through on telephone, getting cut off after an hour, unavailability of future appointments. No support from independent councilors or our MP. A&E Oldham Full 12 hour wait. In Hale and Disley no problem getting an appointment. We need accountability, this cannot continue.
+
+Author: Stephanie Stringer
+Date: a year ago
+Rating: 1 star
+My mum is a patient here, she's 86 years old. The service is atrocious-especially from the admin team. They should be overhauled or closed down.
+
+Author: Jack Brett
+Date: a year ago
+Rating: 1 star
+Call up for an appointment, position 14, hold for 40 minutes to get cut off by their staff, call back, position 13.. seems this is a recurring issue according to previous reviews as well. Shocking
+
+Author: Donna Jack
+Date: a year ago
+Rating: 5 stars
+Donna JackLocal Guide · 19 reviews · 46 photosa year ago
+
+Author: Phil Riley
+Date: a year ago
+Rating: 1 star
+Phil RileyLocal Guide · 15 reviewsa year ago
+
+Author: Jason
+Date: a year ago
+Rating: 2 stars
+No communication in the waiting room and then when they do see you, your in and out like a flash.
+
+Author: Andreea celine Marasac
+Date: a year ago
+Rating: 5 stars
+Andreea celine Marasaca year ago
+
+Author: Bernadette Heywood
+Date: a year ago
+Rating: 1 star
+I have tried to a appointment for my mum and told 3 weeks wait she is 87 told to take her to a walk in centre attuide was terrible came home rang the surgery in a queue number 13 not a very good quality service date 4/4/ 2024 Happy not
+
+Author: Michelle H
+Date: a year ago
+Rating: 1 star
+Never answer phone calls. If lucky enough to get through there are never any appointments. Never any appointments on the app. Scandalous that I have to go through the NHS 111 on line symptoms for them to book me a telephone consultation with them for the next day. Staff unhelpful redirecting me via email to out of hours where again I am unable to get an appointment. Also needed outside help to get a referral as reception would not listen to me. This practice should be in special messures.
+
+Author: Aysha St Giles
+Date: 2 years ago
+Rating: 5 stars
+Saw Dr Nadia and thought she was a wonderful GP. I felt truly listened to and that she cared about my medical needs and was committed to doing the very best for my care.
+Practice response date: 2 years ago
+Practice response:
+😁 …
+
+Author: Neil Artus
+Date: 2 years ago
+Rating: 1 star
+Yet again I need medical advice on my elderly aunt and I cannot get through on the phone. Just Pathetic, they cannot provide the service that they are paid to provide.
+
+Author: Michael Bradley
+Date: 2 years ago
+Rating: 1 star
+Unable to get an appoinment for my child who’s had a cough for over 3 weeks. Can’t do it online. Can’t get through to anyone on the phone. Thought it couldn’t get any worse than when it was Failsworth Group practice. Shameful.
+
+Author: Ashley Higson
+Date: 2 years ago
+Rating: 1 star
+111 said they would call urgently, we are now 3 weeks on and still nothing.
+
+Author: Ann Ross
+Date: 2 years ago
+Rating: 5 stars
+Good access knowledgeable staff.
+
+Author: Aims P
+Date: 2 years ago
+Rating: 5 stars
+They have always been fantastic for myself, partner and son. If they haven't been able to see me they have offered advice and provided the out of hours and even phoned back after speaking to doctors to see if we could be fit in. Been with them for nearing three years now and they are by far the best I've had. Also want to mention how amazing the reception team and doctors are as they has always been friendly and polite not to mention solving issues I have.
+
+Author: John Balletta
+Date: 2 years ago
+Rating: 1 star
+Lately I've been waiting an average of 4 weeks for each appointment. I've been with them for 9 years and I'm still not properly on their systems. You need to call at certain times to get an appointment. If you get lucky they answer. When you get there on time you still wait at least 10 minutes to be seen BUT If YOU are late 10 minutes the doctor will send you away and you'll need to take another half day off work to come again another day. To add insults they'll send you a humiliatin text message that you missed your appointment and it costs 200 million to the NHS. If you make it to the your challenging appointment time you're with a different doctor everytime. None of them will listen to you properly and you can only discuss 1 problem per session. I've put up with them for 9 years. Not a pleasant experience.
+
+Author: Ann Dolan
+Date: 2 years ago
+Rating: 2 stars
+Takes ages to get through on phone.
+
+Author: rosler 1
+Date: 2 years ago
+Rating: 1 star
+Absolute nightmare getting an appointment. Cut you off when you dial at 8am and when you dial back immediately you’re 20 in the queue and miss same day appointment. Next available bookable appointment END SEPTEMBER - 8 weeks away!!!!. And they do not offer online appointment booking despite saying they do on their website and in their phone message. Just awful :-(
+Practice response date: 2 years ago
+Practice response:
+Online appointments are available for prebookable and on the day and have been for a very long time.
+
+Author: Deborah Bainbridge
+Date: 2 years ago
+Rating: 2 stars
+I have been quayside medical practice since l was 5 years old l had issues making a appointment got wait 2-3 weeks staff arent that helpful at mo you get told ring up at 8am in morning for urgent appointments they all gone since failsworth practice shut down we got there patiences better opportunaly then ones been with quayside l had go a@e for check up on wedthyrs
+
+Author: Harry
+Date: 2 years ago
+Rating: 5 stars
+Just joined, same day appointment and got me sorted straight away. Very good
+
+Author: Mike Ankers
+Date: 2 years ago
+Rating: 5 stars
+Not seen a gp yet but very helpful receptionist who assisted with my prescription
+
+Author: Sandra Mercer
+Date: 2 years ago
+Rating: 5 stars
+Since moving to the practice almost 2 years ago, every appointment and encounter I’ve had with a member of staff has been positive. I had an appointment today where I was thoroughly listened to, my options were explained in detail and I left feeling extremely reassured and much more positive than when I had arrived. Can’t thank the Doctors and support staff enough, especially Dr Crutchley who I dealt with today.
+Practice response date: 2 years ago
+Practice response:
+Thank you Sandra for your kind words, much appreciated, team effort all the way. All the best Dr Crutchley
+
+Author: Darren Hall
+Date: 2 years ago
+Rating: 5 stars
+Much better than the old Failsworth Group. Although that's not hard!
+
+Author: Madalin
+Date: 2 years ago
+Rating: 1 star
+I needed an urgent appointment and called yesterday (Tuesday) at 8am and there was no ring whatsoever for the first 5 minutes, then the call ends automatically. Probably their telephone system was overloaded, but this only means they need to invest in a better one. Once you go past that, you have to make at least - and not exaggerating at all - at least 20 calls to get in a queue (I started as number 19), where chances are you are already too late for an appointment for that day. Very disappointing, I don't see any improvements from the previous GP at Failsworth who got closed by the CCG for almost the same reasons.
+
+Author: Emma Hayes
+Date: 2 years ago
+Rating: 1 star
+This doctors is ridiculous , they open at 8 for a appointment at 8.01 won’t even put you on hold just says can not answer call back , then keep trying 8.10am all appointments gone for the day what a absolute joke 4 days I have been trying to get a appointment , Quayside have taken over , they are no better if anything worse at least you could get a appointment before they was good for a month this Doctors is by far the worst doctors in the area
+
+Author: Steve Andrew
+Date: 3 years ago
+Rating: 5 stars
+Following a recent eye op I realized that the drops provided by the hospital would not last 14 days. Sent email requesting additional drops. Within 15 minutes I was Contacted by Sharon (5pm) seeking confirmation of the hospital prescription, I sent copy. The drops were received the next day (1pm) Thank you
+
+Author: Julie hall
+Date: 3 years ago
+Rating: 1 star
+After having a face 2 face with the doctor she arranged for further blood tests and said I wouldn’t need to speak to her that she would give me a prescription. After the test results came back got a call from receptionist to say doctor wants to speak to me. I told receptionist that the doctor had said they would be giving me a prescription. No said the receptionist the doctor wanted to discuss my options. Made a appointment for a telephone consultation. After nearly 2 weeks of worrying, thinking the blood test had shown something else spoke to the doctor who prescribed the same medication that she had told me she was going to do over 2 weeks ago. There was nothing to discuss. What a waste of mine and the doctors time. Somebody else might have needed that appointment
+
+Author: antony williams
+Date: 3 years ago
+Rating: 1 star
+antony williams3 reviews3 years ago
+
+Author: Chloe cooper
+Date: 3 years ago
+Rating: 1 star
+Quayside medical receptionist are useless , unhelpful , and a joke , on the phone to them for half an hour trying to sort out a prescription that was submitted a week ago and not done , was told yesterday they would have it done for this morning as just had a full knee replacement and need my painkillers , they told me it would be atleast 72 hours while I’m in agony , and that I can’t speak to a doctor to help, and then hung up the phone on me when requesting an appointment, this is unacceptable and bang out of order !! How this is good patient care I will never know
+
+Author: Paula Robinson
+Date: 3 years ago
+Rating: 5 stars
+I hear many bad experiences but I have to disagree. I don't use the doctor often, but in the last 3 weeks I have had to ring for a same day appointment for a recurring allergy issue. I may have been on occasion number 17 in the queue but was answered within 7 minutes and each of the 3 times got a same day appointment, no issues Well done Quayside! The doctors I've seen on each occasion have been great!
+
+Author: S M
+Date: 3 years ago
+Rating: 4 stars
+Probably the best medical practice in the area.
+
+Author: Gina Robinson
+Date: 3 years ago
+Rating: 4 stars
+This surgery has been completely turned around- I used to dread needing to contact the doctor, now they’re easy to get hold of, the staff are great and most of the time things seem to run smoothly. Special thanks to Nicola on reception for going out of her way to help me with a prescription problem today, I’m very grateful!
+
+Author: Luke Rattigan
+Date: 3 years ago
+Rating: 5 stars
+Luke RattiganLocal Guide · 68 reviews3 years ago
+
+Author: Peter Hall
+Date: 3 years ago
+Rating: 1 star
+I have a serious problem. I'm incontinent and spent 10 min in the bathroom which meant when I approached reception I was 10 min late. I wasn't allowed to see the doctor regardless Dr pilkington is a fantastic doctor but is alway running late. This rejection is just another nail-in my coffin Non clinical staff playing at being doctors with the real possibility of harming patients. I've got no doubt it will continue until somebody dies directly at their hands So sad
+
+Author: I B
+Date: 3 years ago
+Rating: 1 star
+Started off okay when we moved over to them but it seems like they have gone down hill quickly. It's harder and harder getting appointments, the staff are not as nice and helpful as they were initially, they are rude telling people to just move GP, it's not great. If they carry on like this they'll soon end up like FGP. Don't understand why they took on so many new patients if they cannot handle it.
+
+Author: Paula Gibbard
+Date: 3 years ago
+Rating: 5 stars
+Paula GibbardLocal Guide · 260 reviews · 39 photos3 years ago
+
+Author: Alex Macdonald
+Date: 3 years ago
+Rating: 1 star
+Absolute waste of time , even worse than the Failsworth Group Practice. Rude staff , very difficult to get an appointment, moving Gp immediately.
+
+Author: Elliott InHats
+Date: 3 years ago
+Rating: 5 stars
+Elliott InHatsLocal Guide · 16 reviews · 4 photos3 years ago
+
+Author: Blue Bird
+Date: 3 years ago
+Rating: 5 stars
+Always Satisfied with my Dr's and Chloe my Nurse.
+
+Author: Louise Pointon
+Date: 3 years ago
+Rating: 1 star
+Louise Pointon3 years ago
+
+Author: unite reps
+Date: 3 years ago
+Rating: 1 star
+unite reps1 review3 years ago
+
+Author: Richard Humphreys
+Date: 4 years ago
+Rating: 5 stars
+I grow up thinking I was a little different, someone suggested I may be on the autistic spectrum. I made an appointment with Local surgery and was seen by Dr D Pilkington. This was a couple of years ago, although young he told me to make another appointment so he could prepare better. I went back a week later and after some research on his part he spent 30 minutes with me understanding me. I was then referred for a professional option. After many consultations I was finally diagnosed with Asperger's. This has changed my life, I will be always thankful for the care I received from Dr Pickington.
+
+Author: Gordon Peterbody
+Date: 4 years ago
+Rating: 5 stars
+Very happy with surgery, very efficient if you have an urgent need. Just one small criticism, you should change your voice Mail message which greats all calls. It’s 18 months out of day. Intended when we where at peak of pandemic. Time to change recording
+
+Author: Paul Barrow
+Date: 4 years ago
+Rating: 1 star
+Paul Barrow4 years ago
+
+Author: Joanne Mcgrath
+Date: 4 years ago
+Rating: 1 star
+I am very sad to say this but I am feeling completely let down by a practice I have been with all my 54 years. You have to phone at 8am for a phone call appointment. Fair enough, but having just had a total hip replacement and being in a lot of pain, I've been given codine to take. They just wipe me out, so this morning 8am came and went and it was 9.30am before I got to phone. No appointments. No suprize. But what is so sad is, that there, is no longer any common sense involved anymore, no empathy for people and certainly no leeway, by which they could sort you out an appointment for the following morning just on the off chance your medicine makes you very tired and sends you to sleep. "Appointments aren't released until the morning" that's all she kept saying. Then, she offered up " I will give you an alternative number" or finally "phone 111". This adding only to further my distress, at a time when a little more compassion is required. I can only pray that I never need any help from these people again in my future, because I fear they will not be of any assistance.
+
+Author: Martine Wharton
+Date: 4 years ago
+Rating: 1 star
+Am extremely unhappy been with this surgery over 30 years and have never found it so difficult to get a appointment to see a doctor and have never had such uncaring and cold receptionist would not recommend this surgery to anyone at moment
+
+Author: Johnathan
+Date: 4 years ago
+Rating: 1 star
+Terrible service
+
+Author: Kit Pratt
+Date: 4 years ago
+Rating: 5 stars
+Within the context of an under funded and over pressured health service, I feel that Quayside Medical do their best to help. My experience with Dr Pilkington has always been excellent especially around mental health and gender identity issues. I feel very privileged in this respect as it seems to be a rare experience in general. Administratively things have improved over the years. It's very useful to be able to manage appointments and prescriptions online. I book all my appointments well in advance so cannot comment on needing an appointment sooner than a month away.
+
+Author: Johnw Thornton
+Date: 4 years ago
+Rating: 1 star
+Absolutely full of incompetence by the time i get my appoinment I might have fell of a bridge already, seriously would jump of something else dont like tailbacks #mental awareness
+
+Author: Mabolsa Ritchie
+Date: 4 years ago
+Rating: 1 star
+Terrible doctors and staff who misdiagnosed me with cyatica when I had slipped disc causing 4 days with indescribable paid leading to problems with my bowels and having to be taken to hospital by ambulance where I spent 3 days. On my release I asked for an appointment to get pain killers and sleeping tablets due to severe pain only to be told I have to wait 2 weeks for the doctors to see me. I pleaded with the girls on the phone while in tears.. these girls have absolutely no compassion nor sense or duty of care.. I have since reported the girls and doctor who all disgust me in everyway DO NOT JOIN THIS PRACTICE FOR YOUR OWN SAFETY.
+
+Author: Jim Ryan
+Date: 4 years ago
+Rating: 1 star
+Everytime I request repeat prescriptions there is always has at least one item missing. I then have to wait two days to get the missing item. If the staff and Doctor's worked for any other organisation apart from the NHS they would be sacked.
+
+Author: Nikki heywood
+Date: 4 years ago
+Rating: 1 star
+Absolutely useless ...book appointments and waste people time n money ...never met more incompetent staff
+
+Author: Dawn Burgess
+Date: 4 years ago
+Rating: 1 star
+Appalling receptionist, so rude and ignorant.
+
+Author: Michelle Mcknight
+Date: 4 years ago
+Rating: 1 star
+I'm only giving a 1 because a couple of the doctors are very good and 1 if the receptionist is also. They need a new Manager and to get rid of the blonde receptionist.
+
+Author: Andy Battersby
+Date: 5 years ago
+Rating: 5 stars
+Friendly staff
+
+Author: susan mckeown
+Date: 5 years ago
+Rating: 1 star
+Would be no stars but not an option. Phoned up for a phone appointment. Nine days is the earliest phone appointment. If you need medical help find another doctor because this one obviously has too many patients to cope.
+
+Author: Alan Standley
+Date: 6 years ago
+Rating: 4 stars
+I have had a mix bag of doctors and receptionist over the years some being rood but more often than not the doctor's are really nice and helpful same with the receptionist just depends on who you see the day you go Inn.
+
+Author: Hayley 'Rayling' Morris
+Date: 6 years ago
+Rating: 1 star
+What a sham of a place. Can never get an appointment always sent to walk in center. They say ring in the morning from 8am for appointment but never answer the phones. Used to be a fantastic doctors but now they have too many patients and obviously not enough doctors! For people who work don't bother with the doctors just go straight to walk in bc that's ur only chance of getting seen !! Joke of a place
+
+Author: Amanda Connor
+Date: 6 years ago
+Rating: 1 star
+This practice should be shut look at the reviews not all wrong. Just rang for appointment next Monday or ring at 8am in morning come on people start work at 7am and by the time you get through all gone time you understand people who work also need appointment as we pay into the Nhs as well it’s a joke not the first time it’s happened 😡
+
+Author: Samantha Brierley
+Date: 6 years ago
+Rating: 1 star
+Trying to get through for over an hour then still number 4 in queue had to end to go to a different appointment so I called in the doctors to just get blanked off two snotty receptionists then once I no got their attention off chatting they was really off and said no got nothing now for over a week..... so unprofessional and I am disgusted how there is no appointments maybe you need to look at people who are getting appointment are not just taking The piss and just calling in to see a doc for a chat!!!!!
+
+Author: JILL LEASLEY
+Date: 6 years ago
+Rating: 1 star
+Been on hold for 31 minutes at number 1 in the queue then told experiencing technical difficulties and to end call !!! Tried ringing back 8 times and can't get through at all now, what an absolute shambles and joke this practice has now become
+
+Author: Steve Sharkey
+Date: 6 years ago
+Rating: 4 stars
+Have been with the practice for about 30 years. Went from excellent to diabolical over the last 3 or 4 years. Most of the practice staff left and we're replaced by less caring personnel. Every time you managed to get an appointment it was a different doctor. That is if you could get an appointment. Many times if you got through on the phone you could wait two weeks to see someone. It was quicker going to the drop in center. Things have improved in the last twelve months. The phone lines are working and on line appointments are available. The doctors have improved, the nurses also the frontline staff. Dr Mark Crutchley is one of the best doctors I have ever had the pleasure of seeing. The management of the surgery is attentive and caring. Nearly up to its old standard.
+
+Author: tracy beard
+Date: 6 years ago
+Rating: 1 star
+This is the worst doctors ever ...I was number 1 in the queue still waiting 11 mins later and nobody answered...please anybody thinking about signing with them DON'T if you need a doctor or even medical advice
+
+Author: michael morris
+Date: 6 years ago
+Rating: 5 stars
+michael morris2 reviews6 years ago
+
+Author: Annette Nokes
+Date: 6 years ago
+Rating: 1 star
+Tried for 3 days now to get an appointment Sat for 30 mins on hold from 8am to be cut off now cannot get through Something needs to change Disgusted!!
+
+Author: Caitlyn Darcy
+Date: 6 years ago
+Rating: 5 stars
+There was a problem with the phone lines for a long time but that's now resolved. The staff are so friendly, particularly Dr Mulkeen and Dr Pilkington who are extremely understanding and kind. The reception staff are friendly and thorough. Would recommend!
+
+Author: Arron Turner
+Date: 6 years ago
+Rating: 5 stars
+Absolutely fantastic caring staff and excellent care. Highly recommended this practice.
+
+Author: Jimmy Neale
+Date: 6 years ago
+Rating: 5 stars
+Every time I see doctor mark Wiltshire he is friendly always reassuring the best doctor I have ever seen I will not go to any one else. I book all my appointments through patient access quick and easy don’t need to inter act with reception all done on touch screen which is even better. I have required some steroid injections over the last few months Doctor Wiltshire was amazing with the whole process and the receptionist was happy to help get me my appointments with Doctor Wiltshire have full confidence with him always helped with my weight and blood pressure great advice a credit.
+
+Author: Barr Gleaves
+Date: 6 years ago
+Rating: 1 star
+Resepshon on arrival is very poor indeed one of the resepshonist is on the bigist power trip every. This is sopsed to be a caring profeshon but I think she is a non carrier how shows no empathy for the people that are genuinely ill I am slowly losing faith in my doctor.
+
+Author: julia gardner
+Date: 7 years ago
+Rating: 1 star
+julia gardner7 years ago
+
+Author: Chris Neale
+Date: Edited 7 years ago
+Rating: 1 star
+Cannot get through. At ANY time. Looking out of necessity to sign up elsewhere. Emergency appointments are farcical, and despite urgency are made to wait for hours. The practice needs intervention by the GMC or other supervising body.
+
+Author: Jason Richards
+Date: 7 years ago
+Rating: 1 star
+Quayside medical practice is not fit for purpose, it needs a sea change of people to get it where it needs to be. Having rang for several days to find it permanently engaged I travelled from Manchester to book an appointment where there were two staff on reception and one person in the waiting area. I called whilst stood at the reception and it was engaged, they suggested it was a fault. Following a long illness it has now been 3 months where appointments need to be made weekly and only twice has the phone rang. On two further occasions I’ve rang whilst at reception to find two staff talking between themselves and no phone ringing/answering. They insist you need to physically call in to be able to book an appointment (in 3 weeks) but “best ring in the morning” which is futile. I have family in the surrounding area who have different surgeries and they can call, make appointments, see a doctor and not feel like an inconvenience. I’m a huge fan of the NHS but if an inspection/audit was taken of Quayside and they were benchmarked against other surgeries it would prove what a mismanaged, inefficient and inconsistent service they provide. If it were a normal business you’d go elsewhere but as this is peoples health and their local centre I have no doubt this is causing suffering, discomfort, anxiety and complications to many ordinary people who have medical problems and simply want to see their doctor.
+
+Author: Joseph James
+Date: 7 years ago
+Rating: 2 stars
+Been a patient for two years or so, staff have a bad attitude, the phones are very busy, and often the phone rings a few times then cuts out. Always getting prescriptions wrong, and they insist on following some sort of process to r procedure religiously, even when it's detrimental to the patient. The reception staff don't know the meaning of the word empathy either.
+
+Author: Jaymie Mawson
+Date: 7 years ago
+Rating: 3 stars
+Jaymie MawsonLocal Guide · 24 reviews7 years ago
+
+Author: Pat Donald
+Date: 7 years ago
+Rating: 2 stars
+Why do u have to go all the way to glodwick to have an ECG so much out of the way when u don’t have a car .they use to do it at surgery or north Manchester and Oldham .A bit far for the elderly and people who are old and not well .
+
+Author: J W
+Date: 8 years ago
+Rating: 1 star
+This surgery is getting worse by the day. My dad phoned in morning for a telephone appointment or home visit as broke his ankle and can't get to surgery. Chased them up 4 times as not had any contact by Dr. They use an excuse that they couldn't get hold of us as had wrong number on system even though they have called us ok in the past. They had only 1 Dr for the whole practice today. Gone 7.30pm and still not called by Dr so now have to ring 111 Update I finally get a phone call 9.30 pm from one of the partners of surgery. Seems strange that they manage to phone you after you leave a bad review. The Dr said he will prescribe a stronger painkiller and will be ready to pick up prescription in morning. I go to collect the prescription this morning, receptionist gives me a bunch of prescriptions which do not have any pain killers on just my Dad's regular medicines. I then go back to surgery and receptionist trys to tell me she gave me correct prescription. Looks on her computer screen and can't see anything and not until I get really annoyed she looks through piles of paper prescriptions and then finds the right medication. The receptionists here don't have a clue what they are doing. Also a second recoponoist comes out with a snotty attitude and says they are doing there best, after I tell them they need to sort out there systems as they look on computer 3 times and don't find prescription until they sift through piles of paper prescriptions.
+
+Author: angela dawson
+Date: 8 years ago
+Rating: 1 star
+Unable to contact surgery and I can't get out to pop into surgery. Phone lines have been continually engaged for 4 days .. is this a line fault? Can't find an alternative number or email to contact them .
+
+Author: Kelly Lewis
+Date: 8 years ago
+Rating: 1 star
+Absolutely shocking they haven't got a clue!! Turned up for my appointment with the nurse to be told there was no nurse even tho I've had text messages to remind me. This happened 3mths ago too. Rang later to see if any cancellations. Told to go at 4.40 that day so I turned up to GUESS WHAT no appointment was made.
+
+Author: Dirty Girl
+Date: 8 years ago
+Rating: 1 star
+My 11 year old daughter has had to wait 25 days for an appointment. That is all.
+
+Author: Ian Wade
+Date: 8 years ago
+Rating: 1 star
+Today booked in at reception for my appointment to see the nurse, waited 45 minutes and numerous people going in and out. When back up to the same receptionist told her how long I've been waiting, only to be asked did you book in. The practice has gone to the dogs.
+
+Author: Juliet Jones
+Date: 8 years ago
+Rating: 1 star
+Absolutely appalling level of care, I called in today as I was worried about my husband and asked for an appointment, stating I thought he was heading for a breakdown only to be told the next available appointment was 31/10/17and to go to walking centre or ae.
+
+Author: dave george
+Date: 8 years ago
+Rating: 1 star
+can never get an appointment ,
+
+Author: Debra Rigby
+Date: 8 years ago
+Rating: 1 star
+You have to wait far to long for appointments they tell you it full and when you go in the place is nearly empty very quiet also the staff has left the nurses gill / debbie also your other staff Nicola and now Karen to and staff you have now just haven't a clue what they are doing you ring at 8.05 am to find it still connected to the emgency phone it is like that until 8 50 am then when you do finally get threw the stupid woman tells you to call back after 5 pm for blood pressure tablets that I had a reaction to when I phone back I then told to ring back tommmorw what waste of time also they try and change your medication and even tell you that they are changing it this is not progress this is not Right this problem is getting worse and needs to be sorted out why are you not doing anything about this
+
+Author: Chris Riley
+Date: 8 years ago
+Rating: 1 star
+This practice as gone to the dogs just been told first appointment not available till 20 July seriously you have got to be joking we'll walk in central e again you have no chance of appointment
+
+Author: Lunch Box
+Date: 8 years ago
+Rating: 1 star
+I've been trying the number ending 1818 since Friday morning and haven't yet been connected, there's just a "busy" tone... permanently. If they've changed numbers they certainly haven't informed their patients (or Google as of 22/05/17). Equal parts disgusting/baffling. I've been in pain all weekend, have barely slept and still can't get through. I understand that there's other options, i.e. the Walk in Centre (Oldham) - I know this because every time I've managed to speak to someone at Quayside over the past 18 months THAT'S where I've been told to go. Unless a 3-4 week wait is acceptable. Which it rarely is. I do worry that people have and will continue to suffer because of the lack of standards at this surgery. At the very least they should be contactable.
+
+Author: Gulmina Khan
+Date: 8 years ago
+Rating: 1 star
+Why the phone is busy all the time ????, never get connected . Then what is staff n surgery for :/ if you can't get appointment on a call unless you visited the surgery and book there .
+
+Author: Stevieanne Howard
+Date: 8 years ago
+Rating: 1 star
+Always had to wait weeks for appointments because they're always "fully booked". But if you actually go in despite an appointment they're always empty. They have made a habit of changing people's medications without consent and some of the staff are quite rude.
+
+Author: Dj Baldyman167
+Date: 9 years ago
+Rating: 1 star
+Can take over a week for an appointment and medication is always wrong or not there.
+
+Author: Paul Edwards
+Date: 9 years ago
+Rating: 3 stars
+Quite a few doctors at the medical centre, not always easy to get an appointment if you work.
+
+Author: Katie Wardle
+Date: 9 years ago
+Rating: 5 stars
+I have seen a few doctors here, Whilst undergoing chemothepety they have been very supportive and always been there when I've needed an emergency appointment.
+
+Author: Andy Brett
+Date: 9 years ago
+Rating: 1 star
+Never answer the bloody phone.
+
+Author: Heather Purdie
+Date: 9 years ago
+Rating: 1 star
+Heather Purdie9 years ago
+
+Author: rob d
+Date: 9 years ago
+Rating: 1 star
+Been with this practice for years when dr doughy and dr woods then dr bayman and dr monks among other doctors why have you taken to many patients on as at one point you could phone for a appointment and get one on that day or if not the day after now you are telling patients they have to wait 3/4 WEEKS this can't be classed as moving fallward surly. This is wrong where's the the care gone for your long standing patients at one point I would of said that this was the best practice but not anymore the staff in the respection area are very good and so are the doctors when you can get see them the practice has been ruined for patients like me when you talk to people in the area they are all saying the same as me It was a good surgery why don't you try asking your patience who have been with you for years how they feel about this then you might say change your practice but why should we have been here longer than the doctors it would be better if you when to how things were when you could to see a doctor within 24 hours
+
+Author: Ross Gardner
+Date: 9 years ago
+Rating: 5 stars
+Ross Gardner2 reviews9 years ago

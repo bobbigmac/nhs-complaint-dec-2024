@@ -4,11 +4,16 @@ Postcode: M3 6FA
 Google Maps title: The Angel Medical Centre
 Google rating: 3.0
 Google review count: 6
-Google Maps URL: https://www.google.com/maps/place/The+Angel+Medical+Centre/@53.4834597,-2.2632257,17z/data=!4m8!3m7!1s0x487bb1c4c92abb5f:0xfd709ab990657ff6!8m2!3d53.4834597!4d-2.2632257!9m1!1b1!16s%2Fg%2F1v27v11_?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Angel+Medical+Centre/@53.4834597,-2.265806,17z/data=!4m8!3m7!1s0x487bb1c4c92abb5f:0xfd709ab990657ff6!8m2!3d53.4834597!4d-2.2632257!9m1!1b1!16s%2Fg%2F1v27v11_?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.0
+Review collection mode: full_feed
+Review cards collected: 6
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87634001-trinity-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Katie Bolger
 Date: a year ago

@@ -4,31 +4,54 @@ Postcode: M29 7BY
 Google Maps title: Astley General Practice
 Google rating: 4.8
 Google review count: 233
-Google Maps URL: https://www.google.com/maps/place/Astley+General+Practice/@53.500412,-2.4582791,17z/data=!4m8!3m7!1s0x487ba833e290375b:0xebb765e27027e0e6!8m2!3d53.500412!4d-2.4582791!9m1!1b1!16s%2Fg%2F1tfpjc94?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Astley+General+Practice/@53.500412,-2.4608594,17z/data=!4m8!3m7!1s0x487ba833e290375b:0xebb765e27027e0e6!8m2!3d53.500412!4d-2.4582791!9m1!1b1!16s%2Fg%2F1tfpjc94?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 233
+Owner replies collected: 118
+Raw review responses captured: 24
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P92637-astley-general-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Jackie Flanagan
-Date: 6 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 I never have a problem getting an appointment I have my blood work regularly I have my blood pressure taken Diabetic Feet check I like my doctor she is easy to talk to but no nonsense and I feel safe with her
 
+Author: Gracia Wanga
+Date: 2 weeks ago
+Rating: 5 stars
+Very helpful insightful everytime and friendly.
+
 Author: Stephen Blake
-Date: Edited a week ago
+Date: Edited 2 weeks ago
 Rating: 5 stars
 Very helpful
+Practice response date: a year ago
+Practice response:
+Hi Stephen, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
 
 Author: Siu Yue Ng
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
-Siu Yue Nga week ago New
+Siu Yue Ng2 weeks ago New
+
+Author: William Raftry
+Date: 2 weeks ago
+Rating: 5 stars
+Great GPS, very efficient.
 
 Author: geoff buckley
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 I went to see nurse over my blood results. Very informative and answered all my questions.
+
+Author: Freddie Si
+Date: a month ago
+Rating: 5 stars
+Good & Fast
 
 Author: james worthington
 Date: a month ago
@@ -44,6 +67,9 @@ Author: Zana Sultan
 Date: Edited a month ago
 Rating: 1 star
 I am happy with the GP and staff but one thing I’m really hate early morning is phone call is horrible. Take it more of 45 minute. Nobody answer the phone. Just keep ringing waiting waiting. If you want to emergency appointment you have to drive it to GP is the phone is really bad.
+Practice response date: 2 years ago
+Practice response:
+Hi Zana Many thanks for your feedback. We are sorry that your recent experience has not been a positive one. Please can you contact the surgery on 01942 557746 and ask to speak with the Practice Manager providing your full details so we can investigate this matter for you. Thank you
 
 Author: Philip Gerrard
 Date: a month ago
@@ -59,3 +85,1451 @@ Author: Brendan Field
 Date: a month ago
 Rating: 5 stars
 Friendly welcoming and very helpful
+
+Author: Peter Barry
+Date: a month ago
+Rating: 5 stars
+Peter Barry3 reviewsa month ago
+
+Author: Desmond Deignan
+Date: a month ago
+Rating: 5 stars
+Desmond Deignan7 reviews · 2 photosa month ago
+
+Author: Lindsay Hall
+Date: Edited a month ago
+Rating: 5 stars
+Always helpful and friendly Nothing is to much trouble
+Practice response date: 3 years ago
+Practice response:
+Hi Lindsay, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Sandi Glaser
+Date: a month ago
+Rating: 5 stars
+Kind and friendly receptionists and really couldn’t do more for me. A GP I trust.
+
+Author: ann dodson
+Date: a month ago
+Rating: 5 stars
+All good every time I come in sergery doctors and staff always very friendly
+
+Author: Hussain Khalid
+Date: a month ago
+Rating: 5 stars
+Hussain KhalidLocal Guide · 2 reviewsa month ago
+
+Author: Hadge Stockton
+Date: Edited a month ago
+Rating: 5 stars
+Very helpful staff and doctors
+Practice response date: 2 years ago
+Practice response:
+Hi Hadge, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Tracey Williams
+Date: a month ago
+Rating: 5 stars
+Tracey Williams3 reviewsa month ago
+
+Author: Kathleen Wilkinson
+Date: Edited a month ago
+Rating: 5 stars
+I cannot rate the practice highly enough. They have provided me with excellent service and all the staff are very helpful and professional. Thank you so much.
+Practice response date: 3 years ago
+Practice response:
+Hi Kathleen, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Alan Carr
+Date: Edited 2 months ago
+Rating: 5 stars
+Alan Carr5 reviewsEdited 2 months ago
+
+Author: Wendy Gaynor
+Date: 2 months ago
+Rating: 5 stars
+Wendy Gaynor1 review2 months ago
+
+Author: Craig Johnson
+Date: 2 months ago
+Rating: 5 stars
+Great Dr and the nurse is amazing, reception staff are good as well never had an issue
+
+Author: Mike Boyle
+Date: Edited 3 months ago
+Rating: 5 stars
+Mike Boyle4 reviews · 2 photosEdited 3 months ago
+
+Author: Doreen Brackenridge
+Date: 3 months ago
+Rating: 5 stars
+Excellent
+
+Author: sonia Alldred
+Date: Edited 4 months ago
+Rating: 5 stars
+Excellent service always welcomed by friendly ladies on the reception that are very helpful and go the extra mile. Both my doctors are great and listen to you. All in all excellent professionals
+Practice response date: a year ago
+Practice response:
+Hi Sonia, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: mr Glaister
+Date: Edited 4 months ago
+Rating: 5 stars
+I really appreciate this practice! It's so great to know I can see a doctor quickly when I need to. The reception staff are always polite and really helpful, which makes the experience even better!
+
+Author: Peter Pollard
+Date: 4 months ago
+Rating: 5 stars
+All good
+
+Author: James Flynn
+Date: Edited 4 months ago
+Rating: 5 stars
+All good👍 very nice ladies! James flynn …
+Practice response date: 2 years ago
+Practice response:
+Hi James, Thank you so much for taking the time to leave this review! I will be sure to pass this on to all of the practice staff!
+
+Author: robert lord
+Date: 4 months ago
+Rating: 5 stars
+robert lord2 reviews4 months ago
+
+Author: Nicky Wallace
+Date: Edited 4 months ago
+Rating: 5 stars
+Reception staff are always helpful and I feel that Dr Isatova is an exceptionally thorough doctor who provides excellent care.
+Practice response date: 3 years ago
+Practice response:
+Hi Nicky, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Dave Dodson
+Date: Edited 4 months ago
+Rating: 5 stars
+Very helpful and polite
+Practice response date: 3 years ago
+Practice response:
+Hi Dave, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: sue Perkin
+Date: 4 months ago
+Rating: 5 stars
+sue Perkin4 months ago
+
+Author: Lisa Atkinson
+Date: 4 months ago
+Rating: 5 stars
+Lovely drs I was worried as I’ve been at same drs for all my life and when I moved out of area and found astlet group practice I was so pleased and now been here for nearly 3 years
+
+Author: John david Martin
+Date: Edited 4 months ago
+Rating: 5 stars
+Always a great service would highly recommend
+
+Author: Alan Wilkinson
+Date: Edited 4 months ago
+Rating: 5 stars
+Fantastic service and support from all the staff at Astley General Practice. Never had any issues booking a GP appointment and reception staff always very helpful. 5 stars for this practice.
+Practice response date: 3 years ago
+Practice response:
+Hi Alan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Andrew Kirk
+Date: Edited 4 months ago
+Rating: 5 stars
+Never have problems getting appointments when I need them, face to face or telephone.
+Practice response date: 2 years ago
+Practice response:
+Hi Andrew, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Jeannie Cross
+Date: 4 months ago
+Rating: 5 stars
+Jeannie Cross4 months ago
+
+Author: Phillip Horrocks
+Date: Edited 4 months ago
+Rating: 4 stars
+Very happy with your service thank you
+
+Author: Jacqueline Reynolds
+Date: 4 months ago
+Rating: 5 stars
+Very helpful and always Appointment on time
+
+Author: Jenny Scruton
+Date: 4 months ago
+Rating: 5 stars
+Jenny Scruton4 months ago
+
+Author: Lynne Hogan
+Date: Edited 4 months ago
+Rating: 3 stars
+Wish they sent as many appointments out as they do their feedback requests TBH
+Practice response date: 3 years ago
+Practice response:
+Hi Lynne, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Alan Hargreaves
+Date: 4 months ago
+Rating: 5 stars
+Drs are very good. Always helpful and get appointments easily.
+
+Author: Sue Tootill
+Date: 5 months ago
+Rating: 1 star
+Sue Tootill5 reviews5 months ago
+
+Author: Steve Ng
+Date: 5 months ago
+Rating: 5 stars
+Steve Ng9 reviews · 11 photos5 months ago
+
+Author: Tony Frost
+Date: Edited 5 months ago
+Rating: 5 stars
+Excellent doctor and staff, very friendly and efficient. Always able to get an appointment in a reasonable time.
+Practice response date: a year ago
+Practice response:
+Hi Tony, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: David Foy
+Date: Edited 5 months ago
+Rating: 5 stars
+Always efficient and polite, excellent surgery.
+Practice response date: 3 years ago
+Practice response:
+Hi David. Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Rob McColl
+Date: 5 months ago
+Rating: 5 stars
+Prompt and efficient service
+
+Author: Arthur Artingstall
+Date: Edited 5 months ago
+Rating: 5 stars
+Arthur ArtingstallEdited 5 months ago
+
+Author: Lisa Lord
+Date: 5 months ago
+Rating: 5 stars
+I have never had a bad experience with my GP. The staff are very professional and friendly and never struggle to get an appointment.
+
+Author: gillian Welsby
+Date: 5 months ago
+Rating: 5 stars
+gillian Welsby3 reviews5 months ago
+
+Author: Pippa Lewis
+Date: 5 months ago
+Rating: 5 stars
+Absolutely superb and friendly practice. The whole team are just so professional and yet they feel welcoming and comforting. That’s a difficult balance. I’m so pleased I picked this practice. I had to leave my old practice because I moved house and I thought that I’d never find a practice like The Sides. This is much smaller but has the same lovely feeling to it. I highly recommend this team. Thanks for everything.
+
+Author: David Fisher
+Date: Edited 5 months ago
+Rating: 5 stars
+Always helpful and very accommodating
+
+Author: Janet Cameron
+Date: Edited 6 months ago
+Rating: 5 stars
+Get a appointment quite quickly.
+Practice response date: a year ago
+Practice response:
+Hi Janet, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: carole parkes-nutsey
+Date: Edited 7 months ago
+Rating: 5 stars
+Great professional service lovely helpful receptionist and very pleasant Lots of information available Thank you x
+
+Author: Alan Bellis
+Date: Edited 7 months ago
+Rating: 5 stars
+I have been going to this practice for 30 years + could recommend both the doctors & the receptionists brilliant
+
+Author: Keith Hindle
+Date: 7 months ago
+Rating: 5 stars
+Keith Hindle7 months ago
+
+Author: David Done
+Date: 7 months ago
+Rating: 5 stars
+David Done7 months ago
+
+Author: Julie Anderson
+Date: 7 months ago
+Rating: 5 stars
+Julie Anderson1 review7 months ago
+
+Author: James Chambers
+Date: 7 months ago
+Rating: 5 stars
+James Chambers6 reviews7 months ago
+
+Author: anthea edwards
+Date: 7 months ago
+Rating: 5 stars
+anthea edwards7 months ago
+
+Author: Dickson Yau
+Date: Edited 7 months ago
+Rating: 5 stars
+Dickson Yau2 reviews · 1 photoEdited 7 months ago
+
+Author: The Stranger
+Date: Edited 7 months ago
+Rating: 5 stars
+Perfect, no problems with docter and all staff
+
+Author: Steve Cox
+Date: 7 months ago
+Rating: 5 stars
+Steve Cox1 review7 months ago
+
+Author: Stephen Oscar anb
+Date: 7 months ago
+Rating: 5 stars
+👍 …
+
+Author: Eva Davies
+Date: 7 months ago
+Rating: 5 stars
+Staffs are friendly efficient when request for appointment can get one quick too no long waiting list, my Dr Izotova she is just one best Dr you can wish for she listens to you follows up what you need it done or do have every confidence to consul with her. Excellent team at Astley Surgery
+
+Author: Jennifer Hindle
+Date: Edited 7 months ago
+Rating: 5 stars
+Jennifer Hindle15 reviewsEdited 7 months ago
+
+Author: Tia Staddon
+Date: Edited 7 months ago
+Rating: 5 stars
+Always willing to help and polite
+
+Author: Sunjay Patel
+Date: 7 months ago
+Rating: 5 stars
+40yrs old here, moved to Leigh just a few years ago, and this is the best GP I've experienced over the years. Very rarely busy, I get appointments quickly and always seen on time. The staff are friendly, and the doctors don't just dismiss what you might want to check. The nurse is the ONLY nurse that has been able to get bloods from me easily, without having to poke a needle in me three or four times in different places. First time for her. I've approached an age when I'm having to go see my GP more often, and these guys have made it easy to book in and be treated. Great team!
+
+Author: Tuan Truong
+Date: 7 months ago
+Rating: 5 stars
+Tuan Truong1 review7 months ago
+
+Author: Mike Gilligan
+Date: 7 months ago
+Rating: 5 stars
+Always helpful team. Very supportive medical team
+
+Author: Alan Urmston
+Date: Edited 7 months ago
+Rating: 5 stars
+Thank you for helping me keeping an eye out for my treatment and health.
+Practice response date: a year ago
+Practice response:
+Hi Alan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Hugh Williams
+Date: Edited 8 months ago
+Rating: 5 stars
+Hugh Williams1 reviewEdited 8 months ago
+
+Author: James Mccolgan
+Date: Edited 8 months ago
+Rating: 5 stars
+Always great. The girls on the desk/telephone. Very efficient and on the ball. Doctors are great. Can't complain
+Practice response date: 3 years ago
+Practice response:
+Hi James, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Doris Chan
+Date: Edited 8 months ago
+Rating: 5 stars
+Doris Chan3 reviewsEdited 8 months ago
+
+Author: Ken Lo
+Date: 8 months ago
+Rating: 5 stars
+Nice and good service.
+
+Author: Michael Bowen
+Date: Edited 8 months ago
+Rating: 5 stars
+Very thorough. Always keen to assist, and good at passing on advice. Always fairly easy to get an appointment.
+Practice response date: 2 years ago
+Practice response:
+Hi Michael, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Jason Marston
+Date: 9 months ago
+Rating: 5 stars
+Jason Marston3 reviews9 months ago
+
+Author: Joanne Nevin
+Date: Edited 9 months ago
+Rating: 5 stars
+Excellent practice,would thoroughly recommend. All the receptionists are so helpful and caring. Cannot praise Dr. Izatova/ Dr Hussein enough. Thorough,professional and quick response with results,referrals and reassurance. Thank you
+Practice response date: a year ago
+Practice response:
+Hi Joanne, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Lisa Burley
+Date: 9 months ago
+Rating: 5 stars
+Lisa Burley9 months ago
+
+Author: binsi abraham
+Date: Edited 9 months ago
+Rating: 5 stars
+Always helpful and staffs are friendly
+Practice response date: 3 years ago
+Practice response:
+Hi Binsi, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Janice Cunliffe
+Date: 9 months ago
+Rating: 5 stars
+Excellent service
+
+Author: Mark Jones
+Date: Edited 9 months ago
+Rating: 5 stars
+Good friendly polite staff excellent doctors,clean warm and calm waiting room
+
+Author: barbara cartwright
+Date: a year ago
+Rating: 5 stars
+Great practice
+Practice response date: 11 months ago
+Practice response:
+Hi Barbara, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Suzie Bullock
+Date: a year ago
+Rating: 5 stars
+Suzie Bullock3 reviewsa year ago
+
+Author: Jim Roscoe
+Date: Edited a year ago
+Rating: 5 stars
+I am very pleased with the help I get at this GP practice , the staff are friendly and helpful and the GP I see ,( Dr Izotova ) , is very helpful and thorough, the Nurses I have seen have been excellent too, highly recommended.
+Practice response date: 3 years ago
+Practice response:
+Hi Jim, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Keith Jones
+Date: a year ago
+Rating: 5 stars
+Keith Jones2 reviewsa year ago
+
+Author: john cross
+Date: a year ago
+Rating: 5 stars
+First class
+
+Author: Shilpa Sapatnekar
+Date: a year ago
+Rating: 5 stars
+Best practice..they listen and understand the urgency of the matter. Very well trained and polite staff, they know what to do. Christie Sarah Kelly Claire and all Drs, thanks for your continued support
+Practice response date: 11 months ago
+Practice response:
+Hi Shilpa, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Lynda Clarke
+Date: a year ago
+Rating: 5 stars
+Excellent reception staff and Doctors.
+Practice response date: a year ago
+Practice response:
+Hi Lynda, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Gary Jones
+Date: Edited a year ago
+Rating: 5 stars
+Gary JonesLocal Guide · 48 reviews · 14 photosEdited a year ago
+
+Author: Tony Carter
+Date: a year ago
+Rating: 5 stars
+The nurse who gave my daughter her immunisations was superb, not only with my infant daughter but the better half. Professional yet kind I can't thank her enough.
+Practice response date: a year ago
+Practice response:
+Hi Tony, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Margaret Middlehurst
+Date: Edited a year ago
+Rating: 5 stars
+My husband and I had flu jabs very efficient and friendly 😊 …
+Practice response date: 3 years ago
+Practice response:
+Hi Margaret, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Kevin Miles
+Date: Edited a year ago
+Rating: 5 stars
+Polite and friendly staff, delt promptly and efficiently with my flu vaccination,
+Practice response date: 3 years ago
+Practice response:
+Hi Kevin, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: nilmini sella hennedige
+Date: a year ago
+Rating: 5 stars
+nilmini sella hennedigea year ago
+
+Author: Anthony Manniex
+Date: Edited a year ago
+Rating: 5 stars
+Always receive a prompt and positive reply, the receptionist is always polite and friendly, the G.Ps always strive to give the best available treatment.
+Practice response date: 3 years ago
+Practice response:
+Hi Anthony, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Martin
+Date: a year ago
+Rating: 5 stars
+Reception staff, GPs, and other health practitioners are always very welcoming, knowledgeable and helpful, as are the pharmacy staff next door. I'm lucky to be registered with this practice.
+Practice response date: a year ago
+Practice response:
+Hi Martin, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Karl Wright
+Date: a year ago
+Rating: 5 stars
+Karl WrightLocal Guide · 16 reviews · 53 photosa year ago
+
+Author: Denise Patterson
+Date: Edited a year ago
+Rating: 5 stars
+Great service overall . Reception Staff are very helpful
+Practice response date: a year ago
+Practice response:
+Hi Nicky, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the practice nurse!
+
+Author: Paul Scutt
+Date: a year ago
+Rating: 5 stars
+Paul Scutt1 reviewa year ago
+
+Author: Elizabeth Gunn
+Date: a year ago
+Rating: 1 star
+Awful service.
+Practice response date: 11 months ago
+Practice response:
+Hi Elizabeth Many thanks for your feedback. We are sorry that your recent experience has not been a positive one. Please can you contact the surgery on 01942 557746 and ask to speak with the Practice Manager providing your full details so we can investigate this matter for you. Thank you
+
+Author: Iain Crowder
+Date: a year ago
+Rating: 5 stars
+Great Dr’s and wonderful staff always first class when I need to use the surgery!
+Practice response date: 11 months ago
+Practice response:
+Hi Iain, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Paul Waite
+Date: a year ago
+Rating: 5 stars
+Paul Waitea year ago
+
+Author: Chenai T
+Date: a year ago
+Rating: 5 stars
+I appreciate the service offered at the practice . It is efficient, friendly and person centred
+Practice response date: a year ago
+Practice response:
+Hi Chenai, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Gareth Forsythe
+Date: a year ago
+Rating: 4 stars
+Gareth ForsytheLocal Guide · 3 reviewsa year ago
+
+Author: Anand Selhi
+Date: a year ago
+Rating: 5 stars
+Always great care from all staff
+Practice response date: a year ago
+Practice response:
+Hi Anand, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: mark whittaker
+Date: a year ago
+Rating: 5 stars
+Never had an issue seeing a dr when urgent, staff always polite and accomadating
+Practice response date: a year ago
+Practice response:
+Hi Mark, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Clifford Graham
+Date: Edited a year ago
+Rating: 5 stars
+Clifford Graham2 reviewsEdited a year ago
+
+Author: Keith Revill
+Date: Edited a year ago
+Rating: 5 stars
+Keith Revill1 reviewEdited a year ago
+
+Author: Dianne Kelly
+Date: Edited a year ago
+Rating: 5 stars
+As always a wonderful welcoming service. Staff go the extra mile. Wonderful surgery strongly recommended.
+Practice response date: 2 years ago
+Practice response:
+Hi Dianne. Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: John david Martin
+Date: a year ago
+Rating: 5 stars
+Always a great service would highly recommend
+Practice response date: a year ago
+Practice response:
+Hi John, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Margaret Bell
+Date: Edited a year ago
+Rating: 5 stars
+Margaret BellLocal Guide · 22 reviewsEdited a year ago
+
+Author: Cindy Davies
+Date: a year ago
+Rating: 5 stars
+Cindy Daviesa year ago
+
+Author: Ray Wall
+Date: a year ago
+Rating: 5 stars
+Receptionists are always friendly when you arrive and are helpful. Doctors are generally on time and they make you feel calm. They explain everything in detail to ensure that you understand.
+Practice response date: a year ago
+Practice response:
+Hi Ray, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Peter Cahill
+Date: a year ago
+Rating: 5 stars
+Peter Cahilla year ago
+
+Author: Emma Smith
+Date: a year ago
+Rating: 5 stars
+I’ve been a patient with this practice for nearly 20 years and they are a great GP practice. Receptionists are fantastic and helpful, Doctors are open and respectful. I can 100% say that I would happily recommend this GP to friends and family.
+Practice response date: a year ago
+Practice response:
+Hi Emma, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Zareena
+Date: a year ago
+Rating: 5 stars
+We've always had a pleasant experience here and we've never had a negative experience in the 6 years since we moved. The staff are brilliant and both Dr Hussain and Dr Izotova are amazing. They really listen to you without rushing you, they're both so lovely! The nurse is also wonderful (Mrs J Raftry) she's so good with children too.
+Practice response date: a year ago
+Practice response:
+Hi Zareena, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Orysia Fletcher
+Date: a year ago
+Rating: 5 stars
+Easily made appointment, and my problem was quickly sorted.
+Practice response date: a year ago
+Practice response:
+Hi Orysia, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: jason bridson
+Date: a year ago
+Rating: 1 star
+Never listen to patients I have called in person, telephoned them, as a HGV driver I have to stop to answer the phone this can cause me a problem and no matter how much I tell them they still send me stupid patient questionnaires should I …
+
+Author: Ian Sephton
+Date: Edited a year ago
+Rating: 5 stars
+Excellent service from the Practice Nurse on my annual check up. Very friendly, professional and informative.
+Practice response date: 3 years ago
+Practice response:
+Hi Mr Sephton, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the the Practice Nurse!
+
+Author: John-Paul Etchells
+Date: a year ago
+Rating: 5 stars
+Lucky to have this practice. 95% of the time I can get an appointment on the day.
+Practice response date: a year ago
+Practice response:
+Hi John-Paul, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Fia Younis
+Date: a year ago
+Rating: 5 stars
+It’s always easy to get an appointment and the staff is really helpful.
+Practice response date: a year ago
+Practice response:
+Hi, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Kelly Bland
+Date: a year ago
+Rating: 5 stars
+I've been at the surgery around 13 years and can not rate them more highly. The receptionists are always really friendly and helpful in getting me the right support for myself and my family. They always strive to give me an appointment and are very accommodating. The doctors themselves have been amazing for both myself and my daughters health needs and referrals have always been done quickly :)
+Practice response date: a year ago
+Practice response:
+Hi Kelly, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Patricia Hampson
+Date: Edited a year ago
+Rating: 5 stars
+Friendly service and I was seen on time, no complaints.
+Practice response date: a year ago
+Practice response:
+Hi Patricia, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Peter Stott
+Date: a year ago
+Rating: 5 stars
+Peter Stott2 photosa year ago
+
+Author: Tim Shaw
+Date: Edited a year ago
+Rating: 5 stars
+Tim ShawEdited a year ago
+
+Author: Julie Austin
+Date: a year ago
+Rating: 5 stars
+Julie Austin2 reviewsa year ago
+
+Author: Amber Jones
+Date: a year ago
+Rating: 5 stars
+Amber Jones1 review · 2 photosa year ago
+
+Author: Stephen Hardie
+Date: a year ago
+Rating: 5 stars
+Helpful and friendly
+Practice response date: a year ago
+Practice response:
+Hi Stephen, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Celina Fahey
+Date: Edited a year ago
+Rating: 5 stars
+I have been more then happy with the NHS service from Astley General Practice , alway got an appointment when needed and find the receptionist staff very helpful .
+Practice response date: a year ago
+Practice response:
+Hi Celina, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Denise Simm
+Date: a year ago
+Rating: 5 stars
+Very friendly and helpful receptionists. Doctor's visits always positive and never left feeling that I'd not been listened to
+Practice response date: a year ago
+Practice response:
+Hi Denise Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Carole Williamson
+Date: Edited a year ago
+Rating: 5 stars
+The staff and doctors are brilliant. Have no complaints whatsoever
+Practice response date: 3 years ago
+Practice response:
+Hi Carole, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Debra Lee
+Date: a year ago
+Rating: 5 stars
+Excellent service
+Practice response date: a year ago
+Practice response:
+Hi Debra, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Teigan Winstanley
+Date: 2 years ago
+Rating: 4 stars
+Been with these for my whole life great doctors, nurses and nice receptionist had to have my injections here and I was terrified by the nurse reassured me that everything will be okay and even found distraction e.g. says I will put my hand on Ur shoulder and instead do the injection . I couldnt reccomend doctor Hussein more I went to see him the first time with extreme period pain and depression and it got sorted he has a lovely manner and makes u feel at ease thanks for everything u all do 🤗
+Practice response date: 2 years ago
+Practice response:
+Hi Teigan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Jackie Flanagan
+Date: 2 years ago
+Rating: 5 stars
+I’m pleased with Astley general practice Can always get an appointment and the staff are lovely Dr Isotova is thorough
+Practice response date: 2 years ago
+Practice response:
+Hi Jackie, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Sandra Flaherty
+Date: Edited 2 years ago
+Rating: 5 stars
+The surgery provides a consistently high standard of care and all the staff are professional, reliable and always go the extra mile which is really appreciated. Thank you
+Practice response date: 3 years ago
+Practice response:
+Hi Sandra, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Jessica H
+Date: 2 years ago
+Rating: 5 stars
+Great practice, staff are very friendly and polite
+Practice response date: 2 years ago
+Practice response:
+Hi Jessica, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Susan Winstanley
+Date: 2 years ago
+Rating: 5 stars
+Very good well run practice .The reception staff are polite and helpful .The GPs are efficient and will advise you in a friendly manner .
+Practice response date: 2 years ago
+Practice response:
+Hi Susan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Catherine Gaskell
+Date: 2 years ago
+Rating: 5 stars
+I was very sceptical at changing from my childhood GP, ASD means I struggle with change. But my hand was forced by the previous GP. I am so glad now, the reception staff are friendly and accommodating, I have not had to wait for a GP …
+Practice response date: 2 years ago
+Practice response:
+I was very sceptical at changing from my childhood GP, ASD means I struggle with change. But my hand was forced by the previous GP. I am so glad now, the reception staff are friendly and accommodating, I have not had to wait for a GP … More
+
+Author: Christine Elding
+Date: Edited 2 years ago
+Rating: 5 stars
+In my opinion this is the best practice in my area. Lovely staff and doctors. The standard of service and care are second to none.
+Practice response date: 3 years ago
+Practice response:
+Hi Christine, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Carolyn McNally
+Date: 2 years ago
+Rating: 5 stars
+Excellent. All staff are very helpful and obliging. Thank you.
+Practice response date: 2 years ago
+Practice response:
+Hi Carolyn, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: susan perkin
+Date: Edited 2 years ago
+Rating: 5 stars
+Always very helpful
+Practice response date: 3 years ago
+Practice response:
+Hi Susan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Paul Smith
+Date: 2 years ago
+Rating: 5 stars
+Great professional and friendly people
+Practice response date: 2 years ago
+Practice response:
+Hi Paul, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Sheila Margaret Robinson
+Date: 2 years ago
+Rating: 5 stars
+A great practice. All staff are very helpful.
+Practice response date: 2 years ago
+Practice response:
+Hi Sheila, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Brian Snape
+Date: Edited 2 years ago
+Rating: 5 stars
+I have never had to wait long for an appointment, Christine is very good with communication with patients and staff a full 5 Stars for this practice
+Practice response date: 2 years ago
+Practice response:
+Hi Brian, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Emma Wilcock
+Date: 2 years ago
+Rating: 5 stars
+Always go above and beyond and are very helpful.
+Practice response date: 2 years ago
+Practice response:
+Hi Emma, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Gerard Maloney
+Date: Edited 2 years ago
+Rating: 5 stars
+Brilliant staff in Astley
+Practice response date: 2 years ago
+Practice response:
+Hi Gerard, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Sue Stirzaker
+Date: 2 years ago
+Rating: 5 stars
+Excellent doctor’s surgery with lovely staff and efficient treatment.
+Practice response date: 2 years ago
+Practice response:
+Hi Sue, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: General Zod
+Date: 2 years ago
+Rating: 5 stars
+Best practice in for caring
+Practice response date: 2 years ago
+Practice response:
+Hi Dave, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Pat Greer
+Date: Edited 2 years ago
+Rating: 5 stars
+Aways well looked after by everyone at the surgery nothing to much trouble
+Practice response date: 2 years ago
+Practice response:
+Hi Pat. Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: John Sharples
+Date: 2 years ago
+Rating: 5 stars
+An excellent surgery that in my experience has never failed to provide a friendly and professional service.
+Practice response date: 2 years ago
+Practice response:
+Hi John, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Paul Seddon
+Date: 2 years ago
+Rating: 5 stars
+Always helpful, no problems booking appointments etc
+Practice response date: 2 years ago
+Practice response:
+Hi Paul, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Veronica Hartan
+Date: 2 years ago
+Rating: 5 stars
+Very happy with all the doctors and team. The doctors are very competent and empathic.
+Practice response date: 2 years ago
+Practice response:
+Hi Veronica, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Marie Pearson
+Date: 2 years ago
+Rating: 5 stars
+Marie Pearson3 reviews2 years ago
+
+Author: Susan Bellis
+Date: 2 years ago
+Rating: 5 stars
+Always very helpful.
+Practice response date: 2 years ago
+Practice response:
+Hi Susan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Adrienn Baranyai
+Date: 2 years ago
+Rating: 1 star
+I don't like going to an appointment and still waiting 30-45 minutes! the receptionist always has a condescending style! the doctor is not english and yet arrogant! I'm glad from the bottom of my heart that I won't go there again! And I don't have to accept this style from my tax payment!
+Practice response date: 2 years ago
+Practice response:
+Hi Adrienn Many thanks for your feedback. We are sorry that your recent experience has not been a positive one. Please can you contact the surgery on 01942 557746 and ask to speak with the Practice Manager providing your full details so we can investigate this matter for you. Thank you
+
+Author: Alicia Tan
+Date: 2 years ago
+Rating: 1 star
+Receptionist and nurse are good. Not impressed with GP though, very unprofessional and disrespectful
+Practice response date: 2 years ago
+Practice response:
+Hi Alicia Many thanks for your feedback. We are sorry to hear that you have not been impressed with the GP at the surgery. Please can you contact the surgery on 01942 557746 and ask to speak with the Practice Manager providing your full details so we can investigate this matter for you. Thank you
+
+Author: Brian Jones
+Date: Edited 2 years ago
+Rating: 5 stars
+Very good and friendly practice
+Practice response date: 3 years ago
+Practice response:
+Hi Mr Jones, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Tony Frost
+Date: 2 years ago
+Rating: 5 stars
+Excellent practice with helpful, efficient and friendly staff.
+Practice response date: 2 years ago
+Practice response:
+Hi Tony, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Craig Weir
+Date: 2 years ago
+Rating: 5 stars
+Great staff
+Practice response date: 2 years ago
+Practice response:
+Hi Craig, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Lindsey Clarke
+Date: 2 years ago
+Rating: 5 stars
+Excellent surgery. NHS app makes life very easy. Thank you
+Practice response date: 2 years ago
+Practice response:
+Hi Lindsay, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Christine Smith
+Date: 2 years ago
+Rating: 5 stars
+Great service as always, staff always go above and beyond to help.
+Practice response date: 2 years ago
+Practice response:
+Hi Christine, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Madge Smith
+Date: 2 years ago
+Rating: 5 stars
+The receptionist are pleasant, friendly and approachable. I have recently visited the Nurse who has early appointments for people who are working. She is very lovely, thorough and helpful. Dr Hussain who unfortunately works on a part time basis, has a wonderful manner, he is very thorough in his checks and gives the best advice. You always feel that he has done everything he can to ensure that you are in the best of health and doesn't hesitate to refer you to a specialist if he is unable to deal with the problem at hand.
+Practice response date: 2 years ago
+Practice response:
+Hi Madge, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Keith Hall
+Date: Edited 2 years ago
+Rating: 5 stars
+Excellent Communication all the staff very professional and helpful nothing is to much trouble
+Practice response date: 3 years ago
+Practice response:
+Hi Keith, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Evaneia Stradioto Diegoli
+Date: 2 years ago
+Rating: 5 stars
+Evaneia Stradioto Diegoli3 reviews · 2 photos2 years ago
+
+Author: Janet Cameron
+Date: 2 years ago
+Rating: 5 stars
+Excellent surgery, lovely reception staff & doctors. Got a quick appointment. Very Pleased with service.
+Practice response date: 2 years ago
+Practice response:
+Hi Janet, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Denise Bailey
+Date: Edited 3 years ago
+Rating: 5 stars
+Never had a problem getting an appointment . My GP always listens to me and discusses options available. Very pleased with the practice
+Practice response date: 3 years ago
+Practice response:
+Hi Denise, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Nairob Mateus
+Date: 3 years ago
+Rating: 5 stars
+Nairob MateusLocal Guide · 8 reviews · 4 photos3 years ago
+
+Author: karen binks
+Date: 3 years ago
+Rating: 5 stars
+Fabulous surgery so glad it's mine! Staff are really helpful. Just had a recent illness and was given very prompt service and information to assist in giving me reassurance. Thank you ladies.
+Practice response date: 3 years ago
+Practice response:
+Hi Karen, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Hilary Howarth
+Date: 3 years ago
+Rating: 5 stars
+Easiest, quickest and least stressful doctors appointment I’ve ever had. No long wait on the phone to make the appointment, arrived at the surgery and was in to see the doctor practically straight away. Friendly and courteous reception staff.
+Practice response date: 3 years ago
+Practice response:
+Hi Hilary, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Rebecca Hope
+Date: 3 years ago
+Rating: 5 stars
+Firstly, I want to say Dr Izotava has always been amazing with me. She always listens, doesn't rush me, and is willing to work with me regarding whatever ever issue Is being discussed. She is the only Dr that's ever treated me like a human …
+Practice response date: 3 years ago
+Practice response:
+Firstly, I want to say Dr Izotava has always been amazing with me. She always listens, doesn't rush me, and is willing to work with me regarding whatever ever issue Is being discussed. She is the only Dr that's ever treated me like a human … More
+
+Author: M60BQ/ now/2EOFMH David
+Date: Edited 3 years ago
+Rating: 5 stars
+I needed a rescue pack for COPD , the surgery staff were very helpful and got it sorted out within the same day, thank you very much appreciated.
+Practice response date: 3 years ago
+Practice response:
+Hi David, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: joanne smith
+Date: 3 years ago
+Rating: 5 stars
+Excellent service, quick appointment when needed.
+Practice response date: 2 years ago
+Practice response:
+Hi Joanne, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Andrea Bancroft
+Date: 3 years ago
+Rating: 5 stars
+I feel safe at Astley General Practice as they care and you can get an appointment and they are so helpful with queries.
+
+Author: corrie burgess
+Date: 3 years ago
+Rating: 5 stars
+corrie burgess3 years ago
+
+Author: Alan Tiffany
+Date: Edited 3 years ago
+Rating: 5 stars
+Always seen promptly. Reception staff are always friendly, efficient and helpful. A big plus is the app which is easy to use and gives me everything I need - appointments, prescriptions, medications and more. Thank you and keep up the good work :-)
+Practice response date: 3 years ago
+Practice response:
+Hi Alan, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: nora wolfenden
+Date: 3 years ago
+Rating: 5 stars
+nora wolfenden3 years ago
+
+Author: Chris Barker
+Date: 3 years ago
+Rating: 5 stars
+Suffer with heartburn for over a year. Doc proscribed Omeprazole. Not a single Rennie in 28 days very happy. Just called for a repeat and reception was very kind.
+
+Author: Debbie Mcmullen
+Date: 3 years ago
+Rating: 5 stars
+Very friendly helpfully staff. Prescription received in good time
+
+Author: Maureen Costello
+Date: 3 years ago
+Rating: 5 stars
+Maureen Costello3 years ago
+
+Author: Carol Mallinson
+Date: 3 years ago
+Rating: 5 stars
+Caring very helpful reception and medical staff
+Practice response date: 3 years ago
+Practice response:
+Hi Carol, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Karen Adamson
+Date: 3 years ago
+Rating: 1 star
+Not happy with the gp on my last visit didn’t seem interested
+Practice response date: 3 years ago
+Practice response:
+Hi Karen Many thanks for your feedback. We are sorry that your recent experience has not … More
+
+Author: Mark Crowley
+Date: 3 years ago
+Rating: 5 stars
+Hi Astley general practice, I would like to say what a tremendous service you provide, I have recently, been ill over two separate periods and received top quality treatment, thanks also to my GP. …
+Practice response date: 3 years ago
+Practice response:
+Hi Astley general practice, I would like to say what a tremendous service you provide, I have recently, been ill over two separate periods and received top quality treatment, thanks also to my GP. … More
+
+Author: Joyce Bruce
+Date: 3 years ago
+Rating: 5 stars
+Great service. Can always get an appointment when needed. Either telephone or face to face.....
+Practice response date: 3 years ago
+Practice response:
+Hi Joyce, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Gina Broadhurst
+Date: 3 years ago
+Rating: 5 stars
+Gina Broadhurst1 review3 years ago
+
+Author: Karen Barr
+Date: 3 years ago
+Rating: 5 stars
+Such a fast service very organised with very polite pleasant staff ,who do thier very best .
+Practice response date: 3 years ago
+Practice response:
+Hi Karen, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Barbara Holda
+Date: 3 years ago
+Rating: 5 stars
+Very good service, kind and helpful staff.
+Practice response date: 3 years ago
+Practice response:
+Hi Barbara, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Tracy Clough
+Date: 3 years ago
+Rating: 5 stars
+Tracy Clough1 review3 years ago
+
+Author: Karen Adamson
+Date: 3 years ago
+Rating: 1 star
+Not happy with the gp on my last visit didn’t seem interested
+Practice response date: 3 years ago
+Practice response:
+Hi Karen Many thanks for your feedback. We are sorry that your recent experience has not been a positive one. Please can you contact the surgery on 01942 807790 and ask to speak with the Practice Manager providing your full details so we can investigate this matter for you. Thank you
+
+Author: Mark Crowley
+Date: 3 years ago
+Rating: 5 stars
+Hi Astley general practice, I would like to say what a tremendous service you provide, I have recently, been ill over two separate periods and received top quality treatment, thanks also to my GP. Regards Mark
+Practice response date: 3 years ago
+Practice response:
+Hi Mark, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Kenneth Clarke
+Date: 3 years ago
+Rating: 5 stars
+Kenneth Clarke6 reviews3 years ago
+
+Author: michelle green
+Date: 3 years ago
+Rating: 5 stars
+No bad things to say about this practice very good doctor and the receptionist are always happy to help best they can
+Practice response date: 3 years ago
+Practice response:
+Hi Michelle, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Stephen Mills
+Date: 3 years ago
+Rating: 5 stars
+Very good.
+Practice response date: 3 years ago
+Practice response:
+Hi Stephen, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: andrew PARTINGTON
+Date: 3 years ago
+Rating: 5 stars
+Best practice around always get an appointment when needed and staff can’t help enough
+Practice response date: 3 years ago
+Practice response:
+Hi Andrew, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Svetoslava Doncheva
+Date: 3 years ago
+Rating: 5 stars
+Svetoslava Doncheva4 reviews3 years ago
+
+Author: Nicola Hughes
+Date: 3 years ago
+Rating: 5 stars
+Nicola Hughes1 review3 years ago
+
+Author: Dave Parkinson
+Date: 3 years ago
+Rating: 3 stars
+Staff are friendly, you can get in reasonably quickly however doctors seem to want you out quickly and I have multiple problems. I don't justvwant to talk about one thing and I feel its a waste of my time and the doctors time if i have to book multiple 10 minute appointments. Instead of one appointment thar would deal with all my concernes
+Practice response date: 3 years ago
+Practice response:
+Hi Dave, Thank you so much for taking the time to leave this review! If you need to discuss more than one issue with the GP then please request a double appointment so that you know that you will have enough time to discuss all your concerns. Thank you
+
+Author: Lynn Hunt
+Date: 3 years ago
+Rating: 5 stars
+Been a patient here for years and never had a reason to complain, great Practice
+Practice response date: 3 years ago
+Practice response:
+Hi Lynn, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Vera D'Amore
+Date: 3 years ago
+Rating: 5 stars
+Vera D'Amore3 reviews3 years ago
+
+Author: chris wallace
+Date: 3 years ago
+Rating: 5 stars
+Excellent service from Reception staff and the care received from Dr Isotova
+Practice response date: 3 years ago
+Practice response:
+Hi Chris, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Dilys Lee
+Date: Edited 3 years ago
+Rating: 5 stars
+The nurse is very kind and helpful.
+Practice response date: 3 years ago
+Practice response:
+Hi, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Lee Tierney
+Date: 3 years ago
+Rating: 5 stars
+Excellent first rate service 👏 …
+Practice response date: 3 years ago
+Practice response:
+Hi Lee, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: W4yn3 G4m3r
+Date: 3 years ago
+Rating: 5 stars
+W4yn3 G4m3r1 review · 1 photo3 years ago
+
+Author: Maria Emprese
+Date: Edited 3 years ago
+Rating: 5 stars
+Maria EmpreseEdited 3 years ago
+
+Author: Philip Smallman
+Date: 3 years ago
+Rating: 5 stars
+Been with this practice since I was 6 years old now 48 and I could never amagin my myself at another practice thy are kind they listen well done 👍👍👍👍 …
+Practice response date: 3 years ago
+Practice response:
+Hi Philip, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Jean Hebden
+Date: 3 years ago
+Rating: 5 stars
+I went for my flu vaccination and was seen on time, efficiently by a very pleasant practice nurse.
+Practice response date: 3 years ago
+Practice response:
+Hi Jean, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Philomena Doherty
+Date: 3 years ago
+Rating: 5 stars
+Excellent service
+Practice response date: 3 years ago
+Practice response:
+Hi Philomena, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Linda Howarth-Kirke
+Date: 3 years ago
+Rating: 5 stars
+Quick and friendly for my flu jab
+Practice response date: 3 years ago
+Practice response:
+Hi Linda, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: s
+Date: 3 years ago
+Rating: 5 stars
+sLocal Guide · 99 reviews · 295 photos3 years ago
+
+Author: Ken Davies
+Date: 3 years ago
+Rating: 5 stars
+Great service very professional great staff
+Practice response date: 3 years ago
+Practice response:
+Hi Ken, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Angela Raynor
+Date: 3 years ago
+Rating: 5 stars
+Had an appointment with the Nurse at 7am as she kindly came in early to vaccinate me - what excellent service
+Practice response date: 3 years ago
+Practice response:
+Hi Thomas, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Louise McCann
+Date: 3 years ago
+Rating: 5 stars
+Louise McCann3 years ago
+
+Author: Josephine Lindop
+Date: 3 years ago
+Rating: 4 stars
+Lisa and staff are amazing. Janet makes you feel at ease . Thank you to all staff. Josie.
+Practice response date: 3 years ago
+Practice response:
+Hi Josephine, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the all of the practice staff!
+
+Author: Paul Sherratt
+Date: 3 years ago
+Rating: 4 stars
+Paul Sherratt3 years ago
+
+Author: ladypeez
+Date: 3 years ago
+Rating: 5 stars
+Great service and always helpful..
+Practice response date: 3 years ago
+Practice response:
+Hi, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Lisa Smallman
+Date: 4 years ago
+Rating: 5 stars
+Lisa Smallman4 years ago
+
+Author: Karen Stainton
+Date: 4 years ago
+Rating: 5 stars
+Karen StaintonLocal Guide · 14 reviews4 years ago
+
+Author: Tony Doherty
+Date: 4 years ago
+Rating: 5 stars
+Tony Doherty4 years ago
+
+Author: Tracey Hill
+Date: 4 years ago
+Rating: 5 stars
+Tracey HillLocal Guide · 12 reviews · 1 photo4 years ago
+
+Author: Ian Cartwright
+Date: 4 years ago
+Rating: 5 stars
+Ian Cartwright4 reviews · 2 photos4 years ago
+
+Author: Lisa Hart
+Date: 4 years ago
+Rating: 5 stars
+Took my little boy for an appointment with the practice nurse. She was very patient with him and we were in & out with minimal tears on his part. Very friendly & professional. Thank you 😊 …
+Practice response date: 3 years ago
+Practice response:
+Hi Lisa, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Sarah Lord
+Date: 4 years ago
+Rating: 5 stars
+I was put at ease by the nurse and was seen on time
+Practice response date: 3 years ago
+Practice response:
+Hi Sarah, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Jordan Yau
+Date: 4 years ago
+Rating: 5 stars
+Jordan Yau8 reviews4 years ago
+
+Author: Alison Beaney
+Date: 4 years ago
+Rating: 5 stars
+Alison Beaney1 review4 years ago
+
+Author: Gail Thomas
+Date: 4 years ago
+Rating: 5 stars
+Gail Thomas4 years ago
+
+Author: T CAYTON
+Date: 4 years ago
+Rating: 5 stars
+Having just moved to the area i registered with the Astley General Practice. I was seen by the nurse practitioner who was very friendly and knowledgeable about my medical history. I was made to feel very welcome and was pleased with the service i received.
+Practice response date: 3 years ago
+Practice response:
+Hi, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Carol Ashton
+Date: 4 years ago
+Rating: 5 stars
+Carol Ashton4 years ago
+
+Author: Angela McKavanagh
+Date: 4 years ago
+Rating: 5 stars
+Angela McKavanagh4 years ago
+
+Author: Alan “Bigals” Higson
+Date: 4 years ago
+Rating: 5 stars
+Alan “Bigals” HigsonLocal Guide · 69 reviews · 38 photos4 years ago
+
+Author: Iain Shaw
+Date: 6 years ago
+Rating: 5 stars
+Great staff, always helpful over the phone. Doctor’s and nurses I have seen for myself and little boy have been brilliant too.
+Practice response date: 3 years ago
+Practice response:
+Hi Iain, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!
+
+Author: Zareena Rahman
+Date: 6 years ago
+Rating: 5 stars
+Wonderful staff and the doctors are both brilliant!
+Practice response date: 3 years ago
+Practice response:
+Hi Zareena, Thank you so much for taking the time to leave this review! I will be sure to pass your kind words on to the rest of the practice staff!

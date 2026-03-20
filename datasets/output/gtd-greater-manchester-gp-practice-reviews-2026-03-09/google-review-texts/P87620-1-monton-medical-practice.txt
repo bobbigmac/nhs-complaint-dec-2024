@@ -3,59 +3,1615 @@ Canonical code: P87620
 Postcode: M30 8AR
 Google Maps title: Monton Medical Centre
 Google rating: 3.6
-Google review count: 300
-Google Maps URL: https://www.google.com/maps/place/Monton+Medical+Centre/@53.4918416,-2.3617292,17z/data=!3m1!5s0x487baed9f815cc63:0xba7a03f8eaa690aa!4m12!1m2!2m1!1sMonton+Medical+Practice+M30+8AR!3m8!1s0x487baeda032e79b1:0x55bd57fe03242aca!8m2!3d53.4918416!4d-2.3569656!9m1!1b1!15sCh9Nb250b24gTWVkaWNhbCBQcmFjdGljZSBNMzAgOEFSkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F1jkz4jm0v?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 307
+Google Maps URL: https://www.google.com/maps/place/Monton+Medical+Centre/@53.4918416,-2.3595459,17z/data=!3m1!5s0x487baed9f815cc63:0xba7a03f8eaa690aa!4m8!3m7!1s0x487baeda032e79b1:0x55bd57fe03242aca!8m2!3d53.4918416!4d-2.3569656!9m1!1b1!16s%2Fg%2F1jkz4jm0v?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 307
+Owner replies collected: 22
+Raw review responses captured: 31
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87620-1-monton-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Daniel Norris
+Date: a day ago
+Rating: 5 stars
+Great staff, wasn’t waiting to long, the ladies at reception went above and beyond getting me in for tests there and then instead of having to come back!
+
+Author: Catriona Jackson-Graham
+Date: 3 days ago
+Rating: 5 stars
+Dr Rhodes is an incredible doctor! He spoke to my daughter not me and explained everything beautifully!
+
+Author: Tracey Jones
+Date: 5 days ago
+Rating: 4 stars
+My son had a doctor’s appointment today and it went very well. The doctor was kind, patient, and made my son feel comfortable throughout the visit. They took the time to listen to our concerns and explained everything clearly. The staff were also friendly and helpful. Overall, it was a very positive experience and we felt well looked after.
+
+Author: christian broadie
+Date: 5 days ago
+Rating: 5 stars
+Can't do enough to help the staff are a lovely bunch x
+
+Author: sarah gunn
+Date: Edited 5 days ago
+Rating: 5 stars
+Lovely reception service from Vicky
+
+Author: Martin St Ruth
+Date: a week ago
+Rating: 5 stars
+Prompt, friendly, and efficient: as usual.
+
+Author: hannah campion
+Date: a week ago
+Rating: 5 stars
+Dr Rhodes is absolutely incredible at what he does. Only dr I trust with my daughters on going asthma issues!
+
+Author: Clare Dowd
+Date: a week ago
+Rating: 5 stars
+Since moving back to Eccles and joining this practice I’ve found all the staff and the practice to be very helpful and polite. My only problem is how far in advance you have to book an appointment to see a doctor, but this isn’t the practices fault, this is an over population problem and the book on that matter stops at the government level.
+
+Author: Victoria Davies
+Date: Edited a week ago
+Rating: 5 stars
+Every member of staff I have dealt with has been professional & courteous. I have a complex illness & they are very proactive with my treatment. Thank you to all at MMC.
 
 Author: Natalie Tidmas
-Date: 2 days ago
+Date: a week ago
 Rating: 5 stars
 Dr Rhodes was very attentive. He made eye contact and was very empathetic and listened.. rather than just tapping away not looking. He is a lovely doctor and actually cares
 
 Author: Ondrej O.
-Date: Edited 3 days ago
+Date: Edited a week ago
 Rating: 5 stars
 Gp - Sue was amazing and I have seen her first time and lady at the reception, she is blond, she is always absolute star. Dr Rhodes is always professional and more than helpful.
 
 Author: Lauren Kennedy
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
-Lauren Kennedy3 days ago New
+Lauren Kennedya week ago New
 
 Author: Andrew Mackey
-Date: Edited 3 days ago
+Date: Edited a week ago
 Rating: 5 stars
 Staff are amazing and generally really keen to be helpful.
 
 Author: lorraine burns
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
-lorraine burns3 days ago New
+lorraine burnsa week ago New
 
 Author: Dave Robinson
-Date: Edited 3 days ago
+Date: Edited a week ago
 Rating: 5 stars
 Professional and listening sorted out issue went above and beyond
 
 Author: Mark Bowie
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
-Mark Bowie3 days ago New
+Mark Bowiea week ago New
 
 Author: Karen Bradley
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 Very good , and helpful
 
 Author: Jimmi Harkishin
-Date: 3 days ago
-Rating: 5 stars
-Jimmi Harkishin1 review3 days ago New
-
-Author: Brian Bowes
 Date: a week ago
 Rating: 5 stars
-Brian Bowes1 reviewa week ago New
+Jimmi Harkishin1 reviewa week ago New
+
+Author: Steve Bethell
+Date: 2 weeks ago
+Rating: 5 stars
+Lovely doctor and everything sorted straight away, very happy.
+
+Author: Eileen Piscopo
+Date: Edited 2 weeks ago
+Rating: 5 stars
+Receptionist and doctor were very helpful to my needs
+
+Author: Brian Bowes
+Date: 2 weeks ago
+Rating: 5 stars
+Brian Bowes1 review2 weeks ago New
+
+Author: Kelly Garside
+Date: 3 weeks ago
+Rating: 5 stars
+Kelly Garside3 weeks ago New
+
+Author: Abby James
+Date: 3 weeks ago
+Rating: 5 stars
+Dr. Othick is an amazing doctor. I always feel safe and comfortable speaking with her. In the past with doctors at other clinics I’ve felt like I’ve not been heard, however, you can tell Dr. Othick really cares and listens, everything I’ve been to see her regarding has been taken seriously and I’ve received the best care. Thank you ☺️
+
+Author: Dan Fairhurst
+Date: a month ago
+Rating: 1 star
+Terrible practice avoid if possible.
+
+Author: Stuart Challinor
+Date: a month ago
+Rating: 5 stars
+Excellent. Electronic signing in not working but quickly booked in by friendly receptionist. Waiting room quiet but clean and comfortable. 15 minute wait for doctor (pleasing that he spends as much time as necessary with patients) but he …
+
+Author: PAUL RIDGE
+Date: Edited a month ago
+Rating: 5 stars
+Sister Hannah is very professional and has a great knowledge and understanding of my condition.Thankyou
+
+Author: Stacy Fox
+Date: Edited a month ago
+Rating: 5 stars
+Rang up dead on 8am ( with the help of alexa alarm) 15th in the queue 😳. Used the call back service (great addition to the practice) and got a call back a wee while later, had quick chat with the receptionist, who was amazing, got and appointment and was seen in the afternoon by Sue, who is a fab practitioner! Especially if you are a woman of a certain age and cracking up 😂😂
+
+Author: Dan
+Date: a month ago
+Rating: 1 star
+Wouldn’t give them any stars but it doesn’t let you do that. Team are arrogant and attitudes generally poor. Never any appointments and they fob you off to a&e when they should be treating you. No wonder the nhs is in crisis, this practice is part of what is causing it.
+
+Author: Susan Posada
+Date: a month ago
+Rating: 5 stars
+Dr Othick was very good. She listened, gave me time, wanted to know the wider picture and had suggestions to help. She sent the prescription through straight away and I felt like we have a plan of action. Thanks
+
+Author: Kathryn Stenstrom
+Date: 2 months ago
+Rating: 5 stars
+I had a telephone appointment with Dr Rhodes today and I must say it was great. I booked to have the call whilst on my lunch, so I didn’t have to take time off to go to the surgery. I would definitely do this again as Dr Rhodes rang on time and my consultation was over within 10 minutes and everything was discussed and next plan put in place.
+
+Author: Sonia Eaves
+Date: 2 months ago
+Rating: 5 stars
+Sonia Eaves1 review2 months ago
+
+Author: Helen Collantine
+Date: Edited 2 months ago
+Rating: 5 stars
+Had a telephone consultation with Dr Gilani. He decided I needed a home visit. Couldn't have asked for better treatment
+Practice response date: a year ago
+Practice response:
+Amazing to hear Helen, i will ensure this feedback is passed on to her. Thank you for your review and lovely words.
+
+Author: Paul Taylor
+Date: 3 months ago
+Rating: 5 stars
+Everyone is very helpful and friendly..
+
+Author: Piggy Adventure
+Date: 3 months ago
+Rating: 5 stars
+Positive experience with GP and bloods were done professionally with kindness!
+
+Author: David Blain
+Date: 3 months ago
+Rating: 5 stars
+Very nice and pleasant was very quick for blood
+
+Author: Diana Manock
+Date: Edited 3 months ago
+Rating: 5 stars
+I had a very good appointment with Brogan (Nurse) who took blood samples 9.10am today 12/12/25.
+
+Author: rachegill
+Date: Edited 3 months ago
+Rating: 5 stars
+Very happy with and grateful for the service from all at the practice. Daughter was seen on the same day that I called. Pleasant lady on the phone and GP very helpful
+
+Author: Audrey Owen
+Date: 3 months ago
+Rating: 5 stars
+Audrey Owen2 reviews3 months ago
+
+Author: Kelly Oldbury
+Date: Edited 3 months ago
+Rating: 5 stars
+Kelly OldburyEdited 3 months ago
+
+Author: Kevin Cumpsty
+Date: 3 months ago
+Rating: 4 stars
+Happy with Brogan taking our bloods today .. she was patient and gentle 👍 …
+
+Author: Helen Ruane
+Date: 3 months ago
+Rating: 1 star
+I put in a complaint about a GP at this practice at the end of September 2025. Never got an acknowledgement nor a response. Either the practice manager is too busy dealing with vast multitudes of complaints, or the practice has reverted to their inadequate measures performance levels that the CQC identified in 2022. Practice manager wasn't dealing with complaints then either. I tried to get an appointment to see a GP last week but was diagnosed by the receptionist and apparently didn't need an appointment. I ended up in A&E.
+
+Author: Anna Wieczorek
+Date: 3 months ago
+Rating: 1 star
+Worst surgery I have ever been registered at. Almost impossible to see a doctor as the lady on the phone always knows better how you feel. I have been having an awful persistent cough for over 3 weeks now and she told me that I just have to 'ride it'. How someone on the phone can basically diagnose you?! That's not the first situation where she declined me seeing a doctor and I had to go to A&E instead. Disgraceful.
+
+Author: J P Jackson
+Date: 3 months ago
+Rating: 5 stars
+Very satisfied with my recent consultations with Dr Kiran. She listened patiently to all my concerns and her responses were always warm and caring. I never felt rushed and her calm confidence is very reassuring for the patient
+
+Author: Paula Rooney
+Date: 4 months ago
+Rating: 5 stars
+Pleasant staff. Efficient appointment
+
+Author: Michelle Fishburn
+Date: Edited 4 months ago
+Rating: 5 stars
+I have been a patient of Monton medical centre for 47 years, and all my children have since birth, I can’t praise this surgery enough, Rebecca on reception is very helpful, drs gillani othic and Rhodes very nice and on the ball, nurse Katie is so lovely xx Susan Sharratt has helped me so much with my MH in the past 2/3 yrs an amazing caring lady I’m proud to say Monton medical is my practice and I wouldn’t change it for the world.
+
+Author: Miss Misty
+Date: 4 months ago
+Rating: 4 stars
+I registered here after being told it was a great practice. I am so glad I listened to all the recommended advice. Went and spoke with receptionist this morning and was bowled over by how friendly and helpful they were
+
+Author: Joanne James
+Date: 4 months ago
+Rating: 5 stars
+I came in today to see Susan Sharratt and what a lovely lady she is. She is patient and very easy to talk to. I have seen her a few times in the last 2 months with an issue which she has now got under control. I am extremely grateful for what she has done. Keep up the good work Susan you are certainly one in a million x
+
+Author: marcella hickson
+Date: 5 months ago
+Rating: 5 stars
+I have been seeing Dr Slater for the last 6 months. She is amazing and a credit to the surgery. Zoe, receptionist is wonderful. I would recommend this surgery highly. Thank you all !
+
+Author: Rexs Toys
+Date: 5 months ago
+Rating: 5 stars
+Girls on reception were fantastic today and really went out of their way to sort out the issues I had with my prescription.
+
+Author: Walter Macdonald
+Date: 5 months ago
+Rating: 5 stars
+After numerous test on my well being I had to attend the surgery today October 10th. This surgery has a self check in screen which takes less than a minute and gives you instructions which wait area to go to.Minutes passed when I was called in by Doc Rhodes and received his customer hand shake and polite questions on my well being and the family getting me to relax. I must of been with for over 10 to 15 minutes discussing my results and how I should proceed forward. He was very thorough having a few laughs now and then. I must say he was very sincere and compassionate explaining what he thought and if I agreed with what he was saying. I took on board what he was saying as he was correct about my condition. His manners are impeccable as always telling me if I need to talk his door is always open. I left feeling I know what I have to do thanks to him. Those 10 to 15 minutes made me feel like a great weight had been lifted of my shoulders and loading my mind with positivity. Thank you Dr Rhodes your a great man
+
+Author: Elizabeth Blair
+Date: 5 months ago
+Rating: 5 stars
+Elizabeth Blair1 review5 months ago
+
+Author: Jean-Philippe Barret
+Date: 5 months ago
+Rating: 5 stars
+Jean-Philippe Barret2 reviews · 9 photos5 months ago
+
+Author: Nifa Maryann
+Date: 5 months ago
+Rating: 5 stars
+Thank you Sister Sadia Emanuel for being kind and understanding and explaining the whole process as you did. I left feeling so much better than I came in . God bless you!
+
+Author: Kath Jones
+Date: 5 months ago
+Rating: 3 stars
+Kath Jones5 months ago
+
+Author: Emma Gray
+Date: 5 months ago
+Rating: 5 stars
+I’ve always had a great experience at Monton Medical. I’ve been seen by ANP Susan (Sue) three times and always found her friendly, knowledgable and reassuring. I’ve also had great experiences with the other nursing staff. Usually get seen quickly on pre-booked appointments as well!
+
+Author: Sharon Branagan's
+Date: 5 months ago
+Rating: 4 stars
+All good. Only went for flu jab Only negative is people had to remember themselves over two waiting rooms who was next in turn despite having a time
+
+Author: Carrie Mosley
+Date: 5 months ago
+Rating: 5 stars
+There is always a warm welcome at Monton Medical thank you all for that !
+
+Author: Angela Houghton
+Date: 5 months ago
+Rating: 5 stars
+good service was seen soon as I went in doctors and got a telephone appoinment straight away also
+
+Author: Emma Hesketh
+Date: 5 months ago
+Rating: 5 stars
+Dr Othick is an excellent doctor. She always listens and puts you at ease and never rushed. She is always willing to discuss and explore medical diagnosis and treatments with me, in a way that I feel included and understood.
+
+Author: Marie Kenny
+Date: 5 months ago
+Rating: 5 stars
+This afternoon I had an appointment with Dr Shehzadi Kiran. (regarding my Asthma & current problems) It was the first time I had met Dr Kiran. This Dr was pleasant, easy to talk to, She listened, was so easy to interact with. A professional, she explained my health concerns, Reassured me, offering continuous support should I need it. In all Dr Shehzadi Kiran was simply A breath of fresh air. Thank you Dr Kiran 😊 Marie Mrs Marie kenny
+
+Author: Daniel Bloor
+Date: Edited 5 months ago
+Rating: 5 stars
+Fantastic and friendly service from amazing staff member; Sr Hannah Sawczuk. Very personable and professional.
+
+Author: Adrian Sierra
+Date: Edited 6 months ago
+Rating: 5 stars
+Shocking service. Tore my tendon and wasted two weeks as misdiagnosed couldn't get a referral had to go private
+
+Author: Dawn Walker
+Date: 6 months ago
+Rating: 5 stars
+Dr Karim was very sympathetic and very knowledgeable about my difficulties. I came away feeling understood and with a robust treatment plan. She gave me information for day to day management when I requested it. Dr Karim is an asset to the practice.
+
+Author: Rina Bharath
+Date: Edited 6 months ago
+Rating: 5 stars
+The team at this surgery are proactive and supportive including my most recent interaction with Kate on reception sorting out three different queries for me in one call - NHS app issue and two medical referrals. SNP Sue Sharrat is amazing and extremely kind and supportive towards myself and the younger family members. Also, Nurse Katie in particular has helped me improve my overall health and reduce risks for genetic and hereditary conditions.
+Practice response date: a year ago
+Practice response:
+Amazing Rina thank you, we wish you well and we will pass this positivity back to the nurse :)
+
+Author: Ann Ayres
+Date: Edited 6 months ago
+Rating: 5 stars
+I saw Sue the Nurse Specialist last week and she sent through an urgent referral for an ultra sound and an appointment with the gynecologist at Salfotd Royal in less than a week. I found Sue to be very thorough, she explained things very clearly and I would like to thank her and the teams at Salford Royal for their quick response and support.
+
+Author: Julie Skeer
+Date: 6 months ago
+Rating: 5 stars
+Brilliant service very professional
+
+Author: Tracy Gallimore
+Date: 7 months ago
+Rating: 5 stars
+blood test with nurse Jackie . She is excellent, caring and professional. Made it nice and easy for me.
+
+Author: Margaret Wakefield
+Date: Edited 7 months ago
+Rating: 5 stars
+Had a appointment today to see Sister Susan Sharrett and can report that it was a very pleasant experience. For once I left the doctors feeling I had been listened to and all my concerns addressed by someone who actually seemed to care about my situation - something I have rarely experienced when I have seen a doctor. However, generally things seem to have improved a little at the surgery. Telephone waiting times are not quite as bad ( outside of peak times) and staff are much more pleasant than in the past.
+
+Author: Dale Sullivan
+Date: 8 months ago
+Rating: 5 stars
+Dr Rhodes was amazing, 2nd time here
+
+Author: Ahmed Mahmoud
+Date: 8 months ago
+Rating: 5 stars
+Good service from the receptionist
+
+Author: Caron Clarke
+Date: 8 months ago
+Rating: 5 stars
+Caron Clarke2 reviews8 months ago
+
+Author: Graeme Griffiths
+Date: 8 months ago
+Rating: 5 stars
+Excellent
+
+Author: Josephine Morton
+Date: 8 months ago
+Rating: 5 stars
+I think the team of Doctors are fantastic and i've always felt listened too. The nurses and reception staff are lovely even though it's obviously an incredibly busy surgery.
+
+Author: Ian Bolton
+Date: 8 months ago
+Rating: 5 stars
+vicky the receptionist at monton medical center was so helpful today.. brilliant thank you.
+
+Author: Moira Farrelly
+Date: 8 months ago
+Rating: 5 stars
+I’d just like to say what a fantastic service l received today at Monton Medical Centre. Vicky on reception went over and above to be helpful with a professional but really personable and friendly approach. The Doctor l saw was also extremely helpful. I felt heard and helped! Many thanks to both Moira Farrelly
+
+Author: Debra Grime
+Date: Edited 8 months ago
+Rating: 5 stars
+Vicky was welcoming and helpful,so nice to be met with a smile 😃 …
+
+Author: rachel keegan
+Date: 8 months ago
+Rating: 5 stars
+rachel keegan8 months ago
+
+Author: Dan Kelly
+Date: 8 months ago
+Rating: 5 stars
+came in today and was seen straight away as there had been a cancellation then booked in for physio in 2 days. Great service thank you
+
+Author: p_reddock@msn,com City4life
+Date: 8 months ago
+Rating: 5 stars
+A very happy young lady, polite and very helpful, so I am very happy to say I was very satisfied with the service.
+
+Author: Wirral Maid2Clean
+Date: 8 months ago
+Rating: 5 stars
+Great service from the lovely staff at Monton Medical Centre.
+
+Author: John whittall
+Date: 8 months ago
+Rating: 5 stars
+John whittall3 reviews8 months ago
+
+Author: John Sweeney
+Date: 8 months ago
+Rating: 5 stars
+Excellent service yet again, from all staff at the medical centre. The staff seem to be so happy compared to years ago.I don’t know how they have done it but everyone seems to have a smile for you. Well done all at Monton Medical Centre thanks for caring, when you’re poorly a smile sometimes goes a long way in helping
+
+Author: Jonny Rudd
+Date: 9 months ago
+Rating: 5 stars
+Life savers. Thank you
+
+Author: Jeremy Shaw
+Date: 9 months ago
+Rating: 5 stars
+Dr Othick is an excellent doctor. She listens with care and patience. She provides sound advice and actions anything she agrees to do very efficiently. I found her to be very reassuring and supportive.
+
+Author: Chris Reilly
+Date: 9 months ago
+Rating: 5 stars
+I was seen promptly by Dr Rhodes and he was helpful and heis writing to ENT to speed up my appointment
+
+Author: Usman
+Date: 9 months ago
+Rating: 5 stars
+Usman9 months ago
+
+Author: Julie Forrester
+Date: 9 months ago
+Rating: 5 stars
+Julie Forrester1 review9 months ago
+
+Author: Nick
+Date: 9 months ago
+Rating: 5 stars
+Dr Othick I have to say is Fantastic, I don’t feel there’s many like her . Completely listened to me and understood my concerns . We then came up with some solutions and are now putting them into practice. Thank you
+
+Author: Louise Adkin
+Date: 9 months ago
+Rating: 5 stars
+Louise Adkin4 reviews9 months ago
+
+Author: hamdi ons
+Date: Edited 9 months ago
+Rating: 5 stars
+hamdi ons1 reviewEdited 9 months ago
+
+Author: Peter Cork
+Date: 9 months ago
+Rating: 5 stars
+Just been in to see Dr Rose to discuss a number of topics. He was exceptional, each topic discussed and future approach agreed separately. He was very patient, attentive, professional and informative/supportive. Mind put at rest. Am very grateful, thank you Dr Rose
+
+Author: Eileen Foster
+Date: 10 months ago
+Rating: 5 stars
+Brilliant service, felt real relaxed and at ease with the doctor and staff.
+
+Author: Sandra Boe
+Date: 10 months ago
+Rating: 5 stars
+Dr Othick is a great GP very empathetic and attentive. Listens to what you are telling her.
+
+Author: Jennifer Black
+Date: 10 months ago
+Rating: 5 stars
+Mu doctor was amazing so welcoming understanding polite and professional. Xx
+
+Author: Liz Harris
+Date: 10 months ago
+Rating: 5 stars
+Liz Harris1 review10 months ago
+
+Author: Chennelle Harrop
+Date: Edited 11 months ago
+Rating: 5 stars
+Fantastic helped me and is looking into my illness
+
+Author: Anna Graham
+Date: 11 months ago
+Rating: 5 stars
+Dr Otthick is a credit to your practice. I never feel rushed and I always feel listened to. She is really easy to deal with.
+
+Author: Sarsoura Dark
+Date: 11 months ago
+Rating: 5 stars
+Pleasant & helpful
+
+Author: Leigh Walsh
+Date: 11 months ago
+Rating: 5 stars
+Can’t thank you enough for today. The change over the last few months has been very noticeable and it’s all positive. Keep doing what you’re doing, it’s working 👍🏻 …
+
+Author: Sam Hardman
+Date: 11 months ago
+Rating: 5 stars
+Sam Hardman11 months ago
+
+Author: Vivien Chappell
+Date: 11 months ago
+Rating: 5 stars
+Due to repeated failures to get through to your byzantine website I finally had to sit on the phone for 39 minutes. Your receptionist was delightful and very helpful, she made an excellent suggestion and resolved everything perfectly. I only wanted to cancel a face to face appointment, as I have shingles. This is why people cancel without notice not everyone has my patience or the time.
+
+Author: Laura S
+Date: 11 months ago
+Rating: 5 stars
+Very positive experience today. I was seen on time and care and advice exceeded expectations.
+
+Author: Cosmin Lungu
+Date: 11 months ago
+Rating: 5 stars
+Cosmin Lungu2 reviews11 months ago
+
+Author: aaron coffey
+Date: 11 months ago
+Rating: 5 stars
+Never had a problem with my doctors every member of staff from the reception staff to the doctors themselves always professional and to the highest standard 👏 …
+
+Author: sanjay mandla
+Date: 11 months ago
+Rating: 5 stars
+Dr Othick is a very understanding and knowledgeable doctor.
+
+Author: Jane Smyth
+Date: 11 months ago
+Rating: 1 star
+Such a shocking surgery. No care, just interested in fobbing patients off. Phone appointments hiding behind COVID which was 5 years ago!!!! If you are new to the area do not sign up for here. The place needs shutting down and everyone firing. I will be reporting them to the Care Quality Commission again of which they have failed multiple inspections before.
+Practice response date: 11 months ago
+Practice response:
+Hi Jane, we are sorry you feel that your experience has been negative. We do offer face to face appointments, sometimes when all face to face appointments have been taken our clinical team will contact our patients via telephone and if necessary invite them for a face to face consultation at the surgery. We try our best to accommodate patients via offering routine, same day emergency appointments and telephone consultations. If you would like to discuss this further please can you call us on 0161 789 0011 or email gmicb-sal.montonmc@nhs.net and we can investigate this for you. Kind Regards
+
+Author: Janice Cheshire
+Date: 11 months ago
+Rating: 5 stars
+I got a book on the day appointment and it was my first time of seeing Dr Othick. She was very professional and reassuring and has arranged further investigations and a referral for me. Thank you Dr Othick.
+
+Author: Graham Niven
+Date: a year ago
+Rating: 5 stars
+Really good. On time. Nice lady. Efficient blood test.
+
+Author: ken heale
+Date: a year ago
+Rating: 5 stars
+Pleasant welcome from reception, comfortable warm waiting room. Saw Doctor at appointed time and situation treated professionally. What’s not to like.
+
+Author: Laura Price
+Date: a year ago
+Rating: 5 stars
+I’ve been at this surgery all my life and never have any problems getting an appointment when I need one. Today I saw Dr Othick, she was lovely and very helpful.
+
+Author: Matt Tomlinson
+Date: a year ago
+Rating: 5 stars
+Matt Tomlinson1 reviewa year ago
+
+Author: chloe dannielle
+Date: a year ago
+Rating: 5 stars
+Nurse Katie was fantastic with our son when having his immunisations such a warm and caring nature and explained everything thoroughly
+
+Author: Joanne Gee
+Date: a year ago
+Rating: 5 stars
+Joanne Gee1 reviewa year ago
+
+Author: Vicky Cronin
+Date: a year ago
+Rating: 5 stars
+Lovely nurse and quickly seen
+
+Author: Jayne Wyche
+Date: a year ago
+Rating: 1 star
+Utter waste of time each time I visit.
+Practice response date: 11 months ago
+Practice response:
+Hi Jayne. We are sorry to hear you feel this way. We do try to offer the best possible healthcare to all of our patients. If this is something i can investigate for you and look to improve, please can you email your experience to gmicb-sal.montonmc@nhs.net and we can look into this. Thank you and have a nice day.
+
+Author: James Cocker
+Date: a year ago
+Rating: 5 stars
+James Cocker2 reviewsa year ago
+
+Author: MancBee
+Date: a year ago
+Rating: 5 stars
+Pleased helpful and understanding and put forward my request to Super Dr Rhodes
+
+Author: Stefan Martyniak
+Date: a year ago
+Rating: 5 stars
+Had a consultation with Hannah Sawczuk this morning, excellent service, thank you
+
+Author: John Smith
+Date: a year ago
+Rating: 4 stars
+John Smith1 review · 1 photoa year ago
+
+Author: Leoni Harrison
+Date: a year ago
+Rating: 5 stars
+Leoni Harrison3 reviewsa year ago
+
+Author: Julie Roberts
+Date: a year ago
+Rating: 5 stars
+Katie was very good and helpful didn't wait long to see her and she was pleasant as always
+
+Author: Saba Abu
+Date: a year ago
+Rating: 5 stars
+Saba Abu3 reviewsa year ago
+
+Author: Debbie Rowlands
+Date: a year ago
+Rating: 5 stars
+Debbie Rowlands5 reviews · 5 photosa year ago
+
+Author: Tracey Watson
+Date: a year ago
+Rating: 5 stars
+I saw Katie today, and to be honest I was not happy with a situation in relation to a referral (which to be very clear is beyond Katie's control), she listened and empathised with me and although she may not necessarily be able to solve the …
+
+Author: c e
+Date: a year ago
+Rating: 5 stars
+c ea year ago
+
+Author: Kenny Lingard
+Date: a year ago
+Rating: 5 stars
+Excellent advice as always ! Receptionist as willing to help and advise
+
+Author: June Fay
+Date: a year ago
+Rating: 5 stars
+June Fay1 reviewa year ago
+
+Author: Angela Carberry-Holt
+Date: a year ago
+Rating: 5 stars
+Angela Carberry-Holta year ago
+
+Author: Shax B
+Date: a year ago
+Rating: 5 stars
+Professional, caring & respectful ....thank you !
+
+Author: PETER SWEENEY
+Date: a year ago
+Rating: 5 stars
+Very helpful Lady on phone! Quick to answer for a Monday , very good around ❤️
+
+Author: kate
+Date: a year ago
+Rating: 5 stars
+kate3 reviewsa year ago
+
+Author: Gabriela Wojnowska
+Date: a year ago
+Rating: 5 stars
+Great and very helpful. Thank you.
+
+Author: John Hudson
+Date: a year ago
+Rating: 5 stars
+Timely friendly and helpful 10 out of 10
+
+Author: Graham Burrows
+Date: a year ago
+Rating: 5 stars
+Very pleased with the young ladies Attitude and attention to detail through out the consultation.
+
+Author: Gina Kaur
+Date: a year ago
+Rating: 5 stars
+Katie stephan is a wonderful nurse, so polite and professional always when i see her. Thank you
+
+Author: Georgia Robinson
+Date: a year ago
+Rating: 5 stars
+I found Kate to be really friendly. She was also very attentive and compassionate towards my circumstances; she listened and built me up which made me feel bright and positive. She told me what bloods I’m having and explained them to me …
+
+Author: Amazing_panda_gaming007
+Date: a year ago
+Rating: 5 stars
+Amazing_panda_gaming007a year ago
+
+Author: Michelle Gray
+Date: a year ago
+Rating: 5 stars
+Michelle GrayLocal Guide · 10 reviewsa year ago
+
+Author: John Piggott
+Date: a year ago
+Rating: 5 stars
+Dr Rhodes,caring and and condiserate as always when I go and see him
+
+Author: Adam Trawinski
+Date: a year ago
+Rating: 5 stars
+Very quick and easy, no que and Hannah was lovely!
+
+Author: ROBERT ROYLE
+Date: a year ago
+Rating: 5 stars
+The Receptionist was brilliant and very helpful 10/10 for customer satisfaction
+
+Author: Amanda Mason
+Date: a year ago
+Rating: 5 stars
+I always have no problems with my appointments. All of the nurses at Monton are friendly and professional at their jobs.
+
+Author: killer jonstar
+Date: a year ago
+Rating: 5 stars
+killer jonstara year ago
+
+Author: Judith Kenny
+Date: a year ago
+Rating: 5 stars
+Judith Kenny1 review · 14 photosa year ago
+
+Author: Mark Rowan
+Date: a year ago
+Rating: 4 stars
+Mark Rowan1 reviewa year ago
+
+Author: susan bond
+Date: a year ago
+Rating: 5 stars
+Excellent
+
+Author: Harriet Greenwood
+Date: a year ago
+Rating: 5 stars
+Katie has been excellent each time we’ve seen her with our newborn, couldn’t have felt more cared for or to be in safer hands
+
+Author: Darcie-Mae Morton
+Date: a year ago
+Rating: 5 stars
+Darcie-Mae Mortona year ago
+
+Author: Helen Matthews
+Date: a year ago
+Rating: 5 stars
+Helen Matthews1 review · 2 photosa year ago
+
+Author: Daniele fitzgerald
+Date: a year ago
+Rating: 5 stars
+The biggest thank you to Vicky, the receptionist, who has been the most enormous help to me in the past 6 months. I’ve had many issues with getting my medication with multiple GPs, and I was at my wit's end. Vicky guided me and went out of her way to help personally call people and speak to GPs at her surgery and where I was based in Stockport to get me a solution I so desperately needed. She always put a smile on my face when I was crying on the phone to her, and now thanks to her and Dr Rhodes, I have got a medical plan in place and I can finally sleep peacefully at night knowing I have the best support. I can’t thank her effort. She is an absolute angel sent from heaven; she deserves the world, and Monton is so lucky to have her!! I wish I could take her with me to my new GP practice. Thank you, thank you, thank you Vicky!
+
+Author: Andy Donegan
+Date: a year ago
+Rating: 5 stars
+Andy Donegan3 reviewsa year ago
+
+Author: Rob Clark
+Date: a year ago
+Rating: 5 stars
+Sister hannah was brilliant today always happy and cheerful
+
+Author: julian goodman
+Date: a year ago
+Rating: 5 stars
+Perfect. Seen on time. Very professional.
+
+Author: Phyllis Linney
+Date: a year ago
+Rating: 5 stars
+Sister Hannah was brilliant and really put me at ease
+
+Author: Ken Mechan
+Date: a year ago
+Rating: 5 stars
+A great surgery, extremely helpful and courteous, a special mention for Vicky on reception, she never seems to get flustered, even with difficult patients. Thanks Monton Medical Centre!
+
+Author: Emma Carpenter
+Date: a year ago
+Rating: 5 stars
+I've been at this surgery all my life, today I had an appointment to see Sister Susan Sharrett for an ongoing issue. I felt Sue listened, showed empathy and acknowledged my concerns. She was able to clearly explain my diagnosis, we discussed treatment options and decided on a treatment plan, I have never been allowed an opinion on a medical treatment plan before, this allowed me a degree of control over my own body. I left the surgery feeling positive and understood. I had a further interaction with Vicky on reception who was able to deal with my query quickly and efficiently.
+
+Author: obisesan adebola
+Date: a year ago
+Rating: 5 stars
+So friendly
+
+Author: stephen bentley
+Date: a year ago
+Rating: 5 stars
+Very friendly and helpful
+
+Author: Adam 'O
+Date: a year ago
+Rating: 5 stars
+Thank you Adam. :)
+Practice response date: a year ago
+Practice response:
+Thank you Adam. :)
+
+Author: Adele Nelson
+Date: a year ago
+Rating: 5 stars
+Nurse Katie Stephen’s is absolutely amazing. She genuinely cares about her patients. She goes beyond the call of duty to help me and everyone else. Today I feel happiest that nurse Katie has shown me guidance on my diabetes.
+Practice response date: a year ago
+Practice response:
+That's brilliant to hear Adele, i will make sure Katie hears about your positive feedback. We are always here for our patients. Have a lovely day and best wishes.
+
+Author: Rebecca Millea
+Date: a year ago
+Rating: 5 stars
+The nurse was lovley, and im extremely hard to get blood from, but she got it 2nd try,
+Practice response date: a year ago
+Practice response:
+Excellent Rebecca thank you. Hopefully first try next time :) . Thank you for the positive review and we hope you have a good week.
+
+Author: hannah mchale
+Date: a year ago
+Rating: 5 stars
+Such a lovely and kind doctor
+Practice response date: a year ago
+Practice response:
+Thank you Hannah, do you know which Dr? as we would love to pass this on to them. Thank you for your kind words.
+
+Author: Lily Doyle
+Date: a year ago
+Rating: 5 stars
+Amazing practice very helpful
+Practice response date: a year ago
+Practice response:
+Thank you Lily, Best wishes.
+
+Author: Shibi chacko
+Date: a year ago
+Rating: 5 stars
+Very nice
+Practice response date: a year ago
+Practice response:
+Thank You.
+
+Author: Janet Walsh
+Date: a year ago
+Rating: 5 stars
+The young lady at reception was so helpful, she took the time to explain things to me, so polite. I would give her 5 stars definitely.
+Practice response date: a year ago
+Practice response:
+Thank you Janet. Do you remember who it was as this feedback would be great to pass on to her, however we appreciate your positive review and we wish you well.
+
+Author: Anthony Power
+Date: a year ago
+Rating: 5 stars
+Has been a great help the last few weeks, arranging ultrasounds, getting results and getting fitted in for blood tests today. Great service 👏 …
+Practice response date: a year ago
+Practice response:
+Thank you very much Anthony, we wish to continue to provide an excellent service to our patients. Reading positive reviews like yours is nice to hear and to know we are doing things well. Thank you.
+
+Author: Chloe Fishburn
+Date: Edited a year ago
+Rating: 5 stars
+Thank you.
+Practice response date: a year ago
+Practice response:
+Thank you.
+
+Author: Maria Rowcroft
+Date: a year ago
+Rating: 5 stars
+Real improvement. Very happy with the service I received today.
+Practice response date: a year ago
+Practice response:
+Good to hear this Maria. We are always trying to improve our services by listening to patient feedback and implement positive changes. Thank you for your kind review. Best Wishes.
+
+Author: Shiraj Ali
+Date: a year ago
+Rating: 5 stars
+Very helpful
+Practice response date: a year ago
+Practice response:
+Thank you Shiraj. All the best.
+
+Author: jeffrey donnelly
+Date: a year ago
+Rating: 5 stars
+Thank you
+Practice response date: a year ago
+Practice response:
+Thank you
+
+Author: Debbie Smyth
+Date: a year ago
+Rating: 5 stars
+Sister Hannah was absolutely brilliant. She put my very nervous daughter at ease and made her feel like she was in safe hands. She withdrew blood from her so quickly and painlessly and it was all done in literally seconds. A*
+Practice response date: a year ago
+Practice response:
+Thank you Debbie, we will ensure we pass this feedback on to the nurse and we appreciate all the positive feedback. Kind Regards
+
+Author: Stevan Sumner
+Date: Edited a year ago
+Rating: 5 stars
+The doctor was very helpful and informed. Hopefully she understands my problem and explained to me the causes. l
+Practice response date: a year ago
+Practice response:
+Thank you Stevan we appreciate your kind words.
+
+Author: marie bravender
+Date: a year ago
+Rating: 5 stars
+Doctor sarah sharratt was excellent help me out alot and a great person and got appointment next day with her x
+Practice response date: a year ago
+Practice response:
+Thank you very much for your kind review, we will pass this on to her. Best wishes.
+
+Author: Suzanna Ryan
+Date: a year ago
+Rating: 5 stars
+Great service from Katie as usual
+Practice response date: a year ago
+Practice response:
+Thank you, we will pass this onto Katie
+
+Author: Alex
+Date: Edited a year ago
+Rating: 5 stars
+Calls not answered . Very rude receptionist . The worst GP practice I’ve encountered, such a shame as the people at the chemist next door are lovely and so are the doctors . Badly run …
+Practice response date: a year ago
+Practice response:
+Calls not answered . Very rude receptionist . The worst GP practice I’ve encountered, such a shame as the people at the chemist next door are lovely and so are the doctors . Badly run … More
+
+Author: RenataArunas.1 Valaitis
+Date: a year ago
+Rating: 1 star
+RenataArunas.1 Valaitisa year ago
+
+Author: Jen T
+Date: a year ago
+Rating: 5 stars
+I generally haven't needed to use the doctors very often over the last few years but this last week I haven't been very well. I called monton medical at 8am this morning to book an appointment. I was 9th in the queue but my call was …
+Practice response date: a year ago
+Practice response:
+I generally haven't needed to use the doctors very often over the last few years but this last week I haven't been very well. I called monton medical at 8am this morning to book an appointment. I was 9th in the queue but my call was … More
+
+Author: jamie kinnear
+Date: a year ago
+Rating: 1 star
+jamie kinnear1 reviewa year ago
+
+Author: Lynn Macdonald
+Date: a year ago
+Rating: 1 star
+Nothing positive to say. Systems fail miserably. Not set up with the interest of the patients in mind. Sat waiting for my first in line call to be answered for 10 minutes. Not the …
+
+Author: Lee Kenney
+Date: a year ago
+Rating: 1 star
+I just spent over 10 mins waiting to connect with reception .. spoke with a polite young lady who appeared to have the job of putting folks off trying to make an appointment .. my request following a text from the practise to get my blood pressure checked , was Go to the pharmacy , I said I wanted the nurse to do it as o wanted my flu jab done . Her response was we have appointment end Oct . I will take that .. Go to the Pharmacy .. no I want to nurse .. ok 6 Nov ! Leadership team you need to listen to this .. your staff need training .. I am a working person who does not have 10 mins to hang on the phone then have to negotiate for an appointment .. I first tried for an appointment back in June but due to work load I could not make the dates offered now from June I have Nov .. Confused customer
+
+Author: Kanwal Jamal
+Date: a year ago
+Rating: 1 star
+Very disappointed service take many time to give appointment no special care for kids
+
+Author: Stuart Rawlinson
+Date: a year ago
+Rating: 5 stars
+Been going to this dentist last 8 years always been treated so well and very professional highly recommended
+
+Author: Foggy Laner
+Date: a year ago
+Rating: 1 star
+Can’t comment on what it’s like now as we moved. But a few years back my 15 year old daughter got a letter regarding quitting smoking as it claimed she had been a smoker for several years. Really? Since she was 8? She’s never smoked. Around that time, I went into reception and was sat waiting for the doc. Two receptionists openly slagging off a senior member of staff in front of patients. I was once in with a locum doctor who after only five minutes cut me mid sentence and opened the door before thanking me for coming. Rushing me thru the system. Despite being told ten minutes was the appointment time and only going with one issue to discuss. Hope the place has improved!
+
+Author: Homes and Renovations
+Date: Edited a year ago
+Rating: 1 star
+Doesn’t even deserve one star!!! Absolutely shocking service! Over the 2 years 6 scan results were lost by Monton Medical for myself my partner and our baby. Urgent baby referrals never made on 3 separate occasions. Because of that baby wasnt seen for urgent condition for over 6 month! They lied and said they contacted us for appointments when they never did. The reception staff (especially Beverley who should not work in customer service!) are really rude and hang up on you frequently. Staff unprofessional telling my partner his blood test were really bad and he needed to see specialist urgently and then wouldn’t give him appointment for over a month he was stressing thinking of the worst turns out he had a little higher cholesterol and all that stress caused by receptionist was for nothing. Absolutely appalling! I think their system might be broken as most communication isn’t actually sent out. Please do yourself a favour and register somewhere else!
+
+Author: Joanna Wieczorek (JoAsia)
+Date: a year ago
+Rating: 3 stars
+Joanna Wieczorek (JoAsia)Local Guide · 40 reviews · 138 photosa year ago
+
+Author: Joe Hickey
+Date: a year ago
+Rating: 1 star
+Joe Hickey3 reviewsa year ago
+
+Author: Fran M.
+Date: a year ago
+Rating: 3 stars
+Fran M.Local Guide · 233 reviews · 50 photosa year ago
+
+Author: Natalie Hurst
+Date: 2 years ago
+Rating: 1 star
+So sad with service I have had. I really wanted to use them but now second time let down. First time misdiagnosed with something for 6 months. Second time unwell and given prescription when collecting next door told doctor needed to amend this and to come back. Waited nearly thirty minutes before being asked to go home and come back, while feeling poorly. Went home and waited 7 hours still nothing . Ended up having to call 111for advice.will be changing doctors and putting in complaint
+
+Author: Matt Walker
+Date: 2 years ago
+Rating: 1 star
+If you do manage to get through on the phone, you’ll either get fobbed off, offered an appointment in 2 months time, or told someone will ring you back (which never happens). If you go to reception directly it’s just as useless. Waste of time.
+
+Author: Zoe Parncutt
+Date: 2 years ago
+Rating: 1 star
+Absolutely disgusted! Sick note requested 8 days ago and now told I’ll have to wait 25th for a doctor to phone me- I’m not ill and the doctor knows why I’m requesting sick note! This practice has gone beyond backwards. It worked better with less admin. The manager is never there when requested he’s at another practice??? Extremely unhelpful admin! Only interested in what phone I have and what ethnicity I am???
+
+Author: Karen Evans
+Date: 2 years ago
+Rating: 1 star
+Can never get through on phone to make an appt. Rings for ages then cuts you off and rude staff when you do get through has been my experience over the years! Today I was 22nd in queue on calling at 8am. Bad service.
+
+Author: Mehdi Mad
+Date: 2 years ago
+Rating: 5 stars
+Mehdi MadLocal Guide · 116 reviews · 254 photos2 years ago
+
+Author: Katie
+Date: 2 years ago
+Rating: 5 stars
+I can’t fault Monton Medical Practice. Been fab looking after my son when he’s been unwell. Easy enough to contact on the website and on the phone, not had any issues getting appointments swiftly for him and doctors have always been lovely.
+
+Author: Ian
+Date: 2 years ago
+Rating: 1 star
+Ian2 years ago
+
+Author: Arooj Tariq
+Date: 2 years ago
+Rating: 1 star
+Not happy with service I was very sick doctor ask me for urine samples I give them and still they didn’t tell me anything even if we have emergency they don’t do anything. Not happy
+
+Author: Carol Smith
+Date: 2 years ago
+Rating: 5 stars
+I only have positive things to say about my experience of Monton Medical Centre and in particular of the nurses. Katie has always been fantastic with me, and in particular the advanced nurse practitioner, Sue. I’d have been at a total loss without Sue's outstanding care, knowledge, support and empathy, she has had a great positive impact on my physical and mental well-being. Being able to make regular, frequent appointments with her has been really reassuring over recent months.
+
+Author: Gary Gammans
+Date: 2 years ago
+Rating: 1 star
+Gary Gammans2 reviews2 years ago
+
+Author: Michelle Hindle
+Date: 2 years ago
+Rating: 5 stars
+The receptionist was absolutely great when I needed to be seen quickly. She went above & beyond to speak to the advanced practitioner to arrange an appointment within 24 hours. I really appreciated the kindness & understanding I was shown. Many Thanks again
+
+Author: Hussnain Jatala
+Date: 2 years ago
+Rating: 1 star
+Nicola ‘the bouncer at reception, has an answer for everything. No help at all been calling for the past 4 days and haven’t got anywhere. Shocking service. U need to be on the verge of dying before this surgery will do anything for you. I would not recommend at all.
+
+Author: Samina Ezzatvar
+Date: 2 years ago
+Rating: 5 stars
+Always go above and beyond for my kids reagrding appointments. Drs and staff very good. Thank you
+
+Author: Tracey Wallace
+Date: 2 years ago
+Rating: 1 star
+Absolutely horrendous, the receptionist seems to be my doctor now, telling me that the medication I’m on is totally inaccurate to what I’m saying. Very dangerous giving incorrect information. So with her diagnosis I don’t need to see a doctor, sorted.
+
+Author: Snowbound Gem
+Date: 2 years ago
+Rating: 1 star
+Can't get through after 15 minutes waiting
+
+Author: Sławek Byrski
+Date: 2 years ago
+Rating: 1 star
+1.Waiting for The private work(it should take up to 7 weeks)six months and still waiting 2.Receptionist keep lying to me telling me different things each and every time …
+
+Author: Amanda Twigg
+Date: 3 years ago
+Rating: 5 stars
+Excellent service from Dr Rhodes and the nurses.
+
+Author: Carl Davison
+Date: 3 years ago
+Rating: 5 stars
+If it were not for the quick actions of the diabetic's nurse Kate I would not be here to write this right now. The speed in which I was diagnosed with Type 1 diabetes and the care I have received from the surgery staff was simply amazing and I can not thank them enough for the treatment I have received, a well deserved 5 stars.
+
+Author: Sophie Barrow
+Date: 3 years ago
+Rating: 1 star
+Very rude staff ....and very difficult to talk to as they make it about then self as they been up very early doing there job my 2 year really need to be seen and they are so reluctant on helping or even giving me a face to face appointment …
+
+Author: Dan
+Date: 3 years ago
+Rating: 1 star
+Behind in so many ways, in terms of technology (can’t email test results but they will print and I can collect?) most people have work/life commitments and cannot just go into the surgery to collect something that could easily be emailed or …
+
+Author: Gregory Saunders
+Date: Edited 3 years ago
+Rating: 5 stars
+Only 3 months ago I gave Monton Medical Centre a 1 star review due to the ridiculous waiting times but recently I have noticed a huge change. When I call up I can usually get through within 10 minutes. The service I've had from the GP there has also been exceptionally good. Very happy with them.
+
+Author: emma warrington
+Date: 3 years ago
+Rating: 1 star
+Unbelievably poor service. Lost a set of blood tests, did not process three referrals when they said they would, cancelled my appointment and rescheduled it with someone that couldn’t then help me- even after me taking time off work to make …
+
+Author: Hodo Yusuf
+Date: 3 years ago
+Rating: 1 star
+Hodo Yusuf3 years ago
+
+Author: Liz Smith
+Date: 3 years ago
+Rating: 5 stars
+I can’t fault the service . they have took my daughters appointments very serious and always made time to see her when i’ve been worried . Receptionist is really nice and empathetic. All round a really good doctors surgery
+
+Author: Kay Mccloskey
+Date: 3 years ago
+Rating: 1 star
+Always takes over 30 mins to answer a call. Today it was 50 minutes and told there were no DRs available to speak to me at any point about my poorly child and was told to call 111
+
+Author: Mike Connor
+Date: 3 years ago
+Rating: 1 star
+Absolutely useless for the last 6 months every single week i have to ring them n just get told been sent to chemist when it's not
+
+Author: Claire A
+Date: 3 years ago
+Rating: 1 star
+Was on hold for an hour and a half only to be told there are no appointments left for today and next available is over 2 weeks away, what are people meant to do when they need to speak to someone urgently?
+
+Author: Scott James millett
+Date: 3 years ago
+Rating: 1 star
+Phone at 8.01 yet 67 in line phone lines shocking
+
+Author: Jessica Howarth
+Date: 3 years ago
+Rating: 4 stars
+Recently had two appointments with Dr Rhodes after having a baby, he was brilliant and took the time to listen and put us at ease. Only issue I have with the doctors are the reception staff, who often when called are unable to answer even …
+
+Author: Barbara Bradez
+Date: 3 years ago
+Rating: 2 stars
+Very lax where prescriptions for people are on weekly basis several times I have had to remind staff and doctors regarding no prescriptions at chemist please look into but yet again no response why ?
+
+Author: Alan knight
+Date: 3 years ago
+Rating: 5 stars
+I've just attended Monton Medical Centre and I really can't praise them enough. The reception staff were efficient, and the GP was extremely thorough, taking the time to listen to my concerns. He did a complete prescription review, arranged …
+
+Author: Anuoluwapo Tunwase
+Date: 3 years ago
+Rating: 1 star
+Worst surgery clinic ever,waited on 6weeks to get registered and waited for 2hrs to book appointment at d end,didn't get to see d doctor.rubbish surgery.
+
+Author: Bev Wyrill
+Date: 3 years ago
+Rating: 5 stars
+I have found the drs at the practice very helpful and go the extra mile ,I feel that they are working under constant pressure and more demands then ever Dr Rhodes is a credit to the NHS and Monton Medical Centre should be very happy …
+
+Author: Rebecca Roberts
+Date: 3 years ago
+Rating: 1 star
+Truly terrible, can not for the life of me get through to speak to anybody ever, constantly not sending perceptions, iv been left crying outside the resumption before as they made me feel like it was my fault for an issue that they had …
+
+Author: jane morris
+Date: 3 years ago
+Rating: 1 star
+i don't belive any of the good reviews on this are actually from patients as its truly awful service, iv never felt so upset with anything before in my life, and its caused me more greif having to chase prescriptions and miss my medication because of the lack of care from this doctors!!!!
+
+Author: Mike Regan
+Date: 3 years ago
+Rating: 1 star
+I waited for an hour and a half on the phone and when I went in there were notices allover the place blameing the phone provider. Could they not E mail the whole patient list? or is that against law ?
+
+Author: Gale Butler
+Date: 3 years ago
+Rating: 1 star
+My mum has been took into hospital for a broken hip, but her gp who never sees anyone because covid is at this surgery but no other surgery has this problem The gp has been dealing with my mums heart rate which has took forever to not be …
+
+Author: Tracey Tighe
+Date: 3 years ago
+Rating: 1 star
+Currently on hold for 50 mins, still saying 4th in the queue I have tried to get in touch with the surgery on 4 occasions this week and after nearly an hour on each call I get cut off. …
+
+Author: jason80892
+Date: Edited 3 years ago
+Rating: 1 star
+The woman on reception is very rude.And the most unhelpful Drs I have everknown stay away. The on line app is a joke.
+
+Author: anne Taylor
+Date: 3 years ago
+Rating: 1 star
+Been waiting on my perception to fine out it hasn't been sent to my chemist, what is going on at this doctors. This isn't the first time this has happend...not happy at all
+
+Author: PES Manchester
+Date: 3 years ago
+Rating: 5 stars
+Excellent service today
+
+Author: Alban Thomson
+Date: Edited 3 years ago
+Rating: 1 star
+Long waits to get through to reception to not get an appointment to see a Dr. Appointments cancelled with little to no notice and quite often on the day. No face to face appointments unless you have a phone consultation first even then the nurse or dr's refuse to give a specific time to your "appointment" just a generic 3 hour window. And even then they send you to A&E rather than see you face to face. To be quite honest this has become an absolute joke of a Drs office. It may aswell not exist as you can never get appointments and no Dr will see you.
+
+Author: Nathan Brownbill
+Date: 3 years ago
+Rating: 1 star
+Easily the worst doctors in Salford
+
+Author: Adam Parks
+Date: 3 years ago
+Rating: 1 star
+One star is way too generous for a surgery that simply doesn't care about its patients. Calling the surgery simply initiates a ride on the cyclic rollercoaster of rejection. The message from Dr Gilani requests you use the online form which, when you log into the site tells you that it is unavailable and so to phone the practice. Call again and you simply get ignored. Number 11 in the queue for 1hr 15m and I gave up. I only wanted strong hayfever relief which I eventually had to buy from a dodgy website who have, unsurprisingly, raised their prices such is the disaster that is the local NHS service around the country at the moment. All the while, doctors are demanding 30% pay increase. You couldn't make it up.
+
+Author: Mark J
+Date: Edited 3 years ago
+Rating: 1 star
+Terrible service, can’t get appointments, can’t see a doctor face to face without waiting weeks. On the phone for hours when trying to get an appointment and then get nurse instead of doctor. Receptionist think they are doctors/medically trained. I had blood test cancelled on 3 separate occasions even though there was 4 nurses on shift. I know this because the nurse told me. We might as well still be in lockdown, because this is how this surgery is still working. Just been on the phone for over an hour 20/6 /22, got to first in the queue just before 6.30 and was then cut off. Absolutely disgraceful, would have given less than 1 star but that isn’t an option.
+
+Author: Lenny Norton
+Date: 3 years ago
+Rating: 5 stars
+Very polite and helpful staff
+
+Author: David Clifford
+Date: 3 years ago
+Rating: 1 star
+Been ringing for an appointment (Asthma review) for over three weeks. Sixteen phonecalls everytime on hold for over an hour and a half and can't get through, nearly a full day on hold waiting for the phone to be answered.
+
+Author: Liam Cooper
+Date: 3 years ago
+Rating: 1 star
+The worst doctors I’ve ever had to suffer. Constantly miss sending prescriptions. No one to answer calls. When you do get in they don’t send out what they promised. Blame covid but it’s purely down the greedy owners. Please don’t join. Please leave. Make this location redundant.
+
+Author: T C
+Date: 3 years ago
+Rating: 1 star
+Wanted to give zero stars but not an option. Rang up at 8am to get a same day appointment and was 16th in the queue which took 1 hr and 45 minutes before someone answered. It took 30 minutes for me to move from 5th to 4th in the queue, how can that be possible? When someone finally answered I was told there were no appointments left and was told to ring back again the next morning. I spoke to a receptionist for about a minute so how has it taken 1 hr 45 to speak to 15 people before me. The only conclusion is that they have just one person answering the phone and that person just lets it ring and ring. When I tried to complain I was told the practise manager wasn’t available and didn’t have an email address. So zero accountability or desire to improve. THIS PRACTISE IS AN ABSOLUTE DISGRACE.
+
+Author: Jamie Scahill
+Date: 3 years ago
+Rating: 1 star
+Appalling service
+
+Author: steve powley
+Date: 3 years ago
+Rating: 1 star
+used to be a decent surgery,really gone down hill,sat here 1st in line on the phone 1hr 10mins and counting,had a face to face after 3 phone consultations previous that they didnt even write the correct issues down,all chairs removed from waiting room so they dont want to see anyone,just sitting back collecting cheques,got wife to phone alongside me,her waiting number is going down???? strange seeing as i've been number 1 in line now for 1hr 30mins,disgraceful
+
+Author: Andrea P
+Date: 3 years ago
+Rating: 5 stars
+I've always had amazing assistance and service from Monton Medical Centre, I contemplated not joining when i moved to the area, due to the negative reviews, but I have never had bad service from them. The Practice Nurses are great, dedicated and thoughtful, Receptionists are so patient and helpful. And all the Doctors have been excellent with my ongoing health issues. If you want bad healthcare live in London, this Practice do great work in tough times.
+
+Author: Hannah Moors
+Date: 3 years ago
+Rating: 1 star
+Waited for an hour on the phone to get an appointment only for them to answer and put the phone down. This has happened more or less everytime I ring to book an appointment. Absolutely impossible to book an appointment
+
+Author: Sheepy
+Date: Edited 3 years ago
+Rating: 1 star
+Rock bottom- minus 5 stars
+
+Author: Lauren McKeown
+Date: 3 years ago
+Rating: 1 star
+They’re horrendous.Shocking how I as a patient am treated. Waiting over an hour for a receptionist to answer the phone or wait in a queue no matter what time of day. I have type 1 diabetes, my glucose blood reading machine is broke. I’ve requested a new one. Never received. They administer the wrong prescriptions to the chemist. I receive different insulin that what I should have. Plus old medication which I no longer taker. Some injectable medication. I was diagnosed with MS multiple sclerosis in December 21, a few weeks later I had my first known attack. I thought I was having a stroke. My speech was slurred, confused with cognitive function difficulties and unable to swallow. When I spoke to the GP he said I’d have to wait for the neurologist or go to A&E. I did. They confirmed it’s MS and wanted to admit me ( risk of dka with my diabetes) but because of no pet care I couldn’t, so asked myGP for support. I was calling my GP for help and advice but he just said wait for the neurologist. I was calling daily, waiting an hour each time to get through because it was very frightening. After 2 days he stopped calling me back. Rang for an appointment with breathing problems. Was told I need an urgent chest x-ray because my right lung is not taking in air. Waited for the appointment at Salford Royal, when I attended the x-ray machine was broke ( not gp fault) when I enquired for Monton medical practice for a new appointment, she said I had to refer myself! How do I do that, I asked. She asked me to email them. I did. The email bounced back 3 times. I rang again waiting a further hour, when receptionist #2 spoke down to me. I asked her politely not to speak to me that way. She repeated the email address. I said thats different from the first one. Where she told me she should would not tolerate any abuse. WHAT ABUSE? They are shocking as a practice. I’m going to reporti them to the CQC and who ever else I can. I have diabetes and if not addressed correctly I can die.
+
+Author: Simon Masterson
+Date: 3 years ago
+Rating: 4 stars
+Simon MastersonLocal Guide · 42 reviews · 110 photos3 years ago
+
+Author: Kyle
+Date: 4 years ago
+Rating: 1 star
+I phoned for an appointment and was told I would get a call from the Doctor at 16:20pm. At 16:40pm I had still not received a call. I phoned again and asked why the Doctor had not phoned me and why my appointment was now marked as "missed" on Patient Services. I was told that I was still on the list to be called and would receive a callback before the practice closed. It's now Tuesday and I have not received a call. Patient services no longer has my appointment on there at all. It is not in the missed section or past appointments. I phoned three weeks ago and said I would like to be investigated for Crohn's Disease as a large number of my family have it and I have been showing very similar symptoms to them. The only response I got on the matter was an unknown Doctor telling me to make an appointment to have blood taken for the 10th time. I did specifically say that my Father's Crohn's Disease was not diagnosed through a basic blood test. Still, I waited a whole week with no news back about these test results and had to message myself just for a receptionist to say "A Doctor looked and everything is fine." I want to hear that from my DOCTOR. I have been with this practice since 2017 and have never met my GP. Every time I have asked for an appointment with my GP I have been passed on to a nurse or a different Doctor, so I'm not sure what the GP actually does all day because apparently he doesn't see patients.
+
+Author: Andrew Curran
+Date: 4 years ago
+Rating: 1 star
+Sent a prescription to the pharmacy next door...went to collect and it wasn't there. Next day the same. It's medication, not an Amazon package. You can't just keep deferring it. This was about two years ago to be fair, but that's how much of an impression this place made. You'll have more luck consulting tea leaves or the spilled entrails of a goat. Doctors are alright if you can get past the bouncers on reception. My advice is is to abandon all pretense of a polite society if you want to deal with them, sadly you have to give up your manners, be as pushy as you can be, for the reception team are the immoveable object the riddles speak of
+
+Author: Call MeCybil
+Date: 4 years ago
+Rating: 3 stars
+I have been with this surgery for a few years and the doctors are amazing in my opinion. I have only given three stars because of my situation. Unfortunately I have an issue to resolve which the practice manager would not respond to me about because they took me off their register even though I had asked for a discussion about this a month ago. I’m very frustrated and I know how hard the staff work and how busy reception always is but this has made me sick to my stomach leaving me in the lurch with many medical issues and no doctor now.
+
+Author: Marie Hargraves
+Date: Edited 4 years ago
+Rating: 1 star
+What has happened Monton Medical Centre. Why won't the Gp's see people, why are there no appointments. Why are children under 2 not seen face to face when they can't explain what is wrong and their parents are not medical professionals who have to guess. Lastly when attend the premises unfortunately not for a face to face, is there such an awful atmosphere and a man who must work there potentially a clinical raising his voice so much. What's happened to a calm clinical environment? It seems to have descended into chaos!! Plus my phone consultation I missed it as I was changing my sons nappy....no second attempt and had to wait ages for that appt. Are you not supposed to be taking the pressure off hospitals and walk in centres?? Seems to me a review of the hippocratic oath should be mandated!
+
+Author: Kyle NUFC4LIFE
+Date: 4 years ago
+Rating: 1 star
+The reception team for real needs a massive re shuffle!! I was on the line for 23 minutes and 12 seconds exact! I was first in line for 9 minutes and when they eventually answered the phone they put the phone down! If you worked in a bank that is called customer skipping. Minimal staff or not, not acceptable. Waiting to get through to the reception is like waiting to win the lottery that you never bought a ticket for! I get there's a high demand. But hire the staff to compensate for that demand. Cause now I need to wait another 20+ minutes to speak to someone!
+
+Author: Bernie Leyden
+Date: 4 years ago
+Rating: 1 star
+This surgery is a disgrace to the NHS. Don’t truest your families health and well being with them.
+
+Author: Rebecca Downing
+Date: 4 years ago
+Rating: 5 stars
+I just want to say that Katie, the practice nurse, is absolutely amazing! She makes me feel at ease during the most embarrassing examinations! She explained what was being done and why, which is incredibly helpful. She is so so lovely and I hope to see her next time. Thanks Katie!
+
+Author: SomebodyFeedKaz
+Date: 4 years ago
+Rating: 2 stars
+The wait recently is outrageous it take around 40mins on average to get through to only be able to arrange telephone appointment for next month on swab results. That is ridiculous and makes no sense. There needs to be more efficient way of doing things
+
+Author: Thomas Potter
+Date: 4 years ago
+Rating: 1 star
+Possibly the worst doctors surgery ever designed built and worked in. An absolute disgrace to the national health. Whoever is in charge of recruiting needs to evaluate their life. The Receptionists. Which again that's all they are. Are the …
+
+Author: Jenny Thomas
+Date: 4 years ago
+Rating: 5 stars
+I've been a patient here for over 20 years and appreciate the quality if care myself and my children have received
+
+Author: John Royle
+Date: 4 years ago
+Rating: 1 star
+Been waiting over three weeks for test results. And sent an online request last week no reply as i am writing this i have been on hold for 30mins more needs done poor service
+
+Author: Vivienne Hill
+Date: 4 years ago
+Rating: 1 star
+45 minute wait on the phones, to discuss my 89 year old mother's prescription. She has run out of blister packs, and the chemist has informed me, they have been emailing the surgery for over a week, and have still not received her prescription
+
+Author: richard Pickles
+Date: 4 years ago
+Rating: 5 stars
+richard PicklesLocal Guide · 82 reviews · 448 photos4 years ago
+
+Author: Andrew Williams
+Date: 4 years ago
+Rating: 1 star
+It's a major battle to try to get an in person appointment without taking a telephone call first. …
+
+Author: Danni Wilkinson
+Date: 4 years ago
+Rating: 5 stars
+I have been with the surgey for over 2 years now and have always had a good experience. Recently I needed support with a name change and whilst it took a few attempts, everyone was super nice and helpful and it got sorted well before time. …
+
+Author: Joanne Locker
+Date: 4 years ago
+Rating: 1 star
+Joanne Locker4 years ago
+
+Author: Kait Ludwig
+Date: 4 years ago
+Rating: 1 star
+I have been on hold to speak to a receptionist for 45 mins now and its midday. I understand there is a busy time at the start of each day, but with no way to walk in and book/speak to anyone, the clinic really does need to hire more staff …
+
+Author: Google User
+Date: 4 years ago
+Rating: 1 star
+I called the GP to be welcomed by an aggressive and rude receptionist, she asked me "what is your problem?"I was surprised to be calling to get horribly treated right away. She is just lacking of common sense and braincells, she needs to …
+
+Author: fiona hughes
+Date: 4 years ago
+Rating: 1 star
+fiona hughes5 reviews4 years ago
+
+Author: Kola Ignad
+Date: 4 years ago
+Rating: 1 star
+Frankly, one of the most incompetent, useless, and awful service experiences I've ever had. The receptionists don't bother picking up the phone (likely too busy gossiping in the break room), and you should expect an 30 minute wait (minimum) …
+
+Author: Gail Messenger
+Date: 4 years ago
+Rating: 5 stars
+My family have been with this surgery for over 10yrs and the staff have supported us through some difficult health care problems. From reception staff through to nurses and GPs, they have always gone the extra mile. Gp surgeries were …
+
+Author: Mancunian-UK
+Date: 4 years ago
+Rating: 5 stars
+Mancunian-UKLocal Guide · 31 reviews · 7 photos4 years ago
+
+Author: Zoe Parncutt
+Date: 4 years ago
+Rating: 1 star
+Receptionist has very poor reception skills, defiantly requires training. The one I spoke to 10 mins ago clearly thinks she's a doctor. Unable to answer my questions then starts threatening that she was going to end the call. Very Rude!!! I've been at this practice for 48 years and I am appalled!!!!
+
+Author: Samantha B
+Date: 4 years ago
+Rating: 5 stars
+I was a little reluctant to join after reading the reviews on this surgery, however, I have found the surgery to be extremely lovely. All of the staff are really pleasant and helpful. I recently saw the Nurse (Katie) who was so so helpful, …
+
+Author: F Dutton
+Date: 5 years ago
+Rating: 5 stars
+F Dutton5 reviews5 years ago
+
+Author: Brian Kennedy
+Date: 5 years ago
+Rating: 5 stars
+Doctors are top notch! Always professional and polite and always cover my worries / problems whilst there Couldn’t fault them 5/5 stars
+
+Author: A H
+Date: 5 years ago
+Rating: 1 star
+Wish I could give no stars! Where do I start!!!!!!! Incompetent staff, you no longer can book an appointment over the phone so have to do it online, what are they doing there then? Bad …
+
+Author: Jackie Henderson
+Date: 5 years ago
+Rating: 5 stars
+Jackie HendersonLocal Guide · 70 reviews · 36 photos5 years ago
+
+Author: Sarah Rainbow
+Date: 5 years ago
+Rating: 5 stars
+Great medical practice, the level of care from all members of staff is excellent. I can understand people's frustration at trying to get appointments, but that's the same the world over and I think staff here deal with patients in a very courteous way.
+
+Author: Paul Siddons
+Date: 5 years ago
+Rating: 1 star
+considering the surgery doors are closed and reception aren't dealing with the general volume of people the call waiting times are very long it took 19 minutes to answer and I was caller number one in the queue and was bounced back on hold twice, this is a poor reflection on what is otherwise a great surgery in my experience
+
+Author: Jonathan C
+Date: 5 years ago
+Rating: 1 star
+Stay well well away from this Gp practice, extremely rude and hostile, had to change practice.
+
+Author: Paul Mulcahy
+Date: 5 years ago
+Rating: 1 star
+Absolutely useless
+
+Author: Molly Shank
+Date: 6 years ago
+Rating: 1 star
+Worst gp ever! Don’t know why they have a receptionist for, if no one answers the phone. Just ridiculous!!!
+
+Author: Chris Williams
+Date: 6 years ago
+Rating: 1 star
+Customer service at this medical centre is much like my appendix - painfully absent. …
+
+Author: Duncan Watts
+Date: 6 years ago
+Rating: 1 star
+Don't bother. The rudest receptionist I've EVER encountered. Are any practice managers reading this? Haul this bespectacled 50 something female to an urgent meeting and demand she learns some customer service skills pronto. I urge everybody to use Andrew's Medical Centre in Eccles - professional and polite every time.
+
+Author: Leeann
+Date: 6 years ago
+Rating: 1 star
+Like the doctors can't stand the receptionist all of them they are soo rude you ask them something and it's like they can't be arsed I phone for appointment for my little girl was on hold for 25mins to get told there is no appointments and there is nothing they can do and phone 111
+
+Author: Yvonne Thorp
+Date: 6 years ago
+Rating: 1 star
+Been sat waiting in reception for an hour dr did a home visit and told me to come to the surgery in about an hour to pick up prescription got here only to be greeted by a …
+
+Author: Mike Lane
+Date: 6 years ago
+Rating: 1 star
+I rang today (Tuesday at 3:15 PM) to make an appointment and it immediately (no ringing) went to a message saying the GPs surgery is now closed and that they are open Mon. to Fri are 8:00 AM to 6:30 PM. A few weeks ago I tried to get an …
+
+Author: Jane Cooke
+Date: 6 years ago
+Rating: 1 star
+Joke waited 36 minutes with one Infront of me in the que n still not been answered. They text me to make an appointment and I know they will say we have nothing ring on the day. All public service industries are stretched but not to the point of rudeness!!!!
+
+Author: Aliesha Tait
+Date: 6 years ago
+Rating: 1 star
+Impossible to get through to them! I've been number 1 in the line waiting for at least 30 minutes. When trying to get through to reception the line cuts out and you have to phone again. Only 1 star because I actually haven't had a chance to speak to anyone yet.
+
+Author: Satnaam Vijay Singh
+Date: 6 years ago
+Rating: 1 star
+If the staff at Monton Medical Center don't like their jobs the should look for a new one. I've rang for some information on a pre prescription soon as they answer the phone they really unhelpful and can't wait to get rid of you. I can understand why they've got a 1.8 review rate.
+
+Author: Steve Dyson
+Date: Edited 6 years ago
+Rating: 1 star
+Went to this Minton Medical Centre on the 20/05/2019 to register. I explained to the reception I was in need of a urgent appointed, as I had been to the Hospital and need an urgent referral for me to have surgery. The reception told me they would get me on the register that day and I would have the appointed. Next day I phoned to asked if a appointed had been made. To my dismay I was informed that I had not been put on the register yet so could not make the appointment. I explained again how important it is only to be told they will see what can be done and phone me back. I received a phone call from the most rude and unprofessionally person I have ever had to speak to it was surprising to hear she is the appointment manager. This person kept telling me we have a two week turnround I explained in vain I did not have 2 week's to sort this as it was urgent I get a Referral I can only say if you can avoid this place you would be wise to do so. I really feel for the doctors who a working very hard just to have their medical practice tarnish by this so called manager who is damaging the reputation. Posted by Alison D
+
+Author: Marcus
+Date: 6 years ago
+Rating: 1 star
+Marcus9 reviews6 years ago
+
+Author: Rachel Harden
+Date: 6 years ago
+Rating: 1 star
+Rachel Harden6 years ago
+
+Author: evil clown Santos Hajnal
+Date: 6 years ago
+Rating: 1 star
+they treat my wife like item, they make her feel like she is nothing, and they dont put her in the sistem , they dont have respect for the people. the women in the reception called "andrea " she should no be working in this place.
+
+Author: Beth H
+Date: 7 years ago
+Rating: 1 star
+One of the worst doctor's surgeries I have ever been to. I have been with Monton Medical Centre for nearly 4 years and I don't think I have ever had a pleasant experience. From being on hold for 15 minutes as number 1 in the queue (every time, and often driving to the surgery whilst on hold to find out that the surgery is empty and no phones are ringing) to patronising doctors, being fobbed off with recomendations such as 'apricot oil' and fact sheets from google to it being virtually impossible to get an appointment; I don't know how this practice can not and do not even care about how terrible of a service they provide.
+
+Author: Mcrbhoy 1986
+Date: 7 years ago
+Rating: 2 stars
+Had to laugh at the pre-recorded message which states something along the lines of 'due to the high volume of calls we are not able to check if repeat prescription is in over the phone.' Call me stupid but I would have thought this task would have came within a medical receptionist's job description. After being informed of their high volume of calls I was placed at number 1 in the que and had to wait on hold around 6 minutes. I would have found this laughable but the amount of times I've been in the surgery in person and seen them all in the back letting the phones ring whilst leaving one person on the front desk with a big que forming. On a more positive note, when you actually get to see a GP or nurse their professionalism is second to none from my experience.
+
+Author: Hannah Davies
+Date: 7 years ago
+Rating: 1 star
+Hannah Davies7 years ago
+
+Author: Alice Conway
+Date: 7 years ago
+Rating: 1 star
+I do agree with comments below. Dr Jessica Hobbs it's horrible. She should work in prison but not in family friendly GP practice. Shame. We are off.
+
+Author: Sandra Smith
+Date: 7 years ago
+Rating: 1 star
+Horrible practice. Dr Jessica Hobbs is a rude ignorant and racist.
+
+Author: Rachel Jarvis
+Date: 7 years ago
+Rating: 1 star
+Shocking service, my brother passed away tragically and not only did the surgery not write to us to acknowledge it but got his details wrong at the coroners hearing. Luckily we are no longer patients at this surgery.
+
+Author: Martha John-Rose
+Date: 7 years ago
+Rating: 4 stars
+I have only had good experiences, I think the doctors (especially Dr Gilani) and nurses have always treated me very well. There was a receptionist (don't know if they're still there) I would not include in the praise, but I feel this is a good surgery. Lucky we're using the american system, then we would have a lot to complain about.
+
+Author: Chloe Dannatt
+Date: 7 years ago
+Rating: 1 star
+So massively disappointed from the off. I called yesterday as I’ve recently moved here and currently didn’t have a utility bill to provide for registering, so I wanted to know what I could do. I was on hold for 10 minutes l and hung up after there was no answer thinking that perhaps the surgery was just really busy. I got to the surgery go find it was very quiet and the phones were not busy, so kind of confused about why they didn’t pick up. Got registered and asked to see a doctor ASAP and was told that my previous doctor is to take care of me for another 4 weeks, but that’s not exactly helpful when you’ve moved from Cambridgeshire to Manchester. Who’s going to drive 4 hours to get to a 10 minute doctors appointment? Eventually after repeating how desperate I was to see a doctor, I was told to call back at 11am today, and not before otherwise my registration paperwork won’t have gone through. I did this to be answered by another receptionist who told me I should’ve called at 8am this morning, and try again tomorrow. I am literally above and beyond annoyed. Most people don’t come to the doctors because they’ve nothing to do on a Thursday afternoon. We go to the doctors because there are medical issues to be addressed that effect our day to day lives. Patients need to be taken a little more seriously whether it’s by GPs themselves, or by the reception staff that give inaccurate information and have awful bedside manners.
+
+Author: Jasmine Wall
+Date: 7 years ago
+Rating: 5 stars
+Straightforward to get an appointment, took a half hour to be seen which I expect at any gp surgery, thorough assessment by a competent doctor, sorted me out quickly. Many thanks.
+
+Author: Joanna J
+Date: 7 years ago
+Rating: 2 stars
+Morning call always busy. After 9am no appointments.
+
+Author: Kasia Osinska
+Date: 7 years ago
+Rating: 1 star
+Kasia Osinska7 years ago
+
+Author: Christopher Quinn
+Date: 7 years ago
+Rating: 5 stars
+I do not understand the negative reviews for this practice, I have received wonderful care here from receptionist through to doctors, if you don't like it join bupa!!!!
+
+Author: Peter Bailey
+Date: 7 years ago
+Rating: 1 star
+Absolute shambles of a service. Was put on hold for nearly 10 minutes after being 2nd in the que. only to have it ringing for a further 15 minutes. Then when they finally answered, they asked me if I was alanah so obviously they was trying to contact someone else rather than answering my call after being blanked for nearly half an hour only to be told theirs no appointments and got fobbed off by then telling me to go to the pharmacy instead. Absolute joke!!
+
+Author: Bev V
+Date: 7 years ago
+Rating: 1 star
+Terrible service, can't get an appointment, can't ring to order prescriptions, can't call to ask if repeat prescription are ready, if you do call for any reason the chances of the phone being picked up is minimal. the receptionists are the least customer focused staff I've ever had the misfortune to deal with, someone needs to take control of this business from the ground upwards, even the chemist attached to the medical centre thinks he's God!!!!!
+
+Author: Barrie Price
+Date: 8 years ago
+Rating: 5 stars
+Excellent Medical Centre, like all these places they are over worked and under funded but I have been registered here since the 1980s and have always received the care and attention I would expect from professionals. Don't complain if you have to wait remember the doctor is doing the job properly and will take as long as needed.
+
+Author: Beata Shopa
+Date: 8 years ago
+Rating: 1 star
+This is medical practice from hell do not register with them
+
+Author: Yvonne Ashall
+Date: 8 years ago
+Rating: 1 star
+Husband has terminal cancer which should mean I can ring up and order his prescription, controlled drugs included. Having recently been discharged from St Annes Hospice, and needing more dtugs, last week receptionists were amazingly helpful. This week I rang and came upon Joanne who refused to order the CD I required. Asked to speak to a doctor, manager and anyone superior to her, all requests refused and told to ring chemist where it will take 2 days to generate prescription and a Monday delivery from a Thursday request. Bang out of order as I know I can ring and request due to husbands condition anx we run the risk of running out of pain control. Yet another example of obnoxious obstructive and negligent service by this practice. Lost all confidence in them providing any genuine care for my husband. Luckily St Anne's Hospice their doctors and staff actually provide the card and support we need at this traumatic and emotional time. A spot of retraining and genuine patient service is needed at ghis practice. Thank God they're not my doctors!
+
+Author: Barto Sopoza
+Date: 8 years ago
+Rating: 1 star
+Horrible lady at reception desk so rude and not helping at all ( the one in glasses )
+
+Author: drewloleigh
+Date: 8 years ago
+Rating: 1 star
+I've hadn't eneough, I'm changing Doctors. The receptionists are so rude (not all) but most and In particular the woman with the bob and glasses is SO RUDE. Not only have I witnessed it myself but the way she has spoken to other people. How she got a job I do not know. Wait for appointments is weeks, drs don't really care and you have to wait up to 40 minutes after your appointment time to be seen. Do not register here!

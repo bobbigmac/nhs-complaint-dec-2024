@@ -172,6 +172,103 @@ The access complaints are not neatly separated in real life. Patients often desc
 
 That is why the issue counts overlap so much. Patients are not usually talking about one bad moment. They are describing a front door that feels hard to enter, hard to stay in, and hard to trust.
 
+## When Access Turns Into Exclusion
+
+There is a smaller but important set of reviews where the problem is not just "I could not get an appointment". It becomes "I could not get out either".
+
+These reviews show patients trying to escape a failing access system, being blocked by catchment rules, being told to register elsewhere, or saying they would switch if they realistically could. This is where access trouble starts to look like exclusion.
+
+The numbers are smaller than the main access buckets, but the pattern is clear enough to matter:
+
+- `16` reviews mention `catchment`
+- `14` reviews say `register elsewhere`
+- `67` reviews mention `changed my GP`
+
+Those phrase counts are only rough markers, and they overlap. The value is in what the reviews say next.
+
+### 1. Some patients try to leave and are blocked
+
+Some reviews describe patients trying to register elsewhere or trying to join a different practice, only to hit another barrier.
+
+Examples:
+
+> "Sadly, I don’t have the option to register elsewhere, otherwise, I would have switched already."  
+> Muhammad Naeem, `Gorton Medical Centre`, `1` star
+
+> "I tried to register with them but they rejected my registration even though I live in the catchment area"  
+> Kasim, `Ardwick Medical Practice`, `1` star
+
+> "You’re website has a catchment area enquiry and my address fell within it so I called and got told I wasn’t allowed to join this surgery"  
+> Jon Shedwick, `Blackford House Medical Centre`, `1` star
+
+> "now I am deemed to be leaving the "catchment area" I have been told I have to register with another practice"  
+> Andrew Lees, `Eastlands Medical Centre`, `1` star
+
+These reviews matter because they show a patient can know the current practice is not working for them, but still not have a clean route to leave. That helps explain why low switching on the map does not mean people are content.
+
+### 2. Some patients do leave, but often only after a lot of frustration
+
+There are also reviews where people say they have changed practice, re-registered, or plan to.
+
+Examples:
+
+> "Ive reregistered elsewhere."  
+> Kadie Buchanan, `RADCLIFFE MEDICAL PRACTICE`, `1` star
+
+> "I have changed practice and so have my family"  
+> V Walker, `Lime Square Medical Centre`, `1` star
+
+> "I’ve changed doctors as this place is nothing short of a joke."  
+> Genuine Bloodshed, `Guide Bridge Medical Practice`, `1` star
+
+> "Going to see if I can register elsewhere."  
+> Yen Hembrough, `Droylsden Road Surgery Branch`, `1` star
+
+The tone here is not casual choice. It is usually exit as a last resort.
+
+### 3. Improvement after switching does show up, but mostly in reviews of the new practice
+
+There is some evidence that patients compare a new practice favourably after leaving a worse one. But that evidence usually appears as praise for the new surgery, not as a follow-up posted back on the old surgery’s page.
+
+Examples:
+
+> "Brilliant service thankyou glad I changed doctors."  
+> sharon towner, `Bolton Community Practice CIC - The Market Surgery`, `5` star
+
+> "Me and my parner recently changed to Octagon Medical Center ... After literally our first appointment here we’re being helped for things we have been trying for over a year to get help with."  
+> BenGiz'93, `Octagon Medical Centre`, `5` star
+
+> "I recently moved to the catchment area of The Range Medical Centre and switched here from my previous surgery. So far, the difference has been night and day."  
+> Gethin Dibowski, `The Range Medical Centre`, `5` star
+
+That is useful because it suggests some patients do not just complain and disappear. Some are clearly saying the problem was the old access system, because the contrast with the new one feels immediate.
+
+### 4. Follow-up "it got worse" reviews are rarer, but they do exist
+
+Direct follow-up reviews are much rarer than one-off complaints. Most people seem to leave one review and stop there. But a few edited or reflective reviews do show the problem persisting or worsening over time.
+
+Examples:
+
+> "(Edited review from 4 stars in 2018 to 1 star 2023) This place is well over capacity and can not manage."  
+> Reny Hardy, `Chorlton Family Practice`, edited low-star review
+
+> "Unfortunately the GP changed for worse."  
+> E S, `Windermere Surgery`, edited review
+
+> "This practice has just got worse and worse as time as gone on."  
+> Dorias Lives, `Millbrook Medical Practice`, `1` star
+
+> "My cyst pain got worse day by day but I got appointment after 6 months."  
+> Ro Se, `Ashcroft Surgery`, `1` star
+
+So the answer to "what do patients do next?" is mixed:
+
+- some try to switch and cannot
+- some do switch, and the relief shows up in reviews of the new practice
+- some stay trapped and say the same problems keep getting worse
+
+This is one reason access needs to be read as more than a service-quality issue. For some patients it starts to shape where they can go, whether they can leave, and whether a failing surgery becomes something they are effectively stuck with.
+
 ## GTD Context
 
 The same pattern is strong in the GTD-managed slice too.

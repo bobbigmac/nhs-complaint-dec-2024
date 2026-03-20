@@ -3,27 +3,57 @@ Canonical code: P92028
 Postcode: M29 8FL
 Google Maps title: Elliott Street Surgery
 Google rating: 4.0
-Google review count: 86
-Google Maps URL: https://www.google.com/maps/place/Elliott+Street+Surgery/@53.5141086,-2.4691541,17z/data=!4m8!3m7!1s0x487ba822522c5dcf:0x42cec2a7e8b14919!8m2!3d53.5141086!4d-2.4691541!9m1!1b1!16s%2Fg%2F1hc72b5ty?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 88
+Google Maps URL: https://www.google.com/maps/place/Elliott+Street+Surgery/@53.5141086,-2.4717344,17z/data=!4m8!3m7!1s0x487ba822522c5dcf:0x42cec2a7e8b14919!8m2!3d53.5141086!4d-2.4691541!9m1!1b1!16s%2Fg%2F1hc72b5ty?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 88
+Owner replies collected: 0
+Raw review responses captured: 9
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P92028-elliott-street-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Tehreem Irfan
+Date: 3 days ago
+Rating: 5 stars
+I and my family have been registered with Elliott Street Surgery in Tyldesley since 2015. Over the years we have received good care and support from the doctors and staff. In particular, Dr Shah has always been professional, kind and attentive. He takes the time to listen carefully to concerns and explains things clearly, which makes us feel comfortable and well looked after. The reception staff are also polite and helpful when arranging appointments or answering questions. Overall, we appreciate the care our family has received and the work the surgery does for the local community.
+
+Author: Irfan Afzal
+Date: 3 days ago
+Rating: 5 stars
+I have been a patient at this surgery since moving to the area in 2015 and have always received excellent care. The administrative staff are consistently friendly, efficient, and helpful, which makes every interaction easy and reassuring. The medical team are outstanding, and I am especially grateful to Dr Shah for the care, professionalism, and support over the years. It’s very reassuring to know such a dedicated and compassionate team is there when needed. I truly appreciate everything the surgery has done for me and would highly recommend them.
 
 Author: Janet Southern
-Date: 2 weeks ago
+Date: 3 weeks ago
 Rating: 5 stars
 I joined Dr Shah’s surgery just shy of 12 months ago following inadequate care elsewhere. I am genuinely taken back by the level of care and attention provided to me and my family by all that work at the practice! I have found anyone I have encountered at the surgery to be friendly, knowledgeable and offer true care with compassion and understanding. Dr Shah’s surgery has a number of different disciplines all under one roof, this stands them apart from others and aids quality patient led care ! Having a team made up of different health care providers really does seem to work well and in favour of patients. Appointments are always avaliable! I am really grateful to all at the surgery for their truly great care ! Everything they do throughout each day is appreciated and should be rewarded. So, thank you !
 
 Author: Gary Morton
-Date: 2 weeks ago
+Date: 3 weeks ago
 Rating: 5 stars
 As a patient I have been with doctor Shahs surgery for 20yrs, in that time the practise has treated me for a number of conditions, they always give me the confidence that the advise and treatment they provide is second to none, that goes with the nurses and reception team. Thank you.
 
+Author: Johanna Costello
+Date: a month ago
+Rating: 5 stars
+Been at this surgery for a long time now and have always had excellent service, Dr Shah is especially professional and always takes time to listen as do all the doctors we have seen. Always manage to get an appointment when necessary for myself or my family.
+
 Author: Leanne Stevens
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
 I have been a patient at Elliott street surgery for over 20 years, dr shah and staff are excellent Dr shah goes out of his way to make sure your ok, just sitting in a waiting room he can walk past and check your ok, would highly recommend this surgery
+
+Author: Julie Salam
+Date: a month ago
+Rating: 5 stars
+As the wife and cater of an elderly patient with dementia and multiple medical conditions I have accompanied him on numerous occasions to Elliott Street Surgery and on each visit we have received the highest level of care and support from Doctor Shah and the entire team at the surgery. Everyone has shown respect, patience and kindness regardless of the level of need. I know my husband is receiving the very best of care and I feel fully supported, whatever the issue. As the lone carer it is vital to have that level of support.
+
+Author: Suzanne Meighan
+Date: a month ago
+Rating: 5 stars
+We have been part of this surgery for approx 5 years and I cant thank them enough. Always so helpful when I call and find us appointments usually the same day if we call first thing. Dr shah always makes sure we are happy and from the reception staff to various doctors, nurses and temporary staff we have always had great service. Thank you as always Dr Shah and all at Elliott Street surgery
 
 Author: Nicole Fergusson
 Date: a month ago
@@ -34,6 +64,16 @@ Author: Angela Monaghan
 Date: a month ago
 Rating: 5 stars
 I’ve been a patient here for many years and the service has always been excellent. Dr Shah is amazing and always takes the time to listen. The reception staff and practice nurses are friendly, helpful, and polite. A great GP surgery overall.
+
+Author: sindy McCormick
+Date: a month ago
+Rating: 5 stars
+Cannot fault this surgery. Dr shah is an amazing gp with a wealth of knowledge and he doesn't just write a prescription and get you out of the door. All the GPs here are great, but DR Shah explains everything and puts you at ease. The best Dr's practice I have ever been with
+
+Author: Lesley Woodier
+Date: a month ago
+Rating: 5 stars
+Great experience with Elliot Street Surgery. The GPs and staff are friendly, professional, and very supportive. Appointments are easy to get and are dealt with quickly. I’ve always felt well looked after and would definitely recommend this surgery.
 
 Author: David Quincey
 Date: a month ago
@@ -59,3 +99,358 @@ Author: Rockabilly 59
 Date: a month ago
 Rating: 5 stars
 I have been a Patient at Elliott Street Surgery since 2008 when I moved to the area. Dr Shah and his staff are excellent and have been throughout this time. In the past 4 years since I got Covid I have suffered several health setbacks including a Stroke. This may not have even been found without the attention, treatment and Hospital Referrals from the Surgery. I could not rate Dr Shah and his team any higher. All the troubles talked about elsewhere in the NHS and with GP Surgeries seem to have changed very little at Elliott Street Surgery and their first class service. I want to add a special mention about Dr Shah and Nurse Bethany who I see most often - thank you for your care and kindness - Dave Q
+
+Author: Phillip Wilson
+Date: 2 months ago
+Rating: 3 stars
+Phillip WilsonLocal Guide · 32 reviews2 months ago
+
+Author: Susan Lawton
+Date: 4 months ago
+Rating: 5 stars
+l have been a patient at Elliot Surgery for many years and consider myself very fortunate in being cared for by such an excellent medical team. The Doctors always listen and discuss the treatments and options that are available. The surgery monitor your medical conditions and offer review appointments where necessary with the practice nurse. The reception staff are always courteous and efficient in dealing with appointment requests. Overall an excellent practice.
+
+Author: Ebony.js_13 standish
+Date: 6 months ago
+Rating: 1 star
+The reception staff are very unwelcoming. I was prescribed some medication by a doctor who I can’t praise enough. I called for a top up for this and the other doctor spoke to me as the original one wasn’t in and has completely took me off this despite my concerns.
+
+Author: Beverley Foy
+Date: 9 months ago
+Rating: 5 stars
+Great doctors always go that extra mile for you . I get appointment s quickly. The nurse Beth is so lovely very understanding . Excellent surgery
+
+Author: Cliff Cunliffe
+Date: 10 months ago
+Rating: 5 stars
+Cliff CunliffeLocal Guide · 15 reviews · 6 photos10 months ago
+
+Author: Tash Harrison
+Date: a year ago
+Rating: 5 stars
+Wow what a practice, currently moved doctors and i can honestly say I was gobsmacked by the nurse, she was amazing very thorough with her knowledge of all the doctors who are at this practice, there's a Dr on site for babies,women men mental health cancer end of life you name it they've got it, so organised and great for difference clients, I would definitely recommend this gp service the staff and sources available are amazing.
+
+Author: Adele Langford
+Date: a year ago
+Rating: 5 stars
+Adele Langforda year ago
+
+Author: Anjumol Joy
+Date: a year ago
+Rating: 5 stars
+Anjumol Joy8 reviews · 2 photosa year ago
+
+Author: MKB
+Date: a year ago
+Rating: 5 stars
+It’s been nearly 10 years with Elliott street surgery and I have no hesitation to say this ‘The Best’ surgery I’ve ever seen or heard! Dr Shah, Dr Al-Abadi and Dr Fasuyi are very experienced and professional and never leave any stone unturned to conclude diagnosis. I’ve a private medical insurance and quite a few consultants commended the initial diagnosis and tests carried out by the surgery. We hardly had any problems to get an appointment over the years and most of the times you can get an appointment on the same day. Hats off to you guys!!
+
+Author: Mark Oliver
+Date: a year ago
+Rating: 5 stars
+Really great service and courteous service from all the staff especially the Nurse and Dr Shah is the best doctor I have ever had I really struck lucky when I moved to the area
+
+Author: Kas Broli
+Date: a year ago
+Rating: 5 stars
+Always found staff to be professional and courteous Dr Shah is amazing looked after my mother until she passed away - always willing to listen and provide massive support to the family Cannot praise this surgery enough
+
+Author: Stephen Long
+Date: a year ago
+Rating: 5 stars
+I have been a patient here for many years and always found the clinical staff very approachable and professional. The receptionist are generally very good if at times a little challenging.
+
+Author: Ian Vickers
+Date: a year ago
+Rating: 5 stars
+Been with Dr Shah's surgery since moving to the area 15 years ago. Never had a bad word to say. Patient care is top notch.
+
+Author: Michael Fisher
+Date: a year ago
+Rating: 5 stars
+Been at this surgery for a long time, Dr Shah and all the other Dr’s, nurses and staff always do their best to help and have your best interests at heart.
+
+Author: Stuart Sephton
+Date: a year ago
+Rating: 5 stars
+Over the past few years I have suffered from health issues and Dr shah has always gone that extra mile to investigate my conditions thoroughly and treat me effectively! I highly recommend Elliot Street surgery
+
+Author: robert dunne
+Date: a year ago
+Rating: 4 stars
+Polite staff, Pleasant and helpful doctors. Today's technology can be confusing for elderly, so happily personal contact can still be achieved at this surgery.
+
+Author: Jess Ingham
+Date: a year ago
+Rating: 5 stars
+I can’t praise this surgery enough with excellent receptionists, always helpful, courteous and listen. Never had a problem with getting appointments or repeat prescriptions. The doctors and staff here are all brilliant. Could not be more helpful or compassionate and there for me and my family at our time of need. The ask my GP service is amazing too as I always receive a call back the same day with help and advice from either a doctor or nurse. A great practice.
+
+Author: Lorna Shaw
+Date: a year ago
+Rating: 5 stars
+We at Hillcest have worked with Dr Shah and his team. For over 8 years We always feel we are listened, he cares and makes time for our residents All the team Are so nice and helpful When ever we need anything. He take time with our Residents making sure needs are met as l well as asking how staff are if someone is ill
+
+Author: Ste Smallman
+Date: a year ago
+Rating: 5 stars
+Always feel very well looked after and cared for when seeing the doctors or nurses at Dr Shah surgery
+
+Author: Alyson Waring
+Date: a year ago
+Rating: 5 stars
+I have been a registered patient at the Surgery for a number of years, and found the service one of the best. You can always get to see someone in a timely manner, Dr Shah is extremely approachable along with all the staff that work alongside him. If anyone is looking for a family GP I would encourage them to make enquiries on becoming a patient.
+
+Author: Terry Holmes
+Date: a year ago
+Rating: 5 stars
+Elliott Street Surgery is a very professionally run practice and i would recommend this practice to anyone looking for first class service and treatment.
+
+Author: Sam Rosenbloom
+Date: a year ago
+Rating: 4 stars
+I have always found Dr. Shah to be very conscientious. He acts decisively if he suspects I might have a medical problem. The practice nurse, Bethany, is both efficient and personable.
+
+Author: Laura Binnion
+Date: a year ago
+Rating: 5 stars
+Would recommend. Well looked after and all staff and doctors are really friendly too.
+
+Author: Maria Hill
+Date: a year ago
+Rating: 5 stars
+Excellent support from all the staff at this surgery. Dr Shah and the team are knowledgeable, professional, understanding and very supportive of my husband’s complex medical issues
+
+Author: Natasha Parkinson
+Date: a year ago
+Rating: 5 stars
+Natasha Parkinsona year ago
+
+Author: Geoff Parkinson
+Date: a year ago
+Rating: 5 stars
+Good doctors
+
+Author: Keeley Newby
+Date: a year ago
+Rating: 5 stars
+I have been a patient at Elliott Street surgery for a long time now and have always had positive experiences. I recently went to see Dr Shah with a matter that was quite concerning for me and he put my kind at ease immediately and as it …
+
+Author: Eileen
+Date: a year ago
+Rating: 5 stars
+After visiting Dr Shah this morning about pain I have been having for a few weeks I came away feeling I had been listened too and happy with the treatment I received. Thankyou
+
+Author: Niall Teasdale
+Date: 2 years ago
+Rating: 4 stars
+Generally a good surgery. Can be a little difficult to contact but you can usually get through. Responsive.
+
+Author: graham ormrod
+Date: 2 years ago
+Rating: 5 stars
+graham ormrodLocal Guide · 35 reviews · 29 photos2 years ago
+
+Author: Karen Baylis
+Date: 2 years ago
+Rating: 5 stars
+My husband and I have been with this surgery for many years. Dr Shah and his medical team are excellent. Listening, questioning and empathetic skills, followed by common sense advice, medication or referrals, make visits and telephone calls so much easier. I have no hesitation in recommending this surgery.
+
+Author: Alison Daly
+Date: 2 years ago
+Rating: 5 stars
+Been with the practice now for 3 1/2 years . Have received excellent service always manage to consult with a clinician whether over phone , via email or in person . All staff very friendly and helpful. I’ve even been contacted at home at the weekend by my gp to make sure that I have the latest up to date information that I need.
+
+Author: Clive Parr
+Date: 2 years ago
+Rating: 5 stars
+Been with this surgery for years, never had a problem with Dr Shah and the nurses etc, over the years Dr Shah has been a lifesaver to me,can't thank him enough.
+
+Author: Siobhan Brown
+Date: 2 years ago
+Rating: 5 stars
+Always felt well looked after here , very good with my daughter with her complex medical care and even had calls to check in after being very unwell. Also seen same day were needed and always received call backs same day through ask my GP.
+
+Author: Isobel Hassall
+Date: 2 years ago
+Rating: 5 stars
+I took my daughter in to be checked over and her oxygen levels were low. The doctors acted really fast and rang an ambulance & also had oxygen on hand to help her. The GP’s were also really lovely with her and I am extremely grateful 🙌🏼 …
+
+Author: Jade Bond
+Date: 2 years ago
+Rating: 5 stars
+Overall great surgery. Can't fault the GP's and the receptionists are extremely helpful. Highly recommend.
+
+Author: Anna Williams
+Date: 2 years ago
+Rating: 5 stars
+Lisa is the best receptionist there
+
+Author: fasttrak digital Lomas
+Date: 2 years ago
+Rating: 5 stars
+Pleasent people up here
+
+Author: Metalhead_D
+Date: 2 years ago
+Rating: 5 stars
+Metalhead_D4 reviews2 years ago
+
+Author: M. S
+Date: 2 years ago
+Rating: 1 star
+A very poor service asking for emergency appointment the poor reception said they don't have any space, and after 2 min told me yes they have one and after 1 min said no they don't, even she don't know what to don. I am not happy with the doctors as well
+
+Author: Petra Cloherty
+Date: 3 years ago
+Rating: 5 stars
+I just wanted to say thank you to all the doctors and staff in this GP surgery. Not often I need the appointment but if I need it I will always get response. I usually use ask my GP online and I will get response during the same day. Even, if it’s a prescription for my daughter it will be processed within a day or two. All doctors are polite and receptionist aswell. Thank you again.
+
+Author: Leah
+Date: 3 years ago
+Rating: 1 star
+the rudest receptionist ive EVER spoken to. if you hate your job get a different one instead of taking it out on people asking for help. Everytime a good GP comes here, they leave after a short time and its no surprise why. you get treated like absolute rubbish at this surgery by Dr Shah. they have no regard for any of the individuals that attend this surgery and are clearly just there for money as opposed to wanting to help.
+
+Author: Tom Foster
+Date: 3 years ago
+Rating: 1 star
+Shocking reception service. My wife was told to wait for a phone call appointment through the ask my GP app. When they finally called (which isn't the issue) she was asleep due to her being ill with tight chest pains as she already suffers asthma and is on 3 medications. She rang back as soon as she realised and the receptionist thought it prudent to dictate to her how it was wrong of her to be asleep and that she needs to now wait 2 weeks for the next opportunity. This is shocking as the medical practitioners are great but the patients are being let down by the other staff.
+
+Author: Robert Smith
+Date: 3 years ago
+Rating: 1 star
+Have been messaged to arrange an appointment with the nurse. Not able to message back.Tried to ring but been kept on hold with the message that no "technicians" are available, then told to send details of the "fault" to an email address! On the surgery website I keep getting the message that the surgery is off-line. What should be a simple task in arranging an appointment is turning out to be a time consuming and annoying experience.
+
+Author: K
+Date: 4 years ago
+Rating: 5 stars
+Thank you to Dr Shah today and to his lovely assistant with the shiny shoes :-) there help with Janet today was above and beyond, same goes for Neil... Your all In my prayers..... Stay safe... Kat x
+
+Author: Loui Latchford
+Date: 4 years ago
+Rating: 1 star
+Cant be bothered to see you gets the receptionist to ring you back to tell you he has no appointments and to just go to a&e
+
+Author: Lisa Riley
+Date: 4 years ago
+Rating: 1 star
+I couldn’t praise this surgery enough when I first moved to the area. I recommended to anyone who asked. This went on for a good few years. Slowly things have deteriorated up until recent times when it has become awful. It is so difficult to make an appointment, I can’t imagine how impossible it must be for any elderly or technophobe to make one. The admin staff for the most part are lovely and then there are the ones who are not. I understand how difficult times are currently and we all have to adapt. Six minutes late for an appointment today 12pm because of road blockage right outside the surgery and was turned away. Yet I have sat on many occasions fifteen, twenty minutes after my appointment time because ‘they’re running behind’.
+
+Author: Samantha Lee
+Date: 4 years ago
+Rating: 2 stars
+When I first registered here in 2017 the service and care was excellent however in recent times they have been extremely poor to the point I have sent a written complaint in following a year long infection not properly diagnosed and treated, advising to go A&E for minor ailments and refusing to see a child in person due to them running a temperature presenting symptoms of tonsillitis but because of temperature would not see and in return would not prescribe... went walk in centre was tonsillitis... only good thing about this surgery is the nurse!
+
+Author: Rio Salisbury
+Date: 4 years ago
+Rating: 1 star
+Shocking, never a doctor there to see you, they don't care at all
+
+Author: Sue
+Date: 4 years ago
+Rating: 4 stars
+The mediscan diagnostic service was positive. Thanks Sadia and Basirat for enabling this
+
+Author: Andrew Wright
+Date: 4 years ago
+Rating: 1 star
+Dr Shah took over the surgery, and his predecessors were a very hard act to follow. Dr Shah was able to fill the void extremely well. Over the years, I have found doctor Shah to be a very professional and compassionate doctor. When I have consented to allow trainee doctors to be present during consultations, Dr Shah's professionalism was highlighted even more. When ever doctor Shah was unavailable, any member of his team that I was seen by, displayed all his professionalism and compassion. My poor rating is not in any way a reflection on doctor Shah. I wish to make that very clear. The problem does seem to be with the administrative side of the practice. It can seemingly take forever to get someone to answer the phone. The online service does seem to be hit and miss. It has taken me up to two days to access this system. On the occasion when the phone was answered, the advice given was just to go to A&E. This was always frowned upon in the past, because it meant that a large bill for A&E treatment would be presented to our surgery. I was recently on the point of being pestered over a Covid vaccination, even though I repeatedly told the surgery that I had already organised it myself. Due to recent illness, I was unable to attend, so I cancelled my vaccination appointment. Having finally got someone at our surgery to answer the phone today, I was told that the surgery can no longer organise covid vaccinations, and I will need to do it myself. No explanation was given as to why our surgery no longer has a clinic available, that seems to be just the way things are. I could never imagine giving the Elliot Street surgery a less than positive review. I do not know what has changed within the surgery over the last two years, but this is definitely not the same surgery that doctor Shah set up.
+
+Author: June Padley
+Date: 5 years ago
+Rating: 5 stars
+I had to contact the surgery recently. May I say how well I was treated by Marie. I have always been happy with the service provided. Thank you for being there especially during these challenging times
+
+Author: Will Taylor
+Date: 5 years ago
+Rating: 5 stars
+I have recently moved to the area. I have lived in 3 different counties and numerous towns. I have finally found a doctor that is capable of listening. I have no complaints at all. In fact I'm actually optimistic that my issues can finally be Resolved.
+
+Author: Nigel Haslam
+Date: 5 years ago
+Rating: 1 star
+What GP logo!
+
+Author: Julianna Cheetham
+Date: 5 years ago
+Rating: 5 stars
+Julianna Cheetham4 reviews5 years ago
+
+Author: julie balmer
+Date: 5 years ago
+Rating: 1 star
+Absolutely disgusting how long it takes to get through on the phone,then when you go in all you get is that it’s been really busy.the old staff were the best bring them back .
+
+Author: Ceri Jones
+Date: 6 years ago
+Rating: 5 stars
+Can't fault Dr Shah at all, been with this surgery since 2015 and I'd say best GP surgery around.
+
+Author: Libby Ruthven
+Date: 6 years ago
+Rating: 1 star
+The receptionists are absolutely unapproachable. They seem to have the attitude that their doing you a favour and your a nuisance just for asking questions. They have no idea how to speak to patients and really need extensive training. Many mistakes made by them and never an apology given.
+
+Author: Richard Bradley
+Date: 6 years ago
+Rating: 1 star
+Myself and my family are registered here, but seems like a void of common sense each time we try to get treatment for our children. Everything is a virus, and it turns out it isn't. We go only when absolutely required, but get feedback and diagnosis that is more often incorrect, then return visits are required. My little girl (6 year old), was dismissed as just having a bug - luckily we know our children well, and after hospital admission with an acute ear infection we fed this back to the surgery, but nothing seems to change. This is a business, not a care centre, and that's the way it comes across. I like Dr Shah, but his staff selection needs attention, particularly the snotty reception staff who obviously consider themselves to be GP's too.
+
+Author: Pitobsessive
+Date: 7 years ago
+Rating: 1 star
+Can never get an appointment here, receptionist’s never ever pick up the phone, could damn die waiting, even when you manage to get through once in a blue moon, they just tell you to ring at 8am and lunch time but they don’t pick up again leaving you to struggle. Doctors are useless and not accommodating with those with disabilities. Moving doctors ASAP, don’t bother coming here.
+
+Author: Chris Woodcock
+Date: 7 years ago
+Rating: 1 star
+This surgery has gone absolutly shocking, can never get an appointment. All they suggest is to ring at 8am and 12pm to try and get one of their urgent appointment, which you can never get through because other patients have the same idea. Have to resort to nhs111 to sort us out with out of hours appointments.
+
+Author: Maureen Provoost
+Date: 7 years ago
+Rating: 5 stars
+Thank you Dr Shah for being there One of the best!!!
+
+Author: Lucie Comber
+Date: 7 years ago
+Rating: 1 star
+Used to be a good, friendly and caring surgery. Now the staff have no manners, decency, professionalism, they are inept with a complete lack of client care. Even the practice manager can't spit out an apology or show any empathy.
+
+Author: Luke Davies
+Date: 7 years ago
+Rating: 5 stars
+I am registered at this doctor's and as long as your on the ball so are they
+
+Author: Viktoria Viktoria
+Date: 7 years ago
+Rating: 5 stars
+Very good
+
+Author: Dean Hemmings
+Date: 7 years ago
+Rating: 1 star
+Dean HemmingsLocal Guide · 14 reviews · 1 photo7 years ago
+
+Author: stephen broad
+Date: 8 years ago
+Rating: 4 stars
+stephen broadLocal Guide · 255 reviews · 243 photos8 years ago
+
+Author: martin bennett
+Date: 8 years ago
+Rating: 3 stars
+martin bennett1 review8 years ago
+
+Author: Rizwan Iftikhar
+Date: 9 years ago
+Rating: 4 stars
+Rizwan IftikharLocal Guide · 103 reviews · 43 photos9 years ago
+
+Author: Amanda Ingham
+Date: 9 years ago
+Rating: 5 stars
+After our GP of 34 years retired in 2005 Dr Shah took over the Practice. We are extremely pleased with all the alterations he has made to the surgery. The registration for my husband each child was quick and smooth. The receptionists are, without exception, helpful, courteous and efficient. They know us by name and always have a listening ear and a smile. The same applies to the GPs; I have dealt with three GPs at this practice and am very happy to see any one of them. Without fail, they have listened carefully to me and other members of my family and followed up on our consultations, referring us on if necessary to specialists, or managing the situation themselves. In fact, these doctors are people who bend over backwards to help their patients and to ease process, always taking time to discuss and explain. There is a culture of kind and caring attention in this surgery and this extends to all the professionals I have met there (including the nurse who does the blood tests, and I hate blood tests!) I cannot recommend The Elliott Street Surgery more highly.
+
+Author: Andrew Birtles
+Date: 9 years ago
+Rating: 1 star
+Worst GP I have ever had.
