@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. DOYLE & PARTNERS",
+  "canonical_code": "Z00260",
+  "postcode": "BT20 4LD",
+  "query_used": "DR. DOYLE & PARTNERS BT20 4LD",
+  "google_maps_title": "Dr M Maloy - Kuayside Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+M+Maloy+-+Kuayside+Medical+Practice/@55.0031123,-8.5416258,9z/data=!4m12!1m2!2m1!1sDR.+DOYLE+%26+PARTNERS+BT20+4LD!3m8!1s0x485fe180f1fffedd:0x29a2410d10f4516b!8m2!3d55.0031123!4d-7.3221434!9m1!1b1!15sCh1EUi4gRE9ZTEUgJiBQQVJUTkVSUyBCVDIwIDRMRJIBBmRvY3RvcuABAA!16s%2Fg%2F1tdd02f4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 40,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774098490988,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x485fe180f1fffedd%3A0x29a2410d10f4516b!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1seo2-afzGIM-_hbIPgP7u6AE!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUQya1lxRTNBRRAB\",[\"0x0:0x29a2410d10f4516b\",null,1652777389117052,1652777389117052,[null,null,[\"https://www.google.com/maps/contrib/117444783092661153452/reviews?hl\\u003den\"],null,null,[\"abdallah M jayyab\",\"https://lh3.googleusercontent.com/a-/ALV-UjUmYX6JrNhbVbaCJS-YvHaFjxs1K7uYk-wWHyvPPawtpKdECalW\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/117444783092661153452?hl\\u003den\"],\"117444783092661153452\",null,3,6,null,[0,3,1],1,[\"3 reviews\",null,null,null,null,[null,\"0ahUKEwiz_OLyh7GTAxXpeIQGHTNoLZQQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQya1lxRTNBRRAB!2m1!1s0x0:0x29a2410d10f4516b!3m1!1s2@1:CIHM0ogKEICAgID2kYqE3AE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUQya1lxRTNBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUQya1lxRTNBRRosChZDSUhNMG9nS0VJQ0FnSUQya1lxRVBBEhJDZ3NJcmNPTmxBWVE0S1RvTnciEgkAAAAAAAAAABFrUfQQDUGiKSoSQ2dzSXJjT05sQVlRNEtUb053\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiz_OLyh7GTAxXpeIQGHTNoLZQQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiz_OLyh7GTAxXpeIQGHTNoLZQQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

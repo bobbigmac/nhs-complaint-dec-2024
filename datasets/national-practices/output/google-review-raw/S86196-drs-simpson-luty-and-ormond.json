@@ -1,0 +1,26 @@
+{
+  "practice_name": "DRS SIMPSON, LUTY & ORMOND",
+  "canonical_code": "S86196",
+  "postcode": "PA13 4AP",
+  "query_used": "DRS SIMPSON, LUTY & ORMOND PA13 4AP",
+  "google_maps_title": "Simpson Dr L",
+  "google_maps_url": "https://www.google.com/maps/place/Simpson+Dr+L/@55.8932321,-4.6293227,17z/data=!4m8!3m7!1s0x4889b31d665df185:0x82f78225b8ec88a4!8m2!3d55.8932291!4d-4.6267424!9m1!1b1!16s%2Fg%2F1td3fm17?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 3,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774103052550,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4889b31d665df185%3A0x82f78225b8ec88a4!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s3aS-aa3gOaeAhbIPkYH1mQQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUQ2NV9EX29RRRAB\",[\"0x0:0x82f78225b8ec88a4\",null,1634136894864471,1634136894864471,[null,null,[\"https://www.google.com/maps/contrib/108059495572036030580/reviews?hl\\u003den\"],null,null,[\"George Riley\",\"https://lh3.googleusercontent.com/a/ACg8ocLrkYm04qh6_5gm5cTooLp5adligGsGy1l_MwOe3eq-TbpnLQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/108059495572036030580?hl\\u003den\"],\"108059495572036030580\",null,3,0,null,[0,2,1],0,[\"3 reviews\",null,null,null,null,[null,\"0ahUKEwjoyuzxmLGTAxXRI2MBHWC9H9kQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"awful receptionist who hung up on me multiple times when calling the surgery and asking a simple question. Absolutely wouldn't recommend even bothering with this place. Pure waste of time. would give 0 stars if I could.\",null,[0,219]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2NV9EX29RRRAB!2m1!1s0x0:0x82f78225b8ec88a4!3m1!1s2@1:CIHM0ogKEICAgID65_D_oQE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUQ2NV9EX29RRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUQ2NV9EX29RRRItChZDSUhNMG9nS0VJQ0FnSUQ2NV9EX1lREhNDZ3dJdnVhYml3WVEySS1ibkFNGi4KF0NJSE0wb2dLRUlDQWdJRDY1X0RfNFFFEhNDZ3dJdnVhYml3WVEySS1ibkFNIhIJAAAAAAAAAAARpIjsuCWC94IqE0Nnd0l2dWFiaXdZUTJJLWJuQU0\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjoyuzxmLGTAxXRI2MBHWC9H9kQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjoyuzxmLGTAxXRI2MBHWC9H9kQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE VERWOOD SURGERY",
+  "canonical_code": "J81030",
+  "postcode": "BH31 7PY",
+  "query_used": "THE VERWOOD SURGERY BH31 7PY",
+  "google_maps_title": "The Verwood Practice",
+  "google_maps_url": "https://www.google.com/maps/place/The+Verwood+Practice/@50.8819015,-1.8828863,17z/data=!3m1!5s0x4873bd859d377949:0xa4ad847ba676f6e!4m12!1m2!2m1!1sTHE+VERWOOD+SURGERY+BH31+7PY!3m8!1s0x4873bd8579830879:0xce3733c5da2e6b81!8m2!3d50.8818878!4d-1.8798802!9m1!1b1!15sChxUSEUgVkVSV09PRCBTVVJHRVJZIEJIMzEgN1BZkgEVcHVibGljX21lZGljYWxfY2VudGVy4AEA!16s%2Fg%2F11bzs_m276?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 26,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774096253226,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4873bd8579830879%3A0xce3733c5da2e6b81!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1seo2-afzGIM-_hbIPgP7u6AE!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNBbnVMYUFREAE\",[\"0x0:0xce3733c5da2e6b81\",null,1531151693161000,1531151693161000,[null,null,[\"https://www.google.com/maps/contrib/117928185616864801402/reviews?hl\\u003den\"],null,null,[\"CAROLINE PERRY\",\"https://lh3.googleusercontent.com/a/ACg8ocJS-Rqog-k9URJmXWDU6g2jJyZ81-A4G-_ueTub0Nyx-97cjw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/117928185616864801402?hl\\u003den\"],\"117928185616864801402\",null,1,0,null,[0,2,1],0,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjl-dvH_7CTAxUVEmMBHWN1OrQQ7LoGCAMoAA\"]]]],null,\"7 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"I have been with the surgery for five years and am now moving on due to a house move.  I have had some difficult health and emotional issues during this period, and wanted to thank the doctors, nurses and staff for their care and kindness.  Without such attention, particularly from Dr Garrett, I would not be in the position I am now, feeling well, working on my fitness, looking forward to starting my new life in my new home and community.  The surgery is efficiently run and when I had an emergency I was seen within 15 minutes, I doubt thatcan be beaten.  A huge thank you to an excellent team.\",null,[0,239]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbnVMYUFREAE!2m1!1s0x0:0xce3733c5da2e6b81!3m1!1s2@1:CIHM0ogKEICAgICAnuLaAQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNBbnVMYUFREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNBbnVMYUFREi0KF0NJSE0wb2dLRUlDQWdJQ0FudUxhZ1FFEhJDZ3NJellxTzJnVVF3TlRpVEEaLAoWQ0lITTBvZ0tFSUNBZ0lDQW51TGFRURISQ2dzSXpZcU8yZ1VRd05UaVRBIhIJAAAAAAAAAAARgWsu2sUzN84qEkNnc0l6WXFPMmdVUXdOVGlUQQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjl-dvH_7CTAxUVEmMBHWN1OrQQoykIBCgB\"],null,[null,[[1,1]]]],\"0ahUKEwjl-dvH_7CTAxUVEmMBHWN1OrQQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

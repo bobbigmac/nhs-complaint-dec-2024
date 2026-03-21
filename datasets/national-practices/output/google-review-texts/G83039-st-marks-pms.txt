@@ -1,0 +1,90 @@
+Practice: ST MARKS PMS
+Canonical code: G83039
+Postcode: SE18 3EP
+Google Maps title: Saint Marks Medical Centre
+Google rating: 3.5
+Google review count: 97
+Google Maps URL: https://www.google.com/maps/place/Saint+Marks+Medical+Centre/@51.4805803,0.0699969,17z/data=!4m8!3m7!1s0x47d8a8dda8a26687:0x924a7e39332ff433!8m2!3d51.480577!4d0.0725772!9m1!1b1!16s%2Fg%2F1th5hqjd?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.333
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 8
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/G83039-st-marks-pms.json
+
+Captured reviews
+================
+
+Author: Local Resident
+Date: 5 days ago
+Rating: 5 stars
+Exemplary medical care at this practice. E-consults are addressed extremely fast and doctors provide the best care. This practice epitomises the highest standards of care!
+
+Author: Christina Edwards
+Date: a month ago
+Rating: 1 star
+Awful surgery, time and time again I have problems with them. When my Grandfathers bisoprolol dose was increased by his consultants it took them a month to process it and a 20 minute phone call with the receptionist telling me I needed to order it which he couldn’t do because he’d never had it before. Now he’s been told to book an appointment and it says there is none available.
+Practice response date: a month ago
+Practice response:
+I am sorry to read your review of problems that you have encountered. Could I request you to contact the surgery with your grandfathers name so that we can look into this for you.
+
+Author: Somayya Umm Nabil
+Date: a month ago
+Rating: 5 stars
+We have been with this surgery for over 20 years and have found them to be very polite, professional and efficient. A special mention to Harpreet on reception for her continued kindness and efficiency and her efforts to help as much as she is able
+
+Author: David Oyedeji
+Date: a month ago
+Rating: 1 star
+I was told to wait but no one attended to me. There weren’t many people there yet I still couldn’t get help.
+Practice response date: 2 weeks ago
+Practice response:
+Could I request that you contact the practice so that we can have a full understanding of your concerns.
+
+Author: Catherine Haze
+Date: a month ago
+Rating: 1 star
+I’ve had repeated experiences at this practice where ongoing health concerns, particularly mental health-related ones, have been met with a patronising and dismissive attitude, especially from some nursing staff. As a result, I now avoid contacting or attending my GP unless absolutely necessary, as I expect the experience to be unpleasant rather than supportive. This is incredibly disheartening and not what patients should feel when seeking help.
+Practice response date: a month ago
+Practice response:
+We do not appear to have you as a registered patient at St Marks in SE18. There is another St Marks practice in W5.
+
+Author: Gregorio Farray
+Date: Edited 3 months ago
+Rating: 5 stars
+Maybe I finally found a GP after years of struggle im im the right path. Thamk You
+Practice response date: a year ago
+Practice response:
+We always aim to offer a good standard of service.
+
+Author: Suzanne
+Date: 3 months ago
+Rating: 5 stars
+Many thanks.
+Practice response date: a month ago
+Practice response:
+Many thanks.
+
+Author: Edward
+Date: 3 months ago
+Rating: 4 stars
+The practice is clean and well maintained, with an organised waiting room and helpful doctors and nurses. Staff are busy but attentive, and the link with Nightingale adds flexibility. Still, getting appointments or reaching reception can take a while.
+Practice response date: 3 months ago
+Practice response:
+Thank you for leaving your review. Another way for patients to contact the practice is via the NHS App. https://www.nhs.uk/nhs-app/
+
+Author: Janet Ling
+Date: 3 months ago
+Rating: 5 stars
+I’ve always had an excellent service from this practise. The reception staff are approachable and welcoming, the nurses are friendly and helpful and the doctors have always listened and treated me professionally with kindness
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to add a review. Glad you have had good experiences with St Marks.
+
+Author: Sarah Penhall
+Date: 4 months ago
+Rating: 4 stars
+Altho appointments are difficult to book, the staff are very nice and helpful. I always feel well looked after. The doctors are nurses are great, and the staff at the reception are helpful. Special mention to the lovely receptionist who helped me when I was very upset, as a first time mum who was incredibly sleepy deprived I really appreciated her kindness. The service has definitely improved since I first signed up. Not giving 5 stars as it can be hard to get an appointment still. X
+Practice response date: 3 months ago
+Practice response:
+Thank you for your honest review. Glad to hear that we have been able to provide the kindness when you have needed it.

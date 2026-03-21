@@ -1,0 +1,66 @@
+Practice: GALLOWHILL MEDICAL CENTRE
+Canonical code: S63512
+Postcode: ML9 1EX
+Google Maps title: Gallowhill Medical Centre
+Google rating: 4.4
+Google review count: 10
+Google Maps URL: https://www.google.com/maps/place/Gallowhill+Medical+Centre/@55.7372403,-3.9750522,17z/data=!4m8!3m7!1s0x4888147e3c6961d1:0xfa3adbf62dc62268!8m2!3d55.7372373!4d-3.9724719!9m1!1b1!16s%2Fg%2F1hc458xdh?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S63512-gallowhill-medical-centre.json
+
+Captured reviews
+================
+
+Author: George Moon
+Date: 3 months ago
+Rating: 5 stars
+Staff are very helpful
+
+Author: Margaret Laing
+Date: 11 months ago
+Rating: 5 stars
+Margaret Laing11 months ago
+
+Author: Daria Sofiienko
+Date: a year ago
+Rating: 5 stars
+Daria SofiienkoLocal Guide · 11 reviews · 2 photosa year ago
+
+Author: alice stephen
+Date: a year ago
+Rating: 5 stars
+alice stephen2 reviews · 1 photoa year ago
+
+Author: Anne Young
+Date: 2 years ago
+Rating: 5 stars
+Lovely helpful staff
+
+Author: John Douglas
+Date: 2 years ago
+Rating: 1 star
+Avoid registering here if you can, the doctor here is well known by all the hospitals in the area and nothing good can be said about him
+
+Author: Margaret Brown
+Date: 5 years ago
+Rating: 5 stars
+Margaret Brown1 review5 years ago
+
+Author: Jennifer McKidd
+Date: 6 years ago
+Rating: 5 stars
+Jennifer McKidd3 reviews6 years ago
+
+Author: Roye Peters
+Date: 6 years ago
+Rating: 5 stars
+Roye Peters6 years ago
+
+Author: Niall Aitcheson
+Date: 6 years ago
+Rating: 3 stars
+Niall AitchesonLocal Guide · 9 reviews6 years ago

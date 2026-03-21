@@ -10,6 +10,8 @@ yarn.lock
 venv/
 __pycache__
 site/dist/
+.tmp/
+tmp/
 site/.vite-src/
 site/local-dist/
 reviews_index.sqlite
