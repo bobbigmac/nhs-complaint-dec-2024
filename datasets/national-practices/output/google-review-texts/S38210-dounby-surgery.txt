@@ -1,0 +1,36 @@
+Practice: DOUNBY SURGERY
+Canonical code: S38210
+Postcode: KW17 2HH
+Google Maps title: Dounby Surgery
+Google rating: 3.5
+Google review count: 4
+Google Maps URL: https://www.google.com/maps/place/Dounby+Surgery/@59.0672825,-3.2340231,17z/data=!4m8!3m7!1s0x489a5626d0966d6b:0x6ed0fd191c82887c!8m2!3d59.0672798!4d-3.2314428!9m1!1b1!16s%2Fg%2F1wk6zbv5?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 4
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S38210-dounby-surgery.json
+
+Captured reviews
+================
+
+Author: Evan
+Date: 3 months ago
+Rating: 5 stars
+Excellent service. Doctor was calm, professional, and only slightly judgmental. Reception was efficient, waiting room magazines were from at least three different decades, which I respect. Would happily be medically assessed again
+
+Author: Andrew Bob
+Date: 3 months ago
+Rating: 1 star
+Been at the gp 2 times over my mental health and just been told to walk more or been giving leaflet by 2 different doctors But no real help for men with mental health
+
+Author: Chris Werb
+Date: 6 years ago
+Rating: 5 stars
+Really wonderful GP surgery. Literally saved my life. Very caring and understanding GPs. Very cheerful and fun nurses and admin staff make a big difference to the experience there.
+
+Author: AMANDA silver
+Date: Edited 8 years ago
+Rating: 3 stars
+Doctors care more about your smoking habits, whether you smoke or not

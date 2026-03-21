@@ -33,7 +33,7 @@ NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
-from deprivation.practice_deprivation_lookup import write_practice_deprivation_lookup
+from deprivation.practice_deprivation_lookup import load_cached_practice_deprivation_lookup, write_practice_deprivation_lookup
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
@@ -1494,6 +1494,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     deprivation_geojson = load_deprivation_subset_geojson()
     national_supplementals = build_national_map_supplementals()
     write_national_supplemental_script(path.parent / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME, national_supplementals)
+    all_practice_deprivation = load_cached_practice_deprivation_lookup()
     # Build a simple per-practice deprivation lookup JSON alongside the map
     practice_deprivation_lookup_path = path.parent / "practice_deprivation_lookup.json"
     practice_deprivation = write_practice_deprivation_lookup(practice_deprivation_lookup_path, rows)
@@ -2471,6 +2472,26 @@ body {{
       <p class="chart-note">X-axis is IMD 2025 decile (1 = most deprived). Y-axis changes with the selected score source, including the signed survey/Google gap.</p>
     </section>
     <section class="panel comparison-panel">
+      <div class="panel-heading-row">
+        <h2 id="national-deprivation-heading">National Score vs Deprivation</h2>
+        <div class="treemap-mode-control">
+          <label class="overlay-toggle-label check-toggle" title="Switch this national contrast panel from practice counts to summed registered-patient totals per deprivation/score cell.">
+            <input type="checkbox" id="national-deprivation-population-toggle">
+            <span>Sum Patients</span>
+            <span class="check-toggle-mark">✓</span>
+          </label>
+        </div>
+      </div>
+      <p id="national-deprivation-summary" class="hint"></p>
+      <div class="chart-frame">
+        <svg id="national-deprivation-chart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="national-deprivation-title" role="img">
+          <title id="national-deprivation-title">National selected score against deprivation decile</title>
+        </svg>
+      </div>
+      <p class="chart-note">This national contrast bins practices into deprivation-decile and score buckets. It can show either practice counts or summed registered-patient totals per cell, updates with the selected metric, and is only as complete as the persisted deprivation lookup.</p>
+      <p class="chart-note">We also have 100+ weird low-rated outliers in wealthy areas, and counting, that need follow-up investigation.</p>
+    </section>
+    <section class="panel comparison-panel">
       <h2 id="patient-change-heading">Registered Patients Over Time</h2>
       <p id="patient-change-summary" class="hint"></p>
       <div class="chart-frame">
@@ -2533,6 +2554,7 @@ const patientChangeAnalysis = {json.dumps(patient_change_analysis)};
 const knownManagementCompanies = {json.dumps(known_management_companies)};
 const deprivationGeojson = {json.dumps(deprivation_geojson, separators=(",", ":"))};
 const practiceDeprivationLookup = {json.dumps(practice_deprivation, separators=(",", ":"))};
+const allPracticeDeprivationLookup = {json.dumps(all_practice_deprivation, separators=(",", ":"))};
 const rowsByCode = new Map(rows.map((row) => [row.code, row]));
 const NEW_BANK_CODE = 'Y02960';
 const BASELINE_MANAGEMENT_COMPANY = 'GTD Healthcare';
@@ -2576,6 +2598,7 @@ let patientTreemapYearIndex = null;
 let patientTreemapPlaying = false;
 let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
+let nationalDeprivationUsePopulation = false;
 const GTD_MEAN_COLOR = '#b23322';
 
 const metricConfigs = {{
@@ -2697,6 +2720,37 @@ function numericOrNull(value) {{
   if (typeof value === 'string' && value.trim() === '') return null;
   const numeric = Number(value);
   return Number.isFinite(numeric) ? numeric : null;
+}}
+
+function metricColorForValue(metricName, value) {{
+  if (value === null || value === undefined || !Number.isFinite(Number(value))) return '#9aa0a6';
+  const numeric = Number(value);
+  if (metricName === 'google') {{
+    if (numeric < 2) return '#c3472f';
+    if (numeric < 3) return '#dc8c23';
+    if (numeric < 4) return '#d2b529';
+    if (numeric < 4.5) return '#4c9a52';
+    return '#1c7c54';
+  }}
+  if (metricName === 'survey') {{
+    if (numeric < 50) return '#c3472f';
+    if (numeric < 60) return '#dc8c23';
+    if (numeric < 70) return '#d2b529';
+    if (numeric < 80) return '#4c9a52';
+    return '#1c7c54';
+  }}
+  if (activeGapMode === 'normalized') {{
+    if (numeric >= 0.75) return '#1c7c54';
+    if (numeric >= 0.25) return '#4c9a52';
+    if (numeric > -0.25) return '#d2b529';
+    if (numeric > -0.75) return '#dc8c23';
+    return '#c3472f';
+  }}
+  if (numeric >= 1.0) return '#1c7c54';
+  if (numeric >= 0.5) return '#4c9a52';
+  if (numeric > -0.5) return '#d2b529';
+  if (numeric > -1.0) return '#dc8c23';
+  return '#c3472f';
 }}
 
 function standardDeviation(values) {{
@@ -4351,6 +4405,199 @@ function renderDeprivationChart() {{
     `${{points.length}} practices have both a usable ${{metric.title.toLowerCase()}} value and mapped IMD 2025 decile. Median decile is ${{depMedian === null ? '?' : depMedian}} and median ${{metric.title.toLowerCase()}} is ${{yMedian === null ? '?' : (activeMetric === 'survey' ? `${{Math.round(yMedian)}}%` : yMedian.toFixed(activeMetric === 'gap' ? 2 : 1))}}. Pearson r for score vs decile is ${{rValue === null ? '?' : rValue.toFixed(2)}}. Column tint shows whether each decile skews better (green), worse (red), or similar (grey) versus the overall distribution, with stronger colour meaning a more different distribution. Strongest departure is decile ${{strongestDecile && strongestDecile.pointCount ? strongestDecile.decile : '?'}}.`;
 }}
 
+function renderNationalDeprivationChart() {{
+  const metric = metricConfigs[activeMetric];
+  const heading = document.getElementById('national-deprivation-heading');
+  const summary = document.getElementById('national-deprivation-summary');
+  const svg = document.getElementById('national-deprivation-chart');
+  const populationToggle = document.getElementById('national-deprivation-population-toggle');
+  if (!heading || !summary || !svg) return;
+  if (populationToggle) {{
+    populationToggle.checked = nationalDeprivationUsePopulation;
+  }}
+  heading.textContent = `National Score vs Deprivation - Showing ${{metricDisplayLabel(activeMetric)}}`;
+
+  const combinedRows = rows.concat(nationalSupplementals);
+  const gapAxis = gapAxisInfo();
+  const points = combinedRows
+    .map((row) => {{
+      const dep = allPracticeDeprivationLookup[row.code];
+      if (!dep) return null;
+      const decile = numericOrNull(dep.imd_decile);
+      if (decile === null) return null;
+      const y = activeMetric === 'gap'
+        ? gapValue(row, {{ suppressSmall: false }})
+        : metric.value(row);
+      if (y === null) return null;
+      return {{ row, decile, y }};
+    }})
+    .filter(Boolean);
+
+  const width = 920;
+  const height = 320;
+  const margin = {{ top: 28, right: 18, bottom: 42, left: 52 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const headerBandY = 4;
+  const headerBandHeight = 17;
+  const headerTextY = 16;
+  const xMin = 1;
+  const xMax = 10;
+  const yMin = activeMetric === 'gap' ? gapAxis.min : metric.axisMin;
+  const yMax = activeMetric === 'gap' ? gapAxis.max : metric.axisMax;
+  const bucketCount = activeMetric === 'survey' ? 10 : activeMetric === 'gap' ? 10 : 10;
+  const bucketHeight = (yMax - yMin) / bucketCount;
+  const xBins = xMax - xMin + 1;
+  const cellWidth = plotWidth / xBins;
+  const cellHeight = plotHeight / bucketCount;
+
+  const xCenter = (decile) => margin.left + ((decile - xMin + 0.5) / xBins) * plotWidth;
+  const xBoundary = (boundaryIndex) => margin.left + (boundaryIndex / xBins) * plotWidth;
+  const yBoundary = (boundaryIndex) => margin.top + plotHeight - (boundaryIndex / bucketCount) * plotHeight;
+  const bucketMidValue = (bucketIndex) => yMin + bucketHeight * (bucketIndex + 0.5);
+  const aggregateValueForRow = (row) => {{
+    if (!nationalDeprivationUsePopulation) return 1;
+    const patients = numericOrNull(row.registered_patient_count);
+    return patients !== null && patients > 0 ? patients : 0;
+  }};
+  const formatCellValue = (value) => {{
+    if (value <= 0) return '';
+    if (!nationalDeprivationUsePopulation) return String(Math.round(value));
+    if (value >= 1000000) return `${{(value / 1000000).toFixed(value >= 10000000 ? 0 : 1)}}m`;
+    if (value >= 1000) return `${{(value / 1000).toFixed(value >= 100000 ? 0 : 1)}}k`;
+    return String(Math.round(value));
+  }};
+  const formatAggregateLong = (value) => {{
+    if (!nationalDeprivationUsePopulation) {{
+      const rounded = Math.round(value);
+      return `${{rounded.toLocaleString('en-GB')}} practice${{rounded === 1 ? '' : 's'}}`;
+    }}
+    return `${{Math.round(value).toLocaleString('en-GB')}} registered patients`;
+  }};
+
+  const cells = new Map();
+  const columnCounts = new Map(Array.from({{ length: xBins }}, (_, index) => [index + 1, 0]));
+  const columnPoints = new Map(Array.from({{ length: xBins }}, (_, index) => [index + 1, []]));
+  const columnBucketCounts = new Map(Array.from({{ length: xBins }}, (_, index) => [index + 1, Array.from({{ length: bucketCount }}, () => 0)]));
+  const overallBucketCounts = Array.from({{ length: bucketCount }}, () => 0);
+  points.forEach((point) => {{
+    const decile = Math.max(xMin, Math.min(xMax, Math.round(point.decile)));
+    const bucketIndex = Math.min(
+      bucketCount - 1,
+      Math.max(0, Math.floor(((Math.max(yMin, Math.min(yMax, point.y)) - yMin) / (yMax - yMin)) * bucketCount))
+    );
+    const key = `${{decile}}-${{bucketIndex}}`;
+    const aggregate = aggregateValueForRow(point.row);
+    cells.set(key, (cells.get(key) || 0) + aggregate);
+    columnCounts.set(decile, (columnCounts.get(decile) || 0) + aggregate);
+    columnPoints.get(decile).push(point);
+    columnBucketCounts.get(decile)[bucketIndex] += 1;
+    overallBucketCounts[bucketIndex] += 1;
+  }});
+
+  const maxCellCount = Math.max(0, ...Array.from(cells.values()));
+  const allLookupRows = combinedRows.filter((row) => allPracticeDeprivationLookup[row.code]);
+  const matchedRows = combinedRows.filter((row) => numericOrNull(allPracticeDeprivationLookup[row.code]?.imd_decile) !== null);
+  const overallMeanValue = mean(points.map((point) => point.y));
+  const cellMarkup = [];
+  const headerMarkup = [];
+  for (let decile = xMin; decile <= xMax; decile += 1) {{
+    const columnTotal = columnCounts.get(decile) || 0;
+    const decilePoints = columnPoints.get(decile) || [];
+    const columnMean = decilePoints.length ? mean(decilePoints.map((point) => point.y)) : null;
+    const counts = columnBucketCounts.get(decile) || Array.from({{ length: bucketCount }}, () => 0);
+    const shift = columnMean === null || overallMeanValue === null ? 0 : columnMean - overallMeanValue;
+    const jsd = decilePoints.length ? jensenShannonDivergence(counts, overallBucketCounts) : 0;
+    const shiftScale = Math.max(0.0001, (yMax - yMin) / 4);
+    const shiftStrength = clamp01(Math.abs(shift) / shiftScale);
+    const diffStrength = clamp01(jsd / 0.35);
+    const isNeutral = shiftStrength < 0.12;
+    const x0 = xBoundary(decile - xMin);
+    const x1 = xBoundary(decile - xMin + 1);
+    const headerLabel = columnMean === null
+      ? ''
+      : activeMetric === 'survey'
+        ? `${{Math.round(columnMean)}}%`
+        : columnMean.toFixed(activeMetric === 'gap' ? 2 : 1);
+    const headerFill = columnMean === null
+      ? 'rgba(26,28,26,0.14)'
+      : isNeutral
+        ? `hsl(215 12% ${{(82 - diffStrength * 14).toFixed(1)}}%)`
+        : shift >= 0
+          ? `hsl(151 58% ${{(58 - ((diffStrength * 10) + (shiftStrength * 6))).toFixed(1)}}%)`
+          : `hsl(12 64% ${{(58 - ((diffStrength * 10) + (shiftStrength * 6))).toFixed(1)}}%)`;
+    headerMarkup.push(`
+      <g>
+        <rect x="${{(x0 + 2).toFixed(2)}}" y="${{headerBandY.toFixed(2)}}" width="${{Math.max(0, x1 - x0 - 4).toFixed(2)}}" height="${{headerBandHeight}}" rx="6" fill="${{headerFill}}">
+          <title>IMD decile ${{decile}} average ${{metric.title.toLowerCase()}}: ${{headerLabel || 'n/a'}}. Column body is showing ${{formatAggregateLong(columnTotal)}}.</title>
+        </rect>
+        ${{headerLabel ? `<text x="${{((x0 + x1) / 2).toFixed(2)}}" y="${{headerTextY.toFixed(2)}}" text-anchor="middle" font-size="10.5" font-weight="700" fill="rgba(26,28,26,0.88)">${{headerLabel}}</text>` : ''}}
+      </g>
+    `);
+    for (let bucketIndex = 0; bucketIndex < bucketCount; bucketIndex += 1) {{
+      const key = `${{decile}}-${{bucketIndex}}`;
+      const count = cells.get(key) || 0;
+      const x = xBoundary(decile - xMin);
+      const y = yBoundary(bucketIndex + 1);
+      const bucketMid = bucketMidValue(bucketIndex);
+      const fill = metricColorForValue(activeMetric, bucketMid);
+      const opacity = count <= 0 || maxCellCount <= 0 ? 0.08 : 0.16 + (count / maxCellCount) * 0.72;
+      const label = formatCellValue(count);
+      const tooltipValue = activeMetric === 'survey'
+        ? `${{Math.round(bucketMid)}}%`
+        : bucketMid.toFixed(activeMetric === 'gap' ? 2 : 1);
+      cellMarkup.push(`
+        <g>
+          <rect x="${{x.toFixed(2)}}" y="${{y.toFixed(2)}}" width="${{cellWidth.toFixed(2)}}" height="${{cellHeight.toFixed(2)}}" fill="${{fill}}" fill-opacity="${{opacity.toFixed(3)}}" stroke="rgba(26,28,26,0.14)" stroke-width="1">
+            <title>IMD decile ${{decile}}, score bucket around ${{tooltipValue}}: ${{formatAggregateLong(count)}}</title>
+          </rect>
+          ${{label ? `<text x="${{(x + cellWidth / 2).toFixed(2)}}" y="${{(y + cellHeight / 2 + 4).toFixed(2)}}" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(26,28,26,0.84)">${{label}}</text>` : ''}}
+        </g>
+      `);
+    }}
+  }}
+
+  const yTicks = Array.from({{ length: bucketCount + 1 }}, (_, index) => yMin + bucketHeight * index);
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{headerMarkup.join('')}}
+    ${{Array.from({{ length: xBins + 1 }}, (_, idx) => idx).map((boundaryIndex) => `
+      <line x1="${{xBoundary(boundaryIndex)}}" y1="${{margin.top}}" x2="${{xBoundary(boundaryIndex)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.10)" />
+    `).join('')}}
+    ${{Array.from({{ length: bucketCount + 1 }}, (_, idx) => idx).map((boundaryIndex) => `
+      <line x1="${{margin.left}}" y1="${{yBoundary(boundaryIndex)}}" x2="${{width - margin.right}}" y2="${{yBoundary(boundaryIndex)}}" stroke="rgba(26,28,26,0.10)" />
+    `).join('')}}
+    ${{cellMarkup.join('')}}
+    ${{yTicks.slice(0, -1).map((tick, index) => {{
+      const bucketMid = tick + bucketHeight / 2;
+      const label = activeMetric === 'survey'
+        ? `${{Math.round(bucketMid)}}%`
+        : bucketMid.toFixed(activeMetric === 'gap' ? 2 : 1);
+      return `<text x="${{margin.left - 8}}" y="${{(yBoundary(index + 1) + cellHeight / 2 + 4).toFixed(2)}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{label}}</text>`;
+    }}).join('')}}
+    ${{Array.from({{ length: xBins }}, (_, idx) => idx + 1).map((tick) => `
+      <text x="${{xCenter(tick)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{tick}}</text>
+    `).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">IMD 2025 decile (1 = most deprived)</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">${{activeMetric === 'gap' ? gapAxis.label : metric.axisLabel}}</text>
+  `;
+
+  const unsupportedCount = combinedRows.filter((row) => {{
+    const dep = allPracticeDeprivationLookup[row.code];
+    return dep && dep.lookup_status === 'unsupported_nation';
+  }}).length;
+  const polygonOnlyCount = combinedRows.filter((row) => {{
+    const dep = allPracticeDeprivationLookup[row.code];
+    return dep && dep.lookup_status === 'matched_polygon_no_deprivation_index';
+  }}).length;
+  const topColumn = Array.from(columnCounts.entries()).sort((left, right) => right[1] - left[1])[0];
+  const totalAggregate = Array.from(cells.values()).reduce((sum, value) => sum + value, 0);
+  summary.textContent =
+    `${{points.length}} practices currently contribute to this national contrast panel. Cells are showing ${{nationalDeprivationUsePopulation ? 'summed registered patients' : 'practice counts'}} across a total of ${{formatAggregateLong(totalAggregate)}}. ${{allLookupRows.length}} loaded rows have some cached deprivation lookup state, and ${{matchedRows.length}} have numeric IMD deciles. The densest deprivation column is decile ${{topColumn ? topColumn[0] : '?'}} with ${{topColumn ? formatAggregateLong(topColumn[1]) : '0 practices'}}. ${{polygonOnlyCount}} rows currently only have polygon identity without a joined deprivation index, and ${{unsupportedCount}} are in nations not yet wired into this lookup.`;
+}}
+
 function renderPatientChangeChart() {{
   const svg = document.getElementById('patient-change-chart');
   const summary = document.getElementById('patient-change-summary');
@@ -5366,6 +5613,7 @@ function rerenderAll() {{
   renderGtdScoreTrendChart();
   renderScatterplot();
   renderDeprivationChart();
+  renderNationalDeprivationChart();
   renderPatientChangeChart();
   renderPatientTreemap();
   renderComparisons();
@@ -5400,6 +5648,7 @@ window.addEventListener('resize', () => {{
     updateStickyScoreControl();
     renderScatterplot();
     renderDeprivationChart();
+    renderNationalDeprivationChart();
     renderPatientChangeChart();
     renderPatientTreemap();
   }}, 120);
@@ -5424,6 +5673,11 @@ document.getElementById('normalize-patient-change-toggle').addEventListener('cha
   patientTreemapNormalizeForChange = event.target.checked;
   renderPatientChangeChart();
   renderPatientTreemap();
+}});
+
+document.getElementById('national-deprivation-population-toggle').addEventListener('change', (event) => {{
+  nationalDeprivationUsePopulation = event.target.checked;
+  renderNationalDeprivationChart();
 }});
 
 const scoreSourceControl = document.getElementById('score-source-control');
