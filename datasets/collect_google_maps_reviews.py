@@ -1333,6 +1333,9 @@ def load_query_overrides(path: Path) -> dict[str, str]:
 
 
 def resolve_query(row: dict[str, str], query_overrides: dict[str, str]) -> str:
+    prebuilt_query = str(row.get("google_maps_query", "")).strip()
+    if prebuilt_query:
+        return prebuilt_query
     keys = [
         row.get("canonical_code", "").strip(),
         row.get("practice_name", "").strip(),

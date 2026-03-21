@@ -1,0 +1,66 @@
+Practice: ST ANDREWS MEDICAL PRACTICE.
+Canonical code: E83024
+Postcode: N20 9EX
+Google Maps title: St Andrews Medical Practice
+Google rating: 3.5
+Google review count: 278
+Google Maps URL: https://www.google.com/maps/place/St+Andrews+Medical+Practice/@51.6301246,-0.1746562,17z/data=!4m8!3m7!1s0x487619c5f1767b41:0x62392299340aae7!8m2!3d51.6301213!4d-0.1720759!9m1!1b1!16s%2Fg%2F1txc6j9k?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/E83024-st-andrews-medical-practice.json
+
+Captured reviews
+================
+
+Author: Marime Mici ML
+Date: a day ago
+Rating: 5 stars
+Dr Rittu is so professional, we are very appreciated for your support and kindness. Thanks!
+
+Author: schah55
+Date: 3 days ago
+Rating: 5 stars
+I would like to share my experience with Dr Joanna Yong. She is an excellent and truly the best doctor I have seen. She was very kind, patient, and understanding throughout my appointment. She listened carefully to my concerns and made me feel comfortable and respected. In my opinion, she is one of the best doctors at the practice. I really appreciate her professionalism and caring attitude. I would highly recommend her to anyone looking for a great GP.
+
+Author: Richard Fox
+Date: 4 days ago
+Rating: 5 stars
+Went through the surgery’s Accurx online consultation platform Was able to get X-Ray and consultation booked with consultant within 2 weeks of result. Very efficient and impressive triage process. Thankyou!!
+
+Author: Ari Sarkar
+Date: 2 weeks ago
+Rating: 5 stars
+The doctors here are great. There's also a lift.
+
+Author: Hiba
+Date: a month ago
+Rating: 1 star
+Spectacularly poor experience with trying to sort out online access for my son. They haven’t figured out how to give me access for over 4 months now. Real shame given the main practice doctor is quite good but are being let down by very poor admin mgmt.
+
+Author: Simon Rogers
+Date: a month ago
+Rating: 1 star
+This is my GP practice.... Was refered there via hospital for a blood test and general health check.... Had 3 appointments booked... I only needed one of those.... Went there today.... And low and behold... They only took my blood pressure.... A 30 second job..... And expect me to come back tomorrpw again for the health check part??? Then told to go to Finchley memorial for a bloody test only for Finchley memorial to tell me they (St Andrews) are notorious for messing people around. And when you confront St Andrews they say oh it's receptions fault..... Their the bloody 1st point of contact. Don't use these guys.... Amateurs
+
+Author: K C
+Date: Edited 2 months ago
+Rating: 5 stars
+Jane Omokore today was first class!
+
+Author: Joanna Rash
+Date: 2 months ago
+Rating: 5 stars
+Joanna Rash2 months ago
+
+Author: Daniel Hassan
+Date: 2 months ago
+Rating: 5 stars
+Daniel Hassan1 review2 months ago
+
+Author: Hannah Patnick
+Date: 3 months ago
+Rating: 1 star
+Terrible surgery. Can’t get help for kids, they book appointments when you don’t need but can’t get urgent help even when following their process exactly. We’re now planning to leave after 20+ years.

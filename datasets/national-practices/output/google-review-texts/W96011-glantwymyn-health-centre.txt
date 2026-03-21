@@ -1,0 +1,31 @@
+Practice: GLANTWYMYN HEALTH CENTRE
+Canonical code: W96011
+Postcode: SY20 8AD
+Google Maps title: Glantwymyn Health Centre
+Google rating: 4.3
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Glantwymyn+Health+Centre/@52.6260266,-3.7444979,17z/data=!4m8!3m7!1s0x486f8a1920b34dfd:0x753437202ab6030c!8m2!3d52.6260234!4d-3.7419176!9m1!1b1!16s%2Fg%2F1tfch5yf?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/W96011-glantwymyn-health-centre.json
+
+Captured reviews
+================
+
+Author: Michael Brewer
+Date: 7 years ago
+Rating: 4 stars
+Reception staff friendly but difficult to get to see a doctor.
+
+Author: Hayley Stephens
+Date: 8 years ago
+Rating: 5 stars
+Proffessional, friendly practice. Efficient reception and dispensery staff. GP'S are very patient and have great expertise and listening skills. Surgery is spacious and well equiped in a beautiful setting!
+
+Author: Andy Barker
+Date: 10 years ago
+Rating: 4 stars
+Andy Barker10 years ago

@@ -1,0 +1,66 @@
+Practice: KINGSBRIDGE MEDICAL CENTRE
+Canonical code: M83141
+Postcode: ST5 3HP
+Google Maps title: Kingsbridge Medical Practice
+Google rating: 4.9
+Google review count: 526
+Google Maps URL: https://www.google.com/maps/place/Kingsbridge+Medical+Practice/@52.9934443,-2.2285492,17z/data=!4m8!3m7!1s0x487a67d82226dab1:0x5bd9256ef609d602!8m2!3d52.9934411!4d-2.2259689!9m1!1b1!16s%2Fg%2F1q6j3j282?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/M83141-kingsbridge-medical-centre.json
+
+Captured reviews
+================
+
+Author: Adam Share
+Date: a month ago
+Rating: 1 star
+GP’s just don’t want to see you
+
+Author: Craig Machin
+Date: 3 months ago
+Rating: 5 stars
+Nurse Bev and Carole the receptionist were extremely courteous and helpful with me at a recent visit. The waiting room and the consulting rooms are clean and pleasant. Very happy to have this as my surgery.
+
+Author: Kay Speedman
+Date: 3 months ago
+Rating: 5 stars
+I think the triage appointment form is an an amazing tool for the surgery. I have used it twice and both times my experience has been brilliant It’s time saving not only for the surgery but also for the patient as we are directed straight away to the most appropriate person in the practice Excellent system
+
+Author: Gill Austin
+Date: Edited 4 months ago
+Rating: 5 stars
+Gill AustinEdited 4 months ago
+
+Author: Julia
+Date: 4 months ago
+Rating: 5 stars
+Julia2 reviews4 months ago
+
+Author: Stuart Roger Brownridge
+Date: 4 months ago
+Rating: 4 stars
+Stuart Roger Brownridge4 months ago
+
+Author: Linda Day
+Date: Edited 4 months ago
+Rating: 5 stars
+Linda DayEdited 4 months ago
+
+Author: chris wilson
+Date: 4 months ago
+Rating: 1 star
+From the 5th of November you can no longer book an appointment. You have to wait for them to tell you a time after filling in a form. How am I supposed to get an appointment when I can’t have my phone out at work, then just drop everything at short notice. I’ll just ring 101, this is not a service for people who work and are in meetings all day.
+
+Author: Nick G
+Date: 4 months ago
+Rating: 5 stars
+Excellent
+
+Author: G Farrington
+Date: Edited 4 months ago
+Rating: 5 stars
+Very efficient

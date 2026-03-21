@@ -1,0 +1,66 @@
+Practice: CHRISTIANA HARTLEY MEDICAL PRACTICE
+Canonical code: N84013
+Postcode: PR8 6PL
+Google Maps title: Christiana Hartley Medical Practice
+Google rating: 3.3
+Google review count: 77
+Google Maps URL: https://www.google.com/maps/place/Christiana+Hartley+Medical+Practice/@53.639561,-2.9876862,17z/data=!4m8!3m7!1s0x487b3eedfe21eeff:0xd9c75890e965ae96!8m2!3d53.6395578!4d-2.9851059!9m1!1b1!16s%2Fg%2F11c6yzkvm6?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/N84013-christiana-hartley-medical-practice.json
+
+Captured reviews
+================
+
+Author: jess :o
+Date: 2 weeks ago
+Rating: 1 star
+Awful
+
+Author: Sian Beavers
+Date: 2 weeks ago
+Rating: 2 stars
+Reception staff are rude, often incorrect and regularly misinformed. Told my partner he needed to fill in a form at the practice to have access to his own medical records, which is a direct breach of GDPR. He saw today a male receptionist loudly and publicly give incorrect advice about a urine sample not requiring a syringe to an elderly lady who was utterly mortified. Medical guidelines/advice from the BMJ are cited as “the law” by the bean counters, instead of advice, to avoid providing a prescription that the GP agreed with! This practice has “lost” referrals repeatedly, reception staff are downright dismissive and entirely obnoxious to vulnerable, often ill people. I honestly don’t know how the reception staff got these jobs as they don’t have even a shred of common decency or empathy. Gave one extra star as there is one Aussie GP who is great.
+
+Author: Phil Ball
+Date: 3 months ago
+Rating: 5 stars
+Excellent service having previously been at St Marks I couldn't believe the uplift in service and appointments handling, highly recommended
+
+Author: Chris Smith
+Date: 3 months ago
+Rating: 4 stars
+Wonderful practitioners
+
+Author: Tony Johnson
+Date: 5 months ago
+Rating: 5 stars
+Caring and professional, excellent
+
+Author: Claire F
+Date: 7 months ago
+Rating: 1 star
+Very disappointing service received by my daughter yesterday who hardly ever bothers them for anything. Do better folks
+
+Author: Jon
+Date: 9 months ago
+Rating: 1 star
+Never get to see a doctor, last time I rang up for an appointment for my 18 month old son, I was told there are no doctors working. So we always have to see one of the nurses, who have now misdiagnosed my son on several different visits. Disgusting service, definitely do not recommend this 'doctors' surgery.
+
+Author: Jeremy Haworth
+Date: 10 months ago
+Rating: 5 stars
+Prompt and professional care and services
+
+Author: Steve Haw
+Date: 10 months ago
+Rating: 5 stars
+Huge thanks to one of your medical practitioner's, Carla Painter for her excellent and professional manner, expertise and advice following my appointment with her last week. She is a credit to the Practice. Thanks again, Steve Haw
+
+Author: Judith
+Date: 11 months ago
+Rating: 5 stars
+All the staff are very friendly, and also the doctors have been good with me,because I have so many physical health problems, and mental health issues, can't praise them high enough. Judith cook

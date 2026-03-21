@@ -1,0 +1,26 @@
+{
+  "practice_name": "FORENSIC MEDICAL SERVICES",
+  "canonical_code": "S30148",
+  "postcode": "AB24 3PT",
+  "query_used": "FORENSIC MEDICAL SERVICES AB24 3PT",
+  "google_maps_title": "Forensic Legal Services Ltd",
+  "google_maps_url": "https://www.google.com/maps/place/Forensic+Legal+Services+Ltd/@55.2713379,-6.6133757,7z/data=!4m12!1m2!2m1!1sFORENSIC+MEDICAL+SERVICES+AB24+3PT!3m8!1s0x487bb318d8507e57:0xe77f201f3158fb42!8m2!3d53.394344!4d-2.1971076!9m1!1b1!15sCiJGT1JFTlNJQyBNRURJQ0FMIFNFUlZJQ0VTIEFCMjQgM1BUkgEObGVnYWxfc2VydmljZXPgAQA!16s%2Fg%2F1yh9tw3x3?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 19,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774030091522,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487bb318d8507e57%3A0xe77f201f3158fb42!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sk3m9aeeuAdWehbIPrubC8QI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNnNlpMVHNnRRAB\",[\"0x0:0xe77f201f3158fb42\",null,1516015374429000,1575832669427918,[null,null,[\"https://www.google.com/maps/contrib/101832108326770912606/reviews?hl\\u003den\"],null,null,[\"Lord Sach Kumar\",\"https://lh3.googleusercontent.com/a-/ALV-UjUaJ1EUF47nmWyBzGfYyXcj-PCNUgfQAD40kI3q6ZgVJQR1AMo\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/101832108326770912606?hl\\u003den\"],\"101832108326770912606\",null,144,5,null,[1,6,1],87,[\"Local Guide · 144 reviews\",null,null,null,null,[null,\"0ahUKEwiN0a-Lia-TAxWzHmMBHYUGBiwQ7LoGCAMoAA\"]]]],null,\"Edited 6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Good and very helpful\",null,[0,21]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNlpMVHNnRRAB!2m1!1s0x0:0xe77f201f3158fb42!3m1!1s2@1:CIHM0ogKEICAgICg6ZLTsgE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNnNlpMVHNnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNnNlpMVHNnRRIuChdDSUhNMG9nS0VJQ0FnSUNNNS15SjlnRRITQ2d3STNaaTE3d1VRc0lXR3pBRRotChZDSUhNMG9nS0VJQ0FnSUNnNlpMVGNnEhNDZ3dJanA3eTBnVVF3SXJJekFFIhIJAAAAAAAAAAARQvtYMR8gf-cqE0Nnd0kzWmkxN3dVUXNJV0d6QUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiN0a-Lia-TAxWzHmMBHYUGBiwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiN0a-Lia-TAxWzHmMBHYUGBiwQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

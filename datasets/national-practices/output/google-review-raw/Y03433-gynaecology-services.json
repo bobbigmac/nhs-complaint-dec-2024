@@ -1,0 +1,26 @@
+{
+  "practice_name": "GYNAECOLOGY SERVICES",
+  "canonical_code": "Y03433",
+  "postcode": "E15 4BZ",
+  "query_used": "GYNAECOLOGY SERVICES E15 4BZ",
+  "google_maps_title": "Dr S Gynaegology - Gynaecology Services",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+S+Gynaegology+-+Gynaecology+Services/@51.5421608,0.0044376,17z/data=!4m8!3m7!1s0x47d8a78ebc65554d:0x912fa218b21edfb6!8m2!3d51.5421575!4d0.0070179!9m1!1b1!16s%2Fg%2F11frdw3dsy?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 3,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774026642759,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d8a78ebc65554d%3A0x912fa218b21edfb6!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sk3m9aeeuAdWehbIPrubC8QI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURqdHV5cnVnRRAB\",[\"0x0:0x912fa218b21edfb6\",null,1714694631524988,1714694631524988,[null,null,[\"https://www.google.com/maps/contrib/105006800387583468514/reviews?hl\\u003den\"],null,null,[\"Аліна Біла\",\"https://lh3.googleusercontent.com/a/ACg8ocIdw1UHkCerrcKiw2owORtwDTL9SmR4cDSsMn0oJ32ayoXBgw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/105006800387583468514?hl\\u003den\"],\"105006800387583468514\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwi_0ume_K6TAxVTBGMBHUnaNDUQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqdHV5cnVnRRAB!2m1!1s0x0:0x912fa218b21edfb6!3m1!1s2@1:CIHM0ogKEICAgIDjtuyrugE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURqdHV5cnVnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURqdHV5cnVnRRotChZDSUhNMG9nS0VJQ0FnSURqdHV5cmVnEhNDZ3dJNTlQUXNRWVE0TnlxLWdFIhIJAAAAAAAAAAARtt8eshiiL5EqE0Nnd0k1OVBRc1FZUTROeXEtZ0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi_0ume_K6TAxVTBGMBHUnaNDUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwi_0ume_K6TAxVTBGMBHUnaNDUQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

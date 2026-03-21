@@ -1,0 +1,66 @@
+Practice: SALISBURY MEDICAL PRACTICE
+Canonical code: J83021
+Postcode: SP2 7FD
+Google Maps title: Salisbury Medical Practice
+Google rating: 2.7
+Google review count: 185
+Google Maps URL: https://www.google.com/maps/place/Salisbury+Medical+Practice/@51.0726413,-1.8115713,17z/data=!4m8!3m7!1s0x4873ebe6379fe219:0x2f1cd1b396dd5d44!8m2!3d51.072638!4d-1.808991!9m1!1b1!16s%2Fg%2F1q5bntp0c?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/J83021-salisbury-medical-practice.json
+
+Captured reviews
+================
+
+Author: Tim Bishop
+Date: 3 weeks ago
+Rating: 2 stars
+The staff are all friendly and well-meaning and overall I have no problem with the actual medical service, but everything else apart from that is third-rate. No one has really seem to think through the systems – whether it is online, text messages or in person, the administration and support system around the delivery of medical service is remarkably poor and hopelessly inefficient, and consistently so. It simply puts more unnecessary strain on the NHS – wasting huge amount of their time and patients' time. It is not that they do not have enough managers – they simply have the wrong managers.They would not survive 10 minutes in the private sector.
+
+Author: Jacob
+Date: 2 months ago
+Rating: 1 star
+From my experiences with this GP, there isn't anything you can say to convince me that the NHS's crisis with money and availability isn't at least 50% self-inflicted. When you actually get to see a doctor here, 9/10 times its fine and you get decent care. Personally I have seen a doctor in that 1/10 times who clearly did not understand the severity of my issue, and did not prescribe a long enough course of medication despite being given all the information needed to make that call (backed up by my own research after the fact), and this has ended up with a condition that could have been treated probably within ~8 weeks that I have now been battling for nearly a year and a half and have been waiting for ~4 months for different medication that nobody has except for online pharmacies. They order tests that will ultimately be nullified due to an unwillingness to effectively follow up with you, and if you try to follow it up, they just ignore you. Wasting time and money. They do not respond to emails, they just don't, no matter how straightforward the query is. It seems you have to waste both your time and their time to call them for everything; then calling them is invariably a slog, and you have a 50/50 chance of getting someone willing to take ownership of the call and be helpful. Wasting time. Shutting off the online request system after a handful of hours into the working day is just pitiful, when you also refuse to answer emails, and its a lottery whether a phonecall will end up with someone actually being helpful or just badly explaining how their terribly inefficient system works with useless internal jargon; being unable to read that they are speaking to someone in clear mental distress who is just trying to get a hold of some medication, and they are not willing or cognizant enough to offer a really simple solution of signing me up to electronic prescriptions. I only found out that you need to be signed up to electronic prescriptions to use online pharmacies on the weekend after being to the in-person pharmacy (telling me they released the prescription because they don't have it and nobody local is likely to have it), then the GP over the phone (telling me the pharmacy hasn't released the prescription and I should go back to them and then play 'drug hunt' around the pharmacies that won't have it), then the pharmacy again over the phone (who reiterated that they released the prescription and that I also need to play 'drug hunt'). Why do you not a system telling you local medication stock at nearby pharmacies? Seems like a no-brainer to ensure you either prescribe something that can actually be acquired, or proactively forward people to online pharmacies when they aren't. That would actually save everyone time and money. I sent them an email asking them to advise what it takes to get signed up to electronic prescriptions, its been 3 months and they haven't responded. I have since opened a complaint 2 months ago, and enclosed my ignored email into the complaint, they still have not responded to the original email nor the complaint. I don't even know what to say anymore, but it seems like I need to explore switching to a different GP to see if the grass is any greener elsewhere.
+
+Author: Jamie Clarke
+Date: 3 months ago
+Rating: 1 star
+Doctors and nurses are all lovely- however the receptionists (especially one older lady) are rude, miserable and clearly hate people! Whether i’m simply calling up to try and make an appointment, or if I’ve come in to attend an appointment, this one older lady is just miserable and so rude and quite obviously needs to retire!
+
+Author: Tom Phippard
+Date: Edited 3 months ago
+Rating: 1 star
+Utterly useless system they are unable to give appointments with a specific time thus expect you to sit around all day waiting for a call. The receptionist that I spoke to was exceedingly rude and clearly hated people!!
+
+Author: Martin
+Date: 3 months ago
+Rating: 2 stars
+Martin3 months ago
+
+Author: Val Simmonds
+Date: 4 months ago
+Rating: 1 star
+They have excellent doctors who are overworked. Too many patients has turned this into not allowing people to walk in to make an appointment. Making patients responsible for reorder batches, even the elderly. Not being automatic by the doctors. Despite reordering batches, chemist within , belonging to Tandy, frequently not delivering batches , blaming the doctors surgery for not ordering the batches. This results in Tandy delivering, not the whole batch, but an odd item here or there.
+
+Author: Helen Pessell
+Date: 4 months ago
+Rating: 5 stars
+Over the past 2 months I have been very impressed with the speed my problems get dealt with. I have phoned and also used the online messaging service and with both I have spoken to a doctor within hours of my contacting them. Every doctor I have dealt with has been sympathetic, knowledgeable and helpful. It has improved considerably over the last couple of years. Thank you.
+
+Author: Bharati Li
+Date: 4 months ago
+Rating: 5 stars
+One of the best GP with great system online. Dont have to wait for call just submit online and GP will contact within few hours. Other routine appointments can also be requested online which is great. GP staffs are all helpful and would def recommend this anyone who lives within range.
+
+Author: matthew marsh
+Date: 5 months ago
+Rating: 1 star
+Waste of time better of private to get any answer I know a lot can not afford it but your own health will thank you
+
+Author: Alan Davies
+Date: 5 months ago
+Rating: 4 stars
+Recently had my flu jab. Easy to book and speedy process when having the vaccine. Didn't recognise a single person in the surgery which I think is a sad thing. I like the surgery but since the pandemic it has become so remote. They're the doctors yet I have to part diagnose which can't be right.

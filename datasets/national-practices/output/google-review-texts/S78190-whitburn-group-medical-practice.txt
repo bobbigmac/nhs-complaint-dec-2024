@@ -1,0 +1,41 @@
+Practice: WHITBURN GROUP MEDICAL PRACTICE
+Canonical code: S78190
+Postcode: EH47 0SD
+Google Maps title: Whitburn Group Medical Practice
+Google rating: 2.6
+Google review count: 5
+Google Maps URL: https://www.google.com/maps/place/Whitburn+Group+Medical+Practice/@55.8668649,-3.6915545,17z/data=!4m12!1m2!2m1!1sWHITBURN+GROUP+MEDICAL+PRACTICE+EH47+0SD!3m8!1s0x488875cdaabfffff:0xe3d06e5534d3fe54!8m2!3d55.8668498!4d-3.6889933!9m1!1b1!15sCihXSElUQlVSTiBHUk9VUCBNRURJQ0FMIFBSQUNUSUNFIEVINDcgMFNEWioiKHdoaXRidXJuIGdyb3VwIG1lZGljYWwgcHJhY3RpY2UgZWg0NyAwc2SSAQZkb2N0b3KaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUlVkVjlIYXpCQlJSQULgAQD6AQQIABAu!16s%2Fg%2F11j00s29c5?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S78190-whitburn-group-medical-practice.json
+
+Captured reviews
+================
+
+Author: Chid K
+Date: a month ago
+Rating: 1 star
+Staff member tutting and sighing on phone. Needs some training in how to deal with public.
+
+Author: Jennifer Gibson
+Date: 9 months ago
+Rating: 1 star
+Any attempt to get an appointment is in vain. Apparently doctors deal with nothing these days and you need to go to a pharmacy. Wasn’t aware receptionists were medically trained to make an assessment of patients needs.
+
+Author: Anya Poskier
+Date: a year ago
+Rating: 5 stars
+Very friendly staff
+
+Author: Saniya khan
+Date: a year ago
+Rating: 5 stars
+friendly staff, very helpful over the phone 👍🏽 …
+
+Author: Margaret Juliff
+Date: a year ago
+Rating: 1 star
+Be very lucky to get an appointment. Badly organised.

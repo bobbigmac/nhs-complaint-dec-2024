@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. THOMASIUS & PARTNERS",
+  "canonical_code": "Z00629",
+  "postcode": "BT49 0NA",
+  "query_used": "DR. THOMASIUS & PARTNERS BT49 0NA",
+  "google_maps_title": "Dr Heaney & Partners",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+Heaney+%26+Partners/@55.0481811,-6.9434446,17z/data=!4m12!1m2!2m1!1sDR.+THOMASIUS+%26+PARTNERS+BT49+0NA!3m8!1s0x4860113f3bcb1d49:0xedffecf90b4743d2!8m2!3d55.0482624!4d-6.9407925!9m1!1b1!15sCiFEUi4gVEhPTUFTSVVTICYgUEFSVE5FUlMgQlQ0OSAwTkGSAQZkb2N0b3LgAQA!16s%2Fg%2F1hc935ck5?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774041059128,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4860113f3bcb1d49%3A0xedffecf90b4743d2!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s9KW9aaqPFdWA9u8PiZnxkAk!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT2tkQlREVjZXR2gxWmkxUGQyOVFSR3BWWW5GaU5HYxAB\",[\"0x0:0xedffecf90b4743d2\",null,1765960716721017,1765960716721017,[null,null,[\"https://www.google.com/maps/contrib/101420389552854741343/reviews?hl\\u003den\"],null,null,[\"Fred Mee\",\"https://lh3.googleusercontent.com/a/ACg8ocKf79MaFCtdL6NjaowwFGVUR6EpfdpQ8W-G1ky-CdL-9ph74w\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/101420389552854741343?hl\\u003den\"],\"101420389552854741343\",null,18,2,null,[1,4,1],9,[\"Local Guide · 18 reviews\",null,null,null,null,[null,\"0ahUKEwiplcb4sa-TAxV5HmMBHcVgE9gQ7LoGCAMoAA\"]]]],null,\"3 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Been trying to get through for weeks.Got talking to a Doctor had my bloods done all ok but nothing after that.The phone system useless\",null,[0,134]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkQlREVjZXR2gxWmkxUGQyOVFSR3BWWW5GaU5HYxAB!2m1!1s0x0:0xedffecf90b4743d2!3m1!1s2@1:CAIQACodChtycF9oOkdBTDV6WGh1Zi1Pd29QRGpVYnFiNGc%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2tkQlREVjZXR2gxWmkxUGQyOVFSR3BWWW5GaU5HYxAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2tkQlREVjZXR2gxWmkxUGQyOVFSR3BWWW5GaU5HYxJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRrUWxSRVZqWlhSMmd4V21reFVHUXlPVkZTUjNCV1dXNUdhVTVIWXdvR2NtVjJhV1YzEgswZEZha0JleVNhWhpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRrUWxSRVZqWlhSMmd4V21reFVHUXlPVkZTUjNCV1dXNUdhVTVIWXdvR2NtRjBhVzVuEgswZEZha0JleVNhWiISCQAAAAAAAAAAEdJDRwv57P_tKgswZEZha0JleVNhWg\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiplcb4sa-TAxV5HmMBHcVgE9gQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiplcb4sa-TAxV5HmMBHcVgE9gQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

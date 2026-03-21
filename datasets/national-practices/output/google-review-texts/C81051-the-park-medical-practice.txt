@@ -1,0 +1,41 @@
+Practice: THE PARK MEDICAL PRACTICE
+Canonical code: C81051
+Postcode: DE21 6LA
+Google Maps title: Park Medical Practice
+Google rating: 2.2
+Google review count: 272
+Google Maps URL: https://www.google.com/maps/place/Park+Medical+Practice/@52.9262158,-1.4819302,13z/data=!4m12!1m2!2m1!1sTHE+PARK+MEDICAL+PRACTICE+DE21+6LA!3m8!1s0x4879ef001d584749:0x70cae11306c00cd9!8m2!3d52.9078795!4d-1.384624!9m1!1b1!15sCiJUSEUgUEFSSyBNRURJQ0FMIFBSQUNUSUNFIERFMjEgNkxBWiQiInRoZSBwYXJrIG1lZGljYWwgcHJhY3RpY2UgZGUyMSA2bGGSAQZkb2N0b3KaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVPVDFKc2JGVk9SR3h5WlZSQ1RrOUdTbGRrUmxWMFVsZEpNRkpZWXhBQuABAPoBBAgAEEc!16s%2Fg%2F11x0mt8vf_?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/C81051-the-park-medical-practice.json
+
+Captured reviews
+================
+
+Author: Jo C.
+Date: 2 months ago
+Rating: 5 stars
+Friendly and helpful staff and Clinicians. The new online system, whilst not perfect, has certainly made it less stressful to get an appointment.
+
+Author: Ami A
+Date: 3 months ago
+Rating: 4 stars
+Borrowash surgery greatly improved due to automated appointment system. In its infancy but works really well (takes a bit of learning to use effectively) but can choose GP/location & can get appointment in a week or so which is great. Staff helpful & professional. Had an issue with one of GPs who said he could not find the medication I had been taking in my records but I found it very easily on checking. Concerning.
+
+Author: Remskin Cole
+Date: 5 months ago
+Rating: 5 stars
+Fantastic nhs!
+
+Author: Julie Howes
+Date: 6 months ago
+Rating: 5 stars
+Welcoming surgery staff who always strive to meet with the demands made of them.
+
+Author: Sabi G
+Date: 6 months ago
+Rating: 5 stars
+Borrowash practice is more recommended, seems they are not as busy as the others? I've got a face to face appointment with a very kind doctor

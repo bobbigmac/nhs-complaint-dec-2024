@@ -1,0 +1,66 @@
+Practice: HAMPTON MEDICAL CENTRE
+Canonical code: F86712
+Postcode: E11 4BB
+Google Maps title: Hampton Medical Centre
+Google rating: 3.3
+Google review count: 63
+Google Maps URL: https://www.google.com/maps/place/Hampton+Medical+Centre/@51.5659112,-0.0007692,17z/data=!4m8!3m7!1s0x47d8a77d6acde063:0x689796c641ac3fe6!8m2!3d51.5659079!4d0.0018111!9m1!1b1!16s%2Fg%2F1hc2nfrwy?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/F86712-hampton-medical-centre.json
+
+Captured reviews
+================
+
+Author: Nerea
+Date: a week ago
+Rating: 5 stars
+I have been a patient of this surgery since I moved to Leytonstone in 2022 and they have always been really helpful and kind with anything that I have needed. I highly appreciate their support with my MH as later on I have been struggling more and both the receptionists and Dr A Khan have made sure that I feel cared of and that I receive all the support that I can get. Thank you so much
+
+Author: hgiyl
+Date: 2 weeks ago
+Rating: 5 stars
+The staff are always hospitable and the doctors have been helpful and supportive. Overall a very competent clinic and my needs have always been met.
+
+Author: Christelle Louw
+Date: 3 weeks ago
+Rating: 5 stars
+The reception staff are exceptional. They are so friendly and helpful, if there's no appointments available they will find one at Alum Clinic. I always feel that they listen and treat patients with dignity and care. The doctors are also professional and listen to your concerns. We have been very happy at this practice.
+
+Author: James Lomax
+Date: a month ago
+Rating: 5 stars
+The staff at Hampton Medical Centre have always gone above and beyond to make sure my family has been well looked after. They know our child by name and have always been so kind when we’ve had concerns. They are very proactive in caring for their patients and we were lucky to stumble upon them as a practice. We’ve recommended them to a number of local friends and wanted to echo that here.
+
+Author: Sunny Baggas
+Date: a month ago
+Rating: 5 stars
+Excellent service Everyone ftom Doctors,nurses and receptionists all very friendly and helpful
+
+Author: Rajanikant Patel
+Date: a month ago
+Rating: 3 stars
+A very efficient and empathetic Surgery. Appointments are given with in minimum lag time. Consultation with the Clinicians has been satisfactory and proactive. All the staff are friendly and helpful. May this service continue with upward adjustments if needed for the benefit of the Patients.
+
+Author: Chhaya Patel
+Date: a month ago
+Rating: 5 stars
+Very friendly and helpful staff. I use my NHS App for repeat prescription which is always dealt very promptly. When required it has always been easy to get an appointment with the medical staff.
+
+Author: Rupa Bagga
+Date: a month ago
+Rating: 5 stars
+Great service , helpful staff & Gp.
+
+Author: Harpreet Nijjar
+Date: a month ago
+Rating: 5 stars
+Needed an appointment last minute desperately the practise manager was so kind Anisha I think and I found the receptionist extremely helpful and accommodating and the doctors too . We are too quick to complain and leave bad reviews but I was extremely impressed by their service efficiency
+
+Author: salisha amin
+Date: a month ago
+Rating: 5 stars
+I constantly have a good experience here! Thank you for all of your hard work and care! I wouldn’t want to go anywhere else

@@ -1,0 +1,66 @@
+Practice: RAWSON ROAD MEDICAL CENTRE
+Canonical code: N84615
+Postcode: L21 1HP
+Google Maps title: Rawson Road Medical Centre
+Google rating: 4.5
+Google review count: 92
+Google Maps URL: https://www.google.com/maps/place/Rawson+Road+Medical+Centre/@53.4693932,-3.018756,17z/data=!4m8!3m7!1s0x487b24704b7c8881:0xc6d992ed396e8514!8m2!3d53.46939!4d-3.0161757!9m1!1b1!16s%2Fg%2F1tpf6p2f?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/N84615-rawson-road-medical-centre.json
+
+Captured reviews
+================
+
+Author: AmanuelA
+Date: 3 weeks ago
+Rating: 1 star
+Very poor service
+
+Author: Liliana Stella Santos Zárate
+Date: a month ago
+Rating: 1 star
+Terrible service, as bad as the NHS call service for booking an appointment 😞 …
+
+Author: Sara Parker
+Date: 3 months ago
+Rating: 5 stars
+Just registered here after a bad experience with GP nearby. Quick excellent service, and professional staff.
+
+Author: Elizabeth Rice
+Date: 6 months ago
+Rating: 5 stars
+The reception staff are always nice and helpful. They outshine any doctors I've been to.
+
+Author: Dave Torrance
+Date: 6 months ago
+Rating: 5 stars
+It's a.doctora , ring up make an appointment and go .
+
+Author: Helena Price
+Date: 11 months ago
+Rating: 5 stars
+Reception staff are very friendly and helpful dr dare is fantastic he listens and is very thorough with investigations and examinations everyone who I have dealt with in this surgery are professional,friendly and listen instead of fobbing you off. I Couldn't ask for a better doctors 🙂
+
+Author: carolann rimmer
+Date: a year ago
+Rating: 1 star
+Can't be bothered to listen to what u have to say make many false diagnosis
+
+Author: Gillian Thurlow
+Date: a year ago
+Rating: 5 stars
+Only went for test sent from my own Dr's surgery. Very friendly
+
+Author: Mamush Kemal
+Date: a year ago
+Rating: 1 star
+Appointment progress is very poor and die way. The service is very nice
+
+Author: marie Woodcock
+Date: 2 years ago
+Rating: 1 star
+Staff are really helpful, but the doctors don’t describe my medication when l need it they are not thinking about my needs, l do really need a doctor who listens

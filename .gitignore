@@ -13,3 +13,4 @@ __pycache__
 site/dist/
 site/.vite-src/
 site/local-dist/
+reviews_index.sqlite

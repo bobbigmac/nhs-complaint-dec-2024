@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR M KHAN",
+  "canonical_code": "S46151",
+  "postcode": "G40 3LJ",
+  "query_used": "DR M KHAN G40 3LJ",
+  "google_maps_title": "Dr M Khan - Longsight Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+M+Khan+-+Longsight+Medical+Practice/@54.6403208,-5.8868331,7z/data=!4m12!1m2!2m1!1sDR+M+KHAN+G40+3LJ!3m8!1s0x487bb17d92597339:0xe4b61fe27f673738!8m2!3d53.457586!4d-2.2018615!9m1!1b1!15sChFEUiBNIEtIQU4gRzQwIDNMSpIBBmRvY3RvcuABAA!16s%2Fg%2F11j53m8y8c?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 62,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774030384066,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487bb17d92597339%3A0xe4b61fe27f673738!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sk3m9aeeuAdWehbIPrubC8QI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnTUNvb3FDczdnRRAB\",[\"0x0:0xe4b61fe27f673738\",null,1744739646651931,1744739646651931,[null,null,[\"https://www.google.com/maps/contrib/111152061143480124289/reviews?hl\\u003den\"],null,null,[\"Funsa\",\"https://lh3.googleusercontent.com/a/ACg8ocLv23jVQE189ON8hs7xv0GYuwsNJ_0KyY44ECs2jQp1xbIooA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/111152061143480124289?hl\\u003den\"],\"111152061143480124289\",null,1,0,null,[0,1,1],1,[\"1 review\",null,null,null,null,[null,\"0ahUKEwi6p-6Wiq-TAxXIEmMBHcs6IbYQ7LoGCAMoAA\"]]]],null,\"11 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb3FDczdnRRAB!2m1!1s0x0:0xe4b61fe27f673738!3m1!1s2@1:CIHM0ogKEICAgMCooqCs7gE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnTUNvb3FDczdnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnTUNvb3FDczdnRRotChZDSUhNMG9nS0VJQ0FnTUNvb3FDc0hnEhNDZ3dJdnJyNnZ3WVEtTnJ1dGdJIhIJAAAAAAAAAAARODdnf-IftuQqE0Nnd0l2cnI2dndZUS1OcnV0Z0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi6p-6Wiq-TAxXIEmMBHcs6IbYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwi6p-6Wiq-TAxXIEmMBHcs6IbYQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMjVHWVdOT1JWOWZSV2hFWVV4blRsbE5kMHAwVW14M1IyMTFkMEZCUVVGQlIyZG1YMEZ0YmtaaFkwNUZSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURSc3JUVlJ3EAE\",[\"0x0:0xe4b61fe27f673738\",null,1682110775505189,1682110775505189,[null,null,[\"https://www.google.com/maps/contrib/106775847444072696377/reviews?hl\\u003den\"],null,null,[\"balwinder kaur\",\"https://lh3.googleusercontent.com/a-/ALV-UjXAkBfnUdzKvyinjklliuBsnhAF3aKifPuqE9-vXyCmbHzkXKOf0w\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106775847444072696377?hl\\u003den\"],\"106775847444072696377\",null,0,0,null,[0,2,1],6,[\"\",null,null,null,null,[null,\"0ahUKEwi6p-6Wiq-TAxXIEmMBHcs6IbYQ7LoGCAYoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSc3JUVlJ3EAE!2m1!1s0x0:0xe4b61fe27f673738!3m1!1s2@1:CIHM0ogKEICAgIDRsrTVRw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURSc3JUVlJ3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURSc3JUVlJ3Gi4KF0NJSE0wb2dLRUlDQWdJRFJzclRWeHdFEhNDZ3dJdF9LTG9nWVFpS1h5OEFFIhIJAAAAAAAAAAARODdnf-IftuQqE0Nnd0l0X0tMb2dZUWlLWHk4QUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi6p-6Wiq-TAxXIEmMBHcs6IbYQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwi6p-6Wiq-TAxXIEmMBHcs6IbYQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

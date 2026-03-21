@@ -1,0 +1,66 @@
+Practice: SCOTT ROAD MEDICAL CENTRE
+Canonical code: B82097
+Postcode: YO8 4BL
+Google Maps title: Scott Road Medical Centre
+Google rating: 3.5
+Google review count: 68
+Google Maps URL: https://www.google.com/maps/place/Scott+Road+Medical+Centre/@53.7858053,-1.0758729,17z/data=!4m8!3m7!1s0x48793cf9f23cbd25:0xf8fb92b623c27aba!8m2!3d53.7858022!4d-1.0732926!9m1!1b1!16s%2Fg%2F1tfxg5zx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/B82097-scott-road-medical-centre.json
+
+Captured reviews
+================
+
+Author: Janice Wood
+Date: 8 hours ago
+Rating: 5 stars
+Always good. Easy parking. Friendly staff
+
+Author: Em
+Date: 3 weeks ago
+Rating: 5 stars
+Personally always had amazing service here never once felt let down. Dr Wilcockson is great and so friendly. Nurse Louise is amazing too always makes me feel so comfortable, both a credit to the place
+
+Author: Ashley Westerby
+Date: a month ago
+Rating: 1 star
+Terrible
+
+Author: Dazneyland
+Date: 2 months ago
+Rating: 1 star
+Recently changed doctors and my days are they rubbish. They seem to be like a call centre and fob you off to other places...because they cannot be bothered to actually help. Do your job -- some of us work and not sponging off the government to sit in A&E for 5 hours. Shouldn't be so hard to get an appointment - my last was able to do it all online, they called you within a day and got you on either the day or within that week.
+
+Author: Wendy Smith
+Date: 2 months ago
+Rating: 5 stars
+Thankyou for the great service I received this morning. Had a call back from Clinician within 20 mins and had the tablets I needed within the hour. Thankyou so much!
+
+Author: Matthew Dore
+Date: Edited 3 months ago
+Rating: 1 star
+Easier to get an appointment with a purple unicorn
+
+Author: Bethany Telling
+Date: 3 months ago
+Rating: 5 stars
+Great care from the doctors and nurses in this practice. Reception were always friendly and able to get appointments when needed.
+
+Author: lee swinbank
+Date: 3 months ago
+Rating: 1 star
+Terrible gp practice, phoned at 8 am then called back once it was my turn in the queue. To be told they weren’t seeing anyone and I would have to make my own way to the hospital. The hospital that was obviously now over ran with patients, told the wait time was over 3 hours. So sending people with a chest infection when they have a respiratory disease into a crowded hospital waiting room for over 3 hours? No medication received and no help whatsoever and left to fend for yourself. Disgraceful and not fit for purpose.
+
+Author: Mark Schofield
+Date: 6 months ago
+Rating: 1 star
+Terrible, just Terrible.
+
+Author: Simon West
+Date: 7 months ago
+Rating: 1 star
+Unhelpful in general, obtuse at best. Can't wait to switch away from this awful practice.

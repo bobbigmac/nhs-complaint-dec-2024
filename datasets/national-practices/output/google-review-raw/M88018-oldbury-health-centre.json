@@ -1,0 +1,26 @@
+{
+  "practice_name": "OLDBURY HEALTH CENTRE",
+  "canonical_code": "M88018",
+  "postcode": "B69 4DE",
+  "query_used": "OLDBURY HEALTH CENTRE B69 4DE",
+  "google_maps_title": "Oldbury Health Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Oldbury+Health+Centre/@52.5043829,-2.0167672,17z/data=!4m8!3m7!1s0x4870970005673213:0x9c49a3efe78ec799!8m2!3d52.5043797!4d-2.0141869!9m1!1b1!16s%2Fg%2F11n42q64xh?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774048028511,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4870970005673213%3A0x9c49a3efe78ec799!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s6dG9affGCK6ohbIPhrf0gAI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT2pWS2FWbEllV2RIUldkcFV6QlNNMHQ0YjFaa2JVRRAB\",[\"0x0:0x9c49a3efe78ec799\",null,1773396084753747,1773396084753747,[null,null,[\"https://www.google.com/maps/contrib/100508064492640561362/reviews?hl\\u003den\"],null,null,[\"T K\",\"https://lh3.googleusercontent.com/a/ACg8ocLt-UdCoJrAMDeejn7E4jUDoef8hS3Kc8P6CnBgqADslPeN8A\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/100508064492640561362?hl\\u003den\"],\"100508064492640561362\",null,17,0,null,[1,4,1],1,[\"Local Guide · 17 reviews\",null,null,null,null,[null,\"0ahUKEwib5bL0y6-TAxUqMmMBHTPLMmEQ7LoGCAMoAA\"]]]],null,\"a week ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"The worst in oldbury, receptionist told me to kill myself when i told her i had anxiety they rather us drop dead than deal with us and just hand out appointments\",null,[0,161]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWS2FWbEllV2RIUldkcFV6QlNNMHQ0YjFaa2JVRRAB!2m1!1s0x0:0x9c49a3efe78ec799!3m1!1s2@1:CAIQACodChtycF9oOjVKaVlIeWdHRWdpUzBSM0t4b1ZkbUE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2pWS2FWbEllV2RIUldkcFV6QlNNMHQ0YjFaa2JVRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2pWS2FWbEllV2RIUldkcFV6QlNNMHQ0YjFaa2JVRRJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBXUzJGV2JFbGxWMlJJVWxka2NGVjZRbE5OTUhRMFlqRmFhMkpWUlFvR2NtVjJhV1YzEgswZGd5MG9ndkpRNhpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBXUzJGV2JFbGxWMlJJVWxka2NGVjZRbE5OTUhRMFlqRmFhMkpWUlFvR2NtRjBhVzVuEgswZGd5MG9ndkpRNiISCQAAAAAAAAAAEZnHjufvo0mcKgswZGd5MG9ndkpRNg\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwib5bL0y6-TAxUqMmMBHTPLMmEQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwib5bL0y6-TAxUqMmMBHTPLMmEQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMDFhVjNwbWRWOWZSV2hEY2xRNWVGVkxURFJ6UkV3NFR6RlVPRUZCUVVGQlIyZG1YMEZ0VFZwWGVtWjFSMEZCYVVGQg\\u003d\\u003d\"],[[\"Ci9DQUlRQUNvZENodHljRjlvT2xCUGVVbHNUWGhDWmpGMlkwRkhRa0ptZW14TE5tYxAB\",[\"0x0:0x9c49a3efe78ec799\",null,1771856057170372,1771856057170372,[null,null,[\"https://www.google.com/maps/contrib/110130956467851273869/reviews?hl\\u003den\"],null,null,[\"Chan Hung Leung\",\"https://lh3.googleusercontent.com/a-/ALV-UjWuJ2N6S5TOD60Jds4Off6orJLzjK8cb1PHejpl5j2R7tP60A\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/110130956467851273869?hl\\u003den\"],\"110130956467851273869\",null,4,109,null,[1,5,1],17,[\"Local Guide · 4 reviews\",null,null,null,null,[null,\"0ahUKEwib5bL0y6-TAxUqMmMBHTPLMmEQ7LoGCAYoAA\"]]]],null,\"3 weeks ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCUGVVbHNUWGhDWmpGMlkwRkhRa0ptZW14TE5tYxAB!2m1!1s0x0:0x9c49a3efe78ec799!3m1!1s2@1:CAIQACodChtycF9oOlBPeUlsTXhCZjF2Y0FHQkJmemxLNmc%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2xCUGVVbHNUWGhDWmpGMlkwRkhRa0ptZW14TE5tYxAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2xCUGVVbHNUWGhDWmpGMlkwRkhRa0ptZW14TE5tYxpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhDVUdWVmJITlVXR2hEV21wR01sa3dSa2hSYTBwdFpXMTRURTV0WXdvR2NtRjBhVzVuEgswZGI1MXQ5OHVzdyISCQAAAAAAAAAAEZnHjufvo0mcKgswZGI1MXQ5OHVzdw\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwib5bL0y6-TAxUqMmMBHTPLMmEQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwib5bL0y6-TAxUqMmMBHTPLMmEQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

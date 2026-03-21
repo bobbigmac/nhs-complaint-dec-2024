@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE SURGERY",
+  "canonical_code": "W95034",
+  "postcode": "CF33 6DE",
+  "query_used": "THE SURGERY CF33 6DE",
+  "google_maps_title": "Dr S K P mohajer-the Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+S+K+P+mohajer-the+Surgery/@51.5205739,-3.7242564,15z/data=!4m12!1m2!2m1!1sTHE+SURGERY+CF33+6DE!3m8!1s0x486e65f4d97056c3:0xe3c6ca4867e4e84c!8m2!3d51.5205739!4d-3.705202!9m1!1b1!15sChRUSEUgU1VSR0VSWSBDRjMzIDZERZIBBmRvY3RvcuABAA!16s%2Fg%2F1tdhdfp6?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 15,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774053987118,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x486e65f4d97056c3%3A0xe3c6ca4867e4e84c!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s6dG9affGCK6ohbIPhrf0gAI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNBNE02UzNRRRAB\",[\"0x0:0xe3c6ca4867e4e84c\",null,1410525602832000,1410525602832000,[null,null,[\"https://www.google.com/maps/contrib/105970392570412043309/reviews?hl\\u003den\"],null,null,[\"Penny Whitehouse\",\"https://lh3.googleusercontent.com/a-/ALV-UjX11wCat9hA5Z99DYmWmqy6IZ5z_LcWSLQgWwpAacxuCaaI51sM\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/105970392570412043309?hl\\u003den\"],\"105970392570412043309\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwi8ycuM4q-TAxUkI2MBHd3XBs0Q7LoGCAMoAA\"]]]],null,\"11 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBNE02UzNRRRAB!2m1!1s0x0:0xe3c6ca4867e4e84c!3m1!1s2@1:CIHM0ogKEICAgICA4M6S3QE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNBNE02UzNRRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNBNE02UzNRRRotChZDSUhNMG9nS0VJQ0FnSUNBNE02U1BREhNDZ3dJb3RQTG9BVVFnS0RkakFNIhIJAAAAAAAAAAARTOjkZ0jKxuMqE0Nnd0lvdFBMb0FVUWdLRGRqQU0\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi8ycuM4q-TAxUkI2MBHd3XBs0QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwi8ycuM4q-TAxUkI2MBHd3XBs0Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

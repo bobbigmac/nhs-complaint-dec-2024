@@ -1,0 +1,26 @@
+{
+  "practice_name": "NIDDERDALE GROUP PRACTICE",
+  "canonical_code": "B82004",
+  "postcode": "HG3 5AT",
+  "query_used": "NIDDERDALE GROUP PRACTICE HG3 5AT",
+  "google_maps_title": "Nidderdale Group Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Nidderdale+Group+Practice/@54.0868046,-1.7632062,17z/data=!4m8!3m7!1s0x487c00bb8ce56cb7:0xa53fe922f9c5d720!8m2!3d54.0868015!4d-1.7606259!9m1!1b1!16s%2Fg%2F1w0q_gll?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 4,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774056086385,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487c00bb8ce56cb7%3A0xa53fe922f9c5d720!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1saeu9acaSKa2mhbIPi4Gq0As!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnTURBc0llYnJBRRAB\",[\"0x0:0xa53fe922f9c5d720\",null,1738839213539832,1738839213539832,[null,null,[\"https://www.google.com/maps/contrib/111923202155387466679/reviews?hl\\u003den\"],null,null,[\"Rachel B\",\"https://lh3.googleusercontent.com/a/ACg8ocLGc_DR53I_n_mmK_fFE2LxHLMaf2jBMhsep_vBaSit1F9qTw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/111923202155387466679?hl\\u003den\"],\"111923202155387466679\",null,9,0,null,[0,3,1],7,[\"9 reviews\",null,null,null,null,[null,\"0ahUKEwiCm9D26a-TAxVBJ2MBHTKnFlgQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURBc0llYnJBRRAB!2m1!1s0x0:0xa53fe922f9c5d720!3m1!1s2@1:CIHM0ogKEICAgMDAsIebrAE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnTURBc0llYnJBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnTURBc0llYnJBRRotChZDSUhNMG9nS0VJQ0FnTURBc0llYmJBEhNDZ3dJcmFtU3ZRWVF3TjIwZ1FJIhIJAAAAAAAAAAARINfF-SLpP6UqE0Nnd0lyYW1TdlFZUXdOMjBnUUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiCm9D26a-TAxVBJ2MBHTKnFlgQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiCm9D26a-TAxVBJ2MBHTKnFlgQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

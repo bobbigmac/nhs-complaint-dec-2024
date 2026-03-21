@@ -1,0 +1,93 @@
+Practice: PREMIER MEDICAL CENTRE
+Canonical code: E84003
+Postcode: HA0 4UZ
+Google Maps title: Premier Medical Centre
+Google rating: 4.4
+Google review count: 625
+Google Maps URL: https://www.google.com/maps/place/Premier+Medical+Centre/@51.5501222,-0.3087576,17z/data=!3m1!5s0x4876123621f60487:0xf0ef4f7de0c39615!4m8!3m7!1s0x4876123145f3fd33:0x8703376383a5767a!8m2!3d51.5501189!4d-0.3061773!9m1!1b1!16s%2Fg%2F1hc749nmy?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 9
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/E84003-premier-medical-centre.json
+
+Captured reviews
+================
+
+Author: My Opinion
+Date: an hour ago
+Rating: 5 stars
+I spoke to Dr C D Nothany today as I have been a patient for many years. He is an amazing GP. Thank you again. Gita Vyas
+
+Author: Dhaval Dalwadi
+Date: 5 hours ago
+Rating: 5 stars
+Reception team doing their service very well.
+Practice response date: 4 hours ago
+Practice response:
+Thank you! Wishing you the best of health, Team PMC
+
+Author: Jaroslaw Lichacz
+Date: 7 hours ago
+Rating: 2 stars
+Waiting time for GP appointment is 50 days .
+Practice response date: 4 hours ago
+Practice response:
+Thank you for your feedback. We’re sorry to hear that you feel the waiting time is too long. We aim to offer same-day appointments for urgent medical concerns, alongside a range of routine appointments that can be booked in advance, including online. Waiting times can vary depending on the type of appointment needed and individual booking preferences, and there are often earlier options available. If you feel you need to be seen sooner, we would encourage you to contact the practice directly so we can review your request and help find a more suitable appointment. We are continuously working to improve access and appreciate all feedback from our patients. Kind regards, Team PMC
+
+Author: Aim Ambition
+Date: 2 days ago
+Rating: 5 stars
+Good friendly doctor and reception staff. Quick and great service.
+Practice response date: 4 hours ago
+Practice response:
+Thank you! Wishing you the best of health, Team PMC
+
+Author: Tarun Patel
+Date: a week ago
+Rating: 5 stars
+excellent service
+Practice response date: 4 hours ago
+Practice response:
+Thank you! Wishing you the best of health, Team PMC
+
+Author: Taiane Albayrak
+Date: 2 weeks ago
+Rating: 5 stars
+Bharti Jagatia took my blood tests today and she was very professional, clean and gentle. It was a bit of confusion at first because I requested the blood tests myself and there was no doctors request, she explained the process to me and made me feel cared for. Great nurse!!! Thank you Premier Medical Centre.
+Practice response date: 4 hours ago
+Practice response:
+Thank you for your feedback, we greatly appreciate your kind words and Bharti will be so please to know she was able to help. Wishing you the best of health, Team PMC
+
+Author: Marilyne
+Date: 2 weeks ago
+Rating: 5 stars
+Notably, the reception team at this practice is exceptionally efficient and friendly. Shout-out to Anni who managed to give me someone else's cancelled appointment when I accidentally showed up on the wrong day. Note, I didn't ask for this, she was kind enough to call me back and offer it!
+Practice response date: 4 hours ago
+Practice response:
+Thank you for your feedback, we greatly appreciate your kind words. It's great to see that the reception team were able to support you so efficiently, they'll be so pleased to know it was helpful :) Wishing you the best of health, Team PMC
+
+Author: saurabh rathi
+Date: 2 weeks ago
+Rating: 5 stars
+Loved the service, doctors advice and support staff.
+Practice response date: 4 hours ago
+Practice response:
+Thank you for your feedback, we greatly appreciate your kind words. Wishing you the best of health, Team PMC
+
+Author: Edi Wadh
+Date: 2 weeks ago
+Rating: 5 stars
+Bharti was so professional in collecting my blood. I didn't feel the niddle at all. Thank you Bharti.
+Practice response date: 4 hours ago
+Practice response:
+Thank you for your feedback, we greatly appreciate your kind words. We'll pass your feedback on to Bharti who will be so pleased to know you were made to feel at ease during your appointment Wishing you the best of health, Team PMC
+
+Author: mr.ashish Patel
+Date: 2 weeks ago
+Rating: 5 stars
+Good response form staff excellent services
+Practice response date: 4 hours ago
+Practice response:
+Thank you for your feedback, we greatly appreciate your kind words. Wishing you the best of health, Team PMC

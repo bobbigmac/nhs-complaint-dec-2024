@@ -15,8 +15,10 @@ BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
 DEFAULT_INPUT = OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv"
 DEFAULT_GOOGLE_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
+DEFAULT_REVIEW_TEXT_DIR = OUTPUT_DIR / "google-review-texts"
 DEFAULT_RAW_REVIEW_DIR = OUTPUT_DIR / "google-review-raw"
 DEFAULT_COLLECTOR_PYTHON = BASE_DIR / ".venv-google-reviews" / "bin" / "python"
+DEFAULT_MERGE_SCRIPT = BASE_DIR / "merge_google_maps_reviews.py"
 
 
 def load_rows(path: Path) -> list[dict[str, str]]:
@@ -54,7 +56,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run Google Maps review capture in cautious randomized batches until all target practices are scanned.")
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--google-json", type=Path, default=DEFAULT_GOOGLE_JSON)
+    parser.add_argument("--reviews-text-dir", type=Path, default=DEFAULT_REVIEW_TEXT_DIR)
     parser.add_argument("--collector-python", type=Path, default=DEFAULT_COLLECTOR_PYTHON)
+    parser.add_argument("--merge-script", type=Path, default=DEFAULT_MERGE_SCRIPT)
     parser.add_argument("--batch-size-min", type=int, default=9)
     parser.add_argument("--batch-size-max", type=int, default=11)
     parser.add_argument("--practice-pause-min", type=float, default=2.0)
@@ -65,6 +69,12 @@ def main() -> int:
     parser.add_argument("--batch-wait-max", type=float, default=120.0)
     parser.add_argument("--recent-reviews", type=int, default=10)
     parser.add_argument("--raw-review-dir", type=Path, default=DEFAULT_RAW_REVIEW_DIR)
+    parser.add_argument(
+        "--merge-after-batch",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Run the merge script after each batch. Disable this for standalone national quick scans.",
+    )
     parser.add_argument(
         "--capture-review-network",
         action=argparse.BooleanOptionalAction,
@@ -131,6 +141,8 @@ def main() -> int:
             str(batch_size),
             "--recent-reviews",
             str(args.recent_reviews),
+            "--reviews-text-dir",
+            str(args.reviews_text_dir),
             "--raw-review-dir",
             str(args.raw_review_dir),
             "--pause-seconds",
@@ -154,8 +166,9 @@ def main() -> int:
             collect_cmd.append("--headless")
         subprocess.run(collect_cmd, check=True, cwd=BASE_DIR)
 
-        merge_cmd = [sys.executable, str(BASE_DIR / "merge_google_maps_reviews.py")]
-        subprocess.run(merge_cmd, check=True, cwd=BASE_DIR)
+        if args.merge_after_batch:
+            merge_cmd = [sys.executable, str(args.merge_script)]
+            subprocess.run(merge_cmd, check=True, cwd=BASE_DIR)
 
         rows = load_rows(args.input)
         if args.target == "missing-google":

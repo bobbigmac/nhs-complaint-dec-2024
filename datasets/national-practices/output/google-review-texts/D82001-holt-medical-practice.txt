@@ -1,0 +1,66 @@
+Practice: HOLT MEDICAL PRACTICE
+Canonical code: D82001
+Postcode: NR25 6QA
+Google Maps title: Holt Medical Practice
+Google rating: 4.1
+Google review count: 107
+Google Maps URL: https://www.google.com/maps/place/Holt+Medical+Practice/@52.9148192,1.1129607,17z/data=!4m8!3m7!1s0x47d76926d587ab13:0x7f7ff154b832284b!8m2!3d52.914816!4d1.115541!9m1!1b1!16s%2Fg%2F1td9psq9?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/D82001-holt-medical-practice.json
+
+Captured reviews
+================
+
+Author: john branagan
+Date: a month ago
+Rating: 5 stars
+Had to take the wife on Monday.Plenty of parking,friendly receptionist and very clean building indeed. Seen on time by a friendly doctor so needless to say very pleased with the service from the practice,right from phone call to seeing the doctor.
+
+Author: wren seaward
+Date: a month ago
+Rating: 5 stars
+Always helpful, always polite, always willing to go the extra mile
+
+Author: s “samosa” k
+Date: 4 months ago
+Rating: 4 stars
+s “samosa” k4 reviews4 months ago
+
+Author: Stevie Gray
+Date: 5 months ago
+Rating: 5 stars
+Stevie GrayLocal Guide · 5 reviews5 months ago
+
+Author: Sandra Marsden
+Date: 5 months ago
+Rating: 1 star
+Took my child to see Paramedic, Jack,today. He was surly and uninterested,couldnt wait to get us out of Surgery as it was 5 o'clock!!! Will be taking her back to see a Doctor in the near future.!
+
+Author: Jacqueline Malcolm
+Date: 6 months ago
+Rating: 5 stars
+Jacqueline MalcolmLocal Guide · 22 reviews6 months ago
+
+Author: Sheila Neve
+Date: 6 months ago
+Rating: 5 stars
+Sheila Neve3 reviews6 months ago
+
+Author: benson kayode
+Date: 7 months ago
+Rating: 3 stars
+benson kayodeLocal Guide · 6 reviews7 months ago
+
+Author: Roy Powell
+Date: 8 months ago
+Rating: 4 stars
+Very busy and very friendly and helpful staff.
+
+Author: Simon Baggaley
+Date: 9 months ago
+Rating: 5 stars
+Simon Baggaley9 months ago
