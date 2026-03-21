@@ -1,0 +1,26 @@
+{
+  "practice_name": "HOLLAND PARK SURGERY",
+  "canonical_code": "M91626",
+  "postcode": "WS8 7JB",
+  "query_used": "HOLLAND PARK SURGERY WS8 7JB",
+  "google_maps_title": "Holland Park Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Holland+Park+Surgery/@52.6491342,-1.9382173,17z/data=!4m8!3m7!1s0x4870a0fb8adbc77d:0xc269ce7fe88afad2!8m2!3d52.649131!4d-1.935637!9m1!1b1!16s%2Fg%2F1th5c026?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 38,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774070873589,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4870a0fb8adbc77d%3A0xc269ce7fe88afad2!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1szxq-aY_tO4PRhbIPw7iPmQs!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e1",
+      "status": 0,
+      "ok": false,
+      "content_type": "",
+      "request_body": "",
+      "body": "",
+      "error": ""
+    }
+  ]
+}

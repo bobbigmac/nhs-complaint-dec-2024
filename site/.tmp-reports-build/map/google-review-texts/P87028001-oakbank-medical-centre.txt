@@ -1,0 +1,46 @@
+Practice: Oakbank Medical Centre
+Canonical code: P87028001
+Postcode: M28 3EZ
+Google Maps title: Oakbank Medical Centre
+Google rating: 3.7
+Google review count: 6
+Google Maps URL: https://www.google.com/maps/place/Oakbank+Medical+Centre/@53.5248523,-2.4012175,17z/data=!4m8!3m7!1s0x487ba9a3cc5eb9b7:0x33c80e1844761989!8m2!3d53.5248523!4d-2.3986372!9m1!1b1!16s%2Fg%2F11v0s34ld7?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 6
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87028001-oakbank-medical-centre.json
+
+Captured reviews
+================
+
+Author: Messi Messi
+Date: a month ago
+Rating: 5 stars
+I want to thank and highly recommend Dr. Moatari! My son suffered from severe eczema for many years with no real improvement. After seeing Dr. Moatari, his professional treatment, patience, and clear explanations finally brought real progress – we can now see light at the end of the tunnel! He is kind, thorough, and truly cares. Thank you so much, Doctor! 🙏
+
+Author: Shahzad Victor
+Date: 3 months ago
+Rating: 5 stars
+Shahzad VictorLocal Guide · 53 reviews · 165 photos3 months ago
+
+Author: Wendy
+Date: a year ago
+Rating: 5 stars
+Dr Rees is patient, nice and professional. She explained clearly and helpful. We recently join this GP. The reception staff is responsive and helpful too .
+
+Author: Veronica Pirie
+Date: 2 years ago
+Rating: 5 stars
+Many thanks to Dr Gibbons and the other Dr’s at Oakbank Medical Centre for their care and thoughtfulness on Friday. I have been with this Surgery approx 12 months and I have found all the Dr’s , nursing staff and receptionists more than helpful and caring. Thank you
+
+Author: Christopher Honeywell
+Date: 2 years ago
+Rating: 1 star
+This place does not have any working signal for WiFi or data at all also I hate the name change.
+
+Author: Chris Stott
+Date: 2 years ago
+Rating: 1 star
+Different name, same appalling service.
