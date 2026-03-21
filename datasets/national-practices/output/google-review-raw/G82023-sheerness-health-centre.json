@@ -1,0 +1,26 @@
+{
+  "practice_name": "SHEERNESS HEALTH CENTRE",
+  "canonical_code": "G82023",
+  "postcode": "ME12 1UP",
+  "query_used": "SHEERNESS HEALTH CENTRE ME12 1UP",
+  "google_maps_title": "Sheerness Health Centre Note 3 Different Practices",
+  "google_maps_url": "https://www.google.com/maps/place/Sheerness+Health+Centre+Note+3+Different+Practices/@51.4364939,0.7632568,17z/data=!3m1!5s0x47d929fa7fe8ef29:0xafd6acc2144db6da!4m12!1m2!2m1!1sSHEERNESS+HEALTH+CENTRE+ME12+1UP!3m8!1s0x47d929f0812f8719:0xcb9965a435f01690!8m2!3d51.4363962!4d0.7660084!9m1!1b1!15sCiBTSEVFUk5FU1MgSEVBTFRIIENFTlRSRSBNRTEyIDFVUOABAA!16s%2Fg%2F11q2ykkmzv?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 55,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774080986983,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d929f0812f8719%3A0xcb9965a435f01690!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sjkq-aZTWFb-fhbIPjK7z4Ak!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUR2bXM3N0NREAE\",[\"0x0:0xcb9965a435f01690\",null,1734624955857589,1734624955857589,[null,null,[\"https://www.google.com/maps/contrib/102210573246957557717/reviews?hl\\u003den\"],null,null,[\"Kevin Hunt\",\"https://lh3.googleusercontent.com/a/ACg8ocL-I9A0-XPn9WdwVk6A6xDS0G9SS5U9-ukL4FFe6FcMeQPhMw\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/102210573246957557717?hl\\u003den\"],\"102210573246957557717\",null,68,2,null,[1,6,1],40,[\"Local Guide · 68 reviews\",null,null,null,null,[null,\"0ahUKEwjJ3fvXxrCTAxUaEWMBHU4jLC4Q7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[4]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bXM3N0NREAE!2m1!1s0x0:0xcb9965a435f01690!3m1!1s2@1:CIHM0ogKEICAgIDvms77CQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUR2bXM3N0NREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUR2bXM3N0NRGi4KF0NJSE0wb2dLRUlDQWdJRHZtczc3aVFFEhNDZ3dJdTQyUnV3WVFpSXIzbUFNIhIJAAAAAAAAAAARkBbwNaRlmcsqE0Nnd0l1NDJSdXdZUWlJcjNtQU0\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjJ3fvXxrCTAxUaEWMBHU4jLC4QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjJ3fvXxrCTAxUaEWMBHU4jLC4Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

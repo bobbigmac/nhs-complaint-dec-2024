@@ -1,0 +1,26 @@
+Practice: STAFFORD MEDICAL GROUP
+Canonical code: L81066
+Postcode: BS24 7DX
+Google Maps title: Stafford Place Surgery
+Google rating: 2.0
+Google review count: 126
+Google Maps URL: https://www.google.com/maps/place/Stafford+Place+Surgery/@51.3508744,-3.0103617,14z/data=!4m12!1m2!2m1!1sSTAFFORD+MEDICAL+GROUP+BS24+7DX!3m8!1s0x4871f8d62911fa9b:0x11f92c1c6c2072b8!8m2!3d51.3508744!4d-2.9722529!9m1!1b1!15sCh9TVEFGRk9SRCBNRURJQ0FMIEdST1VQIEJTMjQgN0RYkgEObWVkaWNhbF9jZW50ZXLgAQA!16s%2Fg%2F1q62f65tt?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.5
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/L81066-stafford-medical-group.json
+
+Captured reviews
+================
+
+Author: Magyarangol Fordítás
+Date: 6 years ago
+Rating: 1 star
+The worst GP ever. No way to book appointment they only available on phone then they never sent the prescription anywhere. Phone call was after 5.30pm Friday all Saturday morning spent with chasing the prescription now you have to chase out of hours. Spoit bunch of people. When you ask questions they don't like reception staff simply cut the line. Well done.
+
+Author: Russell Cooper
+Date: 11 years ago
+Rating: 2 stars
+Be careful with your timing when picking up a prescription. Twice in November 2014 they closed 20 minutes before advertised.

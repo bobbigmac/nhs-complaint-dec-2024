@@ -1,0 +1,19 @@
+{
+  "name": "nhs-complaint-local-site",
+  "private": true,
+  "scripts": {
+    "dev": ".venv/bin/python site/build.py --out site/.vite-src && vite site/.vite-src --host",
+    "build": ".venv/bin/python site/build.py --out site/.vite-src && vite build site/.vite-src --outDir ../local-dist --emptyOutDir && .venv/bin/python site/finalize_vite_dist.py site/.vite-src site/local-dist",
+    "preview": "vite preview site/local-dist --host",
+    "deprivation:lookup": "python3 datasets/deprivation/build_practice_deprivation_lookup_all.py",
+    "reviews:index": "python3 datasets/reviews-search/index_reviews.py",
+    "reviews:index:all": "python3 datasets/reviews-search/index_reviews.py --include-visible-cards",
+    "reviews:search": "python3 datasets/reviews-search/query_reviews.py search",
+    "reviews:context": "python3 datasets/reviews-search/query_reviews.py context",
+    "reviews:stats": "python3 datasets/reviews-search/query_reviews.py stats",
+    "reviews:report": "python3 datasets/reviews-search/query_reviews.py report"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}

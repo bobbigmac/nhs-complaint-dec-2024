@@ -1,0 +1,26 @@
+{
+  "practice_name": "BRIDGEWATER MEDICAL CENTRE",
+  "canonical_code": "S87235",
+  "postcode": "PA8 7AF",
+  "query_used": "BRIDGEWATER MEDICAL CENTRE PA8 7AF",
+  "google_maps_title": "Bridgewater Medical Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Bridgewater+Medical+Centre/@55.9046015,-4.4503163,17z/data=!4m8!3m7!1s0x48884e637a8d12bd:0xb5ed4a7652bbf882!8m2!3d55.9045985!4d-4.447736!9m1!1b1!16s%2Fg%2F1hc1jffzy?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 10,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774078142835,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48884e637a8d12bd%3A0xb5ed4a7652bbf882!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sdDK-afubJ9-NhbIP1_bqiQY!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e1",
+      "status": 0,
+      "ok": false,
+      "content_type": "",
+      "request_body": "",
+      "body": "",
+      "error": ""
+    }
+  ]
+}

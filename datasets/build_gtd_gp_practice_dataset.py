@@ -880,6 +880,8 @@ def percent_or_blank(value: Any) -> float | str:
         numeric = float(value)
     except (TypeError, ValueError):
         return ""
+    if numeric <= 0:
+        return ""
     if numeric <= 1:
         numeric *= 100
     return round(numeric, 2)
@@ -1729,6 +1731,9 @@ body {{
   overflow: hidden;
   background: rgba(15, 94, 156, 0.06);
 }}
+#completion-scope-control {{
+  grid-template-columns: 1fr 1fr;
+}}
 #size-mode-control {{
   grid-template-columns: 1fr 1fr;
 }}
@@ -2452,17 +2457,25 @@ body {{
       <p class="chart-note" id="gtd-trend-note">Thin lines show each GTD practice's reconstructed cumulative Google rating by month. Faint dashed vertical lines mark the documented GTD takeover date for each practice. Only the first legend entry shows the GTD mean; selecting any named practice hides it. The green dashed line shows registered patients as a percentage of the GTD-wide average patient count for that year, with raw patient counts kept in the point labels, and the orange dashed line shows GP Survey overall-good %. Review dates are approximate month buckets inferred from Google relative-date labels at scrape time.</p>
     </section>
     <section class="panel comparison-panel">
-      <h2 id="scatter-heading">Completion Rate vs Score</h2>
+      <div class="panel-heading-row">
+        <h2 id="scatter-heading">Completion Rate vs Score</h2>
+        <div class="treemap-mode-control">
+          <div class="segmented" id="completion-scope-control">
+            <label title="Manchester scope"><input type="radio" name="completion-scope" value="regional" checked><span>Manchester</span><span class="segmented-short">M</span></label>
+            <label title="National scope"><input type="radio" name="completion-scope" value="national"><span>National</span><span class="segmented-short">N</span></label>
+          </div>
+        </div>
+      </div>
       <p id="scatter-summary" class="hint"></p>
       <div class="chart-frame">
         <svg id="scatterplot" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="scatter-title" role="img">
           <title id="scatter-title">Survey completion rate against selected score</title>
         </svg>
       </div>
-      <p class="chart-note">Y-axis is GP Patient Survey completion rate. X-axis changes with the selected score source.</p>
+      <p id="scatter-note" class="chart-note">Y-axis is GP Patient Survey completion rate. X-axis changes with the selected score source. The GP survey score itself is heavily bunched near the top end, mostly around or just below 80%, while Google reviews look much more organically spread. At these demarcations that suggests either practices dropping below roughly 70% overall-good are corrected fairly quickly before they persist in the survey, or the patient survey is not really capturing the lower half of possible experience that clearly exists in review text.</p>
     </section>
     <section class="panel comparison-panel">
-      <h2 id="deprivation-heading">Score vs Deprivation</h2>
+      <h2 id="deprivation-heading">Manchester Score vs Deprivation</h2>
       <p id="deprivation-summary" class="hint"></p>
       <div class="chart-frame">
         <svg id="deprivation-chart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="deprivation-title" role="img">
@@ -2489,7 +2502,6 @@ body {{
         </svg>
       </div>
       <p class="chart-note">This national contrast bins practices into deprivation-decile and score buckets. It can show either practice counts or summed registered-patient totals per cell, updates with the selected metric, and is only as complete as the persisted deprivation lookup.</p>
-      <p class="chart-note">We also have 100+ weird low-rated outliers in wealthy areas, and counting, that need follow-up investigation.</p>
     </section>
     <section class="panel comparison-panel">
       <h2 id="patient-change-heading">Registered Patients Over Time</h2>
@@ -2599,6 +2611,7 @@ let patientTreemapPlaying = false;
 let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
 let nationalDeprivationUsePopulation = false;
+let completionScatterScope = 'regional';
 const GTD_MEAN_COLOR = '#b23322';
 
 const metricConfigs = {{
@@ -3549,6 +3562,25 @@ function correlation(points) {{
   return numerator / Math.sqrt(sumSqX * sumSqY);
 }}
 
+function linearRegression(points) {{
+  if (points.length < 2) return null;
+  const xs = points.map((point) => point.x);
+  const ys = points.map((point) => point.y);
+  const meanX = xs.reduce((sum, value) => sum + value, 0) / xs.length;
+  const meanY = ys.reduce((sum, value) => sum + value, 0) / ys.length;
+  let numerator = 0;
+  let denominator = 0;
+  for (let index = 0; index < points.length; index += 1) {{
+    const dx = xs[index] - meanX;
+    numerator += dx * (ys[index] - meanY);
+    denominator += dx * dx;
+  }}
+  if (denominator === 0) return null;
+  const slope = numerator / denominator;
+  const intercept = meanY - (slope * meanX);
+  return {{ slope, intercept }};
+}}
+
 function clamp01(value) {{
   return Math.max(0, Math.min(1, value));
 }}
@@ -4076,7 +4108,8 @@ function renderScatterplot() {{
       ticks: gapAxis.magnitudeTicks,
     }};
   }})();
-  const points = rows
+  const sourceRows = completionScatterScope === 'national' ? rows.concat(nationalSupplementals) : rows;
+  const points = sourceRows
     .map((row) => {{
       const signed = activeMetric === 'gap'
         ? gapValue(row, {{ suppressSmall: false }})
@@ -4088,14 +4121,13 @@ function renderScatterplot() {{
     }})
     .filter(Boolean);
   const svg = document.getElementById('scatterplot');
+  const summary = document.getElementById('scatter-summary');
+  const note = document.getElementById('scatter-note');
   const width = 920;
   const height = 320;
   const margin = {{ top: 34, right: 18, bottom: 42, left: 52 }};
   const plotWidth = width - margin.left - margin.right;
   const plotHeight = height - margin.top - margin.bottom;
-  const headerBandY = 4;
-  const headerBandHeight = 17;
-  const headerTextY = 16;
   const completionMax = Math.max(10, ...points.map((point) => point.y), 50);
   const xScale = (value) => margin.left + ((value - scatterAxis.min) / (scatterAxis.max - scatterAxis.min)) * plotWidth;
   const yScale = (value) => margin.top + plotHeight - (value / completionMax) * plotHeight;
@@ -4107,28 +4139,38 @@ function renderScatterplot() {{
     activeMetric === 'google'
       ? [0, 1, 2, 3, 4, 5]
       : activeMetric === 'survey'
-        ? [0, 20, 40, 60, 80, 100]
-        : [0, 0.5, 1.0, 1.5, 2.0, 2.5]
+      ? [0, 20, 40, 60, 80, 100]
+      : [0, 0.5, 1.0, 1.5, 2.0, 2.5]
   );
-  const assignments = shapeAssignment();
-  const pointMarkup = points.map((point) => {{
-    const companyShape = assignments.get(point.row.management_company);
-    const radius = Math.max(4, Math.min(9, patientScaleForRow(point.row) * 6));
-    const stroke = companyShape ? '#1a1c1a' : 'rgba(26,28,26,0.25)';
-    const label = activeMetric === 'google'
-      ? point.x.toFixed(1)
-      : activeMetric === 'survey'
-        ? `${{Math.round(point.x)}}%`
-        : activeMetric === 'gap'
-          ? `${{point.signed >= 0 ? '+' : ''}}${{point.signed.toFixed(2)}} (|${{point.x.toFixed(2)}}|)`
-          : point.x.toFixed(2);
+  const renderTrendLine = (linePoints, color, titleLabel, dash = '8 6') => {{
+    const trend = linearRegression(linePoints);
+    if (!trend) return '';
+    const candidates = [];
+    const yAtMinX = (trend.slope * scatterAxis.min) + trend.intercept;
+    const yAtMaxX = (trend.slope * scatterAxis.max) + trend.intercept;
+    if (yAtMinX >= 0 && yAtMinX <= completionMax) candidates.push({{ x: scatterAxis.min, y: yAtMinX }});
+    if (yAtMaxX >= 0 && yAtMaxX <= completionMax) candidates.push({{ x: scatterAxis.max, y: yAtMaxX }});
+    if (Math.abs(trend.slope) > 1e-9) {{
+      const xAtZero = (0 - trend.intercept) / trend.slope;
+      const xAtMaxY = (completionMax - trend.intercept) / trend.slope;
+      if (xAtZero >= scatterAxis.min && xAtZero <= scatterAxis.max) candidates.push({{ x: xAtZero, y: 0 }});
+      if (xAtMaxY >= scatterAxis.min && xAtMaxY <= scatterAxis.max) candidates.push({{ x: xAtMaxY, y: completionMax }});
+    }}
+    const unique = [];
+    candidates.forEach((candidate) => {{
+      const alreadyPresent = unique.some((entry) => Math.abs(entry.x - candidate.x) < 0.0001 && Math.abs(entry.y - candidate.y) < 0.0001);
+      if (!alreadyPresent) unique.push(candidate);
+    }});
+    if (unique.length < 2) return '';
+    unique.sort((left, right) => (left.x === right.x ? left.y - right.y : left.x - right.x));
+    const segment = [unique[0], unique[unique.length - 1]];
     return `
-      <circle cx="${{xScale(point.x).toFixed(2)}}" cy="${{yScale(point.y).toFixed(2)}}" r="${{radius.toFixed(2)}}" fill="${{metric.markerColor(point.row)}}" stroke="${{stroke}}" stroke-width="${{companyShape ? 1.8 : 1}}">
-        <title>${{point.row.name}} · ${{metric.title}}: ${{label}} · Completion: ${{Math.round(point.y)}}%</title>
-      </circle>
+      <line x1="${{xScale(segment[0].x).toFixed(2)}}" y1="${{yScale(segment[0].y).toFixed(2)}}" x2="${{xScale(segment[1].x).toFixed(2)}}" y2="${{yScale(segment[1].y).toFixed(2)}}" stroke="${{color}}" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="${{dash}}">
+        <title>${{titleLabel}} fitted trend line. Slope ${{trend.slope.toFixed(2)}} completion points per ${{metric.title.toLowerCase()}} unit.</title>
+      </line>
     `;
-  }}).join('');
-  svg.innerHTML = `
+  }};
+  const axisMarkup = `
     <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
     ${{gridY.map((tick) => `
       <line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" />
@@ -4140,24 +4182,178 @@ function renderScatterplot() {{
     `).join('')}}
     <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
-    ${{pointMarkup}}
     <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">${{scatterAxis.label}}</text>
     <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">GP survey completion rate</text>
   `;
+  if (completionScatterScope === 'regional') {{
+    const assignments = shapeAssignment();
+    const pointMarkup = points.map((point) => {{
+      const companyShape = assignments.get(point.row.management_company);
+      const radius = Math.max(4, Math.min(9, patientScaleForRow(point.row) * 6));
+      const stroke = companyShape ? '#1a1c1a' : 'rgba(26,28,26,0.25)';
+      const label = activeMetric === 'google'
+        ? point.x.toFixed(1)
+        : activeMetric === 'survey'
+          ? `${{Math.round(point.x)}}%`
+          : `${{point.signed >= 0 ? '+' : ''}}${{point.signed.toFixed(2)}} (|${{point.x.toFixed(2)}}|)`;
+      return `
+        <circle cx="${{xScale(point.x).toFixed(2)}}" cy="${{yScale(point.y).toFixed(2)}}" r="${{radius.toFixed(2)}}" fill="${{metric.markerColor(point.row)}}" stroke="${{stroke}}" stroke-width="${{companyShape ? 1.8 : 1}}">
+          <title>${{point.row.name}} · ${{metric.title}}: ${{label}} · Completion: ${{Math.round(point.y)}}%</title>
+        </circle>
+      `;
+    }}).join('');
+    const gtdPoints = points.filter((point) => point.row.gtd || point.row.management_company === BASELINE_MANAGEMENT_COMPANY);
+    const gtdMeanPoint = gtdPoints.length
+      ? {{
+          x: mean(gtdPoints.map((point) => point.x)),
+          y: mean(gtdPoints.map((point) => point.y)),
+        }}
+      : null;
+    const newBankPoint = points.find((point) => point.row.code === NEW_BANK_CODE) || null;
+    const regionalTrendMarkup = renderTrendLine(points, 'rgba(26,28,26,0.88)', 'Manchester');
+    const focusMarkup = [
+      gtdMeanPoint
+        ? `
+          <g>
+            <circle cx="${{xScale(gtdMeanPoint.x).toFixed(2)}}" cy="${{yScale(gtdMeanPoint.y).toFixed(2)}}" r="6.5" fill="${{GTD_MEAN_COLOR}}" stroke="#ffffff" stroke-width="2">
+              <title>GTD · ${{metric.title}} mean: ${{activeMetric === 'google' ? gtdMeanPoint.x.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gtdMeanPoint.x)}}%` : gtdMeanPoint.x.toFixed(2)}} · Completion mean: ${{gtdMeanPoint.y.toFixed(1)}}%</title>
+            </circle>
+            <text x="${{(xScale(gtdMeanPoint.x) + 10).toFixed(2)}}" y="${{(yScale(gtdMeanPoint.y) - 2).toFixed(2)}}" font-size="11" font-weight="700" fill="${{GTD_MEAN_COLOR}}">GTD</text>
+          </g>
+        `
+        : '',
+      newBankPoint
+        ? `
+          <g>
+            <circle cx="${{xScale(newBankPoint.x).toFixed(2)}}" cy="${{yScale(newBankPoint.y).toFixed(2)}}" r="6.5" fill="#7b3fb2" stroke="#ffffff" stroke-width="2">
+              <title>New Bank · ${{metric.title}}: ${{activeMetric === 'google' ? newBankPoint.x.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(newBankPoint.x)}}%` : newBankPoint.x.toFixed(2)}} · Completion: ${{newBankPoint.y.toFixed(1)}}%</title>
+            </circle>
+            <text x="${{(xScale(newBankPoint.x) + 10).toFixed(2)}}" y="${{(yScale(newBankPoint.y) - 18).toFixed(2)}}" font-size="11" font-weight="700" fill="#7b3fb2">New Bank</text>
+          </g>
+        `
+        : '',
+    ].join('');
+    svg.innerHTML = `${{axisMarkup}}${{regionalTrendMarkup}}${{pointMarkup}}${{focusMarkup}}`;
+  }} else {{
+    const xBinCount = activeMetric === 'google' ? 20 : 20;
+    const yBinSize = 5;
+    const yBinCount = Math.max(1, Math.ceil(completionMax / yBinSize));
+    const cells = new Map();
+    points.forEach((point) => {{
+      const xRatio = (point.x - scatterAxis.min) / (scatterAxis.max - scatterAxis.min || 1);
+      const yRatio = point.y / completionMax;
+      const xBin = Math.max(0, Math.min(xBinCount - 1, Math.floor(xRatio * xBinCount)));
+      const yBin = Math.max(0, Math.min(yBinCount - 1, Math.floor(yRatio * yBinCount)));
+      const key = `${{xBin}}-${{yBin}}`;
+      cells.set(key, (cells.get(key) || 0) + 1);
+    }});
+    const maxCellCount = Math.max(0, ...Array.from(cells.values()));
+    const cellMarkup = [];
+    for (let xBin = 0; xBin < xBinCount; xBin += 1) {{
+      const x0Value = scatterAxis.min + ((xBin / xBinCount) * (scatterAxis.max - scatterAxis.min));
+      const x1Value = scatterAxis.min + (((xBin + 1) / xBinCount) * (scatterAxis.max - scatterAxis.min));
+      const xMidValue = (x0Value + x1Value) / 2;
+      for (let yBin = 0; yBin < yBinCount; yBin += 1) {{
+        const count = cells.get(`${{xBin}}-${{yBin}}`) || 0;
+        const y0Value = (yBin / yBinCount) * completionMax;
+        const y1Value = ((yBin + 1) / yBinCount) * completionMax;
+        const x = xScale(x0Value);
+        const y = yScale(y1Value);
+        const widthPx = Math.max(0, xScale(x1Value) - xScale(x0Value));
+        const heightPx = Math.max(0, yScale(y0Value) - yScale(y1Value));
+        const fill = metricColorForValue(activeMetric, xMidValue);
+        const opacity = count <= 0 || maxCellCount <= 0 ? 0.04 : 0.12 + (count / maxCellCount) * 0.74;
+        cellMarkup.push(`
+          <rect x="${{x.toFixed(2)}}" y="${{y.toFixed(2)}}" width="${{widthPx.toFixed(2)}}" height="${{heightPx.toFixed(2)}}" fill="${{fill}}" opacity="${{opacity.toFixed(2)}}" stroke="rgba(255,255,255,0.38)" stroke-width="0.5">
+            <title>${{count > 0 ? `${{count.toLocaleString('en-GB')}} practices` : 'No practices'}} · ${{metric.title}} ${{activeMetric === 'google' ? `${{x0Value.toFixed(1)}} to ${{x1Value.toFixed(1)}}` : activeMetric === 'survey' ? `${{Math.round(x0Value)}}% to ${{Math.round(x1Value)}}%` : `${{x0Value.toFixed(2)}} to ${{x1Value.toFixed(2)}}`}} · Completion ${{Math.round(y0Value)}}% to ${{Math.round(y1Value)}}%</title>
+          </rect>
+        `);
+      }}
+    }}
+    const overlaySeries = [
+      {{
+        label: 'Manchester',
+        color: '#1f5f8b',
+        rows: rows,
+      }},
+      {{
+        label: 'GTD',
+        color: GTD_MEAN_COLOR,
+        rows: rows.filter((row) => row.gtd || row.management_company === BASELINE_MANAGEMENT_COMPANY),
+      }},
+      {{
+        label: 'New Bank',
+        color: '#7b3fb2',
+        rows: rows.filter((row) => row.code === NEW_BANK_CODE),
+      }},
+    ].map((series) => {{
+      const seriesPoints = series.rows
+        .map((row) => {{
+          const signed = activeMetric === 'gap'
+            ? gapValue(row, {{ suppressSmall: false }})
+            : metric.value(row);
+          const x = signed === null ? null : (activeMetric === 'gap' ? Math.abs(signed) : signed);
+          const y = numericOrNull(row.survey_completion_rate_percent);
+          if (x === null || y === null) return null;
+          return {{ x, y, signed }};
+        }})
+        .filter(Boolean);
+      return {{
+        ...series,
+        x: seriesPoints.length ? mean(seriesPoints.map((point) => point.x)) : null,
+        y: seriesPoints.length ? mean(seriesPoints.map((point) => point.y)) : null,
+        count: seriesPoints.length,
+      }};
+    }}).filter((series) => series.x !== null && series.y !== null);
+    const overlayMarkup = overlaySeries.map((series, index) => `
+      <g>
+        <circle cx="${{xScale(series.x).toFixed(2)}}" cy="${{yScale(series.y).toFixed(2)}}" r="6.5" fill="${{series.color}}" stroke="#ffffff" stroke-width="2">
+          <title>${{series.label}} · ${{series.count}} practices · ${{metric.title}} mean: ${{activeMetric === 'google' ? series.x.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(series.x)}}%` : series.x.toFixed(2)}} · Completion mean: ${{series.y.toFixed(1)}}%</title>
+        </circle>
+        <text x="${{(xScale(series.x) + 10).toFixed(2)}}" y="${{(yScale(series.y) - (index * 16)).toFixed(2)}}" font-size="11" font-weight="700" fill="${{series.color}}">${{series.label}}</text>
+      </g>
+    `).join('');
+    const nationalTrendMarkup = renderTrendLine(points, 'rgba(26,28,26,0.88)', 'National');
+    svg.innerHTML = `${{axisMarkup}}${{cellMarkup.join('')}}${{nationalTrendMarkup}}${{overlayMarkup}}`;
+  }}
   const completionValues = points.map((point) => point.y).sort((left, right) => left - right);
   const completionMedian = completionValues.length ? completionValues[Math.floor(completionValues.length / 2)] : null;
   const rValue = correlation(points);
   const newBank = points.find((point) => point.row.code === 'Y02960');
-  const newBankSummary = !newBank
+  const newBankSummary = completionScatterScope !== 'regional' || !newBank
     ? ''
     : ` New Bank Health is at ${{Math.round(newBank.y)}}% completion and sits around the ${{percentile(completionValues, newBank.y).toFixed(0)}}th percentile for completion in this set.`;
-  document.getElementById('scatter-summary').textContent =
-    `${{points.length}} practices have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}.${{newBankSummary}}`;
+  if (completionScatterScope === 'regional') {{
+    summary.textContent =
+      `${{points.length}} practices have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}.${{newBankSummary}}`;
+    if (note) note.textContent = 'Y-axis is GP Patient Survey completion rate. X-axis changes with the selected score source. The GP survey score itself is heavily bunched near the top end, mostly around or just below 80%, while Google reviews look much more organically spread. At these demarcations that suggests either practices dropping below roughly 70% overall-good are corrected fairly quickly before they persist in the survey, or the patient survey is not really capturing the lower half of possible experience that clearly exists in review text.';
+  }} else {{
+    const regionalPoints = rows
+      .map((row) => {{
+        const signed = activeMetric === 'gap'
+          ? gapValue(row, {{ suppressSmall: false }})
+          : metric.value(row);
+        const x = signed === null ? null : (activeMetric === 'gap' ? Math.abs(signed) : signed);
+        const y = numericOrNull(row.survey_completion_rate_percent);
+        if (x === null || y === null) return null;
+        return {{ x, y, row }};
+      }})
+      .filter(Boolean);
+    const gtdRegionalPoints = regionalPoints.filter((point) => point.row.gtd || point.row.management_company === BASELINE_MANAGEMENT_COMPANY);
+    const newBankRegionalPoint = regionalPoints.find((point) => point.row.code === NEW_BANK_CODE) || null;
+    const gmMeanX = regionalPoints.length ? mean(regionalPoints.map((point) => point.x)) : null;
+    const gmMeanY = regionalPoints.length ? mean(regionalPoints.map((point) => point.y)) : null;
+    const gtdMeanX = gtdRegionalPoints.length ? mean(gtdRegionalPoints.map((point) => point.x)) : null;
+    const gtdMeanY = gtdRegionalPoints.length ? mean(gtdRegionalPoints.map((point) => point.y)) : null;
+    summary.textContent =
+      `${{points.length.toLocaleString('en-GB')}} practices currently have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value in national scope. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}. Manchester is ${{gmMeanY === null ? '?' : `${{gmMeanY.toFixed(1)}}% completion`}} at ${{gmMeanX === null ? '?' : activeMetric === 'google' ? gmMeanX.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gmMeanX)}}%` : gmMeanX.toFixed(2)}}; GTD is ${{gtdMeanY === null ? '?' : `${{gtdMeanY.toFixed(1)}}% completion`}} at ${{gtdMeanX === null ? '?' : activeMetric === 'google' ? gtdMeanX.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gtdMeanX)}}%` : gtdMeanX.toFixed(2)}}; New Bank is ${{newBankRegionalPoint === null ? '?' : `${{newBankRegionalPoint.y.toFixed(1)}}% completion`}} at ${{newBankRegionalPoint === null ? '?' : activeMetric === 'google' ? newBankRegionalPoint.x.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(newBankRegionalPoint.x)}}%` : newBankRegionalPoint.x.toFixed(2)}}.`;
+    if (note) note.textContent = 'National mode bins practices into density cells for speed. Overlay dots show the Greater Manchester and GTD mean positions. Completion-rate coverage currently follows the GP Patient Survey practice-level files we have wired, so this view is still England-led rather than truly complete UK-wide. The GP survey score itself is heavily bunched near the top end, mostly around or just below 80%, while Google reviews look much more organically spread. At these demarcations that suggests either practices dropping below roughly 70% overall-good are corrected fairly quickly before they persist in the survey, or the patient survey is not really capturing the lower half of possible experience that clearly exists in review text.';
+  }}
 }}
 
 function renderDeprivationChart() {{
   const metric = metricConfigs[activeMetric];
-  document.getElementById('deprivation-heading').textContent = `Score vs Deprivation - Showing ${{metricDisplayLabel(activeMetric)}}`;
+  document.getElementById('deprivation-heading').textContent = `Manchester Score vs Deprivation - Showing ${{metricDisplayLabel(activeMetric)}}`;
   const svg = document.getElementById('deprivation-chart');
   if (!svg) return;
   const gapAxis = gapAxisInfo();
@@ -5629,6 +5825,13 @@ document.querySelectorAll('input[name="score-source"]').forEach((input) => {{
 document.getElementById('normalize-gap-toggle').addEventListener('change', (event) => {{
   activeGapMode = event.target.checked ? 'normalized' : 'absolute';
   rerenderAll();
+}});
+
+document.querySelectorAll('input[name="completion-scope"]').forEach((input) => {{
+  input.addEventListener('change', (event) => {{
+    completionScatterScope = event.target.value;
+    renderScatterplot();
+  }});
 }});
 
 document.getElementById('voronoi-toggle').addEventListener('change', (event) => {{

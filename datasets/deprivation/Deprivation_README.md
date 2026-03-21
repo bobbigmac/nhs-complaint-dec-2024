@@ -24,6 +24,8 @@ TODOs:
 - Find and wire the official Northern Ireland patient-count source so national supplemental patient-total views can include NI practices.
 - Record each of those source URLs and update steps in this folder once added, so future reruns can refresh them the same way as England.
 - Find and wire comparable deprivation-index sources for Wales, Scotland and Northern Ireland, then extend `build_practice_deprivation_lookup_all.py` so those nations no longer land in placeholder states.
+- Find and wire comparable national practice-level survey completion-rate sources for Wales, Scotland and Northern Ireland, so the completion/deprivation analysis is not England-led.
+- Extend the existing completion-rate chart's national scope once those non-English sources are wired, so the national completion view becomes properly UK-wide rather than mostly England plus any future equivalents.
 
 Source data:
 
