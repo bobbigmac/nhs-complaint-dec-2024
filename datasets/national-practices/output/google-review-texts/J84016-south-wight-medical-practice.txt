@@ -1,0 +1,50 @@
+Practice: SOUTH WIGHT MEDICAL PRACTICE
+Canonical code: J84016
+Postcode: PO30 4BB
+Google Maps title: South Wight Medical Practice
+Google rating: 4.2
+Google review count: 5
+Google Maps URL: https://www.google.com/maps/place/South+Wight+Medical+Practice/@50.641953,-1.4711985,13z/data=!4m12!1m2!2m1!1sSOUTH+WIGHT+MEDICAL+PRACTICE+PO30+4BB!3m8!1s0x487480cf89f9b517:0x3712095e295c575b!8m2!3d50.641953!4d-1.3949808!9m1!1b1!15sCiVTT1VUSCBXSUdIVCBNRURJQ0FMIFBSQUNUSUNFIFBPMzAgNEJCWiciJXNvdXRoIHdpZ2h0IG1lZGljYWwgcHJhY3RpY2UgcG8zMCA0YmKSARVwdWJsaWNfbWVkaWNhbF9jZW50ZXKaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnM1U2t4VlpHOWliR1JxWkRKR1NscEVhRFpXVjNSbVZUQTVNR1ZGUlJBQuABAPoBBAgAECE!16s%2Fg%2F1tp2zvrr?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 3
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/J84016-south-wight-medical-practice.json
+
+Captured reviews
+================
+
+Author: Damian Bunday
+Date: 4 months ago
+Rating: 1 star
+Soo Slack... Just unbelievable, wish i could use a different surgery
+Practice response date: 4 months ago
+Practice response:
+Hi I am sorry to read that you have not been happy with the service provided by the Practice. It would be useful if you could contact us directly so that we can address your concerns. Kind regards South Wight Medical Practice
+
+Author: Liam Read
+Date: 4 months ago
+Rating: 5 stars
+Always super helpful and friendly
+Practice response date: 4 months ago
+Practice response:
+Thank you very much for sharing you positive feedback and kind words. I will share your comments with the team. Kind regards South Wight Medical Practice
+
+Author: Penny Bonvoisin
+Date: 10 months ago
+Rating: 5 stars
+I went to Niton for a blood test & I can honestly say the visit was a great success. The self-check in actually worked & the nurse who took my blood was very efficient, knowledgeable & a pleasure to talk to. The self-check height, weight & BP machine in the waiting room is a GREAT idea - I tested it & was reassured by the result. Well done everyone at Niton - you are going a GREAT job!
+Practice response date: 10 months ago
+Practice response:
+Hi Thank you for sharing this positive feedback on your visit to our Practice. I am really pleased that your experience was so good, and will pass your comments on to the team involved. Many thanks South Wight Medical Practice
+
+Author: Lorna Joyce
+Date: a year ago
+Rating: 5 stars
+Staff at Brighstone are always polite, caring, understanding and helpful. Previously always attended Niton but for the last few years have been at Brighstone and I honestly can’t fault them here. They make an effort to listen and make you feel seen and heard like a human being, not just a number.
+
+Author: Jeremy Lockwood
+Date: 4 years ago
+Rating: 5 stars
+I’ve had a lot of experience of General Practice over the years and having met the doctors, nurses, reception staff and pharmacists at South Wight Practice I genuinely think they are outstanding. Thank you.

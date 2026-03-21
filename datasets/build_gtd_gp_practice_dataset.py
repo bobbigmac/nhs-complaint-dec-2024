@@ -27,6 +27,11 @@ GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
 GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_branch_parent_codes.json"
 PATIENT_COUNTS_BY_YEAR_JSON = BASE_DIR / "raw" / "registered_patients" / "patient_counts_by_year.json"
 DEPRIVATION_SUBSET_GEOJSON = BASE_DIR / "deprivation" / "output" / "catchment_lsoa_imd_2025.geojson"
+NATIONAL_PRACTICES_OUTPUT_DIR = BASE_DIR / "national-practices" / "output"
+NATIONAL_GOOGLE_REVIEW_RESULTS_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "google_maps_recent_reviews.json"
+NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.csv"
+NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
+GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
 from deprivation.practice_deprivation_lookup import write_practice_deprivation_lookup
 RADIUS_MILES = 5.0
@@ -851,6 +856,240 @@ def resolve_gp_patient_survey_payload(
     return parent_payload, parent_code, note
 
 
+def parse_google_maps_coordinates(url: str) -> tuple[float, float] | None:
+    if not url:
+        return None
+    for pattern in (
+        r"@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
+        r"!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)",
+    ):
+        match = re.search(pattern, url)
+        if not match:
+            continue
+        try:
+            return float(match.group(1)), float(match.group(2))
+        except ValueError:
+            continue
+    return None
+
+
+def percent_or_blank(value: Any) -> float | str:
+    if value in ("", None):
+        return ""
+    try:
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return ""
+    if numeric <= 1:
+        numeric *= 100
+    return round(numeric, 2)
+
+
+def int_or_blank(value: Any) -> int | str:
+    if value in ("", None):
+        return ""
+    try:
+        return int(round(float(str(value).replace(",", ""))))
+    except (TypeError, ValueError):
+        return ""
+
+
+def load_national_input_index(path: Path = NATIONAL_PRACTICES_INPUT_CSV) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    return {
+        str(row.get("canonical_code", "")).strip(): row
+        for row in rows
+        if str(row.get("canonical_code", "")).strip()
+    }
+
+
+def detect_gpps_csv_schema(fieldnames: list[str]) -> tuple[str, str, str] | None:
+    code_col = ""
+    for candidate in ("ad_practicecode", "Practice_Code", "Practice_code"):
+        if candidate in fieldnames:
+            code_col = candidate
+            break
+    if not code_col:
+        return None
+    name_col = "ad_practicename" if "ad_practicename" in fieldnames else "Practice_Name"
+    if "overallexp.pcteval" in fieldnames:
+        return code_col, name_col, "overallexp.pcteval"
+    if "Q28_12pct" in fieldnames:
+        return code_col, name_col, "Q28_12pct"
+    return None
+
+
+def gpps_year_from_filename(path: Path) -> int:
+    match = re.search(r"(20\d{2})", path.name)
+    return int(match.group(1)) if match else 0
+
+
+def latest_gpps_csv_candidates() -> list[Path]:
+    candidates = [
+        GPPS_DOWNLOADS_DIR / "archive-from-repo" / "GPPS_2025_Practice_data.csv",
+        GPPS_DOWNLOADS_DIR / "archive-from-repo" / "GPPS_2024_Practice_data.csv",
+    ]
+    for pattern in ("*.csv", "archive-from-repo/*.csv"):
+        candidates.extend(sorted(GPPS_DOWNLOADS_DIR.glob(pattern)))
+    unique_existing: dict[str, Path] = {}
+    for path in candidates:
+        if path.exists():
+            unique_existing[str(path)] = path
+    return sorted(unique_existing.values(), key=lambda path: (gpps_year_from_filename(path), path.name), reverse=True)
+
+
+def load_latest_gpps_csv_index() -> dict[str, dict[str, Any]]:
+    for path in latest_gpps_csv_candidates():
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            schema = detect_gpps_csv_schema(reader.fieldnames or [])
+            if not schema:
+                continue
+            code_col, name_col, overall_col = schema
+            survey_by_code: dict[str, dict[str, Any]] = {}
+            for row in reader:
+                code = str(row.get(code_col, "")).strip().upper()
+                if not code:
+                    continue
+                overall = percent_or_blank(row.get(overall_col))
+                completion_rate = percent_or_blank(row.get("resprate"))
+                survey_by_code[code] = {
+                    "canonical_code": code,
+                    "practice_name_gpps": str(row.get(name_col, "")).strip(),
+                    "gpps_url": f"https://www.gp-patient.co.uk/patientexperience/results?code={code}",
+                    "surveys_sent_out": int_or_blank(row.get("distributed")),
+                    "surveys_sent_back": int_or_blank(row.get("received")),
+                    "completion_rate_percent": completion_rate,
+                    "key_questions": {
+                        "overallexp": {
+                            "practice_percent": overall,
+                        }
+                    },
+                }
+            if survey_by_code:
+                return survey_by_code
+    return {}
+
+
+def build_national_map_supplementals(
+    national_results_path: Path = NATIONAL_GOOGLE_REVIEW_RESULTS_JSON,
+    national_input_csv: Path = NATIONAL_PRACTICES_INPUT_CSV,
+) -> list[dict[str, Any]]:
+    if not national_results_path.exists():
+        return []
+    try:
+        results = json.loads(national_results_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    if not isinstance(results, list):
+        return []
+
+    input_by_code = load_national_input_index(national_input_csv)
+    survey_by_code = load_latest_gpps_csv_index()
+    if not survey_by_code:
+        survey_by_code = load_gp_patient_survey_index()
+    branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
+    supplementals: list[dict[str, Any]] = []
+
+    for result in results:
+        if not isinstance(result, dict):
+            continue
+        code = str(result.get("canonical_code", "")).strip()
+        if not code:
+            continue
+        if bool(result.get("manual_review_required")):
+            continue
+        if bool(result.get("wrong_place_match")):
+            continue
+        if bool(result.get("blocked_place_match")):
+            continue
+        if bool(result.get("sponsored_place_match")) or bool(result.get("sponsored_search_results_only")):
+            continue
+        page_kind = str(result.get("page_kind", "")).strip()
+        google_maps_url = str(result.get("google_maps_url", "")).strip()
+        if not page_kind:
+            if "/place/" in google_maps_url:
+                page_kind = "place"
+            elif "/search/" in google_maps_url:
+                page_kind = "search"
+            else:
+                page_kind = "other"
+        if page_kind != "place":
+            continue
+
+        coords = None
+        raw_lat = result.get("latitude")
+        raw_lon = result.get("longitude")
+        try:
+            if raw_lat not in ("", None) and raw_lon not in ("", None):
+                coords = (float(raw_lat), float(raw_lon))
+        except (TypeError, ValueError):
+            coords = None
+        if coords is None:
+            coords = parse_google_maps_coordinates(google_maps_url)
+        if coords is None:
+            continue
+
+        source_row = input_by_code.get(code, {})
+        survey_payload, survey_code_used, survey_resolution_note = resolve_gp_patient_survey_payload(
+            code,
+            survey_by_code,
+            branch_parent_by_code,
+        )
+
+        google_score = result.get("google_rating", "")
+        google_count = result.get("google_review_count", "")
+        survey_score = survey_metric(survey_payload, "overallexp")
+        if google_score in ("", None) and survey_score in ("", None):
+            continue
+
+        supplementals.append(
+            {
+                "code": code,
+                "name": str(source_row.get("practice_name") or result.get("practice_name") or result.get("google_maps_title") or code).strip(),
+                "lat": round(coords[0], 6),
+                "lon": round(coords[1], 6),
+                "postcode": str(source_row.get("postcode") or result.get("postcode") or "").strip(),
+                "nation": str(source_row.get("nation") or "").strip(),
+                "registered_patient_count": source_row.get("registered_patient_count", ""),
+                "google_score": google_score,
+                "google_count": google_count,
+                "google_source_note": "National Google Maps quick scan",
+                "google_url": google_maps_url,
+                "survey_overall_good_percent": survey_score,
+                "survey_overall_good_ics_percent": "",
+                "survey_overall_good_national_percent": "",
+                "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
+                "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
+                "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+                "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
+                "gp_patient_survey_code_used": survey_code_used,
+                "gp_patient_survey_resolution_note": survey_resolution_note,
+                "is_national_supplemental": True,
+            }
+        )
+
+    return sorted(supplementals, key=lambda row: (str(row.get("nation", "")), str(row.get("postcode", "")), str(row.get("name", ""))))
+
+
+def write_national_supplemental_script(path: Path, rows: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
+    path.write_text(
+        "\n".join(
+            [
+                f"window.NATIONAL_PRACTICE_SUPPLEMENTALS={payload};",
+                f"window.NATIONAL_PRACTICE_SUPPLEMENTALS_COUNT={len(rows)};",
+                "",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+
 # TODO: Detect and explicitly store/report practice replies (staff responses misparsed as patient reviews)
 # as not really reviews. Use a reference file (e.g. datasets/reviews-analysis/practice_replies.json)
 # to flag known cases; exclude from scores and counts; surface in reports.
@@ -1253,6 +1492,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
     patient_counts_by_year = load_registered_patient_timeseries() or {}
     deprivation_geojson = load_deprivation_subset_geojson()
+    national_supplementals = build_national_map_supplementals()
+    write_national_supplemental_script(path.parent / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME, national_supplementals)
     # Build a simple per-practice deprivation lookup JSON alongside the map
     practice_deprivation_lookup_path = path.parent / "practice_deprivation_lookup.json"
     practice_deprivation = write_practice_deprivation_lookup(practice_deprivation_lookup_path, rows)
@@ -2153,6 +2394,7 @@ body {{
         <h1>Manchester GPs' Reviews</h1>
         <p>{len(rows)} GP surgeries profiled.</p>
         <p>{total_registered_patients:,} patients across {registered_patient_rows} practices.</p>
+        <p id="national-supplemental-note" class="hint">{len(national_supplementals)} lightweight national supplementals available.</p>
       </div>
       <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
@@ -2279,8 +2521,11 @@ body {{
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js"></script>
+<script>window.NATIONAL_PRACTICE_SUPPLEMENTALS = window.NATIONAL_PRACTICE_SUPPLEMENTALS || [];</script>
+<script src="{NATIONAL_SUPPLEMENTAL_SCRIPT_NAME}"></script>
 <script>
 const rows = {json.dumps(markers)};
+const nationalSupplementals = Array.isArray(window.NATIONAL_PRACTICE_SUPPLEMENTALS) ? window.NATIONAL_PRACTICE_SUPPLEMENTALS : [];
 const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const patientCountsByYear = {json.dumps(patient_counts_by_year)};
@@ -2294,6 +2539,7 @@ const BASELINE_MANAGEMENT_COMPANY = 'GTD Healthcare';
 const TREND_DEFAULT_CONTEXT_CODE = '__gtd_mean_with_new_bank__';
 const LOCAL_RADIUS_MILES = 2.5;
 const SIDEBAR_COLLAPSE_KEY = 'mapSidebarCollapsed';
+const NATIONAL_SUPPLEMENTAL_MIN_ZOOM = 8;
 const dataBbox = (() => {{
   const lons = rows.map(r => Number(r.lon));
   const lats = rows.map(r => Number(r.lat));
@@ -2307,8 +2553,11 @@ const dataBbox = (() => {{
 }})();
 const map = L.map('map').setView([{center_lat:.6f}, {center_lon:.6f}], 11);
 const markerLayer = L.layerGroup().addTo(map);
+const nationalMarkerLayer = L.layerGroup().addTo(map);
 let voronoiLayer = null;
 let deprivationLayer = null;
+const nationalPane = map.createPane('nationalSupplementals');
+nationalPane.style.zIndex = '350';
 L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
   maxZoom: 18,
   attribution: '&copy; OpenStreetMap contributors'
@@ -2589,6 +2838,10 @@ function patientScaleForRow(row) {{
 
 function mapScaleForRow(row) {{
   return patientScaleForRow(row);
+}}
+
+function nationalMapScaleForRow(row) {{
+  return Math.max(0.52, patientScaleForRow(row) * 0.82);
 }}
 
 function mapRowsForOverlays() {{
@@ -2993,6 +3246,28 @@ function popupMarkup(row) {{
   `;
 }}
 
+function nationalPopupMarkup(row) {{
+  const google = `<div>${{formatGoogle(row)}}</div>`;
+  const survey = `<div>${{formatSurvey(row)}}</div>`;
+  const gap = `<div>${{formatGap(row)}}</div>`;
+  const registeredPatients = numericOrNull(row.registered_patient_count);
+  const patientsLine = registeredPatients === null ? '' : `<div>Registered patients: ${{registeredPatients.toLocaleString('en-GB')}}</div>`;
+  const surveyLink = row.gp_patient_survey_2025_url ? `<div><a href="${{row.gp_patient_survey_2025_url}}" target="_blank" rel="noreferrer">GP Patient Survey page</a></div>` : '';
+  const googleLink = row.google_url ? `<div><a href="${{row.google_url}}" target="_blank" rel="noreferrer">Google Maps page</a></div>` : '';
+  return `
+    <strong>${{row.name}}</strong><br>
+    ${{row.postcode || ''}}<br>
+    <div>Code: ${{row.code}}</div>
+    <div>Nation: ${{row.nation || '?'}}</div>
+    ${{patientsLine}}
+    ${{google}}
+    ${{survey}}
+    ${{gap}}
+    ${{surveyLink}}
+    ${{googleLink}}
+  `;
+}}
+
 function focusRow(row) {{
   focusedPracticeCode = row.code;
   renderComparisons();
@@ -3143,6 +3418,60 @@ function renderMarkers() {{
     marker.on('mouseover', () => marker.setZIndexOffset(baseZIndex + 2000));
     marker.on('mouseout', () => marker.setZIndexOffset(baseZIndex));
     marker.addTo(markerLayer);
+  }}
+}}
+
+function renderNationalSupplementals() {{
+  nationalMarkerLayer.clearLayers();
+  const note = document.getElementById('national-supplemental-note');
+  if (!nationalSupplementals.length) {{
+    if (note) note.textContent = 'No national supplementals built yet.';
+    return;
+  }}
+  if (map.getZoom() < NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {{
+    if (note) {{
+      note.textContent = `${{nationalSupplementals.length.toLocaleString('en-GB')}} national supplementals loaded separately. Zoom to ${{NATIONAL_SUPPLEMENTAL_MIN_ZOOM}}+ to render viewport markers.`;
+    }}
+    return;
+  }}
+
+  const bounds = map.getBounds().pad(0.04);
+  const metric = metricConfigs[activeMetric];
+  const visibleRows = nationalSupplementals.filter((row) => bounds.contains([Number(row.lat), Number(row.lon)]));
+  for (const row of visibleRows) {{
+    const metricValue = metric.value(row);
+    if (metricValue === null && activeMetric === 'gap') {{
+      continue;
+    }}
+    if (activeMetric === 'gap' && activeGapMode === 'normalized' && metricValue > 0) {{
+      continue;
+    }}
+    const color = metric.markerColor(row);
+    const label = metric.markerLabel(row);
+    const scale = nationalMapScaleForRow(row);
+    const metrics = baseShapeMetrics('circle');
+    const fontSize = Math.max(8, Math.min(11, Math.round(9 + scale * 2)));
+    const scaledWidth = Math.round(metrics.width * scale);
+    const scaledHeight = Math.round(metrics.height * scale);
+    const icon = L.divIcon({{
+      className: 'marker-icon marker-icon-national',
+      html: markerSvg('circle', color, label, fontSize, label === '?'),
+      iconSize: [scaledWidth, scaledHeight],
+      iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
+      popupAnchor: [0, metrics.popupY]
+    }});
+    const marker = L.marker([row.lat, row.lon], {{
+      pane: 'nationalSupplementals',
+      icon,
+      zIndexOffset: -300,
+    }});
+    marker.bindPopup(nationalPopupMarkup(row));
+    marker.addTo(nationalMarkerLayer);
+  }}
+
+  if (note) {{
+    const visibleText = `${{visibleRows.length.toLocaleString('en-GB')}} visible`;
+    note.textContent = `${{nationalSupplementals.length.toLocaleString('en-GB')}} national supplementals loaded separately. ${{visibleText}} in view.`;
   }}
 }}
 
@@ -5028,6 +5357,7 @@ function rerenderAll() {{
   renderManagementList();
   clearOverlayLayers();
   renderMarkers();
+  renderNationalSupplementals();
   if (activeAreaOverlay === 'population') {{
     renderVoronoi();
   }} else if (activeAreaOverlay === 'deprivation') {{
@@ -5147,6 +5477,7 @@ document.getElementById('legend-collapse').addEventListener('click', () => {{
 }});
 
 map.on('moveend', () => {{
+  renderNationalSupplementals();
   if (activeAreaOverlay === 'population') {{
     if (voronoiLayer) {{
       map.removeLayer(voronoiLayer);

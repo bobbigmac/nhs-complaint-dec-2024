@@ -1,0 +1,36 @@
+Practice: DALTON SURGERY
+Canonical code: A82039
+Postcode: LA15 8AB
+Google Maps title: Dalton Surgery
+Google rating: 2.0
+Google review count: 4
+Google Maps URL: https://www.google.com/maps/place/Dalton+Surgery/@54.1559137,-3.1824217,17z/data=!4m12!1m2!2m1!1sDALTON+SURGERY+LA15+8AB!3m8!1s0x487ca58db66c0001:0xdcf056c2a14afce1!8m2!3d54.1559106!4d-3.1798414!9m1!1b1!15sChdEQUxUT04gU1VSR0VSWSBMQTE1IDhBQloZIhdkYWx0b24gc3VyZ2VyeSBsYTE1IDhhYpIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOcWJreEVlbUpCRUFF4AEA-gEECAAQLg!16s%2Fg%2F11j1hyfyz9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 4
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/A82039-dalton-surgery.json
+
+Captured reviews
+================
+
+Author: Tencs
+Date: a month ago
+Rating: 1 star
+Tencsa month ago
+
+Author: Paul Evans
+Date: Edited 8 months ago
+Rating: 1 star
+Paul Evans1 reviewEdited 8 months ago
+
+Author: Laura Forrester
+Date: a year ago
+Rating: 5 stars
+Called at 4pm, given emergency appt at 4.45pm. I was listened to, tests were done, medication prescribed and referral sent. Excellent service, thank you.
+
+Author: wil
+Date: a year ago
+Rating: 1 star
+wil3 reviewsa year ago

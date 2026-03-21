@@ -3,7 +3,7 @@
     "generated_date": "2026-03-09",
     "model": "graph",
     "taxonomy_version": "2026-03-16-operational-v1",
-    "cluster_count": 52
+    "cluster_count": 53
   },
   "cluster_labels": {
     "uncategorised": "Other",
@@ -11,53 +11,54 @@
     "c1": "practice, feedback, practice response, response, c...",
     "c2": "blood, blood test, test, lost, long wait",
     "c3": "care, making, care professionalism, disappointed f...",
-    "c4": "years ago, years, ago, reviewsedited, guide",
-    "c25": "appointment, book appointment, book, it's impossib...",
-    "c6": "wasting time, wasting, time saying, saying, practi...",
-    "c7": "records, medical records, medical, previous, words",
-    "c8": "doctors disgusting, horrible, disgusting, rude doc...",
-    "c9": "friendly staff, friendly, it's emergency, staff lo...",
-    "c10": "fully booked, fully, booked, impossible appointmen...",
-    "c11": "appointments day, day, appointments, nearly, amazi...",
-    "c12": "lazy, rude, unprofessional rude, doctors great, ru...",
-    "c18": "worst gp, worst, universe, gp ve, avoid place",
+    "c26": "appointment, book appointment, book, it's impossib...",
+    "c5": "wasting time, wasting, time saying, saying, practi...",
+    "c6": "records, medical records, medical, previous, words",
+    "c7": "doctors disgusting, horrible, disgusting, rude doc...",
+    "c8": "quickly, friendly staff, friendly, seen quickly, i...",
+    "c9": "fully booked, fully, booked, impossible appointmen...",
+    "c10": "appointments day, day, appointments, nearly, amazi...",
+    "c11": "lazy, rude, unprofessional rude, rude lazy, unprof...",
+    "c18": "worst gp, universe, worst, gp ve, avoid place",
+    "c13": "years ago, years, ago, reviewsedited, reviewsedite...",
     "c14": "helpful polite, polite staff, polite, sorting, hel...",
     "c15": "appointment need, phone number, need, die, phone a...",
-    "c16": "staffs, rude staffs, highly recommend, highly, rec...",
+    "c16": "highly, staffs, highly recommend, rude staffs, hel...",
     "c17": "rudest, worst, receptionist worst, medical practic...",
-    "c19": "helpful staff, helpful, staff, drs, helpful thank",
+    "c19": "helpful staff, helpful, brilliant, staff, efficien...",
     "c20": "absolute shambles, shambles, read reviews, read, a...",
     "c21": "doctors tameside, worst doctors, tameside, compass...",
     "c22": "getting, getting appointment, chance, appointment ...",
     "c23": "number, caller, number queue, hour, caller number",
-    "c24": "terrible, terrible service, terrible doctors, appo...",
-    "c26": "okay, receptionists okay, lead, apart, mannered",
-    "c27": "can't speak, speak highly, highly, fob, can't",
-    "c31": "tooth, dental, dentist, appointment dental, dental...",
-    "c29": "incompetent uncaring, uncaring, incompetent, joke ...",
-    "c30": "appt, time receptionist, receptionist rude, hard, ...",
-    "c32": "answer, answer phone, phone, can't answer, phones",
-    "c33": "pain relief, relief, pain, major, sent",
-    "c34": "good, good experience, moving, experience, experie...",
-    "c35": "booking nurse, booking, keeps, want, nurse",
-    "c36": "medical centre, centre, medical, resolve, professi...",
-    "c39": "phone, busy finally, constantly busy, phone consta...",
-    "c40": "joke place, absolute joke, absolute, joke, place",
-    "c41": "acts can't, can't hear, hear heard, heard phone, r...",
-    "c42": "absolutely useless, useless, absolutely, book appo...",
-    "c43": "care support, past years, support, past, nurses",
-    "c44": "drs, drs surgery, surgery rude, needs, needs closi...",
-    "c45": "appointment said, rang appointment, said, appointm...",
-    "c47": "ago new, hours ago, paul, hours, new",
-    "c48": "seen doctor, seen, doctor, ve seen, nurse",
-    "c49": "spent, rely walk, time spent, rely, difficult",
-    "c50": "better surgery, better, surgery, great, surgery pa...",
-    "c51": "rude unhelpful, unhelpful, unhelpful unprofessiona...",
-    "c52": "best gp, gp surgery, area, excellent staff, best",
-    "c53": "bother trying, don't bother, bother, don't, appoin...",
-    "c54": "caring, fantastic, staff, pleasant, staff doctors",
-    "c55": "gone downhill, downhill, gone, surgery gone, admin...",
-    "c56": "friendly efficient, efficient, friendly, happy, su..."
+    "c24": "service improved, nice helpful, charlestown medica...",
+    "c25": "terrible, terrible service, terrible doctors, appo...",
+    "c27": "okay, receptionists okay, lead, apart, mannered",
+    "c33": "tooth, dental, dentist, appointment dental, extrac...",
+    "c42": "absolute joke, incompetent uncaring, absolute, jok...",
+    "c31": "worse doctors, doctors, worse, terrible place, don",
+    "c32": "appt, time receptionist, receptionist rude, hard, ...",
+    "c34": "answer, answer phone, phone, can't answer, phones",
+    "c35": "pain relief, relief, pain, major, sent",
+    "c36": "good, good experience, moving, experience, place",
+    "c37": "booking nurse, booking, keeps, want, nurse",
+    "c38": "medical centre, centre, medical, resolve, professi...",
+    "c41": "phone, busy finally, constantly busy, phone consta...",
+    "c43": "acts can't, can't hear, hear heard, heard phone, r...",
+    "c44": "absolutely useless, useless, absolutely, useless p...",
+    "c45": "care support, past years, support, past, nurses",
+    "c46": "drs, drs surgery, surgery rude, needs, needs closi...",
+    "c47": "appointment said, rang appointment, said, appointm...",
+    "c49": "ago new, hours ago, paul, hours, new",
+    "c50": "best, lovely, surgery ve, best surgery, receptioni...",
+    "c51": "seen doctor, seen, doctor, ve seen, nurse",
+    "c52": "spent, rely walk, time spent, rely, difficult",
+    "c53": "better surgery, better, surgery, great, surgery pa...",
+    "c54": "rude unhelpful, unhelpful, unhelpful unprofessiona...",
+    "c55": "best gp, gp surgery, area, excellent staff, best",
+    "c56": "bother trying, don't bother, bother, don't, appoin...",
+    "c57": "caring, fantastic, staff, pleasant, staff doctors",
+    "c58": "death bed, bed, death, worst, world's",
+    "c59": "gone downhill, downhill, gone, surgery gone, admin..."
   },
   "classifications": {
     "Y02960:0": {
@@ -144,10 +145,10 @@
       ]
     },
     "Y02960:5": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c4"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -176,10 +177,10 @@
       ]
     },
     "Y02960:7": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -191,10 +192,10 @@
       ]
     },
     "Y02960:8": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -206,10 +207,10 @@
       ]
     },
     "Y02960:9": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -289,10 +290,10 @@
       ]
     },
     "Y02960:14": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c1"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -307,10 +308,10 @@
       ]
     },
     "Y02960:15": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -322,10 +323,10 @@
       ]
     },
     "Y02960:16": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -372,10 +373,10 @@
       ]
     },
     "Y02960:19": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -387,10 +388,10 @@
       ]
     },
     "Y02960:20": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c1"
+        "c16"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -436,10 +437,10 @@
       ]
     },
     "Y02960:23": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -467,10 +468,10 @@
       ]
     },
     "Y02960:25": {
-      "cluster_id": "uncategorised",
-      "primary_bucket": "uncategorised",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "uncategorised"
+        "c34"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -501,10 +502,10 @@
       ]
     },
     "Y02960:27": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c4"
+        "c1"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -517,10 +518,10 @@
       ]
     },
     "Y02960:28": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -571,10 +572,10 @@
       ]
     },
     "Y02960:31": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c4"
+        "c6"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -652,10 +653,10 @@
       ]
     },
     "Y02960:36": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -668,10 +669,10 @@
       ]
     },
     "Y02960:37": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c58",
+      "primary_bucket": "c58",
       "buckets": [
-        "c51"
+        "c58"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -718,10 +719,10 @@
       ]
     },
     "Y02960:40": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -733,10 +734,10 @@
       ]
     },
     "Y02960:41": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -751,10 +752,10 @@
       ]
     },
     "Y02960:42": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -768,10 +769,10 @@
       ]
     },
     "Y02960:43": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -798,10 +799,10 @@
       ]
     },
     "Y02960:45": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -846,10 +847,10 @@
       ]
     },
     "Y02960:48": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -878,10 +879,10 @@
       ]
     },
     "Y02960:50": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -922,10 +923,10 @@
       ]
     },
     "Y02960:53": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -939,10 +940,10 @@
       ]
     },
     "Y02960:54": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c56"
+        "c19"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1001,10 +1002,10 @@
       ]
     },
     "Y02960:58": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1031,10 +1032,10 @@
       ]
     },
     "Y02960:60": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c0",
+      "primary_bucket": "c0",
       "buckets": [
-        "c27"
+        "c0"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1046,10 +1047,10 @@
       ]
     },
     "Y02960:61": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1094,10 +1095,10 @@
       ]
     },
     "Y02960:64": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "neutral",
       "operational_category": "front_desk",
@@ -1126,10 +1127,10 @@
       ]
     },
     "Y02960:66": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -1160,10 +1161,10 @@
       ]
     },
     "Y02960:68": {
-      "cluster_id": "c6",
-      "primary_bucket": "c6",
+      "cluster_id": "c5",
+      "primary_bucket": "c5",
       "buckets": [
-        "c6"
+        "c5"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -1174,10 +1175,10 @@
       ]
     },
     "Y02960:69": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1205,10 +1206,10 @@
       ]
     },
     "Y02960:71": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -1221,10 +1222,10 @@
       ]
     },
     "Y02960:72": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1250,10 +1251,10 @@
       ]
     },
     "Y02960:74": {
-      "cluster_id": "c0",
-      "primary_bucket": "c0",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c0"
+        "c1"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -1266,10 +1267,10 @@
       ]
     },
     "Y02960:75": {
-      "cluster_id": "c7",
-      "primary_bucket": "c7",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c7"
+        "c6"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1312,10 +1313,10 @@
       ]
     },
     "Y02960:78": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c4"
+        "c1"
       ],
       "sentiment": "positive",
       "operational_category": "admin_and_referrals",
@@ -1342,10 +1343,10 @@
       ]
     },
     "Y02960:80": {
-      "cluster_id": "c8",
-      "primary_bucket": "c8",
+      "cluster_id": "c7",
+      "primary_bucket": "c7",
       "buckets": [
-        "c8"
+        "c7"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1357,10 +1358,10 @@
       ]
     },
     "Y02960:81": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -1386,10 +1387,10 @@
       ]
     },
     "Y02960:83": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1419,10 +1420,10 @@
       ]
     },
     "Y02960:85": {
-      "cluster_id": "c50",
-      "primary_bucket": "c50",
+      "cluster_id": "c53",
+      "primary_bucket": "c53",
       "buckets": [
-        "c50"
+        "c53"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -1435,10 +1436,10 @@
       ]
     },
     "Y02960:86": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1508,10 +1509,10 @@
       ]
     },
     "Y02960:91": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1536,10 +1537,10 @@
       ]
     },
     "Y02960:93": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1550,10 +1551,10 @@
       ]
     },
     "Y02960:94": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c27"
+        "c16"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -1565,10 +1566,10 @@
       ]
     },
     "Y02960:95": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c12"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -1595,10 +1596,10 @@
       ]
     },
     "Y02960:97": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -1609,10 +1610,10 @@
       ]
     },
     "Y02960:98": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1637,10 +1638,10 @@
       ]
     },
     "Y02960:100": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1652,10 +1653,10 @@
       ]
     },
     "Y02960:101": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c58",
+      "primary_bucket": "c58",
       "buckets": [
-        "c1"
+        "c58"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -1680,10 +1681,10 @@
       ]
     },
     "Y02960:103": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "positive",
       "operational_category": "medicines_and_tests",
@@ -1695,10 +1696,10 @@
       ]
     },
     "Y02960:104": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c1"
+        "c11"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -1710,10 +1711,10 @@
       ]
     },
     "Y02960:105": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1726,10 +1727,10 @@
       ]
     },
     "Y02960:106": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c1"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1757,10 +1758,10 @@
       ]
     },
     "Y02960:108": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1785,10 +1786,10 @@
       ]
     },
     "Y02960:110": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1799,10 +1800,10 @@
       ]
     },
     "Y02960:111": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -1841,10 +1842,10 @@
       ]
     },
     "Y02960:114": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1856,10 +1857,10 @@
       ]
     },
     "Y02960:115": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -1899,10 +1900,10 @@
       ]
     },
     "Y02960:118": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -1913,10 +1914,10 @@
       ]
     },
     "Y02960:119": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -1927,10 +1928,10 @@
       ]
     },
     "Y02960:120": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -1970,10 +1971,10 @@
       ]
     },
     "Y02960:123": {
-      "cluster_id": "c55",
-      "primary_bucket": "c55",
+      "cluster_id": "c59",
+      "primary_bucket": "c59",
       "buckets": [
-        "c55"
+        "c59"
       ],
       "sentiment": "negative",
       "operational_category": "management_and_change",
@@ -1984,10 +1985,10 @@
       ]
     },
     "Y02960:124": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -2040,10 +2041,10 @@
       ]
     },
     "Y02960:128": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -2082,10 +2083,10 @@
       ]
     },
     "Y02960:131": {
-      "cluster_id": "c46",
-      "primary_bucket": "c46",
+      "cluster_id": "c48",
+      "primary_bucket": "c48",
       "buckets": [
-        "c46"
+        "c48"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -2096,10 +2097,10 @@
       ]
     },
     "Y02960:132": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -2124,10 +2125,10 @@
       ]
     },
     "Y02960:134": {
-      "cluster_id": "c26",
-      "primary_bucket": "c26",
+      "cluster_id": "c27",
+      "primary_bucket": "c27",
       "buckets": [
-        "c26"
+        "c27"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -2167,10 +2168,10 @@
       ]
     },
     "Y02960:137": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -2560,10 +2561,10 @@
       ]
     },
     "P89011:0": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -2576,10 +2577,10 @@
       ]
     },
     "P89011:1": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3012,10 +3013,10 @@
       ]
     },
     "P89011:27": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3028,10 +3029,10 @@
       ]
     },
     "P89011:28": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3090,10 +3091,10 @@
       ]
     },
     "P89011:32": {
-      "cluster_id": "c8",
-      "primary_bucket": "c8",
+      "cluster_id": "c7",
+      "primary_bucket": "c7",
       "buckets": [
-        "c8"
+        "c7"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -3139,10 +3140,10 @@
       ]
     },
     "P89011:35": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3167,10 +3168,10 @@
       ]
     },
     "P89011:37": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3183,10 +3184,10 @@
       ]
     },
     "P89011:38": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3336,10 +3337,10 @@
       ]
     },
     "P89011:48": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3370,10 +3371,10 @@
       ]
     },
     "P89011:50": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3443,10 +3444,10 @@
       ]
     },
     "P89011:55": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -3488,10 +3489,10 @@
       ]
     },
     "P89011:58": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -3504,10 +3505,10 @@
       ]
     },
     "P89011:59": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -3519,10 +3520,10 @@
       ]
     },
     "P89011:60": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c44"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3534,10 +3535,10 @@
       ]
     },
     "P89011:61": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -3550,10 +3551,10 @@
       ]
     },
     "P89011:62": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3593,10 +3594,10 @@
       ]
     },
     "P89011:65": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -3609,10 +3610,10 @@
       ]
     },
     "P89011:66": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3623,10 +3624,10 @@
       ]
     },
     "P89011:67": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3654,10 +3655,10 @@
       ]
     },
     "P89011:69": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3684,10 +3685,10 @@
       ]
     },
     "P89011:71": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3698,10 +3699,10 @@
       ]
     },
     "P89011:72": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -3729,10 +3730,10 @@
       ]
     },
     "P89011:74": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3743,10 +3744,10 @@
       ]
     },
     "P89011:75": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3773,10 +3774,10 @@
       ]
     },
     "P89011:77": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3787,10 +3788,10 @@
       ]
     },
     "P89011:78": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3802,10 +3803,10 @@
       ]
     },
     "P89011:79": {
-      "cluster_id": "c26",
-      "primary_bucket": "c26",
+      "cluster_id": "c27",
+      "primary_bucket": "c27",
       "buckets": [
-        "c26"
+        "c27"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -3830,10 +3831,10 @@
       ]
     },
     "P89011:81": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -3862,10 +3863,10 @@
       ]
     },
     "P89011:83": {
-      "cluster_id": "c53",
-      "primary_bucket": "c53",
+      "cluster_id": "c56",
+      "primary_bucket": "c56",
       "buckets": [
-        "c53"
+        "c56"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -3876,10 +3877,10 @@
       ]
     },
     "P89011:84": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -3890,10 +3891,10 @@
       ]
     },
     "P89011:85": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c27"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -3919,10 +3920,10 @@
       ]
     },
     "P89013:0": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -3935,10 +3936,10 @@
       ]
     },
     "P89013:1": {
-      "cluster_id": "c50",
-      "primary_bucket": "c50",
+      "cluster_id": "c53",
+      "primary_bucket": "c53",
       "buckets": [
-        "c50"
+        "c53"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4286,10 +4287,10 @@
       ]
     },
     "P89013:22": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c27"
+        "c1"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -4320,10 +4321,10 @@
       ]
     },
     "P89013:24": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -4394,10 +4395,10 @@
       ]
     },
     "P89013:29": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4423,10 +4424,10 @@
       ]
     },
     "P89013:31": {
-      "cluster_id": "c55",
-      "primary_bucket": "c55",
+      "cluster_id": "c59",
+      "primary_bucket": "c59",
       "buckets": [
-        "c55"
+        "c59"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -4440,10 +4441,10 @@
       ]
     },
     "P89013:32": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -4471,10 +4472,10 @@
       ]
     },
     "P89013:34": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -4486,10 +4487,10 @@
       ]
     },
     "P89013:35": {
-      "cluster_id": "c29",
-      "primary_bucket": "c29",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c29"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4502,10 +4503,10 @@
       ]
     },
     "P89013:36": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c1"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -4516,10 +4517,10 @@
       ]
     },
     "P89013:37": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4530,10 +4531,10 @@
       ]
     },
     "P89013:38": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c24"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -4562,10 +4563,10 @@
       ]
     },
     "P89013:40": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4592,10 +4593,10 @@
       ]
     },
     "P89013:42": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -4651,10 +4652,10 @@
       ]
     },
     "P89013:46": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4665,10 +4666,10 @@
       ]
     },
     "P89013:47": {
-      "cluster_id": "c39",
-      "primary_bucket": "c39",
+      "cluster_id": "c41",
+      "primary_bucket": "c41",
       "buckets": [
-        "c39"
+        "c41"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4682,10 +4683,10 @@
       ]
     },
     "P89013:48": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4697,10 +4698,10 @@
       ]
     },
     "P89013:49": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4712,10 +4713,10 @@
       ]
     },
     "P89013:50": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4740,10 +4741,10 @@
       ]
     },
     "P89013:52": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -4768,10 +4769,10 @@
       ]
     },
     "P89013:54": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4782,10 +4783,10 @@
       ]
     },
     "P89013:55": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4797,10 +4798,10 @@
       ]
     },
     "P89013:56": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -4840,10 +4841,10 @@
       ]
     },
     "P89013:59": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -4854,10 +4855,10 @@
       ]
     },
     "P89013:60": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4868,10 +4869,10 @@
       ]
     },
     "P89013:61": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4883,10 +4884,10 @@
       ]
     },
     "P89013:62": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4897,10 +4898,10 @@
       ]
     },
     "P89013:63": {
-      "cluster_id": "c33",
-      "primary_bucket": "c33",
+      "cluster_id": "c35",
+      "primary_bucket": "c35",
       "buckets": [
-        "c33"
+        "c35"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -4912,10 +4913,10 @@
       ]
     },
     "P89013:64": {
-      "cluster_id": "c45",
-      "primary_bucket": "c45",
+      "cluster_id": "c47",
+      "primary_bucket": "c47",
       "buckets": [
-        "c45"
+        "c47"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -4942,10 +4943,10 @@
       ]
     },
     "P89013:66": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4971,10 +4972,10 @@
       ]
     },
     "P89013:68": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -4987,10 +4988,10 @@
       ]
     },
     "P89013:69": {
-      "cluster_id": "c45",
-      "primary_bucket": "c45",
+      "cluster_id": "c47",
+      "primary_bucket": "c47",
       "buckets": [
-        "c45"
+        "c47"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -5019,10 +5020,10 @@
       ]
     },
     "P89013:71": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5286,10 +5287,10 @@
       ]
     },
     "P89602:15": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -5316,10 +5317,10 @@
       ]
     },
     "P89602:17": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "neutral",
       "operational_category": "access",
@@ -5330,10 +5331,10 @@
       ]
     },
     "P89602:18": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -5359,10 +5360,10 @@
       ]
     },
     "P89602:20": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -5374,10 +5375,10 @@
       ]
     },
     "P89602:21": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c27"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -5403,10 +5404,10 @@
       ]
     },
     "P89612:0": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c56"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -5477,10 +5478,10 @@
       ]
     },
     "P89612:5": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c32"
+        "c8"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -5522,10 +5523,10 @@
       ]
     },
     "P89612:8": {
-      "cluster_id": "c7",
-      "primary_bucket": "c7",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c7"
+        "c6"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5554,10 +5555,10 @@
       ]
     },
     "P89612:10": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -5596,10 +5597,10 @@
       ]
     },
     "P89612:13": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -5610,10 +5611,10 @@
       ]
     },
     "P89612:14": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c56"
+        "c57"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -5657,10 +5658,10 @@
       ]
     },
     "Y02325:1": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -5673,10 +5674,10 @@
       ]
     },
     "Y02325:2": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c19"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -5702,10 +5703,10 @@
       ]
     },
     "Y02325:4": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5720,10 +5721,10 @@
       ]
     },
     "Y02325:5": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -5749,10 +5750,10 @@
       ]
     },
     "Y02325:7": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -5809,10 +5810,10 @@
       ]
     },
     "Y02325:11": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -5825,10 +5826,10 @@
       ]
     },
     "Y02325:12": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -5887,10 +5888,10 @@
       ]
     },
     "Y02325:16": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5917,10 +5918,10 @@
       ]
     },
     "Y02325:18": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5932,10 +5933,10 @@
       ]
     },
     "Y02325:19": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5946,10 +5947,10 @@
       ]
     },
     "Y02325:20": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -5960,10 +5961,10 @@
       ]
     },
     "Y02325:21": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -5974,10 +5975,10 @@
       ]
     },
     "Y02325:22": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6002,10 +6003,10 @@
       ]
     },
     "Y02325:24": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6018,10 +6019,10 @@
       ]
     },
     "Y02325:25": {
-      "cluster_id": "c36",
-      "primary_bucket": "c36",
+      "cluster_id": "c38",
+      "primary_bucket": "c38",
       "buckets": [
-        "c36"
+        "c38"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6034,10 +6035,10 @@
       ]
     },
     "Y02325:26": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -6049,10 +6050,10 @@
       ]
     },
     "Y02325:27": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6081,10 +6082,10 @@
       ]
     },
     "Y02325:29": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -6096,10 +6097,10 @@
       ]
     },
     "Y02325:30": {
-      "cluster_id": "c0",
-      "primary_bucket": "c0",
+      "cluster_id": "c58",
+      "primary_bucket": "c58",
       "buckets": [
-        "c0"
+        "c58"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -6129,10 +6130,10 @@
       ]
     },
     "Y02325:32": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -6146,10 +6147,10 @@
       ]
     },
     "Y02325:33": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c56"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "medicines_and_tests",
@@ -6164,10 +6165,10 @@
       ]
     },
     "Y02325:34": {
-      "cluster_id": "c36",
-      "primary_bucket": "c36",
+      "cluster_id": "c38",
+      "primary_bucket": "c38",
       "buckets": [
-        "c36"
+        "c38"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -6195,10 +6196,10 @@
       ]
     },
     "Y02325:36": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6210,10 +6211,10 @@
       ]
     },
     "Y02325:37": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -6226,10 +6227,10 @@
       ]
     },
     "Y02325:38": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -6269,10 +6270,10 @@
       ]
     },
     "Y02325:41": {
-      "cluster_id": "c29",
-      "primary_bucket": "c29",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c29"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6284,10 +6285,10 @@
       ]
     },
     "Y02325:42": {
-      "cluster_id": "c36",
-      "primary_bucket": "c36",
+      "cluster_id": "c38",
+      "primary_bucket": "c38",
       "buckets": [
-        "c36"
+        "c38"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -6299,10 +6300,10 @@
       ]
     },
     "Y02325:43": {
-      "cluster_id": "c29",
-      "primary_bucket": "c29",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c29"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6315,10 +6316,10 @@
       ]
     },
     "Y02325:44": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -6345,10 +6346,10 @@
       ]
     },
     "Y02325:46": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -6360,10 +6361,10 @@
       ]
     },
     "Y02325:47": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -6376,10 +6377,10 @@
       ]
     },
     "Y02325:48": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6421,10 +6422,10 @@
       ]
     },
     "Y02325:51": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -6436,10 +6437,10 @@
       ]
     },
     "Y02325:52": {
-      "cluster_id": "c46",
-      "primary_bucket": "c46",
+      "cluster_id": "c48",
+      "primary_bucket": "c48",
       "buckets": [
-        "c46"
+        "c48"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -6484,10 +6485,10 @@
       ]
     },
     "Y02325:55": {
-      "cluster_id": "c39",
-      "primary_bucket": "c39",
+      "cluster_id": "c41",
+      "primary_bucket": "c41",
       "buckets": [
-        "c39"
+        "c41"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6513,10 +6514,10 @@
       ]
     },
     "Y02325:57": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -6541,10 +6542,10 @@
       ]
     },
     "Y02325:59": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -6556,10 +6557,10 @@
       ]
     },
     "Y02325:60": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6570,10 +6571,10 @@
       ]
     },
     "Y02325:61": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -6600,10 +6601,10 @@
       ]
     },
     "Y02325:63": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c1"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6615,10 +6616,10 @@
       ]
     },
     "Y02325:64": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -6631,10 +6632,10 @@
       ]
     },
     "Y02325:65": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c19"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -6649,10 +6650,10 @@
       ]
     },
     "Y02325:66": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -6665,10 +6666,10 @@
       ]
     },
     "Y02325:67": {
-      "cluster_id": "c18",
-      "primary_bucket": "c18",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c18"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6681,10 +6682,10 @@
       ]
     },
     "Y02325:68": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6712,10 +6713,10 @@
       ]
     },
     "Y02325:70": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -6742,10 +6743,10 @@
       ]
     },
     "Y02325:72": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c1"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6773,10 +6774,10 @@
       ]
     },
     "Y02325:74": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -6787,10 +6788,10 @@
       ]
     },
     "Y02325:75": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6803,10 +6804,10 @@
       ]
     },
     "Y02325:76": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6817,10 +6818,10 @@
       ]
     },
     "Y02325:77": {
-      "cluster_id": "c6",
-      "primary_bucket": "c6",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c6"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6832,10 +6833,10 @@
       ]
     },
     "Y02325:78": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6847,10 +6848,10 @@
       ]
     },
     "Y02325:79": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6862,10 +6863,10 @@
       ]
     },
     "Y02325:80": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6907,10 +6908,10 @@
       ]
     },
     "Y02325:83": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6950,10 +6951,10 @@
       ]
     },
     "Y02325:86": {
-      "cluster_id": "c39",
-      "primary_bucket": "c39",
+      "cluster_id": "c41",
+      "primary_bucket": "c41",
       "buckets": [
-        "c39"
+        "c41"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6966,10 +6967,10 @@
       ]
     },
     "Y02325:87": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -6997,10 +6998,10 @@
       ]
     },
     "Y02325:89": {
-      "cluster_id": "c39",
-      "primary_bucket": "c39",
+      "cluster_id": "c41",
+      "primary_bucket": "c41",
       "buckets": [
-        "c39"
+        "c41"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7013,10 +7014,10 @@
       ]
     },
     "Y02325:90": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7042,10 +7043,10 @@
       ]
     },
     "Y02325:92": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -7090,10 +7091,10 @@
       ]
     },
     "Y02325:95": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -7121,10 +7122,10 @@
       ]
     },
     "Y02325:97": {
-      "cluster_id": "c17",
-      "primary_bucket": "c17",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c17"
+        "c33"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -7151,10 +7152,10 @@
       ]
     },
     "Y02325:99": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -7167,10 +7168,10 @@
       ]
     },
     "Y02325:100": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "neutral",
       "operational_category": "access",
@@ -7182,10 +7183,10 @@
       ]
     },
     "Y02325:101": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -7199,10 +7200,10 @@
       ]
     },
     "Y02325:102": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7229,10 +7230,10 @@
       ]
     },
     "Y02325:104": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -7245,10 +7246,10 @@
       ]
     },
     "Y02325:105": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7288,10 +7289,10 @@
       ]
     },
     "Y02325:108": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -7461,10 +7462,10 @@
       ]
     },
     "Y02520:10": {
-      "cluster_id": "c2",
-      "primary_bucket": "c2",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c2"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -7505,10 +7506,10 @@
       ]
     },
     "Y02520:13": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -7582,10 +7583,10 @@
       ]
     },
     "Y02520:18": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -7596,10 +7597,10 @@
       ]
     },
     "Y02520:19": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7612,10 +7613,10 @@
       ]
     },
     "Y02520:20": {
-      "cluster_id": "c41",
-      "primary_bucket": "c41",
+      "cluster_id": "c43",
+      "primary_bucket": "c43",
       "buckets": [
-        "c41"
+        "c43"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7628,10 +7629,10 @@
       ]
     },
     "Y02520:21": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7642,10 +7643,10 @@
       ]
     },
     "Y02520:22": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -7670,10 +7671,10 @@
       ]
     },
     "Y02520:24": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -7686,10 +7687,10 @@
       ]
     },
     "Y02520:25": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7701,10 +7702,10 @@
       ]
     },
     "Y02520:26": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "medicines_and_tests",
@@ -7720,10 +7721,10 @@
       ]
     },
     "Y02520:27": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7735,10 +7736,10 @@
       ]
     },
     "Y02520:28": {
-      "cluster_id": "c41",
-      "primary_bucket": "c41",
+      "cluster_id": "c43",
+      "primary_bucket": "c43",
       "buckets": [
-        "c41"
+        "c43"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -7751,10 +7752,10 @@
       ]
     },
     "Y02520:29": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -7782,10 +7783,10 @@
       ]
     },
     "Y02520:31": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -7838,10 +7839,10 @@
       ]
     },
     "Y02520:35": {
-      "cluster_id": "c8",
-      "primary_bucket": "c8",
+      "cluster_id": "c7",
+      "primary_bucket": "c7",
       "buckets": [
-        "c8"
+        "c7"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -7854,10 +7855,10 @@
       ]
     },
     "Y02520:36": {
-      "cluster_id": "c41",
-      "primary_bucket": "c41",
+      "cluster_id": "c43",
+      "primary_bucket": "c43",
       "buckets": [
-        "c41"
+        "c43"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7870,10 +7871,10 @@
       ]
     },
     "Y02520:37": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -7928,10 +7929,10 @@
       ]
     },
     "Y02520:41": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7942,10 +7943,10 @@
       ]
     },
     "Y02520:42": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -7972,10 +7973,10 @@
       ]
     },
     "Y02520:44": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -7988,10 +7989,10 @@
       ]
     },
     "Y02520:45": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -8002,10 +8003,10 @@
       ]
     },
     "Y02520:46": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -8036,10 +8037,10 @@
       ]
     },
     "Y02520:48": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8052,10 +8053,10 @@
       ]
     },
     "Y02520:49": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -8069,10 +8070,10 @@
       ]
     },
     "Y02520:50": {
-      "cluster_id": "c55",
-      "primary_bucket": "c55",
+      "cluster_id": "c59",
+      "primary_bucket": "c59",
       "buckets": [
-        "c55"
+        "c59"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8099,10 +8100,10 @@
       ]
     },
     "Y02520:52": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8114,10 +8115,10 @@
       ]
     },
     "Y02520:53": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -8144,10 +8145,10 @@
       ]
     },
     "Y02520:55": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "positive",
       "operational_category": "on_site_experience",
@@ -8218,10 +8219,10 @@
       ]
     },
     "Y02520:60": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "neutral",
       "operational_category": "medicines_and_tests",
@@ -8266,10 +8267,10 @@
       ]
     },
     "Y02520:63": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8280,10 +8281,10 @@
       ]
     },
     "Y02520:64": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -8294,10 +8295,10 @@
       ]
     },
     "Y02520:65": {
-      "cluster_id": "c8",
-      "primary_bucket": "c8",
+      "cluster_id": "c7",
+      "primary_bucket": "c7",
       "buckets": [
-        "c8"
+        "c7"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8310,10 +8311,10 @@
       ]
     },
     "Y02520:66": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -8352,10 +8353,10 @@
       ]
     },
     "Y02520:69": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -8366,10 +8367,10 @@
       ]
     },
     "Y02520:70": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -8395,10 +8396,10 @@
       ]
     },
     "Y02520:72": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -8426,10 +8427,10 @@
       ]
     },
     "Y02520:74": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8473,10 +8474,10 @@
       ]
     },
     "Y02520:77": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -8487,10 +8488,10 @@
       ]
     },
     "Y02520:78": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -8501,10 +8502,10 @@
       ]
     },
     "Y02520:79": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -8531,10 +8532,10 @@
       ]
     },
     "Y02520:81": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8548,10 +8549,10 @@
       ]
     },
     "Y02520:82": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -8594,10 +8595,10 @@
       ]
     },
     "Y02520:85": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8624,10 +8625,10 @@
       ]
     },
     "Y02520:87": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8653,10 +8654,10 @@
       ]
     },
     "Y02520:89": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -8684,10 +8685,10 @@
       ]
     },
     "Y02520:91": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -8757,10 +8758,10 @@
       ]
     },
     "Y02520:96": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8771,10 +8772,10 @@
       ]
     },
     "Y02520:97": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8787,10 +8788,10 @@
       ]
     },
     "Y02520:98": {
-      "cluster_id": "c45",
-      "primary_bucket": "c45",
+      "cluster_id": "c47",
+      "primary_bucket": "c47",
       "buckets": [
-        "c45"
+        "c47"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8801,10 +8802,10 @@
       ]
     },
     "Y02520:99": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8830,10 +8831,10 @@
       ]
     },
     "Y02520:101": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8847,10 +8848,10 @@
       ]
     },
     "Y02520:102": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8875,10 +8876,10 @@
       ]
     },
     "Y02586:0": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -8889,10 +8890,10 @@
       ]
     },
     "Y02586:1": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -9011,10 +9012,10 @@
       ]
     },
     "Y02586:8": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c25"
+        "c1"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -9487,10 +9488,10 @@
       ]
     },
     "Y02586:38": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c27"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -9521,10 +9522,10 @@
       ]
     },
     "Y02586:40": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -9554,10 +9555,10 @@
       ]
     },
     "Y02586:42": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -9631,10 +9632,10 @@
       ]
     },
     "Y02586:47": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -9692,10 +9693,10 @@
       ]
     },
     "Y02586:51": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -9722,10 +9723,10 @@
       ]
     },
     "Y02586:53": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c54"
+        "c57"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -9736,10 +9737,10 @@
       ]
     },
     "Y02586:54": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "positive",
       "operational_category": "admin_and_referrals",
@@ -9769,10 +9770,10 @@
       ]
     },
     "Y02586:56": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -9812,10 +9813,10 @@
       ]
     },
     "Y02586:59": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -9827,10 +9828,10 @@
       ]
     },
     "Y02586:60": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -9872,10 +9873,10 @@
       ]
     },
     "Y02586:63": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -9902,10 +9903,10 @@
       ]
     },
     "Y02586:65": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -9962,10 +9963,10 @@
       ]
     },
     "Y02586:69": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -9993,10 +9994,10 @@
       ]
     },
     "Y02586:71": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -10008,10 +10009,10 @@
       ]
     },
     "Y02586:72": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -10040,10 +10041,10 @@
       ]
     },
     "Y02586:74": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -10056,10 +10057,10 @@
       ]
     },
     "Y02586:75": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -10084,10 +10085,10 @@
       ]
     },
     "Y02586:77": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -10113,10 +10114,10 @@
       ]
     },
     "Y02586:79": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c25"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -10142,10 +10143,10 @@
       ]
     },
     "Y02586:81": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -10172,10 +10173,10 @@
       ]
     },
     "Y02586:83": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c1"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -10216,10 +10217,10 @@
       ]
     },
     "Y02586:86": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -10231,10 +10232,10 @@
       ]
     },
     "Y02586:87": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -10263,10 +10264,10 @@
       ]
     },
     "Y02586:89": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "management_and_change",
@@ -10306,10 +10307,10 @@
       ]
     },
     "Y02663:0": {
-      "cluster_id": "c47",
-      "primary_bucket": "c47",
+      "cluster_id": "c49",
+      "primary_bucket": "c49",
       "buckets": [
-        "c47"
+        "c49"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -10320,10 +10321,10 @@
       ]
     },
     "Y02663:1": {
-      "cluster_id": "c47",
-      "primary_bucket": "c47",
+      "cluster_id": "c49",
+      "primary_bucket": "c49",
       "buckets": [
-        "c47"
+        "c49"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -10334,10 +10335,10 @@
       ]
     },
     "Y02663:2": {
-      "cluster_id": "c47",
-      "primary_bucket": "c47",
+      "cluster_id": "c49",
+      "primary_bucket": "c49",
       "buckets": [
-        "c47"
+        "c49"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -10365,10 +10366,10 @@
       ]
     },
     "Y02663:4": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -10977,10 +10978,10 @@
       ]
     },
     "Y02663:42": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -11007,10 +11008,10 @@
       ]
     },
     "Y02663:44": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11049,10 +11050,10 @@
       ]
     },
     "Y02663:47": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11092,10 +11093,10 @@
       ]
     },
     "Y02663:50": {
-      "cluster_id": "c39",
-      "primary_bucket": "c39",
+      "cluster_id": "c41",
+      "primary_bucket": "c41",
       "buckets": [
-        "c39"
+        "c41"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11122,10 +11123,10 @@
       ]
     },
     "Y02663:52": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11166,10 +11167,10 @@
       ]
     },
     "Y02663:55": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -11194,10 +11195,10 @@
       ]
     },
     "Y02663:57": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -11244,10 +11245,10 @@
       ]
     },
     "Y02663:60": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11259,10 +11260,10 @@
       ]
     },
     "Y02663:61": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -11304,10 +11305,10 @@
       ]
     },
     "Y02663:64": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -11333,10 +11334,10 @@
       ]
     },
     "Y02663:66": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -11361,10 +11362,10 @@
       ]
     },
     "Y02663:68": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "on_site_experience",
@@ -11432,10 +11433,10 @@
       ]
     },
     "Y02663:73": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -11450,10 +11451,10 @@
       ]
     },
     "Y02663:74": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -11465,10 +11466,10 @@
       ]
     },
     "Y02663:75": {
-      "cluster_id": "c0",
-      "primary_bucket": "c0",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c0"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -11528,10 +11529,10 @@
       ]
     },
     "Y02663:79": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11544,10 +11545,10 @@
       ]
     },
     "Y02663:80": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11560,10 +11561,10 @@
       ]
     },
     "Y02663:81": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -11590,10 +11591,10 @@
       ]
     },
     "Y02663:83": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -11633,10 +11634,10 @@
       ]
     },
     "Y02663:86": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -11675,10 +11676,10 @@
       ]
     },
     "Y02663:89": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -12118,10 +12119,10 @@
       ]
     },
     "Y02713:27": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -12152,10 +12153,10 @@
       ]
     },
     "Y02713:29": {
-      "cluster_id": "c55",
-      "primary_bucket": "c55",
+      "cluster_id": "c59",
+      "primary_bucket": "c59",
       "buckets": [
-        "c55"
+        "c59"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12183,10 +12184,10 @@
       ]
     },
     "Y02713:31": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12228,10 +12229,10 @@
       ]
     },
     "Y02713:34": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12243,10 +12244,10 @@
       ]
     },
     "Y02713:35": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c54"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -12327,10 +12328,10 @@
       ]
     },
     "Y02713:40": {
-      "cluster_id": "c7",
-      "primary_bucket": "c7",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c7"
+        "c6"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12358,10 +12359,10 @@
       ]
     },
     "Y02713:42": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12391,10 +12392,10 @@
       ]
     },
     "Y02713:44": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -12423,10 +12424,10 @@
       ]
     },
     "Y02713:46": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12496,10 +12497,10 @@
       ]
     },
     "Y02713:51": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12527,10 +12528,10 @@
       ]
     },
     "Y02713:53": {
-      "cluster_id": "c0",
-      "primary_bucket": "c0",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c0"
+        "c19"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -12587,10 +12588,10 @@
       ]
     },
     "Y02713:57": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12617,10 +12618,10 @@
       ]
     },
     "Y02713:59": {
-      "cluster_id": "c6",
-      "primary_bucket": "c6",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c6"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -12631,10 +12632,10 @@
       ]
     },
     "Y02713:60": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12676,10 +12677,10 @@
       ]
     },
     "Y02713:63": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c33",
+      "primary_bucket": "c33",
       "buckets": [
-        "c31"
+        "c33"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12692,10 +12693,10 @@
       ]
     },
     "Y02713:64": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12756,10 +12757,10 @@
       ]
     },
     "Y02713:68": {
-      "cluster_id": "c17",
-      "primary_bucket": "c17",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c17"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12770,10 +12771,10 @@
       ]
     },
     "Y02713:69": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c0",
+      "primary_bucket": "c0",
       "buckets": [
-        "c12"
+        "c0"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12784,10 +12785,10 @@
       ]
     },
     "Y02713:70": {
-      "cluster_id": "c49",
-      "primary_bucket": "c49",
+      "cluster_id": "c52",
+      "primary_bucket": "c52",
       "buckets": [
-        "c49"
+        "c52"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12800,10 +12801,10 @@
       ]
     },
     "Y02713:71": {
-      "cluster_id": "c49",
-      "primary_bucket": "c49",
+      "cluster_id": "c52",
+      "primary_bucket": "c52",
       "buckets": [
-        "c49"
+        "c52"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12845,10 +12846,10 @@
       ]
     },
     "Y02713:74": {
-      "cluster_id": "c50",
-      "primary_bucket": "c50",
+      "cluster_id": "c53",
+      "primary_bucket": "c53",
       "buckets": [
-        "c50"
+        "c53"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -12905,10 +12906,10 @@
       ]
     },
     "Y02713:78": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -12954,10 +12955,10 @@
       ]
     },
     "Y02713:81": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -12982,10 +12983,10 @@
       ]
     },
     "Y02713:83": {
-      "cluster_id": "c50",
-      "primary_bucket": "c50",
+      "cluster_id": "c53",
+      "primary_bucket": "c53",
       "buckets": [
-        "c50"
+        "c53"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -13024,10 +13025,10 @@
       ]
     },
     "Y02713:86": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c12"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -13040,10 +13041,10 @@
       ]
     },
     "Y02713:87": {
-      "cluster_id": "c29",
-      "primary_bucket": "c29",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c29"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -13056,10 +13057,10 @@
       ]
     },
     "Y02713:88": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -13091,10 +13092,10 @@
       ]
     },
     "Y02713:90": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
       "buckets": [
-        "c34"
+        "c24"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -13123,10 +13124,10 @@
       ]
     },
     "Y02713:92": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c54"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -13137,10 +13138,10 @@
       ]
     },
     "Y02713:93": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -13166,10 +13167,10 @@
       ]
     },
     "Y02713:95": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -13180,10 +13181,10 @@
       ]
     },
     "Y02713:96": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -13194,10 +13195,10 @@
       ]
     },
     "Y02713:97": {
-      "cluster_id": "c52",
-      "primary_bucket": "c52",
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
       "buckets": [
-        "c52"
+        "c55"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -13270,10 +13271,10 @@
       ]
     },
     "Y02713:102": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -13284,10 +13285,10 @@
       ]
     },
     "Y02713:103": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -13318,10 +13319,10 @@
       ]
     },
     "Y02713:105": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "neutral",
       "operational_category": "clinical_care",
@@ -13337,10 +13338,10 @@
       ]
     },
     "Y02713:106": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -13384,10 +13385,10 @@
       ]
     },
     "Y02713:109": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -13400,10 +13401,10 @@
       ]
     },
     "Y02713:110": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -13415,10 +13416,10 @@
       ]
     },
     "Y02713:111": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -13430,10 +13431,10 @@
       ]
     },
     "Y02713:112": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -13458,10 +13459,10 @@
       ]
     },
     "Y02713:114": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c54"
+        "c57"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -13473,10 +13474,10 @@
       ]
     },
     "Y02713:115": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -13487,10 +13488,10 @@
       ]
     },
     "Y02849:0": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -13649,10 +13650,10 @@
       ]
     },
     "Y02849:10": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",
@@ -13773,10 +13774,10 @@
       ]
     },
     "Y02875:7": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c1"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -13902,10 +13903,10 @@
       ]
     },
     "Y02875:15": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -13962,10 +13963,10 @@
       ]
     },
     "Y02875:19": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -13978,10 +13979,10 @@
       ]
     },
     "Y02875:20": {
-      "cluster_id": "c52",
-      "primary_bucket": "c52",
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
       "buckets": [
-        "c52"
+        "c55"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -13994,10 +13995,10 @@
       ]
     },
     "Y02875:21": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14042,10 +14043,10 @@
       ]
     },
     "Y02875:24": {
-      "cluster_id": "c6",
-      "primary_bucket": "c6",
+      "cluster_id": "c5",
+      "primary_bucket": "c5",
       "buckets": [
-        "c6"
+        "c5"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -14070,10 +14071,10 @@
       ]
     },
     "Y02875:26": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14084,10 +14085,10 @@
       ]
     },
     "Y02875:27": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14098,10 +14099,10 @@
       ]
     },
     "Y02875:28": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -14114,17 +14115,17 @@
       ]
     },
     "Y02875:29": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
-      "operational_category": "uncategorised",
-      "subcategory": "",
-      "operational_confidence": 0.0,
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
       "operational_categories": [
-        "uncategorised"
+        "access"
       ]
     },
     "Y02875:30": {
@@ -14189,10 +14190,10 @@
       ]
     },
     "Y02875:34": {
-      "cluster_id": "c53",
-      "primary_bucket": "c53",
+      "cluster_id": "c56",
+      "primary_bucket": "c56",
       "buckets": [
-        "c53"
+        "c56"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14221,10 +14222,10 @@
       ]
     },
     "Y02875:36": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "neutral",
       "operational_category": "access",
@@ -14295,10 +14296,10 @@
       ]
     },
     "Y02875:41": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -14310,10 +14311,10 @@
       ]
     },
     "Y02875:42": {
-      "cluster_id": "c39",
-      "primary_bucket": "c39",
+      "cluster_id": "c41",
+      "primary_bucket": "c41",
       "buckets": [
-        "c39"
+        "c41"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14325,10 +14326,10 @@
       ]
     },
     "Y02875:43": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -14372,10 +14373,10 @@
       ]
     },
     "Y02875:46": {
-      "cluster_id": "c26",
-      "primary_bucket": "c26",
+      "cluster_id": "c27",
+      "primary_bucket": "c27",
       "buckets": [
-        "c26"
+        "c27"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -14388,10 +14389,10 @@
       ]
     },
     "Y02875:47": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -14404,10 +14405,10 @@
       ]
     },
     "Y02875:48": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14418,10 +14419,10 @@
       ]
     },
     "Y02875:49": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14432,10 +14433,10 @@
       ]
     },
     "Y02875:50": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -14449,10 +14450,10 @@
       ]
     },
     "Y02875:51": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14465,10 +14466,10 @@
       ]
     },
     "Y02875:52": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14510,10 +14511,10 @@
       ]
     },
     "Y02875:55": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c54"
+        "c57"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -14524,10 +14525,10 @@
       ]
     },
     "Y02875:56": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14617,10 +14618,10 @@
       ]
     },
     "Y02875:62": {
-      "cluster_id": "c2",
-      "primary_bucket": "c2",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c2"
+        "c19"
       ],
       "sentiment": "neutral",
       "operational_category": "positive_feedback",
@@ -14631,10 +14632,10 @@
       ]
     },
     "Y02875:63": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c56"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -14660,10 +14661,10 @@
       ]
     },
     "Y02875:65": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c54"
+        "c57"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -14692,10 +14693,10 @@
       ]
     },
     "Y02936:1": {
-      "cluster_id": "c8",
-      "primary_bucket": "c8",
+      "cluster_id": "c7",
+      "primary_bucket": "c7",
       "buckets": [
-        "c8"
+        "c7"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -14724,10 +14725,10 @@
       ]
     },
     "Y02936:3": {
-      "cluster_id": "c7",
-      "primary_bucket": "c7",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c7"
+        "c6"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14741,10 +14742,10 @@
       ]
     },
     "Y02936:4": {
-      "cluster_id": "c6",
-      "primary_bucket": "c6",
+      "cluster_id": "c5",
+      "primary_bucket": "c5",
       "buckets": [
-        "c6"
+        "c5"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -14874,10 +14875,10 @@
       ]
     },
     "Y02936:13": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14919,10 +14920,10 @@
       ]
     },
     "Y02936:16": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -14976,10 +14977,10 @@
       ]
     },
     "Y02936:20": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -14991,10 +14992,10 @@
       ]
     },
     "Y02936:21": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15005,10 +15006,10 @@
       ]
     },
     "Y02936:22": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15019,10 +15020,10 @@
       ]
     },
     "Y02936:23": {
-      "cluster_id": "c52",
-      "primary_bucket": "c52",
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
       "buckets": [
-        "c52"
+        "c55"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -15035,10 +15036,10 @@
       ]
     },
     "Y02936:24": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15064,10 +15065,10 @@
       ]
     },
     "Y02936:26": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -15078,10 +15079,10 @@
       ]
     },
     "Y02936:27": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15137,10 +15138,10 @@
       ]
     },
     "Y02936:31": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c27"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -15210,10 +15211,10 @@
       ]
     },
     "Y02936:36": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15267,10 +15268,10 @@
       ]
     },
     "G3K4Y:1": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c1"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -15283,24 +15284,24 @@
       ]
     },
     "G3K4Y:2": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c1"
+        "c16"
       ],
       "sentiment": "positive",
-      "operational_category": "uncategorised",
-      "subcategory": "",
-      "operational_confidence": 0.0,
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
       "operational_categories": [
-        "uncategorised"
+        "front_desk"
       ]
     },
     "G3K4Y:3": {
-      "cluster_id": "uncategorised",
-      "primary_bucket": "uncategorised",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "uncategorised"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -15325,10 +15326,10 @@
       ]
     },
     "G3K4Y:5": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -15342,10 +15343,10 @@
       ]
     },
     "G3K4Y:6": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -15371,10 +15372,10 @@
       ]
     },
     "G3K4Y:8": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15385,10 +15386,10 @@
       ]
     },
     "G3K4Y:9": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15400,10 +15401,10 @@
       ]
     },
     "G3K4Y:10": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -15414,10 +15415,10 @@
       ]
     },
     "G3K4Y:11": {
-      "cluster_id": "c17",
-      "primary_bucket": "c17",
+      "cluster_id": "c58",
+      "primary_bucket": "c58",
       "buckets": [
-        "c17"
+        "c58"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15428,10 +15429,10 @@
       ]
     },
     "G3K4Y:12": {
-      "cluster_id": "c55",
-      "primary_bucket": "c55",
+      "cluster_id": "c59",
+      "primary_bucket": "c59",
       "buckets": [
-        "c55"
+        "c59"
       ],
       "sentiment": "negative",
       "operational_category": "management_and_change",
@@ -15458,10 +15459,10 @@
       ]
     },
     "G3K4Y:14": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15474,10 +15475,10 @@
       ]
     },
     "G3K4Y:15": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c32"
+        "c31"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15505,10 +15506,10 @@
       ]
     },
     "G3K4Y:17": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15521,10 +15522,10 @@
       ]
     },
     "G3K4Y:18": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -15549,10 +15550,10 @@
       ]
     },
     "G3K4Y:20": {
-      "cluster_id": "c55",
-      "primary_bucket": "c55",
+      "cluster_id": "c59",
+      "primary_bucket": "c59",
       "buckets": [
-        "c55"
+        "c59"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -15651,10 +15652,10 @@
       ]
     },
     "G3K4Y:27": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
       "buckets": [
-        "c11"
+        "c10"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -15666,10 +15667,10 @@
       ]
     },
     "G3K4Y:28": {
-      "cluster_id": "c53",
-      "primary_bucket": "c53",
+      "cluster_id": "c56",
+      "primary_bucket": "c56",
       "buckets": [
-        "c53"
+        "c56"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15680,10 +15681,10 @@
       ]
     },
     "G3K4Y:29": {
-      "cluster_id": "c45",
-      "primary_bucket": "c45",
+      "cluster_id": "c47",
+      "primary_bucket": "c47",
       "buckets": [
-        "c45"
+        "c47"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -15713,10 +15714,10 @@
       ]
     },
     "G3K4Y:31": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c27"
+        "c1"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -15731,10 +15732,10 @@
       ]
     },
     "G3K4Y:32": {
-      "cluster_id": "c6",
-      "primary_bucket": "c6",
+      "cluster_id": "c5",
+      "primary_bucket": "c5",
       "buckets": [
-        "c6"
+        "c5"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -15748,66 +15749,6 @@
       ]
     },
     "G3K4Y:33": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
-      "buckets": [
-        "c32"
-      ],
-      "sentiment": "negative",
-      "operational_category": "clinical_care",
-      "subcategory": "clinical_quality",
-      "operational_confidence": 0.65,
-      "operational_categories": [
-        "clinical_care"
-      ]
-    },
-    "G3K4Y:34": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
-      "buckets": [
-        "c32"
-      ],
-      "sentiment": "negative",
-      "operational_category": "access",
-      "subcategory": "telephone_access",
-      "operational_confidence": 0.9,
-      "operational_categories": [
-        "access"
-      ]
-    },
-    "G3K4Y:35": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
-      "buckets": [
-        "c32"
-      ],
-      "sentiment": "positive",
-      "operational_category": "access",
-      "subcategory": "appointment_booking",
-      "operational_confidence": 0.85,
-      "operational_categories": [
-        "access",
-        "front_desk",
-        "positive_feedback"
-      ]
-    },
-    "G3K4Y:36": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
-      "buckets": [
-        "c12"
-      ],
-      "sentiment": "negative",
-      "operational_category": "front_desk",
-      "subcategory": "reception_conduct",
-      "operational_confidence": 0.9,
-      "operational_categories": [
-        "front_desk",
-        "medicines_and_tests",
-        "clinical_care"
-      ]
-    },
-    "G3K4Y:37": {
       "cluster_id": "c34",
       "primary_bucket": "c34",
       "buckets": [
@@ -15821,11 +15762,71 @@
         "clinical_care"
       ]
     },
-    "G3K4Y:38": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+    "G3K4Y:34": {
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c12"
+        "c34"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access"
+      ]
+    },
+    "G3K4Y:35": {
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
+      "buckets": [
+        "c34"
+      ],
+      "sentiment": "positive",
+      "operational_category": "access",
+      "subcategory": "appointment_booking",
+      "operational_confidence": 0.85,
+      "operational_categories": [
+        "access",
+        "front_desk",
+        "positive_feedback"
+      ]
+    },
+    "G3K4Y:36": {
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
+      "buckets": [
+        "c11"
+      ],
+      "sentiment": "negative",
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "front_desk",
+        "medicines_and_tests",
+        "clinical_care"
+      ]
+    },
+    "G3K4Y:37": {
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
+      "buckets": [
+        "c36"
+      ],
+      "sentiment": "negative",
+      "operational_category": "clinical_care",
+      "subcategory": "clinical_quality",
+      "operational_confidence": 0.65,
+      "operational_categories": [
+        "clinical_care"
+      ]
+    },
+    "G3K4Y:38": {
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
+      "buckets": [
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -15869,10 +15870,10 @@
       ]
     },
     "G3K4Y:41": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -15979,10 +15980,10 @@
       ]
     },
     "G3K4Y:48": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -15995,10 +15996,10 @@
       ]
     },
     "G3K4Y:49": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16010,10 +16011,10 @@
       ]
     },
     "G3K4Y:50": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16039,10 +16040,10 @@
       ]
     },
     "G3K4Y:52": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16053,10 +16054,10 @@
       ]
     },
     "G3K4Y:53": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c25",
+      "primary_bucket": "c25",
       "buckets": [
-        "c24"
+        "c25"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16081,10 +16082,10 @@
       ]
     },
     "G3K4Y:55": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16110,10 +16111,10 @@
       ]
     },
     "G3K4Y:57": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c54"
+        "c57"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16198,10 +16199,10 @@
       ]
     },
     "G3K4Y:63": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c19"
+        "c1"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -16234,10 +16235,10 @@
       ]
     },
     "G3K4Y:65": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c56"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -16251,10 +16252,10 @@
       ]
     },
     "G3K4Y:66": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -16299,10 +16300,10 @@
       ]
     },
     "G3K4Y:69": {
-      "cluster_id": "c10",
-      "primary_bucket": "c10",
+      "cluster_id": "c9",
+      "primary_bucket": "c9",
       "buckets": [
-        "c10"
+        "c9"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -16329,10 +16330,10 @@
       ]
     },
     "G3K4Y:71": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16390,10 +16391,10 @@
       ]
     },
     "G3K4Y:75": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -16406,10 +16407,10 @@
       ]
     },
     "G3K4Y:76": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -16482,10 +16483,10 @@
       ]
     },
     "G3K4Y:81": {
-      "cluster_id": "c48",
-      "primary_bucket": "c48",
+      "cluster_id": "c51",
+      "primary_bucket": "c51",
       "buckets": [
-        "c48"
+        "c51"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -16497,10 +16498,10 @@
       ]
     },
     "G3K4Y:82": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16511,10 +16512,10 @@
       ]
     },
     "G3K4Y:83": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -16647,10 +16648,10 @@
       ]
     },
     "P82013001:1": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -16661,17 +16662,17 @@
       ]
     },
     "P82013001:2": {
-      "cluster_id": "c18",
-      "primary_bucket": "c18",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c18"
+        "c42"
       ],
       "sentiment": "negative",
-      "operational_category": "clinical_care",
-      "subcategory": "clinical_quality",
-      "operational_confidence": 0.65,
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
       "operational_categories": [
-        "clinical_care"
+        "access"
       ]
     },
     "P82013001:3": {
@@ -16749,24 +16750,24 @@
       ]
     },
     "P82013001:8": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c31",
+      "primary_bucket": "c31",
       "buckets": [
-        "c44"
+        "c31"
       ],
       "sentiment": "negative",
-      "operational_category": "front_desk",
-      "subcategory": "reception_conduct",
-      "operational_confidence": 0.9,
+      "operational_category": "clinical_care",
+      "subcategory": "clinical_quality",
+      "operational_confidence": 0.65,
       "operational_categories": [
-        "front_desk"
+        "clinical_care"
       ]
     },
     "P82013001:9": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16776,83 +16777,7 @@
         "access"
       ]
     },
-    "P82607:0": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
-      "buckets": [
-        "c1"
-      ],
-      "sentiment": "positive",
-      "operational_category": "access",
-      "subcategory": "telephone_access",
-      "operational_confidence": 0.9,
-      "operational_categories": [
-        "access",
-        "management_and_change",
-        "positive_feedback",
-        "clinical_care"
-      ]
-    },
-    "P82607:1": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
-      "buckets": [
-        "c51"
-      ],
-      "sentiment": "positive",
-      "operational_category": "access",
-      "subcategory": "digital_access",
-      "operational_confidence": 0.9,
-      "operational_categories": [
-        "access",
-        "positive_feedback",
-        "clinical_care"
-      ]
-    },
-    "P82607:2": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
-      "buckets": [
-        "c4"
-      ],
-      "sentiment": "positive",
-      "operational_category": "uncategorised",
-      "subcategory": "",
-      "operational_confidence": 0.0,
-      "operational_categories": [
-        "uncategorised"
-      ]
-    },
-    "P82607:3": {
-      "cluster_id": "c52",
-      "primary_bucket": "c52",
-      "buckets": [
-        "c52"
-      ],
-      "sentiment": "positive",
-      "operational_category": "management_and_change",
-      "subcategory": "capacity_and_staffing",
-      "operational_confidence": 0.75,
-      "operational_categories": [
-        "management_and_change",
-        "positive_feedback"
-      ]
-    },
-    "P82607:4": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
-      "buckets": [
-        "c19"
-      ],
-      "sentiment": "positive",
-      "operational_category": "positive_feedback",
-      "subcategory": "gratitude",
-      "operational_confidence": 0.7,
-      "operational_categories": [
-        "positive_feedback"
-      ]
-    },
-    "P82607:5": {
+    "P85016001:0": {
       "cluster_id": "uncategorised",
       "primary_bucket": "uncategorised",
       "buckets": [
@@ -16864,20 +16789,6 @@
       "operational_confidence": 0.0,
       "operational_categories": [
         "uncategorised"
-      ]
-    },
-    "P82607:6": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
-      "buckets": [
-        "c1"
-      ],
-      "sentiment": "positive",
-      "operational_category": "front_desk",
-      "subcategory": "reception_conduct",
-      "operational_confidence": 0.9,
-      "operational_categories": [
-        "front_desk"
       ]
     },
     "P86001:0": {
@@ -16897,10 +16808,10 @@
       ]
     },
     "P86001:1": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -16912,10 +16823,10 @@
       ]
     },
     "P86001:2": {
-      "cluster_id": "c52",
-      "primary_bucket": "c52",
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
       "buckets": [
-        "c52"
+        "c55"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -16929,10 +16840,10 @@
       ]
     },
     "P86001:3": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c25"
+        "c19"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -16975,10 +16886,10 @@
       ]
     },
     "P86001:6": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -17006,10 +16917,10 @@
       ]
     },
     "P86001:8": {
-      "cluster_id": "c52",
-      "primary_bucket": "c52",
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
       "buckets": [
-        "c52"
+        "c55"
       ],
       "sentiment": "positive",
       "operational_category": "clinical_care",
@@ -17033,6 +16944,140 @@
         "front_desk"
       ]
     },
+    "P86001:10": {
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
+      "buckets": [
+        "c8"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
+    "P86001:11": {
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
+      "buckets": [
+        "c19"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
+    "P86001:12": {
+      "cluster_id": "c0",
+      "primary_bucket": "c0",
+      "buckets": [
+        "c0"
+      ],
+      "sentiment": "positive",
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "front_desk",
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86001:13": {
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
+      "buckets": [
+        "c11"
+      ],
+      "sentiment": "positive",
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "front_desk",
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86001:14": {
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
+      "buckets": [
+        "c55"
+      ],
+      "sentiment": "positive",
+      "operational_category": "medicines_and_tests",
+      "subcategory": "repeat_prescriptions",
+      "operational_confidence": 0.95,
+      "operational_categories": [
+        "medicines_and_tests",
+        "access",
+        "management_and_change",
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86001:15": {
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
+      "buckets": [
+        "c36"
+      ],
+      "sentiment": "positive",
+      "operational_category": "uncategorised",
+      "subcategory": "",
+      "operational_confidence": 0.0,
+      "operational_categories": [
+        "uncategorised"
+      ]
+    },
+    "P86001:16": {
+      "cluster_id": "uncategorised",
+      "primary_bucket": "uncategorised",
+      "buckets": [
+        "uncategorised"
+      ],
+      "sentiment": "positive",
+      "operational_category": "uncategorised",
+      "subcategory": "",
+      "operational_confidence": 0.0,
+      "operational_categories": [
+        "uncategorised"
+      ]
+    },
+    "P86001:17": {
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
+      "buckets": [
+        "c19"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
+    "P86001:18": {
+      "cluster_id": "c53",
+      "primary_bucket": "c53",
+      "buckets": [
+        "c53"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
     "P86021:0": {
       "cluster_id": "c14",
       "primary_bucket": "c14",
@@ -17048,10 +17093,10 @@
       ]
     },
     "P86021:1": {
-      "cluster_id": "c43",
-      "primary_bucket": "c43",
+      "cluster_id": "c45",
+      "primary_bucket": "c45",
       "buckets": [
-        "c43"
+        "c45"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -17065,10 +17110,10 @@
       ]
     },
     "P86021:2": {
-      "cluster_id": "c31",
-      "primary_bucket": "c31",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c31"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -17098,17 +17143,17 @@
       ]
     },
     "P86021:4": {
-      "cluster_id": "c56",
-      "primary_bucket": "c56",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c56"
+        "c19"
       ],
       "sentiment": "positive",
-      "operational_category": "uncategorised",
-      "subcategory": "",
-      "operational_confidence": 0.0,
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
       "operational_categories": [
-        "uncategorised"
+        "positive_feedback"
       ]
     },
     "P86021:5": {
@@ -17126,10 +17171,10 @@
       ]
     },
     "P86021:6": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c50",
+      "primary_bucket": "c50",
       "buckets": [
-        "c12"
+        "c50"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -17142,10 +17187,10 @@
       ]
     },
     "P86021:7": {
-      "cluster_id": "c54",
-      "primary_bucket": "c54",
+      "cluster_id": "c57",
+      "primary_bucket": "c57",
       "buckets": [
-        "c54"
+        "c57"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -17172,10 +17217,10 @@
       ]
     },
     "P86021:9": {
-      "cluster_id": "c27",
-      "primary_bucket": "c27",
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
       "buckets": [
-        "c27"
+        "c16"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -17185,6 +17230,48 @@
         "front_desk",
         "positive_feedback",
         "clinical_care"
+      ]
+    },
+    "P86021:10": {
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
+      "buckets": [
+        "c13"
+      ],
+      "sentiment": "positive",
+      "operational_category": "uncategorised",
+      "subcategory": "",
+      "operational_confidence": 0.0,
+      "operational_categories": [
+        "uncategorised"
+      ]
+    },
+    "P86021:11": {
+      "cluster_id": "c16",
+      "primary_bucket": "c16",
+      "buckets": [
+        "c16"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
+    "P86021:12": {
+      "cluster_id": "uncategorised",
+      "primary_bucket": "uncategorised",
+      "buckets": [
+        "uncategorised"
+      ],
+      "sentiment": "positive",
+      "operational_category": "uncategorised",
+      "subcategory": "",
+      "operational_confidence": 0.0,
+      "operational_categories": [
+        "uncategorised"
       ]
     },
     "P87654:0": {
@@ -17202,10 +17289,10 @@
       ]
     },
     "P89020:0": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17217,10 +17304,10 @@
       ]
     },
     "P89020:1": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c11",
+      "primary_bucket": "c11",
       "buckets": [
-        "c12"
+        "c11"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -17259,10 +17346,10 @@
       ]
     },
     "P89020:4": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -17275,10 +17362,10 @@
       ]
     },
     "P89020:5": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17290,10 +17377,10 @@
       ]
     },
     "P89020:6": {
-      "cluster_id": "c44",
-      "primary_bucket": "c44",
+      "cluster_id": "c46",
+      "primary_bucket": "c46",
       "buckets": [
-        "c44"
+        "c46"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -17305,10 +17392,10 @@
       ]
     },
     "P89020:7": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -17335,10 +17422,10 @@
       ]
     },
     "P89020:9": {
-      "cluster_id": "c18",
-      "primary_bucket": "c18",
+      "cluster_id": "c58",
+      "primary_bucket": "c58",
       "buckets": [
-        "c18"
+        "c58"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17347,6 +17434,238 @@
       "operational_categories": [
         "access",
         "clinical_care"
+      ]
+    },
+    "P89020:10": {
+      "cluster_id": "uncategorised",
+      "primary_bucket": "uncategorised",
+      "buckets": [
+        "uncategorised"
+      ],
+      "sentiment": "negative",
+      "operational_category": "uncategorised",
+      "subcategory": "",
+      "operational_confidence": 0.0,
+      "operational_categories": [
+        "uncategorised"
+      ]
+    },
+    "P89020:11": {
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
+      "buckets": [
+        "c26"
+      ],
+      "sentiment": "negative",
+      "operational_category": "on_site_experience",
+      "subcategory": "waiting_room_and_delays",
+      "operational_confidence": 0.95,
+      "operational_categories": [
+        "on_site_experience",
+        "access",
+        "front_desk",
+        "management_and_change",
+        "clinical_care"
+      ]
+    },
+    "P89020:12": {
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
+      "buckets": [
+        "c26"
+      ],
+      "sentiment": "negative",
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "front_desk",
+        "access",
+        "clinical_care"
+      ]
+    },
+    "P89020:13": {
+      "cluster_id": "c20",
+      "primary_bucket": "c20",
+      "buckets": [
+        "c20"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "front_desk",
+        "clinical_care"
+      ]
+    },
+    "P89020:14": {
+      "cluster_id": "c18",
+      "primary_bucket": "c18",
+      "buckets": [
+        "c18"
+      ],
+      "sentiment": "negative",
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "front_desk",
+        "management_and_change",
+        "clinical_care"
+      ]
+    },
+    "P89020:15": {
+      "cluster_id": "c56",
+      "primary_bucket": "c56",
+      "buckets": [
+        "c56"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "clinical_care"
+      ]
+    },
+    "P89020:16": {
+      "cluster_id": "c43",
+      "primary_bucket": "c43",
+      "buckets": [
+        "c43"
+      ],
+      "sentiment": "negative",
+      "operational_category": "front_desk",
+      "subcategory": "reception_conduct",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "front_desk",
+        "clinical_care"
+      ]
+    },
+    "P89020:17": {
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
+      "buckets": [
+        "c26"
+      ],
+      "sentiment": "negative",
+      "operational_category": "medicines_and_tests",
+      "subcategory": "test_results",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "medicines_and_tests",
+        "access"
+      ]
+    },
+    "P89020:18": {
+      "cluster_id": "c52",
+      "primary_bucket": "c52",
+      "buckets": [
+        "c52"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "front_desk",
+        "clinical_care"
+      ]
+    },
+    "P89020:19": {
+      "cluster_id": "c10",
+      "primary_bucket": "c10",
+      "buckets": [
+        "c10"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "management_and_change",
+        "clinical_care"
+      ]
+    },
+    "P89020:20": {
+      "cluster_id": "c0",
+      "primary_bucket": "c0",
+      "buckets": [
+        "c0"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "front_desk",
+        "clinical_care"
+      ]
+    },
+    "P89020:21": {
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
+      "buckets": [
+        "c42"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access"
+      ]
+    },
+    "P89020:22": {
+      "cluster_id": "c24",
+      "primary_bucket": "c24",
+      "buckets": [
+        "c24"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "front_desk"
+      ]
+    },
+    "P89020:23": {
+      "cluster_id": "c18",
+      "primary_bucket": "c18",
+      "buckets": [
+        "c18"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "clinical_care"
+      ]
+    },
+    "P89020:24": {
+      "cluster_id": "c2",
+      "primary_bucket": "c2",
+      "buckets": [
+        "c2"
+      ],
+      "sentiment": "negative",
+      "operational_category": "access",
+      "subcategory": "digital_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "admin_and_referrals"
       ]
     },
     "P91629001:0": {
@@ -17364,10 +17683,10 @@
       ]
     },
     "P91629001:1": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
+      "cluster_id": "c38",
+      "primary_bucket": "c38",
       "buckets": [
-        "c19"
+        "c38"
       ],
       "sentiment": "positive",
       "operational_category": "on_site_experience",
@@ -17380,10 +17699,10 @@
       ]
     },
     "Y02755001:0": {
-      "cluster_id": "c35",
-      "primary_bucket": "c35",
+      "cluster_id": "c37",
+      "primary_bucket": "c37",
       "buckets": [
-        "c35"
+        "c37"
       ],
       "sentiment": "negative",
       "operational_category": "clinical_care",
@@ -17408,10 +17727,10 @@
       ]
     },
     "Y02755001:2": {
-      "cluster_id": "c25",
-      "primary_bucket": "c25",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c25"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -17423,10 +17742,10 @@
       ]
     },
     "Y02755001:3": {
-      "cluster_id": "c50",
-      "primary_bucket": "c50",
+      "cluster_id": "c53",
+      "primary_bucket": "c53",
       "buckets": [
-        "c50"
+        "c53"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17437,10 +17756,10 @@
       ]
     },
     "Y02755001:4": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c12"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -17482,10 +17801,10 @@
       ]
     },
     "Y02755001:7": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -17497,10 +17816,10 @@
       ]
     },
     "Y02755001:8": {
-      "cluster_id": "c30",
-      "primary_bucket": "c30",
+      "cluster_id": "c32",
+      "primary_bucket": "c32",
       "buckets": [
-        "c30"
+        "c32"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -17575,10 +17894,10 @@
       ]
     },
     "Y02755001:13": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -17621,10 +17940,10 @@
       ]
     },
     "Y02755001:16": {
-      "cluster_id": "c40",
-      "primary_bucket": "c40",
+      "cluster_id": "c42",
+      "primary_bucket": "c42",
       "buckets": [
-        "c40"
+        "c42"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17635,10 +17954,10 @@
       ]
     },
     "Y02755001:17": {
-      "cluster_id": "c7",
-      "primary_bucket": "c7",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c7"
+        "c6"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17650,10 +17969,10 @@
       ]
     },
     "Y02755001:18": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -17696,10 +18015,10 @@
       ]
     },
     "Y02755001:21": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -17740,10 +18059,10 @@
       ]
     },
     "Y02755001:24": {
-      "cluster_id": "c51",
-      "primary_bucket": "c51",
+      "cluster_id": "c54",
+      "primary_bucket": "c54",
       "buckets": [
-        "c51"
+        "c54"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17787,10 +18106,10 @@
       ]
     },
     "Y02755001:27": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17801,10 +18120,10 @@
       ]
     },
     "Y02755001:28": {
-      "cluster_id": "c4",
-      "primary_bucket": "c4",
+      "cluster_id": "c13",
+      "primary_bucket": "c13",
       "buckets": [
-        "c4"
+        "c13"
       ],
       "sentiment": "negative",
       "operational_category": "uncategorised",
@@ -17815,10 +18134,10 @@
       ]
     },
     "Y02755001:29": {
-      "cluster_id": "c12",
-      "primary_bucket": "c12",
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
       "buckets": [
-        "c12"
+        "c26"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -17831,10 +18150,10 @@
       ]
     },
     "Y02755001:30": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17865,10 +18184,10 @@
       ]
     },
     "Y02755001:32": {
-      "cluster_id": "c9",
-      "primary_bucket": "c9",
+      "cluster_id": "c8",
+      "primary_bucket": "c8",
       "buckets": [
-        "c9"
+        "c8"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -17883,10 +18202,10 @@
       ]
     },
     "Y02755001:33": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c34"
+        "c36"
       ],
       "sentiment": "negative",
       "operational_category": "admin_and_referrals",
@@ -17933,10 +18252,10 @@
       ]
     },
     "Y02755001:36": {
-      "cluster_id": "c26",
-      "primary_bucket": "c26",
+      "cluster_id": "c27",
+      "primary_bucket": "c27",
       "buckets": [
-        "c26"
+        "c27"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -17978,10 +18297,10 @@
       ]
     },
     "Y02755001:39": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -17996,10 +18315,10 @@
       ]
     },
     "Y02755001:40": {
-      "cluster_id": "c33",
-      "primary_bucket": "c33",
+      "cluster_id": "c35",
+      "primary_bucket": "c35",
       "buckets": [
-        "c33"
+        "c35"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -18011,10 +18330,10 @@
       ]
     },
     "Y02755001:41": {
-      "cluster_id": "c32",
-      "primary_bucket": "c32",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c32"
+        "c34"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -18039,10 +18358,10 @@
       ]
     },
     "Y02755001:43": {
-      "cluster_id": "c42",
-      "primary_bucket": "c42",
+      "cluster_id": "c44",
+      "primary_bucket": "c44",
       "buckets": [
-        "c42"
+        "c44"
       ],
       "sentiment": "negative",
       "operational_category": "front_desk",
@@ -18068,10 +18387,10 @@
       ]
     },
     "Y03079003:1": {
-      "cluster_id": "c36",
-      "primary_bucket": "c36",
+      "cluster_id": "c38",
+      "primary_bucket": "c38",
       "buckets": [
-        "c36"
+        "c38"
       ],
       "sentiment": "positive",
       "operational_category": "uncategorised",

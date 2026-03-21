@@ -1,0 +1,26 @@
+{
+  "practice_name": "JUBILEE MEDICAL GROUP",
+  "canonical_code": "A83066",
+  "postcode": "DL5 4SE",
+  "query_used": "JUBILEE MEDICAL GROUP DL5 4SE",
+  "google_maps_title": "The Jubilee Medical Group",
+  "google_maps_url": "https://www.google.com/maps/place/The+Jubilee+Medical+Group/@54.6455181,-1.7245692,13z/data=!4m12!1m2!2m1!1sJUBILEE+MEDICAL+GROUP+DL5+4SE!3m8!1s0x487e83abd71448ff:0xa8eb3cffa08aaa81!8m2!3d54.6455181!4d-1.6483515!9m1!1b1!15sCh1KVUJJTEVFIE1FRElDQUwgR1JPVVAgREw1IDRTRZIBBmRvY3RvcuABAA!16s%2Fg%2F11ddwt2ryv?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 36,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774073252326,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487e83abd71448ff%3A0xa8eb3cffa08aaa81!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sdDK-afubJ9-NhbIP1_bqiQY!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUQ3dmFlRldBEAE\",[\"0x0:0xa8eb3cffa08aaa81\",null,1724774427908568,1724774427908568,[null,null,[\"https://www.google.com/maps/contrib/115849670155380979082/reviews?hl\\u003den\"],null,null,[\"Lee Cooke\",\"https://lh3.googleusercontent.com/a/ACg8ocLnmXKSZ50nbN5Wq_ha1NhxjdtDtHOC7aqVEoi-SHuRtIWWkg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/115849670155380979082?hl\\u003den\"],\"115849670155380979082\",null,5,0,null,[0,3,1],3,[\"5 reviews\",null,null,null,null,[null,\"0ahUKEwi00urvqbCTAxUjAXsEHc1uBKcQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Receptionist very rude and picking spelling mistakes out with a letter a showed her think someone needs to remind her she is just a receptionist and not a doctor are am going to try change doctors was the same person who said are couldn't be with them doctors when first moved here because of my mental health would be a good Doctors if wasn't frew  the woman working on reception\",null,[0,238]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3dmFlRldBEAE!2m1!1s0x0:0xa8eb3cffa08aaa81!3m1!1s2@1:CIHM0ogKEICAgID7vaeFWA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUQ3dmFlRldBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUQ3dmFlRldBEi4KF0NJSE0wb2dLRUlDQWdJRDd2YWVGMkFFEhNDZ3dJbV9DM3RnWVF3TXVlc1FNGi0KFkNJSE0wb2dLRUlDQWdJRDd2YWVGT0ESE0Nnd0ltX0MzdGdZUXdNdWVzUU0iEgkAAAAAAAAAABGBqoqg_zzrqCoTQ2d3SW1fQzN0Z1lRd011ZXNRTQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi00urvqbCTAxUjAXsEHc1uBKcQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwi00urvqbCTAxUjAXsEHc1uBKcQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
