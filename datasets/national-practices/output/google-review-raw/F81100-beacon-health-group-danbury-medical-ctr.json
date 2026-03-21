@@ -1,0 +1,26 @@
+{
+  "practice_name": "BEACON HEALTH GROUP-DANBURY MEDICAL CTR",
+  "canonical_code": "F81100",
+  "postcode": "CM3 4QL",
+  "query_used": "BEACON HEALTH GROUP-DANBURY MEDICAL CTR CM3 4QL",
+  "google_maps_title": "Dr R Adlington - Beacon Health Group-danbury Medical Ctr",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+R+Adlington+-+Beacon+Health+Group-danbury+Medical+Ctr/@51.7160857,0.5817746,17z/data=!4m12!1m2!2m1!1sBEACON+HEALTH+GROUP-DANBURY+MEDICAL+CTR+CM3+4QL!3m8!1s0x47d8e7cf1e7bffff:0x36fceb4c9ae287c9!8m2!3d51.7160857!4d0.5865382!9m1!1b1!15sCi9CRUFDT04gSEVBTFRIIEdST1VQLURBTkJVUlkgTUVESUNBTCBDVFIgQ00zIDRRTJIBBmRvY3RvcuABAA!16s%2Fg%2F11qrr7gpl4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 175,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774085393317,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d8e7cf1e7bffff%3A0x36fceb4c9ae287c9!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1svmK-acDIDPSXhbIPhObU8AM!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNGMWR5Y293RRAB\",[\"0x0:0x36fceb4c9ae287c9\",null,1698664801412394,1698664801412394,[null,null,[\"https://www.google.com/maps/contrib/105954690451825545013/reviews?hl\\u003den\"],null,null,[\"Jan Lenkowiec\",\"https://lh3.googleusercontent.com/a/ACg8ocJcPyLqUq27mlw_Mrj5kU2z44yYi_Kdnck4YxuF4qLuroaHDQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/105954690451825545013?hl\\u003den\"],\"105954690451825545013\",null,1,0,null,[0,2,1],0,[\"1 review\",null,null,null,null,[null,\"0ahUKEwiL5qaN17CTAxU6OXsEHdNYNkUQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Tried to book a further appointment with a doctor I saw six weeks ago, who asked me to re-book to further discuss my ongoing medical problem. This I tried to do, firstly using the E.consult site - impossible - then by phoning, only to be told that my doctor was not available for at least two months!!!\\nNow have to wait, after explaining all my personal details to the receptionist, for someone to “Be in touch” sometime during the next three days! Not Happy!!!\",null,[0,237]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGMWR5Y293RRAB!2m1!1s0x0:0x36fceb4c9ae287c9!3m1!1s2@1:CIHM0ogKEICAgICF1dycowE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNGMWR5Y293RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNGMWR5Y293RRItChZDSUhNMG9nS0VJQ0FnSUNGMWR5Y1l3EhNDZ3dJNGFMLXFRWVFrTVRTeEFFGi4KF0NJSE0wb2dLRUlDQWdJQ0YxZHljNHdFEhNDZ3dJNGFMLXFRWVFrTVRTeEFFIhIJAAAAAAAAAAARyYfimkzr_DYqE0Nnd0k0YUwtcVFZUWtNVFN4QUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiL5qaN17CTAxU6OXsEHdNYNkUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiL5qaN17CTAxU6OXsEHdNYNkUQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

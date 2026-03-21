@@ -1,0 +1,26 @@
+{
+  "practice_name": "TOWNSEND MEDICAL CENTRE",
+  "canonical_code": "N82052",
+  "postcode": "L6 0BB",
+  "query_used": "TOWNSEND MEDICAL CENTRE L6 0BB",
+  "google_maps_title": "Dr S Balakrishna - Townsend Medical Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+S+Balakrishna+-+Townsend+Medical+Centre/@53.4295792,-2.9475946,17z/data=!3m1!5s0x487b219d33cad955:0xac12d8f80bdf6bfb!4m12!1m2!2m1!1sTOWNSEND+MEDICAL+CENTRE+L6+0BB!3m8!1s0x487b219d35c84cf7:0xcae54b1d59519c8c!8m2!3d53.4295917!4d-2.9449528!9m1!1b1!15sCh5UT1dOU0VORCBNRURJQ0FMIENFTlRSRSBMNiAwQkKSAQZkb2N0b3LgAQA!16s%2Fg%2F11g9qw6tn9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 42,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774086707368,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487b219d35c84cf7%3A0xcae54b1d59519c8c!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1svmK-acDIDPSXhbIPhObU8AM!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNwbjYtNWRREAE\",[\"0x0:0xcae54b1d59519c8c\",null,1691922947350598,1691922947350598,[null,null,[\"https://www.google.com/maps/contrib/102785037288222262570/reviews?hl\\u003den\"],null,null,[\"senthilkumar pk\",\"https://lh3.googleusercontent.com/a/ACg8ocIcq9RXF6ToFEq118ime_CS9cRs9yc_0e89arHk_5V-i6K0BA\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/102785037288222262570?hl\\u003den\"],\"102785037288222262570\",null,8,0,null,[1,4,1],38,[\"Local Guide · 8 reviews\",null,null,null,null,[null,\"0ahUKEwirlOz_27CTAxVSRoQGHQxlJpsQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwbjYtNWRREAE!2m1!1s0x0:0xcae54b1d59519c8c!3m1!1s2@1:CIHM0ogKEICAgICpn6-5dQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNwbjYtNWRREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNwbjYtNWRRGi4KF0NJSE0wb2dLRUlDQWdJQ3BuNi01OVFFEhNDZ3dJZy1UaXBnWVE4T2FXcHdFIhIJAAAAAAAAAAARjJxRWR1L5coqE0Nnd0lnLVRpcGdZUThPYVdwd0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwirlOz_27CTAxVSRoQGHQxlJpsQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwirlOz_27CTAxVSRoQGHQxlJpsQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
