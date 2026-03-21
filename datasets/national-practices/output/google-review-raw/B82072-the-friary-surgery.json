@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE FRIARY SURGERY",
+  "canonical_code": "B82072",
+  "postcode": "DL10 4UJ",
+  "query_used": "THE FRIARY SURGERY DL10 4UJ",
+  "google_maps_title": "The Friary Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/The+Friary+Surgery/@54.4051285,-1.7409123,17z/data=!4m8!3m7!1s0x487c1f0034f3cc01:0x7caada4363645f8d!8m2!3d54.4051254!4d-1.738332!9m1!1b1!16s%2Fg%2F11vy2ccdn2?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774092135372,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487c1f0034f3cc01%3A0x7caada4363645f8d!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1ss3u-aaWQF820hbIP5PWoyQg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VQLTE2b3VqcU5MR0pBEAE\",[\"0x0:0x7caada4363645f8d\",null,1749623462367313,1749623462367313,[null,null,[\"https://www.google.com/maps/contrib/107714144228652869546/reviews?hl\\u003den\"],null,null,[\"Catherine Cardrick\",\"https://lh3.googleusercontent.com/a/ACg8ocKB3KywK1YljhIoEMXedq2B5amTUMv4a576xX08DhWmQMecRg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/107714144228652869546?hl\\u003den\"],\"107714144228652869546\",null,5,7,null,[0,3,1],1,[\"5 reviews\",null,null,null,null,[null,\"0ahUKEwiFhZKc8LCTAxWBRYQGHeI1GvwQ7LoGCAMoAA\"]]]],null,\"9 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Having moved from Hampshire I recently registered with the surgery and would like to say how responsive and friendly I have found the service.  The receptionists and nursing staff, in particular the practice nurse, were very helpful, supportive and considerate.\",null,[0,261]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VQLTE2b3VqcU5MR0pBEAE!2m1!1s0x0:0x7caada4363645f8d!3m1!1s2@1:CIHM0ogKEP-16oujqNLGJA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VQLTE2b3VqcU5MR0pBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VQLTE2b3VqcU5MR0pBEi0KFkNJSE0wb2dLRU15RXJZZWxnNUxOZkESE0Nnd0lwc1drd2dZUTZJQ1Ryd0UaLQoWQ0lITTBvZ0tFTV9kNm9MTXFJVzNUZxITQ2d3SXBzV2t3Z1lRNklDVHJ3RSISCQAAAAAAAAAAEY1fZGND2qp8KhNDZ3dJcHNXa3dnWVE2SUNUcndF\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiFhZKc8LCTAxWBRYQGHeI1GvwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiFhZKc8LCTAxWBRYQGHeI1GvwQ0pMFCAIoAA\"],null,\"CAESY0NBRVFBUnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lSMmxwVlV0WloxOWZSV2hDTmxnelRXUlphV3QxT1RSUVFYbFdiMEZCUVVGQlIyZHVPVEpRUVVOaFMwcFJjR2xCV1VGRFNVRQ\\u003d\\u003d\"],[[\"ChdDSUhNMG9nS0VJQ0FnSUNfakpHUDJRRRAB\",[\"0x0:0x7caada4363645f8d\",null,1736774968432020,1736774968432020,[null,null,[\"https://www.google.com/maps/contrib/106897343946594219297/reviews?hl\\u003den\"],null,null,[\"Helen Malama\",\"https://lh3.googleusercontent.com/a/ACg8ocJz-FXrOFu2qiCo363mlQfCzBpQEjWc4simG8KfLxC3FzUGCA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106897343946594219297?hl\\u003den\"],\"106897343946594219297\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwiFhZKc8LCTAxWBRYQGHeI1GvwQ7LoGCAYoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfakpHUDJRRRAB!2m1!1s0x0:0x7caada4363645f8d!3m1!1s2@1:CIHM0ogKEICAgIC_jJGP2QE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNfakpHUDJRRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNfakpHUDJRRRotChZDSUhNMG9nS0VJQ0FnSUNfakpHUE9REhNDZ3dJdUtxVXZBWVFvTFNBemdFIhIJAAAAAAAAAAARjV9kY0PaqnwqE0Nnd0l1S3FVdkFZUW9MU0F6Z0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiFhZKc8LCTAxWBRYQGHeI1GvwQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwiFhZKc8LCTAxWBRYQGHeI1GvwQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

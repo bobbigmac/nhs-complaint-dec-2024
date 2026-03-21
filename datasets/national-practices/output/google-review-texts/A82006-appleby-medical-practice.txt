@@ -1,0 +1,61 @@
+Practice: APPLEBY MEDICAL PRACTICE
+Canonical code: A82006
+Postcode: CA16 6QR
+Google Maps title: Appleby Medical Practice
+Google rating: 4.0
+Google review count: 9
+Google Maps URL: https://www.google.com/maps/place/Appleby+Medical+Practice/@54.5789829,-2.496741,17z/data=!4m8!3m7!1s0x487c59e0baaa2dcd:0x32354e3fc90b4bbe!8m2!3d54.5789798!4d-2.4941607!9m1!1b1!16s%2Fg%2F1tdc4sr8?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 9
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/A82006-appleby-medical-practice.json
+
+Captured reviews
+================
+
+Author: Jane Griffiths
+Date: a month ago
+Rating: 5 stars
+This is a well managed and efficient practice. The staff are all kind and helpful . I feel lucky to be a patient here .
+
+Author: Piya Kear
+Date: 6 months ago
+Rating: 5 stars
+The people of Appleby are very lucky to have this doctor's surgery. Fantastic support from all staff and clinicians I have come into contact with and a real ability and willingness to provide person centred care. 10/10.
+
+Author: Norman Jones
+Date: a year ago
+Rating: 2 stars
+I completed the online triage. I was promptly phoned by a doctor. He sounded interested and compassionate. I looked forward with confidence to my appointment. I arrived at the agreed time and was quickly called. It was soon evident that the doctor I saw wasn’t the same doctor who I had spoken to. It was a very negative experience. He never introduced himself. He never explained that he wasn’t the doctor who had phoned me. He was of sloppy appearance and inspired little confidence. He was without expression due to the fact he was wearing a mask. He did carry out an examination but I felt I had to drag out comment from him. I was given no advice, encouragement or empathy. It was as though this was the next step towards robots!
+
+Author: Ann Driver
+Date: 2 years ago
+Rating: 3 stars
+I to was refused help while in the area on holiday. So instead I was forced ( while feeling pretty rotten) to drive to Penrith hospital and sit in a waiting room for five hours ( still feeling rotten ) for a someone to dip a urine sample , confirm I had an infection and give me a prescription. A job that would have taken minutes. I think it's shameful. The urgent treatment centre are absolutely rushed off their feet and i am angry for them also.
+
+Author: Annette Mowatt
+Date: 2 years ago
+Rating: 5 stars
+Annette Mowatt4 reviews2 years ago
+
+Author: elizabeth robinson
+Date: 2 years ago
+Rating: 5 stars
+Very helpful, charming receptionists easy to get an appointment. Well done.
+
+Author: Sarah Pregnancy Yoga
+Date: 4 years ago
+Rating: 5 stars
+I've been delighted with the practice - staff are lovely and take their time to listen to you.
+
+Author: John woodcock
+Date: 4 years ago
+Rating: 5 stars
+I was a patient with this practice and its forerunners for 36 years. I found the reception staff helpful and efficient in either arranging appointments or arranging the nowadays obligatory triage phone call. In recent times. I found the medical staff effective in either diagnosing various conditions and providing treatment or in arranging for referral to specialists. The nursing and specialist support staff were always efficient and above all good humored when carrying out their roles taking blood samples etc.
+
+Author: Jonathan Smith
+Date: 4 years ago
+Rating: 1 star
+Receptionist refused a GP appointment for our daughter while we were in the area on holiday. Disgraceful behaviour. This must surely be against NHS policy?

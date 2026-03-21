@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. FITZPATRICK & PARTNERS",
+  "canonical_code": "Z00462",
+  "postcode": "BT66 8BA",
+  "query_used": "DR. FITZPATRICK & PARTNERS BT66 8BA",
+  "google_maps_title": "Dr Paul Conlon",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+Paul+Conlon/@54.4613218,-6.3595826,15z/data=!4m12!1m2!2m1!1sDR.+FITZPATRICK+%26+PARTNERS+BT66+8BA!3m8!1s0x4860fb3cb7ce6405:0xf02831bd4b0ce3a1!8m2!3d54.4613218!4d-6.3405282!9m1!1b1!15sCiNEUi4gRklUWlBBVFJJQ0sgJiBQQVJUTkVSUyBCVDY2IDhCQZIBBmRvY3RvcuABAA!16s%2Fg%2F1yfjgwl1h?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 37,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774089942704,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4860fb3cb7ce6405%3A0xf02831bd4b0ce3a1!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1svmK-acDIDPSXhbIPhObU8AM!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUR2cE11eGV3EAE\",[\"0x0:0xf02831bd4b0ce3a1\",null,1734462966536553,1734462966536553,[null,null,[\"https://www.google.com/maps/contrib/114233305674716613471/reviews?hl\\u003den\"],null,null,[\"Rogan\",\"https://lh3.googleusercontent.com/a-/ALV-UjWbaV3e3Z5zZhb-RhRAflZlfscJBBuqTU4GxIVOEbCJABX5G2U\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/114233305674716613471?hl\\u003den\"],\"114233305674716613471\",null,10,0,null,[0,3,1],3,[\"10 reviews\",null,null,null,null,[null,\"0ahUKEwiq_9uF6LCTAxWQHWMBHZCIAGMQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Rude.\",null,[0,5]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2cE11eGV3EAE!2m1!1s0x0:0xf02831bd4b0ce3a1!3m1!1s2@1:CIHM0ogKEICAgIDvpMuxew%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUR2cE11eGV3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUR2cE11eGV3Ei4KF0NJSE0wb2dLRUlDQWdJRHZwTXV4LXdFEhNDZ3dJOXB1SHV3WVFxTXpzX3dFGi0KFkNJSE0wb2dLRUlDQWdJRHZwTXV4QncSE0Nnd0k5cHVIdXdZUXFNenNfd0UiEgkAAAAAAAAAABGh4wxLvTEo8CoTQ2d3STlwdUh1d1lRcU16c193RQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiq_9uF6LCTAxWQHWMBHZCIAGMQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiq_9uF6LCTAxWQHWMBHZCIAGMQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

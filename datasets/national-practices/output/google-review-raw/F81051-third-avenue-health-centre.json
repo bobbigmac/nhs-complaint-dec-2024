@@ -1,0 +1,26 @@
+{
+  "practice_name": "THIRD AVENUE HEALTH CENTRE",
+  "canonical_code": "F81051",
+  "postcode": "SS8 9SU",
+  "query_used": "THIRD AVENUE HEALTH CENTRE SS8 9SU",
+  "google_maps_title": "Dr L Panthagani - Third Avenue Health Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+L+Panthagani+-+Third+Avenue+Health+Centre/@51.5240347,0.5644635,17z/data=!4m12!1m2!2m1!1sTHIRD+AVENUE+HEALTH+CENTRE+SS8+9SU!3m8!1s0x47d8dab2b5eec247:0x35122db62fb5cafb!8m2!3d51.5240314!4d0.5670438!9m1!1b1!15sCiJUSElSRCBBVkVOVUUgSEVBTFRIIENFTlRSRSBTUzggOVNVkgEGZG9jdG9y4AEA!16s%2Fg%2F12xqs9ny6?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 15,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774094751570,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d8dab2b5eec247%3A0x35122db62fb5cafb!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1ss3u-aaWQF820hbIP5PWoyQg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUR1amNtSElBEAE\",[\"0x0:0x35122db62fb5cafb\",null,1661521608126491,1661521608126491,[null,null,[\"https://www.google.com/maps/contrib/102954986062621883520/reviews?hl\\u003den\"],null,null,[\"Margarete Webb\",\"https://lh3.googleusercontent.com/a/ACg8ocLFecIRVMZTrD-1Q7_KSfSDML0hoBe1AFpynL5HXlCnAbViSw\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/102954986062621883520?hl\\u003den\"],\"102954986062621883520\",null,23,5,null,[1,4,1],1,[\"Local Guide · 23 reviews\",null,null,null,null,[null,\"0ahUKEwjZw6f7-bCTAxXgDmMBHYfKHWEQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[4],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Dr Panthagani is brilliant, I went to her with a croaky voice I had for a few months. As an ex heavy smoker she sent me for an xray and blood tests and referred me to the hospital. It was a whirlwind few weeks but within 5 weeks from seeing her I had an operation and had 2 lumps removed from my vocal cord. Can't thank her enough for her swift action.\",null,[0,240]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1amNtSElBEAE!2m1!1s0x0:0x35122db62fb5cafb!3m1!1s2@1:CIHM0ogKEICAgIDujcmHIA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUR1amNtSElBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUR1amNtSElBEi0KF0NJSE0wb2dLRUlDQWdJRHVqY21fdXdFEhJDZ3NJeUoyam1BWVEtTEtvUEEaLAoWQ0lITTBvZ0tFSUNBZ0lEdWpjbV9CdxISQ2dzSXlKMmptQVlRLUxLb1BBIhIJAAAAAAAAAAAR-8q1L7YtEjUqEkNnc0l5SjJqbUFZUS1MS29QQQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjZw6f7-bCTAxXgDmMBHYfKHWEQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjZw6f7-bCTAxXgDmMBHYfKHWEQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

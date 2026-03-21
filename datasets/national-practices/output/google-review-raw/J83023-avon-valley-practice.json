@@ -1,0 +1,26 @@
+{
+  "practice_name": "AVON VALLEY PRACTICE",
+  "canonical_code": "J83023",
+  "postcode": "SN9 6DZ",
+  "query_used": "AVON VALLEY PRACTICE SN9 6DZ",
+  "google_maps_title": "Avon Valley Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Avon+Valley+Practice/@51.2945717,-1.8140875,17z/data=!4m12!1m2!2m1!1sAVON+VALLEY+PRACTICE+SN9+6DZ!3m8!1s0x4873e1004e7f8b81:0x52d6f1d8b144dc77!8m2!3d51.2950281!4d-1.8109001!9m1!1b1!15sChxBVk9OIFZBTExFWSBQUkFDVElDRSBTTjkgNkRakgEZZmFtaWx5X3ByYWN0aWNlX3BoeXNpY2lhbuABAA!16s%2Fg%2F11lzkgdt84?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774094508494,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4873e1004e7f8b81%3A0x52d6f1d8b144dc77!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1ss3u-aaWQF820hbIP5PWoyQg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT25WSGFIbGFWVFJPVmtrMWIzQjJVV3RsUmxoMlRHYxAB\",[\"0x0:0x52d6f1d8b144dc77\",null,1765705762904913,1765705762904913,[null,null,[\"https://www.google.com/maps/contrib/113435775127860882483/reviews?hl\\u003den\"],null,null,[\"Hannah McBurney\",\"https://lh3.googleusercontent.com/a/ACg8ocI054WcA4bpfKUDkmXcmbfBOvBMVMtrvvRydQMxFvdMPQGP1g\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/113435775127860882483?hl\\u003den\"],\"113435775127860882483\",null,150,27,null,[1,6,1],1,[\"Local Guide · 150 reviews\",null,null,null,null,[null,\"0ahUKEwjHubSH-bCTAxULEWMBHQx8BlQQ7LoGCAMoAA\"]]]],null,\"3 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Moved from another local surgery and it is so much better . If you need treatment on that day they have a walk in clinic Monday to Friday 9-11 where you can be seen same day and is very useful .\",null,[0,194]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WSGFIbGFWVFJPVmtrMWIzQjJVV3RsUmxoMlRHYxAB!2m1!1s0x0:0x52d6f1d8b144dc77!3m1!1s2@1:CAIQACodChtycF9oOnVHaHlaVTROVkk1b3B2UWtlRlh2TGc%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT25WSGFIbGFWVFJPVmtrMWIzQjJVV3RsUmxoMlRHYxAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT25WSGFIbGFWVFJPVmtrMWIzQjJVV3RsUmxoMlRHYxJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVXU0dGSWJHRldWRkpQVm10ck1XSXpRakpWVjNSc1VteG9NbFJIWXdvR2NtVjJhV1YzEgswZEVjVlhwdnlGZRpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVXU0dGSWJHRldWRkpQVm10ck1XSXpRakpWVjNSc1VteG9NbFJIWXdvR2NtRjBhVzVuEgswZEVjVlhwdnlGZSISCQAAAAAAAAAAEXfcRLHY8dZSKgswZEVjVlhwdnlGZQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjHubSH-bCTAxULEWMBHQx8BlQQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjHubSH-bCTAxULEWMBHQx8BlQQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+Practice: WOODLANDS MEDICAL CENTRE
+Canonical code: K84043
+Postcode: OX11 0BB
+Google Maps title: Woodlands Medical Centre
+Google rating: 2.3
+Google review count: 167
+Google Maps URL: https://www.google.com/maps/place/Woodlands+Medical+Centre/@51.6036263,-1.2614405,17z/data=!4m8!3m7!1s0x4876b94314c6717f:0x7a7578414bef450e!8m2!3d51.603623!4d-1.2588602!9m1!1b1!16s%2Fg%2F1vlqpq1r?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/K84043-woodlands-medical-centre.json
+
+Captured reviews
+================
+
+Author: Filipe Ramos
+Date: 4 days ago
+Rating: 1 star
+I’ve been sick for 6 days and clearly described my medical conditions in their system, but still they’ve recommended a pharmacist instead. I can’t trust their doctors.
+
+Author: Amanda Donnelly
+Date: a week ago
+Rating: 4 stars
+Honestly I had to wait an entire calendar month for an appointment, which is appalling. However, Dr Lee has been the only doctor I have ever seen that has actually listened to me and I am so thankful that I saw her. She was worth the wait. She's very thorough, friendly, and knowledgeable. I'd recommend her to anyone and everyone who feels fobbed off by doctors or has an anxiety about going. The receptionists were also very friendly and happy which was a lovely sight. Only taken one star off due to the ludicrous wait!
+
+Author: Ray Stimpson
+Date: 2 weeks ago
+Rating: 2 stars
+I've been registered with three GP surgeries in my life - this is the worst one.
+
+Author: Steve W
+Date: 2 weeks ago
+Rating: 1 star
+The only way to get a repeat prescription is by dropping in and leaving a written request. Impossible to do this online. Impossible to download the NHS App - 'not available in your area'. Totally useless.
+
+Author: Hannah Collins
+Date: a month ago
+Rating: 1 star
+Just commenting on the pharmacy - rude, unhelpful and belittling staff (over the phone), deters you from contacting them about medical issues which is what pharmacies are supposed do to relieve pressure on hospitals and GPs. I have had vaccines here and the staff that administer are lovely, booked online so didn't realise what the centre staff were like. Avoid any contact with the desk staff, as a medical professional myself people like this give the NHS a bad name and increase pressures by being so unhelpful.
+
+Author: Farah Karim
+Date: a month ago
+Rating: 1 star
+Receptionist over the phone gave me a physio appointment today and the practice failed to mention that all afternoon physio appointments had been cancelled for the day. Waste of a trip and money.
+
+Author: Julie Taylor
+Date: a month ago
+Rating: 1 star
+Have to use website to book appointments which doesn't work. The option you need is either not present and the staff send you back to the automated system to try and book again. Useless!
+
+Author: Janet Gale
+Date: 2 months ago
+Rating: 4 stars
+Always have a good experience wigh woodlands. Have been with them for years
+
+Author: Luke Cunnington
+Date: 2 months ago
+Rating: 1 star
+Staff are rude and dangerous to health. Urgent problems were ignored and we were hung up on several occasions. AVOID AT ALL COSTS. I will be raising a formal complaint.
+
+Author: Srishty Sajeev
+Date: 2 months ago
+Rating: 1 star
+Very hard to get anappointment
