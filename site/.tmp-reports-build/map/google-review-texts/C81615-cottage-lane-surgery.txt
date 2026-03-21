@@ -4,14 +4,19 @@ Postcode: SK13 6EQ
 Google Maps title: Cottage Lane Surgery
 Google rating: 4.0
 Google review count: 20
-Google Maps URL: https://www.google.com/maps/place/Cottage+Lane+Surgery/@53.4469477,-1.9808741,17z/data=!4m8!3m7!1s0x487bcbc47eeeed11:0xf44f43eaba70faa6!8m2!3d53.4469477!4d-1.9808741!9m1!1b1!16s%2Fg%2F1hcbbd8ch?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Cottage+Lane+Surgery/@53.4469509,-1.9834544,17z/data=!4m8!3m7!1s0x487bcbc47eeeed11:0xf44f43eaba70faa6!8m2!3d53.4469477!4d-1.9808741!9m1!1b1!16s%2Fg%2F1hcbbd8ch?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 20
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/C81615-cottage-lane-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Mike B
-Date: Edited 5 days ago
+Date: Edited 2 weeks ago
 Rating: 1 star
 If you like long waits for an appointment, limited opening hours, a lottery on if you'll see the same GP twice and unhelpful reception staff. Really poor.
 
@@ -21,9 +26,9 @@ Rating: 5 stars
 A breath of fresh air! A great old fashioned surgery where you are a person not a statistic! From the receptionists to the nurses and doctors they are welcoming and caring and give you time to explain your problems. You always get appointments and prescriptions in a timely manner. I can’t recommend enough.
 
 Author: Robin Banerjee
-Date: 8 months ago
+Date: 9 months ago
 Rating: 1 star
-Robin Banerjee2 reviews · 1 photo8 months ago
+Robin Banerjee2 reviews · 1 photo9 months ago
 
 Author: Natalie Firth
 Date: 9 months ago
@@ -59,3 +64,53 @@ Author: Sarah Ashworth
 Date: a year ago
 Rating: 5 stars
 Attended for bloods with my 7yr old son who was very anxious and nervous, Tara was fantastic with him, she answered all his questions and made him feel at ease and obtained his bloods even though he moved during the procedure. Tara was kind and caring, thank you 😊 xx …
+
+Author: Matthew Cairns
+Date: 2 years ago
+Rating: 5 stars
+Matthew Cairns2 years ago
+
+Author: Charlotte Harridance
+Date: 2 years ago
+Rating: 5 stars
+After being at my previous drs surgery for over 35yrs and not feeling happy there recently, I decided to nervously relocate myself and my family to Cottage Lane Surgery and WOW I am so glad I did! From the first walk through the door being greeted with a smile by members of staff that go above and beyond to help you, to then be seen by a practitioner and feel further on with our healthcare in ten minutes than the last few years and as an added bonus their website and Facebook page is so informative which is something I’ve not been used to previously 👍🏻 I just wish I had made this decision sooner, amazing surgery and I’m one happy mum 😁
+
+Author: Alison Bowler
+Date: 3 years ago
+Rating: 5 stars
+Excellent practice. All clinicians are great, listen to your concerns and are thorough with your medical problems and reviews. Dr Dow has been very caring following a recent bereavement within my family. All members of the reception team are lovely, very helpful and prompt with actioning your requests.
+
+Author: Arta Smilkts
+Date: 3 years ago
+Rating: 1 star
+As much I have loads to say about my experience for over a year I will keep it very short - Dr. Lee is a terrible and arrogant practitioner. If you don’t want to help people then please do everyone favour and let someone take your place who had knowledge and interest of doing so.
+
+Author: Claire Mccabe
+Date: 3 years ago
+Rating: 5 stars
+Recently seen by Dr soheb Rehman who listened patiently to my concerns especially re pain control. I found his manner and care suggested to help me beyond excellent with a thorough plan of my future care.
+
+Author: Julie Donlan
+Date: 4 years ago
+Rating: 5 stars
+This is a great GP practice. All the Doctors, Nurses and other staff go above and beyond to help.
+
+Author: Rick B
+Date: 4 years ago
+Rating: 1 star
+Poor,,
+
+Author: Stephen Gill
+Date: 5 years ago
+Rating: 5 stars
+Dr Dow has been a real assets to the community for many years, this is a excellent group practice.
+
+Author: Christine Allen
+Date: 6 years ago
+Rating: 5 stars
+Christine Allen6 years ago
+
+Author: Sharon Yates
+Date: 7 years ago
+Rating: 5 stars
+Big thank you to Dr Dow for his care of my late husband lovely caring man who went out of his way to help not only my late husband but myself

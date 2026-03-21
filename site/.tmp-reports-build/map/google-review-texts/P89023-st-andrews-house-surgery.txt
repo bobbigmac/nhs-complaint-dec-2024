@@ -3,20 +3,30 @@ Canonical code: P89023
 Postcode: SK15 2AU
 Google Maps title: St Andrews House Medical Centre
 Google rating: 3.5
-Google review count: 66
-Google Maps URL: https://www.google.com/maps/place/St+Andrews+House+Medical+Centre/@53.4844265,-2.0617239,17z/data=!4m12!1m2!2m1!1sSt.+Andrew's+House+Surgery+SK15+2AU!3m8!1s0x487bb6211465b2c1:0xb70b2922abcecaa3!8m2!3d53.4844265!4d-2.0572178!9m1!1b1!15sCiNTdC4gQW5kcmV3J3MgSG91c2UgU3VyZ2VyeSBTSzE1IDJBVVokIiJzdCBhbmRyZXcncyBob3VzZSBzdXJnZXJ5IHNrMTUgMmF1kgEObWVkaWNhbF9jZW50ZXKaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUlhiRGRYY25OQlJSQULgAQD6AQQIABBJ!16s%2Fg%2F1hc2002s6?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 67
+Google Maps URL: https://www.google.com/maps/place/St+Andrews+House+Medical+Centre/@53.4846875,-2.060731,17z/data=!4m12!1m2!2m1!1sSt.+Andrew's+House+Surgery+SK15+2AU!3m8!1s0x487bb6211465b2c1:0xb70b2922abcecaa3!8m2!3d53.4844265!4d-2.0572178!9m1!1b1!15sCiNTdC4gQW5kcmV3J3MgSG91c2UgU3VyZ2VyeSBTSzE1IDJBVVokIiJzdCBhbmRyZXcncyBob3VzZSBzdXJnZXJ5IHNrMTUgMmF1kgEObWVkaWNhbF9jZW50ZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTkNNVzl0TVVoM0VBReABAPoBBAgAEEs!16s%2Fg%2F1hc2002s6?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 67
+Owner replies collected: 15
+Raw review responses captured: 7
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P89023-st-andrews-house-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Shah
+Date: 12 hours ago
+Rating: 5 stars
+Brilliant service
 
 Author: Sallie Matley
-Date: 3 weeks ago
+Date: a month ago
 Rating: 5 stars
-Sallie Matley8 reviews · 2 photos3 weeks ago New
+Sallie Matley8 reviews · 2 photosa month ago
 
 Author: Tajamul Hussain
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 I am writing to express my dissatisfaction with the service provided at the Stalybridge Medical Centre ultrasound clinic. The booking instructions were misleading, stating only the facility name without clarifying that there is no dedicated reception for ultrasound services. After being misdirected to the first floor, we eventually located a small, poorly positioned sign downstairs. Despite waiting in the correct area for several minutes, we were ultimately dismissed by the staff for being 'late.' This lack of clear signage and the dismissive attitude of the personnel resulted in a wasted appointment, representing a poor use of NHS resources and a lack of basic patient care
 
@@ -31,19 +41,29 @@ Rating: 5 stars
 Appointment for my partner on a Sunday morning and was seen on time and the staff were really pleasant too, despite some reviews saying the opposite
 
 Author: Joan. Leah
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
-Joan. Leah2 months ago
+Joan. Leah3 months ago
 
 Author: Vincent Rostron
 Date: 3 months ago
 Rating: 5 stars
-Vincent RostronLocal Guide · 423 reviews · 679 photos3 months ago
+Vincent RostronLocal Guide · 433 reviews · 700 photos3 months ago
 
 Author: Fadumo Noor
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
-Fadumo Noor3 months ago
+Fadumo Noor4 months ago
+
+Author: G M Reid
+Date: 4 months ago
+Rating: 4 stars
+Nice people.
+
+Author: john myles
+Date: 4 months ago
+Rating: 5 stars
+Great !!!
 
 Author: Chloe Wilson
 Date: 5 months ago
@@ -55,7 +75,322 @@ Date: 5 months ago
 Rating: 5 stars
 Quality attention without waiting long
 
+Author: Adilia Castillo
+Date: 5 months ago
+Rating: 5 stars
+They prioritise those who need it
+
 Author: Mario Ayala
 Date: 5 months ago
 Rating: 5 stars
 They attend very kindly
+
+Author: P J
+Date: 5 months ago
+Rating: 5 stars
+Changed my doc to St.Andrews and got an appointment, diagnosis and referral all in same week. All staff I have met have been lovely.
+
+Author: Donkey Walloper.
+Date: 5 months ago
+Rating: 5 stars
+Attended the ultrasound department and found them to be really professional and friendly. The young nurse was chatty and put you at ease. The young man she was with was very patient and he had a great attitude. I felt looked after and will definitely return to the practice. Plenty of parking and overall it's a lovely old building. Keep on shining. ( David Allen).
+
+Author: marie
+Date: 6 months ago
+Rating: 5 stars
+I have always found reception staff to treat me with care and kindness. Dr Hills treatment has been amazing for my recovery and the nurses I've seen have always been very friendly and helpful.
+
+Author: Daryl Johnston
+Date: 9 months ago
+Rating: 4 stars
+Upto now no trouble getting vto see doctors repeat meds no problem blood test etc all reasonable time scale one of the better surgeries
+
+Author: Macicasan Catalina
+Date: 9 months ago
+Rating: 1 star
+The lady from ultrasound scan was very rude at my appointment,she said to me "I dont know way you here,my scan what 30 sec,because my bladder was empty,I was on a night shift and I slept for 2 hours and when I wake up I havent realise cuz I dont need to empty my bladder,I try to drink water and she said very angry way you here,the gp will sort you,30 sec and I was done,
+
+Author: Alisha-05
+Date: 9 months ago
+Rating: 1 star
+Nurse at the ultrasound clinic was absolutely horrible and rude (low pony blonde mostly, white, working at the ultrasound clinic on Thursday)Was two mins late to my appointment as I struggled to find the building, woman at reception told me it was fine and to sit in the waiting area. Bloody waited 55 minutes to be seen then the nurse with blonde and browish hair, white, looking like shes reaching 30s was rude. Gave me attitude and trying to blame me saying they dont gave time to give me a full scan for checking my pcos which i urgently am needing to find out about half seen me when if they didnt have time for me they didnt have to waste my time and shouldve told me 55 mins earlier to reschedule, she gave me the biggest dirty look. This was my first time coming to get the scan by myself i was already nervous and scared and she made my experience 10x worse with her tone of voice. Ill never be coming back to such nasty nurses
+
+Author: James Doyle
+Date: 11 months ago
+Rating: 3 stars
+Poor parking
+
+Author: Carl Bailey
+Date: a year ago
+Rating: 5 stars
+Carl BaileyLocal Guide · 70 reviewsa year ago
+
+Author: Clare Bielawski
+Date: a year ago
+Rating: 5 stars
+Clare Bielawski1 reviewa year ago
+
+Author: Yana Booth
+Date: a year ago
+Rating: 5 stars
+Yana Bootha year ago
+
+Author: Janet Bowler
+Date: Edited a year ago
+Rating: 5 stars
+Brilliant staff , always helpful, doctors and nurses are all very caring and willing to listen to your health concerns x
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback, we will feedback to our staff in our monthly meeting.
+
+Author: Paul Vickers
+Date: a year ago
+Rating: 1 star
+I’ve been under this surgery for years and to be fair it’s one of the worst ones I’ve been under there’s issues with my daughters adhd meds every month issues with my meds they cancel appointments and don’t bother to notify you 😡like today I’ve took a day off work unpaid to attend my daughters appointment only to be told on arrival that the appointment is cancelled 😡😡😡😡get your act together St Andrews house
+
+Author: angela mccarthy
+Date: a year ago
+Rating: 5 stars
+I have recently moved to this practice I can honestly say the GP I saw today was very professional and thorough in his job excellent in explaining everything to me .Thankyou The receptionist was very professional and helpful with my enquiry. Thankyou
+
+Author: Rikesh Patel
+Date: a year ago
+Rating: 1 star
+Horrible Staff! Practice managers Sharon Davis and Lora Byrne are VILE and OBSCENE. They should not be allowed to work in a care setting of any kind. The behaviours of practice partners: Mrs Sinha, Mr Sinha and Mr Prabhakaran promotes a vicious and toxic environment. How the CQC has not shut this place down is astounding.
+
+Author: K'mmuni Love
+Date: a year ago
+Rating: 5 stars
+Gold standard treatment. So kind and genuinely care about the patients. Thank you to all the team at St Andrews House Medical centre. 💗 …
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback, we appreciate your kind words.
+
+Author: Philip Lee Jones
+Date: 2 years ago
+Rating: 5 stars
+very warm reception 💪need to put your own rubbish in your own bins though Boom Amazing Aura …
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback.
+
+Author: Claire Millward
+Date: 2 years ago
+Rating: 1 star
+Near impossible to get an appointment,even when you phone two weeks before you need an appointment also lack of information given when asking for advice
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We do have the Enhanced Access on evenings and weekends to help with the demand of appointments. We do appreciate your feedback and we will aim to improve this.
+
+Author: laura jones
+Date: 2 years ago
+Rating: 1 star
+So frustrating when disabled spaces have cars in them with no badges and also people sat in the cars for 30 minutes in the space with no badge. Parking is bad enough.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback, unfortunately we have no control over the carpark. We hope our services met your expectations.
+
+Author: мαнмσσɒ мєlнɪ
+Date: 2 years ago
+Rating: 5 stars
+мαнмσσɒ мєlнɪ2 years ago
+
+Author: Douglas Bates
+Date: 2 years ago
+Rating: 5 stars
+Came here because my surgery was full, it's a lovely place staff & doctor very helpful, & there own pharmacy great.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We appreciate your kind words.
+
+Author: Nicola Skinkis
+Date: 2 years ago
+Rating: 1 star
+Avoid this surgery at all costs. Misdiagnosed for over TWO years because doctors refused face to face appointments and wouldn't listen. Receptionist are obstructive. Wildly incompetent surgery.
+
+Author: sue walsh
+Date: 2 years ago
+Rating: 5 stars
+Brilliant doctors. I have never had a problem with them. They have gone above and beyond caring for me. I have moved away now from Stalybridge so I can't use them I am gutted. Best GP surgery I've ever been. Also Laura from reception is amazing I can't fault anyone Goodbye St Andrews 😞 …
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We are sorry to hear you moved away. Thank you for your kind words.
+
+Author: Katie Haynes
+Date: 2 years ago
+Rating: 5 stars
+Always seen when needed, always managed to get an appointment for my little boy when needed
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We hope to continue to support you best we can.
+
+Author: Christine Chadwick
+Date: 2 years ago
+Rating: 5 stars
+The lady this morning who syringed my ears did and excellent job, I am really pleased.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We will inform Sandra of your kind words.
+
+Author: Suzanne Ogden
+Date: 2 years ago
+Rating: 4 stars
+Suzanne Ogden1 review2 years ago
+
+Author: Rachel Taylor
+Date: 2 years ago
+Rating: 5 stars
+Both receptionist and doctors at St Andrews are truly amazing. 12 mth ago I rang asking for an appointment as my face was numb and I couldn't speak properly the receptionist told go straight to A&E as I may of had a stroke luckily it was just bell's palsy. Then 3wk ago I felt unwell with pain in my stomach, I rang at 9.30 got an appointment for 11.30, the lady doctor I saw sent me straight to hospital with possible appendicitis, she was correct, the following morning I had surgery to have my appendix removed. I've only been a patient here for 3yrs. I can't thank them enough for the care they've given me.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We appreciate your kind words, we will feedback to the staff in our monthly meetings.
+
+Author: Danielle sipe
+Date: 2 years ago
+Rating: 5 stars
+Danielle sipe5 reviews2 years ago
+
+Author: Faye
+Date: 2 years ago
+Rating: 5 stars
+Feel very supported by the doctors and nurses at this practice. They are very good with both my children and very helpful when needed. Particularly good now they have weekend/ out of hours appointments. The trainee doctors are very well informed also.
+Practice response date: a year ago
+Practice response:
+Thank you for your feedback. We hope to continue to support you in every way we can.
+
+Author: andrea wilde
+Date: 2 years ago
+Rating: 1 star
+Absolute disgrace this place is been phoning for 3 days NO ONE ANSWERS THERE IS NO 0 OTHERWISE YOU WOULD OF HAD THAT HAD THAT 😤😤😤😡😡🤬 …
+Practice response date: 2 years ago
+Practice response:
+I am sorry you had trouble getting through, we advise to keep trying there are staff available answering all our calls, if it helps the lines are generally less busier after 5pm. Please note if you are trying to contact the PCN Hub on the 1st floor, they have had some telephone issues. You can pop down to see them if you are still having trouble.
+
+Author: Jacintha Manchester
+Date: 3 years ago
+Rating: 5 stars
+Not seen the doctors for a while but they seem to always be pushing medication without considering your background/nutrition etc. But was very impressed by the lovely receptionist called Lois who was so helpful in chasing up my presumably lost prescription from Tameside Hospital. Thank you!
+Practice response date: 2 years ago
+Practice response:
+Thank you for your feedback. Your compliments will be passed on.
+
+Author: Kim McDermott
+Date: 3 years ago
+Rating: 5 stars
+Filled in an online consult (from their website) for my son at 2.40. Recevied a call at 2.50 to attend an appointment at 3pm. Cant fault that :) Thank u
+Practice response date: 2 years ago
+Practice response:
+Thank you for your feedback Kim, it is really appreciated.
+
+Author: robert marsden
+Date: 3 years ago
+Rating: 5 stars
+Never had a problem with this surgery from the reception staff to the Dr's. Excellent service.
+Practice response date: 2 years ago
+Practice response:
+Thank you for your feedback.
+
+Author: Stephanie Hursthouse
+Date: 3 years ago
+Rating: 1 star
+Rude staff after doctors appointment Asian receptionist gossiped about me to doctor then proceeded to look at me through glass door. Felt like they were showing me no respect. Plus when I had appointment with nurse she was told by staff in reception I make up stories. They then laughed at me. No respect Will be changing doctors. Do not like how they make me feel.
+
+Author: Joanna Riley
+Date: 3 years ago
+Rating: 1 star
+I cannot believe I have to inform my gp if I go away I got to tell them, every where I go I have been at this practice longer than the doctors never had issues like this
+
+Author: Michael Crompton
+Date: 3 years ago
+Rating: 5 stars
+A great surgery and the staff I have met have all been very professional. I rang with a concern this week and was sat in front of a doctor less than half an hour later. Very grateful and would highly recommend.
+
+Author: J Dinsdale
+Date: 3 years ago
+Rating: 1 star
+Nobody ever answers the phone!
+
+Author: Karen Brierley
+Date: 3 years ago
+Rating: 1 star
+I went there for ultrasound. The female Indian assistant was so rude. I reported her to the scanner and again she started a full scale tirade. Absolutely horrid rude lying girl. Won't go there again.
+
+Author: Mr Cee
+Date: 4 years ago
+Rating: 1 star
+Spoke to genie Glynn was absolutely rude and would not let me finish my sentence all I was after was my doctors records, shocking
+
+Author: Debbie Lowe
+Date: 4 years ago
+Rating: 1 star
+Absolutely fuming, I went to hospital for a procedure and was told a letter would be sent to my GP. When I rang I was told they hadn't received the letter so I rang hospital who assured me the letter was sent on 10th November I rang GP back and the woman I spoke to said it wasn't her I had just spoken to, then said it was. Her reply was, oh i don't know what happened to the letter then.....I think a better response would've been I'm sorry, I will look into it for you. I told the woman I'm not blaming her but that letter is important.
+
+Author: Louise Davis
+Date: 4 years ago
+Rating: 1 star
+Absolutely disappointed is an understatement! Been with the surgery for 10yr and never had no Trouble!! Yet when I try to get an implant removed that they put in they don't wanna take it out, they expect any other clinic to do it for them. DISGUSTING how they are avoiding seeing anyone yet we've had vaccines! and all the hospitals worked through the pandemic but doctors avoided seeing ANYONE and still DOES now. OPEN BACK UP PLEASE!!
+
+Author: Coll Cocopop
+Date: 4 years ago
+Rating: 1 star
+Nurse was nice when I eventually got in. Useless receptionist didn't even book me in I don't think so was forgot about left outside! Mo compassion for people in need of facilities. Will never go back if asked to by my doctor NEVER!!!
+
+Author: lauren platt
+Date: 4 years ago
+Rating: 1 star
+I couldnt understand what they was saying properly and the ultrasound scan women pulling her face it made me feel very uncomfortable.
+
+Author: Alex Murray
+Date: Edited 5 years ago
+Rating: 3 stars
+Not bad
+
+Author: Kai Kuang
+Date: 5 years ago
+Rating: 1 star
+The service is appalling, I did a HIV blood test on a Friday, I was told I will get the results by the following Tuesday, however when I called up on Tuesday they told me to call back the next day, so I did and they said the same thing to call back the following day cause although the results were sent back to them, the doctor didn’t have a look at them, this continued for over a week, only after 10 days and much arguing in the phone did the doctor finally take the time to look at my result. You can imagine how worried I was as a patient and their poor customer service didn’t help either.
+
+Author: Craig Denny
+Date: 6 years ago
+Rating: 4 stars
+I joined this practice in February this year and after living in a few different areas of Manchester this is by far the best practice I’ve been at. I have never had any problems getting what’s needed and medications are always done on time. I can make appointments when needed and I have never been refused. I have spoke with Rachel in many occasions who is always very helpful and gets the job done. My gp is also very good as is all the staff at the centre!
+
+Author: Jordan Mort
+Date: 6 years ago
+Rating: 3 stars
+Doctors are really nice friendly and understanding but one of the receptionist can at times be really snotty on the phone which makes me not phone up when I need to
+
+Author: Pete Tunny
+Date: 7 years ago
+Rating: 1 star
+Absolutely shocking and nobody has a clue what they are doing!! 5 people turned up for appointments and they were closed yet there were doctors there...Absolute joke.
+
+Author: Janet Griffin
+Date: 7 years ago
+Rating: 1 star
+Telephone and prescription service is appalling, staff are useless at sending repeat prescriptions to the pharmacy, they need training properly, I have had the same problem for the last 6 months. They don’t answer the telephone I have hung on for half an hour and then they cut you off. This is disgraceful!
+
+Author: Ellie Hartley
+Date: 7 years ago
+Rating: 1 star
+I recently had an appointment with Medi-scans at St Andrews House, unfortunately the taxi I had arranged to take me there did not turn up and so I was 20 minutes late to my appointment. Before my appointment was due I made sure to phone St Andrews house and let them know that I was going to be late and I was assured that my message would be passed on to the Medi scan staff. This information was not passed on and even when I did arrive and check in at reception, my information was still not passed on to the medi scan staff. It wasn't until an hour later that I was informed by the clueless receptionist that the doctor had already gone home and so there was no way I was going to get seen that day. I am appalled by the service I received and the surgery need to sort there staff out. I had to take time off work for this and I am now going to need time off again in order to be seen. Also,I wouldn't even rate it one star, the whole service was unorganised and I would not recommend this service to anyone
+
+Author: Mechele Ogbogu
+Date: 7 years ago
+Rating: 5 stars
+Mechele Ogbogu2 reviews7 years ago
+
+Author: Working Dog
+Date: 8 years ago
+Rating: 5 stars
+Excellent fast appointment. professional service.only negative point is parking.......
+
+Author: W J
+Date: 8 years ago
+Rating: 4 stars
+Pros: Very good specialist. Helped me nicely. Short wait. Cons: Poor computer system. Kept logging them out and making them wait. Difficulty retrieving my records and could not get my scans from Rochdale CATS with the same specialist. Systematic fault, not the fault of St Andrews House staff. Bit of a polava: Saw Guide Bridge Medical Practice doc. Advised to visit Mediscan. Had scan. Then advised to visit specialist. Chose Rochdale CATS. Human error accidentally cancelled 1st appointment so made a 2nd. Visited Rochdale: Previous scan results non existent so had new scan with comprehensive advise to book treatment. Booked St Andrews for 3rd appt. Received letter of cancellation and advised to book again (4th appt). Also received call from Guide Bridge Medical to book appt with GP to discuss first Mediscan results. Today had 1st treatment (4th appt). It was on record I did a 'No Show' for the 3rd appt. Treatment was great. Cancelled GP. Not moaning but I suspect the IT implementation needs raking out. Double bookings, no sharing of essential records. Isn't this wasting prescious NHS time? Computer says' 'it wasn't me!!' Wonder who's has IT contract? (Information Technology) 🤔
+
+Author: Dan Molloy
+Date: Edited 8 years ago
+Rating: 4 stars
+Have been a patient here since I was a child. Doctor Sinha is a wonderful doctor, she is very dedicated and friendly. Other doctors aren't as good in my opinion. Nurses Suzanne & Eva are fantastic. Most of the reception staff are great. It sometimes takes ages to get through and the call cycles back to the start you have to sit through a VERY long message multiple times. You also can't hear the hold music, it's just silence. There is often a very long wait for appointments, especially for Doctor Sinha as she is so popular. There are negatives but the positives are so strong I would rate 4/5

@@ -2,76 +2,112 @@
 
 This note asks a simple question:
 
-What shows up in older reviews that does not really show up now, and what shows up now that did not used to be a complaint at all?
+What looks genuinely older in the complaint corpus, and what looks more recent?
 
-I used the indexed Google review corpus and split it into two complaint-heavy windows:
+I used the rebuilt review index and split low-star reviews into two complaint-heavy windows:
 
-- `older`: reviews estimated to be from `2016` to `2019`
-- `recent`: reviews estimated to be from `2022` to `2026`
+- `older`: estimated `2016` to `2019`
+- `recent`: estimated `2022` to `2026`
 
-I left out `2020` and `2021` as a transition period.
-
-To keep this focused on complaints, I mainly looked at `1` and `2` star reviews.
+I left out `2020` and `2021` as transition years.
 
 That gives:
 
-- `796` low-star older reviews
-- `4,918` low-star recent reviews
+- `1,397` older `1` and `2` star reviews
+- `10,417` recent `1` and `2` star reviews
 
-The dates are estimated from Google's relative dates, so they are not exact to the month. But they are good enough to compare pre-pandemic and post-pandemic complaint language.
+The dates are still estimates from Google's relative timestamps, not exact publication dates. But they are good enough for a pre-pandemic versus post-pandemic language split.
 
 ## Headline
 
-The main finding is not that old complaints disappeared.
+The strongest result is still continuity plus layering.
 
-It is the opposite.
+Most of the familiar complaints in the older reviews are still here in the recent ones:
 
-Most of the core complaints in the older reviews are still here in the recent reviews:
-
-- hard to get an appointment
-- phone lines not being answered
 - the `8am` rush
-- rude or unhelpful reception
-- being sent round in circles
+- not getting through on the phone
+- no appointments left
+- rude or obstructive reception
 
-So there are very few robust older complaint types that literally vanish.
+What changes more clearly is the route through which patients experience those failures.
 
-The stronger shift is on the recent side. Post-pandemic reviews add a new layer of complaints about:
+The recent reviews add a much thicker layer of complaint language about:
 
 - online forms
-- named digital systems like `AskMyGP`, `PATCHS`, and the `NHS App`
-- triage as a system patients have to get through
-- phone or telephone consultations
-- trouble getting a face-to-face appointment
+- named digital systems like `AskMyGP`, `PATCHS`, `eConsult`, `Accurx`, and the `NHS App`
+- triage as a gate
+- telephone-first or callback-first handling
+- difficulty getting face-to-face care as such
 
-So the old problems mostly stay. The newer problems sit on top of them.
+So this still does not read like a new problem replacing an old one. It reads like the same old access failures, with extra digital and remote layers added on top.
 
 ## What Did Not Go Away
 
-Some of the most familiar complaints are still common in both periods.
+The bigger corpus makes this even harder to deny. The core complaints are long-running.
 
-Examples:
+### The `8am` scramble is still there
 
-- `8am` race language appears in `32` older low-star reviews and `239` recent low-star reviews
-- "can't get an appointment" type wording appears in both periods
-- "never answer the phone" type wording appears in `14` older low-star reviews and `83` recent low-star reviews
+- `59` older low-star reviews, `4.2%` of the older low-star set
+- `552` recent low-star reviews, `5.3%` of the recent low-star set
 
-That matters because it means the post-pandemic story is not a clean replacement story. It is not "the old queue vanished and a new digital queue arrived." It is more like the old bottlenecks stayed, then digital bottlenecks were added.
+Older example:
 
-## Older Complaints That Fade, Rather Than Vanish
+> "Ring 96 times in a morning at 8am as advised to be told no appointments."  
+> Jessica McClelland, `The Bolton Family Practice`, `7 years ago`
 
-I could not find many strong older-only complaint families that are truly absent now.
+Recent example:
 
-What I did find is a set of more physical, on-site, pre-digital complaints that feel more at home in the older reviews, even though some still appear later.
+> "I’m not allowed apparently I need to phone at exactly 8am if I want even a chance"  
+> joshua covus, `Albion Medical Practice`, `a month ago`
 
-### 1. Walk-in centre frustration
+That is not a vanished pre-pandemic complaint. It is still one of the basic ways patients describe access now.
 
-Walk-in-centre complaints are more visible in the older low-star set than the recent one.
+### "No appointments" remains a core complaint
 
-- `17` older low-star reviews, `2.1%` of older low-star reviews
-- `55` recent low-star reviews, `1.1%` of recent low-star reviews
+- `84` older low-star reviews, `6.0%`
+- `564` recent low-star reviews, `5.4%`
 
-This is not gone in recent reviews, but it is less central.
+Older example:
+
+> "You can never get an appointment when you need one"  
+> older low-star review, `Culcheth Medical Centre`, `7 years ago`
+
+Recent example:
+
+> "After saying what l thought in a previous comment, l have now registered at another surgery"  
+> Andrew James, `Padgate Medical Centre`, `Edited 3 days ago`
+
+The wording shifts around the edges, but the complaint itself is stubbornly familiar.
+
+### Rude or obstructive reception is also persistent
+
+- `161` older low-star reviews, `11.5%`
+- `1,057` recent low-star reviews, `10.1%`
+
+Older example:
+
+> "Receptionists are rude and it takes many weeks to get an appointment even if it’s an emergency."  
+> older low-star review, `Corkland Road Medical Practice`, `7 years ago`
+
+Recent example:
+
+> "The reception staff are very rude and unprofessional."  
+> lisa wiswell, `Huntley Mount Medical Centre`, `a month ago`
+
+So the older-versus-recent picture is not a story of rude reception disappearing into slicker systems. It is still part of the same access story.
+
+## Older Complaints That Fade Rather Than Vanish
+
+This is where the earlier report mostly still holds up, but the larger corpus makes the wording cleaner.
+
+I could not find many strong older complaint families that truly disappear in the recent era.
+
+What I did find is a set of more physical, on-site, pre-digital complaints that feel relatively more at home in the older reviews, even though they do still show up later.
+
+### Walk-in-centre frustration
+
+- `28` older low-star reviews, `2.0%`
+- `114` recent low-star reviews, `1.1%`
 
 Older examples:
 
@@ -81,133 +117,121 @@ Older examples:
 > "Waited 3 hours for the walk in centre and still didn't get seen"  
 > Mohamed Zifar, `Hawthorn MC`, `9 years ago`
 
-This older pattern feels tied to a more physical model of access: turn up, wait, hope to be seen, get turned away.
+Recent reviews still mention walk-in centres, but more often as somewhere they are sent away to, or bounced back from, rather than as the main on-site queue itself.
 
-### 2. Waiting-room and on-site delay complaints
+### Waiting-room and in-building delay complaints
 
-Waiting-room complaints are also relatively more common in the older low-star set.
+- `28` older low-star reviews, `2.0%`
+- `116` recent low-star reviews, `1.1%`
 
-- `14` older low-star reviews, `1.8%`
-- `38` recent low-star reviews, `0.8%`
+Older example:
 
-Again, they do not disappear. But they look less central than the newer digital-route complaints.
+> "had an appointment for 10:50am wasn't seen till 11:10am"  
+> older low-star review, `Great Lever One`, `7 years ago`
 
-This fits the broader shift in the corpus. Older complaints more often sound like people are already in or near the building. Recent complaints more often happen before patients get that far.
+This kind of complaint still exists, but it feels less central than it used to. Older complaints more often sound like patients are already in or near the building. Recent complaints more often happen before they even get that far.
 
-## What Is New In Recent Reviews
+## What Is More Clearly Recent
 
-This is where the change is much clearer.
+This is where the bigger corpus sharpens the report most.
 
-### 1. Named digital gateways are a genuinely recent complaint form
+### Named digital gateways are genuinely recent complaint language
 
-These terms do not appear as older low-star complaints in the `2016` to `2019` slice:
+- `0` older low-star reviews
+- `148` recent low-star reviews, `1.4%`
 
-- `AskMyGP`: `0` older, `32` recent
-- `PATCHS`: `0` older, `19` recent
-- `NHS App`: `0` older, `46` recent
-- `online form`: `0` older, `52` recent
+That is the cleanest recent-only shift in the whole pass.
 
-That is the cleanest recent-only shift in the corpus.
-
-These are not just new words. They point to a different front door.
-
-Recent examples:
-
-> "Elderly mum unable to get an appointment not able to use online form and won’t book an appointment over the phone."  
-> Sam Rothwell, `Kearsley Medical Centre`, `a year ago`
-
-> "Been on the website to complete the online form every day this week for it to be turned off before 8.40?"  
-> Mell Lewis, `Cornishway Group Practice`, `Edited 3 years ago`
+Examples:
 
 > "They do not respond to emails, and AskMyGP is always closed."  
 > Joey Howard-White, `Tower Family Healthcare`, `2 years ago`
 
-> "I rang this morning at 8am and went on the NHS app at the same time for an appointment. No appointments left on the app and 10th in queue on the phone."  
-> John 3v16, `Alkrington Junction Practice`, `a year ago`
+> "AskMyGP could be better as it fills up really quickly, usually by 8am."  
+> Alan White, `Red Bank Group Practice`, `a month ago`
 
 The old complaint was often "I cannot get through." The newer complaint is often "every route is shut at once."
 
-### 2. The website and online-form gate becomes much more common
+### Online-form gatekeeping becomes a proper complaint family
 
-If I widen out from named systems to the broader digital front door, the shift is large:
-
-- `8` older low-star reviews, `1.0%` of older low-star reviews
-- `294` recent low-star reviews, `6.0%` of recent low-star reviews
-
-That is one of the clearest differences between the two periods.
-
-Patients now complain not just about delay, but about being pushed into a system that:
-
-- fills up early
-- gives no answer
-- is hard to find
-- does not work for older or less digital patients
-- can leave them stuck between phone and online routes
-
-### 3. Phone consultation and remote-first language are new complaint shapes
-
-The older reviews barely use this language.
-
-- `phone or telephone consultation`: `2` older low-star reviews, `0.3%`; `59` recent, `1.2%`
-- `triage`: `2` older low-star reviews, `0.3%`; `48` recent, `1.0%`
-
-This is a real change in how patients describe the service.
+- `1` older low-star review, `0.1%`
+- `112` recent low-star reviews, `1.1%`
 
 Recent examples:
 
-> "A month waiting for telephone consultation."  
-> Joanna Wnorowska, `Swan Lane Medical Centre`, `3 years ago`
+> "Online form must be filled out before 10am which isn't possible for some people, and then tells you to call anyway."  
+> recent low-star review, `Chorlton Family Practice`, `2 weeks ago`
 
-> "Asked to make a telephone consultation. Impossible to get through on phone."  
-> Seánie H, `Red Bank Group Practice`, `2 years ago`
+> "Using covid as an excuse about everything ... Online form is restricted opens at 7am."  
+> Syeda Khanum, `Donneybrook Medical Centre`, `4 years ago`
 
-This complaint language is different from the older walk-in or front-desk complaint style. It shows patients navigating a system where the first contact is often remote, delayed, or uncertain.
+This is one of the clearest changes in the corpus. Patients now complain not just about delay, but about being pushed into a system that fills up early, gives no answer, or simply loops them back to the phone.
 
-### 4. Face-to-face appointments become a complaint topic in their own right
+### Triage becomes a thing patients have to get through
 
-This is one of the sharpest recent changes.
-
-- `4` older low-star reviews, `0.5%`
-- `112` recent low-star reviews, `2.3%`
-
-That does not mean older patients did not want face-to-face appointments. It means the complaint language changes. In the recent reviews, patients often talk about face-to-face access itself as a scarce or withheld thing.
+- `4` older low-star reviews, `0.3%`
+- `89` recent low-star reviews, `0.9%`
 
 Recent example:
+
+> "Wanted to see a doctor ... fill out the triage form hoping i wound get an appointment. But all I’ve got is some cream sent to boots."  
+> recent low-star review, `Manor House Surgery`, `a day ago`
+
+That is a different kind of complaint from older front-desk or walk-in frustration. The patient is now talking about a filtering process before care is even properly in reach.
+
+### Telephone consultation and remote-first handling rise sharply
+
+- `10` older low-star reviews, `0.7%`
+- `124` recent low-star reviews, `1.2%`
+
+Recent example:
+
+> "I waited 40 minutes for a telephone consultation ... No call."  
+> recent low-star review, `Market Street Medical Practice`, `3 weeks ago`
+
+This is another strong change in complaint shape. The service is not only hard to reach. It is more often described as remote, delayed, and callback-driven.
+
+### Face-to-face care becomes a complaint topic in its own right
+
+- `5` older low-star reviews, `0.4%`
+- `244` recent low-star reviews, `2.3%`
+
+Recent examples:
 
 > "Very difficult to make an appointment, expected to be in all day for a phone call, difficult to arrange a face to face appointment"  
 > john clarke, `Barlow Medical Centre`, `3 years ago`
 
-That is a more post-pandemic form of frustration. The problem is not only getting help. It is getting help in the form patients think they need.
+> "Get told to call reception for face to face appointment reception revert us back to online form."  
+> Syeda Khanum, `Donneybrook Medical Centre`, `4 years ago`
 
-## What This Means
+That does not mean older patients did not want face-to-face care. It means the complaint language changes. In the newer reviews, face-to-face access itself has become something patients feel they have to win.
 
-The older-versus-recent picture is not a clean swap from one complaint world to another.
+## What The Shift Really Looks Like
 
-It is more like this:
+The era split is not telling us that the old problems went away and new problems appeared from nowhere.
 
-### 1. The old complaints stay
+It looks more like this:
+
+### 1. The old bottlenecks stay
 
 Patients still complain about:
 
 - phones
 - appointments
-- rude reception
 - being told to try again tomorrow
-- getting stuck in loops
+- rude reception
+- going round in circles
 
-So the service did not move on from those problems.
-
-### 2. The newer system adds extra points of failure
+### 2. The newer system adds extra gates
 
 Recent reviews add:
 
 - online form closures
 - app-based dead ends
-- named triage systems
-- remote-first contact
-- uncertainty about face-to-face care
-
-So patients are not just facing the old access problems in a modern form. They are often facing more layers than before.
+- named digital systems
+- triage
+- callback and telephone-consultation waiting
+- the extra hurdle of getting face-to-face care
 
 ### 3. The point of failure moves further upstream
 
@@ -226,26 +250,24 @@ Recent complaints more often sound like:
 - I was waiting for a callback
 - I could not get a face-to-face appointment
 
-That is an important change.
-
-The struggle now often happens before the patient reaches the room, the desk, or the clinician.
+That is the key change. The struggle now more often happens before the patient reaches the room, the desk, or the clinician.
 
 ## Bottom Line
 
-The strongest result here is continuity plus layering.
+The strongest result here is still continuity plus layering.
 
-There are very few older complaint types that truly disappear from the post-pandemic reviews. The core access complaints are stubborn and long-running.
+There are very few older complaint types that truly disappear from the recent reviews. The core access complaints are stubborn and long-running.
 
-What changes in the recent reviews is the route through which patients experience those problems.
+What changes in the recent reviews is the route through which patients experience those same failures.
 
 The newer complaint language is much more about:
 
 - digital gatekeeping
 - app and form dependency
-- remote-first handling
 - triage
-- the extra step of having to win a face-to-face appointment
+- remote-first handling
+- the extra step of having to secure face-to-face care
 
-So the post-pandemic review corpus does not read like a new problem replacing an old one.
+So the newer corpus does not read like a clean replacement story.
 
 It reads like the same old access failures, with a new digital layer added on top.

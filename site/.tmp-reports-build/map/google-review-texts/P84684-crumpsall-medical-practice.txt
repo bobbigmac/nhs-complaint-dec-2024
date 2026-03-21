@@ -2,23 +2,68 @@ Practice: Crumpsall Medical Practice
 Canonical code: P84684
 Postcode: M8 5RB
 Google Maps title: Crumpsall Medical Practice
-Google rating: 3.2
-Google review count: 39
-Google Maps URL: https://www.google.com/maps/place/Crumpsall+Medical+Practice/@53.5204558,-2.2276302,17z/data=!4m8!3m7!1s0x487bb17f9d936f1f:0xffd6c9f7899bc8f4!8m2!3d53.5204558!4d-2.2276302!9m1!1b1!16s%2Fg%2F11lc9k0l61?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google rating: 3.0
+Google review count: 47
+Google Maps URL: https://www.google.com/maps/place/Crumpsall+Medical+Practice/@53.520459,-2.2302105,17z/data=!4m8!3m7!1s0x487bb17f9d936f1f:0xffd6c9f7899bc8f4!8m2!3d53.5204558!4d-2.2276302!9m1!1b1!16s%2Fg%2F11lc9k0l61?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 47
+Owner replies collected: 0
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84684-crumpsall-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Abdullah
+Date: 15 hours ago
+Rating: 1 star
+Very bad experience. Staff were rude and unprofessional, and the whole situation felt unfair. I was only 10 minutes late due to traffic after a long journey, but they refused my appointment. Not recommended.
+
+Author: mary aby
+Date: 15 hours ago
+Rating: 1 star
+Really disappointing experience at Crumpsall Practice. I was only 10 minutes late due to traffic after but the staff refused to let me see the doctor. Both the staff and doctors seem very unfair they have no flexibility for patients, yet they make patients wait without any accountability. There was no understanding or respect shown at all. I would not recommend this practice.
+
+Author: Adnan Saleem
+Date: 15 hours ago
+Rating: 1 star
+Very poor experience at Crumpsall Practice. I was just 10 minutes late because of traffic but they refused to let me see the doctor. The staff were rude and showed no understanding at all. It’s unfair how patients get turned away for small delays, while doctors keep people waiting without any issue. I wouldn’t recommend this place.
+
+Author: Abdullah “&” Rajput
+Date: 15 hours ago
+Rating: 1 star
+I had a very disappointing experience at Crumpsall Practice. I arrived only 10 minutes late due to traffic, despite travelling around 40 minutes to get there. Unfortunately, the staff refused to let me see the doctor just because of this small delay What made it worse was the rude and unprofessional behaviour of the staff. There was no understanding or consideration for the situation, even though delays like traffic are sometimes unavoidable It feels very unfair, especially when patients are often made to wait 20–30 minutes or more when doctors run late, yet no one questions that. But if a patient is slightly delayed, they are denied care completely. Overall, I found the experience frustrating and lacking in empathy. I would recommend choosing another GP practice that treats patients with more understanding and respect.
+
+Author: Chantelle Stewart
+Date: 5 days ago
+Rating: 5 stars
+A few minutes waiting time very nice and pleasant
+
+Author: Rabie Djebbi
+Date: 5 days ago
+Rating: 1 star
+UNPROFESSIONAL! Our family of four, including a 5-year-old and a newborn, were given appointments for tests. When we arrived, we were told we were “not eligible” with no explanation. Why give appointments in the first place if patients are not eligible?
+
+Author: MAS ARRAY
+Date: a week ago
+Rating: 1 star
+Horrible service! You called them because you are not well and wanting to be seen by a clinician on the same day but instead they will send you a link. What happened to GPs these days no more walk ins and no more same day appointment, where are the GPs who is willing to help and listen to the patients and who is happy to serve and prolong life. Not here in this practice. They’re not accommodating and helpful when it comes to appointments especially to those working people.
+
+Author: Michael Osumah
+Date: a week ago
+Rating: 5 stars
+Michael OsumahLocal Guide · 11 reviews · 6 photosa week ago New
 
 Author: Michael Sal
-Date: 2 weeks ago
-Rating: 5 stars
-Michael SalLocal Guide · 126 reviews · 94 photos2 weeks ago New
-
-Author: Unfiltered
 Date: 3 weeks ago
 Rating: 5 stars
-Unfiltered3 weeks ago New
+Michael SalLocal Guide · 126 reviews · 94 photos3 weeks ago New
+
+Author: Unfiltered
+Date: a month ago
+Rating: 5 stars
+Unfiltereda month ago
 
 Author: Eugene Friday
 Date: a month ago
@@ -31,14 +76,19 @@ Rating: 5 stars
 I have recently moved my GP to Crumpsall Medical Practice and the service I have received has been outstanding. The reception team answer calls quickly and are always helpful. On one occasion, I received an exceptionally high standard of care from the receptionist, Catherine Tymon. She was polite, friendly, and very accommodating when helping me change an appointment I needed. The process was completely stress-free, and it genuinely felt like she went above and beyond to provide excellent patient care.
 
 Author: Emma Jones
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 Always waiting for 30-60 minutes no regard for people’s time or commitments.
 
 Author: Mohammad Naseri
-Date: a month ago
+Date: 2 months ago
 Rating: 1 star
 Every time bring my mom to gb wait morethan 30 min even come on the time for my appointment
+
+Author: ADREES AHMED
+Date: 2 months ago
+Rating: 5 stars
+Recently registered with this GP and will be sticking with them for the foreseeable future! All the receptionists are extremely hardworking, and M. Ali saw my parents and he was fantastic. We managed to discuss more in a single visit with him than we have with other practitioners over the past few years. He was very caring, genuinely interested in what we had to say, and made us truly feel listened to. He even carried out a blood test during the same appointment, saving my elderly dad from having to return to the surgery.
 
 Author: Farrukh Qadri
 Date: 2 months ago
@@ -51,11 +101,151 @@ Rating: 1 star
 Regularly waiting 40 min or more, they should to send a text to people to advice that we need to come 20 min after to avoid too much waiting especially for people like me with postural problem and very uncomfortable on chair. The appointment is always a rush, they give you just few minutes and for people with difficulties to communicate it's very embarrassing and frustrating, when I came I asked the doctor to explain how I have to use my medecine then I wanted to go throw my issue, the main reason why I came here, I show a text on my phone about my issue and symptoms and she told me "no time, you need to rebook" it is a joke, how she can understand people issue if she doesn't want to read/listen, take time, asking relavent questions, it is so ridiculous. Even when she talk about my health issues she looks not sure, she doesn't know that healt issues and symptoms are connected, she told me you need another appointment for other problems -_- I am spending my time taking and comming for appointments . She is not invested/focused on their patients. Very bad experience, I feel that they just don't care about you, they don't know how it can be difficult to live with health problems, how it is important for me, how much that affect me in all aspects of my life. So disappointed
 
 Author: Samina Khan
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 Fantastic surgery made a mistake to leave them in first place
 
 Author: TSK
-Date: 4 months ago
+Date: 5 months ago
 Rating: 4 stars
 Really not easy to find. If get bus follow signs from stop at very front of hospital. Nice welcoming reception.If use car park must register your number inside to avoid a fine.Hate such money making!
+
+Author: naveed akhtar
+Date: 5 months ago
+Rating: 4 stars
+Very good practice. Professional staff, clean environment. Only problem is location very awkward to get to, especially on foot.
+
+Author: Luk Off
+Date: 5 months ago
+Rating: 1 star
+GP surgery claiming “no appointments available” while the waiting room sits totally empty. Locals say it’s the same story everywhere Patients can’t see their own doctors The NHS system is broken
+
+Author: Tehmina Naqwi
+Date: 5 months ago
+Rating: 1 star
+Very poor service.I took appointment for my autistic son and told them clearly that its difficult for him to wait he has behvioral problems.I reach at gp and sign in at 3:20pm as appointment was at 3:30pm.At sign in time it shows that appointment is on time but after waiting for 30 minuts no one call.my son start shoutng and lay at floor but no one bother.After going at reception again and agin they said doctor is unable to see my son so they ask another doctor to see my son.The other doctor see my son at 4:12pm but till that my son suffer alot. Very very bad experience.
+
+Author: Gulmina Khan
+Date: 6 months ago
+Rating: 5 stars
+It's been 2 years since we have registered with this surgery and have always been very prompt with appointments and calls. They are handling the process smoothly and look after their patients.
+
+Author: Andrea Owen
+Date: 6 months ago
+Rating: 1 star
+Receptionist was rude. Arrived at the desk where I was not acknowledged whilst she held a conversation. She then turned around after a couple of minutes and said 'Yes?!'. Facilities look good enough but patient facing staff may need some further customer/patient service training.
+
+Author: Alexander Winton
+Date: 7 months ago
+Rating: 1 star
+Bloody terrible! I had an emergency appointment for 11am the doctor kept me waiting for over 45 minutes and as soon I got in to see her she was trying to get rid of me. I have legitimate concerns and should be entitled to be heard. The doctor prescribed me medication that's left me feeling drugged up, drained and even more anxious then when I first went in.
+
+Author: Mebs
+Date: 7 months ago
+Rating: 1 star
+Just took my dad to the surgery talk about bad attitude from a doctor will be putting complaint in
+
+Author: Missy Amjad
+Date: 8 months ago
+Rating: 5 stars
+The lady Catherine and the staff have been incredibly supportive to my sister and mother, especially concerning our father. They've been exceptionally kind and helpful, particularly with my mother, who speaks another language. We deeply appreciate their efforts to assist her. Thank you all so much!
+
+Author: Xaad Akbar888
+Date: 9 months ago
+Rating: 1 star
+Absolutely appalling experience with Crumpsall Medical Practice in Manchester. I'm fed up with how poorly this place is run. Appointments are NEVER on time. I have other commitments and can’t sit around waiting for an hour every single time. It's ridiculous and a total waste of my time. I raised this issue with a member of the management team, expecting a proper explanation or solution, but instead I was told to "speak to the clinician" — in this case, Agnes Mara Mkandawire. Excuse me? That is NOT how complaints should be handled. It’s the management’s job to take responsibility and deal with complaints professionally — not pass the buck and brush patients off. The staff, especially the management, are completely unprofessional and dismissive. They don’t respect patients’ time, and clearly don't care about improving. I’ve had enough. This is NOT how a GP practice should be run. Very unhappy and disappointed with this place. Remember I’m posting this review while waiting for my appointment my appointment was 11:24 now it’s 11:57. It’s not the first time. It’s always like this.
+
+Author: Tahir Awan
+Date: 10 months ago
+Rating: 4 stars
+Good GP services.
+
+Author: Maheshi karunanayake
+Date: 10 months ago
+Rating: 1 star
+Reception doesn’t care about patients and not polite . Very disappointed
+
+Author: abdul rehman
+Date: 10 months ago
+Rating: 5 stars
+Excellent service
+
+Author: Talat Mahmood
+Date: a year ago
+Rating: 5 stars
+Very welcoming receptionist. Nice smile.🙂 Plenty of parking right infront of the building. Very well sign posted. Wheelchair access. Comfort seating in the reception. You MUST register your car if in a parking space. Also Blue badge spaces.
+
+Author: Sucre M
+Date: a year ago
+Rating: 1 star
+Attended here today with my grandmother for an ultrasound appointment phoned ahead to let them know we will be late due to not knowing where it was. At reception told the lady specifically that we were late and is it ok she said it’s fine they will call you. After waiting for nearly 40mins asked at reception and the ultrasound sonographer came out to say due to being late we need to reschedule. Why not be honest at reception from The get go instead of telling us to go they said to stay and wait as it was ok.zero communication for an elderly lady with a lot of illness . Unacceptable
+
+Author: Four Landline Telephones. Installed in my home.
+Date: a year ago
+Rating: 1 star
+Four Landline Telephones. Installed in my home.1 reviewa year ago
+
+Author: Susan Rodgers
+Date: a year ago
+Rating: 4 stars
+Lovely surgery friendly staff. Found booking an appointment really easy and quick. The only down side is where it is, think walking there in the winter would be very dangerous very steep rough road
+
+Author: Anthony Brady
+Date: a year ago
+Rating: 2 stars
+Nice place but told to come 15 minutes before appointment or they cancel it I got there a 30 minutes before so I was not late I waited 30 minutes after appointment so I was in for got out nearly 2 hours later so why tell us to get there 15 minutes its a joke people who come in after me was seen before me.
+
+Author: Nabila Hussain
+Date: a year ago
+Rating: 5 stars
+Had an appointment with Pat Mcleggon the nurse at the centre. She was great and took good care of everything
+
+Author: David Lee
+Date: a year ago
+Rating: 4 stars
+Quiet lovely atmosphere in reception and waiting areas
+
+Author: Lay
+Date: a year ago
+Rating: 5 stars
+New to this surgery & I’m impressed with the service especially Nurse Mara thank you for your compassion all the doctors actually care & listen :)
+
+Author: Jacquie Shapiro
+Date: a year ago
+Rating: 4 stars
+Very difficult to find..Sat nav doesn't know it! Nobody has heard of it. Turn left as you enter grounds. Go up to small roundabout..left into car park. At far side if car park..go thru , left and down at bottom...large white building. Entrance on far side. Hope this helps!
+
+Author: Candice Lewis (Candi)
+Date: a year ago
+Rating: 4 stars
+Candice Lewis (Candi)Local Guide · 11 reviews · 1,127 photosa year ago
+
+Author: Sal m
+Date: a year ago
+Rating: 5 stars
+To get to Crumpsall Medical . You have to drive through the car park of the hospital in to Delauneys Road
+
+Author: David Clynes
+Date: a year ago
+Rating: 4 stars
+David Clynes1 reviewa year ago
+
+Author: Faith Aighobahi
+Date: a year ago
+Rating: 5 stars
+The new building is beautiful. Staff are courteous. The Doctor I met is an amazing man. However, each appointment spans for 10 minutes, so you may have to book several appointments to get a complex health issue sorted out.
+
+Author: Lorraine Taylor
+Date: 2 years ago
+Rating: 5 stars
+Fast and efficient
+
+Author: Joshua Woolley
+Date: Edited 2 years ago
+Rating: 1 star
+Joshua Woolley1 reviewEdited 2 years ago
+
+Author: mohammed tanveer
+Date: 2 years ago
+Rating: 5 stars
+mohammed tanveerLocal Guide · 7 reviews2 years ago

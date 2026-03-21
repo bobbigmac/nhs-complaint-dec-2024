@@ -1,0 +1,31 @@
+Practice: BARCLAY WOODSIDE
+Canonical code: S43167
+Postcode: G20 7ER
+Google Maps title: Barclay Medical Practice - Woodside Branch
+Google rating: 4.7
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Barclay+Medical+Practice+-+Woodside+Branch/@55.8792245,-4.2729589,17z/data=!4m8!3m7!1s0x4888450053dd5c25:0xcbe0536404565a4c!8m2!3d55.8792215!4d-4.2703786!9m1!1b1!16s%2Fg%2F11yq8bshvw?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.667
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S43167-barclay-woodside.json
+
+Captured reviews
+================
+
+Author: Anna Marshall
+Date: 18 hours ago
+Rating: 5 stars
+Today I was due my medical yearly review and I had a great experience with Joanne the support worker. The receptionists were lovely, too. I would also like to mention the practice is looking great
+
+Author: Razi Tabatabaeyan
+Date: a week ago
+Rating: 4 stars
+Heather
+
+Author: Aiden
+Date: 3 months ago
+Rating: 5 stars
+I had a wonderful experience with Dr. Gourlay. They were not only thorough in diagnosing my condition but also incredibly reassuring, which made me feel at ease. The staff at the medical practice are always helpful, friendly, and welcoming. I'm especially glad that the practice has transitioned back to my old GP, Barclay Medical Practice, as it feels like home. Thank you for the excellent care!

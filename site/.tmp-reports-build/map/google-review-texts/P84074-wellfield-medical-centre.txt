@@ -4,12 +4,12 @@ Postcode: M8 9JT
 Google Maps title: Wellfield Medical Centre
 Google rating: 1.7
 Google review count: 166
-Google Maps URL: https://www.google.com/maps/place/Wellfield+Medical+Centre/@53.5127491,-2.245197,17z/data=!4m8!3m7!1s0x487bb038636fa42f:0x1a7979ed126df1a4!8m2!3d53.5127459!4d-2.2426167!9m1!1b1!16s%2Fg%2F1jkxpz7w1?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Wellfield+Medical+Centre/@53.5127491,-2.245197,17z/data=!4m8!3m7!1s0x487bb038636fa42f:0x1a7979ed126df1a4!8m2!3d53.5127459!4d-2.2426167!9m1!1b1!16s%2Fg%2F1jkxpz7w1?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
 Review collection mode: full_feed
 Review cards collected: 166
 Owner replies collected: 0
-Raw review responses captured: 17
+Raw review responses captured: 18
 Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P84074-wellfield-medical-centre.json
 
 Captured reviews
@@ -41,14 +41,14 @@ Rating: 1 star
 I work out of Manchester just for temporary,but still lives there.Doctors suggested i can get my medication from nearest pharmacy but the receptionist are a nightmare, requests for my medication are sent but ignored,got 2weeks request been not activated,spoke to GP on my medication review 3weeks ago and i was told my meds are on repeat prescription. Contacted surgery today(1 Dec) receptionist asked me why am i working in Hamphshire but still live in Manchester,told her that is personal,then said i'm shouting at her and hang up the phone I do not have access to my crucial medication for last 3weeks,this is not first time,i struggle to get my medication, they are medical personnel but do not hold duty of care at all,
 
 Author: Samina Khan
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
 Absolutely rubbish surgery staff are rude and ignorant I have been with them for 7 months my medication is not on repeat prescription so I have to chase this up myself every time which is pain in the ass especially when you have bipolar disorder and you are pregnant so going back to Crumpsall medical practice they are fantastic and dr kumar is a legend
 
 Author: Musa Zafar
-Date: 3 months ago
+Date: 4 months ago
 Rating: 1 star
-Musa Zafar3 months ago
+Musa Zafar4 months ago
 
 Author: Fathima Fidha
 Date: 4 months ago
@@ -216,7 +216,7 @@ Rating: 1 star
 Un KnownLocal Guide · 52 reviews · 20 photosEdited a year ago
 
 Author: Patryk Niedzwiecki
-Date: a year ago
+Date: 2 years ago
 Rating: 1 star
 Unable to book an appointment,even online. When I went to book an appointment, receptionists were so rude.
 
@@ -493,7 +493,7 @@ If I could give 0 stars I’d definitely do it.
 Author: Karl Connolly
 Date: 3 years ago
 Rating: 1 star
-Trying to book a doctors ring back for my repeat medication on the phone 33mins no more appointments Trying again as I write this and been on the phone 1 hr 1 min to be told there busy and I said what an hour she said yes that's just the way it is. REALLY Now let's see if I get a ring back the clock is ticking.
+Trying to book a doctors ring back for my repeat medication on the phone 33mins no more appointments Trying again as I write this and been on the phone 1 hr 1 min to be told there …
 
 Author: Natalie
 Date: 3 years ago
@@ -518,7 +518,7 @@ Worst surgery ever. And the receptionist is really rude and sick . I am so stres
 Author: M M
 Date: 3 years ago
 Rating: 1 star
-The worst surgery you may go to! I do have severe anemia and thalasymia and I spoke with two GPs, none of them had helped. I did the blood test which showed that I’m severely anemic and when I asked the doctor that I have zero energy and this is effecting my life and turning it to a miserable one as I have no strength whatsoever to do anything, they both prescribed iron tablets which I’ve been taking for over 10 years ago different brand and top quality with no improvements. No iron injections was given, nothing the same iron tablets that anyone can get from over the counters or online. I have a horrible memory, and again both adviced to take the iron tablets as a solution. I’m def going to complain. Once I know where I should head to, to do that but my advice in the meantime is to avoid this surgery DO NOT go to it as the doctors there seem to not understand the patients problem and obviously don’t know how to prescribe a medication. Oh forgot to mention the receptionists, they are as worse as the GPS I have dealt with.
+The worst surgery you may go to! I do have severe anemia and thalasymia and I spoke with two GPs, none of them had helped. I did the blood test which showed that I’m severely anemic and when I asked the doctor that I have zero energy and …
 
 Author: Rabia Hashmi
 Date: 3 years ago
@@ -543,7 +543,7 @@ Worst experience of my life I’m disabled person have different health issues t
 Author: Damini kukreja
 Date: 4 years ago
 Rating: 1 star
-Worst service I have ever seen in my life . Especially rude receptionist. Initially I was surprised to see the rating of this GP now I actual know the reason behind this.they always extend the appointment to every next monday. No matter how urgent it is. And these receptionist play with lives of people.i don't know why they give job to such toxic ladies . This gp should urgently close or either they should fire their employees. Need to change my gp now.
+Worst service I have ever seen in my life . Especially rude receptionist. Initially I was surprised to see the rating of this GP now I actual know the reason behind this.they always extend the appointment to every next monday. No matter …
 
 Author: Flynn Gregory
 Date: 4 years ago
@@ -778,7 +778,7 @@ Aliasghar Rabiei2 reviews8 years ago
 Author: Yousef Hashmi
 Date: 8 years ago
 Rating: 1 star
-Rude receptionist, getting riled up, although I am calm and polite to her. I end up talking to this particular receptionist whenever ai visit the medical centre just to be disappointed. 3 hours minimum wait for emergency appointment. Long …
+Rude receptionist, getting riled up, although I am calm and polite to her. I end up talking to this particular receptionist whenever ai visit the medical centre just to be disappointed. 3 hours minimum wait for emergency appointment. Long waiting time for normal appointment. Receptionist will be straight up rude to you, attend phone if they feel like it. Consider changing medical centres.
 
 Author: De Needu
 Date: 8 years ago

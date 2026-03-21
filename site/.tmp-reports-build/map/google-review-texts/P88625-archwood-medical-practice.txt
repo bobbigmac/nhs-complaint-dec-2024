@@ -4,21 +4,31 @@ Postcode: SK6 1ND
 Google Maps title: Archwood Medical Practice
 Google rating: 4.7
 Google review count: 103
-Google Maps URL: https://www.google.com/maps/place/Archwood+Medical+Practice/@53.4260421,-2.0993611,17z/data=!3m1!5s0x487bb5b27f83144b:0x699b0970538ddf16!4m8!3m7!1s0x487bb5070a6a3bd9:0x1030f1f17b112cd1!8m2!3d53.4260421!4d-2.0993611!9m1!1b1!16s%2Fg%2F1ttdx_fv?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Archwood+Medical+Practice/@53.4260453,-2.1019414,17z/data=!3m1!5s0x487bb5b27f83144b:0x699b0970538ddf16!4m8!3m7!1s0x487bb5070a6a3bd9:0x1030f1f17b112cd1!8m2!3d53.4260421!4d-2.0993611!9m1!1b1!16s%2Fg%2F1ttdx_fv?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 103
+Owner replies collected: 54
+Raw review responses captured: 11
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88625-archwood-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Angela Wood
+Date: a day ago
+Rating: 5 stars
+Paul was very kind, understanding and reassuring. He was Professional and knowledgeable. Thank You Angela Wood
 
 Author: Rebecca Smith
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
 I honestly can not thank Dr Thiagarajan enough for the help I have had with my son over the past couple of weeks! She had been absolutely amazing listened to every one of my worries and worked with me to get the best outcome for my son. Truly an amazing doctor and really genuinely cares about the patients in her care. Thank you so much again!
 
 Author: Heather Hesketh
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
-Heather Hesketh2 weeks ago New
+Heather Hesketha month ago
 
 Author: Pat Jones
 Date: a month ago
@@ -36,7 +46,7 @@ Rating: 5 stars
 Dr Chandra was very thorough and helpful.
 
 Author: Mike Mayo
-Date: 3 months ago
+Date: 4 months ago
 Rating: 5 stars
 I had a minor op at the surgery, Dr Chanda assisted by Claire did an excellent job,made me feel at ease and saved me going to hospital. I'm so pleased Well done team. Michael M
 
@@ -51,11 +61,633 @@ Rating: 5 stars
 Can’t fault the treatment and service I have received. Thankyou especially to Sarah who has been amazing
 
 Author: Jacqueline Marriott
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 Lovely experience nothing to much trouble and felt like I was really listened to by Sarah the nurse practitioner so Thankyou very much 😊 …
 
 Author: David hughes
-Date: 4 months ago
+Date: 5 months ago
 Rating: 5 stars
 1 attended the practise yesterday for minor surgery done by Doctor Chanda,who has been my Doctor for over twenty years. The practise nurse assisted her.The procedure was explained to me and as usual I was cared for and supported. Kind Regards Mrs Lynn Hughes
+
+Author: Wendy Evans
+Date: Edited 5 months ago
+Rating: 5 stars
+Cannot speak too highly of Archwood medical practice. Helpful and pleasant reception staff, when making appointments. Dr Chanda was empathic and informative. I felt I was listened to and that she understood my situation.
+
+Author: Kris Carter
+Date: 5 months ago
+Rating: 5 stars
+Attended Archwood Medical practice today for first time. I saw Dr Monica Chandra who I found extremely helpful. Lovely welcoming manner & listened carefully to my concerns. Examined me & gave me possible medical reasons & solutions. I am extremely pleased I have chosen this medical practice. Would thoroughly recommend.
+
+Author: Pat Ashton
+Date: Edited 5 months ago
+Rating: 5 stars
+Saw my lovely GP today who explained everything necessary clearly and precisely. All the Staff are extremely polite and very helpful
+
+Author: Kate (Kate)
+Date: 5 months ago
+Rating: 5 stars
+Can’t say enough good things about this practice. I can always get through on the phone to make an appointment. The clerical staff are always friendly and helpful, and every nurse or GP I’ve seen has been brilliant. I feel very fortunate to have found this practice after less good experiences elsewhere. Brilliant service.
+
+Author: Marion Gibson
+Date: 6 months ago
+Rating: 5 stars
+Excellent service received from Dr Chanda, she always makes me feel comfortable and offers good advice
+
+Author: Andrea Gilligan
+Date: 6 months ago
+Rating: 5 stars
+Andrea Gilligan6 months ago
+
+Author: Stuart Littler
+Date: 6 months ago
+Rating: 5 stars
+The receptionist at archwood managed to make me an appointment on the same day I phoned and I saw Sarah Harris who was very knowledgeable and gave me some good advice all in all well done to all the team at archwood Regards stuart
+
+Author: Peter Blakey
+Date: 6 months ago
+Rating: 5 stars
+Very prompt appointment and seen exactly on time, extremely helpful and understanding - Thank you!
+
+Author: Laura Greaves
+Date: 7 months ago
+Rating: 5 stars
+Dr Clarke, has been amazing with my health care, she has been thorough, kind, caring and excellent. She has explored all options without any fuss or stress. Thank you so much.
+
+Author: Christina Timothy
+Date: Edited 7 months ago
+Rating: 5 stars
+I had to ring today as I had an issue with my dad’s medication. It’s been an ongoing issue, with the chemist. Joeanne answered and I’m so glad she did. She went above and beyond, firstly understanding the issue, taking it seriously and helped me work through options of what I could do. Kind, very helpful and patient. A credit to the practice.
+
+Author: Debbie Griffiths
+Date: 7 months ago
+Rating: 5 stars
+My mum needed an urgent appointment at the surgery this week. We saw Dr Iqbal, she was brilliant, had a great bedside manner and was truly concerned. She had no hesitation in sending her straight to hospital! Thank you Dr Iqbal A+ service.
+
+Author: Yvonne Birkhead
+Date: 7 months ago
+Rating: 5 stars
+All at the surgery are so professional and accommodating, I can’t praise them enough. Attended for a small procedure with Dr Chanda and HCA Hatt and both were reassuring and supportive. Thank you ☺️
+
+Author: Michael Johnson
+Date: 8 months ago
+Rating: 5 stars
+Michael Johnson8 months ago
+
+Author: heather nisbet
+Date: 9 months ago
+Rating: 5 stars
+I attended an appointment at Archwood Medical Practice on the afternoon of June 9th, with Dr. Hill. The nature of the appointment meant l was a little anxious, but Dr. Hill was kind, reassuring, thorough and empathic, and l felt respected and informed of the situation and the next steps in my medical care. I felt so grateful for her physical and emotional care that l wanted to reach out to say thank you. In your profession, thank yous may be few and far between, but kindness made a huge impact on me and l wanted to acknowledge the effect it had on me, especially in the moment. Thank you, Dr. Hill.
+
+Author: Sean Loughlin
+Date: 9 months ago
+Rating: 5 stars
+Absolutely first class ,Dr chanda professional and attentive. Thank you
+
+Author: Holly Blackshaw
+Date: 10 months ago
+Rating: 5 stars
+Holly Blackshaw1 review10 months ago
+
+Author: Beryl Anderson
+Date: 10 months ago
+Rating: 5 stars
+Had to take my husband as his back pain was so severe.was given appointment same day.Doctor was so good. As we're the receptionist s. Treated with kindness and respect.
+
+Author: Berenice Chatterton
+Date: 10 months ago
+Rating: 5 stars
+Had minor surgery at Archwood GP peactice. Dr Parker and Nurse Hatt were very professional and caring and I felt in safe hands. All went very smoothly thank you so much.
+
+Author: Vineta Vaitilavica
+Date: 11 months ago
+Rating: 5 stars
+Vineta VaitilavicaLocal Guide · 56 reviews · 16 photos11 months ago
+
+Author: Kathy McGreevy
+Date: 11 months ago
+Rating: 5 stars
+I was seen today by Dr. Parker. Understanding and helpful. Excellent service at the doctors.
+
+Author: John Gordon
+Date: 11 months ago
+Rating: 5 stars
+Everything thoroughly and sensitively explained. Time taken and never felt rushed. Very satisfied. Thank you
+
+Author: Suzanne riley
+Date: a year ago
+Rating: 5 stars
+Fabulous aptmt, took time to listen, understood issues & provided a result.
+
+Author: Jenny Moon
+Date: a year ago
+Rating: 5 stars
+Had a really good experience today, Dr Parker is really approachable and was also really great with my son.
+
+Author: Bryan Gee
+Date: a year ago
+Rating: 5 stars
+Very happy with my appointment today Dr Parker was brilliant
+
+Author: Chris Gordon
+Date: Edited a year ago
+Rating: 5 stars
+Both Doctor Parker and his nurse were efficient, professional and reassuring throughout my minor surgery this morning. I cannot praise them highly enough. Thank-you.
+Practice response date: a year ago
+Practice response:
+Thank you for your kind comments about Dr Parker. I'm delighted you had such a positive experience and will be sure to share this with him. Janine, Practice Manager
+
+Author: Anthony Bradburn
+Date: a year ago
+Rating: 5 stars
+Anthony Bradburn7 reviewsa year ago
+
+Author: Katie Sinacola
+Date: a year ago
+Rating: 5 stars
+First time seeing Dr Parker today for my little girl, amazing g.p who put a terrified little girl at ease and had her laughing within 5 mins! So thorough and kind!
+
+Author: Olwen Davies
+Date: a year ago
+Rating: 5 stars
+Fantastic medical practice including reception, nurses and doctors.
+
+Author: Shannon Byrne
+Date: a year ago
+Rating: 5 stars
+Shannon ByrneLocal Guide · 2 reviews · 15 photosa year ago
+
+Author: John Hunter
+Date: a year ago
+Rating: 5 stars
+Absolutely fantastic service, nothing is a problem. All requests are dealt with quickly and promptly. All staff members are amazing, and we couldn't be more happier with the service Archwood provide. Kind regards Gloria Hunter.
+
+Author: Gill Charnock
+Date: a year ago
+Rating: 5 stars
+Had a blood pressure check at the pharmacy today at 2.00 pm. My blood pressure was high so the pharmacy contacted my G.P. At Archwood, Woodley. Archwood phoned me 5 minutes after the pharmacy had contacted them. They had an appointment for me at 5.00 TODAY. Dr Parker couldn’t have been nicer, very friendly and so positive. RESULT. Thank you.
+
+Author: Anne Goodall
+Date: a year ago
+Rating: 5 stars
+Dr Parker very reassuring and took time to discuss my problem.
+Practice response date: a year ago
+Practice response:
+Thank you for the 5 star review. I will ensure your feedback is shared with Dr Parker. Janine, Practice Manager
+
+Author: Hannah Walker
+Date: a year ago
+Rating: 5 stars
+I always feel listened to at the practise and never get brushed off. Dr Parker has always been amazing in the years I have seen him and is extremely thorough in diagnosing any issues, would definitely recommend Archwood
+Practice response date: a year ago
+Practice response:
+Thank you for the 5 star review. I'm delighted that you've had such a positive experience at the practice - thank you for sharing and I will ensure your feedback is shared with Dr Parker and the team Janine, Practice Manager
+
+Author: Kerry Hutchinson
+Date: a year ago
+Rating: 5 stars
+Excellent Advice for The Patient. Thank you.
+Practice response date: a year ago
+Practice response:
+Thank you for the 5 star review. I'm delighted that you've had such a positive experience at the practice Janine, Practice Manager
+
+Author: Michael Andrews
+Date: a year ago
+Rating: 5 stars
+A very good medical practice with a good team people no problems recommending this practice
+Practice response date: a year ago
+Practice response:
+Thank you for the 5 star review. I'm delighted that you've had such a positive experience at the practice - thank you for sharing and I will ensure your feedback is shared with the team Janine, Practice Manager
+
+Author: Sarah Bradbury
+Date: a year ago
+Rating: 5 stars
+Amazing staff, Particularly Dr Parker.
+Practice response date: a year ago
+Practice response:
+Thank you for your kind words. I will ensure your feedback is shared with Dr Parker and the team. Janine, Practice Manage
+
+Author: Rachel Butterworth
+Date: a year ago
+Rating: 5 stars
+Thank you for your 5* review. Janine, Practice Manager
+Practice response date: a year ago
+Practice response:
+Thank you for your 5* review. Janine, Practice Manager
+
+Author: Rosanna Ridgway
+Date: a year ago
+Rating: 5 stars
+Really helpful and friendly reception staff. Mr Parker is an excellent GP. Very happy with the service x
+Practice response date: a year ago
+Practice response:
+Thank you Rosanna for your kind words. I will ensure your feedback is shared with Dr Parker and the reception team. Janine, Practice Manager
+
+Author: Dave Carlisle
+Date: a year ago
+Rating: 5 stars
+Thank you for your 5* review. I will ensure your feedback is shared with the team Janine, Practice Manager
+Practice response date: a year ago
+Practice response:
+Thank you for your 5* review. I will ensure your feedback is shared with the team Janine, Practice Manager
+
+Author: Adam-Dalt PR
+Date: a year ago
+Rating: 5 stars
+Edited review as was resolved by Joanne and was extremely helpful . All Doctors here are good never had an issue with any doctors and they have always been willing to help.
+Practice response date: a year ago
+Practice response:
+Thank you for the 5 star review. I'm delighted that you've had such a positive experience at the practice - thank you for sharing and I will ensure your feedback is shared with Joanne and the team Janine, Practice Manager
+
+Author: deanlawson1971
+Date: a year ago
+Rating: 5 stars
+Fantastic very friendly very helpful. And caring thank you so much xxx never had a problem with the surgery to be honest thanks all so much for all your hard work
+Practice response date: a year ago
+Practice response:
+Many thanks for the 5⭐️ review and your very kind words Janine, Practice Manager
+
+Author: susan couch
+Date: a year ago
+Rating: 5 stars
+It’s becoming rare when you can see a Doctor who takes the time to talk, assess and research a patient’s ailments. This doctor does, this Medical Practise does. Reception are efficient, professional and always try their best to get an Appointment with the appropriate practitioner.
+Practice response date: a year ago
+Practice response:
+Hi Susan, Thank you for the 5 star review. I'm delighted that you've had such a positive experience at the practice - thank you for sharing. I will ensure your feedback is shared with the team Janine, Practice Manager
+
+Author: Anita Strong
+Date: a year ago
+Rating: 5 stars
+Thank you so much for the 5🌟review and Merry Christmas! Sara, Practice Manager …
+Practice response date: a year ago
+Practice response:
+Thank you so much for the 5🌟review and Merry Christmas! Sara, Practice Manager …
+
+Author: Christine Hulme
+Date: Edited a year ago
+Rating: 5 stars
+Very pleasant and listened. Plus follow up calls. Excellent thank you.
+Practice response date: a year ago
+Practice response:
+Thank you for the 5🌟 review! Your feedback is very much appreciated. Sara, Practice Manager …
+
+Author: Catherine Moss
+Date: a year ago
+Rating: 5 stars
+Excellent… caring and attentive to my needs. Good advice provided
+Practice response date: a year ago
+Practice response:
+Thank you for your 🌟🌟🌟🌟🌟 review and kind comments - and for taking the time to feedback. Sara, Practice Manager …
+
+Author: Klara Thornton
+Date: a year ago
+Rating: 5 stars
+I cannot praise Dr. Chanda at Archwood Medical highly enough. From the moment I met her, I felt truly heard and understood. She listened to me with kindness and patience, offering advice that I chose to follow—and it has genuinely changed my life. What sets Dr. Chanda apart is her remarkable dedication. She followed up with me weekly without me even asking, showing a level of care and compassion that is simply extraordinary. Dr. Chanda is an unbelievably caring woman and a credit to her profession. I feel so fortunate to have her as my doctor and would wholeheartedly recommend her to anyone in need of exceptional medical care.
+Practice response date: a year ago
+Practice response:
+Hi Klara, thank you so much for your wonderful endorsement of Dr Chanda and will pass on your lovely comments to her. I'm delighted you had such a positive experience at the practice. Sara, Practice Manager
+
+Author: Beth Cook
+Date: a year ago
+Rating: 5 stars
+I have been with Archwood Medical for a good lot of years now and found them really great. I usually always get an appointment in a morning if i ring up and have always have a positive experience with the doctors under Archwoods Practice. I rang this morning for an example for my 1 year old and got an appointment at 4pm however Dr Chanda has asked to see my daughter straight away as she didn't want her waiting all day when she was poorly. She listened to me and prescribed 2 different medications for my daughter to finally help her get better. From antenatal, to jabs, to emergency appointments they have been great.
+Practice response date: a year ago
+Practice response:
+Hi Beth, thank you for the 5 star review. I'm delighted that you've had such a positive experience at the practice - thank you for sharing. Sara, Practice Manager
+
+Author: Laura Forrow
+Date: a year ago
+Rating: 5 stars
+I cannot fault this practice. All the Gps treat you with the upmost respect, empathy and kindness. They listen to you and don't dismiss any of your concerns . Joaenne (receptionist) is a fantastic asset to this practice. She always greets you with a smile and a warm welcome. Nothing is ever too much for her and she listens to your enquiries and deals with them in a professional and timely manner. She goes above and beyond to ensure that you are happy, safe and feel listened too.
+Practice response date: a year ago
+Practice response:
+Hi Laura, thank you for taking the time to feedback on your experience at the practice. I'll ensure your comments are shared with the team. Sara, Practice Manager
+
+Author: Katie Shenton
+Date: a year ago
+Rating: 5 stars
+Dr chanda was so fast at getting my results and letting me know I really appreciate it. Plus she also gave me a prescription for the medication I was put on in hospital. The receptionist got me a appoint with in half a hour great service thank you
+Practice response date: a year ago
+Practice response:
+Hi Katie, Thank you for the 5 star review! I'm so pleased we got everything sorted quickly for you, and will share your comments with the team. Sara, Practice Manager
+
+Author: Faye
+Date: a year ago
+Rating: 5 stars
+Had a coil fit today with Dr Chander. I couldn't have asked for better care, Dr Chander talked all the way through the procedure and explained what she was doing. I had heard Dr Chander was the best and I'm glad I got a quick and easy appointment with her. Also Claire who assisted Dr Chander was also amazing. Please don't be put off when having a coil because this was painless and done in no time.
+Practice response date: a year ago
+Practice response:
+Dear Faye, thank you so much for sharing your positive experience at the practice. I will ensure Dr Chanda and Claire see your lovely comments. Sara, Practice Manager
+
+Author: Kevin Pilling
+Date: a year ago
+Rating: 5 stars
+All good, very helpful and very nice person.
+Practice response date: a year ago
+Practice response:
+Hi Mr Pilling, that’s great to hear. Many thanks for the 5⭐️ review! Sara, Practice Manager
+
+Author: Hibbins Family
+Date: a year ago
+Rating: 5 stars
+The receptionist was an ‘angel’ very upbeat & caring - as first point of contact, this quality is outstanding!!
+Practice response date: a year ago
+Practice response:
+Thank you for your 5* review!! I will ensure your feedback is shared with the team.
+
+Author: Lisa Sabine
+Date: a year ago
+Rating: 5 stars
+Best practice ever! If this practice is ever taking on new patients sign up! I've never had a problem getting an appointment or my prescription sorted always within 48 hours and even test results are reviewed and if urgent actioned v quickly.
+Practice response date: a year ago
+Practice response:
+Dear Lisa, thank you for your positive feedback and recommendation to new patients (who we are happy to accept!). I will ensure your comments are shared with the team. Sara, Practice Manager
+
+Author: Christopher Cousins
+Date: a year ago
+Rating: 5 stars
+The practice as a whole keeps an eye on your general health very efficiently. When something is flagged up by routine tests etc there is no delay in finding out the reason. There is also no long waiting period from phoning for an appointment to actually being seen.
+Practice response date: a year ago
+Practice response:
+Dear Mr Cousins, thank you for your positive feedback which I will share with the team. We work hard to ensure patients are able to book an appointment in a reasonable timescale and I'm delighted this is reflected in your experience. Sara, Practice Manager
+
+Author: Peter Murray
+Date: a year ago
+Rating: 5 stars
+Very informative and pleasant Doctor. Made it very relaxing
+Practice response date: a year ago
+Practice response:
+Dear Mr Murray, thank you for taking the time to feedback on your experience at your recent consultation. I will share your comments with the doctor. Sara, Practice Manager
+
+Author: Dany Hallsot
+Date: a year ago
+Rating: 5 stars
+Thank you for the 5* review!
+Practice response date: a year ago
+Practice response:
+Thank you for the 5* review!
+
+Author: Margaret Pickford
+Date: a year ago
+Rating: 5 stars
+I saw Dr Abdullah this morning and was given the most conscientious attention he was polite sensitive.and thorough .
+Practice response date: a year ago
+Practice response:
+Dear Mrs Pickford, thank you for your kind comments about your consultation with Dr Abdullah. I'm delighted you had such a positive experience and will be sure to share this with him. Sara, Practice Manager
+
+Author: Alex Francis
+Date: a year ago
+Rating: 5 stars
+Went to arch wood medical practice today and seen Dr Muhammad Abdullah he was really great with me, helped me a lot and would recommend him to anyone. Great guy thanks for today
+Practice response date: a year ago
+Practice response:
+Dear Alex, thank you for the 5 star review! I delighted you were happy with your consultation with Dr Abdullah and will feedback your positive comments. Sara, Practice Manager
+
+Author: Dan Beresford
+Date: a year ago
+Rating: 5 stars
+I have been a patient at Archwood for a few years now and being totally honest had mixed experiences. Today I saw Dr Abdullah and I can’t speak highly enough of him. He was incredibly thorough and explained absolutely everything so I understood. Dr Abdullah said that he would call this afternoon with some further information, which he duly did. I will be requesting all my future appointments are with him.
+Practice response date: a year ago
+Practice response:
+Dear Mr Beresford, thank you for your kind comments about your consultation with Dr Abdullah. I'm delighted you had such a positive experience and will be sure to share this with him. Sara, Practice Manager
+
+Author: Meef
+Date: a year ago
+Rating: 5 stars
+Thank you for the 5* review!
+Practice response date: a year ago
+Practice response:
+Thank you for the 5* review!
+
+Author: Martin Roberts
+Date: a year ago
+Rating: 5 stars
+Booked appointment fine. Arrived with self check-in & saw GP very quickly.
+Practice response date: a year ago
+Practice response:
+Dear Martin, great to hear your booking in experience was quick and easy.. Thanks for leaving feedback! Sara, Practice Manager
+
+Author: Margaret Cobb
+Date: a year ago
+Rating: 5 stars
+On time ! Didn’t feel rushed at all. Empathised with me about this ongoing problem. I felt I had an appropriate examination. I didn’t really like the way my polypharmacy was referred to and his aim to reduce it, as I feel all my meds are prescribed appropriately but was re assured when the doctor agreed all of my current meds are appropriate. Would definitely see this doctor again Thankyou
+Practice response date: a year ago
+Practice response:
+Dear Mrs Cobb, thank you for taking the time to tell us about your consultation at the practice. I'm please you had a a positive experience and will feedback your comments to the doctor. Sara, Practice Manager
+
+Author: Jon Burton
+Date: a year ago
+Rating: 5 stars
+Absolutely fantastic surgery, every member of staff I have ever spoken to has been so kind, considerate and efficient. Absolutely cannot fault Archwood and privileged to be under their care.
+Practice response date: a year ago
+Practice response:
+Dr Mr Burton, thank you so much for your 5* review. I will ensure your positive comments are shared with the team. Sara, Practice Manager
+
+Author: Judy Skinner
+Date: a year ago
+Rating: 5 stars
+Very caring and accommodating. Always help you, no matter what. Brilliant x
+Practice response date: a year ago
+Practice response:
+Dear Judy, thank you for your positive comments - much appreciated. Sara, Practice Manager
+
+Author: Eve Dugdale
+Date: a year ago
+Rating: 5 stars
+Excellent practice where the whole team care. I'm a carer for my dad - the toughest role I've ever performed. I often feel overwhelmed and out of my depth but with the support of both doctors and receptionists at Archwood my job is made so much easier. They act fast when help is needed, signpost us to other services and always help with medication queries swiftly. I'm so grateful.
+Practice response date: a year ago
+Practice response:
+Dear Eve, thank you so much for taking the time to feedback on your experience at Archwood. I'm delighted that you feel so supported by the practice and will ensure your comments are shared with the team. Sara, Practice Manager
+
+Author: russell hall
+Date: a year ago
+Rating: 5 stars
+Dr Chanda. The bar doctor I have ever seen so helpfull caring and explains everything simply to you. Also Dr Parker is excellent as well. Many thanks russell hall
+Practice response date: a year ago
+Practice response:
+Dear Russell, thank you for taking the time to feedback on your experience of our doctors, it's very much appreciated. Sara, Practice Manager
+
+Author: Pooja Sharma
+Date: a year ago
+Rating: 5 stars
+Best GP service
+Practice response date: a year ago
+Practice response:
+Thank you so much! You've made our Friday :) Sara, Practice Manager
+
+Author: Donna
+Date: 2 years ago
+Rating: 5 stars
+Very impressed with the service, always able to get an appointment and never have to wait long. Really helpful
+Practice response date: 2 years ago
+Practice response:
+Dear Donna, we are working really hard to ensure good appointment availability for patients, so it's lovely to get your positive feedback. Thank you for taking the time to share your thoughts. Sara, Practice Manager
+
+Author: Em
+Date: 2 years ago
+Rating: 5 stars
+The Archwood practice is pretty terrific overall - it's never painful getting an appointment, I can do some things online, and reception staff are friendly and helpful. I'm so grateful to have access to a menopause health advocate like Dr Clark, because her support and expertise have made a big difference to my quality of life. Menopause expertise can't be taken for granted in all GP surgeries unfortunately, so I feel very lucky and I really appreciate her care. I've also had great care from Dr Evans. I'd wholeheartedly recommend both doctors. Thank you to both for your hard work, it really makes a difference.
+Practice response date: 2 years ago
+Practice response:
+Hi Emma, thank you so much for your positive review! I will make sure your comments are fed back to the team and Dr Clark and Dr Evans in particular. Sara, Practice Manager
+
+Author: Graham Nuttall
+Date: 2 years ago
+Rating: 5 stars
+Dr Clark, was excellent informed and caring with an understanding and a methodical treatment plan with goals and aims. The care and plan was informed and encouraged joint decision. Excellent service!
+Practice response date: 2 years ago
+Practice response:
+Thank you for the positive feedback. I'm delighted you are pleased with the service you received and will forward your comments on to Dr Clark. Sara, Practice Manager
+
+Author: Muhammed Yaseen
+Date: 2 years ago
+Rating: 5 stars
+Thank you for your 5* review. We appreciate your feedback. Sara Mayer, Practice Manager
+Practice response date: 2 years ago
+Practice response:
+Thank you for your 5* review. We appreciate your feedback. Sara Mayer, Practice Manager
+
+Author: Katie Bancroft
+Date: 2 years ago
+Rating: 5 stars
+Today I had my smear test with Emma halliday at the practice, I have been putting this off for years because of how nervous I was last time I had this done , I am so glad I went today and got to meet Emma she put me completely at ease and was honestly such a lovely lady 😊 and now I feel absolutely fine about booking in for my smear next time due to such a positive experience with Emma 😊 so if you get to see this , thankyou soo much Emma your a wonderful human being 🩷
+Practice response date: 2 years ago
+Practice response:
+Thank you so much for writing this review - it's made Emma's day and I hope it will also inspire others who are unsure about having a smear to book their appointment. Sara, Practice Manager
+
+Author: rachel wood
+Date: 2 years ago
+Rating: 5 stars
+I have been a patient at Archwood for around a year and I have to say the interactions I have had with all staff have been positive. I can't fault them in anyway and anything I have needed help with has been solved, and to a good standard. So thank you Archwood Medical Practice, credit where it is due.
+Practice response date: 2 years ago
+Practice response:
+Dear Rachel, thank you for your for positive feedback. I appreciate you taking the time to share your experience of the practice and will feedback your comments to the team. Sara, Practice Manager
+
+Author: Carl Oliver
+Date: 2 years ago
+Rating: 1 star
+Really disappointing lately receptionists are useless , if they don't know they should ask someone who knows the answer, they wing it , sitting at the computers ignoring phone calls , ignoring people , need to attend customer services school. I could go on forever but nothing ever changes
+Practice response date: 2 years ago
+Practice response:
+I’m really sorry you’re were unhappy with your recent experience at the practice and understand that Janine, our Assistant Practice Manager, has contacted you to understand more about what happened so that we can address these issues. Please be assured that our telephone system provides us with detailed reporting including responsiveness to telephone calls and the option for callers to request a callback during busy periods, so no calls are ignored. Sara, Practice Manager
+
+Author: Steve Sharples
+Date: 2 years ago
+Rating: 1 star
+Reception staff are ignorant beyond belief , they sit there sideways looking at computer screens and ignore everyone who is actually present . Please teach them some manners about what they are actually there for .
+Practice response date: 2 years ago
+Practice response:
+I’m really sorry you’re unhappy with your experience at the practice. I would really appreciate talking to you to understand exactly what’s happened and when so that we can make improvements. Could I ask you to email me with a contact number so that I can give you a call tomorrow. gmicb-sto.archwoodsurgery@nhs.net Sara Mayer Practice Manager
+
+Author: Robert Hopwood
+Date: 3 years ago
+Rating: 5 stars
+I rang up at 08.00 and was seen by a medical professional at 09.40.A really excellent,caring and professional service. Thank you.Kind Regards, Rob.
+Practice response date: 3 years ago
+Practice response:
+Thank you for positive feedback. We’re delighted with your comments and appreciate you taking the time to share your experience.
+
+Author: Helen Tinsley
+Date: 3 years ago
+Rating: 5 stars
+Rang up at 8 appointment at 11. Blood tests at 2. Dr Raje was excellent. Face to face for reassurance is a must. Thank you to Archwood including the receptionist who was so helpful with the appointment.
+Practice response date: 3 years ago
+Practice response:
+Thank you for taking the time to feedback on your positive experience at the practice. Your comments will be forwarded to Dr Raje and the team.
+
+Author: Debbie Charlton
+Date: 3 years ago
+Rating: 5 stars
+This Medical Practice is absolutely excellent. I couldn't fault it in any way, especially Dr Raje. Always so thorough and shows so much compassion. During covid all the staff were still amazing as they still are now. I wish I could give them more than 5 stars.
+Practice response date: 3 years ago
+Practice response:
+Thank you so much for taking the time to let us know what you think. We're chuffed to bits!
+
+Author: Andrea Bruce
+Date: 3 years ago
+Rating: 5 stars
+Absolutely the best doctors in the Archwood medical practice 👌. Always very helpful I give them 5 stars 🌟 …
+Practice response date: 3 years ago
+Practice response:
+Thank you so much for taking the time to send your feedback. It's much appreciated - especially on a busy pre-bank holiday Friday!
+
+Author: amanda oakden
+Date: 4 years ago
+Rating: 5 stars
+Always polite, reassuring and helpful in my experience. Thank you.
+
+Author: Jay
+Date: Edited 4 years ago
+Rating: 1 star
+Really not the best. Some doctors are good, but one in particular speaks to you like you’re an idiot and not worth his time. If they actually answer the phone you might be able to book an appointment, but expect long wait times and rude staff. In the 20+ years I’ve been here I don’t think I’ve ever been seen at my appointment time. I strongly recommend allowing more time for appointments because waiting around for 30 mins isn’t fun.
+Practice response date: 4 years ago
+Practice response:
+I'm sorry you've been disappointed with the service you've received. Its always a shame when patients post complaints online as opposed to approaching the surgery directly. I would be happy to address the issues you raise if you could contact me at the surgery on 0161 983 5800 or STOCCG.ArchwoodSurgery@nhs.net Sara, Practice Manager
+
+Author: Andrea Scott
+Date: 4 years ago
+Rating: 5 stars
+E seven though I been s for several years. Dr Raji wasted no time in sending me for a scan . Sh Within 3 days I had my scan at Stepping Hill. I was diagnosed with womb cancer that was July. Since then I've had a total hysterectomy at Christies and now awaiting chemotherapy and radiotherapy. Only for Dr Raji things could have been a lot worse so as far as I'm concerned Archwood surgery should be prided for there service. Cant thank them enough.
+Practice response date: 4 years ago
+Practice response:
+We're very pleased we could help and thank you so much for taking the time to comment. We'll make sure Dr Raje sees it!
+
+Author: C P
+Date: 4 years ago
+Rating: 5 stars
+I can't believe some of these negative reviews. Compared with other GP practice's I have been to in the past Archwood is by far the best, by miles. Looking at the 'bad reviews' if you fancy switching to my previous GP's, ill be more than happy to suggest afew. Then you can compare. I for one feel fortunate to have such a good GP surgery. I have always found the behind the scene team, fantastic, helpful pleasent etc. Can't fault them. They have always been helpful when booking appointments, passing information to Doctor/Nurse. I have even had a member of the admin team ring me the day after I called booking an appointment that was just out of the diary range the day previous - you cannot beat that!. You always get reminders when 'this or that' is due i.e. Flu jab ( and probably the Covid Jab in future!) The Pharmacist does regular check ups to keep you on track and this is before you even get to the doctors! All the doctors have been excellent. I really cannot find fault with any of them. Even had a Dr sort an appointment out whilst I was sat in the room and they have even rang back late evening. Like I say reading the other reviews all I can say is that I must have had some 'right shockers' in the past!!! All, the Doctors are great but Dr Fitton probably wont thank me for saying this ( as everyone will be booking to see her) but she is a fantastic Doctor. Willing to listen, explores every avenue and as you expect caring, but thats saying more of her as a person than a Doctor . I could go on, but I think you get the picture!!! I feel lucky to have Archwood as my GP.
+
+Author: Tshirt Tie
+Date: 4 years ago
+Rating: 3 stars
+Tshirt TieLocal Guide · 182 reviews · 49 photos4 years ago
+
+Author: Billy Cousins
+Date: 4 years ago
+Rating: 5 stars
+Billy CousinsLocal Guide · 29 reviews · 229 photos4 years ago
+
+Author: Lynda Stokes
+Date: 5 years ago
+Rating: 1 star
+Cant believe the way this practice is being run .Receptionist tells you something which then turns out to be false information. Some one definitely needs staff training!
+Practice response date: 5 years ago
+Practice response:
+We're sorry you were disappointed with our service on this occasion. We're always keen to improve how we do things and welcome patients contacting us directly about issues/concerns so that we can investigate further. You can contact us on 0161 983 5800 or at STOCCG.archwoodsurgery@nhs.net
+
+Author: Paige Bailey
+Date: 5 years ago
+Rating: 1 star
+Absolutely awful practice, poor communication. I got a text message from a doctor to say a prescription had been sent to the pharmacy when I asked for a telephone appointment to speak to a doctor?! Firstly I had no idea what had been prescribed and secondly I didn't even get to speak to the doctor I won't mention his name but I am highly disappointed and alarmed at how this practice is run.
+Practice response date: 5 years ago
+Practice response:
+We're really sorry that you were disappointed with our service on this occasion. We'd like to learn more about the issue you raise. If you could contact us on 0161 983 5800 or at STOCCG.archwoodsurgery@nhs.net it would be greatly appreciated.
+
+Author: Daniel Heap
+Date: 5 years ago
+Rating: 5 stars
+Excellent friendly staff and Doctors. Never an issue getting an appointment
+Practice response date: 5 years ago
+Practice response:
+Thank you for taking the time to feedback on our service. The team have been working really hard in very challenging circumstances and really appreciate your positive comments.
+
+Author: toni wilkinson
+Date: 6 years ago
+Rating: 5 stars
+Efficient, professional, kind and friendly. Never had an issue with getting an appointment or advice.
+
+Author: Karen Sidibeh
+Date: 6 years ago
+Rating: 5 stars
+Karen Sidibeh3 reviews6 years ago
+
+Author: Yuri Gagarin
+Date: 7 years ago
+Rating: 1 star
+Condescending and snobby treat you like you're blagging them when you are really ill unlike 95% of woodley on the "sick". What a tragic place this is.
+
+Author: Rhianna Kemp
+Date: 9 years ago
+Rating: 5 stars
+Rhianna Kemp6 reviews9 years ago

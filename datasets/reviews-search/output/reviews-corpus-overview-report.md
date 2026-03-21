@@ -95,6 +95,23 @@ Examples:
 
 This is a major gap between the review corpus and the national survey. Reviews show a part of patient experience that the survey only reaches indirectly, if at all.
 
+### Digital access is now a clear corpus layer
+
+The refreshed digital work makes one more thing clear: the online front door is no longer a side note.
+
+The current digital pass finds `2,586` reviews, `6.4%` of the whole corpus, with a recognisable website, app, online-form, or named-platform signal. Most of that is still generic website/form/app language rather than product naming, but it is now big enough to rank practices and compare patterns.
+
+The more specific digital appointment pass finds `1,839` appointment-linked digital reviews across `291` practices:
+
+- `831` mainly positive
+- `902` mainly negative
+- `106` mixed
+
+That matters because the reviews are not only saying "digital exists". They are saying two very different things:
+
+- when it works, it means same-day access, quick callbacks, and an easier route in
+- when it fails, it means another blocked queue, another confusing handoff, or another reason patients feel shut out
+
 ## What Patients Praise
 
 The positive side of the corpus is just as clear, and it is useful because it shows what good care looks like in ordinary patient language.
@@ -183,6 +200,21 @@ Good reviews are often just as operational as bad ones. They say:
 
 So the corpus is useful for showing what patients want, not only what they hate.
 
+### Some reviews are written for other patients, not just the practice
+
+The refreshed activism/community pass adds another layer that does not show up well in cleaner survey work.
+
+`1,625` reviews, `4.0%` of the corpus, contain some form of public-warning, regulator-escalation, review-about-review, authority-positioning, or community-framing language.
+
+Most of these are not organised campaigning. They are lone reviewers trying to:
+
+- warn other patients away
+- tell people to de-register or complain
+- point to the review page as evidence that this is not an isolated problem
+- appeal to regulators, MPs, or complaint bodies
+
+That matters because some reviews are written as public signals, not just as private complaints made visible.
+
 ## Where Reviews Go Beyond The National Patient Survey
 
 The national GP patient survey does ask useful gateway questions. In the current survey set, that includes things like:
@@ -216,6 +248,12 @@ The survey separates access, support, appointment quality, and overall experienc
 
 The survey touches listening, time, and confidence. The reviews go further into misdiagnosis, delayed referrals, unsafe medication, hospital escalation, and near-miss language.
 
+### Reviews also show what practices say back
+
+The survey does not have a public-reply layer at all. The review corpus does.
+
+The refreshed responses pass found `16,756` public practice responses in the corpus, with a sharp gap between reply rates to praise and criticism. That is useful because it lets the corpus show not only what patients say, but how practices publicly choose to answer, deflect, apologise, or stay silent.
+
 ## What This Corpus Helps Us Represent
 
 If the point of using this corpus is to represent patient need more clearly than the survey usually can, the main lessons are now fairly plain.
@@ -242,14 +280,20 @@ Because nearly every practice has both high and low reviews, the real question i
 - where does it break
 - which failures keep repeating
 
+### Digital routes now need reading alongside phone and reception
+
+The newer corpus makes this much clearer than before. Access is no longer just a phone-and-reception story. For many patients it is now phone plus website plus app plus form plus callback logic, all joined together.
+
+That means the digital layer is no longer optional context. It is part of the patient route.
+
 ## Bottom Line
 
 Across the board, this bigger review corpus still says three main things.
 
 First, patient experience is sharply polarised. Many people leave very happy. Many others leave very angry. Very few sit in the middle.
 
-Second, access is the biggest theme, but not the only one. Staff attitude, weak follow-through, and clinical trust all keep returning in the review text.
+Second, access is the biggest theme, but not the only one. Staff attitude, weak follow-through, digital front-door experience, and clinical trust all keep returning in the review text.
 
-Third, the reviews show patient need in a form the survey usually cannot: direct, event-based, operational, and emotionally clear.
+Third, the reviews show patient need in a form the survey usually cannot: direct, event-based, operational, emotionally clear, and sometimes public-facing in the way patients warn each other or push for outside attention.
 
 That is what makes them useful. They are not tidy. They are full of sequence, blame, gratitude, confusion, detail, and sometimes real fear. But that is exactly why they show things that cleaner instruments smooth away.

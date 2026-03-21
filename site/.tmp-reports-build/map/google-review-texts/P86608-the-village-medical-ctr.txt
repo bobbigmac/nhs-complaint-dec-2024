@@ -3,20 +3,20 @@ Canonical code: P86608
 Postcode: OL15 8AQ
 Google Maps title: The Village Medical Centre
 Google rating: 4.5
-Google review count: 28
-Google Maps URL: https://www.google.com/maps/place/The+Village+Medical+Centre/@53.6432509,-2.0960375,17z/data=!4m8!3m7!1s0x487bbf39d8424b1d:0x598e5ab6f1025773!8m2!3d53.6432509!4d-2.0960375!9m1!1b1!16s%2Fg%2F1hc5n__mz?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 27
+Google Maps URL: https://www.google.com/maps/place/The+Village+Medical+Centre/@53.6432541,-2.0986178,17z/data=!4m8!3m7!1s0x487bbf39d8424b1d:0x598e5ab6f1025773!8m2!3d53.6432509!4d-2.0960375!9m1!1b1!16s%2Fg%2F1hc5n__mz?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.5
+Review collection mode: full_feed
+Review cards collected: 27
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86608-the-village-medical-ctr.json
 
-Recent visible reviews
-====================
-
-Author: Khazara Taqeer
-Date: a week ago
-Rating: 5 stars
-I have consistently received excellent care from this GP practice. The team is always professional, responsive, and particularly supportive whenever I have needed appointments for my toddler. Dr Hassan and Dr York are a great credit to the practice, demonstrating professionalism, compassion, and dedication. I would also like to commend the reception staff, who are always so helpful and efficient.
+Captured reviews
+================
 
 Author: Betty Boop
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 Have been a patient here for years. Such a shame that it is now so difficult to get an appointment. There is no continuity with regards to doctors and if you're lucky to get an appointment, you are essentially a stranger each time you go. You can't get through at 8am when the phone lines open. You are told that you can attend at 8am to make an appointment in person, but even then, due to the limited number of appointments available (lack of actual doctors) i have had times where I have attended at 8am and by the time I am seen, all appointments have gone. It seems a totally ridiculous way to run a doctor's surgery. The nurse practitioner is abrupt and rude and acts like the cost of a prescription comes out of her own pocket. When told that there were a couple of things that needed to be mentioned to her ( due to having had to wait a good few weeks to get an appointment) she responded by saying that she only had time to discuss one thing!!! Roisin the practice nurse is lovely and the most helpful member of staff at the surgery, and also seems to be the most overworked staff there too. The reception staff are generally as helpful as they can be but without actual doctors to see patients, the surgery would seem to be struggling.
 
@@ -34,6 +34,11 @@ Author: Gladys Mcmillan
 Date: 10 months ago
 Rating: 5 stars
 Gladys Mcmillan1 review10 months ago
+
+Author: EMEB AGRO FARM NIG LTD
+Date: a year ago
+Rating: 5 stars
+Beautiful
 
 Author: Glenda Smith
 Date: a year ago
@@ -55,7 +60,92 @@ Date: a year ago
 Rating: 5 stars
 Quick, efficient, clean, polite, prompt
 
+Author: carole roberts
+Date: a year ago
+Rating: 5 stars
+Brilliant 👍 …
+
 Author: jacqueline walker
 Date: 2 years ago
 Rating: 5 stars
 jacqueline walker5 reviews2 years ago
+
+Author: Anne Hodgson
+Date: 2 years ago
+Rating: 5 stars
+I had a bit of trouble finding the Centre, the signage isn't easy to see when you're driving but when I eventually got in the reception was extremely helpful and the treatment from the doctors and nurse I saw in the clinic I attended was first class and successful after previously having had difficult and unsuccessful treatment elsewhere.
+
+Author: Rujina Begum
+Date: 2 years ago
+Rating: 5 stars
+Rujina BegumLocal Guide · 8 reviews2 years ago
+
+Author: JUNE IRVING
+Date: 2 years ago
+Rating: 5 stars
+Smashing service, lovely staff.
+
+Author: Idayat Abiola Mahamud
+Date: 3 years ago
+Rating: 5 stars
+The environment and services was excellent
+
+Author: kitten incognito
+Date: 3 years ago
+Rating: 1 star
+I'm afraid this surgery has gone down hill. But I don't know if all GP services are affected, otherwise I would change practices. Always getting prescriptions wrong, even when they are ordered via paitent access. Such a shame as when dr datta was there, it was a great surgery.
+
+Author: K Maggie
+Date: 3 years ago
+Rating: 5 stars
+K MaggieLocal Guide · 59 reviews · 67 photos3 years ago
+
+Author: Maree Stephens
+Date: 4 years ago
+Rating: 5 stars
+Absolutely delighted we moved to this surgery. Fantastic service, they actually answer the phone and are so friendly and helpful. Honestly cannot think of anything negative to say about the practice. A rare gem.
+
+Author: IMy85 85
+Date: 4 years ago
+Rating: 5 stars
+IMy85 85Local Guide · 2 reviews4 years ago
+
+Author: John Walton
+Date: 4 years ago
+Rating: 5 stars
+John Walton11 reviews4 years ago
+
+Author: Trevor Shaw
+Date: 5 years ago
+Rating: 5 stars
+Excellent. Had a telephone conversation with Dr Handford went to the surgery and he referred me to the Infirmary first class service.
+
+Author: stephleemo
+Date: 6 years ago
+Rating: 4 stars
+The staff are generally lovely. I’ve never had a problem with getting an appointment and the doctors have always been great. The only issue I have here is the practice nurse Rachel. I find her very confrontational and extremely rude.
+
+Author: John Harris Abraham
+Date: 6 years ago
+Rating: 5 stars
+Excellent service, waiting times no issues, especially Dr Z Alam , excellent GP
+
+Author: Lauren Taylor
+Date: 7 years ago
+Rating: 5 stars
+Reception staff and Dr Awan are brilliant.
+
+Author: andrea scott
+Date: 9 years ago
+Rating: 5 stars
+Excellent staff very patient
+
+Author: colin iddenden
+Date: 9 years ago
+Rating: 5 stars
+colin iddenden1 review9 years ago
+
+Author: Olivia Wilkinson
+Date: 10 years ago
+Rating: 5 stars
+Olivia Wilkinson10 years ago

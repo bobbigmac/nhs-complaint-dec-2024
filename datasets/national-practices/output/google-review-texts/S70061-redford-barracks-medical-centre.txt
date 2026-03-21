@@ -1,0 +1,31 @@
+Practice: REDFORD BARRACKS MEDICAL CENTRE
+Canonical code: S70061
+Postcode: EH13 0PP
+Google Maps title: Redford Barracks
+Google rating: 4.7
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Redford+Barracks/@55.9125803,-3.2476382,17z/data=!4m8!3m7!1s0x4887c75c2e125f61:0xc4207540a3114002!8m2!3d55.9125773!4d-3.2450579!9m1!1b1!16s%2Fg%2F11l1yy2cq9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S70061-redford-barracks-medical-centre.json
+
+Captured reviews
+================
+
+Author: Ian Cooper
+Date: a week ago
+Rating: 5 stars
+Very Historic Barracks
+
+Author: Heather Lawrie
+Date: 2 months ago
+Rating: 4 stars
+Heather LawrieLocal Guide · 61 reviews · 39 photos2 months ago
+
+Author: Jack Sherman
+Date: 7 months ago
+Rating: 5 stars
+Jack ShermanLocal Guide · 16 reviews · 1 photo7 months ago

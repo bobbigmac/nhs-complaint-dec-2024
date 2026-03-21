@@ -194,7 +194,6 @@ Three things stand out more clearly now:
    In the review text, access often includes whether the callback, referral, result, or prescription actually happens.
 
 3. Recent reviews keep showing the same pressure points.
-   That makes it harder to wave the problem away as mostly old complaints.
 
 ## Bottom Line
 

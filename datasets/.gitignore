@@ -1,3 +1,5 @@
 .venv-google-reviews
 .tooling
 __pycache__
+reviews_index.sqlite
+.tmp-reports-build

@@ -16,7 +16,7 @@ All examples in this report come from GTD-managed practice reviews only.
 
 ## The GTD Slice
 
-The GTD-managed review set in this index contains `830` reviews across `13` practices:
+The GTD-managed review set in this rebuilt index still contains `830` reviews across `13` practices:
 
 - `Ashton Gp Service`
 - `Charlestown MD`
@@ -42,7 +42,7 @@ The overall rating shape is harsh:
 
 That means `627` reviews, `75.5%`, are `1` or `2` star.
 
-This is not a balanced-looking slice. It is a strongly complaint-heavy one.
+This is not a balanced-looking slice. It is a strongly complaint-heavy one, sitting inside the rebuilt `40,506`-review corpus but staying tightly focused on GTD-managed practices only.
 
 ## Headline
 
@@ -57,7 +57,7 @@ Access dominates the GTD review set, but it does not stop at access. The complai
 - being sent to walk-in centres, hospitals, or `A&E`
 - very weak public responses when patients complain
 
-At the same time, the GTD slice is not completely flat. There are a few clearer positive pockets, especially in `City Health Centre`, `The Smithy Surgery`, and parts of `Mossley Medical Practice`. There are also some positive reviews in more complaint-heavy practices where patients praise a specific doctor, nurse, or receptionist.
+The heaviest public complaint load falls on `New Bank Health`, `Guide Bridge Medical Practice`, `Charlestown MD`, `Gordon Street Medical Centre`, `Simpson Medical Practice`, and `Droylsden Medical Practice`, but the slice is not completely flat. There are a few clearer positive pockets, especially in `City Health Centre`, `The Smithy Surgery`, and parts of `Mossley Medical Practice`. There are also some positive reviews in more complaint-heavy practices where patients praise a specific doctor, nurse, or receptionist.
 
 So the picture is not "every GTD practice is identical". It is more that the negative weight is very strong, and it falls on a familiar set of problems.
 
@@ -189,6 +189,8 @@ That means the GTD digital story is mostly not about branded platforms. Patients
 - the online form
 
 This matters because the lived experience is not "I dislike vendor X". It is "the only route left to me is a web route that does not work well enough."
+
+The GTD-specific digital ranking also lines up with that reading. In the wider digital appointment pass, `Guide Bridge Medical Practice`, `Hattersley Group Practice`, `New Bank Health`, `Droylsden Medical Practice`, and `Simpson Medical Practice` all sit on the weaker side of the digital-access table rather than the stronger side.
 
 Examples:
 

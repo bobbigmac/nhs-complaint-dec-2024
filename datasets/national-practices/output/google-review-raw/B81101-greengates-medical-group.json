@@ -1,0 +1,26 @@
+{
+  "practice_name": "GREENGATES MEDICAL GROUP",
+  "canonical_code": "B81101",
+  "postcode": "HU17 0HB",
+  "query_used": "GREENGATES MEDICAL GROUP HU17 0HB",
+  "google_maps_title": "Dr D Billings - Greengates Medical Group",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+D+Billings+-+Greengates+Medical+Group/@53.8124584,-0.4633784,13z/data=!4m12!1m2!2m1!1sGREENGATES+MEDICAL+GROUP+HU17+0HB!3m8!1s0x4878c76750999bf9:0x5ed6a351633c2a37!8m2!3d53.8452058!4d-0.417479!9m1!1b1!15sCiFHUkVFTkdBVEVTIE1FRElDQUwgR1JPVVAgSFUxNyAwSEJaIyIhZ3JlZW5nYXRlcyBtZWRpY2FsIGdyb3VwIGh1MTcgMGhikgEGZG9jdG9ymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU14ZUUxUVJHNW5SUkFC4AEA-gEECAAQHw!16s%2Fg%2F11j1srn5xy?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 3,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774061730277,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4878c76750999bf9%3A0x5ed6a351633c2a37!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sRQK-abntE8qBhbIPgq3pmQY!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUMxeE1QRG5nRRAB\",[\"0x0:0x5ed6a351633c2a37\",null,1703290519401964,1703290519401964,[null,null,[\"https://www.google.com/maps/contrib/116756554543582077045/reviews?hl\\u003den\"],null,null,[\"Nic Robinson\",\"https://lh3.googleusercontent.com/a-/ALV-UjXQydEqv5jUnAICzxqQii8164Zs53IQiJRWcy8UA46niDNs4IPq\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/116756554543582077045?hl\\u003den\"],\"116756554543582077045\",null,127,18,null,[1,6,1],24,[\"Local Guide · 127 reviews\",null,null,null,null,[null,\"0ahUKEwiO3uD5_q-TAxXQEmMBHazDGFwQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[4],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Friendly, helpful local surgery\",null,[0,31]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxeE1QRG5nRRAB!2m1!1s0x0:0x5ed6a351633c2a37!3m1!1s2@1:CIHM0ogKEICAgIC1xMPDngE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUMxeE1QRG5nRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUMxeE1QRG5nRRItChZDSUhNMG9nS0VJQ0FnSUMxeE1QRFhnEhNDZ3dJbDgyWXJBWVE0UGZWdndFGi4KF0NJSE0wb2dLRUlDQWdJQzF4TVBEM2dFEhNDZ3dJbDgyWXJBWVE0UGZWdndFIhIJAAAAAAAAAAARNyo8Y1Gj1l4qE0Nnd0lsODJZckFZUTRQZlZ2d0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiO3uD5_q-TAxXQEmMBHazDGFwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiO3uD5_q-TAxXQEmMBHazDGFwQ0pMFCAIoAA\"]]],null,null,null,[0]]",
+      "error": ""
+    }
+  ]
+}

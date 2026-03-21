@@ -4,14 +4,19 @@ Postcode: OL4 1BN
 Google Maps title: Greenbank Medical Practice
 Google rating: 1.8
 Google review count: 104
-Google Maps URL: https://www.google.com/maps/place/Greenbank+Medical+Practice/@53.5383384,-2.095849,17z/data=!3m1!5s0x487bb78f18e117a5:0xc1cc4ab77d4c4e95!4m8!3m7!1s0x487bb78f105aecef:0x60ee655aa869d99b!8m2!3d53.5383384!4d-2.095849!9m1!1b1!16s%2Fg%2F1vfn666g?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Greenbank+Medical+Practice/@53.5383416,-2.0984293,17z/data=!3m1!5s0x487bb78f18e117a5:0xc1cc4ab77d4c4e95!4m8!3m7!1s0x487bb78f105aecef:0x60ee655aa869d99b!8m2!3d53.5383384!4d-2.095849!9m1!1b1!16s%2Fg%2F1vfn666g?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 104
+Owner replies collected: 0
+Raw review responses captured: 10
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85021-greenbank-medical-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Farahnur Mahmood
-Date: 2 weeks ago
+Date: a month ago
 Rating: 5 stars
 I just wanted to shout out the physio team at greenbank - they are absolutely amazing and listened to my mother’s problems! Thanks to them my mother was referred urgently and is receiving the care she needs ! I also want to thank Donna she is always so kind and a delight to talk to!
 
@@ -25,37 +30,507 @@ Date: 3 months ago
 Rating: 4 stars
 Having recently had a medical issue whilst abroad I was advised to contact my Medical Practice at home. I have been a patient at Greenbank since the 1960s fortunately I have not had to attend on a regular basis however I was pleased to be given a prompt appointment and saw a doctor who was most pleasant and professional and was able to fully interpret the advice I had received whilst abroad. She arranged for me to have an ECG which was done within a week at Greenbank by an equally pleasant and professional person. The results of the ECG were conveyed to me later that day by the the doctor who saw me initiallly and she organised for me to see a specialist at Oldham Hospital within days. I remember that a few years ago I read in the local paper a review of the Greenbank Practice which was rather poor, however after contacting Greenbank I was given the opportunity, a few weeks later, to meet with the leader of the group who had produced that report which illustrated how easy it is to criticise particularly over petty issues. The second follow up report a few months later recognised the true value of the Greenbank practice and the practice was marked up as Good. I have also had recent visits to see the physio at Greenbank with my slight hip problem and again I received prompt and professional help. My golf is just as bad however my hip is on the mend.
 
-Author: FR
-Date: Edited 5 months ago
+Author: A Begum
+Date: 6 months ago
 Rating: 1 star
-Edit: #2 - I left the practice, so they found my brothers family name and cut their name off the list - including Kids - This goes beyond incompetence, vindictive and negligent, Brother found out when they needed an urgent appointment - Receptionist made up a lie when confronted. Place should be shut. ---- Impossible to book an appointment. Phone lines "open at 8" but in reality the phone lines are kept off until 9 and show as 'line busy' and cuts off, doesn't put you on waiting, but like clockwork everyday at 9 it starts working again and puts you in waiting. Directed to the website and that doesn't even exist. Edit: website issue is fixed
+Dr Farid is absolutely disgusting. Abrupt, rude, condescending and arrogant. Has no knowledge of health care matters or symptoms, and 0 manners. Unacceptable how she is allowed to practice here. I’m sure her ‘qualifications’ are probably made up from somewhere abroad. Reading the reviews I am not the only one who has complained about her. Also, not sure why the receptionist here act like they are doctors. They are incompetent and rude. They need training urgently. Horrific gp practice. We complained before and were advised the receptionists have been trained again.. nonsense. No change at all.
+
+Author: Sam (SS1992)
+Date: Edited 6 months ago
+Rating: 1 star
+May 27 - Dr Farid is awful, she doesn't do anything she just essentially a diary planner making new appointments. You report issues and she does nothing and is rude, and comes across as lazy and just wanting to end an appointment. Members of my family are seriously ill and this doctor does nothing, everytime we leave we feels worse and mentally we feels let down and uncertain, she does nothing just blags her way through an appointment and then fobs you off for another few months. We are looking to complain formally to the NHS. If you have an alternative then go there. September 10th update - after months of this Dr doing nothing and ignoring my mother, she saw a new doctor (Dr Hussain who is very good) and immediately received an urgent suspected cancer referral. This practice should be closed down and Dr Farid fired immediately.
+
+Author: Micheala Cutter
+Date: 10 months ago
+Rating: 1 star
+Absolutely disgusting! Arrived at 8am, made an appointment for my mum who needed an appointment ASAP, I then tried to make my daughter an appointment who is 1 year old and was refused! Only one appointment is able to be given. its an absolute joke. Staff rude and very unhelpful not to add child under 5 are meant to have an appointment the same day!
+
+Author: Big Shrimps
+Date: 11 months ago
+Rating: 1 star
+Really rude staff, constantly get your medication wrong and if you get Rita you have no chance of even getting your prescription she just says I will order that for you and then a couple of days later you are chasing up what's happened to your prescription. You are not important to this surgery they make you feel like you're a nuisance for asking for appointments or medication. This surgery causes you a lot of stress when you need to be calm. Avoid them if you value your health.
+
+Author: 2020optix
+Date: a year ago
+Rating: 1 star
+They deserve negative 5 stars. The lines are permanently engaged. You can’t book an appointment unless you ring at 8 am. But lines are engaged till 10 am. By then miraculously all appointments are gone. So decided to go to practice. Unbeknown to them I was ringing them while in the practice. All staffs are busy gossiping whilst the phone is engaged. There was not a single patient waiting. When I questioned regarding their unethical practice the staffs became threatening. Only regret I didn’t record them to put them on YouTube. This practice needs closing down and all GPs should have their licence revoked.
 
 Author: Alliyah Cassinelli
 Date: 5 months ago
 Rating: 1 star
 Absolutely disgusting attitude from receptionist who think they’re doctors. And doctors with disgusting attitudes who do absolutely nothing about your health but shove you on codeine to deal with everything
 
-Author: Sam (SS1992)
-Date: Edited 5 months ago
+Author: J Burns
+Date: a year ago
 Rating: 1 star
-May 27 - Dr Farid is awful, she doesn't do anything she just essentially a diary planner making new appointments. You report issues and she does nothing and is rude, and comes across as lazy and just wanting to end an appointment. Members of my family are seriously ill and this doctor does nothing, everytime we leave we feels worse and mentally we feels let down and uncertain, she does nothing just blags her way through an appointment and then fobs you off for another few months. We are looking to complain formally to the NHS. If you have an alternative then go there. September 10th update - after months of this Dr doing nothing and ignoring my mother, she saw a new doctor (Dr Hussain who is very good) and immediately received an urgent suspected cancer referral. This practice should be closed down and Dr Farid fired immediately.
+*Unprofessional, Discriminatory, and Negligent Conduct at Greenbank Medical Practice I am writing to express my deep disappointment and concern regarding the service I received from Greenbank Medical Practice, which has consistently failed to meet basic standards of care and respect. On 13/08/2024, after experiencing severe chest pain and a persistent cough, I consulted with an out-of-hours doctor who advised that an urgent referral be sent to my GP practice. However, upon following up, the receptionist, Tia, informed me that the referral would not be actioned, claiming it was sent incorrectly—a statement I contest. This refusal to address an urgent referral is causing undue distress and poses a potential risk to my health. Furthermore, on a separate occasion, after a consultation with a 111 clinician, I was scheduled for a telephone appointment with my GP due to my work hours (9 AM to 6 PM). The reception staff refused to book the telephone appointment and insisted on a face-to-face visit, despite my clear explanation of the difficulty in attending in person. The receptionist was dismissive, interrupted me repeatedly, and even threatened to end the call. This interaction made me feel racially discriminated against, as this pattern of dismissive treatment has occurred in the past. Subsequently, I received another call to confirm the face-to-face appointment, which I had not agreed to. When I expressed my concerns about discrimination, the receptionist spoke aggressively and hung up on me when I inquired about my right to a telephone appointment. The NHS Constitution ensures patients the right to care that meets their needs and to be treated with respect and dignity. The practice’s actions infringe on these rights and fail to align with the General Medical Council’s guidelines on prompt action for patient safety. I urge the practice to review these incidents seriously and implement measures to prevent such issues in the future. All patients deserve to be treated with respect, understanding, and professionalism, and I hope my feedback will prompt necessary improvements in the service.
 
-Author: A Begum
-Date: 6 months ago
+Author: Faz
+Date: a year ago
 Rating: 1 star
-Dr Farid is absolutely disgusting. Abrupt, rude, condescending and arrogant. Has no knowledge of health care matters or symptoms, and 0 manners. Unacceptable how she is allowed to practice here. I’m sure her ‘qualifications’ are probably made up from somewhere abroad. Reading the reviews I am not the only one who has complained about her. Also, not sure why the receptionist here act like they are doctors. They are incompetent and rude. They need training urgently. Horrific gp practice. We complained before and were advised the receptionists have been trained again.. nonsense. No change at all.
+Really disappointed been here over 10 years! Horrible doctors! Cannot get appointment! You have to que up in the morning outside to get appointment. Just about get that then the doctors are so unprofessional, so rude, they really don't care! Doctors here are just in a rush to get you out of the room, how they are even qualified to be in this profession is beyond me! avoid! Avoid! Avoid! I'm on a hunt for a new doctors!
+
+Author: Kathryn Cooke
+Date: a year ago
+Rating: 1 star
+If I could give zero stars I would Impossible to get an appointment even if you ring as soon as they open, line just rings out for ages or you get cut off and if you are lucky enough to get through it’s always the same response telling you to go to A&E if you’re that bad. Receptionists are rude and liars. Put in a repeat prescription request for blood thinners. The next day I was left a voicemail from my doctor telling me to make an appointment to discuss the dosage. I contacted the surgery to be told “No doctors are in yet so you haven’t received a message” I told them multiple times I had been left a voicemail by my doctor and they said the same again. I sent an email with the voicemail attached and they gave the excuse that they couldn’t access it. Then received an email telling me I should find another practice closer to home even though they were fine to have me as a patient when I registered in 2019. I have now received an email saying “our records have been updated to reflect that you are no longer required to act as a Registered Online Service User for my own patient access. Complete and utter joke!
+
+Author: Carla Cunningham
+Date: a year ago
+Rating: 1 star
+New patient here, make sure you ask reception exactly what you need when you are being set up, I was told I only needed a passport so made my way down, rang them the next day to book an appointment and they still hadn't set my account up, then rather than telling me on the phone they had made a mistake and forgotten to get me to fill out a registration form they range me an hour later to tell me with no apology for their incompetence. May as well have continued using online doctors, roll on the days when we don't have to rely on non diligent people to do their jobs correctly. Read the existing reviews after posting this and have decided to register at Hopwood instead.
 
 Author: D Mod
 Date: 6 months ago
 Rating: 1 star
 I was in the doctors yesterday took me two days for appointment staff are very rude they need training up how to speak to people and rember there not the doctors.all.so.there taking more people on they can't cope with the people they have on there books if.i was you looking for a new doctor I'd give green bank a miss 1 out of ten the doctors can only deal.with one illness at a time avoid this surgery
 
+Author: imamah nadeem
+Date: 2 years ago
+Rating: 1 star
+I wish I can give you zero star. At morning 8 O clock Always the number does not go through. It says line bus it because they put the receiver on the side so they can't get any calls. After 8 I have tried and everything gone OK. This is 3rd time theses all things happening with me. My 1 years old has chest congestion she could breathe properly and every morning I am trying to get appointment with GP and I am failed.
+
+Author: FR
+Date: Edited 5 months ago
+Rating: 1 star
+Edit: #2 - I left the practice, so they found my brothers family name and cut their name off the list - including Kids - This goes beyond incompetence, vindictive and negligent, Brother found out when they needed an urgent appointment - Receptionist made up a lie when confronted. Place should be shut. ---- Impossible to book an appointment. Phone lines "open at 8" but in reality the phone lines are kept off until 9 and show as 'line busy' and cuts off, doesn't put you on waiting, but like clockwork everyday at 9 it starts working again and puts you in waiting. Directed to the website and that doesn't even exist. Edit: website issue is fixed
+
+Author: Lesa Riordan
+Date: 2 years ago
+Rating: 1 star
+Not a happy bunny. The appointment system is useless. Having to wait till 8am to phone up only to be in a queue then told no appointments left. 4 months later when I finally get in I’m told I’ve cancer. Did online prescriptions for morphine only to be rejected. Left in pain and almost going cold turkey if it wasn’t for the morphine tablets I have. Absolutely ridiculous. Drs need to look at med history!!!
+
+Author: Anii Khan
+Date: 4 years ago
+Rating: 1 star
+Receptionists are so rude, you'd think they don't get paid and are working for free - absolute joke. I have been requesting my prescriptions over the phone since covid as they are trying to limit appointments which is fine. Rang today and told I had to send a letter, the rules have changed in just a month it seems. No customer service skills at all, it's like they're on a commission for being as rude as possible.
+
+Author: David Smith
+Date: 3 years ago
+Rating: 1 star
+Better of going to A&E or dropping dead reception staff are useless, sending out texts for appointments then when you turn up there's no record of it. Practice Manager who doesn't deal with complaints and the person who does is never in. Also no provisions for autistic people for making appointments other than the phone, can't make appointments when you're there you have to phone the following morning at 08:00 if you can get through.
+
+Author: Steal Phantom
+Date: Edited 2 years ago
+Rating: 1 star
+Humanity does not exist in this surgery, The receptionists are extremely rude, all the best DRS have left the surgery, all new DRs don't have a clue what they dealing with. Their new over the call appointments don't have a formal time you …
+
+Author: Steal Phantom
+Date: Edited 2 years ago
+Rating: 1 star
+Humanity does not exist in this surgery, The receptionists are extremely rude, all the best DRS have left the surgery, all new DRs don't have a clue what they dealing with. Their new over the call appointments don't have a formal time you need to hold your phone in your hand all day to wait for the Dr to call you. No matter how urgent your matter is they simply do not care. I do not understand why nothing is being done look at all the bad comments on here which proves my point. Edit: Spoken to the receptionist managers numerous times they do not take no action at all. The new young receptionists are actually respectful but the old lady's actually sarcastically taunts you. They think they know more then the DRs and give you advise when they are just appointment givers nothing else! They have the nerve to fight you back and make disrespectful comments regarding your personal problems. I request people to record their calls when calling these unbelievable rude people! They have no remorse we don't call here for pleasure we call here because our loved ones are sick and need medical attention. On that note I would like to thank the 2-3 good receptionists that work here you people are the reason why the surgery is running if you ever leave then it will be over.
+
+Author: F Saeed
+Date: a year ago
+Rating: 1 star
+Poor service, very rude behaviour of the receptionist and surgery staff mostly...liars, not doing their job properly; and rude lady receptionist lying about the appointments are fully booked at 8am, someone have to take action against them and report to the Medical bodies and revoke their Medical practitioner licences and permanently shut down this GreenBank Medical Practice!!!!
+
+Author: Aysha Somad
+Date: 3 years ago
+Rating: 1 star
+Very poor service. Reception staff unhelpful and apathetic, better suited to working in a call centre in my opinion. You ring up and suddenly reception staff seem to also have a medical degree, know how severe your illness is with the 30s they’ve spoken to you and can fob you off at the first round of questioning. How is it that every nhs services is up and running since covid but GPs are still hiding behind telephone appointments disgraceful. 2 instances I’ve had to go a&e because I’ve been violently sick but I’ve been fobbed off waiting for a telephone appointment during the day. The GPs are the reason so many people are in a&e.
+
+Author: julie watkinson
+Date: 4 years ago
+Rating: 1 star
+There are two receptionists here. One is very professional, the other is just plain rude and her attitude is terrible. The doctors, one in particular, are even worse. Needed to speak to someone regarding some pains I was suffering in my legs, couldn't get an appointment, despite ringing at 8.00am as suggested (didn't get to speak to anyone until 9.40am). No appointments available, tried to book an appointment for the day after but told to ring back the next day and so the story goes on. Eventually rang 111 and they contacted my doctor on my behalf. A doctor eventually rang me and basically told me I had no right to ask 111 representative to call them (which I didn't do). The doctor then spent my alloted three or four minutes just talking over everything I said. My advise is get another doctor.
+
+Author: joanne brierley
+Date: 2 years ago
+Rating: 1 star
+I wish I could give no stars but unfortunately I can’t. Today I ring them for test results been on the phone since 12 and still no joy. This is absolutely disgusting , disgraceful and completely unacceptable. Really not happy
+
+Author: Linda Solan
+Date: 10 months ago
+Rating: 1 star
+Tried to get an appointment for three months and three weeks but no one answered the phone and when they did no appointments left just got out of hospital yesterday when I found out I've got aggressive breast cancer thanks green bank receptionists
+
+Author: Elizabeth Campbell
+Date: 2 years ago
+Rating: 1 star
+You can't get anyone to answer the telephone I had 11 calls in front of me I held on for 4 hours 47 minutes and still had 1 call in front of me when my cat cut me off. I ordered my prescription by telephone a week later still not got my tablets sent to the chemist. I am 66 years old with high blood pressure a problem with cholesterol I had a nervous breakdown my doctor retired over 5 years ago I was given a new doctor and haven't met them yet. My old doctor saw me every 3 months to keep a check on me this new one not seen them in almost 6 years
+
+Author: Susan Quiala
+Date: 5 years ago
+Rating: 1 star
+Just called to arrange phone appointment. Felt dismissed and as if I was an inconvenience. You can't request a telephone appointment from a prefared doctor, you get what you're given or nothing, it would seem? How dare I expect to be listened to! No wonder illnesses are being missed and people aren't being diagnosed with other life threatening diseases appart from covid. Some may find this approach all too much and choose not to bother. Sad and scary.
+
+Author: holly k
+Date: 3 years ago
+Rating: 1 star
+Took me off their records when I went to uni, never told me until I damaged my back and tried to book myself in. Turns out I was without a GP for two years without knowing. Eventually managed to get rebooked in with them and they have been nothing but rude and useless I needed evidence of a medical condition for uni and after months of telling them all I needed was a doctors signature I was finally able to get one only issue is I had finished uni. Avoid avoid avoid.
+
+Author: Zain Ahmed
+Date: 9 months ago
+Rating: 1 star
+Don’t sign up, really shih practice ethically. GP will charge you when you need a referral letter and medical info for your private insurance.
+
+Author: Nathan McGarry
+Date: 2 years ago
+Rating: 1 star
+Very rude staff that seem to diagnose you within the first 30 seconds of ringing. My partner has had a problem since September and has never seen the same doctor twice, they just do the same thing as the last one.
+
+Author: A Chowdhury
+Date: 4 years ago
+Rating: 1 star
+One of third class surgery in UK where you never get appointment you never get right treatment for illness you never receive right results for blood or urine so it’s in United Kingdom not Russia… and it’s in Oldham. Doctors also not care patients at all. System of surgery like 1970 what a shame…… I am sure this kind of feedback never help this surgery to improve patients satisfaction. This feedback from last 3 years experience.
+
 Author: Kamal Ahmed
-Date: 7 months ago
+Date: 8 months ago
 Rating: 1 star
 One of the worst practices I have seen never opens on time impossible to make appointments and some reception staff are just rude
 
-Author: Zain Ahmed
-Date: 8 months ago
+Author: Somaya Ahmed
+Date: 3 years ago
 Rating: 1 star
-Don’t sign up, really shih practice ethically. GP will charge you when you need a referral letter and medical info for your private insurance.
+This gp has such a poor service and I wouldn't recommend it. I'm trying for the past 1 month to book an appointment and always the line is busy or they don't have appointment avaible. They don't have patients in the waiting room but they keep saying that they have booked all the week. Otherwise,they pass you like a tennis ball they told me to call 111 because they don't have appointments avaible and then 111 told me to call the gp again when they don't want to even pick the call.
+
+Author: Jasmin Begum
+Date: Edited a year ago
+Rating: 1 star
+Worst surgery i have ever joined with throughout my 32 year of my life this has to be one the worst surgeries..i was joined with chadderton practice when i use to live in chadderton very organised if u cant appointment on the day they try and do an advance appointment. Id be dying but i can not get appoontment .honestly fed up who can i complain to this surgery needs ti be looked in to
+
+Author: Tanveer Ahmed
+Date: 5 years ago
+Rating: 1 star
+Beyond a joke of a surgery. You have to jump through several hoops to make an appointment. Managed to get it and the doctor didn’t have anything to at all to apply a dressing on a wound. Sent me home with a tissue wrapped around my toe. Asked me to make an appointment for bloods only to be given one 23 days later. Receptionist looks like the world is resting on her shoulders and depressed making patients feel worse. Clap for the NHS. I’d rather not. Avoid at all cost!!!!
+
+Author: salma B
+Date: 3 years ago
+Rating: 1 star
+The lady Ruth who I dealt with last year was unhelpful. The doctor has to apologise since she did not refer me like she said she stated she did. 7 months later I've called back spoke with Ruth again abosuletly shocking did not want to help or listen. I'm not the one to complain however I have a hectic sheudle and asking for simple instruction with rude staff like Ruth does not help. I wonder if there is another process I can follow. Defo needs retraining as she has lost her empathy skills
+
+Author: Y
+Date: 4 years ago
+Rating: 1 star
+The staff depending on which one answers the phone when they eventually do, hasn't got a clue, as when you enquire about a form that can only be signed by a doctor, and if it could be brought in for signing you are told the doctor no longer signs the form, and was told to attend the civic centre to get it signed. Went to the civic centre but it's permanently closed to the public. Informed greenbank they had sent me to a closed civic centre. I was then told the staff gave the wrong info, and they do sign the form. Was advised to bring the form in at anytime during opening hours, but when I did, I was confronted by a member of staff standing at the entrance who told me unless I was there for covid jabs, I couldn't come in, not even to hand in the form to the receptionist. She told me to post the form in the outdoor letter box. When I asked how soon does the letter box get emptied, she said she didn't know. I asked if I could bring the form in the next day, she said to call up in the morning to find out. Handed in the form the following day, and had to ask if I would get a call informing me it was ready, as the receptionist didn't give any info as what would happen next. The receptionist informed me it would be signed and sent off on my behalf. If I didn't ask when I did, I wouldn't have known this. Several weeks had passed, I hadn't heard from the place the form was meant to be sent to, so called up greenbank only to be told there's a 2 months waiting list for forms to be signed by a doctor, the reason for the long wait is, covid is the main priority for the surgery, over everything else. It's disgusting this doctor surgery main priority is only about covid. With people having to wait ages for important forms to be signed. Furthermore Dr Watt who was my doctor, and one of the best doctors at the surgery recently left. It's a shame he has left.
+
+Author: Mohammed Najib
+Date: 2 years ago
+Rating: 5 stars
+Dr Donna Hunt is a very lovely and a kind doctor she is very professional and had dealt with my issues as well as my granddaughter too. If there were more stars I would give her a 10/10 gold stars
+
+Author: Claire Sykes
+Date: 5 years ago
+Rating: 1 star
+Absolutely discustung service receptionist very rude refused to give a patient medication after a serious operation. Customer service skills of receptionist absolutely discusting she is arrogant with an attitude problem because they failed to see patient shes had to phone an ambulance in excruciating pain cost the nhs money at the a n e department complaint in writing sent to practise manager and care quality commission definitely would never recommend
+
+Author: shafia karamat
+Date: 4 years ago
+Rating: 1 star
+I can’t give this surgery any lower! They don’t even deserve 1star! Absolute disgrace! The receptionist is very rude and has no manners! she is very unprofessional! The worst doctor surgery! How an earth does she work in the health sector! GP not able to get through to them for weeks!
+
+Author: Kamran Sohail
+Date: 3 years ago
+Rating: 1 star
+I got a message from practice in November to book my blood tests, Trying to book since then couple of time appointment canceled few days before the appointment date. Now whenever I rung them no appointment available for that month and advised me to ring next month. Very disappointed 😞 …
+
+Author: ANIZ ALYAS
+Date: 2 years ago
+Rating: 1 star
+Absolutely disgraceful it's been 6 months trying to get an appointment for a referral for my daughter who is a celiac just ridiculous.. need there licence removed will definitely be complaining .
+
+Author: Azwar Ghani
+Date: 2 years ago
+Rating: 1 star
+This practice is a waste of time and space! Hardly ever any appointments available - staff are rude! No customer service at all! No privacy or confidentiality at this practice; staff expect you to describe your problems to them at the counter whilst other members of the public are present.
+
+Author: patricia peel
+Date: a year ago
+Rating: 1 star
+Apparently the number of people being hospitalised with flu has quadrupled since last year, but when I rang for a flu vaccination this surgery have stopped doing them !! Well done.
+
+Author: nick shaw
+Date: 2 years ago
+Rating: 1 star
+Nightmare surgery the gps are the biggest problem. Esp with the 10 min phone calls. Worst surgery in oldham gets the most incompetent gps?
+
+Author: Nelsa Semedo
+Date: 3 years ago
+Rating: 1 star
+Poor service !!! Was just on the call for 30 mins with 11 people in front of me and when I got to my turn they ended the call !! And then returned calling and have another 11 people infront of me it has always been like this and I don’t get how is it even possible they open early and still don’t have appointments!!! Shocking and better be sorted looking to change gps
+
+Author: A A
+Date: 4 years ago
+Rating: 1 star
+Good luck trying to see or even speak to a doctor at this place! I have been trying for days to get an emergency appointment and when I finally get through just after 8am - they have nothing left. Shocking is all I can say. Their answer is just die.
+
+Author: Ojida Khanom
+Date: 4 years ago
+Rating: 1 star
+This Gp is diving me mad I’m not getting any service which is our right my daughter was also referred for a scan it’s been over six months the referral has yet not been made I have contact the Go several times but no one can help me I was I’ll last 2months had an appointment after 3weeks over telephone the doctors had told me to do my bloods test I called the receptionist she told me nothing on her screen for next 2weeks I am so disappointed with there service
+
+Author: Andy Melling
+Date: 2 years ago
+Rating: 1 star
+Went for a referral in October rung back 26th February, receptionist said they hadn't referred me and look into it, rung back in the afternoon to see what was happening, receptionist said we will get in touch with you, don't ring again very abrupt.
+
+Author: sarah webb
+Date: 5 years ago
+Rating: 5 stars
+Super fast and professional service for my Dad getting his COVID vaccine today. Well done staff. Thank you and keep up the good work.
+
+Author: Iqra Kousar
+Date: 2 years ago
+Rating: 1 star
+This practice needs alot of improvement They take ages answering the phone and then take ages calling you in Some Doctors r very rude especially DR A FARID did not check me properly only took 2 min and I was out says it’s viral infection all the time but ik it’s not
+
+Author: Alan Marshall
+Date: 4 years ago
+Rating: 5 stars
+They practice nurse I been seeing here at the doctors for many years all the time for things I beleave has leaft the practice I was told today on the phone has I tried to book appointment with her I think Jo-Anne nutthall will be irreplaceable she was fantastic personally and great at her job I will miss her very much ❤
+
+Author: barbara cooke
+Date: 6 years ago
+Rating: 5 stars
+I’ve only seen nurses upto now but compared to my old practice. This is excellent they run rings round my previous GP practice. Commendable
+
+Author: scott keating
+Date: 3 years ago
+Rating: 1 star
+This I by far the worst practice I have ever been too the staff are disgusting they have a dirty attitude towards patients and a massive lack of effort in the work place, appointments that get booked don't get registered, so you sit there all day only to not be seen , I will be changing surgery's with out a doubt
+
+Author: Ameen Rahman
+Date: 3 years ago
+Rating: 1 star
+The service has gone downhill after Dr Wright retirement & Covid this new policy about telephone consultation then after this if the doctor thinks if need a face to face appointment he or she will give an appointment what a joke wasting time
+
+Author: Em
+Date: 4 years ago
+Rating: 1 star
+Rang to book a telephone appointment and the woman on the phone was very rude and had a really bad attitude I have had a few experiences like this I don’t even feel comfortable ringing the doctors anymore.😞 …
+
+Author: Dave Hankin
+Date: 3 years ago
+Rating: 5 stars
+This practice has been really on the ball for both COVID and flu vaccinations throughout the pandemic. Well done to all the staff!
+
+Author: Kat Life
+Date: 4 years ago
+Rating: 1 star
+Absolutely rude receptionist - gotten worse since covid think they're being paid to basically tell everyone to sod off as they can't help - what's the point in being a doctor then.
+
+Author: Anthony Walsh
+Date: 2 years ago
+Rating: 1 star
+Disgusting place. Never get an appointment as can never get through to them pisses me right off only gave 1 star as won't let me submit other wise
+
+Author: md mokther hossain
+Date: 4 years ago
+Rating: 1 star
+Rude receptionist, never give appointments easily, if i get appointments feels like i won a lottery 🙃, very disappointed, will change this GP. …
+
+Author: Moriam Khanom
+Date: 3 years ago
+Rating: 1 star
+Had to wait 2 weeks for a phone call. They rang at 7:50 am and 8:50 am whilst I was at work. And then said it's another two week wait for another phone call, absolutely ridiculous.
+
+Author: belal
+Date: 6 years ago
+Rating: 1 star
+Dr Ahmed was very arrogant and dismissive. I have now changed my GP and receiving much better treatment.
+
+Author: jim2335
+Date: 3 years ago
+Rating: 1 star
+Called starting at 08:00 at 09:11 finally talked to someone shocking 🤯 you should have called earlier no appointments today next appointment is in 4 weeks I kid you not. …
+
+Author: Waheed Khan
+Date: 3 years ago
+Rating: 1 star
+Turned up for appointment booked in early after 40 mins turns out they not checked me in and I get a missed appointment against my name joker’s unprofessional
+
+Author: Antony
+Date: a year ago
+Rating: 1 star
+Receptionist is very rude and can’t get a doctors appointment
+
+Author: Joanne Royle
+Date: a year ago
+Rating: 1 star
+Service is awful referrals aren't always done Couldn't get any help when I rang on several occasions
+
+Author: A A
+Date: 2 years ago
+Rating: 1 star
+Worst medical practice been trying to get a appointment for over a month nothing available even at 8 am in the morning
+
+Author: Hajira Bibi
+Date: 2 years ago
+Rating: 1 star
+Appalling! The receptionists are so rude, need training on how to speak up people! Learn some manners!
+
+Author: Ann Agness
+Date: 3 years ago
+Rating: 1 star
+Calling them for 3 days for 1h to someone pick phone to tell me that there is not appointment left ! And asking to call 111... 🤬🤬🤬🤬 …
+
+Author: samina shafiq
+Date: 4 years ago
+Rating: 1 star
+You never get through when you ring when you do the receptionist is not polite never any appointments.
+
+Author: Dave Greenwood (GSF OLDHAM)
+Date: 2 years ago
+Rating: 1 star
+Probably the worst GP surgery about would not recommend joining
+
+Author: ashfaq ahmed
+Date: Edited 4 years ago
+Rating: 1 star
+Most of the time really rude telephone operators, hard to get appointments
+
+Author: Saeed Nawaz
+Date: 3 years ago
+Rating: 1 star
+It's absolutely getting terrible to book any appointments.
+
+Author: zahir abdul
+Date: a year ago
+Rating: 1 star
+Receptionist just hung up without even trying to listen
+
+Author: fluffy mate
+Date: 4 years ago
+Rating: 1 star
+Same as most of the other reviews the doormen sorry reseptionist are just that. Peoples lives!
+
+Author: william brown
+Date: 2 years ago
+Rating: 2 stars
+Not good getting to see a doctor very hard. Do not read your medical history
+
+Author: Nyla Bibi
+Date: 6 years ago
+Rating: 1 star
+Reception staff rude never give appointments
+
+Author: Linda Sutcliffe
+Date: a year ago
+Rating: 5 stars
+Waited two weeks for this appointment
+
+Author: Purple aki1972
+Date: 5 years ago
+Rating: 5 stars
+Response time was timely and staff per lite and clear.
+
+Author: Mareks Martinkevics
+Date: 4 years ago
+Rating: 1 star
+For weeks not able to get appointment with GP
+
+Author: Rahil Zubair Gondal 786
+Date: 2 years ago
+Rating: 1 star
+Rude staff.
+
+Author: Duncan Clowes
+Date: 3 years ago
+Rating: 3 stars
+It's a doctors surgery,
+
+Author: Louise Ferguson
+Date: 5 years ago
+Rating: 5 stars
+Excellent practice
+
+Author: Shwan Mahamd
+Date: 7 years ago
+Rating: 1 star
+Not helpful
+
+Author: Iqra Gul
+Date: 10 months ago
+Rating: 1 star
+Iqra Gul4 reviews10 months ago
+
+Author: Tanya Moxam
+Date: a year ago
+Rating: 3 stars
+Tanya Moxama year ago
+
+Author: Ali Ahmed
+Date: 2 years ago
+Rating: 5 stars
+Ali AhmedLocal Guide · 8 reviews · 23 photos2 years ago
+
+Author: Imran Khan
+Date: 2 years ago
+Rating: 1 star
+Imran Khan8 reviews2 years ago
+
+Author: A M
+Date: 3 years ago
+Rating: 1 star
+A M7 reviews3 years ago
+
+Author: CARL POLLITT
+Date: 3 years ago
+Rating: 1 star
+CARL POLLITT1 review3 years ago
+
+Author: Robert Adamson
+Date: 3 years ago
+Rating: 1 star
+Robert Adamson1 review3 years ago
+
+Author: Thaira Parveen
+Date: 4 years ago
+Rating: 3 stars
+Thaira Parveen5 reviews4 years ago
+
+Author: Eileen Lloyd
+Date: 4 years ago
+Rating: 5 stars
+Eileen Lloyd1 review4 years ago
+
+Author: Gemma Corrigan
+Date: Edited 4 years ago
+Rating: 1 star
+Gemma Corrigan1 reviewEdited 4 years ago
+
+Author: Samantha “Sammii” Watson
+Date: 4 years ago
+Rating: 3 stars
+Samantha “Sammii” WatsonLocal Guide · 69 reviews · 20 photos4 years ago
+
+Author: Yaser Mahmood
+Date: 4 years ago
+Rating: 1 star
+Yaser Mahmood1 review4 years ago
+
+Author: Weronika Weiher
+Date: Edited 4 years ago
+Rating: 1 star
+Weronika Weiher1 reviewEdited 4 years ago
+
+Author: B B
+Date: 4 years ago
+Rating: 5 stars
+B BLocal Guide · 25 reviews4 years ago
+
+Author: nag nag
+Date: 4 years ago
+Rating: 5 stars
+nag nagLocal Guide · 43 reviews · 3 photos4 years ago
+
+Author: Mohammed Inthsham
+Date: 6 years ago
+Rating: 1 star
+Mohammed Inthsham4 reviews · 6 photos6 years ago
+
+Author: Albert Nyilas
+Date: 7 years ago
+Rating: 4 stars
+Albert NyilasLocal Guide · 35 reviews · 40 photos7 years ago
+
+Author: Jaleel Mirza
+Date: 8 years ago
+Rating: 5 stars
+Jaleel Mirza1 review · 1 photo8 years ago
+
+Author: timothy warburton
+Date: 8 years ago
+Rating: 5 stars
+timothy warburton1 review8 years ago

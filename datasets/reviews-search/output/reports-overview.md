@@ -2,7 +2,7 @@
 
 This note maps the review reports in `datasets/reviews-search/output` back to the original prompts that asked for them.
 
-It is a working overview for the expanded corpus refresh. The summaries below describe what each report currently found in the earlier, smaller run, so they can be checked and rewritten against the larger dataset now in the index.
+It now reflects the rebuilt `40,506`-review corpus and the current refreshed report set, rather than the earlier smaller run.
 
 ## 1. Access Issues In The Review Corpus
 
@@ -21,10 +21,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- Access was the biggest issue in the earlier corpus.
-- The report framed broad access language as just over half of reviews, with a stricter low-star access complaint share closer to a third.
-- Phone access, appointment scarcity, reception barriers, digital front-door failures, and weak follow-up were the core recurring issues.
-- Later extension: access problems can turn into exclusion, with reviews describing failed attempts to move practice, catchment barriers, and occasional reports of things improving after leaving.
+- The refreshed report finds `18,321` reviews, `45.2%` of all reviews, mentioning a main access route or access-linked follow-through issue.
+- `7,033` reviews, `17.4%`, use stronger complaint-shaped access language.
+- `5,080` low-star reviews, `37.3%` of all low-star reviews, sit inside that stricter access basket.
+- Phone access, appointment scarcity, reception barriers, digital front-door failures, weak follow-up, and exclusion after failed access remain the core recurring issues.
 
 ## 2. What The Review Corpus Shows
 
@@ -43,10 +43,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- The earlier corpus looked sharply polarised, with a very large `1`-star block and a very large `5`-star block, and very little middle ground.
-- Access dominated complaints, but staff attitude, follow-through, prescriptions/referrals, and clinical trust also stood out.
-- Positive reviews clustered around kindness, being listened to, thorough clinicians, and staff who actually sorted things out.
-- The report argued that reviews often show route, sequence, emotional cost, and exclusion more clearly than the national patient survey.
+- The corpus remains sharply polarised: `30.9%` of reviews are `1` star and `58.2%` are `5` star.
+- Access still dominates complaints, but staff attitude, follow-through, digital front-door experience, and clinical trust all stand out strongly.
+- The refreshed overview now also pulls in the newer digital and activism layers: `2,586` digitally signalled reviews and `1,625` activism-adjacent or public-warning reviews.
+- The report argues that reviews show route, sequence, emotional cost, public warning, and exclusion more clearly than the national patient survey.
 
 ## 3. Older Reviews Versus Recent Reviews
 
@@ -66,8 +66,8 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 **Current discoveries**
 
 - Core complaints like appointments, phones, rude reception, and being sent round in circles did not disappear.
-- The stronger change was on the recent side: digital front-door complaints, online triage, web forms, and callback-driven access became much more visible.
-- The report treated `2020` and `2021` as transition years and compared older (`2016`-`2019`) against recent (`2022`-`2026`) complaint-heavy windows.
+- The stronger change is on the recent side: digital front-door complaints, online triage, web forms, named systems, and callback-driven access become much more visible after the pandemic shift.
+- The refreshed comparison uses `1,397` older low-star reviews (`2016`-`2019`) against `10,417` recent low-star reviews (`2022`-`2026`).
 
 ## 4. How Patients Talk About Staff And Clinicians
 
@@ -86,10 +86,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- Patients often talk about people, not just the abstract practice.
-- Positive reviews repeatedly praised clinicians who listened, explained, reassured, and followed through.
-- Reception could swing both ways: warm and helpful in positive reviews, or cold, rude, and obstructive in negative ones.
-- The negative side was kept issue-focused rather than naming individual clinicians.
+- Patients still talk about people, not just abstract practice systems.
+- The refreshed pass finds very large positive clusters around kind, listening, competent care and friendly front-desk staff, alongside a strong low-star cluster around rude or obstructive staff treatment.
+- Repeatedly praised named individuals remain visible on the positive side, while the negative side stays issue-focused rather than naming clinicians.
+- Reception remains one of the clearest swing points between high-star and low-star experience.
 
 ## 5. Clinical Harm Warning Signs In Google Reviews
 
@@ -111,9 +111,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- The earlier run found a smaller but serious slice of reviews with misdiagnosis, unsafe medication, negligence/danger language, hospital escalation, or severe outcomes.
-- The extension shifted from warning signs to reported harm outcomes: deterioration, delayed care with harm, treatment-linked illness, emergency escalation, and serious condition or near-miss language.
-- The report positioned this as a part of patient experience almost untouched by the national patient survey.
+- The refreshed run flags `872` low-star reviews with stronger clinical-failure or harm language.
+- That is `2.2%` of all reviews and `6.4%` of all low-star reviews.
+- Hospital escalation, severe outcome language, dismissal with deterioration, misdiagnosis, and unsafe medication all recur.
+- The report positions this as a part of patient experience that the national patient survey barely reaches.
 
 ## 6. Practice Responses To Reviews
 
@@ -131,10 +132,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- Practices were much more likely to reply to praise than criticism.
-- Most responses were thanks, apology, or boilerplate signposting rather than public evidence of specific action.
-- Publicly useful responses were rare.
-- The report also pulled out patient-blaming and deflecting modes in reply language.
+- The refreshed pass finds `16,756` public practice responses in the corpus.
+- Practices are still much more likely to reply to praise than criticism.
+- Most responses remain thanks, apology, or boilerplate signposting rather than public evidence of specific action.
+- Publicly useful responses are rare, and the report still pulls out patient-blaming and deflecting modes in reply language.
 
 ## 7. Online, Website, And Software Platform Experience
 
@@ -157,10 +158,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- Digital access became a substantial theme in the wider corpus, but most patients still described it generically rather than by product name.
-- Generic website/form/app language was far more common than explicit product naming.
-- Follow-on ranking and allocation work widened this further into practice-level digital appointment rankings and a first-pass platform allocation layer.
-- The current platform-allocation pass can name a platform for a substantial minority of digitally relevant practices, but most still remain generic/unknown from review wording alone.
+- Digital access is now a substantial theme: `2,586` reviews, `6.4%` of the corpus, carry a recognisable digital/web/app/platform signal.
+- Generic website/form/app language remains far more common than explicit product naming.
+- The appointment-linked ranking pass finds `1,839` digitally relevant appointment reviews across `291` practices, split `831` positive, `902` negative, and `106` mixed.
+- The allocation pass covers `295` digitally signalled practices, names at least one platform at `121`, and leaves `174` still generic or unknown from review wording alone.
 
 ## 8. GTD-Managed Practices Review Report For PPG Discussion
 
@@ -178,9 +179,10 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- The GTD slice looked much harsher than the wider corpus, with a much heavier low-star skew.
-- Access, staff tone, digital front-door problems, weak follow-up, exclusion language, and public response behaviour all showed up strongly in GTD-managed practice reviews.
-- The report was written as a single GTD-only synthesis rather than many separate GTD-only notes.
+- The GTD slice remains much harsher than the wider corpus: `627` of `830` reviews, `75.5%`, are `1` or `2` star.
+- Access, staff tone, digital front-door problems, weak follow-up, exclusion language, urgent redirection, and weak public response behaviour all show up strongly in GTD-managed practice reviews.
+- The heaviest complaint load sits around practices such as `New Bank Health`, `Guide Bridge Medical Practice`, `Charlestown MD`, `Gordon Street Medical Centre`, `Simpson Medical Practice`, and `Droylsden Medical Practice`.
+- The report remains a single GTD-only synthesis rather than many separate GTD-only notes.
 
 ## 9. Activism, Community Response, And Public-Warning Reviews
 
@@ -198,23 +200,22 @@ It is a working overview for the expanded corpus refresh. The summaries below de
 
 **Current discoveries**
 
-- Activism-style reviewing was a real but fringe layer rather than a dominant one.
-- The biggest bucket was public-warning language aimed at other patients.
-- Smaller groups involved regulator escalation, review-about-review writing, authority-positioning, and community framing.
-- The report argued this looked more like scattered public warning and escalation than sustained local organising.
+- Activism-style reviewing remains a real but fringe layer rather than a dominant one.
+- The refreshed scan finds `1,625` flagged reviews, `4.0%` of the corpus.
+- The biggest bucket is still public-warning language aimed at other patients, followed by regulator escalation, review-about-review writing, authority-positioning, and community framing.
+- The report still reads this as scattered public warning and escalation rather than sustained local organising.
 
 ## Refresh Notes
 
-- The earlier reports were written against a much smaller indexed corpus.
-- The current rebuilt index is much larger, so most of these notes should now be treated as version-one readings rather than the final word.
-- The reports with the strongest helper-script basis today are:
+- These reports now sit on the rebuilt `40,506`-review full-text index.
+- The most script-driven reports in the current set are:
   - `clinical-harm-warning-signs-report.md`
   - `practice-responses-report.md`
   - `online-web-platform-experience-report.md`
   - `digital-appointment-practice-ranking-report.md`
   - `digital-platform-allocation-report.md`
   - `activism-community-response-report.md`
-- The reports most likely to need a fresh from-scratch analytical pass are:
+- The more synthesis-heavy reports remain:
   - `access-issues-report.md`
   - `reviews-corpus-overview-report.md`
   - `older-vs-recent-complaints-report.md`

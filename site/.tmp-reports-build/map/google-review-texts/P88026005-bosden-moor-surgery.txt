@@ -4,11 +4,16 @@ Postcode: SK2 5JL
 Google Maps title: Bosden Moor Surgery
 Google rating: 4.8
 Google review count: 23
-Google Maps URL: https://www.google.com/maps/place/Bosden+Moor+Surgery/@53.3915656,-2.1069434,17z/data=!4m8!3m7!1s0x487bb4ddb182ae47:0x6620542443c3660e!8m2!3d53.3915656!4d-2.1069434!9m1!1b1!16s%2Fg%2F1hc1ykp11?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Bosden+Moor+Surgery/@53.3915688,-2.1095237,17z/data=!4m8!3m7!1s0x487bb4ddb182ae47:0x6620542443c3660e!8m2!3d53.3915656!4d-2.1069434!9m1!1b1!16s%2Fg%2F1hc1ykp11?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 23
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88026005-bosden-moor-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Shei Geddes
 Date: Edited 9 months ago
@@ -59,3 +64,68 @@ Author: adam grace
 Date: 3 years ago
 Rating: 5 stars
 Great local doctor
+
+Author: Jim Yates
+Date: 3 years ago
+Rating: 5 stars
+Very well organised and efficient.
+
+Author: Minnie Birchall
+Date: 3 years ago
+Rating: 5 stars
+Katie is a delight on reception! Every since I moved to the area and registered with Bosden, Katie has always remained bubbly, professional and welcoming. I can only imagine how stressful it can be within a busy surgery but she never comes across stressed or flustered. Thanks for being wonderful Katie!! Minnie (Laura) B.
+
+Author: Stephen R
+Date: 4 years ago
+Rating: 5 stars
+Dr B. Duncan really offered me a great listener ear. Very nice, caring and professional. 🤩🤩🤩🤩🤩 …
+
+Author: M C
+Date: 4 years ago
+Rating: 1 star
+Unfriendly manager Joanne dont care about an individual stressful dealin with this place so Dont join savin u hassle of bein stressful true ratin is 0
+
+Author: Roxanna Porras Van Herbert
+Date: 4 years ago
+Rating: 5 stars
+Really impressed with this surgery. I recently moved house and didn’t change my address and needed to visit a doctor. My old practice saw me and needed to do a urgent referral, but unable to as my new address was not in their catchment area they could not proceed. Called up Bosden Moor surgery and explained the situation. The receptionist Katie, was amazing and understanding and processed my application straight away. Within less than 24hr the Doctor called me and processed my referral to a specialist. Really impressive. Thank you to the team for coordinating so quickly.
+
+Author: Jeff J Jones
+Date: 4 years ago
+Rating: 5 stars
+Staff friendly and helpful
+
+Author: Andrew Fairs
+Date: 4 years ago
+Rating: 5 stars
+Andrew FairsLocal Guide · 40 reviews · 3,293 photos4 years ago
+
+Author: Jill Smith
+Date: 5 years ago
+Rating: 5 stars
+This is the first time I've visited this surgery, I've just returned from having my 1st Covid Vaccination and wanted to say a huge thank you to everyone involved in this very well run event. From the people taking names & information at the entrance, the lady ensuring I left the right way, to the Nurse who gave me the vaccine and the Doctors who I am sure were on site just in case there was a problem, you are all amazing and I thank you for your time and kindness at this very challenging time.
+
+Author: Donald Milward
+Date: 6 years ago
+Rating: 5 stars
+Awhen the last time you went to see a Doctor who actually listened and what's more cared
+
+Author: Sarah Izon
+Date: 6 years ago
+Rating: 5 stars
+Sarah Izon7 reviews · 2 photos6 years ago
+
+Author: Ivalina Petkova
+Date: 6 years ago
+Rating: 5 stars
+Bosden Moor surgery has the best team - doctors, nurses and receptionists. They are always kind and helpful, competent and friendly. Me and my family are very happy having Dr. Davis as a GP. The system of communications is very good and its always a pleasure to visit the surgery.
+
+Author: Michelle Moran
+Date: 7 years ago
+Rating: 5 stars
+This surgery is second to none . I am so Happy now that we have new Doctors . Our family has never been better looked after by competent and friendly doctors and specialist nurses. You are all fantastic it makes coming to see a health practitioner a pleasure .
+
+Author: Andrea Sheridan
+Date: 8 years ago
+Rating: 5 stars
+Great,caring and friendly staff. Lovely surgery bright, clean and new

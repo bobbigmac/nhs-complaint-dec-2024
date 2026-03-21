@@ -4,11 +4,16 @@ Postcode: OL7 0NW
 Google Maps title: H T Practice
 Google rating: 1.3
 Google review count: 25
-Google Maps URL: https://www.google.com/maps/place/H+T+Practice/@53.4781118,-2.1106478,17z/data=!4m8!3m7!1s0x487bb65b8c33a5c3:0x33f9e9c514045460!8m2!3d53.4781118!4d-2.1106478!9m1!1b1!16s%2Fg%2F11b7qdwp2v?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/H+T+Practice/@53.478115,-2.1132281,17z/data=!4m8!3m7!1s0x487bb65b8c33a5c3:0x33f9e9c514045460!8m2!3d53.4781118!4d-2.1106478!9m1!1b1!16s%2Fg%2F11b7qdwp2v?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.0
+Review collection mode: full_feed
+Review cards collected: 25
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P89020-ht-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Penfold
 Date: a month ago
@@ -16,7 +21,7 @@ Rating: 1 star
 Very poor service. They make booking an appointment so difficult, it is almost like they don’t want to see you. You want an appointment you have to ring at 8am. Phone rings constantly then stops. Ring after 8 on a Monday and routine appointments are only released on Thursday after 11am but they are usually for 3 weeks away. Same to see the nurse. Absolute joke… staff appear to be disinterested and unhelpful. Don’t understand the releasing appointments thing they know what appointments are available, just seems so convoluted it is unreal.
 
 Author: kevin willis
-Date: 7 months ago
+Date: 8 months ago
 Rating: 1 star
 shocking rude and lazy
 
@@ -59,3 +64,78 @@ Author: A R
 Date: 2 years ago
 Rating: 1 star
 The world's worst GP ever! Even if you were on your death bed you would not be able to get a same day appointment.
+
+Author: Jade Shaw
+Date: 3 years ago
+Rating: 1 star
+Jade Shaw3 years ago
+
+Author: Lauren Ormerod
+Date: 3 years ago
+Rating: 1 star
+Used to be a good surgery. I understand it’s been difficult in the recent years for the staff but something needs to change. You literally can’t get a appointment. I waited three weeks for a telephone appointment and the doctor didn’t even call me. Called back to be told they did but no missed calls, no voicemail nothing. The desk staff are rude and passive aggressive. You might as well just go to the walk in which I now do instead but even then they say you need to speak to your own doctor…. How?! The hospitals are taking all the heat because the GPS aren’t doing their jobs effectively or actually taking on board your concerns because your just a number in their que. It’s disappointing.
+
+Author: Alessandra Pigliasco
+Date: 3 years ago
+Rating: 1 star
+Absolutely the worst. Cannot get appointments before 3 weeks at least. If you’re very sick the only option is to walk down and go in person before 8am to see if there are any same day appointments. if you’re sick, is really a really unprofessional thing to make your patients leave the house to try and get an appointment. Receptionists are mind blowing: once the didn’t tell the nurse I was there so I almost lost my appointment, another time it was a face-to-face appointment and didn’t tell me so I lost my appointment as I was expecting a call. You keep accepting new patients, how about you try to stay on top of the ones you already have? Not normal for people to get appuntamento weeks later, if one is sick they can’t wait 3 bloody weeks! Absolutely a disgrace to medicine and taxpayer money.
+
+Author: Mark Heeney
+Date: 3 years ago
+Rating: 1 star
+Absolute shambles you ring up bang on 8am for a same day appointment put 20 in the queue spend 30mins to be told no appointments left ring back tomorrow I explain that my daughter is a chronic asthmatic who also has a chest infection but just been moved onto steroids as the antibiotics didn’t work (thankfully she has a great doctors which I’ll be hoping to join) I am a long distance lorry driver who Can't just nip out of work for an appointment so asked if the doctor can just me ring at some point today was told you Can’t get antibiotics over the phone yet last year I did exactly that advertising for new patients yet Can’t look after there current patients
+
+Author: Hanan Ba
+Date: 3 years ago
+Rating: 1 star
+I have never seen rude people as the reception ladies in this GP. Extremely racist and tough ladies The management should be aware of this otherwise unless they are happy with the way they treat the patients. Worst GP ever
+
+Author: Judy Bardsley
+Date: 3 years ago
+Rating: 1 star
+Absolute disgrace when people are poorly trying to see a dr and wait for 56 minuites on phone to be disconnected when its your turn .everyone has a duty of care ,but this doesnt happen here .advise everyone to complain to gmc!
+
+Author: Iram Anwar
+Date: 3 years ago
+Rating: 1 star
+Disgusting service. They really don’t help people who needs urgent treatment especially people at the reception are so rude and don’t listen
+
+Author: kathryn atkinson
+Date: 3 years ago
+Rating: 1 star
+Cannot get an appointment tried for weeks. Put blood pressure results in taken to two weeks for them to upload to my notes. The text to make an appointment another 3 weeks. Not really good service not an isolated incident
+
+Author: Cross Stitch
+Date: 3 years ago
+Rating: 1 star
+Appointments are never available , phone service is a joke and receptionists act like they’re guarding heavens gates. Disgusting. How they can still be advertising to take on new patients when they can’t care for the ones they have us beyond me.
+
+Author: Bri H
+Date: 3 years ago
+Rating: 1 star
+Truly awful. Something has to change. Appointments are now all same-day only (except for routine appointments), but you need to ring at 8am for one. By 8:01, the automated system said all appointments were taken. I thought maybe these were not updated yet with it being the first day back from a long weekend, but 50 calls later to get through again, it says the same. When I talk to others at different surgeries, there may be a wait for an appointment, but it's nothing like this. At least they can book one. You can spend days and days with a problem and not be able to get through, forcing you to use 111 or go to the walk-in - or worse if you've let symptoms get worse because you couldn't see your doctor and ended up in A&E.
+
+Author: Jaxx Taylor
+Date: 4 years ago
+Rating: 1 star
+One would assume that, on day one of "receptionist training school", lesson one would be "How To Answer the Plastic Ringing Thing on the Desk". Apparently, not at HT Practice, Ashton-Under-Lyne. No, no, see because they'd rather LEAVE YOU ON HOLD FOR 30 MINUTES so you can book an appointment for in three weeks, which takes all of 90 SECONDS. If they do not wish to stop the incessant plastic thing from ringing, I'd suggest another career for the receptionists at the clinic. The fact that making an appointment now has to be pencilled in to my diary because of how long it takes is SHOCKING. Its not like I was in a queue, either.
+
+Author: janet jackson
+Date: 4 years ago
+Rating: 1 star
+Absolute joke worst service ever
+
+Author: Shell
+Date: 5 years ago
+Rating: 1 star
+The worse process of trying to get an Appointment ever! Ive been ringing for a week, held in a queue for over half an hour to be then told there are no appointments available. Why keep you on hold that long if there is no appointments left. The staff are not polite and welcoming and not helpful at all.
+
+Author: Hassan Ali
+Date: 5 years ago
+Rating: 1 star
+Worst GP service ever. Not been able to speak to a doctor even after 4 phone calls. Total disgrace.
+
+Author: ioulieta pi
+Date: 5 years ago
+Rating: 1 star
+I would put zero stars if I could. Misdiagnosed twice. Not informed correctly about procedures. Total let down.

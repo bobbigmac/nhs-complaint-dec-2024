@@ -4,11 +4,16 @@ Postcode: SK16 4LD
 Google Maps title: Town Hall Surgery
 Google rating: 3.2
 Google review count: 18
-Google Maps URL: https://www.google.com/maps/place/Town+Hall+Surgery/@53.4783443,-2.0929519,17z/data=!3m1!5s0x487bb6686f87b8af:0x776aa276aa2be4d9!4m8!3m7!1s0x487bb6686f8e9a21:0xb2a114a50755f328!8m2!3d53.4783443!4d-2.0929519!9m1!1b1!16s%2Fg%2F1tdq0pjx?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Town+Hall+Surgery/@53.4821687,-2.1127681,11z/data=!3m1!5s0x487bb6686f87b8af:0x776aa276aa2be4d9!4m8!3m7!1s0x487bb6686f8e9a21:0xb2a114a50755f328!8m2!3d53.4783443!4d-2.0929519!9m1!1b1!16s%2Fg%2F1tdq0pjx?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 18
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P89025-town-hall-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Bethany Davies
 Date: 4 months ago
@@ -16,7 +21,7 @@ Rating: 1 star
 Because an email wasn't read properly I couldn't have my medication for 2 days!! No apology no way around it resolution was left to myself when I don't have my medication I instantly get sick life threatening illness too when not managed but no care was given.
 
 Author: Lynda Houghton
-Date: 6 months ago
+Date: 7 months ago
 Rating: 5 stars
 I find all the staff excellent. I never struggle to get a appointment. The doctors listen to you and are very caring. The reception staff are helpful and friendly. I have been to many GP practices over the years and this one is by far the best. I wouldn't want to go anywhere else
 
@@ -26,7 +31,7 @@ Rating: 1 star
 Absolutely unfit for purpose- exceptionally rude reception staff, who appear to act purposefully unfriendly, along with a very inefficient booking format that means you cannot be seen once for multiple health-queries (not everyone is available for three separate mid-week appointments). Overall, I wouldnt recommend this surgery to a living soul.
 
 Author: Mcr Skincare
-Date: 8 months ago
+Date: 9 months ago
 Rating: 1 star
 Awful doctors would avoid the doctors speak very little English and start saying random things during appointment. Waiting time is around an hour ! To be seen maybe even longer
 
@@ -59,3 +64,43 @@ Author: Tracy Rathbone
 Date: 2 years ago
 Rating: 4 stars
 Tracy RathboneLocal Guide · 154 reviews · 387 photos2 years ago
+
+Author: Gh.Rahim Rasouli
+Date: 2 years ago
+Rating: 1 star
+Absolutely disgusting services especially from the receptionist.was waiting for an appointment for 6 weeks for my blood to be taken but it never happened. 1 star is far too much for them
+
+Author: Samantha Marsh
+Date: Edited 3 years ago
+Rating: 1 star
+Shocking... Wish Dr. Malik didn't leave, its gone down hill since he has. Can't get any help, you're waiting months, you send prescriptions in and don't receive them. The current GPs cannot get dosage correct when they do send it out. So glad I've moved, best thing I did.
+
+Author: Alesha Catlow
+Date: 4 years ago
+Rating: 5 stars
+Fantastic surgery, very helpful
+
+Author: Dawn Ferguson
+Date: 5 years ago
+Rating: 5 stars
+I don’t usually leave many reviews but I really felt the need to come on and leave a review for Town Hall Surgery! I have only recently moved to the surgery as I moved to Dukinfield from Romiley in Stockport and in the short time I have been with them they have been nothing short of fantastic! The Drs are all so thorough and so lovely & equally so the medical receptionists are too! So helpful & so accommodating! For one reason or another I’ve found myself being referred on the urgent cancer pathway today which is something I would ordinarily get extremely anxious about but after a conversation with the lovely Dr Stone today I’m managing to keep things in perspective until such time as I’m told I definitely need to worry! (Which hopefully won’t ever happen?) And that’s a first for me but I firmly believe this is due to the wonderful manner & calming approach of Dr Stone. Janet the practice nurse is really lovely too & it was in fact Janet that suggested I have a word with the Dr about my symptoms which led to the referral for further investigations - so really every member of staff that I’ve had dealings with at Town Hall Surgery since registering with them a few weeks ago - from all of the Drs there to the practice nurse to the medical receptionists have been nothing short of fantastic! And I can’t thank them all enough for being so thorough but also so caring in their approach. During such trying & uncertain times and being under so much pressure due to the pandemic makes their professionalism & caring attitude even more impressive. My daughter is a nurse and I know she’d be proud to refer to all the staff at Town Hall Surgery as her NHS colleagues with the wonderful service they are providing - as sometimes it’s not just the physical well-being of a patient that counts the most but their emotional well being too! And Town Hall Surgery are definitely considerate of both in my experience x
+
+Author: Agnes Varlaki
+Date: 5 years ago
+Rating: 5 stars
+Amazing service very polite staff. Dealt with straight away
+
+Author: pauline clarke
+Date: 6 years ago
+Rating: 5 stars
+A very good Medical Practice where you get understanding and support
+
+Author: Peter Thompson
+Date: 6 years ago
+Rating: 5 stars
+Dr Ehsan,great doctor.receptionists very helpful, From p.thompson.
+
+Author: N Saab
+Date: 7 years ago
+Rating: 5 stars
+Excellent Surgery.Great Team

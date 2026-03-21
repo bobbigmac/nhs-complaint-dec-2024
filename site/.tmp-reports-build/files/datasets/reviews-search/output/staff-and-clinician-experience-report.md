@@ -1,44 +1,44 @@
 # How Patients Talk About Staff And Clinicians
 
-This note looks at the people who actually handle patient care in the review corpus:
+This note looks at the people who actually carry the patient experience in the review corpus:
 
 - reception and admin staff
 - nurses
-- doctors
-- named individuals who are praised repeatedly
+- doctors and other clinicians
+- named individuals who are publicly praised again and again
 
-It is based on the indexed Google review corpus of `16,293` reviews.
+It is based on the rebuilt indexed corpus of `40,506` Google reviews.
 
-This is not a league table of good and bad staff.
+This is still not a league table of good and bad staff.
 
-For the positive side, I do name individuals where patients repeatedly praise them by name in public reviews. That is useful because it shows what patients value when care feels good.
+For the positive side, I do name individuals where the public review corpus shows repeated praise by name. That is useful because it shows what patients value when care feels genuinely good.
 
-For the negative side, I do **not** build a list of named staff. I stick to the issues patients describe: what went wrong, what kind of behaviour upset them, and what decisions or mistakes they object to.
+For the negative side, I do **not** build a named list. I stick to the problems patients describe: tone, handling, judgement, missed explanations, and the kinds of decisions that make people feel shut out or badly cared for.
 
 ## The Big Picture
 
-Across the corpus, patients do not just review "the practice". They often talk about people.
+Across this corpus, patients very often judge the whole practice through one or two human encounters.
 
-That matters because a lot of the patient experience is carried by:
+That might be:
 
-- the receptionist who answers or blocks the call
+- the receptionist who either makes the route easier or harder
 - the nurse who explains what is happening
-- the GP who listens, reassures, or does not
-- the admin person who sorts a prescription, referral, or follow-up
+- the GP who listens properly, or does not
+- the admin person who actually sorts the referral, prescription, or follow-up
 
-The review language makes this very clear. Patients often judge the whole practice through one or two human encounters.
+So even in a corpus full of access and systems complaints, people still matter a lot.
 
 ## What Patients Praise Most
 
-### 1. Clinicians who listen, explain, and reassure
+### Clinicians who listen, explain, and reassure
 
-This is the strongest positive theme in the whole corpus.
+This is still the strongest positive people-theme in the corpus.
 
-`4,418` high-star reviews, `27.1%` of all reviews and `47.4%` of `4` and `5` star reviews, mention helpful, caring, kind, listening, reassuring, professional, thorough, or compassionate care.
+A refreshed pass found `10,497` high-star reviews using language about helpful, caring, kind, listening, reassuring, professional, thorough, or compassionate care.
 
-That is a huge signal.
+That is a very large signal.
 
-When patients are really happy, they often do not praise technical medicine in abstract terms. They praise:
+When patients are happy, they usually do not praise medicine in abstract terms. They praise:
 
 - being listened to
 - not being rushed
@@ -46,41 +46,38 @@ When patients are really happy, they often do not praise technical medicine in a
 - feeling safe
 - being taken seriously
 
-Examples:
+Recent examples:
 
-> "Extremely helpful and caring doctors. Always feel listened to and well looked after."  
-> Tahreem F, `Ailsa Craig Medical Centre`, `5` stars
+> "Dr. Singh was very helpful with my dermatologist referral"  
+> R., `The Quays Practice`, `a week ago`
 
-> "The doctors are all very helpful and again excel in your treatment I feel safe and listened to at this practice."  
-> Mick Edgerley, `Deane Medical Centre`, `5` stars
+> "Dr Moran was attentive and listened."  
+> Yasmin Warsama, `Manchester Integrative Medical Practice`, `a month ago`
 
-> "A very knowledgeable practitioner who listened and was very caring."  
-> Helen Smith, `The Poplars Medical Practice`, `5` stars
+> "Warren was really good he listened to me and believed me"  
+> Andrea Gregory, `Manchester Integrative Medical Practice`, `4 months ago`
 
-### 2. Reception staff who make things easier, not harder
+### Friendly front-desk staff still matter enormously
 
-Patients also praise front-desk staff a lot when they feel welcomed and helped.
+A separate positive pass found `6,054` high-star reviews using friendly, welcoming, lovely, polite, or respectful front-desk language.
 
-`2,399` high-star reviews, `14.7%` of all reviews and `25.7%` of high-star reviews, mention friendly, welcoming, respectful, lovely, or polite staff.
+That is the mirror image of one of the biggest complaint themes. Reception is not a side issue. In the reviews, it often decides whether the practice feels humane or hostile.
 
-This matters because it is the mirror image of one of the biggest complaint themes. Reception is not a side issue. In the reviews, it often decides whether patients feel the practice is humane or hostile.
+Recent examples:
 
-Examples:
+> "Both visits have been a pleasure, low wait times, experienced and friendly staff at all levels"  
+> Mark Schofield, `The Quays Practice`, `a day ago`
 
-> "Friendly staff on reception and helpful"  
-> caroline daniels, `RK Medical Practice`, `5` stars
+> "Lesley was lovely. Service was fast and friendly"  
+> Loredana Dalli, `The Quays Practice`, `2 days ago`
 
-> "Excellent practice with friendly and helpful reception staff."  
-> Matthew Delooze, `Bodey Medical Centre`, `5` stars
+### Warmth matters most when it comes with practical help
 
-> "Staff in reception are super helpful and friendly."  
-> River Area, `Bolton Medical Centre`, `5` stars
+The reviews also show a more specific kind of praise: patients especially value people who actually sort something.
 
-### 3. Staff who actively sort problems
+A refreshed pass found `974` high-star reviews with clearer problem-solving language.
 
-There is another pattern in the positive reviews that matters a lot.
-
-Patients especially value people who do something practical:
+Patients praise staff who:
 
 - get the appointment sorted
 - chase the issue
@@ -88,129 +85,133 @@ Patients especially value people who do something practical:
 - call back quickly
 - explain the next step clearly
 
-The warm tone matters, but patients often praise warmth plus action.
+Examples:
+
+> "the surgery sorted out an emergency prescription on the same day"  
+> Joanne Guy, `Woodbank Surgery`, `5 days ago`
+
+> "The reception managed to book me an urgent appointment for the next day."  
+> Lyndsey Mc Dowell, `The Range Medical Centre`, `5 days ago`
+
+This is important. In the positive reviews, patients do not only reward niceness. They reward niceness plus competence.
+
+## Named Positive Praise
+
+This section is not a ranking. It is a record of where the enlarged corpus still shows unusually strong, repeated public praise for named individuals in positive reviews.
+
+The cleanest current clusters include:
+
+### Dr Riaz, `Bredbury Medical Centre`
+
+`47` high-star review mentions, average rating `5.0`.
+
+What patients praise:
+
+- patience
+- clear explanations
+- careful listening
+- fast follow-up
+
+Examples:
+
+> "He spoke very patiently and explained everything clearly. He carefully listened to my concerns"  
+> recent review, `3 weeks ago`
+
+> "they never let us down ... all the staff from receptionist to..."  
+> recent review, `2 months ago`
+
+### Dr Alam, `Norden Branch Surgery`
+
+`36` high-star review mentions, average rating `5.0`.
+
+What patients praise:
+
+- support
+- knowledge
+- consistency during recent service changes
 
 Example:
 
-> "Spoke to leanne on reception this afternoon who listen to me and was first class ... answered my concerns and made me feel so much at ease."  
-> James Molloy, `The Poplars Medical Practice`, `5` stars
+> "I have received great support especially from Dr Alam who is very supportive and knowledgable."  
+> recent review, `3 weeks ago`
 
-## Repeatedly Praised Named Individuals
+### Dr Imran, `Delamere Medical Practice`
 
-This section is not a ranking. It is a record of where the corpus contains repeated public praise for named individuals.
+`32` high-star review mentions, average rating `5.0`.
 
-I only use the positive side here, and I am cautious about it:
+What patients praise:
 
-- some names are common surnames across several practices
-- some recent reviews include practice-response text, which can inflate name mentions
-- so the safest cases are names clearly concentrated in one practice and backed by direct patient praise
+- empathy
+- thoroughness
+- follow-up
+
+Example:
+
+> "Every time he has been caring and professional listening to me, showing genuine empathy then offering a good solution"  
+> recent review, `5 days ago`
 
 ### Dr Suchit, `The Range Medical Centre`
 
-`52` reviews mention `Suchit`, with an average rating of `4.88`. Almost all are positive, and the signal is unusually concentrated.
+`32` high-star review mentions, average rating `5.0`.
 
 What patients praise:
 
 - listening
 - being thorough
-- being understanding
-- not rushing the consultation
+- thoughtful explanations
+- not rushing
 
 Examples:
-
-> "My daughter was seen by Dr Suchit today, he is very understanding, listened to all my concerns and didn't rush for the consultation."  
-> Ayesha, `5` stars
 
 > "Dr Suchit is knowledgeable, professional and thoughtful."  
-> Chan Doris, `5` stars
+> recent review, `Edited a week ago`
 
 > "Dr Suchit was a very good listener and thorough during my appointment."  
-> Milton Mendes, `5` stars
+> recent review, `2 months ago`
 
-### Dr Arif, `The Range Medical Centre`
+### Other strong repeated doctor praise
 
-`41` reviews mention `Arif`, average rating `4.71`. Again, the praise is concentrated and strong.
+The enlarged corpus still shows concentrated positive-name clusters for:
 
-What patients praise:
+- `Dr Johnson`, `Millgate Healthcare Partnership`: `28` mentions, average `4.93`
+- `Dr Arif`, `The Range Medical Centre`: `18` mentions, average `4.94`
+- `Dr Pigney`, `LADYBARN GROUP PRACTICE`: `14` mentions, average `5.0`
+- `Dr Ibrahim`, `Harwood Medical Centre`: `14` mentions, average `4.93`
+- `Dr Lam`, `Padgate Medical Centre`: `13` mentions, average `5.0`
+- `Dr Dodd`, `Holes Lane Medical Ltd.`: `11` mentions, average `5.0`
 
-- being easy to talk to
-- friendliness
-- attentiveness
-- making the patient feel relieved
+These clusters do not all mean the same thing, but the praise language is strikingly similar: listened, kind, thorough, reassuring, took time, explained clearly.
 
-Examples:
+### Named nurse and reception praise exists too
 
-> "Dr Arif was very helpful and attentive!"  
-> Anne Wakomo, `5` stars
-
-> "I had nice experience with Dr Arif today. She is so nice and friendly. After talking to her, I became relieved."  
-> Hannah Deblu, `5` stars
-
-### Dr Pigney, `LADYBARN GROUP PRACTICE`
-
-`27` reviews mention `Pigney`, average rating `4.63`.
-
-What patients praise:
-
-- minor surgery care
-- detailed explanations
-- making people feel comfortable
-- listening well
+The named non-doctor praise is less concentrated, but it is there, and it matters.
 
 Examples:
 
-> "The service I have had for my minor surgery is outstanding ... very professional, explains all in great detail and makes me feel as comfortable as possible."  
-> Beth Oconnor, `5` stars
+> "A big thank you to Debbie ... She is very sweet, gentle and professional."  
+> recent review, `ROCHDALE ROAD MEDICAL CENTRE`, `a month ago`
 
-> "I felt very comfortable talking to her and she really listened, and gave the best advice possible."  
-> Anila Mushtaq, `5` stars
+> "Nurse Debbie is one of the most kind and caring people in this practice."  
+> recent review, `ROCHDALE ROAD MEDICAL CENTRE`, `a month ago`
 
-### Dr Ibrahim, mainly `Harwood Medical Centre`
+> "Spoke to leanne on reception this afternoon ... answered my concerns and made me feel so much at ease."  
+> James Molloy, `The Poplars Medical Practice`, `a month ago`
 
-`37` reviews mention `Ibrahim`, average rating `4.49`, with the strongest cluster at `Harwood Medical Centre`.
+> "Leanne was very polite, professional and helpful"  
+> Kathryn Ashworth, `Heywood Health`, `a year ago`
 
-What patients praise:
+> "the reception team has been incredibly welcoming and helpful, especially Nabila"  
+> HDS Driving School, `The Whitswood Practice`, `11 months ago`
 
-- compassion
-- support
-- reassurance
-- sticking with patients through longer treatment or recovery
-
-Examples:
-
-> "Dr ibrahim listened to my concerns, was supportive and reactive."  
-> Kath Taylor, `5` stars
-
-> "Excellent care and compassion shown by Dr Ibrahim."  
-> Alastair Bell, `5` stars
-
-> "Dr Ibrahim has been so helpful and understanding. He is kind and knowledgable."  
-> Sheila Darby, `5` stars
-
-### Named reception and admin praise
-
-There are fewer strong repeated named admin signals than named doctor signals, but they do exist.
-
-Examples:
-
-> "Just wanted to say a big thank you to Leanne for her help today ... Leanne was very polite, pleasant and helpful."  
-> Jackie Turner, `The Poplars Medical Practice`, `5` stars
-
-> "Leanne has gone the extra mile yet again and managed to get an appointment ... she is always efficient and such a pleasant attitude and patience for everyone."  
-> Ann Swift, `The Poplars Medical Practice`, `5` stars
-
-> "the reception team has been incredibly welcoming and helpful, especially Nabila, who always goes above and beyond to assist with any queries."  
-> HDS Driving School, `The Whitswood Practice`, `5` stars
-
-This is useful because it shows that patients do notice specific front-desk people when they reduce stress instead of adding to it.
+That is useful because it shows patients do notice specific admin and nursing staff when they reduce stress instead of adding to it.
 
 ## What Patients Criticise Most
 
-### 1. Rude, dismissive, or hostile staff attitude
+### Rude, dismissive, or hostile handling
 
-This is one of the strongest complaint themes in the corpus.
+This is still one of the strongest complaint themes in the whole corpus.
 
-`1,650` low-star reviews, `10.1%` of all reviews and `25.0%` of `1` and `2` star reviews, hit a clear staff-attitude bucket.
+A refreshed pass found `3,249` low-star reviews in this bucket.
 
 Patients complain about:
 
@@ -218,75 +219,69 @@ Patients complain about:
 - being spoken over
 - impatience
 - hostility
-- feeling belittled or brushed off
+- being treated like a nuisance
 
-Examples:
+Recent examples:
 
-> "Reception staff so rude and unhelpful!!!!"  
-> `Mandalay Medical Centre`, `1` star
+> "If you like long waits for an appointment ... and unhelpful reception staff. Really poor."  
+> `Cottage Lane Surgery`, `Edited 2 weeks ago`
 
-> "Reception staff very rude and unhelpful"  
-> `Wellfield Medical Centre`, `1` star
+> "Reception team is awful. Rude. Unorganised."  
+> `Charlestown MD`, `3 weeks ago`
 
-> "One of the reception staff is unhelpful and rude, and she is impatient when you have queries."  
-> `Ardwick Medical Practice`, `1` star
+This is not just a manners complaint. In a lot of reviews, rude handling is part of how patients experience being blocked from care.
 
-This is not just a tone complaint. In a lot of reviews, rude handling is part of being blocked from care.
+### Not being listened to, or being brushed off
 
-### 2. Not being listened to
+A refreshed pass found `479` low-star reviews in this bucket.
 
-`477` low-star reviews, `2.9%` of all reviews and `7.2%` of low-star reviews, hit a bucket around being ignored, rushed, or not properly heard.
+That is still probably an underestimate, because patients often describe this in many different ways.
 
-The numbers here are probably an underestimate, because patients often describe this without using neat keywords.
-
-What patients object to:
+What they object to is clear:
 
 - feeling rushed
 - not being believed
-- not having concerns properly heard
+- concerns being waved away
 - poor explanation
 
-This is one place where the reviews are especially useful. The patient survey asks whether a professional listened. The reviews show what it feels like when patients think they did not.
+Example:
 
-### 3. Clinical trust failures
+> "I was refused and then sent a requirement for a medical review when there was no need"  
+> `Knowsley Medical Centre`, `2 weeks ago`
 
-`707` low-star reviews, `4.3%` of all reviews and `10.7%` of low-star reviews, mention diagnosis, prescribing, treatment, or negligence-type language.
+This is one of the places where the reviews are especially useful. The survey can ask if someone listened. The reviews show what it feels like when patients think they did not.
 
-This is the sharpest complaint area in terms of risk and trust.
+### Clinical judgement and safety concerns
+
+A narrower pass found `269` low-star reviews with more direct clinical-judgement or safety language in the staff-and-clinician context.
 
 Examples:
 
-> "Be careful with this practice, misdiagnosed my uncle after months of going back and forth."  
-> `RADCLIFFE MEDICAL PRACTICE`, `1` star
+> "Worst GP ... allergic reaction ... First they tried to avoid us and referring us to pharmacist"  
+> `Church View Medical Centre`, `3 weeks ago`
 
-> "misdiagnosed a communicable infection - the WORST practice I have ever had to attend."  
-> `The Alastair Ross Medical Practice`, `1` star
+> "Misdiagnosed for over TWO years because doctors refused face to face appointments and wouldn't listen."  
+> `St. Andrew's House Surgery`, `2 years ago`
 
-> "I've had a terrible time at this practice, I've been misdiagnosed, I've had results that weren't reported to me and it is an impossible task to book an appointment."  
-> `Bolton Community Practice CIC - Ladybridge Surgery`, `1` star
+Here the issue is not just bedside manner. It is whether patients trust the judgement, follow-through, and safety of what happened.
 
-Here again, the issue is not just bedside manner. It is whether patients trust the judgment, follow-through, and safety of what happened.
+### Decisions patients describe as rigid, unfair, or careless
 
-### 4. Decisions and processes patients feel are unreasonable
+This bucket is smaller in the stricter pass, but it still matters because it keeps turning up in the narrative of negative reviews.
 
-The negative reviews also point to a set of recurring decisions and handling styles that patients strongly dislike:
+Patients object to:
 
 - being told to go online when they cannot
 - being told to call back tomorrow
 - being left waiting for callbacks or results
-- difficulty with repeat prescriptions
-- feeling the staff member is defending the system instead of solving the problem
+- repeat prescriptions becoming a fight
+- staff appearing to defend the system rather than solve the problem
 
-Example:
-
-> "I never knew it would be so difficult to get a repeat prescription for Omeprazole."  
-> `Brooklands Medical Practice`, `1` star
-
-This is important because it shows that many complaints are about judgement as much as delay. Patients do not only dislike waiting. They dislike decisions that feel rigid, unfair, or careless.
+These are not only delay complaints. They are judgement complaints.
 
 ## What Good Care Looks Like In Patient Language
 
-If you strip the reviews back to what patients seem to want from the people handling their care, the pattern is very plain.
+If you strip the report back to what patients seem to want from the people handling their care, the pattern is plain enough.
 
 Patients value staff and clinicians who:
 
@@ -311,21 +306,21 @@ That sounds obvious, but the review corpus makes it much more concrete than a su
 
 ## What This Means
 
-There are two big lessons here.
+Two things stand out more clearly in the enlarged corpus.
 
-### 1. People matter as much as process
+### People matter as much as process
 
-The corpus already shows how important access systems are. But inside those systems, patients still experience care through human beings.
+The wider review work already shows how important access systems are. But inside those systems, patients still experience care through human beings.
 
 A bad appointment route plus a kind receptionist can still leave someone feeling helped.
 
 A working appointment route plus a dismissive clinician can still leave someone furious.
 
-### 2. Patients reward both kindness and competence
+### Patients reward kindness and competence together
 
-The strongest positive named praise is not just "nice doctor" praise.
+The strongest positive named praise is not just nice doctor praise.
 
-It is praise for doctors and staff who are:
+It is praise for staff who are:
 
 - kind
 - listening
@@ -333,9 +328,9 @@ It is praise for doctors and staff who are:
 - reassuring
 - effective
 
-And the strongest complaints are not just "long wait" complaints.
+And the strongest complaints are not just long-wait complaints.
 
-They are complaints where delay is mixed with disrespect, weak judgment, poor explanation, or failure to carry something through.
+They are complaints where delay is mixed with disrespect, weak judgement, poor explanation, or failure to carry something through.
 
 ## Bottom Line
 
@@ -357,4 +352,4 @@ And they are very clear about what bad care feels like:
 - unsafe
 - unreliable
 
-The positive-name signals suggest that some individual clinicians and staff leave a very strong good impression in public reviews. The negative side suggests that when patients are upset, the biggest issue is usually not one bad personality in isolation. It is the mix of tone, judgment, and system handling that makes them feel shut out or badly cared for.
+The positive-name clusters suggest that some individual clinicians and staff leave a very strong good impression in public reviews. The negative side suggests that when patients are upset, the biggest issue is usually not one bad personality in isolation. It is the mix of tone, judgement, and system handling that makes them feel shut out or badly cared for.

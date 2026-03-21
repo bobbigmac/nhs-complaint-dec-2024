@@ -384,6 +384,8 @@ PAGE_DOCS: list[dict[str, object]] = [
     },
 ]
 
+REVIEWS_REPORTS_OVERVIEW_SOURCE = "datasets/reviews-search/output/reports-overview.md"
+
 REVIEWS_REPORT_DOCS: list[dict[str, str]] = [
     {
         "slug": "overview",
@@ -414,6 +416,14 @@ REVIEWS_REPORT_DOCS: list[dict[str, str]] = [
         "source": "datasets/reviews-search/output/online-web-platform-experience-report.md",
     },
     {
+        "slug": "digital-appointment-ranking",
+        "source": "datasets/reviews-search/output/digital-appointment-practice-ranking-report.md",
+    },
+    {
+        "slug": "digital-platform-allocation",
+        "source": "datasets/reviews-search/output/digital-platform-allocation-report.md",
+    },
+    {
         "slug": "activism",
         "source": "datasets/reviews-search/output/activism-community-response-report.md",
     },
@@ -422,18 +432,6 @@ REVIEWS_REPORT_DOCS: list[dict[str, str]] = [
         "source": "datasets/reviews-search/output/gtd-managed-practices-ppg-report.md",
     },
 ]
-
-REVIEWS_REPORTS_INTRO = """
-These review reports were written as separate notes so each theme could be explored properly: access, staff, clinical harm, practice responses, digital routes, activism-style reviewing, and the GTD-only slice.
-
-This page turns them into one readable bundle. Each report sits in its own panel with a short summary on the heading line, so readers can scan the set quickly, open only what they need, or expand everything and print it as one long briefing.
-""".strip()
-
-REVIEWS_REPORTS_OUTRO = """
-The reports overlap on purpose. They are different cuts of the same review corpus rather than separate datasets, so the same practice or failure mode may appear in more than one panel.
-
-If you want a reading order, start with the overview, then access, staff, clinical harm, responses, digital routes, activism, and the GTD-only report at the end. If you want a single printable bundle, use `Expand all` first and then print the page.
-""".strip()
 
 
 def find_latest_report_dir() -> Path:
@@ -740,6 +738,8 @@ def collect_published_sources() -> list[Path]:
     for report_spec in REVIEWS_REPORT_DOCS:
         source = resolve_source_path(str(report_spec["source"]))
         sources[str(source)] = source
+    overview_source = resolve_source_path(REVIEWS_REPORTS_OVERVIEW_SOURCE)
+    sources[str(overview_source)] = overview_source
     return sorted(sources.values(), key=lambda path: path.as_posix())
 
 
@@ -1062,6 +1062,97 @@ def first_sentence(text: str) -> str:
     return cleaned
 
 
+def split_markdown_h2_sections(markdown_text: str) -> tuple[str, list[tuple[str, str]]]:
+    intro_lines: list[str] = []
+    sections: list[tuple[str, str]] = []
+    current_heading: str | None = None
+    current_lines: list[str] = []
+
+    for raw_line in markdown_text.splitlines():
+        if raw_line.startswith("## "):
+            if current_heading is None:
+                current_heading = raw_line[3:].strip()
+            else:
+                sections.append((current_heading, "\n".join(current_lines).strip()))
+                current_heading = raw_line[3:].strip()
+                current_lines = []
+            current_lines.append(raw_line)
+            continue
+        if current_heading is None:
+            intro_lines.append(raw_line)
+        else:
+            current_lines.append(raw_line)
+
+    if current_heading is not None:
+        sections.append((current_heading, "\n".join(current_lines).strip()))
+
+    return "\n".join(intro_lines).strip(), sections
+
+
+def extract_report_filenames(markdown_text: str) -> list[str]:
+    filenames: list[str] = []
+    seen: set[str] = set()
+    for match in re.finditer(r"`([^`]+\.md)`", markdown_text):
+        name = match.group(1).strip()
+        if name in seen:
+            continue
+        seen.add(name)
+        filenames.append(name)
+    return filenames
+
+
+def build_review_report_panel(
+    report_spec: dict[str, str],
+    *,
+    published_files: dict[str, str],
+) -> str:
+    source_key = str(report_spec["source"])
+    source_path = resolve_source_path(source_key)
+    markdown_text = source_path.read_text(encoding="utf-8")
+    title = extract_markdown_title(markdown_text, fallback=report_spec["slug"].replace("-", " ").title())
+    summary = first_sentence(extract_intro_paragraph(markdown_text)) or "Open this panel to read the full report."
+    body, footnote_refs = extract_footnotes(markdown_text)
+    body_html, _ = markdown_to_html(
+        body,
+        drop_first_h1=True,
+        footnote_refs=footnote_refs or None,
+        heading_id_prefix=str(report_spec["slug"]),
+    )
+    if footnote_refs:
+        footnotes_html = [
+            '<details class="cited-reviews-details"><summary>Show cited reviews</summary><section class="footnotes" aria-label="Cited reviews">'
+        ]
+        for n in sorted(footnote_refs.keys(), key=int):
+            footnotes_html.append(
+                f'<div class="footnote" id="{html.escape(str(report_spec["slug"]), quote=True)}-fn-{n}"><sup>{n}</sup> {html.escape(footnote_refs[n])}</div>'
+            )
+        footnotes_html.append("</section></details>")
+        body_html += "".join(footnotes_html)
+    site_path = published_files[source_key]
+    return (
+        f"""
+        <details class="report-panel" data-report-panel>
+          <summary class="report-panel-summary">
+            <span class="report-panel-copy">
+              <span class="report-panel-title">{html.escape(title)}</span>
+              <span class="report-panel-description">{render_inline_markdown(summary)}</span>
+            </span>
+            <span class="report-panel-meta" aria-hidden="true"></span>
+          </summary>
+          <div class="report-panel-body">
+            <div class="report-panel-actions">
+              <a class="link-pill link-pill-secondary" href="{html.escape(relative_site_href(f'{REVIEWS_REPORTS_SITE_DIR}/index.html', site_path), quote=True)}">Source markdown</a>
+              <a class="link-pill link-pill-secondary" href="{html.escape(markdown_print_href_from(f'{REVIEWS_REPORTS_SITE_DIR}/index.html', site_path), quote=True)}">Print source</a>
+            </div>
+            <div class="doc-body report-body">
+              {body_html}
+            </div>
+          </div>
+        </details>
+        """.strip()
+    )
+
+
 def build_reviews_reports_page(
     out_dir: Path,
     *,
@@ -1070,65 +1161,60 @@ def build_reviews_reports_page(
     updated_value: str,
 ) -> None:
     template = load_template("reviews_reports.html")
-    intro_html, _ = markdown_to_html(REVIEWS_REPORTS_INTRO)
-    outro_html, _ = markdown_to_html(REVIEWS_REPORTS_OUTRO)
-    panels: list[str] = []
-    for report_spec in REVIEWS_REPORT_DOCS:
-        source_key = str(report_spec["source"])
-        source_path = resolve_source_path(source_key)
-        markdown_text = source_path.read_text(encoding="utf-8")
-        title = extract_markdown_title(markdown_text, fallback=report_spec["slug"].replace("-", " ").title())
-        summary = first_sentence(extract_intro_paragraph(markdown_text)) or "Open this panel to read the full report."
-        body, footnote_refs = extract_footnotes(markdown_text)
-        body_html, _ = markdown_to_html(
-            body,
-            drop_first_h1=True,
-            footnote_refs=footnote_refs or None,
-            heading_id_prefix=str(report_spec["slug"]),
+    overview_markdown = resolve_source_path(REVIEWS_REPORTS_OVERVIEW_SOURCE).read_text(encoding="utf-8")
+    intro_markdown, overview_sections = split_markdown_h2_sections(overview_markdown)
+    intro_html, _ = markdown_to_html(intro_markdown, drop_first_h1=True)
+    report_specs_by_filename = {
+        Path(str(spec["source"])).name: spec for spec in REVIEWS_REPORT_DOCS
+    }
+    report_sections_html: list[str] = []
+    outro_html = ""
+
+    for heading, section_markdown in overview_sections:
+        section_html, _ = markdown_to_html(
+            section_markdown,
+            heading_id_prefix=re.sub(r"[^a-z0-9]+", "-", heading.lower()).strip("-") or "report-section",
         )
-        if footnote_refs:
-            footnotes_html = ['<details class="cited-reviews-details"><summary>Show cited reviews</summary><section class="footnotes" aria-label="Cited reviews">']
-            for n in sorted(footnote_refs.keys(), key=int):
-                footnotes_html.append(
-                    f'<div class="footnote" id="{html.escape(str(report_spec["slug"]), quote=True)}-fn-{n}"><sup>{n}</sup> {html.escape(footnote_refs[n])}</div>'
+        filenames = extract_report_filenames(section_markdown)
+        panels = [
+            build_review_report_panel(report_specs_by_filename[name], published_files=published_files)
+            for name in filenames
+            if name in report_specs_by_filename
+        ]
+        section_block = [
+            '<section class="doc-article reports-context-block">',
+            '  <div class="doc-body">',
+            section_html,
+            "  </div>",
+            "</section>",
+        ]
+        if heading.strip().lower() == "refresh notes":
+            outro_html = "\n".join(section_block)
+            continue
+        report_sections_html.append("\n".join(section_block))
+        if panels:
+            report_sections_html.append(
+                "\n".join(
+                    [
+                        '<section class="reports-stack" aria-label="Review reports">',
+                        *panels,
+                        "</section>",
+                    ]
                 )
-            footnotes_html.append("</section></details>")
-            body_html += "".join(footnotes_html)
-        site_path = published_files[source_key]
-        panels.append(
-            f"""
-            <details class="report-panel" data-report-panel>
-              <summary class="report-panel-summary">
-                <span class="report-panel-copy">
-                  <span class="report-panel-title">{html.escape(title)}</span>
-                  <span class="report-panel-description">{render_inline_markdown(summary)}</span>
-                </span>
-                <span class="report-panel-meta" aria-hidden="true"></span>
-              </summary>
-              <div class="report-panel-body">
-                <div class="report-panel-actions">
-                  <a class="link-pill link-pill-secondary" href="{html.escape(relative_site_href(f'{REVIEWS_REPORTS_SITE_DIR}/index.html', site_path), quote=True)}">Source markdown</a>
-                  <a class="link-pill link-pill-secondary" href="{html.escape(markdown_print_href_from(f'{REVIEWS_REPORTS_SITE_DIR}/index.html', site_path), quote=True)}">Print source</a>
-                </div>
-                <div class="doc-body report-body">
-                  {body_html}
-                </div>
-              </div>
-            </details>
-            """.strip()
-        )
+            )
+
     page_html = replace_tokens(
         template,
         {
             "PAGE_TITLE": "Review Reports",
             "DOC_TITLE": "Consolidated Review Reports",
-            "DOC_SUMMARY": "A single page that bundles the review-analysis notes into collapsible, printable panels.",
+            "DOC_SUMMARY": "A single page structured from the reports overview, with each full report embedded beneath the matching section.",
             "UPDATED_DATE": html.escape(updated_value),
             "REPORT_NAME": html.escape(report_name),
             "REPORT_COUNT": str(len(REVIEWS_REPORT_DOCS)),
             "INTRO_HTML": intro_html,
             "OUTRO_HTML": outro_html,
-            "REPORT_PANELS": "\n".join(panels),
+            "REPORT_PANELS": "\n".join(report_sections_html),
             "HOME_HREF": relative_site_href(f"{REVIEWS_REPORTS_SITE_DIR}/index.html", "index.html"),
             "MAP_HREF": relative_site_href(f"{REVIEWS_REPORTS_SITE_DIR}/index.html", "map/map.html"),
             "PRINT_TOOL_HREF": relative_site_href(f"{REVIEWS_REPORTS_SITE_DIR}/index.html", TOOL_VIEWER_PATH),

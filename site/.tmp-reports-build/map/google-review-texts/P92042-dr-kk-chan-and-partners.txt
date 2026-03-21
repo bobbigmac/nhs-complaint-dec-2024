@@ -4,11 +4,16 @@ Postcode: M46 9DE
 Google Maps title: Dr KK Chan
 Google rating: 3.3
 Google review count: 6
-Google Maps URL: https://www.google.com/maps/place/Dr+KK+Chan/@53.5241523,-2.4934803,17z/data=!3m1!5s0x487b07f101d98781:0x6eb17248d5cf6d46!4m12!1m2!2m1!1sDr+KK+Chan+%26+Partners+M46+9DE!3m8!1s0x487bb1bf5285af13:0xaede94e6f56325fa!8m2!3d53.5241523!4d-2.4889742!9m1!1b1!15sCh1EciBLSyBDaGFuICYgUGFydG5lcnMgTTQ2IDlERVofIh1kciBrayBjaGFuICYgcGFydG5lcnMgbTQ2IDlkZZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbE5IRm1RbVYzRUFF4AEA-gEFCOACECw!16s%2Fg%2F1q62kbqtm?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Dr+KK+Chan/@53.5241555,-2.4915545,17z/data=!3m1!5s0x487b07f101d98781:0x6eb17248d5cf6d46!4m12!1m2!2m1!1sDr+KK+Chan+%26+Partners+M46+9DE!3m8!1s0x487bb1bf5285af13:0xaede94e6f56325fa!8m2!3d53.5241523!4d-2.4889742!9m1!1b1!15sCh1EciBLSyBDaGFuICYgUGFydG5lcnMgTTQ2IDlERVofIh1kciBrayBjaGFuICYgcGFydG5lcnMgbTQ2IDlkZZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbE5IRm1RbVYzRUFF4AEA-gEFCOACECw!16s%2Fg%2F1q62kbqtm?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.75
+Review collection mode: full_feed
+Review cards collected: 6
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P92042-dr-kk-chan-and-partners.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: J W
 Date: a year ago

@@ -4,14 +4,19 @@ Postcode: OL7 0LH
 Google Maps title: West End Medical Centre
 Google rating: 3.7
 Google review count: 106
-Google Maps URL: https://www.google.com/maps/place/West+End+Medical+Centre/@53.48056,-2.1075583,17z/data=!4m8!3m7!1s0x487bb6f55a1aade9:0x7170192251348a5b!8m2!3d53.48056!4d-2.1075583!9m1!1b1!16s%2Fg%2F11c1xfdyvf?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/West+End+Medical+Centre/@53.4805632,-2.1101386,17z/data=!4m8!3m7!1s0x487bb6f55a1aade9:0x7170192251348a5b!8m2!3d53.48056!4d-2.1075583!9m1!1b1!16s%2Fg%2F11c1xfdyvf?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 106
+Owner replies collected: 0
+Raw review responses captured: 11
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P89030-west-end-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Gemma Lord
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 Can’t speak more highly of this practice, everyone from receptionist, doctor, nurse and even the pharmacy next door! They can’t do enough for you and have looked after my dad while going through a real tough time - thank you sooo much for keeping an eye out for him xxx
 
@@ -21,7 +26,7 @@ Rating: 2 stars
 Been waiting 4 years for ADHD meds. 3 emails regarding the medication had disappeared from the system. How? no idea and you have to chase every other medical professional to resend over all of the same information thats vanished. Then we have to start all over again because I get discharged (i suffer longer) because people and doctors won't and can't communicate.
 
 Author: valery breezy
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 Very Annoying to book an appointment. All appointments should be call n book at 8am. U call at 8am and be on hold for a more than a minute. U call back at 8:10am and they said u can’t book an appointment case it is not 8am. Like what should I do ? 😡 …
 
@@ -31,12 +36,12 @@ Rating: 5 stars
 Amazing respectionest always on call when you need her feel like I can trust her wirh anything i hahe to say and it always gwts told the thenright ears to sort staff always polite and willing to help anyone in need
 
 Author: H K
-Date: 5 months ago
+Date: 6 months ago
 Rating: 1 star
 Had the unfortunate opportunity of having an appointment with Dr Shaukat recently. He was on the phone to me for 2 minutes and then told me that my appointment time was up. Absolutely absurd from a medical professional who has a duty of care towards their patients. Very disappointed.
 
 Author: Yvy ivs
-Date: 6 months ago
+Date: 7 months ago
 Rating: 1 star
 I truly miss my old GP office in Stockport. This one it's impossible to get an appointment not even for a baby so very disappointing
 
@@ -51,11 +56,491 @@ Rating: 5 stars
 Dr Platt & Receptionist was so kind to rearrange my appointment and then Dr Platt gave me time to hear me out and helped me out. He really showed care towards me which made me feel valued
 
 Author: Joel Cartaxo
-Date: 7 months ago
+Date: 8 months ago
 Rating: 2 stars
 I've noticed that some doctors don't seem to listen, especially if you've got an accent from overseas. They just don't have the patience to hear out their patients. Just so you know: many immigrants contribute to the NHS; I'm one of them. I feel like my symptoms aren't being fully heard or understood. It feels like there's a lack of patience to truly listen to what I'm going through. My foreign accent shouldn't impact the quality of care or attention I get. As an immigrant, I contribute significantly to the NHS through my taxes and work.
 
 Author: Elaine Potter
-Date: 7 months ago
+Date: 8 months ago
 Rating: 5 stars
 It's a very clean doctor's surgery, most of the staff will listen to your problem and the doctors will explain things clearly to you.
+
+Author: lynne worrall
+Date: 8 months ago
+Rating: 5 stars
+Reception staff are friendly and helpfull.Nurses and doctors are informative and caring.
+
+Author: david mycroft
+Date: 8 months ago
+Rating: 5 stars
+On the whole the services of this practice are outstandingly good. I would recommend anyone to register However I was seen by a Dr this morning and he was rushing me thru. I didn't get to talk about a prostrate concern and was told make another appointment I told him about a itching nipple and he didn't even look at it. I'm not happy. David Mycroft
+
+Author: Sharon 01
+Date: Edited 8 months ago
+Rating: 4 stars
+Got an appointment very quickly at 8am dr Platt was brilliant explains everything well and has time for you
+
+Author: Siddiqa Bilal
+Date: 8 months ago
+Rating: 5 stars
+Siddiqa Bilal8 months ago
+
+Author: rebecca daniel
+Date: Edited 8 months ago
+Rating: 5 stars
+Everyone at west medical centre today are helpful.
+
+Author: Sheldon Peters
+Date: 9 months ago
+Rating: 5 stars
+I've had nothing but good experiences from this GP. They're always very helpful and I think the reception staff are very polite. I think a lot of the bad reviews are old ones.
+
+Author: L S
+Date: 9 months ago
+Rating: 5 stars
+Dr elli was respectful and direct with my tratment she made me feel very relaxed throughout my consultation
+
+Author: Hamid Riaz
+Date: 9 months ago
+Rating: 5 stars
+My concerns have been listened and addressed
+
+Author: Allan
+Date: 9 months ago
+Rating: 5 stars
+Always helpful if possible.
+
+Author: Trevor Hatch
+Date: 9 months ago
+Rating: 5 stars
+Trevor Hatch1 photo9 months ago
+
+Author: Sufi Muhammad Tahir Lal
+Date: 9 months ago
+Rating: 5 stars
+Soo Much help full and kind staff
+
+Author: cheryl stephenson
+Date: 9 months ago
+Rating: 5 stars
+cheryl stephenson9 months ago
+
+Author: Zaffar Iqbal
+Date: 9 months ago
+Rating: 5 stars
+WEM centre seems to have improved enormously. Excellent experience today.
+
+Author: Max The Main
+Date: 9 months ago
+Rating: 5 stars
+Max The Main9 months ago
+
+Author: Victoria Edwards
+Date: 9 months ago
+Rating: 5 stars
+Receptionist was welcoming, saw the doctor on time and they answered all my questions and gave a positive plan to move forward
+
+Author: Eleanor Bennett
+Date: 9 months ago
+Rating: 4 stars
+Eleanor Bennett9 months ago
+
+Author: Michelle Penny
+Date: 9 months ago
+Rating: 4 stars
+The staff are very friendly and helpful, I feel very secure in the knowledge that me and my family are looked after and listened to at this practice.
+
+Author: Paul Gibbs
+Date: 10 months ago
+Rating: 4 stars
+Paul GibbsLocal Guide · 94 reviews · 32 photos10 months ago
+
+Author: COLIN 65 (Manu)
+Date: 10 months ago
+Rating: 5 stars
+COLIN 65 (Manu)1 review10 months ago
+
+Author: William Davis
+Date: 10 months ago
+Rating: 5 stars
+Good service great front desk service nurses are very nice and kind docs are good only issue i can think of is how hard it is to get an appointment but that is the same everywhere there are too few appointments and not enough doctors so if you haven't got one for that day by quarter past would be near impossible too get one. So overall I would give a great review for the practice overall thanks guy's and gal's
+
+Author: Lynne Murphy
+Date: 10 months ago
+Rating: 5 stars
+Lynne Murphy2 reviews10 months ago
+
+Author: darren coles
+Date: 10 months ago
+Rating: 5 stars
+darren coles7 reviews · 3 photos10 months ago
+
+Author: Linda Aldred
+Date: 10 months ago
+Rating: 5 stars
+Went for a blood test, was done before my appointment time and any problems they will contact me, which means I don't have to remember to chase results
+
+Author: Krys G
+Date: 10 months ago
+Rating: 5 stars
+Krys GLocal Guide · 7 reviews · 15 photos10 months ago
+
+Author: Asia Ashraf
+Date: 10 months ago
+Rating: 1 star
+Pick up the phone
+
+Author: Yasmin Chadwick
+Date: 10 months ago
+Rating: 5 stars
+Outstanding doctors surgery, the nurses and receptionists are always helpful, even if we have to wait these days as appointments are difficult to get, it's been excellent service for myself and my 88 year old mother, I am very happy I am registered here, thank you for always understanding too, about anything I come for.
+
+Author: Gary Winterbottom
+Date: 10 months ago
+Rating: 5 stars
+Gary WinterbottomLocal Guide · 14 reviews · 72 photos10 months ago
+
+Author: Raven 333
+Date: 10 months ago
+Rating: 4 stars
+I have been at west end medical centre for numerous years. It is sometimes difficult to get appointments as and when needed. Staff are polite and helpful .
+
+Author: Diane
+Date: 10 months ago
+Rating: 5 stars
+Fab receptionist as all ways an the new doctor really listens an takes his time
+
+Author: Lorraine Mitchell
+Date: 10 months ago
+Rating: 5 stars
+Very helpful, didn't feel rushed, listened and understood how much pain i was in
+
+Author: Badar Ali
+Date: Edited 10 months ago
+Rating: 5 stars
+Friendly
+
+Author: Clair Stringer
+Date: 10 months ago
+Rating: 5 stars
+Asthma nurse is amazing at this surgery. Unlike the GPs she comes across interested and like she has time for you.
+
+Author: Nicola Woods
+Date: 10 months ago
+Rating: 4 stars
+Nicola Woods4 reviews10 months ago
+
+Author: Martin Osbaldeston
+Date: 10 months ago
+Rating: 5 stars
+I rang this morning, thursday 1May 2025 to see a doctor and they answered the phone within 3 rings. I have never had cause to compliain and think all the staff are brilliant. Keep up the good work guys.
+
+Author: EIleen Travis
+Date: 10 months ago
+Rating: 5 stars
+Heather was very helpful.
+
+Author: Patricia McDermott
+Date: Edited 10 months ago
+Rating: 5 stars
+I'm absolutely satisfied with the treatment I get at the surgery the staff are very very good.
+
+Author: Derek Cropper
+Date: 10 months ago
+Rating: 5 stars
+Everybody in West end medical centre are always helpful
+
+Author: Patrick Carroll
+Date: Edited 10 months ago
+Rating: 5 stars
+Patrick CarrollEdited 10 months ago
+
+Author: Naghmana Kauser
+Date: 10 months ago
+Rating: 5 stars
+Naghmana Kauser1 review10 months ago
+
+Author: zeeshan younas
+Date: 10 months ago
+Rating: 5 stars
+They listen attentively to your concerns, speak clearly and understandably, and ensure you feel heard and involved in decisions about your care. A special thank you to the blood sample collection team for their excellent service today!" May God Bless you 🙏
+
+Author: Mary Pemberton
+Date: Edited 10 months ago
+Rating: 5 stars
+Very efficient, prompt appointments, pleasant helpful reception and good medical service.
+
+Author: Dorothy Turner
+Date: 10 months ago
+Rating: 5 stars
+Dorothy Turner10 months ago
+
+Author: Jeff Leah
+Date: 11 months ago
+Rating: 5 stars
+First class service starting with booking and appointment, seeing a doctor and receiving a prescription same day. Friendly consultation, informative and a good experience all round. Thank You
+
+Author: Phil Cotterill
+Date: Edited 11 months ago
+Rating: 5 stars
+I attended surgery on Monday with a serious problem. I was listened to and examined and referred on that day to appropriate services. I was followed up on Wednesday and Thursday as i had been advised Wednesday to attend A/E. I agree that there are problems with accessing appointments at this surgery however my recent experience was professional and helpful. LYNNE Cotterill.
+
+Author: Mary Joyce
+Date: 11 months ago
+Rating: 5 stars
+Great service amazing staff
+
+Author: Lee Scott
+Date: 11 months ago
+Rating: 5 stars
+Quick reliable appointment at this clinic and great attentive service also to my elderly father. Thankyou
+
+Author: Michele Peach
+Date: 11 months ago
+Rating: 4 stars
+From reading other reviews on here I guess I have been very fortunate. I do agree that it's difficult to get an appointment first thing in the morning, that's the reason I have took a star off however, the service I have received since transferring here during Covid, has been great for me. I work at a school so, often have to work around school holidays for my appointments, and I have always managed to get either a telephone consultation or a face to face. I understand my experience has been different from a lot of other people and I hope this continues.
+
+Author: K Wowczak
+Date: 11 months ago
+Rating: 5 stars
+K Wowczak1 review11 months ago
+
+Author: Viv Boyce
+Date: 11 months ago
+Rating: 5 stars
+Sandra and Heather have been so helpful to me over the last few months.Sandra especially went above and beyond to get me xray documents. The doctors are lovely too and you can usually get an appointment during the week
+
+Author: Steve Hopkins
+Date: 11 months ago
+Rating: 5 stars
+I went in for a blood test, the receptionist was was friendly and courteous, my appointment was more or less on time and went ahead with no problems 😊. …
+
+Author: Kshama Dave
+Date: 11 months ago
+Rating: 5 stars
+Kshama Dave1 review11 months ago
+
+Author: Lauren Cooke
+Date: 11 months ago
+Rating: 5 stars
+Staff are always helpful and polite
+
+Author: Kenneth Squires
+Date: 11 months ago
+Rating: 4 stars
+Just recently doctor been very helpful and thorough with tests and treatments
+
+Author: Stephen James
+Date: 11 months ago
+Rating: 5 stars
+Stephen James11 months ago
+
+Author: Debora Sturman
+Date: 11 months ago
+Rating: 5 stars
+Great advice from GP in telephone appointment. Unfortunately I need a face to face consultation and it will be 3 and a half week to first free date. Although I can call each day to see if there are any cancellations.
+
+Author: Neil Thorley
+Date: 11 months ago
+Rating: 5 stars
+Fantastic visit ! In and out without fuss and helped out with another issue
+
+Author: Aliya
+Date: a year ago
+Rating: 4 stars
+Nurse Paula is really helpful and did a great job in doing the scan 👍🏼 …
+
+Author: Peter Lewin
+Date: a year ago
+Rating: 5 stars
+Well mannered, straight to the point, very helpful
+
+Author: Zrnho Correy
+Date: a year ago
+Rating: 5 stars
+Zrnho CorreyLocal Guide · 271 reviews · 1,466 photosa year ago
+
+Author: Jolie Andrew
+Date: Edited a year ago
+Rating: 1 star
+My second complaint: On the 12th of June I had an appointment to see a GP at West End Medical Centre, Ashton-u-Lyne at 16.50. I buzzed the door and nobody was on reception. I waited about 4 minutes and buzzed again and a receptionist with shortish hair let me in and watched me take a seat and at no point did she ask me my name. At about 17.20 a second receptionist with a fringe and blondish bob haircut appeared behind reception, she started to ask if I was waiting and had I been seen. I walked over to the counter and said no I haven’t been seen yet. She asked me did you give your name? I said no the other woman didn’t ask for it but she had watched me sit down on the seats. The receptionist then literally shouted at me telling me that I have to give my name when I come in. I said, “Why are you shouting at me I don’t know what your policies are, the other woman should have asked my name!” Her face changed once I pulled her up for shouting and she said I’ll see if the Doctor will see you. A few minutes later she came back and said the Doctor would see me. Then a few minutes after that she came back and said the Doctor won’t see you. I stood up and I was still very annoyed about her shouting at me and I said, “ I suppose that’s my fault is it?” I was fuming at the way she had reprimanded me from behind the counter and now I had wasted my time on top of that. It was unnecessary for her to raise her voice to me and tell me off in such a manner. I phoned the practice from my car, I said, “I am the woman you just threw out can you get the practice manager to call me tomorrow please?” She said she didn’t throw me out. I said, “I was due an appointment at 10 to 5 and I’ve been told I can’t have one because you are closing!” She said the manager won’t call you you’ll have to e-mail. I said I’ll take the e-mail address. I told her that the manager called me last time and it’s the second time I’ve had to complain about this surgery. I am fed up of the poor service at West End Medical Centre. I have read the reviews online and this place scores a two. The sorry thing is, you have to give at least a one star rating to do a review. This place needs its customer service looking at and perhaps regular secret checks. I will now have to wait for my next day off before I can go to a walk-in centre. My first complaint: I was given a referral to the eye hospital end of 2023 and received a letter to say if I have heard nothing by Feb 15th 2024 re: an appointment date to call them up at the hospital. I contacted the eye hospital on the 15th and they said my referral had been returned to the GP on December 21st 2023 with a reason why my appointment had been returned. During this time I had spoken to my GP on the phone and had another eye infection and seen him face to face and at no point during this two month period did anybody tell me my appointment had been refused! I have now been told the next option is for me to be referred to another service, no idea how long I am supposed to wait or if I can trust any information getting back to me. I feel 2 months has been wasted where I could be taking steps to get treatment.
+
+Author: Sumaira Ashraf
+Date: a year ago
+Rating: 1 star
+It is bad because they saw my children come and they said that we needed to come to the desk and they said your doctor is gone awful service
+
+Author: diane looms
+Date: a year ago
+Rating: 1 star
+Been trying to get a prescription for 3 day and been told it will be done on each day. Just lie to you and when you go in the system is always down or so they. Never answer the phone and you can never get a appointment Since Dr Doody has gone the place is a joke wouldn’t recommend it to anyone
+
+Author: Lydia newman
+Date: a year ago
+Rating: 5 stars
+Excellent practice nurses are brilliant not seen a GP yet since new practice started but been with this surgery over 30yrs
+
+Author: Janice Booth
+Date: a year ago
+Rating: 5 stars
+Janice BoothLocal Guide · 24 reviews · 3 photosa year ago
+
+Author: GORTON1987 GORTON1987
+Date: 2 years ago
+Rating: 1 star
+Absolutely shocking staff tell lies, just tried ringing for hour at 2pm can't get through so bad.
+
+Author: Millie Hx
+Date: 2 years ago
+Rating: 1 star
+Awful service. Unwilling to help patients, long responses to phone calls. There is only one doctor is practise. No flexibility when nobody is the waiting room. This doctors has rapidly gone down hill since it has been taken over. Do not recommend .
+
+Author: SJ P
+Date: 2 years ago
+Rating: 1 star
+My 79 year old mother was sent a message to go to an open clinic today for her flu jab. Surprise surprise they are closed??!! No message, nothing! Absolutely shocking surgery now. I personally can never get an appointment because I'm in work but it is my mum that's always messed around!
+
+Author: Richard Bolton
+Date: 2 years ago
+Rating: 1 star
+ring for appointment at 8am phone will just ring out for 2min then cutt off . And if you do get through the reception staff and doctors will talk over you . Try to get you off the phone fast . Allso asking for details for your own medical records you need to put it in writing . You can get a basic review of a medical record but if you want the details from certain dates from your record you need to write in first . I only changed to this surgery due to it being more near to where i live . It seems i may of made a big mistake changing to this practice . Stamford surgery is 1000 better
+
+Author: Anime BoyZ
+Date: 2 years ago
+Rating: 1 star
+Go somewhere else.. 1 GP on majority of the time and never answer the damn phone! Gone downhill so bad
+
+Author: Mark Stubley
+Date: 2 years ago
+Rating: 1 star
+I defy the mission impossible team to get through to the surgery on the phone 😤 Shocking 🤯 …
+
+Author: broomee c
+Date: 2 years ago
+Rating: 3 stars
+Staff are friendly and helpful, but that's when you can get hold of them. The NHS/medical centre website is awful to use and when you call its a lottery if they answer the phone. Sometimes straight away, sometimes never after over 10 calls throughout duration of the day (its not even engaged, just calls out the cuts you off eventually).
+
+Author: Rob McKenzie
+Date: 2 years ago
+Rating: 1 star
+Shame you can't leave zero stars, this surgery hasn't gotten with the times, Archaic appointment system... Favourite line is we have an appointment in 2 weeks that's if anyone cba answering the phones, I am yet to meet my new doctor I have been allocated but if he's as bad as the last one Parham I am going to look elsewhere
+
+Author: Dave John
+Date: 2 years ago
+Rating: 5 stars
+Great service this morning from Tracey on reception she was sympathetic and got bernie a face to face appointment same day. Thankyou Tracey
+
+Author: James M
+Date: 2 years ago
+Rating: 1 star
+Absolute joke I have been transferred from Christie’s as out patient and I am supposed to be having ongoing treatment through the Westend medical centre they can’t even pick the phone up never mind arrange a appointment
+
+Author: Phil Sowter
+Date: 2 years ago
+Rating: 1 star
+Got banned for nothing, receptionists at the time told practice manager that I was swearing and rude towards her .total lies. Went in 1 day for appointment and 3 smack heads were waiting for their methadone and while waiting were rolling joints drinking super strength cider and swearing at each other and other patients who seemed to be terrified of them all huddled up as far away as possible from the scumbags, all the time I was waiting to see the doctor this certain receptionists just mamby pamby them with glasses of water and asked if they were alright, after my appointment I asked her why the scumbags were getting so much attention of her as their dependency on methadone is self inflicted and these are the kind of so called people draining the NHS resources, to this rudly she replied that if I didn't like it find another practice, 2 days later I received a letter from the practice manager Martin Cooper acusing me of the above .found another practice much better as well and returned to west end medical center to confront said receptionists a d asked her why she lied and she denied it, I believe that the miserable old cow as left there now which I suppose is a good thing but read reviews of this place and had a lucky escape.
+
+Author: Shah Ali
+Date: 2 years ago
+Rating: 1 star
+Absolute joke of a surgery. Do not consider joining here! They barely ever answer the phone at 8am for appointments therefore I went in person and queued up at 7:55am for 10 minutes (only 4 people in front of me) to make one. When it was my turn, I was simply told they were fully booked! I told the young girl at the reception that only 4 people were ahead of me, 1 of which had a pre-booked appointment, and that I came in person to avoid not getting an appointment. She RAISED her voice at me over the intercom and said all the remaining appointments were booked over the phone! Shocking service, don’t waste your time with these lot!
+
+Author: Garrath Dinsdale
+Date: 2 years ago
+Rating: 1 star
+How do I get through to this shower of s&@t no one answers the phones all I want is a appointment Finally someone picked up the phone and all I got was “no appointments left now “ this was at 8am when I was told to phone 😡 the receptionists attitude is absolutely disgusting and wouldn’t recommend anyone to go here I’m fuming 🤬how can they get away with this it also looks like I’m not the only one they need shutting down Bring back the days of dr parham 🙏
+
+Author: Sara Ali
+Date: 3 years ago
+Rating: 1 star
+This medical practice is beyond awful. I have had ongoing issues and cannot get an appointment for the life of me. They have the worst telephone system to make appointments. So their appointment line opens at 8am and I would start calling from then on, however it keeps ringing and cuts me off after 2 minutes. They do not put their callers on a waiting line. So doesn’t matter if you call from 8am, you will keep getting cut off every 2 mins with no waiting line system which is so frustrating. Please will you look at this review and do something about it. Beyond awful!
+
+Author: Rhiannan Smith
+Date: 3 years ago
+Rating: 1 star
+Since Dr Doody, Dr parham and Edina left this place has seriously gone down hill. I could ring every day all day and no one would answer the phone. I’m 23 and have been with this surgery since birth I’m annoyed with the terrible service. I called 111 in the end
+
+Author: Lauren Crabtree
+Date: 3 years ago
+Rating: 1 star
+I've lost track of how many times I've tried to ring now with no answer. I've tried at different times of the day to see if that made a difference, which it didn't. It would be somewhat ok if they enabled online appointment booking through …
+
+Author: Graham
+Date: 3 years ago
+Rating: 1 star
+Absolutely terrible, do not ring if you need help because they'll just fob you off!
+
+Author: smkyNICK
+Date: 3 years ago
+Rating: 1 star
+Really poor doctors. Canonky get an appointment for that day if you ring at 8 am. But what are your serpose to do if you work.
+
+Author: Cath Tinney
+Date: 3 years ago
+Rating: 5 stars
+Sandra is the best receptionist at West end always trys to help xx
+
+Author: Michelle Templeman
+Date: 3 years ago
+Rating: 1 star
+Wot a joke this place is been ring for 2 days to get to see a doctor been on the phone over 200 times to be to no appointments or every time and to go to the walk on centre
+
+Author: Malini Koria
+Date: 3 years ago
+Rating: 1 star
+Awful practice! Tried to ring to book an appointment at 8:00am and user is already busy, have rang around 30 times in the space of 5 minutes and no answer. Then when you visit the practice to book one they’re “all booked up” - absolutely shocking service!
+
+Author: Sinead Hardy
+Date: 3 years ago
+Rating: 2 stars
+Disappointed to learn that the highlands have taken over this surgery. I moved from the highlands to here because of a terrible couple of experiences with receptionist and drs there. I have also been left disappointed these past two weeks being unable to get an appoint and left to get worse. And I was spoken to disgracefully today and had to walk out of my appointment due to the drs behaviour and wait another 3days for another appointment. It’s a shame the new dr is not as helpful or understand the mean of duty of care as the reception staff, Cassie Tracey and especially Sandra who experienced the dr bad behaviour today and has been amazing trying to help me these past 3 weeks. I can’t sing their praises enough. Once I am sorted I will be looking for a new surgery as I don’t feel like the highlands can manage this well enough. Which is a shame as I’ve been at this dr before and I had no problems
+
+Author: Nipa Khanom
+Date: 3 years ago
+Rating: 5 stars
+our baby son ayman ahmed's doctor Tomson is so good doctor and he is very kind.whenver we got any problem with Ayman's health he solve the problem with a good health.we have some experience with many more doctor they don't like to speak about the problem but Tomson is really different. we are pleased to dr Tomson.
+
+Author: Emma Mcewan
+Date: 4 years ago
+Rating: 2 stars
+Used to be a really good practice, now you can't get through and when you do theres never any appointments resulting in having to go to the walk in centre. What a waste of public resources when a 2 minute conversation with a GP could have been all that was needed.
+
+Author: Karen Brierley
+Date: 4 years ago
+Rating: 1 star
+Rude reception staff Sarcastic remarks to an old infirm patient. Told had an telephone appointment that never happened
+
+Author: Darren Hall
+Date: 4 years ago
+Rating: 5 stars
+Sandra at West End Medical Centre is amazing. She has been so helpful and so professional with her advice,I cannot sing her praises enough. She has gone above and beyond not just once,but on many occasions with regards to my Mother. And I believe she has lovely shoes too...Thank you so much for everything,you are a star. Jackie Hall
+
+Author: Lauren Crabtree
+Date: 3 years ago
+Rating: 1 star
+I've lost track of how many times I've tried to ring now with no answer. I've tried at different times of the day to see if that made a difference, which it didn't. It would be somewhat ok if they enabled online appointment booking through the NHS/patient access App however they don't allow this. We're now moving GPs because there's no point in being registered with a practice that you can't contact.
+
+Author: Gregory Martin
+Date: 4 years ago
+Rating: 2 stars
+V.Nice receptionists. I had a 5 minute discussion with a Dr. He seemed fine, though a touch brusk in manner, and the "well, take it or leave it" comment about the pain relief I was offered made it feel almost "seedy". Though, it did make me laugh 🤣🤣🤣 Not sure i could say that to people on my service desk 😉 Post-covid and a return to face2face appointments are key for the future, telephone consults are never perfect for anyone.
+
+Author: Sofie Leroux
+Date: 5 years ago
+Rating: 1 star
+Absolutely impossible to get a phone call back, my 2 week old son had an eye infection, rather than trying to get a call back for me they advised to go to an already overstretched AnE. This was after phoning around 50 times from when they opened! Having now moved to a new doctors you can really tell how poor their system is.
+
+Author: Amy Foster
+Date: 5 years ago
+Rating: 5 stars
+Everyone at this surgery is amazing! Can’t do enough for you. The reception staff are a credit to the surgery especially Tracy who is always willing to listen and go the extra mile. Thank you West End x
+
+Author: Eva Müllerová
+Date: 6 years ago
+Rating: 1 star
+Tried to register with the centre as i recently moved into area, I walked in to ask their requirements few days ago. Explained that all bills are under my friend's name, however I can provide letters from bank and other institutions as my proof of address. First time i was told this will be acceptable. I came in today with paperwork, my passport, NHS number and information about my previous GP only to meet very arrogant receptionist who I obviousky bothered and to be told that i won't be able to register as i do not have council tax bill (since when is council tax bill required to be registered in NHS facility while living in area which this facility covers?). She spend few seconds "searching" through cabinet with files (very obviously not searching, just going through them) only to return to me and tell me that they run out of forms and these forms will be delivered in 2 weeks time, i do not know which forms she meant, maybe the facility run out of printers as well so they are not able to print simple patient registration form available from NHS websites? I couldn't believe my ears, this was the point when i decided that I'm not keen to be registered in such a facility disregards the level of healthcare provided. I was very arrogantly send to "Try the facility down the road" as i stated it is ridiculous to wait 2 weeks for "forms" to be delivered especially given which time we live in. I do understand that someone can just not have their day or be upset, but such a arrogant treatment from receptionist in medical centre is absolutely unacceptable.
+
+Author: Jakub Polewka
+Date: 6 years ago
+Rating: 1 star
+The clinic on the wrong approach to foreigners always refers to Walk-in-center

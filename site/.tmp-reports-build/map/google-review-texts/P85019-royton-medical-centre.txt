@@ -4,11 +4,16 @@ Postcode: OL2 5QL
 Google Maps title: Royton Medical centre
 Google rating: 2.0
 Google review count: 2
-Google Maps URL: https://www.google.com/maps/place/Royton+Medical+centre/@53.5662586,-2.1255507,17z/data=!4m8!3m7!1s0x487bb90024b90471:0x743a645917b0dd9d!8m2!3d53.5662586!4d-2.1255507!9m1!1b1!16s%2Fg%2F11ykrql56z?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Royton+Medical+centre/@53.5662618,-2.128131,17z/data=!4m8!3m7!1s0x487bb90024b90471:0x743a645917b0dd9d!8m2!3d53.5662586!4d-2.1255507!9m1!1b1!16s%2Fg%2F11ykrql56z?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85019-royton-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Marcus Tomassino
 Date: Edited a month ago

@@ -4,11 +4,16 @@ Postcode: WA1 4PN
 Google Maps title: Woolston Surgery
 Google rating: 3.5
 Google review count: 2
-Google Maps URL: https://www.google.com/maps/place/Woolston+Surgery/@53.3999466,-2.534209,17z/data=!4m8!3m7!1s0x487b01af846f4785:0xb24699dfc8e81da1!8m2!3d53.3999466!4d-2.534209!9m1!1b1!16s%2Fg%2F1tdl12qj?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Woolston+Surgery/@53.3999498,-2.5367893,17z/data=!4m8!3m7!1s0x487b01af846f4785:0xb24699dfc8e81da1!8m2!3d53.3999466!4d-2.534209!9m1!1b1!16s%2Fg%2F1tdl12qj?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/N81109001-woolston-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: florence crowe
 Date: 10 months ago

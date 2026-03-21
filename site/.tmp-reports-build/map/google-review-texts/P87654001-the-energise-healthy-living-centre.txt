@@ -4,11 +4,16 @@ Postcode: M6 6ES
 Google Maps title: The Energise Community Centre
 Google rating: 3.9
 Google review count: 26
-Google Maps URL: https://www.google.com/maps/place/The+Energise+Community+Centre/@53.497673,-2.2837234,17z/data=!3m1!5s0x487bae33399d6915:0xeeec21ebaac8231e!4m8!3m7!1s0x487bae333c0af809:0xeceb23e82ac6131e!8m2!3d53.497673!4d-2.2837234!9m1!1b1!16s%2Fg%2F1q62g5x05?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/The+Energise+Community+Centre/@53.4976762,-2.2863037,17z/data=!3m1!5s0x487bae33399d6915:0xeeec21ebaac8231e!4m8!3m7!1s0x487bae333c0af809:0xeceb23e82ac6131e!8m2!3d53.497673!4d-2.2837234!9m1!1b1!16s%2Fg%2F1q62g5x05?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.333
+Review collection mode: full_feed
+Review cards collected: 26
+Owner replies collected: 0
+Raw review responses captured: 3
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P87654001-the-energise-healthy-living-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Emmely Doherty
 Date: 7 months ago
@@ -59,3 +64,83 @@ Author: Janet Reygan
 Date: 6 years ago
 Rating: 4 stars
 Friendly and welcoming with a good range of therapies
+
+Author: C W
+Date: 6 years ago
+Rating: 3 stars
+C WLocal Guide · 56 reviews · 15 photos6 years ago
+
+Author: Lisa Green (psychogreenie)
+Date: 6 years ago
+Rating: 4 stars
+Lisa Green (psychogreenie)Local Guide · 73 reviews · 28 photos6 years ago
+
+Author: Oli Tobin
+Date: 6 years ago
+Rating: 4 stars
+Oli TobinLocal Guide · 13 reviews · 17 photos6 years ago
+
+Author: Michelle Healey
+Date: 6 years ago
+Rating: 4 stars
+Michelle Healey2 reviews6 years ago
+
+Author: Marie Obrien
+Date: 7 years ago
+Rating: 5 stars
+Staff are really helpful and extremely friendly
+
+Author: Claudiu Gavrila
+Date: 7 years ago
+Rating: 5 stars
+Claudiu GavrilaLocal Guide · 21 reviews · 32 photos7 years ago
+
+Author: Diane Mcintyre
+Date: 7 years ago
+Rating: 4 stars
+Diane Mcintyre7 years ago
+
+Author: James Veasey Veasey
+Date: 7 years ago
+Rating: 5 stars
+Ver helpful and friendly
+
+Author: TJAR
+Date: 7 years ago
+Rating: 5 stars
+Great community facilities
+
+Author: Paul Myring
+Date: 7 years ago
+Rating: 3 stars
+Paul MyringLocal Guide · 5 reviews · 255 photos7 years ago
+
+Author: Rachy Mane
+Date: 8 years ago
+Rating: 5 stars
+Rachy Mane1 review8 years ago
+
+Author: Robert Jackson
+Date: 8 years ago
+Rating: 4 stars
+Robert JacksonLocal Guide · 1 review8 years ago
+
+Author: Adele Essue
+Date: 8 years ago
+Rating: 4 stars
+Adele EssueLocal Guide · 8 reviews · 3 photos8 years ago
+
+Author: H X
+Date: 8 years ago
+Rating: 1 star
+Bad appointments Doctor come very late
+
+Author: Mo Presley
+Date: 8 years ago
+Rating: 5 stars
+So many different things to do from drs to cbt
+
+Author: Hammad I
+Date: 9 years ago
+Rating: 4 stars
+Hammad I1 photo9 years ago

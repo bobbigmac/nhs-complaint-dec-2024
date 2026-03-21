@@ -3,27 +3,46 @@ Canonical code: Y02720
 Postcode: OL16 4AT
 Google Maps title: The Kingsway Practice
 Google rating: 2.8
-Google review count: 47
-Google Maps URL: https://www.google.com/maps/place/The+Kingsway+Practice/@53.6132512,-2.1359856,17z/data=!4m8!3m7!1s0x487bb93dcabe8e05:0x42732d654a67a52!8m2!3d53.6132512!4d-2.1359856!9m1!1b1!16s%2Fg%2F1hc2r12x2?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 48
+Google Maps URL: https://www.google.com/maps/place/The+Kingsway+Practice/@53.6132544,-2.1385659,17z/data=!4m8!3m7!1s0x487bb93dcabe8e05:0x42732d654a67a52!8m2!3d53.6132512!4d-2.1359856!9m1!1b1!16s%2Fg%2F1hc2r12x2?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 48
+Owner replies collected: 11
+Raw review responses captured: 5
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/Y02720-the-kingsway-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Jai
+Date: a week ago
+Rating: 3 stars
+Jaia week ago New
 
 Author: Alexander Royle
 Date: a month ago
 Rating: 5 stars
 Dr Roberts is brilliant. Very thorough, professional and caring. The nurses are all great also and the reception staff too. I'm really pleased with how well I've been treated by the staff here. Highly recommended thank you.
+Practice response date: 3 weeks ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
 
 Author: Mara Reynolds
-Date: 2 months ago
+Date: 3 months ago
 Rating: 5 stars
 Excellent team that do the best they can.
+Practice response date: 3 weeks ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
 
 Author: Ariana Aleem
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 Reception manning the phones today was very rude blunt and dismissive! Not happy with the service.
+Practice response date: 3 months ago
+Practice response:
+Good morning, we are sorry to hear this. Did you discuss with the practice manager? Please telephone the surgery so we can investigate. Thank you
 
 Author: chris r
 Date: 3 months ago
@@ -31,31 +50,240 @@ Rating: 5 stars
 chris rLocal Guide · 115 reviews · 17 photos3 months ago
 
 Author: Ahtsham Ali
-Date: 6 months ago
+Date: 7 months ago
 Rating: 5 stars
 Today I attended the consultation and the receptionist Emily was very helpful and supportive and helped us set up the app
+Practice response date: 7 months ago
+Practice response:
+Thank you so much for your kind words and 5-star review. We're delighted to hear you have such a positive experience at our practice and with our Team. Your feedback means a lot to the team, and we'll be sure to pass on your comments.
 
 Author: TRACEY LYNAM
 Date: 7 months ago
 Rating: 1 star
 Iam trying to get an assessment done for my daughters since April rang them yesterday no paperwork on file, no providers details even though they wrote them down, no paperwork from school even though they sent it. They said they would ring me back still waiting. Now looking into getting a new GP
+Practice response date: 7 months ago
+Practice response:
+Good morning, have you spoken to the practice manager to try and resolve? Thank you
 
 Author: abdul qadir
-Date: 8 months ago
+Date: 9 months ago
 Rating: 4 stars
 Good surgery
+Practice response date: 7 months ago
+Practice response:
+Thank you for your review.
 
 Author: carolina ludovice
 Date: 11 months ago
 Rating: 5 stars
 Dr Squibb is very attentive and understanding :)
+Practice response date: 11 months ago
+Practice response:
+Dear Carolina, Thank you so much for your review. We are pleased that you are happy with the service.
 
 Author: Michael M
 Date: a year ago
 Rating: 5 stars
 Caring staff. efficient service
+Practice response date: a year ago
+Practice response:
+Dear Michael, Thank you so much for your review. We are pleased that you are happy with the service.
 
 Author: Judy Yung
 Date: a year ago
 Rating: 1 star
 Receptionist is rude as anything. Don’t want to know, just ‘we don’t have any appointments’.
+Practice response date: a year ago
+Practice response:
+Dear Judy, We are sorry to hear that you are not happy with the service. If you would like to discuss this further please contact the surgery to speak to the manager. Thank you
+
+Author: Kirsty
+Date: a year ago
+Rating: 1 star
+Do not register here. Been with this drs 6 years and they were okay to start. Been waiting for an important appointment but everytime I'm due to visit the nurse is sick it's ridiculous having to wait 6 weeks for the next appointment. Cancelled me 4 times in a row so have moved elsewhere. Oh and you never see the same doctor twice!
+Practice response date: a year ago
+Practice response:
+Dear Kirsty, We are sorry to hear that you are not happy with the service. If you would like to discuss this further please contact the surgery to speak to the manager. Thank you
+
+Author: Erica Waugh
+Date: 2 years ago
+Rating: 5 stars
+I’ve been with the practice for over 3 years now and I’ve always been able to get me or my son an appointment with ease. Staff are always fantastic and the doctors I’ve seen have been professional and caring, always reaching a solution. Bad reviews are easy to leave but you have 3 years of good experiences from me, thank you.
+Practice response date: a year ago
+Practice response:
+Dear Erica, Thank you so much for your review. We are pleased that you are happy with the service you have received over 3 years. It is encouraging to hear these comments. Thank you
+
+Author: R G
+Date: 2 years ago
+Rating: 3 stars
+Doctors are fantastic when you get one, but receptionist is rude and empathy is not in her mindset. Patients can be in pain and she has an attitude problem. I.e. I got released from hospital leg in a cast as I broke my foot with a bag full of meds and syringes, so when I got home home (after the hospital said I had to contact my GP as they would have my release/discharge notes) to follow up with the meds etc. So like any normall human being, I wanted to know what these self injection kits/syringes were and also to know when I would get the staples out. Arrogant attitude receptionist said quote " We don't have any details of your hospital dishcarge", (so I told her what ordeal I had just gone through) Mrs attitude problem then said "unfortunately I canot see through a phone, so I cannot see your leg. Do you need an appointment, I can get the Doctor to ring you as he has a cancellation." If receptionists expect respect then treat patients with the respect and dignity they deserve -it works both ways! If you have no empathy or lack customer service and care receptionists, then get another job!
+
+Author: Barrie Brookes
+Date: 2 years ago
+Rating: 1 star
+Special booking for Saturday morning for BP issue. Surgery closed. Does the practice still get paid?
+
+Author: Ahsan Chowdhury
+Date: 2 years ago
+Rating: 1 star
+Advised by nurse to rebook an appointment for an asthma check up with a specific test, receptionist had zero idea what she was asking for, had to reiterate multiple times to make sure she booked it in for that and not a standard one. Appointment booked, piece of paper given with time and date. Book time off work, drive over.. it’s not for another two weeks and the same receptionist has the cheek to accuse me of coming on the wrong day, without a sorry as I even give her the same piece of paper she wrote in her handwriting. Waste of time, and not an apology in sight. 0 stars if I could for this one experience and staff member alone.
+
+Author: Markie Smith
+Date: 2 years ago
+Rating: 3 stars
+Just moved to the area and recently joined the practice.. everything has been ok so far.....
+
+Author: jade maher
+Date: 3 years ago
+Rating: 1 star
+If I could give 0 starts I would. Worst practice I have been. I take days off work as they advise they can fit my appointments in then tell me there are now no nurses available, so I have now waisted time off work for nothing
+
+Author: Shema Dehghanizai
+Date: 3 years ago
+Rating: 5 stars
+Shema DehghanizaiLocal Guide · 39 reviews · 5 photos3 years ago
+
+Author: Fatima Begum
+Date: 3 years ago
+Rating: 5 stars
+Recently moved over. The receptionists are lovely and provide a good service. Bev has been such a pleasure to deal with Couldn't praise her enough.
+
+Author: Gabriela Roxana
+Date: 3 years ago
+Rating: 5 stars
+Gabriela Roxana3 years ago
+
+Author: Anthony Lewis
+Date: 3 years ago
+Rating: 1 star
+My mother of 74 had fallen whilst on her way to the supermarket, she was helped to the pharmacy by a neighbour, where they kindly put a strip over the gash on her knee advising her to go to the doctors surgery (Kingsway Medical Practice) they refused to do anything for her and did not even bother to call an ambulance, absolutely shockingly disgusted 🤬
+
+Author: sami shorhi
+Date: 3 years ago
+Rating: 4 stars
+Good clinic, but appointments, like all clinics in the Kingdom, are very far apart. It means that you may get the next appointment after a month or more.
+
+Author: Gary Healy (goldstar0011)
+Date: 3 years ago
+Rating: 5 stars
+Not long joined this Practice, 2 appointments to date and couldn't feel more looked after, listened to my issues and asked so many questions and gave lots of information to help me work with them to get sorted. Thanks
+
+Author: Hina Amin
+Date: 4 years ago
+Rating: 1 star
+I have called there for an hour nobody recieved the call.very strange
+
+Author: thesiblings 01
+Date: 4 years ago
+Rating: 5 stars
+Wow! Just read the reviews...I've had rubbish docs all my life..since moving to Kingsway I have even recommended it to family. The reception staff have always lovely..I've spoken to a few doctors there and they have all been very thorough with tests and referrals for me..I'd give more stars if it was possible. I'm very grateful to them 😄
+
+Author: Mark Crossley
+Date: 4 years ago
+Rating: 5 stars
+Allways nice respectfully staff helped me though the worst of times with my mental health.
+
+Author: L Tee
+Date: 4 years ago
+Rating: 1 star
+Incompetent Locum GPs- all there good for is paying lip service. You can never get an appointment, ive tried every day for a week- today's excuse is the locums didn't turn up... how about run the practice like a normal surgery with permanent Gp. Theres No pre bookable appointments. Steer clear they will let your health deteriorate and instead of chasing up old referrals they just keep making new 1s that still never get sorted!!!! Doesn't even deserve 1 star.
+
+Author: mark tarrant
+Date: 4 years ago
+Rating: 1 star
+You can never get an appointment and you never see the same Dr twice wast of time changing dr
+
+Author: Asim Mehmood
+Date: 4 years ago
+Rating: 4 stars
+Asim MehmoodLocal Guide · 3 reviews · 222 photos4 years ago
+
+Author: Fowzia Ashraf
+Date: 4 years ago
+Rating: 1 star
+Fowzia AshrafLocal Guide · 34 reviews · 12 photos4 years ago
+
+Author: Alison Partridge
+Date: 5 years ago
+Rating: 1 star
+Its a joke this place , it opens at 8 theres no appointment by 3 minutes past and apparently we have to work around them not jobs and kids in school
+
+Author: Lucy White
+Date: 5 years ago
+Rating: 4 stars
+Lucy WhiteLocal Guide · 17 reviews5 years ago
+
+Author: Zobia
+Date: 6 years ago
+Rating: 1 star
+Zobia6 years ago
+
+Author: Amy Edwards
+Date: 6 years ago
+Rating: 1 star
+Would leave 0 stars if that was possible! The most shocking surgery I have ever known. Never seen the same doctor and never ever been seen on time! In the last month alone, my newborn baby and I were waiting for an hour and twenty minutes on one occasion and 65 minutes on another, the doctor didn't even apologise! Unbelievably rude and unhelpful reception staff!!
+
+Author: Ehsan Jehangir
+Date: 6 years ago
+Rating: 5 stars
+I was very ill and doctors didnt know what they were doing but as soon as dr Grazo took over he took very good care of me and took it seriously and got to the root of the problem efficiently. He is an asset to the team at the practise.
+
+Author: Sarah Shah
+Date: 6 years ago
+Rating: 1 star
+Do not use this surgery Dr Sabir is an absolute imbecile hes rude obnoxious and hates his job. When you sit with him you will know what I mean
+
+Author: manchester lad
+Date: 6 years ago
+Rating: 1 star
+Please don't use this surgery terrible rude reception staff.never can get an appointment I cued up once from 7.30 in the morning with twelve other people.never see the same doctor.a complete and utter waste of space.AVOID!!?
+
+Author: David Burke
+Date: 6 years ago
+Rating: 5 stars
+David Burke6 years ago
+
+Author: Fawad Ali
+Date: 6 years ago
+Rating: 1 star
+Fawad AliLocal Guide · 14 reviews · 4 photos6 years ago
+
+Author: Florin Floryn
+Date: 6 years ago
+Rating: 1 star
+Florin Floryn6 years ago
+
+Author: Natalie Bassey
+Date: 7 years ago
+Rating: 1 star
+Natalie BasseyLocal Guide · 33 reviews · 35 photos7 years ago
+
+Author: Madison Harvey Marshall
+Date: 7 years ago
+Rating: 1 star
+Madison Harvey Marshall7 years ago
+
+Author: Bev Eaves
+Date: 7 years ago
+Rating: 3 stars
+GP reception staff and nurses are brilliant, always have time for you and try and resolve the problems if they can. One female doctor is an absolute joke!! This doctor is Dr Foster! All patients who were booking their appt at 8.00am when I did in person (as struggle to get through on phone) were told which doctor was on and everyone rolled their eyes and said no point turning up on time as she’s always an hour late. I managed to make an appt for 9.30am one morning to arrive at 9.15am to be told no doctor in as yet and she finally strolled in at 9:55am with no apology to the waiting room full of patients. Bring back the male doctor that is usually there who is on time, always polite and very helpful and has time for his patients.
+
+Author: Steven Gibbons
+Date: 7 years ago
+Rating: 1 star
+Very bad doctors u ring in the morning and it's says the staff are busy at this morment when u ring at 8 in the morning and then when u get thouth to them about 8:30 Sorry no more pontments left and I don't find that the docs are very help full as you see all diffent ones tbh
+
+Author: lee burke
+Date: 7 years ago
+Rating: 5 stars
+The staff and doctors at the practice are wonderful A* 10/10
+
+Author: Umer Butt
+Date: 7 years ago
+Rating: 5 stars
+Umer Butt9 reviews · 6 photos7 years ago
+
+Author: Stacey88 1988
+Date: 7 years ago
+Rating: 1 star
+Absolute joke! Been going back and forth since January about a condition and not recievwd any pain relief and referrals or even an examination.. For the last four days I've rang each morning for another appointment to b told all gone!! What!! At 5 past eight all your appointments are gone?? Seriously a joke!! The doctor there.. Yes only one doctor is ridiculous. Can b crying your eyes out in pain and all he says is "what do you want me to do"???? Ermmmmm do your job ffs! Searching for a new doctors surgery.. Avoid this place!! Going to a&e instead. At least they will go through everything!!

@@ -4,11 +4,16 @@ Postcode: OL1 3UL
 Google Maps title: St Mary's Medical Centre
 Google rating: 2.5
 Google review count: 57
-Google Maps URL: https://www.google.com/maps/place/St+Mary's+Medical+Centre/@53.54372,-2.1086638,17z/data=!4m8!3m7!1s0x487bb780ed4fec95:0x3279452e27c03c54!8m2!3d53.54372!4d-2.1086638!9m1!1b1!16s%2Fg%2F1vpfj2rn?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/St+Mary's+Medical+Centre/@53.5437232,-2.1112441,17z/data=!4m8!3m7!1s0x487bb780ed4fec95:0x3279452e27c03c54!8m2!3d53.54372!4d-2.1086638!9m1!1b1!16s%2Fg%2F1vpfj2rn?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 57
+Owner replies collected: 0
+Raw review responses captured: 6
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85002-st-marys-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
 
 Author: Vay D
 Date: 2 months ago
@@ -16,7 +21,7 @@ Rating: 1 star
 Just tried to get a telephone call from a doctor.. and no chance! It would of taken them 2 mins of there time, I have been with this doctors 35 year and its getting worse. But yet on there website it says accepting new patients ahahaha they can't even look after the 1s they already have. Deserves 0 stars never mind 1
 
 Author: Bailey
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 100% agree about the struggle to get appointments at this clinic. You can’t even get one in advance! Only on the day available. But my biggest issue with this medical centre is the fact that GPs are incompetent especially the new younger ones, you get fobbed off every time despite the struggle to get an appointment in first place. They’ve messed up referrals in the past - meaning instead of waiting 2 years on the waiting list I’ve been waiting 4 years and counting. Honestly appalled by level of care.
 
@@ -59,3 +64,238 @@ Author: Nathan Gorey
 Date: 7 months ago
 Rating: 1 star
 Receptionist are rude and unprofessional and when u ring up at 8 in a morning be expecting to be number 40 in the cue what a joke
+
+Author: John Clare
+Date: 7 months ago
+Rating: 4 stars
+John Clare5 reviews7 months ago
+
+Author: Sarah Cleary
+Date: 7 months ago
+Rating: 1 star
+Sarah Cleary7 months ago
+
+Author: Bentley land
+Date: 9 months ago
+Rating: 1 star
+The waiting time was too long, reception staff was very unprofessional.
+
+Author: Azwad Hasnat Galib
+Date: 9 months ago
+Rating: 1 star
+Azwad Hasnat Galib2 reviews9 months ago
+
+Author: glen heaton
+Date: Edited 10 months ago
+Rating: 1 star
+As usual on hold for twenty minutes then cut off and can't get back in the queue. Shocking service. This is an update on my experience trying to get an appointment 12 months on from the last time I needed medical care . My advice is don't bother to even try to get an appointment. If you do manage to speak to somebody eventually they will only tell you all appointments have gone and re try tomorrow. Had enough of them now going to try another doctors .how this place is still going I will never know .rubbish service
+
+Author: K3RRY LBC
+Date: a year ago
+Rating: 1 star
+Do not bother ringing them their office staff never answer the phones ive been in position one in the queue on the phones for over an hour they clearly have the worst office staff ever
+
+Author: John Diveney
+Date: a year ago
+Rating: 1 star
+Since they have “improved“ the telephone service you have moved from a guaranteed fifth in the queue to yesterday I was 39th in the queue and today 22nd in the queue at 8am.Almost pointless being a member of this Doctors‘s surgery.
+
+Author: Saeed Mumin
+Date: a year ago
+Rating: 1 star
+The medical center is absolutely appalling. Calling 8am and waiting approximately 40 minutes but you’ve been told all the appointments are gone. Even children or babies don’t get appointments and get suggested to go to walk in centre trout of hours. The old staff at the reception were really helpful but now the new reception staff aren’t helpful at all, they only come for the pay.
+
+Author: John Ryan
+Date: a year ago
+Rating: 1 star
+been at this practice since Marjory lees closed and since the corona BS its fast gone downhill...rude ignorant receptionists,Never any appointments,no pre-booking,absolutely ridiculous, I haven't managed to see a Doctor for almost 3 years if not 3 years I have lost count the amount of appointments I have tried to make, the place is an utter shambles
+
+Author: Susan Massey
+Date: a year ago
+Rating: 1 star
+Practice management have no people skills
+
+Author: Ash
+Date: a year ago
+Rating: 1 star
+Absolutely terrible service. Not only are you waiting 45 mins in the queue just to speak to someone the second the lines open at 8:00am, but they'll say you're booked for an appointment and not actually put it in the system so you have to try again the next day. They won't even make the effort to correct their mistakes. Shameful.
+
+Author: valerie unwin
+Date: a year ago
+Rating: 1 star
+Total of 42 minutes on hold here today……15 of those at no1 in the queue.
+
+Author: Ruhel Miah
+Date: a year ago
+Rating: 1 star
+Only if you are very lucky then reception will answer your phone. Absolutely disgrace.
+
+Author: Cubicle Creative
+Date: Edited a year ago
+Rating: 1 star
+Apalling levels of incompetence and medical negligence. This practice with-held my medication for cluster headaches (often listed in the top ten most painful conditions) because the pill that was supposed to block them had. been mis-prescribed by this surgery. I had to plead my case with the lead practitioner who, upon checking my records, discovered I had been prescribed HALF the minimum recommended dose. This caused me a great deal of unneccessary pain and expense over a period of several months. Last week they messed up my prescription leaving me without medication for a week - and had the temerity to blame me! I saw a student doctor recently due to intense pain in my face, he sent me off with a "I don't know what it is", without checking on my history of cluster headaches or the fact I have a plate in my head on that side. No x-ray. No referral. Today I attempted to see a doctor again for the same reason, but receptionist Amy Young had other ideas, claiming I was 10 minutes late (5 of these minutes spent queueing up) I was turned away from the surgery. What sort of medical professional turns away a patient? I had to take time off work and walk for 40 mins in the rain to get to the surgery. All for nothing. Again. Amy Young - you are a disgrace, I don't know how you sleep at night . I'm done with this farce of a practice and I would advise anyone against registering here. I will be raising an official complaint with the Ombudsman as well as the practice themselves and telling everyone who will listen about my apalling experiences with this incompetent practice. You should be ashamed of yourselves , go back and read your Hippocratic Oath, because your medical ethics are non-existent. Disgusting. AVOID AVOID AVOID Update: They have now rejected my repeat request for an athsma inhaler yet I had to walk to the surgery to find this out as it is apparently surgery policy to leave patients without medication and not tell them. I have therefore raised an official complaint with the surgery a week ago. To date I have received no response. Not even an automated aknowlegdement. I also caught the receptionist slagging me off to a colleague when she thought I'd gone - so much for confidentiality! If I could rate them lower than 1 star I would.
+
+Author: Mayvis Mensah
+Date: a year ago
+Rating: 3 stars
+Mayvis Mensah1 reviewa year ago
+
+Author: Sadia Faree
+Date: a year ago
+Rating: 2 stars
+Sadia Fareea year ago
+
+Author: Chaudhry Nawaz
+Date: a year ago
+Rating: 1 star
+Really hard to find parking then staff are not Co operative services are really poor
+
+Author: Lee Fitton
+Date: 2 years ago
+Rating: 5 stars
+Lee FittonLocal Guide · 81 reviews · 83 photos2 years ago
+
+Author: asawer toto
+Date: 2 years ago
+Rating: 5 stars
+asawer toto2 years ago
+
+Author: Tracy Goddard
+Date: 2 years ago
+Rating: 5 stars
+Excellent practice, no problems getting appointments, receptionists really helpful, very good doctors.
+
+Author: Rajowan Ahmed
+Date: 2 years ago
+Rating: 1 star
+disgusting service it's one of the worst medical centres in the uk
+
+Author: arfan elahi
+Date: 3 years ago
+Rating: 1 star
+Definitely the worst
+
+Author: Michaela Matthews
+Date: 3 years ago
+Rating: 3 stars
+Been here for 25 years and have always been impressed with the service given. However, recently it's impossible to get appointments when needed and there is no chance of seeing the same doctor for continuity of care. This maybe due to the …
+
+Author: Peter Szoboszlai
+Date: 3 years ago
+Rating: 2 stars
+What an absolute joke of a GP. Been calling them for an hour just to get an appointment as I am really sick, and they are busy. Come on already it really isn't that hard to do your job!
+
+Author: Shane Reid
+Date: Edited 3 years ago
+Rating: 1 star
+Was recommended this practice once I was informed of my previous Gp, Retiring. In my life time so far, I have been under only 4 practices. This one is BY FAR the worst yet!!!! I Urge Anybody who decide to read Reviews before making a decision about moving themselves or their family here to reconsider!!!!!!
+
+Author: kate meah
+Date: 3 years ago
+Rating: 5 stars
+Myself and my husband transferred here a while back and it was the best move I have ever made i can not fault them from the doctors nurses and reception staff they are all amazing. I never have trouble getting an appointment and always feel listened too, not rushed and have got further with this doctors in 12 months than I had with my old one in years. Keep up the good work xxx
+
+Author: Maxine Garforth
+Date: 3 years ago
+Rating: 1 star
+Full of discrimination against individuals who have invisible disabilities. Was not given the choice of doctor to see & the doctor I was alicated had very aggressive body language, controlling & dominaring attitude. Did not feel comfortable or safe around the male doctor which is a breach of safety for women. The reception staff are unapproachable, rude & unprofessional & show lack of respect to patients
+
+Author: David
+Date: 3 years ago
+Rating: 5 stars
+Very good service from the three doctors I've encountered. Helpful reception team too. It's a tough job but I think they're doing very well especially when compared to other practices. Thank you
+
+Author: Vannessa Whitehead
+Date: 3 years ago
+Rating: 1 star
+Vannessa Whitehead2 reviews3 years ago
+
+Author: Clare Louise
+Date: Edited 3 years ago
+Rating: 2 stars
+I had a brilliant GP here year's ago and it saddens me to write this of the surgery: NUTSHELL REVIEW IF IN HURRY -split previous review to help easy reading: ▪︎ Reception staff) do not respond to requests to speak to a GP "urgently" despite the promise to see ALL urgent cases on the same day. I agree there is a rude and uncaring "feel" when dealing with them. ▪︎ No continuity of care with same physician. ▪︎ No understanding of mental health difficulties for patients who struggle to "ring back at 8am" and make sure they get an appointment - sometimes a simple request such as a quick word with a GP is blocked for no apparent reason than a policy and no one will bend a rule to suit the patient individual situation. I avoid attending now. It is desperately Doctor-centred not patient centred. Below is rest of the review I did a while ago and have only changed the layout. Main points I would want you to know: 1. As others have written the reception staff are not very helpful in getting access to treatment when you call. They are no doubt under enormous pressure and I respect that. Yet it doesn't feel like there is empathy when you are in desperate need of medical advice. 2. The GP's are often very good and offer a good service once you get there. I know this isn't the only practice that doesn't prioritise patients having the same GP each time they visit and it is a training practice now, so doctors are coming and leaving regularly. If you have a sensitive illness or prefer continuity of care it is not easy to get it here. 3. I complained informally and was responded to about a separate matter. My issue wasn't dealt with to my satisfaction. I also wrote a review on the nhs site and it was unpublished. 4. I absolutely appreciate the current strain the nhs is under. I would be the first to say how amazing most places are - I wrote about good service at my dentist. I had a good experience when hospitalised. This practice needs to change to put patient needs first and centre.
+
+Author: Michaela Matthews
+Date: 3 years ago
+Rating: 3 stars
+Been here for 25 years and have always been impressed with the service given. However, recently it's impossible to get appointments when needed and there is no chance of seeing the same doctor for continuity of care. This maybe due to the state of the nhs at present - who knows? Despite other comments, I've always found the receptionists polite and helpful. They are working in difficult circumstances and it's not their fault when appointments aren't available.
+
+Author: Wissam Semri
+Date: 4 years ago
+Rating: 5 stars
+I love my doctors
+
+Author: Deborah Knox
+Date: 4 years ago
+Rating: 5 stars
+This is the best doctors in the area.i know the new phone system makes it harder to get through but aside from that. I have found all the doctors wonderful.and the receptionists are always helpful friendly and polite
+
+Author: Lizzy c
+Date: 4 years ago
+Rating: 2 stars
+The GPs are great but the receptions are stuck up and extremely unprofessional. Ask to ring at 8am to book an appointment but never answer the phone. The older lady with short hair is lovely but the young woman with brown hair needs to watch her mouth. Laughing at extremely mentally ill patients that are clearly have a breakdown while explaining they’re pregnant and haven’t had medication in 2 weeks is disgusting. Then having 2-4 receptionist corner them while demanding they leave and threatening to call the police, rather than help the situation. This is why people don’t seek help. AGAIN GPs are amazing it’s just getting past those nasty women.
+
+Author: Rick Gal
+Date: 4 years ago
+Rating: 2 stars
+Doctors are very good , the fact that they make you go though a automatic call answering system just tell you they are to busy is very frustrating, then they put the phone down automatically, why can't you put me in a waiting list at 9 am .
+
+Author: michael carter
+Date: 4 years ago
+Rating: 1 star
+michael carterLocal Guide · 21 reviews · 157 photos4 years ago
+
+Author: Deborah Thornton
+Date: 5 years ago
+Rating: 5 stars
+A very good practice.
+
+Author: A HASIB 786
+Date: 5 years ago
+Rating: 5 stars
+Very good doctor
+
+Author: Stephen Nuttall (Willy)
+Date: 5 years ago
+Rating: 5 stars
+Really good to get an appointment, friendly and helpful
+
+Author: Janet Buckley
+Date: 6 years ago
+Rating: 5 stars
+Very happy with the care provided with this GP surgery.
+
+Author: Carl Thorburn (Najix)
+Date: 6 years ago
+Rating: 1 star
+We have a ten day old son with oral thrush and they REFUSED to see him because we don't live in the area any more. Absolutely DISGUSTING behaviour, as now we have to wait over the bank holiday weekend to find help for our newborn baby.
+
+Author: diane bilton
+Date: 7 years ago
+Rating: 5 stars
+diane bilton7 years ago
+
+Author: Marc Ramos
+Date: 7 years ago
+Rating: 1 star
+Usually or always rude receptionist.
+
+Author: Diane Barlow
+Date: 7 years ago
+Rating: 5 stars
+Diane Barlow1 review7 years ago
+
+Author: jodie oneill
+Date: 7 years ago
+Rating: 1 star
+jodie oneill7 years ago
+
+Author: Darek Sadziak
+Date: 8 years ago
+Rating: 5 stars
+Darek Sadziak8 years ago
+
+Author: Gary Leese
+Date: 8 years ago
+Rating: 5 stars
+Gary LeeseLocal Guide · 32 reviews · 9 photos8 years ago

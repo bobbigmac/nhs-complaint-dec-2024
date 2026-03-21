@@ -1,303 +1,314 @@
 # Online, Website, And Software Platform Experience In The Review Corpus
 
-This report looks at the digital front door in the Google review corpus: websites, online forms, apps, and named platforms such as `PATCHS`, `AskMyGP`, `Accurx`, and `eConsult`.
+This report looks at the digital front door in the review corpus: websites, online forms, apps, and named systems such as `PATCHS`, `AskMyGP`, `eConsult`, `Accurx`, and the `NHS App`.
 
-The problem here is that patients often do not know or use the software brand name. They say "the website", "the online form", "the app", or "the system". So this report starts broad and only then narrows to the named tools.
+The main difficulty is still the same one: patients often do not know or use the software brand name. They say "the website", "the online form", "the app", or "the system". So the right way to read this is still broad first, named tools second.
 
-It uses a rule-based pass over the local indexed corpus and strips practice-response text where possible, so the focus stays on what patients themselves wrote.
+This pass uses the rebuilt review index, strips practice-response text where possible, and stays focused on what patients themselves wrote.
 
 ## Headline
 
 The digital layer is now a real part of the patient experience, not a side issue.
 
-- `998` reviews, `6.1%` of the whole corpus, mention a website, online route, app, named platform, or a recognisable digital-platform issue
-- `700` reviews mention the generic online or website layer
-- only `162` reviews name a platform or app at all
-- just `35` reviews do both
+In the rebuilt `40,506`-review corpus:
 
-That means most of the digital experience is not being described by product name. Patients mostly talk about a web route they have to use, not the vendor behind it.
+- `2,586` reviews, `6.4%` of all reviews, mention a website, online route, app, named platform, or a recognisable digital-platform issue
+- `1,803` mention the generic online or website layer
+- only `382` explicitly name one of the main platforms or apps in this pass (`PATCHS`, `AskMyGP`, `eConsult`, `Accurx`, `NHS App`)
+
+That still means most of the digital experience is not being described by product name. Patients mostly talk about a web route they have to use, not the vendor behind it.
 
 ## Generic Coverage First: "Online", "Website", "The Form"
 
-This generic layer is much bigger than any named platform.
+The generic layer is still much bigger than any named platform.
 
-The broad `online / website / online form / online booking / online triage` bucket contains:
+The broad `online / website / online form / online booking / online triage` bucket now contains:
 
-- `700` reviews total
-- `390` negative reviews
-- `286` positive reviews
-- `24` mixed reviews
+- `1,803` reviews total
+- `903` negative reviews
+- `847` positive reviews
+- `53` mixed reviews
 
 So the digital front door is not uniformly bad. It has a real positive side when it works. But negative experiences still outweigh positive ones.
 
-Practices with the highest digital-review counts in this generic layer include:
+Practices with especially visible digital-review volumes include:
 
 | Practice | Digital reviews | Share of all reviews | Negative | Positive |
 | --- | ---: | ---: | ---: | ---: |
+| `The Brooke Surgery` | `118` | `9.4%` | `14` | `103` |
+| `Ashton Medical Group` | `110` | `11.2%` | `49` | `49` |
+| `Millgate Healthcare Partnership` | `106` | `10.1%` | `27` | `77` |
 | `Chorlton Family Practice` | `93` | `10.4%` | `20` | `63` |
+| `Cheadle Medical Practice` | `53` | `11.0%` | `15` | `35` |
 | `The Sides Medical Practice` | `37` | `13.0%` | `3` | `34` |
 | `Ashville Surgery` | `36` | `14.0%` | `5` | `29` |
 | `LADYBARN GROUP PRACTICE` | `35` | `9.5%` | `6` | `28` |
-| `New Bank Health` | `26` | `18.8%` | `21` | `4` |
-| `Barlow Medical Centre` | `26` | `12.1%` | `13` | `13` |
-| `The Robert Darbishire Practice` | `26` | `10.8%` | `18` | `8` |
-| `The Range Medical Centre` | `25` | `1.9%` | `2` | `22` |
-| `Florence House Medical Practice` | `23` | `19.0%` | `16` | `7` |
 
-This already shows the main digital pattern in the corpus: the same kind of online route can be described as quick, modern, and convenient in one practice, and as a hard digital barrier in another.
+This is still the main digital pattern in the corpus: the same kind of online route can be described as quick, modern, and convenient in one practice, and as another barrier in another.
 
 ## Named Platforms: Visible, But Still Under-Named
 
 ### `PATCHS`
 
-Explicit `PATCHS` mentions are present but not huge:
+Explicit `PATCHS` mentions are still present but not huge:
 
-- `25` reviews total
-- `11` negative
-- `10` positive
-- `4` mixed
+- `58` reviews total
+- `21` negative
+- `32` positive
+- `5` mixed
 
 The balance is genuinely mixed.
 
-Good `PATCHS` examples usually talk about speed:
+Good `PATCHS` reviews usually talk about speed and efficiency:
 
-- `Northern Moor Medical Practice`: "called back within 20 minutes"
-- `Chorlton Family Practice`: same-day or fast follow-up
-- `Barlow Medical Centre`: a worrying symptom submitted at `8am`, seen by `9.30`
+> "Having used the PATCHS system several times now, I would like to say how quick, easy and efficient the system has been."  
+> `Norden Branch Surgery`, `2 months ago`
 
-Bad `PATCHS` examples usually talk about visibility, availability, or reliability:
+Bad `PATCHS` reviews usually talk about visibility, access, or exclusion:
 
-- hard to find or not clearly linked from the practice site
-- only available in narrow time windows
-- no record of submission
-- no response after submission
-- being forced onto it after failing by phone or in person
+> "No record of submission using PATCHs."  
+> `Chorlton Family Practice`, `6 months ago`
 
-So `PATCHS` in the corpus reads less like a universally hated platform than a high-variance one. Where the practice actually processes requests quickly, patients praise it. Where the surrounding system is weak, it becomes another locked gate.
+> "Receptionist rude insisting father has to use patchs when he’s no good on a smartphone or computer."  
+> `Family Surgery`, `3 months ago`
+
+So `PATCHS` still reads like a high-variance system. Where the workflow behind it works, patients praise it. Where the surrounding setup is weak, it becomes another locked gate.
 
 ### `AskMyGP`
 
-`AskMyGP` is the most visible named platform in patient language:
+`AskMyGP` remains the most visible named patient platform:
 
-- `61` reviews total
-- `29` negative
-- `30` positive
-- `2` mixed
+- `140` reviews total
+- `57` negative
+- `80` positive
+- `3` mixed
 
-Again, it is split almost down the middle.
+That is still split, but now slightly more positive than negative.
 
 Good `AskMyGP` reviews usually say:
 
 - same-day response
 - quick advice
-- saved a trip
-- easy to use
+- no need to fight the phones
+- easy to use when backed by real follow-through
 
-The strongest positive cluster is `Ashville Surgery`, where `AskMyGP` is mostly described as effective and quick.
+Example:
 
-Bad `AskMyGP` reviews usually say:
+> "do ask my gp on line, always get a response on same day"  
+> `The Brooke Surgery`, `Edited 2 years ago`
+
+Bad `AskMyGP` reviews still say:
 
 - it is always closed
-- it fills up too quickly
-- the phone message still points to it even when it no longer works
-- it is frustrating compared with speaking to a person
+- it fills too quickly
+- requests get closed off rather than acted on
+- phone messages point patients to a route that is not really open
 
-So `AskMyGP` looks highly practice-dependent. It can feel like a good triage tool when backed by enough staffing and prompt response. It feels much worse where it becomes a shut door or a dead-end.
+Examples:
+
+> "They do not respond to emails, and AskMyGP is always closed."  
+> `Tower Family Healthcare`, `2 years ago`
+
+> "My requests on AskmyGP just get closed off with a link to a pharmacy."  
+> `Ashville Surgery`, `a month ago`
+
+So `AskMyGP` still looks highly practice-dependent. It can feel fast and effective when the practice is staffed to use it properly. It feels much worse where it becomes a shut door or a dead end.
 
 ### `eConsult`
 
-`eConsult` is barely named directly:
+`eConsult` is still lightly named directly:
 
-- `9` reviews total
-- `5` negative
-- `4` positive
+- `36` reviews total
+- `17` negative
+- `19` positive
 
-But the low explicit count should not be read as low use. It probably means patients experience it as "the online form" rather than as `eConsult`.
-
-The split is familiar:
-
-- positive when the form is reviewed quickly and leads to an appointment
-- negative when it feels slow, confusing, or absurd for urgent needs
-
-One of the clearest negative lines is from `Pikes Lane 1`:
-
-> "The econsult forms are a ridiculous request, especially when you need an emergency appointment."
+That low count should not be read as low use. It probably still means many patients experience it simply as "the online form".
 
 ### `Accurx`
 
-`Accurx` barely appears by name in patient reviews at all. I only found `1` clear patient-side mention.
+`Accurx` is still barely named as a patient-facing brand:
 
-That does not mean it is absent. It means it is mostly hidden behind practice websites, forms, and links rather than recognised as a patient-facing brand.
+- `6` reviews total
+- `2` negative
+- `3` positive
+- `1` mixed
 
-The one explicit patient mention at `Limelight Health and Wellbeing Hub` is strongly negative and focuses on usability:
-
-> "There are absolutely no instructions on the website about how to sign up to their patient appointment service, Accurx."
-
-So `Accurx` is a good example of the wider problem in this report: software is often visible to practices, but not clearly visible to patients.
+That is not absence. It is obscurity. Patients often meet the route through the practice website rather than through the product name.
 
 ### `NHS App`
 
-The `NHS app` is different because patients often do name it:
+The `NHS App` remains one of the more visible named systems:
 
-- `67` reviews total
-- `33` negative
-- `30` positive
-- `4` mixed
+- `142` reviews total
+- `60` negative
+- `74` positive
+- `8` mixed
 
-This looks like another genuinely split platform.
+This is another genuinely split platform.
 
-Positive `NHS app` reviews talk about:
+Positive reviews talk about:
 
 - easy contact
 - easy booking
-- quick response
-- access to records or appointments
+- quick responses
+- records and prescription convenience
 
-Negative `NHS app` reviews talk about:
+Example:
 
-- "no appointments available"
-- being pushed into another platform from the app
-- paper forms still being required for app-based tasks
-- the app existing as a token route rather than a fully working one
+> "I have always found contacting the practice using the NHS app easy and quick with a fantastic response from the staff."  
+> `The Sides Medical Practice`, `9 months ago`
 
-The `NHS app` therefore often reads less as a complete front door than as a relay point between systems.
+Negative reviews talk about:
+
+- messaging being disabled
+- no appointments available
+- being pushed into another route from the app
+- confusion about whether the app is actually meant to work
+
+Example:
+
+> "It says on their website that you can contact them via the NHS app but ... messaging [is] disabled"  
+> `Heaton Moor Medical Group`, `a year ago`
+
+The `NHS App` often reads less like a full front door than like a relay point between systems.
 
 ## The Main Digital Issue Types
 
-### 1. Speed And Convenience When The System Works
+### 1. Speed and convenience when the system works
 
-This is the biggest positive theme:
+This is the strongest positive theme by far:
 
-- `147` reviews in the strict speed/convenience bucket
-- `111` positive
-- `32` negative
+- `408` reviews in the speed/convenience bucket
+- `316` positive
+- `85` negative
 
-This is the strongest argument in favour of digital routes.
+This is the best case for digital routes.
 
 Patients praise them when they deliver:
 
 - same-day appointments
-- callbacks within `20-30` minutes
-- quick triage without repeated phone queues
-- ability to submit photos or details clearly
+- same-day callbacks
+- quick responses
+- a route that works without the `8am` phone fight
 
 Examples:
 
-- `The Sides Medical Practice`: "contacted within 30 minutes with a same day appointment"
-- `Chorlton Family Practice`: "online form ... same day appointment"
-- `Ashville Surgery`: `AskMyGP` "excellent - someone responds the same day"
-- `The Range Medical Centre`: repeated praise for easy same-day or prompt appointments
+> "Using online form for appointment easy and obtained same day appointment"  
+> `Chorlton Family Practice`, `8 months ago`
 
-The positive digital model in the corpus is clear: the form works, the request goes through, a human responds quickly, and the patient gets seen.
+> "I have always found contacting the practice using the NHS app easy and quick"  
+> `The Sides Medical Practice`, `9 months ago`
 
-### 2. Usability And Instruction Failure
+The positive digital model in the corpus is still very clear: the request goes in, a human responds quickly, and the patient gets seen.
+
+### 2. Usability and instruction failure
 
 This is one of the clearest negative themes:
 
-- `54` reviews
-- `39` negative
-- `11` positive
+- `112` reviews total
+- `72` negative
+- `31` positive
+- `9` mixed
 
-Patients often do not complain about the idea of digital care. They complain that the route is badly explained, badly linked, or hard to navigate.
+Patients often do not complain about the idea of digital care. They complain that the route is badly explained, badly linked, or awkward to navigate.
 
-The common wording is:
+Common wording includes:
 
 - no instructions
 - hard to find
 - not obvious where to click
 - difficult to use
-- impossible website
-- unable to work the website
+- confusing setup
 
-This is especially important because it is not a clinical complaint. It is a design complaint. Patients are describing bad information architecture, weak signposting, and poor discoverability.
+The recurring complaint here is not mainly clinical. It is design failure.
 
-### 3. Closed Forms, Narrow Windows, And Digital Queueing
+### 3. No reply, lost submission, or silent failure
 
-This is a smaller but sharp theme:
+This remains one of the worst themes by feel:
 
-- `14` reviews
-- `13` negative
-
-The digital route often reproduces the old `8am` rush rather than replacing it.
-
-Patients describe:
-
-- forms only open for a short morning window
-- systems that are already full by `8am`
-- `AskMyGP` or `PATCHS` being closed
-- "online" as just a different kind of queue
-
-So one of the clearest failures is not that software exists, but that it turns scarcity into a software timer.
-
-### 4. No Reply, Lost Submission, Or Silent Failure
-
-This is not the biggest theme by count, but it is one of the worst by feel:
-
-- `17` reviews
-- `15` negative
+- `54` reviews
+- `50` negative
 
 These are the reviews where the patient does the right digital thing and then nothing happens.
 
-Examples include:
+Examples:
+
+> "No record of submission using PATCHs."  
+> `Chorlton Family Practice`, `6 months ago`
+
+Patients describe:
 
 - no record of submission
-- no response after sending a message
+- no response after sending
 - no callback
 - requests disappearing into the system
 
-This is a key trust issue. A bad website is one thing. A form that appears to work and then silently fails is worse.
+This is a key trust problem. A bad website is one thing. A form that appears to work and then silently fails is worse.
 
-### 5. Triage Burden, AI, And Feeling Asked To Self-Diagnose
+### 4. Closed forms, narrow windows, and digital queueing
 
-This bucket is small but very distinct:
+This is still a smaller but sharp theme:
 
-- `7` reviews
-- all `7` negative
+- `24` reviews
+- `22` negative
+
+The digital route often reproduces the old `8am` rush instead of replacing it.
+
+Patients describe:
+
+- forms only open for a short window
+- systems already full by `8am`
+- `AskMyGP` or `PATCHS` being closed
+- online routes acting like just another queue
+
+So one of the clearest failures is not that software exists, but that scarcity has been turned into a software timer.
+
+### 5. Triage burden and self-diagnosis pressure
+
+This bucket is still fairly small but distinctive:
+
+- `16` reviews
+- `11` negative
+- `3` positive
+- `2` mixed
 
 The wording here is sharp:
 
-- "left to self diagnose"
 - too many questions
-- AI asking irrelevant or alarming follow-up questions
-- forms feeling inappropriate for urgent need
+- feeling left to self-diagnose
+- triage software seeming inappropriate for urgent need
 
-The `Ashton Gp Service` quote about AI triage is one of the clearest examples:
+This is where digital triage tips from inconvenience into distrust.
 
-> "The AI was asking me follow up questions ... and its advice was to go to A+E"
+### 6. Digital exclusion
 
-This is where digital triage moves from inconvenience to distrust. The patient is no longer just annoyed. They feel the software is clinically absurd.
+This is still a smaller explicit bucket:
 
-### 6. Digital Exclusion
+- `14` reviews
+- `12` negative
 
-This is a small explicit bucket:
+But it is probably under-stated, because many exclusion complaints are written indirectly rather than with neat keywords.
 
-- `6` reviews
-- `5` negative
+Examples are still about:
 
-But it is probably under-stated, because many exclusion complaints are written in indirect language.
-
-The explicit versions mention:
-
-- older people
+- older patients
 - disability
-- not being able to use computers or the app
-- not everyone being able to follow the digital route
+- not being able to use computers or smartphones
+- being forced into a route they cannot realistically use
 
-This matters because some of the strongest digital systems in the corpus still rely on the patient being able to find, understand, and complete the online route.
+The `PATCHS` example about an elderly patient being pushed onto a smartphone route is exactly the kind of complaint that makes this visible.
 
 ## What Patients Infer Even When They Never Name The Platform
 
-Most patients do not say "this is `Accurx`" or "this is `eConsult`". They say:
+Most patients still do not say "this is `Accurx`" or "this is `eConsult`". They say:
 
-- "the website"
-- "the online form"
-- "the app"
-- "the system"
-- "the link"
+- the website
+- the online form
+- the app
+- the system
+- the link
 
-That means the real comparison in this corpus is not mainly between vendors. It is between kinds of patient experience.
-
-The main unnamed experiences are:
+That means the real comparison in the corpus is still not mainly vendor versus vendor. It is between kinds of patient experience.
 
 ### Good unnamed digital experience
 
@@ -311,43 +322,42 @@ The main unnamed experiences are:
 
 - no instructions
 - forced onto a website after the phone fails
-- online route only open in a narrow time window
+- online route only open in a narrow window
 - no response after submitting
-- confusing handoff between NHS app, practice site, and a separate platform
+- confusing handoff between app, practice site, and platform
 - feeling forced to self-triage
 
-So the practical patient comparison is not `PATCHS` versus `AskMyGP` in a neat vendor sense. It is whether the digital route behaves like a quick bridge to care, or like another wall.
+So the practical patient comparison is still not `PATCHS` versus `AskMyGP` in a tidy vendor sense. It is whether the digital route behaves like a quick bridge to care, or like another wall.
 
 ## Practices Where The Digital Layer Looks Better
 
-The most clearly positive digital clusters in the corpus are:
+The more clearly positive digital clusters in the rebuilt corpus include:
 
+- `The Brooke Surgery`
 - `The Sides Medical Practice`
-- `Ashville Surgery`
 - `The Range Medical Centre`
+- `Ashville Surgery`
 - `LADYBARN GROUP PRACTICE`
 - parts of `Chorlton Family Practice`
 
-What they have in common in the reviews:
+What they have in common in patient reviews:
 
 - lots of same-day or fast-response stories
 - online forms described as easy or efficient
-- the digital route appears to be backed by real human follow-through
-- patients sometimes compare the practice favourably with previous surgeries
+- digital routes backed by real human follow-through
+- patients sometimes explicitly compare the practice favourably with worse surgeries they have used before
 
-The key point is not the platform alone. It is that the workflow behind it appears to work.
+The point is still not the platform alone. It is whether the workflow behind it appears to work.
 
 ## Practices Where The Digital Layer Looks Worse
 
-The more negative digital clusters include:
+The more negative digital clusters now include:
 
-- `New Bank Health`
 - `Florence House Medical Practice`
 - `The Robert Darbishire Practice`
-- `Northenden Group Practice`
-- `STONEHILL MEDICAL CENTRE`
-- parts of `The Arch Medical Practice`
-- `Limelight Health and Wellbeing Hub` for explicit platform confusion
+- `Delamere Medical Practice`
+- parts of `Ashton Medical Group`
+- practices where the app, website, and phone routes seem to push patients back into each other
 
 What these negative clusters have in common:
 
@@ -355,13 +365,13 @@ What these negative clusters have in common:
 - complaints about the website or form replacing human contact
 - confusion about where to go, what link to use, or which system is active
 - closed, unavailable, or unresponsive digital routes
-- digital routes experienced as another barrier rather than an easier route in
+- digital systems being experienced as another barrier rather than an easier route in
 
 ## Bottom Line
 
 The online/web layer in this corpus is real, widespread, and mixed.
 
-The strongest single finding is that patients usually do not name the software. They talk about a generic digital front door. That front door shows up in `998` reviews, and it is described in two very different ways.
+The strongest single finding is still that patients usually do not name the software. They talk about a generic digital front door. That front door now shows up in `2,586` reviews and is described in two very different ways.
 
 When it works, patients love it:
 
@@ -374,8 +384,8 @@ When it fails, they do not talk like software users. They talk like blocked pati
 - the website does not work
 - the form is closed
 - there is no response
-- they are told to self-diagnose
+- they are forced into a route they cannot use
 - one system sends them to another
 - nobody is available except the software
 
-So the real divide here is not vendor versus vendor. It is whether the digital route is actually connected to care, or whether it is just a new way of being shut out.
+So the real divide here is still not vendor versus vendor. It is whether the digital route is actually connected to care, or whether it is just a new way of being shut out.

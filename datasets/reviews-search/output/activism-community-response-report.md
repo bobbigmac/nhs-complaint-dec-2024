@@ -1,14 +1,14 @@
 # Activism, Community Response, And Public-Warning Reviews
 
-This is a fringe layer in the corpus, but it is real.
+This is still a fringe layer in the corpus, but it is real.
 
-Using a simple text scan for regulator escalation, public-warning language, review-about-review language, professional self-positioning, and community framing, I found **776 reviews out of 16,293** with at least one of those markers: **4.8% of the whole corpus**.
+Using a text scan for regulator escalation, public-warning language, review-about-review language, professional self-positioning, and community framing, I now find **1,625 reviews out of 40,506** with at least one of those markers: **4.0% of the whole corpus**.
 
-That broad number includes a lot of simple "avoid this place" warnings. The tighter, more clearly system-facing subset is smaller: **394 reviews** where the writer is doing more than venting, for example by appealing to regulators, speaking about the wider patient body, discussing the review record itself, or writing from an insider or authority position.
+That broad number still includes a lot of simple "avoid this place" warnings. It does **not** mean there is a large organised movement sitting inside the data. It means a visible minority of reviewers are trying to do something more public than describing one bad appointment.
 
 ## What This Looks Like
 
-Most of these reviews are not organised campaigning in any sustained sense. They are usually lone reviewers trying to do one of five things:
+Most of these reviews are still not organised campaigning in any sustained sense. They are usually lone reviewers trying to do one or more of five things:
 
 - create a public warning for other patients
 - turn a bad experience into a formal complaint trail
@@ -16,13 +16,13 @@ Most of these reviews are not organised campaigning in any sustained sense. They
 - speak as more than one isolated patient, using phrases like "local community", "patients deserve", or "not only me"
 - answer the existing review culture around a practice, either by backing up the pile-on or pushing back against it
 
-So yes, there are some obvious "weekend warrior" or activist-style reviews here, but they are scattered and episodic rather than a large organised movement.
+So yes, there are activist-style reviews here, but they are scattered and episodic rather than a large organised movement.
 
 ## Main Patterns
 
 ### 1. Public-warning reviews are the biggest fringe pattern
 
-The largest bucket is **426 reviews** with direct warning or mobilisation language. Most are negative and aimed at other patients rather than the practice itself.
+The largest bucket is now **851 reviews** with direct warning or mobilisation language. Most are negative and aimed at other patients rather than the practice itself.
 
 Typical wording:
 
@@ -37,13 +37,10 @@ This is the most common form of activism-adjacent writing in the corpus: not gro
 
 ### 2. Explicit regulator escalation exists and is easy to spot
 
-There are **154 reviews** with clear regulator or formal-escalation markers. Within that:
+There are now **329 reviews** with clear regulator or formal-escalation markers. Within that:
 
-- `CQC`: **43** reviews
-- `ombudsman`: **14** reviews
-- `PALS`: **10** reviews
-- `ICB`: **2** reviews
-- `petition`: **1** review
+- the biggest visible pattern is still `CQC`
+- the wider set also includes ombudsman, NHS England, MP, complaint, and similar escalation language
 
 These are some of the clearest examples of people trying to move beyond ordinary reviewing:
 
@@ -58,7 +55,7 @@ This is the strongest evidence that some reviewers are trying to build external 
 
 ### 3. Some reviews are written about the review culture itself
 
-There are **102 reviews** that refer to "other reviews", "these reviews", "negative reviews", or otherwise treat the Google page as a public record in its own right.
+There are now **200 reviews** that refer to "other reviews", "these reviews", "negative reviews", or otherwise treat the Google page as a public record in its own right.
 
 This splits both ways.
 
@@ -80,7 +77,7 @@ This matters because it shows some practices develop a visible review reputation
 
 ### 4. Insider or authority-positioned reviews are rare but real
 
-Only **27 reviews** clearly position the writer as a doctor, healthcare professional, GP receptionist elsewhere, or similar.
+Only **54 reviews** clearly position the writer as a doctor, healthcare professional, GP receptionist elsewhere, or similar.
 
 Examples:
 
@@ -95,7 +92,17 @@ This is the closest thing in the corpus to a recognisable "formal advocate" voic
 
 ### 5. Community framing exists, but it is small and split
 
-There are only **15 reviews** explicitly using the phrase `local community`, and the tone is mixed rather than one-sided.
+The broader community-or-collective framing bucket now contains **294 reviews**. That is much bigger than the tiny older `local community` phrase count, but it is still a minority layer.
+
+This broader bucket includes language about:
+
+- the local community
+- other patients
+- vulnerable people
+- children, elderly relatives, or whole families
+- people being warned to register elsewhere or avoid the practice
+
+The tone is mixed rather than one-sided.
 
 Positive versions:
 
@@ -111,7 +118,7 @@ Negative versions:
 - "Its clear that the health and well being of the local community is not at all the priority here."  
   Stephen Palmer, `Kearsley Medical Centre`, `5 years ago`
 
-There are also small signs of people talking about community communication outside Google itself:
+There are still small signs of people talking about community communication outside Google itself:
 
 - "many moor complaints on the app nextdoor this app is a community app all local people."  
   David Tranter, `Tower Family Healthcare`, `3 years ago`
@@ -120,14 +127,16 @@ So the corpus does contain some community-facing language, but not much evidence
 
 ## Where This Shows Up Most
 
-By raw count, the practices with the most activism-adjacent or public-warning reviews in this scan are:
+By raw count, the practices with the most activism-adjacent or public-warning reviews in this refreshed scan are:
 
 - `The Robert Darbishire Practice`: 23 flagged reviews
+- `HEALEY SURGERY`: 21
 - `New Bank Health`: 20
 - `Hawthorn MC`: 20
 - `Cheetham Hill Medical Centre`: 19
 - `Beehive Surgery`: 17
 - `Limelight Health and Wellbeing Hub`: 17
+- `Lees Medical Practice`: 15
 
 This does **not** mean all of these have organised campaigns around them. Usually it means repeated public-warning behaviour, repeated references to formal complaints, or reviewers talking to and about each other through the review page.
 
@@ -135,11 +144,11 @@ This does **not** mean all of these have organised campaigns around them. Usuall
 
 The corpus does have a visible fringe of reviewers who are trying to do more than describe their own care. They warn other patients, invoke regulators, compare notes with earlier reviewers, and sometimes write from an insider or campaign-style position.
 
-But this is still a minority layer. The typical Google review in this dataset is an angry personal account, not a piece of organised activism. The more activist or "chatgpt activist" style is present, recognisable, and worth watching, but it is thinly spread and mostly shows up as **public warning plus escalation**, not as long-running community organisation.
+But this is still a minority layer. The typical Google review in this dataset is still a personal account, not a piece of organised activism. The more activist or public-pressure style is present, recognisable, and worth watching, but it is thinly spread and mostly shows up as **public warning plus escalation**, not as long-running community organisation.
 
 ## Method Note
 
-This was a text-pattern scan over the whole indexed review corpus. It looked for:
+This was a text-pattern scan over the rebuilt indexed review corpus. It looked for:
 
 - regulator and complaint escalation terms
 - public-warning or de-registration language

@@ -2,60 +2,717 @@ Practice: The Chowdhury Practice
 Canonical code: P85003
 Postcode: OL1 1NL
 Google Maps title: Dr M Chowdhury - The Chowdhury Practice
-Google rating: 1.9
-Google review count: 95
-Google Maps URL: https://www.google.com/maps/place/Dr+M+Chowdhury+-+The+Chowdhury+Practice/@53.5437795,-2.1165894,17z/data=!3m1!5s0x487bb77e3e92cdff:0x7f261233e884be88!4m8!3m7!1s0x487bb77e3eb564ff:0x926ba7ee88e2e638!8m2!3d53.5437795!4d-2.1165894!9m1!1b1!16s%2Fg%2F11g6vf_l59?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google rating: 2.2
+Google review count: 108
+Google Maps URL: https://www.google.com/maps/place/Dr+M+Chowdhury+-+The+Chowdhury+Practice/@53.5437827,-2.1191697,17z/data=!3m1!5s0x487bb77e3e92cdff:0x7f261233e884be88!4m8!3m7!1s0x487bb77e3eb564ff:0x926ba7ee88e2e638!8m2!3d53.5437795!4d-2.1165894!9m1!1b1!16s%2Fg%2F11g6vf_l59?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 0.333
+Review collection mode: full_feed
+Review cards collected: 108
+Owner replies collected: 54
+Raw review responses captured: 11
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P85003-the-chowdhury-practice.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Abdul Aziz
+Date: 3 days ago
+Rating: 1 star
+I was registered with this GP practice for nearly 20 years, but sadly today I had to leave. It feels like if you need an appointment or even a simple sick note, you must know someone inside the system, otherwise it is almost impossible to be seen. My wife was treated very poorly by this practice. Because her condition was not taken seriously and she did not receive proper care in time, her health became much worse and she is now bed bound. Unfortunately, I personally experienced the same attitude when I was there. After seeing how my wife was treated and the difficulty in getting proper medical attention, I have lost all confidence in this GP practice. I will also be lodging a formal complaint with the relevant department about this matter. Patients deserve to be treated with respect and to receive timely medical care. After two decades with this surgery, it is extremely disappointing to leave under these circumstances.
+Practice response date: 2 days ago
+Practice response:
+Thank you for your review. I have tried to contact you with regards to this, and also that some of your comments are factually correct. we always welcome patient feedback however so have a right to also respond to false claims. If you still wish to discuss this please contact the surgery and ask for the practice manager.
+
+Author: Colin Stott
+Date: a week ago
+Rating: 4 stars
+Very good
+
+Author: Tasnim Begum
+Date: Edited a week ago
+Rating: 5 stars
+Excellent service from all staff at the practice. Never had any issues. Reception staff are warm and welcoming. Healthcare staff are professional and helpful.
+Practice response date: 9 months ago
+Practice response:
+Thank you
+
+Author: saima aktar
+Date: a week ago
+Rating: 5 stars
+Really grateful for the care I’ve received from this practice. The doctors are kind, attentive, and genuinely care about their patients. The reception team are also very helpful and welcoming
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Syed Zakariya
+Date: a week ago
+Rating: 5 stars
+The staff and doctors are great
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Syed yusuf Hasan
+Date: a week ago
+Rating: 5 stars
+Love the service the staff are brilliant, thank you.
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Amina Begum
+Date: a week ago
+Rating: 5 stars
+Thank you for your kind review.
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Sujata Begum
+Date: a week ago
+Rating: 5 stars
+Having attended the ICC practice for 46 years, I can confidently say that the service is exceptional. Rahima, one of the receptionists, consistently provides outstanding assistance. She has expertly guided me through managing and setting up my online account and has simplified the new triage system, even saving it on my phone for easy access. Her help has been invaluable, making her service the best I've experienced.
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review, we will pass this onto Rahima.
+
+Author: Khadiza Bibi
+Date: a week ago
+Rating: 5 stars
+Thank you for your kind review.
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Sultana Akter
+Date: a week ago
+Rating: 5 stars
+Thank you for your kind review.
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Mohima
+Date: a week ago
+Rating: 5 stars
+Very helpful and supportive, great members of staff!!
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Shabana Begum
+Date: a week ago
+Rating: 5 stars
+Really like the people working there so nice and friendly
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Abu Bokor
+Date: a week ago
+Rating: 5 stars
+Very good service nurse rushnara, thank you
+Practice response date: a week ago
+Practice response:
+Thank you for your kind review.
+
+Author: Mansuruz Zaman
+Date: a week ago
+Rating: 5 stars
+I’ve been a patient at the Chowdhury Practice for many years now and I can’t thank the team enough for the care they’ve provided. Rohima (Absolute credit to the team) is usually the first person I speak to, even with the new triage system in place. She is always incredibly helpful, and if there are no appointments available at the time, she kindly offers to call me back if a cancellation comes up. Small things like this really make me feel valued as a patient. I also spoke with Dr Ahmed a few weeks ago. He took my concerns seriously and prescribed the medication I needed to get back to full health. I also appreciated that after my appointment he promptly updated my patient notes, which I was able to see on the NHS App. This made me feel like my concerns were genuinely being listened to as a patient. Overall, I’m very grateful for the care and professionalism shown by the whole team.
 
 Author: Anisha Hussain
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 The Chowdhury practice is always amazing. Especially Roushanara Begum. The most friendliest and caring staff to look after my mum. Always engaging in friendly conversation and providing the best practical advice.
+Practice response date: a week ago
+Practice response:
+Thank you for your review - we always try our best for all our patients. Roush was very grateful for your words.
 
 Author: Rajna Begum
-Date: 4 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 Always request Dr Rosh for my mum. She's so attentive and so caring. So lovely to see patient care being top priority for her all the time. Thank you so much! Love the chowdhury practice!
+Practice response date: a week ago
+Practice response:
+Thank you for your review - we always try our best for all our patients. Roush was very grateful for your words.
 
 Author: Simla Begum
-Date: 4 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 I had a great experience with Rosh today. I brought my grandmother in, and we were both so impressed. She is very knowledgeable, caring, and truly listens to her patients. It’s rare to find a doctor who combines such high-level expertise with a genuine heart for people. Highly recommend.
+Practice response date: a week ago
+Practice response:
+Thank you for your review - we always try our best for all our patients. Roush was very grateful for your words.
 
 Author: Immy Raaty
-Date: 2 weeks ago
-Rating: 1 star
-Been with them since birth am 29 years of age now. Not had an issue with my health for the past 7-8years. So rang them for an appoinment today. Ive just got of prison I've had server mental health probldms in this last year and been looked after the prsion GP I've ran out off meds and now call my GP fir help they told me I don't exist on the patent list any more they have never told me that they have taken me off patent list. If they did i would have sort something out before ill. so now am stick not slept in 6 days on the verge off killing my self I was told come fill in a form and ill will let you know if we can take you on and could take up 14days. Am suffering depression and insomnia and few other things am not sure off.
-
-Author: Mariam Rana
 Date: 3 weeks ago
 Rating: 1 star
+Been with them since birth am 29 years of age now. Not had an issue with my health for the past 7-8years. So rang them for an appoinment today. Ive just got of prison I've had server mental health probldms in this last year and been looked after the prsion GP I've ran out off meds and now call my GP fir help they told me I don't exist on the patent list any more they have never told me that they have taken me off patent list. If they did i would have sort something out before ill. so now am stick not slept in 6 days on the verge off killing my self I was told come fill in a form and ill will let you know if we can take you on and could take up 14days. Am suffering depression and insomnia and few other things am not sure off.
+Practice response date: a week ago
+Practice response:
+If you contacted the surgery and asked for the Practice Manager I would be able to help. If you are moved out of the area and re registered with a GP anywhere you are removed from our list. If you are moving back to the area you can re register with us. A form does not take 14 days to respond too, an appointment can be given within a 14 day window after being triaged. If you contact us and speak to me to help we could resolve the misunderstanding that you seem to have been put under the impression of. this may give you a better outcome than a google review.
+
+Author: Mariam Rana
+Date: a month ago
+Rating: 1 star
 Terrible practice. On multiple occasions I’ve attempted to book an appointment, for ongoing chronic symptoms, but despite my attempts, the practice dismisses my health, suggesting the A&E is more suitable. With the few appointments I’ve managed to get, the doctors behave like this is a hobby for which they are too tired to attend to patients. They dismiss me continuously, and on one occasion the doctor even said he didn’t want to refer me to the hospital because ‘the process is too long.’ I feel guilty even describing my symptoms to the doctors as they yawn, roll their eyes and, as if in a rush, quickly go through the consultation as if I’m just a name to tick off a list. No one wants to be ill, and the doctors here have chosen to work at the practice, to help those who ARE ill. Despite that, they behave like they’re working in administration, not as doctors whom patients come to, to seek help.
+Practice response date: a week ago
+Practice response:
+If you contact the surgery and ask to speak to the Practice Manager I will try and help.
 
 Author: Amina
 Date: a month ago
 Rating: 1 star
 I would NEVER recommend this practice to anyone. Horrible GP practioners especially DR Hassan. He is honestly so cold hearted and rude to patients we come to you for our medical problems and for you as GPs to help us get the right medical treatment if needed. He’ll ask you to come in and make you wait for 5 minutes typing in the previous patients notes. He doesn’t even give a care about your problems and will blame it on yourself for not taking care of yourself. He has no emotions even when bringing my baby in for a checkup as she has really bad reflux he didn’t care and said “if it was so serious you would have taken her A&E ages ago”. Didn’t care at all and told me to go home and just deal with it. I’m so glad I left this practice you can never get appointments for little children at all whereas other GP have appointments available for children under 5 and the doctor calls you within an hour. This practice needs reviewing awful horrible staff who make your experience never want to come back I’m sure I ain’t the only patient who’s experienced this with DR Hassan.I would never recruit an employee like him in my practice. He needs training on how to actually care and understand his patients!!!! I’ve been with this practice for 10+ years I’m so glad I left for my self and my children.
+Practice response date: a week ago
+Practice response:
+If you had contacted the Practice Manager I would have discussed this with you. We always have Pediatric slots and I am not sure why this wasn't the case for you. Sadly I am not able to investigate or change things is people do not raise … More
+
+Author: Amina
+Date: a month ago
+Rating: 1 star
+I would NEVER recommend this practice to anyone. Horrible GP practioners especially DR Hassan. He is honestly so cold hearted and rude to patients we come to you for our medical problems and for you as GPs to help us get the right medical treatment if needed. He’ll ask you to come in and make you wait for 5 minutes typing in the previous patients notes. He doesn’t even give a care about your problems and will blame it on yourself for not taking care of yourself. He has no emotions even when bringing my baby in for a checkup as she has really bad reflux he didn’t care and said “if it was so serious you would have taken her A&E ages ago”. Didn’t care at all and told me to go home and just deal with it. I’m so glad I left this practice you can never get appointments for little children at all whereas other GP have appointments available for children under 5 and the doctor calls you within an hour. This practice needs reviewing awful horrible staff who make your experience never want to come back I’m sure I ain’t the only patient who’s experienced this with DR Hassan.I would never recruit an employee like him in my practice. He needs training on how to actually care and understand his patients!!!! I’ve been with this practice for 10+ years I’m so glad I left for my self and my children.
+Practice response date: a week ago
+Practice response:
+If you had contacted the Practice Manager I would have discussed this with you. We always have Pediatric slots and I am not sure why this wasn't the case for you. Sadly I am not able to investigate or change things is people do not raise them with me. Google reviews do not give me insight into the people or the situation to correct anything,
 
 Author: Amelia A
-Date: 2 months ago
+Date: 3 months ago
 Rating: 1 star
 I brought my daughter for an appointment and we were kept waiting 30 minutes past our scheduled time. When we were finally called in, we were then left to stand in silence for another 5 minutes while doctor Hassan typed notes from previous patients. While still typing and without making eye contact or examining my daughter, he asked why we were there. When I explained it was for a spot on her leg and that she’d had it for a few months, he immediately made a judgment and said it “must not be much of an issue” if we’d waited that long. He also commented that “they will ask why you haven’t brought her in for months” without explaining who “they” were, and before he had even looked at the spot. Only after making these remarks did he finally examine her leg and then told us it wasn’t serious and to return in two weeks with warm compresses. My concern isn’t the medical advice itself it’s the rude, dismissive, and judgmental manner, particularly when speaking to a parent about their child. Unfortunately, this is not an isolated experience. We have experienced similar rudeness from this doctor on multiple occasions. Between the repeated unprofessional behaviour, poor communication, and lack of respect for patients’ time, this is not a practice I feel comfortable bringing my children to, and I would not recommend it to other parents.
+Practice response date: a week ago
+Practice response:
+If you could please contact myself the Practice Manage so I am able to investigate this for you. I am not able to help or investigate unless people raise this with me as google reviews do not help identify patients or the issue. We certainly have more than one clinician and children have always been safe here. If you contact me I can investigate this.
 
 Author: A8ID_SIX360
 Date: 3 months ago
 Rating: 1 star
 Joke of a practice, got my 16 year old brother to pay for medication when he's in school full time. Halloween was 2 months ago you jokers 🤡
+Practice response date: a week ago
+Practice response:
+We do not charge for prescriptions. We don't supply medicine - i think your issue therefore is with the pharmacy not the practice? Also 16 year old children do not pay for medications prescribed? You really need to raise this with the pharmacy of you have been charged for a free prescription.
 
 Author: Amina Ali
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
-Amina AliLocal Guide · 25 reviews · 1 photo4 months ago
+Please can you contact the Practice Manager and explain your concerns?
+Practice response date: a week ago
+Practice response:
+Please can you contact the Practice Manager and explain your concerns?
 
 Author: mel's cookie
 Date: 6 months ago
 Rating: 1 star
 Absolutely ridiculous they tell you to telephone at 8 you are on the phone for 30 minutes when you finally get therough no appointments available I don't telephone often and when I do I can never get myself or children in meanwhile the people that don't go to work and use the doctors as a family day out get all the appointments pathetic..
+Practice response date: a week ago
+Practice response:
+I'm sorry you feel that some of our patients do not use the system fairly however now we have changed the system this should have resolved the issue.
+
+Author: samina akhtar
+Date: 8 months ago
+Rating: 1 star
+Brothers Appointment was at 3.20, rushed back from school to attend his appointment and it’s been over 1 hour and still haven’t been seen. Asked the receptionist how long they say they don’t know.
+Practice response date: a week ago
+Practice response:
+We can only apologise that sometimes appointments do run behind. Sometimes we have emergencies or patients can be complex or need more time. if each patient takes a few extra minutes this builds up. We try to balance not rushing patients so they are heard and well cared for and not keeping people waiting too long. Sometimes this isn't possible, but we do always ensure patients are seen as soon as we can in the most caring manner we can.
+
+Author: hasan ahmed
+Date: 8 months ago
+Rating: 1 star
+Bad behaviour Staff and doctor
+Practice response date: 8 months ago
+Practice response:
+Please contact the surgery and ask to speak to the Practice Manager. Nothing has been raised with me and I am unable to help or solve issues if I am unaware.
+
+Author: Azima Jalal
+Date: 9 months ago
+Rating: 5 stars
+The Chowdhury Practice are amazing. Staff members are always so friendly and genuinely caring in my experience. I have experienced first hand the abuse and impolite behaviour the reception team deal with from other individuals, the team always remain respectful and professional. The reception team are an asset to the Practice. The GPs are fantastic at their jobs, they are extremely professional and very diligent. They take their time out to properly understand your symptoms and are very informative. I would not hesitate to recommend this GP to anyone.
+Practice response date: a week ago
+Practice response:
+Thank you for your kind feedback. Patients care is our priority.
+
+Author: Joynal Ahmed
+Date: 9 months ago
+Rating: 1 star
+I’ve been registered with this practice for over 10 years, though I’ve only needed to visit about five times during that period. Unfortunately, every time I go, it feels like I’m disturbing the staff and doctors rather than receiving care. My most disappointing experience has been with Dr. Vinod. He is without a doubt, the worst doctor I’ve ever encountered. He often sees two patients at once 🤬one inside the room and another waiting right at the door. Each consultation barely lasts a minute, which feels rushed and dismissive, even faster than an AI diagnosis. Dr. Vinod showed no interest in listening to my concerns or understanding my symptoms. And it’s not just me after speaking with several other patients, I found that many share the same view about Dr. Vinod. If necessary, I’m happy to provide evidence or details of these shared experiences. It’s incredibly frustrating and disheartening. Someone needs to remind him that his salary comes from taxpayers like us and he has a duty to treat patients with respect and attention.
+Practice response date: 9 months ago
+Practice response:
+Hello, Please can you contact the practice and ask to speak to myself - practice manager. I am very keen to hear of you experience. Thank you
+
+Author: Dominik Togyer
+Date: 10 months ago
+Rating: 1 star
+Review for Chowdhury Medical Practice, Oldham I was previously under the care of Blackfriars Medical Practice in Salford, where I felt genuinely supported and looked after. My treatment plan was stable, carefully managed, and most importantly — it was working. I never had any issues and always felt safe and heard. Everything changed when I had to move to Oldham due to my disabilities and the need for support from my family. I registered with Chowdhury Medical Practice, and from the very beginning, the experience has been nothing short of devastating. The doctors there completely overturned my established medication plan with no proper discussion or understanding of my condition. Without warning, my repeat prescriptions were changed from monthly to weekly — despite my mobility issues and the fact that I physically struggle to get to the pharmacy so often. It felt like no one cared about how this would affect me. What hurt me the most was when Dr. Hussain falsely wrote in my medical records that I had a history of overdosing — something that has never happened. Although he later admitted the mistake and added a note, the damage was already done. That false accusation still sits in my record, and now every new GP I see is greeted with a lie that questions my character and integrity. It has left me feeling ashamed, even though I have done nothing wrong. The attitude of the staff was cold, dismissive, and at times outright hostile. I felt like a burden — like I wasn’t worth their time or care. They showed no empathy, no willingness to listen, and certainly no respect for the treatment plan that had helped me for years. This experience broke me. I felt helpless, humiliated, and completely alone. I have since deregistered and moved to another practice, but the emotional and practical impact of what happened at Chowdhury Medical Practice is still with me. I’m now left hoping that other doctors won’t judge me based on one GP’s careless, inaccurate words. This practice turned a safe and stable medical journey into one filled with anxiety, fear, and deep sadness. I would not wish this experience on anyone. DO NOT REGISTER WITH THEM.
+Practice response date: 9 months ago
+Practice response:
+Please can you contact the surgery to discuss this and ask for the practice manager. Thanks
+
+Author: Sadiyya Ali
+Date: a year ago
+Rating: 1 star
+If it was possible to give zero rating they would definitely get that. They’re not deserving of even one star. The worst GP practice you could ever join. The receptionists are very incompetent, say one thing and then never follow it up or get back to you. It’s like going through life and death to try and get an appointment. Strongly recommend to stay away from this practice.
+Practice response date: 9 months ago
+Practice response:
+Please contact the surgery and ask to speak to the practice manager. Unfortunately I cant review situations unless informed and I do not review google regularly.
+
+Author: Athikur Rahman
+Date: a year ago
+Rating: 1 star
+The receptionist was absolutely disrespectful the reception team didn't inform me that they were going to change the doctor who my son had an appointment with but they gave my son appointment a nurse instead of the doctor the nurse's name was Nefa.
+Practice response date: 9 months ago
+Practice response:
+Please contact the surgery and ask to speak to the practice manager. Unfortunately I cant review situations unless informed and I do not review google regularly.
+
+Author: m i a g a m e s
+Date: a year ago
+Rating: 1 star
+Rubbish service 😠😠 …
+Practice response date: 9 months ago
+Practice response:
+Please contact the surgery and ask to speak to the practice manager. Unfortunately I cant review situations unless informed and I do not review google regularly.
+
+Author: Jessie Jesmin
+Date: a year ago
+Rating: 4 stars
+Thank you
+Practice response date: 9 months ago
+Practice response:
+Thank you
+
+Author: Maisha Ahmed
+Date: a year ago
+Rating: 5 stars
+Never had a bad experience with the Chowdhury Practice; I am always met with exemplary service and quick wait times. Definitely would recommend.
+Practice response date: 9 months ago
+Practice response:
+Thank you
+
+Author: Fariza Begum
+Date: a year ago
+Rating: 1 star
+Rubbish service also waiting time...
+Practice response date: 9 months ago
+Practice response:
+Please contact the surgery and ask to speak to the practice manager. Unfortunately I cant review situations unless informed and I do not review google regularly.
+
+Author: Rukiih Seul byul
+Date: a year ago
+Rating: 1 star
+Receptionist called Rohima is absolutely disgusting. Don’t know what she did to get this job. Terrible speaking skills and most of all terrible customer service. Rude is an understatement. Acts above her pay wage seriously don’t get why these receptionists think it’s ok to talk this way. Chowdhury practice need to reexamine who they hire or offer this Little girl intensive training. DISGUSTING behaviour and very irresponsible. Would give zero stars if I could.
+Practice response date: a year ago
+Practice response:
+Please can I ask that you call and speak to myself - ask for the practice manager. To give us the opportunity to be aware of and investigate incidents in practice would be much more beneficial than addressing it on this public forum where nothing can be resolved. I am able to listen to all calls so will be able to listen to and address any issues.
+
+Author: Tojomul Ali
+Date: a year ago
+Rating: 5 stars
+Very good never had issue always seen on time and Doctors are great
+Practice response date: a year ago
+Practice response:
+Thank you.
+
+Author: Anamur rahman
+Date: a year ago
+Rating: 5 stars
+Dr Chowdhury is a very good doctor and has helped my son when he was very he is a very reliable person and does take care of everyone that does approach him the Chowdhury practice when calling can be a struggle but whenever I do call my sons get better when going to them. He’s also a very kind human-being gives time to people and hear their problems.
+Practice response date: a year ago
+Practice response:
+Thank you
+
+Author: Dulal Miah
+Date: a year ago
+Rating: 1 star
+A receptionist call RAHIMA put me down today. One of the worst service I have ever received from her!! Even though she knows my health condition, but she unavailable to help me. I can guarantee she's not qualifie for this job
+Practice response date: a year ago
+Practice response:
+Please can I ask that you speak to myself - ask for the practice manager. I will be able to investigate and respond. Addressing this on a public forum will not be able to resolve your concerns, if you address at practice we can look into this.
+
+Author: Suffy Miah
+Date: a year ago
+Rating: 5 stars
+As a new patient I didn't find this surgery great however once past this point I have completely changed my opinion on this and now give this surgery 5stars the staff and management have gone above and beyond to ensure I received my medication I would definitely recommend these guys
+Practice response date: a year ago
+Practice response:
+Thank you - I am glad we were able to show you that we take patient care very seriously
+
+Author: Siyana Ali
+Date: 2 years ago
+Rating: 1 star
+Worst worst worst!!! Even the receptionists r bad with attitude and doctors r even worse! Had to change this gp!!
+Practice response date: a year ago
+Practice response:
+Please feel free to contact the surgery and address this with myself - practice manager. I am unable to help if patients do not inform me. Addressing it on a public forum and not informing the practice will not create the resolution.
+
+Author: Ali Noor
+Date: 2 years ago
+Rating: 1 star
+Dreadful, not been to the GP for a while, needed an appointment, was told none available and to call 111. 111 service booked me in with the very same GP that ‘ Has No Appointments’. Reception staff are ignorant and rude not worth the hassle with this GP.
+Practice response date: a year ago
+Practice response:
+111 have slots that we are not able to book in practice - these are saved for patients who contact 111 and have been triaged by them. Any concerns should be raised with the practice manager who will attempt to resolve and in some cases explain to best help the patient.
+
+Author: Marc Mountford
+Date: 2 years ago
+Rating: 5 stars
+Thank you
+Practice response date: a year ago
+Practice response:
+Thank you
+
+Author: shihab raj
+Date: 2 years ago
+Rating: 1 star
+I am writing to express my dissatisfaction with the way appointments has been handled by the reception team. Despite my attempts to resolve the issue, I have not received a satisfactory response or solution. …
+Practice response date: a year ago
+Practice response:
+I am writing to express my dissatisfaction with the way appointments has been handled by the reception team. Despite my attempts to resolve the issue, I have not received a satisfactory response or solution. … More
+
+Author: Abul Shaher
+Date: 3 years ago
+Rating: 1 star
+Pathetic excuse of a GP surgery. GP's are fine but the receptionists think they are the consultant doctors and pipe up and speak to you like they know everything. Receptionists seriously need changing. Rude staff who will sit and listen to …
+Practice response date: a year ago
+Practice response:
+Pathetic excuse of a GP surgery. GP's are fine but the receptionists think they are the consultant doctors and pipe up and speak to you like they know everything. Receptionists seriously need changing. Rude staff who will sit and listen to … More
+
+Author: Aklima Begum
+Date: 3 years ago
+Rating: 4 stars
+Don’t often need to visit but I’ve never had an issue when I have had an appointment. Staff are friendly and it’s a nice atmosphere. A standard practice I’d say.
+Practice response date: a year ago
+Practice response:
+Thank you
+
+Author: Sam Islam
+Date: 3 years ago
+Rating: 5 stars
+Just thought I’d leave a review after seeing all the negative feedback being posted here. I’ve had a great experience with this practice and have been treated professionally. That’s because I treat them with respect. Certain things can be better but that’s an issue with the overall healthcare system in the U.K. I get people are ill or in a bad way but you need to understand where the issues lie. Rather than coming on a public place to say the stuff they are saying. People think the world revolves around them and their needs come before everyone else’s. I know this is a harsh thing to say but the reality is, this issue is affecting every aspect of the healthcare system. This isn’t just isolated individual practices. Every practice has finite resource so can’t just see everyone as and when people want. The amount of people a practice would cover is insane compared to the volume of doctors/staff a practice has. The receptionists are the front line, people are saying ‘the way the receptionists act, is like they’ve gone to medical school’, what are u expecting? The doctors to sit at the reception? They convey the doctors messages because they can’t sit at reception, as they’re seeing patients. If you’re that upset then get private medical care, see where that takes you. All this anger needs to be directed at the government who have made a dogs dinner out of the whole healthcare system.
+Practice response date: a year ago
+Practice response:
+Thank you
+
+Author: NL
+Date: 3 years ago
+Rating: 1 star
+Disgusting doesn’t even describe this practice. You can’t say anything without the receptionists piping up like they own the practice and refusing to deal with anything. If it was possible to give them a minus, I know many people would. The CQC really need to take a good look at this practice and shut it down. Patient care is not a priority for this surgery. All the receptionists need replacing at this surgery. No compassion, no willingness to help. The only thing they know to say is “I will not continue with this call if you continue being violent” regardless of whether or not you’re being violent. With zero qualifications in the medical field, they think they can decide the urgency of your medical condition in terms of whether or not you need to be seen and how soon you need to be seen. Patient conditions will only get worse if its left to these receptionists to decide if and when you can have an appointment. Mohua Chowdhury, CHANGE YOUR RECEPTIONISTS or teach them how to do their jobs PROPERLY.
+Practice response date: a year ago
+Practice response:
+If you address this with the practice we will investigate this. Reception staff receive verbal abuse daily and are verbally and physically threatened. I am not sure of the incident or the circumstances but we are able to listen to all calls and would do so if you raised this with us.
+
+Author: s Miah
+Date: 3 years ago
+Rating: 1 star
+If I had the power I would close this practice down. Stay away from this place they are good for nothing
+Practice response date: a week ago
+Practice response:
+If you contact the Practice Manager to discuss your concerns I maybe able to help.
+
+Author: Mo
+Date: 3 years ago
+Rating: 1 star
+It’s time to change your receptionist, they seem to give appointments to their family members and no appointments left for the people who actually need it. Time to change doctors
+Practice response date: a week ago
+Practice response:
+We run a triage based appointment system now, to ensure that all requests are triaged, seen and appointed an appropriate care pathway.
+
+Author: Junaid Shah
+Date: 3 years ago
+Rating: 1 star
+Service here is really bad they never pick up the phone!!! Been trying to get an appointment for a week now call them around 8am to be cut off stating our lines are too busy for my mum who is 79 years old!!! When they do pick up all the appointments have gone try again Tommarow there should he more priority's for pensioners/elderly Will be complaining about this practice! All staff and receptionist need to be sacked its a joke!!!!! Will be putting complain to through to the NHS. Disgusting behaviour by dr chowdhury practice its always been like this. Come to a point where you dont want to even bother with them anymore
+Practice response date: a week ago
+Practice response:
+We do answer calls from 8am to 6.30pm each day more than one person at a time. The appointments system has now changed however to help alleviate these concerns.
+
+Author: Lamisha Miah
+Date: 3 years ago
+Rating: 1 star
+Been here for nearly a decade, the GPs themselves are not the problem, the receptionists which are a direct contact to them, are. The system might be the problem, or some staff, or both. Appointment bookings are NEVER pleasant or quick, this has been the case for a few years now. I'm aware it's not just this, but many gp practices are facing current difficulties themselves , but that does not replace the fact that most of the time the customer service is in most days horrible.
+Practice response date: a week ago
+Practice response:
+Our booking system has now changed - and the reception staff should be helpful at all times. Please contact the surgery and speak with the Practice Manager with any concerns.
+
+Author: Joe Shaughnessy
+Date: 3 years ago
+Rating: 1 star
+Awful practice ring numerous and calls constantly put down. They blame there phone system which has been updated four or five times. Been with this practice for around twenty years there are some really good doctors it’s just a shame the reception staff lack any customer service skills
+
+Author: Amanj A
+Date: 3 years ago
+Rating: 1 star
+It wouldn’t let me otherwise I will give them 0 star. My wife and my daughter was registered in this GP. My wife need to see GP was an emergency I call GP in the morning 18 times from 7:59 no one has answered the phone, when they answered after 10 minutes on 19th times answer was sorry all booked for today! I went to the reception explained situation they give us next 21 days appointment. How stupid it is that. I told them in next 21 days my wife which breast feeding daughter will be die, they didn’t care. My wife being told by midwife need to get a whooping cough vaccine from the GP when she was pregnant. I rang them myself twice receptionist told me we don’t do that. Wife gives birth without the whooping cough vaccine and was suffering. I filled up the form changed my wife GP I didn’t know I have to do separate form for my 4 months old daughter but this practice told NHS that they can’t be my daughter’s GP no more because they are far. No address has changed what the lie. Registered with this practice for over 14 months never my wife seen the GP even she needed few times.
+
+Author: Mohammed Ali
+Date: 3 years ago
+Rating: 1 star
+Absaloute joke of a service. Staff are very rude.
+
+Author: Tashnia Khanum
+Date: 3 years ago
+Rating: 1 star
+If there was a minus scoring it would be ticked. This practice does not even deserve 1 as a minimum. It does not even deserve any form of a low rating either. Multiple phone calls made to obtain an appointment as they seem to have no capacity after 8:30 am. You then get told the next day to ring after 8 am however the phone lines cut you off due to the “agents on the phone being busy”. Eventually when you do get through to the phone line you get told the the same thing that they have “no appointments” at 08:38 am. For my own comparison to leave this practice due to all sorts of bad experiences over time, I rang a different practice who I would be potentially joining. This new practice offered me:- 1) Telephone visit 2) A face to face consultation The Chowdhury Practice don’t think they have the capacity to offer any source of assessment to their own patients whether it be a triage phone call or a F2F appointment. How the CQC can deem that as a “caring & responsive” practice is questionable. Overall the reception team - some can be good at times and some are questionable as if they spent 5-6 years at medical school with their “knowledge” so they can filter your reason to want to see a doctor/nurse and then decide upon themselves to see if they have any appointments to give out. Cannot really fault the nurses or the doctors eventually when you do get to see them as they work exceptionally well. The problem is getting the “receptionist/ wannabe medical professional” to actually book you in first after falsely advertising that the phone lines are open after 8 am. On the overall reviews this practice has a common theme of low reviews which is clearly understandable, it is a shame the practice hasn’t taken constructive criticism of their own patients to improve their services and their staff. The recent CQC rating showed “good”, in my professional and personal opinion it does not even deserve this and should be investigated further and a reconsideration needs to occur. Not to all - don’t bother joining this practice if you actually do want to see a qualified doctor or a nurse because you won’t get very far.
+
+Author: zabed akhtar
+Date: 3 years ago
+Rating: 1 star
+Zero star if it was possible. They can’t even manage the patients that they’ve got but still taking patients on.
+
+Author: Shahida Khan
+Date: 3 years ago
+Rating: 1 star
+Absolutely awful. Unable to book an appointment for 3 months. They never get back to you even after saying they would
+
+Author: Connor Frew
+Date: 3 years ago
+Rating: 1 star
+Connor FrewLocal Guide · 17 reviews3 years ago
+
+Author: Fatima
+Date: 3 years ago
+Rating: 1 star
+This doctor don’t take your mental issues seriously,They’ll never change the medicine and give you alternative when you have issues with swallowing,this went on for 3 years they did nothing they’ll make your mental illness more worse and when you don’t turn up for the appointment cos they can’t give you a day that’s convenient for you they remove you immediately ,I sent the manager couple of emails there was no response at all,and when my husband spoke to her directly regarding me,she lied and told him she spoke to me when she did not
+
+Author: Elliot Maids Services
+Date: 3 years ago
+Rating: 1 star
+if there was -1 this is what I would give them, after being a patient with them for 20 years, the practice decided out of nowhere that they can no longer have me as a patient due to my postcode. Awful awful awful and will be reporting this practice. 1. it will be almost impossible to get an appointment 2. The doctors are dismissive and refuse to treat you 3. The receptionists do not pick up their phones 4. They totally mix up patient details as they contacted me a few times about another patient. 5. Absolute disgrace. 6. Only thing is that, they are easily accessible in the oldham town centre, but you might as well go elsewhere or go hospital as they will not help you but will be first to attack you for going to the A&e for treatment. 7. I suffered for weeks without treatment, till i had to self medicate cause again they will ignore you and will not treat you. 8. Referral system is in the pits of hell, if you have an issue you might as well go to the a&e Actually it is a blessing to have been kicked out. Only pro is it is a clean practice.
+
+Author: jannat ferdous
+Date: 3 years ago
+Rating: 1 star
+This GP is honestly ridiculous. They are advertising to be open from 8:00 AM but I have been attempting to get through since 8:00 AM to be cut off by an automated voice stating “We cannot take your call due to our call volumes at the moment”. How can the surgery have reached phone call capacity by 8:01 AM? This is false advertising as the surgery is clearly closed. It is Friday and I have a chronic medical issue which requires GP treatment so I am unable to call 111 or 999 in regards to this. I have to wait until Monday now to receive medical treatment when I will probably be told to call back on Tuesday at 8:00AM as they have reached their capacity. This is completely negligent to patient care as patient’s should not have to be trying to get through to their GP for medical assistance for 50+ minutes to continually be cut off by an automated voice. The NHS should be easily accessible to all as we are paying for these services. I will be reporting this surgery to Oldham CQC as they need thorough investigation into their duty of care towards their patient’s.
+
+Author: GoT TopWar
+Date: 4 years ago
+Rating: 1 star
+GoT TopWar4 years ago
+
+Author: Mohibur Rahman
+Date: 4 years ago
+Rating: 1 star
+If you suffer from mental health issues, avoid this place. You'll end up suiciding before you get an appointment. If you have any symptoms of illness', also avoid this place. You'll end up with severe health issues by the time the receptionist says "sorry, you'll have to call again tomorrow" for the 30th time in the month. Even before Covid, service by staff (excluding doctors) is horrendous. Receptionists need to be fired and new receptionists should be vetted to see if they are humane. The current staff definitely do not show any signs of humane behaviour, just an attitude which is probably derived from their own personal disappointment of not making it to medical school; however, that is just my assumption.
+Practice response date: 4 years ago
+Practice response:
+Good Morning, no need to be rude, I’d be happy to discuss your grievances if you want to call me. Practice Manager
+
+Author: rubina rubi
+Date: 4 years ago
+Rating: 1 star
+It's a joke waiting 1 hour 30 mins and the receptionist has a bad attitude.
+
+Author: Shahinoor Islam
+Date: 4 years ago
+Rating: 1 star
+This practice is a disgrace! They don't seem to be taking appointments for people who need their doctors service. Three days in a row i have called them starting from 8AM and around half an hour later my called get answered only to be told they are fully booked! WHAT? its a complete joke or a surgery!
+
+Author: Caroline Robinson
+Date: 4 years ago
+Rating: 4 stars
+When you do get through Dr Hassan is excellent. My mother has a lot of underlying issues but he took the time to listen to all of them and tried to help her. Thank you.
+
+Author: Bob Ahmad
+Date: 4 years ago
+Rating: 1 star
+The Asian girl (Fatima) you need to be mindful and educated on how to speak to your elders! Your not a clinician nor a practice manager so do not false advertise your role within the practice as your just a receptionist! Despicable to believe you requested £40.00 for a medical report of an elder patient whose first language isn’t English! The practice should be investigated by the CCG to see how inappropriate the staff are! Just because there Asian they think they can manipulate the English translation and con people out of money!
+
+Author: Joanna Anderson
+Date: 4 years ago
+Rating: 1 star
+Straight up rude reception staff and practice manager. Not been able to get an appointment with doctor for well over 18m including on phone. Complaints both using email (myself) And heard by another patience (when there seeing nurse). Receptionist respond with well if you don't like it go elsewhere. Let's it down because on the rare occasion you get an appointment the drs and nurses are pretty good in my previous experience
+Practice response date: 4 years ago
+Practice response:
+I will contact you to discuss your concerns.
+
+Author: sarmin Mahmud
+Date: 4 years ago
+Rating: 5 stars
+The GP's are excellent and very friendly. 5 stars!
+
+Author: zia rahman
+Date: 4 years ago
+Rating: 1 star
+Well said to be honest nothing has improved reviews speaks for it self gonna have to change gonna have to report them to the UK Gp watch dogs to investigate they seem to be abuseing tax payers money.
+
+Author: Israk Miah
+Date: Edited 4 years ago
+Rating: 1 star
+Israk Miah1 review · 8 photosEdited 4 years ago
+
+Author: Shemly Ahmed
+Date: 5 years ago
+Rating: 1 star
+It's becoming the worst doctors ever..everyday you need to call but they never answer the calls, even if you call at 8am I've been with them since I was 12, all my family member left only im with them but I'm also going to leave..very disappointed and even the receptionist girls are very rude
+
+Author: G Pink
+Date: 5 years ago
+Rating: 1 star
+I would give ZERO if possible. The amount of errors and continuous mistakes they make is shocking. I cannot fathom how this surgery is continuing with their lack of system, processes and structure. Few months ago they sent so many mass …
+
+Author: Abid Noor
+Date: 5 years ago
+Rating: 1 star
+What a joke the phone system. Call never gets answered and all it says 4 options twice then cuts off. Also the online service says messaging system not available so how am i suppose to contact?
+
+Author: Saleha Begum
+Date: 5 years ago
+Rating: 1 star
+Can never get through. If you do, drs dont really care to listen properly yet alone help in anyway.
+Practice response date: 5 years ago
+Practice response:
+Thank you for your feedback. The practice is extremely busy and whilst we understand patients frustrations at the difficulty in getting through to the practice we can assure you the staff are answering as many calls as possible.
+
+Author: Laura Greaves
+Date: 5 years ago
+Rating: 3 stars
+Laura Greaves5 years ago
+
+Author: Khukon Ahmed
+Date: Edited 5 years ago
+Rating: 1 star
+Worst service ever! I’ve been trying to get a hold of them for the past 2 weeks now spending at least over an hour a day ringing and they don’t answer their phone. Before the lockdown the best policy was just to walk in but i cant even do that anymore. Im on immunosuppressants So i fall ill a lot but they do not care about their patients at all.
+
+Author: Ruhul Amin
+Date: 5 years ago
+Rating: 5 stars
+Ruhul AminLocal Guide · 23 reviews · 1 photo5 years ago
+
+Author: random person
+Date: 5 years ago
+Rating: 1 star
+random person5 years ago
+
+Author: RENA BEGUM
+Date: 5 years ago
+Rating: 1 star
+They ask me to call and make appointments for blood tests but no one answers the phone it's been weeks I have been calling but no one answers today it's been more than 30 mints on the phone but no answer
+
+Author: Ahmad Aftab
+Date: 6 years ago
+Rating: 5 stars
+Ahmad Aftab6 years ago
+
+Author: nilufa Alisha vlogs
+Date: 6 years ago
+Rating: 5 stars
+nilufa Alisha vlogs6 years ago
+
+Author: M Miah
+Date: 6 years ago
+Rating: 1 star
+Not worth 1 star even what's the use of booking at 1240 then calling u at 2 o'clock to be seen disgusting service!!!!
+
+Author: Akhtar Hussain
+Date: 6 years ago
+Rating: 1 star
+Disgusting service hung the phone on me after being on the line for 44mins was told to find a nother doctor aswell
+
+Author: - Ali H -
+Date: 6 years ago
+Rating: 1 star
+Never answer phone, it just keeps ringing.
+
+Author: Ali Hussain
+Date: 6 years ago
+Rating: 1 star
+This is the worst surgery I have ever came across. Doesn't matter what time of the day you ring they will never ever answer the phone. You have to ring several times being on hold for 30mins until you even get an answer. Whilst in surgery the phones are ringing and the staff are just sat. Why can't one see to customers and one answer the calls. Management issues definitely. I just don't understand how hard it is to answer a phone, it isn't exactly the busiest surgery going and language barrier isn't an issue as there are bilingual staff working there.
+
+Author: A. Salam
+Date: 6 years ago
+Rating: 1 star
+Very bad Gp surgery. Never can get appointments. Staff never answer the phone. It can take upto 30 mins for them to answer a call. Morning. Afternoons whenever . Poor management.
+
+Author: sarwar hussain
+Date: 6 years ago
+Rating: 5 stars
+sarwar hussain6 reviews · 1 photo6 years ago
+
+Author: Kev Heighway
+Date: 6 years ago
+Rating: 1 star
+Disgusting! Rang several times never answered. Doctors can't get you out quick enough! IF you actually get to see one. Disgrace, nothing more!
+
+Author: Issub Ali
+Date: 6 years ago
+Rating: 1 star
+Pretty terrible place honestly. Reception staff left me on hold for 35 min at 1pm. How busy can you be at 1pm? I've gone in and seen them ignore phones that are ringing. The doctors are terrible as well I've had many very serious things happen over the years due to their neglect and still suffer to this day because they aren't willing to do the proper checks or referrals.
+
+Author: Sarra Mackenzie-pilot
+Date: 6 years ago
+Rating: 5 stars
+Always great help, massively appreciate everything they have done. Never had to wait for an appointment. Friendly and caring. I do leave it until I am really sick before going, but they understand that I don't want to waste their time, and really care about my and my families health.
+
+Author: M11UKD 786
+Date: 6 years ago
+Rating: 1 star
+Worst service ever the manager is a joke
+
+Author: Nasima Begum
+Date: 7 years ago
+Rating: 1 star
+Such horrible service from Dr Sayed Hassan, never met such a mean person!!!! Came in hoping to get some advice for my 2 year old son then I received nothing and all he did was shout at me.
+
+Author: Charley Roberts
+Date: 7 years ago
+Rating: 1 star
+Absolutely shocking rang the practice 57 times either engaged or just rings through. One call rang through for 25 minutes. Understand it can be busy but really ??? Joke
+
+Author: Afsana Begum
+Date: 7 years ago
+Rating: 1 star
+Service is very poor. If you try calling, you’re on hold for a very long time. The wait is horribly long and waste of time. Very inconvenient and something needs to be done by the staff to better their service.
+
+Author: Mili Akthar
+Date: 7 years ago
+Rating: 1 star
+Mili Akthar7 years ago
+
+Author: Shahjahan Shah
+Date: 7 years ago
+Rating: 1 star
+One off the WORST OF THE WORST doctor practice in England. They never answer your call and Doctors and staff are very Rude.
+
+Author: Akki Ronn
+Date: 7 years ago
+Rating: 1 star
+The staff are very neglectful
+
+Author: Abdul Amin Gani (Landox)
+Date: 7 years ago
+Rating: 1 star
+Good morning.
+
+Author: N B
+Date: 7 years ago
+Rating: 1 star
+No understanding of person centred care or professionalism. Receptionists are very rude both in person and via phone. Can take over 30min for anyone to answer the phone. Most doctors at the surgery also lack in professionalism and will ask personal questions about extended family members whilst failing to meet the needs of patient attending. Quality of care is poor and staff are neglectful. Have had family require emergency treatment as a result of malpractice by the doctors at this surgery. It is appalling that they are still open and running. Would not recommend!
+
+Author: Ali Hussain
+Date: 7 years ago
+Rating: 1 star
+Ali Hussain2 reviews7 years ago
+
+Author: Ahshan Habib
+Date: 7 years ago
+Rating: 1 star
+Ahshan Habib2 reviews · 5 photos7 years ago
+
+Author: M Ali
+Date: 7 years ago
+Rating: 1 star
+Been ringing from morning no ones answerd my phone.
+
+Author: Happy family Food
+Date: 8 years ago
+Rating: 1 star
+Happy family Food8 years ago
+
+Author: dominic sykes
+Date: 8 years ago
+Rating: 1 star
+Worst doctors I have ever been to, waiting for an hour for appointment in a small waiting room that's always packed. End up coming out worse than you went in. Reception staff just don't seem to care tbh, ain't the politest place. I phoned this morning at 8am to get in today was ringing for 10mins then when answered they put the phone down on me. it's nearly 9 now and still not been able to get back in touch. I definitely wouldn't recommend.
+
+Author: Peter Burnley
+Date: 8 years ago
+Rating: 5 stars
+I have received: excellent service from the surgery; helpful and responsive advice and support from all the staff; and cannot praise the team/thank them enough. We have a wonderful national health service. I find it sad, generally speaking, that people don't show more gratitude, understanding and appreciation.

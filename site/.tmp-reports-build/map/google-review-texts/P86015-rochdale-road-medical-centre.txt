@@ -3,59 +3,642 @@ Canonical code: P86015
 Postcode: M24 2PU
 Google Maps title: Rochdale Road Medical Centre
 Google rating: 4.0
-Google review count: 117
-Google Maps URL: https://www.google.com/maps/place/Rochdale+Road+Medical+Centre/@53.5563726,-2.1959022,17z/data=!4m8!3m7!1s0x487bba6da52c91a9:0x1b8c39aa0d752339!8m2!3d53.5563726!4d-2.1959022!9m1!1b1!16s%2Fg%2F1tfqfbp9?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google review count: 122
+Google Maps URL: https://www.google.com/maps/place/Rochdale+Road+Medical+Centre/@53.5563758,-2.1984825,17z/data=!4m8!3m7!1s0x487bba6da52c91a9:0x1b8c39aa0d752339!8m2!3d53.5563726!4d-2.1959022!9m1!1b1!16s%2Fg%2F1tfqfbp9?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: full_feed
+Review cards collected: 122
+Owner replies collected: 6
+Raw review responses captured: 13
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86015-rochdale-road-medical-centre.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Gillian Burton
+Date: 21 hours ago
+Rating: 5 stars
+We are devastated to hear our amazing practice nurse is leaving. Debbie has been the most helpful, kind, knowledgeable and outstanding person we have had the fortune to have as our nurse. We wish you well and hope you achieve your dreams for the future. Gillian Burton and Chris Cammiss
+
+Author: Julie Gagan
+Date: 6 days ago
+Rating: 5 stars
+I am absolutely devastated to hear that beautiful Debbie ( nurse ) is leaving the practice she is the back bone of this practice. I have been at this practice since I was a child ( Dr Levison ) you will never get a nurse so kind and caring I know she bends over backwards for her patients that’s why patients have stayed for so long well Debbie this is your time now !!!! You will succeed in what ever you do !!!! I for one will be definitely moving to another Doctor’s Practice Good Luck Debbie ❤️
+
+Author: Emily Harrison
+Date: a week ago
+Rating: 5 stars
+All staff at the practice are professional and polite. I nearly always manage to get a same day appointment for myself or my children if we need it. The reception team very recently worked hard to liaise with Royal Oldham for my baby as well. Special thank you to practice nurse Debbie who has provided care for me and my babies. She’s so kind and considerate. She’s laughed and cried with me. Thank you for going above and beyond for all of your patients, you will be missed!
+
+Author: Chloe Bolton
+Date: a week ago
+Rating: 5 stars
+I have been a patient here for some time now but I honestly cannot thank nurse Debbie enough for everything she has done for me over the years. She is one of the most kindest, attentive and nurturing people I have experienced within the medical profession. Thank you so much Debbie!
+
+Author: Mark Anderson
+Date: a week ago
+Rating: 5 stars
+My experance with the nurse has been excellent very pleasant.
 
 Author: Sarah Robinson
-Date: 7 hours ago
+Date: a week ago
 Rating: 5 stars
 I would like to say a huge thank you to Practice Nurse Debbie at Rochdale Road Medical Centre for how well she has looked after me and my Mum and Dad for many, many years and for her genuine care. She is such a kind, friendly and knowledgeable lady and she always put me at ease during appointments, both face to face and over the phone. Debbie is a great listener and her calm, welcoming manner helps to alleviate any worries. You will be greatly missed at the Practice Debbie, you are one in a million. Sending you best wishes for the future.
 
 Author: Paul Kay
-Date: 9 hours ago
+Date: a week ago
 Rating: 5 stars
 Debbie the nurse what a wonderful lady can't help you enough, very pleasant every time and always goes the extra mile to help you all I can say is thank you very much for all you're help
 
 Author: R Birks
-Date: 3 days ago
+Date: a week ago
 Rating: 5 stars
 I've been informed that Debbie (Practice Nurse) is leaving I cannot believe this practice is letting her go. Worth her weight in Gold. Knowledgeable, efficient nothing too much trouble ,one of a few there that are the glue for this practice. Good luck in whatever you do next.
 
 Author: Lesley Brown
-Date: 3 days ago
+Date: a week ago
 Rating: 4 stars
 I have been with this surgery for roughly 45 years and I’ve just found out that the lovely Debbie - Debbie the nurse - is leaving for pastures new and I’m devastated. The previous nurse Annie was lovely but Debbie goes above and beyond for everyone. She has a lovely smile on her face every time you see her, nothing is too much trouble, and she goes the extra mile for every one of her patients. She will be sadly missed by all and no doubt irreplaceable. So sad. 4 stars for the surgery. 5 for Debbie❤️
 
 Author: Pauline Birks
-Date: 4 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 I was devastated to learn that Debbie is leaving the practice. She will be sorely missed by all her patients. I have been with this practice since its inception and Debbie is by far its most indispensable asset. She is so kind and caring and knows her patients and their families inside out. Good luck Debbie in your new venture, can’t believe they’re letting you go. Take care xxx
 
 Author: Georgia Maudsley
-Date: 5 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 Debbie has been our family nurse for as long as I can remember and we can’t thank her enough for her continuous kindness and support. Her exceptional knowledge and care is second to none and she never fails to ensure you feel listened too and seen. Wishing you all the best. We will miss you. X
 
 Author: ch t
-Date: 5 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 “Debbie’s Doctors” …I’ve been registered since 1992 with Dr Ahmed, he was brilliant, when I needed to attend as an adult/mum the surgery and staff was unpleasant with minimal people skills or interest in helping, a lovely woman with broken English and a sick child in distress was in once and the receptionist refused to help and sent her away, because I work in the NHS I gave the information the receptionist didn’t want to. Except for Debbie, she is the heart and soul, since my daughters 1st newborn appointment, all of her injections, her asthma review, and my personal appointments have been with Debbie, she’s one in a million with a pure heart, always positive and puts you at ease, she remembers and asks things about holidays we went on, how the family and my nieces are by name, but always professional and confidential. My daughter is 8 now and asks to have her flu vaccine at “Debbie’s Doctors” instead of school, because she knows and trusts her completely. I know Debbie is now leaving soon, like Dr Ahmed, she will be an irreplaceable loss to the surgery, patients and children, who we will miss and remember decades later. I wish her all the best in and happiness in her new venture.
 
 Author: lucy mackie
-Date: 6 days ago
+Date: 2 weeks ago
 Rating: 5 stars
 Just wanted to give a shout out to my nurse Debbie at Rochdale road medical. Centre - she is amazing, so friendly and considerate and was lovely with my daughter for her first jabs
 
+Author: Peter Russon
+Date: 2 weeks ago
+Rating: 5 stars
+Staff Always helpful patient and efficient. Appointments hard to get but that's the system not the staff. Staff have given different options to get Appointments and treatment, helped with phone numbers unfortunately iv seen Staff being spoken to in a not nice way and they have Always stayed calm and patient, seeing the person gets the best they can offer.Doctors and nurse's are excellent to.
+
 Author: Leanne Fitzpatrick
-Date: a week ago
+Date: 2 weeks ago
 Rating: 5 stars
 Debbie the nurse from Rochdale Road medical centre is the most warming gentle caring person I’ve ever come across . She always lets on by my name when she sees me .and is always so lovely . What a gem . Wish there was more like Debbie in this world .
 
 Author: Wayne Langford
-Date: a week ago
+Date: 2 weeks ago
 Rating: 1 star
 Poor surgery can't get a face to face doctors appointment you ring and they book you on or say they've booked you in and then they've not should've had an appointment on march 4th was told booked in and now I'm not doctors tried calling today sadly phone didn't ring due to being in a built up area rang them couldn't rebook me until march 13th absolutely a disgrace not good enough I've PTSD I need a change of meds and a appointment to get a proper diagnosis that should've happened march 4th but you can't book people properly you're a joke.
+
+Author: Rondo Rocket
+Date: 3 weeks ago
+Rating: 5 stars
+Thank you Dr Bukari for your service and for providing meaningful medicine to help myself and family
+
+Author: James Ahern
+Date: Edited 3 weeks ago
+Rating: 5 stars
+I had my flu vaccination today by Dr Khawer Khan what a realy nice person very understanding professional and welcoming also a big thanks to the receptionist who rang me back with an available late appointment she went out of her way to get me the appointment.
+
+Author: Lena Connolly
+Date: a month ago
+Rating: 3 stars
+Debbie the nurse is amazing best thing about the surgery, so kind puts you at ease x
+
+Author: D Lo
+Date: a month ago
+Rating: 4 stars
+5 stars for Debbie. I have always received exceptional support from Debbie who checks in on how I am, showing genuine compassion and listens to my concerns. I would say the level of care I receive from Debbie is outstanding and I am absolutely gutted that she is leaving the practice. I will miss her very much. As for the rest of the team - I receive the right amount of attention and professional care. However, it can be a problem getting through when I am needing an emergency on-the-day appointment because the telephone lines can be so busy and I only have a limited window to make the call due to my own job requirements. Hence the drop in one star.
+
+Author: Helen Wadsworth
+Date: a month ago
+Rating: 5 stars
+I had an appointment with the Doctor then with the nurse Deborah. The doctors appointment was fine.The nurse however was lovely. She always goes out of her way to make sure everything is ok. She is so positive and helpful. I was sad to hear she is leaving the practice. She will be greatly missed by the patients, definitely losing their best asset. She has been there along time and I built up a trust and respect for her.
+
+Author: deedee h
+Date: a month ago
+Rating: 5 stars
+Absolutely gutted that your leaving Deborah Moss!!. You have been my rock for the last 11years and the surgery will never be the same. My family and i would like to say Thank you for being the best nurse we have ever had you will 110% be sadly missed 😞 good luck with everything and take care xx …
+
+Author: Gandalf The Grey
+Date: a month ago
+Rating: 5 stars
+Ticks all my boxes Very humble practice.
+
+Author: Tracy Ehis
+Date: a month ago
+Rating: 5 stars
+The nurse is lovely,caring and amazing to all her patients
+
+Author: Andy McMahon
+Date: a month ago
+Rating: 5 stars
+The nurse (Deborah) is so caring and patient. Nothing is any trouble for her. If I ask any questions, Deborah will answer me, reassure me and tell me exactly what she thinks is best for me going forward. I’ve been under her care for years now and she’s been always very supportive of me. I heard today that she is leaving the surgery soon. It’ll be difficult to replace such a super nurse. Thanks for everything Deborah, you will be missed!
+
+Author: HANNAH BENBOW
+Date: a month ago
+Rating: 5 stars
+We can’t thank Debbie enough for the care, compassion and kindness that she has shown to us over the last 11 years, she has looked after 4 generations of us as a family. Because of you, our family has felt cared for, respected, and truly seen. Your work is more than a profession it is a gift. No problem is ever too big and we appreciate the person and nurse that you are. We wish you all the luck in the world for whatever you decide to do in the future. Thank you for everything, The Benbows
+
+Author: Amanda Chaloner
+Date: a month ago
+Rating: 5 stars
+Sorry to here your leaving the doctors,it won't be the same without u,Your such a lovely lady.l hope to c u in tesco sometime,good luck in your new adventuer, All best wishes amanda & karl.
+
+Author: Donna Williams
+Date: a month ago
+Rating: 5 stars
+My review is for nurse Deborah , in 2024 I came to see the nurse after years of attending with numerous issues which were never really looked into . I came at my wits end and saw Debbie who referred me straight away for an ENT app . That app led to an MRI scan where they found a brain tumour !! Thank god they found it when they did or I wouldn’t be here to tell my story . Debbie you are a true angel you actually took the time to listen to me and to refer me on , you saved my life and for that I will be eternally grateful 🙏 we need more people like you who actually care about patients and take the time to hear us . I’m going to miss you and I want to thank you for everything you have ever done for me and so many others who speak so highly of you and your dedication . ❤️🥰💕
+
+Author: Dr Aisha K
+Date: a month ago
+Rating: 5 stars
+A big thank you to Debbie, my children had their vaccines with her and they love her. She is very sweet, gentle and professional.
+
+Author: Michelle Murphy
+Date: a month ago
+Rating: 5 stars
+Nurse Debbie is one of the most kind and caring people in this practice. She listens to you attentativly and is always of a loving disposition. I have felt very relaxed in her surgeries as I have been a patient here since I was born. She puts me at ease and you can see she is always listening. She will be sadly missed by myself and I'm sure all of her patients. However I wish her all the luck in the world with her next endeavours and I'm sure she will smash out of the ball park whatever she does next. Good luck nurse Debbie.xx
+
+Author: Lucy O'Neill
+Date: a month ago
+Rating: 5 stars
+I had an appointment with Debbie this morning and to hear shes leaving, I'm saddened. …
+
+Author: Marie Yates
+Date: a month ago
+Rating: 5 stars
+On behalf of my husband Alan Yates this is for nurse Debbie. Always been there when needed and helped a lot over the last 11 years. Always had a smile and been a caring person always done a great job sorry to hear she will be having to leave. Good luck for the future Alan. X
+
+Author: Anthony Brennan
+Date: a month ago
+Rating: 5 stars
+I had an appointment today with Debbie the nurse I have been with Debbie for sometime now she told me that she will be leaving in couple of months it shocked me and upset me as Debbie has a heart of gold and so careing and has always been there for me and when times have been hard she has always kept me strong I will miss you dearly Debbie ❤️
+
+Author: Linda Moore
+Date: a month ago
+Rating: 5 stars
+I have been a patient at this practice for nearly 50yrs, and have seen many staff come and go, but Nurse Deborah Moss has been my nurse for a long time now, and she is the loveliest, kindest, and most thoughtful person you could ever wish to meet. I trust her completely, and I always walk out of the surgery feeling much better. She is also very professional and seems to know just what you need as soon as you walk in. She gave me the warmest hug when I told her my husband had died, and almost cried with me. I have heard only this morning that Debbie is leaving the practice, and I would just like to say in conclusion, that I will miss her so much, and I wish her all the very best, and lots of love , for the future. This is your time Debbie, enjoy! Lots of love from Buddy and me xxxxx
+
+Author: Karen Gilmour
+Date: a month ago
+Rating: 5 stars
+As a family we have been coming to see Debbie the practice nurse for around 10 years, we would just like to say how amazing you are , compassionate, full of empathy and kindness , always treated with respect, thank you Debbie for all you care and compassion Karen gilmour and family
+
+Author: teresa ostasz
+Date: a month ago
+Rating: 5 stars
+Myself and my husband attend this surgery, although I find all your staff pleasant and helpful. I must say a very special thank you to your Practise Nurse Debbie. She is one of the most caring concientious nurses I have care from and also my husband who has Alzheimers disease and we have a good rapport with Debbie and know that the the care and advice from her 100% genuine. We have never felt rushed even though she is always exeptionally busy. I have heard from a friend of mine that she will be leaving the surgery in April, We are devastated , she is one in million and We dont think we will ever get a Nurse as caring as her, with all due respect to her colleague rachel who is a lovely competent nurse but I feel Debbie ticks all the boxes. Teresa. and John Ostasz
+
+Author: Joanna Farrell
+Date: a month ago
+Rating: 5 stars
+I have been a patient at this practice for many years and have always felt so welcomed by the reception staff. They are always polite, patient and extremely helpful, whether in person or on the phone. They handle everything so efficiently and always make you feel at ease. They are a real credit to the practice, such a lovely team 😊 …
+
+Author: Janice Wright
+Date: a month ago
+Rating: 5 stars
+5 stars for Nurse Debbie only. I am devastated to learn she is leaving the Practice. Nurse Debbie has looked after myself and late husband for many years and she is the most considerate and caring person I have ever met. Debbie treats you like a real person and listens to what you have to say, and goes above and beyond to look after you. Nurse Debbie worked tirelessly through her husband’s illness and after his death. She also worked alone in the Surgery all through Covid. A true sign of her commitment to her patients. The surgery will never be the same without her. Doctors, you are losing someone you will never replace! Debbie, going forward, I wish you nothing but the best in the future and send my love and thanks for your caring and compassion over the years.
+
+Author: Olivia Kennerley
+Date: a month ago
+Rating: 5 stars
+Debbie is the best nurse and has been for all of my family for the last 11 years. Always professional and comforting when needed. She is the only nurse I will see simply for being so caring
+
+Author: Jane Stuckey
+Date: a month ago
+Rating: 5 stars
+All 5 stars go to nurse Debbie, a warm and friendly reception everytime you see her, I was recently informer she would be leaving the practice soon and I have to say these will be HUGE shoes to fill! Such a shame for the practice to lose such a professional, knowledgeable and valued practice nurse, I'll be incredibly sad and disappointed to see her go however, I wish her all the luck in the world wherever she goes next, whoever happens to be looked after by Nurse Debbie...you can rest easy you'll be in very good hands!
+
+Author: Lucy O'Neill
+Date: a month ago
+Rating: 5 stars
+I had an appointment with Debbie this morning and to hear shes leaving, I'm saddened. Debbie is the kindest, loveliest person. I have a severe phobia of needles and she is the first person in years that has me completely at ease The love and compassion she has shown me over the last few years have been second to none and has been instrumental in me being able to better my health. I wish you all the very best Debbie! Thank you for all you do, not just for me but for everyone You always go above and beyond and you deserve the world and more!!! Lucy xxx
+
+Author: Pat Booth
+Date: a month ago
+Rating: 3 stars
+I have been at this practice for many years and only really know nurse Debbie Moss. She is an asset to the practice and is very professional and friendly, always makes me feel comfortable and relaxed. Not sure how the practice will function once she leaves. 5 stars for nurse Debbie Moss.
+
+Author: antony clough
+Date: a month ago
+Rating: 5 stars
+Such a shame to hear Nurse Debbie Moss will shortly be leaving the practice. Debbie was the beating heart of the practice and a real credit to the surgery, even at your most poorly you left feeling better. Nurse Moss you will be sorely missed and can I say a big thank you for care over the years and all the best for the future!
+
+Author: deborah moss
+Date: a month ago
+Rating: 5 stars
+I want to say a very big thank you to all the patients that have commented on my time at rochdale road medical centre I'm absolutely overwhelmed by your kindness ive been very lucky
+
+Author: Beth
+Date: a month ago
+Rating: 5 stars
+Debbie the nurse is fantastic at what she does and is an asset to the centre. Debbie provides unmatched care and attention in every appointment. I have seen her for 2 vaccines and a smear test and I can not thank her enough for how comfortable she makes me feel. Not only is she highly professional, her genuine kindness and laughter is her greatest quality.
+
+Author: Mathew Jones
+Date: Edited a month ago
+Rating: 1 star
+Been position 1 in the qué for 10mins joke
+
+Author: Jackie Gough
+Date: a month ago
+Rating: 5 stars
+All stars for debbie the nurse she is so lovely puts you at ease I have been seeing debbie now since being diagnosed with diabetes type 2 but been at surgery for quite a few years now and debbie has been the best
+
+Author: Julie Forster
+Date: 2 months ago
+Rating: 5 stars
+I had my smear test today with Debbie the nurse she is absolutely amazing really puts you at ease and is very person centred, lovely lady, I have had Debbie for many years for various procedures and ive always had a very comfortable experience she protects your dignity at all times and always friendly with a smile on her face, thank you Debbie for making a not so nice procedures so very comfortable 😊 xxx
+
+Author: Leah Bradford
+Date: 2 months ago
+Rating: 5 stars
+Nurse Debbie, outstanding, absolutely fantastic and genuinely cares about her patients, so big shout out for her from my dad David
+
+Author: hassan owrak
+Date: 2 months ago
+Rating: 5 stars
+The best nurse kind and caring you will be missed
+
+Author: Janet D'arcy
+Date: 2 months ago
+Rating: 5 stars
+I’ve been in today to see the nurse debbie who I always look forward to seeing, she makes me so comfortable and relaxed I’ve been at the Rochdale road doctors since I was born and one of the only people left keeping me going there is Debbie, I’ve sat crying in her office lots of times she always listens and makes me feel better when I speak with her she never rushes you, she has so much empathy the world would be a better place if more people were like Debbie, heart of gold.
+
+Author: Abigail Ramsbottom
+Date: 2 months ago
+Rating: 5 stars
+I’m a new patient to the practice. I have had 2 appointments with the Practice Nurse Debbie and WOW what a woman she is. I wish I had been under her care for longer. I’ve never met someone so lovely, she is a true treasure to Rochdale Road medical centre. I was so sad to be told by the lovely ladies on the desk that she is leaving in the next couple of months. I hope you get the farewell you deserve Debbie - you’re clearly much loved by the looks of these reviews!!
+
+Author: Hannah Cromwell
+Date: 2 months ago
+Rating: 5 stars
+All five stars are dedicated to nurse Debbie. Debbie has cared for my family and I since she joined the practice many years ago. She has always looked after us with respect, dignity and a genuine care. She has advocated for me when I felt that I wasn’t listened to and has gone above and beyond to support me. She is amazing and someone who I will book an appointment with to know that I will receive the support and care I need. She is a credit to the practice, a rare gem.
+
+Author: Abdus Samad
+Date: 2 months ago
+Rating: 5 stars
+Great GP. Debbie is such an asset to this GP medical centre. Cannot thank her enough for everything.
+
+Author: JANE Eden
+Date: 2 months ago
+Rating: 5 stars
+Wanted to leave a review for nurse Debbie Moss she is exceptional and have to say the best nurse, she’s so kind caring and considerate. And a true professional
+
+Author: Nicci Brooks
+Date: 2 months ago
+Rating: 5 stars
+Shout out to my nurse Debbie for making me feel like I was there just for a chit chat, didnt feel like I was there for treatment at all! The receptionist was polite and helpful and the DR i spoke with around concerns for my daughter listened when he didnt have to and made a referral ive been fighting for, for years within moments of meeting us, by far the best GP experience I havr had in over 6 years, thank you (sorry if Debbie isnt the name of my nurse) but you are wonderful
+
+Author: Sophie Cobham
+Date: 2 months ago
+Rating: 3 stars
+If this review was based on the practice nurse Debbie this review would be 5 stars. She is the only reason I am still at this practice. She genuinely cares about me and always asks about my family. I never feel rushed and she really is the epitome of a nurse. She ensures my medically needs are more than adequately dealt with. She really helped to get my asthma under control when I thought I would have to live with constant breathlessness. Shame about the rest of the surgery who don’t offer the same empathy and level of care.
+
+Author: David Thompson
+Date: 2 months ago
+Rating: 1 star
+Really poor service came in with a bald patch on my head gave me me shampoo not work so doctor says he will give me something else coz I work they never have appointments after half 2 been asking for appointment for over 2 weeks now there saying alopecia is not urgent so will require a phone call appointment next week absolute joke this place would not recommend the staff at desk are rude telephone pickers some job u have and u can’t even do that properly stay away from this place I will be changing doctors today
+
+Author: Carl Hendry
+Date: 3 months ago
+Rating: 5 stars
+I am a patient at this practice, the practice is fantastic very friendly staff and doctors especially a nurse called Debbie, she is a ray off sunshine when your not good , a lovely person who you can actually talk to, the sad thing is she is leaving the practice in the new year, to take time for herself, your smiling face will be missed by many patients debbie, good luck with whatever the future holds for you carl x
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your experience. I’ll share your feedback with Debbie and the wider team.
+
+Author: Agnieszka Grzybowska
+Date: 3 months ago
+Rating: 5 stars
+I have been registered with this medical practice together with my family for many years. Everyone is fantastic and truly cares about the patients. Whenever I need it, I am always able to see a doctor on the same day. The reception staff are also very kind and helpful. Special praise goes to Nurse Deborah, who has been our nurse for many years. She has been extremely helpful with my son’s asthma and is also the only person who can take my blood without me fainting 😊, as well as carry out other tests. She is very professional and at the same time incredibly kind. A real treasure of this practice.
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your experience. I’ll share your feedback with the team.
+
+Author: almida anwaar
+Date: 3 months ago
+Rating: 5 stars
+Very clean and hygienic!
+
+Author: john wellens
+Date: 3 months ago
+Rating: 5 stars
+i am a patient , i have diabetes and am looked after by my nurse mrs deborah moss who i have to say is the most caring , genuine person i have ever met , not just medically but in life . as soon as you walk through her door you are greeted with a pleasent smile , a kind and caring welcome with an air of proffessionalism , her care to attention and detail is so reassuring , she allways listens to any worries or querries , and i have never left debbies company with any misgivings ,but ,, i must say the most important thing for me is , you dont feel like just a number in her company , you are treated as a person with feelings and this is so reassuring , over many years now i have been going to see debbie and am glad to call her a good freind , iff you want to be listened to and given a level of care secound to none , i have absolutely no hesitation in saying this lady mrs deborah moss would be your firsf choice , many thanks debs ,,loads of gratitude , your friend , john
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your experience. I’ll share your feedback with Debbie and the wider team.
+
+Author: Chloè M
+Date: 3 months ago
+Rating: 3 stars
+Honestly would give this 5 stars if it was just for Debbie. Always talking and having a laugh , always smiling and actually builds a report with patients unlike some. She's helped me though my first and second pregnancy , vaccinations and my athsma. I have no issues with Debbie but some of the new staff are rude , and unprofessional in my opinion.
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your experience. Please give me a call on 0161 643 9131 to discuss any concerns regarding unprofessional staff. Thank you, Practice Manager Rochdale Road Medical Centre
+
+Author: Robert Smith
+Date: 3 months ago
+Rating: 1 star
+Absolute shocking place. Requested a call back even though I was number 1 for ages and then they 1 bell me and hung up straight away faster than I could blink
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your experience. I am sorry it has been a negative one and did not meet expectations. We take all feedback seriously, please could you contact me on 0161 643 9131 so that we can discuss this further. Thanks, Practice Manager Rochdale Road Medical Centre
+
+Author: Steven Mason
+Date: 3 months ago
+Rating: 5 stars
+I have been with this practice for many year. Over the past 10 years I have suffered mental health issues and required diabetic care, challenging at times whilst working full time and juggling the kids. I have nothing but positive comments for the whole team from the front desk who are welcoming and don't try to diagnose you over the phone, to Deb's the diabetic nurse who is always warm and listens to your concerns through to the doctors. I have had the same doctor for 8 years (Dr Shahid) who over time on the rare occasion I speak to him listens before passing comment, pays real attention to any issues I may be having with my mental health and has always been extremely supportive. I have in the past been referred to 3rd party clinical support teams, this has been dealt with efficiently and recently I had cause to question the judgement of that 3rd party support. Dr Shahid took action and it is now being dealt with. I strongly believe the less I see my doctor the better but knowing that when I do the staff that answer the phone are patient and have empathy without being condescending, a duty of care is given and I feel my best interest is at the heart of their care.
+Practice response date: 3 months ago
+Practice response:
+Thank you for taking the time to share your experience. I’ll share your feedback with Dr Shahid and the wider team.
+
+Author: Stephanie Anne
+Date: 5 months ago
+Rating: 1 star
+Don’t go here if you need help with your mental health. I changed to this practice as my usual doctor was on maternity leave and I was going through a mh crisis. I chose this practice because of an article online praising their holistic approach to mh which they had won an award for. All I can say is that for the 2 years I was a patient my mh declined to a point where I thought I’d need to be sectioned, I had no holistic treatment and was only given prescriptions for antidepressants. Everything was over the phone with a different dr every time and I was gaslit so badly. None of the drs showed any sort of compassion or even tried to follow up with me after I had a traumatic event. I don’t know who gave them the award but I doubt very much it would be the patients if the way I was treated is anything to go off. The 2 receptionists that are there all the time are vile also, monotone, don’t follow up on admin requests, no humanity whatsoever and the practise manager is a condescending cactus. I have moved back to my old doctors now and bit by bit sorting my life out after the extremely poor care from this practice. HOWEVER I’m glad there is only a one star option because the star belongs to Debbie the practice nurse. She is an absolute angel with a pure heart and a caring spirit, I wish she was the nurse at my current surgery. She’s fab and worth a million of them doctors
+
+Author: Dave
+Date: 6 months ago
+Rating: 5 stars
+Fast and helpful service. Staff will go out of there way too help you out.
+
+Author: Aleksandra Rogowska
+Date: 6 months ago
+Rating: 5 stars
+I had a really great experience. I was talked through everything and reassured throughout the process, which made me feel very comfortable. A big thank you to Debbie, who carried out the exam — she’s a real asset to the company!
+
+Author: Jane
+Date: Edited 6 months ago
+Rating: 1 star
+Whoever hires the reception staff needs to up their hiring requirements. Unhelpful, didn’t know much at all, refused to help re a query and fobbed off with “yeah I’ll check later”. Second issue had been chasing an urgent prescription for strong antibiotics for a pelvic infection following surgery. Told from the start of the day it would be ready by 12. Called to check it would be ready by 2. Called again, ready by 4. I go to the pharmacy… nothing. I go to the gp clinic next door and asked to go upstairs and now as asked by reception to go upstairs talk as the clinic manager wanted to talk to me. A big tall imposing man who likes to talk down to people. Advised me “we have sick children we need to deal with not your prescription”. Refused to listen when advised his reception gave incorrect information all day including that they had my prescription. Said he couldn’t get hold of my consultant all day despite his gmc number/contact details were on the letter prescribing the medication (I spoke to his secretary that day fine). Said he didn’t know if my consultant was even real despite having the letter in front of him and a quick google/GMC search would show this and then had the audacity to talk to a 40 yr old woman like a child. Doesn’t like when women stand up for themselves and had general distain whenever he was counteracted with a fact. Disgusting clinic and disgusting behaviour. I left the very next day for The Hive which is lovely. I’d give it zero if I could
+
+Author: Yuliya Astapenkova
+Date: 6 months ago
+Rating: 1 star
+The receptionist treatment was terrible. I gave birth 4 months ago, they called to make an appointment for a postpartum examination at the KLI, but they said they didn't know which doctor to make an appointment with, call back tomorrow. And today they called that the baby had a runny nose and cough, so they told us that they didn't have a doctor who could examine him, go to the hospital. It's terrible. Only emotions.
+
+Author: Amanda Jones
+Date: 6 months ago
+Rating: 5 stars
+The nurses here are outstanding! Caring and really listen to you. I have recently been diagnosed with stage 4 cancer. The meds given by the oncologist have given me nasty side effects. Rachel (nurse) goes above and beyond every time I see …
+
+Author: Amanda Jones
+Date: 6 months ago
+Rating: 5 stars
+The nurses here are outstanding! Caring and really listen to you. I have recently been diagnosed with stage 4 cancer. The meds given by the oncologist have given me nasty side effects. Rachel (nurse) goes above and beyond every time I see her. She looked over the medicine I was currently prescribed and made changes which undoubtedly has given me positive changes. She listens and really understands. Debbie also is a very kind and compassionate nurse.
+
+Author: Pati Pietek
+Date: 8 months ago
+Rating: 1 star
+Avoid this surgery if you are pregnant or a new mom. I have been with this surgery for over a year and had no issues until I gave birth. The doctor will refuse to see your new born baby and everything will be done over the telephone. My child was diagnosed with cmpa, colic, reflux, constipation all over the phone over a course of 6 weeks NOT once was we offered an appointment even when asked. Just to confirm my child did not have any of the mentioned above the doctor put him on the wrong formula caused all this, change of formula and he is like a new baby. We was also refused a repeat prescription for his eye drops and the doctor made us do a swab to send to the lab which we did which took over a week for the results to be received. Which ended up to be exactly the same as he needed the first time just made him suffer for 8 days. Lastly the 6 weeks check up was shocking we were in and out within 5 minutes and the only thing which was checked is his weight. The nurse is amazing! I cannot say a bad word about her she was amazing with our child and appointments were always quick and face to face. Honestly avoid this surgery at all costs when it comes to babies, we have now moved doctors and we couldn’t be happier.
+
+Author: Liam Mclaughlin
+Date: 8 months ago
+Rating: 5 stars
+This morning i had a appointment with Alesha to take bloods, no one can ever get blood and i was really nervoice. Today Alesha was brilliant, put me as ease and got blood first time. She was wonderful. Thank you Sarah
+
+Author: Aragbaiye Olajumoke
+Date: 10 months ago
+Rating: 1 star
+Aragbaiye Olajumoke10 months ago
+
+Author: Claire Scott-Walkley
+Date: 10 months ago
+Rating: 5 stars
+Professional, quick and helpful service. Debbie the practice nurse is amazing and always goes above and beyond for her patients. I would highly recommend this practice.
+
+Author: Jen Harris
+Date: 11 months ago
+Rating: 5 stars
+Had to take my daughter for a blood test, even though she is over 18 she is absolutely terrified of having her bloods taken and will pass out. The HCA was amazing with her and for the first time she didn't pass out. Thank you so much for the way you were wuth her. Your amazing ❤️
+
+Author: Li Kenji
+Date: a year ago
+Rating: 1 star
+Li Kenji5 reviewsa year ago
+
+Author: WAQAS HUSSSAIN
+Date: a year ago
+Rating: 5 stars
+Doctors are very helpful.
+
+Author: Kate Higgins
+Date: a year ago
+Rating: 1 star
+Following a telephone consultation with one of the GPs from this surgery, in his capacity as a locum gp at the time, now a partner, I had no choice other than to make a formal complaint to my own practice, in a different county. This person who I had no previous contact with, took it upon himself to tell me nothing more could be done for me. He denied my allegation. When management requested the telephone recording of the consultation, he said he'd made the call from his mobile phone. This was untrue. The call came from the surgery landline, allowing me to check the source. It was eventually agreed that a recording was held and I was invited to request a copy. I then received a message to the effect that there had been an error and they did not have the recording. I involved the Information Commissioner’s Office who agreed the surgery could have done more for me. I haven't had my questions answered and the surgery have declined to respond to my further concerns, or indeed acknowledge receipt.
+
+Author: Georgina Moran
+Date: a year ago
+Rating: 5 stars
+Always very helpful and all the staff provide a great service.
+
+Author: Rich
+Date: a year ago
+Rating: 5 stars
+Great service always helpful
+
+Author: Jodie Heywood
+Date: a year ago
+Rating: 5 stars
+As a new patient at this surgery and only being registered for a couple of months, I’ve always found all the receptionists lovely and helpful, but this review is about Debbie the nurse who I had an appointment with today, she was so reassuring and lovely, she made me feel very welcome, which is just what I needed as I was quite nervous, she is a Credit to the surgery.
+
+Author: Kerry Egerton
+Date: a year ago
+Rating: 5 stars
+Would like to say how very helpful Maria on reception is. Always polite & beautifully spoken & goes above & beyond. Nurse Katy is so lovely too. Both are a credit to the team.
+
+Author: Omotoyosi Mistura Oguntayo
+Date: 2 years ago
+Rating: 5 stars
+It was an amazing experience. I was well handled by an amazing nurse(Debby) who made sure I was comfortable and satisfied. Brilliant service by the medical team. I appreciate and applaud them for all they do.
+
+Author: Nicky Bloom
+Date: 2 years ago
+Rating: 5 stars
+They are always very helpful, making face to face same day appointments if needed; doctors, nurses, and reception staff are all wonderful and helpful, always making appointments that suits us. Always very polite and explain everything. All doctors are so professional and you can feel that they all care for you. They even call you to check how you are feeling. We are with Rochdale Road Medical Centre for 15 years now. We had many health issues over the years and they all been solved thanks to wonderful staff. Even when we had small accident while on holidays abroad, we phoned reception from abroad and the polite lady arranged appointment and tests straight after we came back home. I can not imagine going anywhere else. This General Practice is 100% ideal.
+
+Author: Traveller Uk
+Date: 2 years ago
+Rating: 5 stars
+This is not my practice, but i want to give a shout out to DR latif, she is a asset to your surgery, by far one of the most professional, hard working and really shows the meaning of. DR... Iv had her as my dr at an other surgy which unfortunately she has left, wish her all the very best. Keep up the great work you do we need more DR like you
+
+Author: jane roebuck
+Date: 2 years ago
+Rating: 4 stars
+jane roebuckLocal Guide · 2 reviews · 2 photos2 years ago
+
+Author: waqas ali
+Date: 2 years ago
+Rating: 5 stars
+Honestly one of the best practices i have been to the staff are so warm and caring. They genuiley treat you with respect. From receptionists, nurses, doctors the whole team represent their practice with honesty, trust and are passionate about helping others. I travel from near manchester city centre to this practice as I know i have genuine people wanting to help me rather than any other practices trying to rush you out. These guys are definitely 5 stars at a minimum
+
+Author: Chris Holt
+Date: 2 years ago
+Rating: 1 star
+Secretary's are extremely nasty and have no care whatsoever about Anybodys situations. Doctors just want to get you off the phone as soon as possible and are 0 help when it comes to what their job title depicts.
+
+Author: jacqueline mccann
+Date: 2 years ago
+Rating: 5 stars
+I have witnessed the care and attention given to patients of this surgery. I am not a receptionist or doctor, just an ordinary person seeing the treatment other get and talk about in the waiting room. I cannot understand some of these negative comments.
+
+Author: Sarah Murray
+Date: Edited 2 years ago
+Rating: 1 star
+Every time I ring it’s that same silly girl on reception thinking she knows best wanting to know all the reasons why you need to see the doctor she is an invasive cow and she shouldn’t even have a job there her manners are absolutely appalling sorry excuse for a receptionist want to be ashamed so UNPROFESSIONAL. This place is a sorry excuse for a doctors, never get my blood results, when I ring for an appointment the receptionist wants to know the ins and outs and after that says she made me an appointment and actually NEVER. Sent me off for scans and still had no results nearly 4 weeks later. Had nothing but problems with these since I joined, would avoid in future
+
+Author: Shauni Reeves
+Date: 2 years ago
+Rating: 5 stars
+Brilliant service from the reception staff. Called in at 4.30pm to see if I could get some medical advice from gp or nurse. Got us booked to speak with a Dr out of hours.
+
+Author: Beth Dearden
+Date: 2 years ago
+Rating: 5 stars
+This surgery really goes above and beyond of care, cannot thank the whole team enough for what they do. Really is a great surgery always takes time and care of your needs. Really is a credit
+
+Author: Sarah C
+Date: 3 years ago
+Rating: 5 stars
+I've been here for blood testing several times (sent from my own GP) and each visit I've parked easily, been seen on time, and the receptionist was polite. The nurse was great, she was kind and caring and put me at ease.
+
+Author: Curtis
+Date: 3 years ago
+Rating: 4 stars
+This has been my GP for numerous years very clean very friendly and very polite always go and try to go above and beyond for me as I expect the proud NHS to be . This is a small family friendly gp drs are great although it’s small talk with a few drs here but some do take time to ask how you are and wait to hear you out before speaking which is great really gives you chance to voice over your concerns and feeling no interruptions Waiting times for appointments recently have been pushed further apart now but I think it’s due to them being busier maybe.there’s been a few mistakes due to miscommunication with the desk and drs I think I had in the past but nothing for a while it’s a real great place and make you feel welcome and wanted there’s litrally very few surgeries around now which have the care and respect for patients like these guys have I’d highly recommend there great 👍🏻
+
+Author: Oladipupo Mobolaji
+Date: 3 years ago
+Rating: 4 stars
+Great GP, excellent service
+
+Author: Amanda Kershaw
+Date: 3 years ago
+Rating: 1 star
+Receptionists here are absolutely disgusting!! Very unprofessional and have disgusting attitudes!! Had 2 incidents with them in the past wk, they clearly aren’t up to the job. They really let the doctors surgery down.
+
+Author: siu man tin
+Date: 3 years ago
+Rating: 1 star
+Reception staff courteous enough on phones Practice manager and management staff poor at getting back re query around treatment. Query raised and acknowledged on the 3rd sep. No response as of yet a month on. Left messages to speak to practice manager past 2 weeks and no response or call back. Poor experience for pts and pts relatives
+
+Author: Henry Nnando
+Date: 3 years ago
+Rating: 1 star
+Completely unprofessional. For four years now I ve been calling to see my doctor, all to no avail. The receptionist is very rude and full of lies.
+
+Author: Emma Baker
+Date: 3 years ago
+Rating: 5 stars
+I have nothing but praise for this surgery. The practice nurse ( Deborah ) is brilliant and I’m always able to see someone if urgent. I’m totally needle phobic and the staff here have been so accommodating. Highly recommend:)
+
+Author: kelly bendasiuk
+Date: 3 years ago
+Rating: 5 stars
+I came in today for my health check which I wasn’t particularly looking forward to as I hate needles, never the less I was greeted by (Shona) the health care assistant for the surgery and was immediately put at ease, my bloods were taken and I didn’t feel a thing, I was so happy and want to thank her for professionalism and kind attitude, I won’t be worrying again thank you
+
+Author: Christine Pike
+Date: 3 years ago
+Rating: 5 stars
+Practice Nurse (Deborah Moss) saw my elderly Mother with a suspected infection, I am finding it difficult to put into words how professional, knowledgeable and passionate we found her. After a thoughy examination she suggested I took my mum to A&E She was spot on with her diagnosis and I dread to think where we would be now if I hadn't taken my mum to see Deborah and followed her advice. Good results and thank you Deborah for your care and compassion
+
+Author: Michael Pearson
+Date: 3 years ago
+Rating: 5 stars
+Just all round kind and helpful people.
+
+Author: Joanne Edmond
+Date: 3 years ago
+Rating: 2 stars
+Asking for face to face appointment for my daughter to be told have to ask doctors if he will do it why are you still only doing phone appointments
+
+Author: Lynn fawcett
+Date: 4 years ago
+Rating: 2 stars
+It's my partners practice the doctors are good when you get to see them but the receptionist staff are not your repeat prescriptions are never ready on time you have to keep going back he's had no medication for two days his medication is important and to be told to keep going back is not right you can't order it early they say its not due when it is due its not ready
+
+Author: metres away thanos
+Date: 4 years ago
+Rating: 5 stars
+ALL I WANT TO SAY IS THERE IS AN AMAZING PERSON WHO WORKS HERE THAT HAS THE HEART AND SOUL OF AN ANGEL HE IS CALLED DR CARVER I HAVE NEVER MET ANYONE LIKE HIM I CAN NPT FIND THE OWRDS REALLY TO DESCRIBE HIM... I WANT TO THABK YOU SO MUCH FROM THE BOTTOM OF MY HEART ❤
+
+Author: Tracy Malekuti
+Date: 4 years ago
+Rating: 5 stars
+Superb staff, always try to help. Lovely renovatons and Mr Khan and Jack are always happy to help. Open early till late and even have an out of hours extended surgery on hand if they are booked up. Nurses are so caring. Been my surgery for 46 years.
+
+Author: Team CJ
+Date: 5 years ago
+Rating: 5 stars
+Merry Christmas to all the staff at Rochdale Road Surgery. Thank you to all the receptionists and a big thank you to all the doctors, especially in these uncertain times. A massive thank you to Debbie and Shona, you are wonderful. Most of all an extra special thank you goes to Kava who always goes above and beyond, we love you very much. Mum was so thrilled with your kindness today, thank you so much. We wish all of you a beautiful, peaceful Christmas. Grace sends Kava a big hug and kiss. With love, the Horridges
+
+Author: Amelia M
+Date: 5 years ago
+Rating: 3 stars
+The receptionists and the Dr Khan are lovely. But I had a horrible experience with a lady doctor who was rushing through our phonecall appointment and put the phone down on me abruptly and unprovoked without telling me where to pick up my prescription... I had to call up to find out more details about what I was even receiving and where to get it. Horrible woman.
+
+Author: Alex Gray
+Date: 6 years ago
+Rating: 1 star
+Rubbish cant keep to times.
+
+Author: Katie Beth Hanley
+Date: 6 years ago
+Rating: 1 star
+Used to be an amazing doctors now it's down hill, wanted to see my doctor was told couldn't book me in without knowing a full in depth reason why as part of doctor patient confidentiality shouldn't have to go into detail with receptionist, also since being pregnant I need to see my doctor and was told he wasnt available until mentioning that I had been really sick then all of a sudden appointment comes out of nowhere useless and receptionist are rude!
+
+Author: Matthew Stuckey
+Date: 6 years ago
+Rating: 5 stars
+Very helpful, excellent staff.
+
+Author: Gurveen Singh Chopra
+Date: 6 years ago
+Rating: 1 star
+Gurveen Singh Chopra6 years ago
+
+Author: Steve Peters
+Date: 6 years ago
+Rating: 4 stars
+Steve Peters6 years ago
+
+Author: Lee Winterbottom
+Date: 6 years ago
+Rating: 1 star
+The practice manager young mr Kahn is arrogant rude and thinks he is above every body else the reception staff think they own the place and will just ignore you when you are waiting avoid like the plague if you want treatment if you like to get messed about use this place
+
+Author: Ali Jhawari
+Date: 7 years ago
+Rating: 1 star
+It is very hard to get an appointment. They open at 8 and by 8:10 no oppointments left and they have to many trainings so they close earlier. Very old building doesn't look like a healthy place to even sit around. If you care for your health do not consider them.
+
+Author: Jane Wallace
+Date: 8 years ago
+Rating: 5 stars
+Thank you Mr Khan for your kind assistance, you are professional, knowledgeable and patient, you make the perfect Manager, you are also a very humble Man, the Surgery has an absolute asset in you.
+
+Author: Tia Maria
+Date: 8 years ago
+Rating: 2 stars
+The receptionist is miserable and if you want an on appointment you better be prepared for a long wait.
+
+Author: mario calvanese
+Date: 8 years ago
+Rating: 5 stars
+I was a patient there still remember my doc heatcote) very good doc
+
+Author: Clark Kent
+Date: 8 years ago
+Rating: 5 stars
+Staff are friendly... Doctors care. There's a lot of demanding patients or noisy people in the waiting room (get a TV on in there) but I have always been handled well. Diagnosed me sent me off for further investigations confirmed diagnosis got treated... now I'm much better in life. Thanks to staff and NHS.
+
+Author: Danny S
+Date: 8 years ago
+Rating: 1 star
+Avoid brunette tallish lady on reception quite regularly double books you or refuses to book you at all. She is very obnoxious and downright rude. They don't seem to want to help you and everything seems an effort to them. If you care for your health then avoid this doctor's like the plague.
