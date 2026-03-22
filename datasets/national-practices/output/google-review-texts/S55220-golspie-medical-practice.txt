@@ -1,0 +1,21 @@
+Practice: GOLSPIE MEDICAL PRACTICE
+Canonical code: S55220
+Postcode: KW10 6TH
+Google Maps title: Golspie Medical Practice
+Google rating: 5.0
+Google review count: 1
+Google Maps URL: https://www.google.com/maps/place/Golspie+Medical+Practice/@57.9745147,-3.9781597,17z/data=!4m12!1m2!2m1!1sGOLSPIE+MEDICAL+PRACTICE+KW10+6TH!3m8!1s0x488ff513ec3a20d7:0x619d0885653b7815!8m2!3d57.9744613!4d-3.9755462!9m1!1b1!15sCiFHT0xTUElFIE1FRElDQUwgUFJBQ1RJQ0UgS1cxMCA2VEiSAQZkb2N0b3LgAQA!16s%2Fg%2F1tfvsjtm?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 1
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S55220-golspie-medical-practice.json
+
+Captured reviews
+================
+
+Author: Keith Duce
+Date: Edited 11 months ago
+Rating: 5 stars
+Very professional efficient and caring. This includes the receptionists, nurses, physiotherapist and of course the doctors. I feel the care I receive could not be better. Thank you.

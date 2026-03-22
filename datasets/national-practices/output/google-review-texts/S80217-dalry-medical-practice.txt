@@ -1,0 +1,31 @@
+Practice: DALRY MEDICAL PRACTICE
+Canonical code: S80217
+Postcode: KA24 4AF
+Google Maps title: Dalry Medical Practice
+Google rating: 5.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Dalry+Medical+Practice/@55.7061546,-4.7261542,17z/data=!4m12!1m2!2m1!1sDALRY+MEDICAL+PRACTICE+KA24+4AF!3m8!1s0x4889c90160135d47:0xe2694981f5bcca8c!8m2!3d55.7061516!4d-4.7235739!9m1!1b1!15sCh9EQUxSWSBNRURJQ0FMIFBSQUNUSUNFIEtBMjQgNEFGkgEGZG9jdG9y4AEA!16s%2Fg%2F11j58dxwm2?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S80217-dalry-medical-practice.json
+
+Captured reviews
+================
+
+Author: T B
+Date: a year ago
+Rating: 5 stars
+Always the best of care and professional manner, never an issue to get seen in a timely manner.
+
+Author: Alan Skippen
+Date: 3 years ago
+Rating: 5 stars
+Love the Lidl in dalry I lived with my partner full for 16 months it's great wee town
+
+Author: sandra taylor
+Date: 4 years ago
+Rating: 5 stars
+I have always had a really great experience with any of the doctor's I have seen, they will run any amount of tests to make sure you are safe and well.

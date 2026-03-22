@@ -1,0 +1,26 @@
+{
+  "practice_name": "STRATHGRYFFE MEDICAL PRACTICE",
+  "canonical_code": "S87146",
+  "postcode": "PA6 7AR",
+  "query_used": "STRATHGRYFFE MEDICAL PRACTICE PA6 7AR",
+  "google_maps_title": "Strathgryffe Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Strathgryffe+Medical+Practice/@55.870957,-4.5461859,17z/data=!4m8!3m7!1s0x48884c94718f229f:0x8e74c136fa175134!8m2!3d55.870954!4d-4.5436056!9m1!1b1!16s%2Fg%2F1tlw8njl?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774167249372,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48884c94718f229f%3A0x8e74c136fa175134!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sVZi_aeXhEKG8hbIPrKuFaQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT210c2FXdzRkM001VUhoM2F6UnlaV2M0YzNBeGFFRRAB\",[\"0x0:0x8e74c136fa175134\",null,1766162765220462,1766162765220462,[null,null,[\"https://www.google.com/maps/contrib/106465382520606620048/reviews?hl\\u003den\"],null,null,[\"Riley Gallagher\",\"https://lh3.googleusercontent.com/a-/ALV-UjWS2_phSjvKqcSY5RU0MUDSwQoOzCB_GIy5aN4VioubBa0fl6uARA\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/106465382520606620048?hl\\u003den\"],\"106465382520606620048\",null,16,4,null,[1,5,1],2,[\"Local Guide · 16 reviews\",null,null,null,null,[null,\"0ahUKEwipgpKFiLOTAxU-IGMBHTC5D5MQ7LoGCAMoAA\"]]]],null,\"3 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210c2FXdzRkM001VUhoM2F6UnlaV2M0YzNBeGFFRRAB!2m1!1s0x0:0x8e74c136fa175134!3m1!1s2@1:CAIQACodChtycF9oOmtsaWw4d3M5UHh3azRyZWc4c3AxaEE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT210c2FXdzRkM001VUhoM2F6UnlaV2M0YzNBeGFFRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT210c2FXdzRkM001VUhoM2F6UnlaV2M0YzNBeGFFRRpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjEwYzJGWGR6UmtNMDAxVlVob00yRjZVbmxhVjJNMFl6TkJlR0ZGUlFvR2NtRjBhVzVuEgswZEdONENDN3p4QyISCQAAAAAAAAAAETRRF_o2wXSOKgswZEdONENDN3p4Qw\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwipgpKFiLOTAxU-IGMBHTC5D5MQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwipgpKFiLOTAxU-IGMBHTC5D5MQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMVJKWm5Wd1lsOWZSV2hEY0dOb2FFcHZaRTV3VFhaeVV6TmlaMEZCUVVGQlIyZG1YMEZ0VkVsbWRYQmlSMEZCYVVGQg\\u003d\\u003d\"],[[\"Ci9DQUlRQUNvZENodHljRjlvT2xkQk1qZFZUa1poVFY5MlVqaFdNWGgwY1RCcFZsRRAB\",[\"0x0:0x8e74c136fa175134\",null,1764091924003229,1764091924003229,[null,null,[\"https://www.google.com/maps/contrib/106675962641893846317/reviews?hl\\u003den\"],null,null,[\"Lynn Sanders\",\"https://lh3.googleusercontent.com/a/ACg8ocKiS-zP38Q5Ov8RXMBfWaZcQdBI2J-8o1aV-DWbyZE347x1uw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106675962641893846317?hl\\u003den\"],\"106675962641893846317\",null,5,0,null,[0,2,1],0,[\"5 reviews\",null,null,null,null,[null,\"0ahUKEwipgpKFiLOTAxU-IGMBHTC5D5MQ7LoGCAYoAA\"]]]],null,\"3 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Reception staff and doctors are so friendly and very helpful.  Nothing is too much trouble.   Thanks for all your help when I was unwell.\",null,[0,137]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkQk1qZFZUa1poVFY5MlVqaFdNWGgwY1RCcFZsRRAB!2m1!1s0x0:0x8e74c136fa175134!3m1!1s2@1:CAIQACodChtycF9oOldBMjdVTkZhTV92UjhWMXh0cTBpVlE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2xkQk1qZFZUa1poVFY5MlVqaFdNWGgwY1RCcFZsRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2xkQk1qZFZUa1poVFY5MlVqaFdNWGgwY1RCcFZsRRJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhrUWsxcVpGWlVhMXBvVkZZNU1sVnFhRmROV0dnd1kxUkNjRlpzUlFvR2NtVjJhV1YzEgswZDhUVkotQkpWaRpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhrUWsxcVpGWlVhMXBvVkZZNU1sVnFhRmROV0dnd1kxUkNjRlpzUlFvR2NtRjBhVzVuEgswZDhUVkotQkpWaSISCQAAAAAAAAAAETRRF_o2wXSOKgswZDhUVkotQkpWaQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwipgpKFiLOTAxU-IGMBHTC5D5MQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwipgpKFiLOTAxU-IGMBHTC5D5MQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

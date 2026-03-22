@@ -1,0 +1,21 @@
+Practice: ORCHARD 2000 GROUP
+Canonical code: B81018
+Postcode: HU6 9BS
+Google Maps title: Orchard 2000 Medical Practice
+Google rating: 3.6
+Google review count: 132
+Google Maps URL: https://www.google.com/maps/place/Orchard+2000+Medical+Practice/@53.787373,-0.3683589,14z/data=!4m12!1m2!2m1!1sORCHARD+2000+GROUP+HU6+9BS!3m8!1s0x4878bfd60b067d73:0x265df5a4ab680656!8m2!3d53.7873248!4d-0.3219935!9m1!1b1!15sChpPUkNIQVJEIDIwMDAgR1JPVVAgSFU2IDlCU5IBBmRvY3RvcuABAA!16s%2Fg%2F11fs9v2s54?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 1
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/B81018-orchard-2000-group.json
+
+Captured reviews
+================
+
+Author: James Taylor
+Date: a year ago
+Rating: 1 star
+Booked me an appointment at an alternative practice after I did the book an appointment online and got no response. Failed to then ring me when the appointment was cancelled and offered no apology only told. We are full call again tomorrow at 8 am.

@@ -1,0 +1,26 @@
+{
+  "practice_name": "SOUTH HARRIS MEDICAL PRACTICE",
+  "canonical_code": "S90101",
+  "postcode": "HS5 3UA",
+  "query_used": "SOUTH HARRIS MEDICAL PRACTICE HS5 3UA",
+  "google_maps_title": "South Harris Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/South+Harris+Medical+Practice/@57.7686596,-7.0137515,17z/data=!4m8!3m7!1s0x488d0a876017e6dd:0x7005ef1e486d546!8m2!3d57.7686568!4d-7.0111712!9m1!1b1!16s%2Fg%2F1yh9tvzx4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774177913509,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488d0a876017e6dd%3A0x7005ef1e486d546!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sB8y_aevLDIm0hbIPpYzqyAI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNLMHU3NVVREAE\",[\"0x0:0x7005ef1e486d546\",null,1617187128803409,1617187128803409,[null,null,[\"https://www.google.com/maps/contrib/112104278456664965883/reviews?hl\\u003den\"],null,null,[\"L M\",\"https://lh3.googleusercontent.com/a-/ALV-UjWVSzsKeOrOSqAyfA7doiPCs0QXj0Yq9vuLLYT1pbTNLpNPAuA\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/112104278456664965883?hl\\u003den\"],\"112104278456664965883\",null,33,28,null,[1,5,1],7,[\"Local Guide · 33 reviews\",null,null,null,null,[null,\"0ahUKEwjUtKzir7OTAxWjFWMBHc3RKOAQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLMHU3NVVREAE!2m1!1s0x0:0x7005ef1e486d546!3m1!1s2@1:CIHM0ogKEICAgICK0u75UQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNLMHU3NVVREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNLMHU3NVVRGi4KF0NJSE0wb2dLRUlDQWdJQ0swdTc1MFFFEhNDZ3dJdUtLUmd3WVE2SmlNX3dJIhIJAAAAAAAAAAARRtWG5PFeAAcqE0Nnd0l1S0tSZ3dZUTZKaU1fd0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjUtKzir7OTAxWjFWMBHc3RKOAQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjUtKzir7OTAxWjFWMBHc3RKOAQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTV1EwU1hKdlkxOWZSV2hFYzFsMmRtWjNPRFp3UlVSSFJYQlZjMEZCUVVGQlIyZG1YMEZ2WkRSSmNtOWpSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSUMwbTktZUt3EAE\",[\"0x0:0x7005ef1e486d546\",null,1570802670693219,1570804089714540,[null,null,[\"https://www.google.com/maps/contrib/103774541572260819034/reviews?hl\\u003den\"],null,null,[\"Anurag sharma Anurag\",\"https://lh3.googleusercontent.com/a/ACg8ocJECzZNC1mtSasScoMybm7EE1N-5hHa2T8bv7xmJ2gScz4uBQ\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/103774541572260819034?hl\\u003den\"],\"103774541572260819034\",null,29,0,null,[1,5,1],5,[\"Local Guide · 29 reviews\",null,null,null,null,[null,\"0ahUKEwjUtKzir7OTAxWjFWMBHc3RKOAQ7LoGCAYoAA\"]]]],null,\"6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"hi\",\"en\",\"Hindi\",\"English\",1],[[\"\\\"साउथ हैरीस मेडिकल प्रैक्टिस\\\"(नायलोर) यह बहुत जरूरी भी है, वहां के लोकल नागरिकों के लिए और दुनियाभर के टूरिस्ट के लिए भी \\\"आपका एक अच्छा स्वास्थ है तभी सब-कुछ है\\\"साथ ही सुंदर, काली-सफेद भेड़ों,के साथ बेहद खूबसूरत प्रकृति के नजारों का मजा उठाइए,\\\"हमेशा खुश रहीए- स्वस्थ रहिए-Beauty's Definition On Earth Scotland,Orkney \\u0026 Shetland, Ireland, N.Ireland, Welsh \\u0026 Faroe Islands.-FREE WILLIAM WALLACE 🗡🛡 FREE Scotland?\",null,[0,236]],[\"\\\"South Harris Medical Practice\\\" (Naylor) This is very important for the local citizens and also for the tourists from all over the world \\\"Good health is everything\\\" Also enjoy the beautiful nature views with lovely black and white sheep, \\\"Always Be Happy - Stay Healthy - Beauty's Definition On Earth Scotland, Orkney \\u0026 Shetland, Ireland, N.Ireland, Welsh \\u0026 Faroe Islands. - FREE WILLIAM WALLACE 🗡🛡 FREE Scotland?\",null,[0,237]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwbTktZUt3EAE!2m1!1s0x0:0x7005ef1e486d546!3m1!1s2@1:CIHM0ogKEICAgIC0m9-eKw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUMwbTktZUt3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUMwbTktZUt3Ei0KFkNJSE0wb2dLRUlDQWdJQzAyN0RvVGcSE0Nnd0ktYUtDN1FVUTRJZmMxQUkaLgoXQ0lITTBvZ0tFSUNBZ0lDMG05LWVxd0USE0Nnd0k3cGVDN1FVUXVOM0d5Z0kiEgkAAAAAAAAAABFG1Ybk8V4AByoTQ2d3SS1hS0M3UVVRNElmYzFBSQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjUtKzir7OTAxWjFWMBHc3RKOAQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjUtKzir7OTAxWjFWMBHc3RKOAQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

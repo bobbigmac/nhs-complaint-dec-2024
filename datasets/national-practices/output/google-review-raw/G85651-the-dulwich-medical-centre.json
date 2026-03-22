@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE DULWICH MEDICAL CENTRE",
+  "canonical_code": "G85651",
+  "postcode": "SE22 9EP",
+  "query_used": "THE DULWICH MEDICAL CENTRE SE22 9EP",
+  "google_maps_title": "Dr a Davidson - Dulwich Medical Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+a+Davidson+-+Dulwich+Medical+Centre/@51.4558193,-0.0739391,17z/data=!4m12!1m2!2m1!1sTHE+DULWICH+MEDICAL+CENTRE+SE22+9EP!3m8!1s0x48760395eb18449b:0x6f5af38b9c6ff650!8m2!3d51.455816!4d-0.0713588!9m1!1b1!15sCiNUSEUgRFVMV0lDSCBNRURJQ0FMIENFTlRSRSBTRTIyIDlFUJIBBmRvY3RvcuABAA!16s%2Fg%2F1thzncfs?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 10,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774169144248,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48760395eb18449b%3A0x6f5af38b9c6ff650!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sVZi_aeXhEKG8hbIPrKuFaQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNzMFpPemNREAE\",[\"0x0:0x6f5af38b9c6ff650\",null,1580900180110641,1580900180110641,[null,null,[\"https://www.google.com/maps/contrib/105144095768119041909/reviews?hl\\u003den\"],null,null,[\"Lyn Spraggons\",\"https://lh3.googleusercontent.com/a/ACg8ocK2hdLWiY6GjFI9EC7ZvdFu5H2V4EaLSND9lre6TNilJ8WpiLjc\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/105144095768119041909?hl\\u003den\"],\"105144095768119041909\",null,128,38,null,[1,6,1],7,[\"Local Guide · 128 reviews\",null,null,null,null,[null,\"0ahUKEwje-piMj7OTAxWTFmMBHa3UAP4Q7LoGCAMoAA\"]]]],null,\"6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Doctor Alison Davidson left the DMC and is greatly missed..Sadly we lost Doctor Prabhakaran also.A huge loss to DMC.\",null,[0,116]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzMFpPemNREAE!2m1!1s0x0:0x6f5af38b9c6ff650!3m1!1s2@1:CIHM0ogKEICAgICs0ZOzcQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNzMFpPemNREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNzMFpPemNREi0KF0NJSE0wb2dLRUlDQWdJQ3MwWk96OFFFEhJDZ3NJMUw3cThRVVE2UDdnTkEaLAoWQ0lITTBvZ0tFSUNBZ0lDczBaT3pDURISQ2dzSTFMN3E4UVVRNlA3Z05BIhIJAAAAAAAAAAARUPZvnIvzWm8qEkNnc0kxTDdxOFFVUTZQN2dOQQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwje-piMj7OTAxWTFmMBHa3UAP4QoykIBCgB\"],null,[null,[[1,1]]]],\"0ahUKEwje-piMj7OTAxWTFmMBHa3UAP4Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

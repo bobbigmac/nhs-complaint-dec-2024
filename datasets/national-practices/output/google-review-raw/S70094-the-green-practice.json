@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE GREEN PRACTICE",
+  "canonical_code": "S70094",
+  "postcode": "EH3 6EH",
+  "query_used": "THE GREEN PRACTICE EH3 6EH",
+  "google_maps_title": "Dr P Gilson - The Green Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+P+Gilson+-+The+Green+Practice/@55.9569741,-3.212384,17z/data=!3m1!5s0x4887c7be208e63fd:0x7ed7427dde4787c4!4m12!1m2!2m1!1sTHE+GREEN+PRACTICE+EH3+6EH!3m8!1s0x4887c7be2195d41b:0x538dfa1208cdba73!8m2!3d55.9569741!4d-3.2076204!9m1!1b1!15sChpUSEUgR1JFRU4gUFJBQ1RJQ0UgRUgzIDZFSFocIhp0aGUgZ3JlZW4gcHJhY3RpY2UgZWgzIDZlaJIBBmRvY3RvcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNeE0wbFlVVGRuUlJBQuABAPoBBAh4ECQ!16s%2Fg%2F11j53m9swp?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 63,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774172030732,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4887c7be2195d41b%3A0x538dfa1208cdba73!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sKbO_aZeIHue1hbIP463seQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUMxM0lYUTdnRRAB\",[\"0x0:0x538dfa1208cdba73\",null,1703492077735137,1703492077735137,[null,null,[\"https://www.google.com/maps/contrib/112415321466131477294/reviews?hl\\u003den\"],null,null,[\"Peter Fabian\",\"https://lh3.googleusercontent.com/a/ACg8ocKf9R1_taDccoNHx6yWdUMygd2SKF-liuW-Hx2BQrerJY8uVw\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/112415321466131477294?hl\\u003den\"],\"112415321466131477294\",null,7,0,null,[1,4,1],4,[\"Local Guide · 7 reviews\",null,null,null,null,[null,\"0ahUKEwjz4aHtmbOTAxXYRYQGHXShHDsQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"I met Dr Gilson a couple of times when my GP wasn't available for short notice and he was always listening and helping. I thoroughly felt he cared about me.\",null,[0,156]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxM0lYUTdnRRAB!2m1!1s0x0:0x538dfa1208cdba73!3m1!1s2@1:CIHM0ogKEICAgIC13IXQ7gE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUMxM0lYUTdnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUMxM0lYUTdnRRItChZDSUhNMG9nS0VJQ0FnSUMxM0lYUUhnEhNDZ3dJN2ZPa3JBWVE2Sm5GM2dJGi4KF0NJSE0wb2dLRUlDQWdJQzEzSVhRbmdFEhNDZ3dJN2ZPa3JBWVE2Sm5GM2dJIhIJAAAAAAAAAAARc7rNCBL6jVMqE0Nnd0k3Zk9rckFZUTZKbkYzZ0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjz4aHtmbOTAxXYRYQGHXShHDsQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjz4aHtmbOTAxXYRYQGHXShHDsQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

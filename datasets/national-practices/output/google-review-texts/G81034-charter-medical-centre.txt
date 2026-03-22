@@ -1,0 +1,66 @@
+Practice: CHARTER MEDICAL CENTRE
+Canonical code: G81034
+Postcode: BN3 1RF
+Google Maps title: Charter Medical Centre
+Google rating: 4.7
+Google review count: 1589
+Google Maps URL: https://www.google.com/maps/place/Charter+Medical+Centre/@50.8314936,-0.1606506,17z/data=!4m8!3m7!1s0x4875856913241d4d:0x6de1ab35fdf7a8c1!8m2!3d50.8314902!4d-0.1580703!9m1!1b1!16s%2Fg%2F1thlmjxs?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/G81034-charter-medical-centre.json
+
+Captured reviews
+================
+
+Author: Matt MacNeill
+Date: 3 hours ago
+Rating: 5 stars
+Ive been coming to this surgery for almost 18 years and the service is fantastic. In all this time I have always found the staff very polite and helpful and they proactively try to help you get an appointment so you don't have to wait weeks like in other surgeries. They all deserve a great pat on the back.
+
+Author: mellissa “milly1968” maynard
+Date: 15 hours ago
+Rating: 5 stars
+Always get a same day appointment 👍 …
+
+Author: Andy Knapp
+Date: Edited 16 hours ago
+Rating: 5 stars
+Nice and friendly and helpful
+
+Author: Walt Morfitt
+Date: 16 hours ago
+Rating: 5 stars
+Very friendly, professional in all aspects.
+
+Author: ash gabir
+Date: Edited 23 hours ago
+Rating: 5 stars
+Very good as always
+
+Author: Kay Corbin
+Date: Edited a day ago
+Rating: 5 stars
+Very professional and polite. Thank you,
+
+Author: Jack Davis
+Date: Edited a day ago
+Rating: 4 stars
+Prompt appointment and very happy with the doctor
+
+Author: Tonia Bastable
+Date: Edited a day ago
+Rating: 5 stars
+Telephone call with a pharmacist, really thorough and helpful
+
+Author: Solange Leon
+Date: a day ago
+Rating: 5 stars
+Solange Leon3 reviewsa day ago New
+
+Author: Mary Lockyer
+Date: Edited a day ago
+Rating: 5 stars
+Rebecca the Pharmacist is thorough, and listens well. My weight loss is encouraging, my Munjaro dose has been adjusted

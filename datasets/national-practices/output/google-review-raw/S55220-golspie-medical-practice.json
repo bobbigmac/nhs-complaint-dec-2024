@@ -1,0 +1,26 @@
+{
+  "practice_name": "GOLSPIE MEDICAL PRACTICE",
+  "canonical_code": "S55220",
+  "postcode": "KW10 6TH",
+  "query_used": "GOLSPIE MEDICAL PRACTICE KW10 6TH",
+  "google_maps_title": "Golspie Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Golspie+Medical+Practice/@57.9745147,-3.9781597,17z/data=!4m12!1m2!2m1!1sGOLSPIE+MEDICAL+PRACTICE+KW10+6TH!3m8!1s0x488ff513ec3a20d7:0x619d0885653b7815!8m2!3d57.9744613!4d-3.9755462!9m1!1b1!15sCiFHT0xTUElFIE1FRElDQUwgUFJBQ1RJQ0UgS1cxMCA2VEiSAQZkb2N0b3LgAQA!16s%2Fg%2F1tfvsjtm?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774182156117,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488ff513ec3a20d7%3A0x619d0885653b7815!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sB8y_aevLDIm0hbIPpYzqyAI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnTUNvc09TUWNBEAE\",[\"0x0:0x619d0885653b7815\",null,1744635745073441,1745306192389240,[null,null,[\"https://www.google.com/maps/contrib/107626016136468382521/reviews?hl\\u003den\"],null,null,[\"Keith Duce\",\"https://lh3.googleusercontent.com/a/ACg8ocLRqaHrqzlnpb7cXZI1-kv1tkhp4WC6L4GNrFafH2f3YS1qjw\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/107626016136468382521?hl\\u003den\"],\"107626016136468382521\",null,109,15,null,[1,6,1],18,[\"Local Guide · 109 reviews\",null,null,null,null,[null,\"0ahUKEwis5InJv7OTAxV_c4QGHR5GIpwQ7LoGCAMoAA\"]]]],null,\"Edited 11 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Very professional efficient and caring. This includes the receptionists, nurses, physiotherapist and of course the doctors. I feel the care I receive could not be better. Thank you.\",null,[0,181]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvc09TUWNBEAE!2m1!1s0x0:0x619d0885653b7815!3m1!1s2@1:CIHM0ogKEICAgMCosOSQcA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnTUNvc09TUWNBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnTUNvc09TUWNBEi0KF0NJSE0wb2dLRUlDQWdNQ29zT1NROEFFEhJDZ3NJNFk3MHZ3WVE2TDJDSXcaLAoWQ0lITTBvZ0tFSUNBZ01Db3NPU1FDQRISQ2dzSTRZNzB2d1lRNkwyQ0l3IhIJAAAAAAAAAAARFXg7ZYUInWEqE0Nnd0kwSVNkd0FZUXdLbk51UUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwis5InJv7OTAxV_c4QGHR5GIpwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwis5InJv7OTAxV_c4QGHR5GIpwQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

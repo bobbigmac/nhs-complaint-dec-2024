@@ -1,0 +1,31 @@
+Practice: CLAYPATH & UNIVERSITY MEDICAL GROUP
+Canonical code: A83011
+Postcode: DH1 1QW
+Google Maps title: Dr A Kent - Claypath & University Medical Group
+Google rating: 4.5
+Google review count: 258
+Google Maps URL: https://www.google.com/maps/place/Dr+A+Kent+-+Claypath+%26+University+Medical+Group/@54.7789137,-1.5687701,17z/data=!4m12!1m2!2m1!1sCLAYPATH+%26+UNIVERSITY+MEDICAL+GROUP+DH1+1QW!3m8!1s0x487e7d86241654a9:0x4e93506972f2c943!8m2!3d54.7788953!4d-1.5662694!9m1!1b1!15sCitDTEFZUEFUSCAmIFVOSVZFUlNJVFkgTUVESUNBTCBHUk9VUCBESDEgMVFXkgEGZG9jdG9y4AEA!16s%2Fg%2F11c6y_ptt9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.4
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/A83011-claypath-and-university-medical-group.json
+
+Captured reviews
+================
+
+Author: Dave Hindmarch
+Date: 4 years ago
+Rating: 5 stars
+Dr Andrew Kent is a very caring and professional doctor it will be a sad day when he retires ...thankyou for being my doctor
+
+Author: Arthur William
+Date: 7 years ago
+Rating: 5 stars
+Very professional and caring doctor ; speedy, friendly and caring nurse who tried to ensure I was comfortable throughout the tests. Thanks!
+
+Author: Alex Penk
+Date: 7 years ago
+Rating: 1 star
+Clown schools are ran better than this place.

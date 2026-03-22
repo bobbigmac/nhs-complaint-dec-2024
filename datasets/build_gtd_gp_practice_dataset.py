@@ -110,6 +110,37 @@ CITY_CATCHMENTS = [
 
 NATION_ORDER = ["england", "scotland", "wales", "northern_ireland"]
 
+SURVEY_METADATA_BY_NATION: dict[str, dict[str, str]] = {
+    "england": {
+        "patient_survey_name": "GP Patient Survey",
+        "patient_survey_status": "practice_level_available",
+        "patient_survey_level": "practice",
+        "patient_survey_url": "https://www.gp-patient.co.uk",
+        "patient_survey_note": "England practice-level patient survey source is available separately via GP Patient Survey page and CSV workflows.",
+    },
+    "wales": {
+        "patient_survey_name": "People's Experience Survey",
+        "patient_survey_status": "equivalent_identified_not_yet_wired",
+        "patient_survey_level": "national_framework",
+        "patient_survey_url": "https://www.gov.wales/peoples-experience-framework",
+        "patient_survey_note": "Primary-care patient-experience framework exists, but this build does not yet pull a practice-level Wales survey feed.",
+    },
+    "scotland": {
+        "patient_survey_name": "Health and Care Experience Survey",
+        "patient_survey_status": "equivalent_identified_not_yet_wired",
+        "patient_survey_level": "dashboard_or_aggregate",
+        "patient_survey_url": "https://publichealthscotland.scot/publications/health-and-care-experience-survey/health-and-care-experience-survey-2024/detailed-experience-ratings-results/",
+        "patient_survey_note": "Equivalent survey source exists, but this build does not yet parse the current Public Health Scotland experience dashboard export.",
+    },
+    "northern_ireland": {
+        "patient_survey_name": "GP patient surveys",
+        "patient_survey_status": "discontinued",
+        "patient_survey_level": "historic_only",
+        "patient_survey_url": "https://www.health-ni.gov.uk/articles/gp-patient-surveys",
+        "patient_survey_note": "Northern Ireland GP patient survey ran from 2008/09 to 2010/11 and was then discontinued; no current practice-level equivalent is wired here.",
+    },
+}
+
 
 COUNTY_WORDS = {
     "greater manchester",
@@ -916,16 +947,28 @@ def int_or_blank(value: Any) -> int | str:
         return ""
 
 
+def national_survey_metadata(nation: Any) -> dict[str, str]:
+    normalized = str(nation or "").strip().lower()
+    return dict(SURVEY_METADATA_BY_NATION.get(normalized, {}))
+
+
 def load_national_input_index(path: Path = NATIONAL_PRACTICES_INPUT_CSV) -> dict[str, dict[str, Any]]:
     if not path.exists():
         return {}
     with path.open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle))
-    return {
-        str(row.get("canonical_code", "")).strip(): row
-        for row in rows
-        if str(row.get("canonical_code", "")).strip()
-    }
+    indexed: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        code = str(row.get("canonical_code", "")).strip()
+        if not code:
+            continue
+        enriched = dict(row)
+        for key, value in national_survey_metadata(row.get("nation")).items():
+            if str(enriched.get(key, "")).strip():
+                continue
+            enriched[key] = value
+        indexed[code] = enriched
+    return indexed
 
 
 def detect_gpps_csv_schema(fieldnames: list[str]) -> tuple[str, str, str] | None:
@@ -1061,6 +1104,7 @@ def build_national_map_supplementals(
             survey_by_code,
             branch_parent_by_code,
         )
+        survey_metadata = national_survey_metadata(source_row.get("nation"))
 
         google_score = result.get("google_rating", "")
         google_count = result.get("google_review_count", "")
@@ -1077,6 +1121,9 @@ def build_national_map_supplementals(
                 "postcode": str(source_row.get("postcode") or result.get("postcode") or "").strip(),
                 "nation": str(source_row.get("nation") or "").strip(),
                 "registered_patient_count": source_row.get("registered_patient_count", ""),
+                "registered_patient_count_source": source_row.get("registered_patient_count_source", ""),
+                "registered_patient_count_source_url": source_row.get("registered_patient_count_source_url", ""),
+                "registered_patient_count_snapshot": source_row.get("registered_patient_count_snapshot", ""),
                 "google_score": google_score,
                 "google_count": google_count,
                 "google_source_note": "National Google Maps quick scan",
@@ -1090,6 +1137,11 @@ def build_national_map_supplementals(
                 "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
                 "gp_patient_survey_code_used": survey_code_used,
                 "gp_patient_survey_resolution_note": survey_resolution_note,
+                "patient_survey_name": str(source_row.get("patient_survey_name") or survey_metadata.get("patient_survey_name") or "").strip(),
+                "patient_survey_status": str(source_row.get("patient_survey_status") or survey_metadata.get("patient_survey_status") or "").strip(),
+                "patient_survey_level": str(source_row.get("patient_survey_level") or survey_metadata.get("patient_survey_level") or "").strip(),
+                "patient_survey_url": str(source_row.get("patient_survey_url") or survey_metadata.get("patient_survey_url") or "").strip(),
+                "patient_survey_note": str(source_row.get("patient_survey_note") or survey_metadata.get("patient_survey_note") or "").strip(),
                 "is_national_supplemental": True,
             }
         )
@@ -1576,6 +1628,11 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
                 "gp_patient_survey_code_used": survey_code_used,
                 "gp_patient_survey_resolution_note": survey_resolution_note,
+                "patient_survey_name": "GP Patient Survey",
+                "patient_survey_status": "practice_level_available",
+                "patient_survey_level": "practice",
+                "patient_survey_url": "https://www.gp-patient.co.uk",
+                "patient_survey_note": "",
                 "registered_patient_count": row.get("registered_patient_count", ""),
             }
         )
@@ -3018,13 +3075,35 @@ function gapInputs(row) {{
   }};
 }}
 
-const gapNormalisationStats = (() => {{
-  const inputs = rows.map((row) => gapInputs(row)).filter(Boolean);
-  const rawGapValues = inputs.map((entry) => entry.google - entry.surveyStars);
-  return {{
-    rawGapMean: mean(rawGapValues),
-    rawGapStd: standardDeviation(rawGapValues),
-  }};
+function gapNormalisationCohortKey(row) {{
+  const nation = String(row?.nation || '').trim().toLowerCase();
+  return nation || 'all';
+}}
+
+const gapNormalisationStatsByCohort = (() => {{
+  const buckets = new Map();
+  for (const row of rows.concat(nationalSupplementals)) {{
+    const inputs = gapInputs(row);
+    if (!inputs) continue;
+    const key = gapNormalisationCohortKey(row);
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(inputs.google - inputs.surveyStars);
+  }}
+  const stats = new Map();
+  for (const [key, values] of buckets.entries()) {{
+    stats.set(key, {{
+      rawGapMean: mean(values),
+      rawGapStd: standardDeviation(values),
+      sampleSize: values.length,
+    }});
+  }}
+  const allValues = Array.from(buckets.values()).flat();
+  stats.set('all', {{
+    rawGapMean: mean(allValues),
+    rawGapStd: standardDeviation(allValues),
+    sampleSize: allValues.length,
+  }});
+  return stats;
 }})();
 
 function absoluteGapValue(row, suppressSmall = true) {{
@@ -3037,10 +3116,13 @@ function absoluteGapValue(row, suppressSmall = true) {{
 function normalizedGapValue(row, suppressSmall = true) {{
   const inputs = gapInputs(row);
   if (!inputs) return null;
-  const rawGapStd = gapNormalisationStats.rawGapStd;
+  const cohortKey = gapNormalisationCohortKey(row);
+  const cohortStats = gapNormalisationStatsByCohort.get(cohortKey) || gapNormalisationStatsByCohort.get('all');
+  if (!cohortStats) return null;
+  const rawGapStd = cohortStats.rawGapStd;
   if (!rawGapStd) return null;
   const rawGap = inputs.google - inputs.surveyStars;
-  const gap = (rawGap - gapNormalisationStats.rawGapMean) / rawGapStd;
+  const gap = (rawGap - cohortStats.rawGapMean) / rawGapStd;
   return suppressSmall && Math.abs(gap) < 1 ? null : gap;
 }}
 
@@ -3072,7 +3154,7 @@ function gapAxisInfo() {{
     ticks.push(Number(tick.toFixed(2)));
   }}
   return {{
-    label: 'Normalised Google-minus-survey gap (z-score, positive = Google higher)',
+    label: 'Normalised Google-minus-survey gap (within-nation z-score, positive = Google higher)',
     min: -roundedMax,
     max: roundedMax,
     magnitudeLabel: 'Survey/Google gap magnitude (abs, normalised z-score)',
@@ -3082,7 +3164,7 @@ function gapAxisInfo() {{
 
 function gapDescription() {{
   if (activeGapMode === 'normalized') {{
-    return 'Normalised mode: the raw Google-minus-survey gap is converted to a cohort z-score. Positive means Google reviews sit above the survey-equivalent score; negative means the survey-equivalent score sits above Google, which this view treats as worse.';
+    return 'Normalised mode: the raw Google-minus-survey gap is converted to a within-nation z-score. Positive means Google reviews sit above the survey-equivalent score for that nation-relative cohort; negative means the survey-equivalent score sits above Google, which this view treats as worse.';
   }}
   return 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google. Positive means Google reviews are higher than the survey-equivalent score; negative means the survey-equivalent score is higher than Google, which this view treats as worse.';
 }}
@@ -3469,16 +3551,23 @@ function formatGoogle(row) {{
 }}
 
 function formatSurvey(row) {{
+  const surveyName = row.patient_survey_name || 'GP Patient Survey';
+  const surveyStatus = (row.patient_survey_status || '').trim();
   const overall = numericOrNull(row.survey_overall_good_percent);
   const completion = numericOrNull(row.survey_completion_rate_percent);
   const sentBack = numericOrNull(row.survey_sent_back);
   const sentOut = numericOrNull(row.survey_sent_out);
-  if (overall === null && completion === null) return 'GP survey: ?';
+  if (overall === null && completion === null) {{
+    if (surveyStatus === 'equivalent_identified_not_yet_wired') return `${{surveyName}}: source identified, practice-level feed not yet wired`;
+    if (surveyStatus === 'discontinued') return `${{surveyName}}: historic/discontinued`;
+    if (surveyStatus === 'practice_level_available') return `${{surveyName}}: ?`;
+    return `${{surveyName}}: ?`;
+  }}
   const parts = [];
   if (overall !== null) parts.push(`Overall good: ${{Math.round(overall)}}%`);
   if (completion !== null) parts.push(`Completion: ${{Math.round(completion)}}%`);
   if (sentBack !== null && sentOut !== null) parts.push(`${{Math.round(sentBack)}}/${{Math.round(sentOut)}} returned`);
-  return `GP survey: ${{parts.join(' · ')}}`;
+  return `${{surveyName}}: ${{parts.join(' · ')}}`;
 }}
 
 function formatGap(row) {{
@@ -3488,12 +3577,12 @@ function formatGap(row) {{
   const magnitude = Math.abs(gap);
   if (magnitude < 0.01) {{
     return activeGapMode === 'normalized'
-      ? `Survey/Google gap: typical for this cohort · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
+      ? `Survey/Google gap: typical for this nation-relative cohort · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
       : `Survey/Google gap: aligned · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`;
   }}
   const direction = gap > 0 ? 'higher' : 'lower';
   return activeGapMode === 'normalized'
-    ? `Survey/Google gap: ${{magnitude.toFixed(2)}} normalised-gap z-score (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
+    ? `Survey/Google gap: ${{magnitude.toFixed(2)}} within-nation z-score (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`
     : `Survey/Google gap: ${{magnitude.toFixed(2)}} stars (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`;
 }}
 
@@ -3515,7 +3604,10 @@ function popupMarkup(row) {{
   const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
   const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
   const surveyResolution = row.gp_patient_survey_resolution_note ? `<div>${{row.gp_patient_survey_resolution_note}}</div>` : '';
-  const surveyLink = row.gp_patient_survey_2025_url ? `<div><a href="${{row.gp_patient_survey_2025_url}}" target="_blank" rel="noreferrer">GP Patient Survey page</a></div>` : '';
+  const surveySourceNote = row.patient_survey_note ? `<div>${{row.patient_survey_note}}</div>` : '';
+  const surveyUrl = row.gp_patient_survey_2025_url || row.patient_survey_url || '';
+  const surveyLinkLabel = row.gp_patient_survey_2025_url ? `${{row.patient_survey_name || 'GP Patient Survey'}} page` : `${{row.patient_survey_name || 'Patient survey'}} source`;
+  const surveyLink = surveyUrl ? `<div><a href="${{surveyUrl}}" target="_blank" rel="noreferrer">${{surveyLinkLabel}}</a></div>` : '';
   const gap = `<div>${{formatGap(row)}}</div>`;
   const gtd = row.gtd_url ? `<div><a href="${{row.gtd_url}}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
   return `
@@ -3533,6 +3625,7 @@ function popupMarkup(row) {{
     ${{survey}}
     ${{surveyCompare}}
     ${{surveyResolution}}
+    ${{surveySourceNote}}
     ${{gap}}
     ${{googleText}}
     <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
@@ -3548,7 +3641,11 @@ function nationalPopupMarkup(row) {{
   const gap = `<div>${{formatGap(row)}}</div>`;
   const registeredPatients = numericOrNull(row.registered_patient_count);
   const patientsLine = registeredPatients === null ? '' : `<div>Registered patients: ${{registeredPatients.toLocaleString('en-GB')}}</div>`;
-  const surveyLink = row.gp_patient_survey_2025_url ? `<div><a href="${{row.gp_patient_survey_2025_url}}" target="_blank" rel="noreferrer">GP Patient Survey page</a></div>` : '';
+  const surveyResolution = row.gp_patient_survey_resolution_note ? `<div>${{row.gp_patient_survey_resolution_note}}</div>` : '';
+  const surveySourceNote = row.patient_survey_note ? `<div>${{row.patient_survey_note}}</div>` : '';
+  const surveyUrl = row.gp_patient_survey_2025_url || row.patient_survey_url || '';
+  const surveyLinkLabel = row.gp_patient_survey_2025_url ? `${{row.patient_survey_name || 'GP Patient Survey'}} page` : `${{row.patient_survey_name || 'Patient survey'}} source`;
+  const surveyLink = surveyUrl ? `<div><a href="${{surveyUrl}}" target="_blank" rel="noreferrer">${{surveyLinkLabel}}</a></div>` : '';
   const googleLink = row.google_url ? `<div><a href="${{row.google_url}}" target="_blank" rel="noreferrer">Google Maps page</a></div>` : '';
   return `
     <strong>${{row.name}}</strong><br>
@@ -3558,6 +3655,8 @@ function nationalPopupMarkup(row) {{
     ${{patientsLine}}
     ${{google}}
     ${{survey}}
+    ${{surveyResolution}}
+    ${{surveySourceNote}}
     ${{gap}}
     ${{surveyLink}}
     ${{googleLink}}

@@ -1,0 +1,56 @@
+Practice: KELTY MEDICAL PRACTICE
+Canonical code: S20803
+Postcode: KY4 0AE
+Google Maps title: Kelty Medical Practice
+Google rating: 3.8
+Google review count: 8
+Google Maps URL: https://www.google.com/maps/place/Kelty+Medical+Practice/@56.1347562,-3.3833805,17z/data=!4m8!3m7!1s0x4887cd1f6602ef5d:0x48b741c96fcea809!8m2!3d56.1347532!4d-3.3808002!9m1!1b1!16s%2Fg%2F1tplk9jg?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 8
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S20803-kelty-medical-practice.json
+
+Captured reviews
+================
+
+Author: Elliot Dent
+Date: a month ago
+Rating: 5 stars
+Friendly service.
+
+Author: Audrey Campbell
+Date: 10 months ago
+Rating: 5 stars
+I have a complex medical history and have received a high standard of care from this practice.
+
+Author: A M
+Date: 11 months ago
+Rating: 1 star
+While the surgery itself is generally good, and most of the staff are professional and caring, my experiences with Dr. Pirie have been consistently disappointing. She is one of the most insensitive and condescending doctors I have ever dealt with. She lacks basic people skills, making appointments feel like a battle rather than a conversation about my health. She clearly does not take the time to read patient notes properly, often making irrelevant or even hurtful comments. Instead of listening or showing any empathy, she comes across as dismissive and uninterested. It’s frustrating and disheartening to be treated this way, especially when seeking medical care.
+
+Author: diane barclay
+Date: 2 years ago
+Rating: 5 stars
+Friendly , caring , professional!
+
+Author: Elizabeth Wilson
+Date: 2 years ago
+Rating: 5 stars
+In & put in 10 mins, still no answers tho XX
+
+Author: Janet Eddie
+Date: 2 years ago
+Rating: 3 stars
+Surely if you have to close triage early due to capacity being reached, it tells you that you have to extend availability
+
+Author: Stewart MacGregor
+Date: 8 years ago
+Rating: 5 stars
+Fairly small practice but seems very well equipped. No hesitation to go back
+
+Author: Scotch John
+Date: 9 years ago
+Rating: 1 star
+Wait 6 week's to see your doctor only to be told, he's busy. See a locum. Useless

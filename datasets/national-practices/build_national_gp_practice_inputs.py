@@ -74,6 +74,38 @@ SURVEY_METADATA_BY_NATION: dict[str, dict[str, str]] = {
     },
 }
 
+OUTPUT_FIELD_ORDER = [
+    "practice_name",
+    "canonical_code",
+    "postcode",
+    "street_address",
+    "telephone",
+    "email",
+    "website_url",
+    "nhs_profile_url",
+    "latitude",
+    "longitude",
+    "accepting_new_patients",
+    "country",
+    "nation",
+    "source_type",
+    "ods_primary_role_id",
+    "ods_primary_role_description",
+    "ods_active_roles",
+    "ods_org_link",
+    "last_change_date",
+    "registered_patient_count",
+    "registered_patient_count_source",
+    "registered_patient_count_source_url",
+    "registered_patient_count_snapshot",
+    "patient_survey_name",
+    "patient_survey_status",
+    "patient_survey_level",
+    "patient_survey_url",
+    "patient_survey_note",
+    "google_maps_query",
+]
+
 
 def fetch_text(url: str, *, timeout: int = 60) -> str:
     req = urllib.request.Request(
@@ -487,7 +519,9 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     if not rows:
         path.write_text("", encoding="utf-8")
         return
-    fieldnames = list(rows[0].keys())
+    fieldnames = list(OUTPUT_FIELD_ORDER)
+    extra_fields = sorted({key for row in rows for key in row.keys() if key not in fieldnames})
+    fieldnames.extend(extra_fields)
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()

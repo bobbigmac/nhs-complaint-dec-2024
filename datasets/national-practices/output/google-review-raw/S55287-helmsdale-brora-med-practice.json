@@ -1,0 +1,26 @@
+{
+  "practice_name": "HELMSDALE/BRORA MED PRACTICE",
+  "canonical_code": "S55287",
+  "postcode": "KW9 6QJ",
+  "query_used": "HELMSDALE/BRORA MED PRACTICE KW9 6QJ",
+  "google_maps_title": "Brora & Helmsdale Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Brora+%26+Helmsdale+Medical+Practice/@58.0646469,-3.832122,12z/data=!4m12!1m2!2m1!1sHELMSDALE%2FBRORA+MED+PRACTICE+KW9+6QJ!3m8!1s0x488545751e5ef1a5:0x98e28cf7ae9ef6db!8m2!3d58.1167013!4d-3.6466233!9m1!1b1!15sCihIRUxNU0RBTEUvQlJPUkEgTUVESUNBTCBQUkFDVElDRSBLVzkgNlFKkgEGZG9jdG9y4AEA!16s%2Fg%2F1tdgzw7h?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 4,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774179785799,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488545751e5ef1a5%3A0x98e28cf7ae9ef6db!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sB8y_aevLDIm0hbIPpYzqyAI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNPNjhXem5nRRAB\",[\"0x0:0x98e28cf7ae9ef6db\",null,1655721549451033,1655721549451033,[null,null,[\"https://www.google.com/maps/contrib/108108077723220328897/reviews?hl\\u003den\"],null,null,[\"Carol Robinson\",\"https://lh3.googleusercontent.com/a-/ALV-UjXSSVJGrtCe-McRRaZHNEie8MeeDjNacEV4ULHesXEs05fgbBY\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/108108077723220328897?hl\\u003den\"],\"108108077723220328897\",null,106,43,null,[1,6,1],24,[\"Local Guide · 106 reviews\",null,null,null,null,[null,\"0ahUKEwjj2YrftrOTAxXIEmMBHcs6IbYQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPNjhXem5nRRAB!2m1!1s0x0:0x98e28cf7ae9ef6db!3m1!1s2@1:CIHM0ogKEICAgICO68WzngE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNPNjhXem5nRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNPNjhXem5nRRotChZDSUhNMG9nS0VJQ0FnSUNPNjhXelhnEhNDZ3dJelp6QmxRWVFxTy1JMXdFIhIJAAAAAAAAAAAR2_aerveM4pgqE0Nnd0l6WnpCbFFZUXFPLUkxd0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjj2YrftrOTAxXIEmMBHcs6IbYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjj2YrftrOTAxXIEmMBHcs6IbYQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTRFZmVkdsR01GOWZSV2hFWlRWSmFYUTNMWE13TVhwQ1UzaGxUVUZCUVVGQlIyZG1YMEZ1TlY5VWFVWXdSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSUNBdnBPV0hREAE\",[\"0x0:0x98e28cf7ae9ef6db\",null,1484262396585000,1484262396585000,[null,null,[\"https://www.google.com/maps/contrib/115696034700193985475/reviews?hl\\u003den\"],null,null,[\"NORTH EAST SHORE FISHING SCOTLAND\",\"https://lh3.googleusercontent.com/a-/ALV-UjUV3_ClgyBIMncuh8yFYyEIDi_bNsLx2AUrzTe7cSeg_hPq50X_\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/115696034700193985475?hl\\u003den\"],\"115696034700193985475\",null,16,20,null,[1,4,1],58,[\"Local Guide · 16 reviews\",null,null,null,null,[null,\"0ahUKEwjj2YrftrOTAxXIEmMBHcs6IbYQ7LoGCAYoAA\"]]]],null,\"9 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdnBPV0hREAE!2m1!1s0x0:0x98e28cf7ae9ef6db!3m1!1s2@1:CIHM0ogKEICAgICAvpOWHQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNBdnBPV0hREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNBdnBPV0hRGi4KF0NJSE0wb2dLRUlDQWdJQ0F2cE9XblFFEhNDZ3dJX0pmZ3d3VVF3TWo1bGdJIhIJAAAAAAAAAAAR2_aerveM4pgqE0Nnd0lfSmZnd3dVUXdNajVsZ0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjj2YrftrOTAxXIEmMBHcs6IbYQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjj2YrftrOTAxXIEmMBHcs6IbYQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

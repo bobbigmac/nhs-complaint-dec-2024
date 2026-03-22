@@ -1,0 +1,26 @@
+{
+  "practice_name": "SPECIAL ALLOCATION SCHEME (NEL)",
+  "canonical_code": "Y06592",
+  "postcode": "SE23 1RJ",
+  "query_used": "SPECIAL ALLOCATION SCHEME (NEL) SE23 1RJ",
+  "google_maps_title": "Special Allocation Service",
+  "google_maps_url": "https://www.google.com/maps/place/Special+Allocation+Service/@51.5083054,-0.1719529,11z/data=!4m12!1m2!2m1!1sSPECIAL+ALLOCATION+SCHEME+(NEL)+SE23+1RJ!3m8!1s0x47d8aa1cba20fa5b:0x37949c54126d0fb2!8m2!3d51.4266693!4d0.0125438!9m1!1b1!15sCihTUEVDSUFMIEFMTE9DQVRJT04gU0NIRU1FIChORUwpIFNFMjMgMVJK4AEA!16s%2Fg%2F11l73dnwsx?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774180125047,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d8aa1cba20fa5b%3A0x37949c54126d0fb2!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sB8y_aevLDIm0hbIPpYzqyAI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUM5OFpDLU5BEAE\",[\"0x0:0x37949c54126d0fb2\",null,1709748400244529,1709748400244529,[null,null,[\"https://www.google.com/maps/contrib/100747965784086928038/reviews?hl\\u003den\"],null,null,[\"Helen Newick\",\"https://lh3.googleusercontent.com/a/ACg8ocLNiC43snqnRy0Y1MzfG6J8IfQPSzE5TZfRO5zukcBVuOv_cQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/100747965784086928038?hl\\u003den\"],\"100747965784086928038\",null,11,0,null,[0,3,1],0,[\"11 reviews\",null,null,null,null,[null,\"0ahUKEwiZp_eAuLOTAxUYI2MBHbIwH_wQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"I was placed in this service after GP’s at a practice in Peckham, Queen’s Road Surgery who spent 4 months refusing to grant any access to care because they didn’t want to have a conversation about reasonable adjustments, and then lied saying I sent them picture of faeces when I didn’t.\\n\\nThe GP’s at this SAS service refused to process my appeals fairly, and spent 3 x 2 hours verbally harassing me about my disability, including disability-related name calling, in consultations and categorically refused that primary care has any duty to adjust under The Equality Act or implement reasonable adjustments reasonably.\\n\\nThe GP’s at this service held me for 21 months in this scheme before releasing me after dismissing a complaint and upon realising I have recorded every word of their abusive conduct and gaslighting and was no longer going to be gaslit by them.\\n\\nIf you or anyone else you know has had the same or similar experience at this practice or any other in SE London – please feel free to contact me.\\n\\nPlacing me in this scheme was an act of abuse by health care professionals and the abuse continued in this service.\",null,[0,234]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5OFpDLU5BEAE!2m1!1s0x0:0x37949c54126d0fb2!3m1!1s2@1:CIHM0ogKEICAgIC98ZC-NA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUM5OFpDLU5BEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUM5OFpDLU5BEi0KF0NJSE0wb2dLRUlDQWdJQzk4WkMtdEFFEhJDZ3NJc09HaXJ3WVE2TzdNZEEaLAoWQ0lITTBvZ0tFSUNBZ0lDOThaQy1kQRISQ2dzSXNPR2lyd1lRNk83TWRBIhIJAAAAAAAAAAARsg9tElSclDcqEkNnc0lzT0dpcndZUTZPN01kQQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiZp_eAuLOTAxUYI2MBHbIwH_wQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiZp_eAuLOTAxUYI2MBHbIwH_wQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

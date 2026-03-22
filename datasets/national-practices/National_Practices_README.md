@@ -51,6 +51,63 @@ JSON mirrors are also written beside each CSV.
 - Northern Ireland:
   - the build records GP patient surveys as discontinued after `2010/11`, so there is no current practice-level equivalent wired here
 
+## Scotland HACE Dev Collector
+
+There is now a standalone dev-only Tableau collector for the Scotland Health and Care Experience dashboard:
+
+- [fetch_scotland_hace_tableau.py](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/fetch_scotland_hace_tableau.py)
+
+Design constraints:
+
+- not wired into the automatic build
+- one persistent Firefox session per run
+- no browser restart between practices
+- per-practice skipping when a raw capture is newer than `31` days, unless `--force`
+
+Default output location:
+
+- `datasets/national-practices/output/scotland-hace-tableau/`
+
+Files written there:
+
+- `manifest.json`
+- `raw/<canonical-code>-<slug>.json`
+
+The raw sidecar keeps:
+
+- the selected Tableau report label
+- visible page text
+- zone-specific text snapshots
+- captured `/vizql/` request/response payloads from the live page
+- a small normalized summary for quick inspection
+
+Preferred dev run shape:
+
+```bash
+datasets/.venv-google-reviews/bin/python \
+  datasets/national-practices/fetch_scotland_hace_tableau.py \
+  --canonical-code S30909 \
+  --canonical-code S30951
+```
+
+For a throwaway inspection run, point it at a temporary output directory:
+
+```bash
+datasets/.venv-google-reviews/bin/python \
+  datasets/national-practices/fetch_scotland_hace_tableau.py \
+  --canonical-code S30909 \
+  --force \
+  --output-dir /tmp/scotland-hace-tableau
+```
+
+## Scotland Survey TODOs
+
+- Decode the remaining Tableau `Response_rate` summary into stable normalized fields so the collector stores response-rate and response-count values directly, not only raw captures.
+- Run the Scotland HACE dev collector across the full [scotland_gp_practices.csv](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/scotland_gp_practices.csv) input and make sure every Scotland practice ends with either usable survey data or an explicit machine-readable no-data reason in the manifest/raw sidecar.
+- Keep the Scotland pass dev-only and incremental: reuse the single-browser run shape, and skip per-practice refreshes newer than `31` days unless a forced refresh is requested.
+- Once the Scotland fields are fully decoded, promote only the stable practice-level outputs needed by the wider dataset build rather than dumping Tableau raw payloads into the main build products.
+- Keep normalized map comparisons nation-relative as more survey feeds arrive: England, Scotland, Wales, and Northern Ireland should each normalize against their own nation cohort rather than being collapsed into one UK-wide z-score pool.
+
 ## Output shape
 
 The CSVs are designed to be close to the existing collector input shape. Key fields:

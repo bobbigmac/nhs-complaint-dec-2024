@@ -1,0 +1,26 @@
+Practice: WOODLANDS ROAD MEDICAL CENTRE
+Canonical code: H81058
+Postcode: RH1 6EY
+Google Maps title: Dr R Adams - Woodlands Road Medical Centre
+Google rating: 5.0
+Google review count: 2
+Google Maps URL: https://www.google.com/maps/place/Dr+R+Adams+-+Woodlands+Road+Medical+Centre/@51.2313483,-0.1743566,17z/data=!4m12!1m2!2m1!1sWOODLANDS+ROAD+MEDICAL+CENTRE+RH1+6EY!3m8!1s0x4875fb252be0f657:0xfd4e3e0d5972d093!8m2!3d51.2313593!4d-0.171716!9m1!1b1!15sCiVXT09ETEFORFMgUk9BRCBNRURJQ0FMIENFTlRSRSBSSDEgNkVZkgEGZG9jdG9y4AEA!16s%2Fg%2F11j53m801f?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.4
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/H81058-woodlands-road-medical-centre.json
+
+Captured reviews
+================
+
+Author: C B
+Date: 7 months ago
+Rating: 5 stars
+Excellent
+
+Author: Lytha Ogg
+Date: 2 years ago
+Rating: 5 stars
+Great surgery. Always helpful and caring.
