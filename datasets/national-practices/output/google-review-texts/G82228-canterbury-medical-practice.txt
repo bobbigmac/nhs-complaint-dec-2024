@@ -1,0 +1,66 @@
+Practice: CANTERBURY MEDICAL PRACTICE
+Canonical code: G82228
+Postcode: CT4 5BL
+Google Maps title: Canterbury Medical Practice
+Google rating: 3.1
+Google review count: 53
+Google Maps URL: https://www.google.com/maps/place/Canterbury+Medical+Practice/@51.2666779,1.0830495,17z/data=!4m8!3m7!1s0x47decb178ec58375:0xd1593c1b88c05dea!8m2!3d51.2666746!4d1.0856298!9m1!1b1!16s%2Fg%2F11n_295m40?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/G82228-canterbury-medical-practice.json
+
+Captured reviews
+================
+
+Author: Victoria Muray
+Date: 2 days ago
+Rating: 5 stars
+Taken great care of me. Quickly arranged a breast cancer test
+
+Author: Amme Sinkpoh
+Date: a month ago
+Rating: 2 stars
+You don’t get called to rooms anymore you’re supposed to watch the screen. The screen doesn’t beep or notify you that there is a name up there. So I ended up sitting there for 20 mins, had to leave because I had to get back for work and was told the doctor had called me through on th screen. If this is how they want to do it then fine but they should let people know when they arrive to watch the screen. I just thought it was a TV with adverts on so wasn’t watching.
+
+Author: Lisa Huerta
+Date: a month ago
+Rating: 5 stars
+Every ran very smoothly - I arrived early and barely waited 5 minutes which meant I was out before my appointment was due to start. The practitioner who conducted my examination was absolutely great, they explained what to expect and were really reassuring. They talked me through what they were doing as the examination went on and discussed briefly what they observed, to be confirmed with my GP. They told me when to expect to hear back from my GP practice and when to follow up if I haven't heard anything. Absolutely great team who (from my experience) deserves appreciation!
+
+Author: Marie-Claire M
+Date: 2 months ago
+Rating: 1 star
+A couple of nice doctors here, but the quality of the receptionists leaves much to be desired. One recent addition seems to think mimicking the accent of the caller, and barely concealing their laughter falls under professional conduct. Another made a mistake in an appointment, forgot to send/set up the reminder and tried to blame the patient for their mistake. Some serious training is required!
+
+Author: Lucy Beevor
+Date: 2 months ago
+Rating: 5 stars
+First class experience! All the staff who I've had contact with have been so helpful and responsive and have taken the initiative to make suggestions I hadn't expected. The practice's systems are very efficient too. Thank you so much!
+
+Author: Pat Rice
+Date: Edited 2 months ago
+Rating: 5 stars
+Professional, efficient and kind Receptionists and the request for a telephone call back system is excellent together with no problem in making an appointment to see a Doctor. I am very impressed and reassured. Since writing the above review, I completed an e-consult this morning at 8am (6 January 2026) I received a prompt callback to attend the surgery at 10.15 which I attended. After a 35 minute, wait, I found my requested appointment was not with a doctor as I had presumed, but with a Nurse Practitioner. To my surprise too, she asked what she could do for me and clearly knew nothing of the information I had entered into the e-consult of the medical problem I had hoped to discuss with a GP. By the time, I got into see her after a 35 minute wait, I was feeling more unwell. She asked questions that had she had read the e-consult together with my medical record, she would have had a better knowledge of me and my health record which a GP would have done and which had always happened before. Instead, time was wasted and I felt let down. GPs I have seen before, have always asked additional questions having looked at my record. This enabled them to link my previous record and ailments and give me the comfort of knowing the GP is actually interested in me as their patient if they have looked at my record beforehand or bothered to review it albeit briefly. . Despite never seeing the same GP twice at the Practice, they have always made themselves aware of my recent medical problems asking other questions during the appointment linked to my medical history over the last year. It seems now we must request an appointment with a GP specifically otherwise, it turns out to be with a Nurse Practitioner which does not fill me with any confidence as pleasant as she was that my econsult was even reviewed by a doctor. If this triage system is now the way forward, the least the Nurse Practitioner should do is read the completed e-consult in conjunction with the patient’s record in advance of seeing the patient.
+
+Author: Ravyn Hounsell
+Date: 3 months ago
+Rating: 4 stars
+High quality of care, relatively easy to book an appointment, having to do an e-consult is slightly annoying but I understand why it would be helpful on their end
+
+Author: Ann stone
+Date: 3 months ago
+Rating: 1 star
+Absolutely Can’t believe I’ve got to wait nearly a month to see a doctor after finding a lump in my armpit. It’s a total disgrace being told its a routine appointment so not deemed anything to worry about 🤯 …
+
+Author: Simon Fraser
+Date: 7 months ago
+Rating: 5 stars
+I have always found the surgery to be easy to reach, friendly and helpful. There are busy times (like all surgeries), however, I find the econsult very responsive. Just requested a blood test for hospital and had the response and booking codes withing 2 hours. Perfect. The doctors, nurses and physios have always been friendly too. Thanks for being there :)
+
+Author: Angela Shannon
+Date: Edited 8 months ago
+Rating: 1 star
+Despite the move to new premises this surgery continues to be neglectful and impossible to communicate with. Over a number of years they have treated my elderly Mother appallingly. Now that she is in a care home the lack of engagement and diligence is still ongoing. They continually fail to show up for scheduled blood tests, demonstrating a lack of regard for my Mothers mental and physical well being. They prescribe medications without any visits to the care home. The treatment she receives is often ineffective. Could never recommend them to anyone.

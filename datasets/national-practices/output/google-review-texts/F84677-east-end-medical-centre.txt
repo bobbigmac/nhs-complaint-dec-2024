@@ -1,0 +1,21 @@
+Practice: EAST END MEDICAL CENTRE
+Canonical code: F84677
+Postcode: E13 0QA
+Google Maps title: Dr K Anochie - East End Medical Centre
+Google rating: 3.1
+Google review count: 104
+Google Maps URL: https://www.google.com/maps/place/Dr+K+Anochie+-+East+End+Medical+Centre/@51.5373219,0.0230711,17z/data=!4m12!1m2!2m1!1sEAST+END+MEDICAL+CENTRE+E13+0QA!3m8!1s0x47d8a7bf97f95549:0x6c5cba5ed0ee6618!8m2!3d51.5373279!4d0.0256642!9m1!1b1!15sCh9FQVNUIEVORCBNRURJQ0FMIENFTlRSRSBFMTMgMFFBkgEGZG9jdG9y4AEA!16s%2Fg%2F11frdw86vb?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.4
+Review collection mode: visible_cards
+Review cards collected: 1
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/F84677-east-end-medical-centre.json
+
+Captured reviews
+================
+
+Author: Antonia Azzopardi
+Date: 2 years ago
+Rating: 5 stars
+A very good medical practice. Very helpful staff and doctors as well.

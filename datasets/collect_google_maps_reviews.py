@@ -442,7 +442,7 @@ def search_google_maps(driver: webdriver.Firefox, wait: WebDriverWait, query: st
                 or current_search_value(d) == normalize_text(query)
             )
             wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div[role="main"]')))
-            time.sleep(4)
+            time.sleep(3)
             return
         except Exception as exc:
             last_error = exc
@@ -529,7 +529,7 @@ def click_best_search_result(
         wait.until(lambda d: "/place/" in d.current_url)
     except TimeoutException:
         return False, candidates, chosen
-    time.sleep(3)
+    time.sleep(2)
     return True, candidates, chosen
 
 
@@ -1182,7 +1182,7 @@ def scrape_place(
             clear_review_network_capture(driver)
     if reviews_opened and not blocked_place_match and not sponsored_place_match and not no_review_panel and not wrong_place_match and not review_count_skip:
         reviews_sorted = sort_reviews_newest(driver)
-        time.sleep(2)
+        time.sleep(1.5)
         if full_reviews_requested:
             full_reviews_attempted = True
             recent_reviews, full_review_stop_reason, full_review_soft_cap_applied = extract_full_reviews(
