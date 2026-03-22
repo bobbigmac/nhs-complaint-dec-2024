@@ -91,6 +91,26 @@ SUPPLEMENTAL_SEARCH_CENTERS = [
 ]
 
 
+CITY_CATCHMENTS = [
+    {"name": "Manchester", "lat": 53.4808, "lon": -2.2426, "radius_miles": 5.8, "accent": "#8d3c17"},
+    {"name": "London", "lat": 51.5072, "lon": -0.1276, "radius_miles": 8.5, "accent": "#6f4aa8"},
+    {"name": "Liverpool", "lat": 53.4084, "lon": -2.9916, "radius_miles": 5.3, "accent": "#2f6fa5"},
+    {"name": "Leeds", "lat": 53.8008, "lon": -1.5491, "radius_miles": 5.8, "accent": "#3f7d4c"},
+    {"name": "Sheffield", "lat": 53.3811, "lon": -1.4701, "radius_miles": 5.4, "accent": "#995b2e"},
+    {"name": "Birmingham", "lat": 52.4862, "lon": -1.8904, "radius_miles": 6.6, "accent": "#5d6bb3"},
+    {"name": "Bristol", "lat": 51.4545, "lon": -2.5879, "radius_miles": 5.1, "accent": "#8a4c7f"},
+    {"name": "Newcastle", "lat": 54.9783, "lon": -1.6178, "radius_miles": 4.9, "accent": "#8d6f1f"},
+    {"name": "Glasgow", "lat": 55.8642, "lon": -4.2518, "radius_miles": 6.2, "accent": "#2f7c7f"},
+    {"name": "Edinburgh", "lat": 55.9533, "lon": -3.1883, "radius_miles": 5.0, "accent": "#7b3f69"},
+    {"name": "Cardiff", "lat": 51.4816, "lon": -3.1791, "radius_miles": 4.8, "accent": "#5f5a9b"},
+    {"name": "Belfast", "lat": 54.5973, "lon": -5.9301, "radius_miles": 5.2, "accent": "#3f6b6f"},
+    {"name": "Oxford", "lat": 51.7520, "lon": -1.2577, "radius_miles": 3.7, "accent": "#7a5a2a"},
+    {"name": "Harrogate", "lat": 53.9921, "lon": -1.5418, "radius_miles": 3.3, "accent": "#4c6b9a"},
+]
+
+NATION_ORDER = ["england", "scotland", "wales", "northern_ireland"]
+
+
 COUNTY_WORDS = {
     "greater manchester",
     "cheshire",
@@ -1531,6 +1551,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "lat": row["latitude"],
                 "lon": row["longitude"],
                 "postcode": row["postcode"],
+                "nation": str(row.get("nation") or "england").strip().lower(),
                 "gtd": row["gtd_managed"],
                 "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
                 "affiliated_group": row.get("affiliated_group_name", ""),
@@ -1758,6 +1779,58 @@ body {{
   border-color: rgba(15, 94, 156, 0.28);
   background: rgba(15, 94, 156, 0.09);
 }}
+.overlay-action-button {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(15, 94, 156, 0.04);
+  color: var(--ink);
+  min-height: 40px;
+  width: 100%;
+}}
+.overlay-action-button.is-active {{
+  border-color: rgba(15, 94, 156, 0.28);
+  background: rgba(15, 94, 156, 0.09);
+}}
+.overlay-action-button:disabled {{
+  opacity: 0.46;
+  cursor: default;
+}}
+.circle-sample-controls {{
+  display: grid;
+  gap: 8px;
+}}
+.circle-sample-actions {{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}}
+.circle-radius-control {{
+  display: grid;
+  gap: 6px;
+}}
+.circle-radius-control[hidden] {{
+  display: none !important;
+}}
+.circle-radius-label {{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}}
+.circle-radius-label span:last-child {{
+  color: rgba(26, 28, 26, 0.68);
+}}
+.circle-radius-control input[type="range"] {{
+  width: 100%;
+}}
 .check-toggle {{
   justify-content: space-between;
 }}
@@ -1929,11 +2002,13 @@ body {{
 .map-stage.is-collapsed #area-overlay-control {{
   grid-template-columns: 1fr;
 }}
-.map-stage.is-collapsed .overlay-toggle-label {{
+.map-stage.is-collapsed .overlay-toggle-label,
+.map-stage.is-collapsed .overlay-action-button {{
   justify-content: center;
   padding-inline: 0;
 }}
-.map-stage.is-collapsed .overlay-toggle-label > span {{
+.map-stage.is-collapsed .overlay-toggle-label > span,
+.map-stage.is-collapsed .overlay-action-button > span {{
   display: none;
 }}
 .map-stage.is-collapsed .overlay-toggle-icon {{
@@ -2277,6 +2352,114 @@ body {{
 .comparison-delta.tone-missing {{
   color: #7d838a;
 }}
+.place-benchmark-section {{
+  display: grid;
+  gap: 12px;
+}}
+.place-benchmark-block {{
+  display: grid;
+  gap: 6px;
+}}
+.place-benchmark-subheading {{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.1;
+}}
+.place-benchmark-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}}
+.place-benchmark-card {{
+  border-top-width: 4px;
+  display: grid;
+  gap: 6px;
+  padding: 9px 11px;
+}}
+.place-benchmark-header {{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+}}
+.place-benchmark-card h3 {{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.12;
+}}
+.place-benchmark-counts {{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.05;
+}}
+.place-benchmark-counts span {{
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}}
+.place-benchmark-counts small {{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(26, 28, 26, 0.78);
+}}
+.place-benchmark-count-divider {{
+  color: rgba(26, 28, 26, 0.32);
+  font-size: 18px;
+  font-weight: 700;
+}}
+.place-benchmark-stats {{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}}
+.place-benchmark-stat {{
+  border: 1px solid rgba(26, 28, 26, 0.10);
+  border-radius: 10px;
+  padding: 7px 9px 8px;
+  background: rgba(255,255,255,0.74);
+  min-width: 0;
+}}
+.place-benchmark-stat.is-active {{
+  border-color: rgba(15, 94, 156, 0.30);
+  box-shadow: inset 0 0 0 2px rgba(15, 94, 156, 0.10);
+  background: rgba(240, 247, 255, 0.96);
+}}
+.place-benchmark-stat.is-wide {{
+  grid-column: 1 / -1;
+}}
+.place-benchmark-stat-label {{
+  display: block;
+  margin-bottom: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(26, 28, 26, 0.72);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}}
+.place-benchmark-stat-value {{
+  display: block;
+  font-size: 28px;
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}}
+.place-benchmark-stat-value.tone-good {{
+  color: #1f7a3f;
+}}
+.place-benchmark-stat-value.tone-mid {{
+  color: #9d6a00;
+}}
+.place-benchmark-stat-value.tone-bad {{
+  color: #b23322;
+}}
+.place-benchmark-stat-value.tone-missing {{
+  color: #7d838a;
+}}
 @media (max-width: 960px) {{
   .page {{
     grid-template-rows: minmax(100vh, 100dvh) auto;
@@ -2311,6 +2494,10 @@ body {{
   .comparison-row {{
     grid-template-columns: 1fr;
     gap: 6px;
+  }}
+  .place-benchmark-header {{
+    display: grid;
+    gap: 4px;
   }}
   .treemap-mode-control .check-toggle {{
     width: 100%;
@@ -2426,7 +2613,21 @@ body {{
           <label id="population-overlay-control" class="overlay-toggle-label" title="An estimated population / affected-people view. This is a rough catchment proxy, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span><span class="overlay-toggle-icon">P</span></label>
           <label id="deprivation-overlay-control" class="overlay-toggle-label" title="Official 2025 deprivation deciles for the current catchment subset, shown by 2021 LSOA polygon."><input type="checkbox" id="deprivation-toggle"><span>Deprivation</span><span class="overlay-toggle-icon">D</span></label>
         </div>
+        <div class="circle-sample-controls">
+          <div class="circle-sample-actions">
+            <label class="overlay-toggle-label is-active" id="city-circles-control" title="Show the predefined UK city sample circles used in the benchmark panel.">
+              <input type="checkbox" id="city-circles-toggle" checked><span>City circles</span><span class="overlay-toggle-icon">C</span>
+            </label>
+            <button type="button" id="sample-circle-button" class="overlay-action-button" title="Click, then click the map to place a custom sample circle."><span>Place sample</span><span class="overlay-toggle-icon">S</span></button>
+            <button type="button" id="clear-sample-circle-button" class="overlay-action-button" title="Remove the current custom sample circle."><span>Clear sample</span><span class="overlay-toggle-icon">X</span></button>
+          </div>
+          <label class="circle-radius-control" for="sample-circle-radius" hidden>
+            <span class="circle-radius-label"><span>Sample radius</span><span id="sample-circle-radius-label">6 miles</span></span>
+            <input type="range" id="sample-circle-radius" min="2" max="20" step="0.5" value="6">
+          </label>
+        </div>
         <p id="area-overlay-tip" class="hint"></p>
+        <p id="sample-circle-note" class="hint"></p>
       </div>
       <div class="management-group">
         <h2>Management</h2>
@@ -2541,6 +2742,22 @@ body {{
       </div>
       <p class="chart-note">This uses a fixed-scale grouped strip-treemap rather than re-squarifying each frame, so practice blocks mostly grow and shrink in place. Block area is registered patients in the chosen year, on the same patient-to-pixel scale for all years; colour and score label use the currently selected metric. Independent / other is split into Google review-score bands so better and worse destinations can be compared. The small strip-chart below shows the whole-dataset registered-patient total over the same years, alongside the dataset-wide average Google review score by year. Reviews appear to improve slightly across the Manchester dataset since 2021/2022 despite the rapidly growing population.</p>
     </section>
+    <section class="panel comparison-panel place-benchmark-section">
+      <h2 id="place-benchmark-heading">Nation and City Benchmarks</h2>
+      <p id="place-benchmark-note" class="hint"></p>
+      <div class="place-benchmark-block">
+        <div class="panel-heading-row">
+          <h3 id="nation-benchmark-heading" class="place-benchmark-subheading">Nations</h3>
+        </div>
+        <div id="nation-benchmark-grid" class="place-benchmark-grid nation-grid"></div>
+      </div>
+      <div class="place-benchmark-block">
+        <div class="panel-heading-row">
+          <h3 id="city-benchmark-heading" class="place-benchmark-subheading">UK city circles</h3>
+        </div>
+        <div id="city-benchmark-grid" class="place-benchmark-grid"></div>
+      </div>
+    </section>
     <section class="panel comparison-panel">
       <h2>Conclusions</h2>
       <p>This page suggests GTD is the weakest-performing management group in this catchment, with New Bank sitting at or near the bottom even within the deprived groups it belongs to. On both public reviews and GP Patient Survey measures, GTD has too many poor-performing practices relative to the wider sample.</p>
@@ -2559,6 +2776,12 @@ body {{
 <script>
 const rows = {json.dumps(markers)};
 const nationalSupplementals = Array.isArray(window.NATIONAL_PRACTICE_SUPPLEMENTALS) ? window.NATIONAL_PRACTICE_SUPPLEMENTALS : [];
+const nationOrder = {json.dumps(NATION_ORDER)};
+const cityCatchments = {json.dumps(CITY_CATCHMENTS)};
+const northSouthDivide = {{
+  west: {{ lat: 51.62, lon: -3.05 }},
+  east: {{ lat: 52.98, lon: 0.52 }},
+}};
 const gtdGoogleTimeseries = {json.dumps(gtd_google_timeseries)};
 const gtdSurveyTimeseries = {json.dumps(gtd_survey_timeseries)};
 const patientCountsByYear = {json.dumps(patient_counts_by_year)};
@@ -2588,6 +2811,8 @@ const dataBbox = (() => {{
 const map = L.map('map').setView([{center_lat:.6f}, {center_lon:.6f}], 11);
 const markerLayer = L.layerGroup().addTo(map);
 const nationalMarkerLayer = L.layerGroup().addTo(map);
+const cityCircleLayer = L.layerGroup().addTo(map);
+const sampleCircleLayer = L.layerGroup().addTo(map);
 let voronoiLayer = null;
 let deprivationLayer = null;
 const nationalPane = map.createPane('nationalSupplementals');
@@ -2612,6 +2837,10 @@ let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
 let nationalDeprivationUsePopulation = false;
 let completionScatterScope = 'regional';
+let showCityCircles = true;
+let sampleCircleArmed = false;
+let sampleCircleRadiusMiles = 6;
+let sampleCircleCenter = null;
 const GTD_MEAN_COLOR = '#b23322';
 
 const metricConfigs = {{
@@ -2853,9 +3082,9 @@ function gapAxisInfo() {{
 
 function gapDescription() {{
   if (activeGapMode === 'normalized') {{
-    return 'Normalised mode: the raw Google-minus-survey gap is converted to a cohort z-score, so positive means Google is higher than survey by more than is typical on this map.';
+    return 'Normalised mode: the raw Google-minus-survey gap is converted to a cohort z-score. Positive means Google reviews sit above the survey-equivalent score; negative means the survey-equivalent score sits above Google, which this view treats as worse.';
   }}
-  return 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google; positive means Google is higher than the survey-equivalent score, negative means lower.';
+  return 'Indicator only: survey overall-good % is scaled to 0-5 and compared with Google. Positive means Google reviews are higher than the survey-equivalent score; negative means the survey-equivalent score is higher than Google, which this view treats as worse.';
 }}
 
 const gtdAveragePatientCountByYear = Object.fromEntries(
@@ -3626,6 +3855,14 @@ function median(values) {{
   return (sorted[middle - 1] + sorted[middle]) / 2;
 }}
 
+function escapeHtml(value) {{
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}}
+
 function distanceMiles(lat1, lon1, lat2, lon2) {{
   const toRadians = (degrees) => (degrees * Math.PI) / 180;
   const earthRadiusMiles = 3958.8;
@@ -3635,6 +3872,365 @@ function distanceMiles(lat1, lon1, lat2, lon2) {{
     Math.sin(dLat / 2) ** 2 +
     Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.sin(dLon / 2) ** 2;
   return 2 * earthRadiusMiles * Math.asin(Math.sqrt(a));
+}}
+
+function displayNationName(nation) {{
+  const normalized = String(nation || '').trim().toLowerCase();
+  if (normalized === 'england') return 'England';
+  if (normalized === 'scotland') return 'Scotland';
+  if (normalized === 'wales') return 'Wales';
+  if (normalized === 'northern_ireland') return 'Northern Ireland';
+  return normalized ? normalized.replace(/_/g, ' ').replace(/\\b\\w/g, (match) => match.toUpperCase()) : 'Unknown';
+}}
+
+function cityCatchmentForRow(row) {{
+  const lat = Number(row?.lat);
+  const lon = Number(row?.lon);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  let best = null;
+  cityCatchments.forEach((city) => {{
+    const distance = distanceMiles(lat, lon, Number(city.lat), Number(city.lon));
+    if (distance > Number(city.radius_miles)) return;
+    if (!best || distance < best.distance) {{
+      best = {{ city, distance }};
+    }}
+  }});
+  return best ? best.city : null;
+}}
+
+function rowsWithinCircle(rowsSubset, lat, lon, radiusMiles) {{
+  return rowsSubset.filter((row) => {{
+    const rowLat = Number(row?.lat);
+    const rowLon = Number(row?.lon);
+    if (!Number.isFinite(rowLat) || !Number.isFinite(rowLon)) return false;
+    return distanceMiles(lat, lon, rowLat, rowLon) <= radiusMiles;
+  }});
+}}
+
+function northSouthBucketForRow(row) {{
+  const lat = Number(row?.lat);
+  const lon = Number(row?.lon);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  const lonSpan = northSouthDivide.east.lon - northSouthDivide.west.lon;
+  if (!Number.isFinite(lonSpan) || lonSpan === 0) return null;
+  const t = (lon - northSouthDivide.west.lon) / lonSpan;
+  const boundaryLat = northSouthDivide.west.lat + (t * (northSouthDivide.east.lat - northSouthDivide.west.lat));
+  return lat >= boundaryLat ? 'North' : 'South';
+}}
+
+const allKnownRows = rows.concat(nationalSupplementals);
+const totalKnownGoogleReviews = allKnownRows.reduce((sum, row) => {{
+  const count = numericOrNull(row?.google_count);
+  return sum + (count !== null && count > 0 ? count : 0);
+}}, 0);
+const cityRowsByCatchment = (() => {{
+  const grouped = new Map(cityCatchments.map((city) => [city.name, []]));
+  allKnownRows.forEach((row) => {{
+    const city = cityCatchmentForRow(row);
+    if (city && grouped.has(city.name)) {{
+      grouped.get(city.name).push(row);
+    }}
+  }});
+  return grouped;
+}})();
+const northSouthRows = (() => {{
+  const grouped = new Map([['North', []], ['South', []]]);
+  allKnownRows.forEach((row) => {{
+    const bucket = northSouthBucketForRow(row);
+    if (bucket && grouped.has(bucket)) {{
+      grouped.get(bucket).push(row);
+    }}
+  }});
+  return grouped;
+}})();
+const regionGoogleSortedValues = allKnownRows
+  .map((row) => numericOrNull(row.google_score))
+  .filter((value) => value !== null && Number.isFinite(value))
+  .sort((left, right) => left - right);
+const regionSurveySortedValues = allKnownRows
+  .map((row) => numericOrNull(row.survey_overall_good_percent))
+  .filter((value) => value !== null && Number.isFinite(value))
+  .sort((left, right) => left - right);
+const globalGoogleAverage = mean(regionGoogleSortedValues);
+const globalSurveyAverage = mean(regionSurveySortedValues);
+
+function positivePatientCount(row) {{
+  const patients = numericOrNull(row?.registered_patient_count);
+  return patients !== null && patients > 0 ? patients : null;
+}}
+
+function regionAverage(rowsSubset, extractor) {{
+  const values = rowsSubset
+    .map((row) => extractor(row))
+    .filter((value) => value !== null && Number.isFinite(value));
+  return {{
+    value: values.length ? mean(values) : null,
+    count: values.length,
+  }};
+}}
+
+function formatPatientTotal(value) {{
+  if (value === null || !Number.isFinite(value) || value <= 0) return '?';
+  if (value >= 1000000) {{
+    const millions = value / 1000000;
+    return `${{millions >= 10 ? millions.toFixed(0) : millions.toFixed(1)}}m`;
+  }}
+  if (value >= 1000) {{
+    const thousands = value / 1000;
+    return `${{thousands >= 100 ? thousands.toFixed(0) : thousands.toFixed(1)}}k`;
+  }}
+  return Math.round(value).toLocaleString('en-GB');
+}}
+
+function formatAverageDelta(metricName, value) {{
+  if (value === null || !Number.isFinite(value)) return null;
+  const globalAverage = metricName === 'google' ? globalGoogleAverage : globalSurveyAverage;
+  if (globalAverage === null || !Number.isFinite(globalAverage)) return null;
+  const delta = value - globalAverage;
+  const tolerance = metricName === 'google' ? 0.04 : 1.5;
+  if (Math.abs(delta) <= tolerance) return 'around dataset avg';
+  if (metricName === 'google') {{
+    return `${{Math.abs(delta).toFixed(2)}} ${{delta > 0 ? 'above' : 'below'}} dataset avg`;
+  }}
+  return `${{Math.abs(delta).toFixed(1)}}pp ${{delta > 0 ? 'above' : 'below'}} dataset avg`;
+}}
+
+function datasetToneForAverage(metricName, value) {{
+  if (value === null || !Number.isFinite(value)) return 'tone-missing';
+  const globalAverage = metricName === 'google' ? globalGoogleAverage : globalSurveyAverage;
+  if (globalAverage === null || !Number.isFinite(globalAverage)) return 'tone-missing';
+  const delta = value - globalAverage;
+  const tolerance = metricName === 'google' ? 0.04 : 1.5;
+  if (Math.abs(delta) <= tolerance) return 'tone-mid';
+  return delta > 0 ? 'tone-good' : 'tone-bad';
+}}
+
+function globalGapAverage() {{
+  const values = allKnownRows
+    .map((row) => gapValue(row, {{ suppressSmall: false }}))
+    .filter((value) => value !== null && Number.isFinite(value));
+  return values.length ? mean(values) : null;
+}}
+
+function formatGapDeltaFromAverage(value) {{
+  if (value === null || !Number.isFinite(value)) return '?';
+  return activeGapMode === 'normalized'
+    ? `${{value >= 0 ? '+' : ''}}${{value.toFixed(2)}}z`
+    : `${{value >= 0 ? '+' : ''}}${{value.toFixed(2)}}`;
+}}
+
+function gapDeltaTone(delta) {{
+  if (delta === null || !Number.isFinite(delta)) return 'tone-missing';
+  const tolerance = activeGapMode === 'normalized' ? 0.08 : 0.05;
+  if (Math.abs(delta) <= tolerance) return 'tone-mid';
+  return delta > 0 ? 'tone-good' : 'tone-bad';
+}}
+
+function regionCardStats(rowsSubset) {{
+  const google = regionAverage(rowsSubset, (row) => numericOrNull(row.google_score));
+  const survey = regionAverage(rowsSubset, (row) => numericOrNull(row.survey_overall_good_percent));
+  const gap = regionAverage(rowsSubset, (row) => gapValue(row, {{ suppressSmall: false }}));
+  const patientTotal = rowsSubset.reduce((sum, row) => sum + (positivePatientCount(row) || 0), 0);
+  return {{
+    practiceCount: rowsSubset.length,
+    patientTotal: patientTotal > 0 ? patientTotal : null,
+    google,
+    survey,
+    gap,
+  }};
+}}
+
+function regionCountsMarkup(stats) {{
+  return `
+    <div class="place-benchmark-counts">
+      <span>${{formatPatientTotal(stats.patientTotal)}} <small>&#128101;</small></span>
+      <span class="place-benchmark-count-divider">/</span>
+      <span>${{stats.practiceCount.toLocaleString('en-GB')}} <small>&#127973;</small></span>
+    </div>
+  `;
+}}
+
+function regionStatBoxMarkup(label, value, subtle, isActive, toneClass, extraClass = '') {{
+  const title = subtle ? ` title="${{escapeHtml(String(subtle))}}"` : '';
+  return `
+    <div class="place-benchmark-stat${{isActive ? ' is-active' : ''}}${{extraClass ? ` ${{extraClass}}` : ''}}"${{title}}>
+      <span class="place-benchmark-stat-label">${{label}}</span>
+      <span class="place-benchmark-stat-value ${{toneClass || 'tone-missing'}}">${{value}}</span>
+    </div>
+  `;
+}}
+
+function regionCardMarkup(title, rowsSubset, accent) {{
+  const stats = regionCardStats(rowsSubset);
+  const googleValue = stats.google.value === null ? '?' : stats.google.value.toFixed(2);
+  const surveyValue = stats.survey.value === null ? '?' : `${{stats.survey.value.toFixed(0)}}%`;
+  const googleTone = datasetToneForAverage('google', stats.google.value);
+  const surveyTone = datasetToneForAverage('survey', stats.survey.value);
+  const googleDelta = formatAverageDelta('google', stats.google.value);
+  const surveyDelta = formatAverageDelta('survey', stats.survey.value);
+  const googleSubtle = stats.google.count
+    ? `${{googleDelta || 'dataset avg unavailable'}} · ${{stats.google.count.toLocaleString('en-GB')}} scored`
+    : 'Google score not yet present';
+  const surveySubtle = stats.survey.count
+    ? `${{surveyDelta || 'dataset avg unavailable'}} · ${{stats.survey.count.toLocaleString('en-GB')}} scored`
+    : 'Survey score not yet present';
+  const isGoogleActive = activeMetric === 'google';
+  const isSurveyActive = activeMetric === 'survey';
+  if (activeMetric === 'gap') {{
+    const overallGapAverage = globalGapAverage();
+    const gapDelta = stats.gap.value === null || overallGapAverage === null ? null : stats.gap.value - overallGapAverage;
+    const gapSubtle = stats.gap.count
+      ? `Region avg: ${{metricConfigs.gap.averageLabel(stats.gap.value)}} · overall avg: ${{metricConfigs.gap.averageLabel(overallGapAverage)}} · ${{stats.gap.count.toLocaleString('en-GB')}} scored`
+      : 'Gap score not yet present';
+    return `
+      <article class="comparison-card place-benchmark-card" style="border-top-color:${{accent}};">
+        <div class="place-benchmark-header">
+          <h3>${{title}}</h3>
+          ${{regionCountsMarkup(stats)}}
+        </div>
+        <div class="place-benchmark-stats">
+          ${{regionStatBoxMarkup('Gap vs avg', formatGapDeltaFromAverage(gapDelta), gapSubtle, true, gapDeltaTone(gapDelta), 'is-wide')}}
+        </div>
+      </article>
+    `;
+  }}
+  return `
+    <article class="comparison-card place-benchmark-card" style="border-top-color:${{accent}};">
+      <div class="place-benchmark-header">
+        <h3>${{title}}</h3>
+        ${{regionCountsMarkup(stats)}}
+      </div>
+      <div class="place-benchmark-stats">
+        ${{regionStatBoxMarkup('Google', googleValue, googleSubtle, isGoogleActive, googleTone)}}
+        ${{regionStatBoxMarkup('Survey', surveyValue, surveySubtle, isSurveyActive, surveyTone)}}
+      </div>
+    </article>
+  `;
+}}
+
+function renderCityCircles() {{
+  cityCircleLayer.clearLayers();
+  if (!showCityCircles) return;
+  cityCatchments.forEach((city) => {{
+    const subset = cityRowsByCatchment.get(city.name) || [];
+    if (!subset.length) return;
+    const circle = L.circle([city.lat, city.lon], {{
+      radius: Number(city.radius_miles) * 1609.344,
+      color: city.accent,
+      weight: 2,
+      opacity: 0.65,
+      fillColor: city.accent,
+      fillOpacity: 0.04,
+      dashArray: '6 6',
+      interactive: false,
+    }});
+    circle.bindTooltip(`${{city.name}} · ${{subset.length}} practices`, {{ sticky: false, opacity: 0.92 }});
+    circle.addTo(cityCircleLayer);
+  }});
+}}
+
+function renderSampleCircle() {{
+  sampleCircleLayer.clearLayers();
+  if (!sampleCircleCenter) return;
+  const circle = L.circle([sampleCircleCenter.lat, sampleCircleCenter.lon], {{
+    radius: Number(sampleCircleRadiusMiles) * 1609.344,
+    color: '#161816',
+    weight: 2.2,
+    opacity: 0.9,
+    fillColor: '#161816',
+    fillOpacity: 0.05,
+    dashArray: '10 6',
+  }});
+  circle.bindTooltip(`Custom sample · ${{sampleCircleRadiusMiles.toFixed(1)}} miles`, {{ sticky: false, opacity: 0.95 }});
+  circle.addTo(sampleCircleLayer);
+}}
+
+function updateSampleCircleControls() {{
+  const sampleButton = document.getElementById('sample-circle-button');
+  const clearButton = document.getElementById('clear-sample-circle-button');
+  const note = document.getElementById('sample-circle-note');
+  const radiusLabel = document.getElementById('sample-circle-radius-label');
+  const radiusControl = document.querySelector('.circle-radius-control');
+  const cityToggleLabel = document.getElementById('city-circles-control');
+  if (sampleButton) sampleButton.classList.toggle('is-active', sampleCircleArmed);
+  if (clearButton) clearButton.disabled = !sampleCircleCenter;
+  if (radiusControl) radiusControl.hidden = !sampleCircleCenter;
+  if (radiusLabel) radiusLabel.textContent = `${{sampleCircleRadiusMiles.toFixed(sampleCircleRadiusMiles % 1 === 0 ? 0 : 1)}} miles`;
+  if (cityToggleLabel) cityToggleLabel.classList.toggle('is-active', showCityCircles);
+  if (note) {{
+    note.textContent = sampleCircleArmed
+      ? 'Click on the map to place the sample.'
+      : sampleCircleCenter
+        ? 'Drag the radius slider to resize the current sample.'
+        : '';
+  }}
+}}
+
+function googleCoverageRatio(rowsSubset) {{
+  if (!rowsSubset.length) return 0;
+  const covered = rowsSubset.filter((row) => numericOrNull(row.google_score) !== null).length;
+  return covered / rowsSubset.length;
+}}
+
+function renderPlaceBenchmarks() {{
+  const heading = document.getElementById('place-benchmark-heading');
+  const note = document.getElementById('place-benchmark-note');
+  const nationHeading = document.getElementById('nation-benchmark-heading');
+  const cityHeading = document.getElementById('city-benchmark-heading');
+  const nationGrid = document.getElementById('nation-benchmark-grid');
+  const cityGrid = document.getElementById('city-benchmark-grid');
+  if (!heading || !note || !nationGrid || !cityGrid) return;
+
+  heading.textContent = 'Nation and City Benchmarks';
+  if (nationHeading) nationHeading.textContent = 'Nations';
+  if (cityHeading) cityHeading.textContent = 'UK city circles';
+  const sampleRows = sampleCircleCenter
+    ? rowsWithinCircle(allKnownRows, sampleCircleCenter.lat, sampleCircleCenter.lon, sampleCircleRadiusMiles)
+    : [];
+
+  const nationCards = nationOrder
+    .map((nation) => {{
+      const subset = allKnownRows.filter((row) => String(row?.nation || '').trim().toLowerCase() === nation);
+      if (!subset.length) return '';
+      return regionCardMarkup(
+        displayNationName(nation),
+        subset,
+        nation === 'england' ? '#8d3c17' : nation === 'scotland' ? '#2f6fa5' : nation === 'wales' ? '#3f7d4c' : '#6b4f9d'
+      );
+    }})
+    .filter(Boolean)
+    .join('');
+
+  const cityCards = cityCatchments
+    .map((city) => {{
+      const subset = cityRowsByCatchment.get(city.name) || [];
+      if (!subset.length) return '';
+      return regionCardMarkup(city.name, subset, city.accent);
+    }})
+    .concat(
+      [
+        ['North', '#315f8f'],
+        ['South', '#8c5a2a'],
+      ].map(([label, accent]) => {{
+        const subset = northSouthRows.get(label) || [];
+        if (!subset.length) return '';
+        return regionCardMarkup(label, subset, accent);
+      }})
+    )
+    .filter(Boolean)
+    .join('');
+
+  const sampleCard = sampleRows.length
+    ? regionCardMarkup(
+        `Custom sample · ${{sampleCircleRadiusMiles.toFixed(sampleCircleRadiusMiles % 1 === 0 ? 0 : 1)}} mile radius`,
+        sampleRows,
+        '#161816'
+      )
+    : '';
+
+  nationGrid.innerHTML = nationCards || '<p class="hint">No nation summaries are available yet.</p>';
+  cityGrid.innerHTML = (sampleCard + cityCards) || '<p class="hint">No city-circle summaries are available yet.</p>';
+  note.textContent = `${{allKnownRows.length.toLocaleString('en-GB')}} practices · ${{totalKnownGoogleReviews.toLocaleString('en-GB')}} Google reviews loaded overall.${{sampleRows.length ? ` Custom sample: ${{sampleRows.length.toLocaleString('en-GB')}} practices.` : ''}}`;
 }}
 
 function metricValues(rowsSubset, metricName, extractor = null) {{
@@ -5801,6 +6397,9 @@ function rerenderAll() {{
   clearOverlayLayers();
   renderMarkers();
   renderNationalSupplementals();
+  renderCityCircles();
+  renderSampleCircle();
+  updateSampleCircleControls();
   if (activeAreaOverlay === 'population') {{
     renderVoronoi();
   }} else if (activeAreaOverlay === 'deprivation') {{
@@ -5812,6 +6411,7 @@ function rerenderAll() {{
   renderNationalDeprivationChart();
   renderPatientChangeChart();
   renderPatientTreemap();
+  renderPlaceBenchmarks();
   renderComparisons();
 }}
 
@@ -5883,6 +6483,32 @@ document.getElementById('national-deprivation-population-toggle').addEventListen
   renderNationalDeprivationChart();
 }});
 
+document.getElementById('city-circles-toggle').addEventListener('change', (event) => {{
+  showCityCircles = event.target.checked;
+  renderCityCircles();
+  updateSampleCircleControls();
+}});
+
+document.getElementById('sample-circle-button').addEventListener('click', () => {{
+  sampleCircleArmed = !sampleCircleArmed;
+  updateSampleCircleControls();
+}});
+
+document.getElementById('clear-sample-circle-button').addEventListener('click', () => {{
+  sampleCircleCenter = null;
+  sampleCircleArmed = false;
+  renderSampleCircle();
+  renderPlaceBenchmarks();
+  updateSampleCircleControls();
+}});
+
+document.getElementById('sample-circle-radius').addEventListener('input', (event) => {{
+  sampleCircleRadiusMiles = Number(event.target.value);
+  renderSampleCircle();
+  renderPlaceBenchmarks();
+  updateSampleCircleControls();
+}});
+
 const scoreSourceControl = document.getElementById('score-source-control');
 const scoreSourceSpacer = document.getElementById('score-source-control-spacer');
 const legendContainer = document.querySelector('.legend');
@@ -5942,6 +6568,18 @@ map.on('moveend', () => {{
     }}
     renderVoronoi();
   }}
+}});
+
+map.on('click', (event) => {{
+  if (!sampleCircleArmed) return;
+  sampleCircleCenter = {{
+    lat: Number(event.latlng.lat),
+    lon: Number(event.latlng.lng),
+  }};
+  sampleCircleArmed = false;
+  renderSampleCircle();
+  renderPlaceBenchmarks();
+  updateSampleCircleControls();
 }});
 
 try {{

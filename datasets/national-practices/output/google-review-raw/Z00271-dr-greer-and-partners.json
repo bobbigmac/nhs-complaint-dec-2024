@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. GREER & PARTNERS",
+  "canonical_code": "Z00271",
+  "postcode": "BT23 4AS",
+  "query_used": "DR. GREER & PARTNERS BT23 4AS",
+  "google_maps_title": "Dr A Greer - Dundrum & Clough Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+A+Greer+-+Dundrum+%26+Clough+Surgery/@54.2574789,-6.4570024,10z/data=!4m12!1m2!2m1!1sDR.+GREER+%26+PARTNERS+BT23+4AS!3m8!1s0x48613d07985ac60d:0x1b58c2a8aa1a211a!8m2!3d54.2574789!4d-5.8472612!9m1!1b1!15sCh1EUi4gR1JFRVIgJiBQQVJUTkVSUyBCVDIzIDRBU5IBBmRvY3RvcuABAA!16s%2Fg%2F11c6y_975n?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774162444022,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48613d07985ac60d%3A0x1b58c2a8aa1a211a!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sVoW_afT4EfCqhbIP14fnoQI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURRLXRUZXpnRRAB\",[\"0x0:0x1b58c2a8aa1a211a\",null,1501012391303000,1501012391303000,[null,null,[\"https://www.google.com/maps/contrib/113894113433080250650/reviews?hl\\u003den\"],null,null,[\"sarah heaney\",\"https://lh3.googleusercontent.com/a-/ALV-UjVuDAK2O94_Cg5_V0rCy9SVEyC115Fws9VcHX2cjGHO_mS6ZMPzpA\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/113894113433080250650?hl\\u003den\"],\"113894113433080250650\",null,39,47,null,[1,5,1],5,[\"Local Guide · 39 reviews\",null,null,null,null,[null,\"0ahUKEwjg8-iR9rKTAxXmPXsEHVrFMQwQ7LoGCAMoAA\"]]]],null,\"8 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Been my doctors from I was a baby. All the doctors and nurses are amazing\",null,[0,73]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRLXRUZXpnRRAB!2m1!1s0x0:0x1b58c2a8aa1a211a!3m1!1s2@1:CIHM0ogKEICAgIDQ-tTezgE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURRLXRUZXpnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURRLXRUZXpnRRItChZDSUhNMG9nS0VJQ0FnSURRLXRUZUxnEhNDZ3dJcDhQZXl3VVF3Tk85a0FFGi4KF0NJSE0wb2dLRUlDQWdJRFEtdFRlcmdFEhNDZ3dJcDhQZXl3VVF3Tk85a0FFIhIJAAAAAAAAAAARGiEaqqjCWBsqE0Nnd0lwOFBleXdVUXdOTzlrQUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjg8-iR9rKTAxXmPXsEHVrFMQwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjg8-iR9rKTAxXmPXsEHVrFMQwQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

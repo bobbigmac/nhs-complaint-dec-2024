@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR M SALEEM",
+  "canonical_code": "S46447",
+  "postcode": "G40 2DA",
+  "query_used": "DR M SALEEM G40 2DA",
+  "google_maps_title": "Dr M Saleem Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+M+Saleem+Practice/@55.8524631,-4.2307763,17z/data=!3m1!5s0x488846adfe264575:0xa973d906ebd21533!4m8!3m7!1s0x488846ae00e14edd:0x548ae0772a2921a9!8m2!3d55.8524601!4d-4.228196!9m1!1b1!16s%2Fg%2F1tcxzdg4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774161948255,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488846ae00e14edd%3A0x548ae0772a2921a9!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sVoW_afT4EfCqhbIP14fnoQI!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUMxc3BuVVhREAE\",[\"0x0:0x548ae0772a2921a9\",null,1703636221948490,1703636221948490,[null,null,[\"https://www.google.com/maps/contrib/112419362705451028322/reviews?hl\\u003den\"],null,null,[\"Michelle Wilmot\",\"https://lh3.googleusercontent.com/a-/ALV-UjVtNmsS8DjSmMoWe724NreH3SUi3_Tk_EhydKwomTQQMA7zeSG0\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/112419362705451028322?hl\\u003den\"],\"112419362705451028322\",null,15,10,null,[1,4,1],3,[\"Local Guide · 15 reviews\",null,null,null,null,[null,\"0ahUKEwinp7-l9LKTAxWtAGMBHfYMMmkQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Doctor Saleem is the most kind and caring doctor I’ve ever  met.He had so much time to offer .\",null,[0,94]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxc3BuVVhREAE!2m1!1s0x0:0x548ae0772a2921a9!3m1!1s2@1:CIHM0ogKEICAgIC1spnUXQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUMxc3BuVVhREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUMxc3BuVVhREi4KF0NJSE0wb2dLRUlDQWdJQzFzcG5VM1FFEhNDZ3dJX2RtdHJBWVFrSjZqeEFNGi0KFkNJSE0wb2dLRUlDQWdJQzFzcG5VUFESE0Nnd0lfZG10ckFZUWtKNmp4QU0iEgkAAAAAAAAAABGpISkqd-CKVCoTQ2d3SV9kbXRyQVlRa0o2anhBTQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwinp7-l9LKTAxWtAGMBHfYMMmkQoykIBCgB\"],null,[null,[[1,1]]]],\"0ahUKEwinp7-l9LKTAxWtAGMBHfYMMmkQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

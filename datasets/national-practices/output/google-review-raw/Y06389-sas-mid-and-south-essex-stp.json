@@ -1,0 +1,26 @@
+{
+  "practice_name": "SAS MID AND SOUTH ESSEX STP",
+  "canonical_code": "Y06389",
+  "postcode": "SS2 6BB",
+  "query_used": "SAS MID AND SOUTH ESSEX STP SS2 6BB",
+  "google_maps_title": "Mid and South Essex Hospitals Charity",
+  "google_maps_url": "https://www.google.com/maps/place/Mid+and+South+Essex+Hospitals+Charity/@51.5538466,0.6851559,17z/data=!3m1!5s0x47d8d9a06ee20c4f:0xeed2c67def45b575!4m12!1m2!2m1!1sSAS+MID+AND+SOUTH+ESSEX+STP+SS2+6BB!3m8!1s0x47d8d9a06c000001:0xd9212cb243ab07a3!8m2!3d51.5538272!4d0.6877395!9m1!1b1!15sCiNTQVMgTUlEIEFORCBTT1VUSCBFU1NFWCBTVFAgU1MyIDZCQpIBB2NoYXJpdHngAQA!16s%2Fg%2F11n5trhk1k?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 487,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774153579321,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d8d9a06c000001%3A0xd9212cb243ab07a3!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sxGq_afW-NqzqhbIPlYH10QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNxaHMtdkRnEAE\",[\"0x0:0xd9212cb243ab07a3\",null,1622824947587545,1622824947587545,[null,null,[\"https://www.google.com/maps/contrib/109162225885558976661/reviews?hl\\u003den\"],null,null,[\"Patel Hinesha\",\"https://lh3.googleusercontent.com/a/ACg8ocLOU0fgA3Roqe5KZac9HQ-W1CamNCfGcfdLqFD4_hXyCkdmaWU\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/109162225885558976661?hl\\u003den\"],\"109162225885558976661\",null,31,23,null,[1,5,1],28,[\"Local Guide · 31 reviews\",null,null,null,null,[null,\"0ahUKEwjG-POO1bKTAxUHPHsEHdlTGgUQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxaHMtdkRnEAE!2m1!1s0x0:0xd9212cb243ab07a3!3m1!1s2@1:CIHM0ogKEICAgICqhs-vDg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNxaHMtdkRnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNxaHMtdkRnGi4KF0NJSE0wb2dLRUlDQWdJQ3Focy12amdFEhNDZ3dJODZfcGhRWVFxUE9VbUFJIhIJAAAAAAAAAAARowerQ7IsIdkqE0Nnd0k4Nl9waFFZUXFQT1VtQUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjG-POO1bKTAxUHPHsEHdlTGgUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjG-POO1bKTAxUHPHsEHdlTGgUQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
