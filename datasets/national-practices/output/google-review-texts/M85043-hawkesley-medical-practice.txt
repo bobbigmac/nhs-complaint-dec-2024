@@ -1,0 +1,93 @@
+Practice: HAWKESLEY MEDICAL PRACTICE
+Canonical code: M85043
+Postcode: B38 9TJ
+Google Maps title: Hawkesley Medical Practice
+Google rating: 3.9
+Google review count: 43
+Google Maps URL: https://www.google.com/maps/place/Hawkesley+Medical+Practice/@52.3953408,-1.9398433,17z/data=!4m8!3m7!1s0x4870be51d784379b:0xb29c5ae37576efd9!8m2!3d52.3953376!4d-1.937263!9m1!1b1!16s%2Fg%2F1tdn3js5?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 9
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/M85043-hawkesley-medical-practice.json
+
+Captured reviews
+================
+
+Author: Drako
+Date: 2 days ago
+Rating: 5 stars
+Great surgery, always very helpful.
+
+Author: رامین فیروز
+Date: a month ago
+Rating: 5 stars
+Dr. Hadian is very nice and kind. Overall, the doctors take good care of me. I am grateful to the team of doctors and I am speechless at all the kindness and efforts of the reception staff. Thank you.
+Practice response date: a month ago
+Practice response:
+Thank you for your feedback and the rating. We will ensure Dr Hadian receives your comments.
+
+Author: Pam Mccrave
+Date: 3 months ago
+Rating: 5 stars
+Ive been at this practice since I was 16.. I am now 55.. Dr Drever and his team are great. I have no complaints.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your positive response. We welcome your feedback and we will ensure this is passed onto Dr Drever. We are proud of our great practice team.
+
+Author: Chris Harwood
+Date: 7 months ago
+Rating: 5 stars
+Thank you for the 5 stars!
+Practice response date: 3 months ago
+Practice response:
+Thank you for the 5 stars!
+
+Author: Rosie
+Date: 10 months ago
+Rating: 1 star
+Been in today with seven Application form. Only four being processed. I made a complaint as six children and me have been trying for two weeks and been in twice. Told to go to another GP. Awful service very poor. A empty place been in twice and I know why. In my 45 years and worked for the NHS my self awful place. Senior Practitioner University of Birmingham 2003.
+Practice response date: 3 months ago
+Practice response:
+Unfortunately the remaining application forms were not completed correctly and therefore we were not able to process these. We feel that it's paramount to ensure our patients safety during the registration process. We did try to support you to complete them but you advised you registered at another practice.
+
+Author: Sipm
+Date: 11 months ago
+Rating: 1 star
+Just been in sadly awful don't want to help a 6 year old boy with Autism should have no stars.
+Practice response date: Edited 3 months ago
+Practice response:
+We aim to support and offer our service to our patients but unfortunately we are not an unlimited resource , during times with an increased demand for appointments we have to signpost to alternative services. I am sorry we were unable to help on this occasion.
+
+Author: Afraa Rawat
+Date: 11 months ago
+Rating: 2 stars
+Thank you for leaving your 2 star rating, please contact the practice so we can explore your reasons for this. We value your feedback and we would like to explore how we can make a positive change to your patient experience.
+Practice response date: 3 months ago
+Practice response:
+Thank you for leaving your 2 star rating, please contact the practice so we can explore your reasons for this. We value your feedback and we would like to explore how we can make a positive change to your patient experience.
+
+Author: Janet Jones-Cook
+Date: a year ago
+Rating: 5 stars
+Thank you for your 5 star rating! We enjoy receiving positive feedback as we are always trying to improve our patients experience of our service.
+Practice response date: 3 months ago
+Practice response:
+Thank you for your 5 star rating! We enjoy receiving positive feedback as we are always trying to improve our patients experience of our service.
+
+Author: You Suck
+Date: a year ago
+Rating: 5 stars
+Thanks 5 stars! We really appreciate the outstanding rating .
+Practice response date: 3 months ago
+Practice response:
+Thanks 5 stars! We really appreciate the outstanding rating .
+
+Author: C N
+Date: a year ago
+Rating: 5 stars
+Brilliant 5 stars, thank you for sharing your feedback.
+Practice response date: 3 months ago
+Practice response:
+Brilliant 5 stars, thank you for sharing your feedback.

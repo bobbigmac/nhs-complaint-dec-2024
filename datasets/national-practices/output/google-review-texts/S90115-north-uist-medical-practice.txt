@@ -1,0 +1,26 @@
+Practice: NORTH UIST MEDICAL PRACTICE
+Canonical code: S90115
+Postcode: HS6 5AE
+Google Maps title: North Uist Medical Practice
+Google rating: 5.0
+Google review count: 2
+Google Maps URL: https://www.google.com/maps/place/North+Uist+Medical+Practice/@57.6046943,-7.163261,17z/data=!4m8!3m7!1s0x488d0575c55024f9:0xf9670d199b6ced45!8m2!3d57.6046915!4d-7.1606807!9m1!1b1!16s%2Fg%2F1yh9twc9g?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S90115-north-uist-medical-practice.json
+
+Captured reviews
+================
+
+Author: Stephen McAuley
+Date: a year ago
+Rating: 5 stars
+While travelling I encountered a health issue. The practice fitted me in in just over an hour, the appointment was on time - to the minute, and they looked after me really well dispensing my prescription before I left. A great example of the NHS working as well as it can. Well done,and thank you, all the team at Lochmaddy.
+
+Author: Aaron Harris
+Date: 6 years ago
+Rating: 5 stars
+Really helpful staff, rang up on short notice and they managed to fit in seeing our 11 month old son whilst on holiday on North Uist.

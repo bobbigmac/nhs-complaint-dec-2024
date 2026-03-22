@@ -1,0 +1,26 @@
+{
+  "practice_name": "BALMORE SURGERY",
+  "canonical_code": "S43256",
+  "postcode": "G22 5AP",
+  "query_used": "BALMORE SURGERY G22 5AP",
+  "google_maps_title": "Balmore Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Balmore+Surgery/@55.8810637,-4.2571616,17z/data=!4m12!1m2!2m1!1sBALMORE+SURGERY+G22+5AP!3m8!1s0x4888455c310eb507:0x778b2a4a703e8190!8m2!3d55.8810589!4d-4.2545417!9m1!1b1!15sChdCQUxNT1JFIFNVUkdFUlkgRzIyIDVBUJIBGWZhbWlseV9wcmFjdGljZV9waHlzaWNpYW7gAQA!16s%2Fg%2F11l29578cn?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 63,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774116979189,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4888455c310eb507%3A0x778b2a4a703e8190!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sZNG-adzEK-7rhbIPtY7v4Qo!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT21Sb01IQjZhRWRDTmxOdFdsWkJZamhLWlZwWFVXYxAB\",[\"0x0:0x778b2a4a703e8190\",null,1760720573538970,1760720573538970,[null,null,[\"https://www.google.com/maps/contrib/115091234904065064869/reviews?hl\\u003den\"],null,null,[\"Ross Mck\",\"https://lh3.googleusercontent.com/a/ACg8ocJx5DR2t8bk-IptG4N_K_DVCrQJzqOr8fjReGJL7_lvMAxk\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/115091234904065064869?hl\\u003den\"],\"115091234904065064869\",null,4,0,null,[0,2,1],0,[\"4 reviews\",null,null,null,null,[null,\"0ahUKEwix4c3izLGTAxVSRoQGHQxlJpsQ7LoGCAMoAA\"]]]],null,\"5 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"The phone in system to book an appointment is something you would do back 1876 - I phoned 98 times this morning to speak to my doctor.. didn’t get anywhere, absolute shambles!\",null,[0,175]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Sb01IQjZhRWRDTmxOdFdsWkJZamhLWlZwWFVXYxAB!2m1!1s0x0:0x778b2a4a703e8190!3m1!1s2@1:CAIQACodChtycF9oOmRoMHB6aEdCNlNtWlZBYjhKZVpXUWc%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT21Sb01IQjZhRWRDTmxOdFdsWkJZamhLWlZwWFVXYxAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT21Sb01IQjZhRWRDTmxOdFdsWkJZamhLWlZwWFVXYxJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjFTYjAxSVFqWmhSV1JEVG14T2RGZHNXa0paYW1oTFdsWndXRlZYWXdvR2NtVjJhV1YzEgswY3diUHhWNy1oUBpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjFTYjAxSVFqWmhSV1JEVG14T2RGZHNXa0paYW1oTFdsWndXRlZYWXdvR2NtRjBhVzVuEgswY3diUHhWNy1oUCISCQAAAAAAAAAAEZCBPnBKKot3KgswY3diUHhWNy1oUA\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwix4c3izLGTAxVSRoQGHQxlJpsQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwix4c3izLGTAxVSRoQGHQxlJpsQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

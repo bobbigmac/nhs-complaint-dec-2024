@@ -1,0 +1,26 @@
+{
+  "practice_name": "BIXTER HEALTH CENTRE",
+  "canonical_code": "S39068",
+  "postcode": "ZE2 9NA",
+  "query_used": "BIXTER HEALTH CENTRE ZE2 9NA",
+  "google_maps_title": "Bixter Health Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Bixter+Health+Centre/@60.2526696,-1.4017922,17z/data=!4m8!3m7!1s0x489eec59b74cb337:0xc9bedd43ebcf1e3f!8m2!3d60.252667!4d-1.3992119!9m1!1b1!16s%2Fg%2F1hc23npdb?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774138239976,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x489eec59b74cb337%3A0xc9bedd43ebcf1e3f!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1skia_acr8GtWIhbIPlLzTuAg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUM4MXMtNG1BRRAB\",[\"0x0:0xc9bedd43ebcf1e3f\",null,1594047169811376,1594047169811376,[null,null,[\"https://www.google.com/maps/contrib/109977926842499685146/reviews?hl\\u003den\"],null,null,[\"Cormac Doyle\",\"https://lh3.googleusercontent.com/a/ACg8ocIbsy3FgedHP9CPNqPiQaN6VfKKH6aj8d7_HUTHXFKnjx1ORA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/109977926842499685146?hl\\u003den\"],\"109977926842499685146\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwjYoMX8m7KTAxUXH2MBHdw-GlYQ7LoGCAMoAA\"]]]],null,\"5 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4MXMtNG1BRRAB!2m1!1s0x0:0xc9bedd43ebcf1e3f!3m1!1s2@1:CIHM0ogKEICAgIC81s-4mAE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUM4MXMtNG1BRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUM4MXMtNG1BRRotChZDSUhNMG9nS0VJQ0FnSUM4MXMtNFdBEhNDZ3dJd2ZXTS1BVVFnTHZ5Z2dNIhIJAAAAAAAAAAARPx7P60PdvskqE0Nnd0l3ZldNLUFVUWdMdnlnZ00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjYoMX8m7KTAxUXH2MBHdw-GlYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjYoMX8m7KTAxUXH2MBHdw-GlYQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTWHBpV1c1eWMxOWZSV2hFYzI5eVpXbzFkVk13UjFvM05FeFVPRUZCUVVGQlIyZG1YMEZ2ZW1KWmJuSnpSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURncmVhZlRnEAE\",[\"0x0:0xc9bedd43ebcf1e3f\",null,1511613174964000,1511613181336000,[null,null,[\"https://www.google.com/maps/contrib/111767660507094798487/reviews?hl\\u003den\"],null,null,[\"Håkon Hagen\",\"https://lh3.googleusercontent.com/a/ACg8ocKtWT2zWC1WezsqFk01gXElIWw19gcaZLSq68bH_FFfTyX1kA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/111767660507094798487?hl\\u003den\"],\"111767660507094798487\",null,1,0,null,[0,2,1],8,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjYoMX8m7KTAxUXH2MBHdw-GlYQ7LoGCAYoAA\"]]]],null,\"8 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURncmVhZlRnEAE!2m1!1s0x0:0xc9bedd43ebcf1e3f!3m1!1s2@1:CIHM0ogKEICAgIDgreafTg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURncmVhZlRnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURncmVhZlRnGi4KF0NJSE0wb2dLRUlDQWdJRGdyZWFmemdFEhNDZ3dJX2NYbDBBVVFnT2lib0FFIhIJAAAAAAAAAAARPx7P60PdvskqE0Nnd0lfY1hsMEFVUWdPaWJvQUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjYoMX8m7KTAxUXH2MBHdw-GlYQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjYoMX8m7KTAxUXH2MBHdw-GlYQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

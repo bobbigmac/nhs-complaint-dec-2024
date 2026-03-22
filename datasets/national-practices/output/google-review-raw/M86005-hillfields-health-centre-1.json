@@ -1,0 +1,26 @@
+{
+  "practice_name": "HILLFIELDS HEALTH CENTRE - 1",
+  "canonical_code": "M86005",
+  "postcode": "CV1 4FS",
+  "query_used": "HILLFIELDS HEALTH CENTRE - 1 CV1 4FS",
+  "google_maps_title": "Dr I Mujeeb - Hillfields Health Centre - 1",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+I+Mujeeb+-+Hillfields+Health+Centre+-+1/@52.4147646,-1.5078712,17z/data=!3m1!5s0x48774bbe147a6b4b:0xf84297c9d4fd8576!4m8!3m7!1s0x48774bbe16bfffff:0xfd7c542bc9491f6a!8m2!3d52.4147614!4d-1.5052909!9m1!1b1!16s%2Fg%2F11j1srlpjs?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 36,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774131738770,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48774bbe16bfffff%3A0xfd7c542bc9491f6a!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sUhC_aY_PKtOjhbIP6LSDyAM!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT2xOcGNtdGpNek5hTFdGWVFrbGpVMUp3YzBsUFJuYxAB\",[\"0x0:0xfd7c542bc9491f6a\",null,1767022916650222,1767022916650222,[null,null,[\"https://www.google.com/maps/contrib/103760652122162780996/reviews?hl\\u003den\"],null,null,[\"Linda Millar\",\"https://lh3.googleusercontent.com/a/ACg8ocKOKAgGEysXv4GzgwUD5YiL3fRjG0xXb_0nzrMiIkGrMDGhGQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/103760652122162780996?hl\\u003den\"],\"103760652122162780996\",null,7,0,null,[0,3,1],2,[\"7 reviews\",null,null,null,null,[null,\"0ahUKEwjr-8Lgg7KTAxWPAWMBHRa3BS0Q7LoGCAMoAA\"]]]],null,\"2 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Absolutely couldn't care less. Shouldn't be in health care\",null,[0,58]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOcGNtdGpNek5hTFdGWVFrbGpVMUp3YzBsUFJuYxAB!2m1!1s0x0:0xfd7c542bc9491f6a!3m1!1s2@1:CAIQACodChtycF9oOlNpcmtjMzNaLWFYQkljU1Jwc0lPRnc%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2xOcGNtdGpNek5hTFdGWVFrbGpVMUp3YzBsUFJuYxAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2xOcGNtdGpNek5hTFdGWVFrbGpVMUp3YzBsUFJuYxJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhPY0dOdGRHcE5lazVoVEZkR1dWRnJiR3BWTVVwM1l6QnNVRkp1WXdvR2NtVjJhV1YzEgswZEplNDNha09pXxpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhPY0dOdGRHcE5lazVoVEZkR1dWRnJiR3BWTVVwM1l6QnNVRkp1WXdvR2NtRjBhVzVuEgswZEplNDNha09pXyISCQAAAAAAAAAAEWofSckrVHz9KgswZEplNDNha09pXw\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjr-8Lgg7KTAxWPAWMBHRa3BS0QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjr-8Lgg7KTAxWPAWMBHRa3BS0Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

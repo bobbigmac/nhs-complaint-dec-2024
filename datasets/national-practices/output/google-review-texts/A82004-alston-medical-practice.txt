@@ -1,0 +1,31 @@
+Practice: ALSTON MEDICAL PRACTICE
+Canonical code: A82004
+Postcode: CA9 3QU
+Google Maps title: Alston Medical Practice
+Google rating: 5.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Alston+Medical+Practice/@54.8102165,-2.4424212,17z/data=!4m8!3m7!1s0x487dac53f897225f:0xa892e020808656b0!8m2!3d54.8102134!4d-2.4398409!9m1!1b1!16s%2Fg%2F1yh9vgkls?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/A82004-alston-medical-practice.json
+
+Captured reviews
+================
+
+Author: karen storey
+Date: 2 weeks ago
+Rating: 5 stars
+Excellent in every way. Caring understanding doctors and medical staff, friendly helpful and efficient reception staff. Can always get an appointment within 24-48 hours.
+
+Author: Steven Drane
+Date: 6 years ago
+Rating: 5 stars
+Efficient and very helpful very good
+
+Author: Michelle Bielby
+Date: 9 years ago
+Rating: 5 stars
+simply one of the best surgeries ive been to in my life great caring staff nurses, doctors and receptionists x onsight chemist for prescriptions is also exceptional xxx

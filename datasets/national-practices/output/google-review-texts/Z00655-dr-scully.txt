@@ -1,0 +1,21 @@
+Practice: DR. SCULLY
+Canonical code: Z00655
+Postcode: BT78 4QY
+Google Maps title: Dr P Scully
+Google rating: 5.0
+Google review count: 7
+Google Maps URL: https://www.google.com/maps/place/Dr+P+Scully/@54.6127787,-7.4923622,17z/data=!4m8!3m7!1s0x485fcc69d6bfb381:0xed449e5228dccfb1!8m2!3d54.6127756!4d-7.4897819!9m1!1b1!16s%2Fg%2F1tm8dd4t?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.667
+Review collection mode: visible_cards
+Review cards collected: 1
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/Z00655-dr-scully.json
+
+Captured reviews
+================
+
+Author: Mike | Aratus Software
+Date: a year ago
+Rating: 5 stars
+Excellent service from a very friendly practice.

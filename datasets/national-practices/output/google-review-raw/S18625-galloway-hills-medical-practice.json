@@ -1,0 +1,26 @@
+{
+  "practice_name": "GALLOWAY HILLS MEDICAL PRACTICE",
+  "canonical_code": "S18625",
+  "postcode": "DG8 6NR",
+  "query_used": "GALLOWAY HILLS MEDICAL PRACTICE DG8 6NR",
+  "google_maps_title": "Dr S Gurling - The Galloway Hills Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+S+Gurling+-+The+Galloway+Hills+Medical+Practice/@54.9134177,-4.6833199,13z/data=!4m12!1m2!2m1!1sGALLOWAY+HILLS+MEDICAL+PRACTICE+DG8+6NR!3m8!1s0x48625ae342eb07e7:0x48f7aa2078fbbc4!8m2!3d54.9134177!4d-4.6071022!9m1!1b1!15sCidHQUxMT1dBWSBISUxMUyBNRURJQ0FMIFBSQUNUSUNFIERHOCA2TlKSAQZkb2N0b3LgAQA!16s%2Fg%2F11f54mcvmc?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 8,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774124142918,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48625ae342eb07e7%3A0x48f7aa2078fbbc4!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sqOa-adzeC76ihbIP2_vi2Ak!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNXLUxUbkdBEAE\",[\"0x0:0x48f7aa2078fbbc4\",null,1645122888158700,1645122888158700,[null,null,[\"https://www.google.com/maps/contrib/116200986946530874626/reviews?hl\\u003den\"],null,null,[\"South-West Scotland\",\"https://lh3.googleusercontent.com/a/ACg8ocIOcXI6WeT5xAdKrHk8RM7k6QE2g_OZ-dtOmtrDjJm_tX8zVw\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/116200986946530874626?hl\\u003den\"],\"116200986946530874626\",null,31,5,null,[1,5,1],0,[\"Local Guide · 31 reviews\",null,null,null,null,[null,\"0ahUKEwjv-4i657GTAxXQEmMBHazDGFwQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"It's always good to have a local community Doctor's Surgery,\",null,[0,60]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXLUxUbkdBEAE!2m1!1s0x0:0x48f7aa2078fbbc4!3m1!1s2@1:CIHM0ogKEICAgICW-LTnGA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNXLUxUbkdBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNXLUxUbkdBEi0KF0NJSE0wb2dLRUlDQWdJQ1ctTFRubUFFEhJDZ3NJeUtxNmtBWVE0S1BXU3caLAoWQ0lITTBvZ0tFSUNBZ0lDVy1MVG5XQRISQ2dzSXlLcTZrQVlRNEtQV1N3IhIJAAAAAAAAAAARxLuPB6J6jwQqEkNnc0l5S3E2a0FZUTRLUFdTdw\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjv-4i657GTAxXQEmMBHazDGFwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjv-4i657GTAxXQEmMBHazDGFwQ0pMFCAIoAA\"],null,\"CAESY0NBRVFBUnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lTVVF6UTA0MGFGOWZSV2hDU0hsR09HUk9jRWt5U0dGT2FHTlNUVUZCUVVGQlIyZHVPVEpRT0VOblVHTkpNMmxGV1VGRFNVRQ\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURBdzl1d1hnEAE\",[\"0x0:0x48f7aa2078fbbc4\",null,1528385670277000,1528385670277000,[null,null,[\"https://www.google.com/maps/contrib/113059808719311982061/reviews?hl\\u003den\"],null,null,[\"Charlotte Hopkinson\",\"https://lh3.googleusercontent.com/a/ACg8ocKNIqV_BRrVPy5riFKlLjboCM6SXa60_q2O-xlCFKAN9U2FLg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/113059808719311982061?hl\\u003den\"],\"113059808719311982061\",null,1,5,null,[0,2,1],1,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjv-4i657GTAxXQEmMBHazDGFwQ7LoGCAYoAA\"]]]],null,\"7 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdzl1d1hnEAE!2m1!1s0x0:0x48f7aa2078fbbc4!3m1!1s2@1:CIHM0ogKEICAgIDAw9uwXg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURBdzl1d1hnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURBdzl1d1hnGi4KF0NJSE0wb2dLRUlDQWdJREF3OXV3M2dFEhNDZ3dJaHFIbDJBVVF3TjZLaEFFIhIJAAAAAAAAAAARxLuPB6J6jwQqE0Nnd0locUhsMkFVUXdONktoQUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjv-4i657GTAxXQEmMBHazDGFwQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjv-4i657GTAxXQEmMBHazDGFwQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Practice: STRATHDON MEDICAL CENTRE
+Canonical code: S31812
+Postcode: AB36 8XB
+Google Maps title: Strathdon Medical Centre
+Google rating: 5.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Strathdon+Medical+Centre/@57.1936891,-3.039499,17z/data=!4m8!3m7!1s0x4885c8fbc30b743f:0xe0ba72c87f7827cb!8m2!3d57.1936862!4d-3.0369187!9m1!1b1!16s%2Fg%2F1hc2ppgkp?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S31812-strathdon-medical-centre.json
+
+Captured reviews
+================
+
+Author: muick68 (The Doghouse GB)
+Date: 3 months ago
+Rating: 5 stars
+Very helpful, knowledgeable and friendly staff. Wheelchair accessible, parking.
+
+Author: Charles Mathieson
+Date: 5 months ago
+Rating: 5 stars
+Brilliant practice with great Staff. Luck to have this service in our area 👌 …
+
+Author: Geraldine Cullen Crafts
+Date: 8 years ago
+Rating: 5 stars
+Geraldine Cullen Crafts8 years ago

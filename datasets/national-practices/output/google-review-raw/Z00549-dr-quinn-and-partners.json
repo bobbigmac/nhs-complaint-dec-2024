@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. QUINN & PARTNERS",
+  "canonical_code": "Z00549",
+  "postcode": "BT35 0BE",
+  "query_used": "DR. QUINN & PARTNERS BT35 0BE",
+  "google_maps_title": "Dr R Quinn",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+R+Quinn/@54.2024859,-6.5702665,17z/data=!4m8!3m7!1s0x4860c08fad7d0bb5:0x411b7dcdc0a67bbe!8m2!3d54.2024828!4d-6.5676862!9m1!1b1!16s%2Fg%2F1td52vph?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 3,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774140887020,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4860c08fad7d0bb5%3A0x411b7dcdc0a67bbe!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sADq_aceKMY_uhbIPi_az4Qc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURXdnE2bzdnRRAB\",[\"0x0:0x411b7dcdc0a67bbe\",null,1648214047606378,1648214047606378,[null,null,[\"https://www.google.com/maps/contrib/112718471033822424241/reviews?hl\\u003den\"],null,null,[\"Ivan Kirilov\",\"https://lh3.googleusercontent.com/a-/ALV-UjXgx4wlcFA1pCVmqbfgDAItSZrqL08KlQsanCFQddJE5grDh_o\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/112718471033822424241?hl\\u003den\"],\"112718471033822424241\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwj51uHqpbKTAxURMnsEHRjHBhAQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXdnE2bzdnRRAB!2m1!1s0x0:0x411b7dcdc0a67bbe!3m1!1s2@1:CIHM0ogKEICAgIDWvq6o7gE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURXdnE2bzdnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURXdnE2bzdnRRotChZDSUhNMG9nS0VJQ0FnSURXdnE2b0hnEhNDZ3dJbjREM2tRWVFrTENTb1FJIhIJAAAAAAAAAAARvnumwM19G0EqE0Nnd0luNEQza1FZUWtMQ1NvUUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj51uHqpbKTAxURMnsEHRjHBhAQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj51uHqpbKTAxURMnsEHRjHBhAQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+Practice: NEWCASTLETON MEDICAL PRACTICE
+Canonical code: S16047
+Postcode: TD9 0RU
+Google Maps title: Newcastleton Health Centre
+Google rating: 5.0
+Google review count: 5
+Google Maps URL: https://www.google.com/maps/place/Newcastleton+Health+Centre/@55.1815703,-2.8148628,17z/data=!4m8!3m7!1s0x487d7231f013ffa3:0xd9c2ae7c8e3ce431!8m2!3d55.1815673!4d-2.8122825!9m1!1b1!16s%2Fg%2F1tdh7_sy?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S16047-newcastleton-medical-practice.json
+
+Captured reviews
+================
+
+Author: David Glen
+Date: 7 months ago
+Rating: 5 stars
+Great team at this practice
+
+Author: Dawn Silvester
+Date: 2 years ago
+Rating: 5 stars
+The best GP practice we have ever been to, very polite, efficient and always have time for you.
+
+Author: Jelly 98
+Date: 2 years ago
+Rating: 5 stars
+The GP's have looked after my granny and grandad for years and are a testament to their long lives (91 and 90 respectively).
+
+Author: Denis _G
+Date: 3 years ago
+Rating: 5 stars
+Best doctor's surgery I've ever been to...
+
+Author: brad hammett
+Date: 3 years ago
+Rating: 5 stars
+Has the UK's best GP

@@ -1,0 +1,26 @@
+Practice: BIXTER HEALTH CENTRE
+Canonical code: S39068
+Postcode: ZE2 9NA
+Google Maps title: Bixter Health Centre
+Google rating: 5.0
+Google review count: 2
+Google Maps URL: https://www.google.com/maps/place/Bixter+Health+Centre/@60.2526696,-1.4017922,17z/data=!4m8!3m7!1s0x489eec59b74cb337:0xc9bedd43ebcf1e3f!8m2!3d60.252667!4d-1.3992119!9m1!1b1!16s%2Fg%2F1hc23npdb?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S39068-bixter-health-centre.json
+
+Captured reviews
+================
+
+Author: Cormac Doyle
+Date: 5 years ago
+Rating: 5 stars
+Cormac Doyle5 years ago
+
+Author: Håkon Hagen
+Date: 8 years ago
+Rating: 5 stars
+Håkon Hagen1 review8 years ago

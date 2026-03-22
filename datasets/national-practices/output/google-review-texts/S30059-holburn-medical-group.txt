@@ -1,0 +1,36 @@
+Practice: HOLBURN MEDICAL GROUP
+Canonical code: S30059
+Postcode: AB10 1YE
+Google Maps title: Holburn Medical Group
+Google rating: 2.5
+Google review count: 85
+Google Maps URL: https://www.google.com/maps/place/Holburn+Medical+Group/@57.1386621,-2.1117547,15z/data=!4m12!1m2!2m1!1sHOLBURN+MEDICAL+GROUP+AB10+1YE!3m8!1s0x48840e360c37989b:0x37cf1ca6b593ae90!8m2!3d57.1346705!4d-2.0885587!9m1!1b1!15sCh5IT0xCVVJOIE1FRElDQUwgR1JPVVAgQUIxMCAxWUWSAQ5tZWRpY2FsX2NsaW5pY-ABAA!16s%2Fg%2F1tfjf327?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 4
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S30059-holburn-medical-group.json
+
+Captured reviews
+================
+
+Author: Ivaylo Ivanov
+Date: 3 years ago
+Rating: 3 stars
+Ivaylo Ivanov3 years ago
+
+Author: Alex Paterson
+Date: 3 years ago
+Rating: 5 stars
+Alex PatersonLocal Guide · 17 reviews · 1 photo3 years ago
+
+Author: Filip Lendzion
+Date: 4 years ago
+Rating: 1 star
+Filip Lendzion2 reviews4 years ago
+
+Author: Mike Elliott
+Date: 4 years ago
+Rating: 4 stars
+Mike Elliott3 reviews · 2 photos4 years ago

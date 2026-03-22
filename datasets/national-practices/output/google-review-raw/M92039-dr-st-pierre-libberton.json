@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR ST PIERRE-LIBBERTON",
+  "canonical_code": "M92039",
+  "postcode": "WV10 8PJ",
+  "query_used": "DR ST PIERRE-LIBBERTON WV10 8PJ",
+  "google_maps_title": "Dr C S Libberton",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+C+S+Libberton/@52.610577,-2.1053493,17z/data=!4m12!1m2!2m1!1sDR+ST+PIERRE-LIBBERTON+WV10+8PJ!3m8!1s0x48709c1dfd16beed:0x7be0c29b27b8b647!8m2!3d52.610577!4d-2.1005857!9m1!1b1!15sCh9EUiBTVCBQSUVSUkUtTElCQkVSVE9OIFdWMTAgOFBKkgEGZG9jdG9y4AEA!16s%2Fg%2F1hc5q3293?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774136967520,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48709c1dfd16beed%3A0x7be0c29b27b8b647!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1skia_acr8GtWIhbIPlLzTuAg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURxb0tuaGdnRRAB\",[\"0x0:0x7be0c29b27b8b647\",null,1624605942672411,1624605942672411,[null,null,[\"https://www.google.com/maps/contrib/106411053042933688177/reviews?hl\\u003den\"],null,null,[\"julie davies\",\"https://lh3.googleusercontent.com/a-/ALV-UjWKNHxMapOLYJRI2WU-YAFZDi7GcMfmg-v18_EyLlEOTcuyX6E\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/106411053042933688177?hl\\u003den\"],\"106411053042933688177\",null,23,1,null,[1,5,1],31,[\"Local Guide · 23 reviews\",null,null,null,null,[null,\"0ahUKEwj42uadl7KTAxWrKWMBHdsnAVUQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[3]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxb0tuaGdnRRAB!2m1!1s0x0:0x7be0c29b27b8b647!3m1!1s2@1:CIHM0ogKEICAgIDqoKnhggE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURxb0tuaGdnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURxb0tuaGdnRRotChZDSUhNMG9nS0VJQ0FnSURxb0tuaFFnEhNDZ3dJOW9uV2hnWVEtTnJRd0FJIhIJAAAAAAAAAAARR7a4J5vC4HsqE0Nnd0k5b25XaGdZUS1OclF3QUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj42uadl7KTAxWrKWMBHdsnAVUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj42uadl7KTAxWrKWMBHdsnAVUQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

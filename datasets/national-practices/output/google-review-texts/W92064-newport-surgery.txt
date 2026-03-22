@@ -1,0 +1,31 @@
+Practice: NEWPORT SURGERY
+Canonical code: W92064
+Postcode: SA42 0TJ
+Google Maps title: Newport Surgery
+Google rating: 3.3
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Newport+Surgery/@52.0172838,-4.8363914,17z/data=!4m8!3m7!1s0x4868d35d4dd945eb:0x60c9b54465f8b527!8m2!3d52.0172805!4d-4.8338111!9m1!1b1!16s%2Fg%2F1v42f6l9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/W92064-newport-surgery.json
+
+Captured reviews
+================
+
+Author: Welsh Homestead
+Date: a year ago
+Rating: 5 stars
+Nice people on reception and the Doctor's and other medical staff are always friendly, accessible and attentive. You can always get an appointment and they're very flexible
+
+Author: mim hayward
+Date: 2 years ago
+Rating: 4 stars
+It's very friendly
+
+Author: Linda Dormody
+Date: 2 years ago
+Rating: 1 star
+My appointment was at 2pm and by 2:30pm I had to ask why I was still waiting as I was the only one in the waiting room. Dr Sion Owen was having a meeting. Being punctual for the patient wasn’t a priority at this surgery. Once I was seeing the Dr, he acted like I needed to be quick and only bother him with important matters. I felt like he really couldn’t care a less. I even told him I felt like my left ear was blocked and he didn’t bother taking a look. Overall, I left the surgery with a feeling that I should not have bothered this particular Dr.

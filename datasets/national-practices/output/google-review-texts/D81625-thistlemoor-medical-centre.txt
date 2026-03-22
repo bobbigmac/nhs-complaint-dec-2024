@@ -1,0 +1,66 @@
+Practice: THISTLEMOOR MEDICAL CENTRE
+Canonical code: D81625
+Postcode: PE1 3HP
+Google Maps title: Thistlemoor Medical Centre
+Google rating: 3.2
+Google review count: 350
+Google Maps URL: https://www.google.com/maps/place/Thistlemoor+Medical+Centre/@52.5939908,-0.2590343,17z/data=!4m8!3m7!1s0x4877f11871049ff7:0xc516a89ad3f0f501!8m2!3d52.5939876!4d-0.256454!9m1!1b1!16s%2Fg%2F1tpc7gtq?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/D81625-thistlemoor-medical-centre.json
+
+Captured reviews
+================
+
+Author: Slawomir Wozniak
+Date: 3 days ago
+Rating: 1 star
+You register to see a doctor, and they book you an appointment with a pharmacist instead. It’s a complete joke. If I wanted that, I’d just go to the pharmacy myself.
+
+Author: Michael Onyett
+Date: a week ago
+Rating: 5 stars
+Went for an endoscopy and the nurses were fantastic. Excellent care all round
+
+Author: Anargul sattar
+Date: a week ago
+Rating: 5 stars
+I had a fantastic experience with Nurse REDA at Thistlemoor Medical Centre. 🏥🩺 From start to finish, she was incredibly helpful and went out of her way to provide all the information we needed. What stood out most was how she made us feel completely relaxed and comfortable throughout the visit. She was patient and thorough, ensuring we understood every single detail both before and after the process. It is rare to find someone who balances professional expertise with such a kind, reassuring manner. Thank you, Reda, for the excellent care.
+
+Author: Elshaimaa Youssef
+Date: 3 weeks ago
+Rating: 5 stars
+Elshaimaa Youssef3 weeks ago New
+
+Author: Lenroy Haughton
+Date: 3 weeks ago
+Rating: 5 stars
+The response to my medical enquiry today has been brilliant, the Thistlemoor Medical Centre has arranged an appointment for me to be seen today which i did not expect. Thank you 😊 …
+
+Author: Greta Kazuboviciene
+Date: 3 weeks ago
+Rating: 5 stars
+Very good service😍 …
+
+Author: GAMO Z
+Date: a month ago
+Rating: 1 star
+Very bad service. Doctor asking google. Rude clinicians.
+
+Author: Christine TV
+Date: a month ago
+Rating: 1 star
+Not good .
+
+Author: KINGDOOM Z
+Date: a month ago
+Rating: 1 star
+Worst gp in peterborough.
+
+Author: Evelina Sadauskaitė
+Date: a month ago
+Rating: 5 stars
+Very good service.

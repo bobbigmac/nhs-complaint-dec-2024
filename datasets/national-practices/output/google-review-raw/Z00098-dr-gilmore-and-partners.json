@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. GILMORE & PARTNERS",
+  "canonical_code": "Z00098",
+  "postcode": "BT14 8BY",
+  "query_used": "DR. GILMORE & PARTNERS BT14 8BY",
+  "google_maps_title": "Gilmore Dr C",
+  "google_maps_url": "https://www.google.com/maps/place/Gilmore+Dr+C/@54.624644,-5.9843008,17z/data=!4m12!1m2!2m1!1sDR.+GILMORE+%26+PARTNERS+BT14+8BY!3m8!1s0x486107fe8361d009:0xc8f89c7d5869bb3e!8m2!3d54.6246347!4d-5.9816765!9m1!1b1!15sCh9EUi4gR0lMTU9SRSAmIFBBUlRORVJTIEJUMTQgOEJZkgEGZG9jdG9y4AEA!16s%2Fg%2F113j35847?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 23,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774125092873,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x486107fe8361d009%3A0xc8f89c7d5869bb3e!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sM_2-af2XJZG_hbIPrZi-6QE!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNha3Rpd1pREAE\",[\"0x0:0xc8f89c7d5869bb3e\",null,1627375207623909,1627375207623909,[null,null,[\"https://www.google.com/maps/contrib/114066617484186174835/reviews?hl\\u003den\"],null,null,[\"Angela Owens\",\"https://lh3.googleusercontent.com/a/ACg8ocKeh6XEglW5ZWvuX1UjuQZpCW2zDAcqmBtlSV_aWbXW0UdYqw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/114066617484186174835?hl\\u003den\"],\"114066617484186174835\",null,3,0,null,[0,2,1],6,[\"3 reviews\",null,null,null,null,[null,\"0ahUKEwjQm8b_6rGTAxUMd4QGHcdhAZwQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNha3Rpd1pREAE!2m1!1s0x0:0xc8f89c7d5869bb3e!3m1!1s2@1:CIHM0ogKEICAgICaktiwZQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNha3Rpd1pREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNha3Rpd1pRGi4KF0NJSE0wb2dLRUlDQWdJQ2FrdGl3NVFFEhNDZ3dJNTR6X2h3WVFpTEhBcVFJIhIJAAAAAAAAAAARPrtpWH2c-MgqE0Nnd0k1NHpfaHdZUWlMSEFxUUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjQm8b_6rGTAxUMd4QGHcdhAZwQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjQm8b_6rGTAxUMd4QGHcdhAZwQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

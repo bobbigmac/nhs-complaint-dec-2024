@@ -1,0 +1,96 @@
+Practice: BINGLEY MEDICAL PRACTICE
+Canonical code: B83014
+Postcode: BD16 4RP
+Google Maps title: Bingley Medical Practice
+Google rating: 4.5
+Google review count: 146
+Google Maps URL: https://www.google.com/maps/place/Bingley+Medical+Practice/@53.84692,-1.8313646,17z/data=!4m8!3m7!1s0x487be5af398286c7:0xb36b2b3ba94d91e8!8m2!3d53.8469169!4d-1.8287843!9m1!1b1!16s%2Fg%2F1hc15fwtc?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 10
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/B83014-bingley-medical-practice.json
+
+Captured reviews
+================
+
+Author: Suzanne Taylor
+Date: 2 weeks ago
+Rating: 5 stars
+Prompt appointment when I was unwell, thoroughly investigated , kind and considerate doctor
+Practice response date: 2 days ago
+Practice response:
+This is great to hear about your positive experience, and we hope you are feeling better!
+
+Author: Julia Thomas
+Date: 2 weeks ago
+Rating: 5 stars
+My consultation today was very helpful. Dr Elgazawy was clear and concise, taking time to explain several points to me on the various options regarding my treatment. She is very approachable and I felt listened to.
+Practice response date: 2 days ago
+Practice response:
+We are really grateful for you taking the time to get in touch, and this is fantastic to hear regarding your experience seeing Dr Elgizawy. We will be sure to pass this feedback on to her. Many thanks
+
+Author: Holly
+Date: 2 months ago
+Rating: 5 stars
+I've been a patient at the practice for the best part of a decade. Every practitioner has been diligent in their care and assesment, and I'd praise recent support from the reception staff and Dr Salter in particular. Having the Boots pharmacy, as well as specialist appointments (nurse, midwife, physiotherapy, etc) in the same building is very convenient.
+Practice response date: a month ago
+Practice response:
+This is wonderful to hear - and brilliant that you’ve had such positive experiences with various members of the team. We will be sure to pass your feedback on to Dr Salter. Whilst we as a Practice are not directly affiliated with the other services you mentioned (including the Boots pharmacy), it is indeed very convenient to have a pharmacy within Canalside Healthcare Centre. Thanks again for getting in touch.
+
+Author: Kay Kelly
+Date: 2 months ago
+Rating: 5 stars
+Efficient informative good bedside manner
+Practice response date: a month ago
+Practice response:
+Many thanks for your feedback - and great to hear about your positive experience at Bingley Medical Practice.
+
+Author: Marcus Barter
+Date: 2 months ago
+Rating: 5 stars
+Many thanks for your positive review.
+Practice response date: a month ago
+Practice response:
+Many thanks for your positive review.
+
+Author: Christine Bentley
+Date: 2 months ago
+Rating: 5 stars
+On time at a busy time of year. Confident clear experienced diagnosis. Medication prescribed all in good time. Excellent doctor.
+Practice response date: 2 months ago
+Practice response:
+You are absolutely right in terms of the pressures we are all under, especially at the moment, and so are all the more grateful to receive positive feedback such as this. Many thanks for getting in touch.
+
+Author: robert wadey
+Date: 2 months ago
+Rating: 5 stars
+Seen very promptly and my issue was addressed sensibly and explained to me clearly with good advice on application of the nasal spray. Very satisfied, just hope it cures me now!
+Practice response date: 2 months ago
+Practice response:
+This is great to hear you having such a positive experience whilst you have been feeling poorly. All the best for your recovery!
+
+Author: C N
+Date: 3 months ago
+Rating: 5 stars
+The nurse, Emma, that we saw was brilliant. She was very knowledgeable about asthma and inhalers, explained things clearly, and had a calm, reassuring, and lovely manner. We felt listened to and well cared for. Excellent service. Many thanks!
+Practice response date: 2 months ago
+Practice response:
+Many thanks for your review, and is great to hear such positive feedback about Emma who is part of our excellent nursing team here. Will be sure to pass this feedback on.
+
+Author: Amanda Jackson
+Date: 4 months ago
+Rating: 5 stars
+"Grateful for Exceptional Care and Compassion" "I moved to the area just over a year ago and joined your GP surgery. Since then, I have been truly overwhelmed by the level of support and care I have received. The way you tailor your service to my individual needs has made my experience feel personal and reassuring. I would especially like to thank Dr. Smith and Dr. Wheelhouse for the outstanding care they have provided in such a short space of time. Their dedication, compassion, and regular check-ins have made a significant difference to me, and I am deeply grateful for the support they continue to give. Thank you for going above and beyond - I feel genuinely cared for and supported."
+Practice response date: 4 months ago
+Practice response:
+Wow this is wonderful to hear - really appreciate you getting in touch, and we’ll be sure to pass this feedback on to Dr Smith and Dr Wheelhouse specifically.
+
+Author: Brooke Weldon
+Date: 4 months ago
+Rating: 5 stars
+I have nothing but positive things to say about the practice. Since I got pregnant with my little girl and since shes been (she's nearly 2) they have been there and seen us very quickly when needed. Thank you to the Dr's and whole practice team. Special thanks to Dr Ellis who was very patient and brilliant with my daughter at our urgent appointment this afternoon. We always seem to get through within a reasonable time frame when ringing also. Thank you
+Practice response date: 4 months ago
+Practice response:
+Thank you so much for your getting in touch like this, it is very much appreciated by the whole team at such a time of increasing demand. We will also make sure to pass on your feedback onto Dr Ellis.

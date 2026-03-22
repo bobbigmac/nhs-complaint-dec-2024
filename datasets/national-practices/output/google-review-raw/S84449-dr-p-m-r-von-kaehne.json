@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR P M R VON KAEHNE",
+  "canonical_code": "S84449",
+  "postcode": "PA24 8AQ",
+  "query_used": "DR P M R VON KAEHNE PA24 8AQ",
+  "google_maps_title": "Dr Peter von Kaehne",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+Peter+von+Kaehne/@56.1744512,-4.9027899,17z/data=!4m8!3m7!1s0x4889089549eea15f:0xd712f8c4f712d340!8m2!3d56.1744482!4d-4.9002096!9m1!1b1!16s%2Fg%2F1tgjkw9h?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 14,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774120265192,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4889089549eea15f%3A0xd712f8c4f712d340!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sqOa-adzeC76ihbIP2_vi2Ak!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNjd2ZtR0VBEAE\",[\"0x0:0xd712f8c4f712d340\",null,1584015065708293,1584015065708293,[null,null,[\"https://www.google.com/maps/contrib/115230325830204390313/reviews?hl\\u003den\"],null,null,[\"David Gibson\",\"https://lh3.googleusercontent.com/a/ACg8ocJEGoKebHsYOZxPg8PqMDo1Txz89anhvAJync77lbvgzwVcvg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/115230325830204390313?hl\\u003den\"],\"115230325830204390313\",null,4,0,null,[0,2,1],0,[\"4 reviews\",null,null,null,null,[null,\"0ahUKEwjX_cCB2bGTAxVHEmMBHWUSOb4Q7LoGCAMoAA\"]]]],null,\"6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Great on-line appointment system. Dispensing surgery means no trips out of the Village to fill prescriptions. Very friendly and helpful staff.\",null,[0,142]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjd2ZtR0VBEAE!2m1!1s0x0:0xd712f8c4f712d340!3m1!1s2@1:CIHM0ogKEICAgICcwfmGEA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNjd2ZtR0VBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNjd2ZtR0VBEi4KF0NJSE0wb2dLRUlDQWdJQ2N3Zm1Ha0FFEhNDZ3dJMmMybzh3VVFpT1BlMFFJGi4KF0NJSE0wb2dLRUlDQWdJQ2N3Zm1HMEFFEhNDZ3dJMmMybzh3VVFpT1BlMFFJIhIJAAAAAAAAAAARQNMS98T4EtcqE0Nnd0kyYzJvOHdVUWlPUGUwUUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjX_cCB2bGTAxVHEmMBHWUSOb4QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjX_cCB2bGTAxVHEmMBHWUSOb4Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Practice: RIVER PLACE HEALTH CENTRE
+Canonical code: F83002
+Postcode: N1 2DE
+Google Maps title: Dr D Egerton - River Place Health Centre
+Google rating: 4.4
+Google review count: 226
+Google Maps URL: https://www.google.com/maps/place/Dr+D+Egerton+-+River+Place+Health+Centre/@51.5410118,-0.1021805,17z/data=!4m12!1m2!2m1!1sRIVER+PLACE+HEALTH+CENTRE+N1+2DE!3m8!1s0x48761b617c3fee43:0x49e251252f0e0efa!8m2!3d51.5410118!4d-0.0974169!9m1!1b1!15sCiBSSVZFUiBQTEFDRSBIRUFMVEggQ0VOVFJFIE4xIDJERVoiIiByaXZlciBwbGFjZSBoZWFsdGggY2VudHJlIG4xIDJkZZIBBmRvY3RvcpoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyc3dkR1F6YUZkVlJYQnFWbXBrY0dScVNqVlllVEZUVkVaT2VtTXlZeEFC4AEA-gEFCNYCEBQ!16s%2Fg%2F11dxhxw6r9?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.4
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/F83002-river-place-health-centre.json
+
+Captured reviews
+================
+
+Author: Rocco Laitano
+Date: 3 months ago
+Rating: 5 stars
+Doctor Egerton at River Place is very professional and caring towards his patients, always ready to give good advice how to get better. His Team is well organised and kind, we are fortunate to have such a good surgery close to where we live. We just had a visit and already feel reassured we are on a right track to solve our issues, thanks! Maria Grazia & Rocco
+
+Author: John Power
+Date: 9 months ago
+Rating: 5 stars
+John Power1 review9 months ago
+
+Author: Fatos Or
+Date: a year ago
+Rating: 5 stars
+Fatos Or1 reviewa year ago

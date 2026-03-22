@@ -1,0 +1,26 @@
+{
+  "practice_name": "EVERGREEN PRIMARY CARE CENTRE",
+  "canonical_code": "Y03402",
+  "postcode": "N9 0TW",
+  "query_used": "EVERGREEN PRIMARY CARE CENTRE N9 0TW",
+  "google_maps_title": "Dr S Patel - Evergreen Primary Care Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+S+Patel+-+Evergreen+Primary+Care+Centre/@51.6237847,-0.0628588,17z/data=!4m12!1m2!2m1!1sEVERGREEN+PRIMARY+CARE+CENTRE+N9+0TW!3m8!1s0x48761eed95d5dc85:0xe6069b2bf0e68030!8m2!3d51.6238306!4d-0.0602257!9m1!1b1!15sCiRFVkVSR1JFRU4gUFJJTUFSWSBDQVJFIENFTlRSRSBOOSAwVFdaJiIkZXZlcmdyZWVuIHByaW1hcnkgY2FyZSBjZW50cmUgbjkgMHR3kgEGZG9jdG9ymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDI1b1ZHTnRNVnBYYkdScVl6SktjVmRWY0RCa2JsRXdaVlUxY2xJeVl4QULgAQD6AQQIFxAw!16s%2Fg%2F11j1srlw2k?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 553,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774137026195,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48761eed95d5dc85%3A0xe6069b2bf0e68030!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1skia_acr8GtWIhbIPlLzTuAg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT25oVGNtMVpXbGRqYzJKcVdVcDBkblEwZVU1clIyYxAB\",[\"0x0:0xe6069b2bf0e68030\",null,1757343621457774,1757343621457774,[null,null,[\"https://www.google.com/maps/contrib/106762524772341189866/reviews?hl\\u003den\"],null,null,[\"Donald Alwyn Thornicroft\",\"https://lh3.googleusercontent.com/a/ACg8ocKOjlIEqpIfNleAxcPlLxS_TIAtR_AsO1Uy-A_z37Bug-Ib5Q\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106762524772341189866?hl\\u003den\"],\"106762524772341189866\",null,1,0,null,[0,1,1],0,[\"1 review\",null,null,null,null,[null,\"0ahUKEwi40OK5l7KTAxU-LnsEHRP-DEUQ7LoGCAMoAA\"]]]],null,\"6 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Great dental surgery.  The dentists hete are professional and very good\",null,[0,71]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oVGNtMVpXbGRqYzJKcVdVcDBkblEwZVU1clIyYxAB!2m1!1s0x0:0xe6069b2bf0e68030!3m1!1s2@1:CAIQACodChtycF9oOnhTcm1ZWldjc2JqWUp0dnQ0eU5rR2c%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT25oVGNtMVpXbGRqYzJKcVdVcDBkblEwZVU1clIyYxAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT25oVGNtMVpXbGRqYzJKcVdVcDBkblEwZVU1clIyYxJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVvVkdOdE1WcFhiR1JxWXpKS2NWZFZjREJrYmxFd1pWVTFjbEl5WXdvR2NtVjJhV1YzEgswY2ppeTRRSEdPaxpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVvVkdOdE1WcFhiR1JxWXpKS2NWZFZjREJrYmxFd1pWVTFjbEl5WXdvR2NtRjBhVzVuEgswY2ppeTRRSEdPayISCQAAAAAAAAAAETCA5vArmwbmKgswY2ppeTRRSEdPaw\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi40OK5l7KTAxU-LnsEHRP-DEUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwi40OK5l7KTAxU-LnsEHRP-DEUQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "practice_name": "MULL OF GALLOWAY PRACTICE",
+  "canonical_code": "S18112",
+  "postcode": "DG9 9QQ",
+  "query_used": "MULL OF GALLOWAY PRACTICE DG9 9QQ",
+  "google_maps_title": "The Mull of Galloway Practice",
+  "google_maps_url": "https://www.google.com/maps/place/The+Mull+of+Galloway+Practice/@54.6887282,-4.8968943,17z/data=!4m8!3m7!1s0x4862352af2442997:0x6f396e669f20c579!8m2!3d54.6887251!4d-4.894314!9m1!1b1!16s%2Fg%2F11dxhy69bn?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774116120342,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4862352af2442997%3A0x6f396e669f20c579!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sZNG-adzEK-7rhbIPtY7v4Qo!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnTURJd1llQ1BREAE\",[\"0x0:0x6f396e669f20c579\",null,1744289859786355,1744289859786355,[null,null,[\"https://www.google.com/maps/contrib/111176679949889204252/reviews?hl\\u003den\"],null,null,[\"ellen brigg\",\"https://lh3.googleusercontent.com/a/ACg8ocIkldQ09U7ustA2IB1ui-2gyMuc0yHmlF02bNgxXP5H-6cztA\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/111176679949889204252?hl\\u003den\"],\"111176679949889204252\",null,18,0,null,[1,4,1],0,[\"Local Guide · 18 reviews\",null,null,null,null,[null,\"0ahUKEwjL7IvJybGTAxU1FWMBHUspAfcQ7LoGCAMoAA\"]]]],null,\"11 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Very caring and professional, good old fashioned doctors that listen, staff friendly and approachable\",null,[0,101]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURJd1llQ1BREAE!2m1!1s0x0:0x6f396e669f20c579!3m1!1s2@1:CIHM0ogKEICAgMDIwYeCPQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnTURJd1llQ1BREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnTURJd1llQ1BREi4KF0NJSE0wb2dLRUlDQWdNREl3WWVDdlFFEhNDZ3dJdzREZnZ3WVF1S2I3OWdJGi0KFkNJSE0wb2dLRUlDQWdNREl3WWVDZlESE0Nnd0l3NERmdndZUXVLYjc5Z0kiEgkAAAAAAAAAABF5xSCfZm45byoTQ2d3SXc0RGZ2d1lRdUtiNzlnSQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjL7IvJybGTAxU1FWMBHUspAfcQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjL7IvJybGTAxU1FWMBHUspAfcQ0pMFCAIoAA\"],null,\"CAESY0NBRVFBUnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lSMjVuVDFCak1WOWZSV2hEUzJSMVYycHljVXhpVlRoaGRrNXlkMEZCUVVGQlIyZHVPVEpYZDBOaFpVRTBPWHBWV1VGRFNVRQ\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURob0t6QUFREAE\",[\"0x0:0x6f396e669f20c579\",null,1677443177250456,1677443177250456,[null,null,[\"https://www.google.com/maps/contrib/101872738638077477858/reviews?hl\\u003den\"],null,null,[\"Edward Beck\",\"https://lh3.googleusercontent.com/a-/ALV-UjVQGnL-KC9f3jDtMSuemd_qlX9c5yRdFx7LXa_S5YDjsmDevAXU\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/101872738638077477858?hl\\u003den\"],\"101872738638077477858\",null,57,174,null,[1,6,1],11,[\"Local Guide · 57 reviews\",null,null,null,null,[null,\"0ahUKEwjL7IvJybGTAxU1FWMBHUspAfcQ7LoGCAYoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Slick and professional!\",null,[0,23]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURob0t6QUFREAE!2m1!1s0x0:0x6f396e669f20c579!3m1!1s2@1:CIHM0ogKEICAgIDhoKzAAQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURob0t6QUFREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURob0t6QUFREi0KF0NJSE0wb2dLRUlDQWdJRGhvS3pBZ1FFEhJDZ3NJNllEdm53WVF3TS0yZHcaLAoWQ0lITTBvZ0tFSUNBZ0lEaG9LekFRURISQ2dzSTZZRHZud1lRd00tMmR3IhIJAAAAAAAAAAARecUgn2ZuOW8qEkNnc0k2WUR2bndZUXdNLTJkdw\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjL7IvJybGTAxU1FWMBHUspAfcQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjL7IvJybGTAxU1FWMBHUspAfcQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

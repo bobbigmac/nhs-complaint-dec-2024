@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE MEDICAL GROUP",
+  "canonical_code": "A83022",
+  "postcode": "DH7 8NH",
+  "query_used": "THE MEDICAL GROUP DH7 8NH",
+  "google_maps_title": "Esh Winning Surgery (The Medical Group)",
+  "google_maps_url": "https://www.google.com/maps/place/Esh+Winning+Surgery+(The+Medical+Group)/@54.7721428,-1.7827631,13z/data=!4m12!1m2!2m1!1sTHE+MEDICAL+GROUP+DH7+8NH!3m8!1s0x487e80079e5a4be1:0x9b8e2551d09f047!8m2!3d54.7721428!4d-1.7065454!9m1!1b1!15sChlUSEUgTUVESUNBTCBHUk9VUCBESDcgOE5IWhsiGXRoZSBtZWRpY2FsIGdyb3VwIGRoNyA4bmiSARlmYW1pbHlfcHJhY3RpY2VfcGh5c2ljaWFumgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJzeGVsZEZaRWRSTUdOM1kxWkdORTVyYUVKWmJHeEpZM2t4ZWxkclJSQULgAQD6AQQIABBB!16s%2Fg%2F1trsxkjl?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 39,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774135625888,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487e80079e5a4be1%3A0x9b8e2551d09f047!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1skia_acr8GtWIhbIPlLzTuAg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT2sxeldFZEdRMGN3Y1ZGNE5raEJZbGxJY3kxeldrRRAB\",[\"0x0:0x9b8e2551d09f047\",null,1755844959758910,1755844959758910,[null,null,[\"https://www.google.com/maps/contrib/110087696645936890835/reviews?hl\\u003den\"],null,null,[\"Ian Stobbart\",\"https://lh3.googleusercontent.com/a-/ALV-UjWlOcusMVPBQ1Hg2XtFDYugPBI7fvG8185JbrFVWjj0EQSM40E_\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/110087696645936890835?hl\\u003den\"],\"110087696645936890835\",null,67,201,null,[1,6,1],29,[\"Local Guide · 67 reviews\",null,null,null,null,[null,\"0ahUKEwioioKekrKTAxWgMGMBHeNeA7MQ7LoGCAMoAA\"]]]],null,\"6 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"I've got nothing but good things to say about the practice 5 star\",null,[0,65]]]],[null,null,null,null,null,\"https://business.google.com/local/business/6742493673997361191/customers/reviews/reply?p\\u003dCkRDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlJBQhAA\",[null,null,null,\"/local/business/6742493673997361191/customers/reviews/reply?p\\u003dCkRDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlJBQhAA\"],\"https://business.google.com/local/business/6742493673997361191/customers/reviews/deletereply?p\\u003dCkRDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlJBQhAA\",[null,null,null,\"/local/business/6742493673997361191/customers/reviews/deletereply?p\\u003dCkRDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlJBQhAA\"],null,\"https://business.google.com/local/business/6742493673997361191/customers/reviews/reply?p\\u003dCkRDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlJBQhAA\",[null,null,null,\"/local/business/6742493673997361191/customers/reviews/reply?p\\u003dCkRDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlJBQhAA\"]],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxeldFZEdRMGN3Y1ZGNE5raEJZbGxJY3kxeldrRRAB!2m1!1s0x0:0x9b8e2551d09f047!3m1!1s2@1:CAIQACodChtycF9oOk1zWEdGQ0cwcVF4NkhBYllIcy1zWkE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2sxeldFZEdRMGN3Y1ZGNE5raEJZbGxJY3kxeldrRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2sxeldFZEdRMGN3Y1ZGNE5raEJZbGxJY3kxeldrRRJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlFvR2NtVjJhV1YzEgswY2UwNFVoRS10SBpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnN4ZWxkRlpFZFJNR04zWTFaR05FNXJhRUpaYkd4Slkza3hlbGRyUlFvR2NtRjBhVzVuEgswY2UwNFVoRS10SCISCQAAAAAAAAAAEUfwCR1V4rgJKgswY2UwNFVoRS10SA\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwioioKekrKTAxWgMGMBHeNeA7MQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwioioKekrKTAxWgMGMBHeNeA7MQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

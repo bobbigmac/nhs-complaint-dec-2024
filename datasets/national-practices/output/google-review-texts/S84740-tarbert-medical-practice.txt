@@ -1,0 +1,41 @@
+Practice: TARBERT MEDICAL PRACTICE
+Canonical code: S84740
+Postcode: PA29 6TY
+Google Maps title: Tarbert Medical Practice
+Google rating: 4.2
+Google review count: 5
+Google Maps URL: https://www.google.com/maps/place/Tarbert+Medical+Practice/@55.8635405,-5.4203894,17z/data=!4m8!3m7!1s0x488988d53673ddcf:0xa362c4c47f9fc7ae!8m2!3d55.8635375!4d-5.4178091!9m1!1b1!16s%2Fg%2F1hc1tlqs1?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S84740-tarbert-medical-practice.json
+
+Captured reviews
+================
+
+Author: Mum two boys
+Date: 6 months ago
+Rating: 5 stars
+Best medical practice you could ask for. We are very lucky.
+
+Author: andrew gray
+Date: 2 years ago
+Rating: 5 stars
+People in this area don't know how lucky they are, we moved here from Glasgow a few years ago and the doctors and staff at this practice are different class. Real health care professionals, not just there for the job.
+
+Author: Emma Oates
+Date: 3 years ago
+Rating: 5 stars
+Always helpful, friendly and easy to get an appointment.
+
+Author: Ray Naughton
+Date: 3 years ago
+Rating: 5 stars
+Ray NaughtonLocal Guide · 52 reviews · 24 photos3 years ago
+
+Author: Margaret Menzies
+Date: 4 years ago
+Rating: 1 star
+Don't bother with this place if you value your health.

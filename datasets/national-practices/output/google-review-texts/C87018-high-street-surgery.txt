@@ -1,0 +1,66 @@
+Practice: HIGH STREET SURGERY
+Canonical code: C87018
+Postcode: S62 6LW
+Google Maps title: High Street Surgery
+Google rating: 4.0
+Google review count: 38
+Google Maps URL: https://www.google.com/maps/place/High+Street+Surgery/@53.4596316,-1.3465065,17z/data=!4m8!3m7!1s0x487976b0cb533623:0x281908771ebd178d!8m2!3d53.4596284!4d-1.3439262!9m1!1b1!16s%2Fg%2F1hm1tjx87?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/C87018-high-street-surgery.json
+
+Captured reviews
+================
+
+Author: vivien zgut
+Date: a day ago
+Rating: 5 stars
+Lovely staff.
+
+Author: George Tina
+Date: a day ago
+Rating: 4 stars
+Good Service
+
+Author: Kathleen Booth
+Date: a week ago
+Rating: 5 stars
+I saw a nurse today for a health check .. I can’t remember her name but she was very friendly professional and informative about why I was having my bloods taken and what would happen next when they got the blood results back .. as I left she wished me a pleasant day ..
+
+Author: Janet Canetti
+Date: 2 weeks ago
+Rating: 5 stars
+Very pleasant nurse, made you feel at ease
+
+Author: karen ward
+Date: 2 weeks ago
+Rating: 5 stars
+Easy to arrange appointment for blood test, seen on time by a lovely member of staff happy with servjce
+
+Author: Sam Hartley
+Date: 3 weeks ago
+Rating: 5 stars
+Reassuring and professional nurse
+
+Author: Alison Ive
+Date: 3 weeks ago
+Rating: 5 stars
+Great service for me being disabled and don't get out often but for me it's always done on the phone and medication delivered also nurses come to my home
+
+Author: Kathy Russ
+Date: 3 weeks ago
+Rating: 5 stars
+I have been seeing Dr Kupczyk who is very nice. She is very caring, professional & always listens. Everyone at the sugary is nice. Always manage to get an appointment that suits me, around work.
+
+Author: Alexandra Napper
+Date: 3 weeks ago
+Rating: 5 stars
+Very efficient and helpful and made me feel at ease
+
+Author: Crooty Bear
+Date: 3 weeks ago
+Rating: 4 stars
+Generally a very good practice with lovely and helpful staff. A few issues have occurred like a prescription not being sent to the pharmacy but these things happen wherever you register.

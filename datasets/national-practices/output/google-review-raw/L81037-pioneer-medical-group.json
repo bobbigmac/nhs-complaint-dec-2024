@@ -1,0 +1,26 @@
+{
+  "practice_name": "PIONEER MEDICAL GROUP",
+  "canonical_code": "L81037",
+  "postcode": "BS10 6SP",
+  "query_used": "PIONEER MEDICAL GROUP BS10 6SP",
+  "google_maps_title": "Pioneer Medical Group",
+  "google_maps_url": "https://www.google.com/maps/place/Pioneer+Medical+Group/@51.5056236,-2.6591256,14z/data=!4m12!1m2!2m1!1sPIONEER+MEDICAL+GROUP+BS10+6SP!3m8!1s0x4871923c44f9ec1f:0x9ff3d07eec77e54f!8m2!3d51.5103765!4d-2.617445!9m1!1b1!15sCh5QSU9ORUVSIE1FRElDQUwgR1JPVVAgQlMxMCA2U1CSAQZkb2N0b3LgAQA!16s%2Fg%2F11jdkq84lk?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 64,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774146286303,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4871923c44f9ec1f%3A0x9ff3d07eec77e54f!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s40y_acT_MbWvhbIP6IzWmA8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT2tSVmFFVTFXR3czTTNOUFJWQjNUaTFwYlY5bE9FRRAB\",[\"0x0:0x9ff3d07eec77e54f\",null,1769162736264693,1769162736264693,[null,null,[\"https://www.google.com/maps/contrib/117714786490120528161/reviews?hl\\u003den\"],null,null,[\"Dominic Aspden\",\"https://lh3.googleusercontent.com/a/ACg8ocJxMAX_uIgeNbfHd1oldCX9X1ltF0gLSBcZYT4N2H6sBpZAWzE\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/117714786490120528161?hl\\u003den\"],\"117714786490120528161\",null,16,2,null,[1,4,1],24,[\"Local Guide · 16 reviews\",null,null,null,null,[null,\"0ahUKEwiOy635ubKTAxUVEmMBHWN1OrQQ7LoGCAMoAA\"]]]],null,\"a month ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Can be busy at times but the staff are all very friendly\",null,[0,56]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSVmFFVTFXR3czTTNOUFJWQjNUaTFwYlY5bE9FRRAB!2m1!1s0x0:0x9ff3d07eec77e54f!3m1!1s2@1:CAIQACodChtycF9oOkRVaEU1WGw3M3NPRVB3Ti1pbV9lOEE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2tSVmFFVTFXR3czTTNOUFJWQjNUaTFwYlY5bE9FRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2tSVmFFVTFXR3czTTNOUFJWQjNUaTFwYlY5bE9FRRJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRTVm1GRlZURlhSM2N6VFROT1VGSldRak5VYVRGd1lsWTViRTlGUlFvR2NtVjJhV1YzEgswZFJvVWtFbGlRbRpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnRTVm1GRlZURlhSM2N6VFROT1VGSldRak5VYVRGd1lsWTViRTlGUlFvR2NtRjBhVzVuEgswZFJvVWtFbGlRbSISCQAAAAAAAAAAEU_ld-x-0POfKgswZFJvVWtFbGlRbQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiOy635ubKTAxUVEmMBHWN1OrQQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiOy635ubKTAxUVEmMBHWN1OrQQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

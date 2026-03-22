@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR BURTON & DR KRISHNAN",
+  "canonical_code": "S43082",
+  "postcode": "G20 7ER",
+  "query_used": "DR BURTON & DR KRISHNAN G20 7ER",
+  "google_maps_title": "Burton Dr a E",
+  "google_maps_url": "https://www.google.com/maps/place/Burton+Dr+a+E/@55.8754801,-4.267251,17z/data=!3m1!5s0x4888443b0488225b:0x17663ff9f1db235b!4m8!3m7!1s0x4888443b02dbafed:0xda511da41d3b4db8!8m2!3d55.8754771!4d-4.2646707!9m1!1b1!16s%2Fg%2F1w8w9ln2?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774119753868,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4888443b02dbafed%3A0xda511da41d3b4db8!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sqOa-adzeC76ihbIP2_vi2Ak!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSURiNGVUU05BEAE\",[\"0x0:0xda511da41d3b4db8\",null,1722936809609541,1722936858885880,[null,null,[\"https://www.google.com/maps/contrib/117972737142548852376/reviews?hl\\u003den\"],null,null,[\"ahmad muzammil\",\"https://lh3.googleusercontent.com/a-/ALV-UjWbUrZyF7BHZ3kf2AC2sbkyIXCUIvlLJ9yUauhiFkeO3JNWP6vX\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/117972737142548852376?hl\\u003den\"],\"117972737142548852376\",null,9,1,null,[0,3,1],1,[\"9 reviews\",null,null,null,null,[null,\"0ahUKEwjww9eN17GTAxVZIWMBHQqqKZAQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"the reception is the worst so far, you treat patients like this? appalling !\",null,[0,76]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiNGVUU05BEAE!2m1!1s0x0:0xda511da41d3b4db8!3m1!1s2@1:CIHM0ogKEICAgIDb4eTSNA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURiNGVUU05BEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURiNGVUU05BEi0KFkNJSE0wb2dLRUlDQWdJRGI0WlQwVHcSE0Nnd0ltdHpIdFFZUXdPbTFwZ00aLgoXQ0lITTBvZ0tFSUNBZ0lEYjRlVFN0QUUSE0Nnd0k2ZHZIdFFZUWlMZlRvZ0kiEgkAAAAAAAAAABG4TTsdpB1R2ioTQ2d3SW10ekh0UVlRd09tMXBnTQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjww9eN17GTAxVZIWMBHQqqKZAQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjww9eN17GTAxVZIWMBHQqqKZAQ0pMFCAIoAA\"],null,\"CAESY0NBRVFBUnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lSemRaT1dWaU5sOWZSV2hDTjNOdmVHZFNZV0V5ZDBwdWF6azNORUZCUVVGQlIyZHVPVEpoWTBOaWRHb3hOWFp2V1VGRFNVRQ\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSUREaHJMWVlnEAE\",[\"0x0:0xda511da41d3b4db8\",null,1712588003791528,1712588003791528,[null,null,[\"https://www.google.com/maps/contrib/104648989211335312148/reviews?hl\\u003den\"],null,null,[\"J N\",\"https://lh3.googleusercontent.com/a/ACg8ocLs6ld32jqQmGQhRCDn1oYgMBotzCTP4KuNKlJhHfV-CqrlyyY\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/104648989211335312148?hl\\u003den\"],\"104648989211335312148\",null,7,0,null,[0,3,1],0,[\"7 reviews\",null,null,null,null,[null,\"0ahUKEwjww9eN17GTAxVZIWMBHQqqKZAQ7LoGCAYoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"The receptionists are wild. Unbelievable.\\n\\nIt is mental to see that the NHS have people like that in their reception and they don't care. Fair enough if we never paid taxes, but we actually do.\\n\\nThe least patients need is respect. If you don't believe me, try phone them and ask for an appointment, they won't just be rude but they'll hang up on you.\\n\\nAdditionally the doctors take you seriously depending on the day they have. Most times they don't.\",null,[0,120]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREaHJMWVlnEAE!2m1!1s0x0:0xda511da41d3b4db8!3m1!1s2@1:CIHM0ogKEICAgIDDhrLYYg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUREaHJMWVlnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUREaHJMWVlnEi4KF0NJSE0wb2dLRUlDQWdJRERockxZNGdFEhNDZ3dJNDRuUXNBWVF3SVMzLVFJGi0KFkNJSE0wb2dLRUlDQWdJRERockxZRWcSE0Nnd0k0NG5Rc0FZUXdJUzMtUUkiEgkAAAAAAAAAABG4TTsdpB1R2ioTQ2d3STQ0blFzQVlRd0lTMy1RSQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjww9eN17GTAxVZIWMBHQqqKZAQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjww9eN17GTAxVZIWMBHQqqKZAQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

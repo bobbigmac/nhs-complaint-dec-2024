@@ -1,0 +1,26 @@
+{
+  "practice_name": "LUCS AAH - WOODLAND HOUSE",
+  "canonical_code": "S71415",
+  "postcode": "EH9 2HL",
+  "query_used": "LUCS AAH - WOODLAND HOUSE EH9 2HL",
+  "google_maps_title": "Woodland House, Astley Ainslie Hospital",
+  "google_maps_url": "https://www.google.com/maps/place/Woodland+House,+Astley+Ainslie+Hospital/@55.9276871,-3.2034833,17z/data=!4m8!3m7!1s0x4887c7729b3c6339:0x81a24cedf9b7b240!8m2!3d55.9276841!4d-3.200903!9m1!1b1!16s%2Fg%2F11f0kxrtvc?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 32,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774113985269,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4887c7729b3c6339%3A0x81a24cedf9b7b240!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sZNG-adzEK-7rhbIPtY7v4Qo!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNsbXBEc3NBRRAB\",[\"0x0:0x81a24cedf9b7b240\",null,1700127041054080,1700127041054080,[null,null,[\"https://www.google.com/maps/contrib/102200397729649213816/reviews?hl\\u003den\"],null,null,[\"Green Machine\",\"https://lh3.googleusercontent.com/a-/ALV-UjVi-KvFpwO84subX0pihi66ihYqXfB55eC3OQqNVMV2QAMFjWVJ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/102200397729649213816?hl\\u003den\"],\"102200397729649213816\",null,0,0,null,[0,2,1],2,[\"\",null,null,null,null,[null,\"0ahUKEwj6xf_OwbGTAxURI2MBHSTeFGkQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsbXBEc3NBRRAB!2m1!1s0x0:0x81a24cedf9b7b240!3m1!1s2@1:CIHM0ogKEICAgIClmpDssAE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNsbXBEc3NBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNsbXBEc3NBRRosChZDSUhNMG9nS0VJQ0FnSUNsbXBEc2NBEhJDZ3NJd2NMWHFnWVFnT1RrR1EiEgkAAAAAAAAAABFAsrf57UyigSoSQ2dzSXdjTFhxZ1lRZ09Ua0dR\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj6xf_OwbGTAxURI2MBHSTeFGkQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj6xf_OwbGTAxURI2MBHSTeFGkQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

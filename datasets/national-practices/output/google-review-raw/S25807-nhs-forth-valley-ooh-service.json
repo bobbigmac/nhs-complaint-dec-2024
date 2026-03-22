@@ -1,0 +1,26 @@
+{
+  "practice_name": "NHS FORTH VALLEY OOH SERVICE",
+  "canonical_code": "S25807",
+  "postcode": "FK10 3JQ",
+  "query_used": "NHS FORTH VALLEY OOH SERVICE FK10 3JQ",
+  "google_maps_title": "NHS Forth Valley Lochview Unit",
+  "google_maps_url": "https://www.google.com/maps/place/NHS+Forth+Valley+Lochview+Unit/@56.0537154,-3.9424568,12z/data=!4m12!1m2!2m1!1sNHS+FORTH+VALLEY+OOH+SERVICE+FK10+3JQ!3m8!1s0x48887b119ab66081:0x21bc4bbf59e3c237!8m2!3d56.0208191!4d-3.839765!9m1!1b1!15sCiVOSFMgRk9SVEggVkFMTEVZIE9PSCBTRVJWSUNFIEZLMTAgM0pRkgETaG9zcGl0YWxfZGVwYXJ0bWVudOABAA!16s%2Fg%2F11ssqhrt1v?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774136086266,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48887b119ab66081%3A0x21bc4bbf59e3c237!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1skia_acr8GtWIhbIPlLzTuAg!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUN6dk9LdjRBRRAB\",[\"0x0:0x21bc4bbf59e3c237\",null,1717181501600152,1717181501600152,[null,null,[\"https://www.google.com/maps/contrib/117012240480694686324/reviews?hl\\u003den\"],null,null,[\"Nathan Kermode\",\"https://lh3.googleusercontent.com/a/ACg8ocL53NjLsAc3vbt6kZiMTXVs-tWZQ4Ftvm0AWR29k1LdU06UWQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/117012240480694686324?hl\\u003den\"],\"117012240480694686324\",null,1,0,null,[0,1,1],0,[\"1 review\",null,null,null,null,[null,\"0ahUKEwj63M75k7KTAxUCHmMBHRrPNMcQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"It was a very bad experience 🤬🤬🤬🤬\",null,[0,33]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6dk9LdjRBRRAB!2m1!1s0x0:0x21bc4bbf59e3c237!3m1!1s2@1:CIHM0ogKEICAgICzvOKv4AE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUN6dk9LdjRBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUN6dk9LdjRBRRItChZDSUhNMG9nS0VJQ0FnSUN6dk9LdkVBEhNDZ3dJdmJqb3NnWVF3Sy1XbmdJGi4KF0NJSE0wb2dLRUlDQWdJQ3p2T0t2a0FFEhNDZ3dJdmJqb3NnWVF3Sy1XbmdJIhIJAAAAAAAAAAARN8LjWb9LvCEqE0Nnd0l2Ympvc2dZUXdLLVduZ0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj63M75k7KTAxUCHmMBHRrPNMcQoykIBCgB\"],null,[null,[[1,1]]]],\"0ahUKEwj63M75k7KTAxUCHmMBHRrPNMcQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

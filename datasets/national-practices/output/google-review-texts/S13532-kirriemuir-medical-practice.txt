@@ -1,0 +1,26 @@
+Practice: KIRRIEMUIR MEDICAL PRACTICE
+Canonical code: S13532
+Postcode: DD8 4ES
+Google Maps title: Kirriemuir Medical Practice
+Google rating: 4.5
+Google review count: 2
+Google Maps URL: https://www.google.com/maps/place/Kirriemuir+Medical+Practice/@56.6727267,-3.0088044,17z/data=!4m8!3m7!1s0x4886656e496b9b3f:0xc65c0e51b086fc18!8m2!3d56.6727238!4d-3.0062241!9m1!1b1!16s%2Fg%2F11bzsz5ddr?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S13532-kirriemuir-medical-practice.json
+
+Captured reviews
+================
+
+Author: Al Pacino
+Date: 3 years ago
+Rating: 4 stars
+Ok
+
+Author: Andrew Fraser
+Date: 4 years ago
+Rating: 5 stars
+Mum had to go there because she had a sore arm and neck

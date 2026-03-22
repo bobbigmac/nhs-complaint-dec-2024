@@ -1,0 +1,51 @@
+Practice: BENTHAM MEDICAL PRACTICE
+Canonical code: B82061
+Postcode: LA2 7JP
+Google Maps title: Bentham Medical Practice
+Google rating: 4.4
+Google review count: 7
+Google Maps URL: https://www.google.com/maps/place/Bentham+Medical+Practice/@54.1192078,-2.5143245,17z/data=!4m12!1m2!2m1!1sBENTHAM+MEDICAL+PRACTICE+LA2+7JP!3m8!1s0x487c7c2448690001:0xb80cd001b16338d3!8m2!3d54.119211!4d-2.511705!9m1!1b1!15sCiBCRU5USEFNIE1FRElDQUwgUFJBQ1RJQ0UgTEEyIDdKUFoiIiBiZW50aGFtIG1lZGljYWwgcHJhY3RpY2UgbGEyIDdqcJIBGWZhbWlseV9wcmFjdGljZV9waHlzaWNpYW6aASNDaFpEU1VoTk1HOW5TMFZKUTBGblRVTkphVGhmTUVkbkVBReABAPoBBAg1EEY!16s%2Fg%2F11h21qjxq7?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 7
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/B82061-bentham-medical-practice.json
+
+Captured reviews
+================
+
+Author: Paul
+Date: a month ago
+Rating: 5 stars
+The waiting room is nice and spacious and the reception staff and friendly and welcoming.
+
+Author: The Dewhirsts
+Date: 2 months ago
+Rating: 5 stars
+I had been struggling with unidentified stomach pain and was seen by Dr Plum who examined me, quickly arranged an ultra sound appointment from which a diagnosis was made. She then informed me of the outcome within hours of the procedure. I cannot praise her enough for her caring attitude and professionalism. Having been with the practice for over 20 years both my husband and I have always found an exceptional level of care from every member of staff at Bentham Medical Practice.
+
+Author: W
+Date: 11 months ago
+Rating: 5 stars
+I was struggling with a nasty cough (I'm asthmatic). I phoned triage and they saw me within a few hours - thank you Dr Kew. Even though their pharmacy had closed by this time, they stayed late to make sure I got my urgent medication. The professionalism of the practice staff is humbling to behold.
+
+Author: Angela Barnes
+Date: a year ago
+Rating: 5 stars
+As new patients we were warmly welcomed to the surgery. We had a thorough health check by Nurse Lisanne who was friendly, competent and painlessly took blood samples! Thank you for providing such a good service. Angela and Tim Barnes
+
+Author: Kath Scaife
+Date: a year ago
+Rating: 1 star
+Absolutely disgusting attitude from the receptionist to the practice manager. NHS is failing badly
+
+Author: Jens Bollerod
+Date: 2 years ago
+Rating: 5 stars
+Excellent practice !!
+
+Author: Jeff Gibson
+Date: 2 years ago
+Rating: 5 stars
+We were on holiday in the area and needed to see a GP. The receptionist was very friendly and helpful, our appointment was arranged quickly and the GP we saw was great.
