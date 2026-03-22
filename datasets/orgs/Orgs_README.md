@@ -13,6 +13,7 @@ Current status:
 - Not wired into the main dataset build
 - Not downloaded yet
 - Intended as a raw prep bundle to inspect first, then selectively import later
+- The source families here now overlap directly with the national-practices count-enrichment plan: Wales `statswales`, Scotland `open-data`, and Northern Ireland `opendatani`
 
 What the script wants to pull:
 

@@ -31,11 +31,25 @@ JSON mirrors are also written beside each CSV.
 - England and Wales:
   - NHS ODS ORD API active `RO177` organisations
   - filtered to detail records that also have active `RO76` `GP PRACTICE`
-  - England rows are enriched with local registered-patient counts from [gp-reg-pat-prac-all.csv](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/registered_patients/gp-reg-pat-prac-all.csv)
+  - England rows are enriched with registered-patient counts from [gp-reg-pat-prac-all.csv](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/registered_patients/gp-reg-pat-prac-all.csv)
+  - Wales rows are enriched with registered-patient counts from the live StatsWales `HLTH0426` export
 - Scotland:
   - NHS ODS ORD API active `RO227` `SCOTTISH GP PRACTICE`
+  - rows are enriched with registered-patient counts from the live NHS Scotland GP practice contact-details/list-size export
 - Northern Ireland:
   - NHS ODS ORD API active `RO315` `NORTHERN IRELAND GP PRACTICE`
+  - rows are enriched with registered-patient counts from the live OpenDataNI GP practice reference file
+
+## Survey coverage
+
+- England:
+  - `patient_survey_*` metadata points at the GP Patient Survey and marks practice-level coverage as available
+- Wales:
+  - the build currently records the NHS Wales People’s Experience Survey as the identified equivalent source, but does not yet pull a practice-level feed
+- Scotland:
+  - the build currently records the Health and Care Experience Survey as the identified equivalent source, but does not yet parse the current Public Health Scotland dashboard export
+- Northern Ireland:
+  - the build records GP patient surveys as discontinued after `2010/11`, so there is no current practice-level equivalent wired here
 
 ## Output shape
 
@@ -49,6 +63,13 @@ The CSVs are designed to be close to the existing collector input shape. Key fie
 - `website_url`
 - `nation`
 - `registered_patient_count`
+- `registered_patient_count_source`
+- `registered_patient_count_source_url`
+- `registered_patient_count_snapshot`
+- `patient_survey_name`
+- `patient_survey_status`
+- `patient_survey_level`
+- `patient_survey_url`
 - `google_maps_query`
 
 `google_maps_query` is already prebuilt as `practice_name + postcode`.
@@ -69,6 +90,8 @@ From [summary.json](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/nat
 - This is a practice-level national prep set, not a branch-heavy exhaustive site inventory.
 - Only `360` of the current Greater Manchester dataset codes overlap directly with this national practice-level build.
   - The rest are mostly branch, alias, or locally discovered rows that do not appear as direct practice-level matches in this source pass.
+- Count coverage is now UK-wide in the build logic, but the live non-England source files do not perfectly overlap with every ODS code, so some Scotland / Northern Ireland rows can still remain blank.
+- Survey coverage is still asymmetric: England is the only nation currently wired to a practice-level patient-survey source in the wider repo.
 - These files are for future short-form Google Maps collection only. They do not imply that a distinct Google place exists for every canonical code.
 
 ## Future short scan pattern
