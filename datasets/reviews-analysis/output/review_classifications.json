@@ -19,7 +19,7 @@
     "c9": "fully booked, fully, booked, impossible appointmen...",
     "c10": "appointments day, day, appointments, nearly, amazi...",
     "c11": "lazy, rude, unprofessional rude, rude lazy, unprof...",
-    "c18": "worst gp, universe, worst, gp ve, avoid place",
+    "c18": "worst gp, worst, universe, gp ve, avoid place",
     "c13": "years ago, years, ago, reviewsedited, reviewsedite...",
     "c14": "helpful polite, polite staff, polite, sorting, hel...",
     "c15": "appointment need, phone number, need, die, phone a...",
@@ -373,10 +373,10 @@
       ]
     },
     "Y02960:19": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c34",
+      "primary_bucket": "c34",
       "buckets": [
-        "c24"
+        "c34"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -685,10 +685,10 @@
       ]
     },
     "Y02960:38": {
-      "cluster_id": "c18",
-      "primary_bucket": "c18",
+      "cluster_id": "c19",
+      "primary_bucket": "c19",
       "buckets": [
-        "c18"
+        "c19"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",
@@ -1696,10 +1696,10 @@
       ]
     },
     "Y02960:104": {
-      "cluster_id": "c11",
-      "primary_bucket": "c11",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c11"
+        "c1"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -6082,10 +6082,10 @@
       ]
     },
     "Y02325:29": {
-      "cluster_id": "c33",
-      "primary_bucket": "c33",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c33"
+        "c1"
       ],
       "sentiment": "positive",
       "operational_category": "access",
@@ -6147,10 +6147,10 @@
       ]
     },
     "Y02325:33": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
+      "cluster_id": "c6",
+      "primary_bucket": "c6",
       "buckets": [
-        "c19"
+        "c6"
       ],
       "sentiment": "positive",
       "operational_category": "medicines_and_tests",
@@ -13092,10 +13092,10 @@
       ]
     },
     "Y02713:90": {
-      "cluster_id": "c24",
-      "primary_bucket": "c24",
+      "cluster_id": "c36",
+      "primary_bucket": "c36",
       "buckets": [
-        "c24"
+        "c36"
       ],
       "sentiment": "positive",
       "operational_category": "front_desk",
@@ -14525,10 +14525,10 @@
       ]
     },
     "Y02875:56": {
-      "cluster_id": "c34",
-      "primary_bucket": "c34",
+      "cluster_id": "c18",
+      "primary_bucket": "c18",
       "buckets": [
-        "c34"
+        "c18"
       ],
       "sentiment": "negative",
       "operational_category": "access",
@@ -16777,20 +16777,6 @@
         "access"
       ]
     },
-    "P85016001:0": {
-      "cluster_id": "uncategorised",
-      "primary_bucket": "uncategorised",
-      "buckets": [
-        "uncategorised"
-      ],
-      "sentiment": "positive",
-      "operational_category": "uncategorised",
-      "subcategory": "",
-      "operational_confidence": 0.0,
-      "operational_categories": [
-        "uncategorised"
-      ]
-    },
     "P86001:0": {
       "cluster_id": "c1",
       "primary_bucket": "c1",
@@ -16903,10 +16889,10 @@
       ]
     },
     "P86001:7": {
-      "cluster_id": "c19",
-      "primary_bucket": "c19",
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
       "buckets": [
-        "c19"
+        "c1"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -17069,6 +17055,161 @@
       "primary_bucket": "c53",
       "buckets": [
         "c53"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
+    "P86003002:0": {
+      "cluster_id": "c26",
+      "primary_bucket": "c26",
+      "buckets": [
+        "c26"
+      ],
+      "sentiment": "positive",
+      "operational_category": "access",
+      "subcategory": "appointment_booking",
+      "operational_confidence": 0.85,
+      "operational_categories": [
+        "access",
+        "clinical_care",
+        "positive_feedback"
+      ]
+    },
+    "P86003002:1": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "access",
+      "subcategory": "telephone_access",
+      "operational_confidence": 0.9,
+      "operational_categories": [
+        "access",
+        "clinical_care",
+        "positive_feedback"
+      ]
+    },
+    "P86003002:2": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "clinical_care",
+      "subcategory": "clinical_quality",
+      "operational_confidence": 0.65,
+      "operational_categories": [
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86003002:3": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "clinical_care",
+      "subcategory": "clinical_quality",
+      "operational_confidence": 0.65,
+      "operational_categories": [
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86003002:4": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "access",
+      "subcategory": "appointment_booking",
+      "operational_confidence": 0.85,
+      "operational_categories": [
+        "access",
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86003002:5": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "access",
+      "subcategory": "appointment_booking",
+      "operational_confidence": 0.85,
+      "operational_categories": [
+        "access",
+        "management_and_change",
+        "positive_feedback"
+      ]
+    },
+    "P86003002:6": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "positive_feedback",
+      "subcategory": "gratitude",
+      "operational_confidence": 0.7,
+      "operational_categories": [
+        "positive_feedback"
+      ]
+    },
+    "P86003002:7": {
+      "cluster_id": "c55",
+      "primary_bucket": "c55",
+      "buckets": [
+        "c55"
+      ],
+      "sentiment": "positive",
+      "operational_category": "clinical_care",
+      "subcategory": "clinical_quality",
+      "operational_confidence": 0.65,
+      "operational_categories": [
+        "positive_feedback",
+        "clinical_care"
+      ]
+    },
+    "P86003002:8": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
+      ],
+      "sentiment": "positive",
+      "operational_category": "admin_and_referrals",
+      "subcategory": "referrals",
+      "operational_confidence": 0.95,
+      "operational_categories": [
+        "admin_and_referrals",
+        "access",
+        "clinical_care",
+        "management_and_change",
+        "positive_feedback"
+      ]
+    },
+    "P86003002:9": {
+      "cluster_id": "c1",
+      "primary_bucket": "c1",
+      "buckets": [
+        "c1"
       ],
       "sentiment": "positive",
       "operational_category": "positive_feedback",
@@ -17832,10 +17973,10 @@
       ]
     },
     "Y02755001:9": {
-      "cluster_id": "c1",
-      "primary_bucket": "c1",
+      "cluster_id": "c0",
+      "primary_bucket": "c0",
       "buckets": [
-        "c1"
+        "c0"
       ],
       "sentiment": "negative",
       "operational_category": "medicines_and_tests",

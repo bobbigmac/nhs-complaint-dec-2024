@@ -1,0 +1,66 @@
+Practice: PRESTON MEDICAL CENTRE
+Canonical code: E84678
+Postcode: HA9 8JZ
+Google Maps title: Preston Medical Centre
+Google rating: 3.7
+Google review count: 124
+Google Maps URL: https://www.google.com/maps/place/Preston+Medical+Centre/@51.5639825,-0.2949719,17z/data=!4m12!1m2!2m1!1sPRESTON+MEDICAL+CENTRE+HA9+8JZ!3m8!1s0x487613d1b2143f13:0xee26641a56d1a32c!8m2!3d51.5630235!4d-0.2924364!9m1!1b1!15sCh5QUkVTVE9OIE1FRElDQUwgQ0VOVFJFIEhBOSA4SlpaICIecHJlc3RvbiBtZWRpY2FsIGNlbnRyZSBoYTkgOGp6kgEGZG9jdG9ymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJwV2FGcElWWGhXUjJOMFUzcEpOR0ZwTVhaTmJHUlZUakJPTkZFeFJSQULgAQD6AQUIjQEQOg!16s%2Fg%2F1tfgj969?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: datasets/national-practices/output/google-review-raw/E84678-preston-medical-centre.json
+
+Captured reviews
+================
+
+Author: Jake Oni
+Date: a week ago
+Rating: 5 stars
+Dr Patel and his entire services are the best. Dr Patel is very calm and pays attention to the patients. The surgery team are very helpful and I don’t regret choosing Dr Patel as my family doctor
+
+Author: Michelle Peters
+Date: a month ago
+Rating: 5 stars
+A very friendly, efficient and caring surgery. My experience with Dr Rajpal, the nurses and the office staff have all been extremely positive. I have been cared for and looked after to an exceptionally high standard, and for that, I would like to publicly thank them profusely for keeping me healthy & well.
+
+Author: Ana Bejerea
+Date: Edited a month ago
+Rating: 5 stars
+The best nurse I have seen, Tiara ,Dr.Rajbal and Dr. Patel very good and careful with all my family I can tell thank you very much for everything.
+
+Author: Mohammed Ali
+Date: 2 months ago
+Rating: 5 stars
+I had a fantastic experience at Preston Road Surgery after being referred there for surgery. Dr. Patel was excellent from the start, using diagrams to clearly explain the procedure and the cause of my issue. The surgery was quick and the skill involved was evident; despite having a low pain threshold, I experienced almost no pain and very little soreness, suggesting a very precise touch. I was off pain medication within two days. Dr. Patel is not only a lovely, approachable person but clearly a highly experienced surgeon (formerly one of the country's most senior medical professionals). His follow-up care and guidance towards my full recovery have been outstanding.
+
+Author: Hardik Joshi
+Date: 2 months ago
+Rating: 5 stars
+Hardik Joshi2 reviews2 months ago
+
+Author: Mo A
+Date: 2 months ago
+Rating: 5 stars
+Dr Nish Rajpal is the very first dr I’ve seen since transferring GP. I must say I’m very happy and have confidence in Dr rajpal who explained everything. Very patient focused and listens very well. The reception team are lovely as well and welcoming. Not many GPs are this nice nowadays and this must be recognised! Thank you all
+
+Author: Loïc Mabika
+Date: 2 months ago
+Rating: 5 stars
+I would also like to warmly praise the reception staff, who are truly outstanding. All the ladies are incredibly sweet, helpful, and genuinely passionate about their work. They are always polite, patient, and reassuring, even during busy times. What stands out most is how quickly they respond and how efficiently they arrange the best and fastest possible appointments. Their professionalism, kindness, and willingness to help make a real difference and create a welcoming, supportive atmosphere from the very first contact. They play an essential role in making the practice run so smoothly, and their friendliness and efficiency never go unnoticed. I am truly thankful for their hard work and commitment, which consistently makes every interaction a positive and reassuring experience.
+
+Author: Loïc Mabika
+Date: 2 months ago
+Rating: 5 stars
+I would like to express my deepest gratitude and appreciation for Doctor Patel and Doctor Rajpal at my GP practice. Both doctors demonstrated exceptional professionalism, kindness, and clinical skill when treating a potentially threatening mole on my back. From the very first consultation, they made me feel listened to, reassured, and completely at ease. Their explanations were clear and thorough, and their calm, confident manner inspired immediate trust. The procedure itself was handled with great care and precision, and their attention to both my physical comfort and peace of mind truly stood out. It is rare to encounter healthcare professionals who combine such high-level medical expertise with genuine compassion and humanity. I am extremely thankful for their swift action, reassurance, and outstanding care. I cannot recommend Doctor Patel and Doctor Rajpal highly enough. They are a credit to their profession and an invaluable asset to the practice.
+
+Author: Diana Gavan
+Date: 3 months ago
+Rating: 5 stars
+Excelent service ! The best GP surgery I have been in last 11 years . Efficient and reliable doctor. I highly recommend Mr Patel , an amazing doctor with a lot of experience and knowledge, showed care for me even if I am not his patient, I can’t say enough of how much he cared about me.
+
+Author: Rameshbhai Prajapati
+Date: 3 months ago
+Rating: 5 stars
+Very good service

@@ -441,9 +441,9 @@
           "_index": 19,
           "estimated_year": 2025,
           "estimated_months_ago": 4,
-          "primary_bucket": "c24",
+          "primary_bucket": "c34",
           "buckets": [
-            "c24"
+            "c34"
           ],
           "operational_category": "access",
           "operational_categories": [
@@ -867,9 +867,9 @@
           "_index": 38,
           "estimated_year": 2023,
           "estimated_months_ago": 36,
-          "primary_bucket": "c18",
+          "primary_bucket": "c19",
           "buckets": [
-            "c18"
+            "c19"
           ],
           "operational_category": "medicines_and_tests",
           "operational_categories": [
@@ -2274,9 +2274,9 @@
           "_index": 104,
           "estimated_year": 2018,
           "estimated_months_ago": 96,
-          "primary_bucket": "c11",
+          "primary_bucket": "c1",
           "buckets": [
-            "c11"
+            "c1"
           ],
           "operational_category": "access",
           "operational_categories": [
@@ -8444,9 +8444,9 @@
           "_index": 29,
           "estimated_year": null,
           "estimated_months_ago": null,
-          "primary_bucket": "c33",
+          "primary_bucket": "c1",
           "buckets": [
-            "c33"
+            "c1"
           ],
           "operational_category": "access",
           "operational_categories": [
@@ -8533,9 +8533,9 @@
           "_index": 33,
           "estimated_year": null,
           "estimated_months_ago": null,
-          "primary_bucket": "c19",
+          "primary_bucket": "c6",
           "buckets": [
-            "c19"
+            "c6"
           ],
           "operational_category": "medicines_and_tests",
           "operational_categories": [
@@ -18230,9 +18230,9 @@
           "_index": 90,
           "estimated_year": 2021,
           "estimated_months_ago": 60,
-          "primary_bucket": "c24",
+          "primary_bucket": "c36",
           "buckets": [
-            "c24"
+            "c36"
           ],
           "operational_category": "front_desk",
           "operational_categories": [
@@ -20241,9 +20241,9 @@
           "_index": 56,
           "estimated_year": 2019,
           "estimated_months_ago": 84,
-          "primary_bucket": "c34",
+          "primary_bucket": "c18",
           "buckets": [
-            "c34"
+            "c18"
           ],
           "operational_category": "access",
           "operational_categories": [
@@ -23419,36 +23419,6 @@
       "inclusion_reason": "negative"
     },
     {
-      "canonical_code": "P85016001",
-      "practice_name": "Dr. J Wright & Partners",
-      "gtd_managed": false,
-      "gtd_takeover_date": "",
-      "review_count": 1,
-      "reviews": [
-        {
-          "author": "philip hinsley",
-          "date_raw": "5 years ago",
-          "rating_stars": 5,
-          "rating_label": "5 stars",
-          "text": "",
-          "_index": 0,
-          "estimated_year": 2021,
-          "estimated_months_ago": 60,
-          "primary_bucket": "uncategorised",
-          "buckets": [
-            "uncategorised"
-          ],
-          "operational_category": "uncategorised",
-          "operational_categories": [
-            "uncategorised"
-          ],
-          "subcategory": "",
-          "operational_confidence": 0.0
-        }
-      ],
-      "inclusion_reason": "positive"
-    },
-    {
       "canonical_code": "P86001",
       "practice_name": "Milnrow Village Practice",
       "gtd_managed": false,
@@ -23617,9 +23587,9 @@
           "_index": 7,
           "estimated_year": null,
           "estimated_months_ago": null,
-          "primary_bucket": "c19",
+          "primary_bucket": "c1",
           "buckets": [
-            "c19"
+            "c1"
           ],
           "operational_category": "positive_feedback",
           "operational_categories": [
@@ -23848,6 +23818,231 @@
           "primary_bucket": "c53",
           "buckets": [
             "c53"
+          ],
+          "operational_category": "positive_feedback",
+          "operational_categories": [
+            "positive_feedback"
+          ],
+          "subcategory": "gratitude",
+          "operational_confidence": 0.7
+        }
+      ],
+      "inclusion_reason": "positive"
+    },
+    {
+      "canonical_code": "P86003002",
+      "practice_name": "Norden Surgery",
+      "gtd_managed": false,
+      "gtd_takeover_date": "",
+      "review_count": 10,
+      "reviews": [
+        {
+          "author": "Kay Riley",
+          "date_raw": "6 days ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "I\u2019ve been a patient since 1975 and always been treated with care both by the doctors and support staff. Using Patches to make an appointment has made it so less stressful. All the doctors are excellent. I saw Dr Aslam today and she listened and was very understanding.",
+          "_index": 0,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c26",
+          "buckets": [
+            "c26"
+          ],
+          "operational_category": "access",
+          "operational_categories": [
+            "access",
+            "clinical_care",
+            "positive_feedback"
+          ],
+          "subcategory": "appointment_booking",
+          "operational_confidence": 0.85
+        },
+        {
+          "author": "Mohammed Moazam",
+          "date_raw": "a week ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "Been going there for a few decades. They have made great improvements over the years. The doctors are caring and listen to your concerns. All the staff are very respectful and helpful. Practice response date: a week ago Practice response: Hi Mohammed, Thank you very much for your fabulous review and we\u2019re delighted that you have had positive experiences with us over the years and particularly the appreciation for our staff. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you.",
+          "_index": 1,
+          "estimated_year": null,
+          "estimated_months_ago": null,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "access",
+          "operational_categories": [
+            "access",
+            "clinical_care",
+            "positive_feedback"
+          ],
+          "subcategory": "telephone_access",
+          "operational_confidence": 0.9
+        },
+        {
+          "author": "Sara Grace",
+          "date_raw": "2 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "Excellent service. Patch\u2019s is much quicker and less stressful. Practice response date: a week ago Practice response: Hi Sara, Thank you very much for your fabulous review and we\u2019re delighted that you have had an excellent service with us. The whole team does work extremely hard to provide excellent care. We\u2019re delighted you\u2019re finding the patch\u2019s service to be great. We will share your feedback with our team who are very grateful for your support. Thank you.",
+          "_index": 2,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "clinical_care",
+          "operational_categories": [
+            "positive_feedback",
+            "clinical_care"
+          ],
+          "subcategory": "clinical_quality",
+          "operational_confidence": 0.65
+        },
+        {
+          "author": "steve holmes",
+          "date_raw": "2 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "Always a great experience- excellent care Practice response date: a week ago Practice response: Hi Steve, Thank you very much for your fabulous review and we\u2019re delighted that you have had a great experience with us. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you.",
+          "_index": 3,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "clinical_care",
+          "operational_categories": [
+            "positive_feedback",
+            "clinical_care"
+          ],
+          "subcategory": "clinical_quality",
+          "operational_confidence": 0.65
+        },
+        {
+          "author": "Jean Downes",
+          "date_raw": "3 weeks ago",
+          "rating_stars": 4,
+          "rating_label": "4 stars",
+          "text": "The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided. Practice response date: a week ago Practice response: Hi Jean, Thank you very much for your positive feedback and we\u2019re really grateful for it. We\u2019re pleased you\u2019ve noticed significant improvements in recent times and are happy with the care you receive. We will share your comment with our practice team. We\u2019re all really grateful for your support. Thank you.",
+          "_index": 4,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "access",
+          "operational_categories": [
+            "access",
+            "positive_feedback",
+            "clinical_care"
+          ],
+          "subcategory": "appointment_booking",
+          "operational_confidence": 0.85
+        },
+        {
+          "author": "Megan Roscoe",
+          "date_raw": "3 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable. Practice response date: a week ago Practice response: Hi Megan, Thank you very much for your positive feedback and review. We\u2019ve been working very hard to improve our appointments system and access. We\u2019re delighted you\u2019ve found the new system to be really positive. We will share your praise with Dr Alam and the team who will all be grateful for your support. Thank you.",
+          "_index": 5,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "access",
+          "operational_categories": [
+            "access",
+            "management_and_change",
+            "positive_feedback"
+          ],
+          "subcategory": "appointment_booking",
+          "operational_confidence": 0.85
+        },
+        {
+          "author": "Salvatore Melidoni",
+          "date_raw": "3 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "The best service ever. Kind and considerate. Thank you. Practice response date: a week ago Practice response: Hi Salvatore, Thank you very much for your lovely feedback and support. We will share it with our practice team. It means a lot to us and we\u2019re really grateful. Thank you.",
+          "_index": 6,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "positive_feedback",
+          "operational_categories": [
+            "positive_feedback"
+          ],
+          "subcategory": "gratitude",
+          "operational_confidence": 0.7
+        },
+        {
+          "author": "JAYAMALINI PARALIL",
+          "date_raw": "3 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "This Gp provides excellent services..",
+          "_index": 7,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c55",
+          "buckets": [
+            "c55"
+          ],
+          "operational_category": "clinical_care",
+          "operational_categories": [
+            "positive_feedback",
+            "clinical_care"
+          ],
+          "subcategory": "clinical_quality",
+          "operational_confidence": 0.65
+        },
+        {
+          "author": "Sarah Whitehead",
+          "date_raw": "3 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "I have been a patient at this surgery for 30+ years. The changes made in the last few months are hugely positive and the service and personal interactions have vastly improved. The Patches system is brilliant and is so much easier for someone who works and travels extensively to use. My GP is Dr Alam and he has supported me throughout various health issues over the years - always caring, listening and extremely helpful.",
+          "_index": 8,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
+          ],
+          "operational_category": "admin_and_referrals",
+          "operational_categories": [
+            "admin_and_referrals",
+            "access",
+            "clinical_care",
+            "management_and_change",
+            "positive_feedback"
+          ],
+          "subcategory": "referrals",
+          "operational_confidence": 0.95
+        },
+        {
+          "author": "Mark Wood",
+          "date_raw": "3 weeks ago",
+          "rating_stars": 5,
+          "rating_label": "5 stars",
+          "text": "I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery. Practice response date: a week ago Practice response: Hi Mark, Thank you very much for your wonderful review and support for our whole team. It means a lot to us. We really appreciate it and will share your feedback with our practice team. Thank you.",
+          "_index": 9,
+          "estimated_year": 2026,
+          "estimated_months_ago": 0,
+          "primary_bucket": "c1",
+          "buckets": [
+            "c1"
           ],
           "operational_category": "positive_feedback",
           "operational_categories": [
@@ -24968,9 +25163,9 @@
           "_index": 9,
           "estimated_year": 2024,
           "estimated_months_ago": 24,
-          "primary_bucket": "c1",
+          "primary_bucket": "c0",
           "buckets": [
-            "c1"
+            "c0"
           ],
           "operational_category": "medicines_and_tests",
           "operational_categories": [
@@ -25766,88 +25961,88 @@
   ],
   "recent_reviews_across_manchester": [],
   "manchester_region_overview": {
-    "practice_count": 374,
-    "review_count": 46403,
+    "practice_count": 378,
+    "review_count": 46538,
     "rating_counts": {
       "0": 0,
-      "1": 13142,
-      "2": 1219,
-      "3": 1174,
-      "4": 3127,
-      "5": 27741
+      "1": 13198,
+      "2": 1225,
+      "3": 1180,
+      "4": 3137,
+      "5": 27798
     },
     "rating_counts_by_year": {
       "2026": {
         "0": 0,
-        "1": 531,
+        "1": 534,
         "2": 81,
-        "3": 122,
+        "3": 123,
         "4": 406,
         "5": 3450
       },
       "2025": {
         "0": 0,
-        "1": 1346,
+        "1": 1353,
         "2": 186,
         "3": 173,
-        "4": 720,
-        "5": 6956
+        "4": 721,
+        "5": 6967
       },
       "2024": {
         "0": 0,
-        "1": 1923,
-        "2": 163,
-        "3": 130,
-        "4": 358,
-        "5": 2921
+        "1": 1932,
+        "2": 166,
+        "3": 132,
+        "4": 365,
+        "5": 2929
       },
       "2023": {
         "0": 0,
-        "1": 2233,
-        "2": 144,
+        "1": 2238,
+        "2": 145,
         "3": 115,
         "4": 324,
-        "5": 2843
+        "5": 2860
       },
       "2022": {
         "0": 0,
-        "1": 1898,
-        "2": 134,
-        "3": 103,
-        "4": 153,
-        "5": 1339
+        "1": 1911,
+        "2": 135,
+        "3": 105,
+        "4": 154,
+        "5": 1340
       },
       "2021": {
         "0": 0,
-        "1": 698,
+        "1": 701,
         "2": 60,
         "3": 28,
         "4": 93,
-        "5": 758
+        "5": 762
       },
       "2020": {
         "0": 0,
-        "1": 1053,
+        "1": 1059,
         "2": 82,
         "3": 87,
-        "4": 121,
+        "4": 122,
         "5": 733
       },
       "2019": {
         "0": 0,
         "1": 748,
         "2": 73,
-        "3": 59,
+        "3": 60,
         "4": 93,
-        "5": 497
+        "5": 500
       },
       "2018": {
         "0": 0,
-        "1": 417,
+        "1": 418,
         "2": 42,
         "3": 55,
         "4": 94,
-        "5": 368
+        "5": 369
       },
       "2017": {
         "0": 0,
@@ -25890,7 +26085,7 @@
     "c9": "fully booked, fully, booked, impossible appointmen...",
     "c10": "appointments day, day, appointments, nearly, amazi...",
     "c11": "lazy, rude, unprofessional rude, rude lazy, unprof...",
-    "c18": "worst gp, universe, worst, gp ve, avoid place",
+    "c18": "worst gp, worst, universe, gp ve, avoid place",
     "c13": "years ago, years, ago, reviewsedited, reviewsedite...",
     "c14": "helpful polite, polite staff, polite, sorting, hel...",
     "c15": "appointment need, phone number, need, die, phone a...",

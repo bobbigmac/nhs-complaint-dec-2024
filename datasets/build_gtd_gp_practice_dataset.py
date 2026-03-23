@@ -35,6 +35,8 @@ NATIONAL_GOOGLE_REVIEW_RESULTS_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "google_ma
 NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.csv"
 SCOTLAND_HACE_DATA_JSON = NATIONAL_PRACTICES_SCOTLAND_DIR / "hace_metrics.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
+MANCHESTER_CATCHMENT_BUNDLE_NAME = "manchester-practice-catchments.geojson"
+ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR = BASE_DIR / "catchments" / ".cache" / "gp-catchments-england" / "by_practice"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
 from deprivation.practice_deprivation_lookup import load_cached_practice_deprivation_lookup, write_practice_deprivation_lookup
@@ -698,6 +700,132 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
 
 def write_json(path: Path, rows: list[dict[str, Any]]) -> None:
     path.write_text(json.dumps(apply_gtd_takeover_metadata(rows), indent=2), encoding="utf-8")
+
+
+def load_google_review_results(path: Path = GOOGLE_REVIEW_RESULTS_JSON) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return payload if isinstance(payload, list) else []
+
+
+def catchment_base_code(code: str) -> str:
+    normalized = str(code or "").strip().upper()
+    match = re.match(r"^([A-Z]\d{5})(\d{3})$", normalized)
+    return match.group(1) if match else normalized
+
+
+def compact_geojson_geometry(value: Any, digits: int = 5) -> Any:
+    if isinstance(value, float):
+        return round(value, digits)
+    if isinstance(value, list):
+        return [compact_geojson_geometry(item, digits) for item in value]
+    if isinstance(value, dict):
+        return {key: compact_geojson_geometry(item, digits) for key, item in value.items()}
+    return value
+
+
+def geojson_features_from_payload(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    kind = payload.get("type")
+    if kind == "FeatureCollection":
+        features = payload.get("features", [])
+        return features if isinstance(features, list) else []
+    if kind == "Feature":
+        return [payload]
+    return []
+
+
+def write_manchester_catchment_bundle(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
+    review_results = load_google_review_results()
+    full_feed_results = [row for row in review_results if str(row.get("review_collection_mode", "")).strip() == "full_feed"]
+    row_name_by_code = {
+        str(row.get("canonical_code", "")).strip(): str(row.get("practice_name", "")).strip()
+        for row in rows
+        if str(row.get("canonical_code", "")).strip()
+    }
+    bundle_groups: dict[str, dict[str, Any]] = {}
+    covered_full_feed_codes: set[str] = set()
+    missing_codes: list[str] = []
+
+    for result in full_feed_results:
+        code = str(result.get("canonical_code", "")).strip()
+        if not code:
+            continue
+        direct_path = ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR / f"{code}.geojson"
+        base_code = catchment_base_code(code)
+        base_path = ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR / f"{base_code}.geojson"
+        if direct_path.exists():
+            resolved_code = code
+            source_path = direct_path
+        elif base_path.exists():
+            resolved_code = base_code
+            source_path = base_path
+        else:
+            missing_codes.append(code)
+            continue
+        covered_full_feed_codes.add(code)
+        group = bundle_groups.setdefault(
+            resolved_code,
+            {
+                "source_path": source_path,
+                "codes": set(),
+                "names": set(),
+            },
+        )
+        group["codes"].add(code)
+        group["codes"].add(resolved_code)
+        preferred_name = row_name_by_code.get(code) or row_name_by_code.get(resolved_code) or str(result.get("practice_name", "")).strip()
+        if preferred_name:
+            group["names"].add(preferred_name)
+
+    features: list[dict[str, Any]] = []
+    for resolved_code, group in sorted(bundle_groups.items()):
+        payload = json.loads(Path(group["source_path"]).read_text(encoding="utf-8"))
+        source_features = geojson_features_from_payload(payload)
+        feature_names = sorted(name for name in group["names"] if name)
+        label = feature_names[0] if feature_names else resolved_code
+        codes = sorted(code for code in group["codes"] if code)
+        for feature in source_features:
+            source_props = feature.get("properties", {}) if isinstance(feature, dict) else {}
+            out_props = {
+                "source_code": resolved_code,
+                "codes": codes,
+                "label": label,
+            }
+            area_km2 = source_props.get("Area_Km2")
+            if area_km2 not in ("", None):
+                out_props["area_km2"] = area_km2
+            features.append(
+                {
+                    "type": "Feature",
+                    "properties": out_props,
+                    "geometry": compact_geojson_geometry(feature.get("geometry", {}), digits=5),
+                }
+            )
+
+    feature_collection = {
+        "type": "FeatureCollection",
+        "metadata": {
+            "practice_count": len(bundle_groups),
+            "feature_count": len(features),
+            "full_feed_review_practice_count": len({str(row.get("canonical_code", "")).strip() for row in full_feed_results if str(row.get("canonical_code", "")).strip()}),
+            "covered_full_feed_practice_codes": len(covered_full_feed_codes),
+            "missing_practice_codes": sorted(set(missing_codes)),
+        },
+        "features": features,
+    }
+    path.write_text(json.dumps(feature_collection, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return {
+        "practice_count": len(bundle_groups),
+        "feature_count": len(features),
+        "missing_practice_codes": sorted(set(missing_codes)),
+        "full_feed_review_practice_count": len({str(row.get("canonical_code", "")).strip() for row in full_feed_results if str(row.get("canonical_code", "")).strip()}),
+        "covered_full_feed_practice_codes": len(covered_full_feed_codes),
+        "file_size_bytes": path.stat().st_size if path.exists() else 0,
+    }
 
 
 def write_summary(path: Path, rows: list[dict[str, Any]]) -> dict[str, Any]:
@@ -2157,6 +2285,7 @@ def write_map(
     national_supplementals = build_national_map_supplementals()
     client_national_supplementals = [build_client_map_row(row) for row in national_supplementals]
     write_national_supplemental_script(path.parent / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME, client_national_supplementals)
+    manchester_catchment_bundle = write_manchester_catchment_bundle(path.parent / MANCHESTER_CATCHMENT_BUNDLE_NAME, rows)
     all_practice_deprivation = load_cached_practice_deprivation_lookup()
     # Build a simple per-practice deprivation lookup JSON alongside the map
     practice_deprivation_lookup_path = path.parent / "practice_deprivation_lookup.json"
@@ -3568,6 +3697,9 @@ const nationalSupplementals = Array.isArray(window.NATIONAL_PRACTICE_SUPPLEMENTA
 const nationOrder = {json.dumps(NATION_ORDER)};
 const cityCatchments = {json.dumps(CITY_CATCHMENTS)};
 const compositeRegionDefinitions = {json.dumps(composite_region_definitions)};
+const MANCHESTER_CATCHMENT_BUNDLE_NAME = {json.dumps(MANCHESTER_CATCHMENT_BUNDLE_NAME)};
+const MANCHESTER_CATCHMENT_MIN_ZOOM = 12;
+const manchesterCatchmentBundleMeta = {json.dumps(manchester_catchment_bundle)};
 const northSouthDivide = {{
   west: {{ lat: 51.62, lon: -3.05 }},
   east: {{ lat: 52.98, lon: 0.52 }},
@@ -3603,6 +3735,7 @@ const markerLayer = L.layerGroup().addTo(map);
 const nationalMarkerLayer = L.layerGroup().addTo(map);
 const cityCircleLayer = L.layerGroup().addTo(map);
 const sampleCircleLayer = L.layerGroup().addTo(map);
+const catchmentOutlineLayer = L.layerGroup().addTo(map);
 let voronoiLayer = null;
 let deprivationLayer = null;
 const nationalPane = map.createPane('nationalSupplementals');
@@ -3623,6 +3756,10 @@ let trendLegendHoverSuppressed = false;
 let sidebarCollapsed = false;
 let patientTreemapYearIndex = null;
 let patientTreemapPlaying = false;
+let hoveredCatchmentCode = null;
+const persistentCatchmentCodes = new Set();
+let manchesterCatchmentIndex = null;
+let manchesterCatchmentLoadPromise = null;
 let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
 let nationalDeprivationUsePopulation = false;
@@ -4521,8 +4658,110 @@ function renderTrendOverlayLegend(container, items) {{
     : '';
 }}
 
+function buildManchesterCatchmentIndex(featureCollection) {{
+  const index = new Map();
+  const features = Array.isArray(featureCollection?.features) ? featureCollection.features : [];
+  features.forEach((feature) => {{
+    const codes = Array.isArray(feature?.properties?.codes) ? feature.properties.codes : [];
+    codes.forEach((code) => {{
+      const normalized = String(code || '').trim();
+      if (!normalized) return;
+      if (!index.has(normalized)) index.set(normalized, []);
+      index.get(normalized).push(feature);
+    }});
+  }});
+  return index;
+}}
+
+function loadManchesterCatchmentIndex() {{
+  if (manchesterCatchmentIndex) return Promise.resolve(manchesterCatchmentIndex);
+  if (manchesterCatchmentLoadPromise) return manchesterCatchmentLoadPromise;
+  if (!manchesterCatchmentBundleMeta || !manchesterCatchmentBundleMeta.feature_count) {{
+    manchesterCatchmentIndex = new Map();
+    return Promise.resolve(manchesterCatchmentIndex);
+  }}
+  manchesterCatchmentLoadPromise = fetch(MANCHESTER_CATCHMENT_BUNDLE_NAME)
+    .then((response) => {{
+      if (!response.ok) throw new Error(`catchment fetch failed: ${{response.status}}`);
+      return response.json();
+    }})
+    .then((payload) => {{
+      manchesterCatchmentIndex = buildManchesterCatchmentIndex(payload);
+      return manchesterCatchmentIndex;
+    }})
+    .catch((_error) => {{
+      manchesterCatchmentIndex = new Map();
+      return manchesterCatchmentIndex;
+    }});
+  return manchesterCatchmentLoadPromise;
+}}
+
+function preloadManchesterCatchments() {{
+  if (!manchesterCatchmentBundleMeta || !manchesterCatchmentBundleMeta.feature_count) return;
+  if (manchesterCatchmentIndex || manchesterCatchmentLoadPromise) return;
+  window.setTimeout(() => {{
+    loadManchesterCatchmentIndex().then(() => {{
+      updateHoveredCatchmentOutline();
+    }});
+  }}, 0);
+}}
+
+function clearHoveredCatchmentOutline() {{
+  catchmentOutlineLayer.clearLayers();
+}}
+
+function updateHoveredCatchmentOutline() {{
+  clearHoveredCatchmentOutline();
+  if (map.getZoom() < MANCHESTER_CATCHMENT_MIN_ZOOM) return;
+  if (!manchesterCatchmentIndex) return;
+  const codes = Array.from(persistentCatchmentCodes);
+  if (hoveredCatchmentCode && !persistentCatchmentCodes.has(hoveredCatchmentCode)) {{
+    codes.push(hoveredCatchmentCode);
+  }}
+  if (!codes.length) return;
+  codes.forEach((activeCode) => {{
+    const features = manchesterCatchmentIndex.get(activeCode) || [];
+    if (!features.length) return;
+    const layer = L.geoJSON({{ type: 'FeatureCollection', features }}, {{
+      style: () => ({{
+        color: '#7a7a7a',
+        weight: 2.4,
+        opacity: 0.9,
+        fillOpacity: 0,
+        dashArray: '6 4',
+        interactive: false,
+      }}),
+    }});
+    layer.addTo(catchmentOutlineLayer);
+  }});
+}}
+
+function setHoveredCatchmentOutline(code) {{
+  hoveredCatchmentCode = String(code || '').trim() || null;
+  updateHoveredCatchmentOutline();
+}}
+
+function clearHoveredCatchment(code = '') {{
+  const normalized = String(code || '').trim();
+  if (normalized && hoveredCatchmentCode && hoveredCatchmentCode !== normalized) return;
+  hoveredCatchmentCode = null;
+  updateHoveredCatchmentOutline();
+}}
+
+function togglePersistentCatchment(code) {{
+  const normalized = String(code || '').trim();
+  if (!normalized) return;
+  if (persistentCatchmentCodes.has(normalized)) {{
+    persistentCatchmentCodes.delete(normalized);
+  }} else {{
+    persistentCatchmentCodes.add(normalized);
+  }}
+  updateHoveredCatchmentOutline();
+}}
+
 function renderMarkers() {{
   markerLayer.clearLayers();
+  clearHoveredCatchment();
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
   const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
@@ -4557,10 +4796,17 @@ function renderMarkers() {{
     const marker = L.marker(pos, {{ icon, zIndexOffset: baseZIndex }});
     marker.bindPopup(popupMarkup(row));
     marker.on('click', () => {{
+      togglePersistentCatchment(row.code);
       focusRow(row);
     }});
-    marker.on('mouseover', () => marker.setZIndexOffset(baseZIndex + 2000));
-    marker.on('mouseout', () => marker.setZIndexOffset(baseZIndex));
+    marker.on('mouseover', () => {{
+      marker.setZIndexOffset(baseZIndex + 2000);
+      setHoveredCatchmentOutline(row.code);
+    }});
+    marker.on('mouseout', () => {{
+      marker.setZIndexOffset(baseZIndex);
+      clearHoveredCatchment(row.code);
+    }});
     marker.addTo(markerLayer);
   }}
 }}
@@ -6422,13 +6668,12 @@ function renderRatingVsSurveyChart() {{
     }})
     .filter(Boolean);
 
-  const benchmarkPoints = [
+  const allBenchmarkEntries = [
     ...nationOrder
       .map((nation) => {{
         const subset = allKnownRows.filter((row) => String(row?.nation || '').trim().toLowerCase() === nation);
         if (!subset.length) return null;
         const stats = regionCardStats(subset);
-        if (stats.google.value === null || stats.survey.value === null) return null;
         return {{
           label: displayNationName(nation),
           kind: 'nation',
@@ -6444,7 +6689,6 @@ function renderRatingVsSurveyChart() {{
         const subset = cityRowsByCatchment.get(city.name) || [];
         if (!subset.length) return null;
         const stats = regionCardStats(subset);
-        if (stats.google.value === null || stats.survey.value === null) return null;
         return {{
           label: city.name,
           kind: 'city',
@@ -6460,7 +6704,6 @@ function renderRatingVsSurveyChart() {{
         const subset = northSouthRows.get(label) || [];
         if (!subset.length) return null;
         const stats = regionCardStats(subset);
-        if (stats.google.value === null || stats.survey.value === null) return null;
         return {{
           label,
           kind: 'region',
@@ -6476,7 +6719,6 @@ function renderRatingVsSurveyChart() {{
         const subset = compositeRegionRowsByLabel.get(definition.label) || [];
         if (!subset.length) return null;
         const stats = regionCardStats(subset);
-        if (stats.google.value === null || stats.survey.value === null) return null;
         return {{
           label: definition.label,
           kind: definition.kind || 'region',
@@ -6492,7 +6734,6 @@ function renderRatingVsSurveyChart() {{
           const subset = rowsWithinCircle(allKnownRows, sampleCircleCenter.lat, sampleCircleCenter.lon, sampleCircleRadiusMiles);
           if (!subset.length) return [];
           const stats = regionCardStats(subset);
-          if (stats.google.value === null || stats.survey.value === null) return [];
           return [{{
             label: `Custom sample (${{sampleCircleRadiusMiles.toFixed(sampleCircleRadiusMiles % 1 === 0 ? 0 : 1)}}mi)`,
             kind: 'sample',
@@ -6503,7 +6744,9 @@ function renderRatingVsSurveyChart() {{
           }}];
         }})()
       : []),
-  ];
+  ].filter(Boolean);
+  const benchmarkPoints = allBenchmarkEntries.filter((point) => point.x !== null && point.y !== null);
+  const omittedBenchmarkEntries = allBenchmarkEntries.filter((point) => point.x === null || point.y === null);
 
   const showPractices = ratingSurveyMode === 'practices';
   const displayPoints = showPractices ? practicePoints : benchmarkPoints;
@@ -6575,6 +6818,23 @@ function renderRatingVsSurveyChart() {{
         `;
       }})()
     : '';
+  const benchmarkLayoutPoints = benchmarkPoints
+    .map((point) => ({{
+      ...point,
+      plotX: xScale(point.x),
+      plotY: yScale(point.y),
+    }}))
+    .sort((left, right) => (left.plotX - right.plotX) || (left.plotY - right.plotY))
+    .map((point, index, plotted) => {{
+      const stackIndex = plotted
+        .slice(0, index)
+        .filter((other) => Math.abs(other.plotX - point.plotX) < 44 && Math.abs(other.plotY - point.plotY) < 24)
+        .length % 5;
+      return {{
+        ...point,
+        stackIndex,
+      }};
+    }});
   const pointMarkup = showPractices ? practicePoints.map((point) => {{
     const nation = String(point.row.nation || '').trim().toLowerCase();
     const isHighlighted = point.row.code === NEW_BANK_CODE || point.row.gtd || point.row.management_company === BASELINE_MANAGEMENT_COMPANY;
@@ -6589,18 +6849,20 @@ function renderRatingVsSurveyChart() {{
       </circle>
     `;
   }}).join('') : '';
-  const benchmarkMarkup = benchmarkPoints.map((point) => {{
+  const benchmarkMarkup = benchmarkLayoutPoints.map((point) => {{
     const size = point.kind === 'nation' ? 14 : point.kind === 'city' ? 12 : 12.5;
-    const labelDx = point.kind === 'nation' ? 10 : 9;
-    const labelDy = point.kind === 'nation' ? -10 : -8;
+    const labelY = point.plotY - (size / 2) - 8 - (point.stackIndex * 12);
     return `
-      <rect x="${{(xScale(point.x) - size / 2).toFixed(2)}}" y="${{(yScale(point.y) - size / 2).toFixed(2)}}" width="${{size.toFixed(2)}}" height="${{size.toFixed(2)}}" rx="1.4" fill="${{point.color}}" fill-opacity="0.96" stroke="#ffffff" stroke-width="1.6">
-        <title>${{point.label}} benchmark · Google ${{point.x.toFixed(2)}} · Survey ${{Math.round(point.y)}}% · ${{point.practiceCount.toLocaleString('en-GB')}} practices</title>
+      <rect x="${{(point.plotX - size / 2).toFixed(2)}}" y="${{(point.plotY - size / 2).toFixed(2)}}" width="${{size.toFixed(2)}}" height="${{size.toFixed(2)}}" rx="1.4" fill="${{point.color}}" fill-opacity="0.96" stroke="#ffffff" stroke-width="1.6">
+        <title>${{escapeHtml(point.label)}} benchmark · Google ${{point.x.toFixed(2)}} · Survey ${{Math.round(point.y)}}% · ${{point.practiceCount.toLocaleString('en-GB')}} practices</title>
       </rect>
       ${{
         showPractices
           ? ''
-          : `<text x="${{(xScale(point.x) + labelDx).toFixed(2)}}" y="${{(yScale(point.y) + labelDy).toFixed(2)}}" font-size="${{point.kind === 'nation' ? '11.5' : '10.5'}}" font-weight="700" fill="${{point.color}}" stroke="rgba(255,255,255,0.92)" stroke-width="3" paint-order="stroke fill">${{escapeHtml(point.label)}}</text>`
+          : `
+            <line x1="${{point.plotX.toFixed(2)}}" y1="${{(point.plotY - size / 2).toFixed(2)}}" x2="${{point.plotX.toFixed(2)}}" y2="${{(labelY + 3).toFixed(2)}}" stroke="${{point.color}}" stroke-opacity="0.42" stroke-width="1.1"></line>
+            <text x="${{point.plotX.toFixed(2)}}" y="${{labelY.toFixed(2)}}" text-anchor="middle" font-size="${{point.kind === 'nation' ? '11.5' : '10.5'}}" font-weight="700" fill="${{point.color}}" stroke="rgba(255,255,255,0.92)" stroke-width="3" paint-order="stroke fill">${{escapeHtml(point.label)}}</text>
+          `
       }}
     `;
   }}).join('');
@@ -6619,10 +6881,10 @@ function renderRatingVsSurveyChart() {{
   summary.textContent =
     showPractices
       ? `${{practicePoints.length.toLocaleString('en-GB')}} practice entries currently have both a usable Google rating and a survey/equivalent overall-good score. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}. ${{nationCounts}}. ${{benchmarkPoints.length}} region overlays are drawn as larger squares.`
-      : `${{benchmarkPoints.length}} benchmark regions are currently shown. Pearson r between those aggregate points is ${{rValue === null ? '?' : rValue.toFixed(2)}}.`;
+      : `${{benchmarkPoints.length}} benchmark regions are currently shown from ${{allBenchmarkEntries.length}} listed entries. Pearson r between those aggregate points is ${{rValue === null ? '?' : rValue.toFixed(2)}}.`;
   note.textContent = showPractices
     ? `Practice mode shows all loaded rows on the full Google 0-5 and survey 0-100 scales, with larger squares for nation, city, North/South, and custom-sample aggregates. Quadratic fit: ${{formula}}.`
-    : 'Region mode shows only the benchmark aggregates from the Nation and City panel plus North/South and any custom sample, with axes fitted around their local spread. No curve fit is drawn in this mode.';
+    : `Region mode shows only the benchmark aggregates from the Nation and City panel plus North/South and any custom sample, with axes fitted around their local spread. No curve fit is drawn in this mode.${{omittedBenchmarkEntries.length ? ` ${{omittedBenchmarkEntries.length}} listed entries are currently unplottable because one of the two scores is missing: ${{omittedBenchmarkEntries.map((entry) => entry.label).join(', ')}}.` : ''}}`;
 
   svg.innerHTML = `
     <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
@@ -7836,6 +8098,7 @@ document.getElementById('legend-collapse').addEventListener('click', () => {{
 
 map.on('moveend', () => {{
   renderNationalSupplementals();
+  updateHoveredCatchmentOutline();
   if (activeAreaOverlay === 'population') {{
     if (voronoiLayer) {{
       map.removeLayer(voronoiLayer);
@@ -7843,6 +8106,10 @@ map.on('moveend', () => {{
     }}
     renderVoronoi();
   }}
+}});
+
+map.on('zoomend', () => {{
+  updateHoveredCatchmentOutline();
 }});
 
 map.on('click', (event) => {{
@@ -7863,6 +8130,11 @@ try {{
   sidebarCollapsed = false;
 }}
 updateSidebarState();
+if (document.readyState === 'complete') {{
+  preloadManchesterCatchments();
+}} else {{
+  window.addEventListener('load', preloadManchesterCatchments, {{ once: true }});
+}}
 rerenderAll();
 updateStickyScoreControl();
 </script>

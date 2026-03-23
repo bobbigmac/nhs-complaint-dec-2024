@@ -17,3 +17,4 @@ site/local-dist/
 reviews_index.sqlite
 datasets/national-practices/.tooling/
 datasets/national-practices/output/scotland-hace-tableau/
+datasets/catchments/.cache/
