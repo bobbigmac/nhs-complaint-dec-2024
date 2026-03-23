@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T16:55:56Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S40703",
+  "practice_name": "DR RAI & PARTNERS",
+  "tableau_report_area_label": "Dr Rai & Partners - Clydebank (40703)",
+  "survey_overall_good_percent": 68,
+  "response_rate_percent": 12,
+  "number_of_responses": 105,
+  "responses_for_overall_question": 78,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 68% Responses: 78",
+  "response_rate_tooltip_text": "Response rate: 12%",
+  "number_of_responses_tooltip_text": "Number of responses: 105",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:44:26Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S60228",
+  "practice_name": "GLENBOIG SURGERY",
+  "tableau_report_area_label": "Glenboig Surgery (60228)",
+  "survey_overall_good_percent": 79,
+  "response_rate_percent": 19,
+  "number_of_responses": 152,
+  "responses_for_overall_question": 125,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 79% Responses: 125",
+  "response_rate_tooltip_text": "Response rate: 19%",
+  "number_of_responses_tooltip_text": "Number of responses: 152",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

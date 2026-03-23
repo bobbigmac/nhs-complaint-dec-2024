@@ -1,0 +1,26 @@
+{
+  "practice_name": "OXFORD TCE & RAWLING RD MEDICAL GROUP",
+  "canonical_code": "A85005",
+  "postcode": "NE8 1RQ",
+  "query_used": "OXFORD TCE & RAWLING RD MEDICAL GROUP NE8 1RQ",
+  "google_maps_title": "Dr A Moore - Oxford Tce & Rawling Rd Medical Group",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+A+Moore+-+Oxford+Tce+%26+Rawling+Rd+Medical+Group/@54.9532228,-1.6160818,16z/data=!4m12!1m2!2m1!1sOXFORD+TCE+%26+RAWLING+RD+MEDICAL+GROUP+NE8+1RQ!3m8!1s0x487e70a890b6aaab:0x99bf69c3f606c1d9!8m2!3d54.9543591!4d-1.6063113!9m1!1b1!15sCi9PWEZPUkQgVENFICYgUkFXTElORyBST0FEIE1FRElDQUwgR1JPVVAgTkU4IDFSUVoxIi9veGZvcmQgdGNlICYgcmF3bGluZyByb2FkIG1lZGljYWwgZ3JvdXAgbmU4IDFycZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOUE9VdFlMVVZSRUFF4AEA-gEECFUQHA!16s%2Fg%2F11k5lsddk5?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 102,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774189712148,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487e70a890b6aaab%3A0x99bf69c3f606c1d9!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s5fO_acrRKIenhbIP-OvIuQM!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNPOUtYLUVREAE\",[\"0x0:0x99bf69c3f606c1d9\",null,1654236248078784,1654236248078784,[null,null,[\"https://www.google.com/maps/contrib/112131166712472060358/reviews?hl\\u003den\"],null,null,[\"Sue Lumsden\",\"https://lh3.googleusercontent.com/a/ACg8ocLKrxGqepcs-7K88XL1Oq8lMrCHN7SWaI-Kw6UAq8V3oinxUQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/112131166712472060358?hl\\u003den\"],\"112131166712472060358\",null,3,0,null,[0,2,1],0,[\"3 reviews\",null,null,null,null,[null,\"0ahUKEwjOhajc27OTAxXwDmMBHZ-xBQcQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Wonderful doctor, never felt so listened to or comfortable around any doctor before. Highly recommend dr Moore :)\",null,[0,113]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPOUtYLUVREAE!2m1!1s0x0:0x99bf69c3f606c1d9!3m1!1s2@1:CIHM0ogKEICAgICO9KX-EQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNPOUtYLUVREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNPOUtYLUVREi0KF0NJSE0wb2dLRUlDQWdJQ085S1gta1FFEhJDZ3NJMk1qbWxBWVFnTXpJSlEaLAoWQ0lITTBvZ0tFSUNBZ0lDTzlLWC1VURISQ2dzSTJNam1sQVlRZ016SUpRIhIJAAAAAAAAAAAR2cEG9sNpv5kqEkNnc0kyTWptbEFZUWdNeklKUQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjOhajc27OTAxXwDmMBHZ-xBQcQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjOhajc27OTAxXwDmMBHZ-xBQcQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

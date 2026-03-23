@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T16:31:28Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S52128",
+  "practice_name": "DR FERGUSON & PARTNERS",
+  "tableau_report_area_label": "Dr Ferguson & Partners - Glasgow (52128)",
+  "survey_overall_good_percent": 51,
+  "response_rate_percent": 16,
+  "number_of_responses": 138,
+  "responses_for_overall_question": 111,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 51% Responses: 111",
+  "response_rate_tooltip_text": "Response rate: 16%",
+  "number_of_responses_tooltip_text": "Number of responses: 138",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

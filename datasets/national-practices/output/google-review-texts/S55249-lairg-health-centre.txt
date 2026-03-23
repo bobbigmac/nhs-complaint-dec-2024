@@ -1,0 +1,31 @@
+Practice: LAIRG HEALTH CENTRE
+Canonical code: S55249
+Postcode: IV27 4DD
+Google Maps title: Lairg Health Centre
+Google rating: 5.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Lairg+Health+Centre/@58.0238585,-4.4003125,17z/data=!4m12!1m2!2m1!1sLAIRG+HEALTH+CENTRE+IV27+4DD!3m8!1s0x488feb1b036ad663:0x3821bc607f4af072!8m2!3d58.0238543!4d-4.3977283!9m1!1b1!15sChxMQUlSRyBIRUFMVEggQ0VOVFJFIElWMjcgNEREkgEGZG9jdG9y4AEA!16s%2Fg%2F1hc1ms7xt?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S55249-lairg-health-centre.json
+
+Captured reviews
+================
+
+Author: mandy smith
+Date: 6 years ago
+Rating: 5 stars
+mandy smithLocal Guide · 44 reviews · 59 photos6 years ago
+
+Author: Jackie Wilkinson
+Date: 7 years ago
+Rating: 5 stars
+No appointments needed, just arrive at the time doctors consult. Excellent doctors and nurses.
+
+Author: Bora Rawcliffe
+Date: 7 years ago
+Rating: 5 stars
+Received excellent help here. Very grateful.

@@ -1,0 +1,66 @@
+Practice: GOLDINGTON AVENUE SURGERY
+Canonical code: E81047
+Postcode: MK40 3DB
+Google Maps title: Goldington Avenue Surgery
+Google rating: 4.0
+Google review count: 185
+Google Maps URL: https://www.google.com/maps/place/Goldington+Avenue+Surgery/@52.1437896,-0.4583107,17z/data=!3m1!5s0x4877b6e0c2d2007d:0x4d3c2a1e8a650c08!4m8!3m7!1s0x4877b6e0c4b4f56d:0xd72ad98531b1b233!8m2!3d52.1437863!4d-0.4557304!9m1!1b1!16s%2Fg%2F1yh9vk8qk?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/E81047-goldington-avenue-surgery.json
+
+Captured reviews
+================
+
+Author: G Lamble
+Date: 2 days ago
+Rating: 5 stars
+Dr. Sharma is wonderful. Doing everything he can to find out what is causing my problems. He listens which is so important
+
+Author: Karen Simms
+Date: 2 days ago
+Rating: 5 stars
+Always good service reception, nurses and doctors are very understanding and nice, they do not rush you
+
+Author: Fogedur Rahman
+Date: 3 days ago
+Rating: 5 stars
+Receptionists are always welcoming, even on the phone, always happy to help. GP's take time to explain things clearly. I was seen by nurse Joanna today. I was nervous when arriving, but she instantly made me feel at ease, explaining things as she was doing them. Took my mind off any worries I had with some jokes and friendly conversation. Thank you so much.
+
+Author: Maxine Skipper
+Date: 4 days ago
+Rating: 5 stars
+I can't thank you enough , Dr Agrawall you were so kind and listened to me explaining my circumstances, at which point I was at the end of my tether with trying to speak to a doctor . You reassured me , assisted me and gave me the courage to cope with my problem . A fantastic doctor who listens to the patient. Thank you for helping me.
+
+Author: Isabella Ferretti
+Date: 5 days ago
+Rating: 5 stars
+I always find the staff helpful and patient
+
+Author: Rachel Daisy
+Date: 5 days ago
+Rating: 5 stars
+I recently switched here from another GP practice as I wasn’t happy with the other surgery. It was my first visit today and I saw the nurse Jo. I have never had such a positive experience with the NHS as I did with Jo. Everyone in the surgery was friendly and approachable, the environment was so clean, and Jo was so so comforting, kind and patient. For any women who are putting off smear tests because they’re scared - as I was - Jo honestly has taken any fear out of the experience. Could not recommend more, she is made for this job!
+
+Author: Tineke Venne
+Date: 6 days ago
+Rating: 5 stars
+Dr. A.Stanbridge has been helpful and thorough by following through treatment with advice, explanations, tests and assurance.
+
+Author: Peter Evans
+Date: 6 days ago
+Rating: 4 stars
+Peter Evans6 days ago New
+
+Author: Giles Probert
+Date: a week ago
+Rating: 5 stars
+Sharon Khinda in her consultation on the revised medication provided an excellent level of detail and reassurance.
+
+Author: Susan Brown
+Date: a week ago
+Rating: 5 stars
+The pharmacist that I spoke to today was so kind and caring. I feel very fortunate to be able to use the surgery.

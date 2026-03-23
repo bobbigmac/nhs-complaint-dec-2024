@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T18:02:58Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S13975",
+  "practice_name": "THE LADE MEDICAL PRACTICE",
+  "tableau_report_area_label": "The Lade Medical Practice - Perth (13975)",
+  "survey_overall_good_percent": 87,
+  "response_rate_percent": 17,
+  "number_of_responses": 127,
+  "responses_for_overall_question": 95,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 87% Responses: 95",
+  "response_rate_tooltip_text": "Response rate: 17%",
+  "number_of_responses_tooltip_text": "Number of responses: 127",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

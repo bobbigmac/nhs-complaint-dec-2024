@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T15:33:50Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S11382",
+  "practice_name": "FAMILY MEDICAL GROUP",
+  "tableau_report_area_label": "Family Medical Group - Dundee (11382)",
+  "survey_overall_good_percent": 50,
+  "response_rate_percent": 13,
+  "number_of_responses": 99,
+  "responses_for_overall_question": 78,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 50% Responses: 78",
+  "response_rate_tooltip_text": "Response rate: 13%",
+  "number_of_responses_tooltip_text": "Number of responses: 99",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

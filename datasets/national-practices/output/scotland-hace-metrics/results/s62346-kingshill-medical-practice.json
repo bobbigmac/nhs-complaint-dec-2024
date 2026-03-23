@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:40:20Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S62346",
+  "practice_name": "KINGSHILL MEDICAL PRACTICE",
+  "tableau_report_area_label": "Kingshill Medical Practice - Forth (62346)",
+  "survey_overall_good_percent": 66,
+  "response_rate_percent": 20,
+  "number_of_responses": 113,
+  "responses_for_overall_question": 89,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 66% Responses: 89",
+  "response_rate_tooltip_text": "Response rate: 20%",
+  "number_of_responses_tooltip_text": "Number of responses: 113",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

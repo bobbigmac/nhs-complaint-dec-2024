@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T16:00:29Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S78311",
+  "practice_name": "THE CRAIGSHILL PARTNERSHIP",
+  "tableau_report_area_label": "The Craigshill Partnership - Livingston (78311)",
+  "survey_overall_good_percent": 51,
+  "response_rate_percent": 13,
+  "number_of_responses": 91,
+  "responses_for_overall_question": 75,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 51% Responses: 75",
+  "response_rate_tooltip_text": "Response rate: 13%",
+  "number_of_responses_tooltip_text": "Number of responses: 91",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

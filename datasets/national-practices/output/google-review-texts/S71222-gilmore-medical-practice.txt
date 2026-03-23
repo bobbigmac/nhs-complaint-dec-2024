@@ -1,0 +1,66 @@
+Practice: GILMORE MEDICAL PRACTICE
+Canonical code: S71222
+Postcode: EH3 9QQ
+Google Maps title: Gilmore Medical Practice
+Google rating: 3.7
+Google review count: 67
+Google Maps URL: https://www.google.com/maps/place/Gilmore+Medical+Practice/@55.9438371,-3.2083318,17z/data=!4m8!3m7!1s0x4887c7a1fc20eb75:0x70103363fc6a44c!8m2!3d55.9438341!4d-3.2057515!9m1!1b1!16s%2Fg%2F1tcz_2jr?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S71222-gilmore-medical-practice.json
+
+Captured reviews
+================
+
+Author: Sinéad Scullion
+Date: a week ago
+Rating: 5 stars
+Great, very helpful!
+
+Author: Valerio T
+Date: 3 weeks ago
+Rating: 1 star
+Very rude receptionists. I was sent away, despite having a booked appointment, as I had a delay of 11 minutes (beyond the 10' maximum allowed). My attempt to explain the reasons were not even listened. Poor service; time to replace these roles with AI.
+
+Author: Yehyah Hamandi
+Date: 2 months ago
+Rating: 5 stars
+Anna Macray (hopefully I’ve spelled her name correctly), the nurse practitioner, was excellent. Very thorough with an excellent bedside manner. Highly recommend.
+
+Author: Priscilla Chin
+Date: 4 months ago
+Rating: 5 stars
+Always manage to get an appointment here, and sometimes even on the day! If I get an appointment a week or so in advance, I would also receive a reminder text the day before. I'm also glad that they open till late for those of us that work on-site full time.
+
+Author: Calvin Leslie
+Date: 7 months ago
+Rating: 1 star
+Manager loves the sounds of her own voice she thinks she’s in charge of the NHS registration system, terrible attitude wouldn’t recommend this practise because of this worker. Needs looked into as I don’t think she’s fit to work here and serve the people who pay her wages.
+
+Author: Resham Dhillon
+Date: 9 months ago
+Rating: 5 stars
+Always great. Doctors, Nurses and staff are very good.
+
+Author: Aliya Ali
+Date: 9 months ago
+Rating: 5 stars
+Compared to other GP practices in Edinburgh, always a possibility to book a same day appointment. They’re kind on the phone and in person. They take all their appointments on time. Rarely late.
+
+Author: David Mack
+Date: Edited a year ago
+Rating: 1 star
+I registered here last week. They have a culture of abuse. I will have to make an appointment with a 3rd GP having been abused by two already. The admin manager sought to deny me an appointment and did so only with risk of police being called. A culture of abuse. Update: the 3rd GP I met is a partner of the practice meaning responsible for the practice. Same total disrespect and abuse. She incidentally specialises in “sex therapy”. I shall clarify the admin manager abuse. I had just registered at the practice. She hadn’t any information good or bad which might have prejudiced her against me in particular. She dealt with me as she would on meeting anyone anew. She denies you access to healthcare employing abuse tactics. After several phone calls I said that I have the right to healthcare. She responded saying “rhy, rhy, what are you saying?” laughing and imparting the fear that she would hang up the phone again. The intention is to make you resign. Extremely pernicious. I then said that I have a right to healthcare and that I would call the police if she continued to prevent it. I imparted the conviction that I meant it. She then did what she is supposed to do.
+
+Author: Zhaoxing Deng
+Date: a year ago
+Rating: 5 stars
+The doctor is very enthusiastic and professional. The experience is great.
+
+Author: Mary Karaoglani
+Date: a year ago
+Rating: 1 star
+Definetely the worst service that I had in Edinburgh. They are roud, showing zero flexibility when booking appointments and most of the times they book me with students rathen than real doctors who only provide advice rather than prescription. The reception people are extremely roud. Wish I could change practice.

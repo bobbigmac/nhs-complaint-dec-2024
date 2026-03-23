@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:14:28Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S80518",
+  "practice_name": "VALLEY MEDICAL PRACTICE",
+  "tableau_report_area_label": "Valley Medical Practice - Ayrshire (80518)",
+  "survey_overall_good_percent": 65,
+  "response_rate_percent": 23,
+  "number_of_responses": 135,
+  "responses_for_overall_question": 117,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 65% Responses: 117",
+  "response_rate_tooltip_text": "Response rate: 23%",
+  "number_of_responses_tooltip_text": "Number of responses: 135",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

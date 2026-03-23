@@ -1,0 +1,31 @@
+Practice: GREENLAW SURGERY
+Canonical code: S16475
+Postcode: TD10 6XJ
+Google Maps title: Greenlaw Surgery
+Google rating: 5.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Greenlaw+Surgery/@55.7088133,-2.4641376,17z/data=!4m8!3m7!1s0x488771df07b42f51:0x57a0edfcfc5b58f3!8m2!3d55.7088103!4d-2.4615573!9m1!1b1!16s%2Fg%2F1tjfgdv3?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 2
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S16475-greenlaw-surgery.json
+
+Captured reviews
+================
+
+Author: Andrew Jones-McGuire
+Date: 2 years ago
+Rating: 5 stars
+Have a good relationship with all the staff here. Never feel like I'm being rushed, and always feel like I'm being listened to.
+
+Author: Dean Barnett
+Date: 6 years ago
+Rating: 5 stars
+Village surgery that services the people of Greenlaw and the surrounding areas.There are 2 registered doctors a nurse and other visiting professions.Very friendly staff who are always willing to help.
+
+Author: Pete Gibbens
+Date: 6 years ago
+Rating: 5 stars
+Always do their best, and with a smile!

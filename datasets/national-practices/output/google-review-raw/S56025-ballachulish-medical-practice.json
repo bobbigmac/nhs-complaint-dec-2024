@@ -1,0 +1,26 @@
+{
+  "practice_name": "BALLACHULISH MEDICAL PRACTICE",
+  "canonical_code": "S56025",
+  "postcode": "PH49 4JB",
+  "query_used": "BALLACHULISH MEDICAL PRACTICE PH49 4JB",
+  "google_maps_title": "Ballachulish Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Ballachulish+Medical+Practice/@56.6777743,-5.1334348,17z/data=!4m8!3m7!1s0x4889371c3bea9075:0x988a2a29b7bc37ed!8m2!3d56.6777714!4d-5.1308545!9m1!1b1!16s%2Fg%2F1tdfh8cs?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774207956614,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4889371c3bea9075%3A0x988a2a29b7bc37ed!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUQtak42QXF3RRAB\",[\"0x0:0x988a2a29b7bc37ed\",null,1669156769426579,1669156769426579,[null,null,[\"https://www.google.com/maps/contrib/108769032020075054913/reviews?hl\\u003den\"],null,null,[\"Sandi MacLeod\",\"https://lh3.googleusercontent.com/a-/ALV-UjWX3iM78BVE6JH3RLprRoITQt6ClXRkSVAQKuFtCXmHXOyZ3MUUww\\u003ds120-c-rp-mo-ba6-br100\",[\"https://www.google.com/maps/contrib/108769032020075054913?hl\\u003den\"],\"108769032020075054913\",null,382,1952,null,[1,8,1],26,[\"Local Guide · 382 reviews\",null,null,null,null,[null,\"0ahUKEwio-YbYn7STAxWsUYQGHez2BPYQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[4]],[null,null,null,null,null,\"https://business.google.com/local/business/1738590727915189889/customers/reviews/reply?p\\u003dCiRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRhazQyUVhGM1JSQUIQAA%3D%3D\",[null,null,null,\"/local/business/1738590727915189889/customers/reviews/reply?p\\u003dCiRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRhazQyUVhGM1JSQUIQAA%3D%3D\"],\"https://business.google.com/local/business/1738590727915189889/customers/reviews/deletereply?p\\u003dCiRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRhazQyUVhGM1JSQUIQAA%3D%3D\",[null,null,null,\"/local/business/1738590727915189889/customers/reviews/deletereply?p\\u003dCiRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRhazQyUVhGM1JSQUIQAA%3D%3D\"],null,\"https://business.google.com/local/business/1738590727915189889/customers/reviews/reply?p\\u003dCiRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRhazQyUVhGM1JSQUIQAA%3D%3D\",[null,null,null,\"/local/business/1738590727915189889/customers/reviews/reply?p\\u003dCiRDaGREU1VoTk1HOW5TMFZKUTBGblNVUXRhazQyUVhGM1JSQUIQAA%3D%3D\"]],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtak42QXF3RRAB!2m1!1s0x0:0x988a2a29b7bc37ed!3m1!1s2@1:CIHM0ogKEICAgID-jN6AqwE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUQtak42QXF3RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUQtak42QXF3RRotChZDSUhNMG9nS0VJQ0FnSUQtak42QWF3EhNDZ3dJb1pfMW13WVF1S2kweXdFIhIJAAAAAAAAAAAR7Te8tykqipgqE0Nnd0lvWl8xbXdZUXVLaTB5d0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwio-YbYn7STAxWsUYQGHez2BPYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwio-YbYn7STAxWsUYQGHez2BPYQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

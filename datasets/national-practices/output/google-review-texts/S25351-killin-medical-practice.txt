@@ -1,0 +1,36 @@
+Practice: KILLIN MEDICAL PRACTICE
+Canonical code: S25351
+Postcode: FK21 8TQ
+Google Maps title: Killin Medical Practice
+Google rating: 4.0
+Google review count: 4
+Google Maps URL: https://www.google.com/maps/place/Killin+Medical+Practice/@56.466119,-4.3190167,17z/data=!4m8!3m7!1s0x4888ea1fb1aec3d9:0x229a549fd86a28f6!8m2!3d56.4661161!4d-4.3164364!9m1!1b1!16s%2Fg%2F1tdh3fs7?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 4
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S25351-killin-medical-practice.json
+
+Captured reviews
+================
+
+Author: Petr Vokoun
+Date: 3 years ago
+Rating: 5 stars
+Thank you for your work
+
+Author: Ruth
+Date: 4 years ago
+Rating: 1 star
+RuthLocal Guide · 26 reviews · 4 photos4 years ago
+
+Author: Castelo Branco
+Date: 4 years ago
+Rating: 5 stars
+Excellent services
+
+Author: Sara McPhee
+Date: 9 years ago
+Rating: 5 stars
+Service here is second to none!

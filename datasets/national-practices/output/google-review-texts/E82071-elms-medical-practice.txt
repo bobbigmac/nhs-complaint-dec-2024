@@ -1,0 +1,66 @@
+Practice: ELMS MEDICAL PRACTICE
+Canonical code: E82071
+Postcode: AL5 4QA
+Google Maps title: The Elms Medical Practice
+Google rating: 3.5
+Google review count: 80
+Google Maps URL: https://www.google.com/maps/place/The+Elms+Medical+Practice/@51.8189312,-0.3546457,17z/data=!4m8!3m7!1s0x4876385cbd01bd91:0xf5d353b7906f8d55!8m2!3d51.8189279!4d-0.3520654!9m1!1b1!16s%2Fg%2F1tdb3r_s?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/E82071-elms-medical-practice.json
+
+Captured reviews
+================
+
+Author: Ian Minall
+Date: 3 days ago
+Rating: 1 star
+Absolute disgrace. They do not care about their patients. They will not resolve any issue. They can't be bothered to deal with anything. Brush everything under the carpet too. Interesting, in getting money for COVID jabs, money making Instead of patient care
+
+Author: Jacqui Osz
+Date: Edited a month ago
+Rating: 5 stars
+Doctors usually really helpful. I'm a carer so have dealt with lots of surgeries around the country. The doctors in harpenden are superior. But harpenden is one of the few places where resources are stretched like other areas.
+
+Author: David Arrowsmith
+Date: 2 months ago
+Rating: 5 stars
+David Arrowsmith1 review2 months ago
+
+Author: J D
+Date: 3 months ago
+Rating: 1 star
+GP practice where the one thing you can guarantee is you won’t see a GP. Infant with breathing difficulty? See a PA. Child misdiagnosed and ended up in A&E.
+
+Author: ANDREW BAKER
+Date: 5 months ago
+Rating: 5 stars
+We have been with The Elms for 26 years and generally found them to be a really good practice. Like many practices they had a some challenging times for a few years ago but they have returned to their previously high standards particularly regarding appointments and communication. A special thank you to Dr, Smith who has been incredibly helpful, efficient and understanding as I am manage my prostate cancer.
+
+Author: Charlotte Brown
+Date: 6 months ago
+Rating: 1 star
+Very unhelpful reception team
+
+Author: Jane Brazier
+Date: 7 months ago
+Rating: 5 stars
+VERY GOOD RECEPTIONISTS DR REES VERY CARING AND MAKES TIME FOR YOU AND EXPLAINS EVERYTHING TOO
+
+Author: Sam Watt
+Date: 7 months ago
+Rating: 1 star
+Disappointing service. Nice GP however gave me wrong information about the vaccinations they provide, I put in multiple quiries where I got no response. When I called, the receptionist was interrupting, rude and put me on hold without telling me. She seemed very keen to get off the phone with me and my issue was not resolved.
+
+Author: derek farr
+Date: 8 months ago
+Rating: 1 star
+Impossible to get an appointment also misdiagnosed a. DVT after I had one before said it was a twisted ankle
+
+Author: Kay Bennett
+Date: 10 months ago
+Rating: 1 star
+unfortunately, my experience has been less than satisfactory.

@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T18:00:53Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S84129",
+  "practice_name": "DR CLIVE MAST",
+  "tableau_report_area_label": "Scalasaig Medical Practice - Isle of Colonsay (84129)",
+  "survey_overall_good_percent": 98,
+  "response_rate_percent": 42,
+  "number_of_responses": 49,
+  "responses_for_overall_question": 44,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 98% Responses: 44",
+  "response_rate_tooltip_text": "Response rate: 42%",
+  "number_of_responses_tooltip_text": "Number of responses: 49",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

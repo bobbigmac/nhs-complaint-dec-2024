@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T15:36:47Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S18288",
+  "practice_name": "LOCHTHORN MEDICAL CENTRE",
+  "tableau_report_area_label": "Lochthorn Medical Centre - Dumfries (18288)",
+  "survey_overall_good_percent": 63,
+  "response_rate_percent": 27,
+  "number_of_responses": 125,
+  "responses_for_overall_question": 107,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 63% Responses: 107",
+  "response_rate_tooltip_text": "Response rate: 27%",
+  "number_of_responses_tooltip_text": "Number of responses: 125",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

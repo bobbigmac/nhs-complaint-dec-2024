@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:51:54Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S86228",
+  "practice_name": "DRS HOGAN & ALLEN PRACTICE",
+  "tableau_report_area_label": "Dr Hogan, Allen & Quinn - Greenock (86228)",
+  "survey_overall_good_percent": 90,
+  "response_rate_percent": 17,
+  "number_of_responses": 128,
+  "responses_for_overall_question": 99,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 90% Responses: 99",
+  "response_rate_tooltip_text": "Response rate: 17%",
+  "number_of_responses_tooltip_text": "Number of responses: 128",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

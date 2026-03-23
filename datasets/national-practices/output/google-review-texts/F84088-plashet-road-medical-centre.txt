@@ -1,0 +1,26 @@
+Practice: PLASHET ROAD MEDICAL CENTRE
+Canonical code: F84088
+Postcode: E13 0QT
+Google Maps title: Dr H Abedin - Plashet Road Medical Centre
+Google rating: 2.7
+Google review count: 151
+Google Maps URL: https://www.google.com/maps/place/Dr+H+Abedin+-+Plashet+Road+Medical+Centre/@51.5373946,0.0264297,17z/data=!4m12!1m2!2m1!1sPLASHET+ROAD+MEDICAL+CENTRE+E13+0QT!3m8!1s0x47d8a7b85f8e8423:0xe07dbd3e28b67b86!8m2!3d51.5374513!4d0.0323273!9m1!1b1!15sCiNQTEFTSEVUIFJPQUQgTUVESUNBTCBDRU5UUkUgRTEzIDBRVFolIiNwbGFzaGV0IHJvYWQgbWVkaWNhbCBjZW50cmUgZTEzIDBxdJIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuVFVSSmJIVlFMVmQzRUFF4AEA-gEECAAQEg!16s%2Fg%2F11j53m88v8?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.4
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/F84088-plashet-road-medical-centre.json
+
+Captured reviews
+================
+
+Author: aaliya malik
+Date: 9 months ago
+Rating: 1 star
+terrible employees, rude, loud disrespectful, micromanaging other employees, awful environment. specifically Jassie
+
+Author: sejal bhagat
+Date: 11 months ago
+Rating: 5 stars
+Good communication

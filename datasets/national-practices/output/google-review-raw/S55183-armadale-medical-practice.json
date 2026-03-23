@@ -1,0 +1,26 @@
+{
+  "practice_name": "ARMADALE MEDICAL PRACTICE",
+  "canonical_code": "S55183",
+  "postcode": "KW14 7SA",
+  "query_used": "ARMADALE MEDICAL PRACTICE KW14 7SA",
+  "google_maps_title": "Armadale Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Armadale+Medical+Practice/@58.5456817,-4.0891145,17z/data=!4m8!3m7!1s0x489ac402d8654b8f:0x6707d6b94b1fa935!8m2!3d58.5456789!4d-4.0865342!9m1!1b1!16s%2Fg%2F1yh9tvlj2?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 6,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774229734605,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x489ac402d8654b8f%3A0x6707d6b94b1fa935!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sH43Aad6IO96BhbIPzYa9oQ0!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUMtcmY3blNBEAE\",[\"0x0:0x6707d6b94b1fa935\",null,1668093401636139,1668093401636139,[null,null,[\"https://www.google.com/maps/contrib/100554385341157153803/reviews?hl\\u003den\"],null,null,[\"Only Me\",\"https://lh3.googleusercontent.com/a/ACg8ocKEevxxPm1avr2tAwBED9_biA8DZ-A1HrHHJ4WAPfj6kKtbLQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/100554385341157153803?hl\\u003den\"],\"100554385341157153803\",null,2,0,null,[0,2,1],0,[\"2 reviews\",null,null,null,null,[null,\"0ahUKEwj06cjo8LSTAxWhEWMBHTi-ElcQ7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"10/10.   Fabulous practice with absolutely lovely  people working there. They are very attentive and on the ball. I’ve never been so well looked after. 😁\",null,[0,153]]]],[null,null,null,null,null,\"https://business.google.com/local/business/14357518596617976421/customers/reviews/reply?p\\u003dCiNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXRjbVkzYmxOQkVBRRAA\",[null,null,null,\"/local/business/14357518596617976421/customers/reviews/reply?p\\u003dCiNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXRjbVkzYmxOQkVBRRAA\"],\"https://business.google.com/local/business/14357518596617976421/customers/reviews/deletereply?p\\u003dCiNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXRjbVkzYmxOQkVBRRAA\",[null,null,null,\"/local/business/14357518596617976421/customers/reviews/deletereply?p\\u003dCiNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXRjbVkzYmxOQkVBRRAA\"],null,\"https://business.google.com/local/business/14357518596617976421/customers/reviews/reply?p\\u003dCiNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXRjbVkzYmxOQkVBRRAA\",[null,null,null,\"/local/business/14357518596617976421/customers/reviews/reply?p\\u003dCiNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXRjbVkzYmxOQkVBRRAA\"]],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtcmY3blNBEAE!2m1!1s0x0:0x6707d6b94b1fa935!3m1!1s2@1:CIHM0ogKEICAgIC-rf7nSA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUMtcmY3blNBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUMtcmY3blNBEi4KF0NJSE0wb2dLRUlDQWdJQy1yZjdueUFFEhNDZ3dJMmF1MG13WVEtT3VxcndJGi0KFkNJSE0wb2dLRUlDQWdJQy1yZjduS0ESE0Nnd0kyYXUwbXdZUS1PdXFyd0kiEgkAAAAAAAAAABE1qR9LudYHZyoTQ2d3STJhdTBtd1lRLU91cXJ3SQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj06cjo8LSTAxWhEWMBHTi-ElcQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj06cjo8LSTAxWhEWMBHTi-ElcQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

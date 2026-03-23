@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. HUTCHINSON & PARTNERS",
+  "canonical_code": "Z00104",
+  "postcode": "BT13 3BW",
+  "query_used": "DR. HUTCHINSON & PARTNERS BT13 3BW",
+  "google_maps_title": "Hutchinson Dr S",
+  "google_maps_url": "https://www.google.com/maps/place/Hutchinson+Dr+S/@54.6093386,-5.9677554,17z/data=!4m8!3m7!1s0x4861086e2322ccd9:0xc8f632397e04830c!8m2!3d54.6093355!4d-5.9651751!9m1!1b1!16s%2Fg%2F1tgf7600?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 50,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774209858818,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4861086e2322ccd9%3A0xc8f632397e04830c!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUR4NV8zYlJREAE\",[\"0x0:0xc8f632397e04830c\",null,1686920970185693,1686920970185693,[null,null,[\"https://www.google.com/maps/contrib/100528534036769898812/reviews?hl\\u003den\"],null,null,[\"J M\",\"https://lh3.googleusercontent.com/a-/ALV-UjU9FfDgRQSYPAe0mcDbHwYaXHPBnlFS36LDZTrjNMLa_4Q46R_T\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/100528534036769898812?hl\\u003den\"],\"100528534036769898812\",null,6,0,null,[0,3,1],0,[\"6 reviews\",null,null,null,null,[null,\"0ahUKEwjQ6YjjprSTAxXWHmMBHYn0B5MQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Could easily contend for the worst doctor in the UK and Ireland.\",null,[0,64]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4NV8zYlJREAE!2m1!1s0x0:0xc8f632397e04830c!3m1!1s2@1:CIHM0ogKEICAgIDx5_3bRQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUR4NV8zYlJREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUR4NV8zYlJREi0KF0NJSE0wb2dLRUlDQWdJRHg1XzNieFFFEhJDZ3NJaXI2eHBBWVF5T2JGV0EaLAoWQ0lITTBvZ0tFSUNBZ0lEeDVfM2JKURISQ2dzSWlyNnhwQVlReU9iRldBIhIJAAAAAAAAAAARDIMEfjky9sgqEkNnc0lpcjZ4cEFZUXlPYkZXQQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjQ6YjjprSTAxXWHmMBHYn0B5MQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjQ6YjjprSTAxXWHmMBHYn0B5MQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

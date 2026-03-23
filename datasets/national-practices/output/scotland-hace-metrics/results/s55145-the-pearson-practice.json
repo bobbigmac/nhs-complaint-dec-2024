@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:21:31Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S55145",
+  "practice_name": "THE PEARSON PRACTICE",
+  "tableau_report_area_label": "The Pearson Practice - Wick (55145)",
+  "survey_overall_good_percent": 92,
+  "response_rate_percent": 31,
+  "number_of_responses": 146,
+  "responses_for_overall_question": 120,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 92% Responses: 120",
+  "response_rate_tooltip_text": "Response rate: 31%",
+  "number_of_responses_tooltip_text": "Number of responses: 146",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

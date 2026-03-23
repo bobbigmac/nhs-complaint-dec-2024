@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T16:54:56Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S87019",
+  "practice_name": "GLENIFFER MEDICAL GROUP",
+  "tableau_report_area_label": "Gleniffer Medical Group - Barrhead (87019)",
+  "survey_overall_good_percent": 74,
+  "response_rate_percent": 19,
+  "number_of_responses": 99,
+  "responses_for_overall_question": 76,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 74% Responses: 76",
+  "response_rate_tooltip_text": "Response rate: 19%",
+  "number_of_responses_tooltip_text": "Number of responses: 99",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "practice_name": "DR. DE ALWIS & PARTNERS",
+  "canonical_code": "Z00457",
+  "postcode": "BT66 6BW",
+  "query_used": "DR. DE ALWIS & PARTNERS BT66 6BW",
+  "google_maps_title": "Dr E De-alwis",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+E+De-alwis/@54.4613249,-6.3431085,17z/data=!4m8!3m7!1s0x4860fb3cb7ce6405:0xedfdd23941c565e5!8m2!3d54.4613218!4d-6.3405282!9m1!1b1!16s%2Fg%2F1yfjhrvc_?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774205824904,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4860fb3cb7ce6405%3A0xedfdd23941c565e5!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNkeDRHa2dBRRAB\",[\"0x0:0xedfdd23941c565e5\",null,1708292692970629,1708292692970629,[null,null,[\"https://www.google.com/maps/contrib/108545990607899605522/reviews?hl\\u003den\"],null,null,[\"Richard mccullough\",\"https://lh3.googleusercontent.com/a-/ALV-UjXr-RDJJWTzKO2PEjUnAFpSHNDjdLS2T3Mn-ulYrgfjSwv9pIlD\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/108545990607899605522?hl\\u003den\"],\"108545990607899605522\",null,1,0,null,[0,1,1],0,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjng8Xfl7STAxXiEWMBHTfyJCQQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Excellent service first class doctors\",null,[0,37]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkeDRHa2dBRRAB!2m1!1s0x0:0xedfdd23941c565e5!3m1!1s2@1:CIHM0ogKEICAgICdx4GkgAE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNkeDRHa2dBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNkeDRHa2dBRRItChZDSUhNMG9nS0VJQ0FnSUNkeDRHa1FBEhNDZ3dJMVBUSnJnWVFpTF9xemdNGi4KF0NJSE0wb2dLRUlDQWdJQ2R4NEdrd0FFEhNDZ3dJMVBUSnJnWVFpTF9xemdNIhIJAAAAAAAAAAAR5WXFQTnS_e0qE0Nnd0kxUFRKcmdZUWlMX3F6Z00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjng8Xfl7STAxXiEWMBHTfyJCQQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjng8Xfl7STAxXiEWMBHTfyJCQQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

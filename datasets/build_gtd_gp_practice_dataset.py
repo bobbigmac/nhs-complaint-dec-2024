@@ -30,6 +30,7 @@ DEPRIVATION_SUBSET_GEOJSON = BASE_DIR / "deprivation" / "output" / "catchment_ls
 NATIONAL_PRACTICES_OUTPUT_DIR = BASE_DIR / "national-practices" / "output"
 NATIONAL_GOOGLE_REVIEW_RESULTS_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "google_maps_recent_reviews.json"
 NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.csv"
+SCOTLAND_HACE_MANIFEST_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "scotland-hace-metrics" / "manifest.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
@@ -839,6 +840,64 @@ def load_gp_patient_survey_index(raw_dir: Path = GP_PATIENT_SURVEY_RAW_DIR) -> d
     return survey_by_code
 
 
+def load_scotland_hace_index(
+    manifest_path: Path = SCOTLAND_HACE_MANIFEST_JSON,
+) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
+    if not manifest_path.exists():
+        return {}, {}
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}, {}
+    if not isinstance(manifest, dict):
+        return {}, {}
+    practices = manifest.get("practices", {})
+    if not isinstance(practices, dict):
+        return {}, {}
+
+    manifest_by_code: dict[str, dict[str, Any]] = {}
+    payload_by_code: dict[str, dict[str, Any]] = {}
+    for code, entry in practices.items():
+        if not isinstance(entry, dict):
+            continue
+        normalized_code = str(code).strip().upper()
+        if not normalized_code:
+            continue
+        manifest_by_code[normalized_code] = entry
+        if entry.get("status") != "ok":
+            continue
+        result_file = str(entry.get("result_file", "")).strip()
+        if not result_file:
+            continue
+        result_path = manifest_path.parent / result_file
+        if not result_path.exists():
+            continue
+        try:
+            result_payload = json.loads(result_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(result_payload, dict):
+            continue
+        overall_percent = percent_or_blank(result_payload.get("survey_overall_good_percent"))
+        response_rate_percent = percent_or_blank(result_payload.get("response_rate_percent"))
+        payload_by_code[normalized_code] = {
+            "canonical_code": normalized_code,
+            "source_url": str(result_payload.get("source_url", "")).strip(),
+            "fetched_at": str(result_payload.get("fetched_at", "")).strip(),
+            "tableau_report_area_label": str(result_payload.get("tableau_report_area_label", "")).strip(),
+            "response_rate_percent": response_rate_percent,
+            "completion_rate_percent": response_rate_percent,
+            "number_of_responses": result_payload.get("number_of_responses", ""),
+            "responses_for_overall_question": result_payload.get("responses_for_overall_question", ""),
+            "key_questions": {
+                "overallexp": {
+                    "practice_percent": overall_percent,
+                }
+            },
+        }
+    return payload_by_code, manifest_by_code
+
+
 def load_gp_patient_survey_branch_parent_index(
     path: Path = GP_PATIENT_SURVEY_BRANCH_PARENT_JSON,
 ) -> dict[str, dict[str, Any]]:
@@ -905,6 +964,53 @@ def resolve_gp_patient_survey_payload(
         note += f" ({branch_name.title()})"
     note += "."
     return parent_payload, parent_code, note
+
+
+def resolve_national_practice_survey_payload(
+    code: str,
+    nation: str,
+    survey_by_code: dict[str, dict[str, Any]],
+    branch_parent_by_code: dict[str, dict[str, Any]],
+    scotland_hace_by_code: dict[str, dict[str, Any]],
+    scotland_hace_manifest_by_code: dict[str, dict[str, Any]],
+) -> tuple[dict[str, Any], str, str, dict[str, str]]:
+    normalized_nation = str(nation or "").strip().lower()
+    if normalized_nation == "scotland":
+        direct_payload = scotland_hace_by_code.get(code, {})
+        if survey_metric(direct_payload, "overallexp") not in ("", None):
+            return (
+                direct_payload,
+                code,
+                "",
+                {
+                    "patient_survey_status": "practice_level_available",
+                    "patient_survey_level": "practice",
+                    "patient_survey_url": str(direct_payload.get("source_url", "")).strip(),
+                    "patient_survey_note": (
+                        "Uses Health and Care Experience Survey question 13 "
+                        "(overall care provided by your General Practice) and "
+                        "the dashboard response-rate panel."
+                    ),
+                },
+            )
+        manifest_entry = scotland_hace_manifest_by_code.get(code, {})
+        if manifest_entry.get("status") == "missing_dropdown_option":
+            return (
+                {},
+                code,
+                "",
+                {
+                    "patient_survey_status": "practice_level_missing_in_source",
+                    "patient_survey_level": "practice_dashboard",
+                    "patient_survey_note": (
+                        "Current Health and Care Experience Survey practice dashboard "
+                        "did not list this code in its General Practice dropdown."
+                    ),
+                },
+            )
+        return {}, code, "", {}
+    payload, code_used, note = resolve_gp_patient_survey_payload(code, survey_by_code, branch_parent_by_code)
+    return payload, code_used, note, {}
 
 
 def parse_google_maps_coordinates(url: str) -> tuple[float, float] | None:
@@ -1053,63 +1159,96 @@ def build_national_map_supplementals(
         return []
 
     input_by_code = load_national_input_index(national_input_csv)
-    survey_by_code = load_latest_gpps_csv_index()
-    if not survey_by_code:
-        survey_by_code = load_gp_patient_survey_index()
-    branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
-    supplementals: list[dict[str, Any]] = []
-
+    results_by_code: dict[str, dict[str, Any]] = {}
     for result in results:
         if not isinstance(result, dict):
             continue
         code = str(result.get("canonical_code", "")).strip()
         if not code:
             continue
-        if bool(result.get("manual_review_required")):
-            continue
-        if bool(result.get("wrong_place_match")):
-            continue
-        if bool(result.get("blocked_place_match")):
-            continue
-        if bool(result.get("sponsored_place_match")) or bool(result.get("sponsored_search_results_only")):
-            continue
-        page_kind = str(result.get("page_kind", "")).strip()
-        google_maps_url = str(result.get("google_maps_url", "")).strip()
-        if not page_kind:
-            if "/place/" in google_maps_url:
-                page_kind = "place"
-            elif "/search/" in google_maps_url:
-                page_kind = "search"
-            else:
-                page_kind = "other"
-        if page_kind != "place":
+        results_by_code[code] = result
+
+    survey_by_code = load_latest_gpps_csv_index()
+    if not survey_by_code:
+        survey_by_code = load_gp_patient_survey_index()
+    branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
+    scotland_hace_by_code, scotland_hace_manifest_by_code = load_scotland_hace_index()
+    supplementals: list[dict[str, Any]] = []
+
+    for code, source_row in input_by_code.items():
+        result = results_by_code.get(code, {})
+        survey_metadata = national_survey_metadata(source_row.get("nation"))
+        for key in ("patient_survey_name", "patient_survey_status", "patient_survey_level", "patient_survey_url", "patient_survey_note"):
+            value = str(source_row.get(key, "")).strip()
+            if value:
+                survey_metadata[key] = value
+        survey_payload, survey_code_used, survey_resolution_note, survey_overrides = resolve_national_practice_survey_payload(
+            code,
+            str(source_row.get("nation", "")).strip(),
+            survey_by_code,
+            branch_parent_by_code,
+            scotland_hace_by_code,
+            scotland_hace_manifest_by_code,
+        )
+        for key, value in survey_overrides.items():
+            if str(value).strip():
+                survey_metadata[key] = str(value).strip()
+
+        survey_score = survey_metric(survey_payload, "overallexp")
+        google_score = ""
+        google_count = ""
+        google_maps_url = ""
+        google_source_note = ""
+
+        google_result_usable = isinstance(result, dict) and not any(
+            bool(result.get(field))
+            for field in (
+                "manual_review_required",
+                "wrong_place_match",
+                "blocked_place_match",
+                "sponsored_place_match",
+                "sponsored_search_results_only",
+            )
+        )
+
+        if google_result_usable:
+            google_maps_url = str(result.get("google_maps_url", "")).strip()
+            page_kind = str(result.get("page_kind", "")).strip()
+            if not page_kind:
+                if "/place/" in google_maps_url:
+                    page_kind = "place"
+                elif "/search/" in google_maps_url:
+                    page_kind = "search"
+                else:
+                    page_kind = "other"
+            if page_kind == "place":
+                google_score = result.get("google_rating", "")
+                google_count = result.get("google_review_count", "")
+                google_source_note = "National Google Maps quick scan"
+
+        if google_score in ("", None) and survey_score in ("", None):
             continue
 
         coords = None
-        raw_lat = result.get("latitude")
-        raw_lon = result.get("longitude")
-        try:
-            if raw_lat not in ("", None) and raw_lon not in ("", None):
-                coords = (float(raw_lat), float(raw_lon))
-        except (TypeError, ValueError):
-            coords = None
+        if google_result_usable:
+            raw_lat = result.get("latitude")
+            raw_lon = result.get("longitude")
+            try:
+                if raw_lat not in ("", None) and raw_lon not in ("", None):
+                    coords = (float(raw_lat), float(raw_lon))
+            except (TypeError, ValueError):
+                coords = None
+            if coords is None:
+                coords = parse_google_maps_coordinates(google_maps_url)
         if coords is None:
-            coords = parse_google_maps_coordinates(google_maps_url)
+            raw_lat = source_row.get("latitude")
+            raw_lon = source_row.get("longitude")
+            try:
+                if raw_lat not in ("", None) and raw_lon not in ("", None):
+                    coords = (float(raw_lat), float(raw_lon))
+            except (TypeError, ValueError):
+                coords = None
         if coords is None:
-            continue
-
-        source_row = input_by_code.get(code, {})
-        survey_payload, survey_code_used, survey_resolution_note = resolve_gp_patient_survey_payload(
-            code,
-            survey_by_code,
-            branch_parent_by_code,
-        )
-        survey_metadata = national_survey_metadata(source_row.get("nation"))
-
-        google_score = result.get("google_rating", "")
-        google_count = result.get("google_review_count", "")
-        survey_score = survey_metric(survey_payload, "overallexp")
-        if google_score in ("", None) and survey_score in ("", None):
             continue
 
         supplementals.append(
@@ -1126,7 +1265,7 @@ def build_national_map_supplementals(
                 "registered_patient_count_snapshot": source_row.get("registered_patient_count_snapshot", ""),
                 "google_score": google_score,
                 "google_count": google_count,
-                "google_source_note": "National Google Maps quick scan",
+                "google_source_note": google_source_note,
                 "google_url": google_maps_url,
                 "survey_overall_good_percent": survey_score,
                 "survey_overall_good_ics_percent": "",
@@ -1137,11 +1276,11 @@ def build_national_map_supplementals(
                 "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
                 "gp_patient_survey_code_used": survey_code_used,
                 "gp_patient_survey_resolution_note": survey_resolution_note,
-                "patient_survey_name": str(source_row.get("patient_survey_name") or survey_metadata.get("patient_survey_name") or "").strip(),
-                "patient_survey_status": str(source_row.get("patient_survey_status") or survey_metadata.get("patient_survey_status") or "").strip(),
-                "patient_survey_level": str(source_row.get("patient_survey_level") or survey_metadata.get("patient_survey_level") or "").strip(),
-                "patient_survey_url": str(source_row.get("patient_survey_url") or survey_metadata.get("patient_survey_url") or "").strip(),
-                "patient_survey_note": str(source_row.get("patient_survey_note") or survey_metadata.get("patient_survey_note") or "").strip(),
+                "patient_survey_name": str(survey_metadata.get("patient_survey_name") or "").strip(),
+                "patient_survey_status": str(survey_metadata.get("patient_survey_status") or "").strip(),
+                "patient_survey_level": str(survey_metadata.get("patient_survey_level") or "").strip(),
+                "patient_survey_url": str(survey_metadata.get("patient_survey_url") or "").strip(),
+                "patient_survey_note": str(survey_metadata.get("patient_survey_note") or "").strip(),
                 "is_national_supplemental": True,
             }
         )
@@ -1561,6 +1700,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     rows = apply_gtd_takeover_metadata(rows)
     survey_by_code = load_gp_patient_survey_index()
     survey_branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
+    scotland_hace_by_code, scotland_hace_manifest_by_code = load_scotland_hace_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     dataset_google_review_average = build_dataset_google_review_yearly_average(rows)
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
@@ -1584,11 +1724,19 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     total_registered_patients = 0
     registered_patient_rows = 0
     for row in rows:
-        survey_payload, survey_code_used, survey_resolution_note = resolve_gp_patient_survey_payload(
+        nation = str(row.get("nation") or "england").strip().lower()
+        survey_metadata = national_survey_metadata(nation)
+        survey_payload, survey_code_used, survey_resolution_note, survey_overrides = resolve_national_practice_survey_payload(
             str(row["canonical_code"]),
+            nation,
             survey_by_code,
             survey_branch_parent_by_code,
+            scotland_hace_by_code,
+            scotland_hace_manifest_by_code,
         )
+        for key, value in survey_overrides.items():
+            if str(value).strip():
+                survey_metadata[key] = str(value).strip()
         registered_patient_count = row.get("registered_patient_count", "")
         if registered_patient_count not in ("", None):
             try:
@@ -1603,7 +1751,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "lat": row["latitude"],
                 "lon": row["longitude"],
                 "postcode": row["postcode"],
-                "nation": str(row.get("nation") or "england").strip().lower(),
+                "nation": nation,
                 "gtd": row["gtd_managed"],
                 "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
                 "affiliated_group": row.get("affiliated_group_name", ""),
@@ -1628,11 +1776,11 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
                 "gp_patient_survey_code_used": survey_code_used,
                 "gp_patient_survey_resolution_note": survey_resolution_note,
-                "patient_survey_name": "GP Patient Survey",
-                "patient_survey_status": "practice_level_available",
-                "patient_survey_level": "practice",
-                "patient_survey_url": "https://www.gp-patient.co.uk",
-                "patient_survey_note": "",
+                "patient_survey_name": survey_metadata.get("patient_survey_name", "GP Patient Survey"),
+                "patient_survey_status": survey_metadata.get("patient_survey_status", "practice_level_available"),
+                "patient_survey_level": survey_metadata.get("patient_survey_level", "practice"),
+                "patient_survey_url": survey_metadata.get("patient_survey_url", "https://www.gp-patient.co.uk"),
+                "patient_survey_note": survey_metadata.get("patient_survey_note", ""),
                 "registered_patient_count": row.get("registered_patient_count", ""),
             }
         )
@@ -3559,6 +3707,7 @@ function formatSurvey(row) {{
   const sentOut = numericOrNull(row.survey_sent_out);
   if (overall === null && completion === null) {{
     if (surveyStatus === 'equivalent_identified_not_yet_wired') return `${{surveyName}}: source identified, practice-level feed not yet wired`;
+    if (surveyStatus === 'practice_level_missing_in_source') return `${{surveyName}}: not listed in current practice dashboard`;
     if (surveyStatus === 'discontinued') return `${{surveyName}}: historic/discontinued`;
     if (surveyStatus === 'practice_level_available') return `${{surveyName}}: ?`;
     return `${{surveyName}}: ?`;

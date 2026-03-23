@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:34:28Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S21524",
+  "practice_name": "AIRLIE MEDICAL PRACTICE",
+  "tableau_report_area_label": "Airlie Medical Practice - Fife (21524)",
+  "survey_overall_good_percent": 77,
+  "response_rate_percent": 18,
+  "number_of_responses": 125,
+  "responses_for_overall_question": 102,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 77% Responses: 102",
+  "response_rate_tooltip_text": "Response rate: 18%",
+  "number_of_responses_tooltip_text": "Number of responses: 125",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

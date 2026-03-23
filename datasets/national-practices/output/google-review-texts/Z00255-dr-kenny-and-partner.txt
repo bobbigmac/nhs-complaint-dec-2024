@@ -1,0 +1,26 @@
+Practice: DR. KENNY & PARTNER
+Canonical code: Z00255
+Postcode: BT20 4LD
+Google Maps title: Dr Milliken - Bangor Health Centre
+Google rating: 3.0
+Google review count: 40
+Google Maps URL: https://www.google.com/maps/place/Dr+Milliken+-+Bangor+Health+Centre/@54.6508219,-5.6806471,16z/data=!4m12!1m2!2m1!1sDR.+KENNY+%26+PARTNER+BT20+4LD!3m8!1s0x4861758a16584755:0xcc8e9b226ed14aa!8m2!3d54.6548626!4d-5.674746!9m1!1b1!15sChxEUi4gS0VOTlkgJiBQQVJUTkVSIEJUMjAgNExEkgEGZG9jdG9y4AEA!16s%2Fg%2F1yh9v0g9l?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.333
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/Z00255-dr-kenny-and-partner.json
+
+Captured reviews
+================
+
+Author: SNAZZY SHAZZY
+Date: 4 years ago
+Rating: 5 stars
+I have been with this practice for 40 years, its always been helpful and friendly. Would hate it if I was to go elsewhere.
+
+Author: Amanda Irvine155
+Date: 7 years ago
+Rating: 5 stars
+I have been with this health centre for 43 years and always recieved the very best care.

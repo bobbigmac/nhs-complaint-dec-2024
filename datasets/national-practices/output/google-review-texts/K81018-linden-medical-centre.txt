@@ -1,0 +1,31 @@
+Practice: LINDEN MEDICAL CENTRE
+Canonical code: K81018
+Postcode: SL6 6JJ
+Google Maps title: Linden Medical Centre
+Google rating: 2.7
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Linden+Medical+Centre/@51.5308222,-0.7399934,17z/data=!4m8!3m7!1s0x487663005120775d:0x1a01281bbe63484e!8m2!3d51.5308189!4d-0.7374131!9m1!1b1!16s%2Fg%2F11yjm_y7pm?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/K81018-linden-medical-centre.json
+
+Captured reviews
+================
+
+Author: Sukirith Singh
+Date: a month ago
+Rating: 5 stars
+They’re really good! - got me an appointment within the week and all the doctors I’ve had are great! Receptionists are lovley and considerate also!
+
+Author: Lenon L
+Date: 5 months ago
+Rating: 1 star
+Terrible surgery Extremely rude receptionists Passive Doctors who do nothing Awful "Service"
+
+Author: Poppy Rainer
+Date: 5 months ago
+Rating: 2 stars
+Very helpful doctors apart from the incredibly rude receptionist, talking to my mother and I like we were an inconvenience. My mother and I were sat in the waiting room while waiting to be seen while the receptionist was on the phone to a patient, humiliating them about not coming to see a doctor.

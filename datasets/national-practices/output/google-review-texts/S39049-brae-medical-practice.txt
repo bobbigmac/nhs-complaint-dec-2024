@@ -1,0 +1,41 @@
+Practice: BRAE MEDICAL PRACTICE
+Canonical code: S39049
+Postcode: ZE2 9QJ
+Google Maps title: Brae Health Centre
+Google rating: 5.0
+Google review count: 5
+Google Maps URL: https://www.google.com/maps/place/Brae+Health+Centre/@60.3940073,-1.3529384,17z/data=!4m8!3m7!1s0x489eeff647677bed:0x60ff63ab97d6ea6d!8m2!3d60.3940047!4d-1.3503581!9m1!1b1!16s%2Fg%2F1td250n7?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S39049-brae-medical-practice.json
+
+Captured reviews
+================
+
+Author: Paul Wharton
+Date: 2 months ago
+Rating: 5 stars
+Helpful staff.
+
+Author: Gareth Everett
+Date: 11 months ago
+Rating: 5 stars
+Gareth Everett3 reviews11 months ago
+
+Author: Sidra Qasim
+Date: 2 years ago
+Rating: 5 stars
+Good helth center
+
+Author: Brian Pearson (Shetlandwarrior)
+Date: 2 years ago
+Rating: 5 stars
+Lovely friendly doctors
+
+Author: Dianne Bryant
+Date: 6 years ago
+Rating: 5 stars
+Dianne Bryant6 years ago

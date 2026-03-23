@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE NEWMAN PRACTICE (DR NEWMANS SURGERY)",
+  "canonical_code": "J81648",
+  "postcode": "BH15 2PG",
+  "query_used": "THE NEWMAN PRACTICE (DR NEWMANS SURGERY) BH15 2PG",
+  "google_maps_title": "Dr M Turner - Dr Newman's Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+M+Turner+-+Dr+Newman's+Practice/@50.7196718,-1.9786213,17z/data=!4m12!1m2!2m1!1sTHE+NEWMAN+PRACTICE+(DR+NEWMANS+SURGERY)+BH15+2PG!3m8!1s0x4873a6c22af1d07b:0xe047ecbcbf1dec63!8m2!3d50.7196684!4d-1.976041!9m1!1b1!15sCjFUSEUgTkVXTUFOIFBSQUNUSUNFIChEUiBORVdNQU5TIFNVUkdFUlkpIEJIMTUgMlBHkgEGZG9jdG9y4AEA!16s%2Fg%2F11g6vgzs41?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 31,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774208364557,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4873a6c22af1d07b%3A0xe047ecbcbf1dec63!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUM3cEo3OWpRRRAB\",[\"0x0:0xe047ecbcbf1dec63\",null,1723485054888777,1723485054888777,[null,null,[\"https://www.google.com/maps/contrib/100934120584220423423/reviews?hl\\u003den\"],null,null,[\"James White\",\"https://lh3.googleusercontent.com/a/ACg8ocKazPKm8UIZ2_1J7xQvZVofkKybmaPNtobwlRUpeS2fiQ5Fwg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/100934120584220423423?hl\\u003den\"],\"100934120584220423423\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwjL4L-aobSTAxUwAmMBHZLbLyYQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3cEo3OWpRRRAB!2m1!1s0x0:0xe047ecbcbf1dec63!3m1!1s2@1:CIHM0ogKEICAgIC7pJ79jQE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUM3cEo3OWpRRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUM3cEo3OWpRRRotChZDSUhNMG9nS0VJQ0FnSUM3cEo3OVRREhNDZ3dJX3BicHRRWVFxTkxtcHdNIhIJAAAAAAAAAAARY-wdv7zsR-AqE0Nnd0lfcGJwdFFZUXFOTG1wd00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjL4L-aobSTAxUwAmMBHZLbLyYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjL4L-aobSTAxUwAmMBHZLbLyYQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

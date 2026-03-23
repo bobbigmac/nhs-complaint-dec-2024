@@ -1,0 +1,31 @@
+Practice: GRANTOWN-ON-SPEY MEDICAL PRACTICE
+Canonical code: S55925
+Postcode: PH26 3HR
+Google Maps title: Grantown On Spey Medical Practice
+Google rating: 4.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Grantown+On+Spey+Medical+Practice/@57.3370924,-3.6066116,17z/data=!4m8!3m7!1s0x48858e1bf09141dd:0xed2ca84ade4f89cf!8m2!3d57.3370895!4d-3.6040313!9m1!1b1!16s%2Fg%2F1tk_nvp7?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S55925-grantown-on-spey-medical-practice.json
+
+Captured reviews
+================
+
+Author: Avril Landrover
+Date: a year ago
+Rating: 5 stars
+Only called in to register. Clean bright building. Receptionists warm, friendly and helpful
+
+Author: Adam
+Date: 7 years ago
+Rating: 5 stars
+Great for the area, friendly staff
+
+Author: Nihil
+Date: 7 years ago
+Rating: 2 stars
+There are good gp's here. Only on my most recent visit I found the doctor very condescending.

@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T15:44:46Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S71434",
+  "practice_name": "BARCLAY MEDICAL PRACTICE EAST CRAIGS",
+  "tableau_report_area_label": "Barclay Medical Practice East Craigs - Edinburgh (71434)",
+  "survey_overall_good_percent": 75,
+  "response_rate_percent": 22,
+  "number_of_responses": 112,
+  "responses_for_overall_question": 99,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 75% Responses: 99",
+  "response_rate_tooltip_text": "Response rate: 22%",
+  "number_of_responses_tooltip_text": "Number of responses: 112",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

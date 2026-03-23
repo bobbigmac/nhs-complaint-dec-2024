@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T15:47:47Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S70639",
+  "practice_name": "DR A COMISKEY AND PARTNERS",
+  "tableau_report_area_label": "Dr A Comiskey and Partners - Edinburgh (70639)",
+  "survey_overall_good_percent": 90,
+  "response_rate_percent": 27,
+  "number_of_responses": 149,
+  "responses_for_overall_question": 115,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 90% Responses: 115",
+  "response_rate_tooltip_text": "Response rate: 27%",
+  "number_of_responses_tooltip_text": "Number of responses: 149",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

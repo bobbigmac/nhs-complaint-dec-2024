@@ -1,0 +1,31 @@
+Practice: FERGUSON MEDICAL PRACTICE
+Canonical code: S78062
+Postcode: EH52 5LH
+Google Maps title: Dr T Mackie - Ferguson Medical Practice
+Google rating: 3.3
+Google review count: 22
+Google Maps URL: https://www.google.com/maps/place/Dr+T+Mackie+-+Ferguson+Medical+Practice/@55.9315922,-3.4886479,17z/data=!4m12!1m2!2m1!1sFERGUSON+MEDICAL+PRACTICE+EH52+5LH!3m8!1s0x4887da4cd1862a7d:0xfb870d6eda9385a6!8m2!3d55.9315492!4d-3.4861481!9m1!1b1!15sCiJGRVJHVVNPTiBNRURJQ0FMIFBSQUNUSUNFIEVINTIgNUxIkgEGZG9jdG9y4AEA!16s%2Fg%2F11d_wmzd54?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.25
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S78062-ferguson-medical-practice.json
+
+Captured reviews
+================
+
+Author: Janice Kinsman
+Date: a year ago
+Rating: 5 stars
+Dr Mackie is very professional and listens to everything you say and doesn’t interrupt you no matter how long you go on. She takes the time to explain things and put your mind at ease. I have only spoken to her on the phone but always felt better afterwards. To be fair I have not come across a “bad” GP in this practice but Dr Mackie is by far in my opinion the best.
+
+Author: Susan Maclean
+Date: a year ago
+Rating: 5 stars
+Doctor mackay best doctor ever
+
+Author: Angie Mccolm
+Date: 6 years ago
+Rating: 5 stars
+Angie Mccolm6 years ago

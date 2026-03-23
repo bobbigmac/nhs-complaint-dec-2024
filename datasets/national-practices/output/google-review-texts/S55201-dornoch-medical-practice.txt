@@ -1,0 +1,26 @@
+Practice: DORNOCH MEDICAL PRACTICE
+Canonical code: S55201
+Postcode: IV25 3LS
+Google Maps title: Dornoch Health Centre
+Google rating: 5.0
+Google review count: 2
+Google Maps URL: https://www.google.com/maps/place/Dornoch+Health+Centre/@57.878461,-4.0307715,17z/data=!4m12!1m2!2m1!1sDORNOCH+MEDICAL+PRACTICE+IV25+3LS!3m8!1s0x488f8b93780d7357:0x4528fde73b3b173a!8m2!3d57.8786827!4d-4.0283065!9m1!1b1!15sCiFET1JOT0NIIE1FRElDQUwgUFJBQ1RJQ0UgSVYyNSAzTFOSAQ5tZWRpY2FsX2NsaW5pY-ABAA!16s%2Fg%2F1hc28_l7m?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 2
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S55201-dornoch-medical-practice.json
+
+Captured reviews
+================
+
+Author: Iain Vass
+Date: 7 years ago
+Rating: 5 stars
+Best health centre around, great staff everyone of them.
+
+Author: Frankie Munro
+Date: 8 years ago
+Rating: 5 stars
+Very helpful.

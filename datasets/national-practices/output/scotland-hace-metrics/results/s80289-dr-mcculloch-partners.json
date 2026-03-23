@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T17:17:05Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S80289",
+  "practice_name": "DR MCCULLOCH & PARTNERS",
+  "tableau_report_area_label": "Dr McCulloch & Partners - Girvan (80289)",
+  "survey_overall_good_percent": 72,
+  "response_rate_percent": 28,
+  "number_of_responses": 132,
+  "responses_for_overall_question": 104,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 72% Responses: 104",
+  "response_rate_tooltip_text": "Response rate: 28%",
+  "number_of_responses_tooltip_text": "Number of responses: 132",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

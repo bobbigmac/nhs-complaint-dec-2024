@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE ARRIVAL PRACTICE",
+  "canonical_code": "A81634",
+  "postcode": "TS18 2EP",
+  "query_used": "THE ARRIVAL PRACTICE TS18 2EP",
+  "google_maps_title": "The Arrival Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/The+Arrival+Medical+Practice/@54.5719471,-1.314643,17z/data=!4m8!3m7!1s0x487e92efb40e6679:0x3b0129187165fddf!8m2!3d54.571944!4d-1.3120627!9m1!1b1!16s%2Fg%2F11bbrmxm8l?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 26,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774209333449,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487e92efb40e6679%3A0x3b0129187165fddf!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e1",
+      "status": 0,
+      "ok": false,
+      "content_type": "",
+      "request_body": "",
+      "body": "",
+      "error": ""
+    }
+  ]
+}

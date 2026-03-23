@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T15:19:31Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S31244",
+  "practice_name": "PETERCULTER MEDICAL PRACTICE",
+  "tableau_report_area_label": "Peterculter Medical Practice - Peterculter (31244)",
+  "survey_overall_good_percent": 53,
+  "response_rate_percent": 31,
+  "number_of_responses": 151,
+  "responses_for_overall_question": 127,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 53% Responses: 127",
+  "response_rate_tooltip_text": "Response rate: 31%",
+  "number_of_responses_tooltip_text": "Number of responses: 151",
+  "hover_point": {
+    "x_offset": 80,
+    "y_offset": 612.7
+  }
+}

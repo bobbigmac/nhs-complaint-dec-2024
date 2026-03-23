@@ -1,0 +1,46 @@
+Practice: STEYNING HEALTH CENTRE
+Canonical code: H82022
+Postcode: BN44 3RJ
+Google Maps title: Steyning Health Centre
+Google rating: 3.4
+Google review count: 48
+Google Maps URL: https://www.google.com/maps/place/Steyning+Health+Centre/@50.8902959,-0.3315721,17z/data=!3m1!5s0x48759653921cdb89:0xacd55fcdbdbbac9f!4m12!1m2!2m1!1sSTEYNING+HEALTH+CENTRE+BN44+3RJ!3m8!1s0x4875978c27336e55:0xeabe8ce2e280b817!8m2!3d50.8903046!4d-0.3289872!9m1!1b1!15sCh9TVEVZTklORyBIRUFMVEggQ0VOVFJFIEJONDQgM1JKkgEGZG9jdG9y4AEA!16s%2Fg%2F11fl40wskq?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 6
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/H82022-steyning-health-centre.json
+
+Captured reviews
+================
+
+Author: Lisa Ashdown
+Date: 8 months ago
+Rating: 5 stars
+Lisa Ashdown1 review8 months ago
+
+Author: Sarah Ford
+Date: 2 years ago
+Rating: 5 stars
+Very friendly nhs dentist would highly recommend
+
+Author: Roger Cooper
+Date: 2 years ago
+Rating: 1 star
+Not to impressed, if you have a minor injury they either want a photo or send you to A&E . Repeat prescriptions seldom at the pharmacy on time but very quick to send text messages reminding you of appointments, infact three within a week !!!
+
+Author: Adrian Harwood
+Date: 3 years ago
+Rating: 5 stars
+Went for Covidand Flu. Efficient and friendly
+
+Author: Andy Tyler
+Date: 3 years ago
+Rating: 5 stars
+Great place, clean tidy, very little waiting if at all.
+
+Author: Mr Dave
+Date: 6 years ago
+Rating: 5 stars
+Excellent practice and dedicated doctors and nurses who care about their patients.

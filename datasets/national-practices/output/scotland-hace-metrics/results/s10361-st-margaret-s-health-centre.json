@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T18:06:08Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S10361",
+  "practice_name": "ST MARGARET'S HEALTH CENTRE",
+  "tableau_report_area_label": "St Margaret's Health Centre - Auchterarder (10361)",
+  "survey_overall_good_percent": 77,
+  "response_rate_percent": 28,
+  "number_of_responses": 119,
+  "responses_for_overall_question": 101,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 77% Responses: 101",
+  "response_rate_tooltip_text": "Response rate: 28%",
+  "number_of_responses_tooltip_text": "Number of responses: 119",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

@@ -1,0 +1,21 @@
+Practice: OXFORD TCE & RAWLING RD MEDICAL GROUP
+Canonical code: A85005
+Postcode: NE8 1RQ
+Google Maps title: Dr A Moore - Oxford Tce & Rawling Rd Medical Group
+Google rating: 3.0
+Google review count: 102
+Google Maps URL: https://www.google.com/maps/place/Dr+A+Moore+-+Oxford+Tce+%26+Rawling+Rd+Medical+Group/@54.9532228,-1.6160818,16z/data=!4m12!1m2!2m1!1sOXFORD+TCE+%26+RAWLING+RD+MEDICAL+GROUP+NE8+1RQ!3m8!1s0x487e70a890b6aaab:0x99bf69c3f606c1d9!8m2!3d54.9543591!4d-1.6063113!9m1!1b1!15sCi9PWEZPUkQgVENFICYgUkFXTElORyBST0FEIE1FRElDQUwgR1JPVVAgTkU4IDFSUVoxIi9veGZvcmQgdGNlICYgcmF3bGluZyByb2FkIG1lZGljYWwgZ3JvdXAgbmU4IDFycZIBBmRvY3RvcpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOUE9VdFlMVVZSRUFF4AEA-gEECFUQHA!16s%2Fg%2F11k5lsddk5?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.571
+Review collection mode: visible_cards
+Review cards collected: 1
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/A85005-oxford-tce-and-rawling-rd-medical-group.json
+
+Captured reviews
+================
+
+Author: Sue Lumsden
+Date: 3 years ago
+Rating: 5 stars
+Wonderful doctor, never felt so listened to or comfortable around any doctor before. Highly recommend dr Moore :)

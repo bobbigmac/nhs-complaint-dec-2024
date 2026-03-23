@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T18:06:58Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S55624",
+  "practice_name": "TWEEDDALE MEDICAL PRACTICE",
+  "tableau_report_area_label": "Tweeddale Medical Practice - Fort William (55624)",
+  "survey_overall_good_percent": 83,
+  "response_rate_percent": 19,
+  "number_of_responses": 107,
+  "responses_for_overall_question": 82,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 83% Responses: 82",
+  "response_rate_tooltip_text": "Response rate: 19%",
+  "number_of_responses_tooltip_text": "Number of responses: 107",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

@@ -1,0 +1,41 @@
+Practice: GP FOR GP'S
+Canonical code: S58001
+Postcode: IV2 7GE
+Google Maps title: Doctor Livingford Private GP
+Google rating: 3.4
+Google review count: 5
+Google Maps URL: https://www.google.com/maps/place/Doctor+Livingford+Private+GP/@57.4648422,-4.1874409,17z/data=!4m8!3m7!1s0x488f7123b06733cb:0x704613c7a13e05ce!8m2!3d57.4648393!4d-4.1848606!9m1!1b1!16s%2Fg%2F11f4lb6ddm?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.25
+Review collection mode: visible_cards
+Review cards collected: 5
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S58001-gp-for-gps.json
+
+Captured reviews
+================
+
+Author: Raphael Nicolle
+Date: 6 years ago
+Rating: 1 star
+Appears to have gone out of business: no reply to email, phone line seems disconnected. No information on website though. Long story short don't waste your time waiting for an answer.
+
+Author: onevodkamartini
+Date: Edited 6 years ago
+Rating: 5 stars
+I am currently being treated by Milo and find him to be a very good practitioner. He is everything a good GP should be o the NHS but are not. I am in Inverness 2 weeks of the month, and he has been a valuable addition to my health care alongside my regular NHS GP. I highly recommend
+
+Author: Kasia Szymańska
+Date: 7 years ago
+Rating: 1 star
+I do not recommend this. The doctor lacks integrity and professionalism. Best regards.
+
+Author: Moira S
+Date: 7 years ago
+Rating: 5 stars
+A very professional service.
+
+Author: Caroline Baxter
+Date: 7 years ago
+Rating: 5 stars
+Dr Livingford was kind, knowledgeable and generous with his time. I felt well looked after and I am very pleased I went to see him. I recommend him very highly

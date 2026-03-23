@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T15:55:44Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S76000",
+  "practice_name": "TYNE MEDICAL PRACTICE",
+  "tableau_report_area_label": "Tyne Medical Practice - Haddington (76000)",
+  "survey_overall_good_percent": 78,
+  "response_rate_percent": 26,
+  "number_of_responses": 101,
+  "responses_for_overall_question": 82,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 78% Responses: 82",
+  "response_rate_tooltip_text": "Response rate: 26%",
+  "number_of_responses_tooltip_text": "Number of responses: 101",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

@@ -1,0 +1,66 @@
+Practice: THE NOTTING HILL MEDICAL CENTRE
+Canonical code: E87065
+Postcode: W11 2EH
+Google Maps title: Notting Hill Medical Centre
+Google rating: 3.4
+Google review count: 48
+Google Maps URL: https://www.google.com/maps/place/Notting+Hill+Medical+Centre/@51.5150327,-0.2093943,17z/data=!4m8!3m7!1s0x4876101e20026807:0xa27c9a5c31049141!8m2!3d51.5150294!4d-0.206814!9m1!1b1!16s%2Fg%2F1hc77k3cv?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/E87065-the-notting-hill-medical-centre.json
+
+Captured reviews
+================
+
+Author: Derek White
+Date: 2 weeks ago
+Rating: 5 stars
+Best GP surgery in the area. Fabulous staff team.
+
+Author: Alex LA
+Date: a month ago
+Rating: 5 stars
+Nadia just took my blood test. She is amazing and very professional and I highly recommend. Great experience. 💓 …
+
+Author: Angela Alexandra
+Date: a month ago
+Rating: 5 stars
+I would like to leave a special thank you to Nurse Nardia at Notting Hill Medical Centre. She is truly exceptional. She is always kind, patient and incredibly professional, and consistently goes above and beyond to make appointments feel calm and reassuring. Her warmth and genuine care make such a difference, especially when attending the GP can sometimes feel stressful. She is without question one of the most compassionate nurses I have ever met. We feel very grateful to be under her care. Thank you for having such a wonderful member of staff.
+
+Author: Harriet spalding
+Date: a month ago
+Rating: 5 stars
+My recent appointment with the nurse Nardia, was very helpful and reassuring. Nardia was incredibly kind and I came away feeling listened to and with a good understanding of my situation.
+
+Author: Snappy Snaps Clapham
+Date: 7 months ago
+Rating: 1 star
+Snappy Snaps Clapham7 months ago
+
+Author: Mariana Njie
+Date: 9 months ago
+Rating: 5 stars
+Mariana Njie2 reviews9 months ago
+
+Author: Ella Obrien
+Date: a year ago
+Rating: 1 star
+Awful Gp surgery do not register here the GPs are negligent and share patients private details with the reception staff I havnt been seen by one doctor here who doesn't have to refer to Google during an appointment even once when brining my daughter in for a cold . Do not take mental health seriously and just try and pass you on to a service with a waiting list and your left to your own devices until then a disgrace … the reception staff have no manners and a sarcastic tone .
+
+Author: G C
+Date: a year ago
+Rating: 2 stars
+Registered here for many years but recently left as all the good GPs have moved on.
+
+Author: Lino ouali
+Date: a year ago
+Rating: 2 stars
+Different situation, but Always the same answer, don't worry your body will go over it other ways take paracetamol.job done. next....
+
+Author: Marli Evangelista
+Date: a year ago
+Rating: 5 stars
+I am have been very well looked after. The nurse is very kind and super professional.

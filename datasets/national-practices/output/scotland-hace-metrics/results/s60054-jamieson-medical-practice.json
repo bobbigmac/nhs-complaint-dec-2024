@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T16:47:20Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S60054",
+  "practice_name": "JAMIESON MEDICAL PRACTICE",
+  "tableau_report_area_label": "Jamieson Medical Practice - Chryston (60054)",
+  "survey_overall_good_percent": 39,
+  "response_rate_percent": 21,
+  "number_of_responses": 127,
+  "responses_for_overall_question": 112,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 39% Responses: 112",
+  "response_rate_tooltip_text": "Response rate: 21%",
+  "number_of_responses_tooltip_text": "Number of responses: 127",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

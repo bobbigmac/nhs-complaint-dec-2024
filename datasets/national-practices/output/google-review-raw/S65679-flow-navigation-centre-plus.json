@@ -1,0 +1,26 @@
+{
+  "practice_name": "FLOW NAVIGATION CENTRE PLUS",
+  "canonical_code": "S65679",
+  "postcode": "G71 8BB",
+  "query_used": "FLOW NAVIGATION CENTRE PLUS G71 8BB",
+  "google_maps_title": "NHS Flow Centre",
+  "google_maps_url": "https://www.google.com/maps/place/NHS+Flow+Centre/@55.9277986,-3.203458,17z/data=!4m8!3m7!1s0x4887c7af2121f67b:0x3be0b9b91facbe10!8m2!3d55.9277956!4d-3.2008777!9m1!1b1!16s%2Fg%2F11fmvb4kjj?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774214685720,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4887c7af2121f67b%3A0x3be0b9b91facbe10!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1si0zAaYG-NrHPhbIPxp2DqAw!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnTUNnbWR1Q293RRAB\",[\"0x0:0x3be0b9b91facbe10\",null,1739915488271393,1739915488271393,[null,null,[\"https://www.google.com/maps/contrib/108636679426804801401/reviews?hl\\u003den\"],null,null,[\"Archie Robinson\",\"https://lh3.googleusercontent.com/a/ACg8ocK6DiYB1qLKzO5jMETU8Ypu8CeLk8Tp_F-Eo8l92_MO9JJ0oA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/108636679426804801401?hl\\u003den\"],\"108636679426804801401\",null,2,0,null,[0,2,1],0,[\"2 reviews\",null,null,null,null,[null,\"0ahUKEwj8sqrguLSTAxUtBWMBHSO3GzsQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Good\",null,[0,4]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNnbWR1Q293RRAB!2m1!1s0x0:0x3be0b9b91facbe10!3m1!1s2@1:CIHM0ogKEICAgMCgmduCowE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnTUNnbWR1Q293RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnTUNnbWR1Q293RRItChZDSUhNMG9nS0VJQ0FnTUNnbWR1Q1l3EhNDZ3dJNElIVXZRWVE2TUcwZ1FFGi4KF0NJSE0wb2dLRUlDQWdNQ2dtZHVDNHdFEhNDZ3dJNElIVXZRWVE2TUcwZ1FFIhIJAAAAAAAAAAAREL6sH7m54DsqE0Nnd0k0SUhVdlFZUTZNRzBnUUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj8sqrguLSTAxUtBWMBHSO3GzsQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj8sqrguLSTAxUtBWMBHSO3GzsQ0pMFCAIoAA\"],null,\"CAESY0NBRVFBUnBFUTJwRlNVRlNTWEJEWjI5QlVEY3lSM0pyT1VwUWQxOWZSV2hDUTBweVRGSkJSVGxIUlVoNlMzVjBkMEZCUVVGQlIyZHVPVFV5ZDBOaGRWUXdhMTlCV1VGRFNVRQ\\u003d\\u003d\"],[[\"ChdDSUhNMG9nS0VJQ0FnSURlenFIa3lBRRAB\",[\"0x0:0x3be0b9b91facbe10\",null,1665410792019315,1665410792019315,[null,null,[\"https://www.google.com/maps/contrib/109629544924488680013/reviews?hl\\u003den\"],null,null,[\"Mick Wright\",\"https://lh3.googleusercontent.com/a/ACg8ocKRjBCTfDG1xBVa-nEp2F7BwUFk1Kn_nt6e_67CTY7s7VRL4A\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/109629544924488680013?hl\\u003den\"],\"109629544924488680013\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwj8sqrguLSTAxUtBWMBHSO3GzsQ7LoGCAYoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlenFIa3lBRRAB!2m1!1s0x0:0x3be0b9b91facbe10!3m1!1s2@1:CIHM0ogKEICAgIDezqHkyAE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURlenFIa3lBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURlenFIa3lBRRosChZDSUhNMG9nS0VJQ0FnSURlenFIa0tBEhJDZ3NJNk0yUW1nWVF1UEthQ1EiEgkAAAAAAAAAABEQvqwfubngOyoSQ2dzSTZNMlFtZ1lRdVBLYUNR\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj8sqrguLSTAxUtBWMBHSO3GzsQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwj8sqrguLSTAxUtBWMBHSO3GzsQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

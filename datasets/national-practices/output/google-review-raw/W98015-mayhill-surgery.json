@@ -1,0 +1,26 @@
+{
+  "practice_name": "MAYHILL SURGERY",
+  "canonical_code": "W98015",
+  "postcode": "SA1 6TD",
+  "query_used": "MAYHILL SURGERY SA1 6TD",
+  "google_maps_title": "Mayhill Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Mayhill+Surgery/@51.6304889,-3.9598533,17z/data=!4m12!1m2!2m1!1sMAYHILL+SURGERY+SA1+6TD!3m8!1s0x486ef53b04875dd3:0xbb89a605857d3264!8m2!3d51.6304889!4d-3.9550897!9m1!1b1!15sChdNQVlISUxMIFNVUkdFUlkgU0ExIDZUROABAA!16s%2Fg%2F11h5nt5v40?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 78,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774205596723,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x486ef53b04875dd3%3A0xbb89a605857d3264!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNNODlqdFF3EAE\",[\"0x0:0xbb89a605857d3264\",null,1575504883181930,1575505383924499,[null,null,[\"https://www.google.com/maps/contrib/110658720125084262155/reviews?hl\\u003den\"],null,null,[\"Seyedali Hooshangian\",\"https://lh3.googleusercontent.com/a-/ALV-UjXtR6bwGOOHF8fmgqYHmTQzEhwEGPBTaD8IZoBpqlLop8eCfUVj2Q\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/110658720125084262155?hl\\u003den\"],\"110658720125084262155\",null,43,16,null,[1,5,1],3,[\"Local Guide · 43 reviews\",null,null,null,null,[null,\"0ahUKEwjTteDylrSTAxXIEmMBHcs6IbYQ7LoGCAMoAA\"]]]],null,\"6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"In 2 Dec 2019, I was very ill and told to operator please let me to visit the doctor emergency, because I have a treble pain, but the operator said: I set you an appointment next 3 days so you should go home and back at appointment. I pleased her to do something for me but she said sorry I can't do anything for you right now.\\nNever go to Mayhill surgery.\",null,[0,234]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNODlqdFF3EAE!2m1!1s0x0:0xbb89a605857d3264!3m1!1s2@1:CIHM0ogKEICAgICM89jtQw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNNODlqdFF3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNNODlqdFF3Ei0KFkNJSE0wb2dLRUlDQWdJQ004OWlIWXcSE0Nnd0k1NXVoN3dVUXVQanF1QU0aLQoXQ0lITTBvZ0tFSUNBZ0lDTTg5aUg0d0USEkNnc0k4NWVoN3dVUWtKRGdWZyISCQAAAAAAAAAAEWQyfYUFpom7KhNDZ3dJNTV1aDd3VVF1UGpxdUFN\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjTteDylrSTAxXIEmMBHcs6IbYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjTteDylrSTAxXIEmMBHcs6IbYQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

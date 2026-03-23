@@ -1,0 +1,31 @@
+Practice: LAUDERDALE MEDICAL PRACTICE
+Canonical code: S76161
+Postcode: EH42 1EE
+Google Maps title: Lauderdale Medical Practice
+Google rating: 5.0
+Google review count: 3
+Google Maps URL: https://www.google.com/maps/place/Lauderdale+Medical+Practice/@55.9997824,-2.5153316,17z/data=!4m8!3m7!1s0x488705b7f26d449f:0xbc8faf8da0bcf5bb!8m2!3d55.9997794!4d-2.5127513!9m1!1b1!16s%2Fg%2F11svgj82t2?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S76161-lauderdale-medical-practice.json
+
+Captured reviews
+================
+
+Author: Mike Garrick Green
+Date: 6 months ago
+Rating: 5 stars
+Mike Garrick GreenLocal Guide · 196 reviews · 100 photos6 months ago
+
+Author: Patricia Johnson
+Date: a year ago
+Rating: 5 stars
+Excellent doctors nothing is to much trouble would recommend
+
+Author: Susanne Astwood
+Date: a year ago
+Rating: 5 stars
+I'm a very happy patient of this practice.

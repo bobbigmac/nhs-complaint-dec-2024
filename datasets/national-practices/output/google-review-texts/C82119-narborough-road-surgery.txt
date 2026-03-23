@@ -1,0 +1,51 @@
+Practice: NARBOROUGH ROAD SURGERY
+Canonical code: C82119
+Postcode: LE3 0PE
+Google Maps title: Narborough Road Surgery
+Google rating: 3.3
+Google review count: 7
+Google Maps URL: https://www.google.com/maps/place/Narborough+Road+Surgery/@52.6244081,-1.1559341,17z/data=!4m8!3m7!1s0x487760c5c8ad78a3:0xb0e1ef043a9b5c2!8m2!3d52.6244049!4d-1.1533538!9m1!1b1!16s%2Fg%2F11h58zqmd3?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 7
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/C82119-narborough-road-surgery.json
+
+Captured reviews
+================
+
+Author: DAVID OVINGTON-CREIGHTON
+Date: a week ago
+Rating: 5 stars
+Great doctors absolutely brilliant cannot fault the service I've been a patient at this doctors for up for years the staff are absolutely brilliant
+
+Author: Shailesh Chandarana
+Date: 6 months ago
+Rating: 4 stars
+Excellent staff and very professional, very happy
+
+Author: Dick
+Date: 9 months ago
+Rating: 1 star
+Dick9 months ago
+
+Author: Moumen Azez
+Date: 9 months ago
+Rating: 1 star
+Bad reception
+
+Author: Bardya Afzoudeh
+Date: a year ago
+Rating: 2 stars
+Bardya Afzoudeh1 reviewa year ago
+
+Author: Sarah Simms
+Date: a year ago
+Rating: 5 stars
+Sarah Simms1 reviewa year ago
+
+Author: Nav Dhillon
+Date: a year ago
+Rating: 5 stars
+Nav Dhillon2 reviewsa year ago

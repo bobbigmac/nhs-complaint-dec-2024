@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "fetched_at": "2026-03-22T16:10:55Z",
+  "source_url": "https://public.tableau.com/views/3_HACE202324-DetailedExperienceRatings-Results/PNN?:embed=y&:showVizHome=no&publish=yes",
+  "canonical_code": "S25648",
+  "practice_name": "TRYST MEDICAL CENTRE",
+  "tableau_report_area_label": "Tryst Medical Centre - Stenhousemuir (25648)",
+  "survey_overall_good_percent": 73,
+  "response_rate_percent": 24,
+  "number_of_responses": 119,
+  "responses_for_overall_question": 103,
+  "overall_tooltip_text": "Question: Overall, how would you rate the care provided by your General Practice? Positive: 73% Responses: 103",
+  "response_rate_tooltip_text": "Response rate: 24%",
+  "number_of_responses_tooltip_text": "Number of responses: 119",
+  "hover_point": {
+    "x_offset": 100,
+    "y_offset": 612.7
+  }
+}

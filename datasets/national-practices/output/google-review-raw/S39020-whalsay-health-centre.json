@@ -1,0 +1,26 @@
+{
+  "practice_name": "WHALSAY HEALTH CENTRE",
+  "canonical_code": "S39020",
+  "postcode": "ZE2 9AE",
+  "query_used": "WHALSAY HEALTH CENTRE ZE2 9AE",
+  "google_maps_title": "Whalsay Health Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Whalsay+Health+Centre/@60.3511173,-1.0202239,17z/data=!4m8!3m7!1s0x489e588b5d21481f:0x15c3d08fdf5d75e3!8m2!3d60.3511147!4d-1.0176436!9m1!1b1!16s%2Fg%2F1yh9vh9bk?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774218509769,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x489e588b5d21481f%3A0x15c3d08fdf5d75e3!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sZGPAaY2yAfKvhbIPztbzOA!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnTURvemZ5R0NREAE\",[\"0x0:0x15c3d08fdf5d75e3\",null,1745760676585201,1745760676585201,[null,null,[\"https://www.google.com/maps/contrib/103212552820673688137/reviews?hl\\u003den\"],null,null,[\"Cheryl Irvine Hairdressing\",\"https://lh3.googleusercontent.com/a-/ALV-UjWreIky3s3dtrKvjQAqrQb4DGewmhjq3umI6DHLn6Pnh2YXRTW5\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/103212552820673688137?hl\\u003den\"],\"103212552820673688137\",null,117,63,null,[1,6,1],105,[\"Local Guide · 117 reviews\",null,null,null,null,[null,\"0ahUKEwji4pKAx7STAxWjFWMBHc3RKOAQ7LoGCAMoAA\"]]]],null,\"10 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvemZ5R0NREAE!2m1!1s0x0:0x15c3d08fdf5d75e3!3m1!1s2@1:CIHM0ogKEICAgMDozfyGCQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnTURvemZ5R0NREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnTURvemZ5R0NRGi4KF0NJSE0wb2dLRUlDQWdNRG96ZnlHaVFFEhNDZ3dJcE9PNHdBWVE2T3FGbHdJIhIJAAAAAAAAAAAR43Vd34_QwxUqE0Nnd0lwT080d0FZUTZPcUZsd0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwji4pKAx7STAxWjFWMBHc3RKOAQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwji4pKAx7STAxWjFWMBHc3RKOAQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMjFKYW1oVlYxOWZSV2hEZUVWaExWQjNXbE4zVVVodGMxSnVZMEZCUVVGQlIyZG1YMEZ0YlVscWFGVlhSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSUNIZ05IeWFREAE\",[\"0x0:0x15c3d08fdf5d75e3\",null,1725034090990833,1725034090990833,[null,null,[\"https://www.google.com/maps/contrib/116299990393441331819/reviews?hl\\u003den\"],null,null,[\"Gerry Thomson\",\"https://lh3.googleusercontent.com/a-/ALV-UjX211O-phHKIE-CSjxU_SWAEs4XpL_nteOK788CLUVClLd3-pjh\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/116299990393441331819?hl\\u003den\"],\"116299990393441331819\",null,12,45,null,[1,5,1],8,[\"Local Guide · 12 reviews\",null,null,null,null,[null,\"0ahUKEwji4pKAx7STAxWjFWMBHc3RKOAQ7LoGCAYoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Maybe a biased review as I live on Whalsay , but what an amazing bunch of people that trust in your health care , second to none as far as I am concerned\",null,[0,153]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNIZ05IeWFREAE!2m1!1s0x0:0x15c3d08fdf5d75e3!3m1!1s2@1:CIHM0ogKEICAgICHgNHyaQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNIZ05IeWFREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNIZ05IeWFREi4KF0NJSE0wb2dLRUlDQWdJQ0hnTkh5NlFFEhNDZ3dJNnR6SHRnWVE2Tks3MkFNGi0KFkNJSE0wb2dLRUlDQWdJQ0hnTkh5R1ESE0Nnd0k2dHpIdGdZUTZOSzcyQU0iEgkAAAAAAAAAABHjdV3fj9DDFSoTQ2d3STZ0ekh0Z1lRNk5LNzJBTQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwji4pKAx7STAxWjFWMBHc3RKOAQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwji4pKAx7STAxWjFWMBHc3RKOAQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "practice_name": "COMMUNITY PRESCRIBING SERVICE",
+  "canonical_code": "S65908",
+  "postcode": "ML5 4DN",
+  "query_used": "COMMUNITY PRESCRIBING SERVICE ML5 4DN",
+  "google_maps_title": "Integrated Addiction Service",
+  "google_maps_url": "https://www.google.com/maps/place/Integrated+Addiction+Service/@55.8190346,-4.1056241,13z/data=!4m12!1m2!2m1!1sCOMMUNITY+PRESCRIBING+SERVICE+ML5+4DN!3m8!1s0x48886b0416f8388b:0xd358f5763d4bb899!8m2!3d55.8190346!4d-4.0294064!9m1!1b1!15sCiVDT01NVU5JVFkgUFJFU0NSSUJJTkcgU0VSVklDRSBNTDUgNEROkgEaYWRkaWN0aW9uX3RyZWF0bWVudF9jZW50ZXLgAQA!16s%2Fg%2F11bbwz02h8?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774205400663,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48886b0416f8388b%3A0xd358f5763d4bb899!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1soTnAacjAD-yrhbIP47bOwQ8!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUMtXzhYNURnEAE\",[\"0x0:0xd358f5763d4bb899\",null,1668726120470308,1669669554483276,[null,null,[\"https://www.google.com/maps/contrib/112604818066356176504/reviews?hl\\u003den\"],null,null,[\"Richie Irvine\",\"https://lh3.googleusercontent.com/a/ACg8ocIxH2-U5mPM2R8uSVoB4F11EjL6S6WpnzCiwNQNImv41q7e0g\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/112604818066356176504?hl\\u003den\"],\"112604818066356176504\",null,73,16,null,[1,6,1],11,[\"Local Guide · 73 reviews\",null,null,null,null,[null,\"0ahUKEwiYqKSVlrSTAxXiMGMBHcUDDvoQ7LoGCAMoAA\"]]]],null,\"Edited 3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Useless and failing people when they need the help most.\",null,[0,56]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtXzhYNURnEAE!2m1!1s0x0:0xd358f5763d4bb899!3m1!1s2@1:CIHM0ogKEICAgIC-_8X5Dg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUMtXzhYNURnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUMtXzhYNURnEi4KF0NJSE0wb2dLRUlDQWdJQy1fOFg1amdFEhNDZ3dJc3NXVW5BWVE0T200NWdFGi0KFkNJSE0wb2dLRUlDQWdJQy1fOFg1VGcSE0Nnd0k2UHJhbXdZUW9LbWg0QUUiEgkAAAAAAAAAABGZuEs9dvVY0yoTQ2d3SXNzV1VuQVlRNE9tNDVnRQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiYqKSVlrSTAxXiMGMBHcUDDvoQoykIBCgB\"],null,[null,[[1,4]]]],\"0ahUKEwiYqKSVlrSTAxXiMGMBHcUDDvoQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
