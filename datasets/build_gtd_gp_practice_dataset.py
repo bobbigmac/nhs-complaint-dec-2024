@@ -978,11 +978,7 @@ def resolve_national_practice_survey_payload(
                     "patient_survey_status": "practice_level_available",
                     "patient_survey_level": "practice",
                     "patient_survey_url": str(direct_payload.get("source_url", "")).strip(),
-                    "patient_survey_note": (
-                        "Uses Health and Care Experience Survey question 13 "
-                        "(overall care provided by your General Practice) and "
-                        "the dashboard response-rate panel."
-                    ),
+                    "patient_survey_note": "",
                 },
             )
         manifest_entry = scotland_hace_manifest_by_code.get(code, {})
@@ -1279,6 +1275,8 @@ def build_national_map_supplementals(
                 "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
                 "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
                 "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+                "number_of_responses": survey_payload.get("number_of_responses", ""),
+                "responses_for_overall_question": survey_payload.get("responses_for_overall_question", ""),
                 "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
                 "gp_patient_survey_code_used": survey_code_used,
                 "gp_patient_survey_resolution_note": survey_resolution_note,
@@ -1729,6 +1727,15 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     markers = []
     total_registered_patients = 0
     registered_patient_rows = 0
+    national_registered_patients = 0
+    for row in national_supplementals:
+        registered_patient_count = row.get("registered_patient_count", "")
+        if registered_patient_count in ("", None):
+            continue
+        try:
+            national_registered_patients += int(registered_patient_count)
+        except (TypeError, ValueError):
+            continue
     for row in rows:
         nation = str(row.get("nation") or "england").strip().lower()
         survey_metadata = national_survey_metadata(nation)
@@ -1779,6 +1786,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
                 "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
                 "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+                "number_of_responses": survey_payload.get("number_of_responses", ""),
+                "responses_for_overall_question": survey_payload.get("responses_for_overall_question", ""),
                 "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
                 "gp_patient_survey_code_used": survey_code_used,
                 "gp_patient_survey_resolution_note": survey_resolution_note,
@@ -2796,9 +2805,8 @@ body {{
       </div>
       <div class="legend-intro">
         <h1>Manchester GPs' Reviews</h1>
-        <p>{len(rows)} GP surgeries profiled.</p>
-        <p>{total_registered_patients:,} patients across {registered_patient_rows} practices.</p>
-        <p id="national-supplemental-note" class="hint">{len(national_supplementals)} lightweight national supplementals available.</p>
+        <p>Manchester: {total_registered_patients:,} &#128101; &middot; {registered_patient_rows} &#127973;</p>
+        <p id="national-supplemental-note" class="hint" data-total-patients="{national_registered_patients}" data-total-practices="{len(national_supplementals)}">&#127988; National: {national_registered_patients:,} &#128101; &middot; {len(national_supplementals)} &#127973;</p>
       </div>
       <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
@@ -3111,7 +3119,7 @@ const metricConfigs = {{
       return '#1c7c54';
     }},
     scaleCount(row) {{
-      const count = numericOrNull(row.survey_sent_back);
+      const count = surveyParticipationCount(row);
       return count !== null && count > 0 ? count : 0;
     }},
     averageLabel(value) {{
@@ -3151,7 +3159,7 @@ const metricConfigs = {{
     }},
     scaleCount(row) {{
       const google = numericOrNull(row.google_count);
-      const survey = numericOrNull(row.survey_sent_back);
+      const survey = surveyParticipationCount(row);
       const googleValid = google !== null && google > 0;
       const surveyValid = survey !== null && survey > 0;
       if (googleValid && surveyValid) return Math.min(google, survey);
@@ -3173,6 +3181,16 @@ function numericOrNull(value) {{
   if (typeof value === 'string' && value.trim() === '') return null;
   const numeric = Number(value);
   return Number.isFinite(numeric) ? numeric : null;
+}}
+
+function surveyParticipationCount(row) {{
+  const surveySentBack = numericOrNull(row.survey_sent_back);
+  if (surveySentBack !== null && surveySentBack > 0) return surveySentBack;
+  const overallResponses = numericOrNull(row.responses_for_overall_question);
+  if (overallResponses !== null && overallResponses > 0) return overallResponses;
+  const responseCount = numericOrNull(row.number_of_responses);
+  if (responseCount !== null && responseCount > 0) return responseCount;
+  return null;
 }}
 
 function metricColorForValue(metricName, value) {{
@@ -3218,10 +3236,10 @@ function gapInputs(row) {{
   const google = numericOrNull(row.google_score);
   const googleCount = numericOrNull(row.google_count);
   const surveyPercent = numericOrNull(row.survey_overall_good_percent);
-  const surveySentBack = numericOrNull(row.survey_sent_back);
+  const surveyResponses = surveyParticipationCount(row);
   if (google === null || surveyPercent === null) return null;
   if (googleCount === null || googleCount <= 0) return null;
-  if (surveySentBack === null || surveySentBack <= 0) return null;
+  if (surveyResponses === null || surveyResponses <= 0) return null;
   return {{
     google,
     surveyPercent,
@@ -3706,23 +3724,28 @@ function formatGoogle(row) {{
 
 function formatSurvey(row) {{
   const surveyName = row.patient_survey_name || 'GP Patient Survey';
+  const surveyLabel = surveyName === 'Health and Care Experience Survey'
+    ? 'HACE'
+    : surveyName === 'GP Patient Survey'
+      ? 'GPPS'
+      : surveyName;
   const surveyStatus = (row.patient_survey_status || '').trim();
   const overall = numericOrNull(row.survey_overall_good_percent);
   const completion = numericOrNull(row.survey_completion_rate_percent);
   const sentBack = numericOrNull(row.survey_sent_back);
   const sentOut = numericOrNull(row.survey_sent_out);
   if (overall === null && completion === null) {{
-    if (surveyStatus === 'equivalent_identified_not_yet_wired') return `${{surveyName}}: source identified, practice-level feed not yet wired`;
-    if (surveyStatus === 'practice_level_missing_in_source') return `${{surveyName}}: not listed in current practice dashboard`;
-    if (surveyStatus === 'discontinued') return `${{surveyName}}: historic/discontinued`;
-    if (surveyStatus === 'practice_level_available') return `${{surveyName}}: ?`;
-    return `${{surveyName}}: ?`;
+    if (surveyStatus === 'equivalent_identified_not_yet_wired') return `${{surveyLabel}}: source identified, practice-level feed not yet wired`;
+    if (surveyStatus === 'practice_level_missing_in_source') return `${{surveyLabel}}: not listed in current practice dashboard`;
+    if (surveyStatus === 'discontinued') return `${{surveyLabel}}: historic/discontinued`;
+    if (surveyStatus === 'practice_level_available') return `${{surveyLabel}}: ?`;
+    return `${{surveyLabel}}: ?`;
   }}
   const parts = [];
-  if (overall !== null) parts.push(`Overall good: ${{Math.round(overall)}}%`);
-  if (completion !== null) parts.push(`Completion: ${{Math.round(completion)}}%`);
+  if (overall !== null) parts.push(`${{Math.round(overall)}}%`);
+  if (completion !== null) parts.push(`${{Math.round(completion)}}% completion`);
   if (sentBack !== null && sentOut !== null) parts.push(`${{Math.round(sentBack)}}/${{Math.round(sentOut)}} returned`);
-  return `${{surveyName}}: ${{parts.join(' · ')}}`;
+  return `${{surveyLabel}} ${{parts.join(' / ')}}`;
 }}
 
 function formatGap(row) {{
@@ -3974,13 +3997,19 @@ function renderMarkers() {{
 function renderNationalSupplementals() {{
   nationalMarkerLayer.clearLayers();
   const note = document.getElementById('national-supplemental-note');
+  const notePrefix = (() => {{
+    if (!note) return '';
+    const totalPatients = Number(note.dataset.totalPatients || 0).toLocaleString('en-GB');
+    const totalPractices = Number(note.dataset.totalPractices || 0).toLocaleString('en-GB');
+    return `🏴 National: ${{totalPatients}} 👥 · ${{totalPractices}} 🏥`;
+  }})();
   if (!nationalSupplementals.length) {{
-    if (note) note.textContent = 'No national supplementals built yet.';
+    if (note) note.textContent = '🏴 National: no supplementals built yet';
     return;
   }}
   if (map.getZoom() < NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {{
     if (note) {{
-      note.textContent = `${{nationalSupplementals.length.toLocaleString('en-GB')}} national supplementals loaded separately. Zoom to ${{NATIONAL_SUPPLEMENTAL_MIN_ZOOM}}+ to render viewport markers.`;
+      note.textContent = `${{notePrefix}} · zoom to ${{NATIONAL_SUPPLEMENTAL_MIN_ZOOM}}+ to show markers`;
     }}
     return;
   }}
@@ -4021,7 +4050,7 @@ function renderNationalSupplementals() {{
 
   if (note) {{
     const visibleText = `${{visibleRows.length.toLocaleString('en-GB')}} visible`;
-    note.textContent = `${{nationalSupplementals.length.toLocaleString('en-GB')}} national supplementals loaded separately. ${{visibleText}} in view.`;
+    note.textContent = `${{notePrefix}} · ${{visibleText}}`;
   }}
 }}
 

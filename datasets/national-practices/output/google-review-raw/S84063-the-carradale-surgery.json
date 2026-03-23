@@ -1,0 +1,26 @@
+{
+  "practice_name": "THE CARRADALE SURGERY",
+  "canonical_code": "S84063",
+  "postcode": "PA28 6QG",
+  "query_used": "THE CARRADALE SURGERY PA28 6QG",
+  "google_maps_title": "Carradale Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Carradale+Surgery/@55.5858832,-5.4977708,17z/data=!4m8!3m7!1s0x488a1d775ee20025:0xef702370a48d7aef!8m2!3d55.5858802!4d-5.4951905!9m1!1b1!16s%2Fg%2F1hc180lcn?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 5,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774235839015,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488a1d775ee20025%3A0xef702370a48d7aef!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s-KTAaYT7PNS5hbIPwLiwoAc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURwNjhLMTFRRRAB\",[\"0x0:0xef702370a48d7aef\",null,1693314905329018,1693314905329018,[null,null,[\"https://www.google.com/maps/contrib/104016002725294270834/reviews?hl\\u003den\"],null,null,[\"Alan Walters\",\"https://lh3.googleusercontent.com/a/ACg8ocIOHUzsHSD652XcGnvmG5hLamFFu8KQnbqNbRHkCcxcVTd5cQ\\u003ds120-c-rp-mo-ba5-br100\",[\"https://www.google.com/maps/contrib/104016002725294270834?hl\\u003den\"],\"104016002725294270834\",null,337,154,null,[1,7,1],9,[\"Local Guide · 337 reviews\",null,null,null,null,[null,\"0ahUKEwj47rDHh7WTAxUoc4QGHQ-SCqAQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Wonderful staff. Nice to see Alexa lurking in the waiting room\",null,[0,62]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwNjhLMTFRRRAB!2m1!1s0x0:0xef702370a48d7aef!3m1!1s2@1:CIHM0ogKEICAgIDp68K11QE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURwNjhLMTFRRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURwNjhLMTFRRRItChZDSUhNMG9nS0VJQ0FnSURwNjhLMU5REhNDZ3dJMmQ2M3B3WVFrTlh4bkFFGi4KF0NJSE0wb2dLRUlDQWdJRHA2OEsxdFFFEhNDZ3dJMmQ2M3B3WVFrTlh4bkFFIhIJAAAAAAAAAAAR73qNpHAjcO8qE0Nnd0kyZDYzcHdZUWtOWHhuQUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj47rDHh7WTAxUoc4QGHQ-SCqAQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj47rDHh7WTAxUoc4QGHQ-SCqAQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

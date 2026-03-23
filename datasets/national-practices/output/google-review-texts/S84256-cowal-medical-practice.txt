@@ -1,0 +1,36 @@
+Practice: COWAL MEDICAL PRACTICE
+Canonical code: S84256
+Postcode: PA23 7HW
+Google Maps title: Cowal Medical Practice
+Google rating: 2.0
+Google review count: 4
+Google Maps URL: https://www.google.com/maps/place/Cowal+Medical+Practice/@55.9520055,-4.930513,17z/data=!3m1!5s0x4889a4944c0d18bb:0xb955cf288b3a3fa0!4m8!3m7!1s0x4889a4944c3eaaab:0xe658a69f9a1a4621!8m2!3d55.9520025!4d-4.9279327!9m1!1b1!16s%2Fg%2F11fsmtzt7t?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 4
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S84256-cowal-medical-practice.json
+
+Captured reviews
+================
+
+Author: Scott Cairney
+Date: a month ago
+Rating: 1 star
+This is the most unhelpful pratice in Dunoon .If you want to see a Doctor you have more chance of having tea with the King .As for reception one word to describe it JOKE
+
+Author: Benny Stockton
+Date: 2 years ago
+Rating: 1 star
+When I went in to hand a prescription in the other day the reception was chewing on her nails. She then proceeded to hand me back my prescription with the hand that had JUST BEEN IN HER MOUTH.
+
+Author: Anne Hargadon
+Date: 3 years ago
+Rating: 1 star
+If you have a death wish this is the place to be. They will DEFINITELY do their best to see you on your way. Especially the dangerous and arrogant Mckelvie and the Mrs downright nasty practice manager
+
+Author: Brenda Mulholland
+Date: 3 years ago
+Rating: 5 stars
+The reception staff are very helpful and friendly and the doctor's are the same sometimes you may get a locom who can be very difficult and unhelpful and arrogant

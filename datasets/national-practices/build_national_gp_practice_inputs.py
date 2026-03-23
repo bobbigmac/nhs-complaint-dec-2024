@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import csv
 import io
 import json
@@ -98,13 +99,20 @@ OUTPUT_FIELD_ORDER = [
     "registered_patient_count_source",
     "registered_patient_count_source_url",
     "registered_patient_count_snapshot",
-    "patient_survey_name",
-    "patient_survey_status",
-    "patient_survey_level",
-    "patient_survey_url",
-    "patient_survey_note",
     "google_maps_query",
 ]
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Build national GP practice input files, or refresh a subset of derived fields."
+    )
+    parser.add_argument(
+        "--refresh-scotland-counts-only",
+        action="store_true",
+        help="Refresh Scottish registered patient counts in the existing output files without rerunning the full ODS build.",
+    )
+    return parser.parse_args()
 
 
 def fetch_text(url: str, *, timeout: int = 60) -> str:
@@ -440,7 +448,8 @@ def normalize_record(
         "registered_patient_count_snapshot": str(patient_count_bundle.get("snapshot", "")),
         "google_maps_query": query,
     }
-    record.update(SURVEY_METADATA_BY_NATION.get(nation, {}))
+    if nation != "scotland":
+        record.update(SURVEY_METADATA_BY_NATION.get(nation, {}))
     return record
 
 
@@ -533,7 +542,89 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def read_csv_rows(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def refresh_scotland_count_fields(rows: list[dict[str, Any]], count_bundle: dict[str, Any]) -> list[dict[str, Any]]:
+    counts = count_bundle.get("counts", {}) or {}
+    source = str(count_bundle.get("source", ""))
+    source_url = str(count_bundle.get("source_url", ""))
+    snapshot = str(count_bundle.get("snapshot", ""))
+    for row in rows:
+        if str(row.get("nation", "")).strip().lower() != "scotland":
+            continue
+        code = str(row.get("canonical_code", "")).strip()
+        value = counts.get(code, "")
+        row["registered_patient_count"] = str(value) if value != "" else ""
+        row["registered_patient_count_source"] = source if value != "" else ""
+        row["registered_patient_count_source_url"] = source_url if value != "" else ""
+        row["registered_patient_count_snapshot"] = snapshot if value != "" else ""
+        for field in (
+            "patient_survey_name",
+            "patient_survey_status",
+            "patient_survey_level",
+            "patient_survey_url",
+            "patient_survey_note",
+        ):
+            row.pop(field, None)
+    return rows
+
+
+def refresh_scotland_counts_in_outputs() -> int:
+    count_bundle = load_scotland_patient_counts()
+
+    scotland_csv = OUTPUT_DIR / "scotland_gp_practices.csv"
+    scotland_json = OUTPUT_DIR / "scotland_gp_practices.json"
+    uk_csv = OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.csv"
+    uk_json = OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.json"
+
+    scotland_rows = refresh_scotland_count_fields(read_csv_rows(scotland_csv), count_bundle)
+    uk_rows = refresh_scotland_count_fields(read_csv_rows(uk_csv), count_bundle)
+
+    if scotland_rows:
+        write_csv(scotland_csv, scotland_rows)
+        write_json(scotland_json, scotland_rows)
+    if uk_rows:
+        write_csv(uk_csv, uk_rows)
+        write_json(uk_json, uk_rows)
+
+    summary = {}
+    if SUMMARY_JSON.exists():
+        try:
+            summary = json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            summary = {}
+    if not isinstance(summary, dict):
+        summary = {}
+    summary["generated_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    sources = summary.setdefault("sources", {})
+    if not isinstance(sources, dict):
+        sources = {}
+        summary["sources"] = sources
+    sources["scotland_patient_counts"] = count_bundle.get("source_url", "")
+    coverage = summary.setdefault("registered_patient_count_coverage", {})
+    if not isinstance(coverage, dict):
+        coverage = {}
+        summary["registered_patient_count_coverage"] = coverage
+    coverage["scotland"] = sum(1 for row in scotland_rows if row.get("registered_patient_count", "") != "")
+    write_json(SUMMARY_JSON, summary)
+
+    print(
+        f"Refreshed Scotland patient counts for {coverage['scotland']} / {len(scotland_rows)} Scotland rows "
+        f"from {count_bundle.get('source_url', '')}"
+    )
+    return 0
+
+
 def main() -> int:
+    args = parse_args()
+    if args.refresh_scotland_counts_only:
+        return refresh_scotland_counts_in_outputs()
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     RAW_DIR.mkdir(parents=True, exist_ok=True)
 

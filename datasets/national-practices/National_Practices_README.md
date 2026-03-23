@@ -126,10 +126,6 @@ The CSVs are designed to be close to the existing collector input shape. Key fie
 - `registered_patient_count_source`
 - `registered_patient_count_source_url`
 - `registered_patient_count_snapshot`
-- `patient_survey_name`
-- `patient_survey_status`
-- `patient_survey_level`
-- `patient_survey_url`
 - `google_maps_query`
 
 `google_maps_query` is already prebuilt as `practice_name + postcode`.

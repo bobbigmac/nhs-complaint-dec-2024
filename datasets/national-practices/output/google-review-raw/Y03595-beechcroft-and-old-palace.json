@@ -1,0 +1,26 @@
+{
+  "practice_name": "BEECHCROFT AND OLD PALACE",
+  "canonical_code": "Y03595",
+  "postcode": "NR5 0RS",
+  "query_used": "BEECHCROFT AND OLD PALACE NR5 0RS",
+  "google_maps_title": "Dr T Flahive - Beechcroft & Old Palace",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+T+Flahive+-+Beechcroft+%26+Old+Palace/@52.6417883,1.2270977,14z/data=!4m12!1m2!2m1!1sBEECHCROFT+AND+OLD+PALACE+NR5+0RS!3m8!1s0x47d9e16418f75a1d:0x9a5be5708a205375!8m2!3d52.6375895!4d1.2787885!9m1!1b1!15sCiFCRUVDSENST0ZUIEFORCBPTEQgUEFMQUNFIE5SNSAwUlOSAQZkb2N0b3LgAQA!16s%2Fg%2F11j1srjzq6?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 9,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774234722832,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x47d9e16418f75a1d%3A0x9a5be5708a205375!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s-KTAaYT7PNS5hbIPwLiwoAc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURKNUtEZ3NnRRAB\",[\"0x0:0x9a5be5708a205375\",null,1689067326994419,1689067326994419,[null,null,[\"https://www.google.com/maps/contrib/115890417458392026653/reviews?hl\\u003den\"],null,null,[\"David Hatch\",\"https://lh3.googleusercontent.com/a/ACg8ocLWknORxdGG7E6TayyzpOnY74qVANty3sKtvTEiM7vlADDMAw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/115890417458392026653?hl\\u003den\"],\"115890417458392026653\",null,2,0,null,[0,2,1],0,[\"2 reviews\",null,null,null,null,[null,\"0ahUKEwixg5Gzg7WTAxVoRYQGHX8xJaEQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"This practice is a joke\",null,[0,23]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKNUtEZ3NnRRAB!2m1!1s0x0:0x9a5be5708a205375!3m1!1s2@1:CIHM0ogKEICAgIDJ5KDgsgE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURKNUtEZ3NnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURKNUtEZ3NnRRItChZDSUhNMG9nS0VJQ0FnSURKNUtEZ2NnEhNDZ3dJdnI2MHBRWVF1TUtXMmdNGi4KF0NJSE0wb2dLRUlDQWdJREo1S0RnOGdFEhNDZ3dJdnI2MHBRWVF1TUtXMmdNIhIJAAAAAAAAAAARdVMginDlW5oqE0Nnd0l2cjYwcFFZUXVNS1cyZ00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwixg5Gzg7WTAxVoRYQGHX8xJaEQoykIBCgB\"],null,[null,[[1,1]]]],\"0ahUKEwixg5Gzg7WTAxVoRYQGHX8xJaEQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

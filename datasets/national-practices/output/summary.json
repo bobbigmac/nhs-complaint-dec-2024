@@ -1,14 +1,45 @@
 {
-  "generated_at": "2026-03-20T04:35:25Z",
+  "generated_at": "2026-03-23T02:49:00Z",
   "sources": {
     "ods_active_prescribing_cost_centres": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?PrimaryRoleId=RO177&Status=Active",
     "ods_scottish_gp_practices": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?PrimaryRoleId=RO227&Status=Active",
     "ods_northern_ireland_gp_practices": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?PrimaryRoleId=RO315&Status=Active",
-    "england_patient_counts": "raw/registered_patients/gp-reg-pat-prac-all.csv"
+    "england_patient_counts": "https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice",
+    "wales_patient_counts": "https://statswales.gov.wales/Download/File?fileName=HLTH0426.zip",
+    "scotland_patient_counts": "https://www.opendata.nhs.scot/dataset/f23655c3-6e23-4103-a511-a80d998adb90/resource/ceddbf27-0686-4f4b-b9a2-0090d28c3864/download/practice_contact_details_20260101_opendata.csv",
+    "northern_ireland_patient_counts": "https://admin.opendatani.gov.uk/dataset/3d1a6615-5fc9-4f0e-ab2a-d2b0d71fb9ed/resource/8578e0d4-47f6-4909-9ac4-32643a701e13/download/gp-practice-reference-file-january-2026.csv"
+  },
+  "patient_survey_sources": {
+    "england": {
+      "name": "GP Patient Survey",
+      "status": "practice_level_available",
+      "level": "practice",
+      "url": "https://www.gp-patient.co.uk"
+    },
+    "wales": {
+      "name": "People's Experience Survey",
+      "status": "equivalent_identified_not_yet_wired",
+      "level": "national_framework",
+      "url": "https://www.gov.wales/peoples-experience-framework"
+    },
+    "scotland": {
+      "name": "Health and Care Experience Survey",
+      "status": "equivalent_identified_not_yet_wired",
+      "level": "dashboard_or_aggregate",
+      "url": "https://publichealthscotland.scot/publications/health-and-care-experience-survey/health-and-care-experience-survey-2024/detailed-experience-ratings-results/"
+    },
+    "northern_ireland": {
+      "name": "GP patient surveys",
+      "status": "discontinued",
+      "level": "historic_only",
+      "url": "https://www.health-ni.gov.uk/articles/gp-patient-surveys"
+    }
   },
   "notes": [
     "England and Wales are derived from active ODS RO177 organisations, filtered down to those with an active RO76 GP PRACTICE role in the detail record.",
     "Scotland and Northern Ireland are derived from active ODS role-specific GP practice lists (RO227 and RO315).",
+    "Registered patient counts are now sourced separately for all four nations: NHS England monthly registrations, StatsWales HLTH0426, NHS Scotland GP practice contact details/list sizes, and OpenDataNI GP practice reference files.",
+    "Patient-survey coverage is still asymmetric across the UK. England practice-level GP Patient Survey is available; the other nations now carry explicit survey-source metadata rather than silently looking England-like.",
     "These files are collector-friendly short-form inputs for future Google Maps review lookups, not full-review crawl outputs.",
     "The combined UK file excludes canonical codes already present in the Greater Manchester dataset."
   ],
@@ -20,5 +51,11 @@
     "uk_all": 7966,
     "uk_not_in_current_dataset": 7606,
     "excluded_existing_codes": 360
+  },
+  "registered_patient_count_coverage": {
+    "england": 6170,
+    "wales": 371,
+    "scotland": 868,
+    "northern_ireland": 305
   }
 }

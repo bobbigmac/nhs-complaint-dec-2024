@@ -1,0 +1,26 @@
+{
+  "practice_name": "KINFAUNS MEDICAL PRACTICE",
+  "canonical_code": "S40559",
+  "postcode": "G15 7TS",
+  "query_used": "KINFAUNS MEDICAL PRACTICE G15 7TS",
+  "google_maps_title": "Kinfauns Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Kinfauns+Medical+Practice/@55.9104384,-4.3736029,17z/data=!3m1!5s0x48884f99638368af:0xf0fea4359de290e7!4m8!3m7!1s0x48884f9963afffff:0x1e0175494c31d01c!8m2!3d55.9104354!4d-4.3710226!9m1!1b1!16s%2Fg%2F11fjy4drvp?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 35,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774234426978,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48884f9963afffff%3A0x1e0175494c31d01c!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s-KTAaYT7PNS5hbIPwLiwoAc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNhX3BuYUpREAE\",[\"0x0:0x1e0175494c31d01c\",null,1627897381988114,1627897381988114,[null,null,[\"https://www.google.com/maps/contrib/103226377789662087745/reviews?hl\\u003den\"],null,null,[\"MrsPaterson1\",\"https://lh3.googleusercontent.com/a-/ALV-UjVSAmphFLXzlIWH0JHgenI2MpTEzVGXy_LAVNi9IJPtZzivXhU\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/103226377789662087745?hl\\u003den\"],\"103226377789662087745\",null,1,0,null,[0,2,1],6,[\"1 review\",null,null,null,null,[null,\"0ahUKEwiFnIimgrWTAxVaeIQGHYRVLj8Q7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhX3BuYUpREAE!2m1!1s0x0:0x1e0175494c31d01c!3m1!1s2@1:CIHM0ogKEICAgICa_pnaJQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNhX3BuYUpREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNhX3BuYUpRGi4KF0NJSE0wb2dLRUlDQWdJQ2FfcG5hcFFFEhNDZ3dJcGZ5ZWlBWVEwTmlWMXdNIhIJAAAAAAAAAAARHNAxTEl1AR4qE0Nnd0lwZnllaUFZUTBOaVYxd00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiFnIimgrWTAxVaeIQGHYRVLj8QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiFnIimgrWTAxVaeIQGHYRVLj8Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

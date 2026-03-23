@@ -1,0 +1,26 @@
+{
+  "practice_name": "JUBILEE PARK MEDICAL PARTNERSHIP",
+  "canonical_code": "C84613",
+  "postcode": "NG4 3DQ",
+  "query_used": "JUBILEE PARK MEDICAL PARTNERSHIP NG4 3DQ",
+  "google_maps_title": "Jubilee Park Medical Partnership",
+  "google_maps_url": "https://www.google.com/maps/place/Jubilee+Park+Medical+Partnership/@52.9910865,-1.0850015,13z/data=!4m12!1m2!2m1!1sJUBILEE+PARK+MEDICAL+PARTNERSHIP+NG4+3DQ!3m8!1s0x4879c70065a2de1f:0xc202fe94a31e4dec!8m2!3d53.0137034!4d-1.0044196!9m1!1b1!15sCihKVUJJTEVFIFBBUksgTUVESUNBTCBQQVJUTkVSU0hJUCBORzQgM0RRkgEGZG9jdG9y4AEA!16s%2Fg%2F11xkr18cpn?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 166,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774234786125,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4879c70065a2de1f%3A0xc202fe94a31e4dec!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s-KTAaYT7PNS5hbIPwLiwoAc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT2pSS1dUUkJVMEZYWVVNNVVIZFJSbkJ4TW1sUlZWRRAB\",[\"0x0:0xc202fe94a31e4dec\",null,1772467578853896,1772467578853896,[null,null,[\"https://www.google.com/maps/contrib/107562687756267445983/reviews?hl\\u003den\"],null,null,[\"Rosanna RosannaM\",\"https://lh3.googleusercontent.com/a-/ALV-UjWCG-sgc_LLB-66uVEjQgMY48Sn_T7u0zi-yHM_cvntood8P8n_iw\\u003ds120-c-rp-mo-ba2-br100\",[\"https://www.google.com/maps/contrib/107562687756267445983?hl\\u003den\"],\"107562687756267445983\",null,13,4,null,[1,4,1],3,[\"Local Guide · 13 reviews\",null,null,null,null,[null,\"0ahUKEwiut6bRg7WTAxVfRYQGHVq7O5kQ7LoGCAMoAA\"]]]],null,\"2 weeks ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Easy to get too. Limited parking but the church offers free parking in their carpark up the road as well as ample street parking unless around school drop off/ pick up time then parking can be limited. But kind friendly staff, made to feel welcome.  Not my usual doctors surgery\",null,[0,278]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSS1dUUkJVMEZYWVVNNVVIZFJSbkJ4TW1sUlZWRRAB!2m1!1s0x0:0xc202fe94a31e4dec!3m1!1s2@1:CAIQACodChtycF9oOjRKWTRBU0FXYUM5UHdRRnBxMmlRVVE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT2pSS1dUUkJVMEZYWVVNNVVIZFJSbkJ4TW1sUlZWRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT2pSS1dUUkJVMEZYWVVNNVVIZFJSbkJ4TW1sUlZWRRJbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBTUzFkVVVrSlZNRVpZV1ZWTk5WVklaRkpTYmtKNFRXMXNVbFpXUlFvR2NtVjJhV1YzEgswZGRRS3VtdExsZRpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBTUzFkVVVrSlZNRVpZV1ZWTk5WVklaRkpTYmtKNFRXMXNVbFpXUlFvR2NtRjBhVzVuEgswZGRRS3VtdExsZSISCQAAAAAAAAAAEexNHqOU_gLCKgswZGRRS3VtdExsZQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiut6bRg7WTAxVfRYQGHVq7O5kQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiut6bRg7WTAxVfRYQGHVq7O5kQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
