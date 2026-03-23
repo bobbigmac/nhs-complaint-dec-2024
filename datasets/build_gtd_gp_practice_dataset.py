@@ -35,7 +35,7 @@ NATIONAL_GOOGLE_REVIEW_RESULTS_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "google_ma
 NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.csv"
 SCOTLAND_HACE_DATA_JSON = NATIONAL_PRACTICES_SCOTLAND_DIR / "hace_metrics.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
-MANCHESTER_CATCHMENT_BUNDLE_NAME = "manchester-practice-catchments.geojson"
+PUBLISHED_CATCHMENT_INDEX_REL_PATH = "catchments/index.json"
 ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR = BASE_DIR / "catchments" / ".cache" / "gp-catchments-england" / "by_practice"
 CQC_GP_RATINGS_JSON = BASE_DIR / "raw" / "cqc" / "cqc_gp_location_index.json"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
@@ -2548,7 +2548,6 @@ def write_map(
     national_supplementals = build_national_map_supplementals()
     client_national_supplementals = [build_client_map_row(row) for row in national_supplementals]
     write_national_supplemental_script(path.parent / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME, client_national_supplementals)
-    manchester_catchment_bundle = write_manchester_catchment_bundle(path.parent / MANCHESTER_CATCHMENT_BUNDLE_NAME, rows)
     all_practice_deprivation = load_cached_practice_deprivation_lookup()
     # Build a simple per-practice deprivation lookup JSON alongside the map
     practice_deprivation_lookup_path = path.parent / "practice_deprivation_lookup.json"
@@ -4502,9 +4501,8 @@ const nationalSupplementals = Array.isArray(window.NATIONAL_PRACTICE_SUPPLEMENTA
 const nationOrder = {json.dumps(NATION_ORDER)};
 const cityCatchments = {json.dumps(CITY_CATCHMENTS)};
 const compositeRegionDefinitions = {json.dumps(composite_region_definitions)};
-const MANCHESTER_CATCHMENT_BUNDLE_NAME = {json.dumps(MANCHESTER_CATCHMENT_BUNDLE_NAME)};
+const PUBLISHED_CATCHMENT_INDEX_REL_PATH = {json.dumps(PUBLISHED_CATCHMENT_INDEX_REL_PATH)};
 const MANCHESTER_CATCHMENT_MIN_ZOOM = 12;
-const manchesterCatchmentBundleMeta = {json.dumps(manchester_catchment_bundle)};
 const northSouthDivide = {{
   west: {{ lat: 51.62, lon: -3.05 }},
   east: {{ lat: 52.98, lon: 0.52 }},
@@ -4566,10 +4564,18 @@ let hoveredCatchmentCode = null;
 const persistentCatchmentCodes = new Set();
 let manchesterCatchmentIndex = null;
 let manchesterCatchmentLoadPromise = null;
+let manchesterCatchmentIndexMeta = null;
+let manchesterCatchmentBundleLoadPromises = new Map();
+let manchesterCatchmentLoadedBundleIds = new Set();
+let manchesterCatchmentLoadError = '';
 let serviceFinderArmed = false;
 let serviceFinderPoint = null;
 let serviceFinderLocationLabel = '';
 let serviceFinderEmptyMessage = '';
+let serviceFinderMatchedRows = null;
+let serviceFinderMatchedCodeSet = new Set();
+let serviceFinderMatchedStateKey = '';
+let serviceFinderMatchLoadPromise = null;
 let serviceFinderButtonFlash = '';
 let serviceFinderButtonFlashTimer = null;
 let serviceFinderDragActive = false;
@@ -5511,8 +5517,8 @@ function renderTrendOverlayLegend(container, items) {{
     : '';
 }}
 
-function buildManchesterCatchmentIndex(featureCollection) {{
-  const index = new Map();
+function buildManchesterCatchmentIndex(featureCollection, existingIndex = null) {{
+  const index = existingIndex instanceof Map ? existingIndex : new Map();
   const features = Array.isArray(featureCollection?.features) ? featureCollection.features : [];
   features.forEach((feature) => {{
     const codes = Array.isArray(feature?.properties?.codes) ? feature.properties.codes : [];
@@ -5526,39 +5532,188 @@ function buildManchesterCatchmentIndex(featureCollection) {{
   return index;
 }}
 
+function pointInCatchmentBundleBbox(lat, lon, bbox) {{
+  if (!Array.isArray(bbox) || bbox.length !== 4) return false;
+  const [minLon, minLat, maxLon, maxLat] = bbox.map((value) => Number(value));
+  if (![minLon, minLat, maxLon, maxLat].every((value) => Number.isFinite(value))) return false;
+  return lon >= minLon && lon <= maxLon && lat >= minLat && lat <= maxLat;
+}}
+
+function boundsIntersectCatchmentBundleBbox(bounds, bbox) {{
+  if (!bounds || !Array.isArray(bbox) || bbox.length !== 4) return false;
+  const [minLon, minLat, maxLon, maxLat] = bbox.map((value) => Number(value));
+  if (![minLon, minLat, maxLon, maxLat].every((value) => Number.isFinite(value))) return false;
+  return !(
+    maxLon < bounds.getWest()
+    || minLon > bounds.getEast()
+    || maxLat < bounds.getSouth()
+    || minLat > bounds.getNorth()
+  );
+}}
+
+function catchmentBundleMetaById(bundleId) {{
+  const normalized = String(bundleId || '').trim();
+  if (!normalized || !manchesterCatchmentIndexMeta?._bundleById) return null;
+  return manchesterCatchmentIndexMeta._bundleById.get(normalized) || null;
+}}
+
+function catchmentBundleMetaForCode(code) {{
+  const normalized = String(code || '').trim();
+  if (!normalized || !manchesterCatchmentIndexMeta) return null;
+  const bundleId = manchesterCatchmentIndexMeta.code_to_bundle?.[normalized];
+  return bundleId ? catchmentBundleMetaById(bundleId) : null;
+}}
+
 function loadManchesterCatchmentIndex() {{
-  if (manchesterCatchmentIndex) return Promise.resolve(manchesterCatchmentIndex);
+  if (manchesterCatchmentIndexMeta) return Promise.resolve(manchesterCatchmentIndexMeta);
   if (manchesterCatchmentLoadPromise) return manchesterCatchmentLoadPromise;
-  if (!manchesterCatchmentBundleMeta || !manchesterCatchmentBundleMeta.feature_count) {{
-    manchesterCatchmentIndex = new Map();
-    return Promise.resolve(manchesterCatchmentIndex);
-  }}
-  const catchmentUrl = new URL(MANCHESTER_CATCHMENT_BUNDLE_NAME, window.location.href).toString();
-  manchesterCatchmentLoadPromise = fetch(catchmentUrl)
+  manchesterCatchmentLoadError = '';
+  manchesterCatchmentLoadPromise = fetch(`./${{PUBLISHED_CATCHMENT_INDEX_REL_PATH}}`)
     .then((response) => {{
-      if (!response.ok) throw new Error(`catchment fetch failed: ${{response.status}}`);
+      if (!response.ok) throw new Error(`catchment index fetch failed: ${{response.status}}`);
       return response.json();
     }})
     .then((payload) => {{
-      manchesterCatchmentIndex = buildManchesterCatchmentIndex(payload);
-      return manchesterCatchmentIndex;
+      manchesterCatchmentIndexMeta = payload && typeof payload === 'object' ? payload : null;
+      if (manchesterCatchmentIndexMeta) {{
+        const bundles = Array.isArray(manchesterCatchmentIndexMeta.bundles) ? manchesterCatchmentIndexMeta.bundles : [];
+        manchesterCatchmentIndexMeta._bundleById = new Map(
+          bundles
+            .filter((bundle) => bundle?.id)
+            .map((bundle) => [String(bundle.id), bundle])
+        );
+      }}
+      manchesterCatchmentLoadError = manchesterCatchmentIndexMeta ? '' : 'Invalid catchment index payload';
+      return manchesterCatchmentIndexMeta;
     }})
-    .catch((_error) => {{
-      manchesterCatchmentIndex = new Map();
-      return manchesterCatchmentIndex;
+    .catch((error) => {{
+      manchesterCatchmentIndexMeta = null;
+      manchesterCatchmentLoadError = error instanceof Error ? error.message : String(error || 'Unknown catchment index load error');
+      console.error('Catchment index load failed:', error);
+      return null;
+    }})
+    .finally(() => {{
+      manchesterCatchmentLoadPromise = null;
     }});
   return manchesterCatchmentLoadPromise;
 }}
 
+function loadManchesterCatchmentBundle(bundleMeta) {{
+  if (!bundleMeta?.id || !bundleMeta?.file) return Promise.resolve(null);
+  if (manchesterCatchmentLoadedBundleIds.has(bundleMeta.id)) return Promise.resolve(bundleMeta.id);
+  if (manchesterCatchmentBundleLoadPromises.has(bundleMeta.id)) return manchesterCatchmentBundleLoadPromises.get(bundleMeta.id);
+  const promise = fetch(`./catchments/${{bundleMeta.file}}`)
+    .then((response) => {{
+      if (!response.ok) throw new Error(`catchment bundle fetch failed for ${{bundleMeta.id}}: ${{response.status}}`);
+      return response.json();
+    }})
+    .then((payload) => {{
+      manchesterCatchmentIndex = buildManchesterCatchmentIndex(payload, manchesterCatchmentIndex);
+      manchesterCatchmentLoadedBundleIds.add(bundleMeta.id);
+      manchesterCatchmentLoadError = '';
+      return bundleMeta.id;
+    }})
+    .catch((error) => {{
+      manchesterCatchmentLoadError = error instanceof Error ? error.message : String(error || `Unknown catchment bundle load error (${{bundleMeta.id}})`);
+      console.error('Catchment bundle load failed:', bundleMeta?.id, error);
+      return null;
+    }})
+    .finally(() => {{
+      manchesterCatchmentBundleLoadPromises.delete(bundleMeta.id);
+    }});
+  manchesterCatchmentBundleLoadPromises.set(bundleMeta.id, promise);
+  return promise;
+}}
+
+function loadManchesterCatchmentBundles(bundleMetas) {{
+  const deduped = [];
+  const seen = new Set();
+  (bundleMetas || []).forEach((bundleMeta) => {{
+    const id = String(bundleMeta?.id || '').trim();
+    if (!id || seen.has(id)) return;
+    seen.add(id);
+    deduped.push(bundleMeta);
+  }});
+  return Promise.all(deduped.map((bundleMeta) => loadManchesterCatchmentBundle(bundleMeta)));
+}}
+
+function neighboringCatchmentBundleMetas(bundleMeta) {{
+  if (!bundleMeta || !Array.isArray(bundleMeta.neighbor_bundle_ids)) return [];
+  return bundleMeta.neighbor_bundle_ids
+    .map((bundleId) => catchmentBundleMetaById(bundleId))
+    .filter((bundle) => !!bundle);
+}}
+
+function ensureCatchmentBundleForCode(code) {{
+  return loadManchesterCatchmentIndex().then((indexMeta) => {{
+    if (!indexMeta) return null;
+    const bundleMeta = catchmentBundleMetaForCode(code);
+    if (!bundleMeta) return null;
+    return loadManchesterCatchmentBundles([bundleMeta].concat(neighboringCatchmentBundleMetas(bundleMeta)));
+  }});
+}}
+
+function bundleMetasForPoint(lat, lon) {{
+  if (!manchesterCatchmentIndexMeta) return [];
+  const directBundles = (manchesterCatchmentIndexMeta.bundles || []).filter((bundle) => pointInCatchmentBundleBbox(lat, lon, bundle?.bbox));
+  const withNeighbors = [];
+  const seen = new Set();
+  directBundles.forEach((bundleMeta) => {{
+    [bundleMeta].concat(neighboringCatchmentBundleMetas(bundleMeta)).forEach((candidate) => {{
+      const id = String(candidate?.id || '').trim();
+      if (!id || seen.has(id)) return;
+      seen.add(id);
+      withNeighbors.push(candidate);
+    }});
+  }});
+  return withNeighbors;
+}}
+
+function ensureCatchmentBundlesForPoint(lat, lon) {{
+  return loadManchesterCatchmentIndex().then((indexMeta) => {{
+    if (!indexMeta) return [];
+    return loadManchesterCatchmentBundles(bundleMetasForPoint(lat, lon));
+  }});
+}}
+
+function bundleMetasForBounds(bounds) {{
+  if (!bounds || !manchesterCatchmentIndexMeta) return [];
+  const directBundles = (manchesterCatchmentIndexMeta.bundles || []).filter((bundle) => {{
+    const bbox = Array.isArray(bundle?.expanded_bbox) ? bundle.expanded_bbox : bundle?.bbox;
+    return boundsIntersectCatchmentBundleBbox(bounds, bbox);
+  }});
+  const withNeighbors = [];
+  const seen = new Set();
+  directBundles.forEach((bundleMeta) => {{
+    [bundleMeta].concat(neighboringCatchmentBundleMetas(bundleMeta)).forEach((candidate) => {{
+      const id = String(candidate?.id || '').trim();
+      if (!id || seen.has(id)) return;
+      seen.add(id);
+      withNeighbors.push(candidate);
+    }});
+  }});
+  return withNeighbors;
+}}
+
+function ensureCatchmentBundlesForBounds(bounds) {{
+  return loadManchesterCatchmentIndex().then((indexMeta) => {{
+    if (!indexMeta) return [];
+    return loadManchesterCatchmentBundles(bundleMetasForBounds(bounds));
+  }});
+}}
+
 function preloadManchesterCatchments() {{
-  if (!manchesterCatchmentBundleMeta || !manchesterCatchmentBundleMeta.feature_count) return;
-  if (manchesterCatchmentIndex || manchesterCatchmentLoadPromise) return;
   window.setTimeout(() => {{
     loadManchesterCatchmentIndex().then(() => {{
-      renderMarkers();
-      updateHoveredCatchmentOutline();
-      renderServiceFinderMarker();
-      renderServiceFinder();
+      const preloadPromise = map.getZoom() >= NATIONAL_SUPPLEMENTAL_MIN_ZOOM
+        ? ensureCatchmentBundlesForBounds(map.getBounds().pad(0.08))
+        : Promise.resolve([]);
+      preloadPromise.then(() => {{
+        renderMarkers();
+        updateHoveredCatchmentOutline();
+        renderServiceFinderMarker();
+        renderServiceFinder();
+      }});
     }});
   }}, 0);
 }}
@@ -5595,7 +5750,15 @@ function updateHoveredCatchmentOutline() {{
 
 function setHoveredCatchmentOutline(code) {{
   hoveredCatchmentCode = String(code || '').trim() || null;
-  updateHoveredCatchmentOutline();
+  if (!hoveredCatchmentCode) {{
+    updateHoveredCatchmentOutline();
+    return;
+  }}
+  ensureCatchmentBundleForCode(hoveredCatchmentCode).then(() => {{
+    updateHoveredCatchmentOutline();
+    renderMarkers();
+    renderNationalSupplementals();
+  }});
 }}
 
 function clearHoveredCatchment(code = '') {{
@@ -5608,12 +5771,16 @@ function clearHoveredCatchment(code = '') {{
 function togglePersistentCatchment(code) {{
   const normalized = String(code || '').trim();
   if (!normalized) return;
-  if (persistentCatchmentCodes.has(normalized)) {{
-    persistentCatchmentCodes.delete(normalized);
-  }} else {{
-    persistentCatchmentCodes.add(normalized);
-  }}
-  updateHoveredCatchmentOutline();
+  ensureCatchmentBundleForCode(normalized).then(() => {{
+    if (persistentCatchmentCodes.has(normalized)) {{
+      persistentCatchmentCodes.delete(normalized);
+    }} else {{
+      persistentCatchmentCodes.add(normalized);
+    }}
+    updateHoveredCatchmentOutline();
+    renderMarkers();
+    renderNationalSupplementals();
+  }});
 }}
 
 function serviceFinderDefaultDirection(sortKey) {{
@@ -5675,6 +5842,13 @@ function serviceFinderButtonText() {{
   return '📍 Find Practices';
 }}
 
+function clearServiceFinderMatches() {{
+  serviceFinderMatchedRows = null;
+  serviceFinderMatchedCodeSet = new Set();
+  serviceFinderMatchedStateKey = '';
+  serviceFinderMatchLoadPromise = null;
+}}
+
 function removeServiceFinderDragGhost() {{
   if (serviceFinderDragGhost?.parentNode) {{
     serviceFinderDragGhost.parentNode.removeChild(serviceFinderDragGhost);
@@ -5728,20 +5902,37 @@ function scrollToServiceFinder() {{
 function renderServiceFinderMarker() {{
   serviceFinderPointLayer.clearLayers();
   if (!serviceFinderPoint) return;
-  const matches = manchesterCatchmentIndex
-    ? (serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || [])
-    : null;
+  if (!manchesterCatchmentIndexMeta && !manchesterCatchmentLoadPromise) {{
+    loadManchesterCatchmentIndex().then(() => {{
+      clearServiceFinderMatches();
+      renderMarkers();
+      renderNationalSupplementals();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
+  }}
+  if (!serviceFinderMatchedRows && !serviceFinderMatchLoadPromise && !manchesterCatchmentLoadError) {{
+    loadServiceFinderMatchesForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon).then(() => {{
+      renderMarkers();
+      renderNationalSupplementals();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
+  }}
+  const matches = serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon);
   const count = matches ? matches.length : null;
-  const countText = count === null ? '…' : String(count);
+  const countText = manchesterCatchmentLoadError ? '!' : count === null ? '…' : String(count);
   const icon = L.divIcon({{
     className: 'service-finder-pin-icon',
     html: `<div class="service-finder-pin${{count !== null && count >= 100 ? ' is-large' : ''}}">${{escapeHtml(countText)}}</div>`,
     iconSize: count !== null && count >= 100 ? [44, 44] : [38, 38],
     iconAnchor: count !== null && count >= 100 ? [22, 22] : [19, 19],
   }});
-  const tooltip = count === null
-    ? `${{serviceFinderLocationLabel || 'Selected location'}} · waiting for catchments`
-    : `${{serviceFinderLocationLabel || 'Selected location'}} · ${{count.toLocaleString('en-GB')}} practice${{count === 1 ? '' : 's'}}`;
+  const tooltip = manchesterCatchmentLoadError
+    ? `${{serviceFinderLocationLabel || 'Selected location'}} · catchments failed to load`
+    : count === null
+      ? `${{serviceFinderLocationLabel || 'Selected location'}} · waiting for catchments`
+      : `${{serviceFinderLocationLabel || 'Selected location'}} · ${{count.toLocaleString('en-GB')}} practice${{count === 1 ? '' : 's'}}`;
   const marker = L.marker([serviceFinderPoint.lat, serviceFinderPoint.lon], {{ icon, draggable: true }});
   marker.on('click', () => {{
     scrollToServiceFinder();
@@ -5760,6 +5951,7 @@ function clearServiceFinderPoint() {{
   serviceFinderPoint = null;
   serviceFinderLocationLabel = '';
   serviceFinderEmptyMessage = '';
+  clearServiceFinderMatches();
   clearServiceFinderButtonFlash();
   renderMarkers();
   renderServiceFinderMarker();
@@ -5774,18 +5966,26 @@ function setServiceFinderPoint(lat, lon, label = 'Selected location') {{
   }};
   serviceFinderLocationLabel = label;
   serviceFinderEmptyMessage = '';
+  clearServiceFinderMatches();
   renderMarkers();
   renderServiceFinderMarker();
   renderServiceFinder();
   flashServiceFinderButton('✅ List Updated');
 }}
 
-function serviceFinderRowsForPoint(lat, lon) {{
-  if (!manchesterCatchmentIndex) return null;
+function computeServiceFinderMatchesForRows(rowsToTry, lat, lon) {{
+  if (!Array.isArray(rowsToTry) || !rowsToTry.length || !manchesterCatchmentIndex) {{
+    serviceFinderMatchedRows = [];
+    serviceFinderMatchedCodeSet = new Set();
+    return [];
+  }}
   const point = turf.point([Number(lon), Number(lat)]);
   const matches = [];
-  rows.forEach((row) => {{
-    const features = manchesterCatchmentIndex.get(row.code) || [];
+  const matchedCodeSet = new Set();
+  rowsToTry.forEach((row) => {{
+    const code = String(row?.code || '').trim();
+    if (!code) return;
+    const features = manchesterCatchmentIndex.get(code) || [];
     if (!features.length) return;
     const isMatch = features.some((feature) => {{
       try {{
@@ -5794,9 +5994,72 @@ function serviceFinderRowsForPoint(lat, lon) {{
         return false;
       }}
     }});
-    if (isMatch) matches.push(row);
+    if (!isMatch) return;
+    matches.push(row);
+    matchedCodeSet.add(code);
   }});
+  serviceFinderMatchedRows = matches;
+  serviceFinderMatchedCodeSet = matchedCodeSet;
   return matches;
+}}
+
+function serviceFinderCandidateEntries(lat, lon) {{
+  return allKnownRows
+    .map((row) => ({{
+      row,
+      distance: distanceMiles(lat, lon, Number(row?.lat), Number(row?.lon)),
+    }}))
+    .filter((entry) => Number.isFinite(entry.distance))
+    .sort((left, right) => left.distance - right.distance || String(left.row?.name || '').localeCompare(String(right.row?.name || ''), 'en'));
+}}
+
+function serviceFinderCandidateRowsForStage(entries, minCount, maxDistanceMiles) {{
+  return entries
+    .filter((entry, index) => index < minCount || entry.distance <= maxDistanceMiles)
+    .map((entry) => entry.row);
+}}
+
+function loadServiceFinderMatchesForPoint(lat, lon) {{
+  if (!serviceFinderPoint) return Promise.resolve([]);
+  const pointKey = `${{Number(lat).toFixed(6)}},${{Number(lon).toFixed(6)}}`;
+  if (serviceFinderMatchLoadPromise && serviceFinderMatchedStateKey === pointKey) return serviceFinderMatchLoadPromise;
+  serviceFinderMatchedStateKey = pointKey;
+  serviceFinderMatchLoadPromise = loadManchesterCatchmentIndex().then((indexMeta) => {{
+    if (!indexMeta) return [];
+    const entries = serviceFinderCandidateEntries(lat, lon);
+    const stages = [
+      {{ minCount: 40, maxDistanceMiles: 20, minMatches: 6, minTried: 40 }},
+      {{ minCount: 80, maxDistanceMiles: 35, minMatches: 8, minTried: 80 }},
+      {{ minCount: 140, maxDistanceMiles: 55, minMatches: 10, minTried: 120 }},
+    ];
+    const runStage = (stageIndex) => {{
+      const stage = stages[Math.min(stageIndex, stages.length - 1)];
+      const rowsToTry = serviceFinderCandidateRowsForStage(entries, stage.minCount, stage.maxDistanceMiles);
+      const bundleMetas = rowsToTry
+        .map((row) => catchmentBundleMetaForCode(row.code))
+        .filter((bundleMeta, index, array) => bundleMeta && array.findIndex((candidate) => candidate?.id === bundleMeta.id) === index);
+      return loadManchesterCatchmentBundles(bundleMetas).then(() => {{
+        if (!serviceFinderPoint || serviceFinderMatchedStateKey !== pointKey) return [];
+        const matches = computeServiceFinderMatchesForRows(rowsToTry, lat, lon);
+        if (stageIndex >= stages.length - 1) return matches;
+        if (matches.length >= stage.minMatches && rowsToTry.length >= stage.minTried) return matches;
+        return runStage(stageIndex + 1);
+      }});
+    }};
+    return runStage(0);
+  }}).finally(() => {{
+    if (serviceFinderMatchedStateKey === pointKey) {{
+      serviceFinderMatchLoadPromise = null;
+    }}
+  }});
+  return serviceFinderMatchLoadPromise;
+}}
+
+function serviceFinderRowsForPoint(lat, lon) {{
+  if (!serviceFinderPoint) return null;
+  if (Math.abs(Number(lat) - Number(serviceFinderPoint.lat)) > 0.0000005) return null;
+  if (Math.abs(Number(lon) - Number(serviceFinderPoint.lon)) > 0.0000005) return null;
+  return serviceFinderMatchedRows;
 }}
 
 function serviceFinderResultRows(matches) {{
@@ -5839,8 +6102,36 @@ function renderServiceFinder() {{
     return;
   }}
 
-  if (!manchesterCatchmentIndex) {{
-    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">Waiting for catchment polygons...</td></tr>`;
+  if (!manchesterCatchmentIndexMeta && !manchesterCatchmentLoadPromise) {{
+    loadManchesterCatchmentIndex().then(() => {{
+      clearServiceFinderMatches();
+      renderMarkers();
+      renderNationalSupplementals();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
+  }}
+
+  if (manchesterCatchmentLoadError) {{
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">Catchments failed to load: ${{escapeHtml(manchesterCatchmentLoadError)}}</td></tr>`;
+    return;
+  }}
+
+  if (!manchesterCatchmentIndexMeta) {{
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">Loading catchment index...</td></tr>`;
+    return;
+  }}
+
+  if (!serviceFinderMatchedRows) {{
+    if (!serviceFinderMatchLoadPromise) {{
+      loadServiceFinderMatchesForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon).then(() => {{
+        renderMarkers();
+        renderNationalSupplementals();
+        renderServiceFinderMarker();
+        renderServiceFinder();
+      }});
+    }}
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">Loading nearby catchments...</td></tr>`;
     return;
   }}
 
@@ -5982,7 +6273,7 @@ function renderMarkers() {{
   const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
   const serviceFinderMatchedCodes = new Set(
     serviceFinderPoint && manchesterCatchmentIndex
-      ? (serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || []).map((row) => row.code)
+      ? Array.from(serviceFinderMatchedCodeSet)
       : []
   );
   for (const row of rows) {{
@@ -6054,6 +6345,11 @@ function renderNationalSupplementals() {{
   const bounds = map.getBounds().pad(0.04);
   const metric = metricConfigs[activeMetric];
   const visibleRows = nationalSupplementals.filter((row) => bounds.contains([Number(row.lat), Number(row.lon)]));
+  const serviceFinderMatchedCodes = new Set(
+    serviceFinderPoint && manchesterCatchmentIndex
+      ? Array.from(serviceFinderMatchedCodeSet)
+      : []
+  );
   for (const row of visibleRows) {{
     const metricValue = metric.value(row);
     if (metricValue === null && activeMetric === 'google') {{
@@ -6074,7 +6370,7 @@ function renderNationalSupplementals() {{
     const scaledHeight = Math.round(metrics.height * scale);
     const icon = L.divIcon({{
       className: 'marker-icon marker-icon-national',
-      html: markerSvg('circle', color, label, fontSize, label === '?'),
+      html: markerSvg('circle', color, label, fontSize, label === '?', serviceFinderMatchedCodes.has(row.code)),
       iconSize: [scaledWidth, scaledHeight],
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
       popupAnchor: [0, metrics.popupY]
@@ -6085,6 +6381,17 @@ function renderNationalSupplementals() {{
       zIndexOffset: -300,
     }});
     marker.bindPopup(nationalPopupMarkup(row));
+    marker.on('click', () => {{
+      togglePersistentCatchment(row.code);
+    }});
+    marker.on('mouseover', () => {{
+      marker.setZIndexOffset(1200);
+      setHoveredCatchmentOutline(row.code);
+    }});
+    marker.on('mouseout', () => {{
+      marker.setZIndexOffset(-300);
+      clearHoveredCatchment(row.code);
+    }});
     marker.addTo(nationalMarkerLayer);
   }}
 
@@ -9439,6 +9746,14 @@ document.getElementById('legend-collapse').addEventListener('click', () => {{
 }});
 
 map.on('moveend', () => {{
+  if (map.getZoom() >= NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {{
+    ensureCatchmentBundlesForBounds(map.getBounds().pad(0.08)).then(() => {{
+      renderMarkers();
+      renderNationalSupplementals();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
+  }}
   renderNationalSupplementals();
   updateHoveredCatchmentOutline();
   if (activeAreaOverlay === 'population') {{
@@ -9451,6 +9766,14 @@ map.on('moveend', () => {{
 }});
 
 map.on('zoomend', () => {{
+  if (map.getZoom() >= NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {{
+    ensureCatchmentBundlesForBounds(map.getBounds().pad(0.08)).then(() => {{
+      renderMarkers();
+      renderNationalSupplementals();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
+  }}
   updateHoveredCatchmentOutline();
 }});
 
