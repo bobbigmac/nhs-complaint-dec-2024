@@ -1904,14 +1904,6 @@ def build_data_pool_report_html(
             for row in cqc_rows
             if str(row.get("cqc_overall_rating") or "").strip()
         )
-        if nation == "england":
-            cqc_summary = (
-                f"{len(cqc_rows):,} with rating · {practice_total - len(cqc_rows):,} without match · "
-                f"{html_counter_summary(cqc_rating_counts)}"
-            )
-        else:
-            cqc_summary = "CQC is England-only, so this nation has no comparable CQC coverage here."
-
         lookup_rows = [deprivation_lookup.get(str(row.get("code", "")).strip()) for row in nation_rows]
         lookup_rows = [row for row in lookup_rows if isinstance(row, dict)]
         deprivation_rows = [row for row in lookup_rows if has_value(row.get("imd_decile"))]
@@ -1946,14 +1938,18 @@ def build_data_pool_report_html(
                 f"{len(patient_rows):,} with counts covering {patient_total:,} patients · {html_counter_summary(patient_source_counts)}",
             ),
             (
-                "CQC",
-                cqc_summary,
-            ),
-            (
                 "Deprivation",
                 f"{len(deprivation_rows):,} with usable decile · {html_counter_summary(deprivation_issue_counts)}",
             ),
         ]
+        if nation == "england":
+            items.insert(
+                5,
+                (
+                    "CQC",
+                    f"{len(cqc_rows):,} with rating · {practice_total - len(cqc_rows):,} without match · {html_counter_summary(cqc_rating_counts)}",
+                ),
+            )
         item_markup = "".join(
             f"<li><strong>{html.escape(label)}</strong><span>{value}</span></li>"
             for label, value in items
@@ -3752,6 +3748,36 @@ body {{
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+}}
+.service-finder-cqc-badge {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}}
+.service-finder-cqc-badge:hover {{
+  transform: translateY(-1px);
+}}
+.service-finder-cqc-badge.is-good {{
+  color: #1f7a3d;
+}}
+.service-finder-cqc-badge.is-outstanding {{
+  color: #b8860b;
+}}
+.service-finder-cqc-badge.is-requires-improvement {{
+  color: #b26a00;
+}}
+.service-finder-cqc-badge.is-inadequate {{
+  color: #b42318;
+}}
+.service-finder-cqc-badge.is-insufficient-evidence {{
+  color: #667085;
 }}
 .service-finder-subtle {{
   display: inline;
@@ -5784,6 +5810,20 @@ function renderServiceFinder() {{
     const surveyStyle = survey === null ? '' : ` style="color:${{metricColorForValue('survey', survey)}}"`;
     const distanceLabel = Number.isFinite(distance) ? `${{distance.toFixed(distance < 10 ? 1 : 0)}} mi` : '?';
     const scopeTag = row.gtd ? '<span class="service-finder-tag">GTD</span>' : '';
+    const cqcRating = String(row.cqc_overall_rating || '').trim();
+    const cqcUrl = String(row.cqc_location_url || '').trim();
+    const cqcBadgeConfig = (() => {{
+      if (!cqcRating || !cqcUrl) return null;
+      if (cqcRating === 'Outstanding') return {{ icon: '⭐', className: 'is-outstanding', title: 'CQC: Outstanding' }};
+      if (cqcRating === 'Good') return {{ icon: '✓', className: 'is-good', title: 'CQC: Good' }};
+      if (cqcRating === 'Requires improvement') return {{ icon: '⚠', className: 'is-requires-improvement', title: 'CQC: Requires improvement' }};
+      if (cqcRating === 'Inadequate') return {{ icon: '⛔', className: 'is-inadequate', title: 'CQC: Inadequate' }};
+      if (cqcRating === 'Insufficient evidence to rate') return {{ icon: '❔', className: 'is-insufficient-evidence', title: 'CQC: Insufficient evidence to rate' }};
+      return {{ icon: '❔', className: 'is-insufficient-evidence', title: `CQC: ${{cqcRating}}` }};
+    }})();
+    const cqcBadgeMarkup = cqcBadgeConfig
+      ? `<a class="service-finder-cqc-badge ${{cqcBadgeConfig.className}}" href="${{escapeHtml(cqcUrl)}}" target="_blank" rel="noreferrer" title="${{escapeHtml(cqcBadgeConfig.title)}}">${{cqcBadgeConfig.icon}}</a>`
+      : '';
     const titleMarkup = nhsUrl
       ? `<a class="service-finder-practice-name" href="${{escapeHtml(nhsUrl)}}" target="_blank" rel="noreferrer">${{escapeHtml(row.name || row.code)}}</a>`
       : `<button type="button" class="service-finder-practice-name" data-service-finder-code="${{escapeHtml(row.code)}}">${{escapeHtml(row.name || row.code)}}</button>`;
@@ -5810,7 +5850,7 @@ function renderServiceFinder() {{
           <div class="service-finder-practice-layout">
             <div class="service-finder-practice-main">
               <div class="service-finder-title-line">
-                ${{titleMarkup}}${{scopeTag}}
+                ${{cqcBadgeMarkup}}${{titleMarkup}}${{scopeTag}}
               </div>
               ${{addressMarkup}}
             </div>

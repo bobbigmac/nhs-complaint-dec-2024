@@ -1124,6 +1124,36 @@ body {
   align-items: center;
   gap: 8px;
 }
+.service-finder-cqc-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+.service-finder-cqc-badge:hover {
+  transform: translateY(-1px);
+}
+.service-finder-cqc-badge.is-good {
+  color: #1f7a3d;
+}
+.service-finder-cqc-badge.is-outstanding {
+  color: #b8860b;
+}
+.service-finder-cqc-badge.is-requires-improvement {
+  color: #b26a00;
+}
+.service-finder-cqc-badge.is-inadequate {
+  color: #b42318;
+}
+.service-finder-cqc-badge.is-insufficient-evidence {
+  color: #667085;
+}
 .service-finder-subtle {
   display: inline;
   margin-top: 4px;
@@ -1777,17 +1807,17 @@ body {
 <article class="data-pool-card">
   <h3>Scotland</h3>
   <p class="data-pool-kicker">826 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>826 records · 826 with coordinates · 826 with postcode · National supplemental 826</span></li><li><strong>Google</strong><span>818 with usable rating/count · 8 missing or unusable · National Google Maps quick scan 818</span></li><li><strong>Surveys</strong><span>747 with overall score · 747 with participation/completion · Health and Care Experience Survey 747</span></li><li><strong>Survey issues</strong><span>missing in current source 78 · metric missing in source 1</span></li><li><strong>Patient counts</strong><span>760 with counts covering 5,327,052 patients · NHS Scotland list sizes 760</span></li><li><strong>CQC</strong><span>CQC is England-only, so this nation has no comparable CQC coverage here.</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 823 · no cached lookup 3</span></li></ul>
+  <ul class="data-pool-list"><li><strong>Practice info</strong><span>826 records · 826 with coordinates · 826 with postcode · National supplemental 826</span></li><li><strong>Google</strong><span>818 with usable rating/count · 8 missing or unusable · National Google Maps quick scan 818</span></li><li><strong>Surveys</strong><span>747 with overall score · 747 with participation/completion · Health and Care Experience Survey 747</span></li><li><strong>Survey issues</strong><span>missing in current source 78 · metric missing in source 1</span></li><li><strong>Patient counts</strong><span>760 with counts covering 5,327,052 patients · NHS Scotland list sizes 760</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 823 · no cached lookup 3</span></li></ul>
 </article>
 <article class="data-pool-card">
   <h3>Wales</h3>
   <p class="data-pool-kicker">311 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>311 records · 311 with coordinates · 311 with postcode · National supplemental 311</span></li><li><strong>Google</strong><span>310 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 310</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>equivalent identified, not wired 311</span></li><li><strong>Patient counts</strong><span>294 with counts covering 2,652,288 patients · StatsWales HLTH0426 294</span></li><li><strong>CQC</strong><span>CQC is England-only, so this nation has no comparable CQC coverage here.</span></li><li><strong>Deprivation</strong><span>1 with usable decile · polygon matched, no deprivation index 309 · no polygon match 1</span></li></ul>
+  <ul class="data-pool-list"><li><strong>Practice info</strong><span>311 records · 311 with coordinates · 311 with postcode · National supplemental 311</span></li><li><strong>Google</strong><span>310 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 310</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>equivalent identified, not wired 311</span></li><li><strong>Patient counts</strong><span>294 with counts covering 2,652,288 patients · StatsWales HLTH0426 294</span></li><li><strong>Deprivation</strong><span>1 with usable decile · polygon matched, no deprivation index 309 · no polygon match 1</span></li></ul>
 </article>
 <article class="data-pool-card">
   <h3>Northern Ireland</h3>
   <p class="data-pool-kicker">225 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>225 records · 225 with coordinates · 225 with postcode · National supplemental 225</span></li><li><strong>Google</strong><span>224 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 224</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>discontinued 225</span></li><li><strong>Patient counts</strong><span>224 with counts covering 1,570,346 patients · OpenDataNI GP reference 224</span></li><li><strong>CQC</strong><span>CQC is England-only, so this nation has no comparable CQC coverage here.</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 168 · no cached lookup 57</span></li></ul>
+  <ul class="data-pool-list"><li><strong>Practice info</strong><span>225 records · 225 with coordinates · 225 with postcode · National supplemental 225</span></li><li><strong>Google</strong><span>224 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 224</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>discontinued 225</span></li><li><strong>Patient counts</strong><span>224 with counts covering 1,570,346 patients · OpenDataNI GP reference 224</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 168 · no cached lookup 57</span></li></ul>
 </article>
   </div>
   <p class="chart-note data-pool-footnote">Survey participation means GP Patient Survey completion in England and HACE response rate in Scotland. National deprivation is currently English IMD only: Wales can retain polygon matches without a comparable index, while Scotland and Northern Ireland remain unsupported until equivalent sources are wired.</p>
@@ -3184,6 +3214,20 @@ function renderServiceFinder() {
     const surveyStyle = survey === null ? '' : ` style="color:${metricColorForValue('survey', survey)}"`;
     const distanceLabel = Number.isFinite(distance) ? `${distance.toFixed(distance < 10 ? 1 : 0)} mi` : '?';
     const scopeTag = row.gtd ? '<span class="service-finder-tag">GTD</span>' : '';
+    const cqcRating = String(row.cqc_overall_rating || '').trim();
+    const cqcUrl = String(row.cqc_location_url || '').trim();
+    const cqcBadgeConfig = (() => {
+      if (!cqcRating || !cqcUrl) return null;
+      if (cqcRating === 'Outstanding') return { icon: '⭐', className: 'is-outstanding', title: 'CQC: Outstanding' };
+      if (cqcRating === 'Good') return { icon: '✓', className: 'is-good', title: 'CQC: Good' };
+      if (cqcRating === 'Requires improvement') return { icon: '⚠', className: 'is-requires-improvement', title: 'CQC: Requires improvement' };
+      if (cqcRating === 'Inadequate') return { icon: '⛔', className: 'is-inadequate', title: 'CQC: Inadequate' };
+      if (cqcRating === 'Insufficient evidence to rate') return { icon: '❔', className: 'is-insufficient-evidence', title: 'CQC: Insufficient evidence to rate' };
+      return { icon: '❔', className: 'is-insufficient-evidence', title: `CQC: ${cqcRating}` };
+    })();
+    const cqcBadgeMarkup = cqcBadgeConfig
+      ? `<a class="service-finder-cqc-badge ${cqcBadgeConfig.className}" href="${escapeHtml(cqcUrl)}" target="_blank" rel="noreferrer" title="${escapeHtml(cqcBadgeConfig.title)}">${cqcBadgeConfig.icon}</a>`
+      : '';
     const titleMarkup = nhsUrl
       ? `<a class="service-finder-practice-name" href="${escapeHtml(nhsUrl)}" target="_blank" rel="noreferrer">${escapeHtml(row.name || row.code)}</a>`
       : `<button type="button" class="service-finder-practice-name" data-service-finder-code="${escapeHtml(row.code)}">${escapeHtml(row.name || row.code)}</button>`;
@@ -3210,7 +3254,7 @@ function renderServiceFinder() {
           <div class="service-finder-practice-layout">
             <div class="service-finder-practice-main">
               <div class="service-finder-title-line">
-                ${titleMarkup}${scopeTag}
+                ${cqcBadgeMarkup}${titleMarkup}${scopeTag}
               </div>
               ${addressMarkup}
             </div>
