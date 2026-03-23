@@ -5756,8 +5756,6 @@ function setHoveredCatchmentOutline(code) {{
   }}
   ensureCatchmentBundleForCode(hoveredCatchmentCode).then(() => {{
     updateHoveredCatchmentOutline();
-    renderMarkers();
-    renderNationalSupplementals();
   }});
 }}
 
@@ -5778,8 +5776,6 @@ function togglePersistentCatchment(code) {{
       persistentCatchmentCodes.add(normalized);
     }}
     updateHoveredCatchmentOutline();
-    renderMarkers();
-    renderNationalSupplementals();
   }});
 }}
 
@@ -6267,7 +6263,6 @@ function renderServiceFinder() {{
 
 function renderMarkers() {{
   markerLayer.clearLayers();
-  clearHoveredCatchment();
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
   const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
