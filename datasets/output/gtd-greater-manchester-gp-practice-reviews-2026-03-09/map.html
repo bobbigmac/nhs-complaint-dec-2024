@@ -1535,7 +1535,7 @@ body {
       <div class="legend-intro">
         <h1>Manchester GPs' Reviews Map</h1>
         <p>Manchester: 3,021,833 &#128101; &middot; 360 &#127973;</p>
-        <p id="national-supplemental-note" class="hint" data-total-patients="66607104" data-total-practices="6892">&#127988; National: 66,607,104 &#128101; &middot; 6892 &#127973;</p>
+        <p id="national-supplemental-note" class="hint" data-total-patients="66807458" data-total-practices="6920">&#127988; National: 66,807,458 &#128101; &middot; 6920 &#127973;</p>
       </div>
       <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
@@ -1767,7 +1767,7 @@ body {
     <span>Data Coverage by Nation</span>
     <small>Expand for source coverage, gaps, and lookup states</small>
   </summary>
-  <p class="chart-note">7,316 unique practices across 4 nations are currently loaded into this page. Counts below reflect what this build can actually use right now, including missing data and lookup failure states.</p>
+  <p class="chart-note">7,344 unique practices across 4 nations are currently loaded into this page. Counts below reflect what this build can actually use right now, including missing data and lookup failure states.</p>
   <div class="data-pool-grid">
 <article class="data-pool-card">
   <h3>England</h3>
@@ -1786,8 +1786,8 @@ body {
 </article>
 <article class="data-pool-card">
   <h3>Northern Ireland</h3>
-  <p class="data-pool-kicker">183 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>183 records · 183 with coordinates · 183 with postcode · National supplemental 183</span></li><li><strong>Google</strong><span>182 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 182</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>discontinued 183</span></li><li><strong>Patient counts</strong><span>182 with counts covering 1,265,367 patients · OpenDataNI GP reference 182</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 168 · no cached lookup 15</span></li></ul>
+  <p class="data-pool-kicker">211 practices currently loaded into this page</p>
+  <ul class="data-pool-list"><li><strong>Practice info</strong><span>211 records · 211 with coordinates · 211 with postcode · National supplemental 211</span></li><li><strong>Google</strong><span>210 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 210</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>discontinued 211</span></li><li><strong>Patient counts</strong><span>210 with counts covering 1,465,721 patients · OpenDataNI GP reference 210</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 168 · no cached lookup 43</span></li></ul>
 </article>
   </div>
   <p class="chart-note data-pool-footnote">Survey participation means GP Patient Survey completion in England and HACE response rate in Scotland. National deprivation is currently English IMD only: Wales can retain polygon matches without a comparable index, while Scotland and Northern Ireland remain unsupported until equivalent sources are wired.</p>
@@ -2809,7 +2809,8 @@ function loadManchesterCatchmentIndex() {
     manchesterCatchmentIndex = new Map();
     return Promise.resolve(manchesterCatchmentIndex);
   }
-  manchesterCatchmentLoadPromise = fetch(MANCHESTER_CATCHMENT_BUNDLE_NAME)
+  const catchmentUrl = new URL(MANCHESTER_CATCHMENT_BUNDLE_NAME, window.location.href).toString();
+  manchesterCatchmentLoadPromise = fetch(catchmentUrl)
     .then((response) => {
       if (!response.ok) throw new Error(`catchment fetch failed: ${response.status}`);
       return response.json();
