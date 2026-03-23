@@ -2882,7 +2882,7 @@ body {{
         <div class="treemap-mode-control">
           <div class="segmented" id="completion-scope-control">
             <label title="Manchester scope"><input type="radio" name="completion-scope" value="regional" checked><span>Manchester</span><span class="segmented-short">M</span></label>
-            <label title="National scope"><input type="radio" name="completion-scope" value="national"><span>National</span><span class="segmented-short">N</span></label>
+            <label id="completion-scope-national-option" title="Nation scope"><input type="radio" name="completion-scope" value="national"><span id="completion-scope-national-label">Nations</span><span class="segmented-short" id="completion-scope-national-short">N</span></label>
           </div>
         </div>
       </div>
@@ -3056,6 +3056,15 @@ let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
 let nationalDeprivationUsePopulation = false;
 let completionScatterScope = 'regional';
+const completionScatterNationOrder = (() => {{
+  const preferredOrder = ['england', 'scotland', 'wales', 'northern_ireland'];
+  const allRows = rows.concat(nationalSupplementals);
+  return preferredOrder.filter((nation) => allRows.some((row) => {{
+    if (String(row?.nation || '').trim().toLowerCase() !== nation) return false;
+    return numericOrNull(row.survey_completion_rate_percent) !== null;
+  }}));
+}})();
+let completionScatterNationIndex = 0;
 let showCityCircles = true;
 let sampleCircleArmed = false;
 let sampleCircleRadiusMiles = 6;
@@ -4166,6 +4175,36 @@ function displayNationName(nation) {{
   return normalized ? normalized.replace(/_/g, ' ').replace(/\\b\\w/g, (match) => match.toUpperCase()) : 'Unknown';
 }}
 
+function activeCompletionNation() {{
+  return completionScatterNationOrder[completionScatterNationIndex] || 'england';
+}}
+
+function completionNationShortLabel(nation) {{
+  const normalized = String(nation || '').trim().toLowerCase();
+  if (normalized === 'england') return 'E';
+  if (normalized === 'scotland') return 'S';
+  if (normalized === 'wales') return 'W';
+  if (normalized === 'northern_ireland') return 'NI';
+  return 'N';
+}}
+
+function updateCompletionScopeControl() {{
+  const option = document.getElementById('completion-scope-national-option');
+  const text = document.getElementById('completion-scope-national-label');
+  const short = document.getElementById('completion-scope-national-short');
+  if (completionScatterScope !== 'national') {{
+    if (option) option.title = 'Nation scope';
+    if (text) text.textContent = 'Nations';
+    if (short) short.textContent = 'N';
+    return;
+  }}
+  const nation = activeCompletionNation();
+  const label = displayNationName(nation);
+  if (option) option.title = `${{label}} scope`;
+  if (text) text.textContent = label;
+  if (short) short.textContent = completionNationShortLabel(nation);
+}}
+
 function cityCatchmentForRow(row) {{
   const lat = Number(row?.lat);
   const lon = Number(row?.lon);
@@ -4974,6 +5013,7 @@ function renderComparisons() {{
 
 function renderScatterplot() {{
   const metric = metricConfigs[activeMetric];
+  updateCompletionScopeControl();
   document.getElementById('scatter-heading').textContent = `Completion Rate vs Score - Showing ${{metricDisplayLabel(activeMetric)}}`;
   const scatterAxis = (() => {{
     if (activeMetric !== 'gap') {{
@@ -4987,7 +5027,11 @@ function renderScatterplot() {{
       ticks: gapAxis.magnitudeTicks,
     }};
   }})();
-  const sourceRows = completionScatterScope === 'national' ? rows.concat(nationalSupplementals) : rows;
+  const completionNation = activeCompletionNation();
+  const completionNationLabel = displayNationName(completionNation);
+  const sourceRows = completionScatterScope === 'national'
+    ? rows.concat(nationalSupplementals).filter((row) => String(row?.nation || '').trim().toLowerCase() === completionNation)
+    : rows;
   const points = sourceRows
     .map((row) => {{
       const signed = activeMetric === 'gap'
@@ -5062,7 +5106,7 @@ function renderScatterplot() {{
     <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
     <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">${{scatterAxis.label}}</text>
-    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">GP survey completion rate</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">${{completionScatterScope === 'regional' ? 'GP survey completion rate' : 'Survey participation rate'}}</text>
   `;
   if (completionScatterScope === 'regional') {{
     const assignments = shapeAssignment();
@@ -5114,6 +5158,7 @@ function renderScatterplot() {{
     ].join('');
     svg.innerHTML = `${{axisMarkup}}${{regionalTrendMarkup}}${{pointMarkup}}${{focusMarkup}}`;
   }} else {{
+    const showNationalOverlaySeries = completionNation === 'england';
     const xBinCount = activeMetric === 'google' ? 20 : 20;
     const yBinSize = 5;
     const yBinCount = Math.max(1, Math.ceil(completionMax / yBinSize));
@@ -5149,7 +5194,7 @@ function renderScatterplot() {{
         `);
       }}
     }}
-    const overlaySeries = [
+    const overlaySeries = showNationalOverlaySeries ? [
       {{
         label: 'Manchester',
         color: '#1f5f8b',
@@ -5183,7 +5228,7 @@ function renderScatterplot() {{
         y: seriesPoints.length ? mean(seriesPoints.map((point) => point.y)) : null,
         count: seriesPoints.length,
       }};
-    }}).filter((series) => series.x !== null && series.y !== null);
+    }}).filter((series) => series.x !== null && series.y !== null) : [];
     const overlayMarkup = overlaySeries.map((series, index) => `
       <g>
         <circle cx="${{xScale(series.x).toFixed(2)}}" cy="${{yScale(series.y).toFixed(2)}}" r="6.5" fill="${{series.color}}" stroke="#ffffff" stroke-width="2">
@@ -5192,7 +5237,7 @@ function renderScatterplot() {{
         <text x="${{(xScale(series.x) + 10).toFixed(2)}}" y="${{(yScale(series.y) - (index * 16)).toFixed(2)}}" font-size="11" font-weight="700" fill="${{series.color}}">${{series.label}}</text>
       </g>
     `).join('');
-    const nationalTrendMarkup = renderTrendLine(points, 'rgba(26,28,26,0.88)', 'National');
+    const nationalTrendMarkup = renderTrendLine(points, 'rgba(26,28,26,0.88)', completionNationLabel);
     svg.innerHTML = `${{axisMarkup}}${{cellMarkup.join('')}}${{nationalTrendMarkup}}${{overlayMarkup}}`;
   }}
   const completionValues = points.map((point) => point.y).sort((left, right) => left - right);
@@ -5224,9 +5269,12 @@ function renderScatterplot() {{
     const gmMeanY = regionalPoints.length ? mean(regionalPoints.map((point) => point.y)) : null;
     const gtdMeanX = gtdRegionalPoints.length ? mean(gtdRegionalPoints.map((point) => point.x)) : null;
     const gtdMeanY = gtdRegionalPoints.length ? mean(gtdRegionalPoints.map((point) => point.y)) : null;
-    summary.textContent =
-      `${{points.length.toLocaleString('en-GB')}} practices currently have both GP survey completion data and a usable ${{metric.title.toLowerCase()}} value in national scope. Median completion is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}. Manchester is ${{gmMeanY === null ? '?' : `${{gmMeanY.toFixed(1)}}% completion`}} at ${{gmMeanX === null ? '?' : activeMetric === 'google' ? gmMeanX.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gmMeanX)}}%` : gmMeanX.toFixed(2)}}; GTD is ${{gtdMeanY === null ? '?' : `${{gtdMeanY.toFixed(1)}}% completion`}} at ${{gtdMeanX === null ? '?' : activeMetric === 'google' ? gtdMeanX.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gtdMeanX)}}%` : gtdMeanX.toFixed(2)}}; New Bank is ${{newBankRegionalPoint === null ? '?' : `${{newBankRegionalPoint.y.toFixed(1)}}% completion`}} at ${{newBankRegionalPoint === null ? '?' : activeMetric === 'google' ? newBankRegionalPoint.x.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(newBankRegionalPoint.x)}}%` : newBankRegionalPoint.x.toFixed(2)}}.`;
-    if (note) note.textContent = 'National mode bins practices into density cells for speed. Overlay dots show the Greater Manchester and GTD mean positions. Completion-rate coverage currently follows the GP Patient Survey practice-level files we have wired, so this view is still England-led rather than truly complete UK-wide. The GP survey score itself is heavily bunched near the top end, mostly around or just below 80%, while Google reviews look much more organically spread. At these demarcations that suggests either practices dropping below roughly 70% overall-good are corrected fairly quickly before they persist in the survey, or the patient survey is not really capturing the lower half of possible experience that clearly exists in review text.';
+    summary.textContent = showNationalOverlaySeries
+      ? `${{points.length.toLocaleString('en-GB')}} practices currently have both survey participation data and a usable ${{metric.title.toLowerCase()}} value in ${{completionNationLabel}}. Median participation is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}. Manchester is ${{gmMeanY === null ? '?' : `${{gmMeanY.toFixed(1)}}% participation`}} at ${{gmMeanX === null ? '?' : activeMetric === 'google' ? gmMeanX.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gmMeanX)}}%` : gmMeanX.toFixed(2)}}; GTD is ${{gtdMeanY === null ? '?' : `${{gtdMeanY.toFixed(1)}}% participation`}} at ${{gtdMeanX === null ? '?' : activeMetric === 'google' ? gtdMeanX.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(gtdMeanX)}}%` : gtdMeanX.toFixed(2)}}; New Bank is ${{newBankRegionalPoint === null ? '?' : `${{newBankRegionalPoint.y.toFixed(1)}}% participation`}} at ${{newBankRegionalPoint === null ? '?' : activeMetric === 'google' ? newBankRegionalPoint.x.toFixed(2) : activeMetric === 'survey' ? `${{Math.round(newBankRegionalPoint.x)}}%` : newBankRegionalPoint.x.toFixed(2)}}.`
+      : `${{points.length.toLocaleString('en-GB')}} practices currently have both survey participation data and a usable ${{metric.title.toLowerCase()}} value in ${{completionNationLabel}}. Median participation is ${{completionMedian === null ? '?' : `${{Math.round(completionMedian)}}%`}}. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}.`;
+    if (note) note.textContent = showNationalOverlaySeries
+      ? 'Nation mode bins practices into density cells for speed and cycles England, Scotland, Wales, then Northern Ireland. Overlay dots keep Manchester, GTD, and New Bank visible as the local reference set. England currently uses GP Patient Survey completion rate; Scotland uses HACE response rate; Wales and Northern Ireland will show once equivalent practice-level rates are wired.'
+      : 'Nation mode bins practices into density cells for speed and cycles England, Scotland, Wales, then Northern Ireland. For Scotland and other non-England nations, the local Manchester/GTD/New Bank overlays are hidden because the participation metric is not directly comparable enough. England currently uses GP Patient Survey completion rate; Scotland uses HACE response rate; Wales and Northern Ireland will show once equivalent practice-level rates are wired.';
   }}
 }}
 
@@ -6711,8 +6759,20 @@ document.getElementById('normalize-gap-toggle').addEventListener('change', (even
 }});
 
 document.querySelectorAll('input[name="completion-scope"]').forEach((input) => {{
+  input.addEventListener('click', (event) => {{
+    if (event.target.value !== 'national') return;
+    if (completionScatterScope !== 'national') return;
+    completionScatterNationIndex = (completionScatterNationIndex + 1) % completionScatterNationOrder.length;
+    updateCompletionScopeControl();
+    renderScatterplot();
+  }});
   input.addEventListener('change', (event) => {{
+    const previousScope = completionScatterScope;
     completionScatterScope = event.target.value;
+    if (completionScatterScope === 'national') {{
+      if (previousScope !== 'national') completionScatterNationIndex = 0;
+      updateCompletionScopeControl();
+    }}
     renderScatterplot();
   }});
 }});
