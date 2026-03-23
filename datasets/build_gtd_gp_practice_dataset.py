@@ -10,6 +10,7 @@ import subprocess
 import sys
 import time
 import zipfile
+from collections import Counter
 from calendar import monthrange
 from dataclasses import dataclass
 from datetime import date, timedelta
@@ -1261,6 +1262,7 @@ def build_national_map_supplementals(
                 "lon": round(coords[1], 6),
                 "postcode": str(source_row.get("postcode") or result.get("postcode") or "").strip(),
                 "nation": str(source_row.get("nation") or "").strip(),
+                "record_scope": "National supplemental",
                 "registered_patient_count": source_row.get("registered_patient_count", ""),
                 "registered_patient_count_source": source_row.get("registered_patient_count_source", ""),
                 "registered_patient_count_source_url": source_row.get("registered_patient_count_source_url", ""),
@@ -1304,6 +1306,226 @@ def write_national_supplemental_script(path: Path, rows: list[dict[str, Any]]) -
             ]
         ),
         encoding="utf-8",
+    )
+
+
+def display_nation_name(nation: str) -> str:
+    normalized = str(nation or "").strip().lower()
+    if normalized == "england":
+        return "England"
+    if normalized == "scotland":
+        return "Scotland"
+    if normalized == "wales":
+        return "Wales"
+    if normalized == "northern_ireland":
+        return "Northern Ireland"
+    return normalized.replace("_", " ").title() if normalized else "Unknown"
+
+
+def source_label_for_patient_count(value: str) -> str:
+    mapping = {
+        "nhs_monthly_direct": "NHS England monthly direct",
+        "nhs_england_patients_registered_at_a_gp_practice": "NHS England practice counts",
+        "nhs_scotland_gp_practice_contact_details_and_list_sizes": "NHS Scotland list sizes",
+        "statswales_hlth0426": "StatsWales HLTH0426",
+        "opendatani_gp_practice_reference_file": "OpenDataNI GP reference",
+    }
+    normalized = str(value or "").strip()
+    return mapping.get(normalized, normalized.replace("_", " ").title() if normalized else "Unknown")
+
+
+def survey_status_label(value: str) -> str:
+    mapping = {
+        "practice_level_missing_in_source": "missing in current source",
+        "practice_metric_missing_in_source": "metric missing in source",
+        "equivalent_identified_not_yet_wired": "equivalent identified, not wired",
+        "discontinued": "discontinued",
+    }
+    normalized = str(value or "").strip()
+    return mapping.get(normalized, normalized.replace("_", " ") if normalized else "Unknown")
+
+
+def deprivation_status_label(value: str) -> str:
+    mapping = {
+        "unsupported_nation": "unsupported nation",
+        "matched_polygon_no_deprivation_index": "polygon matched, no deprivation index",
+        "no_polygon_match": "no polygon match",
+    }
+    normalized = str(value or "").strip()
+    return mapping.get(normalized, normalized.replace("_", " ") if normalized else "Unknown")
+
+
+def html_counter_summary(counter: Counter[str]) -> str:
+    if not counter:
+        return "none"
+    parts = []
+    for label, count in sorted(counter.items(), key=lambda item: (-item[1], item[0])):
+        parts.append(f"{html.escape(label)} {count:,}")
+    return " · ".join(parts)
+
+
+def has_value(value: Any) -> bool:
+    if value is None:
+        return False
+    if isinstance(value, str):
+        return value.strip() != ""
+    return True
+
+
+def positive_number(value: Any) -> bool:
+    try:
+        if value in ("", None):
+            return False
+        return float(value) > 0
+    except (TypeError, ValueError):
+        return False
+
+
+def numeric_value(value: Any) -> float | None:
+    try:
+        if value in ("", None):
+            return None
+        numeric = float(value)
+    except (TypeError, ValueError):
+        return None
+    return numeric if math.isfinite(numeric) else None
+
+
+def build_data_pool_report_html(
+    core_rows: list[dict[str, Any]],
+    national_rows: list[dict[str, Any]],
+    deprivation_lookup: dict[str, dict[str, Any]],
+) -> str:
+    combined_by_code: dict[str, dict[str, Any]] = {}
+    for row in national_rows:
+        code = str(row.get("code", "")).strip()
+        if code:
+            combined_by_code[code] = row
+    for row in core_rows:
+        code = str(row.get("code", "")).strip()
+        if code:
+            combined_by_code[code] = row
+    combined_rows = list(combined_by_code.values())
+    total_practices = len(combined_rows)
+    total_nations = len({str(row.get("nation", "")).strip().lower() for row in combined_rows if str(row.get("nation", "")).strip()})
+    cards: list[str] = []
+    for nation in NATION_ORDER:
+        nation_rows = [row for row in combined_rows if str(row.get("nation", "")).strip().lower() == nation]
+        if not nation_rows:
+            continue
+        practice_total = len(nation_rows)
+        with_coords = sum(1 for row in nation_rows if numeric_value(row.get("lat")) is not None and numeric_value(row.get("lon")) is not None)
+        with_postcode = sum(1 for row in nation_rows if has_value(row.get("postcode")))
+        scope_counts = Counter(str(row.get("record_scope") or "Unknown") for row in nation_rows)
+
+        google_rows = [row for row in nation_rows if positive_number(row.get("google_count")) and has_value(row.get("google_score"))]
+        google_source_counts = Counter(
+            str(row.get("google_source_note") or "Repo review dataset").strip()
+            for row in google_rows
+        )
+
+        survey_overall_rows = [row for row in nation_rows if has_value(row.get("survey_overall_good_percent"))]
+        survey_participation_rows = [row for row in nation_rows if has_value(row.get("survey_completion_rate_percent"))]
+        survey_source_counts = Counter(
+            str(row.get("patient_survey_name") or "Unknown survey").strip()
+            for row in nation_rows
+            if has_value(row.get("survey_overall_good_percent")) or has_value(row.get("survey_completion_rate_percent"))
+        )
+        survey_issue_counts = Counter(
+            survey_status_label(str(row.get("patient_survey_status") or "").strip())
+            for row in nation_rows
+            if str(row.get("patient_survey_status") or "").strip() not in ("", "practice_level_available")
+        )
+
+        patient_rows = [row for row in nation_rows if positive_number(row.get("registered_patient_count"))]
+        patient_total = 0
+        for row in patient_rows:
+            try:
+                patient_total += int(float(row.get("registered_patient_count")))
+            except (TypeError, ValueError):
+                continue
+        patient_source_counts = Counter(
+            source_label_for_patient_count(str(row.get("registered_patient_count_source") or ""))
+            for row in patient_rows
+        )
+
+        lookup_rows = [deprivation_lookup.get(str(row.get("code", "")).strip()) for row in nation_rows]
+        lookup_rows = [row for row in lookup_rows if isinstance(row, dict)]
+        deprivation_rows = [row for row in lookup_rows if has_value(row.get("imd_decile"))]
+        deprivation_issue_counts = Counter(
+            deprivation_status_label(str(row.get("lookup_status") or "").strip())
+            for row in lookup_rows
+            if str(row.get("lookup_status") or "").strip() not in ("", "matched_imd_2025_england")
+        )
+        missing_lookup_count = practice_total - len(lookup_rows)
+        if missing_lookup_count > 0:
+            deprivation_issue_counts["no cached lookup"] += missing_lookup_count
+
+        items = [
+            (
+                "Practice info",
+                f"{practice_total:,} records · {with_coords:,} with coordinates · {with_postcode:,} with postcode · {html_counter_summary(scope_counts)}",
+            ),
+            (
+                "Google",
+                f"{len(google_rows):,} with usable rating/count · {practice_total - len(google_rows):,} missing or unusable · {html_counter_summary(google_source_counts)}",
+            ),
+            (
+                "Surveys",
+                f"{len(survey_overall_rows):,} with overall score · {len(survey_participation_rows):,} with participation/completion · {html_counter_summary(survey_source_counts)}",
+            ),
+            (
+                "Survey issues",
+                html_counter_summary(survey_issue_counts),
+            ),
+            (
+                "Patient counts",
+                f"{len(patient_rows):,} with counts covering {patient_total:,} patients · {html_counter_summary(patient_source_counts)}",
+            ),
+            (
+                "Deprivation",
+                f"{len(deprivation_rows):,} with usable decile · {html_counter_summary(deprivation_issue_counts)}",
+            ),
+        ]
+        item_markup = "".join(
+            f"<li><strong>{html.escape(label)}</strong><span>{value}</span></li>"
+            for label, value in items
+        )
+        cards.append(
+            "\n".join(
+                [
+                    '<article class="data-pool-card">',
+                    f"  <h3>{html.escape(display_nation_name(nation))}</h3>",
+                    f'  <p class="data-pool-kicker">{practice_total:,} practices currently loaded into this page</p>',
+                    f'  <ul class="data-pool-list">{item_markup}</ul>',
+                    "</article>",
+                ]
+            )
+        )
+
+    summary_text = (
+        f"{total_practices:,} unique practices across {total_nations} nations are currently loaded into this page. "
+        "Counts below reflect what this build can actually use right now, including missing data and lookup failure states."
+    )
+    footnote = (
+        "Survey participation means GP Patient Survey completion in England and HACE response rate in Scotland. "
+        "National deprivation is currently English IMD only: Wales can retain polygon matches without a comparable index, "
+        "while Scotland and Northern Ireland remain unsupported until equivalent sources are wired."
+    )
+    return "\n".join(
+        [
+            '<details class="panel comparison-panel data-pool-panel">',
+            '  <summary>',
+            '    <span>Data Coverage by Nation</span>',
+            '    <small>Expand for source coverage, gaps, and lookup states</small>',
+            '  </summary>',
+            f'  <p class="chart-note">{html.escape(summary_text)}</p>',
+            '  <div class="data-pool-grid">',
+            *cards,
+            '  </div>',
+            f'  <p class="chart-note data-pool-footnote">{html.escape(footnote)}</p>',
+            '</details>',
+        ]
     )
 
 
@@ -1765,6 +1987,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "lon": row["longitude"],
                 "postcode": row["postcode"],
                 "nation": nation,
+                "record_scope": "Manchester core dataset",
                 "gtd": row["gtd_managed"],
                 "management_company": row.get("management_company_name", "") or ("GTD Healthcare" if row["gtd_managed"] else ""),
                 "affiliated_group": row.get("affiliated_group_name", ""),
@@ -1797,8 +2020,11 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "patient_survey_url": survey_metadata.get("patient_survey_url", "https://www.gp-patient.co.uk"),
                 "patient_survey_note": survey_metadata.get("patient_survey_note", ""),
                 "registered_patient_count": row.get("registered_patient_count", ""),
+                "registered_patient_count_source": row.get("registered_patient_count_source", ""),
             }
         )
+
+    data_pool_report_html = build_data_pool_report_html(markers, national_supplementals, all_practice_deprivation)
 
     patient_change_analysis = build_patient_change_analysis(
         markers,
@@ -1812,7 +2038,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Manchester GPs' Reviews</title>
+<title>Manchester GPs' Reviews Map</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
@@ -2608,6 +2834,75 @@ body {{
   font-size: 15px;
   line-height: 1.12;
 }}
+.data-pool-panel {{
+  display: grid;
+  gap: 12px;
+}}
+.data-pool-panel summary {{
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}}
+.data-pool-panel summary::-webkit-details-marker {{
+  display: none;
+}}
+.data-pool-panel summary small {{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(26, 28, 26, 0.68);
+}}
+.data-pool-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 10px;
+}}
+.data-pool-card {{
+  border: 1px solid rgba(26, 28, 26, 0.12);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.72);
+  padding: 12px 14px;
+}}
+.data-pool-card h3 {{
+  margin: 0 0 6px;
+  font-size: 16px;
+}}
+.data-pool-kicker {{
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: rgba(26, 28, 26, 0.68);
+}}
+.data-pool-list {{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}}
+.data-pool-list li {{
+  display: grid;
+  gap: 2px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(26, 28, 26, 0.08);
+}}
+.data-pool-list li:first-child {{
+  padding-top: 0;
+  border-top: 0;
+}}
+.data-pool-list strong {{
+  font-size: 12px;
+  color: rgba(26, 28, 26, 0.7);
+}}
+.data-pool-list span {{
+  font-size: 13px;
+  line-height: 1.45;
+}}
+.data-pool-footnote {{
+  margin-bottom: 0;
+}}
 .place-benchmark-counts {{
   display: flex;
   flex-wrap: wrap;
@@ -2804,7 +3099,7 @@ body {{
         <button type="button" class="legend-collapse" id="legend-collapse" aria-pressed="false" title="Collapse sidebar"><span>&lsaquo;</span></button>
       </div>
       <div class="legend-intro">
-        <h1>Manchester GPs' Reviews</h1>
+        <h1>Manchester GPs' Reviews Map</h1>
         <p>Manchester: {total_registered_patients:,} &#128101; &middot; {registered_patient_rows} &#127973;</p>
         <p id="national-supplemental-note" class="hint" data-total-patients="{national_registered_patients}" data-total-practices="{len(national_supplementals)}">&#127988; National: {national_registered_patients:,} &#128101; &middot; {len(national_supplementals)} &#127973;</p>
       </div>
@@ -2986,6 +3281,7 @@ body {{
       <p>The practical conclusion is local rather than fatalistic. National context matters, but the strongest actionable result here is that GTD, and especially New Bank, are performing worse than most of the sample even after allowing for deprivation.</p>
       <p>Change across GTD is both plausible and necessary, and in more deprived areas the benefit of improvement is larger because easy access matters most where health need is greatest.</p>
     </section>
+    {data_pool_report_html}
   </div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
