@@ -22,6 +22,7 @@ from urllib.parse import quote, urlencode
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output" / "gtd-greater-manchester-gp-practice-reviews-2026-03-09"
+COMPOSITE_REGION_DEFINITIONS_JSON = BASE_DIR / "config" / "composite_region_definitions.json"
 GP_PATIENT_SURVEY_RAW_DIR = BASE_DIR / "raw" / "gp_patient_survey"
 GOOGLE_REVIEW_RESULTS_JSON = OUTPUT_DIR / "google_maps_recent_reviews.json"
 GTD_TAKEOVER_METADATA_JSON = BASE_DIR / "config" / "gtd_takeover_dates.json"
@@ -39,6 +40,7 @@ GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 from deprivation.practice_deprivation_lookup import load_cached_practice_deprivation_lookup, write_practice_deprivation_lookup
 RADIUS_MILES = 5.0
 RADIUS_METERS = 8046.72
+COMPOSITE_REGION_RADIUS_MILES = 5.0
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0 Safari/537.36"
 
 
@@ -1504,6 +1506,108 @@ def numeric_value(value: Any) -> float | None:
     return numeric if math.isfinite(numeric) else None
 
 
+def top_bottom_fifth_codes(
+    scored_rows: list[tuple[str, float]],
+) -> tuple[list[str], list[str]]:
+    if not scored_rows:
+        return [], []
+    ordered = sorted(scored_rows, key=lambda item: (item[1], item[0]))
+    band_size = max(1, len(ordered) // 5)
+    bottom = [code for code, _score in ordered[:band_size]]
+    top = [code for code, _score in ordered[-band_size:]]
+    return bottom, top
+
+
+def build_composite_region_definitions(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    deduped_rows: list[dict[str, Any]] = []
+    seen_codes: set[str] = set()
+    for row in rows:
+        code = str(row.get("code", "")).strip()
+        lat = numeric_value(row.get("lat"))
+        lon = numeric_value(row.get("lon"))
+        if not code or code in seen_codes or lat is None or lon is None:
+            continue
+        deduped_rows.append(
+            {
+                "code": code,
+                "lat": lat,
+                "lon": lon,
+                "registered_patient_count": numeric_value(row.get("registered_patient_count")) or 0.0,
+            }
+        )
+        seen_codes.add(code)
+
+    practice_density_scores: list[tuple[str, float]] = []
+    patient_density_scores: list[tuple[str, float]] = []
+    for row in deduped_rows:
+        nearby_practices = 0
+        for other in deduped_rows:
+            if other["code"] == row["code"]:
+                continue
+            if miles_between(row["lat"], row["lon"], other["lat"], other["lon"]) > COMPOSITE_REGION_RADIUS_MILES:
+                continue
+            nearby_practices += 1
+        practice_density_scores.append((row["code"], float(nearby_practices)))
+        if row["registered_patient_count"] > 0:
+            patient_density_scores.append((row["code"], float(row["registered_patient_count"])))
+
+    sparse_codes, dense_codes = top_bottom_fifth_codes(practice_density_scores)
+    low_patient_density_codes, high_patient_density_codes = top_bottom_fifth_codes(patient_density_scores)
+
+    return [
+        {
+            "label": "Rural / Sparse",
+            "kind": "practice_density",
+            "accent": "#466c5c",
+            "codes": sparse_codes,
+            "note": f"Bottom fifth by nearby-practice count within {COMPOSITE_REGION_RADIUS_MILES:g} miles.",
+        },
+        {
+            "label": "Urban / Dense",
+            "kind": "practice_density",
+            "accent": "#a25b2a",
+            "codes": dense_codes,
+            "note": f"Top fifth by nearby-practice count within {COMPOSITE_REGION_RADIUS_MILES:g} miles.",
+        },
+        {
+            "label": "Low list size",
+            "kind": "patient_density",
+            "accent": "#4b6cb7",
+            "codes": low_patient_density_codes,
+            "note": "Bottom fifth by registered patient count per practice.",
+        },
+        {
+            "label": "High list size",
+            "kind": "patient_density",
+            "accent": "#9b3d5d",
+            "codes": high_patient_density_codes,
+            "note": "Top fifth by registered patient count per practice.",
+        },
+    ]
+
+
+def load_composite_region_definitions(
+    path: Path = COMPOSITE_REGION_DEFINITIONS_JSON,
+) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return payload if isinstance(payload, list) else []
+
+
+def write_composite_region_definitions(
+    rows: list[dict[str, Any]],
+    path: Path = COMPOSITE_REGION_DEFINITIONS_JSON,
+) -> list[dict[str, Any]]:
+    definitions = build_composite_region_definitions(rows)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(definitions, indent=2), encoding="utf-8")
+    return definitions
+
+
 def build_data_pool_report_html(
     core_rows: list[dict[str, Any]],
     national_rows: list[dict[str, Any]],
@@ -2035,7 +2139,12 @@ def build_patient_change_analysis(
     }
 
 
-def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
+def write_map(
+    path: Path,
+    rows: list[dict[str, Any]],
+    *,
+    refresh_composite_region_cache: bool = False,
+) -> None:
     rows = apply_gtd_takeover_metadata(rows)
     survey_by_code = load_gp_patient_survey_index()
     survey_branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
@@ -2142,6 +2251,19 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
 
     data_pool_report_html = build_data_pool_report_html(markers, national_supplementals, all_practice_deprivation)
     client_markers = [build_client_map_row(row) for row in markers]
+    combined_client_rows_by_code: dict[str, dict[str, Any]] = {}
+    for row in client_national_supplementals:
+        code = str(row.get("code", "")).strip()
+        if code:
+            combined_client_rows_by_code[code] = row
+    for row in client_markers:
+        code = str(row.get("code", "")).strip()
+        if code:
+            combined_client_rows_by_code[code] = row
+    combined_client_rows = list(combined_client_rows_by_code.values())
+    composite_region_definitions = load_composite_region_definitions()
+    if refresh_composite_region_cache or not composite_region_definitions:
+        composite_region_definitions = write_composite_region_definitions(combined_client_rows)
 
     patient_change_analysis = build_patient_change_analysis(
         markers,
@@ -2316,6 +2438,9 @@ body {{
   background: rgba(15, 94, 156, 0.06);
 }}
 #completion-scope-control {{
+  grid-template-columns: 1fr 1fr;
+}}
+#rating-survey-mode-control {{
   grid-template-columns: 1fr 1fr;
 }}
 #size-mode-control {{
@@ -2706,6 +2831,11 @@ body {{
   line-height: 1.3;
 }}
 #scatterplot {{
+  width: 100%;
+  height: 320px;
+  display: block;
+}}
+#rating-survey-chart {{
   width: 100%;
   height: 320px;
   display: block;
@@ -3399,6 +3529,24 @@ body {{
       </div>
     </section>
     <section class="panel comparison-panel">
+      <div class="panel-heading-row">
+        <h2 id="rating-survey-heading">Google Rating vs Patient Survey</h2>
+        <div class="treemap-mode-control">
+          <div class="segmented" id="rating-survey-mode-control">
+            <label title="Benchmark regions"><input type="radio" name="rating-survey-mode" value="regions" checked><span>Regions</span><span class="segmented-short">R</span></label>
+            <label title="Individual practices"><input type="radio" name="rating-survey-mode" value="practices"><span>Practices</span><span class="segmented-short">P</span></label>
+          </div>
+        </div>
+      </div>
+      <p id="rating-survey-summary" class="hint"></p>
+      <div class="chart-wrap">
+        <svg id="rating-survey-chart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet" aria-labelledby="rating-survey-title" role="img">
+          <title id="rating-survey-title">Google rating against patient survey overall good score</title>
+        </svg>
+      </div>
+      <p id="rating-survey-note" class="chart-note">This is just an eyeball correlation check across all loaded rows with both values. England and Scotland are mixed here on purpose, even though GPPS and HACE are not identical measures.</p>
+    </section>
+    <section class="panel comparison-panel">
       <h2>Conclusions</h2>
       <p>This page suggests GTD is the weakest-performing management group in this catchment, with New Bank sitting at or near the bottom even within the deprived groups it belongs to. On both public reviews and GP Patient Survey measures, GTD has too many poor-performing practices relative to the wider sample.</p>
       <p>The Google-versus-survey gap matters because GTD practices often show a larger mismatch than typical surgeries, while survey return rates are low enough to leave room for hidden dissatisfaction. New Bank looks off-curve rather than merely unlucky within the normal local range.</p>
@@ -3419,6 +3567,7 @@ const rows = {json.dumps(client_markers)};
 const nationalSupplementals = Array.isArray(window.NATIONAL_PRACTICE_SUPPLEMENTALS) ? window.NATIONAL_PRACTICE_SUPPLEMENTALS : [];
 const nationOrder = {json.dumps(NATION_ORDER)};
 const cityCatchments = {json.dumps(CITY_CATCHMENTS)};
+const compositeRegionDefinitions = {json.dumps(composite_region_definitions)};
 const northSouthDivide = {{
   west: {{ lat: 51.62, lon: -3.05 }},
   east: {{ lat: 52.98, lon: 0.52 }},
@@ -3487,6 +3636,7 @@ const completionScatterNationOrder = (() => {{
   }}));
 }})();
 let completionScatterNationIndex = 0;
+let ratingSurveyMode = 'regions';
 let showCityCircles = true;
 let sampleCircleArmed = false;
 let sampleCircleRadiusMiles = 6;
@@ -4517,6 +4667,56 @@ function linearRegression(points) {{
   return {{ slope, intercept }};
 }}
 
+function quadraticRegression(points) {{
+  if (points.length < 3) return null;
+  let n = 0;
+  let sx = 0;
+  let sx2 = 0;
+  let sx3 = 0;
+  let sx4 = 0;
+  let sy = 0;
+  let sxy = 0;
+  let sx2y = 0;
+  points.forEach((point) => {{
+    const x = Number(point.x);
+    const y = Number(point.y);
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+    const x2 = x * x;
+    n += 1;
+    sx += x;
+    sx2 += x2;
+    sx3 += x2 * x;
+    sx4 += x2 * x2;
+    sy += y;
+    sxy += x * y;
+    sx2y += x2 * y;
+  }});
+  if (n < 3) return null;
+  const matrix = [
+    [sx4, sx3, sx2, sx2y],
+    [sx3, sx2, sx, sxy],
+    [sx2, sx, n, sy],
+  ];
+  for (let pivot = 0; pivot < 3; pivot += 1) {{
+    let bestRow = pivot;
+    for (let row = pivot + 1; row < 3; row += 1) {{
+      if (Math.abs(matrix[row][pivot]) > Math.abs(matrix[bestRow][pivot])) bestRow = row;
+    }}
+    if (Math.abs(matrix[bestRow][pivot]) < 1e-9) return null;
+    if (bestRow !== pivot) [matrix[pivot], matrix[bestRow]] = [matrix[bestRow], matrix[pivot]];
+    const pivotValue = matrix[pivot][pivot];
+    for (let col = pivot; col < 4; col += 1) matrix[pivot][col] /= pivotValue;
+    for (let row = 0; row < 3; row += 1) {{
+      if (row === pivot) continue;
+      const factor = matrix[row][pivot];
+      for (let col = pivot; col < 4; col += 1) matrix[row][col] -= factor * matrix[pivot][col];
+    }}
+  }}
+  const [a, b, c] = matrix.map((row) => row[3]);
+  if (![a, b, c].every((value) => Number.isFinite(value))) return null;
+  return {{ a, b, c }};
+}}
+
 function clamp01(value) {{
   return Math.max(0, Math.min(1, value));
 }}
@@ -4656,6 +4856,14 @@ function northSouthBucketForRow(row) {{
 }}
 
 const allKnownRows = rows.concat(nationalSupplementals);
+const allKnownRowsByCode = (() => {{
+  const grouped = new Map();
+  allKnownRows.forEach((row) => {{
+    const code = String(row?.code || '').trim();
+    if (code && !grouped.has(code)) grouped.set(code, row);
+  }});
+  return grouped;
+}})();
 const totalKnownGoogleReviews = allKnownRows.reduce((sum, row) => {{
   const count = numericOrNull(row?.google_count);
   return sum + (count !== null && count > 0 ? count : 0);
@@ -4677,6 +4885,16 @@ const northSouthRows = (() => {{
     if (bucket && grouped.has(bucket)) {{
       grouped.get(bucket).push(row);
     }}
+  }});
+  return grouped;
+}})();
+const compositeRegionRowsByLabel = (() => {{
+  const grouped = new Map();
+  compositeRegionDefinitions.forEach((definition) => {{
+    const subset = (definition?.codes || [])
+      .map((code) => allKnownRowsByCode.get(String(code || '').trim()))
+      .filter(Boolean);
+    grouped.set(definition.label, subset);
   }});
   return grouped;
 }})();
@@ -4945,7 +5163,7 @@ function renderPlaceBenchmarks() {{
 
   heading.textContent = 'Nation and City Benchmarks';
   if (nationHeading) nationHeading.textContent = 'Nations';
-  if (cityHeading) cityHeading.textContent = 'UK city circles';
+  if (cityHeading) cityHeading.textContent = 'Cities and composites';
   const sampleRows = sampleCircleCenter
     ? rowsWithinCircle(allKnownRows, sampleCircleCenter.lat, sampleCircleCenter.lon, sampleCircleRadiusMiles)
     : [];
@@ -4979,6 +5197,13 @@ function renderPlaceBenchmarks() {{
         return regionCardMarkup(label, subset, accent);
       }})
     )
+    .concat(
+      compositeRegionDefinitions.map((definition) => {{
+        const subset = compositeRegionRowsByLabel.get(definition.label) || [];
+        if (!subset.length) return '';
+        return regionCardMarkup(definition.label, subset, definition.accent);
+      }})
+    )
     .filter(Boolean)
     .join('');
 
@@ -4992,7 +5217,7 @@ function renderPlaceBenchmarks() {{
 
   nationGrid.innerHTML = nationCards || '<p class="hint">No nation summaries are available yet.</p>';
   cityGrid.innerHTML = (sampleCard + cityCards) || '<p class="hint">No city-circle summaries are available yet.</p>';
-  note.innerHTML = `${{allKnownRows.length.toLocaleString('en-GB')}} practices · ${{totalKnownGoogleReviews.toLocaleString('en-GB')}} Google reviews loaded overall.${{sampleRows.length ? ` Custom sample: ${{sampleRows.length.toLocaleString('en-GB')}} practices.` : ''}} <span class="hint">Footnote: Wales and Northern Ireland do not currently have comparable national practice-level survey feeds here. Some Welsh practices appear to publish local survey results, but there is no standardized national dashboard, and forcing those into the same pool would be easy to misread, especially given the limits of England's own standard survey.</span>`;
+  note.innerHTML = `${{allKnownRows.length.toLocaleString('en-GB')}} practices · ${{totalKnownGoogleReviews.toLocaleString('en-GB')}} Google reviews loaded overall.${{sampleRows.length ? ` Custom sample: ${{sampleRows.length.toLocaleString('en-GB')}} practices.` : ''}} Sparse/dense composites use bottom/top fifths by nearby-practice count within ${{Number({COMPOSITE_REGION_RADIUS_MILES}).toFixed(Number({COMPOSITE_REGION_RADIUS_MILES}) % 1 === 0 ? 0 : 1)}} miles, leaving the middle three-fifths neutral. List-size composites are separate: they use bottom/top fifths by registered patient count per practice, not local area population density, and rows without a patient count are excluded. <span class="hint">Footnote: Wales and Northern Ireland do not currently have comparable national practice-level survey feeds here. Some Welsh practices appear to publish local survey results, but there is no standardized national dashboard, and forcing those into the same pool would be easy to misread, especially given the limits of England's own standard survey.</span>`;
 }}
 
 function metricValues(rowsSubset, metricName, extractor = null) {{
@@ -6161,6 +6386,264 @@ function renderNationalDeprivationChart() {{
     `${{points.length}} practices currently contribute to this national contrast panel. Cells are showing ${{nationalDeprivationUsePopulation ? 'summed registered patients' : 'practice counts'}} across a total of ${{formatAggregateLong(totalAggregate)}}. ${{allLookupRows.length}} loaded rows have some cached deprivation lookup state, and ${{matchedRows.length}} have numeric IMD deciles. The densest deprivation column is decile ${{topColumn ? topColumn[0] : '?'}} with ${{topColumn ? formatAggregateLong(topColumn[1]) : '0 practices'}}. ${{polygonOnlyCount}} rows currently only have polygon identity without a joined deprivation index, and ${{unsupportedCount}} are in nations not yet wired into this lookup.`;
 }}
 
+function nationScatterColor(nation) {{
+  const normalized = String(nation || '').trim().toLowerCase();
+  if (normalized === 'england') return '#1f5f8b';
+  if (normalized === 'scotland') return '#0c8b68';
+  if (normalized === 'wales') return '#b14d5c';
+  if (normalized === 'northern_ireland') return '#7b5ea7';
+  return '#6b7280';
+}}
+
+function nationBenchmarkAccent(nation) {{
+  const normalized = String(nation || '').trim().toLowerCase();
+  if (normalized === 'england') return '#8d3c17';
+  if (normalized === 'scotland') return '#2f6fa5';
+  if (normalized === 'wales') return '#3f7d4c';
+  if (normalized === 'northern_ireland') return '#6b4f9d';
+  return '#4b5563';
+}}
+
+function renderRatingVsSurveyChart() {{
+  const heading = document.getElementById('rating-survey-heading');
+  const summary = document.getElementById('rating-survey-summary');
+  const note = document.getElementById('rating-survey-note');
+  const svg = document.getElementById('rating-survey-chart');
+  if (!heading || !summary || !note || !svg) return;
+
+  heading.textContent = 'Google Rating vs Patient Survey';
+  const combinedRows = rows.concat(nationalSupplementals);
+  const practicePoints = combinedRows
+    .map((row) => {{
+      const google = numericOrNull(row.google_score);
+      const survey = numericOrNull(row.survey_overall_good_percent);
+      if (google === null || survey === null) return null;
+      return {{ row, x: google, y: survey }};
+    }})
+    .filter(Boolean);
+
+  const benchmarkPoints = [
+    ...nationOrder
+      .map((nation) => {{
+        const subset = allKnownRows.filter((row) => String(row?.nation || '').trim().toLowerCase() === nation);
+        if (!subset.length) return null;
+        const stats = regionCardStats(subset);
+        if (stats.google.value === null || stats.survey.value === null) return null;
+        return {{
+          label: displayNationName(nation),
+          kind: 'nation',
+          x: stats.google.value,
+          y: stats.survey.value,
+          color: nationBenchmarkAccent(nation),
+          practiceCount: stats.practiceCount,
+        }};
+      }})
+      .filter(Boolean),
+    ...cityCatchments
+      .map((city) => {{
+        const subset = cityRowsByCatchment.get(city.name) || [];
+        if (!subset.length) return null;
+        const stats = regionCardStats(subset);
+        if (stats.google.value === null || stats.survey.value === null) return null;
+        return {{
+          label: city.name,
+          kind: 'city',
+          x: stats.google.value,
+          y: stats.survey.value,
+          color: city.accent,
+          practiceCount: stats.practiceCount,
+        }};
+      }})
+      .filter(Boolean),
+    ...['North', 'South']
+      .map((label) => {{
+        const subset = northSouthRows.get(label) || [];
+        if (!subset.length) return null;
+        const stats = regionCardStats(subset);
+        if (stats.google.value === null || stats.survey.value === null) return null;
+        return {{
+          label,
+          kind: 'region',
+          x: stats.google.value,
+          y: stats.survey.value,
+          color: label === 'North' ? '#315f8f' : '#8c5a2a',
+          practiceCount: stats.practiceCount,
+        }};
+      }})
+      .filter(Boolean),
+    ...compositeRegionDefinitions
+      .map((definition) => {{
+        const subset = compositeRegionRowsByLabel.get(definition.label) || [];
+        if (!subset.length) return null;
+        const stats = regionCardStats(subset);
+        if (stats.google.value === null || stats.survey.value === null) return null;
+        return {{
+          label: definition.label,
+          kind: definition.kind || 'region',
+          x: stats.google.value,
+          y: stats.survey.value,
+          color: definition.accent || '#4b5563',
+          practiceCount: stats.practiceCount,
+        }};
+      }})
+      .filter(Boolean),
+    ...(sampleCircleCenter
+      ? (() => {{
+          const subset = rowsWithinCircle(allKnownRows, sampleCircleCenter.lat, sampleCircleCenter.lon, sampleCircleRadiusMiles);
+          if (!subset.length) return [];
+          const stats = regionCardStats(subset);
+          if (stats.google.value === null || stats.survey.value === null) return [];
+          return [{{
+            label: `Custom sample (${{sampleCircleRadiusMiles.toFixed(sampleCircleRadiusMiles % 1 === 0 ? 0 : 1)}}mi)`,
+            kind: 'sample',
+            x: stats.google.value,
+            y: stats.survey.value,
+            color: '#161816',
+            practiceCount: stats.practiceCount,
+          }}];
+        }})()
+      : []),
+  ];
+
+  const showPractices = ratingSurveyMode === 'practices';
+  const displayPoints = showPractices ? practicePoints : benchmarkPoints;
+
+  if (!practicePoints.length && !benchmarkPoints.length) {{
+    svg.innerHTML = '';
+    summary.textContent = 'No loaded rows currently have both a usable Google rating and a survey/equivalent overall-good score.';
+    return;
+  }}
+  if (!displayPoints.length) {{
+    svg.innerHTML = '';
+    summary.textContent = showPractices
+      ? 'No loaded practice rows currently have both a usable Google rating and a survey/equivalent overall-good score.'
+      : 'No benchmark regions currently have both a usable Google rating and a survey/equivalent overall-good score.';
+    return;
+  }}
+
+  const width = 920;
+  const height = 320;
+  const margin = {{ top: 28, right: 18, bottom: 42, left: 52 }};
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const googleValues = displayPoints.map((point) => point.x);
+  const surveyValues = displayPoints.map((point) => point.y);
+  const rawXMin = Math.min(...googleValues);
+  const rawXMax = Math.max(...googleValues);
+  const rawYMin = Math.min(...surveyValues);
+  const rawYMax = Math.max(...surveyValues);
+  const xPad = Math.max(0.1, (rawXMax - rawXMin) * 0.08);
+  const yPad = Math.max(2, (rawYMax - rawYMin) * 0.08);
+  const xMin = showPractices ? 0 : Math.max(0, rawXMin - xPad);
+  const xMax = showPractices ? 5 : Math.min(5, rawXMax + xPad);
+  const yMin = showPractices ? 0 : Math.max(0, rawYMin - yPad);
+  const yMax = showPractices ? 100 : Math.min(100, rawYMax + yPad);
+  const xScale = (value) => margin.left + ((value - xMin) / (xMax - xMin)) * plotWidth;
+  const yScale = (value) => margin.top + plotHeight - ((value - yMin) / (yMax - yMin)) * plotHeight;
+  const xTicks = showPractices ? [0, 1, 2, 3, 4, 5] : (() => {{
+    const step = (xMax - xMin) <= 1.5 ? 0.25 : (xMax - xMin) <= 3 ? 0.5 : 1;
+    const ticks = [];
+    for (let tick = Math.ceil(xMin / step) * step; tick <= xMax + 0.0001; tick += step) {{
+      ticks.push(Number(tick.toFixed(2)));
+    }}
+    return ticks;
+  }})();
+  const yTicks = showPractices ? [0, 20, 40, 60, 80, 100] : (() => {{
+    const step = (yMax - yMin) <= 20 ? 5 : (yMax - yMin) <= 50 ? 10 : 20;
+    const ticks = [];
+    for (let tick = Math.ceil(yMin / step) * step; tick <= yMax + 0.0001; tick += step) {{
+      ticks.push(Number(tick.toFixed(2)));
+    }}
+    return ticks;
+  }})();
+  const trend = showPractices ? quadraticRegression(displayPoints) : null;
+  const trendMarkup = trend
+    ? (() => {{
+        const steps = 48;
+        const pathParts = [];
+        for (let index = 0; index <= steps; index += 1) {{
+          const xValue = xMin + ((index / steps) * (xMax - xMin));
+          const yValue = (trend.a * xValue * xValue) + (trend.b * xValue) + trend.c;
+          const clampedY = Math.max(yMin, Math.min(yMax, yValue));
+          const command = index === 0 ? 'M' : 'L';
+          pathParts.push(`${{command}}${{xScale(xValue).toFixed(2)}} ${{yScale(clampedY).toFixed(2)}}`);
+        }}
+        return `
+          <path d="${{pathParts.join(' ')}}" fill="none" stroke="rgba(26,28,26,0.78)" stroke-width="2.6" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round">
+            <title>Overall fitted quadratic trend curve</title>
+          </path>
+        `;
+      }})()
+    : '';
+  const pointMarkup = showPractices ? practicePoints.map((point) => {{
+    const nation = String(point.row.nation || '').trim().toLowerCase();
+    const isHighlighted = point.row.code === NEW_BANK_CODE || point.row.gtd || point.row.management_company === BASELINE_MANAGEMENT_COMPANY;
+    const radius = point.row.code === NEW_BANK_CODE ? 5.8 : isHighlighted ? 4.1 : 2.8;
+    const fill = nationScatterColor(nation);
+    const stroke = point.row.code === NEW_BANK_CODE ? '#7b3fb2' : isHighlighted ? '#1a1c1a' : 'rgba(26,28,26,0.14)';
+    const strokeWidth = point.row.code === NEW_BANK_CODE ? 2.1 : isHighlighted ? 1.2 : 0.6;
+    const opacity = isHighlighted ? 0.9 : 0.28;
+    return `
+      <circle cx="${{xScale(point.x).toFixed(2)}}" cy="${{yScale(point.y).toFixed(2)}}" r="${{radius.toFixed(2)}}" fill="${{fill}}" fill-opacity="${{opacity.toFixed(2)}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}">
+        <title>${{point.row.name}} · ${{displayNationName(point.row.nation)}} · Google ${{point.x.toFixed(1)}} · Survey ${{Math.round(point.y)}}%</title>
+      </circle>
+    `;
+  }}).join('') : '';
+  const benchmarkMarkup = benchmarkPoints.map((point) => {{
+    const size = point.kind === 'nation' ? 14 : point.kind === 'city' ? 12 : 12.5;
+    const labelDx = point.kind === 'nation' ? 10 : 9;
+    const labelDy = point.kind === 'nation' ? -10 : -8;
+    return `
+      <rect x="${{(xScale(point.x) - size / 2).toFixed(2)}}" y="${{(yScale(point.y) - size / 2).toFixed(2)}}" width="${{size.toFixed(2)}}" height="${{size.toFixed(2)}}" rx="1.4" fill="${{point.color}}" fill-opacity="0.96" stroke="#ffffff" stroke-width="1.6">
+        <title>${{point.label}} benchmark · Google ${{point.x.toFixed(2)}} · Survey ${{Math.round(point.y)}}% · ${{point.practiceCount.toLocaleString('en-GB')}} practices</title>
+      </rect>
+      ${{
+        showPractices
+          ? ''
+          : `<text x="${{(xScale(point.x) + labelDx).toFixed(2)}}" y="${{(yScale(point.y) + labelDy).toFixed(2)}}" font-size="${{point.kind === 'nation' ? '11.5' : '10.5'}}" font-weight="700" fill="${{point.color}}" stroke="rgba(255,255,255,0.92)" stroke-width="3" paint-order="stroke fill">${{escapeHtml(point.label)}}</text>`
+      }}
+    `;
+  }}).join('');
+
+  const nationCounts = ['england', 'scotland', 'wales', 'northern_ireland']
+    .map((nation) => {{
+      const count = practicePoints.filter((point) => String(point.row.nation || '').trim().toLowerCase() === nation).length;
+      return count > 0 ? `${{displayNationName(nation)}} ${{count.toLocaleString('en-GB')}}` : '';
+    }})
+    .filter(Boolean)
+    .join(' · ');
+  const rValue = correlation(displayPoints.map((point) => ({{ x: point.x, y: point.y }})));
+  const formula = trend
+    ? `survey ≈ ${{trend.a >= 0 ? '' : '-'}}${{Math.abs(trend.a).toFixed(2)}}·rating² ${{trend.b >= 0 ? '+ ' : '- '}}${{Math.abs(trend.b).toFixed(2)}}·rating ${{trend.c >= 0 ? '+ ' : '- '}}${{Math.abs(trend.c).toFixed(2)}}`
+    : 'no curve fit in region mode';
+  summary.textContent =
+    showPractices
+      ? `${{practicePoints.length.toLocaleString('en-GB')}} practice entries currently have both a usable Google rating and a survey/equivalent overall-good score. Pearson r is ${{rValue === null ? '?' : rValue.toFixed(2)}}. ${{nationCounts}}. ${{benchmarkPoints.length}} region overlays are drawn as larger squares.`
+      : `${{benchmarkPoints.length}} benchmark regions are currently shown. Pearson r between those aggregate points is ${{rValue === null ? '?' : rValue.toFixed(2)}}.`;
+  note.textContent = showPractices
+    ? `Practice mode shows all loaded rows on the full Google 0-5 and survey 0-100 scales, with larger squares for nation, city, North/South, and custom-sample aggregates. Quadratic fit: ${{formula}}.`
+    : 'Region mode shows only the benchmark aggregates from the Nation and City panel plus North/South and any custom sample, with axes fitted around their local spread. No curve fit is drawn in this mode.';
+
+  svg.innerHTML = `
+    <rect x="0" y="0" width="${{width}}" height="${{height}}" fill="transparent"></rect>
+    ${{yTicks.map((tick) => `
+      <line x1="${{margin.left}}" y1="${{yScale(tick)}}" x2="${{width - margin.right}}" y2="${{yScale(tick)}}" stroke="rgba(26,28,26,0.10)" />
+      <text x="${{margin.left - 8}}" y="${{yScale(tick) + 4}}" text-anchor="end" font-size="11" fill="rgba(26,28,26,0.72)">${{tick}}%</text>
+    `).join('')}}
+    ${{xTicks.map((tick) => `
+      <line x1="${{xScale(tick)}}" y1="${{margin.top}}" x2="${{xScale(tick)}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.08)" />
+      <text x="${{xScale(tick)}}" y="${{height - margin.bottom + 18}}" text-anchor="middle" font-size="11" fill="rgba(26,28,26,0.72)">${{tick.toFixed(1)}}</text>
+    `).join('')}}
+    <line x1="${{margin.left}}" y1="${{height - margin.bottom}}" x2="${{width - margin.right}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    <line x1="${{margin.left}}" y1="${{margin.top}}" x2="${{margin.left}}" y2="${{height - margin.bottom}}" stroke="rgba(26,28,26,0.35)" />
+    ${{trendMarkup}}
+    ${{pointMarkup}}
+    ${{benchmarkMarkup}}
+    <text x="${{width / 2}}" y="${{height - 8}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)">Google rating</text>
+    <text x="14" y="${{height / 2}}" text-anchor="middle" font-size="12" fill="rgba(26,28,26,0.78)" transform="rotate(-90 14 ${{height / 2}})">Patient survey overall good</text>
+  `;
+}}
+
 function renderPatientChangeChart() {{
   const svg = document.getElementById('patient-change-chart');
   const summary = document.getElementById('patient-change-summary');
@@ -7183,6 +7666,7 @@ function rerenderAll() {{
   renderPatientChangeChart();
   renderPatientTreemap();
   renderPlaceBenchmarks();
+  renderRatingVsSurveyChart();
   renderComparisons();
 }}
 
@@ -7217,6 +7701,13 @@ document.querySelectorAll('input[name="completion-scope"]').forEach((input) => {
   }});
 }});
 
+document.querySelectorAll('input[name="rating-survey-mode"]').forEach((input) => {{
+  input.addEventListener('change', (event) => {{
+    ratingSurveyMode = event.target.value;
+    renderRatingVsSurveyChart();
+  }});
+}});
+
 document.getElementById('voronoi-toggle').addEventListener('change', (event) => {{
   activeAreaOverlay = event.target.checked ? 'population' : null;
   rerenderAll();
@@ -7237,6 +7728,7 @@ window.addEventListener('resize', () => {{
     renderNationalDeprivationChart();
     renderPatientChangeChart();
     renderPatientTreemap();
+    renderRatingVsSurveyChart();
   }}, 120);
 }});
 
@@ -7384,6 +7876,11 @@ def main() -> int:
     import argparse
     parser = argparse.ArgumentParser(description="Build GTD GP practice dataset")
     parser.add_argument("--fetch", action="store_true", help="Fetch from NHS (manual only); default loads from existing JSON")
+    parser.add_argument(
+        "--refresh-composite-region-cache",
+        action="store_true",
+        help="Recompute and rewrite the checked-in composite region cache.",
+    )
     args = parser.parse_args()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     if args.fetch:
@@ -7403,7 +7900,11 @@ def main() -> int:
     write_json(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.json", rows)
     summary = write_summary(OUTPUT_DIR / "summary.json", rows)
     write_readme(OUTPUT_DIR / "README.md", summary)
-    write_map(OUTPUT_DIR / "map.html", rows)
+    write_map(
+        OUTPUT_DIR / "map.html",
+        rows,
+        refresh_composite_region_cache=args.refresh_composite_region_cache,
+    )
     print(f"Wrote {len(rows)} rows to {OUTPUT_DIR}")
     return 0
 
