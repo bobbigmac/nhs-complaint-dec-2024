@@ -681,6 +681,8 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "google_maps_match_score",
         "google_recent_reviews_captured",
         "google_review_text_file",
+        "google_review_scan_status",
+        "google_review_has_listing",
         "trustpilot_score",
         "trustpilot_review_count",
         "trustpilot_source_url",
@@ -1290,6 +1292,8 @@ def build_national_map_supplementals(
                 "google_count": google_count,
                 "google_source_note": google_source_note,
                 "google_url": google_maps_url,
+                "google_review_scan_status": str(result.get("scan_status", "") or ""),
+                "google_review_has_listing": "true" if (str(result.get("page_kind", "")).strip() == "place" or google_maps_url or result.get("google_maps_title")) else "false",
                 "survey_overall_good_percent": survey_score,
                 "survey_overall_good_ics_percent": "",
                 "survey_overall_good_national_percent": "",
@@ -1386,6 +1390,22 @@ def survey_missing_display(label: str, status: str) -> str:
     return f"{label}: ?"
 
 
+def google_missing_display(has_listing: Any, scan_status: Any) -> str:
+    status = str(scan_status or "").strip()
+    listing = str(has_listing or "").strip().lower() == "true"
+    if status == "ok_no_review_panel":
+        return "Google: listing found, no review panel"
+    if status == "no_rating_found":
+        return "Google: listing found, no rating shown"
+    if status in {"sponsored_place_match", "sponsored_search_results_only", "wrong_place_match", "manual_review_search_result_only"}:
+        return "Google: listing/search result needs manual review"
+    if status == "skipped_review_count_threshold":
+        return "Google: listing found, review scan skipped"
+    if listing:
+        return "Google: listing found, no usable score"
+    return "Google: no usable listing found"
+
+
 def deprivation_status_label(value: str) -> str:
     mapping = {
         "unsupported_nation": "unsupported nation",
@@ -1432,6 +1452,7 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "google_count": row.get("google_count", ""),
         "google_text_url": row.get("google_text_file", ""),
         "google_maps_url": row.get("google_url", ""),
+        "google_missing_text": google_missing_display(row.get("google_review_has_listing", ""), row.get("google_review_scan_status", "")),
         "nhs_url": row.get("nhs_url", ""),
         "gtd_url": row.get("gtd_url", ""),
         "gtd_takeover_date": row.get("gtd_takeover_date", ""),
@@ -2088,6 +2109,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
                 "google_count": row["google_review_count"],
                 "google_source_note": row.get("google_review_source_note", ""),
                 "google_text_file": row.get("google_review_text_file", ""),
+                "google_review_scan_status": row.get("google_review_scan_status", ""),
+                "google_review_has_listing": row.get("google_review_has_listing", ""),
                 "nhs_url": row["nhs_profile_url"],
                 "gtd_url": row["gtd_site_url"],
                 "gtd_takeover_date": row.get("gtd_takeover_date", ""),
@@ -4125,7 +4148,7 @@ function renderManagementList() {{
 
 function formatGoogle(row) {{
   const value = numericOrNull(row.google_score);
-  if (value === null) return 'Google: ?';
+  if (value === null) return row.google_missing_text || 'Google: ?';
   const count = numericOrNull(row.google_count);
   return `Google: ${{value.toFixed(1)}}${{count === null ? '' : ` (${{Math.round(count)}} reviews)`}}`;
 }}
@@ -4355,6 +4378,9 @@ function renderMarkers() {{
   const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
   for (const row of rows) {{
     const metricValue = metric.value(row);
+    if (metricValue === null && activeMetric === 'google') {{
+      continue;
+    }}
     if (metricValue === null && activeMetric === 'gap') {{
       continue;
     }}
@@ -4414,6 +4440,9 @@ function renderNationalSupplementals() {{
   const visibleRows = nationalSupplementals.filter((row) => bounds.contains([Number(row.lat), Number(row.lon)]));
   for (const row of visibleRows) {{
     const metricValue = metric.value(row);
+    if (metricValue === null && activeMetric === 'google') {{
+      continue;
+    }}
     if (metricValue === null && activeMetric === 'gap') {{
       continue;
     }}

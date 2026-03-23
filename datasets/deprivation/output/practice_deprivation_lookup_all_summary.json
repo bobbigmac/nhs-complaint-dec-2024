@@ -1,18 +1,18 @@
 {
-  "practice_count": 6917,
-  "reused_cached_count": 438,
-  "recomputed_count": 6479,
+  "practice_count": 7055,
+  "reused_cached_count": 424,
+  "recomputed_count": 6631,
   "status_counts": {
-    "matched_imd_2025_england": 5560,
-    "no_polygon_match": 38,
-    "matched_polygon_no_deprivation_index": 307,
-    "unsupported_nation": 1012
+    "matched_imd_2025_england": 5694,
+    "no_polygon_match": 8,
+    "unsupported_nation": 1036,
+    "matched_polygon_no_deprivation_index": 317
   },
   "nation_counts": {
-    "england": 5591,
-    "scotland": 826,
-    "wales": 314,
-    "northern_ireland": 186
+    "england": 5700,
+    "scotland": 846,
+    "wales": 319,
+    "northern_ireland": 190
   },
   "sources": {
     "deprivation_csv": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv",

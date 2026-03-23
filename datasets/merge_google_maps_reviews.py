@@ -77,6 +77,8 @@ def reset_google_maps_fields(row: dict[str, Any]) -> None:
     row["google_maps_match_score"] = ""
     row["google_recent_reviews_captured"] = ""
     row["google_review_text_file"] = ""
+    row["google_review_scan_status"] = ""
+    row["google_review_has_listing"] = ""
     if "Google Maps direct" in str(row.get("google_review_source_note", "")):
         row["google_review_score"] = ""
         row["google_review_count"] = ""
@@ -173,6 +175,17 @@ def merge_rows(
         result = result_by_code.get(str(row.get("canonical_code", "")).strip())
         if not result:
             continue
+        row["google_maps_title"] = result.get("google_maps_title", "") or ""
+        row["google_maps_match_score"] = result.get("title_match_score", "") or ""
+        row["google_recent_reviews_captured"] = result.get("visible_review_cards_collected", "") or ""
+        row["google_review_text_file"] = relative_to_output(str(result.get("review_text_file", "")))
+        row["google_review_scan_status"] = str(result.get("scan_status", "") or "")
+        listing_present = page_kind(result) == "place" or bool(result.get("google_maps_title")) or bool(result.get("google_maps_url"))
+        row["google_review_has_listing"] = "true" if listing_present else "false"
+        if listing_present:
+            row["google_review_source_url"] = result.get("google_maps_url", "") or row.get("google_review_source_url", "")
+        if row["google_review_text_file"]:
+            text_file_count += 1
         if needs_manual_review(result):
             manual_review.append(result)
             continue
@@ -184,12 +197,6 @@ def merge_rows(
         if weak_confidence:
             low_confidence.append(result)
 
-        row["google_maps_title"] = result.get("google_maps_title", "") or ""
-        row["google_maps_match_score"] = result.get("title_match_score", "") or ""
-        row["google_recent_reviews_captured"] = result.get("visible_review_cards_collected", "") or ""
-        row["google_review_text_file"] = relative_to_output(str(result.get("review_text_file", "")))
-        if row["google_review_text_file"]:
-            text_file_count += 1
         if result.get("google_rating") is not None:
             row["google_review_score"] = result.get("google_rating", "")
             row["google_review_count"] = result.get("google_review_count", "")
