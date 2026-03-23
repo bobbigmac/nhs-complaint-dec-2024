@@ -45,7 +45,7 @@ Coverage snapshot:
 - Practices with affiliated group identified: 10
 - Distinct affiliated groups identified: 3
 - Practices with registered patient count: 360
-- Practices with registered patient count candidate: 0
+- Practices with registered patient count candidate: 53
 - Google Maps scans completed: 0
 - Google Maps manual review queue: 0
 

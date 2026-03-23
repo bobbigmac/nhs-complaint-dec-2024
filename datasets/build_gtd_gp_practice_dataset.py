@@ -255,6 +255,30 @@ def load_registered_patient_index(path: Path = PATIENT_COUNTS_BY_YEAR_JSON) -> d
     return dict(by_year[latest])
 
 
+def parent_patient_ods_code(code: Any) -> str:
+    normalized = str(code or "").strip().upper()
+    match = re.fullmatch(r"([A-Z0-9]{6})\d{3}", normalized)
+    return match.group(1) if match else ""
+
+
+def registered_patient_count_candidate(
+    code: Any,
+    registered_patient_counts: dict[str, int],
+) -> dict[str, Any] | None:
+    parent_code = parent_patient_ods_code(code)
+    if not parent_code:
+        return None
+    value = registered_patient_counts.get(parent_code)
+    if value in ("", None):
+        return None
+    return {
+        "count": value,
+        "code": parent_code,
+        "source": "nhs_monthly_parent_ods_fallback",
+        "confidence": "medium",
+    }
+
+
 def slugify(value: str) -> str:
     value = value.lower()
     value = value.replace("&", " and ")
@@ -602,6 +626,13 @@ def build_dataset() -> list[dict[str, Any]]:
         record["registered_patient_count_candidate_code"] = ""
         record["registered_patient_count_candidate_source"] = ""
         record["registered_patient_count_candidate_confidence"] = ""
+        if record["registered_patient_count"] == "":
+            patient_count_candidate = registered_patient_count_candidate(canonical_code, registered_patient_counts)
+            if patient_count_candidate:
+                record["registered_patient_count_candidate"] = patient_count_candidate["count"]
+                record["registered_patient_count_candidate_code"] = patient_count_candidate["code"]
+                record["registered_patient_count_candidate_source"] = patient_count_candidate["source"]
+                record["registered_patient_count_candidate_confidence"] = patient_count_candidate["confidence"]
         record["management_company_name"] = "GTD Healthcare" if matched_anchor else ""
         record["management_company_source"] = "gtd_anchor_match" if matched_anchor else ""
         record["management_company_confidence"] = "high" if matched_anchor else ""
@@ -1646,6 +1677,28 @@ def enrich_rows_with_cqc(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return enriched_rows
 
 
+def enrich_rows_with_patient_count_candidates(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    registered_patient_counts = load_registered_patient_index()
+    if not registered_patient_counts:
+        return rows
+    enriched_rows: list[dict[str, Any]] = []
+    for row in rows:
+        enriched = dict(row)
+        direct_count = enriched.get("registered_patient_count", "")
+        if direct_count not in ("", None):
+            enriched_rows.append(enriched)
+            continue
+        code = str(enriched.get("canonical_code") or enriched.get("code") or "").strip()
+        candidate = registered_patient_count_candidate(code, registered_patient_counts)
+        if candidate:
+            enriched["registered_patient_count_candidate"] = candidate["count"]
+            enriched["registered_patient_count_candidate_code"] = candidate["code"]
+            enriched["registered_patient_count_candidate_source"] = candidate["source"]
+            enriched["registered_patient_count_candidate_confidence"] = candidate["confidence"]
+        enriched_rows.append(enriched)
+    return enriched_rows
+
+
 def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
     survey_label = survey_short_label(str(row.get("patient_survey_name") or "").strip())
     survey_status = str(row.get("patient_survey_status") or "").strip()
@@ -1705,6 +1758,11 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "cqc_inherited_rating": row.get("cqc_inherited_rating", ""),
         "cqc_provider_name": row.get("cqc_provider_name", ""),
         "registered_patient_count": row.get("registered_patient_count", ""),
+        "registered_patient_count_candidate": row.get("registered_patient_count_candidate", ""),
+        "registered_patient_count_candidate_code": row.get("registered_patient_count_candidate_code", ""),
+        "registered_patient_count_candidate_source": row.get("registered_patient_count_candidate_source", ""),
+        "registered_patient_count_effective": row.get("registered_patient_count", "") or row.get("registered_patient_count_candidate", ""),
+        "registered_patient_count_effective_source": row.get("registered_patient_count_source", "") or row.get("registered_patient_count_candidate_source", ""),
         "patient_change_per_year": row.get("patient_change_per_year", ""),
         "patient_change_start_year": row.get("patient_change_start_year", ""),
         "patient_change_end_year": row.get("patient_change_end_year", ""),
@@ -2517,7 +2575,6 @@ def write_map(
             continue
     for row in rows:
         review_activity = google_review_activity_by_code.get(str(row["canonical_code"]), {})
-        patient_change = patient_change_by_code.get(str(row["canonical_code"]), {})
         nation = str(row.get("nation") or "england").strip().lower()
         survey_metadata = national_survey_metadata(nation)
         survey_payload, survey_code_used, survey_resolution_note, survey_overrides = resolve_national_practice_survey_payload(
@@ -2532,6 +2589,16 @@ def write_map(
             if str(value).strip():
                 survey_metadata[key] = str(value).strip()
         cqc = cqc_by_code.get(str(row["canonical_code"]), {}) if nation == "england" else {}
+        effective_registered_patient_count = row.get("registered_patient_count", "")
+        effective_registered_patient_count_source = row.get("registered_patient_count_source", "")
+        if effective_registered_patient_count in ("", None):
+            effective_registered_patient_count = row.get("registered_patient_count_candidate", "")
+            effective_registered_patient_count_source = row.get("registered_patient_count_candidate_source", "")
+        patient_change = patient_change_by_code.get(str(row["canonical_code"]), {})
+        if not patient_change:
+            parent_code = parent_patient_ods_code(row["canonical_code"])
+            if parent_code:
+                patient_change = patient_change_by_code.get(parent_code, {})
         registered_patient_count = row.get("registered_patient_count", "")
         if registered_patient_count not in ("", None):
             try:
@@ -2592,10 +2659,15 @@ def write_map(
                 "cqc_inherited_rating": str(cqc.get("inherited_rating", "")).strip(),
                 "cqc_provider_name": str(cqc.get("provider_name", "")).strip(),
                 "registered_patient_count": row.get("registered_patient_count", ""),
+                "registered_patient_count_candidate": row.get("registered_patient_count_candidate", ""),
+                "registered_patient_count_candidate_code": row.get("registered_patient_count_candidate_code", ""),
+                "registered_patient_count_candidate_source": row.get("registered_patient_count_candidate_source", ""),
+                "registered_patient_count_effective": effective_registered_patient_count,
                 "patient_change_per_year": patient_change.get("patient_change_per_year", ""),
                 "patient_change_start_year": patient_change.get("patient_change_start_year", ""),
                 "patient_change_end_year": patient_change.get("patient_change_end_year", ""),
                 "registered_patient_count_source": row.get("registered_patient_count_source", ""),
+                "registered_patient_count_effective_source": effective_registered_patient_count_source,
             }
         )
 
@@ -5243,8 +5315,12 @@ function popupMarkup(row) {{
   const takeoverSource = row.gtd_takeover_source_url
     ? `<div><a href="${{row.gtd_takeover_source_url}}" target="_blank" rel="noreferrer">${{row.gtd_takeover_source_label || 'Takeover source'}}</a></div>`
     : '';
-  const registeredPatients = numericOrNull(row.registered_patient_count);
+  const registeredPatients = numericOrNull(row.registered_patient_count_effective ?? row.registered_patient_count);
+  const registeredPatientsSource = String(row.registered_patient_count_effective_source || row.registered_patient_count_source || '').trim();
   const registeredPatientsLine = `<div>Registered patients: ${{registeredPatients === null ? '?' : registeredPatients.toLocaleString('en-GB')}}</div>`;
+  const registeredPatientsNote = registeredPatients !== null && registeredPatientsSource === 'nhs_monthly_parent_ods_fallback'
+    ? '<div class="popup-note">Count shown via parent practice ODS code.</div>'
+    : '';
   const survey = `<div>${{formatSurvey(row)}}</div>`;
   const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
   const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
@@ -5264,6 +5340,7 @@ function popupMarkup(row) {{
     ${{takeoverLine}}
     ${{takeoverNote}}
     ${{registeredPatientsLine}}
+    ${{registeredPatientsNote}}
     ${{google}}
     ${{survey}}
     ${{cqcRating}}
@@ -5288,8 +5365,12 @@ function nationalPopupMarkup(row) {{
   const cqcRating = row.cqc_overall_rating
     ? `<div>CQC: ${{row.cqc_overall_rating}}${{row.cqc_inherited_rating === 'Y' ? ' (inherited)' : ''}}${{row.cqc_publication_date ? ` · ${{row.cqc_publication_date}}` : ''}}</div>`
     : '';
-  const registeredPatients = numericOrNull(row.registered_patient_count);
+  const registeredPatients = numericOrNull(row.registered_patient_count_effective ?? row.registered_patient_count);
+  const registeredPatientsSource = String(row.registered_patient_count_effective_source || row.registered_patient_count_source || '').trim();
   const patientsLine = registeredPatients === null ? '' : `<div>Registered patients: ${{registeredPatients.toLocaleString('en-GB')}}</div>`;
+  const patientsNote = registeredPatients !== null && registeredPatientsSource === 'nhs_monthly_parent_ods_fallback'
+    ? '<div class="popup-note">Count shown via parent practice ODS code.</div>'
+    : '';
   const surveyResolution = row.survey_resolution_note ? `<div>${{row.survey_resolution_note}}</div>` : '';
   const surveySourceNote = row.survey_note ? `<div>${{row.survey_note}}</div>` : '';
   const surveyUrl = row.survey_link_url || '';
@@ -5304,6 +5385,7 @@ function nationalPopupMarkup(row) {{
     <div>Code: ${{row.code}}</div>
     <div>Nation: ${{row.nation || '?'}}</div>
     ${{patientsLine}}
+    ${{patientsNote}}
     ${{google}}
     ${{survey}}
     ${{cqcRating}}
@@ -5553,7 +5635,7 @@ function serviceFinderColumnValue(entry, sortKey) {{
   if (sortKey === 'google') return numericOrNull(row?.google_score);
   if (sortKey === 'reviews') return numericOrNull(row?.google_count);
   if (sortKey === 'survey') return numericOrNull(row?.survey_overall_good_percent);
-  if (sortKey === 'patients') return numericOrNull(row?.registered_patient_count);
+  if (sortKey === 'patients') return numericOrNull(row?.registered_patient_count_effective ?? row?.registered_patient_count);
   return null;
 }}
 
@@ -5776,7 +5858,7 @@ function renderServiceFinder() {{
     const survey = numericOrNull(row.survey_overall_good_percent);
     const reviews = numericOrNull(row.google_count);
     const reviewsPerYear = numericOrNull(row.google_reviews_per_year);
-    const patients = numericOrNull(row.registered_patient_count);
+    const patients = numericOrNull(row.registered_patient_count_effective ?? row.registered_patient_count);
     const patientChangePerYear = numericOrNull(row.patient_change_per_year);
     const distance = entry.distance;
     const accentColor = serviceFinderAccentColor(row);
@@ -9432,6 +9514,7 @@ def main() -> int:
         from merge_google_maps_reviews import merge_rows
         rows, _, _ = merge_rows(rows, json.loads(GOOGLE_REVIEW_RESULTS_JSON.read_text(encoding="utf-8")), 0.5)
 
+    rows = enrich_rows_with_patient_count_candidates(rows)
     rows = enrich_rows_with_cqc(rows)
 
     write_csv(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv", rows)
