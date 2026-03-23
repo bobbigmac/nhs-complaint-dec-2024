@@ -4,11 +4,21 @@ Postcode: SK7 4AA
 Google Maps title: Springfield Surgery
 Google rating: 3.2
 Google review count: 56
-Google Maps URL: https://www.google.com/maps/place/Springfield+Surgery/@53.3824164,-2.1221791,17z/data=!4m8!3m7!1s0x487bb4c881bd467b:0xa9af2b63e8f5c129!8m2!3d53.3824164!4d-2.1221791!9m1!1b1!16s%2Fg%2F1tjgp414?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D
+Google Maps URL: https://www.google.com/maps/place/Springfield+Surgery/@53.3824196,-2.1247594,17z/data=!4m8!3m7!1s0x487bb4c881bd467b:0xa9af2b63e8f5c129!8m2!3d53.3824164!4d-2.1221791!9m1!1b1!16s%2Fg%2F1tjgp414?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
 Title match score: 1.0
+Review collection mode: visible_cards
+Review cards collected: 10
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P88606-springfield-surgery.json
 
-Recent visible reviews
-====================
+Captured reviews
+================
+
+Author: Mike Dawson
+Date: a month ago
+Rating: 5 stars
+Very well managed GP surgery.. Excellent Service..Staff brilliant..
 
 Author: Catherine Southern
 Date: Edited 2 months ago
@@ -16,14 +26,34 @@ Rating: 1 star
 Called for an app after having a breakdown , told Dr suggested a routine appointment so 2 weeks for mental health appointment 👍🏼 they then went on to make a face to face appointment FOR me without letting me know !! , I’ve now left this surgery as I feel the ‘CARE’ wasn’t there at all and just a ticking box purpose and FYI if some1 cannot get an appointment for a medication review (tried to make it beginning of dec to suggested 16th January 26 👍🏼👍🏼 thankful I’ve left such a bad surgery. Unless you are 60 and above I wouldn’t bother
 
 Author: Arron Grundy. Oasis Decor Solutions
-Date: Edited 2 months ago
+Date: Edited 3 months ago
 Rating: 3 stars
 Doctors are good, hard to deal with telephone staff at times
 
 Author: Francis Chappell
-Date: 4 months ago
+Date: 5 months ago
 Rating: 1 star
 Terrible doctors worst in the area mr Ameer Aldabbagh is one of the worst doctors out there.. he miss a serious illness multiple times sent home with paracetamol.. hes has now died 😔 and doesn't care about mental illness in the slightest.. changed doctors due to the poor quality of care and now half my medical history is missing... be carful theres better in the area would rate 0 Stars if possible
+
+Author: Simon Davies
+Date: 5 months ago
+Rating: 5 stars
+Excellent Doctors practice. Particularly for those with ongoing health concerns.
+
+Author: Lynn Dalton
+Date: 6 months ago
+Rating: 5 stars
+My husband saw Dr George as emergency patient this morning post a stroke 1st Sept. As ever, Dr George was patient, informative, non-judgemental and kind. We are so lucky to have her at Springfield Surgery. Bless you Dr George 💜 …
+
+Author: Sarah Jenyon
+Date: 6 months ago
+Rating: 5 stars
+The GPs at Springfield Surgery are fantastic. They are kind, friendly and take quick and thorough action to help patients. Thank you!
+
+Author: Bluejohn
+Date: 7 months ago
+Rating: 5 stars
+Every single doctor at this surgery is fantastic. They are empathetic, kind, take time to listen and they are thorough. They have picked up on things at an early stage that have literally been life saving to my family members. I am very grateful that these group of GPs manage my family’s care
 
 Author: Aarom Aarom
 Date: 7 months ago
@@ -34,28 +64,3 @@ Author: Karen Lewis
 Date: a year ago
 Rating: 5 stars
 An excellent team of GP's and Nurses. Always helpful. My husband and son were looked after so well through their cancer diagnosis.
-
-Author: H Melia
-Date: a year ago
-Rating: 5 stars
-Never had a bad experience here, polite friendly staff. I rang at 8 am today and got an urgent appointment at 8.50. I've always felt listened to and never rushed. The app for reordering sick notes etc is really good as well.
-
-Author: Frank
-Date: a year ago
-Rating: 1 star
-Very bad.. temporary doctors getting patient with mental health discharged for raising there voice..... Very unprofessional... much better doctors in the area
-
-Author: mark kelly
-Date: a year ago
-Rating: 5 stars
-Always polite and friendly, doctors are great at communicating as are the nurses and reception staff. I have never felt spoken down too, as happened in a previous surgery. Definitely recommend the surgery and the staff
-
-Author: Jennifer Hall
-Date: 2 years ago
-Rating: 5 stars
-Always very helpful i find. Attempt to fit in with your needs/timings
-
-Author: Damy88
-Date: 2 years ago
-Rating: 4 stars
-Quite an empathetic and quickly acting practice I have been with

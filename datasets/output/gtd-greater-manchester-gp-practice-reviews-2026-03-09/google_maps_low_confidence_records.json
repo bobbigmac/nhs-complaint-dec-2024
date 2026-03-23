@@ -1,148 +1,5 @@
 [
   {
-    "query": "Norden Surgery OL11 5XE",
-    "google_maps_title": "Norden Surgery OL11 5XE",
-    "google_maps_url": "https://www.google.com/maps/search/Norden+Surgery+OL11+5XE/@53.6223838,-2.1992124,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 3.4,
-    "google_review_count": 230,
-    "blocked_place_match": false,
-    "review_count_skip": true,
-    "skip_over_review_count": 100,
-    "sponsored_place_match": false,
-    "sponsored_search_results_only": false,
-    "wrong_place_match": false,
-    "reviews_entrypoint_found": false,
-    "clicked_first_search_result": false,
-    "search_results_inspected": [
-      {
-        "label": "Edenfield Road Surgery\u00b7Visited link",
-        "href": "https://www.google.com/maps/place/Edenfield+Road+Surgery/data=!4m7!3m6!1s0x487bbbf10d86cd27:0xb8b10fee1ac092c8!8m2!3d53.6223652!4d-2.1888805!16s%2Fg%2F1tq8j2yk!19sChIJJ82GDfG7e0gRyJLAGu4Psbg?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.0
-      },
-      {
-        "label": "The Aesthetic Rooms",
-        "href": "https://www.google.com/maps/place/The+Aesthetic+Rooms/data=!4m7!3m6!1s0x487bb94542b6ee13:0x6158c0ad2dcf2de7!8m2!3d53.6267096!4d-2.2106002!16s%2Fg%2F11c5bt4g4x!19sChIJE-62QkW5e0gR5y3PLa3AWGE?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.0
-      },
-      {
-        "label": "Norden Old Library\u00b7Visited link",
-        "href": "https://www.google.com/maps/place/Norden+Old+Library/data=!4m7!3m6!1s0x487bbb88ee0625bf:0x91a9d5942dcccca1!8m2!3d53.6264249!4d-2.2087734!16s%2Fg%2F1v2kw_5t!19sChIJvyUG7oi7e0gRoczMLZTVqZE?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.2
-      },
-      {
-        "label": "The Norden Physio (Based within Easy St Personal Training & Physiotherapy)",
-        "href": "https://www.google.com/maps/place/The+Norden+Physio+%28Based+within+Easy+St+Personal+Training+%26+Physiotherapy%29/data=!4m7!3m6!1s0x487bbbffb7e783c7:0x9aab5be0dc2ea26f!8m2!3d53.6263786!4d-2.2080511!16s%2Fg%2F11krjqz5_4!19sChIJx4Pnt_-7e0gRb6Iu3OBbq5o?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.111
-      },
-      {
-        "label": "Ashworth Street Surgery\u00b7Visited link",
-        "href": "https://www.google.com/maps/place/Ashworth+Street+Surgery/data=!4m7!3m6!1s0x487bb959e0ff159d:0x62bd86fed05344a4!8m2!3d53.6195927!4d-2.1657162!16s%2Fg%2F1tfqfbp2!19sChIJnRX_4Fm5e0gRpERT0P6GvWI?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.0
-      },
-      {
-        "label": "Edenfield Dental Care",
-        "href": "https://www.google.com/maps/place/Edenfield+Dental+Care/data=!4m7!3m6!1s0x487bbbf11333afdb:0x57126a90bd12e28f!8m2!3d53.6230077!4d-2.189064!16s%2Fg%2F1tfzrgkn!19sChIJ268zE_G7e0gRj-ISvZBqElc?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.0
-      },
-      {
-        "label": "Treelink Northwest Ltd",
-        "href": "https://www.google.com/maps/place/Treelink+Northwest+Ltd/data=!4m7!3m6!1s0x487bbb975053ad87:0xb831077e155e9e4b!8m2!3d53.6133219!4d-2.2088748!16s%2Fg%2F1tfxg736!19sChIJh61TUJe7e0gRS55eFX4HMbg?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.0
-      },
-      {
-        "label": "TP Tree Care Ltd",
-        "href": "https://www.google.com/maps/place/TP+Tree+Care+Ltd/data=!4m7!3m6!1s0x487bbba1b2f9c4b9:0x712683240e5123a6!8m2!3d53.6230012!4d-2.2030492!16s%2Fg%2F11sp5997j2!19sChIJucT5sqG7e0gRpiNRDiSDJnE?authuser=0&hl=en&rclk=1",
-        "sponsored": false,
-        "blocked_title": false,
-        "match_score": 0.0
-      }
-    ],
-    "chosen_search_result_label": "",
-    "chosen_search_result_score": 0.0,
-    "page_kind": "search",
-    "scan_status": "skipped_review_count_threshold",
-    "manual_review_required": true,
-    "retry_recommended": false,
-    "reviews_opened": false,
-    "reviews_sorted_newest": false,
-    "review_collection_mode": "review_count_skip",
-    "full_reviews_requested": true,
-    "full_reviews_attempted": false,
-    "full_review_stop_reason": "",
-    "full_review_soft_cap_applied": false,
-    "review_cards_collected": 0,
-    "visible_review_cards_collected": 0,
-    "owner_replies_collected": 0,
-    "raw_review_capture_enabled": false,
-    "raw_review_responses_captured": 0,
-    "recent_reviews": [],
-    "practice_name": "Norden Surgery",
-    "postcode": "OL11 5XE",
-    "canonical_code": "P86003002",
-    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/norden-surgery/P86003002",
-    "query_used": "Norden Surgery OL11 5XE",
-    "title_match_score": 1.0,
-    "raw_review_capture_file": "",
-    "review_text_file": ""
-  },
-  {
-    "query": "Clarendon Medical Centre SK14 2AQ",
-    "google_maps_title": "SK14 2AQ",
-    "google_maps_url": "https://www.google.com/maps/place/Hyde+SK14+2AQ/@53.4526523,-2.0902723,15z/data=!3m1!4b1!4m6!3m5!1s0x487bb5ddee93125f:0x72a3000b9ea4de6!8m2!3d53.4526405!4d-2.0799511!16s%2Fg%2F1tk8n48j?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 4.1,
-    "google_review_count": 1849,
-    "blocked_place_match": false,
-    "review_count_skip": true,
-    "skip_over_review_count": 100,
-    "sponsored_place_match": false,
-    "sponsored_search_results_only": false,
-    "wrong_place_match": true,
-    "reviews_entrypoint_found": false,
-    "clicked_first_search_result": false,
-    "search_results_inspected": [],
-    "chosen_search_result_label": "",
-    "chosen_search_result_score": 0.0,
-    "page_kind": "place",
-    "scan_status": "skipped_review_count_threshold",
-    "manual_review_required": true,
-    "retry_recommended": false,
-    "reviews_opened": false,
-    "reviews_sorted_newest": false,
-    "review_collection_mode": "review_count_skip",
-    "full_reviews_requested": true,
-    "full_reviews_attempted": false,
-    "full_review_stop_reason": "",
-    "full_review_soft_cap_applied": false,
-    "review_cards_collected": 0,
-    "visible_review_cards_collected": 0,
-    "owner_replies_collected": 0,
-    "raw_review_capture_enabled": false,
-    "raw_review_responses_captured": 0,
-    "recent_reviews": [],
-    "practice_name": "Clarendon Medical Centre",
-    "postcode": "SK14 2AQ",
-    "canonical_code": "P89012",
-    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/clarendon-medical-centre/P89012",
-    "query_used": "Clarendon Medical Centre SK14 2AQ",
-    "title_match_score": 0.0,
-    "raw_review_capture_file": "",
-    "review_text_file": ""
-  },
-  {
     "query": "Bradford Street Surgery BL2 1HT",
     "google_maps_title": "The Surgery",
     "google_maps_url": "https://www.google.com/maps/place/The+Surgery/@53.5775104,-2.41929,17z/data=!4m8!3m7!1s0x487ba6598febe633:0x9379d14858bd7d16!8m2!3d53.5775072!4d-2.4167097!9m1!1b1!16s%2Fg%2F1yh9v0bp1?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D",
@@ -8846,15 +8703,24 @@
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P92020-sivakumar-and-partner.txt"
   },
   {
-    "query": "The Surgery, Tyldesley M29 8AL",
+    "query": "Dr C P Khatri & Partners Tyldesley",
     "google_maps_title": "Dr C P Khatri & Partners",
-    "google_maps_url": "https://www.google.com/maps/place/Dr+C+P+Khatri+%26+Partners,+High+St,+Tyldesley,+Manchester+M29+8AL/@53.5146572,-2.4722778,17z/data=!3m1!4b1!4m6!3m5!1s0x487ba822444613f3:0x455d10bbeb5bfc73!8m2!3d53.514654!4d-2.4696975!16s%2Fg%2F11c3q4vgv0?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
+    "google_maps_url": "https://www.google.com/maps/place/Dr+C+P+Khatri+%26+Partners,+High+St,+Tyldesley,+Manchester+M29+8AL/@53.5146572,-2.4722778,17z/data=!3m1!4b1!4m6!3m5!1s0x487ba822444613f3:0x455d10bbeb5bfc73!8m2!3d53.514654!4d-2.4696975!16s%2Fg%2F11c3q4vgv0?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "latitude": 53.514654,
+    "longitude": -2.4696975,
     "google_rating": 3.4,
     "google_review_count": 18,
     "blocked_place_match": false,
+    "review_count_skip": false,
+    "skip_over_review_count": 0,
     "sponsored_place_match": false,
+    "sponsored_search_results_only": false,
+    "wrong_place_match": false,
     "reviews_entrypoint_found": false,
     "clicked_first_search_result": false,
+    "search_results_inspected": [],
+    "chosen_search_result_label": "",
+    "chosen_search_result_score": 0.0,
     "page_kind": "place",
     "scan_status": "ok_no_review_panel",
     "manual_review_required": false,
@@ -8864,6 +8730,8 @@
     "review_collection_mode": "no_review_panel",
     "full_reviews_requested": true,
     "full_reviews_attempted": false,
+    "full_review_stop_reason": "",
+    "full_review_soft_cap_applied": false,
     "review_cards_collected": 0,
     "visible_review_cards_collected": 0,
     "owner_replies_collected": 0,
@@ -8874,7 +8742,7 @@
     "postcode": "M29 8AL",
     "canonical_code": "P92033",
     "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/the-surgery-tyldesley/P92033",
-    "query_used": "The Surgery, Tyldesley M29 8AL",
+    "query_used": "Dr C P Khatri & Partners Tyldesley",
     "title_match_score": 0.0,
     "raw_review_capture_file": "",
     "review_text_file": ""
@@ -15906,6 +15774,214 @@
     "review_text_file": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86006001-norden-branch-surgery.txt"
   },
   {
+    "query": "Norden Surgery OL11 5XE",
+    "google_maps_title": "Norden Old Library",
+    "google_maps_url": "https://www.google.com/maps/place/Edenfield+Road+Surgery/@53.6264249,-2.2849911,13z/data=!4m12!1m2!2m1!1sNorden+Surgery+OL11+5XE!3m8!1s0x487bbbf10d86cd27:0xb8b10fee1ac092c8!8m2!3d53.6223652!4d-2.1888805!9m1!1b1!15sChdOb3JkZW4gU3VyZ2VyeSBPTDExIDVYRVoZIhdub3JkZW4gc3VyZ2VyeSBvbDExIDV4ZZIBDm1lZGljYWxfY2xpbmljmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0NGVsUkhkSEpOUlZsM1pGZHpNVlJWZHpSaFJURlJaR3RLTWxWWVl4QULgAQD6AQQIABA9!16s%2Fg%2F1tq8j2yk?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "latitude": 53.6223652,
+    "longitude": -2.1888805,
+    "google_rating": 5.0,
+    "google_review_count": 103,
+    "blocked_place_match": false,
+    "review_count_skip": false,
+    "skip_over_review_count": 0,
+    "sponsored_place_match": false,
+    "sponsored_search_results_only": false,
+    "wrong_place_match": false,
+    "reviews_entrypoint_found": true,
+    "clicked_first_search_result": true,
+    "search_results_inspected": [
+      {
+        "label": "The Aesthetic Rooms",
+        "href": "https://www.google.com/maps/place/The+Aesthetic+Rooms/data=!4m7!3m6!1s0x487bb94542b6ee13:0x6158c0ad2dcf2de7!8m2!3d53.6267096!4d-2.2106002!16s%2Fg%2F11c5bt4g4x!19sChIJE-62QkW5e0gR5y3PLa3AWGE?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      },
+      {
+        "label": "Edenfield Road Surgery",
+        "href": "https://www.google.com/maps/place/Edenfield+Road+Surgery/data=!4m7!3m6!1s0x487bbbf10d86cd27:0xb8b10fee1ac092c8!8m2!3d53.6223652!4d-2.1888805!16s%2Fg%2F1tq8j2yk!19sChIJJ82GDfG7e0gRyJLAGu4Psbg?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      },
+      {
+        "label": "Norden Old Library",
+        "href": "https://www.google.com/maps/place/Norden+Old+Library/data=!4m7!3m6!1s0x487bbb88ee0625bf:0x91a9d5942dcccca1!8m2!3d53.6264249!4d-2.2087734!16s%2Fg%2F1v2kw_5t!19sChIJvyUG7oi7e0gRoczMLZTVqZE?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.333
+      },
+      {
+        "label": "The Norden Physio (Based within Easy St Personal Training & Physiotherapy)",
+        "href": "https://www.google.com/maps/place/The+Norden+Physio+%28Based+within+Easy+St+Personal+Training+%26+Physiotherapy%29/data=!4m7!3m6!1s0x487bbbffb7e783c7:0x9aab5be0dc2ea26f!8m2!3d53.6263786!4d-2.2080511!16s%2Fg%2F11krjqz5_4!19sChIJx4Pnt_-7e0gRb6Iu3OBbq5o?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.111
+      },
+      {
+        "label": "Ashworth Street Surgery",
+        "href": "https://www.google.com/maps/place/Ashworth+Street+Surgery/data=!4m7!3m6!1s0x487bb959e0ff159d:0x62bd86fed05344a4!8m2!3d53.6195927!4d-2.1657162!16s%2Fg%2F1tfqfbp2!19sChIJnRX_4Fm5e0gRpERT0P6GvWI?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      },
+      {
+        "label": "Treelink Northwest Ltd",
+        "href": "https://www.google.com/maps/place/Treelink+Northwest+Ltd/data=!4m7!3m6!1s0x487bbb975053ad87:0xb831077e155e9e4b!8m2!3d53.6133219!4d-2.2088748!16s%2Fg%2F1tfxg736!19sChIJh61TUJe7e0gRS55eFX4HMbg?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      },
+      {
+        "label": "Special Branch Tree Surgeons Ltd",
+        "href": "https://www.google.com/maps/place/Special+Branch+Tree+Surgeons+Ltd/data=!4m7!3m6!1s0x487bbb620ac8e5c7:0x280584d4c30da7ca!8m2!3d53.6302586!4d-2.2375682!16s%2Fg%2F1hm6dmy5j!19sChIJx-XICmK7e0gRyqcNw9SEBSg?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      },
+      {
+        "label": "Bamford Dental Practice",
+        "href": "https://www.google.com/maps/place/Bamford+Dental+Practice/data=!4m7!3m6!1s0x487bbb99deb37351:0xddae6c9dc057b778!8m2!3d53.6144195!4d-2.2075217!16s%2Fg%2F1vpq6fj1!19sChIJUXOz3pm7e0gReLdXwJ1srt0?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      }
+    ],
+    "chosen_search_result_label": "Norden Old Library",
+    "chosen_search_result_score": 0.333,
+    "page_kind": "place",
+    "scan_status": "ok_with_visible_reviews",
+    "manual_review_required": false,
+    "retry_recommended": false,
+    "reviews_opened": true,
+    "reviews_sorted_newest": true,
+    "review_collection_mode": "visible_cards",
+    "full_reviews_requested": false,
+    "full_reviews_attempted": false,
+    "full_review_stop_reason": "",
+    "full_review_soft_cap_applied": false,
+    "review_cards_collected": 10,
+    "visible_review_cards_collected": 10,
+    "owner_replies_collected": 7,
+    "raw_review_capture_enabled": true,
+    "raw_review_responses_captured": 2,
+    "recent_reviews": [
+      {
+        "author": "Kay Riley",
+        "relative_date": "6 days ago",
+        "star_label": "5 stars",
+        "text": "I\u2019ve been a patient since 1975 and always been treated with care both by the doctors and support staff. Using Patches to make an appointment has made it so less stressful. All the doctors are excellent. I saw Dr Aslam today and she listened and was very understanding.",
+        "raw_card_text": "Kay Riley6 reviews6 days ago New I\u2019ve been a patient since 1975 and always been treated with care both by the doctors and support staff. Using Patches to make an appointment has made it so less stressful. All the doctors are excellent. I saw Dr Aslam today and she listened and was very understanding.Like Share"
+      },
+      {
+        "author": "Mohammed Moazam",
+        "relative_date": "a week ago",
+        "star_label": "5 stars",
+        "text": "Been going there for a few decades. They have made great improvements over the years. The doctors are caring and listen to your concerns. All the staff are very respectful and helpful.",
+        "raw_card_text": "Mohammed Moazam2 reviews \u00b7 2 photosa week ago New Been going there for a few decades. They have made great improvements over the years. The doctors are caring and listen to your concerns. All the staff are very respectful and helpful.Like Share Response from the owner a week agoHi Mohammed, Thank you very much for your fabulous review and we\u2019re delighted that you have had positive experiences with us over the years and particularly the appreciation for our staff. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Mohammed, Thank you very much for your fabulous review and we\u2019re delighted that you have had positive experiences with us over the years and particularly the appreciation for our staff. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you.",
+          "raw_text": "a week agoHi Mohammed, Thank you very much for your fabulous review and we\u2019re delighted that you have had positive experiences with us over the years and particularly the appreciation for our staff. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you."
+        }
+      },
+      {
+        "author": "Sara Grace",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "Excellent service. Patch\u2019s is much quicker and less stressful.",
+        "raw_card_text": "Sara Grace1 review2 weeks ago New Excellent service. Patch\u2019s is much quicker and less stressful.Like Share Response from the owner a week agoHi Sara, Thank you very much for your fabulous review and we\u2019re delighted that you have had an excellent service with us. The whole team does work extremely hard to provide excellent care. We\u2019re delighted you\u2019re finding the patch\u2019s service to be great. We will share your feedback with our team who are very grateful for your support. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Sara, Thank you very much for your fabulous review and we\u2019re delighted that you have had an excellent service with us. The whole team does work extremely hard to provide excellent care. We\u2019re delighted you\u2019re finding the patch\u2019s service to be great. We will share your feedback with our team who are very grateful for your support. Thank you.",
+          "raw_text": "a week agoHi Sara, Thank you very much for your fabulous review and we\u2019re delighted that you have had an excellent service with us. The whole team does work extremely hard to provide excellent care. We\u2019re delighted you\u2019re finding the patch\u2019s service to be great. We will share your feedback with our team who are very grateful for your support. Thank you."
+        }
+      },
+      {
+        "author": "steve holmes",
+        "relative_date": "2 weeks ago",
+        "star_label": "5 stars",
+        "text": "Always a great experience- excellent care",
+        "raw_card_text": "steve holmes2 reviews2 weeks ago New Always a great experience- excellent careLike Share Response from the owner a week agoHi Steve, Thank you very much for your fabulous review and we\u2019re delighted that you have had a great experience with us. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Steve, Thank you very much for your fabulous review and we\u2019re delighted that you have had a great experience with us. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you.",
+          "raw_text": "a week agoHi Steve, Thank you very much for your fabulous review and we\u2019re delighted that you have had a great experience with us. The whole team does work extremely hard to provide excellent care. We will share your feedback with our team who are very grateful for your support. Thank you."
+        }
+      },
+      {
+        "author": "Jean Downes",
+        "relative_date": "3 weeks ago",
+        "star_label": "4 stars",
+        "text": "The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided.",
+        "raw_card_text": "Jean Downes1 review3 weeks ago New The surgery has always been very professional when I have needed them while maintaining a friendly and supportive approach to my ongoing care. Issues in the past concerning appointments have been addressed and the situation is improving. I am very happy with the service provided.Like Share Response from the owner a week agoHi Jean, Thank you very much for your positive feedback and we\u2019re really grateful for it. We\u2019re pleased you\u2019ve noticed significant improvements in recent times and are happy with the care you receive. We will share your comment with our practice team. We\u2019re all really grateful for your support. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Jean, Thank you very much for your positive feedback and we\u2019re really grateful for it. We\u2019re pleased you\u2019ve noticed significant improvements in recent times and are happy with the care you receive. We will share your comment with our practice team. We\u2019re all really grateful for your support. Thank you.",
+          "raw_text": "a week agoHi Jean, Thank you very much for your positive feedback and we\u2019re really grateful for it. We\u2019re pleased you\u2019ve noticed significant improvements in recent times and are happy with the care you receive. We will share your comment with our practice team. We\u2019re all really grateful for your support. Thank you."
+        }
+      },
+      {
+        "author": "Megan Roscoe",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable.",
+        "raw_card_text": "Megan Roscoe6 reviews3 weeks ago New The new process with patches has made a massive difference and has had a very positive effect. Easy to secure appts now and staff are lovely. I have received great support especially from Dr Alam who is very supportive and knowledgable.Like Share Response from the owner a week agoHi Megan, Thank you very much for your positive feedback and review. We\u2019ve been working very hard to improve our appointments system and access. We\u2019re delighted you\u2019ve found the new system to be really positive. We will share your praise with Dr Alam and the team who will all be grateful for your support. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Megan, Thank you very much for your positive feedback and review. We\u2019ve been working very hard to improve our appointments system and access. We\u2019re delighted you\u2019ve found the new system to be really positive. We will share your praise with Dr Alam and the team who will all be grateful for your support. Thank you.",
+          "raw_text": "a week agoHi Megan, Thank you very much for your positive feedback and review. We\u2019ve been working very hard to improve our appointments system and access. We\u2019re delighted you\u2019ve found the new system to be really positive. We will share your praise with Dr Alam and the team who will all be grateful for your support. Thank you."
+        }
+      },
+      {
+        "author": "Salvatore Melidoni",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "The best service ever. Kind and considerate. Thank you.",
+        "raw_card_text": "Salvatore Melidoni1 review \u00b7 2 photos3 weeks ago New The best service ever. Kind and considerate. Thank you.Like Share Response from the owner a week agoHi Salvatore, Thank you very much for your lovely feedback and support. We will share it with our practice team. It means a lot to us and we\u2019re really grateful. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Salvatore, Thank you very much for your lovely feedback and support. We will share it with our practice team. It means a lot to us and we\u2019re really grateful. Thank you.",
+          "raw_text": "a week agoHi Salvatore, Thank you very much for your lovely feedback and support. We will share it with our practice team. It means a lot to us and we\u2019re really grateful. Thank you."
+        }
+      },
+      {
+        "author": "JAYAMALINI PARALIL",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "This Gp provides excellent services..",
+        "raw_card_text": "JAYAMALINI PARALIL1 review3 weeks ago New This Gp provides excellent services..Like Share"
+      },
+      {
+        "author": "Sarah Whitehead",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "I have been a patient at this surgery for 30+ years. The changes made in the last few months are hugely positive and the service and personal interactions have vastly improved. The Patches system is brilliant and is so much easier for someone who works and travels extensively to use. My GP is Dr Alam and he has supported me throughout various health issues over the years - always caring, listening and extremely helpful.",
+        "raw_card_text": "Sarah Whitehead4 reviews3 weeks ago New I have been a patient at this surgery for 30+ years. The changes made in the last few months are hugely positive and the service and personal interactions have vastly improved. The Patches system is brilliant and is so much easier for someone who works and travels extensively to use. My GP is Dr Alam and he has supported me throughout various health issues over the years - always caring, listening and extremely helpful.Like Share"
+      },
+      {
+        "author": "Mark Wood",
+        "relative_date": "3 weeks ago",
+        "star_label": "5 stars",
+        "text": "I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery.",
+        "raw_card_text": "Mark Wood1 review3 weeks ago New I have been at the surgery for many years and can only rave about the service that everyone offers at the surgery. Thanks you the whole team at Edenfiled Road Surgery.Like Share Response from the owner a week agoHi Mark, Thank you very much for your wonderful review and support for our whole team. It means a lot to us. We really appreciate it and will share your feedback with our practice team. Thank you.",
+        "owner_reply": {
+          "relative_date": "a week ago",
+          "text": "Hi Mark, Thank you very much for your wonderful review and support for our whole team. It means a lot to us. We really appreciate it and will share your feedback with our practice team. Thank you.",
+          "raw_text": "a week agoHi Mark, Thank you very much for your wonderful review and support for our whole team. It means a lot to us. We really appreciate it and will share your feedback with our practice team. Thank you."
+        }
+      }
+    ],
+    "practice_name": "Norden Surgery",
+    "postcode": "OL11 5XE",
+    "canonical_code": "P86003002",
+    "nhs_profile_url": "https://www.nhs.uk/services/gp-surgery/norden-surgery/P86003002",
+    "query_used": "Norden Surgery OL11 5XE",
+    "title_match_score": 0.333,
+    "raw_review_capture_file": "datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-raw/P86003002-norden-surgery.json",
+    "review_text_file": "datasets/output/gtd-greater-manchester-gp-practice-reviews-2026-03-09/google-review-texts/P86003002-norden-surgery.txt"
+  },
+  {
     "query": "Alexandra Group Med Pract OL4 1YN",
     "google_maps_title": "The Alexandra Group Medical Practice",
     "google_maps_url": "https://www.google.com/maps/place/The+Alexandra+Group+Medical+Practice/@53.5378515,-2.0978546,17z/data=!4m8!3m7!1s0x487bb78f1d7088ad:0xac4782f6fed011e5!8m2!3d53.5378483!4d-2.0952743!9m1!1b1!16s%2Fg%2F1tf57fk0?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
@@ -20134,13 +20210,37 @@
   {
     "query": "The Quays Grappenhal Surgery WA4 2XT",
     "google_maps_title": "Dr K Boyle - The Quays",
-    "google_maps_url": "https://www.google.com/maps/place/Dr+K+Boyle+-+The+Quays/@53.3809589,-2.5469296,17z/data=!3m1!4b1!4m6!3m5!1s0x487b01c1e7d76b5f:0xc86fad52bda77412!8m2!3d53.3809557!4d-2.5443493!16s%2Fg%2F1yh9tzzk4?entry=ttu&g_ep=EgoyMDI2MDMxNy4wIKXMDSoASAFQAw%3D%3D",
-    "google_rating": 4.3,
+    "google_maps_url": "https://www.google.com/maps/place/Dr+K+Boyle+-+The+Quays/@53.3809589,-2.5469296,17z/data=!4m10!1m2!2m1!1sThe+Quays+Grappenhal+Surgery+WA4+2XT!3m6!1s0x487b01c1e7d76b5f:0xc86fad52bda77412!8m2!3d53.3809557!4d-2.5443493!15sCiVUaGUgUXVheXMgR3JhcHBlbmhhbGwgU3VyZ2VyeSBXQTQgMlhUkgEGZG9jdG9y4AEA!16s%2Fg%2F1yh9tzzk4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+    "latitude": 53.3809557,
+    "longitude": -2.5443493,
+    "google_rating": 2.0,
     "google_review_count": 6,
     "blocked_place_match": false,
+    "review_count_skip": false,
+    "skip_over_review_count": 0,
     "sponsored_place_match": false,
+    "sponsored_search_results_only": false,
+    "wrong_place_match": false,
     "reviews_entrypoint_found": false,
-    "clicked_first_search_result": false,
+    "clicked_first_search_result": true,
+    "search_results_inspected": [
+      {
+        "label": "Grappenhall Surgery",
+        "href": "https://www.google.com/maps/place/Grappenhall+Surgery/data=!4m7!3m6!1s0x487b01c1e998386d:0xde1dcab42768eb58!8m2!3d53.3809557!4d-2.5443493!16s%2Fg%2F1tg2d0nl!19sChIJbTiY6cEBe0gRWOtoJ7TKHd4?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.0
+      },
+      {
+        "label": "Dr K Boyle - The Quays",
+        "href": "https://www.google.com/maps/place/Dr+K+Boyle+-+The+Quays/data=!4m7!3m6!1s0x487b01c1e7d76b5f:0xc86fad52bda77412!8m2!3d53.3809557!4d-2.5443493!16s%2Fg%2F1yh9tzzk4!19sChIJX2vX58EBe0gREnSnvVKtb8g?authuser=0&hl=en&rclk=1",
+        "sponsored": false,
+        "blocked_title": false,
+        "match_score": 0.25
+      }
+    ],
+    "chosen_search_result_label": "Dr K Boyle - The Quays",
+    "chosen_search_result_score": 0.25,
     "page_kind": "place",
     "scan_status": "ok_no_review_panel",
     "manual_review_required": false,
@@ -20148,8 +20248,10 @@
     "reviews_opened": false,
     "reviews_sorted_newest": false,
     "review_collection_mode": "no_review_panel",
-    "full_reviews_requested": true,
+    "full_reviews_requested": false,
     "full_reviews_attempted": false,
+    "full_review_stop_reason": "",
+    "full_review_soft_cap_applied": false,
     "review_cards_collected": 0,
     "visible_review_cards_collected": 0,
     "owner_replies_collected": 0,

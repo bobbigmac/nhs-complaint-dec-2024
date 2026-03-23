@@ -5,6 +5,7 @@ import argparse
 import configparser
 import csv
 import json
+import math
 import random
 import re
 import shutil
@@ -289,6 +290,138 @@ def title_similarity(left: str, right: str) -> float:
     return len(left_tokens & right_tokens) / max(len(left_tokens), len(right_tokens))
 
 
+HEALTHCARE_HINT_TOKENS = {
+    "clinic",
+    "doctor",
+    "doctors",
+    "dr",
+    "gp",
+    "health",
+    "medical",
+    "partners",
+    "practice",
+    "surgery",
+}
+
+GENERIC_PLACE_TITLES = {
+    normalize_name("Medical Centre"),
+    normalize_name("Medical Center"),
+    normalize_name("The Surgery"),
+    normalize_name("Doctors"),
+    normalize_name("Doctor"),
+}
+
+
+def normalized_postcode(value: str) -> str:
+    return re.sub(r"[^A-Z0-9]", "", (value or "").upper())
+
+
+def outward_postcode(value: str) -> str:
+    normalized = normalized_postcode(value)
+    match = re.match(r"^([A-Z]{1,2}\d[A-Z\d]?)", normalized)
+    return match.group(1) if match else ""
+
+
+def text_hint_tokens(value: str) -> set[str]:
+    return {
+        token
+        for token in normalize_name(value).split()
+        if token not in {"the", "and", "of", "road", "street", "lane", "close", "avenue", "high", "st"}
+        and len(token) >= 3
+    }
+
+
+def has_healthcare_hint(value: str) -> bool:
+    normalized = normalize_name(value)
+    if not normalized:
+        return False
+    tokens = set(normalized.split())
+    return any(token in HEALTHCARE_HINT_TOKENS for token in tokens)
+
+
+def contextual_text_bonus(label: str, postcode: str, street_address: str) -> float:
+    bonus = 0.0
+    postcode_full = normalized_postcode(postcode)
+    postcode_outward = outward_postcode(postcode)
+    normalized_label_compact = normalized_postcode(label)
+    if postcode_full and postcode_full in normalized_label_compact:
+        bonus += 0.4
+    elif postcode_outward and postcode_outward in normalized_label_compact:
+        bonus += 0.1
+
+    address_tokens = text_hint_tokens(street_address)
+    label_tokens = text_hint_tokens(label)
+    overlap = len(address_tokens & label_tokens)
+    if overlap:
+        bonus += min(0.3, overlap * 0.12)
+
+    if has_healthcare_hint(label):
+        bonus += 0.08
+
+    if normalize_name(label) in GENERIC_PLACE_TITLES:
+        bonus -= 0.12
+    return bonus
+
+
+def parse_optional_float(value: object) -> float | None:
+    try:
+        if value is None or str(value).strip() == "":
+            return None
+        return float(str(value).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def expected_coordinates_for_row(row: dict[str, str]) -> tuple[float, float] | None:
+    latitude = parse_optional_float(row.get("latitude"))
+    longitude = parse_optional_float(row.get("longitude"))
+    if latitude is None or longitude is None:
+        return None
+    return latitude, longitude
+
+
+def coordinate_distance_miles(left: tuple[float, float], right: tuple[float, float]) -> float:
+    lat1, lon1 = map(math.radians, left)
+    lat2, lon2 = map(math.radians, right)
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    return 3958.7613 * c
+
+
+def place_contextually_matches(
+    expected_practice_name: str,
+    place_title: str,
+    place_address_text: str,
+    postcode: str,
+    street_address: str,
+    expected_coordinates: tuple[float, float] | None,
+    chosen_search_result_label: str = "",
+    current_url: str = "",
+) -> bool:
+    if title_similarity(expected_practice_name, place_title) >= 0.25:
+        return True
+
+    normalized_address = normalize_text(place_address_text or "")
+    exact_postcode_match = False
+    postcode_full = normalized_postcode(postcode)
+    if postcode_full:
+        address_compact = normalized_postcode(normalized_address)
+        exact_postcode_match = postcode_full in address_compact
+
+    contextual_blob = " ".join(part for part in [place_title, chosen_search_result_label, normalized_address] if part).strip()
+    street_overlap = len(text_hint_tokens(contextual_blob) & text_hint_tokens(street_address)) > 0
+    healthcare_hint = has_healthcare_hint(contextual_blob)
+
+    near_expected = False
+    parsed_coords = parse_google_maps_coordinates(current_url or "")
+    if parsed_coords is not None and expected_coordinates is not None:
+        near_expected = coordinate_distance_miles(parsed_coords, expected_coordinates) <= 0.2
+
+    return healthcare_hint and exact_postcode_match and (street_overlap or near_expected)
+
+
 def slugify(value: str) -> str:
     value = normalize_name(value).replace(" ", "-")
     return value.strip("-")
@@ -366,8 +499,11 @@ def extract_overall_metrics(driver: webdriver.Firefox) -> tuple[str, float | Non
     review_count = None
     spans = driver.find_elements(By.CSS_SELECTOR, 'div[role="main"] span')
     for span in spans:
-        text = normalize_text(span.text)
-        aria = normalize_text(span.get_attribute("aria-label") or "")
+        try:
+            text = normalize_text(span.text)
+            aria = normalize_text(span.get_attribute("aria-label") or "")
+        except StaleElementReferenceException:
+            continue
         if rating is None and re.fullmatch(r"[0-5]\.\d", text):
             rating = float(text)
         if review_count is None and "reviews" in aria.lower():
@@ -377,6 +513,33 @@ def extract_overall_metrics(driver: webdriver.Firefox) -> tuple[str, float | Non
         if rating is not None and review_count is not None:
             break
     return title, rating, review_count
+
+
+def extract_place_address_text(driver: webdriver.Firefox) -> str:
+    selectors = [
+        'button[data-item-id*="address"]',
+        'div[data-item-id*="address"]',
+        'button[aria-label*="Address"]',
+        'div[aria-label*="Address"]',
+    ]
+    for selector in selectors:
+        for element in driver.find_elements(By.CSS_SELECTOR, selector):
+            try:
+                text = normalize_text(
+                    element.text
+                    or element.get_attribute("aria-label")
+                    or element.get_attribute("data-item-id")
+                    or ""
+                )
+            except StaleElementReferenceException:
+                continue
+            if not text:
+                continue
+            if text.lower().startswith("address:"):
+                return normalize_text(text.split(":", 1)[1])
+            if "address" not in text.lower():
+                return text
+    return ""
 
 
 def find_search_input(driver: webdriver.Firefox):
@@ -472,16 +635,22 @@ def search_google_maps(driver: webdriver.Firefox, wait: WebDriverWait, query: st
         raise last_error
 
 
-def search_result_match_score(practice_name: str, label: str) -> float:
+def search_result_match_score(row: dict[str, str], label: str) -> float:
+    practice_name = row.get("practice_name", "")
     score = title_similarity(practice_name, label)
     normalized_practice = normalize_name(practice_name)
     normalized_label = normalize_name(label)
     if normalized_practice and normalized_practice in normalized_label:
         score += 0.35
+    score += contextual_text_bonus(
+        label,
+        str(row.get("postcode", "")),
+        str(row.get("street_address", "")),
+    )
     return score
 
 
-def collect_search_result_candidates(driver: webdriver.Firefox, practice_name: str) -> list[dict[str, object]]:
+def collect_search_result_candidates(driver: webdriver.Firefox, row: dict[str, str]) -> list[dict[str, object]]:
     candidates: list[dict[str, object]] = []
     seen: set[tuple[str, str]] = set()
     for element in driver.find_elements(By.CSS_SELECTOR, 'a[href*="/place/"], a.hfpxzc'):
@@ -503,7 +672,7 @@ def collect_search_result_candidates(driver: webdriver.Firefox, practice_name: s
                 "label": label,
                 "sponsored": element_or_ancestor_mentions_sponsored(driver, element),
                 "blocked_title": is_blocked_place_title(label),
-                "match_score": search_result_match_score(practice_name, label),
+                "match_score": search_result_match_score(row, label),
             }
         )
     return candidates
@@ -512,10 +681,10 @@ def collect_search_result_candidates(driver: webdriver.Firefox, practice_name: s
 def click_best_search_result(
     driver: webdriver.Firefox,
     wait: WebDriverWait,
-    practice_name: str,
+    row: dict[str, str],
     minimum_score: float = 0.25,
 ) -> tuple[bool, list[dict[str, object]], dict[str, object] | None]:
-    candidates = collect_search_result_candidates(driver, practice_name)
+    candidates = collect_search_result_candidates(driver, row)
     eligible = [
         candidate
         for candidate in candidates
@@ -1100,15 +1269,24 @@ def scrape_place(
     query: str,
     recent_limit: int,
     expected_practice_name: str = "",
+    expected_postcode: str = "",
+    expected_street_address: str = "",
+    expected_coordinates: tuple[float, float] | None = None,
     full_reviews_requested: bool = False,
     full_review_limit: int = 0,
     skip_over_review_count: int = 0,
     capture_review_network: bool = True,
 ) -> dict[str, object]:
     wait = build_wait(driver, 25)
+    row_context = {
+        "practice_name": expected_practice_name or query,
+        "postcode": expected_postcode,
+        "street_address": expected_street_address,
+    }
     search_google_maps(driver, wait, query)
 
     place_title, rating, review_count = extract_overall_metrics(driver)
+    place_address_text = extract_place_address_text(driver)
     clicked_first_result = False
     search_result_candidates: list[dict[str, object]] = []
     chosen_search_result: dict[str, object] | None = None
@@ -1116,9 +1294,10 @@ def scrape_place(
         clicked_first_result, search_result_candidates, chosen_search_result = click_best_search_result(
             driver,
             wait,
-            expected_practice_name or query,
+            row_context,
         )
         place_title, rating, review_count = extract_overall_metrics(driver)
+        place_address_text = extract_place_address_text(driver)
     blocked_place_match = is_blocked_place_title(place_title)
     sponsored_place_match = page_has_sponsored_marker(driver)
     review_entrypoint_found = reviews_entrypoint_present(driver)
@@ -1126,10 +1305,11 @@ def scrape_place(
         clicked_again, search_result_candidates, chosen_search_result = click_best_search_result(
             driver,
             wait,
-            expected_practice_name or query,
+            row_context,
         )
         clicked_first_result = clicked_again or clicked_first_result
         place_title, rating, review_count = extract_overall_metrics(driver)
+        place_address_text = extract_place_address_text(driver)
         blocked_place_match = is_blocked_place_title(place_title)
         sponsored_place_match = page_has_sponsored_marker(driver)
         review_entrypoint_found = reviews_entrypoint_present(driver)
@@ -1145,10 +1325,11 @@ def scrape_place(
         clicked_again, search_result_candidates, chosen_search_result = click_best_search_result(
             driver,
             wait,
-            expected_practice_name or query,
+            row_context,
         )
         clicked_first_result = clicked_again or clicked_first_result
         place_title, rating, review_count = extract_overall_metrics(driver)
+        place_address_text = extract_place_address_text(driver)
         blocked_place_match = is_blocked_place_title(place_title)
         sponsored_place_match = page_has_sponsored_marker(driver)
         review_entrypoint_found = reviews_entrypoint_present(driver)
@@ -1160,12 +1341,30 @@ def scrape_place(
         and not blocked_place_match
         and not sponsored_place_match
         and not review_entrypoint_found
-        and title_similarity(expected_practice_name or query, place_title) < 0.25
+        and not place_contextually_matches(
+            expected_practice_name or query,
+            place_title,
+            place_address_text,
+            expected_postcode,
+            expected_street_address,
+            expected_coordinates,
+            chosen_search_result_label,
+            current_url=driver.current_url,
+        )
     ) or (
         google_page_kind(driver.current_url) == "place"
         and not blocked_place_match
         and not sponsored_place_match
-        and title_similarity(expected_practice_name or query, place_title) < 0.25
+        and not place_contextually_matches(
+            expected_practice_name or query,
+            place_title,
+            place_address_text,
+            expected_postcode,
+            expected_street_address,
+            expected_coordinates,
+            chosen_search_result_label,
+            current_url=driver.current_url,
+        )
         and chosen_search_result_score < 0.25
     )
     sponsored_search_results_only = (
@@ -1253,6 +1452,7 @@ def scrape_place(
         "query": query,
         "google_maps_title": place_title,
         "google_maps_url": current_url,
+        "google_maps_address_text": place_address_text,
         "latitude": parsed_coords[0] if parsed_coords else None,
         "longitude": parsed_coords[1] if parsed_coords else None,
         "google_rating": rating,
@@ -1574,6 +1774,9 @@ def main() -> int:
                     query,
                     args.recent_reviews,
                     expected_practice_name=row["practice_name"],
+                    expected_postcode=row.get("postcode", ""),
+                    expected_street_address=row.get("street_address", ""),
+                    expected_coordinates=expected_coordinates_for_row(row),
                     full_reviews_requested=collect_full_reviews,
                     full_review_limit=args.full_review_limit,
                     skip_over_review_count=args.skip_over_review_count,
