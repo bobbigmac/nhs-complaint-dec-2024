@@ -1,0 +1,28 @@
+{
+  "practice_name": "CENTRAL MILTON KEYNES MEDICAL CENTRE",
+  "canonical_code": "K82065",
+  "postcode": "MK13 8RN",
+  "query_used": "CENTRAL MILTON KEYNES MEDICAL CENTRE MK13 8RN",
+  "google_maps_title": "Dr C Manna - C M K Medical Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+C+Manna+-+C+M+K+Medical+Centre/@52.0419912,-0.7778157,17z/data=!4m12!1m2!2m1!1sCENTRAL+MILTON+KEYNES+MEDICAL+CENTRE+MK13+8RN!3m8!1s0x48770074efcc55e1:0xd855e4989e30f344!8m2!3d52.0420369!4d-0.7753731!9m1!1b1!15sCi1DRU5UUkFMIE1JTFRPTiBLRVlORVMgTUVESUNBTCBDRU5UUkUgTUsxMyA4Uk6SAQZkb2N0b3LgAQA!16s%2Fg%2F11dxhzgd6s?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 52.0420369,
+  "longitude": -0.7753731,
+  "google_review_count": 209,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774268637536,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48770074efcc55e1%3A0xd855e4989e30f344!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1s7yzBaYV9uZyFsg-qwOOACQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSURtenJyb0V3EAE\",[\"0x0:0xd855e4989e30f344\",null,1643384873468180,1643384873468180,[null,null,[\"https://www.google.com/maps/contrib/106255247659214130505/reviews?hl\\u003den\"],null,null,[\"Ding-Dong Ditch\",\"https://lh3.googleusercontent.com/a-/ALV-UjV-Iv8vAZMf85emPqTttRef5jG_LDZZPBBV122PVPDjicjyw7Pi\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106255247659214130505?hl\\u003den\"],\"106255247659214130505\",null,3,0,null,[0,2,1],2,[\"3 reviews\",null,null,null,null,[null,\"0ahUKEwiZj_vegbaTAxWnJHsEHR-CKbYQ7LoGCAMoAA\"]]]],null,\"4 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtenJyb0V3EAE!2m1!1s0x0:0xd855e4989e30f344!3m1!1s2@1:CIHM0ogKEICAgIDmzrroEw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURtenJyb0V3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURtenJyb0V3Gi4KF0NJSE0wb2dLRUlDQWdJRG16cnJva3dFEhNDZ3dJcWFEUWp3WVFvTGlmM3dFIhIJAAAAAAAAAAARRPMwnpjkVdgqE0Nnd0lxYURRandZUW9MaWYzd0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiZj_vegbaTAxWnJHsEHR-CKbYQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiZj_vegbaTAxWnJHsEHR-CKbYQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTVVpsYjA0MFJGOWZSV2hFWVVWdmFFUTNOV2xNTW5SR2IzbG5VVUZCUVVGQlIyZG1YMEZ2Um1WdlRqUkVSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURjcEllb2JnEAE\",[\"0x0:0xd855e4989e30f344\",null,1590314159485725,1590314159485725,[null,null,[\"https://www.google.com/maps/contrib/116061367544931840634/reviews?hl\\u003den\"],null,null,[\"Sa Meera\",\"https://lh3.googleusercontent.com/a-/ALV-UjX44AZ51gMl4cazZDS0lV5h0w_O47jzNsxmZlu456aofPIjHxLJTQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/116061367544931840634?hl\\u003den\"],\"116061367544931840634\",null,6,6,null,[0,3,1],2,[\"6 reviews\",null,null,null,null,[null,\"0ahUKEwiZj_vegbaTAxWnJHsEHR-CKbYQ7LoGCAYoAA\"]]]],null,\"5 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURjcEllb2JnEAE!2m1!1s0x0:0xd855e4989e30f344!3m1!1s2@1:CIHM0ogKEICAgIDcpIeobg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURjcEllb2JnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURjcEllb2JnGi4KF0NJSE0wb2dLRUlDQWdJRGNwSWVvN2dFEhNDZ3dJcjRtcDlnVVF5S2JPNXdFIhIJAAAAAAAAAAARRPMwnpjkVdgqE0Nnd0lyNG1wOWdVUXlLYk81d0U\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiZj_vegbaTAxWnJHsEHR-CKbYQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwiZj_vegbaTAxWnJHsEHR-CKbYQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

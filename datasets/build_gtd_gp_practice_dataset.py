@@ -1555,6 +1555,28 @@ def html_counter_summary(counter: Counter[str]) -> str:
     return " · ".join(parts)
 
 
+def nhs_registration_url(nhs_profile_url: str) -> str:
+    normalized = str(nhs_profile_url or "").strip().rstrip("/")
+    if not normalized:
+        return ""
+    return f"{normalized}/how-to-register"
+
+
+def short_street_address(value: str) -> str:
+    parts = [part.strip() for part in str(value or "").split(",") if part.strip()]
+    if not parts:
+        return ""
+    if len(parts) == 1:
+        return parts[0]
+    first, second = parts[0], parts[1]
+    street_pattern = re.compile(r"\b(road|rd|street|st|avenue|ave|lane|ln|close|drive|dr|way|court|crescent|place|walk|grove|park|gardens|square|terrace|boulevard|hill|rise|view)\b", re.I)
+    if street_pattern.search(first):
+        return first
+    if street_pattern.search(second):
+        return f"{first}, {second}"
+    return first
+
+
 def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
     survey_label = survey_short_label(str(row.get("patient_survey_name") or "").strip())
     survey_status = str(row.get("patient_survey_status") or "").strip()
@@ -1574,16 +1596,20 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "lat": row.get("lat", ""),
         "lon": row.get("lon", ""),
         "postcode": row.get("postcode", ""),
+        "short_address": short_street_address(str(row.get("street_address", ""))),
         "nation": row.get("nation", ""),
         "gtd": row.get("gtd", False),
         "management_company": row.get("management_company", ""),
         "affiliated_group": row.get("affiliated_group", ""),
         "google_score": row.get("google_score", ""),
         "google_count": row.get("google_count", ""),
+        "google_review_span_years": row.get("google_review_span_years", ""),
+        "google_reviews_per_year": row.get("google_reviews_per_year", ""),
         "google_text_url": row.get("google_text_file", ""),
-        "google_maps_url": row.get("google_url", ""),
+        "google_maps_url": row.get("google_url", "") or row.get("google_maps_url", "") or row.get("google_review_source_url", ""),
         "google_missing_text": google_missing_display(row.get("google_review_has_listing", ""), row.get("google_review_scan_status", "")),
         "nhs_url": row.get("nhs_url", ""),
+        "nhs_register_url": nhs_registration_url(str(row.get("nhs_url", ""))),
         "gtd_url": row.get("gtd_url", ""),
         "gtd_takeover_date": row.get("gtd_takeover_date", ""),
         "gtd_takeover_precision": row.get("gtd_takeover_precision", ""),
@@ -1604,6 +1630,9 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "survey_link_label": survey_link_label,
         "survey_resolution_note": str(row.get("gp_patient_survey_resolution_note") or "").strip(),
         "registered_patient_count": row.get("registered_patient_count", ""),
+        "patient_change_per_year": row.get("patient_change_per_year", ""),
+        "patient_change_start_year": row.get("patient_change_start_year", ""),
+        "patient_change_end_year": row.get("patient_change_end_year", ""),
     }
 
 
@@ -2176,6 +2205,90 @@ def build_dataset_google_review_yearly_average(
     }
 
 
+def build_google_review_activity_lookup(
+    google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
+) -> dict[str, dict[str, Any]]:
+    anchor_date = date.today()
+    if google_results_path.exists():
+        anchor_date = date.fromtimestamp(google_results_path.stat().st_mtime)
+
+    review_activity_by_code: dict[str, dict[str, Any]] = {}
+    for item in load_google_review_results(google_results_path):
+        code = str(item.get("canonical_code", "")).strip()
+        if not code:
+            continue
+        reviews_payload = item.get("recent_reviews") or []
+        earliest_review_date: date | None = None
+        latest_review_date: date | None = None
+        parsed_review_count = 0
+        for review in reviews_payload:
+            if not isinstance(review, dict):
+                continue
+            review_date = parse_google_relative_review_date(str(review.get("relative_date", "")), anchor_date)
+            if review_date is None:
+                continue
+            parsed_review_count += 1
+            if earliest_review_date is None or review_date < earliest_review_date:
+                earliest_review_date = review_date
+            if latest_review_date is None or review_date > latest_review_date:
+                latest_review_date = review_date
+        if earliest_review_date is None:
+            continue
+        google_review_count = item.get("google_review_count")
+        try:
+            total_review_count = int(google_review_count)
+        except (TypeError, ValueError):
+            total_review_count = None
+        span_days = max(1, (anchor_date - earliest_review_date).days)
+        span_years = round(span_days / 365.25, 2)
+        reviews_per_year = None
+        if total_review_count is not None:
+            reviews_per_year = round(total_review_count / max(span_days / 365.25, 1.0), 1)
+        review_activity_by_code[code] = {
+            "review_span_years": span_years,
+            "reviews_per_year": reviews_per_year,
+            "parsed_review_count": parsed_review_count,
+            "earliest_review_date": earliest_review_date.isoformat(),
+            "latest_review_date": latest_review_date.isoformat() if latest_review_date else "",
+        }
+    return review_activity_by_code
+
+
+def build_patient_change_lookup(
+    patient_counts_by_year: dict[str, dict[str, int]] | None,
+) -> dict[str, dict[str, Any]]:
+    if not patient_counts_by_year:
+        return {}
+    values_by_code: dict[str, list[tuple[int, int]]] = {}
+    for year in sorted(patient_counts_by_year.keys(), key=int):
+        counts = patient_counts_by_year.get(year) or {}
+        year_number = int(year)
+        for code, value in counts.items():
+            try:
+                count = int(value)
+            except (TypeError, ValueError):
+                continue
+            values_by_code.setdefault(str(code).strip(), []).append((year_number, count))
+    trend_by_code: dict[str, dict[str, Any]] = {}
+    for code, points in values_by_code.items():
+        if len(points) < 2:
+            continue
+        start_year, start_count = points[0]
+        end_year, end_count = points[-1]
+        year_span = end_year - start_year
+        if year_span <= 0:
+            continue
+        annual_change = (end_count - start_count) / year_span
+        trend_by_code[code] = {
+            "patient_change_per_year": round(annual_change, 1),
+            "patient_change_start_year": start_year,
+            "patient_change_end_year": end_year,
+            "patient_change_start_count": start_count,
+            "patient_change_end_count": end_count,
+        }
+    return trend_by_code
+
+
 def load_gtd_gpps_timeseries() -> dict[str, Any]:
     """Load GPPS historical subset for GTD practices (from extract script output)."""
     p = OUTPUT_DIR / "gtd_gpps_timeseries.json"
@@ -2279,8 +2392,10 @@ def write_map(
     scotland_hace_by_code, scotland_hace_manifest_by_code = load_scotland_hace_index()
     gtd_google_timeseries = build_gtd_google_score_timeseries(rows)
     dataset_google_review_average = build_dataset_google_review_yearly_average(rows)
+    google_review_activity_by_code = build_google_review_activity_lookup()
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
     patient_counts_by_year = load_registered_patient_timeseries() or {}
+    patient_change_by_code = build_patient_change_lookup(patient_counts_by_year)
     deprivation_geojson = load_deprivation_subset_geojson()
     national_supplementals = build_national_map_supplementals()
     client_national_supplementals = [build_client_map_row(row) for row in national_supplementals]
@@ -2311,6 +2426,8 @@ def write_map(
         except (TypeError, ValueError):
             continue
     for row in rows:
+        review_activity = google_review_activity_by_code.get(str(row["canonical_code"]), {})
+        patient_change = patient_change_by_code.get(str(row["canonical_code"]), {})
         nation = str(row.get("nation") or "england").strip().lower()
         survey_metadata = national_survey_metadata(nation)
         survey_payload, survey_code_used, survey_resolution_note, survey_overrides = resolve_national_practice_survey_payload(
@@ -2338,6 +2455,7 @@ def write_map(
                 "lat": row["latitude"],
                 "lon": row["longitude"],
                 "postcode": row["postcode"],
+                "street_address": row.get("street_address", ""),
                 "nation": nation,
                 "record_scope": "Manchester core dataset",
                 "gtd": row["gtd_managed"],
@@ -2345,6 +2463,9 @@ def write_map(
                 "affiliated_group": row.get("affiliated_group_name", ""),
                 "google_score": row["google_review_score"],
                 "google_count": row["google_review_count"],
+                "google_maps_url": row.get("google_url", "") or row.get("google_review_source_url", ""),
+                "google_review_span_years": review_activity.get("review_span_years", ""),
+                "google_reviews_per_year": review_activity.get("reviews_per_year", ""),
                 "google_source_note": row.get("google_review_source_note", ""),
                 "google_text_file": row.get("google_review_text_file", ""),
                 "google_review_scan_status": row.get("google_review_scan_status", ""),
@@ -2374,6 +2495,9 @@ def write_map(
                 "patient_survey_url": survey_metadata.get("patient_survey_url", "https://www.gp-patient.co.uk"),
                 "patient_survey_note": survey_metadata.get("patient_survey_note", ""),
                 "registered_patient_count": row.get("registered_patient_count", ""),
+                "patient_change_per_year": patient_change.get("patient_change_per_year", ""),
+                "patient_change_start_year": patient_change.get("patient_change_start_year", ""),
+                "patient_change_end_year": patient_change.get("patient_change_end_year", ""),
                 "registered_patient_count_source": row.get("registered_patient_count_source", ""),
             }
         )
@@ -2439,6 +2563,7 @@ body {{
   grid-template-rows: minmax(100vh, 100dvh) auto;
 }}
 .map-stage {{
+  position: relative;
   display: grid;
   grid-template-areas: "legend map";
   grid-template-columns: var(--sidebar-width, 360px) minmax(0, 1fr);
@@ -2618,6 +2743,22 @@ body {{
 .overlay-action-button:disabled {{
   opacity: 0.46;
   cursor: default;
+}}
+.map-floating-action-button {{
+  position: absolute;
+  right: 22px;
+  bottom: calc(22px + env(safe-area-inset-bottom, 0px));
+  z-index: 420;
+  width: auto;
+  min-width: 0;
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+  background: rgba(255,255,255,0.94);
+  backdrop-filter: blur(8px);
+}}
+.map-floating-action-button:hover {{
+  background: rgba(255,255,255,0.98);
 }}
 .circle-sample-controls {{
   display: grid;
@@ -3360,6 +3501,375 @@ body {{
 .place-benchmark-stat-value.tone-missing {{
   color: #7d838a;
 }}
+.service-finder-panel {{
+  display: grid;
+  gap: 14px;
+}}
+.service-finder-header {{
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(290px, 0.95fr);
+  gap: 14px 18px;
+  align-items: start;
+}}
+.service-finder-title-wrap {{
+  display: grid;
+  gap: 6px;
+}}
+.service-finder-title-wrap h2 {{
+  margin: 0;
+}}
+.service-finder-kicker {{
+  margin: 0;
+  max-width: 68ch;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(26, 28, 26, 0.8);
+}}
+.service-finder-actions {{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}}
+.service-finder-actions .overlay-action-button {{
+  min-height: 44px;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}}
+.service-finder-table-wrap {{
+  overflow-x: auto;
+  border: 1px solid rgba(26, 28, 26, 0.10);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.82);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.65);
+}}
+.service-finder-table {{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}}
+.service-finder-table th,
+.service-finder-table td {{
+  padding: 11px 12px;
+  border-top: 1px solid rgba(26, 28, 26, 0.08);
+  vertical-align: top;
+  text-align: left;
+}}
+.service-finder-table thead th {{
+  border-top: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+  background: rgba(245, 242, 233, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}}
+.service-finder-sort-button {{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 0;
+  padding: 12px 0;
+  background: transparent;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(26, 28, 26, 0.66);
+  cursor: pointer;
+}}
+.service-finder-sort-button:hover {{
+  color: rgba(26, 28, 26, 0.86);
+}}
+.service-finder-sort-button.is-active {{
+  color: rgba(26, 28, 26, 0.92);
+}}
+.service-finder-sort-indicator {{
+  min-width: 10px;
+  text-align: right;
+  font-size: 11px;
+  color: rgba(26, 28, 26, 0.42);
+}}
+.service-finder-sort-button.is-active .service-finder-sort-indicator {{
+  color: rgba(26, 28, 26, 0.82);
+}}
+.service-finder-table tbody tr:hover {{
+  background: rgba(245, 249, 255, 0.9);
+}}
+.service-finder-table tbody tr:nth-child(even) {{
+  background: rgba(250, 249, 245, 0.58);
+}}
+.service-finder-table thead th:first-child {{
+  padding-left: 24px;
+}}
+.service-finder-practice {{
+  position: relative;
+  padding-left: 24px !important;
+  padding-right: 90px !important;
+}}
+.service-finder-practice::before {{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 5px;
+  border-radius: 0 999px 999px 0;
+  background: var(--service-finder-accent, #9aa0a6);
+  opacity: 0.95;
+}}
+.service-finder-practice-name {{
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--service-finder-accent, var(--midhigh));
+  font: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}}
+.service-finder-practice-name:hover {{
+  text-decoration: underline;
+}}
+.service-finder-practice-layout {{
+  display: block;
+}}
+.service-finder-practice-main {{
+  min-width: 0;
+}}
+.service-finder-title-line {{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}}
+.service-finder-subtle {{
+  display: inline;
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba(26, 28, 26, 0.68);
+}}
+.service-finder-address-link {{
+  display: inline-block;
+  margin-top: 4px;
+  text-decoration: none;
+}}
+.service-finder-address-link .service-finder-subtle {{
+  margin-top: 0;
+}}
+.service-finder-address-line {{
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+}}
+.service-finder-address-separator {{
+  display: inline;
+  margin: 0 6px;
+  color: rgba(26, 28, 26, 0.42);
+}}
+.service-finder-address-link:hover .service-finder-subtle {{
+  color: var(--service-finder-accent, var(--midhigh));
+}}
+.service-finder-address-link .service-finder-subtle:last-child {{
+  border-bottom: 1px solid rgba(26, 28, 26, 0.18);
+}}
+.service-finder-address-link:hover .service-finder-subtle:last-child {{
+  border-bottom-color: currentColor;
+}}
+.service-finder-register-link {{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #0f5e9c;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-2px);
+  pointer-events: none;
+  transition:
+    opacity 140ms ease,
+    transform 140ms ease,
+    color 140ms ease;
+}}
+.service-finder-register-link::after {{
+  content: '↗';
+  font-size: 0.95em;
+  line-height: 1;
+}}
+.service-finder-row:hover .service-finder-register-link,
+.service-finder-row:focus-within .service-finder-register-link {{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}}
+.service-finder-register-link:hover {{
+  color: #0b4978;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+  text-decoration-thickness: 1px;
+}}
+.service-finder-primary-metric {{
+  min-width: 78px;
+}}
+.service-finder-secondary-metric {{
+  min-width: 110px;
+}}
+.service-finder-primary-value {{
+  display: block;
+  font-size: 25px;
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #161816;
+}}
+.service-finder-primary-value.is-missing {{
+  color: #8a9097;
+}}
+.service-finder-primary-value-link {{
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}}
+.service-finder-primary-value-link:hover {{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1em;
+}}
+.service-finder-primary-label {{
+  display: none;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(26, 28, 26, 0.56);
+}}
+.service-finder-secondary-value {{
+  display: block;
+  font-size: 16px;
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #161816;
+  font-variant-numeric: tabular-nums;
+}}
+.service-finder-secondary-value.is-missing {{
+  color: #8a9097;
+}}
+.service-finder-secondary-detail {{
+  color: rgba(26, 28, 26, 0.46);
+  font-weight: 700;
+}}
+.service-finder-secondary-label {{
+  display: none;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(26, 28, 26, 0.56);
+}}
+.service-finder-secondary-trend {{
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.15;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}}
+.service-finder-secondary-trend.is-positive {{
+  color: #1f7a45;
+}}
+.service-finder-secondary-trend.is-negative {{
+  color: #b4472d;
+}}
+.service-finder-secondary-trend.is-flat {{
+  color: rgba(26, 28, 26, 0.54);
+}}
+.service-finder-distance-cell {{
+  white-space: nowrap;
+}}
+.service-finder-distance-value {{
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: rgba(26, 28, 26, 0.82);
+}}
+.service-finder-pin {{
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #161816;
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18), inset 0 0 0 2px rgba(255,255,255,0.94);
+  font: 800 13px/1 "Avenir Next", "Trebuchet MS", sans-serif;
+  letter-spacing: -0.02em;
+}}
+.service-finder-pin.is-large {{
+  width: 44px;
+  height: 44px;
+  font-size: 14px;
+}}
+.service-finder-drag-ghost {{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 94, 156, 0.22);
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.16);
+  color: var(--ink);
+  font: 700 14px/1.1 "Avenir Next", "Trebuchet MS", sans-serif;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}}
+.service-finder-score {{
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}}
+.service-finder-empty {{
+  padding: 18px 14px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(26, 28, 26, 0.72);
+}}
+.service-finder-tag {{
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(15, 94, 156, 0.10);
+  color: rgba(15, 94, 156, 0.9);
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: middle;
+}}
 @media (max-width: 960px) {{
   .page {{
     grid-template-rows: minmax(100vh, 100dvh) auto;
@@ -3407,10 +3917,77 @@ body {{
     flex-direction: column;
     align-items: stretch;
   }}
+  .service-finder-header {{
+    grid-template-columns: 1fr;
+  }}
+  .service-finder-actions {{
+    grid-template-columns: 1fr;
+  }}
+  .service-finder-title-line {{
+    align-items: flex-start;
+  }}
+  .service-finder-practice {{
+    padding-right: 72px !important;
+  }}
+  .service-finder-register-link {{
+    top: 12px;
+    right: 12px;
+  }}
+  .service-finder-primary-value {{
+    font-size: 22px;
+  }}
+  .map-floating-action-button {{
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    padding: 9px 12px;
+  }}
   .legend {{
     border-right: 0;
     border-top: 1px solid var(--line);
     box-shadow: none;
+  }}
+}}
+@media (max-width: 720px) {{
+  .service-finder-table thead {{
+    display: none;
+  }}
+  .service-finder-primary-label,
+  .service-finder-secondary-label {{
+    display: block;
+  }}
+  .service-finder-table,
+  .service-finder-table tbody,
+  .service-finder-table tr {{
+    display: block;
+  }}
+  .service-finder-table tbody tr {{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }}
+  .service-finder-table tbody td {{
+    display: block;
+  }}
+  .service-finder-practice,
+  .service-finder-distance-cell {{
+    grid-column: 1 / -1;
+  }}
+  .service-finder-distance-cell {{
+    padding-top: 0;
+    padding-bottom: 8px;
+  }}
+  .service-finder-primary-metric-google {{
+    grid-column: 1;
+  }}
+  .service-finder-primary-metric-survey {{
+    grid-column: 1;
+  }}
+  .service-finder-secondary-metric-reviews {{
+    grid-column: 2;
+    grid-row: 3;
+  }}
+  .service-finder-secondary-metric-patients {{
+    grid-column: 2;
+    grid-row: 4;
   }}
 }}
 @media print {{
@@ -3535,8 +4112,37 @@ body {{
       </div>
     </div>
     <div id="map"></div>
+    <button type="button" id="service-finder-map-button" class="overlay-action-button map-floating-action-button" title="Click, then click the map to place a practice lookup pin."><span>📍 Find Practices</span></button>
   </div>
   <div class="insights">
+    <section class="panel comparison-panel service-finder-panel">
+      <div class="service-finder-header">
+        <div class="service-finder-title-wrap">
+          <h2 id="service-finder-heading">Find My Best Practice</h2>
+          <p class="service-finder-kicker">Pick a location to see available practices, best first.</p>
+        </div>
+        <div class="service-finder-actions">
+          <button type="button" id="service-finder-place-button" class="overlay-action-button" title="Click, then click the map to place a practice lookup pin."><span>📍 Find Practices</span></button>
+          <button type="button" id="service-finder-locate-button" class="overlay-action-button" title="Use browser geolocation for the lookup pin."><span>Use my location</span><span class="overlay-toggle-icon">L</span></button>
+          <button type="button" id="service-finder-clear-button" class="overlay-action-button" title="Clear the current lookup pin."><span>Clear</span><span class="overlay-toggle-icon">X</span></button>
+        </div>
+      </div>
+      <div class="service-finder-table-wrap" aria-live="polite">
+        <table class="service-finder-table">
+          <thead>
+            <tr>
+              <th><button type="button" class="service-finder-sort-button" data-service-finder-sort="practice"><span>Practice</span><span class="service-finder-sort-indicator"></span></button></th>
+              <th><button type="button" class="service-finder-sort-button" data-service-finder-sort="distance"><span>Distance</span><span class="service-finder-sort-indicator"></span></button></th>
+              <th><button type="button" class="service-finder-sort-button" data-service-finder-sort="google"><span>Google</span><span class="service-finder-sort-indicator"></span></button></th>
+              <th><button type="button" class="service-finder-sort-button" data-service-finder-sort="survey"><span>Survey</span><span class="service-finder-sort-indicator"></span></button></th>
+              <th><button type="button" class="service-finder-sort-button" data-service-finder-sort="reviews"><span>Review Count</span><span class="service-finder-sort-indicator"></span></button></th>
+              <th><button type="button" class="service-finder-sort-button" data-service-finder-sort="patients"><span>Patients</span><span class="service-finder-sort-indicator"></span></button></th>
+            </tr>
+          </thead>
+          <tbody id="service-finder-results"></tbody>
+        </table>
+      </div>
+    </section>
     <section class="panel comparison-panel">
       <h2 id="comparison-heading">Interactive Benchmarks</h2>
       <p id="comparison-note" class="hint"></p>
@@ -3736,6 +4342,7 @@ const nationalMarkerLayer = L.layerGroup().addTo(map);
 const cityCircleLayer = L.layerGroup().addTo(map);
 const sampleCircleLayer = L.layerGroup().addTo(map);
 const catchmentOutlineLayer = L.layerGroup().addTo(map);
+const serviceFinderPointLayer = L.layerGroup().addTo(map);
 let voronoiLayer = null;
 let deprivationLayer = null;
 const nationalPane = map.createPane('nationalSupplementals');
@@ -3760,6 +4367,16 @@ let hoveredCatchmentCode = null;
 const persistentCatchmentCodes = new Set();
 let manchesterCatchmentIndex = null;
 let manchesterCatchmentLoadPromise = null;
+let serviceFinderArmed = false;
+let serviceFinderPoint = null;
+let serviceFinderLocationLabel = '';
+let serviceFinderEmptyMessage = '';
+let serviceFinderButtonFlash = '';
+let serviceFinderButtonFlashTimer = null;
+let serviceFinderDragActive = false;
+let serviceFinderDragGhost = null;
+let serviceFinderSortKey = 'google';
+let serviceFinderSortDirection = 'desc';
 let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
 let nationalDeprivationUsePopulation = false;
@@ -3899,6 +4516,16 @@ function numericOrNull(value) {{
   if (typeof value === 'string' && value.trim() === '') return null;
   const numeric = Number(value);
   return Number.isFinite(numeric) ? numeric : null;
+}}
+
+function roundApproxPatientsPerYear(value) {{
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return null;
+  const magnitude = Math.abs(numeric);
+  if (magnitude >= 2000) return Math.round(numeric / 100) * 100;
+  if (magnitude >= 500) return Math.round(numeric / 50) * 50;
+  if (magnitude >= 100) return Math.round(numeric / 25) * 25;
+  return Math.round(numeric / 10) * 10;
 }}
 
 function surveyParticipationCount(row) {{
@@ -4134,13 +4761,14 @@ function baseShapeMetrics(shape) {{
   return {{ width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 }};
 }}
 
-function markerSvg(shape, color, label, fontSize, missing) {{
-  const stroke = 'rgba(0,0,0,0.28)';
+function markerSvg(shape, color, label, fontSize, missing, highlighted = false) {{
+  const stroke = highlighted ? '#111111' : 'rgba(0,0,0,0.28)';
+  const strokeWidth = highlighted ? '2.8' : '1.2';
   const textColor = missing ? '#f4f4f4' : '#ffffff';
   if (shape === 'triangle') {{
     return `
       <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 42 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="21,1 41,35 1,35" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <polygon points="21,1 41,35 1,35" fill="${{color}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}" />
         <text x="21" y="24" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
     `;
@@ -4148,7 +4776,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   if (shape === 'square') {{
     return `
       <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="1" y="1" width="32" height="32" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <rect x="1" y="1" width="32" height="32" fill="${{color}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}" />
         <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
     `;
@@ -4156,7 +4784,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   if (shape === 'diamond') {{
     return `
       <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="17,1 33,17 17,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <polygon points="17,1 33,17 17,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}" />
         <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
     `;
@@ -4164,7 +4792,7 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   if (shape === 'hexagon') {{
     return `
       <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 38 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="10,1 28,1 37,17 28,33 10,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <polygon points="10,1 28,1 37,17 28,33 10,33 1,17" fill="${{color}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}" />
         <text x="19" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
     `;
@@ -4172,14 +4800,14 @@ function markerSvg(shape, color, label, fontSize, missing) {{
   if (shape === 'pentagon') {{
     return `
       <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 38 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="19,1 37,14 31,35 7,35 1,14" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+        <polygon points="19,1 37,14 31,35 7,35 1,14" fill="${{color}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}" />
         <text x="19" y="20" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
       </svg>
     `;
   }}
   return `
     <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="17" cy="17" r="16" fill="${{color}}" stroke="${{stroke}}" stroke-width="1.2" />
+      <circle cx="17" cy="17" r="16" fill="${{color}}" stroke="${{stroke}}" stroke-width="${{strokeWidth}}" />
       <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${{textColor}}" font-size="${{fontSize}}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${{label}}</text>
     </svg>
   `;
@@ -4701,7 +5329,10 @@ function preloadManchesterCatchments() {{
   if (manchesterCatchmentIndex || manchesterCatchmentLoadPromise) return;
   window.setTimeout(() => {{
     loadManchesterCatchmentIndex().then(() => {{
+      renderMarkers();
       updateHoveredCatchmentOutline();
+      renderServiceFinderMarker();
+      renderServiceFinder();
     }});
   }}, 0);
 }}
@@ -4759,12 +5390,361 @@ function togglePersistentCatchment(code) {{
   updateHoveredCatchmentOutline();
 }}
 
+function serviceFinderDefaultDirection(sortKey) {{
+  return sortKey === 'practice' || sortKey === 'distance' ? 'asc' : 'desc';
+}}
+
+function serviceFinderAccentColor(row) {{
+  const google = numericOrNull(row?.google_score);
+  if (google !== null) return metricColorForValue('google', google);
+  const survey = numericOrNull(row?.survey_overall_good_percent);
+  if (survey !== null) return metricColorForValue('survey', survey);
+  return '#9aa0a6';
+}}
+
+function serviceFinderColumnValue(entry, sortKey) {{
+  const row = entry.row || entry;
+  if (sortKey === 'practice') return String(row?.name || '').trim().toLowerCase();
+  if (sortKey === 'distance') return Number.isFinite(entry.distance) ? entry.distance : null;
+  if (sortKey === 'google') return numericOrNull(row?.google_score);
+  if (sortKey === 'reviews') return numericOrNull(row?.google_count);
+  if (sortKey === 'survey') return numericOrNull(row?.survey_overall_good_percent);
+  if (sortKey === 'patients') return numericOrNull(row?.registered_patient_count);
+  return null;
+}}
+
+function updateServiceFinderSortButtons() {{
+  document.querySelectorAll('[data-service-finder-sort]').forEach((button) => {{
+    const key = button.getAttribute('data-service-finder-sort');
+    const indicator = button.querySelector('.service-finder-sort-indicator');
+    const isActive = key === serviceFinderSortKey;
+    button.classList.toggle('is-active', isActive);
+    if (indicator) indicator.textContent = isActive ? (serviceFinderSortDirection === 'asc' ? '▲' : '▼') : '';
+  }});
+}}
+
+function clearServiceFinderButtonFlash() {{
+  if (serviceFinderButtonFlashTimer) {{
+    window.clearTimeout(serviceFinderButtonFlashTimer);
+    serviceFinderButtonFlashTimer = null;
+  }}
+  serviceFinderButtonFlash = '';
+}}
+
+function flashServiceFinderButton(label, duration = 2600) {{
+  clearServiceFinderButtonFlash();
+  serviceFinderButtonFlash = label;
+  renderServiceFinder();
+  serviceFinderButtonFlashTimer = window.setTimeout(() => {{
+    serviceFinderButtonFlash = '';
+    serviceFinderButtonFlashTimer = null;
+    renderServiceFinder();
+  }}, duration);
+}}
+
+function serviceFinderButtonText() {{
+  if (serviceFinderButtonFlash) return serviceFinderButtonFlash;
+  if (serviceFinderDragActive) return '📍 Pick a Location';
+  if (serviceFinderArmed || serviceFinderPoint) return '📍 Pick a Location';
+  return '📍 Find Practices';
+}}
+
+function removeServiceFinderDragGhost() {{
+  if (serviceFinderDragGhost?.parentNode) {{
+    serviceFinderDragGhost.parentNode.removeChild(serviceFinderDragGhost);
+  }}
+  serviceFinderDragGhost = null;
+}}
+
+function updateServiceFinderDragGhost(clientX, clientY) {{
+  if (!serviceFinderDragGhost) {{
+    serviceFinderDragGhost = document.createElement('div');
+    serviceFinderDragGhost.className = 'service-finder-drag-ghost';
+    serviceFinderDragGhost.textContent = '📍 Pick a Location';
+    document.body.appendChild(serviceFinderDragGhost);
+  }}
+  serviceFinderDragGhost.style.left = `${{clientX}}px`;
+  serviceFinderDragGhost.style.top = `${{clientY}}px`;
+}}
+
+function mapLatLngFromClientPoint(clientX, clientY) {{
+  const container = map.getContainer();
+  if (!container) return null;
+  const rect = container.getBoundingClientRect();
+  if (clientX < rect.left || clientX > rect.right || clientY < rect.top || clientY > rect.bottom) {{
+    return null;
+  }}
+  const point = L.point(clientX - rect.left, clientY - rect.top);
+  return map.containerPointToLatLng(point);
+}}
+
+function updateServiceFinderButtons() {{
+  const text = serviceFinderButtonText();
+  const title = serviceFinderArmed
+    ? 'Click the map to place a practice lookup pin.'
+    : 'Click, then click the map to place a practice lookup pin.';
+  ['service-finder-place-button', 'service-finder-map-button'].forEach((id) => {{
+    const button = document.getElementById(id);
+    if (!button) return;
+    button.classList.toggle('is-active', serviceFinderArmed);
+    button.title = title;
+    const label = button.querySelector('span');
+    if (label) label.textContent = text;
+  }});
+}}
+
+function scrollToServiceFinder() {{
+  const heading = document.getElementById('service-finder-heading');
+  if (!heading) return;
+  heading.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+}}
+
+function renderServiceFinderMarker() {{
+  serviceFinderPointLayer.clearLayers();
+  if (!serviceFinderPoint) return;
+  const matches = manchesterCatchmentIndex
+    ? (serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || [])
+    : null;
+  const count = matches ? matches.length : null;
+  const countText = count === null ? '…' : String(count);
+  const icon = L.divIcon({{
+    className: 'service-finder-pin-icon',
+    html: `<div class="service-finder-pin${{count !== null && count >= 100 ? ' is-large' : ''}}">${{escapeHtml(countText)}}</div>`,
+    iconSize: count !== null && count >= 100 ? [44, 44] : [38, 38],
+    iconAnchor: count !== null && count >= 100 ? [22, 22] : [19, 19],
+  }});
+  const tooltip = count === null
+    ? `${{serviceFinderLocationLabel || 'Selected location'}} · waiting for catchments`
+    : `${{serviceFinderLocationLabel || 'Selected location'}} · ${{count.toLocaleString('en-GB')}} practice${{count === 1 ? '' : 's'}}`;
+  const marker = L.marker([serviceFinderPoint.lat, serviceFinderPoint.lon], {{ icon, draggable: true }});
+  marker.on('click', () => {{
+    scrollToServiceFinder();
+  }});
+  marker.on('dragend', () => {{
+    const latlng = marker.getLatLng();
+    setServiceFinderPoint(latlng.lat, latlng.lng, 'Selected location');
+  }});
+  marker
+    .bindTooltip(tooltip, {{ sticky: false, opacity: 0.94 }})
+    .addTo(serviceFinderPointLayer);
+}}
+
+function clearServiceFinderPoint() {{
+  serviceFinderArmed = false;
+  serviceFinderPoint = null;
+  serviceFinderLocationLabel = '';
+  serviceFinderEmptyMessage = '';
+  clearServiceFinderButtonFlash();
+  renderMarkers();
+  renderServiceFinderMarker();
+  renderServiceFinder();
+}}
+
+function setServiceFinderPoint(lat, lon, label = 'Selected location') {{
+  serviceFinderArmed = false;
+  serviceFinderPoint = {{
+    lat: Number(lat),
+    lon: Number(lon),
+  }};
+  serviceFinderLocationLabel = label;
+  serviceFinderEmptyMessage = '';
+  renderMarkers();
+  renderServiceFinderMarker();
+  renderServiceFinder();
+  flashServiceFinderButton('✅ List Updated');
+}}
+
+function serviceFinderRowsForPoint(lat, lon) {{
+  if (!manchesterCatchmentIndex) return null;
+  const point = turf.point([Number(lon), Number(lat)]);
+  const matches = [];
+  rows.forEach((row) => {{
+    const features = manchesterCatchmentIndex.get(row.code) || [];
+    if (!features.length) return;
+    const isMatch = features.some((feature) => {{
+      try {{
+        return turf.booleanPointInPolygon(point, feature);
+      }} catch (_error) {{
+        return false;
+      }}
+    }});
+    if (isMatch) matches.push(row);
+  }});
+  return matches;
+}}
+
+function serviceFinderResultRows(matches) {{
+  const entries = matches.map((row) => ({{
+    row,
+    distance: distanceMiles(serviceFinderPoint.lat, serviceFinderPoint.lon, Number(row.lat), Number(row.lon)),
+  }}));
+  return entries.sort((left, right) => {{
+    const leftValue = serviceFinderColumnValue(left, serviceFinderSortKey);
+    const rightValue = serviceFinderColumnValue(right, serviceFinderSortKey);
+    if (leftValue === null && rightValue !== null) return 1;
+    if (leftValue !== null && rightValue === null) return -1;
+    if (leftValue !== null && rightValue !== null && leftValue !== rightValue) {{
+      if (typeof leftValue === 'string' || typeof rightValue === 'string') {{
+        return serviceFinderSortDirection === 'asc'
+          ? String(leftValue).localeCompare(String(rightValue), 'en')
+          : String(rightValue).localeCompare(String(leftValue), 'en');
+      }}
+      return serviceFinderSortDirection === 'asc' ? leftValue - rightValue : rightValue - leftValue;
+    }}
+    const leftGoogle = numericOrNull(left.row.google_score);
+    const rightGoogle = numericOrNull(right.row.google_score);
+    if (leftGoogle === null && rightGoogle !== null) return 1;
+    if (leftGoogle !== null && rightGoogle === null) return -1;
+    if (leftGoogle !== null && rightGoogle !== null && leftGoogle !== rightGoogle) return rightGoogle - leftGoogle;
+    return String(left.row.name || '').localeCompare(String(right.row.name || ''), 'en');
+  }});
+}}
+
+function renderServiceFinder() {{
+  const tbody = document.getElementById('service-finder-results');
+  const clearButton = document.getElementById('service-finder-clear-button');
+  if (!tbody) return;
+  updateServiceFinderSortButtons();
+  updateServiceFinderButtons();
+  if (clearButton) clearButton.disabled = !serviceFinderPoint;
+
+  if (!serviceFinderPoint) {{
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">${{escapeHtml(serviceFinderEmptyMessage || 'Drop a pin or use your location.')}}</td></tr>`;
+    return;
+  }}
+
+  if (!manchesterCatchmentIndex) {{
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">Waiting for catchment polygons...</td></tr>`;
+    return;
+  }}
+
+  const matches = serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || [];
+  const ranked = serviceFinderResultRows(matches);
+
+  if (!ranked.length) {{
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">No practice catchment in the current bundle covers this point.</td></tr>`;
+    return;
+  }}
+
+  tbody.innerHTML = ranked.map((entry, index) => {{
+    const row = entry.row;
+    const google = numericOrNull(row.google_score);
+    const survey = numericOrNull(row.survey_overall_good_percent);
+    const reviews = numericOrNull(row.google_count);
+    const reviewsPerYear = numericOrNull(row.google_reviews_per_year);
+    const patients = numericOrNull(row.registered_patient_count);
+    const patientChangePerYear = numericOrNull(row.patient_change_per_year);
+    const distance = entry.distance;
+    const accentColor = serviceFinderAccentColor(row);
+    const nhsUrl = String(row.nhs_url || '').trim();
+    const registerUrl = String(row.nhs_register_url || '').trim();
+    const googleMapsUrl = String(row.google_maps_url || '').trim();
+    const surveyUrl = String(row.survey_link_url || '').trim();
+    const shortAddress = String(row.short_address || '').trim();
+    const patientLabel = patients === null ? '?' : patients.toLocaleString('en-GB');
+    const googleLabel = google === null ? '?' : google.toFixed(1);
+    const reviewRateLabel = reviewsPerYear === null ? '' : `${{reviewsPerYear < 10 ? reviewsPerYear.toFixed(1) : Math.round(reviewsPerYear)}}/yr`;
+    const reviewMainLabel = reviews === null ? '?' : Math.round(reviews).toLocaleString('en-GB');
+    const reviewDetailMarkup = reviewRateLabel ? `<span class="service-finder-secondary-detail"> (${{reviewRateLabel}})</span>` : '';
+    const reviewClass = reviews === null ? 'service-finder-secondary-value is-missing' : 'service-finder-secondary-value';
+    const patientClass = patients === null ? 'service-finder-secondary-value is-missing' : 'service-finder-secondary-value';
+    const roundedPatientChange = patientChangePerYear === null ? null : roundApproxPatientsPerYear(patientChangePerYear);
+    const patientTrendClass = roundedPatientChange === null
+      ? ''
+      : roundedPatientChange > 0
+        ? 'service-finder-secondary-trend is-positive'
+        : roundedPatientChange < 0
+          ? 'service-finder-secondary-trend is-negative'
+          : 'service-finder-secondary-trend is-flat';
+    const patientTrendLabel = roundedPatientChange === null
+      ? ''
+      : `(${{roundedPatientChange > 0 ? '+' : roundedPatientChange < 0 ? '-' : ''}}~${{Math.abs(roundedPatientChange).toLocaleString('en-GB')}}/yr)`;
+    const surveyLabel = survey === null ? '?' : `${{Math.round(survey)}}%`;
+    const googleClass = google === null ? 'service-finder-primary-value is-missing' : 'service-finder-primary-value';
+    const surveyClass = survey === null ? 'service-finder-primary-value is-missing' : 'service-finder-primary-value';
+    const googleStyle = google === null ? '' : ` style="color:${{metricColorForValue('google', google)}}"`;
+    const surveyStyle = survey === null ? '' : ` style="color:${{metricColorForValue('survey', survey)}}"`;
+    const distanceLabel = Number.isFinite(distance) ? `${{distance.toFixed(distance < 10 ? 1 : 0)}} mi` : '?';
+    const scopeTag = row.gtd ? '<span class="service-finder-tag">GTD</span>' : '';
+    const titleMarkup = nhsUrl
+      ? `<a class="service-finder-practice-name" href="${{escapeHtml(nhsUrl)}}" target="_blank" rel="noreferrer">${{escapeHtml(row.name || row.code)}}</a>`
+      : `<button type="button" class="service-finder-practice-name" data-service-finder-code="${{escapeHtml(row.code)}}">${{escapeHtml(row.name || row.code)}}</button>`;
+    const addressBits = [
+      shortAddress ? `<span class="service-finder-subtle">${{escapeHtml(shortAddress)}}</span>` : '',
+      row.postcode ? `<span class="service-finder-subtle">${{escapeHtml(row.postcode)}}</span>` : '',
+    ].filter(Boolean);
+    const addressLineMarkup = addressBits.length
+      ? `<span class="service-finder-address-line">${{addressBits.join('<span class="service-finder-address-separator">·</span>')}}</span>`
+      : '';
+    const addressLinkUrl = googleMapsUrl || nhsUrl;
+    const addressMarkup = addressLinkUrl
+      ? (addressLineMarkup ? `<a class="service-finder-address-link" href="${{escapeHtml(addressLinkUrl)}}" target="_blank" rel="noreferrer">${{addressLineMarkup}}</a>` : '')
+      : addressLineMarkup;
+    const googleValueMarkup = googleMapsUrl && google !== null
+      ? `<a class="service-finder-primary-value-link" href="${{escapeHtml(googleMapsUrl)}}" target="_blank" rel="noreferrer"><span class="${{googleClass}}"${{googleStyle}}>${{googleLabel}}</span></a>`
+      : `<span class="${{googleClass}}"${{googleStyle}}>${{googleLabel}}</span>`;
+    const surveyValueMarkup = surveyUrl && survey !== null
+      ? `<a class="service-finder-primary-value-link" href="${{escapeHtml(surveyUrl)}}" target="_blank" rel="noreferrer"><span class="${{surveyClass}}"${{surveyStyle}}>${{surveyLabel}}</span></a>`
+      : `<span class="${{surveyClass}}"${{surveyStyle}}>${{surveyLabel}}</span>`;
+    return `
+      <tr class="service-finder-row" style="--service-finder-accent:${{accentColor}}">
+        <td class="service-finder-practice">
+          <div class="service-finder-practice-layout">
+            <div class="service-finder-practice-main">
+              <div class="service-finder-title-line">
+                ${{titleMarkup}}${{scopeTag}}
+              </div>
+              ${{addressMarkup}}
+            </div>
+            ${{registerUrl ? `<a class="service-finder-register-link" href="${{escapeHtml(registerUrl)}}" target="_blank" rel="noreferrer">Register</a>` : ''}}
+          </div>
+        </td>
+        <td class="service-finder-distance-cell"><span class="service-finder-distance-value">${{distanceLabel}}</span></td>
+        <td class="service-finder-primary-metric service-finder-primary-metric-google">
+          ${{googleValueMarkup}}
+          <span class="service-finder-primary-label">Google</span>
+        </td>
+        <td class="service-finder-primary-metric service-finder-primary-metric-survey">
+          ${{surveyValueMarkup}}
+          <span class="service-finder-primary-label">Survey</span>
+        </td>
+        <td class="service-finder-secondary-metric service-finder-secondary-metric-reviews">
+          <span class="${{reviewClass}}">${{reviewMainLabel}}${{reviewDetailMarkup}}</span>
+          <span class="service-finder-secondary-label">Review Count</span>
+        </td>
+        <td class="service-finder-secondary-metric service-finder-secondary-metric-patients">
+          <span class="${{patientClass}}">${{patientLabel}}</span>
+          ${{patientTrendLabel ? `<span class="${{patientTrendClass}}">${{patientTrendLabel}}</span>` : ''}}
+          <span class="service-finder-secondary-label">Patients</span>
+        </td>
+      </tr>
+    `;
+  }}).join('');
+
+  tbody.querySelectorAll('[data-service-finder-code]').forEach((button) => {{
+    button.addEventListener('click', () => {{
+      const code = button.getAttribute('data-service-finder-code');
+      const row = rowsByCode.get(code);
+      if (!row) return;
+      focusRow(row);
+      map.flyTo([Number(row.lat), Number(row.lon)], Math.max(map.getZoom(), 12), {{ duration: 0.65 }});
+      persistentCatchmentCodes.add(row.code);
+      updateHoveredCatchmentOutline();
+    }});
+  }});
+}}
+
 function renderMarkers() {{
   markerLayer.clearLayers();
   clearHoveredCatchment();
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
   const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
+  const serviceFinderMatchedCodes = new Set(
+    serviceFinderPoint && manchesterCatchmentIndex
+      ? (serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || []).map((row) => row.code)
+      : []
+  );
   for (const row of rows) {{
     const metricValue = metric.value(row);
     if (metricValue === null && activeMetric === 'google') {{
@@ -4787,7 +5767,7 @@ function renderMarkers() {{
     const scaledHeight = Math.round(metrics.height * scale);
     const icon = L.divIcon({{
       className: 'marker-icon',
-      html: markerSvg(shapeName, color, label, fontSize, label === '?'),
+      html: markerSvg(shapeName, color, label, fontSize, label === '?', serviceFinderMatchedCodes.has(row.code)),
       iconSize: [scaledWidth, scaledHeight],
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
       popupAnchor: [0, metrics.popupY]
@@ -7928,6 +8908,7 @@ function rerenderAll() {{
   renderPatientChangeChart();
   renderPatientTreemap();
   renderPlaceBenchmarks();
+  renderServiceFinder();
   renderRatingVsSurveyChart();
   renderComparisons();
 }}
@@ -8027,7 +9008,9 @@ document.getElementById('city-circles-toggle').addEventListener('change', (event
 }});
 
 document.getElementById('sample-circle-button').addEventListener('click', () => {{
+  serviceFinderArmed = false;
   sampleCircleArmed = !sampleCircleArmed;
+  renderServiceFinder();
   updateSampleCircleControls();
 }});
 
@@ -8044,6 +9027,125 @@ document.getElementById('sample-circle-radius').addEventListener('input', (event
   renderSampleCircle();
   renderPlaceBenchmarks();
   updateSampleCircleControls();
+}});
+
+function toggleServiceFinderArmed() {{
+  sampleCircleArmed = false;
+  serviceFinderArmed = !serviceFinderArmed;
+  clearServiceFinderButtonFlash();
+  updateSampleCircleControls();
+  renderServiceFinder();
+}}
+
+function bindServiceFinderDrag(buttonId) {{
+  const button = document.getElementById(buttonId);
+  if (!button) return;
+  button.addEventListener('dragstart', (event) => {{
+    event.preventDefault();
+  }});
+  button.addEventListener('pointerdown', (event) => {{
+    if (event.button !== undefined && event.button !== 0) return;
+    const startX = Number(event.clientX);
+    const startY = Number(event.clientY);
+    let dragging = false;
+    const pointerId = event.pointerId;
+
+    const cleanup = () => {{
+      window.removeEventListener('pointermove', handleMove, true);
+      window.removeEventListener('pointerup', handleUp, true);
+      window.removeEventListener('pointercancel', handleCancel, true);
+      serviceFinderDragActive = false;
+      removeServiceFinderDragGhost();
+      renderServiceFinder();
+    }};
+
+    const handleMove = (moveEvent) => {{
+      if (moveEvent.pointerId !== pointerId) return;
+      const distance = Math.hypot(Number(moveEvent.clientX) - startX, Number(moveEvent.clientY) - startY);
+      if (!dragging && distance < 8) return;
+      if (!dragging) {{
+        dragging = true;
+        sampleCircleArmed = false;
+        serviceFinderArmed = false;
+        clearServiceFinderButtonFlash();
+        serviceFinderDragActive = true;
+      }}
+      updateServiceFinderDragGhost(Number(moveEvent.clientX), Number(moveEvent.clientY));
+      renderServiceFinder();
+      moveEvent.preventDefault();
+    }};
+
+    const handleUp = (upEvent) => {{
+      if (upEvent.pointerId !== pointerId) return;
+      if (!dragging) {{
+        cleanup();
+        toggleServiceFinderArmed();
+        return;
+      }}
+      const latlng = mapLatLngFromClientPoint(Number(upEvent.clientX), Number(upEvent.clientY));
+      cleanup();
+      if (latlng) {{
+        setServiceFinderPoint(latlng.lat, latlng.lng, 'Dropped pin');
+      }}
+    }};
+
+    const handleCancel = (cancelEvent) => {{
+      if (cancelEvent.pointerId !== pointerId) return;
+      cleanup();
+    }};
+
+    window.addEventListener('pointermove', handleMove, true);
+    window.addEventListener('pointerup', handleUp, true);
+    window.addEventListener('pointercancel', handleCancel, true);
+  }});
+}}
+
+bindServiceFinderDrag('service-finder-place-button');
+bindServiceFinderDrag('service-finder-map-button');
+
+document.querySelectorAll('[data-service-finder-sort]').forEach((button) => {{
+  button.addEventListener('click', () => {{
+    const sortKey = String(button.getAttribute('data-service-finder-sort') || '').trim();
+    if (!sortKey) return;
+    if (serviceFinderSortKey === sortKey) {{
+      serviceFinderSortDirection = serviceFinderSortDirection === 'asc' ? 'desc' : 'asc';
+    }} else {{
+      serviceFinderSortKey = sortKey;
+      serviceFinderSortDirection = serviceFinderDefaultDirection(sortKey);
+    }}
+    renderServiceFinder();
+  }});
+}});
+
+document.getElementById('service-finder-clear-button').addEventListener('click', () => {{
+  clearServiceFinderPoint();
+}});
+
+document.getElementById('service-finder-locate-button').addEventListener('click', () => {{
+  if (!navigator.geolocation) {{
+    serviceFinderArmed = false;
+    serviceFinderEmptyMessage = 'Browser geolocation is not available here.';
+    renderServiceFinder();
+    return;
+  }}
+  navigator.geolocation.getCurrentPosition(
+    (position) => {{
+      const lat = Number(position.coords.latitude);
+      const lon = Number(position.coords.longitude);
+      setServiceFinderPoint(lat, lon, 'Browser location');
+      map.flyTo([lat, lon], Math.max(map.getZoom(), 12), {{ duration: 0.65 }});
+    }},
+    () => {{
+      serviceFinderArmed = false;
+      serviceFinderEmptyMessage = 'Browser geolocation was unavailable or permission was denied.';
+      renderServiceFinder();
+    }},
+    {{
+      enableHighAccuracy: true,
+      timeout: 10000,
+      maximumAge: 300000,
+    }}
+  );
 }});
 
 const scoreSourceControl = document.getElementById('score-source-control');
@@ -8113,6 +9215,10 @@ map.on('zoomend', () => {{
 }});
 
 map.on('click', (event) => {{
+  if (serviceFinderArmed) {{
+    setServiceFinderPoint(event.latlng.lat, event.latlng.lng, 'Dropped pin');
+    return;
+  }}
   if (!sampleCircleArmed) return;
   sampleCircleCenter = {{
     lat: Number(event.latlng.lat),

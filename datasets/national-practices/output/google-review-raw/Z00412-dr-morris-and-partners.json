@@ -1,0 +1,28 @@
+{
+  "practice_name": "DR. MORRIS & PARTNERS",
+  "canonical_code": "Z00412",
+  "postcode": "BT45 6ED",
+  "query_used": "DR. MORRIS & PARTNERS BT45 6ED",
+  "google_maps_title": "Dr Anne O'Kane - Diamond Medical Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+Anne+O'Kane+-+Diamond+Medical+Centre/@54.7549393,-6.6828712,13z/data=!3m1!5s0x48605c9e89d5048d:0xbfbfa9dbfa5fafae!4m12!1m2!2m1!1sDR.+MORRIS+%26+PARTNERS+BT45+6ED!3m8!1s0x48605c9e8944b8b5:0x8e3b2f27a4cff774!8m2!3d54.7549393!4d-6.6066535!9m1!1b1!15sCh5EUi4gTU9SUklTICYgUEFSVE5FUlMgQlQ0NSA2RUSSAQZkb2N0b3LgAQA!16s%2Fg%2F11c54c6bwv?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 54.7549393,
+  "longitude": -6.6066535,
+  "google_review_count": 38,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774276630752,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48605c9e8944b8b5%3A0x8e3b2f27a4cff774!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1slkzBad7-AfPrhbIPvZLaoQc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURJNjlqcWhnRRAB\",[\"0x0:0x8e3b2f27a4cff774\",null,1548149483612098,1548149483612098,[null,null,[\"https://www.google.com/maps/contrib/102112290096588719751/reviews?hl\\u003den\"],null,null,[\"Jeaniedot Crafts\",\"https://lh3.googleusercontent.com/a-/ALV-UjWy3JA2URGJko81YHaHCkRR_Hxr2bfAzRgq3dmVvunFoMeojls\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/102112290096588719751?hl\\u003den\"],\"102112290096588719751\",null,1,0,null,[0,1,1],1,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjB3q7Cn7aTAxXlO3sEHbMVCKUQ7LoGCAMoAA\"]]]],null,\"7 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJNjlqcWhnRRAB!2m1!1s0x0:0x8e3b2f27a4cff774!3m1!1s2@1:CIHM0ogKEICAgIDI69jqhgE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURJNjlqcWhnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURJNjlqcWhnRRotChZDSUhNMG9nS0VJQ0FnSURJNjlqcVJnEhNDZ3dJNjhXYjRnVVFnTWZ2b3dJIhIJAAAAAAAAAAARdPfPpCcvO44qE0Nnd0k2OFdiNGdVUWdNZnZvd0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjB3q7Cn7aTAxXlO3sEHbMVCKUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjB3q7Cn7aTAxXlO3sEHbMVCKUQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTbVZNUjFwbGFsOWZSV2hCT0hCVGFFdFBVWGh0U2pRd2JGbE1RVUZCUVVGQlIyZG1YMEZ3WlV4SFdtVnFSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURBbTlIZEx3EAE\",[\"0x0:0x8e3b2f27a4cff774\",null,1527119653569000,1527119653569000,[null,null,[\"https://www.google.com/maps/contrib/106129680174116241774/reviews?hl\\u003den\"],null,null,[\"Michelle Devlin\",\"https://lh3.googleusercontent.com/a/ACg8ocIpHYYhX37AGhNukizU1AF7TD4D0sxwe1WF0w1RjzM4XLxhiA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106129680174116241774?hl\\u003den\"],\"106129680174116241774\",null,0,0,null,[0,1,1],8,[\"\",null,null,null,null,[null,\"0ahUKEwjB3q7Cn7aTAxXlO3sEHbMVCKUQ7LoGCAYoAA\"]]]],null,\"7 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbTlIZEx3EAE!2m1!1s0x0:0x8e3b2f27a4cff774!3m1!1s2@1:CIHM0ogKEICAgIDAm9HdLw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURBbTlIZEx3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURBbTlIZEx3Gi4KF0NJSE0wb2dLRUlDQWdJREFtOUhkcndFEhNDZ3dJcGY2WDJBVVF3SUNwandJIhIJAAAAAAAAAAARdPfPpCcvO44qE0Nnd0lwZjZYMkFVUXdJQ3Bqd0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjB3q7Cn7aTAxXlO3sEHbMVCKUQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjB3q7Cn7aTAxXlO3sEHbMVCKUQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}
