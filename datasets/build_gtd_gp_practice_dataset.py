@@ -3694,13 +3694,6 @@ body {{
   line-height: 1.5;
   color: rgba(26, 28, 26, 0.8);
 }}
-.service-finder-debug {{
-  margin: 6px 0 0;
-  font-size: 12px;
-  line-height: 1.45;
-  color: rgba(26, 28, 26, 0.62);
-  word-break: break-all;
-}}
 .service-finder-actions {{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -4573,7 +4566,6 @@ let hoveredCatchmentCode = null;
 const persistentCatchmentCodes = new Set();
 let manchesterCatchmentIndex = null;
 let manchesterCatchmentLoadPromise = null;
-let manchesterCatchmentLoadError = '';
 let serviceFinderArmed = false;
 let serviceFinderPoint = null;
 let serviceFinderLocationLabel = '';
@@ -5539,11 +5531,9 @@ function loadManchesterCatchmentIndex() {{
   if (manchesterCatchmentLoadPromise) return manchesterCatchmentLoadPromise;
   if (!manchesterCatchmentBundleMeta || !manchesterCatchmentBundleMeta.feature_count) {{
     manchesterCatchmentIndex = new Map();
-    manchesterCatchmentLoadError = '';
     return Promise.resolve(manchesterCatchmentIndex);
   }}
-  const catchmentUrl = `./${{MANCHESTER_CATCHMENT_BUNDLE_NAME}}`;
-  manchesterCatchmentLoadError = '';
+  const catchmentUrl = new URL(MANCHESTER_CATCHMENT_BUNDLE_NAME, window.location.href).toString();
   manchesterCatchmentLoadPromise = fetch(catchmentUrl)
     .then((response) => {{
       if (!response.ok) throw new Error(`catchment fetch failed: ${{response.status}}`);
@@ -5551,21 +5541,13 @@ function loadManchesterCatchmentIndex() {{
     }})
     .then((payload) => {{
       manchesterCatchmentIndex = buildManchesterCatchmentIndex(payload);
-      manchesterCatchmentLoadError = '';
       return manchesterCatchmentIndex;
     }})
-    .catch((error) => {{
-      manchesterCatchmentIndex = null;
-      manchesterCatchmentLoadError = error instanceof Error ? error.message : String(error || 'Unknown catchment load error');
-      console.error('Manchester catchment load failed:', error);
-      throw error;
-    }})
-    .finally(() => {{
-      manchesterCatchmentLoadPromise = null;
+    .catch((_error) => {{
+      manchesterCatchmentIndex = new Map();
+      return manchesterCatchmentIndex;
     }});
-  return manchesterCatchmentLoadPromise.catch(() => {{
-    return null;
-  }});
+  return manchesterCatchmentLoadPromise;
 }}
 
 function preloadManchesterCatchments() {{
@@ -5746,29 +5728,20 @@ function scrollToServiceFinder() {{
 function renderServiceFinderMarker() {{
   serviceFinderPointLayer.clearLayers();
   if (!serviceFinderPoint) return;
-  if (!manchesterCatchmentIndex && !manchesterCatchmentLoadPromise) {{
-    loadManchesterCatchmentIndex().then(() => {{
-      renderMarkers();
-      renderServiceFinderMarker();
-      renderServiceFinder();
-    }});
-  }}
   const matches = manchesterCatchmentIndex
     ? (serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || [])
     : null;
   const count = matches ? matches.length : null;
-  const countText = manchesterCatchmentLoadError ? '!' : count === null ? '…' : String(count);
+  const countText = count === null ? '…' : String(count);
   const icon = L.divIcon({{
     className: 'service-finder-pin-icon',
     html: `<div class="service-finder-pin${{count !== null && count >= 100 ? ' is-large' : ''}}">${{escapeHtml(countText)}}</div>`,
     iconSize: count !== null && count >= 100 ? [44, 44] : [38, 38],
     iconAnchor: count !== null && count >= 100 ? [22, 22] : [19, 19],
   }});
-  const tooltip = manchesterCatchmentLoadError
-    ? `${{serviceFinderLocationLabel || 'Selected location'}} · catchments failed to load`
-    : count === null
-      ? `${{serviceFinderLocationLabel || 'Selected location'}} · waiting for catchments`
-      : `${{serviceFinderLocationLabel || 'Selected location'}} · ${{count.toLocaleString('en-GB')}} practice${{count === 1 ? '' : 's'}}`;
+  const tooltip = count === null
+    ? `${{serviceFinderLocationLabel || 'Selected location'}} · waiting for catchments`
+    : `${{serviceFinderLocationLabel || 'Selected location'}} · ${{count.toLocaleString('en-GB')}} practice${{count === 1 ? '' : 's'}}`;
   const marker = L.marker([serviceFinderPoint.lat, serviceFinderPoint.lon], {{ icon, draggable: true }});
   marker.on('click', () => {{
     scrollToServiceFinder();
@@ -5863,19 +5836,6 @@ function renderServiceFinder() {{
 
   if (!serviceFinderPoint) {{
     tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">${{escapeHtml(serviceFinderEmptyMessage || 'Drop a pin or use your location.')}}</td></tr>`;
-    return;
-  }}
-
-  if (!manchesterCatchmentIndex && !manchesterCatchmentLoadPromise) {{
-    loadManchesterCatchmentIndex().then(() => {{
-      renderMarkers();
-      renderServiceFinderMarker();
-      renderServiceFinder();
-    }});
-  }}
-
-  if (manchesterCatchmentLoadError) {{
-    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">Catchments failed to load: ${{escapeHtml(manchesterCatchmentLoadError)}}</td></tr>`;
     return;
   }}
 
