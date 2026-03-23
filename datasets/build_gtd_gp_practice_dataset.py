@@ -5533,7 +5533,7 @@ function loadManchesterCatchmentIndex() {{
     manchesterCatchmentIndex = new Map();
     return Promise.resolve(manchesterCatchmentIndex);
   }}
-  const catchmentUrl = new URL(MANCHESTER_CATCHMENT_BUNDLE_NAME, window.location.href).toString();
+  const catchmentUrl = `./${{MANCHESTER_CATCHMENT_BUNDLE_NAME}}`;
   manchesterCatchmentLoadPromise = fetch(catchmentUrl)
     .then((response) => {{
       if (!response.ok) throw new Error(`catchment fetch failed: ${{response.status}}`);
@@ -5728,6 +5728,13 @@ function scrollToServiceFinder() {{
 function renderServiceFinderMarker() {{
   serviceFinderPointLayer.clearLayers();
   if (!serviceFinderPoint) return;
+  if (!manchesterCatchmentIndex && !manchesterCatchmentLoadPromise) {{
+    loadManchesterCatchmentIndex().then(() => {{
+      renderMarkers();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
+  }}
   const matches = manchesterCatchmentIndex
     ? (serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon) || [])
     : null;
@@ -5837,6 +5844,14 @@ function renderServiceFinder() {{
   if (!serviceFinderPoint) {{
     tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">${{escapeHtml(serviceFinderEmptyMessage || 'Drop a pin or use your location.')}}</td></tr>`;
     return;
+  }}
+
+  if (!manchesterCatchmentIndex && !manchesterCatchmentLoadPromise) {{
+    loadManchesterCatchmentIndex().then(() => {{
+      renderMarkers();
+      renderServiceFinderMarker();
+      renderServiceFinder();
+    }});
   }}
 
   if (!manchesterCatchmentIndex) {{
