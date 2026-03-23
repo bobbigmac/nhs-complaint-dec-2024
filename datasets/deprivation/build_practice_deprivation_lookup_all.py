@@ -75,8 +75,8 @@ def parse_google_maps_coordinates(url: str) -> tuple[float, float] | None:
     if not url:
         return None
     for pattern in (
-        r"@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
         r"!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)",
+        r"@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
     ):
         match = re.search(pattern, url)
         if not match:

@@ -1,0 +1,26 @@
+{
+  "practice_name": "WEST SOMERSET HEALTHCARE",
+  "canonical_code": "L85009",
+  "postcode": "TA4 4QE",
+  "query_used": "WEST SOMERSET HEALTHCARE TA4 4QE",
+  "google_maps_title": "West Somerset Healthcare",
+  "google_maps_url": "https://www.google.com/maps/place/West+Somerset+Healthcare/@51.1613375,-3.3211693,17z/data=!4m8!3m7!1s0x486de5bb25430569:0x9245aec80156e192!8m2!3d51.1613342!4d-3.318589!9m1!1b1!16s%2Fg%2F11bzsz5cs1?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "google_review_count": 8,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774240641361,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x486de5bb25430569%3A0x9245aec80156e192!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sorvAab6IFc-_hbIPgP7u6AE!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUMzb3JEQ213RRAB\",[\"0x0:0x9245aec80156e192\",null,1730692239991749,1730692239991749,[null,null,[\"https://www.google.com/maps/contrib/111922723001958988578/reviews?hl\\u003den\"],null,null,[\"Euryn Merry\",\"https://lh3.googleusercontent.com/a/ACg8ocKJv4GaVXuD_xcNKE_Pn9fwOEV82Jcjcff9Afh650994EmEUg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/111922723001958988578?hl\\u003den\"],\"111922723001958988578\",null,0,4,null,[0,2,1],1,[\"4 photos\",null,null,null,null,[null,\"0ahUKEwiB1KW5mbWTAxU6OXsEHcdrOKIQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzb3JEQ213RRAB!2m1!1s0x0:0x9245aec80156e192!3m1!1s2@1:CIHM0ogKEICAgIC3orDCmwE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUMzb3JEQ213RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUMzb3JEQ213RRotChZDSUhNMG9nS0VJQ0FnSUMzb3JEQ1d3EhNDZ3dJajRtaHVRWVFpTWZ6MkFNIhIJAAAAAAAAAAARkuFWAciuRZIqE0Nnd0lqNG1odVFZUWlNZnoyQU0\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiB1KW5mbWTAxU6OXsEHcdrOKIQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiB1KW5mbWTAxU6OXsEHcdrOKIQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

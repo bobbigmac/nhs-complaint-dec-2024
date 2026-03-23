@@ -1020,8 +1020,8 @@ def parse_google_maps_coordinates(url: str) -> tuple[float, float] | None:
     if not url:
         return None
     for pattern in (
-        r"@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
         r"!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)",
+        r"@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
     ):
         match = re.search(pattern, url)
         if not match:
@@ -1031,6 +1031,22 @@ def parse_google_maps_coordinates(url: str) -> tuple[float, float] | None:
         except ValueError:
             continue
     return None
+
+
+def coordinates_plausible_for_nation(coords: tuple[float, float] | None, nation: str) -> bool:
+    if coords is None:
+        return False
+    lat, lon = coords
+    nation_key = str(nation or "").strip().lower()
+    if nation_key == "england":
+        return 49.8 <= lat <= 55.9 and -6.6 <= lon <= 2.2
+    if nation_key == "scotland":
+        return 54.5 <= lat <= 61.5 and -8.0 <= lon <= -0.3
+    if nation_key == "wales":
+        return 51.2 <= lat <= 53.7 and -5.8 <= lon <= -2.3
+    if nation_key == "northern_ireland":
+        return 54.0 <= lat <= 55.4 and -8.4 <= lon <= -5.2
+    return True
 
 
 def percent_or_blank(value: Any) -> float | str:
@@ -1251,6 +1267,9 @@ def build_national_map_supplementals(
                     coords = (float(raw_lat), float(raw_lon))
             except (TypeError, ValueError):
                 coords = None
+        nation_key = str(source_row.get("nation") or "").strip()
+        if coords is not None and not coordinates_plausible_for_nation(coords, nation_key):
+            coords = None
         if coords is None:
             continue
 
@@ -1345,6 +1364,28 @@ def survey_status_label(value: str) -> str:
     return mapping.get(normalized, normalized.replace("_", " ") if normalized else "Unknown")
 
 
+def survey_short_label(value: str) -> str:
+    normalized = str(value or "").strip()
+    mapping = {
+        "Health and Care Experience Survey": "HACE",
+        "GP Patient Survey": "GPPS",
+    }
+    return mapping.get(normalized, normalized or "GPPS")
+
+
+def survey_missing_display(label: str, status: str) -> str:
+    normalized_status = str(status or "").strip()
+    if normalized_status == "equivalent_identified_not_yet_wired":
+        return f"{label}: source identified, practice-level feed not yet wired"
+    if normalized_status == "practice_level_missing_in_source":
+        return f"{label}: not listed in current practice dashboard"
+    if normalized_status == "practice_metric_missing_in_source":
+        return f"{label}: listed, but metric missing"
+    if normalized_status == "discontinued":
+        return f"{label}: historic/discontinued"
+    return f"{label}: ?"
+
+
 def deprivation_status_label(value: str) -> str:
     mapping = {
         "unsupported_nation": "unsupported nation",
@@ -1362,6 +1403,57 @@ def html_counter_summary(counter: Counter[str]) -> str:
     for label, count in sorted(counter.items(), key=lambda item: (-item[1], item[0])):
         parts.append(f"{html.escape(label)} {count:,}")
     return " · ".join(parts)
+
+
+def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
+    survey_label = survey_short_label(str(row.get("patient_survey_name") or "").strip())
+    survey_status = str(row.get("patient_survey_status") or "").strip()
+    survey_note = str(row.get("patient_survey_note") or "").strip()
+    if str(row.get("nation") or "").strip().lower() == "england" and survey_status == "practice_level_available":
+        survey_note = ""
+    direct_survey_url = str(row.get("gp_patient_survey_2025_url") or "").strip()
+    fallback_survey_url = str(row.get("patient_survey_url") or "").strip()
+    survey_link_url = direct_survey_url or fallback_survey_url
+    survey_link_label = ""
+    if survey_link_url:
+        survey_link_label = f"{survey_label} page" if direct_survey_url else f"{survey_label} source"
+
+    return {
+        "code": row.get("code", ""),
+        "name": row.get("name", ""),
+        "lat": row.get("lat", ""),
+        "lon": row.get("lon", ""),
+        "postcode": row.get("postcode", ""),
+        "nation": row.get("nation", ""),
+        "gtd": row.get("gtd", False),
+        "management_company": row.get("management_company", ""),
+        "affiliated_group": row.get("affiliated_group", ""),
+        "google_score": row.get("google_score", ""),
+        "google_count": row.get("google_count", ""),
+        "google_text_url": row.get("google_text_file", ""),
+        "google_maps_url": row.get("google_url", ""),
+        "nhs_url": row.get("nhs_url", ""),
+        "gtd_url": row.get("gtd_url", ""),
+        "gtd_takeover_date": row.get("gtd_takeover_date", ""),
+        "gtd_takeover_precision": row.get("gtd_takeover_precision", ""),
+        "gtd_takeover_note": row.get("gtd_takeover_note", ""),
+        "gtd_takeover_source_label": row.get("gtd_takeover_source_label", ""),
+        "gtd_takeover_source_url": row.get("gtd_takeover_source_url", ""),
+        "survey_overall_good_percent": row.get("survey_overall_good_percent", ""),
+        "survey_overall_good_ics_percent": row.get("survey_overall_good_ics_percent", ""),
+        "survey_completion_rate_percent": row.get("survey_completion_rate_percent", ""),
+        "survey_sent_out": row.get("survey_sent_out", ""),
+        "survey_sent_back": row.get("survey_sent_back", ""),
+        "number_of_responses": row.get("number_of_responses", ""),
+        "responses_for_overall_question": row.get("responses_for_overall_question", ""),
+        "survey_label": survey_label,
+        "survey_missing_text": survey_missing_display(survey_label, survey_status),
+        "survey_note": survey_note,
+        "survey_link_url": survey_link_url,
+        "survey_link_label": survey_link_label,
+        "survey_resolution_note": str(row.get("gp_patient_survey_resolution_note") or "").strip(),
+        "registered_patient_count": row.get("registered_patient_count", ""),
+    }
 
 
 def has_value(value: Any) -> bool:
@@ -1933,7 +2025,8 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
     patient_counts_by_year = load_registered_patient_timeseries() or {}
     deprivation_geojson = load_deprivation_subset_geojson()
     national_supplementals = build_national_map_supplementals()
-    write_national_supplemental_script(path.parent / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME, national_supplementals)
+    client_national_supplementals = [build_client_map_row(row) for row in national_supplementals]
+    write_national_supplemental_script(path.parent / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME, client_national_supplementals)
     all_practice_deprivation = load_cached_practice_deprivation_lookup()
     # Build a simple per-practice deprivation lookup JSON alongside the map
     practice_deprivation_lookup_path = path.parent / "practice_deprivation_lookup.json"
@@ -2025,6 +2118,7 @@ def write_map(path: Path, rows: list[dict[str, Any]]) -> None:
         )
 
     data_pool_report_html = build_data_pool_report_html(markers, national_supplementals, all_practice_deprivation)
+    client_markers = [build_client_map_row(row) for row in markers]
 
     patient_change_analysis = build_patient_change_analysis(
         markers,
@@ -2947,6 +3041,10 @@ body {{
 .place-benchmark-stat.is-wide {{
   grid-column: 1 / -1;
 }}
+.place-benchmark-stat.is-warning {{
+  border-color: rgba(166, 50, 34, 0.22);
+  background: rgba(255, 241, 239, 0.96);
+}}
 .place-benchmark-stat-label {{
   display: block;
   margin-bottom: 2px;
@@ -2955,6 +3053,11 @@ body {{
   color: rgba(26, 28, 26, 0.72);
   text-transform: uppercase;
   letter-spacing: 0.02em;
+}}
+.place-benchmark-stat-label-warning {{
+  color: #b23322;
+  font-weight: 800;
+  margin-left: 4px;
 }}
 .place-benchmark-stat-value {{
   display: block;
@@ -3289,7 +3392,7 @@ body {{
 <script>window.NATIONAL_PRACTICE_SUPPLEMENTALS = window.NATIONAL_PRACTICE_SUPPLEMENTALS || [];</script>
 <script src="{NATIONAL_SUPPLEMENTAL_SCRIPT_NAME}"></script>
 <script>
-const rows = {json.dumps(markers)};
+const rows = {json.dumps(client_markers)};
 const nationalSupplementals = Array.isArray(window.NATIONAL_PRACTICE_SUPPLEMENTALS) ? window.NATIONAL_PRACTICE_SUPPLEMENTALS : [];
 const nationOrder = {json.dumps(NATION_ORDER)};
 const cityCatchments = {json.dumps(CITY_CATCHMENTS)};
@@ -4028,23 +4131,13 @@ function formatGoogle(row) {{
 }}
 
 function formatSurvey(row) {{
-  const surveyName = row.patient_survey_name || 'GP Patient Survey';
-  const surveyLabel = surveyName === 'Health and Care Experience Survey'
-    ? 'HACE'
-    : surveyName === 'GP Patient Survey'
-      ? 'GPPS'
-      : surveyName;
-  const surveyStatus = (row.patient_survey_status || '').trim();
+  const surveyLabel = row.survey_label || 'GPPS';
   const overall = numericOrNull(row.survey_overall_good_percent);
   const completion = numericOrNull(row.survey_completion_rate_percent);
   const sentBack = numericOrNull(row.survey_sent_back);
   const sentOut = numericOrNull(row.survey_sent_out);
   if (overall === null && completion === null) {{
-    if (surveyStatus === 'equivalent_identified_not_yet_wired') return `${{surveyLabel}}: source identified, practice-level feed not yet wired`;
-    if (surveyStatus === 'practice_level_missing_in_source') return `${{surveyLabel}}: not listed in current practice dashboard`;
-    if (surveyStatus === 'discontinued') return `${{surveyLabel}}: historic/discontinued`;
-    if (surveyStatus === 'practice_level_available') return `${{surveyLabel}}: ?`;
-    return `${{surveyLabel}}: ?`;
+    return row.survey_missing_text || `${{surveyLabel}}: ?`;
   }}
   const parts = [];
   if (overall !== null) parts.push(`${{Math.round(overall)}}%`);
@@ -4071,8 +4164,7 @@ function formatGap(row) {{
 
 function popupMarkup(row) {{
   const google = `<div>${{formatGoogle(row)}}</div>`;
-  const googleSource = row.google_source_note ? `<div>Google source: ${{row.google_source_note}}</div>` : '<div>Google source: repo review dataset</div>';
-  const googleText = row.google_text_file ? `<div><a href="${{row.google_text_file}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
+  const googleText = row.google_text_url ? `<div><a href="${{row.google_text_url}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
   const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
   const affiliatedGroup = row.affiliated_group ? `<div>Affiliated group: ${{row.affiliated_group}}</div>` : '';
   const takeoverDate = formatTakeoverDate(row.gtd_takeover_date, row.gtd_takeover_precision);
@@ -4086,10 +4178,10 @@ function popupMarkup(row) {{
   const survey = `<div>${{formatSurvey(row)}}</div>`;
   const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
   const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
-  const surveyResolution = row.gp_patient_survey_resolution_note ? `<div>${{row.gp_patient_survey_resolution_note}}</div>` : '';
-  const surveySourceNote = row.patient_survey_note ? `<div>${{row.patient_survey_note}}</div>` : '';
-  const surveyUrl = row.gp_patient_survey_2025_url || row.patient_survey_url || '';
-  const surveyLinkLabel = row.gp_patient_survey_2025_url ? `${{row.patient_survey_name || 'GP Patient Survey'}} page` : `${{row.patient_survey_name || 'Patient survey'}} source`;
+  const surveyResolution = row.survey_resolution_note ? `<div>${{row.survey_resolution_note}}</div>` : '';
+  const surveySourceNote = row.survey_note ? `<div>${{row.survey_note}}</div>` : '';
+  const surveyUrl = row.survey_link_url || '';
+  const surveyLinkLabel = row.survey_link_label || 'Survey source';
   const surveyLink = surveyUrl ? `<div><a href="${{surveyUrl}}" target="_blank" rel="noreferrer">${{surveyLinkLabel}}</a></div>` : '';
   const gap = `<div>${{formatGap(row)}}</div>`;
   const gtd = row.gtd_url ? `<div><a href="${{row.gtd_url}}" target="_blank" rel="noreferrer">GTD page</a></div>` : '';
@@ -4097,14 +4189,12 @@ function popupMarkup(row) {{
     <strong>${{row.name}}</strong><br>
     ${{row.postcode}}<br>
     <div>Code: ${{row.code}}</div>
-    <div>Near: ${{row.nearby}}</div>
     ${{management}}
     ${{affiliatedGroup}}
     ${{takeoverLine}}
     ${{takeoverNote}}
     ${{registeredPatientsLine}}
     ${{google}}
-    ${{googleSource}}
     ${{survey}}
     ${{surveyCompare}}
     ${{surveyResolution}}
@@ -4124,12 +4214,12 @@ function nationalPopupMarkup(row) {{
   const gap = `<div>${{formatGap(row)}}</div>`;
   const registeredPatients = numericOrNull(row.registered_patient_count);
   const patientsLine = registeredPatients === null ? '' : `<div>Registered patients: ${{registeredPatients.toLocaleString('en-GB')}}</div>`;
-  const surveyResolution = row.gp_patient_survey_resolution_note ? `<div>${{row.gp_patient_survey_resolution_note}}</div>` : '';
-  const surveySourceNote = row.patient_survey_note ? `<div>${{row.patient_survey_note}}</div>` : '';
-  const surveyUrl = row.gp_patient_survey_2025_url || row.patient_survey_url || '';
-  const surveyLinkLabel = row.gp_patient_survey_2025_url ? `${{row.patient_survey_name || 'GP Patient Survey'}} page` : `${{row.patient_survey_name || 'Patient survey'}} source`;
+  const surveyResolution = row.survey_resolution_note ? `<div>${{row.survey_resolution_note}}</div>` : '';
+  const surveySourceNote = row.survey_note ? `<div>${{row.survey_note}}</div>` : '';
+  const surveyUrl = row.survey_link_url || '';
+  const surveyLinkLabel = row.survey_link_label || 'Survey source';
   const surveyLink = surveyUrl ? `<div><a href="${{surveyUrl}}" target="_blank" rel="noreferrer">${{surveyLinkLabel}}</a></div>` : '';
-  const googleLink = row.google_url ? `<div><a href="${{row.google_url}}" target="_blank" rel="noreferrer">Google Maps page</a></div>` : '';
+  const googleLink = row.google_maps_url ? `<div><a href="${{row.google_maps_url}}" target="_blank" rel="noreferrer">Google Maps page</a></div>` : '';
   return `
     <strong>${{row.name}}</strong><br>
     ${{row.postcode || ''}}<br>
@@ -4678,6 +4768,25 @@ function regionStatBoxMarkup(label, value, subtle, isActive, toneClass, extraCla
   `;
 }}
 
+function surveyWarningForSubset(title, rowsSubset) {{
+  const nations = Array.from(
+    new Set(
+      rowsSubset
+        .map((row) => String(row?.nation || '').trim().toLowerCase())
+        .filter(Boolean)
+    )
+  );
+  if (!nations.length) return null;
+  const onlyNation = nations.length === 1 ? nations[0] : null;
+  if (onlyNation === 'wales' || title === 'Cardiff') {{
+    return 'Wales does not currently have a standardized national practice-level survey feed here. Some Welsh practices appear to publish local survey results, but there is no comparable national dashboard, and mixing those local returns into this view would add noise.';
+  }}
+  if (onlyNation === 'northern_ireland' || title === 'Belfast') {{
+    return 'Northern Ireland does not currently have a live standardized national practice-level survey feed here, so survey comparisons for this panel are incomplete.';
+  }}
+  return null;
+}}
+
 function regionCardMarkup(title, rowsSubset, accent) {{
   const stats = regionCardStats(rowsSubset);
   const googleValue = stats.google.value === null ? '?' : stats.google.value.toFixed(2);
@@ -4694,6 +4803,12 @@ function regionCardMarkup(title, rowsSubset, accent) {{
     : 'Survey score not yet present';
   const isGoogleActive = activeMetric === 'google';
   const isSurveyActive = activeMetric === 'survey';
+  const surveyWarning = surveyWarningForSubset(title, rowsSubset);
+  const surveyLabel = surveyWarning ? 'Survey <span class="place-benchmark-stat-label-warning" aria-hidden="true">!</span>' : 'Survey';
+  const surveyTitle = surveyWarning
+    ? `${{surveySubtle}} · ${{surveyWarning}}`
+    : surveySubtle;
+  const surveyExtraClass = surveyWarning ? 'is-warning' : '';
   if (activeMetric === 'gap') {{
     const overallGapAverage = globalGapAverage();
     const gapDelta = stats.gap.value === null || overallGapAverage === null ? null : stats.gap.value - overallGapAverage;
@@ -4720,7 +4835,7 @@ function regionCardMarkup(title, rowsSubset, accent) {{
       </div>
       <div class="place-benchmark-stats">
         ${{regionStatBoxMarkup('Google', googleValue, googleSubtle, isGoogleActive, googleTone)}}
-        ${{regionStatBoxMarkup('Survey', surveyValue, surveySubtle, isSurveyActive, surveyTone)}}
+        ${{regionStatBoxMarkup(surveyLabel, surveyValue, surveyTitle, isSurveyActive, surveyTone, surveyExtraClass)}}
       </div>
     </article>
   `;
@@ -4848,7 +4963,7 @@ function renderPlaceBenchmarks() {{
 
   nationGrid.innerHTML = nationCards || '<p class="hint">No nation summaries are available yet.</p>';
   cityGrid.innerHTML = (sampleCard + cityCards) || '<p class="hint">No city-circle summaries are available yet.</p>';
-  note.textContent = `${{allKnownRows.length.toLocaleString('en-GB')}} practices · ${{totalKnownGoogleReviews.toLocaleString('en-GB')}} Google reviews loaded overall.${{sampleRows.length ? ` Custom sample: ${{sampleRows.length.toLocaleString('en-GB')}} practices.` : ''}}`;
+  note.innerHTML = `${{allKnownRows.length.toLocaleString('en-GB')}} practices · ${{totalKnownGoogleReviews.toLocaleString('en-GB')}} Google reviews loaded overall.${{sampleRows.length ? ` Custom sample: ${{sampleRows.length.toLocaleString('en-GB')}} practices.` : ''}} <span class="hint">Footnote: Wales and Northern Ireland do not currently have comparable national practice-level survey feeds here. Some Welsh practices appear to publish local survey results, but there is no standardized national dashboard, and forcing those into the same pool would be easy to misread, especially given the limits of England's own standard survey.</span>`;
 }}
 
 function metricValues(rowsSubset, metricName, extractor = null) {{

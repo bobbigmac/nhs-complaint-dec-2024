@@ -247,6 +247,23 @@ def normalize_name(value: str) -> str:
     return " ".join(value.split())
 
 
+def parse_google_maps_coordinates(url: str) -> tuple[float, float] | None:
+    if not url:
+        return None
+    for pattern in (
+        r"!3d(-?\d+(?:\.\d+)?)!4d(-?\d+(?:\.\d+)?)",
+        r"@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
+    ):
+        match = re.search(pattern, url)
+        if not match:
+            continue
+        try:
+            return float(match.group(1)), float(match.group(2))
+        except ValueError:
+            continue
+    return None
+
+
 def query_friendly_name(value: str) -> str:
     value = (value or "").strip()
     # NHS branch names sometimes start with numeric prefixes like "1/" or "3/".
@@ -1224,6 +1241,8 @@ def scrape_place(
     else:
         scan_status = "ok_rating_only"
 
+    parsed_coords = parse_google_maps_coordinates(current_url)
+
     owner_replies_collected = sum(
         1
         for review in recent_reviews
@@ -1234,6 +1253,8 @@ def scrape_place(
         "query": query,
         "google_maps_title": place_title,
         "google_maps_url": current_url,
+        "latitude": parsed_coords[0] if parsed_coords else None,
+        "longitude": parsed_coords[1] if parsed_coords else None,
         "google_rating": rating,
         "google_review_count": review_count,
         "blocked_place_match": blocked_place_match,
@@ -1375,6 +1396,8 @@ def write_raw_review_capture_file(raw_dir: Path, result: dict[str, object]) -> s
         "query_used": result.get("query_used", result.get("query", "")),
         "google_maps_title": result.get("google_maps_title", ""),
         "google_maps_url": result.get("google_maps_url", ""),
+        "latitude": result.get("latitude", None),
+        "longitude": result.get("longitude", None),
         "google_review_count": result.get("google_review_count", ""),
         "review_collection_mode": result.get("review_collection_mode", ""),
         "raw_review_responses_captured": result.get("raw_review_responses_captured", len(raw_entries)),

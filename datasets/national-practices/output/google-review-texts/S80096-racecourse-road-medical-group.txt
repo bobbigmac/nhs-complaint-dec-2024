@@ -1,0 +1,31 @@
+Practice: RACECOURSE ROAD MEDICAL GROUP
+Canonical code: S80096
+Postcode: KA7 2DF
+Google Maps title: Dr C Chape - Racecourse Road Medical Group
+Google rating: 3.9
+Google review count: 21
+Google Maps URL: https://www.google.com/maps/place/Dr+C+Chape+-+Racecourse+Road+Medical+Group/@55.4583694,-4.637239,17z/data=!4m12!1m2!2m1!1sRACECOURSE+ROAD+MEDICAL+GROUP+KA7+2DF!3m8!1s0x4889d684beb3b039:0xfe4a03ce1b71a667!8m2!3d55.4583664!4d-4.6346587!9m1!1b1!15sCiVSQUNFQ09VUlNFIFJPQUQgTUVESUNBTCBHUk9VUCBLQTcgMkRGkgEUZ2VuZXJhbF9wcmFjdGl0aW9uZXLgAQA!16s%2Fg%2F11g6vhbzn4?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.4
+Review collection mode: visible_cards
+Review cards collected: 3
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: /home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/google-review-raw/S80096-racecourse-road-medical-group.json
+
+Captured reviews
+================
+
+Author: Alexander Carswell
+Date: 5 years ago
+Rating: 5 stars
+Well organised surgery all staff very helpful
+
+Author: Liz Cooper
+Date: 6 years ago
+Rating: 5 stars
+Excellent ongoing care from this wonderful practice for over 30 years
+
+Author: Alexander Carswell
+Date: 7 years ago
+Rating: 5 stars
+Changed my doctors , now with Racecourse Road Medical Group really impressed with the staff.
