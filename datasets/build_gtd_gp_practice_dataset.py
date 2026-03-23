@@ -37,6 +37,7 @@ SCOTLAND_HACE_DATA_JSON = NATIONAL_PRACTICES_SCOTLAND_DIR / "hace_metrics.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 MANCHESTER_CATCHMENT_BUNDLE_NAME = "manchester-practice-catchments.geojson"
 ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR = BASE_DIR / "catchments" / ".cache" / "gp-catchments-england" / "by_practice"
+CQC_GP_RATINGS_JSON = BASE_DIR / "raw" / "cqc" / "cqc_gp_location_index.json"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
 from deprivation.practice_deprivation_lookup import load_cached_practice_deprivation_lookup, write_practice_deprivation_lookup
@@ -687,6 +688,12 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "google_review_text_file",
         "google_review_scan_status",
         "google_review_has_listing",
+        "cqc_overall_rating",
+        "cqc_location_url",
+        "cqc_service_website",
+        "cqc_publication_date",
+        "cqc_inherited_rating",
+        "cqc_provider_name",
         "trustpilot_score",
         "trustpilot_review_count",
         "trustpilot_source_url",
@@ -1322,6 +1329,7 @@ def build_national_map_supplementals(
     survey_by_code = load_latest_gpps_csv_index()
     if not survey_by_code:
         survey_by_code = load_gp_patient_survey_index()
+    cqc_by_code = load_cqc_gp_location_index()
     branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
     scotland_hace_by_code, scotland_hace_manifest_by_code = load_scotland_hace_index()
     supplementals: list[dict[str, Any]] = []
@@ -1405,6 +1413,8 @@ def build_national_map_supplementals(
         if coords is None:
             continue
 
+        cqc = cqc_by_code.get(code, {}) if str(source_row.get("nation", "")).strip().lower() == "england" else {}
+
         supplementals.append(
             {
                 "code": code,
@@ -1440,6 +1450,12 @@ def build_national_map_supplementals(
                 "patient_survey_level": str(survey_metadata.get("patient_survey_level") or "").strip(),
                 "patient_survey_url": str(survey_metadata.get("patient_survey_url") or "").strip(),
                 "patient_survey_note": str(survey_metadata.get("patient_survey_note") or "").strip(),
+                "cqc_overall_rating": str(cqc.get("overall_rating", "")).strip(),
+                "cqc_location_url": str(cqc.get("url", "")).strip(),
+                "cqc_service_website": str(cqc.get("service_website", "")).strip(),
+                "cqc_publication_date": str(cqc.get("publication_date", "")).strip(),
+                "cqc_inherited_rating": str(cqc.get("inherited_rating", "")).strip(),
+                "cqc_provider_name": str(cqc.get("provider_name", "")).strip(),
                 "is_national_supplemental": True,
             }
         )
@@ -1577,6 +1593,59 @@ def short_street_address(value: str) -> str:
     return first
 
 
+def load_cqc_gp_location_index(path: Path = CQC_GP_RATINGS_JSON) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    by_code: dict[str, dict[str, Any]] = {}
+    if isinstance(payload, dict):
+        for code, item in payload.items():
+            normalized_code = str(code or "").strip()
+            if not normalized_code or not isinstance(item, dict):
+                continue
+            by_code[normalized_code] = item
+        return by_code
+    if not isinstance(payload, list):
+        return {}
+    for item in payload:
+        if not isinstance(item, dict):
+            continue
+        code = str(item.get("ods_code", "")).strip()
+        if not code:
+            continue
+        by_code[code] = item
+    return by_code
+
+
+def enrich_rows_with_cqc(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    cqc_by_code = load_cqc_gp_location_index()
+    if not cqc_by_code:
+        return rows
+    enriched_rows: list[dict[str, Any]] = []
+    for row in rows:
+        nation = str(row.get("nation") or "england").strip().lower()
+        if nation != "england":
+            enriched_rows.append(row)
+            continue
+        code = str(row.get("canonical_code") or row.get("code") or "").strip()
+        cqc = cqc_by_code.get(code, {})
+        if not cqc:
+            enriched_rows.append(row)
+            continue
+        enriched = dict(row)
+        enriched["cqc_overall_rating"] = str(cqc.get("overall_rating", "")).strip()
+        enriched["cqc_location_url"] = str(cqc.get("url", "")).strip()
+        enriched["cqc_service_website"] = str(cqc.get("service_website", "")).strip()
+        enriched["cqc_publication_date"] = str(cqc.get("publication_date", "")).strip()
+        enriched["cqc_inherited_rating"] = str(cqc.get("inherited_rating", "")).strip()
+        enriched["cqc_provider_name"] = str(cqc.get("provider_name", "")).strip()
+        enriched_rows.append(enriched)
+    return enriched_rows
+
+
 def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
     survey_label = survey_short_label(str(row.get("patient_survey_name") or "").strip())
     survey_status = str(row.get("patient_survey_status") or "").strip()
@@ -1629,6 +1698,12 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "survey_link_url": survey_link_url,
         "survey_link_label": survey_link_label,
         "survey_resolution_note": str(row.get("gp_patient_survey_resolution_note") or "").strip(),
+        "cqc_overall_rating": row.get("cqc_overall_rating", ""),
+        "cqc_location_url": row.get("cqc_location_url", ""),
+        "cqc_service_website": row.get("cqc_service_website", ""),
+        "cqc_publication_date": row.get("cqc_publication_date", ""),
+        "cqc_inherited_rating": row.get("cqc_inherited_rating", ""),
+        "cqc_provider_name": row.get("cqc_provider_name", ""),
         "registered_patient_count": row.get("registered_patient_count", ""),
         "patient_change_per_year": row.get("patient_change_per_year", ""),
         "patient_change_start_year": row.get("patient_change_start_year", ""),
@@ -1823,6 +1898,20 @@ def build_data_pool_report_html(
             for row in patient_rows
         )
 
+        cqc_rows = [row for row in nation_rows if has_value(row.get("cqc_overall_rating"))]
+        cqc_rating_counts = Counter(
+            str(row.get("cqc_overall_rating") or "").strip()
+            for row in cqc_rows
+            if str(row.get("cqc_overall_rating") or "").strip()
+        )
+        if nation == "england":
+            cqc_summary = (
+                f"{len(cqc_rows):,} with rating · {practice_total - len(cqc_rows):,} without match · "
+                f"{html_counter_summary(cqc_rating_counts)}"
+            )
+        else:
+            cqc_summary = "CQC is England-only, so this nation has no comparable CQC coverage here."
+
         lookup_rows = [deprivation_lookup.get(str(row.get("code", "")).strip()) for row in nation_rows]
         lookup_rows = [row for row in lookup_rows if isinstance(row, dict)]
         deprivation_rows = [row for row in lookup_rows if has_value(row.get("imd_decile"))]
@@ -1855,6 +1944,10 @@ def build_data_pool_report_html(
             (
                 "Patient counts",
                 f"{len(patient_rows):,} with counts covering {patient_total:,} patients · {html_counter_summary(patient_source_counts)}",
+            ),
+            (
+                "CQC",
+                cqc_summary,
             ),
             (
                 "Deprivation",
@@ -2396,6 +2489,7 @@ def write_map(
     gtd_survey_timeseries = load_gtd_gpps_timeseries()
     patient_counts_by_year = load_registered_patient_timeseries() or {}
     patient_change_by_code = build_patient_change_lookup(patient_counts_by_year)
+    cqc_by_code = load_cqc_gp_location_index()
     deprivation_geojson = load_deprivation_subset_geojson()
     national_supplementals = build_national_map_supplementals()
     client_national_supplementals = [build_client_map_row(row) for row in national_supplementals]
@@ -2441,6 +2535,7 @@ def write_map(
         for key, value in survey_overrides.items():
             if str(value).strip():
                 survey_metadata[key] = str(value).strip()
+        cqc = cqc_by_code.get(str(row["canonical_code"]), {}) if nation == "england" else {}
         registered_patient_count = row.get("registered_patient_count", "")
         if registered_patient_count not in ("", None):
             try:
@@ -2494,6 +2589,12 @@ def write_map(
                 "patient_survey_level": survey_metadata.get("patient_survey_level", "practice"),
                 "patient_survey_url": survey_metadata.get("patient_survey_url", "https://www.gp-patient.co.uk"),
                 "patient_survey_note": survey_metadata.get("patient_survey_note", ""),
+                "cqc_overall_rating": str(cqc.get("overall_rating", "")).strip(),
+                "cqc_location_url": str(cqc.get("url", "")).strip(),
+                "cqc_service_website": str(cqc.get("service_website", "")).strip(),
+                "cqc_publication_date": str(cqc.get("publication_date", "")).strip(),
+                "cqc_inherited_rating": str(cqc.get("inherited_rating", "")).strip(),
+                "cqc_provider_name": str(cqc.get("provider_name", "")).strip(),
                 "registered_patient_count": row.get("registered_patient_count", ""),
                 "patient_change_per_year": patient_change.get("patient_change_per_year", ""),
                 "patient_change_start_year": patient_change.get("patient_change_start_year", ""),
@@ -5103,6 +5204,11 @@ function formatGap(row) {{
 function popupMarkup(row) {{
   const google = `<div>${{formatGoogle(row)}}</div>`;
   const googleText = row.google_text_url ? `<div><a href="${{row.google_text_url}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
+  const cqcRating = row.cqc_overall_rating
+    ? `<div>CQC: ${{row.cqc_overall_rating}}${{row.cqc_inherited_rating === 'Y' ? ' (inherited)' : ''}}${{row.cqc_publication_date ? ` · ${{row.cqc_publication_date}}` : ''}}</div>`
+    : '';
+  const cqcLink = row.cqc_location_url ? `<div><a href="${{row.cqc_location_url}}" target="_blank" rel="noreferrer">CQC page</a></div>` : '';
+  const practiceWebsite = row.cqc_service_website ? `<div><a href="${{row.cqc_service_website}}" target="_blank" rel="noreferrer">Practice website</a></div>` : '';
   const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
   const affiliatedGroup = row.affiliated_group ? `<div>Affiliated group: ${{row.affiliated_group}}</div>` : '';
   const takeoverDate = formatTakeoverDate(row.gtd_takeover_date, row.gtd_takeover_precision);
@@ -5134,12 +5240,15 @@ function popupMarkup(row) {{
     ${{registeredPatientsLine}}
     ${{google}}
     ${{survey}}
+    ${{cqcRating}}
     ${{surveyCompare}}
     ${{surveyResolution}}
     ${{surveySourceNote}}
     ${{gap}}
     ${{googleText}}
     <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
+    ${{cqcLink}}
+    ${{practiceWebsite}}
     ${{surveyLink}}
     ${{gtd}}
     ${{takeoverSource}}
@@ -5150,6 +5259,9 @@ function nationalPopupMarkup(row) {{
   const google = `<div>${{formatGoogle(row)}}</div>`;
   const survey = `<div>${{formatSurvey(row)}}</div>`;
   const gap = `<div>${{formatGap(row)}}</div>`;
+  const cqcRating = row.cqc_overall_rating
+    ? `<div>CQC: ${{row.cqc_overall_rating}}${{row.cqc_inherited_rating === 'Y' ? ' (inherited)' : ''}}${{row.cqc_publication_date ? ` · ${{row.cqc_publication_date}}` : ''}}</div>`
+    : '';
   const registeredPatients = numericOrNull(row.registered_patient_count);
   const patientsLine = registeredPatients === null ? '' : `<div>Registered patients: ${{registeredPatients.toLocaleString('en-GB')}}</div>`;
   const surveyResolution = row.survey_resolution_note ? `<div>${{row.survey_resolution_note}}</div>` : '';
@@ -5158,6 +5270,8 @@ function nationalPopupMarkup(row) {{
   const surveyLinkLabel = row.survey_link_label || 'Survey source';
   const surveyLink = surveyUrl ? `<div><a href="${{surveyUrl}}" target="_blank" rel="noreferrer">${{surveyLinkLabel}}</a></div>` : '';
   const googleLink = row.google_maps_url ? `<div><a href="${{row.google_maps_url}}" target="_blank" rel="noreferrer">Google Maps page</a></div>` : '';
+  const cqcLink = row.cqc_location_url ? `<div><a href="${{row.cqc_location_url}}" target="_blank" rel="noreferrer">CQC page</a></div>` : '';
+  const practiceWebsite = row.cqc_service_website ? `<div><a href="${{row.cqc_service_website}}" target="_blank" rel="noreferrer">Practice website</a></div>` : '';
   return `
     <strong>${{row.name}}</strong><br>
     ${{row.postcode || ''}}<br>
@@ -5166,11 +5280,14 @@ function nationalPopupMarkup(row) {{
     ${{patientsLine}}
     ${{google}}
     ${{survey}}
+    ${{cqcRating}}
     ${{surveyResolution}}
     ${{surveySourceNote}}
     ${{gap}}
     ${{surveyLink}}
     ${{googleLink}}
+    ${{cqcLink}}
+    ${{practiceWebsite}}
   `;
 }}
 
@@ -9274,6 +9391,8 @@ def main() -> int:
     if GOOGLE_REVIEW_RESULTS_JSON.exists():
         from merge_google_maps_reviews import merge_rows
         rows, _, _ = merge_rows(rows, json.loads(GOOGLE_REVIEW_RESULTS_JSON.read_text(encoding="utf-8")), 0.5)
+
+    rows = enrich_rows_with_cqc(rows)
 
     write_csv(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.csv", rows)
     write_json(OUTPUT_DIR / "gtd_greater_manchester_gp_practices.json", rows)

@@ -1,0 +1,28 @@
+{
+  "practice_name": "DR. CORRY & PARTNERS",
+  "canonical_code": "Z00660",
+  "postcode": "BT79 9JR",
+  "query_used": "DR. CORRY & PARTNERS BT79 9JR",
+  "google_maps_title": "Carrickmore Health Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Carrickmore+Health+Centre/@54.595785,-7.0521407,17z/data=!4m8!3m7!1s0x48607d8b43be256d:0x329cb3dd5af95282!8m2!3d54.5957819!4d-7.0495604!9m1!1b1!16s%2Fg%2F1tlc7gxm?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 54.5957819,
+  "longitude": -7.0495604,
+  "google_review_count": 3,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774277795219,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48607d8b43be256d%3A0x329cb3dd5af95282!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1slkzBad7-AfPrhbIPvZLaoQc!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnTUR3b29xTlZBEAE\",[\"0x0:0x329cb3dd5af95282\",null,1742850381068456,1742850381068456,[null,null,[\"https://www.google.com/maps/contrib/102488260876366387021/reviews?hl\\u003den\"],null,null,[\"Shane Hurst\",\"https://lh3.googleusercontent.com/a/ACg8ocIDLM75bR5UDqtZljeLUneYJ8CGwSRxshHSaA6gxQRZ1Vs5Qw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/102488260876366387021?hl\\u003den\"],\"102488260876366387021\",null,1,0,null,[0,2,1],1,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQ7LoGCAMoAA\"]]]],null,\"11 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3b29xTlZBEAE!2m1!1s0x0:0x329cb3dd5af95282!3m1!1s2@1:CIHM0ogKEICAgMDwooqNVA%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnTUR3b29xTlZBEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnTUR3b29xTlZBGi0KF0NJSE0wb2dLRUlDQWdNRHdvb3FOMUFFEhJDZ3NJelpLSHZ3WVF3SnpTSUEiEgkAAAAAAAAAABGCUvla3bOcMioSQ2dzSXpaS0h2d1lRd0p6U0lB\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMjh5UW1GeWVsOWZSV2hEZVhveVMwZDFZaTAxZVZoVFdFOXNhMEZCUVVGQlIyZG1YMEZ0YnpKQ1lYSjZSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChdDSUhNMG9nS0VJQ0FnSUNkM3NEZnRBRRAB\",[\"0x0:0x329cb3dd5af95282\",null,1707999829020017,1707999829020017,[null,null,[\"https://www.google.com/maps/contrib/115281983271757847331/reviews?hl\\u003den\"],null,null,[\"Garry Doherty\",\"https://lh3.googleusercontent.com/a/ACg8ocIECvIKLienfHkdRsinhix6xFae1r5bCRrwZOtFIsSXNqVH3g\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/115281983271757847331?hl\\u003den\"],\"115281983271757847331\",null,3,0,null,[0,2,1],2,[\"3 reviews\",null,null,null,null,[null,\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQ7LoGCAYoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkM3NEZnRBRRAB!2m1!1s0x0:0x329cb3dd5af95282!3m1!1s2@1:CIHM0ogKEICAgICd3sDftAE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNkM3NEZnRBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNkM3NEZnRBRRosChZDSUhNMG9nS0VJQ0FnSUNkM3NEZmRBEhJDZ3NJMVlTNHJnWVE2TjdGQ1EiEgkAAAAAAAAAABGCUvla3bOcMioSQ2dzSTFZUzRyZ1lRNk43RkNR\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQ0pMFCAUoAQ\"],null,\"CAESYENBRVFBaHBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTRXBVVW5WUWFsOWZSV2hDTURWWkxWRkJWRXhzUjBrMlVWRkNiMEZCUVVGQlIyZG1YMEZ1U2xSU2RWQnFSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChdDSUhNMG9nS0VJQ0FnSUNjdWZ2NGx3RRAB\",[\"0x0:0x329cb3dd5af95282\",null,1584350935592621,1584350935592621,[null,null,[\"https://www.google.com/maps/contrib/107586646543041873010/reviews?hl\\u003den\"],null,null,[\"Mary McCullagh\",\"https://lh3.googleusercontent.com/a/ACg8ocJjTa7iitlvmudxtzsKQLkQ5vxuK0oG6fRGliEbzTY-hq_goA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/107586646543041873010?hl\\u003den\"],\"107586646543041873010\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQ7LoGCAkoAA\"]]]],null,\"6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjdWZ2NGx3RRAB!2m1!1s0x0:0x329cb3dd5af95282!3m1!1s2@1:CIHM0ogKEICAgICcufv4lwE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNjdWZ2NGx3RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNjdWZ2NGx3RRotChZDSUhNMG9nS0VJQ0FnSUNjdWZ2NFZ3EhNDZ3dJMTQyOTh3VVF5TnZLbWdJIhIJAAAAAAAAAAARglL5Wt2znDIqE0Nnd0kxNDI5OHdVUXlOdkttZ0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQoykICigB\"],null,[null,[[1,0]]]],\"0ahUKEwjJk9nto7aTAxWmPXsEHXJwHKgQ0pMFCAgoAg\"]]]]",
+      "error": ""
+    }
+  ]
+}
