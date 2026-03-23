@@ -16,7 +16,8 @@ import fetch_scotland_hace_tableau as base
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_INPUT = base.DEFAULT_INPUT
-DEFAULT_OUTPUT_DIR = BASE_DIR / "output" / "scotland-hace-metrics"
+DEFAULT_DATASET_JSON = BASE_DIR / "scotland" / "hace_metrics.json"
+LEGACY_OUTPUT_DIR = BASE_DIR / "output" / "scotland-hace-metrics"
 PROFILE_COPY_DIR = BASE_DIR / ".tooling" / "firefox-profile-copy-scotland-hace-metrics"
 
 OVERALL_QUESTION_TEXT = "Overall, how would you rate the care provided by your General Practice?"
@@ -31,12 +32,13 @@ TOOLTIP_SELECTORS = (
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Dev-only Scotland HACE metrics collector. Uses one persistent Firefox session and "
-            "reads only the live tooltip values needed for map-page survey fields."
+            "Dev-only Scotland HACE metrics collector. Uses one persistent Firefox session, "
+            "reads only the live tooltip values needed for map-page survey fields, and updates "
+            "the canonical Scotland metrics file in place."
         )
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
-    parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument("--dataset-json", type=Path, default=DEFAULT_DATASET_JSON)
     parser.add_argument("--profile-copy", type=Path, default=PROFILE_COPY_DIR)
     parser.add_argument("--canonical-code", action="append", default=[])
     parser.add_argument("--limit", type=int, default=0)
@@ -47,14 +49,10 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def result_filename(row: dict[str, str]) -> str:
-    return f"{row.get('canonical_code', '').lower()}-{base.slugify(row.get('practice_name', ''))}.json"
-
-
-def should_skip_recent(manifest_entry: dict[str, Any] | None, result_path: Path, max_age_days: int, force: bool) -> bool:
-    if force or not manifest_entry or not result_path.exists():
+def should_skip_recent(practice_entry: dict[str, Any] | None, max_age_days: int, force: bool) -> bool:
+    if force or not practice_entry:
         return False
-    fetched_at = manifest_entry.get("last_fetched_at")
+    fetched_at = practice_entry.get("fetched_at") or practice_entry.get("last_fetched_at")
     if not isinstance(fetched_at, str) or not fetched_at:
         return False
     try:
@@ -62,6 +60,58 @@ def should_skip_recent(manifest_entry: dict[str, Any] | None, result_path: Path,
     except ValueError:
         return False
     return datetime.now(UTC) - fetched_at_dt < timedelta(days=max_age_days)
+
+
+def load_json_object(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def normalize_polished_entry(payload: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "status": payload.get("status", ""),
+        "fetched_at": payload.get("fetched_at", ""),
+        "practice_name": payload.get("practice_name", ""),
+        "tableau_report_area_label": payload.get("tableau_report_area_label", ""),
+        "survey_overall_good_percent": payload.get("survey_overall_good_percent"),
+        "response_rate_percent": payload.get("response_rate_percent"),
+        "number_of_responses": payload.get("number_of_responses"),
+        "responses_for_overall_question": payload.get("responses_for_overall_question"),
+    }
+
+
+def bootstrap_polished_dataset(dataset_path: Path, legacy_output_dir: Path) -> dict[str, Any]:
+    dataset = load_json_object(dataset_path)
+    practices = dataset.get("practices")
+    if isinstance(practices, dict):
+        return dataset
+
+    dataset = {"practices": {}}
+    legacy_manifest = load_json_object(legacy_output_dir / "manifest.json")
+    legacy_practices = legacy_manifest.get("practices", {})
+    if not isinstance(legacy_practices, dict):
+        return dataset
+
+    for code, entry in legacy_practices.items():
+        if not isinstance(entry, dict):
+            continue
+        result_file = str(entry.get("result_file", "")).strip()
+        if not result_file:
+            continue
+        result_path = legacy_output_dir / result_file
+        result_payload = load_json_object(result_path)
+        if not result_payload:
+            continue
+        normalized_code = str(code).strip().upper()
+        if not normalized_code:
+            continue
+        dataset["practices"][normalized_code] = normalize_polished_entry(result_payload)
+    return dataset
 
 
 def tooltip_texts(driver) -> list[str]:
@@ -151,15 +201,10 @@ def extract_overall_metric(driver, pause_seconds: float) -> dict[str, Any]:
                 if not positive_match:
                     continue
                 return {
-                    "tooltip_text": text,
                     "survey_overall_good_percent": int(positive_match.group(1)),
                     "responses_for_overall_question": (
                         int(responses_match.group(1).replace(",", "")) if responses_match else None
                     ),
-                    "hover_point": {
-                        "x_offset": x_offset,
-                        "y_offset": round(y_offset, 1),
-                    },
                 }
     return {}
 
@@ -186,12 +231,10 @@ def extract_response_panel_metrics(driver, pause_seconds: float) -> dict[str, An
                 match = re.search(r"Response rate:\s*([0-9]+)%", text)
                 if match:
                     found["response_rate_percent"] = int(match.group(1))
-                    found["response_rate_tooltip_text"] = text
             if "Number of responses:" in text and "number_of_responses" not in found:
                 match = re.search(r"Number of responses:\s*([0-9][0-9,]*)", text)
                 if match:
                     found["number_of_responses"] = int(match.group(1).replace(",", ""))
-                    found["number_of_responses_tooltip_text"] = text
         if "response_rate_percent" in found and "number_of_responses" in found:
             break
     return found
@@ -208,39 +251,22 @@ def collect_one_practice(driver, wait, row: dict[str, str], report_label: str, p
     return {
         "status": status,
         "fetched_at": fetched_at,
-        "source_url": base.VIEW_URL,
-        "canonical_code": row.get("canonical_code", ""),
         "practice_name": row.get("practice_name", ""),
         "tableau_report_area_label": report_label,
         "survey_overall_good_percent": overall_metric.get("survey_overall_good_percent"),
         "response_rate_percent": response_metric.get("response_rate_percent"),
         "number_of_responses": response_metric.get("number_of_responses"),
         "responses_for_overall_question": overall_metric.get("responses_for_overall_question"),
-        "overall_tooltip_text": overall_metric.get("tooltip_text", ""),
-        "response_rate_tooltip_text": response_metric.get("response_rate_tooltip_text", ""),
-        "number_of_responses_tooltip_text": response_metric.get("number_of_responses_tooltip_text", ""),
-        "hover_point": overall_metric.get("hover_point", {}),
     }
-
-
-def save_result(output_dir: Path, payload: dict[str, Any]) -> Path:
-    row = {
-        "canonical_code": str(payload.get("canonical_code", "")).strip(),
-        "practice_name": str(payload.get("practice_name", "")).strip(),
-    }
-    result_path = output_dir / "results" / result_filename(row)
-    base.write_json(result_path, payload)
-    return result_path
 
 
 def main() -> int:
     args = parse_args()
-    manifest_path = args.output_dir / "manifest.json"
-    manifest = base.load_manifest(manifest_path)
-    practices_manifest = manifest.setdefault("practices", {})
-    if not isinstance(practices_manifest, dict):
-        practices_manifest = {}
-        manifest["practices"] = practices_manifest
+    dataset = bootstrap_polished_dataset(args.dataset_json, LEGACY_OUTPUT_DIR)
+    dataset_practices = dataset.setdefault("practices", {})
+    if not isinstance(dataset_practices, dict):
+        dataset_practices = {}
+        dataset["practices"] = dataset_practices
 
     canonical_codes = {code.strip().upper() for code in args.canonical_code if code.strip()}
     rows = base.load_rows(args.input, canonical_codes, args.limit)
@@ -249,8 +275,13 @@ def main() -> int:
         return 0
 
     started_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    manifest["last_run_started_at"] = started_at
-    base.write_json(manifest_path, manifest)
+    dataset_meta = dataset.setdefault("_meta", {})
+    if not isinstance(dataset_meta, dict):
+        dataset_meta = {}
+        dataset["_meta"] = dataset_meta
+    dataset_meta["last_run_started_at"] = started_at
+    dataset_meta["source_url"] = base.VIEW_URL
+    base.write_json(args.dataset_json, dataset)
 
     source_profile = base.discover_default_firefox_profile()
     profile_copy = base.refresh_profile_copy(source_profile, args.profile_copy)
@@ -275,9 +306,8 @@ def main() -> int:
             canonical_code = row.get("canonical_code", "").strip().upper()
             if not canonical_code:
                 continue
-            manifest_entry = practices_manifest.get(canonical_code)
-            result_path = args.output_dir / "results" / result_filename(row)
-            if should_skip_recent(manifest_entry if isinstance(manifest_entry, dict) else None, result_path, args.max_age_days, args.force):
+            practice_entry = dataset_practices.get(canonical_code)
+            if should_skip_recent(practice_entry if isinstance(practice_entry, dict) else None, args.max_age_days, args.force):
                 continue
 
             suffix = base.canonical_suffix(canonical_code)
@@ -286,36 +316,22 @@ def main() -> int:
                 payload = {
                     "status": "missing_dropdown_option",
                     "fetched_at": datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-                    "source_url": base.VIEW_URL,
-                    "canonical_code": canonical_code,
                     "practice_name": row.get("practice_name", ""),
                     "tableau_report_area_label": "",
                     "survey_overall_good_percent": None,
                     "response_rate_percent": None,
                     "number_of_responses": None,
                     "responses_for_overall_question": None,
-                    "overall_tooltip_text": "",
-                    "response_rate_tooltip_text": "",
-                    "number_of_responses_tooltip_text": "",
-                    "hover_point": {},
                 }
             else:
                 payload = collect_one_practice(driver, wait, row, report_label, args.pause_seconds)
 
-            written_path = save_result(args.output_dir, payload)
-            practices_manifest[canonical_code] = {
-                "status": payload.get("status", ""),
-                "practice_name": payload.get("practice_name", ""),
-                "tableau_report_area_label": payload.get("tableau_report_area_label", ""),
-                "last_fetched_at": payload.get("fetched_at", ""),
-                "result_file": str(written_path.relative_to(args.output_dir)),
-                "survey_overall_good_percent": payload.get("survey_overall_good_percent"),
-                "response_rate_percent": payload.get("response_rate_percent"),
-                "number_of_responses": payload.get("number_of_responses"),
-            }
+            polished_payload = normalize_polished_entry(payload)
+            dataset_practices[canonical_code] = polished_payload
             processed += 1
-            manifest["processed_this_run"] = processed
-            base.write_json(manifest_path, manifest)
+            dataset_meta["processed_this_run"] = processed
+            dataset_meta["practice_count"] = len(dataset_practices)
+            base.write_json(args.dataset_json, dataset)
             print(
                 f"[{processed}/{len(rows)}] {canonical_code} "
                 f"status={payload.get('status')} "
@@ -326,8 +342,10 @@ def main() -> int:
     finally:
         driver.quit()
 
-    manifest["last_run_finished_at"] = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    base.write_json(manifest_path, manifest)
+    finished_at = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    dataset_meta["last_run_finished_at"] = finished_at
+    dataset_meta["practice_count"] = len(dataset_practices)
+    base.write_json(args.dataset_json, dataset)
     return 0
 
 

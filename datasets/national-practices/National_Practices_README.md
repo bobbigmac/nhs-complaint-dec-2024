@@ -47,24 +47,31 @@ JSON mirrors are also written beside each CSV.
 - Wales:
   - the build currently records the NHS Wales People’s Experience Survey as the identified equivalent source, but does not yet pull a practice-level feed
 - Scotland:
-  - the build currently records the Health and Care Experience Survey as the identified equivalent source, but does not yet parse the current Public Health Scotland dashboard export
+  - the build now reads corrected practice-level metrics from the Health and Care Experience Survey dashboard collector
 - Northern Ireland:
   - the build records GP patient surveys as discontinued after `2010/11`, so there is no current practice-level equivalent wired here
 
 ## Scotland HACE Dev Collector
 
-There is now a standalone dev-only Tableau collector for the Scotland Health and Care Experience dashboard:
+There are now two standalone dev-only collectors for the Scotland Health and Care Experience dashboard:
 
 - [fetch_scotland_hace_tableau.py](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/fetch_scotland_hace_tableau.py)
+- [fetch_scotland_hace_metrics.py](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/fetch_scotland_hace_metrics.py)
 
 Design constraints:
 
 - not wired into the automatic build
 - one persistent Firefox session per run
 - no browser restart between practices
-- per-practice skipping when a raw capture is newer than `31` days, unless `--force`
+- per-practice skipping when a saved practice entry is newer than `31` days, unless `--force`
 
-Default output location:
+Canonical Scotland survey file:
+
+- `datasets/national-practices/scotland/hace_metrics.json`
+
+That file stores the stable practice-level fields the wider build needs, plus per-practice status and fetch timestamp.
+
+Legacy debug output location:
 
 - `datasets/national-practices/output/scotland-hace-tableau/`
 
@@ -81,31 +88,27 @@ The raw sidecar keeps:
 - captured `/vizql/` request/response payloads from the live page
 - a small normalized summary for quick inspection
 
+The metrics collector writes only the stable fields the build needs:
+
+- `survey_overall_good_percent`
+- `response_rate_percent`
+- `number_of_responses`
+- explicit per-practice statuses like `missing_dropdown_option`
+- those entries are also consolidated into the canonical file at [hace_metrics.json](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/scotland/hace_metrics.json), which the main dataset build now reads directly
+
 Preferred dev run shape:
 
 ```bash
 datasets/.venv-google-reviews/bin/python \
-  datasets/national-practices/fetch_scotland_hace_tableau.py \
+  datasets/national-practices/fetch_scotland_hace_metrics.py \
   --canonical-code S30909 \
   --canonical-code S30951
 ```
 
-For a throwaway inspection run, point it at a temporary output directory:
-
-```bash
-datasets/.venv-google-reviews/bin/python \
-  datasets/national-practices/fetch_scotland_hace_tableau.py \
-  --canonical-code S30909 \
-  --force \
-  --output-dir /tmp/scotland-hace-tableau
-```
-
 ## Scotland Survey TODOs
 
-- Decode the remaining Tableau `Response_rate` summary into stable normalized fields so the collector stores response-rate and response-count values directly, not only raw captures.
-- Run the Scotland HACE dev collector across the full [scotland_gp_practices.csv](/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/national-practices/output/scotland_gp_practices.csv) input and make sure every Scotland practice ends with either usable survey data or an explicit machine-readable no-data reason in the manifest/raw sidecar.
+- Investigate the single `metric_not_found` outlier and either make it collectible or downgrade it to an explicit no-data reason.
 - Keep the Scotland pass dev-only and incremental: reuse the single-browser run shape, and skip per-practice refreshes newer than `31` days unless a forced refresh is requested.
-- Once the Scotland fields are fully decoded, promote only the stable practice-level outputs needed by the wider dataset build rather than dumping Tableau raw payloads into the main build products.
 - Keep normalized map comparisons nation-relative as more survey feeds arrive: England, Scotland, Wales, and Northern Ireland should each normalize against their own nation cohort rather than being collapsed into one UK-wide z-score pool.
 
 ## Output shape

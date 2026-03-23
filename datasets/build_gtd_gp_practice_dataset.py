@@ -28,9 +28,10 @@ GP_PATIENT_SURVEY_BRANCH_PARENT_JSON = BASE_DIR / "config" / "gp_patient_survey_
 PATIENT_COUNTS_BY_YEAR_JSON = BASE_DIR / "raw" / "registered_patients" / "patient_counts_by_year.json"
 DEPRIVATION_SUBSET_GEOJSON = BASE_DIR / "deprivation" / "output" / "catchment_lsoa_imd_2025.geojson"
 NATIONAL_PRACTICES_OUTPUT_DIR = BASE_DIR / "national-practices" / "output"
+NATIONAL_PRACTICES_SCOTLAND_DIR = BASE_DIR / "national-practices" / "scotland"
 NATIONAL_GOOGLE_REVIEW_RESULTS_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "google_maps_recent_reviews.json"
 NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_not_in_current_dataset.csv"
-SCOTLAND_HACE_MANIFEST_JSON = NATIONAL_PRACTICES_OUTPUT_DIR / "scotland-hace-metrics" / "manifest.json"
+SCOTLAND_HACE_DATA_JSON = NATIONAL_PRACTICES_SCOTLAND_DIR / "hace_metrics.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
@@ -841,17 +842,20 @@ def load_gp_patient_survey_index(raw_dir: Path = GP_PATIENT_SURVEY_RAW_DIR) -> d
 
 
 def load_scotland_hace_index(
-    manifest_path: Path = SCOTLAND_HACE_MANIFEST_JSON,
+    data_path: Path = SCOTLAND_HACE_DATA_JSON,
 ) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
-    if not manifest_path.exists():
+    if not data_path.exists():
         return {}, {}
     try:
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        dataset = json.loads(data_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}, {}
-    if not isinstance(manifest, dict):
+    if not isinstance(dataset, dict):
         return {}, {}
-    practices = manifest.get("practices", {})
+    dataset_meta = dataset.get("_meta", {})
+    if not isinstance(dataset_meta, dict):
+        dataset_meta = {}
+    practices = dataset.get("practices", {})
     if not isinstance(practices, dict):
         return {}, {}
 
@@ -866,29 +870,17 @@ def load_scotland_hace_index(
         manifest_by_code[normalized_code] = entry
         if entry.get("status") != "ok":
             continue
-        result_file = str(entry.get("result_file", "")).strip()
-        if not result_file:
-            continue
-        result_path = manifest_path.parent / result_file
-        if not result_path.exists():
-            continue
-        try:
-            result_payload = json.loads(result_path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            continue
-        if not isinstance(result_payload, dict):
-            continue
-        overall_percent = percent_or_blank(result_payload.get("survey_overall_good_percent"))
-        response_rate_percent = percent_or_blank(result_payload.get("response_rate_percent"))
+        overall_percent = percent_or_blank(entry.get("survey_overall_good_percent"))
+        response_rate_percent = percent_or_blank(entry.get("response_rate_percent"))
         payload_by_code[normalized_code] = {
             "canonical_code": normalized_code,
-            "source_url": str(result_payload.get("source_url", "")).strip(),
-            "fetched_at": str(result_payload.get("fetched_at", "")).strip(),
-            "tableau_report_area_label": str(result_payload.get("tableau_report_area_label", "")).strip(),
+            "source_url": str(entry.get("source_url") or dataset_meta.get("source_url") or "").strip(),
+            "fetched_at": str(entry.get("fetched_at", "")).strip(),
+            "tableau_report_area_label": str(entry.get("tableau_report_area_label", "")).strip(),
             "response_rate_percent": response_rate_percent,
             "completion_rate_percent": response_rate_percent,
-            "number_of_responses": result_payload.get("number_of_responses", ""),
-            "responses_for_overall_question": result_payload.get("responses_for_overall_question", ""),
+            "number_of_responses": entry.get("number_of_responses", ""),
+            "responses_for_overall_question": entry.get("responses_for_overall_question", ""),
             "key_questions": {
                 "overallexp": {
                     "practice_percent": overall_percent,
@@ -1005,6 +997,20 @@ def resolve_national_practice_survey_payload(
                     "patient_survey_note": (
                         "Current Health and Care Experience Survey practice dashboard "
                         "did not list this code in its General Practice dropdown."
+                    ),
+                },
+            )
+        if manifest_entry.get("status") == "metric_not_found":
+            return (
+                {},
+                code,
+                "",
+                {
+                    "patient_survey_status": "practice_metric_missing_in_source",
+                    "patient_survey_level": "practice_dashboard",
+                    "patient_survey_note": (
+                        "Current Health and Care Experience Survey practice dashboard "
+                        "listed this practice, but the overall-care metric could not be read."
                     ),
                 },
             )
