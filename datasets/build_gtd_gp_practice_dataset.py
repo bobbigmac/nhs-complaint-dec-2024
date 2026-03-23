@@ -5308,7 +5308,8 @@ function loadManchesterCatchmentIndex() {{
     manchesterCatchmentIndex = new Map();
     return Promise.resolve(manchesterCatchmentIndex);
   }}
-  manchesterCatchmentLoadPromise = fetch(MANCHESTER_CATCHMENT_BUNDLE_NAME)
+  const catchmentUrl = new URL(MANCHESTER_CATCHMENT_BUNDLE_NAME, window.location.href).toString();
+  manchesterCatchmentLoadPromise = fetch(catchmentUrl)
     .then((response) => {{
       if (!response.ok) throw new Error(`catchment fetch failed: ${{response.status}}`);
       return response.json();
