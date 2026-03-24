@@ -1,0 +1,28 @@
+{
+  "practice_name": "COVID-19",
+  "canonical_code": "S21948",
+  "postcode": "KY7 5TG",
+  "query_used": "COVID-19 KY7 5TG",
+  "google_maps_title": "Covid-19 Vaccination Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Covid-19+Vaccination+Centre/@56.1958413,-3.1761764,17z/data=!4m8!3m7!1s0x48864b063ff2905f:0xd43e8c9be6ce2aab!8m2!3d56.1958383!4d-3.1735961!9m1!1b1!16s%2Fg%2F11pcvz78fc?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 56.1958383,
+  "longitude": -3.1735961,
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774330058366,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48864b063ff2905f%3A0xd43e8c9be6ce2aab!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNCLV9ueUN3EAE\",[\"0x0:0xd43e8c9be6ce2aab\",null,1672938841029088,1672940948449142,[null,null,[\"https://www.google.com/maps/contrib/101863427061178751893/reviews?hl\\u003den\"],null,null,[\"John Colston\",\"https://lh3.googleusercontent.com/a-/ALV-UjUwz3uAhERtz1PCQsRbAlo0VxMmZ_CQ1JGAgQ7xFP9YTlhQjwc\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/101863427061178751893?hl\\u003den\"],\"101863427061178751893\",null,27,24,null,[null,null,0],45,[\"27 reviews\",null,null,null,null,[null,\"0ahUKEwii9dTG5reTAxUbKWMBHXETC48Q7LoGCAMoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Would be good if someone who works there could update the opening hours.\\n\\nSave me wasting an hour scrambling to get to an appointment that's impossible to keep.\",null,[0,160]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCLV9ueUN3EAE!2m1!1s0x0:0xd43e8c9be6ce2aab!3m1!1s2@1:CIHM0ogKEICAgICB-_nyCw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNCLV9ueUN3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNCLV9ueUN3Ei4KF0NJSE0wb2dLRUlDQWdJQ0ItX255aXdFEhNDZ3dJbEp2Y25RWVE4TG1WMWdFGi0KFkNJSE0wb2dLRUlDQWdJQ0ItX255U3cSE0Nnd0lsSnZjblFZUThMbVYxZ0UiEgkAAAAAAAAAABGrKs7mm4w-1CoTQ2d3SWxKdmNuUVlROExtVjFnRQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwii9dTG5reTAxUbKWMBHXETC48QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwii9dTG5reTAxUbKWMBHXETC48Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

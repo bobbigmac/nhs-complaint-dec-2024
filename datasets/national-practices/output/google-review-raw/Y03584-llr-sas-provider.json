@@ -1,0 +1,28 @@
+{
+  "practice_name": "LLR SAS PROVIDER",
+  "canonical_code": "Y03584",
+  "postcode": "LE1 8FL",
+  "query_used": "LLR SAS PROVIDER LE1 8FL",
+  "google_maps_title": "LLR Patient Care Locally",
+  "google_maps_url": "https://www.google.com/maps/place/LLR+Patient+Care+Locally/@52.7300222,-2.5900394,9z/data=!4m12!1m2!2m1!1sLLR+SAS+PROVIDER+LE1+8FL!3m8!1s0x48776121b77b198b:0xca1c6c8240ecb796!8m2!3d52.7300222!4d-1.370557!9m1!1b1!15sChhMTFIgU0FTIFBST1ZJREVSIExFMSA4RkySARthc3NvY2lhdGlvbl9vcl9vcmdhbml6YXRpb27gAQA!16s%2Fg%2F11g9qv4lpm?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 52.7300222,
+  "longitude": -1.370557,
+  "google_review_count": 2,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774327512046,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48776121b77b198b%3A0xca1c6c8240ecb796!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"Ci9DQUlRQUNvZENodHljRjlvT25FMVRtNXRMVFZUT0Rjd2NEQmlZVUZvWkVWalIwRRAB\",[\"0x0:0xca1c6c8240ecb796\",null,1765639403448366,1765639403448366,[null,null,[\"https://www.google.com/maps/contrib/104087920520471847634/reviews?hl\\u003den\"],null,null,[\"Nick Murray\",\"https://lh3.googleusercontent.com/a/ACg8ocLgkHcIbTzGD6ldjarE0CACbJ45199U_1GrMyd2lIVD2Qe3Qg\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/104087920520471847634?hl\\u003den\"],\"104087920520471847634\",null,50,3,null,[1,5,1],19,[\"Local Guide · 50 reviews\",null,null,null,null,[null,\"0ahUKEwjtrcWI3beTAxULEWMBHTynKIIQ7LoGCAMoAA\"]]]],null,\"3 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25FMVRtNXRMVFZUT0Rjd2NEQmlZVUZvWkVWalIwRRAB!2m1!1s0x0:0xca1c6c8240ecb796!3m1!1s2@1:CAIQACodChtycF9oOnE1Tm5tLTVTODcwcDBiYUFoZEVjR0E%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dCi9DQUlRQUNvZENodHljRjlvT25FMVRtNXRMVFZUT0Rjd2NEQmlZVUZvWkVWalIwRRAB\\u0026t\\u003d1\\u0026entityid\\u003dCi9DQUlRQUNvZENodHljRjlvT25FMVRtNXRMVFZUT0Rjd2NEQmlZVUZvWkVWalIwRRpbCkxDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVGTVZSdE5YUk1WRlpVVDBSamQyTkVRbWxaVlVadldrVldhbEl3UlFvR2NtRjBhVzVuEgswZEVOSWZQaU5SdCISCQAAAAAAAAAAEZa37ECCbBzKKgswZEVOSWZQaU5SdA\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjtrcWI3beTAxULEWMBHTynKIIQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjtrcWI3beTAxULEWMBHTynKIIQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMVJ1YzAxb1NGOWZSV2hETkROclZVcFhNblpMZURablp6SlVWVUZCUVVGQlIyZG1YMEZ0Vkc1elRXaElSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSURCNm96QkZnEAE\",[\"0x0:0xca1c6c8240ecb796\",null,1673908186937489,1673908186937489,[null,null,[\"https://www.google.com/maps/contrib/113864708512875169185/reviews?hl\\u003den\"],null,null,[\"Mathew\",\"https://lh3.googleusercontent.com/a-/ALV-UjW0e-rqsomOi3gqBf3TkUJCZuWTRPNFERNT59RFFJR3msyV2LOR\\u003ds120-c-rp-mo-ba3-br100\",[\"https://www.google.com/maps/contrib/113864708512875169185?hl\\u003den\"],\"113864708512875169185\",null,33,12,null,[1,5,1],28,[\"Local Guide · 33 reviews\",null,null,null,null,[null,\"0ahUKEwjtrcWI3beTAxULEWMBHTynKIIQ7LoGCAYoAA\"]]]],null,\"3 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCNm96QkZnEAE!2m1!1s0x0:0xca1c6c8240ecb796!3m1!1s2@1:CIHM0ogKEICAgIDB6ozBFg%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSURCNm96QkZnEAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSURCNm96QkZnGi4KF0NJSE0wb2dLRUlDQWdJREI2b3pCbGdFEhNDZ3dJMnAtWG5nWVE2T1NEdndNIhIJAAAAAAAAAAARlrfsQIJsHMoqE0Nnd0kycC1YbmdZUTZPU0R2d00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjtrcWI3beTAxULEWMBHTynKIIQoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjtrcWI3beTAxULEWMBHTynKIIQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

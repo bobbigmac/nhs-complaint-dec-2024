@@ -1,0 +1,41 @@
+{
+  "practice_name": "MUNLOCHY SURGERY",
+  "canonical_code": "S55408",
+  "postcode": "IV8 8NG",
+  "query_used": "MUNLOCHY SURGERY IV8 8NG",
+  "google_maps_title": "Munlochy& North Kessock Medical Practice",
+  "google_maps_url": "https://www.google.com/maps/place/Munlochy%26+North+Kessock+Medical+Practice/@57.5500916,-4.264933,17z/data=!4m8!3m7!1s0x488f75e76e212ba5:0xa3c5edbbccac2924!8m2!3d57.5500887!4d-4.2623527!9m1!1b1!16s%2Fg%2F11fxc7v85_?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 57.5500887,
+  "longitude": -4.2623527,
+  "google_review_count": 24,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 2,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774331460018,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488f75e76e212ba5%3A0xa3c5edbbccac2924!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e1",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRAB\",[\"0x0:0xa3c5edbbccac2924\",null,1730993192832825,1730993192832825,[null,null,[\"https://www.google.com/maps/contrib/117068361221818302680/reviews?hl\\u003den\"],null,null,[\"Donalda Macleod\",\"https://lh3.googleusercontent.com/a/ACg8ocIDy46u4sq8F81pKf4iofnhemKVdRUFkWWM5okvltBff57EiQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/117068361221818302680?hl\\u003den\"],\"117068361221818302680\",null,1,0,null,[0,1,1],1,[\"1 review\",null,null,null,null,[null,\"0ahUKEwjJ8YXj67eTAxWlHmMBHXl2IpAQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRAB!2m1!1s0x0:0xa3c5edbbccac2924!3m1!1s2@1:CIHM0ogKEICAgIC3ldCxogE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRotChZDSUhNMG9nS0VJQ0FnSUMzbGRDeFlnEhNDZ3dJcUxpenVRWVFxTTJQalFNIhIJAAAAAAAAAAARJCmszLvtxaMqE0Nnd0lxTGl6dVFZUXFNMlBqUU0\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjJ8YXj67eTAxWlHmMBHXl2IpAQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjJ8YXj67eTAxWlHmMBHXl2IpAQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    },
+    {
+      "seq": 2,
+      "captured_at_ms": 1774331466805,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488f75e76e212ba5%3A0xa3c5edbbccac2924!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRAB\",[\"0x0:0xa3c5edbbccac2924\",null,1730993192832825,1730993192832825,[null,null,[\"https://www.google.com/maps/contrib/117068361221818302680/reviews?hl\\u003den\"],null,null,[\"Donalda Macleod\",\"https://lh3.googleusercontent.com/a/ACg8ocIDy46u4sq8F81pKf4iofnhemKVdRUFkWWM5okvltBff57EiQ\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/117068361221818302680?hl\\u003den\"],\"117068361221818302680\",null,1,0,null,[0,1,1],1,[\"1 review\",null,null,null,null,[null,\"0ahUKEwj8hp_m67eTAxXxImMBHRh0EoUQ7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRAB!2m1!1s0x0:0xa3c5edbbccac2924!3m1!1s2@1:CIHM0ogKEICAgIC3ldCxogE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUMzbGRDeG9nRRotChZDSUhNMG9nS0VJQ0FnSUMzbGRDeFlnEhNDZ3dJcUxpenVRWVFxTTJQalFNIhIJAAAAAAAAAAARJCmszLvtxaMqE0Nnd0lxTGl6dVFZUXFNMlBqUU0\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj8hp_m67eTAxXxImMBHRh0EoUQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwj8hp_m67eTAxXxImMBHRh0EoUQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

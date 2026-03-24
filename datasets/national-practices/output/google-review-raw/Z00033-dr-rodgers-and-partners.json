@@ -1,0 +1,28 @@
+{
+  "practice_name": "DR. RODGERS & PARTNERS",
+  "canonical_code": "Z00033",
+  "postcode": "BT6 9DL",
+  "query_used": "DR. RODGERS & PARTNERS BT6 9DL",
+  "google_maps_title": "Dr T Hendron - Woodstock Medical Centre",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+T+Hendron+-+Woodstock+Medical+Centre/@54.5919155,-5.913023,16z/data=!4m12!1m2!2m1!1sDR.+RODGERS+%26+PARTNERS+BT6+9DL!3m8!1s0x486109060175f1c5:0x4715404914214f95!8m2!3d54.5919155!4d-5.9034958!9m1!1b1!15sCh5EUi4gUk9ER0VSUyAmIFBBUlRORVJTIEJUNiA5REySAQZkb2N0b3LgAQA!16s%2Fg%2F11g9dpvgzz?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 54.5919155,
+  "longitude": -5.9034958,
+  "google_review_count": 20,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774328130300,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x486109060175f1c5%3A0x4715404914214f95!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VLbnZsUHZSXzhIb0dREAE\",[\"0x0:0x4715404914214f95\",null,1748345918523194,1748345918523194,[null,null,[\"https://www.google.com/maps/contrib/106442693076058039623/reviews?hl\\u003den\"],null,null,[\"Maggie Dunlop\",\"https://lh3.googleusercontent.com/a/ACg8ocIN5Y1vcgGla7SiWb1_EwwiVUX1f_QaCwk7uBYXPUtv8BvGCw\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/106442693076058039623?hl\\u003den\"],\"106442693076058039623\",null,2,0,null,[0,2,1],2,[\"2 reviews\",null,null,null,null,[null,\"0ahUKEwjZ_6Ov37eTAxUTEWMBHSG3DC8Q7LoGCAMoAA\"]]]],null,\"9 months ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VLbnZsUHZSXzhIb0dREAE!2m1!1s0x0:0x4715404914214f95!3m1!1s2@1:CIHM0ogKEKnvlPvR_8HoGQ%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VLbnZsUHZSXzhIb0dREAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VLbnZsUHZSXzhIb0dRGi0KFkNJSE0wb2dLRUxXNHpvYi15TjdQTlESE0Nnd0l2c2pXd1FZUWtKMjktUUUiEgkAAAAAAAAAABGVTyEUSUAVRyoTQ2d3SXZzald3UVlRa0oyOS1RRQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjZ_6Ov37eTAxUTEWMBHSG3DC8QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjZ_6Ov37eTAxUTEWMBHSG3DC8Q0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lSMnAxWkcxMlJWOWZSV2hDY1VObWJGRm9NV2xNYWxBdFVUaEZVVUZCUVVGQlIyZG1YMEZ0YW5Wa2JYWkZSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChZDSUhNMG9nS0VJQ0FnSUN4aEpMaFR3EAE\",[\"0x0:0x4715404914214f95\",null,1683729246996376,1683729246996376,[null,null,[\"https://www.google.com/maps/contrib/109503032661443873440/reviews?hl\\u003den\"],null,null,[\"Sile Mckinney\",\"https://lh3.googleusercontent.com/a/ACg8ocLRhEE6eiZUpcT4s6RPkzhaM2nWq2qq8Ohf5_-G-H4rQyq-JA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/109503032661443873440?hl\\u003den\"],\"109503032661443873440\",null,0,0,null,[0,1,1],1,[\"\",null,null,null,null,[null,\"0ahUKEwjZ_6Ov37eTAxUTEWMBHSG3DC8Q7LoGCAYoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4aEpMaFR3EAE!2m1!1s0x0:0x4715404914214f95!3m1!1s2@1:CIHM0ogKEICAgICxhJLhTw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUN4aEpMaFR3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUN4aEpMaFR3Gi4KF0NJSE0wb2dLRUlDQWdJQ3hoSkxoendFEhNDZ3dJM3RidW9nWVF3UHVOMndNIhIJAAAAAAAAAAARlU8hFElAFUcqE0Nnd0kzdGJ1b2dZUXdQdU4yd00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjZ_6Ov37eTAxUTEWMBHSG3DC8QoykIBygB\"],null,[null,[[1,0]]]],\"0ahUKEwjZ_6Ov37eTAxUTEWMBHSG3DC8Q0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "practice_name": "SAXENA L",
+  "canonical_code": "P92038",
+  "postcode": "WN3 6JN",
+  "query_used": "SAXENA L WN3 6JN",
+  "google_maps_title": "Saxena Dr L",
+  "google_maps_url": "https://www.google.com/maps/place/Saxena+Dr+L/@53.5206714,-2.6705476,17z/data=!4m8!3m7!1s0x487b055b3382362f:0xab3187796f469967!8m2!3d53.5206682!4d-2.6679673!9m1!1b1!16s%2Fg%2F1tvrz80d?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 53.5206682,
+  "longitude": -2.6679673,
+  "google_review_count": 21,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774326953233,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x487b055b3382362f%3A0xab3187796f469967!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sng3CacaAHr3YhbIPt7fd8Qo!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChZDSUhNMG9nS0VJQ0FnSUNEM05LVmZ3EAE\",[\"0x0:0xab3187796f469967\",null,1711383149794521,1711383149794521,[null,null,[\"https://www.google.com/maps/contrib/110336515664955392767/reviews?hl\\u003den\"],null,null,[\"Janet Leigh\",\"https://lh3.googleusercontent.com/a/ACg8ocIey7hJbh2pX0--6-jhQn0K2LMfhthJ_IByYs3Y-_s1adNGdg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/110336515664955392767?hl\\u003den\"],\"110336515664955392767\",null,4,0,null,[0,2,1],1,[\"4 reviews\",null,null,null,null,[null,\"0ahUKEwiZqoT-2reTAxUbKWMBHXETC48Q7LoGCAMoAA\"]]]],null,\"a year ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[2],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"My son turned up at 320 on Friday,  sadly the car park was full , the parents were using the parking spaces from the school across the road  I have no problems with staff at the surgery,  but my son has a disability and the time was difficult for us to park on their car park as school parents seem to park there , I never go again at this time as it was so stressful,\",null,[0,232]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEM05LVmZ3EAE!2m1!1s0x0:0xab3187796f469967!3m1!1s2@1:CIHM0ogKEICAgICD3NKVfw%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChZDSUhNMG9nS0VJQ0FnSUNEM05LVmZ3EAE\\u0026t\\u003d1\\u0026entityid\\u003dChZDSUhNMG9nS0VJQ0FnSUNEM05LVmZ3Ei0KFkNJSE0wb2dLRUlDQWdJQ0QzTkxWUUESE0Nnd0k3Y1NHc0FZUXFOdnQtZ0kaLgoXQ0lITTBvZ0tFSUNBZ0lDRDNOTFZ3QUUSE0Nnd0k3Y1NHc0FZUXFOdnQtZ0kiEgkAAAAAAAAAABFnmUZveYcxqyoTQ2d3STdjU0dzQVlRcU52dC1nSQ\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiZqoT-2reTAxUbKWMBHXETC48QoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiZqoT-2reTAxUbKWMBHXETC48Q0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

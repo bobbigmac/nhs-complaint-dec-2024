@@ -1,0 +1,21 @@
+Practice: COVID-19
+Canonical code: S21948
+Postcode: KY7 5TG
+Google Maps title: Covid-19 Vaccination Centre
+Google rating: 1.0
+Google review count: 1
+Google Maps URL: https://www.google.com/maps/place/Covid-19+Vaccination+Centre/@56.1958413,-3.1761764,17z/data=!4m8!3m7!1s0x48864b063ff2905f:0xd43e8c9be6ce2aab!8m2!3d56.1958383!4d-3.1735961!9m1!1b1!16s%2Fg%2F11pcvz78fc?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+Title match score: 0.5
+Review collection mode: visible_cards
+Review cards collected: 1
+Owner replies collected: 0
+Raw review responses captured: 1
+Raw review capture file: datasets/national-practices/output/google-review-raw/S21948-covid-19.json
+
+Captured reviews
+================
+
+Author: John Colston
+Date: 3 years ago
+Rating: 1 star
+Would be good if someone who works there could update the opening hours. Save me wasting an hour scrambling to get to an appointment that's impossible to keep.

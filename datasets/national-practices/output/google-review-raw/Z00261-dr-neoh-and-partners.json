@@ -1,0 +1,28 @@
+{
+  "practice_name": "DR. NEOH & PARTNERS",
+  "canonical_code": "Z00261",
+  "postcode": "BT23 4LR",
+  "query_used": "DR. NEOH & PARTNERS BT23 4LR",
+  "google_maps_title": "Dr E McKewon - Comber Surgery",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+E+McKewon+-+Comber+Surgery/@54.5510288,-6.0498143,11z/data=!4m12!1m2!2m1!1sDR.+NEOH+%26+PARTNERS+BT23+4LR!3m8!1s0x48610cae305918c1:0x261c6238899c71af!8m2!3d54.5510288!4d-5.7449437!9m1!1b1!15sChxEUi4gTkVPSCAmIFBBUlRORVJTIEJUMjMgNExSkgEGZG9jdG9y4AEA!16s%2Fg%2F11f8hwtfgy?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 54.5510288,
+  "longitude": -5.7449437,
+  "google_review_count": 31,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774329179576,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x48610cae305918c1%3A0x261c6238899c71af!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUNaNHN2bzBBRRAB\",[\"0x0:0x261c6238899c71af\",null,1694077756498679,1694077756498679,[null,null,[\"https://www.google.com/maps/contrib/100146504233508351423/reviews?hl\\u003den\"],null,null,[\"Kirsty Kerr\",\"https://lh3.googleusercontent.com/a/ACg8ocJkyzkk94efqBRlKiTqRqKZR3Y7eyMCrnattsj9u2LTtdW9Yg\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/100146504233508351423?hl\\u003den\"],\"100146504233508351423\",null,0,0,null,[0,1,1],2,[\"\",null,null,null,null,[null,\"0ahUKEwi7uaCj47eTAxVHEmMBHdIhD4sQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[4]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNHN2bzBBRRAB!2m1!1s0x0:0x261c6238899c71af!3m1!1s2@1:CIHM0ogKEICAgICZ4svo0AE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUNaNHN2bzBBRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUNaNHN2bzBBRRotChZDSUhNMG9nS0VJQ0FnSUNaNHN2b01BEhNDZ3dJdktibXB3WVEyUG5rN1FFIhIJAAAAAAAAAAARr3GciThiHCYqE0Nnd0l2S2JtcHdZUTJQbms3UUU\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi7uaCj47eTAxVHEmMBHdIhD4sQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwi7uaCj47eTAxVHEmMBHdIhD4sQ0pMFCAIoAA\"],null,\"CAESYENBRVFBUnBDUTJrNFNVRlNTVzVEWjI5QlVEY3lTRmRTUjA1MWRGOWZSV2hCWlZadVFpMWpWamhWVFZwT1RrdFlZMEZCUVVGQlIyZG1YMEZ1VjFKSFRuVjBSMEZCYVVGQg\\u003d\\u003d\"],[[\"ChdDSUhNMG9nS0VJQ0FnSUR4a2ZMVWt3RRAB\",[\"0x0:0x261c6238899c71af\",null,1686368863623603,1686368863623603,[null,null,[\"https://www.google.com/maps/contrib/103420126839316884782/reviews?hl\\u003den\"],null,null,[\"Ian Ross\",\"https://lh3.googleusercontent.com/a/ACg8ocJv-mmTVWaVkXZvQKLnXEO45YU52gST9onvJ-rUeLtjyfrOrA\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/103420126839316884782?hl\\u003den\"],\"103420126839316884782\",null,7,0,null,[0,3,1],0,[\"7 reviews\",null,null,null,null,[null,\"0ahUKEwi7uaCj47eTAxVHEmMBHdIhD4sQ7LoGCAYoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Dr Mc Keown has a loose tongue (gossip ) . Do not trust her confidentiality as she is quite liable to talk about you to others.  I have experienced this with her.\",null,[0,162]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4a2ZMVWt3RRAB!2m1!1s0x0:0x261c6238899c71af!3m1!1s2@1:CIHM0ogKEICAgIDxkfLUkwE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUR4a2ZMVWt3RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUR4a2ZMVWt3RRItChZDSUhNMG9nS0VJQ0FnSUR4a2ZMVVV3EhNDZ3dJMy1TUHBBWVF1TnF0cVFJGi4KF0NJSE0wb2dLRUlDQWdJRHhrZkxVMHdFEhNDZ3dJMy1TUHBBWVF1TnF0cVFJIhIJAAAAAAAAAAARr3GciThiHCYqE0Nnd0kzLVNQcEFZUXVOcXRxUUk\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwi7uaCj47eTAxVHEmMBHdIhD4sQoykIBygB\"],null,[null,[[1,1]]]],\"0ahUKEwi7uaCj47eTAxVHEmMBHdIhD4sQ0pMFCAUoAQ\"]]]]",
+      "error": ""
+    }
+  ]
+}

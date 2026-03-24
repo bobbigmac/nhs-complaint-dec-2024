@@ -1,0 +1,28 @@
+{
+  "practice_name": "DR. CONWAY & PARTNERS",
+  "canonical_code": "Z00080",
+  "postcode": "BT14 7GB",
+  "query_used": "DR. CONWAY & PARTNERS BT14 7GB",
+  "google_maps_title": "Dr Andrew McCutcheon",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+Andrew+McCutcheon/@54.602985,-5.9699988,13z/data=!3m1!5s0x4861099fdba58c6d:0x12c2ca9e4a9a428b!4m12!1m2!2m1!1sDR.+CONWAY+%26+PARTNERS+BT14+7GB!3m8!1s0x4861099fd9717197:0xa069ff55484fa2e8!8m2!3d54.5980045!4d-5.8881662!9m1!1b1!15sCh5EUi4gQ09OV0FZICYgUEFSVE5FUlMgQlQxNCA3R0KSAQZkb2N0b3LgAQA!16s%2Fg%2F1tk62jpk?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 54.5980045,
+  "longitude": -5.8881662,
+  "google_review_count": 16,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774328369294,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x4861099fd9717197%3A0xa069ff55484fa2e8!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e2",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSUQ5dDkyY3pnRRAB\",[\"0x0:0xa069ff55484fa2e8\",null,1711094701176408,1711094701176408,[null,null,[\"https://www.google.com/maps/contrib/107434959921084832363/reviews?hl\\u003den\"],null,null,[\"Jeanette C\",\"https://lh3.googleusercontent.com/a-/ALV-UjVa1zZj2zheXYzvPGfHv296SIr7_J8BkuYlurLsbf3xnIO7J0c\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/107434959921084832363?hl\\u003den\"],\"107434959921084832363\",null,5,0,null,[0,3,1],2,[\"5 reviews\",null,null,null,null,[null,\"0ahUKEwjRnqOh4LeTAxWjAnsEHW7uN7gQ7LoGCAMoAA\"]]]],null,\"2 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5dDkyY3pnRRAB!2m1!1s0x0:0xa069ff55484fa2e8!3m1!1s2@1:CIHM0ogKEICAgID9t92czgE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSUQ5dDkyY3pnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSUQ5dDkyY3pnRRosChZDSUhNMG9nS0VJQ0FnSUQ5dDkyY0xnEhJDZ3NJcmZmMHJ3WVF3SXVQVkEiEgkAAAAAAAAAABHook9IVf9poCoSQ2dzSXJmZjByd1lRd0l1UFZB\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwjRnqOh4LeTAxWjAnsEHW7uN7gQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwjRnqOh4LeTAxWjAnsEHW7uN7gQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
