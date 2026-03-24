@@ -6,9 +6,9 @@
   "latest_ratings_ods_path": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/01_March_2026_Latest_ratings.ods",
   "generated_files": {
     "gp_ratings_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings.json",
+    "gp_ratings_index_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_index.json",
     "gp_ratings_csv": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings.csv",
-    "manifest_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings_manifest.json",
-    "gp_ratings_index_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_index.json"
+    "manifest_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings_manifest.json"
   },
   "stats": {
     "rows_seen": 300349,

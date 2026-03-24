@@ -37,6 +37,7 @@ SCOTLAND_HACE_DATA_JSON = NATIONAL_PRACTICES_SCOTLAND_DIR / "hace_metrics.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 PUBLISHED_CATCHMENT_INDEX_REL_PATH = "catchments/index.json"
 ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR = BASE_DIR / "catchments" / ".cache" / "gp-catchments-england" / "by_practice"
+ENGLAND_GP_REGISTRATION_FLAGS_BY_PRACTICE_JSON = BASE_DIR / "catchments" / ".cache" / "gp-registration-flags-england" / "flags_by_practice.json"
 CQC_GP_RATINGS_JSON = BASE_DIR / "raw" / "cqc" / "cqc_gp_location_index.json"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
 
@@ -330,22 +331,35 @@ def postcode_lookup(postcode: str) -> dict[str, Any]:
 def parse_distance_miles(raw: str) -> float:
     raw = html.unescape(raw).strip().lower()
     match = re.search(r"([0-9]+(?:\.[0-9]+)?)\s*mile", raw)
-    if not match:
-        raise ValueError(f"Could not parse distance from {raw!r}")
-    return float(match.group(1))
+    if match:
+        return float(match.group(1))
+    bare_number = re.fullmatch(r"[0-9]+(?:\.[0-9]+)?", raw)
+    if bare_number:
+        return float(bare_number.group(0))
+    raise ValueError(f"Could not parse distance from {raw!r}")
 
 
 def parse_nhs_search_results(page_html: str) -> list[dict[str, Any]]:
-    blocks = re.findall(r'(<li class="results__item.*?</li>)', page_html, flags=re.S)
+    blocks = re.findall(r'(<li\b[^>]*class="[^"]*\bresults__item\b[^"]*"[^>]*>.*?</li>)', page_html, flags=re.S)
     results: list[dict[str, Any]] = []
     for block in blocks:
         profile = re.search(r'href="(https://www\.nhs\.uk/services/gp-surgery/[^"]+)"', block)
-        name = re.search(r'<h2[^>]*>\s*<a[^>]*>(.*?)</a>', block, flags=re.S)
+        name = re.search(r'<h2[^>]*>\s*<a[^>]*>(.*?)</a>', block, flags=re.S) or re.search(
+            r'<h4[^>]*id="orgname_\d+"[^>]*>(.*?)</h4>',
+            block,
+            flags=re.S,
+        )
         ods = re.search(r'<p id="item_id_\d+"[^>]*>(.*?)</p>', block, flags=re.S)
-        distance = re.search(r'<p id="distance_\d+"[^>]*>.*?([0-9]+(?:\.[0-9]+)?\s*miles?\s*away)</p>', block, flags=re.S)
+        distance = re.search(r'<p id="distance_\d+"[^>]*>.*?([0-9]+(?:\.[0-9]+)?\s*miles?\s*away)</p>', block, flags=re.S) or re.search(
+            r'<span id="distance_\d+"[^>]*>([0-9]+(?:\.[0-9]+)?)</span>',
+            block,
+            flags=re.S,
+        )
         address = re.search(r'<p id="address_\d+"[^>]*>(.*?)</p>', block, flags=re.S)
         phone = re.search(r'<a id="phone_\d+_link" href="tel:[^"]+">(.*?)</a>', block, flags=re.S)
         org_type = re.search(r'<p id="item_org_type_id_\d+"[^>]*>(.*?)</p>', block, flags=re.S)
+        accepting_new_patients = bool(re.search(r'>\s*Accepting new patients\s*<', block, flags=re.I))
+        accepts_out_of_area = bool(re.search(r'>\s*Accepts out of area registrations\s*<', block, flags=re.I))
         if not (profile and name and ods and distance and address):
             continue
         clean_name = re.sub(r"<span[^>]*>.*?</span>", "", name.group(1), flags=re.S)
@@ -360,6 +374,8 @@ def parse_nhs_search_results(page_html: str) -> list[dict[str, Any]]:
                 "address": html.unescape(" ".join(clean_address.split())),
                 "phone": html.unescape(" ".join(phone.group(1).split())) if phone else "",
                 "org_type_id": html.unescape(org_type.group(1).strip()) if org_type else "",
+                "accepting_new_patients": accepting_new_patients,
+                "accepts_out_of_area_registrations": accepts_out_of_area,
             }
         )
     return results
@@ -547,6 +563,7 @@ def build_dataset() -> list[dict[str, Any]]:
     resolved_anchors = [resolve_anchor(anchor) for anchor in GTD_ANCHORS]
     resolved_supplementals = [resolve_supplemental_center(center) for center in SUPPLEMENTAL_SEARCH_CENTERS]
     registered_patient_counts = load_registered_patient_index()
+    registration_flags_by_code = load_registration_flags_by_code()
     anchor_codes = {anchor["ods_code"]: anchor for anchor in resolved_anchors}
     practice_index: dict[str, dict[str, Any]] = {}
 
@@ -562,10 +579,18 @@ def build_dataset() -> list[dict[str, Any]]:
                     "search_result_address": row["address"],
                     "search_result_phone": row["phone"],
                     "search_result_ods_code": row["ods_code"],
+                    "search_result_accepting_new_patients": row["accepting_new_patients"],
+                    "search_result_accepts_out_of_area_registrations": row["accepts_out_of_area_registrations"],
                     "nearby_to_gtd_anchors": [],
                     "nearby_anchor_search_distances_miles": {},
                 },
             )
+            entry["search_result_accepting_new_patients"] = bool(entry.get("search_result_accepting_new_patients")) or bool(
+                row["accepting_new_patients"]
+            )
+            entry["search_result_accepts_out_of_area_registrations"] = bool(
+                entry.get("search_result_accepts_out_of_area_registrations")
+            ) or bool(row["accepts_out_of_area_registrations"])
             if anchor["gtd_site_name"] not in entry["nearby_to_gtd_anchors"]:
                 entry["nearby_to_gtd_anchors"].append(anchor["gtd_site_name"])
             entry["nearby_anchor_search_distances_miles"][anchor["gtd_site_name"]] = row["distance_miles"]
@@ -585,11 +610,19 @@ def build_dataset() -> list[dict[str, Any]]:
                     "search_result_address": row["address"],
                     "search_result_phone": row["phone"],
                     "search_result_ods_code": row["ods_code"],
+                    "search_result_accepting_new_patients": row["accepting_new_patients"],
+                    "search_result_accepts_out_of_area_registrations": row["accepts_out_of_area_registrations"],
                     "nearby_to_gtd_anchors": [],
                     "nearby_anchor_search_distances_miles": {},
                     "source_search_centers": [],
                 },
             )
+            entry["search_result_accepting_new_patients"] = bool(entry.get("search_result_accepting_new_patients")) or bool(
+                row["accepting_new_patients"]
+            )
+            entry["search_result_accepts_out_of_area_registrations"] = bool(
+                entry.get("search_result_accepts_out_of_area_registrations")
+            ) or bool(row["accepts_out_of_area_registrations"])
             source_centers = entry.setdefault("source_search_centers", [])
             if center["name"] not in source_centers:
                 source_centers.append(center["name"])
@@ -600,6 +633,9 @@ def build_dataset() -> list[dict[str, Any]]:
         print(f"[{index}/{total}] Enriching {practice['search_result_name']}", file=sys.stderr)
         profile = parse_nhs_profile(practice["initial_profile_url"])
         canonical_code = profile["canonical_code"]
+        registration_flags = registration_flags_by_code.get(canonical_code) or registration_flags_by_code.get(
+            str(practice.get("search_result_ods_code") or "").strip().upper()
+        ) or {}
         matched_anchor = anchor_codes.get(canonical_code)
         record = {
             "practice_name": profile["nhs_page_title"],
@@ -611,7 +647,16 @@ def build_dataset() -> list[dict[str, Any]]:
             "postcode": profile["postcode"],
             "latitude": profile["latitude"],
             "longitude": profile["longitude"],
-            "accepting_new_patients": profile["accepting_new_patients"],
+            "accepting_new_patients": bool(
+                registration_flags.get("accepting_new_patients")
+                if registration_flags.get("accepting_new_patients") is not None
+                else profile["accepting_new_patients"]
+            ),
+            "accepts_out_of_area_registrations": bool(
+                registration_flags.get("accepts_out_of_area_registrations")
+                if registration_flags.get("accepts_out_of_area_registrations") is not None
+                else practice.get("search_result_accepts_out_of_area_registrations")
+            ),
             "gtd_managed": bool(matched_anchor),
             "gtd_site_name": matched_anchor["gtd_site_name"] if matched_anchor else "",
             "gtd_site_url": matched_anchor["gtd_url"] if matched_anchor else "",
@@ -680,6 +725,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "telephone",
         "website_url",
         "accepting_new_patients",
+        "accepts_out_of_area_registrations",
         "gtd_managed",
         "gtd_site_name",
         "gtd_site_url",
@@ -1481,6 +1527,8 @@ def build_national_map_supplementals(
                 "patient_survey_level": str(survey_metadata.get("patient_survey_level") or "").strip(),
                 "patient_survey_url": str(survey_metadata.get("patient_survey_url") or "").strip(),
                 "patient_survey_note": str(survey_metadata.get("patient_survey_note") or "").strip(),
+                "accepting_new_patients": source_row.get("accepting_new_patients", False),
+                "accepts_out_of_area_registrations": source_row.get("accepts_out_of_area_registrations", False),
                 "cqc_overall_rating": str(cqc.get("overall_rating", "")).strip(),
                 "cqc_location_url": str(cqc.get("url", "")).strip(),
                 "cqc_service_website": str(cqc.get("service_website", "")).strip(),
@@ -1651,6 +1699,24 @@ def load_cqc_gp_location_index(path: Path = CQC_GP_RATINGS_JSON) -> dict[str, di
     return by_code
 
 
+def load_registration_flags_by_code(path: Path = ENGLAND_GP_REGISTRATION_FLAGS_BY_PRACTICE_JSON) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    by_code: dict[str, dict[str, Any]] = {}
+    for code, item in payload.items():
+        normalized_code = str(code or "").strip().upper()
+        if not normalized_code or not isinstance(item, dict):
+            continue
+        by_code[normalized_code] = item
+    return by_code
+
+
 def enrich_rows_with_cqc(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     cqc_by_code = load_cqc_gp_location_index()
     if not cqc_by_code:
@@ -1732,6 +1798,8 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "google_missing_text": google_missing_display(row.get("google_review_has_listing", ""), row.get("google_review_scan_status", "")),
         "nhs_url": row.get("nhs_url", ""),
         "nhs_register_url": nhs_registration_url(str(row.get("nhs_url", ""))),
+        "accepting_new_patients": row.get("accepting_new_patients", False),
+        "accepts_out_of_area_registrations": row.get("accepts_out_of_area_registrations", False),
         "gtd_url": row.get("gtd_url", ""),
         "gtd_takeover_date": row.get("gtd_takeover_date", ""),
         "gtd_takeover_precision": row.get("gtd_takeover_precision", ""),
@@ -3695,7 +3763,7 @@ body {{
 }}
 .service-finder-actions {{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
 }}
 .service-finder-actions .overlay-action-button {{
@@ -3703,6 +3771,40 @@ body {{
   justify-content: space-between;
   font-size: 14px;
   font-weight: 700;
+}}
+.service-finder-radius-control {{
+  display: grid;
+  grid-template-columns: auto minmax(74px, 92px) auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid rgba(26, 28, 26, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.76);
+}}
+.service-finder-radius-control label {{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(26, 28, 26, 0.8);
+}}
+.service-finder-radius-control input {{
+  width: 100%;
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 1px solid rgba(26, 28, 26, 0.18);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(26, 28, 26, 0.92);
+  background: #fff;
+}}
+.service-finder-radius-control span {{
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(26, 28, 26, 0.62);
 }}
 .service-finder-table-wrap {{
   overflow-x: auto;
@@ -3869,6 +3971,19 @@ body {{
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0;
+}}
+.service-finder-address-badge {{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.10);
+  color: rgba(28, 82, 191, 0.92);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  vertical-align: middle;
 }}
 .service-finder-address-separator {{
   display: inline;
@@ -4317,12 +4432,17 @@ body {{
       <div class="service-finder-header">
         <div class="service-finder-title-wrap">
           <h2 id="service-finder-heading">Find My Best Practice</h2>
-          <p class="service-finder-kicker">Pick a location to see available practices, best first.</p>
+          <p class="service-finder-kicker">Pick a location to see in-catchment practices, plus up to 3 nearby out-of-area options when the NHS says they accept them.</p>
         </div>
         <div class="service-finder-actions">
           <button type="button" id="service-finder-place-button" class="overlay-action-button" title="Click, then click the map to place a practice lookup pin."><span>📍 Find Practices</span></button>
           <button type="button" id="service-finder-locate-button" class="overlay-action-button" title="Use browser geolocation for the lookup pin."><span>Use my location</span><span class="overlay-toggle-icon">L</span></button>
           <button type="button" id="service-finder-clear-button" class="overlay-action-button" title="Clear the current lookup pin."><span>Clear</span><span class="overlay-toggle-icon">X</span></button>
+          <div class="service-finder-radius-control">
+            <label for="service-finder-out-of-area-miles">Out-of-area</label>
+            <input type="number" id="service-finder-out-of-area-miles" min="0" max="30" step="1" value="5" inputmode="numeric" title="Maximum miles for added out-of-area practices">
+            <span>miles</span>
+          </div>
         </div>
       </div>
       <div class="service-finder-table-wrap" aria-live="polite">
@@ -4574,6 +4694,7 @@ let serviceFinderLocationLabel = '';
 let serviceFinderEmptyMessage = '';
 let serviceFinderMatchedRows = null;
 let serviceFinderMatchedCodeSet = new Set();
+let serviceFinderOutOfAreaCodeSet = new Set();
 let serviceFinderMatchedStateKey = '';
 let serviceFinderMatchLoadPromise = null;
 let serviceFinderButtonFlash = '';
@@ -4582,6 +4703,7 @@ let serviceFinderDragActive = false;
 let serviceFinderDragGhost = null;
 let serviceFinderSortKey = 'google';
 let serviceFinderSortDirection = 'desc';
+let serviceFinderOutOfAreaMiles = 5;
 let patientTreemapTimer = null;
 let patientTreemapNormalizeForChange = true;
 let nationalDeprivationUsePopulation = false;
@@ -5327,6 +5449,7 @@ function popupMarkup(row) {{
   const registeredPatientsNote = registeredPatients !== null && registeredPatientsSource === 'nhs_monthly_parent_ods_fallback'
     ? '<div class="popup-note">Count shown via parent practice ODS code.</div>'
     : '';
+  const outOfAreaLine = row.accepts_out_of_area_registrations ? '<div>Accepts out-of-area registrations</div>' : '';
   const survey = `<div>${{formatSurvey(row)}}</div>`;
   const surveyCompareValue = numericOrNull(row.survey_overall_good_ics_percent);
   const surveyCompare = surveyCompareValue === null ? '' : `<div>GP survey ICS overall-good: ${{Math.round(surveyCompareValue)}}%</div>`;
@@ -5347,6 +5470,7 @@ function popupMarkup(row) {{
     ${{takeoverNote}}
     ${{registeredPatientsLine}}
     ${{registeredPatientsNote}}
+    ${{outOfAreaLine}}
     ${{google}}
     ${{survey}}
     ${{cqcRating}}
@@ -5841,8 +5965,15 @@ function serviceFinderButtonText() {{
 function clearServiceFinderMatches() {{
   serviceFinderMatchedRows = null;
   serviceFinderMatchedCodeSet = new Set();
+  serviceFinderOutOfAreaCodeSet = new Set();
   serviceFinderMatchedStateKey = '';
   serviceFinderMatchLoadPromise = null;
+}}
+
+function normalizeServiceFinderOutOfAreaMiles(value) {{
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return 5;
+  return Math.max(0, Math.min(30, Math.round(numeric)));
 }}
 
 function removeServiceFinderDragGhost() {{
@@ -5971,13 +6102,11 @@ function setServiceFinderPoint(lat, lon, label = 'Selected location') {{
 
 function computeServiceFinderMatchesForRows(rowsToTry, lat, lon) {{
   if (!Array.isArray(rowsToTry) || !rowsToTry.length || !manchesterCatchmentIndex) {{
-    serviceFinderMatchedRows = [];
-    serviceFinderMatchedCodeSet = new Set();
-    return [];
+    return {{ catchmentMatches: [], catchmentCodeSet: new Set() }};
   }}
   const point = turf.point([Number(lon), Number(lat)]);
-  const matches = [];
-  const matchedCodeSet = new Set();
+  const catchmentMatches = [];
+  const catchmentCodeSet = new Set();
   rowsToTry.forEach((row) => {{
     const code = String(row?.code || '').trim();
     if (!code) return;
@@ -5991,12 +6120,10 @@ function computeServiceFinderMatchesForRows(rowsToTry, lat, lon) {{
       }}
     }});
     if (!isMatch) return;
-    matches.push(row);
-    matchedCodeSet.add(code);
+    catchmentMatches.push(row);
+    catchmentCodeSet.add(code);
   }});
-  serviceFinderMatchedRows = matches;
-  serviceFinderMatchedCodeSet = matchedCodeSet;
-  return matches;
+  return {{ catchmentMatches, catchmentCodeSet }};
 }}
 
 function serviceFinderCandidateEntries(lat, lon) {{
@@ -6015,9 +6142,43 @@ function serviceFinderCandidateRowsForStage(entries, minCount, maxDistanceMiles)
     .map((entry) => entry.row);
 }}
 
+function serviceFinderOutOfAreaExtras(entries, excludedCodes) {{
+  const radiusMiles = normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles);
+  if (radiusMiles <= 0) return [];
+  return entries
+    .filter((entry) => {{
+      const code = String(entry?.row?.code || '').trim();
+      if (!code || excludedCodes.has(code)) return false;
+      if (!entry?.row?.accepts_out_of_area_registrations) return false;
+      if (entry?.row?.accepting_new_patients === false) return false;
+      return entry.distance <= radiusMiles;
+    }})
+    .sort((left, right) => {{
+      const leftGoogle = numericOrNull(left.row.google_score);
+      const rightGoogle = numericOrNull(right.row.google_score);
+      if (leftGoogle === null && rightGoogle !== null) return 1;
+      if (leftGoogle !== null && rightGoogle === null) return -1;
+      if (leftGoogle !== null && rightGoogle !== null && leftGoogle !== rightGoogle) return rightGoogle - leftGoogle;
+      const leftSurvey = numericOrNull(left.row.survey_overall_good_percent);
+      const rightSurvey = numericOrNull(right.row.survey_overall_good_percent);
+      if (leftSurvey === null && rightSurvey !== null) return 1;
+      if (leftSurvey !== null && rightSurvey === null) return -1;
+      if (leftSurvey !== null && rightSurvey !== null && leftSurvey !== rightSurvey) return rightSurvey - leftSurvey;
+      const leftReviews = numericOrNull(left.row.google_count);
+      const rightReviews = numericOrNull(right.row.google_count);
+      if (leftReviews === null && rightReviews !== null) return 1;
+      if (leftReviews !== null && rightReviews === null) return -1;
+      if (leftReviews !== null && rightReviews !== null && leftReviews !== rightReviews) return rightReviews - leftReviews;
+      if (left.distance !== right.distance) return left.distance - right.distance;
+      return String(left.row?.name || '').localeCompare(String(right.row?.name || ''), 'en');
+    }})
+    .slice(0, 3)
+    .map((entry) => entry.row);
+}}
+
 function loadServiceFinderMatchesForPoint(lat, lon) {{
   if (!serviceFinderPoint) return Promise.resolve([]);
-  const pointKey = `${{Number(lat).toFixed(6)}},${{Number(lon).toFixed(6)}}`;
+  const pointKey = `${{Number(lat).toFixed(6)}},${{Number(lon).toFixed(6)}}|out=${{normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles)}}`;
   if (serviceFinderMatchLoadPromise && serviceFinderMatchedStateKey === pointKey) return serviceFinderMatchLoadPromise;
   serviceFinderMatchedStateKey = pointKey;
   serviceFinderMatchLoadPromise = loadManchesterCatchmentIndex().then((indexMeta) => {{
@@ -6036,7 +6197,15 @@ function loadServiceFinderMatchesForPoint(lat, lon) {{
         .filter((bundleMeta, index, array) => bundleMeta && array.findIndex((candidate) => candidate?.id === bundleMeta.id) === index);
       return loadManchesterCatchmentBundles(bundleMetas).then(() => {{
         if (!serviceFinderPoint || serviceFinderMatchedStateKey !== pointKey) return [];
-        const matches = computeServiceFinderMatchesForRows(rowsToTry, lat, lon);
+        const {{ catchmentMatches, catchmentCodeSet }} = computeServiceFinderMatchesForRows(rowsToTry, lat, lon);
+        const outOfAreaExtras = serviceFinderOutOfAreaExtras(entries, catchmentCodeSet);
+        const outOfAreaCodeSet = new Set(outOfAreaExtras.map((row) => String(row?.code || '').trim()).filter(Boolean));
+        const matches = catchmentMatches.concat(outOfAreaExtras);
+        const matchedCodeSet = new Set(catchmentCodeSet);
+        outOfAreaCodeSet.forEach((code) => matchedCodeSet.add(code));
+        serviceFinderMatchedRows = matches;
+        serviceFinderMatchedCodeSet = matchedCodeSet;
+        serviceFinderOutOfAreaCodeSet = outOfAreaCodeSet;
         if (stageIndex >= stages.length - 1) return matches;
         if (matches.length >= stage.minMatches && rowsToTry.length >= stage.minTried) return matches;
         return runStage(stageIndex + 1);
@@ -6178,7 +6347,12 @@ function renderServiceFinder() {{
     const googleStyle = google === null ? '' : ` style="color:${{metricColorForValue('google', google)}}"`;
     const surveyStyle = survey === null ? '' : ` style="color:${{metricColorForValue('survey', survey)}}"`;
     const distanceLabel = Number.isFinite(distance) ? `${{distance.toFixed(distance < 10 ? 1 : 0)}} mi` : '?';
-    const scopeTag = row.gtd ? '<span class="service-finder-tag">GTD</span>' : '';
+    const scopeTags = [];
+    if (row.gtd) scopeTags.push('<span class="service-finder-tag">GTD</span>');
+    if (serviceFinderOutOfAreaCodeSet.has(String(row.code || '').trim())) {{
+      scopeTags.push('<span class="service-finder-tag">Out-of-area</span>');
+    }}
+    const scopeTag = scopeTags.join('');
     const cqcRating = String(row.cqc_overall_rating || '').trim();
     const cqcUrl = String(row.cqc_location_url || '').trim();
     const cqcBadgeConfig = (() => {{
@@ -6200,8 +6374,11 @@ function renderServiceFinder() {{
       shortAddress ? `<span class="service-finder-subtle">${{escapeHtml(shortAddress)}}</span>` : '',
       row.postcode ? `<span class="service-finder-subtle">${{escapeHtml(row.postcode)}}</span>` : '',
     ].filter(Boolean);
+    const acceptsOutOfAreaBadge = row.accepts_out_of_area_registrations
+      ? '<span class="service-finder-address-badge" title="This practice says it accepts out-of-area registrations">Out-of-area OK</span>'
+      : '';
     const addressLineMarkup = addressBits.length
-      ? `<span class="service-finder-address-line">${{addressBits.join('<span class="service-finder-address-separator">·</span>')}}</span>`
+      ? `<span class="service-finder-address-line">${{addressBits.join('<span class="service-finder-address-separator">·</span>')}}${{acceptsOutOfAreaBadge}}</span>`
       : '';
     const addressLinkUrl = googleMapsUrl || nhsUrl;
     const addressMarkup = addressLinkUrl
@@ -9644,6 +9821,27 @@ function bindServiceFinderDrag(buttonId) {{
 
 bindServiceFinderDrag('service-finder-place-button');
 bindServiceFinderDrag('service-finder-map-button');
+
+const serviceFinderOutOfAreaMilesInput = document.getElementById('service-finder-out-of-area-miles');
+if (serviceFinderOutOfAreaMilesInput) {{
+  serviceFinderOutOfAreaMilesInput.value = String(normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles));
+  const applyServiceFinderOutOfAreaMiles = (rawValue) => {{
+    const nextMiles = normalizeServiceFinderOutOfAreaMiles(rawValue);
+    serviceFinderOutOfAreaMiles = nextMiles;
+    serviceFinderOutOfAreaMilesInput.value = String(nextMiles);
+    clearServiceFinderMatches();
+    renderMarkers();
+    renderNationalSupplementals();
+    renderServiceFinderMarker();
+    renderServiceFinder();
+  }};
+  serviceFinderOutOfAreaMilesInput.addEventListener('input', (event) => {{
+    applyServiceFinderOutOfAreaMiles(event.target.value);
+  }});
+  serviceFinderOutOfAreaMilesInput.addEventListener('change', (event) => {{
+    applyServiceFinderOutOfAreaMiles(event.target.value);
+  }});
+}}
 
 document.querySelectorAll('[data-service-finder-sort]').forEach((button) => {{
   button.addEventListener('click', () => {{

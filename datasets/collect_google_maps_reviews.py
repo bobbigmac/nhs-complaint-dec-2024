@@ -542,9 +542,68 @@ def extract_place_address_text(driver: webdriver.Firefox) -> str:
     return ""
 
 
+def search_input_label(element) -> str:
+    try:
+        return normalize_text(
+            element.get_attribute("aria-label")
+            or element.get_attribute("placeholder")
+            or element.get_attribute("title")
+            or ""
+        ).lower()
+    except StaleElementReferenceException:
+        return ""
+
+
+def is_directions_input(element) -> bool:
+    label = search_input_label(element)
+    if not label:
+        return False
+    return any(
+        phrase in label
+        for phrase in (
+            "starting point",
+            "choose starting point",
+            "destination",
+            "choose destination",
+            "directions",
+        )
+    )
+
+
+def is_main_maps_search_input(element) -> bool:
+    try:
+        if not element.is_displayed():
+            return False
+    except StaleElementReferenceException:
+        return False
+
+    if is_directions_input(element):
+        return False
+
+    try:
+        element_id = normalize_text(element.get_attribute("id") or "")
+    except StaleElementReferenceException:
+        return False
+    if element_id == "searchboxinput":
+        return True
+
+    try:
+        within_searchbox = bool(
+            element.find_elements(By.XPATH, "./ancestor::*[@id='searchbox']")
+        )
+    except StaleElementReferenceException:
+        return False
+    if within_searchbox:
+        return True
+
+    label = search_input_label(element)
+    return "search google maps" in label or label == "search"
+
+
 def find_search_input(driver: webdriver.Firefox):
     selectors = [
         "input#searchboxinput",
+        '#searchbox input',
         'input[role="combobox"]',
         'input[class*="UGojuc"]',
         'input[aria-label*="Search Google Maps"]',
@@ -555,11 +614,18 @@ def find_search_input(driver: webdriver.Firefox):
     for selector in selectors:
         elements = driver.find_elements(By.CSS_SELECTOR, selector)
         for element in elements:
-            try:
-                if element.is_displayed():
-                    return element
-            except StaleElementReferenceException:
-                continue
+            if is_main_maps_search_input(element):
+                return element
+    try:
+        visible_comboboxes = [
+            element
+            for element in driver.find_elements(By.CSS_SELECTOR, 'input[role="combobox"]')
+            if element.is_displayed() and not is_directions_input(element)
+        ]
+    except StaleElementReferenceException:
+        visible_comboboxes = []
+    if len(visible_comboboxes) == 1:
+        return visible_comboboxes[0]
     return None
 
 
@@ -570,8 +636,25 @@ def current_search_value(driver: webdriver.Firefox) -> str:
     return normalize_text(search_input.get_attribute("value") or "")
 
 
+def directions_mode_active(driver: webdriver.Firefox) -> bool:
+    if "/dir/" in (driver.current_url or ""):
+        return True
+    try:
+        inputs = driver.find_elements(By.CSS_SELECTOR, 'input[role="combobox"], input')
+    except Exception:
+        return False
+    visible_direction_inputs = 0
+    for element in inputs:
+        try:
+            if element.is_displayed() and is_directions_input(element):
+                visible_direction_inputs += 1
+        except StaleElementReferenceException:
+            continue
+    return visible_direction_inputs >= 1
+
+
 def ensure_maps_shell(driver: webdriver.Firefox, wait: WebDriverWait) -> None:
-    if "google.com/maps" not in driver.current_url:
+    if "google.com/maps" not in driver.current_url or directions_mode_active(driver):
         driver.get("https://www.google.com/maps")
     wait.until(lambda d: find_search_input(d) is not None)
     wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
