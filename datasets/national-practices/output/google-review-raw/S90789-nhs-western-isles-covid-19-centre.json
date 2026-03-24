@@ -1,0 +1,28 @@
+{
+  "practice_name": "NHS WESTERN ISLES COVID 19 CENTRE",
+  "canonical_code": "S90789",
+  "postcode": "HS1 2AF",
+  "query_used": "NHS WESTERN ISLES COVID 19 CENTRE HS1 2AF",
+  "google_maps_title": "NHS Western Isles Health Centre",
+  "google_maps_url": "https://www.google.com/maps/place/NHS+Western+Isles+Health+Centre/@58.2077703,-6.388313,17z/data=!3m1!5s0x488df7d468fcd9bb:0x2f43680d709a0438!4m12!1m2!2m1!1sNHS+WESTERN+ISLES+COVID+19+CENTRE+HS1+2AF!3m8!1s0x488df7d468fef6eb:0x33db2a2ce77db69d!8m2!3d58.2077675!4d-6.3857327!9m1!1b1!15sCilOSFMgV0VTVEVSTiBJU0xFUyBDT1ZJRCAxOSBDRU5UUkUgSFMxIDJBRpIBF2NvbW11bml0eV9oZWFsdGhfY2VudGVy4AEA!16s%2Fg%2F1td4220n?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 58.2077675,
+  "longitude": -6.3857327,
+  "google_review_count": 1,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774334412541,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x488df7d468fef6eb%3A0x33db2a2ce77db69d!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e1",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURzbExhaHlnRRAB\",[\"0x0:0x33db2a2ce77db69d\",null,1582554802642168,1582554802642168,[null,null,[\"https://www.google.com/maps/contrib/104182864937781066303/reviews?hl\\u003den\"],null,null,[\"Mike Feehan\",\"https://lh3.googleusercontent.com/a/ACg8ocJTSmtilgICi-o7amwa4XY41vsmuAGP_W4Y1lUJc98kLDed\\u003ds120-c-rp-mo-br100\",[\"https://www.google.com/maps/contrib/104182864937781066303?hl\\u003den\"],\"104182864937781066303\",null,2,0,null,[0,2,1],0,[\"2 reviews\",null,null,null,null,[null,\"0ahUKEwj5rPfi9reTAxWrIWMBHSekNoYQ7LoGCAMoAA\"]]]],null,\"6 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[5],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"I always found the people very polite and helpful.   I have never had any problems getting travel warrants or with any other business.  It must be difficult handling health matters with the general public every day, but, they do so with aplomb.\",null,[0,244]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzbExhaHlnRRAB!2m1!1s0x0:0x33db2a2ce77db69d!3m1!1s2@1:CIHM0ogKEICAgIDslLahygE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURzbExhaHlnRRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURzbExhaHlnRRItChZDSUhNMG9nS0VJQ0FnSURzbExhaEtnEhNDZ3dJc3IzUDhnVVF3T21hc2dJGi4KF0NJSE0wb2dLRUlDQWdJRHNsTGFocWdFEhNDZ3dJc3IzUDhnVVF3T21hc2dJIhIJAAAAAAAAAAARnbZ95ywq2zMqE0Nnd0lzcjNQOGdVUXdPbWFzZ0k\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwj5rPfi9reTAxWrIWMBHSekNoYQoykIBCgB\"],null,[null,[[1,1]]]],\"0ahUKEwj5rPfi9reTAxWrIWMBHSekNoYQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}

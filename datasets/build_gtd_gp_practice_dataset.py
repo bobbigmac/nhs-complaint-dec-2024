@@ -3777,9 +3777,10 @@ body {{
 }}
 .service-finder-radius-control {{
   display: grid;
-  grid-template-columns: auto minmax(152px, 1fr) auto;
+  grid-template-columns: auto minmax(180px, 1fr);
   gap: 8px;
   align-items: center;
+  min-width: 0;
   min-height: 44px;
   padding: 8px 12px;
   border: 1px solid rgba(26, 28, 26, 0.12);
@@ -3796,7 +3797,7 @@ body {{
   display: grid;
   grid-template-columns: 34px minmax(56px, 1fr) 34px;
   align-items: stretch;
-  min-width: 0;
+  min-width: 180px;
   border: 1px solid rgba(26, 28, 26, 0.18);
   border-radius: 10px;
   overflow: hidden;
@@ -3879,6 +3880,13 @@ body {{
 .service-finder-more-note {{
   color: rgba(26, 28, 26, 0.62);
   font-weight: 600;
+}}
+.service-finder-footnote {{
+  margin: 0;
+  padding: 0 4px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(26, 28, 26, 0.68);
 }}
 .service-finder-table-wrap {{
   overflow-x: auto;
@@ -4555,7 +4563,7 @@ body {{
         </div>
         <div class="service-finder-actions">
           <button type="button" id="service-finder-place-button" class="overlay-action-button" title="Click, then click the map to place a practice lookup pin."><span>📍 Find Practices</span></button>
-          <button type="button" id="service-finder-extra-place-button" class="overlay-action-button" title="Add another place you often go to, such as work or the school run." disabled><span>Add place</span><span class="overlay-toggle-icon">+</span></button>
+          <button type="button" id="service-finder-extra-place-button" class="overlay-action-button" title="Add another place you often go to, such as work or the school run." disabled hidden><span>Add place</span><span class="overlay-toggle-icon">+</span></button>
           <button type="button" id="service-finder-locate-button" class="overlay-action-button" title="Use browser geolocation for the lookup pin."><span>Use my location</span><span class="overlay-toggle-icon">L</span></button>
           <button type="button" id="service-finder-clear-button" class="overlay-action-button" title="Clear the current lookup pin."><span>Clear</span><span class="overlay-toggle-icon">X</span></button>
           <div class="service-finder-radius-control">
@@ -4565,7 +4573,6 @@ body {{
               <input type="number" id="service-finder-out-of-area-miles" min="0" max="30" step="1" value="5" inputmode="numeric" title="Maximum miles for added out-of-area practices">
               <button type="button" id="service-finder-out-of-area-increase" class="service-finder-radius-button" aria-label="Increase out-of-area miles" title="Increase out-of-area miles">+</button>
             </div>
-            <span>miles</span>
           </div>
         </div>
       </div>
@@ -4584,6 +4591,7 @@ body {{
           <tbody id="service-finder-results"></tbody>
         </table>
       </div>
+      <p id="service-finder-footnote" class="service-finder-footnote" hidden></p>
     </section>
     <section class="panel comparison-panel">
       <h2 id="comparison-heading">Interactive Benchmarks</h2>
@@ -4824,11 +4832,13 @@ let serviceFinderHomeCodeSet = new Set();
 let serviceFinderExtraCodeSet = new Set();
 let serviceFinderMatchedCodeSet = new Set();
 let serviceFinderOutOfAreaCodeSet = new Set();
+let serviceFinderDistanceFallbackCodeSet = new Set();
 let serviceFinderMatchedStateKey = '';
 let serviceFinderMatchLoadPromise = null;
 let serviceFinderShowAllOutOfArea = false;
 let serviceFinderOutOfAreaEligibleCount = 0;
 let serviceFinderOutOfAreaVisibleCount = 0;
+let serviceFinderDistanceFallbackVisibleCount = 0;
 let serviceFinderButtonFlash = '';
 let serviceFinderButtonFlashTimer = null;
 let serviceFinderDragActive = false;
@@ -6111,10 +6121,12 @@ function clearServiceFinderMatches() {{
   serviceFinderExtraCodeSet = new Set();
   serviceFinderMatchedCodeSet = new Set();
   serviceFinderOutOfAreaCodeSet = new Set();
+  serviceFinderDistanceFallbackCodeSet = new Set();
   serviceFinderMatchedStateKey = '';
   serviceFinderMatchLoadPromise = null;
   serviceFinderOutOfAreaEligibleCount = 0;
   serviceFinderOutOfAreaVisibleCount = 0;
+  serviceFinderDistanceFallbackVisibleCount = 0;
 }}
 
 function normalizeServiceFinderOutOfAreaMiles(value) {{
@@ -6181,7 +6193,7 @@ function updateServiceFinderButtons() {{
     const extraButton = document.getElementById(id);
     if (!extraButton) return;
     extraButton.disabled = !serviceFinderPoint;
-    if (id === 'service-finder-map-extra-button') extraButton.hidden = !serviceFinderPoint;
+    extraButton.hidden = !serviceFinderPoint;
     extraButton.classList.toggle('is-active', serviceFinderExtraArmed);
     extraButton.title = !serviceFinderPoint
       ? 'Add a home pin first, then you can add another place.'
@@ -6388,6 +6400,70 @@ function serviceFinderCandidateRowsForStage(entries, minCount, maxDistanceMiles)
     .map((entry) => entry.row);
 }}
 
+function serviceFinderUsesDistanceFallback(row) {{
+  const code = String(row?.code || '').trim();
+  if (!code) return false;
+  const nation = String(row?.nation || '').trim().toLowerCase();
+  if (nation && nation !== 'england') return true;
+  return !catchmentBundleMetaForCode(code);
+}}
+
+function serviceFinderDistanceFallbackExtras(entries, excludedCodes) {{
+  const radiusMiles = normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles);
+  const selectionLimit = 3;
+  const debug = {{
+    radiusMiles,
+    selectionLimit,
+    totalCandidates: Array.isArray(entries) ? entries.length : 0,
+    excludedByCatchment: 0,
+    notUsingDistanceFallback: 0,
+    notAcceptingNewPatients: 0,
+    beyondRadius: 0,
+    selectedCount: 0,
+    selected: [],
+  }};
+  if (radiusMiles <= 0) {{
+    return {{ rows: [], debug: {{ ...debug, disabled: true }} }};
+  }}
+  const selectedEntries = entries
+    .filter((entry) => {{
+      const code = String(entry?.row?.code || '').trim();
+      if (!code) {{
+        debug.notUsingDistanceFallback += 1;
+        return false;
+      }}
+      if (excludedCodes.has(code)) {{
+        debug.excludedByCatchment += 1;
+        return false;
+      }}
+      if (!serviceFinderUsesDistanceFallback(entry?.row)) {{
+        debug.notUsingDistanceFallback += 1;
+        return false;
+      }}
+      if (entry?.row?.accepting_new_patients === false) {{
+        debug.notAcceptingNewPatients += 1;
+        return false;
+      }}
+      if (entry.distance > radiusMiles) {{
+        debug.beyondRadius += 1;
+        return false;
+      }}
+      return true;
+    }})
+    .slice(0, selectionLimit);
+  debug.selectedCount = selectedEntries.length;
+  debug.selected = selectedEntries.map((entry) => ({{
+    code: String(entry?.row?.code || '').trim(),
+    name: String(entry?.row?.name || '').trim(),
+    distanceMiles: Number.isFinite(entry?.distance) ? Number(entry.distance.toFixed(2)) : null,
+    nation: String(entry?.row?.nation || '').trim().toLowerCase(),
+  }}));
+  return {{
+    rows: selectedEntries.map((entry) => entry.row),
+    debug,
+  }};
+}}
+
 function serviceFinderOutOfAreaExtras(entries, excludedCodes) {{
   const radiusMiles = normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles);
   const selectionLimit = serviceFinderShowAllOutOfArea ? Number.MAX_SAFE_INTEGER : 3;
@@ -6397,6 +6473,7 @@ function serviceFinderOutOfAreaExtras(entries, excludedCodes) {{
     selectionLimit,
     totalCandidates: Array.isArray(entries) ? entries.length : 0,
     excludedByCatchment: 0,
+    excludedByDistanceFallback: 0,
     missingOutOfAreaFlag: 0,
     notAcceptingNewPatients: 0,
     beyondRadius: 0,
@@ -6417,6 +6494,10 @@ function serviceFinderOutOfAreaExtras(entries, excludedCodes) {{
       }}
       if (excludedCodes.has(code)) {{
         debug.excludedByCatchment += 1;
+        return false;
+      }}
+      if (serviceFinderUsesDistanceFallback(entry?.row)) {{
+        debug.excludedByDistanceFallback += 1;
         return false;
       }}
       if (!entry?.row?.accepts_out_of_area_registrations) {{
@@ -6515,11 +6596,14 @@ function loadServiceFinderMatchesForPoint(lat, lon) {{
         const extraCatchmentCodeSet = extraMatchResult.catchmentCodeSet;
         const excludedOutOfAreaCodes = new Set(homeCatchmentCodeSet);
         extraCatchmentCodeSet.forEach((code) => excludedOutOfAreaCodes.add(code));
+        const distanceFallbackResult = serviceFinderDistanceFallbackExtras(entries, excludedOutOfAreaCodes);
+        const distanceFallbackExtras = distanceFallbackResult.rows;
+        const distanceFallbackCodeSet = new Set(distanceFallbackExtras.map((row) => String(row?.code || '').trim()).filter(Boolean));
         const outOfAreaResult = serviceFinderOutOfAreaExtras(entries, excludedOutOfAreaCodes);
         const outOfAreaExtras = outOfAreaResult.rows;
         const outOfAreaCodeSet = new Set(outOfAreaExtras.map((row) => String(row?.code || '').trim()).filter(Boolean));
         const matchesByCode = new Map();
-        homeCatchmentMatches.concat(extraCatchmentMatches, outOfAreaExtras).forEach((row) => {{
+        homeCatchmentMatches.concat(extraCatchmentMatches, distanceFallbackExtras, outOfAreaExtras).forEach((row) => {{
           const code = String(row?.code || '').trim();
           if (!code || matchesByCode.has(code)) return;
           matchesByCode.set(code, row);
@@ -6527,14 +6611,17 @@ function loadServiceFinderMatchesForPoint(lat, lon) {{
         const matches = Array.from(matchesByCode.values());
         const matchedCodeSet = new Set(homeCatchmentCodeSet);
         extraCatchmentCodeSet.forEach((code) => matchedCodeSet.add(code));
+        distanceFallbackCodeSet.forEach((code) => matchedCodeSet.add(code));
         outOfAreaCodeSet.forEach((code) => matchedCodeSet.add(code));
         serviceFinderMatchedRows = matches;
         serviceFinderHomeCodeSet = new Set(homeCatchmentCodeSet);
         serviceFinderExtraCodeSet = new Set(extraCatchmentCodeSet);
         serviceFinderMatchedCodeSet = matchedCodeSet;
         serviceFinderOutOfAreaCodeSet = outOfAreaCodeSet;
+        serviceFinderDistanceFallbackCodeSet = distanceFallbackCodeSet;
         serviceFinderOutOfAreaEligibleCount = Number(outOfAreaResult.debug?.eligibleCount || 0);
         serviceFinderOutOfAreaVisibleCount = Number(outOfAreaResult.debug?.selectedCount || 0);
+        serviceFinderDistanceFallbackVisibleCount = Number(distanceFallbackResult.debug?.selectedCount || 0);
         serviceFinderSearchLog('stage-result', {{
           pointKey,
           stageIndex,
@@ -6544,6 +6631,7 @@ function loadServiceFinderMatchesForPoint(lat, lon) {{
           homeCatchmentCodes: homeCatchmentCodeSet.size,
           extraCatchmentMatches: extraCatchmentMatches.length,
           extraCatchmentCodes: extraCatchmentCodeSet.size,
+          distanceFallback: distanceFallbackResult.debug,
           outOfArea: outOfAreaResult.debug,
           combinedMatches: matches.length,
         }});
@@ -6628,7 +6716,12 @@ function serviceFinderResultRows(matches) {{
 function renderServiceFinder() {{
   const tbody = document.getElementById('service-finder-results');
   const clearButton = document.getElementById('service-finder-clear-button');
+  const footnote = document.getElementById('service-finder-footnote');
   if (!tbody) return;
+  if (footnote) {{
+    footnote.hidden = true;
+    footnote.textContent = '';
+  }}
   updateServiceFinderSortButtons();
   updateServiceFinderButtons();
   if (clearButton) clearButton.disabled = !serviceFinderPoint;
@@ -6693,8 +6786,13 @@ function renderServiceFinder() {{
   ` : '';
 
   if (!ranked.length) {{
-    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">No practice catchment in the current bundle covers this point.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="6" class="service-finder-empty">No suggested practices matched this point within the current distance limit.</td></tr>`;
     return;
+  }}
+
+  if (footnote && serviceFinderDistanceFallbackVisibleCount > 0) {{
+    footnote.hidden = false;
+    footnote.textContent = `Note: ${{serviceFinderDistanceFallbackVisibleCount}} practice${{serviceFinderDistanceFallbackVisibleCount === 1 ? ' is' : 's are'}} shown by distance only because Wales and Scotland do not publish comparable practice catchment datasets. Published English catchments are still used where available, so cross-border searches can mix both methods.`;
   }}
 
   tbody.innerHTML = ranked.map((entry, index) => {{
@@ -6741,11 +6839,15 @@ function renderServiceFinder() {{
     const isHomeMatch = serviceFinderHomeCodeSet.has(code);
     const isExtraMatch = serviceFinderExtraCodeSet.has(code);
     const isOutOfAreaMatch = serviceFinderOutOfAreaCodeSet.has(code);
+    const isDistanceFallbackMatch = serviceFinderDistanceFallbackCodeSet.has(code);
     const isMaybe = !isHomeMatch && (isExtraMatch || isOutOfAreaMatch);
     if (row.gtd) scopeTags.push('<span class="service-finder-tag">GTD</span>');
     if (isMaybe) scopeTags.push('<span class="service-finder-tag is-warning">Maybe</span>');
     if (isExtraMatch && !isHomeMatch) {{
       scopeTags.push('<span class="service-finder-tag">Near place</span>');
+    }}
+    if (isDistanceFallbackMatch) {{
+      scopeTags.push('<span class="service-finder-tag">Distance only</span>');
     }}
     if (isOutOfAreaMatch) {{
       scopeTags.push('<span class="service-finder-tag">Out-of-area</span>');
