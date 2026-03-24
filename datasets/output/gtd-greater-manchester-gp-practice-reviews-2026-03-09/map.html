@@ -1001,41 +1001,56 @@ body {
   color: rgba(26, 28, 26, 0.8);
 }
 .service-finder-actions {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  align-items: stretch;
 }
 .service-finder-actions .overlay-action-button {
-  min-height: 44px;
+  flex: 0 1 168px;
+  min-height: 48px;
+  padding: 0 14px;
   justify-content: space-between;
   font-size: 14px;
   font-weight: 700;
 }
 .service-finder-radius-control {
-  display: grid;
-  grid-template-columns: auto minmax(180px, 1fr);
-  gap: 8px;
+  flex: 1 1 360px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  min-width: 0;
-  min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid rgba(26, 28, 26, 0.12);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.76);
+  justify-content: space-between;
+  gap: 12px 16px;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid rgba(26, 28, 26, 0.14);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 243, 234, 0.92));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
 }
-.service-finder-radius-control label {
-  font-size: 12px;
+.service-finder-radius-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 180px;
+}
+.service-finder-radius-copy label {
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.2;
-  color: rgba(26, 28, 26, 0.8);
+  color: rgba(26, 28, 26, 0.88);
+}
+.service-finder-radius-copy span {
+  font-size: 12px;
+  line-height: 1.35;
+  color: rgba(26, 28, 26, 0.62);
 }
 .service-finder-radius-stepper {
   display: grid;
-  grid-template-columns: 34px minmax(56px, 1fr) 34px;
+  grid-template-columns: 40px minmax(86px, 112px) 40px auto;
   align-items: stretch;
-  min-width: 180px;
+  min-width: 0;
   border: 1px solid rgba(26, 28, 26, 0.18);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   background: #fff;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
@@ -1069,14 +1084,14 @@ body {
 .service-finder-radius-control input {
   width: 100%;
   min-width: 0;
-  min-height: 32px;
-  padding: 4px 6px;
+  min-height: 38px;
+  padding: 4px 10px;
   border: 0;
   border-left: 1px solid rgba(26, 28, 26, 0.12);
   border-right: 1px solid rgba(26, 28, 26, 0.12);
   border-radius: 0;
   font: inherit;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   text-align: center;
   color: rgba(26, 28, 26, 0.92);
@@ -1090,10 +1105,15 @@ body {
 .service-finder-radius-control input[type=number] {
   -moz-appearance: textfield;
 }
-.service-finder-radius-control span {
+.service-finder-radius-unit {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
   font-size: 12px;
   font-weight: 700;
   color: rgba(26, 28, 26, 0.62);
+  background: rgba(245, 242, 233, 0.92);
+  border-left: 1px solid rgba(26, 28, 26, 0.10);
   white-space: nowrap;
 }
 .service-finder-more-row td {
@@ -1119,10 +1139,13 @@ body {
 }
 .service-finder-footnote {
   margin: 0;
-  padding: 0 4px;
+  padding: 12px 14px;
   font-size: 13px;
   line-height: 1.5;
-  color: rgba(26, 28, 26, 0.68);
+  color: rgba(26, 28, 26, 0.76);
+  border: 1px solid rgba(180, 124, 18, 0.24);
+  border-radius: 14px;
+  background: rgba(255, 247, 224, 0.78);
 }
 .service-finder-table-wrap {
   overflow-x: auto;
@@ -1593,7 +1616,17 @@ body {
     grid-template-columns: 1fr;
   }
   .service-finder-actions {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .service-finder-actions > * {
+    width: 100%;
+  }
+  .service-finder-radius-control {
+    align-items: stretch;
+  }
+  .service-finder-radius-stepper {
+    width: 100%;
+    grid-template-columns: 40px minmax(0, 1fr) 40px auto;
   }
   .service-finder-title-line {
     align-items: flex-start;
@@ -1738,7 +1771,7 @@ body {
       <div class="legend-intro">
         <h1>Manchester GPs' Reviews Map</h1>
         <p>Manchester: 3,021,833 &#128101; &middot; 360 &#127973;</p>
-        <p id="national-supplemental-note" class="hint" data-total-patients="70187016" data-total-practices="7311">&#127988; National: 70,187,016 &#128101; &middot; 7311 &#127973;</p>
+        <p id="national-supplemental-note" class="hint" data-total-patients="70413991" data-total-practices="7342">&#127988; National: 70,413,991 &#128101; &middot; 7342 &#127973;</p>
       </div>
       <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
@@ -1803,11 +1836,15 @@ body {
           <button type="button" id="service-finder-locate-button" class="overlay-action-button" title="Use browser geolocation for the lookup pin."><span>Use my location</span><span class="overlay-toggle-icon">L</span></button>
           <button type="button" id="service-finder-clear-button" class="overlay-action-button" title="Clear the current lookup pin."><span>Clear</span><span class="overlay-toggle-icon">X</span></button>
           <div class="service-finder-radius-control">
-            <label for="service-finder-out-of-area-miles">Out-of-area</label>
+            <div class="service-finder-radius-copy">
+              <label for="service-finder-out-of-area-miles">Out-of-area range</label>
+              <span>Include willing nearby practices within this distance.</span>
+            </div>
             <div class="service-finder-radius-stepper">
               <button type="button" id="service-finder-out-of-area-decrease" class="service-finder-radius-button" aria-label="Reduce out-of-area miles" title="Reduce out-of-area miles">−</button>
               <input type="number" id="service-finder-out-of-area-miles" min="0" max="30" step="1" value="5" inputmode="numeric" title="Maximum miles for added out-of-area practices">
               <button type="button" id="service-finder-out-of-area-increase" class="service-finder-radius-button" aria-label="Increase out-of-area miles" title="Increase out-of-area miles">+</button>
+              <span class="service-finder-radius-unit">miles</span>
             </div>
           </div>
         </div>
@@ -1981,7 +2018,7 @@ body {
     <span>Data Coverage by Nation</span>
     <small>Expand for source coverage, gaps, and lookup states</small>
   </summary>
-  <p class="chart-note">7,735 unique practices across 4 nations are currently loaded into this page. Counts below reflect what this build can actually use right now, including missing data and lookup failure states.</p>
+  <p class="chart-note">7,766 unique practices across 4 nations are currently loaded into this page. Counts below reflect what this build can actually use right now, including missing data and lookup failure states.</p>
   <div class="data-pool-grid">
 <article class="data-pool-card">
   <h3>England</h3>
@@ -1995,8 +2032,8 @@ body {
 </article>
 <article class="data-pool-card">
   <h3>Wales</h3>
-  <p class="data-pool-kicker">312 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>312 records · 312 with coordinates · 312 with postcode · National supplemental 312</span></li><li><strong>Google</strong><span>311 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 311</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>equivalent identified, not wired 312</span></li><li><strong>Patient counts</strong><span>295 with counts covering 2,652,997 patients · StatsWales HLTH0426 295</span></li><li><strong>Deprivation</strong><span>1 with usable decile · polygon matched, no deprivation index 309 · no cached lookup 1 · no polygon match 1</span></li></ul>
+  <p class="data-pool-kicker">343 practices currently loaded into this page</p>
+  <ul class="data-pool-list"><li><strong>Practice info</strong><span>343 records · 343 with coordinates · 343 with postcode · National supplemental 343</span></li><li><strong>Google</strong><span>342 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 342</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>equivalent identified, not wired 343</span></li><li><strong>Patient counts</strong><span>322 with counts covering 2,879,972 patients · StatsWales HLTH0426 322</span></li><li><strong>Deprivation</strong><span>1 with usable decile · polygon matched, no deprivation index 309 · no cached lookup 32 · no polygon match 1</span></li></ul>
 </article>
 <article class="data-pool-card">
   <h3>Northern Ireland</h3>
@@ -2098,6 +2135,10 @@ let serviceFinderExtraCodeSet = new Set();
 let serviceFinderMatchedCodeSet = new Set();
 let serviceFinderOutOfAreaCodeSet = new Set();
 let serviceFinderDistanceFallbackCodeSet = new Set();
+let serviceFinderHomeDistanceFallbackCodeSet = new Set();
+let serviceFinderExtraDistanceFallbackCodeSet = new Set();
+let serviceFinderNationalDistanceFallbackCodeSet = new Set();
+let serviceFinderEnglishMissingCatchmentCodeSet = new Set();
 let serviceFinderMatchedStateKey = '';
 let serviceFinderMatchLoadPromise = null;
 let serviceFinderShowAllOutOfArea = false;
@@ -3387,6 +3428,10 @@ function clearServiceFinderMatches() {
   serviceFinderMatchedCodeSet = new Set();
   serviceFinderOutOfAreaCodeSet = new Set();
   serviceFinderDistanceFallbackCodeSet = new Set();
+  serviceFinderHomeDistanceFallbackCodeSet = new Set();
+  serviceFinderExtraDistanceFallbackCodeSet = new Set();
+  serviceFinderNationalDistanceFallbackCodeSet = new Set();
+  serviceFinderEnglishMissingCatchmentCodeSet = new Set();
   serviceFinderMatchedStateKey = '';
   serviceFinderMatchLoadPromise = null;
   serviceFinderOutOfAreaEligibleCount = 0;
@@ -3495,7 +3540,9 @@ function renderServiceFinderMarker() {
     });
   }
   const matches = serviceFinderRowsForPoint(serviceFinderPoint.lat, serviceFinderPoint.lon);
-  const homeCount = matches ? serviceFinderHomeCodeSet.size : null;
+  const homeMaybeCount = matches ? serviceFinderHomeDistanceFallbackCodeSet.size : null;
+  const homeCatchmentCount = matches ? serviceFinderHomeCodeSet.size : null;
+  const homeCount = matches ? serviceFinderHomeCodeSet.size + serviceFinderHomeDistanceFallbackCodeSet.size : null;
   const countText = manchesterCatchmentLoadError ? '!' : homeCount === null ? '…' : String(homeCount);
   const homeIsHouse = Boolean(serviceFinderExtraPoint);
   const icon = L.divIcon({
@@ -3510,7 +3557,9 @@ function renderServiceFinderMarker() {
     ? `${serviceFinderExtraPoint ? 'Home' : (serviceFinderLocationLabel || 'Selected location')} · catchments failed to load`
     : homeCount === null
       ? `${serviceFinderExtraPoint ? 'Home' : (serviceFinderLocationLabel || 'Selected location')} · waiting for catchments`
-      : `${serviceFinderExtraPoint ? 'Home' : (serviceFinderLocationLabel || 'Selected location')} · ${homeCount.toLocaleString('en-GB')} matching catchment${homeCount === 1 ? '' : 's'}`;
+      : homeMaybeCount
+        ? `${serviceFinderExtraPoint ? 'Home' : (serviceFinderLocationLabel || 'Selected location')} · ${homeCount.toLocaleString('en-GB')} possible match${homeCount === 1 ? '' : 'es'} (${homeCatchmentCount.toLocaleString('en-GB')} catchment, ${homeMaybeCount.toLocaleString('en-GB')} maybe)`
+        : `${serviceFinderExtraPoint ? 'Home' : (serviceFinderLocationLabel || 'Selected location')} · ${homeCount.toLocaleString('en-GB')} matching catchment${homeCount === 1 ? '' : 's'}`;
   const marker = L.marker([serviceFinderPoint.lat, serviceFinderPoint.lon], { icon, draggable: true });
   marker.on('click', () => {
     scrollToServiceFinder();
@@ -3523,7 +3572,9 @@ function renderServiceFinderMarker() {
     .bindTooltip(tooltip, { sticky: false, opacity: 0.94 })
     .addTo(serviceFinderPointLayer);
   if (!serviceFinderExtraPoint) return;
-  const extraCount = matches ? serviceFinderExtraCodeSet.size : null;
+  const extraMaybeCount = matches ? serviceFinderExtraDistanceFallbackCodeSet.size : null;
+  const extraCatchmentCount = matches ? serviceFinderExtraCodeSet.size : null;
+  const extraCount = matches ? serviceFinderExtraCodeSet.size + serviceFinderExtraDistanceFallbackCodeSet.size : null;
   const extraCountText = manchesterCatchmentLoadError ? '!' : extraCount === null ? '…' : String(extraCount);
   const extraIcon = L.divIcon({
     className: 'service-finder-pin-icon',
@@ -3548,7 +3599,9 @@ function renderServiceFinderMarker() {
         ? `${serviceFinderExtraLocationLabel || 'Extra place'} · catchments failed to load`
         : extraCount === null
           ? `${serviceFinderExtraLocationLabel || 'Extra place'} · waiting for catchments`
-          : `${serviceFinderExtraLocationLabel || 'Extra place'} · ${extraCount.toLocaleString('en-GB')} matching catchment${extraCount === 1 ? '' : 's'}`,
+          : extraMaybeCount
+            ? `${serviceFinderExtraLocationLabel || 'Extra place'} · ${extraCount.toLocaleString('en-GB')} possible match${extraCount === 1 ? '' : 'es'} (${extraCatchmentCount.toLocaleString('en-GB')} catchment, ${extraMaybeCount.toLocaleString('en-GB')} maybe)`
+            : `${serviceFinderExtraLocationLabel || 'Extra place'} · ${extraCount.toLocaleString('en-GB')} matching catchment${extraCount === 1 ? '' : 's'}`,
       { sticky: false, opacity: 0.94 }
     )
     .addTo(serviceFinderPointLayer);
@@ -3669,16 +3722,14 @@ function serviceFinderUsesDistanceFallback(row) {
   const code = String(row?.code || '').trim();
   if (!code) return false;
   const nation = String(row?.nation || '').trim().toLowerCase();
-  if (nation && nation !== 'england') return true;
-  return !catchmentBundleMetaForCode(code);
+  if (nation === 'scotland' || nation === 'wales' || nation === 'northern_ireland') return true;
+  return nation === 'england' && !catchmentBundleMetaForCode(code);
 }
 
 function serviceFinderDistanceFallbackExtras(entries, excludedCodes) {
   const radiusMiles = normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles);
-  const selectionLimit = 3;
   const debug = {
     radiusMiles,
-    selectionLimit,
     totalCandidates: Array.isArray(entries) ? entries.length : 0,
     excludedByCatchment: 0,
     notUsingDistanceFallback: 0,
@@ -3714,8 +3765,7 @@ function serviceFinderDistanceFallbackExtras(entries, excludedCodes) {
         return false;
       }
       return true;
-    })
-    .slice(0, selectionLimit);
+    });
   debug.selectedCount = selectedEntries.length;
   debug.selected = selectedEntries.map((entry) => ({
     code: String(entry?.row?.code || '').trim(),
@@ -3864,6 +3914,30 @@ function loadServiceFinderMatchesForPoint(lat, lon) {
         const distanceFallbackResult = serviceFinderDistanceFallbackExtras(entries, excludedOutOfAreaCodes);
         const distanceFallbackExtras = distanceFallbackResult.rows;
         const distanceFallbackCodeSet = new Set(distanceFallbackExtras.map((row) => String(row?.code || '').trim()).filter(Boolean));
+        const homeDistanceFallbackCodeSet = new Set();
+        const extraDistanceFallbackCodeSet = new Set();
+        const nationalDistanceFallbackCodeSet = new Set();
+        const englishMissingCatchmentCodeSet = new Set();
+        const fallbackRadiusMiles = normalizeServiceFinderOutOfAreaMiles(serviceFinderOutOfAreaMiles);
+        distanceFallbackExtras.forEach((row) => {
+          const code = String(row?.code || '').trim();
+          if (!code) return;
+          const nation = String(row?.nation || '').trim().toLowerCase();
+          if (nation && nation !== 'england') {
+            nationalDistanceFallbackCodeSet.add(code);
+          } else {
+            englishMissingCatchmentCodeSet.add(code);
+          }
+          const homeDistance = distanceMiles(lat, lon, Number(row?.lat), Number(row?.lon));
+          if (Number.isFinite(homeDistance) && homeDistance <= fallbackRadiusMiles) {
+            homeDistanceFallbackCodeSet.add(code);
+          }
+          if (!serviceFinderExtraPoint) return;
+          const extraDistance = distanceMiles(serviceFinderExtraPoint.lat, serviceFinderExtraPoint.lon, Number(row?.lat), Number(row?.lon));
+          if (Number.isFinite(extraDistance) && extraDistance <= fallbackRadiusMiles) {
+            extraDistanceFallbackCodeSet.add(code);
+          }
+        });
         const outOfAreaResult = serviceFinderOutOfAreaExtras(entries, excludedOutOfAreaCodes);
         const outOfAreaExtras = outOfAreaResult.rows;
         const outOfAreaCodeSet = new Set(outOfAreaExtras.map((row) => String(row?.code || '').trim()).filter(Boolean));
@@ -3884,6 +3958,10 @@ function loadServiceFinderMatchesForPoint(lat, lon) {
         serviceFinderMatchedCodeSet = matchedCodeSet;
         serviceFinderOutOfAreaCodeSet = outOfAreaCodeSet;
         serviceFinderDistanceFallbackCodeSet = distanceFallbackCodeSet;
+        serviceFinderHomeDistanceFallbackCodeSet = homeDistanceFallbackCodeSet;
+        serviceFinderExtraDistanceFallbackCodeSet = extraDistanceFallbackCodeSet;
+        serviceFinderNationalDistanceFallbackCodeSet = nationalDistanceFallbackCodeSet;
+        serviceFinderEnglishMissingCatchmentCodeSet = englishMissingCatchmentCodeSet;
         serviceFinderOutOfAreaEligibleCount = Number(outOfAreaResult.debug?.eligibleCount || 0);
         serviceFinderOutOfAreaVisibleCount = Number(outOfAreaResult.debug?.selectedCount || 0);
         serviceFinderDistanceFallbackVisibleCount = Number(distanceFallbackResult.debug?.selectedCount || 0);
@@ -3896,6 +3974,8 @@ function loadServiceFinderMatchesForPoint(lat, lon) {
           homeCatchmentCodes: homeCatchmentCodeSet.size,
           extraCatchmentMatches: extraCatchmentMatches.length,
           extraCatchmentCodes: extraCatchmentCodeSet.size,
+          homeDistanceFallbackCodes: homeDistanceFallbackCodeSet.size,
+          extraDistanceFallbackCodes: extraDistanceFallbackCodeSet.size,
           distanceFallback: distanceFallbackResult.debug,
           outOfArea: outOfAreaResult.debug,
           combinedMatches: matches.length,
@@ -4055,9 +4135,16 @@ function renderServiceFinder() {
     return;
   }
 
-  if (footnote && serviceFinderDistanceFallbackVisibleCount > 0) {
+  if (footnote && (serviceFinderNationalDistanceFallbackCodeSet.size > 0 || serviceFinderEnglishMissingCatchmentCodeSet.size > 0)) {
     footnote.hidden = false;
-    footnote.textContent = `Note: ${serviceFinderDistanceFallbackVisibleCount} practice${serviceFinderDistanceFallbackVisibleCount === 1 ? ' is' : 's are'} shown by distance only because Wales and Scotland do not publish comparable practice catchment datasets. Published English catchments are still used where available, so cross-border searches can mix both methods.`;
+    const footnoteBits = [];
+    if (serviceFinderNationalDistanceFallbackCodeSet.size > 0) {
+      footnoteBits.push('Scottish, Welsh and Northern Irish practices do not publish catchments centrally, so nearer practices may still not accept your registration.');
+    }
+    if (serviceFinderEnglishMissingCatchmentCodeSet.size > 0) {
+      footnoteBits.push(`Some nearby English practices also have no published catchment lookup, so they are shown as maybes.`);
+    }
+    footnote.textContent = footnoteBits.join(' ');
   }
 
   tbody.innerHTML = ranked.map((entry, index) => {
@@ -4105,14 +4192,13 @@ function renderServiceFinder() {
     const isExtraMatch = serviceFinderExtraCodeSet.has(code);
     const isOutOfAreaMatch = serviceFinderOutOfAreaCodeSet.has(code);
     const isDistanceFallbackMatch = serviceFinderDistanceFallbackCodeSet.has(code);
-    const isMaybe = !isHomeMatch && (isExtraMatch || isOutOfAreaMatch);
+    const isNationalDistanceFallbackMatch = serviceFinderNationalDistanceFallbackCodeSet.has(code);
+    const isEnglishDistanceFallbackMatch = isDistanceFallbackMatch && !isNationalDistanceFallbackMatch;
+    const isMaybe = (!isHomeMatch && isExtraMatch) || isOutOfAreaMatch || isEnglishDistanceFallbackMatch;
     if (row.gtd) scopeTags.push('<span class="service-finder-tag">GTD</span>');
     if (isMaybe) scopeTags.push('<span class="service-finder-tag is-warning">Maybe</span>');
     if (isExtraMatch && !isHomeMatch) {
       scopeTags.push('<span class="service-finder-tag">Near place</span>');
-    }
-    if (isDistanceFallbackMatch) {
-      scopeTags.push('<span class="service-finder-tag">Distance only</span>');
     }
     if (isOutOfAreaMatch) {
       scopeTags.push('<span class="service-finder-tag">Out-of-area</span>');
