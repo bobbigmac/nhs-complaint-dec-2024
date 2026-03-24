@@ -17,8 +17,8 @@
       </div>
       <div class="legend-intro">
         <h1>Manchester GPs' Reviews Map</h1>
-        <p>Manchester: 3,021,833 &#128101; &middot; 360 &#127973;</p>
-        <p id="national-supplemental-note" class="hint" data-total-patients="70550280" data-total-practices="7361">&#127988; National: 70,550,280 &#128101; &middot; 7361 &#127973;</p>
+        <p>Manchester: __MANCHESTER_TOTAL_PATIENTS__ &#128101; &middot; __MANCHESTER_REGISTERED_PRACTICE_ROWS__ &#127973;</p>
+        <p id="national-supplemental-note" class="hint" data-total-patients="__NATIONAL_TOTAL_PATIENTS_RAW__" data-total-practices="__NATIONAL_SUPPLEMENTAL_COUNT__">&#127988; National: __NATIONAL_TOTAL_PATIENTS__ &#128101; &middot; __NATIONAL_SUPPLEMENTAL_COUNT__ &#127973;</p>
       </div>
       <div class="control-group" id="score-source-control">
         <h2>Score Source</h2>
@@ -260,42 +260,13 @@
       <p>The practical conclusion is local rather than fatalistic. National context matters, but the strongest actionable result here is that GTD, and especially New Bank, are performing worse than most of the sample even after allowing for deprivation.</p>
       <p>Change across GTD is both plausible and necessary, and in more deprived areas the benefit of improvement is larger because easy access matters most where health need is greatest.</p>
     </section>
-    <details class="panel comparison-panel data-pool-panel">
-  <summary>
-    <span>Data Coverage by Nation</span>
-    <small>Expand for source coverage, gaps, and lookup states</small>
-  </summary>
-  <p class="chart-note">7,785 unique practices across 4 nations are currently loaded into this page. Counts below reflect what this build can actually use right now, including missing data and lookup failure states.</p>
-  <div class="data-pool-grid">
-<article class="data-pool-card">
-  <h3>England</h3>
-  <p class="data-pool-kicker">6,224 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>6,224 records · 6,224 with coordinates · 6,224 with postcode · National supplemental 5,800 · Manchester core dataset 424</span></li><li><strong>Google</strong><span>6,132 with usable rating/count · 92 missing or unusable · National Google Maps quick scan 5,709 · Google Maps direct search with visible recent reviews 375 · Google Maps direct search with visible recent reviews (weak name match) 34 · Google Maps direct search 12 · Google Maps direct search (weak name match) 2</span></li><li><strong>Surveys</strong><span>6,172 with overall score · 6,183 with participation/completion · GP Patient Survey 6,183</span></li><li><strong>Survey issues</strong><span>none</span></li><li><strong>Patient counts</strong><span>6,085 with counts covering 62,852,918 patients · NHS England practice counts 5,725 · NHS England monthly direct 360</span></li><li><strong>CQC</strong><span>5,870 with rating · 354 without match · Good 5,017 · Outstanding 458 · Requires improvement 375 · Inadequate 17 · Insufficient evidence to rate 3</span></li><li><strong>Deprivation</strong><span>6,170 with usable decile · no cached lookup 48 · no polygon match 5 · polygon matched, no deprivation index 1</span></li></ul>
-</article>
-<article class="data-pool-card">
-  <h3>Scotland</h3>
-  <p class="data-pool-kicker">933 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>933 records · 933 with coordinates · 933 with postcode · National supplemental 933</span></li><li><strong>Google</strong><span>924 with usable rating/count · 9 missing or unusable · National Google Maps quick scan 924</span></li><li><strong>Surveys</strong><span>834 with overall score · 834 with participation/completion · Health and Care Experience Survey 834</span></li><li><strong>Survey issues</strong><span>missing in current source 98 · metric missing in source 1</span></li><li><strong>Patient counts</strong><span>850 with counts covering 5,876,204 patients · NHS Scotland list sizes 850</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 826 · no cached lookup 107</span></li></ul>
-</article>
-<article class="data-pool-card">
-  <h3>Wales</h3>
-  <p class="data-pool-kicker">362 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>362 records · 362 with coordinates · 362 with postcode · National supplemental 362</span></li><li><strong>Google</strong><span>361 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 361</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>equivalent identified, not wired 362</span></li><li><strong>Patient counts</strong><span>338 with counts covering 3,016,261 patients · StatsWales HLTH0426 338</span></li><li><strong>Deprivation</strong><span>1 with usable decile · polygon matched, no deprivation index 309 · no cached lookup 51 · no polygon match 1</span></li></ul>
-</article>
-<article class="data-pool-card">
-  <h3>Northern Ireland</h3>
-  <p class="data-pool-kicker">266 practices currently loaded into this page</p>
-  <ul class="data-pool-list"><li><strong>Practice info</strong><span>266 records · 266 with coordinates · 266 with postcode · National supplemental 266</span></li><li><strong>Google</strong><span>265 with usable rating/count · 1 missing or unusable · National Google Maps quick scan 265</span></li><li><strong>Surveys</strong><span>0 with overall score · 0 with participation/completion · none</span></li><li><strong>Survey issues</strong><span>discontinued 266</span></li><li><strong>Patient counts</strong><span>265 with counts covering 1,826,730 patients · OpenDataNI GP reference 265</span></li><li><strong>Deprivation</strong><span>0 with usable decile · unsupported nation 225 · no cached lookup 41</span></li></ul>
-</article>
-  </div>
-  <p class="chart-note data-pool-footnote">Survey participation means GP Patient Survey completion in England and HACE response rate in Scotland. National deprivation is currently English IMD only: Wales can retain polygon matches without a comparable index, while Scotland and Northern Ireland remain unsupported until equivalent sources are wired.</p>
-</details>
+    __DATA_POOL_REPORT_HTML__
   </div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js"></script>
 <script>window.NATIONAL_PRACTICE_SUPPLEMENTALS = window.NATIONAL_PRACTICE_SUPPLEMENTALS || [];</script>
-<script src="national-practice-supplementals.js"></script>
+<script src="__NATIONAL_SUPPLEMENTAL_SCRIPT__"></script>
 <script src="map-embed-data.js"></script>
 <script src="map-app.js"></script>
 </body>
