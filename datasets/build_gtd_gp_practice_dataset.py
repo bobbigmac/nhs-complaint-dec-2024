@@ -1511,6 +1511,9 @@ def build_national_map_supplementals(
                 "google_url": google_maps_url,
                 "google_review_scan_status": str(result.get("scan_status", "") or ""),
                 "google_review_has_listing": "true" if (str(result.get("page_kind", "")).strip() == "place" or google_maps_url or result.get("google_maps_title")) else "false",
+                "nhs_url": str(source_row.get("nhs_profile_url") or "").strip(),
+                "website_url": str(source_row.get("website_url") or "").strip(),
+                "ods_org_link": str(source_row.get("ods_org_link") or "").strip(),
                 "survey_overall_good_percent": survey_score,
                 "survey_overall_good_ics_percent": "",
                 "survey_overall_good_national_percent": "",
@@ -1798,6 +1801,8 @@ def build_client_map_row(row: dict[str, Any]) -> dict[str, Any]:
         "google_missing_text": google_missing_display(row.get("google_review_has_listing", ""), row.get("google_review_scan_status", "")),
         "nhs_url": row.get("nhs_url", ""),
         "nhs_register_url": nhs_registration_url(str(row.get("nhs_url", ""))),
+        "website_url": row.get("website_url", ""),
+        "ods_org_link": row.get("ods_org_link", ""),
         "accepting_new_patients": row.get("accepting_new_patients", False),
         "accepts_out_of_area_registrations": row.get("accepts_out_of_area_registrations", False),
         "gtd_url": row.get("gtd_url", ""),
@@ -2696,6 +2701,8 @@ def write_map(
                 "google_review_scan_status": row.get("google_review_scan_status", ""),
                 "google_review_has_listing": row.get("google_review_has_listing", ""),
                 "nhs_url": row["nhs_profile_url"],
+                "website_url": row.get("website_url", ""),
+                "ods_org_link": row.get("ods_org_link", ""),
                 "gtd_url": row["gtd_site_url"],
                 "gtd_takeover_date": row.get("gtd_takeover_date", ""),
                 "gtd_takeover_precision": row.get("gtd_takeover_date_precision", ""),
@@ -5611,6 +5618,36 @@ function formatGap(row) {{
     : `Survey/Google gap: ${{magnitude.toFixed(2)}} stars (${{direction}}) · Google ${{inputs.google.toFixed(1)}} vs survey-equivalent ${{inputs.surveyStars.toFixed(2)}}`;
 }}
 
+function firstUsableUrl(...values) {{
+  for (const value of values) {{
+    const normalized = String(value || '').trim();
+    if (normalized) return normalized;
+  }}
+  return '';
+}}
+
+function practiceWebsiteUrl(row) {{
+  return firstUsableUrl(row?.website_url, row?.cqc_service_website);
+}}
+
+function practiceProfileUrl(row) {{
+  return firstUsableUrl(row?.nhs_url, practiceWebsiteUrl(row), row?.google_maps_url, row?.ods_org_link);
+}}
+
+function practiceActionLink(row) {{
+  const registerUrl = firstUsableUrl(row?.nhs_register_url);
+  if (registerUrl) return {{ url: registerUrl, label: 'Register' }};
+  const websiteUrl = practiceWebsiteUrl(row);
+  if (websiteUrl) return {{ url: websiteUrl, label: 'Website' }};
+  const mapsUrl = firstUsableUrl(row?.google_maps_url);
+  if (mapsUrl) return {{ url: mapsUrl, label: 'Map' }};
+  const profileUrl = firstUsableUrl(row?.nhs_url);
+  if (profileUrl) return {{ url: profileUrl, label: 'Profile' }};
+  const odsUrl = firstUsableUrl(row?.ods_org_link);
+  if (odsUrl) return {{ url: odsUrl, label: 'ODS' }};
+  return null;
+}}
+
 function popupMarkup(row) {{
   const google = `<div>${{formatGoogle(row)}}</div>`;
   const googleText = row.google_text_url ? `<div><a href="${{row.google_text_url}}" target="_blank" rel="noreferrer">Review text</a></div>` : '';
@@ -5618,7 +5655,12 @@ function popupMarkup(row) {{
     ? `<div>CQC: ${{row.cqc_overall_rating}}${{row.cqc_inherited_rating === 'Y' ? ' (inherited)' : ''}}${{row.cqc_publication_date ? ` · ${{row.cqc_publication_date}}` : ''}}</div>`
     : '';
   const cqcLink = row.cqc_location_url ? `<div><a href="${{row.cqc_location_url}}" target="_blank" rel="noreferrer">CQC page</a></div>` : '';
-  const practiceWebsite = row.cqc_service_website ? `<div><a href="${{row.cqc_service_website}}" target="_blank" rel="noreferrer">Practice website</a></div>` : '';
+  const profileUrl = firstUsableUrl(row.nhs_url);
+  const profileLabel = row.nhs_url ? 'NHS page' : '';
+  const profileLink = profileUrl ? `<div><a href="${{profileUrl}}" target="_blank" rel="noreferrer">${{profileLabel}}</a></div>` : '';
+  const websiteUrl = practiceWebsiteUrl(row);
+  const practiceWebsite = websiteUrl && websiteUrl !== profileUrl ? `<div><a href="${{websiteUrl}}" target="_blank" rel="noreferrer">Practice website</a></div>` : '';
+  const odsLink = !profileUrl && !websiteUrl && row.ods_org_link ? `<div><a href="${{row.ods_org_link}}" target="_blank" rel="noreferrer">ODS record</a></div>` : '';
   const management = row.management_company ? `<div>Management: ${{row.management_company}}</div>` : '<div>Management: unknown</div>';
   const affiliatedGroup = row.affiliated_group ? `<div>Affiliated group: ${{row.affiliated_group}}</div>` : '';
   const takeoverDate = formatTakeoverDate(row.gtd_takeover_date, row.gtd_takeover_precision);
@@ -5663,9 +5705,10 @@ function popupMarkup(row) {{
     ${{surveySourceNote}}
     ${{gap}}
     ${{googleText}}
-    <div><a href="${{row.nhs_url}}" target="_blank" rel="noreferrer">NHS page</a></div>
+    ${{profileLink}}
     ${{cqcLink}}
     ${{practiceWebsite}}
+    ${{odsLink}}
     ${{surveyLink}}
     ${{gtd}}
     ${{takeoverSource}}
@@ -5692,7 +5735,12 @@ function nationalPopupMarkup(row) {{
   const surveyLink = surveyUrl ? `<div><a href="${{surveyUrl}}" target="_blank" rel="noreferrer">${{surveyLinkLabel}}</a></div>` : '';
   const googleLink = row.google_maps_url ? `<div><a href="${{row.google_maps_url}}" target="_blank" rel="noreferrer">Google Maps page</a></div>` : '';
   const cqcLink = row.cqc_location_url ? `<div><a href="${{row.cqc_location_url}}" target="_blank" rel="noreferrer">CQC page</a></div>` : '';
-  const practiceWebsite = row.cqc_service_website ? `<div><a href="${{row.cqc_service_website}}" target="_blank" rel="noreferrer">Practice website</a></div>` : '';
+  const profileUrl = firstUsableUrl(row.nhs_url);
+  const profileLabel = row.nhs_url ? 'NHS page' : '';
+  const profileLink = profileUrl ? `<div><a href="${{profileUrl}}" target="_blank" rel="noreferrer">${{profileLabel}}</a></div>` : '';
+  const websiteUrl = practiceWebsiteUrl(row);
+  const practiceWebsite = websiteUrl && websiteUrl !== profileUrl ? `<div><a href="${{websiteUrl}}" target="_blank" rel="noreferrer">Practice website</a></div>` : '';
+  const odsLink = !profileUrl && !websiteUrl && !row.google_maps_url && row.ods_org_link ? `<div><a href="${{row.ods_org_link}}" target="_blank" rel="noreferrer">ODS record</a></div>` : '';
   return `
     <strong>${{row.name}}</strong><br>
     ${{row.postcode || ''}}<br>
@@ -5708,8 +5756,10 @@ function nationalPopupMarkup(row) {{
     ${{gap}}
     ${{surveyLink}}
     ${{googleLink}}
+    ${{profileLink}}
     ${{cqcLink}}
     ${{practiceWebsite}}
+    ${{odsLink}}
   `;
 }}
 
@@ -6893,8 +6943,8 @@ function renderServiceFinder() {{
     const distance = entry.distance;
     const code = String(row.code || '').trim();
     const accentColor = serviceFinderAccentColor(row);
-    const nhsUrl = String(row.nhs_url || '').trim();
-    const registerUrl = String(row.nhs_register_url || '').trim();
+    const primaryProfileUrl = practiceProfileUrl(row);
+    const actionLink = practiceActionLink(row);
     const googleMapsUrl = String(row.google_maps_url || '').trim();
     const surveyUrl = String(row.survey_link_url || '').trim();
     const shortAddress = String(row.short_address || '').trim();
@@ -6953,8 +7003,8 @@ function renderServiceFinder() {{
     const cqcBadgeMarkup = cqcBadgeConfig
       ? `<a class="service-finder-cqc-badge ${{cqcBadgeConfig.className}}" href="${{escapeHtml(cqcUrl)}}" target="_blank" rel="noreferrer" title="${{escapeHtml(cqcBadgeConfig.title)}}">${{cqcBadgeConfig.icon}}</a>`
       : '';
-    const titleMarkup = nhsUrl
-      ? `<a class="service-finder-practice-name" href="${{escapeHtml(nhsUrl)}}" target="_blank" rel="noreferrer">${{escapeHtml(row.name || row.code)}}</a>`
+    const titleMarkup = primaryProfileUrl
+      ? `<a class="service-finder-practice-name" href="${{escapeHtml(primaryProfileUrl)}}" target="_blank" rel="noreferrer">${{escapeHtml(row.name || row.code)}}</a>`
       : `<button type="button" class="service-finder-practice-name" data-service-finder-code="${{escapeHtml(row.code)}}">${{escapeHtml(row.name || row.code)}}</button>`;
     const addressBits = [
       shortAddress ? `<span class="service-finder-subtle">${{escapeHtml(shortAddress)}}</span>` : '',
@@ -6966,7 +7016,7 @@ function renderServiceFinder() {{
     const addressLineMarkup = addressBits.length
       ? `<span class="service-finder-address-line">${{addressBits.join('<span class="service-finder-address-separator">·</span>')}}${{acceptsOutOfAreaBadge}}</span>`
       : '';
-    const addressLinkUrl = googleMapsUrl || nhsUrl;
+    const addressLinkUrl = googleMapsUrl || primaryProfileUrl;
     const addressMarkup = addressLinkUrl
       ? (addressLineMarkup ? `<a class="service-finder-address-link" href="${{escapeHtml(addressLinkUrl)}}" target="_blank" rel="noreferrer">${{addressLineMarkup}}</a>` : '')
       : addressLineMarkup;
@@ -6986,7 +7036,7 @@ function renderServiceFinder() {{
               </div>
               ${{addressMarkup}}
             </div>
-            ${{registerUrl ? `<a class="service-finder-register-link" href="${{escapeHtml(registerUrl)}}" target="_blank" rel="noreferrer">Register</a>` : ''}}
+            ${{actionLink ? `<a class="service-finder-register-link" href="${{escapeHtml(actionLink.url)}}" target="_blank" rel="noreferrer">${{escapeHtml(actionLink.label)}}</a>` : ''}}
           </div>
         </td>
         <td class="service-finder-distance-cell"><span class="service-finder-distance-value">${{distanceLabel}}</span></td>

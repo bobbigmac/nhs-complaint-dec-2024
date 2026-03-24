@@ -1,0 +1,28 @@
+{
+  "practice_name": "ALBERT ROAD SURGERY",
+  "canonical_code": "W97057",
+  "postcode": "CF64 1BX",
+  "query_used": "ALBERT ROAD SURGERY CF64 1BX",
+  "google_maps_title": "Dr S Thomas",
+  "google_maps_url": "https://www.google.com/maps/place/Dr+S+Thomas/@51.4405823,-3.1750292,17z/data=!4m8!3m7!1s0x486e0371dcf0d229:0x5f288d24f5449acf!8m2!3d51.440579!4d-3.1724489!9m1!1b1!16s%2Fg%2F1tnjh_rj?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D",
+  "latitude": 51.440579,
+  "longitude": -3.1724489,
+  "google_review_count": 113,
+  "review_collection_mode": "visible_cards",
+  "raw_review_responses_captured": 1,
+  "raw_review_responses": [
+    {
+      "seq": 1,
+      "captured_at_ms": 1774337403423,
+      "source": "xhr",
+      "method": "GET",
+      "url": "/maps/rpc/listugcposts?authuser=0&hl=en&gl=uk&pb=!1m6!1s0x486e0371dcf0d229%3A0x5f288d24f5449acf!6m4!4m1!1e1!4m1!1e3!2m2!1i10!2s!5m2!1sSRbCaYqeMbTqhbIP75_O-QQ!7e81!8m9!2b1!3b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!11m4!1e3!2e1!6m1!1i2!13m1!1e1",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json; charset=utf-8",
+      "request_body": "",
+      "body": ")]}'\n[null,null,[[[\"ChdDSUhNMG9nS0VJQ0FnSURBa095Q3l3RRAB\",[\"0x0:0x5f288d24f5449acf\",null,1511188581847000,1511188581847000,[null,null,[\"https://www.google.com/maps/contrib/110594039394926438408/reviews?hl\\u003den\"],null,null,[\"Ws R\",\"https://lh3.googleusercontent.com/a-/ALV-UjVPyvPXhTH6Qj-F20SdX5i1Cg44PtcSAbZTZsqAZgJWzEHytsln\\u003ds120-c-rp-mo-ba4-br100\",[\"https://www.google.com/maps/contrib/110594039394926438408?hl\\u003den\"],\"110594039394926438408\",null,105,364,null,[1,6,1],6,[\"Local Guide · 105 reviews\",null,null,null,null,[null,\"0ahUKEwiR2ffxgbiTAxVBJ2MBHUXaBYQQ7LoGCAMoAA\"]]]],null,\"8 years ago\",null,null,null,null,null,null,[\"Google\",\"https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png\",null,null,5],null,1],[[1],null,null,null,null,null,null,null,null,null,null,null,null,null,[\"en\"],[[\"Worst managed Surgery by far.  The reception young lady checked me in for my appointment on time.  Sat there for 40 mins without calling my name while everyone was being attended.  Goes to see the reception lady again to see what's going on.  To be told oh... there is no nurse today. YOU COULDN'T BLOODY tell me that at that start?  Receptionist needs basic training.  How did she even get the job!\",null,[0,237]]]],[],[null,null,null,[\"https://www.google.com/maps/reviews/data\\u003d!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBa095Q3l3RRAB!2m1!1s0x0:0x5f288d24f5449acf!3m1!1s2@1:CIHM0ogKEICAgIDAkOyCywE%7C%7C?hl\\u003den\"],[\"https://www.google.com/local/content/rap/report?postId\\u003dChdDSUhNMG9nS0VJQ0FnSURBa095Q3l3RRAB\\u0026t\\u003d1\\u0026entityid\\u003dChdDSUhNMG9nS0VJQ0FnSURBa095Q3l3RRItChZDSUhNMG9nS0VJQ0FnSURBa095Q0t3EhNDZ3dJNWRETDBBVVF3T1B3a3dNGi4KF0NJSE0wb2dLRUlDQWdJREFrT3lDcXdFEhNDZ3dJNWRETDBBVVF3T1B3a3dNIhIJAAAAAAAAAAARz5pE9SSNKF8qE0Nnd0k1ZERMMEFVUXdPUHdrd00\\u0026wv\\u003d1\\u0026d\\u003d286732320\",null,null,\"0ahUKEwiR2ffxgbiTAxVBJ2MBHUXaBYQQoykIBCgB\"],null,[null,[[1,0]]]],\"0ahUKEwiR2ffxgbiTAxVBJ2MBHUXaBYQQ0pMFCAIoAA\"]]]]",
+      "error": ""
+    }
+  ]
+}
