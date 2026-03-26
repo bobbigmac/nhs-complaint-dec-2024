@@ -1,0 +1,36 @@
+Northern Ireland Distance-Strength Terrain Summary
+
+Practice points used: 266
+Raster size: 1024 x 902
+Near radius: 3.0 miles
+Far radius: 10.0 miles
+Exterior transparent mask: 497,270 pixels / 22,148.067 sq km
+Max cumulative strength: 82.2463
+Approx bbox area: 41,172.034 sq km
+Approx positive-strength area: 18,864.059 sq km
+Positive pixel share: 45.77%
+
+Band distribution:
+        0  pixels=500,887  share=54.23%  approx_area=22,307.975 sq km  color=#a50026cc
+      0-1  pixels=115,688  share=12.53%  approx_area=5,149.173 sq km  color=#f46d43bc
+    1-2.5  pixels=86,448  share=9.36%  approx_area=3,857.295 sq km  color=#fdae61b8
+    2.5-5  pixels=82,104  share=8.89%  approx_area=3,665.064 sq km  color=#fee08bb0
+     5-10  pixels=94,419  share=10.22%  approx_area=4,220.793 sq km  color=#a6d96ab8
+      10+  pixels=44,102  share=4.77%  approx_area=1,971.733 sq km  color=#1a9641c0
+
+Top integer-strength bins:
+    0  pixels=612,153
+    1  pixels=68,318
+    2  pixels=40,528
+    3  pixels=32,961
+    5  pixels=31,193
+    4  pixels=31,139
+    6  pixels=24,857
+    7  pixels=16,321
+    8  pixels=11,827
+    9  pixels=10,249
+   10  pixels=7,805
+   11  pixels=5,753
+
+Interpretation: this is not a literal catchment count. Each practice contributes full strength inside the near radius and then tapers to zero at the far radius.
+Preview PNGs and XYZ tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.

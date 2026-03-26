@@ -1,0 +1,36 @@
+England out-of-area Distance-Strength Terrain Summary
+
+Practice points used: 160
+Raster size: 1024 x 1052
+Near radius: 3.0 miles
+Far radius: 10.0 miles
+Exterior transparent mask: 656,710 pixels / 5,273.038 sq km
+Max cumulative strength: 87.1275
+Approx bbox area: 8,651.751 sq km
+Approx positive-strength area: 3,378.713 sq km
+Positive pixel share: 39.04%
+
+Band distribution:
+        0  pixels=656,710  share=60.96%  approx_area=5,273.038 sq km  color=#a50026cc
+      0-1  pixels=103,076  share=9.57%  approx_area=829.468 sq km  color=#f46d43bc
+    1-2.5  pixels=44,667  share=4.15%  approx_area=359.079 sq km  color=#fdae61b8
+    2.5-5  pixels=40,969  share=3.80%  approx_area=329.11 sq km  color=#fee08bb0
+     5-10  pixels=45,711  share=4.24%  approx_area=367.069 sq km  color=#a6d96ab8
+      10+  pixels=186,115  share=17.28%  approx_area=1,493.987 sq km  color=#1a9641c0
+
+Top integer-strength bins:
+    0  pixels=759,786
+    1  pixels=32,737
+    2  pixels=22,277
+    3  pixels=16,871
+    4  pixels=13,751
+    5  pixels=11,558
+    6  pixels=9,999
+    7  pixels=8,949
+    8  pixels=7,950
+    9  pixels=7,255
+   10  pixels=6,664
+   11  pixels=6,220
+
+Interpretation: this is not a literal catchment count. Each practice contributes full strength inside the near radius and then tapers to zero at the far radius.
+Preview PNGs and XYZ tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.

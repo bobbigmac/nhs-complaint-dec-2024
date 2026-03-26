@@ -39,10 +39,14 @@ NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 MAP_EMBED_SCRIPT_NAME = "map-embed-data.js"
 MAP_ASSETS_DIR = BASE_DIR / "gtd_gp_map"
 PUBLISHED_CATCHMENT_INDEX_REL_PATH = "catchments/index.json"
+PUBLISHED_HEALTHCARE_TERRAIN_ROOT_REL_PATH = "healthcare-terrain"
+PUBLISHED_HEALTHCARE_TERRAIN_CATCHMENT_REL_PATH = f"{PUBLISHED_HEALTHCARE_TERRAIN_ROOT_REL_PATH}/catchment-availability"
 ENGLAND_GP_CATCHMENT_BY_PRACTICE_DIR = BASE_DIR / "catchments" / ".cache" / "gp-catchments-england" / "by_practice"
 ENGLAND_GP_REGISTRATION_FLAGS_BY_PRACTICE_JSON = BASE_DIR / "catchments" / ".cache" / "gp-registration-flags-england" / "flags_by_practice.json"
 CQC_GP_RATINGS_JSON = BASE_DIR / "raw" / "cqc" / "cqc_gp_location_index.json"
 GPPS_DOWNLOADS_DIR = Path.home() / "Downloads" / "nhs-gpps-stats"
+HEALTHCARE_TERRAIN_OUTPUT_DIR = BASE_DIR / "healthcare-terrain" / "output" / "england-catchment-availability"
+HEALTHCARE_TERRAIN_DISTANCE_OUTPUT_DIR = BASE_DIR / "healthcare-terrain" / "output" / "distance-strength"
 
 from deprivation.practice_deprivation_lookup import load_cached_practice_deprivation_lookup, write_practice_deprivation_lookup
 RADIUS_MILES = 5.0
@@ -2629,6 +2633,102 @@ def render_map_html(
     return html
 
 
+def healthcare_terrain_overlay_from_metadata(
+    metadata: dict[str, Any],
+    *,
+    rel_base_path: str,
+    label: str,
+    mode: str,
+) -> dict[str, Any] | None:
+    bbox = ((metadata.get("raster") or {}).get("lonlat_bbox") or metadata.get("bbox") or (metadata.get("source") or {}).get("bbox") or {})
+    min_lon = bbox.get("min_lon")
+    min_lat = bbox.get("min_lat")
+    max_lon = bbox.get("max_lon")
+    max_lat = bbox.get("max_lat")
+    if not all(isinstance(value, (int, float)) for value in (min_lon, min_lat, max_lon, max_lat)):
+        return None
+    tile_manifest = metadata.get("tile_manifest") or {}
+    overlay_id = str(metadata.get("overlay_id") or "").strip().lower() or (
+        "england_catchment" if mode == "catchment_overlap" else str(metadata.get("nation") or "").strip().lower()
+    )
+    overlay_nation = str(metadata.get("overlay_nation") or metadata.get("nation") or "").strip().lower() or (
+        "england" if mode == "catchment_overlap" else ""
+    )
+    return {
+        "overlayId": overlay_id,
+        "label": label,
+        "mode": mode,
+        "nation": overlay_nation,
+        "tileUrl": f"./{rel_base_path}/tiles/{{z}}/{{x}}/{{y}}.png",
+        "summaryUrl": f"./{rel_base_path}/summary.json",
+        "previewUrl": f"./{rel_base_path}/availability-bands.png" if mode == "catchment_overlap" else f"./{rel_base_path}/distance-strength-bands.png",
+        "bounds": [[float(min_lat), float(min_lon)], [float(max_lat), float(max_lon)]],
+        "minZoom": int(tile_manifest.get("min_zoom", 4) or 4),
+        "maxNativeZoom": int(tile_manifest.get("max_zoom", 9) or 9),
+        "tileSize": int(tile_manifest.get("tile_size", 256) or 256),
+        "opacity": 0.58 if mode == "catchment_overlap" else 0.5,
+        "bands": metadata.get("bands") or [],
+        "notes": metadata.get("notes") or [],
+    }
+
+
+def prepare_healthcare_terrain_overlays(out_dir: Path) -> list[dict[str, Any]]:
+    overlays: list[dict[str, Any]] = []
+    metadata_path = HEALTHCARE_TERRAIN_OUTPUT_DIR / "metadata.json"
+    if metadata_path.exists():
+        try:
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            metadata = None
+        if isinstance(metadata, dict):
+            published_dir = out_dir / PUBLISHED_HEALTHCARE_TERRAIN_CATCHMENT_REL_PATH
+            shutil.copytree(HEALTHCARE_TERRAIN_OUTPUT_DIR, published_dir, dirs_exist_ok=True)
+            overlay = healthcare_terrain_overlay_from_metadata(
+                metadata,
+                rel_base_path=PUBLISHED_HEALTHCARE_TERRAIN_CATCHMENT_REL_PATH,
+                label="Catchment terrain",
+                mode="catchment_overlap",
+            )
+            if overlay:
+                overlays.append(overlay)
+
+    distance_manifest_path = HEALTHCARE_TERRAIN_DISTANCE_OUTPUT_DIR / "manifest.json"
+    if not distance_manifest_path.exists():
+        return overlays
+    try:
+        distance_manifest = json.loads(distance_manifest_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return overlays
+    nations = distance_manifest.get("nations") if isinstance(distance_manifest, dict) else []
+    if not isinstance(nations, list):
+        return overlays
+    for item in nations:
+        if not isinstance(item, dict):
+            continue
+        slug = str(item.get("slug") or item.get("nation") or "").strip().lower()
+        if not slug:
+            continue
+        nation_dir = HEALTHCARE_TERRAIN_DISTANCE_OUTPUT_DIR / slug
+        nation_metadata_path = nation_dir / "metadata.json"
+        if not nation_metadata_path.exists():
+            continue
+        try:
+            nation_metadata = json.loads(nation_metadata_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        rel_base_path = f"{PUBLISHED_HEALTHCARE_TERRAIN_ROOT_REL_PATH}/distance-strength/{slug}"
+        shutil.copytree(nation_dir, out_dir / rel_base_path, dirs_exist_ok=True)
+        overlay = healthcare_terrain_overlay_from_metadata(
+            nation_metadata,
+            rel_base_path=rel_base_path,
+            label=f"{str(item.get('label') or slug.title())} distance terrain",
+            mode="distance_strength",
+        )
+        if overlay:
+            overlays.append(overlay)
+    return overlays
+
+
 def write_map(
     path: Path,
     rows: list[dict[str, Any]],
@@ -2798,11 +2898,14 @@ def write_map(
 
     center_lat = sum(row["latitude"] for row in rows) / len(rows)
     center_lon = sum(row["longitude"] for row in rows) / len(rows)
+    out_dir = path.parent
+    healthcare_terrain_overlays = prepare_healthcare_terrain_overlays(out_dir)
     map_embed: dict[str, Any] = {
         "rows": client_markers,
         "nationOrder": NATION_ORDER,
         "cityCatchments": CITY_CATCHMENTS,
         "compositeRegionDefinitions": composite_region_definitions,
+        "compositeRegionRadiusMiles": COMPOSITE_REGION_RADIUS_MILES,
         "publishedCatchmentIndexRelPath": PUBLISHED_CATCHMENT_INDEX_REL_PATH,
         "northSouthDivide": {
             "west": {"lat": 51.62, "lon": -3.05},
@@ -2814,13 +2917,13 @@ def write_map(
         "patientChangeAnalysis": patient_change_analysis,
         "knownManagementCompanies": known_management_companies,
         "deprivationGeojson": deprivation_geojson,
+        "healthcareTerrainOverlays": healthcare_terrain_overlays,
         "practiceDeprivationLookup": practice_deprivation,
         "allPracticeDeprivationLookup": all_practice_deprivation,
         "centerLat": center_lat,
         "centerLon": center_lon,
         "mapZoom": 11,
     }
-    out_dir = path.parent
     shutil.copy2(MAP_ASSETS_DIR / "map.css", out_dir / "map.css")
     shutil.copy2(MAP_ASSETS_DIR / "map-app.js", out_dir / "map-app.js")
     write_map_embed_data(out_dir / MAP_EMBED_SCRIPT_NAME, map_embed)

@@ -1,0 +1,74 @@
+{
+  "nation": "england_out_of_area",
+  "overlay_id": "england_out_of_area",
+  "overlay_nation": "england",
+  "label": "England out-of-area",
+  "mode": "distance_strength",
+  "practice_count": 160,
+  "near_miles": 3.0,
+  "far_miles": 10.0,
+  "bbox": {
+    "min_lon": -2.938842,
+    "min_lat": 53.071572,
+    "max_lon": -1.551508,
+    "max_lat": 53.919428
+  },
+  "raster": {
+    "width": 1024,
+    "height": 1052,
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/distance-strength-bands.png"
+  },
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "color": "#a50026cc"
+    },
+    {
+      "label": "0-1",
+      "minimum": 1e-06,
+      "maximum": 1.0,
+      "color": "#f46d43bc"
+    },
+    {
+      "label": "1-2.5",
+      "minimum": 1.0,
+      "maximum": 2.5,
+      "color": "#fdae61b8"
+    },
+    {
+      "label": "2.5-5",
+      "minimum": 2.5,
+      "maximum": 5.0,
+      "color": "#fee08bb0"
+    },
+    {
+      "label": "5-10",
+      "minimum": 5.0,
+      "maximum": 10.0,
+      "color": "#a6d96ab8"
+    },
+    {
+      "label": "10+",
+      "minimum": 10.0,
+      "maximum": null,
+      "color": "#1a9641c0"
+    }
+  ],
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 8,
+    "tile_count": 9,
+    "template": "tiles/{z}/{x}/{y}.png"
+  },
+  "notes": [
+    "This layer is built from practice point distance strength, not published catchment polygons.",
+    "England out-of-area uses only locally logged practices flagged as accepting out-of-area registrations and currently accepting new patients.",
+    "Each practice contributes full weight inside the near radius and linearly tapers to zero at the far radius.",
+    "Preview PNGs and tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.",
+    "Values approximate cumulative accessibility strength, not confirmed registration eligibility."
+  ]
+}

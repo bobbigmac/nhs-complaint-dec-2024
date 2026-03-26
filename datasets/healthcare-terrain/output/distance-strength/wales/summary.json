@@ -1,0 +1,127 @@
+{
+  "max_strength": 53.5063,
+  "positive_pixels": 625569,
+  "positive_pixel_ratio": 0.476155,
+  "total_bbox_sq_km": 66811.43,
+  "positive_sq_km": 31896.774,
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "color": "#a50026cc"
+    },
+    {
+      "label": "0-1",
+      "minimum": 1e-06,
+      "maximum": 1.0,
+      "color": "#f46d43bc"
+    },
+    {
+      "label": "1-2.5",
+      "minimum": 1.0,
+      "maximum": 2.5,
+      "color": "#fdae61b8"
+    },
+    {
+      "label": "2.5-5",
+      "minimum": 2.5,
+      "maximum": 5.0,
+      "color": "#fee08bb0"
+    },
+    {
+      "label": "5-10",
+      "minimum": 5.0,
+      "maximum": 10.0,
+      "color": "#a6d96ab8"
+    },
+    {
+      "label": "10+",
+      "minimum": 10.0,
+      "maximum": null,
+      "color": "#1a9641c0"
+    }
+  ],
+  "top_integer_bins": [
+    {
+      "strength_floor": 0,
+      "pixel_count": 892727
+    },
+    {
+      "strength_floor": 1,
+      "pixel_count": 154574
+    },
+    {
+      "strength_floor": 2,
+      "pixel_count": 73190
+    },
+    {
+      "strength_floor": 3,
+      "pixel_count": 41967
+    },
+    {
+      "strength_floor": 4,
+      "pixel_count": 19794
+    },
+    {
+      "strength_floor": 5,
+      "pixel_count": 17218
+    },
+    {
+      "strength_floor": 6,
+      "pixel_count": 15157
+    },
+    {
+      "strength_floor": 7,
+      "pixel_count": 12215
+    },
+    {
+      "strength_floor": 8,
+      "pixel_count": 9356
+    },
+    {
+      "strength_floor": 9,
+      "pixel_count": 7563
+    },
+    {
+      "strength_floor": 10,
+      "pixel_count": 6418
+    },
+    {
+      "strength_floor": 11,
+      "pixel_count": 5179
+    }
+  ],
+  "exterior_mask": {
+    "masked_pixels": 682023,
+    "masked_pixel_ratio": 0.519126,
+    "approx_sq_km": 34599.557
+  },
+  "nation": "wales",
+  "overlay_id": "wales",
+  "overlay_nation": "wales",
+  "label": "Wales",
+  "mode": "distance_strength",
+  "practice_count": 362,
+  "near_miles": 3.0,
+  "far_miles": 10.0,
+  "bbox": {
+    "min_lon": -5.650783,
+    "min_lat": 51.104529,
+    "max_lon": -2.24581,
+    "max_lat": 53.706018
+  },
+  "raster": {
+    "width": 1024,
+    "height": 1283,
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/wales/distance-strength-bands.png"
+  },
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/wales/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 8,
+    "tile_count": 28,
+    "template": "tiles/{z}/{x}/{y}.png"
+  }
+}

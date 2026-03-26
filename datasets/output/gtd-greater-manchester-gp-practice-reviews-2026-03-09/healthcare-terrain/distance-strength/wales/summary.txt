@@ -1,0 +1,36 @@
+Wales Distance-Strength Terrain Summary
+
+Practice points used: 362
+Raster size: 1024 x 1283
+Near radius: 3.0 miles
+Far radius: 10.0 miles
+Exterior transparent mask: 682,023 pixels / 34,599.557 sq km
+Max cumulative strength: 53.5063
+Approx bbox area: 66,811.43 sq km
+Approx positive-strength area: 31,896.774 sq km
+Positive pixel share: 47.62%
+
+Band distribution:
+        0  pixels=688,223  share=52.38%  approx_area=34,914.656 sq km  color=#a50026cc
+      0-1  pixels=211,075  share=16.07%  approx_area=10,752.842 sq km  color=#f46d43bc
+    1-2.5  pixels=191,509  share=14.58%  approx_area=9,746.744 sq km  color=#fdae61b8
+    2.5-5  pixels=91,444  share=6.96%  approx_area=4,639.495 sq km  color=#fee08bb0
+     5-10  pixels=61,509  share=4.68%  approx_area=3,112.704 sq km  color=#a6d96ab8
+      10+  pixels=70,032  share=5.33%  approx_area=3,644.989 sq km  color=#1a9641c0
+
+Top integer-strength bins:
+    0  pixels=892,727
+    1  pixels=154,574
+    2  pixels=73,190
+    3  pixels=41,967
+    4  pixels=19,794
+    5  pixels=17,218
+    6  pixels=15,157
+    7  pixels=12,215
+    8  pixels=9,356
+    9  pixels=7,563
+   10  pixels=6,418
+   11  pixels=5,179
+
+Interpretation: this is not a literal catchment count. Each practice contributes full strength inside the near radius and then tapers to zero at the far radius.
+Preview PNGs and XYZ tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.

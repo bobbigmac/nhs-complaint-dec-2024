@@ -111,5 +111,105 @@ Phase 3:
 ## Current Status
 
 - catchment and registration-flag inputs now exist
-- no terrain-processing code has been started yet
-- this folder is the placeholder for the later analysis pipeline
+- first-pass raster generator now exists as `build_catchment_availability_raster.py`
+- current implementation measures raw in-catchment overlap count only
+
+## Current Prototype
+
+Run:
+
+```bash
+python3 datasets/healthcare-terrain/build_catchment_availability_raster.py
+python3 datasets/healthcare-terrain/build_distance_strength_rasters.py
+```
+
+Default outputs land in `datasets/healthcare-terrain/output/england-catchment-availability/`:
+
+- `availability-bands.png`
+- `summary.txt`
+- `summary.json`
+- `metadata.json`
+- `tiles/{z}/{x}/{y}.png`
+
+Distance-strength outputs land in `datasets/healthcare-terrain/output/distance-strength/{nation_or_overlay}/`:
+
+- `distance-strength-bands.png`
+- `summary.txt`
+- `summary.json`
+- `metadata.json`
+- `tiles/{z}/{x}/{y}.png`
+
+What it does:
+
+1. scans the England per-practice catchment GeoJSON cache
+2. projects the data bbox into Web Mercator
+3. rasterizes polygons by scanline fill into a coarse overlap grid
+4. buckets counts into fixed bands:
+   - `0`
+   - `1-2`
+   - `3-5`
+   - `6-9`
+   - `10-19`
+   - `20+`
+5. writes a banded PNG preview plus XYZ tile images for server-side overlay use
+6. writes rough area and histogram summaries as a quick sanity check
+7. flood-fills the contiguous exterior zero-value area from the raster edge and makes only that outside region transparent in the preview and tiles, so sea/outside-bbox pixels drop away without erasing genuine inland zero bands
+
+The distance-strength generator is the softer fallback / supplement model used for:
+
+- England out-of-area support
+- Scotland
+- Wales
+- Northern Ireland
+
+That model:
+
+1. starts from the national supplemental practice point set with usable coordinates
+2. gives each practice full strength inside a near radius
+3. linearly tapers that strength down to zero at a wider far radius
+4. sums those strengths into a coarse raster
+5. writes nation-specific PNGs, summaries and tiles
+6. applies the same exterior flood-fill transparency mask so only the connected outside-zero area is clipped away
+
+This is intentionally softer than the England catchment layer. It is meant to show likely structural availability gradients, not a hard registration boundary.
+
+England note:
+
+- the England terrain layer is built directly from the full England catchment polygon cache, not from national supplementals
+- where the Manchester core review dataset contains a practice with coordinates but no cached England catchment polygon, the raster builder adds a small local point fallback so those reviewed practices do not create artificial low-coverage holes
+- England out-of-area support is now a separate distance-strength layer built only from locally logged practices flagged as accepting out-of-area registrations, so it can be toggled on alongside or instead of the hard England catchment layer
+
+Current distance-strength assumptions:
+
+- England out-of-area: `3.0` miles near, `10.0` miles far
+- Scotland: `3.0` miles near, `12.0` miles far
+- Wales: `3.0` miles near, `10.0` miles far
+- Northern Ireland: `3.0` miles near, `10.0` miles far
+
+## Why This Approach
+
+This avoids the bad version of the problem, which is:
+
+- test every sample point against every catchment polygon
+
+Instead, the prototype cost is dominated by:
+
+- reading each polygon once
+- filling the raster rows touched by that polygon
+
+On the current England cache this is fast enough for offline builds at coarse national resolution.
+
+## Current Caveat
+
+The `0` bucket is still measured across the raster bbox, not against an England land boundary or population mask.
+
+That means:
+
+- sea and outside-land cells inside the bbox also show as `0`
+- the zero band is useful for a first overlap picture, but not yet a defensible "healthcare desert" claim
+
+The next sensible upgrade is to clip or mask against one of:
+
+- England boundary
+- population-weighted geography such as LSOA centroids / polygons
+- a denser inhabited-area mask

@@ -1,0 +1,36 @@
+Scotland Distance-Strength Terrain Summary
+
+Practice points used: 933
+Raster size: 1024 x 1712
+Near radius: 3.0 miles
+Far radius: 12.0 miles
+Exterior transparent mask: 1,205,557 pixels / 225,677.952 sq km
+Max cumulative strength: 195.2109
+Approx bbox area: 335,052.589 sq km
+Approx positive-strength area: 109,260.103 sq km
+Positive pixel share: 31.20%
+
+Band distribution:
+        0  pixels=1,206,094  share=68.80%  approx_area=225,792.486 sq km  color=#a50026cc
+      0-1  pixels=266,273  share=15.19%  approx_area=52,405.977 sq km  color=#f46d43bc
+    1-2.5  pixels=143,765  share=8.20%  approx_area=28,615.221 sq km  color=#fdae61b8
+    2.5-5  pixels=65,317  share=3.73%  approx_area=13,259.348 sq km  color=#fee08bb0
+     5-10  pixels=26,873  share=1.53%  approx_area=5,624.191 sq km  color=#a6d96ab8
+      10+  pixels=44,766  share=2.55%  approx_area=9,355.366 sq km  color=#1a9641c0
+
+Top integer-strength bins:
+    0  pixels=1,462,670
+    1  pixels=124,675
+    2  pixels=52,349
+    3  pixels=29,339
+    4  pixels=12,416
+    5  pixels=7,746
+    6  pixels=5,855
+    7  pixels=5,124
+    8  pixels=4,510
+    9  pixels=3,638
+   10  pixels=2,652
+   11  pixels=2,399
+
+Interpretation: this is not a literal catchment count. Each practice contributes full strength inside the near radius and then tapers to zero at the far radius.
+Preview PNGs and XYZ tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.

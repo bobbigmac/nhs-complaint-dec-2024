@@ -1,0 +1,43 @@
+Catchment Availability Raster Summary
+
+Files processed: 7652
+Polygon parts: 20500
+Vertices: 519850
+Reviewed-practice point fallbacks: 66
+Point fallback radius: 2.5 miles
+Out-of-area support practices: 0
+Out-of-area support radius: 0.0 to 0.0 miles
+Out-of-area support footprint: 0 pixels / 0.0 sq km
+Exterior transparent mask: 3,239,668 pixels / 244,026.928 sq km
+Raster size: 2048 x 2448
+Max overlap count: 49
+Approx bbox area: 381,548.431 sq km
+Approx covered area (>0): 135,354.229 sq km
+Coverage ratio: 35.48%
+
+Band distribution:
+      0  pixels=3,268,027  share=65.18%  approx_area=246,194.202 sq km  color=#b2182bcc
+    1-2  pixels=731,682  share=14.59%  approx_area=56,658.087 sq km  color=#ef8a62bc
+    3-5  pixels=698,767  share=13.94%  approx_area=54,292.067 sq km  color=#fddb7fb0
+    6-9  pixels=221,481  share=4.42%  approx_area=17,219.199 sq km  color=#d1e58bb0
+  10-19  pixels=77,188  share=1.54%  approx_area=5,921.897 sq km  color=#66bd63b8
+    20+  pixels=16,359  share=0.33%  approx_area=1,262.979 sq km  color=#1b7837c0
+
+Top exact overlap counts:
+    0  pixels=3,268,027
+    2  pixels=442,346
+    3  pixels=322,814
+    1  pixels=289,336
+    4  pixels=226,063
+    5  pixels=149,890
+    6  pixels=97,768
+    7  pixels=60,948
+    8  pixels=36,740
+    9  pixels=26,025
+   10  pixels=18,526
+   11  pixels=13,106
+
+Note: the zero band is measured across the raster bbox, so coastal sea and outside-land cells are still zero unless a separate England land/population mask is added.
+England overlap counts are primarily polygon-derived, with a small local point fallback only for reviewed Manchester-core practices that have coordinates but no cached catchment polygon.
+Practices flagged as accepting out-of-area registrations add a soft visual halo outside hard catchments; those halos affect the preview and tiles, not the raw overlap histogram.
+Preview PNGs and XYZ tiles now flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.

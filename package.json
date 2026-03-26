@@ -10,6 +10,8 @@
     "catchments:fetch:registration-flags": "python3 datasets/catchments/fetch_gp_registration_flags_england.py --outdir datasets/catchments/.cache/gp-registration-flags-england",
     "catchments:publish": "python3 datasets/catchments/build_site_catchment_bundles.py",
     "catchments:update": "python3 datasets/catchments/fetch_gp_catchments_england.py --outdir datasets/catchments/.cache/gp-catchments-england && python3 datasets/catchments/fetch_gp_registration_flags_england.py --outdir datasets/catchments/.cache/gp-registration-flags-england && python3 datasets/catchments/build_site_catchment_bundles.py",
+    "healthcare-terrain:catchment-availability": "python3 datasets/healthcare-terrain/build_catchment_availability_raster.py",
+    "healthcare-terrain:distance-strength": "python3 datasets/healthcare-terrain/build_distance_strength_rasters.py",
     "deprivation:lookup": "python3 datasets/deprivation/build_practice_deprivation_lookup_all.py",
     "deprivation:subset": "python3 datasets/deprivation/build_catchment_subset.py",
     "datasets:maintenance": "bash datasets/run_weekly_maintenance.sh",

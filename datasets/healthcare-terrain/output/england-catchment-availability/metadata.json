@@ -1,0 +1,95 @@
+{
+  "source": {
+    "input_dir": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/catchments/.cache/gp-catchments-england/by_practice",
+    "file_count": 7652,
+    "polygon_parts": 20500,
+    "vertex_count": 519850,
+    "bbox": {
+      "min_lon": -6.63377,
+      "min_lat": 49.83171,
+      "max_lon": 1.78363,
+      "max_lat": 55.89334
+    },
+    "data_bbox": {
+      "min_lon": -6.61377,
+      "min_lat": 49.85171,
+      "max_lon": 1.76363,
+      "max_lat": 55.87334
+    },
+    "point_fallback_count": 66,
+    "point_fallback_radius_miles": 2.5,
+    "out_of_area_support_count": 0,
+    "out_of_area_support_near_miles": 0.0,
+    "out_of_area_support_far_miles": 0.0
+  },
+  "raster": {
+    "width": 2048,
+    "height": 2448,
+    "mercator_bbox": {
+      "min_x": 0.481572861,
+      "max_x": 0.504954528,
+      "min_y": 0.311922426,
+      "max_y": 0.339870763
+    },
+    "lonlat_bbox": {
+      "min_lon": -6.63377,
+      "min_lat": 49.83171,
+      "max_lon": 1.78363,
+      "max_lat": 55.89334
+    },
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/england-catchment-availability/availability-bands.png"
+  },
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/england-catchment-availability/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 9,
+    "tile_count": 308,
+    "template": "tiles/{z}/{x}/{y}.png"
+  },
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0,
+      "maximum": 0,
+      "color": "#b2182bcc"
+    },
+    {
+      "label": "1-2",
+      "minimum": 1,
+      "maximum": 2,
+      "color": "#ef8a62bc"
+    },
+    {
+      "label": "3-5",
+      "minimum": 3,
+      "maximum": 5,
+      "color": "#fddb7fb0"
+    },
+    {
+      "label": "6-9",
+      "minimum": 6,
+      "maximum": 9,
+      "color": "#d1e58bb0"
+    },
+    {
+      "label": "10-19",
+      "minimum": 10,
+      "maximum": 19,
+      "color": "#66bd63b8"
+    },
+    {
+      "label": "20+",
+      "minimum": 20,
+      "maximum": null,
+      "color": "#1b7837c0"
+    }
+  ],
+  "notes": [
+    "Counts are polygon-derived England catchment overlaps, with a small local point fallback for reviewed Manchester-core practices that lack cached catchment polygons.",
+    "Practices flagged as accepting out-of-area registrations add a soft visual halo outside hard catchments, using the configured England out-of-area radii.",
+    "The zero band covers the raster bbox, so coastline/sea cells are still zero until a land or population mask is added.",
+    "Preview PNGs and tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.",
+    "Tiles are sampled from the projected raster with nearest-neighbour resampling, so they stay intentionally blocky at higher zooms."
+  ]
+}

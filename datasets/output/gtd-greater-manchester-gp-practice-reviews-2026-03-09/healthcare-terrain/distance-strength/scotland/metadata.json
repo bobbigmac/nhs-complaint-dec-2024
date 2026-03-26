@@ -1,0 +1,73 @@
+{
+  "nation": "scotland",
+  "overlay_id": "scotland",
+  "overlay_nation": "scotland",
+  "label": "Scotland",
+  "mode": "distance_strength",
+  "practice_count": 933,
+  "near_miles": 3.0,
+  "far_miles": 12.0,
+  "bbox": {
+    "min_lon": -7.962123,
+    "min_lat": 54.364812,
+    "max_lon": -0.406734,
+    "max_lat": 61.085403
+  },
+  "raster": {
+    "width": 1024,
+    "height": 1712,
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/distance-strength-bands.png"
+  },
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "color": "#a50026cc"
+    },
+    {
+      "label": "0-1",
+      "minimum": 1e-06,
+      "maximum": 1.0,
+      "color": "#f46d43bc"
+    },
+    {
+      "label": "1-2.5",
+      "minimum": 1.0,
+      "maximum": 2.5,
+      "color": "#fdae61b8"
+    },
+    {
+      "label": "2.5-5",
+      "minimum": 2.5,
+      "maximum": 5.0,
+      "color": "#fee08bb0"
+    },
+    {
+      "label": "5-10",
+      "minimum": 5.0,
+      "maximum": 10.0,
+      "color": "#a6d96ab8"
+    },
+    {
+      "label": "10+",
+      "minimum": 10.0,
+      "maximum": null,
+      "color": "#1a9641c0"
+    }
+  ],
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 8,
+    "tile_count": 85,
+    "template": "tiles/{z}/{x}/{y}.png"
+  },
+  "notes": [
+    "This layer is built from practice point distance strength, not published catchment polygons.",
+    "Each practice contributes full weight inside the near radius and linearly tapers to zero at the far radius.",
+    "Preview PNGs and tiles flood-fill the contiguous zero-value exterior from the raster edge and make only that outside area transparent.",
+    "Values approximate cumulative accessibility strength, not confirmed registration eligibility."
+  ]
+}

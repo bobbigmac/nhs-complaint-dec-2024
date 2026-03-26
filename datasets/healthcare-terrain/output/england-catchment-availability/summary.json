@@ -1,0 +1,173 @@
+{
+  "histogram": {
+    "0": 3268027,
+    "1": 289336,
+    "2": 442346,
+    "3": 322814,
+    "4": 226063,
+    "5": 149890,
+    "6": 97768,
+    "7": 60948,
+    "8": 36740,
+    "9": 26025,
+    "10": 18526,
+    "11": 13106,
+    "12": 10137,
+    "13": 7974,
+    "14": 6399,
+    "15": 5384,
+    "16": 4958,
+    "17": 3957,
+    "18": 3437,
+    "19": 3310,
+    "20": 2568,
+    "21": 2185,
+    "22": 1892,
+    "23": 1805,
+    "24": 1426,
+    "25": 1257,
+    "26": 994,
+    "27": 820,
+    "28": 646,
+    "29": 586,
+    "30": 520,
+    "31": 265,
+    "32": 210,
+    "33": 184,
+    "34": 161,
+    "35": 122,
+    "36": 142,
+    "37": 114,
+    "38": 118,
+    "39": 88,
+    "40": 63,
+    "41": 56,
+    "42": 42,
+    "43": 34,
+    "44": 23,
+    "45": 13,
+    "46": 9,
+    "47": 11,
+    "48": 3,
+    "49": 2
+  },
+  "max_overlap": 49,
+  "total_bbox_sq_km": 381548.431,
+  "covered_sq_km": 135354.229,
+  "coverage_ratio": 0.35475,
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0,
+      "maximum": 0,
+      "color": "#b2182bcc",
+      "pixel_count": 3268027,
+      "pixel_ratio": 0.651845,
+      "approx_sq_km": 246194.202
+    },
+    {
+      "label": "1-2",
+      "minimum": 1,
+      "maximum": 2,
+      "color": "#ef8a62bc",
+      "pixel_count": 731682,
+      "pixel_ratio": 0.145942,
+      "approx_sq_km": 56658.087
+    },
+    {
+      "label": "3-5",
+      "minimum": 3,
+      "maximum": 5,
+      "color": "#fddb7fb0",
+      "pixel_count": 698767,
+      "pixel_ratio": 0.139377,
+      "approx_sq_km": 54292.067
+    },
+    {
+      "label": "6-9",
+      "minimum": 6,
+      "maximum": 9,
+      "color": "#d1e58bb0",
+      "pixel_count": 221481,
+      "pixel_ratio": 0.044177,
+      "approx_sq_km": 17219.199
+    },
+    {
+      "label": "10-19",
+      "minimum": 10,
+      "maximum": 19,
+      "color": "#66bd63b8",
+      "pixel_count": 77188,
+      "pixel_ratio": 0.015396,
+      "approx_sq_km": 5921.897
+    },
+    {
+      "label": "20+",
+      "minimum": 20,
+      "maximum": null,
+      "color": "#1b7837c0",
+      "pixel_count": 16359,
+      "pixel_ratio": 0.003263,
+      "approx_sq_km": 1262.979
+    }
+  ],
+  "out_of_area_support": {
+    "positive_pixels": 0,
+    "positive_pixel_ratio": 0.0,
+    "approx_sq_km": 0.0,
+    "weighted_pixel_sum": 0.0
+  },
+  "exterior_mask": {
+    "masked_pixels": 3239668,
+    "masked_pixel_ratio": 0.646188,
+    "approx_sq_km": 244026.928
+  },
+  "source": {
+    "input_dir": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/catchments/.cache/gp-catchments-england/by_practice",
+    "file_count": 7652,
+    "polygon_parts": 20500,
+    "vertex_count": 519850,
+    "bbox": {
+      "min_lon": -6.63377,
+      "min_lat": 49.83171,
+      "max_lon": 1.78363,
+      "max_lat": 55.89334
+    },
+    "data_bbox": {
+      "min_lon": -6.61377,
+      "min_lat": 49.85171,
+      "max_lon": 1.76363,
+      "max_lat": 55.87334
+    },
+    "point_fallback_count": 66,
+    "point_fallback_radius_miles": 2.5,
+    "out_of_area_support_count": 0,
+    "out_of_area_support_near_miles": 0.0,
+    "out_of_area_support_far_miles": 0.0
+  },
+  "raster": {
+    "width": 2048,
+    "height": 2448,
+    "mercator_bbox": {
+      "min_x": 0.481572861,
+      "max_x": 0.504954528,
+      "min_y": 0.311922426,
+      "max_y": 0.339870763
+    },
+    "lonlat_bbox": {
+      "min_lon": -6.63377,
+      "min_lat": 49.83171,
+      "max_lon": 1.78363,
+      "max_lat": 55.89334
+    },
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/england-catchment-availability/availability-bands.png"
+  },
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/england-catchment-availability/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 9,
+    "tile_count": 308,
+    "template": "tiles/{z}/{x}/{y}.png"
+  }
+}

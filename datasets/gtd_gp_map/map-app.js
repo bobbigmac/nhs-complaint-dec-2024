@@ -15,6 +15,17 @@ const patientCountsByYear = embed.patientCountsByYear;
 const patientChangeAnalysis = embed.patientChangeAnalysis;
 const knownManagementCompanies = embed.knownManagementCompanies;
 const deprivationGeojson = embed.deprivationGeojson;
+const healthcareTerrainOverlays = Array.isArray(embed.healthcareTerrainOverlays)
+  ? embed.healthcareTerrainOverlays
+  : (embed.healthcareTerrainOverlay ? [embed.healthcareTerrainOverlay] : []);
+const TERRAIN_OVERLAY_ORDER = ['england_catchment', 'england_out_of_area', 'scotland', 'wales', 'northern_ireland'];
+const TERRAIN_OVERLAY_CONTROL_IDS = {
+  england_catchment: 'healthcare-terrain-england-catchment-toggle',
+  england_out_of_area: 'healthcare-terrain-england-out-of-area-toggle',
+  scotland: 'healthcare-terrain-scotland-toggle',
+  wales: 'healthcare-terrain-wales-toggle',
+  northern_ireland: 'healthcare-terrain-northern-ireland-toggle',
+};
 const practiceDeprivationLookup = embed.practiceDeprivationLookup;
 const allPracticeDeprivationLookup = embed.allPracticeDeprivationLookup;
 const rowsByCode = new Map(rows.map((row) => [row.code, row]));
@@ -22,8 +33,25 @@ const NEW_BANK_CODE = 'Y02960';
 const BASELINE_MANAGEMENT_COMPANY = 'GTD Healthcare';
 const TREND_DEFAULT_CONTEXT_CODE = '__gtd_mean_with_new_bank__';
 const LOCAL_RADIUS_MILES = 2.5;
+const COMPOSITE_REGION_RADIUS_MILES = Number(embed.compositeRegionRadiusMiles ?? 5.0);
 const SIDEBAR_COLLAPSE_KEY = 'mapSidebarCollapsed';
-const NATIONAL_SUPPLEMENTAL_MIN_ZOOM = 8;
+const LOW_ZOOM_MARKER_POOL_MAX_ZOOM = 10;
+const LOW_ZOOM_MARKER_POOL_BASE_PRACTICES = 50;
+const LOW_ZOOM_MARKER_POOL_CLOSE_ZOOM_PRACTICES = 100;
+const LOW_ZOOM_MARKER_POOL_MOVE_THRESHOLD_PX = 24;
+const LOW_ZOOM_MARKER_POOL_RERENDER_DELAY_MS = 70;
+const LOW_ZOOM_MARKER_POOL_MAX_AGE_MS = 16000;
+const selectedHealthcareTerrainOverlayIds = (() => {
+  const availableOverlayIds = new Set(
+    healthcareTerrainOverlays
+      .map((overlay) => String(overlay?.overlayId || overlay?.nation || '').trim().toLowerCase())
+      .filter(Boolean)
+  );
+  if (!availableOverlayIds.size) return new Set();
+  if (availableOverlayIds.has('england_catchment')) return new Set(['england_catchment']);
+  const firstAvailable = TERRAIN_OVERLAY_ORDER.find((overlayId) => availableOverlayIds.has(overlayId)) || Array.from(availableOverlayIds)[0];
+  return new Set(firstAvailable ? [firstAvailable] : []);
+})();
 const dataBbox = (() => {
   const lons = rows.map(r => Number(r.lon));
   const lats = rows.map(r => Number(r.lat));
@@ -44,8 +72,12 @@ const catchmentOutlineLayer = L.layerGroup().addTo(map);
 const serviceFinderPointLayer = L.layerGroup().addTo(map);
 let voronoiLayer = null;
 let deprivationLayer = null;
+let healthcareTerrainLayers = [];
 const nationalPane = map.createPane('nationalSupplementals');
 nationalPane.style.zIndex = '350';
+const healthcareTerrainPane = map.createPane('healthcareTerrain');
+healthcareTerrainPane.style.zIndex = '240';
+healthcareTerrainPane.style.pointerEvents = 'none';
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 18,
   attribution: '&copy; OpenStreetMap contributors'
@@ -54,7 +86,7 @@ const managementShapePool = ['triangle', 'square', 'diamond', 'hexagon', 'pentag
 const selectedManagementCompanies = new Set([BASELINE_MANAGEMENT_COMPANY]);
 let activeMetric = 'google';
 let activeGapMode = 'normalized';
-let activeAreaOverlay = null;
+let activeAreaOverlay = selectedHealthcareTerrainOverlayIds.size ? 'terrain' : null;
 let focusedPracticeCode = NEW_BANK_CODE;
 let pinnedTrendPracticeCode = TREND_DEFAULT_CONTEXT_CODE;
 let hoveredTrendPracticeCode = null;
@@ -119,6 +151,11 @@ let showCityCircles = true;
 let sampleCircleArmed = false;
 let sampleCircleRadiusMiles = 6;
 let sampleCircleCenter = null;
+let lowZoomMarkerInterestLatLng = null;
+let lowZoomMarkerInterestUpdatedAt = 0;
+let lowZoomMarkerInterestRerenderTimer = null;
+let lowZoomMarkerNearestPracticeCacheKey = '';
+let lowZoomMarkerNearestPracticeCache = null;
 const GTD_MEAN_COLOR = '#b23322';
 
 const metricConfigs = {
@@ -455,12 +492,27 @@ function patientScaleForRow(row) {
   return 0.5 + (normalized ** 0.7) * 0.7;
 }
 
-function mapScaleForRow(row) {
-  return patientScaleForRow(row);
-}
-
-function nationalMapScaleForRow(row) {
-  return Math.max(0.52, patientScaleForRow(row) * 0.82);
+function markerPresentationForZoom() {
+  const zoom = map.getZoom();
+  if (zoom <= 6) {
+    return { scaleMultiplier: 0.26, showLabel: false, simplifiedShape: true, shadowMode: 'none' };
+  }
+  if (zoom === 7) {
+    return { scaleMultiplier: 0.34, showLabel: false, simplifiedShape: true, shadowMode: 'none' };
+  }
+  if (zoom === 8) {
+    return { scaleMultiplier: 0.46, showLabel: false, simplifiedShape: true, shadowMode: 'none' };
+  }
+  if (zoom === 9) {
+    return { scaleMultiplier: 0.68, showLabel: true, simplifiedShape: true, shadowMode: 'none' };
+  }
+  if (zoom === 10) {
+    return { scaleMultiplier: 0.86, showLabel: true, simplifiedShape: true, shadowMode: 'none' };
+  }
+  if (zoom === 11) {
+    return { scaleMultiplier: 1, showLabel: true, simplifiedShape: false, shadowMode: 'light' };
+  }
+  return { scaleMultiplier: 1, showLabel: true, simplifiedShape: false, shadowMode: 'full' };
 }
 
 function mapRowsForOverlays() {
@@ -485,54 +537,60 @@ function baseShapeMetrics(shape) {
   return { width: 34, height: 34, anchorX: 17, anchorY: 17, popupY: -14 };
 }
 
-function markerSvg(shape, color, label, fontSize, missing, highlighted = false) {
+function markerSvg(shape, color, label, fontSize, missing, highlighted = false, options = {}) {
+  const showLabel = options.showLabel !== false;
+  const shadowMode = options.shadowMode || 'full';
+  const svgClass = `marker-svg marker-svg--shadow-${shadowMode}`;
   const stroke = highlighted ? '#111111' : 'rgba(0,0,0,0.28)';
   const strokeWidth = highlighted ? '2.8' : '1.2';
   const textColor = missing ? '#f4f4f4' : '#ffffff';
+  const textMarkup = (x, y) => showLabel
+    ? `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>`
+    : '';
   if (shape === 'triangle') {
     return `
-      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 42 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="${svgClass}" width="100%" height="100%" viewBox="0 0 42 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="21,1 41,35 1,35" fill="${color}" stroke="${stroke}" stroke-width="${strokeWidth}" />
-        <text x="21" y="24" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>
+        ${textMarkup(21, 24)}
       </svg>
     `;
   }
   if (shape === 'square') {
     return `
-      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="${svgClass}" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect x="1" y="1" width="32" height="32" fill="${color}" stroke="${stroke}" stroke-width="${strokeWidth}" />
-        <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>
+        ${textMarkup(17, 18)}
       </svg>
     `;
   }
   if (shape === 'diamond') {
     return `
-      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="${svgClass}" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="17,1 33,17 17,33 1,17" fill="${color}" stroke="${stroke}" stroke-width="${strokeWidth}" />
-        <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>
+        ${textMarkup(17, 18)}
       </svg>
     `;
   }
   if (shape === 'hexagon') {
     return `
-      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 38 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="${svgClass}" width="100%" height="100%" viewBox="0 0 38 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="10,1 28,1 37,17 28,33 10,33 1,17" fill="${color}" stroke="${stroke}" stroke-width="${strokeWidth}" />
-        <text x="19" y="18" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>
+        ${textMarkup(19, 18)}
       </svg>
     `;
   }
   if (shape === 'pentagon') {
     return `
-      <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 38 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="${svgClass}" width="100%" height="100%" viewBox="0 0 38 36" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <polygon points="19,1 37,14 31,35 7,35 1,14" fill="${color}" stroke="${stroke}" stroke-width="${strokeWidth}" />
-        <text x="19" y="20" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>
+        ${textMarkup(19, 20)}
       </svg>
     `;
   }
   return `
-    <svg class="marker-svg" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <svg class="${svgClass}" width="100%" height="100%" viewBox="0 0 34 34" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle cx="17" cy="17" r="16" fill="${color}" stroke="${stroke}" stroke-width="${strokeWidth}" />
-      <text x="17" y="18" text-anchor="middle" dominant-baseline="middle" fill="${textColor}" font-size="${fontSize}" font-weight="700" font-family="ui-sans-serif, system-ui, sans-serif">${label}</text>
+      ${textMarkup(17, 18)}
     </svg>
   `;
 }
@@ -573,24 +631,89 @@ function clearOverlayLayers() {
     map.removeLayer(deprivationLayer);
     deprivationLayer = null;
   }
+  healthcareTerrainLayers.forEach((layer) => {
+    if (layer) map.removeLayer(layer);
+  });
+  healthcareTerrainLayers = [];
+}
+
+function availableHealthcareTerrainOverlays() {
+  return healthcareTerrainOverlays
+    .filter((overlay) => overlay && overlay.tileUrl)
+    .sort((left, right) => {
+      const leftId = String(left?.overlayId || left?.nation || '').trim().toLowerCase();
+      const rightId = String(right?.overlayId || right?.nation || '').trim().toLowerCase();
+      return TERRAIN_OVERLAY_ORDER.indexOf(leftId) - TERRAIN_OVERLAY_ORDER.indexOf(rightId);
+    });
+}
+
+function selectedHealthcareTerrainOverlays() {
+  return availableHealthcareTerrainOverlays().filter((overlay) => selectedHealthcareTerrainOverlayIds.has(String(overlay?.overlayId || overlay?.nation || '').trim().toLowerCase()));
+}
+
+function fallbackAreaOverlay() {
+  return selectedHealthcareTerrainOverlays().length ? 'terrain' : null;
+}
+
+function healthcareTerrainSummaryText(overlays = selectedHealthcareTerrainOverlays()) {
+  if (!overlays.length) return '';
+  const englandCatchment = overlays.find((overlay) => String(overlay?.overlayId || '') === 'england_catchment');
+  const englandOutOfArea = overlays.find((overlay) => String(overlay?.overlayId || '') === 'england_out_of_area');
+  const distanceNations = overlays
+    .filter((overlay) => overlay.mode === 'distance_strength' && String(overlay?.overlayId || '') !== 'england_out_of_area')
+    .map((overlay) => overlay.label.replace(/\s+distance terrain$/i, ''))
+    .filter(Boolean);
+  if (englandCatchment && englandOutOfArea && distanceNations.length) {
+    return `England catchments show published hard boundaries. England out-of-area adds soft halos for practices logged as accepting out-of-area registrations. ${distanceNations.join(', ')} use softer distance-strength tiles around practice locations instead of hard boundaries.`;
+  }
+  if (englandCatchment && englandOutOfArea) {
+    return 'England catchments show published hard boundaries, while England out-of-area adds soft halos for practices logged as accepting out-of-area registrations.';
+  }
+  if (englandCatchment && distanceNations.length) {
+    return `England uses published catchment-overlap tiles. ${distanceNations.join(', ')} use softer distance-strength tiles around practice locations instead of hard boundaries.`;
+  }
+  if (englandCatchment) return 'England uses published catchment-overlap tiles based on actual practice polygons.';
+  if (englandOutOfArea) return 'England out-of-area shows soft distance halos around practices logged as accepting out-of-area registrations.';
+  return 'This terrain uses distance-strength tiles around practice locations rather than hard catchment boundaries.';
 }
 
 function updateAreaOverlayControls() {
   const populationChecked = activeAreaOverlay === 'population';
   const deprivationChecked = activeAreaOverlay === 'deprivation';
+  const terrainAvailable = availableHealthcareTerrainOverlays().length > 0;
+  const selectedTerrainOverlays = selectedHealthcareTerrainOverlays();
+  const terrainChecked = terrainAvailable && activeAreaOverlay === 'terrain' && selectedTerrainOverlays.length > 0;
   const populationToggle = document.getElementById('voronoi-toggle');
   const deprivationToggle = document.getElementById('deprivation-toggle');
+  const availableTerrainOverlayIds = new Set(availableHealthcareTerrainOverlays().map((overlay) => String(overlay?.overlayId || overlay?.nation || '').trim().toLowerCase()));
   const tip = document.getElementById('area-overlay-tip');
   populationToggle.checked = populationChecked;
   deprivationToggle.checked = deprivationChecked;
   document.getElementById('population-overlay-control').classList.toggle('is-active', populationChecked);
   document.getElementById('deprivation-overlay-control').classList.toggle('is-active', deprivationChecked);
+  const terrainControl = document.getElementById('healthcare-terrain-overlay-control');
+  terrainControl.classList.toggle('is-disabled', !terrainAvailable);
+  TERRAIN_OVERLAY_ORDER.forEach((overlayId) => {
+    const toggle = document.getElementById(TERRAIN_OVERLAY_CONTROL_IDS[overlayId]);
+    const control = document.getElementById(`${TERRAIN_OVERLAY_CONTROL_IDS[overlayId].replace(/-toggle$/, '-control')}`);
+    if (!toggle || !control) return;
+    const available = availableTerrainOverlayIds.has(overlayId);
+    toggle.checked = available && selectedHealthcareTerrainOverlayIds.has(overlayId);
+    toggle.disabled = !available;
+    control.classList.toggle('is-active', terrainChecked && toggle.checked);
+    control.classList.toggle('is-disabled', !available);
+  });
   if (populationChecked) {
     tip.textContent = 'Approximate catchment cells built from practice locations and coloured by the active score metric. This is a rough vibes layer, not a real practice-boundary map.';
   } else if (deprivationChecked) {
     tip.textContent = 'Official 2025 IMD deciles for the current map catchment, shown by small-area LSOA polygon. This is area deprivation, not a practice-performance score.';
-  } else {
+  } else if (terrainChecked) {
+    const selectedLabels = selectedTerrainOverlays.map((overlay) => overlay.label.replace(/\s+(distance terrain|catchment terrain)$/i, '')).join(', ');
+    tip.textContent = `${healthcareTerrainSummaryText(selectedTerrainOverlays)} Showing ${selectedLabels}.`;
+  } else if (!terrainAvailable) {
     tip.textContent = '';
+  } else {
+    tip.textContent = 'Select one or more terrain layers to show the raster overlay. England catchments starts on by default; England out-of-area and the devolved-nation layers are available separately.';
   }
 }
 
@@ -742,6 +865,25 @@ function renderDeprivation() {
   });
   deprivationLayer.addTo(map);
   deprivationLayer.bringToBack();
+}
+
+function renderHealthcareTerrain() {
+  healthcareTerrainLayers = selectedHealthcareTerrainOverlays().map((overlay) => {
+    const layer = L.tileLayer(overlay.tileUrl, {
+      pane: 'healthcareTerrain',
+      bounds: overlay.bounds,
+      noWrap: true,
+      opacity: overlay.opacity ?? 0.58,
+      tileSize: overlay.tileSize ?? 256,
+      minZoom: overlay.minZoom ?? 0,
+      maxNativeZoom: overlay.maxNativeZoom ?? 9,
+      maxZoom: 18,
+      attribution: 'NHS GP terrain overlays'
+    });
+    layer.addTo(map);
+    return layer;
+  });
+  healthcareTerrainLayers.forEach((layer) => layer.bringToFront());
 }
 
 function renderManagementList() {
@@ -1269,7 +1411,7 @@ function ensureCatchmentBundlesForBounds(bounds) {
 function preloadManchesterCatchments() {
   window.setTimeout(() => {
     loadManchesterCatchmentIndex().then(() => {
-      const preloadPromise = map.getZoom() >= NATIONAL_SUPPLEMENTAL_MIN_ZOOM
+      const preloadPromise = shouldPreloadVisibleCatchmentBundles()
         ? ensureCatchmentBundlesForBounds(map.getBounds().pad(0.08))
         : Promise.resolve([]);
       preloadPromise.then(() => {
@@ -2299,13 +2441,15 @@ function renderMarkers() {
   markerLayer.clearLayers();
   const assignments = shapeAssignment();
   const metric = metricConfigs[activeMetric];
+  const markerPresentation = markerPresentationForZoom();
   const centroidByCode = activeAreaOverlay === 'population' ? voronoiCentroidByCode() : null;
+  const visibleLocalRows = rowsVisibleForCurrentMap(rows, { requireBoundsAtHighZoom: false }).rows;
   const serviceFinderMatchedCodes = new Set(
     serviceFinderPoint && manchesterCatchmentIndex
       ? Array.from(serviceFinderMatchedCodeSet)
       : []
   );
-  for (const row of rows) {
+  for (const row of visibleLocalRows) {
     const metricValue = metric.value(row);
     if (metricValue === null && activeMetric === 'google') {
       continue;
@@ -2319,18 +2463,24 @@ function renderMarkers() {
     const color = metric.markerColor(row);
     const label = metric.markerLabel(row);
     const shapeName = assignments.get(row.management_company) || 'circle';
-    const scale = mapScaleForRow(row);
-    const metrics = baseShapeMetrics(shapeName);
-    const fontSize = Math.max(9, Math.min(13, Math.round(10 + scale * 2)));
+    const renderedShape = markerPresentation.simplifiedShape ? 'circle' : shapeName;
+    const scale = markerPresentation.scaleMultiplier;
+    const metrics = baseShapeMetrics(renderedShape);
+    const fontSize = markerPresentation.showLabel
+      ? Math.max(8, Math.min(13, Math.round(9 + scale * 4)))
+      : 0;
     const baseZIndex = assignments.has(row.management_company) ? 1000 : 0;
     const scaledWidth = Math.round(metrics.width * scale);
     const scaledHeight = Math.round(metrics.height * scale);
     const icon = L.divIcon({
       className: 'marker-icon',
-      html: markerSvg(shapeName, color, label, fontSize, label === '?', serviceFinderMatchedCodes.has(row.code)),
+      html: markerSvg(renderedShape, color, label, fontSize, label === '?', serviceFinderMatchedCodes.has(row.code), {
+        showLabel: markerPresentation.showLabel,
+        shadowMode: markerPresentation.shadowMode,
+      }),
       iconSize: [scaledWidth, scaledHeight],
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
-      popupAnchor: [0, metrics.popupY]
+      popupAnchor: [0, Math.round(metrics.popupY * Math.max(scale, 0.75))]
     });
     const pos = centroidByCode && centroidByCode.has(row.code) ? centroidByCode.get(row.code) : [row.lat, row.lon];
     const marker = L.marker(pos, { icon, zIndexOffset: baseZIndex });
@@ -2354,6 +2504,7 @@ function renderMarkers() {
 function renderNationalSupplementals() {
   nationalMarkerLayer.clearLayers();
   const note = document.getElementById('national-supplemental-note');
+  const markerPresentation = markerPresentationForZoom();
   const notePrefix = (() => {
     if (!note) return '';
     const totalPatients = Number(note.dataset.totalPatients || 0).toLocaleString('en-GB');
@@ -2364,16 +2515,9 @@ function renderNationalSupplementals() {
     if (note) note.textContent = '🏴 National: no supplementals built yet';
     return;
   }
-  if (map.getZoom() < NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {
-    if (note) {
-      note.textContent = `${notePrefix} · zoom to ${NATIONAL_SUPPLEMENTAL_MIN_ZOOM}+ to show markers`;
-    }
-    return;
-  }
-
-  const bounds = map.getBounds().pad(0.04);
   const metric = metricConfigs[activeMetric];
-  const visibleRows = nationalSupplementals.filter((row) => bounds.contains([Number(row.lat), Number(row.lon)]));
+  const visibleResult = rowsVisibleForCurrentMap(nationalSupplementals, { requireBoundsAtHighZoom: true });
+  const visibleRows = visibleResult.rows;
   const serviceFinderMatchedCodes = new Set(
     serviceFinderPoint && manchesterCatchmentIndex
       ? Array.from(serviceFinderMatchedCodeSet)
@@ -2392,17 +2536,22 @@ function renderNationalSupplementals() {
     }
     const color = metric.markerColor(row);
     const label = metric.markerLabel(row);
-    const scale = nationalMapScaleForRow(row);
+    const scale = markerPresentation.scaleMultiplier;
     const metrics = baseShapeMetrics('circle');
-    const fontSize = Math.max(8, Math.min(11, Math.round(9 + scale * 2)));
+    const fontSize = markerPresentation.showLabel
+      ? Math.max(8, Math.min(12, Math.round(8 + scale * 4)))
+      : 0;
     const scaledWidth = Math.round(metrics.width * scale);
     const scaledHeight = Math.round(metrics.height * scale);
     const icon = L.divIcon({
       className: 'marker-icon marker-icon-national',
-      html: markerSvg('circle', color, label, fontSize, label === '?', serviceFinderMatchedCodes.has(row.code)),
+      html: markerSvg('circle', color, label, fontSize, label === '?', serviceFinderMatchedCodes.has(row.code), {
+        showLabel: markerPresentation.showLabel,
+        shadowMode: markerPresentation.shadowMode,
+      }),
       iconSize: [scaledWidth, scaledHeight],
       iconAnchor: [Math.round(metrics.anchorX * scale), Math.round(metrics.anchorY * scale)],
-      popupAnchor: [0, metrics.popupY]
+      popupAnchor: [0, Math.round(metrics.popupY * Math.max(scale, 0.75))]
     });
     const marker = L.marker([row.lat, row.lon], {
       pane: 'nationalSupplementals',
@@ -2426,7 +2575,11 @@ function renderNationalSupplementals() {
 
   if (note) {
     const visibleText = `${visibleRows.length.toLocaleString('en-GB')} visible`;
-    note.textContent = `${notePrefix} · ${visibleText}`;
+    if (visibleResult.mode === 'interest' && Number.isFinite(visibleResult.practiceCount)) {
+      note.textContent = `${notePrefix} · ${visibleText} from nearest ${visibleResult.practiceCount.toLocaleString('en-GB')} to current focus`;
+    } else {
+      note.textContent = `${notePrefix} · ${visibleText}`;
+    }
   }
 }
 
@@ -2710,6 +2863,151 @@ const regionSurveySortedValues = allKnownRows
   .sort((left, right) => left - right);
 const globalGoogleAverage = mean(regionGoogleSortedValues);
 const globalSurveyAverage = mean(regionSurveySortedValues);
+
+function lowZoomMarkerPoolActive() {
+  return map.getZoom() <= LOW_ZOOM_MARKER_POOL_MAX_ZOOM;
+}
+
+function lowZoomMarkerPoolPracticeLimit() {
+  return map.getZoom() >= LOW_ZOOM_MARKER_POOL_MAX_ZOOM
+    ? LOW_ZOOM_MARKER_POOL_CLOSE_ZOOM_PRACTICES
+    : LOW_ZOOM_MARKER_POOL_BASE_PRACTICES;
+}
+
+function shouldPreloadVisibleCatchmentBundles() {
+  return map.getZoom() >= MANCHESTER_CATCHMENT_MIN_ZOOM;
+}
+
+function validPracticeLatLng(row) {
+  const lat = Number(row?.lat);
+  const lon = Number(row?.lon);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  return { lat, lon };
+}
+
+function focusedPracticeLatLng() {
+  const focused = allKnownRowsByCode.get(String(focusedPracticeCode || '').trim());
+  return focused ? validPracticeLatLng(focused) : null;
+}
+
+function fallbackLowZoomMarkerInterestLatLng() {
+  const homePoint = validPracticeLatLng(serviceFinderPoint);
+  if (homePoint) return homePoint;
+  const extraPoint = validPracticeLatLng(serviceFinderExtraPoint);
+  if (extraPoint) return extraPoint;
+  const samplePoint = validPracticeLatLng(sampleCircleCenter);
+  if (samplePoint) return samplePoint;
+  const focusedPoint = focusedPracticeLatLng();
+  if (focusedPoint) return focusedPoint;
+  const center = map.getCenter();
+  return center ? { lat: Number(center.lat), lon: Number(center.lng) } : null;
+}
+
+function currentLowZoomMarkerInterestLatLng() {
+  const now = Date.now();
+  if (
+    lowZoomMarkerInterestLatLng &&
+    Number.isFinite(lowZoomMarkerInterestLatLng.lat) &&
+    Number.isFinite(lowZoomMarkerInterestLatLng.lon) &&
+    (now - lowZoomMarkerInterestUpdatedAt) <= LOW_ZOOM_MARKER_POOL_MAX_AGE_MS
+  ) {
+    return lowZoomMarkerInterestLatLng;
+  }
+  return fallbackLowZoomMarkerInterestLatLng();
+}
+
+function lowZoomMarkerContext() {
+  if (!lowZoomMarkerPoolActive()) return null;
+  const interestPoint = currentLowZoomMarkerInterestLatLng();
+  if (!interestPoint) return null;
+  const practiceLimit = lowZoomMarkerPoolPracticeLimit();
+  const cacheKey = `${map.getZoom()}:${practiceLimit}:${interestPoint.lat.toFixed(5)},${interestPoint.lon.toFixed(5)}`;
+  if (lowZoomMarkerNearestPracticeCache && lowZoomMarkerNearestPracticeCacheKey === cacheKey) {
+    return lowZoomMarkerNearestPracticeCache;
+  }
+  const nearest = Array.from(allKnownRowsByCode.values())
+    .map((row) => {
+      const point = validPracticeLatLng(row);
+      const code = String(row?.code || '').trim();
+      if (!point || !code) return null;
+      return {
+        code,
+        distance: distanceMiles(interestPoint.lat, interestPoint.lon, point.lat, point.lon),
+      };
+    })
+    .filter(Boolean)
+    .sort((left, right) => left.distance - right.distance || left.code.localeCompare(right.code, 'en'))
+    .slice(0, practiceLimit);
+  const context = {
+    interestPoint,
+    practiceCount: nearest.length,
+    codeSet: new Set(nearest.map((entry) => entry.code)),
+  };
+  lowZoomMarkerNearestPracticeCacheKey = cacheKey;
+  lowZoomMarkerNearestPracticeCache = context;
+  return context;
+}
+
+function rowsVisibleForCurrentMap(rowsToFilter, options = {}) {
+  const requireBoundsAtHighZoom = options.requireBoundsAtHighZoom !== false;
+  const validRows = rowsToFilter.filter((row) => validPracticeLatLng(row));
+  const lowZoomContext = lowZoomMarkerContext();
+  if (lowZoomContext) {
+    return {
+      rows: validRows.filter((row) => lowZoomContext.codeSet.has(String(row?.code || '').trim())),
+      mode: 'interest',
+      practiceCount: lowZoomContext.practiceCount,
+      interestPoint: lowZoomContext.interestPoint,
+    };
+  }
+  if (!requireBoundsAtHighZoom) {
+    return {
+      rows: validRows,
+      mode: 'all',
+      practiceCount: null,
+      interestPoint: null,
+    };
+  }
+  const bounds = map.getBounds().pad(0.04);
+  return {
+    rows: validRows.filter((row) => {
+      const point = validPracticeLatLng(row);
+      return point ? bounds.contains([point.lat, point.lon]) : false;
+    }),
+    mode: 'bounds',
+    practiceCount: null,
+    interestPoint: null,
+  };
+}
+
+function scheduleLowZoomMarkerPoolRerender() {
+  if (!lowZoomMarkerPoolActive()) return;
+  if (lowZoomMarkerInterestRerenderTimer) return;
+  lowZoomMarkerInterestRerenderTimer = window.setTimeout(() => {
+    lowZoomMarkerInterestRerenderTimer = null;
+    renderMarkers();
+    renderNationalSupplementals();
+  }, LOW_ZOOM_MARKER_POOL_RERENDER_DELAY_MS);
+}
+
+function updateLowZoomMarkerInterest(latlng) {
+  if (!latlng) return;
+  const lat = Number(latlng.lat);
+  const lon = Number(latlng.lng);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+  const nextPoint = { lat, lon };
+  if (lowZoomMarkerInterestLatLng) {
+    const previousContainerPoint = map.latLngToContainerPoint([lowZoomMarkerInterestLatLng.lat, lowZoomMarkerInterestLatLng.lon]);
+    const nextContainerPoint = map.latLngToContainerPoint([nextPoint.lat, nextPoint.lon]);
+    if (Math.hypot(nextContainerPoint.x - previousContainerPoint.x, nextContainerPoint.y - previousContainerPoint.y) < LOW_ZOOM_MARKER_POOL_MOVE_THRESHOLD_PX) {
+      lowZoomMarkerInterestUpdatedAt = Date.now();
+      return;
+    }
+  }
+  lowZoomMarkerInterestLatLng = nextPoint;
+  lowZoomMarkerInterestUpdatedAt = Date.now();
+  scheduleLowZoomMarkerPoolRerender();
+}
 
 function positivePatientCount(row) {
   const patients = numericOrNull(row?.registered_patient_count);
@@ -3019,7 +3317,7 @@ function renderPlaceBenchmarks() {
 
   nationGrid.innerHTML = nationCards || '<p class="hint">No nation summaries are available yet.</p>';
   cityGrid.innerHTML = (sampleCard + cityCards) || '<p class="hint">No city-circle summaries are available yet.</p>';
-  note.innerHTML = `${allKnownRows.length.toLocaleString('en-GB')} practices · ${totalKnownGoogleReviews.toLocaleString('en-GB')} Google reviews loaded overall.${sampleRows.length ? ` Custom sample: ${sampleRows.length.toLocaleString('en-GB')} practices.` : ''} Sparse/dense composites use bottom/top fifths by nearby-practice count within ${Number({COMPOSITE_REGION_RADIUS_MILES}).toFixed(Number({COMPOSITE_REGION_RADIUS_MILES}) % 1 === 0 ? 0 : 1)} miles, leaving the middle three-fifths neutral. List-size composites are separate: they use bottom/top fifths by registered patient count per practice, not local area population density, and rows without a patient count are excluded. <span class="hint">Footnote: Wales and Northern Ireland do not currently have comparable national practice-level survey feeds here. Some Welsh practices appear to publish local survey results, but there is no standardized national dashboard, and forcing those into the same pool would be easy to misread, especially given the limits of England's own standard survey.</span>`;
+  note.innerHTML = `${allKnownRows.length.toLocaleString('en-GB')} practices · ${totalKnownGoogleReviews.toLocaleString('en-GB')} Google reviews loaded overall.${sampleRows.length ? ` Custom sample: ${sampleRows.length.toLocaleString('en-GB')} practices.` : ''} Sparse/dense composites use bottom/top fifths by nearby-practice count within ${COMPOSITE_REGION_RADIUS_MILES.toFixed(COMPOSITE_REGION_RADIUS_MILES % 1 === 0 ? 0 : 1)} miles, leaving the middle three-fifths neutral. List-size composites are separate: they use bottom/top fifths by registered patient count per practice, not local area population density, and rows without a patient count are excluded. <span class="hint">Footnote: Wales and Northern Ireland do not currently have comparable national practice-level survey feeds here. Some Welsh practices appear to publish local survey results, but there is no standardized national dashboard, and forcing those into the same pool would be easy to misread, especially given the limits of England's own standard survey.</span>`;
 }
 
 function metricValues(rowsSubset, metricName, extractor = null) {
@@ -5476,6 +5774,8 @@ function rerenderAll() {
     renderVoronoi();
   } else if (activeAreaOverlay === 'deprivation') {
     renderDeprivation();
+  } else if (activeAreaOverlay === 'terrain') {
+    renderHealthcareTerrain();
   }
   renderGtdScoreTrendChart();
   renderScatterplot();
@@ -5528,13 +5828,35 @@ document.querySelectorAll('input[name="rating-survey-mode"]').forEach((input) =>
 });
 
 document.getElementById('voronoi-toggle').addEventListener('change', (event) => {
-  activeAreaOverlay = event.target.checked ? 'population' : null;
+  activeAreaOverlay = event.target.checked ? 'population' : fallbackAreaOverlay();
   rerenderAll();
 });
 
 document.getElementById('deprivation-toggle').addEventListener('change', (event) => {
-  activeAreaOverlay = event.target.checked ? 'deprivation' : null;
+  activeAreaOverlay = event.target.checked ? 'deprivation' : fallbackAreaOverlay();
   rerenderAll();
+});
+
+TERRAIN_OVERLAY_ORDER.forEach((overlayId) => {
+  const toggle = document.getElementById(TERRAIN_OVERLAY_CONTROL_IDS[overlayId]);
+  if (!toggle) return;
+  toggle.addEventListener('change', (event) => {
+    const available = availableHealthcareTerrainOverlays().some((overlay) => String(overlay?.overlayId || overlay?.nation || '').trim().toLowerCase() === overlayId);
+    if (!available) {
+      event.target.checked = false;
+      return;
+    }
+    if (event.target.checked) {
+      selectedHealthcareTerrainOverlayIds.add(overlayId);
+      activeAreaOverlay = 'terrain';
+    } else {
+      selectedHealthcareTerrainOverlayIds.delete(overlayId);
+      if (activeAreaOverlay === 'terrain' && !selectedHealthcareTerrainOverlays().length) {
+        activeAreaOverlay = null;
+      }
+    }
+    rerenderAll();
+  });
 });
 
 let resizeTimer = null;
@@ -5867,7 +6189,8 @@ document.getElementById('legend-collapse').addEventListener('click', () => {
 });
 
 map.on('moveend', () => {
-  if (map.getZoom() >= NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {
+  renderMarkers();
+  if (shouldPreloadVisibleCatchmentBundles()) {
     ensureCatchmentBundlesForBounds(map.getBounds().pad(0.08)).then(() => {
       renderMarkers();
       renderNationalSupplementals();
@@ -5887,7 +6210,9 @@ map.on('moveend', () => {
 });
 
 map.on('zoomend', () => {
-  if (map.getZoom() >= NATIONAL_SUPPLEMENTAL_MIN_ZOOM) {
+  renderMarkers();
+  renderNationalSupplementals();
+  if (shouldPreloadVisibleCatchmentBundles()) {
     ensureCatchmentBundlesForBounds(map.getBounds().pad(0.08)).then(() => {
       renderMarkers();
       renderNationalSupplementals();
@@ -5898,7 +6223,22 @@ map.on('zoomend', () => {
   updateHoveredCatchmentOutline();
 });
 
+map.on('mousemove', (event) => {
+  updateLowZoomMarkerInterest(event.latlng);
+});
+
+map.on('touchstart', (event) => {
+  const latlng = event.latlng || event?.originalEvent?.latlng;
+  if (latlng) updateLowZoomMarkerInterest(latlng);
+});
+
+map.on('touchmove', (event) => {
+  const latlng = event.latlng || event?.originalEvent?.latlng;
+  if (latlng) updateLowZoomMarkerInterest(latlng);
+});
+
 map.on('click', (event) => {
+  updateLowZoomMarkerInterest(event.latlng);
   if (serviceFinderArmed) {
     setServiceFinderPoint(event.latlng.lat, event.latlng.lng, 'Dropped pin');
     return;

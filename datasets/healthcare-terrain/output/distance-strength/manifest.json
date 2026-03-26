@@ -1,0 +1,60 @@
+{
+  "nations": [
+    {
+      "nation": "england_out_of_area",
+      "slug": "england_out_of_area",
+      "overlay_nation": "england",
+      "label": "England out-of-area",
+      "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area",
+      "summary_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/summary.json",
+      "metadata_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/metadata.json",
+      "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/distance-strength-bands.png",
+      "practice_count": 160,
+      "max_strength": 87.1275,
+      "width": 1024,
+      "height": 1052
+    },
+    {
+      "nation": "scotland",
+      "slug": "scotland",
+      "overlay_nation": "scotland",
+      "label": "Scotland",
+      "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland",
+      "summary_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/summary.json",
+      "metadata_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/metadata.json",
+      "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/distance-strength-bands.png",
+      "practice_count": 933,
+      "max_strength": 195.2109,
+      "width": 1024,
+      "height": 1712
+    },
+    {
+      "nation": "wales",
+      "slug": "wales",
+      "overlay_nation": "wales",
+      "label": "Wales",
+      "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/wales",
+      "summary_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/wales/summary.json",
+      "metadata_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/wales/metadata.json",
+      "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/wales/distance-strength-bands.png",
+      "practice_count": 362,
+      "max_strength": 53.5063,
+      "width": 1024,
+      "height": 1283
+    },
+    {
+      "nation": "northern_ireland",
+      "slug": "northern_ireland",
+      "overlay_nation": "northern_ireland",
+      "label": "Northern Ireland",
+      "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/northern_ireland",
+      "summary_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/northern_ireland/summary.json",
+      "metadata_json": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/northern_ireland/metadata.json",
+      "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/northern_ireland/distance-strength-bands.png",
+      "practice_count": 266,
+      "max_strength": 82.2463,
+      "width": 1024,
+      "height": 902
+    }
+  ]
+}

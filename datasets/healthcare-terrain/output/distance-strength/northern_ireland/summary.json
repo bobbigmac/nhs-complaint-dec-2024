@@ -1,0 +1,127 @@
+{
+  "max_strength": 82.2463,
+  "positive_pixels": 422761,
+  "positive_pixel_ratio": 0.457708,
+  "total_bbox_sq_km": 41172.034,
+  "positive_sq_km": 18864.059,
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "color": "#a50026cc"
+    },
+    {
+      "label": "0-1",
+      "minimum": 1e-06,
+      "maximum": 1.0,
+      "color": "#f46d43bc"
+    },
+    {
+      "label": "1-2.5",
+      "minimum": 1.0,
+      "maximum": 2.5,
+      "color": "#fdae61b8"
+    },
+    {
+      "label": "2.5-5",
+      "minimum": 2.5,
+      "maximum": 5.0,
+      "color": "#fee08bb0"
+    },
+    {
+      "label": "5-10",
+      "minimum": 5.0,
+      "maximum": 10.0,
+      "color": "#a6d96ab8"
+    },
+    {
+      "label": "10+",
+      "minimum": 10.0,
+      "maximum": null,
+      "color": "#1a9641c0"
+    }
+  ],
+  "top_integer_bins": [
+    {
+      "strength_floor": 0,
+      "pixel_count": 612153
+    },
+    {
+      "strength_floor": 1,
+      "pixel_count": 68318
+    },
+    {
+      "strength_floor": 2,
+      "pixel_count": 40528
+    },
+    {
+      "strength_floor": 3,
+      "pixel_count": 32961
+    },
+    {
+      "strength_floor": 5,
+      "pixel_count": 31193
+    },
+    {
+      "strength_floor": 4,
+      "pixel_count": 31139
+    },
+    {
+      "strength_floor": 6,
+      "pixel_count": 24857
+    },
+    {
+      "strength_floor": 7,
+      "pixel_count": 16321
+    },
+    {
+      "strength_floor": 8,
+      "pixel_count": 11827
+    },
+    {
+      "strength_floor": 9,
+      "pixel_count": 10249
+    },
+    {
+      "strength_floor": 10,
+      "pixel_count": 7805
+    },
+    {
+      "strength_floor": 11,
+      "pixel_count": 5753
+    }
+  ],
+  "exterior_mask": {
+    "masked_pixels": 497270,
+    "masked_pixel_ratio": 0.538376,
+    "approx_sq_km": 22148.067
+  },
+  "nation": "northern_ireland",
+  "overlay_id": "northern_ireland",
+  "overlay_nation": "northern_ireland",
+  "label": "Northern Ireland",
+  "mode": "distance_strength",
+  "practice_count": 266,
+  "near_miles": 3.0,
+  "far_miles": 10.0,
+  "bbox": {
+    "min_lon": -8.495131,
+    "min_lat": 53.765293,
+    "max_lon": -5.135992,
+    "max_lat": 55.477508
+  },
+  "raster": {
+    "width": 1024,
+    "height": 902,
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/northern_ireland/distance-strength-bands.png"
+  },
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/northern_ireland/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 8,
+    "tile_count": 22,
+    "template": "tiles/{z}/{x}/{y}.png"
+  }
+}

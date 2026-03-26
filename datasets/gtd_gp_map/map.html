@@ -43,6 +43,16 @@
         <div id="area-overlay-control">
           <label id="population-overlay-control" class="overlay-toggle-label" title="An estimated population / affected-people view. This is a rough catchment proxy, not a real practice boundary map."><input type="checkbox" id="voronoi-toggle"><span>Est. population</span><span class="overlay-toggle-icon">P</span></label>
           <label id="deprivation-overlay-control" class="overlay-toggle-label" title="Official 2025 deprivation deciles for the current catchment subset, shown by 2021 LSOA polygon."><input type="checkbox" id="deprivation-toggle"><span>Deprivation</span><span class="overlay-toggle-icon">D</span></label>
+          <div id="healthcare-terrain-overlay-control" class="terrain-overlay-control" title="Server-side raster tiles showing England catchment overlaps plus nation-specific distance terrain layers. Pick one or more nations.">
+            <span class="terrain-overlay-heading">Catchment terrain</span>
+            <div class="terrain-toggle-row">
+              <label id="healthcare-terrain-england-catchment-control" class="overlay-toggle-label terrain-toggle-label" title="England catchment-overlap terrain"><input type="checkbox" id="healthcare-terrain-england-catchment-toggle"><span class="terrain-flag terrain-flag--england" aria-hidden="true"><span class="terrain-flag-badge">C</span></span></label>
+              <label id="healthcare-terrain-england-out-of-area-control" class="overlay-toggle-label terrain-toggle-label" title="England out-of-area distance terrain"><input type="checkbox" id="healthcare-terrain-england-out-of-area-toggle"><span class="terrain-flag terrain-flag--england" aria-hidden="true"><span class="terrain-flag-badge">O</span></span></label>
+              <label id="healthcare-terrain-scotland-control" class="overlay-toggle-label terrain-toggle-label" title="Scotland distance-strength terrain"><input type="checkbox" id="healthcare-terrain-scotland-toggle"><span class="terrain-flag terrain-flag--scotland" aria-hidden="true"></span></label>
+              <label id="healthcare-terrain-wales-control" class="overlay-toggle-label terrain-toggle-label" title="Wales distance-strength terrain"><input type="checkbox" id="healthcare-terrain-wales-toggle"><span class="terrain-flag terrain-flag--wales" aria-hidden="true"></span></label>
+              <label id="healthcare-terrain-northern-ireland-control" class="overlay-toggle-label terrain-toggle-label" title="Northern Ireland distance-strength terrain"><input type="checkbox" id="healthcare-terrain-northern-ireland-toggle"><span class="terrain-flag terrain-flag--northern-ireland" aria-hidden="true"></span></label>
+            </div>
+          </div>
         </div>
         <div class="circle-sample-controls">
           <div class="circle-sample-actions">

@@ -1,0 +1,127 @@
+{
+  "max_strength": 87.1275,
+  "positive_pixels": 420538,
+  "positive_pixel_ratio": 0.390382,
+  "total_bbox_sq_km": 8651.751,
+  "positive_sq_km": 3378.713,
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "color": "#a50026cc"
+    },
+    {
+      "label": "0-1",
+      "minimum": 1e-06,
+      "maximum": 1.0,
+      "color": "#f46d43bc"
+    },
+    {
+      "label": "1-2.5",
+      "minimum": 1.0,
+      "maximum": 2.5,
+      "color": "#fdae61b8"
+    },
+    {
+      "label": "2.5-5",
+      "minimum": 2.5,
+      "maximum": 5.0,
+      "color": "#fee08bb0"
+    },
+    {
+      "label": "5-10",
+      "minimum": 5.0,
+      "maximum": 10.0,
+      "color": "#a6d96ab8"
+    },
+    {
+      "label": "10+",
+      "minimum": 10.0,
+      "maximum": null,
+      "color": "#1a9641c0"
+    }
+  ],
+  "top_integer_bins": [
+    {
+      "strength_floor": 0,
+      "pixel_count": 759786
+    },
+    {
+      "strength_floor": 1,
+      "pixel_count": 32737
+    },
+    {
+      "strength_floor": 2,
+      "pixel_count": 22277
+    },
+    {
+      "strength_floor": 3,
+      "pixel_count": 16871
+    },
+    {
+      "strength_floor": 4,
+      "pixel_count": 13751
+    },
+    {
+      "strength_floor": 5,
+      "pixel_count": 11558
+    },
+    {
+      "strength_floor": 6,
+      "pixel_count": 9999
+    },
+    {
+      "strength_floor": 7,
+      "pixel_count": 8949
+    },
+    {
+      "strength_floor": 8,
+      "pixel_count": 7950
+    },
+    {
+      "strength_floor": 9,
+      "pixel_count": 7255
+    },
+    {
+      "strength_floor": 10,
+      "pixel_count": 6664
+    },
+    {
+      "strength_floor": 11,
+      "pixel_count": 6220
+    }
+  ],
+  "exterior_mask": {
+    "masked_pixels": 656710,
+    "masked_pixel_ratio": 0.609618,
+    "approx_sq_km": 5273.038
+  },
+  "nation": "england_out_of_area",
+  "overlay_id": "england_out_of_area",
+  "overlay_nation": "england",
+  "label": "England out-of-area",
+  "mode": "distance_strength",
+  "practice_count": 160,
+  "near_miles": 3.0,
+  "far_miles": 10.0,
+  "bbox": {
+    "min_lon": -2.938842,
+    "min_lat": 53.071572,
+    "max_lon": -1.551508,
+    "max_lat": 53.919428
+  },
+  "raster": {
+    "width": 1024,
+    "height": 1052,
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/distance-strength-bands.png"
+  },
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/england_out_of_area/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 8,
+    "tile_count": 9,
+    "template": "tiles/{z}/{x}/{y}.png"
+  }
+}

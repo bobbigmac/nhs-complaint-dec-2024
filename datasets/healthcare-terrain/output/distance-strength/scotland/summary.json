@@ -1,0 +1,127 @@
+{
+  "max_strength": 195.2109,
+  "positive_pixels": 546994,
+  "positive_pixel_ratio": 0.312017,
+  "total_bbox_sq_km": 335052.589,
+  "positive_sq_km": 109260.103,
+  "bands": [
+    {
+      "label": "0",
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "color": "#a50026cc"
+    },
+    {
+      "label": "0-1",
+      "minimum": 1e-06,
+      "maximum": 1.0,
+      "color": "#f46d43bc"
+    },
+    {
+      "label": "1-2.5",
+      "minimum": 1.0,
+      "maximum": 2.5,
+      "color": "#fdae61b8"
+    },
+    {
+      "label": "2.5-5",
+      "minimum": 2.5,
+      "maximum": 5.0,
+      "color": "#fee08bb0"
+    },
+    {
+      "label": "5-10",
+      "minimum": 5.0,
+      "maximum": 10.0,
+      "color": "#a6d96ab8"
+    },
+    {
+      "label": "10+",
+      "minimum": 10.0,
+      "maximum": null,
+      "color": "#1a9641c0"
+    }
+  ],
+  "top_integer_bins": [
+    {
+      "strength_floor": 0,
+      "pixel_count": 1462670
+    },
+    {
+      "strength_floor": 1,
+      "pixel_count": 124675
+    },
+    {
+      "strength_floor": 2,
+      "pixel_count": 52349
+    },
+    {
+      "strength_floor": 3,
+      "pixel_count": 29339
+    },
+    {
+      "strength_floor": 4,
+      "pixel_count": 12416
+    },
+    {
+      "strength_floor": 5,
+      "pixel_count": 7746
+    },
+    {
+      "strength_floor": 6,
+      "pixel_count": 5855
+    },
+    {
+      "strength_floor": 7,
+      "pixel_count": 5124
+    },
+    {
+      "strength_floor": 8,
+      "pixel_count": 4510
+    },
+    {
+      "strength_floor": 9,
+      "pixel_count": 3638
+    },
+    {
+      "strength_floor": 10,
+      "pixel_count": 2652
+    },
+    {
+      "strength_floor": 11,
+      "pixel_count": 2399
+    }
+  ],
+  "exterior_mask": {
+    "masked_pixels": 1205557,
+    "masked_pixel_ratio": 0.687676,
+    "approx_sq_km": 225677.952
+  },
+  "nation": "scotland",
+  "overlay_id": "scotland",
+  "overlay_nation": "scotland",
+  "label": "Scotland",
+  "mode": "distance_strength",
+  "practice_count": 933,
+  "near_miles": 3.0,
+  "far_miles": 12.0,
+  "bbox": {
+    "min_lon": -7.962123,
+    "min_lat": 54.364812,
+    "max_lon": -0.406734,
+    "max_lat": 61.085403
+  },
+  "raster": {
+    "width": 1024,
+    "height": 1712,
+    "preview_png": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/distance-strength-bands.png"
+  },
+  "tile_manifest": {
+    "directory": "/home/bobbigmac/projects/nhs-complaint-dec-2024/datasets/healthcare-terrain/output/distance-strength/scotland/tiles",
+    "tile_size": 256,
+    "min_zoom": 4,
+    "max_zoom": 8,
+    "tile_count": 85,
+    "template": "tiles/{z}/{x}/{y}.png"
+  }
+}
