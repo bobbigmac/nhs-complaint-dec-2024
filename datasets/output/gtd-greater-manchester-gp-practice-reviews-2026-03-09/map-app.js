@@ -48,9 +48,7 @@ const selectedHealthcareTerrainOverlayIds = (() => {
       .filter(Boolean)
   );
   if (!availableOverlayIds.size) return new Set();
-  if (availableOverlayIds.has('england_catchment')) return new Set(['england_catchment']);
-  const firstAvailable = TERRAIN_OVERLAY_ORDER.find((overlayId) => availableOverlayIds.has(overlayId)) || Array.from(availableOverlayIds)[0];
-  return new Set(firstAvailable ? [firstAvailable] : []);
+  return new Set();
 })();
 const dataBbox = (() => {
   const lons = rows.map(r => Number(r.lon));

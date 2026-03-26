@@ -1387,6 +1387,73 @@ def load_latest_gpps_csv_index() -> dict[str, dict[str, Any]]:
     return {}
 
 
+def load_existing_national_supplemental_script_index(
+    path: Path = OUTPUT_DIR / NATIONAL_SUPPLEMENTAL_SCRIPT_NAME,
+) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return {}
+    prefix = "window.NATIONAL_PRACTICE_SUPPLEMENTALS="
+    if not text.startswith(prefix):
+        return {}
+    payload = text[len(prefix):]
+    split_marker = ";\nwindow.NATIONAL_PRACTICE_SUPPLEMENTALS_COUNT="
+    if split_marker not in payload:
+        split_marker = ";window.NATIONAL_PRACTICE_SUPPLEMENTALS_COUNT="
+    payload = payload.split(split_marker, 1)[0].strip()
+    try:
+        rows = json.loads(payload)
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(rows, list):
+        return {}
+    index: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        code = str(row.get("code") or "").strip().upper()
+        if code:
+            index[code] = row
+    return index
+
+
+def merge_existing_supplemental_survey_fields(
+    row: dict[str, Any],
+    existing_row: dict[str, Any] | None,
+) -> dict[str, Any]:
+    if not existing_row:
+        return row
+    merged = dict(row)
+    fallback_fields = (
+        "survey_overall_good_percent",
+        "survey_overall_good_ics_percent",
+        "survey_overall_good_national_percent",
+        "survey_completion_rate_percent",
+        "survey_sent_out",
+        "survey_sent_back",
+        "number_of_responses",
+        "responses_for_overall_question",
+        "gp_patient_survey_2025_url",
+        "gp_patient_survey_code_used",
+        "gp_patient_survey_resolution_note",
+        "patient_survey_name",
+        "patient_survey_status",
+        "patient_survey_level",
+        "patient_survey_url",
+        "patient_survey_note",
+    )
+    for field in fallback_fields:
+        if str(merged.get(field, "")).strip():
+            continue
+        fallback_value = existing_row.get(field, "")
+        if str(fallback_value).strip():
+            merged[field] = fallback_value
+    return merged
+
+
 def build_national_map_supplementals(
     national_results_path: Path = NATIONAL_GOOGLE_REVIEW_RESULTS_JSON,
     national_input_csv: Path = NATIONAL_PRACTICES_INPUT_CSV,
@@ -1416,10 +1483,12 @@ def build_national_map_supplementals(
     cqc_by_code = load_cqc_gp_location_index()
     branch_parent_by_code = load_gp_patient_survey_branch_parent_index()
     scotland_hace_by_code, scotland_hace_manifest_by_code = load_scotland_hace_index()
+    existing_supplementals_by_code = load_existing_national_supplemental_script_index()
     supplementals: list[dict[str, Any]] = []
 
     for code, source_row in input_by_code.items():
         result = results_by_code.get(code, {})
+        existing_row = existing_supplementals_by_code.get(code)
         survey_metadata = national_survey_metadata(source_row.get("nation"))
         for key in ("patient_survey_name", "patient_survey_status", "patient_survey_level", "patient_survey_url", "patient_survey_note"):
             value = str(source_row.get(key, "")).strip()
@@ -1438,6 +1507,10 @@ def build_national_map_supplementals(
                 survey_metadata[key] = str(value).strip()
 
         survey_score = survey_metric(survey_payload, "overallexp")
+        if survey_score in ("", None) and existing_row:
+            fallback_survey_score = existing_row.get("survey_overall_good_percent", "")
+            if str(fallback_survey_score).strip():
+                survey_score = fallback_survey_score
         google_score = ""
         google_count = ""
         google_maps_url = ""
@@ -1469,9 +1542,6 @@ def build_national_map_supplementals(
                 google_count = result.get("google_review_count", "")
                 google_source_note = "National Google Maps quick scan"
 
-        if google_score in ("", None) and survey_score in ("", None):
-            continue
-
         coords = None
         if google_result_usable:
             raw_lat = result.get("latitude")
@@ -1494,59 +1564,74 @@ def build_national_map_supplementals(
         nation_key = str(source_row.get("nation") or "").strip()
         if coords is not None and not coordinates_plausible_for_nation(coords, nation_key):
             coords = None
+        if coords is None and existing_row:
+            try:
+                fallback_lat = float(existing_row.get("lat"))
+                fallback_lon = float(existing_row.get("lon"))
+                coords = (fallback_lat, fallback_lon)
+            except (TypeError, ValueError):
+                coords = None
+        if coords is not None and not coordinates_plausible_for_nation(coords, nation_key):
+            coords = None
         if coords is None:
+            continue
+        if google_score in ("", None) and survey_score in ("", None):
             continue
 
         cqc = cqc_by_code.get(code, {}) if str(source_row.get("nation", "")).strip().lower() == "england" else {}
 
+        supplemental_row = {
+            "code": code,
+            "name": str(source_row.get("practice_name") or result.get("practice_name") or result.get("google_maps_title") or code).strip(),
+            "lat": round(coords[0], 6),
+            "lon": round(coords[1], 6),
+            "postcode": str(source_row.get("postcode") or result.get("postcode") or "").strip(),
+            "nation": str(source_row.get("nation") or "").strip(),
+            "record_scope": "National supplemental",
+            "registered_patient_count": source_row.get("registered_patient_count", ""),
+            "registered_patient_count_source": source_row.get("registered_patient_count_source", ""),
+            "registered_patient_count_source_url": source_row.get("registered_patient_count_source_url", ""),
+            "registered_patient_count_snapshot": source_row.get("registered_patient_count_snapshot", ""),
+            "google_score": google_score,
+            "google_count": google_count,
+            "google_source_note": google_source_note,
+            "google_url": google_maps_url,
+            "google_review_scan_status": str(result.get("scan_status", "") or ""),
+            "google_review_has_listing": "true" if (str(result.get("page_kind", "")).strip() == "place" or google_maps_url or result.get("google_maps_title")) else "false",
+            "nhs_url": str(source_row.get("nhs_profile_url") or "").strip(),
+            "website_url": str(source_row.get("website_url") or "").strip(),
+            "ods_org_link": str(source_row.get("ods_org_link") or "").strip(),
+            "survey_overall_good_percent": survey_score,
+            "survey_overall_good_ics_percent": "",
+            "survey_overall_good_national_percent": "",
+            "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
+            "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
+            "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
+            "number_of_responses": survey_payload.get("number_of_responses", ""),
+            "responses_for_overall_question": survey_payload.get("responses_for_overall_question", ""),
+            "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
+            "gp_patient_survey_code_used": survey_code_used,
+            "gp_patient_survey_resolution_note": survey_resolution_note,
+            "patient_survey_name": str(survey_metadata.get("patient_survey_name") or "").strip(),
+            "patient_survey_status": str(survey_metadata.get("patient_survey_status") or "").strip(),
+            "patient_survey_level": str(survey_metadata.get("patient_survey_level") or "").strip(),
+            "patient_survey_url": str(survey_metadata.get("patient_survey_url") or "").strip(),
+            "patient_survey_note": str(survey_metadata.get("patient_survey_note") or "").strip(),
+            "accepting_new_patients": source_row.get("accepting_new_patients", False),
+            "accepts_out_of_area_registrations": source_row.get("accepts_out_of_area_registrations", False),
+            "cqc_overall_rating": str(cqc.get("overall_rating", "")).strip(),
+            "cqc_location_url": str(cqc.get("url", "")).strip(),
+            "cqc_service_website": str(cqc.get("service_website", "")).strip(),
+            "cqc_publication_date": str(cqc.get("publication_date", "")).strip(),
+            "cqc_inherited_rating": str(cqc.get("inherited_rating", "")).strip(),
+            "cqc_provider_name": str(cqc.get("provider_name", "")).strip(),
+            "is_national_supplemental": True,
+        }
         supplementals.append(
-            {
-                "code": code,
-                "name": str(source_row.get("practice_name") or result.get("practice_name") or result.get("google_maps_title") or code).strip(),
-                "lat": round(coords[0], 6),
-                "lon": round(coords[1], 6),
-                "postcode": str(source_row.get("postcode") or result.get("postcode") or "").strip(),
-                "nation": str(source_row.get("nation") or "").strip(),
-                "record_scope": "National supplemental",
-                "registered_patient_count": source_row.get("registered_patient_count", ""),
-                "registered_patient_count_source": source_row.get("registered_patient_count_source", ""),
-                "registered_patient_count_source_url": source_row.get("registered_patient_count_source_url", ""),
-                "registered_patient_count_snapshot": source_row.get("registered_patient_count_snapshot", ""),
-                "google_score": google_score,
-                "google_count": google_count,
-                "google_source_note": google_source_note,
-                "google_url": google_maps_url,
-                "google_review_scan_status": str(result.get("scan_status", "") or ""),
-                "google_review_has_listing": "true" if (str(result.get("page_kind", "")).strip() == "place" or google_maps_url or result.get("google_maps_title")) else "false",
-                "nhs_url": str(source_row.get("nhs_profile_url") or "").strip(),
-                "website_url": str(source_row.get("website_url") or "").strip(),
-                "ods_org_link": str(source_row.get("ods_org_link") or "").strip(),
-                "survey_overall_good_percent": survey_score,
-                "survey_overall_good_ics_percent": "",
-                "survey_overall_good_national_percent": "",
-                "survey_completion_rate_percent": survey_payload.get("completion_rate_percent", ""),
-                "survey_sent_out": survey_payload.get("surveys_sent_out", ""),
-                "survey_sent_back": survey_payload.get("surveys_sent_back", ""),
-                "number_of_responses": survey_payload.get("number_of_responses", ""),
-                "responses_for_overall_question": survey_payload.get("responses_for_overall_question", ""),
-                "gp_patient_survey_2025_url": survey_payload.get("gpps_url", ""),
-                "gp_patient_survey_code_used": survey_code_used,
-                "gp_patient_survey_resolution_note": survey_resolution_note,
-                "patient_survey_name": str(survey_metadata.get("patient_survey_name") or "").strip(),
-                "patient_survey_status": str(survey_metadata.get("patient_survey_status") or "").strip(),
-                "patient_survey_level": str(survey_metadata.get("patient_survey_level") or "").strip(),
-                "patient_survey_url": str(survey_metadata.get("patient_survey_url") or "").strip(),
-                "patient_survey_note": str(survey_metadata.get("patient_survey_note") or "").strip(),
-                "accepting_new_patients": source_row.get("accepting_new_patients", False),
-                "accepts_out_of_area_registrations": source_row.get("accepts_out_of_area_registrations", False),
-                "cqc_overall_rating": str(cqc.get("overall_rating", "")).strip(),
-                "cqc_location_url": str(cqc.get("url", "")).strip(),
-                "cqc_service_website": str(cqc.get("service_website", "")).strip(),
-                "cqc_publication_date": str(cqc.get("publication_date", "")).strip(),
-                "cqc_inherited_rating": str(cqc.get("inherited_rating", "")).strip(),
-                "cqc_provider_name": str(cqc.get("provider_name", "")).strip(),
-                "is_national_supplemental": True,
-            }
+            merge_existing_supplemental_survey_fields(
+                supplemental_row,
+                existing_row,
+            )
         )
 
     return sorted(supplementals, key=lambda row: (str(row.get("nation", "")), str(row.get("postcode", "")), str(row.get("name", ""))))
