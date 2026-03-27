@@ -433,6 +433,17 @@ REVIEWS_REPORT_DOCS: list[dict[str, str]] = [
     },
 ]
 
+HEALTHCARE_TERRAIN_REPORT_DOCS: list[dict[str, str]] = [
+    {
+        "slug": "england-random-good-practice",
+        "source": "datasets/healthcare-terrain/england-random-good-practice-report.md",
+    },
+    {
+        "slug": "england-catchment-area-buckets",
+        "source": "datasets/healthcare-terrain/england-catchment-area-buckets-report.md",
+    },
+]
+
 
 def find_latest_report_dir() -> Path:
     candidates = sorted(
@@ -735,7 +746,7 @@ def collect_published_sources() -> list[Path]:
             sources[str(source)] = source
     for source in iter_page_source_paths():
         sources[str(source)] = source
-    for report_spec in REVIEWS_REPORT_DOCS:
+    for report_spec in [*REVIEWS_REPORT_DOCS, *HEALTHCARE_TERRAIN_REPORT_DOCS]:
         source = resolve_source_path(str(report_spec["source"]))
         sources[str(source)] = source
     overview_source = resolve_source_path(REVIEWS_REPORTS_OVERVIEW_SOURCE)
@@ -1165,7 +1176,7 @@ def build_reviews_reports_page(
     intro_markdown, overview_sections = split_markdown_h2_sections(overview_markdown)
     intro_html, _ = markdown_to_html(intro_markdown, drop_first_h1=True)
     report_specs_by_filename = {
-        Path(str(spec["source"])).name: spec for spec in REVIEWS_REPORT_DOCS
+        Path(str(spec["source"])).name: spec for spec in [*REVIEWS_REPORT_DOCS, *HEALTHCARE_TERRAIN_REPORT_DOCS]
     }
     report_sections_html: list[str] = []
     outro_html = ""
@@ -1203,6 +1214,40 @@ def build_reviews_reports_page(
                 )
             )
 
+    if HEALTHCARE_TERRAIN_REPORT_DOCS:
+        healthcare_section_html, _ = markdown_to_html(
+            (
+                "## Catchment Terrain Reports\n\n"
+                "These two England-only markdown reports sit outside the review-text corpus reports. "
+                "They use the England polygon catchment cache plus the published practice metrics to summarise random-practice quality odds and catchment-size distribution."
+            ),
+            heading_id_prefix="catchment-terrain",
+        )
+        healthcare_panels = [
+            build_review_report_panel(report_spec, published_files=published_files)
+            for report_spec in HEALTHCARE_TERRAIN_REPORT_DOCS
+        ]
+        report_sections_html.append(
+            "\n".join(
+                [
+                    '<section class="doc-article reports-context-block">',
+                    '  <div class="doc-body">',
+                    healthcare_section_html,
+                    "  </div>",
+                    "</section>",
+                ]
+            )
+        )
+        report_sections_html.append(
+            "\n".join(
+                [
+                    '<section class="reports-stack" aria-label="Catchment terrain reports">',
+                    *healthcare_panels,
+                    "</section>",
+                ]
+            )
+        )
+
     page_html = replace_tokens(
         template,
         {
@@ -1211,7 +1256,7 @@ def build_reviews_reports_page(
             "DOC_SUMMARY": "A single page structured from the reports overview, with each full report embedded beneath the matching section.",
             "UPDATED_DATE": html.escape(updated_value),
             "REPORT_NAME": html.escape(report_name),
-            "REPORT_COUNT": str(len(REVIEWS_REPORT_DOCS)),
+            "REPORT_COUNT": str(len(REVIEWS_REPORT_DOCS) + len(HEALTHCARE_TERRAIN_REPORT_DOCS)),
             "INTRO_HTML": intro_html,
             "OUTRO_HTML": outro_html,
             "REPORT_PANELS": "\n".join(report_sections_html),

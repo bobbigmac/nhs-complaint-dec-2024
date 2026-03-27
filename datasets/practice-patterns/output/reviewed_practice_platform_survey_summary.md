@@ -7,7 +7,7 @@ It is not causal analysis, and it only covers practices that have already been r
 
 - reviewed reports: `18`
 - reviewed reports with GPPS data: `18`
-- generated_at: `2026-03-26`
+- generated_at: `2026-03-27`
 - interactive relative rankings: `reviewed_practice_relative_rankings.html`
 
 ## Website Stack Groups

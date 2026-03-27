@@ -1,6 +1,6 @@
 # England Catchment Area Buckets
 
-Generated: 2026-03-27 04:57 UTC
+Generated: 2026-03-27 05:10 UTC
 
 This report is **England only** and uses the hard polygon catchment cache under `datasets/catchments/.cache/gp-catchments-england/by_practice/`.
 
@@ -53,6 +53,30 @@ Full member codes are exported separately to `england-catchment-area-bucket-memb
 
 Scope note:
 All catchment areas in this report come from the one England catchment cache. The only scope changes here are whether New Bank is compared with all England catchments, the published Manchester-extended England pool, or just the GTD England subset.
+
+## Score Patterns By Catchment Size
+
+- England practices with catchment area plus survey score: `6,051`
+- England practices with catchment area plus Google score: `5,974`
+- Overall survey vs catchment-area correlation is weak: Pearson `0.135`, Spearman `0.138`
+- Overall Google vs catchment-area correlation is also weak: Pearson `0.148`, Spearman `0.125`
+- Inside the more normal `<= 100 km²` range, the relationship is close to flat: survey Pearson `0.041`, Google Pearson `0.034`
+
+The visible lift is mostly in the large-catchment tail rather than across ordinary urban and suburban sizes. That makes this look more like a rurality or population-sparsity effect than a simple rule that bigger catchments directly produce better scores.
+
+| Bucket | Practices with area | Survey mean | Survey >= 75% | Google mean | Google >= 4.0 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| <= 1 km² | `69` | `77.2` | `59.7%` | `3.15` | `22.1%` |
+| > 1 to <= 2 km² | `149` | `75.9` | `56.4%` | `3.20` | `19.3%` |
+| > 2 to <= 5 km² | `570` | `76.4` | `59.4%` | `3.19` | `21.7%` |
+| > 5 to <= 10 km² | `805` | `75.2` | `55.2%` | `3.13` | `19.0%` |
+| > 10 to <= 20 km² | `1,158` | `75.7` | `56.0%` | `3.09` | `17.0%` |
+| > 20 to <= 50 km² | `1,423` | `76.3` | `57.8%` | `3.12` | `17.9%` |
+| > 50 to <= 100 km² | `795` | `77.1` | `62.0%` | `3.21` | `20.3%` |
+| > 100 to <= 200 km² | `655` | `80.8` | `72.4%` | `3.49` | `31.2%` |
+| > 200 to <= 500 km² | `414` | `80.9` | `70.9%` | `3.55` | `35.0%` |
+| > 500 to <= 1,000 km² | `20` | `82.9` | `75.0%` | `3.56` | `31.6%` |
+| > 1,000 km² | `4` | `80.2` | `75.0%` | `3.48` | `25.0%` |
 
 ## GTD England Practices
 

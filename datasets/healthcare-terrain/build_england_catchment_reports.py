@@ -9,7 +9,7 @@ import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from statistics import median
+from statistics import mean, median
 from typing import Any
 
 
@@ -234,6 +234,12 @@ def format_bucket_edge(value: float) -> str:
     return f"{value:,.1f}"
 
 
+def format_number(value: float | None, digits: int = 1) -> str:
+    if value is None:
+        return "n/a"
+    return f"{value:.{digits}f}"
+
+
 def build_area_buckets() -> list[AreaBucket]:
     buckets: list[AreaBucket] = []
     previous_edge: float | None = None
@@ -284,13 +290,11 @@ def larger_share_from_rank(rank: int | None, total: int) -> float | None:
 
 
 def write_bucket_members_tsv(bucketed_members: list[tuple[AreaBucket, list[tuple[str, float]]]], output_path: Path) -> None:
-    max_members = max((len(members) for _bucket, members in bucketed_members), default=0)
-    header = ["bucket_index", "bucket_label", "member_count"] + [f"code_{index}" for index in range(1, max_members + 1)]
     with output_path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, delimiter="\t")
-        writer.writerow(header)
+        writer.writerow(["bucket_index", "bucket_label", "member_count", "practices"])
         for index, (bucket, members) in enumerate(bucketed_members, start=1):
-            writer.writerow([index, bucket.label, len(members), *[code for code, _area in members]])
+            writer.writerow([index, bucket.label, len(members), ",".join(code for code, _area in members)])
 
 
 def find_bucket_for_area(area_sq_km: float, buckets: list[AreaBucket]) -> AreaBucket:
@@ -298,6 +302,64 @@ def find_bucket_for_area(area_sq_km: float, buckets: list[AreaBucket]) -> AreaBu
         if bucket.contains(area_sq_km):
             return bucket
     return buckets[-1]
+
+
+def pearson_correlation(xs: list[float], ys: list[float]) -> float | None:
+    if len(xs) < 2 or len(xs) != len(ys):
+        return None
+    mean_x = mean(xs)
+    mean_y = mean(ys)
+    numerator = sum((x - mean_x) * (y - mean_y) for x, y in zip(xs, ys, strict=False))
+    denominator_x = math.sqrt(sum((x - mean_x) ** 2 for x in xs))
+    denominator_y = math.sqrt(sum((y - mean_y) ** 2 for y in ys))
+    if denominator_x == 0.0 or denominator_y == 0.0:
+        return None
+    return numerator / (denominator_x * denominator_y)
+
+
+def rank_values(values: list[float]) -> list[float]:
+    indexed = sorted(enumerate(values), key=lambda item: item[1])
+    ranks = [0.0] * len(values)
+    index = 0
+    while index < len(indexed):
+        next_index = index + 1
+        while next_index < len(indexed) and indexed[next_index][1] == indexed[index][1]:
+            next_index += 1
+        average_rank = (index + 1 + next_index) / 2.0
+        for fill_index in range(index, next_index):
+            ranks[indexed[fill_index][0]] = average_rank
+        index = next_index
+    return ranks
+
+
+def spearman_correlation(xs: list[float], ys: list[float]) -> float | None:
+    if len(xs) < 2 or len(xs) != len(ys):
+        return None
+    return pearson_correlation(rank_values(xs), rank_values(ys))
+
+
+def build_catchment_score_rows(
+    england_all_rows: list[dict[str, Any]],
+    areas_sq_km: dict[str, float],
+    buckets: list[AreaBucket],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for row in england_all_rows:
+        code = normalize_code(row.get("code"))
+        area_sq_km = areas_sq_km.get(code)
+        if area_sq_km is None or area_sq_km <= 0.0:
+            continue
+        rows.append(
+            {
+                "code": code,
+                "area_sq_km": area_sq_km,
+                "log_area_sq_km": math.log10(area_sq_km),
+                "bucket": find_bucket_for_area(area_sq_km, buckets).label,
+                "survey": survey_good_percent(row),
+                "google": google_score(row),
+            }
+        )
+    return rows
 
 
 def build_good_practice_report(england_all_rows: list[dict[str, Any]], output_path: Path) -> None:
@@ -372,6 +434,7 @@ def build_good_practice_report(england_all_rows: list[dict[str, Any]], output_pa
 
 def build_catchment_bucket_report(
     areas_sq_km: dict[str, float],
+    england_all_rows: list[dict[str, Any]],
     published_england_rows: list[dict[str, Any]],
     output_path: Path,
     members_tsv_path: Path,
@@ -379,6 +442,9 @@ def build_catchment_bucket_report(
     buckets = build_area_buckets()
     bucketed_members = bucket_members(areas_sq_km, buckets)
     write_bucket_members_tsv(bucketed_members, members_tsv_path)
+    score_rows = build_catchment_score_rows(england_all_rows, areas_sq_km, buckets)
+    survey_score_rows = [row for row in score_rows if row["survey"] is not None]
+    google_score_rows = [row for row in score_rows if row["google"] is not None]
     all_area_values = sorted(areas_sq_km.values())
     new_bank_area = areas_sq_km[NEW_BANK_CODE]
     new_bank_bucket = find_bucket_for_area(new_bank_area, buckets)
@@ -406,6 +472,32 @@ def build_catchment_bucket_report(
     local_percentile = percentile_from_rank(local_rank, local_total)
     gtd_rank, gtd_total = ascending_rank(gtd_england_codes, areas_sq_km, NEW_BANK_CODE)
     gtd_percentile = percentile_from_rank(gtd_rank, gtd_total)
+    survey_area_pearson = pearson_correlation(
+        [float(row["area_sq_km"]) for row in survey_score_rows],
+        [float(row["survey"]) for row in survey_score_rows],
+    )
+    survey_area_spearman = spearman_correlation(
+        [float(row["area_sq_km"]) for row in survey_score_rows],
+        [float(row["survey"]) for row in survey_score_rows],
+    )
+    google_area_pearson = pearson_correlation(
+        [float(row["area_sq_km"]) for row in google_score_rows],
+        [float(row["google"]) for row in google_score_rows],
+    )
+    google_area_spearman = spearman_correlation(
+        [float(row["area_sq_km"]) for row in google_score_rows],
+        [float(row["google"]) for row in google_score_rows],
+    )
+    survey_upto_100 = [row for row in survey_score_rows if float(row["area_sq_km"]) <= 100.0]
+    google_upto_100 = [row for row in google_score_rows if float(row["area_sq_km"]) <= 100.0]
+    survey_upto_100_pearson = pearson_correlation(
+        [float(row["area_sq_km"]) for row in survey_upto_100],
+        [float(row["survey"]) for row in survey_upto_100],
+    )
+    google_upto_100_pearson = pearson_correlation(
+        [float(row["area_sq_km"]) for row in google_upto_100],
+        [float(row["google"]) for row in google_upto_100],
+    )
 
     lines = [
         "# England Catchment Area Buckets",
@@ -462,6 +554,49 @@ def build_catchment_bucket_report(
             "",
             "Scope note:",
             "All catchment areas in this report come from the one England catchment cache. The only scope changes here are whether New Bank is compared with all England catchments, the published Manchester-extended England pool, or just the GTD England subset.",
+            "",
+            "## Score Patterns By Catchment Size",
+            "",
+            f"- England practices with catchment area plus survey score: `{len(survey_score_rows):,}`",
+            f"- England practices with catchment area plus Google score: `{len(google_score_rows):,}`",
+            f"- Overall survey vs catchment-area correlation is weak: Pearson `{format_number(survey_area_pearson, 3)}`, Spearman `{format_number(survey_area_spearman, 3)}`",
+            f"- Overall Google vs catchment-area correlation is also weak: Pearson `{format_number(google_area_pearson, 3)}`, Spearman `{format_number(google_area_spearman, 3)}`",
+            (
+                f"- Inside the more normal `<= 100 km²` range, the relationship is close to flat: survey Pearson `{format_number(survey_upto_100_pearson, 3)}`, "
+                f"Google Pearson `{format_number(google_upto_100_pearson, 3)}`"
+            ),
+            "",
+            (
+                "The visible lift is mostly in the large-catchment tail rather than across ordinary urban and suburban sizes. "
+                "That makes this look more like a rurality or population-sparsity effect than a simple rule that bigger catchments directly produce better scores."
+            ),
+            "",
+            "| Bucket | Practices with area | Survey mean | Survey >= 75% | Google mean | Google >= 4.0 |",
+            "| --- | ---: | ---: | ---: | ---: | ---: |",
+        ]
+    )
+
+    for bucket, members in bucketed_members:
+        codes = {code for code, _area in members}
+        bucket_score_rows = [row for row in score_rows if row["code"] in codes]
+        bucket_survey_rows = [row for row in bucket_score_rows if row["survey"] is not None]
+        bucket_google_rows = [row for row in bucket_score_rows if row["google"] is not None]
+        survey_mean = mean(float(row["survey"]) for row in bucket_survey_rows) if bucket_survey_rows else None
+        google_mean = mean(float(row["google"]) for row in bucket_google_rows) if bucket_google_rows else None
+        survey_good_share = percent(
+            sum(1 for row in bucket_survey_rows if float(row["survey"]) >= PRIMARY_GOOD_SURVEY_THRESHOLD),
+            len(bucket_survey_rows),
+        )
+        google_good_share = percent(
+            sum(1 for row in bucket_google_rows if float(row["google"]) >= PRIMARY_GOOGLE_THRESHOLD),
+            len(bucket_google_rows),
+        )
+        lines.append(
+            f"| {bucket.label} | `{len(bucket_score_rows):,}` | `{format_number(survey_mean, 1)}` | `{format_pct(survey_good_share)}` | `{format_number(google_mean, 2)}` | `{format_pct(google_good_share)}` |"
+        )
+
+    lines.extend(
+        [
             "",
             "## GTD England Practices",
             "",
@@ -524,6 +659,7 @@ def main() -> None:
     )
     build_catchment_bucket_report(
         areas_sq_km=areas_sq_km,
+        england_all_rows=england_all_rows,
         published_england_rows=published_england_rows,
         output_path=args.output_dir / "england-catchment-area-buckets-report.md",
         members_tsv_path=args.output_dir / AREA_BUCKET_MEMBERS_TSV_NAME,
