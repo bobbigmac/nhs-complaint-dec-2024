@@ -20,11 +20,11 @@ const healthcareTerrainOverlays = Array.isArray(embed.healthcareTerrainOverlays)
   : (embed.healthcareTerrainOverlay ? [embed.healthcareTerrainOverlay] : []);
 const TERRAIN_OVERLAY_ORDER = ['england_catchment', 'england_out_of_area', 'scotland', 'wales', 'northern_ireland'];
 const TERRAIN_OVERLAY_CONTROL_IDS = {
-  england_catchment: 'healthcare-terrain-england-catchment-toggle',
-  england_out_of_area: 'healthcare-terrain-england-out-of-area-toggle',
-  scotland: 'healthcare-terrain-scotland-toggle',
-  wales: 'healthcare-terrain-wales-toggle',
-  northern_ireland: 'healthcare-terrain-northern-ireland-toggle',
+  england_catchment: 'healthcare-terrain-england-catchment-control',
+  england_out_of_area: 'healthcare-terrain-england-out-of-area-control',
+  scotland: 'healthcare-terrain-scotland-control',
+  wales: 'healthcare-terrain-wales-control',
+  northern_ireland: 'healthcare-terrain-northern-ireland-control',
 };
 const practiceDeprivationLookup = embed.practiceDeprivationLookup;
 const allPracticeDeprivationLookup = embed.allPracticeDeprivationLookup;
@@ -692,13 +692,13 @@ function updateAreaOverlayControls() {
   const terrainControl = document.getElementById('healthcare-terrain-overlay-control');
   terrainControl.classList.toggle('is-disabled', !terrainAvailable);
   TERRAIN_OVERLAY_ORDER.forEach((overlayId) => {
-    const toggle = document.getElementById(TERRAIN_OVERLAY_CONTROL_IDS[overlayId]);
-    const control = document.getElementById(`${TERRAIN_OVERLAY_CONTROL_IDS[overlayId].replace(/-toggle$/, '-control')}`);
-    if (!toggle || !control) return;
+    const control = document.getElementById(TERRAIN_OVERLAY_CONTROL_IDS[overlayId]);
+    if (!control) return;
     const available = availableTerrainOverlayIds.has(overlayId);
-    toggle.checked = available && selectedHealthcareTerrainOverlayIds.has(overlayId);
-    toggle.disabled = !available;
-    control.classList.toggle('is-active', terrainChecked && toggle.checked);
+    const isSelected = available && selectedHealthcareTerrainOverlayIds.has(overlayId);
+    control.disabled = !available;
+    control.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+    control.classList.toggle('is-active', terrainChecked && isSelected);
     control.classList.toggle('is-disabled', !available);
   });
   if (populationChecked) {
@@ -5836,22 +5836,21 @@ document.getElementById('deprivation-toggle').addEventListener('change', (event)
 });
 
 TERRAIN_OVERLAY_ORDER.forEach((overlayId) => {
-  const toggle = document.getElementById(TERRAIN_OVERLAY_CONTROL_IDS[overlayId]);
-  if (!toggle) return;
-  toggle.addEventListener('change', (event) => {
+  const control = document.getElementById(TERRAIN_OVERLAY_CONTROL_IDS[overlayId]);
+  if (!control) return;
+  control.addEventListener('click', () => {
     const available = availableHealthcareTerrainOverlays().some((overlay) => String(overlay?.overlayId || overlay?.nation || '').trim().toLowerCase() === overlayId);
     if (!available) {
-      event.target.checked = false;
       return;
     }
-    if (event.target.checked) {
-      selectedHealthcareTerrainOverlayIds.add(overlayId);
-      activeAreaOverlay = 'terrain';
-    } else {
+    if (selectedHealthcareTerrainOverlayIds.has(overlayId)) {
       selectedHealthcareTerrainOverlayIds.delete(overlayId);
       if (activeAreaOverlay === 'terrain' && !selectedHealthcareTerrainOverlays().length) {
         activeAreaOverlay = null;
       }
+    } else {
+      selectedHealthcareTerrainOverlayIds.add(overlayId);
+      activeAreaOverlay = 'terrain';
     }
     rerenderAll();
   });

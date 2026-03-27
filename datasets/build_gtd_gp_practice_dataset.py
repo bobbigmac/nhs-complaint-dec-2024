@@ -3011,6 +3011,8 @@ def write_map(
     }
     shutil.copy2(MAP_ASSETS_DIR / "map.css", out_dir / "map.css")
     shutil.copy2(MAP_ASSETS_DIR / "map-app.js", out_dir / "map-app.js")
+    if (MAP_ASSETS_DIR / "flags").exists():
+        shutil.copytree(MAP_ASSETS_DIR / "flags", out_dir / "flags", dirs_exist_ok=True)
     write_map_embed_data(out_dir / MAP_EMBED_SCRIPT_NAME, map_embed)
     map_html = render_map_html(
         total_registered_patients=total_registered_patients,

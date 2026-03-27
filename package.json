@@ -23,6 +23,7 @@
     "reviews:report": "python3 datasets/reviews-search/query_reviews.py report"
   },
   "devDependencies": {
+    "flag-icons": "^7.3.2",
     "vite": "latest"
   }
 }
