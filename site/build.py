@@ -15,6 +15,11 @@ from pathlib import Path, PurePosixPath
 from typing import Callable, Iterable
 from urllib.parse import quote
 
+try:
+    import markdown as python_markdown
+except ImportError:
+    python_markdown = None
+
 
 SITE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SITE_DIR.parent
@@ -603,25 +608,110 @@ def markdown_to_html(
         list_items = []
         list_type = None
 
-    for raw_line in markdown_text.splitlines():
-        line = raw_line.rstrip()
+    def split_table_row(text: str) -> list[str]:
+        trimmed = text.strip()
+        if trimmed.startswith("|"):
+            trimmed = trimmed[1:]
+        if trimmed.endswith("|"):
+            trimmed = trimmed[:-1]
+        return [cell.strip() for cell in trimmed.split("|")]
+
+    def is_table_divider(text: str, expected_columns: int) -> bool:
+        cells = split_table_row(text)
+        if len(cells) != expected_columns or expected_columns == 0:
+            return False
+        for cell in cells:
+            compact = cell.replace(" ", "")
+            if not compact or any(character not in "-:" for character in compact):
+                return False
+            if compact.replace(":", "").count("-") < 1:
+                return False
+        return True
+
+    def table_alignment(text: str) -> list[str]:
+        alignments: list[str] = []
+        for cell in split_table_row(text):
+            compact = cell.replace(" ", "")
+            if compact.startswith(":") and compact.endswith(":"):
+                alignments.append("center")
+            elif compact.endswith(":"):
+                alignments.append("right")
+            elif compact.startswith(":"):
+                alignments.append("left")
+            else:
+                alignments.append("")
+        return alignments
+
+    def render_table(header_line: str, divider_line: str, body_lines: list[str]) -> None:
+        headers = split_table_row(header_line)
+        alignments = table_alignment(divider_line)
+        header_parts: list[str] = []
+        for cell, alignment in zip(headers, alignments, strict=False):
+            style_attr = f' style="text-align:{alignment}"' if alignment else ""
+            header_parts.append(f"<th{style_attr}>{render(cell)}</th>")
+        header_html = "".join(header_parts)
+        body_rows_html: list[str] = []
+        for body_line in body_lines:
+            cells = split_table_row(body_line)
+            if len(cells) != len(headers):
+                continue
+            row_parts: list[str] = []
+            for cell, alignment in zip(cells, alignments, strict=False):
+                style_attr = f' style="text-align:{alignment}"' if alignment else ""
+                row_parts.append(f"<td{style_attr}>{render(cell)}</td>")
+            row_html = "".join(row_parts)
+            body_rows_html.append(f"<tr>{row_html}</tr>")
+        blocks.append(
+            '<div class="markdown-table-wrap"><table class="markdown-table"><thead><tr>'
+            + header_html
+            + "</tr></thead><tbody>"
+            + "".join(body_rows_html)
+            + "</tbody></table></div>"
+        )
+
+    lines = markdown_text.splitlines()
+    index = 0
+    while index < len(lines):
+        line = lines[index].rstrip()
         stripped = line.strip()
 
         if not stripped:
             flush_paragraph()
             flush_list()
+            index += 1
             continue
 
         if stripped == ">":
             flush_paragraph()
             flush_list()
+            index += 1
             continue
 
         if stripped == "---":
             flush_paragraph()
             flush_list()
             blocks.append("<hr>")
+            index += 1
             continue
+
+        if "|" in stripped and index + 1 < len(lines):
+            next_stripped = lines[index + 1].strip()
+            header_cells = split_table_row(stripped)
+            if is_table_divider(next_stripped, len(header_cells)):
+                flush_paragraph()
+                flush_list()
+                table_body_lines: list[str] = []
+                index += 2
+                while index < len(lines):
+                    candidate = lines[index].strip()
+                    if not candidate or "|" not in candidate:
+                        break
+                    if len(split_table_row(candidate)) != len(header_cells):
+                        break
+                    table_body_lines.append(candidate)
+                    index += 1
+                render_table(stripped, next_stripped, table_body_lines)
+                continue
 
         heading_match = re.match(r"^(#{1,3})\s+(.*)$", stripped)
         if heading_match:
@@ -637,6 +727,7 @@ def markdown_to_html(
                 anchor = f"{heading_id_prefix}-{anchor}"
             headings.append((level, heading_text, anchor))
             blocks.append(f'<h{level} id="{anchor}">{render(heading_text)}</h{level}>')
+            index += 1
             continue
 
         unordered_match = re.match(r"^[-*]\s+(.*)$", stripped)
@@ -648,23 +739,72 @@ def markdown_to_html(
                 flush_list()
             list_type = next_type
             list_items.append((unordered_match or ordered_match).group(1).strip())
+            index += 1
             continue
 
         if list_items and line.startswith(("  ", "\t")):
             list_items[-1] = f"{list_items[-1]} {stripped}"
+            index += 1
             continue
 
         if stripped.startswith("> "):
             flush_paragraph()
             flush_list()
             blocks.append(f"<blockquote><p>{render(stripped[2:].strip())}</p></blockquote>")
+            index += 1
             continue
 
         paragraph_lines.append(stripped)
+        index += 1
 
     flush_paragraph()
     flush_list()
     return "\n".join(blocks), headings
+
+
+def render_markdown_with_library(
+    markdown_text: str,
+    *,
+    link_resolver: Callable[[str], str] | None = None,
+    footnote_refs: dict[str, str] | None = None,
+) -> str:
+    if python_markdown is None:
+        html_output, _ = markdown_to_html(
+            markdown_text,
+            link_resolver=link_resolver,
+            footnote_refs=footnote_refs,
+        )
+        return html_output
+
+    replacements: list[tuple[str, str]] = []
+
+    def stash(fragment: str) -> str:
+        token = f"HTML_TOKEN_{len(replacements)}"
+        replacements.append((token, fragment))
+        return token
+
+    prepared_text = markdown_text
+    if footnote_refs:
+        prepared_text = _replace_footnotes_with_claim_tooltips(prepared_text, footnote_refs, stash)
+
+    prepared_text = re.sub(
+        r"\[([^\]]+)\]\(([^)]+)\)",
+        lambda match: stash(
+            f'<a href="{html.escape((link_resolver or (lambda href: href))(match.group(2)), quote=True)}">{html.escape(match.group(1))}</a>'
+        ),
+        prepared_text,
+    )
+
+    html_output = python_markdown.markdown(
+        prepared_text,
+        extensions=["extra", "sane_lists", "toc"],
+        output_format="html5",
+    )
+    for token, fragment in replacements:
+        html_output = html_output.replace(token, fragment)
+    html_output = html_output.replace("<table>", '<div class="markdown-table-wrap"><table class="markdown-table">')
+    html_output = html_output.replace("</table>", "</table></div>")
+    return html_output
 
 
 def format_number(value: object) -> str:
@@ -1123,11 +1263,10 @@ def build_review_report_panel(
     title = extract_markdown_title(markdown_text, fallback=report_spec["slug"].replace("-", " ").title())
     summary = first_sentence(extract_intro_paragraph(markdown_text)) or "Open this panel to read the full report."
     body, footnote_refs = extract_footnotes(markdown_text)
-    body_html, _ = markdown_to_html(
+    body_html = render_markdown_with_library(
         body,
-        drop_first_h1=True,
+        link_resolver=None,
         footnote_refs=footnote_refs or None,
-        heading_id_prefix=str(report_spec["slug"]),
     )
     if footnote_refs:
         footnotes_html = [
@@ -1174,7 +1313,7 @@ def build_reviews_reports_page(
     template = load_template("reviews_reports.html")
     overview_markdown = resolve_source_path(REVIEWS_REPORTS_OVERVIEW_SOURCE).read_text(encoding="utf-8")
     intro_markdown, overview_sections = split_markdown_h2_sections(overview_markdown)
-    intro_html, _ = markdown_to_html(intro_markdown, drop_first_h1=True)
+    intro_html = render_markdown_with_library(intro_markdown)
     report_specs_by_filename = {
         Path(str(spec["source"])).name: spec for spec in [*REVIEWS_REPORT_DOCS, *HEALTHCARE_TERRAIN_REPORT_DOCS]
     }
@@ -1182,10 +1321,7 @@ def build_reviews_reports_page(
     outro_html = ""
 
     for heading, section_markdown in overview_sections:
-        section_html, _ = markdown_to_html(
-            section_markdown,
-            heading_id_prefix=re.sub(r"[^a-z0-9]+", "-", heading.lower()).strip("-") or "report-section",
-        )
+        section_html = render_markdown_with_library(section_markdown)
         filenames = extract_report_filenames(section_markdown)
         panels = [
             build_review_report_panel(report_specs_by_filename[name], published_files=published_files)
@@ -1215,13 +1351,10 @@ def build_reviews_reports_page(
             )
 
     if HEALTHCARE_TERRAIN_REPORT_DOCS:
-        healthcare_section_html, _ = markdown_to_html(
-            (
-                "## Catchment Terrain Reports\n\n"
-                "These two England-only markdown reports sit outside the review-text corpus reports. "
-                "They use the England polygon catchment cache plus the published practice metrics to summarise random-practice quality odds and catchment-size distribution."
-            ),
-            heading_id_prefix="catchment-terrain",
+        healthcare_section_html = render_markdown_with_library(
+            "## Catchment Terrain Reports\n\n"
+            "These two England-only markdown reports sit outside the review-text corpus reports. "
+            "They use the England polygon catchment cache plus the published practice metrics to summarise random-practice quality odds and catchment-size distribution."
         )
         healthcare_panels = [
             build_review_report_panel(report_spec, published_files=published_files)

@@ -611,7 +611,8 @@ a {
 .doc-body p,
 .doc-body ul,
 .doc-body ol,
-.doc-body blockquote {
+.doc-body blockquote,
+.doc-body .markdown-table-wrap {
   margin: 12px 0 0;
 }
 
@@ -643,6 +644,44 @@ a {
   background: rgba(11, 95, 110, 0.1);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.92em;
+}
+
+.markdown-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.markdown-table th,
+.markdown-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(31, 29, 27, 0.08);
+  vertical-align: top;
+}
+
+.markdown-table thead th {
+  background: rgba(11, 95, 110, 0.08);
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.markdown-table tbody td {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.markdown-table tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 .page-shell-reports {
