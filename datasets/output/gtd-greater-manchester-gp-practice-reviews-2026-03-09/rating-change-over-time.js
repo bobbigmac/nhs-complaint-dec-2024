@@ -65,6 +65,49 @@
     margin.left +
     (months.length <= 1 ? plotWidth / 2 : (index / (months.length - 1)) * plotWidth);
 
+  const TREND_EPS = 1e-4;
+  const FILL_UP = "rgba(76, 154, 82, 0.18)";
+  const FILL_DOWN = "rgba(195, 71, 47, 0.16)";
+
+  function edgeTrendDir(points, k) {
+    const prev = points[k - 1];
+    const curr = points[k];
+    if (prev === null || curr === null || !Number.isFinite(prev) || !Number.isFinite(curr)) return null;
+    const d = curr - prev;
+    if (d > TREND_EPS) return "up";
+    if (d < -TREND_EPS) return "down";
+    return "same";
+  }
+
+  /** Merge consecutive month edges with the same up/down trend into one background span (per practice). */
+  function buildTrendRuns(points) {
+    const n = points.length;
+    if (n < 2) return [];
+    const step = n <= 1 ? plotWidth : plotWidth / (n - 1);
+    const runs = [];
+    let k = 1;
+    while (k < n) {
+      const dir = edgeTrendDir(points, k);
+      if (dir !== "up" && dir !== "down") {
+        k += 1;
+        continue;
+      }
+      const startK = k;
+      let endK = k;
+      k += 1;
+      while (k < n) {
+        const d2 = edgeTrendDir(points, k);
+        if (d2 !== dir) break;
+        endK = k;
+        k += 1;
+      }
+      const x1 = Math.max(margin.left, xScale(startK) - step / 2);
+      const x2 = Math.min(width - margin.right, xScale(endK) + step / 2);
+      if (x2 > x1) runs.push({ dir, x1, x2 });
+    }
+    return runs;
+  }
+
   listEl.innerHTML = series
     .map((row) => {
       const points = row.points || [];
@@ -79,6 +122,15 @@
             `<line x1="${margin.left}" y1="${yScale(tick).toFixed(2)}" x2="${width - margin.right}" y2="${yScale(tick).toFixed(2)}" stroke="rgba(26,28,26,0.06)" />`
         )
         .join("");
+      const trendRuns = buildTrendRuns(points);
+      const trendRects = trendRuns
+        .map((run) => {
+          const fill = run.dir === "up" ? FILL_UP : FILL_DOWN;
+          const y1 = margin.top;
+          const y2 = height - margin.bottom;
+          return `<rect x="${run.x1.toFixed(2)}" y="${y1.toFixed(2)}" width="${(run.x2 - run.x1).toFixed(2)}" height="${(y2 - y1).toFixed(2)}" fill="${fill}" />`;
+        })
+        .join("");
       const pathMarkup = path
         ? `<path d="${path}" fill="none" stroke="${stroke}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />`
         : "";
@@ -92,6 +144,7 @@
             <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="Cumulative Google rating over time for ${label}">
               <title>Cumulative Google rating by month (reconstructed)</title>
               ${gridLines}
+              ${trendRects}
               ${pathMarkup}
             </svg>
           </div>

@@ -2515,11 +2515,18 @@ def build_manchester_google_rating_timeseries_all_practices(
                     first_finite = float(value)
                 last_finite = float(value)
         delta = round(last_finite - first_finite, 4) if first_finite is not None and last_finite is not None else None
+        result_row = result_by_code.get(code, {})
+        google_maps_url = (
+            str(row.get("google_url", "") or "").strip()
+            or str(row.get("google_review_source_url", "") or "").strip()
+            or str(result_row.get("google_maps_url", "") or "").strip()
+        )
         practice_series.append(
             {
                 "code": code,
                 "name": row.get("practice_name", code),
                 "gtd_managed": bool(str(row.get("gtd_managed", "")).strip().lower() == "true"),
+                "google_maps_url": google_maps_url,
                 "points": points,
                 "delta": delta,
                 "first_value": first_finite,
