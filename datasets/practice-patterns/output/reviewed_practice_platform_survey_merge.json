@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27",
+  "generated_at": "2026-04-21",
   "reviewed_report_count": 18,
   "reviewed_with_survey_count": 18,
   "metrics_considered": [
@@ -3055,7 +3055,7 @@
     }
   ],
   "relative_rankings": {
-    "generated_at": "2026-03-27",
+    "generated_at": "2026-04-21",
     "practice_count": 18,
     "methodology": {
       "kind": "report-only weighted percentile blend",

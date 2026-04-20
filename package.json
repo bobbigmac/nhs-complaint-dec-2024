@@ -1,9 +1,10 @@
 {
   "name": "nhs-complaint-local-site",
   "private": true,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
-    "dev": ".venv/bin/python site/build.py --out site/.vite-src && vite site/.vite-src --host",
-    "build": ".venv/bin/python site/build.py --out site/.vite-src && vite build site/.vite-src --outDir ../local-dist --emptyOutDir && .venv/bin/python site/finalize_vite_dist.py site/.vite-src site/local-dist",
+    "dev": ".venv/bin/python site/build.py --out site/.vite-src && vite --config site/vite.config.mjs --host",
+    "build": ".venv/bin/python site/build.py --out site/.vite-src && vite build --config site/vite.config.mjs && .venv/bin/python site/finalize_vite_dist.py site/.vite-src site/local-dist",
     "preview": "vite preview site/local-dist --host",
     "cqc:update": "python3 datasets/scripts/fetch_cqc_gp_ratings.py",
     "catchments:fetch": "python3 datasets/catchments/fetch_gp_catchments_england.py --outdir datasets/catchments/.cache/gp-catchments-england",

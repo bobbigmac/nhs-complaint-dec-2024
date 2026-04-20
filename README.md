@@ -251,3 +251,4 @@ The aim is not to “name and shame” a single surgery/company, but to show whe
 ### TODOs
 
 - Current task is making this document digestible as an overview.
+- Deprivation study connects to https://www.nuffieldtrust.org.uk/resource/fairer-funding-for-general-practice-in-england

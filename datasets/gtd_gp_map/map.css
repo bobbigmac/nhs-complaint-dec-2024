@@ -65,6 +65,12 @@ body {
   justify-content: space-between;
   gap: 8px;
 }
+.legend-header-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
 .home-link,
 .legend-collapse {
   display: inline-flex;

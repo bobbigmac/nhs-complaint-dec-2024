@@ -37,6 +37,7 @@ NATIONAL_PRACTICES_INPUT_CSV = NATIONAL_PRACTICES_OUTPUT_DIR / "uk_gp_practices_
 SCOTLAND_HACE_DATA_JSON = NATIONAL_PRACTICES_SCOTLAND_DIR / "hace_metrics.json"
 NATIONAL_SUPPLEMENTAL_SCRIPT_NAME = "national-practice-supplementals.js"
 MAP_EMBED_SCRIPT_NAME = "map-embed-data.js"
+RATING_CHANGE_EMBED_SCRIPT_NAME = "rating-change-over-time-embed.js"
 MAP_ASSETS_DIR = BASE_DIR / "gtd_gp_map"
 PUBLISHED_CATCHMENT_INDEX_REL_PATH = "catchments/index.json"
 PUBLISHED_HEALTHCARE_TERRAIN_ROOT_REL_PATH = "healthcare-terrain"
@@ -2418,6 +2419,147 @@ def build_gtd_google_score_timeseries(
     }
 
 
+def build_manchester_google_rating_timeseries_all_practices(
+    rows: list[dict[str, Any]],
+    google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
+) -> dict[str, Any]:
+    """Reconstructed cumulative Google rating by month for every Manchester-dataset practice with review history."""
+    rows = apply_gtd_takeover_metadata(rows)
+    anchor_date = date.today()
+    if google_results_path.exists():
+        anchor_date = date.fromtimestamp(google_results_path.stat().st_mtime)
+
+    dataset_rows = [row for row in rows if str(row.get("canonical_code", "")).strip()]
+    result_by_code = {
+        str(item.get("canonical_code", "")).strip(): item
+        for item in load_google_review_results(google_results_path)
+        if item.get("canonical_code")
+    }
+
+    month_values_by_practice: dict[str, dict[date, float]] = {}
+    practice_review_counts: dict[str, int] = {}
+    practice_google_counts: dict[str, int | None] = {}
+    parsed_review_total = 0
+    skipped_review_total = 0
+    earliest_month: date | None = None
+
+    for row in dataset_rows:
+        code = str(row.get("canonical_code", "")).strip()
+        result = result_by_code.get(code, {})
+        reviews_payload = result.get("recent_reviews") or []
+        reviews_by_month: dict[date, list[float]] = {}
+
+        for review in reviews_payload:
+            if not isinstance(review, dict):
+                skipped_review_total += 1
+                continue
+            rating = parse_google_star_label(str(review.get("star_label", "")))
+            review_date = parse_google_relative_review_date(str(review.get("relative_date", "")), anchor_date)
+            if rating is None or review_date is None:
+                skipped_review_total += 1
+                continue
+            bucket = month_start(review_date)
+            reviews_by_month.setdefault(bucket, []).append(rating)
+            parsed_review_total += 1
+            if earliest_month is None or bucket < earliest_month:
+                earliest_month = bucket
+
+        practice_review_counts[code] = sum(len(values) for values in reviews_by_month.values())
+        google_review_count = result.get("google_review_count")
+        try:
+            practice_google_counts[code] = int(google_review_count)
+        except (TypeError, ValueError):
+            practice_google_counts[code] = None
+        if not reviews_by_month:
+            continue
+
+        cumulative_total = 0.0
+        cumulative_count = 0
+        cumulative_by_month: dict[date, float] = {}
+        for bucket in sorted(reviews_by_month):
+            values = reviews_by_month[bucket]
+            cumulative_total += sum(values)
+            cumulative_count += len(values)
+            cumulative_by_month[bucket] = round(cumulative_total / cumulative_count, 4)
+        month_values_by_practice[code] = cumulative_by_month
+
+    if earliest_month is None:
+        return {
+            "anchor_date": anchor_date.isoformat(),
+            "months": [],
+            "practice_series": [],
+            "dataset_practice_count": len(dataset_rows),
+            "practices_with_review_history": 0,
+            "parsed_review_count": 0,
+            "skipped_review_count": skipped_review_total,
+        }
+
+    timeline = iter_month_starts(earliest_month, month_start(anchor_date))
+    practice_series: list[dict[str, Any]] = []
+    for row in dataset_rows:
+        code = str(row.get("canonical_code", "")).strip()
+        cumulative_by_month = month_values_by_practice.get(code)
+        if not cumulative_by_month:
+            continue
+        last_value: float | None = None
+        points: list[float | None] = []
+        for bucket in timeline:
+            if bucket in cumulative_by_month:
+                last_value = cumulative_by_month[bucket]
+            points.append(last_value)
+        first_finite: float | None = None
+        last_finite: float | None = None
+        for value in points:
+            if value is not None and isinstance(value, (int, float)) and math.isfinite(float(value)):
+                if first_finite is None:
+                    first_finite = float(value)
+                last_finite = float(value)
+        delta = round(last_finite - first_finite, 4) if first_finite is not None and last_finite is not None else None
+        practice_series.append(
+            {
+                "code": code,
+                "name": row.get("practice_name", code),
+                "gtd_managed": bool(str(row.get("gtd_managed", "")).strip().lower() == "true"),
+                "points": points,
+                "delta": delta,
+                "first_value": first_finite,
+                "last_value": last_finite,
+                "parsed_review_count": practice_review_counts.get(code, 0),
+                "google_review_count": practice_google_counts.get(code),
+            }
+        )
+
+    def _series_sort_key(item: dict[str, Any]) -> tuple:
+        d = item.get("delta")
+        name = str(item.get("name", "")).lower()
+        if d is None:
+            return (1, name)
+        return (0, -float(d), name)
+
+    practice_series.sort(key=_series_sort_key)
+
+    missing_practices = [
+        {
+            "code": str(row.get("canonical_code", "")).strip(),
+            "name": row.get("practice_name", ""),
+            "google_review_count": practice_google_counts.get(str(row.get("canonical_code", "")).strip()),
+        }
+        for row in dataset_rows
+        if str(row.get("canonical_code", "")).strip() not in month_values_by_practice
+    ]
+
+    return {
+        "anchor_date": anchor_date.isoformat(),
+        "months": [bucket.isoformat() for bucket in timeline],
+        "practice_series": practice_series,
+        "dataset_practice_count": len(dataset_rows),
+        "practices_with_review_history": len(practice_series),
+        "parsed_review_count": parsed_review_total,
+        "skipped_review_count": skipped_review_total,
+        "missing_practices": missing_practices,
+    }
+
+
 def build_dataset_google_review_yearly_average(
     rows: list[dict[str, Any]],
     google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
@@ -2695,6 +2837,13 @@ def build_patient_change_analysis(
 def write_map_embed_data(path: Path, embed: dict[str, Any]) -> None:
     path.write_text(
         "window.__MAP_EMBED__ = " + json.dumps(embed, separators=(",", ":")) + ";\n",
+        encoding="utf-8",
+    )
+
+
+def write_rating_change_embed_data(path: Path, embed: dict[str, Any]) -> None:
+    path.write_text(
+        "window.__RATING_CHANGE_EMBED__ = " + json.dumps(embed, separators=(",", ":")) + ";\n",
         encoding="utf-8",
     )
 
@@ -3014,6 +3163,16 @@ def write_map(
     if (MAP_ASSETS_DIR / "flags").exists():
         shutil.copytree(MAP_ASSETS_DIR / "flags", out_dir / "flags", dirs_exist_ok=True)
     write_map_embed_data(out_dir / MAP_EMBED_SCRIPT_NAME, map_embed)
+    manchester_rating_timeseries = build_manchester_google_rating_timeseries_all_practices(rows)
+    write_rating_change_embed_data(out_dir / RATING_CHANGE_EMBED_SCRIPT_NAME, manchester_rating_timeseries)
+    for rating_page_asset in (
+        "rating-change-over-time.html",
+        "rating-change-over-time.js",
+        "rating-change-over-time.css",
+    ):
+        src = MAP_ASSETS_DIR / rating_page_asset
+        if src.exists():
+            shutil.copy2(src, out_dir / rating_page_asset)
     map_html = render_map_html(
         total_registered_patients=total_registered_patients,
         registered_patient_rows=registered_patient_rows,

@@ -1,0 +1,114 @@
+:root {
+  --bg: #f6f4ef;
+  --ink: #1a1c1a;
+  --line: rgba(26, 28, 26, 0.12);
+  --accent: #0f5e9c;
+  --delta-up: #1c7c54;
+  --delta-down: #c3472f;
+  --delta-flat: #6b7280;
+}
+html,
+body {
+  margin: 0;
+}
+body {
+  font: 17px/1.45 Georgia, serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top, #fff7e3, var(--bg));
+}
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 18px 48px;
+}
+.page-header {
+  margin-bottom: 18px;
+}
+.page-header h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 10px 0 8px;
+}
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(15, 94, 156, 0.06);
+  color: var(--ink);
+  font: 600 12px/1.2 "Avenir Next", "Trebuchet MS", sans-serif;
+  text-decoration: none;
+}
+.home-link:hover {
+  background: rgba(15, 94, 156, 0.12);
+}
+.hint {
+  font: 14px/1.4 "Avenir Next", "Trebuchet MS", sans-serif;
+  color: rgba(26, 28, 26, 0.72);
+  margin: 0;
+  max-width: 72ch;
+}
+.chart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  overflow: hidden;
+}
+.rating-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 44px;
+  border-bottom: 1px solid var(--line);
+}
+.rating-row:last-child {
+  border-bottom: none;
+}
+.rating-row-name {
+  flex: 0 0 20%;
+  max-width: 20%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  border-right: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+}
+.rating-row-title {
+  font: 600 13px/1.25 "Avenir Next", "Trebuchet MS", sans-serif;
+  word-break: break-word;
+}
+.rating-row-delta {
+  font: 600 12px/1.2 ui-monospace, monospace;
+}
+.rating-row-delta.is-up {
+  color: var(--delta-up);
+}
+.rating-row-delta.is-down {
+  color: var(--delta-down);
+}
+.rating-row-delta.is-flat {
+  color: var(--delta-flat);
+}
+.rating-row-chart {
+  flex: 1 1 80%;
+  min-width: 0;
+  position: relative;
+}
+.rating-row-chart svg {
+  display: block;
+  width: 100%;
+  height: 44px;
+  vertical-align: top;
+}
+.empty-state {
+  padding: 24px;
+  font: 15px/1.4 "Avenir Next", "Trebuchet MS", sans-serif;
+  color: rgba(26, 28, 26, 0.72);
+}
