@@ -36,6 +36,14 @@
       .replace(/"/g, "&quot;");
   }
 
+  function escapeAttr(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;")
+      .replace(/'/g, "&#39;");
+  }
+
   if (summaryEl) {
     const n = embed.practices_with_review_history ?? series.length;
     const total = embed.dataset_practice_count ?? 0;
@@ -79,11 +87,43 @@
     return "same";
   }
 
-  /** Merge consecutive month edges with the same up/down trend into one background span (per practice). */
-  function buildTrendRuns(points) {
+  function yearBoundsIndices(monthArr, k) {
+    if (!monthArr.length || k < 0 || k >= monthArr.length) return [k, k];
+    const y = String(monthArr[k]).slice(0, 4);
+    let lo = k;
+    let hi = k;
+    for (let i = 0; i < monthArr.length; i += 1) {
+      if (String(monthArr[i]).startsWith(y)) {
+        if (i < lo) lo = i;
+        if (i > hi) hi = i;
+      }
+    }
+    return [lo, hi];
+  }
+
+  /** Horizontal span for one trend edge at month index k (relative-date precision from dataset). */
+  function edgeHorizontalSpan(k, bucketPrecision, monthArr, step) {
+    const narrow = () => ({
+      x1: Math.max(margin.left, xScale(k) - step / 2),
+      x2: Math.min(width - margin.right, xScale(k) + step / 2),
+    });
+    const prec = bucketPrecision[k];
+    if (prec === "year" && monthArr.length) {
+      const [lo, hi] = yearBoundsIndices(monthArr, k);
+      return {
+        x1: Math.max(margin.left, xScale(lo) - step / 2),
+        x2: Math.min(width - margin.right, xScale(hi) + step / 2),
+      };
+    }
+    return narrow();
+  }
+
+  /** Merge consecutive month edges with the same up/down trend; year-precision edges span the full calendar year on the axis. */
+  function buildTrendRuns(points, bucketPrecision, monthArr) {
     const n = points.length;
     if (n < 2) return [];
     const step = n <= 1 ? plotWidth : plotWidth / (n - 1);
+    const prec = bucketPrecision && bucketPrecision.length === n ? bucketPrecision : [];
     const runs = [];
     let k = 1;
     while (k < n) {
@@ -101,8 +141,15 @@
         endK = k;
         k += 1;
       }
-      const x1 = Math.max(margin.left, xScale(startK) - step / 2);
-      const x2 = Math.min(width - margin.right, xScale(endK) + step / 2);
+      let x1 = Infinity;
+      let x2 = -Infinity;
+      for (let e = startK; e <= endK; e += 1) {
+        const span = edgeHorizontalSpan(e, prec, monthArr, step);
+        x1 = Math.min(x1, span.x1);
+        x2 = Math.max(x2, span.x2);
+      }
+      x1 = Math.max(margin.left, x1);
+      x2 = Math.min(width - margin.right, x2);
       if (x2 > x1) runs.push({ dir, x1, x2 });
     }
     return runs;
@@ -116,13 +163,17 @@
       const delta = row.delta;
       const codeAttr = escapeHtml(row.code || "");
       const label = escapeHtml(row.name || row.code || "");
+      const googleUrl = String(row.google_maps_url || "").trim();
+      const titleMarkup = googleUrl
+        ? `<a class="rating-row-title rating-row-title-link" href="${escapeAttr(googleUrl)}" target="_blank" rel="noopener noreferrer">${label}</a>`
+        : `<span class="rating-row-title">${label}</span>`;
       const gridLines = [1, 2, 3, 4, 5]
         .map(
           (tick) =>
             `<line x1="${margin.left}" y1="${yScale(tick).toFixed(2)}" x2="${width - margin.right}" y2="${yScale(tick).toFixed(2)}" stroke="rgba(26,28,26,0.06)" />`
         )
         .join("");
-      const trendRuns = buildTrendRuns(points);
+      const trendRuns = buildTrendRuns(points, row.bucket_precision, months);
       const trendRects = trendRuns
         .map((run) => {
           const fill = run.dir === "up" ? FILL_UP : FILL_DOWN;
@@ -137,7 +188,7 @@
       return `
         <div class="rating-row" data-code="${codeAttr}">
           <div class="rating-row-name">
-            <div class="rating-row-title">${label}</div>
+            ${titleMarkup}
             <div class="rating-row-delta ${deltaClass(delta)}">Δ ${formatDelta(delta)}</div>
           </div>
           <div class="rating-row-chart">

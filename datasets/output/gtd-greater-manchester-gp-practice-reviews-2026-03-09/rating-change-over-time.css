@@ -84,6 +84,13 @@ body {
   font: 600 13px/1.25 "Avenir Next", "Trebuchet MS", sans-serif;
   word-break: break-word;
 }
+a.rating-row-title-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+a.rating-row-title-link:hover {
+  text-decoration: underline;
+}
 .rating-row-delta {
   font: 600 12px/1.2 ui-monospace, monospace;
 }

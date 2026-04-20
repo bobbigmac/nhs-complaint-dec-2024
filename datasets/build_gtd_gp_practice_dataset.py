@@ -2288,6 +2288,33 @@ def parse_google_relative_review_date(label: str, anchor_date: date) -> date | N
     return None
 
 
+def parse_google_relative_review_precision(label: str) -> str | None:
+    """How granular the relative-date phrase is. Used to widen chart bands for year-only labels."""
+    cleaned = str(label or "").strip().lower()
+    cleaned = re.sub(r"^edited\s+", "", cleaned)
+    cleaned = " ".join(cleaned.split())
+    if not cleaned:
+        return None
+    if cleaned in {"today", "yesterday"}:
+        return "fine"
+    match = re.fullmatch(r"(a|an|\d+)\s+(minute|hour|day|week|month|year)s?\s+ago", cleaned)
+    if not match:
+        return None
+    _quantity_label, unit = match.groups()
+    if unit in {"minute", "hour", "day", "week"}:
+        return "fine"
+    if unit == "month":
+        return "month"
+    if unit == "year":
+        return "year"
+    return "fine"
+
+
+def merge_relative_date_precision(left: str, right: str) -> str:
+    order = {"fine": 0, "month": 1, "year": 2}
+    return left if order[left] >= order[right] else right
+
+
 def build_gtd_google_score_timeseries(
     rows: list[dict[str, Any]],
     google_results_path: Path = GOOGLE_REVIEW_RESULTS_JSON,
@@ -2437,6 +2464,7 @@ def build_manchester_google_rating_timeseries_all_practices(
     }
 
     month_values_by_practice: dict[str, dict[date, float]] = {}
+    month_precision_by_practice: dict[str, dict[date, str]] = {}
     practice_review_counts: dict[str, int] = {}
     practice_google_counts: dict[str, int | None] = {}
     parsed_review_total = 0
@@ -2448,18 +2476,26 @@ def build_manchester_google_rating_timeseries_all_practices(
         result = result_by_code.get(code, {})
         reviews_payload = result.get("recent_reviews") or []
         reviews_by_month: dict[date, list[float]] = {}
+        precision_by_bucket: dict[date, str] = {}
 
         for review in reviews_payload:
             if not isinstance(review, dict):
                 skipped_review_total += 1
                 continue
             rating = parse_google_star_label(str(review.get("star_label", "")))
-            review_date = parse_google_relative_review_date(str(review.get("relative_date", "")), anchor_date)
+            rel = str(review.get("relative_date", ""))
+            review_date = parse_google_relative_review_date(rel, anchor_date)
             if rating is None or review_date is None:
                 skipped_review_total += 1
                 continue
             bucket = month_start(review_date)
             reviews_by_month.setdefault(bucket, []).append(rating)
+            prec = parse_google_relative_review_precision(rel)
+            if prec:
+                if bucket not in precision_by_bucket:
+                    precision_by_bucket[bucket] = prec
+                else:
+                    precision_by_bucket[bucket] = merge_relative_date_precision(precision_by_bucket[bucket], prec)
             parsed_review_total += 1
             if earliest_month is None or bucket < earliest_month:
                 earliest_month = bucket
@@ -2482,6 +2518,7 @@ def build_manchester_google_rating_timeseries_all_practices(
             cumulative_count += len(values)
             cumulative_by_month[bucket] = round(cumulative_total / cumulative_count, 4)
         month_values_by_practice[code] = cumulative_by_month
+        month_precision_by_practice[code] = precision_by_bucket
 
     if earliest_month is None:
         return {
@@ -2503,10 +2540,13 @@ def build_manchester_google_rating_timeseries_all_practices(
             continue
         last_value: float | None = None
         points: list[float | None] = []
+        precision_for_timeline: list[str | None] = []
+        pmap = month_precision_by_practice.get(code, {})
         for bucket in timeline:
             if bucket in cumulative_by_month:
                 last_value = cumulative_by_month[bucket]
             points.append(last_value)
+            precision_for_timeline.append(pmap.get(bucket))
         first_finite: float | None = None
         last_finite: float | None = None
         for value in points:
@@ -2528,6 +2568,7 @@ def build_manchester_google_rating_timeseries_all_practices(
                 "gtd_managed": bool(str(row.get("gtd_managed", "")).strip().lower() == "true"),
                 "google_maps_url": google_maps_url,
                 "points": points,
+                "bucket_precision": precision_for_timeline,
                 "delta": delta,
                 "first_value": first_finite,
                 "last_value": last_finite,
