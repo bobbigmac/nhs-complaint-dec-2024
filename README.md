@@ -10,6 +10,26 @@ It contains only publicly available data so that the evidence and reasoning are 
   - Patients are being treated as if they are to blame, wherever the practice's flawed 'efficiency' decisions are excluding them in ways that are hard to measure the impact
   - Some patients are being excluded completely by 'digital-only' process start, poor workflow choices and reception stiffness
 
+## TODO: New format
+
+Simple intro... 
+
+Asks:
+  - Better non-digital pathways
+  - Better continuity/auto-follow-up and perhaps a "still ill? check"
+  - Open ppg to digital inclusion, link examples
+
+Understanding:
+  - GTD are getting the worst ratings across Manchester
+  - Reviews often call out process or access failures
+  - Small catchment and friction seems intentional
+  - Little money to spend to fix problems
+
+List of positive improvements so far:
+  - New website (mostly same issues, but they say a change is as good as a fix, I suppose)
+  - SMS fallback
+  - Replying well to reviews
+
 ## What’s in this repository?
 
 - **Complaint details and meeting prep**
@@ -62,6 +82,9 @@ The focus throughout is **patient access**, not clinical care quality.
   - How many patients need to complain about the poor quality website/workflow and bad responses from staff before you stop sending them annotated screenshots like they're simply stupid?
     - The website sucks so bad, patients are right to not want to deal with it.
     - My local practice had a better online experience in the late nineties. Why do you think this barely functional mess is acceptable in the modern world?
+  - Repeated reference to the "AI" in PATCHs driving patient triage. 
+    - Potential risks of that to patients who don't know the right words to trigger the 'AI'
+    - Tried explaining briefly that their keyword-triggered decision-tree pathway may be built by an ML model, it's not 'AI'  in the more modern/prevalent LLM sense, so shouldn't be referred to as AI as that means a very different thing to many patients. 
 
 4. **Can't start appointment process outside office hours**
   - Partially progress, admin requests are now open out of hours (since 14th Jan)
