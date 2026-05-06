@@ -30,6 +30,20 @@ List of positive improvements so far:
   - SMS fallback
   - Replying well to reviews
 
+### GTD Policy Decisions
+
+Overall state of GTD practices (especially New Bank) looks like they're struggling to service patients (low bids, much less than some services would actually cost to run, very weak company figures), so have policies designed to keep patients (especially difficult ones) away (small catchment, online-only, no front-desk, making patients suffer instead of helping them when clearly distressed or in need (many reviews) and with many process screw-ups. 
+
+GTD looks like an org struggling to stay afloat and choosing policies hoping patients will go elsewhere, but without actively telling them to do so. Every process and most staff seems to want patients to piss off and die. Choosing longer gaps between every PPG suggests the practice isn't finding much/any value in just a few people turning up each meeting (understandable)
+
+#### Appropriate response/escalation Thinking
+
+This management company shouldn't be taking on more practices/contracts, because a) the council/authority aren't paying enough for them to be serviced well and b) GTD aren't bidding enough for the ones I have been able to find info about, so looks like the lowest bidder selection process is hiding behind a supposed 'rational decision-making process' that is anything but. I need to file FOIs to dig deeper. New contracts are probably what's paying the bills to catch up with shortfalls, so I'm guessing they're running with very litle actual cash to work with. 
+
+GTDs process decisions were obviously also affected by the suicide of Leslie Swindells. There's an uptick in bad reviews (anecdotal but it's what we have) about access at GTD practices as they become more defensive, and some reviews specifically mention this at a couple of their practices.
+
+"The sky is falling" chicken-little-ing isn't going to be useful to anyone, because it's not exclusively a failure of GTD. Their response is clearly shaped by bad incentives, a lack of response options, and funding shortfalls, and some bad luck that shifted responsibility instead identified and fixed causes. It is however important to raise some red flags here before more patients who don't know they should switch to a better (or at least more accessible) practice end up suffering similar harms as Leslie.
+
 ## What’s in this repository?
 
 - **Complaint details and meeting prep**
