@@ -44,6 +44,10 @@ GTDs process decisions were obviously also affected by the suicide of Leslie Swi
 
 "The sky is falling" chicken-little-ing isn't going to be useful to anyone, because it's not exclusively a failure of GTD. Their response is clearly shaped by bad incentives, a lack of response options, and funding shortfalls, and some bad luck that shifted responsibility instead identified and fixed causes. It is however important to raise some red flags here before more patients who don't know they should switch to a better (or at least more accessible) practice end up suffering similar harms as Leslie.
 
+The issues at New Bank are still growing, not improving, according to reviews and my own experience... Regular process failures, hard to get an appointment, online-only access, rude and incompetent staff, management trying to 'massage' figures to make the website look more welcome than it is (the Ops manager mushing Yes and No together on the "was the website?" user feedback report, then trying to include 'Maybe' as a positive too, when 71% Yes is already pretty good for digital acceptance (MOST people are mostly offline, especially if your website barely works on their phone, and even then only in office-hours for the first few months), and sending out the website instructions but calling it a "newsletter" when it wasn't even remotely a newsletter) suggests I can't trust staff to always report internal figures/intentions accurately to patients or to the PPG. 
+
+Everything from New Bank must be checked instead of assuming it's true. Impressions of attitude from admin and GTD staff suggests it's pretty normal to "try to make a bad situation look better than it is".
+
 ## What’s in this repository?
 
 - **Complaint details and meeting prep**
