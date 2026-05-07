@@ -1,0 +1,20 @@
+
+### Notes / My stupid opinion on GTD Policy Decisions
+
+Overall state of GTD practices (especially New Bank) looks like they're struggling to service patients (low bids, much less than some services would actually cost to run, very weak company figures), so have policies designed to keep patients (especially difficult ones) away (small catchment, online-only, no front-desk, making patients suffer instead of helping them when clearly distressed or in need (many reviews) and with many process screw-ups. 
+
+GTD looks like an org struggling to stay afloat and choosing policies hoping patients will go elsewhere, but without actively telling them to do so. Every process and most staff seems to want patients to piss off and die. Choosing longer gaps between every PPG suggests the practice isn't finding much/any value in just a few people turning up each meeting (understandable)
+
+#### Appropriate response/escalation Thinking
+
+This management company shouldn't be taking on more practices/contracts, because a) the council/authority aren't paying enough for them to be serviced well and b) GTD aren't bidding enough for the ones I have been able to find info about, so looks like the lowest bidder selection process is hiding behind a supposed 'rational decision-making process' that is anything but. I need to file FOIs to dig deeper. New contracts are probably what's paying the bills to catch up with shortfalls, so I'm guessing they're running with very litle actual cash to work with. 
+
+GTDs process decisions were obviously also affected by the suicide of Leslie Swindells. There's an uptick in bad reviews (anecdotal but it's what we have) about access at GTD practices as they become more defensive, and some reviews specifically mention this at a couple of their practices.
+
+"The sky is falling" chicken-little-ing isn't going to be useful to anyone, because it's not exclusively a failure of GTD. Their response is clearly shaped by bad incentives, a lack of response options, and funding shortfalls, and some bad luck that shifted responsibility instead identified and fixed causes. It is however important to raise some red flags here before more patients who don't know they should switch to a better (or at least more accessible) practice end up suffering similar harms as Leslie.
+
+The issues at New Bank are still growing, not improving, according to reviews and my own experience... Regular process failures, hard to get an appointment, online-only access, rude and incompetent staff, management trying to 'massage' figures to make the website look more welcome than it is (the Ops manager mushing Yes and No together on the "was the website experience good?" user feedback survey, then trying to include 'Maybe' as a positive too, when 71% Yes is already pretty good for digital acceptance (MOST people are mostly offline, especially if your website barely works on their phone, and even then only in office-hours for the first few months), and sending out the website instructions but calling it a "newsletter" when it wasn't even remotely a newsletter) suggests I can't trust staff to always report internal figures/intentions accurately to patients or to the PPG. 
+
+Info from New Bank/GTD must be checked thoroughly as almost everything they've told me has turned out to be either untrue or only true from a very specific way of looking at things. Impressions of attitude from admin and GTD staff suggests it's pretty normal to "try to make a bad situation look better than it is" and to try and look for the reasons 'everything is fine actually'. GTD's head of patient experience (Warren) speaks exclusively corpo-speak that tries to say nothing, and his 2 contributions to the one PPG he attended both opened on a brief lie, then tried to disguise the truth in jargon. As a side note, he also seemed to have trouble responding to an email (as I had a thread of emails from him that I don't think I should have been included on, which doesn't fill me with confidence)
+
+Have asked Healthwatch Manchester for advice and will update if any is received.

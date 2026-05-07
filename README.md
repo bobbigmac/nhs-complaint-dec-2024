@@ -4,51 +4,29 @@ This repo documents ongoing concerns about **patient access, digital systems, an
 
 For the quickest public overview, start with [the homepage](<https://bobdavies.co.uk/nhs-complaint-dec-2024/>) or the [interactive map of google reviews for Manchester GPs](https://bobdavies.co.uk/nhs-complaint-dec-2024/map/map.html) or the [reviews summaries/browser](https://bobdavies.co.uk/nhs-complaint-dec-2024/reviews-evidence/) for analysis and details.
 
-It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access. These issues pre-date GTD's control of New Bank, but have continued since their take-over in April 2025, with only very minor improvements.
+It contains only publicly available data so that the evidence and reasoning are transparent to patients, staff, GTD, and anyone else trying to improve access.
 
   - Patients are being excluded by the practice requiring a mandatory unscheduled office-hours phone call, forcing them to start over
-  - Patients are being treated as if they are to blame, wherever the practice's flawed 'efficiency' decisions are excluding them in ways that are hard to measure the impact
-  - Some patients are being excluded completely by 'digital-only' process start, poor workflow choices and reception stiffness
+  - Some patients are being excluded completely by 'digital-only' process start, poor workflow choices and process stiffness
 
-## TODO: New format
-
-Simple intro... 
+## TL;DR:
 
 Asks:
   - Better non-digital pathways
   - Better continuity/auto-follow-up and perhaps a "still ill? check"
-  - Open ppg to digital inclusion, link examples
+  - Open ppg to digital and auto inclusion
 
 Understanding:
   - GTD are getting the worst ratings across Manchester
   - Reviews often call out process or access failures
   - Small catchment and friction seems intentional
   - Little money to spend to fix problems
+  - Difficult funding env and more going-offline needs more/better connectivity options.
 
 List of positive improvements so far:
-  - New website (mostly same issues, but they say a change is as good as a fix, I suppose)
-  - SMS fallback
+  - New website improves overall experience
+  - SMS fallback (done or still to do?)
   - Replying well to reviews
-
-### GTD Policy Decisions
-
-Overall state of GTD practices (especially New Bank) looks like they're struggling to service patients (low bids, much less than some services would actually cost to run, very weak company figures), so have policies designed to keep patients (especially difficult ones) away (small catchment, online-only, no front-desk, making patients suffer instead of helping them when clearly distressed or in need (many reviews) and with many process screw-ups. 
-
-GTD looks like an org struggling to stay afloat and choosing policies hoping patients will go elsewhere, but without actively telling them to do so. Every process and most staff seems to want patients to piss off and die. Choosing longer gaps between every PPG suggests the practice isn't finding much/any value in just a few people turning up each meeting (understandable)
-
-#### Appropriate response/escalation Thinking
-
-This management company shouldn't be taking on more practices/contracts, because a) the council/authority aren't paying enough for them to be serviced well and b) GTD aren't bidding enough for the ones I have been able to find info about, so looks like the lowest bidder selection process is hiding behind a supposed 'rational decision-making process' that is anything but. I need to file FOIs to dig deeper. New contracts are probably what's paying the bills to catch up with shortfalls, so I'm guessing they're running with very litle actual cash to work with. 
-
-GTDs process decisions were obviously also affected by the suicide of Leslie Swindells. There's an uptick in bad reviews (anecdotal but it's what we have) about access at GTD practices as they become more defensive, and some reviews specifically mention this at a couple of their practices.
-
-"The sky is falling" chicken-little-ing isn't going to be useful to anyone, because it's not exclusively a failure of GTD. Their response is clearly shaped by bad incentives, a lack of response options, and funding shortfalls, and some bad luck that shifted responsibility instead identified and fixed causes. It is however important to raise some red flags here before more patients who don't know they should switch to a better (or at least more accessible) practice end up suffering similar harms as Leslie.
-
-The issues at New Bank are still growing, not improving, according to reviews and my own experience... Regular process failures, hard to get an appointment, online-only access, rude and incompetent staff, management trying to 'massage' figures to make the website look more welcome than it is (the Ops manager mushing Yes and No together on the "was the website experience good?" user feedback survey, then trying to include 'Maybe' as a positive too, when 71% Yes is already pretty good for digital acceptance (MOST people are mostly offline, especially if your website barely works on their phone, and even then only in office-hours for the first few months), and sending out the website instructions but calling it a "newsletter" when it wasn't even remotely a newsletter) suggests I can't trust staff to always report internal figures/intentions accurately to patients or to the PPG. 
-
-Info from New Bank/GTD must be checked thoroughly as almost everything they've told me has turned out to be either untrue or only true from a very specific way of looking at things. Impressions of attitude from admin and GTD staff suggests it's pretty normal to "try to make a bad situation look better than it is" and to try and look for the reasons 'everything is fine actually'. GTD's head of patient experience (Warren) speaks exclusively corpo-speak that tries to say nothing, and his 2 contributions to the one PPG he attended both opened on a brief lie, then tried to disguise the truth in jargon. As a side note, he also seemed to have trouble responding to an email (as I had a thread of emails from him that I don't think I should have been included on, which doesn't fill me with confidence)
-
-Have asked Healthwatch Manchester for advice and will update if any is received.
 
 ## What’s in this repository?
 
@@ -58,6 +36,7 @@ Have asked Healthwatch Manchester for advice and will update if any is received.
   - [meetings-notes/](./meetings-notes/) - Documentation for each meeting, and my prep/issues and received handouts with my notes.
   - [meeting4-goals.md](./meetings-notes/2026-01-04-meeting4/meeting4-goals.md) - Meeting 4 (Feb 2026) prep
   - [My Patient Experience at New Bank](./My-new-bank-experience.md)
+  - [Opinion/Notes](./NOTES.md)
 - **Data and analysis**
   - `patient-survey-breakdown/` - breakdown of GP Patient Survey results for New Bank and further research.
   - `reviews/` - Google review HTML/text, parsing scripts, and parsed outputs.
@@ -91,20 +70,19 @@ The focus throughout is **patient access**, not clinical care quality.
     - Poor or non-technical, hesistancy/confusion with forms
     - No daytime availability
     - Adds friction even for confident users
-  - NEED Access route that doesn't rely on the website
+  - NEED Access route that doesn't rely on the website, even in it's slightly improved form.
 
 1.5. **Apparent lack of understanding about patient complaints**
-  - 'Newsletter' issued via sms on March 9th 2026 still very insistent about forced through online:
+  - 'Newsletter' issued via sms on March 9th 2026 still very insistent about online-only:
     - `You are welcome to complete the online request form yourself. If you would rather phone us or visit the practice, a member of our reception team will complete the form on your behalf.`
     - Newsletter contains no news, and isn't a letter, it's basically just a "use the website" help sheet, with lots of complicated and repetitive instructions.
     - Sent the sms with the  wrong link?
-      - Couldn't contact the practice online to ask, because the 'contact the practice' displays "form unavailable".
-  - How many patients need to complain about the poor quality website/workflow and bad responses from staff before you stop sending them annotated screenshots like they're simply stupid?
-    - The website sucks so bad, patients are right to not want to deal with it.
-    - My local practice had a better online experience in the late nineties. Why do you think this barely functional mess is acceptable in the modern world?
+    - ~~The website sucks so bad, patients are right to not want to deal with it.~~ 
+      - The new website is better, nitpickable, limited, but at least in this decade. 
   - Repeated reference to the "AI" in PATCHs driving patient triage. 
     - Potential risks of that to patients who don't know the right words to trigger the 'AI'
-    - Tried explaining briefly that their keyword-triggered decision-tree pathway may be built by an ML model, it's not 'AI'  in the more modern/prevalent LLM sense, so shouldn't be referred to as AI as that means a very different thing to many patients. 
+    - Tried explaining briefly that their keyword-triggered decision-tree pathway may be built by an ML model, it's not 'AI' in the more modern/prevalent LLM sense, so shouldn't be referred to as AI as that means a very different thing to many patients (and a totally different thing to doctors). 
+    - This government are trying to make AI solve everyone's problems so it's an easy eye-catching buzzword, but that strategy needs much more caution and review/introspection than it's getting, especially in cases like this where it's clearly pre-generative and much more extremely limited than the doctor seemed to believe in the meeting.
 
 4. **Can't start appointment process outside office hours**
   - Partially progress, admin requests are now open out of hours (since 14th Jan)
@@ -129,9 +107,8 @@ The focus throughout is **patient access**, not clinical care quality.
     - Some severe recent reviews, but general tone seems to be improving as reception restaffed. Monitor. 
 
 5. **Metrics vs reality**
-  - Please investigate lost/excluded patients
-  - No active complaints procedure beyond PPG
-    - [Contact the practice](https://newbank.nhs.uk/form/contact-the-practice/) shows `Form Unavailable`
+  - Please investigate lost/excluded long-term patients due to long term 49% contact-to-appointment drop rate.
+  - ~~No active complaints procedure beyond PPG~~ Resolved with new site on gtdhealthcare site.
 
 6. **Loss of continuity: Diagnostic delay**
   - When tests come back all green, no follow-up with the patient
@@ -166,17 +143,6 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 </details>
 
 <details>
-<summary>Survey metrics may understate access barriers</summary>
-
-- The current patient survey status shows 22% of patients report it being hard to get an appointment.
-- This is an improvement on last year's 39%, though this isn't directly comparable:
-  - the 39% is the inverse of people who found it easy to contact the practice by phone
-  - it also excludes the "I haven't tried" contingent
-- The real number may be higher if the survey wording (unintentionally) allows some access issues to fall between available answers.
-
-</details>
-
-<details>
 <summary>Diagnostic delay / premature closure, compounded by access</summary>
 
 - On the diagnostic issue, I don't think it reaches clinical negligence (it hasn't resulted in the worsening of my condition).
@@ -187,6 +153,81 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 </details>
 
 ### Ongoing/further research
+
+<details>
+<summary>PPG terms review, patient burden, and complaint routes</summary>
+
+- PPG Terms & rules, patient burden and what is the objective of the the PPG?
+- GTD are updating the documentation that patients must agree to operate within, mostly as a personal and legal safety valve
+  - Shares a lot of features with other PPG membership documents from practices around the UK
+  - How effective/performative are PPGs?
+- What is the recourse for a patient who wants to complain, but doesn't agree to every single term in the documentation? Like what if the 'unknown' (what am I agreeing to keep confidential? what if I don't want to be on a database? what if I don't want to, or can't sit in a meeting with strangers on an irregular schedule?)
+  - Are there still functional feedback/complaint mechanisms? What are they?
+  - PPG results are SLOW (6 months and still no change on even very small issues), for small or transient PPGs, continuity over time is going to be hard as patients become discouraged by no change, or at least by no immediate change.
+  - Without an organising platform or more regular contact, how are patients expected to co-ordinate individual concerns and identify shared problems?
+- The documents being available for review is good, but most patients are not well versed in legal speech or procedural jargon, especially where language barriers exist, might be better supported with much less legalese, and instead sticking to a one-page (or maybe 2) that keeps a group casual.
+- See [Reviewing PPG terms docs](./PPG-terms-review/PPG-terms-review.md)
+
+</details>
+
+- PPG Recommendation: 
+  - PPG should switch to digital/sms to drive patient engagement/interest, auto-enroll new patients until opt-out with perhaps an annual single-sheet newsletter (not instructions) and feedback round, which can all be handled through the existing comms system
+  - PPG is legally mandated...  which makes it feel useless/mechanical... if you want patients to see it as any more than a griping round and some defensive well actuallys, it needs to make change happen in a way that patients can see. "You said we did" is a cop-out without "and here's evidence it fixed the problem".
+- Any accessible "text us if you have a problem" (or even whatsapp or similar) wouldn't be difficult to add _something_ better than a disabled/offline complaints form. 
+
+<details>
+<summary>GP Patient Survey: question design and why is New Bank's reply rate barely 10%?</summary>
+
+- Further work to do on the GP Patient Survey
+- The patient survey (national, written by a couple of major universities) has some pretty obvious oversights, that _might_ be unintentionally hiding the scale of some access problems, and subtly patient-blame
+  - Framing a lack of options as preferences, and framing systemic failure as personal decisions
+  - The young/comfortable students writing/setting the questions in Cambridge and Exeter unis may not have the same access issues/limitations as many other patients.
+- I have the full patient survey questions for follow-up
+- Very low ~10% reply rate on New Bank's Patient Survey, way below national average of ~25%.
+  - Why so few replies to the survey? Have people lost hope the practice can improve?
+- The current patient survey status shows 22% of patients report it being hard to get an appointment.
+- This is an improvement on last year's 39%, though this isn't directly comparable:
+  - the 39% is the inverse of people who found it easy to contact the practice by phone
+  - it also excludes the "I haven't tried" contingent
+- The real number may be higher if the survey wording (unintentionally) allows some access issues to fall between available answers.
+
+</details>
+
+- Google reviews and survey scores correlate loosely/barely, but supports survey does observe _something_, and other systems catch more significant (clinical) failures.
+  - Survey doesn't really test practice as patient 'experience'... closer to "does this barely work well enough?" not "is this actually good and compatible with your needs and your life?"
+  - Survey limits expression/detection in lower rankings.
+  - In more deprived areas, larger gaps between how bad the survey says a practice is doing vs how bad google says it is doing
+
+<details>
+<summary>Benchmarking vs nearby practices (GTD and non-GTD)</summary>
+
+- Comparing to local/regional practices
+  - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
+    - See map for national figures, every practice on google reviews. GTD are overall the worst in Manchester for its size.
+  - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns: rudeness/mistreatment, access issues, procedural failings, and a lack of understanding/help from staff.
+  - [PDF printoff: GTD Greater Manchester GP Practice Experience (Google vs Patient Survey)](./google-vs-patient-survey/GTD%20Greater%20Manchester%20GP%20Practice%20Experience%20-%20Google%20vs%20Patient%20Survey%20Gap.pdf)
+  - How common **complex access / phone‑blocking / web‑off** models are.
+  - Quantify how many GTD practices, and how many local/regional/national practices, **switch their websites/online forms off** outside office hours.
+    - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
+    - Tried this but inconsistent websites made automation/repetition unrealiable. 
+    - About half of GTD forms seem to be offline out of hours, but I haven't yet had time to log which ones, and can't backend-automate it.
+  - GTD seem to be trying to bring their websites under their own platform/wrapper as a few practices have been hooked in to their main site eventually, improving the perception of their website quality, without changing its actual user flow, it does _look_ more professional so this can improve user trust/faith and their will to engage.
+
+</details>
+
+This maps the practices where there is a large difference between google reviews and patient survey's overall good%, i.e. where the patient survey doesn't represent the real experiences of patients, over deprivation. GTD practices are triangles.
+
+![Manchester reviews-vs-survey gap by deprivation](manchester-gp-reviews-survey-gap-by-deprivation.png)
+
+See also: [Manchester GPs reviews map](https://bobdavies.co.uk/nhs-complaint-dec-2024/map/map.html)
+
+![New Bank and GTD Benchmarks](new-bank-gtd-benchmarks.png)
+
+![GTD Google Rating over time](./meetings-notes/2026-05-06-meeting5/gtd-google-score-over-time.png)
+
+![GTD Patient Survey over time](./meetings-notes/2026-05-06-meeting5/gtd-patient-survey-over-time.png)
+
+
 
 <details>
 <summary>Request deletion and forced “start over” workflows [PENDING IMPLEMENTATION]</summary>
@@ -217,70 +258,20 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
   - There's several layers of website, and none of them seem to say the same thing. These are presumably different layers of NHS/practice infrastructure?
   - Maybe better visibility of the organisational model would be useful on the site. It's not clear who is responsible for what.
 - The categories seem to be emergency (call 999), urgent (a doctor will try and get you in asap) or normal (usually within 3 days)
+  - This approach seems bad for everyone, like it's designed to make sure nobody know what anything actually means
 
 </details>
 
-<details>
-<summary>PPG terms review, patient burden, and complaint routes</summary>
-
-- PPG Terms & rules, patient burden and what is the objective of the the PPG?
-- GTD are updating the documentation that patients must agree to operate within, mostly as a personal and legal safety valve
-  - Shares a lot of features with other PPG membership documents from practices around the UK
-  - How effective/performative are PPGs?
-- What is the recourse for a patient who wants to complain, but doesn't agree to every single term in the documentation? Like what if the 'unknown' (what am I agreeing to keep confidential? what if I don't want to be on a database? what if I don't want to, or can't sit in a meeting with strangers on an irregular schedule?)
-  - Are there still functional feedback/complaint mechanisms? What are they?
-  - PPG results are SLOW (6 months and still no change on even very small issues), for small or transient PPGs, continuity over time is going to be hard as patients become discouraged by no change, or at least by no immediate change.
-  - Without an organising platform or more regular contact, how are patients expected to co-ordinate individual concerns and identify shared problems?
-- The documents being available for review is good, but most patients are not well versed in legal speech or procedural jargon, especially where language barriers exist, might be better supported with much less legalese, and instead sticking to a one-page (or maybe 2) that keeps a group casual.
-- See [Reviewing PPG terms docs](./PPG-terms-review/PPG-terms-review.md)
-
-</details>
-
-<details>
-<summary>GP Patient Survey: question design and why is New Bank's reply rate barely 10%?</summary>
-
-- Further work to do on the GP Patient Survey
-- The patient survey (national, written by a couple of major universities) has some pretty obvious oversights, that _might_ be unintentionally hiding the scale of some access problems, and subtly patient-blame
-  - Framing a lack of options as preferences, and framing systemic failure as personal decisions
-  - The young/comfortable students writing/setting the questions in Cambridge and Exeter unis may not have the same access issues/limitations as many other patients.
-- I have the full patient survey questions for follow-up
-- Very low ~10% reply rate on New Bank's Patient Survey, way below national average of ~25%.
-  - Why so few replies to the survey? Have people lost hope the practice can improve?
-
-</details>
-
-<details>
-<summary>Benchmarking vs nearby practices (GTD and non-GTD)</summary>
-
-- Comparing to local/regional practices
-  - Next step: compare New Bank and **other GTD sites** to **nearby non‑GTD practices**, and practices of similar sizes/catchments.
-  - Early observation: most GTD‑run practices in Manchester cluster around **~2★** overall on Google, with very similar complaint patterns: rudeness/mistreatment, access issues, procedural failings, and a lack of understanding/help from staff.
-  - [PDF printoff: GTD Greater Manchester GP Practice Experience (Google vs Patient Survey)](./google-vs-patient-survey/GTD%20Greater%20Manchester%20GP%20Practice%20Experience%20-%20Google%20vs%20Patient%20Survey%20Gap.pdf)
-  - How common **complex access / phone‑blocking / web‑off** models are.
-  - Quantify how many GTD practices, and how many local/regional/national practices, **switch their websites/online forms off** outside office hours.
-    - May be able to gather this automatically via a simple monitoring script that pulls practice websites from NHS listings.
-
-</details>
-
-This maps the practices where there is a large difference between google reviews and patient survey's overall good%, i.e. where the patient survey doesn't represent the real experiences of patients, over deprivation. GTD practices are triangles.
-
-![Manchester reviews-vs-survey gap by deprivation](manchester-gp-reviews-survey-gap-by-deprivation.png)
-
-See also: [Manchester GPs reviews map](https://bobdavies.co.uk/nhs-complaint-dec-2024/map/map.html)
-
-![New Bank and GTD Benchmarks](new-bank-gtd-benchmarks.png)
-
-![GTD Google Rating over time](./meetings-notes/2026-05-06-meeting5/gtd-google-score-over-time.png)
-
-![GTD Patient Survey over time](./meetings-notes/2026-05-06-meeting5/gtd-patient-survey-over-time.png)
+- I _think_ the new website design improves this a little. It's still a little hard to find the way around, but it doesn't _feel_ broken or old. It removes the broken complaints form entirely and lists email and phone number, which is a big improvement.
 
 
 <details>
-<summary>Effective use of resources?</summary>
+<summary>~~Twitter?~~ Resolved?</summary>
   
 - [@gtdhealthcare on twitter/x](https://x.com/gtdhealthcare/with_replies) posts every day, sometimes twice, pretty good quality content, but has had 3 likes, 1 retweet on only 2 tweets, and zero replies, in 6 months (as far back as I scrolled before ads for crypto scams and far-right content appeared).
   - Views rarely top 50 (and almost all of those will be firehose bots, check for an immediate view spike on posting, then no growth after more than a few minutes), despite 953 'followers' there is almost-zero engagement (a follower poll showed mostly several-year dead accounts or obvious scammers, only a few 'real' people accounts).
   - Unless that daily content cycle is completely free and automated, maybe those resources would be better spent somewhere useful in the org.
+- Their last twitter post appears to have been posted on April 6th.
 </details>
 
 ### Escalation routes beyond GTD
