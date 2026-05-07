@@ -173,7 +173,6 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 - PPG Recommendation: 
   - PPG should switch to digital/sms to drive patient engagement/interest, auto-enroll new patients until opt-out with perhaps an annual single-sheet newsletter (not instructions) and feedback round, which can all be handled through the existing comms system
   - PPG is legally mandated...  which makes it feel useless/mechanical... if you want patients to see it as any more than a griping round and some defensive well actuallys, it needs to make change happen in a way that patients can see. "You said we did" is a cop-out without "and here's evidence it fixed the problem".
-- Any accessible "text us if you have a problem" (or even whatsapp or similar) wouldn't be difficult to add _something_ better than a disabled/offline complaints form. 
 
 <details>
 <summary>GP Patient Survey: question design and why is New Bank's reply rate barely 10%?</summary>
