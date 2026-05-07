@@ -216,7 +216,7 @@ Logged [My Patient Experience at New Bank](./My-new-bank-experience.md)
 
 This maps reviews of Manchester practices with GTD practices shown as triangles.
 
-![gtd-practices-reviews-manchester-context.png](gtd-practices-reviews-manchester-context.png)
+![manc-reviews-gtd-selected.png](manc-reviews-gtd-selected.png)
 
 This maps the practices where there is a large difference between google reviews and patient survey's overall good%, i.e. where the patient survey doesn't represent the real experiences of patients, over deprivation. GTD practices are triangles.
 
