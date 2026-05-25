@@ -1,8 +1,8 @@
 {
   "source_page": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data",
-  "directory_csv_url": "https://www.cqc.org.uk/sites/default/files/2026-05/06_May_2026_CQC_directory.csv",
+  "directory_csv_url": "https://www.cqc.org.uk/sites/default/files/2026-05/20_May_2026_CQC_directory.csv",
   "latest_ratings_ods_url": "https://www.cqc.org.uk/sites/default/files/2026-05/05_May_2026_Latest_ratings.ods",
-  "directory_csv_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/06_May_2026_CQC_directory.csv",
+  "directory_csv_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/20_May_2026_CQC_directory.csv",
   "latest_ratings_ods_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/05_May_2026_Latest_ratings.ods",
   "generated_files": {
     "gp_ratings_json": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings.json",

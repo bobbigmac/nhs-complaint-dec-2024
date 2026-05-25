@@ -9277,7 +9277,7 @@
     "region": "Yorkshire and The Humber",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "https://www.humber.nhs.uk",
+    "service_website": "",
     "street_address": "Providence Place",
     "url": "https://www.cqc.org.uk/location/RV9Y7"
   },
@@ -67465,7 +67465,7 @@
     "region": "South East",
     "report_type": "Location",
     "service_population_group": "General Practice",
-    "service_website": "https://www.seaforthfarm.org.uk",
+    "service_website": "",
     "street_address": "Vicarage Lane",
     "url": "https://www.cqc.org.uk/location/1-569893082"
   },
@@ -76357,7 +76357,7 @@
     "region": "London",
     "report_type": "Location",
     "service_population_group": "General Practice",
-    "service_website": "https://www.trianglegrouppractice.co.uk",
+    "service_website": "",
     "street_address": "2 Morley Road",
     "url": "https://www.cqc.org.uk/location/1-559769040"
   },
@@ -79269,7 +79269,7 @@
     "region": "South East",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "https://www.springstreetsurgery.nhs.uk",
+    "service_website": "",
     "street_address": "Bourne Hall",
     "url": "https://www.cqc.org.uk/location/1-18146929035"
   },
@@ -129267,7 +129267,7 @@
     "region": "North West",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "https://www.thevilliagesurgeries.co.uk",
+    "service_website": "",
     "street_address": "Ravensholme Lane",
     "url": "https://www.cqc.org.uk/location/1-3005799189"
   },
@@ -129449,7 +129449,7 @@
     "region": "North West",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "",
+    "service_website": "https://www.issamedicalgroup.co.uk",
     "street_address": "2a George Street",
     "url": "https://www.cqc.org.uk/location/1-20398787995"
   },
@@ -137743,7 +137743,7 @@
     "region": "North West",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "https://www.issamedicalcentre.co.uk",
+    "service_website": "https://www.issamedicalgroup.co.uk",
     "street_address": "73 St Gregory Road",
     "url": "https://www.cqc.org.uk/location/1-541838559"
   },
