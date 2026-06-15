@@ -107479,7 +107479,7 @@
     "region": "South West",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "",
+    "service_website": "https://www.exmoormedicalcentre.co.uk",
     "street_address": "Oldberry House",
     "url": "https://www.cqc.org.uk/location/1-8527166190"
   },
@@ -142943,7 +142943,7 @@
     "region": "North West",
     "report_type": "Location",
     "service_population_group": "People whose circumstances may make them vulnerable",
-    "service_website": "https://www.villagemedicalpractice.org.uk",
+    "service_website": "",
     "street_address": "High Street",
     "url": "https://www.cqc.org.uk/location/1-3045530277"
   },
