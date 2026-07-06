@@ -1,9 +1,9 @@
 {
   "source_page": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data",
-  "directory_csv_url": "https://www.cqc.org.uk/sites/default/files/2026-06/24b_June_2026_CQC_directory.csv",
-  "latest_ratings_ods_url": "https://www.cqc.org.uk/sites/default/files/2026-06/01_June_2026_Latest_ratings.ods",
-  "directory_csv_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/24b_June_2026_CQC_directory.csv",
-  "latest_ratings_ods_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/01_June_2026_Latest_ratings.ods",
+  "directory_csv_url": "https://www.cqc.org.uk/sites/default/files/2026-07/01_July_2026_CQC_directory.csv",
+  "latest_ratings_ods_url": "https://www.cqc.org.uk/sites/default/files/2026-07/01_July_2026_Latest_ratings.ods",
+  "directory_csv_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/01_July_2026_CQC_directory.csv",
+  "latest_ratings_ods_path": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/01_July_2026_Latest_ratings.ods",
   "generated_files": {
     "gp_ratings_json": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings.json",
     "gp_ratings_index_json": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_index.json",
@@ -11,11 +11,11 @@
     "manifest_json": "/home/runner/work/nhs-complaint-dec-2024/nhs-complaint-dec-2024/datasets/raw/cqc/cqc_gp_location_ratings_manifest.json"
   },
   "stats": {
-    "rows_seen": 310558,
-    "rows_matching_known_gp_code": 69542,
-    "overall_rows_matching_known_gp_code": 36008,
-    "rows_with_known_gp_ods_code": 36008,
-    "distinct_ods_codes": 5919,
+    "rows_seen": 315162,
+    "rows_matching_known_gp_code": 70270,
+    "overall_rows_matching_known_gp_code": 36139,
+    "rows_with_known_gp_ods_code": 36139,
+    "distinct_ods_codes": 5928,
     "known_gp_code_count": 6255
   }
 }
