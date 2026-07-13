@@ -98,7 +98,11 @@ def collect_flags(build_module) -> tuple[dict[str, dict[str, Any]], list[dict[st
 
     for area in search_areas(build_module):
         log(f"fetching {area['kind']}: {area['name']} ({area['postcode']})")
-        html = build_module.fetch_text(area["search_url"])
+        try:
+            html = build_module.fetch_text(area["search_url"])
+        except Exception as exc:
+            log(f"WARNING: skipping {area['kind']} '{area['name']}' — fetch failed: {exc}")
+            continue
         rows = build_module.parse_nhs_search_results(html)
         search_runs.append(
             {

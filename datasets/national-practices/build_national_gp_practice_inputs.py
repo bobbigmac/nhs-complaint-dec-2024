@@ -467,7 +467,11 @@ def build_england_wales_records(
     with ThreadPoolExecutor(max_workers=DETAIL_WORKERS) as executor:
         futures = [executor.submit(load_one, org) for org in organisations]
         for future in as_completed(futures):
-            org, detail = future.result()
+            try:
+                org, detail = future.result()
+            except Exception as exc:
+                print(f"WARNING: skipping ODS org — detail fetch failed: {exc}", file=sys.stderr)
+                continue
             roles = active_role_ids(detail)
             if ODS_ROLE_GP not in roles:
                 continue
@@ -508,7 +512,11 @@ def build_role_specific_records(
     with ThreadPoolExecutor(max_workers=DETAIL_WORKERS) as executor:
         futures = [executor.submit(load_one, org) for org in organisations]
         for future in as_completed(futures):
-            org, detail = future.result()
+            try:
+                org, detail = future.result()
+            except Exception as exc:
+                print(f"WARNING: skipping ODS org — detail fetch failed: {exc}", file=sys.stderr)
+                continue
             records.append(
                 normalize_record(
                     org,

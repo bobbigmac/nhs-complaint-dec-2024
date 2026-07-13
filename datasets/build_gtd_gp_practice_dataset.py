@@ -568,15 +568,29 @@ def resolve_supplemental_center(center: SupplementalSearchCenter) -> dict[str, A
 
 
 def build_dataset() -> list[dict[str, Any]]:
-    resolved_anchors = [resolve_anchor(anchor) for anchor in GTD_ANCHORS]
-    resolved_supplementals = [resolve_supplemental_center(center) for center in SUPPLEMENTAL_SEARCH_CENTERS]
+    resolved_anchors = []
+    for anchor in GTD_ANCHORS:
+        try:
+            resolved_anchors.append(resolve_anchor(anchor))
+        except Exception as exc:
+            print(f"WARNING: skipping GTD anchor '{anchor.gtd_site_name}' — {exc}", file=sys.stderr)
+    resolved_supplementals = []
+    for center in SUPPLEMENTAL_SEARCH_CENTERS:
+        try:
+            resolved_supplementals.append(resolve_supplemental_center(center))
+        except Exception as exc:
+            print(f"WARNING: skipping supplemental center '{center.name}' — {exc}", file=sys.stderr)
     registered_patient_counts = load_registered_patient_index()
     registration_flags_by_code = load_registration_flags_by_code()
     anchor_codes = {anchor["ods_code"]: anchor for anchor in resolved_anchors}
     practice_index: dict[str, dict[str, Any]] = {}
 
     for anchor in resolved_anchors:
-        search_html = fetch_text(anchor_search_url(anchor["latitude"], anchor["longitude"], anchor["gtd_site_name"]))
+        try:
+            search_html = fetch_text(anchor_search_url(anchor["latitude"], anchor["longitude"], anchor["gtd_site_name"]))
+        except Exception as exc:
+            print(f"WARNING: search fetch failed for anchor '{anchor['gtd_site_name']}' — {exc}", file=sys.stderr)
+            continue
         nearby = parse_nhs_search_results(search_html)
         for row in nearby:
             entry = practice_index.setdefault(
@@ -607,7 +621,11 @@ def build_dataset() -> list[dict[str, Any]]:
                 source_centers.append(anchor["gtd_site_name"])
 
     for center in resolved_supplementals:
-        search_html = fetch_text(anchor_search_url(center["latitude"], center["longitude"], center["postcode"]))
+        try:
+            search_html = fetch_text(anchor_search_url(center["latitude"], center["longitude"], center["postcode"]))
+        except Exception as exc:
+            print(f"WARNING: search fetch failed for supplemental center '{center['name']}' — {exc}", file=sys.stderr)
+            continue
         nearby = parse_nhs_search_results(search_html)
         for row in nearby:
             entry = practice_index.setdefault(
@@ -639,7 +657,11 @@ def build_dataset() -> list[dict[str, Any]]:
     total = len(practice_index)
     for index, practice in enumerate(practice_index.values(), start=1):
         print(f"[{index}/{total}] Enriching {practice['search_result_name']}", file=sys.stderr)
-        profile = parse_nhs_profile(practice["initial_profile_url"])
+        try:
+            profile = parse_nhs_profile(practice["initial_profile_url"])
+        except Exception as exc:
+            print(f"WARNING: skipping practice '{practice['search_result_name']}' — profile fetch failed: {exc}", file=sys.stderr)
+            continue
         canonical_code = profile["canonical_code"]
         registration_flags = registration_flags_by_code.get(canonical_code) or registration_flags_by_code.get(
             str(practice.get("search_result_ods_code") or "").strip().upper()

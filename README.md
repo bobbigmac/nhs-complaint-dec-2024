@@ -71,6 +71,7 @@ The focus throughout is **patient access**, not clinical care quality.
     - No daytime availability
     - Adds friction even for confident users
   - NEED Access route that doesn't rely on the website, even in it's slightly improved form.
+    - The internet costs at least £20 (bare minimum) per month to access, and is the unhealthiest place any person can spend time. GPs should be encouraging people to go/stay offline, not requiring them to go online.
 
 1.5. **Apparent lack of understanding about patient complaints**
   - 'Newsletter' issued via sms on March 9th 2026 still very insistent about online-only:
