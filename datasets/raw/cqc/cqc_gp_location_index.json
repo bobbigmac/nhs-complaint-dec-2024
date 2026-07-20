@@ -39359,7 +39359,7 @@
     "region": "East of England",
     "report_type": "Location",
     "service_population_group": "People whose circumstances may make them vulnerable",
-    "service_website": "",
+    "service_website": "https://www.grovemcfelixstowe.nhs.uk",
     "street_address": "Grove Road",
     "url": "https://www.cqc.org.uk/location/1-2048388408"
   },
@@ -63851,7 +63851,7 @@
     "region": "London",
     "report_type": "Location",
     "service_population_group": "People whose circumstances may make them vulnerable",
-    "service_website": "https://www.havergalsurgery.co.uk",
+    "service_website": "https://www.havergalsurgery.nhs.uk/",
     "street_address": "9-10 Havergal Villas",
     "url": "https://www.cqc.org.uk/location/1-516058275"
   },
@@ -90163,7 +90163,7 @@
     "region": "South East",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "https://www.abbeymeadsurgery.co.uk",
+    "service_website": "https://www.abbeywellsurgery.nhs.uk/",
     "street_address": "The Abbey",
     "url": "https://www.cqc.org.uk/location/1-569305029"
   },
