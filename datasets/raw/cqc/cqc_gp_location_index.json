@@ -99549,7 +99549,7 @@
     "region": "South East",
     "report_type": "Location",
     "service_population_group": "People whose circumstances may make them vulnerable",
-    "service_website": "https://www.drstevensandpartners.org.uk",
+    "service_website": "",
     "street_address": "East Oxford Health Centre",
     "url": "https://www.cqc.org.uk/location/1-545972010"
   },
@@ -103527,7 +103527,7 @@
     "region": "South West",
     "report_type": "Location",
     "service_population_group": "Overall",
-    "service_website": "",
+    "service_website": "https://www.plymouthprimarycare.co.uk",
     "street_address": "Stirling Road",
     "url": "https://www.cqc.org.uk/location/1-18274257135"
   },
@@ -103709,7 +103709,7 @@
     "region": "South West",
     "report_type": "Location",
     "service_population_group": "People whose circumstances may make them vulnerable",
-    "service_website": "https://www.mayfieldmedicalcentre.co.uk",
+    "service_website": "https://www.mayfieldmedicalcentrepaignton.nhs.uk",
     "street_address": "The Mayfield Medical Centre",
     "url": "https://www.cqc.org.uk/location/1-540912693"
   },
